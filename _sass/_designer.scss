@@ -1,40 +1,58 @@
 .Header-banner {
-  padding-left: 6rem !important;
-  padding-right: 6rem !important;
-}
-
-.Header-slim {
-  color: #127ae2 !important;
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
 }
 
 .Header-slim a {
-  font-weight: 200;
   text-decoration: none;
-  padding-bottom: 1.7rem;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  padding-right: 1.3rem !important;
+  padding-left: 1.3rem !important;
+  display: inline-block !important;
+  vertical-align: middle !important;
 }
 
 .Header-slim a:hover {
   text-decoration: none !important;
-  border-bottom: .1rem solid currentColor;
-}
-
-.Header-slim li.current a {
-  border-bottom: .1rem solid currentColor;
-  font-weight: 400;
 }
 
 .Header-slim li {
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
   display: inline-block !important;
+  vertical-align: middle !important;
 }
 
-.Header-slim li.delimiter {
-  border-right: .1rem solid currentColor;
+.Header-slim li.current {
+  border-bottom: 0.2rem solid white;
+  font-weight: 400;
+}
+
+.Header-slim li.delimiter a {
+  border-right: .1rem solid #127ae2;
 }
 
 .Header-slim-toggle a {
   text-decoration: none !important;
+}
+
+/** Header tweaks
+    ===================== */
+
+.Header-owner {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+}
+
+@media screen and (min-width: 992px) {
+  .Header-logo img {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+/** Megamenu tweaks
+    ===================== */
+
+.Megamenu--default .Megamenu-item > a {
+  color: #06c !important;
 }
