@@ -1,7 +1,7 @@
 ---
 layout: home
 lang: it
-title: Developers Italia
+title: Designers Italia
 description: La comunità italiana degli sviluppatori di servizi pubblici
 permalink: /
 top_projects_link: /it/progetti
