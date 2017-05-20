@@ -1,0 +1,255 @@
+/* Content style and TOC
+  ======================== */
+
+.section-nav a {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #06c;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  font-size: 18px !important;
+}
+
+/* Project shadows
+  ======================== */
+#main {
+  overflow: hidden;
+
+  .project-title-wrapper {
+    position: relative;
+    z-index: 0;
+
+    .project-shadow1 {
+      color: #06c;
+      font-size: 112px;
+      line-height: 170px;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+      text-overflow: clip;
+      text-shadow: 0 -30px 100px rgba(0, 0, 0, 0.2);
+      top: 5px;
+      left: 0;
+      white-space: nowrap;
+      z-index: -1;
+    }
+
+    .project-shadow2 {
+      color: #0059B3;
+      font-size: 120px;
+      font-weight: bold;
+      line-height: 183px;
+      position: absolute;
+      text-shadow: 0 20px 50px 0 rgba(0,0,0,0.1);
+      top: -0.2em;
+      z-index: -2;
+    }
+
+    .project-title {
+      // z-index: 1;
+    }
+  }
+}
+
+/* Footer
+  ======================== */
+
+.td-footer {
+  @media screen and (min-width: 992px) {
+    margin-top: -2em;
+  }
+
+  .team-bar {
+    border-right: 1px solid #fff;
+    height: 3.5em;
+    margin-top: 4px;
+    width: 10px !important;
+  }
+}
+
+/* Megamenu
+  ========= */
+
+.Megamenu--default .Megamenu-subnavGroup > li {
+  width: auto !important;
+}
+
+.Megamenu-item--vert .Megamenu-subnavGroup {
+  display: block !important;
+  border-bottom: 1px solid #eee;
+}
+
+.Megamenu-item--vert .Megamenu-subnavGroup:last-of-type {
+  border-bottom: none;
+}
+
+.Megamenu--default .Megamenu-subnavGroup>li,
+.Megamenu--default .Megamenu-subnavGroup>li>ul>li {
+  border-bottom: 1px solid #eee;
+  padding-top: 0.8em !important;
+  padding-bottom: 0.8em !important;
+}
+
+.Megamenu--default .Megamenu-subnavGroup>li>a {
+  text-transform: none !important;
+  color: #004a4d!important;
+}
+
+.Megamenu--default .Megamenu-subnavGroup>li>ul>li a {
+  color: #06c !important;
+  font-weight: 600 !important;
+}
+
+.Megamenu-item:nth-child(2) .Megamenu-subnavGroup > li,
+.Megamenu-item:nth-child(2) .Megamenu-subnavGroup > li > ul > li {
+  width: initial;
+  margin: 0 !important;
+  border: 0 !important;
+  padding: 0 !important;
+
+}
+
+.Megamenu--default .Megamenu-subnavGroup > li > a {
+  font-size: 1em !important;
+  color: #06c !important;
+  font-weight: 600 !important;
+}
+
+.Megamenu--default .Megamenu-subnavGroup li.Megamenu-showAll > a {
+  padding-top: 1.5em !important;
+  border-bottom: none !important;
+  color: #004a4d !important;
+  text-transform: uppercase !important;
+}
+
+.Linklist-link {
+  background-size: 0 !important;
+}
+
+@media screen and (min-width: 992px) {
+  .Linklist--withImage {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 3em;
+    display: inline-block;
+    height: 6em;
+    padding-top: 3em;
+    width: 5em;
+  }
+}
+
+/* Credits
+   ======== */
+
+.Person {
+  width: 296px;
+  background-size: cover;
+  background-position: 50% 100%;
+  position: relative;
+  z-index: 30;
+  overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0,.1);
+}
+
+.u-round {
+  border-radius: 100% !important;
+}
+
+.Person:after {
+  padding-bottom: 100%;
+}
+.Person-social-link{
+  width:2em;
+  height: 2em;
+}
+@media screen and (min-width: 992px) {
+
+  .Person-container:nth-child(3n+2) {
+    margin-top: 3em;
+  }
+
+}
+
+/* Prose
+   ======== */
+
+.Content a,
+.Content a:visited,
+.Content li a,
+.Content p a:visited,
+.Content p a {
+  color: #06c !important;
+  font-size: inherit !important;
+}
+
+.Content p em,
+.Content p strong {
+  font-size: inherit !important;
+}
+
+.Project ul {
+  margin-bottom: 2em !important;
+}
+
+.Project a {
+  text-decoration: none !important;
+  font-size: 1.2em !important;
+}
+
+.Project  a[href^="//"]:not([href*="italia.it"]):after,
+.Project  a[href^="http://"]:not([href*="italia.it"]):after,
+.Project  a[href^="https://"]:not([href*="italia.it"]):after {
+  content:' \2192';
+}
+
+.Project h2,
+.Project h3 {
+  margin-top: 1em !important;
+  font-weight: 400 !important;
+  font-size: 1.5em !important;
+}
+
+/* Utilities
+  ========== */
+
+.hide-focus :focus,
+.hide-focus :focus:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.u-pullUp {
+  margin-top: -120px;
+}
+
+.u-pullUp-10 {
+  margin-top: -10em;
+}
+
+.u-minHeight-250 {
+  min-height: 250px;
+}
+
+.is-selected {
+  outline: 3px solid #06c;
+}
+
+@media screen and (max-width: 767px) {
+
+  .u-minHeight-250 {
+    min-height: 0;
+  }
+
+  .u-pullUp-10, .u-pullUp {
+    margin-top: 0;
+  }
+
+  .Separator-room, .Separator {
+    display: none !important;
+  }
+
+}

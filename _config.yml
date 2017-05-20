@@ -1,0 +1,82 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Designers Italia
+description: La comunità italiana dei designer di servizi pubblici
+author: Team Digitale e AgID
+
+email: teamdigitale@governo.it
+baseurl: "" # the subpath of your site, e.g. /blog
+domain: designers.italia.it
+url: "https://designers.italia.it"
+# twitter_username:
+github_username:  italia
+piwik: teamdigitale
+google_analytics: UA-96140462-2
+
+# Build settings
+markdown: kramdown
+gems:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-toc
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+paginate: 10
+paginate_path: "/news/page:num/"
+
+# Custom vars
+theme_color: "#0066cc"
+css_theme: t-Pac
+owner_short: AgID
+owner_full: AgID - Agenzia per l'Italia Digitale
+owner_link: http://www.agid.gov.it
+logo: /assets/icons/logo-it.png
+owner_logo: https://www.spid.gov.it/assets/img/agid-logo-bb.svg
+partner_short: Team Digitale
+partner_full: Team per la Trasformazione Digitale
+partner_link: https://teamdigitale.governo.it
+privacy_link: /it/privacy-policy
+gov_logo: https://teamdigitale.governo.it/images/loghi/governo.svg
+partner_logo: /assets/icons/dt-logo.svg #https://teamdigitale.governo.it/images/loghi/demo.png
+pill: beta
+
+collections:
+   pages:
+     output: true
+     permalink: /:path/
+     layout: page
+   projects:
+     output: true
+     permalink: /:path/
+     layout: project
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      subnav: "subnav"
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "projects"
+    values:
+      toc: true
