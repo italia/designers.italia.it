@@ -1,13 +1,35 @@
 /** Home
     ==== */
 
-.Home-hero {
+.HomeBlk1-heroTitle {
   text-align: right;
-  min-width: 16em;
+
+  @media screen and (min-width: 992px) {
+    min-width: 16em;
+  }
+  @media screen and (max-width: 991px) {
+    text-align: left;
+    padding-left: 1em;
+  }
 }
 
 .Home-hero strong {
   font-weight: 700;
+}
+
+.HomeBlk1-desc {
+  @media screen and (min-width: 992px) {
+    margin-top: -15em;
+    border-right: 1em solid #06c;
+    padding-bottom: 3em !important;
+  }
+}
+
+.HomeBlk1-hero {
+  @media screen and (min-width: 992px) {
+    position: relative;
+    margin-top: -11em;
+  }
 }
 
 /** Header slim
@@ -18,6 +40,7 @@
   padding-right: 4rem !important;
 }
 
+.Header-owner > div > a,
 .Header-slim a {
   text-decoration: none;
   padding-right: 1.3rem !important;
