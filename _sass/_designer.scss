@@ -87,6 +87,45 @@
   padding-top: 0 !important;
 }
 
+/** Mouse
+    ===================== */
+
+.Mouse {
+  -webkit-animation:mouseAnim 6s ease-in-out infinite;
+  -moz-animation:mouseAnim 6s ease-in-out infinite;
+  animation:mouseAnim 6s ease-in-out infinite;
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+@keyframes mouseAnim {
+  10% { -webkit-transform: translateX(10em); transform:translateX(10em); }
+  20% { -webkit-transform: translateX(10em) rotateY(180deg); transform:translateX(10em) rotateY(180deg); }
+  30% { -webkit-transform: translateX(0) rotateY(180deg); transform:translateX(0) rotateY(180deg); }
+  40%, 100% { -webkit-transform: rotateY(0); transform:rotateY(0); }
+}
+
+@media screen and (min-width: 992px) {
+  .Header-logo img {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+/** PinWheel
+    ===================== */
+
+.PinWheel {
+  -webkit-animation:spin 6s ease-in-out infinite;
+  -moz-animation:spin 6s ease-in-out infinite;
+  animation:spin 6s ease-in-out infinite;
+}
+
+@-moz-keyframes spin { 20%, 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 20%, 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 20%, 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
 @media screen and (min-width: 992px) {
   .Header-logo img {
     height: 9rem;
