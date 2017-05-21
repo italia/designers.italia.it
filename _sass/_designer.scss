@@ -1,3 +1,25 @@
+/** Home
+    ==== */
+
+.Home-hero {
+  position: relative;
+  background: white;
+  left: 4em;
+  margin-top: 4em;
+}
+
+.Home-hero h2 {
+  text-align: right;
+  min-width: 16em;
+}
+
+.Home-hero strong {
+  font-weight: 700;
+}
+
+/** Header slim
+   ================ */
+
 .Header-banner {
   padding-left: 4rem !important;
   padding-right: 4rem !important;
@@ -7,6 +29,8 @@
   text-decoration: none;
   padding-right: 1.3rem !important;
   padding-left: 1.3rem !important;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
   display: inline-block !important;
   vertical-align: middle !important;
 }
@@ -16,15 +40,13 @@
 }
 
 .Header-slim li {
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
   display: inline-block !important;
   vertical-align: middle !important;
 }
 
 .Header-slim li.current {
   border-bottom: 0.2rem solid white;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .Header-slim li.delimiter a {
@@ -37,6 +59,12 @@
 
 /** Header tweaks
     ===================== */
+
+.Hamburger-toggle,
+.Hamburger-toggle:before,
+.Hamburger-toggle:after {
+  background: #06c !important;
+}
 
 .Header-owner {
   padding-bottom: 0 !important;

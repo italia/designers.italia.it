@@ -4,29 +4,32 @@ layout: default
 
 {% include setlang.html %}
 
-<div class="u-background-white u-textCenter u-padding-r-all u-textCenter u-padding-bottom-xxl">
-  <h2 class="u-layoutCenter u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l"
-    style="max-width: 20em">
-    {{ t.home_hero }}</h2>
+<div class="u-background-white u-padding-top-xxl u-layout-r-withGutter">
+  <div class="Grid u-layout-wide u-layoutCenter u-padding-top-xxl">
+    <div class="Grid-cell u-sm-size8of12 u-md-size8of12 u-lg-size8of12 u-sm-before1of12 u-md-before1of12 u-lg-before1of12">
+      <div style="border-top: 1em solid #06c">
+        <div style="border-left: 1em solid #06c; height: 12em; float: left"></div>
+        <div style="border-right: 1em solid #06c; height: 3em; float: right"></div>
+        <div class="Home-hero">
+          <h2 class="u-text-r-xxl u-textWeight-300 u-color-teal-50 u-lineHeight-l">
+            {{ t.home_hero }}
+            <p class="u-color-50 u-text-r-l">{{ t.home_hero_sub }}</p>
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="u-background-white newsletter-wrapper">
-  <div class="Grid newsletter-background blue">
-    <div class="Grid-cell u-size1of2 left u-background-60"></div>
-    <div class="Grid-cell u-size1of2 right u-background-60"></div>
-  </div>
-  <div class="Grid newsletter-background grey">
-    <div class="Grid-cell u-size9of12 left u-background-grey-15"></div>
-    <div class="Grid-cell u-size3of12 right u-background-grey-15"></div>
-  </div>
-
-  <div class="u-textCenter u-padding-r-all u-textCenter">
-    <h3 class="u-text-r-m u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+  <div class="u-padding-r-all">
+    <h3 class="u-text-r-xs u-textWeight-300 u-color-grey-50 u-margin-top-l u-lineHeight-l">
       {{ t.home_newsletter_title }}</h3>
-    <form class="Form u-padding-r-top u-md-size7of12 u-lg-size5of12 u-layoutCenter" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank">
+    <form class="Form u-padding-r-top u-md-size7of12 u-lg-size5of12" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx"
+        method="get" target="_blank">
       <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xxl">
         <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400">
-          </button>
+        </button>
         <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus "
           required id="newsletter" name="email" />
         <label class="Form-label u-color-grey-50 u-padding-left-xxl" for="newsletter"><span class="u-hidden u-md-inline u-lg-inline">
