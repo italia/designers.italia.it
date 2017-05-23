@@ -1,35 +1,52 @@
-<section class="u-nbfc u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom u-posRelative u-zindex-30 u-background-white">
+<section class="u-background-white">
 
-  <div class="u-layout-wide u-layoutCenter u-padding-top-m">
-    <h2 class="u-hiddenVisually">{{ t.home_news_title }}</h2>
+  <div class="Grid u-padding-r-top">
 
-    <div class="Grid u-padding-r-top">
-
-      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">        
-        {{ t.home_blog_title }}
-        {{ t.home_blog_subtitle }}
-        {{ t.home_blog_tag_1 }}
-        {{ t.home_blog_tag_2 }}
-        {{ t.home_blog_tag_3 }}
-        {{ t.home_blog_text }}
-        {{ t.see_all }}
+    <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-background-teal-30 u-color-white u-padding-r-bottom">
+      <div class="u-padding-r-all u-text-r-xl">
+        <h2 class="u-text-r-xxl u-padding-bottom-s">{{ t.home_blog_title }}</h2>
+        <p  class="u-text-r-xl u-padding-bottom-m">{{ t.home_blog_subtitle }}</p>
+        <ul class="u-padding-r-bottom u-padding-r-top u-text-r-m">
+          <li class="u-inlineBlock u-border-all-xxs u-background-teal-65 u-padding-top-xxs u-text-r-xxs u-textWeight-600
+          u-padding-bottom-xxs u-margin-bottom-xs u-padding-r-right u-padding-r-left u-margin-r-right">{{ t.home_blog_tag_1 }}</li>
+          <li class="u-inlineBlock u-border-all-xxs u-background-teal-65 u-padding-top-xxs u-text-r-xxs u-textWeight-600
+          u-padding-bottom-xxs u-margin-bottom-xs u-padding-r-right u-padding-r-left u-margin-r-right">{{ t.home_blog_tag_2 }}</li>
+          <li class="u-inlineBlock u-border-all-xxs u-background-teal-65 u-padding-top-xxs u-text-r-xxs u-textWeight-600
+          u-padding-bottom-xxs u-margin-bottom-xs u-padding-r-right u-padding-r-left u-margin-r-right">{{ t.home_blog_tag_3 }}</li>
+        </ul>
+        <p class="u-letterSpace-l u-padding-r-bottom u-margin-r-bottom u-text-r-xxs">
+          {{ t.home_blog_text }}
+          {{ t.home_blog_text }}
+        </p>
+        <a href="" class="u-background-white u-color-50 u-padding-top-s u-padding-bottom-s
+          u-text-r-xs u-linkClean u-textSmallCaps u-textWeight-700 u-inlineBlock
+          u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m">
+          {{ t.see_all }}
+        </a>
       </div>
-
-      {% assign posts = site.posts | where: 'lang', active_lang %}
-
-      {% for post in posts limit: 2 %}
-        {% assign excerpt = post.excerpt | remove: ' <p>' | remove: '</p>' '%}
-
-        <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
-
-          {{ post.categories }}
-          {{ post.title }}
-          {{ post.url }}
-
-        </div>
-      {% endfor %}
-
     </div>
+
+    {% assign posts = site.posts | where: 'lang', active_lang %}
+    {% for post in posts limit: 2 %}
+      {% assign excerpt = post.excerpt | remove: ' <p>' | remove: '</p>' '%}
+
+      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-color-white u-flex"
+        style="background-color: {{ post.backgroundColor }}">
+        <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
+          <div class="u-flexAlignSelfEnd">
+            <p class="u-inlineBlock u-border-all-xxs u-padding-top-xxs u-padding-bottom-xxs u-text-r-xxs u-textWeight-600
+              u-margin-r-bottom u-padding-r-right u-padding-r-left u-margin-r-right" style="background-color: rgba(0, 0, 0, 0.1)">
+              {{ post.category }}
+            </p>
+            <h3 class="u-text-r-xl">
+              <a href="{{ post.url }}" class="u-color-white u-linkClean">
+                <span>{{ post.title }}</span>
+              </a>
+            </h3>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
 
   </div>
 </section>
