@@ -36,7 +36,7 @@
     <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
       <div class="Header-logo Grid-cell" aria-hidden="true">
         <a href="{{ '/' | relative_url }}" tabindex="-1">
-          <img src="{{ site.logo | relative_url | default: '//designer.italia.it/images/loghi/logo-it.svg' }}" alt="">
+          <img src="{{ site.logo | relative_url }}" alt="">
         </a>
       </div>
 
@@ -67,7 +67,7 @@
             {% for social in site.data.social %}
             <li>
               <a href="{{ social[1].link }}" title="{{ social[1].name }}">
-                <span class="Icon-{{ social[0] }} u-background-50 u-color-white"></span>
+                <span class="Icon-{{ social[0] }} u-background-50 u-color-white u-padding-r-xl"></span>
                 <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a>
             </li>
             {% endfor %}
