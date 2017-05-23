@@ -159,8 +159,8 @@
 }
 
 .Project a {
+  color: #06c !important;
   text-decoration: none !important;
-  font-size: 1.2em !important;
 }
 
 .Project  a[href^="//"]:not([href*="italia.it"]):after,
@@ -169,10 +169,15 @@
   content:' \2192';
 }
 
-.Project h2,
 .Project h3 {
   margin-top: 1em !important;
   font-weight: 400 !important;
+  font-size: 1.5em !important;
+}
+
+.Project h2 {
+  margin-top: 1em !important;
+  font-weight: 600 !important;
   font-size: 1.5em !important;
 }
 
@@ -215,4 +220,66 @@
     display: none !important;
   }
 
+}
+
+/* Project shadows
+  ======================== */
+#main {
+  overflow: hidden;
+
+  .project-title-wrapper {
+    position: relative;
+    z-index: 0;
+
+    .project-shadow1 {
+      color: #f9f9f4;
+      font-size: 112px;
+      line-height: 160px;
+      font-weight: bold;
+      position: absolute;
+      text-align: center;
+      text-overflow: clip;
+//      text-shadow: 0 -30px 100px rgba(0, 0, 0, 0.2);
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      z-index: -1;
+    }
+
+    .project-shadow2 {
+      color: #eee;
+      font-size: 120px;
+      font-weight: bold;
+      line-height: 183px;
+      position: absolute;
+//      text-shadow: 0 20px 50px rgba(0, 0 ,0 , 0.1);
+      top: -0.4em;
+      z-index: -2;
+    }
+
+    .project-title {
+      // z-index: 1;
+    }
+  }
+}
+
+/* Content style and TOC
+  ======================== */
+
+.section-nav a {
+  display: block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  color: #06c;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  text-decoration: none;
+  font-size: 18px !important;
+}
+
+.toc-entry.toc-h3,
+.toc-entry.toc-h4,
+.toc-entry.toc-h5,
+.toc-entry.toc-h6 {
+   display: none;
 }
