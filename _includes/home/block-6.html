@@ -1,0 +1,35 @@
+<section class="u-nbfc u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom u-posRelative u-zindex-30 u-background-white">
+
+  <div class="u-layout-wide u-layoutCenter u-padding-top-m">
+    <h2 class="u-hiddenVisually">{{ t.home_news_title }}</h2>
+
+    <div class="Grid u-padding-r-top">
+
+      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+        {{ t.home_blog_title }}
+        {{ t.home_blog_subtitle }}
+        {{ t.home_blog_tag_1 }}
+        {{ t.home_blog_tag_2 }}
+        {{ t.home_blog_tag_3 }}
+        {{ t.home_blog_text }}
+        {{ t.see_all }}
+      </div>
+
+      {% assign posts = site.posts | where: 'lang', active_lang %}
+
+      {% for post in posts limit: 2 %}
+        {% assign excerpt = post.excerpt | remove: ' <p>' | remove: '</p>' '%}
+
+        <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
+
+          {{ post.categories }}
+          {{ post.title }}
+          {{ post.url }}
+
+        </div>
+      {% endfor %}
+
+    </div>
+
+  </div>
+</section>

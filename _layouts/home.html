@@ -11,33 +11,3 @@ layout: default
 {% include home/block-5.html %}
 {% include home/block-6.html %}
 {% include home/block-7.html %}
-
-<section class="u-nbfc u-background-white u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
-
-  <div class="u-layout-wide u-layoutCenter">
-    <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_news_title }}</h2>
-
-      {% assign posts = site.posts | where: 'lang', active_lang %}
-
-      <div class="Grid Grid--withGutterL">
-
-      {% for post in posts limit: 3 %}
-
-        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
-            {% include card.html
-              date=post.date
-              title=post.title
-              link=post.url
-              text=excerpt
-              hasImage=false
-              flat=true
-              %}
-          </div>
-          {% endfor %}
-
-      </div>
-
-    </div>
-</section>
