@@ -6,14 +6,16 @@
 
       {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
 
-      <div class="Grid Grid--withGutter u-padding-r-top">
+    <div class="owl-carousel owl-theme u-flex u-padding-r-all u-xs-padding-all-none" role="region" id="carousel-1" tabindex="0"
+      data-carousel-options='{ "dotsContainer": "#customDots", "dots": true }'>
 
       {% for project in projects limit: 3 %}
 
         {% assign subtitle = project.subtitle | default: project.payoff %}
         {% assign logo = project.logo | relative_url %}
 
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
+          <div class="Carousel-item u-flex u-margin-bottom-l u-flexAlignSelfStretch
+            u-padding-left-xs u-padding-right-xs u-xs-padding-all-none">
             {% include card.html
               title=project.title
               link=project.url
@@ -28,6 +30,8 @@
           {% endfor %}
 
     </div>
+
+    <div id="customDots" class="owl-dots"></div>
 
     <p class="u-text-r-xs u-textWeight-400 u-color-grey-50 u-padding-top-xxl u-padding-r-bottom u-textCenter">
       {{ t.home_projects_footer }}
