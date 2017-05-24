@@ -38,7 +38,7 @@
   <div class="Grid u-layout-wide u-layoutCenter">
 
     <div class="HomeBlk1-plane Grid-cell u-md-size5of12 u-lg-size5of12 u-md-flex u-lg-flex">
-      <img src="{{ '/assets/images/blk1/plane-shaded.svg' |relative_url }}" />
+      <img src="{{ '/assets/images/blk1/plane-shaded.svg' |relative_url }}" alt="" />
     </div>
 
     <div class="Grid-cell u-sm-size6of12 u-md-size4of12 u-lg-size4of12">
@@ -47,8 +47,8 @@
             {{ t.home_newsletter_title }}</h3>
         <form class="Form u-padding-r-top" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank" style="max-width: 25em">
           <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xl">
-            <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400">
-              </button>
+            <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400" aria-hidden="true">
+            </button>
             <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus " required id="newsletter" name="email" />
             <label class="Form-label u-color-grey-40 u-padding-left-xxl" for="newsletter"><span class="u-hidden u-md-inline u-lg-inline">
                   {{t.home_newsletter_placeholder }}</span></label>
