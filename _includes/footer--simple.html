@@ -26,9 +26,9 @@
       </div>
     </div>
 
-    <div class="Grid-cell u-lg-size1of4 u-textRight u-padding-r-bottom u-flexAlignSelfEnd">
+    <div class="Grid-cell u-lg-size1of4 u-padding-r-bottom u-flexAlignSelfEnd">
       <h2 class="u-md-flexInline u-lg-flexInline u-text-p u-color-white u-textWeight-400
-        u-hidden u-margin-r-right u-flexAlignSelfCenter">{{ t.follow_us | capitalize }}</h2>
+        u-hidden u-margin-r-right u-margin-r-bottom u-flexAlignSelfCenter">{{ t.follow_us | capitalize }}</h2>
       <ul class="Footer-socialIcons">
         {% for social in site.data.social %}
           <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
