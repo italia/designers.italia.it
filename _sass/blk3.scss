@@ -2,28 +2,6 @@
     header {
         color: #5A6772;
         padding: 20px 0;
-        h1 {
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 85px;
-            text-align: center;
-        }
-        h2 {
-            font-size: 40px;
-            font-weight: 300;
-            line-height: 52px;
-            text-align: center;
-            @media screen and (max-width: 991px) {
-                font-size: 32px;
-                line-height: 40px;
-            }
-        }
-        h3 {
-            font-size: 18px;
-            line-height: 27px;
-            font-weight: 300;
-            text-align: center;
-        }
     }
     .show-in-small {
         display: none !important;
@@ -353,4 +331,11 @@
         display: flex !important;
       }
     }
+
+}
+
+@media screen and (min-width: 992px) {
+  .sdkit__mainhead a {
+    color: #5a6772 !important;
+  }
 }
