@@ -94,8 +94,16 @@
 /** Megamenu tweaks
     ===================== */
 
+.Megamenu-item:first-child>a {
+  padding-left: 3.2rem !important;
+}
+
 .Megamenu--default .Megamenu-item > a {
   color: #06c !important;
+}
+
+.Megamenu--default .Megamenu-item > a.is-current {
+  border-bottom: 2px solid #06c !important;
 }
 
 /** Utilities
