@@ -5,12 +5,19 @@
   }
 }
 
-@media screen and (max-width: 991px) {
-  .HomeBlk1-plane svg {
-    max-width: 100%;
-    max-height: 250px;
-    margin-top: 2em;
-    margin-bottom: -4em;
+.HomeBlk1-plane {
+  @media screen and (min-width: 992px) {
+    min-height: 450px;
+    img {
+      margin-left: -2em;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    text-align: center;
+    img {
+      padding-top: 2em;
+      max-width: 100%;
+    }
   }
 }
 
@@ -29,14 +36,14 @@
 /** Mouse
     ===================== */
 
-.HomeBlk1-Mouse {
-  -webkit-animation:mouseAnim 5s ease-in-out infinite;
-  -moz-animation:mouseAnim 5s ease-in-out infinite;
-  animation:mouseAnim 5s ease-in-out infinite;
-  -moz-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
+// .HomeBlk1-Mouse {
+//   -webkit-animation:mouseAnim 5s ease-in-out infinite;
+//   -moz-animation:mouseAnim 5s ease-in-out infinite;
+//   animation:mouseAnim 5s ease-in-out infinite;
+//   -moz-animation-delay: 3s;
+//   -webkit-animation-delay: 3s;
+//   animation-delay: 3s;
+// }
 
 @keyframes mouseAnim {
   10% { -webkit-transform: translateX(10em); transform:translateX(10em); }
