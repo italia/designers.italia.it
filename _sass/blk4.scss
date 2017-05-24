@@ -1,4 +1,13 @@
 .HomeBlk4 {
   background: url(../assets/images/blk4/background.svg);
+  background-size: cover;
   min-height: 200px;
+
+  img {
+    height: 400px;
+    @media screen and (max-width: 991px) {
+      margin-bottom: -4em;
+      height: 300px;
+    }
+  }
 }
