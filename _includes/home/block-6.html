@@ -31,7 +31,8 @@
       {% assign excerpt = post.excerpt | remove: ' <p>' | remove: '</p>' '%}
 
       <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-color-white u-flex"
-        style="background-color: {{ post.backgroundColor }}">
+        style="background-color: {{ post.backgroundColor }}; background-image: url({{ post.backgroundImage | relative_url }});
+          background-blend-mode: multiply; background-size: cover">
         <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
           <div class="u-flexAlignSelfEnd">
             <p class="u-inlineBlock u-border-all-xxs u-padding-top-xxs u-padding-bottom-xxs u-text-r-xxs u-textWeight-600
