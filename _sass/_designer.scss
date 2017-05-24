@@ -1,12 +1,34 @@
-/** Home
-    ==== */
+/** PinWheel
+    ===================== */
+
+.Header-PinWheel {
+  -webkit-animation:spin 6s ease-in-out infinite;
+  -moz-animation:spin 6s ease-in-out infinite;
+  animation:spin 6s ease-in-out infinite;
+}
+
+@-moz-keyframes spin { 20%, 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 20%, 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 20%, 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 /** Header slim
    ================ */
 
 .Header-banner {
-  padding-left: 4rem !important;
-  padding-right: 4rem !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+
+@media screen and (min-width: 992px) {
+  .Header-logo img {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+.Header-socialIcons [class*=" Icon-"],
+.Header-socialIcons [class^=Icon-] {
+    padding: 0.4em !important;
 }
 
 .Header-owner > div > a,
@@ -18,6 +40,10 @@
   padding-bottom: 1.3rem;
   display: inline-block !important;
   vertical-align: middle !important;
+  @media screen and (min-width: 992px) {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+  }
 }
 
 .Header-slim a:hover {
@@ -65,52 +91,6 @@
   padding-top: 0 !important;
 }
 
-/** Mouse
-    ===================== */
-
-.Mouse {
-  -webkit-animation:mouseAnim 5s ease-in-out infinite;
-  -moz-animation:mouseAnim 5s ease-in-out infinite;
-  animation:mouseAnim 5s ease-in-out infinite;
-  -moz-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-}
-
-@keyframes mouseAnim {
-  10% { -webkit-transform: translateX(10em); transform:translateX(10em); }
-  20% { -webkit-transform: translateX(10em) rotateY(180deg); transform:translateX(10em) rotateY(180deg); }
-  30% { -webkit-transform: translateX(0) rotateY(180deg); transform:translateX(0) rotateY(180deg); }
-  40%, 100% { -webkit-transform: rotateY(0); transform:rotateY(0); }
-}
-
-@media screen and (min-width: 992px) {
-  .Header-logo img {
-    height: 9rem;
-    width: 9rem;
-  }
-}
-
-/** PinWheel
-    ===================== */
-
-.PinWheel {
-  -webkit-animation:spin 6s ease-in-out infinite;
-  -moz-animation:spin 6s ease-in-out infinite;
-  animation:spin 6s ease-in-out infinite;
-}
-
-@-moz-keyframes spin { 20%, 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 20%, 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 20%, 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-
-@media screen and (min-width: 992px) {
-  .Header-logo img {
-    height: 9rem;
-    width: 9rem;
-  }
-}
-
 /** Megamenu tweaks
     ===================== */
 
@@ -121,8 +101,20 @@
 /** Utilities
   ================ */
 
+.u-letterSpace-l {
+  letter-spacing: 0.03em !important;
+}
+
 .u-color-teal-60 {
   color: #00C5CA
+}
+
+.u-color-teal-65 {
+  color: #06A3A8
+}
+
+.u-background-teal-65 {
+  background-color: #06A3A8;
 }
 
 .u-borderShadow-xl {

@@ -11,8 +11,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ t.site_title | default: site.title | escape }}{% endif %}</title>
-
   {% seo %}
 
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
@@ -38,7 +36,6 @@
   <!-- include html5shim per Explorer 8 -->
   <script src="{{ '/assets/toolkit/vendor/modernizr.js' | relative_url }}"></script>
 
-  <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/vendor.css' | relative_url }}">
   <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/build.css' | relative_url }}">
   <link media="all" rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
 

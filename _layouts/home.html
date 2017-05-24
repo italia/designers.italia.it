@@ -5,102 +5,10 @@ layout: default
 {% include setlang.html %}
 
 {% include home/block-1.html %}
-
+{% include home/block-2.html %}
 {% include home/block-3.html %}
+{% include home/block-4.html %}
+{% include home/block-5.html %}
+{% include home/block-6.html %}
+{% include home/block-7.html %}
 
-
-<section class="u-nbfc u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
-
-  <div class="u-layout-wide u-layoutCenter">
-    <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_projects_title }}</h2>
-
-      {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
-
-      <div class="Grid Grid--withGutter">
-
-      {% for project in projects limit: 3 %}
-
-        {% assign subtitle = project.subtitle | default: project.payoff %}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-            {% include card.html
-              title=project.title
-              link=project.url
-              comingsoon=project.comingsoon
-              subtitle=subtitle
-              text=project.description
-              socials=project.socials
-              image='//placehold.it/400x220'
-              alt=''
-              hasImage=false
-              %}
-          </div>
-          {% endfor %}
-
-          {% for project in projects limit: 2 offset:3 %}
-
-            {% assign subtitle = project.subtitle | default: project.payoff %}
-
-              <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-                {% include card.html
-                  title=project.title
-                  link=project.url
-                  comingsoon=project.comingsoon
-                  subtitle=subtitle
-                  socials=project.socials
-                  hasImage=false
-                  hasSocial=false
-                  %}
-              </div>
-              {% endfor %}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
-            <div class="u-nbfc u-color-white u-padding-r-all u-xs-padding-all-none u-sizeFill u-flex u-flexAlignItemsCenter
-              u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m u-background-50">
-
-              <h4 class="u-padding-r-all u-text-r-xs u-textWeight-600">
-                <a href="{{ page.top_projects_link | relative_url }}" class="u-color-white u-textClean">
-                  <span class="u-text-r-l">{{ t.home_projects_others }}</span>
-                <span class="u-cf u-inlineBlock u-padding-r-top u-text-r-xs
-                u-textWeight-400">{{ site.projects | where: 'lang', active_lang | size }} {{ t.home_projects_count }}</span>
-                </a>
-              </h4>
-              <span class="Icon Icon-chevron-right u-flexJustifyRight u-textWeight-400 u-text-r-m"></span>
-
-            </div>
-          </div>
-
-      </div>
-
-    </div>
-</section>
-
-<section class="u-nbfc u-background-white u-layout-r-withGutter u-padding-r-top u-padding-r-bottom u-posRelative u-zindex-30">
-
-  <div class="u-layout-wide u-layoutCenter">
-    <h2 class="u-text-r-l u-textWeight-300 u-color-50 u-padding-r-bottom">{{ t.home_news_title }}</h2>
-
-      {% assign posts = site.posts | where: 'lang', active_lang %}
-
-      <div class="Grid Grid--withGutterL">
-
-      {% for post in posts limit: 3 %}
-
-        {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
-
-          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom">
-            {% include card.html
-              date=post.date
-              title=post.title
-              link=post.url
-              text=excerpt
-              hasImage=false
-              flat=true
-              %}
-          </div>
-          {% endfor %}
-
-      </div>
-
-    </div>
-</section>

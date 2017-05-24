@@ -1,0 +1,43 @@
+<section class="u-nbfc u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom u-posRelative u-zindex-30" style="background: #FAFAFA">
+
+  <div class="u-layout-wide u-layoutCenter u-padding-top-m">
+    <h2 class="u-text-r-xxl u-textWeight-700 u-color-grey-50 u-textCenter">{{ t.home_projects_title }}</h2>
+    <p class="u-text-r-xl u-textWeight-400 u-color-grey-50 u-padding-top-s u-padding-r-bottom u-textCenter">{{ t.home_projects_subtitle }}</p>
+
+      {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
+
+      <div class="Grid Grid--withGutter u-padding-r-top">
+
+      {% for project in projects limit: 3 %}
+
+        {% assign subtitle = project.subtitle | default: project.payoff %}
+        {% assign logo = project.logo | relative_url %}
+
+          <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-layout-matchHeight">
+            {% include card.html
+              title=project.title
+              link=project.url
+              comingsoon=project.comingsoon
+              subtitle=subtitle
+              text=project.description
+              socials=project.socials
+              image=logo
+              alt=''
+              %}
+          </div>
+          {% endfor %}
+
+    </div>
+
+    <p class="u-text-r-xs u-textWeight-400 u-color-grey-50 u-padding-top-xxl u-padding-r-bottom u-textCenter">
+      {{ t.home_projects_footer }}
+    </p>
+    <div class="u-textCenter u-margin-top-s u-margin-bottom-xxl">
+      <a href="" class="u-inlineBlock u-linkClean u-borderRadius-s u-background-teal-30 u-padding-r-all u-borderShadow-m" style="min-width: 16em">
+        <span class="u-color-white u-text-r-s u-textSmallCaps u-textWeight-700 u-padding-right-xxl u-padding-left-xxl">{{ t.see_all }}
+        <span class="u-hiddenVisually">{{ t.home_projects }}</span></span>
+      </a>
+    </div>
+
+  </div>
+</section>
