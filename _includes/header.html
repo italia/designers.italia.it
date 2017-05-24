@@ -4,6 +4,14 @@
     <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
 
       <div>
+
+        <div class="u-md-hidden u-lg-hidden u-border-right-xxs u-margin-right-xs u-padding-right-xs u-inlineBlock u-alignMiddle">
+          <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network"
+            aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">
+              {% include slim_icon.html %}
+          </a>
+        </div>
+
         <a href="{{ site.owner_link }}" class="u-color-white u-text-r-xxs u-linkClean u-textWeight-600">
           <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
               {{ site.owner_short }}
@@ -12,7 +20,9 @@
               {{ site.owner_short }}
             </span>
         </a>
+
         <span class="u-color-white u-padding-left-xxs u-padding-right-xxs">+</span>
+
         <a href="{{ site.partner_link }}" class="u-color-white u-text-r-xxs u-linkClean u-textWeight-600">
           <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
               {{ site.partner_short }}
