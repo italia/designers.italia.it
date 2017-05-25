@@ -6,15 +6,21 @@
 
       {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
 
-    <div class="owl-carousel owl-theme u-flex u-padding-r-all u-xs-padding-all-none" role="region" id="carousel-1" tabindex="0"
+    <div class="{% unless include.limit > 0 %}owl-carousel owl-theme{% endunless %}
+    {% if include.limit > 0 %}Grid Grid--withGutter Grid--alignMiddle{% endif %}
+      u-flex u-padding-r-all u-xs-padding-all-none" role="region" id="carousel-1" tabindex="0"
       data-carousel-options='{ "dotsContainer": "#customDots", "dots": true }'>
 
-      {% for project in projects limit: 3 %}
+      {% assign _limit = include.limit | default: 3 %}
+
+      {% for project in projects limit: _limit %}
 
         {% assign subtitle = project.subtitle | default: project.payoff %}
         {% assign logo = project.logo | relative_url %}
 
-          <div class="Carousel-item u-flex u-margin-bottom-l u-flexAlignSelfStretch
+          <div class="{% unless include.limit > 0 %}Carousel-item{% endunless %}
+            {% if include.limit > 0 %}Grid-cell u-md-size1of3 u-lg-size1of3{% endif %}
+            u-flex u-margin-bottom-l u-flexAlignSelfStretch
             u-padding-left-xs u-padding-right-xs u-xs-padding-all-none">
             {% include card.html
               title=project.title
@@ -33,15 +39,17 @@
 
     <div id="customDots" class="owl-dots"></div>
 
+    {% unless include.limit > 0 %}
     <p class="u-text-r-xs u-textWeight-400 u-color-grey-50 u-padding-top-xxl u-padding-r-bottom u-textCenter">
       {{ t.home_projects_footer }}
     </p>
     <div class="u-textCenter u-margin-top-s u-margin-bottom-xxl">
-      <a href="" class="u-inlineBlock u-linkClean u-borderRadius-s u-background-teal-30 u-padding-r-all u-borderShadow-m" style="min-width: 16em">
+      <a href="{{ page.link_to_projects | relative_url }}" class="u-inlineBlock u-linkClean u-borderRadius-s u-background-teal-30 u-padding-r-all u-borderShadow-m" style="min-width: 16em">
         <span class="u-color-white u-text-r-s u-textSmallCaps u-textWeight-700 u-padding-right-xxl u-padding-left-xxl">{{ t.see_all }}
         <span class="u-hiddenVisually">{{ t.home_projects }}</span></span>
       </a>
     </div>
+    {% endunless %}
 
   </div>
 </section>

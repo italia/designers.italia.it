@@ -53,11 +53,18 @@
 .Header-slim li {
   display: inline-block !important;
   vertical-align: middle !important;
+  margin-bottom: 0.2rem;
+}
+
+.Header-slim li:hover {
+  border-bottom: 0.2rem solid white;
+  margin-bottom: 0;
 }
 
 .Header-slim li.current {
   border-bottom: 0.2rem solid white;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .Header-slim li.delimiter a {
@@ -147,7 +154,7 @@
   box-shadow: 1px 1px 60px 1px rgba(0, 0, 0, .20) !important
 }
 
-/** component Badge 
+/** component Badge
 =================== */
 .Badges {
   margin: 0;
@@ -176,7 +183,7 @@
   }
 }
 
-/** component Blueblock 
+/** component Blueblock
 ========================= */
 .Blueblock {
   position: relative;
@@ -188,7 +195,7 @@
     transform: translateY(-50%);
   }
 }
-/** component Roadmap 
+/** component Roadmap
 ====================== */
 
 .Roadmap {
