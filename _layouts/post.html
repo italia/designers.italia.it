@@ -15,7 +15,7 @@ layout: default
 <article itemscope itemtype="http://schema.org/BlogPosting">
 <!-- ==== blue block -->
       <div class="Blueblock Grid Grid--alignCenter" >
-        <figure class="blueblock__mainimg">
+        <figure class="blueblock__mainimg ">
           {% if page.blueimage%}
             <img src="{{page.blueimage | relative_url }}">
           {% endif %}
@@ -135,6 +135,8 @@ layout: default
           {{ content }}
         </div>
 
+        
+
         <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
           style="max-width: 15em" />
 
@@ -142,10 +144,7 @@ layout: default
           {% include share.html %}
         </div>
 
-        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
-          <h2 class="u-text-r-xxs u-textSecondary u-textWeight-300 u-margin-r-bottom">{{ t.news_categories }}</h2>
-          {% include pills.html items=page.categories small=true %}
-        </div>
+
 
       </div>
 
