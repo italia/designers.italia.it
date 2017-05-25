@@ -1,27 +1,42 @@
 ---
 title: Service design
 subtitle: Strategie per il design dei servizi
-layout: project
+layout: post
+author: Mario Rossi
+keywords: ['argomento 1']
+categories : ['tendenze']
 lang: it
 toc: true
+blueimage : '/assets/images/posts/torre-blu.jpg' 
 ---
-## Strategie
-
-### 1. Coinvolgi sempre i cittadini, capendo i loro bisogni
 
 Il cittadino deve essere posto al centro della progettazione di un servizio e coinvolto in tutte le fasi dello sviluppo. Nella redazione dei bandi è auspicabile prevedere, durante la progettazione e lo sviluppo, fasi di verifica e miglioramento delle
 scelte effettuate, adeguando il progetto alle esigenze emerse dal dialogo con gli utenti. Tutti, nessuno escluso, devono poter utilizzare il servizio in maniera agevole ed efficace.
 
-#### Principi di riferimento
+### Roadmap
+
+<dl class="Roadmap">
+<dt>Giugno 2017</dt>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dt>Giugno 2017</dt>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dt>Giugno 2017</dt>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dt>Giugno 2017</dt>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+</dl>
+
+
+### ![guide]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
+
+I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale. Per prendere decisioni basate sui comportamenti e dati reali è necessario realizzare servizi e processi interamente digitali, evitando la semplice trasposizione
+on line di un processo erogato in modalità tradizionale.
 
 - [Prima i cittadini, tutti](#prima-i-cittadini)
 - [Dialogare per migliorare](#dialogare-per-migliorare)
 - [A servizio del Paese](#a-servizio-paese)
-
-### 2. Parti dai dati per pensare in digitale
-
-I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale. Per prendere decisioni basate sui comportamenti e dati reali è necessario realizzare servizi e processi interamente digitali, evitando la semplice trasposizione
-on line di un processo erogato in modalità tradizionale.
 
 #### Principi di riferimento
 
