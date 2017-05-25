@@ -7,8 +7,9 @@ keywords: ['argomento 1']
 categories : ['tendenze']
 lang: it
 toc: true
-blueimage : '/assets/images/posts/torre-blu.jpg' 
-gallery: 
+backgroundImage : '/assets/images/posts/torre-blu.jpg'
+backgroundColor: '#439af1'
+gallery:
 - img : '/assets/galleries/service-design/1.jpeg'
   caption: 'test caption 1'
 - img : '/assets/galleries/service-design/2.jpeg'

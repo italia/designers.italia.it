@@ -14,20 +14,23 @@ layout: default
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
 <!-- ==== blue block -->
-      <div class="Blueblock Grid Grid--alignCenter" >
-        <figure class="blueblock__mainimg ">
-          {% if page.blueimage%}
-            <img src="{{page.blueimage | relative_url }}">
-          {% endif %}
-        </figure>
-        <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12 blueblock__mainheader">
+  <div class="FlexEmbed u-background-white u-padding-top-xxl u-xs-padding-top-none u-hidden u-md-flex u-lg-flex" aria-hidden="true">
+    <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"
+      style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});
+      background-blend-mode: multiply; background-size: cover; min-height: 300px">
+    </div>
+    <div class="FlexEmbed-content u-flex">
+
+      <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
+
+        <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
            <div class="u-textCenter u-padding-bottom-xl ">
           {% if page.categories %}
               <div class="u-layoutCenter u-textCenter u-margin-all-xl">
                 <ul class="Category" >
                 {% for item in page.categories%}
                   <li class="u-text-r-xxs u-color-white u-border-all-xxs  u-padding-all-xxs">
-                  {{item}} 
+                  {{item}}
                   </li>
                 {% endfor %}
                 </ul>
@@ -59,7 +62,7 @@ layout: default
                 <ul class="Badges">
                 {% for item in page.keywords%}
                   <li class="u-text-r-xxs u-background-white u-borderRadius-xl u-color-50 badge">
-                  {{item}} 
+                  {{item}}
                   </li>
                 {% endfor %}
                 </ul>
@@ -70,10 +73,14 @@ layout: default
               {% include share.html %}
             </div>
         </div>
-        
+
         </div><!-- /grid-cell-->
 
       </div>
+
+    </div>
+  </div>
+
 
 
 <!--/ === blue block-->
@@ -87,7 +94,7 @@ layout: default
                 <ul class="Category" >
                 {% for item in page.categories%}
                   <li class="u-text-r-xxs u-background-white u-color-50 u-border-all-xxs  u-padding-all-xxs">
-                  {{item}} 
+                  {{item}}
                   </li>
                 {% endfor %}
                 </ul>
@@ -119,7 +126,7 @@ layout: default
                 <ul class="Badges">
                 {% for item in page.keywords%}
                   <li class="u-text-r-xxs u-background-50 u-borderRadius-xl u-color-white badge">
-                  {{item}} 
+                  {{item}}
                   </li>
                 {% endfor %}
                 </ul>
@@ -135,7 +142,7 @@ layout: default
           {{ content }}
         </div>
 
-        
+
 
         <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
           style="max-width: 15em" />

@@ -183,18 +183,6 @@
   }
 }
 
-/** component Blueblock
-========================= */
-.Blueblock {
-  position: relative;
-  background-color: #fff;
-  .blueblock__mainheader {
-    position: absolute;
-    z-index: 100;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
 /** component Roadmap
 ====================== */
 
@@ -250,14 +238,14 @@
   }
 }
 
-/* CHECKLISTS 
+/* CHECKLISTS
 ============== */
 *[data-checklist] {
   color: #00C5CA;
   position: relative;
   &:before {
     content: attr(data-checklist)". ";
-    @media screen and (min-width: 992px) {    
+    @media screen and (min-width: 992px) {
       position: absolute;
       font-size: 10rem;
       width: 14rem;
@@ -265,7 +253,7 @@
       text-align: right;
       bottom: 3.2rem;
     }
-    
+
   }
 }
 

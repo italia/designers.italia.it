@@ -1,14 +1,15 @@
 {% assign gallery = include.gallery  %}
 <div class="Grid  Grid--withGutter Grid--equalHeight Grid--gallery">
     {% for item in gallery %}
-        <div class="Grid-cell u-size1of2">
+        <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of2">
             <figure class="fixture-Box u-sizeFill">
               <img src="{{item.img | relative_url }}">
               {% if item.caption %}
-              <figcaption ><span>{{item.caption}}</span></figcaption>
+              <figcaption>
+                <span class="u-color-grey-50 u-background-white u-text-r-xs">{{item.caption}}</span>
+              </figcaption>
               {% endif %}
             </figure>
        </div>
     {% endfor %}
 </div>
-
