@@ -6,18 +6,21 @@
   <ul class="Linklist Linklist--padded u-layout-prose u-text-r-xs {% if include.dynamic %}Treeview Treeview--default js-Treeview{% endif %}">
 {% endif %}
 
-  {% assign navurl = page.url | remove: 'index.html' %}
+  {% assign navurl = page.url | remove: 'index.html' | relative_url %}
   {% for item in items %}
   	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}u-inlineBlock u-alignTop u-textCenter{% endif %}">
 
       {% if item.url == "#" or item.url contains '//' %}
         {% assign _url = item.url %}
       {% else %}
-        {% assign _url = item.url | relative_url %}
+        {% assign _url = item.url | relative_url | append: '/' %}
       {% endif %}
 
-  		<a href="{{ _url }}" class="{% if item.url == navurl %}is-current u-textWeight-700{% endif %} Linklist-link"
-        {% if item.image %}data-megamenu-class="Linklist--withImage"{% endif %}
+  		<a href="{{ _url }}" class="{% if _url == navurl %}is-current u-textWeight-700{% endif %} Linklist-link"
+        data-megamenu-class="
+          {% if item.image %}Linklist--withImage{% endif %}
+          {% if _url == navurl %}is-current{% endif %}
+        "
         {% if item.image %}style="background-image: url({{ item.image }})"{% endif %}
       >
         {{ item.markup_pre }}

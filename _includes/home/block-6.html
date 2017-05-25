@@ -18,7 +18,7 @@
           {{ t.home_blog_text }}
           {{ t.home_blog_text }}
         </p>
-        <a href="" class="u-background-white u-color-50 u-padding-top-s u-padding-bottom-s
+        <a href="{{ page.link_to_blog | relative_url }}" class="u-background-white u-color-50 u-padding-top-s u-padding-bottom-s
           u-text-r-xs u-linkClean u-textSmallCaps u-textWeight-700 u-inlineBlock
           u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m">
           {{ t.see_all }}
@@ -32,7 +32,7 @@
 
       <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-color-white u-flex"
         style="background-color: {{ post.backgroundColor }}; background-image: url({{ post.backgroundImage | relative_url }});
-          background-blend-mode: multiply; background-size: cover">
+          background-blend-mode: multiply; background-size: cover; min-height: 300px">
         <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
           <div class="u-flexAlignSelfEnd">
             <p class="u-inlineBlock u-border-all-xxs u-padding-top-xxs u-padding-bottom-xxs u-text-r-xxs u-textWeight-600
@@ -40,7 +40,7 @@
               {{ post.category }}
             </p>
             <h3 class="u-text-r-xl">
-              <a href="{{ post.url }}" class="u-color-white u-linkClean">
+              <a href="{{ post.url |relative_url }}" class="u-color-white u-linkClean">
                 <span>{{ post.title }}</span>
               </a>
             </h3>

@@ -2,27 +2,11 @@
     header {
         color: #5A6772;
         padding: 20px 0;
-        h1 {
-            font-size: 56px;
-            font-weight: 700;
-            line-height: 85px;
-            text-align: center;
-        }
-        h2 {
-            font-size: 40px;
-            font-weight: 300;
-            line-height: 52px;
-            text-align: center;
-            @media screen and (max-width: 991px) {
-                font-size: 32px;
-                line-height: 40px;
-            }
-        }
-        h3 {
-            font-size: 18px;	
-            line-height: 27px;
-            font-weight: 300;
-            text-align: center;
+    }
+    .show-in-small {
+        display: none !important;
+        @media screen and (max-width: 991px) {
+            display: block !important;
         }
     }
 }
@@ -32,7 +16,7 @@
             margin-left: 10px;
             margin-right: 10px;
     }
-    
+
     .Grid {
         position: relative;
     }
@@ -62,7 +46,7 @@
             margin-left: 10px;
             margin-right: 10px;
         }
-    } 
+    }
     div[class*='order-1'] {
         @media screen and (max-width: 991px) {
             order: 1;
@@ -86,39 +70,40 @@
     div[class*='order-5'] {
         @media screen and (max-width: 991px) {
             order: 5;
-            
+
         }
     }
     div[class*='order-6'] {
         @media screen and (max-width: 991px) {
             order: 6;
-            
+
         }
     }
     div[class*='order-7'] {
         @media screen and (max-width: 991px) {
             order: 7;
-            
+
         }
     }
     div[class*='order-8'] {
         @media screen and (max-width: 991px) {
             order: 8;
-            
+
         }
     }
     div[class*='order-9'] {
         @media screen and (max-width: 991px) {
             order: 9;
-            
+
         }
     }
     div[class*='order-10'] {
         @media screen and (max-width: 991px) {
             order: 10;
-            
+
         }
     }
+
     &.show-group-1 div[class*='group-1'] {
             display: flex !important;
     }
@@ -138,6 +123,12 @@
     .sdkit__mainhead {
         position: relative;
         padding: 20px 10px;
+        @media screen and (max-width: 991px) {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+          margin-left: 0 !important;
+          margin-right: 0 !important;
+        }
         img {
             display: block;
             margin: 0 auto;
@@ -191,7 +182,7 @@
     &.show-group-1 {
         @media screen and (max-width: 991px) {
         .sdkit__mainhead {
-            
+
             &.g1 {
                 order: 1;
                 &:before {
@@ -213,7 +204,7 @@
                     content: "\23f6";
                     }
             }
-            
+
             &.g1, &.g2 {
                 order: 1;
             }
@@ -262,8 +253,15 @@
         list-style-type : square;
         margin: 26px 30px;
         color: #06c;
+
+        @media screen and (max-width: 991px) {
+            margin-left: 12px !important;
+            margin-right: 8px !important;
+
+        }
+
         li {
-            margin-bottom: 14px;
+            margin-bottom: 1em;
         }
     }
     .sdkit__head {
@@ -279,12 +277,16 @@
             align-items: center;
             justify-content: center;
             @media screen and (max-width: 991px) {
-                justify-content: inherit;        
+                justify-content: inherit;
             }
         }
         @media screen and (max-width: 991px) {
             text-align: left;
-            text-transform: capitalize;            
+            text-transform: capitalize;
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
         }
     }
     .sdkit__label {
@@ -323,4 +325,17 @@
             display: block !important;
         }
     }
+
+    @media screen and (max-width: 991px) {
+      .sdkit__mainhead {
+        display: flex !important;
+      }
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+  .sdkit__mainhead a {
+    color: #5a6772 !important;
+  }
 }

@@ -34,10 +34,10 @@
 .Header-owner > div > a,
 .Header-slim a {
   text-decoration: none;
-  padding-right: 1.3rem !important;
-  padding-left: 1.3rem !important;
-  padding-top: 1.3rem;
-  padding-bottom: 1.3rem;
+  padding-right: 1.4rem !important;
+  padding-left: 1.4rem !important;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
   display: inline-block !important;
   vertical-align: middle !important;
   @media screen and (min-width: 992px) {
@@ -53,11 +53,18 @@
 .Header-slim li {
   display: inline-block !important;
   vertical-align: middle !important;
+  margin-bottom: 0.2rem;
+}
+
+.Header-slim li:hover {
+  border-bottom: 0.2rem solid white;
+  margin-bottom: 0;
 }
 
 .Header-slim li.current {
   border-bottom: 0.2rem solid white;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 .Header-slim li.delimiter a {
@@ -66,6 +73,11 @@
 
 .Header-slim-toggle a {
   text-decoration: none !important;
+}
+
+.Network .current a {
+    font-size: 1.5em;
+    border-left: 1rem solid #0066cc !important;
 }
 
 /** Header tweaks
@@ -94,8 +106,29 @@
 /** Megamenu tweaks
     ===================== */
 
+.Megamenu.js-megamenu {
+  margin-left: -3.2rem !important;
+}
+
+.Megamenu-item:first-child>a {
+  padding-left: 3.2rem !important;
+}
+
 .Megamenu--default .Megamenu-item > a {
   color: #06c !important;
+}
+
+.Megamenu--default .Megamenu-item > a.is-current {
+  border-bottom: 2px solid #06c !important;
+}
+
+/** Carousel
+  ================ */
+
+.owl-stage,
+.owl-item {
+  display: flex;
+  align-self: stretch;
 }
 
 /** Utilities
@@ -106,11 +139,11 @@
 }
 
 .u-color-teal-60 {
-  color: #00C5CA
+  color: #00C5CA !important;
 }
 
 .u-color-teal-65 {
-  color: #06A3A8
+  color: #06A3A8 !important;
 }
 
 .u-background-teal-65 {
@@ -121,7 +154,7 @@
   box-shadow: 1px 1px 60px 1px rgba(0, 0, 0, .20) !important
 }
 
-/** component Badge 
+/** component Badge
 =================== */
 .Badges {
   margin: 0;
@@ -150,7 +183,7 @@
   }
 }
 
-/** component Blueblock 
+/** component Blueblock
 ========================= */
 .Blueblock {
   position: relative;
@@ -162,7 +195,7 @@
     transform: translateY(-50%);
   }
 }
-/** component Roadmap 
+/** component Roadmap
 ====================== */
 
 .Roadmap {
@@ -289,6 +322,7 @@
       }
     }
   }
+
   .Grid--gallery {
     margin-left: -15rem;
     margin-right: -15rem;
