@@ -6,4 +6,6 @@ $(function() {
     $(this).toggleClass('active');
     $gridcontainer.toggleClass(toShow);
   });
+
+  $('.js-square').each(function(_, el) { $(el).height($(el).width()) });
 })

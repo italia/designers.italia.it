@@ -5,37 +5,40 @@ lang: it
 
 {% include setlang.html %}
 
-<div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
-  <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
+<div class="u-background-white u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-50 u-margin-top-l u-lineHeight-l">
     {{ t.news_title }}</h1>
 </div>
 
-<hr class="Separator-room u-background-50" />
-<hr class="Separator Separator--up u-background-grey-15" />
-
-<div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+<div class="u-background-grey-15 u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
   <div class="Grid">
 
-    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       {% for post in paginator.posts %}
 
         {% assign excerpt = post.excerpt | remove: '<p>' | remove: '</p>' '%}
+        {% assign _url = post.url | relative_url %}
 
-        <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
-        {% include card.html
-          date=post.date
-          author=post.author
-          title=post.title
-          link=post.url
-          text=excerpt
-          hasImage=false
-          categories=post.categories
-          flat=true
-          classes='u-background-grey-15'
-          %}
+        <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-color-white u-flex js-square"
+          style="background-color: {{ post.backgroundColor }}; background-image: url({{ post.backgroundImage | relative_url }});
+            background-blend-mode: multiply; background-size: cover; min-height: 300px">
+          <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
+            <div class="u-flexAlignSelfEnd">
+              <p class="u-inlineBlock u-border-all-xxs u-padding-top-xxs u-padding-bottom-xxs u-text-r-xxs u-textWeight-600
+                u-margin-r-bottom u-padding-r-right u-padding-r-left u-margin-r-right" style="background-color: rgba(0, 0, 0, 0.1)">
+                {{ post.category }}
+              </p>
+              <h3 class="u-text-r-xl">
+                <a href="{{ post.url | relative_url }}" class="u-color-white u-linkClean">
+                  <span>{{ post.title }}</span>
+                </a>
+              </h3>
+            </div>
+          </div>
         </div>
 
       {% endfor %}
+
+    </div>
 
       <div>
         {% if paginator.previous_page %}
@@ -50,18 +53,6 @@ lang: it
           <span>{{ t.next_page }}</span>
         {% endif %}
       </div>
-
-    </div>
-
-    {% capture categories %}
-      {% for category in site.categories %}{{ category[0] }}:{% endfor %}
-    {% endcapture %}
-
-    {% assign categories_ = categories | strip | split: ':' %}
-
-    {% capture pills %}{% include pills.html items=categories_ small=true %}{% endcapture %}
-
-    {% include sideblock.html title=t.news_nav_title content=pills %}
 
   </div>
 </div>
