@@ -18,7 +18,7 @@
           {{ t.home_blog_text }}
           {{ t.home_blog_text }}
         </p>
-        <a href="" class="u-background-white u-color-50 u-padding-top-s u-padding-bottom-s
+        <a href="{{ page.link_to_blog | relative_url }}" class="u-background-white u-color-50 u-padding-top-s u-padding-bottom-s
           u-text-r-xs u-linkClean u-textSmallCaps u-textWeight-700 u-inlineBlock
           u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m">
           {{ t.see_all }}
@@ -40,7 +40,7 @@
               {{ post.category }}
             </p>
             <h3 class="u-text-r-xl">
-              <a href="{{ post.url }}" class="u-color-white u-linkClean">
+              <a href="{{ post.url |relative_url }}" class="u-color-white u-linkClean">
                 <span>{{ post.title }}</span>
               </a>
             </h3>
