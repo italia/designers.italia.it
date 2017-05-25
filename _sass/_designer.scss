@@ -120,3 +120,138 @@
 .u-borderShadow-xl {
   box-shadow: 1px 1px 60px 1px rgba(0, 0, 0, .20) !important
 }
+
+/** component Badge 
+=================== */
+.Badges {
+  margin: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    position: relative;
+    padding: 0.3em 1.5em 0.3em 1em;
+    &:after {
+      content: '\02022';
+      font-family: 'Arial', 'Verdana', Sans serif;
+      font-size: 2em;
+      line-height: 0;
+      position: absolute;
+      right: 0.1em;
+      top: 50%;
+    }
+  }
+}
+.Category {
+  margin: 0;
+  list-style: none;
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+/** component Blueblock 
+========================= */
+.Blueblock {
+  position: relative;
+  background-color: #fff;
+  .blueblock__mainheader {
+    position: absolute;
+    z-index: 100;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+/** component Roadmap 
+====================== */
+
+.Roadmap {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  position: relative;
+  &:after {
+    content: '';
+    border-left: 1px solid #ddd;
+    height: 100%;
+    z-index: 100;
+    top: 1rem;
+    left: -2rem;
+    position: absolute;
+  }
+  dt {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    position: relative;
+    &:after {
+      content: '';
+      background-color:#5a6772;
+      height: 2rem;
+      width: 2rem;
+      z-index: 101;
+      top: 0.5rem;
+      left: -3rem;
+      position: absolute;
+      border-radius: 2rem;
+    }
+  }
+  dd {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    position: relative;
+    font-weight: 300;
+    &:after {
+      content: '';
+      background-color: #ddd;
+      height: 1.2rem;
+      width: 1.2rem;
+      z-index: 101;
+      top: 1rem;
+      left: -2.5rem;
+      position: absolute;
+      border-radius: 2rem;
+    }
+  }
+}
+
+/* OVERRIDES ============ */
+.Prose {
+    a {
+      color: #0066CC;
+      text-decoration: none;
+
+    }
+    & >ol>li,
+    & >p,
+    & >ul {
+      color: #5a6772;
+    }
+    & >ul {
+      list-style-type: disc;
+      color: #0066CC;
+    }
+    & > h3 {
+      font-size: 4rem !important;
+      line-height: 4.5rem !important;
+      margin-top: 3rem !important;
+      margin-bottom: 3rem !important;
+      &:after {
+        content: '';
+        display: block;
+        width: 12%;
+        border-top: 1px solid #ddd;
+        margin-top: 1rem;
+      }
+      img {
+        max-height: 3.5rem;
+        width: auto;
+        margin-right: 0.5rem;
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
+      }
+    }
+  }
