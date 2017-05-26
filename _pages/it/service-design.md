@@ -5,10 +5,12 @@ layout: post
 author: Mario Rossi
 keywords: ['argomento 1']
 categories : ['tendenze']
+related_tags : ['tag1']
 lang: it
 toc: true
 backgroundImage : '/assets/images/posts/torre-blu.jpg'
 backgroundColor: '#439af1'
+blueBlock: true
 gallery:
 - img : '/assets/galleries/service-design/1.jpeg'
   caption: 'test caption 1'
@@ -70,7 +72,7 @@ nuovo valore.
 che possono essere riutilizzati. Ogni fase di sviluppo del servizio deve essere documentata e resa disponibile in maniera aperta per garantire l’integrità e la sostenibilità futura, oltre a possibili collaborazioni che permetterebbero di aggiungere
 nuovo valore.
 
-### Altra domanda?
+### Altra domanda da checklist?
 {:data-checklist="2"}
 È necessario conoscere il contesto nel quale opererà un servizio, definirne gli obiettivi, attenersi agli standard e fare ricerche su eventuali alternative valide sia a livello nazionale che internazionale nonché sulla disponibilità di strumenti e processi
 che possono essere riutilizzati. Ogni fase di sviluppo del servizio deve essere documentata e resa disponibile in maniera aperta per garantire l’integrità e la sostenibilità futura, oltre a possibili collaborazioni che permetterebbero di aggiungere

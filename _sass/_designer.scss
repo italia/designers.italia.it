@@ -266,6 +266,28 @@
 
   }
 }
+/* RELATEDS 
+=============== */
+.Relateds {
+  .Badges {
+    display: inline-block !important;
+    position: relative;
+    bottom: 0.3rem;
+  }
+  .relateds-last-string {
+    position:relative;
+    &:after {
+      content:'';
+      border-bottom: 1px solid #ddd;
+      width: 50%;
+      right: 0;
+      bottom: 0;
+      position: absolute;
+      z-index: 100;
+    }
+  }
+}
+
 
 /* OVERRIDES ============ */
 .Prose {

@@ -13,6 +13,7 @@ layout: default
 {% endcomment %}
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
+{% if page.blueBlock %}
 <!-- ==== blue block -->
   <div class="FlexEmbed u-background-white u-padding-top-xxl u-xs-padding-top-none u-hidden u-md-flex u-lg-flex" aria-hidden="true">
     <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"
@@ -81,9 +82,8 @@ layout: default
     </div>
   </div>
 
-
-
 <!--/ === blue block-->
+{% endif %}
   <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
     <div class="Grid Grid--alignCenter">
       <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
@@ -142,19 +142,23 @@ layout: default
           {{ content }}
         </div>
 
-
-
+        
+        {% if page.related_tags == nil %}
         <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
           style="max-width: 15em" />
-
         <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
           {% include share.html %}
         </div>
-
-
+        {% endif %}
 
       </div>
 
     </div>
   </div>
+
+  {% if page.related_tags != nil %}
+    {% include relateds.html %}
+
+  {% endif %}
+  
 </article>
