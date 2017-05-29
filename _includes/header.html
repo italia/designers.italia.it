@@ -1,0 +1,146 @@
+<header class="Header u-hiddenPrint">
+
+  <div class="Header-banner u-background-50">
+    <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
+
+      <div>
+
+        <div class="u-md-hidden u-lg-hidden u-border-right-xxs u-margin-right-xs u-padding-right-xs u-inlineBlock u-alignMiddle">
+          <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network"
+            aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">
+              {% include slim_icon.html %}
+          </a>
+        </div>
+
+        <a href="{{ site.owner_link }}" class="u-color-white u-text-r-xxs u-linkClean u-textWeight-600">
+          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
+              {{ site.owner_short }}
+            </span>
+          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
+              {{ site.owner_short }}
+            </span>
+        </a>
+
+        <span class="u-color-white u-padding-left-xxs u-padding-right-xxs">+</span>
+
+        <a href="{{ site.partner_link }}" class="u-color-white u-text-r-xxs u-linkClean u-textWeight-600">
+          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
+              {{ site.partner_short }}
+            </span>
+          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
+              {{ site.partner_short }}
+            </span>
+        </a>
+      </div>
+
+      {% comment %} {% include lang_switch.html %} {% endcomment %}
+
+      <div class="u-hidden u-md-block u-lg-block">
+        {% include slim_header.html %}
+      </div>
+
+    </div>
+  </div>
+
+  <div class="Header-navbar u-background-white u-padding-r-top u-text-r-xxl">
+    <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
+      <div class="Header-logo Grid-cell" aria-hidden="true">
+        <a href="{{ '/' | relative_url }}" tabindex="-1">
+          <img src="{{ site.logo | relative_url }}" alt="Home {{ site.title }}">
+        </a>
+      </div>
+
+      <div class="Header-title Grid-cell">
+        <h1 class="Header-titleLink">
+          <a href="{{ '/' | relative_url }}" class="u-color-50">{{ t.site_title | default: site.title | escape }}
+            {% if site.pill %}
+              <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
+              <span class="u-color-20 u-text-xxs
+              u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>{%
+                endif %}<br><small class="u-color-grey-50">{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
+        </h1>
+      </div>
+
+      <div class="Header-searchTrigger Grid-cell">
+        {% if include.hasSearch %}
+        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search u-background-50" title="{{ t.search_form_on }}" aria-label="{{ t.search_form_on }}" aria-hidden="false">
+        </button>
+        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden u-background-50" title="{{ t.search_form_off }}" aria-label="{{ t.search_form_off }}" aria-hidden="true">
+        </button>
+        {% endif %}
+      </div>
+
+      <div class="Header-utils Grid-cell">
+        <div class="Header-social Headroom-hideme">
+          <p class="u-color-grey-50">{{ t.follow_us | capitalize }}</p>
+          <ul class="Header-socialIcons">
+            {% for social in site.data.social %}
+            <li>
+              <a href="{{ social[1].link }}" title="{{ social[1].name }}">
+                <span class="Icon-{{ social[0] }} u-background-50 u-color-white u-padding-r-xl"></span>
+                <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        {% if include.hasSearch %}
+        <div class="Header-search" id="header-search">
+          {% include search_form.html %}
+        </div>
+        {% endif %}
+
+      </div>
+
+      <div class="Header-toggle Grid-cell">
+        <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="{{ t.toggle_menu_label }}" title="{{ t.toggle_menu_label }}">
+          <span class="Hamburger-toggle" role="presentation"></span>
+          <span class="Header-toggleText" role="presentation">Menu</span>
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- Header-navbar -->
+
+
+  <!-- pinwheel -->
+  <div class="Grid u-background-white u-hidden u-sm-hidden u-md-flex u-lg-flex" style="height: 34px">
+    <div class="Grid-cell u-md-size7of12 u-lg-size7of12"></div>
+    <div class="Grid-cell u-color-white u-md-size1of12 u-lg-size1of12">
+      <svg style="margin-left: -17px" class="Header-PinWheel"
+        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 34" height="34" width="34">
+        <g fill="none">
+          <g fill="#06c">
+            <path d="m34 17.5 0-16.8c0-0.3-0.1-0.5-0.4-0.6-0.2-0.1-0.5-0.1-0.7 0.1L25.4 7.7 17.9 0.2C17.8 0.1 17.6 0 17.5 0L0.6 0C0.4 0 0.1 0.2 0 0.4-0.1 0.7 0 0.9 0.2 1.1L7.7 8.6 0.2 16.1C0.1 16.2 0 16.4 0 16.5l0 16.8c0 0.3 0.2 0.5 0.4 0.6 0.3 0.1 0.6 0 0.7-0.1l7.5-7.5 7.5 7.5c0.1 0.1 0.2 0.1 0.3 0.2l1.3 0 15.7 0c0.3 0 0.5-0.2 0.6-0.4 0.1-0.2 0-0.5-0.1-0.7l-7.5-7.5 7.5-7.5c0.1-0.1 0.2-0.3 0.2-0.5zM24.5 8.6 19.3 13.8c0 0 0 0 0 0 1-2.6 1.6-6.2 0.3-10.1l4.9 4.9zM14.3 17c0-0.7 0.3-1.4 0.8-1.9 0.5-0.5 1.2-0.8 1.9-0.8 1.5 0 2.7 1.2 2.7 2.7 0 0.7-0.3 1.4-0.8 1.9-0.5 0.5-1.2 0.8-1.9 0.8l0 0c-1.5 0-2.7-1.2-2.7-2.7zM2.2 1.3l14.9 0c2.7 4.5 2.2 8.9 1.1 11.9-0.4-0.1-0.8-0.2-1.2-0.2-0.8 0-1.7 0.3-2.3 0.8L2.2 1.3ZM8.6 9.5 13.7 14.6C11.1 13.7 7.6 13.1 3.7 14.4L8.6 9.5ZM1.3 31.8l0-14.9c4.5-2.7 8.9-2.2 11.9-1.1-0.1 0.4-0.2 0.8-0.2 1.2 0 0.9 0.3 1.7 0.7 2.3L1.3 31.8ZM9.5 25.4 14.7 20.2c0 0 0 0 0 0-1 2.6-1.6 6.2-0.3 10.1l-4.9-4.9zm22.3 7.3-14.9 0c-2.7-4.5-2.2-8.9-1.1-11.9 0.4 0.1 0.8 0.2 1.2 0.2l0 0 0 0c0.8 0 1.7-0.3 2.3-0.8l12.5 12.5zm-6.4-8.2-5.2-5.1c1.6 0.6 3.4 1 5.5 1 1.4 0 2.9-0.2 4.5-0.7l-4.9 4.9zm7.3-7.4c-4.5 2.7-8.9 2.2-11.9 1.1 0.1-0.4 0.2-0.8 0.2-1.2 0-0.9-0.3-1.7-0.7-2.3l12.5-12.5 0 14.9 0 0z">
+            </path>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
+  <!-- pinwheel -->
+
+  <div class="Grid u-background-white u-hidden u-sm-hidden u-md-flex u-lg-flex">
+    <div class="Grid-cell u-color-grey-30 u-border-bottom-xxs u-md-size7of12 u-lg-size7of12 u-padding-bottom-xs"
+      style="border-right: 1px solid #06c; position: relative">
+      <div class="Megamenu Megamenu--default u-background-white u-color-grey-40">
+        <p class="u-text-r-xxs" style="letter-spacing: 0.02em">{{ t.main_menu_label }}</p>
+      </div>
+
+      <svg height="8" width="8" style="position: absolute; right: -4px; bottom: -4px">
+        <circle cx="4" cy="4" r="1" stroke="#06c" stroke-width="4" fill="#06c"></circle>
+      </svg>
+
+    </div>
+    <div class="Grid-cell u-color-white u-md-size1of12 u-lg-size1of12">
+    </div>
+    <div class="Grid-cell u-color-grey-30 u-border-bottom-xxs u-md-size4of12 u-lg-size4of12"></div>
+  </div>
+
+  <div class="Headroom-hideme u-textCenter u-hidden u-sm-hidden u-md-block u-lg-block">
+    <nav class="Megamenu Megamenu--default js-megamenu u-background-white u-color-50" data-rel=".Offcanvas .Treeview"></nav>
+  </div>
+
+
+</header>
