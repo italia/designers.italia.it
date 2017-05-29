@@ -9,7 +9,7 @@ related_tags : ['tag1']
 lang: it
 toc: true
 backgroundImage : '/assets/images/posts/torre-blu.jpg'
-backgroundColor: '#439af1'
+backgroundColor: '#5AB2FF'
 blueBlock: true
 gallery:
 - img : '/assets/galleries/service-design/1.jpeg'
@@ -41,6 +41,13 @@ scelte effettuate, adeguando il progetto alle esigenze emerse dal dialogo con gl
 <dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
 </dl>
 
+### ![materiali]({{'/assets/images/lego.svg' | relative_url }}) Bricks
+
+Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
+
+### ![forum]({{'/assets/images/conversation.svg' | relative_url }}) Forum
+
+Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
 
 ### ![guide]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
