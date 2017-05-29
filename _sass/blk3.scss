@@ -20,20 +20,14 @@
     .Grid {
         position: relative;
     }
-    .Grid > .Grid-cell:nth-child(5n) {
-        &:after {
-            content: '';
-            width: 100%;
-            height: 1px;
-            border-bottom: .1rem solid #ddd;
-            position: absolute;
-            left: 0;
-            right: 0;
-            @media screen and (max-width: 991px) {
-                display: none !important;
-            }
-        }
+
+    .sdkit__hr {
+      border-bottom: 1px solid #eee;
+      color: #eee;
+      height: 1px;
+      opacity: 0.3
     }
+
     .Grid > .Grid-cell:nth-child(5) {
         &:after {
             display: none;

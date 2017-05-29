@@ -1,4 +1,4 @@
-<section class="u-nbfc u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom u-posRelative u-zindex-30" style="background: #FAFAFA">
+<section class="u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom" style="background: #FAFAFA">
 
   <div class="u-layout-wide u-layoutCenter u-padding-top-m">
     <h2 class="u-text-r-xxl u-textWeight-700 u-color-grey-50 u-textCenter">{{ t.home_projects_title }}</h2>
@@ -7,8 +7,8 @@
       {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
 
     <div class="{% unless include.limit > 0 %}owl-carousel owl-theme{% endunless %}
-    {% if include.limit > 0 %}Grid Grid--withGutter Grid--alignMiddle{% endif %}
-      u-flex u-padding-r-all u-xs-padding-all-none" role="region" id="carousel-1" tabindex="0"
+      {% if include.limit > 0 %}Grid Grid--withGutter Grid--alignMiddle u-flex {% endif %}
+      u-padding-r-all u-xs-padding-all-none" role="region" id="carousel-1" tabindex="0"
       data-carousel-options='{ "dotsContainer": "#customDots", "dots": true }'>
 
       {% assign _limit = include.limit | default: 3 %}

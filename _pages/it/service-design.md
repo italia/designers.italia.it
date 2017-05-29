@@ -24,7 +24,7 @@ gallery:
 ---
 
 Il cittadino deve essere posto al centro della progettazione di un servizio e coinvolto in tutte le fasi dello sviluppo. Nella redazione dei bandi è auspicabile prevedere, durante la progettazione e lo sviluppo, fasi di verifica e miglioramento delle
-scelte effettuate, adeguando il progetto alle esigenze emerse dal dialogo con gli utenti. Tutti, nessuno escluso, devono poter utilizzare il servizio in maniera agevole ed efficace.
+scelte effettuate, adeguando il progetto alle esigenze emerse dal dialogo con gli utenti. Tutti, nessuno escluso, devono poter utilizzare il servizio in maniera agevole ed efficace
 
 ### Roadmap
 
