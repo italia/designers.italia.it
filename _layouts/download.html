@@ -13,7 +13,7 @@ layout: default
 {% endcomment %}
 
 <article itemscope itemtype="http://schema.org/BlogPosting">
-{% if page.blueBlock %}
+
 <!-- ==== blue block -->
   <div class="FlexEmbed u-background-white u-padding-top-xxl u-xs-padding-top-none u-hidden u-md-flex u-lg-flex" aria-hidden="true">
     <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"
@@ -38,9 +38,7 @@ layout: default
               </div>
             {% endif %}
 
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">
-            {{ page.date | date: "%-d %b %Y" }}</time>
-
+            {% include breadcrumbs.html %}
             <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">
               {{ page.title }}</h1>
 
@@ -52,11 +50,6 @@ layout: default
             <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-white u-margin-r-bottom"
               style="max-width: 15em" />
 
-            {% if page.author %}
-              <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
-                <span itemprop="name" class="u-text-r-xs u-color-white">{{ t.by }} {{ page.author }}</span>
-              </div>
-            {% endif %}
 
             {% if page.keywords %}
               <div itemprop="keywords" class="u-layoutCenter u-textCenter u-margin-all-xl">
@@ -83,61 +76,12 @@ layout: default
   </div>
 
 <!--/ === blue block-->
-{% endif %}
+
+
+
   <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
     <div class="Grid Grid--alignCenter">
       <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-        {% if page.blueBlock==false %}
-        <div class="u-textCenter u-padding-bottom-xl">
-          {% if page.categories %}
-              <div class="u-layoutCenter u-textCenter u-margin-all-xl">
-                <ul class="Category" >
-                {% for item in page.categories%}
-                  <li class="u-text-r-xxs u-background-white u-color-50 u-border-all-xxs  u-padding-all-xxs">
-                  {{item}}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-textSecondary">
-            {{ page.date | date: "%-d %b %Y" }}</time>
-
-            <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-grey-60 u-margin-top-s u-lineHeight-l">
-              {{ page.title }}</h1>
-
-            {% if page.subtitle %}
-            <h2 class="u-layoutCenter u-textCenter u-color-grey-50 u-text-r-m u-textWeight-300 u-margin-bottom-s"
-              style="max-width:24em">{{ page.subtitle }}</h2>
-            {% endif %}
-
-            <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
-              style="max-width: 15em" />
-
-            {% if page.author %}
-              <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
-                <span itemprop="name" class="u-text-r-xs u-textSecondary">{{ t.by }} {{ page.author }}</span>
-              </div>
-            {% endif %}
-
-            {% if page.keywords %}
-              <div itemprop="keywords" class="u-layoutCenter u-textCenter u-margin-all-xl">
-                <ul class="Badges">
-                {% for item in page.keywords%}
-                  <li class="u-text-r-xxs u-background-50 u-borderRadius-xl u-color-white badge">
-                  {{item}}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-        </div>
-
-        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
-          {% include share.html %}
-        </div>
-        {% endif %}
 
         <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-color-grey-50">
           {{ content }}

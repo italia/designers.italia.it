@@ -281,6 +281,21 @@
 
 
 /* OVERRIDES ============ */
+body.layout-download .Breadcrumb {
+  .Breadcrumb-item {
+    color: #fff;
+  }
+  a {
+    color: #fff !important;
+    font-weight: 300 !important;
+  }
+  .Breadcrumb-item:after {
+    content: ' / ';
+  }
+  & > li:nth-child(1), & > li:nth-last-child(1) {
+    display: none !important;
+  }
+}
 .Prose {
     a {
       color: #0066CC;
