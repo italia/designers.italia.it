@@ -1,0 +1,97 @@
+.HomeBlk1-medium a {
+  @media screen and (max-width: 991px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.HomeBlk1-plane {
+  @media screen and (min-width: 992px) {
+    img {
+      height: 450px;
+      width: 550px;
+      margin-left: -2em;
+      vertical-align: top;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    text-align: center;
+    img {
+      padding-top: 2em;
+      max-width: 100%;
+      vertical-align: top;
+      margin-bottom: -2em;
+    }
+  }
+}
+
+.HomeBlk1-heroTitle {
+  text-align: right;
+
+  @media screen and (min-width: 992px) {
+    min-width: 16em;
+  }
+  @media screen and (max-width: 991px) {
+    text-align: left;
+    padding-left: 0.2em;
+  }
+}
+
+/** Mouse
+    ===================== */
+
+// .HomeBlk1-Mouse {
+//   -webkit-animation:mouseAnim 5s ease-in-out infinite;
+//   -moz-animation:mouseAnim 5s ease-in-out infinite;
+//   animation:mouseAnim 5s ease-in-out infinite;
+//   -moz-animation-delay: 3s;
+//   -webkit-animation-delay: 3s;
+//   animation-delay: 3s;
+// }
+
+@keyframes mouseAnim {
+  10% { -webkit-transform: translateX(10em); transform:translateX(10em); }
+  20% { -webkit-transform: translateX(10em) rotateY(180deg); transform:translateX(10em) rotateY(180deg); }
+  30% { -webkit-transform: translateX(0) rotateY(180deg); transform:translateX(0) rotateY(180deg); }
+  40%, 100% { -webkit-transform: rotateY(0); transform:rotateY(0); }
+}
+
+@media screen and (min-width: 992px) {
+  .Header-logo img {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .HomeBlk1-heroTitle br {
+    display: none;
+  }
+}
+
+.HomeBlk1-heroTitle strong {
+  font-weight: 700;
+}
+
+.HomeBlk1-desc {
+  @media screen and (max-width: 991px) {
+    padding: 1em;
+  }
+
+  @media screen and (min-width: 992px) {
+    margin-top: -15em;
+    border-right: 1em solid #06c;
+    padding-bottom: 2em !important;
+    border-bottom: 1em solid #06c;
+    width: 115%;
+    padding-left: 9%;
+    margin-left: -5%;
+  }
+}
+
+.HomeBlk1-hero {
+  @media screen and (min-width: 992px) {
+    position: relative;
+    margin-top: -11em;
+  }
+}

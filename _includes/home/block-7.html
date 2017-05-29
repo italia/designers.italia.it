@@ -1,0 +1,24 @@
+<section class="u-nbfc u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl
+  u-xs-padding-all-none u-posRelative u-zindex-30 u-background-white">
+
+  <div class="u-layout-wide u-layoutCenter u-padding-top-m">
+    <h2 class="u-text-r-xxl u-textWeight-700 u-color-grey-50 u-textCenter">{{ t.home_forum_title }}</h2>
+    <p class="u-text-r-xs u-textWeight-400 u-color-grey-50 u-padding-top-l u-padding-r-bottom u-textCenter">
+      {{ t.home_forum_subtitle }}
+    </p>
+    <div class="u-textCenter u-margin-top-l">
+      <img src="{{ '/assets/images/blk7/conversation.svg' | relative_url }}" alt="" />
+    </div>
+    <div class="u-textCenter u-margin-top-l">
+      <p class="u-text-r-xl u-color-teal-60 u-textWeight400">{{ t.home_forum_link }}</p>
+    </div>
+    <div class="u-textCenter u-margin-top-l u-margin-bottom-xxl">
+      <a href="" class="u-inlineBlock u-linkClean u-borderRadius-s u-background-teal-30 u-padding-r-all u-borderShadow-m" style="min-width: 16em">
+        <span class="u-color-white u-text-r-s u-textSmallCaps u-textWeight-700 u-padding-right-xxl u-padding-left-xxl">{{ t.home_forum_action }}</span>
+      </a>
+    </div>
+    {% for i in (1..11) %}
+    <img src="{{ '/assets/images/blk7/balloon.svg' | relative_url }}" alt="" class="u-posAbsolute Balloon-{{ forloop.index }}"/>
+    {% endfor %}
+  </div>
+</section>
