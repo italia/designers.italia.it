@@ -87,7 +87,7 @@ layout: default
   <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
     <div class="Grid Grid--alignCenter">
       <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-
+        {% if page.blueBlock==false %}
         <div class="u-textCenter u-padding-bottom-xl">
           {% if page.categories %}
               <div class="u-layoutCenter u-textCenter u-margin-all-xl">
@@ -137,6 +137,7 @@ layout: default
         <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
           {% include share.html %}
         </div>
+        {% endif %}
 
         <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-color-grey-50">
           {{ content }}
