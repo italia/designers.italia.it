@@ -1,8 +1,14 @@
 ---
 title: Kit Personas
 lang: it
-layout: post
+layout: download
 subtitle:
+backgroundImage : '/assets/images/posts/cover-personas.jpg'
+backgroundColor: '#439af1'
+download_file :
+- file : '/assets/downloads/italia-template-personas.pdf'
+  caption : 'italia-template-personas.pdf'
+  type : 'internal'
 ---
 
 Le personas sono profili di ipotetici utenti del servizio che si sta ideando.

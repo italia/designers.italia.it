@@ -1,8 +1,10 @@
 ---
 title: "Web Analytics: Starter Kit"
 lang: it
-layout: post
+layout: download
 subtitle: Modello di report/dashboard per Google Analytics e Piwik
+backgroundImage : '/assets/images/posts/cover-personas.jpg'
+backgroundColor: '#439af1'
 ---
 
 Questo starter kit ha l’obiettivo di fornire - a chi si occupa a vario titolo del sito web di una pubblica amministrazione - indicazioni operative su come produrre e distribuire un report basico di web analytics, con la finalità di condividerne i dati all’interno di un team di lavoro o con altri stakeholder. Il kit prevede:
@@ -26,7 +28,11 @@ Il template “[Starter kit] Dashboard sito web PA” - disponibile sulla Google
 
 È possibile importarlo sul proprio account GA utilizzando il pulsante Import della galleria soluzioni e scegliendo in seguito la vista di dati a cui applicarlo.
 
-A configurazione importata, sarà possibile visualizzare i dati all’interno del rapporto Personalizzazione → dashboard.
+![]({{'/assets/images/kits/analytics-1.png' | relative_url }})
+
+A configurazione importata, sarà possibile visualizzare i dati all’interno del rapporto **Personalizzazione → dashboard**.
+
+![]({{'/assets/images/kits/analytics-2.png' | relative_url }})
 
 Nella dashboard così generata saranno visualizzabili i seguenti dati:
 
@@ -59,6 +65,10 @@ La dashboard consente inoltre di:
 Chi ha già dimestichezza con la generazione delle dashboard, può utilizzare inoltre la piattaforma Google Data Studio (Beta) per la creazione di soluzioni di monitoraggio dinamiche dall’impatto grafico più incisivo.
 Data Studio consente la condivisione della configurazione dinamica con altri utenti, sia in modalità di sola lettura che in modalità di modifica completa.
 
+![]({{'/assets/images/kits/analytics-3.png' | relative_url }})
+
+![]({{'/assets/images/kits/analytics-4.png' | relative_url }})
+
 Esempio di dashboard di Google Data Studio:
 
 - [Link a Google Data Studio →](https://datastudio.google.com)
@@ -72,7 +82,12 @@ Esempio di dashboard di Google Data Studio:
 Anche con Piwik è possibile generare visualizzazioni dinamiche dei dataset, scegliendo fra i widget a disposizione nel menu a tendina “Dashboard” e organizzando la vista dei dati in base alle proprie esigenze (drag&drop).
 E’ possibile modificare la visualizzazione dei dati all’interno del singolo widget, nonché esportare i dati in esso contenuti nei seguenti formati: CSV,TSV,XML, json, Php, RSS.
 
-Esempio di dashboard per un sito web generata all’interno di Piwik
+![]({{'/assets/images/kits/analytics-5.png' | relative_url }})
+
+*Esempio di dashboard per un sito web generata all’interno di Piwik*
+
 Per generare un report customizzato e impostarne l’invio periodico, è sufficiente recarsi nella sezione Amministrazione e utilizzare la funzione Report Email. Questa funzionalità consente di selezionare i dataset da includere nel report; scegliere il formato dell’output (PDF, HTML, CSV); settare la frequenza di invio e i relativi destinatari.
 
-Creazione e programmazione di un report email in Piwik
+![]({{'/assets/images/kits/analytics-6.png' | relative_url }})
+
+*Creazione e programmazione di un report email in Piwik*
