@@ -275,8 +275,72 @@
   }
 }
 
+.Download {
+  background-color: #fff;
+  .Download-wrapper {
+    position: relative;
+    text-align: center;
+    .download-button {
+      
+      color: #fff !important;
+      background-color: #00C5CA !important;
+      &--float {
+        position: absolute;
+        top: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+      }
+    }
+  }
+  .Download-caption {
+    text-transform: initial;
+  }
+}
+
 
 /* OVERRIDES ============ */
+body.layout-download .Breadcrumb-item--deactivated {
+      font-size: 1.8rem !important;
+      color: rgba(255,255,255,0.5) !important;
+    }
+body.layout-download {
+
+  .Prose {
+    img {
+      position: relative;
+      max-width: calc(100% + 40rem) !important;
+      width: calc(100% + 40rem) !important;
+      margin-left: -20rem;
+      margin-right: -20rem;
+      @media screen and (max-width: 991px) {
+         margin: 2rem 0;
+         width: auto  !important;
+         max-width: 100% !important;
+        }
+    }
+  }
+
+  .Breadcrumb {
+    display: inline-block;
+
+    .Breadcrumb-item {
+      color: #fff;
+      
+    }
+    
+    a {
+      color: #fff !important;
+      font-weight: 300 !important;
+    }
+    .Breadcrumb-item:after {
+      content: ' / ';
+    }
+    & > li:nth-child(1), & > li:nth-last-child(1) {
+      display: none !important;
+    }
+}
+}
 .Prose {
     a {
       color: #0066CC;
