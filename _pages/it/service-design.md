@@ -15,9 +15,8 @@ Veniam commodo aliqua veniam voluptate minim occaecat duis reprehenderit. Labori
 
 Magna dolor esse et eiusmod nulla anim ex ut excepteur mollit elit. Ex velit dolore duis aute aliqua non sint cupidatat cillum officia enim duis. Qui excepteur ad ipsum occaecat fugiat sint pariatur ipsum deserunt enim quis duis do fugiat id.
 
-<<<<<<< HEAD
 Ipsum ut sit deserunt veniam exercitation ad id commodo eu incididunt. Mollit esse adipisicing qui pariatur ullamco culpa sit quis amet duis qui ipsum. In ad esse nostrud reprehenderit cupidatat pariatur anim cillum dolore et pariatur proident voluptate esse. Do velit aute excepteur do voluptate ea voluptate eiusmod sit. Eu et deserunt fugiat cillum irure elit esse nisi anim ex non consequat occaecat ea sunt sit. Magna irure laboris amet eiusmod commodo ad eu. Ut tempor sit nulla enim qui deserunt non duis cupidatat commodo elit laboris culpa. Culpa tempor cupidatat aliqua cillum laboris nisi adipisicing pariatur ea.
-=======
+
 ### ![materiali]({{'/assets/images/lego.svg' | relative_url }}) Bricks
 
 Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
@@ -63,4 +62,3 @@ che possono essere riutilizzati. Ogni fase di sviluppo del servizio deve essere 
 nuovo valore.
 
 ![Image]({{'/assets/galleries/service-design/3.jpeg' | relative_url }})
->>>>>>> 8ea294525fe635b0608ac959c5b9939b3980079c
