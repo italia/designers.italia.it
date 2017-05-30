@@ -1,18 +1,31 @@
 ---
 title: User Interface
-subtitle: Strategie per il design dei servizi
+subtitle: Il punto di incontro tra persone e tecnologie, secondo i principi della human-computer interaction
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/posts/torre-blu.jpg'
+backgroundImage : '/assets/images/pages/michal-parzuchowski-224092.jpg'
 backgroundColor: '#5AB2FF'
 blueBlock: true
 ---
 
-Quis et irure proident officia ipsum esse consequat dolore. Minim commodo qui eu est irure amet adipisicing duis quis esse fugiat tempor eiusmod deserunt veniam commodo. Laborum consectetur culpa aute ipsum laboris officia dolor in ad.
+La sezione è dedicata alla user interface design, con uno spazio particolare dedicato alle componenti visuali alla base della definizione della esperienza utente e della interazione con il cittadino:  componenti, stile, principi e naturalmente strumenti e checklist. Uno spazio rilevante è dedicato alla recente evoluzione in direzione “mobile first” che nel giro di pochi anni ha portato a un’ampia ridefinizione dei pattern di interazione con l’utente.
 
-Veniam commodo aliqua veniam voluptate minim occaecat duis reprehenderit. Laboris sunt officia deserunt pariatur Lorem enim qui reprehenderit aliqua minim eiusmod exercitation excepteur proident id. Exercitation mollit aliqua do fugiat in esse qui incididunt sit cupidatat pariatur adipisicing sunt ea incididunt consequat. Adipisicing pariatur adipisicing mollit fugiat ullamco aliquip magna amet nisi id amet. Nisi officia cupidatat incididunt dolore incididunt magna tempor non sunt laboris et. Laboris sit officia excepteur et est nisi cupidatat nostrud aliquip nostrud fugiat nostrud.
+## Roadmap
 
-Magna dolor esse et eiusmod nulla anim ex ut excepteur mollit elit. Ex velit dolore duis aute aliqua non sint cupidatat cillum officia enim duis. Qui excepteur ad ipsum occaecat fugiat sint pariatur ipsum deserunt enim quis duis do fugiat id.
+<dl class="Roadmap">
+<dt></dt>
+<dd></dd>
+</dl>
 
-Ipsum ut sit deserunt veniam exercitation ad id commodo eu incididunt. Mollit esse adipisicing qui pariatur ullamco culpa sit quis amet duis qui ipsum. In ad esse nostrud reprehenderit cupidatat pariatur anim cillum dolore et pariatur proident voluptate esse. Do velit aute excepteur do voluptate ea voluptate eiusmod sit. Eu et deserunt fugiat cillum irure elit esse nisi anim ex non consequat occaecat ea sunt sit. Magna irure laboris amet eiusmod commodo ad eu. Ut tempor sit nulla enim qui deserunt non duis cupidatat commodo elit laboris culpa. Culpa tempor cupidatat aliqua cillum laboris nisi adipisicing pariatur ea.
+### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
+
+...
+
+### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
+
+- [Siti web a prova di smartphone, ecco alcune cose che faresti bene a non dimenticare]({{ site.baseurl }}{% link _checklists/it/mobile.md %})
+
+### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
+
+- [design/user-interface](https://forum.italia.it/c/design/user-interface)

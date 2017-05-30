@@ -41,19 +41,19 @@ scelte effettuate, adeguando il progetto alle esigenze emerse dal dialogo con gl
 <dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
 </dl>
 
-### ![forum]({{'/assets/images/story.svg' | relative_url }}) Guide
+### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
 
 Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
 
-### ![materiali]({{'/assets/images/lego.svg' | relative_url }}) Bricks
+### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
 
 Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
 
-### ![forum]({{'/assets/images/conversation.svg' | relative_url }}) Forum
+### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
 
 Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
 
-### ![guide]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
+### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
 I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale. Per prendere decisioni basate sui comportamenti e dati reali è necessario realizzare servizi e processi interamente digitali, evitando la semplice trasposizione
 on line di un processo erogato in modalità tradizionale.
