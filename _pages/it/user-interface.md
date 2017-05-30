@@ -20,7 +20,11 @@ La sezione è dedicata alla user interface design, con uno spazio particolare de
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
 
-...
+- [User interface](http://design-italia.readthedocs.io/it/latest/doc/user-interface.html)
+- [Principi](http://design-italia.readthedocs.io/it/latest/doc/user-interface.html#principi)
+- [Stile](http://design-italia.readthedocs.io/it/latest/doc/user-interface.html#stile)
+- [Layout](http://design-italia.readthedocs.io/it/latest/doc/user-interface.html#layout)
+- [Componenti](http://design-italia.readthedocs.io/it/latest/doc/user-interface.html#componenti)
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
