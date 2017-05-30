@@ -8,5 +8,5 @@ lang: it
 order: 4
 highlight: true
 layout: project
-permalink: /progetti/pagopa
+permalink: /progetti/pagopa/index
 ---

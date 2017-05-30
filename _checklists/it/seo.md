@@ -2,12 +2,10 @@
 title: Search Engine Optimization
 lang: it
 layout: post
-subtitle:
+subtitle: Fatti trovare. Arrivano i consigli SEO per i siti pubblici
 ---
 
 ## Checklist
-
-### Fatti trovare. Arrivano i consigli SEO per i siti pubblici
 
 Ecco cosa controllare per scoprire se il tuo sito web è facile da trovare tanto dagli utenti che dai motori di ricerca e cosa potresti migliorare per incrementare la visibilità dei tuoi contenuti e servizi.
 
