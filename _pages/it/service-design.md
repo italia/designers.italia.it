@@ -1,64 +1,40 @@
 ---
 title: Service design
-subtitle: Strategie per il design dei servizi
+subtitle: I principi dello human-centered design applicati ai servizi digitali della pubblica amministrazione
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/posts/torre-blu.jpg'
-backgroundColor: '#5AB2FF'
+backgroundImage : '/assets/images/pages/david-solce-184827.jpg'
+backgroundColor: '#06c'
 blueBlock: true
 ---
 
-Quis et irure proident officia ipsum esse consequat dolore. Minim commodo qui eu est irure amet adipisicing duis quis esse fugiat tempor eiusmod deserunt veniam commodo. Laborum consectetur culpa aute ipsum laboris officia dolor in ad.
+La sezione di **service design** è dedicata a presentare il metodo di lavoro, che si ispira ai principi dello human-centered design, del design thinking e agli studi di human computer  interaction. Nella **guida** è previsto un capitolo dedicato al **design management** che prevede la definizione di strumenti e indicazioni per gestire il processo di progettazione e di miglioramento continuo. La sezione ospita anche informazioni rispetto a due grandi temi: da un lato la **normativa** relativa ai servizi pubblici digitali; dall’altro le indicazioni per rispettare il rilevante tema dell’**accessibilità**.
 
-Veniam commodo aliqua veniam voluptate minim occaecat duis reprehenderit. Laboris sunt officia deserunt pariatur Lorem enim qui reprehenderit aliqua minim eiusmod exercitation excepteur proident id. Exercitation mollit aliqua do fugiat in esse qui incididunt sit cupidatat pariatur adipisicing sunt ea incididunt consequat. Adipisicing pariatur adipisicing mollit fugiat ullamco aliquip magna amet nisi id amet. Nisi officia cupidatat incididunt dolore incididunt magna tempor non sunt laboris et. Laboris sit officia excepteur et est nisi cupidatat nostrud aliquip nostrud fugiat nostrud.
+La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo corretto tutti i principali argomenti chiave del service design -  e di **bricks**, strumenti e template per affrontare le diverse fasi del processo di service design.
 
-Magna dolor esse et eiusmod nulla anim ex ut excepteur mollit elit. Ex velit dolore duis aute aliqua non sint cupidatat cillum officia enim duis. Qui excepteur ad ipsum occaecat fugiat sint pariatur ipsum deserunt enim quis duis do fugiat id.
+## Roadmap
 
-Ipsum ut sit deserunt veniam exercitation ad id commodo eu incididunt. Mollit esse adipisicing qui pariatur ullamco culpa sit quis amet duis qui ipsum. In ad esse nostrud reprehenderit cupidatat pariatur anim cillum dolore et pariatur proident voluptate esse. Do velit aute excepteur do voluptate ea voluptate eiusmod sit. Eu et deserunt fugiat cillum irure elit esse nisi anim ex non consequat occaecat ea sunt sit. Magna irure laboris amet eiusmod commodo ad eu. Ut tempor sit nulla enim qui deserunt non duis cupidatat commodo elit laboris culpa. Culpa tempor cupidatat aliqua cillum laboris nisi adipisicing pariatur ea.
+<dl class="Roadmap">
+<dt>Luglio 2017</dt>
+<dd>Design management (capitolo della guida).</dd>
+<dt>Settembre 2017</dt>
+<dd>Tool di verifica dell’accessibilità (brick).</dd>
+<dt>Ottobre 2017</dt>
+<dd>Organizzare una gara (guida / brick).</dd>
+<dd>Partecipare a una gara  (guida / brick).</dd>
+<dt>Novembre 2017</dt>
+<dd>Template di Brainstorming, progettazione, project management (brick)</dd>
+</dl>
 
-### ![materiali]({{'/assets/images/lego.svg' | relative_url }}) Bricks
+### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
 
-Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
+...
 
-### ![forum]({{'/assets/images/conversation.svg' | relative_url }}) Forum
+### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
-Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
+- [Tra tecnologia e design, le cose da non dimenticare mai quando progetti un servizio digitale]({{ site.baseurl }}{% link _checklists/it/service-design.md %})
 
-### ![guide]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
+### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
 
-I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale. Per prendere decisioni basate sui comportamenti e dati reali è necessario realizzare servizi e processi interamente digitali, evitando la semplice trasposizione
-on line di un processo erogato in modalità tradizionale.
-
-- [Prima i cittadini, tutti](#prima-i-cittadini)
-- [Dialogare per migliorare](#dialogare-per-migliorare)
-- [A servizio del Paese](#a-servizio-paese)
-
-#### Principi di riferimento
-
-- [Innovativi per tradizione](#innovativi-per-tradizione)
-- [Dialogare per migliorare](#dialogare-per-migliorare)
-- [Utile per design, affidabile per principio](#utile-e-affidabile)
-
-### Studia per capire, documenta per non ripetere
-
-È necessario conoscere il contesto nel quale opererà un servizio, definirne gli obiettivi, attenersi agli standard e fare ricerche su eventuali alternative valide sia a livello nazionale che internazionale nonché sulla disponibilità di strumenti e processi
-che possono essere riutilizzati. Ogni fase di sviluppo del servizio deve essere documentata e resa disponibile in maniera aperta per garantire l’integrità e la sostenibilità futura, oltre a possibili collaborazioni che permetterebbero di aggiungere
-nuovo valore.
-
-{% include gallery.html gallery=page.gallery %}
-
-## Checklist di esempio
-### Il tuo sito è sicuro, veloce e facile da usare?
-{:data-checklist="1"}
-È necessario conoscere il contesto nel quale opererà un servizio, definirne gli obiettivi, attenersi agli standard e fare ricerche su eventuali alternative valide sia a livello nazionale che internazionale nonché sulla disponibilità di strumenti e processi
-che possono essere riutilizzati. Ogni fase di sviluppo del servizio deve essere documentata e resa disponibile in maniera aperta per garantire l’integrità e la sostenibilità futura, oltre a possibili collaborazioni che permetterebbero di aggiungere
-nuovo valore.
-
-### Altra domanda da checklist?
-{:data-checklist="2"}
-È necessario conoscere il contesto nel quale opererà un servizio, definirne gli obiettivi, attenersi agli standard e fare ricerche su eventuali alternative valide sia a livello nazionale che internazionale nonché sulla disponibilità di strumenti e processi
-che possono essere riutilizzati. Ogni fase di sviluppo del servizio deve essere documentata e resa disponibile in maniera aperta per garantire l’integrità e la sostenibilità futura, oltre a possibili collaborazioni che permetterebbero di aggiungere
-nuovo valore.
-
-![Image]({{'/assets/galleries/service-design/3.jpeg' | relative_url }})
+- [design/service](https://forum.italia.it/c/design/service)

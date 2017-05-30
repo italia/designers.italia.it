@@ -8,5 +8,5 @@ lang: it
 order: 4
 highlight: true
 layout: project
-permalink: /progetti/siti-web-pal
+permalink: /progetti/siti-web-pal/index
 ---
