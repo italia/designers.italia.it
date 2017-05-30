@@ -75,11 +75,13 @@
           <p class="u-color-grey-50">{{ t.follow_us | capitalize }}</p>
           <ul class="Header-socialIcons">
             {% for social in site.data.social %}
+            {% if social[1].link %}
             <li>
               <a href="{{ social[1].link }}" title="{{ social[1].name }}">
                 <span class="Icon-{{ social[0] }} u-background-50 u-color-white u-padding-r-xl"></span>
                 <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a>
             </li>
+            {% endif %}
             {% endfor %}
           </ul>
         </div>

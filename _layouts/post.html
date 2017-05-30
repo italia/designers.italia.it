@@ -18,9 +18,7 @@ layout: default
   <div class="FlexEmbed u-background-white u-padding-top-xxl u-xs-padding-top-none u-hidden u-md-flex u-lg-flex" aria-hidden="true">
     <div class="FlexEmbed-ratio FlexEmbed-ratio--16by9"
       style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});
-      background-blend-mode: multiply; background-size: cover; min-height: 300px">
-    </div>
-    <div class="FlexEmbed-content u-flex">
+        background-blend-mode: multiply; background-size: cover; min-height: 300px">
 
       <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
 
@@ -142,7 +140,7 @@ layout: default
           {{ content }}
         </div>
 
-        
+
         {% if page.related_tags == nil %}
         <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
           style="max-width: 15em" />
@@ -160,5 +158,5 @@ layout: default
     {% include relateds.html %}
 
   {% endif %}
-  
+
 </article>
