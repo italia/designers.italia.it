@@ -8,17 +8,17 @@ layout: default
   <div class="project-shadow2">
     {{ page.title }}
   </div>
-  <div class="project-shadow1">
+  <div class="project-shadow1 u-sizeFull u-md-size7of12 u-lg-size7of12">
     {{ page.subtitle }}
   </div>
-  <h1 class="u-text-r-l u-textWeight-300 u-color-50 u-margin-top-l u-lineHeight-l">
+  <h1 class="u-text-r-l u-textWeight-300 u-color-50 u-margin-top-l u-lineHeight-l u-sizeFull u-md-size7of12 u-lg-size7of12">
     {% if page.comingsoon %}
       <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
         u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
       {{ t.coming_soon }}</span>
     {% endif %}
     <span class="u-cf">
-      <strong class="u-textWeight-600">{{ page.title }}</strong>{% if page.subtitle %} - {{ page.subtitle }} {% endif %}
+      <strong class="u-textWeight-600">{{ page.title }}</strong><br>{% if page.subtitle %}{{ page.subtitle }} {% endif %}
     </span>
     </h1>
 </div>

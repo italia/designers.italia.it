@@ -1,11 +1,11 @@
 ---
-title: Service design
+title: Content design
 subtitle: Strategie per il design dei servizi
 layout: post
 lang: it
 toc: true
 backgroundImage : '/assets/images/posts/torre-blu.jpg'
-backgroundColor: '#439af1'
+backgroundColor: '#5AB2FF'
 blueBlock: true
 ---
 

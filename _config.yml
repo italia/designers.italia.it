@@ -19,7 +19,7 @@ description: La comunità italiana dei designer di servizi pubblici
 author: Team Digitale e AgID
 
 email: teamdigitale@governo.it
-baseurl: "/designers" # the subpath of your site, e.g. /blog
+baseurl: "/designers.italia.it" # the subpath of your site, e.g. /blog
 domain: designers.italia.it
 url: "https://designers.italia.it"
 # twitter_username:
@@ -62,6 +62,14 @@ collections:
    pages:
      output: true
      permalink: /:path/
+     layout: page
+   kits:
+     output: true
+     permalink: /kit/:path/
+     layout: page
+   checklists:
+     output: true
+     permalink: /checklist/:path/
      layout: page
    projects:
      output: true

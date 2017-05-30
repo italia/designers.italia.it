@@ -9,4 +9,5 @@ order: 4
 highlight: true
 comingsoon: true
 layout: project
+permalink: /progetti/pagopa
 ---
