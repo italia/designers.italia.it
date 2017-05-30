@@ -1,16 +1,40 @@
 ---
 title: Service design
-subtitle: Strategie per il design dei servizi
+subtitle: I principi dello human-centered design applicati ai servizi digitali della pubblica amministrazione
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/posts/torre-blu.jpg'
-backgroundColor: '#5AB2FF'
+backgroundImage : '/assets/images/pages/david-solce-184827.jpg'
+backgroundColor: '#06c'
 blueBlock: true
 ---
 
-Veniam et velit amet proident dolor eiusmod ex laboris qui cupidatat officia. Adipisicing ut deserunt irure ea dolor sint officia voluptate ex occaecat excepteur cupidatat dolore dolore eu cupidatat. Incididunt sit amet reprehenderit cillum sit esse dolor proident excepteur dolor. Adipisicing consequat amet nulla est eu ex aute elit adipisicing minim labore ullamco laborum sit magna. Ex ipsum duis laboris cillum exercitation labore consequat sit laboris cupidatat aliquip culpa do sunt tempor. Incididunt culpa ad id proident ad sit aute duis nulla nisi esse ipsum. Adipisicing anim occaecat reprehenderit duis deserunt sint cupidatat minim consectetur do consequat culpa non ex laboris sunt voluptate.
+La sezione di **service design** è dedicata a presentare il metodo di lavoro, che si ispira ai principi dello human-centered design, del design thinking e agli studi di human computer  interaction. Nella **guida** è previsto un capitolo dedicato al **design management** che prevede la definizione di strumenti e indicazioni per gestire il processo di progettazione e di miglioramento continuo. La sezione ospita anche informazioni rispetto a due grandi temi: da un lato la **normativa** relativa ai servizi pubblici digitali; dall’altro le indicazioni per rispettare il rilevante tema dell’**accessibilità**.
 
-Ea excepteur ullamco eu sunt fugiat aliqua elit eu. Consectetur et magna esse adipisicing duis elit anim nostrud nulla do exercitation eiusmod minim aliquip nostrud ut. Aute enim cupidatat do ullamco nostrud non est dolor voluptate duis mollit aliqua aliquip in sunt amet deserunt. Eu dolore dolor fugiat reprehenderit cillum fugiat reprehenderit quis sunt consequat adipisicing sit.
+La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo corretto tutti i principali argomenti chiave del service design -  e di **bricks**, strumenti e template per affrontare le diverse fasi del processo di service design.
 
-Elit minim adipisicing commodo laboris eiusmod tempor nulla ut culpa nisi ullamco qui exercitation eu aute. Labore cillum est labore officia dolor exercitation eu et laborum veniam duis aliqua incididunt deserunt sint. Irure enim eu esse tempor Lorem aliqua esse cillum minim velit labore cillum ad. Magna id ullamco Lorem nostrud velit quis ad aute qui sunt incididunt incididunt duis ullamco.
+## Roadmap
+
+<dl class="Roadmap">
+<dt>Luglio 2017</dt>
+<dd>Design management (capitolo della guida).</dd>
+<dt>Settembre 2017</dt>
+<dd>Tool di verifica dell’accessibilità (brick).</dd>
+<dt>Ottobre 2017</dt>
+<dd>Organizzare una gara (guida / brick).</dd>
+<dd>Partecipare a una gara  (guida / brick).</dd>
+<dt>Novembre 2017</dt>
+<dd>Template di Brainstorming, progettazione, project management (brick)</dd>
+</dl>
+
+### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
+
+...
+
+### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
+
+- [Tra tecnologia e design, le cose da non dimenticare mai quando progetti un servizio digitale]({{ site.baseurl }}{% link _checklists/it/service-design.md %})
+
+### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
+
+- [design/service](https://forum.italia.it/c/design/service)

@@ -1,18 +1,40 @@
 ---
 title: User Research
-subtitle: Strategie per il design dei servizi
+subtitle: Ascoltare i cittadini, riuscire a capire quali sono le cose veramente importanti per loro, e poi metterle in pratica. E’ questo il segreto della buona progettazione.
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/posts/torre-blu.jpg'
+backgroundImage : '/assets/images/pages/glenn-carstens-peters-190592.jpg'
 backgroundColor: '#5AB2FF'
 blueBlock: true
 ---
 
-Quis et irure proident officia ipsum esse consequat dolore. Minim commodo qui eu est irure amet adipisicing duis quis esse fugiat tempor eiusmod deserunt veniam commodo. Laborum consectetur culpa aute ipsum laboris officia dolor in ad.
+La sezione di user research è dedicata: agli studi e agli strumenti di verifica dell’**usabilità**; all’utilizzo delle **analisi qualitative** - ad esempio le interviste e i focus group - per capire quali utenti abbiamo di fronte; e alle analisi quantitative - i **web analytics** - strumento di comprensione quotidiana dei comportamenti degli utenti e punto di partenza per il miglioramento continuo dei servizi digitali.
 
-Veniam commodo aliqua veniam voluptate minim occaecat duis reprehenderit. Laboris sunt officia deserunt pariatur Lorem enim qui reprehenderit aliqua minim eiusmod exercitation excepteur proident id. Exercitation mollit aliqua do fugiat in esse qui incididunt sit cupidatat pariatur adipisicing sunt ea incididunt consequat. Adipisicing pariatur adipisicing mollit fugiat ullamco aliquip magna amet nisi id amet. Nisi officia cupidatat incididunt dolore incididunt magna tempor non sunt laboris et. Laboris sit officia excepteur et est nisi cupidatat nostrud aliquip nostrud fugiat nostrud.
+## Roadmap
 
-Magna dolor esse et eiusmod nulla anim ex ut excepteur mollit elit. Ex velit dolore duis aute aliqua non sint cupidatat cillum officia enim duis. Qui excepteur ad ipsum occaecat fugiat sint pariatur ipsum deserunt enim quis duis do fugiat id.
+<dl class="Roadmap">
+<dt>Luglio 2017</dt>
+<dd>Update web analytics (capitolo della guida).</dd>
+<dt>Settembre 2017</dt>
+<dd>Ricerche qualitative (capitolo della guida).</dd>
+<dt>Ottobre 2017</dt>
+<dd>Le interviste (brick).</dd>
+<dd>I focus group (brick).</dd>
+</dl>
 
-Ipsum ut sit deserunt veniam exercitation ad id commodo eu incididunt. Mollit esse adipisicing qui pariatur ullamco culpa sit quis amet duis qui ipsum. In ad esse nostrud reprehenderit cupidatat pariatur anim cillum dolore et pariatur proident voluptate esse. Do velit aute excepteur do voluptate ea voluptate eiusmod sit. Eu et deserunt fugiat cillum irure elit esse nisi anim ex non consequat occaecat ea sunt sit. Magna irure laboris amet eiusmod commodo ad eu. Ut tempor sit nulla enim qui deserunt non duis cupidatat commodo elit laboris culpa. Culpa tempor cupidatat aliqua cillum laboris nisi adipisicing pariatur ea.
+### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
+
+...
+
+### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
+
+- [Servizi digitali a misura di cittadino, le domande giuste da farsi]({{ site.baseurl }}{% link _checklists/it/user-research.md %})
+
+### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
+
+- [Le personas]({{ site.baseurl }}{% link _kits/it/personas.md %})
+
+### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
+
+- [design/user-research](https://forum.italia.it/c/design/user-research)

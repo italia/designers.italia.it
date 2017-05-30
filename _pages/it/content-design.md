@@ -1,18 +1,43 @@
 ---
 title: Content design
-subtitle: Strategie per il design dei servizi
+subtitle: Le informazioni, e il modo in cui sono organizzate, danno forma ai servizi digitali e plasmano l’esperienza del cittadino
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/posts/torre-blu.jpg'
+backgroundImage : '/assets/images/pages/neonbrand-226736.jpg'
 backgroundColor: '#5AB2FF'
 blueBlock: true
 ---
 
-Quis et irure proident officia ipsum esse consequat dolore. Minim commodo qui eu est irure amet adipisicing duis quis esse fugiat tempor eiusmod deserunt veniam commodo. Laborum consectetur culpa aute ipsum laboris officia dolor in ad.
+Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce servizi digitali.  Le informazioni sono vitali per raggiungere un servizio (vedi in particolare il capitolo dedicato a **search engine optimization**), per capirlo  e per usarlo. La qualità delle informazioni si misura in relazione alla loro efficacia per i cittadini che le usano (nel capitolo dedicato al **linguaggio e alla gestione dei contenuti** ci sono diversi suggerimenti stilistici e operativi). Il modo in cui i contenuti sono organizzati consente all’utente di orientarsi, è la precondizione per la costruzione di una relazione basata sulla fiducia (questo e molto altro nel capitolo dedicato all’**architettura dell’informazione**) .
 
-Veniam commodo aliqua veniam voluptate minim occaecat duis reprehenderit. Laboris sunt officia deserunt pariatur Lorem enim qui reprehenderit aliqua minim eiusmod exercitation excepteur proident id. Exercitation mollit aliqua do fugiat in esse qui incididunt sit cupidatat pariatur adipisicing sunt ea incididunt consequat. Adipisicing pariatur adipisicing mollit fugiat ullamco aliquip magna amet nisi id amet. Nisi officia cupidatat incididunt dolore incididunt magna tempor non sunt laboris et. Laboris sit officia excepteur et est nisi cupidatat nostrud aliquip nostrud fugiat nostrud.
+## Roadmap
 
-Magna dolor esse et eiusmod nulla anim ex ut excepteur mollit elit. Ex velit dolore duis aute aliqua non sint cupidatat cillum officia enim duis. Qui excepteur ad ipsum occaecat fugiat sint pariatur ipsum deserunt enim quis duis do fugiat id.
+<dl class="Roadmap">
+<dt>Luglio 2017</dt>
+<dd>Linguaggio e gestione contenuti (capitolo della guida).</dd>
+<dd>Architettura informazione (capitolo della guida).</dd>
+<dt>Settembre 2017</dt>
+<dd>Architettura informazione (checklist).</dd>
+<dd>Template navigation tree e content list (brick).</dd>
+<dt>Ottobre 2017</dt>
+<dd>Wireframing (brick).</dd>
+<dd>ASO (guida).</dd>
+<dd>ASO (checklist).</dd>
+</dl>
 
-Ipsum ut sit deserunt veniam exercitation ad id commodo eu incididunt. Mollit esse adipisicing qui pariatur ullamco culpa sit quis amet duis qui ipsum. In ad esse nostrud reprehenderit cupidatat pariatur anim cillum dolore et pariatur proident voluptate esse. Do velit aute excepteur do voluptate ea voluptate eiusmod sit. Eu et deserunt fugiat cillum irure elit esse nisi anim ex non consequat occaecat ea sunt sit. Magna irure laboris amet eiusmod commodo ad eu. Ut tempor sit nulla enim qui deserunt non duis cupidatat commodo elit laboris culpa. Culpa tempor cupidatat aliqua cillum laboris nisi adipisicing pariatur ea.
+### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
+
+...
+
+### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
+
+- [Fatti trovare. Arrivano i consigli SEO per i siti pubblici]({{ site.baseurl }}{% link _checklists/it/service-design.md %})
+
+### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
+
+- [Web Analytics: Starter Kit]({{ site.baseurl }}{% link _kits/it/analytics.md %})
+
+### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
+
+- [design/content](https://forum.italia.it/c/design/content)

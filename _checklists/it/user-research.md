@@ -2,12 +2,10 @@
 title: User research
 lang: it
 layout: post
-subtitle:
+subtitle: Servizi digitali a misura di cittadino, le domande giuste da farsi
 ---
 
 ## Checklist
-
-### Servizi digitali a misura di cittadino, le domande giuste da farsi
 
 Capire cosa serve davvero ai cittadini è fondamentale per avere ben chiare le priorità e progettare servizi digitali efficaci
 
