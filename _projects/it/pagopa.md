@@ -7,7 +7,6 @@ description: Un unico nodo di pagamento, con un'unica interfaccia verso il citta
 lang: it
 order: 4
 highlight: true
-comingsoon: true
 layout: project
 permalink: /progetti/pagopa
 ---
