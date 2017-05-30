@@ -9,7 +9,7 @@ subtitle:
 
 ### Servizi digitali a misura di cittadino, le domande giuste da farsi
 
-#### Capire cosa serve davvero ai cittadini è fondamentale per avere ben chiare le priorità e progettare servizi digitali efficaci
+Capire cosa serve davvero ai cittadini è fondamentale per avere ben chiare le priorità e progettare servizi digitali efficaci
 
 ![]({{'/assets/images/checklists/cittadino-1.jpg' | relative_url }})
 
