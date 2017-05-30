@@ -9,7 +9,7 @@ subtitle: Fatti trovare. Arrivano i consigli SEO per i siti pubblici
 
 Ecco cosa controllare per scoprire se il tuo sito web è facile da trovare tanto dagli utenti che dai motori di ricerca e cosa potresti migliorare per incrementare la visibilità dei tuoi contenuti e servizi.
 
-![]({{'/assets/images/checklists/seo-1.png' | relative_url }})
+![]({{'/assets/images/checklists/seo-1.jpg' | relative_url }})
 
 Spesso le persone cercano contenuti e servizi del tuo sito usando i motori di ricerca. Ma che cosa cercano e che parole usano per cercare? Il tuo sito web è organizzato bene per dare buone risposte alle loro domande?
 La search engine optimization (SEO) è un insieme di tecniche che ruotano attorno all’idea di organizzare contenuti e servizi web tenendo conto di come (e quanto) le persone li cercano. Ecco alcune cose da verificare subito sul tuo sito per capire se e come è necessario ottimizzarlo, dal punto di vista contenutistico e/o strutturale.  

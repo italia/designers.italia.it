@@ -56,7 +56,7 @@ Una volta individuata la soluzione o ristretto il campo delle possibilità ad al
 ### Che ne pensano i cittadini ?
 {:data-checklist="3"}
 
-![]({{'/assets/images/checklists/cittadino-4.png' | relative_url }})
+![]({{'/assets/images/checklists/cittadino-4.jpg' | relative_url }})
 
 - “Hai testato la soluzione con gli utenti finali ?”
 - “Quali tecniche di valutazione utilizzerai ?”
