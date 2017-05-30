@@ -17,6 +17,7 @@
 
         {% assign subtitle = project.subtitle | default: project.payoff %}
         {% assign logo = project.logo | relative_url %}
+        {% assign url = project.url | relative_url %}
 
           <div class="{% unless include.limit > 0 %}Carousel-item{% endunless %}
             {% if include.limit > 0 %}Grid-cell u-md-size1of3 u-lg-size1of3{% endif %}
@@ -24,7 +25,7 @@
             u-padding-left-xs u-padding-right-xs u-xs-padding-all-none">
             {% include card.html
               title=project.title
-              link=project.url
+              link=url
               comingsoon=project.comingsoon
               subtitle=subtitle
               text=project.description

@@ -3,10 +3,14 @@
   <div class="Grid Grid--withGutter u-padding-top-xl">
 
     <div class="Grid-cell u-md-size1of2 u-lg-size5of12 u-padding-r-bottom">
+      <a href="{{ site.owner_link }}" class="u-linkClean">
       <img class="Footer-logo u-xs-padding-right-none" src="{{ site.owner_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}"
         alt="" style="height: 80px; max-width: 100%">
+      </a>
       <p class="Footer-siteName">
-        {{ t.footer_title | default: site.owner | default: t.site_title | default: site.title | escape }}
+        <a href="{{ site.owner_link }}">
+          {{ t.footer_title | default: site.owner | default: t.site_title | default: site.title | escape }}
+        </a>
       </p>
     </div>
 
@@ -14,14 +18,18 @@
       <p class="u-padding-bottom-l" style="opacity: 0.5">{{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
       <div class="Grid">
         <div class="u-inlineBlock">
+          <a href="{{ site.partner_link }}" class="u-linkClean">
           <img class="u-padding-top-xxs u-padding-right-xs" src="{{ site.gov_logo | relative_url |  d('//placehold.it/75x80?text=placeholder') }}" alt=""
             style="height: 4em; max-width: 100%">
           <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.partner_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt=""
             style="height: 4em; max-width: 100%">
+          </a>
         </div>
         <div class="Grid-cell u-size1of12 u-padding-left-none team-bar"></div>
         <p class="Grid-cell u-size5of12 Footer-siteName u-padding-left-xs u-text-r-xs">
-          {{ site.partner_full | upcase }}
+          <a href="{{ site.partner_link }}" class="u-color-white u-linkClean">
+            {{ site.partner_full | upcase }}
+          </a>
         </p>
       </div>
     </div>

@@ -2,20 +2,48 @@
 title: Service design
 subtitle: Strategie per il design dei servizi
 layout: post
+author: Mario Rossi
+keywords: ['argomento 1']
+categories : ['tendenze']
+related_tags : ['tag1']
 lang: it
 toc: true
 backgroundImage : '/assets/images/posts/torre-blu.jpg'
 backgroundColor: '#5AB2FF'
 blueBlock: true
+gallery:
+- img : '/assets/galleries/service-design/1.jpeg'
+  caption: 'test caption 1'
+- img : '/assets/galleries/service-design/2.jpeg'
+  caption: 'test caption 2'
+- img : '/assets/galleries/service-design/3.jpeg'
+  caption: 'test caption 3'
+- img : '/assets/galleries/service-design/1.jpeg'
+- img : '/assets/galleries/service-design/2.jpeg'
+- img : '/assets/galleries/service-design/3.jpeg'
 ---
 
-Quis et irure proident officia ipsum esse consequat dolore. Minim commodo qui eu est irure amet adipisicing duis quis esse fugiat tempor eiusmod deserunt veniam commodo. Laborum consectetur culpa aute ipsum laboris officia dolor in ad.
+Il cittadino deve essere posto al centro della progettazione di un servizio e coinvolto in tutte le fasi dello sviluppo. Nella redazione dei bandi è auspicabile prevedere, durante la progettazione e lo sviluppo, fasi di verifica e miglioramento delle
+scelte effettuate, adeguando il progetto alle esigenze emerse dal dialogo con gli utenti. Tutti, nessuno escluso, devono poter utilizzare il servizio in maniera agevole ed efficace.
 
-Veniam commodo aliqua veniam voluptate minim occaecat duis reprehenderit. Laboris sunt officia deserunt pariatur Lorem enim qui reprehenderit aliqua minim eiusmod exercitation excepteur proident id. Exercitation mollit aliqua do fugiat in esse qui incididunt sit cupidatat pariatur adipisicing sunt ea incididunt consequat. Adipisicing pariatur adipisicing mollit fugiat ullamco aliquip magna amet nisi id amet. Nisi officia cupidatat incididunt dolore incididunt magna tempor non sunt laboris et. Laboris sit officia excepteur et est nisi cupidatat nostrud aliquip nostrud fugiat nostrud.
+### Roadmap
 
-Magna dolor esse et eiusmod nulla anim ex ut excepteur mollit elit. Ex velit dolore duis aute aliqua non sint cupidatat cillum officia enim duis. Qui excepteur ad ipsum occaecat fugiat sint pariatur ipsum deserunt enim quis duis do fugiat id.
+<dl class="Roadmap">
+<dt>Giugno 2017</dt>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dt>Giugno 2017</dt>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dt>Giugno 2017</dt>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+<dt>Giugno 2017</dt>
+<dd>I dati sono le informazioni essenziali sulle quali costruire un servizio e mantenerlo funzionale.</dd>
+</dl>
 
-Ipsum ut sit deserunt veniam exercitation ad id commodo eu incididunt. Mollit esse adipisicing qui pariatur ullamco culpa sit quis amet duis qui ipsum. In ad esse nostrud reprehenderit cupidatat pariatur anim cillum dolore et pariatur proident voluptate esse. Do velit aute excepteur do voluptate ea voluptate eiusmod sit. Eu et deserunt fugiat cillum irure elit esse nisi anim ex non consequat occaecat ea sunt sit. Magna irure laboris amet eiusmod commodo ad eu. Ut tempor sit nulla enim qui deserunt non duis cupidatat commodo elit laboris culpa. Culpa tempor cupidatat aliqua cillum laboris nisi adipisicing pariatur ea.
+### ![forum]({{'/assets/images/story.svg' | relative_url }}) Guide
+
+Nisi tempor ea reprehenderit pariatur ullamco qui deserunt non est reprehenderit aliquip voluptate excepteur. Officia laborum anim aliqua cupidatat minim esse anim qui occaecat aliquip. Amet esse laborum mollit pariatur exercitation incididunt dolore ut est enim eu dolore fugiat.
 
 ### ![materiali]({{'/assets/images/lego.svg' | relative_url }}) Bricks
 

@@ -40,10 +40,6 @@
   padding-bottom: 1.6rem;
   display: inline-block !important;
   vertical-align: middle !important;
-  @media screen and (min-width: 992px) {
-    margin-top: 0.2em;
-    margin-bottom: 0.2em;
-  }
 }
 
 @media screen and (max-width: 991px) {
@@ -257,7 +253,7 @@
 
   }
 }
-/* RELATEDS 
+/* RELATEDS
 =============== */
 .Relateds {
   .Badges {
@@ -290,10 +286,10 @@
       background-color: #00C5CA !important;
       &--float {
         position: absolute;
-      top: -2.5rem;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 100;
+        top: -3rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
       }
     }
   }
@@ -362,6 +358,10 @@ body.layout-download {
     & >ul {
       list-style-type: disc;
       color: #0066CC;
+      li > a {
+        font-size: 2rem;
+        font-weight: 400;
+      }
     }
     & > h2 {
       font-size: 5.5rem !important;

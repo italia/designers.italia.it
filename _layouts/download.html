@@ -13,34 +13,48 @@ layout: default
   {% include sideblock.html title=t.home_projects_expand content=pills %}
 {% endcomment %}
 
-<article itemscope itemtype="http://schema.org/BlogPosting">
+<article itemscope itemtype="http://schema.org/BlogPosting" class="u-background-white u-nbfc u-padding-top-xxl u-xs-padding-top-none">
 
 <!-- ==== blue block -->
-  <div class="FlexEmbed u-background-white u-padding-top-xxl u-xs-padding-top-m u-md-flex u-lg-flex" aria-hidden="true">
-    <div class="FlexEmbed-ratio FlexEmbed-ratio--3by1"
+  <div class="u-background-white u-padding-top-xxl u-margin-r-top u-xs-padding-top-none  u-md-flex u-lg-flex u-flexJustifyCenter" aria-hidden="true"
       style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});
       background-blend-mode: multiply; background-size: cover; min-height: 300px">
-    </div>
-    <div class="FlexEmbed-content u-flex">
 
       <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
 
         <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-           <div class="u-textCenter ">
-            <div class="hidde-xs hidden-sm u-margin-top-s">
-            {% include breadcrumbs.html fakeitem=true %}
-            </div>
+           <div class="u-textCenter u-padding-bottom-xl ">
+          {% if page.categories %}
+              <div class="u-layoutCenter u-textCenter u-margin-all-xl">
+                <ul class="Category" >
+                {% for item in page.categories%}
+                  <li class="u-text-r-xxs u-color-white u-border-all-xxs  u-padding-all-xxs">
+                  {{item}}
+                  </li>
+                {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">
+            {{ page.date | date: "%-d %b %Y" }}</time>
+
             <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">
               {{ page.title }}</h1>
 
             {% if page.subtitle %}
-            <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-xl"
+            <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s"
               style="max-width:24em">{{ page.subtitle }}</h2>
             {% endif %}
 
             <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-white u-margin-r-bottom"
               style="max-width: 15em" />
 
+            {% if page.author %}
+              <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
+                <span itemprop="name" class="u-text-r-xs u-color-white">{{ t.by }} {{ page.author }}</span>
+              </div>
+            {% endif %}
 
             {% if page.keywords %}
               <div itemprop="keywords" class="u-layoutCenter u-textCenter u-margin-all-xl">
@@ -60,12 +74,11 @@ layout: default
         </div>
 
         </div><!-- /grid-cell-->
-
       </div>
 
-    </div>
   </div>
 
+<!--/ === blue block-->
 <!--/ === blue block-->
   {% if download_file != nil %}
   <div class="Download u-padding-bottom-xxl">
