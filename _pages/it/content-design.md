@@ -37,10 +37,6 @@ Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce 
 
 - [Fatti trovare. Arrivano i consigli SEO per i siti pubblici]({{ site.baseurl }}{% link _checklists/it/service-design.md %})
 
-### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
-
-- [Web Analytics: Starter Kit]({{ site.baseurl }}{% link _kits/it/analytics.md %})
-
 ### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
 
 - [design/content](https://forum.italia.it/c/design/content)
