@@ -10,7 +10,7 @@ redirect_from:
   - /it/
 link_to_projects: /progetti
 link_to_blog: /blog
-link_to_forum: https://forum.italia.it
+link_to_forum: https://forum.italia.it/design
 link_to_behance: https://www.behance.net/italia
 link_to_medium: https://medium.com
 link_to_uikit: https://www.behance.net/gallery/53244611/UI-Kit-designers-italia

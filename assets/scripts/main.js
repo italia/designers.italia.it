@@ -8,4 +8,9 @@ $(function() {
   });
 
   $('.js-square').each(function(_, el) { $(el).height($(el).width()) });
+
+  $('.lg-showcase > img').on('click', function() {
+      window.location = $(this).attr('src');
+  });
+
 })
