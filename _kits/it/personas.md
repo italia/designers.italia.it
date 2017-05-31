@@ -6,8 +6,8 @@ subtitle:
 backgroundImage : '/assets/images/posts/cover-personas.jpg'
 backgroundColor: '#439af1'
 download_file :
-- file : '/assets/downloads/italia-template-personas.pdf'
-  caption : 'italia-template-personas.pdf'
+- file : 'assets/downloads/KITpersonas_UserResearch.pdf'
+  caption : 'Template Personas'
   type : 'internal'
 ---
 

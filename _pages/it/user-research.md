@@ -37,7 +37,7 @@ La sezione di user research è dedicata: agli studi e agli strumenti di verifica
 ### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
 
 - [Web Analytics: Starter Kit]({{ site.baseurl }}{% link _kits/it/analytics.md %})
-- [Le personas]({{ site.baseurl }}{% link _kits/it/personas.md %})
+- [Le Personas]({{ site.baseurl }}{% link _kits/it/personas.md %})
 
 ### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
 
