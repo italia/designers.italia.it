@@ -19,6 +19,11 @@ La sezione è dedicata alla user interface design, con uno spazio particolare de
 - [Layout](http://design-italia.readthedocs.io/it/latest/doc/user-interface.html#layout)
 - [Componenti](http://design-italia.readthedocs.io/it/latest/doc/user-interface.html#componenti)
 
+### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
+
+- [UI Kit](https://www.behance.net/gallery/53244611/UI-Kit-designers-italia)
+- [Web Toolkit: reference implementation delle linee guida di design](https://italia.github.io/ita-web-toolkit/)
+
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
 - [Siti web a prova di smartphone, ecco alcune cose che faresti bene a non dimenticare]({{ site.baseurl }}{% link _checklists/it/mobile.md %})

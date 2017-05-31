@@ -321,6 +321,18 @@
 }
 
 /* OVERRIDES ============ */
+.Person-content.u-background-white {
+  width: 100%;
+  h4 {
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+}
+.Megamenu-item>a {
+  padding-right: 2.5rem !important;
+  padding-left: 2.5rem !important;
+}
+
 body.layout-download .Breadcrumb-item--deactivated {
   font-size: 1.8rem !important;
   color: rgba(255,255,255,0.5) !important;
@@ -468,5 +480,16 @@ body.layout-download {
   img {
     max-width: 100%;
     height: auto;
+  }
+}
+
+.credits-text {
+  line-height: 2.2rem;
+  p {
+    margin-bottom: 1rem;
+  }
+  a {
+    color: #0066CC;
+    text-decoration: none;
   }
 }
