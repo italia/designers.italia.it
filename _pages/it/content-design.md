@@ -35,7 +35,7 @@ Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce 
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
-- [Fatti trovare. Arrivano i consigli SEO per i siti pubblici]({{ site.baseurl }}{% link _checklists/it/service-design.md %})
+- [Fatti trovare. Arrivano i consigli SEO per i siti pubblici]({{ site.baseurl }}{% link _checklists/it/seo.md %})
 
 ### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
 

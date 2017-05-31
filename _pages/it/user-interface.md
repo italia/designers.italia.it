@@ -11,13 +11,6 @@ blueBlock: true
 
 La sezione è dedicata alla user interface design, con uno spazio particolare dedicato alle componenti visuali alla base della definizione della esperienza utente e della interazione con il cittadino:  componenti, stile, principi e naturalmente strumenti e checklist. Uno spazio rilevante è dedicato alla recente evoluzione in direzione “mobile first” che nel giro di pochi anni ha portato a un’ampia ridefinizione dei pattern di interazione con l’utente.
 
-## Roadmap
-
-<dl class="Roadmap">
-<dt></dt>
-<dd></dd>
-</dl>
-
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
 
 - [User interface](http://design-italia.readthedocs.io/it/latest/doc/user-interface.html)
