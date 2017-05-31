@@ -16,7 +16,6 @@
         </ul>
         <p class="u-letterSpace-l u-padding-r-bottom u-margin-r-bottom u-text-r-xxs">
           {{ t.home_blog_text }}
-          {{ t.home_blog_text }}
         </p>
         <a href="{{ page.link_to_blog | relative_url }}" class="u-background-white u-color-50 u-padding-top-s u-padding-bottom-s
           u-text-r-xs u-linkClean u-textSmallCaps u-textWeight-700 u-inlineBlock
@@ -30,7 +29,7 @@
     {% for post in posts limit: 2 %}
       {% assign excerpt = post.excerpt | remove: ' <p>' | remove: '</p>' '%}
 
-      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-color-white u-flex"
+      <div class="Grid-cell u-sizeFull u-md-sizeFill u-lg-sizeFill u-margin-r-bottom u-color-white u-flex"
         style="background-color: {{ post.backgroundColor }}; background-image: url({{ post.backgroundImage | relative_url }});
           background-blend-mode: multiply; background-size: cover; min-height: 300px">
         <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
