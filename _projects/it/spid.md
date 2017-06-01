@@ -1,7 +1,7 @@
 ---
 title: SPID
 subtitle: Sistema Pubblico di Identità Digitale
-logo: /assets/images/projects/logo-spid@2x.png
+logo: /assets/images/projects/spid-project-cover.jpg
 payoff: Sistema Pubblico di Identità Digitale
 description: >
   Lo SPID è una credenziale unica di accesso, con identità verificata, che può essere integrata
