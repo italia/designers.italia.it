@@ -4,7 +4,7 @@ subtitle: Il punto di incontro tra persone e tecnologie, secondo i principi dell
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/pages/michal-parzuchowski-224092.jpg'
+backgroundImage : '/assets/images/pages/neonbrand-226736.jpg'
 backgroundColor: '#5AB2FF'
 blueBlock: true
 ---

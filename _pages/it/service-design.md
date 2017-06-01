@@ -4,7 +4,7 @@ subtitle: I principi dello human-centered design applicati ai servizi digitali d
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/pages/david-solce-184827.jpg'
+backgroundImage : '/assets/images/pages/michal-parzuchowski-224092.jpg'
 backgroundColor: '#06c'
 blueBlock: true
 ---

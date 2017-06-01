@@ -4,7 +4,7 @@ subtitle: Le informazioni, e il modo in cui sono organizzate, danno forma ai ser
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/pages/neonbrand-226736.jpg'
+backgroundImage : '/assets/images/pages/david-solce-184827.jpg'
 backgroundColor: '#5AB2FF'
 blueBlock: true
 ---
