@@ -2,7 +2,7 @@
 layout: home
 lang: it
 title: Designers Italia
-description: La comunità italiana degli sviluppatori di servizi pubblici
+description: La comunità italiana dei designer di servizi pubblici
 permalink: /
 image: /assets/icons/logo-it.png
 redirect_from:
