@@ -13,14 +13,17 @@
               {{ news.ipress_title }}
             </a>
           </p>
+          {% if news.ipress_summary %}
+          <p class="u-text-r-xxs">{% if news.ipress_imagecoll.small %}
+            <img src="{{news.ipress_imagecoll.small}}" class="u-floatLeft u-margin-r-right">
+            {% endif %}
+            {{ news.ipress_summary}}</p>
+          <i class="u-text-r-xxs">{{news.ipress_publishedBy}}</i>
+          {% endif %}
         </div>
       </div>
     {% endfor %}
 
-    <p>
-      <a href="" target="_blank" style="text-decoration: none;">
-        Vedi tutti
-      </a>
-    </p>
+
   </div>
 </blockquote>

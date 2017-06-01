@@ -48,6 +48,9 @@ class IpressImporter < Jekyll::Generator
       doc.data['ipress_shortLink'] = item['shortlink']
       doc.data['ipress_publishDate'] = item['publishDate']
       doc.data['ipress_lang'] = item['lang']
+      doc.data['ipress_imagecoll'] = item['defaultImage']
+      doc.data['ipress_images'] = item['images']
+      doc.data['ipress_publishedBy'] = item['publishedBy']
 
       jekyll_coll.docs << doc
     end
