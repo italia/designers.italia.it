@@ -10,7 +10,6 @@ backgroundImage: '/assets/images/posts/blog-1.jpg'
 backgroundColor: "#a26887"
 toc: true
 blueimage : '/assets/images/posts/blog-1.jpg'
-permalink: '/blog/post'
 excerpt_separator: <!--more-->
 ---
 

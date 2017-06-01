@@ -8,7 +8,6 @@ lang: it
 order: 4
 highlight: true
 layout: project
-permalink: /progetti/pagopa/index
 ---
 
 PagoPA consente al cittadino di pagare i servizi e i tributi della Pubblica Amministrazione con strumenti elettronici e alle Amministrazioni di incassare in modo centralizzato.

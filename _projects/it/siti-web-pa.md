@@ -5,7 +5,6 @@ lang: it
 order: 4
 highlight: true
 layout: project
-permalink: /progetti/siti-web-pa/index
 toc: true
 logo: /assets/images/projects/logo-sitiweb.jpg
 ---
