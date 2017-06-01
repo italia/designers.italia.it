@@ -26,9 +26,9 @@ La sezione di user research è dedicata: agli studi e agli strumenti di verifica
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
 
 - [User research](http://design-italia.readthedocs.io/it/latest/doc/user-research.html)
-- [Usabilità](http://design-italia.readthedocs.io/it/latest/doc/user-research.html#usabilita)
-- [Ricerche qualitative](http://design-italia.readthedocs.io/it/latest/doc/user-research.html#ricerche-qualitative)
-- [Web analytics](http://design-italia.readthedocs.io/it/latest/doc/user-research.html#web-analytics)
+- [Usabilità](http://design-italia.readthedocs.io/it/latest/doc/user-research/usabilita.html)
+- [Ricerche qualitative](http://design-italia.readthedocs.io/it/latest/doc/user-research/ricerche-qualitative.html)
+- [Web analytics](http://design-italia.readthedocs.io/it/latest/doc/user-research/web-analytics.html)
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
