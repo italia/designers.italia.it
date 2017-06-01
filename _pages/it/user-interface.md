@@ -13,11 +13,11 @@ La sezione è dedicata alla user interface design, con uno spazio particolare de
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
 
-- [User interface](https://design-italia.readthedocs.io/it/latest/doc/user-interface.html)
-- [Principi](https://design-italia.readthedocs.io/it/latest/doc/user-interface/principi.html)
-- [Stile](https://design-italia.readthedocs.io/it/latest/doc/user-interface/stile.html)
-- [Layout](https://design-italia.readthedocs.io/it/latest/doc/user-interface/layout.html)
-- [Componenti](https://design-italia.readthedocs.io/it/latest/doc/user-interface/componenti.html)
+- [User interface](https://design-italia.readthedocs.io/it/stable/doc/user-interface.html)
+- [Principi](https://design-italia.readthedocs.io/it/stable/doc/user-interface/principi.html)
+- [Stile](https://design-italia.readthedocs.io/it/stable/doc/user-interface/stile.html)
+- [Layout](https://design-italia.readthedocs.io/it/stable/doc/user-interface/layout.html)
+- [Componenti](https://design-italia.readthedocs.io/it/stable/doc/user-interface/componenti.html)
 
 ### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
 

@@ -29,10 +29,10 @@ La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo c
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
 
-- [Service design](https://design-italia.readthedocs.io/it/latest/doc/service-design.html)
-- [Accessibilità](https://design-italia.readthedocs.io/it/latest/doc/service-design/accessibilita.html)
-- [Normativa](https://design-italia.readthedocs.io/it/latest/doc/service-design/normativa.html)
-- [Design management](https://design-italia.readthedocs.io/it/latest/doc/service-design/design-management.html)
+- [Service design](https://design-italia.readthedocs.io/it/stable/doc/service-design.html)
+- [Accessibilità](https://design-italia.readthedocs.io/it/stable/doc/service-design/accessibilita.html)
+- [Normativa](https://design-italia.readthedocs.io/it/stable/doc/service-design/normativa.html)
+- [Design management](https://design-italia.readthedocs.io/it/stable/doc/service-design/design-management.html)
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
