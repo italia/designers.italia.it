@@ -28,10 +28,10 @@ Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce 
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
 
-- [Content design](http://design-italia.readthedocs.io/it/latest/doc/content-design.html)
-- [Architettura dell’informazione](http://design-italia.readthedocs.io/it/latest/doc/content-design/architettura-dell-informazione.html)
-- [SEO](http://design-italia.readthedocs.io/it/latest/doc/content-design/seo.html)
-- [Linguaggio](http://design-italia.readthedocs.io/it/latest/doc/content-design/linguaggio.html)
+- [Content design](https://design-italia.readthedocs.io/it/latest/doc/content-design.html)
+- [Architettura dell’informazione](https://design-italia.readthedocs.io/it/latest/doc/content-design/architettura-dell-informazione.html)
+- [SEO](https://design-italia.readthedocs.io/it/latest/doc/content-design/seo.html)
+- [Linguaggio](https://design-italia.readthedocs.io/it/latest/doc/content-design/linguaggio.html)
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
