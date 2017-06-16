@@ -23,7 +23,7 @@ Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccont
 
 [Team trasformazione digitale](http://www.ipresslive.it/Page/1546/team-per-la-trasformazione-digitale-presidenza-consiglio-dei-ministri)
 
-{% include ipress_news.html header="Ultimi comunicati stampa" %}
+{% include ipress.html header="Ultimi comunicati stampa" %}
 
 ## Eventi
 Se vuoi segnalare un evento e/o invitarci, invia una e-mail a <media@teamdigitale.governo.it>

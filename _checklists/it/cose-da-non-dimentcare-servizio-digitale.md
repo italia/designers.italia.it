@@ -1,11 +1,11 @@
 ---
-title: Service Design
+title: Tra tecnologia e design, le cose da non dimenticare mai quando progetti un servizio digitale
 lang: it
 layout: post
 subtitle:
+pretitle: 'Service design / Check-list'
+nodate: true
 ---
-
-## Checklist
 
 Le amministrazioni pubbliche devono fornire servizi personalizzati e intuitivi in linea con le esigenze e le necessità di cittadini e imprese.
 

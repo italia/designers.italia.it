@@ -27,7 +27,7 @@ La sezione è dedicata alla user interface design, con uno spazio particolare de
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
-- [Siti web a prova di smartphone, ecco alcune cose che faresti bene a non dimenticare]({{ site.baseurl }}{% link _checklists/it/mobile.md %})
+- [Siti web a prova di smartphone, ecco alcune cose che faresti bene a non dimenticare]({{ site.baseurl }}{% link _checklists/it/siti-a-prova-di-smartphone.md %})
 
 ### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
 
