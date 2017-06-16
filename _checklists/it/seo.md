@@ -5,6 +5,7 @@ layout: post
 subtitle:
 nodate: true
 pretitle: 'Content design / Check-list'
+image: /assets/images/checklists/seo-1.jpg
 ---
 
 

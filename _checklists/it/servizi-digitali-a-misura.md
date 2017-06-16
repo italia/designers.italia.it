@@ -5,6 +5,7 @@ layout: post
 subtitle: 
 nodate: true
 pretitle: 'User research / Check-list'
+image: /assets/images/checklists/cittadino-1.jpg
 ---
 
 
