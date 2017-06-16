@@ -23,7 +23,10 @@ class IpressImporter < Jekyll::Generator
     news = api_json['elements']
     puts "Total news fetched: " + news.size.to_s
 
-    news.size > 0 or die("No news fetched")
+    if news.size > 0
+        puts("No news fetched")
+        exit
+    end
 
     news = news.sort_by { |item| Date.parse item['publishDate'] }.reverse
 
