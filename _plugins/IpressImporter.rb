@@ -23,7 +23,7 @@ class IpressImporter < Jekyll::Generator
     news = api_json['elements']
     puts "Total news fetched: " + news.size.to_s
 
-    if news.size > 0
+    if news.size <= 0
         puts("No news fetched")
         exit
     end
