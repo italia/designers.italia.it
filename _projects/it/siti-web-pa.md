@@ -223,6 +223,17 @@ Giugno 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image15.png" class="lazyload" alt="Piano Strategico Banda Ultralarga - sito" />
 </div>
 
+#### [EcoSportello Comune di Alessano](http://ambiente.alessano.info)
+
+Giugno 2017
+
+<div class="lg-showcase">
+  <noscript>
+    ![EcoSportello Comune di Alessano]({{ site.baseurl }}/assets/images/showcase/image24.png)
+  </noscript>
+  <img data-src="{{ site.baseurl }}/assets/images/showcase/image24.png" class="lazyload" alt="EcoSportello Comune di Alessano" />
+</div>
+
 ### <a name="siti-tematici">Aziende partecipate</a>
 
 #### [Sotacarbo](http://www.sotacarbo.it/)
