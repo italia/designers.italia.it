@@ -36,7 +36,7 @@ La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo c
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
-- [Tra tecnologia e design, le cose da non dimenticare mai quando progetti un servizio digitale]({{ site.baseurl }}{% link _checklists/it/cose-da-non-dimentcare-servizio-digitale.md %})
+- [Tra tecnologia e design, le cose da non dimenticare mai quando progetti un servizio digitale]({{ site.baseurl }}{% link _checklists/it/cose-da-non-dimenticare-servizio-digitale.md %})
 
 ### ![]({{'/assets/images/conversation.svg' | relative_url }}) Forum
 
