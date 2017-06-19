@@ -32,7 +32,7 @@ La sezione di user research è dedicata: agli studi e agli strumenti di verifica
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
-- [Servizi digitali a misura di cittadino, le domande giuste da farsi]({{ site.baseurl }}{% link _checklists/it/user-research.md %})
+- [Servizi digitali a misura di cittadino, le domande giuste da farsi]({{ site.baseurl }}{% link _checklists/it/servizi-digitali-a-misura.md %})
 
 ### ![]({{'/assets/images/lego.svg' | relative_url }}) Bricks
 

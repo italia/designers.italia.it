@@ -1,11 +1,12 @@
 ---
-title: Mobile First
+title: Siti web a prova di smartphone, ecco alcune cose che faresti bene a non dimenticare
 lang: it
 layout: post
-subtitle: Siti web a prova di smartphone, ecco alcune cose che faresti bene a non dimenticare.
+subtitle:
+nodate: true
+pretitle: 'User interface / Check-list'
 ---
 
-## Checklist
 
 Nel giro di pochi anni, gli smartphone hanno rivoluzionato il modo in cui si fruisce il web, e in cui si progettano siti e app.
 

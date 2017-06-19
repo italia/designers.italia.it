@@ -1,0 +1,126 @@
+{% comment %}
+REFERENCE IPRESS
+data-tag values :
+2    SPID - Sistema Pubblico di Identità Digitale
+3    PagoPA
+4    CIE - Carta d’Identità Elettronica
+5    Cittadinanza Digitale
+6    ANPR - Anagrafe Nazionale Popolazione Residente
+7    Ecosistema API
+8    Developers Italia
+9    Design
+10    DAF - Data Analytics Framework
+11    Security e Responsible Disclosure
+12    CAD
+13    Internet Governance
+14    e-Procurement
+15    18app
+16    carta docente
+17    PASocial
+39 Piano triennale
+
+18    Giovanni Bajo
+19    Paolo Barberis
+20    Daniela Battisti
+21    Mirko Calvaresi
+22    Carlo Contavalli
+23    Matteo de Santi
+24    Alessandro Ercolani
+25    Lorenzo Fabbri
+26    Federico Feroldi
+27    David Greco
+28    Fabiana Lanotte
+29    Raffaele Lillo
+30    Marisandra Lizzi
+31    Valerio Paolini
+32    Diego Piacentini
+33    Simone Piunno
+34    Guido Scorza
+35    Simone Surdi
+36    Gianluca Varisco
+37    Giuseppe Virgone
+{% endcomment %}
+
+<script id="built-in-helpers-template" type="text/x-handlebars-template">
+ {% raw %}
+    <section class="iPress-blockquote u-background-grey-10 ">
+        <h1 class="u-background-grey-30 u-padding-all-xs u-margin-top-xxs u-margin-bottom-none u-text-h3 u-textWeight-300">
+            {{#ifCond lang "==" "it"}}
+            Comunicati stampa
+            {{/ifCond}}
+            {{#ifCond lang "==" "en"}}
+            Press Releases
+            {{/ifCond}}
+        </h1>
+        <div id="ipress" class="u-padding-left-m u-padding-right-m u-border-top-none" >
+            {{#each elements}}
+            <div class="row">
+                <div class="u-margin-bottom-none u-margin-top-l">
+                    <p class="team-item-title">
+                        <a href="{{this.link}}" target="_blank">
+                            {{this.title}} ({{formatDate this.publishDate this.lang}})
+                        </a>
+                    </p>
+                    <a href="{{this.link}}" target="_blank" >
+                    <img src="{{this.defaultImage.small}}" class="u-floatLeft u-margin-right-m">
+                    </a>
+                    <p class="u-text-r-xxs u-margin-top-xxs">
+                        {{this.summary}}
+                    </p>
+                    <p class="u-cf" >&nbsp;</p>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="u-padding-left-m u-padding-right-m u-border-top-none" >
+            {{#ifCond lang "==" "it"}}
+                            <a href="https://teamdigitale.governo.it/it/people/4-profile.htm" target="_blank">
+                                <strong> Marisandra Lizzi</strong>
+                            </a> 
+                            <br /> 
+                                <i>Comunicazione e PR</i>
+                            <br /> 
+                            <a href="mailto:marisandra@teamdigitale.governo.it" target="_blank">
+                                    <span class="Icon-mail u-color-50 u-padding-r-xl"></span>
+                                </a>&nbsp;
+                                <a href="https://medium.com/@marisandralizzi" target="_blank" >
+                                <span class="Icon-medium u-color-50 u-padding-r-xl"></span>
+                                
+                                </a>&nbsp;
+                                <a href="https://twitter.com/marisandralizzi" target="_blank">
+                                <span class="Icon-twitter u-color-50 u-padding-r-xl" ></span>
+                                </a>&nbsp;
+                                <a href="https://www.facebook.com/marisandra.lizzi" target="_blank">
+                                <span class="Icon-facebook u-color-50 u-padding-r-xl" ></span>
+                            </a>
+            {{/ifCond}}
+            {{#ifCond lang "==" "en"}}
+      
+                            <a href="https://teamdigitale.governo.it/en/people/16-profile.htm" target="_blank">
+                                <strong> Marisandra Lizzi</strong>
+                            </a> 
+                            <br /> 
+                                <i>Communication and PR</i>
+                            <br /> 
+                            <a href="mailto:marisandra@teamdigitale.governo.it" target="_blank" >
+                                    <span class="Icon-mail u-color-50 u-padding-r-xl" ></span>
+                                </a>&nbsp;
+                                <a href="https://medium.com/@marisandralizzi" target="_blank" >
+                                <span class="Icon-medium u-color-50 u-padding-r-xl" ></span>
+                                
+                                </a>&nbsp;
+                                <a href="https://twitter.com/marisandralizzi" target="_blank" >
+                                <span class="Icon-twitter u-color-50 u-padding-r-xl" ></span>
+                                </a>&nbsp;
+                                <a href="https://www.facebook.com/marisandra.lizzi" target="_blank" >
+                                <span class="Icon-facebook u-color-50 u-padding-r-xl" ></span>
+                            </a>
+            {{/ifCond}}
+        </div>
+    </section>
+    {% endraw %}
+</script>
+
+<div id="content-ipress" data-key="01e87bed-f52e-4d6d-af32-c4ea59fd300a" data-lang="it" data-size="100" data-tag="9"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+<script type="text/javascript" src="{{ '/assets/scripts/ipress.js' | relative_url }}"></script>

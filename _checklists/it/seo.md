@@ -1,11 +1,13 @@
 ---
-title: Search Engine Optimization
+title: Fatti trovare. Arrivano i consigli SEO per i siti pubblici
 lang: it
 layout: post
-subtitle: Fatti trovare. Arrivano i consigli SEO per i siti pubblici
+subtitle:
+nodate: true
+pretitle: 'Content design / Check-list'
+image: /assets/images/checklists/seo-1.jpg
 ---
 
-## Checklist
 
 Ecco cosa controllare per scoprire se il tuo sito web è facile da trovare tanto dagli utenti che dai motori di ricerca e cosa potresti migliorare per incrementare la visibilità dei tuoi contenuti e servizi.
 
