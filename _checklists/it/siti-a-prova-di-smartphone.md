@@ -5,6 +5,8 @@ layout: post
 subtitle:
 nodate: true
 pretitle: 'User interface / Check-list'
+redirect_from:
+  - /checklist/mobile/
 ---
 
 
