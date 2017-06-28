@@ -6,6 +6,8 @@ subtitle:
 pretitle: 'Service design / Check-list'
 nodate: true
 image: /assets/images/checklists/service-design-1.jpg
+redirect_from:
+  - /checklist/service-design/
 ---
 
 Le amministrazioni pubbliche devono fornire servizi personalizzati e intuitivi in linea con le esigenze e le necessità di cittadini e imprese.
