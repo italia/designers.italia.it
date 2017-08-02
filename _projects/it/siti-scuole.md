@@ -2,7 +2,7 @@
 title: Siti web scuole
 subtitle: Modello di siti web per le scuole italiane
 logo: /assets/images/projects/scuole-cover.jpg
-payoff: Punto di riferimento per il design dei siti web delle scuole
+payoff: Il punto di riferimento per il design dei siti web delle scuole
 description: Modello di sito web e template grafico per le scuole italiane creato dal MIUR, gratis e a disposizione di tutti
 lang: it
 order: 4
@@ -20,7 +20,7 @@ Il percorso di *service design* prevede codesign, ricerca, progettazione, test d
 
 La roadmap riporta le tappe e i principali *deliverable associati* (che potranno subire variazioni di dettaglio in base a specifiche scelte relative alle metodologie di ricerca).
 
-Entro l'anno verranno pubblicati un modello navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello sarà accompagnato da template grafico, progettato utilizzando lo UI kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti.
+Entro l'anno verranno pubblicati un wireframe navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello sarà accompagnato da template grafico, progettato utilizzando lo UI kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti.
 
 Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per offrire a famiglie e studenti un'esperienza digitale allineata alle best practice e agli obiettivi del piano scuola digitale, ma anche modificarlo secondo le loro esigenze specifiche.
 
