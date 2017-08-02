@@ -31,4 +31,4 @@ In parallelo entro la fine dell'anno su [Developers Italia](https://developers.i
 - Giugno/Luglio *Codesign* (workshop e interviste agli stakeholder) - completato
 - Settembre/Ottobre *Ricerca* (analisi siti esistenti, ricerca su studenti e genitori)
 - Novembre/Dicembre *Progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
-- Dicembre *Pubblicazione del modello di siti weeb (prototipo navigabile, template grafici, avvio miglioramento continuo)
+- Dicembre *Pubblicazione del modello di siti web* (prototipo navigabile, template grafici, avvio miglioramento continuo)
