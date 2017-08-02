@@ -1,7 +1,7 @@
 ---
 title: Siti web scuole
 subtitle: Modello di siti web per le scuole italiane
-logo: /assets/images/projects/.jpg
+logo: /assets/images/projects/scuole-cover.jpg
 payoff: Punto di riferimento per il design dei siti web delle scuole
 description: Modello di sito web e template grafico per le scuole italiane creato dal MIUR, gratis e a disposizione di tutti
 lang: it
@@ -32,5 +32,3 @@ In parallelo su Developers Italia, a partire dal design di siti scolastici, pren
 - Settembre/Ottobre *Ricerca* (analisi siti esistenti, ricerca su studenti e genitori)
 - Novembre *Progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
 - Dicembre *Pubblicazione del modello di siti weeb (prototipo navigabile, template grafici, avvio miglioramento continuo)
-
-

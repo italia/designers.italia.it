@@ -11,9 +11,7 @@
       u-padding-r-all u-xs-padding-all-none" role="region" id="carousel-1" tabindex="0"
       data-carousel-options='{ "dotsContainer": "#customDots", "dots": true }'>
 
-      {% assign _limit = include.limit | default: 3 %}
-
-      {% for project in projects limit: _limit %}
+      {% for project in projects: %}
 
         {% assign subtitle = project.subtitle | default: project.payoff %}
         {% assign logo = project.logo | relative_url %}
