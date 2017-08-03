@@ -39,8 +39,10 @@
         u-hidden u-margin-r-right u-margin-r-bottom u-flexAlignSelfCenter">{{ t.follow_us | capitalize }}</h2>
       <ul class="Footer-socialIcons">
         {% for social in site.data.social %}
-          <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
-            <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
+          {% if social[1].link %}
+            <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
+              <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
+          {% endif %}
         {% endfor %}
       </ul>
     </div>
