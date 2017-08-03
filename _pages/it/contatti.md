@@ -15,7 +15,7 @@ Designers Italia è su [Behance](https://www.behance.net/italia), [Github](https
 <a class="twitter-timeline" data-height="360" href="https://twitter.com/designersita">Tweets by designersita</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Newsletter
-Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccontare. [Iscriviti!](https://developers.italia.it)
+Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccontare. [Iscriviti!](https://designers.italia.it)
 
 ## Area Media
 #### Contatti
