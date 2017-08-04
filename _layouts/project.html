@@ -4,31 +4,25 @@ layout: default
 
 {% include setlang.html %}
 
-<div class="u-background-white u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl project-title-wrapper">
+<div class="u-background-white u-layout-r-withGutter u-padding-top-xxl project-title-wrapper">
   <div class="project-shadow2">{{ page.title }}</div>
-  {% if page.subtitle %}<div class="project-shadow1 u-sizeFull u-md-size7of12 u-lg-size7of12">{{ page.subtitle }}</div>
-  {% elsif page.payoff %}<div class="project-shadow1 u-sizeFull u-md-size7of12 u-lg-size7of12">{{ page.payoff }}</div>
-  {% endif %}
+  {% if page.description %}<div class="project-shadow1 u-sizeFull u-md-size7of12 u-lg-size7of12">{{ page.description }}</div>{% endif %}
   <h1 class="u-text-r-l u-textWeight-300 u-color-50 u-margin-top-l u-lineHeight-l u-sizeFull u-md-size7of12 u-lg-size7of12">
     {% if page.comingsoon %}
       <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
         u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
       {{ t.coming_soon }}</span>
     {% endif %}
-    <span class="u-cf">
-      <strong class="u-textWeight-600">{{ page.title }}</strong>
-      {% if page.subtitle %}<br>{{ page.subtitle }}{% endif %}
-    </span>
+      <span class="u-cf u-text-r-xxl u-color-50 u-textWeight-600 u-lineHeight-s"><strong>{{ page.title }}</strong></span>
     </h1>
 </div>
 
-<div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
+<div class="u-background-white u-layout-r-withGutter  u-padding-bottom-xxl u-posRelative u-zindex-30">
   <div class="Grid">
 
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <div class="u-layout-prose u-text-r-xs">
-      {% if page.payoff %}<h2 class="u-text-r-xxl u-color-50">{{ page.payoff }}</h2>{% endif %}
-      {% if page.description %}<p class="u-textWeight-300 u-text-r-m u-margin-r-bottom u-margin-r-top  u-color-grey-50">{{ page.description }}</p>{% endif %}
+      {% if page.description %}<p class="u-textWeight-300 u-text-r-l u-margin-r-bottom u-margin-r-top  u-color-grey-50">{{ page.description }}</p>{% endif %}
       <div class="Prose Project">
         {{ content }}
       </div>

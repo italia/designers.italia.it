@@ -1,11 +1,9 @@
 ---
-title: SPID
-subtitle: Sistema Pubblico di Identità Digitale
+title: SPID - Sistema Pubblico di Identità Digitale
+description: Lo SPID è una credenziale unica di accesso, con identità verificata, che può essere integrata secondo lo standard SAML su siti pubblici ma anche privati
+# subtitle: Sistema Pubblico di Identità Digitale
 logo: /assets/images/projects/spid-project-cover.jpg
-payoff: Sistema Pubblico di Identità Digitale
-description: >
-  Lo SPID è una credenziale unica di accesso, con identità verificata, che può essere integrata
-  secondo lo standard SAML su siti pubblici ma anche privati.
+#payoff: Sistema Pubblico di Identità Digitale
 lang: it
 order: 1
 highlight: true
@@ -23,7 +21,7 @@ la procedura di verifica (che certifica l'identità del richiedente), vengono ri
 
 Al momento, l'integrazione di SPID è consentita solo nei siti della Pubblica Amministrazione, ma presto verrà disciplinata e aperta anche per i siti e servizi online dei privati. I vantaggi nell'adottare SPID saranno quindi molteplici: le banche e le assicurazioni, per esempio, potrebbero riconoscere il cittadino che vuole creare un conto o stipulare una polizza semplicemente facendogli fare login.
 
-## Codice sorgente
+### Codice sorgente
 
 [Bottone SPID di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button)
 
