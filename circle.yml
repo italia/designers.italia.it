@@ -3,6 +3,7 @@ machine:
   ruby:
     version: 2.2.3
   environment:
+    JEKYLL_ENV=production
     NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
 compile:
   override:
