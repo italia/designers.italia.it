@@ -7,7 +7,7 @@ machine:
     NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
 compile:
   override:
-    - jekyll build
+    - bundle exec jekyll build
 test:
   post:
     - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external --alt-ignore '/.*/'
