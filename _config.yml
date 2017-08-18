@@ -38,8 +38,14 @@ gems:
   - jekyll-paginate
   - jekyll-toc
 exclude:
+  - vendor
+  - README.md
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - circle.yml
+  - gulpfile.js
+  - package.json
 
 paginate: 10
 paginate_path: "/news/page:num/"
