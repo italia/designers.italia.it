@@ -10,7 +10,7 @@ compile:
     - bundle exec jekyll build
 test:
   post:
-    - bundle exec htmlproofer ./_site --allow-hash-href --check-html --disable-external --alt-ignore '/.*/'
+    - bundle exec htmlproofer ./_site --url-ignore "/#.*/" --check-html --disable-external --alt-ignore '/.*/'
 general:
   artifacts:
     - "_site"
