@@ -138,7 +138,9 @@ if (config.production || process.env.DESIGNERSITALIA_SITE_PRODUCTION_SERVER) {
         destination: publish_destination,
         port: publish_port,
         recursive: true,
-        compress: true
+        compress: true,
+        progress: true,
+        command: true
       }));
   });
 } else {
