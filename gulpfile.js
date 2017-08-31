@@ -95,8 +95,8 @@ gulp.task('build', function(cb) {
     'jekyll', [
       // 'optimize-js',
       // 'optimize-css',
-      'optimize-html',
-      'optimize-images'
+      'optimize-html'
+      //'optimize-images'
     ], cb);
 });
 
