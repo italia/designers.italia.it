@@ -12,7 +12,7 @@ compile:
     - gulp build
 test:
   post:
-    - bundle exec htmlproofer ./_site  --check-html --allow-hash-href --empty-alt-ignore --only-4xx
+      - bundle exec htmlproofer ./_site  --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external
 deployment:
   production:
     branch: master
