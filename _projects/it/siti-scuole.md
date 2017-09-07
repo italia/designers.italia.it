@@ -20,7 +20,7 @@ Il percorso di *service design* prevede codesign, ricerca, progettazione, test d
 
 La roadmap riporta le tappe e i principali *deliverable associati* (che potranno subire variazioni di dettaglio in base a specifiche scelte relative alle metodologie di ricerca).
 
-Entro l'anno verranno pubblicati un wireframe navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello sarà accompagnato da template grafico, progettato utilizzando lo UI kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti.
+L'obiettivo è avviare entro l'anno la pubblicazione delle componenti del modello di siti web delle scuole, a partire da un wireframe navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello sarà accompagnato da template grafico, progettato utilizzando lo UI kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti. Il modello verrà progressivamente migliorato attraverso un processo collaborativo all'interno di *Designers Italia*
 
 Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per offrire a famiglie e studenti un'esperienza digitale allineata alle best practice e agli obiettivi del piano scuola digitale, ma anche modificarlo secondo le loro esigenze specifiche.
 
@@ -29,6 +29,7 @@ In parallelo entro la fine dell'anno su [Developers Italia](https://developers.i
 ### Roadmap
 
 - Giugno/Luglio *Codesign* (workshop e interviste agli stakeholder) - completato
-- Settembre/Ottobre *Ricerca* (analisi siti esistenti, ricerca su studenti e genitori)
-- Novembre/Dicembre *Progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
-- Dicembre *Pubblicazione del modello di siti web* (prototipo navigabile, template grafici, avvio miglioramento continuo)
+- Settembre *Definizione del capitolato tecnico e procedure di gara* - in corso
+- Ottobre *Avvio della fase di ricerca* (analisi siti esistenti, ricerca su studenti e genitori)
+- Novembre *Avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
+- Dicembre *Avvio della fase di rilascio delle componenti per un modello di siti web* (prototipo navigabile, template grafici, e avvio del processo di miglioramento continuo)
