@@ -19,11 +19,14 @@ Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce 
 <dd>Architettura informazione (capitolo della guida).</dd>
 <dt>Settembre 2017</dt>
 <dd>Architettura informazione (checklist).</dd>
-<dd>Template navigation tree e content list (brick).</dd>
 <dt>Ottobre 2017</dt>
-<dd>Wireframing (brick).</dd>
-<dd>ASO (guida).</dd>
-<dd>ASO (checklist).</dd>
+<dd>Linguaggio (checklist).</dd>
+<dd>ASO (guida e checklist).</dd>
+<dt>Dicembre 2017</dt>
+<dd>Kit architettura informazione (navigation tree, content inventory, wireframing).</dd>
+<dt>Gennaio 2018</dt>
+<dd>Completamento sezione architettura informazione (guida)</dd>
+<dd>Completamento sezione linguaggio (guida)</dd>
 </dl>
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
