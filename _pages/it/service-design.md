@@ -16,15 +16,12 @@ La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo c
 ## Roadmap
 
 <dl class="Roadmap">
-<dt>Luglio 2017</dt>
-<dd>Design management (capitolo della guida).</dd>
-<dt>Settembre 2017</dt>
-<dd>Tool di verifica dell’accessibilità (brick).</dd>
-<dt>Ottobre 2017</dt>
+<dt>Novembre 2017</dt>
+<dd>Principi di gestione del design (guida).</dd>
 <dd>Organizzare una gara (guida / brick).</dd>
 <dd>Partecipare a una gara  (guida / brick).</dd>
-<dt>Novembre 2017</dt>
-<dd>Template di Brainstorming, progettazione, project management (brick)</dd>
+<dt>Dicembre 2017</dt>
+<dd>Service design kit (stakeholder matrix, personas, user journey (brick)</dd>
 </dl>
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
