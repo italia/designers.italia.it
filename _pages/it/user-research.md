@@ -16,9 +16,9 @@ La sezione di user research è dedicata: agli studi e agli strumenti di verifica
 <dl class="Roadmap">
 <dt>Luglio 2017</dt>
 <dd> Avvio della sperimentazione di un modello di web analytics centralizzato per la PA. </dd>
-<dt>Settembre 2017</dt>
+<dt>Novembre 2017</dt>
 <dd>Ricerche qualitative (capitolo della guida).</dd>
-<dt>Ottobre 2017</dt>
+<dt>Dicembre 2017</dt>
 <dd>Le interviste (brick).</dd>
 <dd>I focus group (brick).</dd>
 </dl>
