@@ -19,7 +19,7 @@ La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo c
 <dt>Novembre 2017</dt>
 <dd>Human centered design (guida).</dd>
 <dt>Dicembre 2017</dt>
-<dd>Service design kit (ecosystem map, user stories, personas, user journey, workshop agenda (brick)</dd>
+<dd>Service design kit (ecosystem map, user stories, personas, user journey, workshop agenda) (brick).</dd>
 <dt>Gennaio 2018</dt>
 <dd>Principi di gestione del design (guida).</dd>
 <dd>Organizzare una gara (guida / brick).</dd>
