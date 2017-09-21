@@ -21,12 +21,13 @@ Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce 
 <dd>Architettura informazione (checklist).</dd>
 <dt>Ottobre 2017</dt>
 <dd>Linguaggio (checklist).</dd>
-<dd>ASO (guida e checklist).</dd>
+<dd>App Store Optimization (guida e checklist).</dd>
 <dt>Dicembre 2017</dt>
-<dd>Kit architettura informazione (navigation tree, content inventory, wireframing).</dd>
+<dd>Wireframe kit (navigation tree, wireframe).</dd>
+<dd>Content kit (content list, style guide).</dd>
 <dt>Gennaio 2018</dt>
-<dd>Completamento sezione architettura informazione (guida)</dd>
-<dd>Completamento sezione linguaggio (guida)</dd>
+<dd>Completamento sezione architettura informazione (guida).</dd>
+<dd>Completamento sezione linguaggio (guida).</dd>
 </dl>
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
