@@ -17,11 +17,14 @@ La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo c
 
 <dl class="Roadmap">
 <dt>Novembre 2017</dt>
+<dd>Human centered design (guida).</dd>
+<dt>Dicembre 2017</dt>
+<dd>Service design kit (ecosystem map, user stories, personas, user journey, workshop agenda (brick)</dd>
+<dt>Gennaio 2018</dt>
 <dd>Principi di gestione del design (guida).</dd>
 <dd>Organizzare una gara (guida / brick).</dd>
 <dd>Partecipare a una gara  (guida / brick).</dd>
-<dt>Dicembre 2017</dt>
-<dd>Service design kit (stakeholder matrix, personas, user journey (brick)</dd>
+
 </dl>
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
