@@ -15,12 +15,15 @@ La sezione di user research è dedicata: agli studi e agli strumenti di verifica
 
 <dl class="Roadmap">
 <dt>Luglio 2017</dt>
-<dd> Avvio della sperimentazione di un modello di web analytics centralizzato per la PA. </dd>
+<dd>Avvio della sperimentazione di un modello di web analytics centralizzato per la PA. </dd>
 <dt>Novembre 2017</dt>
 <dd>Ricerche qualitative (capitolo della guida).</dd>
 <dt>Dicembre 2017</dt>
-<dd>Le interviste (brick).</dd>
-<dd>I focus group (brick).</dd>
+<dd>Aggiornamento guida web analytics (heatmap).</dd>
+<dt>Gennaio 2018</dt>
+<dd>Template piano della ricerca (brick).</dd>
+<dd>Guida alle interviste (brick).</dd>
+<dd>User testing (brick).</dd>
 </dl>
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
