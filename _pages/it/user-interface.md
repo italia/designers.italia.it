@@ -30,7 +30,7 @@ La sezione è dedicata alla user **interface design**, con uno spazio particolar
   <dt>Dicembre 2017</dt>
   <dd>Allineamento Toolkit e UI Kit: tutti i componenenti saranno presenti in entambi i kit</dd>
   <dd>Prima alpha toolkit basato su React</dd>
-  <dt>Gennaio 2017</dt>
+  <dt>Gennaio 2018</dt>
   <dd>Prima beta toolkit basato su React</dd>
 </dl>
 
