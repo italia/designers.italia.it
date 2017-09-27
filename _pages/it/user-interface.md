@@ -48,7 +48,7 @@ La sezione è dedicata alla user **interface design**, con uno spazio particolar
 
 - [UI Kit](https://www.behance.net/gallery/53244611/UI-Kit-designers-italia)
 - [Icon Kit](https://www.behance.net/gallery/53282333/Italia-icon-kit)
-- [Web Toolkit: reference implementation delle linee guida di design](https://italia.github.io/ita-web-toolkit/)
+- [Web Toolkit: reference implementation delle linee guida di design](https://italia.github.io/design-web-toolkit/)
 
 ### ![]({{'/assets/images/abacus.svg' | relative_url }}) Check-list
 
