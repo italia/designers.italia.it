@@ -24,6 +24,25 @@ Nel mese di Novembre, a conclusione del progetto pilota verranno pubblicate alcu
 
 In caso positivo, si procederà a identificare, in collaborazione con la community di sviluppatori di servizi pubblici digitali [Developers Italia](https://developers.italia.it/) una soluzione tecnologica scalabile e un processo di *on boarding* per i siti pubblici italiani.
 
+### Siti e network di siti aderenti alla sperimentazione
+La prima fase del progetto pilota coinvolge un panel di circa 40 siti web, selezionati per rispondere all’esigenza di far emergere e categorizzare i bisogni di analisi di traffico web di specifiche categorie di PA.
+
+Le pubbliche amministrazioni aderenti sono: 
+
+- Governo Italiano
+- INPS - Istituto Nazionale Previdenza Sociale
+- MIUR - Ministero dell’Istruzione, dell’Università e della Ricerca
+- Network Regione Piemonte
+- Network Comune di Cagliari
+- Network Comune di Firenze
+- Network Scuole 
+- Comune di Biella
+- Agenzia per l’Italia Digitale 
+- Team per la Trasformazione Digitale
+- SPID - Sistema Pubblico d’Identità Digitale
+
+### Funzionalità
+Durante la sperimentazione sono utilizzate la maggior parte delle funzionalità *core* della [piattaforma open source Piwik](https://piwik.org/). Sono inoltre testate alcune delle funzionalità *premium* disponibili, in modalità “trial”.    
 
 ### Roadmap
 
