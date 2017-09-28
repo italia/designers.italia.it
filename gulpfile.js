@@ -34,7 +34,7 @@ gulp.task('jekyll', function() {
       read: false
     })
     .pipe(shell([
-      'bundle exec jekyll build'
+      'JEKYLL_ENV=production bundle exec jekyll build'
     ]));
 });
 
