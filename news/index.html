@@ -20,7 +20,7 @@ permalink: '/blog/'
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       {% for post in paginator.posts %}
 
-        {% assign excerpt = post.excerpt | strip_html '%}
+        {% assign excerpt = post.excerpt | strip_html %}
         {% assign _url = post.url | relative_url %}
 
         <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
