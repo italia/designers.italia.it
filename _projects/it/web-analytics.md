@@ -29,17 +29,24 @@ La prima fase del progetto pilota coinvolge un panel di circa 40 siti web, selez
 
 Le pubbliche amministrazioni aderenti sono: 
 
-- Governo Italiano
-- INPS - Istituto Nazionale Previdenza Sociale
-- MIUR - Ministero dell’Istruzione, dell’Università e della Ricerca
-- Network Regione Piemonte
-- Network Comune di Cagliari
-- Network Comune di Firenze
-- Network Scuole 
-- Comune di Biella
-- Agenzia per l’Italia Digitale 
-- Team per la Trasformazione Digitale
-- SPID - Sistema Pubblico d’Identità Digitale
+- [Governo Italiano](http://www.governo.it/)
+- [INPS - Istituto Nazionale Previdenza Sociale](https://www.inps.it)
+- [MIUR - Ministero dell’Istruzione, dell’Università e della Ricerca](http://www.miur.gov.it)
+- [Network Regione Piemonte](http://www.regione.piemonte.it/)
+- [Network Comune di Cagliari](http://www.comune.cagliari.it/)
+- [Network Comune di Firenze](http://www.comune.fi.it/)
+- Network Scuole: 
+    - [IC Foscolo, Vescovato (CR)]( https://www.icugofoscolo.it) 
+    - [IC Fermi, Carvico (BG)](https://www.iccarvico.gov.it) 
+    - [IC Severi, Padova](https://www.itiseveripadova.gov.it) 
+    - [IC di Feltre (BL)](http://www.comprensivofeltre.gov.it) 
+    - [IC Parini (LC)](https://www.comprensivobosisio.gov.it) 
+    - [IC di Verdellino (BG)]( https://icverdellino.gov.it) 
+- [Comune di Biella](https://www.comune.biella.it/)
+- [Agenzia per l’Italia Digitale](http://www.agid.gov.it/) 
+- [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/)
+- [SPID - Sistema Pubblico d’Identità Digitale](https://spid.gov.it/)
+
 
 ### Funzionalità
 Durante la sperimentazione sono utilizzate la maggior parte delle funzionalità *core* della [piattaforma open source Piwik](https://piwik.org/). Sono inoltre testate alcune delle funzionalità *premium* disponibili, in modalità “trial”.    
