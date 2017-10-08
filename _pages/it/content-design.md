@@ -15,8 +15,8 @@ Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce 
 
 <dl class="Roadmap">
 <dt>Luglio 2017</dt>
-<dd>Linguaggio e gestione contenuti (capitolo della guida).</dd>
-<dd>Architettura informazione (capitolo della guida).</dd>
+<dd><a href="https://design-italia.readthedocs.io/it/stable/doc/content-design/linguaggio.html">Linguaggio e gestione contenuti</a>(capitolo della guida).</dd>
+<dd><a href="https://design-italia.readthedocs.io/it/stable/doc/content-design/architettura-dell-informazione.html">Architettura informazione</a>(capitolo della guida).</dd>
 <dt>Settembre 2017</dt>
 <dd>Architettura informazione (checklist).</dd>
 <dt>Ottobre 2017</dt>
