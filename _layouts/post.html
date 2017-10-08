@@ -83,7 +83,7 @@ layout: default
 {% endif %}
   <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
     <div class="Grid Grid--alignCenter">
-      <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+      <div class="Grid-cell u-sizeFull u-md-before1of12 u-lg-before1of12">
         {% if page.blueBlock != true %}
         <div class="u-textCenter u-padding-bottom-xl">
           {% if page.categories %}
@@ -142,9 +142,18 @@ layout: default
         </div>
         {% endif %}
 
-        <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-color-grey-50">
-          {{ content }}
-        </div>
+
+
+        <div class="u-padding-top-xl u-color-grey-50">
+          <div class="Grid">
+            <div class="Prose Grid-cell u-sm-hidden u-sizeFull u-md-size7of12 u-lg-size7of12">
+              {{ content }}
+            </div>
+              {% capture head %}
+              {{ content | toc_only }}
+              {% endcapture %}
+              {% include sideblock.html title=page.subtitle title=page.title content=head  %}
+          </div>
 
 
         {% if page.related_tags == nil %}
