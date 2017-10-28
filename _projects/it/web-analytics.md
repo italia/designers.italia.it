@@ -40,7 +40,7 @@ Le pubbliche amministrazioni aderenti sono:
     - [IC Fermi, Carvico (BG)](https://www.iccarvico.gov.it) 
     - [IC Severi, Padova](https://www.itiseveripadova.gov.it) 
     - [IC di Feltre (BL)](http://www.comprensivofeltre.gov.it) 
-    - [IC Parini (LC)](https://www.comprensivobosisio.gov.it) 
+    - [IC Bosisio Parini (LC)](https://www.comprensivobosisio.gov.it) 
     - [IC di Verdellino (BG)]( https://icverdellino.gov.it) 
 - [Comune di Biella](https://www.comune.biella.it/)
 - [Agenzia per l’Italia Digitale](http://www.agid.gov.it/) 
