@@ -25,6 +25,20 @@
   }
 }
 
+.Header-PinWheel-Stick {
+  border-right: 1px solid #06c;
+  position: relative;
+  &::before {
+      content: "";
+      height: 1em;
+      width: 100%;
+      position: absolute;
+      bottom: 2.5rem;
+      border-right: 1px solid #06c;
+      box-sizing: content-box;
+  }
+}
+
 /** Header slim
    ================ */
 .Header-banner {
