@@ -2,7 +2,7 @@
 title: Contatti
 subtitle: Social, email, stampa e media
 lang: it
-layout: project
+layout: page
 toc: true
 ---
 
@@ -15,7 +15,11 @@ Designers Italia è su [Behance](https://www.behance.net/italia), [Github](https
 <a class="twitter-timeline" data-height="360" href="https://twitter.com/designersita">Tweets by designersita</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Newsletter
-Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccontare. [Iscriviti!](https://designers.italia.it)
+Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccontare.
+
+<div class="u-padding-bottom-xxl">
+{% include newsletter.html %}
+</div>
 
 ## Area Media
 #### Contatti
@@ -35,6 +39,6 @@ Se vuoi segnalare un evento e/o invitarci, invia una e-mail a <media@teamdigital
 Siamo una community, il modo migliore per conoscerci è iniziare a lavorare insieme a progetti open source pubblici e partecipare alle nostre iniziative, anche su [Behance](https://www.behance.net/italia). Inoltre, anche se non abbiamo al momento posizioni aperte, puoi inviare da subito la tua candidatura al [Team per la trasformazione digitale](https://teamdigitale.governo.it/it/36-content.htm)
 
 ## Invia un feedback
-Vuoi proporre idee oppure dare un feedback sulla community? Per questo abbiamo creato un thread apposito sul nostro [forum](https://forum.italia.it/c/design/feedback-community) 
+Vuoi proporre idee oppure dare un feedback sulla community? Per questo abbiamo creato un thread apposito sul nostro [forum](https://forum.italia.it/c/design/feedback-community)
 
 E se vuoi segnalare un bug puoi aprire una issue su [Github](https://github.com/italia/designers.italia.it)
