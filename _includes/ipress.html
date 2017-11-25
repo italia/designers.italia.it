@@ -43,19 +43,20 @@ data-tag values :
 
 <script id="built-in-helpers-template" type="text/x-handlebars-template">
  {% raw %}
-    <section class="iPress-blockquote u-background-grey-10 ">
-        <h1 class="u-background-grey-30 u-padding-all-xs u-margin-top-xxs u-margin-bottom-none u-text-h3 u-textWeight-300">
-            {{#ifCond lang "==" "it"}}
-            Comunicati stampa
-            {{/ifCond}}
-            {{#ifCond lang "==" "en"}}
-            Press Releases
-            {{/ifCond}}
-        </h1>
-        <div id="ipress" class="u-padding-left-m u-padding-right-m u-border-top-none" >
+    <section class="iPress-blockquote Prose">
+      <h4 class="">
+        {{#ifCond lang "==" "it"}}
+        Comunicati stampa
+        {{/ifCond}}
+        {{#ifCond lang "==" "en"}}
+        Press Releases
+        {{/ifCond}}
+      </h4>
+      <div class="u-borderRadius-l u-background-white u-margin-bottom-xxl">
+        <div id="ipress" class="u-padding-left-xs u-padding-right-xs u-border-top-none">
             {{#each elements}}
             <div class="row">
-                <div class="u-margin-bottom-none u-margin-top-l">
+                <div class="u-margin-bottom-l">
                     <p class="team-item-title">
                         <a href="{{this.link}}" target="_blank">
                             {{this.title}} ({{formatDate this.publishDate this.lang}})
@@ -72,20 +73,20 @@ data-tag values :
             </div>
             {{/each}}
         </div>
-        <div class="u-padding-left-m u-padding-right-m u-border-top-none" >
+        <div class="u-padding-left-xs u-padding-right-xs u-border-top-none">
             {{#ifCond lang "==" "it"}}
                             <a href="https://teamdigitale.governo.it/it/people/4-profile.htm" target="_blank">
                                 <strong> Marisandra Lizzi</strong>
-                            </a> 
-                            <br /> 
+                            </a>
+                            <br />
                                 <i>Comunicazione e PR</i>
-                            <br /> 
+                            <br />
                             <a href="mailto:marisandra@teamdigitale.governo.it" target="_blank">
                                     <span class="Icon-mail u-color-50 u-padding-r-xl"></span>
                                 </a>&nbsp;
                                 <a href="https://medium.com/@marisandralizzi" target="_blank" >
                                 <span class="Icon-medium u-color-50 u-padding-r-xl"></span>
-                                
+
                                 </a>&nbsp;
                                 <a href="https://twitter.com/marisandralizzi" target="_blank">
                                 <span class="Icon-twitter u-color-50 u-padding-r-xl" ></span>
@@ -95,19 +96,18 @@ data-tag values :
                             </a>
             {{/ifCond}}
             {{#ifCond lang "==" "en"}}
-      
                             <a href="https://teamdigitale.governo.it/en/people/16-profile.htm" target="_blank">
                                 <strong> Marisandra Lizzi</strong>
-                            </a> 
-                            <br /> 
+                            </a>
+                            <br />
                                 <i>Communication and PR</i>
-                            <br /> 
+                            <br />
                             <a href="mailto:marisandra@teamdigitale.governo.it" target="_blank" >
                                     <span class="Icon-mail u-color-50 u-padding-r-xl" ></span>
                                 </a>&nbsp;
                                 <a href="https://medium.com/@marisandralizzi" target="_blank" >
                                 <span class="Icon-medium u-color-50 u-padding-r-xl" ></span>
-                                
+
                                 </a>&nbsp;
                                 <a href="https://twitter.com/marisandralizzi" target="_blank" >
                                 <span class="Icon-twitter u-color-50 u-padding-r-xl" ></span>
@@ -117,6 +117,7 @@ data-tag values :
                             </a>
             {{/ifCond}}
         </div>
+      </div>
     </section>
     {% endraw %}
 </script>
