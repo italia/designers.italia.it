@@ -43,22 +43,9 @@
 
     <div class="Grid-cell u-sm-size6of12 u-md-size4of12 u-lg-size4of12">
       <div class="u-padding-r-all">
-        <h3 class="u-text-r-xxs u-textWeight-300 u-color-grey-50 u-margin-top-l u-lineHeight-l">
+        <h3 class="u-text-r-xxs u-textWeight-300 u-color-grey-50 u-margin-top-l u-padding-r-bottom u-lineHeight-l">
             {{ t.home_newsletter_title }}</h3>
-        <form class="Form u-padding-r-top" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank" style="max-width: 25em">
-          <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xl">
-            <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400"
-              role="presentation" aria-hidden="true">
-            </button>
-            <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus " required id="newsletter" name="email" />
-            <label class="Form-label u-color-grey-40 u-padding-left-xxl" for="newsletter"><span class="u-hidden u-md-inline u-lg-inline">
-                  {{t.home_newsletter_placeholder }}</span></label>
-            <input type="hidden" name="list" value="2">
-            <button type="submit" class="Grid-cell u-sizeFit u-background-teal-30 u-color-white u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s">
-               {{ t.home_newsletter_button }}
-              </button>
-          </div>
-        </form>
+            {% include newsletter.html %}
       </div>
     </div>
 
