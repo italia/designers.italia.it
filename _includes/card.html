@@ -3,7 +3,7 @@
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
   {% if include.hasImage != false %}
   <div class="u-sizeFull">
-    <a class="" href="{{ include.link }}">
+    <a class="" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ include.link }}">
     <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" style="border-bottom: 0.3em solid #06c" />
     </a>
   </div>
@@ -19,7 +19,7 @@
 
     <div class="u-sizeFull {% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %}">
       <h3 class="u-padding-bottom-xs">
-        <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" href="{{ include.link }}">
+        <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ include.link }}">
           {{ include.title }}
 
           {% if include.comingsoon %}
@@ -57,7 +57,7 @@
 
         {% if include.hasMore != false %}
         <p class="Grid-cell u-layout-centerLeft u-flexAlignItemsCenter u-padding-r-bottom">
-          <a href="{{ include.link }}" class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">{{ t.home_projects_expand
+          <a href="{{ include.link }}" {% if include.target == '_blank' %}target="_blank"{% endif %} class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">{{ t.home_projects_expand
           }}&nbsp;<span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-alignBottom"></span>
           </a>
         </p>
@@ -78,9 +78,8 @@
     </div>
 
     {% if include.categories %}
-    <div class="u-flex u-flexAlignItemsCenter u-flexAlignContentCenter u-margin-top-l">
-      <p class="u-color-grey-50 u-margin-r-right">{{ t.news_categories }}</p>
-      {% include pills.html items=include.categories small=true %}
+    <div class="u-flex u-flexAlignItemsCenter u-flexAlignContentCenter">
+      {% include pills.html items = include.categories small = true %}
     </div>
     {% endif %}
 

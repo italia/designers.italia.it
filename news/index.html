@@ -5,6 +5,7 @@ permalink: '/blog/'
 ---
 
 {% include setlang.html %}
+{% assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse %}
 
 <div class="u-background-50 u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl">
   <h1 class="u-text-r-l u-textWeight-300 u-color-white u-margin-top-l u-lineHeight-l">
@@ -18,27 +19,32 @@ permalink: '/blog/'
   <div class="Grid">
 
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-      {% for post in paginator.posts %}
+      {% for post in posts %}
 
-        {% assign excerpt = post.excerpt | strip_html %}
-        {% assign _url = post.url | relative_url %}
+        {% assign _excerpt = post.medium_subtitle | strip_html %}
+        {% assign _url = post.medium_url %}
+        {% assign _date = post.medium_published_at | divided_by: 1000 | date: t.formatDate %}
 
         <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
         {% include card.html
-          date=post.date
-          author=post.author
-          title=post.title
-          link=_url
-          text=excerpt
-          hasImage=false
-          categories=post.categories
-          flat=true
-          classes='u-background-grey-15'
+          date = _date
+          author = post.medium_author
+          author_link = post.medium_author_link
+          title = post.medium_title
+          link = _url
+          text = _excerpt
+          hasImage = true
+          image = post.medium_preview_image_url
+          categories = post.medium_tagsarray
+          flat = true
+          classes = 'u-background-grey-15'
+          target = '_blank'
           %}
         </div>
 
       {% endfor %}
 
+      {% comment %}
       <div>
         {% if paginator.previous_page %}
           <a href="{{ paginator.previous_page_path }}" class="u-color-50">{{ t.paginator_previous_page }}</a>
@@ -52,18 +58,13 @@ permalink: '/blog/'
           <span>{{ t.next_page }}</span>
         {% endif %}
       </div>
+      {% endcomment %}
 
     </div>
 
-    {% capture categories %}
-      {% for category in site.categories %}{{ category[0] }}:{% endfor %}
-    {% endcapture %}
+    {% capture pills %} {% include pills.html items = site.medium_tags small = true %} {% endcapture %}
 
-    {% assign categories_ = categories | strip | split: ':' %}
-
-    {% capture pills %}{% include pills.html items=categories_ small=true %}{% endcapture %}
-
-    {% include sideblock.html title=t.news_nav_title content=pills %}
+    {% include sideblock.html title = t.news_nav_title content = pills %}
 
   </div>
 </div>
