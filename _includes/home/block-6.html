@@ -7,12 +7,12 @@
         <h2 class="u-text-r-xxl u-padding-bottom-s">{{ t.home_blog_title }}</h2>
         <p  class="u-text-r-xl u-padding-bottom-m">{{ t.home_blog_subtitle }}</p>
         <ul class="u-padding-r-bottom u-padding-r-top u-text-r-m">
+          {% for tag in site.medium_tags limit: 8 %}
           <li class="u-inlineBlock u-border-all-xxs u-background-teal-65 u-padding-top-xxs u-text-r-xxs u-textWeight-600
-          u-padding-bottom-xxs u-margin-bottom-xs u-padding-r-right u-padding-r-left u-margin-r-right">{{ t.home_blog_tag_1 }}</li>
-          <li class="u-inlineBlock u-border-all-xxs u-background-teal-65 u-padding-top-xxs u-text-r-xxs u-textWeight-600
-          u-padding-bottom-xxs u-margin-bottom-xs u-padding-r-right u-padding-r-left u-margin-r-right">{{ t.home_blog_tag_2 }}</li>
-          <li class="u-inlineBlock u-border-all-xxs u-background-teal-65 u-padding-top-xxs u-text-r-xxs u-textWeight-600
-          u-padding-bottom-xxs u-margin-bottom-xs u-padding-r-right u-padding-r-left u-margin-r-right">{{ t.home_blog_tag_3 }}</li>
+          u-padding-bottom-xxs u-margin-bottom-xs u-padding-r-right u-padding-r-left u-margin-r-right">
+            <a href="{{ tag.link }}" {% if ext_protocol == 'http' %}target="_blank"{% endif %} class="u-color-white u-linkClean">{{ tag.title }}</a>
+          </li>
+          {% endfor %}
         </ul>
         <p class="u-letterSpace-l u-padding-r-bottom u-margin-r-bottom u-text-r-xxs">
           {{ t.home_blog_text }}
@@ -25,24 +25,28 @@
       </div>
     </div>
 
-    {% assign posts = site.posts | where: 'lang', active_lang %}
+    {% assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse %}
     {% for post in posts limit: 2 %}
-      {% assign excerpt = post.excerpt | remove: ' <p>' | remove: '</p>' '%}
-
       <div class="Grid-cell u-sizeFull u-md-sizeFill u-lg-sizeFill u-margin-r-bottom u-color-white u-flex"
-        style="background-color: {{ post.backgroundColor }}; background-image: url({{ post.backgroundImage | relative_url }});
+        style="background-color: {{ post.backgroundColor }}; background-image: url({{ post.medium_preview_image_url }});
           background-blend-mode: multiply; background-size: cover; min-height: 300px">
         <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
           <div class="u-flexAlignSelfEnd">
+            {% for tag in post.medium_tagsarray %}
+            {% assign ext_protocol =  tag.link | slice: 0, 4 %}
             <p class="u-inlineBlock u-border-all-xxs u-padding-top-xxs u-padding-bottom-xxs u-text-r-xxs u-textWeight-600
               u-margin-r-bottom u-padding-r-right u-padding-r-left u-margin-r-right" style="background-color: rgba(0, 0, 0, 0.1)">
-              {{ post.category }}
+              <a href="{{ tag.link }}" {% if ext_protocol == 'http' %}target="_blank"{% endif %} class="u-color-white u-linkClean">{{ tag.title }}</a>
             </p>
+            {% endfor %}
             <h3 class="u-text-r-xl">
-              <a href="{{ post.url |relative_url }}" class="u-color-white u-linkClean">
-                <span>{{ post.title }}</span>
+              <a href="{{ post.medium_url }}" class="u-color-white u-linkClean">
+                <span>{{ post.medium_title }}</span>
               </a>
             </h3>
+            <p>
+              <a href="{{ post.medium_url }}" class="u-color-white u-linkClean">{{ post.medium_subtitle }}</a>
+            </p>
           </div>
         </div>
       </div>
