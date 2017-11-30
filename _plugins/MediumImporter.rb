@@ -9,6 +9,7 @@
 
 require 'rest_client'
 require 'json'
+require 'rmagick'
 
 class MediumImporter < Jekyll::Generator
   safe true
@@ -78,7 +79,11 @@ class MediumImporter < Jekyll::Generator
       doc.data['meta_description'] = item['content']['metaDescription']
       doc.data['medium_url'] = post_url_base + item['uniqueSlug']
       doc.data['medium_tags'] = item['virtuals']['tags']
-      doc.data['medium_preview_image_url'] = "https://cdn-images-1.medium.com/fit/t/800/240/" + item['virtuals']['previewImage']['imageId']
+      doc.data['medium_preview_image_url'] = "https://cdn-images-1.medium.com/max/1600/" + item['virtuals']['previewImage']['imageId']
+      img =  Magick::Image.read(doc.data['medium_preview_image_url']).first
+      pix = img.scale(1, 1)
+      avg_color_hex = pix.to_color(pix.pixel_color(0,0))
+      doc.data['medium_preview_image_color_avg'] = avg_color_hex
       doc.data['medium_post_id'] = item['id']
       doc.data['medium_detected_lang'] = item['detectedLanguage']
       doc.data['medium_slug'] = item['slug']
