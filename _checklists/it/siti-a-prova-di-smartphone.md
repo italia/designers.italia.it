@@ -17,12 +17,12 @@ I trend degli ultimi anni parlano chiaro, più di 1 miliardo di utenti interagis
 ### Gli utenti non pianificano
 {:data-checklist="1"}
 
-Vero che molti di noi ancora usano un desktop o un laptop. Magari al lavoro, o a casa. Ma viviamo sempre connessi, ed è proprio fuori dalle pareti di casa o dell’ufficio che usiamo più spesso i social, whatsapp o le email. È quindi probabile che se ci arriva un link o una notifica che ci suggeriscono di provare un nuovo servizio, il nostro primo contatto con esso sia tramite dispositivo mobile. Anche se magari il servizio richiede uno schermo molto più grande per essere fruito al meglio. Chi guarda ad esempio un film sullo smartphone?! ma quanti trailer ci avete visto? Gli utenti non pianificano, fanno qualcosa quando ne hanno l’opportunità o la necessità.
+Vero che molti di noi ancora usano un desktop o un laptop. Magari al lavoro, o a casa. Ma viviamo sempre connessi, ed è proprio fuori dalle pareti di casa o dell’ufficio che usiamo più spesso i social, WhatsApp o le email. È quindi probabile che se ci arriva un link o una notifica che ci suggeriscono di provare un nuovo servizio, il nostro primo contatto con esso sia tramite dispositivo mobile. Anche se magari il servizio richiede uno schermo molto più grande per essere fruito al meglio. Chi guarda ad esempio un film sullo smartphone?! Ma quanti trailer ci avete visto? Gli utenti non pianificano, fanno qualcosa quando ne hanno l’opportunità o la necessità.
 
 ### Prima il contenuto, quindi prima l’utente
 {:data-checklist="2"}
 
-Le ridotte dimensioni dello schermo è sicuramente una buona ragione per focalizzarsi sull’essenziale: il contenuto.
+Le ridotte dimensioni dello schermo sono sicuramente una buona ragione per focalizzarsi sull’essenziale: il contenuto.
 Il contenuto deve venire prima della sua presentazione, dell’interfaccia che lo veicola.
 Questo richiede chiaramente un’attenzione maggiore sia alla strutturazione dei testi che agli aspetti redazionali.
 Anche le funzioni di contorno devono essere implementate al minimo a favore di un rapido caricamento della pagina e delle sue interazioni essenziali.
@@ -61,13 +61,13 @@ L’utente interagisce in massima parte con applicazioni che già fanno parte de
 Dove possiamo lasciamo che l’utente si focalizzi sui contenuti e servizi che eroghiamo piuttosto che distrarlo con interfacce “originali”.
 So che noi designer siamo sempre convinti di avere una soluzione ineguagliabile e rivoluzionaria per riscaldare l’acqua o far rotolare qualcosa, ma forse è meglio concentrare gli sforzi su qualcos’altro, giusto?
 
-### Test, test, test.
+### Test, test, test
 {:data-checklist="7"}
 
 Qualunque software, preso singolarmente, ha un comportamento prevedibile. Ma le varianti dei dispositivi sono moltissime e quelle dei loro sistemi operativi lo sono forse ancora di più.
 
-Occorre quindi predisporre test adatti, magari automatizzandoli con alcuni servizi e strumenti ad hoc (ad esempio https://crossbrowsertesting.com/ opure https://www.browserstack.com)
+Occorre quindi predisporre test adatti, magari automatizzandoli con alcuni servizi e strumenti ad hoc (ad esempio [Cross Browser Testing](https://crossbrowsertesting.com/) oppure [BrowserStack](https://www.browserstack.com) ).
 
 Ma se c’è qualcuno di davvero imprevedibile questi è senza dubbio l’utente. Quindi non appena ne avete la possibilità mettete la vostra applicazione in mano a dei veri utenti, osservate come la usano e se ne sono soddisfatti, e raccogliete i loro suggerimenti: sono spesso illuminanti e molto più competenti di quanto non sembri.
 
-E vedrete, i vostri utenti saranno sempre felici di darvi una mano a migliorare: del resto non hanno ancora digerito la multa presa sull’autobus per colpa di quella maledetta app..! ;-)
+E vedrete, i vostri utenti saranno sempre felici di darvi una mano a migliorare: del resto non hanno ancora digerito la multa presa sull’autobus per colpa di quella maledetta app! ;-)
