@@ -1,6 +1,6 @@
 ---
 title: Web analytics siti pubblici
-description: Una piattaforma di web analytics open source centralizzata per analizzare dati di traffico dei siti della pubblica amministrazione
+description: Una piattaforma di web analytics open source centralizzata per analizzare dati di traffico dei siti della pubblica amministrazione.
 #subtitle: 
 #payoff: 
 logo: /assets/images/projects/web-analytics-cover.jpg
@@ -16,7 +16,7 @@ I siti web della Pubblica Amministrazione italiana sono il punto di accesso priv
 
 Per questo motivo, l’analisi del comportamento degli utenti che visitano i siti pubblici e l’avvio di azioni di ottimizzazione basate sui dati diventa fondamentale per assicurare ai cittadini un’esperienza web ottimale delle informazioni e dei servizi erogati. 
 
-Il [Team Digitale](https://teamdigitale.governo.it/) ha deciso di avviare, in collaborazione con AgID, la sperimentazione di una piattaforma di web analytics centralizzata basata sul progetto *open source* **Piwik** dedicata alle esigenze specifiche delle principali tipologie di siti web della PA italiana. 
+Il [Team Digitale](https://teamdigitale.governo.it/) ha deciso di avviare, in collaborazione con [AgID](http://www.agid.gov.it/), la sperimentazione di una piattaforma di web analytics centralizzata basata sul progetto *open source* **Piwik** dedicata alle esigenze specifiche delle principali tipologie di siti web della PA italiana. 
 
 Il percorso prevede una prima fase di sperimentazione con la collaborazione di un nucleo di amministrazioni pilota rappresentativo delle esigenze di diversi siti web pubblici. 
 
