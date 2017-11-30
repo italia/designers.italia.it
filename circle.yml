@@ -9,7 +9,6 @@ environment:
   NOKOGIRI_USE_SYSTEM_LIBRARIES: true # speeds up installation of html-proofer
 compile:
   override:
-    - sudo sed -i -e 's/\(none\)\(" pattern="HTTPS"\)/read\2/g' /etc/ImageMagick/policy.xml # change default restrictive ImageMagick policy
     - gulp build
 test:
   post:
