@@ -1,6 +1,6 @@
 ---
 title: User Research
-subtitle: Ascoltare i cittadini, riuscire a capire quali sono le cose veramente importanti per loro, e poi metterle in pratica. E’ questo il segreto della buona progettazione.
+subtitle: Ascoltare i cittadini, riuscire a capire quali sono le cose veramente importanti per loro, e poi metterle in pratica. E’ questo il segreto della buona progettazione
 layout: post
 lang: it
 toc: true
@@ -19,7 +19,7 @@ La sezione di user research è dedicata: agli studi e agli strumenti di verifica
 <dt>Novembre 2017</dt>
 <dd>Ricerche qualitative (capitolo della guida).</dd>
 <dt>Dicembre 2017</dt>
-<dd>Aggiornamento guida web analytics (heatmap).</dd>
+<dd>Aggiornamento guida Web analytics (heatmap).</dd>
 <dt>Gennaio 2018</dt>
 <dd>Template piano della ricerca (brick).</dd>
 <dd>Guida alle interviste (brick).</dd>
