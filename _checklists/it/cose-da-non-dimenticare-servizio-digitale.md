@@ -17,7 +17,7 @@ Le amministrazioni pubbliche devono fornire servizi personalizzati e intuitivi i
 
 ![]({{'/assets/images/checklists/service-design-1.jpg' | relative_url }})
 
-Progetta servizi concreti, crea un rapporto di fiducia tra cittadino e pubblica amministrazione. Il design è punto di incontro tra tecnologie e persone: semplifica e sottrai ogni volta che puoi riduci la complessità e concentrati sui bisogni effettivi degli utenti
+Progetta servizi concreti, crea un rapporto di fiducia tra cittadino e Pubblica Amministrazione. Il design è punto di incontro tra tecnologie e persone: semplifica e sottrai ogni volta che puoi, riduci la complessità e concentrati sui bisogni effettivi degli utenti.
 
 ### Coinvolgi i cittadini e comprendi i loro effettivi bisogni
 {:data-checklist="2"}
@@ -59,7 +59,7 @@ Condividi dati, processi, codici, idee, esperienze per favorire la trasparenza e
 ### Cerca di migliorare continuamente
 {:data-checklist="9"}
 
-Progetta partendo da prototipi. Rilascia una prima versione e gradualmente attiva nuove funzionalità derivate dai feedback degli utenti e dalla comprensione di cosa serva veramente
+Progetta partendo da prototipi. Rilascia una prima versione e gradualmente attiva nuove funzionalità derivate dai feedback degli utenti e dalla comprensione di cosa serva veramente.
 
 
 ### Valuta e monitora
