@@ -1,6 +1,6 @@
 ---
 title: Service design
-subtitle: I principi dello human-centered design applicati ai servizi digitali della pubblica amministrazione
+subtitle: I principi dello human-centered design applicati ai servizi digitali della Pubblica Amministrazione
 layout: post
 lang: it
 toc: true
@@ -9,7 +9,7 @@ backgroundColor: '#06c'
 blueBlock: true
 ---
 
-La sezione di **service design** è dedicata a presentare il metodo di lavoro, che si ispira ai principi dello human-centered design, del design thinking e agli studi di human computer  interaction. Nella **guida** è previsto un capitolo dedicato al **design management** che prevede la definizione di strumenti e indicazioni per gestire il processo di progettazione e di miglioramento continuo. La sezione ospita anche informazioni rispetto a due grandi temi: da un lato la **normativa** relativa ai servizi pubblici digitali; dall’altro le indicazioni per rispettare il rilevante tema dell’**accessibilità**.
+La sezione di **service design** è dedicata a presentare il metodo di lavoro, che si ispira ai principi dello *human-centered design*, del *design thinking* e agli studi di *human computer interaction*. Nella **guida** è previsto un capitolo dedicato al **design management** che prevede la definizione di strumenti e indicazioni per gestire il processo di progettazione e di miglioramento continuo. La sezione ospita anche informazioni rispetto a due grandi temi: da un lato la **normativa** relativa ai servizi pubblici digitali; dall’altro le indicazioni per rispettare il rilevante tema dell’**accessibilità**.
 
 La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo corretto tutti i principali argomenti chiave del service design -  e di **bricks**, strumenti e template per affrontare le diverse fasi del processo di service design.
 
