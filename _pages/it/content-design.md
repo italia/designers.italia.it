@@ -16,9 +16,9 @@ Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce 
 <dl class="Roadmap">
 <dt>Luglio 2017</dt>
 <dd>Linguaggio e gestione contenuti (capitolo della guida).</dd>
-<dd>Architettura informazione (capitolo della guida).</dd>
+<dd>Architettura dell'informazione (capitolo della guida).</dd>
 <dt>Settembre 2017</dt>
-<dd>Architettura informazione (checklist).</dd>
+<dd>Architettura dell'informazione (checklist).</dd>
 <dt>Ottobre 2017</dt>
 <dd>Linguaggio (checklist).</dd>
 <dd>App Store Optimization (guida e checklist).</dd>
@@ -26,8 +26,8 @@ Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce 
 <dd>Wireframe kit (navigation tree, wireframe).</dd>
 <dd>Content kit (content list, style guide).</dd>
 <dt>Gennaio 2018</dt>
-<dd>Completamento sezione architettura informazione (guida).</dd>
-<dd>Completamento sezione linguaggio (guida).</dd>
+<dd>Completamento sezione Architettura dell'informazione (guida).</dd>
+<dd>Completamento sezione Linguaggio (guida).</dd>
 </dl>
 
 ### ![]({{'/assets/images/story.svg' | relative_url }}) Guide
