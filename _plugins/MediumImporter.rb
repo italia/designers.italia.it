@@ -10,6 +10,7 @@
 require 'rest_client'
 require 'json'
 require 'rmagick'
+require "open-uri"
 
 class MediumImporter < Jekyll::Generator
   safe true
@@ -80,7 +81,12 @@ class MediumImporter < Jekyll::Generator
       doc.data['medium_url'] = post_url_base + item['uniqueSlug']
       doc.data['medium_tags'] = item['virtuals']['tags']
       doc.data['medium_preview_image_url'] = "https://cdn-images-1.medium.com/max/1600/" + item['virtuals']['previewImage']['imageId']
-      img =  Magick::Image.read(doc.data['medium_preview_image_url']).first
+      open(doc.data['medium_preview_image_url']) { |f|
+        File.open("/tmp/medium_image.jpg","wb") do |file|
+          file.puts f.read
+        end
+      }
+      img =  Magick::Image.read("/tmp/medium_image.jpg").first
       pix = img.scale(1, 1)
       avg_color_hex = pix.to_color(pix.pixel_color(0,0))
       doc.data['medium_preview_image_color_avg'] = avg_color_hex
