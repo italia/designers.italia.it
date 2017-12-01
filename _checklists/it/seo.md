@@ -37,7 +37,7 @@ Pensa agli argomenti interessanti del tuo sito, e fai una lista di quelle che se
 
 ![]({{'/assets/images/checklists/seo-5.png' | relative_url }})
 
-Per fare questa analisi, puoi utilizzare alcuni strumenti gratuiti messi a disposizione dai motori di ricerca (qui ad esempio Google Search Console). Prova a analizzare le pagine, e verifica se e come possono essere migliorate. Allo stesso modo, dovresti chiederti se ci sono pagine che secondo te sono utili, ma che sono poco visitate dagli utenti: a volte il motivo è che sono difficili da trovare.
+Per fare questa analisi, puoi utilizzare alcuni strumenti gratuiti messi a disposizione dai motori di ricerca (qui sopra ad esempio Google Search Console). Prova a analizzare le pagine, e verifica se e come possono essere migliorate. Allo stesso modo, dovresti chiederti se ci sono pagine che secondo te sono utili, ma che sono poco visitate dagli utenti: a volte il motivo è che sono difficili da trovare.
 
 ### La home page è importante, le pagine interne di più
 {:data-checklist="4"}
