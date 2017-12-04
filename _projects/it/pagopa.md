@@ -27,4 +27,4 @@ Abbiamo in programma per il 2017 l’avvio dei seguenti progetti, per i quali vo
 - Integrazioni per le PA che vogliono integrare PagoPA per i pagamenti del trasporto pubblico locale
 - Progetti legati alla notifica dei verbali di contravvenzione
 
-[https://www.behance.net/gallery/53278091/PagoPA-Sistema-Pubblico-di-Pagamento](https://www.behance.net/gallery/53278091/PagoPA-Sistema-Pubblico-di-Pagamento)
+[PagoPA: una nuova esperienza di pagamento](https://www.behance.net/gallery/53278091/PagoPA-Sistema-Pubblico-di-Pagamento)
