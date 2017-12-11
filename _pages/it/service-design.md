@@ -13,11 +13,11 @@ La sezione di **service design** è dedicata a presentare il metodo di lavoro, c
 
 La sezione si arricchisce di **checklist**, per assicurarsi di gestire in modo corretto tutti i principali argomenti chiave del service design -  e di **bricks**, strumenti e template per affrontare le diverse fasi del processo di service design.
 
-## Roadmap
+### Roadmap
 
 <dl class="Roadmap">
 <dt>Novembre 2017</dt>
-<dd>Human centered design (guida).</dd>
+<dd><a href="https://design-italia.readthedocs.io/it/stable/doc/service-design.html">Human centered design</a>(guida).</dd>
 <dt>Dicembre 2017</dt>
 <dd>Service design kit (ecosystem map, user stories, personas, user journey, workshop agenda) (brick).</dd>
 <dt>Gennaio 2018</dt>

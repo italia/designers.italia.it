@@ -17,12 +17,12 @@ La sezione è dedicata alla user **interface design**, con uno spazio particolar
 
 <dl class="Roadmap">
   <dt>Ottobre 2017</dt>
-  <dd>Proposta di revisione del grid system, dei breakpoint e integrazione nello UI Kit</dd>
-  <dd>Pubblicazione elenco dei componenti UI Kit  e Web-Toolkit - relative naming conventions e roadmap pubblica (Guide, Bricks)</dd>
+  <dd>Proposta di revisione del grid system, dei breakpoint e integrazione nello <a href="https://www.behance.net/gallery/53244611/UI-Kit-designers-italia">UI Kit</a></dd>
+  <dd>Pubblicazione elenco dei componenti <a href="https://www.behance.net/gallery/53244611/UI-Kit-designers-italia">UI Kit</a>  e <a href="https://italia.github.io/design-web-toolkit/">Web-Toolkit</a> - relative naming conventions e roadmap pubblica (Guide, Bricks)</dd>
   <dd>Inizio sperimentazione design collaborativo per lo sviluppo dello UI Kit: <a href="https://www.sketchapp.com/docs/libraries/">Sketch libraries</a> (con Sketch v47), <a href="https://kactus.io">kactus.io</a>, Github</dd>
-  <dd>Sviluppo POC toolkit React</dd>
-  <dd>Sviluppo POC toolkit Bootstrap 4</dd>
-  <dd>Sviluppo POC toolkit Angular</dd>
+  <dd>Sviluppo POC toolkit <a href="https://reactjs.org/">React</a></dd>
+  <dd>Sviluppo POC toolkit <a href="https://v4-alpha.getbootstrap.com/">Bootstrap 4</a></dd>
+  <dd>Sviluppo POC toolkit <a href="https://angular.io/">Angular</a></dd>
   <dt>Novembre 2017</dt>
   <dd>Inizio sviluppo toolkit React</dd>
   <dd>Primi componenti UI Kit sviluppati in modo collaborativo</dd>

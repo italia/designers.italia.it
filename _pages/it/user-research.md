@@ -11,13 +11,13 @@ blueBlock: true
 
 La sezione di user research è dedicata: agli studi e agli strumenti di verifica dell’**usabilità**; all’utilizzo delle **analisi qualitative** - ad esempio le interviste e i focus group - per capire quali utenti abbiamo di fronte; e alle analisi quantitative - i **web analytics** - strumento di comprensione quotidiana dei comportamenti degli utenti e punto di partenza per il miglioramento continuo dei servizi digitali.
 
-## Roadmap
+### Roadmap
 
 <dl class="Roadmap">
 <dt>Luglio 2017</dt>
-<dd>Avvio della sperimentazione di un modello di web analytics centralizzato per la PA. </dd>
+<dd>Avvio della sperimentazione di un modello di <a href="https://design-italia.readthedocs.io/it/stable/doc/user-research/web-analytics.html">web analytics</a> centralizzato per la PA. </dd>
 <dt>Novembre 2017</dt>
-<dd>Ricerche qualitative (capitolo della guida).</dd>
+<dd><a href="https://design-italia.readthedocs.io/it/stable/doc/user-research/ricerche-qualitative.html">Ricerche qualitative</a>(capitolo della guida).</dd>
 <dt>Dicembre 2017</dt>
 <dd>Aggiornamento guida web analytics (heatmap).</dd>
 <dt>Gennaio 2018</dt>
