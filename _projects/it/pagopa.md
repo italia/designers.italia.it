@@ -16,7 +16,7 @@ Una piattaforma che permette ad ogni cittadino di scegliere come e con chi pagar
 
 Il sistema si sta evolvendo in una ottica di mercato integrando canali di pagamento innovativi ed evolvendo l’interfaccia utente e le funzionalità del sistema verso gli standard consolidati sul mercato.
 
-In particolare l’evoluzione più importante riguarda la UI (User Interface) e la UX (User Experience) che entro la fine dell’anno risulteranno pesantemente rinnovate e molto più usabili per il cttadino.
+In particolare l’evoluzione più importante riguarda la UI (User Interface) e la UX (User Experience) che entro la fine dell’anno risulteranno pesantemente rinnovate e molto più usabili per il cittadino.
 
 ### Roadmap
 
@@ -27,4 +27,4 @@ Abbiamo in programma per il 2017 l’avvio dei seguenti progetti, per i quali vo
 - Integrazioni per le PA che vogliono integrare PagoPA per i pagamenti del trasporto pubblico locale
 - Progetti legati alla notifica dei verbali di contravvenzione
 
-[https://www.behance.net/gallery/53278091/PagoPA-Sistema-Pubblico-di-Pagamento](https://www.behance.net/gallery/53278091/PagoPA-Sistema-Pubblico-di-Pagamento)
+[PagoPA: una nuova esperienza di pagamento](https://www.behance.net/gallery/53278091/PagoPA-Sistema-Pubblico-di-Pagamento)
