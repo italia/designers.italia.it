@@ -122,7 +122,7 @@ class MediumImporter < Jekyll::Generator
         site: site,
         collection: jekyll_coll_all_tags
       })
-      tag.data['title'] = item.capitalize
+      tag.data['title'] = item.downcase
       tag.data['link'] = post_url_base + "tagged/" + item
       jekyll_coll_all_tags.docs << tag
     end
@@ -135,7 +135,7 @@ class MediumImporter < Jekyll::Generator
           site: site,
           collection: jekyll_coll_head_tags
         })
-        tag.data['title'] = item['title']
+        tag.data['title'] = item['title'].split(" ").map(&:capitalize).join(" ")
         tag.data['link'] = item['url']
         jekyll_coll_head_tags.docs << tag
       end
