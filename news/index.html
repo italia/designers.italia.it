@@ -62,7 +62,7 @@ permalink: '/blog/'
 
     </div>
 
-    {% capture pills %} {% include pills.html items = site.medium_tags small = true %} {% endcapture %}
+    {% capture pills %} {% include pills.html items = site.medium_all_tags small = true %} {% endcapture %}
 
     {% include sideblock.html title = t.news_nav_title content = pills %}
 

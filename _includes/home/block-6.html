@@ -7,7 +7,8 @@
         <h2 class="u-text-r-xxl u-padding-bottom-s">{{ t.home_blog_title }}</h2>
         <p  class="u-text-r-xl u-padding-bottom-m">{{ t.home_blog_subtitle }}</p>
         <ul class="u-padding-r-bottom u-padding-r-top u-text-r-m">
-          {% for tag in site.medium_tags limit: 8 %}
+          {% for tag in site.medium_head_tags limit: 8 %}
+          {% assign ext_protocol =  tag.link | slice: 0, 4 %}
           <li class="u-inlineBlock u-border-all-xxs u-background-teal-65 u-padding-top-xxs u-text-r-xxs u-textWeight-600
           u-padding-bottom-xxs u-margin-bottom-xs u-padding-r-right u-padding-r-left u-margin-r-right">
             <a href="{{ tag.link }}" {% if ext_protocol == 'http' %}target="_blank"{% endif %} class="u-color-white u-linkClean">{{ tag.title }}</a>

@@ -38,9 +38,12 @@ class MediumImporter < Jekyll::Generator
     posts_eng = feed_json_eng['payload']['references']['Post'].values
     users = feed_json['payload']['references']['User']
     users_eng = feed_json_eng['payload']['references']['User']
+    head_tags = feed_json['payload']['collection']['navItems']
 
     puts "Total italian posts fetched: " + posts.size.to_s
     puts "Total english posts fetched: " + posts_eng.size.to_s
+    puts "Total users fetched: " + users.size.to_s
+    puts "Total tags fetched: " + head_tags.size.to_s
 
     # Let's merge ita and eng posts and users
     posts.push(*posts_eng)
@@ -56,11 +59,15 @@ class MediumImporter < Jekyll::Generator
     jekyll_coll = Jekyll::Collection.new(site, 'medium_feed')
     site.collections['medium_feed'] = jekyll_coll
 
-    # Create a new on-the-fly Jekyll collection called "medium_tags"
-    jekyll_coll_tags = Jekyll::Collection.new(site, 'medium_tags')
-    site.collections['medium_tags'] = jekyll_coll_tags
+    # Create a new on-the-fly Jekyll collection called "medium_all_tags"
+    jekyll_coll_all_tags = Jekyll::Collection.new(site, 'medium_all_tags')
+    site.collections['medium_all_tags'] = jekyll_coll_all_tags
 
-    tags = []
+    all_tags = []
+
+    # Create a new on-the-fly Jekyll collection called "medium_head_tags"
+    jekyll_coll_head_tags = Jekyll::Collection.new(site, 'medium_head_tags')
+    site.collections['medium_head_tags'] = jekyll_coll_head_tags
 
     # Add fake virtual documents to the collection
     posts.each do |item|
@@ -100,24 +107,38 @@ class MediumImporter < Jekyll::Generator
       if item['virtuals']['tags'] != nil
         item['virtuals']['tags'].each do |x|
           doc.data['medium_tagsarray'].push({'title' => x['slug'], 'link' => post_url_base + "tagged/" + x['slug']})
-          tags.push(x['slug'])
+          all_tags.push(x['slug'])
         end
       end
       jekyll_coll.docs << doc
     end
 
-    tags = tags.uniq
+    all_tags = all_tags.uniq
 
-    tags.each do |item|
-      path = "_tags/" + item
+    all_tags.each do |item|
+      path = "_all_tags/" + item
       path = site.in_source_dir(path)
       tag = Jekyll::Document.new(path, {
         site: site,
-        collection: jekyll_coll_tags
+        collection: jekyll_coll_all_tags
       })
       tag.data['title'] = item.capitalize
       tag.data['link'] = post_url_base + "tagged/" + item
-      jekyll_coll_tags.docs << tag
+      jekyll_coll_all_tags.docs << tag
+    end
+
+    head_tags.each do |item|
+      if item['type'] == 1
+        path = "_head_tags/" + item['tagSlug']
+        path = site.in_source_dir(path)
+        tag = Jekyll::Document.new(path, {
+          site: site,
+          collection: jekyll_coll_head_tags
+        })
+        tag.data['title'] = item['title']
+        tag.data['link'] = item['url']
+        jekyll_coll_head_tags.docs << tag
+      end
     end
   end
 end
