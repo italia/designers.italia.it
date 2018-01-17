@@ -126,7 +126,7 @@ module Jekyll
         doc.data['medium_tags'] = []
         if item['virtuals']['tags'] != nil
           item['virtuals']['tags'].each do |x|
-            doc.data['medium_tagsarray'].push({'title' => x['slug'], 'link' => post_url_base + "tagged/" + x['slug']})
+            doc.data['medium_tagsarray'].push({'title' => x['slug'], 'link' => blog_tags_directory + '/' + x['slug']})
             doc.data['medium_tags'].push(x['slug'])
             all_tags.push(x['slug'])
           end
@@ -144,7 +144,7 @@ module Jekyll
           collection: jekyll_coll_all_tags
         })
         tag.data['title'] = item.downcase
-        tag.data['link'] = blog_tags_directory + '/' + item 
+        tag.data['link'] = blog_tags_directory + '/' + item
         jekyll_coll_all_tags.docs << tag
 
         # create a tag-list page
