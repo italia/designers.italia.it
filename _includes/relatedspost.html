@@ -1,0 +1,28 @@
+{% assign pagetags = include.pagetags %}
+{% assign selecteds = "|" | split: '|' %}
+
+{% for tag in pagetags %}
+	{% assign posts = site.medium_feed |  where_exp:"item", "item.medium_tags contains tag" | sort: "medium_firstpublished_at" | reverse %}
+	{% if posts.size > 0 %}
+		{% for post in posts %}
+			{% assign selecteds = selecteds | push: post %}
+		{% endfor %}
+	{% endif %}
+
+{% endfor %}
+
+{% if selecteds.size > 0 %}
+	<section class="u-background-white Relateds u-padding-bottom-xl">
+		  <h2 class="u-text-h3 u-layout-centerLeft">Post dal blog </h2>
+		  <ul class="Grid Grid--withGutter">
+		     {% for post in selecteds %}
+		      <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
+		          <a href="{{post.medium_url}}" class="Leads-link u-color-black" target="_blank">
+		            <span>{{post.medium_title}}</span>
+		          </a>
+		      </li>
+		      {% endfor %}
+		    
+		  </ul>	
+	</section>
+{% endif %}
