@@ -245,8 +245,8 @@
     font-weight: 700;
     position: relative;
 
-    &:after {
-      content: '';
+        &:after {
+          content: '';
       background-color: #5a6772;
       height: 2rem;
       width: 2rem;
@@ -255,8 +255,8 @@
       left: -3rem;
       position: absolute;
       border-radius: 2rem;
-    }
-  }
+      }
+          }
 
   dd {
     margin-top: 1rem;
@@ -264,16 +264,94 @@
     position: relative;
     font-weight: 300;
 
-    &:after {
-      content: '';
+          &:after {
+        content: '';
       background-color: #ddd;
       height: 1.2rem;
       width: 1.2rem;
       z-index: 101;
       top: 1rem;
       left: -2.5rem;
-      position: absolute;
+        position: absolute;
       border-radius: 2rem;
+    }
+  }
+}
+
+$light-grey: #e6e9f0;
+
+.roadmap-list {
+  position: relative;
+
+  dt {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    position: relative;
+
+    &:not(:first-of-type) {
+      border-top: 1px solid $light-grey;
+    }
+  }
+
+  dd {
+    position: relative;
+    font-weight: 300;
+
+    ul li.activity-list {
+      margin: 1.6rem 0;
+      &:not(:first-of-type) {
+        border-top: 1px solid $light-grey;
+        padding-top: 1.6rem;
+      }
+    }
+  }
+
+  .Accordion {
+    .Accordion-header {
+      color: #06C;
+      .Accordion-link {
+        &:before {
+          content: 'dettagli';
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        &:after {
+          content: '';
+          display: inline-block;
+          margin-left: 1rem;
+          width: 1rem;
+          height: 1rem;
+          background: transparent url(../assets/icons/arrow-right.svg) right center no-repeat;
+          background-size: 1rem 1rem;
+          transition: .15s ease-in-out;
+        }
+      }
+      &[aria-expanded=true] {
+        .Accordion-link {
+          &:before {
+            content: 'chiudi';
+          }
+          &:after {
+            transform: rotate(-90deg)
+          }
+        }
+      }
+    }
+    .Accordion-panel {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        height: calc(100% - 10px);
+        margin: 5px 0;
+        width: 2px;
+        background-color: $light-grey;
+      }
+      color: #586e80;
     }
   }
 }

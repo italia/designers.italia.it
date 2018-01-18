@@ -1,0 +1,35 @@
+{% assign menu_items = include.menu_items[active_lang]%}
+
+<dl class="roadmap-list u-margin-bottom-xl">
+  {% for month in site.data.roadmap %}
+  <dt>{{ month[0] }}</dt>
+  <dd class="u-margin-left-m">
+    <ul>
+      {% for activity in month[1] %}
+      <li class="activity-list">
+        <h4>{{ activity.title }}</h4>
+        <p>{{ activity.subtitle }}</p>
+        <ul>
+          {% for tag in activity.tags %}
+          <li class="u-inlineBlock u-padding-r-right u-margin-r-top">
+            <a href="#" class="Pill Pill--xxs u-background-50 u-color-white u-textClean u-textWeight-600 u-padding-bottom-xs">
+              {{ tag }}
+              <span class="Dot u-background-white u-margin-left-s u-alignMiddle"></span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="Accordion fr-accordion js-fr-accordion u-margin-r-top" id="accordion-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+          <p class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+            <span class="Accordion-link"></span>
+          </p>
+          <div id="accordion-panel-{{ forloop.parentloop.index }}-{{ forloop.index }}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel u-margin-top-xs">
+            <p class="u-layout-prose u-color-grey-70 u-padding-left-m">{{ activity.description }}</p>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </dd>
+  {% endfor %}
+</dl>
