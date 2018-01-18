@@ -125,5 +125,11 @@ layout: default
     {% include relateds.html %}
 
   {% endif %}
+
+  {% if page.tags != nil %}
+    {% include relatedsguideline.html pagetags=page.tags %}
+
+  {% endif %}
+
   
 </article>

@@ -1,0 +1,30 @@
+{% assign pagetags = include.pagetags %}
+{% assign selecteds = "|" | split: '|' %}
+
+{% for section in site.data.guidelines %}
+    {% for item in section[1].items %}
+      {% for tag in item[1].tags %}
+        {% if pagetags contains tag %}
+            {% assign selecteds = selecteds | push: item %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+{% endfor %}
+
+<section class="u-background-white Relateds u-padding-bottom-xl">
+{% if selecteds.size > 0 %}
+  <h2 class="u-text-h3 u-layout-centerLeft">Linee guida correlate </h2>
+  <ul class="Grid Grid--withGutter">
+     {% for item in selecteds %}
+      <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
+          <a href="{{item[1].url}}" class="Leads-link u-color-black" target="_blank">
+            <span>{{item[1].desc | default: item[0]}}</span>
+          </a>
+      </li>
+      {% endfor %}
+    
+  </ul> 
+
+
+{% endif %}
+</section>

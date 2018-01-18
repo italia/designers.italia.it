@@ -5,6 +5,9 @@ layout: download
 subtitle: Modello di report/dashboard per Google Analytics e Piwik
 backgroundImage : '/assets/images/posts/cover-personas.jpg'
 backgroundColor: '#439af1'
+tags: 
+  - analytics
+  - usability
 ---
 
 Questo starter kit ha l’obiettivo di fornire - a chi si occupa a vario titolo del sito web di una pubblica amministrazione - indicazioni operative su come produrre e distribuire un report basico di web analytics, con la finalità di condividerne i dati all’interno di un team di lavoro o con altri stakeholder. Il kit prevede:
