@@ -1,0 +1,30 @@
+{% assign pagetags = include.pagetags %}
+{% assign selecteds = "|" | split: '|' %}
+{% assign selectedsUniq = "|" | split: '|' %}
+
+{% for tag in pagetags %}
+	{% assign relpages = site.kits | where_exp: "p", "p.tags contains tag "%}
+	{% for item in relpages %}
+		{% unless selectedsUniq contains item.path or page.path==item.path %}
+			{% assign selecteds = selecteds | push: item %}
+			{% assign selectedsUniq = selectedsUniq | push: item.path %}
+		{% endunless %}
+	{% endfor %}
+{% endfor %}
+
+
+{% if selecteds.size > 0 %}
+	<section class="u-background-white Relateds u-padding-bottom-xl">
+		  <h2 class="u-text-h3 u-layout-centerLeft">I kits correlati </h2>
+		  <ul class="Grid Grid--withGutter">
+		     {% for item in selecteds %}
+		      <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
+		          <a href="{{item.url | relative_url}}" class="Leads-link u-color-black" >
+		            <span>{{item.title}}</span>
+		          </a>
+		      </li>
+		      {% endfor %}
+		    
+		  </ul>	
+	</section>
+{% endif %}

@@ -9,6 +9,7 @@ download_file :
 - file : 'assets/downloads/KITpersonas_UserResearch.pdf'
   caption : 'Template Personas'
   type : 'internal'
+
 ---
 
 Le personas sono profili di ipotetici utenti del servizio che si sta ideando.
