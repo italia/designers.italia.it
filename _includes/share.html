@@ -5,7 +5,7 @@
       {% assign shareurl = page.url | absolute_url | escape %}
       <li class="u-inlineBlock u-padding-right-xs u-padding-left-xs">
         <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" title=""
-          class="u-padding-all-xxs u-background-50 u-color-white u-inlineBlock u-linkClean u-borderRadius-circle u-alignMiddle"
+          class="u-padding-all-xs u-background-50 u-color-white u-inlineBlock u-linkClean u-borderRadius-circle u-alignMiddle"
           ><span class="Icon Icon-{{ social[0] }}"></span>
           <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span>
         </a>
