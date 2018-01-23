@@ -106,6 +106,7 @@ module Jekyll
         doc.data['meta_description'] = item['content']['metaDescription']
         doc.data['medium_url'] = post_url_base + item['uniqueSlug']
         #doc.data['medium_tags'] = item['virtuals']['tags']
+        doc.data['medium_preview_image_id'] = item['virtuals']['previewImage']['imageId']
         doc.data['medium_preview_image_url'] = "https://cdn-images-1.medium.com/max/1600/" + item['virtuals']['previewImage']['imageId']
         open(doc.data['medium_preview_image_url']) { |f|
           File.open("/tmp/medium_image.jpg","wb") do |file|

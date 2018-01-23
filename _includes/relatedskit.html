@@ -14,15 +14,24 @@
 
 
 {% if selecteds.size > 0 %}
-	<section class="u-background-white Relateds u-padding-bottom-xl">
-		  <h2 class="u-text-h3 u-layout-centerLeft">I kits correlati </h2>
-		  <ul class="Grid Grid--withGutter">
-		     {% for item in selecteds %}
-		      <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
-		          <a href="{{item.url | relative_url}}" class="Leads-link u-color-black" >
-		            <span>{{item.title}}</span>
-		          </a>
-		      </li>
+	<section class="u-background-grey-10 u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom">
+		  <h4 class="u-text-h4 u-textCenter u-color-50">KIT</h4>
+		  <h1 class="u-text-h3 u-textCenter u-color-50 u-padding-bottom-xxl">continua ad esplorare le risorse del design system</h4>
+		  <div class="Grid Grid--withGutter Grid--equalHeight Grid--fill">
+		     {% for item in selecteds | limit: 3 %}
+		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 ">
+		      	<article class="u-background-white u-sizeFull u-padding-all-xl u-border-bottom-m u-color-teal-50">
+		      	  <header >
+		      	  <h6 class="u-text-h6 u-color-50">KIT</h6>
+		          <h1 class="u-text-h4">
+			          <a href="{{item.url | relative_url}}"  class="u-color-50 u-linkClean" >
+			            {{item.title}}
+			          </a>
+				   </h1>
+				  </header>
+				  <p class="u-text-r-xs u-color-grey-40">{{item.subtitle}}</p>
+		      </article>
+		  	  </div>
 		      {% endfor %}
 		    
 		  </ul>	
