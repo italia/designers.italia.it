@@ -45,6 +45,14 @@
   padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
+
+.Header-logo svg {
+  width: 4.8rem;
+  @media screen and (min-width: 768px) {
+      width: 9.6rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .Header-logo img {
     height: 9rem;
@@ -306,6 +314,11 @@ $light-grey: #e6e9f0;
       &:not(:first-of-type) {
         border-top: 1px solid $light-grey;
         padding-top: 1.6rem;
+      }
+      ul li a {
+        padding: 0px 1rem .2rem !important;
+        line-height: 2.4rem;
+        font-size: 1.2rem;
       }
     }
   }
