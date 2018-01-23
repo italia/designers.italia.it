@@ -11,19 +11,23 @@
   {% endfor %}
 {% endfor %}
 
-<section class="u-background-white Relateds u-padding-bottom-xl">
+<section class="Relateds u-padding-top-xxl">
 {% if selecteds.size > 0 %}
-  <h2 class="u-text-h3 u-layout-centerLeft">Linee guida correlate </h2>
-  <ul class="Grid Grid--withGutter">
+  <div>
+    <div class="u-padding-all-xl">
+            <span class="u-text-r-xxl Icon Icon-file u-color-50"></span>
+    </div>
      {% for item in selecteds %}
-      <li class="Grid-cell u-sizeFull u-md-size1of4 u-lg-size1of4">
-          <a href="{{item[1].url}}" class="Leads-link u-color-black" target="_blank">
-            <span>{{item[1].desc | default: item[0]}}</span>
-          </a>
-      </li>
+      <article class="u-padding-bottom-l">
+          <h1 class="u-text-h4 u-color-50">Leggi la linea guida: 
+            <a href="{{item[1].url}}" class="u-color-50" target="_blank">
+            {{item[1].desc | default: item[0]}}
+            </a>
+          </h1>
+      </article>
       {% endfor %}
     
-  </ul> 
+  </div> 
 
 
 {% endif %}

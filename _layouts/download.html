@@ -112,7 +112,9 @@ layout: default
         <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
           style="max-width: 15em" />
         <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
-          {% include share.html %}
+          {% if page.tags != nil %}
+            {% include relatedsguideline.html pagetags=page.tags %}
+          {% endif %}
         </div>
         {% endif %}
 
@@ -127,7 +129,6 @@ layout: default
   {% endif %}
 
   {% if page.tags != nil %}
-    {% include relatedsguideline.html pagetags=page.tags %}
     {% include relatedspost.html pagetags=page.tags %}
     {% include relatedskit.html pagetags=page.tags %}
   {% endif %}
