@@ -1,11 +1,14 @@
-<p class="u-margin-r-bottom u-textWeight-300">{{ t.share_msg }} {{ t.on_ }}</p>
-<ul class="u-textCenter u-layoutCenter">
+{% assign backgroundColor = include.backgroundColor | default:'u-background-50' %}
+{% assign textColor = include.textColor | default:'' %}
+{% assign layout = include.layout | default:'u-textCenter u-layoutCenter' %}
+<p class="u-margin-bottom-xs u-padding-left-xs u-textWeight-300 {{textColor}}">{{ t.share_msg }} {{ t.on_ }}</p>
+<ul class="">
   {% for social in site.data.social %}
     {% if social[1].sharelink %}
       {% assign shareurl = page.url | absolute_url | escape %}
       <li class="u-inlineBlock u-padding-right-xs u-padding-left-xs">
         <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" title=""
-          class="u-padding-all-xs u-background-50 u-color-white u-inlineBlock u-linkClean u-borderRadius-circle u-alignMiddle"
+          class="u-padding-all-xs {{backgroundColor}} u-color-white u-inlineBlock u-linkClean u-borderRadius-circle u-alignMiddle"
           ><span class="Icon Icon-{{ social[0] }}"></span>
           <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span>
         </a>
