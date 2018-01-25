@@ -3,11 +3,11 @@
 <dl class="roadmap-list u-margin-bottom-xl">
   {% for month in site.data.roadmap %}
   <dt>{{ month[0] }}</dt>
-  <dd class="u-margin-left-s">
+  <dd class="u-margin-left-l">
     <ul>
       {% for activity in month[1] %}
       <li class="activity-list">
-        <h4>{{ activity.title }}</h4>
+        <h3 {% unless activity.status == 'todo' %}class="activity-done"{% endunless %}>{{ activity.title }}</h3>
         <div class="u-md-flex u-lg-flex">
           <div class="u-md-size1of3 u-lg-size1of3 u-flexOrderLast">
             <ul>
@@ -19,7 +19,7 @@
             </ul>
           </div>
           <div class="u-sizeFill u-flexOrderFirst">
-            <p>{{ activity.subtitle }}</p>
+            <p class="u-margin-right-l">{{ activity.subtitle }}</p>
           </div>
         </div>
         {% if activity.description %}

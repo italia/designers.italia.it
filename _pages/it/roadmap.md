@@ -1,15 +1,12 @@
 ---
 title: Roadmap
-subtitle: Ut enim ad minim veniam, quis nostrud exercitation.
+subtitle: Gli obiettivi raggiunti e quelli in cantiere su Designers Italia.
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/pages/michal-parzuchowski-224092.jpg'
+backgroundImage : '/assets/images/pages/headroom-roadmap.jpg'
 backgroundColor: 'rgba(90, 178, 255, .4)'
 blueBlock: true
 nodate: true
 ---
-
-Morbi fringilla convallis sapien, id pulvinar odio volutpat. Ambitioni dedisse scripsisse iudicaretur. Quisque placerat facilisis egestas cillum dolore. Plura mihi bona sunt, inclinet, amari petere vellent.
-
 {% include roadmap.html %}
