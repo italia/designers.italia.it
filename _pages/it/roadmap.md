@@ -5,7 +5,7 @@ layout: post
 lang: it
 toc: true
 backgroundImage : '/assets/images/pages/headroom-roadmap.jpg'
-backgroundColor: 'rgba(90, 178, 255, .4)'
+backgroundColor: 'rgba(90, 178, 255, .5)'
 blueBlock: true
 nodate: true
 ---
