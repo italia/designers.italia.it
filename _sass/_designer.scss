@@ -227,6 +227,16 @@
   }
 }
 
+/** Social
+====================== */
+.Social li a {
+  line-height: 0;
+  font-size: 2.4rem;
+  @media screen and (min-width: 992px) {
+    font-size: 2rem;
+  }
+}
+
 /** Roadmap
 ====================== */
 .Roadmap {
@@ -287,7 +297,6 @@
 }
 
 $light-grey: #e6e9f0;
-
 .roadmap-list {
   position: relative;
 
@@ -319,6 +328,14 @@ $light-grey: #e6e9f0;
         padding: 0px 1rem .2rem !important;
         line-height: 2.4rem;
         font-size: 1.2rem;
+      }
+      .activity-done::before {
+        font-family: ita!important;
+        line-height: 1.4;
+        content: "\2713";
+        color: green;
+        position: absolute;
+        margin-left: -2.4rem;
       }
     }
   }
@@ -436,7 +453,7 @@ $light-grey: #e6e9f0;
   }
 }
 
-/*  MEGABLOCK 
+/*  MEGABLOCK
 ======================*/
 .Megablockgrid {
   &-text{
@@ -448,7 +465,7 @@ $light-grey: #e6e9f0;
     }
   }
 }
-/* USEFUL CLASSES 
+/* USEFUL CLASSES
 =================== */
 
 @media screen and (min-width: 991px) {

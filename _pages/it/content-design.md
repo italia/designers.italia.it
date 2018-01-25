@@ -5,7 +5,7 @@ layout: post
 lang: it
 toc: true
 backgroundImage : '/assets/images/pages/david-solce-184827.jpg'
-backgroundColor: '#5AB2FF'
+backgroundColor: 'rgba(90, 178, 255, .5)'
 blueBlock: true
 ---
 

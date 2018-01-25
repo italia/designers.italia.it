@@ -16,7 +16,7 @@ layout: default
 <article itemscope itemtype="http://schema.org/BlogPosting" class="u-background-white u-nbfc u-padding-top-xxl u-xs-padding-top-none">
 
 <!-- ==== blue block -->
-  <div class="u-background-white u-padding-top-xxl u-margin-r-top u-xs-padding-top-none  u-md-flex u-lg-flex u-flexJustifyCenter" aria-hidden="true"
+  <div class="u-background-white u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter" aria-hidden="true"
       style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});
       background-blend-mode: multiply; background-size: cover; min-height: 300px">
 
@@ -36,10 +36,8 @@ layout: default
               </div>
             {% endif %}
 
-          {% unless page.nodata %}
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">
             {{ page.date | date: "%-d %b %Y" }}</time>
-          {% endunless %}
 
             <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">
               {{ page.title }}</h1>
@@ -82,38 +80,38 @@ layout: default
 
 <!--/ === blue block-->
 <!--/ === blue block-->
+  {% if download_file != nil %}
+  <div class="Download u-padding-bottom-xxl">
+    <div class="Download-wrapper">
+      <a  class="download-button--float Button Button--default Button--shadow u-text-r-xs u-padding-all-m" href="{{download_file[0].file | relative_url}}"
+      title="{{download_file[0].caption}}">{{t.download_please}} <span class="Download-caption">{{download_file[0].caption}}</span></a>
+    </div>
+  </div>
+  {% endif %}
 
 
   <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
     <div class="Grid Grid--alignCenter">
       <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
 
-        <div class="Prose u-layout-prose u-layoutCenter u-padding-top-l u-color-grey-50">
-          <p class="u-textWeight-600 u-text-r-xs u-color-teal-60 u-textUppercase">Il design kit > {{page.title}}</p>
+        <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-color-grey-50">
           {{ content }}
-
-          {% if page.download_file %}
-            <div class="u-margin-bottom-xxl u-margin-top-xxl u-padding-bottom-xxl u-padding-top-xxl">
-              {% for download in page.download_file %}
-                {% assign downloadUrl = download.file | relative_url %}
-                {% unless download.type=='internal' %}
-                  {% assign downloadUrl = download.file %}
-                {% endunless %}
-                <div class="u-text-r-m u-margin-top-m u-textWeight-600">
-                <span class="u-text-r-m Icon Icon-arrow-right u-color-teal-60"></span>&nbsp;
-                <a href="{{downloadUrl}}" class="">{{download.caption}}</a>
-                </div>
-              {% endfor %}
-            </div>
-          {% endif %}
-
         </div>
 
+          {% if download_file != nil %}
+          <div class="Download u-margin-bottom-xl u-margin-top-xl ">
+            <div class="Download-wrapper">
+              <a  class="Button Button--default Button--shadow u-text-r-xs u-padding-all-m" href="{{download_file[0].file | relative_url}}"
+              title="{{download_file[0].caption}}">{{t.download_please}} <span class="Download-caption">{{download_file[0].caption}}</span></a>
+            </div>
+          </div>
+          {% endif %}
 
-        
+
         {% if page.related_tags == nil %}
-        <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom" />
-        <div class="u-margin-bottom-xxl">
+        <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
+          style="max-width: 15em" />
+        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
           {% if page.tags != nil %}
             {% include relatedsguideline.html pagetags=page.tags %}
           {% endif %}
@@ -137,5 +135,5 @@ layout: default
 
 
 
-  
+
 </article>
