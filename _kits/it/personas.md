@@ -5,34 +5,49 @@ layout: download
 subtitle:
 backgroundImage : '/assets/images/posts/cover-personas.jpg'
 backgroundColor: '#439af1'
+nodata: true
+kitcategory: capire
+tags:
+- human-centered-design
+- usability
+
 download_file :
 - file : 'assets/downloads/KITpersonas_UserResearch.pdf'
-  caption : 'Template Personas'
+  caption : 'Strumenti per workhop'
+  type : 'internal'
+- file : 'assets/downloads/KITpersonas_UserResearch.pdf'
+  caption : 'Modello di presentazione'
   type : 'internal'
 
 ---
+{:.u-color-50}
+###### CHE COS’È
 
-Le personas sono profili di ipotetici utenti del servizio che si sta ideando.
+{:.u-color-50 .u-margin-bottom-xxl}
+#### Le personas sono dei profili inventati che descrivono le diverse tipologie di utenti di un servizio, raccontando le loro motivazioni, aspettative, bisogni e attitudini.
 
-Pur essendo un personaggio fittizio, ad ogni persona è associata un’identità precisa, dettagliata e molto realistica, basata e costruita a partire dai dati raccolti nelle fasi di ricerca qualitativa sull’utente.
+<img src="http://placehold.it/800x400&text=SLIDER">
+ 
 
-Passaggio necessario e fondante per creare le personas è difatti la parte di elaborazione dei dati: in una prima fase si dovranno estrarre i dati più significativi relativamente alle caratteristiche, alle esigenze, ai problemi, alle aspirazioni degli utenti; a seguire bisognerà raggrupparle per affinità.
+{:.u-color-50 .u-margin-top-xxl}
+###### COME SI UTILIZZA
+Le personas nascono sulla base dei risultati di un’attività di **ricerca e osservazione sul campo**: raggruppando i profili degli utenti intervistati che presentano simili caratteristiche e attitudini nei confronti di un determinato servizio o ambito di indagine. Una volta identificati queste similitudini, ciascun raggruppamento viene descritto attraverso un singolo **personaggio esemplificativo**, combinando nella descrizione dati socio-demografici (età, genere, professione,..) e attitudinali (necessità, aspettative, problemi,..) condivisi da tutte le persone appartenenti
+a quel gruppo.
 
-Così facendo emergeranno dei modelli di comportamenti tipici e ricorrenti, che permetteranno la creazione di una serie di gruppi di utenti tipo del servizio che si sta progettando. Ogni gruppo sarà rappresentato da una persona di cui assumerà gli attributi: dalle caratteristiche socio-demografiche, ai bisogni, agli obiettivi, alle abitudini e allo stile di vita. Ogni persona sarà dunque un “archetipo” del gruppo che rappresenta, per cui, attraverso la definizione di un numero gestibile di personas, il progettista potrà coprire le esigenze della maggior parte degli utenti del servizio.
+  
 
-Le personas, in una progettazione centrata sull’utente, sono uno strumento utile a tenere costantemente in considerazione il target per cui si sta progettando e necessario per mettersi nei suoi panni. In altre parole: comprendere i bisogni e i comportamenti delle persone che utilizzeranno il servizio servirà ad individuare meglio i requisiti (e le criticità) del servizio stesso.
 
-### Template
+{:.u-color-50 .u-margin-top-xxl}
+###### A COSA SERVE
+Le personas aiutano a progettare partendo dalle necessità e caratteristiche di specifici gruppi di utenti, intendendo come utenti sia i destinatari finali del servizio (i cittadini) che gli utilizzatori interni del servizio (gli operatori). Possono essere utilizzati per **raccontare** i risultati di una ricerca, fornendo una rappresentazione dei diversi comportamenti rilevati sul campo, e per **ideare** nuove funzionalità e servizi, lasciandosi ispirare e mettendosi nei panni dei diversi tipi di cittadini o operatori coinvolti.
 
-Il Template fornito potrà essere utilizzato così com’è per la costruzione delle Personas, fungendo inoltre da riferimento da arricchire in base al progetto.
+  
 
-Nel template sono previste una serie di aree dedicate a delineare la nostra personas:
 
-- **Foto/Ritratto**: foto o disegno rappresentativo.
-- **Anagrafica**: qui si indicheranno anzitutto nome e archetipo che la nostra personas rappresenta (e/o la tipologia di utenza). A seguire i dati anagrafici (età, sesso, città, formazione, occupazione).
-- **Bio/Personalità**: prevede una breve descrizione della personalità dell’utente, in termini di tratti caratteristici, attitudini e stile di vita.
-- **Bisogni**: in quest’area andrà indicato in maniera puntuale di cosa ha bisogno l’utente quando si interfaccia con il servizio.
-- **Frustrazioni**: in quest’area andranno indicate la maggiori problematiche, gli ostacoli, le difficoltà che l’utente incontra quando si interfaccia con il servizio.
-- **Obiettivi**: bisognerà indicare cosa sta cercando di ottenere l’utente attraverso il nostro servizio.
-- **Familiarità con le tecnologie**: si indicherà che tipo di device utilizza mediamente e con quale competenza. Gli strumenti indicati variano in base al progetto e possono essere sostituiti dalle “Skills”, cioè abilità riferite al dominio di riferimento del progetto.
-- **Motto**: si tratta di una frase esemplificativa del gruppo di utenti, spesso viene direttamente ripresa dai dati raccolti in fase di ricerca.
+{:.u-color-50 .u-margin-top-xxl}
+###### COSA CONTIENE QUESTO KIT
+Il kit contiene i materiali per identificare e delineare le personas tramite workshop e un modello per descriverle e raccontarle all'interno di presentazioni
+e documentazioni di progetto.
+
+
+

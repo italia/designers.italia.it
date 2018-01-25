@@ -1,34 +1,48 @@
 {% assign pagetags = include.pagetags %}
 {% assign selecteds = "|" | split: '|' %}
 
+
 {% for section in site.data.guidelines %}
     {% for item in section[1].items %}
       {% for tag in item[1].tags %}
         {% if pagetags contains tag %}
+          {% unless selecteds contains item %}
             {% assign selecteds = selecteds | push: item %}
+          {% endunless %}
+          
       {% endif %}
     {% endfor %}
   {% endfor %}
 {% endfor %}
 
-<section class="Relateds u-padding-top-xxl">
+<section class="Relateds u-padding-top-xl">
 {% if selecteds.size > 0 %}
+{% assign selecteds_sorted = selecteds | sort %}
   <div>
     <div class="u-padding-all-xl">
-            <span class="u-text-r-xxl Icon Icon-file u-color-50"></span>
+        <h1 class="u-text-h2 u-color-grey-50">
+          <span class="Icon Icon-file u-text-r-xxl"></span> Linee guida</h1>
     </div>
-     {% for item in selecteds %}
-      <article class="u-padding-bottom-l">
-          <h1 class="u-text-h4 u-color-50">Leggi la linea guida: 
-            <a href="{{item[1].url}}" class="u-color-50" target="_blank">
+    
+    <ul class="u-padding-left-xl u-padding-right-xl">
+     {% for item in selecteds_sorted %}
+        <li class="u-margin-bottom-m">
+          <span class="u-text-r-m u-color-grey-50">
+            &squarf; <a href="{{item[1].url}}" class="u-color-grey-50" target="_blank">
             {{item[1].desc | default: item[0]}}
             </a>
-          </h1>
-      </article>
-      {% endfor %}
+          </span>
+        </li>
+     {% endfor %}
+    </ul>
     
   </div> 
 
 
 {% endif %}
+
+
+
+
+
 </section>

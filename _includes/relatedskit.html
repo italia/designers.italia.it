@@ -15,22 +15,25 @@
 
 {% if selecteds.size > 0 %}
 	<section class="u-background-grey-10 u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom">
-		  <h4 class="u-text-h4 u-textCenter u-color-50">KIT</h4>
-		  <h1 class="u-text-h3 u-textCenter u-color-50 u-padding-bottom-xxl">continua ad esplorare le risorse del design system</h4>
-		  <div class="Grid Grid--withGutter Grid--equalHeight Grid--fill">
+		  <h1 class="u-text-h2 u-textCenter u-color-50">Kit</h1>
+		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-50 u-padding-bottom-xxl">Trova altri Design Kit</h2>
+		  <div class="u-margin-top-xl  u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill">
 		     {% for item in selecteds | limit: 3 %}
-		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 ">
-		      	<article class="u-background-white u-sizeFull u-padding-all-xl u-border-bottom-m u-color-teal-50">
-		      	  <header >
-		      	  <h6 class="u-text-h6 u-color-50">KIT</h6>
-		          <h1 class="u-text-h4">
-			          <a href="{{item.url | relative_url}}"  class="u-color-50 u-linkClean" >
-			            {{item.title}}
-			          </a>
-				   </h1>
-				  </header>
-				  <p class="u-text-r-xs u-color-grey-40">{{item.subtitle}}</p>
-		      </article>
+		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-flex"
+		           style="min-height: 20em; background-color: {{item.backgroundColor}}; background-image: url({{item.backgroundImage}});
+          background-blend-mode: multiply; background-size: cover;">
+
+		           <article class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch u-color-white">
+			          <div class="u-flexAlignSelfEnd">
+			          	<h2 class="u-text-r-m u-textUppercase u-padding-top-l u-padding-bottom-l ">{{item.kitcategory}}</h2>
+			            <h1 class="u-text-r-l u-padding-bottom-l ">
+			              <a href="{{item.url | relative_url}}" class="u-color-white u-linkClean">
+			                <span>{{item.title}}</span>
+			              </a>
+			            </h1>
+			            <h3 class="u-text-r-m u-textWeight-400">{{item.subtitle}}</h3>
+			          </div>
+			        </article>
 		  	  </div>
 		      {% endfor %}
 		    
