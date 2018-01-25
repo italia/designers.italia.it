@@ -464,6 +464,31 @@ $light-grey: #e6e9f0;
       margin: 0 !important;
     }
   }
+  .triangle {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    left: -120px;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform: skew(-15deg, 0deg);
+    -webkit-transform: skew(-15deg, 0deg);
+    &--reverse {
+      left: auto;
+      right: -120px;
+    }
+
+    @media screen and (max-width: 991px) {
+      bottom: auto;
+      top: -30px;
+      height: 80px;
+      width: 100%;
+      left: 0;
+      right: 0;
+      transform: skew(0deg, 4deg);
+    }
+  }
 }
 /* USEFUL CLASSES
 =================== */
