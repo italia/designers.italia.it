@@ -5,7 +5,7 @@ layout: download
 subtitle:
 backgroundImage : '/assets/images/posts/cover-personas.jpg'
 backgroundColor: '#439af1'
-nodata: true
+nodate: true
 kitcategory: capire
 tags:
 - human-centered-design

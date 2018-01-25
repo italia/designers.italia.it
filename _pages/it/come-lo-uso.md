@@ -3,39 +3,46 @@ title: Come lo uso
 lang: it
 layout: megablocks2
 blocks:
-- title: Vuoi migliorare l'usabilità del tuo sito o della tua applicazione?
-  subtitle: Osserva quali problemi incontrano gli utenti durante l'utilizzo e individua le criticità più importanti da risolvere 
+- title: Vuoi migliorare l’usabilità del tuo sito o della tua applicazione?
+  subtitle: Osserva quali problemi incontrano gli utenti durante l’utilizzo e individua le criticità più importanti da risolvere.
   img: /assets/images/pages/neonbrand-226736.jpg
   button:
-    label: Vai al forum
-    url: 'https://forum.italia.it/c/design'
-- title: Condividi la tua esperienza sul blog
-  subtitle: Il <a href="https://designers.italia.it/blog/">blog di Designers Italia</a> raccoglie case history relativi ai servizi pubblici o esperienze di trasformazione digitale che ben si applicano al mondo dei servizi pubblici. Il blog è aperto al contributo di designer e professionisti che abbiano un’esperienza significativa sul <b>design dei servizi pubblici</b> e che vogliano condividerla.<br>Se vuoi proporre un contributo scrivi all’indirizzo <a href="mailto:contatti@designers.italia.it">contatti@designers.italia.it</a> con <b>un abstract</b> della tua proposta e <b>un link</b> alla tua biografia o al tuo profilo. Valuteremo le proposte e ti contatteremo nel caso in cui decideremo di pubblicarla.
-  img: /assets/images/pages/david-solce-184827.jpg
-  button:
-    label: Proponi un post
-    url: 'mailto:contatti@designers.italia.it'
-- title: Alimenta il design system
-  subtitle: Le linee guida sono un documento pubblico e chiunque può partecipare al processo di revisione e aggiornamento proponendo modifiche e nuovi contenuti.<br>Grazie ad un <i>repository</i> pubblico su GitHub è possibile seguirne lo sviluppo, proporre correzioni o partecipare alla stesura di nuove versioni (seguendo le regole di questa Style guide). Per farlo, si devono usare gli strumenti collaborativi di GitHub, in particolare le <i>issues</i> (per le discussioni) e le <i>pull request</i> (per le proposte di modifica). 
-  img: /assets/images/pages/neonbrand-226736.jpg
-  button:
-    label: Vai al forum
-    url: 'https://forum.italia.it/c/design'
-- title: Prendi parte alla scrittura delle linee guida
-  subtitle: Le linee guida sono un documento pubblico e chiunque può partecipare al processo di revisione e aggiornamento <b>proponendo modifiche</b> e nuovi contenuti.<br>Grazie ad un <i>repository</i> pubblico su GitHub è possibile seguirne lo sviluppo, proporre correzioni o <b>partecipare alla stesura</b> di nuove versioni (seguendo le regole di questa <i>Style guide</i>). Per farlo, si devono usare gli strumenti collaborativi di GitHub, in particolare le <i>issues</i> (per le discussioni) e le <i>pull request</i> (per le proposte di modifica).
-  img: /assets/images/pages/david-solce-184827.jpg
-  button:
-    label: partecipa all’evoluzione delle linee guida
+  - label: kit test di usabilità
     url: '/'
-- title: Condividi il modello di Designers Italia
-  subtitle: Se sei un professore o un ricercatore, puoi raccontare l’approccio di Designers Italia come esempio di progettazione di servizi digitali in ambito pubblico, e organizzare <b>workshop</b> sperimentando con i nostri strumenti e risorse.
+- title: Vuoi organizzare l’avvio di un progetto nel migliore dei modi?
+  subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
   img: /assets/images/pages/neonbrand-226736.jpg
   button:
-    label: scarica la presentazione di Designers Italia
+  - label: kit co-design workshop
+    url: '/'
+- title: Vuoi digitalizzare un servizio analogico?
+  subtitle: Individua le necessità principali degli utenti del servizio e prova ad immaginare come un’esperienza digitale potrebbe rispondere ai loro bisogni.
+  img: /assets/images/pages/neonbrand-226736.jpg
+  button:
+  - label: kit user stories
+    url: '/'
+- title: Vuoi utilizzare risorse e template già pronti per costruire il tuo servizio?
+  subtitle: Scarica gli elementi grafici predefiniti per risparmiare tempo e arrivare facilmente ad un insieme di schermate coerenti.
+  img: /assets/images/pages/neonbrand-226736.jpg
+  button:
+  - label: wireframe kit 
+    url: '/'
+  - label: UI kit
+    url: '/'
+  - label: web toolkit
+    url: '/'
+- title: Vuoi gestire i contenuti in modo efficiente?
+  subtitle: Prendi ispirazione o segui dei modelli predefiniti per organizzare il lavoro tra le risorse disponibili.
+  img: /assets/images/pages/neonbrand-226736.jpg
+  button:
+  - label: content kit
     url: '/'
 
 ---
 
-Su Designers Italia puoi trovare risorse per risolvere problemi Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sapien turpis, ultricies fringilla nibh nec, vestibulum sodales nisi. Proin bibendum ultricies semper. Nulla eget magna bibendum, hendrerit sapien in, blandit libero.
+Su Designers Italia puoi trovare risorse per progettare e semplificare i servizi pubblici. Sul sito trovi diversi **kit, linee guida, discussioni e casi d’uso**, che potranno esserti utili per risolvere criticità legate all’esperienza d’uso, ideare nuovi servizi digitali o migliorare servizi esistenti. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sapien turpis, ultricies fringilla nibh nec, vestibulum sodales nisi. Proin bibendum ultricies semper. Nulla eget magna bibendum, hendrerit sapien in, blandit libero.
+I kit di design sono un buon punto di partenza: da lì puoi esplorare le [linee guida ufficiali per il design dei servizi della Pubblica Amministrazione](https://design-italia.readthedocs.io/it/stable/doc/introduzione-linee-guida-design.html){:target="_blank" class="u-linkClean u-color-50"} e leggere *case history* sugli argomenti che ti interessano.
+
+
+Per iniziare:

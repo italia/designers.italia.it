@@ -5,7 +5,7 @@ layout: download
 subtitle: Modello di report/dashboard per Google Analytics e Piwik
 backgroundImage : '/assets/images/posts/cover-personas.jpg'
 backgroundColor: '#439af1'
-nodata: true
+nodate: true
 kitcategory: capire
 tags: 
   - analytics
