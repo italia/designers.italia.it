@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: Come partecipo
 lang: it
 layout: megablocks

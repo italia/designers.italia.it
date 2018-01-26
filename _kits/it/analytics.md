@@ -1,4 +1,5 @@
 ---
+sitemap: false
 title: "Web Analytics: Starter Kit"
 lang: it
 layout: download
