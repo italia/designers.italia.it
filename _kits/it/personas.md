@@ -1,9 +1,10 @@
 ---
+sitemap: false
 title: Kit Personas
 lang: it
 layout: download
 subtitle:
-backgroundImage : '/assets/images/posts/cover-personas.jpg'
+backgroundImage : '/assets/images/kits/01_Personas_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: capire
