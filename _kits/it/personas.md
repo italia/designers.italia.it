@@ -19,6 +19,12 @@ download_file :
   caption : 'Modello di presentazione'
   type : 'internal'
 
+carousel:
+- img: 'assets/images/kits/personas_slide_1.jpg'
+  label:
+- img: 'assets/images/kits/personas_slide_2.jpg'
+  label: 
+
 ---
 {:.u-color-50}
 ###### CHE COS’È
@@ -26,8 +32,7 @@ download_file :
 {:.u-color-50 .u-margin-bottom-xxl}
 #### Le personas sono dei profili inventati che descrivono le diverse tipologie di utenti di un servizio, raccontando le loro motivazioni, aspettative, bisogni e attitudini.
 
-<img src="http://placehold.it/800x400&text=SLIDER">
- 
+{% include simplecarousel.html  %} 
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
