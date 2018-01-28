@@ -230,6 +230,7 @@
 /** Social
 ====================== */
 .Social li a {
+  box-shadow: 0 0 0.5rem #ddd;
   line-height: 0;
   font-size: 2.4rem;
   @media screen and (min-width: 992px) {
@@ -282,8 +283,8 @@
     position: relative;
     font-weight: 300;
 
-          &:after {
-        content: '';
+    &:after {
+      content: '';
       background-color: #ddd;
       height: 1.2rem;
       width: 1.2rem;
@@ -336,6 +337,9 @@ $light-grey: #e6e9f0;
         color: green;
         position: absolute;
         margin-left: -2.4rem;
+        @media screen and (min-width: 992px) {
+          margin-left: -3.2rem;
+        }
       }
     }
   }
