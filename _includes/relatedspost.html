@@ -1,22 +1,28 @@
 {% assign pagetags = include.pagetags %}
 {% assign selecteds = "|" | split: '|' %}
+{% assign selectedsUniq = "|" | split: '|' %}
 
 {% for tag in pagetags %}
-	{% assign posts = site.medium_feed |  where_exp:"item", "item.medium_tags contains tag" | sort: "medium_firstpublished_at" | reverse %}
+	{% assign posts_lang = site.medium_feed | where: "medium_detected_lang", page.lang %}
+	{% assign posts = posts_lang |  where_exp:"item", "item.medium_tags contains tag"  %}
 	{% if posts.size > 0 %}
 		{% for post in posts %}
-			{% assign selecteds = selecteds | push: post %}
+			{% unless selectedsUniq contains post.medium_post_id %}
+				{% assign selecteds = selecteds | push: post %}
+				{% assign selectedsUniq = selectedsUniq | push: post.medium_post_id %}
+			{% endunless %}
 		{% endfor %}
 	{% endif %}
 
 {% endfor %}
 
 {% if selecteds.size > 0 %}
+	{% assign posts_sorted = selecteds | sort: "medium_firstpublished_at | reverse %}
 	<section class="u-background-teal-30 u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
 		  <h1 class="u-text-h2 u-textCenter u-color-white">Storie</h1>
 		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-white u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
 		  <div class=" u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
-		     {% for post in selecteds | limit: 3 %}
+		     {% for post in posts_sorted | limit: 3 %}
 		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
 		      	<article class="Grid  Grid--fill u-background-white u-md-flexDirectionCol u-lg-flexDirectionCol">
 		      		<figure class="Grid-cell u-size1of3 u-md-sizeFull u-lg-sizeFull u-padding-all-xs ">
