@@ -45,12 +45,12 @@
         {% else %}
 		     {% for post in posts_sorted | limit: 3 %}
 		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
-		      	<article class="Grid  Grid--fill u-background-white u-flexDirectionCol">
-		      		<figure class="Grid-cell u-sizeFull u-padding-all-xs">
+		      	<article class="Grid  Grid--fill u-background-white u-md-flexDirectionCol u-lg-flexDirectionCol">
+		      		<figure class="Grid-cell u-size1of3 u-md-sizeFull u-lg-sizeFull u-padding-all-xs ">
     					<img class="u-sizeFull"
     					src="https://cdn-images-1.medium.com/fit/t/400/400/{{ post.medium_preview_image_id }}" alt="">
   					</figure>
-		      		<header class="Grid-cell u-sizeFull u-padding-all-l">
+		      		<header class="Grid-cell u-size2of3 u-md-sizeFull u-lg-sizeFull u-padding-all-l">
 		      		<h1 class="u-text-h4">
 				          <a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
 				            {{post.medium_title}}
