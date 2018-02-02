@@ -1,109 +1,122 @@
 Service design:
   url: https://design-italia.readthedocs.io/it/stable/doc/service-design.html
-  items:
-    Accessibilità:
-      desc: L'accessibilità dei siti web
-      url: https://design-italia.readthedocs.io/it/stable/doc/service-design/accessibilita.html
-      tags:
-        - usability
-        - human-centered-design
-        - user-interface
-        - user-experience
-    Normativa:
-      desc: Riferimenti normativi per i siti web PA 2017
-      url: https://design-italia.readthedocs.io/it/stable/doc/service-design/normativa.html
-      tags:
-        - usability
-        - stakeholder
-    Design management:
-      desc: Design management
-      url: https://design-italia.readthedocs.io/it/stable/doc/service-design/design-management.html
-      tags:
-        - usability
-        - design-system
-        - design-collaborativo
-        - human-centered-design
+  desc: 'Service design'
+Accessibilità:
+  parent: 'Service design'
+  desc: L'accessibilità dei siti web
+  url: https://design-italia.readthedocs.io/it/stable/doc/service-design/accessibilita.html
+  tags:
+    - usability
+    - human-centered-design
+    - user-interface
+    - user-experience
+Normativa:
+  parent: 'Service design'
+  desc: Riferimenti normativi per i siti web PA 2017
+  url: https://design-italia.readthedocs.io/it/stable/doc/service-design/normativa.html
+  tags:
+    - usability
+    - stakeholder
+Design management:
+  parent: 'Service design'
+  desc: Design management
+  url: https://design-italia.readthedocs.io/it/stable/doc/service-design/design-management.html
+  tags:
+    - usability
+    - design-system
+    - design-collaborativo
+    - human-centered-design
+
 User research:
+  desc: 'User research'
   url: https://design-italia.readthedocs.io/it/stable/doc/user-research.html
-  items:
-    Usabilità:
-      desc: Usabilità
-      url: https://design-italia.readthedocs.io/it/stable/doc/user-research/usabilita.html
-      tags:
-        - usability
-        - human-centered-design
-        - user-flows
-        - data-driven-design
-    Web analytics:
-      desc: Web analytics
-      url: https://design-italia.readthedocs.io/it/stable/doc/user-research/web-analytics.html
-      tags:
-        - piwik
-        - analytics
-        - data-driven-design
-        - human-centered-design
+Usabilità:
+  parent: 'User research'
+  desc: Usabilità
+  url: https://design-italia.readthedocs.io/it/stable/doc/user-research/usabilita.html
+  tags:
+    - usability
+    - human-centered-design
+    - user-flows
+    - data-driven-design
+Web analytics:
+  parent: 'User research'
+  desc: Web analytics
+  url: https://design-italia.readthedocs.io/it/stable/doc/user-research/web-analytics.html
+  tags:
+    - piwik
+    - analytics
+    - data-driven-design
+    - human-centered-design
+
 User interface:
+  desc: 'User interface'
   url: https://design-italia.readthedocs.io/it/stable/doc/user-interface.html
-  items:
-    Principi:
-      desc: Principi
-      url: https://design-italia.readthedocs.io/it/stable/doc/user-interface/principi.html
-      tags:
-        - usability
-        - user-interface
-        - user-experience
-        - user-flows
-    Stile:
-      desc: Stile
-      url: https://design-italia.readthedocs.io/it/stable/doc/user-interface/stile.html
-      tags:
-        - linguaggio
-        - content
-        - data-visualization
-        - user-experience
-    Layout:
-      desc: Layout
-      url: https://design-italia.readthedocs.io/it/stable/doc/user-interface/layout.html
-      tags:
-        - design-systems
-        - information-architecture
-        - user-experience
-        - user-interface
-    Componenti:
-      desc: Componenti
-      url: https://design-italia.readthedocs.io/it/stable/doc/user-interface/componenti.html
-      tags:
-        - design-systems
-        - user-experience
-        - navigation
-        - user-interface
+Principi:
+  parent: 'User interface'
+  desc: Principi
+  url: https://design-italia.readthedocs.io/it/stable/doc/user-interface/principi.html
+  tags:
+    - usability
+    - user-interface
+    - user-experience
+    - user-flows
+Stile:
+  parent: 'User interface'
+  desc: Stile
+  url: https://design-italia.readthedocs.io/it/stable/doc/user-interface/stile.html
+  tags:
+    - linguaggio
+    - content
+    - data-visualization
+    - user-experience
+Layout:
+  parent: 'User interface'
+  desc: Layout
+  url: https://design-italia.readthedocs.io/it/stable/doc/user-interface/layout.html
+  tags:
+    - design-systems
+    - information-architecture
+    - user-experience
+    - user-interface
+Componenti:
+  parent: 'User interface'
+  desc: Componenti
+  url: https://design-italia.readthedocs.io/it/stable/doc/user-interface/componenti.html
+  tags:
+    - design-systems
+    - user-experience
+    - navigation
+    - user-interface
+
 Content design:
+  desc: 'Content design'
   url: https://design-italia.readthedocs.io/it/stable/doc/content-design.html
-  items:
-    Architettura dell'informazione:
-      desc: Architettura dell'informazione
-      url: https://design-italia.readthedocs.io/it/stable/doc/content-design/architettura-dell-informazione.html
-      tags:
-        - human-centered-design
-        - information-architecture
-        - navigation-tree
-        - user-experience
-    Seo:
-      desc: Search Engine Optimisation
-      url: https://design-italia.readthedocs.io/it/stable/doc/content-design/seo.html
-      tags:
-        - service-design
-        - seo
-        - data-driven-design
-        - content
-    Linguaggio:
-      desc: Linguaggio
-      url: https://design-italia.readthedocs.io/it/stable/doc/content-design/linguaggio.html
-      tags:
-        - content
-        - linguaggio
-        - data-visualization
-        - user-interface
-
-
+Architettura dell'informazione:
+  parent: 'Content design'
+  desc: Architettura dell'informazione
+  url: https://design-italia.readthedocs.io/it/stable/doc/content-design/architettura-dell-informazione.html
+  tags:
+    - human-centered-design
+    - information-architecture
+    - navigation-tree
+    - user-experience
+Seo:
+  parent: 'Content design'
+  desc: Search Engine Optimisation
+  url: https://design-italia.readthedocs.io/it/stable/doc/content-design/seo.html
+  tags:
+    - service-design
+    - seo
+    - data-driven-design
+    - content
+Linguaggio:
+  parent: 'Content design'
+  desc: Linguaggio
+  url: https://design-italia.readthedocs.io/it/stable/doc/content-design/linguaggio.html
+  tags:
+    - content
+    - linguaggio
+    - data-visualization
+    - user-interface
 

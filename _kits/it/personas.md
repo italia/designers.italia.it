@@ -14,6 +14,9 @@ tags:
 - human-centered-design
 - teamwork
 
+guidelines:
+- User research
+
 download_file :
 - file: 
   caption : 'Esercizio di costruzione dei <i>personas</i>'

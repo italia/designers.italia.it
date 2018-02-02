@@ -14,6 +14,9 @@ tags:
 - data-driven-design
 - user-flows
 
+guidelines:
+- Usabilità
+
 download_file :
 - file : 
   caption : 'Dashboard con Google Analytics'

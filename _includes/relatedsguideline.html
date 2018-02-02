@@ -1,17 +1,11 @@
-{% assign pagetags = include.pagetags %}
+{% assign pageguidelines = include.pageguidelines %}
+{% assign guidelines = site.data.guidelines %}
 {% assign selecteds = "|" | split: '|' %}
 
-
-{% for section in site.data.guidelines %}
-    {% for item in section[1].items %}
-      {% for tag in item[1].tags %}
-        {% if pagetags contains tag %}
-          {% unless selecteds contains item %}
-            {% assign selecteds = selecteds | push: item %}
-          {% endunless %}
-          
-      {% endif %}
-    {% endfor %}
+{% for pageguide in pageguidelines %}
+  {% for item in pageguide %}
+    {% assign selecteds = selecteds | push: guidelines[item] %}
+    
   {% endfor %}
 {% endfor %}
 
@@ -28,8 +22,8 @@
      {% for item in selecteds_sorted %}
         <li class="u-margin-bottom-m">
           <span class="u-text-r-m u-color-grey-50">
-            &squarf; <a href="{{item[1].url}}" class="u-color-grey-50" target="_blank">
-            {{item[1].desc | default: item[0]}}
+            &squarf; <a href="{{item.url}}" class="u-color-grey-50" target="_blank">
+            {{item.desc}}
             </a>
           </span>
         </li>

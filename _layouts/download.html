@@ -108,14 +108,14 @@ layout: default
         {% include kits.html %}
 
 
-        {% if page.related_tags == nil %}
+        
         <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom" />
         <div class="u-margin-bottom-xxl">
-          {% if page.tags != nil %}
-            {% include relatedsguideline.html pagetags=page.tags %}
+          {% if page.guidelines != nil %}
+            {% include relatedsguideline.html pageguidelines=page.guidelines %}
           {% endif %}
         </div>
-        {% endif %}
+        
 
       </div>
 
