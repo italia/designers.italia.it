@@ -18,12 +18,12 @@ guidelines:
 - User research
 
 download_file :
-- file: 
+- file: '/assets/downloads/KIT_personas_esercizio.pdf'
   caption : 'Esercizio di costruzione dei <i>personas</i>'
   type : 'internal'
-- file :
+- file : 'https://docs.google.com/presentation/d/1bJw6PpfVXepN8a2euJ6Gi4cRdc0rQ9A9h2hOIastltM/edit#slide=id.g25d343a444_1_29'
   caption : 'Slide di presentazione dei <i>personas</i>'
-  type : 'internal'
+  type : 'external'
 
 carousel:
 - img: '/assets/images/kits/personas_slide_1.jpg'

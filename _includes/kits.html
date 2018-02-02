@@ -7,15 +7,11 @@
           <img src="/assets/icons/kits-download-icon.svg" height="54" > Materiali all'interno del kit</h1>
     
  	{% for download in download_file %}
-	    {% assign downloadUrl = download.file | relative_url %}
-	    {% unless downloadUrl=='internal' %}
-	      {% assign downloadUrl = donwload.file %}
-	    {% endunless %}
 	    <div class="u-text-r-m u-margin-top-xl u-textWeight-600">
 
 	    {% if download.file %}
 	    <span class="u-text-r-m Icon Icon-arrow-right u-color-teal-60"></span>&nbsp;
-	    <a href="{{downloadUrl}}" class="">{{download.caption}}</a>
+	    <a href="{{download.file}}" class="u-color-50" target="_blank">{{download.caption}}</a>
 	    {% else %}
 	    <span class="u-text-r-m Icon Icon-arrow-right u-color-grey-40"></span>&nbsp;
 	    <span class="u-color-grey-40">{{download.caption}}</span> <span class="u-color-grey-40 u-textPreformatted u-text-r-xxs">in lavorazione</span>

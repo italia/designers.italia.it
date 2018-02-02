@@ -451,14 +451,29 @@ $light-grey: #e6e9f0;
     position: relative;
     text-align: center;
 
+    .Download-inner {
+      width: 18em;
+      position: relative;
+      margin: 0 auto;
+    }
+    .Download-list {
+      top: 0;
+      background: #fff;
+      top: 1.2rem;
+      position: absolute;
+      z-index: 1000;
+      padding: 10px;
+      width: 18em;
+      -webkit-box-shadow: 0 2px 4px 0 #bdbdbd;
+      box-shadow: 0 2px 4px 0 #bdbdbd
+    }
     .download-button {
       color: #fff !important;
-      background-color: #00C5CA !important;
-      
+      background-color: #00C5CA !important;      
 
       &--float {
         display: block;
-        width: 20em;
+        width: 100%;
         position: absolute;
         top: -3rem;
         left: 50%;

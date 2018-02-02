@@ -81,17 +81,7 @@ layout: default
 
 <!--/ === blue block-->
 <!--/ === blue block-->
-  <div class="Download u-padding-bottom-xxl">
-    <div class="Download-wrapper">
-      {% unless page.download_file[0].file==nil %}
-      <a  class="download-button--float Button  Button--shadow u-text-r-xs u-color-white" 
-      href="#" title="scarica il kit">scarica il kit<span class="u-text-r-xxs Icon Icon-expand u-floatRight"></span></a>
-      {% else %}
-      <a  class="download-button--float Button  Button--shadow u-text-r-xs u-color-white" 
-      href="#kitsdownload" title="kit in lavorazione">kit in lavorazione<span class="u-text-r-xxs Icon Icon-expand u-floatRight"></span></a>
-      {% endunless %}
-    </div>
-  </div>
+  {% include kit_downloadbutton.html %}
 
 
   <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
