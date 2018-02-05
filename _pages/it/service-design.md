@@ -5,7 +5,7 @@ layout: post
 lang: it
 toc: true
 backgroundImage : '/assets/images/pages/michal-parzuchowski-224092.jpg'
-backgroundColor: '#06c'
+backgroundColor: 'rgba(90, 178, 255, .5)'
 blueBlock: true
 ---
 

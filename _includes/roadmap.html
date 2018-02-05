@@ -1,0 +1,45 @@
+{% assign menu_items = include.menu_items[active_lang]%}
+
+<dl class="roadmap-list u-margin-bottom-xl">
+  {% for month in site.data.roadmap %}
+  <dt>{{ month[0] }}</dt>
+  <dd class="u-margin-left-l">
+    <ul>
+      {% for activity in month[1] %}
+      <li class="activity-list">
+        <h3 {% unless activity.status == 'todo' %}class="activity-done"{% endunless %}>{{ activity.title }}</h3>
+        <div class="u-md-flex u-lg-flex">
+          <div class="u-md-size1of3 u-lg-size1of3 u-flexOrderLast">
+            <ul>
+              {% for tag in activity.tags %}
+              <li class="u-inlineBlock u-padding-right-xs">
+                <a href="#" class="u-color-white u-background-40 u-borderRadius-m u-textClean u-padding-right-xs u-padding-left-xs">{{ tag }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="u-sizeFill u-flexOrderFirst">
+            <p class="u-margin-right-l">{{ activity.subtitle }}</p>
+          </div>
+        </div>
+        {% if activity.description %}
+        <div class="Accordion fr-accordion js-fr-accordion u-margin-r-top" id="accordion-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+          <p class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{ forloop.parentloop.index }}-{{ forloop.index }}">
+            <span class="Accordion-link"></span>
+          </p>
+          <div id="accordion-panel-{{ forloop.parentloop.index }}-{{ forloop.index }}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel u-margin-top-xs">
+            <p class="u-layout-prose u-color-grey-70 u-padding-left-m">
+              {{ activity.description }}
+              {% if activity.link %}
+              <br/><a href="{{ activity.link.url }}" target="_blank">{{ activity.link.title }}</a>
+              {% endif %}
+            </p>
+          </div>
+        </div>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </dd>
+  {% endfor %}
+</dl>

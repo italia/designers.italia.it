@@ -1,0 +1,69 @@
+{% assign pagetags = include.pagetags %}
+{% assign selecteds = "|" | split: '|' %}
+{% assign selectedsUniq = "|" | split: '|' %}
+
+{% for tag in pagetags %}
+	{% assign posts_lang = site.medium_feed | where: "medium_detected_lang", page.lang %}
+	{% assign posts = posts_lang |  where_exp:"item", "item.medium_tags contains tag"  %}
+	{% if posts.size > 0 %}
+		{% for post in posts %}
+			{% unless selectedsUniq contains post.medium_post_id %}
+				{% assign selecteds = selecteds | push: post %}
+				{% assign selectedsUniq = selectedsUniq | push: post.medium_post_id %}
+			{% endunless %}
+		{% endfor %}
+	{% endif %}
+
+{% endfor %}
+
+{% if selecteds.size > 0 %}
+	{% assign posts_sorted = selecteds | sort: "medium_firstpublished_at | reverse %}
+	<section class="u-background-teal-30 u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
+		  <h1 class="u-text-h2 u-textCenter u-color-white">Storie</h1>
+		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-white u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
+		  <div class=" u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
+        {% if posts_sorted.size == 1 %}
+        {% assign post = posts_sorted[0] %}
+        <div class="Grid-cell">
+          <article class="Grid Grid--fill u-background-white u-flexDirectionCol u-md-flexDirectionRow u-lg-flexDirectionRow">
+            <figure class="Grid-cell u-sizeFull u-md-size2of3 u-lg-size2of3 u-padding-all-xs ">
+              <img class="u-sizeFull"
+                   src="https://cdn-images-1.medium.com/fit/t/768/480/{{ post.medium_preview_image_id }}" alt="">
+            </figure>
+            <header class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-padding-all-l">
+              <h1 class="u-text-h4">
+                <a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
+                  {{post.medium_title}}
+                </a>
+              </h1>
+              <p class="u-text-r-xs u-color-grey-40">
+                {{post.medium_subtitle}}
+              </p>
+            </header>
+          </article>
+        </div>
+        {% else %}
+		     {% for post in posts_sorted | limit: 3 %}
+		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
+		      	<article class="Grid  Grid--fill u-background-white u-md-flexDirectionCol u-lg-flexDirectionCol">
+		      		<figure class="Grid-cell u-size1of3 u-md-sizeFull u-lg-sizeFull u-padding-all-xs ">
+    					<img class="u-sizeFull"
+    					src="https://cdn-images-1.medium.com/fit/t/400/400/{{ post.medium_preview_image_id }}" alt="">
+  					</figure>
+		      		<header class="Grid-cell u-size2of3 u-md-sizeFull u-lg-sizeFull u-padding-all-l">
+		      		<h1 class="u-text-h4">
+				          <a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
+				            {{post.medium_title}}
+				          </a>
+				    </h1>
+				    <p class="u-text-r-xs u-color-grey-40">
+				    	{{post.medium_subtitle}}
+				    </p>
+				    </header>
+		        </article>
+		      </div>
+		      {% endfor %}
+		    {% endif %}
+		  </div>
+	</section>
+{% endif %}

@@ -1,0 +1,41 @@
+{% assign pagetags = include.pagetags %}
+{% assign selecteds = "|" | split: '|' %}
+{% assign selectedsUniq = "|" | split: '|' %}
+
+{% for tag in pagetags %}
+	{% assign relpages = site.kits | where_exp: "p", "p.tags contains tag "%}
+	{% for item in relpages %}
+		{% unless selectedsUniq contains item.path or page.path==item.path %}
+			{% assign selecteds = selecteds | push: item %}
+			{% assign selectedsUniq = selectedsUniq | push: item.path %}
+		{% endunless %}
+	{% endfor %}
+{% endfor %}
+
+
+{% if selecteds.size > 0 %}
+	<section class="RelatedKits u-background-grey-10 u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom">
+		  <h1 class="u-text-h2 u-textCenter u-color-50">Kit</h1>
+		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-50 u-padding-bottom-xxl">Trova altri Design Kit</h2>
+		  <div class="u-margin-top-xl  u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill">
+		     {% for item in selecteds | limit: 3 %}
+		      <div class="RelatedKits-cell Grid-cell u-md-size1of3 u-lg-size1of3 u-flex"
+		           style="background-color: {{item.backgroundColor}}; background-image: url({{item.carousel[0].img | default: item.backgroundImage}}); ">
+
+		           <article class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch u-color-white">
+			          <div class="u-flexAlignSelfEnd">
+			          	<h2 class="u-text-r-m u-textUppercase u-padding-top-l u-padding-bottom-l ">{{item.kitcategory}}</h2>
+			            <h1 class="u-text-r-l u-padding-bottom-l ">
+			              <a href="{{item.url | relative_url}}" class="u-color-white u-linkClean">
+			                <span>{{item.title}}</span>
+			              </a>
+			            </h1>
+			            <h3 class="u-text-r-m u-textWeight-400">{{item.subtitle}}</h3>
+			          </div>
+			        </article>
+		  	  </div>
+		      {% endfor %}
+		    
+		  </ul>	
+	</section>
+{% endif %}

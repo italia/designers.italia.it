@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+{% assign blocks = page.blocks %}
+
+<div class="u-background-white u-layout-r-withGutter u-padding-bottom-xxl u-posRelative u-zindex-30">
+<div class="Grid ">
+    <div class="Grid-cell u-sizeFull u-md-size8of12 u-lg-size8of12">
+      <h1 class="u-text-h1 u-color-teal-60 u-lineHeight-l u-sizeFull u-margin-top-xxl">{{ page.title }}</span>
+      </h1>
+      <div class="u-text-r-m u-margin-top-xs u-color-grey-50 u-textWeight-500 u-lineHeight-l u-sizeFull">
+        {{content}}
+      </div>
+  </div>
+</div>
+<div class="u-color-white u-margin-bottom-xxl u-margin-top-xl">
+  <div class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-teal-60 u-margin-bottom-l"
+        style="width: 25%">&nbsp;</div>
+  {% include share.html backgroundColor='u-background-teal-60' textColor='u-color-teal-60' layout=' ' %}
+</div>
+</div>
+
+{% for block in blocks %}
+{% capture textColor %}{% cycle 'u-color-white', 'u-color-50' %}{% endcapture %}
+{% capture oddEven %}{% cycle 'odd', 'even' %}{% endcapture %}
+{% capture buttonBkg %}{% cycle 'u-background-white', 'u-background-teal-60' %}{% endcapture %}
+{% capture buttonColor %}{% cycle 'u-color-50', 'u-color-white' %}{% endcapture %}
+<article class="{% cycle 'u-background-teal-60', 'u-background-white' %} u-posRelative u-zindex-30">
+<div class="Megablockgrid Grid Grid--equalHeight">
+  {% if oddEven=='even' %}
+  <div class="Grid-cell u-hidden u-md-block u-lg-block u-md-size4of12 u-lg-size4of12"
+       style="background-image: url({{ block.img }}); background-size: cover; min-height: 200px">
+      &nbsp;
+  </div>
+  {% endif %}
+
+  <div class="Megablockgrid-cell Grid-cell u-sizeFull u-md-size8of12 u-lg-size8of12">
+      <div class="Megablockgrid-text u-padding-left-xxl u-padding-right-xl u-padding-top-xl u-padding-bottom-xl u-margin-left-xxl u-margin-bottom-xxl " >
+        <h1 class="{{textColor}} u-text-h3 u-lineHeight-l u-sizeFull u-margin-top-xxl">{{ block.title }}</span>
+        </h1>
+        <p class="{{textColor}} u-text-r-s u-lineHeight-l u-sizeFull u-margin-top-m">{{ block.subtitle }}</span>
+        </p>
+        {% if block.body %}
+        <div class="{{textColor}} u-text-r-xs u-margin-top-s u-textWeight-500 u-lineHeight-m u-sizeFull">
+          {{block.body}}
+        </div>
+        {% endif %}
+        <div class="u-margin-top-l">
+        {% for btn in block.button %}
+        <a href="{{btn.url}}" class="{{buttonBkg}} {{buttonColor}} u-padding-top-s u-padding-bottom-s
+            u-text-r-xxs u-linkClean u-textUppercase u-textWeight-700 u-inlineBlock
+            u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-right-m u-margin-bottom-m">
+            {{btn.label}}
+        </a>
+        {% endfor %}
+        </div>
+      </div>
+  </div>
+  {% if oddEven=='odd' %}
+  <div class="Grid-cell u-sizeFull u-md-size4of12 u-lg-size4of12"
+       style="background-image: url({{ block.img }}); background-size: cover; min-height: 200px">
+      &nbsp;
+  </div>
+  {% endif %}
+  {% if oddEven=='even' %}
+  <div class="Grid-cell u-block u-md-hidden u-lg-hidden"
+       style="background-image: url({{ block.img }}); background-size: cover; min-height: 200px">
+      &nbsp;
+  </div>
+  {% endif %}
+
+</div>
+</article>
+{% endfor %}

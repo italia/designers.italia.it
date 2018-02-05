@@ -13,4 +13,9 @@ $(function() {
       window.location = $(this).attr('src');
   });
 
+  $('#kitdownloadbutton').on('click', function(e){
+    e.preventDefault();
+    $('#kitdownloadlist').toggleClass('u-hidden');
+  });
+
 })

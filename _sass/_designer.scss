@@ -45,6 +45,14 @@
   padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
+
+.Header-logo svg {
+  width: 4.8rem;
+  @media screen and (min-width: 768px) {
+      width: 9.6rem;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .Header-logo img {
     height: 9rem;
@@ -219,6 +227,17 @@
   }
 }
 
+/** Social
+====================== */
+.Social li a {
+  box-shadow: 0 0 0.5rem #ddd;
+  line-height: 0;
+  font-size: 2.4rem;
+  @media screen and (min-width: 992px) {
+    font-size: 2rem;
+  }
+}
+
 /** Roadmap
 ====================== */
 .Roadmap {
@@ -245,8 +264,8 @@
     font-weight: 700;
     position: relative;
 
-    &:after {
-      content: '';
+        &:after {
+          content: '';
       background-color: #5a6772;
       height: 2rem;
       width: 2rem;
@@ -255,8 +274,8 @@
       left: -3rem;
       position: absolute;
       border-radius: 2rem;
-    }
-  }
+      }
+          }
 
   dd {
     margin-top: 1rem;
@@ -272,8 +291,101 @@
       z-index: 101;
       top: 1rem;
       left: -2.5rem;
-      position: absolute;
+        position: absolute;
       border-radius: 2rem;
+    }
+  }
+}
+
+$light-grey: #e6e9f0;
+.roadmap-list {
+  position: relative;
+
+  dt {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 300;
+    position: relative;
+
+    &:not(:first-of-type) {
+      border-top: 1px solid $light-grey;
+    }
+  }
+
+  dd {
+    position: relative;
+    font-weight: 300;
+
+    ul li.activity-list {
+      margin: 1.6rem 0;
+      &:not(:first-of-type) {
+        border-top: 1px solid $light-grey;
+        padding-top: 1.6rem;
+      }
+      ul li a {
+        padding: 0px 1rem .2rem !important;
+        line-height: 2.4rem;
+        font-size: 1.2rem;
+      }
+      .activity-done::before {
+        font-family: ita!important;
+        line-height: 1.4;
+        content: "\2713";
+        color: green;
+        position: absolute;
+        margin-left: -2.4rem;
+        @media screen and (min-width: 992px) {
+          margin-left: -3.2rem;
+        }
+      }
+    }
+  }
+
+  .Accordion {
+    .Accordion-header {
+      color: #06C;
+      .Accordion-link {
+        &:before {
+          content: 'dettagli';
+          font-size: 1.4rem;
+          font-weight: 600;
+        }
+        &:after {
+          content: '';
+          display: inline-block;
+          margin-left: 1rem;
+          width: 1rem;
+          height: 1rem;
+          background: transparent url(../assets/icons/arrow-right.svg) right center no-repeat;
+          background-size: 1rem 1rem;
+          transition: .15s ease-in-out;
+        }
+      }
+      &[aria-expanded=true] {
+        .Accordion-link {
+          &:before {
+            content: 'chiudi';
+          }
+          &:after {
+            transform: rotate(-90deg)
+          }
+        }
+      }
+    }
+    .Accordion-panel {
+      position: relative;
+      &:before {
+        content: '';
+        position: absolute;
+        height: calc(100% - 10px);
+        margin: 5px 0;
+        width: 2px;
+        background-color: $light-grey;
+      }
+      color: #586e80;
     }
   }
 }
@@ -292,6 +404,19 @@
       left: -15rem;
       text-align: right;
       bottom: 3.2rem;
+    }
+  }
+}
+/* RELATEDKITS 
+=============== */
+.RelatedKits {
+  &-cell {
+    background-size: auto;
+    background-position-y: 25%;
+    min-height: 20em;
+    background-blend-mode: multiply; 
+    &:hover {
+      background-color: #00c5ca !important;
     }
   }
 }
@@ -326,22 +451,93 @@
     position: relative;
     text-align: center;
 
+    .Download-inner {
+      width: 18em;
+      position: relative;
+      margin: 0 auto;
+    }
+    .Download-list {
+      top: 0;
+      background: #fff;
+      top: 1.2rem;
+      position: absolute;
+      z-index: 1000;
+      padding: 10px;
+      width: 18em;
+      -webkit-box-shadow: 0 2px 4px 0 #bdbdbd;
+      box-shadow: 0 2px 4px 0 #bdbdbd
+    }
     .download-button {
       color: #fff !important;
-      background-color: #00C5CA !important;
+      background-color: #00C5CA !important;      
 
       &--float {
+        display: block;
+        width: 100%;
         position: absolute;
         top: -3rem;
         left: 50%;
         transform: translateX(-50%);
         z-index: 100;
+        background-color: #00c5ca !important;
+        border: none;
+        white-space: normal;
+        
+        .Icon {
+          margin-top: 4px;
+        }
       }
     }
   }
 
   .Download-caption {
     text-transform: initial;
+  }
+}
+
+/*  MEGABLOCK
+======================*/
+.Megablockgrid {
+  &-text{
+    a {
+      color: inherit;
+    }
+    @media screen and (max-width: 991px) {
+      margin: 0 !important;
+    }
+  }
+  .triangle {
+    position: absolute;
+    z-index: 1;
+    width: 200px;
+    left: -120px;
+    top: 0;
+    bottom: 0;
+    background-color: #fff;
+    transform: skew(-15deg, 0deg);
+    -webkit-transform: skew(-15deg, 0deg);
+    &--reverse {
+      left: auto;
+      right: -120px;
+    }
+
+    @media screen and (max-width: 991px) {
+      bottom: auto;
+      top: -30px;
+      height: 80px;
+      width: 100%;
+      left: 0;
+      right: 0;
+      transform: skew(0deg, 4deg);
+    }
+  }
+}
+/* USEFUL CLASSES
+=================== */
+
+@media screen and (min-width: 991px) {
+  .u-md-flexDirectionCol {
+    flex-direction: column;
   }
 }
 

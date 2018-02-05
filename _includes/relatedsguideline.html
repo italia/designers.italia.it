@@ -1,0 +1,42 @@
+{% assign pageguidelines = include.pageguidelines %}
+{% assign guidelines = site.data.guidelines %}
+{% assign selecteds = "|" | split: '|' %}
+
+{% for pageguide in pageguidelines %}
+  {% for item in pageguide %}
+    {% assign selecteds = selecteds | push: guidelines[item] %}
+    
+  {% endfor %}
+{% endfor %}
+
+<section class="Relateds u-padding-top-xl">
+{% if selecteds.size > 0 %}
+{% assign selecteds_sorted = selecteds | sort %}
+  <div>
+    <div class="u-padding-all-xl">
+        <h1 class="u-text-h2 u-color-grey-50">
+          <span class="Icon Icon-file u-text-r-xxl"></span> Linee guida</h1>
+    </div>
+    
+    <ul class="u-padding-left-xl u-padding-right-xl">
+     {% for item in selecteds_sorted %}
+        <li class="u-margin-bottom-m">
+          <span class="u-text-r-m u-color-grey-50">
+            &squarf; <a href="{{item.url}}" class="u-color-grey-50" target="_blank">
+            {{item.desc}}
+            </a>
+          </span>
+        </li>
+     {% endfor %}
+    </ul>
+    
+  </div> 
+
+
+{% endif %}
+
+
+
+
+
+</section>
