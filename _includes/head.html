@@ -1,3 +1,6 @@
+{% assign buildTime =  site.time | date: '%Y%m%d%H%M' %}
+{% assign cssurl = '/assets/main.css?' | append: buildTime  %}
+
 <!DOCTYPE html>
 <!--[if IE 8]><html lang="{{ active_lang }}" class="no-js ie89 ie8"><![endif]-->
 <!--[if IE 9]><html lang="{{ active_lang }}" class="no-js ie89 ie9"><![endif]-->
@@ -38,7 +41,7 @@
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
   <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/build.css' | relative_url }}">
-  <link media="all" rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  <link media="all" rel="stylesheet" href="{{ cssurl | relative_url }}">
 
   <script src="{{ '/assets/toolkit/vendor/jquery.min.js' | relative_url }}"></script>
 
