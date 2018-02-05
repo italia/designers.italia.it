@@ -1,5 +1,4 @@
 ---
-sitemap: false
 title: Web Analytics
 lang: it
 layout: download
@@ -15,7 +14,7 @@ tags:
 - user-flows
 
 guidelines:
-- Usabilità
+- Web analytics
 
 download_file :
 - file : 

@@ -1,5 +1,4 @@
 ---
-sitemap: false
 title: Kit Personas
 lang: it
 layout: download
