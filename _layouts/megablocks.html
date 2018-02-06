@@ -48,12 +48,21 @@ layout: default
         </div>
         {% endif %}
         <div class="u-margin-top-l">
-        {% for btn in block.button %}
+        {% for btn in block.buttons %}
+        {% if btn.url %}
         <a href="{{btn.url}}" class="{{buttonBkg}} {{buttonColor}} u-padding-top-s u-padding-bottom-s
             u-text-r-xxs u-linkClean u-textUppercase u-textWeight-700 u-inlineBlock
             u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-right-m u-margin-bottom-m">
             {{btn.label}}
         </a>
+        {%else%}
+        <span class="{{buttonBkg}} u-text-gray-50 u-padding-top-s u-padding-bottom-s
+            u-text-r-xxs u-linkClean u-textUppercase u-textWeight-700 u-inlineBlock
+            u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-right-m u-margin-bottom-m">
+            {{btn.label}} 
+            <i>in lavorazione</i>
+        </span>
+        {%endif%}
         {% endfor %}
         </div>
       </div>
