@@ -1,0 +1,22 @@
+{% assign guides = site.data.guidelines %}
+{% assign family = guides | where_exp:"item","item.parent == nil" %}
+{% assign numfamily = family.size %}
+
+<div class="u-layout-r-withGutter u-margin-left-xxl u-margin-right-xxl u-margin-top-xxl ">
+<div class="Grid Grid--withGutter u-padding-all-l">
+{% for main in family %}
+	<div class="Grid-cell u-md-size1of{{numfamily}} u-lg-size1of{{numfamily}}">
+	<span class="u-text-h3"><a class="u-color-grey-50 u-linkClean" href="{{main.url}}">{{main.desc}}</a></span>
+		<div class="u-sizeFull">
+		{% assign items = guides | where_exp:"item","item.parent == main.desc" %}
+		<ul>
+		{% for item in items %}
+			<li class="u-margin-top-l u-margin-bottom-l u-text-r-xs"><a href="{{item.url}}" class="u-color-50 u-linkClean">{{item.desc}}</a></li>
+		{% endfor %}
+		</ul>
+		</div>
+	</div>
+	
+{% endfor %}
+</div>
+</div>
