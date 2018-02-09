@@ -28,7 +28,7 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_08_analitics.png'
+- img: '/assets/images/kits/placeholder_kit_01_system_map.png'
   label:
 ---
 
