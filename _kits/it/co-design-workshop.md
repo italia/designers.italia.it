@@ -34,7 +34,7 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/09_Co-design Workshop_Co-design workshop.png'
+- img: '/assets/images/kits/placeholder_kit_09_Co-designworkshop-2.png'
   label:
 ---
 
