@@ -29,16 +29,16 @@ download_file :
 - file : 
   caption : 'Net Promoter Score'
   type : 'internal'
-  - file : 
+- file : 
   caption : 'Questionario SUS'
   type : 'internal'
-  - file : 
+- file : 
   caption : 'Domande UMUX Lite'
   type : 'internal'
-  - file : 
+- file : 
   caption : 'Tabella dei risultati'
   type : 'internal'
-  - file : 
+- file : 
   caption : 'Report dei risultati'
   type : 'internal'
 
