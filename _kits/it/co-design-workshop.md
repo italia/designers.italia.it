@@ -3,7 +3,7 @@ title: Co-Design Workshop
 lang: it
 layout: download
 subtitle: Genera idee coinvolgendo utenti e stakeholder di un servizio
-backgroundImage : '/assets/images/kits/02_SystemMap_BG_Site.png'
+backgroundImage : '/assets/images/kits/09_Co-design Workshop_Co-design workshop.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: ideare
@@ -11,7 +11,7 @@ tags:
 - teamwork
 - workshop
 - stakeholder
-- user stories
+- user-stories
 
 guidelines:
 - Service design
