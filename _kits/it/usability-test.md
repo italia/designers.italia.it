@@ -23,7 +23,7 @@ download_file :
 - file : 
   caption : 'Guida alla conduzione del test'
   type : 'internal'
-- file : 'https://docs.google.com/document/d/18Ln0d0gBtsIUWr6X5CXKQFvFD0LVdsSbdD9njyj0C50/edit'
+- file : 
   caption : 'Liberatoria per il consenso al trattamento dei dati'
   type : 'internal'
 - file : 
@@ -41,7 +41,6 @@ download_file :
   - file : 
   caption : 'Report dei risultati'
   type : 'internal'
-
 
 carousel:
 - img: '/assets/images/kits/placeholder_kit_08_analitics.png'
