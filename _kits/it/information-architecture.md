@@ -14,7 +14,7 @@ tags:
 - navigation
 
 guidelines:
-- Architettura dell'informazione
+- "Architettura dell'informazione"
 
 download_file :
 - file : 

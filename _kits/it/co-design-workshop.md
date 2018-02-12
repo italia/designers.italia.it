@@ -14,7 +14,7 @@ tags:
 - user-stories
 
 guidelines:
-- Service design
+- 'Service design'
 
 download_file :
 - file : 
