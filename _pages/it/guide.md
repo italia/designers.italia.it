@@ -10,7 +10,7 @@ blueBlock: true
 nodate: true
 ---
 
-<hr class="u-margin-bottom-xl">
+<hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-bottom-xl" >
 ## Per approfondire
 <p></p>
 - [Introduzione alle linee guida di design per i servizi web della Pubblica Amministrazione](https://design-italia.readthedocs.io/it/stable/doc/introduzione-linee-guida-design.html)

@@ -3,15 +3,20 @@
 {% assign numfamily = family.size %}
 
 <div class="u-layout-r-withGutter u-margin-left-xxl u-margin-right-xxl u-margin-top-xxl ">
-<div class="Grid Grid--withGutter u-padding-all-l">
+<div class="Grid Grid--withGutter u-padding-all-l guides-grid">
 {% for main in family %}
 	<div class="Grid-cell u-md-size1of{{numfamily}} u-lg-size1of{{numfamily}}">
+	<img src="{{main.img | relative_url}}" class="guides-grid__img" >
 	<span class="u-text-h3"><a class="u-color-grey-50 u-linkClean" href="{{main.url}}">{{main.desc}}</a></span>
-		<div class="u-sizeFull">
+		<div class="u-sizeFull u-margin-top-xl">
 		{% assign items = guides | where_exp:"item","item.parent == main.desc" %}
 		<ul>
 		{% for item in items %}
-			<li class="u-margin-top-l u-margin-bottom-l u-text-r-xs"><a href="{{item.url}}" class="u-color-50 u-linkClean">{{item.desc}}</a></li>
+			<li class="u-margin-top-l u-margin-bottom-l u-text-r-xs u-padding-left-xl u-posRelative">
+				<a href="{{item.url}}" class="u-color-50 u-linkClean guides-grid__piu">
+				{{item.desc}}
+				</a>
+			</li>
 		{% endfor %}
 		</ul>
 		</div>

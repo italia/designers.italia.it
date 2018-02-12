@@ -715,6 +715,31 @@ body.layout-download {
   }
 }
 
+.guides-grid {
+  
+  &__img {
+    display: block;
+    margin-bottom: 0.5em; 
+  }
+  &__piu {
+
+    &:before { 
+      content: url(/assets/images/icons/icon-piu.png);
+      position: absolute;
+      left: 0;
+    }
+    &:hover {
+      &:before { 
+      content: url(/assets/images/icons/icon-piu-over.png);
+      position: absolute;
+      left: 0;
+      }
+    }
+    
+
+  }
+}
+
 /**/
 .lg-showcase img {
   max-width: 100%;
