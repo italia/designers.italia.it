@@ -3,15 +3,14 @@
 {% assign selecteds = "|" | split: '|' %}
 
 {% for pageguide in pageguidelines %}
-  {% for item in pageguide %}
-    {% assign selecteds = selecteds | push: guidelines[item] %}
-    
-  {% endfor %}
+  {% if guidelines[pageguide] %}
+      {% assign selecteds = selecteds | push: guidelines[pageguide] %}
+  {% endif %}
 {% endfor %}
 
 <section class="Relateds u-padding-top-xl">
 {% if selecteds.size > 0 %}
-{% assign selecteds_sorted = selecteds | sort %}
+{% assign selecteds_sorted = selecteds  %}
   <div>
     <div class="u-padding-all-xl">
         <h1 class="u-text-h2 u-color-grey-50">
