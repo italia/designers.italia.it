@@ -1,8 +1,11 @@
 <section class="u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom" style="background: #FAFAFA">
 
   <div class="u-layout-wide u-layoutCenter u-padding-top-m">
+
+    {% unless include.notitle %}
     <h2 class="u-text-r-xxl u-textWeight-700 u-color-grey-50 u-textCenter">{{ t.home_projects_title }}</h2>
     <p class="u-text-r-xl u-textWeight-400 u-color-grey-50 u-padding-top-s u-padding-r-bottom u-textCenter">{{ t.home_projects_subtitle }}</p>
+    {% endunless %}
 
       {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
 

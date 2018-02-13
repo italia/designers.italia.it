@@ -1,6 +1,6 @@
 ---
 title: Roadmap
-subtitle: Gli obiettivi raggiunti e quelli in cantiere su Designers Italia.
+subtitle: Cosa abbiamo in cantiere su Designers Italia
 layout: post
 lang: it
 toc: true
