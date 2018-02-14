@@ -3,6 +3,10 @@ title: Chi siamo
 lang: it
 layout: credits
 subtitle:
+nodate: true
+backgroundImage : '/assets/images/pages/chi-siamo-photo-unsplash.jpg'
+backgroundColor: ''
+backgroundPositionY: 'center'
 ---
 
 **Designers Italia** è il punto di riferimento per il design della Pubblica Amministrazione: guide, strumenti di lavoro e un forum per favorire la collaborazione tra designer e rafforzare il ruolo del design nello sviluppo dei servizi pubblici.

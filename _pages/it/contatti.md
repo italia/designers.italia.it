@@ -4,6 +4,10 @@ subtitle: Social, email, stampa e media
 lang: it
 layout: page
 toc: true
+nodate: true
+backgroundImage : '/assets/images/pages/contacts-trikutam-unsplash.jpg'
+backgroundColor: ''
+backgroundPositionY: 'center'
 ---
 
 ## Intro
