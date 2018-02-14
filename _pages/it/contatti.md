@@ -6,7 +6,7 @@ layout: page
 toc: true
 nodate: true
 backgroundImage : '/assets/images/pages/contacts-trikutam-unsplash.jpg'
-backgroundColor: ''
+backgroundColor: 'rgba(90, 178, 255, .5)'
 backgroundPositionY: 'center'
 ---
 

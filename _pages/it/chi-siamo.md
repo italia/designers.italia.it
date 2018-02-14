@@ -5,7 +5,7 @@ layout: credits
 subtitle:
 nodate: true
 backgroundImage : '/assets/images/pages/chi-siamo-photo-unsplash.jpg'
-backgroundColor: ''
+backgroundColor: 'rgba(90, 178, 255, .5)'
 backgroundPositionY: 'center'
 ---
 

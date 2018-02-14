@@ -5,15 +5,14 @@ permalink: '/blog/'
 title: Storie
 subtitle: Casi di studio e idee sul design dei servizi pubblici
 backgroundImage : '/assets/images/pages/david-solce-184827.jpg'
-backgroundColor: ''
+backgroundColor: 'rgba(90, 178, 255, .5)'
 ---
 
 {% include setlang.html %}
 {% assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse %}
-
+<div class="u-padding-top-xxl u-background-white"></div>
 <div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter" aria-hidden="true"
-      style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});
-        background-blend-mode: multiply; background-size: cover; min-height: 300px">
+      style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});background-blend-mode: multiply; background-size: cover; min-height: 400px">
 
       <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
 
