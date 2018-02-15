@@ -22,6 +22,7 @@ $(function() {
     e.preventDefault();
 
     var catkit = $(this).data('selectorclass');
+    var $catdesc = $('.categorykits-desc').not('.'+catkit);
     var $kits = $('.RelatedKits-cell').not('.'+catkit);
     var $allkits = $('.RelatedKits-cell');
     var $siblingsmenu = $(this).parents('ul').find('a');
@@ -30,6 +31,9 @@ $(function() {
     $(this).addClass('active');
 
     $allkits.removeClass('hidden');
+    $catdesc.addClass('hidden');
+    $('.categorykits-desc.'+catkit).removeClass('hidden');
+    
     if (catkit!='all') {
       $kits.addClass('hidden');
     }
