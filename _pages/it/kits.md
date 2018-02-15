@@ -4,7 +4,7 @@ subtitle: Risorse condivise per progettare, realizzare e migliorare i servizi di
 layout: kitsindex
 lang: it
 toc: true
-backgroundImage : '/assets/images/pages/puzzle-gauster-unsplash.jpg'
+backgroundImage : '/assets/images/pages/image-index-kits.jpg'
 backgroundColor: 'rgba(90, 178, 255, .5)'
 blueBlock: true
 nodate: true
