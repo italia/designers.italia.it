@@ -18,4 +18,22 @@ $(function() {
     $('#kitdownloadlist').toggleClass('u-hidden');
   });
 
+  $('.categorykits-selector a').on('click', function(e) {
+    e.preventDefault();
+
+    var catkit = $(this).data('selectorclass');
+    var $kits = $('.RelatedKits-cell').not('.'+catkit);
+    var $allkits = $('.RelatedKits-cell');
+    var $siblingsmenu = $(this).parents('ul').find('a');
+
+    $siblingsmenu.removeClass('active');
+    $(this).addClass('active');
+
+    $allkits.removeClass('hidden');
+    if (catkit!='all') {
+      $kits.addClass('hidden');
+    }
+
+  });
+
 })

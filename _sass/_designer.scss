@@ -410,15 +410,50 @@ $light-grey: #e6e9f0;
 /* RELATEDKITS 
 =============== */
 .RelatedKits {
-  &-cell > article {
-    background-size: auto;
-    background-position-y: 25%;
-    min-height: 10em;
-    background-blend-mode: multiply; 
-    &:hover {
-      background-color: #00c5ca !important;
+  &-cell {
+    &.hidden {
+      display: none !important;
+    }
+    & > article {
+      background-size: auto;
+      background-position-y: 25%;
+      min-height: 10em;
+      background-blend-mode: multiply; 
+      &:hover {
+        background-color: #00c5ca !important;
+      }
+      @media screen and (max-width: 768px) {
+        margin-bottom: 1em;
+      }
+
     }
   }
+  &--indexpage {
+    .RelatedKits-cell > article {
+      margin-bottom: 0.5em;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0.5em;
+        width: 100%;
+      }
+    }
+  }
+
+  .categorykits-selector {
+    margin: 0 auto;
+
+    li {
+      a {
+        margin: 0 auto;
+        &.active {
+          border-bottom: 2px solid currentColor;
+        }
+        &:hover {
+          color: #00c5ca !important
+        }
+      }
+    }
+  }
+
 }
 /* RELATEDS
 =============== */
