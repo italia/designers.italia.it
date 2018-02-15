@@ -1,5 +1,4 @@
 ---
-sitemap: false
 title: Come lo uso
 lang: it
 layout: megablocks2

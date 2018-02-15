@@ -1,15 +1,17 @@
 it:
-  - title: Service design
-    url: /service-design
+  - title: Chi siamo
+    url: '/chi-siamo'
+  - title: Le guide
+    url: /guide
   - title: Content design
     url: /content-design
-  - title: User interface
-    url: /user-interface
-  - title: User research
-    url: /user-research
-  - title: Progetti
-    liClass: 'Megamenu-item Megamenu-item--vert u-flexExpandLeft'
+  - title: I kit
+    url: /kits
+    liClass: 'Megamenu-item Megamenu-item--vert Megamenu-item--dropdown'
+    subitems_by_type: kits
+  - title: I progetti
     url: '#'
+    liClass: 'Megamenu-item Megamenu-item--vert Megamenu-item--dropdown'
     subitems:
       - title: SPID
         url: /progetti/spid
@@ -24,9 +26,14 @@ it:
       - title: Tutti i progetti
         url: /progetti
         liClass: 'Megamenu-showAll'
-  - title: Storie
+  - title: Le storie
     url: '/blog'
-  - title: Chi siamo
-    url: '/chi-siamo'
-  - title: Contatti
+  - title: La roadmap
+    url: '/roadmap'
+  - title: I contatti
     url: '/contatti'
+  - title: Come lo uso
+    url: '/come-lo-uso'
+    liClass: 'Megamenu-item u-flexExpandLeft'
+  - title: Come partecipo
+    url: '/come-partecipo'

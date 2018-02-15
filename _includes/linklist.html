@@ -30,6 +30,16 @@
       {% if item.subitems %}
     		{% include linklist.html layout=item.layout items=item.subitems _internal=true %}
     	{% endif %}
+
+      {% if item.subitems_by_type %}
+        {% assign typepages = site[item.subitems_by_type] | where: 'lang', active_lang | sort: title %}
+        {% assign typeitems = "|" | split: '|' %}
+        {% for tp in typepages %}
+          {% assign typeitems = typeitems | push: tp %}
+        {% endfor %}
+
+        {% include linklist.html layout=item.layout items=typeitems _internal=true %}
+      {% endif %}
   	</li>
   {% endfor %}
 
