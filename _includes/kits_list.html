@@ -1,0 +1,15 @@
+{% if include.kitcategory %}
+	{% assign kits = site.kits | where: "kitcategory", include.kitcategory | sort: title %}
+{% else %}
+	{% assign kits = site.kits | sort: title %}
+{% endif %}
+
+<ul >
+	{% for kit in kits %}
+	<li class="u-margin-top-l u-margin-bottom-l u-text-r-xs u-padding-left-xl u-posRelative">
+		<a href="{{kit.url}}" class="u-color-50 u-linkClean guides-grid__piu">
+		{{kit.title}}
+		</a>
+	</li>
+	{% endfor %}
+</ul>
