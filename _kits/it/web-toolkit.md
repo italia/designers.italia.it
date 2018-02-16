@@ -17,7 +17,7 @@ guidelines:
 - User interface
 
 download_file :
-- file : 
+- file : 'https://italia.github.io/design-web-toolkit/'
   caption : 'Web Toolkit'
   type : 'internal'
 
