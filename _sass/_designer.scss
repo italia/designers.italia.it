@@ -142,12 +142,43 @@
 /** HOME 
 ========================= */
 .blk8 {
+  background-color: #fbf9f9;
   background-image: url(/assets/images/blk8/hp-kits-bkg.jpg);
   background-repeat: no-repeat;
   background-position-y: center;
   background-position-x: center;
   @media screen and (max-width: 767px) {
-    background-image: none;
+    background-position-y: -80px;
+  }
+}
+.kits-grid {
+  
+  &__img {
+    display: block;
+    margin-bottom: 0.5em; 
+  }
+  &__piu {
+
+    &:before { 
+      content: url(/assets/images/icons/icon-piu--teal.png);
+      position: absolute;
+      left: 0;
+    }
+    &:hover {
+      &:before { 
+      content: url(/assets/images/icons/icon-piu-over--teal.png);
+      position: absolute;
+      left: 0;
+      }
+    }
+    
+
+  }
+}
+.blk9 {
+  .guides-grid__img {
+    height: 90px;
+    max-width: 100%;
   }
 }
 
