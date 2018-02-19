@@ -8,7 +8,7 @@
     <p class="u-text-r-m u-textWeight-400 u-color-50 u-padding-top-xxs u-padding-r-bottom u-textCenter">{{ t.home_designkit_action }}</p>
     {% endunless %}
 
-    <div class="Grid Grid--alignCenter Grid--alignMiddle Grid--equalHeight">
+    <div class="Grid Grid--alignCenter Grid--alignMiddle Grid--equalHeight u-padding-top-xxl">
       <div class="u-sizeFull u-hidden u-sm-block u-md-block u-lg-block u-sm-size4of12 u-md-size4of12 u-lg-size4of12 u-textRight">
         <div class="u-inlineBlock u-textLeft">
         {% include kits_list.html kitcategory='capire' %}
@@ -21,16 +21,12 @@
         {% include kits_list.html kitcategory='ideare' %}
       </div>
     </div>
-    <div class="u-hidden u-sm-block u-md-block u-lg-block u-padding-top-xl">
+    <div class="u-hidden u-sm-block u-md-block u-lg-block u-padding-top-xxl">
       <div class="Grid Grid--alignCenter Grid--alignMiddle Grid--equalHeight">
-        <div class="u-sizeFull u-sm-size4of12 u-md-size4of12 u-lg-size4of12 u-textRight">
-        </div>
-        <div class="u-sizeFull u-sm-size4of12 u-md-size4of12 u-lg-size4of12 u-textCenter">
+        <div class="u-sizeFull u-sm-size4of12 u-md-size4of12 u-lg-size3of12 u-textCenter">
           <div class="u-inlineBlock u-textLeft">
-          {% include kits_list.html kitcategory='fare' %}
+          {% include kits_list.html kitcategory='fare' layout='two-cols' %}
           </div>
-        </div>
-        <div class="u-sizeFull u-sm-size4of12 u-md-size4of12 u-lg-size4of12">
         </div>
       </div>
     </div>
