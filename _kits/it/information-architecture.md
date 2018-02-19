@@ -6,7 +6,7 @@ subtitle: Organizza la struttura dei contenuti in modo chiaro, efficace e coeren
 backgroundImage : '/assets/images/kits/03_ResearchPlan_BG_site.png'
 backgroundColor: '#439af1'
 nodate: true
-kitcategory: capire
+kitcategory: ideare
 tags: 
 - navigation-tree
 - information-architecture

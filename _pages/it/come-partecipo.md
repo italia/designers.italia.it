@@ -17,7 +17,7 @@ blocks:
       url: 'mailto:contatti@designers.italia.it'
 - title: Alimenta il design system
   subtitle: 'Il design system di Designers Italia si compone di alcuni elementi (alcuni ancora in via di definizione): wireframe kit, UI kit e web toolkit.<br>Grazie a dei <a href="https://github.com/italia" ><i>repository</i> pubblici su GitHub</a> è possibile proporre modifiche o proporre nuovi elementi allo <a href="https://github.com/italia/design-ui-kit">UI kit</a>, all’<a href="https://github.com/italia/design-icon-kit">icon kit</a>, al <a href="https://github.com/italia/design-web-toolkit">web toolkit</a>, attraverso delle <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> o delle <a href="https://guides.github.com/features/issues/"><i>issues</i></a> con dei file allegati.' 
-  img: /assets/images/pages/alimenta il design system.jpg
+  img: /assets/images/pages/alimenta-il-design-system.jpg
   button:
     - label: Partecipa allo UI Kit
       url: 'https://github.com/italia/design-ui-kit'

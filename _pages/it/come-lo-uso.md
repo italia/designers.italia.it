@@ -5,7 +5,7 @@ layout: megablocks2
 blocks:
 - title: Vuoi utilizzare risorse e template già pronti per costruire il tuo servizio?
   subtitle: Scarica gli elementi grafici predefiniti per risparmiare tempo e arrivare facilmente ad un insieme di schermate coerenti.
-  img: /assets/images/pages/placeholder_kit_12_web.png
+  img: /assets/images/kits/placeholder_kit_12_web.png
   button:
   - label: UI kit
     url: 'https://www.behance.net/gallery/53244611/UI-Kit-designers-italia'
