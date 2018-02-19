@@ -139,39 +139,47 @@
   padding-top: 0 !important;
 }
 
-/** HOME 
+/** HOME
 ========================= */
 .blk8 {
-  background-color: #fbf9f9;
-  background-image: url(/assets/images/blk8/hp-kits-bkg.jpg);
+  background-color: #fafafa;
+  background-image: url(/assets/images/blk8/hp-kits-bkg.svg);
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: -275px;
   background-position-x: center;
-  @media screen and (max-width: 767px) {
-    background-position-y: -80px;
+  background-size: cover;
+  @media screen and (min-width: 768px) {
+    background-image: url(/assets/images/blk8/user-centered-2x.png), url(/assets/images/blk8/hp-kits-bkg.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position-y: center, center;
+    background-position-x: center, center;
+    background-size: 200px 200px, cover;
+  }
+  @media screen and (min-width: 992px) {
+    background-size: 300px 300px, cover;
   }
 }
 .kits-grid {
-  
+
   &__img {
     display: block;
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.5em;
   }
   &__piu {
 
-    &:before { 
+    &:before {
       content: url(/assets/images/icons/icon-piu--teal.png);
       position: absolute;
       left: 0;
     }
     &:hover {
-      &:before { 
+      &:before {
       content: url(/assets/images/icons/icon-piu-over--teal.png);
       position: absolute;
       left: 0;
       }
     }
-    
+
 
   }
 }
@@ -450,7 +458,7 @@ $light-grey: #e6e9f0;
     }
   }
 }
-/* RELATEDKITS 
+/* RELATEDKITS
 =============== */
 .RelatedKits {
   &-cell {
@@ -461,7 +469,7 @@ $light-grey: #e6e9f0;
       background-size: auto;
       background-position-y: 25%;
       min-height: 10em;
-      background-blend-mode: multiply; 
+      background-blend-mode: multiply;
       &:hover {
         background-color: #00c5ca !important;
       }
@@ -552,7 +560,7 @@ $light-grey: #e6e9f0;
     }
     .download-button {
       color: #fff !important;
-      background-color: #00C5CA !important;      
+      background-color: #00C5CA !important;
 
       &--float {
         display: block;
@@ -565,7 +573,7 @@ $light-grey: #e6e9f0;
         background-color: #00c5ca !important;
         border: none;
         white-space: normal;
-        
+
         .Icon {
           margin-top: 4px;
         }
@@ -799,26 +807,26 @@ body.layout-download {
 }
 
 .guides-grid {
-  
+
   &__img {
     display: block;
-    margin-bottom: 0.5em; 
+    margin-bottom: 0.5em;
   }
   &__piu {
 
-    &:before { 
+    &:before {
       content: url(/assets/images/icons/icon-piu.png);
       position: absolute;
       left: 0;
     }
     &:hover {
-      &:before { 
+      &:before {
       content: url(/assets/images/icons/icon-piu-over.png);
       position: absolute;
       left: 0;
       }
     }
-    
+
 
   }
 }
@@ -841,7 +849,7 @@ body.layout-download {
   }
 }
 
-/* OVERRIDES 
+/* OVERRIDES
 ============= */
 .Megamenu-item {
   & > a {
