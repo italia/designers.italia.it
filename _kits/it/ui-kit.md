@@ -1,5 +1,5 @@
 ---
-title: UI kit
+title: UI Kit
 lang: it
 layout: download
 subtitle: Progetta l’interfaccia di un servizio con uno stile grafico semplice e coerente

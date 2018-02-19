@@ -1,5 +1,5 @@
 ---
-title: Wireframe kit
+title: Wireframe Kit
 lang: it
 layout: download
 subtitle: Definisci il modello di interazione e l’organizzazione di informazioni e contenuti nelle schermate
