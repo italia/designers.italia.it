@@ -25,7 +25,7 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: 'placeholder_kit_10_UI kit.png'
+- img: '/assets/images/kits/placeholder_kit_10_UI kit.png'
   label:
 ---
 
