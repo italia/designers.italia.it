@@ -21,7 +21,7 @@ download_file :
   caption : 'Kit SEO'
 
 carousel:
-- img: 'placeholder_kit_13_SEO.png'
+- img: '/assets/images/kits/placeholder_kit_13_SEO.png'
   label:
 ---
 
