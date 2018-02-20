@@ -1,6 +1,6 @@
 ---
 title: Web analytics siti pubblici
-description: Una piattaforma di web analytics open source centralizzata per analizzare dati di traffico dei siti della pubblica amministrazione.
+description: Una piattaforma di web analytics open source per analizzare dati di traffico dei siti della pubblica amministrazione.
 #subtitle: 
 #payoff: 
 logo: /assets/images/projects/web-analytics-cover.jpg
@@ -16,18 +16,21 @@ I siti web della Pubblica Amministrazione italiana sono il punto di accesso priv
 
 Per questo motivo, l’analisi del comportamento degli utenti che visitano i siti pubblici e l’avvio di azioni di ottimizzazione basate sui dati diventa fondamentale per assicurare ai cittadini un’esperienza web ottimale delle informazioni e dei servizi erogati. 
 
-Il [Team Digitale](https://teamdigitale.governo.it/) ha deciso di avviare, in collaborazione con [AgID](http://www.agid.gov.it/), la sperimentazione di una piattaforma di web analytics centralizzata basata sul progetto *open source* **Piwik** dedicata alle esigenze specifiche delle principali tipologie di siti web della PA italiana. 
+Il [Team Digitale](https://teamdigitale.governo.it/) ha deciso di avviare, in collaborazione con [AgID](http://www.agid.gov.it/), la sperimentazione di una piattaforma di web analytics basata sul progetto *open source* **Piwik/Matomo** dedicata alle esigenze specifiche delle principali tipologie di siti web della PA italiana. 
 
-Il percorso prevede una prima fase di sperimentazione con la collaborazione di un nucleo di amministrazioni pilota rappresentativo delle esigenze di diversi siti web pubblici. 
+Il percorso ha previsto una prima fase di sperimentazione con la collaborazione di un nucleo di amministrazioni pilota rappresentativo delle esigenze di diversi siti web pubblici. 
 
-Nel mese di Novembre, a conclusione del progetto pilota verranno pubblicate alcune delle principale evidenze e si procederà alla valutazione della soluzione. 
+Nel mese di Novembre, a conclusione del progetto pilota, sono state pubblicate alcune case histories finalizzate a raccontare alcuni fra i principali casi d’uso della piattaforma nell’ambito della progettazione/riprogettazione data driven di siti web PA aderenti alla sperimentazione. 
 
-In caso positivo, si procederà a identificare, in collaborazione con la community di sviluppatori di servizi pubblici digitali [Developers Italia](https://developers.italia.it/) una soluzione tecnologica scalabile e un processo di *on boarding* per i siti pubblici italiani.
+- [Cosa abbiamo imparato su Piwik/Matomo](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888)
+- [Cosa fanno gli utenti del sito di un Comune? Ce lo dice Piwik](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35) (*Si specifica che nell’ambito delle differenti configurazioni Piwik/Matomo, le denominazioni di alcune delle funzionalità potrebbero variare*)
+
+Dal mese di dicembre 2017 il team di lavoro si sta occupando di definire soluzioni tecnologiche stabili e di lungo periodo, anche nell'ambito della community di sviluppatori di servizi pubblici digitali [Developers Italia](https://developers.italia.it/).
 
 ### Siti e network di siti aderenti alla sperimentazione
-La prima fase del progetto pilota coinvolge un panel di circa 40 siti web, selezionati per rispondere all’esigenza di far emergere e categorizzare i bisogni di analisi di traffico web di specifiche categorie di PA.
+La prima fase del progetto pilota ha coinvolto un panel di circa 40 siti web, selezionati per rispondere all’esigenza di far emergere e categorizzare i bisogni di analisi di traffico web di specifiche categorie di PA.
 
-Le pubbliche amministrazioni aderenti sono: 
+Le pubbliche amministrazioni aderenti sono state: 
 
 - [Governo Italiano](http://www.governo.it/)
 - [INPS - Istituto Nazionale Previdenza Sociale](https://www.inps.it)
@@ -49,11 +52,11 @@ Le pubbliche amministrazioni aderenti sono:
 
 
 ### Funzionalità
-Durante la sperimentazione sono utilizzate la maggior parte delle funzionalità *core* della [piattaforma open source Piwik](https://piwik.org/). Sono inoltre testate alcune delle funzionalità *premium* disponibili, in modalità “trial”.    
+Durante la sperimentazione sono state utilizzate la maggior parte delle funzionalità della [piattaforma open source Piwik/Matomo](https://piwik.org/). Sono state inoltre testate alcune delle funzionalità *premium* disponibili, in modalità “trial”.    
 
 ### Roadmap
 
 - Luglio *Avvio del progetto pilota* (set up piattaforma open source Piwik)
 - Agosto- Settembre *On boarding* (panel di diverse tipologie di siti pubblici monitorati)
 - Ottobre-Novembre *Analisi dei risultati* (punti di forza e di debolezza della soluzione rispetto ai bisogni)
-- Novembre-Dicembre *Roll out* (in caso di valutazione positiva, identificazione soluzione tecnologica scalabile e rollout)
+- Dicembre *Inizio dello studio per l'identificazione delle soluzioni tecnologiche* (in corso)
