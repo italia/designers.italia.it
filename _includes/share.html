@@ -1,4 +1,4 @@
-{% assign backgroundColor = include.backgroundColor | default:'u-background-50' %}
+{% assign backgroundColor = include.backgroundColor | default:'u-background-white' %}
 {% assign textColor = include.textColor | default:'' %}
 {% assign layout = include.layout | default:'u-textCenter u-layoutCenter' %}
 <p class="u-margin-bottom-xs u-textWeight-300 {{textColor}}">{{ t.share_msg }} {{ t.on_ }}</p>
@@ -8,7 +8,7 @@
       {% assign shareurl = page.url | absolute_url | escape %}
       <li class="u-inlineBlock u-padding-right-xs u-padding-left-xs">
         <a href="{{ social[1].sharelink | replace: '<url>', shareurl }}" title="{{ social[1].name }}"
-          class="u-padding-all-s {{backgroundColor}} u-color-white u-inlineBlock u-linkClean u-borderRadius-circle u-alignMiddle"
+          class="u-padding-all-s {{backgroundColor}} u-color-50 u-inlineBlock u-linkClean u-borderRadius-circle u-alignMiddle u-boxShadow-none"
           ><span class="Icon Icon-{{ social[0] }}"></span>
           <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span>
         </a>

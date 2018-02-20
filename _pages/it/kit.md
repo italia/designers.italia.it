@@ -1,5 +1,5 @@
 ---
-title: Kit
+title: I design kit
 subtitle: Risorse condivise per progettare, realizzare e migliorare i servizi digitali della Pubblica Amministrazione.
 layout: kitsindex
 lang: it

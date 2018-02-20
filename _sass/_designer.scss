@@ -171,24 +171,21 @@
       content: url(/assets/images/icons/icon-piu--teal.png);
       position: absolute;
       left: 0;
+      width: 19px;
     }
     &:hover {
       &:before {
       content: url(/assets/images/icons/icon-piu-over--teal.png);
       position: absolute;
       left: 0;
+      width: 19px;
       }
     }
 
 
   }
 }
-.blk9 {
-  .guides-grid__img {
-    height: 90px;
-    max-width: 100%;
-  }
-}
+
 
 /** Megamenu tweaks
     ===================== */
@@ -243,6 +240,12 @@
     color: #06c;
     text-decoration: none;
   }
+}
+.u-boxShadow-none {
+  box-shadow: none !important;
+}
+.u-margin-0auto {
+  margin: 0 auto;
 }
 
 /** Badge
@@ -811,6 +814,7 @@ body.layout-download {
   &__img {
     display: block;
     margin-bottom: 0.5em;
+    height: 75px;
   }
   &__piu {
 
