@@ -166,19 +166,18 @@
     margin-bottom: 0.5em;
   }
   &__piu {
-
     &:before {
-      content: url(/assets/images/icons/icon-piu--teal.png);
+      content: " ";
       position: absolute;
       left: 0;
       width: 19px;
+      height: 19px;
+      background-image: url(/assets/images/icons/icon-more-teal.png);
+      background-size: cover;
     }
     &:hover {
       &:before {
-      content: url(/assets/images/icons/icon-piu-over--teal.png);
-      position: absolute;
-      left: 0;
-      width: 19px;
+        background-image: url(/assets/images/icons/icon-more-teal-h.png);
       }
     }
 
@@ -817,21 +816,20 @@ body.layout-download {
     height: 75px;
   }
   &__piu {
-
     &:before {
-      content: url(/assets/images/icons/icon-piu.png);
+      content: " ";
       position: absolute;
       left: 0;
+      width: 19px;
+      height: 19px;
+      background-image: url(/assets/images/icons/icon-more-blue.png);
+      background-size: cover;
     }
     &:hover {
       &:before {
-      content: url(/assets/images/icons/icon-piu-over.png);
-      position: absolute;
-      left: 0;
+        background-image: url(/assets/images/icons/icon-more-blue-h.png);
       }
     }
-
-
   }
 }
 
