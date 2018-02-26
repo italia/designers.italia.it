@@ -17,10 +17,10 @@ guidelines:
 - "User interface"
 
 download_file :
-- file : 
+- file : 'https://github.com/italia/design-ui-kit'
   caption : 'UI Kit'
   type : 'internal'
-- file : 
+- file : 'https://italia.github.io/design-web-toolkit/components/detail/icons.html'
   caption : 'Icon Kit'
   type : 'internal'
 
