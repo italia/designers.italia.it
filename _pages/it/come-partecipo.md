@@ -4,7 +4,7 @@ lang: it
 layout: megablocks
 blocks:
 - title: Partecipa alla vita del forum
-  subtitle: Sul <a href="https://forum.italia.it/c/design">forum di Designers Italia</a> puoi fare proposte, avanzare <a href="https://forum.italia.it/c/design/feedback-community">idee e suggerimenti</a>, segnalare best practice o <a href="https://forum.italia.it/c/design/esempi-linee-guida">esempi di applicazione</a> delle linee guida, discutere i temi legati al <a href="https://forum.italia.it/c/design/service">service design</a>, al <a href="https://forum.italia.it/c/design/content">content design</a>, alla <a href="https://forum.italia.it/c/design/user-interface">user interface</a> e alla <a href="https://forum.italia.it/c/design/user-research">user research</a>. 
+  subtitle: Sul forum di Designers Italia puoi fare proposte, avanzare <a href="https://forum.italia.it/c/design/feedback-community">idee e suggerimenti</a>, segnalare best practice o <a href="https://forum.italia.it/c/design/esempi-linee-guida">esempi di applicazione</a> delle linee guida, discutere i temi legati al <b>service design</b>, al <b>content design</b>, alla <b>user interface</b> e alla <b>user research</b>. 
   img: /assets/images/pages/persone.jpg
   button:
     - label: Vai al forum
@@ -16,7 +16,7 @@ blocks:
     - label: Mandaci la tua proposta!
       url: 'mailto:contatti@designers.italia.it'
 - title: Alimenta il design system
-  subtitle: 'Il design system di Designers Italia si compone di alcuni elementi (alcuni ancora in via di definizione): wireframe kit, UI kit e web toolkit.<br>Grazie a dei <a href="https://github.com/italia" ><i>repository</i> pubblici su GitHub</a> è possibile proporre modifiche o proporre nuovi elementi allo <a href="https://github.com/italia/design-ui-kit">UI kit</a>, all’<a href="https://github.com/italia/design-icon-kit">icon kit</a>, al <a href="https://github.com/italia/design-web-toolkit">web toolkit</a>, attraverso delle <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> o delle <a href="https://guides.github.com/features/issues/"><i>issues</i></a> con dei file allegati.' 
+  subtitle: 'Il design system di Designers Italia si compone di alcuni elementi (alcuni ancora in via di definizione): wireframe kit, UI kit e web toolkit.<br>Grazie a dei <i>repository</i> pubblici su GitHub è possibile proporre modifiche o proporre nuovi elementi allo UI kit, all’icon kit, al web toolkit, attraverso delle <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> o delle <a href="https://guides.github.com/features/issues/"><i>issues</i></a> con dei file allegati.' 
   img: /assets/images/pages/alimenta-il-design-system.jpg
   button:
     - label: Partecipa allo UI Kit

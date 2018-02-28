@@ -24,7 +24,8 @@ layout: default
 
 {% for block in blocks %}
 {% capture bkgColor %}{% cycle 'u-background-50', 'u-background-white' %}{% endcapture %}
-{% capture textColor %}{% cycle 'u-color-white', 'u-color-50' %}{% endcapture %}
+{% capture textColor %}{% cycle 'u-color-white', 'u-color-grey-50' %}{% endcapture %}
+{% capture titleColor %}{% cycle 'u-color-white', 'u-color-50' %}{% endcapture %}
 {% capture oddEven %}{% cycle 'odd', 'even' %}{% endcapture %}
 {% capture buttonBkg %}{% cycle 'u-background-white', 'u-background-teal-60' %}{% endcapture %}
 {% capture buttonColor %}{% cycle 'u-color-50', 'u-color-white' %}{% endcapture %}
@@ -40,7 +41,7 @@ layout: default
 
   <div class="Megablockgrid-cell Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <div class="Megablockgrid-text u-padding-left-xxl u-padding-right-xl u-padding-top-xl u-padding-bottom-xl u-margin-left-xxl u-margin-bottom-xxl u-zindex-20" >
-        <h1 class="{{textColor}} u-text-h3 u-lineHeight-l u-sizeFull u-margin-top-xxl">{{ block.title }}</span>
+        <h1 class="{{titleColor}} u-text-h3 u-lineHeight-l u-sizeFull u-margin-top-xxl">{{ block.title }}</span>
         </h1>
         <p class="{{textColor}} u-text-r-s u-lineHeight-l u-sizeFull u-margin-top-m">{{ block.subtitle }}</span>
         </p>
