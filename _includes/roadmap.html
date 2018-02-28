@@ -7,7 +7,7 @@
     <ul>
       {% for activity in month[1] %}
       <li class="activity-list">
-        <h3 {% unless activity.status == 'todo' %}class="activity-done"{% endunless %}>{{ activity.title }}</h3>
+        <h3 class="u-color-50{% unless activity.status == 'todo' %} activity-done{% endunless %}">{{ activity.title }}</h3>
         <div class="u-md-flex u-lg-flex">
           <div class="u-md-size1of3 u-lg-size1of3 u-flexOrderLast">
             <ul>
