@@ -21,7 +21,7 @@
 	<section class="u-background-teal-30 u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
 		  <h1 class="u-text-h2 u-textCenter u-color-white">Storie</h1>
 		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-white u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
-		  <div class=" u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
+		  <div class=" u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill {% if posts_sorted.size == 2 %}Grid--alignCenter {% endif%}">
         {% if posts_sorted.size == 1 %}
         {% assign post = posts_sorted[0] %}
         <div class="Grid-cell">
@@ -44,17 +44,17 @@
         </div>
         {% else %}
 		     {% for post in posts_sorted | limit: 3 %}
-		     {% assign numCols = 3 %}
-		     {% if posts_sorted.size==2 %}
-		     	{% assign numCols = 2 %}
-		     {% endif %}
-		      <div class="Grid-cell u-md-size1of{{numCols}} u-lg-size1of{{numCols}}">
-		      	<article class="Grid  Grid--fill u-background-white u-md-flexDirectionCol u-lg-flexDirectionCol">
-		      		<figure class="Grid-cell u-size1of3 u-md-sizeFull u-lg-sizeFull u-padding-all-xs ">
-    					<img class="u-sizeFull"
+		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
+		      	<article class="u-background-white">
+		      		<figure class="u-sizeFull u-padding-all-xs ">
+		      			<a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
+    					<img class="u-sizeFull u-hidden u-md-block u-lg-block"
     					src="https://cdn-images-1.medium.com/fit/t/400/400/{{ post.medium_preview_image_id }}" alt="">
+    					<img class="u-sizeFull u-md-hidden u-lg-hidden"
+    					src="https://cdn-images-1.medium.com/fit/t/600/200/{{ post.medium_preview_image_id }}" alt="">
+    					</a>
   					</figure>
-		      		<header class="Grid-cell u-size2of3 u-md-sizeFull u-lg-sizeFull u-padding-all-l">
+		      		<header class="u-sizeFull u-padding-all-m ">
 		      		<h1 class="u-text-h4">
 				          <a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
 				            {{post.medium_title}}
