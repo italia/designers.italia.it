@@ -37,7 +37,7 @@ Su pagoPA la community di Designers Italia ha lavorato:
 
 [![pagoPA](http://img.youtube.com/vi/ZdzAVMQlAYM/0.jpg)](http://www.youtube.com/watch?v=ZdzAVMQlAYM "pagoPA")
 
-### pagoPA, dove siamo 
+### I prossimi passi del progetto pagoPA
 
 Su un blog post nel [canale Medium del Team Digitale](https://medium.com/team-per-la-trasformazione-digitale) puoi leggere i principali aggiornamenti sul progetto pagoPA:
 
