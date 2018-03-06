@@ -17,25 +17,25 @@ guidelines:
 - User research
 
 download_file :
-- file : 
+- file : 'https://docs.google.com/document/d/1qoZzPVaIDE8sKg1Fa6JKSG-EPsy_YTtgSlDaV7O4X2c/edit?usp=sharing'
   caption : 'Scheda partecipanti'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/document/d/1kM_3umUUiPp51iTsfsoQKhdV2-FD6bjKKFp17xTB124/edit?usp=sharing'
   caption : 'Guida alla conduzione del test'
   type : 'internal'
 - file : 'https://docs.google.com/document/d/18Ln0d0gBtsIUWr6X5CXKQFvFD0LVdsSbdD9njyj0C50/edit?usp=sharing'
   caption : 'Liberatoria per il consenso al trattamento dei dati'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/document/d/1Hu4jCyXbvE_YeEcXyYufxYJuspQH-artlPIfSzwFWek/edit?usp=sharing'
   caption : 'Net Promoter Score'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/document/d/1SG7o9W7rWfHRuIomwFJYEi7MDJ-WwdNb314uD5bH8vQ/edit?usp=sharing'
   caption : 'Questionario SUS'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/document/d/1Ee-ztlsSE4SKZXg4hlyIz-iwxTJyr7P_G06MchnNwvA/edit?usp=sharing'
   caption : 'Domande UMUX Lite'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/document/d/1aJxYnb6f6lLYMqsYEGgZ9d4qTwQbR62mDiSlWpU-9zY/edit?usp=sharing'
   caption : 'Tabella dei risultati'
   type : 'internal'
 - file : 
@@ -43,7 +43,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_07_usabilitytest-2.png'
+- img: '/assets/images/kits/slide01_UsabilityTest_slide.jpg'
+  label:
+- img: '/assets/images/kits/slide02_UsabilityTest_slide.jpg'
   label:
 ---
 
