@@ -17,18 +17,20 @@ guidelines:
 - User research
 
 download_file :
-- file : 
+- file : '/assets/downloads/Designers_UserJourney_Esercizio.pdf'
   caption : 'Esercizio di mappatura della user journey'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/spreadsheets/d/1M0eQsBtv6Fx9xYoCEsjUzHCIDaByfCnHEV9VhyMgfpA/edit?usp=sharing'
   caption : 'User journey map su excel'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/presentation/d/1aVisX1zZSPJEJFfALr4IosVMzzf9ocxbhYR0WhU77gc/edit?usp=sharing'
   caption : 'Presentazione di una user journey map'
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_05_user-journey-2.png'
+- img: '/assets/images/kits/slide01_UserJourney_slide.jpg'
+  label:
+- img: '/assets/images/kits/slide02_UserJourney_slide.jpg'
   label:
 ---
 
