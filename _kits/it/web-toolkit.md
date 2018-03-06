@@ -22,7 +22,11 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_12_web.png'
+- img: '/assets/images/kits/01_WebToolkit_slide.jpg'
+  label:
+- img: '/assets/images/kits/02_WebToolkit_slide.jpg'
+  label:
+- img: '/assets/images/kits/03_WebToolkit_slide.jpg'
   label:
 ---
 

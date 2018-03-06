@@ -25,7 +25,13 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_10_UI kit.png'
+- img: '/assets/images/kits/01_UI-Kit_Slider.jpg'
+  label:
+- img: '/assets/images/kits/02_UI-Kit_Slider.jpg'
+  label:
+- img: '/assets/images/kits/03_UI-Kit_Slider.jpg'
+  label:
+- img: '/assets/images/kits/04_UI-Kit_Slider.jpg'
   label:
 ---
 

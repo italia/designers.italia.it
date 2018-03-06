@@ -26,7 +26,7 @@ download_file :
 - file : 'https://docs.google.com/document/d/1JVctSWSJN6tJeno70OjA8Tl_4rs0dIJ5XLoOQbIgo24/edit?usp=sharing'
   caption : 'Liberatoria per il consenso al trattamento dei dati'
   type : 'internal'
-- file : 'https://docs.google.com/spreadsheets/d/1AAfWOl6eghAKJn-i-htOKV5j2zSHhAM2IHTNxvxuIWY/edit?usp=sharing'
+- file : 'https://docs.google.com/spreadsheets/d/1AAfWOl6eghAKJn-i-htOKV5j2zSHhAM2IHTNxvxuIWY/edit#gid=1785015941'
   caption : 'Strumenti di notazione'
   type : 'internal'
 - file : 
