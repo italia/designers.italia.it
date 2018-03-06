@@ -69,4 +69,4 @@ I test di usabilità possono essere svolti durante la **fase di sviluppo** di un
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-Questo kit fornisce tutti gli strumenti necessari per la **preparazione, conduzione e l’analisi dei risultati** di un test di usabilità.
+Questo kit fornisce tutti gli strumenti necessari per la **preparazione, conduzione e l’analisi dei risultati** di un test di usabilità, sulla base di quanto indicato nel [Protocollo eGLU](http://www.funzionepubblica.gov.it/glu).
