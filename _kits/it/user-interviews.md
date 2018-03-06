@@ -20,13 +20,13 @@ download_file :
 - file : 
   caption : 'Protocollo di ricerca'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/document/d/1Ev6UG3uRbpTPdYsNrqqgDZjiMpVDvPQk-XfriH2QDac/edit?usp=sharing'
   caption : 'Guida alla conduzione dell’intervista'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/document/d/1JVctSWSJN6tJeno70OjA8Tl_4rs0dIJ5XLoOQbIgo24/edit?usp=sharing'
   caption : 'Liberatoria per il consenso al trattamento dei dati'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/spreadsheets/d/1AAfWOl6eghAKJn-i-htOKV5j2zSHhAM2IHTNxvxuIWY/edit#gid=1785015941'
   caption : 'Strumenti di notazione'
   type : 'internal'
 - file : 
@@ -34,7 +34,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_04_interviews.png'
+- img: '/assets/images/kits/01_InterviewGuide_Slide.jpg'
+  label:
+- img: '/assets/images/kits/02_InterviewGuide_Slide.jpg'
   label:
 ---
 
