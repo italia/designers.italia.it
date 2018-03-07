@@ -20,15 +20,17 @@ download_file :
 - file : 
   caption : 'Stakeholder matrix'
   type : 'internal'
-- file : 
+- file : '/assets/downloads/Designers_SystemMap_Esercizio.pdf'
   caption : 'Esercizio di costruzione di una system map'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/presentation/d/1ViD5OEE__hmrC7vKfLLzJM_86zpn25W7WLid0ahnAP8/edit?usp=sharing'
   caption : 'Presentazione di una system map'
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_01_system_map.png'
+- img: '/assets/images/kits/slide01_SystemMap_Slide.jpg'
+  label:
+- img: '/assets/images/kits/slide02_SystemMap_Slide.jpg'
   label:
 ---
 

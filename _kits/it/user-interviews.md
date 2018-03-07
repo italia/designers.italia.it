@@ -34,9 +34,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/01_InterviewGuide_Slide.jpg'
+- img: '/assets/images/kits/slide01_InterviewGuide_Slide.jpg'
   label:
-- img: '/assets/images/kits/02_InterviewGuide_Slide.jpg'
+- img: '/assets/images/kits/slide02_InterviewGuide_Slide.jpg'
   label:
 ---
 
