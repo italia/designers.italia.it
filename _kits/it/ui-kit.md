@@ -25,13 +25,11 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/01_UI-Kit_Slider.jpg'
+- img: '/assets/images/kits/UI-Kit-slide-01.jpg'
   label:
-- img: '/assets/images/kits/02_UI-Kit_Slider.jpg'
+- img: '/assets/images/kits/UI-Kit-slide-02.jpg'
   label:
-- img: '/assets/images/kits/03_UI-Kit_Slider.jpg'
-  label:
-- img: '/assets/images/kits/04_UI-Kit_Slider.jpg'
+- img: '/assets/images/kits/UI-Kit-slide-03.jpg'
   label:
 ---
 
