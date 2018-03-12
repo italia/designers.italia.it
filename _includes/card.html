@@ -1,7 +1,7 @@
 <div class="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none
   {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %}
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
-  {% if include.hasImage != false %}
+  {% if include.hasImage != false and include.image %}
   <div class="u-sizeFull">
     <a class="" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ include.link }}">
     <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" style="border-bottom: 0.3em solid #06c" />
