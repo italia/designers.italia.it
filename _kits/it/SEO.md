@@ -18,7 +18,11 @@ guidelines:
 
 download_file :
 - file : 
-  caption : 'Kit SEO'
+  caption : 'Guida SEO'
+  type : 'internal'
+- file : 'https://docs.google.com/document/d/15tx6xjWUTbGO0bwcNRcvW6A4tx9E2jI-1a3cgT3Uxwc/edit?usp=sharing'
+  caption : 'Audit del sito'
+  type : 'internal'
 
 carousel:
 - img: '/assets/images/kits/placeholder_kit_13_SEO.png'
