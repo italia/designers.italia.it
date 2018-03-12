@@ -17,24 +17,26 @@ guidelines:
 - 'Service design'
 
 download_file :
-- file : 
+- file :
   caption : 'Workshop agenda'
   type : 'internal'
-- file : 
+- file : '/assets/downloads/CoDesignWorkshop_Personas_Esercizio.pdf'
   caption : 'Esercizio sui personas'
   type : 'internal'
-- file : 
+- file : '/assets/downloads/CoDesignWorkshop_SystemMap_Esercizio.pdf'
   caption : 'Esercizio sulla system map'
   type : 'internal'
-- file : 
-  caption : 'Esercizio sui journey'
+- file : '/assets/downloads/CoDesignWorkshop_UserJourney_Esercizio.pdf'
+  caption : 'Esercizio user journey'
   type : 'internal'
-- file : 
+- file : '/assets/downloads/CoDesignWorkshop_Card sorting.pdf'
   caption : 'Esercizio di card sorting'
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_09_Co-designworkshop-2.png'
+- img: '/assets/images/kits/slide01_UserJourney_slide.jpg'
+  label:
+- img: '/assets/images/kits/slide02_UserJourney_slide.jpg'
   label:
 ---
 
