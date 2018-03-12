@@ -31,14 +31,14 @@ blocks:
   button:
   - label: kit personas 
     url: '/kit/personas'
-   - label: kit user stories 
+  - label: kit user stories 
     url: '/kit/user-stories'   
 - title: Vuoi un sistema rapido ed efficace di Web Analytics?
   subtitle: Leggi le linee guida di Web Analytics o i casi d’uso su Piwik che abbiamo raccontato sul blog.
   img: /assets/images/kits/placeholder_kit_08_analitics.png
   button:
   - label: kit Web Analytics
-    url: '/kit/web-analytics'
+    url: '/kit/analytics'
     
 ---
 
