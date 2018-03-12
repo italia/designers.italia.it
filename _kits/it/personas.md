@@ -25,10 +25,12 @@ download_file :
   type : 'external'
 
 carousel:
-- img: '/assets/images/kits/personas_slide_1.jpg'
+- img: 'assets/images/kits/Slide_01_Personas_Slide.jpg'
   label:
-- img: '/assets/images/kits/personas_slide_2.jpg'
-  label: 
+- img: 'assets/images/kits/Slide_02_Personas_Slide.jpg'
+  label:
+- img: 'assets/images/kits/Slide_03_Personas_Slide.jpg'
+  label:
 
 ---
 {:.u-color-50}

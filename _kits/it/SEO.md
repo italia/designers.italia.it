@@ -20,7 +20,7 @@ download_file :
 - file : 
   caption : 'Guida SEO'
   type : 'internal'
-- file : 'https://docs.google.com/document/d/15tx6xjWUTbGO0bwcNRcvW6A4tx9E2jI-1a3cgT3Uxwc/edit?usp=sharing'
+- file : 
   caption : 'Audit del sito'
   type : 'internal'
 
