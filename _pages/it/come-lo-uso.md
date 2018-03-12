@@ -15,28 +15,30 @@ blocks:
   subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
   img: /assets/images/kits/placeholder_kit_03_researchplan.png
   button:
+  - label: kit co-designworksohp
+    url: '/kit/co-design-workshop'
   - label: linee guida user research
     url: 'https://design-italia.readthedocs.io/it/stable/doc/user-research.html'
 - title: Vuoi migliorare l’usabilità del tuo sito o della tua applicazione?
   subtitle: Osserva quali problemi incontrano gli utenti durante l’utilizzo e individua le criticità più importanti da risolvere.
   img: /assets/images/kits/placeholder_kit_07_usabilitytest.png
   button:
-  - label: linee guida usabilità
-    url: 'https://design-italia.readthedocs.io/it/stable/doc/user-research/usabilita.html'
+  - label: kit usability test
+    url: '/kit/usability-test'
 - title: Vuoi una visione chiara degli utenti del tuo servizio?
   subtitle: Crea dei profili che descrivono le diverse tipologie di utenti di un servizio, raccontando le loro motivazioni, aspettative, bisogni e attitudini.
   img: /assets/images/kits/placeholder_kit_02_personas.png
   button:
   - label: kit personas 
     url: '/kit/personas'
+   - label: kit user stories 
+    url: '/kit/user-stories'   
 - title: Vuoi un sistema rapido ed efficace di Web Analytics?
   subtitle: Leggi le linee guida di Web Analytics o i casi d’uso su Piwik che abbiamo raccontato sul blog.
   img: /assets/images/kits/placeholder_kit_08_analitics.png
   button:
-  - label: linee guida Web Analytics
-    url: 'https://design-italia.readthedocs.io/it/stable/doc/user-research/web-analytics.html'
-  - label: il blog di Designers Italia
-    url: 'https://designers.italia.it/blog/tags/analytics/'
+  - label: kit Web Analytics
+    url: '/kit/web-analytics'
     
 ---
 
