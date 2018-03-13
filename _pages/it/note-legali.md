@@ -2,6 +2,7 @@
 title: Note Legali
 lang: it
 layout: page
+backgroundColor: '#06c'
 ---
 
 ### Note Legali
