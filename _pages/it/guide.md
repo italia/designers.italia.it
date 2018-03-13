@@ -8,6 +8,10 @@ backgroundImage : '/assets/images/pages/neonbrand-226736.jpg'
 backgroundColor: 'rgba(90, 178, 255, .5)'
 blueBlock: true
 nodate: true
+redirect_from:
+  - /service-design/
+  - /user-research/
+  
 ---
 
 <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-bottom-xl" >
