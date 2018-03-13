@@ -15,7 +15,7 @@ blocks:
   subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
   img: /assets/images/kits/placeholder_kit_03_researchplan.png
   button:
-  - label: kit co-designworksohp
+  - label: kit co-design workshop
     url: '/kit/co-design-workshop'
   - label: linee guida user research
     url: 'https://design-italia.readthedocs.io/it/stable/doc/user-research.html'
