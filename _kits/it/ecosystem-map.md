@@ -17,8 +17,8 @@ guidelines:
 - Service design
 
 download_file :
-- file : 
-  caption : 'Stakeholder matrix'
+- file : 'https://docs.google.com/presentation/d/1lrX9EMzttfnFIpokwlI_5AMmtVZldyTOeGwISpcpbcI/edit?usp=sharing'
+  caption : 'Stakeholder map'
   type : 'internal'
 - file : '/assets/downloads/Designers_SystemMap_Esercizio.pdf'
   caption : 'Esercizio di costruzione di una system map'
