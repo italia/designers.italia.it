@@ -28,9 +28,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: 'assets/images/kits/Slide_WebAnalytics.jpg'
+- img: '/assets/images/kits/Slide_WebAnalytics.jpg'
   label:
-- img: 'assets/images/kits/Slide_WebAnalytics2.jpg'
+- img: '/assets/images/kits/Slide_WebAnalytics2.jpg'
   label:
 ---
 

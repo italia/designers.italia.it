@@ -25,11 +25,11 @@ download_file :
   type : 'external'
 
 carousel:
-- img: 'assets/images/kits/Slide_01_Personas_Slide.jpg'
+- img: '/assets/images/kits/Slide_01_Personas_Slide.jpg'
   label:
-- img: 'assets/images/kits/Slide_02_Personas_Slide.jpg'
+- img: '/assets/images/kits/Slide_02_Personas_Slide.jpg'
   label:
-- img: 'assets/images/kits/Slide_03_Personas_Slide.jpg'
+- img: '/assets/images/kits/Slide_03_Personas_Slide.jpg'
   label:
 
 ---
