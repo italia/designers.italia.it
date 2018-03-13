@@ -36,7 +36,7 @@ carousel:
 ###### CHE COS’È
 
 {:.u-color-50 .u-margin-bottom-xxl}
-#### I *wireframe* sono rappresentazioni delle funzioni di un sito, dei contenuti e dei flussi interazione con l’utente (*wireframe* interattivi) che consentono di creare un++ modello di servizio** partendo dalla prospettiva dell’utente che lo utilizza.
+#### I *wireframe* sono rappresentazioni delle funzioni di un sito, dei contenuti e dei flussi interazione con l’utente (*wireframe* interattivi) che consentono di creare un **modello di servizio** partendo dalla prospettiva dell’utente che lo utilizza.
 {% include simplecarousel.html  %} 
 
 {:.u-color-50 .u-margin-top-xxl}
