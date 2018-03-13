@@ -1,6 +1,6 @@
 ---
 title: SPID - Sistema Pubblico di Identità Digitale
-description: Lo SPID è una credenziale unica di accesso, con identità verificata, che può essere integrata secondo lo standard SAML su siti pubblici ma anche privati.
+description: SPID è il sistema unico di Identà Digitale nazionale che permette ai cittadini italiani di accedere a tutti i servizi online della Pubblica Amministrazione
 # subtitle: Sistema Pubblico di Identità Digitale
 logo: /assets/images/projects/spid-project-cover.jpg
 #payoff: Sistema Pubblico di Identità Digitale
@@ -15,11 +15,19 @@ socials:
     link: https://www.facebook.com/groups/agid.spid/
 ---
 
-SPID (Sistema Pubblico di Identità Digitale) è la soluzione che permette ai cittadini italiani di accedere a tutti i servizi online della Pubblica Amministrazione con un'unica Identità Digitale utilizzabile da computer, tablet e smartphone.
-Il cittadino può ottenere SPID tramite i Gestori di Identità (detti *Identity Provider*); una volta completata
-la procedura di verifica (che certifica l'identità del richiedente), vengono rilasciate un set di credenziali che possono essere utilizzate su tutti i siti (chiamati *Service Provider*).
+SPID (Sistema Pubblico di Identità Digitale) è il **sistema di Identità Digitale** che permette di utilizzare le stesse credenziali per accedere a tutti i servizi digitali della Pubblica Amministrazione da computer, tablet e smartphone. Il cittadino può ottenere SPID tramite i Gestori di Identità (*Identity Provider*): una volta completata la procedura di verifica (che certifica l’identità del richiedente), vengono rilasciate delle **credenziali** (user e password) che possono essere utilizzate su tutti i siti che offrono servizi al cittadino (*Service Provider*).
 
-Al momento, l'integrazione di SPID è consentita solo nei siti della Pubblica Amministrazione, ma presto verrà disciplinata e aperta anche per i siti e servizi online dei privati. I vantaggi nell'adottare SPID saranno quindi molteplici: le banche e le assicurazioni, per esempio, potrebbero riconoscere il cittadino che vuole creare un conto o stipulare una polizza semplicemente facendogli fare login.
+I vantaggi di usare SPID per il cittadino sono:
+
+- La semplicità di utilizzo
+- La sicurezza nell’accesso
+- Una maggiore tutela della privacy
+
+Attualmente l’integrazione di SPID si basa sullo standard **SAML** e può avvenire su siti di servizi pubblici e privati.
+
+### Linee guida
+
+[Regole tecniche](http://spid-regole-tecniche.readthedocs.io/en/latest/introduzione.html)
 
 ### Codice sorgente
 

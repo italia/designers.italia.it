@@ -10,7 +10,7 @@
   {% for item in items %}
   	<li data-megamenu-class="{{ item.liClass }}{% if item.image %}u-inlineBlock u-alignTop u-textCenter{% endif %}">
 
-      {% if item.url == "#" or item.url contains '//' %}
+      {% if item.url == "#" or item.url == "/" or item.url contains '//' %}
         {% assign _url = item.url %}
       {% else %}
         {% assign _url = item.url | relative_url | append: '/' %}
@@ -30,6 +30,16 @@
       {% if item.subitems %}
     		{% include linklist.html layout=item.layout items=item.subitems _internal=true %}
     	{% endif %}
+
+      {% if item.subitems_by_type %}
+        {% assign typepages = site[item.subitems_by_type] | where: 'lang', active_lang | sort: title %}
+        {% assign typeitems = "|" | split: '|' %}
+        {% for tp in typepages %}
+          {% assign typeitems = typeitems | push: tp %}
+        {% endfor %}
+
+        {% include linklist.html layout=item.layout items=typeitems _internal=true %}
+      {% endif %}
   	</li>
   {% endfor %}
 

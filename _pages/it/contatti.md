@@ -4,10 +4,14 @@ subtitle: Social, email, stampa e media
 lang: it
 layout: page
 toc: true
+nodate: true
+backgroundImage : '/assets/images/pages/contacts-trikutam-unsplash.jpg'
+backgroundColor: 'rgba(90, 178, 255, .5)'
+backgroundPositionY: 'center'
 ---
 
 ## Intro
-Designers Italia è punto di incontro tra professionisti del design e mondo della pubblica amministrazione. Luogo naturale di discussione, confronto e arricchimento di strumenti è il [forum](https://forum.italia.it/c/design/). Il progetto è stato ideato da Team per la trasformazione digitale, in collaborazione con AgID.
+Designers Italia è punto di incontro tra professionisti del design e mondo della pubblica amministrazione. Luogo naturale di discussione e confronto è il [forum](https://forum.italia.it/c/design/). Il progetto è stato ideato da Team per la trasformazione digitale, in collaborazione con AgID.
 
 ## Social media
 Designers Italia è su [Behance](https://www.behance.net/italia), [Github](https://github.com/italia/designers.italia.it), [Twitter](https://twitter.com/designersita) e [Medium](https://medium.com/designers-italia)

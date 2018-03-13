@@ -1,12 +1,12 @@
 ---
-title: Kit Personas
+title: Personas
 lang: it
 layout: download
 subtitle: Assumi la prospettiva dell’utente per ideare soluzioni valide, basate su necessità concrete. 
 backgroundImage : '/assets/images/kits/01_Personas_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true
-kitcategory: capire
+kitcategory: ideare
 tags:
 - user-stories
 - workshop
@@ -25,10 +25,12 @@ download_file :
   type : 'external'
 
 carousel:
-- img: '/assets/images/kits/personas_slide_1.jpg'
+- img: '/assets/images/kits/Slide_01_Personas_Slide.jpg'
   label:
-- img: '/assets/images/kits/personas_slide_2.jpg'
-  label: 
+- img: '/assets/images/kits/Slide_02_Personas_Slide.jpg'
+  label:
+- img: '/assets/images/kits/Slide_03_Personas_Slide.jpg'
+  label:
 
 ---
 {:.u-color-50}

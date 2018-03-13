@@ -17,21 +17,20 @@ guidelines:
 - Web analytics
 
 download_file :
-- file : 
+- file : 'https://docs.google.com/presentation/d/17kPhzUSHvv-yPbI9qNV1JcS9SSTzKQJtYxjITHhBtnA/edit?usp=sharing'
   caption : 'Dashboard con Google Analytics'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/document/d/1MEiEDKfxMh7c3-7BKx0WlvgIBRe5gXrFd0LqpVpNAhg/edit?usp=sharing'
   caption : 'Istruzioni dashboard Google Analytics'
   type : 'internal'
-- file : 
-  caption : 'Dashboard con Google Data Studio'
-  type : 'internal'
-- file : 
-  caption : 'Istruzioni dashboard Piwik'
+- file : 'https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing'
+  caption : 'Istruzioni dashboard Matomo/Piwik'
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_08_analitics.png'
+- img: '/assets/images/kits/Slide_WebAnalytics.jpg'
+  label:
+- img: '/assets/images/kits/Slide_WebAnalytics2.jpg'
   label:
 ---
 

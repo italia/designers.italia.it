@@ -1,15 +1,32 @@
 it:
-  - title: Service design
-    url: /service-design
-  - title: Content design
-    url: /content-design
-  - title: User interface
-    url: /user-interface
-  - title: User research
-    url: /user-research
-  - title: Progetti
-    liClass: 'Megamenu-item Megamenu-item--vert u-flexExpandLeft'
+  - title: Home
+    url: '/'
+  - title: Chi siamo
+    url: '/chi-siamo'
+  - title: Le guide
+    url: /guide
+  - title: I kit
     url: '#'
+    liClass: 'Megamenu-item Megamenu-item--vert Megamenu-item--dropdown'
+    subitems:
+      - title: Usability Test
+        url: /kit/usability-test
+      - title: Ecosystem Map
+        url: /kit/ecosystem-map
+      - title: Personas
+        url: /kit/personas
+      - title: Co-design Workshop
+        url: /kit/co-design-workshop
+      - title: UI Kit
+        url: /kit/ui-kit
+      - title: Web Toolkit
+        url: /kit/web-toolkit
+      - title: Tutti i kit
+        url: /kit
+        liClass: 'Megamenu-showAll'
+  - title: I progetti
+    url: '#'
+    liClass: 'Megamenu-item Megamenu-item--vert Megamenu-item--dropdown'
     subitems:
       - title: SPID
         url: /progetti/spid
@@ -24,9 +41,14 @@ it:
       - title: Tutti i progetti
         url: /progetti
         liClass: 'Megamenu-showAll'
-  - title: Blog
+  - title: Le storie
     url: '/blog'
-  - title: Chi siamo
-    url: '/chi-siamo'
-  - title: Contatti
+  - title: La roadmap
+    url: '/roadmap'
+  - title: I contatti
     url: '/contatti'
+  - title: Come lo uso
+    url: '/come-lo-uso'
+    liClass: 'Megamenu-item u-flexExpandLeft'
+  - title: Come partecipo
+    url: '/come-partecipo'

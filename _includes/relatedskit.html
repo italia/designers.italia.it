@@ -19,11 +19,10 @@
 		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-50 u-padding-bottom-xxl">Trova altri Design Kit</h2>
 		  <div class="u-margin-top-xl  u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill">
 		     {% for item in selecteds | limit: 3 %}
-		      <div class="RelatedKits-cell Grid-cell u-md-size1of3 u-lg-size1of3 u-flex"
+		      <div class="RelatedKits-cell Grid-cell u-md-size1of3 u-lg-size1of3 u-flex">
+		           <article class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch u-color-white"
 		           style="background-color: {{item.backgroundColor}}; background-image: url({{item.carousel[0].img | default: item.backgroundImage}}); ">
-
-		           <article class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch u-color-white">
-			          <div class="u-flexAlignSelfEnd">
+			          <div class="u-flexAlignSelfStart">
 			          	<h2 class="u-text-r-m u-textUppercase u-padding-top-l u-padding-bottom-l ">{{item.kitcategory}}</h2>
 			            <h1 class="u-text-r-l u-padding-bottom-l ">
 			              <a href="{{item.url | relative_url}}" class="u-color-white u-linkClean">
@@ -35,7 +34,6 @@
 			        </article>
 		  	  </div>
 		      {% endfor %}
-		    
-		  </ul>	
+		  </div>
 	</section>
 {% endif %}

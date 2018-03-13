@@ -7,6 +7,7 @@ toc: true
 backgroundImage : '/assets/images/pages/david-solce-184827.jpg'
 backgroundColor: 'rgba(90, 178, 255, .5)'
 blueBlock: true
+nodate: true
 ---
 
 Le informazioni danno forma all’ambiente in cui l’utente si muove e fruisce servizi digitali.  Le informazioni sono vitali per raggiungere un servizio (vedi in particolare il capitolo dedicato a **search engine optimization**), per capirlo  e per usarlo. La qualità delle informazioni si misura in relazione alla loro efficacia per i cittadini che le usano (nel capitolo dedicato al **linguaggio e alla gestione dei contenuti** ci sono diversi suggerimenti stilistici e operativi). Il modo in cui i contenuti sono organizzati consente all’utente di orientarsi, è la precondizione per la costruzione di una relazione basata sulla fiducia (questo e molto altro nel capitolo dedicato all’**architettura dell’informazione**) .

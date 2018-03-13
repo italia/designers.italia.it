@@ -38,35 +38,22 @@ module Jekyll
       blog_tags_directory = site.config['blog_tags_directory'] || '/blog/tags'
       feed_url = Jekyll.configuration({})['medium_archive_url']
       puts "[*] Fetching Medium feed from: " + feed_url
-      # ENGLISH version
-      feed_url_eng = Jekyll.configuration({})['medium_archive_url_eng']
-      puts "[*] Fetching Medium feed from: " + feed_url_eng
 
-      feed_res = RestClient.get feed_url, {:accept => :json}
-      feed_res_eng = RestClient.get feed_url_eng, {:accept => :json}
+      feed_res = RestClient.get feed_url + '/latest', {:accept => :json, params: {count: 30} }
 
       # removes anti json-hijacking prefix
       feed_json_str = "{" + feed_res.to_str.partition("{").last
-      feed_json_str_eng = "{" + feed_res_eng.to_str.partition("{").last
 
       # parse json
       feed_json = JSON.parse(feed_json_str)
-      feed_json_eng = JSON.parse(feed_json_str_eng)
 
-      posts = feed_json['payload']['references']['Post'].values
-      posts_eng = feed_json_eng['payload']['references']['Post'].values
+      posts = feed_json['payload']['posts']
       users = feed_json['payload']['references']['User']
-      users_eng = feed_json_eng['payload']['references']['User']
       head_tags = feed_json['payload']['collection']['navItems']
 
       puts "Total italian posts fetched: " + posts.size.to_s
-      puts "Total english posts fetched: " + posts_eng.size.to_s
       puts "Total users fetched: " + users.size.to_s
       puts "Total tags fetched: " + head_tags.size.to_s
-
-      # Let's merge ita and eng posts and users
-      posts.push(*posts_eng)
-      users = users_eng.merge(users)
 
       posts.size > 0 or die("No posts fetched")
 
@@ -91,6 +78,8 @@ module Jekyll
       # Add fake virtual documents to the collection
       posts.each do |item|
 
+        puts "Parsing post with id: " + item['id']
+
         path = "blog/" + item['id']
         path = site.in_source_dir(path)
         doc = Jekyll::Document.new(path, {
@@ -102,21 +91,26 @@ module Jekyll
         doc.data['medium_author'] = users[item['creatorId']]['name']
         doc.data['medium_author_link'] = "https://medium.com/@" + users[item['creatorId']]['username']
         doc.data['medium_title'] = item['title']
-        doc.data['medium_subtitle'] = item['content']['subtitle']
-        doc.data['meta_description'] = item['content']['metaDescription']
+        doc.data['medium_subtitle'] = item['subtitle']
+        doc.data['meta_description'] = item['metaDescription']
         doc.data['medium_url'] = post_url_base + item['uniqueSlug']
         #doc.data['medium_tags'] = item['virtuals']['tags']
-        doc.data['medium_preview_image_id'] = item['virtuals']['previewImage']['imageId']
-        doc.data['medium_preview_image_url'] = "https://cdn-images-1.medium.com/fit/900/600/" + item['virtuals']['previewImage']['imageId']
-        open(doc.data['medium_preview_image_url']) { |f|
-          File.open("/tmp/medium_image.jpg","wb") do |file|
-            file.puts f.read
-          end
-        }
-        img =  Magick::Image.read("/tmp/medium_image.jpg").first
-        pix = img.scale(1, 1)
-        avg_color_hex = pix.to_color(pix.pixel_color(0,0))
-        doc.data['medium_preview_image_color_avg'] = avg_color_hex
+
+        # not every post has a previewImage
+        if item['virtuals']['previewImage']['imageId'] != ''
+          doc.data['medium_preview_image_id'] = item['virtuals']['previewImage']['imageId']
+          doc.data['medium_preview_image_url'] = "https://cdn-images-1.medium.com/fit/900/600/" + item['virtuals']['previewImage']['imageId']
+          open(doc.data['medium_preview_image_url']) { |f|
+            File.open("/tmp/medium_image.jpg","wb") do |file|
+              file.puts f.read
+            end
+          }
+          img =  Magick::Image.read("/tmp/medium_image.jpg").first
+          pix = img.scale(1, 1)
+          avg_color_hex = pix.to_color(pix.pixel_color(0,0))
+          doc.data['medium_preview_image_color_avg'] = avg_color_hex
+        end
+
         doc.data['medium_post_id'] = item['id']
         doc.data['medium_detected_lang'] = item['detectedLanguage']
         doc.data['medium_slug'] = item['slug']

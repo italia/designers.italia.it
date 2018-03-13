@@ -1,0 +1,15 @@
+{% if include.kitcategory %}
+	{% assign kits = site.kits | where: "kitcategory", include.kitcategory | sort: title %}
+{% else %}
+	{% assign kits = site.kits | sort: title %}
+{% endif %}
+
+<ul {% if include.layout == 'two-cols' %}class="Grid"{% endif %}>
+	{% for kit in kits %}
+	<li class="{% if include.layout == 'two-cols' %}u-size1of2{% else %}u-margin-top-l{% endif %} u-margin-bottom-l u-text-r-xs u-padding-left-xl u-posRelative">
+		<a href="{{kit.url}}" class="u-color-50 u-textWeight-600 u-linkClean kits-grid__piu">
+		{{kit.title}}
+		</a>
+	</li>
+	{% endfor %}
+</ul>

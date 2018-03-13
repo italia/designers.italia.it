@@ -15,10 +15,11 @@ layout: default
 
 <article itemscope itemtype="http://schema.org/BlogPosting" class="u-background-white u-nbfc u-padding-top-xxl u-xs-padding-top-none">
 
-<!-- ==== blue block -->
+  <!-- ==== blue block -->
+
   <div class="u-background-white u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter" aria-hidden="true"
       style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});
-      background-blend-mode: multiply; background-size: cover; min-height: 300px">
+      background-blend-mode: multiply; background-size: cover; height: 400px">
 
       <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
 
@@ -79,8 +80,8 @@ layout: default
 
   </div>
 
-<!--/ === blue block-->
-<!--/ === blue block-->
+  <!--/ === blue block-->
+
   {% include kit_downloadbutton.html %}
 
 
@@ -90,25 +91,15 @@ layout: default
 
         <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-padding-bottom-xl u-color-grey-50">
           {{ content }}
-
         </div>
-
-        
 
         {% include kits.html %}
 
-
-        
-        <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom" />
-        <div class="u-margin-bottom-xxl">
-          {% if page.guidelines != nil %}
+        {% if page.guidelines != nil %}
             {% include relatedsguideline.html pageguidelines=page.guidelines %}
-          {% endif %}
-        </div>
-        
+        {% endif %}
 
       </div>
-
     </div>
   </div>
 
@@ -121,8 +112,5 @@ layout: default
     {% include relatedspost.html pagetags=page.tags %}
     {% include relatedskit.html pagetags=page.tags %}
   {% endif %}
-
-
-
 
 </article>
