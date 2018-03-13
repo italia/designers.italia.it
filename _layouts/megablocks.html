@@ -8,8 +8,7 @@ layout: default
 <div class="u-background-white u-layout-r-withGutter u-padding-bottom-xxl u-posRelative u-zindex-30">
 <div class="Grid ">
     <div class="Grid-cell u-sizeFull u-md-size8of12 u-lg-size8of12">
-      <h1 class="u-text-h1 u-color-teal-60 u-lineHeight-l u-sizeFull u-margin-top-xxl">{{ page.title }}</span>
-      </h1>
+      <h1 class="u-text-h1 u-color-teal-60 u-lineHeight-l u-sizeFull u-margin-top-xxl">{{ page.title }}</h1>
       <div class="u-text-r-xs u-margin-top-xs u-color-grey-50 u-textWeight-500 u-lineHeight-xl u-sizeFull">
         {{content}}
       </div>
@@ -39,10 +38,8 @@ layout: default
 
   <div class="Megablockgrid-cell Grid-cell u-sizeFull u-md-size8of12 u-lg-size8of12">
       <div class="Megablockgrid-text u-padding-left-xxl u-padding-right-xl u-padding-top-xl u-padding-bottom-xl u-margin-left-xxl u-margin-bottom-xxl " >
-        <h1 class="{{titleColor}} u-text-h3 u-lineHeight-l u-sizeFull u-margin-top-xxl">{{ block.title }}</span>
-        </h1>
-        <p class="{{textColor}} u-text-r-s u-lineHeight-l u-sizeFull u-margin-top-m">{{ block.subtitle }}</span>
-        </p>
+        <h1 class="{{titleColor}} u-text-h3 u-lineHeight-l u-sizeFull u-margin-top-xxl">{{ block.title }}</h1>
+        <p class="{{textColor}} u-text-r-s u-lineHeight-l u-sizeFull u-margin-top-m">{{ block.subtitle }}</p>
         {% if block.body %}
         <div class="{{textColor}} u-text-r-xs u-margin-top-s u-textWeight-500 u-lineHeight-m u-sizeFull">
           {{block.body}}
