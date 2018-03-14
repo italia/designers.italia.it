@@ -17,7 +17,7 @@ guidelines:
 - 'Service design'
 
 download_file :
-- file :
+- file : 'https://docs.google.com/presentation/d/1dQqoq6hHBaFQ8Elz21tLrldvJJKo_7oC6FrtG3B9B60/edit?usp=sharing'
   caption : 'Workshop agenda'
   type : 'internal'
 - file : '/assets/downloads/CoDesignWorkshop_Personas_Esercizio.pdf'
