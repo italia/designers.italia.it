@@ -18,7 +18,7 @@
 
 {% if selecteds.size > 0 %}
 	{% assign posts_sorted = selecteds | sort: "medium_firstpublished_at | reverse %}
-	<section class="u-background-teal-30 u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
+	<section class="u-layout-wide u-layoutCenter u-background-teal-30 u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
 		  <h1 class="u-text-h2 u-textCenter u-color-white">Storie</h1>
 		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-white u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
 		  <div class=" u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill {% if posts_sorted.size == 2 %}Grid--alignCenter {% endif%}">
