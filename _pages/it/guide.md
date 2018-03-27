@@ -11,6 +11,8 @@ nodate: true
 redirect_from:
   - /service-design/
   - /user-research/
+  - /content-design/
+  - /user-interface/
   
 ---
 
