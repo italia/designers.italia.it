@@ -38,7 +38,7 @@ download_file :
 - file : 'https://docs.google.com/document/d/1aJxYnb6f6lLYMqsYEGgZ9d4qTwQbR62mDiSlWpU-9zY/edit?usp=sharing'
   caption : 'Tabella dei risultati'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/presentation/d/1030GMGiy6SgGBSDfGgvlXr0HblcGlmuku7VkeaPtbfM/edit?usp=sharing'
   caption : 'Report dei risultati'
   type : 'internal'
 
