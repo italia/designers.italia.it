@@ -20,16 +20,22 @@ download_file :
 - file : 
   caption : 'Protocollo di ricerca'
   type : 'internal'
+- file : 'https://docs.google.com/document/d/1cPKIZhIv2g79OHwxUUFT_wTV4X-vO5xFRACeVmf2rfM/edit?usp=sharing'
+  caption : 'Questionario di recruiting'
+  type : 'internal'
 - file : 'https://docs.google.com/document/d/1Ev6UG3uRbpTPdYsNrqqgDZjiMpVDvPQk-XfriH2QDac/edit?usp=sharing'
   caption : 'Guida alla conduzione dell’intervista'
   type : 'internal'
 - file : 'https://docs.google.com/document/d/1JVctSWSJN6tJeno70OjA8Tl_4rs0dIJ5XLoOQbIgo24/edit?usp=sharing'
   caption : 'Liberatoria per il consenso al trattamento dei dati'
   type : 'internal'
+- file : 'https://docs.google.com/document/d/107LUHpBwhaE2PaV1gnwgYZF8VcC7Wn4bFX8pB0-aU5w/edit?usp=sharing'
+  caption : 'Attestato di partecipazione'
+  type : 'internal'
 - file : 'https://docs.google.com/spreadsheets/d/1AAfWOl6eghAKJn-i-htOKV5j2zSHhAM2IHTNxvxuIWY/edit#gid=1785015941'
   caption : 'Strumenti di notazione'
   type : 'internal'
-- file : 
+- file : 'https://docs.google.com/presentation/d/1riXhC274y0i2NrWV89FxuV4s8U3PzjKPnuHaofLT7NQ/edit?usp=sharing'
   caption : 'Presentazione dei risultati'
   type : 'internal'
 
