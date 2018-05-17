@@ -19,19 +19,19 @@ guidelines:
 
 download_file :
 - file : 
+  caption : 'Guida al linguaggio della Pubblica Amministrazione'
+  type : 'internal'
+- file : 'https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing'
+  caption : 'Esercizio di editing collaborativo'
+  type : 'internal'
+- file : 
   caption : 'Content strategy presentation'
   type : 'internal'
 - file : 
-  caption : 'Content curation su trello'
+  caption : 'Content curation su Trello'
   type : 'internal'
 - file : 
   caption : 'Liste di contenuti'
-  type : 'internal'
-- file : 
-  caption : 'Glossario della PA'
-  type : 'internal'
-- file : 
-  caption : 'Esempi di scrittura collaborativa'
   type : 'internal'
 - file : 
   caption : 'Google trends'
@@ -62,4 +62,4 @@ I template proposti nella *style guide* sono un modo semplice e immediato per ap
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-All’interno del kit si trovano una *dashboard* per **organizzare il lavoro** tra le risorse coinvolte nella creazione e gestione dei contenuti e dei template preimpostati e commentati di **contenuti tipici** come un blog post, una pagina di Faq, delle pagine di servizio, una dashboard per la ricerca iconografica.  
+All’interno del kit si trovano una *dashboard* e alcuni strumenti per **organizzare il lavoro** tra le risorse coinvolte nella creazione e gestione dei contenuti, una **guida al linguaggio** della Pubblica Amministrazione, un **esercizio "prima e dopo"** per fare editing collaborativo dei contenuti.  
