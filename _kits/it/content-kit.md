@@ -18,7 +18,7 @@ guidelines:
 - 'User interface'
 
 download_file :
-- file : 
+- file : 'http://guida-linguaggio-pubblica-amministrazione.readthedocs.io/it/latest/index.html'
   caption : 'Guida al linguaggio della Pubblica Amministrazione'
   type : 'internal'
 - file : 'https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing'
@@ -46,20 +46,19 @@ carousel:
 ###### CHE COS’È
 
 {:.u-color-50 .u-margin-bottom-xxl}
-#### Il kit dedicato ai contenuti propone strumenti per organizzare un workflow per la **creazione e gestione** ordinaria e straordinaria dei contenuti e degli **esempi di contenuti** tipici commentati, da cui prendere spunto o da utilizzare come modello.
+#### Il kit dedicato ai contenuti propone una guida al linguaggio della Pubblica Amministrazione, strumenti per organizzare un workflow per la **creazione e gestione** ordinaria e straordinaria dei contenuti e degli **esempi** di scrittura e revisione collaborativa.
 
 {% include simplecarousel.html  %} 
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
-La *style guide* dedicata ai contenuti offre una serie di esempi per la creazione e gestione dei contenuti, da cui prendere spunto o da utilizzare come “template” da copiare e modificare. Il kit propone un modello di gestione **delle risorse e dei flussi di lavoro**, sia per attività ordinarie (creazione, revisione,  organizzazione, aggiornamento) che per attività straordinarie (traduzione, migrazione). 
-
+Nel kit trovi diversi strumenti operativi per creare e revisionare contenuti. La **Guida al linguaggio** offre regole, indicazioni e suggerimenti da sfogliare o da individuare attraverso un motore di ricerca interno, gli esempi mostrano un *workflow* di scrittura e revisione dei contenuti attraverso degli strumenti collaborativi da cui prendere spunto, gli altri strumenti possono essere usati operativamente per impostare un processo di gestione **delle risorse e dei flussi di lavoro**, sia per attività ordinarie (creazione, revisione,  organizzazione, aggiornamento) che per attività straordinarie (traduzione, migrazione). 
 
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### A COSA SERVE
-I template proposti nella *style guide* sono un modo semplice e immediato per applicare le linee guida di design alla creazione e alla gestione dei contenuti e un punto di riferimento per gli aspetti stilistici. I modelli proposti spiegano nella pratica come utilizzare **un approccio condiviso** ai contenuti e come organizzarne e gestirne la creazione e la gestione. 
+Il kit dedicato ai contenuti offre regole e strumenti operativi per creare e revisionare i contenuti di un sito o di un servizio digitale pubblico, oltre a degli strumenti operativi per organizzare e gestire le risorse e i flussi di lavoro. L'esempio e i vari strumenti spiegano nella pratica come utilizzare **un approccio condiviso** ai contenuti e come organizzarne e gestirne la creazione e la gestione. 
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-All’interno del kit si trovano una *dashboard* e alcuni strumenti per **organizzare il lavoro** tra le risorse coinvolte nella creazione e gestione dei contenuti, una **guida al linguaggio** della Pubblica Amministrazione, un **esercizio "prima e dopo"** per fare editing collaborativo dei contenuti.  
+All’interno del kit si trovano: una **guida al linguaggio della Pubblica Amministrazione**, con indicazioni sull'utilizzo delle parole, regole di scrittura, esempi di tono di voce da usare nei vari contesti; un **esempio di editing collaborativo** di alcuni contenuti di siti pubblici; **una griglia** e **un esempio di dashboard** per organizzare le risorse e i flussi di lavoro nella gestione ordinaria e straordinaria dei contenuti. 
