@@ -24,17 +24,14 @@ download_file :
 - file : 'https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing'
   caption : 'Esercizio di editing collaborativo'
   type : 'internal'
-- file : 
-  caption : 'Content strategy presentation'
+- file : 'https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing'
+  caption : 'Content audit'
   type : 'internal'
 - file : 
   caption : 'Content curation su Trello'
   type : 'internal'
-- file : 
-  caption : 'Liste di contenuti'
-  type : 'internal'
-- file : 
-  caption : 'Google trends'
+- file : 'https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing'
+  caption : 'Workshop sul linguaggio'
   type : 'internal'
 
 carousel:
@@ -61,4 +58,4 @@ Il kit dedicato ai contenuti offre regole e strumenti operativi per creare e rev
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-All’interno del kit si trovano: una **guida al linguaggio della Pubblica Amministrazione**, con indicazioni sull'utilizzo delle parole, regole di scrittura, esempi di tono di voce da usare nei vari contesti; un **esempio di editing collaborativo** di alcuni contenuti di siti pubblici; **una griglia** e **un esempio di dashboard** per organizzare le risorse e i flussi di lavoro nella gestione ordinaria e straordinaria dei contenuti. 
+All’interno del kit trovi: una **guida al linguaggio della Pubblica Amministrazione**, con indicazioni sull'utilizzo delle parole, regole di scrittura, esempi di tono di voce da usare nei vari contesti; un **esempio di editing collaborativo** di alcuni contenuti di siti pubblici; **una griglia** e **un esempio di dashboard** per organizzare le risorse e i flussi di lavoro nella gestione ordinaria e straordinaria dei contenuti; una presentazione per un **workshop sul linguaggio**. 
