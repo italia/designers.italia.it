@@ -35,7 +35,11 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_11_content.png'
+- img: '/assets/images/kits/ContentKit_Slide1.jpg'
+  label:
+- img: '/assets/images/kits/ContentKit_Slide2.jpg'
+  label:
+- img: '/assets/images/kits/ContentKit_Slide3.jpg'
   label:
 ---
 
