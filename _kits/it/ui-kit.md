@@ -47,7 +47,7 @@ Lo UI Kit prevede un insieme di simboli di sketch (libreria) che costituiscono d
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### A COSA SERVE
-Lo UI Kit serve a costruire velocemente prototipi di servizi digitali, componendo le pagine che poi verranno utilizzate per validare il concept di servizio o dialogare con il team di sviluppo.
+Serve a progettare nei dettagli l’interfaccia sia dal punto di vista visuale sia dal punto di vista dell’interazione con l’utente, costruendo un prototipo. Grazie all’interazione con il team di sviluppo, il prototipo diventerà il prodotto.
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
