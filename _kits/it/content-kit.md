@@ -18,6 +18,9 @@ guidelines:
 - 'User interface'
 
 download_file :
+- file : 'https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing'
+  caption : 'Workshop sul linguaggio'
+  type : 'internal'
 - file : 'http://guida-linguaggio-pubblica-amministrazione.readthedocs.io/it/latest/index.html'
   caption : 'Guida al linguaggio della Pubblica Amministrazione'
   type : 'internal'
@@ -25,13 +28,19 @@ download_file :
   caption : 'Esercizio di editing collaborativo'
   type : 'internal'
 - file : 'https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing'
-  caption : 'Content audit'
+  caption : 'Modello di analisi dei contenuti'
   type : 'internal'
 - file : 
-  caption : 'Content curation su Trello'
+  caption : 'Modello di design dei contenuti'
   type : 'internal'
-- file : 'https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing'
-  caption : 'Workshop sul linguaggio'
+- file : 
+  caption : 'Modello di redesign dei contenuti'
+  type : 'internal'
+- file : 
+  caption : 'Board di Trello produzione contenuti'
+  type : 'internal'
+- file : 'https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf'
+  caption : 'Esercizio di card sorting'
   type : 'internal'
 
 carousel:
