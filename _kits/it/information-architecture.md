@@ -2,7 +2,7 @@
 title: Information Architecture
 lang: it
 layout: download
-subtitle: Organizza la struttura dei contenuti in modo chiaro, efficace e coerente
+description: Organizza la struttura dei contenuti in modo chiaro, efficace e coerente
 backgroundImage : '/assets/images/kits/03_ResearchPlan_BG_site.png'
 backgroundColor: '#439af1'
 nodate: true

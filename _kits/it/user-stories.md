@@ -2,7 +2,7 @@
 title: User Stories
 lang: it
 layout: download
-subtitle: Descrivi le principali storie di utilizzo di un servizio per individuare più facilmente requisiti e funzionalità
+description: Descrivi le principali storie di utilizzo di un servizio per individuare più facilmente requisiti e funzionalità
 backgroundImage : '/assets/images/kits/06_UserStories_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true

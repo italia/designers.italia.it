@@ -2,7 +2,7 @@
 title: User Journey
 lang: it
 layout: download
-subtitle: Analizza tutti i passaggi dell'esperienza d’uso di un servizio e individua le opportunità di intervento
+description: Analizza tutti i passaggi dell'esperienza d’uso di un servizio e individua le opportunità di intervento
 backgroundImage : '/assets/images/kits/05_UserJourney_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true

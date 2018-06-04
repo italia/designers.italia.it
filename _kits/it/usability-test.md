@@ -2,7 +2,7 @@
 title: Usability Test
 lang: it
 layout: download
-subtitle: Osserva come gli utenti interagiscono con un servizio digitale per renderlo più usabile
+description: Osserva come gli utenti interagiscono con un servizio digitale per renderlo più usabile
 backgroundImage : '/assets/images/kits/07_UsabilityTest_BG_Site_Usability test.png'
 backgroundColor: '#439af1'
 nodate: true

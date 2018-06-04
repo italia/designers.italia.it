@@ -2,7 +2,7 @@
 title: Web Analytics
 lang: it
 layout: download
-subtitle: Osserva i comportamenti degli utenti partendo dai dati di utilizzo del servizio
+description: Osserva i comportamenti degli utenti partendo dai dati di utilizzo del servizio
 backgroundImage : '/assets/images/kits/08_WebAnalytics_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true

@@ -2,7 +2,7 @@
 title: Personas
 lang: it
 layout: download
-subtitle: Assumi la prospettiva dell’utente per ideare soluzioni valide, basate su necessità concrete. 
+description: Assumi la prospettiva dell’utente per ideare soluzioni valide, basate su necessità concrete. 
 backgroundImage : '/assets/images/kits/01_Personas_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true

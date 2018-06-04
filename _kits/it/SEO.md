@@ -2,7 +2,7 @@
 title: SEO
 lang: it
 layout: download
-subtitle: Progetta e ottimizza i contenuti del sito in base ai bisogni e le priorità che gli utenti esprimono durante le ricerche web 
+description: Progetta e ottimizza i contenuti del sito in base ai bisogni e le priorità che gli utenti esprimono durante le ricerche web 
 backgroundImage : '/assets/images/kits/13_seo.png'
 backgroundColor: '#439af1'
 nodate: true
