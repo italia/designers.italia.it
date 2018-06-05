@@ -2,7 +2,7 @@
 title: Personas
 lang: it
 layout: download
-description: Assumi la prospettiva dell’utente per ideare soluzioni valide, basate su necessità concrete. 
+description: Assumi la prospettiva dell’utente per ideare soluzioni valide, basate su necessità concrete.
 backgroundImage : '/assets/images/kits/01_Personas_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true
@@ -17,7 +17,7 @@ guidelines:
 - User research
 
 download_file :
-- file: '/assets/downloads/KIT_personas_esercizio.pdf'
+- file: '/assets/downloads/KIT_Personas_Esercizio.pdf'
   caption : 'Esercizio di costruzione dei <i>personas</i>'
   type : 'internal'
 - file : 'https://docs.google.com/presentation/d/1bJw6PpfVXepN8a2euJ6Gi4cRdc0rQ9A9h2hOIastltM/edit#slide=id.g25d343a444_1_29'
@@ -39,7 +39,7 @@ carousel:
 {:.u-color-50 .u-margin-bottom-xxl}
 #### Le *personas* sono dei profili inventati che descrivono le diverse tipologie di utenti di un servizio, raccontando le loro motivazioni, aspettative, bisogni e attitudini.
 
-{% include simplecarousel.html  %} 
+{% include simplecarousel.html  %}
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
@@ -51,7 +51,7 @@ Le *personas* solitamente nascono sulla base dei risultati di un’attività di 
 ###### A COSA SERVE
 Le *personas* aiutano a generare idee partendo da necessità esistenti: possono essere utilizzate per **immergersi** nei panni dell’utente durante un’attività di brainstorming o workshop, e **ideare** nuove funzionalità e servizi che rispondono ai loro bisogni e aspettative.
 
-  
+
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
