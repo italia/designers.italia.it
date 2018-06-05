@@ -2,7 +2,7 @@
 title: Co-Design Workshop
 lang: it
 layout: download
-subtitle: Genera idee coinvolgendo utenti e stakeholder di un servizio
+description: Genera idee coinvolgendo utenti e stakeholder di un servizio
 backgroundImage : '/assets/images/kits/09_Co-design Workshop_Co-design workshop.png'
 backgroundColor: '#439af1'
 nodate: true

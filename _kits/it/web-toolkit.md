@@ -2,7 +2,7 @@
 title: Web Toolkit
 lang: it
 layout: download
-subtitle: Costruisci siti, applicazioni e servizi web in assoluta semplicità
+description: Costruisci siti, applicazioni e servizi web in assoluta semplicità
 backgroundImage : '/assets/images/kits/12_Web Kit.png'
 backgroundColor: '#439af1'
 nodate: true

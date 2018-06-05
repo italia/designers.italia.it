@@ -2,7 +2,7 @@
 title: UI Kit
 lang: it
 layout: download
-subtitle: Progetta l’interfaccia di un servizio con uno stile grafico semplice e coerente
+description: Progetta l’interfaccia di un servizio con uno stile grafico semplice e coerente
 backgroundImage : '/assets/images/kits/10_UI Kit_UI Kit.png'
 backgroundColor: '#439af1'
 nodate: true

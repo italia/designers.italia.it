@@ -2,7 +2,7 @@
 title: Content Kit
 lang: it
 layout: download
-subtitle: Gestisci i contenuti e organizza la strategia editoriale in modo collaborativo
+description: Gestisci i contenuti e organizza la strategia editoriale in modo collaborativo
 backgroundImage : '/assets/images/kits/11_ContentKit_Content Kit.png'
 backgroundColor: '#439af1'
 nodate: true

@@ -2,7 +2,7 @@
 title: Wireframe Kit
 lang: it
 layout: download
-subtitle: Definisci il modello di interazione e l’organizzazione di informazioni e contenuti nelle schermate
+description: Definisci il modello di interazione e l’organizzazione di informazioni e contenuti nelle schermate
 backgroundImage : '/assets/images/kits/14_wireframe kit.png'
 backgroundColor: '#439af1'
 nodate: true

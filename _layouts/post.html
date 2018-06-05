@@ -46,6 +46,9 @@ layout: default
             {% if page.subtitle %}
             <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s"
               style="max-width:24em">{{ page.subtitle }}</h2>
+            {% elsif page.description %}
+            <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s"
+              style="max-width:24em">{{ page.description }}</h2>
             {% endif %}
 
             <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-white u-margin-r-bottom"

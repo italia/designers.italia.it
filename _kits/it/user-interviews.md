@@ -2,7 +2,7 @@
 title: User Interviews
 lang: it
 layout: download
-subtitle: Intervista gli utenti del servizio per identificare i loro bisogni, motivazioni e frustrazioni
+description: Intervista gli utenti del servizio per identificare i loro bisogni, motivazioni e frustrazioni
 backgroundImage : '/assets/images/kits/04_InterviewGuide_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true

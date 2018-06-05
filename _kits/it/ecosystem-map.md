@@ -2,7 +2,7 @@
 title: Ecosystem Map
 lang: it
 layout: download
-subtitle: Identifica i soggetti coinvolti nell’erogazione di un servizio e analizza le loro connessioni
+description: Identifica i soggetti coinvolti nell’erogazione di un servizio e analizza le loro connessioni
 backgroundImage : '/assets/images/kits/02_SystemMap_BG_Site.png'
 backgroundColor: '#439af1'
 nodate: true
