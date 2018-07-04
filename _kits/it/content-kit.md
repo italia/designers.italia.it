@@ -42,7 +42,7 @@ download_file :
 - file : 'https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf'
   caption : 'Esercizio di card sorting'
   type : 'internal'
-  - file : 'https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view?usp=sharing'
+- file : 'https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view?usp=sharing'
   caption : 'Esercizio di content journey'
   type : 'internal'
 
