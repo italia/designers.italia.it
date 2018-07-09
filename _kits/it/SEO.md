@@ -20,8 +20,8 @@ download_file :
 - file : 'https://trello.com/b/CPIl9SxJ/checklistseodesigners-italia'
   caption : 'Checklist SEO (Trello)'
   type : 'internal'
-- file : 
-  caption : 'Audit del sito'
+- file : 'https://docs.google.com/spreadsheets/d/1bRjLUC3yN1E1c-ZTY1FiI5klX_wkeMWuC9boWXSBbhw/edit?usp=sharing'
+  caption : 'Ottimizzazione SEO (Google Sheets)'
   type : 'internal'
 
 carousel:
