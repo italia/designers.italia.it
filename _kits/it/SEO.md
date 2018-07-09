@@ -25,7 +25,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_13_SEO.png'
+- img: '/assets/images/kits/Slide_SEO_1.jpg'
+  label:
+- img: '/assets/images/kits/Slide_SEO_2.jpg'
   label:
 ---
 
