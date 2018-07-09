@@ -2,12 +2,12 @@
 title: SEO
 lang: it
 layout: download
-description: Progetta e ottimizza i contenuti del sito in base ai bisogni e le priorità che gli utenti esprimono durante le ricerche web 
+description: Progetta e ottimizza i contenuti del sito in base ai bisogni e le priorità che gli utenti esprimono durante le ricerche web
 backgroundImage : '/assets/images/kits/13_seo.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: fare
-tags: 
+tags:
 - seo
 - content
 - data-driven-design
@@ -25,9 +25,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/Slide_SEO_1.jpg'
+- img: '/assets/images/kits/slide-SEO-01.jpg'
   label:
-- img: '/assets/images/kits/Slide_SEO_2.jpg'
+- img: '/assets/images/kits/slide-SEO-02.jpg'
   label:
 ---
 
@@ -36,12 +36,12 @@ carousel:
 
 {:.u-color-50 .u-margin-bottom-xxl}
 #### L’analisi di ciò che le persone cercano sui motori di ricerca e negli store digitali è una fonte preziosa di **informazioni su cosa pensano** e di cosa hanno bisogno i cittadini. E aiuta a progettare contenuti che siano facili da trovare in questi contesti.
-{% include simplecarousel.html  %} 
+{% include simplecarousel.html  %}
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
 Il Kit SEO ha l’obiettivo di fornire informazioni e suggerimenti operativi su come:
-- individuare il livello di visibilità di un sito ( e delle suo singole pagine) sui motori di ricerca, in relazione a specifici “user-intent”; 
+- individuare il livello di visibilità di un sito (e delle sue singole pagine) sui motori di ricerca, in relazione a specifici “user-intent”;
 - controllare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico.
 
 
@@ -53,7 +53,5 @@ Le tecniche di **ottimizzazione SEO** hanno l’obiettivo di migliorare il ranki
 ###### COSA CONTIENE QUESTO KIT
 Il kit SEO contiene:
 
-- una **checklist** (board Trello) dedicata alle principali attività SEO di un sito, finalizzata alla pianificazione e gestione dei task all’interno di un team di lavoro; 
-
-- una **griglia “SEO audit”** (GSheet) dedicata all’analisi dei contenuti dal punto di vista della search engine optimization e al coordinamento degli interventi di ottimizzazione di base (onpage) dei contenuti.  
-.
+- una **checklist** (board Trello) dedicata alle principali attività SEO di un sito, finalizzata alla pianificazione e gestione dei task all’interno di un team di lavoro;
+- una **griglia “SEO audit”** (in formato Google Sheets) dedicata all’analisi dei contenuti dal punto di vista della search engine optimization e al coordinamento degli interventi di ottimizzazione di base (onpage) dei contenuti.
