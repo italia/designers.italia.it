@@ -20,7 +20,7 @@ download_file :
 - file : 'https://docs.google.com/document/d/1qoZzPVaIDE8sKg1Fa6JKSG-EPsy_YTtgSlDaV7O4X2c/edit?usp=sharing'
   caption : 'Scheda partecipanti'
   type : 'internal'
-- file : 'https://docs.google.com/document/d/1qoZzPVaIDE8sKg1Fa6JKSG-EPsy_YTtgSlDaV7O4X2c/edit'
+- file : 'https://docs.google.com/document/d/1kM_3umUUiPp51iTsfsoQKhdV2-FD6bjKKFp17xTB124/edit?usp=sharing'
   caption : 'Guida alla conduzione del test'
   type : 'internal'
 - file : 'https://docs.google.com/document/d/18Ln0d0gBtsIUWr6X5CXKQFvFD0LVdsSbdD9njyj0C50/edit?usp=sharing'
