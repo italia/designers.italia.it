@@ -17,7 +17,7 @@ guidelines:
 - "Architettura dell'informazione"
 
 download_file :
-- file : 
+- file : 'https://github.com/italia/design-wireframe-kit'
   caption : 'Wireframe Kit'
   type : 'internal'
 - file : 
