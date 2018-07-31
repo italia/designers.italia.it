@@ -28,7 +28,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_14_wireframe.png'
+- img: '/assets/images/kits/WireframeKit_Slide1.jpg'
+  label:
+- img: '/assets/images/kits/WireframeKit_Slide2.jpg'
   label:
 ---
 
