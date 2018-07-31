@@ -4,7 +4,7 @@
 
 {% for tag in pagetags %}
 	{% assign posts_lang = site.medium_feed | where: "medium_detected_lang", page.lang %}
-	{% assign posts = posts_lang |  where_exp:"item", "item.medium_tags contains tag"  %}
+	{% assign posts = posts_lang |  where_exp:"item", "item.medium_tags contains tag"   %}
 	{% if posts.size > 0 %}
 		{% for post in posts %}
 			{% unless selectedsUniq contains post.medium_post_id %}
@@ -16,8 +16,9 @@
 
 {% endfor %}
 
+
 {% if selecteds.size > 0 %}
-	{% assign posts_sorted = selecteds | sort: "medium_firstpublished_at | reverse %}
+	{% assign posts_sorted = (selecteds | sort: "medium_firstpublished_at") | reverse %}
 	<section class="u-layout-wide u-layoutCenter u-background-teal-30 u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
 		  <h1 class="u-text-h2 u-textCenter u-color-white">Storie</h1>
 		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-white u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
