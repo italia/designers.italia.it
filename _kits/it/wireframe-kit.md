@@ -52,4 +52,4 @@ I *wireframe* servono a costruire dei **prototipi a bassa fedeltà** che permett
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-Il wireframe kit contiene elementi (modelli di pagine e componenti) utili per costruire **un prototipo lo-fi** di un servizio pubblico digitale. Il wireframe kit è realizzato in **Sketch**, utilizzando una libreria UI kit lo-fi, ed è accompagnato da una documentazione esplicativa per ogni tipo di *content type*. 
+Il wireframe kit contiene elementi (modelli di pagine e componenti) utili per costruire **un prototipo lo-fi** di un servizio pubblico digitale. Il wireframe kit è realizzato in **Sketch**, utilizzando una libreria UI kit lo-fi, e sarà accompagnato da una documentazione esplicativa per ogni tipo di *content type*. 
