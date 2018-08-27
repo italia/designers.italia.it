@@ -23,7 +23,7 @@ La roadmap riporta le tappe e i principali *deliverable* associati (che potranno
 
 [Vai al thread sul progetto di design dei servizi digitali scolastici](https://forum.italia.it/t/design-dei-servizi-digitali-delle-scuole-ricerca-sugli-utenti-prototipazione-e-linee-guida-progettuali/4100)
 
-L'obiettivo è avviare la pubblicazione delle componenti del modello di siti web delle scuole, a partire da un wireframe navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello sarà accompagnato da template grafico, progettato utilizzando lo UI kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti. Il modello verrà progressivamente migliorato attraverso un processo collaborativo all'interno di Designers Italia.
+L'obiettivo è avviare la pubblicazione delle componenti del modello di siti web delle scuole, a partire da un wireframe navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello sarà accompagnato da template grafico, progettato utilizzando lo UI Kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti. Il modello verrà progressivamente migliorato attraverso un processo collaborativo all'interno di Designers Italia.
 
 Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per offrire a famiglie e studenti un'esperienza digitale allineata alle best practice e agli obiettivi del piano scuola digitale, ma anche modificarlo secondo le loro esigenze specifiche.
 

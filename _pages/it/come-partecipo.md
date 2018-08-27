@@ -21,7 +21,7 @@ blocks:
   button:
     - label: Partecipa al Wireframe Kit
       url: 'https://github.com/italia/design-wireframe-kit'
-    - label: Partecipa all’Icon kit
+    - label: Partecipa all’Icon Kit
       url: 'https://github.com/italia/design-icon-kit'
     - label: Partecipa allo UI Kit
       url: 'https://github.com/italia/design-ui-kit'
@@ -30,9 +30,9 @@ blocks:
     - label: Partecipa a Bootstrap Italia
       url: 'https://github.com/italia/bootstrap-italia'
     - label: Partecipa a React Kit
-      url: 'https://github.com/italia/design-react-toolkit'
+      url: 'https://github.com/italia/design-react-kit'
     - label: Partecipa ad Angular Kit
-      url: 'https://github.com/italia/design-angular-toolkit'
+      url: 'https://github.com/italia/design-angular-kit'
 - title: Prendi parte alla scrittura delle linee guida
   subtitle: 'Le linee guida sono un documento pubblico e chiunque può partecipare al processo di revisione e aggiornamento <b>proponendo modifiche</b> e nuovi contenuti.<br>Grazie ad <a href="https://github.com/italia/design-docs">un <i>repository</i> pubblico su GitHub</a> è possibile seguirne lo sviluppo, proporre correzioni o <b>partecipare alla stesura</b> di nuove versioni (seguendo le regole di questa <a href="https://design-italia.readthedocs.io/it/stable/doc/introduzione-linee-guida-design.html#stile-della-documentazione"><i>Style guide</i></a>). Per farlo, si devono usare gli strumenti collaborativi di GitHub, in particolare le <a href="https://guides.github.com/features/issues/"><i>issues</i></a> (per le discussioni) e le <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> (per le proposte di modifica).'
   img: /assets/images/pages/neonbrand-226736.jpg

@@ -23,10 +23,10 @@ download_file :
 - file : 'https://italia.github.io/bootstrap-italia/'
   caption : 'Bootstrap Italia'
   type : 'external'
-- file : 'https://italia.github.io/design-angular-toolkit/'
+- file : 'https://italia.github.io/design-angular-kit/'
   caption : 'Angular Kit'
   type : 'external'
-- file : 'https://italia.github.io/design-react-toolkit/'
+- file : 'https://italia.github.io/design-react-kit/'
   caption : 'React Kit'
   type : 'external'
 
