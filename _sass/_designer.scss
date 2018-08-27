@@ -842,13 +842,15 @@ body.layout-download {
 }
 
 /**/
-.lg-showcase img {
-  max-width: 100%;
-  width: 25rem;
-  height: 20rem;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  padding-right: 2em;
+.lg-showcase {
+  & img {
+    max-width: 100%;
+    width: 25rem;
+    margin: 0rem 1rem 2.5rem;
+    padding: 1rem;
+    vertical-align: top;
+    box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);
+  }
 }
 
 .iPress-blockquote {

@@ -31,9 +31,7 @@ In parallelo su [Developers Italia](https://developers.italia.it/) prenderà il 
 
 ### Roadmap
 
-- Giugno/Luglio *Codesign* (workshop e interviste agli stakeholder) - completato
-- Settembre 2017 *Definizione del capitolato tecnico e procedure di gara* - in corso
-- Febbraio 2018 *Avvio della fase di ricerca* (analisi siti esistenti, ricerca su studenti e genitori)
-- Aprile 2018 *Avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
-- Giugno 2018 *Avvio della fase di rilascio delle componenti per un modello di siti web* (prototipo navigabile, template grafici, e avvio del processo di miglioramento continuo)
-- Luglio-Settembre 2018 *Rilascio progressivo della ricerca, del prototipo e della relativa documentazione*
+- Luglio-Settembre 2017: *Codesign* (workshop e interviste agli stakeholder) e *Definizione del capitolato tecnico e procedure di gara*
+- Febbraio 2018: *Avvio della fase di ricerca* (analisi siti esistenti, ricerca su studenti e genitori)
+- Aprile 2018: *Avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
+- Settembre 2018: *Rilascio progressivo della ricerca, del prototipo e della relativa documentazione*
