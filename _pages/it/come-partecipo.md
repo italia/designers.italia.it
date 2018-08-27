@@ -16,7 +16,7 @@ blocks:
     - label: Mandaci la tua proposta!
       url: 'mailto:contatti@designers.italia.it'
 - title: Alimenta il design system
-  subtitle: 'Il design system di Designers Italia si compone di alcuni elementi: wireframe kit, UI kit e web toolkit.<br>Grazie a dei <i>repository</i> pubblici su GitHub è possibile proporre modifiche o proporre nuovi elementi al Wireframe Kit, allo UI kit, all’icon kit, e ai web toolkit, attraverso delle <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> o delle <a href="https://guides.github.com/features/issues/"><i>issues</i></a> con dei file allegati.'
+  subtitle: 'Il design system di Designers Italia si compone di un Wireframe Kit, uno UI Kit, un Icon Kit e un Web Toolkit declinato in diverse varianti a seconda della tecnologia che si desidera utilizzare nel proprio progetto.<br>Grazie a dei <i>repository</i> pubblici, è sufficiente avere un account su GitHub per proporre modifiche o aggiungere nuovi elementi ai kit, attraverso delle <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> o delle <a href="https://guides.github.com/features/issues/"><i>issue</i></a>.'
   img: /assets/images/pages/alimenta-il-design-system.jpg
   button:
     - label: Partecipa al Wireframe Kit

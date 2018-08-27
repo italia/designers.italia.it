@@ -45,7 +45,7 @@ carousel:
 ###### CHE COS’È
 
 {:.u-color-50 .u-margin-bottom-xxl}
-#### Il toolkit dedicato allo sviluppo di siti e applicazioni web è un insieme di **strumenti e codice sorgente** già pronti e validati per la creazione di interfacce mobile-first usabili, accessibili e consistenti, conformi alle Linee Guida di design per i servizi web della Pubblica Amministrazione.
+#### Il toolkit dedicato allo sviluppo di siti e applicazioni web è un insieme di **strumenti e codice sorgente** già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti, conformi alle Linee Guida di design per i servizi web della Pubblica Amministrazione.
 
 {% include simplecarousel.html  %}
 
@@ -62,6 +62,6 @@ Il Web Toolkit **indica e assicura** una realizzazione conforme alle linee guida
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
 All'interno dei Web Toolkit trovi diversi strumenti per lo sviluppo di interfacce web: ognuni di questi si compone di codice **HTML, CSS e Javascript** progettati per una più semplice creazione di siti e applicazioni web e interfacce basata sui princìpi di **composizione** e del **riuso** di componenti condivisi.
-- **Web Toolkit** è la libreria "storica" tra i Web Toolkit, con il più alto numero di componenti già pronti all'uso.
-- **Bootstrap Italia** (in lavorazione) è il successore del Web Toolkit, costruito sulla libreria Bootstrap 4 e basato sulle nuove direttive presenti nello UI Kit 2.0.
-- **React Kit** e **Angular Kit** (in lavorazione) mettono a disposizione componenti costruiti rispettivamente sulle basi di React e AngularJS.
+- **Web Toolkit** è la libreria "storica" tra i Web Toolkit, quella con il più alto numero di componenti già pronti all'uso.
+- **Bootstrap Italia** è il successore del Web Toolkit, attualmente in lavorazione e costruito sulla libreria Bootstrap 4 e basato sulle nuove direttive presenti nello UI Kit 2.0.
+- **React Kit** e **Angular Kit**, anch'essi in lavorazione, mettono a disposizione componenti costruiti rispettivamente sulle basi di React e AngularJS.
