@@ -1,5 +1,27 @@
 {
-  "private": true,
+  "name": "designers.italia.it",
+  "version": "1.0.0",
+  "description": "La comunità italiana dei designer di servizi pubblici",
+  "author": "Presidenza del Consiglio dei Ministri",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/italia/designers.italia.it.git"
+  },
+  "bugs": {
+    "url": "https://github.com/francescozaia/designers.italia.it/issues"
+  },
+  "homepage": "https://designers.italia.it/",
+  "keywords": [
+    "designers",
+    "community",
+    "italia"
+  ],
+  "scripts": {
+    "test": "bundle exec htmlproofer ./_site  --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external",
+    "build": "gulp build",
+    "deploy": "gulp publish-production"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",

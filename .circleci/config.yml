@@ -1,0 +1,61 @@
+version: 2
+jobs:
+  test:
+    docker:
+      - image: circleci/ruby:2.5.1-node-browsers
+    steps:
+      - checkout
+      - run:
+          name: Ruby dependencies
+          command: bundle install
+      - run:
+          name: Node dependencies
+          command: npm install
+      - run:
+          name: Build
+          command: npm run build
+      - run:
+          name: Test with HTML Proofer
+          command: npm run test
+  deploy:
+    docker:
+      - image: circleci/ruby:2.5.1-node-browsers
+    environment:
+      JEKYLL_ENV: production
+      NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+    steps:
+      - checkout
+      - run:
+          name: Ruby dependencies
+          command: bundle install
+      - run:
+          name: Node dependencies
+          command: npm install
+      - run:
+          name: Build
+          command: npm run build
+      - run:
+          name: Test with HTML Proofer
+          command: npm run test
+      - run:
+          name: Deploy to production
+          command: npm run deploy
+    - store_artifacts:
+        path: _site
+
+workflows:
+  version: 2
+  test:
+      jobs:
+        - test:
+            filters:
+              branches:
+                ignore:
+                  - master
+  deploy:
+      jobs:
+        - deploy:
+            filters:
+              branches:
+                only:
+                  - master
