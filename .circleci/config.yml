@@ -40,8 +40,8 @@ jobs:
       - run:
           name: Deploy to production
           command: npm run deploy
-    - store_artifacts:
-        path: _site
+      - store_artifacts:
+          path: _site
 
 workflows:
   version: 2
