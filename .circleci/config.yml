@@ -5,15 +5,39 @@ jobs:
       - image: circleci/ruby:2.5.1-node-browsers
     steps:
       - checkout
+
+      #
+      # Download and cache Ruby dependencies
+      #
+      - restore_cache:
+          keys:
+            - dependencies-ruby-{{ checksum "Gemfile.lock" }}
+            - dependencies-ruby-
       - run:
           name: Ruby dependencies
           command: bundle install
+      - save_cache:
+          key: v1-dependencies-ruby-{{ checksum "Gemfile.lock" }}
+
+      #
+      # Download and cache node dependencies
+      #
+      - restore_cache:
+          keys:
+          - dependencies-node-{{ checksum "yarn.lock" }}
+          - dependencies-node-
       - run:
           name: Node dependencies
-          command: npm install
+          command: yarn install
+      - save_cache:
+          key: dependencies-node-{{ checksum "yarn.lock" }}
+
+      # Build the site
       - run:
           name: Build
           command: npm run build
+
+      # Test the site
       - run:
           name: Test with HTML Proofer
           command: npm run test
@@ -25,21 +49,48 @@ jobs:
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     steps:
       - checkout
+
+      #
+      # Download and cache Ruby dependencies
+      #
+      - restore_cache:
+          keys:
+            - dependencies-ruby-{{ checksum "Gemfile.lock" }}
+            - dependencies-ruby-
       - run:
           name: Ruby dependencies
           command: bundle install
+      - save_cache:
+          key: v1-dependencies-ruby-{{ checksum "Gemfile.lock" }}
+
+      #
+      # Download and cache node dependencies
+      #
+      - restore_cache:
+          keys:
+          - dependencies-node-{{ checksum "yarn.lock" }}
+          - dependencies-node-
       - run:
           name: Node dependencies
-          command: npm install
+          command: yarn install
+      - save_cache:
+          key: dependencies-node-{{ checksum "yarn.lock" }}
+
+      # Build the site
       - run:
           name: Build
-          command: npm run build
+          command: yarn run build
+
+      # Test the site
       - run:
           name: Test with HTML Proofer
-          command: npm run test
+          command: yarn run test
+
+      # Deploy the site
       - run:
           name: Deploy to production
-          command: npm run deploy
+          command: yarn run deploy
+
       - store_artifacts:
           path: _site
 
