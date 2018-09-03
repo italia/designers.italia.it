@@ -25,7 +25,7 @@ download_file :
   type : 'internal'
 - file :
   caption : 'Esercizio wireframe di carta'
-  type : 'internal'
+  type : 'https://drive.google.com/file/d/1wdb4JWlcJRYum2LpnllFy2zlxx2EptYx/view?usp=sharing'
 
 carousel:
 - img: '/assets/images/kits/WireframeKit_Slide1.jpg'
