@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
 
+      # Install rsync
+      - run: which rsync || sudo apt-get install rsync
+
       #
       # Download and cache Ruby dependencies
       #
@@ -54,6 +57,9 @@ jobs:
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     steps:
       - checkout
+
+      # Install rsync
+      - run: which rsync || sudo apt-get install rsync
 
       #
       # Download and cache Ruby dependencies
