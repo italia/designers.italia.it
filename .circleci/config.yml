@@ -18,6 +18,8 @@ jobs:
           command: bundle install
       - save_cache:
           key: v1-dependencies-ruby-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
 
       #
       # Download and cache node dependencies
@@ -31,6 +33,9 @@ jobs:
           command: yarn install
       - save_cache:
           key: dependencies-node-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+            - ~/.cache/yarn
 
       # Build the site
       - run:
@@ -62,6 +67,8 @@ jobs:
           command: bundle install
       - save_cache:
           key: v1-dependencies-ruby-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
 
       #
       # Download and cache node dependencies
@@ -75,6 +82,9 @@ jobs:
           command: yarn install
       - save_cache:
           key: dependencies-node-{{ checksum "yarn.lock" }}
+          paths:
+            - node_modules
+            - ~/.cache/yarn
 
       # Build the site
       - run:
