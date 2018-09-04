@@ -20,12 +20,12 @@ download_file :
 - file : 'https://github.com/italia/design-wireframe-kit'
   caption : 'Wireframe Kit'
   type : 'internal'
-- file :
+- file : 'https://docs.google.com/spreadsheets/d/1d-bHfzCMg3Y2Wyel1OcHBF74BpTlx1bCpJ7l56K7Xac/edit?usp=sharing'
   caption : 'Esercizio di costruzione degli user flow'
   type : 'internal'
-- file :
+- file : 'https://drive.google.com/file/d/1wdb4JWlcJRYum2LpnllFy2zlxx2EptYx/view?usp=sharing'
   caption : 'Esercizio wireframe di carta'
-  type : 'https://drive.google.com/file/d/1wdb4JWlcJRYum2LpnllFy2zlxx2EptYx/view?usp=sharing'
+  type : 'internal'
 
 carousel:
 - img: '/assets/images/kits/WireframeKit_Slide1.jpg'
