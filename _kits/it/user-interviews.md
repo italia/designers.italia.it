@@ -17,9 +17,6 @@ guidelines:
 - User research
 
 download_file :
-- file : 
-  caption : 'Protocollo di ricerca'
-  type : 'internal'
 - file : 'https://docs.google.com/document/d/1cPKIZhIv2g79OHwxUUFT_wTV4X-vO5xFRACeVmf2rfM/edit' 
   caption : 'Questionario di recruiting'
   type : 'internal'
