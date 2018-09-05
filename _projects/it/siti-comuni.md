@@ -11,7 +11,7 @@ layout: project
 ---
 
 ### Descrizione
-Designers Italia, la piattaforma di design dei servizi pubblici ideata da Team Digitale, sta realizzando, in collaborazione con [AGID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8mila Comuni italiani, basato sul proprio *design system*. 
+Designers Italia, la community di design dei servizi pubblici ideata dal [Team Digitale](https://teamdigitale.governo.it/), sta realizzando, in collaborazione con [AGID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8mila Comuni italiani, basato sul proprio *design system*. 
 
 ### Obiettivi
 
@@ -41,9 +41,9 @@ Qui alcune attività preliminari di analisi condotte nel 2017 e nel 2018:
 
 #### Il metodo di lavoro
 
-[Linee guida di design per i servizi digitali della Pubblica Amministrazione]()
-[Il wireframe kit]()
-[Lo UI kit di Designers Italia]()
+[Linee guida di design per i servizi digitali della Pubblica Amministrazione](https://designers.italia.it/guide/)
+[Il wireframe kit](https://designers.italia.it/kit/ui-kit/)
+[Lo UI kit di Designers Italia](https://designers.italia.it/kit/ui-kit/)
 
 #### I risultati
 
