@@ -42,7 +42,7 @@ Qui alcune attività preliminari di analisi condotte nel 2017 e nel 2018:
 #### Il metodo di lavoro
 
 [Linee guida di design per i servizi digitali della Pubblica Amministrazione](https://designers.italia.it/guide/)
-[Il wireframe kit](https://designers.italia.it/kit/ui-kit/)
+[Il wireframe kit](https://designers.italia.it/kit/wireframe-kit/)
 [Lo UI kit di Designers Italia](https://designers.italia.it/kit/ui-kit/)
 
 #### I risultati
