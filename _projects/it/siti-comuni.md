@@ -1,7 +1,7 @@
 ---
 title: Siti web dei Comuni
-description: Modello di sito web per i Comuni italia, costruito utilizzando il design system di Designers Italia.
-#subtitle: Modello di sito web per i Comuni italia, costruito utilizzando il design system di Designers Italia
+description: Modello di sito web per i Comuni italiani, costruito utilizzando il design system di Designers Italia.
+#subtitle: Modello di sito web per i Comuni italiani, costruito utilizzando il design system di Designers Italia
 #payoff: Il punto di riferimento per il design dei siti web dei Comuni
 logo: 
 lang: it
