@@ -50,7 +50,7 @@ blocks:
 
 ---
 
-Designers Italia è un progetto aperto basato sulla partecipazione e il contributo di designer e professionisti interni ed esterni alla Pubblica Amministrazione
+Designers Italia è un progetto aperto basato sulla partecipazione e il contributo di designer e professionisti interni ed esterni alla Pubblica Amministrazione.
 
 
 Puoi prendere parte alla vita e all’evoluzione di Designers Italia in diversi modi, dalla semplice condivisione di idee e best practice, allo sviluppo delle linee guida, alla diffusione delle soluzioni proposte.
