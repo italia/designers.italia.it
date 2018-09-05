@@ -57,7 +57,7 @@ jobs:
 
       # Manage rsync
       - run: mkdir -p ~/.ssh
-      - run: echo $DESIGNERSITALIA_SITE_PRODUCTION_SERVER | base64 -d >> ~/.ssh/known_hosts
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
 
       #
