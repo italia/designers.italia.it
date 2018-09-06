@@ -25,6 +25,8 @@ blocks:
       url: 'https://github.com/italia/design-icon-kit'
     - label: Partecipa allo UI Kit
       url: 'https://github.com/italia/design-ui-kit'
+    - label: Partecipa alla Guida al linguaggio
+      url: 'https://github.com/italia/writing-toolkit'
     - label: Partecipa al Web Toolkit
       url: 'https://github.com/italia/design-web-toolkit'
     - label: Partecipa a Bootstrap Italia
