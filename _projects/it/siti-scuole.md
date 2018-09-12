@@ -3,7 +3,7 @@ title: Siti web delle scuole
 description: Modello di sito web e template grafico per le scuole italiane creato dal MIUR, gratis e a disposizione di tutti.
 #subtitle: Modello di siti web per le scuole italiane
 #payoff: Il punto di riferimento per il design dei siti web delle scuole
-logo: /assets/images/projects/scuole-cover.jpg
+logo: /assets/images/projects/logo-sitiweb-scuole.jpg
 lang: it
 order: 4
 highlight: true

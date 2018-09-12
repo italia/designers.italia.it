@@ -3,7 +3,7 @@ title: Siti web dei Comuni
 description: Modello di sito web per i Comuni italiani, costruito utilizzando il design system di Designers Italia.
 #subtitle: Modello di sito web per i Comuni italiani, costruito utilizzando il design system di Designers Italia
 #payoff: Il punto di riferimento per il design dei siti web dei Comuni
-logo: 
+logo: /assets/images/projects/logo-sitiweb-comuni.jpg
 lang: it
 order: 4
 highlight: true
@@ -11,7 +11,7 @@ layout: project
 ---
 
 ### Descrizione
-Designers Italia, la community di design dei servizi pubblici ideata dal [Team Digitale](https://teamdigitale.governo.it/), sta realizzando, in collaborazione con [AGID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8mila Comuni italiani, basato sul proprio *design system*. 
+Designers Italia, la community di design dei servizi pubblici ideata dal [Team Digitale](https://teamdigitale.governo.it/), sta realizzando, in collaborazione con [AGID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8mila Comuni italiani, basato sul proprio *design system*.
 
 ### Obiettivi
 
@@ -29,7 +29,7 @@ Il modello si basa su un’attività di analisi desk partita nel 2017, su una ri
 
 #### I risultati della ricerca
 
-I risultati delle attività di ricerca verranno pubblicati nel corso del mese di settembre. 
+I risultati delle attività di ricerca verranno pubblicati nel corso del mese di settembre.
 
 Qui alcune attività preliminari di analisi condotte nel 2017 e nel 2018:
 
