@@ -6,7 +6,7 @@ order: 4
 highlight: true
 layout: project
 toc: true
-logo: /assets/images/projects/logo-sitiweb.jpg
+logo: /assets/images/projects/logo-sitiweb-pa.jpg
 ---
 
 Alcuni dei siti della PA italiane/dei Comuni italiani che hanno adottato le linee guida di design. Si tratta di interpretazioni complessivamente coerenti con le indicazioni tecniche di massima.
@@ -60,7 +60,7 @@ Marzo 2016
   <noscript>
     ![Ministero delle infrastrutture e dei Trasporti - vecchio sito]({{ site.baseurl }}/assets/images/showcase/image5.png)
     ![Ministero delle infrastrutture e dei Trasporti - nuovo sito]({{ site.baseurl }}/assets/images/showcase/image6.png)
-  </noscript>  
+  </noscript>
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image5.png" class="lazyload" alt="Ministero delle infrastrutture e dei Trasporti - vecchio sito" data-proofer-ignore />
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image6.png" class="lazyload" alt="Ministero delle infrastrutture e dei Trasporti - nuovo sito" data-proofer-ignore />
 </div>
