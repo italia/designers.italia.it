@@ -23,7 +23,7 @@ download_file :
 - file : 'https://docs.google.com/document/d/1Ev6UG3uRbpTPdYsNrqqgDZjiMpVDvPQk-XfriH2QDac/edit?usp=sharing'
   caption : 'Guida alla conduzione dell’intervista'
   type : 'internal'
-- file : 'https://docs.google.com/document/d/1JVctSWSJN6tJeno70OjA8Tl_4rs0dIJ5XLoOQbIgo24/edit?usp=sharing'
+- file : 'https://docs.google.com/document/d/1c4Ea2ni0aq4_4zq9kaojtrFRH5QQGKhYZvCo2b1mr2U/edit?usp=sharing'
   caption : 'Liberatoria per il consenso al trattamento dei dati'
   type : 'internal'
 - file : 'https://docs.google.com/document/d/107LUHpBwhaE2PaV1gnwgYZF8VcC7Wn4bFX8pB0-aU5w/edit'
