@@ -45,6 +45,9 @@ download_file :
 - file : 'https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view?usp=sharing'
   caption : 'Esercizio di content journey'
   type : 'internal'
+- file : 'https://docs.google.com/document/d/1hz7dNa2eKU1atAr3dzgyZH0W2kETBuDBejk62wEVPL4/edit?usp=sharing'
+  caption : 'Modello di liberatoria per l'utilizzo di foto e video'
+  type : 'internal'
 
 carousel:
 - img: '/assets/images/kits/ContentKit_Slide1.jpg'
