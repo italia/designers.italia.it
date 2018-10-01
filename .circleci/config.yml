@@ -57,7 +57,7 @@ jobs:
 
       # Manage rsync:
       #   SSH_KNOWN_HOSTS is populated with the output of
-      #   ssh-keyscan -f $REMOTEHOST | base64.
+      #   ssh-keyscan $REMOTEHOST | base64.
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
