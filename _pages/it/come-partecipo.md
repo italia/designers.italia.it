@@ -36,11 +36,11 @@ blocks:
     - label: Partecipa ad Angular Kit
       url: 'https://github.com/italia/design-angular-kit'
 - title: Prendi parte alla scrittura delle linee guida
-  subtitle: 'Le linee guida sono un documento pubblico e chiunque può partecipare al processo di revisione e aggiornamento <b>proponendo modifiche</b> e nuovi contenuti.<br>Grazie ad <a href="https://github.com/italia/design-docs">un <i>repository</i> pubblico su GitHub</a> è possibile seguirne lo sviluppo, proporre correzioni o <b>partecipare alla stesura</b> di nuove versioni (seguendo le regole di questa <a href="https://design-italia.readthedocs.io/it/stable/doc/introduzione-linee-guida-design.html#stile-della-documentazione"><i>Style guide</i></a>). Per farlo, si devono usare gli strumenti collaborativi di GitHub, in particolare le <a href="https://guides.github.com/features/issues/"><i>issues</i></a> (per le discussioni) e le <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> (per le proposte di modifica).'
+  subtitle: 'Le linee guida sono un documento pubblico e chiunque può partecipare al processo di revisione e aggiornamento <b>proponendo modifiche</b> e nuovi contenuti.<br>Grazie ad <a href="https://github.com/italia/design-linee-guida-docs">un <i>repository</i> pubblico su GitHub</a> è possibile seguirne lo sviluppo, proporre correzioni o <b>partecipare alla stesura</b> di nuove versioni (seguendo le regole di questa <a href="https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/introduzione-linee-guida-design.html#stile-della-documentazione"><i>Style guide</i></a>). Per farlo, si devono usare gli strumenti collaborativi di GitHub, in particolare le <a href="https://guides.github.com/features/issues/"><i>issues</i></a> (per le discussioni) e le <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> (per le proposte di modifica).'
   img: /assets/images/pages/neonbrand-226736.jpg
   button:
     - label: partecipa all’evoluzione delle linee guida!
-      url: 'https://github.com/italia/design-docs'
+      url: 'https://github.com/italia/design-linee-guida-docs'
 - title: Condividi il modello di Designers Italia
   subtitle: Se sei un professore o un ricercatore, puoi raccontare l’approccio di Designers Italia come esempio di progettazione di servizi digitali in ambito pubblico, e organizzare <b>workshop</b> sperimentando con i nostri strumenti e risorse.
   img: /assets/images/pages/Università.jpeg
