@@ -18,7 +18,7 @@ blocks:
   - label: kit co-design workshop
     url: '/kit/co-design-workshop'
   - label: linee guida user research
-    url: 'https://design-italia.readthedocs.io/it/stable/doc/user-research.html'
+    url: 'https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research.html'
 - title: Vuoi migliorare l’usabilità del tuo sito o della tua applicazione?
   subtitle: Osserva quali problemi incontrano gli utenti durante l’utilizzo e individua le criticità più importanti da risolvere.
   img: /assets/images/kits/placeholder_kit_07_usabilitytest.png
@@ -44,7 +44,7 @@ blocks:
 
 Su Designers Italia puoi trovare risorse per progettare e semplificare i servizi pubblici. Sul sito trovi diversi **kit, linee guida, discussioni e casi d’uso**, che potranno esserti utili per risolvere criticità legate all’esperienza d’uso, ideare nuovi servizi digitali o migliorare servizi esistenti.
 
-I [kit di design](/kit){:class="u-linkClean u-color-50"} sono un buon punto di partenza: da lì puoi esplorare le [linee guida ufficiali per il design dei servizi della Pubblica Amministrazione](https://design-italia.readthedocs.io/it/stable/doc/introduzione-linee-guida-design.html){:target="_blank" class="u-linkClean u-color-50"} e leggere *case history* sugli argomenti che ti interessano.
+I [kit di design](/kit){:class="u-linkClean u-color-50"} sono un buon punto di partenza: da lì puoi esplorare le [linee guida ufficiali per il design dei servizi della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/introduzione-linee-guida-design.html){:target="_blank" class="u-linkClean u-color-50"} e leggere *case history* sugli argomenti che ti interessano.
 
 
 Per iniziare:

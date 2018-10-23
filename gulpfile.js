@@ -1,9 +1,9 @@
-const gulp = require('gulp');
-const gutil = require('gulp-util');
-const fs = require('fs');
-const os = require('os');
-const path = require('path');
-const configFile = path.join(os.homedir(), ".designersitalia_site.json");
+var gulp = require('gulp');
+var gutil = require('gulp-util');
+var fs = require('fs');
+var os = require('os');
+var path = require('path');
+var configFile = path.join(os.homedir(), ".designersitalia_site.json");
 
 var config = {};
 if (fs.existsSync(configFile)) {
@@ -13,21 +13,21 @@ if (fs.existsSync(configFile)) {
   gutil.log("No local config found at [" + configFile + "]");
 }
 
-const runSequence = require('run-sequence');
-const clean = require('gulp-clean');
-const shell = require('gulp-shell');
-const imagemin = require('gulp-imagemin');
-const pngquant = require('imagemin-pngquant');
-const jpegtran = require('imagemin-jpegtran');
-const gifsicle = require('imagemin-gifsicle');
-const minifyHTML = require('gulp-htmlmin');
-const autoprefixer = require('gulp-autoprefixer');
-const uncss = require('gulp-uncss');
-const cleanCss = require('gulp-clean-css');
-const concat = require('gulp-concat');
-const rename = require('gulp-rename');
-const uglify = require('gulp-uglify');
-const rsync = require('gulp-rsync');
+var runSequence = require('run-sequence');
+var clean = require('gulp-clean');
+var shell = require('gulp-shell');
+var imagemin = require('gulp-imagemin');
+var pngquant = require('imagemin-pngquant');
+var jpegtran = require('imagemin-jpegtran');
+var gifsicle = require('imagemin-gifsicle');
+var minifyHTML = require('gulp-htmlmin');
+var autoprefixer = require('gulp-autoprefixer');
+var uncss = require('gulp-uncss');
+var cleanCss = require('gulp-clean-css');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var uglify = require('gulp-uglify');
+var rsync = require('gulp-rsync');
 
 gulp.task('jekyll', function() {
   return gulp.src('README.md', {
