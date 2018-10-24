@@ -1,4 +1,6 @@
+# prepare a couple reusable parameters
 anchor_1: &job_defaults
+  working_directory: /tmp/designers.italia.it
   docker:
     - image: circleci/ruby:2.5.1-node-browsers
 
@@ -130,9 +132,9 @@ jobs:
             git checkout gh-pages || git checkout --orphan gh-pages
             git rm -rf .
 
-            cp -a $CIRCLE_WORKING_DIRECTORY/_site/. .
+            cp -a /tmp/designers.italia.it/_site/. .
             # copy .circleci as well so that the branch filter is honored
-            mkdir -p .circleci && cp -a $CIRCLE_WORKING_DIRECTORY/.circleci/. .circleci/.
+            mkdir -p .circleci && cp -a /tmp/designers.italia.it/.circleci/. .circleci/.
 
             git add -A
             git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
