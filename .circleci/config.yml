@@ -1,9 +1,19 @@
+anchor_1: &job_defaults
+  docker:
+    - image: circleci/ruby:2.5.1-node-browsers
+
+# we use a rw SSH key instead of the default one injected by CircleCI because we
+# use it for deploy as well
+anchor_2: &add_ssh_keys
+    fingerprints:
+      - "4f:c4:83:7f:16:06:3e:ac:11:22:ae:c2:dd:40:d9:20"
+
 version: 2
 jobs:
   test:
-    docker:
-      - image: circleci/ruby:2.5.1-node-browsers
+    <<: *job_defaults
     steps:
+      - add_ssh_keys: *add_ssh_keys
       - checkout
 
       #
@@ -46,19 +56,15 @@ jobs:
       - run:
           name: Test with HTML Proofer
           command: npm run test
+
   deploy:
-    docker:
-      - image: circleci/ruby:2.5.1-node-browsers
+    <<: *job_defaults
     environment:
       JEKYLL_ENV: production
       NOKOGIRI_USE_SYSTEM_LIBRARIES: true
     steps:
+      - add_ssh_keys: *add_ssh_keys
       - checkout
-
-      # Manage rsync
-      - run: mkdir -p ~/.ssh
-      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
-      - run: which rsync || sudo apt-get install rsync
 
       #
       # Download and cache Ruby dependencies
@@ -101,13 +107,36 @@ jobs:
           name: Test with HTML Proofer
           command: yarn run test
 
-      # Deploy the site
+      # Manage rsync
+      - run: mkdir -p ~/.ssh
+      - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
+      - run: which rsync || sudo apt-get install rsync
+
+      # Deploy the site to the legacy server
       - run:
           name: Deploy to production
           command: yarn run deploy
 
-      - store_artifacts:
-          path: _site
+      # Deploy the site to GitHub Pages
+      - checkout:
+          path: /tmp/gh-pages
+      - deploy:
+          name: Deploy
+          command: |
+            git config --global user.email no-reply@teamdigitale.governo.it
+            git config --global user.name "Deploy Bot"
+
+            cd /tmp/gh-pages
+            git checkout gh-pages || git checkout --orphan gh-pages
+            git rm -rf .
+
+            cp -a $CIRCLE_WORKING_DIRECTORY/_site/. .
+            # copy .circleci as well so that the branch filter is honored
+            mkdir -p .circleci && cp -a $CIRCLE_WORKING_DIRECTORY/.circleci/. .circleci/.
+
+            git add -A
+            git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1}" --allow-empty
+            git push origin gh-pages
 
 workflows:
   version: 2
@@ -125,3 +154,4 @@ workflows:
               branches:
                 only:
                   - master
+                  - deploy-ghpages
