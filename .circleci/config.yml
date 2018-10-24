@@ -1,4 +1,5 @@
 # prepare a couple reusable parameters
+var_1: &cache_key dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
 anchor_1: &job_defaults
   working_directory: /tmp/designers.italia.it
   docker:
@@ -19,33 +20,20 @@ jobs:
       - checkout
 
       #
-      # Download and cache Ruby dependencies
+      # Download and cache dependencies
       #
       - restore_cache:
-          keys:
-            - dependencies-ruby-{{ checksum "Gemfile.lock" }}
-            - dependencies-ruby-
+          key: *cache_key
       - run:
           name: Ruby dependencies
           command: bundle install
-      - save_cache:
-          key: v1-dependencies-ruby-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
-
-      #
-      # Download and cache node dependencies
-      #
-      - restore_cache:
-          keys:
-          - dependencies-node-{{ checksum "yarn.lock" }}
-          - dependencies-node-
       - run:
           name: Node dependencies
           command: yarn install
       - save_cache:
-          key: dependencies-node-{{ checksum "yarn.lock" }}
+          key: key: *cache_key
           paths:
+            - vendor/bundle
             - node_modules
             - ~/.cache/yarn
 
@@ -69,33 +57,20 @@ jobs:
       - checkout
 
       #
-      # Download and cache Ruby dependencies
+      # Download and cache dependencies
       #
       - restore_cache:
-          keys:
-            - dependencies-ruby-{{ checksum "Gemfile.lock" }}
-            - dependencies-ruby-
+          key: *cache_key
       - run:
           name: Ruby dependencies
           command: bundle install
-      - save_cache:
-          key: v1-dependencies-ruby-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
-
-      #
-      # Download and cache node dependencies
-      #
-      - restore_cache:
-          keys:
-          - dependencies-node-{{ checksum "yarn.lock" }}
-          - dependencies-node-
       - run:
           name: Node dependencies
           command: yarn install
       - save_cache:
-          key: dependencies-node-{{ checksum "yarn.lock" }}
+          key: key: *cache_key
           paths:
+            - vendor/bundle
             - node_modules
             - ~/.cache/yarn
 
@@ -109,7 +84,7 @@ jobs:
           name: Test with HTML Proofer
           command: yarn run test
 
-      # Manage rsync
+      # Install rsync
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
