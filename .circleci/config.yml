@@ -31,7 +31,7 @@ jobs:
           name: Node dependencies
           command: yarn install
       - save_cache:
-          key: key: *cache_key
+          key: *cache_key
           paths:
             - vendor/bundle
             - node_modules
@@ -68,7 +68,7 @@ jobs:
           name: Node dependencies
           command: yarn install
       - save_cache:
-          key: key: *cache_key
+          key: *cache_key
           paths:
             - vendor/bundle
             - node_modules
