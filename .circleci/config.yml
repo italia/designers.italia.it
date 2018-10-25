@@ -1,5 +1,5 @@
 # prepare a couple reusable parameters
-var_1: &cache_key dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+var_1: &cache_key v0-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
 anchor_1: &job_defaults
   working_directory: /tmp/designers.italia.it
   docker:
