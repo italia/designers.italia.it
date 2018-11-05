@@ -27,7 +27,7 @@ Attualmente l’integrazione di SPID si basa sullo standard **SAML** e può avve
 
 ### Linee guida
 
-[Regole tecniche](http://spid-regole-tecniche.readthedocs.io/en/latest/introduzione.html)
+[Regole tecniche](https://docs.italia.it/italia/spid/spid-regole-tecniche/)
 
 ### Codice sorgente
 
