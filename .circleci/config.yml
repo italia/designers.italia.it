@@ -91,10 +91,10 @@ jobs:
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
       - run: which rsync || sudo apt-get install rsync
 
-      # Deploy the site to the legacy server
-      - run:
-          name: Deploy to production
-          command: yarn run deploy
+      # Deploy the site to the legacy server (disabled)
+      # - run:
+      #    name: Deploy to production
+      #    command: yarn run deploy
 
       # Deploy the site to GitHub Pages
       - checkout:
