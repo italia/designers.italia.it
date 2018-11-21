@@ -110,6 +110,7 @@ jobs:
             git rm -rf .
 
             cp -a /tmp/designers.italia.it/_site/. .
+            echo "designers.italia.it" > CNAME
             # copy .circleci as well so that the branch filter is honored
             mkdir -p .circleci && cp -a /tmp/designers.italia.it/.circleci/. .circleci/.
 
