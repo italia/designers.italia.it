@@ -1,15 +1,17 @@
 {% include setlang.html %}
-<form class="Form" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank" style="max-width: 25em">
+<form action="https://italia.us19.list-manage.com/subscribe/post?u=5d9c606fb9659198899d9310b&amp;id=d3d194bfd3" class="Form" method="post" style="max-width: 25em" target="_blank">
   <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xl">
-    <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400"
-      role="presentation" aria-hidden="true">
+    <button aria-hidden="true" class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400" role="presentation"></button>
+    <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus" id="newsletter" name="EMAIL" required/>
+    <label class="Form-label u-color-grey-40 u-padding-left-xxl" for="newsletter">
+      <span class="u-hidden u-md-inline u-lg-inline">
+        {{t.home_newsletter_placeholder }}
+      </span>
+    </label>
+    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div aria-hidden="true" style="position: absolute; left: -5000px;"><input name="b_5d9c606fb9659198899d9310b_d3d194bfd3" tabindex="-1" type="text" value=""></div>
+    <button class="Grid-cell u-sizeFit u-background-teal-30 u-color-white u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s" type="submit">
+      {{ t.home_newsletter_button }}
     </button>
-    <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus " required id="newsletter" name="email" />
-    <label class="Form-label u-color-grey-40 u-padding-left-xxl" for="newsletter"><span class="u-hidden u-md-inline u-lg-inline">
-          {{t.home_newsletter_placeholder }}</span></label>
-    <input type="hidden" name="list" value="2">
-    <button type="submit" class="Grid-cell u-sizeFit u-background-teal-30 u-color-white u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s">
-       {{ t.home_newsletter_button }}
-      </button>
   </div>
 </form>
