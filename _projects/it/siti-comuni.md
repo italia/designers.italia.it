@@ -13,6 +13,8 @@ layout: project
 ### Descrizione
 Designers Italia, la community di design dei servizi pubblici ideata dal [Team Digitale](https://teamdigitale.governo.it/), sta realizzando, in collaborazione con [AGID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8 mila Comuni italiani, basato sul proprio *design system*.
 
+[Leggi il post di presentazione del progetto su Medium.](https://medium.com/team-per-la-trasformazione-digitale/modello-standard-sito-web-comuni-design-prototipo-mobile-first-open-source-organizzazione-contenuti-38b330e695a1)
+
 ### Obiettivi
 
 Il modello propone uno standard a tutti i Comuni che vogliono rendere più semplice ed efficace il proprio sito, sulla base degli effettivi bisogni dei cittadini. L’idea è che il lavoro di progettazione di ciascun Comune possa partire da componenti standard testate e verificate con gli utenti, in modo che ciascun Comune possa concentrarsi sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.
