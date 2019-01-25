@@ -20,7 +20,7 @@ download_file :
 - file : 'https://github.com/italia/design-ui-kit'
   caption : 'UI Kit'
   type : 'internal'
-- file : 'https://italia.github.io/design-web-toolkit/components/detail/icons.html'
+- file : 'https://github.com/italia/design-ui-kit'
   caption : 'Icon Kit'
   type : 'internal'
 
