@@ -11,7 +11,9 @@ layout: project
 ---
 
 ### Descrizione
-Designers Italia, la community di design dei servizi pubblici ideata dal [Team Digitale](https://teamdigitale.governo.it/), sta realizzando, in collaborazione con [AGID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8mila Comuni italiani, basato sul proprio *design system*.
+Designers Italia, la community di design dei servizi pubblici ideata dal [Team Digitale](https://teamdigitale.governo.it/), sta realizzando, in collaborazione con [AGID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8 mila Comuni italiani, basato sul proprio *design system*.
+
+[Leggi il post di presentazione del progetto su Medium.](https://medium.com/team-per-la-trasformazione-digitale/modello-standard-sito-web-comuni-design-prototipo-mobile-first-open-source-organizzazione-contenuti-38b330e695a1)
 
 ### Obiettivi
 
@@ -29,7 +31,7 @@ Il modello si basa su un’attività di analisi desk partita nel 2017, su una ri
 
 #### I risultati della ricerca
 
-I risultati delle attività di ricerca verranno pubblicati nel corso del mese di settembre.
+I risultati delle attività di ricerca sono discussi in dettaglio nella [documentazione del progetto](https://docs.italia.it/italia/designers-italia/design-comuni-docs), disponibile su Docs Italia.
 
 Qui alcune attività preliminari di analisi condotte nel 2017 e nel 2018:
 
@@ -47,9 +49,13 @@ Qui alcune attività preliminari di analisi condotte nel 2017 e nel 2018:
 
 #### I risultati
 
-I risultati del lavoro di prototipazione saranno pubblicati sotto forma di un wireframe interattivo a media definizione e template sketch ad alta definizione, adeguatamente supportati da documentazione.
+[Visualizza il concept del modello di siti dei comuni su Invision.](https://invis.io/Q2OTF1RMNUB )
 
-La pubblicazione è prevista entro il 30 settembre 2018.
+I risultati conpleti del lavoro di prototipazione sono pubblicati sotto forma di un wireframe interattivo a media definizione e template sketch ad alta definizione in un repository GitHub, adeguatamente supportati da documentazione.
+
+[Vai al repository GitHub dei prototipi.](https://github.com/italia/design-comuni-prototipi)
+
+[Consulta la documentazione del progetto su Docs Italia.](https://docs.italia.it/italia/designers-italia/design-comuni-docs)
 
 ### Come partecipare
 
