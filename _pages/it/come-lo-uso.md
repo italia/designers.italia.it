@@ -9,8 +9,8 @@ blocks:
   button:
   - label: UI Kit
     url: '/kit/ui-kit'
-  - label: Web Toolkit
-    url: '/kit/web-toolkit'
+  - label: Web development kit
+    url: '/kit/web-development-kit'
 - title: Vuoi organizzare l’avvio di un progetto nel migliore dei modi?
   subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
   img: /assets/images/kits/placeholder_kit_03_researchplan.png
