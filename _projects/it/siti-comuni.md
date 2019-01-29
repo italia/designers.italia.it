@@ -26,7 +26,9 @@ Il modello si basa su un’attività di analisi desk partita nel 2017, su una ri
 #### Il metodo di lavoro
 
 [Il kit di Designers Italia per i test di usabilità](https://designers.italia.it/kit/web-toolkit/)
+
 [Il kit per le user interview](https://designers.italia.it/kit/user-interviews/)
+
 [Guarda tutti i kit di Designers Italia](https://designers.italia.it/kit/)
 
 #### I risultati della ricerca
@@ -36,7 +38,9 @@ I risultati delle attività di ricerca sono discussi in dettaglio nella [documen
 Qui alcune attività preliminari di analisi condotte nel 2017 e nel 2018:
 
 [Data-driven design: ecco come i dati possono aiutarci a capire i bisogni dei cittadini](https://medium.com/designers-italia/data-driven-design-ecco-come-i-dati-possono-aiutarci-a-capire-i-bisogni-dei-cittadini-38f04d898f4d)
+
 [Cosa fanno gli utenti del sito di un Comune? Ce lo dice Piwik](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35)
+
 [Card sorting e navigazione per i siti web dei Comuni](https://medium.com/designers-italia/card-sorting-e-navigazione-per-i-siti-web-dei-comuni-f4ae175b84c4)
 
 ### Il prototipo
@@ -44,18 +48,20 @@ Qui alcune attività preliminari di analisi condotte nel 2017 e nel 2018:
 #### Il metodo di lavoro
 
 [Linee guida di design per i servizi digitali della Pubblica Amministrazione](https://designers.italia.it/guide/)
+
 [Il wireframe kit](https://designers.italia.it/kit/wireframe-kit/)
+
 [Lo UI kit di Designers Italia](https://designers.italia.it/kit/ui-kit/)
 
 #### I risultati
 
-[Visualizza il concept del modello di siti dei comuni su Invision.](https://invis.io/Q2OTF1RMNUB )
+[Visualizza il concept del modello di siti dei comuni su Invision.](https://invis.io/Q2OTF1RMNUB)
 
 I risultati conpleti del lavoro di prototipazione sono pubblicati sotto forma di un wireframe interattivo a media definizione e template sketch ad alta definizione in un repository GitHub, adeguatamente supportati da documentazione.
 
-[Vai al repository GitHub dei prototipi.](https://github.com/italia/design-comuni-prototipi)
+[Vai al repository GitHub dei prototipi](https://github.com/italia/design-comuni-prototipi)
 
-[Consulta la documentazione del progetto su Docs Italia.](https://docs.italia.it/italia/designers-italia/design-comuni-docs)
+[Consulta la documentazione del progetto su Docs Italia](https://docs.italia.it/italia/designers-italia/design-comuni-docs)
 
 ### Come partecipare
 
