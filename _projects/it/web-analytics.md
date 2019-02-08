@@ -1,6 +1,6 @@
 ---
-title: Web analytics siti pubblici
-description: Una piattaforma di web analytics open source per analizzare dati di traffico dei siti della pubblica amministrazione.
+title: Web Analytics Italia
+description: Una piattaforma di web analytics open source per analizzare i dati di traffico dei siti della pubblica amministrazione.
 #subtitle:
 #payoff:
 logo: /assets/images/projects/web-analytics-cover.jpg
@@ -10,52 +10,24 @@ highlight: true
 layout: project
 ---
 
-### Obiettivi
-
 I siti web della Pubblica Amministrazione italiana sono il punto di accesso privilegiato dei cittadini verso informazioni e servizi erogati dalla pubblica amministrazione.
 
-Per questo motivo, l’analisi del comportamento degli utenti che visitano i siti pubblici e l’avvio di azioni di ottimizzazione basate sui dati diventa fondamentale per assicurare ai cittadini un’esperienza web ottimale delle informazioni e dei servizi erogati.
+Per questo motivo, l’analisi del comportamento degli utenti che visitano i siti e l’avvio di azioni di ottimizzazione basate sui dati, diventa fondamentale per assicurare ai cittadini un’esperienza web ottimale delle informazioni e dei servizi digitali.
 
-Il [Team Digitale](https://teamdigitale.governo.it/) ha deciso di avviare, in collaborazione con [AgID](http://www.agid.gov.it/), la sperimentazione di una piattaforma di web analytics basata sul progetto *open source* **Piwik/Matomo** dedicata alle esigenze specifiche delle principali tipologie di siti web della PA italiana.
+A conclusione della [prima sperimentazione](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888) condotta da AGID e Team Digitale (luglio 2017 - marzo 2018), che ha visto la collaborazione di un [nucleo pilota di amministrazioni](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35) per un totale di 40 siti web analizzati, il team di lavoro AGID dedicato ha definito alcune soluzioni tecnologiche stabili e di lungo periodo che sono confluite nel progetto **Web Analytics Italia**. 
 
-Il percorso ha previsto una prima fase di sperimentazione con la collaborazione di un nucleo di amministrazioni pilota rappresentativo delle esigenze di diversi siti web pubblici.
+### Obiettivi
+Web Analytics Italia è una piattaforma di analisi dei dati dei siti web che consentirà alle amministrazioni pubbliche di:
 
-Nel mese di Novembre, a conclusione del progetto pilota, sono state pubblicate alcune case histories finalizzate a raccontare alcuni fra i principali casi d’uso della piattaforma nell’ambito della progettazione/riprogettazione data driven di siti web PA aderenti alla sperimentazione.
-
-- [Cosa abbiamo imparato su Piwik/Matomo](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888)
-- [Cosa fanno gli utenti del sito di un Comune? Ce lo dice Piwik](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35) (*Si specifica che nell’ambito delle differenti configurazioni Piwik/Matomo, le denominazioni di alcune delle funzionalità potrebbero variare*)
-
-Dal mese di dicembre 2017 il team di lavoro si sta occupando di definire soluzioni tecnologiche stabili e di lungo periodo, anche nell'ambito della community di sviluppatori di servizi pubblici digitali [Developers Italia](https://developers.italia.it/).
-
-### Siti e network di siti aderenti alla sperimentazione
-La prima fase del progetto pilota ha coinvolto un panel di circa 40 siti web, selezionati per rispondere all’esigenza di far emergere e categorizzare i bisogni di analisi di traffico web di specifiche categorie di PA.
-
-Le pubbliche amministrazioni aderenti sono state:
-
-- [Governo Italiano](http://www.governo.it/)
-- [INPS - Istituto Nazionale Previdenza Sociale](https://www.inps.it)
-- [MIUR - Ministero dell’Istruzione, dell’Università e della Ricerca](http://www.miur.gov.it)
-- [Network Regione Piemonte](http://www.regione.piemonte.it/)
-- [Network Comune di Cagliari](http://www.comune.cagliari.it/)
-- [Network Comune di Firenze](http://www.comune.fi.it/)
-- Network Scuole:
-    - [IC Foscolo, Vescovato (CR)]( https://www.icugofoscolo.it)
-    - [IC Fermi, Carvico (BG)](https://www.iccarvico.gov.it)
-    - [IC Severi, Padova](https://www.itiseveripadova.gov.it)
-    - [IC di Feltre (BL)](http://www.comprensivofeltre.gov.it)
-    - [IC Bosisio Parini (LC)](https://www.comprensivobosisio.gov.it)
-    - [IC di Verdellino (BG)]( https://icverdellino.gov.it)
-- [Comune di Biella](https://www.comune.biella.it/)
-- [Agenzia per l’Italia Digitale](http://www.agid.gov.it/)
-- [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/)
-- [SPID - Sistema Pubblico d’Identità Digitale](https://spid.gov.it/)
-
+- monitorare gratuitamente le statistiche di fruizione dei propri siti web
+- semplificare la condivisione dei dati nell’ambito della propria PA e con gli stakeholders esterni
+- facilitare l’individuazione dei punti critici su cui intervenire per migliorare i servizi digitali
+- offrire alle PA il totale controllo della proprietà del dato e l’aderenza alla norma GDPR 
+- disporre di strumenti ad hoc per pubblicare online le statistiche del sito/i monitorati [(art.7 del CAD)](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo1_sezione2_art7.html?highlight=statistiche%20utilizzo)  
+- beneficiare del supporto di una community di riferimento dedicata al progetto su Forum Italia 
+- esporre pubblicamente i dati rilevati in forma aggregata, sul portale Web Analytics Italia  
 
 ### Funzionalità
-Durante la sperimentazione sono state utilizzate la maggior parte delle funzionalità della [piattaforma open source Piwik/Matomo](https://piwik.org/). Sono state inoltre testate alcune delle funzionalità *premium* disponibili, in modalità “trial”.
+Web Analytics Italia si basa sul software open source [Matomo](https://matomo.org/) per le funzionalità di ingestion e reporting. L’accesso ai dati è offerto attraverso un portale che consentirà la registrazione e la gestione di siti e utenze. Gli stessi dati saranno resi disponibili via API per l’utilizzo da parte di applicazioni di terze parti.
 
-### Roadmap
-
-- Luglio 2017: *Avvio del progetto pilota* (set up piattaforma open source Piwik)
-- Settembre-Novembre 2017: *On boarding* (panel di diverse tipologie di siti pubblici monitorati) e *Analisi dei risultati* (punti di forza e di debolezza della soluzione rispetto ai bisogni)
-- Marzo 2018: *Inizio dello studio per l'identificazione delle soluzioni tecnologiche*
+L'uso della piattaforma e delle features supportate saranno gratuite per tutte le PA aderenti.
