@@ -7,6 +7,9 @@ highlight: true
 layout: project
 toc: true
 logo: /assets/images/projects/logo-sitiweb-pa.jpg
+redirect_from:
+  - /progetti/siti-pa/
+  - /siti-pa/
 ---
 
 Alcuni dei siti della PA italiane/dei Comuni italiani che hanno adottato le linee guida di design. Si tratta di interpretazioni complessivamente coerenti con le indicazioni tecniche di massima.
