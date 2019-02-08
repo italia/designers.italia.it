@@ -8,6 +8,9 @@ lang: it
 order: 4
 highlight: true
 layout: project
+redirect_from:
+  - /progetti/siti-comuni/
+  - /siti-comuni/
 ---
 
 ### Descrizione

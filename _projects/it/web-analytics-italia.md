@@ -8,6 +8,9 @@ lang: it
 order: 4
 highlight: true
 layout: project
+redirect_from:
+  - /progetti/web-analytics/
+  - /web-analytics/
 ---
 
 I siti web della Pubblica Amministrazione italiana sono il punto di accesso privilegiato dei cittadini verso informazioni e servizi erogati dalla pubblica amministrazione.
