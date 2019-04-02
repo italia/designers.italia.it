@@ -1,5 +1,5 @@
 # prepare a couple reusable parameters
-cache_key: &cache_key v2-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+cache_key: &cache_key v3-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
 job_defaults: &job_defaults
   working_directory: /tmp/designers.italia.it
   docker:
@@ -34,7 +34,7 @@ jobs:
             ruby --version
             bundle --version
             node --version
-            npm --version
+            yarn --version
             docker --version
 
       #
@@ -58,12 +58,12 @@ jobs:
       # Build the site
       - run:
           name: Build
-          command: npm run build
+          command: yarn run build
 
       # Test the site
       - run:
           name: Test with HTML Proofer
-          command: npm run test
+          command: yarn run test
 
   deploy:
     <<: *job_defaults
@@ -87,7 +87,7 @@ jobs:
             ruby --version
             bundle --version
             node --version
-            npm --version
+            yarn --version
             docker --version
 
       #
