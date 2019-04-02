@@ -1,9 +1,11 @@
 # prepare a couple reusable parameters
-var_1: &cache_key v1-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
-anchor_1: &job_defaults
+cache_key: &cache_key v2-dependencies-{{ checksum "Gemfile.lock" }}-{{ checksum "yarn.lock" }}
+job_defaults: &job_defaults
   working_directory: /tmp/designers.italia.it
   docker:
-    - image: circleci/ruby:2.5.1-node-browsers
+    - image: circleci/ruby:2.6.0-node
+      environment:
+        BUNDLER_VERSION: 2.0.1
 
 # we use a rw SSH key instead of the default one injected by CircleCI because we
 # use it for deploy as well
@@ -18,6 +20,22 @@ jobs:
     steps:
       - add_ssh_keys: *add_ssh_keys
       - checkout
+
+      - run:
+          name: Configure Bundler
+          command: |
+            echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+            source $BASH_ENV
+            gem install bundler
+
+      - run:
+          name: Check versions
+          command: |
+            ruby --version
+            bundle --version
+            node --version
+            npm --version
+            docker --version
 
       #
       # Download and cache dependencies
@@ -55,6 +73,22 @@ jobs:
     steps:
       - add_ssh_keys: *add_ssh_keys
       - checkout
+
+      - run:
+        name: Configure Bundler
+        command: |
+          echo 'export BUNDLER_VERSION=$(cat Gemfile.lock | tail -1 | tr -d " ")' >> $BASH_ENV
+          source $BASH_ENV
+          gem install bundler
+
+      - run:
+          name: Check versions
+          command: |
+            ruby --version
+            bundle --version
+            node --version
+            npm --version
+            docker --version
 
       #
       # Download and cache dependencies
