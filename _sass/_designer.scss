@@ -151,8 +151,8 @@
   @media screen and (min-width: 768px) {
     background-image: url(/assets/images/blk8/user-centered-2x.png), url(/assets/images/blk8/hp-kits-bkg.svg);
     background-repeat: no-repeat, no-repeat;
-    background-position-y: center, center;
-    background-position-x: center, center;
+    background-position-y: center;
+    background-position-x: center;
     background-size: 200px 200px, cover;
   }
   @media screen and (min-width: 992px) {
@@ -239,6 +239,13 @@
 
 .u-background-teal-65 {
   background-color: #06A3A8;
+}
+
+.u-backgroundBlendModeMultiply {
+  background-blend-mode: multiply;
+}
+.u-backgroundSizeCover {
+  background-size: cover;
 }
 
 .u-borderShadow-xl {
@@ -390,7 +397,7 @@ $light-grey: #e6e9f0;
         padding-top: 1.6rem;
       }
       ul li span {
-        padding: 0px 1rem .2rem !important;
+        padding: 0 1rem .2rem !important;
         line-height: 2.4rem;
         font-size: 1.2rem;
       }
@@ -561,7 +568,6 @@ $light-grey: #e6e9f0;
       margin: 0 auto;
     }
     .Download-list {
-      top: 0;
       background: #fff;
       top: 1.2rem;
       position: absolute;
@@ -846,7 +852,7 @@ body.layout-download {
   & img {
     max-width: 100%;
     width: 25rem;
-    margin: 0rem 1rem 2.5rem;
+    margin: 0 1rem 2.5rem;
     padding: 1rem;
     vertical-align: top;
     box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);

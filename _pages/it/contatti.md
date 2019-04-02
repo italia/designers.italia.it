@@ -11,10 +11,10 @@ backgroundPositionY: 'center'
 ---
 
 ## Intro
-Designers Italia è punto di incontro tra professionisti del design e mondo della pubblica amministrazione. Luogo naturale di discussione e confronto è il [forum](https://forum.italia.it/c/design/). Il progetto è stato ideato da Team per la trasformazione digitale, in collaborazione con AgID.
+Designers Italia è punto di incontro tra professionisti del design e mondo della Pubblica Amministrazione. Il progetto è stato ideato dal **Team per la Trasformazione Digitale**, in collaborazione con l'**Agenzia per Italia Digitale**.
 
 ## Social media
-Designers Italia è su [Behance](https://www.behance.net/italia), [Github](https://github.com/italia/designers.italia.it), [Twitter](https://twitter.com/designersita) e [Medium](https://medium.com/designers-italia)
+Puoi trovarci su [Behance](https://www.behance.net/italia), [Github](https://github.com/italia/designers.italia.it), [Twitter](https://twitter.com/designersita) e [Medium](https://medium.com/designers-italia).
 
 <a class="twitter-timeline" data-height="360" href="https://twitter.com/designersita">Tweets by designersita</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -25,23 +25,16 @@ Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccont
 {% include newsletter.html %}
 </div>
 
-## Area Media
-#### Contatti
+## Contatti
+Per qualsiasi dubbio sui Kit e sulla community di Designers Italia, puoi scriverci a [contatti@designers.italia.it](mailto:contatti@designers.italia.it).
 
-[Team trasformazione digitale](http://www.ipresslive.it/Page/1546/team-per-la-trasformazione-digitale-presidenza-consiglio-dei-ministri)
+### Area media
+Puoi trovare maggiori dettagli nell'area Ufficio Stampa sul sito del [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/it/contatti) o contattare l'indirizzo [media@teamdigitale.governo.it](mailto:media@teamdigitale.governo.it).
 
-{% include ipress.html header="Ultimi comunicati stampa" %}
+### Invia un feedback
+Vuoi proporre idee oppure dare un feedback sulla community? Il luogo naturale di discussione e confronto è il [forum](https://forum.italia.it/c/design/), su cui abbiamo creato [un thread apposito per i tuoi feedback](https://forum.italia.it/c/design/feedback-community).
 
-## Eventi
-Se vuoi segnalare un evento o invitarci, invia una e-mail a <media@teamdigitale.governo.it>
-
-#### Eventi recenti
-[Designers Italia a DDD](http://www.ipresslive.it/event/design_community)
+E se vuoi segnalare un problema su questo sito puoi aprire una [issue](https://github.com/italia/designers.italia.it) su GitHub.
 
 ## Lavora con noi
-Puoi trovare tutte le eventuali posizioni aperte nella [sezione "Lavora con noi"](https://teamdigitale.governo.it/it/36-content.htm) del Team per la trasformazione digitale 
-
-## Invia un feedback
-Vuoi proporre idee oppure dare un feedback sulla community? Per questo abbiamo creato un thread apposito sul nostro [forum](https://forum.italia.it/c/design/feedback-community)
-
-E se vuoi segnalare un bug puoi aprire una issue su [Github](https://github.com/italia/designers.italia.it)
+Puoi trovare tutte le eventuali posizioni aperte nella [sezione "Lavora con noi"](https://teamdigitale.governo.it/it/lavora-con-noi) del Team per la Trasformazione Digitale.
