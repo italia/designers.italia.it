@@ -3,7 +3,7 @@ title: Personas
 lang: it
 layout: download
 description: Assumi la prospettiva dell’utente per ideare soluzioni valide, basate su necessità concrete.
-backgroundImage : '/assets/images/kits/01_Personas_BG_Site.png'
+backgroundImage : '/assets/images/kits/backgrounds/01_Personas_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: ideare
@@ -25,11 +25,11 @@ download_file :
   type : 'external'
 
 carousel:
-- img: '/assets/images/kits/Slide_01_Personas_Slide.jpg'
+- img: '/assets/images/kits/carousel/01_Personas_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/Slide_02_Personas_Slide.jpg'
+- img: '/assets/images/kits/carousel/01_Personas_Slide_02.jpg'
   label:
-- img: '/assets/images/kits/Slide_03_Personas_Slide.jpg'
+- img: '/assets/images/kits/carousel/01_Personas_Slide_03.jpg'
   label:
 
 ---

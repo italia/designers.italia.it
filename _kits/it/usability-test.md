@@ -3,7 +3,7 @@ title: Usability Test
 lang: it
 layout: download
 description: Osserva come gli utenti interagiscono con un servizio digitale per renderlo più usabile
-backgroundImage : '/assets/images/kits/07_UsabilityTest_BG_Site_Usability test.png'
+backgroundImage : '/assets/images/kits/backgrounds/07_UsabilityTest_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: capire
@@ -43,9 +43,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/slide01_UsabilityTest_slide.jpg'
+- img: '/assets/images/kits/carousel/07_UsabilityTest_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/slide02_UsabilityTest_slide.jpg'
+- img: '/assets/images/kits/carousel/07_UsabilityTest_Slide_02.jpg'
   label:
 ---
 

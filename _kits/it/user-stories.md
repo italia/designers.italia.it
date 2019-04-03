@@ -3,7 +3,7 @@ title: User Stories
 lang: it
 layout: download
 description: Descrivi le principali storie di utilizzo di un servizio per individuare più facilmente requisiti e funzionalità
-backgroundImage : '/assets/images/kits/06_UserStories_BG_Site.png'
+backgroundImage : '/assets/images/kits/backgrounds/06_UserStories_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: ideare
@@ -25,7 +25,7 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_06_user-stories.png'
+- img: '/assets/images/kits/placeholders/06_UserStories_Placeholder.png'
   label:
 ---
 

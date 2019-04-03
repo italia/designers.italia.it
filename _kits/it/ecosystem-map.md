@@ -3,7 +3,7 @@ title: Ecosystem Map
 lang: it
 layout: download
 description: Identifica i soggetti coinvolti nell’erogazione di un servizio e analizza le loro connessioni
-backgroundImage : '/assets/images/kits/02_SystemMap_BG_Site.png'
+backgroundImage : '/assets/images/kits/backgrounds/02_SystemMap_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: capire
@@ -28,9 +28,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/slide01_SystemMap_Slide.jpg'
+- img: '/assets/images/kits/carousel/02_SystemMap_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/slide02_SystemMap_Slide.jpg'
+- img: '/assets/images/kits/carousel/02_SystemMap_Slide_02.jpg'
   label:
 ---
 

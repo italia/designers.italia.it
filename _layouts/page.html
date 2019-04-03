@@ -14,8 +14,7 @@ layout: default
 
 {% endcomment %}
 <div class="u-padding-top-xxl u-background-white"></div>
-<div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter" aria-hidden="true"
-      style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});background-blend-mode: multiply; background-size: cover; background-position-y: {{page.backgroundPositionY}}; height: 400px;">
+<div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-400" aria-hidden="true" style="{% include background-style.html %}">
 
       <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
 

@@ -5,7 +5,7 @@ layout: megablocks2
 blocks:
 - title: Vuoi utilizzare risorse e template già pronti per costruire il tuo servizio?
   subtitle: Scarica gli elementi grafici predefiniti per risparmiare tempo e arrivare facilmente ad un insieme di schermate coerenti.
-  img: /assets/images/kits/placeholder_kit_12_web.png
+  img: /assets/images/kits/placeholders/12_WebDevelopmentKit_Placeholder.png
   button:
   - label: UI Kit
     url: '/kit/ui-kit'
@@ -13,7 +13,7 @@ blocks:
     url: '/kit/web-development-kit'
 - title: Vuoi organizzare l’avvio di un progetto nel migliore dei modi?
   subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
-  img: /assets/images/kits/placeholder_kit_03_researchplan.png
+  img: /assets/images/kits/placeholders/03_ResearchPlan_Placeholder.png
   button:
   - label: kit co-design workshop
     url: '/kit/co-design-workshop'
@@ -21,13 +21,13 @@ blocks:
     url: 'https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research.html'
 - title: Vuoi migliorare l’usabilità del tuo sito o della tua applicazione?
   subtitle: Osserva quali problemi incontrano gli utenti durante l’utilizzo e individua le criticità più importanti da risolvere.
-  img: /assets/images/kits/placeholder_kit_07_usabilitytest.png
+  img: /assets/images/kits/placeholders/07_UsabilityTest.png
   button:
   - label: kit usability test
     url: '/kit/usability-test'
 - title: Vuoi una visione chiara degli utenti del tuo servizio?
   subtitle: Crea dei profili che descrivono le diverse tipologie di utenti di un servizio, raccontando le loro motivazioni, aspettative, bisogni e attitudini.
-  img: /assets/images/kits/placeholder_kit_02_personas.png
+  img: /assets/images/kits/placeholders/02_Personas.png
   button:
   - label: kit personas
     url: '/kit/personas'
@@ -35,7 +35,7 @@ blocks:
     url: '/kit/user-stories'
 - title: Vuoi un sistema rapido ed efficace di Web Analytics?
   subtitle: Leggi le linee guida di Web Analytics o i casi d’uso su Piwik che abbiamo raccontato sul blog.
-  img: /assets/images/kits/placeholder_kit_08_analitics.png
+  img: /assets/images/kits/placeholders/08_WebAnalytics_Placeholder.png
   button:
   - label: kit Web Analytics
     url: '/kit/analytics'

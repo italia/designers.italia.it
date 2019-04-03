@@ -3,7 +3,7 @@ title: UI Kit
 lang: it
 layout: download
 description: Progetta l’interfaccia di un servizio con uno stile grafico semplice e coerente
-backgroundImage : '/assets/images/kits/10_UI Kit_UI Kit.png'
+backgroundImage : '/assets/images/kits/backgrounds/10_UIKit_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: fare
@@ -25,11 +25,11 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/UI-Kit-slide-01.jpg'
+- img: '/assets/images/kits/carousel/10_UIKit_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/UI-Kit-slide-02.jpg'
+- img: '/assets/images/kits/carousel/10_UIKit_Slide_02.jpg'
   label:
-- img: '/assets/images/kits/UI-Kit-slide-03.jpg'
+- img: '/assets/images/kits/carousel/10_UIKit_Slide_03.jpg'
   label:
 ---
 

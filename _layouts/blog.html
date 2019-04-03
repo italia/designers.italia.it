@@ -1,0 +1,133 @@
+---
+layout: default
+lang: it
+---
+
+{% include setlang.html %}
+{% assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse %}
+<div class="u-padding-top-xxl u-background-white"></div>
+<div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-400" aria-hidden="true" style="{% include background-style.html %}">
+
+  <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
+
+    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+      <div class="u-textCenter u-padding-bottom-xl ">
+        {% if page.categories %}
+        <div class="u-layoutCenter u-textCenter u-margin-all-xl">
+          <ul class="Category" >
+            {% for item in page.categories%}
+            <li class="u-text-r-xxs u-color-white u-border-all-xxs  u-padding-all-xxs">
+              {{item}}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        {% if page.nodate != true %}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">
+          {{ page.date | date: "%-d %b %Y" }}</time>
+        {% endif %}
+
+        <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">
+          {{ page.title }}</h1>
+
+        {% if page.subtitle %}
+        <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s"
+            style="max-width:24em">{{ page.subtitle }}</h2>
+        {% endif %}
+
+        <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-white u-margin-r-bottom"
+            style="max-width: 15em" />
+
+        {% if page.author %}
+        <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
+          <span itemprop="name" class="u-text-r-xs u-color-white">{{ t.by }} {{ page.author }}</span>
+        </div>
+        {% endif %}
+
+        {% if page.keywords %}
+        <div itemprop="keywords" class="u-layoutCenter u-textCenter u-margin-all-xl">
+          <ul class="Badges">
+            {% for item in page.keywords%}
+            <li class="u-text-r-xxs u-background-white u-borderRadius-xl u-color-50 badge">
+              {{item}}
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+
+        <div class="u-layoutCenter u-textCenter u-color-white u-margin-bottom-xxl">
+          {% include share.html %}
+        </div>
+      </div>
+
+    </div><!-- /grid-cell-->
+  </div>
+
+</div>
+
+
+
+<div class="u-background-grey-15 u-layout-r-withGutter u-padding-top-xl u-padding-bottom-xxl u-posRelative u-zindex-30">
+  <div class="Grid">
+
+    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+
+      <div class="u-margin-r-top u-margin-r-bottom">
+        <p class="u-text-r-xs u-lineHeight-xl u-color-grey-50">Nel <span class=" u-text-r-xs u-textWeight-600">blog di Designers Italia</span> puoi trovare casi di studio, racconti di esperienze ed esempi sui vari temi legati al <span class="u-text-r-xs u-textWeight-600">design dei servizi pubblici</span>. Il blog ospita anche dei <a href="{{ '/blog/tags/guest-post/' | relative_url }}" class="u-text-r-xs u-textItalic u-linkClean u-color-50">guest post</a> dove i designer possono raccontare il loro punto di vista e le loro esperienze nell’ambito della <span class="u-text-r-xs u-textWeight-600">trasformazione digitale</span></p>
+
+        <a href="/come-partecipo" class="u-block u-margin-top-xl u-margin-bottom-xl u-text-r-m u-linkClean u-color-50"><span class="u-text-r-m Icon Icon-arrow-right"></span> Scopri come partecipare</a>
+
+      </div>
+
+      {% for post in posts %}
+
+      {% assign _excerpt = post.medium_subtitle | strip_html %}
+      {% assign _url = post.medium_url %}
+      {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
+
+      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
+        {% include card.html
+        date = _date
+        author = post.medium_author
+        author_link = post.medium_author_link
+        title = post.medium_title
+        link = _url
+        text = _excerpt
+        hasImage = true
+        image = post.medium_preview_image_url
+        categories = post.medium_tagsarray
+        flat = true
+        classes = 'u-background-grey-15'
+        target = '_blank'
+        %}
+      </div>
+
+      {% endfor %}
+
+      {% comment %}
+      <div>
+        {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="u-color-50">{{ t.paginator_previous_page }}</a>
+        {% else %}
+        <span class="u-color-grey-20">{{ t.paginator_previous_page }}</span>
+        {% endif %}
+        <span>{{ t.paginator_page }}: {{ paginator.page }} {{ t.on_ }} {{ paginator.total_pages }}</span>
+        {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="u-color-50">{{ t.paginator_next_page }}</a>
+        {% else %}
+        <span>{{ t.next_page }}</span>
+        {% endif %}
+      </div>
+      {% endcomment %}
+
+    </div>
+
+    {% capture pills %} {% include pills.html items = site.medium_all_tags small = true %} {% endcapture %}
+
+    {% include sideblock.html title = t.news_nav_title content = pills %}
+
+  </div>
+</div>

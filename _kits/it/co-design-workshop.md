@@ -3,7 +3,7 @@ title: Co-Design Workshop
 lang: it
 layout: download
 description: Genera idee coinvolgendo utenti e stakeholder di un servizio
-backgroundImage : '/assets/images/kits/09_Co-design Workshop_Co-design workshop.png'
+backgroundImage : '/assets/images/kits/backgrounds/09_CoDesignWorkshop_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: ideare
@@ -34,9 +34,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/slide01_UserJourney_slide.jpg'
+- img: '/assets/images/kits/carousel/09_CoDesignWorkshop_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/slide02_UserJourney_slide.jpg'
+- img: '/assets/images/kits/carousel/09_CoDesignWorkshop_Slide_02.jpg'
   label:
 ---
 
