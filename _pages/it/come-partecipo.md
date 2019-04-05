@@ -43,7 +43,7 @@ blocks:
       url: 'https://github.com/italia/design-linee-guida-docs'
 - title: Condividi il modello di Designers Italia
   subtitle: Se sei un professore o un ricercatore, puoi raccontare l’approccio di Designers Italia come esempio di progettazione di servizi digitali in ambito pubblico, e organizzare <b>workshop</b> sperimentando con i nostri strumenti e risorse.
-  img: /assets/images/pages/Università.jpeg
+  img: /assets/images/pages/universita.jpg
   button:
     - label: scarica la presentazione in italiano
       url: 'https://docs.google.com/presentation/d/1H0Rk-nPydabW5tIAldVPwWsz0kCnETC3Gl0LOgXrLtI/edit?usp=sharing'
