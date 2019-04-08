@@ -3,7 +3,7 @@ title: Information Architecture
 lang: it
 layout: download
 description: Organizza la struttura dei contenuti in modo chiaro, efficace e coerente
-backgroundImage : '/assets/images/kits/03_ResearchPlan_BG_site.png'
+backgroundImage : '/assets/images/kits/backgrounds/15_InformationArchitecture_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: ideare
@@ -31,7 +31,7 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/placeholder_kit_03_researchplan.png'
+- img: '/assets/images/kits/placeholders/15_InformationArchitecture_Placeholder.png'
   label:
 ---
 

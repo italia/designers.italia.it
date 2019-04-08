@@ -3,7 +3,7 @@ title: Web Analytics
 lang: it
 layout: download
 description: Osserva i comportamenti degli utenti partendo dai dati di utilizzo del servizio
-backgroundImage : '/assets/images/kits/08_WebAnalytics_BG_Site.png'
+backgroundImage : '/assets/images/kits/backgrounds/08_WebAnalytics_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: capire
@@ -28,9 +28,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/Slide_WebAnalytics.jpg'
+- img: '/assets/images/kits/carousel/08_WebAnalytics_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/Slide_WebAnalytics2.jpg'
+- img: '/assets/images/kits/carousel/08_WebAnalytics_Slide_02.jpg'
   label:
 ---
 

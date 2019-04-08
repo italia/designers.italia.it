@@ -3,7 +3,7 @@ title: Wireframe Kit
 lang: it
 layout: download
 description: Definisci il modello di interazione e l’organizzazione di informazioni e contenuti nelle schermate
-backgroundImage : '/assets/images/kits/14_wireframe kit.png'
+backgroundImage : '/assets/images/kits/backgrounds/14_WireframeKit_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: fare
@@ -28,9 +28,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/WireframeKit_Slide1.jpg'
+- img: '/assets/images/kits/carousel/14_WireframeKit_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/WireframeKit_Slide2.jpg'
+- img: '/assets/images/kits/carousel/14_WireframeKit_Slide_02.jpg'
   label:
 ---
 

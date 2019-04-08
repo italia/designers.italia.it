@@ -3,7 +3,7 @@ title: SEO
 lang: it
 layout: download
 description: Progetta e ottimizza i contenuti del sito in base ai bisogni e le priorità che gli utenti esprimono durante le ricerche web
-backgroundImage : '/assets/images/kits/13_seo.png'
+backgroundImage : '/assets/images/kits/backgrounds/13_SEO_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: fare
@@ -25,9 +25,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/slide-SEO-01.jpg'
+- img: '/assets/images/kits/carousel/13_SEO_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/slide-SEO-02.jpg'
+- img: '/assets/images/kits/carousel/13_SEO_Slide_02.jpg'
   label:
 ---
 

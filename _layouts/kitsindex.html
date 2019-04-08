@@ -15,9 +15,7 @@ layout: default
 <article itemscope itemtype="http://schema.org/BlogPosting" class="u-background-white u-nbfc u-padding-top-xxl u-xs-padding-top-none">
 
 <!-- ==== blue block -->
-  <div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter" aria-hidden="true"
-      style="background-color: {{ page.backgroundColor }}; background-image: url({{ page.backgroundImage | relative_url }});
-        background-blend-mode: multiply; background-size: cover; height: 400px">
+  <div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-400" aria-hidden="true" style="{% include background-style.html %}">
 
       <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
 
@@ -101,7 +99,7 @@ layout: default
       <div class="u-margin-top-xl  u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
        {% for item in kits  %}
         <div class="RelatedKits-cell Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-flex {{item.kitcategory}}">
-             <article class="u-sizeFull u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch u-color-white" style="
+             <article class="u-sizeFull u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch u-color-white u-backgroundBlendModeMultiply" style="
               background-color: {{item.backgroundColor}};
               background-image: url({{item.carousel[0].img | default: item.backgroundImage}});
               background-size: 200%;

@@ -3,7 +3,7 @@ title: User Journey
 lang: it
 layout: download
 description: Analizza tutti i passaggi dell'esperienza d’uso di un servizio e individua le opportunità di intervento
-backgroundImage : '/assets/images/kits/05_UserJourney_BG_Site.png'
+backgroundImage : '/assets/images/kits/backgrounds/05_UserJourney_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: ideare
@@ -28,9 +28,9 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/slide01_UserJourney_slide.jpg'
+- img: '/assets/images/kits/carousel/05_UserJourney_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/slide02_UserJourney_slide.jpg'
+- img: '/assets/images/kits/carousel/05_UserJourney_Slide_02.jpg'
   label:
 ---
 

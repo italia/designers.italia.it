@@ -3,7 +3,7 @@ title: Content Kit
 lang: it
 layout: download
 description: Gestisci i contenuti e organizza la strategia editoriale in modo collaborativo
-backgroundImage : '/assets/images/kits/11_ContentKit_Content Kit.png'
+backgroundImage : '/assets/images/kits/backgrounds/11_ContentKit_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: fare
@@ -50,11 +50,11 @@ download_file :
   type : 'internal'
 
 carousel:
-- img: '/assets/images/kits/ContentKit_Slide1.jpg'
+- img: '/assets/images/kits/carousel/11_ContentKit_Slide_01.jpg'
   label:
-- img: '/assets/images/kits/ContentKit_Slide2.jpg'
+- img: '/assets/images/kits/carousel/11_ContentKit_Slide_02.jpg'
   label:
-- img: '/assets/images/kits/ContentKit_Slide3.jpg'
+- img: '/assets/images/kits/carousel/11_ContentKit_Slide_03.jpg'
   label:
 ---
 

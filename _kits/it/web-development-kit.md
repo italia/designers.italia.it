@@ -3,7 +3,7 @@ title: Web development kit
 lang: it
 layout: download
 description: Costruisci siti, applicazioni e servizi web in assoluta semplicità
-backgroundImage : '/assets/images/kits/12_Web Kit.png'
+backgroundImage : '/assets/images/kits/backgrounds/12_WebDevelopmentKit_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: fare
@@ -36,13 +36,13 @@ download_file:
   type: 'external'
 
 carousel:
-- img: '/assets/images/kits/02_WebToolkit_slide.jpg'
+- img: '/assets/images/kits/carousel/12_WebDevelopmentKit_Slide_01.jpg'
   label: 'Bootstrap Italia'
-- img: '/assets/images/kits/01_WebToolkit_slide.jpg'
+- img: '/assets/images/kits/carousel/12_WebDevelopmentKit_Slide_02.jpg'
   label: 'Web Toolkit'
-- img: '/assets/images/kits/03_WebToolkit_slide.jpg'
+- img: '/assets/images/kits/carousel/12_WebDevelopmentKit_Slide_03.jpg'
   label: 'React Kit'
-- img: '/assets/images/kits/04_WebToolkit_slide.jpg'
+- img: '/assets/images/kits/carousel/12_WebDevelopmentKit_Slide_04.jpg'
   label: 'Angular Kit'
 ---
 

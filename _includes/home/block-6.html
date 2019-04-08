@@ -28,11 +28,12 @@
 
     {% assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse %}
     {% for post in posts limit: 2 %}
-      <div class="Grid-cell u-sizeFull u-md-sizeFill u-lg-sizeFill u-margin-r-bottom u-color-white u-flex"
+      <div class="Grid-cell u-sizeFull u-md-sizeFill u-lg-sizeFill u-margin-r-bottom u-color-white u-flex u-backgroundBlendModeMultiply u-backgroundSizeCover"
         style="
           {% if post.medium_preview_image_color_avg %}background-color: {{ post.medium_preview_image_color_avg }}; {% endif %}
           {% if post.medium_preview_image_url %}background-image: url({{ post.medium_preview_image_url }}); {% endif %}
-          background-blend-mode: multiply; background-size: cover; min-height: 300px">
+          min-height: 300px;
+        ">
         <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
           <div class="u-flexAlignSelfEnd">
             <h3 class="u-text-r-xl">
