@@ -14,7 +14,7 @@ redirect_from:
 ---
 
 ### Descrizione
-Designers Italia, la community di design dei servizi pubblici ideata dal [Team Digitale](https://teamdigitale.governo.it/), sta realizzando, in collaborazione con [AGID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8 mila Comuni italiani, basato sul proprio *design system*.
+Designers Italia, la community di design dei servizi pubblici ideata dal [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/), sta realizzando, in collaborazione con [AgID](https://www.agid.gov.it/) un modello per la realizzazione di siti web per gli oltre 8 mila Comuni italiani, basato sul proprio *design system*.
 
 [Leggi il post di presentazione del progetto su Medium.](https://medium.com/team-per-la-trasformazione-digitale/modello-standard-sito-web-comuni-design-prototipo-mobile-first-open-source-organizzazione-contenuti-38b330e695a1)
 

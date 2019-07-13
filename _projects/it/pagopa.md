@@ -1,5 +1,5 @@
 ---
-title: PagoPA - Il servizio di pagamento verso la Pubblica Amministrazione
+title: pagoPA - Il servizio di pagamento verso la Pubblica Amministrazione
 description: Un unico nodo di pagamento, con un'unica interfaccia verso il cittadino, per pagare dai tributi alla gita scolastica dei figli con carte di credito, bonifici o anche via app.
 #subtitle: Il servizio di pagamento verso la Pubblica Amministrazione
 logo: /assets/images/projects/pagopa-project-cover.jpg
@@ -10,11 +10,11 @@ highlight: true
 layout: project
 ---
 
-PagoPA è il nodo di pagamenti della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
+pagoPA è il nodo di pagamenti della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
 
-Integrare PagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati **in tempo reale**, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale.
+Integrare pagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati **in tempo reale**, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale.
 
-Per un cittadino, PagoPA permette di scegliere il metodo di pagamento tra i diversi a disposizione, a seconda delle comodità e del livello di digitalizzazione. È possibile pagare tramite:
+Per un cittadino, pagoPA permette di scegliere il metodo di pagamento tra i diversi a disposizione, a seconda delle comodità e del livello di digitalizzazione. È possibile pagare tramite:
 
 - carta di credito
 - addebito in conto
@@ -25,7 +25,11 @@ Stiamo facendo evolvere il sistema in un'ottica di mercato, integrando canali di
 
 In particolare l’evoluzione più importante riguarda la **UI (User Interface)** e la **UX (User Experience)** che entro la fine dell’anno risulteranno pesantemente rinnovate e molto più usabili per il cittadino.
 
-### Il ruolo di designers italia
+Per sapere di più sul progetto pagoPA, visita il sito ufficiale:
+
+[pagopa.gov.it](https://www.pagopa.gov.it/)
+
+### Il ruolo di Designers Italia
 
 Su pagoPA la community di Designers Italia ha lavorato:
 
@@ -39,6 +43,6 @@ Su pagoPA la community di Designers Italia ha lavorato:
 
 ### I prossimi passi del progetto pagoPA
 
-Su un blog post nel [canale Medium del Team Digitale](https://medium.com/team-per-la-trasformazione-digitale) puoi leggere i principali aggiornamenti sul progetto pagoPA:
+Su un blog post nel [canale Medium del Team per la Trasformazione Digitale](https://medium.com/team-per-la-trasformazione-digitale) puoi leggere i principali aggiornamenti sul progetto pagoPA:
 
-[PagoPA: dove siamo e quali sono i prossimi passi](https://medium.com/team-per-la-trasformazione-digitale/pagopa-pagamenti-pubblica-amministrazione-piattaforma-unica-servizi-transazioni-digitali-91463efcee9f)
+[pagoPA: dove siamo e quali sono i prossimi passi](https://medium.com/team-per-la-trasformazione-digitale/pagopa-pagamenti-pubblica-amministrazione-piattaforma-unica-servizi-transazioni-digitali-91463efcee9f)

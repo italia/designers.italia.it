@@ -17,7 +17,7 @@ redirect_from:
 
 I siti scolastici sono il punto di riferimento della relazione tra scuola, studenti e famiglie.
 
-Per questo il MIUR (Ministero Istruzione, Università e Ricerca) ha deciso insieme a Designers Italia, la piattaforma di design dei servizi pubblici ideata da [Team Digitale](https://teamdigitale.governo.it/), di creare un modello di siti scolastici a disposizione di tutti.
+Per questo il MIUR (Ministero Istruzione, Università e Ricerca) ha deciso insieme a Designers Italia, la piattaforma di design dei servizi pubblici ideata dal [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/), di creare un modello di siti scolastici a disposizione di tutti.
 La documentazione del progetto e i prototipi sono rilasciati in modo progressivo entro settembre 2018, come previsto dal progetto.
 
 Il percorso di *service design* prevede codesign, ricerca, progettazione, test di usabilità e avvio di un processo di evoluzione e miglioramento continuo.
