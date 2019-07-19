@@ -19,9 +19,9 @@ download_file :
 - file : 
 
 carousel:
-- img: '/assets/images/kits/carousel/15_ABTest_Slide_01.jpg'
+- img: '/assets/images/kits/carousel/15_ABTest_Slide_01.png'
   label:
-- img: '/assets/images/kits/carousel/08_WebAnalytics_Slide_02.jpg'
+- img: '/assets/images/kits/carousel/15_ABTest_Slide_02.png'
   label:
 ---
 
