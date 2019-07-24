@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var del = require('del');
 var log = require('fancy-log');
 var fs = require('fs');
 var os = require('os');
@@ -13,8 +14,6 @@ if (fs.existsSync(configFile)) {
   log('No local config found at [' + configFile + ']');
 }
 
-var runSequence = require('run-sequence');
-var clean = require('gulp-clean');
 var shell = require('gulp-shell');
 var imagemin = require('gulp-imagemin');
 var minifyHTML = require('gulp-htmlmin');
@@ -57,10 +56,7 @@ gulp.task('optimize-html', function () {
 });
 
 gulp.task('clean', function () {
-  return gulp.src('_site', {
-    read: false,
-    allowEmpty: true
-  })
+  return del(['_site'])
     .pipe(clean());
 });
 
