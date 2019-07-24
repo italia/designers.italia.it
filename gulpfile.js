@@ -56,8 +56,7 @@ gulp.task('optimize-html', function () {
 });
 
 gulp.task('clean', function () {
-  return del(['_site'])
-    .pipe(clean());
+  return del(['_site']);
 });
 
 
