@@ -94,7 +94,11 @@ layout: default
         {% include kits.html %}
 
         {% if page.guidelines != nil %}
-            {% include relatedsguideline.html pageguidelines=page.guidelines %}
+            {% include relatedsguideline.html pageguidelines = page.guidelines %}
+        {% endif %}
+
+        {% if page.documents != nil %}
+          {% include relatedsdocuments.html pagedocuments = page.documents %}
         {% endif %}
 
       </div>
