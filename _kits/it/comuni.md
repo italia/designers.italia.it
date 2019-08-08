@@ -12,13 +12,16 @@ tags:
   - information-architecture
 redirect_from:
   - /kit/comuni
+  
+documents:
+- Design comuni
 
 download_file :
-- file : 'TODO'
+- file : 'https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit'
   caption : 'Architettura informativa'
-- file : 'TODO'
+- file : 'https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html'
   caption : 'Template HTML basati su Bootstrap Italia'
-- file : 'TODO'
+- file : 'https://italia.github.io/design-comuni-prototipi/it/esempi.html'
   caption : 'Esempi di realizzazione'
 
 carousel:
@@ -54,12 +57,12 @@ L’utilizzo del kit per il design dei siti comunali, che è bene inserire all�
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-Il kit si è avvalso di un’attività di ricerca e di design con i cittadini e i funzionari comunali, e fondato su esperienze concrete già corso in diversi Comuni (a partire da quello di Cagliari, primo in Italia a realizzarlo) e descritte nella documentazione.
+Il kit si è avvalso di un’attività di ricerca e di design con i cittadini e i funzionari comunali, e fondato su esperienze concrete già corso in diversi Comuni (a partire da quello di Cagliari, primo in Italia a realizzarlo) e descritte nella [documentazione](#related-documents).
 
 Il documento di architettura dell’informazione definisce e organizza le informazioni contenute all’interno di un Comune e rappresenta la guida per la realizzazione delle strutture di front-end e di backend. In particolare, contiene indicazioni su content type, sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune: descrizione dell’organizzazione, pubblicazione di documenti, notizie e servizi, oltre naturalmente alla home page, al motore di ricerca e all’area personale utente.
-I template html pronti all’uso (basati su kit Bootstrap Italia e conformi alle linee guida di design) permettono di costruire il front-end completo del sito di un Comune (cioè senza dover realizzare nuovi template).
+I template html pronti all’uso (basati su kit [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e conformi alle linee guida di design) permettono di costruire il front-end completo del sito di un Comune (cioè senza dover realizzare nuovi template).
 
 Cosa non contiene questo kit: 
 Il kit non contiene una descrizione dettagliata delle caratteristiche dei singoli servizi digitali di un Comune, allo stato attuale troppo variabile per essere modellata secondo standard. Il kit definisce però una struttura standard di presentazione di un servizio (scheda servizio), definisce il flusso standard di esperienza di un servizio comunale e offre un esempio di realizzazione. 
 
-Il kit non contiene i contenuti del sito di un Comune, ma definisce i contenuti che devono essere realizzati. La realizzazione di un sito comunale aderente a questo modello richiede un’attività di mappatura dei contenuti esistenti, scrittura e riscrittura dei contenuti e cambiamento dei dati inseriti che può essere realizzata utilizzando metodi e strumenti previsti dal Content kit. 
+Il kit non contiene i contenuti del sito di un Comune, ma definisce i contenuti che devono essere realizzati. La realizzazione di un sito comunale aderente a questo modello richiede un’attività di mappatura dei contenuti esistenti, scrittura e riscrittura dei contenuti e cambiamento dei dati inseriti che può essere realizzata utilizzando metodi e strumenti previsti dal [Content kit](https://designers.italia.it/kit/content-kit/). 
