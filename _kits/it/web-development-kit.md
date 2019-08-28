@@ -61,13 +61,13 @@ I Web development kit forniscono **componenti open-source** pronti per l’uso. 
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### A COSA SERVONO
-I Web development kit **indicano e assicurano** una realizzazione conforme alle Linee Guida di design per i servizi web delle Pubbliche Amministrazioni. Offrono supporto per utenti con disabilità, oltre a fornire degli ausilii per la rapida **prototipazione** di pagine web in modo da poter coinvolgere gli utenti fin dalle prime fasi di progettazione.
+I Web development kit **indicano e assicurano** una realizzazione conforme alle Linee Guida di design per i servizi web delle Pubbliche Amministrazioni. Offrono supporto per utenti con disabilità, oltre a fornire degli ausili per la rapida **prototipazione** di pagine web in modo da poter coinvolgere gli utenti fin dalle prime fasi di progettazione.
 
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTENGONO QUESTI KIT
-All'interno dei kit trovi diversi strumenti per lo sviluppo di interfacce web, dedicate a diverse tipologie di sviluppatori ed esperienze d'uso: ognuni di questi si compone di codice **HTML, CSS e Javascript** progettati per una più semplice creazione di siti e applicazioni web e interfacce basata sui princìpi di **composizione** e del **riuso** di componenti condivisi.
+All'interno dei kit trovi diversi strumenti per lo sviluppo di interfacce web, dedicate a diverse tipologie di sviluppatori ed esperienze d'uso: ognuno di questi si compone di codice **HTML, CSS e Javascript** progettati per una più semplice creazione di siti e applicazioni web e interfacce basata sui princìpi di **composizione** e del **riuso** di componenti condivisi.
 
 - **Bootstrap Italia** è il kit di riferimento, costruito sulla libreria Bootstrap 4 e basato sulle più recenti direttive presenti nello UI Kit.
 - **Web Toolkit** è la libreria "storica" tra i kit per lo sviluppo web. Esso è basato su una versione ormai obsoleta delle Linee Guida di design, per cui non ne è consigliata l’adozione per nuovi progetti.
-- **React Kit** e **Angular Kit** sono kit per l'utilizzo con le librerie React e AngularJS. Questio kit sono ancora in lavorazione e non comprendono tutti i componenti già presenti su Bootstrap Italia.
+- **React Kit** e **Angular Kit** sono kit per l'utilizzo con le librerie React e AngularJS. Questi kit sono ancora in lavorazione e non comprendono tutti i componenti già presenti su Bootstrap Italia.
