@@ -3,8 +3,8 @@ title: Il kit per le Scuole
 lang: it
 layout: download
 description: "Design del sito di una Scuola: architettura dell’informazione e template HTML"
-backgroundImage : '/assets/images/kits/backgrounds/17_Scuole_Background.png'
-backgroundColor: '#439af1'
+backgroundImage: "/assets/images/kits/backgrounds/17_Scuole_Background.png"
+backgroundColor: "#439af1"
 nodate: true
 kitcategory: "Kit per le Scuole"
 tags:
@@ -16,20 +16,20 @@ redirect_from:
 documents:
 - Design scuole
 
-download_file :
-- file : 'https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing'
-  caption : 'Architettura dell'informazione'
-- file : 'https://github.com/italia/design-scuole-pagine-statiche/'
-  caption : 'Template HTML'
-- file : 'https://github.com/italia/design-scuole-wordpress-theme'
-  caption : 'Un sito pronto in Wordpress'
-
+download_file:
+- file: "https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing"
+  caption: Architettura dell’informazione
+- file: "https://github.com/italia/design-scuole-pagine-statiche/"
+  caption: Template HTML
+- file: "https://github.com/italia/design-scuole-wordpress-theme"
+  caption: Un sito pronto in Wordpress
+  
 carousel:
-- img: '/assets/images/kits/carousel/17_Scuole_Slide_01.jpg'
+- img: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
   label: Esempio di template generico
-- img: '/assets/images/kits/carousel/17_Scuole_Slide_02.jpg'
+- img: "/assets/images/kits/carousel/17_Scuole_Slide_02.png"
   label: Esempio di template del Comune di Cagliari
-- img: '/assets/images/kits/carousel/17_Scuole_Slide_03.jpg'
+- img: "/assets/images/kits/carousel/17_Scuole_Slide_03.png"
   label: Architettura dell’informazione
 ---
 
