@@ -38,3 +38,5 @@ In parallelo su [Developers Italia](https://developers.italia.it/) prenderà il 
 - Febbraio 2018: *Avvio della fase di ricerca* (analisi siti esistenti, ricerca su studenti e genitori)
 - Aprile 2018: *Avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
 - Settembre 2018: *Rilascio progressivo della ricerca, del prototipo e della relativa documentazione*
+- Marzo 2019: *Avvio realizzazione template statici e sito Wordpress*
+- Novembre 2019: *Rilascio del kit per creare il sito di una scuola*
