@@ -32,9 +32,6 @@ Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per off
 
 In parallelo su [Developers Italia](https://developers.italia.it/) prenderà il via lo sviluppo di temi open source per i principali CMS, secondo roadmap che verrà pubblicata su Developers Italia e che vedrà il coinvolgimento delle comunità open source. A quel punto le scuole potranno utilizzare direttamente i temi, semplificando ulteriormente il percorso.
 
-Qui è disponibile il risultato finale del progetto:
-[il kit per creare il sito di una scuola](https://designers.italia.it/kit/scuole/)
-
 ### Roadmap
 
 - Luglio-Settembre 2017: *Codesign* (workshop e interviste agli stakeholder) e *Definizione del capitolato tecnico e procedure di gara*
@@ -42,4 +39,4 @@ Qui è disponibile il risultato finale del progetto:
 - Aprile 2018: *Avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
 - Settembre 2018: *Rilascio progressivo della ricerca, del prototipo e della relativa documentazione*
 - Marzo 2019: *Avvio realizzazione template statici e sito Wordpress*
-- Novembre 2019: *Rilascio del kit per creare il sito di una scuola*
+- Dicembre 2019: *Rilascio del kit per creare il sito di una scuola*
