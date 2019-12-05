@@ -18,6 +18,9 @@ Designers Italia, la community di design dei servizi pubblici ideata dal [Team p
 
 [Leggi il post di presentazione del progetto su Medium.](https://medium.com/team-per-la-trasformazione-digitale/modello-standard-sito-web-comuni-design-prototipo-mobile-first-open-source-organizzazione-contenuti-38b330e695a1)
 
+Qui è disponibile il risultato finale del progetto:
+[il kit per creare il sito di un Comune](https://designers.italia.it/kit/comuni/)
+
 ### Obiettivi
 
 Il modello propone uno standard a tutti i Comuni che vogliono rendere più semplice ed efficace il proprio sito, sulla base degli effettivi bisogni dei cittadini. L’idea è che il lavoro di progettazione di ciascun Comune possa partire da componenti standard testate e verificate con gli utenti, in modo che ciascun Comune possa concentrarsi sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.
