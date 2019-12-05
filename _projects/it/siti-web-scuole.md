@@ -24,13 +24,17 @@ Il percorso di *service design* prevede codesign, ricerca, progettazione, test d
 
 La roadmap riporta le tappe e i principali *deliverable* associati (che potranno subire variazioni di dettaglio in base a specifiche scelte relative alle metodologie di ricerca). Una discussione sul progetto è possibile attraverso il forum dei servizi della Pubblica Amministrazione italiana.
 
-[Vai al thread sul progetto di design dei servizi digitali scolastici](https://forum.italia.it/t/design-dei-servizi-digitali-delle-scuole-ricerca-sugli-utenti-prototipazione-e-linee-guida-progettuali/4100)
+[Vai alla sezione di Forum Italia sul progetto di design dei servizi digitali scolastici](https://forum.italia.it/t/design-dei-servizi-digitali-delle-scuole-ricerca-sugli-utenti-prototipazione-e-linee-guida-progettuali/4100)
 
 L'obiettivo è avviare la pubblicazione delle componenti del modello di siti web delle scuole, a partire da un wireframe navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello sarà accompagnato da template grafico, progettato utilizzando lo UI Kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti. Il modello verrà progressivamente migliorato attraverso un processo collaborativo all'interno di Designers Italia.
 
 Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per offrire a famiglie e studenti un'esperienza digitale allineata alle best practice e agli obiettivi del piano scuola digitale, ma anche modificarlo secondo le loro esigenze specifiche.
 
 In parallelo su [Developers Italia](https://developers.italia.it/) prenderà il via lo sviluppo di temi open source per i principali CMS, secondo roadmap che verrà pubblicata su Developers Italia e che vedrà il coinvolgimento delle comunità open source. A quel punto le scuole potranno utilizzare direttamente i temi, semplificando ulteriormente il percorso.
+
+Qui è disponibile il risultato finale del progetto:
+
+[il kit per creare il sito di una scuola]({% link _kits/it/scuole.md %})
 
 ### Roadmap
 

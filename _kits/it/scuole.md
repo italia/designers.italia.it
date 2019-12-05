@@ -20,15 +20,15 @@ download_file:
 - file: "https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing"
   caption: Architettura dell’informazione
 - file: "https://github.com/italia/design-scuole-pagine-statiche/"
-  caption: Template HTML
-- file: "https://github.com/italia/design-scuole-wordpress-theme"
-  caption: Un sito pronto in Wordpress
+  caption: Template HTML basati su Bootstrap Italia
+- file: "https://github.com/italia/design-scuole-wordpress-theme/"
+  caption: Un tema già pronto per WordPress
   
 carousel:
 - img: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
-  label: Esempio di template generico
+  label: Esempio di template generico di homepage
 - img: "/assets/images/kits/carousel/17_Scuole_Slide_02.png"
-  label: Esempio di template del Comune di Cagliari
+  label: Esempio di template generico di pagina interna
 - img: "/assets/images/kits/carousel/17_Scuole_Slide_03.png"
   label: Architettura dell’informazione
 ---
@@ -39,20 +39,22 @@ carousel:
 {:.u-color-50 .u-margin-bottom-xxl}
 #### Questo kit è una raccolta di risorse sviluppate appositamente per realizzare il sito di una scuola (ma utilizzabili per qualsiasi altro progetto digitale per la scuola italiana), con l’obiettivo finale di offrire un’esperienza d’uso efficace per il cittadino nel rispetto delle linee guida di design.
 
+{% include simplecarousel.html  %} 
+
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
-Per creare il sito di una scuola utilizza il [documento di architettura dell'informazione](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing) come guida per la struttura dei contenuti, il sistema di navigazione e i flussi di interazione. Con i template html potrai realizzare il front-end dell’intero sito.
-Il kit è indipendente rispetto alle scelte tecnologiche di una scuola (per esempio la scelta di un CMS). Rappresentando uno standard, favorisce l’utilizzo di soluzioni tecnologiche condivise e la diffusione di best practice. 
+Per creare il sito di una scuola utilizza il [documento di architettura dell'informazione](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing) come guida per la struttura dei contenuti, il sistema di navigazione e i flussi di interazione.
+
+Con i template HTML (basati sul kit [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e conformi alle linee guida di design) potrai realizzare il front-end dell’intero sito. Il kit è indipendente dalle scelte tecnologiche di una scuola, come la scelta di un CMS. Rappresentando uno standard, favorisce l’utilizzo di soluzioni tecnologiche condivise e la diffusione di best practice. 
 
 [Vai ai template](https://github.com/italia/design-scuole-pagine-statiche/)
 
+Un primo tema per il CMS [WordPress](https://it.wordpress.org/){:target="_blank" rel="noopener noreferrer"} è già disponibile in modalità open-source e rappresenta la soluzione più rapida per aderire al nuovo modello di sito scolastico.
 
-Un primo sito realizzato in wordpress e basato su questi materiali è già disponibile in modalità open source e rappresenta la soluzione più rapida per aderire al nuovo modello di sito scolastico.
-
-[Vai al sito Wordpress](https://github.com/italia/design-scuole-wordpress-theme)
+[Vai al tema WordPress](https://github.com/italia/design-scuole-wordpress-theme)
 
 
-Attraverso gli strumenti di Designers Italia e Developers Italia è possibile interagire, confrontarsi, ricevere feedback sul progetto e partecipare alla sua evoluzione. In particolare, è disponibile un canale slack a disposizione delle scuole per confrontarsi e condividere soluzioni.
+Attraverso gli strumenti di Designers Italia e Developers Italia è possibile interagire, confrontarsi, ricevere feedback sul progetto e partecipare alla sua evoluzione. In particolare, è disponibile un canale lack a disposizione delle scuole per confrontarsi e condividere soluzioni.
 
 [Vai al canale Slack](https://developersitalia.slack.com/messages/T6C27AXE0/CQ7J0KANT)
 
@@ -74,7 +76,7 @@ All’interno del kit è presente un documento di architettura dell’informazio
 
 In particolare, contiene indicazioni su content type, sistemi di navigazione e tassonomie per tutte le aree del sito: descrizione dell’organizzazione, pubblicazione di documenti, notizie ed eventi, presentazione dei servizi e dei percorsi di studio oltre naturalmente alla homepage e al motore di ricerca. 
 
-I template html pronti all’uso (basati su kit [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e conformi alle linee guida di design) permettono di costruire il front-end completo del sito (cioè senza dover realizzare nuovi template).
+I template HTML pronti all’uso (basati sul kit [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e conformi alle linee guida di design) permettono di costruire il front-end completo del sito (cioè senza dover realizzare nuovi template).
 
 Il kit non contiene una descrizione dettagliata delle caratteristiche dei singoli servizi e percorsi di studio di una scuola (che possono cambiare da scuola a scuola), ma propone un modello strutturato di descrizione e diversi esempi pratici tratti dai progetti pilota realizzati insieme alle prime scuole italiane che hanno aderito al modello. 
 
@@ -82,5 +84,5 @@ La realizzazione di un sito aderente a questo modello richiede in genere un’at
 
 Altri contenuti, come documenti e notizie, possono essere migrati dal sito precedente verso il nuovo sito che si sta realizzando. 
 
-La mappatura dei contenuti esistenti, la scrittura e la riscrittura dei contenuti e il cambiamento dei dati inseriti può essere realizzata utilizzando metodi e strumenti previsti dal [Content kit](https://designers.italia.it/kit/content-kit/). 
+La mappatura dei contenuti esistenti, la scrittura e la riscrittura dei contenuti e il cambiamento dei dati inseriti può essere realizzata utilizzando metodi e strumenti previsti dal [Content kit]({% link _kits/it/content-kit.md %}). 
 
