@@ -1,6 +1,6 @@
 ---
 title: Siti web delle scuole
-description: Modello di sito web e template grafico per le scuole italiane creato dal MIUR, gratis e a disposizione di tutti.
+description: Modello di sito web e template grafico per le scuole italiane, gratis e a disposizione di tutti.
 #subtitle: Modello di siti web per le scuole italiane
 #payoff: Il punto di riferimento per il design dei siti web delle scuole
 logo: /assets/images/projects/logo-sitiweb-scuole.jpg
@@ -15,7 +15,7 @@ redirect_from:
 
 ### Obiettivi
 
-I siti scolastici sono il punto di riferimento della relazione tra scuola, studenti e famiglie.
+I siti scolastici sono il punto di riferimento della relazione tra scuola, studenti e famiglie. Il progetto si è concluso e i materiali (template, architettura informazione e un tema wordpress pronto all’uso) sono disponibili [qui.]({% link _kits/it/scuole.md %})
 
 Per questo il MIUR (Ministero Istruzione, Università e Ricerca) ha deciso insieme a Designers Italia, la piattaforma di design dei servizi pubblici ideata dal [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/), di creare un modello di siti scolastici a disposizione di tutti.
 La documentazione del progetto e i prototipi sono rilasciati in modo progressivo entro settembre 2018, come previsto dal progetto.
@@ -32,9 +32,8 @@ Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per off
 
 In parallelo su [Developers Italia](https://developers.italia.it/) prenderà il via lo sviluppo di temi open source per i principali CMS, secondo roadmap che verrà pubblicata su Developers Italia e che vedrà il coinvolgimento delle comunità open source. A quel punto le scuole potranno utilizzare direttamente i temi, semplificando ulteriormente il percorso.
 
-Qui è disponibile il risultato finale del progetto:
-
-[il kit per creare il sito di una scuola]({% link _kits/it/scuole.md %})
+Per collaborare e ricevere supporto c’è un canale Slack dedicato che si chiama #design-siti-scuole. 
+[Accedi al canale Slack](https://slack.developers.italia.it/)
 
 ### Roadmap
 
