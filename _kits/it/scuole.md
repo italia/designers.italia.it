@@ -54,9 +54,9 @@ Un primo tema per il CMS [WordPress](https://it.wordpress.org/){:target="_blank"
 [Vai al tema WordPress](https://github.com/italia/design-scuole-wordpress-theme)
 
 
-Attraverso gli strumenti di Designers Italia e Developers Italia è possibile interagire, confrontarsi, ricevere feedback sul progetto e partecipare alla sua evoluzione. In particolare, è disponibile un canale lack a disposizione delle scuole per confrontarsi e condividere soluzioni.
+Attraverso gli strumenti di Designers Italia e Developers Italia è possibile interagire, confrontarsi, ricevere feedback sul progetto e partecipare alla sua evoluzione. In particolare, è disponibile il canale Slack #design-siti-scuole a disposizione delle scuole per confrontarsi e condividere soluzioni.
 
-[Vai al canale Slack](https://developersitalia.slack.com/messages/T6C27AXE0/CQ7J0KANT)
+[Vai al canale Slack](https://slack.developers.italia.it/)
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### A COSA SERVE
