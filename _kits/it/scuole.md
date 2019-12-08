@@ -23,6 +23,8 @@ download_file:
   caption: Template HTML basati su Bootstrap Italia
 - file: "https://github.com/italia/design-scuole-wordpress-theme/"
   caption: Un tema già pronto per WordPress
+- file: "https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html"
+  caption: Documentazione di progetto
   
 carousel:
 - img: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
