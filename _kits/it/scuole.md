@@ -19,9 +19,9 @@ documents:
 download_file:
 - file: "https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing"
   caption: Architettura dell’informazione
-- file: "https://github.com/italia/design-scuole-pagine-statiche/blob/master/README.md"
+- file: "https://github.com/italia/design-scuole-pagine-statiche/"
   caption: Template HTML basati su Bootstrap Italia
-- file: "https://github.com/italia/design-scuole-wordpress-theme/blob/master/README.md"
+- file: "https://github.com/italia/design-scuole-wordpress-theme/"
   caption: Un tema già pronto per WordPress
 - file: "https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html"
   caption: Documentazione di progetto
