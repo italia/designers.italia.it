@@ -18,12 +18,14 @@ Puoi trovarci su [Behance](https://www.behance.net/italia), [Github](https://git
 
 <a class="twitter-timeline" data-height="460" data-lang="it" data-dnt="true" data-link-color="#0066cc" href="https://twitter.com/DesignersITA?ref_src=twsrc%5Etfw">Tweets di DesignersITA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+{% comment %}
 ## Newsletter {#newsletter-section}
 Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccontare.
 
 <div class="u-padding-bottom-xxl">
 {% include newsletter.html %}
 </div>
+{% endcomment %}
 
 ## Contatti
 Per qualsiasi dubbio sui Kit e sulla community di Designers Italia, puoi scriverci a [contatti@designers.italia.it](mailto:contatti@designers.italia.it).
