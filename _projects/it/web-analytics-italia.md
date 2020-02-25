@@ -17,7 +17,7 @@ I siti web delle PA italiane sono il punto di accesso privilegiato dei cittadini
 
 
 ### Obiettivi
-[Web Analytics Italia (WAI](https://webanalytics.italia.it/)è una **soluzione open source di raccolta, analisi e condivisione dei dati di traffico e comportamento utente dei siti web delle amministrazioni pubbliche italiane**. 
+[Web Analytics Italia (WAI)](https://webanalytics.italia.it/) è una **soluzione open source di raccolta, analisi e condivisione dei dati di traffico e comportamento utente dei siti web delle amministrazioni pubbliche italiane**. 
 
 WAI consente alle PA di:
 
@@ -34,7 +34,7 @@ Web Analytics Italia si basa sul software open source [Matomo](https://matomo.or
 Gli stessi dati sono esposti pubblicamente - in forma aggregata - nella **dashboard pubblica di WAI**, in ottica di condivisione e trasparenza; saranno inoltre a breve resi disponibili via API per l’utilizzo da parte di applicazioni di terze parti. 
 
 L’uso della piattaforma e delle features supportate sono e saranno sempre **gratuite** per tutte le PA aderenti.
-WAI si trova attualmente in [**fase di closed beta**].(https://webanalytics.italia.it/faq#quando-verra-avviata-e-quanto-durera-la-fase-di-sperimentazione-inizialedel-progetto-che-impegno-e-richiesto-alle-istituzioni-che-verrannocoinvolte)  
+WAI si trova attualmente in [**fase di closed beta**](https://webanalytics.italia.it/faq#quando-verra-avviata-e-quanto-durera-la-fase-di-sperimentazione-inizialedel-progetto-che-impegno-e-richiesto-alle-istituzioni-che-verrannocoinvolte).
 
 ### Storia
 Il progetto WAI nasce da una [prima sperimentazione](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888) condotta da AgID e Team per la Trasformazione Digitale (luglio 2017 - marzo 2018), che ha visto la collaborazione di un [nucleo pilota di amministrazioni](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35) per un totale di 40 siti web analizzati. Sulla base dei risultati della sperimentazione, il team di lavoro AGID dedicato ha definito e sviluppato una soluzione tecnologica stabile e di lungo periodo, confluita nell’attuale Web Analytics Italia.
