@@ -1,6 +1,7 @@
 <div class="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none
   {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %}
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
+  {% comment %}
   {% if include.hasImage != false and include.image %}
   <div class="u-sizeFull">
     <a class="" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ include.link }}">
@@ -8,6 +9,7 @@
     </a>
   </div>
   {% endif %}
+  {% endcomment %}
   <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill {% if include.flat != true %}u-padding-r-all{% endif %}">
 
     {% if include.date %}

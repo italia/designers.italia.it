@@ -13,12 +13,12 @@ backgroundPositionY: 'center'
 ## Intro
 Designers Italia è punto di incontro tra professionisti del design e mondo della Pubblica Amministrazione. Il progetto è stato ideato dal **Team per la Trasformazione Digitale**, in collaborazione con l'**Agenzia per Italia Digitale**.
 
+{% comment %}
 ## Social media
 Puoi trovarci su [Behance](https://www.behance.net/italia), [Github](https://github.com/italia/designers.italia.it), [Twitter](https://twitter.com/designersita) e [Medium](https://medium.com/designers-italia).
 
 <a class="twitter-timeline" data-height="460" data-lang="it" data-dnt="true" data-link-color="#0066cc" href="https://twitter.com/DesignersITA?ref_src=twsrc%5Etfw">Tweets di DesignersITA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-{% comment %}
 ## Newsletter {#newsletter-section}
 Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccontare.
 
@@ -38,5 +38,7 @@ Vuoi proporre idee oppure dare un feedback sulla community? Il luogo naturale di
 
 E se vuoi segnalare un problema su questo sito puoi aprire una [issue](https://github.com/italia/designers.italia.it) su GitHub.
 
+{% comment %}
 ## Lavora con noi
 Puoi trovare tutte le eventuali posizioni aperte nella [sezione "Lavora con noi"](https://teamdigitale.governo.it/it/lavora-con-noi) del Team per la Trasformazione Digitale.
+{% endcomment %}

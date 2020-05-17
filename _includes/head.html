@@ -20,22 +20,6 @@
 
   <link rel="preload" href="{{ '/assets/toolkit/IWT.min.js' | relative_url }}" as="script">
 
-  <script type="text/javascript">
-    WebFontConfig = {
-      google: {
-        families: ['Titillium+Web:300,400,600,700,400italic:latin']
-      }
-    };
-    (function() {
-      var wf = document.createElement('script');
-      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-      wf.type = 'text/javascript';
-      wf.async = 'true';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(wf, s);
-    })();
-  </script>
-
   <!-- include html5shim per Explorer 8 -->
   <script src="{{ '/assets/toolkit/vendor/modernizr.js' | relative_url }}"></script>
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
