@@ -100,7 +100,7 @@ module Jekyll
         if item['virtuals']['previewImage']['imageId'] != ''
           doc.data['medium_preview_image_id'] = item['virtuals']['previewImage']['imageId']
           doc.data['medium_preview_image_url'] = "https://cdn-images-1.medium.com/fit/900/600/" + item['virtuals']['previewImage']['imageId']
-          open(doc.data['medium_preview_image_url']) { |f|
+          URI.open(doc.data['medium_preview_image_url']) { |f|
             File.open("/tmp/medium_image.jpg","wb") do |file|
               file.puts f.read
             end
