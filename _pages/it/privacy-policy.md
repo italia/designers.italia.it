@@ -10,7 +10,7 @@ In questa pagina si descrivono le modalità e le condizioni del trattamento dei 
 L'informativa è resa ai sensi dell'art. 13 del D. Lgs. n. 196/2003 - Codice in materia di protezione dei dati personali a tutti gli Utenti che, interagendo con il Sito, forniscono al gestore dello stesso i propri dati personali.
 La validità dell’informativa contenuta nella presente pagina è limitata al solo Sito e non si estende ad altri siti web eventualmente consultabili mediante collegamento ipertestuale.
 
-Il Titolare del trattamento per i dati raccolti attraverso il Sito è AgID - Agenzia per l'Italia Digitale, con sede in via Liszt 21 - 00144 Roma, indirizzo email [protocollo@pec.agid.gov.it](mailto:protocollo@pec.agid.gov.it).
+Il Titolare del trattamento per i dati raccolti attraverso il Sito è AGID - Agenzia per l'Italia Digitale, con sede in via Liszt 21 - 00144 Roma, indirizzo email [protocollo@pec.agid.gov.it](mailto:protocollo@pec.agid.gov.it).
 Eventuali soggetti terzi ai quali i dati potrebbero essere comunicati per l’esecuzione di operazioni di trattamento connesse con le finalità specificate nella presente informativa, saranno preventivamente designati dal Titolare quali Responsabili del trattamento ai sensi dell’art. 29 del Codice in materia di protezione dei dati personali.
 I dati personali degli utenti diversi da quelli che l’utente pubblicherà direttamente sul sito nell’apposita area di discussione non formeranno oggetto di discussione.
 
