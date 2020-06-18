@@ -7,10 +7,10 @@
 # TODO replace RSS feed with JSON, see:
 #
 
-require 'rest_client'
+require 'rest-client'
 require 'json'
 require 'rmagick'
-require "open-uri"
+require 'open-uri'
 
 module Jekyll
 

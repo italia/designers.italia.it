@@ -1,11 +1,11 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
 
-gem 'jekyll', '3.8.6'
+gem 'jekyll', '4.1.0'
 
-gem 'rest-client', '~> 2.0'
-gem 'rmagick', '~> 3.0'
-gem 'html-proofer', '~> 3.11'
+gem 'rest-client', '~> 2.1.0'
+gem 'rmagick', '~> 4.1.2'
+gem 'html-proofer', '~> 3.15.0'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

@@ -30,9 +30,6 @@ Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccont
 ## Contatti
 Per qualsiasi dubbio sui Kit e sulla community di Designers Italia, puoi scriverci a [contatti@designers.italia.it](mailto:contatti@designers.italia.it).
 
-### Area media
-Puoi trovare maggiori dettagli nell'area Ufficio Stampa sul sito del [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/it/contatti) o contattare l'indirizzo [media@teamdigitale.governo.it](mailto:media@teamdigitale.governo.it).
-
 ### Invia un feedback
 Vuoi proporre idee oppure dare un feedback sulla community? Il luogo naturale di discussione e confronto è il [forum](https://forum.italia.it/c/design/), su cui abbiamo creato [un thread apposito per i tuoi feedback](https://forum.italia.it/c/design/feedback-community).
 

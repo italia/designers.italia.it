@@ -375,17 +375,17 @@
 }
 
 $light-grey: #e6e9f0;
-.roadmap-list {
+.RoadmapList {
   position: relative;
 
   dt {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-top: 2rem;
-    font-size: 2rem;
-    line-height: 2.5rem;
-    font-weight: 300;
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: 600;
     position: relative;
+    @media screen and (min-width: 768px) {
+      font-size: 4rem;
+    }
 
     &:not(:first-of-type) {
       border-top: 1px solid $light-grey;
@@ -399,7 +399,6 @@ $light-grey: #e6e9f0;
     ul li.activity-list {
       margin: 1.6rem 0;
       &:not(:first-of-type) {
-        border-top: 1px solid $light-grey;
         padding-top: 1.6rem;
       }
       ul li span {
@@ -861,6 +860,18 @@ body.layout-download {
     padding: 1rem;
     vertical-align: top;
     box-shadow: 0 1rem 2rem 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Footer */
+.Footer {
+  .logo-agid {
+    height: 5rem;
+    max-width: 100%;
+  }
+  .logo-mid {
+    height: 12rem;
+    max-width: 100%;
   }
 }
 
