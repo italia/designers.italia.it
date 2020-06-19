@@ -1,42 +1,24 @@
 <footer class="Footer">
 
-  <div class="Grid Grid--withGutter u-padding-top-xl">
-
-    <div class="Grid-cell u-md-size1of2 u-lg-size5of12 u-padding-r-bottom">
-      <a href="{{ site.owner_link }}" class="u-linkClean">
-      <img class="Footer-logo u-xs-padding-right-none" src="{{ site.owner_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}"
-        alt="" style="height: 80px; max-width: 100%">
-      </a>
-      <p class="Footer-siteName">
-        <a href="{{ site.owner_link }}">
-          {{ t.footer_title | default: site.owner | default: t.site_title | default: site.title | escape }}
+  <div class="Grid Grid--withGutter u-padding-top-m u-padding-bottom-m">
+    {% comment %} Logo AGID {% endcomment %}
+    <div class="Grid-cell u-sm-size6of12 u-md-size3of12 u-lg-size3of12 u-padding-r-bottom">
+      <div>
+        <a href="{{ site.owner_link }}" class="u-linkClean">
+          <img class="u-inline logo-agid" src="{{ site.owner_logo | relative_url }}" alt="Logo {{ site.owner_full }}">
         </a>
-      </p>
-    </div>
-
-    <div class="Grid-cell u-md-size1of2 u-lg-size1of3 u-padding-r-bottom td-footer">
-      <p class="u-padding-bottom-l" style="opacity: 0.5">{{ site.data.l10n.[active_lang].t.in_collaboration_with }}</p>
-      <div class="Grid">
-        <div class="u-inlineBlock">
-          <a href="{{ site.partner_link }}" class="u-linkClean">
-          <img class="u-padding-top-xxs u-padding-right-xs" src="{{ site.gov_logo | relative_url |  d('//placehold.it/75x80?text=placeholder') }}" alt=""
-            style="height: 4em; max-width: 100%">
-          <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.partner_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt=""
-            style="height: 4em; max-width: 100%">
-          </a>
-        </div>
-        <div class="Grid-cell u-size1of12 u-padding-left-none team-bar"></div>
-        <p class="Grid-cell u-size5of12 Footer-siteName u-padding-left-xs u-text-r-xs">
-          <a href="{{ site.partner_link }}" class="u-color-white u-linkClean">
-            {{ site.partner_full | upcase }}
-          </a>
-        </p>
       </div>
     </div>
-
-    <div class="Grid-cell u-lg-size1of4 u-padding-r-bottom u-flexAlignSelfEnd">
-      <h2 class="u-md-flexInline u-lg-flexInline u-text-p u-color-white u-textWeight-400
-        u-hidden u-margin-r-right u-margin-r-bottom u-flexAlignSelfCenter">{{ t.follow_us | capitalize }}</h2>
+    {% comment %} Logo MID {% endcomment %}
+    <div class="Grid-cell u-sm-size6of12 u-md-size3of12 u-lg-size3of12 u-padding-r-bottom">
+      <div class="Aligner-item">
+        <a href="{{ site.partner_link }}" class="u-linkClean">
+          <img class="u-inline logo-mid" src="{{ site.partner_logo | relative_url }}" alt="Logo {{ site.partner_full }}">
+        </a>
+      </div>
+    </div>
+    {% comment %} Social {% endcomment %}
+    <div class="Grid-cell u-md-size6of12 u-lg-size6of12 u-padding-r-bottom u-padding-top-xs u-text-sm-center u-text-md-right u-text-lg-right">
       <ul class="Footer-socialIcons">
         {% for social in site.data.social %}
           {% if social[1].link %}
@@ -46,9 +28,8 @@
         {% endfor %}
       </ul>
     </div>
-
   </div>
-
+  {% comment %} PON {% endcomment %}
   <div class="Grid u-background-white">
     <div class="Grid-cell u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
       <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.eu_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt=""
@@ -67,13 +48,15 @@
         style="height: 4em; max-width: 100%">
     </div>
   </div>
-
-  <ul class="Footer-links u-cf u-color-80">
-    {% for link in site.data.footer_links %}
-      {% assign link_name = link[1].title %}
-      <li><a href="{{ site.baseurl }}{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
-    {% endfor %}
-  </ul>
+  {% comment %} Links {% endcomment %}
+  <div>
+    <ul class="Footer-links u-cf u-color-80">
+      {% for link in site.data.footer_links %}
+        {% assign link_name = link[1].title %}
+        <li><a href="{{ site.baseurl }}{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
+      {% endfor %}
+    </ul>
+    </div>
 
 </footer>
 
