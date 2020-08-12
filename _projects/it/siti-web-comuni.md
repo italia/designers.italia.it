@@ -31,7 +31,7 @@ Il modello si basa su un’attività di analisi desk partita nel 2017, su una ri
 
 #### Il metodo di lavoro
 
-[Il kit di Designers Italia per i test di usabilità](https://designers.italia.it/kit/web-toolkit/)
+[Il kit di Designers Italia per i test di usabilità](https://designers.italia.it/kit/usability-test/)
 
 [Il kit per le user interview](https://designers.italia.it/kit/user-interviews/)
 

@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
 
-gem 'jekyll', '4.1.0'
+gem 'jekyll', '4.1.1'
 
 gem 'rest-client', '~> 2.1.0'
 gem 'rmagick', '~> 4.1.2'
