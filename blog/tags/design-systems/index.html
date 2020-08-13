@@ -47,7 +47,7 @@
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
   <link media="all" rel="stylesheet" href="/assets/toolkit/build.css">
-  <link media="all" rel="stylesheet" href="/assets/main.css?202008121258">
+  <link media="all" rel="stylesheet" href="/assets/main.css?202008131335">
 
   <script src="/assets/toolkit/vendor/jquery.min.js"></script>
 
@@ -64,22 +64,17 @@
 
    <!-- Google Analytics -->
 <script>
-  // Disabilita tracciamento se il cookie cookies_consent non esiste
-  if (document.cookie.indexOf('cookiebar=hide') === -1) {
-    window['ga-disable-UA-3351165-20'] = true;
-  }
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+  })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
   ga('create', 'UA-3351165-20', 'auto');
   ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
-</script>
- 
+</script> 
 
 </head>
 <body class="t-Pac layout-default language-it">
@@ -89,17 +84,6 @@
   <li><a class="js-fr-offcanvas-open" href="#menu" aria-controls="menu" aria-label="vai alla navigazione del sito" title="vai alla navigazione del sito">
     vai alla navigazione del sito</a></li>
 </ul>
-
-
-<div id="cookie-bar" class="CookieBar js-CookieBar u-background-95 u-padding-r-all" aria-hidden="true">
-  <p class="u-color-white u-text-r-xs u-lineHeight-m u-padding-r-bottom">
-    Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.<br>
-  </p>
-  <p>
-    <button class="Button Button--default u-text-r-xxs js-cookieBarAccept u-inlineBlock u-margin-r-all">Accetto</button>
-    <a href="/privacy-policy" class="u-text-r-xs u-color-teal-50">Privacy policy</a>
-  </p>
-</div>
 
 
 <div>
@@ -1745,7 +1729,7 @@
  <script> __PUBLIC_PATH__ = '/assets/toolkit/'</script>
  <script src="/assets/toolkit/IWT.min.js"></script>
 
-<script src="/assets/scripts/main.js?202008121258"></script>
+<script src="/assets/scripts/main.js?202008131335"></script>
 
 <script>
   $(document).on('keydown', function(e) {
@@ -1767,4 +1751,5 @@
 </div>
 
 </body>
+
 </html>
