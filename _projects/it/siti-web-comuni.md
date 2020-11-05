@@ -70,16 +70,19 @@ I risultati conpleti del lavoro di prototipazione sono pubblicati sotto forma di
 [Consulta la documentazione del progetto su Docs Italia](https://docs.italia.it/italia/designers-italia/design-comuni-docs)
 
 ### Il modello
+
 Il modello realizzato è riassunto nella [Documentazione del progetto su Docs Italia](https://docs.italia.it/italia/designers-italia/design-comuni-docs) e nel [sito web dedicato al progetto](https://italia.github.io/design-comuni-prototipi/).
 
 ### Come partecipare
 
-Abbiamo aperto un’area di discussione sul progetto qui:
+Abbiamo aperto un’area di discussione sul progetto sul forum dei servizi della Pubblica Amministrazione italiana:
 
 [Un modello per i siti dei Comuni basato sul design system di Designers Italia](https://forum.italia.it/t/un-modello-per-i-siti-dei-comuni-basato-sul-design-system-di-designers-italia/4468)
 
-Presto abiliteremo un canale Slack dedicato al progetto, dove chiunque può contribuire con i propri suggerimenti e le proprie domande.
+Per collaborare e ricevere supporto sul progetto c’è un canale Slack dedicato:
 
-### Passi successivi
+[Accedi al canale Slack](https://slack.developers.italia.it/) ed entra nel canale [#design-siti-dei-comuni](https://developersitalia.slack.com/archives/CME9AD8NN).
 
-Designers Italia - in collaborazione con [Developers Italia](https://developers.italia.it/), vuole continuare a sviluppare il progetto supportando la creazione di template e temi per i principali CMS secondo un percorso che verrà discusso nel mese di ottobre.
+### Prossimi passi
+
+Designers Italia - in collaborazione con [Developers Italia](https://developers.italia.it/), vuole continuare a sviluppare il progetto supportando la creazione di template e temi per i principali CMS.

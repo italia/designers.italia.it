@@ -23,24 +23,18 @@ I vantaggi di usare SPID per il cittadino sono:
 - La sicurezza nell’accesso
 - Una maggiore tutela della privacy
 
-Attualmente l’integrazione di SPID si basa sullo standard **SAML** e può avvenire su siti di servizi pubblici e privati.
+Maggiori informazioni sull'integrazione di SPID e tutta la documentazione software si può trovare alla [pagina dedicata su Developers Italia](https://developers.italia.it/it/spid/){:target="_blank" rel="noopener noreferrer"}.
 
 ### Linee guida
 
-[Regole tecniche](https://docs.italia.it/italia/spid/spid-regole-tecniche/)
+* [Regole tecniche](https://docs.italia.it/italia/spid/spid-regole-tecniche/){:target="_blank" rel="noopener noreferrer"}
 
-### Codice sorgente
+### Asset e codice sorgente
 
-[Bottone SPID di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button)
+* [Bottone di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button){:target="_blank" rel="noopener noreferrer"}
 
-[Layout standard di IdP](https://github.com/italia/spid-idp-login-layout)
+* [Icone, loghi e asset grafici](https://github.com/italia/spid-graphics){:target="_blank" rel="noopener noreferrer"}
 
-[Playbook Ansible per SP](https://github.com/italia/spid-sp-playbook)
+* [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout){:target="_blank" rel="noopener noreferrer"}
 
-### Grafica
-
-Abbiamo pubblicato un po' di asset che tornano comodi durante l'integrazione:
-
-[Icone, loghi e grafiche SPID](https://github.com/italia/spid-graphics)
-
-[Bottone SPID (solo asset)](https://github.com/italia/spid-button)
+* [Playbook Ansible per SP](https://github.com/italia/spid-sp-playbook){:target="_blank" rel="noopener noreferrer"}
