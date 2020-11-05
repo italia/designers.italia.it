@@ -4,167 +4,68 @@ layout: default
 
 {% include setlang.html %}
 
-{% comment %}
-  {% assign subnav = site.data[page.subnav] %}
-  {% include linklist.html items=subnav dynamic=true %}
-  {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
-  {% capture pills %}{% include pills.html items=page.categories  %}{% endcapture %}
-  {% include sideblock.html title=t.home_projects_expand content=pills %}
-{% endcomment %}
-
 <article itemscope itemtype="http://schema.org/BlogPosting" class="u-background-white u-nbfc u-padding-top-xxl u-xs-padding-top-none">
-{% if page.blueBlock %}
-<!-- ==== blue block -->
-  <div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-400" aria-hidden="true" style="{% include background-style.html %}">
-
-      <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
-
-        <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-           <div class="u-textCenter u-padding-bottom-xl ">
-          {% if page.categories %}
-              <div class="u-layoutCenter u-textCenter u-margin-all-xl">
-                <ul class="Category" >
-                {% for item in page.categories%}
-                  <li class="u-text-r-xxs u-color-white u-border-all-xxs  u-padding-all-xxs">
-                  {{item}}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-
-            {% if page.nodate != true %}
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">
-            {{ page.date | date: "%-d %b %Y" }}</time>
-            {% endif %}
-
-            <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">
-              {{ page.title }}</h1>
-
-            {% if page.subtitle %}
-            <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s u-lineHeight-l"
-              style="max-width:24em">{{ page.subtitle }}</h2>
-            {% endif %}
-
-            <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-white u-margin-r-bottom"
-              style="max-width: 15em" />
-
-            {% if page.author %}
-              <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
-                <span itemprop="name" class="u-text-r-xs u-color-white">{{ t.by }} {{ page.author }}</span>
-              </div>
-            {% endif %}
-
-            {% if page.keywords %}
-              <div itemprop="keywords" class="u-layoutCenter u-textCenter u-margin-all-xl">
-                <ul class="Badges">
-                {% for item in page.keywords%}
-                  <li class="u-text-r-xxs u-background-white u-borderRadius-xl u-color-50 badge">
-                  {{item}}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-
-            <div class="u-layoutCenter u-textCenter u-color-white u-margin-bottom-xxl">
-              {% include share.html %}
-            </div>
+{%- if page.blueBlock -%}
+  <div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-400" aria-hidden="true" style="{%- include background-style.html -%}">
+    <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
+      <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+        <div class="u-textCenter u-padding-bottom-xl ">
+          {%- if page.categories -%}
+          <div class="u-layoutCenter u-textCenter u-margin-all-xl">
+            <ul class="Category" >
+              {%- for item in page.categories-%}
+              <li class="u-text-r-xxs u-color-white u-border-all-xxs  u-padding-all-xxs">{{item}}</li>
+              {%- endfor -%}
+            </ul>
+          </div>
+          {%- endif -%}
+          {%- if page.nodate != true -%}
+          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">{{ page.date | date: "%-d %b %Y" }}</time>
+          {%- endif -%}
+          <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">{{ page.title }}</h1>
+          {%- if page.subtitle -%}
+          <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s u-lineHeight-l" style="max-width:24em">{{ page.subtitle }}</h2>
+          {%- endif -%}
         </div>
-
-        </div><!-- /grid-cell-->
       </div>
-
+    </div>
   </div>
+{%- endif -%}
 
-<!--/ === blue block-->
-{% endif %}
-
-{% include guidestable.html headingClass='u-block u-text-h3 u-border-bottom-xxs u-padding-bottom-m' %}
+{%- include guidestable.html headingClass='u-block u-text-h3 u-border-bottom-xxs u-padding-bottom-m' -%}
 
   <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
     <div class="Grid Grid--alignCenter">
       <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-        {% if page.blueBlock != true %}
+        {%- if page.blueBlock != true -%}
         <div class="u-textCenter u-padding-bottom-xl">
-          {% if page.categories %}
-              <div class="u-layoutCenter u-textCenter u-margin-all-xl">
-                <ul class="Category" >
-                {% for item in page.categories%}
-                  <li class="u-text-r-xxs u-background-white u-color-50 u-border-all-xxs  u-padding-all-xxs">
-                  {{item}}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-
-          {% if page.nodate != true %}
+          {%- if page.categories -%}
+            <div class="u-layoutCenter u-textCenter u-margin-all-xl">
+              <ul class="Category" >
+              {%- for item in page.categories-%}
+                <li class="u-text-r-xxs u-background-white u-color-50 u-border-all-xxs  u-padding-all-xxs">
+                {{item}}
+                </li>
+              {%- endfor -%}
+              </ul>
+            </div>
+          {%- endif -%}
+          {%- if page.nodate != true -%}
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-textSecondary">
             {{ page.date | date: "%-d %b %Y" }}</time>
-          {% endif %}
-
-          {% if page.pretitle != nil %}
+          {%- endif -%}
+          {%- if page.pretitle != nil -%}
             <h4 class="u-layoutCenter u-textCenter u-color-grey-50 u-text-r-m u-textWeight-300 u-margin-bottom-s">{{ page.pretitle }}</h4>
-          {% endif %}
-
-            <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-grey-60 u-margin-top-s u-lineHeight-l">
-              {{ page.title }}</h1>
-
-            {% if page.subtitle %}
+          {%- endif -%}
+            <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-grey-60 u-margin-top-s u-lineHeight-l">{{ page.title }}</h1>
+            {%- if page.subtitle -%}
             <h2 class="u-layoutCenter u-textCenter u-color-grey-50 u-text-r-m u-textWeight-300 u-margin-bottom-s"
               style="max-width:24em">{{ page.subtitle }}</h2>
-            {% endif %}
-
-            <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
-              style="max-width: 15em" />
-
-            {% if page.author %}
-              <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
-                <span itemprop="name" class="u-text-r-xs u-textSecondary">{{ t.by }} {{ page.author }}</span>
-              </div>
-            {% endif %}
-
-            {% if page.keywords %}
-              <div itemprop="keywords" class="u-layoutCenter u-textCenter u-margin-all-xl">
-                <ul class="Badges">
-                {% for item in page.keywords%}
-                  <li class="u-text-r-xxs u-background-50 u-borderRadius-xl u-color-white badge">
-                  {{item}}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
+            {%- endif -%}
         </div>
-
-        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
-          {% include share.html backgroundColor='u-background-50' textColor='u-color-50' iconColor='u-color-white' layout=' ' %}
-        </div>
-        {% endif %}
-
-
-        <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-color-grey-50">
-          {{ content }}
-        </div>
-
-
-        {% if page.related_tags == nil %}
-        <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
-          style="max-width: 15em" />
-        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
-          {% include share.html backgroundColor='u-background-50' textColor='u-color-50' iconColor='u-color-white' layout=' ' %}
-        </div>
-        {% endif %}
-
+        {%- endif -%}
+        <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-color-grey-50">{{ content }}</div>
       </div>
-
     </div>
   </div>
-
-  {% if page.related_tags != nil %}
-    {% include relateds.html %}
-
-  {% endif %}
-
 </article>

@@ -1,6 +1,6 @@
 ---
 title: Linee guida
-subtitle: 'Strumenti per progettare servizi e ambienti digitali partendo dalle effettive esigenze degli utenti.<br><a target="_blank" class="u-color-teal-50" href="https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/introduzione-linee-guida-design.html">Vai alla intro</a>'
+subtitle: Per orientare la progettazione di servizi e ambienti digitali partendo dalle effettive esigenze degli utenti.
 layout: guidesindex
 lang: it
 toc: true
@@ -9,6 +9,8 @@ backgroundColor: 'rgba(90, 178, 255, .5)'
 blueBlock: true
 nodate: true
 redirect_from:
+  - /it/guide/
+  - /guide/
   - /service-design/
   - /user-research/
   - /content-design/

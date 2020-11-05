@@ -17,7 +17,7 @@ redirect_from:
 
 I siti scolastici sono il punto di riferimento della relazione tra scuola, studenti e famiglie.
 
-Per questo il MIUR (Ministero Istruzione, Università e Ricerca) ha deciso insieme a Designers Italia, la piattaforma di design dei servizi pubblici ideata dal [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/), di creare un modello di siti scolastici a disposizione di tutti.
+Per questo il MIUR (Ministero Istruzione, Università e Ricerca) ha deciso insieme a Designers Italia, la piattaforma di design dei servizi pubblici ideata dal [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/){:target="_blank" rel="noopener"}, di creare un modello di siti scolastici a disposizione di tutti.
 La documentazione del progetto e i prototipi sono stati rilasciati in modo progressivo a settembre 2018, come previsto dal progetto.
 
 Il percorso di *service design* ha previsto codesign, ricerca, progettazione, test di usabilità e avvio di un processo di evoluzione e miglioramento continuo.
@@ -36,11 +36,11 @@ Il progetto ha raggiunto un traguardo importante a fine 2019 e i materiali (temp
 
 Una discussione sul progetto è possibile attraverso il forum dei servizi della Pubblica Amministrazione italiana:
 
-[Vai alla sezione di Forum Italia sul progetto di design dei servizi digitali scolastici](https://forum.italia.it/t/design-dei-servizi-digitali-delle-scuole-ricerca-sugli-utenti-prototipazione-e-linee-guida-progettuali/4100)
+[Vai alla sezione di Forum Italia sul progetto di design dei servizi digitali scolastici](https://forum.italia.it/t/design-dei-servizi-digitali-delle-scuole-ricerca-sugli-utenti-prototipazione-e-linee-guida-progettuali/4100){:target="_blank" rel="noopener"}
 
 Per collaborare e ricevere supporto c’è un canale Slack dedicato:
 
-[Accedi al canale Slack](https://slack.developers.italia.it/) ed entra nel canale [#design-siti-scuole](https://developersitalia.slack.com/archives/CQ7J0KANT).
+[Accedi al canale Slack](https://slack.developers.italia.it/){:target="_blank" rel="noopener"} ed entra nel canale [#design-siti-scuole](https://developersitalia.slack.com/archives/CQ7J0KANT){:target="_blank" rel="noopener"}.
 
 ### Timeline del progetto
 

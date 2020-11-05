@@ -23,18 +23,18 @@ I vantaggi di usare SPID per il cittadino sono:
 - La sicurezza nell’accesso
 - Una maggiore tutela della privacy
 
-Maggiori informazioni sull'integrazione di SPID e tutta la documentazione software si può trovare alla [pagina dedicata su Developers Italia](https://developers.italia.it/it/spid/){:target="_blank" rel="noopener noreferrer"}.
+Maggiori informazioni sull'integrazione di SPID e tutta la documentazione software si può trovare alla [pagina dedicata su Developers Italia](https://developers.italia.it/it/spid/){:target="_blank" rel="noopener"}.
 
 ### Linee guida
 
-* [Regole tecniche](https://docs.italia.it/italia/spid/spid-regole-tecniche/){:target="_blank" rel="noopener noreferrer"}
+* [Regole tecniche](https://docs.italia.it/italia/spid/spid-regole-tecniche/){:target="_blank" rel="noopener"}
 
 ### Asset e codice sorgente
 
-* [Bottone di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button){:target="_blank" rel="noopener noreferrer"}
+* [Bottone di accesso, con scelta dell'IdP integrata](https://github.com/italia/spid-sp-access-button){:target="_blank" rel="noopener"}
 
-* [Icone, loghi e asset grafici](https://github.com/italia/spid-graphics){:target="_blank" rel="noopener noreferrer"}
+* [Icone, loghi e asset grafici](https://github.com/italia/spid-graphics){:target="_blank" rel="noopener"}
 
-* [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout){:target="_blank" rel="noopener noreferrer"}
+* [Layout standard di IdP](https://github.com/italia/spid-idp-login-layout){:target="_blank" rel="noopener"}
 
-* [Playbook Ansible per SP](https://github.com/italia/spid-sp-playbook){:target="_blank" rel="noopener noreferrer"}
+* [Playbook Ansible per SP](https://github.com/italia/spid-sp-playbook){:target="_blank" rel="noopener"}

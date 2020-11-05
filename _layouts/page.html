@@ -5,77 +5,36 @@ layout: default
 {% include setlang.html %}
 
 {% comment %}
-
   {% include breadcrumbs.html %}
   {% include share.html %}
-
   {% assign subnav = site.data[page.subnav] %}
   {% include linklist.html items=subnav dynamic=true %}
-
 {% endcomment %}
 <div class="u-padding-top-xxl u-background-white"></div>
-<div class="u-padding-top-xxl u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-400" aria-hidden="true" style="{% include background-style.html %}">
-
-      <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
-
-        <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-           <div class="u-textCenter u-padding-bottom-xl ">
-          {% if page.categories %}
-              <div class="u-layoutCenter u-textCenter u-margin-all-xl">
-                <ul class="Category" >
-                {% for item in page.categories%}
-                  <li class="u-text-r-xxs u-color-white u-border-all-xxs  u-padding-all-xxs">
-                  {{item}}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-
-            {% if page.nodate != true %}
-            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">
-            {{ page.date | date: "%-d %b %Y" }}</time>
-            {% endif %}
-
-            <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">
-              {{ page.title }}</h1>
-
-            {% if page.subtitle %}
-            <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s"
-              style="max-width:24em">{{ page.subtitle }}</h2>
-            {% endif %}
-
-            <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-white u-margin-r-bottom"
-              style="max-width: 15em" />
-
-            {% if page.author %}
-              <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
-                <span itemprop="name" class="u-text-r-xs u-color-white">{{ t.by }} {{ page.author }}</span>
-              </div>
-            {% endif %}
-
-            {% if page.keywords %}
-              <div itemprop="keywords" class="u-layoutCenter u-textCenter u-margin-all-xl">
-                <ul class="Badges">
-                {% for item in page.keywords%}
-                  <li class="u-text-r-xxs u-background-white u-borderRadius-xl u-color-50 badge">
-                  {{item}}
-                  </li>
-                {% endfor %}
-                </ul>
-              </div>
-            {% endif %}
-
-            <div class="u-layoutCenter u-textCenter u-color-white u-margin-bottom-xxl">
-              {% include share.html %}
-            </div>
+<div class="u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-400" aria-hidden="true" style="{% include background-style.html %}">
+  <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
+    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+      <div class="u-textCenter u-padding-bottom-xl ">
+        {% if page.categories %}
+        <div class="u-layoutCenter u-textCenter u-margin-all-xl">
+          <ul class="Category">
+            {% for item in page.categories%}
+            <li class="u-text-r-xxs u-color-white u-border-all-xxs  u-padding-all-xxs">{{item}}</li>
+            {% endfor %}
+          </ul>
         </div>
-
-        </div><!-- /grid-cell-->
+        {% endif %}
+        {% if page.nodate != true %}
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">{{ page.date | date: "%-d %b %Y" }}</time>
+        {% endif %}
+        <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s" style="max-width:24em">{{ page.subtitle }}</h2>
+        {% endif %}
       </div>
-
+    </div>
   </div>
-
+</div>
 
 <div class="u-background-grey-15 u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
   <div class="Grid u-layout-wide u-layoutCenter">

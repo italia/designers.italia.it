@@ -1,53 +1,41 @@
 {% assign buttonEnabled = false %}
-{% assign files = page.download_file %}
 
-{% for bfile in files %}
-  {% if bfile.file != nil %}
+{% for download in download_file %}
+  {% if download.file != nil %}
     {% assign buttonEnabled = true %}
   {% endif %}
 {% endfor %}
 
-
 <div class="Download u-padding-bottom-xxl">
-    <div class="Download-wrapper">
-      <div class="Download-inner">
-
-      {% if buttonEnabled %}
-      <a  class="download-button--float Button  Button--shadow u-text-r-xs u-color-white" id="kitdownloadbutton"
-      href="#" title="scarica il kit">scarica il kit<span class="u-text-r-xxs Icon Icon-expand u-floatRight"></span></a>
-
+  <div class="Download-wrapper">
+    <div class="Download-inner">
+    {%- if buttonEnabled -%}
+      <a class="download-button--float Button Button--shadow u-text-r-xs u-color-white" id="kitdownloadbutton" href="#" title="scarica il kit">
+        scarica il kit<span class="u-text-r-xxs Icon Icon-expand u-floatRight"></span>
+      </a>
       <ul class="Download-list u-border-all-xs u-color-teal-60 u-padding-all-none u-hidden" id="kitdownloadlist">
-
-        {% for item in download_file %}
+        {%- for item in download_file -%}
           {% assign downloadUrl = item.file | relative_url %}
-    	    {% unless downloadUrl=='internal' %}
-    	      {% assign downloadUrl = item.file %}
-    	    {% endunless %}
-
-
+          {%- unless downloadUrl=='internal' -%}
+            {% assign downloadUrl = item.file %}
+          {%- endunless -%}
           <li class="u-padding-bottom-m u-padding-top-m u-padding-left-xs u-padding-right-xs u-textLeft u-color-teal-60 {% unless forloop.last %}u-border-bottom-xs{% endunless%}">
-            {% if downloadUrl %}
-            <a href="{{downloadUrl}}" class="u-color-teal-60 u-linkClean" target="_blank">{{item.caption}} 
-            	<span class="u-text-r-xs Icon Icon-arrow-right u-floatRight"></span>
+            {%- if downloadUrl -%}
+            <a href="{{downloadUrl}}" class="u-color-teal-60 u-linkClean" target="_blank" rel="noopener">{{item.caption}}
+              <span class="u-text-r-xs Icon Icon-arrow-right u-floatRight"></span>
             </a>
-            {% else %}
+            {%- else -%}
               <span class="u-color-grey-40 ">{{item.caption}}</span>
               <span class="u-color-grey-40 u-textPreformatted u-text-r-xxs">in lavorazione</span>
-
-            {% endif %}
+            {%- endif -%}
           </li>
-
-
-        {% endfor %}
-
+        {%- endfor -%}
       </ul>
-      {% else %}
-
-      <a  class="download-button--float Button  Button--shadow u-text-r-xs u-color-white" 
-      href="#kitsdownload" title="kit in lavorazione">kit in lavorazione<span class="u-text-r-xxs Icon Icon-expand u-floatRight"></span></a>
-
-      {% endif %}
-
-      </div>
+    {%- else -%}
+      <a class="download-button--float Button  Button--shadow u-text-r-xs u-color-white" href="#kitsdownload" title="kit in lavorazione">
+        kit in lavorazione<span class="u-text-r-xxs Icon Icon-expand u-floatRight"></span>
+      </a>
+    {%- endif -%}
     </div>
   </div>
+</div>

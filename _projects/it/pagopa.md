@@ -27,7 +27,7 @@ In particolare l’evoluzione più importante riguarda la **UI (User Interface)*
 
 Per sapere di più sul progetto pagoPA, visita il sito ufficiale:
 
-[pagopa.gov.it](https://www.pagopa.gov.it/ "Sito ufficiale di pagoPA")
+[pagopa.gov.it](https://www.pagopa.gov.it/ "Sito ufficiale di pagoPA"){:target="_blank" rel="noopener noreferrer"}
 
 ### Il ruolo di Designers Italia
 
@@ -37,4 +37,4 @@ Su pagoPA la community di Designers Italia ha lavorato:
 
 ![Rebranding pagoPA](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
 
-* Alla revisione dell’[**esperienza utente**](http://www.youtube.com/watch?v=ZdzAVMQlAYM "Video di presentazione della UX di pagoPA")
+* Alla revisione dell’[**esperienza utente**](http://www.youtube.com/watch?v=ZdzAVMQlAYM "Video di presentazione della UX di pagoPA"){:target="_blank" rel="noopener noreferrer"}
