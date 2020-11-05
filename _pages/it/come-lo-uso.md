@@ -9,35 +9,35 @@ blocks:
   button:
   - label: UI Kit
     url: '/kit/ui-kit'
-  - label: Web development kit
+  - label: Web development Kit
     url: '/kit/web-development-kit'
 - title: Vuoi organizzare l’avvio di un progetto nel migliore dei modi?
   subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
   img: /assets/images/kits/placeholders/03_ResearchPlan_Placeholder.png
   button:
-  - label: kit co-design workshop
+  - label: Kit co-design workshop
     url: '/kit/co-design-workshop'
-  - label: linee guida user research
+  - label: Linee Guida user research
     url: 'https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research.html'
 - title: Vuoi migliorare l’usabilità del tuo sito o della tua applicazione?
   subtitle: Osserva quali problemi incontrano gli utenti durante l’utilizzo e individua le criticità più importanti da risolvere.
   img: /assets/images/kits/placeholders/07_UsabilityTest.png
   button:
-  - label: kit usability test
+  - label: Kit usability test
     url: '/kit/usability-test'
 - title: Vuoi una visione chiara degli utenti del tuo servizio?
   subtitle: Crea dei profili che descrivono le diverse tipologie di utenti di un servizio, raccontando le loro motivazioni, aspettative, bisogni e attitudini.
   img: /assets/images/kits/placeholders/02_Personas.png
   button:
-  - label: kit personas
+  - label: Kit personas
     url: '/kit/personas'
-  - label: kit user stories
+  - label: Kit user stories
     url: '/kit/user-stories'
 - title: Vuoi un sistema rapido ed efficace di Web Analytics?
   subtitle: Leggi le linee guida di Web Analytics o i casi d’uso su Piwik che abbiamo raccontato sul blog.
   img: /assets/images/kits/placeholders/08_WebAnalytics_Placeholder.png
   button:
-  - label: kit Web Analytics
+  - label: Kit Web Analytics
     url: '/kit/analytics'
 
 ---

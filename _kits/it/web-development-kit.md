@@ -1,5 +1,5 @@
 ---
-title: Web development kit
+title: Web development Kit
 lang: it
 layout: download
 description: Costruisci siti, applicazioni e servizi web in assoluta semplicità
@@ -56,12 +56,12 @@ carousel:
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZANO
-I Web development kit forniscono **componenti open-source** pronti per l’uso. L'utilizzo di ogni kit prevede competenze di base di sviluppo web ed è corredato da una documentazione tecnica completa e dettagliata per l’utilizzo e la personalizzazione dei componenti. Sono presenti all’interno dei kit anche **pagine HTML** di esempio che possono essere utilizzate come punto di partenza per lo sviluppo della propria applicazione web.
+I Web development Kit forniscono **componenti open-source** pronti per l’uso. L'utilizzo di ogni kit prevede competenze di base di sviluppo web ed è corredato da una documentazione tecnica completa e dettagliata per l’utilizzo e la personalizzazione dei componenti. Sono presenti all’interno dei kit anche **pagine HTML** di esempio che possono essere utilizzate come punto di partenza per lo sviluppo della propria applicazione web.
 
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### A COSA SERVONO
-I Web development kit **indicano e assicurano** una realizzazione conforme alle Linee Guida di design per i servizi web delle Pubbliche Amministrazioni. Offrono supporto per utenti con disabilità, oltre a fornire degli ausili per la rapida **prototipazione** di pagine web in modo da poter coinvolgere gli utenti fin dalle prime fasi di progettazione.
+I Web development Kit **indicano e assicurano** una realizzazione conforme alle Linee Guida di design per i servizi web delle Pubbliche Amministrazioni. Offrono supporto per utenti con disabilità, oltre a fornire degli ausili per la rapida **prototipazione** di pagine web in modo da poter coinvolgere gli utenti fin dalle prime fasi di progettazione.
 
 
 {:.u-color-50 .u-margin-top-xxl}

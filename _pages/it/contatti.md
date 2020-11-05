@@ -15,7 +15,7 @@ Designers Italia è punto di incontro tra professionisti del design e mondo dell
 
 {% comment %}
 ## Social media
-Puoi trovarci su [Behance](https://www.behance.net/italia), [Github](https://github.com/italia/designers.italia.it), [Twitter](https://twitter.com/designersita) e [Medium](https://medium.com/designers-italia).
+Puoi trovarci su [Behance](https://www.behance.net/italia), [Github](https://github.com/italia/), [Twitter](https://twitter.com/designersita) e [Medium](https://medium.com/designers-italia).
 
 <a class="twitter-timeline" data-height="460" data-lang="it" data-dnt="true" data-link-color="#0066cc" href="https://twitter.com/DesignersITA?ref_src=twsrc%5Etfw">Tweets di DesignersITA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
