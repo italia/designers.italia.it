@@ -180,7 +180,7 @@ Maggio 2017
 
 ### Siti tematici
 
-#### [Direzione Generale dei musei](http://musei.beniculturali.it){:target="_blank" rel="noopener noreferrer"}
+#### [Direzione Generale dei musei](http://musei.beniculturali.it/){:target="_blank" rel="noopener noreferrer"}
 
 Maggio 2016
 
@@ -204,7 +204,7 @@ Maggio 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image13.png" class="lazyload" alt="Opencantieri - sito" data-proofer-ignore />
 </div>
 
-#### [Dichiarazione Precompilata 730, Agenzia delle Entrate](https://infoprecompilata.agenziaentrate.gov.it){:target="_blank" rel="noopener noreferrer"}
+#### [Dichiarazione Precompilata 730, Agenzia delle Entrate](https://infoprecompilata.agenziaentrate.gov.it/portale/){:target="_blank" rel="noopener noreferrer"}
 
 Aprile 2016
 
@@ -215,7 +215,7 @@ Aprile 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image14.png" class="lazyload" alt="Dichiarazione Precompilata 730 - sito" data-proofer-ignore />
 </div>
 
-#### [Piano Strategico Banda Ultralarga](http://bandaultralarga.italia.it){:target="_blank" rel="noopener noreferrer"}
+#### [Piano Strategico Banda Ultralarga](https://bandaultralarga.italia.it/){:target="_blank" rel="noopener noreferrer"}
 
 Giugno 2016
 
@@ -226,7 +226,7 @@ Giugno 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image15.png" class="lazyload" alt="Piano Strategico Banda Ultralarga - sito" data-proofer-ignore />
 </div>
 
-#### [EcoSportello Comune di Alessano](http://ambiente.alessano.info){:target="_blank" rel="noopener noreferrer"}
+#### [EcoSportello Comune di Alessano](https://ambiente.alessano.info/){:target="_blank" rel="noopener noreferrer"}
 
 Giugno 2017
 

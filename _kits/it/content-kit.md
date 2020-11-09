@@ -51,11 +51,11 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_01.jpg'
-  label:
+  label: Kit content carosello slide 1
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_02.jpg'
-  label:
+  label: Kit content carosello slide 2
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_03.jpg'
-  label:
+  label: Kit content carosello slide 3
 ---
 
 {:.u-color-50}

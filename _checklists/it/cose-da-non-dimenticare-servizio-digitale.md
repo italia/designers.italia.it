@@ -12,17 +12,17 @@ redirect_from:
 
 Le amministrazioni pubbliche devono fornire servizi personalizzati e intuitivi in linea con le esigenze e le necessità di cittadini e imprese.
 
-### Metti la tecnologia al servizio delle persone  
+### Metti la tecnologia al servizio delle persone
 {:data-checklist="1"}
 
-![]({{'/assets/images/checklists/service-design-1.jpg' | relative_url }})
+![service design]({{'/assets/images/checklists/service-design-1.jpg' | relative_url }})
 
 Progetta servizi concreti, crea un rapporto di fiducia tra cittadino e Pubblica Amministrazione. Il design è punto di incontro tra tecnologie e persone: semplifica e sottrai ogni volta che puoi, riduci la complessità e concentrati sui bisogni effettivi degli utenti.
 
 ### Coinvolgi i cittadini e comprendi i loro effettivi bisogni
 {:data-checklist="2"}
 
-![]({{'/assets/images/checklists/service-design-2.jpg' | relative_url }})
+![service design]({{'/assets/images/checklists/service-design-2.jpg' | relative_url }})
 
 Le esigenze del cittadino devono essere poste al centro della progettazione di un servizio, in tutte le sue fasi di sviluppo.
 
@@ -65,7 +65,7 @@ Progetta partendo da prototipi. Rilascia una prima versione e gradualmente attiv
 ### Valuta e monitora
 {:data-checklist="10"}
 
-![]({{'/assets/images/checklists/service-design-3.jpg' | relative_url }})
+![service design]({{'/assets/images/checklists/service-design-3.jpg' | relative_url }})
 
 I servizi devono essere monitorati continuamente attraverso l’utilizzo di strumenti automatici di analisi e/o il rilascio di dati aperti.
 

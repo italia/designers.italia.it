@@ -8,7 +8,7 @@
 <div class="Grid Grid--withGutter u-padding-all-l guides-grid">
 {% for main in family %}
 	<div class="Grid-cell u-md-size1of{{numfamily}} u-lg-size1of{{numfamily}}">
-	<img src="{{main.img | relative_url}}" class="guides-grid__img" >
+	<img src="{{main.img | relative_url}}" class="guides-grid__img" alt="icona linee guida">
 	<span class="{{headingClass}}"><a class="u-color-grey-50 u-linkClean" href="{{main.url}}">{{main.desc}}</a></span>
 		<div class="u-sizeFull u-margin-top-xl">
 		{% assign items = guides | where_exp:"item","item.parent == main.desc" %}

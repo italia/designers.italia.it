@@ -29,9 +29,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/14_WireframeKit_Slide_01.jpg'
-  label:
+  label: Wireframe Kit carosello slide 1
 - img: '/assets/images/kits/carousel/14_WireframeKit_Slide_02.jpg'
-  label:
+  label: Wireframe Kit carosello slide 2
 ---
 
 {:.u-color-50}

@@ -29,7 +29,7 @@
           <article class="Grid Grid--fill u-background-white u-flexDirectionCol u-md-flexDirectionRow u-lg-flexDirectionRow">
             <figure class="Grid-cell u-sizeFull u-md-size2of3 u-lg-size2of3 u-padding-all-xs ">
               <img class="u-sizeFull"
-                   src="https://cdn-images-1.medium.com/fit/t/768/480/{{ post.medium_preview_image_id }}" alt="">
+                   src="https://cdn-images-1.medium.com/fit/t/768/480/{{ post.medium_preview_image_id }}" alt="{{post.medium_title}}">
             </figure>
             <header class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-padding-all-l">
               <h1 class="u-text-h4">
@@ -50,8 +50,8 @@
 		      		<figure class="u-sizeFull u-padding-all-xs ">
 		      			<a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
                   {% if post.medium_preview_image_id %}
-                  <img class="u-sizeFull u-hidden u-md-block u-lg-block" src="https://cdn-images-1.medium.com/fit/t/400/400/{{ post.medium_preview_image_id }}" alt="">
-                  <img class="u-sizeFull u-md-hidden u-lg-hidden" src="https://cdn-images-1.medium.com/fit/t/600/200/{{ post.medium_preview_image_id }}" alt="">
+                  <img class="u-sizeFull u-hidden u-md-block u-lg-block" src="https://cdn-images-1.medium.com/fit/t/400/400/{{ post.medium_preview_image_id }}" alt="{{post.medium_title}}">
+                  <img class="u-sizeFull u-md-hidden u-lg-hidden" src="https://cdn-images-1.medium.com/fit/t/600/200/{{ post.medium_preview_image_id }}" alt="{{post.medium_title}}">
                   {% endif %}
     					</a>
   					</figure>

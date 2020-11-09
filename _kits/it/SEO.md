@@ -26,9 +26,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/13_SEO_Slide_01.jpg'
-  label:
+  label: Kit SEO carosello slide 1
 - img: '/assets/images/kits/carousel/13_SEO_Slide_02.jpg'
-  label:
+  label: Kit SEO carosello slide 1
 ---
 
 {:.u-color-50}

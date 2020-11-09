@@ -2,7 +2,7 @@
 title: Servizi digitali a misura di cittadino, le domande giuste da farsi
 lang: it
 layout: post
-subtitle: 
+subtitle:
 nodate: true
 pretitle: 'User research / Check-list'
 image: /assets/images/checklists/cittadino-1.jpg
@@ -13,7 +13,7 @@ redirect_from:
 
 Capire cosa serve davvero ai cittadini è fondamentale per avere ben chiare le priorità e progettare servizi digitali efficaci.
 
-![]({{'/assets/images/checklists/cittadino-1.jpg' | relative_url }})
+![cittadino]({{'/assets/images/checklists/cittadino-1.jpg' | relative_url }})
 
 Lo *human-centered design* è un approccio attraverso il quale si punta a sviluppare delle soluzioni (prodotti o servizi) incentrate sulle esigenze e i bisogni delle persone.  Il fruitore del servizio non è più inteso esclusivamente come utente finale ma in maniera più generale come persona che porta con sé tutto un proprio personale vissuto. Quello che cambia è anche l’output del processo: non si parla più solo di prodotto/servizio finale, ma della progettazione dell’esperienza totale dell’utente che fruisce di quel prodotto/servizio. Questo approccio risulta adeguato al mondo della Pubblica Amministrazione, perché consente di considerare in modo corretto la fruizione di un servizio come un’esperienza di cittadinanza ed è molto utile, se seguito con pragmatismo e consapevolezza, **per capire le vere priorità e concentrare su di essere l’attività di progettazione**.
 
@@ -22,7 +22,7 @@ Vuoi essere sicuro di progettare servizi “human-centered” ? Ecco le domande 
 ### Chi sono i tuoi utenti ?
 {:data-checklist="1"}
 
-![]({{'/assets/images/checklists/cittadino-2.jpg' | relative_url }})
+![cittadino]({{'/assets/images/checklists/cittadino-2.jpg' | relative_url }})
 
 - “Sai chi sono i tuoi utenti?”
 - “Hai chiare le loro capacità e i loro bisogni ?”
@@ -41,7 +41,7 @@ Oltre ad una comprensione approfondita dei bisogni del cittadino, è importante 
 ### Su cosa punta il tuo servizio ?
 {:data-checklist="2"}
 
-![]({{'/assets/images/checklists/cittadino-3.jpg' | relative_url }})
+![cittadino]({{'/assets/images/checklists/cittadino-3.jpg' | relative_url }})
 
 - “In che modo, con quali requisiti e funzionalità, il servizio ideato può rispondere ai bisogni degli utenti?”
 - “In quanti altri modi -possibili e impossibili- il servizio potrebbe rispondere agli stessi bisogni?”
@@ -60,7 +60,7 @@ Una volta individuata la soluzione o ristretto il campo delle possibilità ad al
 ### Che ne pensano i cittadini ?
 {:data-checklist="3"}
 
-![]({{'/assets/images/checklists/cittadino-4.jpg' | relative_url }})
+![cittadino]({{'/assets/images/checklists/cittadino-4.jpg' | relative_url }})
 
 - “Hai testato la soluzione con gli utenti finali ?”
 - “Quali tecniche di valutazione utilizzerai ?”

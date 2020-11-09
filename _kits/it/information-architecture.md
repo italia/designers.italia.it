@@ -7,7 +7,7 @@ backgroundImage : '/assets/images/kits/backgrounds/15_InformationArchitecture_Ba
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: ideare
-tags: 
+tags:
 - navigation-tree
 - information-architecture
 - human-centered-design
@@ -17,22 +17,22 @@ guidelines:
 - "Architettura dell'informazione"
 
 download_file :
-- file : 
+- file :
   caption : 'Navigation Tree'
   type : 'internal'
-- file : 
+- file :
   caption : 'X-mind'
   type : 'internal'
-- file : 
+- file :
   caption : 'Card sorting (Trello)'
   type : 'internal'
-- file : 
+- file :
   caption : 'Esercizio sulle mappe concettuali'
   type : 'internal'
 
 carousel:
 - img: '/assets/images/kits/placeholders/15_InformationArchitecture_Placeholder.png'
-  label:
+  label: Kit IA carosello slide 1
 ---
 
 {:.u-color-50}
@@ -41,11 +41,11 @@ carousel:
 {:.u-color-50 .u-margin-bottom-xxl}
 #### L’architettura dell’informazione è la struttura che **organizza e classifica i contenuti** in un ambiente: permette all’utente di orientarsi con chiarezza, e di raggiungere le informazioni e i servizi di cui ha bisogno in modo efficiente.
 
-{% include simplecarousel.html  %} 
+{% include simplecarousel.html  %}
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
-L’architettura dell’informazione parte dai risultati della ricerca sugli utenti e dalle necessità degli stakeholder. Sulla base di questi individua obiettivi e funzioni principali del prodotto o servizio, cataloga l’inventario dei contenuti definendone i tipi e definisce le relazioni che intercorrono tra loro.  
+L’architettura dell’informazione parte dai risultati della ricerca sugli utenti e dalle necessità degli stakeholder. Sulla base di questi individua obiettivi e funzioni principali del prodotto o servizio, cataloga l’inventario dei contenuti definendone i tipi e definisce le relazioni che intercorrono tra loro.
 
 
 

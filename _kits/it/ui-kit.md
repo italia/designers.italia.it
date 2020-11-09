@@ -7,7 +7,7 @@ backgroundImage : '/assets/images/kits/backgrounds/10_UIKit_Background.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: fare
-tags: 
+tags:
 - user experience
 - ui kit
 - usability
@@ -26,11 +26,11 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_01.jpg'
-  label:
+  label: UI Kit carosello slide 1
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_02.jpg'
-  label:
+  label: UI Kit carosello slide 2
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_03.jpg'
-  label:
+  label: UI Kit carosello slide 3
 ---
 
 {:.u-color-50}
@@ -38,7 +38,7 @@ carousel:
 
 {:.u-color-50 .u-margin-bottom-xxl}
 #### Lo UI Kit è un set di componenti visive già pronte per assemblare l’interfaccia di un sito o di un app, seguendo le linee guida per i servizi digitali della Pubblica Amministrazione.
-{% include simplecarousel.html  %} 
+{% include simplecarousel.html  %}
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
@@ -51,4 +51,4 @@ Serve a progettare nei dettagli l’interfaccia sia dal punto di vista visuale s
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-Il kit contiene **i file di Sketch** (grid system, colors, typography, buttons…) da cui partire per la progettazione dell’interfaccia e una libreria di icone. 
+Il kit contiene **i file di Sketch** (grid system, colors, typography, buttons…) da cui partire per la progettazione dell’interfaccia e una libreria di icone.
