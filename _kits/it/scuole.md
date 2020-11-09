@@ -6,7 +6,7 @@ description: "Design del sito di una Scuola: architettura dell’informazione e 
 backgroundImage: "/assets/images/kits/backgrounds/17_Scuole_Background.png"
 backgroundColor: "#439af1"
 nodate: true
-kitcategory: "Kit per le Scuole"
+kitcategory: scuole
 tags:
   - web-development
   - information-architecture

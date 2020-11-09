@@ -45,7 +45,8 @@ layout: default
           <li class="Grid-cell Grid-cell u-sizeFull u-sm-size1of6 u-md-size1of6 u-lg-size1of6 u-margin-bottom-xs " >
             <a href="#" class="u-text-r-m u-textUppercase u-textWeight-700 u-linkClean u-color-50 active" data-selectorclass="all">Tutti</a>
           </li>
-          {%- for category in kit_categories -%}
+          {% assign categories = "capire, ideare, fare, comuni, scuole" | split: ", " %}
+          {%- for category in categories -%}
           <li class="Grid-cell u-sizeFull u-sm-size1of6 u-md-size1of6 u-lg-size1of6 u-textCenter u-margin-bottom-xs">
             <a href="#" class="u-text-r-m u-textUppercase u-textWeight-700 u-linkClean u-color-50" data-selectorclass="{{ category | slugify }}">{{ category }}</a>
           </li>
@@ -55,8 +56,8 @@ layout: default
         <h2 class="u-text-r-m u-textCenter u-textWeight-400 u-color-50  u-textWeight-600 u-margin-top-xl categorykits-desc fare hidden">I kit utili per costruire la nuova esperienza d’uso del servizio digitale e lavorare in team.</h2>
         <h2 class="u-text-r-m u-textCenter u-textWeight-400 u-color-50  u-textWeight-600 u-margin-top-xl categorykits-desc ideare hidden">I kit utili per definire il nuovo concept di servizio e i requisiti per la sua progettazione. </h2>
         <h2 class="u-text-r-m u-textCenter u-textWeight-400 u-color-50  u-textWeight-600 u-margin-top-xl categorykits-desc capire hidden">I kit utili per l’analisi dell’attuale esperienza d’uso di un servizio e del sistema di attori coinvolti.</h2>
-        <h2 class="u-text-r-m u-textCenter u-textWeight-400 u-color-50  u-textWeight-600 u-margin-top-xl categorykits-desc kit-per-i-comuni hidden">Il kit dedicato al design del sito di un Comune.</h2>
-        <h2 class="u-text-r-m u-textCenter u-textWeight-400 u-color-50  u-textWeight-600 u-margin-top-xl categorykits-desc kit-per-le-scuole hidden">Il kit dedicato al design del sito di una Scuola.</h2>
+        <h2 class="u-text-r-m u-textCenter u-textWeight-400 u-color-50  u-textWeight-600 u-margin-top-xl categorykits-desc comuni hidden">Il kit dedicato alla realizzazione del sito web di un comune.</h2>
+        <h2 class="u-text-r-m u-textCenter u-textWeight-400 u-color-50  u-textWeight-600 u-margin-top-xl categorykits-desc scuole hidden">Il kit dedicato alla realizzazione del sito web di una scuola.</h2>
       </div>
       <hr class="u-border-left-none u-border-right-none u-border-bottom-xs u-border-top-none u-color-grey-30 u-margin-r-bottom u-margin-top-xxl" />
       <div class="u-margin-top-xl  u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">

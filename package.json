@@ -18,7 +18,7 @@
     "italia"
   ],
   "scripts": {
-    "test": "bundle exec htmlproofer ./_site  --check-html --allow-hash-href --http-status-ignore \"999\"",
+    "test": "bundle exec htmlproofer ./_site  --check-html --allow-hash-href --disable-external --http-status-ignore \"999\"",
     "build": "gulp build",
     "deploy": "gulp publish-production"
   },

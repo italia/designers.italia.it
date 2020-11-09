@@ -10,9 +10,6 @@ backgroundColor: 'rgba(90, 178, 255, .5)'
 backgroundPositionY: 'center'
 ---
 
-## Intro
-Designers Italia è punto di incontro tra professionisti del design e mondo della Pubblica Amministrazione. Il progetto è stato ideato dal **Team per la Trasformazione Digitale**, in collaborazione con l'**Agenzia per Italia Digitale**.
-
 {% comment %}
 ## Social media
 Puoi trovarci su [Behance](https://www.behance.net/italia){:target="_blank" rel="noopener noreferrer"}, [Github](https://github.com/italia/){:target="_blank" rel="noopener noreferrer"}, [Twitter](https://twitter.com/designersita){:target="_blank" rel="noopener noreferrer"} e [Medium](https://medium.com/designers-italia){:target="_blank" rel="noopener noreferrer"}.
