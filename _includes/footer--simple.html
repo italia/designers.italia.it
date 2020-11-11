@@ -5,7 +5,7 @@
     <div class="Grid-cell u-sm-size6of12 u-md-size3of12 u-lg-size3of12 u-padding-r-bottom">
       <div>
         <a href="{{ site.owner_link }}" target="_blank" rel="noopener" class="u-linkClean">
-          <img class="u-inline logo-agid" src="{{ site.owner_logo | relative_url }}" alt="Logo {{ site.owner_full }}">
+          <img class="u-inline logo" src="{{ site.owner_logo | relative_url }}" alt="Logo {{ site.owner_full }}">
         </a>
       </div>
     </div>
@@ -13,37 +13,39 @@
     <div class="Grid-cell u-sm-size6of12 u-md-size3of12 u-lg-size3of12 u-padding-r-bottom">
       <div class="Aligner-item">
         <a href="{{ site.partner_link }}" target="_blank" rel="noopener" class="u-linkClean">
-          <img class="u-inline logo-mid" src="{{ site.partner_logo | relative_url }}" alt="Logo {{ site.partner_full }}">
+          <img class="u-inline logo" src="{{ site.partner_logo | relative_url }}" alt="Logo {{ site.partner_full }}">
         </a>
       </div>
     </div>
     {% comment %} Social {% endcomment %}
     <div class="Grid-cell u-md-size6of12 u-lg-size6of12 u-padding-r-bottom u-padding-top-xs u-text-sm-center u-text-md-right u-text-lg-right">
-      <ul class="Footer-socialIcons">
-        {% for social in site.data.social %}
-          {% if social[1].link %}
-            <li><a href="{{ social[1].link }}" title="{{ social[1].name }}"><span class="Icon-{{ social[0] }}"></span>
-              <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a></li>
-          {% endif %}
-        {% endfor %}
+      <span>Community:</span>
+      <ul class="social-icons u-flexInline">
+        <li><a target="_blank" rel="noopener" href="https://forum.italia.it/c/design">Forum</a></li>
+        <li><a target="_blank" rel="noopener" href="https://slack.developers.italia.it/">Slack</a></li>
+        <li><a target="_blank" rel="noopener" href="https://github.com/italia/" >GitHub</a></li>
+        <li><a target="_blank" rel="noopener" href="https://docs.italia.it/">Docs</a></li>
       </ul>
+      <br/>
+      <span>Info:</span>
+      <a href="mailto:contatti@designers.italia.it">contatti@designers.italia.it</a>
     </div>
   </div>
   {% comment %} PON {% endcomment %}
   <div class="Grid u-background-white">
-    <div class="Grid-cell u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
+    <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
       <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.eu_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt="Logo dell'Unione Europea"
         style="height: 4em; max-width: 100%">
     </div>
-    <div class="Grid-cell u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
+    <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
       <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.act_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt="Logo dell'agenzia coesione territoriale"
         style="height: 4em; max-width: 100%">
     </div>
-    <div class="Grid-cell u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
+    <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
       <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.funzione_pubblica_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt="Logo del dipartimento della funzione pubblica"
         style="height: 4em; max-width: 100%">
     </div>
-    <div class="Grid-cell u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
+    <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
       <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.pon_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt="Logo del PON"
         style="height: 4em; max-width: 100%">
     </div>

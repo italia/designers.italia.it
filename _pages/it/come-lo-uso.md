@@ -1,7 +1,7 @@
 ---
 title: Come lo uso
 lang: it
-layout: megablocks2
+layout: come-lo-uso
 blocks:
 - title: Vuoi utilizzare risorse e template già pronti per costruire il tuo servizio?
   subtitle: Scarica gli elementi grafici predefiniti per risparmiare tempo e arrivare facilmente ad un insieme di schermate coerenti.

@@ -1,10 +1,10 @@
 <div class="u-nbfc u-flexWrap u-flex u-color-grey-30 u-xs-padding-all-none
-  {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %}
+  {% if include.flat != true %}u-borderShadow-xxs u-xs-borderShadow-none u-borderRadius-m{% endif %}
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
   {% comment %}
   {% if include.hasImage != false and include.image %}
   <div class="u-sizeFull">
-    <a class="" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ include.link }}">
+    <a {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ include.link }}">
     <img src="{{ include.image | default: //placehold.it/400x220 }}" class="u-sizeFull" alt="{{ include.alt }}" style="border-bottom: 0.3em solid #06c" />
     </a>
   </div>
@@ -58,9 +58,9 @@
       {% if include.flat != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
 
         {% if include.hasMore != false %}
-        <p class="Grid-cell u-layout-centerLeft u-flexAlignItemsCenter u-padding-r-bottom">
-          <a href="{{ include.link }}" {% if include.target == '_blank' %}target="_blank"{% endif %} class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">{{ t.home_projects_expand
-          }}&nbsp;<span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-alignBottom"></span>
+        <p class="Grid-cell {% if include.hasSocial != false %}u-layout-centerLeft {% endif %} u-flexAlignItemsCenter u-padding-r-bottom">
+          <a href="{{ include.link }}" {% if include.target == '_blank' %}target="_blank"{% endif %} class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">
+          {{ include.link_text | default: t.home_projects_expand }} <span class="Icon Icon-chevron-right u-margin-left-xxs u-text-xxs u-alignBottom"></span>
           </a>
         </p>
         {% endif %}

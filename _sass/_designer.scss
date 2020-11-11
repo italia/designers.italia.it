@@ -141,7 +141,7 @@
 
 /** HOME
 ========================= */
-.blk8 {
+.block-design-kit {
   background-color: #fafafa;
   background-image: url(/assets/images/blk8/hp-kits-bkg.svg);
   background-repeat: no-repeat;
@@ -854,13 +854,17 @@ body.layout-download {
 
 /* Footer */
 .Footer {
-  .logo-agid {
+  .logo {
     height: 5rem;
     max-width: 100%;
   }
-  .logo-mid {
-    height: 12rem;
-    max-width: 100%;
+  .social-icons {
+    li {
+      margin: 0;
+      &:not(:last-child):after {
+        content: " / ";
+      }
+    }
   }
 }
 

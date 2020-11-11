@@ -1,7 +1,7 @@
 ---
 title: Come partecipo
 lang: it
-layout: megablocks
+layout: come-partecipo
 blocks:
 - title: Partecipa alla vita del forum
   subtitle: Sul forum di Designers Italia puoi fare proposte, avanzare <a href="https://forum.italia.it/c/design/feedback-community">idee e suggerimenti</a>, segnalare best practice o <a href="https://forum.italia.it/c/design/esempi-linee-guida">esempi di applicazione</a> delle linee guida, discutere i temi legati al <b>service design</b>, al <b>content design</b>, alla <b>user interface</b> e alla <b>user research</b>.
