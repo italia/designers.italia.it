@@ -1,44 +1,24 @@
-
 <header class="Header u-hiddenPrint">
   <div class="Header-banner u-background-50">
     <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
-
       <div>
-
         <div class="u-md-hidden u-lg-hidden u-border-right-xxs u-margin-right-xs u-padding-right-xs u-inlineBlock u-alignMiddle">
-          <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network"
-            aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">
-              {% include slim_icon.html %}
-          </a>
+          <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network" aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">{% include slim_icon.html %}</a>
         </div>
-
-        <a href="{{ site.owner_link }}" target="_blank" rel="noopener" class="u-color-white u-text-r-xxs u-linkClean u-textWeight-600">
-          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
-              {{ site.owner_short }}
-            </span>
-          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
-              {{ site.owner_short }}
-            </span>
+        <a href="{{ site.owner_link }}" target="_blank" rel="noopener" class="u-color-white u-linkClean">
+          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">{{ site.owner_short }}</span>
+          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">{{ site.owner_full }}</span>
         </a>
-
         <span class="u-color-white u-padding-left-xxs u-padding-right-xxs">+</span>
-
-        <a href="{{ site.partner_link }}" target="_blank" rel="noopener" class="u-color-white u-text-r-xxs u-linkClean u-textWeight-600">
-          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
-              {{ site.partner_short }}
-            </span>
-          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
-              {{ site.partner_short }}
-            </span>
+        <a href="{{ site.partner_link }}" target="_blank" rel="noopener" class="u-color-white u-linkClean">
+          <span class="u-inline u-lg-hidden">{{ site.partner_short }}</span>
+          <span class="u-hidden u-lg-inline">{{ site.partner_full }}</span>
         </a>
       </div>
-
       {% comment %} {% include lang_switch.html %} {% endcomment %}
-
       <div class="u-hidden u-md-block u-lg-block">
         {% include slim_header.html %}
       </div>
-
     </div>
   </div>
   {% comment %}{% include header-english.html %}{% endcomment %}
@@ -53,15 +33,14 @@
           </svg>
         </a>
       </div>
-
       <div class="Header-title Grid-cell">
         <h1 class="Header-titleLink">
           <a href="{{ '/' | relative_url }}" class="u-color-50">{{ t.site_title | default: site.title | escape }}
-            {% if site.pill %}
+            {%- if site.pill -%}
               <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
-              <span class="u-color-20 u-text-xxs
-              u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>{%
-                endif %}<br><small class="u-color-grey-50">{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
+              <span class="u-color-20 u-text-xxs u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>
+            {%- endif - %}
+            <br><small class="u-color-grey-50">{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
         </h1>
       </div>
 

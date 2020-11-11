@@ -21,13 +21,13 @@ blocks:
     url: 'https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research.html'
 - title: Vuoi migliorare l’usabilità del tuo sito o della tua applicazione?
   subtitle: Osserva quali problemi incontrano gli utenti durante l’utilizzo e individua le criticità più importanti da risolvere.
-  img: /assets/images/kits/placeholders/07_UsabilityTest.png
+  img: /assets/images/kits/placeholders/07_UsabilityTest_Placeholder.png
   button:
   - label: Kit usability test
     url: '/kit/usability-test'
 - title: Vuoi una visione chiara degli utenti del tuo servizio?
   subtitle: Crea dei profili che descrivono le diverse tipologie di utenti di un servizio, raccontando le loro motivazioni, aspettative, bisogni e attitudini.
-  img: /assets/images/kits/placeholders/02_Personas.png
+  img: /assets/images/kits/placeholders/01_Personas_Placeholder.png
   button:
   - label: Kit personas
     url: '/kit/personas'
