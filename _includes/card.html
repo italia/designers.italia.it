@@ -14,7 +14,7 @@
 
     {% if include.date %}
     <time datetime="{{ include.date | date_to_xmlschema }}"
-      class="{% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-50">
+      class="{% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-ui-kit">
         {{ include.date | date: "%b %-d, %Y" }}
       </time>
     {% endif %}

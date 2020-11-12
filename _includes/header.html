@@ -39,7 +39,7 @@
             <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
             <span class="u-color-20 u-text-xxs u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>
             {%- endif - %}<br>
-            <small class="u-color-grey-50">{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
+            <small class="u-color-grey-ui-kit">{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
         </h1>
       </div>
 
@@ -54,7 +54,7 @@
 
       <div class="Header-utils Grid-cell">
         <div class="Header-social Headroom-hideme">
-          <span class="u-color-grey-50 u-text-r-xxs">{{ t.follow_us | capitalize }}</span>
+          <span class="u-color-grey-ui-kit u-text-r-xxs">{{ t.follow_us | capitalize }}</span>
           <ul class="Header-socialIcons">
             {%- for social in site.data.social -%}
             {%- if social[1].link -%}
@@ -96,7 +96,7 @@
   <div class="u-layout-wide u-layoutCenter Grid u-background-white u-hidden u-sm-hidden u-md-flex u-lg-flex">
     <div class="Grid-cell u-color-grey-30 u-border-bottom-xxs u-md-size7of12 u-lg-size7of12 u-padding-bottom-xs Header-PinWheel-Stick">
       <div class="u-background-white">
-        <p class="u-padding-left-xl u-text-r-xxs u-color-grey-50" style="letter-spacing: 0.02em">{{ t.main_menu_label }}</p>
+        <p class="u-padding-left-xl u-text-r-xxs u-color-grey-ui-kit" style="letter-spacing: 0.02em">{{ t.main_menu_label }}</p>
       </div>
       <svg height="8" width="8" style="position: absolute; right: -4px; bottom: -4px">
         <circle cx="4" cy="4" r="1" stroke="#06c" stroke-width="4" fill="#06c"></circle>

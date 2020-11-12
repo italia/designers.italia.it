@@ -14,7 +14,8 @@ tags:
 - service design
 
 guidelines:
-- "User interface"
+- Stile
+- Componenti
 
 download_file :
 - file : 'https://github.com/italia/design-ui-kit'
