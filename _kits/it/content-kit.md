@@ -15,7 +15,7 @@ tags:
 
 guidelines:
 - Linguaggio
-- 'User interface'
+- Content design
 
 download_file :
 - file : 'https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing'

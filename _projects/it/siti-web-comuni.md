@@ -1,8 +1,8 @@
 ---
-title: Siti web dei Comuni
-description: Modello di sito web per i Comuni italiani, costruito utilizzando il design system di Designers Italia.
-#subtitle: Modello di sito web per i Comuni italiani, costruito utilizzando il design system di Designers Italia
-#payoff: Il punto di riferimento per il design dei siti web dei Comuni
+title: Siti web dei comuni
+description: Modello di sito web per i comuni italiani, costruito utilizzando il design system di Designers Italia.
+#subtitle: Modello di sito web per i comuni italiani, costruito utilizzando il design system di Designers Italia
+#payoff: Il punto di riferimento per il design dei siti web dei comuni
 logo: /assets/images/projects/logo-sitiweb-comuni.jpg
 lang: it
 order: 4
@@ -14,20 +14,20 @@ redirect_from:
 ---
 
 ### Descrizione
-Designers Italia, la community di design dei servizi pubblici ideata dal [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/){:target="_blank" rel="noopener"}, ha realizzato un modello per la costruzione di siti web per gli oltre 8 mila Comuni italiani, basato sul proprio *design system*.
+Designers Italia, la community di design dei servizi pubblici ideata dal [Team per la Trasformazione Digitale](https://teamdigitale.governo.it/){:target="_blank" rel="noopener"}, ha realizzato un modello per la costruzione di siti web per gli oltre 8 mila comuni italiani, basato sul proprio *design system*.
 
 [Leggi il post di presentazione del progetto su Medium.](https://medium.com/team-per-la-trasformazione-digitale/modello-standard-sito-web-comuni-design-prototipo-mobile-first-open-source-organizzazione-contenuti-38b330e695a1){:target="_blank" rel="noopener noreferrer"}
 
 Qui è disponibile il risultato finale del progetto:
-[il kit per creare il sito di un Comune]({% link _kits/it/comuni.md %})
+[il kit per creare il sito di un comune]({% link _kits/it/comuni.md %})
 
 ### Obiettivi
 
-Il modello propone uno standard a tutti i Comuni che vogliono rendere più semplice ed efficace il proprio sito, sulla base degli effettivi bisogni dei cittadini. L’idea è che il lavoro di progettazione di ciascun Comune possa partire da componenti standard testate e verificate con gli utenti, in modo che ciascun Comune possa concentrarsi sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.
+Il modello propone uno standard a tutti i comuni che vogliono rendere più semplice ed efficace il proprio sito, sulla base degli effettivi bisogni dei cittadini. L’idea è che il lavoro di progettazione di ciascun comune possa partire da componenti standard testate e verificate con gli utenti, in modo che ciascun Comune possa concentrarsi sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.
 
 ### L’attività di ricerca
 
-Il modello si basa su un’attività di analisi desk partita nel 2017, su una ricerca “sul campo” condotta da un team dedicato (interviste e test di usabilità realizzati nei mesi di giugno e luglio 2018) e sulla collaborazione di alcuni Comuni italiani. In particolare il **Comune di Firenze** ha messo a disposizione il materiale e l’esperienza alla base del nuovo sito comunale (a sua volta basato sul *design system* di Designers Italia); la Regione Veneto, nell’ambito del progetto MyPortal, ha messo a disposizione i risultati di un’attività di ricerca con i cittadini dei Comuni della Regione (utilizzando il protocollo di Designers Italia).
+Il modello si basa su un’attività di analisi desk partita nel 2017, su una ricerca “sul campo” condotta da un team dedicato (interviste e test di usabilità realizzati nei mesi di giugno e luglio 2018) e sulla collaborazione di alcuni comuni italiani. In particolare il **comune di Firenze** ha messo a disposizione il materiale e l’esperienza alla base del nuovo sito comunale (a sua volta basato sul *design system* di Designers Italia); la Regione Veneto, nell’ambito del progetto MyPortal, ha messo a disposizione i risultati di un’attività di ricerca con i cittadini dei Comuni della Regione (utilizzando il protocollo di Designers Italia).
 
 #### Il metodo di lavoro
 
@@ -45,9 +45,9 @@ Qui alcune attività preliminari di analisi condotte nel 2017 e nel 2018:
 
 [Data-driven design: ecco come i dati possono aiutarci a capire i bisogni dei cittadini](https://medium.com/designers-italia/data-driven-design-ecco-come-i-dati-possono-aiutarci-a-capire-i-bisogni-dei-cittadini-38f04d898f4d){:target="_blank" rel="noopener noreferrer"}
 
-[Cosa fanno gli utenti del sito di un Comune? Ce lo dice Piwik](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35){:target="_blank" rel="noopener noreferrer"}
+[Cosa fanno gli utenti del sito di un comune? Ce lo dice Piwik](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35){:target="_blank" rel="noopener noreferrer"}
 
-[Card sorting e navigazione per i siti web dei Comuni](https://medium.com/designers-italia/card-sorting-e-navigazione-per-i-siti-web-dei-comuni-f4ae175b84c4){:target="_blank" rel="noopener noreferrer"}
+[Card sorting e navigazione per i siti web dei comuni](https://medium.com/designers-italia/card-sorting-e-navigazione-per-i-siti-web-dei-comuni-f4ae175b84c4){:target="_blank" rel="noopener noreferrer"}
 
 ### Il prototipo
 
@@ -77,7 +77,7 @@ Il modello realizzato è riassunto nella [Documentazione del progetto su Docs It
 
 Abbiamo aperto un’area di discussione sul progetto sul forum dei servizi della Pubblica Amministrazione italiana:
 
-[Un modello per i siti dei Comuni basato sul design system di Designers Italia](https://forum.italia.it/t/un-modello-per-i-siti-dei-comuni-basato-sul-design-system-di-designers-italia/4468){:target="_blank" rel="noopener"}
+[Un modello per i siti dei comuni basato sul design system di Designers Italia](https://forum.italia.it/t/un-modello-per-i-siti-dei-comuni-basato-sul-design-system-di-designers-italia/4468){:target="_blank" rel="noopener"}
 
 Per collaborare e ricevere supporto sul progetto c’è un canale Slack dedicato:
 

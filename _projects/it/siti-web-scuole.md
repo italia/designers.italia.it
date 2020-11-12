@@ -30,7 +30,7 @@ Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per off
 
 ### Il modello
 
-Il progetto ha raggiunto un traguardo importante a fine 2019 e i materiali (template, architettura informazione e un tema WordPress pronto all’uso) sono disponibili nel [kit per le Scuole]({% link _kits/it/scuole.md %}).
+Il progetto ha raggiunto un traguardo importante a fine 2019 e i materiali (template, architettura informazione e un tema WordPress pronto all’uso) sono disponibili nel [kit per le scuole]({% link _kits/it/scuole.md %}).
 
 ### Come partecipare
 

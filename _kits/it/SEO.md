@@ -14,7 +14,7 @@ tags:
 - webmastertool
 
 guidelines:
-- "Seo"
+- Seo
 
 download_file :
 - file : 'https://trello.com/b/CPIl9SxJ/checklistseodesigners-italia'

@@ -43,7 +43,7 @@ layout: default
       <div class="u-background-white u-layout-r-withGutter ">
         <ul class="u-listNone Grid Grid--withGutter Grid--equalHeight Grid--alignCenter u-sizeFull categorykits-selector">
           <li class="Grid-cell Grid-cell u-sizeFull u-sm-size1of6 u-md-size1of6 u-lg-size1of6 u-margin-bottom-xs " >
-            <a href="#" class="u-text-r-m u-textUppercase u-textWeight-700 u-linkClean u-color-50 active" data-selectorclass="all">Tutti</a>
+            <a href="#" class="u-text-r-m u-textUppercase u-textWeight-700 u-textClean u-color-50 active" data-selectorclass="all">Tutti</a>
           </li>
           {% assign categories = "capire, ideare, fare, comuni, scuole" | split: ", " %}
           {%- for category in categories -%}
@@ -67,7 +67,7 @@ layout: default
             <div class="u-flexAlignSelfStart">
               <h2 class="u-text-r-m u-textUppercase u-padding-top-l u-padding-bottom-l ">{{item.kitcategory}}</h2>
               <h1 class="u-text-r-l u-padding-bottom-l ">
-                <a href="{{item.url | relative_url}}" class="u-color-white u-linkClean">
+                <a href="{{item.url | relative_url}}" class="u-color-white u-textClean">
                   <span>{{item.title}}</span>
                 </a>
               </h1>

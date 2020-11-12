@@ -1,8 +1,8 @@
 ---
-title: Il kit per le Scuole
+title: Il kit per le scuole
 lang: it
 layout: download
-description: "Design del sito di una Scuola: architettura dell’informazione e template HTML"
+description: "Design del sito di una scuola: architettura dell’informazione e template HTML"
 backgroundImage: "/assets/images/kits/backgrounds/17_Scuole_Background.png"
 backgroundColor: "#439af1"
 nodate: true
@@ -23,8 +23,6 @@ download_file:
   caption: Template HTML basati su Bootstrap Italia
 - file: "https://github.com/italia/design-scuole-wordpress-theme/"
   caption: Un tema già pronto per WordPress
-- file: "https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html"
-  caption: Documentazione di progetto
 
 carousel:
 - img: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
