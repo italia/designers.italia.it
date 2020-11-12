@@ -7,10 +7,9 @@
         <h2 class="u-text-r-xxl u-padding-bottom-s">{{ t.home_blog_title }}</h2>
         <p  class="u-text-r-xl u-padding-bottom-m">{{ t.home_blog_subtitle }}</p>
         <ul class="u-padding-r-bottom u-padding-r-top u-text-r-m">
-          {% for tag in site.medium_head_tags limit: 8 %}
-          {% assign ext_protocol =  tag.link | slice: 0, 4 %}
+          {% for tag in site.medium_all_tags limit: 6 %}
           <li class="u-inlineBlock u-padding-r-right u-margin-r-top">
-            <a href="{{ tag.link }}" class="Pill Pill--xxs u-background-50 u-color-white u-textClean u-textWeight-600 u-padding-bottom-xs" {% if ext_protocol == 'http' %}target="_blank"{% endif %}>
+            <a href="{{ tag.link }}" class="Pill Pill--xxs u-background-50 u-color-white u-textClean u-textWeight-600 u-padding-bottom-xs">
             {{ tag.title }}
             <span class="Dot u-background-white u-margin-left-s u-alignMiddle"></span>
             </a>

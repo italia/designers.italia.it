@@ -75,19 +75,26 @@ $ui-kit-teal: #0BD9D3;
   display: inline-block !important;
   vertical-align: middle !important;
 }
-@media screen and (max-width: 991px) {
-  .Header-titleLink a {
-    font-size: 2rem !important;
+.Header-titleLink {
+  a {
+    line-height: .9 !important;
   }
-
-  .Header-titleLink small {
+  small {
     display: inline-block !important;
-    font-size: 1.4rem !important;
     &:hover {
       text-decoration: none;
     }
   }
+  @media screen and (max-width: 991px) {
+    a {
+      font-size: 2rem !important;
+    }
+    small {
+      font-size: 1.2rem !important;
+    }
+  }
 }
+
 
 .Header-slim a:hover {
   text-decoration: none !important;
