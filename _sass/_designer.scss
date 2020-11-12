@@ -1,3 +1,6 @@
+$ui-kit-grey: #26394D;
+$ui-kit-teal: #0BD9D3;
+
 /** PinWheel
     ===================== */
 .Header-PinWheel {
@@ -80,6 +83,9 @@
   .Header-titleLink small {
     display: inline-block !important;
     font-size: 1.4rem !important;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
@@ -160,28 +166,9 @@
   }
 }
 .kits-grid {
-
   &__img {
     display: block;
     margin-bottom: 0.5em;
-  }
-  &__piu {
-    &:before {
-      content: " ";
-      position: absolute;
-      left: 0;
-      width: 19px;
-      height: 19px;
-      background-image: url(/assets/images/icons/icon-more-teal.png);
-      background-size: cover;
-    }
-    &:hover {
-      &:before {
-        background-image: url(/assets/images/icons/icon-more-teal-h.png);
-      }
-    }
-
-
   }
 }
 
@@ -225,20 +212,17 @@
 .u-letterSpace-l {
   letter-spacing: 0.03em !important;
 }
-
 .u-color-teal-60 {
-  color: #00C5CA !important;
+  color: $ui-kit-teal !important;
 }
 .u-background-teal-60 {
-  background-color: #00C5CA !important;
+  background-color: $ui-kit-teal !important;
 }
-
-.u-color-teal-65 {
-  color: #06A3A8 !important;
+.u-color-grey-ui-kit {
+  color: $ui-kit-grey !important;
 }
-
-.u-background-teal-65 {
-  background-color: #06A3A8;
+.u-background-grey-ui-kit {
+  color: $ui-kit-grey !important;
 }
 
 .u-backgroundBlendModeMultiply {
@@ -582,8 +566,6 @@ $light-grey: #e6e9f0;
       box-shadow: 0 2px 4px 0 #bdbdbd
     }
     .download-button {
-      color: #fff !important;
-      background-color: #00C5CA !important;
 
       &--float {
         display: block;
@@ -593,7 +575,6 @@ $light-grey: #e6e9f0;
         left: 50%;
         transform: translateX(-50%);
         z-index: 100;
-        background-color: #00c5ca !important;
         border: none;
         white-space: normal;
 
@@ -822,22 +803,6 @@ body.layout-download {
     margin-bottom: 0.5em;
     height: 75px;
   }
-  &__piu {
-    &:before {
-      content: " ";
-      position: absolute;
-      left: 0;
-      width: 19px;
-      height: 19px;
-      background-image: url(/assets/images/icons/icon-more-blue.png);
-      background-size: cover;
-    }
-    &:hover {
-      &:before {
-        background-image: url(/assets/images/icons/icon-more-blue-h.png);
-      }
-    }
-  }
 }
 
 /**/
@@ -862,7 +827,7 @@ body.layout-download {
     li {
       margin: 0;
       &:not(:last-child):after {
-        content: " / ";
+        content: "/";
       }
     }
   }
