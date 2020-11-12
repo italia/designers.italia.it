@@ -5,7 +5,8 @@ layout: guidesindex
 lang: it
 toc: true
 backgroundImage : '/assets/images/pages/neonbrand-226736.jpg'
-backgroundColor: 'rgba(90, 178, 255, .5)'
+backgroundColor: 'rgba(0, 102, 204, .5)'
+backgroundPositionY: 'center'
 blueBlock: true
 nodate: true
 redirect_from:

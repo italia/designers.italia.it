@@ -14,7 +14,7 @@ layout: default
 
 <article itemscope itemtype="http://schema.org/BlogPosting" class="u-background-white u-nbfc">
   {% if page.blueBlock %}
-  <div class="u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-300" aria-hidden="true" style="{% include background-style.html %}">
+  <div class="page-hero u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover" aria-hidden="true" style="{% include background-style.html %}">
     <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
       <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
         <div class="u-textCenter u-padding-bottom-xl ">
@@ -96,33 +96,17 @@ layout: default
               </div>
             {% endif %}
         </div>
-
-        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
-          {% include share.html backgroundColor='u-background-50' textColor='u-color-50' iconColor='u-color-white' layout=' ' %}
-        </div>
         {% endif %}
 
         <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-color-grey-ui-kit">
           {{ content }}
         </div>
-
-
-        {% if page.related_tags == nil %}
-        <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
-          style="max-width: 15em" />
-        <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
-          {% include share.html backgroundColor='u-background-50' textColor='u-color-50' iconColor='u-color-white' layout=' ' %}
-        </div>
-        {% endif %}
-
       </div>
-
     </div>
   </div>
 
   {% if page.related_tags != nil %}
     {% include relateds.html %}
-
   {% endif %}
 
 </article>

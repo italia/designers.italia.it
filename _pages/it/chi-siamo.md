@@ -2,10 +2,10 @@
 title: Chi siamo
 lang: it
 layout: chisiamo
-subtitle:
+subtitle: Uniti per semplificare i servizi digitali, per tutti.
 nodate: true
 backgroundImage : '/assets/images/pages/chi-siamo-photo-unsplash.jpg'
-backgroundColor: 'rgba(90, 178, 255, .5)'
+backgroundColor: 'rgba(0, 102, 204, .5)'
 backgroundPositionY: 'center'
 ---
 

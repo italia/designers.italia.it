@@ -5,7 +5,7 @@ layout: kitsindex
 lang: it
 toc: true
 backgroundImage : '/assets/images/pages/image-index-kits.jpg'
-backgroundColor: 'rgba(90, 178, 255, .5)'
+backgroundColor: 'rgba(0, 102, 204, .5)'
 blueBlock: true
 nodate: true
 ---

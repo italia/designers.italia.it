@@ -26,7 +26,7 @@
         </a>
       </div>
     </div>
-
+    {% if site.medium_feed %}
     {% assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse %}
     {% for post in posts limit: 2 %}
       <div class="Grid-cell u-minHeight-250 u-sizeFull u-md-sizeFill u-lg-sizeFill u-margin-r-bottom u-color-white u-flex u-backgroundBlendModeLuminosity u-backgroundSizeCover"
@@ -46,6 +46,7 @@
         </div>
       </div>
     {% endfor %}
+    {% endif %}
 
   </div>
 </section>

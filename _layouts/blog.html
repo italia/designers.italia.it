@@ -4,8 +4,9 @@ lang: it
 ---
 
 {% include setlang.html %}
+{% if site.medium_feed %}
 {% assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse %}
-<div class="u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover u-height-300" aria-hidden="true" style="{% include background-style.html %}">
+<div class="page-hero u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover" aria-hidden="true" style="{% include background-style.html %}">
   <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <div class="u-textCenter u-padding-bottom-xl ">
@@ -37,7 +38,6 @@ lang: it
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <div class="u-margin-r-top u-margin-r-bottom">
         <p class="u-text-r-xs u-lineHeight-xl u-color-grey-ui-kit">Nel <span class=" u-text-r-xs u-textWeight-600">blog di Designers Italia</span> puoi trovare casi di studio, racconti di esperienze ed esempi sui vari temi legati al <span class="u-text-r-xs u-textWeight-600">design dei servizi pubblici</span>. Il blog ospita anche dei <a href="{{ '/storie/tags/guest-post/' | relative_url }}" class="u-text-r-xs u-textItalic u-textClean u-color-50">guest post</a> dove i designer possono raccontare il loro punto di vista e le loro esperienze nell’ambito della <span class="u-text-r-xs u-textWeight-600">trasformazione digitale</span></p>
-        <a href="/come-partecipo" class="u-block u-margin-top-xl u-margin-bottom-xl u-text-r-m u-textClean u-color-50"><span class="u-text-r-m Icon Icon-arrow-right"></span> Scopri come partecipare</a>
       </div>
       {% for post in posts %}
       {% assign _excerpt = post.medium_subtitle | strip_html %}
@@ -81,3 +81,4 @@ lang: it
     {% include sideblock.html title = t.news_nav_title content = pills %}
   </div>
 </div>
+{% endif %}
