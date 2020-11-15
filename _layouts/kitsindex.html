@@ -29,9 +29,9 @@ layout: default
           {%- if page.nodate != true -%}
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">{{ page.date | date: "%-d %b %Y" }}</time>
           {%- endif -%}
-          <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">{{ page.title }}</h1>
+          <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-textShadow-xxs u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">{{ page.title }}</h1>
           {%- if page.subtitle -%}
-          <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s u-lineHeight-l" style="max-width:24em">{{ page.subtitle }}</h2>
+          <h2 class="u-layoutCenter u-textCenter u-textShadow-xxs u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s u-lineHeight-l" style="max-width:24em">{{ page.subtitle }}</h2>
           {%- endif -%}
         </div>
       </div>
@@ -43,7 +43,7 @@ layout: default
       <div class="u-background-white u-layout-r-withGutter ">
         <ul class="u-listNone Grid Grid--withGutter Grid--equalHeight Grid--alignCenter u-sizeFull categorykits-selector">
           <li class="Grid-cell Grid-cell u-sizeFull u-sm-size1of6 u-md-size1of6 u-lg-size1of6 u-margin-bottom-xs " >
-            <a href="#" class="u-text-r-m u-textUppercase u-textWeight-700 u-textClean u-color-50 active" data-selectorclass="all">Tutti</a>
+            <a href="#" class="u-text-r-m u-textUppercase u-textWeight-700 u-linkClean u-color-50 active" data-selectorclass="all">Tutti</a>
           </li>
           {% assign categories = "capire, ideare, fare, comuni, scuole" | split: ", " %}
           {%- for category in categories -%}

@@ -4,8 +4,8 @@ subtitle: Risorse condivise per progettare, realizzare e migliorare i servizi di
 layout: kitsindex
 lang: it
 toc: true
-backgroundImage : '/assets/images/pages/image-index-kits.jpg'
-backgroundColor: 'rgba(0, 102, 204, .5)'
+backgroundImage : '/assets/images/pages/headers/kit-head.jpg'
+backgroundColor: 'rgba(0, 102, 204, .65)'
 blueBlock: true
 nodate: true
 ---

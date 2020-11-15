@@ -26,9 +26,9 @@ layout: default
         {% if page.nodate != true %}
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">{{ page.date | date: "%-d %b %Y" }}</time>
         {% endif %}
-        <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">{{ page.title }}</h1>
+        <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-textShadow-xxs u-margin-bottom-s u-textWeight-300 u-color-white u-margin-top-s u-lineHeight-l">{{ page.title }}</h1>
         {% if page.subtitle %}
-        <h2 class="u-layoutCenter u-textCenter u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s" style="max-width:24em">{{ page.subtitle }}</h2>
+        <h2 class="u-layoutCenter u-textCenter u-textShadow-xxs u-color-white u-text-r-m u-textWeight-300 u-margin-bottom-s" style="max-width:24em">{{ page.subtitle }}</h2>
         {% endif %}
       </div>
     </div>

@@ -6,7 +6,7 @@ backgroundColor: '#06c'
 ---
 
 ### Note Legali
-[https://designers.italia.it](https://designers.italia.it) è un sito che ha l’obiettivo di contribuire alla crescita e al coordinamento di una community di designer interessati allo sviluppo dei servizi online della pubblica amministrazione.
+[https://designers.italia.it](https://designers.italia.it) è un sito che ha l’obiettivo di contribuire alla crescita e al coordinamento di una community di designer interessati allo sviluppo dei servizi online della Pubblica Amministrazione.
 Il sito è gestito dall'Agenzia per l'Italia Digitale.
 
 In taluni casi (forum di discussione) per accedere ai contenuti e/o fruire dei Servizi potrebbe essere necessario utilizzare delle credenziali rilasciate dai gestori di altri servizi (es: GitHub o Google) o registrarsi, richiedendo l’attribuzione di nuove credenziali.

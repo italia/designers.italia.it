@@ -1,6 +1,6 @@
 ---
 title: Web Analytics Italia
-description: Una piattaforma di web analytics open source dedicata all’analisi dei dati di traffico dei siti della pubblica amministrazione.
+description: Una piattaforma di web analytics open source dedicata all’analisi dei dati di traffico dei siti della Pubblica Amministrazione.
 #subtitle:
 #payoff:
 logo: /assets/images/projects/web-analytics-cover.jpg

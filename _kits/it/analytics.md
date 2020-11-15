@@ -50,7 +50,7 @@ Le piattaforme per raccogliere informazioni sul comportamento degli utenti conse
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### A COSA SERVE
-Il kit Web Analytics ha l’obiettivo di fornire a chi si occupa a vario titolo del sito web di una pubblica amministrazione indicazioni operative su come produrre e distribuire un report **basico di web analytics**, con la finalità di condividerne i dati all’interno di un team di lavoro o con altri *stakeholder*.
+Il kit Web Analytics ha l’obiettivo di fornire a chi si occupa a vario titolo del sito web di una Pubblica Amministrazione indicazioni operative su come produrre e distribuire un report **basico di web analytics**, con la finalità di condividerne i dati all’interno di un team di lavoro o con altri *stakeholder*.
 
 
 

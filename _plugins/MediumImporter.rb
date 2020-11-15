@@ -160,5 +160,9 @@ module Jekyll
         end
       end
     end
+
+    # uncomment this for faster development
+    # def generate(site)
+    # end
   end
 end

@@ -4,8 +4,8 @@ subtitle: Per orientare la progettazione di servizi e ambienti digitali partendo
 layout: guidesindex
 lang: it
 toc: true
-backgroundImage : '/assets/images/pages/neonbrand-226736.jpg'
-backgroundColor: 'rgba(0, 102, 204, .5)'
+backgroundImage : '/assets/images/pages/headers/linee-guida-head.jpg'
+backgroundColor: 'rgba(0, 102, 204, .65)'
 backgroundPositionY: 'center'
 blueBlock: true
 nodate: true

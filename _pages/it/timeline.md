@@ -4,7 +4,7 @@ description: Alcuni dei risultati che Designers Italia ha raggiunto negli ultimi
 layout: post
 lang: it
 toc: true
-backgroundImage : '/assets/images/pages/image-timeline.jpg'
+backgroundImage : '/assets/images/pages/headers/timeline-head.jpg'
 backgroundColor: 'rgba(0, 102, 204, .5)'
 backgroundPositionY: 'center'
 blueBlock: true

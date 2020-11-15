@@ -94,7 +94,7 @@ Gennaio 2017
 
 ---
 
-### Pubbliche amministrazioni locali
+### Pubbliche Amministrazioni locali
 
 Nel luglio 2016 sono state rilasciate le indicazioni per lo sviluppo dei siti web degli enti locali.
 

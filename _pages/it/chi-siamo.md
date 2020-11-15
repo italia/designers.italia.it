@@ -4,7 +4,7 @@ lang: it
 layout: chisiamo
 subtitle: Uniti per semplificare i servizi digitali, per tutti.
 nodate: true
-backgroundImage : '/assets/images/pages/chi-siamo-photo-unsplash.jpg'
+backgroundImage : '/assets/images/pages/headers/chi-siamo-head.jpg'
 backgroundColor: 'rgba(0, 102, 204, .5)'
 backgroundPositionY: 'center'
 ---
