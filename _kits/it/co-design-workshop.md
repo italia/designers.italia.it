@@ -1,5 +1,5 @@
 ---
-title: Co-Design Workshop
+title: Co-design workshop
 lang: it
 layout: download
 description: Genera idee coinvolgendo utenti e stakeholder di un servizio

@@ -1,9 +1,7 @@
 ---
-title: SPID - Sistema Pubblico di Identità Digitale
-description: SPID è il sistema unico di Identà Digitale nazionale che permette ai cittadini italiani di accedere a tutti i servizi online della Pubblica Amministrazione
-# subtitle: Sistema Pubblico di Identità Digitale
+title: SPID - Sistema pubblico di identità digitale
+description: SPID è il sistema unico di identità digitale nazionale che permette ai cittadini italiani di accedere a tutti i servizi online della Pubblica Amministrazione
 logo: /assets/images/projects/spid-project-cover.jpg
-#payoff: Sistema Pubblico di Identità Digitale
 lang: it
 order: 1
 highlight: true
@@ -15,7 +13,7 @@ socials:
     link: https://www.facebook.com/groups/agid.spid/
 ---
 
-SPID (Sistema Pubblico di Identità Digitale) è il **sistema di Identità Digitale** che permette di utilizzare le stesse credenziali per accedere a tutti i servizi digitali della Pubblica Amministrazione da computer, tablet e smartphone. Il cittadino può ottenere SPID tramite i Gestori di Identità (*Identity Provider*): una volta completata la procedura di verifica (che certifica l’identità del richiedente), vengono rilasciate delle **credenziali** (user e password) che possono essere utilizzate su tutti i siti che offrono servizi al cittadino (*Service Provider*).
+SPID (Sistema Pubblico di Identità Digitale) è il **sistema di identità digitale** che permette di utilizzare le stesse credenziali per accedere a tutti i servizi digitali della Pubblica Amministrazione da computer, tablet e smartphone. Il cittadino può ottenere SPID tramite i Gestori di identità (*Identity Provider*): una volta completata la procedura di verifica (che certifica l’identità del richiedente), vengono rilasciate delle **credenziali** (user e password) che possono essere utilizzate su tutti i siti che offrono servizi al cittadino (*Service Provider*).
 
 I vantaggi di usare SPID per il cittadino sono:
 

@@ -1,5 +1,5 @@
 ---
-title: Ecosystem Map
+title: Ecosystem map
 lang: it
 layout: download
 description: Identifica i soggetti coinvolti nell’erogazione di un servizio e analizza le loro connessioni

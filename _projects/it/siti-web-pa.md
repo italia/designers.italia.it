@@ -12,7 +12,7 @@ redirect_from:
   - /siti-pa/
 ---
 
-Alcuni dei siti della PA italiane/dei Comuni italiani che hanno adottato le linee guida di design. Si tratta di interpretazioni complessivamente coerenti con le indicazioni tecniche di massima.
+Alcuni dei siti della PA italiane/dei comuni italiani che hanno adottato le linee guida di design. Si tratta di interpretazioni complessivamente coerenti con le indicazioni tecniche di massima.
 
 <nav role="navigation">
   <ul>
@@ -23,9 +23,7 @@ Alcuni dei siti della PA italiane/dei Comuni italiani che hanno adottato le line
   </ul>
 </nav>
 
-Alcune amministrazioni hanno deciso di adottare le linee guida
-sin dalla fase progettuale (siti pilota), altre hanno scelto di
-apportare un primo parziale adeguamento, anche se il loro sito era già on line.
+Alcune amministrazioni hanno deciso di adottare le linee guida di design sin dalla fase progettuale (siti pilota), altre hanno scelto di apportare un primo parziale adeguamento, anche se il loro sito era già on line.
 
 ### Pubbliche amministrazioni centrali
 

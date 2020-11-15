@@ -59,7 +59,7 @@ L’utilizzo del kit per il design dei siti comunali, che è bene inserire all�
 ###### COSA CONTIENE QUESTO KIT
 Il kit si è avvalso di un’attività di ricerca e di design con i cittadini e i funzionari comunali, e fondato su esperienze concrete già corso in diversi comuni (a partire da quello di Cagliari, primo in Italia a realizzarlo) e descritte nella [documentazione](#related-documents).
 
-Il documento di architettura dell’informazione definisce e organizza le informazioni contenute all’interno di un comune e rappresenta la guida per la realizzazione delle strutture di front-end e di backend. In particolare, contiene indicazioni su content type, sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune: descrizione dell’organizzazione, pubblicazione di documenti, notizie e servizi, oltre naturalmente alla home page, al motore di ricerca e all’area personale utente.
+Il documento di architettura dell’informazione definisce e organizza le informazioni contenute all’interno di un comune e rappresenta la guida per la realizzazione delle strutture di front-end e di backend. In particolare, contiene indicazioni su content type, sistemi di navigazione e tassonomie per tutte le aree del sito di un comune: descrizione dell’organizzazione, pubblicazione di documenti, notizie e servizi, oltre naturalmente alla home page, al motore di ricerca e all’area personale utente.
 I template HTML pronti all’uso (basati sul kit [Bootstrap Italia](https://italia.github.io/bootstrap-italia/), e conformi alle linee guida di design) permettono di costruire il front-end completo del sito di un comune (cioè senza dover realizzare nuovi template).
 
 Cosa non contiene questo kit:

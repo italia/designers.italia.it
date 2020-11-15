@@ -162,7 +162,7 @@ module Jekyll
     end
 
     # uncomment this for faster development
-    # def generate(site)
-    # end
+    def generate(site)
+    end
   end
 end

@@ -7,9 +7,9 @@ blocks:
   subtitle: Scarica gli elementi grafici predefiniti per risparmiare tempo e arrivare facilmente ad un insieme di schermate coerenti.
   img: /assets/images/kits/placeholders/12_WebDevelopmentKit_Placeholder.png
   button:
-  - label: UI Kit
+  - label: UI kit
     url: '/kit/ui-kit'
-  - label: Web development Kit
+  - label: Web development kit
     url: '/kit/web-development-kit'
 - title: Vuoi organizzare l’avvio di un progetto nel migliore dei modi?
   subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
@@ -17,7 +17,7 @@ blocks:
   button:
   - label: Kit co-design workshop
     url: '/kit/co-design-workshop'
-  - label: Linee Guida user research
+  - label: Linee guida user research
     url: 'https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research.html'
 - title: Vuoi migliorare l’usabilità del tuo sito o della tua applicazione?
   subtitle: Osserva quali problemi incontrano gli utenti durante l’utilizzo e individua le criticità più importanti da risolvere.

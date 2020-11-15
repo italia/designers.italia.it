@@ -24,7 +24,7 @@ Il percorso di *service design* ha previsto codesign, ricerca, progettazione, te
 
 ### Obiettivi
 
-L'obiettivo è stato avviare la pubblicazione delle componenti del modello di siti web delle scuole, a partire da un wireframe navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello è accompagnato da un template grafico, progettato utilizzando lo UI Kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti. Il modello verrà progressivamente migliorato attraverso un processo collaborativo all'interno di Designers Italia.
+L'obiettivo è stato avviare la pubblicazione delle componenti del modello di siti web delle scuole, a partire da un wireframe navigabile di sito web della scuola, gratuito e utilizzabile da tutti. Il modello è accompagnato da un template grafico, progettato utilizzando lo UI kit dei servizi pubblici digitali, anche in questo caso gratuito e utilizzabile da tutti. Il modello verrà progressivamente migliorato attraverso un processo collaborativo all'interno di Designers Italia.
 
 Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per offrire a famiglie e studenti un'esperienza digitale allineata alle best practice e agli obiettivi del piano scuola digitale, ma anche modificarlo secondo le loro esigenze specifiche.
 
@@ -44,9 +44,9 @@ Per collaborare e ricevere supporto c’è un canale Slack dedicato:
 
 ### Timeline del progetto
 
-* luglio 2017: *Codesign* (workshop e interviste agli stakeholder) e *Definizione del capitolato tecnico e procedure di gara*
-* febbraio 2018: *Avvio della fase di ricerca* (analisi siti esistenti, ricerca su studenti e genitori)
-* aprile 2018: *Avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test)
-* settembre 2018: *Rilascio progressivo della ricerca, del prototipo e della relativa documentazione*
-* marzo 2019: *Avvio realizzazione template statici e sito Wordpress*
-* dicembre 2019: *Rilascio della prima versione del kit per creare il sito di una scuola*
+* luglio 2017: attività di *co-design* (workshop e interviste agli stakeholder) e *definizione del capitolato tecnico e procedure di gara*.
+* febbraio 2018: *avvio della fase di ricerca* (analisi siti esistenti, ricerca su studenti e genitori).
+* aprile 2018: *avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test).
+* settembre 2018: *rilascio progressivo della ricerca, del prototipo e della relativa documentazione*.
+* marzo 2019: *avvio realizzazione template statici e sito WordPress*.
+* dicembre 2019: *rilascio della prima versione del kit per creare il sito di una scuola*.

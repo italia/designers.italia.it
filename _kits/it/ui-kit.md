@@ -1,5 +1,5 @@
 ---
-title: UI Kit
+title: UI kit
 lang: it
 layout: download
 description: Progetta l’interfaccia di un servizio con uno stile grafico semplice e coerente
@@ -19,31 +19,31 @@ guidelines:
 
 download_file :
 - file : 'https://github.com/italia/design-ui-kit'
-  caption : 'UI Kit'
+  caption : 'UI kit'
   type : 'internal'
 - file : 'https://github.com/italia/design-ui-kit'
-  caption : 'Icon Kit'
+  caption : 'Icon kit'
   type : 'internal'
 
 carousel:
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_01.jpg'
-  label: UI Kit carosello slide 1
+  label: UI kit carosello slide 1
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_02.jpg'
-  label: UI Kit carosello slide 2
+  label: UI kit carosello slide 2
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_03.jpg'
-  label: UI Kit carosello slide 3
+  label: UI kit carosello slide 3
 ---
 
 {:.u-color-50}
 ###### CHE COS’È
 
 {:.u-color-50 .u-margin-bottom-xxl}
-#### Lo UI Kit è un set di componenti visive già pronte per assemblare l’interfaccia di un sito o di un app, seguendo le linee guida per i servizi digitali della Pubblica Amministrazione.
+#### Lo UI kit è un set di componenti visive già pronte per assemblare l’interfaccia di un sito o di un app, seguendo le linee guida di design per i servizi digitali della Pubblica Amministrazione.
 {% include simplecarousel.html  %}
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
-Lo UI Kit prevede un insieme di simboli di sketch (libreria) che costituiscono dei blocchetti preconfezionati per la progettazione dell’interfaccia seguendo **uno stile visivo coerente**. Sketch consente di costruire un prototipo con le varie schermate necessarie, che poi possono essere rese interattive e gestite in modo condiviso su Invision.
+Lo UI kit prevede un insieme di simboli di sketch (libreria) che costituiscono dei blocchetti preconfezionati per la progettazione dell’interfaccia seguendo **uno stile visivo coerente**. Sketch consente di costruire un prototipo con le varie schermate necessarie, che poi possono essere rese interattive e gestite in modo condiviso su Invision.
 
 
 {:.u-color-50 .u-margin-top-xxl}

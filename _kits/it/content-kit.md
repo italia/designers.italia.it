@@ -1,5 +1,5 @@
 ---
-title: Content Kit
+title: Content kit
 lang: it
 layout: download
 description: Gestisci i contenuti e organizza la strategia editoriale in modo collaborativo

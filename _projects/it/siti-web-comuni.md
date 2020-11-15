@@ -23,11 +23,11 @@ Qui è disponibile il risultato finale del progetto:
 
 ### Obiettivi
 
-Il modello propone uno standard a tutti i comuni che vogliono rendere più semplice ed efficace il proprio sito, sulla base degli effettivi bisogni dei cittadini. L’idea è che il lavoro di progettazione di ciascun comune possa partire da componenti standard testate e verificate con gli utenti, in modo che ciascun Comune possa concentrarsi sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.
+Il modello propone uno standard a tutti i comuni che vogliono rendere più semplice ed efficace il proprio sito, sulla base degli effettivi bisogni dei cittadini. L’idea è che il lavoro di progettazione di ciascun comune possa partire da componenti standard testate e verificate con gli utenti, in modo che ciascun comune possa concentrarsi sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.
 
 ### L’attività di ricerca
 
-Il modello si basa su un’attività di analisi desk partita nel 2017, su una ricerca “sul campo” condotta da un team dedicato (interviste e test di usabilità realizzati nei mesi di giugno e luglio 2018) e sulla collaborazione di alcuni comuni italiani. In particolare il **comune di Firenze** ha messo a disposizione il materiale e l’esperienza alla base del nuovo sito comunale (a sua volta basato sul *design system* di Designers Italia); la Regione Veneto, nell’ambito del progetto MyPortal, ha messo a disposizione i risultati di un’attività di ricerca con i cittadini dei Comuni della Regione (utilizzando il protocollo di Designers Italia).
+Il modello si basa su un’attività di analisi desk partita nel 2017, su una ricerca “sul campo” condotta da un team dedicato (interviste e test di usabilità realizzati nei mesi di giugno e luglio 2018) e sulla collaborazione di alcuni comuni italiani. In particolare il **comune di Firenze** ha messo a disposizione il materiale e l’esperienza alla base del nuovo sito comunale (a sua volta basato sul *design system* di Designers Italia); la Regione Veneto, nell’ambito del progetto MyPortal, ha messo a disposizione i risultati di un’attività di ricerca con i cittadini dei comuni della regione (utilizzando il protocollo di Designers Italia).
 
 #### Il metodo di lavoro
 
