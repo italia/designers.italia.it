@@ -1,5 +1,5 @@
 ---
-title: Web Analytics
+title: Web analytics
 lang: it
 layout: download
 description: Osserva i comportamenti degli utenti partendo dai dati di utilizzo del servizio

@@ -1,5 +1,5 @@
 ---
-title: Information Architecture
+title: Information architecture
 lang: it
 layout: download
 description: Organizza la struttura dei contenuti in modo chiaro, efficace e coerente

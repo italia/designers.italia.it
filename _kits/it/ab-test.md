@@ -1,5 +1,5 @@
 ---
-title: A/B TEST
+title: A/B test
 lang: it
 layout: download
 description: Analizza l'efficacia della UX e avvia un processo di miglioramento continuo

@@ -1,5 +1,5 @@
 ---
-title: User Journey
+title: User journey
 lang: it
 layout: download
 description: Analizza tutti i passaggi dell'esperienza d’uso di un servizio e individua le opportunità di intervento
