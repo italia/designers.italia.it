@@ -1,7 +1,7 @@
 ---
-title: Come partecipo
+title: Partecipa
 lang: it
-layout: come-partecipo
+layout: partecipa
 blocks:
 - title: Partecipa alla vita del forum
   subtitle: Sul forum di Designers Italia puoi fare proposte, avanzare <a href="https://forum.italia.it/c/design/feedback-community">idee e suggerimenti</a>, segnalare best practice o <a href="https://forum.italia.it/c/design/esempi-linee-guida">esempi di applicazione</a> delle linee guida di design, discutere i temi legati al <b>service design</b>, al <b>content design</b>, alla <b>user interface</b> e alla <b>user research</b>.
@@ -45,7 +45,9 @@ blocks:
       url: 'https://docs.google.com/presentation/d/1H0Rk-nPydabW5tIAldVPwWsz0kCnETC3Gl0LOgXrLtI/edit?usp=sharing'
     - label: scarica la presentazione in inglese
       url: 'https://docs.google.com/presentation/d/1fRMafpiNeS6RuX9ZpRzi7ZpDqsdOGndqQzwqkE2MLeM/edit?usp=sharing'
-
+redirect_from:
+  - /it/come-partecipo/
+  - /come-partecipo/
 ---
 
 Designers Italia è un progetto aperto basato sulla **partecipazione** e il **contributo di designer e professionisti** interni ed esterni alla Pubblica Amministrazione.

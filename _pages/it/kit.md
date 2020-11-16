@@ -16,4 +16,4 @@ nodate: true
 
 * [Introduzione alle linee guida di design per i servizi web della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/introduzione-linee-guida-design.html);
 * [La sezione del forum di Designers Italia dedicata alle linee guida](https://forum.italia.it/c/design);
-* [Partecipa all’evoluzione delle linee guida di design](https://designers.italia.it/come-partecipo/).
+* [Partecipa all’evoluzione delle linee guida di design](https://designers.italia.it/partecipa/).

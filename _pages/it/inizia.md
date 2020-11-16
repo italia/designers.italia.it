@@ -1,7 +1,7 @@
 ---
-title: Come lo uso
+title: Inizia
 lang: it
-layout: come-lo-uso
+layout: inizia
 blocks:
 - title: Vuoi utilizzare risorse e template già pronti per costruire il tuo servizio?
   subtitle: Scarica gli elementi grafici predefiniti per risparmiare tempo e arrivare facilmente ad un insieme di schermate coerenti.
@@ -39,7 +39,9 @@ blocks:
   button:
   - label: Kit Web Analytics
     url: '/kit/analytics'
-
+redirect_from:
+  - /it/come-lo-uso/
+  - /come-lo-uso/
 ---
 
 Su Designers Italia puoi trovare risorse per progettare e semplificare i servizi pubblici. Sul sito trovi diversi **kit, linee guida, discussioni e casi d’uso**, che potranno esserti utili per risolvere criticità legate all’esperienza d’uso, ideare nuovi servizi digitali o migliorare servizi esistenti.

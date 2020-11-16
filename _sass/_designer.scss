@@ -66,8 +66,7 @@ $ui-kit-teal: #0BD9D3;
 /** PinWheel
     ===================== */
 .Header-PinWheel {
-  -webkit-animation: spin 6s ease-in-out infinite;
-  -moz-animation: spin 6s ease-in-out infinite;
+  margin-left: -16px;
   animation: spin 6s ease-in-out infinite;
 }
 @-moz-keyframes spin {
@@ -242,6 +241,8 @@ $ui-kit-teal: #0BD9D3;
 }
 
 .Megamenu--default {
+  margin-left: -3.2rem !important;
+  margin-right: -3.2rem !important;
   .Megamenu-list {
     @media screen and (max-width: 1150px) {
       margin-right: 1.2rem !important;
@@ -249,18 +250,24 @@ $ui-kit-teal: #0BD9D3;
     }
   }
   .Megamenu-item {
-    &:first-child > a {
-      padding-left: 0 !important;
-    }
-    &:last-child > a {
-      padding-right: 0 !important;
-    }
     > a {
       color: #06c !important;
+      padding-right: 3.2rem !important;
+      padding-left: 3.2rem !important;
+      @media screen and (max-width: 1150px) {
+        padding-right: 1.2rem !important; // todo verificare i padding fin qui
+        padding-left: 1.2rem !important;
+      }
       &.is-current {
         border-bottom: 2px solid #06c !important;
       }
     }
+    /*&:first-child > a {
+      padding-left: 3.2rem !important;
+    }
+    &:last-child > a {
+      padding-right: 3.2rem !important;
+    }*/
   }
 }
 
@@ -880,24 +887,6 @@ body.layout-download {
       &:not(:last-child):after {
         content: "/";
       }
-    }
-  }
-}
-
-/* OVERRIDES
-============= */
-.Megamenu-item {
-  & > a {
-    padding-right: 2rem !important;
-    padding-left: 2rem !important;
-    @media screen and (max-width: 1150px) {
-      padding-right: 1.2rem !important;
-      padding-left: 1.2rem !important;
-    }
-  }
-  &--dropdown {
-    & > a {
-      padding-right: 2.5rem !important;
     }
   }
 }
