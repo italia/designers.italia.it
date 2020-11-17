@@ -26,8 +26,8 @@ layout: default
 <article class="{{bkgColor}} u-posRelative u-zindex-30">
 <div class="Megablockgrid Grid Grid--equalHeight">
   {% if oddEven=='even' %}
-  <div class="Grid-cell u-hidden u-md-block u-lg-block u-md-size5of12 u-lg-size5of12 u-posRelative "
-       style="background-image: url({{ block.img }}); background-size: cover; min-height: 250px">
+  <div class="Grid-cell u-hidden u-md-block u-lg-block u-md-size5of12 u-lg-size5of12 u-posRelative u-backgroundSizeCover"
+       style="background-image: url({{ block.img }}); min-height: 250px">
        <div class="triangle triangle--reverse {{bkgColor}}"></div>
       &nbsp;
   </div>
@@ -52,15 +52,15 @@ layout: default
       </div>
   </div>
   {% if oddEven=='odd' %}
-  <div class="Grid-cell u-sizeFull u-md-size5of12 u-lg-size5of12 u-posRelative"
-       style="background-image: url({{ block.img }}); background-size: cover; min-height: 250px">
+  <div class="Grid-cell u-sizeFull u-md-size5of12 u-lg-size5of12 u-posRelative u-backgroundSizeCover"
+       style="background-image: url({{ block.img }}); min-height: 250px">
       <div class="triangle {{bkgColor}}"></div>
       &nbsp;
   </div>
   {% endif %}
   {% if oddEven=='even' %}
-  <div class="Grid-cell u-block u-md-hidden u-lg-hidden u-posRelative"
-       style="background-image: url({{ block.img }}); background-size: cover; min-height: 250px">
+  <div class="Grid-cell u-block u-md-hidden u-lg-hidden u-posRelative u-backgroundSizeCover"
+       style="background-image: url({{ block.img }}); min-height: 250px">
        <div class="triangle triangle--reverse {{bkgColor}}"></div>
       &nbsp;
   </div>
