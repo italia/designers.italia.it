@@ -1,7 +1,7 @@
 ---
-title: Inizia
+title: Esplora
 lang: it
-layout: inizia
+layout: esplora
 blocks:
 - title: Vuoi utilizzare risorse e template già pronti per costruire il tuo servizio?
   subtitle: Scarica gli elementi grafici predefiniti per risparmiare tempo e arrivare facilmente ad un insieme di schermate coerenti.
