@@ -1,36 +1,26 @@
 <section class="u-layout-wide u-layoutCenter u-background-white">
-
   <div class="Grid u-padding-r-top">
-
     <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-background-teal-60 u-color-grey-ui-kit u-padding-r-bottom">
       <div class="u-padding-r-all u-text-r-xl">
         <h2 class="u-text-r-xxl u-padding-bottom-s">{{ t.home_blog_title }}</h2>
         <p  class="u-text-r-xl u-padding-bottom-m">{{ t.home_blog_subtitle }}</p>
         <ul class="u-padding-r-bottom u-padding-r-top u-text-r-m">
-          {% for tag in site.medium_all_tags limit: 6 %}
+          {%- for tag in site.medium_all_tags limit: 6 -%}
           <li class="u-inlineBlock u-padding-r-right u-margin-r-top">
-            <a href="{{ tag.link }}" class="Pill Pill--xxs u-background-50 u-color-white u-textClean u-textWeight-600 u-padding-bottom-xs">
-            {{ tag.title }}
-            <span class="Dot u-background-white u-margin-left-s u-alignMiddle"></span>
-            </a>
+            <a href="{{ tag.link }}" class="Pill Pill--xxs u-background-50 u-color-white u-textClean u-textWeight-600 u-padding-bottom-xs">{{ tag.title }}<span class="Dot u-background-white u-margin-left-s u-alignMiddle"></span></a>
           </li>
-          {% endfor %}
+          {%- endfor -%}
         </ul>
-        <p class="u-letterSpace-l u-padding-r-bottom u-margin-r-bottom u-text-r-xxs">
-          {{ t.home_blog_text }}
-        </p>
-        <a href="{{ page.link_to_blog | relative_url }}" class="u-background-white u-color-50 u-padding-top-s u-padding-bottom-s
-          u-text-r-xs u-textClean u-textUppercase u-textWeight-700 u-inlineBlock
-          u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m">
+        <p class="u-letterSpace-l u-padding-r-bottom u-margin-r-bottom u-text-r-xxs">{{ t.home_blog_text }}</p>
+        <a href="{{ page.link_to_blog | relative_url }}" class="u-background-white u-color-50 u-padding-top-s u-padding-bottom-s u-text-r-xs u-textClean u-textUppercase u-textWeight-700 u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m">
           {{ t.see_all_f }}
         </a>
       </div>
     </div>
-    {% if site.medium_feed %}
-    {% assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse %}
-    {% for post in posts limit: 2 %}
-      <div class="Grid-cell u-minHeight-250 u-sizeFull u-md-sizeFill u-lg-sizeFill u-margin-r-bottom u-color-white u-flex u-backgroundBlendModeLuminosity u-backgroundSizeCover"
-        style="{%- if post.medium_preview_image_color_avg -%}
+    {%- if site.medium_feed -%}
+    {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at" | reverse -%}
+    {%- for post in posts limit: 2 -%}
+      <div class="Grid-cell u-minHeight-250 u-sizeFull u-md-sizeFill u-lg-sizeFill u-margin-r-bottom u-color-white u-flex u-backgroundBlendModeLuminosity u-backgroundSizeCover" style="{%- if post.medium_preview_image_color_avg -%}
         background-color: {{ post.medium_preview_image_color_avg }};
         {%- endif -%}{%- if post.medium_preview_image_url -%}
         background-image: url({{ post.medium_preview_image_url }});
@@ -45,8 +35,7 @@
           </div>
         </div>
       </div>
-    {% endfor %}
-    {% endif %}
-
+    {%- endfor -%}
+    {%- endif -%}
   </div>
 </section>

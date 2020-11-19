@@ -2,45 +2,33 @@
 
   <div class="u-layout-wide u-layoutCenter u-padding-top-m">
 
-    {% unless include.notitle %}
+    {%- unless include.notitle -%}
     <h2 class="u-text-r-xxl u-textWeight-700 u-color-grey-ui-kit u-textCenter">{{ t.home_projects_title }}</h2>
     <p class="u-text-r-xl u-textWeight-400 u-color-grey-ui-kit u-padding-top-s u-padding-r-bottom u-textCenter">{{ t.home_projects_subtitle }}</p>
-    {% endunless %}
-
-      {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
-
-    <div class="{% unless include.limit > 0 %}owl-carousel owl-theme{% endunless %}
-      {% if include.limit > 0 %}Grid Grid--withGutter Grid--alignMiddle u-flex {% endif %}
-      u-padding-r-all u-xs-padding-all-none" role="region" id="carousel-1" tabindex="0"
-      data-carousel-options='{ "dotsContainer": "#customDots", "dots": true }'>
-
-      {% for project in projects: %}
-
-        {% assign subtitle = project.subtitle | default: project.payoff %}
-        {% assign logo = project.logo | relative_url %}
-        {% assign url = project.url | relative_url %}
-
-          <div class="{% unless include.limit > 0 %}Carousel-item{% endunless %}
-            {% if include.limit > 0 %}Grid-cell u-md-size1of3 u-lg-size1of3{% endif %}
-            u-flex u-margin-bottom-l u-flexAlignSelfStretch
-            u-padding-left-xs u-padding-right-xs u-xs-padding-all-none">
-            {% include card.html
-              title=project.title
-              link=url
-              comingsoon=project.comingsoon
-              text=project.description
-              socials=project.socials
-              image=logo
-              alt=project.title
-              %}
-          </div>
-          {% endfor %}
-
+    {%- endunless -%}
+    {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
+    <div class="u-padding-r-all u-xs-padding-all-none {% unless include.limit > 0 %}owl-carousel owl-theme{% endunless %} {% if include.limit > 0 %}Grid Grid--withGutter Grid--alignMiddle u-flex{% endif %}" role="region" id="carousel-1" tabindex="0" data-carousel-options='{ "dotsContainer": "#customDots", "dots": true }'>
+      {%- for project in projects: -%}
+      {% assign subtitle = project.subtitle | default: project.payoff %}
+      {% assign logo = project.logo | relative_url %}
+      {% assign url = project.url | relative_url %}
+      <div class="{% unless include.limit > 0 %}Carousel-item{% endunless %}
+        {% if include.limit > 0 %}Grid-cell u-md-size1of3 u-lg-size1of3{% endif %}
+        u-flex u-margin-bottom-l u-flexAlignSelfStretch
+        u-padding-left-xs u-padding-right-xs u-xs-padding-all-none">
+        {%- include card.html
+          title=project.title
+          link=url
+          comingsoon=project.comingsoon
+          text=project.description
+          socials=project.socials
+          image=logo
+          alt=project.title -%}
+      </div>
+      {%- endfor -%}
     </div>
-
     <div id="customDots" class="owl-dots"></div>
-
-    {% unless include.limit > 0 %}
+    {%- unless include.limit > 0 -%}
     <p class="u-text-r-xs u-textWeight-400 u-color-grey-ui-kit u-padding-top-xxl u-padding-r-bottom u-textCenter">
       {{ t.home_projects_footer }}
     </p>
@@ -50,6 +38,6 @@
         <span class="u-hiddenVisually">{{ t.home_projects }}</span>
       </a>
     </div>
-    {% endunless %}
+    {%- endunless -%}
   </div>
 </section>
