@@ -29,9 +29,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/02_SystemMap_Slide_01.jpg'
-  label: Kit ecosystem map carosello slide 1
+  label: Esempio di mappatura
 - img: '/assets/images/kits/carousel/02_SystemMap_Slide_02.jpg'
-  label: Kit ecosystem map carosello slide 2
+  label: Esempio di mappatura del sistema scolastico
 ---
 
 {:.u-color-50}

@@ -27,11 +27,11 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_01.jpg'
-  label: UI kit carosello slide 1
+  label: Esempio di prototipi per cellulare
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_02.jpg'
-  label: UI kit carosello slide 2
+  label: Esempi di componenti web
 - img: '/assets/images/kits/carousel/10_UIKit_Slide_03.jpg'
-  label: UI kit carosello slide 3
+  label: Esempi di tipografia
 ---
 
 {:.u-color-50}

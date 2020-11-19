@@ -20,9 +20,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/15_ABTest_Slide_01.png'
-  label: Kit A/B test carosello slide 1
+  label: Esempio di A/B testing
 - img: '/assets/images/kits/carousel/15_ABTest_Slide_02.png'
-  label: Kit A/B test carosello slide 2
+  label: Esempio di A/B testing
 ---
 
 {:.u-color-50}

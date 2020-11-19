@@ -17,7 +17,6 @@
         </a>
       </div>
     </div>
-    {% comment %} Social {% endcomment %}
     <div class="Grid-cell u-md-size6of12 u-lg-size6of12 u-padding-r-bottom u-text-sm-center u-text-md-right u-text-lg-right">
       <span class="u-hidden u-sm-inline u-md-inline u-lg-inline">Community:</span>
       <ul class="social-icons u-flexInline u-padding-bottom-xs">
@@ -28,38 +27,24 @@
       </ul>
       <br/>
       <span class="u-hidden u-sm-inline u-md-inline u-lg-inline">Info:</span>
-      <a class="u-color-teal-30 u-textClean u-padding-left-xs" href="mailto:contatti@designers.italia.it">contatti@designers.italia.it</a>
+      <a class="u-color-teal-30 u-textClean" href="mailto:{{ site.email }}">{{ site.email }}</a>
     </div>
   </div>
-  {% comment %} PON {% endcomment %}
   <div class="Grid u-background-white">
+    {%- for pon_logo in site.pon_logos -%}
     <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
-      <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.eu_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt="Logo dell'Unione Europea"
-        style="height: 4em; max-width: 100%">
+      <img class="logo-pon u-padding-top-xxs u-padding-right-xxs" src="{{ pon_logo.logo | relative_url }}" alt="{{ pon_logo.alt }}">
     </div>
-    <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
-      <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.act_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt="Logo dell'agenzia coesione territoriale"
-        style="height: 4em; max-width: 100%">
-    </div>
-    <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
-      <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.funzione_pubblica_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt="Logo del dipartimento della funzione pubblica"
-        style="height: 4em; max-width: 100%">
-    </div>
-    <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-padding-r-top u-padding-r-bottom u-textCenter">
-      <img class="u-padding-top-xxs u-padding-right-xxs" src="{{ site.pon_logo | relative_url | d('//placehold.it/75x80?text=placeholder') }}" alt="Logo del PON"
-        style="height: 4em; max-width: 100%">
-    </div>
+    {%- endfor -%}
   </div>
-  {% comment %} Links {% endcomment %}
   <div>
     <ul class="Footer-links u-cf u-color-80">
-      {% for link in site.data.footer_links %}
-        {% assign link_name = link[1].title %}
+      {%- for link in site.data.footer_links -%}
+        {%- assign link_name = link[1].title -%}
         <li><a class="u-color-teal-30" href="{{ site.baseurl }}{{ link[1].url }}">{{ t[link_name] | default: link_name | capitalize }}</a></li>
-      {% endfor %}
+      {%- endfor -%}
     </ul>
-    </div>
-
+  </div>
 </footer>
 
 {% include scripts.html %}

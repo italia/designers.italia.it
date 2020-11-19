@@ -35,11 +35,9 @@ download_file:
 
 carousel:
 - img: '/assets/images/kits/carousel/12_WebDevelopmentKit_Slide_01.jpg'
-  label: 'Bootstrap Italia'
+  label: Esempi della libreria Bootstrap Italia
 - img: '/assets/images/kits/carousel/12_WebDevelopmentKit_Slide_03.jpg'
-  label: 'React kit'
-- img: '/assets/images/kits/carousel/12_WebDevelopmentKit_Slide_04.jpg'
-  label: 'Angular kit'
+  label: Esempi della libreria React kit
 ---
 
 {:.u-color-50}

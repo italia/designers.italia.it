@@ -26,9 +26,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/13_SEO_Slide_01.jpg'
-  label: Kit SEO carosello slide 1
+  label: Una bacheca di Trello
 - img: '/assets/images/kits/carousel/13_SEO_Slide_02.jpg'
-  label: Kit SEO carosello slide 1
+  label: Esempi di search engine optimization
 ---
 
 {:.u-color-50}

@@ -7,11 +7,11 @@
       {{ t.home_partecipa_subtitle }}
     </p>
     <div class="u-textCenter u-margin-top-l">
-      <img src="{{ '/assets/images/blk7/conversation.svg' | relative_url }}" alt="icona di conversazione" />
+      <img src="{{ '/assets/images/blk7/conversation.svg' | relative_url }}" alt="" role="presentation">
     </div>
 
     {% for i in (1..11) %}
-    <img src="{{ '/assets/images/blk7/balloon.svg' | relative_url }}" alt="icona di palloncino" class="u-posAbsolute Balloon-{{ forloop.index }}"/>
+    <img src="{{ '/assets/images/blk7/balloon.svg' | relative_url }}" alt="" role="presentation" class="u-posAbsolute Balloon-{{ forloop.index }}"/>
     {% endfor %}
 
     <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative">

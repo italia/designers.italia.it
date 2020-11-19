@@ -18,7 +18,7 @@ title: Designers Italia
 description: La comunità italiana dei designer di servizi pubblici
 author: Team per la Trasformazione Digitale e AGID
 
-email: teamdigitale@governo.it
+email: contatti@designers.italia.it
 # baseurl: "/" # the subpath of your site, e.g. /blog
 domain: designers.italia.it
 url: "https://designers.italia.it"
@@ -41,6 +41,7 @@ plugins:
   - jekyll-toc
   - jekyll-sitemap
 exclude:
+  - .idea
   - vendor
   - README.md
   - LICENSE
@@ -72,12 +73,17 @@ partner_logo: /assets/icons/logo-agid-white.svg
 
 privacy_link: /privacy-policy
 gov_logo: /assets/images/governo.svg
-funzione_pubblica_logo: /assets/images/pon/funzione_pubblica_logo.png
-eu_logo: /assets/images/pon/Unione_Europea.png
-pon_logo: /assets/images/pon/pongov_1420.png
-act_logo: /assets/images/pon/Agenzia_Coesione_Territoriale.png
+pon_logos:
+  - logo: /assets/images/pon/Unione_Europea.png
+    alt: Logo dell'Unione Europea
+  - logo: /assets/images/pon/Agenzia_Coesione_Territoriale.png
+    alt: Logo Agenzia per la Coesione Territoriale
+  - logo: /assets/images/pon/funzione_pubblica_logo.png
+    alt: Logo del Dipartimento della funzione pubblica
+  - logo: /assets/images/pon/pongov_1420.png
+    alt: Logo PON Governance
 pill:
-blog_tags_directory: '/storie/tags'
+blog_tags_directory: /storie/tags
 
 # Medium posts importer / display settings
 medium_archive_url: https://medium.com/designers-italia

@@ -38,9 +38,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/04_InterviewGuide_Slide_01.jpg'
-  label: Kit user interviews carosello slide 1
+  label: Esempio di struttura interviste
 - img: '/assets/images/kits/carousel/04_InterviewGuide_Slide_02.jpg'
-  label: Kit user interviews carosello slide 2
+  label: Esempio di struttura interviste
 ---
 
 {:.u-color-50}

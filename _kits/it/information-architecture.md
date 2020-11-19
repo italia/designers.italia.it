@@ -32,7 +32,7 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/placeholders/15_InformationArchitecture_Placeholder.png'
-  label: Kit IA carosello slide 1
+  label: Immagine generica schema alberature
 ---
 
 {:.u-color-50}

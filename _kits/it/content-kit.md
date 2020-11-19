@@ -51,11 +51,11 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_01.jpg'
-  label: Kit content carosello slide 1
+  label: Esempio content kit
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_02.jpg'
-  label: Kit content carosello slide 2
+  label: Esempi di revisione testi
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_03.jpg'
-  label: Kit content carosello slide 3
+  label: Esempi di content design
 ---
 
 {:.u-color-50}

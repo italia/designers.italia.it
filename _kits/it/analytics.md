@@ -29,9 +29,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/08_WebAnalytics_Slide_01.jpg'
-  label: Kit analytics carosello slide 1
+  label: Esempio di analytics per siti web
 - img: '/assets/images/kits/carousel/08_WebAnalytics_Slide_02.jpg'
-  label: Kit analytics carosello slide 2
+  label: Esempio di report statistico
 ---
 
 {:.u-color-50}

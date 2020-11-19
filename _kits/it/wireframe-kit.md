@@ -29,9 +29,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/14_WireframeKit_Slide_01.jpg'
-  label: Wireframe Kit carosello slide 1
+  label: Esempi di wireframe
 - img: '/assets/images/kits/carousel/14_WireframeKit_Slide_02.jpg'
-  label: Wireframe Kit carosello slide 2
+  label: Libreria di componenti web
 ---
 
 {:.u-color-50}

@@ -94,7 +94,6 @@ module Jekyll
         doc.data['medium_subtitle'] = item['subtitle']
         doc.data['meta_description'] = item['metaDescription']
         doc.data['medium_url'] = post_url_base + item['uniqueSlug']
-        #doc.data['medium_tags'] = item['virtuals']['tags']
 
         # not every post has a previewImage
         if item['virtuals']['previewImage']['imageId'] != ''

@@ -29,9 +29,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/05_UserJourney_Slide_01.jpg'
-  label: Kit user journey carosello slide 1
+  label: Esempio di user journey
 - img: '/assets/images/kits/carousel/05_UserJourney_Slide_02.jpg'
-  label: Kit user journey carosello slide 2
+  label: Esempio di user journey
 ---
 
 {:.u-color-50}

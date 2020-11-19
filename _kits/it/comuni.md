@@ -30,7 +30,7 @@ carousel:
 - img: '/assets/images/kits/carousel/16_Comuni_Slide_02.jpg'
   label: Esempio di template del comune di Cagliari
 - img: '/assets/images/kits/carousel/16_Comuni_Slide_03.jpg'
-  label: Architettura dell’informazione
+  label: Esempio di architettura dell’informazione
 ---
 
 {:.u-color-50}

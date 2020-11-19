@@ -35,6 +35,6 @@ Su pagoPA la community di Designers Italia ha lavorato:
 
 * Alla revisione **del logo e del marchio pagoPA**
 
-![Rebranding pagoPA](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
+![Esempio di rebranding PagoPA](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
 
 * Alla revisione dell’[**esperienza utente**](http://www.youtube.com/watch?v=ZdzAVMQlAYM "Video di presentazione della UX di pagoPA"){:target="_blank" rel="noopener noreferrer"}

@@ -35,9 +35,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/09_CoDesignWorkshop_Slide_01.jpg'
-  label: Kit codesign carosello slide 1
+  label: Esempio di mappatura attività utente
 - img: '/assets/images/kits/carousel/09_CoDesignWorkshop_Slide_02.jpg'
-  label: Kit codesign carosello slide 2
+  label: Esempio di user journey per sessione di co-design
 ---
 
 {:.u-color-50}

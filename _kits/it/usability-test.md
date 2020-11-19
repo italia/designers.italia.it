@@ -44,9 +44,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/07_UsabilityTest_Slide_01.jpg'
-  label: Kit usabilità carosello slide 1
+  label: Esempio test di usabilità
 - img: '/assets/images/kits/carousel/07_UsabilityTest_Slide_02.jpg'
-  label: Kit usabilità carosello slide 2
+  label: Esempio test di usabilità
 ---
 
 {:.u-color-50}

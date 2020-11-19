@@ -26,7 +26,7 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/placeholders/06_UserStories_Placeholder.png'
-  label: Kit user stories carosello slide 2
+  label: Schema utilizzo di user stories
 ---
 
 {:.u-color-50}
