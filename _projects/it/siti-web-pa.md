@@ -12,7 +12,7 @@ redirect_from:
   - /siti-pa/
 ---
 
-Alcuni dei siti della PA italiane/dei Comuni italiani che hanno adottato le linee guida di design. Si tratta di interpretazioni complessivamente coerenti con le indicazioni tecniche di massima.
+Alcuni dei siti della PA italiane/dei comuni italiani che hanno adottato le linee guida di design. Si tratta di interpretazioni complessivamente coerenti con le indicazioni tecniche di massima.
 
 <nav role="navigation">
   <ul>
@@ -23,13 +23,11 @@ Alcuni dei siti della PA italiane/dei Comuni italiani che hanno adottato le line
   </ul>
 </nav>
 
-Alcune amministrazioni hanno deciso di adottare le linee guida
-sin dalla fase progettuale (siti pilota), altre hanno scelto di
-apportare un primo parziale adeguamento, anche se il loro sito era già on line.
+Alcune amministrazioni hanno deciso di adottare le linee guida di design sin dalla fase progettuale (siti pilota), altre hanno scelto di apportare un primo parziale adeguamento, anche se il loro sito era già on line.
 
 ### Pubbliche amministrazioni centrali
 
-#### [Portale del Governo Italiano](http://www.governo.it)
+#### [Portale del Governo Italiano](http://www.governo.it){:target="_blank" rel="noopener"}
 
 Novembre 2015
 
@@ -42,7 +40,7 @@ Novembre 2015
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image2.png" class="lazyload" alt="Governo Italiano - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Dipartimento per la Funzione Pubblica della Presidenza del Consiglio dei Ministri](http://www.funzionepubblica.gov.it)
+#### [Dipartimento per la Funzione Pubblica della Presidenza del Consiglio dei Ministri](http://www.funzionepubblica.gov.it){:target="_blank" rel="noopener noreferrer"}
 
 Febbraio 2016
 
@@ -55,7 +53,7 @@ Febbraio 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image4.png" class="lazyload" alt="Dipartimento per la Funzione Pubblica - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Ministero delle infrastrutture e dei Trasporti](http://www.mit.gov.it)
+#### [Ministero delle infrastrutture e dei Trasporti](http://www.mit.gov.it){:target="_blank" rel="noopener noreferrer"}
 
 Marzo 2016
 
@@ -68,7 +66,7 @@ Marzo 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image6.png" class="lazyload" alt="Ministero delle infrastrutture e dei Trasporti - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Ministero del Lavoro e delle Politiche Sociali](http://www.lavoro.gov.it/)
+#### [Ministero del Lavoro e delle Politiche Sociali](http://www.lavoro.gov.it/){:target="_blank" rel="noopener noreferrer"}
 
 <div class="lg-showcase">
   <noscript>
@@ -79,7 +77,7 @@ Marzo 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image8.png" class="lazyload" alt="Ministero del Lavoro e delle Politiche Sociali - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Ministero dello sviluppo economico](http://www.sviluppoeconomico.gov.it//)
+#### [Ministero dello sviluppo economico](http://www.sviluppoeconomico.gov.it/){:target="_blank" rel="noopener noreferrer"}
 
 Gennaio 2017
 
@@ -94,11 +92,11 @@ Gennaio 2017
 
 ---
 
-### Pubbliche amministrazioni locali
+### Pubbliche Amministrazioni locali
 
 Nel luglio 2016 sono state rilasciate le indicazioni per lo sviluppo dei siti web degli enti locali.
 
-#### [Portale della Regione Sardegna](http://alpha.regione.sardegna.it)
+#### [Portale della Regione Sardegna](http://www.regione.sardegna.it){:target="_blank" rel="noopener noreferrer"}
 
 Luglio 2016
 
@@ -111,7 +109,7 @@ Luglio 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image23.png" class="lazyload" alt="Portale della Regione Sardegna - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Comune di Biella](http://www.comune.biella.it)
+#### [Comune di Biella](http://www.comune.biella.it){:target="_blank" rel="noopener noreferrer"}
 
 Luglio 2016
 
@@ -124,7 +122,7 @@ Luglio 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image19.png" class="lazyload" alt="Comune di Biella - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Comune di  Matera](http://www.comune.matera.it)
+#### [Comune di  Matera](http://www.comune.matera.it){:target="_blank" rel="noopener noreferrer"}
 
 Luglio 2016
 
@@ -137,7 +135,7 @@ Luglio 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image17.png" class="lazyload" alt="Comune di Matera - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Comune di Venezia](http://www.comune.venezia.it)
+#### [Comune di Venezia](http://www.comune.venezia.it){:target="_blank" rel="noopener noreferrer"}
 
 Giugno 2016
 
@@ -150,7 +148,7 @@ Giugno 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image21.png" class="lazyload" alt="Comune di Venezia - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Comune di Eraclea](http://www.comune.eraclea.ve.it/)
+#### [Comune di Eraclea](http://www.comune.eraclea.ve.it/){:target="_blank" rel="noopener noreferrer"}
 
 Gennaio 2017
 
@@ -163,7 +161,7 @@ Gennaio 2017
   <img data-src="{{ site.baseurl }}/assets/images/showcase/eraclea-2.png" class="lazyload" alt="Comune di Eraclea - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Comune di Mogoro](http://www.comune.mogoro.or.it/)
+#### [Comune di Mogoro](http://www.comune.mogoro.or.it/){:target="_blank" rel="noopener noreferrer"}
 
 Maggio 2017
 
@@ -180,7 +178,7 @@ Maggio 2017
 
 ### Siti tematici
 
-#### [Direzione Generale dei musei](http://musei.beniculturali.it)
+#### [Direzione Generale dei musei](http://musei.beniculturali.it/){:target="_blank" rel="noopener noreferrer"}
 
 Maggio 2016
 
@@ -193,7 +191,7 @@ Maggio 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image12.png" class="lazyload" alt="Direzione Generale dei musei - nuovo sito" data-proofer-ignore />
 </div>
 
-#### [Opencantieri](http://opencantieri.mit.gov.it)
+#### [Opencantieri](http://opencantieri.mit.gov.it){:target="_blank" rel="noopener noreferrer"}
 
 Maggio 2016
 
@@ -204,7 +202,7 @@ Maggio 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image13.png" class="lazyload" alt="Opencantieri - sito" data-proofer-ignore />
 </div>
 
-#### [Dichiarazione Precompilata 730, Agenzia delle Entrate](https://infoprecompilata.agenziaentrate.gov.it)
+#### [Dichiarazione Precompilata 730, Agenzia delle Entrate](https://infoprecompilata.agenziaentrate.gov.it/portale/){:target="_blank" rel="noopener noreferrer"}
 
 Aprile 2016
 
@@ -215,7 +213,7 @@ Aprile 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image14.png" class="lazyload" alt="Dichiarazione Precompilata 730 - sito" data-proofer-ignore />
 </div>
 
-#### [Piano Strategico Banda Ultralarga](http://bandaultralarga.italia.it)
+#### [Piano Strategico Banda Ultralarga](https://bandaultralarga.italia.it/){:target="_blank" rel="noopener noreferrer"}
 
 Giugno 2016
 
@@ -226,7 +224,7 @@ Giugno 2016
   <img data-src="{{ site.baseurl }}/assets/images/showcase/image15.png" class="lazyload" alt="Piano Strategico Banda Ultralarga - sito" data-proofer-ignore />
 </div>
 
-#### [EcoSportello Comune di Alessano](http://ambiente.alessano.info)
+#### [EcoSportello Comune di Alessano](https://ambiente.alessano.info/){:target="_blank" rel="noopener noreferrer"}
 
 Giugno 2017
 
@@ -239,7 +237,7 @@ Giugno 2017
 
 ### Aziende partecipate
 
-#### [Sotacarbo](http://www.sotacarbo.it/)
+#### [Sotacarbo](http://www.sotacarbo.it/){:target="_blank" rel="noopener noreferrer"}
 
 Gennaio 2017
 

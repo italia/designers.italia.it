@@ -3,48 +3,39 @@
 {% assign pages = relpages | where_exp: "item", "item.url != page.url"  %}
 {% assign sort_pages = (pages | sort: 'date') | reverse %}
 
+{%- if sort_pages.size > 0 -%}
 <section class="u-background-white Relateds u-padding-bottom-xl">
-  {% if sort_pages.size > 0 %}
   <div class="u-textCenter u-padding-bottom-xl u-padding-top-xl u-margin-bottom-xl relateds-header">
     <span class="u-text-r-xl u-textWeight-700 u-color-50 relateds-last-string" >{{t.last_related}}:</span>
-
-          <ul class="Badges u-padding-left-m ">
-                {% for item in  {{page.related_tags}} %}
-                  <li class="u-text-r-xxs u-background-50 u-borderRadius-xl u-color-white badge">
-                  {{item}}
-                  </li>
-                {% endfor %}
-           </ul>
+    <ul class="Badges u-padding-left-m ">
+      {%- for item in  {{page.related_tags}} -%}
+        <li class="u-text-r-xxs u-background-50 u-borderRadius-xl u-color-white badge">
+        {{item}}
+        </li>
+      {%- endfor -%}
+     </ul>
   </div>
   <div class="Grid u-padding-r-top">
-     {% for item in sort_pages limit:3 %}
-      <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-color-white u-flex" style="background-color: #06c; background-image: url({{item.backgroundImage | relative_url }});
-          background-size: cover; min-height: 480px">
-        <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
-          <div class="u-flexAlignSelfEnd">
-            {% if item.categories %}
-            <p class="u-inlineBlock u-border-all-xxs u-padding-top-xxs u-padding-bottom-xxs u-text-r-xxs u-textWeight-600
-              u-margin-r-bottom u-padding-r-right u-padding-r-left u-margin-r-right" style="background-color: rgba(0, 0, 0, 0.1)">
-              {{item.categories}}
-            </p>
-            {% endif %}
-            <h3 class="u-text-r-xl">
-              <a href="{{item.url | relative_url }}" class="u-color-white u-linkClean">
-                <span>{{item.title}}</span>
-              </a>
-            </h3>
-          </div>
+    {%- for item in sort_pages limit:3 -%}
+    <div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-margin-r-bottom u-color-white u-flex" style="background-color: #06c; background-image: url({{item.backgroundImage | relative_url }});
+        background-size: cover; min-height: 480px">
+      <div class="u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch">
+        <div class="u-flexAlignSelfEnd">
+          {%- if item.categories -%}
+          <p class="u-inlineBlock u-border-all-xxs u-padding-top-xxs u-padding-bottom-xxs u-text-r-xxs u-textWeight-600
+            u-margin-r-bottom u-padding-r-right u-padding-r-left u-margin-r-right" style="background-color: rgba(0, 0, 0, 0.1)">
+            {{item.categories}}
+          </p>
+          {%- endif -%}
+          <h3 class="u-text-r-xl">
+            <a href="{{item.url | relative_url }}" class="u-color-white u-textClean">
+              <span>{{item.title}}</span>
+            </a>
+          </h3>
         </div>
       </div>
-      {% endfor %}
-    
+    </div>
+    {%- endfor -%}
   </div>
-  
-  <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom u-margin-r-top"
-          style="max-width: 15em" />
-{% endif %}
-    <div class="u-layoutCenter u-textCenter u-textSecondary u-margin-bottom-xxl">
-          {% include share.html %}
-   </div>
-  
 </section>
+{%- endif -%}

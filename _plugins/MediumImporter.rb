@@ -35,7 +35,7 @@ module Jekyll
     priority :high
 
     def generate(site)
-      blog_tags_directory = site.config['blog_tags_directory'] || '/blog/tags'
+      blog_tags_directory = site.config['blog_tags_directory'] || '/storie/tags'
       feed_url = Jekyll.configuration({})['medium_archive_url']
       puts "[*] Fetching Medium feed from: " + feed_url
 
@@ -80,7 +80,7 @@ module Jekyll
 
         puts "Parsing post with id: " + item['id']
 
-        path = "blog/" + item['id']
+        path = "storie/" + item['id']
         path = site.in_source_dir(path)
         doc = Jekyll::Document.new(path, {
           site: site,
@@ -94,7 +94,6 @@ module Jekyll
         doc.data['medium_subtitle'] = item['subtitle']
         doc.data['meta_description'] = item['metaDescription']
         doc.data['medium_url'] = post_url_base + item['uniqueSlug']
-        #doc.data['medium_tags'] = item['virtuals']['tags']
 
         # not every post has a previewImage
         if item['virtuals']['previewImage']['imageId'] != ''
@@ -160,5 +159,9 @@ module Jekyll
         end
       end
     end
+
+    # uncomment this for faster development
+    # def generate(site)
+    # end
   end
 end

@@ -1,5 +1,5 @@
 ---
-title: Wireframe Kit
+title: Wireframe kit
 lang: it
 layout: download
 description: Definisci il modello di interazione e l’organizzazione di informazioni e contenuti nelle schermate
@@ -18,7 +18,7 @@ guidelines:
 
 download_file :
 - file : 'https://github.com/italia/design-wireframe-kit'
-  caption : 'Wireframe Kit'
+  caption : 'Wireframe kit'
   type : 'internal'
 - file : 'https://docs.google.com/spreadsheets/d/1d-bHfzCMg3Y2Wyel1OcHBF74BpTlx1bCpJ7l56K7Xac/edit?usp=sharing'
   caption : 'Esercizio costruzione degli user flow'
@@ -29,9 +29,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/14_WireframeKit_Slide_01.jpg'
-  label:
+  label: Esempi di wireframe
 - img: '/assets/images/kits/carousel/14_WireframeKit_Slide_02.jpg'
-  label:
+  label: Libreria di componenti web
 ---
 
 {:.u-color-50}
@@ -52,4 +52,4 @@ I *wireframe* servono a costruire dei **prototipi a bassa fedeltà** che permett
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-Il wireframe kit contiene elementi (modelli di pagine e componenti) utili per costruire **un prototipo lo-fi** di un servizio pubblico digitale. Il wireframe kit è realizzato in **Sketch**, utilizzando una libreria UI Kit lo-fi, e sarà accompagnato da una documentazione esplicativa per ogni tipo di *content type*.
+Il wireframe kit contiene elementi (modelli di pagine e componenti) utili per costruire **un prototipo lo-fi** di un servizio pubblico digitale. Il wireframe kit è realizzato in **Sketch**, utilizzando una libreria UI kit lo-fi, e sarà accompagnato da una documentazione esplicativa per ogni tipo di *content type*.

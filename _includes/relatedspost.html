@@ -19,7 +19,7 @@
 
 {% if selecteds.size > 0 %}
 	{% assign posts_sorted = (selecteds | sort: "medium_firstpublished_at") | reverse %}
-	<section class="u-layout-wide u-layoutCenter u-background-teal-30 u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
+	<section class="u-layout-wide u-layoutCenter u-background-teal-60 u-color-grey-ui-kit u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
 		  <h1 class="u-text-h2 u-textCenter u-color-white">Storie</h1>
 		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-white u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
 		  <div class=" u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill {% if posts_sorted.size == 2 %}Grid--alignCenter {% endif%}">
@@ -29,11 +29,11 @@
           <article class="Grid Grid--fill u-background-white u-flexDirectionCol u-md-flexDirectionRow u-lg-flexDirectionRow">
             <figure class="Grid-cell u-sizeFull u-md-size2of3 u-lg-size2of3 u-padding-all-xs ">
               <img class="u-sizeFull"
-                   src="https://cdn-images-1.medium.com/fit/t/768/480/{{ post.medium_preview_image_id }}" alt="">
+                   src="https://cdn-images-1.medium.com/fit/t/768/480/{{ post.medium_preview_image_id }}" alt="{{post.medium_title}}">
             </figure>
             <header class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-padding-all-l">
               <h1 class="u-text-h4">
-                <a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
+                <a href="{{post.medium_url}}" class="u-color-50 u-textClean" target="_blank">
                   {{post.medium_title}}
                 </a>
               </h1>
@@ -48,16 +48,16 @@
 		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
 		      	<article class="u-background-white">
 		      		<figure class="u-sizeFull u-padding-all-xs ">
-		      			<a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
+		      			<a href="{{post.medium_url}}" class="u-color-50 u-textClean" target="_blank">
                   {% if post.medium_preview_image_id %}
-                  <img class="u-sizeFull u-hidden u-md-block u-lg-block" src="https://cdn-images-1.medium.com/fit/t/400/400/{{ post.medium_preview_image_id }}" alt="">
-                  <img class="u-sizeFull u-md-hidden u-lg-hidden" src="https://cdn-images-1.medium.com/fit/t/600/200/{{ post.medium_preview_image_id }}" alt="">
+                  <img class="u-sizeFull u-hidden u-md-block u-lg-block" src="https://cdn-images-1.medium.com/fit/t/400/400/{{ post.medium_preview_image_id }}" alt="{{post.medium_title}}">
+                  <img class="u-sizeFull u-md-hidden u-lg-hidden" src="https://cdn-images-1.medium.com/fit/t/600/200/{{ post.medium_preview_image_id }}" alt="{{post.medium_title}}">
                   {% endif %}
     					</a>
   					</figure>
 		      		<header class="u-sizeFull u-padding-all-m ">
 		      		<h1 class="u-text-h4">
-				          <a href="{{post.medium_url}}" class="u-color-50 u-linkClean" target="_blank">
+				          <a href="{{post.medium_url}}" class="u-color-50 u-textClean" target="_blank">
 				            {{post.medium_title}}
 				          </a>
 				    </h1>

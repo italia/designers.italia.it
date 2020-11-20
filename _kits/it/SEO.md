@@ -14,7 +14,7 @@ tags:
 - webmastertool
 
 guidelines:
-- "Seo"
+- Seo
 
 download_file :
 - file : 'https://trello.com/b/CPIl9SxJ/checklistseodesigners-italia'
@@ -26,9 +26,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/13_SEO_Slide_01.jpg'
-  label:
+  label: Una bacheca di Trello
 - img: '/assets/images/kits/carousel/13_SEO_Slide_02.jpg'
-  label:
+  label: Esempi di search engine optimization
 ---
 
 {:.u-color-50}
@@ -40,9 +40,9 @@ carousel:
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
-Il Kit SEO ha l’obiettivo di fornire informazioni e suggerimenti operativi su come:
-- individuare il livello di visibilità di un sito (e delle sue singole pagine) sui motori di ricerca, in relazione a specifici “user-intent”;
-- controllare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico.
+Il kit per la SEO ha l’obiettivo di fornire informazioni e suggerimenti operativi su come:
+* individuare il livello di visibilità di un sito (e delle sue singole pagine) sui motori di ricerca, in relazione a specifici “user-intent”;
+* controllare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico.
 
 
 {:.u-color-50 .u-margin-top-xxl}

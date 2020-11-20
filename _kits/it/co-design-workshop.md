@@ -1,5 +1,5 @@
 ---
-title: Co-Design Workshop
+title: Co-design workshop
 lang: it
 layout: download
 description: Genera idee coinvolgendo utenti e stakeholder di un servizio
@@ -7,7 +7,7 @@ backgroundImage : '/assets/images/kits/backgrounds/09_CoDesignWorkshop_Backgroun
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: ideare
-tags: 
+tags:
 - teamwork
 - workshop
 - stakeholder
@@ -35,9 +35,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/09_CoDesignWorkshop_Slide_01.jpg'
-  label:
+  label: Esempio di mappatura attività utente
 - img: '/assets/images/kits/carousel/09_CoDesignWorkshop_Slide_02.jpg'
-  label:
+  label: Esempio di user journey per sessione di co-design
 ---
 
 {:.u-color-50}
@@ -46,11 +46,11 @@ carousel:
 {:.u-color-50 .u-margin-bottom-xxl}
 #### Il workshop di co-progettazione è una **sessione di lavoro di gruppo**, in cui diversi attori coinvolti nell’erogazione o utilizzo di un servizio digitale vengono invitati a discutere le criticità esistenti e individuare insieme delle possibili soluzioni, seguendo un percorso guidato.
 
-{% include simplecarousel.html  %} 
+{% include simplecarousel.html  %}
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
-Per organizzare un workshop di co-design serve identificare un **obiettivo chiaro** e -sulla base di quello- una data, un luogo e una **serie di esercizi** che permettono ai gruppi di lavoro coinvolti di essere produttivi durante la sessione e raggiungere il risultato desiderato.  
+Per organizzare un workshop di co-design serve identificare un **obiettivo chiaro** e -sulla base di quello- una data, un luogo e una **serie di esercizi** che permettono ai gruppi di lavoro coinvolti di essere produttivi durante la sessione e raggiungere il risultato desiderato.
 
 
 

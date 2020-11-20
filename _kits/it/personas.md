@@ -26,11 +26,11 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/01_Personas_Slide_01.jpg'
-  label:
+  label: Esempio di personas
 - img: '/assets/images/kits/carousel/01_Personas_Slide_02.jpg'
-  label:
+  label: Esempio di personas
 - img: '/assets/images/kits/carousel/01_Personas_Slide_03.jpg'
-  label:
+  label: Esempi di personas, schede da compilare
 
 ---
 {:.u-color-50}

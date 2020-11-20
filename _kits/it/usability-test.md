@@ -1,5 +1,5 @@
 ---
-title: Usability Test
+title: Usability test
 lang: it
 layout: download
 description: Osserva come gli utenti interagiscono con un servizio digitale per renderlo più usabile
@@ -44,9 +44,9 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/07_UsabilityTest_Slide_01.jpg'
-  label:
+  label: Esempio test di usabilità
 - img: '/assets/images/kits/carousel/07_UsabilityTest_Slide_02.jpg'
-  label:
+  label: Esempio test di usabilità
 ---
 
 {:.u-color-50}
@@ -69,4 +69,4 @@ I test di usabilità possono essere svolti durante la **fase di sviluppo** di un
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-Questo kit fornisce tutti gli strumenti necessari per la **preparazione, conduzione e l’analisi dei risultati** di un test di usabilità, sulla base di quanto indicato nel [Protocollo eGLU](http://www.funzionepubblica.gov.it/glu).
+Questo kit fornisce tutti gli strumenti necessari per la **preparazione, conduzione e l’analisi dei risultati** di un test di usabilità, sulla base di quanto indicato nel [Protocollo eGLU](http://www.funzionepubblica.gov.it/glu){:target="_blank" rel="noopener noreferrer"}.

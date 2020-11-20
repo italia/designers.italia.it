@@ -1,5 +1,5 @@
 ---
-title: User Interviews
+title: User interviews
 lang: it
 layout: download
 description: Intervista gli utenti del servizio per identificare i loro bisogni, motivazioni e frustrazioni
@@ -7,7 +7,7 @@ backgroundImage : '/assets/images/kits/backgrounds/04_InterviewGuide_Background.
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: capire
-tags: 
+tags:
 - user-stories
 - interview
 - human-centered-design
@@ -17,7 +17,7 @@ guidelines:
 - User research
 
 download_file :
-- file : 'https://docs.google.com/document/d/1cPKIZhIv2g79OHwxUUFT_wTV4X-vO5xFRACeVmf2rfM/edit' 
+- file : 'https://docs.google.com/document/d/1cPKIZhIv2g79OHwxUUFT_wTV4X-vO5xFRACeVmf2rfM/edit'
   caption : 'Questionario di recruiting'
   type : 'internal'
 - file : 'https://docs.google.com/document/d/1Ev6UG3uRbpTPdYsNrqqgDZjiMpVDvPQk-XfriH2QDac/edit?usp=sharing'
@@ -32,15 +32,15 @@ download_file :
 - file : 'https://docs.google.com/spreadsheets/d/1AAfWOl6eghAKJn-i-htOKV5j2zSHhAM2IHTNxvxuIWY/edit#gid=1785015941'
   caption : 'Strumenti di notazione'
   type : 'internal'
-- file : 'https://docs.google.com/presentation/d/1riXhC274y0i2NrWV89FxuV4s8U3PzjKPnuHaofLT7NQ/edit#slide=id.g351b5d350a_0_0' 
+- file : 'https://docs.google.com/presentation/d/1riXhC274y0i2NrWV89FxuV4s8U3PzjKPnuHaofLT7NQ/edit#slide=id.g351b5d350a_0_0'
   caption : 'Presentazione dei risultati'
   type : 'internal'
 
 carousel:
 - img: '/assets/images/kits/carousel/04_InterviewGuide_Slide_01.jpg'
-  label:
+  label: Esempio di struttura interviste
 - img: '/assets/images/kits/carousel/04_InterviewGuide_Slide_02.jpg'
-  label:
+  label: Esempio di struttura interviste
 ---
 
 {:.u-color-50}
@@ -49,11 +49,11 @@ carousel:
 {:.u-color-50 .u-margin-bottom-xxl}
 #### Le interviste utente sono delle sessioni individuali di **ricerca sul campo** in cui immergersi nel contesto d’uso di un prodotto o servizio e fare delle domande che vanno in profondità, orientate a capire le motivazioni e i bisogni espressi o inespressi di quella persona.
 
-{% include simplecarousel.html  %} 
+{% include simplecarousel.html  %}
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COME SI UTILIZZA
-Le sessioni di intervista richiedono una **programmazione** nel dettaglio (es. quanti e quali partecipanti coinvolgere e in quali città). Sempre in fase di programmazione, è necessario definire tutte le **domande** da rivolgere al partecipante, costruendo una sorta di traccia per supportare lo svolgimento della conversazione, e raccogliere **tutte le osservazioni** sotto forma di note. 
+Le sessioni di intervista richiedono una **programmazione** nel dettaglio (es. quanti e quali partecipanti coinvolgere e in quali città). Sempre in fase di programmazione, è necessario definire tutte le **domande** da rivolgere al partecipante, costruendo una sorta di traccia per supportare lo svolgimento della conversazione, e raccogliere **tutte le osservazioni** sotto forma di note.
 
 
 
@@ -63,4 +63,4 @@ Le sessioni di intervista permettono di capire in profondità i **bisogni e i co
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
-Questo kit fornisce tutti gli strumenti necessari per la **preparazione, conduzione e documentazione** di una sessione di intervista con gli utenti. 
+Questo kit fornisce tutti gli strumenti necessari per la **preparazione, conduzione e documentazione** di una sessione di intervista con gli utenti.

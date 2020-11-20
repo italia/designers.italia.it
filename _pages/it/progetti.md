@@ -1,9 +1,10 @@
 ---
 title: Progetti
-subtitle: Servizi digitali a misura di cittadino.
+subtitle: Piattaforme, strumenti e modelli a cui Designers Italia ha contribuito.
 layout: projects
 lang: it
-backgroundImage : '/assets/images/pages/image-progetti.jpg'
-backgroundColor: 'rgba(90, 178, 255, .5)'
+backgroundImage : '/assets/images/pages/headers/progetti-head.jpg'
+backgroundColor: 'rgba(0, 102, 204, .5)'
 backgroundPositionY: 'center'
+nodate: true
 ---

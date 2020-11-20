@@ -1,6 +1,6 @@
 ---
 title: Web Analytics Italia
-description: Una piattaforma di web analytics open source dedicata all’analisi dei dati di traffico dei siti della pubblica amministrazione.
+description: Una piattaforma di web analytics open source dedicata all’analisi dei dati di traffico dei siti della Pubblica Amministrazione.
 #subtitle:
 #payoff:
 logo: /assets/images/projects/web-analytics-cover.jpg
@@ -23,7 +23,7 @@ cittadini una valida esperienza utente.
 
 ### Obiettivi
 
-[Web Analytics Italia (WAI)](https://webanalytics.italia.it/) è una **soluzione
+[Web Analytics Italia (WAI)](https://webanalytics.italia.it/){:target="_blank" rel="noopener"} è una **soluzione
 open source di raccolta, analisi e condivisione dei dati di traffico e
 comportamento utente dei siti web delle amministrazioni pubbliche italiane**.
 
@@ -39,7 +39,7 @@ WAI consente alle PA di:
   norma GDPR
 - disporre di strumenti ad hoc per pubblicare online le statistiche di siti e
   servizi monitorati [(art.7 del
-  CAD)](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo1_sezione2_art7.html?highlight=statistiche%20utilizzo)
+  CAD)](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo1_sezione2_art7.html?highlight=statistiche%20utilizzo){:target="_blank" rel="noopener"}
 - esporre pubblicamente i dati rilevati in forma aggregata sul portale Web
   Analytics Italia
 - beneficiare del supporto di una community di riferimento dedicata al progetto.
@@ -47,7 +47,7 @@ WAI consente alle PA di:
 ### Funzionalità
 
 Web Analytics Italia si basa sul software open source
-[Matomo](https://matomo.org/) per le funzionalità di ingestion e reporting.
+[Matomo](https://matomo.org/){:target="_blank" rel="noopener noreferrer"} per le funzionalità di ingestion e reporting.
 L’accesso ai dati è invece offerto mediante un **portale che consente la
 registrazione e la gestione di siti e utenze**. Gli stessi dati sono esposti
 pubblicamente - in forma aggregata - nella **dashboard pubblica di WAI**, in
@@ -56,15 +56,15 @@ via API per l’utilizzo da parte di applicazioni di terze parti.
 
 L’uso della piattaforma e delle funzionalità supportate sono e saranno sempre
 **gratuite** per tutte le PA aderenti. WAI si trova attualmente in [**fase di
-closed beta**](https://webanalytics.italia.it/faq#fase-sperimentazione).
+closed beta**](https://webanalytics.italia.it/faq#fase-sperimentazione){:target="_blank" rel="noopener"}.
 
 ### Storia
 
 Il progetto WAI nasce da una [prima
-sperimentazione](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888)
+sperimentazione](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888){:target="_blank" rel="noopener noreferrer"}
 condotta da AGID e Team per la Trasformazione Digitale (luglio 2017 - marzo
 2018), che ha visto la collaborazione di un [nucleo pilota di
-amministrazioni](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35)
+amministrazioni](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35){:target="_blank" rel="noopener noreferrer"}
 per un totale di 40 siti web analizzati. Sulla base dei risultati della
 sperimentazione, il team di lavoro AGID dedicato ha definito e sviluppato una
 soluzione tecnologica stabile e di lungo periodo, confluita nell’attuale Web

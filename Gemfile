@@ -5,7 +5,7 @@ gem 'jekyll', '4.1.1'
 
 gem 'rest-client', '~> 2.1.0'
 gem 'rmagick', '~> 4.1.2'
-gem 'html-proofer', '~> 3.15.0'
+gem 'html-proofer', '~> 3.16.0'
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do

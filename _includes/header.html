@@ -1,44 +1,24 @@
-
 <header class="Header u-hiddenPrint">
   <div class="Header-banner u-background-50">
     <div class="Header-owner Headroom-hideme u-flex u-flexJustifyBetween u-flexAlignItemsCenter">
-
       <div>
-
         <div class="u-md-hidden u-lg-hidden u-border-right-xxs u-margin-right-xs u-padding-right-xs u-inlineBlock u-alignMiddle">
-          <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network"
-            aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">
-              {% include slim_icon.html %}
-          </a>
+          <a class="js-fr-offcanvas-open u-block" href="#network" aria-controls="network" aria-label="{{ t.toggle_network_menu_label }}" title="{{ t.toggle_network_menu_label }}">{% include slim_icon.html %}</a>
         </div>
-
-        <a href="{{ site.owner_link }}" class="u-color-white u-text-r-xxs u-linkClean u-textWeight-600">
-          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
-              {{ site.owner_short }}
-            </span>
-          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
-              {{ site.owner_short }}
-            </span>
+        <a href="{{ site.owner_link }}" target="_blank" rel="noopener" class="u-color-white u-textClean">
+          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">{{ site.owner_short }}</span>
+          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">{{ site.owner_full }}</span>
         </a>
-
         <span class="u-color-white u-padding-left-xxs u-padding-right-xxs">+</span>
-
-        <a href="{{ site.partner_link }}" class="u-color-white u-text-r-xxs u-linkClean u-textWeight-600">
-          <span class="u-inline u-md-hidden u-lg-hidden u-sm-hidden">
-              {{ site.partner_short }}
-            </span>
-          <span class="u-hidden u-md-inline u-lg-inline u-sm-inline">
-              {{ site.partner_short }}
-            </span>
+        <a href="{{ site.partner_link }}" target="_blank" rel="noopener" class="u-color-white u-textClean">
+          <span class="u-inline u-lg-hidden">{{ site.partner_short }}</span>
+          <span class="u-hidden u-lg-inline">{{ site.partner_full }}</span>
         </a>
       </div>
-
       {% comment %} {% include lang_switch.html %} {% endcomment %}
-
       <div class="u-hidden u-md-block u-lg-block">
         {% include slim_header.html %}
       </div>
-
     </div>
   </div>
   {% comment %}{% include header-english.html %}{% endcomment %}
@@ -53,15 +33,13 @@
           </svg>
         </a>
       </div>
-
       <div class="Header-title Grid-cell">
         <h1 class="Header-titleLink">
-          <a href="{{ '/' | relative_url }}" class="u-color-50">{{ t.site_title | default: site.title | escape }}
-            {% if site.pill %}
-              <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
-              <span class="u-color-20 u-text-xxs
-              u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>{%
-                endif %}<br><small class="u-color-grey-50">{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
+          <a href="{{ '/' | relative_url }}" class="u-color-50">{{ t.site_title | default: site.title | escape }}{%- if site.pill -%}
+            <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
+            <span class="u-color-20 u-text-xxs u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>
+            {%- endif - %}<br>
+            <small class="u-color-grey-ui-kit">{{ t.site_subtitle | default: site.subtitle | escape }}</small></a>
         </h1>
       </div>
 
@@ -76,17 +54,17 @@
 
       <div class="Header-utils Grid-cell">
         <div class="Header-social Headroom-hideme">
-          <p class="u-color-grey-50">{{ t.follow_us | capitalize }}</p>
+          <span class="u-color-grey-ui-kit u-text-r-xxs">{{ t.follow_us | capitalize }}</span>
           <ul class="Header-socialIcons">
-            {% for social in site.data.social %}
-            {% if social[1].link %}
+            {%- for social in site.data.social -%}
+            {%- if social[1].link -%}
             <li>
               <a href="{{ social[1].link }}" title="{{ social[1].name }}">
-                <span class="Icon-{{ social[0] }} u-background-50 u-color-white u-padding-r-xl"></span>
+                <span class="Icon-{{ social[0] }} u-color-teal-70 u-padding-r-xl"></span>
                 <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a>
             </li>
-            {% endif %}
-            {% endfor %}
+            {%- endif -%}
+            {%- endfor -%}
           </ul>
         </div>
 
@@ -108,30 +86,23 @@
     </div>
   </div>
   <!-- Header-navbar -->
-
-
-  <!-- pinwheel -->
   <div class="u-layout-wide u-layoutCenter Grid u-background-white u-hidden u-sm-hidden u-md-flex u-lg-flex" style="height: 34px">
     <div class="Grid-cell u-md-size8of12 u-lg-size8of12"></div>
     <div class="Grid-cell u-color-white u-md-size1of12 u-lg-size1of12 u-posRelative u-zindex-min">
-      <img alt="Girandola decorativa" style="margin-left: -17px" class="Header-PinWheel" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNCAzNCIgaGVpZ2h0PSIzNCIgd2lkdGg9IjM0Ij4KICA8Zz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTcsMTQuM2MxLjUsMCwyLjcsMS4yLDIuNywyLjdjMCwwLjctMC4zLDEuNC0wLjgsMS45cy0xLjIsMC44LTEuOSwwLjhjLTAuOCwwLTEuNC0wLjMtMS45LTAuOHMtMC44LTEuMi0wLjgtMS45YzAtMC43LDAuMy0xLjQsMC44LTEuOVMxNi4zLDE0LjMsMTcsMTQuM3oiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzIuOCwyLjJ2MTQuOWgtMC4xYy00LjUsMi43LTguOSwyLjItMTEuOSwxLjFjMC4xLTAuNCwwLjItMC44LDAuMi0xLjJjMC0wLjktMC4zLTEuNy0wLjctMi4zTDMyLjgsMi4yeiIvPgogICAgPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yNC41LDguNmwtNS4yLDUuMmMwLjYtMS41LDEtMy40LDEtNS41YzAtMS40LTAuMi0zLTAuNy00LjZMMjQuNSw4LjZ6Ii8+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTIwLjIsMTkuNGMxLjYsMC42LDMuNCwxLDUuNSwxYzEuNCwwLDIuOS0wLjIsNC41LTAuN2wtNC44LDQuOEwyMC4yLDE5LjR6Ii8+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTE3LjEsMS4zYzIuNyw0LjUsMi4yLDguOSwxLjEsMTEuOUMxNy44LDEzLjEsMTcuNCwxMywxNywxM2MtMC44LDAtMS43LDAuMy0yLjMsMC44TDIuMiwxLjNIMTcuMXoiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTcsMjFjMC44LDAsMS43LTAuMywyLjMtMC44bDEyLjUsMTIuNUgxNi45Yy0yLjctNC41LTIuMi04LjktMS4xLTExLjlDMTYuMiwyMC45LDE2LjYsMjEsMTcsMjF6Ii8+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTE0LjcsMjAuMmMtMC42LDEuNS0xLDMuNC0xLDUuNWMwLDEuNCwwLjIsMywwLjcsNC42bC00LjktNC45TDE0LjcsMjAuMnoiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTMsMTdjMCwwLjksMC4zLDEuNywwLjcsMi4zTDEuMywzMS44VjE2LjljNC41LTIuNyw4LjktMi4yLDExLjktMS4xQzEzLjEsMTYuMiwxMywxNi42LDEzLDE3eiIvPgogICAgPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik04LjYsOS41bDUuMSw1LjFjLTIuNi0wLjktNi4xLTEuNS0xMC0wLjJMOC42LDkuNXoiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiMwMDY2Q0M7IiBkPSJNMTkuNiwzLjdjMC41LDEuNiwwLjcsMy4xLDAuNyw0LjZjMCwyLjEtMC41LDQtMSw1LjVsNS4yLTUuMkwxOS42LDMuN3ogTTIxLDE3CiAgICAgIGMwLDAuNC0wLjEsMC44LTAuMiwxLjJjMywxLjEsNy40LDEuNiwxMS45LTEuMWgwLjFWMi4yTDIwLjMsMTQuN0MyMC43LDE1LjMsMjEsMTYuMSwyMSwxN3ogTTI1LjcsMjAuNGMtMi4xLDAtMy45LTAuNC01LjUtMQogICAgICBsNS4yLDUuMWw0LjgtNC44QzI4LjYsMjAuMiwyNy4xLDIwLjQsMjUuNywyMC40eiBNMTcsMjFjLTAuNCwwLTAuOC0wLjEtMS4yLTAuMmMtMS4xLDMtMS42LDcuNCwxLjEsMTEuOWgxNC45TDE5LjMsMjAuMgogICAgICBDMTguNywyMC43LDE3LjgsMjEsMTcsMjF6IE0xNywxNC4zYy0wLjcsMC0xLjQsMC4zLTEuOSwwLjhzLTAuOCwxLjItMC44LDEuOWMwLDAuOCwwLjMsMS40LDAuOCwxLjlzMS4yLDAuOCwxLjksMC44CiAgICAgIGMwLjcsMCwxLjQtMC4zLDEuOS0wLjhzMC44LTEuMiwwLjgtMS45QzE5LjcsMTUuNSwxOC41LDE0LjMsMTcsMTQuM3ogTTE0LjQsMzAuM2MtMC41LTEuNi0wLjctMy4xLTAuNy00LjZjMC0yLjEsMC40LTQsMS01LjUKICAgICAgbC01LjIsNS4yTDE0LjQsMzAuM3ogTTE3LjEsMS4zSDIuMmwxMi41LDEyLjVjMC42LTAuNSwxLjUtMC44LDIuMy0wLjhjMC40LDAsMC44LDAuMSwxLjIsMC4yQzE5LjMsMTAuMiwxOS44LDUuOCwxNy4xLDEuM3oKICAgICAgIE0wLjIsMTYuMWw3LjUtNy41TDAuMiwxLjFDMCwwLjktMC4xLDAuNywwLDAuNEMwLjEsMC4yLDAuNCwwLDAuNiwwaDE2LjljMC4xLDAsMC4zLDAuMSwwLjQsMC4ybDcuNSw3LjVsNy41LTcuNQogICAgICBDMzMuMSwwLDMzLjQsMCwzMy42LDAuMUMzMy45LDAuMiwzNCwwLjQsMzQsMC43djE2LjhsMC4xLTAuMWMwLDAuMi0wLjEsMC40LTAuMiwwLjVsLTcuNSw3LjVsNy41LDcuNWMwLjEsMC4yLDAuMiwwLjUsMC4xLDAuNwogICAgICBjLTAuMSwwLjItMC4zLDAuNC0wLjYsMC40SDE3LjdoLTEuM2MtMC4xLTAuMS0wLjItMC4xLTAuMy0wLjJsLTcuNS03LjVsLTcuNSw3LjVDMSwzMy45LDAuNywzNCwwLjQsMzMuOUMwLjIsMzMuOCwwLDMzLjYsMCwzMy4zCiAgICAgIFYxNi41QzAsMTYuNCwwLjEsMTYuMiwwLjIsMTYuMXogTTMuNywxNC40YzMuOS0xLjMsNy40LTAuNywxMCwwLjJMOC42LDkuNUwzLjcsMTQuNHogTTEuMywzMS44bDEyLjQtMTIuNQogICAgICBDMTMuMywxOC43LDEzLDE3LjksMTMsMTdjMC0wLjQsMC4xLTAuOCwwLjItMS4yYy0zLTEuMS03LjQtMS42LTExLjksMS4xVjMxLjh6Ii8+CiAgIDwvZz4KPC9zdmc+">
+      <img alt="" role="presentation" class="Header-PinWheel" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNCAzNCIgaGVpZ2h0PSIzNCIgd2lkdGg9IjM0Ij4KICA8Zz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTcsMTQuM2MxLjUsMCwyLjcsMS4yLDIuNywyLjdjMCwwLjctMC4zLDEuNC0wLjgsMS45cy0xLjIsMC44LTEuOSwwLjhjLTAuOCwwLTEuNC0wLjMtMS45LTAuOHMtMC44LTEuMi0wLjgtMS45YzAtMC43LDAuMy0xLjQsMC44LTEuOVMxNi4zLDE0LjMsMTcsMTQuM3oiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzIuOCwyLjJ2MTQuOWgtMC4xYy00LjUsMi43LTguOSwyLjItMTEuOSwxLjFjMC4xLTAuNCwwLjItMC44LDAuMi0xLjJjMC0wLjktMC4zLTEuNy0wLjctMi4zTDMyLjgsMi4yeiIvPgogICAgPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik0yNC41LDguNmwtNS4yLDUuMmMwLjYtMS41LDEtMy40LDEtNS41YzAtMS40LTAuMi0zLTAuNy00LjZMMjQuNSw4LjZ6Ii8+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTIwLjIsMTkuNGMxLjYsMC42LDMuNCwxLDUuNSwxYzEuNCwwLDIuOS0wLjIsNC41LTAuN2wtNC44LDQuOEwyMC4yLDE5LjR6Ii8+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTE3LjEsMS4zYzIuNyw0LjUsMi4yLDguOSwxLjEsMTEuOUMxNy44LDEzLjEsMTcuNCwxMywxNywxM2MtMC44LDAtMS43LDAuMy0yLjMsMC44TDIuMiwxLjNIMTcuMXoiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTcsMjFjMC44LDAsMS43LTAuMywyLjMtMC44bDEyLjUsMTIuNUgxNi45Yy0yLjctNC41LTIuMi04LjktMS4xLTExLjlDMTYuMiwyMC45LDE2LjYsMjEsMTcsMjF6Ii8+CiAgICA8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTE0LjcsMjAuMmMtMC42LDEuNS0xLDMuNC0xLDUuNWMwLDEuNCwwLjIsMywwLjcsNC42bC00LjktNC45TDE0LjcsMjAuMnoiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMTMsMTdjMCwwLjksMC4zLDEuNywwLjcsMi4zTDEuMywzMS44VjE2LjljNC41LTIuNyw4LjktMi4yLDExLjktMS4xQzEzLjEsMTYuMiwxMywxNi42LDEzLDE3eiIvPgogICAgPHBhdGggc3R5bGU9ImZpbGw6I0ZGRkZGRjsiIGQ9Ik04LjYsOS41bDUuMSw1LjFjLTIuNi0wLjktNi4xLTEuNS0xMC0wLjJMOC42LDkuNXoiLz4KICAgIDxwYXRoIHN0eWxlPSJmaWxsOiMwMDY2Q0M7IiBkPSJNMTkuNiwzLjdjMC41LDEuNiwwLjcsMy4xLDAuNyw0LjZjMCwyLjEtMC41LDQtMSw1LjVsNS4yLTUuMkwxOS42LDMuN3ogTTIxLDE3CiAgICAgIGMwLDAuNC0wLjEsMC44LTAuMiwxLjJjMywxLjEsNy40LDEuNiwxMS45LTEuMWgwLjFWMi4yTDIwLjMsMTQuN0MyMC43LDE1LjMsMjEsMTYuMSwyMSwxN3ogTTI1LjcsMjAuNGMtMi4xLDAtMy45LTAuNC01LjUtMQogICAgICBsNS4yLDUuMWw0LjgtNC44QzI4LjYsMjAuMiwyNy4xLDIwLjQsMjUuNywyMC40eiBNMTcsMjFjLTAuNCwwLTAuOC0wLjEtMS4yLTAuMmMtMS4xLDMtMS42LDcuNCwxLjEsMTEuOWgxNC45TDE5LjMsMjAuMgogICAgICBDMTguNywyMC43LDE3LjgsMjEsMTcsMjF6IE0xNywxNC4zYy0wLjcsMC0xLjQsMC4zLTEuOSwwLjhzLTAuOCwxLjItMC44LDEuOWMwLDAuOCwwLjMsMS40LDAuOCwxLjlzMS4yLDAuOCwxLjksMC44CiAgICAgIGMwLjcsMCwxLjQtMC4zLDEuOS0wLjhzMC44LTEuMiwwLjgtMS45QzE5LjcsMTUuNSwxOC41LDE0LjMsMTcsMTQuM3ogTTE0LjQsMzAuM2MtMC41LTEuNi0wLjctMy4xLTAuNy00LjZjMC0yLjEsMC40LTQsMS01LjUKICAgICAgbC01LjIsNS4yTDE0LjQsMzAuM3ogTTE3LjEsMS4zSDIuMmwxMi41LDEyLjVjMC42LTAuNSwxLjUtMC44LDIuMy0wLjhjMC40LDAsMC44LDAuMSwxLjIsMC4yQzE5LjMsMTAuMiwxOS44LDUuOCwxNy4xLDEuM3oKICAgICAgIE0wLjIsMTYuMWw3LjUtNy41TDAuMiwxLjFDMCwwLjktMC4xLDAuNywwLDAuNEMwLjEsMC4yLDAuNCwwLDAuNiwwaDE2LjljMC4xLDAsMC4zLDAuMSwwLjQsMC4ybDcuNSw3LjVsNy41LTcuNQogICAgICBDMzMuMSwwLDMzLjQsMCwzMy42LDAuMUMzMy45LDAuMiwzNCwwLjQsMzQsMC43djE2LjhsMC4xLTAuMWMwLDAuMi0wLjEsMC40LTAuMiwwLjVsLTcuNSw3LjVsNy41LDcuNWMwLjEsMC4yLDAuMiwwLjUsMC4xLDAuNwogICAgICBjLTAuMSwwLjItMC4zLDAuNC0wLjYsMC40SDE3LjdoLTEuM2MtMC4xLTAuMS0wLjItMC4xLTAuMy0wLjJsLTcuNS03LjVsLTcuNSw3LjVDMSwzMy45LDAuNywzNCwwLjQsMzMuOUMwLjIsMzMuOCwwLDMzLjYsMCwzMy4zCiAgICAgIFYxNi41QzAsMTYuNCwwLjEsMTYuMiwwLjIsMTYuMXogTTMuNywxNC40YzMuOS0xLjMsNy40LTAuNywxMCwwLjJMOC42LDkuNUwzLjcsMTQuNHogTTEuMywzMS44bDEyLjQtMTIuNQogICAgICBDMTMuMywxOC43LDEzLDE3LjksMTMsMTdjMC0wLjQsMC4xLTAuOCwwLjItMS4yYy0zLTEuMS03LjQtMS42LTExLjksMS4xVjMxLjh6Ii8+CiAgIDwvZz4KPC9zdmc+">
     </div>
   </div>
-  <!-- pinwheel -->
 
   <div class="u-layout-wide u-layoutCenter Grid u-background-white u-hidden u-sm-hidden u-md-flex u-lg-flex">
     <div class="Grid-cell u-color-grey-30 u-border-bottom-xxs u-md-size8of12 u-lg-size8of12 u-padding-bottom-xs Header-PinWheel-Stick">
-      <div class="u-background-white u-color-grey-40">
-        <p class="u-padding-left-xl u-text-r-xxs" style="letter-spacing: 0.02em">{{ t.main_menu_label }}</p>
+      <div class="u-background-white">
+        <p class="u-padding-left-xl u-text-r-xxs u-color-grey-ui-kit" style="letter-spacing: 0.02em">{{ t.main_menu_label }}</p>
       </div>
-
       <svg height="8" width="8" style="position: absolute; right: -4px; bottom: -4px">
         <circle cx="4" cy="4" r="1" stroke="#06c" stroke-width="4" fill="#06c"></circle>
       </svg>
-
     </div>
-    <div class="Grid-cell u-color-white u-md-size1of12 u-lg-size1of12">
-    </div>
+    <div class="Grid-cell u-color-white u-md-size1of12 u-lg-size1of12"></div>
     <div class="Grid-cell u-color-grey-30 u-border-bottom-xxs u-md-size3of12 u-lg-size3of12"></div>
   </div>
 

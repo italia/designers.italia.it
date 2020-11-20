@@ -1,5 +1,5 @@
 ---
-title: Content Kit
+title: Content kit
 lang: it
 layout: download
 description: Gestisci i contenuti e organizza la strategia editoriale in modo collaborativo
@@ -15,7 +15,7 @@ tags:
 
 guidelines:
 - Linguaggio
-- 'User interface'
+- Content design
 
 download_file :
 - file : 'https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing'
@@ -51,11 +51,11 @@ download_file :
 
 carousel:
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_01.jpg'
-  label:
+  label: Esempio content kit
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_02.jpg'
-  label:
+  label: Esempi di revisione testi
 - img: '/assets/images/kits/carousel/11_ContentKit_Slide_03.jpg'
-  label:
+  label: Esempi di content design
 ---
 
 {:.u-color-50}

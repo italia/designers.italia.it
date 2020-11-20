@@ -11,31 +11,31 @@ image: /assets/images/checklists/seo-1.jpg
 
 Ecco cosa controllare per scoprire se il tuo sito web è facile da trovare tanto dagli utenti che dai motori di ricerca e cosa potresti migliorare per incrementare la visibilità dei tuoi contenuti e servizi.
 
-![]({{'/assets/images/checklists/seo-1.jpg' | relative_url }})
+![seo]({{'/assets/images/checklists/seo-1.jpg' | relative_url }})
 
 Spesso le persone cercano contenuti e servizi del tuo sito usando i motori di ricerca. Ma che cosa cercano e che parole usano per cercare? Il tuo sito web è organizzato bene per dare buone risposte alle loro domande?
-La search engine optimization (SEO) è un insieme di tecniche che ruotano attorno all’idea di organizzare contenuti e servizi web tenendo conto di come (e quanto) le persone li cercano. Ecco alcune cose da verificare subito sul tuo sito per capire se e come è necessario ottimizzarlo, dal punto di vista contenutistico e/o strutturale.  
+La search engine optimization (SEO) è un insieme di tecniche che ruotano attorno all’idea di organizzare contenuti e servizi web tenendo conto di come (e quanto) le persone li cercano. Ecco alcune cose da verificare subito sul tuo sito per capire se e come è necessario ottimizzarlo, dal punto di vista contenutistico e/o strutturale.
 
 ### Il tuo sito è sicuro, veloce e facile da usare ?
 {:data-checklist="1"}
 
-![]({{'/assets/images/checklists/seo-2.jpg' | relative_url }})
+![seo]({{'/assets/images/checklists/seo-2.jpg' | relative_url }})
 
 Per esempio, se il tuo sito non utilizza il protocollo https alcuni browser potrebbero penalizzarlo. Allo stesso modo, se il tuo sito si carica con lentezza, o se i contenuti sono difficili da leggere sullo smartphone verranno penalizzati nell’ordinamento dei risultati dei motori di ricerca.
 
 ### Hai una lista delle parole chiave del tuo sito ?
 {:data-checklist="2"}
 
-![]({{'/assets/images/checklists/seo-3.png' | relative_url }})
+![seo]({{'/assets/images/checklists/seo-3.png' | relative_url }})
 
 Pensa agli argomenti interessanti del tuo sito, e fai una lista di quelle che secondo te sono le parole che le persone inseriscono nei motori di ricerca. In genere a fondo pagina i motori di ricerca riportano una lista delle ricerche fatte dagli utenti. Puoi iniziare da questa analisi per capire se ci sono argomenti interessanti per gli utenti di cui il tuo sito dovrebbe iniziare ad occuparsi.
 
-![]({{'/assets/images/checklists/seo-4.png' | relative_url }})
+![seo]({{'/assets/images/checklists/seo-4.png' | relative_url }})
 
 ### Quali sono le pagine più visitate del tuo sito ?
 {:data-checklist="3"}
 
-![]({{'/assets/images/checklists/seo-5.png' | relative_url }})
+![seo]({{'/assets/images/checklists/seo-5.png' | relative_url }})
 
 Per fare questa analisi, puoi utilizzare alcuni strumenti gratuiti messi a disposizione dai motori di ricerca (qui sopra ad esempio Google Search Console). Prova a analizzare le pagine, e verifica se e come possono essere migliorate. Allo stesso modo, dovresti chiederti se ci sono pagine che secondo te sono utili, ma che sono poco visitate dagli utenti: a volte il motivo è che sono difficili da trovare.
 
@@ -58,12 +58,12 @@ Prendi le pagine più importanti del tuo sito: hai scritto un titolo semplice e 
 ### Stai per andare on line con una nuova versione? Non dimenticare i redirect
 {:data-checklist="7"}
 
-Quando decidi di migrare un sito devi prestare attenzione a indirizzare gli utenti verso le nuove pagine possibilmente reindirizzando ogni pagina del vecchio sito a una pagina del nuovo sito. Per migrare i contenuti dalle vecchie alle nuove URL utilizza dei redirezionamenti permanenti.  
+Quando decidi di migrare un sito devi prestare attenzione a indirizzare gli utenti verso le nuove pagine possibilmente reindirizzando ogni pagina del vecchio sito a una pagina del nuovo sito. Per migrare i contenuti dalle vecchie alle nuove URL utilizza dei redirezionamenti permanenti.
 
 ### Internet è una rete, i link sono fondamentali!
 {:data-checklist="8"}
 
-Cura con attenzione il processo di costruzione della rete di link che il tuo sito invia o riceve dall’esterno: Google e gli altri motori di ricerca valutano la natura, la provenienza e la qualità di tali link più che la loro quantità, considerandoli un elemento di autorevolezza del sito soprattutto se questi provengono da siti altrettanto autorevoli.  
+Cura con attenzione il processo di costruzione della rete di link che il tuo sito invia o riceve dall’esterno: Google e gli altri motori di ricerca valutano la natura, la provenienza e la qualità di tali link più che la loro quantità, considerandoli un elemento di autorevolezza del sito soprattutto se questi provengono da siti altrettanto autorevoli.
 Scegli oculatamente le parole cui ancorare un link (sia esso interno o esterno al sito), prediligendo porzioni di testo brevi e descrittive rispetto al contenuto cui questo rimanda.
 
 ### Attento al linguaggio, evita il burocratese
