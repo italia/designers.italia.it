@@ -16,6 +16,7 @@ $(function() {
   $('#kitdownloadbutton').on('click', function(e){
     e.preventDefault();
     $('#kitdownloadlist').toggleClass('u-hidden');
+    $(this).find('span').toggleClass('Icon-collapse').toggleClass('Icon-expand');
   });
 
   $('.categorykits-selector a').on('click', function(e) {
@@ -33,7 +34,7 @@ $(function() {
     $allkits.removeClass('hidden');
     $catdesc.addClass('hidden');
     $('.categorykits-desc.'+catkit).removeClass('hidden');
-    
+
     if (catkit!='all') {
       $kits.addClass('hidden');
     }
