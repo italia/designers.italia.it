@@ -120,6 +120,22 @@ $light-grey: #e6e9f0;
   }
 }
 
+.section-nav li {
+  a {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    color: #06c;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    font-size: 18px !important;
+  }
+  &:last-child a {
+    border-bottom: none;
+  }
+}
+
 #main {
   overflow: hidden;
 
