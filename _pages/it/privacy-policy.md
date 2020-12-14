@@ -3,6 +3,7 @@ title: Privacy Policy
 lang: it
 layout: page
 backgroundColor: '#06c'
+nodate: true
 ---
 
 ### Privacy Policy
