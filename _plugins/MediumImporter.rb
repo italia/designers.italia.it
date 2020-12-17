@@ -1,7 +1,7 @@
 #
 # Custom generator for importing Medium posts.
 # This code runs during jekyll build step.
-# Inspired by http://stackoverflow.com/questions/27828996/is-there-a-way-to-parse-external-rss-feeds-with-jekyll
+# Inspired by https://stackoverflow.com/questions/27828996/is-there-a-way-to-parse-external-rss-feeds-with-jekyll
 # Originally developed for https://teamdigitale.governo.it/
 #
 # TODO replace RSS feed with JSON, see:
