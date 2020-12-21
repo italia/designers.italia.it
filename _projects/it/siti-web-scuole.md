@@ -1,8 +1,6 @@
 ---
 title: Siti web delle scuole
 description: Modello di sito web e template grafico per le scuole italiane, gratis e a disposizione di tutti.
-#subtitle: Modello di siti web per le scuole italiane
-#payoff: Il punto di riferimento per il design dei siti web delle scuole
 logo: /assets/images/projects/logo-sitiweb-scuole.jpg
 lang: it
 order: 4
@@ -32,21 +30,23 @@ Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per off
 
 Il progetto ha raggiunto un traguardo importante a fine 2019 e i materiali (template, architettura informazione e un tema WordPress pronto all’uso) sono disponibili nel [kit per le scuole]({% link _kits/it/scuole.md %}).
 
+I risultati delle attività di ricerca sono discussi in dettaglio nella [documentazione del progetto su Docs Italia](https://docs.italia.it/italia/designers-italia/design-scuole-docs/){:target="_blank"}.
+
 ### Come partecipare
 
 Una discussione sul progetto è possibile attraverso il forum dei servizi della Pubblica Amministrazione italiana:
 
-[Vai alla sezione di Forum Italia sul progetto di design dei servizi digitali scolastici](https://forum.italia.it/t/design-dei-servizi-digitali-delle-scuole-ricerca-sugli-utenti-prototipazione-e-linee-guida-progettuali/4100){:target="_blank" rel="noopener"}
+[Vai alla sezione del forum sul progetto di design dei servizi digitali scolastici](https://forum.italia.it/t/design-dei-servizi-digitali-delle-scuole-ricerca-sugli-utenti-prototipazione-e-linee-guida-progettuali/4100){:target="_blank" rel="noopener"}
 
-Per collaborare e ricevere supporto c’è un canale Slack dedicato:
+Per collaborare e ricevere supporto sul progetto c’è inoltre un canale Slack dedicato:
 
-[Accedi al canale Slack](https://slack.developers.italia.it/){:target="_blank" rel="noopener"} ed entra nel canale [#design-siti-scuole](https://developersitalia.slack.com/archives/CQ7J0KANT){:target="_blank" rel="noopener"}.
+[Accedi al canale Slack](https://slack.developers.italia.it/){:target="_blank"} ed entra nel canale [#design-siti-scuole](https://developersitalia.slack.com/archives/CQ7J0KANT){:target="_blank"}.
 
-### Timeline del progetto
+### Fasi del progetto
 
-* luglio 2017: attività di *co-design* (workshop e interviste agli stakeholder) e *definizione del capitolato tecnico e procedure di gara*.
-* febbraio 2018: *avvio della fase di ricerca* (analisi siti esistenti, ricerca su studenti e genitori).
-* aprile 2018: *avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test).
-* settembre 2018: *rilascio progressivo della ricerca, del prototipo e della relativa documentazione*.
-* marzo 2019: *avvio realizzazione template statici e sito WordPress*.
+* luglio 2017: attività di *co-design* (workshop e interviste agli stakeholder) e *definizione del capitolato tecnico e procedure di gara*;
+* febbraio 2018: *avvio della fase di ricerca* (analisi siti esistenti, ricerca su studenti e genitori);
+* aprile 2018: *avvio della fase di progettazione e test di usabilità* (wireframing, prototipo navigabile, ui design, usability test);
+* settembre 2018: *rilascio progressivo della ricerca, del prototipo e della relativa documentazione*;
+* marzo 2019: *avvio realizzazione template statici e sito WordPress*;
 * dicembre 2019: *rilascio della prima versione del kit per creare il sito di una scuola*.

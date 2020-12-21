@@ -23,6 +23,9 @@ carousel:
   label: Esempio di A/B testing
 - img: '/assets/images/kits/carousel/15_ABTest_Slide_02.png'
   label: Esempio di A/B testing
+
+redirect_from:
+  - /kit/kits/it/ab-test
 ---
 
 {:.u-color-50}

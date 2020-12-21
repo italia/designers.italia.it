@@ -50,10 +50,13 @@ Il kit è indipendente rispetto alle scelte tecnologiche di un comune (per esemp
 Attraverso gli strumenti di Designers Italia e Developers Italia è possibile interagire, confrontarsi, ricevere feedback sul progetto e partecipare alla sua evoluzione.
 
 {:.u-color-50 .u-margin-top-xxl}
+
 ###### A COSA SERVE
 Il kit permette ai comuni di semplificare la realizzazione del sito e organizzare le informazioni in modo efficace e senza “dover reinventare ogni volta la ruota”, riducendo tempi e costi. Esso permette all’Amministrazione concentrarsi sulla produzione di servizi digitali e contenuti di qualità (all’interno di modelli di interazione con l’utente già definiti e contenuti all’interno del kit) oltre che su test di usabilità con gli utenti per avviare processi di miglioramento continuo.
 
 L’utilizzo del kit per il design dei siti comunali, che è bene inserire all’interno dei capitolati tecnici in caso di affidamento all’esterno di attività di sviluppo web, permette di attuare le linee guida di design dei siti web della Pubblica Amministrazione.
+
+[Vai alla documentazione di progetto](https://docs.italia.it/italia/designers-italia/design-comuni-docs/)
 
 {:.u-color-50 .u-margin-top-xxl}
 ###### COSA CONTIENE QUESTO KIT
