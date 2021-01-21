@@ -8,7 +8,7 @@
     </a>
   </div>
   {%- endif -%}
-  <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill {% if include.flat != true %}u-padding-r-all{% endif %}">
+  <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill {% if include.flat != true %}u-padding-r-all{% endif %} {% if include.textCenter == true %}u-textCenter{% endif %}">
     {%- if include.date -%}
     <time datetime="{{ include.date | date_to_xmlschema }}"
       class="{% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-ui-kit">
@@ -17,7 +17,11 @@
     {%- endif -%}
     <div class="u-sizeFull {% if include.flat != true %}u-padding-r-all u-xs-padding-all-none{% endif %}">
       <h3 class="u-padding-bottom-xs">
-        <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ include.link }}">
+        {% assign link_href = include.link %}
+        {%- if include.cta1 != nil -%}
+        {% assign link_href = include.cta1 %}
+        {%- endif -%}
+        <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ link_href }}">
         {{ include.title }}
         {%- if include.comingsoon -%}
         <span class="u-inlineBlock u-padding-left-xs">
@@ -44,6 +48,20 @@
         </p>
       {%- endif -%}
     </div>
+    {% if include.cta1 != nil %}
+    <div class="u-sizeFull u-padding-r-all u-xs-padding-all-none">
+      {%- if include.cta1 != nil %}
+      <p><a href="{{include.cta1}}" class="u-background-50 u-color-white u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-textUppercase u-textWeight-700 u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-0auto u-margin-bottom-m">
+          {{ include.cta1Text }}
+        </a></p>
+      {%-endif -%}
+      {%- if include.cta2 != nil %}
+      <p><a href="{{include.cta2}}" class="u-color-50 u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-margin-0auto u-margin-bottom-m">
+        {{ include.cta2Text }}
+      </a></p>
+      {%-endif -%}
+    </div>
+    {% else %}
     <div class="Grid u-sizeFull u-padding-r-top u-flexAlignSelfEnd {% if include.flat != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
         {%- if include.hasMore != false -%}
         <p class="Grid-cell {% if include.hasSocial != false %}u-layout-centerLeft {% endif %} u-flexAlignItemsCenter u-padding-r-bottom">
@@ -61,6 +79,7 @@
         </p>
         {%- endif -%}
     </div>
+    {%-endif -%}
     {%- if include.categories -%}
     <div class="u-flex u-flexAlignItemsCenter u-flexAlignContentCenter">
       {% include pills.html items = include.categories small = true %}

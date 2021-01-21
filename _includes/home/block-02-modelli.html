@@ -1,0 +1,13 @@
+<section class="u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom" style="background: #FAFAFA">
+  <div class="u-layout-wide u-layoutCenter u-padding-top-m">
+    {%- unless include.notitle -%}
+    <h2 class="u-text-r-xxl u-textWeight-700 u-color-grey-ui-kit u-textCenter">
+      {{ t.home_modelli_title }}
+    </h2>
+    <p class="u-margin-0auto u-sizeFull u-md-size1of2 u-lg-size1of2 u-text-r-m u-textWeight-400 u-color-grey-ui-kit u-padding-top-s u-padding-r-bottom u-textCenter">
+      {{ t.home_modelli_subtitle }}
+    </p>
+    {%- endunless -%}
+    {% include modelli.html layoutClass='u-margin-top-xxl' headingClass='u-block u-text-h3 u-border-bottom-xxs u-padding-bottom-m' %}
+  </div>
+</section>
