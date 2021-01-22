@@ -1,0 +1,38 @@
+<section class="u-nbfc u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl u-xs-padding-all-none u-posRelative u-zindex-30">
+  <div class="u-layout-wide u-layoutCenter u-padding-top-m">
+    <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative">
+      <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size5of12 u-lg-after1of12 u-margin-top-s">
+        {% assign head_scuole = "/assets/images/pages/head-scuole.png" | relative_url %}
+        {% capture link_modello_scuole %}{% link _kits/it/scuole.md %}{% endcapture %}
+        {% capture link_progetto_scuole %}{% link _projects/it/siti-web-scuole.md %}{% endcapture %}
+        {%- include card.html
+        title = "Sito web per la scuola"
+        text = "Modello di sito web e template CMS per i siti scolastici, gratis e a disposizione di tutti"
+        image = head_scuole
+        textCenter = true
+        hasMore = false
+        cta1Text = "Usa il modello"
+        cta1 = link_modello_scuole
+        cta2Text = "Scopri il progetto"
+        cta2 = link_progetto_scuole
+        alt = "Immagine di esempio per il modello dei siti scolastici" -%}
+      </div>
+      <div class="Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size5of12 u-lg-before1of12 u-margin-top-s">
+        {% assign head_comuni = "/assets/images/pages/head-comuni.png" | relative_url %}
+        {% capture link_modello_comuni %}{% link _kits/it/comuni.md %}{% endcapture %}
+        {% capture link_progetto_comuni %}{% link _projects/it/siti-web-comuni.md %}{% endcapture %}
+        {%- include card.html
+        title = "Sito web per il Comune"
+        text = "Modello di sito web e template grafico per i siti comunali, gratis e a disposizione di tutti"
+        image = head_comuni
+        textCenter = true
+        hasMore = false
+        cta1Text = "Usa il modello"
+        cta1 = link_modello_comuni
+        cta2Text = "Scopri il progetto"
+        cta2 = link_progetto_comuni
+        alt = "Immagine di esempio per il modello dei siti comunali" -%}
+      </div>
+    </div>
+  </div>
+</section>

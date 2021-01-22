@@ -1,5 +1,5 @@
 ---
-title: Il kit per i comuni
+title: Il modello per i siti comunali
 lang: it
 layout: download
 description: "Design del sito di un comune: architettura dell’informazione e template HTML"
