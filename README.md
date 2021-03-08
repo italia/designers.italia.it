@@ -19,3 +19,5 @@ Per configurare un ambiente di sviluppo è sufficiente eseguire i seguenti coman
 In caso di problemi con l'installazione di rmagick 4.1.2 su recenti OSX, [quest pagina](https://stackoverflow.com/questions/41647979/imagemagick-7-with-rmagick-2-16-on-macos-sierra-cant-find-magickwand-h) potrebbe essere d'aiuto.
 
 Se vuoi contribuire e proporre una modifica, è sufficiente aprire una [pull request](https://github.com/italia/designers.italia.it/pulls) su GitHub.
+
+Il sito necessita di essere ricompilato ad ogni pubblicazione su Medium.
