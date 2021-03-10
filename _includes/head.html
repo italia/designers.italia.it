@@ -20,11 +20,10 @@
 
   <link rel="preload" href="{{ '/assets/toolkit/IWT.min.js' | relative_url }}" as="script">
 
-  <!-- include html5shim per Explorer 8 -->
+  <!-- include html5shim for IE8 -->
   <script src="{{ '/assets/toolkit/vendor/modernizr.js' | relative_url }}"></script>
-  <script>{% comment %}inlined https://cdn.polyfill.io/v2/polyfill.min.js{% endcomment %}
-    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
+  <!-- include polyfill for IE11 -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
   <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/build-autoprefixed.css' | relative_url }}">
   <link media="all" rel="stylesheet" href="{{ cssurl | relative_url }}">

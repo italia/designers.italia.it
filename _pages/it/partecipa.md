@@ -10,7 +10,7 @@ blocks:
     - label: Vai al forum
       url: 'https://forum.italia.it/c/design'
 - title: Condividi la tua esperienza sul blog
-  subtitle: Il <a href="https://designers.italia.it/storie/">blog di Designers Italia</a> raccoglie case history relativi ai servizi pubblici o esperienze di trasformazione digitale che ben si applicano al mondo dei servizi pubblici. Il blog è aperto al contributo di designer e professionisti che abbiano un’esperienza significativa sul <b>design dei servizi pubblici</b> e che vogliano condividerla.<br>Se vuoi proporre un contributo scrivi all’indirizzo <a href="mailto:contatti@designers.italia.it">contatti@designers.italia.it</a> con <b>un abstract</b> della tua proposta e <b>un link</b> alla tua biografia o al tuo profilo. Valuteremo le proposte e ti contatteremo nel caso in cui decideremo di pubblicarla.
+  subtitle: Il <a href="https://designers.italia.it/notizie/">blog di Designers Italia</a> raccoglie case history relativi ai servizi pubblici o esperienze di trasformazione digitale che ben si applicano al mondo dei servizi pubblici. Il blog è aperto al contributo di designer e professionisti che abbiano un’esperienza significativa sul <b>design dei servizi pubblici</b> e che vogliano condividerla.<br>Se vuoi proporre un contributo scrivi all’indirizzo <a href="mailto:contatti@designers.italia.it">contatti@designers.italia.it</a> con <b>un abstract</b> della tua proposta e <b>un link</b> alla tua biografia o al tuo profilo. Valuteremo le proposte e ti contatteremo nel caso in cui decideremo di pubblicarla.
   img: /assets/images/pages/david-solce-184827.jpg
   button:
     - label: Mandaci la tua proposta!
