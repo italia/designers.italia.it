@@ -28,13 +28,13 @@
 <meta property="og:url" content="https://designers.italia.it/kit/comuni/">
 <meta property="og:site_name" content="Designers Italia">
 <meta property="og:type" content="article">
-<meta property="article:published_time" content="2021-03-08T15:08:14+00:00">
+<meta property="article:published_time" content="2021-03-11T11:05:35+00:00">
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Il modello per i siti comunali">
 <meta name="twitter:site" content="@designersITA">
 <meta name="twitter:creator" content="@Team per la Trasformazione Digitale e AGID">
 <script type="application/ld+json">
-{"mainEntityOfPage":{"@type":"WebPage","@id":"https://designers.italia.it/kit/comuni/"},"description":"Design del sito di un comune: architettura dell’informazione e template HTML","@type":"BlogPosting","url":"https://designers.italia.it/kit/comuni/","headline":"Il modello per i siti comunali","dateModified":"2021-03-08T15:08:14+00:00","datePublished":"2021-03-08T15:08:14+00:00","author":{"@type":"Person","name":"Team per la Trasformazione Digitale e AGID"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://designers.italia.it/assets/icons/logo-it.png"},"name":"Team per la Trasformazione Digitale e AGID"},"@context":"https://schema.org"}</script>
+{"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://designers.italia.it/assets/icons/logo-it.png"},"name":"Team per la Trasformazione Digitale e AGID"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://designers.italia.it/kit/comuni/"},"description":"Design del sito di un comune: architettura dell’informazione e template HTML","@type":"BlogPosting","author":{"@type":"Person","name":"Team per la Trasformazione Digitale e AGID"},"url":"https://designers.italia.it/kit/comuni/","headline":"Il modello per i siti comunali","dateModified":"2021-03-11T11:05:35+00:00","datePublished":"2021-03-11T11:05:35+00:00","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -42,14 +42,13 @@
 
   <link rel="preload" href="/assets/toolkit/IWT.min.js" as="script">
 
-  <!-- include html5shim per Explorer 8 -->
+  <!-- include html5shim for IE8 -->
   <script src="/assets/toolkit/vendor/modernizr.js"></script>
-  <script>
-    (function(undefined) {}).call('object' === typeof window && window || 'object' === typeof self && self || 'object' === typeof global && global || {});
-  </script>
+  <!-- include polyfill for IE11 -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
   <link media="all" rel="stylesheet" href="/assets/toolkit/build-autoprefixed.css">
-  <link media="all" rel="stylesheet" href="/assets/main.css?202103081508">
+  <link media="all" rel="stylesheet" href="/assets/main.css?202103111105">
 
   <script src="/assets/toolkit/vendor/jquery-1.12.4.min.js"></script>
 
@@ -74,7 +73,15 @@
   ga('create', 'UA-3351165-20', 'auto');
   ga('set', 'anonymizeIp', true);
   ga('send', 'pageview');
-</script></head>
+
+  var captureOutboundLink = function(url) {
+    ga('send', 'event', 'outbound', 'click', url, {
+      'transport': 'beacon',
+      'hitCallback': function(){document.location = url;}
+    });
+  }
+</script>
+</head>
 <body class="t-Pac layout-download language-it">
 <div>
   <div id="main" role="main" class="u-layoutCenter"><div class="Header u-hiddenPrint">
@@ -120,50 +127,34 @@
       </div>
     </div>
   </div>
-  
+
   <div class="Header-navbar u-background-white u-padding-r-top u-text-r-xxl">
     <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
-      <div class="Header-logo Grid-cell u-textRight u-padding-right-xs" aria-hidden="true">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="92" height="74" viewBox="0 0 92 74">
-            <g fill="#06C">
-              <path d="M31.799 71.9V15.7h15.1V72h-15.1zM91.099 28.5h-13.8v23.1c0 2.3.1 3.8.2 4.8.1.9.5 1.7 1.2 2.4s1.8 1 3.3 1l8.6-.2.7 12c-5 1.1-8.9 1.7-11.5 1.7-6.8 0-11.4-1.5-13.8-4.6-2.5-3-3.7-8.6-3.7-16.8V0h15.1v15.6h13.8v12.9zM9.099 32.8c-2.6 0-4.8-.9-6.5-2.7s-2.6-4-2.6-6.6.9-4.8 2.5-6.6c1.7-1.8 3.9-2.6 6.5-2.6s4.8.9 6.5 2.7 2.5 4 2.5 6.7-.8 4.8-2.5 6.6c-1.6 1.6-3.7 2.5-6.4 2.5z"></path>
-            </g>
-          </svg>
-        </span>
-      </div>
-      <div class="Header-title Grid-cell">
-        <h1 class="Header-titleLink">
-          <a href="/" class="u-color-50">designers Italia<br>
-            <small class="u-color-grey-ui-kit">dalla parte dei cittadini</small>
-          </a>
-        </h1>
+
+      
+      <div class="Header-Main-Logo Grid-cell u-sizeFit">
+        <img alt="Logo Designers Italia" src="/assets/images/designers-italia-logo.svg">
       </div>
 
-      <div class="Header-searchTrigger Grid-cell">
-        
-      </div>
-
-      <div class="Header-utils Grid-cell">
-        <div class="Header-social Headroom-hideme">
-          <span class="u-color-grey-ui-kit u-text-r-xxs">Seguici su</span>
-          <ul class="Header-socialIcons"><li>
+      
+      <div class="Grid-cell u-hidden u-md-inline u-lg-inline u-sizeFill u-alignMiddle u-textRight">
+        <div class="u-margin-bottom-none">
+          <span class="u-color-grey-ui-kit u-text-r-xs u-inline">Seguici su</span>
+          <ul class="Header-socialIcons u-inline"><li class="u-inline">
               <a href="https://twitter.com/DesignersITA" title="twitter">
-                <span class="Icon-twitter u-color-grey-ui-kit u-padding-r-xl"></span>
+                <span class="Icon-twitter u-color-50 u-padding-r-xl"></span>
                 <span class="u-hiddenVisually">Twitter</span></a>
-            </li><li>
+            </li><li class="u-inline">
               <a href="https://medium.com/designers-italia" title="medium">
-                <span class="Icon-medium u-color-grey-ui-kit u-padding-r-xl"></span>
+                <span class="Icon-medium u-color-50 u-padding-r-xl"></span>
                 <span class="u-hiddenVisually">Medium</span></a>
             </li></ul>
         </div>
-
-        
-
       </div>
 
-      <div class="Header-toggle Grid-cell">
-        <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
+      
+      <div class="Header-toggle Grid-cell u-md-hidden u-lg-hidden u-sizeFill u-textRight">
+        <a class="u-margin-all-xl Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
           <span class="Hamburger-toggle" role="presentation"></span>
           <span class="Header-toggleText" role="presentation">Menu</span>
         </a>
@@ -181,9 +172,7 @@
 
   <div class="u-layout-wide u-layoutCenter Grid u-background-white u-hidden u-sm-hidden u-md-flex u-lg-flex">
     <div class="Grid-cell u-color-grey-30 u-border-bottom-xxs u-md-size8of12 u-lg-size8of12 u-padding-bottom-xs Header-PinWheel-Stick">
-      <div class="u-background-white">
-        <p class="u-padding-left-xl u-text-r-xxs u-color-grey-ui-kit" style="letter-spacing: 0.02em">Il design system della Pubblica Amministrazione italiana</p>
-      </div>
+      <div class="u-background-white u-padding-all-xs"></div>
       <svg height="8" width="8" style="position: absolute; right: -4px; bottom: -4px">
         <circle cx="4" cy="4" r="1" stroke="#06c" stroke-width="4" fill="#06c"></circle>
       </svg>
@@ -290,9 +279,9 @@
 
       
 
-  		<a href="/timeline/" class="Linklist-link" data-megamenu-class="">
+  		<a href="/attivita/" class="Linklist-link" data-megamenu-class="">
         
-				Timeline
+				Attività
         
   		</a>
       
@@ -464,11 +453,11 @@ background-image: url(/assets/images/kits/backgrounds/16_Comuni_Background.png);
     <div class="Download-inner"><a class="download-button--float Button Button--shadow u-text-r-xs u-background-teal-60 u-color-grey-ui-kit" id="kitdownloadbutton" href="#" title="scarica il kit">
         scarica il kit<span class="u-text-r-xxs Icon Icon-expand u-floatRight"></span>
       </a>
-      <ul class="Download-list u-border-all-xs u-color-teal-60 u-padding-all-none u-hidden" id="kitdownloadlist"><li class="u-padding-bottom-m u-padding-top-m u-padding-left-xs u-padding-right-xs u-textLeft u-color-teal-60 u-border-bottom-xs"><a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit" class="u-color-grey-ui-kit u-textClean" target="_blank" rel="noopener">Architettura dell’informazione
+      <ul class="Download-list u-border-all-xs u-color-teal-60 u-padding-all-none u-hidden" id="kitdownloadlist"><li class="u-padding-bottom-m u-padding-top-m u-padding-left-xs u-padding-right-xs u-textLeft u-color-teal-60 u-border-bottom-xs"><a href="https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit" id="architettura-dell-informazione" class="ga-kit-download u-color-grey-ui-kit u-textClean" target="_blank" rel="noopener" onclick="captureOutboundLink('https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit'); return false;">Architettura dell’informazione
               <span class="u-text-r-xs Icon Icon-arrow-right u-floatRight"></span>
-            </a></li><li class="u-padding-bottom-m u-padding-top-m u-padding-left-xs u-padding-right-xs u-textLeft u-color-teal-60 u-border-bottom-xs"><a href="https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html" class="u-color-grey-ui-kit u-textClean" target="_blank" rel="noopener">Template HTML basati su Bootstrap Italia
+            </a></li><li class="u-padding-bottom-m u-padding-top-m u-padding-left-xs u-padding-right-xs u-textLeft u-color-teal-60 u-border-bottom-xs"><a href="https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html" id="template-html-basati-su-bootstrap-italia" class="ga-kit-download u-color-grey-ui-kit u-textClean" target="_blank" rel="noopener" onclick="captureOutboundLink('https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html'); return false;">Template HTML basati su Bootstrap Italia
               <span class="u-text-r-xs Icon Icon-arrow-right u-floatRight"></span>
-            </a></li><li class="u-padding-bottom-m u-padding-top-m u-padding-left-xs u-padding-right-xs u-textLeft u-color-teal-60"><a href="https://italia.github.io/design-comuni-prototipi/it/esempi.html" class="u-color-grey-ui-kit u-textClean" target="_blank" rel="noopener">Alcuni esempi di realizzazione
+            </a></li><li class="u-padding-bottom-m u-padding-top-m u-padding-left-xs u-padding-right-xs u-textLeft u-color-teal-60"><a href="https://italia.github.io/design-comuni-prototipi/it/esempi.html" id="alcuni-esempi-di-realizzazione" class="ga-kit-download u-color-grey-ui-kit u-textClean" target="_blank" rel="noopener" onclick="captureOutboundLink('https://italia.github.io/design-comuni-prototipi/it/esempi.html'); return false;">Alcuni esempi di realizzazione
               <span class="u-text-r-xs Icon Icon-arrow-right u-floatRight"></span>
             </a></li></ul></div>
   </div>
@@ -817,7 +806,7 @@ Il kit non contiene una descrizione dettagliata delle caratteristiche dei singol
  <script> __PUBLIC_PATH__ = '/assets/toolkit/'</script>
  <script src="/assets/toolkit/IWT.min.js"></script>
 
-<script src="/assets/scripts/main.js?202103081508"></script>
+<script src="/assets/scripts/main.js?202103111105"></script>
 
 <script>
   $(document).on('keydown', function(e) {
