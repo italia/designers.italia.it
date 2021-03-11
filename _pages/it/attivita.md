@@ -1,6 +1,6 @@
 ---
-title: Timeline
-description: Alcuni dei risultati che Designers Italia ha raggiunto negli ultimi anni.
+title: Attività
+description: Le attività e i principali risultati che Designers Italia ha raggiunto negli ultimi anni.
 layout: post
 lang: it
 toc: true
@@ -12,5 +12,7 @@ nodate: true
 redirect_from:
   - /it/roadmap/
   - /roadmap/
+  - /it/timeline/
+  - /timeline/
 ---
-{% include timeline.html %}
+{% include attivita.html %}
