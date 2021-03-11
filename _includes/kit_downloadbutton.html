@@ -21,7 +21,7 @@
           {%- endunless -%}
           <li class="u-padding-bottom-m u-padding-top-m u-padding-left-xs u-padding-right-xs u-textLeft u-color-teal-60 {% unless forloop.last %}u-border-bottom-xs{% endunless%}">
             {%- if downloadUrl -%}
-            <a href="{{downloadUrl}}" class="u-color-grey-ui-kit u-textClean" target="_blank" rel="noopener">{{item.caption}}
+            <a href="{{downloadUrl}}" id="{{item.caption| slugify}}" class="ga-kit-download u-color-grey-ui-kit u-textClean" target="_blank" rel="noopener" onclick="captureOutboundLink('{{downloadUrl}}'); return false;">{{item.caption}}
               <span class="u-text-r-xs Icon Icon-arrow-right u-floatRight"></span>
             </a>
             {%- else -%}

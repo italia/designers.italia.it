@@ -21,64 +21,36 @@
       </div>
     </div>
   </div>
-  {% comment %}{% include header-english.html %}{% endcomment %}
+
   <div class="Header-navbar u-background-white u-padding-r-top u-text-r-xxl">
     <div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
-      <div class="Header-logo Grid-cell u-textRight u-padding-right-xs" aria-hidden="true">
-        <span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="92" height="74" viewBox="0 0 92 74">
-            <g fill="#06C">
-              <path d="M31.799 71.9V15.7h15.1V72h-15.1zM91.099 28.5h-13.8v23.1c0 2.3.1 3.8.2 4.8.1.9.5 1.7 1.2 2.4s1.8 1 3.3 1l8.6-.2.7 12c-5 1.1-8.9 1.7-11.5 1.7-6.8 0-11.4-1.5-13.8-4.6-2.5-3-3.7-8.6-3.7-16.8V0h15.1v15.6h13.8v12.9zM9.099 32.8c-2.6 0-4.8-.9-6.5-2.7s-2.6-4-2.6-6.6.9-4.8 2.5-6.6c1.7-1.8 3.9-2.6 6.5-2.6s4.8.9 6.5 2.7 2.5 4 2.5 6.7-.8 4.8-2.5 6.6c-1.6 1.6-3.7 2.5-6.4 2.5z"></path>
-            </g>
-          </svg>
-        </span>
-      </div>
-      <div class="Header-title Grid-cell">
-        <h1 class="Header-titleLink">
-          <a href="{{ '/' | relative_url }}" class="u-color-50">{{ t.site_title | default: site.title | escape }}{%- if site.pill -%}
-            <span class="u-lg-hidden u-md-hidden u-sm-hidden u-cf u-padding-top-xxs u-block"></span>
-            <span class="u-color-20 u-text-xxs u-alignMiddle u-padding-right-xxs u-padding-left-xxs">{{ site.pill }}</span>
-            {%- endif - %}<br>
-            <small class="u-color-grey-ui-kit">{{ t.site_subtitle | default: site.subtitle | escape }}</small>
-          </a>
-        </h1>
+
+      {% comment %}Main logo{% endcomment %}
+      <div class="Header-Main-Logo Grid-cell u-sizeFit">
+        <img alt="Logo Designers Italia" src="{{ '/assets/images/designers-italia-logo.svg' | relative_url }}" />
       </div>
 
-      <div class="Header-searchTrigger Grid-cell">
-        {% if include.hasSearch %}
-        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search u-background-50" title="{{ t.search_form_on }}" aria-label="{{ t.search_form_on }}" aria-hidden="false">
-        </button>
-        <button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden u-background-50" title="{{ t.search_form_off }}" aria-label="{{ t.search_form_off }}" aria-hidden="true">
-        </button>
-        {% endif %}
-      </div>
-
-      <div class="Header-utils Grid-cell">
-        <div class="Header-social Headroom-hideme">
-          <span class="u-color-grey-ui-kit u-text-r-xxs">{{ t.follow_us | capitalize }}</span>
-          <ul class="Header-socialIcons">
+      {% comment %}Social Icons{% endcomment %}
+      <div class="Grid-cell u-hidden u-md-inline u-lg-inline u-sizeFill u-alignMiddle u-textRight">
+        <div class="u-margin-bottom-none">
+          <span class="u-color-grey-ui-kit u-text-r-xs u-inline">{{ t.follow_us | capitalize }}</span>
+          <ul class="Header-socialIcons u-inline">
             {%- for social in site.data.social -%}
             {%- if social[1].link -%}
-            <li>
+            <li class="u-inline">
               <a href="{{ social[1].link }}" title="{{ social[1].name }}">
-                <span class="Icon-{{ social[0] }} u-color-grey-ui-kit u-padding-r-xl"></span>
+                <span class="Icon-{{ social[0] }} u-color-50 u-padding-r-xl"></span>
                 <span class="u-hiddenVisually">{{ social[1].name | capitalize }}</span></a>
             </li>
             {%- endif -%}
             {%- endfor -%}
           </ul>
         </div>
-
-        {% if include.hasSearch %}
-        <div class="Header-search" id="header-search">
-          {% include search_form.html %}
-        </div>
-        {% endif %}
-
       </div>
 
-      <div class="Header-toggle Grid-cell">
-        <a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="{{ t.toggle_menu_label }}" title="{{ t.toggle_menu_label }}">
+      {% comment %}Mobile menu{% endcomment %}
+      <div class="Header-toggle Grid-cell u-md-hidden u-lg-hidden u-sizeFill u-textRight">
+        <a class="u-margin-all-xl Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu" aria-controls="menu" aria-label="{{ t.toggle_menu_label }}" title="{{ t.toggle_menu_label }}">
           <span class="Hamburger-toggle" role="presentation"></span>
           <span class="Header-toggleText" role="presentation">Menu</span>
         </a>
@@ -96,9 +68,7 @@
 
   <div class="u-layout-wide u-layoutCenter Grid u-background-white u-hidden u-sm-hidden u-md-flex u-lg-flex">
     <div class="Grid-cell u-color-grey-30 u-border-bottom-xxs u-md-size8of12 u-lg-size8of12 u-padding-bottom-xs Header-PinWheel-Stick">
-      <div class="u-background-white">
-        <p class="u-padding-left-xl u-text-r-xxs u-color-grey-ui-kit" style="letter-spacing: 0.02em">{{ t.main_menu_label }}</p>
-      </div>
+      <div class="u-background-white u-padding-all-xs"></div>
       <svg height="8" width="8" style="position: absolute; right: -4px; bottom: -4px">
         <circle cx="4" cy="4" r="1" stroke="#06c" stroke-width="4" fill="#06c"></circle>
       </svg>
