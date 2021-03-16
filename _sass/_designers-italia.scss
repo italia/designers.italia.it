@@ -299,6 +299,24 @@ html {
     margin-top: 0 !important;
   }
 }
+.notizie-inline {
+  @media screen and (min-width: 1440px) {
+    .u-nbfc {min-height: 320px;}
+  }
+  .notizie-inline-image {
+    background-size: cover;
+    background-position: center;
+    @media screen and (max-width: 1440px) {
+      min-height: 240px;
+    }
+  }
+}
+.notizie-post {
+  @media screen and (min-width: 768px) {
+    .u-nbfc {min-height: 320px;}
+  }
+
+}
 .Hero-Title {
   &-inner {
     @media screen and (min-width: 992px) {
