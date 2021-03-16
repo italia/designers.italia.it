@@ -24,7 +24,7 @@
         {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at"
         | reverse -%}
         {%- for post in posts -%}
-        {%- if post.id contains "655a6e439a76" -%}
+        {%- if post.id contains "bd486dff2a6d" -%}
         {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
         {% assign _excerpt = post.medium_subtitle | strip_html %}
         {% assign _url = post.medium_url %}
@@ -70,10 +70,10 @@
         <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
           {% include card.html
           date_prepend = "Storia "
-          date = "22/02/2021"
+          date = "16/03/2021"
           title = "Dietro le quinte del sito MITD"
           text = "Come abbiamo riprogettato il sito del Ministro per l’innovazione tecnologica e la transizione digitale"
-          link = "https://medium.com/designers-italia/dietro-le-quinte-del-sito-mid-dalla-ricerca-alla-pubblicazione-online-655a6e439a76"
+          link = "https://medium.com/designers-italia/dietro-le-quinte-del-sito-mitd-dalla-ricerca-alla-pubblicazione-online-2a-parte-da691f8dc063"
           link_text = "Storia su Medium"
           hasSocial = false
           target = '_blank'
