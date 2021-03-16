@@ -23,7 +23,8 @@
         {%- if site.medium_feed -%}
         {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at"
         | reverse -%}
-        {%- for post in posts limit: 1 -%}
+        {%- for post in posts -%}
+        {%- if post.id contains "655a6e439a76" -%}
         {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
         {% assign _excerpt = post.medium_subtitle | strip_html %}
         {% assign _url = post.medium_url %}
@@ -37,12 +38,14 @@
             text = "Pubblicati i risultati della ricerca dedicata a progettisti e sviluppatori dei servizi pubblici digitali"
             link_text = "Storia su Medium"
             hasImage = true
+            hasSocial = false
             rowImage = true
             image = post.medium_preview_image_url
             target = "_blank"
             classes = "u-background-grey-15"
           %}
         </div>
+        {%- endif -%}
         {%- endfor -%}
         {%- endif -%}
 
@@ -58,6 +61,7 @@
           text = "Venerdì 19 marzo non perdere l’appuntamento di Designers Italia alla Milano digital week 2021"
           link = "https://ec.europa.eu/eusurvey/runner/DesignersItaliaMDW"
           link_text = "Iscriviti"
+          hasSocial = false
           target = '_blank'
           classes = "u-background-grey-15"
           %}
@@ -71,6 +75,7 @@
           text = "Come abbiamo riprogettato il sito del Ministro per l’innovazione tecnologica e la transizione digitale"
           link = "https://medium.com/designers-italia/dietro-le-quinte-del-sito-mid-dalla-ricerca-alla-pubblicazione-online-655a6e439a76"
           link_text = "Storia su Medium"
+          hasSocial = false
           target = '_blank'
           classes = "u-background-grey-15"
           %}
