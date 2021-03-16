@@ -2,7 +2,7 @@
 
 [![CircleCI](https://circleci.com/gh/italia/designers.italia.it.svg?style=svg)](https://circleci.com/gh/italia/designers.italia.it)
 
-Questo repository contiene il codice sorgente di [Designers Italia](https://designers.italia.it), **la comunità dei designer dei servizi pubblici digitali in Italia**.
+Questo repository contiene il codice sorgente di [Designers Italia](https://designers.italia.it), **il punto di riferimento per la progettazione dei servizi pubblici digitali**.
 
 Il repository contiene anche alcuni asset (es. file sketch) o i riferimenti agli asset (es. link a un documento docs italia, oppure a un altro repo specifico) dei kit per il design della Pubblica Amministrazione italiana.
 
