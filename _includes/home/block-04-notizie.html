@@ -24,6 +24,9 @@
         {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at"
         | reverse -%}
         {%- for post in posts -%}
+        {% comment %}
+        Hardcoded post ID - to be fixed once "notizie" section will be ready
+        {% endcomment %}
         {%- if post.id contains "bd486dff2a6d" -%}
         {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
         {% assign _excerpt = post.medium_subtitle | strip_html %}
@@ -50,7 +53,7 @@
         {%- endif -%}
 
         {% comment %}
-        This part is in use until we'll be using proper posts
+        This part is in use until we'll be using proper posts - to be fixed once "notizie" section will be ready
         {% endcomment %}
 
         <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
@@ -82,7 +85,7 @@
         </div>
 
         {% comment %}
-        This part will be in use when we'll be using proper posts
+        This part will be in use once "notizie" section will be ready
         {% for post in site.posts limit: 2 %}
         {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
         <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">

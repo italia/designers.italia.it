@@ -35,7 +35,7 @@ module Jekyll
     priority :high
 
     def generate(site)
-      blog_tags_directory = site.config['blog_tags_directory'] || '/storie/tags'
+      blog_tags_directory = site.config['blog_tags_directory'] || '/notizie/tags'
       feed_url = Jekyll.configuration({})['medium_archive_url']
       puts "[*] Fetching Medium feed from: " + feed_url
 
@@ -80,7 +80,7 @@ module Jekyll
 
         puts "Parsing post with id: " + item['id']
 
-        path = "storie/" + item['id']
+        path = "notizie/" + item['id']
         path = site.in_source_dir(path)
         doc = Jekyll::Document.new(path, {
           site: site,
