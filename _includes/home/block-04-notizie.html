@@ -23,11 +23,8 @@
         {%- if site.medium_feed -%}
         {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at"
         | reverse -%}
-        {%- for post in posts -%}
-        {% comment %}
-        Hardcoded post ID - to be fixed once "notizie" section will be ready
-        {% endcomment %}
-        {%- if post.id contains "bd486dff2a6d" -%}
+        {%- for post in posts limit: 1 -%}
+
         {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
         {% assign _excerpt = post.medium_subtitle | strip_html %}
         {% assign _url = post.medium_url %}
@@ -46,69 +43,36 @@
             image = post.medium_preview_image_url
             target = "_blank"
             classes = "u-background-grey-15"
+            flatTitle= true
           %}
         </div>
-        {%- endif -%}
+        
         {%- endfor -%}
         {%- endif -%}
 
-        {% comment %}
-        This part is in use until we'll be using proper posts - to be fixed once "notizie" section will be ready
-        {% endcomment %}
-
-        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
-          {% include card.html
-          date_prepend = "Articolo "
-          date = "11/03/2021"
-          title = "Progettare servizi pubblici digitali più equi e sostenibili"
-          text = "Venerdì 19 marzo non perdere l’appuntamento di Designers Italia alla Milano digital week 2021"
-          link = "https://ec.europa.eu/eusurvey/runner/DesignersItaliaMDW"
-          link_text = "Iscriviti"
-          hasSocial = false
-          target = '_blank'
-          classes = "u-background-grey-15"
-          %}
-        </div>
-
-        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
-          {% include card.html
-          date_prepend = "Storia "
-          date = "16/03/2021"
-          title = "Dietro le quinte del sito MITD"
-          text = "Come abbiamo riprogettato il sito del Ministro per l’innovazione tecnologica e la transizione digitale"
-          link = "https://medium.com/designers-italia/dietro-le-quinte-del-sito-mitd-dalla-ricerca-alla-pubblicazione-online-2a-parte-da691f8dc063"
-          link_text = "Storia su Medium"
-          hasSocial = false
-          target = '_blank'
-          classes = "u-background-grey-15"
-          %}
-        </div>
-
-        {% comment %}
-        This part will be in use once "notizie" section will be ready
         {% for post in site.posts limit: 2 %}
         {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
+        {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
         <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
           {% include card.html
-            date_prepend = "Articolo "
+            date_prepend = post.date_prepend
             date = post.date
             title = post.title
             alt = post.title
             text = _excerpt
             link = post.url
+            homeBottomLink = post.homeBottomLink
             classes = 'u-background-grey-15'
+            categories = showCategories
           %}
         </div>
         {% endfor %}
-        {% endcomment %}
 
       </div>
-      {% comment %}
-      <div class="u-margin-top-xl u-margin-bottom-xxl">
-        <a class="Button Button--link Button--round u-borderShadow-xl u-background-white u-textClean u-color-50 u-text-r-xs u-textWeight-700 u-padding-r-all"
-           href="/partecipa">Vedi tutte</a>
+      <div class="u-margin-top-xl u-margin-bottom-xxl u-textCenter">
+        <a class="u-background-teal-60 u-color-grey-ui-kit u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-textUppercase u-textWeight-700 u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-right-m u-margin-bottom-m"
+           href="/notizie">Esplora le notizie</a>
       </div>
-      {% endcomment %}
     </div>
   </div>
   <div class="u-textCenter u-xs-margin-top-none u-xs-padding-top-none u-padding-top-xxl"

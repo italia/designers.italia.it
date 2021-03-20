@@ -1,4 +1,4 @@
-<div class="u-nbfc u-color-grey-30 u-xs-padding-all-none
+<div class="{% if include.noHeight != true %}u-nbfc{% endif %} u-color-grey-30 u-xs-padding-all-none
   {% if include.flat != true %}u-borderShadow-xxs u-xs-borderShadow-none u-borderRadius-m{% endif %}
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
   {%- if include.hasImage != false and include.image -%}
@@ -21,7 +21,7 @@
       {% include date_format.html date=include.date %}
     </time>
     {%- endif -%}
-    <div class="u-sizeFull {% if include.flat != true %}u-padding-r-all{% endif %}">
+    <div class="u-sizeFull {% if include.flat != true and include.flatTitle != true %}u-padding-r-all{% endif %}">
       <h3 class="u-padding-bottom-xs">
         {%- if include.hasMore != false -%}
           {% assign link_href = include.link %}
@@ -54,7 +54,7 @@
       {%- endif -%}
       {%- if include.text != '' -%}
         <p class="Content u-text-p u-text-r-xxs u-textSecondary u-padding-r-bottom">
-          {{ include.text }}
+          {{ include.text  | strip_html }}
         </p>
       {%- endif -%}
     </div>
@@ -73,7 +73,7 @@
     </div>
     {% else %}
     <div class="Grid u-sizeFull u-flexAlignSelfEnd {% if include.flat != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
-        {%- if include.hasMore != false -%}
+        {%- if include.hasMore != false and include.homeBottomLink != false -%}
         <p class="Grid-cell {% if include.hasSocial != false %}u-layout-centerLeft {% endif %} u-flexAlignItemsCenter u-padding-r-bottom">
           <a href="{{ include.link }}" {% if include.target == '_blank' %}target="_blank"{% endif %} class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">
           {{ include.link_text | default: t.home_projects_expand }} <span class="Icon {% if include.target == '_blank' %}Icon-external-link{%else%}Icon-chevron-right{% endif %} u-margin-left-xxs u-text-xxs"></span>
