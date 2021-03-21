@@ -37,7 +37,6 @@ lang: it
   <div class="Grid">
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <div class="u-margin-r-top u-margin-r-bottom">
-        <!-- <p class="u-text-r-xs u-lineHeight-xl u-color-grey-ui-kit">Nel <span class=" u-text-r-xs u-textWeight-600">blog di Designers Italia</span> puoi trovare casi di studio, racconti di esperienze ed esempi sui vari temi legati al <span class="u-text-r-xs u-textWeight-600">design dei servizi pubblici</span>. Il blog ospita anche dei <a href="{{ '/notizie/tags/guest-post/' | relative_url }}" class="u-text-r-xs u-textItalic u-textClean u-color-50">guest post</a> dove i designer possono raccontare il loro punto di vista e le loro esperienze nell’ambito della <span class="u-text-r-xs u-textWeight-600">trasformazione digitale</span></p> -->
         <h2 class="u-color-grey-ui-kit u-text-r-m u-textWeight-400 u-margin-r-bottom">{{ t.news_main_title }}</h2>
       </div>
       {% for post in posts limit: 10 %}
@@ -105,9 +104,6 @@ lang: it
           {% endfor %}
       </div>
     </div>
-<!--     
-    {% capture pills %} {% include pills.html items = site.medium_all_tags small = true %} {% endcapture %}
-    {% include sideblock.html title = t.news_nav_titleNew content = pills %} -->
   </div>
 </div>
 {% endif %}
