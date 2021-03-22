@@ -14,10 +14,11 @@ layout: default
 
 <article itemscope itemtype="http://schema.org/BlogPosting" class="u-background-white u-nbfc">
   {% if page.blueBlock %}
-  <div class="page-hero u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover" aria-hidden="true" style="{% include background-style.html %}">
+  <div class="page-hero u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover" aria-hidden="true" style="{% include background-style.html %}">BLUE
     <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
       <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
         <div class="u-textCenter u-padding-bottom-xl ">
+          {% comment %}
           {% if page.categories %}
           <div class="u-layoutCenter u-textCenter u-margin-all-xl">
             <ul class="Category">
@@ -27,6 +28,7 @@ layout: default
             </ul>
           </div>
           {% endif %}
+          {% endcomment %}
           {% if page.nodate != true %}
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-color-white">{{ page.date | date: "%-d %b %Y" }}</time>
           {% endif %}
@@ -43,9 +45,10 @@ layout: default
   {% endif %}
   <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
     <div class="Grid Grid--alignCenter">
-      <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
+      <div class="Grid-cell u-sizeFull u-md-size8of12 u-lg-size8of12">
         {% if page.blueBlock != true %}
         <div class="u-textCenter u-padding-bottom-xl">
+          {% comment %}
           {% if page.categories %}
               <div class="u-layoutCenter u-textCenter u-margin-all-xl">
                 <ul class="Category" >
@@ -57,7 +60,7 @@ layout: default
                 </ul>
               </div>
             {% endif %}
-
+          {% endcomment %}
           {% if page.nodate != true %}
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-textSecondary">
             {{ page.date | date: "%-d %b %Y" }}</time>
@@ -71,13 +74,17 @@ layout: default
               {{ page.title }}</h1>
 
             {% if page.subtitle %}
-            <h2 class="u-layoutCenter u-textCenter u-color-grey-ui-kit u-text-r-m u-textWeight-300 u-margin-bottom-s"
-              style="max-width:24em">{{ page.subtitle }}</h2>
+            <h2 class="u-layoutCenter u-textCenter u-color-grey-ui-kit u-text-r-xs u-textWeight-300 u-margin-bottom-s u-textItalic"
+              style="max-width:32em">{{ page.subtitle }}</h2>
             {% endif %}
 
             <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-r-bottom"
-              style="max-width: 15em" />
+              style="max-width: 34em" />
 
+            {% if page.asset %}
+            {{ page.asset }}
+            {% endif %}
+            
             {% if page.author %}
               <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
                 <span itemprop="name" class="u-text-r-xs u-textSecondary">{{ t.by }} {{ page.author }}</span>

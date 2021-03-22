@@ -39,7 +39,8 @@ lang: it
       <div class="u-margin-r-top u-margin-r-bottom">
         <h2 class="u-color-grey-ui-kit u-text-r-m u-textWeight-400 u-margin-r-bottom">{{ t.news_main_title }}</h2>
       </div>
-      {% for post in posts limit: 10 %}
+      {%- assign limitPostToShow = site.data.medium_posts.limitPostToShow | default: 5 -%}
+      {% for post in posts limit: limitPostToShow %}
       {% assign _excerpt = post.medium_subtitle | strip_html %}
       {% assign _url = post.medium_url %}
       {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
