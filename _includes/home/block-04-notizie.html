@@ -23,31 +23,41 @@
         {%- if site.medium_feed -%}
         {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at"
         | reverse -%}
-        {%- for post in posts limit: 1 -%}
+        {%- assign showThisMediumPost = site.data.medium_posts.idForHome -%}
+        {%- if showThisMediumPost != nil -%}
+        {%- for findMediumPost in posts -%}
+        {%- if findMediumPost.uniqueId == showThisMediumPost -%}
+        {%- assign mediumPost = findMediumPost -%}
+        {% endif -%}
+        {%- endfor -%}
+        {%- else -%}
+        {%- for findMediumPost in posts limit: 1 -%}
+        {%- assign mediumPost = findMediumPost -%}
+        {%- endfor -%}
+        {%- endif -%}
 
-        {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
-        {% assign _excerpt = post.medium_subtitle | strip_html %}
-        {% assign _url = post.medium_url %}
+        {% assign _date = mediumPost.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
+        {% assign _excerpt = mediumPost.medium_subtitle | strip_html %}
+        {% assign _url = mediumPost.medium_url %}
         <div class="notizie-inline Grid-cell u-lg-size2of4 u-margin-top-s">
           {% include card.html
             date_prepend = "Storia "
             date = _date
-            title = post.medium_title
-            alt = post.medium_title
+            title = mediumPost.medium_title
+            alt = mediumPost.medium_title
             link = _url
             text = "Pubblicati i risultati della ricerca dedicata a progettisti e sviluppatori dei servizi pubblici digitali"
             link_text = "Storia su Medium"
             hasImage = true
             hasSocial = false
             rowImage = true
-            image = post.medium_preview_image_url
+            image = mediumPost.medium_preview_image_url
             target = "_blank"
             classes = "u-background-grey-15"
             flatTitle= true
           %}
         </div>
-        
-        {%- endfor -%}
+
         {%- endif -%}
 
         {% for post in site.posts limit: 2 %}
