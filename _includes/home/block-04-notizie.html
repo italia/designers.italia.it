@@ -26,7 +26,7 @@
         {%- assign showThisMediumPost = site.data.medium_posts.idForHome -%}
         {%- if showThisMediumPost != nil -%}
         {%- for findMediumPost in posts -%}
-        {%- if findMediumPost.uniqueId == showThisMediumPost -%}
+        {%- if findMediumPost.medium_post_id == showThisMediumPost -%}
         {%- assign mediumPost = findMediumPost -%}
         {% endif -%}
         {%- endfor -%}
@@ -59,8 +59,9 @@
         </div>
 
         {%- endif -%}
-
-        {% for post in site.posts limit: 2 %}
+        {% assign pinnedPosts = site.posts | where: "pinned", true %}
+        {% for post in pinnedPosts %}
+        {% assign pinnedPostsCount = pinnedPostsCount | plus: 1 %}
         {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
         {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
         <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
@@ -77,7 +78,25 @@
           %}
         </div>
         {% endfor %}
-
+        {% assign normalPosts = site.posts | where: "pinned", nil %}
+        {% assign normalPostsToShow =  2 | minus: pinnedPostsCount %}
+        {%- if normalPostsToShow > 0 -%}
+        {% for post in normalPosts limit: normalPostsToShow %}
+        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
+          {% include card.html
+            date_prepend = post.date_prepend
+            date = post.date
+            title = post.title
+            alt = post.title
+            text = _excerpt
+            link = post.url
+            homeBottomLink = post.homeBottomLink
+            classes = 'u-background-grey-15'
+            categories = showCategories
+          %}
+        </div>
+        {% endfor %}
+        {% endif %}
       </div>
       <div class="u-margin-top-xl u-margin-bottom-xxl u-textCenter">
         <a class="u-background-teal-60 u-color-grey-ui-kit u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-textUppercase u-textWeight-700 u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-right-m u-margin-bottom-m"

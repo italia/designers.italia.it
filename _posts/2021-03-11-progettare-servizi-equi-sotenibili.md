@@ -3,15 +3,17 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "Progettare servizi pubblici digitali più equi e sostenibili"
-ref: progettare-servizi-pubblici-digitali-equi-e-sostenibili
+subtitle: "Venerdì 19 marzo non perdere l’appuntamento di Designers Italia alla Milano digital week 2021"
+date: 2021-03-11 09:00:00
+pinned: true
+nodate: false
 homeBottomLink: false
 homeHideCategories: true
-date_prepend: "News"
+date_prepend: "Analisi"
 categories:
   - cittadini
+  - pubblica amministrazione
 ---
-
-_Venerdì 19 marzo non perdere l’appuntamento di Designers Italia alla Milano digital week 2021_
 
 <!-- MORE -->
 
