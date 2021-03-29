@@ -3,9 +3,9 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "News di prova"
-subtitle: "News di prova con esempi di formattazione del testo"
+subtitle: "News di prova con esempi di formattazione del testo e link"
 asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
-date: 2021-03-02 09:00:00
+date: 2021-01-10 23:00:00
 pinned: false
 nodate: false
 homeBottomLink: false
@@ -25,7 +25,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * elenco 1
 * elenco 2
 
-[esempio di link](https://ec.europa.eu/eusurvey/runner/DesignersItaliaMDW){:target="_blank" rel="noopener noreferrer"}
+1. elenco 1
+2. elenco 2
+3. elenco 3
+
+
+
+[esempio di link esterno](https://ec.europa.eu/eusurvey/runner/DesignersItaliaMDW){:target="_blank" rel="noopener noreferrer"}  
+[esempio di link interno]({{ site.baseurl }}/assets/docs/esempio1.pdf){:target="_blank" rel="noopener noreferrer"}  
+
 
 {:.u-text-r-xxs.u-textRight}
 _Fotografia di [Elena G](https://unsplash.com/@lelena_g){:target="_blank" rel="noopener noreferrer"} su [Unsplash](https://unsplash.com/photos/MKwBr8JFCgs){:target="_blank" rel="noopener noreferrer"}_
