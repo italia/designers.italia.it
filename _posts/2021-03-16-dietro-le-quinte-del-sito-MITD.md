@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Dietro le quinte del sito MITD"
 subtitle: "Venerdì 19 marzo non perdere l’appuntamento di Designers Italia alla Milano digital week 2021"
-asset: <img class="u-sizeFull" src="/assets/images/posts/blo-1.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
+asset: <img class="u-sizeFull" src="/assets/images/posts/blog-1.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
 date: 2021-03-16 09:00:00
 nodate: false
 homeBottomLink: false
