@@ -44,7 +44,7 @@ lang: it
       {%- if mediumPostidForHome != 0 -%}
       {% for post in posts %}
       {%- if post.medium_post_id == mediumPostidForHome -%}
-      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
+      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30 u-posRelative">
         {% include card.html
         date = _date
         author = post.medium_author
@@ -116,12 +116,13 @@ lang: it
           {%- if post.pinned -%}
           {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
           {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
-          <div class="notizie-post Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-margin-bottom-xl">
+          <div class="notizie-post Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-margin-bottom-xl u-posRelative">
             {% include card.html
               noHeight = true
               date_prepend = post.date_prepend
               date = post.date
               title = post.title
+              subtitle = post.subtitle
               alt = post.title
               text = _excerpt
               link = post.url
@@ -143,6 +144,7 @@ lang: it
               date_prepend = post.date_prepend
               date = post.date
               title = post.title
+              subtitle = post.subtitle
               alt = post.title
               text = _excerpt
               link = post.url

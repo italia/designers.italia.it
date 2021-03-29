@@ -3,10 +3,10 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "News di prova"
-subtitle: "niews di prova con esempi di formattazione del testo"
+subtitle: "News di prova con esempi di formattazione del testo"
 asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
 date: 2021-03-02 09:00:00
-pinned: true
+pinned: false
 nodate: false
 homeBottomLink: false
 homeHideCategories: true
