@@ -3,7 +3,7 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "Progettare servizi pubblici digitali<br />più equi e sostenibili"
-subtitle: "Riguarda l’intervento di Designers Italia alla Milano Digital Week"
+subtitle: "L’intervento di Designers Italia alla Milano Digital Week"
 date: 2021-03-29 09:00:00
 pinned: true
 nodate: false
