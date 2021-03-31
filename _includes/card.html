@@ -29,7 +29,7 @@
           {% assign link_href = include.cta1 %}
           {%- endif -%}
           <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50 u-text-h4" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ link_href }}">
-          {{ include.title }}
+          {{ include.title | replace: "<br />", " " }}
           {%- if include.comingsoon -%}
           <span class="u-inlineBlock u-padding-left-xs">
             <span class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
