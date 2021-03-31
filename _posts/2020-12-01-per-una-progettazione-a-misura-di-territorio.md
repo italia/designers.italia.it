@@ -33,7 +33,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 * elenco 1
 * elenco 2
 
-1. elenco 1
+1. elenco 
 2. elenco 2
 3. elenco 3
 <div style="background:green; margin: 10px; border: 1px solid red; padding: 10px 5px">
