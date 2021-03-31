@@ -9,7 +9,7 @@ pinned: true
 nodate: false
 homeBottomLink: false
 homeHideCategories: true
-date_prepend: "Analisi"
+date_prepend: "Articolo"
 categories:
   - cittadini
   - pubblica amministrazione
