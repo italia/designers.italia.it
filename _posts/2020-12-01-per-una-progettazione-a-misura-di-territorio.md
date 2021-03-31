@@ -1,0 +1,55 @@
+---
+layout: post
+lang: it
+excerpt_separator: <!-- MORE -->
+title: "Per una progettazione a misura di territorio"
+subtitle: "Siglato accordo con la Provincia autonoma di Trento e il Consorzio dei Comuni Trentini"
+asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
+date: 2020-12-01 23:00:00
+pinned: false
+nodate: false
+homeBottomLink: false
+homeHideCategories: true
+date_prepend: "Articolo"
+categories:
+ 
+---
+
+<!-- MORE -->
+
+Il Dipartimento per la trasformazione digitale ha firmato, lo scorso 17 novembre, un accordo di cooperazione istituzionale per favorire l’accesso dei cittadini ai servizi digitali della Pubblica Amministrazione. L’intesa amplia a livello provinciale la collaborazione di Designers Italia con il [Consorzio dei Comuni Trentini](https://www.comunitrentini.it/){:target="_blank" rel="noopener noreferrer"}, una partnership attiva già dal maggio 2019, che ha ha portato alla realizzazione del sito istituzionale del Comune di Ala (TN), il primo, insieme a quello del Comune di Cagliari, ad adottare il kit di design per le amministrazioni comunali.  
+
+Il nuovo accordo mira a sostenere i processi di digitalizzazione sul territorio e facilitare la partecipazione dei cittadini, impegnando Consorzio e Provincia ad aderire alle Linee guida per il design dei servizi della Pubblica Amministrazione, promuovendo in particolare:
+* l’utilizzo dei kit di progettazione e sviluppo web di Designers Italia;
+* la realizzazione di una serie di attività di ricerca con i cittadini (in particolare test di usabilità) e di progettazione collaborativa dei servizi;
+* il miglioramento degli strumenti di Designers Italia già in uso, con la possibilità di integrare i contenuti dei kit attraverso il rilascio di nuove versioni dei modelli per i Comuni;
+* la valutazione di iniziative progettuali finalizzate a mettere la piattaforma utilizzata dal Consorzio a disposizione di altre Regioni o Paesi in ambito europeo.  
+
+A sua volta, il Dipartimento si impegna a fornire supporto tecnico, formativo e metodologico, attraverso la collaborazione di Designers Italia e di Developers Italia, oltre all’utilizzo di tutti gli strumenti progettati e messi a disposizione delle Pubbliche Amministrazioni.
+
+Testo del post **Yo**
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. **Duis** aute irure dolor in _reprehenderit_ in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+* elenco 1
+* elenco 2
+
+1. elenco 1
+2. elenco 2
+3. elenco 3
+<div style="background:green; margin: 10px; border: 1px solid red; padding: 10px 5px">
+<ul>
+<li>lista 1</li>
+<li>lista 2</li>
+<li>lista 3</li>
+</ul>
+</div>
+
+
+[Consorzio dei Comuni Trentini](https://www.comunitrentini.it/){:target="_blank" rel="noopener noreferrer"}  
+[esempio di link interno]({{ site.baseurl }}/assets/docs/esempio1.pdf){:target="_blank" rel="noopener noreferrer"}  
+
+
+{:.u-text-r-xxs.u-textRight}
+_Fotografia di [Elena G](https://unsplash.com/@lelena_g){:target="_blank" rel="noopener noreferrer"} su [Unsplash](https://unsplash.com/photos/MKwBr8JFCgs){:target="_blank" rel="noopener noreferrer"}_
+
+
