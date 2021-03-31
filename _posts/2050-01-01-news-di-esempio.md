@@ -5,7 +5,7 @@ excerpt_separator: <!-- MORE -->
 title: "News di prova"
 subtitle: "News di prova con esempi di<br />formattazione del testo e link"
 asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
-date: 2021-01-10 23:00:00
+date: 2050-01-10 13:00:00
 pinned: false
 nodate: false
 homeBottomLink: false
