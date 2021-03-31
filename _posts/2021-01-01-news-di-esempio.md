@@ -3,7 +3,7 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "News di prova"
-subtitle: "News di prova con esempi di formattazione del testo e link"
+subtitle: "News di prova con esempi di<br />formattazione del testo e link"
 asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
 date: 2021-01-10 23:00:00
 pinned: false
@@ -28,7 +28,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 1. elenco 1
 2. elenco 2
 3. elenco 3
-
+<div style="background:green; margin: 10px; border: 1px solid red; padding: 10px 5px">
+<ul>
+<li>lista 1</li>
+<li>lista 2</li>
+<li>lista 3</li>
+</ul>
+</div>
 
 
 [esempio di link esterno](https://ec.europa.eu/eusurvey/runner/DesignersItaliaMDW){:target="_blank" rel="noopener noreferrer"}  
