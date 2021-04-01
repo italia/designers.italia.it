@@ -16,7 +16,6 @@ categories:
 ---
 
 <!-- MORE -->
-<div class="u-text-xs u-textCenter u-textItalic u-margin-bottom-xl">Didascalia</div>
 
 Il Dipartimento per la trasformazione digitale ha firmato, lo scorso 17 novembre, un accordo di cooperazione istituzionale per favorire l’accesso dei cittadini ai servizi digitali della Pubblica Amministrazione. L’intesa amplia a livello provinciale la collaborazione di Designers Italia con il [Consorzio dei Comuni Trentini](https://www.comunitrentini.it/){:target="_blank" rel="noopener noreferrer"}, una _partnership_ attiva già dal maggio 2019, che ha ha portato alla realizzazione del sito istituzionale del Comune di Ala (TN), il primo, insieme a quello del Comune di Cagliari, ad adottare il kit di design per le amministrazioni comunali.  
 
@@ -28,6 +27,3 @@ Il nuovo accordo mira a sostenere i processi di digitalizzazione sul territorio 
 
 A sua volta, il Dipartimento si impegna a fornire supporto tecnico, formativo e metodologico, attraverso la collaborazione di Designers Italia e di Developers Italia, oltre all’utilizzo di tutti gli strumenti progettati e messi a disposizione delle Pubbliche Amministrazioni.
 
-<div class="u-text-xxs u-textRight u-textItalic u-margin-bottom-xl">
-  Fotografia di <a href="https://unsplash.com/@lelena_g" target="_blank">Elena G</a> su <a href="https://unsplash.com/photos/MKwBr8JFCgs" target="_blank">Unsplash</a>
-</div>

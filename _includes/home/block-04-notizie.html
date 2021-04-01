@@ -41,7 +41,8 @@
         {% assign _url = mediumPost.medium_url %}
         <div class="notizie-inline Grid-cell u-lg-size2of4 u-margin-top-s {% if showThisMediumPost != nil %} u-posRelative{% endif %}">
           {%- if showThisMediumPost != nil -%}
-          <img class="pinnedBookmark" role="presentation" src="{{ '/assets/images/pinned_bookmark-new.svg' |relative_url }}">
+          <!-- To be defined -->
+          <!-- <img class="pinnedBookmark" role="presentation" src="{{ '/assets/images/pinned_bookmark-new.svg' |relative_url }}"> -->
           {%- endif -%}
           {% include card.html
             date_prepend = "Storia "
@@ -68,7 +69,8 @@
         {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
         {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
         <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s u-posRelative">
-          <img class="pinnedBookmark" role="presentation" src="{{ '/assets/images/pinned_bookmark-new.svg' |relative_url }}">
+          <!-- To be defined -->
+          <!-- <img class="pinnedBookmark" role="presentation" src="{{ '/assets/images/pinned_bookmark-new.svg' |relative_url }}"> -->
           {% include card.html
             date_prepend = post.date_prepend
             date = post.date
