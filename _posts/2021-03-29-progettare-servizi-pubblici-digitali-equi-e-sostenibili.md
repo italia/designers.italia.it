@@ -4,6 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Progettare servizi pubblici digitali<br />più equi e sostenibili"
 subtitle: "L’intervento di Designers Italia alla Milano Digital Week"
+asset: <img class="u-sizeFull" src="/assets/images/posts/DesignersItaliaMilanoDesignWeek-2021.jpg" alt="Banner promozionale Progettare servizi pubblici più equi e sostenibili" />
 date: 2021-03-29 09:00:00
 pinned: true
 nodate: false
@@ -17,7 +18,7 @@ categories:
 ---
 
 <!-- MORE -->
-DesignersItaliaMilanoDesignWeek-2021.jpg
+
 Lo scorso 19 marzo anche Designers Italia ha partecipato alla kermesse milanese dedicata quest’anno al tema "[Cambiamenti e proposte per una città più Equa e Sostenibile”](https://www.milanodigitalweek.com/){:target="_blank" rel="noopener noreferrer"}", presentando il [modello](https://designers.italia.it/kit/comuni/){:target="_blank" rel="noopener noreferrer"} per i siti web dei comuni italiani. L’intento di Designers Italia è stato quello di riflettere sulla sempre più cogente necessità delle PA di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reiventare ogni volta la ruota.  
 
 Il progetto ideato e realizzato in collaborazione con diverse realtà locali, nato grazie a un’approfondita ricerca sul territorio con operatori e cittadini permette di migliorare il rapporto tra quest’ultimi e le istituzioni. Il modello, infatti, mette a disposizione strumenti per fornire ai cittadini accesso a tutti i servizi comunali, nel pieno rispetto delle norme, delle linee guida di design dei servizi della Pubblica Amministrazione e delle identità locali.  
