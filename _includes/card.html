@@ -16,7 +16,7 @@
   {%- endif -%}
   <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill {% if include.flat != true %}u-padding-r-all{% endif %} {% if include.textCenter == true %}u-textCenter{% endif %}">
     {%- if include.date -%}
-    {%- if include.date_prepend -%} <b class="u-textUppercase u-padding-r-all u-padding-r-bottom u-text-r-xxs u-color-grey-light-ui-kit">{{include.date_prepend}}</b>{%- endif -%}
+    {%- if include.date_prepend -%} <b class="u-textUppercase{% if include.flatTitle != true %} u-padding-r-all{% endif %}{% if include.flatTitle == true %} u-padding-r-top u-padding-r-right{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-light-ui-kit">{{include.date_prepend}}</b>{%- endif -%}
     <time datetime="{{ include.date | date_to_xmlschema }}" class="{% if include.flat != true %}u-padding-r-all{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-ui-kit">
       {% include date_format.html date=include.date %}
     </time>
