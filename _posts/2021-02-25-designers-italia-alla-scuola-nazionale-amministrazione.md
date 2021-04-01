@@ -26,4 +26,4 @@ Da questo punto di vista, Designers Italia rappresenta il punto di riferimento p
 
 Da un lato, partire dai reali bisogni dei cittadini **è l’antidoto migliore per evitare che la transizione digitale risulti fine a se stessa**; dall’altro sfruttare le possibilità del digitale significa trovare soluzioni (standard, aperte, interoperabili) in grado di rispondere in maniera flessibile alle sfide di una società sempre più complessa, migliorando la qualità di vita delle persone.  
 
-Consulta [le slide della presentazione tenuta da Designers Italia]({{ site.baseurl }}/assets/docs/SNA presentazione per formazione 25 febbraio 2021.pdf){:target="_blank" rel="noopener noreferrer"}
+Consulta [le slide della presentazione tenuta da Designers Italia]({{ site.baseurl }}/assets/docs/SNApresentazione25febbraio2021.pdf){:target="_blank" rel="noopener noreferrer"}
