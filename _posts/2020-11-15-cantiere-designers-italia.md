@@ -23,7 +23,7 @@ In particolare, seguendo i principi del _design thinking_ e del miglioramento co
 * attualizzare **vision e mission del progetto** e, se necessario, rivedere l’esperienza della piattaforma Designers Italia;
 * definire il **valore e il ruolo della community** Designers attiva nei canali a disposizione (Forum, Medium, Slack);
 * aggiornare i **kit di progettazione e il design system** liberamente utilizzabili dalle Pubblica Amministrazioni;
-* aggiornare le Linee Guida per il design dei servizi digitali della PA.  
+* aggiornare le **Linee Guida** per il design dei servizi digitali della PA.  
 
 Contestualmente, procederemo anche a rinnovare il sito di Designers Italia, in modo da renderlo ancora più funzionale e semplice da utilizzare, dando così centralità alle amministrazioni per **fornire servizi sempre più efficaci** per i cittadini. Un’attenzione che interesserà anche fornitori della PA, _in house_ e _software house_, e che sarà rafforzata dalla definizione di possibili partnership e da una serie di iniziative di comunicazione dedicate.  
 
