@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Al via la convenzione con Invitalia"
 subtitle: "Firmato un accordo per sostenere la Pubblica Amministrazione nella transizione digitale"
-date: 2021-03-25 09:00:00
+date: 2020-12-18 09:00:00
 pinned: false
 nodate: false
 homeBottomLink: false
