@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Designers Italia alla Scuola Nazionale dell’Amministrazione"
 subtitle: "Una lezione nell’ambito del corso il “Piano triennale per l’informatica nella PA”"
-asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-25 febbraio 2021 Designers alla SNA.jpg" alt="Alcuni sempi di prototipazione" />
+asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-25-febbraio-2021-designers-alla-SNA.jpg" alt="Alcuni sempi di prototipazione" />
 date: 2021-02-25 13:00:00
 pinned: true
 nodate: false
