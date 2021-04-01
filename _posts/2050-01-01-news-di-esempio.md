@@ -18,6 +18,7 @@ categories:
 ---
 
 <!-- MORE -->
+<div class="u-text-xs u-textCenter u-textItalic u-margin-bottom-xl">Didascalia</div>
 
 Testo del post **Yo**
 
@@ -39,9 +40,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 [esempio di link esterno](https://ec.europa.eu/eusurvey/runner/DesignersItaliaMDW){:target="_blank" rel="noopener noreferrer"}  
 [esempio di link interno]({{ site.baseurl }}/assets/docs/esempio1.pdf){:target="_blank" rel="noopener noreferrer"}  
+[esempio di link a email](mailto:pippo@pippo.com){:target="_blank" rel="noopener noreferrer"}  
 
 
-{:.u-text-r-xxs.u-textRight}
-_Fotografia di [Elena G](https://unsplash.com/@lelena_g){:target="_blank" rel="noopener noreferrer"} su [Unsplash](https://unsplash.com/photos/MKwBr8JFCgs){:target="_blank" rel="noopener noreferrer"}_
+<div class="u-text-xxs u-textRight u-textItalic u-margin-bottom-xl">
+  Fotografia di <a href="https://unsplash.com/@lelena_g" target="_blank">Elena G</a> su <a href="https://unsplash.com/photos/MKwBr8JFCgs" target="_blank">Unsplash</a>
+</div>
 
 

@@ -4,7 +4,7 @@
   {%- if include.hasImage != false and include.image -%}
     {%- if include.rowImage -%}
     <div class="Grid">
-      <div class="notizie-inline-image Grid-cell u-md-size1of2 u-lg-size1of2" style="background-image: url({{ include.image | default: //placehold.it/400x220 }});">&nbsp;</div>
+      <div class="notizie-inline-image notizie-inline-image-contain Grid-cell u-md-size1of2 u-lg-size1of2" style="background-image: url({{ include.image | default: //placehold.it/400x220 }});">&nbsp;</div>
       <div class="Grid-cell u-md-size1of2 u-lg-size1of2">
     {%- else -%}
     <div class="u-sizeFull">
@@ -72,7 +72,7 @@
       {%-endif -%}
     </div>
     {% else %}
-    <div class="Grid u-sizeFull u-flexAlignSelfEnd {% if include.flat != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
+    <div class="Grid u-sizeFull u-flexAlignSelfEnd {% if include.flat != true and include.flatTitle != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
         {%- if include.hasMore != false and include.homeBottomLink != false -%}
         <p class="Grid-cell {% if include.hasSocial != false %}u-layout-centerLeft {% endif %} u-flexAlignItemsCenter u-padding-r-bottom">
           <a href="{{ include.link }}" {% if include.target == '_blank' %}target="_blank"{% endif %} class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">
