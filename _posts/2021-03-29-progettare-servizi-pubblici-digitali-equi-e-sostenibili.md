@@ -17,7 +17,7 @@ categories:
 ---
 
 <!-- MORE -->
-
+DesignersItaliaMilanoDesignWeek-2021.jpg
 Lo scorso 19 marzo anche Designers Italia ha partecipato alla kermesse milanese dedicata quest’anno al tema "[Cambiamenti e proposte per una città più Equa e Sostenibile”](https://www.milanodigitalweek.com/){:target="_blank" rel="noopener noreferrer"}", presentando il [modello](https://designers.italia.it/kit/comuni/){:target="_blank" rel="noopener noreferrer"} per i siti web dei comuni italiani. L’intento di Designers Italia è stato quello di riflettere sulla sempre più cogente necessità delle PA di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reiventare ogni volta la ruota.  
 
 Il progetto ideato e realizzato in collaborazione con diverse realtà locali, nato grazie a un’approfondita ricerca sul territorio con operatori e cittadini permette di migliorare il rapporto tra quest’ultimi e le istituzioni. Il modello, infatti, mette a disposizione strumenti per fornire ai cittadini accesso a tutti i servizi comunali, nel pieno rispetto delle norme, delle linee guida di design dei servizi della Pubblica Amministrazione e delle identità locali.  
