@@ -60,7 +60,7 @@
 
         {%- endif -%}
         {% assign pinnedPosts = site.posts | where: "pinned", true %}
-        {% for post in pinnedPosts %}
+        {% for post in pinnedPosts limit: 2 %}
         {% assign pinnedPostsCount = pinnedPostsCount | plus: 1 %}
         {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
         {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
