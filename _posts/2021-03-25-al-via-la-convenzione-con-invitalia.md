@@ -27,4 +27,4 @@ Nella seconda linea d’azione si inscrive anche la partnership con Designers, c
 
 Grazie alla Convenzione con Invitalia, verranno inoltre definite una serie di attività di comunicazione rivolte in particolare ai Comuni, così come saranno organizzati workshop tematici ed eventi dedicati a tutti gli enti potenzialmente interessati all’applicazione di modelli e kit di Designers Italia, oltre che azioni finalizzate a rafforzare il presidio, la manutenzione e l’espansione della community sui canali Slack dedicati al design e su Forum Italia.  
 
-Leggi il testo completo della Convenzione con Invitalia
+Leggi [il testo completo della Convenzione con Invitalia](http://presidenza.governo.it/AmministrazioneTrasparente/BandiContratti/ProcedureAffidamentoInHouse/allegati/2020E050INV%20Convenzione%20DTD%20trasformazione%20digitale%20per%20firma%20digitale.pdf){:target="_blank" rel="noopener noreferrer"}
