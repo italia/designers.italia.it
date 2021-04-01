@@ -3,7 +3,7 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "Per una progettazione<br />a misura di territorio"
-subtitle: "Siglato accordo con la Provincia autonoma di Trento e il Consorzio dei Comuni Trentini"
+subtitle: "Siglato accordo con la Provincia autonoma di Trento<br />e il Consorzio dei Comuni Trentini"
 asset: <img class="u-sizeFull" src="/assets/images/posts/1609778365-designers-comuni-trentiniOK.jpg" alt="Esempi del modello di sito web per i Comuni per desktop e smartphone" />
 date: 2020-12-01 22:00:00
 pinned: false
