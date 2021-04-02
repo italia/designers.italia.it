@@ -16,96 +16,91 @@
   <div class="HomeBlk2-title u-xs-padding-top-none u-padding-top-xxl u-padding-bottom-l">
     <div class="u-layout-wide u-layoutCenter u-padding-top-m">
       <div class="u-sizeFill u-textCenter u-color-white">
-        <h2 class="u-text-r-xl u-textWeight-400 u-padding-r-top">Le notizie</h2>
+        <h2 class="u-text-r-xxl u-textWeight-700 u-padding-r-top">Le notizie</h2>
       </div>
 
       <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative">
         {%- if site.medium_feed -%}
         {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at"
         | reverse -%}
-        {%- for post in posts -%}
-        {%- if post.id contains "bd486dff2a6d" -%}
-        {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
-        {% assign _excerpt = post.medium_subtitle | strip_html %}
-        {% assign _url = post.medium_url %}
-        <div class="notizie-inline Grid-cell u-lg-size2of4 u-margin-top-s">
+        {%- assign showThisMediumPost = site.data.medium_posts.idForHome -%}
+        {%- assign mediumPost = posts[0] -%}
+        {%- if showThisMediumPost != nil -%}
+          {%- for findMediumPost in posts -%}
+            {%- if findMediumPost.medium_post_id == showThisMediumPost -%}
+              {%- assign mediumPost = findMediumPost -%}
+            {% endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+
+        {% assign _date = mediumPost.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
+        {% assign _excerpt = mediumPost.medium_subtitle | strip_html %}
+        {% assign _url = mediumPost.medium_url %}
+        <div class="notizie-inline Grid-cell u-lg-size2of4 u-margin-top-s {% if showThisMediumPost != nil %} u-posRelative{% endif %}">
           {% include card.html
             date_prepend = "Storia "
             date = _date
-            title = post.medium_title
-            alt = post.medium_title
+            title = mediumPost.medium_title
+            alt = mediumPost.medium_title
             link = _url
             text = "Pubblicati i risultati della ricerca dedicata a progettisti e sviluppatori dei servizi pubblici digitali"
             link_text = "Storia su Medium"
             hasImage = true
             hasSocial = false
             rowImage = true
-            image = post.medium_preview_image_url
+            image = mediumPost.medium_preview_image_url
             target = "_blank"
             classes = "u-background-grey-15"
+            flatTitle = true
           %}
         </div>
+
         {%- endif -%}
-        {%- endfor -%}
-        {%- endif -%}
-
-        {% comment %}
-        This part is in use until we'll be using proper posts
-        {% endcomment %}
-
-        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
-          {% include card.html
-          date_prepend = "Articolo "
-          date = "19/03/2021"
-          title = "Designers Italia alla Milano Digital Week"
-          text = "Guarda la registrazione dell’intervento sul tema Progettare servizi pubblici digitali più equi e sostenibili"
-          link = "https://www.youtube.com/watch?v=DlLTpVBCX8k"
-          link_text = "Video su YouTube"
-          hasSocial = false
-          target = '_blank'
-          classes = "u-background-grey-15"
-          %}
-        </div>
-
-        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
-          {% include card.html
-          date_prepend = "Storia "
-          date = "16/03/2021"
-          title = "Dietro le quinte del sito MITD"
-          text = "Come abbiamo riprogettato il sito del Ministro per l’innovazione tecnologica e la transizione digitale"
-          link = "https://medium.com/designers-italia/dietro-le-quinte-del-sito-mitd-dalla-ricerca-alla-pubblicazione-online-2a-parte-da691f8dc063"
-          link_text = "Storia su Medium"
-          hasSocial = false
-          target = '_blank'
-          classes = "u-background-grey-15"
-          %}
-        </div>
-
-        {% comment %}
-        This part will be in use when we'll be using proper posts
-        {% for post in site.posts limit: 2 %}
+        {% assign pinnedPosts = site.posts | where: "pinned", true %}
+        {% for post in pinnedPosts limit: 2 %}
+        {% assign pinnedPostsCount = pinnedPostsCount | plus: 1 %}
         {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
-        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
+        {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
+        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s u-posRelative">
           {% include card.html
-            date_prepend = "Articolo "
+            date_prepend = post.date_prepend
             date = post.date
             title = post.title
+            subtitle = post.subtitle
             alt = post.title
             text = _excerpt
             link = post.url
+            homeBottomLink = post.homeBottomLink
             classes = 'u-background-grey-15'
+            categories = showCategories
           %}
         </div>
         {% endfor %}
-        {% endcomment %}
-
+        {% assign normalPosts = site.posts | where: "pinned", nil %}
+        {% assign normalPostsToShow =  2 | minus: pinnedPostsCount %}
+        {%- if normalPostsToShow > 0 -%}
+        {% for post in normalPosts limit: normalPostsToShow %}
+        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
+          {% include card.html
+            date_prepend = post.date_prepend
+            date = post.date
+            title = post.title
+            subtitle = post.subtitle
+            alt = post.title
+            text = _excerpt
+            link = post.url
+            homeBottomLink = post.homeBottomLink
+            classes = 'u-background-grey-15'
+            categories = showCategories
+          %}
+        </div>
+        {% endfor %}
+        {% endif %}
       </div>
-      {% comment %}
-      <div class="u-margin-top-xl u-margin-bottom-xxl">
-        <a class="Button Button--link Button--round u-borderShadow-xl u-background-white u-textClean u-color-50 u-text-r-xs u-textWeight-700 u-padding-r-all"
-           href="/partecipa">Vedi tutte</a>
+      <div class="u-margin-top-xl u-margin-bottom-xxl u-textCenter">
+        <a class="u-background-teal-60 u-color-grey-ui-kit u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-textUppercase u-textWeight-700 u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-right-m u-margin-bottom-m"
+           href="/notizie">Esplora le notizie</a>
       </div>
-      {% endcomment %}
     </div>
   </div>
   <div class="u-textCenter u-xs-margin-top-none u-xs-padding-top-none u-padding-top-xxl"

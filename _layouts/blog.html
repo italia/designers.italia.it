@@ -37,12 +37,39 @@ lang: it
   <div class="Grid">
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <div class="u-margin-r-top u-margin-r-bottom">
-        <p class="u-text-r-xs u-lineHeight-xl u-color-grey-ui-kit">Nel <span class=" u-text-r-xs u-textWeight-600">blog di Designers Italia</span> puoi trovare casi di studio, racconti di esperienze ed esempi sui vari temi legati al <span class="u-text-r-xs u-textWeight-600">design dei servizi pubblici</span>. Il blog ospita anche dei <a href="{{ '/storie/tags/guest-post/' | relative_url }}" class="u-text-r-xs u-textItalic u-textClean u-color-50">guest post</a> dove i designer possono raccontare il loro punto di vista e le loro esperienze nell’ambito della <span class="u-text-r-xs u-textWeight-600">trasformazione digitale</span></p>
+        <h2 class="u-color-grey-ui-kit u-text-r-m u-textWeight-400 u-margin-r-bottom">{{ t.news_main_title }}</h2>
       </div>
+      {%- assign mediumPostidForHome = site.data.medium_posts.idForHome | default: 0 -%}
+      {%- assign limitPostToShow = site.data.medium_posts.limitPostToShow | default: 5 -%}
+      {%- if mediumPostidForHome != 0 -%}
       {% for post in posts %}
+      {%- if post.medium_post_id == mediumPostidForHome -%}
+      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30 u-posRelative">
+        <img class="pinnedBookmark" role="presentation" src="{{ '/assets/images/pinned_bookmark-new.svg' | relative_url }}">
+        {% include card.html
+        date = _date
+        author = post.medium_author
+        author_link = post.medium_author_link
+        title = post.medium_title
+        alt = post.medium_title
+        link = _url
+        text = _excerpt
+        hasImage = true
+        image = post.medium_preview_image_url
+        categories = post.medium_tagsarray
+        flat = true
+        classes = 'u-background-grey-15'
+        target = '_blank'
+        %}
+      </div>
+      {%- endif-%}
+      {% endfor %}
+      {%- endif-%}
+      {% for post in posts limit: limitPostToShow %}
       {% assign _excerpt = post.medium_subtitle | strip_html %}
       {% assign _url = post.medium_url %}
       {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
+      {%- if post.medium_post_id != mediumPostidForHome -%}
       <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
         {% include card.html
         date = _date
@@ -53,12 +80,14 @@ lang: it
         link = _url
         text = _excerpt
         hasImage = true
+        image = post.medium_preview_image_url
         categories = post.medium_tagsarray
         flat = true
         classes = 'u-background-grey-15'
         target = '_blank'
         %}
       </div>
+      {% endif %}
       {% endfor %}
       {% comment %}
       <div>
@@ -76,8 +105,60 @@ lang: it
       </div>
       {% endcomment %}
     </div>
-    {% capture pills %} {% include pills.html items = site.medium_all_tags small = true %} {% endcapture %}
-    {% include sideblock.html title = t.news_nav_title content = pills %}
+    <div class="Grid-cell u-sizeFull u-md-size4of12 u-lg-size4of12 u-md-before1of12 u-lg-before1of12">
+      <div class="u-margin-r-top u-margin-r-bottom">
+        <h2 class="u-color-grey-ui-kit u-text-r-m u-textWeight-400 u-margin-r-bottom">
+          {{ t.news_nav_titleNew }}
+        </h2>
+      </div>
+      <div class="Grid Grid--withGutter u-padding-bottom-xl guides-grid u-posRelative">
+        {% for post in site.posts %}
+          {%- assign postPinned = post.pinned -%}
+          {%- if post.pinned -%}
+          {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
+          {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
+          <div class="notizie-post Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-margin-bottom-xl u-posRelative">
+            <img class="pinnedBookmark" role="presentation" src="{{ '/assets/images/pinned_bookmark-new.svg' | relative_url }}">
+            {% include card.html
+              noHeight = true
+              date_prepend = post.date_prepend
+              date = post.date
+              title = post.title
+              subtitle = post.subtitle
+              alt = post.title
+              text = _excerpt
+              link = post.url
+              homeBottomLink = post.homeBottomLink
+              classes = 'u-background-grey-15'
+              categories = showCategories
+            %}
+          </div>
+          {% endif %}
+          {% endfor %}
+          {% for post in site.posts %}
+          {%- assign postPinned = post.pinned -%}
+          {%- if post.pinned != true -%}
+          {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
+          {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
+          <div class="notizie-post Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-margin-bottom-xl">
+            {% include card.html
+              noHeight = true
+              date_prepend = post.date_prepend
+              date = post.date
+              title = post.title
+              subtitle = post.subtitle
+              alt = post.title
+              text = _excerpt
+              link = post.url
+              homeBottomLink = post.homeBottomLink
+              classes = 'u-background-grey-15'
+              categories = showCategories
+            %}
+          </div>
+          {% endif %}
+          {% endfor %}
+      </div>
+    </div>
   </div>
 </div>
 {% endif %}

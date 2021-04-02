@@ -1,10 +1,10 @@
-<div class="u-nbfc u-color-grey-30 u-xs-padding-all-none
+<div class="{% if include.noHeight != true %}u-nbfc{% endif %} u-color-grey-30 u-xs-padding-all-none
   {% if include.flat != true %}u-borderShadow-xxs u-xs-borderShadow-none u-borderRadius-m{% endif %}
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
   {%- if include.hasImage != false and include.image -%}
     {%- if include.rowImage -%}
     <div class="Grid">
-      <div class="notizie-inline-image Grid-cell u-md-size1of2 u-lg-size1of2" style="background-image: url({{ include.image | default: //placehold.it/400x220 }});">&nbsp;</div>
+      <div class="notizie-inline-image notizie-inline-image-contain Grid-cell u-md-size1of2 u-lg-size1of2" style="background-image: url({{ include.image | default: //placehold.it/400x220 }});">&nbsp;</div>
       <div class="Grid-cell u-md-size1of2 u-lg-size1of2">
     {%- else -%}
     <div class="u-sizeFull">
@@ -16,12 +16,12 @@
   {%- endif -%}
   <div class="u-flexWrap u-flex u-flexAlignSelfStretch u-sizeFill {% if include.flat != true %}u-padding-r-all{% endif %} {% if include.textCenter == true %}u-textCenter{% endif %}">
     {%- if include.date -%}
-    {%- if include.date_prepend -%} <b class="u-textUppercase u-padding-r-all u-padding-r-bottom u-text-r-xxs u-color-grey-light-ui-kit">{{include.date_prepend}}</b>{%- endif -%}
+    {%- if include.date_prepend -%} <b class="u-textUppercase{% if include.flatTitle != true %} u-padding-r-all{% endif %}{% if include.flatTitle == true %} u-padding-r-top u-padding-r-right{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-light-ui-kit">{{include.date_prepend}}</b>{%- endif -%}
     <time datetime="{{ include.date | date_to_xmlschema }}" class="{% if include.flat != true %}u-padding-r-all{% endif %} u-padding-r-bottom u-text-r-xxs u-color-grey-ui-kit">
       {% include date_format.html date=include.date %}
     </time>
     {%- endif -%}
-    <div class="u-sizeFull {% if include.flat != true %}u-padding-r-all{% endif %}">
+    <div class="u-sizeFull {% if include.flat != true and include.flatTitle != true %}u-padding-r-all{% endif %}">
       <h3 class="u-padding-bottom-xs">
         {%- if include.hasMore != false -%}
           {% assign link_href = include.link %}
@@ -29,7 +29,7 @@
           {% assign link_href = include.cta1 %}
           {%- endif -%}
           <a class="u-textClean u-textWeight-600 u-text-r-l u-color-50 u-text-h4" {% if include.target == '_blank' %}target="_blank"{% endif %} href="{{ link_href }}">
-          {{ include.title }}
+          {{ include.title | replace: "<br />", " " }}
           {%- if include.comingsoon -%}
           <span class="u-inlineBlock u-padding-left-xs">
             <span class="u-inlineBlock u-textWeight-600 u-alignMiddle u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
@@ -54,7 +54,7 @@
       {%- endif -%}
       {%- if include.text != '' -%}
         <p class="Content u-text-p u-text-r-xxs u-textSecondary u-padding-r-bottom">
-          {{ include.text }}
+          {{ include.text  | strip_html }}
         </p>
       {%- endif -%}
     </div>
@@ -72,8 +72,8 @@
       {%-endif -%}
     </div>
     {% else %}
-    <div class="Grid u-sizeFull u-flexAlignSelfEnd {% if include.flat != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
-        {%- if include.hasMore != false -%}
+    <div class="Grid u-sizeFull u-flexAlignSelfEnd {% if include.flat != true and include.flatTitle != true %}u-margin-r-left u-margin-r-right u-xs-margin-all-none{% endif %}">
+        {%- if include.hasMore != false and include.homeBottomLink != false -%}
         <p class="Grid-cell {% if include.hasSocial != false %}u-layout-centerLeft {% endif %} u-flexAlignItemsCenter u-padding-r-bottom">
           <a href="{{ include.link }}" {% if include.target == '_blank' %}target="_blank"{% endif %} class="u-color-50 u-text-r-xxs u-textWeight-600 u-textClean">
           {{ include.link_text | default: t.home_projects_expand }} <span class="Icon {% if include.target == '_blank' %}Icon-external-link{%else%}Icon-chevron-right{% endif %} u-margin-left-xxs u-text-xxs"></span>
