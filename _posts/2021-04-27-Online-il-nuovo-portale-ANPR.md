@@ -18,7 +18,6 @@ categories:
   - Servizi demografici
 ---
 
-<!-- MORE -->
 Da giovedì 15 aprile è online [la nuova piattaforma dell’Anagrafe Nazionale della Popolazione Residente](https://www.anpr.interno.it/){:target="_blank" rel="noopener noreferrer"} (ANPR), la banca dati degli eventi anagrafici pensata per **centralizzare le attività dei servizi demografici offerta dai Comuni** e favorire la digitalizzazione dei processi a disposizione di cittadini, enti e imprese. Un portale con servizi che saranno perfezionati anche grazie al contributo di Designers Italia, che metterà a disposizione alcuni strumenti utili alla riprogettazione e all'adozione di un approccio *user centered*.
 
 Designers Italia sta conducendo, infatti, una valutazione approfondita di sito e area riservata per gli utenti, verificando **l’architettura dell’informazione e i percorsi di navigazione tra le varie sezioni** del portale. Sulla base di queste considerazioni preliminari, Designers Italia seguirà l'ottimizzazione della piattaforma, per definire un'esperienza utente coerente, intuitiva ed usabile in tutto il sito istituzionale ANPR.
