@@ -13,9 +13,9 @@ layout: default
 {% assign superAccordion = page.superAccordion %}
 
 <article class="Prose u-color-grey-60">
-  <div class="u-layout-r-withGutter u-padding-r-top u-padding-r-bottom">
+  <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-r-bottom">
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-lg-size6of12 u-color-50">
+      <div class="Grid-cell u-md-size6of12 u-lg-size5of12 u-color-50">
         <h1 class="u-text-r-xs u-margin-bottom-s">Kit</h1>
         <h1 class="u-text-h2">{{title}}</h1>
         <div class="u-text-r-m">
@@ -24,18 +24,18 @@ layout: default
       </div>
     </div>
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-lg-before3of12 u-lg-size6of12">
+      <div class="Grid-cell u-lg-before3of12 u-lg-size5of12 u-md-before3of12 u-md-size6of12">
         <h3 class="u-text-h6">{{textChunk1.title}}</h3>
         <p>
           {{textChunk1.text}}
         </p>
       </div>
-      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-margin-top-xxl u-lg-margin-top-none">
+      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-lg-margin-top-none">
         <div>
           <div class="u-text-h6">{{tagsSection.title}}</div>
           <ul>
             {% for tag in tagsSection.tags %}
-              <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-lg-block u-margin-right-m">{{tag}}</li>
+              <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-m">{{tag}}</li>
             {% endfor %}
           </ul>
         </div>
@@ -43,13 +43,13 @@ layout: default
     </div>
 
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-lg-size6of12">
+      <div class="Grid-cell u-md-size6of12 u-lg-size5of12">
         <h3 class="u-text-h6">{{superAccordion.title}}</h3>
       </div>
 
       {% for accordion in superAccordion.accordions %}
 
-        <div class="Grid-cell u-lg-size10of12 u-borderShadow-l u-margin-top-l u-margin-bottom-l">
+      <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-l u-margin-top-l u-margin-bottom-l">
         <div class="Accordion fr-accordion js-fr-accordion u-padding-all-s u-md-padding-all-m u-lg-padding-all-l" id="accordion-{{forloop.index}}">
 
           <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{forloop.index}}">
@@ -58,8 +58,8 @@ layout: default
               <div class="u-posAbsolute" data-accordion-expanded="false" style="right: 6px; top: -2px; margin-left: 84%">
                 <img src="/assets/images/icons/icon-more-blue-h.png" style="max-height: 64px;">
               </div>
-              <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-textCenter"><img src="{{accordion.img}}" style="max-height: 100px"></div>
-              <div class="Grid-cell u-lg-size6of10 u-lg-after2of10">
+              <div class="Grid-cell u-md-size2of10 u-lg-size2of10"><img src="{{accordion.img}}" style="max-height: 100px"></div>
+              <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10">
                 <div class="u-text-h3 u-color-50 u-margin-top-m u-lg-margin-top-none">{{accordion.title}}</div>
                 <div data-accordion-header-text class="accordion-line-clamp">
                   {{accordion.text}}
@@ -89,7 +89,7 @@ layout: default
 
 
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-lg-size6of12">
+      <div class="Grid-cell u-md-size6of12 u-lg-size5of12">
         <h3 class="u-padding-bottom-s">{{textChunk2.title}}</h3>
         <p>
           {{textChunk2.text}}
@@ -97,32 +97,24 @@ layout: default
       </div>
     </div>
 
-
-    <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-background-50 u-color-white u-padding-all-m u-size6of12">
-        COL-6
-        Video Tutorial
-      </div>
-    </div>
-
-    <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-lg-before3of12 u-lg-size6of12">
-        <h3 class="u-padding-bottom-s">{{textChunk3.title}}</h3>
-        <p>
-          {{textChunk3.text}}
-        </p>
-      </div>
-      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-margin-top-xxl u-lg-margin-top-none">
-        <div>
-          <div class="u-text-h6">{{relatedKits.title}}</div>
-          <ul>
-            {% for kit in relatedKits.kits %}
-            <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-lg-block u-margin-right-m">{{kit}}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
+<!--    <div class="Grid Grid&#45;&#45;alignCenter u-padding-all-l">-->
+<!--      <div class="Grid-cell u-lg-before3of12 u-lg-size6of12">-->
+<!--        <h3 class="u-padding-bottom-s">{{textChunk3.title}}</h3>-->
+<!--        <p>-->
+<!--          {{textChunk3.text}}-->
+<!--        </p>-->
+<!--      </div>-->
+<!--      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-margin-top-xxl u-lg-margin-top-none">-->
+<!--        <div>-->
+<!--          <div class="u-text-h6">{{relatedKits.title}}</div>-->
+<!--          <ul>-->
+<!--            {% for kit in relatedKits.kits %}-->
+<!--            <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-lg-block u-margin-right-m">{{kit}}</li>-->
+<!--            {% endfor %}-->
+<!--          </ul>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
   </div>
 
