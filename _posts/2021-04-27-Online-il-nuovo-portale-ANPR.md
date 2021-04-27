@@ -3,9 +3,9 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "Online il nuovo portale ANPR"
-subtitle: "Un approccio *user centered* per il sito dell’Anagrafe Nazionale della Popolazione Residente"
+subtitle: "Un approccio <i>user centered</i> per il sito dell’Anagrafe Nazionale della Popolazione Residente"
 asset: <img class="u-sizeFull" src="/assets/images/posts/AnagrafeNazionalePopolazioneResidente.png" alt="Immagine decorativa, evocazione servizi digitali a misura di cittadino" />
-date: 2021-04-27 13:00:00
+date: 2021-04-27 00:30:00
 pinned: false
 nodate: false
 homeBottomLink: false

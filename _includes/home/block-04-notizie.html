@@ -76,7 +76,7 @@
           %}
         </div>
         {% endfor %}
-        {% assign normalPosts = site.posts | where: "pinned", nil %}
+        {% assign normalPosts = site.posts | where: "pinned", false %}
         {% assign normalPostsToShow =  2 | minus: pinnedPostsCount %}
         {%- if normalPostsToShow > 0 -%}
         {% for post in normalPosts limit: normalPostsToShow %}
