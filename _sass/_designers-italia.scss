@@ -1124,6 +1124,52 @@ html {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  max-height: 70px;
+  overflow: hidden;
+}
+
+.accordion-expand-button-close {
+  width: 88px;
+  height: 100%;
+  position: absolute;
+  background: #F0F6FC;
+  color: white;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media screen and (max-width:991px) {
+  .accordion-expand-button-close {
+    height: 60%;
+  }
+}
+
+.accordion-expand-button-open {
+  width: 88px;
+  height: 200px;
+  position: absolute;
+  background: #0066CC;
+  color: white;
+  text-align: center;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.accordion-expand-button-open:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 32px solid white;
+  border-left: 45px solid transparent;
+  border-right: 41px solid transparent;
 }
 
 @media screen and (min-width:1366px) {
@@ -1141,6 +1187,9 @@ html {
   }
   .u-lg-padding-all-l {
     padding: 2.4rem!important
+  }
+  .u-lg-padding-all-none {
+    padding: 0!important
   }
   .u-lg-textRight {
     text-align: right;
@@ -1150,6 +1199,9 @@ html {
 @media screen and (min-width:992px) and (max-width:1365px) {
   .u-md-padding-all-m {
     padding: 2rem!important
+  }
+  .u-md-padding-all-none {
+    padding: 0!important
   }
   .u-md-textRight {
     text-align: right;
