@@ -72,15 +72,33 @@ layout: default
           </div>
           <div id="accordion-panel-{{forloop.index}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
 
-            {% for item in accordion.items %}
-              <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
-                <div class="Grid-cell u-sm-size2of10 u-md-size2of10
-                u-lg-size2of10 u-textWeight-600 u-sm-textRight u-md-textRight u-lg-textRight u-margin-bottom-s">{{item.title}}</div>
-                <div class="Grid-cell u-sm-size8of10 u-md-size8of10 u-lg-size8of10">
-                  {{item.text}}
-                </div>
+            <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
+              <div class="Grid-cell u-padding-all-xl" style="background-color: #F0F6FC">
+                {% for resource in accordion.resources %}
+                  <div class="u-background-white u-margin-all-m">
+                    <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
+                      <div>
+                        <div>{{resource.title}}</div>
+                        <div>{{resource.description}}</div>
+                      </div>
+                      <div>
+                        {{resource.link}}
+                      </div>
+                    </div>
+                    {% for otherResource in resource.otherResources %}
+                      <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
+                        <div>
+                          <div>{{otherResource.description}}</div>
+                        </div>
+                        <div>
+                          {{otherResource.link}}
+                        </div>
+                      </div>
+                    {% endfor %}
+                  </div>
+                {% endfor %}
               </div>
-            {% endfor %}
+            </div>
 
           </div>
         </div>
