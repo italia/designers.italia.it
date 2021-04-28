@@ -49,18 +49,20 @@ layout: default
 
       {% for accordion in superAccordion.accordions %}
 
-      <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-l u-margin-top-l u-margin-bottom-l">
-        <div class="Accordion fr-accordion js-fr-accordion u-padding-all-s u-md-padding-all-m u-lg-padding-all-l" id="accordion-{{forloop.index}}">
+      <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-l u-margin-top-l u-margin-bottom-l u-posRelative">
+        <div class="accordion-expand-button-close" data-accordion-expanded="false">
+          <img src="/assets/images/icons/arrow-down-big.svg">
+        </div>
+        <div class="Accordion fr-accordion js-fr-accordion u-padding-all-s u-md-padding-all-none u-lg-padding-all-none" id="accordion-{{forloop.index}}">
 
           <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{forloop.index}}">
 
-            <div class="Grid Grid--alignCenter Grid--withGutter u-posRelative">
-              <div class="u-posAbsolute" data-accordion-expanded="false" style="right: 6px; top: -2px; margin-left: 84%">
-                <img src="/assets/images/icons/icon-more-blue-h.png" style="max-height: 64px;">
+            <div class="Grid Grid--alignCenter Grid--withGutter">
+              <div class="Grid-cell u-md-size2of10 u-lg-size2of10">
+                <img src="{{accordion.img}}">
               </div>
-              <div class="Grid-cell u-md-size2of10 u-lg-size2of10"><img src="{{accordion.img}}" style="max-height: 100px"></div>
               <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10">
-                <div class="u-text-h3 u-color-50 u-margin-top-m u-lg-margin-top-none">{{accordion.title}}</div>
+                <div class="u-text-h3 u-color-50 u-margin-top-m">{{accordion.title}}</div>
                 <div data-accordion-header-text class="accordion-line-clamp">
                   {{accordion.text}}
                 </div>

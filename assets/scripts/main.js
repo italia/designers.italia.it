@@ -41,7 +41,14 @@ $(function() {
 
 })
 
+// Helper functions to manage Accordion visual effect (e.g. lines clamp and expand/collapse button)
 $(document).ready(function() {
+  $('[data-accordion-expanded]').on('click', function(e) {
+    const accordionEl = $(this).siblings('.Accordion');
+    const accordionHeader = accordionEl.find('.fr-accordion__header');
+    accordionHeader.click();
+  })
+
   $('.fr-accordion__header').on('click', function(e) {
     const accordionHeaderText = $(this).find('[data-accordion-header-text]');
     if (accordionHeaderText.hasClass('accordion-line-clamp')) {
@@ -50,13 +57,18 @@ $(document).ready(function() {
       accordionHeaderText.addClass('accordion-line-clamp');
     }
 
-    const expandButton = $(this).find('[data-accordion-expanded]');
-    if (expandButton.attr('data-accordion-expanded') === "false") {
-      expandButton.attr('data-accordion-expanded', true);
-      expandButton.find('img').attr('src', '/assets/images/icons/icon-more-blue.png');
+    const accordionEl = $(this).parents('.Accordion');
+    const expandButtonEl = accordionEl.siblings('[data-accordion-expanded]');
+    if (expandButtonEl.attr('data-accordion-expanded') === "false") {
+      expandButtonEl.attr('data-accordion-expanded', true);
+      expandButtonEl.removeClass('accordion-expand-button-close');
+      expandButtonEl.addClass('accordion-expand-button-open');
+      expandButtonEl.find('img').attr('src', '/assets/images/icons/arrow-up-big.svg');
     } else {
-      expandButton.attr('data-accordion-expanded', false);
-      expandButton.find('img').attr('src', '/assets/images/icons/icon-more-blue-h.png');
+      expandButtonEl.attr('data-accordion-expanded', false);
+      expandButtonEl.removeClass('accordion-expand-button-open');
+      expandButtonEl.addClass('accordion-expand-button-close');
+      expandButtonEl.find('img').attr('src', '/assets/images/icons/arrow-down-big.svg');
     }
   })
 });
