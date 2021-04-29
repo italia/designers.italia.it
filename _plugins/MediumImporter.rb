@@ -91,7 +91,7 @@ module Jekyll
         doc.data['medium_author'] = users[item['creatorId']]['name']
         doc.data['medium_author_link'] = "https://medium.com/@" + users[item['creatorId']]['username']
         doc.data['medium_title'] = item['title']
-        doc.data['medium_subtitle'] = item['subtitle']
+        doc.data['medium_subtitle'] = item['virtuals']['subtitle']
         doc.data['meta_description'] = item['metaDescription']
         doc.data['medium_url'] = post_url_base + item['uniqueSlug']
 

@@ -44,6 +44,8 @@ lang: it
       {%- if mediumPostidForHome != 0 -%}
       {% for post in posts %}
       {%- if post.medium_post_id == mediumPostidForHome -%}
+      {% assign mediumSubtitle = post.medium_subtitle | strip_html %}
+      {% assign _url = post.medium_url %}
       <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30 u-posRelative">
         <img class="pinnedBookmark" role="presentation" src="{{ '/assets/images/pinned_bookmark-new.svg' | relative_url }}">
         {% include card.html
@@ -53,7 +55,7 @@ lang: it
         title = post.medium_title
         alt = post.medium_title
         link = _url
-        text = _excerpt
+        text = mediumSubtitle
         hasImage = true
         image = post.medium_preview_image_url
         categories = post.medium_tagsarray

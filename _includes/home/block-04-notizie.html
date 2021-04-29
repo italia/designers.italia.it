@@ -35,6 +35,8 @@
 
         {% assign _date = mediumPost.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
         {% assign _excerpt = mediumPost.medium_subtitle | strip_html %}
+        {% assign mediumSubtitle = mediumPost.medium_subtitle | strip_html | truncatewords: 13 %}
+
         {% assign _url = mediumPost.medium_url %}
         <div class="notizie-inline Grid-cell u-lg-size2of4 u-margin-top-s {% if showThisMediumPost != nil %} u-posRelative{% endif %}">
           {% include card.html
@@ -43,8 +45,8 @@
             title = mediumPost.medium_title
             alt = mediumPost.medium_title
             link = _url
-            text = "Pubblicati i risultati della ricerca dedicata a progettisti e sviluppatori dei servizi pubblici digitali"
-            link_text = "Storia su Medium"
+            text = mediumSubtitle
+            link_text = "Continua su Medium"
             hasImage = true
             hasSocial = false
             rowImage = true
@@ -68,7 +70,6 @@
             title = post.title
             subtitle = post.subtitle
             alt = post.title
-            text = _excerpt
             link = post.url
             homeBottomLink = post.homeBottomLink
             classes = 'u-background-grey-15'
@@ -87,7 +88,6 @@
             title = post.title
             subtitle = post.subtitle
             alt = post.title
-            text = _excerpt
             link = post.url
             homeBottomLink = post.homeBottomLink
             classes = 'u-background-grey-15'
