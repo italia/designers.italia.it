@@ -92,6 +92,11 @@ superAccordion:
           otherResources:
             - description: Descrizione della risorsa B.1
               link: <a href='#'>Link risorsa B.1</a>
+  footer:
+    - icon: "/assets/icons/external-link-grey.svg"
+      text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+    - icon: "/assets/icons/info-grey.svg"
+      text: Per usare i template si ricorda di fare una copia e poi procedere a modificare. Nella prima pagina della risorsa si trovano istruzioni dedicate alla singola risorsa.
 
 tags:
   - navigation-tree
