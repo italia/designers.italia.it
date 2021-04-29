@@ -1144,11 +1144,6 @@ html {
   justify-content: center;
   cursor: pointer;
 }
-@media screen and (max-width:991px) {
-  .accordion-expand-button-close {
-    height: 60%;
-  }
-}
 
 .accordion-expand-button-open {
   width: 88px;
@@ -1174,6 +1169,22 @@ html {
   border-bottom: 32px solid white;
   border-left: 45px solid transparent;
   border-right: 41px solid transparent;
+}
+
+@media screen and (max-width:991px) {
+  .accordion-expand-button-close {
+    width: 48px;
+    height: 96px;
+  }
+  .accordion-expand-button-open {
+    width: 48px;
+    height: 96px;
+  }
+  .accordion-expand-button-open:after {
+    border-bottom: 17px solid white;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+  }
 }
 
 @media screen and (min-width:1366px) {
@@ -1203,6 +1214,9 @@ html {
 @media screen and (min-width:992px) and (max-width:1365px) {
   .u-md-padding-all-m {
     padding: 2rem!important;
+  }
+  .u-md-padding-bottom-m {
+    padding-bottom: 2rem!important;
   }
   .u-md-padding-all-none {
     padding: 0!important;
