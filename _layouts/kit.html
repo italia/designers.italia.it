@@ -16,7 +16,7 @@ layout: default
 <article class="Prose u-color-grey-60 a-text-semi-bold">
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-r-bottom">
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-md-size6of12 u-lg-size5of12 u-color-50">
+      <div class="Grid-cell u-md-size6of12 u-lg-size6of12 u-color-50">
         <h1 class="u-text-r-xs u-margin-bottom-s">Kit</h1>
         <h1 class="u-text-h2">{{title}}</h1>
         <div class="u-text-r-m">
@@ -25,9 +25,9 @@ layout: default
       </div>
     </div>
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-lg-before3of12 u-lg-size5of12 u-md-before3of12 u-md-size6of12">
+      <div class="Grid-cell u-lg-before3of12 u-lg-size6of12 u-md-before3of12 u-md-size6of12">
         <h3 class="u-text-h6">{{textChunk1.title}}</h3>
-        <p>
+        <p class="Prose u-color-grey-60">
           {{textChunk1.text}}
         </p>
       </div>
@@ -40,7 +40,7 @@ layout: default
             {% endif %}
             <ul>
               {% for item in rightColumnItem.items %}
-                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-m">{{item}}</li>
+                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-m Prose u-color-grey-60">{{item}}</li>
               {% endfor %}
             </ul>
           {% endfor %}
@@ -48,16 +48,16 @@ layout: default
     </div>
 
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-md-size6of12 u-lg-size5of12">
+      <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
         <h3 class="u-padding-bottom-s">{{guideLinesChunk.title}}</h3>
-        <div>
+        <div class="Prose u-color-grey-60">
           {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
         </div>
       </div>
     </div>
 
     <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-md-size6of12 u-lg-size5of12">
+      <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
         <h3 class="u-text-h6">{{superAccordion.title}}</h3>
       </div>
 
@@ -72,12 +72,12 @@ layout: default
           <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{forloop.index}}">
 
             <div class="Grid Grid--alignCenter Grid--withGutter">
-              <div class="Grid-cell u-md-size2of10 u-lg-size2of10">
+              <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-padding-left-l">
                 <img src="{{accordion.img}}">
               </div>
               <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10">
                 <div class="u-text-h3 u-color-50 u-margin-top-m">{{accordion.title}}</div>
-                <div data-accordion-header-text class="accordion-line-clamp">
+                <div data-accordion-header-text class="accordion-line-clamp Prose u-color-grey-60">
                   {{accordion.text}}
                 </div>
               </div>
@@ -89,7 +89,7 @@ layout: default
             <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
               <div class="Grid-cell u-padding-all-xl" style="background-color: #F0F6FC">
                 {% for resource in accordion.resources %}
-                  <div class="u-background-white u-margin-all-m">
+                  <div class="u-background-white u-margin-all-m Prose u-color-grey-60">
                     <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
                       <div>
                         <div>{{resource.title}}</div>
@@ -119,16 +119,6 @@ layout: default
       </div>
 
       {% endfor %}
-    </div>
-
-
-    <div class="Grid Grid--alignCenter u-padding-all-l">
-      <div class="Grid-cell u-md-size6of12 u-lg-size5of12">
-        <h3 class="u-padding-bottom-s">{{textChunk2.title}}</h3>
-        <p>
-          {{textChunk2.text}}
-        </p>
-      </div>
     </div>
 
   </div>

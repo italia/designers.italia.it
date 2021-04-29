@@ -12,9 +12,6 @@ kitcategory: ideare
 textChunk1:
   title: A COSA SERVE
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor.
-textChunk2:
-  title: TUTORIAL
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor.
 
 rightColumnItems:
   - title: PROFESSIONALITÀ
@@ -30,12 +27,6 @@ rightColumnItems:
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
   link: <a href='#'>Content design</a>
-
-relatedKits:
-  title: KIT CORRELATI
-  kits:
-    - <a href='#'>Privacy by design</a>
-    - <a href='#'>Interfaccia utente</a>
 
 superAccordion:
   title: STRUMENTI
