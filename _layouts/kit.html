@@ -17,7 +17,7 @@ layout: default
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-r-bottom">
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-md-size6of12 u-lg-size6of12 u-color-50">
-        <h1 class="u-text-r-xs u-margin-bottom-s">Kit</h1>
+        <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Kit</div>
         <h1 class="u-text-h2">{{title}}</h1>
         <div class="u-text-r-m">
           {{subtitle}}
@@ -26,7 +26,7 @@ layout: default
     </div>
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-lg-before3of12 u-lg-size6of12 u-md-before3of12 u-md-size6of12">
-        <h3 class="u-text-h6">{{textChunk1.title}}</h3>
+        <h2 class="u-text-h6">{{textChunk1.title}}</h2>
         <p class="Prose u-color-grey-60">
           {{textChunk1.text}}
         </p>
@@ -49,7 +49,7 @@ layout: default
 
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
-        <h3 class="u-padding-bottom-s">{{guideLinesChunk.title}}</h3>
+        <h2 class="u-text-h6">{{guideLinesChunk.title}}</h2>
         <div class="Prose u-color-grey-60">
           {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
         </div>
@@ -58,7 +58,7 @@ layout: default
 
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
-        <h3 class="u-text-h6">{{superAccordion.title}}</h3>
+        <div class="u-text-h6">{{superAccordion.title}}</div>
       </div>
 
       {% for accordion in superAccordion.accordions %}
@@ -76,7 +76,7 @@ layout: default
                 <img src="{{accordion.img}}">
               </div>
               <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10">
-                <div class="u-text-h3 u-color-50 u-margin-top-m">{{accordion.title}}</div>
+                <h3 class="u-text-h3 u-color-50 u-margin-top-m">{{accordion.title}}</h3>
                 <div data-accordion-header-text class="accordion-line-clamp Prose u-color-grey-60">
                   {{accordion.text}}
                 </div>
