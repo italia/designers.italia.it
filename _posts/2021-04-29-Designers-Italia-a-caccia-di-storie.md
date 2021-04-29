@@ -4,12 +4,12 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Designers Italia a caccia di storie"
 subtitle: "Raccontaci la tua esperienza di progettazione di un servizio pubblico digitale"
-asset: <img class="u-sizeFull" src="/assets/images/posts/ XXX " alt="Un cittadino che utilizza una piattaforma di commercio online" />
-date: 2021-04-29 10:00:00
+asset: <img class="u-sizeFull" src="/assets/images/posts/2021-04-29-Usabilità_prototype_to_explore.jpg" alt="Post it con esempi stilizzati di strumenti di design" />
+date: 2021-04-29 10:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
-homeHideCategories: true
+homeHideCategories: true      
 date_prepend: "Articolo"
 categories:
   - Servizi pubblici digitali
@@ -29,4 +29,3 @@ Riteniamo che dare spazio a questi racconti di innovazione, narrati grazie allo 
 Sei una professionista o un professionista che si occupa di progettazione di servizi pubblici digitali? Hai utilizzato gli [strumenti](https://designers.italia.it/kit/){:target="_blank" rel="noopener noreferrer"} di progettazione o i [modelli](https://designers.italia.it/progetti/siti-web-comuni/){:target="_blank" rel="noopener noreferrer"} di Designers Italia? Ritieni di aver applicato una metodologia user centered per i tuoi servizi digitali? Scrivi a [contatti@designers.italia.it](mailto:contatti@designers.italia.it){:target="_blank" rel="noopener noreferrer"} e aiutaci a raccontare la tua storia, il tuo contributo potrà essere d’esempio anche per altri.
 
 Fotografia di <a href="https://unsplash.com/@dtravisphd" target="_blank">Elena G</a> su <a href="https://unsplash.com/photos/WC6MJ0kRzGw" target="_blank">Unsplash</a>
-</div>
