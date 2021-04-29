@@ -67,11 +67,11 @@ layout: default
         <div class="accordion-expand-button-close" data-accordion-expanded="false">
           <img src="/assets/images/icons/arrow-down-big.svg">
         </div>
-        <div class="Accordion fr-accordion js-fr-accordion u-padding-all-s u-md-padding-all-none u-lg-padding-all-none" id="accordion-{{forloop.index}}">
+        <div class="Accordion fr-accordion js-fr-accordion" id="accordion-{{forloop.index}}">
 
           <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{forloop.index}}">
 
-            <div class="Grid Grid--alignCenter Grid--withGutter">
+            <div class="Grid Grid--alignCenter Grid--withGutter u-padding-all-s u-md-padding-all-none u-lg-padding-all-none">
               <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-padding-left-l">
                 <img src="{{accordion.img}}">
               </div>
@@ -89,7 +89,7 @@ layout: default
             <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
               <div class="Grid-cell u-padding-all-xl" style="background-color: #F0F6FC">
                 {% for resource in accordion.resources %}
-                  <div class="u-background-white u-margin-all-m Prose u-color-grey-60">
+                  <div class="u-background-white u-margin-all-m">
                     <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
                       <div>
                         <div>{{resource.title}}</div>
@@ -115,7 +115,7 @@ layout: default
             </div>
 
             <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
-              <div class="Grid-cell u-md-before2of10 u-lg-before2of10 u-md-size7of10 u-lg-size7of10 u-md-after1of10 u-lg-after1of10">
+              <div class="Grid-cell u-md-before2of10 u-lg-before2of10 u-md-size7of10 u-lg-size7of10 u-md-after1of10 u-lg-after1of10 u-padding-all-s">
                 <div class="Grid Grid--withGutter">
                   {% for item in superAccordion.footer %}
                     <div class="Grid-cell u-lg-size5of10 u-md-size5of10 u-margin-bottom-l u-flex u-flexAlignItemsStart">
