@@ -8,11 +8,12 @@ layout: default
 {% assign textChunk1 = page.textChunk1 %}
 {% assign textChunk2 = page.textChunk2 %}
 {% assign textChunk3 = page.textChunk3 %}
-{% assign tagsSection = page.tagsSection %}
+{% assign rightColumnItems = page.rightColumnItems %}
+{% assign guideLinesChunk = page.guideLinesChunk %}
 {% assign relatedKits = page.relatedKits %}
 {% assign superAccordion = page.superAccordion %}
 
-<article class="Prose u-color-grey-60">
+<article class="Prose u-color-grey-60 a-text-semi-bold">
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-r-bottom">
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-md-size6of12 u-lg-size5of12 u-color-50">
@@ -30,14 +31,27 @@ layout: default
           {{textChunk1.text}}
         </p>
       </div>
-      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-lg-margin-top-none">
+      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-l u-md-margin-top-none u-lg-margin-top-none">
+          {% for rightColumnItem in rightColumnItems %}
+            {% if forloop.index == 1 %}
+              <div class="u-text-h6">{{rightColumnItem.title}}</div>
+            {% else %}
+              <div class="u-text-h6 u-margin-top-l">{{rightColumnItem.title}}</div>
+            {% endif %}
+            <ul>
+              {% for item in rightColumnItem.items %}
+                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-m">{{item}}</li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+      </div>
+    </div>
+
+    <div class="Grid Grid--alignCenter u-padding-all-l">
+      <div class="Grid-cell u-md-size6of12 u-lg-size5of12">
+        <h3 class="u-padding-bottom-s">{{guideLinesChunk.title}}</h3>
         <div>
-          <div class="u-text-h6">{{tagsSection.title}}</div>
-          <ul>
-            {% for tag in tagsSection.tags %}
-              <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-m">{{tag}}</li>
-            {% endfor %}
-          </ul>
+          {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
         </div>
       </div>
     </div>
@@ -82,7 +96,7 @@ layout: default
                         <div>{{resource.description}}</div>
                       </div>
                       <div>
-                        {{resource.link}}
+                        {{resource.link}} <img class="u-margin-left-xs" src="/assets/icons/pencil.svg" />
                       </div>
                     </div>
                     {% for otherResource in resource.otherResources %}
@@ -116,25 +130,6 @@ layout: default
         </p>
       </div>
     </div>
-
-<!--    <div class="Grid Grid&#45;&#45;alignCenter u-padding-all-l">-->
-<!--      <div class="Grid-cell u-lg-before3of12 u-lg-size6of12">-->
-<!--        <h3 class="u-padding-bottom-s">{{textChunk3.title}}</h3>-->
-<!--        <p>-->
-<!--          {{textChunk3.text}}-->
-<!--        </p>-->
-<!--      </div>-->
-<!--      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-margin-top-xxl u-lg-margin-top-none">-->
-<!--        <div>-->
-<!--          <div class="u-text-h6">{{relatedKits.title}}</div>-->
-<!--          <ul>-->
-<!--            {% for kit in relatedKits.kits %}-->
-<!--            <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-lg-block u-margin-right-m">{{kit}}</li>-->
-<!--            {% endfor %}-->
-<!--          </ul>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </div>-->
 
   </div>
 
