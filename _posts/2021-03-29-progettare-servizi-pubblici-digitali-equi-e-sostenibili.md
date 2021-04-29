@@ -6,7 +6,7 @@ title: "Progettare servizi pubblici digitali<br />più equi e sostenibili"
 subtitle: "L’intervento di Designers Italia alla Milano Digital Week"
 asset: <img class="u-sizeFull" src="/assets/images/posts/DesignersItaliaMilanoDesignWeek-2021.jpg" alt="Banner promozionale Progettare servizi pubblici più equi e sostenibili" />
 date: 2021-03-19 09:00:00
-pinned: true
+pinned: false
 nodate: false
 homeBottomLink: false
 homeHideCategories: true
