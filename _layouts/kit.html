@@ -86,30 +86,65 @@ layout: default
           </div>
           <div id="accordion-panel-{{forloop.index}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
 
+<!--            <div class="Grid Grid&#45;&#45;alignCenter Grid&#45;&#45;withGutter u-margin-top-m u-margin-bottom-m">-->
+<!--              <div class="Grid-cell u-padding-all-xl" style="background-color: #F0F6FC">-->
+<!--                {% for resource in accordion.resources %}-->
+<!--                  <div class="u-background-white u-margin-all-m u-padding-top-m u-padding-bottom-m u-padding-left-xxl u-padding-right-xxl u-borderShadow-l" style="border-left: 8px solid #0066CC">-->
+<!--                    <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween u-flexWrap">-->
+<!--                      <div style="margin-right: 40px; padding: 10px 0px;">-->
+<!--                        <div class="u-textWeight-600">{{resource.title}}</div>-->
+<!--                        <div>{{resource.description}}</div>-->
+<!--                      </div>-->
+<!--                      <div style="padding: 10px 0px">-->
+<!--                        {{resource.link}} <img class="u-margin-left-xs" src="/assets/icons/pencil.svg" />-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    {% for otherResource in resource.otherResources %}-->
+<!--                      <hr />-->
+<!--                      <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween u-flexWrap">-->
+<!--                        <div style="margin-right: 40px; padding: 10px 0px;">-->
+<!--                          <div>{{otherResource.description}}</div>-->
+<!--                        </div>-->
+<!--                        <div style="padding: 10px 0px">-->
+<!--                          {{otherResource.link}}-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    {% endfor %}-->
+<!--                  </div>-->
+<!--                {% endfor %}-->
+<!--              </div>-->
+<!--            </div>-->
+
+
             <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
-              <div class="Grid-cell u-padding-all-xl" style="background-color: #F0F6FC">
+              <div class="Grid-cell u-sm-padding-all-xl u-md-padding-all-xl u-lg-padding-all-xl" style="background-color: #F0F6FC">
                 {% for resource in accordion.resources %}
-                  <div class="u-background-white u-margin-all-m">
-                    <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
-                      <div>
-                        <div>{{resource.title}}</div>
-                        <div>{{resource.description}}</div>
-                      </div>
-                      <div>
-                        {{resource.link}} <img class="u-margin-left-xs" src="/assets/icons/pencil.svg" />
-                      </div>
+                <div class="u-background-white u-margin-all-m
+                            u-padding-top-m u-padding-bottom-m
+                            u-padding-left-s u-padding-right-s
+                            u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
+                            u-borderShadow-l" style="border-left: 8px solid #0066CC">
+                  <div class="Grid Grid--alignCenter u-flexAlignItemsCenter">
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
+                      <div class="u-textWeight-600">{{resource.title}}</div>
+                      <div>{{resource.description}}</div>
                     </div>
-                    {% for otherResource in resource.otherResources %}
-                      <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween">
-                        <div>
-                          <div>{{otherResource.description}}</div>
-                        </div>
-                        <div>
-                          {{otherResource.link}}
-                        </div>
-                      </div>
-                    {% endfor %}
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
+                      {{resource.link}} <img class="u-margin-left-xs" src="/assets/icons/pencil.svg" />
+                    </div>
                   </div>
+                  {% for otherResource in resource.otherResources %}
+                  <hr />
+                  <div class="Grid Grid--alignCenter u-flexAlignItemsCenter">
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
+                      <div>{{otherResource.description}}</div>
+                    </div>
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
+                      {{otherResource.link}}
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
                 {% endfor %}
               </div>
             </div>
