@@ -13,6 +13,50 @@ layout: default
 {% assign relatedKits = page.relatedKits %}
 {% assign superAccordion = page.superAccordion %}
 
+<div class="super-breadcrumb">
+  <div class="u-layout-wide u-layoutCenter u-color-white">
+    <nav>
+      <ul>
+        <li class="all">
+          <a>
+            Tutti
+          </a>
+        <li>
+          <a>
+            <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/organizzare.svg" />
+            Organizzare
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/comprendere.svg" />
+            Comprendere
+          </a>
+        </li>
+        <li class="selected">
+          <a>
+            <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/progettare.svg" />
+            Progettare
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/realizzare.svg" />
+            Realizzare
+          </a>
+        </li>
+        <li>
+          <a>
+            <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/validare.svg" />
+            Validare
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+
 <article class="Prose u-color-grey-60 a-text-semi-bold">
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-r-bottom">
     <div class="Grid Grid--alignCenter u-padding-all-l">
@@ -85,36 +129,6 @@ layout: default
 
           </div>
           <div id="accordion-panel-{{forloop.index}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
-
-<!--            <div class="Grid Grid&#45;&#45;alignCenter Grid&#45;&#45;withGutter u-margin-top-m u-margin-bottom-m">-->
-<!--              <div class="Grid-cell u-padding-all-xl" style="background-color: #F0F6FC">-->
-<!--                {% for resource in accordion.resources %}-->
-<!--                  <div class="u-background-white u-margin-all-m u-padding-top-m u-padding-bottom-m u-padding-left-xxl u-padding-right-xxl u-borderShadow-l" style="border-left: 8px solid #0066CC">-->
-<!--                    <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween u-flexWrap">-->
-<!--                      <div style="margin-right: 40px; padding: 10px 0px;">-->
-<!--                        <div class="u-textWeight-600">{{resource.title}}</div>-->
-<!--                        <div>{{resource.description}}</div>-->
-<!--                      </div>-->
-<!--                      <div style="padding: 10px 0px">-->
-<!--                        {{resource.link}} <img class="u-margin-left-xs" src="/assets/icons/pencil.svg" />-->
-<!--                      </div>-->
-<!--                    </div>-->
-<!--                    {% for otherResource in resource.otherResources %}-->
-<!--                      <hr />-->
-<!--                      <div class="u-flex u-flexAlignItemsCenter u-flexJustifyBetween u-flexWrap">-->
-<!--                        <div style="margin-right: 40px; padding: 10px 0px;">-->
-<!--                          <div>{{otherResource.description}}</div>-->
-<!--                        </div>-->
-<!--                        <div style="padding: 10px 0px">-->
-<!--                          {{otherResource.link}}-->
-<!--                        </div>-->
-<!--                      </div>-->
-<!--                    {% endfor %}-->
-<!--                  </div>-->
-<!--                {% endfor %}-->
-<!--              </div>-->
-<!--            </div>-->
-
 
             <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
               <div class="Grid-cell u-sm-padding-all-xl u-md-padding-all-xl u-lg-padding-all-xl" style="background-color: #F0F6FC">
