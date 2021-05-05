@@ -43,6 +43,7 @@ superAccordion:
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Risorsa A
+          icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa A
           link: <a href='#'>Link alla risorsa A</a>
           otherResources:
@@ -51,6 +52,7 @@ superAccordion:
             - description: Descrizione della risorsa A.2
               link: <a href='#'>Link risorsa A.1</a>
         - title: Risorsa B
+          icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa B
           link: <a href='#'>Link risorsa B</a>
           otherResources:
@@ -66,6 +68,7 @@ superAccordion:
       img: "/assets/images/diagram_2.svg"
       resources:
         - title: Risorsa A
+          icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa A
           link: <a href='#'>Link alla risorsa A</a>
           otherResources:
@@ -74,6 +77,7 @@ superAccordion:
             - description: Descrizione della risorsa A.2
               link: <a href='#'>Link risorsa A.1</a>
         - title: Risorsa B
+          icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa B
           link: <a href='#'>Link risorsa B</a>
           otherResources:
@@ -89,6 +93,7 @@ superAccordion:
       img: "/assets/images/diagram_3.svg"
       resources:
         - title: Risorsa A
+          icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa A
           link: <a href='#'>Link alla risorsa A</a>
           otherResources:
@@ -97,6 +102,7 @@ superAccordion:
             - description: Descrizione della risorsa A.2
               link: <a href='#'>Link risorsa A.1</a>
         - title: Risorsa B
+          icon: "/assets/icons/dt-logo.svg"
           description: Descrizione della risorsa B
           link: <a href='#'>Link risorsa B</a>
           otherResources:
