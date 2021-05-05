@@ -56,6 +56,11 @@ superAccordion:
           otherResources:
             - description: Descrizione della risorsa B.1
               link: <a href='#'>Link risorsa B.1</a>
+      footer:
+        - icon: "/assets/icons/external-link-grey.svg"
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra accordion 1.
+        - icon: "/assets/icons/info-grey.svg"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 1"
     - title: Organizza i contenuti
       text: Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus, duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque, ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.
       img: "/assets/images/diagram_2.svg"
@@ -74,6 +79,11 @@ superAccordion:
           otherResources:
             - description: Descrizione della risorsa B.1
               link: <a href='#'>Link risorsa B.1</a>
+      footer:
+        - icon: "/assets/icons/external-link-grey.svg"
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 2
+        - icon: "/assets/icons/info-grey.svg"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 2"
     - title: Prepara le attività da seguire e conduci i test
       text: Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande.
       img: "/assets/images/diagram_3.svg"
@@ -92,11 +102,11 @@ superAccordion:
           otherResources:
             - description: Descrizione della risorsa B.1
               link: <a href='#'>Link risorsa B.1</a>
-  footer:
-    - icon: "/assets/icons/external-link-grey.svg"
-      text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-    - icon: "/assets/icons/info-grey.svg"
-      text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa." 
+      footer:
+        - icon: "/assets/icons/external-link-grey.svg"
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 3
+        - icon: "/assets/icons/info-grey.svg"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa. accordion 3"
 
 tags:
   - navigation-tree
