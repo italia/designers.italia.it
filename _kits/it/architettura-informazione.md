@@ -3,7 +3,7 @@ title: Architettura dell'informazione
 subtitle: Sottotitolo che contestualizzi questo kit per cosa lo usiamo e dove, frase chiave contestualizzare in tre righe al massimo deve capirsi
 lang: it
 layout: kit
-description: "Design del sito di una scuola: template HTML"
+description: "Descrizione del kit"
 backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
 backgroundColor: "#439af1"
 nodate: true
