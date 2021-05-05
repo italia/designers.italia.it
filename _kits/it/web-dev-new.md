@@ -46,7 +46,7 @@ superAccordion:
               link: <a href='https://italia.github.io/bootstrap-italia/docs/esempi/'>Vai agli esempi</a>
             - description: Esempi di progetti basati su Bootstrap
               link: <a href='https://italia.github.io/bootstrap-italia/docs/progetti/'>Vai ai progetti</a>   
-              footer:
+      footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
