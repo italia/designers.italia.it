@@ -3,7 +3,7 @@ title: SEO
 subtitle: Ottimizza i contenuti in base ai bisogni e alle priorità che gli utenti esprimono durante le ricerche web
 lang: it
 layout: kit
-description: "Descrizione del kit"
+description: "Un kit di Designers Italia dedicato alle buone pratiche di ottimizzazione per gli utenti e i motori di ricerca"
 backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
 backgroundColor: "#439af1"
 nodate: true
@@ -37,74 +37,25 @@ superAccordion:
         - title: Checklist SEO
           icon: "/assets/icons/pencil.svg"
           description: Usa questa bacheca collaborativa per programmare gli interventi di ottimizzazione
-          link: <a href='#'>Vai alla risorsa A</a>
-          otherResources:
-            - description: Descrizione della risorsa A.1
-              link: <a href='#'>Link risorsa A.1</a>
-            - description: Descrizione della risorsa A.2
-              link: <a href='#'>Link risorsa A.1</a>
-        - title: Risorsa B
-          icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa B
-          link: <a href='#'>Link risorsa B</a>
-          otherResources:
-            - description: Descrizione della risorsa B.1
-              link: <a href='#'>Link risorsa B.1</a>
+          link: <a href='https://trello.com/b/CPIl9SxJ/checklistseodesigners-italia'>Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra accordion 1.
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
-          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 1"
-    - title: Organizza i contenuti
-      text: Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus, duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque, ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+    - title: Analizza e definisci gli interventi di ottimizzazione
+      text: Analizza i contenuti del tuo sito e coordina gli interventi di ottimizzazione SEO con il tuo team, definendo le priorità. Puoi personalizzare il foglio di lavoro in base alle tue esigenze, elencando le url del sito (o di una sua sezione) per cui vuoi condurre un audit. Questa risorsa è pensata per aiutarti ad avere una panoramica sullo stato di revisione dei contenuti.   
       img: "/assets/images/diagram_2.svg"
       resources:
-        - title: Risorsa A
+        - title: Ottimizzazione SEO
           icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa A
-          link: <a href='#'>Link alla risorsa A</a>
-          otherResources:
-            - description: Descrizione della risorsa A.1
-              link: <a href='#'>Link risorsa A.1</a>
-            - description: Descrizione della risorsa A.2
-              link: <a href='#'>Link risorsa A.1</a>
-        - title: Risorsa B
-          icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa B
-          link: <a href='#'>Link risorsa B</a>
-          otherResources:
-            - description: Descrizione della risorsa B.1
-              link: <a href='#'>Link risorsa B.1</a>
+          description: Uno strumento che ti aiuta ad analizzare i contenuti del tuo sito e definire le priorità 
+          link: <a href='https://docs.google.com/spreadsheets/d/1bRjLUC3yN1E1c-ZTY1FiI5klX_wkeMWuC9boWXSBbhw/edit?usp=sharing'>Vai al template spreadsheet</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 2
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. 
         - icon: "/assets/icons/info-grey.svg"
-          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 2"
-    - title: Prepara le attività da seguire e conduci i test
-      text: Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande.
-      img: "/assets/images/diagram_3.svg"
-      resources:
-        - title: Risorsa A
-          icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa A
-          link: <a href='#'>Link alla risorsa A</a>
-          otherResources:
-            - description: Descrizione della risorsa A.1
-              link: <a href='#'>Link risorsa A.1</a>
-            - description: Descrizione della risorsa A.2
-              link: <a href='#'>Link risorsa A.1</a>
-        - title: Risorsa B
-          icon: "/assets/icons/dt-logo.svg"
-          description: Descrizione della risorsa B
-          link: <a href='#'>Link risorsa B</a>
-          otherResources:
-            - description: Descrizione della risorsa B.1
-              link: <a href='#'>Link risorsa B.1</a>
-      footer:
-        - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 3
-        - icon: "/assets/icons/info-grey.svg"
-          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa. accordion 3"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
 tags:
   - navigation-tree
