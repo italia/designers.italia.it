@@ -11,39 +11,45 @@ layout: default
 {% assign relatedKits = page.relatedKits %}
 {% assign superAccordion = page.superAccordion %}
 
+{% assign showAll = true %}
+{% assign kitCategory = 'organizzare' %}
+
 <div class="super-breadcrumb">
   <div class="u-layout-wide u-layoutCenter u-color-white u-margin-bottom-l">
     <nav>
       <ul>
-        <li class="all">
-          <a>
-            Tutti
-          </a>
-        <li>
+        {% if showAll %}
+          <li class="all">
+            <a>
+              Tutti
+            </a>
+          </li>
+        {% endif %}
+        <li class="{% if kitCategory == 'organizzare' %} active {% endif %}">
           <a>
             <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/organizzare.svg" />
             Organizzare
           </a>
         </li>
-        <li>
+        <li class="{% if kitCategory == 'comprendere' %} active {% endif %}">
           <a>
             <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/comprendere.svg" />
             Comprendere
           </a>
         </li>
-        <li class="active">
+        <li class="{% if kitCategory == 'progettare' %} active {% endif %}">
           <a>
             <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/progettare.svg" />
             Progettare
           </a>
         </li>
-        <li>
+        <li class="{% if kitCategory == 'realizzare' %} active {% endif %}">
           <a>
             <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/realizzare.svg" />
             Realizzare
           </a>
         </li>
-        <li>
+        <li class="{% if kitCategory == 'validare' %} active {% endif %}">
           <a>
             <img class="u-margin-right-m" src="/assets/icons/super_breadcrumb/validare.svg" />
             Validare
