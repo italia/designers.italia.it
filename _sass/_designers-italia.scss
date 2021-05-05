@@ -1209,6 +1209,7 @@ html {
   align-items: center;
   height: 100%;
   padding: 0px 30px;
+  cursor: pointer;
 }
 
 .super-breadcrumb li.all {
@@ -1228,6 +1229,15 @@ html {
 @media screen and (max-width:1150px) {
   .super-breadcrumb li {
     padding: 0px 18px;
+  }
+}
+
+@media screen and (max-width:992px) {
+  .super-breadcrumb li:not(.active):not(.all) {
+    display: none;
+  }
+  .super-breadcrumb li.active {
+    margin: 0px 18px;
   }
 }
 
