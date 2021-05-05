@@ -11,7 +11,7 @@ kitcategory: ideare
 
 textChunk1:
   title: A COSA SERVE
-  text: Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti. Le librerie ti forniscono componenti open-source pronti per l’uso: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.
+  text: "Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti. Le librerie ti forniscono componenti open-source pronti per l’uso: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto."
 
 rightColumnItems:
   - title: PROFESSIONALITÀ
