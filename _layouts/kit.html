@@ -10,7 +10,7 @@ layout: default
 {% assign guideLinesChunk = page.guideLinesChunk %}
 {% assign relatedKits = page.relatedKits %}
 {% assign superAccordion = page.superAccordion %}
- 
+
 <div class="super-breadcrumb">
   <div class="u-layout-wide u-layoutCenter u-color-white u-margin-bottom-l">
     <nav>
@@ -100,7 +100,7 @@ layout: default
 
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
-        <div class="u-text-h6">{{superAccordion.title}}</div>
+        <h2 class="u-text-h6">{{superAccordion.title}}</h2>
       </div>
 
       {% for accordion in superAccordion.accordions %}
