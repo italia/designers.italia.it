@@ -7,7 +7,7 @@ description: "Design del sito di una scuola: template HTML"
 backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
 backgroundColor: "#439af1"
 nodate: true
-kitcategory: ideare
+kitcategory: progettare
 
 textChunk1:
   title: A COSA SERVE
