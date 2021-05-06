@@ -7,7 +7,7 @@ description: "Il kit di Designers Italia dedicato allo sviluppo delle interfacce
 backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
 backgroundColor: "#439af1"
 nodate: true
-kitcategory: ideare
+kitcategory: realizzare
 
 textChunk1:
   title: A COSA SERVE
@@ -35,7 +35,7 @@ superAccordion:
       text: "<p>Gli strumenti a disposizione per lo sviluppo di interfacce web sono dedicate a diverse tipologie di sviluppatori ed esperienze d’uso. Ogni risorsa si compone di codice HTML, CSS e Javascript, progettati per offrirti un’esperienza creazione di siti, applicazioni web e interfacce più semplice, basata sui princìpi di composizione e riuso di componenti condivisi. Bootstrap Italia è il framework di riferimento, costruito sulla libreria Bootstrap 4 e basato sullo UI kit di Designers Italia.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
-        - title: Bootstrap Italia 
+        - title: Bootstrap Italia
           icon: "/assets/icons/pencil.svg"
           description: La libreria open source Bootstrap Italia permette di costruire interfacce web inclusive e semplici da mantenere
           link: <a href='https://italia.github.io/bootstrap-italia/'>Vai alla risorsa</a>
