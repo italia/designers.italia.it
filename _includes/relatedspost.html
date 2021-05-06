@@ -20,8 +20,8 @@
 {% if selecteds.size > 0 %}
 	{% assign posts_sorted = (selecteds | sort: "medium_firstpublished_at") | reverse %}
 	<div class="u-layout-wide u-layoutCenter u-background-teal-60 u-color-grey-ui-kit u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
-		  <h1 class="u-text-h2 u-textCenter u-color-white">Notizie</h1>
-		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-white u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
+		  <h1 class="u-text-h2 u-textCenter">Notizie</h1>
+		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
 		  <div class=" u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill {% if posts_sorted.size == 2 %}Grid--alignCenter {% endif%}">
         {% if posts_sorted.size == 1 %}
         {% assign post = posts_sorted[0] %}
