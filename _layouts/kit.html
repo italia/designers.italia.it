@@ -93,10 +93,10 @@ layout: default
                             u-padding-top-m u-padding-bottom-m
                             u-padding-left-s u-padding-right-s
                             u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
-                            u-borderShadow-l" style="border-left: 8px solid #0066CC">
+                            u-borderShadow-m u-margin-bottom-xxl" style="border-left: 8px solid #0066CC">
                   <div class="Grid Grid--alignCenter u-flexAlignItemsCenter">
-                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
-                      <div class="u-textWeight-600">{{resource.title}}</div>
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs">
+                      <div class="u-textWeight-600 u-text-r-s u-margin-bottom-xxs">{{resource.title}}</div>
                       <div>{{resource.description}}</div>
                     </div>
                     <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
@@ -104,7 +104,7 @@ layout: default
                     </div>
                   </div>
                   {% for otherResource in resource.otherResources %}
-                  <hr />
+                  <hr style="border:none;height:1px;background:#C5C7C9"/>
                   <div class="Grid Grid--alignCenter u-flexAlignItemsCenter">
                     <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
                       <div>{{otherResource.description}}</div>
