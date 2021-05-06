@@ -7,7 +7,7 @@ description: "Descrizione del kit"
 backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
 backgroundColor: "#439af1"
 nodate: true
-kitcategory: ideare
+kitcategory: progettare
 
 textChunk1:
   title: A COSA SERVE
