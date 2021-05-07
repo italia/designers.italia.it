@@ -63,7 +63,7 @@ layout: default
           {% endcomment %}
           {% if page.nodate != true %}
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-textSecondary">
-            {{ page.date | date: "%-d %b %Y" }}</time>
+            {% include date_format.html date=page.date %}</time>
           {% endif %}
 
           {% if page.pretitle != nil %}
