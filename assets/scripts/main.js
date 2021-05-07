@@ -71,4 +71,9 @@ $(document).ready(function() {
       expandButtonEl.find('img').attr('src', '/assets/images/icons/arrow-down-big.svg');
     }
   })
+
+  // If there is only one superaccordion in the page, automatically open it
+  if ($('[data-accordion-expanded]').length === 1) {
+    $('[data-accordion-expanded]').click();
+  }
 });
