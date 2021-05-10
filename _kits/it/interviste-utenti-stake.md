@@ -78,11 +78,11 @@ superAccordion:
           description: Alcuni fogli di lavoro dove riportare le evidenze delle interviste per elaborare le conclusioni 
           link: <a href='https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing'>Vai alla risorsa</a>
         - title: Presentazione dei risultati delle interviste
-          icon: "/assets/icons/dt-logo.svg"
+          icon: "/assets/icons/pencil.svg"
           description: Un modello di presentazione strutturato per inserire i risultati delle interviste 
           link: <a href='https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing'>Vai alla risorsa</a>
         - title: Relazione delle conclusioni della ricerca
-          icon: "/assets/icons/dt-logo.svg"
+          icon: "/assets/icons/pencil.svg"
           description: Un modello di struttura per la relazione di sintesi dei risultati delle interviste 
           link: <a href='https://docs.google.com/document/d/1ufkimx2_10Qe4APacfcI6vjoPbMpPwltC2-2MUpUckA/edit?usp=sharing'>Vai alla risorsa</a>
       footer:
