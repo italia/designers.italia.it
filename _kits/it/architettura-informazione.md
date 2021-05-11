@@ -37,7 +37,7 @@ guideLinesChunk:
   link: <a href='#'>Content design</a>
 
 superAccordion:
-  title: STRUMENTI
+  title: ATTIVITÀ E RISORSE
   accordions:
     - title: Individua contenuti e funzionalità
       text: "<p>Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in.

@@ -14,22 +14,24 @@ layout: default
 {% include super_breadcrumb.html kitCategory=page.kitcategory showAll=true %}
 
 <article class="u-color-grey-ui-kit a-text-semi-bold">
-  <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-r-bottom">
+  <!-- header -->
+  <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
     <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
-      <div class="Grid-cell u-lg-before3of12 u-lg-size6of12 u-md-before3of12 u-md-size6of12 u-color-50">
+      <div class="Grid-cell u-lg-size6of12 u-md-size6of12 u-color-50">
         <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Kit</div>
         <h1 class="u-text-h1">{{title}}</h1>
-        <div class="u-text-r-m">
+        <div class="u-text-r-l">
           {{subtitle}}
         </div>
       </div>
       <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
-        <img src="/assets/images/diagram_1.svg"/>
+        <img class="u-md-sizeFull" src="/assets/images/diagram_1.svg"/>
       </div>
     </div>
 
+    <!-- intro -->
     <div class="Grid Grid--alignCenter u-padding-all-l Prose">
-      <div class="Grid-cell u-lg-before3of12 u-lg-size6of12 u-md-before3of12 u-md-size6of12">
+      <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
         <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{textChunk1.title}}</h2>
         <p class="Prose u-layout-prose u-color-grey-ui-kit">
           {{textChunk1.text}}
@@ -51,25 +53,19 @@ layout: default
       </div>
     </div>
 
+    <!-- images -->
     {% include kit_images.html %}
 
-    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
-      <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
-        <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</h2>
-        <div class="Prose u-layout-prose u-color-grey-ui-kit">
-          {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
-        </div>
-      </div>
-    </div>
 
+    <!-- tools -->
     <div class="Grid Grid--alignCenter u-padding-all-l Prose">
-      <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
+      <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
         <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{superAccordion.title}}</h2>
       </div>
 
       {% for accordion in superAccordion.accordions %}
 
-      <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-l u-margin-top-l u-margin-bottom-l u-posRelative u-borderRadius-m">
+      <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-m u-margin-top-l u-margin-bottom-l u-posRelative u-borderRadius-l">
         <div class="accordion-expand-button-close" data-accordion-expanded="false">
           <img src="/assets/images/icons/arrow-down-big.svg">
         </div>
@@ -144,6 +140,17 @@ layout: default
       </div>
 
       {% endfor %}
+    </div>
+    <!-- end tools -->
+
+    <!-- guidelines -->
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+      <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+        <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</h2>
+        <div class="Prose u-layout-prose u-color-grey-ui-kit">
+          {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
+        </div>
+      </div>
     </div>
 
   </div>
