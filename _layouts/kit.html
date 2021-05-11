@@ -7,6 +7,7 @@ layout: default
 {% assign subtitle = page.subtitle %}
 {% assign textChunk1 = page.textChunk1 %}
 {% assign rightColumnItems = page.rightColumnItems %}
+{% assign footerItems = page.footerItems %}
 {% assign guideLinesChunk = page.guideLinesChunk %}
 {% assign relatedKits = page.relatedKits %}
 {% assign superAccordion = page.superAccordion %}
@@ -38,9 +39,13 @@ layout: default
         </p>
       </div>
       <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
+        <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</div>
+        <div class="Prose u-layout-prose u-color-grey-ui-kit">
+          {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
+        </div>
           {% for rightColumnItem in rightColumnItems %}
             {% if forloop.index == 1 %}
-              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{rightColumnItem.title}}</div>
+              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
             {% else %}
               <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
             {% endif %}
@@ -55,7 +60,6 @@ layout: default
 
     <!-- images -->
     {% include kit_images.html %}
-
 
     <!-- tools -->
     <div class="Grid Grid--alignCenter u-padding-all-l Prose">
@@ -146,10 +150,18 @@ layout: default
     <!-- guidelines -->
     <div class="Grid Grid--alignCenter u-padding-all-l Prose">
       <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
-        <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</h2>
-        <div class="Prose u-layout-prose u-color-grey-ui-kit">
-          {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
-        </div>
+        {% for footerItem in footerItems %}
+          {% if forloop.index == 1 %}
+            <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{footerItem.title}}</div>
+          {% else %}
+            <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{footerItem.title}}</div>
+          {% endif %}
+          <ul>
+            {% for item in footerItem.items %}
+              <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-margin-right-xxl u-text-r-xxs u-color-grey-ui-kit">{{item}}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
       </div>
     </div>
 

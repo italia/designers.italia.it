@@ -13,20 +13,22 @@ textChunk1:
   title: A COSA SERVE
   text: Il kit di analisi del contesto ti consente di ottenere una visione d’insieme dei fattori e delle variabili che influenzano l'erogazione e la fruizione di un servizio digitale. L’obiettivo è quello di aiutarti a mettere a fuoco gli obiettivi e il perimetro del progetto, attività fondamentale per poi impostare in maniera bilanciata le successive attività di ricerca e di concettualizzazione. Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi ed evolvere.
 
+guideLinesChunk:
+  title: LINEE GUIDA DI RIFERIMENTO
+  link: <a href='#'>Service design</a>
+
 rightColumnItems:
-  - title: PROFESSIONALITÀ
-    items:
-      - Service designer
-      - Redattore
-      - Esperto UX
   - title: KIT CORRELATI
     items:
       - <a href='#'>Privacy by design</a>
       - <a href='#'>Interfaccia utente</a>
 
-guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Service design</a>
+footerItems:
+  - title: PROFESSIONALITÀ
+    items:
+      - Service designer
+      - Redattore
+      - Esperto UX
 
 superAccordion:
   title: STRUMENTI
@@ -48,7 +50,7 @@ superAccordion:
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
- 
+
 tags:
   - navigation-tree
   - information-architecture

@@ -11,22 +11,24 @@ kitcategory: comprendere
 
 textChunk1:
   title: A COSA SERVE
-  text: I questionari online consentono di raccogliere informazioni dagli utenti in maniera strutturatam, così da poterle elaborare quantitativamente. Il vantaggio per il progettista è quello di poter raggiungere una grande quantità di utenti contemporaneamente, poichè la somministrazione dei questionari avviene online e attraverso i canali di comunicazione digitale più consoni a raggiungere i partecipanti. Questo kit dedicato ai questionari comprende modelli pre-organizzati per supportarti nelle attività di pianificazione, esecuzione e analisi della ricerca. 
+  text: I questionari online consentono di raccogliere informazioni dagli utenti in maniera strutturatam, così da poterle elaborare quantitativamente. Il vantaggio per il progettista è quello di poter raggiungere una grande quantità di utenti contemporaneamente, poichè la somministrazione dei questionari avviene online e attraverso i canali di comunicazione digitale più consoni a raggiungere i partecipanti. Questo kit dedicato ai questionari comprende modelli pre-organizzati per supportarti nelle attività di pianificazione, esecuzione e analisi della ricerca.
+
+guideLinesChunk:
+  title: LINEE GUIDA DI RIFERIMENTO
+  link: <a href='#'>Service design</a>
 
 rightColumnItems:
-  - title: PROFESSIONALITÀ
-    items:
-      - Service designer
-      - Redattore
-      - Esperto UX
   - title: KIT CORRELATI
     items:
       - <a href='#'>Analisi del contesto</a>
       - <a href='#'>Interviste utenti e stakeholder</a>
 
-guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Service design</a>
+footerItems:
+  - title: PROFESSIONALITÀ
+    items:
+      - Service designer
+      - Redattore
+      - Esperto UX
 
 superAccordion:
   title: STRUMENTI

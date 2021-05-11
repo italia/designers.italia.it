@@ -1,5 +1,5 @@
 ---
-title: SEO 
+title: SEO
 subtitle: Ottimizza i contenuti in base ai bisogni e alle priorità che gli utenti esprimono durante le ricerche web
 lang: it
 layout: kit
@@ -12,20 +12,23 @@ kitcategory: ideare
 textChunk1:
   title: A COSA SERVE
   text: Le tecniche di ottimizzazione e analisi SEO (search engine optimization ovvero ottimizzazione per i motori di ricerca) hanno l’obiettivo di migliorare il posizionamento dei contenuti web nei motori di ricerca, in relazione a specifici argomenti/intenti dell’utente. Nel contesto delle amministrazioni pubbliche ciò significa intervenire sui contenuti e su aspetti strutturali e tecnologici di siti e servizi per migliorare la trovabilità di informazioni di utilità pubblica da parte dei cittadini. Il kit SEO ha l’obiettivo di fornire suggerimenti operativi su come individuare il livello di visibilità dei contenuti sui motori di ricerca, in relazione a specifici “intenti di ricerca”, così come analizzare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico.
+
+guideLinesChunk:
+  title: LINEE GUIDA DI RIFERIMENTO
+  link: <a href='#'>Search engine optimization</a>
+
 rightColumnItems:
-  - title: PROFESSIONALITÀ
-    items:
-      - Content designer
-      - Redattore
-      - Esperto UX
   - title: KIT CORRELATI
     items:
       - <a href='#'>Contenuti e linguaggio</a>
       - <a href='#'>Interfaccia utente</a>
 
-guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Search engine optimization</a>
+footerItems:
+  - title: PROFESSIONALITÀ
+    items:
+      - UI designer
+      - Developer
+      - Esperto UX
 
 superAccordion:
   title: STRUMENTI
@@ -49,11 +52,11 @@ superAccordion:
       resources:
         - title: Ottimizzazione SEO
           icon: "/assets/icons/pencil.svg"
-          description: Uno strumento che ti aiuta ad analizzare i contenuti del tuo sito e definire le priorità 
+          description: Uno strumento che ti aiuta ad analizzare i contenuti del tuo sito e definire le priorità
           link: <a href='https://docs.google.com/spreadsheets/d/1bRjLUC3yN1E1c-ZTY1FiI5klX_wkeMWuC9boWXSBbhw/edit?usp=sharing'>Vai al template spreadsheet</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. 
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 

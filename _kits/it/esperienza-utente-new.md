@@ -13,20 +13,22 @@ textChunk1:
   title: A COSA SERVE
   text: "Mappare l'esperienza d'uso di un servizio digitale consente di vederlo attraverso gli occhi dell'utente: in questo modo è possibile riprogettare l'esperienza di fruizione in maniera più adeguata alle sue necessità. Allo stesso tempo, comprendere lo stato attuale di un servizio digitale è il punto di partenza fondamentale per poterlo migliorare. Il kit dedicato all'esperienza utente o user experience (UX) contiene gli strumenti necessari per aiutarti a mappare la UX di un servizio esistente (as is), ma puoi utilizzarlo anche per progettare la sua evoluzione (to be), mettendoti nei panni dell'utente attraverso strumenti quali i personas e gli user journey."
 
+guideLinesChunk:
+  title: LINEE GUIDA DI RIFERIMENTO
+  link: <a href='#'>Service design</a>
+
 rightColumnItems:
-  - title: PROFESSIONALITÀ
-    items:
-      - Service designer
-      - Redattore
-      - Esperto UX
   - title: KIT CORRELATI
     items:
       - <a href='#'>Interviste utenti e stakeholder</a>
       - <a href='#'>Architettura dell'informazione</a>
 
-guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Service design</a>
+footerItems:
+  - title: PROFESSIONALITÀ
+    items:
+      - Service designer
+      - Redattore
+      - Esperto UX
 
 superAccordion:
   title: STRUMENTI
@@ -57,7 +59,7 @@ superAccordion:
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
- 
+
 tags:
   - navigation-tree
   - information-architecture
