@@ -13,21 +13,25 @@ layout: default
 
 {% include super_breadcrumb.html kitCategory=page.kitcategory showAll=true %}
 
-<article class="Prose u-color-grey-60 a-text-semi-bold">
+<article class="u-color-grey-ui-kit a-text-semi-bold">
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-r-bottom">
     <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
-      <div class="Grid-cell u-md-size6of12 u-lg-size6of12 u-color-50">
+      <div class="Grid-cell u-lg-before3of12 u-lg-size6of12 u-md-before3of12 u-md-size6of12 u-color-50">
         <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Kit</div>
-        <h1 class="u-text-h2">{{title}}</h1>
+        <h1 class="u-text-h1">{{title}}</h1>
         <div class="u-text-r-m">
           {{subtitle}}
         </div>
       </div>
+      <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+        <img src="/assets/images/diagram_1.svg"/>
+      </div>
     </div>
-    <div class="Grid Grid--alignCenter u-padding-all-l">
+
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
       <div class="Grid-cell u-lg-before3of12 u-lg-size6of12 u-md-before3of12 u-md-size6of12">
         <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{textChunk1.title}}</h2>
-        <p class="Prose u-color-grey-60">
+        <p class="Prose u-layout-prose u-color-grey-ui-kit">
           {{textChunk1.text}}
         </p>
       </div>
@@ -40,23 +44,25 @@ layout: default
             {% endif %}
             <ul>
               {% for item in rightColumnItem.items %}
-                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-xxl u-md-margin-right-none u-lg-margin-right-none u-text-r-xxs u-color-grey-60">{{item}}</li>
+                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-xxl u-md-margin-right-none u-lg-margin-right-none u-text-r-xxs u-color-grey-ui-kit">{{item}}</li>
               {% endfor %}
             </ul>
           {% endfor %}
       </div>
     </div>
 
-    <div class="Grid Grid--alignCenter u-padding-all-l">
+    {% include kit_images.html %}
+
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
       <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
         <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</h2>
-        <div class="Prose u-color-grey-60">
+        <div class="Prose u-layout-prose u-color-grey-ui-kit">
           {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
         </div>
       </div>
     </div>
-    
-    <div class="Grid Grid--alignCenter u-padding-all-l">
+
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
       <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
         <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{superAccordion.title}}</h2>
       </div>
@@ -77,7 +83,7 @@ layout: default
               </div>
               <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10 u-md-padding-bottom-m u-margin-bottom-l">
                 <h3 class="u-text-h3 u-color-50 u-margin-top-m">{{accordion.title}}</h3>
-                <div data-accordion-header-text class="accordion-line-clamp Prose u-color-grey-60">
+                <div data-accordion-header-text class="accordion-line-clamp Prose u-layout-prose u-color-grey-ui-kit">
                   {{accordion.text}}
                 </div>
               </div>

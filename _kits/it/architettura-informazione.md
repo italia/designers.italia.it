@@ -9,6 +9,14 @@ backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
 
+images:
+- img: '/assets/images/kits/images/placeholder.png'
+  caption: Esempio di A/B testing
+- img: '/assets/images/kits/images/placeholder.png'
+  caption: Esempio di A/B testing
+- img: '/assets/images/kits/images/placeholder.png'
+  caption: Esempio di A/B testing
+
 textChunk1:
   title: A COSA SERVE
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor.
