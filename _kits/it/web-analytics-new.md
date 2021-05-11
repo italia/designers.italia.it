@@ -13,20 +13,22 @@ textChunk1:
   title: A COSA SERVE
   text: "<p>Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponda in maniera adeguata ai bisogni degli utenti. L’analisi dei dati di traffico web (web analytics) risponde proprio a questa esigenza e le piattaforme per raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le decisioni che riguardano design e re-design dei servizi, in ottica data-driven.</p><p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI).</p>"
 
+guideLinesChunk:
+  title: LINEE GUIDA DI RIFERIMENTO
+  link: <a href='#'>Web analytics</a>
+
 rightColumnItems:
-  - title: PROFESSIONALITÀ
-    items:
-      - Content designer
-      - Redattore
-      - Esperto UX
   - title: KIT CORRELATI
     items:
       - <a href='#'>Test di usabilità</a>
       - <a href='#'>Interfaccia utente</a>
 
-guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Web analytics</a>
+footerItems:
+  - title: PROFESSIONALITÀ
+    items:
+      - Service designer
+      - Redattore
+      - Esperto UX
 
 superAccordion:
   title: STRUMENTI
@@ -66,10 +68,10 @@ superAccordion:
           link: <a href='https://docs.google.com/document/d/1MEiEDKfxMh7c3-7BKx0WlvgIBRe5gXrFd0LqpVpNAhg/edit?usp=sharing'>Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. 
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-    
+
 tags:
   - navigation-tree
   - information-architecture
