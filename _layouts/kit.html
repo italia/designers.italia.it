@@ -26,21 +26,21 @@ layout: default
     </div>
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-lg-before3of12 u-lg-size6of12 u-md-before3of12 u-md-size6of12">
-        <h2 class="u-text-h6">{{textChunk1.title}}</h2>
+        <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{textChunk1.title}}</h2>
         <p class="Prose u-color-grey-60">
           {{textChunk1.text}}
         </p>
       </div>
-      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-l u-md-margin-top-none u-lg-margin-top-none">
+      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
           {% for rightColumnItem in rightColumnItems %}
             {% if forloop.index == 1 %}
-              <div class="u-text-h6">{{rightColumnItem.title}}</div>
+              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{rightColumnItem.title}}</div>
             {% else %}
-              <div class="u-text-h6 u-margin-top-l">{{rightColumnItem.title}}</div>
+              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
             {% endif %}
             <ul>
               {% for item in rightColumnItem.items %}
-                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-m Prose u-color-grey-60">{{item}}</li>
+                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-xxl u-md-margin-right-none u-lg-margin-right-none u-text-r-xxs u-color-grey-60">{{item}}</li>
               {% endfor %}
             </ul>
           {% endfor %}
@@ -49,16 +49,16 @@ layout: default
 
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
-        <h2 class="u-text-h6">{{guideLinesChunk.title}}</h2>
+        <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</h2>
         <div class="Prose u-color-grey-60">
           {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
         </div>
       </div>
     </div>
-
+    
     <div class="Grid Grid--alignCenter u-padding-all-l">
       <div class="Grid-cell u-md-size6of12 u-lg-size6of12">
-        <h2 class="u-text-h6">{{superAccordion.title}}</h2>
+        <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{superAccordion.title}}</h2>
       </div>
 
       {% for accordion in superAccordion.accordions %}
