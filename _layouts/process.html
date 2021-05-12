@@ -17,29 +17,30 @@ layout: default
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
 
     {%- for category in kit_categories -%}
-    <div class="u-margin-right-xxl">
-      {{ category }}
-    </div>
-    {%- endfor -%}
+    <div id="{{ category }}" class="">
+    <h2>{{ category }}</h2>
 
+    {% assign kitsCat = site.kits | where: 'kitcategory', category | sort: title %}
     <div class="u-margin-top-xl  u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
-      {%- for item in kits  -%}
+      {%- for item in kitsCat  -%}
         <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
           <article class="u-sizeFull u-padding-r-all u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch">
             <div class="u-flexAlignSelfStart u-sizeFull">
               <div style="height:15rem; width:100%; background-color: #439af1; background-image: url(/assets/images/kits/carousel/17_Scuole_Slide_01.png); background-size: 100%; background-position:center;"></div>
-              <div class="u-text-r-xxs u-textUppercase u-padding-top-l u-padding-bottom-l ">{{item.kitcategory}}</div>
               <h3 class="u-text-r-m u-padding-bottom-l ">
                 <a href="{{item.url | relative_url}}">
                   <span>{{item.title}}</span>
                 </a>
-              </h2>
+              </h3>
               <div class="u-text-r-xs u-textWeight-400">{{item.subtitle}}</div>
             </div>
           </article>
         </div>
       {%- endfor -%}
     </div>
+
+  </div>
+  {%- endfor -%}
 
   </div>
 
