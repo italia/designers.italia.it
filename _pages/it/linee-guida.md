@@ -25,4 +25,4 @@ redirect_from:
 
 * [Introduzione alle linee guida di design per i servizi web della Pubblica Amministrazione](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/introduzione-linee-guida-design.html);
 * [La sezione del forum di Designers Italia dedicata alle linee guida di design](https://forum.italia.it/c/design);
-* [Partecipa all’evoluzione delle linee guida](https://designers.italia.it//partecipa/).
+* [Partecipa all’evoluzione delle linee guida](https://designers.italia.it/partecipa/).

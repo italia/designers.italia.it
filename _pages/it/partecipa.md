@@ -3,12 +3,12 @@ title: Partecipa
 lang: it
 layout: partecipa
 blocks:
-- title: Partecipa alla vita del forum
-  subtitle: Sul forum di Designers Italia puoi fare proposte, avanzare <a href="https://forum.italia.it/c/design/feedback-community">idee e suggerimenti</a>, segnalare best practice o <a href="https://forum.italia.it/c/design/esempi-linee-guida">esempi di applicazione</a> delle linee guida di design, discutere i temi legati al <b>service design</b>, al <b>content design</b>, alla <b>user interface</b> e alla <b>user research</b>.
-  img: /assets/images/pages/persone.jpg
+- title: Contribuisci alla scrittura delle Linee Guida di design
+  subtitle: 'Da mercoledì 12 maggio è ufficialmente aperta la fase di consultazione delle <a href="https://docs.italia.it/italia/design/lg-design-servizi-web">nuove Linee guida di design per i servizi web della Pubblica Amministrazione</a>. Condividi i tuoi suggerimenti, per partecipare c’è tempo fino al 14 giugno.'
+  img: /assets/images/pages/daniel-mccullough--FPFq_trr2Y-unsplash.jpg
   button:
-    - label: Vai al forum
-      url: 'https://forum.italia.it/c/design'
+  - label: partecipa all’evoluzione delle linee guida di design!
+    url: 'https://github.com/italia/design-linee-guida-docs'
 - title: Condividi la tua esperienza sul blog
   subtitle: Il <a href="https://designers.italia.it/notizie/">blog di Designers Italia</a> raccoglie case history relativi ai servizi pubblici o esperienze di trasformazione digitale che ben si applicano al mondo dei servizi pubblici. Il blog è aperto al contributo di designer e professionisti che abbiano un’esperienza significativa sul <b>design dei servizi pubblici</b> e che vogliano condividerla.<br>Se vuoi proporre un contributo scrivi all’indirizzo <a href="mailto:contatti@designers.italia.it">contatti@designers.italia.it</a> con <b>un abstract</b> della tua proposta e <b>un link</b> alla tua biografia o al tuo profilo. Valuteremo le proposte e ti contatteremo nel caso in cui decideremo di pubblicarla.
   img: /assets/images/pages/david-solce-184827.jpg
@@ -31,12 +31,12 @@ blocks:
       url: 'https://github.com/italia/design-react-kit'
     - label: Partecipa ad Angular kit
       url: 'https://github.com/italia/design-angular-kit'
-- title: Prendi parte alla scrittura delle linee guida di design
-  subtitle: 'Le linee guida di design sono un documento pubblico e chiunque può partecipare al processo di revisione e aggiornamento <b>proponendo modifiche</b> e nuovi contenuti.<br>Grazie ad <a href="https://github.com/italia/design-linee-guida-docs">un <i>repository</i> pubblico su GitHub</a> è possibile seguirne lo sviluppo, proporre correzioni o <b>partecipare alla stesura</b> di nuove versioni (seguendo le regole di questa <a href="https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/introduzione-linee-guida-design.html#stile-della-documentazione"><i>Style guide</i></a>). Per farlo, si devono usare gli strumenti collaborativi di GitHub, in particolare le <a href="https://guides.github.com/features/issues/"><i>issues</i></a> (per le discussioni) e le <a href="https://help.github.com/articles/about-pull-requests/"><i>pull request</i></a> (per le proposte di modifica).'
-  img: /assets/images/pages/neonbrand-226736.jpg
+- title: Partecipa alla vita del forum
+  subtitle: Sul forum di Designers Italia puoi fare proposte, avanzare <a href="https://forum.italia.it/c/design/feedback-community">idee e suggerimenti</a>, segnalare best practice o <a href="https://forum.italia.it/c/design/esempi-linee-guida">esempi di applicazione</a> delle linee guida di design, discutere i temi legati al <b>service design</b>, al <b>content design</b>, alla <b>user interface</b> e alla <b>user research</b>.
+  img: /assets/images/pages/persone.jpg
   button:
-    - label: partecipa all’evoluzione delle linee guida di design!
-      url: 'https://github.com/italia/design-linee-guida-docs'
+  - label: Vai al forum
+    url: 'https://forum.italia.it/c/design'
 - title: Condividi il modello di Designers Italia
   subtitle: Se sei un professore o un ricercatore, puoi raccontare l’approccio di Designers Italia come esempio di progettazione di servizi digitali in ambito pubblico, e organizzare <b>workshop</b> sperimentando con i nostri strumenti e risorse.
   img: /assets/images/pages/universita.jpg
