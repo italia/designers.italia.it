@@ -31,7 +31,7 @@ footerItems:
       - Esperto UX
 
 superAccordion:
-  title: STRUMENTI
+  title: ATTIVITÀ E RISORSE
   accordions:
     - title: Pianifica l'indagine
       text: "<p>Definisci gli obiettivi dell'indagine e i temi da investigare così da capire qual è il target più appropriato e come reclutarlo attraverso i canali che hai a disposizione. Struttura il questionario in modo da affrontare prima i temi più ampi e semplici, per poi approfondire i temi più complessi. Rifletti sulla strategia migliore per estrapolare le informazioni, nel porre le domande ricordati di contestualizzarle fornendo esempi o descrizioni laddove necessario, rifletti su quale siano le modalità di risposta più appropriate a raggiungere il tuo scopo.</p>"
