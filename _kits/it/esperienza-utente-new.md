@@ -31,7 +31,7 @@ footerItems:
       - Esperto UX
 
 superAccordion:
-  title: STRUMENTI
+  title: ATTIVITÀ E RISORSE
   accordions:
     - title: Definisci gli utenti tipo del servizio
       text: "<p>Identifica i profili degli utenti tipo del servizio dettagliando le loro caratteristiche rispetto all'uso del servizio e dei canali digitali, facendo emergere le loro esigenze e difficoltà rispetto all'esperienza attuale. Lo strumento dedicato di aiuta a narrare la loro situazione e il motivo che li spinge ad approcciarsi al servizio, descrivendoli in termini di comportamenti e preferenze rispetto alla fruizione del servizio e dei suoi touchpoint digitali.</p>"

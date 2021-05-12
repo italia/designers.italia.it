@@ -31,7 +31,7 @@ footerItems:
       - Esperto UX
 
 superAccordion:
-  title: STRUMENTI
+  title: ATTIVITÀ E RISORSE
   accordions:
     - title: Pianifica le attività di ottimizzazione
       text: "<p>Pianifica l’ottimizzazione SEO del tuo sito/servizio: parti da qui per iniziare a programmare gli interventi di ottimizzazione on page, off page e tecnologici. Queste attività sono funzionali a migliorare l’aderenza dei contenuti stessi ai bisogni espressi nelle ricerche.   </p>"

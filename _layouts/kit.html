@@ -18,7 +18,7 @@ layout: default
   <!-- header -->
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
     <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
-      <div class="Grid-cell u-lg-size6of12 u-md-size6of12 u-color-50">
+      <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
         <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Kit</div>
         <h1 class="u-text-h1">{{title}}</h1>
         <div class="u-text-r-l">
@@ -81,9 +81,9 @@ layout: default
               <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-padding-left-l">
                 <img src="{{accordion.img}}">
               </div>
-              <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10 u-md-padding-bottom-m u-margin-bottom-l">
-                <h3 class="u-text-h3 u-color-50 u-margin-top-m">{{accordion.title}}</h3>
-                <div data-accordion-header-text class="accordion-line-clamp Prose u-layout-prose u-color-grey-ui-kit">
+              <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10 u-padding-bottom-xl u-padding-top-xl">
+                <h3 class="u-text-h3 u-color-50">{{accordion.title}}</h3>
+                <div data-accordion-header-text class="accordion-line-clamp u-layout-prose accordion-super-text u-color-grey-ui-kit">
                   {{accordion.text}}
                 </div>
               </div>
@@ -92,7 +92,7 @@ layout: default
           </div>
           <div id="accordion-panel-{{forloop.index}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
 
-            <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
+            <div class="Grid Grid--alignCenter Grid--withGutter u-margin-bottom-m">
               <div class="Grid-cell u-sm-padding-all-xl u-md-padding-all-xl u-lg-padding-all-xl" style="background-color: #F0F6FC">
                 {% for resource in accordion.resources %}
                 <div class="u-background-white u-margin-all-m

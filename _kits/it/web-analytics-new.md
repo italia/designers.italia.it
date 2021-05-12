@@ -31,7 +31,7 @@ footerItems:
       - Esperto UX
 
 superAccordion:
-  title: STRUMENTI
+  title: ATTIVITÀ E RISORSE
   accordions:
     - title: Usa Web Analytics Italia
       text: "<p>La piattaforma Web Analytics Italia lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in.

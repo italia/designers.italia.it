@@ -31,7 +31,7 @@ footerItems:
       - Esperto UX
 
 superAccordion:
-  title: STRUMENTI
+  title: ATTIVITÀ E RISORSE
   accordions:
     - title: Pianifica le interviste
       text: "<p>Definisci gli obiettivi della ricerca e i temi da investigare così da capire quali criteri seguire per strutturare il questionario di selezione dei partecipanti. Dettaglia le attività da svolgere in termini di modalità di somministrazione delle interviste e tipologia di protocolli da seguire rispettivamente per utenti e/o stakeholder, e pensa alle caratteristiche che gli intervistati dovranno avere per rappresentare appropriatamente il target d'utenza del servizio e/o le figure coinvolte nella sua erogazione, per poi tradurle in domande per il reclutamento.</p>"
