@@ -34,7 +34,8 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Sviluppa l'interfaccia del tuo progetto web
-      text: "<p>Gli strumenti a disposizione per lo sviluppo di interfacce web sono dedicate a diverse tipologie di sviluppatori ed esperienze d’uso. Ogni risorsa si compone di codice HTML, CSS e Javascript, progettati per offrirti un’esperienza creazione di siti, applicazioni web e interfacce più semplice, basata sui princìpi di composizione e riuso di componenti condivisi. Bootstrap Italia è il framework di riferimento, costruito sulla libreria Bootstrap 4 e basato sullo UI kit di Designers Italia.</p>"
+      text: "<p>Gli strumenti a disposizione per lo sviluppo di interfacce web sono dedicate a diverse tipologie di sviluppatori ed esperienze d’uso. Ogni risorsa si compone di codice HTML, CSS e Javascript, progettati per offrirti un’esperienza creazione di siti, applicazioni web e interfacce più semplice, basata sui princìpi di composizione e riuso di componenti condivisi.</p>
+      <p>Bootstrap Italia è il framework di riferimento, costruito sulla libreria Bootstrap 4 e basato sullo UI kit di Designers Italia.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Bootstrap Italia

@@ -42,7 +42,8 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Progetta l'interfaccia utente di un servizio digitale
-      text: "<p>Inizia a progettare un’interfaccia digitale: costruisci un prototipo interattivo per declinare il tuo progetto secondo uno stile visivo coerente e tenere conto dell’interazione utente. Questo kit dedicato alle interfacce contiene i file di Sketch necessari da cui partire per la fase di progettazione (grid system, colors, typography, buttons…)e una libreria di icone. Grazie all’interazione con il team di sviluppo, il prototipo che avrai realizzato diventerà il prodotto.</p>"
+      text: "<p>Inizia a progettare un’interfaccia digitale: costruisci un prototipo interattivo per declinare il tuo progetto secondo uno stile visivo coerente e tenere conto dell’interazione utente. </p>
+      <p>Questo kit dedicato alle interfacce contiene i file di Sketch necessari da cui partire per la fase di progettazione (grid system, colors, typography, buttons…)e una libreria di icone. Grazie all’interazione con il team di sviluppo, il prototipo che avrai realizzato diventerà il prodotto.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Design UI kit
