@@ -16,9 +16,11 @@ layout: default
 
 {% include super_breadcrumb.html kitCategory=null showAll=false %}
 
-<div id="organizzare">&nbsp;</div>
-
 <article itemscope itemtype="http://schema.org/BlogPosting" class="">
+
+  <h1 class="u-hidden">Kit</h1>
+
+  <div id="organizzare">&nbsp;</div>
 
   {%- for category in kit_categories -%} <!-- << kit_categories_new per solo le 5 fasi o kit_categories per tutte -->
   <div id="{{ category }}" class="fase u-padding-top-xxl u-padding-bottom-xxl">
@@ -31,7 +33,7 @@ layout: default
           <img class="u-md-sizeFull" style="height:14rem" src="/assets/icons/super_breadcrumb/progettare-large.svg"/>
         </div>
         <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
-          <h1 class="u-text-h2 u-textWeight-600 u-color-grey-ui-kit">{{category}}</h1>
+          <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit u-margin-bottom-xs">{{category}}</h2>
           <div class="u-text-r-m Prose u-layout-prose u-color-grey-ui-kit">
             Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi
           </div>
@@ -41,6 +43,7 @@ layout: default
       <!-- kits in category -->
       {% assign kitsCat = site.kits | where: 'kitcategory', category | sort: title %}
       <div class="u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill u-margin-bottom-l">
+        <!-- single kit -->
         {%- for item in kitsCat  -%}
           <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
             <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
