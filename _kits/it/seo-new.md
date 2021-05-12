@@ -15,7 +15,7 @@ textChunk1:
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Search engine optimization</a>
+  link: <a href='#' target="_blank">Search engine optimization</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

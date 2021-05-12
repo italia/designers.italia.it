@@ -23,7 +23,7 @@ textChunk1:
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Content design</a>
+  link: <a href='#' target="_blank">Content design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

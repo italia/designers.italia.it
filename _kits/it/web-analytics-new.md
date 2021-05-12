@@ -15,7 +15,7 @@ textChunk1:
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Web analytics</a>
+  link: <a href='#' target="_blank">Web analytics</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

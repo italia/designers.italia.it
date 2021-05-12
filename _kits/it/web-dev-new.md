@@ -15,7 +15,7 @@ textChunk1:
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Sviluppo</a>
+  link: <a href='#' target="_blank">Sviluppo</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

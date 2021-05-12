@@ -15,7 +15,7 @@ textChunk1:
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
-  link: <a href='#'>Service design</a>
+  link: <a href='#' target="_blank">Service design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
