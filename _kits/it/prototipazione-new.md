@@ -37,28 +37,41 @@ superAccordion:
     - title: Definisci i flussi di interazione 
       text: "<p>I flussi di Interazione (o user flow) descrivono nel dettaglio i singoli passaggi - in termini di azioni e scelte - che un utente compie interagendo con un servizio digitale, cercando di raggiungere il suo obiettivo. Sono focalizzati sul sistema e le risposte che questo darà alle azioni dell’utente.
 </p>
-      <p>Costruire gli user flow ti aiuta a progettare un’interfaccia che sia realmente centrata sull’utente, rende evidenti le possibili complessità di un servizio digitale e supporta nella definizione di soluzioni progettuali.
-</p>"
+      <p>Costruire gli user flow ti aiuta a progettare un’interfaccia che sia realmente centrata sull’utente, rende evidenti le possibili complessità di un servizio digitale e supporta nella definizione di soluzioni progettuali.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
-        - title: Costruisci i flussi di interazione 
+        - title: La costruzione dei flussi di interazione 
           icon: "/assets/icons/pencil.svg"
-          description: La libreria open source Bootstrap Italia permette di costruire interfacce web inclusive e semplici da mantenere
-          link: <a href='https://italia.github.io/bootstrap-italia/'>Vai alla risorsa</a>
+          description: Inizia a progettare un'interfaccia che sia basata sui percorsi che l'utente compie per raggiungere i suoi obiettivi
+          link: <a href='https://docs.google.com/spreadsheets/d/19u8t0EuGCck3yNS12F4V9IjuwETJhVXOB_PvPpGSTnU/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
           otherResources:
             - description: Esempio di costruzione dei flussi 
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/' target="_blank">Vai alla risorsa</a>
-            - description: Esempi di applicazione di Bootstrap
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/esempi/' target="_blank">Vai agli esempi</a>
-            - description: Esempi di progetti basati su Bootstrap
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/progetti/' target="_blank">Vai ai progetti</a>   
-        - title: React
+              link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank">Vai all'esempio</a>
+        - title: La visualizzazione dei flussi di interazione
           icon: "/assets/icons/pencil.svg"
-          description: Design React per la Pubblica Amministrazione
-          link: <a href='https://italia.github.io/design-react-kit/' target="_blank">Vai alla risorsa</a>
+          description: Realizza uno schema visuale dei flussi che ti aiuterà a definire i percorsi possibili e sarà una guida preziosa per impostare poi la fase di wireframing
+          link: <a href='https://docs.google.com/presentation/d/1qzEtt75yfSaQihD6jy0WGElrvQeyp37MCgJuqEG8Q_U/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
           otherResources:
-            - description: Template React Comuni
-              link: <a href='https://italia.github.io/design-react-kit/?path=/story/introduzione-introduzione-kit-comuni--homepage-template' target="_blank">Vai al template</a>
+            - description: Esempio di visualizzazione dei flussi
+              link: <a href='https://drive.google.com/file/d/1eeFE81ReRPkeBTQ4KlW2mwqDDjI0SylU/view?usp=sharing' target="_blank">Vai all'esempio</a>
+      footer:
+        - icon: "/assets/icons/external-link-grey.svg"
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+        - icon: "/assets/icons/info-grey.svg"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+    - title: Realizza un prototipo a bassa fedeltà 
+      text: "<p>I wireframe sono rappresentazioni a bassa fedeltà dell’interfaccia utente di un servizio digitale.Ti permettono di impostare la struttura di un’interfaccia collocando blocchi di contenuti, funzionalità e caratteristiche fondamentali di un servizio, individuando anche le modalità attraverso cui l’utente interagisce con i vari elementi.</p>
+<p>Essendo costruiti ad uno stato iniziale della progettazione, senza occuparsi della interfaccia grafica, permettono di verificare rapidamente e a basso costo le caratteristiche di efficienza ed efficacia del servizio digitale. Una volta costruite le varie schermate dell'interfaccia del servizio, potrai definire i comportamenti dei vari oggetti nelle pagine e le relative transizioni, generando un prototipo interattivo che simulerà i flussi di interazione precedentemente definiti. </p>"
+      img: "/assets/images/diagram_1.svg"
+      resources:
+        - title: Wireframe kit
+          icon: "/assets/icons/pencil.svg"
+          description: Una libreria di elementi utili per costruire un prototipo in bassa definizione delle schermate dell’interfaccia di un servizio
+          link: <a href='https://github.com/italia/design-wireframe-kit' target="_blank">Vai alla risorsa</a>
+        - title: Esercizio wireframe di carta
+          icon: "/assets/icons/pencil.svg"
+          description: Modelli e componenti di interfaccia che puoi essere usati in forma analogica stampando, ritagliando e componendo fra loro i vari elementi
+          link: <a href='https://drive.google.com/file/d/1wdb4JWlcJRYum2LpnllFy2zlxx2EptYx/view' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
