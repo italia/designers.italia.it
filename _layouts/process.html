@@ -14,6 +14,8 @@ layout: default
 
 {% include super_breadcrumb.html kitCategory=null showAll=false %}
 
+<div id="organizzare">&nbsp;</div>
+
 <article itemscope itemtype="http://schema.org/BlogPosting" class="u-color-grey-ui-kit a-text-semi-bold u-nbfc processNew">
 
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
@@ -23,18 +25,20 @@ layout: default
     <h2>{{ category }}</h2>
 
     {% assign kitsCat = site.kits | where: 'kitcategory', category | sort: title %}
-    <div class="u-margin-top-xl  u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
+    <div class="u-margin-top-xl u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
       {%- for item in kitsCat  -%}
         <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
-          <article class="u-sizeFull u-padding-r-all u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch">
+          <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m">
             <div class="u-flexAlignSelfStart u-sizeFull">
-              <div style="height:15rem; width:100%; background-color: #439af1; background-image: url(/assets/images/kits/carousel/17_Scuole_Slide_01.png); background-size: 100%; background-position:center;"></div>
-              <h3 class="u-text-r-m u-padding-bottom-l ">
-                <a href="{{item.url | relative_url}}">
-                  <span>{{item.title}}</span>
-                </a>
-              </h3>
-              <div class="u-text-r-xs u-textWeight-400">{{item.subtitle}}</div>
+              <div style="height:22rem; width:100%; background-color: #439af1; background-image: url(/assets/images/kits/carousel/17_Scuole_Slide_01.png); background-size: 100%; background-position:center;"></div>
+                <div class="u-padding-all-l">
+                  <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
+                  <a class="u-textClean u-color-50" href="{{item.url | relative_url}}">
+                    <span>{{item.title}}</span>
+                  </a>
+                  </h3>
+                <div>
+              <div class="Prose u-text-r-xxs u-textWeight-400">{{item.subtitle}}</div>
             </div>
           </article>
         </div>
