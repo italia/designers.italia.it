@@ -34,7 +34,8 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Pianifica l'indagine
-      text: "<p>Definisci gli obiettivi dell'indagine e i temi da investigare così da capire qual è il target più appropriato e come reclutarlo attraverso i canali che hai a disposizione. Struttura il questionario in modo da affrontare prima i temi più ampi e semplici, per poi approfondire i temi più complessi. Rifletti sulla strategia migliore per estrapolare le informazioni, nel porre le domande ricordati di contestualizzarle fornendo esempi o descrizioni laddove necessario, rifletti su quale siano le modalità di risposta più appropriate a raggiungere il tuo scopo.</p>"
+      text: "<p>Definisci gli obiettivi dell'indagine e i temi da investigare così da capire qual è il target più appropriato e come reclutarlo attraverso i canali che hai a disposizione. Struttura il questionario in modo da affrontare prima i temi più ampi e semplici, per poi approfondire i temi più complessi.</p>
+      <p>Rifletti sulla strategia migliore per estrapolare le informazioni, nel porre le domande ricordati di contestualizzarle fornendo esempi o descrizioni laddove necessario, rifletti su quale siano le modalità di risposta più appropriate a raggiungere il tuo scopo.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Piano di ricerca - questionario
@@ -51,7 +52,8 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Sintetizza i risultati della ricerca
-      text: "<p>Analizza le informazioni raccolte con tecniche quanti-qualitative e rielaborale in maniera rilevante per lo scopo della ricerca. Puoi sfruttare gli strumenti di rappresentazione di grafici integrate nella piattaforma per i questionari online che stai utilizzando, oppure esportare un foglio di lavoro e utilizzare strumenti di visualizzazione dati più avanzati e personalizzabili. Trova un modo efficace per rappresentare e spiegare i risultati della ricerca e sintetizza tutto in un report.</p>"
+      text: "<p>Analizza le informazioni raccolte con tecniche quanti-qualitative e rielaborale in maniera rilevante per lo scopo della ricerca. Puoi sfruttare gli strumenti di rappresentazione di grafici integrate nella piattaforma per i questionari online che stai utilizzando, oppure esportare un foglio di lavoro e utilizzare strumenti di visualizzazione dati più avanzati e personalizzabili. </p>
+      <p>Trova un modo efficace per rappresentare e spiegare i risultati della ricerca e sintetizza tutto in un report.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Presentazione dei risultati dell'indagine
