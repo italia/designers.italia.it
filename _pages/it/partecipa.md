@@ -4,7 +4,7 @@ lang: it
 layout: partecipa
 blocks:
 - title: Contribuisci alla scrittura delle Linee Guida di design
-  subtitle: 'Da XXXXX è ufficialmente aperta la fase di consultazione delle <a href="https://docs.italia.it/italia/design/lg-design-servizi-web">nuove Linee guida di design per i servizi web della Pubblica Amministrazione</a>. Condividi i tuoi suggerimenti, per partecipare c’è tempo fino a XXXXX'
+  subtitle: 'Da mercoledì 12 maggio è ufficialmente aperta la fase di consultazione delle <a href="https://docs.italia.it/italia/design/lg-design-servizi-web">nuove Linee guida di design per i servizi web della Pubblica Amministrazione</a>. Condividi i tuoi suggerimenti, per partecipare c’è tempo fino al 14 giugno.'
   img: /assets/images/pages/daniel-mccullough--FPFq_trr2Y-unsplash.jpg
   button:
   - label: partecipa all’evoluzione delle linee guida di design!
