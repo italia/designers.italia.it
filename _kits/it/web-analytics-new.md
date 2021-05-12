@@ -11,7 +11,7 @@ kitcategory: validare
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponda in maniera adeguata ai bisogni degli utenti. L’analisi dei dati di traffico web (web analytics) risponde proprio a questa esigenza e le piattaforme per raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le decisioni che riguardano design e re-design dei servizi, in ottica data-driven.</p><p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI).</p>"
+  text: "Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponda in maniera adeguata ai bisogni degli utenti. L’analisi dei dati di traffico web (web analytics) risponde proprio a questa esigenza e le piattaforme per raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le decisioni che riguardano design e re-design dei servizi, in ottica data-driven. Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI)."
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -34,10 +34,8 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Usa Web Analytics Italia
-      text: "<p>La piattaforma Web Analytics Italia lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in.
-        Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus.</p>
-        <p>Duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque,
-        ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.</p>"
+      text: "<p>La piattaforma Web Analytics Italia lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus.</p>
+        <p>Duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque,ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: La piattaforma Web Analytics Italia
@@ -55,8 +53,8 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Crea e condividi una dashboard con altre piattaforme
-      text: Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus, duis nibh phasellus tincidunt.</p>
-      <p>Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque, ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.
+      text: "<p>Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus, duis nibh phasellus tincidunt.</p>
+      <p>Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque, ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.</p>"
       img: "/assets/images/diagram_2.svg"
       resources:
         - title: Crea una dashboard con Matomo
