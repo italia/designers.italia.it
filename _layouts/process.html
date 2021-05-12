@@ -16,38 +16,43 @@ layout: default
 
 <div id="organizzare">&nbsp;</div>
 
-<article itemscope itemtype="http://schema.org/BlogPosting" class="u-color-grey-ui-kit a-text-semi-bold u-nbfc processNew">
+<article itemscope itemtype="http://schema.org/BlogPosting" class="">
 
-  <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
+  {%- for category in kit_categories -%}
+  <div id="{{ category }}" class="fase u-padding-top-xxl u-padding-bottom-xxl">
 
-    {%- for category in kit_categories -%}
-    <div id="{{ category }}" class="">
-    <h2>{{ category }}</h2>
+    <div class="u-layout-wide u-layoutCenter u-padding-all-l">
 
-    {% assign kitsCat = site.kits | where: 'kitcategory', category | sort: title %}
-    <div class="u-margin-top-xl u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
-      {%- for item in kitsCat  -%}
-        <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
-          <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m">
-            <div class="u-flexAlignSelfStart u-sizeFull">
-              <div style="height:22rem; width:100%; background-color: #439af1; background-image: url(/assets/images/kits/carousel/17_Scuole_Slide_01.png); background-size: 100%; background-position:center;"></div>
-                <div class="u-padding-all-l">
-                  <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
-                  <a class="u-textClean u-color-50" href="{{item.url | relative_url}}">
-                    <span>{{item.title}}</span>
-                  </a>
-                  </h3>
-                <div>
-              <div class="Prose u-text-r-xxs u-textWeight-400">{{item.subtitle}}</div>
-            </div>
-          </article>
-        </div>
-      {%- endfor -%}
-    </div>
+      <!-- category header -->
+      <div>
+        <h2>{{ category }}</h2>
+      </div>
+
+      <!-- kits in category -->
+      {% assign kitsCat = site.kits | where: 'kitcategory', category | sort: title %}
+      <div class="u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill ">
+        {%- for item in kitsCat  -%}
+          <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+            <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+              <div class="u-flexAlignSelfStart u-sizeFull">
+                <a href="{{item.url | relative_url}}"><div class="" style="height:17.5rem; width:100%; background-color: {{ item.backgroundColor }}; background-image: url({{ item.carousel[0].img | default: item.backgroundImage }}); background-size: 100%; background-position:center;"></div></a>
+                  <div class="u-padding-right-l u-padding-left-l u-padding-top-m u-padding-bottom-m">
+                    <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
+                    <a class="u-textClean u-color-50" href="{{item.url | relative_url}}">
+                      <span>{{item.title}}</span>
+                    </a>
+                    </h3>
+                  <div>
+                <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+              </div>
+            </article>
+          </div>
+        {%- endfor -%}
+      </div>
 
   </div>
-  {%- endfor -%}
+</div>
+{%- endfor -%}
 
-  </div>
 
 </article>
