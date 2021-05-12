@@ -49,7 +49,7 @@ superAccordion:
         - title: Design UI kit
           icon: "/assets/icons/pencil.svg"
           description: Componenti e template ufficiali del design system di Designers Italia
-          link: <a href='https://github.com/italia/design-ui-kit'>Vai alla risorsa</a>
+          link: <a href='https://github.com/italia/design-ui-kit' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
