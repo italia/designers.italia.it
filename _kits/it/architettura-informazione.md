@@ -58,16 +58,16 @@ superAccordion:
           link: <a href='#'>Link alla risorsa A</a>
           otherResources:
             - description: Descrizione della risorsa A.1
-              link: <a href='#'>Link risorsa A.1</a>
+              link: <a href='#' target="_blank">Link risorsa A.1</a>
             - description: Descrizione della risorsa A.2
-              link: <a href='#'>Link risorsa A.1</a>
+              link: <a href='#' target="_blank">Link risorsa A.1</a>
         - title: Risorsa B
           icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa B
-          link: <a href='#'>Link risorsa B</a>
+          link: <a href='#' target="_blank">Link risorsa B</a>
           otherResources:
             - description: Descrizione della risorsa B.1
-              link: <a href='#'>Link risorsa B.1</a>
+              link: <a href='#' target="_blank">Link risorsa B.1</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra accordion 1.
@@ -80,19 +80,19 @@ superAccordion:
         - title: Risorsa A
           icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa A
-          link: <a href='#'>Link alla risorsa A</a>
+          link: <a href='#' target="_blank">Link alla risorsa A</a>
           otherResources:
             - description: Descrizione della risorsa A.1
-              link: <a href='#'>Link risorsa A.1</a>
+              link: <a href='#' target="_blank">Link risorsa A.1</a>
             - description: Descrizione della risorsa A.2
-              link: <a href='#'>Link risorsa A.1</a>
+              link: <a href='#' target="_blank">Link risorsa A.1</a>
         - title: Risorsa B
           icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa B
-          link: <a href='#'>Link risorsa B</a>
+          link: <a href='#' target="_blank">Link risorsa B</a>
           otherResources:
             - description: Descrizione della risorsa B.1
-              link: <a href='#'>Link risorsa B.1</a>
+              link: <a href='#' target="_blank">Link risorsa B.1</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 2
@@ -105,19 +105,19 @@ superAccordion:
         - title: Risorsa A
           icon: "/assets/icons/pencil.svg"
           description: Descrizione della risorsa A
-          link: <a href='#'>Link alla risorsa A</a>
+          link: <a href='#' target="_blank">Link alla risorsa A</a>
           otherResources:
             - description: Descrizione della risorsa A.1
-              link: <a href='#'>Link risorsa A.1</a>
+              link: <a href='#' target="_blank">Link risorsa A.1</a>
             - description: Descrizione della risorsa A.2
-              link: <a href='#'>Link risorsa A.1</a>
+              link: <a href='#' target="_blank">Link risorsa A.1</a>
         - title: Risorsa B
           icon: "/assets/icons/dt-logo.svg"
           description: Descrizione della risorsa B
-          link: <a href='#'>Link risorsa B</a>
+          link: <a href='#' target="_blank">Link risorsa B</a>
           otherResources:
             - description: Descrizione della risorsa B.1
-              link: <a href='#'>Link risorsa B.1</a>
+              link: <a href='#' target="_blank">Link risorsa B.1</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 3

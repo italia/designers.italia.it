@@ -44,18 +44,18 @@ superAccordion:
           link: <a href='https://italia.github.io/bootstrap-italia/'>Vai alla risorsa</a>
           otherResources:
             - description: Introduzione a Bootstrap Italia
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/'>Vai alla risorsa</a>
+              link: <a href='https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/' target="_blank">Vai alla risorsa</a>
             - description: Esempi di applicazione di Bootstrap
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/esempi/'>Vai agli esempi</a>
+              link: <a href='https://italia.github.io/bootstrap-italia/docs/esempi/' target="_blank">Vai agli esempi</a>
             - description: Esempi di progetti basati su Bootstrap
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/progetti/'>Vai ai progetti</a>   
+              link: <a href='https://italia.github.io/bootstrap-italia/docs/progetti/' target="_blank">Vai ai progetti</a>   
         - title: React
           icon: "/assets/icons/pencil.svg"
           description: Design React per la Pubblica Amministrazione
-          link: <a href='https://italia.github.io/design-react-kit/'>Vai alla risorsa</a>
+          link: <a href='https://italia.github.io/design-react-kit/' target="_blank">Vai alla risorsa</a>
           otherResources:
             - description: Template React Comuni
-              link: <a href='https://italia.github.io/design-react-kit/?path=/story/introduzione-introduzione-kit-comuni--homepage-template'>Vai al template</a>
+              link: <a href='https://italia.github.io/design-react-kit/?path=/story/introduzione-introduzione-kit-comuni--homepage-template' target="_blank">Vai al template</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

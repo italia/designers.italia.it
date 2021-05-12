@@ -46,9 +46,9 @@ superAccordion:
           link: <a href='https://webanalytics.italia.it/'>Vai alla piattaforma WAI</a>
           otherResources:
             - description: Guida utente WAI
-              link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html'>Vai alla risorsa</a>
+              link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html' target="_blank">Vai alla risorsa</a>
             - description: Istruzioni per creare una dashboard custom su WAI
-              link: <a href='#'>Vai alla risorsa</a>
+              link: <a href='#' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -62,11 +62,11 @@ superAccordion:
         - title: Crea una dashboard con Matomo
           icon: "/assets/icons/pencil.svg"
           description: Una guida per creare una dashboard di dati custom con il software open source Matomo
-          link: <a href='https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing'>Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
         - title: Crea una dashboard con Google Analytics
           icon: "/assets/icons/pencil.svg"
           description: Una guida per creare una dashboard di dati custom con Google Analytics
-          link: <a href='https://docs.google.com/document/d/1MEiEDKfxMh7c3-7BKx0WlvgIBRe5gXrFd0LqpVpNAhg/edit?usp=sharing'>Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1MEiEDKfxMh7c3-7BKx0WlvgIBRe5gXrFd0LqpVpNAhg/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

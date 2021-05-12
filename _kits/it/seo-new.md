@@ -40,7 +40,7 @@ superAccordion:
         - title: Checklist SEO
           icon: "/assets/icons/pencil.svg"
           description: Usa questa bacheca collaborativa per programmare gli interventi di ottimizzazione
-          link: <a href='https://trello.com/b/CPIl9SxJ/checklistseodesigners-italia'>Vai alla risorsa</a>
+          link: <a href='https://trello.com/b/CPIl9SxJ/checklistseodesigners-italia' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -53,7 +53,7 @@ superAccordion:
         - title: Ottimizzazione SEO
           icon: "/assets/icons/pencil.svg"
           description: Uno strumento che ti aiuta ad analizzare i contenuti del tuo sito e definire le priorità
-          link: <a href='https://docs.google.com/spreadsheets/d/1bRjLUC3yN1E1c-ZTY1FiI5klX_wkeMWuC9boWXSBbhw/edit?usp=sharing'>Vai al template spreadsheet</a>
+          link: <a href='https://docs.google.com/spreadsheets/d/1bRjLUC3yN1E1c-ZTY1FiI5klX_wkeMWuC9boWXSBbhw/edit?usp=sharing' target="_blank">Vai al template spreadsheet</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
