@@ -1,7 +1,7 @@
 ---
 title: Kit
 subtitle: Risorse condivise per progettare, realizzare e migliorare i servizi digitali della Pubblica Amministrazione.
-layout: kitsindex
+layout: process
 lang: it
 toc: true
 backgroundImage : '/assets/images/pages/headers/kit-head.jpg'
