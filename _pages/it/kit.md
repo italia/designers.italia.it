@@ -18,30 +18,30 @@ header:
 
 fasi:
 - slug: organizzare
-  thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
-  thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
   title: Organizzare
   subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
-- slug: comprendere
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+- slug: comprendere
   title: Comprendere
   subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"  
-- slug: progettare
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+- slug: progettare
   title: Progettare
   subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
-- slug: realizzare
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+- slug: realizzare
   title: Realizzare
   subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"  
-- slug: validare
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+- slug: validare
   title: Validare
   subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
+  thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
 ---
 
 <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-bottom-xl" >
