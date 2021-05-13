@@ -19,7 +19,7 @@ images:
 
 textChunk1:
   title: A COSA SERVE
-  text: ll kit dedicato alle interfacce utente ti offre un insieme di componenti visivi già pronti per assemblare il front-end di siti web e applicazioni. Il kit consiste in una serie di simboli realizzati con la libreria Sketch, ovvero porzioni pre-lavorate finalizzate alla progettazione di un’interfaccia digitale con uno stile visivo definito e coerente. I simboli ti consentono di costruire un prototipo con le varie schermate necessarie, che possono poi essere rese interattive -  e gestite in maniera collaborativa nell’ambito di un team di lavoro - su Invision.
+  text: "ll kit dedicato alle interfacce utente ti offre un insieme di componenti visivi già pronti per assemblare il front-end di siti web e applicazioni. Il kit consiste in una serie di simboli realizzati con la libreria Sketch, ovvero porzioni pre-lavorate finalizzate alla progettazione di un’interfaccia digitale con uno stile visivo definito e coerente. I simboli ti consentono di costruire un prototipo con le varie schermate necessarie, che possono poi essere rese interattive -  e gestite in maniera collaborativa nell’ambito di un team di lavoro - su Invision."
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
