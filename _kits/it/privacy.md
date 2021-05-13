@@ -1,0 +1,103 @@
+---
+title: Privacy
+subtitle: Rispetta la privacy dei tuoi utenti quando realizzi un servizio digitale
+lang: it
+layout: kit
+description: "Un kit di Designers Italia dedicato alla privacy"
+backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundColor: "#439af1"
+nodate: true
+kitcategory: organizzare
+
+textChunk1:
+  title: A COSA SERVE
+  text: "Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di quali categorie di informazioni stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti. Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti informazioni e modelli utili per aiutarti a trattare correttamente i dati personali riferiti ad alcuni dei principali casi d'uso che dovrai gestire progettando e realizzando un servizio digitale."
+
+guideLinesChunk:
+  title: LINEE GUIDA DI RIFERIMENTO
+  link: <a href='#'>Service design</a>
+
+rightColumnItems:
+  - title: KIT CORRELATI
+    items:
+      - <a href='#'>Web Analytics</a>
+      - <a href='#'>Esperienza utente</a>
+
+footerItems:
+  - title: PROFESSIONALITÀ
+    items:
+      - Responsabile per la protezione dei dati personali (DPO)
+      - Privacy team 
+      - Content designer
+
+superAccordion:
+  title: ATTIVITÀ E RISORSE
+  accordions:
+    - title: Rispetta la privacy per il go-live di un sito
+      text: "<p>Definisci gli obiettivi della ricerca e i temi da investigare così da capire quali criteri seguire per strutturare il questionario di selezione dei partecipanti. Dettaglia le attività da svolgere in termini di modalità di somministrazione delle interviste e tipologia di protocolli da seguire rispettivamente per utenti e/o stakeholder e pensa alle caratteristiche che gli intervistati dovranno avere per rappresentare appropriatamente il target d'utenza del servizio e/o le figure coinvolte nella sua erogazione, per poi tradurle in domande per il reclutamento.</p>"
+      img: "/assets/images/diagram_1.svg"
+      resources:
+        - title: Piano di ricerca - interviste
+          icon: "/assets/icons/pencil.svg"
+          description: Un riepilogo del perimetro della ricerca e della selezione dei partecipanti
+          link: <a href='https://docs.google.com/document/d/1G2aq7tvl8ocvhSsZUJzIENd6s5DreTO7bxQSfAj2PDI/edit?usp=sharing'>Vai alla risorsa</a>
+        - title: Questionario di reclutamento
+          icon: "/assets/icons/pencil.svg"
+          description: Un set di domande chiuse che permette di profilare e selezionare i partecipanti alle interviste
+          link: <a href='https://docs.google.com/document/d/1NJgv3kgo9YUxAaHLzkMFxWUKbewS8VSijoLNcDh1vcQ/edit#' target="_blank">Vai alla risorsa</a>  
+      footer:
+        - icon: "/assets/icons/external-link-grey.svg"
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+        - icon: "/assets/icons/info-grey.svg"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+    - title: Rispetta la privacy quando coinvolgi gli utenti nella ricerca
+      text: "Scegli la tipologia di struttura e scrivi una guida da seguire per mantenere il focus e massimizzare l’utilità della conversazione, defininendo i macro temi da affrontare e le rispettiva domande. Organizza i temi in modo da far emergere il rapporto dell'intervistato con il digitale e con il servizio pubblico, per poi affrontare la sua percezione e le relative esigenze in termini di esperienza d'uso, raccogliendo informazioni sulle aspettative.</p>
+      <p>Ricordati di definire a priori il modulo di consenso al trattamento dei dati per garantire la privacy dei partecipanti."
+      img: "/assets/images/diagram_2.svg"
+      resources:
+        - title: Guida alla conduzione strutturata
+          icon: "/assets/icons/pencil.svg"
+          description: Un protocollo che contiene le istruzioni e le domande aperte da chiedere durante l'intervista
+          link: <a href='https://docs.google.com/document/d/1OSrigFaonmGj_3t-OvNZ2uuA-RIpnjGLv2dNkwexI5E/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+        - title: Guida alla conduzione semi strutturata
+          icon: "/assets/icons/pencil.svg"
+          description: Un protocollo che contiene le istruzioni e i temi chiave da trattare durante l'intervista
+          link: <a href='https://docs.google.com/document/d/1hbhSSgiXpmN8TrrJIeXhFvER08ZSpY9RiAp1n-NsAB0/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+        - title: Consenso al trattamento dei dati
+          icon: "/assets/icons/pencil.svg"
+          description: Un modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell'intervista
+          link: <a href='#' target="_blank">Vai alla risorsa</a>
+      footer:
+        - icon: "/assets/icons/external-link-grey.svg"
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+        - icon: "/assets/icons/info-grey.svg"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+    - title: Rispetta la privacy quando usi i social network
+      text: "Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
+      <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc."
+      img: "/assets/images/diagram_3.svg"
+      resources:
+        - title: Tabella di analisi dei risultati
+          icon: "/assets/icons/pencil.svg"
+          description: Alcuni fogli di lavoro dove riportare le evidenze delle interviste per elaborare le conclusioni
+          link: <a href='https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+        - title: Presentazione dei risultati delle interviste
+          icon: "/assets/icons/pencil.svg"
+          description: Un modello di presentazione strutturato per inserire i risultati delle interviste
+          link: <a href='https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+        - title: Relazione delle conclusioni della ricerca
+          icon: "/assets/icons/pencil.svg"
+          description: Un modello di struttura per la relazione di sintesi dei risultati delle interviste
+          link: <a href='https://docs.google.com/document/d/1ufkimx2_10Qe4APacfcI6vjoPbMpPwltC2-2MUpUckA/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+      footer:
+        - icon: "/assets/icons/external-link-grey.svg"
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+        - icon: "/assets/icons/info-grey.svg"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+
+tags:
+  - navigation-tree
+  - information-architecture
+  - human-centered-design
+  - navigation
+---
