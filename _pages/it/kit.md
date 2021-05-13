@@ -8,6 +8,40 @@ backgroundImage : '/assets/images/pages/headers/kit-head.jpg'
 backgroundColor: 'rgba(0, 102, 204, .65)'
 blueBlock: true
 nodate: true
+
+header:
+  title: "Kit"
+  description: "Sottotitolo che contestualizzi questa pagina kit e spieghi il processo iterativo a 5 fasi, per cosa lo usiamo e dove, frase chiave contestualizzare in tre righe al massimo deve capirsi"
+  links:
+    - <a href='#'>Approfondisci il processo</a>
+    - <a href='#'>Scopri la missione</a>
+
+fasi:
+- slug: organizzare
+  thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  title: Organizzare
+  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
+- slug: comprendere
+  thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  title: Comprendere
+  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"  
+- slug: progettare
+  thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  title: Progettare
+  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
+- slug: realizzare
+  thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  title: Realizzare
+  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"  
+- slug: validare
+  thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
+  title: Validare
+  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
 ---
 
 <hr class="u-border-left-none u-border-right-none u-border-bottom-xxs u-border-top-none u-color-grey-30 u-margin-bottom-xl" >
