@@ -10,7 +10,7 @@ blueBlock: true
 nodate: true
 
 header:
-  title: "Kit"
+  title: "I kit di design"
   description: "Sottotitolo che contestualizzi questa pagina kit e spieghi il processo iterativo a 5 fasi, per cosa lo usiamo e dove, frase chiave contestualizzare in tre righe al massimo deve capirsi"
   links:
     - <a href='#'>Approfondisci il processo</a>
