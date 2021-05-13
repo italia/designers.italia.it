@@ -2,7 +2,7 @@
 {% assign kitCategory = include.kitCategory %}
 
 <div class="super-breadcrumb">
-  <div class="u-layout-wide u-layoutCenter u-color-white">
+  <div class="u-layout-wide u-layoutCenter u-color-white {% if showAll==false %} u-padding-bottom-s u-padding-top-s {% endif %}">
     <nav>
       <ul>
         {% if showAll %}
