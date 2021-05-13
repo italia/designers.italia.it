@@ -15,6 +15,7 @@ header:
   links:
     - <a href='#'>Approfondisci il processo</a>
     - <a href='#'>Scopri la missione</a>
+  image: '/assets/images/diagram_1.svg'
 
 fasi:
 - slug: organizzare
