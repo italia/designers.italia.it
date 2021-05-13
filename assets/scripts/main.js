@@ -75,8 +75,8 @@ $(document).ready(function() {
   // If there is only one superaccordion in the page, automatically open it
   if ($('[data-accordion-expanded]').length === 1) {
     $('[data-accordion-expanded]').click();
+  } else {
+    // Automatically open the 1st accordion
+    $('[data-accordion-expanded]').first().click();
   }
-
-  // Automatically open the 1st accordion
-  $('[data-accordion-expanded]').first().click();
 });
