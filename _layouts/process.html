@@ -30,7 +30,7 @@ layout: default
       <!-- category header -->
       <div class="Grid Grid--withGutter u-padding-bottom-m u-margin-top-l">
         <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-textCenter">
-          <img class="u-md-sizeFull" style="height:14rem" src="/assets/icons/super_breadcrumb/progettare-large.svg"/>
+          <img class="u-md-sizeFull" style="height:14rem" alt="" src="/assets/icons/super_breadcrumb/progettare-large.svg"/>
         </div>
         <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
           <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit u-margin-bottom-xs">{{category}}</h2>
@@ -40,23 +40,27 @@ layout: default
         </div>
       </div>
 
-      <!-- kits in category -->
+      <!-- kits in category, grid -->
       {% assign kitsCat = site.kits | where: 'kitcategory', category | sort: title %}
       <div class="u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill u-margin-bottom-l">
-        <!-- single kit -->
+        <!-- single kit card -->
         {%- for item in kitsCat  -%}
           <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
             <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
               <div class="u-flexAlignSelfStart u-sizeFull">
-                <a href="{{item.url | relative_url}}"><div class="" style="height:20rem; width:100%; background-color: {{ item.backgroundColor }}; background-image: url({{ item.carousel[0].img | default: item.backgroundImage }}); background-size: 100%; background-position:center;"></div></a>
-                  <div class="u-padding-right-l u-padding-left-l u-padding-top-m u-padding-bottom-m">
-                    <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
+                <!-- card img -->
+                <div class="">
+                  <img class="u-sizeFull" alt="" src="{{ item.carousel[0].img | default: item.backgroundImage }}"/>
+                </div>
+                <!-- card content -->
+                <div class="u-padding-right-l u-padding-left-l u-padding-top-m u-padding-bottom-m">
+                  <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
                     <a class="u-textClean u-color-50" href="{{item.url | relative_url}}">
                       <span>{{item.title}}</span>
                     </a>
-                    </h3>
-                  <div>
-                <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+                  </h3>
+                  <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+                </div>
               </div>
             </article>
           </div>
