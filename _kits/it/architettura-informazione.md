@@ -19,7 +19,7 @@ images:
 
 textChunk1:
   title: A COSA SERVE
-  text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor.
+  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor."
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -74,7 +74,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 1"
     - title: Organizza i contenuti
-      text: Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus, duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque, ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.
+      text: "Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus, duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque, ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer."
       img: "/assets/images/diagram_2.svg"
       resources:
         - title: Risorsa A
@@ -99,7 +99,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 2"
     - title: Prepara le attività da seguire e conduci i test
-      text: Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande.
+      text: "Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande."
       img: "/assets/images/diagram_3.svg"
       resources:
         - title: Risorsa A
