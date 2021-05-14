@@ -10,12 +10,12 @@ layout: default
 
     <!-- header -->
     <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl u-margin-bottom-xxl">
-      <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+      <div class="Grid-cell u-lg-size4of12 u-md-size4of12">
         <h1 class="u-text-h1">{{page.header.title}}</h1>
         <div class="u-text-r-l">
           {{page.header.description}}
         </div>
-        <div class="u-margin-top-xxl">
+        <div class="u-margin-top-xxl u-margin-bottom-m">
         <ul>
           {% for link in page.header.links %}
             <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r u-padding-left-xxs u-padding-right-xl u-padding-right-xxl">{{link}}</li>
@@ -23,7 +23,7 @@ layout: default
         </ul>
         </div>
       </div>
-      <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+      <div class="Grid-cell u-md-size4of12 u-lg-size4of12 u-md-before1of12 u-lg-before1of12">
         <img class="u-sizeFull" src="{{page.header.image}}"/>
       </div>
     </div>
