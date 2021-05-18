@@ -55,22 +55,22 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Analizza i contenuti
-      text: "Scegli la tipologia di struttura e scrivi una guida da seguire per mantenere il focus e massimizzare l’utilità della conversazione, defininendo i macro temi da affrontare e le rispettiva domande. Organizza i temi in modo da far emergere il rapporto dell'intervistato con il digitale e con il servizio pubblico, per poi affrontare la sua percezione e le relative esigenze in termini di esperienza d'uso, raccogliendo informazioni sulle aspettative.</p>
-      <p>Ricordati di definire a priori il modulo di consenso al trattamento dei dati per garantire la privacy dei partecipanti."
+      text: "L'audit dei contenuti utilizzati in un servizio digitale è un'attività fondamentale per ottimizzare in maniera iterativa e collaborativa la rispondenza di informazioni e contenuti multimediali alle esigenze informative di utenti e stakeholder.</p>
+      <p>Puoi usare gli strumenti proposti per impostare un processo di gestione delle risorse e dei flussi di lavoro, sia per attività ordinarie (creazione, revisione, organizzazione, aggiornamento) che per attività straordinarie (traduzione, migrazione)."
       img: "/assets/images/diagram_2.svg"
       resources:
-        - title: Guida alla conduzione strutturata
+        - title: Modello di analisi dei contenuti
           icon: "/assets/icons/pencil.svg"
-          description: Un protocollo che contiene le istruzioni e le domande aperte da chiedere durante l'intervista
-          link: <a href='https://docs.google.com/document/d/1OSrigFaonmGj_3t-OvNZ2uuA-RIpnjGLv2dNkwexI5E/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
-        - title: Guida alla conduzione semi strutturata
+          description: Un modello per aiutarti a strutturare un audit dei contenuti e coordinare gli interventi di revisione
+          link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+        - title: Esercizio di card sorting
           icon: "/assets/icons/pencil.svg"
-          description: Un protocollo che contiene le istruzioni e i temi chiave da trattare durante l'intervista
-          link: <a href='https://docs.google.com/document/d/1hbhSSgiXpmN8TrrJIeXhFvER08ZSpY9RiAp1n-NsAB0/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
-        - title: Consenso al trattamento dei dati
+          description: Uno strumento per definire in maniera collaborativa le funzionalità più importanti di un servizio digitale
+          link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' target="_blank">Vai alla risorsa</a>
+        - title: Esercizio di content journey
           icon: "/assets/icons/pencil.svg"
-          description: Un modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell'intervista
-          link: <a href='#' target="_blank">Vai alla risorsa</a>
+          description: Un template struttura per comprendere il viaggio dell'utente fra i contenuti del tuo servizio 
+          link: <a href='https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view?usp=sharing' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
