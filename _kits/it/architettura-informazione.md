@@ -1,9 +1,9 @@
 ---
 title: Architettura dell'informazione
-subtitle: Sottotitolo che contestualizzi questo kit per cosa lo usiamo e dove, frase chiave contestualizzare in tre righe al massimo deve capirsi
+subtitle: Crea e imposta l'interazione con i contenuti di un servizio digitale
 lang: it
 layout: kit
-description: "Descrizione del kit"
+description: "Un kit di Designers Italia dedicato all'architettura dell'informazione dei servizi digitali."
 backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
 backgroundColor: "#439af1"
 nodate: true
@@ -19,7 +19,8 @@ images:
 
 textChunk1:
   title: A COSA SERVE
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Et ipsum est iaculis scelerisque mollis at. Cursus facilisis amet nunc lobortis sagittis. Etiam quam diam ipsum dignissim. Proin ac nascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor. Proin ac nnbmvnbvnbvnbnascetur scelerisque adipiscing amet velit. Semper pharetra, ipsum massa volutpat vestibulum neque, etiam tortor."
+  text: "Il modello interattivo che sta alla base di un punto di contatto digitale (o touchpoint) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso. L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un touchpoint e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi, informativi e non. 
+Il kit contiene strumenti operativi che usati in maniera organica ti aiutano a progettare un’architettura informativa che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva."
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -28,20 +29,20 @@ guideLinesChunk:
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Privacy by design</a>
-      - <a href='#'>Interfaccia utente</a>
+      - <a href='#'>Contenuti e linguaggio</a>
+      - <a href='#'>Prototipazione</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
     items:
+      - Esperto UX
       - Content designer
       - Redattore
-      - Esperto UX
 
 superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
-    - title: Individua contenuti e funzionalità
+    - title: Individua i contenuti
       text: "<p>Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in.
         Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus,
         duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque,
@@ -98,7 +99,7 @@ superAccordion:
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 2
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 2"
-    - title: Prepara le attività da seguire e conduci i test
+    - title: Costruisci l'architettura dell'informazione
       text: "Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande."
       img: "/assets/images/diagram_3.svg"
       resources:
