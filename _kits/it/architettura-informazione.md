@@ -19,8 +19,8 @@ images:
 
 textChunk1:
   title: A COSA SERVE
-  text: "Il modello interattivo che sta alla base di un punto di contatto digitale (o touchpoint) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso. L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un touchpoint e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi, informativi e non. 
-Il kit contiene strumenti operativi che usati in maniera organica ti aiutano a progettare un’architettura informativa che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva."
+  text: "Il modello interattivo che sta alla base di un punto di contatto digitale (o *touchpoint*) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso. L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un *touchpoint* e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi. 
+Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare una architettura dell'informazione che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva."
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -43,57 +43,35 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Individua i contenuti
-      text: "<p>Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in.
-        Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus,
-        duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque,
-        ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.</p>
-        <p>Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in.
-        Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus,
-        duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque,
-        ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.</p>"
+      text: "<p> Gli scenari sono delle storie che raccontano specifiche vicende di utilizzo di un servizio digitale da parte di uno specifico utente, in uno specifico contesto; puoi usarli in modi diversi e con diversi scopi, a seconda del focus del progetto: qui trovi lo strumento <i>Scenari d'uso</i> come punto di partenza per ideare le caratteristiche del futuro touchpoint digitale del servizio, in termini di contenuti e funzioni che questo dovrebbe avere. Gli scenari solitamente hanno come soggetto una delle Personas di riferimento, e sono perciò un modo per trasporre quanto emerso dalla ricerca in idee per migliorare l’interazione con il servizio.</p> <p> Contestualizzare una Persona in uno Scenario d’uso ti è utile nella comprensione dei suoi obiettivi e a declinarli in sotto-obiettivi specifici.
+Questo ti aiuta a mettere a fuoco le possibili criticità che l’utente potrebbe incontrare nell’interagire con il servizio digitale, sia nel caso della ri-progettazione un servizio digitale già esistente sia nel caso tu debba ipotizzare nuove soluzioni per implementazioni di servizi future.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
-        - title: Risorsa A
+        - title: Scenari d'uso 
           icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa A
-          link: <a href='#'>Link alla risorsa A</a>
+          description: Metti a fuoco il contesto d'uso di un servizio digitale 
+          link: <a href='https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing'>Vai alla risorsa</a>
           otherResources:
-            - description: Descrizione della risorsa A.1
-              link: <a href='#' target="_blank">Link risorsa A.1</a>
-            - description: Descrizione della risorsa A.2
-              link: <a href='#' target="_blank">Link risorsa A.1</a>
-        - title: Risorsa B
-          icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa B
-          link: <a href='#' target="_blank">Link risorsa B</a>
-          otherResources:
-            - description: Descrizione della risorsa B.1
-              link: <a href='#' target="_blank">Link risorsa B.1</a>
+            - description: Esempio di scenario d'uso basato sul modello comuni
+              link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' target="_blank">Vai all'esempio</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra accordion 1.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 1"
     - title: Organizza i contenuti
-      text: "Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus, duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque, ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer."
+      text: "Se gli scenari d'uso ti permettono di individuare una serie di contenuti e funzioni potenziali per il servizio che stai progettando, l'attività di card sorting ti aiuterà a raggruppare, ordinare e declinare queste caratteristiche-chiave. L'attività di card sorting è infatti utile per individuare le macro-categorie in cui contenuti e funzioni sono raggruppati e i percorsi attraverso i quali si articolano. Serve anche a descrivere le tipologie di contenuti presenti nel sistema e le relazioni che intercorrono fra esse. Questo lavoro di catalogazione e raggruppamento è fondamentale per costruire e/o consolidare l’architettura dell’Informazione alla base del servizio digitale."
       img: "/assets/images/diagram_2.svg"
       resources:
-        - title: Risorsa A
+        - title: Card sorting
           icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa A
-          link: <a href='#' target="_blank">Link alla risorsa A</a>
+          description: Organizza contenuti e funzioni del servizio digitale
+          link: <a href='https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
           otherResources:
-            - description: Descrizione della risorsa A.1
-              link: <a href='#' target="_blank">Link risorsa A.1</a>
-            - description: Descrizione della risorsa A.2
-              link: <a href='#' target="_blank">Link risorsa A.1</a>
-        - title: Risorsa B
-          icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa B
-          link: <a href='#' target="_blank">Link risorsa B</a>
-          otherResources:
-            - description: Descrizione della risorsa B.1
-              link: <a href='#' target="_blank">Link risorsa B.1</a>
+            - description: Esempio di card sorting
+              link: <a href='https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing' target="_blank">Vai all'esempio</a>
+            - description: Card sorting (versione stampabile) 
+              link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 2
@@ -103,22 +81,10 @@ superAccordion:
       text: "Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande."
       img: "/assets/images/diagram_3.svg"
       resources:
-        - title: Risorsa A
+        - title: Costruzione dell'architettura dell'informazione 
           icon: "/assets/icons/pencil.svg"
-          description: Descrizione della risorsa A
-          link: <a href='#' target="_blank">Link alla risorsa A</a>
-          otherResources:
-            - description: Descrizione della risorsa A.1
-              link: <a href='#' target="_blank">Link risorsa A.1</a>
-            - description: Descrizione della risorsa A.2
-              link: <a href='#' target="_blank">Link risorsa A.1</a>
-        - title: Risorsa B
-          icon: "/assets/icons/dt-logo.svg"
-          description: Descrizione della risorsa B
-          link: <a href='#' target="_blank">Link risorsa B</a>
-          otherResources:
-            - description: Descrizione della risorsa B.1
-              link: <a href='#' target="_blank">Link risorsa B.1</a>
+          description: Uno strumento per aiutarti a costruire l'architettura informativa di un servizio digitale
+          link: <a href='#' target="_blank">in lavorazione...</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 3
