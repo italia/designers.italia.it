@@ -44,7 +44,7 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: "L'esperienza di un servizio: pianifica e conduci una sessione di co-progettazione."
-      text: "<p> Lo strumento ti aiuta a organizzare un workshop di co-progettazione dedicato all’esperienza di un servizio, sia esso digitale o da riprogettare in chiave digitale. In primo luogo hai bisogno di identificare un obiettivo chiaro e condiviso, per poi definire alcuni aspetti organizzativi/logistici come la data, il luogo e i partecipanti. La risorsa ti offre inoltre supporto nella definizione della sessione di lavoro condiviso e prevede una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato atteso. Tra le attività suggerite, l'identificazione degli attori, la mappatura dell’ecosistema e la mappatura della user journey.</p>"
+      text: "<p> Questa risorsa ti aiuta a organizzare un workshop di co-progettazione dedicato all’esperienza di un servizio, sia esso digitale o da riprogettare in chiave digitale. In primo luogo hai bisogno di identificare un obiettivo chiaro e condiviso, per poi definire alcuni aspetti organizzativi/logistici come la data, il luogo e i partecipanti. La risorsa ti offre inoltre supporto nella definizione della sessione di lavoro condiviso e prevede una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato atteso. Tra le attività suggerite, l'identificazione degli attori, la mappatura dell’ecosistema e la mappatura della user journey.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Workshop di co-progettazione di un servizio 
@@ -61,30 +61,25 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: "Un touchpoint digitale: pianifica e conduci una sessione di co-progettazione."
-      text: "Se gli scenari d'uso ti permettono di individuare una serie di contenuti e funzioni potenziali per il servizio che stai progettando, l'attività di card sorting ti aiuterà a raggruppare, ordinare e declinare queste caratteristiche-chiave. L'attività di card sorting è infatti utile per individuare le macro-categorie in cui contenuti e funzioni sono raggruppati e i percorsi attraverso i quali si articolano. Serve anche a descrivere le tipologie di contenuti presenti nel sistema e le relazioni che intercorrono fra esse. Questo lavoro di catalogazione e raggruppamento è fondamentale per costruire e/o consolidare l’architettura dell’Informazione alla base del servizio digitale."
+      text: "Questa risorsa ti aiuta a organizzazione una sessione di co-progettazione di un touchpoint digitale (sito, app, piattaforma...). Ti supporta in particola  nella attività di definizione di un’agenda della sessione di lavoro condiviso e ti propone una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato desiderato. I partecipanti potenziali sono: personale della Pubblica Amministrazione, aziende private coinvolte nel progetto, associazioni di categoria interessate, organizzazioni che rappresentano i comuni, organizzazioni che rappresentano i cittadini, utenti del servizio (i cittadini), operatori allo sportello.Tra le attività suggerite troviamo la definizione delle personas, la creazione degli scenari d’uso e definizione dei flussi di interazione."
       img: "/assets/images/diagram_2.svg"
       resources:
-        - title: Card sorting
+        - title: Guida alla sessione di co-progettazione di un touchpoint digitale
           icon: "/assets/icons/pencil.svg"
-          description: Organizza contenuti e funzioni del servizio digitale
+          description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dedicata ad un touchpoint digitale (sito, app, piattaforma...).
           link: <a href='https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
-          otherResources:
-            - description: Esempio di card sorting
-              link: <a href='https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing' target="_blank">Vai all'esempio</a>
-            - description: Card sorting (versione stampabile) 
-              link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: "I contenuti: pianifica e conduci in una sessione di co-progettazione."
-      text: "Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande."
+      text: "Lo strumento ti aiuta nell'organizzazione di una sessione di co-progettazione dedicata al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti. Oltre a indicazioni utili per la costruzione dell'agenda della sessione, trovi suggerimenti e una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi durante la sessione di lavoro condivisa. Tra le attività suggerite, la mappatura del content journey, una sessione di generazione di idee e un esercizio di card sorting e naming dei contenuti."
       img: "/assets/images/diagram_3.svg"
       resources:
-        - title: Costruzione dell'architettura dell'informazione 
+        - title: Guida alla sessione di co-progettazione dei contenuti 
           icon: "/assets/icons/pencil.svg"
-          description: Uno strumento per aiutarti a costruire l'architettura informativa di un servizio digitale
+          description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dei contenuti.
           link: <a href='#' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
