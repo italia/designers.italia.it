@@ -11,7 +11,8 @@ kitcategory: organizzare
 
 textChunk1:
   title: A COSA SERVE
-  text: "Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di quali categorie di informazioni stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti. Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti informazioni e modelli utili per aiutarti a trattare correttamente i dati personali riferiti ad alcuni dei principali casi d'uso che dovrai gestire progettando e realizzando un servizio digitale."
+  text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di quali categorie di informazioni stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
+  <p> Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti informazioni e modelli utili per aiutarti a trattare correttamente i dati personali riferiti ad alcuni dei principali casi d'uso che dovrai gestire progettando e realizzando un servizio digitale.</p>"
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -33,8 +34,9 @@ footerItems:
 superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
-    - title: Rispetta la privacy per il go-live di un servzio digitale
-      text: "<p>Quando progetti la messa on line di un servizio devi considerare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali (art.4, punto 1 del GDPR). Tra le casistiche più frequenti che richiedono un trattamento di dati personali ti ricordiamo: l’invio di una newsletter, la registrazione/sottoscrizione mediante compilazione di un form, la presenza di una sezione <i>Contatti</i>, la ricezione di candidature, la gestione dei cookie, ecc. Ricorda che per ciascuna di queste casistiche, e nel rispetto del principio di minimizzazione, ti è consentito richiedere esclusivamente i dati strettamente necessari all’erogazione del servizio. </p>"
+    - title: Rispetta la privacy per il go-live di un servizio digitale
+      text: "<p>Quando progetti la messa on line di un servizio devi considerare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali (art.4, punto 1 del GDPR). Tra le casistiche più frequenti che richiedono un trattamento di dati personali ti ricordiamo: l’invio di una newsletter, la registrazione/sottoscrizione mediante compilazione di un form, la presenza di una sezione <i>Contatti</i>, la ricezione di candidature, la gestione dei cookie, ecc.</p>
+      <p>Ricorda che per ciascuna di queste casistiche, e nel rispetto del principio di minimizzazione, ti è consentito richiedere esclusivamente i dati strettamente necessari all’erogazione del servizio. </p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: "Modello di privacy/cookie policy"
