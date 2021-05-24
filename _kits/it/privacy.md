@@ -33,18 +33,26 @@ footerItems:
 superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
-    - title: Rispetta la privacy per il go-live di un sito
-      text: "<p>Definisci gli obiettivi della ricerca e i temi da investigare così da capire quali criteri seguire per strutturare il questionario di selezione dei partecipanti. Dettaglia le attività da svolgere in termini di modalità di somministrazione delle interviste e tipologia di protocolli da seguire rispettivamente per utenti e/o stakeholder e pensa alle caratteristiche che gli intervistati dovranno avere per rappresentare appropriatamente il target d'utenza del servizio e/o le figure coinvolte nella sua erogazione, per poi tradurle in domande per il reclutamento.</p>"
+    - title: Rispetta la privacy per il go-live di un servzio digitale
+      text: "<p>Quando progetti la messa on line di un servizio devi considerare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali (art.4, punto 1 del GDPR). Tra le casistiche più frequenti che richiedono un trattamento di dati personali ti ricordiamo: l’invio di una newsletter, la registrazione/sottoscrizione mediante compilazione di un form, la presenza di una sezione <i>Contatti</i>, la ricezione di candidature, la gestione dei cookie, ecc. Ricorda che per ciascuna di queste casistiche, e nel rispetto del principio di minimizzazione, ti è consentito richiedere esclusivamente i dati strettamente necessari all’erogazione del servizio. </p>"
       img: "/assets/images/diagram_1.svg"
       resources:
-        - title: Piano di ricerca - interviste
+        - title: "Modello di privacy/cookie policy"
           icon: "/assets/icons/pencil.svg"
-          description: Un riepilogo del perimetro della ricerca e della selezione dei partecipanti
-          link: <a href='https://docs.google.com/document/d/1G2aq7tvl8ocvhSsZUJzIENd6s5DreTO7bxQSfAj2PDI/edit?usp=sharing'>Vai alla risorsa</a>
-        - title: Questionario di reclutamento
+          description: Un template per aiutarti nella compilazione di una privacy/cookie policy adeguata per il tuo servizio 
+          link: <a href='#'>Vai alla risorsa</a>
+        - title: Esempio di testo per cookie bar
           icon: "/assets/icons/pencil.svg"
-          description: Un set di domande chiuse che permette di profilare e selezionare i partecipanti alle interviste
-          link: <a href='https://docs.google.com/document/d/1NJgv3kgo9YUxAaHLzkMFxWUKbewS8VSijoLNcDh1vcQ/edit#' target="_blank">Vai alla risorsa</a>  
+          description: "Un esempio di..."
+          link: <a href='#' target="_blank">Vai alla risorsa</a>
+        - title: Modello di informativa di primo livello 
+          icon: "/assets/icons/pencil.svg"
+          description: "Un esempio di informativa da utilizzare per la compilazione di un form o l'invio di una newsletter"
+          link: <a href='#' target="_blank">Vai alla risorsa</a>
+        - title: "Come escludere i cookie di terze parti dai contenuti multimediali in embed"
+          icon: "/assets/icons/pencil.svg"
+          description: "Istruzioni per escludere il tracciamento di cookie di terze parti dai contenuti multimediali embeddati "
+          link: <a href='#' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
