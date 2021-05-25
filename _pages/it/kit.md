@@ -15,7 +15,7 @@ header:
   links:
     - <a href='#'>Approfondisci il processo</a>
     - <a href='#'>Scopri la missione</a>
-  image: '/assets/images/diagram_1.svg'
+  image: '/assets/icons/super_breadcrumb/2021_designers-italia_fasi-kit.svg'
 
 fasi:
 - slug: organizzare
