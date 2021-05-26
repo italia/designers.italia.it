@@ -4,7 +4,7 @@ subtitle: Rispetta la privacy dei tuoi utenti quando realizzi un servizio digita
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla privacy"
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: 
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: organizzare
@@ -28,7 +28,7 @@ footerItems:
   - title: PROFESSIONALITÀ
     items:
       - Responsabile per la protezione dei dati personali (DPO)
-      - Privacy team 
+      - Privacy team
       - Content designer
 
 superAccordion:
@@ -41,13 +41,13 @@ superAccordion:
       resources:
         - title: "Modello di privacy/cookie policy"
           icon: "/assets/icons/pencil.svg"
-          description: Un template per aiutarti nella compilazione di una privacy/cookie policy adeguata per il tuo servizio 
+          description: Un template per aiutarti nella compilazione di una privacy/cookie policy adeguata per il tuo servizio
           link: <a href='#'>Vai alla risorsa</a>
         - title: Esempio di testo per cookie bar
           icon: "/assets/icons/pencil.svg"
           description: "Un esempio di..."
           link: <a href='#' target="_blank">Vai alla risorsa</a>
-        - title: Modello di informativa di primo livello 
+        - title: Modello di informativa di primo livello
           icon: "/assets/icons/pencil.svg"
           description: "Un esempio di informativa da utilizzare per la compilazione di un form o l'invio di una newsletter"
           link: <a href='#' target="_blank">Vai alla risorsa</a>
