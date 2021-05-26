@@ -4,7 +4,7 @@ subtitle: Osserva i comportamenti degli utenti partendo dai dati di utilizzo del
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla web analytics"
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: "/assets/icons/kit/kit_analytics.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: validare

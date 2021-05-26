@@ -4,7 +4,7 @@ subtitle: Svolgi un'indagine per raccogliere informazioni utili sul punto di vis
 lang: it
 layout: kit
 description: "Un kit di service design di Designers Italia che ti offre strumenti per raccogliere informazioni sul punto di vista degli utenti di un servizio digitale"
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: "/assets/icons/kit/kit_questionari.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere

@@ -4,7 +4,7 @@ subtitle: Usa il linguaggio giusto per i tuoi utenti e organizza i contenuti del
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato ai contenuti e al linguaggio di un progetto digitale"
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: "/assets/icons/kit/kit_linguaggio.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
@@ -37,7 +37,7 @@ superAccordion:
       text: "<p>Hai a disposizione diversi strumenti operativi per creare e ottimizzare i contenuti dell'interfaccia digitale di un servizio. In questa sezione trovi le indicazioni per svolgere un workshop finalizzato a coinvolgere utenti e stakeholder nel percorso iniziale di content design e linguaggio di un servizio, un esercizio di editing collaborativo e il riferimento alla Guida alla linguaggio della Pubblica Amministrazione, che ti offre regole, indicazioni e suggerimenti per l'uso del linguaggio a seconda dei vari contesti d'uso del servizio digitale.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
-        - title: Workshop sul linguaggio 
+        - title: Workshop sul linguaggio
           icon: "/assets/icons/pencil.svg"
           description: Indicazioni operative per la costruzioni di un workshop dedicato ai contenuti e al linguaggio
           link: <a href='https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing'>Vai alla risorsa</a>
@@ -69,7 +69,7 @@ superAccordion:
           link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' target="_blank">Vai alla risorsa</a>
         - title: Esercizio di content journey
           icon: "/assets/icons/pencil.svg"
-          description: Un template struttura per comprendere il viaggio dell'utente fra i contenuti del tuo servizio 
+          description: Un template struttura per comprendere il viaggio dell'utente fra i contenuti del tuo servizio
           link: <a href='https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view?usp=sharing' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
@@ -82,7 +82,7 @@ superAccordion:
       resources:
         - title: Modello di liberatoria per l'uso di immagini e video
           icon: "/assets/icons/pencil.svg"
-          description: Un modello per ottenere il consenso all'uso di immagini e video 
+          description: Un modello per ottenere il consenso all'uso di immagini e video
           link: <a href='https://docs.google.com/document/d/1hz7dNa2eKU1atAr3dzgyZH0W2kETBuDBejk62wEVPL4/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"

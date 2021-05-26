@@ -1,10 +1,10 @@
 ---
-title: Test di usabilità 
+title: Test di usabilità
 subtitle: Rendi più usabile un servizio digitale osservando le interazioni degli utenti
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla conduzione di test di usabilità di un servizio digitale"
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: "/assets/icons/kit/kit_testusability.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: validare
@@ -28,7 +28,7 @@ footerItems:
   - title: PROFESSIONALITÀ
     items:
       - UX designer
-      - Service designer 
+      - Service designer
       - Content designer
 
 superAccordion:
@@ -42,7 +42,7 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per la conduzione dei test basate sugli allegati 2 e 3 del Protocollo eGLU
           link: <a href='https://docs.google.com/document/d/1kM_3umUUiPp51iTsfsoQKhdV2-FD6bjKKFp17xTB124/edit?usp=sharing'>Vai alla risorsa</a>
-        - title: Scheda partecipanti 
+        - title: Scheda partecipanti
           icon: "/assets/icons/pencil.svg"
           description: Un modello di questionario minimo per la raccolta dei dati anagrafici dei tester
           link: <a href='https://docs.google.com/document/d/1qoZzPVaIDE8sKg1Fa6JKSG-EPsy_YTtgSlDaV7O4X2c/edit?usp=sharing' target="_blank">Vai al modello</a>  
@@ -81,7 +81,7 @@ superAccordion:
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-    - title: Rielabora e condividi i risultati 
+    - title: Rielabora e condividi i risultati
       text: "Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
       <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc."
       img: "/assets/images/diagram_3.svg"

@@ -4,22 +4,14 @@ subtitle: Crea e imposta l'interazione con i contenuti di un servizio digitale
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato all'architettura dell'informazione dei servizi digitali."
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: "/assets/icons/kit/kit_architettura.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
 
-images:
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
-
 textChunk1:
   title: A COSA SERVE
-  text: "Il modello interattivo che sta alla base di un punto di contatto digitale (o *touchpoint*) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso. L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un *touchpoint* e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi. 
+  text: "Il modello interattivo che sta alla base di un punto di contatto digitale (o *touchpoint*) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso. L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un *touchpoint* e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi.
 Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare una architettura dell'informazione che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva."
 
 guideLinesChunk:
@@ -47,9 +39,9 @@ superAccordion:
 Questo ti aiuta a mettere a fuoco le possibili criticità che l’utente potrebbe incontrare nell’interagire con il servizio digitale, sia nel caso della ri-progettazione un servizio digitale già esistente sia nel caso tu debba ipotizzare nuove soluzioni per implementazioni di servizi future.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
-        - title: Scenari d'uso 
+        - title: Scenari d'uso
           icon: "/assets/icons/pencil.svg"
-          description: Metti a fuoco il contesto d'uso di un servizio digitale 
+          description: Metti a fuoco il contesto d'uso di un servizio digitale
           link: <a href='https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing'>Vai alla risorsa</a>
           otherResources:
             - description: Esempio di scenario d'uso basato sul modello comuni
@@ -70,7 +62,7 @@ Questo ti aiuta a mettere a fuoco le possibili criticità che l’utente potrebb
           otherResources:
             - description: Esempio di card sorting
               link: <a href='https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing' target="_blank">Vai all'esempio</a>
-            - description: Card sorting (versione stampabile) 
+            - description: Card sorting (versione stampabile)
               link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
@@ -81,7 +73,7 @@ Questo ti aiuta a mettere a fuoco le possibili criticità che l’utente potrebb
       text: "Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande."
       img: "/assets/images/diagram_3.svg"
       resources:
-        - title: Costruzione dell'architettura dell'informazione 
+        - title: Costruzione dell'architettura dell'informazione
           icon: "/assets/icons/pencil.svg"
           description: Uno strumento per aiutarti a costruire l'architettura informativa di un servizio digitale
           link: <a href='#' target="_blank">in lavorazione...</a>
