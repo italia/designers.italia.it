@@ -4,7 +4,7 @@ subtitle: Realizza siti web e servizi digitali in semplicità grazie a codice e 
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato allo sviluppo delle interfacce web"
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: 
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare

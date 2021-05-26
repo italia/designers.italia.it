@@ -24,7 +24,7 @@ layout: default
         </div>
       </div>
       <div class="Grid-cell u-md-before1of12 u-lg-before1of12 u-md-size3of12 u-lg-size3of12">
-        <img class="u-sizeFull " src="{{page.header.image}}"/>
+        <img class="u-sizeFull " alt="Le cinque fasi del progetto tra cui iterare: organizzare; comprendere; progettare; realizzare; validare." src="{{page.header.image}}"/>
       </div>
     </div>
 
@@ -59,17 +59,17 @@ layout: default
           <!-- single kit card -->
           {%- for item in kits_di_fase  -%}
             <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
-              <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+              <article class="kitCard u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
                 <div class="u-flexAlignSelfStart u-sizeFull">
-                  <!-- card img -->
-                  <div class="">
-                    <img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" alt="" src="{{ item.backgroundImage }}"/>
-                  </div>
+                  {% if item.backgroundImage %}
+                    <!-- card img -->
+                    <img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.backgroundImage }}"/>
+                  {% endif %}
                   <!-- card content -->
                   <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">
                     <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
                       <a class="u-textClean u-color-50" href="{{item.url | relative_url}}">
-                        <span>{{item.title}}</span>
+                        <span id="kitCardTitle">{{item.title}}</span>
                       </a>
                     </h3>
                     <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>

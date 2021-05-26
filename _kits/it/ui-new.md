@@ -4,7 +4,7 @@ subtitle: Progetta l’interfaccia di un servizio digitale con uno stile grafico
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato alla progettazione delle interfacce digitali della Pubblica Amministrazione"
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: 
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare

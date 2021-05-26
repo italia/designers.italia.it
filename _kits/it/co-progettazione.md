@@ -4,18 +4,10 @@ subtitle: Coinvolgi stakeholder e utenti del servizio in una sessione di co-prog
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla progettazione partecipata di un servizio digitale."
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage:
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
-
-images:
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
 
 textChunk1:
   title: A COSA SERVE
@@ -47,11 +39,11 @@ superAccordion:
       text: "<p> Questa risorsa ti aiuta a organizzare un workshop di co-progettazione dedicato all’esperienza di un servizio, sia esso digitale o da riprogettare in chiave digitale. In primo luogo hai bisogno di identificare un obiettivo chiaro e condiviso, per poi definire alcuni aspetti organizzativi/logistici come la data, il luogo e i partecipanti. La risorsa ti offre inoltre supporto nella definizione della sessione di lavoro condiviso e prevede una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato atteso. Tra le attività suggerite, l'identificazione degli attori, la mappatura dell’ecosistema e la mappatura della user journey.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
-        - title: Workshop di co-progettazione di un servizio 
+        - title: Workshop di co-progettazione di un servizio
           icon: "/assets/icons/pencil.svg"
           description: Una guida per pianificare e condurre una sessione di co-progettazione dedicata all’esperienza di un servizio pubblico
           link: <a href='https://docs.google.com/presentation/d/1dQqoq6hHBaFQ8Elz21tLrldvJJKo_7oC6FrtG3B9B60/edit#slide=id.g351b5d350a_0_0'>Vai alla risorsa</a>
-        - title: Guida alla sessione di co-progettazione di un servizio 
+        - title: Guida alla sessione di co-progettazione di un servizio
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per pianificare e svolgere collaborativamente una sessione dedicata alla progettazione dell’esperienza un servizio pubblico.
           link: <a href='#'>Vai alla risorsa</a>
@@ -77,13 +69,13 @@ superAccordion:
       text: "Lo strumento ti aiuta nell'organizzazione di una sessione di co-progettazione dedicata al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti. Oltre a indicazioni utili per la costruzione dell'agenda della sessione, trovi suggerimenti e una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi durante la sessione di lavoro condivisa. Tra le attività suggerite, la mappatura del content journey, una sessione di generazione di idee e un esercizio di card sorting e naming dei contenuti."
       img: "/assets/images/diagram_3.svg"
       resources:
-        - title: Guida alla sessione di co-progettazione dei contenuti 
+        - title: Guida alla sessione di co-progettazione dei contenuti
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dei contenuti.
           link: <a href='#' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. 
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 

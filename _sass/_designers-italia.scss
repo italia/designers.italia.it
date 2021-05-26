@@ -1182,6 +1182,20 @@ html {
   }
 }
 
+.kitCard {
+  position:relative;
+}
+
+.kitCard a[href]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 @media screen and (max-width:991px) {
   .u-special-list-r {
     margin-right: 4rem;
