@@ -10,9 +10,9 @@ layout: default
 
     <!-- header -->
     <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl u-margin-bottom-xxl">
-      <div class="Grid-cell u-lg-size5of12 u-md-size5of12">
+      <div class="Grid-cell u-lg-size4of12 u-md-size4of12">
         <h1 class="u-text-h1">{{page.header.title}}</h1>
-        <div class="u-text-r-l">
+        <div class="u-text-r-m">
           {{page.header.description}}
         </div>
         <div class="u-margin-top-xxl u-margin-bottom-m">
@@ -23,8 +23,8 @@ layout: default
         </ul>
         </div>
       </div>
-      <div class="Grid-cell u-md-size5of12 u-lg-size5of12">
-        <img class="u-sizeFull" src="{{page.header.image}}"/>
+      <div class="Grid-cell u-md-before1of12 u-lg-before1of12 u-md-size3of12 u-lg-size3of12">
+        <img class="u-sizeFull " src="{{page.header.image}}"/>
       </div>
     </div>
 
@@ -63,10 +63,10 @@ layout: default
                 <div class="u-flexAlignSelfStart u-sizeFull">
                   <!-- card img -->
                   <div class="">
-                    <img class="u-sizeFull" alt="" src="{{ item.backgroundImage }}"/>
+                    <img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" alt="" src="{{ item.backgroundImage }}"/>
                   </div>
                   <!-- card content -->
-                  <div class="u-padding-right-l u-padding-left-l u-padding-top-m u-padding-bottom-m">
+                  <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">
                     <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
                       <a class="u-textClean u-color-50" href="{{item.url | relative_url}}">
                         <span>{{item.title}}</span>
