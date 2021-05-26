@@ -42,11 +42,11 @@ layout: default
 
         <!-- fase header -->
         <div class="Grid Grid--withGutter u-padding-bottom-m u-margin-top-l">
-          <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-textCenter">
-            <img class="u-sizeFull" style="height:14rem" alt="" src="{{fase.thumbLarge}}"/>
+          <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-textCenter u-padding-bottom-s">
+            <img class="u-sizeFull" style="height:14rem" alt="{{fase.title}}" aria-labelledby="faseTitle" src="{{fase.thumbLarge}}"/>
           </div>
           <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
-            <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit u-margin-bottom-xs">{{fase.title}}</h2>
+            <h2 id="faseTitle" class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit u-margin-bottom-xs">{{fase.title}}</h2>
             <div class="u-text-r-m Prose u-layout-prose u-color-grey-ui-kit">
               {{fase.subtitle}}
             </div>
