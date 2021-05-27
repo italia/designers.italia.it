@@ -41,7 +41,7 @@ superAccordion:
         - title: Bootstrap Italia
           icon: "/assets/icons/pencil.svg"
           description: La libreria open source Bootstrap Italia permette di costruire interfacce web inclusive e semplici da mantenere
-          link: <a href='https://italia.github.io/bootstrap-italia/'>Vai alla risorsa</a>
+          link: <a target="_blank" href='https://italia.github.io/bootstrap-italia/'>Vai alla risorsa</a>
           otherResources:
             - description: Introduzione a Bootstrap Italia
               link: <a href='https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/' target="_blank">Vai alla risorsa</a>

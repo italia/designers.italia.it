@@ -41,7 +41,7 @@ superAccordion:
         - title: Guida alla conduzione dei test di usabilità
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per la conduzione dei test basate sugli allegati 2 e 3 del Protocollo eGLU
-          link: <a href='https://docs.google.com/document/d/1kM_3umUUiPp51iTsfsoQKhdV2-FD6bjKKFp17xTB124/edit?usp=sharing'>Vai alla risorsa</a>
+          link: <a target="_blank" href='https://docs.google.com/document/d/1kM_3umUUiPp51iTsfsoQKhdV2-FD6bjKKFp17xTB124/edit?usp=sharing'>Vai alla risorsa</a>
         - title: Scheda partecipanti
           icon: "/assets/icons/pencil.svg"
           description: Un modello di questionario minimo per la raccolta dei dati anagrafici dei tester

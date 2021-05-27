@@ -46,7 +46,7 @@ superAccordion:
         - title: Guida alla sessione di co-progettazione di un servizio
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per pianificare e svolgere collaborativamente una sessione dedicata alla progettazione dell’esperienza un servizio pubblico.
-          link: <a href='#'>Vai alla risorsa</a>
+          link: <a href='#' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
