@@ -11,7 +11,7 @@ kitcategory: progettare
 
 textChunk1:
   title: A COSA SERVE
-  text: "Il modello interattivo che sta alla base di un punto di contatto digitale (o *touchpoint*) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso. L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un *touchpoint* e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi.
+  text: "Il modello interattivo che sta alla base di un punto di contatto digitale (o <em>touchpoint</em>) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso. L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un *touchpoint* e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi.
 Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare una architettura dell'informazione che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva."
 
 guideLinesChunk:
@@ -70,7 +70,7 @@ Questo è utile per mettere a fuoco le possibili criticità che l’utente potre
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa accordion 2"
     - title: Costruisci l'architettura dell'informazione
-      text: "Uno strumento per aiutarti a costruzione l'Architettura dell'informazione di un servizio digitale."
+      text: "Grazie alla mappatura e catalogazione dei contenuti realizzata con il Card sorting, potrai infine strutturare in modo preciso le relazioni di interdipendenza fra le varie porzioni di contenuto presenti nel sistema, in modo da individuare i percorsi di fruizione possibili per l’utente."
       img: "/assets/images/diagram_3.svg"
       resources:
         - title: Costruzione dell'architettura dell'informazione
@@ -79,9 +79,9 @@ Questo è utile per mettere a fuoco le possibili criticità che l’utente potre
           link: <em>In lavorazione</em>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 3
+          text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra." 
         - icon: "/assets/icons/info-grey.svg"
-          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa. accordion 3"
+          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
 tags:
   - navigation-tree
