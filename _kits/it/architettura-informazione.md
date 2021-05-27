@@ -77,7 +77,7 @@ superAccordion:
       img: "/assets/images/diagram_3.svg"
       resources:
         - title: Costruzione dell'architettura dell'informazione
-          icon: ""
+          icon: 
           description: Uno strumento per aiutarti a costruire l'architettura dell'informazione di un servizio digitale
           link: <em>In lavorazione</em>
       footer:
