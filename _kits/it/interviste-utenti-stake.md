@@ -11,7 +11,8 @@ kitcategory: comprendere
 
 textChunk1:
   title: A COSA SERVE
-  text: "Le interviste consentono di approfondire il contesto e l’esperienza d’uso di un servizio digitale in breve tempo, raccogliendo direttamente informazioni tramite i resoconti verbali di tutti i soggetti coinvolti, sia gli attori che contribuiscono alla sua erogazione, sia degli utenti che ne fruiscono (stakeholder). Il kit comprende modelli pre-organizzati per supportare  la pianificazione e lo svolgimento della ricerca, ma anche l’analisi e sintesi dei suoi risultati."
+  text: "<p>Le interviste consentono di approfondire il contesto e l’esperienza d’uso di un servizio digitale in breve tempo, raccogliendo direttamente informazioni tramite i resoconti verbali di tutti i soggetti coinvolti, sia gli attori che contribuiscono alla sua erogazione, sia degli utenti che ne fruiscono (stakeholder).</p>
+  <p>Il kit comprende modelli pre-organizzati per supportare  la pianificazione e lo svolgimento della ricerca, ma anche l’analisi e sintesi dei suoi risultati.</p>"
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -34,7 +35,8 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Pianifica le interviste
-      text: "<p>Definisci gli obiettivi della ricerca e i temi da investigare così da capire quali criteri seguire per strutturare il questionario di selezione dei partecipanti. Dettaglia le attività da svolgere in termini di modalità di somministrazione delle interviste e tipologia di protocolli da seguire rispettivamente per utenti e/o stakeholder e pensa alle caratteristiche che gli intervistati dovranno avere per rappresentare appropriatamente il target d'utenza del servizio e/o le figure coinvolte nella sua erogazione, per poi tradurle in domande per il reclutamento.</p>"
+      text: "<p>Definisci gli obiettivi della ricerca e i temi da investigare così da capire quali criteri seguire per strutturare il questionario di selezione dei partecipanti.</p>
+      <p>Dettaglia le attività da svolgere in termini di modalità di somministrazione delle interviste e tipologia di protocolli da seguire rispettivamente per utenti e/o stakeholder e pensa alle caratteristiche che gli intervistati dovranno avere per rappresentare appropriatamente il target d'utenza del servizio e/o le figure coinvolte nella sua erogazione, per poi tradurle in domande per il reclutamento.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Piano di ricerca - interviste
@@ -51,8 +53,8 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Prepara il protocollo da seguire
-      text: "Scegli la tipologia di struttura e scrivi una guida da seguire per mantenere il focus e massimizzare l’utilità della conversazione, defininendo i macro temi da affrontare e le rispettiva domande. Organizza i temi in modo da far emergere il rapporto dell'intervistato con il digitale e con il servizio pubblico, per poi affrontare la sua percezione e le relative esigenze in termini di esperienza d'uso, raccogliendo informazioni sulle aspettative.</p>
-      <p>Ricordati di definire a priori il modulo di consenso al trattamento dei dati per garantire la privacy dei partecipanti."
+      text: "<p>Scegli la tipologia di struttura e scrivi una guida da seguire per mantenere il focus e massimizzare l’utilità della conversazione, defininendo i macro temi da affrontare e le rispettiva domande. Organizza i temi in modo da far emergere il rapporto dell'intervistato con il digitale e con il servizio pubblico, per poi affrontare la sua percezione e le relative esigenze in termini di esperienza d'uso, raccogliendo informazioni sulle aspettative.</p>
+      <p>Ricordati di definire a priori il modulo di consenso al trattamento dei dati per garantire la privacy dei partecipanti.</p>"
       img: "/assets/images/diagram_2.svg"
       resources:
         - title: Guida alla conduzione strutturata
@@ -73,8 +75,8 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Rielabora le informazioni raccolte
-      text: "Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
-      <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc."
+      text: "<p>Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
+      <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc.</p>"
       img: "/assets/images/diagram_3.svg"
       resources:
         - title: Tabella di analisi dei risultati

@@ -4,14 +4,15 @@ subtitle: Ottimizza i contenuti in base ai bisogni e alle priorità che gli uten
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alle buone pratiche di ottimizzazione per gli utenti e i motori di ricerca"
-backgroundImage: 
+backgroundImage:
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
 
 textChunk1:
   title: A COSA SERVE
-  text: "Le tecniche di ottimizzazione e analisi SEO (search engine optimization ovvero ottimizzazione per i motori di ricerca) hanno l’obiettivo di migliorare il posizionamento dei contenuti web nei motori di ricerca, in relazione a specifici argomenti/intenti dell’utente. Nel contesto delle amministrazioni pubbliche ciò significa intervenire sui contenuti e su aspetti strutturali e tecnologici di siti e servizi per migliorare la trovabilità di informazioni di utilità pubblica da parte dei cittadini. Il kit SEO ha l’obiettivo di fornire suggerimenti operativi su come individuare il livello di visibilità dei contenuti sui motori di ricerca, in relazione a specifici “intenti di ricerca”, così come analizzare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico."
+  text: "<p>Le tecniche di ottimizzazione e analisi SEO (search engine optimization ovvero ottimizzazione per i motori di ricerca) hanno l’obiettivo di migliorare il posizionamento dei contenuti web nei motori di ricerca, in relazione a specifici argomenti/intenti dell’utente. Nel contesto delle amministrazioni pubbliche ciò significa intervenire sui contenuti e su aspetti strutturali e tecnologici di siti e servizi per migliorare la trovabilità di informazioni di utilità pubblica da parte dei cittadini.</p>
+  <p>Il kit SEO ha l’obiettivo di fornire suggerimenti operativi su come individuare il livello di visibilità dei contenuti sui motori di ricerca, in relazione a specifici “intenti di ricerca”, così come analizzare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico.</p>"
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -47,8 +48,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Analizza e definisci gli interventi di ottimizzazione
-      text: "<p>Analizza i contenuti del tuo sito e coordina gli interventi di ottimizzazione SEO con il tuo team, definendo le priorità. Puoi personalizzare il foglio di lavoro in base alle tue esigenze, elencando le url del sito (o di una sua sezione) per cui vuoi condurre un audit. Questa risorsa è pensata per aiutarti ad avere una panoramica sullo stato di revisione dei contenuti.</p>
-    "   
+      text: "<p>Analizza i contenuti del tuo sito e coordina gli interventi di ottimizzazione SEO con il tuo team, definendo le priorità. Puoi personalizzare il foglio di lavoro in base alle tue esigenze, elencando le url del sito (o di una sua sezione) per cui vuoi condurre un audit. Questa risorsa è pensata per aiutarti ad avere una panoramica sullo stato di revisione dei contenuti.</p>"   
       img: "/assets/images/diagram_2.svg"
       resources:
         - title: Ottimizzazione SEO

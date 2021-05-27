@@ -11,7 +11,7 @@ kitcategory: comprendere
 
 textChunk1:
   title: A COSA SERVE
-  text: "Il kit di analisi del contesto ti consente di ottenere una visione d’insieme dei fattori e delle variabili che influenzano l'erogazione e la fruizione di un servizio digitale. L’obiettivo è quello di aiutarti a mettere a fuoco gli obiettivi e il perimetro del progetto, attività fondamentale per poi impostare in maniera bilanciata le successive attività di ricerca e di concettualizzazione. Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi ed evolvere."
+  text: "<p>Il kit di analisi del contesto ti consente di ottenere una visione d’insieme dei fattori e delle variabili che influenzano l'erogazione e la fruizione di un servizio digitale. L’obiettivo è quello di aiutarti a mettere a fuoco gli obiettivi e il perimetro del progetto, attività fondamentale per poi impostare in maniera bilanciata le successive attività di ricerca e di concettualizzazione. Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi ed evolvere.</p>"
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
