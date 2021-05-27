@@ -1264,11 +1264,29 @@ html {
 }
 
 @media screen and (max-width:992px) {
+  .faseHead {
+    text-align:center;
+    div {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width:992px) {
   .super-breadcrumb li:not(.active):not(.all) {
     display: none;
   }
   .super-breadcrumb li.active {
     margin: 0px 16px;
+  }
+  .layout-process .super-breadcrumb li:not(.active):not(.all) {
+    display:block;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .layout-process .super-breadcrumb li:not(.active):not(.all) {
+    width:100%;
   }
 }
 
