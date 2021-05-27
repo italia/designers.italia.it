@@ -77,8 +77,8 @@ layout: default
         </div>
         <div class="Accordion fr-accordion js-fr-accordion" id="accordion-{{forloop.index}}">
 
+          <!-- tool header -->
           <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{forloop.index}}">
-
             <div class="Grid Grid--alignCenter Grid--withGutter u-padding-all-s u-md-padding-all-none u-lg-padding-all-none">
               <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-padding-left-l">
                 <img src="{{accordion.img}}">
@@ -90,8 +90,9 @@ layout: default
                 </div>
               </div>
             </div>
-
           </div>
+
+          <!-- tool panel -->
           <div id="accordion-panel-{{forloop.index}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
 
             <div class="Grid Grid--alignCenter Grid--withGutter u-margin-bottom-m">
@@ -103,7 +104,8 @@ layout: default
                             u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
                             u-borderShadow-m u-margin-bottom-xxl u-borderRadius-m
                             u-text-r-xxs" style="border-left: 8px solid #0066CC">
-                  <div class="Grid Grid--alignCenter u-flexAlignItemsCenter">
+                  <!-- main resource item -->
+                  <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
                     <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs">
                       <div class="u-textWeight-600 u-text-r-s u-margin-bottom-xxs">{{resource.title}}</div>
                       <div>{{resource.description}}</div>
@@ -113,8 +115,9 @@ layout: default
                     </div>
                   </div>
                   {% for otherResource in resource.otherResources %}
+                  <!-- secondary resource item -->
                   <hr style="border:none;height:1px;background:#C5C7C9"/>
-                  <div class="Grid Grid--alignCenter u-flexAlignItemsCenter">
+                  <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
                     <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
                       <div>{{otherResource.description}}</div>
                     </div>
