@@ -1,6 +1,6 @@
 ---
 title: Prototipazione
-subtitle: Progetta l'esperienza utente del servizio realizzando un prototipo di interfaccia
+subtitle: "Progetta l'esperienza-utente del servizio realizzando un prototipo di interfaccia"
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato alla prototipazione delle interfacce utente"
@@ -11,7 +11,7 @@ kitcategory: progettare
 
 textChunk1:
   title: A COSA SERVE
-  text: "La fase di prototipazione consente di dare rapidamente forma al punto di contatto digitale di un servizio (o touchpoint) prima della sua realizzazione. Permette di esplorare le funzionalità della soluzione progettata per verificarne le principali funzioni, affinare la progettazione dei contenuti e definire il modello interattivo che caratterizzerà l’esperienza utente. Un prototipo di interfaccia permette infatti di simulare le principali situazioni d’uso del servizio digitale, indirizzando e ottimizzando le scelte per la progettazione di dettaglio.
+  text: "La fase di prototipazione consente di dare rapidamente forma al punto di contatto digitale di un servizio (o <em>touchpoint</em>) prima della sua realizzazione. Permette di esplorare le funzionalità della soluzione progettata per verificarne le principali funzioni, affinare la progettazione dei contenuti e definire il modello interattivo che caratterizzerà l’esperienza-utente. Un prototipo di interfaccia permette infatti di simulare le principali situazioni d’uso del servizio digitale, indirizzando e ottimizzando le scelte per la progettazione di dettaglio.
 In questo kit puoi trovare gli strumenti per costruire e visualizzare i flussi di interazione dell’utente con il servizio futuro e per progettare, sulla base di questi, i wireframe dell’interfaccia."
 
 guideLinesChunk:
@@ -35,9 +35,9 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Definisci i flussi di interazione
-      text: "<p>I flussi di Interazione (o user flow) descrivono nel dettaglio i singoli passaggi - in termini di azioni e scelte - che un utente compie interagendo con un servizio digitale, cercando di raggiungere il suo obiettivo. Sono focalizzati sul sistema e le risposte che questo darà alle azioni dell’utente.
+      text: "<p>I flussi di Interazione (o <em>user flow</em>) descrivono nel dettaglio i singoli passaggi - in termini di azioni e scelte - che un utente compie interagendo con un servizio digitale, cercando di raggiungere il suo obiettivo. Sono focalizzati sul sistema e le risposte che questo darà alle azioni dell’utente.
 </p>
-      <p>Costruire gli user flow ti aiuta a progettare un’interfaccia che sia realmente centrata sull’utente, rende evidenti le possibili complessità di un servizio digitale e supporta nella definizione di soluzioni progettuali.</p>"
+      <p>Costruire gli <em>user flow</em> ti aiuta a progettare un’interfaccia che sia realmente centrata sull’utente, rende evidenti le possibili complessità di un servizio digitale e supporta nella definizione di soluzioni progettuali.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: La costruzione dei flussi di interazione
@@ -60,7 +60,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Realizza un prototipo a bassa fedeltà
-      text: "<p>I wireframe sono rappresentazioni a bassa fedeltà dell’interfaccia utente di un servizio digitale.Ti permettono di impostare la struttura di un’interfaccia collocando blocchi di contenuti, funzionalità e caratteristiche fondamentali di un servizio, individuando anche le modalità attraverso cui l’utente interagisce con i vari elementi.</p>
+      text: "<p>I wireframe sono rappresentazioni a bassa fedeltà dell’interfaccia-utente di un servizio digitale. Ti permettono di impostare la struttura di un’interfaccia collocando blocchi di contenuti, funzionalità e caratteristiche fondamentali di un servizio, individuando anche le modalità attraverso cui l’utente interagisce con i vari elementi.</p>
 <p>Essendo costruiti ad uno stato iniziale della progettazione, senza occuparsi della interfaccia grafica, permettono di verificare rapidamente e a basso costo le caratteristiche di efficienza ed efficacia del servizio digitale. Una volta costruite le varie schermate dell'interfaccia del servizio, potrai definire i comportamenti dei vari oggetti nelle pagine e le relative transizioni, generando un prototipo interattivo che simulerà i flussi di interazione precedentemente definiti. </p>"
       img: "/assets/images/diagram_1.svg"
       resources:
