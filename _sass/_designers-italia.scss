@@ -1182,11 +1182,11 @@ html {
   }
 }
 
-.kitCard {
+.kitCard, .kitResourceItem {
   position:relative;
 }
 
-.kitCard a[href]::after {
+.kitCard a[href]::after, .kitResourceItem a[href]::after {
   content: "";
   display: block;
   position: absolute;
