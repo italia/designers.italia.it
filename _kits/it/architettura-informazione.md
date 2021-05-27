@@ -3,7 +3,7 @@ title: Architettura dell'informazione
 subtitle: Crea e imposta l'interazione con i contenuti di un servizio digitale
 lang: it
 layout: kit
-description: "Un kit di Designers Italia dedicato all'architettura dell'informazione dei servizi digitali."
+description: "Un kit di Designers Italia dedicato all'architettura dell'informazione dei servizi digitali"
 backgroundImage: "/assets/icons/kit/kit_architettura.svg"
 backgroundColor: "#439af1"
 nodate: true

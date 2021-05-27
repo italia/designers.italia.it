@@ -1,6 +1,6 @@
 ---
 title: Interfaccia utente (UI)
-subtitle: Progetta l’interfaccia di un servizio digitale con uno stile grafico semplice e coerente
+subtitle: "Progetta l’interfaccia di un servizio digitale con uno stile grafico semplice e coerente"
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato alla progettazione delle interfacce digitali della Pubblica Amministrazione"
