@@ -4,10 +4,10 @@ subtitle: Ottimizza i contenuti in base ai bisogni e alle priorità che gli uten
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alle buone pratiche di ottimizzazione per gli utenti e i motori di ricerca"
-backgroundImage: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
+backgroundImage: 
 backgroundColor: "#439af1"
 nodate: true
-kitcategory: ideare
+kitcategory: progettare
 
 textChunk1:
   title: A COSA SERVE
@@ -34,7 +34,7 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Pianifica le attività di ottimizzazione
-      text: "<p>Pianifica l’ottimizzazione SEO del tuo sito/servizio: parti da qui per iniziare a programmare gli interventi di ottimizzazione on page, off page e tecnologici. Queste attività sono funzionali a migliorare l’aderenza dei contenuti stessi ai bisogni espressi nelle ricerche.   </p>"
+      text: "<p>Pianifica l’ottimizzazione SEO del tuo sito/servizio: parti da qui per iniziare a programmare gli interventi di ottimizzazione on page, off page e tecnologici. Queste attività sono funzionali a migliorare l’aderenza dei contenuti stessi ai bisogni espressi nelle ricerche.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Checklist SEO
@@ -47,7 +47,8 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Analizza e definisci gli interventi di ottimizzazione
-      text: Analizza i contenuti del tuo sito e coordina gli interventi di ottimizzazione SEO con il tuo team, definendo le priorità. Puoi personalizzare il foglio di lavoro in base alle tue esigenze, elencando le url del sito (o di una sua sezione) per cui vuoi condurre un audit. Questa risorsa è pensata per aiutarti ad avere una panoramica sullo stato di revisione dei contenuti.   
+      text: "<p>Analizza i contenuti del tuo sito e coordina gli interventi di ottimizzazione SEO con il tuo team, definendo le priorità. Puoi personalizzare il foglio di lavoro in base alle tue esigenze, elencando le url del sito (o di una sua sezione) per cui vuoi condurre un audit. Questa risorsa è pensata per aiutarti ad avere una panoramica sullo stato di revisione dei contenuti.</p>
+    "   
       img: "/assets/images/diagram_2.svg"
       resources:
         - title: Ottimizzazione SEO
