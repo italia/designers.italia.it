@@ -113,7 +113,10 @@ layout: default
                       <div>{{resource.description}}</div>
                     </div>
                     <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
-                      {{resource.link}} <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
+                      {{resource.link}}
+                      {% if resource.icon %}
+                        <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
+                      {% endif %}
                     </div>
                   </div>
                   {% for otherResource in resource.otherResources %}
