@@ -11,8 +11,9 @@ kitcategory: progettare
 
 textChunk1:
   title: A COSA SERVE
-  text: "Il modello interattivo che sta alla base di un punto di contatto digitale (o <em>touchpoint</em>) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso. L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un *touchpoint* e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi.
-Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare una architettura dell'informazione che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva."
+  text: "<p>Il modello interattivo che sta alla base di un punto di contatto digitale (o <em>touchpoint</em>) - ad esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso.</p>
+  <p>L’architettura dell’informazione è la struttura che organizza e classifica i contenuti di un *touchpoint* e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di individuare le modalità ed i percorsi che condurranno l’utente a raggiungere i suoi obiettivi.</p>
+  <p>Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare una architettura dell'informazione che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva.</p>"
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -79,7 +80,7 @@ Questo è utile per mettere a fuoco le possibili criticità che l’utente potre
           link: <em>In lavorazione</em>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra." 
+          text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
