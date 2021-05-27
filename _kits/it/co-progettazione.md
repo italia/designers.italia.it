@@ -3,7 +3,7 @@ title: Co-progettazione
 subtitle: Coinvolgi stakeholder e utenti del servizio in una sessione di co-progettazione
 lang: it
 layout: kit
-description: "Un kit di Designers Italia dedicato alla progettazione partecipata di un servizio digitale."
+description: "Un kit di Designers Italia dedicato alla progettazione partecipata di un servizio digitale"
 backgroundImage:
 backgroundColor: "#439af1"
 nodate: true
