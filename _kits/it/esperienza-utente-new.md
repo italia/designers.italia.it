@@ -47,7 +47,7 @@ superAccordion:
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-    - title: Analizza l'esperienza d'uso
+    - title: "Analizza l'esperienza d'uso"
       text: "<p>Analizza l'esperienza dell'utente nelle diverse fasi di fruizione del servizio e le modalità d’interazione. Dettaglia le attività che l'utente svolge, gli attori coinvolti, i canali e touchpoint attraverso cui interagisce con il servizio digitale.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:

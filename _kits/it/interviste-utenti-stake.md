@@ -40,7 +40,7 @@ superAccordion:
         - title: Piano di ricerca - interviste
           icon: "/assets/icons/pencil.svg"
           description: Un riepilogo del perimetro della ricerca e della selezione dei partecipanti
-          link: <a href='https://docs.google.com/document/d/1G2aq7tvl8ocvhSsZUJzIENd6s5DreTO7bxQSfAj2PDI/edit?usp=sharing'>Vai alla risorsa</a>
+          link: <a target="_blank" href='https://docs.google.com/document/d/1G2aq7tvl8ocvhSsZUJzIENd6s5DreTO7bxQSfAj2PDI/edit?usp=sharing'>Vai alla risorsa</a>
         - title: Questionario di reclutamento
           icon: "/assets/icons/pencil.svg"
           description: Un set di domande chiuse che permette di profilare e selezionare i partecipanti alle interviste

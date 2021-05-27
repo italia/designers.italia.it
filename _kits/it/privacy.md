@@ -42,7 +42,7 @@ superAccordion:
         - title: "Modello di privacy/cookie policy"
           icon: "/assets/icons/pencil.svg"
           description: Un template per aiutarti nella compilazione di una privacy/cookie policy adeguata per il tuo servizio
-          link: <a href='#'>Vai alla risorsa</a>
+          link: <a target="_blank" href='#'>Vai alla risorsa</a>
         - title: Esempio di testo per cookie bar
           icon: "/assets/icons/pencil.svg"
           description: "Un esempio di..."

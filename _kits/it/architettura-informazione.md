@@ -42,7 +42,7 @@ Questo ti aiuta a mettere a fuoco le possibili criticità che l’utente potrebb
         - title: Scenari d'uso
           icon: "/assets/icons/pencil.svg"
           description: Metti a fuoco il contesto d'uso di un servizio digitale
-          link: <a href='https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing'>Vai alla risorsa</a>
+          link: <a target="_blank" href='https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing'>Vai alla risorsa</a>
           otherResources:
             - description: Esempio di scenario d'uso basato sul modello comuni
               link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' target="_blank">Vai all'esempio</a>
@@ -74,9 +74,9 @@ Questo ti aiuta a mettere a fuoco le possibili criticità che l’utente potrebb
       img: "/assets/images/diagram_3.svg"
       resources:
         - title: Costruzione dell'architettura dell'informazione
-          icon: "/assets/icons/pencil.svg"
+          icon: ""
           description: Uno strumento per aiutarti a costruire l'architettura informativa di un servizio digitale
-          link: <a href='#' target="_blank">in lavorazione...</a>
+          link: <em>In lavorazione</em>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 3
