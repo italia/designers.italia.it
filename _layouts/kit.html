@@ -28,7 +28,7 @@ layout: default
         </div>
       </div>
       <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
-        <img class="u-sizeFull" src="{{ page.backgroundImage }}"/>
+        <img class="u-sizeFull" alt="{{title}}" src="{{ page.backgroundImage }}"/>
       </div>
     </div>
 
@@ -43,7 +43,7 @@ layout: default
       <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
         <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</div>
         <div class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-xxl u-md-margin-right-none u-lg-margin-right-none u-text-r-xxs u-color-grey-ui-kit">
-          {{guideLinesChunk.link}} <img class="u-margin-left-xs" src="/assets/icons/external-link.svg" />
+          {{guideLinesChunk.link}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" />
         </div>
           {% for rightColumnItem in rightColumnItems %}
             {% if forloop.index == 1 %}
@@ -73,7 +73,7 @@ layout: default
 
       <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-m u-margin-top-l u-margin-bottom-l u-posRelative u-borderRadius-l">
         <div class="accordion-expand-button-close" data-accordion-expanded="false">
-          <img src="/assets/images/icons/arrow-down-big.svg">
+          <img alt="" src="/assets/images/icons/arrow-down-big.svg">
         </div>
         <div class="Accordion fr-accordion js-fr-accordion" id="accordion-{{forloop.index}}">
 
@@ -81,10 +81,10 @@ layout: default
           <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{forloop.index}}">
             <div class="Grid Grid--alignCenter Grid--withGutter u-padding-all-s u-md-padding-all-none u-lg-padding-all-none">
               <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-padding-left-l">
-                <img src="{{accordion.img}}">
+                <img alt="{{accordion.title}}" aria-labelledby="toolTitle" src="{{accordion.img}}">
               </div>
               <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10 u-padding-bottom-xl u-padding-top-xl">
-                <h3 class="u-text-h3 u-color-50">{{accordion.title}}</h3>
+                <h3 id="toolTitle" class="u-text-h3 u-color-50">{{accordion.title}}</h3>
                 <div data-accordion-header-text class="accordion-line-clamp u-layout-prose accordion-super-text u-color-grey-ui-kit">
                   {{accordion.text}}
                 </div>
@@ -111,7 +111,7 @@ layout: default
                       <div>{{resource.description}}</div>
                     </div>
                     <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
-                      {{resource.link}} <img class="u-margin-left-xs" src="{{resource.icon}}" />
+                      {{resource.link}} <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
                     </div>
                   </div>
                   {% for otherResource in resource.otherResources %}
@@ -136,7 +136,7 @@ layout: default
                 <div class="Grid Grid--withGutter">
                   {% for item in accordion.footer %}
                     <div class="Grid-cell u-lg-size5of10 u-md-size5of10 u-margin-bottom-l u-flex u-flexAlignItemsStart">
-                      <img src="{{item.icon}}" style="margin: 5px 10px" />
+                      <img alt="" src="{{item.icon}}" style="margin: 5px 10px" />
                       <div>{{item.text}}</div>
                     </div>
                   {% endfor %}
@@ -153,7 +153,7 @@ layout: default
     </div>
     <!-- end tools -->
 
-    <!-- guidelines -->
+    <!-- profile tags -->
     <div class="Grid Grid--alignCenter u-padding-all-l Prose">
       <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
         {% for footerItem in footerItems %}
