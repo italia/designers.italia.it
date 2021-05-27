@@ -28,7 +28,9 @@ layout: default
         </div>
       </div>
       <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+        {% if page.backgroundImage %}
         <img class="u-sizeFull" alt="{{title}}" src="{{ page.backgroundImage }}"/>
+        {% endif %}
       </div>
     </div>
 
