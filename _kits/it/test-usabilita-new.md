@@ -11,8 +11,9 @@ kitcategory: validare
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>I test di usabilità sono delle sessioni di osservazione diretta dell’interazione tra un utente e un servizio digitale. I test vengono svolti assegnando all’utente uno o più attività da svolgere e analizzando il suo comportamento nel portarli a termine. Puoi svolgere dei testi di usabilità con gli utenti durante la fase di sviluppo del servizio digitale, per verificare il loro comportamento e apportare eventuali modifiche in corso d’opera, oppure quando un servizio digitale è già in uso, per capire eventuali problemi di utilizzo e riprogettare di conseguenza alcuni componenti in ottica di miglioramento.</p>
-<p>Questo kit ti fornisce tutti gli strumenti necessari per la preparazione, conduzione e l’analisi dei risultati di un test di usabilità, sulla base di quanto indicato nel Protocollo eGLU.</p>"
+  text: "<p>I test di usabilità sono delle sessioni di osservazione diretta dell’interazione tra un utente e un servizio digitale. I test vengono svolti assegnando all’utente uno o più attività da svolgere e analizzando il suo comportamento nel portarli a termine.</p>
+  <p>Puoi svolgere dei testi di usabilità con gli utenti durante la fase di sviluppo del servizio digitale, per verificare il loro comportamento e apportare eventuali modifiche in corso d’opera, oppure quando un servizio digitale è già in uso, per capire eventuali problemi di utilizzo e riprogettare di conseguenza alcuni componenti in ottica di miglioramento.</p>
+  <p>Questo kit ti fornisce tutti gli strumenti necessari per la preparazione, conduzione e l’analisi dei risultati di un test di usabilità, sulla base di quanto indicato nel Protocollo eGLU.</p>"
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -35,7 +36,8 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Pianifica i test di usabilità
-      text: "<p>Per produrre dei buoni risultati, devi pianificare e organizzare le sessioni di test nel dettaglio, definendo in una fase preliminare il numero e la tipologia di utenti coinvolti, la modalità di svolgimento del test, il metodo di misurazione scelto e i task da verificare. Prima di iniziare a coinvolgere i partecipanti definisci un piano di massima per assicurarti di andare nella giusta direzione durante le sessioni, e poter elaborare risultati utili all’obiettivo della ricerca.</p>"
+      text: "<p>Per produrre dei buoni risultati, devi pianificare e organizzare le sessioni di test nel dettaglio, definendo in una fase preliminare il numero e la tipologia di utenti coinvolti, la modalità di svolgimento del test, il metodo di misurazione scelto e i task da verificare.</p>
+      <p>Prima di iniziare a coinvolgere i partecipanti definisci un piano di massima per assicurarti di andare nella giusta direzione durante le sessioni, e poter elaborare risultati utili all’obiettivo della ricerca.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Guida alla conduzione dei test di usabilità
@@ -52,8 +54,8 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Prepara le attività da seguire e conduci i test
-      text: "Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande.</p>
-      <p>La registrazione dei risultati di ciascuna sessione, debitamente anonimizzati, è necessaria per redigere un report finale dell’attività, ovvero un documento che mette in luce gli aspetti funzionanti e/o critici dell’esperienza d’uso attuale sulla base dei dati raccolti."
+      text: "<p>Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande.</p>
+      <p>La registrazione dei risultati di ciascuna sessione, debitamente anonimizzati, è necessaria per redigere un report finale dell’attività, ovvero un documento che mette in luce gli aspetti funzionanti e/o critici dell’esperienza d’uso attuale sulla base dei dati raccolti.</p>"
       img: "/assets/images/diagram_2.svg"
       resources:
         - title: Guida alla conduzione del test
@@ -82,8 +84,8 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Rielabora e condividi i risultati
-      text: "Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
-      <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc."
+      text: "<p>Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
+      <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc.</p>"
       img: "/assets/images/diagram_3.svg"
       resources:
         - title: Tabella dei risultati
