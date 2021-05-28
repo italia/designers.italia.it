@@ -8,6 +8,8 @@ backgroundImage: "/assets/icons/kit/kit_interviste.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
+redirect_from:
+  - /kit/user-interviews
 
 textChunk1:
   title: A COSA SERVE

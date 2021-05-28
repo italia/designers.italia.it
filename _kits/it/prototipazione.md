@@ -8,6 +8,8 @@ backgroundImage: "/assets/icons/kit/kit_prototipazione.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
+redirect_from:
+  - /kit/wireframe-kit
 
 textChunk1:
   title: A COSA SERVE

@@ -8,6 +8,8 @@ backgroundImage:
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
+redirect_from:
+  - /kit/co-design-workshop
 
 textChunk1:
   title: A COSA SERVE

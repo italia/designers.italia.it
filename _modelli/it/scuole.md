@@ -84,5 +84,4 @@ La realizzazione di un sito aderente a questo modello richiede in genere un’at
 
 Altri contenuti, come documenti e notizie, possono essere migrati dal sito precedente verso il nuovo sito che si sta realizzando.
 
-La mappatura dei contenuti esistenti, la scrittura e la riscrittura dei contenuti e il cambiamento dei dati inseriti può essere realizzata utilizzando metodi e strumenti previsti dal [Content kit]({% link _kits/it/content-kit.md %}).
-
+La mappatura dei contenuti esistenti, la scrittura e la riscrittura dei contenuti e il cambiamento dei dati inseriti può essere realizzata utilizzando metodi e strumenti previsti kit [Contenuti e linguaggio]({% link _kits/it/contenuti-linguaggio.md %}).

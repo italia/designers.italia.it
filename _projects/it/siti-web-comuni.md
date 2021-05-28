@@ -20,7 +20,7 @@ Designers Italia, la community di design dei servizi pubblici ideata dal [Team p
 [Leggi il post di presentazione del progetto su Medium.](https://medium.com/team-per-la-trasformazione-digitale/modello-standard-sito-web-comuni-design-prototipo-mobile-first-open-source-organizzazione-contenuti-38b330e695a1){:target="_blank" rel="noopener noreferrer"}
 
 Qui è disponibile il risultato finale del progetto:
-[il kit per creare il sito di un comune]({% link _kits/it/comuni.md %})
+[il modello per creare il sito di un comune]({% link _modelli/it/comuni.md %})
 
 ### Obiettivi
 
@@ -28,7 +28,7 @@ Il modello propone uno standard a tutti i comuni che vogliono rendere più sempl
 
 ### Il modello
 
-Il progetto ha raggiunto un traguardo importante a fine 2019 e i materiali (risultati della ricerca, architettura informazione e template HTML pronto all’uso) sono disponibili nel [kit per i comuni]({% link _kits/it/comuni.md %}) e nel [sito web dedicato al progetto](https://italia.github.io/design-comuni-prototipi/){:target="_blank"}.
+Il progetto ha raggiunto un traguardo importante a fine 2019 e i materiali (risultati della ricerca, architettura informazione e template HTML pronto all’uso) sono disponibili nel [modello per i comuni]({% link _modelli/it/comuni.md %}) e nel [sito web dedicato al progetto](https://italia.github.io/design-comuni-prototipi/){:target="_blank"}.
 
 I risultati delle attività di ricerca sono discussi in dettaglio nella [Documentazione del progetto su Docs Italia](https://docs.italia.it/italia/designers-italia/design-comuni-docs){:target="_blank"}.
 

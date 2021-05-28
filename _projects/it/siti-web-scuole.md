@@ -28,7 +28,7 @@ Le scuole risparmieranno tempo e risorse, potranno utilizzare il modello per off
 
 ### Il modello
 
-Il progetto ha raggiunto un traguardo importante a fine 2019 e i materiali (template, architettura informazione e un tema WordPress pronto all’uso) sono disponibili nel [kit per le scuole]({% link _kits/it/scuole.md %}).
+Il progetto ha raggiunto un traguardo importante a fine 2019 e i materiali (template, architettura informazione e un tema WordPress pronto all’uso) sono disponibili nel [modello per le scuole]({% link _modelli/it/scuole.md %}).
 
 I risultati delle attività di ricerca sono discussi in dettaglio nella [documentazione del progetto su Docs Italia](https://docs.italia.it/italia/designers-italia/design-scuole-docs/){:target="_blank"}.
 

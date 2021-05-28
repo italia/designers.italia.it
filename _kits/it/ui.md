@@ -8,6 +8,8 @@ backgroundImage:
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare
+redirect_from:
+  - /kit/ui-kit
 
 images:
 - img: '/assets/images/kits/images/placeholder.png'

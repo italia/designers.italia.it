@@ -8,6 +8,8 @@ backgroundImage: "/assets/icons/kit/kit_linguaggio.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
+redirect_from:
+  - /kit/content-kit
 
 textChunk1:
   title: A COSA SERVE

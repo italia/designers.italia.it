@@ -8,6 +8,8 @@ backgroundImage: "/assets/icons/kit/kit_architettura.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
+redirect_from:
+  - /kit/information-architecture
 
 textChunk1:
   title: A COSA SERVE
@@ -77,7 +79,7 @@ superAccordion:
       img: "/assets/images/diagram_3.svg"
       resources:
         - title: Costruzione dell'architettura dell'informazione
-          icon: 
+          icon:
           description: Uno strumento per aiutarti a costruire l'architettura dell'informazione di un servizio digitale
           link: <em>In lavorazione</em>
       footer:

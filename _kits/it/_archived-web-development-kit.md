@@ -14,9 +14,6 @@ tags:
   - usability
   - bootstrap
   - react
-redirect_from:
-  - /kit/web-toolkit
-  - /web-toolkit
 
 guidelines:
 - Layout
