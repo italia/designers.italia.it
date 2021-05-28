@@ -8,6 +8,8 @@ backgroundImage: "/assets/icons/kit/kit_testusability.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: validare
+redirect_from:
+  - /kit/usability-test
 
 textChunk1:
   title: A COSA SERVE

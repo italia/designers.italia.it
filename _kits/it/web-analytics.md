@@ -8,6 +8,8 @@ backgroundImage: "/assets/icons/kit/kit_analytics.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: validare
+redirect_from:
+  - /kit/analytics
 
 textChunk1:
   title: A COSA SERVE

@@ -8,6 +8,8 @@ backgroundImage: "/assets/icons/kit/kit_contesto.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
+redirect_from:
+  - /kit/ecosystem-map
 
 textChunk1:
   title: A COSA SERVE

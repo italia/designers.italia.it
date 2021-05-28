@@ -8,6 +8,9 @@ backgroundImage:
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare
+redirect_from:
+  - /kit/web-toolkit
+  - /web-toolkit
 
 textChunk1:
   title: A COSA SERVE

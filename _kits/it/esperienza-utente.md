@@ -8,6 +8,9 @@ backgroundImage: "/assets/icons/kit/kit_esperienza.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
+redirect_from:
+  - /kit/user-stories
+  - /kit/user-journey
 
 textChunk1:
   title: A COSA SERVE
