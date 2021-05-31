@@ -4,7 +4,7 @@ subtitle: Definisci la percezione e l'esperienza dell'utente (UX) di un servizio
 lang: it
 layout: kit
 description: "Un kit di service design di Designers Italia che ti aiuta a definire l'esperienza d'uso di un servizio digitale"
-backgroundImage: "/assets/icons/kit/kit_esperienza.svg"
+backgroundImage: "/assets/icons/kit/kit_esperienzautente.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
@@ -40,7 +40,7 @@ superAccordion:
     - title: Definisci gli utenti tipo del servizio
       text: "<p>Identifica i profili degli utenti tipo del servizio dettagliando le loro caratteristiche rispetto all'uso del servizio e dei canali digitali, facendo emergere le loro esigenze e difficoltà rispetto all'esperienza attuale. </p>
       <p>Lo strumento dedicato ti aiuta a narrare la loro situazione e il motivo che li spinge ad approcciarsi al servizio, descrivendoli in termini di comportamenti e preferenze rispetto alla fruizione del servizio e dei suoi touchpoint digitali.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_esperienzautente_personas.svg"
       resources:
         - title: Modello personas
           icon: "/assets/icons/pencil.svg"
@@ -53,7 +53,7 @@ superAccordion:
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: "Analizza l'esperienza d'uso"
       text: "<p>Analizza l'esperienza dell'utente nelle diverse fasi di fruizione del servizio e le modalità d’interazione. Dettaglia le attività che l'utente svolge, gli attori coinvolti, i canali e touchpoint attraverso cui interagisce con il servizio digitale.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_esperienzautente_journey.svg"
       resources:
         - title: Schema di user journey
           icon: "/assets/icons/pencil.svg"
