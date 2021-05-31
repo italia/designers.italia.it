@@ -18,6 +18,27 @@ layout: default
 
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
 
+    {% if page.disabled == true %}
+
+        <!-- header kit in lavorazione -->
+        <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+          <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+            <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Kit</div>
+            <h1 class="u-text-h1">{{title}}</h1>
+            <div class="u-text-r-l">
+              {{subtitle}}
+              <p class="u-padding-top-l u-color-50"><strong><em>Kit in lavorazione</em></strong></p>
+            </div>
+          </div>
+          <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+            {% if page.backgroundImage %}
+            <img class="u-sizeFull" alt="{{title}}" src="{{ page.backgroundImage }}"/>
+            {% endif %}
+          </div>
+        </div>
+
+    {% else %}
+
     <!-- header -->
     <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
       <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
@@ -106,20 +127,20 @@ layout: default
                             u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
                             u-borderShadow-m u-margin-bottom-xxl u-borderRadius-m
                             u-text-r-xxs" style="border-left: 8px solid
-                            {% if resource.disabled %} #BEBEBE {% else %} #0066CC {% endif %}
+                            {% if resource.disabled == true %} #BEBEBE {% else %} #0066CC {% endif %}
                             ">
                   <!-- main resource item -->
                   <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
                     <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs"
-                     {% if resource.disabled %} style="opacity:.6" {% endif %}
+                     {% if resource.disabled == true %} style="opacity:.6" {% endif %}
                      >
                       <div class="u-textWeight-600 u-text-r-s u-margin-bottom-xxs">{{resource.title}}</div>
                       <div>{{resource.description}}</div>
                     </div>
                     <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight"
-                    {% if resource.disabled %} style="opacity:.6" {% endif %}
+                    {% if resource.disabled == true %} style="opacity:.6" {% endif %}
                     >
-                      {% if resource.disabled %}
+                      {% if resource.disabled == true %}
                          Risorsa in lavorazione
                       {% else %}
                         {{resource.link}}
@@ -185,6 +206,8 @@ layout: default
         {% endfor %}
       </div>
     </div>
+
+    {% endif %}
 
   </div>
 
