@@ -19,27 +19,27 @@ header:
 fasi:
 - slug: organizzare
   title: Organizzare
-  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
+  subtitle: "Pianifica e coordina l'impostazione di un progetto digitale dal punto di vista gestionale e operativo"
   thumbLarge: '/assets/icons/super_breadcrumb/organizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/organizzare-large.svg'
 - slug: comprendere
   title: Comprendere
-  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"  
+  subtitle: "Acquisisci consapevolezza sul contesto d'uso del servizio grazie ad attività di analisi e ricerca utente"  
   thumbLarge: '/assets/icons/super_breadcrumb/comprendere-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/comprendere-large.svg'
 - slug: progettare
   title: Progettare
-  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
+  subtitle: "Inizia a ideare e prototipare i flussi di interazione fra utente e punto di accesso digitale"
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
 - slug: realizzare
   title: Realizzare
-  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"  
+  subtitle: "Costruisci e sviluppa l'interfaccia utente del servizio digitale"  
   thumbLarge: '/assets/icons/super_breadcrumb/realizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/realizzare-large.svg'
 - slug: validare
   title: Validare
-  subtitle: "Sottotitolo che contestualizzi questa fase, frase chiave contestualizzare in tre righe al massimo deve capirsi"
+  subtitle: "Monitora la soluzione digitale ottenuta e valuta iterativamente le sue performance"
   thumbLarge: '/assets/icons/super_breadcrumb/validare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/validare-large.svg'
 ---
