@@ -38,7 +38,7 @@ superAccordion:
   accordions:
     - title: Individua e ottimizza il linguaggio del touchpoint digitale
       text: "<p>Hai a disposizione diversi strumenti operativi per creare e ottimizzare i contenuti dell'interfaccia digitale di un servizio. In questa sezione trovi le indicazioni per svolgere un workshop finalizzato a coinvolgere utenti e stakeholder nel percorso iniziale di content design e linguaggio di un servizio, un esercizio di editing collaborativo e il riferimento alla Guida alla linguaggio della Pubblica Amministrazione, che ti offre regole, indicazioni e suggerimenti per l'uso del linguaggio a seconda dei vari contesti d'uso del servizio digitale.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_linguaggio_individua.svg"
       resources:
         - title: Workshop sul linguaggio
           icon: "/assets/icons/pencil.svg"
@@ -60,7 +60,7 @@ superAccordion:
     - title: Analizza i contenuti
       text: "<p>L'audit dei contenuti utilizzati in un servizio digitale è un'attività fondamentale per ottimizzare in maniera iterativa e collaborativa la rispondenza di informazioni e contenuti multimediali alle esigenze informative di utenti e stakeholder.</p>
       <p>Puoi usare gli strumenti proposti per impostare un processo di gestione delle risorse e dei flussi di lavoro, sia per attività ordinarie (creazione, revisione, organizzazione, aggiornamento) che per attività straordinarie (traduzione, migrazione).</p>"
-      img: "/assets/images/diagram_2.svg"
+      img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
       resources:
         - title: Modello di analisi dei contenuti
           icon: "/assets/icons/pencil.svg"
@@ -82,7 +82,7 @@ superAccordion:
     - title: Rispetta la privacy quando usi contenuti multimediali
       text: "<p>Quando utilizzi fra i tuoi contenuti immagini o video originali che ritraggono delle persone, devi per legge ottenere il loro consenso all'utilizzo e alla pubblicazione online dei contenuti dove sono ritratti.</p>
       <p>Per raccogliere i consensi puoi utilizzare il modello di liberatoria redatto secondo l'informativa sul trattamento dei dati personali ai sensi dell’art. 13 del Regolamento (UE) 2016/679.</p>"
-      img: "/assets/images/diagram_3.svg"
+      img: "/assets/icons/kit/kit_linguaggio_privacy.svg"
       resources:
         - title: Modello di liberatoria per l'uso di immagini e video
           icon: "/assets/icons/pencil.svg"

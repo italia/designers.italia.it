@@ -4,7 +4,7 @@ subtitle: Identifica i principali elementi che fanno parte dell’erogazione del
 lang: it
 layout: kit
 description: "Un kit di service design di Designers Italia che ti aiuta far emergere i principali elementi che compongono l'erogazione di un servizio"
-backgroundImage: "/assets/icons/kit/kit_contesto.svg"
+backgroundImage: "/assets/icons/kit/kit_analisiContesto.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
@@ -38,7 +38,7 @@ superAccordion:
     - title: Schematizza il contesto d'uso del servizio
       text: "<p>Identifica tutte le figure con cui l’utente si trova a interagire in prima persona, ma anche quelle che, dietro le quinte, consentono l’erogazione del servizio: in questo modo potrai comprendere come il ruolo dei diversi attori ha un impatto sia sul progetto che sull'utente/cittadino.</p>
       <p>Gli strumenti ti aiutano poi a sintetizzare lo stato dell’arte del servizio e approfondire la comprensione dei processi e infrastrutture che lo compongono, schematizzando le transazioni che avvengono tra gli diversi attori e touchpoint coinvolti, anche mettendo in evidenza eventuali inefficienze del sistema.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_analisiContesto_schematizza.svg"
       resources:
         - title: Mappa degli attori
           icon: "/assets/icons/pencil.svg"
