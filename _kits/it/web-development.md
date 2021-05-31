@@ -45,21 +45,21 @@ superAccordion:
         - title: Bootstrap Italia
           icon: "/assets/icons/pencil.svg"
           description: La libreria open source Bootstrap Italia permette di costruire interfacce web inclusive e semplici da mantenere
-          link: <a target="_blank" href='https://italia.github.io/bootstrap-italia/'>Vai alla risorsa</a>
+          link: <a target="_blank" href='https://italia.github.io/bootstrap-italia/' aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
           otherResources:
             - description: Introduzione a Bootstrap Italia
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/' target="_blank">Vai alla risorsa</a>
+              link: <a href='https://italia.github.io/bootstrap-italia/docs/come-iniziare/introduzione/' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
             - description: Esempi di applicazione di Bootstrap
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/esempi/' target="_blank">Vai agli esempi</a>
+              link: <a href='https://italia.github.io/bootstrap-italia/docs/esempi/' target="_blank" aria-label="Vai agli esempi (link esterno)" >Vai agli esempi</a>
             - description: Esempi di progetti basati su Bootstrap
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/progetti/' target="_blank">Vai ai progetti</a>   
+              link: <a href='https://italia.github.io/bootstrap-italia/docs/progetti/' target="_blank" aria-label="Vai ai progetti (link esterno)" >Vai ai progetti</a>   
         - title: React
           icon: "/assets/icons/pencil.svg"
           description: Design React per la Pubblica Amministrazione
-          link: <a href='https://italia.github.io/design-react-kit/' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://italia.github.io/design-react-kit/' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
           otherResources:
             - description: Template React Comuni
-              link: <a href='https://italia.github.io/design-react-kit/?path=/story/introduzione-introduzione-kit-comuni--homepage-template' target="_blank">Vai al template</a>
+              link: <a href='https://italia.github.io/design-react-kit/?path=/story/introduzione-introduzione-kit-comuni--homepage-template' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

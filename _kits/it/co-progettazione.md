@@ -46,11 +46,12 @@ superAccordion:
         - title: Workshop di co-progettazione di un servizio
           icon: "/assets/icons/pencil.svg"
           description: Una guida per pianificare e condurre una sessione di co-progettazione dedicata all’esperienza di un servizio pubblico
-          link: <a href='https://docs.google.com/presentation/d/1dQqoq6hHBaFQ8Elz21tLrldvJJKo_7oC6FrtG3B9B60/edit#slide=id.g351b5d350a_0_0'>Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1dQqoq6hHBaFQ8Elz21tLrldvJJKo_7oC6FrtG3B9B60/edit#slide=id.g351b5d350a_0_0' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         - title: Guida alla sessione di co-progettazione di un servizio
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per pianificare e svolgere collaborativamente una sessione dedicata alla progettazione dell’esperienza un servizio pubblico.
-          link: <a href='#' target="_blank">Vai alla risorsa</a>
+          disabled: true
+          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -64,7 +65,7 @@ superAccordion:
         - title: Guida alla sessione di co-progettazione di un touchpoint digitale
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dedicata ad un touchpoint digitale (sito, app, piattaforma...).
-          link: <a href='https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -78,7 +79,8 @@ superAccordion:
         - title: Guida alla sessione di co-progettazione dei contenuti
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dei contenuti.
-          link: <a href='#' target="_blank">Vai alla risorsa</a>
+          disabled: true
+          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

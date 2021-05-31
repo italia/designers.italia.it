@@ -45,7 +45,7 @@ superAccordion:
         - title: Modello personas
           icon: "/assets/icons/pencil.svg"
           description: Un modello per delineare i profili degli utenti tipo
-          link: <a href='https://docs.google.com/presentation/d/1KB6qaOKfxM0eYS-yYGIKapPshlwI4wKcsr6vprTJ3i4/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1KB6qaOKfxM0eYS-yYGIKapPshlwI4wKcsr6vprTJ3i4/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -58,7 +58,7 @@ superAccordion:
         - title: Schema di user journey
           icon: "/assets/icons/pencil.svg"
           description: Un modello per raccontare l'interazione con il servizio digitale
-          link: <a href='https://docs.google.com/spreadsheets/d/1lMncyfqxV-sIdfGcEyyFk16lIRCbNKD0tlcLVA2rl-M/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/spreadsheets/d/1lMncyfqxV-sIdfGcEyyFk16lIRCbNKD0tlcLVA2rl-M/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

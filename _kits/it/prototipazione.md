@@ -44,17 +44,17 @@ superAccordion:
         - title: La costruzione dei flussi di interazione
           icon: "/assets/icons/pencil.svg"
           description: Inizia a progettare un'interfaccia che sia basata sui percorsi che l'utente compie per raggiungere i suoi obiettivi
-          link: <a href='https://docs.google.com/spreadsheets/d/19u8t0EuGCck3yNS12F4V9IjuwETJhVXOB_PvPpGSTnU/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/spreadsheets/d/19u8t0EuGCck3yNS12F4V9IjuwETJhVXOB_PvPpGSTnU/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
           otherResources:
             - description: Esempio di costruzione dei flussi
-              link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank">Vai all'esempio</a>
+              link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
         - title: La visualizzazione dei flussi di interazione
           icon: "/assets/icons/pencil.svg"
           description: Realizza uno schema visuale dei flussi che ti aiuterà a definire i percorsi possibili e sarà una guida preziosa per impostare poi la fase di wireframing
-          link: <a href='https://docs.google.com/presentation/d/1qzEtt75yfSaQihD6jy0WGElrvQeyp37MCgJuqEG8Q_U/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1qzEtt75yfSaQihD6jy0WGElrvQeyp37MCgJuqEG8Q_U/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
           otherResources:
             - description: Esempio di visualizzazione dei flussi
-              link: <a href='https://drive.google.com/file/d/1eeFE81ReRPkeBTQ4KlW2mwqDDjI0SylU/view?usp=sharing' target="_blank">Vai all'esempio</a>
+              link: <a href='https://drive.google.com/file/d/1eeFE81ReRPkeBTQ4KlW2mwqDDjI0SylU/view?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)" >Vai all'esempio</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -68,11 +68,11 @@ superAccordion:
         - title: Wireframe kit
           icon: "/assets/icons/pencil.svg"
           description: Una libreria di elementi utili per costruire un prototipo in bassa definizione delle schermate dell’interfaccia di un servizio
-          link: <a href='https://github.com/italia/design-wireframe-kit' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://github.com/italia/design-wireframe-kit' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
         - title: Esercizio wireframe di carta
           icon: "/assets/icons/pencil.svg"
           description: Modelli e componenti di interfaccia che puoi essere usati in forma analogica stampando, ritagliando e componendo fra loro i vari elementi
-          link: <a href='https://drive.google.com/file/d/1wdb4JWlcJRYum2LpnllFy2zlxx2EptYx/view' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://drive.google.com/file/d/1wdb4JWlcJRYum2LpnllFy2zlxx2EptYx/view' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
