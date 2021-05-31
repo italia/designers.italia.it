@@ -27,7 +27,7 @@ layout: default
             <h1 class="u-text-h1">{{title}}</h1>
             <div class="u-text-r-l">
               {{subtitle}}
-              <p class="u-padding-top-l u-color-50"><strong><em>Kit in lavorazione</em></strong></p>
+              <p class="u-padding-top-l" style="opacity:.6"><strong><em>Kit in lavorazione</em></strong></p>
             </div>
           </div>
           <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
@@ -212,7 +212,9 @@ layout: default
   </div>
 
   {% if page.tags != nil %}
-    {% include relatedspost.html pagetags=page.tags %}
+      {% if page.disabled != true %}
+        {% include relatedspost.html pagetags=page.tags %}
+      {% endif %}
   {% endif %}
 
 </article>
