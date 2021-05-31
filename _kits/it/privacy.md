@@ -76,6 +76,7 @@ superAccordion:
         - title: Consenso al trattamento dei dati
           icon: "/assets/icons/pencil.svg"
           description: Un modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell'intervista
+          disabled: true
           link: <a href='#' target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"

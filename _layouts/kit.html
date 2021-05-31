@@ -105,17 +105,27 @@ layout: default
                             u-padding-left-s u-padding-right-s
                             u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
                             u-borderShadow-m u-margin-bottom-xxl u-borderRadius-m
-                            u-text-r-xxs" style="border-left: 8px solid #0066CC">
+                            u-text-r-xxs" style="border-left: 8px solid
+                            {% if resource.disabled %} #BEBEBE {% else %} #0066CC {% endif %}
+                            ">
                   <!-- main resource item -->
                   <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
-                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs">
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs"
+                     {% if resource.disabled %} style="opacity:.6" {% endif %}
+                     >
                       <div class="u-textWeight-600 u-text-r-s u-margin-bottom-xxs">{{resource.title}}</div>
                       <div>{{resource.description}}</div>
                     </div>
-                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
-                      {{resource.link}}
-                      {% if resource.icon %}
-                        <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight"
+                    {% if resource.disabled %} style="opacity:.6" {% endif %}
+                    >
+                      {% if resource.disabled %}
+                         Risorsa in lavorazione
+                      {% else %}
+                        {{resource.link}}
+                        {% if resource.icon %}
+                          <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
+                        {% endif %}
                       {% endif %}
                     </div>
                   </div>
