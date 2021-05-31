@@ -43,15 +43,15 @@ superAccordion:
         - title: Workshop sul linguaggio
           icon: "/assets/icons/pencil.svg"
           description: Indicazioni operative per la costruzioni di un workshop dedicato ai contenuti e al linguaggio
-          link: <a href='https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing'>Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
         - title: Guida al linguaggio per la Pubblica Amministrazione
           icon: "/assets/icons/pencil.svg"
           description: La guida operativa per reperire regole, indicazioni e suggerimenti per l'uso del linguaggio in contenuti e servizi della PA
-          link: <a href='https://docs.italia.it/italia/designers-italia/writing-toolkit/' target="_blank">Vai alla guida</a>  
+          link: <a href='https://docs.italia.it/italia/designers-italia/writing-toolkit/' target="_blank" aria-label="Vai alla guida (link esterno)">Vai alla guida</a>  
         - title: Esercizio di editing collaborativo
           icon: "/assets/icons/pencil.svg"
           description: Un esercizio per migliorare i contenuti digitali grazie a un percorso di editing collaborativo
-          link: <a href='https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing' target="_blank">Vai alla risorsa</a>  
+          link: <a href='https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>  
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -65,15 +65,15 @@ superAccordion:
         - title: Modello di analisi dei contenuti
           icon: "/assets/icons/pencil.svg"
           description: Un modello per aiutarti a strutturare un audit dei contenuti e coordinare gli interventi di revisione
-          link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Esercizio di card sorting
           icon: "/assets/icons/pencil.svg"
           description: Uno strumento per definire in maniera collaborativa le funzionalità più importanti di un servizio digitale
-          link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' target="_blank" aria-label="Scarica la risorsa (PDF)">Scarica la risorsa (PDF)</a>
         - title: Esercizio di content journey
           icon: "/assets/icons/pencil.svg"
           description: Un template struttura per comprendere il viaggio dell'utente fra i contenuti del tuo servizio
-          link: <a href='https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -87,10 +87,10 @@ superAccordion:
         - title: Modello di liberatoria per l'uso di immagini e video
           icon: "/assets/icons/pencil.svg"
           description: Un modello per ottenere il consenso all'uso di immagini e video
-          link: <a href='https://docs.google.com/document/d/1hz7dNa2eKU1atAr3dzgyZH0W2kETBuDBejk62wEVPL4/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1hz7dNa2eKU1atAr3dzgyZH0W2kETBuDBejk62wEVPL4/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+          text: Le risorse sono collegamenti esterni che si aprono in una nuova finestra o file PDF da scaricare.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 

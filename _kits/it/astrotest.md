@@ -42,11 +42,11 @@ superAccordion:
         - title: Mappa degli attori
           icon: "/assets/icons/pencil.svg"
           description: Uno schema che rappresenta la rete di relazioni tra l’utente e gli altri attori del contesto
-          link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing'  target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         - title: Mappa dell'ecosistema
           icon: "/assets/icons/pencil.svg"
           description: Un diagramma che schematizza le relazioni e transazioni tra gli elementi coinvolti nel servizio pubblico
-          link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing'  target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

@@ -30,7 +30,7 @@ footerItems:
   - title: PROFESSIONALITÀ
     items:
       - Service designer
-      - Esperto UX 
+      - Esperto UX
       - Content designer
 
 superAccordion:
@@ -44,11 +44,11 @@ superAccordion:
         - title: Piano di ricerca - interviste
           icon: "/assets/icons/pencil.svg"
           description: Un riepilogo del perimetro della ricerca e della selezione dei partecipanti
-          link: <a target="_blank" href='https://docs.google.com/document/d/1G2aq7tvl8ocvhSsZUJzIENd6s5DreTO7bxQSfAj2PDI/edit?usp=sharing'>Vai alla risorsa</a>
+          link: <a target="_blank" href='https://docs.google.com/document/d/1G2aq7tvl8ocvhSsZUJzIENd6s5DreTO7bxQSfAj2PDI/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Questionario di reclutamento
           icon: "/assets/icons/pencil.svg"
           description: Un set di domande chiuse che permette di profilare e selezionare i partecipanti alle interviste
-          link: <a href='https://docs.google.com/document/d/1NJgv3kgo9YUxAaHLzkMFxWUKbewS8VSijoLNcDh1vcQ/edit#' target="_blank">Vai alla risorsa</a>  
+          link: <a href='https://docs.google.com/document/d/1NJgv3kgo9YUxAaHLzkMFxWUKbewS8VSijoLNcDh1vcQ/edit#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>  
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -62,15 +62,16 @@ superAccordion:
         - title: Guida alla conduzione strutturata
           icon: "/assets/icons/pencil.svg"
           description: Un protocollo che contiene le istruzioni e le domande aperte da chiedere durante l'intervista
-          link: <a href='https://docs.google.com/document/d/1OSrigFaonmGj_3t-OvNZ2uuA-RIpnjGLv2dNkwexI5E/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1OSrigFaonmGj_3t-OvNZ2uuA-RIpnjGLv2dNkwexI5E/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Guida alla conduzione semi strutturata
           icon: "/assets/icons/pencil.svg"
           description: Un protocollo che contiene le istruzioni e i temi chiave da trattare durante l'intervista
-          link: <a href='https://docs.google.com/document/d/1hbhSSgiXpmN8TrrJIeXhFvER08ZSpY9RiAp1n-NsAB0/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1hbhSSgiXpmN8TrrJIeXhFvER08ZSpY9RiAp1n-NsAB0/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Consenso al trattamento dei dati
           icon: "/assets/icons/pencil.svg"
           description: Un modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell'intervista
-          link: <a href='#' target="_blank">Vai alla risorsa</a>
+          disabled: true
+          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -84,15 +85,15 @@ superAccordion:
         - title: Tabella di analisi dei risultati
           icon: "/assets/icons/pencil.svg"
           description: Alcuni fogli di lavoro dove riportare le evidenze delle interviste per elaborare le conclusioni
-          link: <a href='https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Presentazione dei risultati delle interviste
           icon: "/assets/icons/pencil.svg"
           description: Un modello di presentazione strutturato per inserire i risultati delle interviste
-          link: <a href='https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Relazione delle conclusioni della ricerca
           icon: "/assets/icons/pencil.svg"
           description: Un modello di struttura per la relazione di sintesi dei risultati delle interviste
-          link: <a href='https://docs.google.com/document/d/1ufkimx2_10Qe4APacfcI6vjoPbMpPwltC2-2MUpUckA/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1ufkimx2_10Qe4APacfcI6vjoPbMpPwltC2-2MUpUckA/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

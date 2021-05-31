@@ -45,10 +45,10 @@ superAccordion:
         - title: Scenari d'uso
           icon: "/assets/icons/pencil.svg"
           description: Metti a fuoco il contesto d'uso di un servizio digitale
-          link: <a target="_blank" href='https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing'>Vai alla risorsa</a>
+          link: <a target="_blank" href='https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
           otherResources:
             - description: Esempio di scenario d'uso basato sul modello comuni
-              link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' target="_blank">Vai all'esempio</a>
+              link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra accordion 1.
@@ -63,12 +63,12 @@ superAccordion:
         - title: Card sorting
           icon: "/assets/icons/pencil.svg"
           description: Organizza contenuti e funzioni del servizio digitale
-          link: <a href='https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           otherResources:
             - description: Esempio di card sorting
-              link: <a href='https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing' target="_blank">Vai all'esempio</a>
+              link: <a href='https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing' aria-label="Vai all'esempio (link esterno)" target="_blank">Vai all'esempio</a>
             - description: Card sorting (versione stampabile)
-              link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' target="_blank">Vai alla risorsa</a>
+              link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' aria-label="Scarica la risorsa (PDF)"  target="_blank">Scarica la risorsa (PDF)</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. accordion 2
@@ -81,7 +81,8 @@ superAccordion:
         - title: Costruzione dell'architettura dell'informazione
           icon:
           description: Uno strumento per aiutarti a costruire l'architettura dell'informazione di un servizio digitale
-          link: <em>In lavorazione</em>
+          disabled: true
+          link: <a href='#' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."

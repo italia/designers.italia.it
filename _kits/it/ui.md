@@ -22,7 +22,7 @@ images:
 textChunk1:
   title: A COSA SERVE
   text: "<p>ll kit dedicato alle interfacce utente ti offre un insieme di componenti visivi già pronti per assemblare il front-end di siti web e applicazioni.</p>
-  <p>Il kit consiste in una serie di simboli realizzati con la libreria Sketch, ovvero porzioni pre-lavorate finalizzate alla progettazione di un’interfaccia digitale con uno stile visivo definito e coerente. I simboli ti consentono di costruire un prototipo con le varie schermate necessarie, che possono poi essere rese interattive -  e gestite in maniera collaborativa nell’ambito di un team di lavoro - su Invision.</p>"
+  <p>Il kit consiste in una serie di simboli realizzati con la libreria Sketch, ovvero porzioni pre-lavorate finalizzate alla progettazione di un’interfaccia digitale con uno stile visivo definito e coerente. I simboli ti consentono di costruire un prototipo con le varie schermate necessarie, che possono poi essere rese interattive — e gestite in maniera collaborativa nell’ambito di un team di lavoro — per es. su Invision.</p>"
 
 guideLinesChunk:
   title: LINEE GUIDA DI RIFERIMENTO
@@ -52,7 +52,7 @@ superAccordion:
         - title: Design UI kit
           icon: "/assets/icons/pencil.svg"
           description: Componenti e template ufficiali del design system di Designers Italia
-          link: <a href='https://github.com/italia/design-ui-kit' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://github.com/italia/design-ui-kit' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

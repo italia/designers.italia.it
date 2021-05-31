@@ -38,19 +38,18 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Usa Web Analytics Italia
-      text: "<p>La piattaforma Web Analytics Italia lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus.</p>
-      <p>Duis nibh phasellus tincidunt. Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque,ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.</p>"
+      text: "<p>La piattaforma Web Analytics Italia...</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: La piattaforma Web Analytics Italia
           icon: "/assets/icons/pencil.svg"
           description: Un servizio open source dedicato alla raccolta e all'analisi dei dati di traffico dei servizi digitali della PA
-          link: <a href='https://webanalytics.italia.it/'>Vai alla piattaforma WAI</a>
+          link: <a href='https://webanalytics.italia.it/' aria-label="Vai alla piattaforma WAI (link esterno)">Vai alla piattaforma WAI</a>
           otherResources:
             - description: Guida utente WAI
-              link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html' target="_blank">Vai alla risorsa</a>
+              link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
             - description: Istruzioni per creare una dashboard custom su WAI
-              link: <a href='#' target="_blank">Vai alla risorsa</a>
+              link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)"> XXX Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -64,11 +63,11 @@ superAccordion:
         - title: Crea una dashboard con Matomo
           icon: "/assets/icons/pencil.svg"
           description: Una guida per creare una dashboard di dati custom con il software open source Matomo
-          link: <a href='https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Crea una dashboard con Google Analytics
           icon: "/assets/icons/pencil.svg"
           description: Una guida per creare una dashboard di dati custom con Google Analytics
-          link: <a href='https://docs.google.com/document/d/1MEiEDKfxMh7c3-7BKx0WlvgIBRe5gXrFd0LqpVpNAhg/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1MEiEDKfxMh7c3-7BKx0WlvgIBRe5gXrFd0LqpVpNAhg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

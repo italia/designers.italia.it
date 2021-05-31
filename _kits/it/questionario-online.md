@@ -42,11 +42,11 @@ superAccordion:
         - title: Piano di ricerca - questionario
           icon: "/assets/icons/pencil.svg"
           description: Un modulo che spiega le finalità dell'indagine e le modalità di somministrazione
-          link: <a href='https://docs.google.com/document/d/1WpM1qTHUUy8oDbKs_GXXpH6hgKquLrEgfIympfjhbE4/edit' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1WpM1qTHUUy8oDbKs_GXXpH6hgKquLrEgfIympfjhbE4/edit' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Struttura del questionario
           icon: "/assets/icons/pencil.svg"
           description: Una bozza da seguire per impostare il questionario online
-          link: <a href='https://docs.google.com/document/d/1sJVKi9JL2RMGXBporm_zjUXJ-zRjvKSmmKOKWKYDeEY/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1sJVKi9JL2RMGXBporm_zjUXJ-zRjvKSmmKOKWKYDeEY/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -60,7 +60,7 @@ superAccordion:
         - title: Presentazione dei risultati dell'indagine
           icon: "/assets/icons/pencil.svg"
           description: Un modello di presentazione strutturato dove puoi inserire i risultati dell'indagine
-          link: <a href='https://docs.google.com/presentation/d/14kQo0Bx1D6acfakQ2y824GjUySdRBrWwGpJsLhstono/edit?usp=sharing' target="_blank">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/14kQo0Bx1D6acfakQ2y824GjUySdRBrWwGpJsLhstono/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
