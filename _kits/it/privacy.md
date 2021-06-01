@@ -111,8 +111,8 @@ superAccordion:
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
 tags:
-  - navigation-tree
-  - information-architecture
+  - privacy
+  - GDPR
   - human-centered-design
-  - navigation
+  - europe
 ---
