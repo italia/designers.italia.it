@@ -4,8 +4,8 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Progettare, sviluppare ed erogare servizi pubblici digitali"
 subtitle: "Aperte le iscrizioni al corso pilota realizzato insieme a Formez e AgID"
-asset: 
-date: 2021-06-01 10:00:00 +0200
+asset:
+date: 2021-06-01 08:00:00 +0200
 pinned: true
 nodate: false
 homeBottomLink: false
@@ -18,15 +18,15 @@ categories:
 ---
 
 <!-- MORE -->
-È aperto a 100 partecipanti il corso pilota sulla progettazione e lo sviluppo di servizi digitali per i cittadini, ideato e promosso dal Dipartimento per la trasformazione digitale, AgID e Formez PA. 
+È aperto a 100 partecipanti il corso pilota sulla progettazione e lo sviluppo di servizi digitali per i cittadini, ideato e promosso dal Dipartimento per la trasformazione digitale, AgID e Formez PA.
 
-Il programma **si rivolge ai team multidisciplinari che operano nelle Pubbliche Amministrazioni e nelle loro in house** e fornisce elementi teorici e pratici per una visione complessiva dell’intero processo, evidenziando kit e soluzioni già a disposizione delle PA grazie al lavoro di **Designers Italia** e [Developers Italia](https://developers.italia.it/){:target="_blank" rel="noopener noreferrer"}. Una sessione ad hoc è dedicata alle modalità di accesso e partecipazione alla *community* di scambio di esperienze e buone pratiche. 
+Il programma **si rivolge ai team multidisciplinari che operano nelle Pubbliche Amministrazioni e nelle loro in house** e fornisce elementi teorici e pratici per una visione complessiva dell’intero processo, evidenziando kit e soluzioni già a disposizione delle PA grazie al lavoro di **Designers Italia** e [Developers Italia](https://developers.italia.it/){:target="_blank" rel="noopener noreferrer"}. Una sessione ad hoc è dedicata alle modalità di accesso e partecipazione alla *community* di scambio di esperienze e buone pratiche.
 
 Il corso, disponibile ai primi 100 iscritti, si svolgerà **online dalle ore 14.30 alle ore 16.30** nei giorni:
-* martedì 15 giugno 
+* martedì 15 giugno
 * martedì 22 giugno
 * martedì 6 luglio
-* martedì 13 luglio. 
+* martedì 13 luglio.
 
 Informazioni e registrazioni sul portale [Eventi PA](http://eventipa.formez.it/node/316571){:target="_blank" rel="noopener noreferrer"}: Progettare, sviluppare ed erogare servizi pubblici digitali.
 
