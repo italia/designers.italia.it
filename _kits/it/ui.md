@@ -45,14 +45,22 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Progetta l'interfaccia utente di un servizio digitale
-      text: "<p>Inizia a progettare un’interfaccia digitale: costruisci un prototipo interattivo per declinare il tuo progetto secondo uno stile visivo coerente e tenere conto dell’interazione utente. </p>
-      <p>Questo kit dedicato alle interfacce contiene i file di Sketch necessari da cui partire per la fase di progettazione (grid system, colors, typography, buttons…)e una libreria di icone. Grazie all’interazione con il team di sviluppo, il prototipo che avrai realizzato diventerà il prodotto.</p>"
+      text: "<p>Inizia a progettare un’interfaccia digitale: costruisci un prototipo interattivo per declinare il tuo progetto secondo uno stile visivo coerente e tieni conto dell’interazione utente. </p>
+      <p>Questo kit contiene tutti i componenti visivi dell'interfaccia previsti dal <em>design system</em> e necessari per partire con la fase di realizzazione (griglie <em>responsive</em>, colori, tipografia, bottoni, testate, ...).</p>
+      <p>Il kit è un progetto aperto e in continua evoluzione che permette, — grazie all’interazione con il team di sviluppo e la facile resa in codice con i kit di sviluppo web, in particolare con Boostrap Italia — di progettare e prototipare efficacemente l'interfaccia del touchpoint digitale in realizzazione.</p>"
       img: "/assets/images/diagram_1.svg"
       resources:
         - title: Design UI kit
           icon: "/assets/icons/pencil.svg"
-          description: Componenti e template ufficiali del design system di Designers Italia
+          description: Componenti e template ufficiali del design system della Pubblica Amministrazione italiana
           link: <a href='https://github.com/italia/design-ui-kit' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
+          otherResources:
+            - description: Come iniziare e come contribuire
+              link: <a href='https://github.com/italia/design-ui-kit#blue_book-come-iniziare' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>   
+            - description: Anteprima su Invision
+              link: <a href='https://invis.io/RJFGS2UC3HS' target="_blank" aria-label="Vai all'anteprima (link esterno)" >Vai all'anteprima</a>
+            - description: Anteprima su Figma
+              link: <a href='https://www.figma.com/file/bLexfydXWzF6ACxFokgzXs/italia-UI-Kit-2.0?node-id=0%3A1' target="_blank" aria-label="Vai all'anteprima (link esterno)" >Vai all'anteprima</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -60,8 +68,8 @@ superAccordion:
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
 tags:
-  - navigation-tree
-  - information-architecture
-  - human-centered-design
-  - navigation
+  - user experience
+  - ui kit
+  - usability
+  - service design
 ---
