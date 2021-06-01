@@ -15,7 +15,7 @@ textChunk1:
   <p>Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti informazioni e modelli utili per aiutarti a trattare correttamente i dati personali riferiti ad alcuni dei principali casi d'uso che dovrai gestire progettando e realizzando un servizio digitale.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#'>Service design</a>
 
 rightColumnItems:

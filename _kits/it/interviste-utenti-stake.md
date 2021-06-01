@@ -17,7 +17,7 @@ textChunk1:
   <p>Il kit comprende modelli pre-organizzati per supportare  la pianificazione e lo svolgimento della ricerca, ma anche l’analisi e sintesi dei suoi risultati.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#'>Service design</a>
 
 rightColumnItems:

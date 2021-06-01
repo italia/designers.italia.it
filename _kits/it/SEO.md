@@ -17,7 +17,7 @@ textChunk1:
   <p>Il kit SEO ha l’obiettivo di fornire suggerimenti operativi su come individuare il livello di visibilità dei contenuti sui motori di ricerca, in relazione a specifici “intenti di ricerca”, così come analizzare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#' target="_blank">Search engine optimization</a>
 
 rightColumnItems:

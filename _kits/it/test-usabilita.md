@@ -18,7 +18,7 @@ textChunk1:
   <p>Questo kit ti fornisce tutti gli strumenti necessari per la preparazione, conduzione e l’analisi dei risultati di un test di usabilità, sulla base di quanto indicato nel Protocollo eGLU.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#'>Usabilità</a>
 
 rightColumnItems:

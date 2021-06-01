@@ -18,7 +18,7 @@ textChunk1:
   <p>Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare una architettura dell'informazione che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#' target="_blank">Content design</a>
 
 rightColumnItems:

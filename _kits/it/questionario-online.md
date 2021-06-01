@@ -15,7 +15,7 @@ textChunk1:
   <p>Questo kit dedicato ai questionari comprende modelli pre-organizzati per supportarti nelle attività di pianificazione, esecuzione e analisi della ricerca.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#' target="_blank">Service design</a>
 
 rightColumnItems:

@@ -15,7 +15,7 @@ textChunk1:
   text: "<p>Bla bla lorem ipsum</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#' target="_blank">Quelle lì</a>
 
 rightColumnItems:

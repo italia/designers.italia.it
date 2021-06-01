@@ -18,7 +18,7 @@ textChunk1:
   <p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI).</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#' target="_blank">Web analytics</a>
 
 rightColumnItems:

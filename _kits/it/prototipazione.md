@@ -17,7 +17,7 @@ textChunk1:
   <p>In questo kit puoi trovare gli strumenti per costruire e visualizzare i flussi di interazione dell’utente con il servizio futuro e per progettare, sulla base di questi, i wireframe dell’interfaccia.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#' target="_blank">Prototipazione</a>
 
 rightColumnItems:

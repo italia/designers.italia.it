@@ -18,7 +18,7 @@ textChunk1:
   <p>Le librerie ti forniscono componenti open-source pronti per l’uso: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#' target="_blank">Sviluppo</a>
 
 rightColumnItems:
