@@ -5,7 +5,7 @@ excerpt_separator: <!-- MORE -->
 title: "In consultazione le nuove Linee guida di design per i servizi della PA"
 subtitle: "C’è tempo fino a lunedì 14 giugno per inviare commenti e osservazioni"
 date: 2021-05-12 12:00:00 +0200
-pinned: false
+pinned: true
 nodate: false
 homeBottomLink: false
 homeHideCategories: true
