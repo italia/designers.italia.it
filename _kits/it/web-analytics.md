@@ -39,7 +39,7 @@ superAccordion:
   accordions:
     - title: Usa Web Analytics Italia
       text: "<p>La piattaforma Web Analytics Italia...</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_analytics_usa.svg"
       resources:
         - title: La piattaforma Web Analytics Italia
           icon: "/assets/icons/pencil.svg"
@@ -57,7 +57,7 @@ superAccordion:
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Crea e condividi una dashboard con altre piattaforme
       text: "<p>Costruisci gli scenari d’uso del tuo prodotto...</p>"
-      img: "/assets/images/diagram_2.svg"
+      img: "/assets/icons/kit/kit_analytics_creaDashboards.svg"
       resources:
         - title: Crea una dashboard con Matomo
           icon: "/assets/icons/pencil.svg"

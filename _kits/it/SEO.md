@@ -4,7 +4,7 @@ subtitle: Ottimizza i contenuti in base ai bisogni e alle priorità che gli uten
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alle buone pratiche di ottimizzazione per gli utenti e i motori di ricerca"
-backgroundImage:
+backgroundImage: "/assets/icons/kit/kit_SEO.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
@@ -38,7 +38,7 @@ superAccordion:
   accordions:
     - title: Pianifica le attività di ottimizzazione
       text: "<p>Pianifica l’ottimizzazione SEO del tuo sito/servizio: parti da qui per iniziare a programmare gli interventi di ottimizzazione on page, off page e tecnologici. Queste attività sono funzionali a migliorare l’aderenza dei contenuti stessi ai bisogni espressi nelle ricerche.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_SEO_pianifica.svg"
       resources:
         - title: Checklist SEO
           icon: "/assets/icons/pencil.svg"
@@ -51,7 +51,7 @@ superAccordion:
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Analizza e definisci gli interventi di ottimizzazione
       text: "<p>Analizza i contenuti del tuo sito e coordina gli interventi di ottimizzazione SEO con il tuo team, definendo le priorità. Puoi personalizzare il foglio di lavoro in base alle tue esigenze, elencando le url del sito (o di una sua sezione) per cui vuoi condurre un audit. Questa risorsa è pensata per aiutarti ad avere una panoramica sullo stato di revisione dei contenuti.</p>"   
-      img: "/assets/images/diagram_2.svg"
+      img: "/assets/icons/kit/kit_SEO_interventi.svg"
       resources:
         - title: Ottimizzazione SEO
           icon: "/assets/icons/pencil.svg"

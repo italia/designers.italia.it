@@ -40,7 +40,7 @@ superAccordion:
     - title: Pianifica i test di usabilità
       text: "<p>Per produrre dei buoni risultati, devi pianificare e organizzare le sessioni di test nel dettaglio, definendo in una fase preliminare il numero e la tipologia di utenti coinvolti, la modalità di svolgimento del test, il metodo di misurazione scelto e i task da verificare.</p>
       <p>Prima di iniziare a coinvolgere i partecipanti definisci un piano di massima per assicurarti di andare nella giusta direzione durante le sessioni, e poter elaborare risultati utili all’obiettivo della ricerca.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_testusability_pianifica.svg"
       resources:
         - title: Guida alla conduzione dei test di usabilità
           icon: "/assets/icons/pencil.svg"
@@ -58,7 +58,7 @@ superAccordion:
     - title: Prepara le attività da seguire e conduci i test
       text: "<p>Durante ciascuna sessione, un ricercatore (o facilitatore) affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande.</p>
       <p>La registrazione dei risultati di ciascuna sessione, debitamente anonimizzati, è necessaria per redigere un report finale dell’attività, ovvero un documento che mette in luce gli aspetti funzionanti e/o critici dell’esperienza d’uso attuale sulla base dei dati raccolti.</p>"
-      img: "/assets/images/diagram_2.svg"
+      img: "/assets/icons/kit/kit_testusability_conduci.svg"
       resources:
         - title: Guida alla conduzione del test
           icon: "/assets/icons/pencil.svg"
@@ -91,7 +91,7 @@ superAccordion:
     - title: Rielabora e condividi i risultati
       text: "<p>Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
       <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc.</p>"
-      img: "/assets/images/diagram_3.svg"
+      img: "/assets/icons/kit/kit_testusability_risultati.svg"
       resources:
         - title: Tabella dei risultati
           icon: "/assets/icons/pencil.svg"

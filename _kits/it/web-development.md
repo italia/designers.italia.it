@@ -4,7 +4,7 @@ subtitle: Realizza siti web e servizi digitali in semplicità grazie a codice e 
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato allo sviluppo delle interfacce web"
-backgroundImage:
+backgroundImage: "/assets/icons/kit/kit_webDevelopment.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare
@@ -40,7 +40,7 @@ superAccordion:
     - title: Sviluppa l'interfaccia del tuo progetto web
       text: "<p>Gli strumenti a disposizione per lo sviluppo di interfacce web sono dedicate a diverse tipologie di sviluppatori ed esperienze d’uso. Ogni risorsa si compone di codice HTML, CSS e Javascript, progettati per offrirti un’esperienza creazione di siti, applicazioni web e interfacce più semplice, basata sui princìpi di composizione e riuso di componenti condivisi.</p>
       <p>Bootstrap Italia è il framework di riferimento, costruito sulla libreria Bootstrap 4 e basato sullo UI kit di Designers Italia.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_webDevelopment_sviluppa.svg"
       resources:
         - title: Bootstrap Italia
           icon: "/assets/icons/pencil.svg"

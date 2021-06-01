@@ -4,7 +4,7 @@ subtitle: "Progetta l’interfaccia di un servizio digitale con uno stile grafic
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato alla progettazione delle interfacce digitali della Pubblica Amministrazione"
-backgroundImage:
+backgroundImage: "/assets/icons/kit/kit_UI.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare
@@ -48,7 +48,7 @@ superAccordion:
       text: "<p>Inizia a progettare un’interfaccia digitale: costruisci un prototipo interattivo per declinare il tuo progetto secondo uno stile visivo coerente e tieni conto dell’interazione utente. </p>
       <p>Questo kit contiene tutti i componenti visivi dell'interfaccia previsti dal <em>design system</em> e necessari per partire con la fase di realizzazione (griglie <em>responsive</em>, colori, tipografia, bottoni, testate, ...).</p>
       <p>Il kit è un progetto aperto e in continua evoluzione che permette, — grazie all’interazione con il team di sviluppo e la facile resa in codice con i kit di sviluppo web, in particolare con Boostrap Italia — di progettare e prototipare efficacemente l'interfaccia del touchpoint digitale in realizzazione.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_UI_InterfacciaUtente.svg"
       resources:
         - title: Design UI kit
           icon: "/assets/icons/pencil.svg"
