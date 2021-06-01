@@ -19,7 +19,9 @@ header:
 fasi:
 - slug: organizzare
   title: Organizzare
-  subtitle: "Pianifica e coordina l'impostazione di un progetto digitale dal punto di vista gestionale e operativo"
+  subtitle: "Organizzare il progetto e la sua gestione: attività di pianificazione e coordinamento"
+  description: "<p>L'obiettivo principale di questa fase è impostare l'organizzazione del progetto dal punto di vista gestionale e operativo. Bisogna quindi capire che attività dovranno essere svolte, così da capire le competenze necessarie, allocare correttamente le risorse e stimare adeguatamente i tempi.</p>
+  <p>I kit messi a disposizione in questa fase sono propedeutici alla pianificazione operativa, ma anche alla gestione della privacy, dell’approccio open source e dell’integrazione con le piattaforme abilitanti, per aiutare la PA a definire gli standard di qualità, usabilità e accessibilità da raggiungere e quindi i termini dell’ingaggio del o dei fornitori.</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/organizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/organizzare-large.svg'
 - slug: comprendere
