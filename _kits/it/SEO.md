@@ -56,7 +56,7 @@ superAccordion:
         - title: Ottimizzazione SEO
           icon: "/assets/icons/pencil.svg"
           description: Uno strumento che ti aiuta ad analizzare i contenuti del tuo sito e definire le priorità
-          link: <a href='https://docs.google.com/spreadsheets/d/1bRjLUC3yN1E1c-ZTY1FiI5klX_wkeMWuC9boWXSBbhw/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" ">Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/spreadsheets/d/1bRjLUC3yN1E1c-ZTY1FiI5klX_wkeMWuC9boWXSBbhw/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
