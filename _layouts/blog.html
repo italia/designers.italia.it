@@ -70,7 +70,7 @@ lang: it
       {% assign _url = post.medium_url %}
       {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
       {%- if post.medium_post_id != mediumPostidForHome -%}
-      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
+      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30 u-background-white u-padding-r-all">
         {% include card.html
         date = _date
         author = post.medium_author
