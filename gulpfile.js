@@ -4,6 +4,7 @@ var log = require('fancy-log');
 var fs = require('fs');
 var os = require('os');
 var path = require('path');
+var exec = require('child_process').exec;
 var configFile = path.join(os.homedir(), '.designersitalia_site.json');
 
 var config = {};
@@ -14,19 +15,16 @@ if (fs.existsSync(configFile)) {
   log('No local config found at [' + configFile + ']');
 }
 
-var shell = require('gulp-shell');
 var imagemin = require('gulp-imagemin');
 var minifyHTML = require('gulp-htmlmin');
 var rsync = require('gulp-rsync');
 
 gulp.task('jekyll', function () {
-  return gulp.src('README.md', {
-    read: false
-  })
-    .pipe(shell([
-      'JEKYLL_ENV=production bundle exec jekyll build'
-    ]));
-});
+  return exec('JEKYLL_ENV=production bundle exec jekyll build', function (err, stdout, stderr) {
+    log(stdout);
+    log(stderr);
+  });
+})
 
 gulp.task('optimize-images', function () {
   return gulp.src([
