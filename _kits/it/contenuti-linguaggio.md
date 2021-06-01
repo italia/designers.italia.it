@@ -17,7 +17,7 @@ textChunk1:
   <p>Esempi e  strumenti ti guidano nella buona pratica di utilizzare un approccio condiviso alla creazione e alla gestione dei contenuti testuali e multimediali; la guida al linguaggio della Pubblica Amministrazione ti fornisce indicazioni sull’uso delle parole, sulle regole di scrittura oltre che esempi di tono di voce da utilizzare nei vari contesti d’uso di un touchpoint (punto di accesso) digitale.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#'>Content design</a>
 
 rightColumnItems:

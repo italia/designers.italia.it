@@ -18,7 +18,7 @@ textChunk1:
   <p>Il kit contiene esempi di pianificazione e gestione di sessioni di co-progettazione focalizzate su tre tre casi d'uso: la progettazione di un servizio pubblico, di un touchpoint digitale (sito, app, piattaforma...),contenuti e linguaggio da usare nel servizio digitale. I materiali sono il punto di partenza che puoi elaborare e personalizzare a seconda dei tuoi obiettivi e dell’ambito specifico di intervento.</p>"
 
 guideLinesChunk:
-  title: LINEE GUIDA DI RIFERIMENTO
+  title: GUIDA PRATICA
   link: <a href='#' target="_blank">Service design</a>
 
 rightColumnItems:
