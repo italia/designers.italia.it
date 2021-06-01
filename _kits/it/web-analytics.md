@@ -56,8 +56,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Crea e condividi una dashboard con altre piattaforme
-      text: "<p>Costruisci gli scenari d’uso del tuo prodotto. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed morbi commodo, massa lorem tincidunt in. Enim pulvinar vel lobortis morbi morbi est convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque metus, duis nibh phasellus tincidunt.</p>
-      <p>Diam orci, sit elit sit volutpat facilisi. Pharetra, viverra et viverra bibendum erat vitae integer vehicula enim. Neque, ut tempor integer tortor dui mauris, volutpat. Turpis tellus purus montes, sed euismod integer.</p>"
+      text: "<p>Costruisci gli scenari d’uso del tuo prodotto...</p>"
       img: "/assets/images/diagram_2.svg"
       resources:
         - title: Crea una dashboard con Matomo
