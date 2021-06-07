@@ -4,7 +4,7 @@ subtitle: Coinvolgi stakeholder e utenti del servizio in una sessione di co-prog
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla progettazione partecipata di un servizio digitale"
-backgroundImage:
+backgroundImage: "/assets/icons/kit/kit_coprog.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
@@ -38,10 +38,10 @@ footerItems:
 superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
-    - title: "L'esperienza di un servizio: pianifica e conduci una sessione di co-progettazione."
+    - title: "L'esperienza di un servizio: pianifica e conduci una sessione di co-progettazione"
       text: "<p>Questa risorsa ti aiuta a organizzare un workshop di co-progettazione dedicato all’esperienza di un servizio, sia esso digitale o da riprogettare in chiave digitale. In primo luogo hai bisogno di identificare un obiettivo chiaro e condiviso, per poi definire alcuni aspetti organizzativi/logistici come la data, il luogo e i partecipanti.</p>
       <p>La risorsa ti offre inoltre supporto nella definizione della sessione di lavoro condiviso e prevede una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato atteso. Tra le attività suggerite, l'identificazione degli attori, la mappatura dell’ecosistema e la mappatura della user journey.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_coprog_pianificazione.svg"
       resources:
         - title: Workshop di co-progettazione di un servizio
           icon: "/assets/icons/pencil.svg"
@@ -57,10 +57,10 @@ superAccordion:
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-    - title: "Un touchpoint digitale: pianifica e conduci una sessione di co-progettazione."
+    - title: "Un touchpoint digitale: pianifica e conduci una sessione di co-progettazione"
       text: "<p>Questa risorsa ti aiuta a organizzazione una sessione di co-progettazione di un touchpoint digitale (sito, app, piattaforma...). Ti supporta in particola  nella attività di definizione di un’agenda della sessione di lavoro condiviso e ti propone una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato desiderato.</p>
       </p>I partecipanti potenziali sono: personale della Pubblica Amministrazione, aziende private coinvolte nel progetto, associazioni di categoria interessate, organizzazioni che rappresentano i comuni, organizzazioni che rappresentano i cittadini, utenti del servizio (i cittadini), operatori allo sportello.Tra le attività suggerite troviamo la definizione delle personas, la creazione degli scenari d’uso e definizione dei flussi di interazione.</p>"
-      img: "/assets/images/diagram_2.svg"
+      img: "/assets/icons/kit/kit_coprog_touchpoint.svg"
       resources:
         - title: Guida alla sessione di co-progettazione di un touchpoint digitale
           icon: "/assets/icons/pencil.svg"
@@ -71,10 +71,10 @@ superAccordion:
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-    - title: "I contenuti: pianifica e conduci in una sessione di co-progettazione."
+    - title: "I contenuti: pianifica e conduci in una sessione di co-progettazione"
       text: "<p>Lo strumento ti aiuta nell'organizzazione di una sessione di co-progettazione dedicata al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti. Oltre a indicazioni utili per la costruzione dell'agenda della sessione, trovi suggerimenti e una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi durante la sessione di lavoro condivisa.</p>
       <p>Tra le attività suggerite, la mappatura del content journey, una sessione di generazione di idee e un esercizio di card sorting e naming dei contenuti.</p>"
-      img: "/assets/images/diagram_3.svg"
+      img: "/assets/icons/kit/kit_coprog_contenuti.svg"
       resources:
         - title: Guida alla sessione di co-progettazione dei contenuti
           icon: "/assets/icons/pencil.svg"

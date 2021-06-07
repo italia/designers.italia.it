@@ -4,7 +4,7 @@ subtitle: Rispetta la privacy dei tuoi utenti quando realizzi un servizio digita
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla privacy"
-backgroundImage:
+backgroundImage: "/assets/icons/kit/kit_privacy.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: organizzare
@@ -37,7 +37,7 @@ superAccordion:
     - title: Rispetta la privacy per il go-live di un servizio digitale
       text: "<p>Quando progetti la messa on line di un servizio devi considerare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali (art.4, punto 1 del GDPR). Tra le casistiche più frequenti che richiedono un trattamento di dati personali ti ricordiamo: l’invio di una newsletter, la registrazione/sottoscrizione mediante compilazione di un form, la presenza di una sezione <em>Contatti</em>, la ricezione di candidature, la gestione dei cookie, ecc.</p>
       <p>Ricorda che per ciascuna di queste casistiche, e nel rispetto del principio di minimizzazione, ti è consentito richiedere esclusivamente i dati strettamente necessari all’erogazione del servizio.</p>"
-      img: "/assets/images/diagram_1.svg"
+      img: "/assets/icons/kit/kit_privacy_lancio.svg"
       resources:
         - title: "Modello di privacy/cookie policy"
           icon: "/assets/icons/pencil.svg"
@@ -67,7 +67,7 @@ superAccordion:
     - title: Rispetta la privacy quando coinvolgi gli utenti nella ricerca
       text: "<p>Scegli la tipologia di struttura e scrivi una guida da seguire per mantenere il focus e massimizzare l’utilità della conversazione, defininendo i macro temi da affrontare e le rispettiva domande. Organizza i temi in modo da far emergere il rapporto dell'intervistato con il digitale e con il servizio pubblico, per poi affrontare la sua percezione e le relative esigenze in termini di esperienza d'uso, raccogliendo informazioni sulle aspettative.</p>
       <p>Ricordati di definire a priori il modulo di consenso al trattamento dei dati per garantire la privacy dei partecipanti.</p>"
-      img: "/assets/images/diagram_2.svg"
+      img: "/assets/icons/kit/kit_privacy_utenti.svg"
       resources:
         - title: Guida alla conduzione strutturata
           icon: "/assets/icons/pencil.svg"
@@ -90,7 +90,7 @@ superAccordion:
     - title: Rispetta la privacy quando usi i social network
       text: "<p>Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
       <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc.</p>"
-      img: "/assets/images/diagram_3.svg"
+      img: "/assets/icons/kit/kit_privacy_social.svg"
       resources:
         - title: Tabella di analisi dei risultati
           icon: "/assets/icons/pencil.svg"
