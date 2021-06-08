@@ -78,7 +78,6 @@ superAccordion:
         - title: Guida alla sessione di co-progettazione dei contenuti
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dei contenuti.
-          disabled: true
           link: <a href='https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
