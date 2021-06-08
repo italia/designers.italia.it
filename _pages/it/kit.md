@@ -32,19 +32,19 @@ fasi:
 - slug: progettare
   title: Progettare
   subtitle: "L'interazione con il servizio digitale: inizia a immaginare e prototipare i flussi di interazione fra utente e punto di accesso digitale"
-  description: "<p>Con i kit della fase dedicata alla progettazione inizi a impostare i principali elementi e funzionalità del servizio digitale emersi dalla fase di ricerca utente: dall'architettura dell'informazione al design dei contenuti, fino alla simulazione dell'esperienza utente grazie a un prototipo di interfaccia a bassa fedeltà</p>"
+  description: "<p>Con i kit della fase di progettazione inizi a impostare i principali elementi e funzionalità del servizio digitale emersi dalla ricerca utente: dall'architettura dell'informazione al design dei contenuti, fino alla simulazione dell'esperienza utente grazie a un prototipo di interfaccia a bassa fedeltà</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
 - slug: realizzare
   title: Realizzare
   subtitle: "L'interfaccia utente: costruisci e sviluppa l'interfaccia utente del servizio digitale"  
-  description: "<p>Le risorse di questa fase ti forniscono strumenti operativi per disegnare e sviluppare l'interfaccia di un touchpoint digitale. Hai a disposizione librerie, template e modelli per costruire interfacce digitali con uno stile visivo definito e coerente, oltre che componenti e codice open source di sviluppo</p>"
+  description: "<p>Le risorse di questa fase ti forniscono gli strumenti operativi per disegnare e sviluppare l'interfaccia di un touchpoint digitale. Hai a disposizione librerie, template e modelli per costruire interfacce digitali con uno stile visivo definito e coerente, oltre che componenti e codice open source di sviluppo</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/realizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/realizzare-large.svg'
 - slug: validare
   title: Validare
   subtitle: "La soluzione ottenuta: scopri come monitorare e valutare le performance"
-  description: "<p>La fase di validazione ti consente di migliorare la tua soluzione digitale per iterazioni successive, verificando le performance rispetto a standard condivisi di usabilità e accessibilità. I kit di questa fase ti aiutano a condurre test con gli utenti e a monitorare con la web analytics i principali indicatori di performance di un servizio digitale</p>"
+  description: "<p>Con la fase di validazione ottimizzi la tua soluzione digitale per iterazioni successive, verificando le performance rispetto a standard condivisi di usabilità e accessibilità. I kit di questa fase ti aiutano a condurre test con gli utenti e a monitorare con la web analytics i principali indicatori di performance di un servizio digitale</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/validare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/validare-large.svg'
 ---
