@@ -4,7 +4,8 @@ subtitle: Coinvolgi stakeholder e utenti del servizio in una sessione di co-prog
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla progettazione partecipata di un servizio digitale"
-backgroundImage: "/assets/icons/kit/kit_coprog.svg"
+iconImage: "/assets/icons/kit/kit_coprog.svg"
+image: "/assets/icons/kit/kit_coprog.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
@@ -34,7 +35,7 @@ footerItems:
   - title: PROFESSIONALITÀ
     items:
       - Service designer
-      - Esperto UX 
+      - Esperto UX
       - Content designer
 
 superAccordion:

@@ -4,7 +4,8 @@ subtitle: "Progetta l'esperienza-utente del servizio realizzando un prototipo di
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato alla prototipazione delle interfacce utente"
-backgroundImage: "/assets/icons/kit/kit_prototipazione.svg"
+image: "/assets/icons/kit/kit_prototipazione.svg"
+iconImage: "/assets/icons/kit/kit_prototipazione.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare

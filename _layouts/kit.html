@@ -31,8 +31,8 @@ layout: default
             </div>
           </div>
           <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
-            {% if page.backgroundImage %}
-            <img class="u-sizeFull" alt="{{title}}" src="{{ page.backgroundImage }}"/>
+            {% if page.iconImage %}
+            <img class="u-sizeFull" alt="{{title}}" src="{{ page.iconImage }}"/>
             {% endif %}
           </div>
         </div>
@@ -49,8 +49,8 @@ layout: default
         </div>
       </div>
       <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
-        {% if page.backgroundImage %}
-        <img class="u-sizeFull" alt="{{title}}" src="{{ page.backgroundImage }}"/>
+        {% if page.iconImage %}
+        <img class="u-sizeFull" alt="{{title}}" src="{{ page.iconImage }}"/>
         {% endif %}
       </div>
     </div>
@@ -141,7 +141,7 @@ layout: default
                     {% if resource.disabled == true %} style="opacity:.6" {% endif %}
                     >
                       {% if resource.disabled == true %}
-                         Risorsa in lavorazione
+                         In lavorazione
                       {% else %}
                         {{resource.link}}
                         {% if resource.icon %}

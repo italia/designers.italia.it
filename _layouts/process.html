@@ -74,9 +74,9 @@ layout: default
               {% if item.disabled == true %} style="filter: grayscale(100%); opacity:.6" {% endif %}
               >
                 <div class="u-flexAlignSelfStart u-sizeFull">
-                  {% if item.backgroundImage %}
+                  {% if item.iconImage %}
                     <!-- card img -->
-                    <img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.backgroundImage }}"/>
+                    <img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.iconImage }}"/>
                   {% endif %}
                   <!-- card content -->
                   <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">

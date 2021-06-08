@@ -10,7 +10,7 @@ blueBlock: true
 nodate: true
 
 header:
-  title: "I kit di design"
+  title: "Kit di design"
   description: "Strumenti e attività per sviluppare progetti e punti di accesso digitali dei servizi pubblici: un approccio iterativo in cinque fasi dedicato al design e alla trasformazione digitale"
   links:
     - <a href="#superBreadcrumb">Scopri</a>

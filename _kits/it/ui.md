@@ -4,20 +4,13 @@ subtitle: "Progetta l’interfaccia di un servizio digitale con uno stile grafic
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato alla progettazione delle interfacce digitali della Pubblica Amministrazione"
-backgroundImage: "/assets/icons/kit/kit_UI.svg"
+image: "/assets/icons/kit/kit_UI.svg"
+iconImage: "/assets/icons/kit/kit_UI.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare
 redirect_from:
   - /kit/ui-kit
-
-images:
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
-- img: '/assets/images/kits/images/placeholder.png'
-  caption: Esempio di A/B testing
 
 textChunk1:
   title: A COSA SERVE

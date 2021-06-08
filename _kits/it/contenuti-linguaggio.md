@@ -4,7 +4,8 @@ subtitle: Usa il linguaggio giusto per i tuoi utenti e organizza i contenuti del
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato ai contenuti e al linguaggio di un progetto digitale"
-backgroundImage: "/assets/icons/kit/kit_linguaggio.svg"
+iconImage: "/assets/icons/kit/kit_linguaggio.svg"
+image: "/assets/icons/kit/kit_linguaggio.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare

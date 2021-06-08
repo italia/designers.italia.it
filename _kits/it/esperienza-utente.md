@@ -4,7 +4,8 @@ subtitle: Definisci la percezione e l'esperienza dell'utente (UX) di un servizio
 lang: it
 layout: kit
 description: "Un kit di service design di Designers Italia che ti aiuta a definire l'esperienza d'uso di un servizio digitale"
-backgroundImage: "/assets/icons/kit/kit_esperienzautente.svg"
+image: "/assets/icons/kit/kit_esperienzautente.svg"
+iconImage: "/assets/icons/kit/kit_esperienzautente.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
