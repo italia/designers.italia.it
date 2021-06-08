@@ -32,19 +32,19 @@ fasi:
 - slug: progettare
   title: Progettare
   subtitle: "L'interazione con il servizio digitale: inizia a immaginare e prototipare i flussi di interazione fra utente e punto di accesso digitale"
-  description: "<p>In questa fase l’obiettivo è di mettere a sistema le componenti e le caratteristiche del servizio digitale e dei suoi punti di accesso (touchpoint digitali). Bisogna schematizzare lo scheletro dell’interfaccia informativa e produrre contenuti adatti all’ambito della PA, illustrando poi i flussi di interazione</p>"
+  description: "<p>Con i kit della fase dedicata alla progettazione inizi a impostare i principali elementi e funzionalità del servizio digitale emersi dalla fase di ricerca utente: dall'architettura dell'informazione al design dei contenuti, fino alla simulazione dell'esperienza utente grazie a un prototipo di interfaccia a bassa fedeltà</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
 - slug: realizzare
   title: Realizzare
-  subtitle: "L'interfaccia utente: Costruisci e sviluppa l'interfaccia utente del servizio digitale"  
-  description: "<p>In questa fase il focus è sulla costruzione del touchpoint digitale dove l’utente interagirà con il servizio pubblico. Bisogna letteralmente comporre i blocchi dell’interfaccia utente sia dal punto di vista grafico che a livello di codice</p>"
+  subtitle: "L'interfaccia utente: costruisci e sviluppa l'interfaccia utente del servizio digitale"  
+  description: "<p>Le risorse di questa fase ti forniscono strumenti operativi per disegnare e sviluppare l'interfaccia di un touchpoint digitale. Hai a disposizione librerie, template e modelli per costruire interfacce digitali con uno stile visivo definito e coerente, oltre che componenti e codice open source di sviluppo</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/realizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/realizzare-large.svg'
 - slug: validare
   title: Validare
   subtitle: "La soluzione ottenuta: scopri come monitorare e valutare le performance"
-  description: "<p>Questa fase può essere svolta diverse volte durante il ciclo di vita di un servizio e/o di un touchpoint digitale, con l’obiettivo di e verificarne la performance rispetto a standard di usabilità e accessibilità. Bisogna svolgere test con gli utenti, ma anche monitorare la performance della piattaforma in termini di data analytics</p>"
+  description: "<p>La fase di validazione ti consente di migliorare la tua soluzione digitale per iterazioni successive, verificando le performance rispetto a standard condivisi di usabilità e accessibilità. I kit di questa fase ti aiutano a condurre test con gli utenti e a monitorare con la web analytics i principali indicatori di performance di un servizio digitale</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/validare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/validare-large.svg'
 ---
