@@ -5,7 +5,7 @@ lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato all'architettura dell'informazione dei servizi digitali"
 iconImage: "/assets/icons/kit/kit_architettura.svg"
-image: "/assets/icons/kit/kit_architettura.svg"
+image: "/assets/icons/kit/social-card/kit_architettura.png"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare

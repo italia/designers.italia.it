@@ -4,7 +4,7 @@ subtitle: Identifica i principali elementi che fanno parte dell’erogazione del
 lang: it
 layout: kit
 description: "Un kit di service design di Designers Italia che ti aiuta far emergere i principali elementi che compongono l'erogazione di un servizio"
-image: "/assets/icons/kit/kit_analisiContesto.svg"
+image: "/assets/icons/kit/social-card/kit_analisiContesto.png"
 iconImage: "/assets/icons/kit/kit_analisiContesto.svg"
 backgroundColor: "#439af1"
 nodate: true

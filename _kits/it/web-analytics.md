@@ -4,7 +4,7 @@ subtitle: Osserva i comportamenti degli utenti partendo dai dati di utilizzo del
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla web analytics"
-image: "/assets/icons/kit/kit_analytics.svg"
+image: "/assets/icons/kit/social-card/kit_analytics.png"
 iconImage: "/assets/icons/kit/kit_analytics.svg"
 backgroundColor: "#439af1"
 nodate: true

@@ -4,7 +4,7 @@ subtitle: Ottimizza i contenuti in base ai bisogni e alle priorità che gli uten
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alle buone pratiche di ottimizzazione per gli utenti e i motori di ricerca"
-image: "/assets/icons/kit/kit_SEO.svg"
+image: "/assets/icons/kit/social-card/kit_SEO.png"
 iconImage: "/assets/icons/kit/kit_SEO.svg"
 backgroundColor: "#439af1"
 nodate: true

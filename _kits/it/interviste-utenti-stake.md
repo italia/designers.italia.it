@@ -4,7 +4,7 @@ subtitle: Intraprendi conversazioni costruttive con tutti i soggetti coinvolti n
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alle interviste agli utenti e agli stakeholder del servizio"
-image: "/assets/icons/kit/kit_interviste.svg"
+image: "/assets/icons/kit/social-card/kit_interviste.png"
 iconImage: "/assets/icons/kit/kit_interviste.svg"
 backgroundColor: "#439af1"
 nodate: true

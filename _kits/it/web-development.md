@@ -4,7 +4,7 @@ subtitle: Realizza siti web e servizi digitali in semplicità grazie a codice e 
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato allo sviluppo delle interfacce web"
-image: "/assets/icons/kit/kit_webDevelopment.svg"
+image: "/assets/icons/kit/social-card/kit_webDevelopment.png"
 iconImage: "/assets/icons/kit/kit_webDevelopment.svg"
 backgroundColor: "#439af1"
 nodate: true

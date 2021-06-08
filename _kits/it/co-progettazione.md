@@ -5,7 +5,7 @@ lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla progettazione partecipata di un servizio digitale"
 iconImage: "/assets/icons/kit/kit_coprog.svg"
-image: "/assets/icons/kit/kit_coprog.svg"
+image: "/assets/icons/kit/social-card/kit_coprog.png"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare

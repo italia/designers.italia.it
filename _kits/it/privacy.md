@@ -4,7 +4,7 @@ subtitle: Rispetta la privacy dei tuoi utenti quando realizzi un servizio digita
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla privacy"
-image: "/assets/icons/kit/kit_privacy.svg"
+image: "/assets/icons/kit/social-card/kit_privacy.png"
 iconImage: "/assets/icons/kit/kit_privacy.svg"
 backgroundColor: "#439af1"
 nodate: true

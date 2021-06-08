@@ -4,7 +4,7 @@ subtitle: Rendi più usabile un servizio digitale osservando le interazioni degl
 lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato alla conduzione di test di usabilità di un servizio digitale"
-image: "/assets/icons/kit/kit_testusability.svg"
+image: "/assets/icons/kit/social-card/kit_testusability.png"
 iconImage: "/assets/icons/kit/kit_testusability.svg"
 backgroundColor: "#439af1"
 nodate: true

@@ -4,7 +4,7 @@ subtitle: "Progetta l’interfaccia di un servizio digitale con uno stile grafic
 lang: it
 layout: kit
 description: "Il kit di Designers Italia dedicato alla progettazione delle interfacce digitali della Pubblica Amministrazione"
-image: "/assets/icons/kit/kit_UI.svg"
+image: "/assets/icons/kit/social-card/kit_UI.png"
 iconImage: "/assets/icons/kit/kit_UI.svg"
 backgroundColor: "#439af1"
 nodate: true

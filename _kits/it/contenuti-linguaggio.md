@@ -5,7 +5,7 @@ lang: it
 layout: kit
 description: "Un kit di Designers Italia dedicato ai contenuti e al linguaggio di un progetto digitale"
 iconImage: "/assets/icons/kit/kit_linguaggio.svg"
-image: "/assets/icons/kit/kit_linguaggio.svg"
+image: "/assets/icons/kit/social-card/kit_linguaggio.png"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare

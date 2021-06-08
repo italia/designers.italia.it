@@ -4,7 +4,7 @@ subtitle: Inizia a impostare il lavoro di pianificazione del tuo progetto digita
 lang: it
 layout: kit
 description: "Inizia a impostare il lavoro di pianificazione del tuo progetto digitale dal punto di vista gestionale e organizzativo"
-image: "/assets/icons/kit/kit_analisiContesto.svg"
+image: "/assets/icons/kit/social-card/kit_analisiContesto.png"
 iconImage: "/assets/icons/kit/kit_analisiContesto.svg"
 backgroundColor: "#439af1"
 nodate: true
