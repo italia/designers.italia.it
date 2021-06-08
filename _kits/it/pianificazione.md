@@ -1,6 +1,6 @@
 ---
-title: Astro test kit
-subtitle: In costruzione. Kit finto dove fare prove fino a deploy per vedere sia tutto apposto
+title: Pianificazione
+subtitle: Inizia a impostare il lavoro di pianificazione del tuo progetto digitale dal punto di vista gestionale e organizzativo
 lang: it
 layout: kit
 description: "Bla bla bla lorem ipsum quello lì insomma sì"
