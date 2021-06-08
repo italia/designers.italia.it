@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_testusability.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: validare
+order: 0
 redirect_from:
   - /kit/usability-test
 

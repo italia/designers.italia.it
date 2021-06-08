@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_privacy.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: organizzare
+order: 1
 
 textChunk1:
   title: A COSA SERVE

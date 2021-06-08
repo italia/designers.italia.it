@@ -9,6 +9,7 @@ image: "/assets/icons/kit/social-card/kit_linguaggio.png"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
+order: 2
 redirect_from:
   - /kit/content-kit
 

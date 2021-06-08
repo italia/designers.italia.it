@@ -9,6 +9,7 @@ image: "/assets/icons/kit/social-card/kit_coprog.png"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
+order: 1
 redirect_from:
   - /kit/co-design-workshop
 

@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_interviste.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
+order: 2
 redirect_from:
   - /kit/user-interviews
 

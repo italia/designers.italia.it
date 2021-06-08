@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_analytics.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: validare
+order: 1
 redirect_from:
   - /kit/analytics
 

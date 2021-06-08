@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_UI.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare
+order: 0
 redirect_from:
   - /kit/ui-kit
 

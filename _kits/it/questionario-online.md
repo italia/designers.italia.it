@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_questionario.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
+order: 3
 
 textChunk1:
   title: A COSA SERVE

@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_webDevelopment.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: realizzare
+order: 1
 redirect_from:
   - /kit/web-toolkit
   - /web-toolkit

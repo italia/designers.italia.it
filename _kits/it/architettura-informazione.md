@@ -9,6 +9,7 @@ image: "/assets/icons/kit/social-card/kit_architettura.png"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
+order: 0
 redirect_from:
   - /kit/information-architecture
 

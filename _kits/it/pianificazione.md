@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_analisiContesto.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: organizzare
+order: 0
 disabled: true
 
 textChunk1:

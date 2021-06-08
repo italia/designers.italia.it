@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_esperienzautente.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
+order: 1
 redirect_from:
   - /kit/user-stories
   - /kit/user-journey

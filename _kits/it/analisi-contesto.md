@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_analisiContesto.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comprendere
+order: 0
 redirect_from:
   - /kit/ecosystem-map
 

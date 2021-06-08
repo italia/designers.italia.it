@@ -9,6 +9,7 @@ iconImage: "/assets/icons/kit/kit_SEO.svg"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: progettare
+order: 4
 redirect_from:
   - /kit/SEO
 

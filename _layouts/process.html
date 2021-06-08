@@ -65,7 +65,7 @@ layout: default
         </div>
 
         <!-- kits in fase, grid -->
-        {% assign kits_di_fase = site.kits | where: 'kitcategory', fase.slug | sort: title %}
+        {% assign kits_di_fase = site.kits | where: 'kitcategory', fase.slug | sort: 'order' %}
         <div class="u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill u-margin-bottom-l">
           <!-- single kit card -->
           {%- for item in kits_di_fase  -%}
