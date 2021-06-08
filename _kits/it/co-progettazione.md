@@ -13,7 +13,7 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>La co-progettazione è una tecnica fondamentale per la progettazione di servizi pubblici efficaci: ha l’obiettivo di raccogliere il punto di vista dei diversi attori coinvolti nell’erogazione e fruizione di un servizio, sollevando i problemi chiave e allo stesso tempo accelerando il processo di identificazione delle soluzioni.</p>
+  text: "<p>La co-progettazione è una metodologia fondamentale per la progettazione di servizi pubblici efficaci: ha l’obiettivo di raccogliere il punto di vista dei diversi attori coinvolti nell’erogazione e fruizione di un servizio, sollevando i problemi chiave e allo stesso tempo accelerando il processo di identificazione delle soluzioni.</p>
   <p>Un workshop di co-progettazione è una sessione di lavoro di gruppo, durante la quale diversi soggetti (progettisti, utenti, stakeholder della Pubblica Amministrazione ed eventuali rappresentanti di aziende private) vengono invitati a discutere le criticità esistenti e individuare insieme delle possibili soluzioni progettuali, seguendo un percorso guidato da un facilitatore. L'attività di co-progettazione è preceduta da una serie di attività di ricerca e analisi del contesto, che aiutano a definire l’obiettivo del progetto su cui si sta lavorando e informano la sessione stessa.</p>
   <p>Il kit contiene esempi di pianificazione e gestione di sessioni di co-progettazione focalizzate su tre tre casi d'uso: la progettazione di un servizio pubblico, di un touchpoint digitale (sito, app, piattaforma...),contenuti e linguaggio da usare nel servizio digitale. I materiali sono il punto di partenza che puoi elaborare e personalizzare a seconda dei tuoi obiettivi e dell’ambito specifico di intervento.</p>"
 
@@ -27,13 +27,15 @@ rightColumnItems:
       - <a href='#'>Analisi dell'ecosistema</a>
       - <a href='#'>Esperienza utente</a>
       - <a href='#'>Prototipazione</a>
+      - <a href='#'>Architettura dell'informazione</a>
+      - <a href='#'>Contenuti e linguaggio</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
     items:
-      - Esperto UX
-      - Content designer
       - Service designer
+      - Esperto UX 
+      - Content designer
 
 superAccordion:
   title: ATTIVITÀ E RISORSE
@@ -43,15 +45,10 @@ superAccordion:
       <p>La risorsa ti offre inoltre supporto nella definizione della sessione di lavoro condiviso e prevede una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato atteso. Tra le attività suggerite, l'identificazione degli attori, la mappatura dell’ecosistema e la mappatura della user journey.</p>"
       img: "/assets/icons/kit/kit_coprog_pianificazione.svg"
       resources:
-        - title: Workshop di co-progettazione di un servizio
+        - title: "Guida alla sessione di co-progettazione di un servizio"
           icon: "/assets/icons/pencil.svg"
-          description: Una guida per pianificare e condurre una sessione di co-progettazione dedicata all’esperienza di un servizio pubblico
+          description: "Istruzioni per pianificare e svolgere collaborativamente una sessione dedicata alla progettazione dell’esperienza un servizio pubblico"
           link: <a href='https://docs.google.com/presentation/d/1dQqoq6hHBaFQ8Elz21tLrldvJJKo_7oC6FrtG3B9B60/edit#slide=id.g351b5d350a_0_0' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-        - title: Guida alla sessione di co-progettazione di un servizio
-          icon: "/assets/icons/pencil.svg"
-          description: Istruzioni per pianificare e svolgere collaborativamente una sessione dedicata alla progettazione dell’esperienza un servizio pubblico.
-          disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -64,8 +61,9 @@ superAccordion:
       resources:
         - title: Guida alla sessione di co-progettazione di un touchpoint digitale
           icon: "/assets/icons/pencil.svg"
-          description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dedicata ad un touchpoint digitale (sito, app, piattaforma...).
-          link: <a href='https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dedicata ad un touchpoint digitale (sito, app, piattaforma...)
+          disabled: true
+          link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -80,7 +78,7 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: Istruzioni per pianificare e svolgere collaborativamente una sessione di progettazione dei contenuti.
           disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
