@@ -19,31 +19,31 @@ header:
 fasi:
 - slug: organizzare
   title: Organizzare
-  subtitle: "Il progetto e la sua gestione: attività di pianificazione e coordinamento"
+  subtitle: "Il progetto e la sua gestione: pianifica e coordina l'impostazione del lavoro dal punto di vista gestionale e operativo"
   description: "<p>In questa fase l’obiettivo principale è di impostare il lavoro dal punto di vista amministrativo e organizzativo. Bisogna quindi capire che attività dovranno essere svolte, così da capire le competenze necessarie, allocare correttamente le risorse e stimare adeguatamente i tempi</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/organizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/organizzare-large.svg'
 - slug: comprendere
   title: Comprendere
-  subtitle: "Il contesto d'uso del servizio pubblico: attività di ricerca e analisi"  
+  subtitle: "Il contesto d'uso del servizio: acquisisci consapevolezza sul contesto di fruizione grazie ad attività di analisi e ricerca utente"  
   description: "<p>In questa fase l’obiettivo principale è acquisire consapevolezza del quadro entro cui il progetto si va ad inserire. Bisogna orientarsi rispetto all’esistente, indagare lo stato attuale, da molteplici punti di vista e rispettivamente a diversi livelli di granularità, attraverso svariate metodologie di ricerca e mappatura</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/comprendere-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/comprendere-large.svg'
 - slug: progettare
   title: Progettare
-  subtitle: "L'interazione con il servizio digitale: attività di ideazione e prototipazione"
+  subtitle: "L'interazione con il servizio digitale: inizia a immaginare e prototipare i flussi di interazione fra utente e punto di accesso digitale"
   description: "<p>In questa fase l’obiettivo è di mettere a sistema le componenti e le caratteristiche del servizio digitale e dei suoi punti di accesso (touchpoint digitali). Bisogna schematizzare lo scheletro dell’interfaccia informativa e produrre contenuti adatti all’ambito della PA, illustrando poi i flussi di interazione</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
 - slug: realizzare
   title: Realizzare
-  subtitle: "L'interfaccia utente: attività di costruzione e sviluppo"  
+  subtitle: "L'interfaccia utente: Costruisci e sviluppa l'interfaccia utente del servizio digitale"  
   description: "<p>In questa fase il focus è sulla costruzione del touchpoint digitale dove l’utente interagirà con il servizio pubblico. Bisogna letteralmente comporre i blocchi dell’interfaccia utente sia dal punto di vista grafico che a livello di codice</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/realizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/realizzare-large.svg'
 - slug: validare
   title: Validare
-  subtitle: "La soluzione ottenuta: attività di valutazione e monitoraggio"
+  subtitle: "La soluzione ottenuta: scopri come monitorare e valutare le performance"
   description: "<p>Questa fase può essere svolta diverse volte durante il ciclo di vita di un servizio e/o di un touchpoint digitale, con l’obiettivo di e verificarne la performance rispetto a standard di usabilità e accessibilità. Bisogna svolgere test con gli utenti, ma anche monitorare la performance della piattaforma in termini di data analytics</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/validare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/validare-large.svg'
