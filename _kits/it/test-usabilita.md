@@ -15,8 +15,8 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>I test di usabilità sono delle sessioni di osservazione diretta dell’interazione tra un utente e un servizio digitale. I test vengono svolti assegnando all’utente uno o più attività da svolgere e analizzando il suo comportamento nel portarli a termine.</p>
-  <p>Puoi svolgere dei testi di usabilità con gli utenti durante la fase di sviluppo del servizio digitale, per verificare il loro comportamento e apportare eventuali modifiche in corso d’opera, oppure quando un servizio digitale è già in uso, per capire eventuali problemi di utilizzo e riprogettare di conseguenza alcuni componenti in ottica di miglioramento.</p>
+  text: "<p>I test di usabilità sono delle sessioni di <strong>osservazione diretta dell’interazione tra un utente e un servizio digitale.</strong> I test vengono svolti assegnando all’utente uno o più attività da svolgere e analizzando il suo comportamento nel portarli a termine.</p>
+  <p>Puoi svolgere dei testi di usabilità con gli utenti durante la fase di sviluppo del servizio, per verificare il loro comportamento e apportare eventuali modifiche in corso d’opera, oppure quando un servizio digitale è già in uso, per capire eventuali problemi di utilizzo e riprogettare di conseguenza alcuni componenti in ottica di miglioramento.</p>
   <p>Questo kit ti fornisce tutti gli strumenti necessari per la preparazione, conduzione e l’analisi dei risultati di un test di usabilità, sulla base di quanto indicato nel Protocollo eGLU.</p>"
 
 guideLinesChunk:
@@ -33,8 +33,8 @@ footerItems:
   - title: PROFESSIONALITÀ
     items:
       - UX designer
-      - Service designer
-      - Content designer
+      - UX researcher
+      - UI designer
 
 superAccordion:
   title: ATTIVITÀ E RISORSE
@@ -44,10 +44,11 @@ superAccordion:
       <p>Prima di iniziare a coinvolgere i partecipanti definisci un piano di massima per assicurarti di andare nella giusta direzione durante le sessioni, e poter elaborare risultati utili all’obiettivo della ricerca.</p>"
       img: "/assets/icons/kit/kit_testusability_pianifica.svg"
       resources:
-        - title: Guida alla conduzione dei test di usabilità
+        - title: Guida alla pianificazione dei test di usabilità
           icon: "/assets/icons/pencil.svg"
-          description: Istruzioni per la conduzione dei test basate sugli allegati 2 e 3 del Protocollo eGLU
-          link: <a target="_blank" href='https://docs.google.com/document/d/1kM_3umUUiPp51iTsfsoQKhdV2-FD6bjKKFp17xTB124/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Istruzioni operative per la pianificazione di sessioni di test di usabilità 
+          disabled: true
+          link: <a target="_blank" href='#' aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Scheda partecipanti
           icon: "/assets/icons/pencil.svg"
           description: Un modello di questionario minimo per la raccolta dei dati anagrafici dei tester
@@ -62,29 +63,26 @@ superAccordion:
       <p>La registrazione dei risultati di ciascuna sessione, debitamente anonimizzati, è necessaria per redigere un report finale dell’attività, ovvero un documento che mette in luce gli aspetti funzionanti e/o critici dell’esperienza d’uso attuale sulla base dei dati raccolti.</p>"
       img: "/assets/icons/kit/kit_testusability_conduci.svg"
       resources:
-        - title: Guida alla conduzione del test
+        - title: Guida alla conduzione dei test di usabilità
           icon: "/assets/icons/pencil.svg"
           description: Un protocollo che contiene le istruzioni e le domande aperte da chiedere durante l'intervista
-          link: <a href='https://docs.google.com/document/d/1OSrigFaonmGj_3t-OvNZ2uuA-RIpnjGLv2dNkwexI5E/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1kM_3umUUiPp51iTsfsoQKhdV2-FD6bjKKFp17xTB124/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Liberatoria per la conduzione di un test di usabilità
           icon: "/assets/icons/pencil.svg"
-          description: Un protocollo che contiene le istruzioni e i temi chiave da trattare durante l'intervista
-          link: <a href='https://docs.google.com/document/d/1hbhSSgiXpmN8TrrJIeXhFvER08ZSpY9RiAp1n-NsAB0/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
+          description: Un modello di liberatoria per richiedere il consenso dei partecipanti alla registrazione
+          link: <a href='https://docs.google.com/document/d/1DLGmmkWDJ2fpzEOwZN7JVFHqbK-d118Jy97WU3zjA9M/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
         - title: Net promoter score
           icon: "/assets/icons/pencil.svg"
-          description: Un modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell'intervista
-          disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Un template per il calcolo delle valutazioni dei test basato sul Net Promoter Score
+          link: <a href='https://docs.google.com/document/d/1Hu4jCyXbvE_YeEcXyYufxYJuspQH-artlPIfSzwFWek/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Questionario SUS
           icon: "/assets/icons/pencil.svg"
-          description: Un modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell'intervista
-          disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: "Un template dedicato alla compilazione di un questionario SUS (System Usability Scale)"
+          link: <a href='https://docs.google.com/document/d/1SG7o9W7rWfHRuIomwFJYEi7MDJ-WwdNb314uD5bH8vQ/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Domande UMUX Lite
           icon: "/assets/icons/pencil.svg"
-          description: Un modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell'intervista
-          disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Un modello di valutazione alternativo al questionario SUS
+          link: <a href='https://docs.google.com/document/d/1Ee-ztlsSE4SKZXg4hlyIz-iwxTJyr7P_G06MchnNwvA/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -97,16 +95,16 @@ superAccordion:
       resources:
         - title: Tabella dei risultati
           icon: "/assets/icons/pencil.svg"
-          description: Alcuni fogli di lavoro dove riportare le evidenze delle interviste per elaborare le conclusioni
-          link: <a href='https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Un template dove riportare gli esiti dei task dei partecipanti al test di usabilità
+          link: <a href='https://docs.google.com/document/d/1aJxYnb6f6lLYMqsYEGgZ9d4qTwQbR62mDiSlWpU-9zY/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Report dei risultati
           icon: "/assets/icons/pencil.svg"
-          description: Un modello di presentazione strutturato per inserire i risultati delle interviste
-          link: <a href='https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Indicazioni operative sulla costruzione di un report relativo ai risultati dei test
+          link: <a href='https://docs.google.com/presentation/d/1030GMGiy6SgGBSDfGgvlXr0HblcGlmuku7VkeaPtbfM/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Comunicazione degli esiti dei test di usabilità
           icon: "/assets/icons/pencil.svg"
-          description: Un modello di struttura per la relazione di sintesi dei risultati delle interviste
-          link: <a href='https://docs.google.com/document/d/1ufkimx2_10Qe4APacfcI6vjoPbMpPwltC2-2MUpUckA/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Il form ufficiale dell'Agenzia per l'Italia Digitale dedicato alla comunicazione degli esiti dei test
+          link: <a href='https://form.agid.gov.it/' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
