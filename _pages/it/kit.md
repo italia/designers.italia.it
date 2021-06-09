@@ -20,13 +20,13 @@ fasi:
 - slug: organizzare
   title: Organizzare
   subtitle: "Il progetto e la sua gestione: pianifica e coordina l'impostazione del lavoro dal punto di vista gestionale e operativo"
-  description: "<p>In questa fase l’obiettivo principale è di impostare il lavoro dal punto di vista amministrativo e organizzativo. Bisogna quindi capire che attività dovranno essere svolte, così da capire le competenze necessarie, allocare correttamente le risorse e stimare adeguatamente i tempi</p>"
+  description: "<p>Usa le risorse di questa fase per impostare il lavoro dal punto di vista organizzativo e amministrativo. I kit della fase organizzare hanno l'obiettivo di aiutarti nella pianificazione operativa del progetto digitale, negli aspetti da considerare per adempiere alla normativa privacy vigente, per iniziare a definire le attività e le competenze necessarie allo sviluppo del progetto e per semplificare i processi di ingaggio di eventuali fornitori</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/organizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/organizzare-large.svg'
 - slug: comprendere
   title: Comprendere
   subtitle: "Il contesto d'uso del servizio: acquisisci consapevolezza sul contesto di fruizione grazie ad attività di analisi e ricerca utente"  
-  description: "<p>In questa fase l’obiettivo principale è acquisire consapevolezza del quadro entro cui il progetto si va ad inserire. Bisogna orientarsi rispetto all’esistente, indagare lo stato attuale, da molteplici punti di vista e rispettivamente a diversi livelli di granularità, attraverso svariate metodologie di ricerca e mappatura</p>"
+  description: "<p>Per chiarire il perimetro entro il quale si colloca il servizio digitale, i processi e i ruoli dei diversi attori coinvolti, puoi fare riferimento alle risorse operative di questa fase. I kit ti forniscono strumenti pratici per organizzare varie attività di ricerca utente con l'obiettivo di raccogliere dati utili a comprendere il contesto d'uso del servizio e il punto dei vista dei suoi utilizzatori</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/comprendere-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/comprendere-large.svg'
 - slug: progettare
