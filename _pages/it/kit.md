@@ -20,7 +20,7 @@ fasi:
 - slug: organizzare
   title: Organizzare
   subtitle: "Il progetto e la sua gestione: pianifica e coordina l'impostazione del lavoro dal punto di vista gestionale e operativo"
-  description: "<p>Usa le risorse di questa fase per impostare il lavoro dal punto di vista organizzativo e amministrativo. I kit della fase organizzare hanno l'obiettivo di aiutarti nella pianificazione operativa del progetto digitale, negli aspetti da considerare per adempiere alla normativa privacy vigente, per iniziare a definire le attività e le competenze necessarie allo sviluppo del progetto e per semplificare i processi di ingaggio di eventuali fornitori</p>"
+  description: "<p>Usa le risorse di questa fase per impostare il lavoro dal punto di vista organizzativo e amministrativo. I kit hanno l'obiettivo di aiutarti nella pianificazione operativa del progetto digitale, negli aspetti da considerare per adempiere alla normativa privacy vigente, nel definire le attività e le competenze necessarie allo sviluppo del progetto e per semplificare i processi di ingaggio di eventuali fornitori</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/organizzare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/organizzare-large.svg'
 - slug: comprendere
