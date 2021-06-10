@@ -23,16 +23,13 @@ layout: default
         </div>
       </div>
       <div class="Grid-cell u-md-before1of12 u-lg-before1of12 u-md-size3of12 u-lg-size3of12 u-padding-top-s" style="max-width:360px">
-        <img class="u-sizeFull " alt="Fasi del progetto: organizzare; comprendere; progettare; realizzare; validare." src="{{page.header.image}}"/>
       </div>
     </div>
 
   </div>
 </div>
 
-{% include super_breadcrumb.html kitCategory=null showAll=false %}
-
-<article class="">
+<article id="modelli" class="">
 
     {%- for fase in page.fasi -%}
     <div id="{{ fase.slug }}" class="fase u-padding-top-xxl u-padding-bottom-xxl">
@@ -40,10 +37,7 @@ layout: default
       <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
 
         <!-- fase header -->
-        <div class="Grid Grid--withGutter u-margin-top-l u-padding-top-xxl">
-          <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-textCenter u-padding-bottom-s">
-            <img class="u-sizeFull" style="height:14rem" alt="{{fase.title}}" aria-labelledby="faseTitle" src="{{fase.thumbLarge}}"/>
-          </div>
+        <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
           <div class="faseHead Grid-cell u-lg-size9of12 u-md-size9of12 u-padding-bottom-l">
             <div class="Grid Grid--withGutterM">
               <div class="Grid-cell u-lg-size1of1 u-md-size1of1">
@@ -64,21 +58,21 @@ layout: default
         </div>
 
         <!-- kits in fase, grid -->
-        {% assign kits_di_fase = site.kits | where: 'kitcategory', fase.slug | sort: 'order' %}
-        <div class="u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill u-margin-bottom-l">
+        {% assign kits_di_fase = site.modelli | where: 'kitcategory', fase.slug | sort: 'order' %}
+        <div class="u-margin-top-xl Grid Grid--withGutter Grid--alignCenter Grid--equalHeight Grid--fill u-margin-bottom-l">
           <!-- single kit card -->
           {%- for item in kits_di_fase  -%}
-            <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+            <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of2 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
               <article class="kitCard u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white"
               {% if item.disabled == true %} style="filter: grayscale(100%); opacity:.6" {% endif %}
               >
                 <div class="u-flexAlignSelfStart u-sizeFull">
-                  {% if item.iconImage %}
+                  {% if item.backgroundImage %}
                     <!-- card img -->
-                    <img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.iconImage }}"/>
+                    <img class="u-sizeFull" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.carousel[0].img }}"/>
                   {% endif %}
                   <!-- card content -->
-                  <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">
+                  <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" >
                     <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
                       {% if item.disabled == true %}
                         <span id="kitCardTitle">{{item.title}}</span>
