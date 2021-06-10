@@ -1,6 +1,8 @@
 ---
 title: Kit
 subtitle: Risorse condivise per progettare, realizzare e migliorare i servizi digitali della Pubblica Amministrazione.
+description: "Strumenti e attività per sviluppare progetti e punti di accesso digitali dei servizi pubblici: un approccio iterativo in cinque fasi dedicato al design e alla trasformazione digitale"
+image: '/assets/icons/kit/social-card/kit.png'
 layout: process
 lang: it
 toc: true

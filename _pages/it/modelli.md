@@ -1,6 +1,8 @@
 ---
 title: Modelli
 subtitle: "Tutto per il sito web della tua amministrazione: template pronti per l'uso e un pacchetto di risorse per aiutarti a rispondere ai bisogni dei tuoi utenti."
+description: "Tutto per il sito web della tua amministrazione: template pronti per l'uso e un pacchetto di risorse per aiutarti a rispondere ai bisogni dei tuoi utenti"
+image: '/assets/icons/kit/social-card/modelli.png'
 layout: modellinew
 lang: it
 toc: true
