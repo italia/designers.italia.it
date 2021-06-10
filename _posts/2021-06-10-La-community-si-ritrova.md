@@ -6,7 +6,7 @@ title: "La community si ritrova"
 subtitle: "Ripartono le community call, spazi di confronto e condivisione di idee"
 asset:
 date: 2021-06-10 16:00:00 +0200
-pinned: false
+pinned: true
 nodate: false
 homeBottomLink: false
 homeHideCategories: true
