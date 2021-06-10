@@ -6,7 +6,7 @@ title: "Progettare, sviluppare ed erogare servizi pubblici digitali"
 subtitle: "Aperte le iscrizioni al corso pilota realizzato insieme a Formez e AgID"
 asset:
 date: 2021-06-01 08:00:00 +0200
-pinned: true
+pinned: false
 nodate: false
 homeBottomLink: false
 homeHideCategories: true
