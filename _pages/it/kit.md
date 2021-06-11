@@ -27,13 +27,13 @@ fasi:
   thumbSmall: '/assets/icons/super_breadcrumb/organizzare-large.svg'
 - slug: comprendere
   title: Comprendere
-  subtitle: "Comprendi il contesto d'uso del servizio: chiarisci il contesto di fruizione grazie all'analisi e alla ricerca utente"  
+  subtitle: "Comprendi il contesto d'uso del servizio: chiarisci il contesto di fruizione con l'analisi e la ricerca utente"  
   description: "<p>Per chiarire il perimetro entro il quale si colloca il servizio digitale, i processi e i ruoli dei diversi attori coinvolti, puoi fare riferimento alle risorse operative di questa fase. I kit ti forniscono strumenti pratici per organizzare varie attività di ricerca utente, raccogliere dati utili a comprendere il quadro di utilizzo del servizio e il punto dei vista dei suoi fruitori.</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/comprendere-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/comprendere-large.svg'
 - slug: progettare
   title: Progettare
-  subtitle: "Progetta l'interazione con il servizio: immagina e prototipa i flussi di interazione fra utente e punto di accesso digitale"
+  subtitle: "Progetta l'interazione con il servizio: immagina e prototipa l'interazione fra utente e punto di accesso digitale"
   description: "<p>Con i kit della fase di progettazione inizi a impostare i principali elementi e funzionalità del servizio digitale emersi dalla ricerca utente: dall'architettura dell'informazione al design dei contenuti, fino alla simulazione dell'esperienza utente grazie a un prototipo di interfaccia a bassa fedeltà.</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/progettare-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/progettare-large.svg'
