@@ -79,4 +79,24 @@ $(document).ready(function() {
     // Automatically open the 1st accordion
     // $('[data-accordion-expanded]').first().click();
   }
+
+  // scroll sticky header...
+  const el = document.querySelector(".superSticky");
+  if (el != null) {
+    const observer = new IntersectionObserver(
+      ([e]) => {
+        if (e.intersectionRatio != 0) {
+          if (e.intersectionRatio < 1) {
+            if (e.boundingClientRect.top < 0) { // top intersecting
+              e.target.classList.add("isPinned");
+            }
+          } else { // inside
+            e.target.classList.remove("isPinned");
+          }
+        }
+        //e.target.classList.toggle("isPinned", e.intersectionRatio < 1)
+      }, { threshold: [1] }
+    );
+    observer.observe(el);
+  }
 });

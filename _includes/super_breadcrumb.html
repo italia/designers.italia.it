@@ -1,8 +1,8 @@
 {% assign showAll = include.showAll %}
 {% assign kitCategory = include.kitCategory %}
 
-<div id="superBreadcrumb" class="super-breadcrumb">
-  <div class="u-layout-wide u-layoutCenter u-color-white {% if showAll==false %} u-padding-bottom-s u-padding-top-s {% endif %}">
+<div id="superBreadcrumb" class="super-breadcrumb {% if showAll==false %} superSticky {% endif %}">
+  <div class="u-layout-wide u-layoutCenter u-color-white {% if showAll==false %} u-padding-bottom-xs u-padding-top-xs {% endif %}">
     <nav>
       <ul>
         {% if showAll %}
