@@ -1,5 +1,5 @@
 ---
-title: Web development (sviluppo web)
+title: Sviluppo interfaccia
 subtitle: Realizza siti web e servizi digitali in semplicità grazie a codice e componenti open source di sviluppo
 lang: it
 layout: kit
