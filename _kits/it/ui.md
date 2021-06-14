@@ -1,5 +1,5 @@
 ---
-title: Interfaccia utente (UI)
+title: Progettazione interfaccia 
 subtitle: "Progetta l’interfaccia di un servizio digitale con uno stile grafico semplice e coerente"
 lang: it
 layout: kit
