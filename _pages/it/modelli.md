@@ -15,7 +15,8 @@ header:
   title: "Modelli"
   description: "Tutto per il sito web della tua amministrazione: template pronti per l'uso e un pacchetto di risorse per aiutarti a rispondere ai bisogni dei tuoi utenti"
   links:
-    - <a href="#modelli">Scopri</a>
+    - <a href="#modelli" class="u-color-grey-ui-kit">Scopri</a>
+  image: '/assets/icons/kit/modelli.svg'
 
 fasi:
 - slug: scuole
