@@ -69,7 +69,7 @@ superAccordion:
 
 tags:
   - user-stories
-  - navigation
-  - trello
-  - user-flows
+  - workshop
+  - human-centered-design
+  - teamwork
 ---

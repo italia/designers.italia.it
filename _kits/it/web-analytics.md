@@ -78,6 +78,8 @@ superAccordion:
 tags:
   - web-analytics
   - analytics
-  - human-centered-design
   - data-driven
+  - data-driven-design
+  - human-centered-design
+  - piwik
 ---
