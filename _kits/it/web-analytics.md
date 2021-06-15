@@ -32,8 +32,8 @@ rightColumnItems:
 footerItems:
   - title: PROFESSIONALITÀ
     items:
-      - Service designer
-      - Redattore
+      - Web analytics specialist
+      - Content designer
       - Esperto UX
 
 superAccordion:
@@ -58,7 +58,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Crea e condividi una dashboard con altre piattaforme
-      text: "<p>Costruisci gli scenari d’uso del tuo prodotto...</p>"
+      text: "<p>Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics: potrai visualizzare metriche e dimensioni d'analisi di tuo interesse nello stesso template e popolare i widget con i dati di performance di tuo interesse</p>"
       img: "/assets/icons/kit/kit_analytics_creaDashboards.svg"
       resources:
         - title: Crea una dashboard con Matomo
