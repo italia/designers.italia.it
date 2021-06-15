@@ -13,6 +13,7 @@ order: 1
 redirect_from:
   - /kit/web-toolkit
   - /web-toolkit
+  - /web-development
 
 textChunk1:
   title: A COSA SERVE

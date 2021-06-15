@@ -1,5 +1,5 @@
 ---
-title: Progettazione interfaccia 
+title: Progettazione interfaccia
 subtitle: "Progetta l’interfaccia di un servizio digitale con uno stile grafico semplice e coerente"
 lang: it
 layout: kit
@@ -12,6 +12,7 @@ kitcategory: realizzare
 order: 0
 redirect_from:
   - /kit/ui-kit
+  - /kit/ui
 
 textChunk1:
   title: A COSA SERVE
