@@ -1,11 +1,11 @@
 <section class="HomeBlk2 u-posRelative">
 
   <img alt="" class="u-hidden u-md-inline u-lg-inline" role="presentation"
-       src="{{ '/assets/images/blk2/balloons.svg' | relative_url }}" style="position: absolute; top: 20%; left: 15%">
+       src="{{ '/assets/images/blk2/balloons.svg' | relative_url }}" style="position: absolute; top: 10%; left: 15%">
   <img alt="" class="u-hidden u-md-inline u-lg-inline" role="presentation"
-       src="{{ '/assets/images/blk2/kite.svg' | relative_url }}" style="position: absolute; top: 20%; right: 10%">
+       src="{{ '/assets/images/blk2/kite.svg' | relative_url }}" style="position: absolute; top: 10%; right: 10%">
   <img alt="" class="u-hidden u-md-inline u-lg-inline" role="presentation"
-       src="{{ '/assets/images/blk2/plane.svg' | relative_url }}" style="position: absolute; top: 45%; left: 20%">
+       src="{{ '/assets/images/blk2/plane.svg' | relative_url }}" style="position: absolute; bottom: 15%; left: 30%">
   <img alt="" class="u-hidden u-md-inline u-lg-inline" role="presentation"
        src="{{ '/assets/images/blk2/robot-flying.svg' | relative_url }}" style="position: absolute; bottom: 20%; left: 10%">
   <img alt="" class="u-hidden u-md-inline u-lg-inline" role="presentation"
@@ -19,7 +19,7 @@
         <h2 class="u-text-r-xxl u-textWeight-700 u-padding-r-top">Le notizie</h2>
       </div>
 
-      <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative">
+      <div class="Grid Grid--withGutter Grid--equalHeight u-padding-all-l guides-grid u-posRelative">
         {%- if site.medium_feed -%}
         {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at"
         | reverse -%}
@@ -38,21 +38,21 @@
         {% assign mediumSubtitle = mediumPost.medium_subtitle | strip_html | truncatewords: 13 %}
 
         {% assign _url = mediumPost.medium_url %}
-        <div class="notizie-inline Grid-cell u-lg-size2of4 u-margin-top-s {% if showThisMediumPost != nil %} u-posRelative{% endif %}">
+        <div class="notizie-inline Grid-cell u-md-size2of4 u-lg-size2of4 u-margin-top-s {% if showThisMediumPost != nil %} u-posRelative{% endif %}">
           {% include card.html
             date_prepend = "Storia "
             date = _date
             title = mediumPost.medium_title
             alt = mediumPost.medium_title
             link = _url
-            text = mediumSubtitle
+            subtitle = mediumSubtitle
             link_text = "Continua su Medium"
             hasImage = true
             hasSocial = false
             rowImage = true
             image = mediumPost.medium_preview_image_url
             target = "_blank"
-            classes = "u-background-grey-15"
+            classes = "u-background-white"
             flatTitle = true
           %}
         </div>
@@ -63,7 +63,7 @@
         {% assign pinnedPostsCount = pinnedPostsCount | plus: 1 %}
         {%- assign _excerpt = post.excerpt | markdownify | remove: '<p>' | remove: '</p>' -%}
         {%- assign showCategories = post.categories | where: post.homeHideCategories, false -%}
-        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s u-posRelative">
+        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s u-posRelative">
           {% include card.html
             date_prepend = post.date_prepend
             date = post.date
@@ -72,7 +72,7 @@
             alt = post.title
             link = post.url
             homeBottomLink = post.homeBottomLink
-            classes = 'u-background-grey-15'
+            classes = 'u-background-white'
             categories = showCategories
           %}
         </div>
@@ -81,7 +81,7 @@
         {% assign normalPostsToShow =  2 | minus: pinnedPostsCount %}
         {%- if normalPostsToShow > 0 -%}
         {% for post in normalPosts limit: normalPostsToShow %}
-        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of2 u-lg-size1of4 u-margin-top-s">
+        <div class="notizie-post Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
           {% include card.html
             date_prepend = post.date_prepend
             date = post.date
@@ -90,7 +90,7 @@
             alt = post.title
             link = post.url
             homeBottomLink = post.homeBottomLink
-            classes = 'u-background-grey-15'
+            classes = 'u-background-white'
             categories = showCategories
           %}
         </div>

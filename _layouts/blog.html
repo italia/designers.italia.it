@@ -34,7 +34,7 @@ lang: it
 </div>
 
 <div class="u-background-grey-15 u-layout-r-withGutter u-padding-top-xl u-padding-bottom-xxl u-posRelative u-zindex-30">
-  <div class="Grid">
+  <div class="Grid u-layout-wide u-layoutCenter">
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <div class="u-margin-r-top u-margin-r-bottom">
         <h2 class="u-color-grey-ui-kit u-text-r-m u-textWeight-400 u-margin-r-bottom">{{ t.news_main_title }}</h2>
@@ -45,7 +45,7 @@ lang: it
       {% for post in posts %}
       {%- if post.medium_post_id == mediumPostidForHome -%}
       {% assign _url = post.medium_url %}
-      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30 u-posRelative">
+      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30 u-posRelative u-background-white u-padding-r-all">
         <img class="pinnedBookmark" role="presentation" src="{{ '/assets/images/pinned_bookmark-new.svg' | relative_url }}">
         {% include card.html
         date = _date
@@ -58,7 +58,7 @@ lang: it
         image = post.medium_preview_image_url
         categories = post.medium_tagsarray
         flat = true
-        classes = 'u-background-grey-15'
+        classes = 'u-background-white'
         target = '_blank'
         %}
       </div>
@@ -70,7 +70,7 @@ lang: it
       {% assign _url = post.medium_url %}
       {% assign _date = post.medium_firstpublished_at | divided_by: 1000 | date: t.formatDate %}
       {%- if post.medium_post_id != mediumPostidForHome -%}
-      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30">
+      <div class="u-margin-bottom-xxl u-border-bottom-xxs u-padding-bottom-xl u-color-grey-30 u-background-white u-padding-r-all">
         {% include card.html
         date = _date
         author = post.medium_author
@@ -82,7 +82,7 @@ lang: it
         image = post.medium_preview_image_url
         categories = post.medium_tagsarray
         flat = true
-        classes = 'u-background-grey-15'
+        classes = 'u-background-white'
         target = '_blank'
         %}
       </div>
@@ -128,7 +128,7 @@ lang: it
               text = _excerpt
               link = post.url
               homeBottomLink = post.homeBottomLink
-              classes = 'u-background-grey-15'
+              classes = 'u-background-white'
               categories = showCategories
             %}
           </div>
@@ -150,7 +150,7 @@ lang: it
               text = _excerpt
               link = post.url
               homeBottomLink = post.homeBottomLink
-              classes = 'u-background-grey-15'
+              classes = 'u-background-white'
               categories = showCategories
             %}
           </div>
