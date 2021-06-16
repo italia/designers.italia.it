@@ -84,22 +84,13 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Rispetta la privacy quando usi i social network
-      text: "<p>Schematizza le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. Categorizza e classifica le evidenze per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.</p>
-      <p>Sintetizza le tue conclusioni in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc.</p>"
+      text: "<p>Se come Ente pubblico utilizzi i social network per rivolgerti ai tuoi utenti, devi tenere in considerazione tutti gli aspetti legati al consenso al trattamento dei dati dei tuoi follower. Le risorse di questa sezione ti forniscono informazioni utile per essere adempiente alla normativa privacy anche quando fai uso di iniziative di comunicazione o altre forme di partecipazione che coinvolgono i tuoi utenti mediante questi canali.</p>"
       img: "/assets/icons/kit/kit_privacy_social.svg"
       resources:
-        - title: Tabella di analisi dei risultati
+        - title: Gestire il trattamento dati dei follower
           icon: "/assets/icons/pencil.svg"
-          description: Alcuni fogli di lavoro dove riportare le evidenze delle interviste per elaborare le conclusioni
-          link: <a href='https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: Presentazione dei risultati delle interviste
-          icon: "/assets/icons/pencil.svg"
-          description: Un modello di presentazione strutturato per inserire i risultati delle interviste
-          link: <a href='https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: Relazione delle conclusioni della ricerca
-          icon: "/assets/icons/pencil.svg"
-          description: Un modello di struttura per la relazione di sintesi dei risultati delle interviste
-          link: <a href='https://docs.google.com/document/d/1ufkimx2_10Qe4APacfcI6vjoPbMpPwltC2-2MUpUckA/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: "Informazioni utili per gestire il consenso al trattamento dati dei follower nelle iniziative di comunicazione e partecipazione"
+          link: <a href='https://docs.google.com/document/d/1QfHULA8ldyhxjVaVytaM6HCOjbPt76iKQNPYutgYHxQ/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
