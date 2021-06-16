@@ -8,9 +8,9 @@ blocks:
   img: /assets/images/kits/placeholders/12_WebDevelopmentKit_Placeholder.png
   button:
   - label: UI kit
-    url: '/kit/ui'
+    url: '/kit/progettazione-interfaccia'
   - label: Web development kit
-    url: '/kit/web-development'
+    url: '/kit/sviluppo-interfaccia'
 - title: Vuoi organizzare l’avvio di un progetto nel migliore dei modi?
   subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
   img: /assets/images/kits/placeholders/03_ResearchPlan_Placeholder.png
