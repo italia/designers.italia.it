@@ -13,18 +13,15 @@ order: 1
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di quali categorie di informazioni stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
-  <p>Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti informazioni e modelli utili per aiutarti a trattare correttamente i dati personali riferiti ad alcuni dei principali casi d'uso che dovrai gestire progettando e realizzando un servizio digitale.</p>"
-
-guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='#'>Service design</a>
+  text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di <strong>quali categorie di informazioni stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore</strong>. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
+  <p>Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti <strong>informazioni e modelli utili per aiutarti a trattare correttamente i dati personali riferiti ad alcuni dei principali casi d'uso </strong>che dovrai gestire progettando e realizzando un servizio digitale.</p>"
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
       - <a href='#'>Web Analytics</a>
-      - <a href='#'>Esperienza utente</a>
+      - <a href='#'>Interviste utenti</a>
+      - <a href='#'>Test di usabilità</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
