@@ -3,7 +3,7 @@ title: Analisi del contesto
 subtitle: Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze
 lang: it
 layout: kit
-description: "Un kit di service design di Designers Italia che ti aiuta far emergere i principali elementi che compongono l'erogazione di un servizio"
+description: "Un kit di service design di Designers Italia che ti aiuta a far emergere i principali elementi che compongono l'erogazione di un servizio"
 image: "/assets/icons/kit/social-card/kit_analisiContesto.png"
 iconImage: "/assets/icons/kit/kit_analisiContesto.svg"
 backgroundColor: "#439af1"
@@ -15,7 +15,7 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Il kit di analisi del contesto ti consente di ottenere una visione d’insieme dei fattori e delle variabili che influenzano l'erogazione e la fruizione di un servizio digitale. L’obiettivo è quello di aiutarti a mettere a fuoco gli obiettivi e il perimetro del progetto, attività fondamentale per poi impostare in maniera bilanciata le successive attività di ricerca e di concettualizzazione. Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi ed evolvere.</p>"
+  text: "<p>Il kit di analisi del contesto ti consente di ottenere <strong>una visione d’insieme dei fattori e delle variabili che influenzano l'erogazione e la fruizione di un servizio digitale</strong>. L’obiettivo è quello di aiutarti a mettere a fuoco gli obiettivi e il perimetro del progetto, attività fondamentale per poi impostare in maniera bilanciata le successive attività di ricerca e di concettualizzazione.</p><p>Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi ed evolvere.</p>"
 
 guideLinesChunk:
   title: GUIDA PRATICA
@@ -25,14 +25,14 @@ rightColumnItems:
   - title: KIT CORRELATI
     items:
       - <a href='#'>Privacy by design</a>
-      - <a href='#'>Interfaccia utente</a>
+      - <a href='#'>Co-progettazione</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
     items:
       - Service designer
-      - Redattore
       - Esperto UX
+      - User researcher
 
 superAccordion:
   title: STRUMENTI
