@@ -34,20 +34,18 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Rispetta la privacy per il go-live di un servizio digitale
-      text: "<p>Quando progetti la messa on line di un servizio devi considerare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali (art.4, punto 1 del GDPR). Tra le casistiche più frequenti che richiedono un trattamento di dati personali ti ricordiamo: l’invio di una newsletter, la registrazione/sottoscrizione mediante compilazione di un form, la presenza di una sezione <em>Contatti</em>, la ricezione di candidature, la gestione dei cookie, ecc.</p>
+      text: "<p>Quando progetti la messa on line di un servizio devi considerare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali (art.4, punto 1 del GDPR). Tra le casistiche più frequenti che richiedono un trattamento di dati personali ti ricordiamo: l’invio di una newsletter, la registrazione/sottoscrizione mediante compilazione di un form, la presenza di una sezione <em>Contatti</em>, la ricezione di candidature o la gestione dei cookie.</p>
       <p>Ricorda che per ciascuna di queste casistiche, e nel rispetto del principio di minimizzazione, ti è consentito richiedere esclusivamente i dati strettamente necessari all’erogazione del servizio.</p>"
       img: "/assets/icons/kit/kit_privacy_lancio.svg"
       resources:
-        - title: "Modello di privacy/cookie policy"
+        - title: "Privacy by design e privacy by default"
           icon: "/assets/icons/pencil.svg"
-          description: Un template per aiutarti nella compilazione di una privacy/cookie policy adeguata per il tuo servizio
-          disabled: true
-          link: <a target="_blank" href='#' aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: Esempio di testo per cookie bar
+          description: "Una disamina dei principi e dei riferimenti normativi che ti impongono di considerare gli aspetti relativi alla privacy dei tuoi utenti già dalla fase iniziale di progettazione del servizio"
+          link: <a target="_blank" href='https://docs.google.com/document/d/1I7uhjz37w_t-ioa5APRZHCzRIvzKKrwu2W1IWu5R1rA/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+        - title: Uso delle immagini online
           icon: "/assets/icons/pencil.svg"
-          description: "Un esempio di..."
-          disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: "Gli aspetti da considerare per utilizzare immagini online nel rispetto della normativa privacy vigente e delle licenze di distribuzione dei contenuti"
+          link: <a href='https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Modello di informativa di primo livello
           icon: "/assets/icons/pencil.svg"
           description: "Un esempio di informativa da utilizzare per la compilazione di un form o l'invio di una newsletter"
@@ -56,8 +54,7 @@ superAccordion:
         - title: "Come escludere i cookie di terze parti dai contenuti multimediali in embed"
           icon: "/assets/icons/pencil.svg"
           description: "Istruzioni per escludere il tracciamento di cookie di terze parti dai contenuti multimediali embeddati "
-          disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1URK2eWjnw9h8T1z3CG6ycax0BxNKvfd2ndUpvP5ZHy8/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
