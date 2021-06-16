@@ -16,7 +16,7 @@ redirect_from:
 textChunk1:
   title: A COSA SERVE
   text: "<p>Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponda in maniera adeguata ai bisogni degli utenti.</p>
-  <p>L’analisi dei dati di traffico web (web analytics) risponde proprio a questa esigenza e le piattaforme per raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le decisioni che riguardano design e re-design dei servizi, in ottica data-driven.</p>
+  <p>L’analisi dei dati di traffico web (web analytics) risponde proprio a questa esigenza e le piattaforme per <strong>raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito</strong>. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le <strong>decisioni che riguardano design e re-design dei servizi</strong>, in ottica <em>data-driven</em>.</p>
   <p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI).</p>"
 
 guideLinesChunk:
@@ -40,7 +40,7 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Usa Web Analytics Italia
-      text: "<p>La piattaforma Web Analytics Italia...</p>"
+      text: "<p>La piattaforma Web Analytics Italia (WAI) è una soluzione open source creata ad hoc dall'Agenzia per l'Italia Digitale per la raccolta e l'analisi dei dati di traffico dei siti web delle amministrazioni pubbliche. WAI ha la finalità di aiutare gli operatori della PA a migliorare l'usabilità dei <em>touchpoint</em> digitali grazie al monitoraggio continuo, l'elaborazione e la condivisione dei dati statistici di analisi web dei siti web aderenti al progetto, in completa aderenza alla normativa GDPR.</p>"
       img: "/assets/icons/kit/kit_analytics_usa.svg"
       resources:
         - title: La piattaforma Web Analytics Italia
@@ -51,6 +51,7 @@ superAccordion:
             - description: Guida utente WAI
               link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
             - description: Istruzioni per creare una dashboard custom su WAI
+              disabled: true
               link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)"> XXX Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
