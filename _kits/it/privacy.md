@@ -61,23 +61,17 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Rispetta la privacy quando coinvolgi gli utenti nella ricerca
-      text: "<p>Scegli la tipologia di struttura e scrivi una guida da seguire per mantenere il focus e massimizzare l’utilità della conversazione, defininendo i macro temi da affrontare e le rispettiva domande. Organizza i temi in modo da far emergere il rapporto dell'intervistato con il digitale e con il servizio pubblico, per poi affrontare la sua percezione e le relative esigenze in termini di esperienza d'uso, raccogliendo informazioni sulle aspettative.</p>
-      <p>Ricordati di definire a priori il modulo di consenso al trattamento dei dati per garantire la privacy dei partecipanti.</p>"
+      text: "<p>Quando fai attività di ricerca utente finalizzata alla progettazione del tuo servizio digitale, ad esempio somministrando interviste o conducendo dei test di usabilità, devi occuparti di come gestire il consenso al trattamento dei dati personali degli utenti coinvolti in queste attività. In questa sezione puoi trovare alcuni modelli già pronti di informativa per il trattamento dei dati personali delle persone coinvolte in attività di ricerca utente, suddivisi in base al caso d'uso.</p>"
       img: "/assets/icons/kit/kit_privacy_utenti.svg"
       resources:
-        - title: Guida alla conduzione strutturata
+        - title: Modello di liberatoria per interviste utente
           icon: "/assets/icons/pencil.svg"
-          description: Un protocollo che contiene le istruzioni e le domande aperte da chiedere durante l'intervista
-          link: <a href='https://docs.google.com/document/d/1OSrigFaonmGj_3t-OvNZ2uuA-RIpnjGLv2dNkwexI5E/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: Guida alla conduzione semi strutturata
+          description: "Un modello di liberatoria per ottenere il consenso dei partecipanti alla registrazione dell'intervista"
+          link: <a href='https://docs.google.com/document/d/1c4Ea2ni0aq4_4zq9kaojtrFRH5QQGKhYZvCo2b1mr2U/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+        - title: "Modello di liberatoria per la conduzione di un test di usabilità"
           icon: "/assets/icons/pencil.svg"
-          description: Un protocollo che contiene le istruzioni e i temi chiave da trattare durante l'intervista
-          link: <a href='https://docs.google.com/document/d/1hbhSSgiXpmN8TrrJIeXhFvER08ZSpY9RiAp1n-NsAB0/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: Consenso al trattamento dei dati
-          icon: "/assets/icons/pencil.svg"
-          description: Un modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell'intervista
-          disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: "Un modello di liberatoria per il consenso alla registrazione da far firmare ai partecipanti dei test"
+          link: <a href='https://docs.google.com/document/d/1DLGmmkWDJ2fpzEOwZN7JVFHqbK-d118Jy97WU3zjA9M/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
