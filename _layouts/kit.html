@@ -66,13 +66,15 @@ layout: default
         </div>
       </div>
       <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
+        {% if guideLinesChunk.link %}
         <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</div>
-        <div class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-xxl u-md-margin-right-none u-lg-margin-right-none u-text-r-xxs u-color-grey-ui-kit">
-          {{guideLinesChunk.link}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" />
-        </div>
+          <div class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-xxl u-md-margin-right-none u-lg-margin-right-none u-text-r-xxs u-color-grey-ui-kit">
+            {{guideLinesChunk.link}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" />
+          </div>
+        {% endif %}
           {% for rightColumnItem in rightColumnItems %}
             {% if forloop.index == 1 %}
-              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
+              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom {% if guideLinesChunk.link != null %} u-margin-top-xxl {% endif %}">{{rightColumnItem.title}}</div>
             {% else %}
               <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
             {% endif %}
