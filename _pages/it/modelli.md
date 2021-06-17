@@ -13,7 +13,7 @@ nodate: true
 
 header:
   title: "Modelli"
-  description: "Risorse per realizzare il sito web della tua amministrazione: template pronti per l'uso e un pacchetto di strumenti per aiutarti per aiutarti a offrire un'esperienza d'uso efficace ai tuoi utenti"
+  description: "Risorse per realizzare il sito web della tua amministrazione: template pronti per l'uso e un pacchetto di strumenti per aiutarti a offrire un'esperienza d'uso efficace e inclusiva ai tuoi utenti"
   links:
     - <a href="#modelli" class="u-color-grey-ui-kit">Scopri</a>
   image: '/assets/icons/kit/modelli.svg'
