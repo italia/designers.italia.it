@@ -13,7 +13,7 @@ order: 1
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di <strong>quali categorie di informazioni stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore</strong>. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
+  text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di <strong>quali categorie di dati personali stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore</strong>. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
   <p>Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti <strong>informazioni e modelli utili per aiutarti a trattare correttamente i dati personali riferiti ad alcuni dei principali casi d'uso </strong>che dovrai gestire progettando e realizzando un servizio digitale.</p>"
 
 rightColumnItems:
@@ -46,14 +46,13 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: "Gli aspetti da considerare per utilizzare immagini online nel rispetto della normativa privacy vigente e delle licenze di distribuzione dei contenuti"
           link: <a href='https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: Modello di informativa di primo livello
+        - title: Suggerimenti per la cookie policy
           icon: "/assets/icons/pencil.svg"
-          description: "Un esempio di informativa da utilizzare per la compilazione di un form o l'invio di una newsletter"
-          disabled: true
-          link: <a href='#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: "Come escludere i cookie di terze parti dai contenuti multimediali in embed"
+          description: "Una risorsa che contiene informazioni utili e suggerimenti per la gestione del consenso legato all'uso dei cookie"
+          link: <a href='https://docs.google.com/document/d/1ChKavo4luDearddgPfD56KahRgpe91Qrej6rNLq_w-E/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+        - title: "Come escludere i cookie di terze parti dai contenuti multimediali incorporati"
           icon: "/assets/icons/pencil.svg"
-          description: "Istruzioni per escludere il tracciamento di cookie di terze parti dai contenuti multimediali embeddati "
+          description: "Istruzioni per escludere il tracciamento di cookie di terze parti dai contenuti multimediali incorporati"
           link: <a href='https://docs.google.com/document/d/1URK2eWjnw9h8T1z3CG6ycax0BxNKvfd2ndUpvP5ZHy8/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
