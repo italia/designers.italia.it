@@ -25,6 +25,6 @@ fasi:
   description: "<p>Una raccolta di risorse sviluppate ad hoc per la fase di realizzazione del sito di una scuola o di un progetto digitale relativo alle scuole italiane</p>"
 - slug: comuni
   title: Comune
-  subtitle: "Modello di sito web e template grafico per i siti comunali, gratis e a disposizione di tutti "  
-  description: "<p>Una raccolta di risorse sviluppate ad hoc per la fase di realizzazione del sito di Comune</p>"
+  subtitle: "Modello di sito web e template grafico per i siti comunali, gratis e a disposizione di tutti"  
+  description: "<p>Una raccolta di risorse sviluppate ad hoc per la fase di realizzazione del sito di un Comune</p>"
 ---

@@ -2,7 +2,7 @@
 title: Il modello per i siti scolastici
 lang: it
 layout: download
-description: "Design del sito di una scuola: architettura dell’informazione e template HTML"
+description: "Design del sito di una scuola: architettura dell’informazione, template HTML e tema Wordpress"
 backgroundImage: "/assets/images/kits/backgrounds/17_Scuole_Background.png"
 backgroundColor: "#439af1"
 nodate: true
