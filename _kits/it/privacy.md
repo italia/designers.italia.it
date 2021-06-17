@@ -46,6 +46,9 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: "Gli aspetti da considerare per utilizzare immagini online nel rispetto della normativa privacy vigente e delle licenze di distribuzione dei contenuti"
           link: <a href='https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          otherResources:
+            - description: "Modello di liberatoria e consenso al trattamento delle immagini per maggiorenni e minorenni"
+              link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Suggerimenti per la cookie policy
           icon: "/assets/icons/pencil.svg"
           description: "Una risorsa che contiene informazioni utili e suggerimenti per la gestione del consenso legato all'uso dei cookie"
