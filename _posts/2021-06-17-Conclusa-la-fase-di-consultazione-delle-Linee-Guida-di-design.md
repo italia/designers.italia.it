@@ -18,7 +18,7 @@ categories:
 ---
 
 <!-- MORE -->
-Si è conclusa lo scorso 14 giugno la fase di consultazione pubblica delle nuove Linee guida di design per i servizi web della Pubblica Amministrazione. Un passaggio fondamentale, previsto dall’articolo 71 del Codice per l’amministrazione digitale (CAD), per **favorire la partecipazione di tutti i soggetti interessati** a progettare e realizzare servizi pubblici digitali, migliorando così la **trasparenza** e la qualità dei processi decisionali.
+Si è conclusa lo scorso 14 giugno la fase di consultazione pubblica delle [nuove Linee guida di design per i servizi web della Pubblica Amministrazione](https://docs.italia.it/italia/design/lg-design-servizi-web/it/bozza/index.html){:target="_blank" rel="noopener noreferrer"}. Un passaggio fondamentale, previsto dall’articolo 71 del Codice per l’amministrazione digitale (CAD), per **favorire la partecipazione di tutti i soggetti interessati** a progettare e realizzare servizi pubblici digitali, migliorando così la **trasparenza** e la qualità dei processi decisionali.
 
 Sono oltre cinquemila, nell’ultimo mese, le visite alla pagina dedicata alla consultazione su [Forum Italia](https://forum.italia.it/c/documenti-in-consultazione/linee-guida-di-design-per-i-servizi-web-della-pa/81){:target="_blank" rel="noopener noreferrer"}. I commenti saranno adesso analizzati da un team di esperti dell’[Agenzia per l’Italia Digitale](https://www.agid.gov.it/it){:target="_blank" rel="noopener noreferrer"} e del [Dipartimento per la trasformazione digitale](https://innovazione.gov.it/dipartimento/){:target="_blank" rel="noopener noreferrer"}, che procederà ad eventuali integrazioni e modifiche delle nuove Linee Guida.
 
