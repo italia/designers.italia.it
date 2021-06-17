@@ -2,9 +2,9 @@
 layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
-title: "Conclusa la fase di consulatazione delle nuove Linee guida di design"
+title: "Conclusa la fase di consultazione delle nuove Linee guida di design"
 subtitle: "Dopo i passaggi previsti dal CAD, il testo verrà pubblicato in Gazzetta Ufficiale"
-asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
+asset:
 date: 2021-06-17 10:00:00 +0200
 pinned: false
 nodate: false
