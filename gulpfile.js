@@ -35,7 +35,7 @@ gulp.task('optimize-images', function () {
   ]).pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.mozjpeg({progressive: true}),
-    imagemin.optipng({optimizationLevel: 5}),
+    imagemin.optipng({optimizationLevel: 2}),
     imagemin.svgo({
       plugins: [
         {removeViewBox: false},
