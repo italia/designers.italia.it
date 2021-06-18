@@ -15,18 +15,18 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>La fase di prototipazione consente di dare rapidamente forma al punto di contatto digitale di un servizio (o <em>touchpoint</em>) prima della sua realizzazione. Permette di esplorare le funzionalità della soluzione progettata per verificarne le principali funzioni, affinare la progettazione dei contenuti e definire il modello interattivo che caratterizzerà l’esperienza-utente. Un prototipo di interfaccia permette infatti di simulare le principali situazioni d’uso del servizio digitale, indirizzando e ottimizzando le scelte per la progettazione di dettaglio.</p>
+  text: "<p>La fase di prototipazione consente di dare rapidamente forma al punto di contatto digitale di un servizio (o <em>touchpoint</em>) prima della sua realizzazione. Permette di <strong>esplorare le funzionalità della soluzione progettata per verificarne le principali funzioni, affinare la progettazione dei contenuti e definire il modello interattivo che caratterizzerà l’esperienza-utente</strong>. Un prototipo di interfaccia permette infatti di simulare le principali situazioni d’uso del servizio digitale, indirizzando e ottimizzando le scelte per la progettazione di dettaglio.</p>
   <p>In questo kit puoi trovare gli strumenti per costruire e visualizzare i flussi di interazione dell’utente con il servizio futuro e per progettare, sulla base di questi, i wireframe dell’interfaccia.</p>"
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Prototipazione</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/prototyping.html' target="_blank">Prototipazione</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Contenuti e linguaggio</a>
-      - <a href='#'>Interfaccia utente</a>
+      - <a href='https://designers.italia.it/kit/contenuti-linguaggio/'>Contenuti e linguaggio</a>
+      - <a href='https://designers.italia.it/kit/progettazione-interfaccia/'>Progettazione interfaccia</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
