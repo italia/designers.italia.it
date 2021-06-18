@@ -21,13 +21,13 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Service design</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank">Service design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Interviste utenti e stakeholder</a>
-      - <a href='#'>Architettura dell'informazione</a>
+      - <a href='https://designers.italia.it/kit/interviste-utenti-stakeholder/'>Interviste utenti e stakeholder</a>
+      - <a href='https://designers.italia.it/kit/architettura-informazione/'>Architettura dell'informazione</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
