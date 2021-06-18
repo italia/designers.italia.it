@@ -19,9 +19,9 @@ textChunk1:
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Web Analytics</a>
-      - <a href='#'>Interviste utenti</a>
-      - <a href='#'>Test di usabilità</a>
+      - <a href='https://designers.italia.it/kit/web-analytics'>Web Analytics</a>
+      - <a href='https://designers.italia.it/kit/interviste-utenti-stakeholder'>Interviste utenti</a>
+      - <a href='https://designers.italia.it/kit/test-usabilita'>Test di usabilità</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
