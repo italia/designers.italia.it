@@ -19,13 +19,13 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Service design</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank">Service design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Privacy by design</a>
-      - <a href='#'>Co-progettazione</a>
+      - <a href='https://designers.italia.it/kit/privacy'>Privacy</a>
+      - <a href='https://designers.italia.it/kit/co-progettazione'>Co-progettazione</a>
 
 footerItems:
   - title: PROFESSIONALITÀ

@@ -21,16 +21,16 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Service design</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank">Service design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Analisi dell'ecosistema</a>
-      - <a href='#'>Esperienza utente</a>
-      - <a href='#'>Prototipazione</a>
-      - <a href='#'>Architettura dell'informazione</a>
-      - <a href='#'>Contenuti e linguaggio</a>
+      - <a href='https://designers.italia.it/kit/analisi-contesto/'>Analisi del contesto</a>
+      - <a href='https://designers.italia.it/kit/esperienza-utente/'>Esperienza utente</a>
+      - <a href='https://designers.italia.it/kit/prototipazione/'>Prototipazione</a>
+      - <a href='https://designers.italia.it/kit/architettura-informazione/'>Architettura dell'informazione</a>
+      - <a href='https://designers.italia.it/kit/contenuti-linguaggio/'>Contenuti e linguaggio</a>
 
 footerItems:
   - title: PROFESSIONALITÀ

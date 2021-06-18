@@ -18,19 +18,19 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Service design</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank">Service design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Analisi del contesto</a>
-      - <a href='#'>Interviste utenti e stakeholder</a>
+      - <a href='https://designers.italia.it/kit/analisi-contesto/'>Analisi del contesto</a>
+      - <a href='https://designers.italia.it/kit/interviste-utenti-stakeholder/'>Interviste utenti e stakeholder</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
     items:
       - Service designer
-      - Redattore
+      - User researcher
       - Esperto UX
 
 superAccordion:

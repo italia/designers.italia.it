@@ -21,13 +21,13 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Content design</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design.html' target="_blank">Content design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Contenuti e linguaggio</a>
-      - <a href='#'>Prototipazione</a>
+      - <a href='https://designers.italia.it/kit/contenuti-linguaggio/'>Contenuti e linguaggio</a>
+      - <a href='https://designers.italia.it/kit/prototipazione/'>Prototipazione</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
