@@ -13,7 +13,7 @@ order: 3
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>I questionari online consentono di raccogliere informazioni dagli utenti in maniera strutturatam, così da poterle elaborare quantitativamente. Il vantaggio per il progettista è quello di poter raggiungere una grande quantità di utenti contemporaneamente, poichè la somministrazione dei questionari avviene online e attraverso i canali di comunicazione digitale più consoni a raggiungere i partecipanti.</p>
+  text: "<p>I questionari online consentono di <strong>raccogliere informazioni dagli utenti in maniera strutturata, così da poterle elaborare quantitativamente</strong>. Il vantaggio per il progettista è quello di poter raggiungere una grande quantità di utenti contemporaneamente, poichè la somministrazione dei questionari avviene online e attraverso i canali di comunicazione digitale più consoni a raggiungere i partecipanti.</p>
   <p>Questo kit dedicato ai questionari comprende modelli pre-organizzati per supportarti nelle attività di pianificazione, esecuzione e analisi della ricerca.</p>"
 
 guideLinesChunk:
