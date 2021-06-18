@@ -15,7 +15,7 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Il kit dedicato ai contenuti e al linguaggio offre strumenti operativi per creare contenuti, revisionarli in maniera collaborativa e definire il corretto <em>tone of voice</em>(tono di voce) con cui rivolgerti agli utenti.</p>
+  text: "<p>Il kit dedicato ai contenuti e al linguaggio offre strumenti operativi per creare contenuti, revisionarli in maniera collaborativa e definire il corretto <em>tone of voice</em> (tono di voce) con cui rivolgerti agli utenti.</p>
   <p>Esempi e  strumenti ti guidano nella buona pratica di utilizzare un approccio condiviso alla creazione e alla gestione dei contenuti testuali e multimediali; la guida al linguaggio della Pubblica Amministrazione ti fornisce <strong>indicazioni sull’uso delle parole, sulle regole di scrittura oltre che esempi di tono di voce da utilizzare nei vari contesti d’uso</strong> di un <em>touchpoint</em> (punto di accesso) digitale.</p>"
 
 guideLinesChunk:
