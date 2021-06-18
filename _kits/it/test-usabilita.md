@@ -21,13 +21,13 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#'>Usabilità</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/usabilita.html'>Usabilità</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Interfaccia</a>
-      - <a href='#'>Esperienza utente</a>
+      - <a href='https://designers.italia.it/kit/progettazione-interfaccia/'>Progettazione interfaccia</a>
+      - <a href='https://designers.italia.it/kit/esperienza-utente/'>Esperienza utente</a>
 
 footerItems:
   - title: PROFESSIONALITÀ

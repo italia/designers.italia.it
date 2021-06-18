@@ -17,7 +17,7 @@ redirect_from:
 textChunk1:
   title: A COSA SERVE
   text: "<p>Mappare l'esperienza d'uso di un servizio digitale consente di vederlo attraverso gli occhi dell'utente: in questo modo è possibile riprogettare l'esperienza di fruizione in maniera più adeguata alle sue necessità. Allo stesso tempo, comprendere lo stato attuale di un servizio digitale è il punto di partenza fondamentale per poterlo migliorare.</p>
-  <p>Il kit dedicato all'esperienza utente o user experience (UX) contiene gli strumenti necessari per aiutarti a mappare la UX di un servizio esistente (as is), ma puoi utilizzarlo anche per progettare la sua evoluzione (to be), mettendoti nei panni dell'utente attraverso strumenti quali i personas e gli user journey.</p>"
+  <p>Il kit dedicato all'esperienza utente o user experience (UX) contiene <strong>gli strumenti necessari per aiutarti a mappare la UX di un servizio esistente</strong> (<em>as is</em>), ma puoi utilizzarlo anche per progettare la sua evoluzione (<em>to be</em>), mettendoti nei panni dell'utente attraverso strumenti quali i personas e gli <em>user journey</em>.</p>"
 
 guideLinesChunk:
   title: GUIDA PRATICA

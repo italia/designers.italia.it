@@ -69,7 +69,7 @@ superAccordion:
         - title: "Suggerimenti per le attività di ricerca utente"
           icon: "/assets/icons/pencil.svg"
           description: "Suggerimenti per il rispetto della normativa privacy durante le attività di ricerca utente"
-          link: <a href='https://docs.google.com/document/d/1c4Ea2ni0aq4_4zq9kaojtrFRH5QQGKhYZvCo2b1mr2U/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          link: <a href='https://docs.google.com/document/d/1yu3n-3HfzcAf5D-LtQlCqG0vJ8dSdCjRk9KCSFS4bjo/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Modello di liberatoria per interviste utente
           icon: "/assets/icons/pencil.svg"
           description: "Un modello di liberatoria per ottenere il consenso dei partecipanti alla registrazione dell'intervista"

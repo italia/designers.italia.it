@@ -20,14 +20,14 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Search engine optimization</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design/seo.html' target="_blank">Search engine optimization</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Contenuti e linguaggio</a>
-      - <a href='#'>Web Analytics</a>
-      - <a href='#'>Interfaccia utente</a>
+      - <a href='https://designers.italia.it/kit/contenuti-linguaggio/'>Contenuti e linguaggio</a>
+      - <a href='https://designers.italia.it/kit/web-analytics/'>Web Analytics</a>
+      - <a href='https://designers.italia.it/kit/progettazione-interfaccia/'>Progettazione interfaccia</a>
 
 footerItems:
   - title: PROFESSIONALITÀ

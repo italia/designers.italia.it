@@ -15,12 +15,12 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Il kit dedicato ai contenuti e al linguaggio offre strumenti operativi per creare contenuti, revisionarli in maniera collaborativa e definire il corretto tone of voice (tono di voce) con cui rivolgerti agli utenti.</p>
-  <p>Esempi e  strumenti ti guidano nella buona pratica di utilizzare un approccio condiviso alla creazione e alla gestione dei contenuti testuali e multimediali; la guida al linguaggio della Pubblica Amministrazione ti fornisce indicazioni sull’uso delle parole, sulle regole di scrittura oltre che esempi di tono di voce da utilizzare nei vari contesti d’uso di un touchpoint (punto di accesso) digitale.</p>"
+  text: "<p>Il kit dedicato ai contenuti e al linguaggio offre strumenti operativi per creare contenuti, revisionarli in maniera collaborativa e definire il corretto <em>tone of voice</em> (tono di voce) con cui rivolgerti agli utenti.</p>
+  <p>Esempi e  strumenti ti guidano nella buona pratica di utilizzare un approccio condiviso alla creazione e alla gestione dei contenuti testuali e multimediali; la guida al linguaggio della Pubblica Amministrazione ti fornisce <strong>indicazioni sull’uso delle parole, sulle regole di scrittura oltre che esempi di tono di voce da utilizzare nei vari contesti d’uso</strong> di un <em>touchpoint</em> (punto di accesso) digitale.</p>"
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design.html'>Content design</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design.html' target="_blank">Content design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
@@ -86,10 +86,10 @@ superAccordion:
       <p>Per raccogliere i consensi puoi utilizzare il modello di liberatoria redatto secondo l'informativa sul trattamento dei dati personali ai sensi dell’art. 13 del Regolamento (UE) 2016/679.</p>"
       img: "/assets/icons/kit/kit_linguaggio_privacy.svg"
       resources:
-        - title: Modello di liberatoria per l'uso di immagini e video
+        - title: Modello di liberatoria per l'uso di immagini o altri contenuti multimediali
           icon: "/assets/icons/pencil.svg"
-          description: Un modello per ottenere il consenso all'uso di immagini e video
-          link: <a href='https://docs.google.com/document/d/1hz7dNa2eKU1atAr3dzgyZH0W2kETBuDBejk62wEVPL4/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Un modello per ottenere il consenso degli interessati all'uso di immagini o altri contenuti multimediali dove sono ritratti
+          link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Le risorse sono collegamenti esterni che si aprono in una nuova finestra o file PDF da scaricare.

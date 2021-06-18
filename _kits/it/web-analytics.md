@@ -21,13 +21,13 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Web analytics</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/web-analytics.html' target="_blank">Web analytics</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Test di usabilità</a>
-      - <a href='#'>Interfaccia utente</a>
+      - <a href='https://designers.italia.it/kit/test-usabilita/'>Test di usabilità</a>
+      - <a href='https://designers.italia.it/kit/progettazione-interfaccia/'>Progettazione interfaccia</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
@@ -46,7 +46,7 @@ superAccordion:
         - title: La piattaforma Web Analytics Italia
           icon: "/assets/icons/pencil.svg"
           description: Un servizio open source dedicato alla raccolta e all'analisi dei dati di traffico dei servizi digitali della PA
-          link: <a href='https://webanalytics.italia.it/' aria-label="Vai alla piattaforma WAI (link esterno)">Vai alla piattaforma WAI</a>
+          link: <a href='https://webanalytics.italia.it/' aria-label="Vai alla piattaforma WAI (link esterno)">Vai alla piattaforma</a>
           otherResources:
             - description: Guida utente WAI
               link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>

@@ -16,8 +16,8 @@ redirect_from:
 textChunk1:
   title: A COSA SERVE
   text: "<p>La co-progettazione è una metodologia fondamentale per la progettazione di servizi pubblici efficaci: ha l’obiettivo di raccogliere il punto di vista dei diversi attori coinvolti nell’erogazione e fruizione di un servizio, sollevando i problemi chiave e allo stesso tempo accelerando il processo di identificazione delle soluzioni.</p>
-  <p>Un workshop di co-progettazione è una sessione di lavoro di gruppo, durante la quale diversi soggetti (progettisti, utenti, stakeholder della Pubblica Amministrazione ed eventuali rappresentanti di aziende private) vengono invitati a discutere le criticità esistenti e individuare insieme delle possibili soluzioni progettuali, seguendo un percorso guidato da un facilitatore. L'attività di co-progettazione è preceduta da una serie di attività di ricerca e analisi del contesto, che aiutano a definire l’obiettivo del progetto su cui si sta lavorando e informano la sessione stessa.</p>
-  <p>Il kit contiene esempi di pianificazione e gestione di sessioni di co-progettazione focalizzate su tre tre casi d'uso: la progettazione di un servizio pubblico, di un touchpoint digitale (sito, app, piattaforma...),contenuti e linguaggio da usare nel servizio digitale. I materiali sono il punto di partenza che puoi elaborare e personalizzare a seconda dei tuoi obiettivi e dell’ambito specifico di intervento.</p>"
+  <p>Un workshop di co-progettazione è una <strong>sessione di lavoro di gruppo, durante la quale diversi soggetti (progettisti, utenti, stakeholder della Pubblica Amministrazione ed eventuali rappresentanti di aziende private) vengono invitati a discutere le criticità esistenti e individuare insieme delle possibili soluzioni progettuali, seguendo un percorso guidato da un facilitatore</strong>. L'attività di co-progettazione è preceduta da una serie di attività di ricerca e analisi del contesto, che aiutano a definire l’obiettivo del progetto su cui si sta lavorando e informano la sessione stessa.</p>
+  <p>Il kit contiene esempi di pianificazione e gestione di sessioni di co-progettazione focalizzate su tre tre casi d'uso: la progettazione di un servizio pubblico, di un <em>touchpoint</em> digitale (sito, app, piattaforma...),contenuti e linguaggio da usare nel servizio digitale. I materiali sono il punto di partenza che puoi elaborare e personalizzare a seconda dei tuoi obiettivi e dell’ambito specifico di intervento.</p>"
 
 guideLinesChunk:
   title: GUIDA PRATICA
@@ -57,7 +57,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: "Un touchpoint digitale: pianifica e conduci una sessione di co-progettazione"
-      text: "<p>Questa risorsa ti aiuta a organizzazione una sessione di co-progettazione di un touchpoint digitale (sito, app, piattaforma...). Ti supporta in particola  nella attività di definizione di un’agenda della sessione di lavoro condiviso e ti propone una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato desiderato.</p>
+      text: "<p>Questa risorsa ti aiuta a organizzazione una sessione di co-progettazione di un <em>touchpoint</em> digitale (sito, app, piattaforma...). Ti supporta in particola  nella attività di definizione di un’agenda della sessione di lavoro condiviso e ti propone una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato desiderato.</p>
       </p>I partecipanti potenziali sono: personale della Pubblica Amministrazione, aziende private coinvolte nel progetto, associazioni di categoria interessate, organizzazioni che rappresentano i comuni, organizzazioni che rappresentano i cittadini, utenti del servizio (i cittadini), operatori allo sportello.Tra le attività suggerite troviamo la definizione delle personas, la creazione degli scenari d’uso e definizione dei flussi di interazione.</p>"
       img: "/assets/icons/kit/kit_coprog_touchpoint.svg"
       resources:
@@ -73,7 +73,7 @@ superAccordion:
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: "I contenuti: pianifica e conduci in una sessione di co-progettazione"
       text: "<p>Lo strumento ti aiuta nell'organizzazione di una sessione di co-progettazione dedicata al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti. Oltre a indicazioni utili per la costruzione dell'agenda della sessione, trovi suggerimenti e una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi durante la sessione di lavoro condivisa.</p>
-      <p>Tra le attività suggerite, la mappatura del content journey, una sessione di generazione di idee e un esercizio di card sorting e naming dei contenuti.</p>"
+      <p>Tra le attività suggerite, la mappatura del <em>content journey</em>, una sessione di generazione di idee e un esercizio di <em>card sorting</em> e <em>naming</em> dei contenuti.</p>"
       img: "/assets/icons/kit/kit_coprog_contenuti.svg"
       resources:
         - title: Guida alla sessione di co-progettazione dei contenuti
