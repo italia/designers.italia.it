@@ -15,8 +15,8 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Le interviste consentono di approfondire il contesto e l’esperienza d’uso di un servizio digitale in breve tempo, raccogliendo direttamente informazioni tramite i resoconti verbali di tutti i soggetti coinvolti, sia gli attori che contribuiscono alla sua erogazione, sia degli utenti che ne fruiscono (stakeholder).</p>
-  <p>Il kit comprende modelli pre-organizzati per supportare  la pianificazione e lo svolgimento della ricerca, ma anche l’analisi e sintesi dei suoi risultati.</p>"
+  text: "<p>Le interviste consentono di <strong>approfondire il contesto e l’esperienza d’uso di un servizio digitale</strong> in breve tempo, raccogliendo direttamente informazioni tramite i resoconti verbali di tutti i soggetti coinvolti, sia gli attori che contribuiscono alla sua erogazione, sia degli utenti che ne fruiscono (<em>stakeholder</em>).</p>
+  <p>Il kit comprende modelli pre-organizzati per supportare la pianificazione e lo svolgimento della ricerca, ma anche l’analisi e sintesi dei suoi risultati.</p>"
 
 guideLinesChunk:
   title: GUIDA PRATICA
