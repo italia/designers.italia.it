@@ -3,12 +3,6 @@ title: Partecipa
 lang: it
 layout: partecipa
 blocks:
-- title: Contribuisci alla scrittura delle Linee Guida di design
-  subtitle: 'Da mercoledì 12 maggio è ufficialmente aperta la fase di consultazione delle <a href="https://docs.italia.it/italia/design/lg-design-servizi-web">nuove Linee guida di design per i servizi web della Pubblica Amministrazione</a>. Condividi i tuoi suggerimenti, per partecipare c’è tempo fino al 14 giugno.'
-  img: /assets/images/pages/daniel-mccullough--FPFq_trr2Y-unsplash.jpg
-  button:
-  - label: partecipa all’evoluzione delle linee guida di design!
-    url: 'https://docs.italia.it/italia/design/lg-design-servizi-web/'
 - title: Condividi la tua esperienza sul blog
   subtitle: Il <a href="https://designers.italia.it/notizie/">blog di Designers Italia</a> raccoglie case history relativi ai servizi pubblici o esperienze di trasformazione digitale che ben si applicano al mondo dei servizi pubblici. Il blog è aperto al contributo di designer e professionisti che abbiano un’esperienza significativa sul <b>design dei servizi pubblici</b> e che vogliano condividerla.<br>Se vuoi proporre un contributo scrivi all’indirizzo <a href="mailto:contatti@designers.italia.it">contatti@designers.italia.it</a> con <b>un abstract</b> della tua proposta e <b>un link</b> alla tua biografia o al tuo profilo. Valuteremo le proposte e ti contatteremo nel caso in cui decideremo di pubblicarla.
   img: /assets/images/pages/david-solce-184827.jpg
