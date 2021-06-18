@@ -21,13 +21,13 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Web analytics</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/web-analytics.html' target="_blank">Web analytics</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Test di usabilità</a>
-      - <a href='#'>Interfaccia utente</a>
+      - <a href='https://designers.italia.it/kit/test-usabilita/'>Test di usabilità</a>
+      - <a href='https://designers.italia.it/kit/progettazione-interfaccia/'>Progettazione interfaccia</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
