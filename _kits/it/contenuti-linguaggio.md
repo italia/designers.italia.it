@@ -20,20 +20,20 @@ textChunk1:
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#'>Content design</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design.html'>Content design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Prototipazione</a>
-      - <a href='#'>Esperienza utente</a>
+      - <a href='https://designers.italia.it/kit/prototipazione/'>Prototipazione</a>
+      - <a href='https://designers.italia.it/kit/esperienza-utente/'>Esperienza utente</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
     items:
       - Content designer
-      - Developer
       - Esperto UX
+      - SEO specialist
 
 superAccordion:
   title: ATTIVITÀ E RISORSE
