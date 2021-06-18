@@ -16,18 +16,18 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>ll kit dedicato alle interfacce utente ti offre un insieme di componenti visivi già pronti per assemblare il front-end di siti web e applicazioni.</p>
+  text: "<p>ll kit dedicato alle interfacce utente ti offre <strong>un insieme di componenti visivi già pronti per assemblare il <em>front-end</em> di siti web e applicazioni.</strong></p>
   <p>Il kit consiste in una serie di simboli realizzati con la libreria Sketch, ovvero porzioni pre-lavorate finalizzate alla progettazione di un’interfaccia digitale con uno stile visivo definito e coerente. I simboli ti consentono di costruire un prototipo con le varie schermate necessarie, che possono poi essere rese interattive — e gestite in maniera collaborativa nell’ambito di un team di lavoro — per es. su Invision.</p>"
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">User interface</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-interface.html' target="_blank">User interface</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Web development</a>
-      - <a href='#'>Usabilità</a>
+      - <a href='https://designers.italia.it/kit/sviluppo-interfaccia/'>Sviluppo interfaccia</a>
+      - <a href='https://designers.italia.it/kit/test-usabilita/'>Test usabilità</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
