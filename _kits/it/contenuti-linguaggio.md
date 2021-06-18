@@ -86,10 +86,10 @@ superAccordion:
       <p>Per raccogliere i consensi puoi utilizzare il modello di liberatoria redatto secondo l'informativa sul trattamento dei dati personali ai sensi dell’art. 13 del Regolamento (UE) 2016/679.</p>"
       img: "/assets/icons/kit/kit_linguaggio_privacy.svg"
       resources:
-        - title: Modello di liberatoria per l'uso di immagini e video
+        - title: Modello di liberatoria per l'uso di immagini o altri contenuti multimediali
           icon: "/assets/icons/pencil.svg"
-          description: Un modello per ottenere il consenso all'uso di immagini e video
-          link: <a href='https://docs.google.com/document/d/1hz7dNa2eKU1atAr3dzgyZH0W2kETBuDBejk62wEVPL4/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Un modello per ottenere il consenso degli interessati all'uso di immagini o altri contenuti multimediali dove sono ritratti
+          link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Le risorse sono collegamenti esterni che si aprono in una nuova finestra o file PDF da scaricare.
