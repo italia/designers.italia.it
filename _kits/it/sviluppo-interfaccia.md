@@ -17,18 +17,18 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti.</p>
-  <p>Le librerie ti forniscono componenti open-source pronti per l’uso: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.</p>"
+  text: "<p>Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di <strong>strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti.</strong></p>
+  <p>Le librerie ti forniscono componenti <em>open-source</em> pronti per l’uso: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.</p>"
 
 guideLinesChunk:
   title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Sviluppo</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html' target="_blank">Sviluppo</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='#'>Usabilità</a>
-      - <a href='#'>Interfaccia utente</a>
+      - <a href='https://designers.italia.it/kit/test-usabilita/'>Test usabilità</a>
+      - <a href='https://designers.italia.it/kit/progettazione-interfaccia/'>Progettazione interfaccia</a>
 
 footerItems:
   - title: PROFESSIONALITÀ
