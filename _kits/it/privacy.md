@@ -10,6 +10,7 @@ backgroundColor: "#439af1"
 nodate: true
 kitcategory: organizzare
 order: 1
+disabled: true
 
 textChunk1:
   title: A COSA SERVE
