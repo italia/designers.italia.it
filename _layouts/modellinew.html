@@ -70,9 +70,9 @@ layout: default
               {% if item.disabled == true %} style="filter: grayscale(100%); opacity:.6" {% endif %}
               >
                 <div class="u-flexAlignSelfStart u-sizeFull">
-                  {% if item.backgroundImage %}
+                  {% if item.thumbnail %}
                     <!-- card img -->
-                    <img class="u-sizeFull" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.carousel[0].img }}"/>
+                    <img class="u-sizeFull" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.thumbnail }}"/>
                   {% endif %}
                   <!-- card content -->
                   <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" >

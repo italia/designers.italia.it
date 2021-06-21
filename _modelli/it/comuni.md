@@ -4,6 +4,7 @@ lang: it
 layout: download
 description: "Design del sito di un comune: architettura dell’informazione e template HTML"
 backgroundImage : '/assets/images/kits/backgrounds/16_Comuni_Background.png'
+thumbnail: '/assets/images/modelli/comune-2021.png'
 backgroundColor: '#439af1'
 nodate: true
 kitcategory: comuni

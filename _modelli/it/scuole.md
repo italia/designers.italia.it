@@ -4,6 +4,7 @@ lang: it
 layout: download
 description: "Design del sito di una scuola: architettura dell’informazione, template HTML e tema Wordpress"
 backgroundImage: "/assets/images/kits/backgrounds/17_Scuole_Background.png"
+thumbnail: "/assets/images/modelli/scuola-2021.png"
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: scuole
