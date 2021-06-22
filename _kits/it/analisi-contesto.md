@@ -24,7 +24,6 @@ guideLinesChunk:
 rightColumnItems:
   - title: KIT CORRELATI
     items:
-      - <a href='https://designers.italia.it/kit/privacy'>Privacy</a>
       - <a href='https://designers.italia.it/kit/co-progettazione'>Co-progettazione</a>
 
 footerItems:
