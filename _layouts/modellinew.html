@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+
+<div class="super-breadcrumb u-background-white">
+  <div class="u-layout-wide u-layoutCenter u-padding-r-top u-border-bottom-xxs u-padding-r-bottom">
+
+    <!-- header -->
+    <div class="Grid Grid--alignCenter u-padding-all-l  u-color-grey-ui-kit u-margin-top-xxl u-margin-bottom-xxl">
+      <div class="Grid-cell u-lg-size5of12 u-md-size5of12">
+        <h1 class="u-text-h1 ">{{page.header.title}}</h1>
+        <div class="u-text-r-l ">
+          {{page.header.description}}
+        </div>
+        <div class="u-margin-top-xxl u-margin-bottom-m">
+        <ul>
+          {% for link in page.header.links %}
+            <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r u-padding-left-none u-padding-right-xl u-padding-right-xxl">
+              {{link}}
+            </li>
+          {% endfor %}
+        </ul>
+        </div>
+      </div>
+      <div class="Grid-cell u-md-before1of12 u-lg-before1of12 u-md-size3of12 u-lg-size3of12 u-padding-top-s" style="max-width:360px">
+        <img class="u-sizeFull " alt="Modelli." src="{{page.header.image}}" style="height:140px"/>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<article id="modelli" class="">
+
+    {%- for fase in page.fasi -%}
+    <div id="{{ fase.slug }}" class="fase u-padding-top-xxl u-padding-bottom-xxl">
+
+      <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
+
+        <!-- fase header -->
+        <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
+          <div class="faseHead Grid-cell u-lg-size9of12 u-md-size9of12 u-padding-bottom-l">
+            <div class="Grid Grid--withGutterM">
+              <div class="Grid-cell u-lg-size1of1 u-md-size1of1">
+                <h2 id="faseTitle" class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{fase.title}}</h2>
+              </div>
+              <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+                <div class="u-text-r-l  u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-padding-top-s">
+                  {{fase.subtitle}}
+                </div>
+              </div>
+              <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+                <div class="u-text-r-xs u-lineHeight-xl u-layout-prose u-color-grey-ui-kit u-padding-top-s">
+                  {{fase.description}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- kits in fase, grid -->
+        {% assign kits_di_fase = site.modelli | where: 'kitcategory', fase.slug | sort: 'order' %}
+        <div class="u-margin-top-xl Grid Grid--withGutter Grid--alignCenter Grid--equalHeight Grid--fill u-margin-bottom-l">
+          <!-- single kit card -->
+          {%- for item in kits_di_fase  -%}
+            <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of2 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+              <article class="kitCard u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white"
+              {% if item.disabled == true %} style="filter: grayscale(100%); opacity:.6" {% endif %}
+              >
+                <div class="u-flexAlignSelfStart u-sizeFull">
+                  {% if item.thumbnail %}
+                    <!-- card img -->
+                    <img class="u-sizeFull" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.thumbnail }}"/>
+                  {% endif %}
+                  <!-- card content -->
+                  <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" >
+                    <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
+                      {% if item.disabled == true %}
+                        <span id="kitCardTitle">{{item.title}}</span>
+                      {% else %}
+                      <a class="u-textClean u-color-50" href="{{item.url | relative_url}}">
+                        <span id="kitCardTitle">{{item.title}}</span>
+                      </a>
+                      {% endif %}
+                    </h3>
+                    <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          {%- endfor -%}
+        </div>
+
+      </div>
+    </div>
+    {%- endfor -%}
+
+</article>

@@ -8,10 +8,10 @@ $(function() {
   });
 
   $('.lg-showcase > img').on('click', function() {
-      window.location = $(this).attr('src');
+    window.location = $(this).attr('src');
   });
 
-  $('#kitdownloadbutton').on('click', function(e){
+  $('#kitdownloadbutton').on('click', function(e) {
     e.preventDefault();
     $('#kitdownloadlist').toggleClass('u-hidden');
     $(this).find('span').toggleClass('Icon-collapse').toggleClass('Icon-expand');
@@ -21,8 +21,8 @@ $(function() {
     e.preventDefault();
 
     var catkit = $(this).data('selectorclass');
-    var $catdesc = $('.categorykits-desc').not('.'+catkit);
-    var $kits = $('.RelatedKits-cell').not('.'+catkit);
+    var $catdesc = $('.categorykits-desc').not('.' + catkit);
+    var $kits = $('.RelatedKits-cell').not('.' + catkit);
     var $allkits = $('.RelatedKits-cell');
     var $siblingsmenu = $(this).parents('ul').find('a');
 
@@ -31,12 +31,73 @@ $(function() {
 
     $allkits.removeClass('hidden');
     $catdesc.addClass('hidden');
-    $('.categorykits-desc.'+catkit).removeClass('hidden');
+    $('.categorykits-desc.' + catkit).removeClass('hidden');
 
-    if (catkit!='all') {
+    if (catkit != 'all') {
       $kits.addClass('hidden');
     }
 
   });
 
 })
+
+// Helper functions to manage Accordion visual effect (e.g. lines clamp and expand/collapse button)
+$(document).ready(function() {
+  $('[data-accordion-expanded]').on('click', function(e) {
+    const accordionEl = $(this).siblings('.Accordion');
+    const accordionHeader = accordionEl.find('.fr-accordion__header');
+    accordionHeader.click();
+  })
+
+  $('.fr-accordion__header').on('click', function(e) {
+    const accordionHeaderText = $(this).find('[data-accordion-header-text]');
+    if (accordionHeaderText.hasClass('accordion-line-clamp')) {
+      accordionHeaderText.removeClass('accordion-line-clamp');
+    } else {
+      accordionHeaderText.addClass('accordion-line-clamp');
+    }
+
+    const accordionEl = $(this).parents('.Accordion');
+    const expandButtonEl = accordionEl.siblings('[data-accordion-expanded]');
+    if (expandButtonEl.attr('data-accordion-expanded') === "false") {
+      expandButtonEl.attr('data-accordion-expanded', true);
+      expandButtonEl.removeClass('accordion-expand-button-close');
+      expandButtonEl.addClass('accordion-expand-button-open');
+      expandButtonEl.find('img').attr('src', '/assets/images/icons/arrow-up-big.svg');
+    } else {
+      expandButtonEl.attr('data-accordion-expanded', false);
+      expandButtonEl.removeClass('accordion-expand-button-open');
+      expandButtonEl.addClass('accordion-expand-button-close');
+      expandButtonEl.find('img').attr('src', '/assets/images/icons/arrow-down-big.svg');
+    }
+  })
+
+  if ($('[data-accordion-expanded]').length === 1) {
+    // Automatically open if just one accordion
+    // $('[data-accordion-expanded]').click();
+  } else {
+    // Automatically open the 1st accordion
+    // $('[data-accordion-expanded]').first().click();
+  }
+
+  // scroll sticky header...
+  // it glitch unluckily
+  // const el = document.querySelector(".superSticky");
+  // if (el != null) {
+  //   const observer = new IntersectionObserver(
+  //     ([e]) => {
+  //       // if (
+  //       //   e.intersectionRatio < 1 &&
+  //       //   e.intersectionRatio !== 0 &&
+  //       //   e.boundingClientRect.top < 0
+  //       // ) { // top intersecting
+  //       //   e.target.classList.add("isPinned");
+  //       // } else { // inside
+  //       //   e.target.classList.remove("isPinned");
+  //       // }
+  //       e.target.classList.toggle("isPinned", e.intersectionRatio < 1)
+  //     }, { threshold: [1] }
+  //   );
+  //   observer.observe(el);
+  // }
+});

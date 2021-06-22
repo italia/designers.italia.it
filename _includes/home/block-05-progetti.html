@@ -4,7 +4,7 @@
 
     {%- unless include.notitle -%}
     <h2 class="u-text-r-xxl u-textWeight-700 u-color-grey-ui-kit u-textCenter">{{ t.home_projects_title }}</h2>
-    <p class="u-text-r-xl u-textWeight-400 u-color-grey-ui-kit u-padding-top-s u-padding-r-bottom u-textCenter">{{ t.home_projects_subtitle }}</p>
+    <p class="u-text-r-m u-textWeight-400 u-color-grey-ui-kit u-padding-top-s u-padding-r-bottom u-textCenter">{{ t.home_projects_subtitle }}</p>
     {%- endunless -%}
     {% assign projects = site.projects | where: 'lang', active_lang | where: 'highlight', true | sort: 'order' %}
     <div class="u-padding-r-all u-xs-padding-all-none {% unless include.limit > 0 %}owl-carousel owl-theme{% endunless %} {% if include.limit > 0 %}Grid Grid--withGutter Grid--alignMiddle u-flex{% endif %}" role="region" id="carousel-1" tabindex="0" data-carousel-options='{ "dotsContainer": "#customDots", "dots": true }'>
@@ -34,7 +34,7 @@
     </p>
     <div class="u-textCenter u-margin-top-s u-margin-bottom-xxl">
       <a href="{{ page.link_to_projects | relative_url }}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em">
-        <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-xxl u-padding-left-xxl">{{ t.see_all_m }}</span>
+        <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-xxl u-padding-left-xxl">{{ t.home_projects_button }}</span>
         <span class="u-hiddenVisually">{{ t.home_projects }}</span>
       </a>
     </div>

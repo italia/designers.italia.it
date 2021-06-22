@@ -1,0 +1,50 @@
+{% assign showAll = include.showAll %}
+{% assign kitCategory = include.kitCategory %}
+
+<div id="superBreadcrumb" class="super-breadcrumb {% if showAll==false %} superSticky {% endif %}">
+  <div class="superContent">
+    <div class="  u-layout-wide u-layoutCenter u-color-white {% if showAll==false %} u-padding-bottom-xxs u-padding-top-xxs {% endif %}">
+      <nav>
+        <ul>
+          {% if showAll %}
+          <li class="all">
+            <a href="/kit">
+              Tutti
+            </a>
+          </li>
+          {% endif %}
+          <li class="{% if kitCategory == 'organizzare' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="/kit/#organizzare">
+              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/organizzare.svg" />
+              Organizzare
+            </a>
+          </li>
+          <li class="{% if kitCategory == 'comprendere' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="/kit/#comprendere">
+              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/comprendere.svg" />
+              Comprendere
+            </a>
+          </li>
+          <li class="{% if kitCategory == 'progettare' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="/kit/#progettare">
+              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/progettare.svg" />
+              Progettare
+            </a>
+          </li>
+          <li class="{% if kitCategory == 'realizzare' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="/kit/#realizzare">
+              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/realizzare.svg" />
+              Realizzare
+            </a>
+          </li>
+          <li class="{% if kitCategory == 'validare' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="/kit/#validare">
+              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/validare.svg" />
+              Validare
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

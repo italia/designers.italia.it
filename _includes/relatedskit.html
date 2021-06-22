@@ -14,21 +14,21 @@
 
 
 {% if selecteds.size > 0 %}
-	<section class="u-layout-wide u-layoutCenter RelatedKits u-background-grey-10 u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom">
-    <h1 class="u-text-h2 u-textCenter u-color-50">Kit</h1>
-    <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-50 u-padding-bottom-xxl">Trova altri kit di design</h2>
-    <div class="u-margin-top-xl  u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill">
+	<section class="u-layoutCenter RelatedKits u-background-5 u-layout-r-withGutter u-padding-top-xxl u-padding-r-bottom">
+    <h2 class="u-text-h2 u-textCenter u-padding-top-l">Kit</h2>
+    <div class="u-text-r-l u-textCenter u-textWeight-400 u-padding-bottom-xxl">Trova altri kit di design</div>
+    <div class="u-layout-wide u-layoutCenter u-margin-top-xl u-margin-bottom-xl Grid Grid--withGutter Grid--equalHeight Grid--fill">
       {% for item in selecteds | limit: 3 %}
       <div class="RelatedKits-cell Grid-cell u-md-size1of3 u-lg-size1of3 u-flex">
         <article class="u-sizeFull u-padding-r-all u-text-r-xl u-flex u-flexWrap u-flexAlignSelfStretch u-color-white u-backgroundBlendModeMultiply" style="background-color: {{item.backgroundColor}}; background-image: url({{item.carousel[0].img | default: item.backgroundImage}});">
           <div class="u-flexAlignSelfStart">
-            <h2 class="u-text-r-m u-textUppercase u-padding-top-l u-padding-bottom-l ">{{item.kitcategory}}</h2>
-            <h1 class="u-text-r-l u-padding-bottom-l ">
+            <div class="u-text-r-m u-textUppercase u-padding-top-l u-padding-bottom-l ">{{item.kitcategory}}</div>
+            <h3 class="u-text-r-l u-padding-bottom-l ">
               <a href="{{item.url | relative_url}}" class="u-color-white u-textClean">
                 <span>{{item.title}}</span>
               </a>
-            </h1>
-            <h3 class="u-text-r-m u-textWeight-400">{{item.subtitle}}</h3>
+            </h3>
+            <div class="u-text-r-m u-textWeight-400">{{item.subtitle}}</div>
           </div>
         </article>
       </div>

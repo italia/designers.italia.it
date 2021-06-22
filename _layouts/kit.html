@@ -1,0 +1,224 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+{% assign title = page.title %}
+{% assign subtitle = page.subtitle %}
+{% assign image = page.image %}
+{% assign textChunk1 = page.textChunk1 %}
+{% assign rightColumnItems = page.rightColumnItems %}
+{% assign footerItems = page.footerItems %}
+{% assign guideLinesChunk = page.guideLinesChunk %}
+{% assign relatedKits = page.relatedKits %}
+{% assign superAccordion = page.superAccordion %}
+
+
+{% include super_breadcrumb.html kitCategory=page.kitcategory showAll=true %}
+
+<article class="u-color-grey-ui-kit a-text-semi-bold">
+
+  <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
+
+    {% if page.disabled == true %}
+
+        <!-- header kit in lavorazione -->
+        <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+          <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+            <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Kit</div>
+            <h1 class="u-text-h1">{{title}}</h1>
+            <div class="u-text-r-l">
+              {{subtitle}}
+              <p class="u-padding-top-l" style="opacity:.6"><strong><em>Kit in lavorazione</em></strong></p>
+            </div>
+          </div>
+          <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+            {% if page.iconImage %}
+            <img class="u-sizeFull" alt="{{title}}" src="{{ page.iconImage }}"/>
+            {% endif %}
+          </div>
+        </div>
+
+    {% else %}
+
+    <!-- header -->
+    <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+      <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+        <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Kit</div>
+        <h1 class="u-text-h1">{{title}}</h1>
+        <div class="u-text-r-l">
+          {{subtitle}}
+        </div>
+      </div>
+      <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+        {% if page.iconImage %}
+        <img class="u-sizeFull" alt="{{title}}" src="{{ page.iconImage }}"/>
+        {% endif %}
+      </div>
+    </div>
+
+    <!-- intro -->
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+      <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+        <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{textChunk1.title}}</h2>
+        <div class="kitIntro u-layout-prose u-color-grey-ui-kit">
+          {{textChunk1.text}}
+        </div>
+      </div>
+      <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
+        {% if guideLinesChunk.link %}
+        <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{guideLinesChunk.title}}</div>
+          <div class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-margin-right-xxl u-md-margin-right-none u-lg-margin-right-none u-text-r-xxs u-color-grey-ui-kit">
+            {{guideLinesChunk.link}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" />
+          </div>
+        {% endif %}
+          {% for rightColumnItem in rightColumnItems %}
+            {% if forloop.index == 1 %}
+              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom {% if guideLinesChunk.link != null %} u-margin-top-xxl {% endif %}">{{rightColumnItem.title}}</div>
+            {% else %}
+              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
+            {% endif %}
+            <ul>
+              {% for item in rightColumnItem.items %}
+                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r">{{item}}</li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+      </div>
+    </div>
+
+    <!-- images -->
+    {% include kit_images.html %}
+
+    <!-- tools -->
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+      <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+        <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{superAccordion.title}}</h2>
+      </div>
+
+      {% for accordion in superAccordion.accordions %}
+
+      <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-m u-margin-top-l u-margin-bottom-l u-posRelative u-borderRadius-l">
+        <div class="accordion-expand-button-close" data-accordion-expanded="false">
+          <img alt="" src="/assets/images/icons/arrow-down-big.svg">
+        </div>
+        <div class="Accordion fr-accordion js-fr-accordion" id="accordion-{{forloop.index}}">
+
+          <!-- tool header -->
+          <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{forloop.index}}">
+            <div class="Grid Grid--alignCenter Grid--withGutter u-padding-all-s u-md-padding-all-none u-lg-padding-all-none">
+              <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-textCenter u-padding-top-m">
+                <img alt="{{accordion.title}}" src="{{accordion.img}}" style="max-width:144px">
+              </div>
+              <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10 u-padding-bottom-xl u-padding-top-xl">
+                <h3 class="toolTitle u-text-h3 u-color-50">{{accordion.title}}</h3>
+                <div data-accordion-header-text class="accordion-line-clamp u-layout-prose accordion-super-text u-color-grey-ui-kit">
+                  {{accordion.text}}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tool panel -->
+          <div id="accordion-panel-{{forloop.index}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
+
+            <div class="Grid Grid--alignCenter Grid--withGutter u-margin-bottom-m">
+              <div class="Grid-cell u-sm-padding-all-xl u-md-padding-all-xl u-lg-padding-all-xl" style="background-color: #F0F6FC">
+                {% for resource in accordion.resources %}
+                <div class="u-background-white u-margin-all-m
+                            u-padding-top-m u-padding-bottom-m
+                            u-padding-left-s u-padding-right-s
+                            u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
+                            u-borderShadow-m u-margin-bottom-xxl u-borderRadius-m
+                            u-text-r-xxs" style="border-left: 8px solid
+                            {% if resource.disabled == true %} #BEBEBE {% else %} #0066CC {% endif %}
+                            ">
+                  <!-- main resource item -->
+                  <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs"
+                     {% if resource.disabled == true %} style="opacity:.6" {% endif %}
+                     >
+                      <div class="u-textWeight-600 u-text-r-s u-margin-bottom-xxs">{{resource.title}}</div>
+                      <div>{{resource.description}}</div>
+                    </div>
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight"
+                    {% if resource.disabled == true %} style="opacity:.6" {% endif %}
+                    >
+                      {% if resource.disabled == true %}
+                         In lavorazione
+                      {% else %}
+                        {{resource.link}}
+                        {% if resource.icon %}
+                          <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
+                        {% endif %}
+                      {% endif %}
+                    </div>
+                  </div>
+                  {% for otherResource in resource.otherResources %}
+                  <!-- secondary resource item -->
+                  <hr style="border:none;height:1px;background:#C5C7C9"/>
+                  <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
+                      <div>{{otherResource.description}}</div>
+                    </div>
+                    <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
+                      {{otherResource.link}}
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+
+            <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
+              <div class="Grid-cell u-md-before2of10 u-lg-before2of10 u-md-size7of10 u-lg-size7of10 u-md-after1of10 u-lg-after1of10 u-padding-all-s u-text-r-xxs">
+                <div class="Grid Grid--withGutter">
+                  {% for item in accordion.footer %}
+                    <div class="Grid-cell u-lg-size5of10 u-md-size5of10 u-margin-bottom-l u-flex u-flexAlignItemsStart">
+                      <img alt="" src="{{item.icon}}" style="margin: 5px 10px" />
+                      <div>{{item.text}}</div>
+                    </div>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+    <!-- end tools -->
+
+    <!-- profile tags -->
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+      <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+        {% for footerItem in footerItems %}
+          {% if forloop.index == 1 %}
+            <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{footerItem.title}}</div>
+          {% else %}
+            <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{footerItem.title}}</div>
+          {% endif %}
+          <ul>
+            {% for item in footerItem.items %}
+              <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-margin-right-xxl u-text-r-xxs u-color-grey-ui-kit">{{item}}</li>
+            {% endfor %}
+          </ul>
+        {% endfor %}
+      </div>
+    </div>
+
+    {% endif %}
+
+  </div>
+
+  {% if page.tags != nil %}
+      {% if page.disabled != true %}
+        {% include relatedspost.html pagetags=page.tags %}
+      {% endif %}
+  {% endif %}
+
+</article>

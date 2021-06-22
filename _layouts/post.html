@@ -14,7 +14,7 @@ layout: default
 
 <article itemscope itemtype="http://schema.org/BlogPosting" class="u-background-white u-nbfc">
   {% if page.blueBlock %}
-  <div class="page-hero u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover" aria-hidden="true" style="{% include background-style.html %}">BLUE
+  <div class="page-hero u-xs-padding-top-none u-md-flex u-lg-flex u-flexJustifyCenter u-backgroundBlendModeMultiply u-backgroundSizeCover" aria-hidden="true" style="{% include background-style.html %}">
     <div class="Grid Grid--alignCenter u-sizeFull u-flexAlignSelfCenter">
       <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
         <div class="u-textCenter">
@@ -84,7 +84,7 @@ layout: default
             {% if page.asset %}
             {{ page.asset }}
             {% endif %}
-            
+
             {% if page.author %}
               <div itemprop="author" itemscope itemtype="http://schema.org/Person" class="u-layoutCenter u-textCenter">
                 <span itemprop="name" class="u-text-r-xs u-textSecondary">{{ t.by }} {{ page.author }}</span>

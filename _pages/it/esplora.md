@@ -8,37 +8,35 @@ blocks:
   img: /assets/images/kits/placeholders/12_WebDevelopmentKit_Placeholder.png
   button:
   - label: UI kit
-    url: '/kit/ui-kit'
+    url: '/kit/progettazione-interfaccia'
   - label: Web development kit
-    url: '/kit/web-development-kit'
+    url: '/kit/sviluppo-interfaccia'
 - title: Vuoi organizzare l’avvio di un progetto nel migliore dei modi?
   subtitle: Organizza una sessione di lavoro per identificare insieme i problemi e le necessità esistenti e identificare delle soluzioni condivise.
   img: /assets/images/kits/placeholders/03_ResearchPlan_Placeholder.png
   button:
-  - label: Kit co-design workshop
-    url: '/kit/co-design-workshop'
+  - label: Kit co-progettazione
+    url: '/kit/co-progettazione'
   - label: Linee guida user research
     url: 'https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research.html'
 - title: Vuoi migliorare l’usabilità del tuo sito o della tua applicazione?
   subtitle: Osserva quali problemi incontrano gli utenti durante l’utilizzo e individua le criticità più importanti da risolvere.
   img: /assets/images/kits/placeholders/07_UsabilityTest_Placeholder.png
   button:
-  - label: Kit usability test
-    url: '/kit/usability-test'
+  - label: Kit test usabilità
+    url: '/kit/test-usabilita'
 - title: Vuoi una visione chiara degli utenti del tuo servizio?
   subtitle: Crea dei profili che descrivono le diverse tipologie di utenti di un servizio, raccontando le loro motivazioni, aspettative, bisogni e attitudini.
   img: /assets/images/kits/placeholders/01_Personas_Placeholder.png
   button:
-  - label: Kit personas
-    url: '/kit/personas'
-  - label: Kit user stories
-    url: '/kit/user-stories'
+  - label: Kit esperienza utente
+    url: '/kit/esperienza-utente'
 - title: Vuoi un sistema rapido ed efficace di Web Analytics?
   subtitle: Leggi le linee guida di Web Analytics o i casi d’uso su Piwik che abbiamo raccontato sul blog.
   img: /assets/images/kits/placeholders/08_WebAnalytics_Placeholder.png
   button:
   - label: Kit Web Analytics
-    url: '/kit/analytics'
+    url: '/kit/web-analytics'
 redirect_from:
   - /it/come-lo-uso/
   - /come-lo-uso/

@@ -19,24 +19,24 @@
 
 {% if selecteds.size > 0 %}
 	{% assign posts_sorted = (selecteds | sort: "medium_firstpublished_at") | reverse %}
-	<div class="u-layout-wide u-layoutCenter u-background-teal-60 u-color-grey-ui-kit u-layout-r-withGutter u-padding-top-xxl u-padding-bottom-xxl">
-		  <h1 class="u-text-h2 u-textCenter u-color-white">Notizie</h1>
-		  <h2 class="u-text-r-l u-textCenter u-textWeight-400 u-color-white u-padding-bottom-xxl">Scopri come può essere applicato questo kit</h2>
-		  <div class=" u-margin-top-xl Grid Grid--withGutter Grid--equalHeight Grid--fill {% if posts_sorted.size == 2 %}Grid--alignCenter {% endif%}">
+	<div class="u-layoutCenter u-background-5 u-color-grey-ui-kit u-layout-r-withGutter u-margin-top-xxl u-padding-top-xxl u-padding-bottom-xxl">
+		  <h2 class="u-text-h2 u-textCenter u-padding-top-l">Notizie</h2>
+		  <div class="u-text-r-l u-textCenter u-textWeight-400 u-padding-bottom-xxl">Scopri come può essere applicato questo kit</div>
+		  <div class="u-layout-wide u-layoutCenter u-margin-top-xl Grid Grid--withGutter /*Grid--equalHeight*/ Grid--fill {% if posts_sorted.size == 2 %}Grid--alignCenter {% endif%} u-padding-bottom-xxl">
         {% if posts_sorted.size == 1 %}
         {% assign post = posts_sorted[0] %}
         <div class="Grid-cell">
-          <article class="Grid Grid--fill u-background-white u-flexDirectionCol u-md-flexDirectionRow u-lg-flexDirectionRow">
+          <article class="Grid Grid--fill u-background-white u-flexDirectionCol u-md-flexDirectionRow u-lg-flexDirectionRow u-borderShadow-m u-margin-bottom-xl">
             <figure class="Grid-cell u-sizeFull u-md-size2of3 u-lg-size2of3 u-padding-all-xs ">
               <img class="u-sizeFull"
                    src="https://cdn-images-1.medium.com/fit/t/768/480/{{ post.medium_preview_image_id }}" alt="{{post.medium_title}}">
             </figure>
             <header class="Grid-cell u-sizeFull u-md-size1of3 u-lg-size1of3 u-padding-all-l">
-              <h1 class="u-text-h4">
+              <h3 class="u-text-h4">
                 <a href="{{post.medium_url}}" class="u-color-50 u-textClean" target="_blank">
                   {{post.medium_title}}
                 </a>
-              </h1>
+              </h3>
               <p class="u-text-r-xs u-color-grey-40">
                 {{post.medium_subtitle}}
               </p>
@@ -46,7 +46,7 @@
         {% else %}
 		     {% for post in posts_sorted | limit: 3 %}
 		      <div class="Grid-cell u-md-size1of3 u-lg-size1of3">
-		      	<article class="u-background-white">
+		      	<article class="u-background-white u-borderShadow-m u-margin-bottom-xl">
 		      		<figure class="u-sizeFull u-padding-all-xs ">
 		      			<a href="{{post.medium_url}}" class="u-color-50 u-textClean" target="_blank">
                   {% if post.medium_preview_image_id %}
@@ -56,11 +56,11 @@
     					</a>
   					</figure>
 		      		<header class="u-sizeFull u-padding-all-m ">
-		      		<h1 class="u-text-h4">
+		      		<h3 class="u-text-h4">
 				          <a href="{{post.medium_url}}" class="u-color-50 u-textClean" target="_blank">
 				            {{post.medium_title}}
 				          </a>
-				    </h1>
+				    </h3>
 				    <p class="u-text-r-xs u-color-grey-40">
 				    	{{post.medium_subtitle}}
 				    </p>

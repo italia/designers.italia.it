@@ -61,14 +61,16 @@
     {% if include.cta1 != nil %}
     <div class="u-sizeFull u-padding-r-all u-xs-padding-all-none">
       {%- if include.cta1 != nil %}
-      <p><a href="{{include.cta1}}" class="u-background-50 u-color-white u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-textUppercase u-textWeight-700 u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-0auto u-margin-bottom-m">
+      <div>
+        <a href="{{include.cta1}}" class="u-background-50 u-color-white u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-textUppercase u-textWeight-700 u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-borderRadius-s u-borderShadow-m u-margin-0auto u-margin-bottom-m">
           {{ include.cta1Text }}
-        </a></p>
-      {%-endif -%}
-      {%- if include.cta2 != nil %}
-      <p><a href="{{include.cta2}}" class="u-color-50 u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-margin-0auto u-margin-bottom-m">
-        {{ include.cta2Text }}
-      </a></p>
+        </a>
+        {%- if include.cta2 != nil %}
+        <a href="{{include.cta2}}" class="u-color-50 u-padding-top-s u-padding-bottom-s u-text-r-xxs u-textClean u-inlineBlock u-padding-left-xxl u-padding-right-xxl u-margin-0auto u-margin-bottom-m">
+          {{ include.cta2Text }}
+        </a>
+        {%-endif -%}
+      </div>
       {%-endif -%}
     </div>
     {% else %}
