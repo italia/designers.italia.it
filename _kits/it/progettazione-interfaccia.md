@@ -11,7 +11,9 @@ nodate: true
 kitcategory: realizzare
 order: 0
 redirect_from:
+  - /kit/ui-kit/
   - /kit/ui-kit
+  - /kit/ui/
   - /kit/ui
 
 textChunk1:
@@ -51,7 +53,7 @@ superAccordion:
           link: <a href='https://github.com/italia/design-ui-kit' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
           otherResources:
             - description: Come iniziare e come contribuire
-              link: <a href='https://github.com/italia/design-ui-kit#blue_book-come-iniziare' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>   
+              link: <a href='https://github.com/italia/design-ui-kit#blue_book-come-iniziare' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
             - description: Anteprima su Invision
               link: <a href='https://invis.io/RJFGS2UC3HS' target="_blank" aria-label="Vai all'anteprima (link esterno)" >Vai all'anteprima</a>
             - description: Anteprima su Figma

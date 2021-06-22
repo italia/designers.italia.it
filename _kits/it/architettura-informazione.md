@@ -11,6 +11,7 @@ nodate: true
 kitcategory: progettare
 order: 0
 redirect_from:
+  - /kit/information-architecture/
   - /kit/information-architecture
 
 textChunk1:
@@ -73,7 +74,7 @@ superAccordion:
               link: <a href='https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf' aria-label="Vai alla risorsa"  target="_blank">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra. 
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa"
     - title: Costruisci l'architettura dell'informazione

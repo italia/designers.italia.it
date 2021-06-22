@@ -11,6 +11,7 @@ nodate: true
 kitcategory: validare
 order: 0
 redirect_from:
+  - /kit/usability-test/
   - /kit/usability-test
 
 textChunk1:
@@ -46,13 +47,13 @@ superAccordion:
       resources:
         - title: Guida alla pianificazione dei test di usabilità
           icon: "/assets/icons/pencil.svg"
-          description: Istruzioni operative per la pianificazione di sessioni di test di usabilità 
+          description: Istruzioni operative per la pianificazione di sessioni di test di usabilità
           disabled: true
           link: <a target="_blank" href='#' aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Scheda partecipanti
           icon: "/assets/icons/pencil.svg"
           description: Un modello di questionario minimo per la raccolta dei dati anagrafici dei tester
-          link: <a href='https://docs.google.com/document/d/1qoZzPVaIDE8sKg1Fa6JKSG-EPsy_YTtgSlDaV7O4X2c/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>  
+          link: <a href='https://docs.google.com/document/d/1qoZzPVaIDE8sKg1Fa6JKSG-EPsy_YTtgSlDaV7O4X2c/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

@@ -12,6 +12,7 @@ tags:
   - web-development
   - information-architecture
 redirect_from:
+  - /kit/comuni/
   - /kit/comuni
 
 documents:

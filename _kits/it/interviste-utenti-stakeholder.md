@@ -11,6 +11,7 @@ nodate: true
 kitcategory: comprendere
 order: 2
 redirect_from:
+  - /kit/user-interviews/
   - /kit/user-interviews
 
 textChunk1:
@@ -50,7 +51,7 @@ superAccordion:
         - title: Questionario di reclutamento
           icon: "/assets/icons/pencil.svg"
           description: Un set di domande chiuse che permette di profilare e selezionare i partecipanti alle interviste
-          link: <a href='https://docs.google.com/document/d/1NJgv3kgo9YUxAaHLzkMFxWUKbewS8VSijoLNcDh1vcQ/edit#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>  
+          link: <a href='https://docs.google.com/document/d/1NJgv3kgo9YUxAaHLzkMFxWUKbewS8VSijoLNcDh1vcQ/edit#' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

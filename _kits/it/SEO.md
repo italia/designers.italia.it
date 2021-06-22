@@ -11,6 +11,7 @@ nodate: true
 kitcategory: progettare
 order: 4
 redirect_from:
+  - /kit/SEO/
   - /kit/SEO
 
 textChunk1:
@@ -53,7 +54,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Analizza e definisci gli interventi di ottimizzazione
-      text: "<p>Analizza i contenuti del tuo sito e coordina gli interventi di ottimizzazione SEO con il tuo team, definendo le priorità. Puoi personalizzare il foglio di lavoro in base alle tue esigenze, elencando le URL del sito (o di una sua sezione) per cui vuoi condurre un audit. Questa risorsa è pensata per aiutarti ad avere una panoramica sullo stato di revisione dei contenuti.</p>"   
+      text: "<p>Analizza i contenuti del tuo sito e coordina gli interventi di ottimizzazione SEO con il tuo team, definendo le priorità. Puoi personalizzare il foglio di lavoro in base alle tue esigenze, elencando le URL del sito (o di una sua sezione) per cui vuoi condurre un audit. Questa risorsa è pensata per aiutarti ad avere una panoramica sullo stato di revisione dei contenuti.</p>"
       img: "/assets/icons/kit/kit_SEO_interventi.svg"
       resources:
         - title: Ottimizzazione SEO
