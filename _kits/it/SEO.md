@@ -15,7 +15,7 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Le tecniche di ottimizzazione e analisi SEO (search engine optimization ovvero ottimizzazione per i motori di ricerca) hanno l’obiettivo di <strong>migliorare il posizionamento dei contenuti web nei motori di ricerca</strong>, in relazione a specifici argomenti/intenti dell’utente. Nel contesto delle amministrazioni pubbliche ciò significa intervenire sui contenuti e su aspetti strutturali e tecnologici di siti e servizi per <strong>migliorare la trovabilità di informazioni di utilità pubblica da parte dei cittadini.</strong></p>
+  text: "<p>Le tecniche di ottimizzazione e analisi SEO (<em>search engine optimization</em>, ovvero ottimizzazione per i motori di ricerca) hanno l’obiettivo di <strong>migliorare il posizionamento dei contenuti web nei motori di ricerca</strong>, in relazione a specifici argomenti/intenti dell’utente. Nel contesto delle amministrazioni pubbliche ciò significa intervenire sui contenuti e su aspetti strutturali e tecnologici di siti e servizi per <strong>migliorare la trovabilità di informazioni di utilità pubblica da parte dei cittadini.</strong></p>
   <p>Il kit SEO ha l’obiettivo di fornire suggerimenti operativi su come individuare il livello di visibilità dei contenuti sui motori di ricerca, in relazione a specifici “intenti di ricerca”, così come analizzare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico.</p>"
 
 guideLinesChunk:
