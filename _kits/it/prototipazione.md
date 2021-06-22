@@ -11,6 +11,7 @@ nodate: true
 kitcategory: progettare
 order: 3
 redirect_from:
+  - /kit/wireframe-kit/
   - /kit/wireframe-kit
 
 textChunk1:

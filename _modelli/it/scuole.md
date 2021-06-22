@@ -12,6 +12,7 @@ tags:
   - web-development
   - information-architecture
 redirect_from:
+  - /kit/scuole/
   - /kit/scuole
 
 documents:

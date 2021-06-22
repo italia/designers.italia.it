@@ -11,9 +11,10 @@ nodate: true
 kitcategory: realizzare
 order: 1
 redirect_from:
+  - /kit/web-toolkit/
   - /kit/web-toolkit
-  - /web-toolkit
-  - /web-development
+  - /kit/web-development/
+  - /kit/web-development
 
 textChunk1:
   title: A COSA SERVE
@@ -55,7 +56,7 @@ superAccordion:
             - description: Esempi di applicazione di Bootstrap
               link: <a href='https://italia.github.io/bootstrap-italia/docs/esempi/' target="_blank" aria-label="Vai agli esempi (link esterno)" >Vai agli esempi</a>
             - description: Esempi di progetti basati su Bootstrap
-              link: <a href='https://italia.github.io/bootstrap-italia/docs/progetti/' target="_blank" aria-label="Vai ai progetti (link esterno)" >Vai ai progetti</a>   
+              link: <a href='https://italia.github.io/bootstrap-italia/docs/progetti/' target="_blank" aria-label="Vai ai progetti (link esterno)" >Vai ai progetti</a>
         - title: React
           icon: "/assets/icons/pencil.svg"
           description: Design React per la Pubblica Amministrazione

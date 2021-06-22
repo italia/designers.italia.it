@@ -11,6 +11,7 @@ nodate: true
 kitcategory: comprendere
 order: 0
 redirect_from:
+  - /kit/ecosystem-map/
   - /kit/ecosystem-map
 
 textChunk1:

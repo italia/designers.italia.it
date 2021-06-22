@@ -11,6 +11,7 @@ nodate: true
 kitcategory: progettare
 order: 2
 redirect_from:
+  - /kit/content-kit/
   - /kit/content-kit
 
 textChunk1:
@@ -49,11 +50,11 @@ superAccordion:
         - title: Guida al linguaggio per la Pubblica Amministrazione
           icon: "/assets/icons/pencil.svg"
           description: La guida operativa per reperire regole, indicazioni e suggerimenti per l'uso del linguaggio in contenuti e servizi della PA
-          link: <a href='https://docs.italia.it/italia/designers-italia/writing-toolkit/' target="_blank" aria-label="Vai alla guida (link esterno)">Vai alla guida</a>  
+          link: <a href='https://docs.italia.it/italia/designers-italia/writing-toolkit/' target="_blank" aria-label="Vai alla guida (link esterno)">Vai alla guida</a>
         - title: Esercizio di editing collaborativo
           icon: "/assets/icons/pencil.svg"
           description: Un esercizio per migliorare i contenuti digitali grazie a un percorso di editing collaborativo
-          link: <a href='https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>  
+          link: <a href='https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

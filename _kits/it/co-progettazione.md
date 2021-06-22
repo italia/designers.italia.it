@@ -11,6 +11,7 @@ nodate: true
 kitcategory: progettare
 order: 1
 redirect_from:
+  - /kit/co-design-workshop/
   - /kit/co-design-workshop
 
 textChunk1:

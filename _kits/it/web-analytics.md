@@ -11,6 +11,7 @@ nodate: true
 kitcategory: validare
 order: 1
 redirect_from:
+  - /kit/analytics/
   - /kit/analytics
 
 textChunk1:

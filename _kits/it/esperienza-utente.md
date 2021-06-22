@@ -11,7 +11,9 @@ nodate: true
 kitcategory: comprendere
 order: 1
 redirect_from:
+  - /kit/user-stories/
   - /kit/user-stories
+  - /kit/user-journey/
   - /kit/user-journey
 
 textChunk1:
