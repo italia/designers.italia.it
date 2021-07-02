@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Come progettare per una transizione al digitale"
 subtitle: "Rinnovata la sezione kit di Designers Italia"
-asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
+asset: 
 date: 2021-07-03 16:00:00 +0200
 pinned: false
 nodate: false
