@@ -33,9 +33,9 @@ footerItems:
 superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
-    - title: Rispetta la privacy per il go-live di un servizio digitale
+    - title: "Rispetta la privacy per il <em>go-live</em> di un servizio digitale"
       text: "<p>Quando progetti la messa on line di un servizio devi considerare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali (art.4, punto 1 del GDPR). Tra le casistiche più frequenti che richiedono un trattamento di dati personali ti ricordiamo: l’invio di una newsletter, la registrazione/sottoscrizione mediante compilazione di un form, la presenza di una sezione <em>Contatti</em>, la ricezione di candidature o la gestione dei cookie.</p>
-      <p>Ricorda che per ciascuna di queste casistiche, e nel rispetto del principio di minimizzazione, ti è consentito richiedere esclusivamente i dati strettamente necessari all’erogazione del servizio.</p>"
+      <p>Ricorda che per ciascuna di queste casistiche, e nel rispetto del principio di minimizzazione, ti è consentito richiedere <strong>esclusivamente i dati strettamente necessari all’erogazione del servizio</strong>.</p>"
       img: "/assets/icons/kit/kit_privacy_lancio.svg"
       resources:
         - title: "Privacy by design e privacy by default"
@@ -53,6 +53,10 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: "Una risorsa che contiene informazioni utili e suggerimenti per la gestione del consenso legato all'uso dei cookie"
           link: <a href='https://docs.google.com/document/d/1ChKavo4luDearddgPfD56KahRgpe91Qrej6rNLq_w-E/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+        - title: Modello di informativa per l'invio di newsletter
+          icon: "/assets/icons/pencil.svg"
+          description: "Un modello di informativa di primo livello dedicata all'invio di una newsletter"
+          link: <a href='https://docs.google.com/document/d/1tE6wL2eOJEW6_ru307eE6piDqGDHII6UQvHGJ3VSG8Q/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: "Come escludere i cookie di terze parti dai contenuti multimediali incorporati"
           icon: "/assets/icons/pencil.svg"
           description: "Istruzioni per escludere il tracciamento di cookie di terze parti dai contenuti multimediali incorporati"
@@ -63,13 +67,17 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Rispetta la privacy quando coinvolgi gli utenti nella ricerca
-      text: "<p>Quando fai attività di ricerca utente finalizzata alla progettazione del tuo servizio digitale, ad esempio somministrando interviste o conducendo dei test di usabilità, devi occuparti di come gestire il consenso al trattamento dei dati personali degli utenti coinvolti in queste attività. In questa sezione puoi trovare alcuni modelli già pronti di informativa per il trattamento dei dati personali delle persone coinvolte in attività di ricerca utente, suddivisi in base al caso d'uso.</p>"
+      text: "<p>Quando fai attività di ricerca utente finalizzata alla progettazione del tuo servizio digitale, ad esempio somministrando interviste o conducendo dei test di usabilità, devi occuparti di come gestire il consenso al trattamento dei dati personali degli utenti coinvolti in queste attività.</p> <p>In questa sezione trovi alcuni modelli già pronti di informativa per il trattamento dei dati personali delle persone coinvolte in attività di ricerca utente, suddivisi in base al caso d'uso.</p>"
       img: "/assets/icons/kit/kit_privacy_utenti.svg"
       resources:
         - title: "Suggerimenti per le attività di ricerca utente"
           icon: "/assets/icons/pencil.svg"
           description: "Suggerimenti per il rispetto della normativa privacy durante le attività di ricerca utente"
           link: <a href='https://docs.google.com/document/d/1yu3n-3HfzcAf5D-LtQlCqG0vJ8dSdCjRk9KCSFS4bjo/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+        - title: "Suggerimenti per la somministrazione di questionari"
+          icon: "/assets/icons/pencil.svg"
+          description: "Suggerimenti per la gestione dei dati personali relativa ai questionari"
+          link: <a href='https://docs.google.com/document/d/183f3aiDqLqi63XTTCovpRYiQDi530Dph7tRWaweu62Y/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Modello di liberatoria per interviste utente
           icon: "/assets/icons/pencil.svg"
           description: "Un modello di liberatoria per ottenere il consenso dei partecipanti alla registrazione dell'intervista"
@@ -84,7 +92,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Rispetta la privacy quando usi i social network
-      text: "<p>Se come Ente pubblico utilizzi i social network per rivolgerti ai tuoi utenti, devi tenere in considerazione tutti gli aspetti legati al consenso al trattamento dei dati dei tuoi follower. Le risorse di questa sezione ti forniscono informazioni utile per essere adempiente alla normativa privacy anche quando fai uso di iniziative di comunicazione o altre forme di partecipazione che coinvolgono i tuoi utenti mediante questi canali.</p>"
+      text: "<p>Se come Ente pubblico utilizzi i social network per rivolgerti ai tuoi utenti, devi tenere in considerazione tutti gli aspetti legati al consenso al trattamento dei dati dei tuoi <em>follower</em>.</p> <p>Le risorse di questa sezione ti forniscono informazioni utili per essere adempiente alla normativa privacy anche quando fai uso di iniziative di comunicazione o altre forme di partecipazione che coinvolgono i tuoi utenti mediante questi canali.</p>"
       img: "/assets/icons/kit/kit_privacy_social.svg"
       resources:
         - title: Gestire il trattamento dati dei follower
