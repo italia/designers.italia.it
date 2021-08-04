@@ -1,0 +1,49 @@
+---
+layout: post
+lang: it
+excerpt_separator: <!-- MORE -->
+title: "Per una vacanza da Designers"
+subtitle: "I suggerimenti di lettura del team di Designers Italia per non annoiarsi sotto l’ombrellone"
+asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
+date: 2021-08-04 19:00:00 +0200
+pinned: false
+nodate: false
+homeBottomLink: false
+homeHideCategories: true
+date_prepend: "Articolo"
+categories:
+  - cittadini
+  - pubblica amministrazione
+  - design
+---
+
+<!-- MORE -->
+E’ tempo di vacanze! Mare, montagna, città, provincia, estero o Italia: quale che sia la destinazione, quello che non può mancare nella valigia di un designer è un buon libro, magari proprio quello che, durante l’anno, abbiamo lasciato sui mobili di casa per mesi. 
+
+Per chi, invece, fosse in cerca di consigli, **ecco una selezione di titoli da parte di ciascuno di noi**. Con l’augurio di passare delle spensierate vacanze, o comunque di staccare dalla routine almeno per qualche giorno. 
+
+* **Claudia**, Service designer - Sotto l’ombrellone sto leggendo “[Ruined by Design, How Designers Destroyed the World, and What We Can Do to Fix It](https://www.ruinedby.design/){:target="_blank" rel="noopener noreferrer"}” di Mike Monteiro: un libro impegnato, critico ma costruttivo, che riflette sull’etica del lavoro del designer. In particolare si focalizza sulla **responsabilità del progettista verso le persone** e la società nel progettare esperienze nell’era digitale. L’autore ci ricorda che siamo una *community* professionale, non solo di interessi e opportunità, e come tale, dobbiamo attivarci per poter incidere eticamente sul mondo. Il libro contiene una prima stesura de “[Il Codice Etico del Designer](https://github.com/mmmonteiro/designethics/blob/master/it_IT.md){:target="_blank" rel="noopener noreferrer"}”, che è anche su Github pronto per essere migliorato in piena ottica open.
+
+* **Cristina**, UX Designer - “[8 secondi. Viaggio nell’era della distrazione](https://www.ilsaggiatore.com/libro/8-secondi/){:target="_blank" rel="noopener noreferrer"}” di Lisa Iotti. Sappiamo già che **le tecnologie non sono neutrali**, lo sappiamo da tanto tempo. Forse non abbiamo però ancora realizzato quanto ci condizionano, non solo in termini di abitudini, ma di strutture cognitive, al punto da influire sulla nostra postura, sulla socialità, sul modo in cui parliamo o scriviamo, sulla nostra capacità di prestare attenzione. Un libro godibile, che vi spaventerà anche un po’. Sempre che riusciate a leggerlo senza distrarvi ogni 8 secondi!
+
+* **Daniela**, Content designer - “[UX Writing. Micro testi, macro impatto. Come parole ed emozioni guidano gli utenti nella navigazione](https://www.hoepli.it/libro/ux-writing/9788820390587.html){:target="_blank" rel="noopener noreferrer"}” di Serena Giust. Emozioni (e parole) che guidano gli utenti nella navigazione di siti e app. Uno snello e ottimo manuale - dedicato a **una tematica ancora semi sconosciuta in Italia** - che sottolinea il lato “empatico” (e l’assoluta importanza) della scrittura destinata a migliorare l’esperienza utente, oltre che la necessità di procedere - UX/UI designer e UX writer - sempre “a braccetto” nella progettazione.
+
+* **Daniele**, UX/UI designer - “[User Friendly: How the Hidden Rules of Design Are Changing the Way We Live, Work, and Play](https://www.goodreads.com/book/show/41940285-user-friendly){:target="_blank" rel="noopener noreferrer"}” di Cliff Kuang e Robert Fabricant. *“Alla mia famiglia e amici. Spero che questo spieghi una volta per tutte quello che faccio ogni giorno e perché è importante.”* — Questa la dedica di Robert Fabricant in apertura. Direi che è decisamente il motivo per cui consiglio questo libro. **Tra incidenti nucleari, macchine da guerra e tasti like**, cose decisamente andate male e cose meno. Un’avvincente lettura fatta di sfumature e strategie per progettare prodotti sempre più “amichevoli”. Con tutti i *dark pattern* che possono venire a mente. Un bel libro insomma, poi mi dite.
+
+* **Francesco**, Service owner - Tra i nostri consigli certo non può mancare “[Good Services](https://good.services){:target="_blank" rel="noopener noreferrer"}” di Lou Downe, una “guida pratica” su **come progettare e misurare la qualità dei servizi digitali**, suddiviso in [15 principi](https://good.services/15-principles-of-good-service-design){:target="_blank" rel="noopener noreferrer"}, scritto dal punto di vista di un *public servant* e con molti esempi derivanti dall'esperienza dell'autore; sicuramente un riferimento utilissimo per chiunque si occupi di servizi digitali. Ma anche “[Verso la foce](https://it.wikipedia.org/wiki/Verso_la_foce){:target="_blank" rel="noopener noreferrer"}”, di Gianni Celati, **un libro sull'osservazione della realtà** e dei comportamenti delle persone, per diventare più sensibili allo spazio attraverso incontri casuali e nuovi modi di scoperta di ciò che ci circonda. *“Certuni vanno in viaggio e guardano solo quello che gli hanno detto di guardare. E se non gli hanno detto cosa devono guardare si sentono persi. Ma io mi chiedo: ‘È meglio sentirsi persi o guardare solo quello che ti hanno detto di guardare?’”*
+
+* **Ilaria**, Service designer: per acquisire maggiore consapevolezza dei cambiamenti che stanno investendo la nostra società  suggerisco “[La quarta rivoluzione. Come l'infosfera sta trasformando il mondo](https://www.raffaellocortina.it/scheda-libro/luciano-floridi/la-quarta-rivoluzione-9788860309334-2638.html){:target="_blank" rel="noopener noreferrer"}” di Luciano Floridi. Troverete riflessioni utili a destreggiarsi tra opportunità e insidie di una realtà iperconnessa dove **il confine tra online e offline diventa sempre più sottile**. Il filosofo parte dall’assunto che le moderne tecnologie dell’informazione e della comunicazione stiano cambiando radicalmente non solo il modo in cui interagiamo con gli altri, ma la percezione di noi stessi. Una vera e propria rivoluzione, quindi, che porta a considerare l’uomo come *‘organismo informazionale, connesso con gli altri, e parte di un ambiente informazionale condiviso’*. Floridi  suggerisce perciò di considerare *‘sia le realtà naturali che quelle artificiali’* in quanto queste ultime possono giocare un ruolo chiave nel promuovere il benessere sociale e la crescita individuale. Ottimi spunti per chi come i designer, ci sta provando da un pezzo!
+
+* **Marco Maria**, Head of design - “[A City Is Not a Tree](https://en.m.wikipedia.org/wiki/A_City_Is_Not_a_Tree){:target="_blank" rel="noopener noreferrer"}” di Christopher Alexander, L’autore, architetto molto amato dagli informatici (leggendo scoprirete il perchè…) ha analizzato la città per capirne gli archetipi, i pattern che si ripetono all’interno dell’enorme complessità degli spazi urbani di tutto il mondo. In un certo senso **il libro racconta come i sistemi complessi si “addomesticano” con il design**. Poi, per bilanciare questo eccesso di zelo metodologico, suggerisco anche “[Lo zen e l’arte della manutenzione della motocicletta](https://www.adelphi.it/libro/9788845907340){:target="_blank" rel="noopener noreferrer"}”, in cui l’autore, Robert M. Pirsig, attraverso la metafora del viaggio in moto ci porta alla scoperta di cosa sia la Qualità, e come si raggiunga attraverso vie talvolta lisce e dirette, altre volte ripide e tortuose.
+
+* **Matteo**, Content designer - “[Too much information](https://mitpress.mit.edu/books/too-much-information){:target="_blank" rel="noopener noreferrer"}” di Cass Sunstein. Quante calorie ha la bibita che amiamo sorseggiare? E quante, invece, la confezione di gelato che intendiamo acquistare? Poter confrontare simili informazioni ha sicuramente migliorato la qualità di vita delle persone; ma **gli stessi contenuti possono avere, in realtà, anche effetti controproducenti**: alcune fasce della popolazione, ad esempio, possono essere indotte a pensare “più calorie, più energia a disposizione”, vanificando gli effetti positivi del *‘nudge’* informativo. E sono proprio questi aspetti che Sunstein esplora nel suo libro, non dimenticando l’impatto della trasparenza sui mercati e quello di un elemento chiave, nel successo di una strategia informativa: il ruolo giocato dalle emozioni.
+
+* **Mauro**, Service designer -  “[The Politics of design: a (not so) global Manual for Visual communication](https://mitpress.mit.edu/books/too-much-information){:target="_blank" rel="noopener noreferrer"}” di Ruben Pater. **Un contromanuale per ripensare alle implicazioni politiche ed etiche del design**. Un invito a decolonizzarlo e a ripensare in modo integrale al Design for All, riprendendo consapevolezza dei nostri privilegi e delle nostre responsabilità, a tutte le scale. #inclusività #sostenibilità #accessibilità #equità #responsabilità
+
+* **Michela**, Comunicazione - “[#Service designer. Il progettista alle prese con sistemi complessi](https://www.francoangeli.it/Ricerca/scheda_libro.aspx?Id=25177){:target="_blank" rel="noopener noreferrer"}” di Roberta Tassi. Un libro ricco di spunti, sia per coloro che hanno fatto del service design la loro professione, ma **anche per chi collabora a vario titolo nei progetti di innovazione**. Il testo offre, in maniera semplice e chiara, strumenti e indicazioni utili per figure con background diversi e aiuta ad adottare un approccio di progettazione più orientato all’utente.  
+
+
+<div class="u-text-xxs u-textRight u-textItalic u-margin-bottom-xl">
+  Fotografia di <a href="https://unsplash.com/@patriotbarrow" target="_blank">Elena G</a> su <a href="https://unsplash.com/photos/3w1XBUGj4ds" target="_blank">Unsplash</a>
+</div>
+
