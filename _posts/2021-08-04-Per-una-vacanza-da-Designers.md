@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Per una vacanza da Designers"
 subtitle: "I suggerimenti di lettura del team di Designers Italia per non annoiarsi sotto l’ombrellone"
-asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Un cittadino che utilizza una piattaforma di commercio online" />
+asset: <img class="u-sizeFull" src="/assets/images/posts/2021-08-04-Consiglidilettura.jpg" alt="una persona che legge un libro in spiaggia" />
 date: 2021-08-04 19:00:00 +0200
 pinned: false
 nodate: false
@@ -18,9 +18,9 @@ categories:
 ---
 
 <!-- MORE -->
-E’ tempo di vacanze! Mare, montagna, città, provincia, estero o Italia: quale che sia la destinazione, quello che non può mancare nella valigia di un designer è un buon libro, magari proprio quello che, durante l’anno, abbiamo lasciato sui mobili di casa per mesi. 
+E’ tempo di vacanze! Mare, montagna, città, provincia, estero o Italia: quale che sia la destinazione, quello che non può mancare nella valigia di un designer è un buon libro, magari proprio quello che, durante l’anno, abbiamo lasciato sui mobili di casa per mesi.
 
-Per chi, invece, fosse in cerca di consigli, **ecco una selezione di titoli da parte di ciascuno di noi**. Con l’augurio di passare delle spensierate vacanze, o comunque di staccare dalla routine almeno per qualche giorno. 
+Per chi, invece, fosse in cerca di consigli, **ecco una selezione di titoli da parte di ciascuno di noi**. Con l’augurio di passare delle spensierate vacanze, o comunque di staccare dalla routine almeno per qualche giorno.
 
 * **Claudia**, Service designer - Sotto l’ombrellone sto leggendo “[Ruined by Design, How Designers Destroyed the World, and What We Can Do to Fix It](https://www.ruinedby.design/){:target="_blank" rel="noopener noreferrer"}” di Mike Monteiro: un libro impegnato, critico ma costruttivo, che riflette sull’etica del lavoro del designer. In particolare si focalizza sulla **responsabilità del progettista verso le persone** e la società nel progettare esperienze nell’era digitale. L’autore ci ricorda che siamo una *community* professionale, non solo di interessi e opportunità, e come tale, dobbiamo attivarci per poter incidere eticamente sul mondo. Il libro contiene una prima stesura de “[Il Codice Etico del Designer](https://github.com/mmmonteiro/designethics/blob/master/it_IT.md){:target="_blank" rel="noopener noreferrer"}”, che è anche su Github pronto per essere migliorato in piena ottica open.
 
@@ -40,7 +40,7 @@ Per chi, invece, fosse in cerca di consigli, **ecco una selezione di titoli da p
 
 * **Mauro**, Service designer -  “[The Politics of design: a (not so) global Manual for Visual communication](https://mitpress.mit.edu/books/too-much-information){:target="_blank" rel="noopener noreferrer"}” di Ruben Pater. **Un contromanuale per ripensare alle implicazioni politiche ed etiche del design**. Un invito a decolonizzarlo e a ripensare in modo integrale al Design for All, riprendendo consapevolezza dei nostri privilegi e delle nostre responsabilità, a tutte le scale. #inclusività #sostenibilità #accessibilità #equità #responsabilità
 
-* **Michela**, Comunicazione - “[#Service designer. Il progettista alle prese con sistemi complessi](https://www.francoangeli.it/Ricerca/scheda_libro.aspx?Id=25177){:target="_blank" rel="noopener noreferrer"}” di Roberta Tassi. Un libro ricco di spunti, sia per coloro che hanno fatto del service design la loro professione, ma **anche per chi collabora a vario titolo nei progetti di innovazione**. Il testo offre, in maniera semplice e chiara, strumenti e indicazioni utili per figure con background diversi e aiuta ad adottare un approccio di progettazione più orientato all’utente.  
+* **Michela**, Comunicazione - “[#Service designer. Il progettista alle prese con sistemi complessi](https://www.francoangeli.it/Ricerca/scheda_libro.aspx?Id=25177){:target="_blank" rel="noopener noreferrer"}” di Roberta Tassi. Un libro ricco di spunti, sia per coloro che hanno fatto del service design la loro professione, ma **anche per chi collabora a vario titolo nei progetti di innovazione**. Il testo offre, in maniera semplice e chiara, strumenti e indicazioni utili per figure con background diversi e aiuta ad adottare un approccio di progettazione più orientato all’utente.
 
 
 <div class="u-text-xxs u-textRight u-textItalic u-margin-bottom-xl">
