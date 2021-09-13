@@ -17,10 +17,9 @@ categories:
   - imprese
 ---
 
-<!-- MORE -->
-<div class="u-text-xs u-textCenter u-textItalic u-margin-bottom-xl">Didascalia</div>
-
 Dopo la pausa estiva tornano le community call di Designers Italia e Developers Italia: spazi di confronto pensati per condividere idee, scambiare buone pratiche, costruire sinergie e creare occasioni d’incontro.
+
+<!-- MORE -->
 
 Il prossimo appuntamento si terrà il **22 settembre alle ore 15.30** e sarà dedicato al riutilizzo dei [modelli](https://designers.italia.it/#i-modelli){:target="_blank" rel="noopener noreferrer"} messi a disposizione da Designers Italia in settori diversi da quelli per i quali sono stati pensati ([Comuni](https://designers.italia.it/progetti/siti-web-comuni/){:target="_blank" rel="noopener noreferrer"} e [scuole](https://designers.italia.it/progetti/siti-web-scuole/){:target="_blank" rel="noopener noreferrer"}) come, per esempio, quello sanitario, per l’ideazione del sito web di un’azienda sanitaria, o universitario, per lo sviluppo di un sito di orientamento allo studente. 
 
