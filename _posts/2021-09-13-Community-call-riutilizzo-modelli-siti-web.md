@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Community call: esperienze di riutilizzo dei modelli per siti web pubblici"
 subtitle: "Tornano gli appuntamenti mensili dedicati alla community"
-asset: <img class="u-sizeFull" src="/assets/images/posts/2021-01-27-news-viciniconnessi.jpg" alt="Gruppo di persone collabora al computer" />
+asset: <img class="u-sizeFull" src="/assets/images/posts/community_call_PH_annie-spratt-unsplash.jpg" alt="Gruppo di persone collabora al computer" />
 date: 2021-09-13 14:00:00 +0200
 pinned: false
 nodate: false
