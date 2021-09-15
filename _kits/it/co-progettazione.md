@@ -58,7 +58,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: "Un touchpoint digitale: pianifica e conduci una sessione di co-progettazione"
-      text: "<p>Questa risorsa ti aiuta a organizzazione una sessione di co-progettazione di un <em>touchpoint</em> digitale (sito, app, piattaforma...). Ti supporta in particola  nella attività di definizione di un’agenda della sessione di lavoro condiviso e ti propone una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato desiderato.</p>
+      text: "<p>Questa risorsa ti aiuta a organizzare una sessione di co-progettazione di un <em>touchpoint</em> digitale (sito, app, piattaforma...). Ti supporta in particolare nell'attività di definizione di un’agenda della sessione di lavoro condiviso e ti propone una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi e raggiungere il risultato desiderato.</p>
       </p>I partecipanti potenziali sono: personale della Pubblica Amministrazione, aziende private coinvolte nel progetto, associazioni di categoria interessate, organizzazioni che rappresentano i comuni, organizzazioni che rappresentano i cittadini, utenti del servizio (i cittadini), operatori allo sportello.Tra le attività suggerite troviamo la definizione delle personas, la creazione degli scenari d’uso e definizione dei flussi di interazione.</p>"
       img: "/assets/icons/kit/kit_coprog_touchpoint.svg"
       resources:
