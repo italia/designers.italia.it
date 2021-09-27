@@ -18,7 +18,6 @@ categories:
 ---
 
 <!-- MORE -->
-<div class="u-text-xs u-textCenter u-textItalic u-margin-bottom-xl">Didascalia</div>
 
 Dopo la pausa estiva, sono ripartite le community call: il 22 settembre abbiamo parlato delle **esperienze di riuso dei modelli e kit messi a disposizione da Designers Italia**, in origine pensati per comuni e scuole, e in questo caso utilizzati anche in altri settori.
 
