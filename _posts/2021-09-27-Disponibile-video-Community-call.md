@@ -25,4 +25,4 @@ Tra i protagonisti dell’incontro abbiamo ascoltato Giulio Burroni, project man
 
 Per tutti quelli che non hanno potuto seguire la call, **[il video dell’incontro](https://www.youtube.com/watch?v=q0Uh_5SOCFA){:target="_blank" rel="noopener noreferrer"}** è disponibile sul canale YouTube del Dipartimento per la trasformazione digitale. Se vuoi **restare in contatto con la community e raccontare la tua esperienza** con i modelli e kit in riuso, puoi interagire su [Slack](https://developersitalia.slack.com/ssb/redirect){:target="_blank" rel="noopener noreferrer"} e rimanere aggiornato seguendo Designers Italia e Developers Italia anche su [Twitter](https://twitter.com/designersita?lang=it){:target="_blank" rel="noopener noreferrer"}.
 
-E  ora, è già il momento di annunciare la prossima data: **le community call tornano il 27 novembre**. Ti aspettiamo!
+E  ora, è già il momento di annunciare la prossima data: **le community call tornano il 27 ottobre**. Ti aspettiamo!
