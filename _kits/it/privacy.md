@@ -33,8 +33,8 @@ footerItems:
 superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
-    - title: "Privacy:parti dalle basi"
-      text: "<p>Se come Ente pubblico utilizzi i social network per rivolgerti ai tuoi utenti, devi tenere in considerazione tutti gli aspetti legati al consenso al trattamento dei dati dei tuoi <em>follower</em>.</p> <p>Le risorse di questa sezione ti forniscono informazioni utili per essere adempiente alla normativa privacy anche quando fai uso di iniziative di comunicazione o altre forme di partecipazione che coinvolgono i tuoi utenti mediante questi canali.</p>"
+    - title: "Privacy, parti dalle basi"
+      text: "<p>Le risorse di questo kit ti forniscono informazioni e modelli utili per essere adempiente alla normativa privacy in vigore. Prima di approfondire la documentazione proposta, ricorda di verificare che il sito del tuo ente contenga almeno le basi richieste dalla normativa GDPR, come le informative sul trattamento dei dati personali.</p>"
       img: "/assets/icons/kit/kit_privacy_social.svg"
       resources:
         - title: Gestire il trattamento dati dei follower
@@ -47,7 +47,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: "Consenso si, consenso no"
-      text: "<p>Se come Ente pubblico utilizzi i social network per rivolgerti ai tuoi utenti, devi tenere in considerazione tutti gli aspetti legati al consenso al trattamento dei dati dei tuoi <em>follower</em>.</p> <p>Le risorse di questa sezione ti forniscono informazioni utili per essere adempiente alla normativa privacy anche quando fai uso di iniziative di comunicazione o altre forme di partecipazione che coinvolgono i tuoi utenti mediante questi canali.</p>"
+      text: "<p>Tieni in considerazione tutti gli aspetti necessari per comprendere quando richiedere ai tuoi utenti il consenso per il trattamento dei dati personali...</p>"
       img: "/assets/icons/kit/kit_privacy_social.svg"
       resources:
         - title: Gestire il trattamento dati dei follower
