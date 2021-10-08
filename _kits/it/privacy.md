@@ -37,20 +37,11 @@ superAccordion:
       text: "<p>Le risorse di questo kit ti forniscono informazioni e modelli utili per essere adempiente alla normativa privacy in vigore. Prima di approfondire la documentazione proposta, ricorda di verificare che il sito del tuo ente contenga almeno le basi richieste dalla normativa GDPR, come le informative sul trattamento dei dati personali.</p>"
       img: "/assets/icons/kit/kit_privacy_utenti.svg"
       resources:
-        - title: Gestire il trattamento dati dei follower
+        - title: "Le basi del sito web: informativa, architettura, DPO"
           icon: "/assets/icons/pencil.svg"
           description: "Informazioni utili per gestire il consenso al trattamento dati dei follower nelle iniziative di comunicazione e partecipazione"
           link: <a href='https://docs.google.com/document/d/1QfHULA8ldyhxjVaVytaM6HCOjbPt76iKQNPYutgYHxQ/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
-      footer:
-        - icon: "/assets/icons/external-link-grey.svg"
-          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-        - icon: "/assets/icons/info-grey.svg"
-          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-    - title: "Consenso si, consenso no"
-      text: "<p>Tieni in considerazione tutti gli aspetti necessari per comprendere quando richiedere ai tuoi utenti il consenso per il trattamento dei dati personali...</p>"
-      img: "/assets/icons/kit/kit_privacy_social.svg"
-      resources:
-        - title: Gestire il trattamento dati dei follower
+        - title: "Consenso si, consenso no"
           icon: "/assets/icons/pencil.svg"
           description: "Informazioni utili per gestire il consenso al trattamento dati dei follower nelle iniziative di comunicazione e partecipazione"
           link: <a href='https://docs.google.com/document/d/1QfHULA8ldyhxjVaVytaM6HCOjbPt76iKQNPYutgYHxQ/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
