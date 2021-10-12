@@ -43,12 +43,12 @@ superAccordion:
       resources:
         - title: "Le basi del sito web: informativa, architettura, DPO"
           icon: "/assets/icons/pencil.svg"
-          description: "Informazioni utili per gestire il consenso al trattamento dati dei follower nelle iniziative di comunicazione e partecipazione"
-          link: <a href='https://docs.google.com/document/d/1QfHULA8ldyhxjVaVytaM6HCOjbPt76iKQNPYutgYHxQ/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
+          description: "Informazioni utili per gestire le basi del sito web..."
+          link: <a href='https://docs.google.com/document/d/1RPOA6UthFxl0Xqa7Lm0NtdkMZ1cTgFzPGicr_8RZZ1M/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
         - title: "Consenso si, consenso no"
           icon: "/assets/icons/pencil.svg"
-          description: "Informazioni utili per gestire il consenso al trattamento dati dei follower nelle iniziative di comunicazione e partecipazione"
-          link: <a href='https://docs.google.com/document/d/1QfHULA8ldyhxjVaVytaM6HCOjbPt76iKQNPYutgYHxQ/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
+          description: "Informazioni utili per gestire il consenso al trattamento dati degli utenti"
+          link: <a href='https://docs.google.com/document/d/1crsDAJkETOTfYsO5SA5qtr5pPYpUj6wFEhow5MqqECk/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
