@@ -16,6 +16,11 @@ textChunk1:
   text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di <strong>quali categorie di dati personali stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore</strong>. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
   <p>Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti alcune delle <strong>informazioni di base e una serie di modelli utili per aiutarti a trattare correttamente i dati personali riferiti ai principali casi d'uso </strong>che dovrai gestire progettando e realizzando un servizio digitale.</p>"
 
+alert:
+  type: "Alert--info"
+  title: "<p>ATTENZIONE</p>"
+  text: "<p><strong>Questo kit non ha la pretesa di trattare in maniera esaustiva ogni aspetto connesso agli adempimenti privacy.</strong> Ciascuna PA è tenuta ad adottare le misure adeguate alla propria organizzazione.</p>"
+
 rightColumnItems:
   - title: KIT CORRELATI
     items:
