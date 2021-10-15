@@ -17,6 +17,8 @@ categories:
   - imprese
 ---
 
+<!-- MORE -->
+
 Che cosa è l’interoperabilità? Perché è fondamentale nello sviluppo di servizi pubblici digitali? Sono questi i temi al centro del prossimo appuntamento con le **Community call** di Designers Italia e [Developers Italia](https://developers.italia.it/){:target="_blank" rel="noopener noreferrer"}, in programma **mercoledì 27 ottobre dalle ore 15:30 alle 17.00**. 
 
 Durante l’incontro, infatti, verranno presentati una **serie di casi di successo di servizi pubblici digitali sviluppati tramite API**, le *Application Programming Interface*, interfacce per la programmazione di applicazioni che permettono di condividere dati e servizi in sicurezza e in modo efficiente tra realtà diverse, a vantaggio dell’utente finale.
