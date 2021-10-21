@@ -42,13 +42,13 @@ superAccordion:
       text: "<p>Le risorse di questo kit ti forniscono informazioni e modelli utili per essere adempiente alla normativa privacy in vigore. Prima di approfondire la documentazione proposta, ricorda di verificare che il sito del tuo ente contenga almeno le basi richieste dalla normativa GDPR, come le informative sul trattamento dei dati personali.</p>"
       img: "/assets/icons/kit/kit_privacy_basi.svg"
       resources:
-        - title: "Le basi del sito web: informativa, architettura, DPO"
+        - title: "Le basi del sito web: architettura, informativa e DPO"
           icon: "/assets/icons/pencil.svg"
-          description: "Informazioni utili per gestire le basi del sito web..."
+          description: "Consigli e informazioni utili per iniziare a progettare con un approccio orientato alla privacy"
           link: <a href='https://docs.google.com/document/d/1RPOA6UthFxl0Xqa7Lm0NtdkMZ1cTgFzPGicr_8RZZ1M/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
         - title: "Consenso si, consenso no"
           icon: "/assets/icons/pencil.svg"
-          description: "Informazioni utili per gestire il consenso al trattamento dati degli utenti"
+          description: "Suggerimenti per aiutarti a valutare se il consenso è la base giuridica corretta per il tuo caso d'uso"
           link: <a href='https://docs.google.com/document/d/1crsDAJkETOTfYsO5SA5qtr5pPYpUj6wFEhow5MqqECk/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
