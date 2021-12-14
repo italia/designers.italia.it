@@ -34,55 +34,57 @@ layout: default
 
 <article id="manuale" class="">
 
-  <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
-    <!-- manuale header -->
-    <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
-      <div class="faseHead Grid-cell u-lg-size12of12 u-md-size12of12 u-padding-bottom-l">
-        <div class="Grid Grid--withGutterM">
-          <div class="Grid-cell u-lg-size1of1 u-md-size1of1">
-            <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{page.manuale.title}}</h2>
-          </div>
-          <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
-            <div class="u-text-r-l  u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-padding-top-s">
-              {{page.manuale.subtitle}}
+  <div class="fase u-padding-top-xxl u-padding-bottom-xxl">
+    <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
+      <!-- manuale header -->
+      <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
+        <div class="faseHead Grid-cell u-lg-size12of12 u-md-size12of12 u-padding-bottom-l">
+          <div class="Grid Grid--withGutterM">
+            <div class="Grid-cell u-lg-size1of1 u-md-size1of1">
+              <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{page.manuale.title}}</h2>
             </div>
-          </div>
-          <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
-            <div class="u-text-r-xs u-lineHeight-xl u-layout-prose u-color-grey-ui-kit u-padding-top-s">
-              {{page.manuale.description}}
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+              <div class="u-text-r-l  u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-padding-top-s">
+                {{page.manuale.subtitle}}
+              </div>
+            </div>
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+              <div class="u-text-r-xs u-lineHeight-xl u-layout-prose u-color-grey-ui-kit u-padding-top-s">
+                {{page.manuale.description}}
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    {%- include manualetable.html headingClass='u-block u-text-h3 u-border-bottom-xxs u-padding-bottom-m' -%}
   </div>
 
-  {%- include manualetable.html headingClass='u-block u-text-h3 u-border-bottom-xxs u-padding-bottom-m' -%}
-
-  <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
-    <!-- manuale header -->
-    <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
-      <div class="faseHead Grid-cell u-lg-size12of12 u-md-size12of12 u-padding-bottom-l">
-        <div class="Grid Grid--withGutterM">
-          <div class="Grid-cell u-lg-size1of1 u-md-size1of1">
-            <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{page.guide.title}}</h2>
-          </div>
-          <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
-            <div class="u-text-r-l  u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-padding-top-s">
-              {{page.guide.subtitle}}
+  <div class="fase u-padding-top-xxl u-padding-bottom-xxl">
+    <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
+      <!-- manuale header -->
+      <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
+        <div class="faseHead Grid-cell u-lg-size12of12 u-md-size12of12 u-padding-bottom-l">
+          <div class="Grid Grid--withGutterM">
+            <div class="Grid-cell u-lg-size1of1 u-md-size1of1">
+              <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{page.guide.title}}</h2>
             </div>
-          </div>
-          <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
-            <div class="u-text-r-xs u-lineHeight-xl u-layout-prose u-color-grey-ui-kit u-padding-top-s">
-              {{page.guide.description}}
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+              <div class="u-text-r-l  u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-padding-top-s">
+                {{page.guide.subtitle}}
+              </div>
+            </div>
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+              <div class="u-text-r-xs u-lineHeight-xl u-layout-prose u-color-grey-ui-kit u-padding-top-s">
+                {{page.guide.description}}
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div>Work in progress...</div>
-
+        <div>Work in progress...</div>
+      </div>
   </div>
 
 </article>
