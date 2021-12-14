@@ -32,43 +32,7 @@ layout: default
 </div>
 {%- endif -%}
 
-{% include guidesbanner.html %}
-
 {%- include guidestable.html headingClass='u-block u-text-h3 u-border-bottom-xxs u-padding-bottom-m' -%}
 
-  <!-- in progress -->
-  <div class="u-background-white u-layout-r-withGutter u-padding-r-top u-padding-bottom-xxl u-posRelative u-zindex-30">
-    <div class="Grid Grid--alignCenter">
-      <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-        {%- if page.blueBlock != true -%}
-        <div class="u-textCenter u-padding-bottom-xl">
-          {%- if page.categories -%}
-            <div class="u-layoutCenter u-textCenter u-margin-all-xl">
-              <ul class="Category" >
-              {%- for item in page.categories-%}
-                <li class="u-text-r-xxs u-background-white u-color-50 u-border-all-xxs  u-padding-all-xxs">
-                {{item}}
-                </li>
-              {%- endfor -%}
-              </ul>
-            </div>
-          {%- endif -%}
-          {%- if page.nodate != true -%}
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished" class="u-text-r-xs u-textSecondary">
-            {{ page.date | date: "%-d %b %Y" }}</time>
-          {%- endif -%}
-          {%- if page.pretitle != nil -%}
-            <h4 class="u-layoutCenter u-textCenter u-color-grey-ui-kit u-text-r-m u-textWeight-300 u-margin-bottom-s">{{ page.pretitle }}</h4>
-          {%- endif -%}
-            <h1 itemprop="name headline" class="u-textCenter u-textWeight-700 u-text-r-xxl u-margin-bottom-s u-textWeight-300 u-color-grey-60 u-margin-top-s u-lineHeight-l">{{ page.title }}</h1>
-            {%- if page.subtitle -%}
-            <h2 class="u-layoutCenter u-textCenter u-color-grey-ui-kit u-text-r-m u-textWeight-300 u-margin-bottom-s"
-              style="max-width:24em">{{ page.subtitle }}</h2>
-            {%- endif -%}
-        </div>
-        {%- endif -%}
-        <div class="Prose u-layout-prose u-layoutCenter u-padding-top-xl u-color-grey-ui-kit">{{ content }}</div>
-      </div>
-    </div>
-  </div>
+<!-- work in progress -->
 </article>
