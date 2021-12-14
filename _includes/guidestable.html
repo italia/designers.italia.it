@@ -1,7 +1,7 @@
 {% assign guides = site.data.guidelines %}
 {% assign family = guides | where_exp:"item","item.parent == nil" %}
 {% assign numfamily = family.size %}
-{% assign layoutClass=include.layoutClass | default:'u-layout-r-withGutter u-margin-left-xxl u-margin-right-xxl u-margin-top-xxl' %}
+{% assign layoutClass=include.layoutClass | default:'u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl' %}
 {% assign headingClass=include.headingClass | default:'u-block u-text-h3' %}
 
 <div class="{{layoutClass}}">
