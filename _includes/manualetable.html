@@ -14,6 +14,9 @@
         {{main.desc}}
       </a>
     </h3>
+		<p>
+			{{main.body}}
+		</p>
 		<div class="u-sizeFull u-margin-top-xl">
       {% assign items = guides | where_exp:"item","item.parent == main.desc" %}
       <ul>
