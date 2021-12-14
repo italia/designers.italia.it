@@ -1,5 +1,5 @@
 ---
-title: Linee guida
+title: Manuale e Linee guida
 subtitle: Per orientare la progettazione di servizi e ambienti digitali partendo dalle effettive esigenze degli utenti.
 layout: guidesindex
 lang: it
