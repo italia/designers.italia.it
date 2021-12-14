@@ -22,4 +22,12 @@ header:
   links:
     - <a href="#manuale" class="u-color-grey-ui-kit">Scopri</a>
   image: '/assets/icons/kit/modelli.svg'
+manuale:
+  title: "Manuale operativo di design"
+  subtitle: "Progettare siti internet e servizi digitali della PA"
+  description: "Lorem ipsum..."
+guide:
+  title: "Linee guida di design per i siti internet e i servizi digitali della PA "
+  subtitle: "Lorem ipsum..."
+  description: "Lorem ipsum..."
 ---
