@@ -16,12 +16,10 @@ redirect_from:
   - /user-research/
   - /content-design/
   - /user-interface/
-
 header:
   title: "Manuale e Linee guida"
   description: "Lorem ipsum..."
   links:
     - <a href="#manuale" class="u-color-grey-ui-kit">Scopri</a>
   image: '/assets/icons/kit/modelli.svg'
-
 ---
