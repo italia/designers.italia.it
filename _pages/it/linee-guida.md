@@ -20,7 +20,8 @@ header:
   title: "Manuale e Linee guida"
   description: "Lorem ipsum..."
   links:
-    - <a href="#manuale" class="u-color-grey-ui-kit">Scopri</a>
+    - <a href="#manuale" class="u-color-grey-ui-kit">Scopri il manuale operativo di design</a>
+    - <a href="#linee-guida" class="u-color-grey-ui-kit">Scopri le Linee guida di design...</a>
   image: '/assets/icons/kit/modelli.svg'
 manuale:
   title: "Manuale operativo di design"
