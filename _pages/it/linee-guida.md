@@ -29,6 +29,6 @@ manuale:
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id felis pharetra, convallis nisl quis, convallis erat. Fusce ultrices placerat vulputate. Praesent lobortis justo nec leo sollicitudin maximus. "
 guide:
   title: "Le Linee guida di design per i siti internet e i servizi digitali della PA "
-  subtitle: "Contengono le regole tecniche previste dal CAD art.71. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  subtitle: "Contengono le regole tecniche previste dal CAD art.71. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
   description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id felis pharetra, convallis nisl quis, convallis erat. Fusce ultrices placerat vulputate. Praesent lobortis justo nec leo sollicitudin maximus. "
 ---
