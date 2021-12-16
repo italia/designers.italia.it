@@ -24,11 +24,11 @@ header:
     - <a href="#linee-guida" class="u-color-grey-ui-kit">Scopri le Linee guida di design...</a>
   image: '/assets/icons/kit/modelli.svg'
 manuale:
-  title: "Manuale operativo di design"
-  subtitle: "Progettare siti internet e servizi digitali della PA"
-  description: "Lorem ipsum..."
+  title: "Il manuale operativo di design"
+  subtitle: "Come progettare siti internet e servizi digitali della PA"
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id felis pharetra, convallis nisl quis, convallis erat. Fusce ultrices placerat vulputate. Praesent lobortis justo nec leo sollicitudin maximus. "
 guide:
-  title: "Linee guida di design per i siti internet e i servizi digitali della PA "
-  subtitle: "Lorem ipsum..."
-  description: "Lorem ipsum..."
+  title: "Le Linee guida di design per i siti internet e i servizi digitali della PA "
+  subtitle: "Contengono le regole tecniche previste dal CAD art.71. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id felis pharetra, convallis nisl quis, convallis erat. Fusce ultrices placerat vulputate. Praesent lobortis justo nec leo sollicitudin maximus. "
 ---
