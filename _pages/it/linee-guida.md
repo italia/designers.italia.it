@@ -1,5 +1,5 @@
 ---
-title: Manuale e Linee guida
+title: Linee guida e manuale
 subtitle: Per orientare la progettazione di servizi e ambienti digitali partendo dalle effettive esigenze degli utenti.
 layout: guidesindex
 lang: it
@@ -17,11 +17,11 @@ redirect_from:
   - /content-design/
   - /user-interface/
 header:
-  title: "Manuale e Linee guida"
+  title: "Linee guida e manuale"
   description: "Lorem ipsum..."
   links:
-    - <a href="#manuale" class="u-color-grey-ui-kit">Scopri il manuale operativo di design</a>
     - <a href="#linee-guida" class="u-color-grey-ui-kit">Scopri le Linee guida di design...</a>
+    - <a href="#manuale" class="u-color-grey-ui-kit">Scopri il manuale operativo di design</a>
   image: '/assets/icons/kit/modelli.svg'
 manuale:
   title: "Il manuale operativo di design"
