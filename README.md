@@ -10,13 +10,17 @@ Ogni commento o proposta relativa all'evoluzione dei kit può essere fatta utili
 
 Il sito è sviluppato con [Jekyll](https://jekyllrb.com/) e fa uso dell'ecosistema [Node.js](https://nodejs.org/it/) con [Yarn](https://yarnpkg.com/lang/en/).
 
-Per configurare un ambiente di sviluppo è sufficiente eseguire i seguenti comandi:
+Per configurare un ambiente di sviluppo con Docker eseguire i seguenti comandi:
 
-    $ yarn install
-    $ bundle install
-    $ bundle exec jekyll serve
+1. Crea l'immagine Docker
+   ```console
+   docker build . -t designers-italia-it
+   ```
 
-In caso di problemi con l'installazione di rmagick 4.1.2 su recenti OSX, [quest pagina](https://stackoverflow.com/questions/41647979/imagemagick-7-with-rmagick-2-16-on-macos-sierra-cant-find-magickwand-h) potrebbe essere d'aiuto.
+1. Esegui l'ambiente di sviluppo
+   ```console
+   docker run -itp 4000:4000 -v $(pwd):/usr/src/designers.italia.it designers-italia-it
+   ```
 
 Se vuoi contribuire e proporre una modifica, è sufficiente aprire una [pull request](https://github.com/italia/designers.italia.it/pulls) su GitHub.
 
