@@ -20,15 +20,8 @@
   "scripts": {
     "test": "bundle exec htmlproofer ./_site  --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external",
     "dev": "bundle exec jekyll serve --destination /tmp/jekyll-site --trace --disable-disk-cache --host 0.0.0.0 --watch",
-    "build": "gulp build",
-    "deploy": "gulp publish-production"
+    "build": "rm -fr _site && JEKYLL_ENV=production bundle exec jekyll build"
   },
-  "devDependencies": {
-    "del": "^6.0.0",
-    "gulp": "^4.0.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-rsync": "0.0.9"
-  },
+  "devDependencies": {},
   "dependencies": {}
 }
