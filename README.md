@@ -17,7 +17,7 @@ Per configurare un ambiente di sviluppo con Docker eseguire i seguenti comandi:
    docker build . -t designers-italia-it
    ```
 
-1. Esegui l'ambiente di sviluppo
+2. Esegui l'ambiente di sviluppo
    ```console
    docker run -itp 4000:4000 -v $(pwd):/usr/src/designers.italia.it designers-italia-it
    ```
