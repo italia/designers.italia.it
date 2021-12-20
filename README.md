@@ -22,6 +22,8 @@ Per configurare un ambiente di sviluppo con Docker eseguire i seguenti comandi:
    docker run -itp 4000:4000 -v $(pwd):/usr/src/designers.italia.it designers-italia-it
    ```
 
+Il sito sarà disponibile all’indirizzo http://localhost:4000/.
+
 Se vuoi contribuire e proporre una modifica, è sufficiente aprire una [pull request](https://github.com/italia/designers.italia.it/pulls) su GitHub.
 
 Il sito necessita di essere ricompilato ad ogni pubblicazione su Medium.
