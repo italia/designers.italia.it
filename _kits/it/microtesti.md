@@ -16,8 +16,8 @@ redirect_from:
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Testi brevi e microtesti sono elementi fondamentali per orientare i percorsi di navigazione e le azioni degli utenti all’interno di un <em>touchpoint</em> o servizio digitale.</p>
-  <p>Il kit dedicato ai microtesti ti aiuta a progettare il <em>microcopy</em> di un ambiente digitale, cioè le frasi o le brevi porzioni di testo presenti in una interfaccia di navigazione desktop o mobile (etichette, pulsanti, <em>stepper</em>, inviti all’azione e così via…) che hanno la finalità di suggerire, orientare, correggere oppure influenzare le azioni e i percorsi di navigazione che gli utenti compiono all’interno di un sito o servizio.</p>
+  text: "<p>Testi brevi e microtesti sono elementi fondamentali per <strong>orientare i percorsi di navigazione e le azioni degli utenti</strong> all’interno di un <em>touchpoint</em> o servizio digitale.</p>
+  <p>Il kit dedicato ai microtesti ti aiuta a progettare il <em>microcopy</em> di un ambiente digitale, cioè le <strong>frasi o le brevi porzioni di testo presenti in un'interfaccia di navigazione</strong> desktop o mobile (etichette, pulsanti, <em>stepper</em>, inviti all’azione e così via…) che hanno l'obiettivo di suggerire, orientare, correggere oppure influenzare le azioni e i percorsi di navigazione che gli utenti compiono all’interno di un sito o servizio.</p>
   <p>La disciplina che si occupa della progettazione dei testi brevi che hanno un impatto diretto sull’esperienza digitale degli utenti è chiamata in gergo tecnico <em>UX writing</em>. </p>"
 
 guideLinesChunk:
