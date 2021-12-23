@@ -18,11 +18,11 @@ redirect_from:
   - /user-interface/
 header:
   title: "Linee guida e manuale"
-  description: "Lorem ipsum..."
+  description: "Le Linee guida a norma CAD e la documentazione che ti insegna a progettare mettendo il cittadino al centro questo è un testo segnaposto"
   links:
     - <a href="#linee-guida" class="u-color-grey-ui-kit">Scopri le Linee guida di design...</a>
     - <a href="#manuale" class="u-color-grey-ui-kit">Scopri il manuale operativo di design</a>
-  image: '/assets/icons/kit/modelli.svg'
+  image: '/assets/icons/kit/linee-guida-e-manuale.svg'
 manuale:
   title: "Il manuale operativo di design"
   subtitle: "Come progettare siti internet e servizi digitali della PA"
