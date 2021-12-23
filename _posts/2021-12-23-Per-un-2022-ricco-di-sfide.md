@@ -3,7 +3,7 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "Al via l’aggiornamento del design system del Paese"
-subtitle: "Per un 2022 pieno di sfide, a partire dal PNRR"
+subtitle: "Per un 2022 pieno di sfide, a partire dal Piano nazionale di ripresa e resilienza"
 date: 2021-12-23 11:00:00 +0200
 pinned: false
 nodate: false
@@ -29,4 +29,4 @@ Per riuscire in questo sforzo, partiamo necessariamente dall’impegno profuso f
 
 Per contribuire direttamente è possibile interagire nei [repository dedicati](https://github.com/italia/bootstrap-italia/issues){:target="_blank" rel="noopener noreferrer"} e nei vari canali a disposizione, in particolare su [Slack Developers](https://slack.developers.italia.it/){:target="_blank" rel="noopener noreferrer"}. 
 
-**Nelle prossime settimane pubblicheremo un calendario dei lavori e di occasioni pubbliche dedicate**. Rimani aggiornato e **contribuisci anche tu** al design system del Paese, migliorando così la vita quotidiana delle persone che usano un servizio pubblico online!
+**Nelle prossime settimane pubblicheremo un calendario dei lavori e di occasioni pubbliche dedicate**. Continua a seguirci e **contribuisci anche tu** al *design system* del Paese, migliorando così la vita quotidiana di tutti coloro che usano un servizio pubblico online!
