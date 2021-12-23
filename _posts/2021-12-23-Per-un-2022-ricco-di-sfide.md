@@ -3,7 +3,7 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "Al via l’aggiornamento del design system del Paese"
-subtitle: "Per un 2022 pieno di sfide, a partire dal PNRR"
+subtitle: "Per un 2022 pieno di sfide, a partire dal Piano nazionale di ripresa e resilienza"
 date: 2021-12-23 11:00:00 +0200
 pinned: false
 nodate: false
@@ -23,7 +23,7 @@ In questi giorni, infatti, **è in avvio una completa revisione del design syste
 
 Si tratta di un’operazione ambiziosa, che prevede **l’ammodernamento in termini tecnologici e di accessibilità**, ma anche di visione e gestione, delle risorse messe a disposizione da Designers Italia e Developers Italia, in particolare i due kit di [progettazione](http://designers.italia.it/kit/progettazione-interfaccia/){:target="_blank" rel="noopener noreferrer"} e [sviluppo interfaccia](https://designers.italia.it/kit/sviluppo-interfaccia/){:target="_blank" rel="noopener noreferrer"}, dei principali esempi di applicazione e dei [modelli standard di siti web per le PA](https://designers.italia.it/modelli/){:target="_blank" rel="noopener noreferrer"} (Comuni e scuole).
 
-Tutto questo rientra tra le attività fondamentali dell’investimento “[Esperienza dei servizi pubblici](https://padigitale2026.gov.it/misure/#esp-serv-pubb){:target="_blank" rel="noopener noreferrer"}” del **Piano Nazionale di Ripresa e Resilienza**, la misura prevista per migliorare l'esperienza d’uso di siti e servizi pubblici digitali per tutti gli utenti. Un’iniziativa concepita da un lato per **colmare il divario digitale** (digital divide) tra i cittadini e, dall’altro, per **offrire un’opportunità a tutte le PA**, anche quelle con meno risorse, di automatizzare e riusare, chiavi in mano, soluzioni digitali efficaci e ben collaudate.
+Tutto questo rientra tra le attività fondamentali dell’investimento “[Esperienza dei servizi pubblici](https://padigitale2026.gov.it/misure/#esp-serv-pubb){:target="_blank" rel="noopener noreferrer"}” del **Piano nazionale di ripresa e resilienza**, la misura prevista per migliorare l'esperienza d’uso di siti e servizi pubblici digitali per tutti gli utenti. Un’iniziativa concepita da un lato per **colmare il divario digitale** (digital divide) tra i cittadini e, dall’altro, per **offrire un’opportunità a tutte le PA**, anche quelle con meno risorse, di automatizzare e riusare, chiavi in mano, soluzioni digitali efficaci e ben collaudate.
 
 Per riuscire in questo sforzo, partiamo necessariamente dall’impegno profuso fino a oggi dalla **community**, che avrà un ruolo fondamentale nell’ideare, implementare e rendere efficace questa iniziativa. Grazie a un rinnovato design system e alla community che lo supporta, progettisti e sviluppatori che lavorano nella o per la PA potranno avere dei **solidi punti di riferimento** per creare il sito di un ente o il progetto di un servizio pubblico digitale.
 
