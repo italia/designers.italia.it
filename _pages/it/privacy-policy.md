@@ -106,7 +106,6 @@ Utilizziamo anche i seguenti cookie analitici:
   Al fine di rispettare la privacy degli utenti, il servizio è utilizzato con la modalità
   “anonymizeIp” che consente di mascherare gli indirizzi IP degli utenti che navigano
   sul sito ([maggiori informazioni sulla funzionalità](https://support.google.com/analytics/answer/2763052?hl=it)).
-  È possibile comunque effettuare l’[opt-out da Google Analytics](https://tools.google.com/dlpage/gaoptout?hl=en);
 * il servizio "Web Analytics Italia" (WAI) fornito da AGID che raccoglie dati
   statistici anonimi mediante IP anonimizzato relativi alle visite del sito Internet
   da parte degli utenti.
