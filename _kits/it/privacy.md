@@ -94,10 +94,6 @@ superAccordion:
       text: "<p>Quando fai attività di ricerca utente finalizzata alla progettazione del tuo servizio digitale, ad esempio somministrando interviste o conducendo dei test di usabilità, devi occuparti di come gestire il consenso al trattamento dei dati personali degli utenti coinvolti in queste attività.</p> <p>In questa sezione trovi alcuni modelli già pronti di informativa per il trattamento dei dati personali delle persone coinvolte in attività di ricerca utente, suddivisi in base al caso d'uso.</p>"
       img: "/assets/icons/kit/kit_privacy_utenti.svg"
       resources:
-        - title: "Suggerimenti per le attività di ricerca utente"
-          icon: "/assets/icons/pencil.svg"
-          description: "Suggerimenti per il rispetto della normativa privacy durante le attività di ricerca utente"
-          link: <a href='https://docs.google.com/document/d/1yu3n-3HfzcAf5D-LtQlCqG0vJ8dSdCjRk9KCSFS4bjo/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: "Suggerimenti per la somministrazione di questionari"
           icon: "/assets/icons/pencil.svg"
           description: "Suggerimenti per la gestione dei dati personali relativa ai questionari"
