@@ -41,7 +41,7 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: "Privacy, parti dalle basi"
-      text: "<p>Le risorse di questo kit ti forniscono informazioni e modelli utili per essere adempiente alla normativa privacy in vigore. Prima di approfondire la documentazione proposta, ricorda di verificare che il sito del tuo ente contenga almeno le basi richieste dalla normativa GDPR, come le informative sul trattamento dei dati personali.</p>"
+      text: "<p>Le risorse di questo kit ti forniscono informazioni e modelli utili per aiutarti a verificare che un sito o servizio rispetti i requisiti di base previsti dalla normativa privacy. Il rispetto dei principi di <em>privacy by design</em> e <em>by default</em> rileva non solo dal modo in cui progetti il <em>touchpoint</em> digitale ma anche dalla presenza degli elementi obbligatori previsti dalla norma, quali l’informativa privacy e i riferimenti del Responsabile per la Protezione dei dati (RPD/DPO).</p>"
       img: "/assets/icons/kit/kit_privacy_basi.svg"
       resources:
         - title: "Le basi del sito web: architettura, informativa e DPO"
