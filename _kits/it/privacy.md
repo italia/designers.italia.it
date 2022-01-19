@@ -91,7 +91,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Rispetta la privacy quando coinvolgi gli utenti nella ricerca
-      text: "<p>Quando fai attività di ricerca utente finalizzata alla progettazione del tuo servizio digitale, ad esempio somministrando interviste o conducendo dei test di usabilità, devi occuparti di come gestire il consenso al trattamento dei dati personali degli utenti coinvolti in queste attività.</p> <p>In questa sezione trovi alcuni modelli già pronti di informativa per il trattamento dei dati personali delle persone coinvolte in attività di ricerca utente, suddivisi in base al caso d'uso.</p>"
+      text: "<p>Quando fai attività di ricerca utente finalizzata alla progettazione del tuo servizio digitale, ad esempio somministrando questionari, conducendo interviste o test di usabilità, ti suggeriamo di realizzarle in modalità anonima. In questo modo non ci sarà trattamento di dati personali.</p> <p>Se il questionario, l’intervista o il test prevedono necessariamente un trattamento di dati personali - perché ad esempio scegli un metodo di indagine che prevede un richiamo dell’interessato - in questa sezione puoi trovare suggerimenti utili suddivisi in base al caso d’uso.</p>"
       img: "/assets/icons/kit/kit_privacy_utenti.svg"
       resources:
         - title: "Suggerimenti per la somministrazione di questionari"
