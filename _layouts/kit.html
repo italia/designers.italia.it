@@ -147,7 +147,16 @@ layout: default
                       {% if resource.disabled == true %}
                          In lavorazione
                       {% else %}
-                        {{resource.link}}
+                          {% if resource.url %}
+                            <a href="{{resource.url}}"
+                            aria-label="{{resource.urlArialabel}}" rel="noopener"
+                            target="_blank"
+                            onclick="captureOutboundLink('{{resource.url}}');
+                            return false;" >{{resource.urlText}}</a>
+                          {% else if resource.link %}
+                            <!-- old tag without outbound link -->
+                            {{resource.link}}
+                          {% endif %}
                         {% if resource.icon %}
                           <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
                         {% endif %}
