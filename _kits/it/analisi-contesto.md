@@ -48,7 +48,6 @@ superAccordion:
           url: 'https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing'
           urlText: 'Vai alla risorsa'
           urlArialabel: 'Vai alla risorsa (link esterno)'
-          link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         - title: Mappa dell'ecosistema
           icon: "/assets/icons/pencil.svg"
           description: Un diagramma che schematizza le relazioni e transazioni tra gli elementi coinvolti nel servizio pubblico
