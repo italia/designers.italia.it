@@ -148,11 +148,7 @@ layout: default
                          In lavorazione
                       {% else %}
                           {% if resource.url %}
-                            <a href="{{resource.url}}"
-                            aria-label="{{resource.urlArialabel}}" rel="noopener"
-                            target="_blank"
-                            onclick="captureOutboundLink('{{resource.url}}');
-                            return false;" >{{resource.urlText}}</a>
+                            <a href="{{resource.url}}" aria-label="{{resource.urlArialabel}}" target="_blank" rel="noopener" onclick="captureOutboundLink('{{resource.url}}');return false;">{{resource.urlText}}</a>
                           {% else if resource.link %}
                             <!-- old tag without outbound link -->
                             {{resource.link}}
