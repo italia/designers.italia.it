@@ -13,7 +13,7 @@ order: 1
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di <strong>quali categorie di dati personali stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore</strong>. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
+  text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di <strong>quali categorie di dati personali stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore</strong>. L’utilizzo di dati personali da parte di una Pubblica amministrazione è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
   <p>Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti alcune delle <strong>informazioni di base e una serie di modelli utili per aiutarti a trattare correttamente i dati personali riferiti ai principali casi d'uso </strong>che dovrai gestire progettando e realizzando un servizio digitale.</p>"
   guideLinesChunk:
     title: MANUALE OPERATIVO DI DESIGN
@@ -94,9 +94,9 @@ superAccordion:
       text: "<p>Quando fai attività di ricerca utente finalizzata alla progettazione del tuo servizio digitale, ad esempio somministrando questionari, conducendo interviste o test di usabilità, ti suggeriamo di realizzarle in modalità anonima. In questo modo non ci sarà trattamento di dati personali.</p> <p>Se il questionario, l’intervista o il test prevedono necessariamente un trattamento di dati personali - perché ad esempio scegli un metodo di indagine che prevede un richiamo dell’interessato - in questa sezione puoi trovare suggerimenti utili suddivisi in base al caso d’uso.</p>"
       img: "/assets/icons/kit/kit_privacy_utenti.svg"
       resources:
-        - title: "Suggerimenti per la somministrazione di questionari"
+        - title: "Coinvolgere gli utenti"
           icon: "/assets/icons/pencil.svg"
-          description: "Suggerimenti per la gestione dei dati personali relativa ai questionari"
+          description: "Suggerimenti per coinvolgere gli utenti in modalità anonima evitando la raccolta di dati personali"
           link: <a href='https://docs.google.com/document/d/183f3aiDqLqi63XTTCovpRYiQDi530Dph7tRWaweu62Y/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Modello di liberatoria per interviste utente
           icon: "/assets/icons/pencil.svg"
