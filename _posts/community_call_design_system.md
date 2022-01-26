@@ -17,7 +17,7 @@ categories:
 ---
 
 <!-- MORE -->
-Vi siete mai chiesti perché alcuni siti sono incredibilmente facili da navigare, e ci fanno sentire a casa fin dal primo utilizzo. Per esempio i grandi e-commerce, i social network, il nostro sito preferito di streaming?
+Vi siete mai chiesti perché alcuni siti sono incredibilmente facili da navigare, e ci fanno sentire a casa fin dal primo utilizzo? Per esempio i grandi e-commerce, i social network, il nostro sito preferito di streaming?
 
 Ciò avviene perché tutte le grandi aziende digitali definiscono librerie,  componenti in uno stile unitario e regole condivise - il design system -  in modo che questi semplici “mattoncini” possano essere ripetuti e assemblati, creando per gli utenti un’esperienza coerente e soddisfacente. Non sarebbe bellissimo se ciò accadesse anche per tutti i siti e i servizi digitali della Pubblica Amministrazione?
 
