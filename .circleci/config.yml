@@ -154,7 +154,7 @@ workflows:
             filters:
               branches:
                 ignore:
-                  - master
+                  - main
                   - gh-pages
   deploy:
       jobs:
@@ -162,5 +162,5 @@ workflows:
             filters:
               branches:
                 only:
-                  - master
+                  - main
                   - deploy-ghpages
