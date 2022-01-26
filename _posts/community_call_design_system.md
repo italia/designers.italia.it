@@ -30,6 +30,6 @@ Proprio per rispondere a questo quesito, a partire dallo scorso dicembre abbiamo
 Il prossimo appuntamento per la **community** si terrà il prossimo **9 febbraio  alle ore 15.30** e sarà dedicato a queste sfide grazie al contributo di: 
 * Daniele Tabellini, UI/UX designer, Dipartimento per la Trasformazione Digitale, che coordinerà nei prossimi mesi il lavoro di aggiornamento del design system del Paese,
 * Marco Liberati, il main contributor della libreria Design React Kit, 
-* Giacomo Grassi, l’head of customer experience di INPS, che ha da poco affrontato la sua sfida nel lancio di SIrio, il design system dell’ente.
+* Giacomo Grassi, l’head of customer experience di INPS, che ha da poco affrontato la sua sfida nel lancio di Sirio, il design system dell’ente.
  
 [Registrati all’evento per partecipare](https://mobilizon.it/events/f4ac7468-41fd-473a-99a2-5219f637c62f){:target="_blank" rel="noopener noreferrer"}. Ti aspettiamo il 9 febbraio!
