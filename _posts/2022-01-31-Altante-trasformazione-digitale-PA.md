@@ -3,7 +3,7 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "Un Atlante per la Pubblica Amministrazione"
-subtitle: "60 studenti all’opera per dimostrarne il valore del design nell’ambito della trasformazione digitale"
+subtitle: "60 studenti all’opera per dimostrare il valore del design nell’ambito della trasformazione digitale"
 date: 2022-01-31 21:00:00 +0200
 pinned: false
 nodate: false
