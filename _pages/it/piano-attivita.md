@@ -1,5 +1,5 @@
 ---
-title: Attività
+title: Piano attività
 description: Le attività e i principali risultati che Designers Italia ha raggiunto negli ultimi anni.
 layout: post
 lang: it
@@ -14,5 +14,6 @@ redirect_from:
   - /roadmap/
   - /it/timeline/
   - /timeline/
+  - /attivita/
 ---
-{% include attivita.html %}
+{% include piano-attivita.html %}
