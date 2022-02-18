@@ -1,6 +1,6 @@
 ---
 title: Piano attività
-description: Le attività e i principali risultati che Designers Italia ha raggiunto negli ultimi anni.
+description: Una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri. 
 layout: post
 lang: it
 toc: true
