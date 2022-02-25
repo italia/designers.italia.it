@@ -23,4 +23,5 @@ Nel farlo utilizza una [metodologia](https://op.europa.eu/it/publication-detail/
 Purtroppo l’Italia, nella classifica europea, si posiziona al di sotto della media dei paesi Ue e della media Europea allargata ai paesi partecipanti all’esercizio del Benchmark (EU27+) per le categorie di servizi misurati (life events) nel 2020. Perché questo succede? E quali sono le 10 azioni più semplici e più efficaci da cui partire per migliorare i servizi digitali e il posizionamento del nostro Paese? Quali soluzioni sono state messe in atto per affrontare questa sfida nel territorio?
 
 Lo scopriremo il prossimo **9 marzo alle ore 15.30** attraverso la testimonianza dei nostri ospiti.
+
 [Registrati all’evento per partecipare](https://mobilizon.it/events/a2a10f4e-9f94-4a84-9b11-d8ed0c88144e){:target="_blank" rel="noopener noreferrer"}. Ti aspettiamo!
