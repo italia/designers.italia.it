@@ -15,8 +15,8 @@ redirect_from:
   - /kit/web-toolkit
   - /kit/web-development/
   - /kit/web-development
-  - /web-development-kit/
-  - /web-development-kit
+  - /kit/web-development-kit/
+  - /kit/web-development-kit
 
 textChunk1:
   title: A COSA SERVE
