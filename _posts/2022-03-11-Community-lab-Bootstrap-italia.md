@@ -17,7 +17,7 @@ categories:
 ---
 
 <!-- MORE -->
-Dopo aver scoperto [l’uso di Git](https://www.youtube.com/watch?v=2Ph4VSyi9lU&t=5s){:target="_blank" rel="noopener noreferrer"}, nella seconda delle cinque puntate dei Community lab, parleremo di **Bootstrap Italia 2.0**, una delle risorse [design system del Paese](https://designers.italia.it/notizie/Per-un-2022-ricco-di-sfide/){:target="_blank" rel="noopener noreferrer"}, Bootstrap Italia 2.0, e della sua utilità per **sviluppare le interfacce dei servizi pubblici digitali**. 
+Dopo aver scoperto [l’uso di Git](https://www.youtube.com/watch?v=2Ph4VSyi9lU){:target="_blank" rel="noopener noreferrer"}, nella seconda delle cinque puntate dei Community lab, parleremo di **Bootstrap Italia 2.0**, una delle risorse [*design system* del Paese](https://designers.italia.it/notizie/Per-un-2022-ricco-di-sfide/){:target="_blank" rel="noopener noreferrer"} e della sua utilità per **sviluppare le interfacce dei servizi pubblici digitali**. 
 
 Come cambia il modo di sviluppare con le nuove tecnologie a disposizione? Quali sono le risorse e le componenti della soluzione e come si può contribuire ad aggiornarla? A queste e altre domande risponderà l’incontro del **prossimo 23 marzo**, dedicato a coloro che si occupano di sviluppare interfacce di servizi digitali. 
 
