@@ -14,6 +14,9 @@ categories:
   - cittadini
   - pubblica amministrazione
   - imprese
+redirect_from:
+  # Redirect mispelled URL. We have to keep it because it was already posted to Twitter
+  - /notizie/altante-trasformazione-digitale-pa/
 ---
 
 <!-- MORE -->
