@@ -14,6 +14,8 @@ categories:
   - cittadini
   - pubblica amministrazione
   - imprese
+redirect_from:
+  - /notizie/Altante-trasformazione-digitale-PA/
 ---
 
 <!-- MORE -->
