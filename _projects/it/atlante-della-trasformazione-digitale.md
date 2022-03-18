@@ -18,9 +18,9 @@ redirect_from:
 
 In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
 
-**Carousel here**
+![Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale](/assets/images/projects/atlante-della-trasformazione-digitale-della-pa/atlante-della-trasformazione-digitale-della-pa_1.jpg)
 
-### Obiettivi
+## Obiettivi
 
 - Favorisce la comprensione e l’orientamento all’interno dell’ecosistema della PA da parte di addetti ai lavori, designer e cittadini, individuando pattern ricorrenti
 - Informa i processi decisionali per la trasformazione digitale della PA
