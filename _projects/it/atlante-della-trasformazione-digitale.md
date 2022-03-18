@@ -1,5 +1,5 @@
 ---
-title: Atlante della trasformazione digitale
+title: Atlante della trasformazione digitale della PA
 description: Lorem ipsum questa è la descrizione del progetto di Atlante
 #subtitle: Una mappa per orientarsi nell’ecosistema dei servizi della Pubblica Amministrazione.
 #payoff: Payoff del progetto per la testta
@@ -14,82 +14,112 @@ redirect_from:
   - /atlante/
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus. Sed semper elit ut vulputate ullamcorper. Duis scelerisque facilisis massa rutrum congue. Suspendisse finibus nibh non sem feugiat volutpat. Sed pulvinar, eros vel sollicitudin aliquam, leo magna cursus justo, in vestibulum arcu leo gravida neque. Praesent varius, lacus eget aliquam dignissim, mi odio dapibus eros, et dapibus massa lacus ac sem.
+L’Atlante della trasformazione digitale della PA è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’Università IUAV di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
+
+In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
+
 
 ![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
 
 ### Obiettivi
 
-[Web Analytics Italia (WAI)](https://webanalytics.italia.it/){:target="_blank" rel="noopener"} è una **soluzione
-open source di raccolta, analisi e condivisione dei dati di traffico e
-comportamento utente dei siti web delle amministrazioni pubbliche italiane**.
+- Favorisce la comprensione e l’orientamento all’interno dell’ecosistema della PA da parte di addetti ai lavori, designer e cittadini, individuando pattern ricorrenti
+- Informa i processi decisionali per la trasformazione digitale della PA
+- Avvicina i giovani designer al mondo della PA e apre nuove modalità di collaborazione fra la comunità del design e il Dipartimento per la trasformazione digitale
 
-WAI consente alle PA di:
+Leggi [l’Atlante della trasformazione digitale della PA](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888){:target="_blank" rel="noopener noreferrer"}
 
-- monitorare gratuitamente le statistiche di fruizione di siti e servizi
-  digitali
-- disporre di strumenti ad hoc per pubblicare online le statistiche di siti e
-  servizi monitorati [(art.7 del
-  CAD)](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo1_sezione2_art7.html?highlight=statistiche%20utilizzo){:target="_blank" rel="noopener"}
-- esporre pubblicamente i dati rilevati in forma aggregata sul portale Web
-  Analytics Italia
-- beneficiare del supporto di una community di riferimento dedicata al progetto.
+## Il progetto
 
-### Funzionalità
+### In numeri
+- 63 studenti, raggruppati in 13 aree tematiche
+- 100 ore di laboratorio, 25.200 ore di lavoro complessive
+- 2 workshop con il Dipartimento per la trasformazione digitale
+- 86 archetipi, 75 personas, 134 interviste, 436 risposte ai questionari
 
-Web Analytics Italia si basa sul software open source
-[Matomo](https://matomo.org/){:target="_blank" rel="noopener noreferrer"} per le funzionalità di ingestion e reporting.
-L’accesso ai dati è invece offerto mediante un **portale che consente la
-registrazione e la gestione di siti e utenze**. Gli stessi dati sono esposti
-pubblicamente - in forma aggregata - nella **dashboard pubblica di WAI**, in
-ottica di condivisione e trasparenza; saranno inoltre a breve resi disponibili
-via API per l’utilizzo da parte di applicazioni di terze parti.
+### Il processo progettuale
 
-### Storia
+#### Ricerca secondaria (Desk Research)
+Gli studenti hanno preso familiarità con il mondo della Pubblica Amministrazione raccogliendo informazioni e dati in modo autonomo. Così hanno compreso i diversi ambiti della vita civica e lo stato dell’arte dell’erogazione e della fruizione dei servizi pubblici, concentrandosi in particolare sui temi e le sfide relative alla trasformazione digitale.
 
-Il progetto WAI nasce da una [prima
-sperimentazione](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888){:target="_blank" rel="noopener noreferrer"}
-condotta da AGID e Team per la Trasformazione Digitale (luglio 2017 - marzo
-2018), che ha visto la collaborazione di un [nucleo pilota di
-amministrazioni](https://medium.com/designers-italia/cosa-fanno-gli-utenti-del-sito-di-un-comune-ce-lo-dice-piwik-dedc67504b35){:target="_blank" rel="noopener noreferrer"}
-per un totale di 40 siti web analizzati.
+#### Ricerca primaria (User Research)
+Coinvolgere gli stakeholder in prima persona, verificare le evidenze emerse dalla ricerca secondaria, valutare e validare le supposizioni fatte e consolidare i fattori determinanti per caratterizzare le diverse tipologie di PA rispetto alla digitalizzazione dei servizi. La User Research è stato un passaggio fondamentale per definire la forma e i contenuti dell’Atlante, e ha consentito agli studenti di entrare in contatto con gli attori e le dinamiche della Pubblica Amministrazione.
 
-#### [Cap. 1 xxx](http://www.mit.gov.it){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+#### Progettazione visiva
+Sin dal lancio della challenge, comunicare i risultati in modo chiaro e coinvolgente, ma soprattutto utile, è stato considerato uno degli aspetti chiave per il successo dell’Atlante. In quest’ultima fase, gli studenti hanno esplorato diversi modelli di visualizzazione di dati. Hanno poi applicato quelli più appropriati per comunicare i dati in loro possesso, mettendo a terra una narrazione visiva che semplifica la comprensione del loro tema, senza sacrificarne la complessità.
 
-#### [Cap. 2 xyz](http://www.lavoro.gov.it/){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+### Il contributo di Designers Italia
+Designers Italia, con il supporto del Dipartimento per la trasformazione digitale, ha deciso di avviare la prima di una serie di collaborazioni con le università italiane per portare avanti, la missione di Designers Italia: diffondere la cultura della progettazione e del design all’interno della Pubblica Amministrazione. Per farlo è necessario avvicinare la PA al contesto del design, e viceversa, partendo proprio dalla futura generazione di designer.
 
-#### [Cap. 3 xxx](http://www.mit.gov.it){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+#### Definizione del brief di progetto
+Insieme ai coordinatori del corso, abbiamo stabilito il focus del progetto di ricerca, il suo perimetro, le attività e gli output attesi. Inoltre, abbiamo condiviso con gli studenti non solo un framework di riferimento per analizzare il contesto, ma anche una serie di strumenti pratici per supportare la progettazione.
 
-#### [Cap. 4 xyz](http://www.lavoro.gov.it/){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+#### Workshop 1: analisi del contesto
+Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un framework di riferimento per raccogliere e analizzare le informazioni. Grazie agli output di questo workshop, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli stakeholder coinvolti.
 
-#### [Cap. 5 xxx](http://www.mit.gov.it){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+[Vai al kit "Analisi di contesto"](https://designers.italia.it/kit/analisi-contesto/)
 
-#### [Cap. 6 xyz](http://www.lavoro.gov.it/){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+#### Workshop 2: visualizzare dati
+Nella seconda giornata, gli studenti si sono concentrati sull’analisi dei dati e sui collegamenti con la comunicazione visiva, esplorando come la rappresentazione dei dati sia di fatto parte integrante del processo di ricerca e uno strumento fondamentale per la generazione di risultati. Per creare una narrativa chiara, gli studenti si sono cimentati nel comprendere il valore dei set di dati quantitativi e qualitativi a disposizione, riorganizzare le informazioni e identificare i modelli visivi adatti a visualizzarle.
 
-#### [Cap. 7 xxx](http://www.mit.gov.it){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+### I progetti
 
-#### [Cap. 8 xyz](http://www.lavoro.gov.it/){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+#### Anagrafe. Percorsi e prospetti futuri
+Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte dei cittadini nelle fasi principali della loro vita, i Life events ([Egovernment benchmark 2021](https://www.capgemini.com/wp-content/uploads/2021/10/eGovernment-Benchmark-2021-Insight-Report.pdf){:target="_blank" rel="noopener noreferrer"}).
 
-#### [Cap. 9 xxx](http://www.mit.gov.it){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+[Scarica il PDF](xxx)
 
-#### [Cap. 10 xyz](http://www.lavoro.gov.it/){:target="_blank" rel="noopener noreferrer"}
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper, mauris nec placerat ornare, neque purus faucibus tortor, ac egestas erat arcu non nisl. Vestibulum at sodales lectus.
+#### Fragilmente. L’instabile realtà dei servizi socioassistenziali
+Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo spettro di condizioni di disagio fisico, economico e sociale delle persone che interagiscono con la PA.
+
+[Scarica il PDF](xxx)
+
+#### Che impresa! Attività Produttive
+Una narrazione leggera e solida del percorso che ogni impresa deve affrontare quando incontra la Pubblica Amministrazione, tra pratiche e oneri amministrativi.
+
+[Scarica il PDF](xxx)
+
+#### Prossima fermata: mobilità integrata
+Lo stato attuale del trasporto pubblico in Italia, fra attori e touchpoint digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
+
+[Scarica il PDF](xxx)
+
+#### La giusta via di mezzo: servizi di sharing
+La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con un focus su Roma, fra problemi, numeri e i cambiamenti portati dalla pandemia.
+
+[Scarica il PDF](xxx)
+
+#### Prevenire è meglio che curare: però in digitale
+Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambito sanitario e ambientale: il monitoraggio, l’informazione e l’azione.
+
+[Scarica il PDF](xxx)
+
+#### La Cura
+Un’analisi del fitto reticolo di strutture e servizi che garantiscono un accesso equo all’erogazione delle prestazioni sanitarie a tutti i cittadini, in attuazione dell’art. 32 della Costituzione.
+
+[Scarica il PDF](xxx)
+
+#### I nodi dell’assistenza socio-sanitaria
+Un viaggio fra le esigenze e le problematiche molto diversificate di questo ambito, che riguardano utenti dai profili molto distanti tra loro, dai minori agli anziani non più autosufficienti.
+
+[Scarica il PDF](xxx)
+
+#### La classe non è in classe
+Una riflessione sul futuro della scuola e sul ruolo chiave del digitale, analizzando i cambiamenti e la recente spinta che la fruizione della didattica online ha ricevuto negli ultimi anni.
+
+[Scarica il PDF](xxx)
+
+#### Uni versus 2.022
+Una narrazione dei massimi sistemi dell’università italiana e della sua trasformazione digitale come sistema complesso, costituito da una miriade di elementi e figure in relazione tra loro.
+
+[Scarica il PDF](xxx)
+
+##### Il sistema bibliotecario: tra analogico e digitale
+Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio. 
+
+[Scarica il PDF](xxx)
+
+#### Musei senza pareti
+Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo chiave del digitale per veicolare servizi ai visitatori che siano sempre più utili e coinvolgenti.
+
+[Scarica il PDF](xxx)
