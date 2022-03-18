@@ -3,10 +3,73 @@ layout: default
 ---
 
 {% include setlang.html %}
+{% assign title = page.title %}
+{% assign subtitle = page.description %}
+
+<article class="u-color-grey-ui-kit a-text-semi-bold">
+
+  <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
+
+    <!-- header -->
+    <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+      <div class="Grid-cell u-lg-size6of12 u-md-size6of12 u-lg-after3of12 u-md-after3of12">
+        <div class="u-margin-bottom-s">{% if page.comingsoon %}
+          <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
+            u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
+          {{ t.coming_soon }}</span>
+        {% endif %}
+        </div>
+        <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Progetto</div>
+        <h1 class="u-text-h1">{{title}}</h1>
+        <div class="u-text-r-l">
+          {{subtitle}}
+        </div>
+      </div>
+    </div>
+
+    <!-- cover img -->
+    <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+      <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+        {% if page.logo %}
+        <img class="u-sizeFull" alt="{{title}}" src="{{ page.logo }}"/>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+
+    <!-- content -->
+    <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+      <div class="kitIntro u-layout-prose u-color-grey-ui-kit Project">
+        {{ content }}
+      </div>
+    </div>
+
+    <!-- toc -->
+    {% capture toc %}{% toc %}{% endcapture %}
+    <div class="Grid-cell u-lg-size2of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-xxl u-lg-margin-top-xxl u-lg-before1of12 u-md-before1of12">
+      <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">
+          INDICE DI PAGINA
+      </div>
+      <div class="u-text-r-xxs ">
+        {{ toc }}
+      </div>
+    </div>
+
+
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<!--
+
+
 
 <div class="u-background-white u-layout-r-withGutter u-padding-top-xxl project-title-wrapper">
-  <div class="project-shadow2">{{ page.title }}</div>
-  {% if page.description %}<div class="project-shadow1 u-sizeFull u-md-size7of12 u-lg-size7of12">{{ page.description }}</div>{% endif %}
   <div class="u-text-r-l u-textWeight-300 u-color-50 u-margin-top-l u-lineHeight-l u-sizeFull u-md-size7of12 u-lg-size7of12">
     {% if page.comingsoon %}
       <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
@@ -14,20 +77,15 @@ layout: default
       {{ t.coming_soon }}</span>
     {% endif %}
     <span class="u-cf">
-      <strong class="u-textWeight-600">Il progetto</strong></span>
+      <strong class="u-textWeight-600">Progetto</strong>
+    </span>
   </div>
 </div>
 
-<div class="u-background-white u-layout-r-withGutter  u-padding-bottom-xxl u-posRelative u-zindex-30">
+<div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
   <div class="Grid">
-
     <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
       <h1 class="u-text-r-l u-textWeight-300 u-color-50 u-margin-top-l u-lineHeight-l u-sizeFull">
-        {% if page.comingsoon %}
-          <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-            u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
-          {{ t.coming_soon }}</span>
-        {% endif %}
           <span class="u-cf u-text-r-xxl u-color-50 u-textWeight-600 u-lineHeight-s"><strong>{{ page.title }}</strong></span>
         </h1>
       <div class="u-layout-prose u-text-r-xs">
@@ -48,3 +106,5 @@ layout: default
 
   </div>
 </div>
+
+-->
