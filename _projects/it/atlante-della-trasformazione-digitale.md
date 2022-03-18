@@ -18,7 +18,7 @@ redirect_from:
 
 In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
 
-![Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale](/assets/images/projects/atlante-della-trasformazione-digitale-della-pa/atlante-della-trasformazione-digitale-della-pa_1.jpg)
+![Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_1.jpg)
 
 ## Obiettivi
 
