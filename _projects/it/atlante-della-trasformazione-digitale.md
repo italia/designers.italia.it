@@ -14,12 +14,11 @@ redirect_from:
   - /atlante/
 ---
 
-L’Atlante della trasformazione digitale della PA è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’Università IUAV di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
+**L’Atlante della trasformazione digitale della PA** è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’**Università IUAV** di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
 
 In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
 
-
-![Esempio di immagine inline](/assets/images/pages/mockup-rebranding-pagopa.jpeg)
+**Carousel here**
 
 ### Obiettivi
 
