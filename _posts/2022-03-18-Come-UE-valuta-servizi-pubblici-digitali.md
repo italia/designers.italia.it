@@ -27,6 +27,6 @@ L’UE ha definito il decennio attuale il ["decennio digitale" europeo](https://
 
 [Guarda il video](https://www.youtube.com/watch?v=flnYdZR5-9w){:target="_blank" rel="noopener noreferrer"} della community call su YouTube 
 
-**Scarica la presentazione della community call**
+[**Scarica la presentazione della community call**](https://developers.italia.it/assets/images/posts/2022-03-18/090222_Community_Call_Designers_Italia.pdf){:target="_blank" rel="noopener noreferrer"}
 
 [Scopri di più](https://innovazione.gov.it/progetti/attivita-internazionali/#unione-europea){:target="_blank" rel="noopener noreferrer"} sulla **Strategia Digitale Europea** e sui relativi indici di digitalizzazione sul sito del Dipartimento per la trasformazione digitale
