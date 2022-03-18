@@ -1,7 +1,7 @@
 ---
 title: Atlante della trasformazione digitale
 description: Lorem ipsum questa è la descrizione del progetto di Atlante
-#subtitle: Sottotitolo del progetto per la testata
+#subtitle: Una mappa per orientarsi nell’ecosistema dei servizi della Pubblica Amministrazione.
 #payoff: Payoff del progetto per la testta
 logo: /assets/images/projects/web-analytics-cover.jpg
 lang: it
