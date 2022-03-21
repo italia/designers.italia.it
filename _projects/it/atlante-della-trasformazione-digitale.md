@@ -14,11 +14,18 @@ redirect_from:
   - /atlante/
 ---
 
+
+![L'Atlante della trasformazione digitale della PA](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_1.jpg)
+
 **L’Atlante della trasformazione digitale della PA** è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’**Università IUAV** di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
 
 In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
 
-![Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_1.jpg)
+![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_2.jpg)
+![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_3.jpg)
+![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_4.jpg)
+![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_5.jpg)
+![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_6.jpg)
 
 ## Obiettivi
 
@@ -46,6 +53,12 @@ Coinvolgere gli stakeholder in prima persona, verificare le evidenze emerse dall
 
 #### Progettazione visiva
 Sin dal lancio della challenge, comunicare i risultati in modo chiaro e coinvolgente, ma soprattutto utile, è stato considerato uno degli aspetti chiave per il successo dell’Atlante. In quest’ultima fase, gli studenti hanno esplorato diversi modelli di visualizzazione di dati. Hanno poi applicato quelli più appropriati per comunicare i dati in loro possesso, mettendo a terra una narrazione visiva che semplifica la comprensione del loro tema, senza sacrificarne la complessità.
+
+![Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_7.jpg)
+![Una mappa degli attori utilizzata durante il primo workshop](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_8.jpg)
+![Le personas create dai gruppi di lavoro](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_9.jpg)
+![Sperimentazioni analogiche di visualizzazione dati nel secondo workshop](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_10.jpg)
+![Una foto di gruppo](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_11.jpg)
 
 ### Il contributo di Designers Italia
 Designers Italia, con il supporto del Dipartimento per la trasformazione digitale, ha deciso di avviare la prima di una serie di collaborazioni con le università italiane per portare avanti, la missione di Designers Italia: diffondere la cultura della progettazione e del design all’interno della Pubblica Amministrazione. Per farlo è necessario avvicinare la PA al contesto del design, e viceversa, partendo proprio dalla futura generazione di designer.
