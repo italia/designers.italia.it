@@ -1,8 +1,8 @@
 ---
 title: Atlante della trasformazione digitale della PA
-description: Una mappa per orientarsi nell’ecosistema dei servizi della Pubblica Amministrazione.
-#subtitle: Una mappa per orientarsi nell’ecosistema dei servizi della Pubblica Amministrazione.
-#payoff: Payoff del progetto per la testta
+description: Una raccolta di mappe e infografiche per orientarsi nell'ecosistema dei servizi della Pubblica Amministrazione
+#subtitle: Una raccolta di mappe e infografiche per orientarsi nell'ecosistema dei servizi della Pubblica Amministrazione
+#payoff: Non presente
 logo: /assets/images/projects/web-analytics-cover.jpg
 lang: it
 order: 1
