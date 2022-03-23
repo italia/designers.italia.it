@@ -59,13 +59,13 @@ Leggi l'[Atlante della trasformazione digitale della PA](https://medium.com/desi
 ## Il progetto
 
 ### In numeri
-• 63 studenti, raggruppati in 13 aree tematiche
+• **63** studenti, raggruppati in **13** aree tematiche
 
-• 100 ore di laboratorio, 25.200 ore di lavoro complessive
+• **100** ore di laboratorio, **25.200** ore di lavoro complessive
 
-• 2 *workshop* con il Dipartimento per la trasformazione digitale
+• **2** *workshop* con il Dipartimento per la trasformazione digitale
 
-• 86 archetipi, 75 personas, 134 interviste, 436 risposte ai questionari
+• **86** archetipi, **75** personas, **134** interviste, **436** risposte ai questionari
 
 ### Il processo di progettazione
 
@@ -84,12 +84,12 @@ Designers Italia, con il supporto del Dipartimento per la trasformazione digital
 #### Definizione del *brief*
 Insieme ai coordinatori del corso, abbiamo stabilito il focus del progetto di ricerca, il suo perimetro, le attività e gli output attesi. Inoltre, abbiamo condiviso con gli studenti non solo un *framework* di riferimento per analizzare il contesto, ma anche una serie di strumenti pratici per supportare la progettazione.
 
-#### *Workshop* 1: analisi del contesto
+#### Workshop 1: analisi del contesto
 Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un *framework* di riferimento per raccogliere e analizzare le informazioni. Grazie agli output di questo *workshop*, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli stakeholder coinvolti.
 
-[Vai al kit "Analisi del contesto"](https://designers.italia.it/kit/analisi-contesto/)
+[Scopri il kit Analisi del contesto](https://designers.italia.it/kit/analisi-contesto/)
 
-#### *Workshop* 2: visualizzare dati
+#### Workshop 2: visualizzare dati
 Nella seconda giornata, gli studenti si sono concentrati sull’analisi dei dati e sui collegamenti con la comunicazione visiva, esplorando come la rappresentazione dei dati sia di fatto parte integrante del processo di ricerca e uno strumento fondamentale per la generazione di risultati. Per creare una narrativa chiara, gli studenti si sono cimentati nel comprendere il valore dei set di dati quantitativi e qualitativi a disposizione, riorganizzare le informazioni e identificare i modelli visivi adatti a visualizzarle.
 
 ### I progetti
@@ -195,5 +195,3 @@ Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo ch
 Una metafora per raccontare l’ambito degli eventi culturali, un contesto sfumato che può essere sintetizzato in GLAM (acronimo di Galleries, Libraries, Archives and Museums).
 
 [Scarica il capitolo (PDF)](xxx)
-
------
