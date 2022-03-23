@@ -15,26 +15,29 @@ redirect_from:
   - /atlante-della-trasformazione/
   - /iuav/
 galleries:
-  - galleryA:
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_2.jpg
-      alt: "Alcune pagine interne dell'atlante"
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_3.jpg
-      alt: "Alcune pagine interne dell'atlante"
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_4.jpg
-      alt: "Alcune pagine interne dell'atlante"
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_5.jpg
-      alt: "Alcune pagine interne dell'atlante"
-  - galleryB:
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_6.jpg
-      alt: "Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale"
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_7.jpg
-      alt: "Una mappa degli attori utilizzata durante il primo workshop"
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_8.jpg
-      alt: "Le personas create dai gruppi di lavoro"
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_9.jpg
-      alt: "Sperimentazioni analogiche di visualizzazione dati nel secondo workshop"
-    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_10.jpg
-      alt: "Foto di gruppo degli studenti"
+  - title: "La pubblicazione e il processo"
+    id: gallery-a
+    images:
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_1.jpg
+        alt: "Copertina dell'atlante"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_2.jpg
+        alt: "Alcune pagine interne dell'atlante"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_3.jpg
+        alt: "Alcune pagine interne dell'atlante"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_4.jpg
+        alt: "Alcune pagine interne dell'atlante"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_5.jpg
+        alt: "Alcune pagine interne dell'atlante"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_6.jpg
+        alt: "Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_7.jpg
+        alt: "Una mappa degli attori utilizzata durante il primo workshop"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_8.jpg
+        alt: "Le personas create dai gruppi di lavoro"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_9.jpg
+        alt: "Sperimentazioni analogiche di visualizzazione dati nel secondo workshop"
+      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_10.jpg
+        alt: "Foto di gruppo degli studenti"
 
 ---
 
@@ -115,7 +118,7 @@ Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte d
 ![Foto interna del capitolo "Fragilmente. L'instabile realtà dei servizi socioassistenziali"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_12.jpg)
 Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo spettro di condizioni di disagio fisico, economico e sociale delle persone che interagiscono con la PA.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -123,7 +126,7 @@ Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo 
 ![Foto interna del capitolo "Che impresa! Attività produttive"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_13.jpg)
 Una narrazione leggera e solida del percorso che ogni impresa deve affrontare quando incontra la Pubblica Amministrazione, tra pratiche e oneri amministrativi.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -131,15 +134,14 @@ Una narrazione leggera e solida del percorso che ogni impresa deve affrontare qu
 ![Foto interna del capitolo "Prossima fermata: mobilità integrata"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_14.jpg)
 Lo stato attuale del trasporto pubblico in Italia, fra attori e touchpoint digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
 
-[Scarica il capitolo (PDF)](xxx)
-
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 -----
 
 #### La giusta via di mezzo: servizi di sharing
 ![Foto interna del capitolo "La giusta via di mezzo: servizi di sharing"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_15.jpg)
 La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con un focus su Roma, fra problemi, numeri e i cambiamenti portati dalla pandemia.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -147,7 +149,7 @@ La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con 
 ![Foto interna del capitolo "Prevenire è meglio che curare: però in digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_16.jpg)
 Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambito sanitario e ambientale: il monitoraggio, l’informazione e l’azione.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -155,7 +157,7 @@ Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambi
 ![Foto interna del capitolo "La cura"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_17.jpg)
 Un’analisi del fitto reticolo di strutture e servizi che garantiscono un accesso equo all’erogazione delle prestazioni sanitarie a tutti i cittadini, in attuazione dell’art. 32 della Costituzione.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -163,7 +165,7 @@ Un’analisi del fitto reticolo di strutture e servizi che garantiscono un acces
 ![Foto interna del capitolo "I nodi dell'assistenza socio-sanitaria"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_18.jpg)
 Un viaggio fra le esigenze e le problematiche molto diversificate di questo ambito, che riguardano utenti dai profili molto distanti tra loro, dai minori agli anziani non più autosufficienti.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -171,7 +173,7 @@ Un viaggio fra le esigenze e le problematiche molto diversificate di questo ambi
 ![Foto interna del capitolo "La classe non è in classe"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_19.jpg)
 Una riflessione sul futuro della scuola e sul ruolo chiave del digitale, analizzando i cambiamenti e la recente spinta che la fruizione della didattica online ha ricevuto negli ultimi anni.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -179,7 +181,7 @@ Una riflessione sul futuro della scuola e sul ruolo chiave del digitale, analizz
 ![Foto interna del capitolo "Uni versus 2.022"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_20.jpg)
 Una narrazione dei massimi sistemi dell’università italiana e della sua trasformazione digitale come sistema complesso, costituito da una miriade di elementi e figure in relazione tra loro.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -187,7 +189,7 @@ Una narrazione dei massimi sistemi dell’università italiana e della sua trasf
 ![Foto interna del capitolo "Il sistema bibliotecario: tra analogico e digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg)
 Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -195,7 +197,7 @@ Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro del
 ![Foto interna del capitolo "Musei senza pareti"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_22.jpg)
 Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo chiave del digitale per veicolare servizi ai visitatori che siano sempre più utili e coinvolgenti.
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -203,4 +205,4 @@ Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo ch
 ![Foto interna del capitolo "Un gioco impossibile: organizzare eventi"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_23.jpg)
 Una metafora per raccontare l’ambito degli eventi culturali, un contesto sfumato che può essere sintetizzato in GLAM (acronimo di Galleries, Libraries, Archives and Museums).
 
-[Scarica il capitolo (PDF)](xxx)
+[Scarica il capitolo (PDF)](#){:target="_blank" rel="noopener noreferrer"}
