@@ -42,8 +42,6 @@ galleries:
 
 In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
 
-------
-
 ## Gli obiettivi
 
 • Favorisce la comprensione e l’orientamento all’interno dell’ecosistema della PA da parte di addetti ai lavori, designer e cittadini, individuando pattern ricorrenti
@@ -59,13 +57,10 @@ Leggi l'[Atlante della trasformazione digitale della PA](https://medium.com/desi
 ## Il progetto
 
 ### In numeri
-• **63** studenti, raggruppati in **13** aree tematiche
-
-• **100** ore di laboratorio, **25.200** ore di lavoro complessive
-
-• **2** *workshop* con il Dipartimento per la trasformazione digitale
-
-• **86** archetipi, **75** personas, **134** interviste, **436** risposte ai questionari
+- • **63** studenti, raggruppati in **13** aree tematiche
+- • **100** ore di laboratorio, **25.200** ore di lavoro complessive
+- • **2** *workshop* con il Dipartimento per la trasformazione digitale
+- • **86** archetipi, **75** personas, **134** interviste, **436** risposte ai questionari
 
 ### Il processo di progettazione
 
@@ -93,6 +88,20 @@ Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prender
 Nella seconda giornata, gli studenti si sono concentrati sull’analisi dei dati e sui collegamenti con la comunicazione visiva, esplorando come la rappresentazione dei dati sia di fatto parte integrante del processo di ricerca e uno strumento fondamentale per la generazione di risultati. Per creare una narrativa chiara, gli studenti si sono cimentati nel comprendere il valore dei set di dati quantitativi e qualitativi a disposizione, riorganizzare le informazioni e identificare i modelli visivi adatti a visualizzarle.
 
 ### I progetti
+
+- • [Anagrafe. Percorsi e prospetti futuri](#anagrafe-percorsi-e-prospetti-futuri)
+- • [Fragilmente. L’instabile realtà dei servizi socio-assistenziali](#fragilmente-linstabile-realtà-dei-servizi-socio-assistenziali)
+- • [Che impresa! Attività Produttive](#che-impresa-attività-produttive)
+- • [Prossima fermata: mobilità integrata](#prossima-fermata-mobilità-integrata)
+- • [La giusta via di mezzo: servizi di sharing](#la-giusta-via-di-mezzo-servizi-di-sharing)
+- • [Prevenire è meglio che curare: però in digitale](#prevenire-è-meglio-che-curare-però-in-digitale)
+- • [La Cura](#la-cura)
+- • [I nodi dell’assistenza socio-sanitaria](#i-nodi-dellassistenza-socio-sanitaria)
+- • [La classe non è in classe](#la-classe-non-è-in-classe)
+- • [Uni versus 2.022](#uni-versus-2022)
+- • [Il sistema bibliotecario: tra analogico e digitale](#il-sistema-bibliotecario-tra-analogico-e-digitale)
+- • [Musei senza pareti](#musei-senza-pareti)
+- • [Un gioco impossibile: organizzare eventi](#un-gioco-impossibile-organizzare-eventi)
 
 #### Anagrafe. Percorsi e prospetti futuri
 ![Foto interna del capitolo "Anagrafe. Percorsi e prospetti futuri"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_11.jpg)
