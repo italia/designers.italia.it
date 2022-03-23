@@ -42,6 +42,8 @@ galleries:
 
 In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
 
+------
+
 ## Gli obiettivi
 
 • Favorisce la comprensione e l’orientamento all’interno dell’ecosistema della PA da parte di addetti ai lavori, designer e cittadini, individuando pattern ricorrenti
@@ -51,6 +53,8 @@ In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità 
 • Avvicina i giovani designer al mondo della PA e apre nuove modalità di collaborazione fra la comunità del design e il Dipartimento per la trasformazione digitale
 
 Leggi l'[Atlante della trasformazione digitale della PA](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888){:target="_blank" rel="noopener noreferrer"}
+
+------
 
 ## Il progetto
 
