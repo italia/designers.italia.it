@@ -2,7 +2,7 @@
 title: Atlante della trasformazione digitale della PA
 description: Una raccolta di mappe e infografiche per orientarsi nell'ecosistema dei servizi della Pubblica Amministrazione
 #subtitle: Una raccolta di mappe e infografiche per orientarsi nell'ecosistema dei servizi della Pubblica Amministrazione
-#payoff: Non presente
+#payoff:
 logo: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_1.jpg
 lang: it
 order: 1
@@ -12,37 +12,58 @@ layout: project
 redirect_from:
   - /progetti/atlante/
   - /atlante/
+  - /atlante-della-trasformazione/
+  - /iuav/
+galleries:
+  - galleryA:
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_2.jpg
+      alt: "Alcune pagine interne dell'atlante"
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_3.jpg
+      alt: "Alcune pagine interne dell'atlante"
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_4.jpg
+      alt: "Alcune pagine interne dell'atlante"
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_5.jpg
+      alt: "Alcune pagine interne dell'atlante"
+  - galleryB:
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_6.jpg
+      alt: "Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale"
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_7.jpg
+      alt: "Una mappa degli attori utilizzata durante il primo workshop"
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_8.jpg
+      alt: "Le personas create dai gruppi di lavoro"
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_9.jpg
+      alt: "Sperimentazioni analogiche di visualizzazione dati nel secondo workshop"
+    - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_10.jpg
+      alt: "Foto di gruppo degli studenti"
+
 ---
-
-
-![L'Atlante della trasformazione digitale della PA](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_1.jpg)
 
 **L’Atlante della trasformazione digitale della PA** è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’**Università IUAV** di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
 
 In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
 
-![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_2.jpg)
-![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_3.jpg)
-![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_4.jpg)
-![Alcune pagine interne dell'atlante](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_5.jpg)
+## Gli obiettivi
 
-## Obiettivi
+• Favorisce la comprensione e l’orientamento all’interno dell’ecosistema della PA da parte di addetti ai lavori, designer e cittadini, individuando pattern ricorrenti
 
-- Favorisce la comprensione e l’orientamento all’interno dell’ecosistema della PA da parte di addetti ai lavori, designer e cittadini, individuando pattern ricorrenti
-- Informa i processi decisionali per la trasformazione digitale della PA
-- Avvicina i giovani designer al mondo della PA e apre nuove modalità di collaborazione fra la comunità del design e il Dipartimento per la trasformazione digitale
+• Informa i processi decisionali per la trasformazione digitale della PA
 
-Leggi [l’Atlante della trasformazione digitale della PA](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888){:target="_blank" rel="noopener noreferrer"}
+• Avvicina i giovani designer al mondo della PA e apre nuove modalità di collaborazione fra la comunità del design e il Dipartimento per la trasformazione digitale
+
+Leggi l'[Atlante della trasformazione digitale della PA](https://medium.com/designers-italia/cosa-abbiamo-imparato-su-piwik-64b336d78888){:target="_blank" rel="noopener noreferrer"}
 
 ## Il progetto
 
 ### In numeri
-- 63 studenti, raggruppati in 13 aree tematiche
-- 100 ore di laboratorio, 25.200 ore di lavoro complessive
-- 2 *workshop* con il Dipartimento per la trasformazione digitale
-- 86 archetipi, 75 personas, 134 interviste, 436 risposte ai questionari
+• 63 studenti, raggruppati in 13 aree tematiche
 
-### Il processo progettuale
+• 100 ore di laboratorio, 25.200 ore di lavoro complessive
+
+• 2 *workshop* con il Dipartimento per la trasformazione digitale
+
+• 86 archetipi, 75 personas, 134 interviste, 436 risposte ai questionari
+
+### Il processo di progettazione
 
 #### Ricerca secondaria (Desk Research)
 Gli studenti hanno preso familiarità con il mondo della Pubblica Amministrazione raccogliendo informazioni e dati in modo autonomo. Così hanno compreso i diversi ambiti della vita civica e lo stato dell’arte dell’erogazione e della fruizione dei servizi pubblici, concentrandosi in particolare sui temi e le sfide relative alla trasformazione digitale.
@@ -53,102 +74,122 @@ Coinvolgere gli *stakeholder* in prima persona, verificare le evidenze emerse da
 #### Progettazione visiva
 Sin dal lancio della *challenge*, comunicare i risultati in modo chiaro e coinvolgente, ma soprattutto utile, è stato considerato uno degli aspetti chiave per il successo dell’Atlante. In quest’ultima fase, gli studenti hanno esplorato diversi modelli di visualizzazione di dati. Hanno poi applicato quelli più appropriati per comunicare i dati in loro possesso, realizzando una narrazione visiva che semplifica la comprensione del loro tema, senza sacrificarne la complessità.
 
-![Gli studenti in aula durante uno dei workshop tenuti dal Dipartimento per la trasformazione digitale](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_6.jpg)
-![Una mappa degli attori utilizzata durante il primo workshop](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_7.jpg)
-![Le personas create dai gruppi di lavoro](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_8.jpg)
-![Sperimentazioni analogiche di visualizzazione dati nel secondo workshop](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_9.jpg)
-![Foto di gruppo degli studenti](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_10.jpg)
-
 ### Il contributo di Designers Italia
 Designers Italia, con il supporto del Dipartimento per la trasformazione digitale, ha deciso di avviare la prima di una serie di collaborazioni con le università italiane per portare avanti, la missione di Designers Italia: diffondere la cultura della progettazione e del design all’interno della Pubblica Amministrazione. Per farlo è necessario avvicinare la PA al contesto del design, e viceversa, partendo proprio dalla futura generazione di designer.
 
-#### Definizione del brief di progetto
+#### Definizione del *brief*
 Insieme ai coordinatori del corso, abbiamo stabilito il focus del progetto di ricerca, il suo perimetro, le attività e gli output attesi. Inoltre, abbiamo condiviso con gli studenti non solo un *framework* di riferimento per analizzare il contesto, ma anche una serie di strumenti pratici per supportare la progettazione.
 
-#### Workshop 1: analisi del contesto
+#### *Workshop* 1: analisi del contesto
 Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un *framework* di riferimento per raccogliere e analizzare le informazioni. Grazie agli output di questo *workshop*, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli stakeholder coinvolti.
 
-[Vai al kit "Analisi di contesto"](https://designers.italia.it/kit/analisi-contesto/)
+[Vai al kit "Analisi del contesto"](https://designers.italia.it/kit/analisi-contesto/)
 
-#### Workshop 2: visualizzare dati
+#### *Workshop* 2: visualizzare dati
 Nella seconda giornata, gli studenti si sono concentrati sull’analisi dei dati e sui collegamenti con la comunicazione visiva, esplorando come la rappresentazione dei dati sia di fatto parte integrante del processo di ricerca e uno strumento fondamentale per la generazione di risultati. Per creare una narrativa chiara, gli studenti si sono cimentati nel comprendere il valore dei set di dati quantitativi e qualitativi a disposizione, riorganizzare le informazioni e identificare i modelli visivi adatti a visualizzarle.
 
 ### I progetti
 
 #### Anagrafe. Percorsi e prospetti futuri
 ![Foto interna del capitolo "Anagrafe. Percorsi e prospetti futuri"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_11.jpg)
-Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte dei cittadini nelle fasi principali della loro vita, i *Life event* ([Egovernment benchmark 2021](https://www.capgemini.com/wp-content/uploads/2021/10/eGovernment-Benchmark-2021-Insight-Report.pdf){:target="_blank" rel="noopener noreferrer"}).
+Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte dei cittadini nelle fasi principali della loro vita, i *Life event* ([Egovernment benchmark 2021 (PDF)](https://www.capgemini.com/wp-content/uploads/2021/10/eGovernment-Benchmark-2021-Insight-Report.pdf){:target="_blank" rel="noopener noreferrer"}).
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
 
-#### Fragilmente. L’instabile realtà dei servizi socioassistenziali
+-----
+
+#### Fragilmente. L’instabile realtà dei servizi socio-assistenziali
 ![Foto interna del capitolo "Fragilmente. L'instabile realtà dei servizi socioassistenziali"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_12.jpg)
 Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo spettro di condizioni di disagio fisico, economico e sociale delle persone che interagiscono con la PA.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### Che impresa! Attività Produttive
 ![Foto interna del capitolo "Che impresa! Attività produttive"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_13.jpg)
 Una narrazione leggera e solida del percorso che ogni impresa deve affrontare quando incontra la Pubblica Amministrazione, tra pratiche e oneri amministrativi.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### Prossima fermata: mobilità integrata
 ![Foto interna del capitolo "Prossima fermata: mobilità integrata"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_14.jpg)
 Lo stato attuale del trasporto pubblico in Italia, fra attori e touchpoint digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### La giusta via di mezzo: servizi di sharing
 ![Foto interna del capitolo "La giusta via di mezzo: servizi di sharing"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_15.jpg)
 La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con un focus su Roma, fra problemi, numeri e i cambiamenti portati dalla pandemia.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### Prevenire è meglio che curare: però in digitale
 ![Foto interna del capitolo "Prevenire è meglio che curare: però in digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_16.jpg)
 Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambito sanitario e ambientale: il monitoraggio, l’informazione e l’azione.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### La Cura
 ![Foto interna del capitolo "La cura"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_17.jpg)
 Un’analisi del fitto reticolo di strutture e servizi che garantiscono un accesso equo all’erogazione delle prestazioni sanitarie a tutti i cittadini, in attuazione dell’art. 32 della Costituzione.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### I nodi dell’assistenza socio-sanitaria
 ![Foto interna del capitolo "I nodi dell'assistenza socio-sanitaria"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_18.jpg)
 Un viaggio fra le esigenze e le problematiche molto diversificate di questo ambito, che riguardano utenti dai profili molto distanti tra loro, dai minori agli anziani non più autosufficienti.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### La classe non è in classe
 ![Foto interna del capitolo "La classe non è in classe"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_19.jpg)
 Una riflessione sul futuro della scuola e sul ruolo chiave del digitale, analizzando i cambiamenti e la recente spinta che la fruizione della didattica online ha ricevuto negli ultimi anni.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### Uni versus 2.022
 ![Foto interna del capitolo "Uni versus 2.022"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_20.jpg)
 Una narrazione dei massimi sistemi dell’università italiana e della sua trasformazione digitale come sistema complesso, costituito da una miriade di elementi e figure in relazione tra loro.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 ##### Il sistema bibliotecario: tra analogico e digitale
 ![Foto interna del capitolo "Il sistema bibliotecario: tra analogico e digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg)
-Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio. 
+Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### Musei senza pareti
 ![Foto interna del capitolo "Musei senza pareti"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_22.jpg)
 Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo chiave del digitale per veicolare servizi ai visitatori che siano sempre più utili e coinvolgenti.
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
 
 #### Un gioco impossibile: organizzare eventi
 ![Foto interna del capitolo "Un gioco impossibile: organizzare eventi"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_23.jpg)
 Una metafora per raccontare l’ambito degli eventi culturali, un contesto sfumato che può essere sintetizzato in GLAM (acronimo di Galleries, Libraries, Archives and Museums).
 
-[Scarica il PDF](xxx)
+[Scarica il capitolo (PDF)](xxx)
+
+-----
