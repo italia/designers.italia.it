@@ -183,7 +183,7 @@ Una narrazione dei massimi sistemi dell’università italiana e della sua trasf
 
 -----
 
-##### Il sistema bibliotecario: tra analogico e digitale
+#### Il sistema bibliotecario: tra analogico e digitale
 ![Foto interna del capitolo "Il sistema bibliotecario: tra analogico e digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg)
 Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio.
 
