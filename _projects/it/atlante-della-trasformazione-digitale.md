@@ -147,7 +147,7 @@ La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con 
 ![Foto interna del capitolo "Prevenire è meglio che curare: però in digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_16.jpg)
 Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambito sanitario e ambientale: il monitoraggio, l’informazione e l’azione.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/prevenire-e-meglio-che-curare.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/prevenire-e-meglio-che-curare-pero-in-digitale.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
