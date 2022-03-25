@@ -9,7 +9,7 @@ order: 1
 toc: true
 highlight: true
 layout: project
-ctaTitle: "Scarica l’Atlante completo (PDF, 80MB)"
+ctaTitle: "Scarica l’Atlante (PDF, 80MB)"
 ctaUrl: https://drive.google.com/file/d/1QYHBMcSHvcIn224fkvVE98Bf2_oeDB-7/view?usp=sharing
 intro: "<p><strong>L’Atlante della trasformazione digitale della PA</strong> è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’<strong>Università IUAV</strong> di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.</p>
 <p>In tredici capitoli, l’Atlante mappa <strong>archetipi collettivi</strong>, come comunità e organizzazioni, il loro <strong>contesto</strong>, e gli <strong>aspetti organizzativi e procedurali</strong> rintracciando i <em>pattern</em> ricorrenti.</p>"
