@@ -81,7 +81,7 @@ Designers Italia, con il supporto del Dipartimento per la trasformazione digital
 Insieme ai coordinatori del corso, abbiamo stabilito il focus del progetto di ricerca, il suo perimetro, le attività e i risultati attesi. Inoltre, abbiamo condiviso con gli studenti non solo un *framework* di riferimento per analizzare il contesto, ma anche una serie di strumenti pratici per supportare la progettazione.
 
 #### Workshop 1: analisi del contesto
-Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un *framework* di riferimento per raccogliere e analizzare le informazioni. Grazie agli output di questo *workshop*, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli *stakeholder* coinvolti.
+Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un *framework* di riferimento per raccogliere e analizzare le informazioni. Grazie ai risultati di questo *workshop*, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli *stakeholder* coinvolti.
 
 [Scopri il kit Analisi del contesto](https://designers.italia.it/kit/analisi-contesto/)
 
