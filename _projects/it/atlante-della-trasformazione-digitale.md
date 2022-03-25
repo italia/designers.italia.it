@@ -130,7 +130,7 @@ Una narrazione leggera e solida del percorso che ogni impresa deve affrontare qu
 
 #### Prossima fermata: mobilità integrata
 ![Foto interna del capitolo "Prossima fermata: mobilità integrata"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_14.jpg)
-Lo stato attuale del trasporto pubblico in Italia, fra attori e touchpoint digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
+Lo stato attuale del trasporto pubblico in Italia, fra attori e *touchpoint* digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
 
 [Scarica il capitolo (PDF)](/assets/docs/projects/atlante/prossima-fermata.pdf){:target="_blank" rel="noopener noreferrer"}
 
