@@ -208,8 +208,8 @@ Una metafora per raccontare l’ambito degli eventi culturali, un contesto sfuma
 
 -----
 
-### Licenza CC BY-SA 4.0
+### Licenza CC BY 4.0
 
-Quest'opera, l'Atlante per la trasformazione digitale della PA, è distribuita con [Licenza Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](https://creativecommons.org/licenses/by-sa/4.0/deed.it){:target="_blank" rel="noopener noreferrer"}.  
+Quest'opera, l'Atlante per la trasformazione digitale della PA, è distribuita con [Licenza Creative Commons Attribuzione 4.0 Internazionale](https://creativecommons.org/licenses/by/4.0/deed.it){:target="_blank" rel="noopener noreferrer"}.  
 
-Copyright (c) 2022 IUAV / Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione digitale.
+Copyright (c) 2022 Università IUAV di Venezia / Laboratorio di design della comunicazione A.A. 2021-2022. Corso di laurea magistrale in design del prodotto, della comunicazione e degli interni
