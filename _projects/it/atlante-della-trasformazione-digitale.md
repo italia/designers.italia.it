@@ -78,10 +78,10 @@ Sin dal lancio della sfida progettuale (*design challenge*), comunicare i risult
 Designers Italia, con il supporto del Dipartimento per la trasformazione digitale, ha deciso di avviare la prima di una serie di collaborazioni con le università italiane per portare avanti la sua missione: diffondere la cultura della progettazione e del design all’interno della Pubblica Amministrazione. Per farlo è necessario avvicinare la PA al contesto del design, e viceversa, partendo proprio dalla futura generazione di designer.
 
 #### Definizione del *brief*
-Insieme ai coordinatori del corso, abbiamo stabilito il focus del progetto di ricerca, il suo perimetro, le attività e gli output attesi. Inoltre, abbiamo condiviso con gli studenti non solo un *framework* di riferimento per analizzare il contesto, ma anche una serie di strumenti pratici per supportare la progettazione.
+Insieme ai coordinatori del corso, abbiamo stabilito il focus del progetto di ricerca, il suo perimetro, le attività e i risultati attesi. Inoltre, abbiamo condiviso con gli studenti non solo un *framework* di riferimento per analizzare il contesto, ma anche una serie di strumenti pratici per supportare la progettazione.
 
 #### Workshop 1: analisi del contesto
-Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un *framework* di riferimento per raccogliere e analizzare le informazioni. Grazie agli output di questo *workshop*, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli *stakeholder* coinvolti.
+Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un *framework* di riferimento per raccogliere e analizzare le informazioni. Grazie ai risultati di questo *workshop*, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli *stakeholder* coinvolti.
 
 [Scopri il kit Analisi del contesto](https://designers.italia.it/kit/analisi-contesto/)
 
@@ -130,7 +130,7 @@ Una narrazione leggera e solida del percorso che ogni impresa deve affrontare qu
 
 #### Prossima fermata: mobilità integrata
 ![Foto interna del capitolo "Prossima fermata: mobilità integrata"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_14.jpg)
-Lo stato attuale del trasporto pubblico in Italia, fra attori e touchpoint digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
+Lo stato attuale del trasporto pubblico in Italia, fra attori e *touchpoint* digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
 
 [Scarica il capitolo (PDF, 2.6MB)](/assets/docs/projects/atlante/prossima-fermata.pdf){:target="_blank" rel="noopener noreferrer"}
 
