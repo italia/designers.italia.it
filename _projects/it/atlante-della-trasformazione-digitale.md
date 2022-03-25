@@ -9,6 +9,12 @@ order: 1
 toc: true
 highlight: true
 layout: project
+ctaTitle: "Scarica l’Atlante completo (PDF, 100MB)"
+ctaUrl: /assets/docs/projects/atlante/atlante-della-trasformazione-digitale-della-PA.pdf
+intro: "<strong>L’Atlante della trasformazione digitale della PA</strong> è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’<strong>Università IUAV</strong> di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
+
+In tredici capitoli, l’Atlante mappa <strong>archetipi collettivi</strong>, come comunità e organizzazioni, il loro <strong>contesto</strong>, e gli <strong>aspetti organizzativi e procedurali</strong> rintracciando i <em>pattern</em> ricorrenti."
+
 redirect_from:
   - /progetti/atlante/
   - /atlante/
@@ -39,10 +45,6 @@ galleries:
 
 ---
 
-**L’Atlante della trasformazione digitale della PA** è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’**Università IUAV** di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
-
-In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i *pattern* ricorrenti.
-
 ## Gli obiettivi
 
 • Favorisce la comprensione e l’orientamento all’interno dell’ecosistema della PA da parte di addetti ai lavori, designer e cittadini, individuando pattern ricorrenti
@@ -50,8 +52,6 @@ In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità 
 • Informa i processi decisionali per la trasformazione digitale della PA
 
 • Avvicina i giovani designer al mondo della PA e apre nuove modalità di collaborazione fra la comunità del design e il Dipartimento per la trasformazione digitale
-
-Leggi l'[Atlante della trasformazione digitale della PA](/assets/docs/projects/atlante/atlante-della-trasformazione-digitale-della-PA.pdf){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
@@ -124,7 +124,7 @@ Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo 
 ![Foto interna del capitolo "Che impresa! Attività produttive"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_13.jpg)
 Una narrazione leggera e solida del percorso che ogni impresa deve affrontare quando incontra la Pubblica Amministrazione, tra pratiche e oneri amministrativi.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/che-impresa.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 0.3MB)](/assets/docs/projects/atlante/che-impresa.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -132,7 +132,7 @@ Una narrazione leggera e solida del percorso che ogni impresa deve affrontare qu
 ![Foto interna del capitolo "Prossima fermata: mobilità integrata"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_14.jpg)
 Lo stato attuale del trasporto pubblico in Italia, fra attori e touchpoint digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/prossima-fermata.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 2.6MB)](/assets/docs/projects/atlante/prossima-fermata.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -140,7 +140,7 @@ Lo stato attuale del trasporto pubblico in Italia, fra attori e touchpoint digit
 ![Foto interna del capitolo "La giusta via di mezzo: servizi di sharing"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_15.jpg)
 La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con un focus su Roma, fra problemi, numeri e i cambiamenti portati dalla pandemia.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/la-giusta-via-di-mezzo.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 0.8MB)](/assets/docs/projects/atlante/la-giusta-via-di-mezzo.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -148,7 +148,7 @@ La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con 
 ![Foto interna del capitolo "Prevenire è meglio che curare: però in digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_16.jpg)
 Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambito sanitario e ambientale: il monitoraggio, l’informazione e l’azione.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/prevenire-e-meglio-che-curare-pero-in-digitale.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 12MB)](/assets/docs/projects/atlante/prevenire-e-meglio-che-curare-pero-in-digitale.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -156,7 +156,7 @@ Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambi
 ![Foto interna del capitolo "La cura"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_17.jpg)
 Un’analisi del fitto reticolo di strutture e servizi che garantiscono un accesso equo all’erogazione delle prestazioni sanitarie a tutti i cittadini, in attuazione dell’art. 32 della Costituzione.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/la-cura.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 0.4MB)](/assets/docs/projects/atlante/la-cura.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -164,7 +164,7 @@ Un’analisi del fitto reticolo di strutture e servizi che garantiscono un acces
 ![Foto interna del capitolo "I nodi dell'assistenza socio-sanitaria"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_18.jpg)
 Un viaggio fra le esigenze e le problematiche molto diversificate di questo ambito, che riguardano utenti dai profili molto distanti tra loro, dai minori agli anziani non più autosufficienti.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/i-nodi-dell-assistenza-socio-sanitaria.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 8.1MB)](/assets/docs/projects/atlante/i-nodi-dell-assistenza-socio-sanitaria.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -172,7 +172,7 @@ Un viaggio fra le esigenze e le problematiche molto diversificate di questo ambi
 ![Foto interna del capitolo "La classe non è in classe"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_19.jpg)
 Una riflessione sul futuro della scuola e sul ruolo chiave del digitale, analizzando i cambiamenti e la recente spinta che la fruizione della didattica online ha ricevuto negli ultimi anni.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/la-classe-non-e-in-classe.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 27MB)](/assets/docs/projects/atlante/la-classe-non-e-in-classe.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -180,7 +180,7 @@ Una riflessione sul futuro della scuola e sul ruolo chiave del digitale, analizz
 ![Foto interna del capitolo "Uni versus 2.022"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_20.jpg)
 Una narrazione dei massimi sistemi dell’università italiana e della sua trasformazione digitale come sistema complesso, costituito da una miriade di elementi e figure in relazione tra loro.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/uni-versus-2-022.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 13MB)](/assets/docs/projects/atlante/uni-versus-2-022.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -188,7 +188,7 @@ Una narrazione dei massimi sistemi dell’università italiana e della sua trasf
 ![Foto interna del capitolo "Il sistema bibliotecario: tra analogico e digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg)
 Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio.
 
-[Scarica il capitolo (PDF)](assets/docs/projects/atlante/il-sistema-bibliotecario-universitario.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 2.8MB)](assets/docs/projects/atlante/il-sistema-bibliotecario-universitario.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -196,7 +196,7 @@ Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro del
 ![Foto interna del capitolo "Musei senza pareti"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_22.jpg)
 Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo chiave del digitale per veicolare servizi ai visitatori che siano sempre più utili e coinvolgenti.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/musei-senza-pareti.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 1.3MB)](/assets/docs/projects/atlante/musei-senza-pareti.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -204,7 +204,7 @@ Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo ch
 ![Foto interna del capitolo "Un gioco impossibile: organizzare eventi"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_23.jpg)
 Una metafora per raccontare l’ambito degli eventi culturali, un contesto sfumato che può essere sintetizzato in GLAM (acronimo di Galleries, Libraries, Archives and Museums).
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/un-gioco-impossibile.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 0.9MB)](/assets/docs/projects/atlante/un-gioco-impossibile.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 

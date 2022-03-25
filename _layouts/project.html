@@ -76,6 +76,16 @@ layout: default
 
     <!-- content -->
     <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+      {% if page.intro %}
+        <div class="kitIntro u-layout-prose u-color-grey-ui-kit Project u-margin-r-bottom">
+          {{ page.intro }}
+        </div>
+      {% endif %}
+      {% if page.ctaTitle %}
+        <div class="u-padding-top-l">
+          <a role="button" target="_blank" class="Button Button--default Button--shadow Button--round u-textWeight-600 u-textClean u-text-r-xs  u-background-teal-60 u-color-grey-ui-kit" href="{{ page.ctaUrl }}">{{ page.ctaTitle }}</a>
+        </div>
+      {% endif %}
       <div class="kitIntro u-layout-prose u-color-grey-ui-kit Project">
         {{ content }}
       </div>
