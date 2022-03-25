@@ -188,7 +188,7 @@ Una narrazione dei massimi sistemi dell’università italiana e della sua trasf
 ![Foto interna del capitolo "Il sistema bibliotecario: tra analogico e digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg)
 Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/il-sistema-bibliotecario.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF)](assets/docs/projects/atlante/il-sistema-bibliotecario-universitario.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
