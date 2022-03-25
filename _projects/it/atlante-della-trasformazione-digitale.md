@@ -51,7 +51,7 @@ In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità 
 
 • Avvicina i giovani designer al mondo della PA e apre nuove modalità di collaborazione fra la comunità del design e il Dipartimento per la trasformazione digitale
 
-Leggi l'[Atlante della trasformazione digitale della PA](/assets/docs/projects/atlante/atlante-della-trasformazione-digitale-della-PA.pdf){:target="_blank" rel="noopener noreferrer"}
+Leggi l'[Atlante della trasformazione digitale della PA (PDF, 82MB)](/assets/docs/projects/atlante/atlante-della-trasformazione-digitale-della-PA.pdf){:target="_blank" rel="noopener noreferrer"}
 
 ------
 
