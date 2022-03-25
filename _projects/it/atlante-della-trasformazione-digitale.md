@@ -20,8 +20,6 @@ galleries:
     images:
       - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_1.jpg
         alt: "Copertina dell'atlante"
-      - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_2.jpg
-        alt: "Alcune pagine interne dell'atlante"
       - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_3.jpg
         alt: "Alcune pagine interne dell'atlante"
       - img: /assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_4.jpg
