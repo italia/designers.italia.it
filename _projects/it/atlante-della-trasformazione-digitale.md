@@ -205,3 +205,11 @@ Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo ch
 Una metafora per raccontare l’ambito degli eventi culturali, un contesto sfumato che può essere sintetizzato in GLAM (acronimo di Galleries, Libraries, Archives and Museums).
 
 [Scarica il capitolo (PDF)](/assets/docs/projects/atlante/un-gioco-impossibile.pdf){:target="_blank" rel="noopener noreferrer"}
+
+-----
+
+### Licenza CC BY-SA 4.0
+
+Quest'opera, l'Atlante per la trasformazione digitale della PA, è distribuita con [Licenza Creative Commons Attribuzione - Condividi allo stesso modo 4.0 Internazionale](https://creativecommons.org/licenses/by-sa/4.0/deed.it){:target="_blank" rel="noopener noreferrer"}.  
+
+Copyright (c) 2022 IUAV / Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione digitale.
