@@ -123,12 +123,6 @@ jobs:
       #   ssh-keyscan $REMOTEHOST | base64.
       - run: mkdir -p ~/.ssh
       - run: echo $SSH_KNOWN_HOSTS | base64 -d >> ~/.ssh/known_hosts
-      - run: which rsync || sudo apt-get install rsync
-
-      # Deploy the site to the legacy server (disabled)
-      # - run:
-      #    name: Deploy to production
-      #    command: yarn run deploy
 
       # Deploy the site to GitHub Pages
       - checkout:
@@ -160,7 +154,7 @@ workflows:
             filters:
               branches:
                 ignore:
-                  - master
+                  - main
                   - gh-pages
   deploy:
       jobs:
@@ -168,5 +162,5 @@ workflows:
             filters:
               branches:
                 only:
-                  - master
+                  - main
                   - deploy-ghpages
