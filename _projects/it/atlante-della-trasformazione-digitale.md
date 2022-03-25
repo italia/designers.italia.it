@@ -71,19 +71,19 @@ Leggi l'[Atlante della trasformazione digitale della PA](/assets/docs/projects/a
 Gli studenti hanno preso familiarità con il mondo della Pubblica Amministrazione raccogliendo informazioni e dati in modo autonomo. Così hanno compreso i diversi ambiti della vita civica e lo stato dell’arte dell’erogazione e della fruizione dei servizi pubblici, concentrandosi in particolare sui temi e le sfide relative alla trasformazione digitale.
 
 #### Ricerca primaria (User Research)
-Coinvolgere gli *stakeholder* in prima persona, verificare le evidenze emerse dalla ricerca secondaria, valutare e validare le supposizioni fatte e consolidare i fattori determinanti per caratterizzare le diverse tipologie di PA rispetto alla digitalizzazione dei servizi. La *User Research* è stato un passaggio fondamentale per definire la forma e i contenuti dell’Atlante, e ha consentito agli studenti di entrare in contatto con gli attori e le dinamiche della Pubblica Amministrazione.
+Coinvolgere i portatori d'interesse (*stakeholder*) in prima persona, verificare le evidenze emerse dalla ricerca secondaria, valutare e validare le supposizioni fatte e consolidare i fattori determinanti per caratterizzare le diverse tipologie di PA rispetto alla digitalizzazione dei servizi. La *User Research* è stato un passaggio fondamentale per definire la forma e i contenuti dell’Atlante, e ha consentito agli studenti di entrare in contatto con gli attori e le dinamiche della Pubblica Amministrazione.
 
 #### Progettazione visiva
-Sin dal lancio della *challenge*, comunicare i risultati in modo chiaro e coinvolgente, ma soprattutto utile, è stato considerato uno degli aspetti chiave per il successo dell’Atlante. In quest’ultima fase, gli studenti hanno esplorato diversi modelli di visualizzazione di dati. Hanno poi applicato quelli più appropriati per comunicare i dati in loro possesso, realizzando una narrazione visiva che semplifica la comprensione del loro tema, senza sacrificarne la complessità.
+Sin dal lancio della sfida progettuale (*design challenge*), comunicare i risultati in modo chiaro e coinvolgente, ma soprattutto utile, è stato considerato uno degli aspetti chiave per il successo dell’Atlante. In quest’ultima fase, gli studenti hanno esplorato diversi modelli di visualizzazione di dati. Hanno poi applicato quelli più appropriati per comunicare i dati in loro possesso, realizzando una narrazione visiva che semplifica la comprensione del loro tema, senza sacrificarne la complessità.
 
 ### Il contributo di Designers Italia
-Designers Italia, con il supporto del Dipartimento per la trasformazione digitale, ha deciso di avviare la prima di una serie di collaborazioni con le università italiane per portare avanti, la missione di Designers Italia: diffondere la cultura della progettazione e del design all’interno della Pubblica Amministrazione. Per farlo è necessario avvicinare la PA al contesto del design, e viceversa, partendo proprio dalla futura generazione di designer.
+Designers Italia, con il supporto del Dipartimento per la trasformazione digitale, ha deciso di avviare la prima di una serie di collaborazioni con le università italiane per portare avanti la sua missione: diffondere la cultura della progettazione e del design all’interno della Pubblica Amministrazione. Per farlo è necessario avvicinare la PA al contesto del design, e viceversa, partendo proprio dalla futura generazione di designer.
 
 #### Definizione del *brief*
 Insieme ai coordinatori del corso, abbiamo stabilito il focus del progetto di ricerca, il suo perimetro, le attività e gli output attesi. Inoltre, abbiamo condiviso con gli studenti non solo un *framework* di riferimento per analizzare il contesto, ma anche una serie di strumenti pratici per supportare la progettazione.
 
 #### Workshop 1: analisi del contesto
-Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un *framework* di riferimento per raccogliere e analizzare le informazioni. Grazie agli output di questo *workshop*, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli stakeholder coinvolti.
+Abbiamo organizzato una sessione di un giorno per aiutare gli studenti a prendere familiarità con il contesto e gli ambiti che avrebbero investigato e a creare un *framework* di riferimento per raccogliere e analizzare le informazioni. Grazie agli output di questo *workshop*, gli studenti hanno potuto analizzare il contesto dei servizi pubblici digitali rispetto a diversi ambiti della vita civica, identificando attori ed elementi coinvolti e le loro interrelazioni, per mappare l’ecosistema complessivo e definire i diversi archetipi delle organizzazioni e degli *stakeholder* coinvolti.
 
 [Scopri il kit Analisi del contesto](https://designers.italia.it/kit/analisi-contesto/)
 
@@ -150,7 +150,7 @@ La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con 
 ![Foto interna del capitolo "Prevenire è meglio che curare: però in digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_16.jpg)
 Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambito sanitario e ambientale: il monitoraggio, l’informazione e l’azione.
 
-[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/prevenire-e-meglio-che-curare.pdf){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF)](/assets/docs/projects/atlante/prevenire-e-meglio-che-curare-pero-in-digitale.pdf){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -186,7 +186,7 @@ Una narrazione dei massimi sistemi dell’università italiana e della sua trasf
 
 -----
 
-##### Il sistema bibliotecario: tra analogico e digitale
+#### Il sistema bibliotecario: tra analogico e digitale
 ![Foto interna del capitolo "Il sistema bibliotecario: tra analogico e digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg)
 Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio.
 
