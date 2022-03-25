@@ -3,48 +3,97 @@ layout: default
 ---
 
 {% include setlang.html %}
+{% assign title = page.title %}
+{% assign subtitle = page.description %}
 
-<div class="u-background-white u-layout-r-withGutter u-padding-top-xxl project-title-wrapper">
-  <div class="project-shadow2">{{ page.title }}</div>
-  {% if page.description %}<div class="project-shadow1 u-sizeFull u-md-size7of12 u-lg-size7of12">{{ page.description }}</div>{% endif %}
-  <div class="u-text-r-l u-textWeight-300 u-color-50 u-margin-top-l u-lineHeight-l u-sizeFull u-md-size7of12 u-lg-size7of12">
-    {% if page.comingsoon %}
-      <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
-        u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
-      {{ t.coming_soon }}</span>
-    {% endif %}
-    <span class="u-cf">
-      <strong class="u-textWeight-600">Il progetto</strong></span>
-  </div>
-</div>
+<article class="u-color-grey-ui-kit a-text-semi-bold">
 
-<div class="u-background-white u-layout-r-withGutter  u-padding-bottom-xxl u-posRelative u-zindex-30">
-  <div class="Grid">
+  <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
 
-    <div class="Grid-cell u-sizeFull u-md-size7of12 u-lg-size7of12">
-      <h1 class="u-text-r-l u-textWeight-300 u-color-50 u-margin-top-l u-lineHeight-l u-sizeFull">
-        {% if page.comingsoon %}
+    <!-- header -->
+    <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+      <div class="Grid-cell u-lg-size6of12 u-md-size6of12 u-lg-after3of12 u-md-after3of12">
+        <div class="u-margin-bottom-s">
+          {% if page.comingsoon %}
           <span class="u-inlineBlock u-textWeight-600 u-padding-top-xxs u-padding-bottom-xxs u-padding-r-right u-padding-r-left
             u-borderRadius-xl u-background-grey-20 u-color-50 u-text-xxs">
           {{ t.coming_soon }}</span>
         {% endif %}
-          <span class="u-cf u-text-r-xxl u-color-50 u-textWeight-600 u-lineHeight-s"><strong>{{ page.title }}</strong></span>
-        </h1>
-      <div class="u-layout-prose u-text-r-xs">
-      {% if page.description %}<h2 class="u-textWeight-300 u-text-r-l u-margin-r-bottom u-margin-r-top  u-color-grey-ui-kit">{{ page.description }}</h2>{% endif %}
-      <div class="Prose Project">
-        {{ content }}
-      </div>
+        </div>
+        <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Progetto</div>
+        <h1 class="u-text-h1">{{title}}</h1>
+        <div class="u-text-r-l">
+          {{subtitle}}
+        </div>
       </div>
     </div>
 
-    {% capture toc %}{% toc %}{% endcapture %}
-    {% include sideblock.html title=page.subtitle title=page.title content=toc  %}
+    {% if page.galleries %}
+      <!-- cover galleries -->
+      <div class="Grid Grid--alignCenter u-padding-all-l">
+        <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+          {% assign galleries = page.galleries %}
+          {% for gallery in galleries %}
+            {% if gallery.images.size > 0 %}
+            <div class="u-margin-bottom-xxl">
+              <!--<div class="u-margin-bottom-l u-md-margin-bottom-none">{{gallery.title}}</div>-->
+              <div class="/*u-padding-r-all u-xs-padding-all-none*/ owl-carousel owl-theme Grid Grid--withGutter Grid--alignMiddle u-flex" role="region" id="{{gallery.id}}" tabindex="0"
+              data-carousel-options='{"loop": true,"nav": false,"autoplay": false,"autoHeight": true,"dotsContainer": "#dots-{{gallery.id}}", "dots": true, "responsive": {"0":{"items": 1},"768": {"items": 1},"992": {"items": 1}}}'>
+                {% for image in gallery.images %}
+                <div class="Carousel-item u-sizeFull">
+                  <img class="" alt="{{image.alt}}" src="{{image.img}}"/>
+                </div>
+                {% endfor %}
+              </div>
+              <div id="dots-{{gallery.id}}" class="owl-dots u-margin-top-l"></div>
+            </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% else %}
+      <!-- cover img -->
+      <div class="Grid Grid--alignCenter u-padding-all-l">
+        <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+          {% if page.logo %}
+          <img class="u-sizeFull" alt="{{title}}" src="{{ page.logo }}"/>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
 
-    {% comment %}
-      {% capture pills %}{% include pills.html items=page.pills  %}{% endcapture %}
-      {% include sideblock.html title=page.subtitle content=pills %}
-    {% endcomment %}
+    <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+      <!-- toc -->
+      {% capture toc %}{% toc %}{% endcapture %}
+      <nav aria-hidden="false" aria-label="indice di pagina" class="Grid-cell u-lg-size2of12 u-md-size2of12 u-margin-bottom-xxl u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none u-lg-after1of12 u-md-after1of12">
+        <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">
+            INDICE DI PAGINA
+        </div>
+        <div class="u-text-r-xxs ">
+          {{ toc }}
+        </div>
+      </nav>
+
+    <!-- content -->
+    <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+      {% if page.intro %}
+        <div class="kitIntro u-layout-prose u-color-grey-ui-kit Project u-margin-bottom-l">
+          {{ page.intro }}
+        </div>
+      {% endif %}
+      {% if page.ctaTitle %}
+        <div class="u-padding-top-l">
+          <a role="button" target="_blank" class="Button Button--default Button--shadow Button--round u-textWeight-600 u-textClean u-text-r-xxs  u-background-teal-60 u-color-grey-ui-kit" href="{{ page.ctaUrl }}">{{ page.ctaTitle }}</a>
+        </div>
+      {% endif %}
+      <div class="kitIntro u-layout-prose u-color-grey-ui-kit Project">
+        {{ content }}
+      </div>
+    </div>
+
+
+    </div>
 
   </div>
-</div>
+
+</article>
