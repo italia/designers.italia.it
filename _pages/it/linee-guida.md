@@ -20,7 +20,7 @@ header:
   title: "Linee guida e manuale"
   description: "Le Linee guida a norma CAD e la documentazione che ti insegna a progettare mettendo il cittadino al centro questo è un testo segnaposto"
   links:
-    - <a href="#linee-guida" class="u-color-grey-ui-kit">Scopri le Linee guida di design...</a>
+    - <a href="#linee-guida" class="u-color-grey-ui-kit">Scopri le Linee guida di design</a>
     - <a href="#manuale" class="u-color-grey-ui-kit">Scopri il manuale operativo di design</a>
   image: '/assets/icons/kit/linee-guida-e-manuale.svg'
 manuale:
