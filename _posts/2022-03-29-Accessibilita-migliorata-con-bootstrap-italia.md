@@ -19,7 +19,7 @@ categories:
 <!-- MORE -->
 Una nuova tappa importante per il *design system* del Paese e per i servizi pubblici digitali: mercoledì 23 marzo, in occasione del *community lab*, due esperti del Dipartimento per la trasformazione digitale, Andrea Stagi, open source project leader, e Daniele Tabellini, UI/UX Designer, hanno fatto il punto sugli sviluppi di **Bootstrap Italia 2.0**, nuovo tema di Bootstrap 5, e presentato **Bootstrap Italia 1.6**, l’ultimo rilascio basato sul tema di Bootstrap 4.
 
-Bootstrap Italia è uno dei tasselli fondamentali del d[design system del Paese](https://designers.italia.it/notizie/Per-un-2022-ricco-di-sfide/){:target="_blank" rel="noopener noreferrer"}, e contribuisce a creare **servizi e siti più coerenti, familiari e usabili** per le persone.
+Bootstrap Italia è uno dei tasselli fondamentali del [design system del Paese](https://designers.italia.it/notizie/Per-un-2022-ricco-di-sfide/){:target="_blank" rel="noopener noreferrer"}, e contribuisce a creare **servizi e siti più coerenti, familiari e usabili** per le persone.
 
 Durante l’incontro, seguito da 150 persone, Andrea e Daniele hanno sottolineato che gran parte delle migliorie e funzionalità legate alla versione 1.6 si concentrano proprio sull’**accessibilità**, e sono state implementate e validate grazie alla collaborazione con **Agenzia per l’Italia Digitale** (AgID). 
 
