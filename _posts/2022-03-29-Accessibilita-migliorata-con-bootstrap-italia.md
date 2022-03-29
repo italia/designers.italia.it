@@ -29,6 +29,6 @@ Bootstrap Italia 1.6 è disponibile partendo dalla sua [documentazione](https://
 
 Tutte le persone interessate a lasciare il segno nel *design system* del Paese possono contribuire allo sviluppo di Bootstrap Italia 2.0 sulla *repository* [GitHub di lavorazione](https://github.com/italia/bootstrap-italia-next){:target="_blank" rel="noopener noreferrer"}, con l’obiettivo che i futuri progetti di siti e servizi della Pubblica Amministrazione utilizzino direttamente questa versione.
 
-[Guarda il video completo del community lab](https://www.youtube.com/watch?v=dQVy8DLPJbY){:target="_blank" rel="noopener noreferrer"} sul canale YouTube del Dipartimento per la trasformazione digitale e scarica la presentazione.
+[Guarda il video completo del community lab](https://www.youtube.com/watch?v=dQVy8DLPJbY){:target="_blank" rel="noopener noreferrer"} sul canale YouTube del Dipartimento per la trasformazione digitale e [scarica la presentazione](https://developers.italia.it/assets/images/posts/2022-03-29/Community_lab.pdf).
 
 Per saperne di più resta in contatto su [Slack](https://slack.developers.italia.it){:target="_blank" rel="noopener noreferrer"}, continua a seguirci sui canali Twitter di [Designers Italia](https://twitter.com/DesignersITA){:target="_blank" rel="noopener noreferrer"} e [Developers Italia](https://twitter.com/developersITA){:target="_blank" rel="noopener noreferrer"}.
