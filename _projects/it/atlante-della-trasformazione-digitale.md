@@ -107,7 +107,7 @@ Nella seconda giornata, gli studenti si sono concentrati sull’analisi dei dati
 ![Foto interna del capitolo "Anagrafe. Percorsi e prospetti futuri"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_11.jpg)
 Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte dei cittadini nelle fasi principali della loro vita, i *Life event* ([Egovernment benchmark 2021 (PDF)](https://www.capgemini.com/wp-content/uploads/2021/10/eGovernment-Benchmark-2021-Insight-Report.pdf){:target="_blank" rel="noopener noreferrer"}).
 
-[Scarica il capitolo (PDF)](https://drive.google.com/file/d/143drOj7ADWktMytR92VGxFGKGflmxjBv/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 2.5MB)](https://drive.google.com/file/d/143drOj7ADWktMytR92VGxFGKGflmxjBv/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -115,7 +115,7 @@ Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte d
 ![Foto interna del capitolo "Fragilmente. L'instabile realtà dei servizi socioassistenziali"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_12.jpg)
 Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo spettro di condizioni di disagio fisico, economico e sociale delle persone che interagiscono con la PA.
 
-[Scarica il capitolo (PDF)](https://drive.google.com/file/d/1_liVlXWQW_AORVhSjd6r1QpNS0zHgZW1/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 3.2MB)](https://drive.google.com/file/d/1_liVlXWQW_AORVhSjd6r1QpNS0zHgZW1/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
