@@ -9,7 +9,7 @@ order: 1
 toc: true
 highlight: true
 layout: project
-ctaTitle: "Scarica l’Atlante completo (PDF, 80MB)"
+ctaTitle: "Scarica l’Atlante (PDF, 80MB)"
 ctaUrl: https://drive.google.com/file/d/1QYHBMcSHvcIn224fkvVE98Bf2_oeDB-7/view?usp=sharing
 intro: "<p><strong>L’Atlante della trasformazione digitale della PA</strong> è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’<strong>Università IUAV</strong> di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.</p>
 <p>In tredici capitoli, l’Atlante mappa <strong>archetipi collettivi</strong>, come comunità e organizzazioni, il loro <strong>contesto</strong>, e gli <strong>aspetti organizzativi e procedurali</strong> rintracciando i <em>pattern</em> ricorrenti.</p>"
@@ -107,7 +107,7 @@ Nella seconda giornata, gli studenti si sono concentrati sull’analisi dei dati
 ![Foto interna del capitolo "Anagrafe. Percorsi e prospetti futuri"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_11.jpg)
 Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte dei cittadini nelle fasi principali della loro vita, i *Life event* ([Egovernment benchmark 2021 (PDF)](https://www.capgemini.com/wp-content/uploads/2021/10/eGovernment-Benchmark-2021-Insight-Report.pdf){:target="_blank" rel="noopener noreferrer"}).
 
-[Scarica il capitolo (PDF)](https://drive.google.com/file/d/143drOj7ADWktMytR92VGxFGKGflmxjBv/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 2.5MB)](https://drive.google.com/file/d/143drOj7ADWktMytR92VGxFGKGflmxjBv/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -115,7 +115,7 @@ Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte d
 ![Foto interna del capitolo "Fragilmente. L'instabile realtà dei servizi socioassistenziali"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_12.jpg)
 Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo spettro di condizioni di disagio fisico, economico e sociale delle persone che interagiscono con la PA.
 
-[Scarica il capitolo (PDF)](https://drive.google.com/file/d/1_liVlXWQW_AORVhSjd6r1QpNS0zHgZW1/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 3.2MB)](https://drive.google.com/file/d/1_liVlXWQW_AORVhSjd6r1QpNS0zHgZW1/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
