@@ -71,3 +71,5 @@ Cosa non contiene questo kit:
 Il kit non contiene una descrizione dettagliata delle caratteristiche dei singoli servizi digitali di un comune, allo stato attuale troppo variabile per essere modellata secondo standard. Il kit definisce però una struttura standard di presentazione di un servizio (scheda servizio), definisce il flusso standard di esperienza di un servizio comunale e offre un esempio di realizzazione.
 
 Il kit non contiene i contenuti del sito di un comune, ma definisce i contenuti che devono essere realizzati. La realizzazione di un sito comunale aderente a questo modello richiede un’attività di mappatura dei contenuti esistenti, scrittura e riscrittura dei contenuti e cambiamento dei dati inseriti che può essere realizzata utilizzando metodi e strumenti previsti dal kit [Contenuti e linguaggio]({% link _kits/it/contenuti-linguaggio.md %}).
+
+test
