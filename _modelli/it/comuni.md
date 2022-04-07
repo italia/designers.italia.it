@@ -73,3 +73,5 @@ Il kit non contiene una descrizione dettagliata delle caratteristiche dei singol
 Il kit non contiene i contenuti del sito di un comune, ma definisce i contenuti che devono essere realizzati. La realizzazione di un sito comunale aderente a questo modello richiede un’attività di mappatura dei contenuti esistenti, scrittura e riscrittura dei contenuti e cambiamento dei dati inseriti che può essere realizzata utilizzando metodi e strumenti previsti dal kit [Contenuti e linguaggio]({% link _kits/it/contenuti-linguaggio.md %}).
 
 test
+
+test 2
