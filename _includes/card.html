@@ -3,7 +3,7 @@
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
   {%- if include.hasImage != false and include.image -%}
     {%- if include.rowImage -%}
-    <div class="Grid" style="{% if include.noHeight != true %}height:100%{% endif %}"">
+    <div class="Grid" style="{% if include.noHeight != true %}height:100%{% endif %}">
       <div class="notizie-inline-image Grid-cell u-md-size1of2 u-lg-size1of2" style="background-image: url({{ include.image | default: //placehold.it/400x220 }});">&nbsp;</div>  <!-- notizie-inline-image-contain -->
       <div class="Grid-cell u-md-size1of2 u-lg-size1of2">
     {%- else -%}
