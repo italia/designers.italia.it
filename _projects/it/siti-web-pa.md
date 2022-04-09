@@ -1,5 +1,5 @@
 ---
-title: Siti Web delle Pubbliche Amministrazioni
+title: Siti web delle Pubbliche Amministrazioni
 description: I nuovi siti web delle amministrazioni centrali e territoriali.
 lang: it
 order: 4
