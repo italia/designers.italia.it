@@ -14,6 +14,7 @@ layout: default
         <div class="u-text-r-l ">
           {{page.header.description}}
         </div>
+        {% if page.header.links %}
         <div class="u-margin-top-xxl u-margin-bottom-m">
         <ul>
           {% for link in page.header.links %}
@@ -23,6 +24,7 @@ layout: default
           {% endfor %}
         </ul>
         </div>
+        {% endif %}
       </div>
       <div class="Grid-cell u-md-before1of12 u-lg-before1of12 u-md-size3of12 u-lg-size3of12 u-padding-top-s" style="max-width:360px">
         <img class="u-sizeFull " alt="Modelli." src="{{page.header.image}}" style="height:220px"/>
@@ -34,40 +36,17 @@ layout: default
 
 <article id="manuale-e-linee-guida" class="">
 
-  <div id="manuale" class="fase u-padding-top-xxl u-padding-bottom-xxl">
-    <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
-      <!-- manuale header -->
-      <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
-        <div class="faseHead Grid-cell u-lg-size9of12 u-md-size9of12 u-padding-bottom-l">
-          <div class="Grid Grid--withGutterM">
-            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
-              <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{page.manuale.title}}</h2>
-            </div>
-            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
-              <div class="u-text-r-l  u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-padding-top-s">
-                {{page.manuale.subtitle}}
-              </div>
-            </div>
-            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
-              <div class="u-text-r-xs u-lineHeight-xl u-layout-prose u-color-grey-ui-kit u-padding-top-s">
-                {{page.manuale.description}}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    {%- include manualetable.html headingClass='u-block u-text-h3 u-border-bottom-xxs u-padding-bottom-m' -%}
-  </div>
-
   <div id="linee-guida" class="fase u-padding-top-xxl u-padding-bottom-xxl">
     <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
       <!-- manuale header -->
       <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
+        <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-textCenter u-padding-bottom-s">
+          <img class="u-sizeFull" style="height:14rem" alt="{{page.guide.title}}" aria-labelledby="{{page.guide.title}}" src="{{page.guide.thumbLarge}}"/>
+        </div>
         <div class="faseHead Grid-cell u-lg-size9of12 u-md-size9of12 u-padding-bottom-l">
           <div class="Grid Grid--withGutterM">
             <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
-              <h2 class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{page.guide.title}}</h2>
+              <h2 id="{{page.guide.title}}" class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{page.guide.title}}</h2>
             </div>
             <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
               <div class="u-text-r-l  u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-padding-top-s">
@@ -79,28 +58,61 @@ layout: default
                 {{page.guide.description}}
               </div>
             </div>
+            {% if page.guide.cta %}
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3 u-margin-top-xxl u-margin-bottom-m">
+            <ul>
+              {% for link in page.guide.cta %}
+                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r u-padding-left-none u-padding-right-xl u-padding-right-xxl">
+                  {{link}}
+                </li>
+              {% endfor %}
+            </ul>
+            </div>
+            {% endif %}
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-        <div>
-          <div class="Grid Grid--withGutter Grid--alignCenter u-padding-all-l guides-grid">
-          	<div class="Grid-cell u-background-white u-border-left-l u-md-size2of4 u-lg-size2of4 u-xl-size2of4 u-borderRadius-m u-textLeft u-borderShadow-l u-padding-all-xxl u-margin-top-xxl u-margin-bottom-l" style="border-color:#06c!important">
-              <h3 class="u-block u-text-h3">Conclusa la fase di consultazione</h3>
-          		<div class="u-sizeFull u-margin-bottom-m">
-                <p class="Prose u-text-r-s u-textWeight-400">
-          				Lunedì 14 giugno si è chiusa ufficialmente la fase di consultazione delle <a class="u-text-r-s u-color-50 u-textWeight-600" href="https://docs.italia.it/italia/design/lg-design-servizi-web" target="_blank">nuove Linee guida di design per i servizi web della Pubblica Amministrazione</a>.
-          			</p>
-          		</div>
-          		<div class="u-sizeFull u-padding-bottom-m u-padding-top-l">
-          	    <a href="https://designers.italia.it/notizie/Conclusa-la-fase-di-consultazione-delle-Linee-Guida-di-design/" class="u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all" style="min-width: 16em">
-          	        <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-xxl u-padding-left-xxl">Per approfondire</span>
-          	      </a>
-          	  </div>
-          	</div>
+  <div id="manuale" class="fase u-padding-top-xxl u-padding-bottom-xxl">
+    <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
+      <!-- manuale header -->
+      <div class="Grid Grid--withGutter Grid--alignCenter u-margin-top-l u-padding-top-xxl">
+        <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-textCenter u-padding-bottom-s">
+          <img class="u-sizeFull" style="height:14rem" alt="{{page.manuale.title}}" aria-labelledby="{{page.manuale.title}}" src="{{page.manuale.thumbLarge}}"/>
+        </div>
+        <div class="faseHead Grid-cell u-lg-size9of12 u-md-size9of12 u-padding-bottom-l">
+          <div class="Grid Grid--withGutterM">
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+              <h2 id="{{page.manuale.title}}" class="u-text-r-xl u-textWeight-600 u-color-grey-ui-kit">{{page.manuale.title}}</h2>
+            </div>
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+              <div class="u-text-r-l  u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-padding-top-s">
+                {{page.manuale.subtitle}}
+              </div>
+            </div>
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3">
+              <div class="u-text-r-xs u-lineHeight-xl u-layout-prose u-color-grey-ui-kit u-padding-top-s">
+                {{page.manuale.description}}
+              </div>
+            </div>
+            {% if page.manuale.cta %}
+            <div class="Grid-cell u-lg-size2of3 u-md-size2of3 u-margin-top-xxl u-margin-bottom-m">
+            <ul>
+              {% for link in page.manuale.cta %}
+                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r u-padding-left-none u-padding-right-xl u-padding-right-xxl">
+                  {{link}}
+                </li>
+              {% endfor %}
+            </ul>
+            </div>
+            {% endif %}
           </div>
         </div>
       </div>
+    </div>
+    {%- include manualetable.html headingClass='u-block u-text-h3 u-border-bottom-xxs u-padding-bottom-m' -%}
   </div>
 
 </article>
