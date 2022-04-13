@@ -4,7 +4,7 @@ layout: default
 
 {% include setlang.html %}
 
-<div class="super-breadcrumb u-background-white">
+<div class="super-breadcrumb u-background-teal-50">
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-border-bottom-xxs u-padding-r-bottom">
 
     <!-- header -->
@@ -72,9 +72,9 @@ layout: default
               {% if item.disabled == true %} style="filter: grayscale(100%); opacity:.6" {% endif %}
               >
                 <div class="u-flexAlignSelfStart u-sizeFull">
-                  {% if item.thumbnail %}
+                  {% if item.image %}
                     <!-- card img -->
-                    <img class="u-sizeFull" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.thumbnail }}"/>
+                    <img class="u-sizeFull" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.image }}"/>
                   {% endif %}
                   <!-- card content -->
                   <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" >

@@ -4,12 +4,12 @@ subtitle: Lorem ipsum
 lang: it
 layout: modello
 description: "Lorem ipsum"
-image: "/assets/icons/kit/social-card/kit_analisiContesto.png"
-iconImage: "/assets/icons/kit/kit_analisiContesto.svg"
+image: '/assets/images/modelli/scuola-2021.png'
+iconImage: '/assets/images/modelli/scuola-2021.png'
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: scuole
-order: 0
+order: 1
 redirect_from:
   - /kit/scuole/
   - /kit/scuole

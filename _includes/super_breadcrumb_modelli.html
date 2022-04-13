@@ -2,27 +2,27 @@
 {% assign kitCategory = include.kitCategory %}
 {% assign quickOpen = include.quickOpen %}
 
-<div id="superBreadcrumb" class="super-breadcrumb u-background-white {% if showAll==false %} superSticky {% endif %}">
+<div id="superBreadcrumb" class="super-breadcrumb u-background-teal-50 {% if showAll==false %} superSticky {% endif %}">
   <div class="superContent">
-    <div class="  u-layout-wide u-layoutCenter u-color-50 {% if showAll==false %} u-padding-bottom-xxs u-padding-top-xxs {% endif %}">
+    <div class="u-layout-wide u-layoutCenter u-color-grey-ui-kit {% if showAll==false %} u-padding-bottom-xxs u-padding-top-xxs {% endif %}">
       <nav>
         <ul>
           {% if showAll %}
-          <li class="all">
-            <a href="/modelli">
+          <li class="all-modelli">
+            <a href="/modelli" class="u-color-grey-ui-kit">
               Tutti
             </a>
           </li>
           {% endif %}
-          <li class="{% if kitCategory == 'comuni' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
-            <a href="{% if quickOpen %} /modello/comuni/ {% else %} #comuni {% endif %}">
-              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/organizzare.svg" />
+          <li class="{% if kitCategory == 'comuni' %} active-modelli {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="{% if quickOpen %} /modello/comuni/ {% else %} #comuni {% endif %}" class="u-color-grey-ui-kit">
+              <!--<img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/comuni.svg" />-->
               Comuni
             </a>
           </li>
-          <li class="{% if kitCategory == 'scuole' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
-            <a href="{% if quickOpen %} /modello/scuole/ {% else %} #scuole {% endif %}">
-              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/comprendere.svg" />
+          <li class="{% if kitCategory == 'scuole' %} active-modelli {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="{% if quickOpen %} /modello/scuole/ {% else %} #scuole {% endif %}" class="u-color-grey-ui-kit">
+              <!--<img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/scuole.svg" />-->
               Scuole
             </a>
           </li>
