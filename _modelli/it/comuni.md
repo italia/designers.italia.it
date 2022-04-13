@@ -4,8 +4,8 @@ subtitle: Lorem ipsum
 lang: it
 layout: modello
 description: "Lorem ipsum"
-image: '/assets/images/modelli/comune-2021.png'
-iconImage: '/assets/images/modelli/comune-2021.png'
+image: '/assets/images/modelli/comuni-2022-full.png'
+iconImage: '/assets/images/modelli/comuni-2022.png'
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: comuni
