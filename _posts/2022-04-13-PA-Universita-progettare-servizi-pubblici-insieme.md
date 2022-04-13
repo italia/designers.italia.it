@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "PA e Università: progettare servizi pubblici, insieme"
 subtitle: "È disponibile la registrazione della community call del 6 aprile. Rivivila con noi"
-date: 2022-04-13 19:00:00 +0200
+date: 2022-04-13 18:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
