@@ -1,9 +1,9 @@
 ---
-title: Modello Comuni
-subtitle: Lorem ipsum
+title: Il sito e i servizi digitali dei Comuni italiani
+subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini
 lang: it
 layout: modello
-description: "Lorem ipsum"
+description: "Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini"
 image: '/assets/images/modelli/comuni-2022-full.png'
 iconImage: '/assets/images/modelli/comuni-2022.png'
 backgroundColor: "#439af1"
