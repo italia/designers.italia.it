@@ -28,6 +28,6 @@ In chiusura, come sempre, un utile spazio di confronto per le domande del pubbli
 
 Guarda [il video completo della community call](https://www.youtube.com/watch?v=-3cQruMCBPg){:target="_blank" rel="noopener noreferrer"} sul canale YouTube del Dipartimento per la trasformazione digitale.
 
-Scarica la presentazione della community call.
+[Scarica la presentazione della community call](https://developers.italia.it/assets/images/posts/2022-04-13/Community_Call_Designers_Italia.pdf).
 
 Per saperne di più resta in contatto su [Slack](https://slack.developers.italia.it/){:target="_blank" rel="noopener noreferrer"} e continua a seguirci sui canali Twitter di [Designers Italia](https://twitter.com/DesignersITA){:target="_blank" rel="noopener noreferrer"} e [Developers Italia](https://twitter.com/developersITA){:target="_blank" rel="noopener noreferrer"}.
