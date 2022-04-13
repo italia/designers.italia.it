@@ -2,7 +2,7 @@
 {% assign kitCategory = include.kitCategory %}
 {% assign quickOpen = include.quickOpen %}
 
-<div id="superBreadcrumb" class="super-breadcrumb u-background-teal-50 {% if showAll==false %} superSticky {% endif %}">
+<div id="superBreadcrumb" class="super-breadcrumb u-background-teal-50 {% if showAll==false %} superSticky {% else %} u-border-bottom-xxs {% endif %}">
   <div class="superContent">
     <div class="u-layout-wide u-layoutCenter u-color-grey-ui-kit {% if showAll==false %} u-padding-bottom-xxs u-padding-top-xxs {% endif %}">
       <nav>
