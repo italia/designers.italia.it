@@ -1,0 +1,32 @@
+{% assign showAll = include.showAll %}
+{% assign kitCategory = include.kitCategory %}
+
+<div id="superBreadcrumb" class="super-breadcrumb {% if showAll==false %} superSticky {% endif %}">
+  <div class="superContent">
+    <div class="  u-layout-wide u-layoutCenter u-color-white {% if showAll==false %} u-padding-bottom-xxs u-padding-top-xxs {% endif %}">
+      <nav>
+        <ul>
+          {% if showAll %}
+          <li class="all">
+            <a href="/modelli">
+              Tutti
+            </a>
+          </li>
+          {% endif %}
+          <li class="{% if kitCategory == 'comuni' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="/modello/comuni/">
+              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/organizzare.svg" />
+              Comuni
+            </a>
+          </li>
+          <li class="{% if kitCategory == 'scuole' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="/modello/scuole/">
+              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/comprendere.svg" />
+              Scuole
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
