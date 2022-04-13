@@ -14,6 +14,9 @@ tags:
 redirect_from:
   - /kit/scuole/
   - /kit/scuole
+  - /progetti/siti-scuole/
+  - /siti-scuole/
+  - /progetti/siti-web-scuole/
 
 documents:
 - Design scuole

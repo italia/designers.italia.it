@@ -14,6 +14,9 @@ tags:
 redirect_from:
   - /kit/comuni/
   - /kit/comuni
+  - /progetti/siti-comuni/
+  - /siti-comuni/
+  - /progetti/siti-web-comuni/
 
 documents:
 - Design comuni
