@@ -8,6 +8,7 @@ layout: default
 {% assign image = page.image %}
 
 {% assign coreContent = page.coreContent %}
+{% assign orientarsiContent = page.orientarsiContent %}
 {% assign ctaContent = page.ctaContent %}
 
 {% include super_breadcrumb_modelli.html kitCategory=page.kitcategory showAll=true quickOpen=true %}
@@ -98,7 +99,7 @@ layout: default
                       <ul>
                       {%- for link in item.links  -%}
                         <li class="u-margin-top-xs">
-                          <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)"{% endif %}>
+                          <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
                           {{link.title}}
                           </a>
                           {% if link.external %}
@@ -118,8 +119,8 @@ layout: default
         <!-- cta button -->
         {% if ctaContent.buttonTitle %}
         <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-textCenter">
-          <a href="{{ctaContent.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if ctaContent.buttonExternal %} aria-label="{{ctaContent.buttonTitle}} (si apre in una nuova finestra)"{% endif %}>
-              <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-xxl u-padding-left-xxl">{{ctaContent.buttonTitle}}</span>
+          <a href="{{ctaContent.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if ctaContent.buttonExternal %} aria-label="{{ctaContent.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+              <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{ctaContent.buttonTitle}}</span>
             </a>
         </div>
         {% endif %}
@@ -127,9 +128,66 @@ layout: default
     </div>
 
     <!-- ///// ORIENTARSI ///// -->
-    <div id="orientarsi" class="fase">
-      <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
-        Orientarsi
+    <div id="orientarsi" class="fase u-padding-top-xs u-padding-bottom-xxs">
+      <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-m">
+
+        <!-- header -->
+        <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter ">
+          <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
+            <h2 class="u-text-h2">{{orientarsiContent.title}}</h2>
+            <div class="u-text-r-l">
+              {{orientarsiContent.subtitle}}
+            </div>
+          </div>
+        </div>
+
+        <!-- ctas in fase, grid -->
+        {% assign cards = orientarsiContent.cards %}
+        <div class="u-padding-all-l Grid Grid--withGutterL Grid--equalHeight Grid--fill Grid--alignCenter">
+          <!-- single cta card -->
+          {%- for item in cards  -%}
+            <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+              <article class="u-sizeFull u-flex u-flexWrap u-flexAlignSelfStretch">
+                <div class="u-flexAlignSelfStart u-sizeFull">
+                  <h3 class="u-text-r-m u-padding-bottom-m u-textWeight-600">
+                    <span id="kitCardTitle">{{item.title}}</span>
+                  </h3>
+                  {% if item.iconImage %}
+                    <!-- card img -->
+                    <img class="u-sizeFull u-padding-bottom-m" alt="{{item.iconAlt}}" src="{{ item.iconImage }}"/>
+                  {% endif %}
+                  <!-- card content -->
+                  <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+
+                    <div class="u-margin-top-l u-margin-bottom-l">
+                      <ul>
+                      {%- for link in item.links  -%}
+                        <li class="u-margin-top-m">
+                          <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                          {{link.title}}
+                          </a>
+                          {% if link.external %}
+                            <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" />
+                          {% endif %}
+                      </li>
+                      {%- endfor -%}
+                      </ul>
+                    </div>
+
+                  <!-- cta button -->
+                  {% if item.buttonTitle %}
+                  <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl">
+                    <a href="{{item.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                        <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{item.buttonTitle}}</span>
+                      </a>
+                  </div>
+                  {% endif %}
+                </div>
+              </article>
+            </div>
+          {%- endfor -%}
+        </div>
+
       </div>
     </div>
 
