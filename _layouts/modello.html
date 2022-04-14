@@ -7,9 +7,11 @@ layout: default
 {% assign subtitle = page.subtitle %}
 {% assign image = page.image %}
 
-{% assign coreContent = page.coreContent %}
-{% assign orientarsiContent = page.orientarsiContent %}
 {% assign ctaContent = page.ctaContent %}
+{% assign orientarsiContent = page.orientarsiContent %}
+{% assign coreContent = page.coreContent %}
+{% assign serviziContent = page.serviziContent %}
+
 
 {% include super_breadcrumb_modelli.html kitCategory=page.kitcategory showAll=true quickOpen=true %}
 
@@ -103,7 +105,7 @@ layout: default
                           {{link.title}}
                           </a>
                           {% if link.external %}
-                            <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" />
+                            <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
                           {% endif %}
                       </li>
                       {%- endfor -%}
@@ -143,7 +145,7 @@ layout: default
 
         <!-- ctas in fase, grid -->
         {% assign cards = orientarsiContent.cards %}
-        <div class="u-padding-all-l Grid Grid--withGutterL Grid--equalHeight Grid--fill Grid--alignCenter">
+        <div class="u-padding-all-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
           <!-- single cta card -->
           {%- for item in cards  -%}
             <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
@@ -167,7 +169,7 @@ layout: default
                           {{link.title}}
                           </a>
                           {% if link.external %}
-                            <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" />
+                            <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
                           {% endif %}
                       </li>
                       {%- endfor -%}
@@ -229,7 +231,7 @@ layout: default
               <ul>
                 {% for item in rightColumnItem.items %}
                   <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r">
-                    {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" />
+                    {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
                   </li>
                 {% endfor %}
               </ul>
@@ -344,12 +346,51 @@ layout: default
 
     <!-- ///// SERVIZI ///// -->
     <div id="servizi" class="fase u-background-50 u-color-white">
-      <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
-        Servizi
+      <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-bottom-xxl">
+      <!-- header -->
+      <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+        <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+          <h2 class="u-text-h2">{{serviziContent.title}}</h2>
+          <div class="u-text-r-l">
+            {{serviziContent.subtitle}}
+          </div>
+        </div>
+        <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+          {% if serviziContent.icon %}
+          <img class="u-sizeFull" alt="{{title}}" src="{{ serviziContent.icon }}" style="max-width:128px"/>
+          {% endif %}
+        </div>
       </div>
-    </div>
 
-    <!-- content in lavorazione -->
+      <!-- intro -->
+      <div class="Grid Grid--alignCenter u-padding-all-l Prose u-color-white">
+        <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+          <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.occhiello}}</h2>
+          <div class="kitIntro u-layout-prose u-color-white">
+            {{serviziContent.text}}
+          </div>
+        </div>
+        <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
+
+          {% assign rightColumnItems = serviziContent.rightColumnItems %}
+          {% for rightColumnItem in rightColumnItems %}
+            {% if forloop.index == 1 %}
+              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom {% if guideLinesChunk.link != null %} u-margin-top-xxl {% endif %}">{{rightColumnItem.title}}</div>
+            {% else %}
+              <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
+            {% endif %}
+            <ul>
+              {% for item in rightColumnItem.items %}
+                <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-white u-special-list-r">
+                  {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-white.svg" />
+                </li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
 
   </div>
   {% endif %}

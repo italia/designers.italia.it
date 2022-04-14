@@ -74,7 +74,7 @@ orientarsiContent:
           external: false
     - title: Per il futuro della PA
       subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.  </p>
-      <p>L’uso del modello permette di aderire più facilmente alle Linee guida nazionali e alle migliori pratiche, andando oltre, anticipando l’adozione delle indicazioni EU basate sugli <a href="#" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link.svg" /></p>'
+      <p>L’uso del modello permette di aderire più facilmente alle Linee guida nazionali e alle migliori pratiche, andando oltre, anticipando l’adozione delle indicazioni EU basate sugli <a href="#" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
       iconImage: "/assets/images/modelli/comuni-2022-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
@@ -163,7 +163,19 @@ coreContent:
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
-
+serviziContent:
+  title: I nuovi flussi di servizi digitali per il cittadino
+  subtitle: I principali servizi comunali a portata di clic
+  icon: '/assets/icons/kit/modelli-white.svg'
+  occhiello: A COSA SERVONO
+  text: "<p>Lo scopo dei nuovi flussi di interfaccia è di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
+  <p>Per migliorare l’usabilità ed assicurare la soddisfazione degli utenti, i flussi di interfaccia sono stati creati in conformità con l’e-government benchmark e le Linee guida al design della PA.</p>
+  <p>Le risorse comprendono  i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati come rappresentati delle principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
+  rightColumnItems:
+    - title: DOCUMENTAZIONE
+      items:
+        - <a href='#' target="_blank" class="u-color-white">Titolo di capitolo e se fosse lungo</a>
+        - <a href='#' target="_blank" class="u-color-white">Titolo di capitolo</a>
 
 tags:
   - web-development
