@@ -66,10 +66,10 @@ layout: default
     <!-- ///// PA DIGITALE 2026 ///// -->
     <div id="pa-digitale-2026" class="fase">
       <!-- header -->
-      <div class="Grid  u-padding-all-l">
-        <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
+      <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter">
+        <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
           <h2 class="u-text-h2">{{ctaContent.title}}</h2>
-          <div class="u-text-r-l" style="max-width:600px">
+          <div class="u-text-r-l">
             {{ctaContent.subtitle}}
           </div>
         </div>
@@ -77,10 +77,10 @@ layout: default
 
       <!-- ctas in fase, grid -->
       {% assign cards = ctaContent.cards %}
-      <div class="u-padding-all-l Grid Grid--withGutterM Grid--equalHeight Grid--fill">
+      <div class="u-padding-all-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
         <!-- single cta card -->
         {%- for item in cards  -%}
-          <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of3 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+          <div class="Grid-cell u-sizeFull u-sm-size1of3 u-md-size1of4 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
             <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
               <div class="u-flexAlignSelfStart u-sizeFull">
                 {% if item.iconImage %}
@@ -89,15 +89,15 @@ layout: default
                 {% endif %}
                 <!-- card content -->
                 <div class="u-padding-right-xl u-padding-left-xl u-padding-top-s u-padding-bottom-l">
-                  <h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600">
+                  <h3 class="u-text-r-m u-padding-bottom-s u-textWeight-600">
                     <span id="kitCardTitle"><span style="font-weight:lighter; color:gray">{{item.prefix}}.&nbsp;</span>{{item.title}}</span>
                   </h3>
                   <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
                   <div class="u-margin-top-l u-margin-bottom-l">
                     <ul>
                     {%- for link in item.links  -%}
-                      <li class="u-margin-top-s">
-                        <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)"{% endif %}>
+                      <li class="u-margin-top-xs">
+                        <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)"{% endif %}>
                         {{link.title}}
                         </a>
                         {% if link.external %}

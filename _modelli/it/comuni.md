@@ -19,7 +19,7 @@ redirect_from:
   - /progetti/siti-web-comuni/
 
 ctaContent:
-  title: Adottare il modello è semplice con il PNRR
+  title: Adottare il modello con il PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> l'avviso per il miglioramento dell'esperienza del cittadino
   cards:
     - prefix: "1"
