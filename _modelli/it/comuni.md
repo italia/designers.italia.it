@@ -19,8 +19,11 @@ redirect_from:
   - /progetti/siti-web-comuni/
 
 ctaContent:
-  title: Adottare il modello con il PNRR
-  subtitle: Scopri su <b>PA digitale 2026</b> l'avviso per il miglioramento dell'esperienza del cittadino
+  title: Adottare il modello con il PNRR è semplice
+  subtitle: Scopri su <b>PA digitale 2026</b> l'avviso per il miglioramento dell'esperienza dei cittadini
+  buttonTitle: Vai su PA digitale 2026
+  buttonUrl: https://padigitale2026.gov.it
+  buttonExternal: true
   cards:
     - prefix: "1"
       title: "Richiedi un finanziamento"
