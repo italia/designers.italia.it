@@ -78,7 +78,7 @@ layout: default
                   {% endif %}
                   <!-- card content -->
                   <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" >
-                    <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
+                    <h3 class="u-text-r-s u-padding-bottom-s u-font-weight-bold">
                       {% if item.disabled == true %}
                         <span id="kitCardTitle">{{item.title}}</span>
                       {% else %}
@@ -87,7 +87,7 @@ layout: default
                       </a>
                       {% endif %}
                     </h3>
-                    <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+                    <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit" style="max-width:480px">{{item.subtitle}}</div>
                   </div>
                 </div>
               </article>
