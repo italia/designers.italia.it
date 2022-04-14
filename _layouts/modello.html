@@ -99,7 +99,7 @@ layout: default
                       <ul>
                       {%- for link in item.links  -%}
                         <li class="u-margin-top-xs">
-                          <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                          <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
                           {{link.title}}
                           </a>
                           {% if link.external %}
