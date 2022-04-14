@@ -68,7 +68,7 @@ layout: default
 
     <!-- ///// CTA ///// -->
     <div id="cta" class="fase">
-      <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
+      <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
         <!-- header -->
         <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter">
           <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
@@ -131,7 +131,7 @@ layout: default
 
     <!-- ///// ORIENTARSI ///// -->
     <div id="orientarsi" class="fase u-padding-top-xs u-padding-bottom-xxs">
-      <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-m">
+      <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-m">
 
         <!-- header -->
         <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter ">
@@ -145,7 +145,7 @@ layout: default
 
         <!-- ctas in fase, grid -->
         {% assign cards = orientarsiContent.cards %}
-        <div class="u-padding-all-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
+        <div class="Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
           <!-- single cta card -->
           {%- for item in cards  -%}
             <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
