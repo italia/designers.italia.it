@@ -81,7 +81,7 @@ layout: default
 
         <!-- ctas in fase, grid -->
         {% assign cards = ctaContent.cards %}
-        <div class="u-padding-all-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
+        <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
           <!-- single cta card -->
           {%- for item in cards  -%}
             <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
@@ -145,7 +145,7 @@ layout: default
 
         <!-- ctas in fase, grid -->
         {% assign cards = orientarsiContent.cards %}
-        <div class="Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
+        <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
           <!-- single cta card -->
           {%- for item in cards  -%}
             <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
