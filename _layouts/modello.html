@@ -75,138 +75,142 @@ layout: default
   {% if page.disabled != true %}
   <div>
 
-    <!-- ///// CTA ///// -->
-    <div id="cta" class="fase">
-      <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-xxl">
-        <!-- header -->
-        <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter">
-          <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
-            <h2 class="u-text-h2">{{ctaContent.title}}</h2>
-            <div class="u-text-r-l">
-              {{ctaContent.subtitle}}
+    {% if ctaContent %}
+      <!-- ///// CTA ///// -->
+      <div id="cta" class="fase">
+        <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-xxl">
+          <!-- header -->
+          <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter">
+            <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
+              <h2 class="u-text-h2">{{ctaContent.title}}</h2>
+              <div class="u-text-r-l">
+                {{ctaContent.subtitle}}
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- ctas in fase, grid -->
-        {% assign cards = ctaContent.cards %}
-        <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
-          <!-- single cta card -->
-          {%- for item in cards  -%}
-            <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
-              <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
-                <div class="u-flexAlignSelfStart u-sizeFull">
-                  {% if item.iconImage %}
-                    <!-- card img -->
-                    <img class="u-padding-left-xl u-padding-top-xl u-padding-bottom-m" style="height: 164px" alt="{{item.iconAlt}}" src="{{ item.iconImage }}"/>
-                  {% endif %}
-                  <!-- card content -->
-                  <div class="u-padding-right-xl u-padding-left-xl u-padding-top-s u-padding-bottom-l">
-                    <h3 class="u-text-r-m u-padding-bottom-s u-textWeight-600">
-                      <span id="kitCardTitle"><span style="font-weight:lighter; color:#666">{{item.prefix}}.&nbsp;</span>{{item.title}}</span>
+          <!-- ctas in fase, grid -->
+          {% assign cards = ctaContent.cards %}
+          <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
+            <!-- single cta card -->
+            {%- for item in cards  -%}
+              <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+                <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+                  <div class="u-flexAlignSelfStart u-sizeFull">
+                    {% if item.iconImage %}
+                      <!-- card img -->
+                      <img class="u-padding-left-xl u-padding-top-xl u-padding-bottom-m" style="height: 164px" alt="{{item.iconAlt}}" src="{{ item.iconImage }}"/>
+                    {% endif %}
+                    <!-- card content -->
+                    <div class="u-padding-right-xl u-padding-left-xl u-padding-top-s u-padding-bottom-l">
+                      <h3 class="u-text-r-m u-padding-bottom-s u-textWeight-600">
+                        <span id="kitCardTitle"><span style="font-weight:lighter; color:#666">{{item.prefix}}.&nbsp;</span>{{item.title}}</span>
+                      </h3>
+                      <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+                      <div class="u-margin-top-l u-margin-bottom-l">
+                        <ul>
+                        {%- for link in item.links  -%}
+                          <li class="u-margin-top-xs">
+                            {% if link.anchor %}
+                              <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
+                            {% endif %}
+                            <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                            {{link.title}}
+                            </a>
+                            {% if link.external %}
+                              <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
+                            {% endif %}
+                        </li>
+                        {%- endfor -%}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            {%- endfor -%}
+          </div>
+
+          <!-- cta button -->
+          {% if ctaContent.buttonTitle %}
+          <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-textCenter">
+            <a href="{{ctaContent.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if ctaContent.buttonExternal %} aria-label="{{ctaContent.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{ctaContent.buttonTitle}}</span>
+              </a>
+          </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if orientarsiContent %}
+      <!-- ///// ORIENTARSI ///// -->
+      <div id="orientarsi" class="fase u-padding-top-xs u-padding-bottom-xxs">
+        <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-m">
+
+          <!-- header -->
+          <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter ">
+            <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
+              <h2 class="u-text-h2">{{orientarsiContent.title}}</h2>
+              <div class="u-text-r-l">
+                {{orientarsiContent.subtitle}}
+              </div>
+            </div>
+          </div>
+
+          <!-- orientarsi in fase, grid -->
+          {% assign cards = orientarsiContent.cards %}
+          <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
+            <!-- single cta card -->
+            {%- for item in cards  -%}
+              <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+                <article class="u-sizeFull u-flex u-flexWrap u-flexAlignSelfStretch">
+                  <div class="u-flexAlignSelfStart u-sizeFull">
+                    <h3 class="u-text-r-m u-padding-bottom-m u-textWeight-600">
+                      <span id="kitCardTitle">{{item.title}}</span>
                     </h3>
-                    <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
-                    <div class="u-margin-top-l u-margin-bottom-l">
-                      <ul>
-                      {%- for link in item.links  -%}
-                        <li class="u-margin-top-xs">
-                          {% if link.anchor %}
-                            <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
-                          {% endif %}
-                          <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                          {{link.title}}
-                          </a>
-                          {% if link.external %}
-                            <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
-                          {% endif %}
-                      </li>
-                      {%- endfor -%}
-                      </ul>
+                    {% if item.iconImage %}
+                      <!-- card img -->
+                      <img class="u-sizeFull u-padding-bottom-m" alt="{{item.iconAlt}}" src="{{ item.iconImage }}"/>
+                    {% endif %}
+                    <!-- card content -->
+                    <div class="kitIntro Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+
+                      <div class="u-margin-top-l u-margin-bottom-l">
+                        <ul>
+                        {%- for link in item.links  -%}
+                          <li class="u-margin-top-m">
+                            {% if link.anchor %}
+                              <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
+                            {% endif %}
+                            <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                            {{link.title}}
+                            </a>
+                            {% if link.external %}
+                              <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
+                            {% endif %}
+                        </li>
+                        {%- endfor -%}
+                        </ul>
+                      </div>
+
+                    <!-- cta button -->
+                    {% if item.buttonTitle %}
+                    <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl">
+                      <a href="{{item.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                          <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{item.buttonTitle}}</span>
+                        </a>
                     </div>
+                    {% endif %}
                   </div>
-                </div>
-              </article>
-            </div>
-          {%- endfor -%}
-        </div>
-
-        <!-- cta button -->
-        {% if ctaContent.buttonTitle %}
-        <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-textCenter">
-          <a href="{{ctaContent.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if ctaContent.buttonExternal %} aria-label="{{ctaContent.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-              <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{ctaContent.buttonTitle}}</span>
-            </a>
-        </div>
-        {% endif %}
-      </div>
-    </div>
-
-    <!-- ///// ORIENTARSI ///// -->
-    <div id="orientarsi" class="fase u-padding-top-xs u-padding-bottom-xxs">
-      <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-m">
-
-        <!-- header -->
-        <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter ">
-          <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
-            <h2 class="u-text-h2">{{orientarsiContent.title}}</h2>
-            <div class="u-text-r-l">
-              {{orientarsiContent.subtitle}}
-            </div>
+                </article>
+              </div>
+            {%- endfor -%}
           </div>
+
         </div>
-
-        <!-- orientarsi in fase, grid -->
-        {% assign cards = orientarsiContent.cards %}
-        <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
-          <!-- single cta card -->
-          {%- for item in cards  -%}
-            <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
-              <article class="u-sizeFull u-flex u-flexWrap u-flexAlignSelfStretch">
-                <div class="u-flexAlignSelfStart u-sizeFull">
-                  <h3 class="u-text-r-m u-padding-bottom-m u-textWeight-600">
-                    <span id="kitCardTitle">{{item.title}}</span>
-                  </h3>
-                  {% if item.iconImage %}
-                    <!-- card img -->
-                    <img class="u-sizeFull u-padding-bottom-m" alt="{{item.iconAlt}}" src="{{ item.iconImage }}"/>
-                  {% endif %}
-                  <!-- card content -->
-                  <div class="kitIntro Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
-
-                    <div class="u-margin-top-l u-margin-bottom-l">
-                      <ul>
-                      {%- for link in item.links  -%}
-                        <li class="u-margin-top-m">
-                          {% if link.anchor %}
-                            <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
-                          {% endif %}
-                          <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                          {{link.title}}
-                          </a>
-                          {% if link.external %}
-                            <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
-                          {% endif %}
-                      </li>
-                      {%- endfor -%}
-                      </ul>
-                    </div>
-
-                  <!-- cta button -->
-                  {% if item.buttonTitle %}
-                  <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl">
-                    <a href="{{item.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                        <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{item.buttonTitle}}</span>
-                      </a>
-                  </div>
-                  {% endif %}
-                </div>
-              </article>
-            </div>
-          {%- endfor -%}
-        </div>
-
       </div>
-    </div>
+    {% endif %}
 
     <!-- ///// SITO ///// -->
     <div id="sito" class="fase">
@@ -364,138 +368,140 @@ layout: default
 
     </div>
 
-    <!-- ///// SERVIZI ///// -->
-    <div id="servizi" class="fase u-background-grey-10 u-color-grey-ui-kit">
-      <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-top-m">
-        <!-- header -->
-        <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
-          <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
-            <h2 class="u-text-h2">{{serviziContent.title}}</h2>
-            <div class="u-text-r-l">
-              {{serviziContent.subtitle}}
+    {% if serviziContent %}
+      <!-- ///// SERVIZI ///// -->
+      <div id="servizi" class="fase u-background-grey-10 u-color-grey-ui-kit">
+        <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-top-m">
+          <!-- header -->
+          <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+            <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+              <h2 class="u-text-h2">{{serviziContent.title}}</h2>
+              <div class="u-text-r-l">
+                {{serviziContent.subtitle}}
+              </div>
             </div>
-          </div>
-          <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
-            {% if serviziContent.icon %}
-            <img class="u-sizeFull" alt="{{title}}" src="{{ serviziContent.icon }}" style="max-width:128px"/>
-            {% endif %}
-          </div>
-        </div>
-
-        <!-- intro -->
-        <div class="Grid Grid--alignCenter u-padding-all-l Prose u-color-grey-ui-kit">
-          <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
-            <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.occhiello}}</h2>
-            <div class="kitIntro u-layout-prose u-color-grey-ui-kit">
-              {{serviziContent.text}}
-            </div>
-          </div>
-          <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
-
-            {% assign rightColumnItems = serviziContent.rightColumnItems %}
-            {% for rightColumnItem in rightColumnItems %}
-              {% if forloop.index == 1 %}
-                <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom {% if guideLinesChunk.link != null %} u-margin-top-xxl {% endif %}">{{rightColumnItem.title}}</div>
-              {% else %}
-                <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
+            <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+              {% if serviziContent.icon %}
+              <img class="u-sizeFull" alt="{{title}}" src="{{ serviziContent.icon }}" style="max-width:128px"/>
               {% endif %}
-              <ul>
-                {% for item in rightColumnItem.items %}
-                  <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r">
-                    {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
-                  </li>
-                {% endfor %}
-              </ul>
-            {% endfor %}
-          </div>
-        </div>
-
-        <!-- servizi in fase, grid -->
-        {% assign cards = serviziContent.cards %}
-        <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
-          <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.cardsTitle}}</h2>
-        </div>
-        <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM"> <!-- Grid--equalHeight Grid--fill -->
-          <!-- single cta card -->
-          {%- for item in cards  -%}
-            <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-margin-bottom-l {{item.kitcategory|slugify}}">
-              <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
-                <div class="u-flexAlignSelfStart u-sizeFull Grid">
-                  <!-- card content -->
-                  <div class="u-padding-top-xl Grid-cell {% if item.iconImage %}u-size3of4 u-md-size2of3 u-lg-size2of3{% else %}u-sm-size1of1 u-md-size1of1 u-lg-size1of1{% endif %}">
-                    <div class=" u-padding-right-l u-padding-left-l u-padding-bottom-l">
-                      <h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 u-color-grey-ui-kit">
-                        <span id="kitCardTitle">{{item.title}}</span>
-                      </h3>
-                      <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
-                      <div class="u-margin-top-l">
-                        <ul class="u-color-grey-ui-kit u-text-r-xxs">
-                        {%- for service in item.services  -%}
-                          <li class="u-margin-bottom-xs u-font-weight-semibold u-textWeight-600">
-                            <span>{{service.name}}</span>
-                          </li>
-                        {%- endfor -%}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  {% if item.iconImage %}
-                    <!-- card img -->
-                    <div class="Grid-cell u-size1of4 u-md-size1of3 u-lg-size1of3 u-textRight">
-                      <img class="u-sizeFull u-padding-top-s" alt="{{item.iconAlt}}" src="{{ item.iconImage }}" style="max-width:156px"/>
-                    </div>
-                  {% endif %}
-                  <!-- link hi-fi -->
-                  <div class="Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-padding-top-s u-padding-bottom-xs" style="background-color:#f0f6fc">
-                    <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
-                      <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
-                        <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-600">{{item.linksHiFiTitle}}</span>
-                      </div>
-                      <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
-                        <ul class="u-margin-top-s u-margin-bottom-l">
-                        {%- for link in item.linksHiFi  -%}
-                          <li class="u-margin-bottom-xs">
-                            <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                            {{link.title}}
-                            </a>
-                        </li>
-                        {%- endfor -%}
-                        </ul>
-                      </div>
-                    </div>
-                    <!-- link mid-fi -->
-                    <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
-                      <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
-                        <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}<!--<br/><sup>mid-fi</sup>--></span>
-                      </div>
-                      <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
-                        <ul class="u-margin-top-s u-margin-bottom-l">
-                        {%- for link in item.linksMidFi  -%}
-                          <li class="u-margin-bottom-xs">
-                            <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                            {{link.title}}
-                            </a>
-                        </li>
-                        {%- endfor -%}
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </article>
             </div>
-          {%- endfor -%}
+          </div>
+
+          <!-- intro -->
+          <div class="Grid Grid--alignCenter u-padding-all-l Prose u-color-grey-ui-kit">
+            <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+              <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.occhiello}}</h2>
+              <div class="kitIntro u-layout-prose u-color-grey-ui-kit">
+                {{serviziContent.text}}
+              </div>
+            </div>
+            <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
+
+              {% assign rightColumnItems = serviziContent.rightColumnItems %}
+              {% for rightColumnItem in rightColumnItems %}
+                {% if forloop.index == 1 %}
+                  <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom {% if guideLinesChunk.link != null %} u-margin-top-xxl {% endif %}">{{rightColumnItem.title}}</div>
+                {% else %}
+                  <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
+                {% endif %}
+                <ul>
+                  {% for item in rightColumnItem.items %}
+                    <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r">
+                      {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- servizi in fase, grid -->
+          {% assign cards = serviziContent.cards %}
+          <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+            <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.cardsTitle}}</h2>
+          </div>
+          <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM"> <!-- Grid--equalHeight Grid--fill -->
+            <!-- single cta card -->
+            {%- for item in cards  -%}
+              <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-margin-bottom-l {{item.kitcategory|slugify}}">
+                <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+                  <div class="u-flexAlignSelfStart u-sizeFull Grid">
+                    <!-- card content -->
+                    <div class="u-padding-top-xl Grid-cell {% if item.iconImage %}u-size3of4 u-md-size2of3 u-lg-size2of3{% else %}u-sm-size1of1 u-md-size1of1 u-lg-size1of1{% endif %}">
+                      <div class=" u-padding-right-l u-padding-left-l u-padding-bottom-l">
+                        <h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 u-color-grey-ui-kit">
+                          <span id="kitCardTitle">{{item.title}}</span>
+                        </h3>
+                        <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+                        <div class="u-margin-top-l">
+                          <ul class="u-color-grey-ui-kit u-text-r-xxs">
+                          {%- for service in item.services  -%}
+                            <li class="u-margin-bottom-xs u-font-weight-semibold u-textWeight-600">
+                              <span>{{service.name}}</span>
+                            </li>
+                          {%- endfor -%}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    {% if item.iconImage %}
+                      <!-- card img -->
+                      <div class="Grid-cell u-size1of4 u-md-size1of3 u-lg-size1of3 u-textRight">
+                        <img class="u-sizeFull u-padding-top-s" alt="{{item.iconAlt}}" src="{{ item.iconImage }}" style="max-width:156px"/>
+                      </div>
+                    {% endif %}
+                    <!-- link hi-fi -->
+                    <div class="Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-padding-top-s u-padding-bottom-xs" style="background-color:#f0f6fc">
+                      <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
+                          <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-600">{{item.linksHiFiTitle}}</span>
+                        </div>
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
+                          <ul class="u-margin-top-s u-margin-bottom-l">
+                          {%- for link in item.linksHiFi  -%}
+                            <li class="u-margin-bottom-xs">
+                              <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                              {{link.title}}
+                              </a>
+                          </li>
+                          {%- endfor -%}
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- link mid-fi -->
+                      <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
+                          <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}<!--<br/><sup>mid-fi</sup>--></span>
+                        </div>
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
+                          <ul class="u-margin-top-s u-margin-bottom-l">
+                          {%- for link in item.linksMidFi  -%}
+                            <li class="u-margin-bottom-xs">
+                              <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                              {{link.title}}
+                              </a>
+                          </li>
+                          {%- endfor -%}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            {%- endfor -%}
+          </div>
+
+          <!-- XXX --->
+          <p class="u-textCenter" style="background:#ff0;">Da fare tutte le thumbnail, sono segnaposto.</p>
+          <p class="u-textCenter" style="background:#ff0;">Manca card per "designer" con libreria elementi per costruire altri flussi</p>
+          <p class="u-textCenter" style="background:#ff0;">Qui va accordion template html</p>
+          <p class="u-textCenter" style="background:#ff0;">Qui va info per tutti i sorgenti via documentazione...</p>
+          <!-- XXX --->
+
         </div>
-
-        <!-- XXX --->
-        <p class="u-textCenter" style="background:#ff0;">Da fare tutte le thumbnail, sono segnaposto.</p>
-        <p class="u-textCenter" style="background:#ff0;">Manca card per "designer" con libreria elementi per costruire altri flussi</p>
-        <p class="u-textCenter" style="background:#ff0;">Qui va accordion template html</p>
-        <p class="u-textCenter" style="background:#ff0;">Qui va info per tutti i sorgenti via documentazione...</p>
-        <!-- XXX --->
-
       </div>
-    </div>
+    {% endif %}
 
     <!-- XXX --->
     <p class="u-textCenter" style="background:#ff0;">Qui va community aiuto</p>
