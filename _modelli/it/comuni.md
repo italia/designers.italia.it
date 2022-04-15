@@ -20,10 +20,10 @@ redirect_from:
 
 header:
   links:
-    - <a href="#cta" class="u-color-grey-ui-kit">PA digitale 2026</a>
-    - <a href="#orientarsi" class="u-color-grey-ui-kit">Orientarsi</a>
-    - <a href="#sito" class="u-color-grey-ui-kit">Il modello di sito istituzionale</a>
-    - <a href="#servizi" class="u-color-grey-ui-kit">I flussi di servizi per i cittadini</a>
+    - <a href="#cta" class="u-color-white">PA digitale 2026</a>
+    - <a href="#orientarsi" class="u-color-white">Orientarsi</a>
+    - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
+    - <a href="#servizi" class="u-color-whitet">I flussi di servizi per i cittadini</a>
 
 ctaContent:
   title: Adottare il modello con il PNRR è semplice
@@ -172,7 +172,7 @@ coreContent:
 serviziContent:
   title: I nuovi flussi di servizi digitali per il cittadino
   subtitle: I principali servizi comunali a portata di clic
-  icon: '/assets/icons/kit/modelli-white.svg'
+  icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVONO
   text: "<p>Lo scopo dei nuovi flussi di interfaccia è di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
   <p>Per migliorare l’usabilità ed assicurare la soddisfazione degli utenti, i flussi di interfaccia sono stati creati in conformità con l’e-government benchmark e le Linee guida al design della PA.</p>
@@ -180,8 +180,8 @@ serviziContent:
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='#' target="_blank" class="u-color-white">Titolo di capitolo e se fosse lungo</a>
-        - <a href='#' target="_blank" class="u-color-white">Titolo di capitolo</a>
+        - <a href='#' target="_blank" >Titolo di capitolo e se fosse lungo</a>
+        - <a href='#' target="_blank" >Titolo di capitolo</a>
   cardsTitle: "SERVIZI"
   cards:
     - title: "Vantaggi economici"
@@ -192,7 +192,7 @@ serviziContent:
         - name: Bonus economici
         - name: Domanda di contributi
         - name: Assegno di maternità
-      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -202,7 +202,7 @@ serviziContent:
         - title: Naviga desktop
           url: "#"
           external: true
-      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFiTitle: Esempio agevolazioni scolastiche
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -217,8 +217,7 @@ serviziContent:
         - name: Iscrizione all’asilo nido
         - name: Iscrizione alla scuola dell’infanzia
         - name: Partecipazione ad un concorso pubblico
-        - name: "&nbsp;"
-      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -228,7 +227,7 @@ serviziContent:
         - title: Naviga desktop
           url: "#"
           external: true
-      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFiTitle: Esempio agevolazioni scolastiche
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -245,7 +244,7 @@ serviziContent:
         - name: Parcheggio per residenti
         - name: Pubblicazione di matrimonio
         - name: Occupazione suolo pubblico
-      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -255,7 +254,7 @@ serviziContent:
         - title: Naviga desktop
           url: "#"
           external: true
-      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFiTitle: Esempio agevolazioni scolastiche
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -272,7 +271,7 @@ serviziContent:
         - name: Canone lampade votive
         - name: Contravvenzioni
         - name: Tributi IMU
-      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -282,7 +281,7 @@ serviziContent:
         - title: Naviga desktop
           url: "#"
           external: true
-      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFiTitle: Esempio agevolazioni scolastiche
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -298,7 +297,7 @@ serviziContent:
         - name: Mensa scolastica
         - name: Sepoltura di un defunto
         - name: Trasporto scolastico
-      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconImage:
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -308,7 +307,7 @@ serviziContent:
         - title: Naviga desktop
           url: "#"
           external: true
-      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFiTitle: Esempio agevolazioni scolastiche
       linksHiFi:
         - title: Naviga mobile
           url: "#"

@@ -17,7 +17,7 @@ layout: default
 
 <article class="u-color-grey-ui-kit a-text-semi-bold">
 
-  <div class="super-breadcrumb u-background-teal-50">
+  <div class="super-breadcrumb u-background-50 u-color-white">
     <div class="u-layout-wide u-layoutCenter u-padding-r-top">
 
       {% if page.disabled == true %}
@@ -52,7 +52,7 @@ layout: default
             <div class="u-margin-top-xxl u-margin-bottom-m">
               <ul>
                 {% for link in page.header.links %}
-                  <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r u-padding-left-none u-padding-right-xl u-padding-right-xxl">{{link}}</li>
+                  <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-white u-special-list-r u-padding-left-none u-padding-right-xl u-padding-right-xxl">{{link}}</li>
                 {% endfor %}
               </ul>
             </div>
@@ -69,7 +69,7 @@ layout: default
     </div>
   </div>
 
-  <hr class="Separator-room u-background-teal-50" />
+  <hr class="Separator-room u-background-50" />
   <hr class="Separator Separator--up u-background-white" />
 
   {% if page.disabled != true %}
@@ -363,7 +363,7 @@ layout: default
     </div>
 
     <!-- ///// SERVIZI ///// -->
-    <div id="servizi" class="fase u-background-50 u-color-white">
+    <div id="servizi" class="fase u-background-grey-10 u-color-grey-ui-kit">
       <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-top-m">
         <!-- header -->
         <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
@@ -381,10 +381,10 @@ layout: default
         </div>
 
         <!-- intro -->
-        <div class="Grid Grid--alignCenter u-padding-all-l Prose u-color-white">
+        <div class="Grid Grid--alignCenter u-padding-all-l Prose u-color-grey-ui-kit">
           <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
             <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.occhiello}}</h2>
-            <div class="kitIntro u-layout-prose u-color-white">
+            <div class="kitIntro u-layout-prose u-color-grey-ui-kit">
               {{serviziContent.text}}
             </div>
           </div>
@@ -399,8 +399,8 @@ layout: default
               {% endif %}
               <ul>
                 {% for item in rightColumnItem.items %}
-                  <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-white u-special-list-r">
-                    {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-white.svg" />
+                  <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r">
+                    {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
                   </li>
                 {% endfor %}
               </ul>
@@ -413,20 +413,16 @@ layout: default
         <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
           <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.cardsTitle}}</h2>
         </div>
-        <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutter Grid--equalHeight Grid--fill">
+        <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM"> <!-- Grid--equalHeight Grid--fill -->
           <!-- single cta card -->
           {%- for item in cards  -%}
-            <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
-              <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-background-white">
-                <div class="u-flexAlignSelfStart u-sizeFull">
-                  {% if item.iconImage %}
-                    <!-- card img -->
-                    <img class="u-padding-bottom-m" alt="{{item.iconAlt}}" src="{{ item.iconImage }}" style="width:100%; height:auto"/>
-                  {% endif %}
+            <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-margin-bottom-l {{item.kitcategory|slugify}}">
+              <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+                <div class="u-flexAlignSelfStart u-sizeFull Grid">
                   <!-- card content -->
-                  <div class="u-padding-top-s">
-                    <div class=" u-padding-right-xl u-padding-left-xl u-padding-bottom-l">
-                      <h3 class="u-text-r-m u-padding-bottom-s u-textWeight-600 u-color-grey-ui-kit">
+                  <div class="u-padding-top-xl Grid-cell {% if item.iconImage %}u-sm-size3of4 u-md-size2of3 u-lg-size2of3{% else %}u-sm-size1of1 u-md-size1of1 u-lg-size1of1{% endif %}">
+                    <div class=" u-padding-right-l u-padding-left-l u-padding-bottom-l">
+                      <h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 u-color-grey-ui-kit">
                         <span id="kitCardTitle">{{item.title}}</span>
                       </h3>
                       <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
@@ -440,13 +436,21 @@ layout: default
                         </ul>
                       </div>
                     </div>
-                    <hr style="border:none;height:1px;background:#C5C7C9;margin:0"/>
-                    <div class="Grid Grid--alignCenter u-padding-top-s u-padding-left-xl u-padding-right-xl">
+                  </div>
+                  {% if item.iconImage %}
+                    <!-- card img -->
+                    <div class="Grid-cell u-sm-size1of4 u-md-size1of3 u-lg-size1of3">
+                      <img class="u-padding-top-s" alt="{{item.iconAlt}}" src="{{ item.iconImage }}" style="width:100%; height:auto"/>
+                    </div>
+                  {% endif %}
+                  <!-- link hi-fi -->
+                  <div class="Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-padding-top-s u-padding-bottom-xs" style="background-color:#f0f6fc">
+                    <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
                       <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
-                        <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-700">{{item.linksHiFiTitle}}</span>
+                        <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-600">{{item.linksHiFiTitle}}</span>
                       </div>
                       <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
-                        <ul class="u-margin-top-xs u-margin-bottom-xl">
+                        <ul class="u-margin-top-s u-margin-bottom-l">
                         {%- for link in item.linksHiFi  -%}
                           <li class="u-margin-bottom-xs">
                             <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
@@ -457,13 +461,13 @@ layout: default
                         </ul>
                       </div>
                     </div>
-                    <hr style="border:none;height:1px;background:#C5C7C9;margin:0"/>
-                    <div class="Grid Grid--alignCenter u-padding-top-s u-padding-left-xl u-padding-right-xl">
+                    <!-- link mid-fi -->
+                    <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
                       <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
-                        <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-700">{{item.linksMidFiTitle}}</span>
+                        <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}</span>
                       </div>
                       <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
-                        <ul class="u-margin-top-xs u-margin-bottom-xl">
+                        <ul class="u-margin-top-s u-margin-bottom-l">
                         {%- for link in item.linksMidFi  -%}
                           <li class="u-margin-bottom-xs">
                             <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
