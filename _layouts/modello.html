@@ -101,6 +101,9 @@ layout: default
                       <ul>
                       {%- for link in item.links  -%}
                         <li class="u-margin-top-xs">
+                          {% if link.anchor %}
+                            <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
+                          {% endif %}
                           <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
                           {{link.title}}
                           </a>
@@ -165,6 +168,9 @@ layout: default
                       <ul>
                       {%- for link in item.links  -%}
                         <li class="u-margin-top-m">
+                          {% if link.anchor %}
+                            <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
+                          {% endif %}
                           <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
                           {{link.title}}
                           </a>

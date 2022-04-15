@@ -68,14 +68,14 @@ orientarsiContent:
       links:
         - url: "#sito"
           title: Scopri il modello di sito istituzionale
-          external: false
+          anchor: true
         - url: "#servizi"
           title: Scopri i flussi di servizi per i cittadini
-          external: false
+          anchor: true
     - title: Per il futuro della PA
       subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.  </p>
       <p>L’uso del modello permette di aderire più facilmente alle Linee guida nazionali e alle migliori pratiche, andando oltre, anticipando l’adozione delle indicazioni EU basate sugli <a href="#" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
-      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
       buttonUrl: https://docs.italia.it
