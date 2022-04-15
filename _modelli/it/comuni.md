@@ -18,6 +18,13 @@ redirect_from:
   - /siti-comuni/
   - /progetti/siti-web-comuni/
 
+header:
+  links:
+    - <a href="#cta" class="u-color-grey-ui-kit">PA digitale 2026</a>
+    - <a href="#orientarsi" class="u-color-grey-ui-kit">Orientarsi</a>
+    - <a href="#sito" class="u-color-grey-ui-kit">Il modello di sito istituzionale</a>
+    - <a href="#servizi" class="u-color-grey-ui-kit">I flussi di servizi per i cittadini</a>
+
 ctaContent:
   title: Adottare il modello con il PNRR è semplice
   subtitle: Scopri su <b>PA digitale 2026</b> l'avviso per il miglioramento dell'esperienza dei cittadini
@@ -80,7 +87,6 @@ orientarsiContent:
       buttonTitle: Vai alla documentazione
       buttonUrl: https://docs.italia.it
       buttonExternal: true
-
 
 coreContent:
   title: Il modello di sito
@@ -176,6 +182,140 @@ serviziContent:
       items:
         - <a href='#' target="_blank" class="u-color-white">Titolo di capitolo e se fosse lungo</a>
         - <a href='#' target="_blank" class="u-color-white">Titolo di capitolo</a>
+  cardsTitle: "SERVIZI"
+  cards:
+    - title: "Vantaggi economici"
+      subtitle: "Il flusso di interazione per la richiesta di un vantaggio economico vincolato dalla presenza di determinati requisiti di idoneità, come:"
+      services:
+        - name: Agevolazioni scolastiche
+        - name: Agevolazioni tributarie
+        - name: Bonus economici
+        - name: Domanda di contributi
+        - name: Assegno di maternità
+      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Domande con graduatoria"
+      subtitle: "Il flusso di interazione per le richieste di  prestazioni accessibili tramite una graduatoria redatta dall'amministrazione, come:"
+      services:
+        - name: Assegnazione alloggio
+        - name: Iscrizione all’asilo nido
+        - name: Iscrizione alla scuola dell’infanzia
+        - name: Partecipazione ad un concorso pubblico
+        - name: "&nbsp;"
+      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Permessi e autorizzazioni"
+      subtitle: "Il flusso di interazione per le richiesta di  rilascio di permessi o autorizzazioni, come:"
+      services:
+        - name: Accesso agli atti
+        - name: Accesso ZTL
+        - name: Parcheggio invalidi
+        - name: Parcheggio per residenti
+        - name: Pubblicazione di matrimonio
+        - name: Occupazione suolo pubblico
+      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Pagamenti dovuti"
+      subtitle: "Il flusso di interazione per adempire al pagamento di oneri, come:"
+      services:
+        - name: Canone CIMP
+        - name: Canone COSAP
+        - name: Canone idrico
+        - name: Canone lampade votive
+        - name: Contravvenzioni
+        - name: Tributi IMU
+      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Servizi a pagamento"
+      subtitle: "Il flusso di interazione per la richiesta di servizi che prevedono un pagamento da parte del cittadino per l’erogazione, come:"
+      services:
+        - name: Assegno di ricchezza
+        - name: Corsi di formazione
+        - name: Mensa scolastica
+        - name: Sepoltura di un defunto
+        - name: Trasporto scolastico
+      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+      linksHiFiTitle: Esempio <strong>agevolazioni scolastiche</strong>
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
 
 tags:
   - web-development
