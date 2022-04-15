@@ -358,7 +358,9 @@ layout: default
         <!-- end tools -->
       </div>
 
-      <p>Qui va aiuto community e forse altro link documentazione info</p>
+      <!-- XXX --->
+      <p class="u-textCenter" style="background:#ff0;">Qui va aiuto community e forse altro link documentazione info</p>
+      <!-- XXX --->
 
     </div>
 
@@ -420,7 +422,7 @@ layout: default
               <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
                 <div class="u-flexAlignSelfStart u-sizeFull Grid">
                   <!-- card content -->
-                  <div class="u-padding-top-xl Grid-cell {% if item.iconImage %}u-sm-size3of4 u-md-size2of3 u-lg-size2of3{% else %}u-sm-size1of1 u-md-size1of1 u-lg-size1of1{% endif %}">
+                  <div class="u-padding-top-xl Grid-cell {% if item.iconImage %}u-size3of4 u-md-size2of3 u-lg-size2of3{% else %}u-sm-size1of1 u-md-size1of1 u-lg-size1of1{% endif %}">
                     <div class=" u-padding-right-l u-padding-left-l u-padding-bottom-l">
                       <h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 u-color-grey-ui-kit">
                         <span id="kitCardTitle">{{item.title}}</span>
@@ -439,8 +441,8 @@ layout: default
                   </div>
                   {% if item.iconImage %}
                     <!-- card img -->
-                    <div class="Grid-cell u-sm-size1of4 u-md-size1of3 u-lg-size1of3">
-                      <img class="u-padding-top-s" alt="{{item.iconAlt}}" src="{{ item.iconImage }}" style="width:100%; height:auto"/>
+                    <div class="Grid-cell u-size1of4 u-md-size1of3 u-lg-size1of3 u-textRight">
+                      <img class="u-sizeFull u-padding-top-s" alt="{{item.iconAlt}}" src="{{ item.iconImage }}" style="max-width:156px"/>
                     </div>
                   {% endif %}
                   <!-- link hi-fi -->
@@ -464,7 +466,7 @@ layout: default
                     <!-- link mid-fi -->
                     <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
                       <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
-                        <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}</span>
+                        <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}<!--<br/><sup>mid-fi</sup>--></span>
                       </div>
                       <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
                         <ul class="u-margin-top-s u-margin-bottom-l">
@@ -485,15 +487,19 @@ layout: default
           {%- endfor -%}
         </div>
 
-        <p>Da fare tutte le thumbnail e migliorare UI per navigazione prototipi mobile e desktop</p>
-        <p>Manca card per "designer" con libreria elementi per costruire altri flussi</p>
-        <p>Qui va accordion template html</p>
-        <p>Qui va info per tutti i sorgenti via documentazione...</p>
+        <!-- XXX --->
+        <p class="u-textCenter" style="background:#ff0;">Da fare tutte le thumbnail, sono segnaposto.</p>
+        <p class="u-textCenter" style="background:#ff0;">Manca card per "designer" con libreria elementi per costruire altri flussi</p>
+        <p class="u-textCenter" style="background:#ff0;">Qui va accordion template html</p>
+        <p class="u-textCenter" style="background:#ff0;">Qui va info per tutti i sorgenti via documentazione...</p>
+        <!-- XXX --->
 
       </div>
     </div>
 
-        <p>Qui va community aiuto</p>
+    <!-- XXX --->
+    <p class="u-textCenter" style="background:#ff0;">Qui va community aiuto</p>
+    <!-- XXX --->
 
   </div>
   {% endif %}
