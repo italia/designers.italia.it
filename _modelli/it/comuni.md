@@ -106,7 +106,7 @@ coreContent:
         resources:
           - title: L'architettura dell'informazione del modello comuni
             icon: "/assets/icons/pencil.svg"
-            description: Indicazioni su content type (tipologie di contenuti),sistemi di navigazione e tassonomie per tutte le aree del sito di un comune
+            description: Indicazioni su content type (tipologie di contenuti), sistemi di navigazione e tassonomie per tutte le aree del sito di un comune
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Titoletto di risorsa figlia
