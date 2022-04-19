@@ -8,7 +8,7 @@
     {%- for i in (1..11) -%}
     <img src="{{ '/assets/images/blk7/balloon.svg' | relative_url }}" alt="" role="presentation" class="u-posAbsolute Balloon-{{ forloop.index }}"/>
     {%- endfor -%}
-    <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative">
+    <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative Grid--equalHeight Grid--fill Grid--alignCenter">
       <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
         {%- include card.html
           title = "<img src=\"/assets/icons/partecipa-forum-italia.svg\" alt=\"icona\" height=\"32\">"
