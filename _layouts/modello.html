@@ -77,7 +77,7 @@ layout: default
 
     {% if ctaContent %}
       <!-- ///// CTA ///// -->
-      <div id="cta" class="fase">
+      <section id="cta" class="fase">
         <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-xxl">
           <!-- header -->
           <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter">
@@ -140,12 +140,12 @@ layout: default
           </div>
           {% endif %}
         </div>
-      </div>
+      </section>
     {% endif %}
 
     {% if orientarsiContent %}
       <!-- ///// ORIENTARSI ///// -->
-      <div id="orientarsi" class="fase u-padding-top-xs u-padding-bottom-xxs">
+      <section id="orientarsi" class="fase u-padding-top-xs u-padding-bottom-xxs">
         <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-m">
 
           <!-- header -->
@@ -209,11 +209,11 @@ layout: default
           </div>
 
         </div>
-      </div>
+      </section>
     {% endif %}
 
     <!-- ///// SITO ///// -->
-    <div id="sito" class="fase">
+    <section id="sito" class="fase">
       <div class="u-layout-wide u-layoutCenter u-padding-r-top u-margin-bottom-xxl">
         <!-- header -->
         <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
@@ -366,11 +366,11 @@ layout: default
       <p class="u-textCenter" style="background:#ff0;">Qui va aiuto community e forse altro link documentazione info</p>
       <!-- XXX --->
 
-    </div>
+    </section>
 
     {% if serviziContent %}
       <!-- ///// SERVIZI ///// -->
-      <div id="servizi" class="fase u-background-grey-10 u-color-grey-ui-kit">
+      <section id="servizi" class="fase u-background-grey-10 u-color-grey-ui-kit">
         <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-top-m">
           <!-- header -->
           <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
@@ -500,12 +500,44 @@ layout: default
           <!-- XXX --->
 
         </div>
-      </div>
+      </section>
     {% endif %}
 
-    <!-- XXX --->
-    <p class="u-textCenter" style="background:#ff0;">Qui va community aiuto</p>
-    <!-- XXX --->
+    <!-- Community XXX WORK IN PROGRESS --->
+    <section id="community" class="u-nbfc u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl u-xs-padding-all-none u-posRelative u-zindex-30 u-background-white">
+      <div class="u-layout-wide u-layoutCenter u-padding-top-m">
+        <h2 class="u-text-h2 u-color-grey-ui-kit u-textCenter">Confrontati con la comunità</h2>
+        <div class="u-text-r-l u-color-grey-ui-kit u-padding-r-bottom u-textCenter">Scopri i canali della comunità di Designers Italia</div>
+        <div class="u-textCenter u-margin-top-l">
+          <img src="{{ '/assets/images/blk7/conversation.svg' | relative_url }}" alt="" role="presentation">
+        </div>
+        {%- for i in (1..11) -%}
+        <img src="{{ '/assets/images/blk7/balloon.svg' | relative_url }}" alt="" role="presentation" class="u-posAbsolute Balloon-{{ forloop.index }}"/>
+        {%- endfor -%}
+        <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative Grid--equalHeight Grid--fill Grid--alignCenter">
+          <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
+            {%- include card.html
+              title = "<img src=\"/assets/icons/partecipa-forum-italia.svg\" alt=\"icona\" height=\"32\">"
+              target = "blank"
+              link = "https://forum.italia.it/c/design"
+              link_text = "Visita il forum"
+              text = "Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore."
+              hasSocial = false
+              classes = "u-background-white u-minHeight-250" -%}
+          </div>
+          <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
+            {%- include card.html
+              title = "<img src=\"/assets/icons/partecipa-slack.svg\" alt=\"icona\" height=\"32\">"
+              target = "blank"
+              link = "https://slack.developers.italia.it/"
+              link_text = "Entra nel canale #design"
+              text = "Dialoga e collabora in tempo reale con i designer e i maintainer sui canali dedicati al <i>#design</i>."
+              hasSocial = false
+              classes = "u-background-white u-minHeight-250" -%}
+          </div>
+      </div>
+    </section>
+
 
   </div>
   {% endif %}
