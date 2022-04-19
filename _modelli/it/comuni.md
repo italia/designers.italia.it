@@ -101,7 +101,7 @@ coreContent:
     title: RISORSE
     accordions:
       - title: Architettura e contenuti
-        text: "<p>L’architettura dell’informazione è la struttura del sito di un comune. È usata dagli sviluppatori per la realizzazione delle strutture di <i>front-end</i> e <i>back-end</i>, e dai progettisti per l’organizzazione dei contenuti sulle pagine del sito.</p>"
+        text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dagli sviluppatori per la realizzazione delle strutture di <i>front-end</i> e <i>back-end</i>, e dai progettisti per l’organizzazione dei contenuti sulle pagine del sito.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
           - title: L'architettura dell'informazione del modello comuni
