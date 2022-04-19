@@ -65,7 +65,7 @@ orientarsiContent:
     - title: Strumenti pronti all'uso
       subtitle: "<p>L’ideazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca.&nbsp; Il modello di sito per le scuole permette di rispondere alle esigenze di studenti, genitori e tutta la comunità scolastica in modo rapido e a basso costo, sfruttando procedure e funzionalità già validate con gli utenti.</p>
       <p>Le risorse disponibili sono pronte all’uso e guidano su tutti gli aspetti della realizzazione, dall’implementazione dei template alla migrazione dei contenuti.</p>"
-      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconImage: "/assets/images/modelli/scuola-2022-full.png"
       iconAlt: ""
       links:
         - url: "#sito"
@@ -74,7 +74,7 @@ orientarsiContent:
     - title: Per il futuro della PA
       subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.  </p>
       <p>L’uso del modello permette di aderire più facilmente alle Linee guida nazionali e alle migliori pratiche, andando oltre, anticipando l’adozione delle indicazioni EU basate sugli <a href="#" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
-      iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
+      iconImage: "/assets/images/modelli/scuola-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
       buttonUrl: https://docs.italia.it
@@ -96,7 +96,7 @@ coreContent:
   superAccordion:
     title: STRUMENTI
     accordions:
-      - title: Architettura e contenuti
+      - title: Architettura e contenuti del sito
         text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dai developers per la realizzazione delle strutture di front-end backend, e dai designers per l’organizzazione dei contenuti sulle pagine del sito.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
@@ -118,7 +118,7 @@ coreContent:
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-      - title: Template HTML
+      - title: Template HTML del sito
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:

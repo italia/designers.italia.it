@@ -122,7 +122,7 @@ coreContent:
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-      - title: Template HTML
+      - title: Template HTML per il sito
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
@@ -149,6 +149,7 @@ coreContent:
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
           - title: Titolo risorsa principale
+            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Descrizione risorsa principale
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
@@ -158,6 +159,7 @@ coreContent:
               - description: Altro titoletto di risorsa figlia
                 link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
           - title: Altra risorsa principale
+            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Descrizione altra risorsa principale
             link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
@@ -190,7 +192,7 @@ serviziContent:
         - name: Bonus economici
         - name: Domanda di contributi
         - name: Assegno di maternità
-      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
+      iconImage:
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -215,7 +217,7 @@ serviziContent:
         - name: Iscrizione all’asilo nido
         - name: Iscrizione alla scuola dell’infanzia
         - name: Partecipazione ad un concorso pubblico
-      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
+      iconImage:
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -242,7 +244,7 @@ serviziContent:
         - name: Parcheggio per residenti
         - name: Pubblicazione di matrimonio
         - name: Occupazione suolo pubblico
-      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
+      iconImage:
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -269,7 +271,7 @@ serviziContent:
         - name: Canone lampade votive
         - name: Contravvenzioni
         - name: Tributi IMU
-      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
+      iconImage:
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
       linksMidFi:
@@ -313,6 +315,39 @@ serviziContent:
         - title: Naviga desktop
           url: "#"
           external: true
+    - title: "Come progettare modelli di servizio"
+      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà e, se il servizio non rientra negli archetipi proposti, abbiamo predisposto <strong>per i designer coinvolti nel progetto</strong> una risorsa per integrare con facilità flussi personalizzati"
+      designerType: true
+      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
+      iconAlt: ""
+      linksHiFiTitle: Tutti i prototipi disponibili
+      linksHiFi:
+        - title: Naviga
+          url: "#"
+          external: true
+      linksMidFiTitle: Libreria componenti per designer
+      linksMidFi:
+        - title: Vai alla risorsa
+          url: "#"
+          external: true
+          disabled: true
+  superAccordion:
+    title: STRUMENTI
+    accordions:
+      - title: Template HTML per i servizi
+        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del servizio, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        img: "/assets/icons/kit/kit_webDevelopment.svg"
+        resources:
+          - title: Titolo risorsa principale
+            disabled: true
+            icon: "/assets/icons/pencil.svg"
+            description: Descrizione risorsa principale
+            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+          - icon: "/assets/icons/info-grey.svg"
+            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
 tags:
   - web-development
