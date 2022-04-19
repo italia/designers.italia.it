@@ -96,7 +96,7 @@ coreContent:
   superAccordion:
     title: STRUMENTI
     accordions:
-      - title: Architettura e contenuti
+      - title: Architettura e contenuti del sito
         text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dai developers per la realizzazione delle strutture di front-end backend, e dai designers per l’organizzazione dei contenuti sulle pagine del sito.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
@@ -118,7 +118,7 @@ coreContent:
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-      - title: Template HTML
+      - title: Template HTML del sito
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
