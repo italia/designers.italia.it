@@ -424,15 +424,15 @@ layout: default
             <!-- single cta card -->
             {%- for item in cards  -%}
               <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-margin-bottom-l {{item.kitcategory|slugify}}">
-                <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+                <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m {% if item.designerType %} u-background-50 u-color-white {% else %} u-background-white u-color-grey-ui-kit{% endif %}">
                   <div class="u-flexAlignSelfStart u-sizeFull Grid">
                     <!-- card content -->
                     <div class="u-padding-top-xl Grid-cell {% if item.iconImage %}u-size3of4 u-md-size2of3 u-lg-size2of3{% else %}u-sm-size1of1 u-md-size1of1 u-lg-size1of1{% endif %}">
                       <div class=" u-padding-right-l u-padding-left-l u-padding-bottom-l">
-                        <h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 u-color-grey-ui-kit">
+                        <h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 ">
                           <span id="kitCardTitle">{{item.title}}</span>
                         </h3>
-                        <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+                        <div class="Prose u-text-r-xxs u-textWeight-400 {% if item.designerType %} u-color-white {% endif %}">{{item.subtitle}}</div>
                         <div class="u-margin-top-l">
                           <ul class="u-color-grey-ui-kit u-text-r-xxs">
                           {%- for service in item.services  -%}
@@ -450,41 +450,53 @@ layout: default
                         <img class="u-sizeFull u-padding-top-s" alt="{{item.iconAlt}}" src="{{ item.iconImage }}" style="max-width:156px"/>
                       </div>
                     {% endif %}
-                    <!-- link hi-fi -->
                     <div class="Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-padding-top-s u-padding-bottom-xs" style="background-color:#f0f6fc">
-                      <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
+                      {% if item.linksHiFi %}
+                      <!-- link hi-fi -->
+                        <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
                         <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
                           <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-600">{{item.linksHiFiTitle}}</span>
                         </div>
                         <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
                           <ul class="u-margin-top-s u-margin-bottom-l">
                           {%- for link in item.linksHiFi  -%}
-                            <li class="u-margin-bottom-xs">
-                              <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                              {{link.title}}
-                              </a>
+                            <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" {% if link.disabled == true %} style="opacity:.6" {% endif %}>
+                              {% if link.disabled == true %}
+                                 In lavorazione
+                              {% else %}
+                                <a class="u-textClean u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                                {{link.title}}
+                                </a>
+                              {% endif %}
                           </li>
                           {%- endfor -%}
                           </ul>
                         </div>
                       </div>
+                      {% endif %}
+                      {% if item.linksMidFi %}
                       <!-- link mid-fi -->
-                      <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
-                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
-                          <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}<!--<br/><sup>mid-fi</sup>--></span>
+                        <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
+                            <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}<!--<br/><sup>mid-fi</sup>--></span>
+                          </div>
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
+                            <ul class="u-margin-top-s u-margin-bottom-l">
+                            {%- for link in item.linksMidFi  -%}
+                              <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" {% if link.disabled == true %} style="opacity:.6" {% endif %}>
+                                {% if link.disabled == true %}
+                                   In lavorazione
+                                {% else %}
+                                  <a class="u-textClean u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                                  {{link.title}}
+                                  </a>
+                                {% endif %}
+                            </li>
+                            {%- endfor -%}
+                            </ul>
+                          </div>
                         </div>
-                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
-                          <ul class="u-margin-top-s u-margin-bottom-l">
-                          {%- for link in item.linksMidFi  -%}
-                            <li class="u-margin-bottom-xs">
-                              <a class="u-textClean u-text-r-xxs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                              {{link.title}}
-                              </a>
-                          </li>
-                          {%- endfor -%}
-                          </ul>
-                        </div>
-                      </div>
+                      {% endif %}
                     </div>
                   </div>
                 </article>
@@ -494,7 +506,7 @@ layout: default
 
           <!-- XXX --->
           <p class="u-textCenter" style="background:#ff0;">Da fare tutte le thumbnail, sono segnaposto.</p>
-          <p class="u-textCenter" style="background:#ff0;">Manca card per "designer" con libreria elementi per costruire altri flussi</p>
+          <p class="u-textCenter" style="background:#ff0;">Da verificare se serve sistema link sotto card più universale per aggiungerne altri</p>
           <p class="u-textCenter" style="background:#ff0;">Qui va accordion template html</p>
           <p class="u-textCenter" style="background:#ff0;">Qui va info per tutti i sorgenti via documentazione...</p>
           <!-- XXX --->
@@ -503,7 +515,7 @@ layout: default
       </section>
     {% endif %}
 
-    <!-- Community XXX WORK IN PROGRESS --->
+    <!-- Community --->
     <section id="community" class="u-nbfc u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl u-xs-padding-all-none u-posRelative u-zindex-30 u-background-white">
       <div class="u-layout-wide u-layoutCenter u-padding-top-m">
         <h2 class="u-layoutCenter u-text-h2 u-color-grey-ui-kit u-textCenter" style="max-width:672px">La comunità di riferimento</h2>

@@ -315,6 +315,22 @@ serviziContent:
         - title: Naviga desktop
           url: "#"
           external: true
+    - title: "Come progettare modelli di servizio"
+      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà e, se il servizio non rientra negli archetipi proposti, abbiamo predisposto <strong>per i designer coinvolti nel progetto</strong> una risorsa per integrare con facilità flussi personalizzati"
+      designerType: true
+      iconImage:
+      iconAlt: ""
+      linksHiFiTitle: Tutti i prototipi disponibili
+      linksHiFi:
+        - title: Naviga
+          url: "#"
+          external: true
+      linksMidFiTitle: Libreria componenti
+      linksMidFi:
+        - title: Vai alla risorsa
+          url: "#"
+          external: true
+          disabled: true
 
 tags:
   - web-development
