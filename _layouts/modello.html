@@ -505,13 +505,114 @@ layout: default
           </div>
 
           <!-- XXX --->
-          <p class="u-textCenter" style="background:#ff0;">Da fare tutte le thumbnail, sono segnaposto.</p>
           <p class="u-textCenter" style="background:#ff0;">Da verificare se serve sistema link sotto card più universale per aggiungerne altri</p>
-          <p class="u-textCenter" style="background:#ff0;">Qui va accordion template html</p>
-          <p class="u-textCenter" style="background:#ff0;">Qui va info per tutti i sorgenti via documentazione...</p>
+          <p class="u-textCenter" style="background:#ff0;">Qui va info per tutti i sorgenti via documentazione???</p>
           <!-- XXX --->
 
+          <!-- tools -->
+          {% assign superAccordion = serviziContent.superAccordion %}
+          <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+            <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+              <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{superAccordion.title}}</h2>
+            </div>
+
+            {% for accordion in superAccordion.accordions %}
+            <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-m u-margin-top-l u-margin-bottom-l u-posRelative u-borderRadius-l u-background-white">
+              <div class="accordion-expand-button-close" data-accordion-expanded="false">
+                <img alt="" src="/assets/images/icons/arrow-down-big.svg">
+              </div>
+              <div class="Accordion fr-accordion js-fr-accordion" id="accordion-{{ forloop.index | plus:10 }}">
+
+                <!-- tool header -->
+                <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{ forloop.index | plus:10 }}">
+                  <div class="Grid Grid--alignCenter Grid--withGutter u-padding-all-s u-md-padding-all-none u-lg-padding-all-none">
+                    <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-textCenter u-padding-top-m">
+                      <img alt="{{accordion.title}}" src="{{accordion.img}}" style="max-width:144px">
+                    </div>
+                    <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10 u-padding-bottom-xl u-padding-top-xl">
+                      <h3 class="toolTitle u-text-h3 u-color-50">{{accordion.title}}</h3>
+                      <div data-accordion-header-text class="accordion-line-clamp u-layout-prose accordion-super-text u-color-grey-ui-kit">
+                        {{accordion.text}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- tool panel -->
+                <div id="accordion-panel-{{ forloop.index | plus:10 }}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
+
+                  <div class="Grid Grid--alignCenter Grid--withGutter u-margin-bottom-m">
+                    <div class="Grid-cell u-sm-padding-all-xl u-md-padding-all-xl u-lg-padding-all-xl" style="background-color: #F0F6FC">
+                      {% for resource in accordion.resources %}
+                      <div class="u-background-white u-margin-all-m
+                                  u-padding-top-m u-padding-bottom-m
+                                  u-padding-left-s u-padding-right-s
+                                  u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
+                                  u-borderShadow-m u-margin-bottom-xxl u-borderRadius-m
+                                  u-text-r-xxs" style="border-left: 8px solid
+                                  {% if resource.disabled == true %} #BEBEBE {% else %} #0066CC {% endif %}
+                                  ">
+                        <!-- main resource item -->
+                        <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs"
+                           {% if resource.disabled == true %} style="opacity:.6" {% endif %}
+                           >
+                            <div class="u-textWeight-600 u-text-r-s u-margin-bottom-xxs">{{resource.title}}</div>
+                            <div>{{resource.description}}</div>
+                          </div>
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight"
+                          {% if resource.disabled == true %} style="opacity:.6" {% endif %}
+                          >
+                            {% if resource.disabled == true %}
+                               In lavorazione
+                            {% else %}
+                              {{resource.link}}
+                              {% if resource.icon %}
+                                <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
+                              {% endif %}
+                            {% endif %}
+                          </div>
+                        </div>
+                        {% for otherResource in resource.otherResources %}
+                        <!-- secondary resource item -->
+                        <hr style="border:none;height:1px;background:#C5C7C9"/>
+                        <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
+                            <div>{{otherResource.description}}</div>
+                          </div>
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
+                            {{otherResource.link}}
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+
+                  <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
+                    <div class="Grid-cell u-md-before2of10 u-lg-before2of10 u-md-size7of10 u-lg-size7of10 u-md-after1of10 u-lg-after1of10 u-padding-all-s u-text-r-xxs">
+                      <div class="Grid Grid--withGutter">
+                        {% for item in accordion.footer %}
+                          <div class="Grid-cell u-lg-size5of10 u-md-size5of10 u-margin-bottom-l u-flex u-flexAlignItemsStart">
+                            <img alt="" src="{{item.icon}}" style="margin: 5px 10px" />
+                            <div>{{item.text}}</div>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+          <!-- end tools -->
         </div>
+
       </section>
     {% endif %}
 
