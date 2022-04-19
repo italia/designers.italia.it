@@ -65,7 +65,7 @@ orientarsiContent:
     - title: Strumenti pronti all'uso
       subtitle: "<p>L’ideazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca.&nbsp; Il modello di sito per le scuole permette di rispondere alle esigenze di studenti, genitori e tutta la comunità scolastica in modo rapido e a basso costo, sfruttando procedure e funzionalità già validate con gli utenti.</p>
       <p>Le risorse disponibili sono pronte all’uso e guidano su tutti gli aspetti della realizzazione, dall’implementazione dei template alla migrazione dei contenuti.</p>"
-      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconImage: "/assets/images/modelli/scuola-2022-full.png"
       iconAlt: ""
       links:
         - url: "#sito"
@@ -74,7 +74,7 @@ orientarsiContent:
     - title: Per il futuro della PA
       subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.  </p>
       <p>L’uso del modello permette di aderire più facilmente alle Linee guida nazionali e alle migliori pratiche, andando oltre, anticipando l’adozione delle indicazioni EU basate sugli <a href="#" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
-      iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
+      iconImage: "/assets/images/modelli/scuola-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
       buttonUrl: https://docs.italia.it
