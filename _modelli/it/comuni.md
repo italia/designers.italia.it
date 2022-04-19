@@ -20,14 +20,12 @@ redirect_from:
 
 header:
   links:
-    - <a href="#cta" class="u-color-white">PA digitale 2026</a>
-    - <a href="#orientarsi" class="u-color-white">Orientarsi</a>
-    - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
-    - <a href="#servizi" class="u-color-whitet">I flussi di servizi per i cittadini</a>
+    - <a href="#sito" class="u-color-white">Modello di sito istituzionale</a>
+    - <a href="#servizi" class="u-color-whitet">Flussi di servizi digitali</a>
 
 ctaContent:
-  title: Adottare il modello con il PNRR è semplice
-  subtitle: Scopri su <b>PA digitale 2026</b> l'avviso per il miglioramento dell'esperienza dei cittadini
+  title: Adottare il modello è più semplice con il PNRR 
+  subtitle: Scopri il bando di finanziamento per l’aggiornamento dei siti web comunali e la creazione di servizi digitali per il cittadino
   buttonTitle: Vai su PA digitale 2026
   buttonUrl: https://padigitale2026.gov.it
   buttonExternal: true
@@ -43,12 +41,12 @@ ctaContent:
           external: true
     - prefix: "2"
       title: "Avvia i lavori "
-      subtitle: "Contatta i tuoi fornitori esterni di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro 6 mesi dalla pubblicazione del decreto di finanziamento."
+      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro 6 mesi dalla pubblicazione del decreto di finanziamento."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
         - url: "#"
-          title: Scopri cosa fare
+          title: Scopri i passi da seguire
           external: true
     - prefix: "3"
       title: "Migliora l’esperienza digitale dei cittadini"
@@ -57,31 +55,31 @@ ctaContent:
       iconAlt: ""
       links:
         - url: "#"
-          title: Scopri i requisiti per il sito
+          title: Vai ai requisiti per il sito
           external: true
         - url: "#"
-          title: Scopri i requisiti per i servizi
+          title: Vai ai requisiti per i servizi
           external: true
 
 orientarsiContent:
-  title: Orientare un’esperienza digitale efficace
-  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali incentrate sugli utenti
+  title: Un’esperienza digitale efficace
+  subtitle: Il modello ti aiuta a creare esperienze digitali incentrate sugli utenti e contribuisce alla trasformazione digitale della PA
   cards:
-    - title: Strumenti pronti all'uso
-      subtitle: "<p>L’ideazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca.&nbsp; Il modello di sito e i flussi di servizi digitali per i Comuni permettono di rispondere ai bisogni dei cittadini in modo rapido e a basso costo, sfruttando procedure e funzionalità validate dalla ricerca.</p>
+    - title: Risorse pronte all'uso
+      subtitle: "<p>La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Il modello di sito e i flussi di servizi digitali per i Comuni permettono di rispondere ai bisogni dei cittadini in modo rapido e a basso costo, sfruttando procedure e funzionalità validate dalla ricerca.</p>
       <p>Le risorse disponibili sono pronte all’uso e guidano su tutti gli aspetti della realizzazione, dallo sviluppo alla migrazione dei contenuti</p>"
       iconImage: "/assets/images/modelli/comuni-2022-full.png"
       iconAlt: ""
       links:
         - url: "#sito"
-          title: Scopri il modello di sito istituzionale
+          title: Guarda il modello di sito 
           anchor: true
         - url: "#servizi"
-          title: Scopri i flussi di servizi per i cittadini
+          title: Scopri i flussi di servizi digitali
           anchor: true
-    - title: Per il futuro della PA
-      subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.  </p>
-      <p>L’uso del modello permette di aderire più facilmente alle Linee guida nazionali e alle migliori pratiche, andando oltre, anticipando l’adozione delle indicazioni EU basate sugli <a href="#" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
+    - title: Il futuro della PA
+      subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.</p>
+      <p>L’uso del modello permette di aderire più facilmente alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni EU basate sul <a href="#" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
@@ -89,18 +87,18 @@ orientarsiContent:
       buttonExternal: true
 
 coreContent:
-  title: Il modello di sito
-  subtitle: Il principale punto di contatto tra la Pubblica Amministrazione e i cittadini
+  title: Il modello di sito comunale
+  subtitle: Il principale punto di contatto tra la PA e i cittadini
   icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVE
-  text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti, chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per trovare con facilità le informazioni di cui hanno bisogno. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche, fornendo allo stesso tempo ai cittadini un’esperienza coerente tra le varie amministrazioni.</p>"
+  text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti, chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per trovare con facilità le informazioni di cui hanno bisogno. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’esperienza coerente tra le varie amministrazioni.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='#' target="_blank">Titolo di capitolo e se fosse lungo</a>
-        - <a href='#' target="_blank">Titolo di capitolo</a>
+        - <a href='#' target="_blank">Scopri come usare le risorse</a>
+        - <a href='#' target="_blank">Raggiungi la conformità al modello</a>
   superAccordion:
-    title: STRUMENTI
+    title: RISORSE
     accordions:
       - title: Architettura e contenuti
         text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dai developers per la realizzazione delle strutture di front-end backend, e dai designers per l’organizzazione dei contenuti sulle pagine del sito.</p>"
