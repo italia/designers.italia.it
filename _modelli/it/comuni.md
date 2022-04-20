@@ -3,7 +3,7 @@ title: Il sito e i servizi digitali dei Comuni italiani
 subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini
 lang: it
 layout: modello
-description: "Il sito e i servizi digitali dei Comuni italiani. Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini"
+description: "Il modello di sito e di servizi digitali per i Comuni italiani. Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini"
 image: '/assets/images/modelli/comuni-2022-full.png'
 iconImage: '/assets/images/modelli/comuni-2022.png'
 backgroundColor: "#439af1"
@@ -28,7 +28,7 @@ header:
 ctaContent:
   title: Adottare il modello è semplice con i fondi del PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
-  buttonTitle: Vai su PA digitale 2026
+  buttonTitle: Vai a PA digitale 2026
   buttonUrl: https://padigitale2026.gov.it
   buttonExternal: true
   cards:
@@ -103,17 +103,17 @@ coreContent:
     title: RISORSE
     accordions:
       - title: Architettura e contenuti
-        text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dagli sviluppatori per la realizzazione delle strutture di <i>front-end</i> e <i>back-end</i>, e dai designers per l’organizzazione dei contenuti sulle pagine del sito.</p>"
+        text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dagli sviluppatori per la realizzazione delle strutture di <em>front-end</em> e <em>back-end</em>, e dai designers per l’organizzazione dei contenuti sulle pagine del sito.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
           - title: L'architettura dell'informazione del modello Comuni
             icon: "/assets/icons/pencil.svg"
-            description: Indicazioni su content type (tipologie di contenuti), sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune
+            description: Indicazioni su <em>content type</em> (tipologie di contenuti), sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/pencil.svg"
             description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale 
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Modello di analisi dei contenuti
                 link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
@@ -122,21 +122,21 @@ coreContent:
               - description: Modello di liberatoria privacy per immagini e video
                 link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
         footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
           - icon: "/assets/icons/info-grey.svg"
-            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
+            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
       - title: Template HTML per il sito
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
-          - title: Titolo risorsa principale
+          - title: Anteprime dei template HTML sito
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
+            link: <a href='https://bootstrap-italia-next-development.vercel.app/docs/esempi/comuni/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
-              - description: Titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
-              - description: Altro titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
+              - description: Sorgenti dei template HTML sito 
+                link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai ai sorgenti</a>
           - title: Altra risorsa principale
             icon: "/assets/icons/pencil.svg"
             description: Descrizione altra risorsa principale
