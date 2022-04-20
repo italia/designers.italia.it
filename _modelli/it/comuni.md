@@ -81,7 +81,7 @@ orientarsiContent:
           anchor: true
     - title: Il futuro della PA
       subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.</p>
-      <p>L’uso del modello permette di aderire più facilmente alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni EU basate sul <a href="#" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
+      <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni EU basate sul <a href="https://op.europa.eu/en/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1/language-en" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
@@ -97,24 +97,28 @@ coreContent:
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='#' target="_blank">Scopri come usare le risorse</a>
-        - <a href='#' target="_blank">Raggiungi la conformità al modello</a>
+        - <a href='#' target="_blank">Come usare le risorse</a>
+        - <a href='#' target="_blank">La conformità al modello</a>
   superAccordion:
     title: RISORSE
     accordions:
       - title: Architettura e contenuti
-        text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dagli sviluppatori per la realizzazione delle strutture di <i>front-end</i> e <i>back-end</i>, e dai progettisti per l’organizzazione dei contenuti sulle pagine del sito.</p>"
+        text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dagli sviluppatori per la realizzazione delle strutture di <i>front-end</i> e <i>back-end</i>, e dai designers per l’organizzazione dei contenuti sulle pagine del sito.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
-          - title: L'architettura dell'informazione del modello comuni
+          - title: L'architettura dell'informazione del modello Comuni
             icon: "/assets/icons/pencil.svg"
-            description: Indicazioni su content type (tipologie di contenuti), sistemi di navigazione e tassonomie per tutte le aree del sito di un comune
+            description: Indicazioni su content type (tipologie di contenuti), sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune
+            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Guida alla migrazione dei contenuti
+            icon: "/assets/icons/pencil.svg"
+            description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale 
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
-              - description: Titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
-              - description: Altro titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
+              - description: Modello di analisi dei contenuti
+                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+              - description: Guida al linguaggio della PA
+                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
           - title: Altra risorsa principale
             icon: "/assets/icons/pencil.svg"
             description: Descrizione altra risorsa principale
@@ -122,8 +126,6 @@ coreContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-          - icon: "/assets/icons/info-grey.svg"
-            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
       - title: Template HTML per il sito
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
