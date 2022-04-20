@@ -133,14 +133,14 @@ coreContent:
           - title: Anteprime dei template HTML sito
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
-            link: <a href='https://bootstrap-italia-next-development.vercel.app/docs/esempi/comuni/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://bootstrap-italia-next-development.vercel.app/docs/esempi/comuni/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
             otherResources:
               - description: Sorgenti dei template HTML sito 
                 link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai ai sorgenti</a>
-          - title: Altra risorsa principale
+          - title: Sorgenti dei template HTML sito istituzionale 
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione altra risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
+            link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -150,21 +150,21 @@ coreContent:
         text: "<p>Permettono di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html sulle più comuni piattaforme di gestione contenuti.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
-          - title: Titolo risorsa principale
+          - title: Tema Wordpress sito istituzionale 
             disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            description: Il tema del sito comunale per Wordpress
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
+                link: <a href='#' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
               - description: Altro titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
-          - title: Altra risorsa principale
+                link: <a href='#' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
+          - title: Tema Drupal sito istituzionale 
             disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione altra risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            description: Il tema del sito comunale per Drupal
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
