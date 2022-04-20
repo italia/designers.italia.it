@@ -116,16 +116,14 @@ coreContent:
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Modello di analisi dei contenuti
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+                link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
               - description: Guida al linguaggio della PA
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
-          - title: Altra risorsa principale
-            icon: "/assets/icons/pencil.svg"
-            description: Descrizione altra risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                link: <a href='https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+              - description: Modello di liberatoria privacy per immagini e video
+                link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
         footer:
-          - icon: "/assets/icons/external-link-grey.svg"
-            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+          - icon: "/assets/icons/info-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: Template HTML per il sito
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
