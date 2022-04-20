@@ -93,7 +93,7 @@ coreContent:
   subtitle: Il principale punto di contatto tra la PA e i cittadini
   icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVE
-  text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti: chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per <strong>trovare con facilità le informazioni di cui hanno bisogno</strong>. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini <strong>un’esperienza coerente tra le varie amministrazioni<strong>.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
+  text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti: chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per <strong>trovare con facilità le informazioni di cui hanno bisogno</strong>. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’esperienza coerente tra le varie amministrazioni.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
