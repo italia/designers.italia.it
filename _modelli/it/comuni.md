@@ -3,7 +3,7 @@ title: Il sito e i servizi digitali dei Comuni italiani
 subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini
 lang: it
 layout: modello
-description: "Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini"
+description: "Il sito e i servizi digitali dei Comuni italiani. Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini"
 image: '/assets/images/modelli/comuni-2022-full.png'
 iconImage: '/assets/images/modelli/comuni-2022.png'
 backgroundColor: "#439af1"
@@ -20,12 +20,14 @@ redirect_from:
 
 header:
   links:
-    - <a href="#sito" class="u-color-white">Modello di sito istituzionale</a>
-    - <a href="#servizi" class="u-color-whitet">Flussi di servizi digitali</a>
+    - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
+    - <a href="#servizi" class="u-color-whitet">I flussi di servizi digitali</a>
+    - <a href="#servizi" class="u-color-whitet">La documentazione del modello</a>
+    - <a href="#servizi" class="u-color-whitet">PA digitale 2026</a>
 
 ctaContent:
-  title: Adottare il modello è più semplice con il PNRR 
-  subtitle: Scopri il bando di finanziamento per l’aggiornamento dei siti web comunali e la creazione di servizi digitali per il cittadino
+  title: Adottare il modello è semplice con i fondi del PNRR
+  subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
   buttonTitle: Vai su PA digitale 2026
   buttonUrl: https://padigitale2026.gov.it
   buttonExternal: true
@@ -62,8 +64,8 @@ ctaContent:
           external: true
 
 orientarsiContent:
-  title: Un’esperienza digitale efficace
-  subtitle: Il modello ti aiuta a creare esperienze digitali incentrate sugli utenti e contribuisce alla trasformazione digitale della PA
+  title: Realizza un’esperienza digitale efficace
+  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali incentrate sugli utenti e contribuisce alla trasformazione digitale della PA
   cards:
     - title: Risorse pronte all'uso
       subtitle: "<p>La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Il modello di sito e i flussi di servizi digitali per i Comuni permettono di rispondere ai bisogni dei cittadini in modo rapido e a basso costo, sfruttando procedure e funzionalità validate dalla ricerca.</p>
