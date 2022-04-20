@@ -173,7 +173,7 @@ serviziContent:
   occhiello: A COSA SERVONO
   text: "<p>Lo scopo dei nuovi flussi di interfaccia è di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
   <p>Per migliorare l’usabilità ed assicurare la soddisfazione degli utenti, i flussi di interfaccia sono stati creati in conformità con l’eGovernment benchmark e le linee guida al design della PA.</p>
-  <p>Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati come rappresentanti delle principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
+  <p>Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per <strong>rappresentare le principali interazioni del cittadino con il Comune</strong> e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
