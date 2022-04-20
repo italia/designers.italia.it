@@ -93,7 +93,7 @@ coreContent:
   subtitle: Il principale punto di contatto tra la PA e i cittadini
   icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVE
-  text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti, chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per trovare con facilità le informazioni di cui hanno bisogno. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’esperienza coerente tra le varie amministrazioni.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
+  text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti: chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per <strong>trovare con facilità le informazioni di cui hanno bisogno</strong>. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini <strong>un’esperienza coerente tra le varie amministrazioni<strong>.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
@@ -103,7 +103,7 @@ coreContent:
     title: RISORSE
     accordions:
       - title: Architettura e contenuti
-        text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dagli sviluppatori per la realizzazione delle strutture di <em>front-end</em> e <em>back-end</em>, e dai designers per l’organizzazione dei contenuti sulle pagine del sito.</p>"
+        text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dai developer per la realizzazione delle strutture di <em>front-end</em> e <em>back-end</em>, e dai designer per l’organizzazione dei contenuti sulle pagine del sito.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
           - title: L'architettura dell'informazione del modello Comuni
@@ -155,11 +155,6 @@ coreContent:
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Wordpress
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-            otherResources:
-              - description: Titoletto di risorsa figlia
-                link: <a href='#' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
-              - description: Altro titoletto di risorsa figlia
-                link: <a href='#' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
           - title: Tema Drupal sito istituzionale 
             disabled: true
             icon: "/assets/icons/pencil.svg"
@@ -177,13 +172,13 @@ serviziContent:
   icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVONO
   text: "<p>Lo scopo dei nuovi flussi di interfaccia è di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
-  <p>Per migliorare l’usabilità ed assicurare la soddisfazione degli utenti, i flussi di interfaccia sono stati creati in conformità con l’e-government benchmark e le Linee guida al design della PA.</p>
-  <p>Le risorse comprendono  i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati come rappresentati delle principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
+  <p>Per migliorare l’usabilità ed assicurare la soddisfazione degli utenti, i flussi di interfaccia sono stati creati in conformità con l’eGovernment benchmark e le linee guida al design della PA.</p>
+  <p>Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati come rappresentanti delle principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='#' target="_blank" >Titolo di capitolo e se fosse lungo</a>
-        - <a href='#' target="_blank" >Titolo di capitolo</a>
+        - <a href='#' target="_blank" >Come usare le risorse</a>
+        - <a href='#' target="_blank" >Come usare le risorse</a>
   cardsTitle: "SERVIZI"
   cards:
     - title: "Vantaggi economici"
@@ -318,7 +313,7 @@ serviziContent:
           url: "#"
           external: true
     - title: "Come progettare modelli di servizio"
-      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà e, se il servizio non rientra negli archetipi proposti, abbiamo predisposto <strong>per i designer coinvolti nel progetto</strong> una risorsa per integrare con facilità flussi personalizzati"
+      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà; se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per integrare con facilità flussi di servizio personalizzati."
       designerType: true
       iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
@@ -337,13 +332,13 @@ serviziContent:
     title: STRUMENTI
     accordions:
       - title: Template HTML per i servizi
-        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del servizio, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developer per la creazione del <em>fron-tend</em> del servizio, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
-          - title: Titolo risorsa principale
+          - title: I template HTML per i servizi digitali 
             disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione risorsa principale
+            description: I template HTML dedicati ai flussi di servizi digitali per il cittadino 
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
