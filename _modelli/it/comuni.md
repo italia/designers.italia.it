@@ -100,7 +100,7 @@ coreContent:
         - <a href='#' target="_blank">Come usare le risorse</a>
         - <a href='#' target="_blank">La conformità al modello</a>
   cta:
-    text: "Partecipa alla discussione sulle risorse con la community di Designers Italia"
+    text: "Partecipa alla discussione sulla community di Designers Italia"
     buttonTitle: "Scopri i canali della community"
     buttonUrl: "#community"
     buttonExternal: false
@@ -176,7 +176,7 @@ serviziContent:
   subtitle: I principali servizi comunali a portata di clic
   icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVONO
-  text: "<p>Lo scopo dei nuovi flussi di interfaccia è di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
+  text: "<p>Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
   <p>Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per <strong>rappresentare le principali interazioni del cittadino con il Comune</strong> e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
   rightColumnItems:
     - title: DOCUMENTAZIONE
