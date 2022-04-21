@@ -128,10 +128,10 @@ coreContent:
               - description: Modello di liberatoria privacy per immagini e video
                 link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
         footer:
-          - icon: "/assets/icons/external-link-grey.svg"
-            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: Template HTML per il sito
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del <em>front-end</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
