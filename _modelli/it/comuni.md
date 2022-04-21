@@ -309,9 +309,11 @@ serviziContent:
         - title: Naviga mobile
           url: "#"
           external: true
+          disabled: true
         - title: Naviga desktop
           url: "#"
           external: true
+          disabled: true
     - title: "Come progettare modelli di servizio"
       subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà; se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per integrare con facilità flussi di servizio personalizzati."
       designerType: true
