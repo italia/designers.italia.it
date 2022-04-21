@@ -147,8 +147,6 @@ coreContent:
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
             link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
-          - icon: 
-            text: 
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: Temi per Wordpress e Drupal
@@ -166,8 +164,6 @@ coreContent:
             description: Il tema del sito comunale per Drupal
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
-          - icon: 
-            text: 
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
 
@@ -345,8 +341,8 @@ serviziContent:
             description: I template HTML dedicati alla costruzione dei flussi di servizi digitali per il cittadino
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
-          - icon: 
-            text: 
+          - icon:
+            text:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
 
