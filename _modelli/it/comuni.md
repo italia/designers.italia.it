@@ -74,7 +74,7 @@ orientarsiContent:
       iconAlt: ""
       links:
         - url: "#sito"
-          title: Guarda il modello di sito 
+          title: Guarda il modello di sito
           anchor: true
         - url: "#servizi"
           title: Scopri i flussi di servizi digitali
@@ -99,6 +99,11 @@ coreContent:
       items:
         - <a href='#' target="_blank">Come usare le risorse</a>
         - <a href='#' target="_blank">La conformità al modello</a>
+  cta:
+    - text: "Confrontati sulle risorse con la <em>community</em> di Designers Italia"
+      buttonTitle: Vai ai canali disponibili
+      buttonUrl: "#community"
+      buttonExternal: false
   superAccordion:
     title: RISORSE
     accordions:
@@ -112,7 +117,7 @@ coreContent:
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/pencil.svg"
-            description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale 
+            description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Modello di analisi dei contenuti
@@ -135,9 +140,9 @@ coreContent:
             description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
             link: <a href='https://bootstrap-italia-next-development.vercel.app/docs/esempi/comuni/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
             otherResources:
-              - description: Sorgenti dei template HTML sito 
+              - description: Sorgenti dei template HTML sito
                 link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai ai sorgenti</a>
-          - title: Sorgenti dei template HTML sito istituzionale 
+          - title: Sorgenti dei template HTML sito istituzionale
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
             link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
@@ -150,12 +155,12 @@ coreContent:
         text: "<p>Permettono di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html sulle più comuni piattaforme di gestione contenuti.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
-          - title: Tema Wordpress sito istituzionale 
+          - title: Tema Wordpress sito istituzionale
             disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Wordpress
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-          - title: Tema Drupal sito istituzionale 
+          - title: Tema Drupal sito istituzionale
             disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Drupal
@@ -335,10 +340,10 @@ serviziContent:
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developer per la creazione del <em>fron-tend</em> del servizio, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
-          - title: I template HTML per i servizi digitali 
+          - title: I template HTML per i servizi digitali
             disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: I template HTML dedicati ai flussi di servizi digitali per il cittadino 
+            description: I template HTML dedicati ai flussi di servizi digitali per il cittadino
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
