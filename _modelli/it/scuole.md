@@ -3,7 +3,7 @@ title: Il sito delle scuole italiane
 subtitle: "Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per la comunità scolastica"
 lang: it
 layout: modello
-description: "Il modello di sito per le scuole italiane. Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per la comunità scolastica"
+description: "Il modello di sito per le scuole italiane. Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per la comunità scolastica"
 image: '/assets/images/modelli/scuola-2022-full.png'
 iconImage: '/assets/images/modelli/scuola-2022.png'
 backgroundColor: "#439af1"
@@ -25,7 +25,7 @@ header:
 
 ctaContent:
   title: Adottare il modello è semplice con i fondi del PNRR 
-  subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso dedicato a migliorare l'esperienza utente del cittadino nei siti web scolastici
+  subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza utente del cittadino nei siti web scolastici
   buttonTitle: Vai a PA digitale 2026
   buttonUrl: https://padigitale2026.gov.it
   buttonExternal: true
@@ -41,7 +41,7 @@ ctaContent:
           external: true
     - prefix: "2"
       title: "Avvia i lavori "
-      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro 6 mesi dalla pubblicazione del decreto di finanziamento."
+      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro in tempi previsti dall'avviso (6 o 9 mesi dalla pubblicazione del decreto di finanziamento)."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
@@ -50,7 +50,7 @@ ctaContent:
           external: true
     - prefix: "3"
       title: "Migliora l’esperienza digitale della comunità scolastica"
-      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro 9 mesi dall’avvio dei lavori e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
+      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro i termini previsti dall'avviso (9 o 12 mesi dall’avvio dei lavori) e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
@@ -60,7 +60,7 @@ ctaContent:
 
 orientarsiContent:
   title: Realizza un’esperienza digitale efficace
-  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali incentrate sugli utenti e contribuisce alla trasformazione digitale della tua PA
+  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle pubblica amministrazione
   cards:
     - title: Strumenti pronti all'uso
       subtitle: "<p>L’ideazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Il modello di sito per le scuole permette di rispondere alle esigenze di studenti, genitori e tutta la comunità scolastica in modo rapido e a basso costo, sfruttando procedure e funzionalità già validate con gli utenti.</p>
@@ -69,11 +69,11 @@ orientarsiContent:
       iconAlt: ""
       links:
         - url: "#sito"
-          title: Scopri il modello di sito istituzionale
+          title: Scopri il modello di sito scolastico
           anchor: true
     - title: Per il futuro della PA
       subtitle: '<p>Il modello di sito scolastico è stato creato a seguito di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.</p>
-      <p>L’uso del modello permette di aderire più facilmente alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando l’adozione di indicazioni di livello europeo.</p>'
+      <p>L’uso del modello permette di aderire più facilmente alle linee guida nazionali di design e alle migliori pratiche di progettazione digitale, anticipando l’adozione di indicazioni di livello europeo.</p>'
       iconImage: "/assets/images/modelli/scuola-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
@@ -86,24 +86,24 @@ coreContent:
   icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVE
   text: "<p>Il modello permette di creare siti web scolastici che rispondono ai bisogni degli utenti, con interfacce e strutture informative semplici da usare e navigare. Lo scopo è di fornire a studenti, genitori e tutta la comunità scolastica un solido punto di riferimento per trovare con facilità tutte le informazioni di cui hanno bisogno.</p>
-  <p>L’adozione del modello di sito permette di aderire alle Linee guida di design per i siti internet e i servizi digitali della PA, fornendo un’esperienza coerente tra le istituzioni e facilitandone l’uso per i cittadini che si spostano tra varie scuole.</p>
+  <p>L’adozione del modello di sito permette di aderire alle linee guida di design per i siti internet e i servizi digitali della PA, fornendo un’esperienza coerente tra le istituzioni e facilitandone l’uso per i cittadini che si spostano tra varie scuole.</p>
   <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='#' target="_blank">Titolo di capitolo e se fosse lungo</a>
-        - <a href='#' target="_blank">Titolo di capitolo</a>
+        - <a href='#' target="_blank">Come usare le risorse</a>
+        - <a href='#' target="_blank">La conformità al modello</a>
   superAccordion:
-    title: STRUMENTI
+    title: RISORSE
     accordions:
       - title: Architettura e contenuti del sito
-        text: "<p>L’architettura dell’informazione è la struttura del sito scolastico. È usata dai developer per la realizzazione delle strutture di front-end backend, e dai designer per l’organizzazione dei contenuti sulle pagine del sito.</p>"
+        text: "<p>Costruisci il tuo sito web scolastico a partire dal documento di architettura dell’informazione. L'architettura dell'informazione rappresenta la struttura del sito e viene usata dai developer per la realizzazione delle strutture di <em>front-end</em> a <em>back-end</em>; è inoltre fondamentale per i designer per organizzare i vari livelli di contenuto nelle pagine del sito.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
-          - title: Titolo risorsa principale
+          - title: L'architettura dell'informazione del modello scuole
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            description: Indicazioni su tipologie di contenuti (<em>content type</em>), sistemi di navigazione e tassonomie per tutte le aree del sito di una scuola
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Titoletto di risorsa figlia
                 link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>

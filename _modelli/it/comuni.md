@@ -43,7 +43,7 @@ ctaContent:
           external: true
     - prefix: "2"
       title: "Avvia i lavori "
-      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro i termini previsti dall'avviso (6 o 12 mesi dalla pubblicazione del decreto di finanziamento)."
+      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro i termini previsti dall'avviso (6 o 9 mesi dalla pubblicazione del decreto di finanziamento)."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
@@ -114,7 +114,7 @@ coreContent:
         resources:
           - title: L'architettura dell'informazione del modello Comuni
             icon: "/assets/icons/pencil.svg"
-            description: Indicazioni su <em>content type</em> (tipologie di contenuti), sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune
+            description: Indicazioni su tipologie di contenuti (<em>content type</em>), sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/pencil.svg"
