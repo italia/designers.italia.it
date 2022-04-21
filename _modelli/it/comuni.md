@@ -147,10 +147,10 @@ coreContent:
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
             link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
+          - icon: 
+            text: 
           - icon: "/assets/icons/external-link-grey.svg"
-            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-          - icon: "/assets/icons/info-grey.svg"
-            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: Temi per Wordpress e Drupal
         text: "<p>I temi pronti all'uso realizzati per Wordpress e Drupal ti permettono di abbreviare la fase di realizzazione del sito istituzionale, implementando direttamente l’architettura dell'informazione e il codice html sulle più comuni piattaforme di gestione contenuti.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
@@ -166,10 +166,10 @@ coreContent:
             description: Il tema del sito comunale per Drupal
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
+          - icon: 
+            text: 
           - icon: "/assets/icons/external-link-grey.svg"
-            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-          - icon: "/assets/icons/info-grey.svg"
-            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
 
 serviziContent:
   title: I nuovi flussi di servizi digitali per il cittadino
@@ -345,10 +345,10 @@ serviziContent:
             description: I template HTML dedicati alla costruzione dei flussi di servizi digitali per il cittadino
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
+          - icon: 
+            text: 
           - icon: "/assets/icons/external-link-grey.svg"
-            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-          - icon: "/assets/icons/info-grey.svg"
-            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
 
 tags:
   - web-development
