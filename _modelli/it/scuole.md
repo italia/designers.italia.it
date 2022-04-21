@@ -104,21 +104,23 @@ coreContent:
             icon: "/assets/icons/pencil.svg"
             description: Indicazioni su tipologie di contenuti (<em>content type</em>), sistemi di navigazione e tassonomie per tutte le aree del sito di una scuola
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-            otherResources:
-              - description: Titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
-              - description: Altro titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
-          - title: Altra risorsa principale
+          - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione altra risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito scolastico
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            otherResources:
+              - description: Modello di analisi dei contenuti
+                link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+              - description: Guida al linguaggio della PA
+                link: <a href='https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+              - description: Modello di liberatoria privacy per immagini e video
+                link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-      - title: Template HTML del sito
+      - title: Template HTML del sito scolastico
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
@@ -126,11 +128,6 @@ coreContent:
             icon: "/assets/icons/pencil.svg"
             description: Descrizione risorsa principale
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-            otherResources:
-              - description: Titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
-              - description: Altro titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
           - title: Altra risorsa principale
             icon: "/assets/icons/pencil.svg"
             description: Descrizione altra risorsa principale
@@ -140,19 +137,14 @@ coreContent:
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-      - title: Temi per Wordpress e Drupal
-        text: "<p>Permettono di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html sulle più comuni piattaforme di gestione contenuti.</p>"
+      - title: Tema per Wordpress 
+        text: "<p>Permette di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html su una fra le più comuni piattaforme di gestione contenuti.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
-          - title: Titolo risorsa principale
+          - title: Tema scuole per Wordpress
             icon: "/assets/icons/pencil.svg"
             description: Descrizione risorsa principale
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-            otherResources:
-              - description: Titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
-              - description: Altro titoletto di risorsa figlia
-                link: <a href='https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit#gid=668088991' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai all'esempio</a>
           - title: Altra risorsa principale
             icon: "/assets/icons/pencil.svg"
             description: Descrizione altra risorsa principale
