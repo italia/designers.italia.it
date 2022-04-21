@@ -100,8 +100,8 @@ coreContent:
         - <a href='#' target="_blank">Come usare le risorse</a>
         - <a href='#' target="_blank">La conformità al modello</a>
   cta:
-    text: "Confrontati sulle risorse con la community di Designers Italia"
-    buttonTitle: "Scopri i canali disponibili"
+    text: "Partecipa alla discussione sulle risorse con la community di Designers Italia"
+    buttonTitle: "Scopri i canali della community"
     buttonUrl: "#community"
     buttonExternal: false
     buttonAnchor: true
@@ -133,14 +133,16 @@ coreContent:
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
       - title: Template HTML per il sito
-        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del <em>fron-tend</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del <em>front-end</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: Anteprime dei template HTML sito
+            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
             link: <a href='https://bootstrap-italia-next-development.vercel.app/docs/esempi/comuni/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
           - title: Sorgenti dei template HTML sito istituzionale
+            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
             link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
