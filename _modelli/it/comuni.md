@@ -100,10 +100,11 @@ coreContent:
         - <a href='#' target="_blank">Come usare le risorse</a>
         - <a href='#' target="_blank">La conformità al modello</a>
   cta:
-    - text: "Confrontati sulle risorse con la <em>community</em> di Designers Italia"
-      buttonTitle: Vai ai canali disponibili
-      buttonUrl: "#community"
-      buttonExternal: false
+    text: "Confrontati sulle risorse con la community di Designers Italia"
+    buttonTitle: "Scopri i canali disponibili"
+    buttonUrl: "#community"
+    buttonExternal: false
+    buttonAnchor: true
   superAccordion:
     title: RISORSE
     accordions:
