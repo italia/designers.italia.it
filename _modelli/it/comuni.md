@@ -65,11 +65,11 @@ ctaContent:
 
 orientarsiContent:
   title: Realizza un’esperienza digitale efficace
-  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali coerenti, centrate sugli utenti e contribuisce alla trasformazione digitale delle pubbliche amministrazioni
+  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle pubbliche amministrazioni
   cards:
     - title: Risorse pronte all'uso
       subtitle: "<p>La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Il modello di sito e i flussi di servizi digitali per i Comuni permettono di rispondere ai bisogni dei cittadini in modo rapido e a basso costo, sfruttando flussi e funzionalità validate dalla ricerca.</p>
-      <p>Le risorse disponibili sono pronte all’uso e guidano su tutti gli aspetti della realizzazione, dallo sviluppo alla migrazione dei contenuti</p>"
+      <p>Le risorse disponibili sono pronte all’uso e guidano su tutti gli aspetti della realizzazione, dallo sviluppo alla migrazione dei contenuti.</p>"
       iconImage: "/assets/images/modelli/comuni-2022-full.png"
       iconAlt: ""
       links:
@@ -109,7 +109,7 @@ coreContent:
     title: RISORSE
     accordions:
       - title: Architettura e contenuti
-        text: "<p>L’architettura dell’informazione è la struttura del sito di un Comune. È usata dai developer per la realizzazione delle strutture di <em>front-end</em> e <em>back-end</em>, e dai designer per l’organizzazione dei contenuti sulle pagine del sito.</p>"
+        text: "<p>Costruisci la struttura del sito comunale a partire dal documento di architettura dell’informazione. L'architettura dell'informazione del modello Comuni è la struttura usata dai developer per realizzare <em>front-end</em> e <em>back-end</em> del sito; è inoltre fondamentale per i designer per organizzare i vari livelli di contenuto sulle pagine del sito.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
           - title: L'architettura dell'informazione del modello Comuni
@@ -133,7 +133,7 @@ coreContent:
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
       - title: Template HTML per il sito
-        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del <em>fron-tend</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: Anteprime dei template HTML sito
@@ -150,7 +150,7 @@ coreContent:
           - icon: "/assets/icons/info-grey.svg"
             text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
       - title: Temi per Wordpress e Drupal
-        text: "<p>Permettono di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html sulle più comuni piattaforme di gestione contenuti.</p>"
+        text: "<p>I temi pronti all'uso realizzati per Wordpress e Drupal ti permettono di abbreviare la fase di realizzazione del sito istituzionale, implementando direttamente l’architettura dell'informazione e il codice html sulle più comuni piattaforme di gestione contenuti.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
           - title: Tema Wordpress sito istituzionale
@@ -334,13 +334,13 @@ serviziContent:
     title: STRUMENTI
     accordions:
       - title: Template HTML per i servizi
-        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developer per la creazione del <em>fron-tend</em> del servizio, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>fron-tend</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: I template HTML per i servizi digitali
             disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: I template HTML dedicati ai flussi di servizi digitali per il cittadino
+            description: I template HTML dedicati alla costruzione dei flussi di servizi digitali per il cittadino
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
