@@ -1,9 +1,9 @@
 ---
 title: Il sito e i servizi digitali dei Comuni italiani
-subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini
+subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i cittadini
 lang: it
 layout: modello
-description: "Il modello di sito e di servizi digitali per i Comuni italiani. Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per i cittadini"
+description: "Il modello di sito e di servizi digitali per i Comuni italiani. Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i cittadini"
 image: '/assets/images/modelli/comuni-2022-full.png'
 iconImage: '/assets/images/modelli/comuni-2022.png'
 backgroundColor: "#439af1"
@@ -43,7 +43,7 @@ ctaContent:
           external: true
     - prefix: "2"
       title: "Avvia i lavori "
-      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro 6 mesi dalla pubblicazione del decreto di finanziamento."
+      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro i termini previsti dall'avviso (6 o 12 mesi dalla pubblicazione del decreto di finanziamento)."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
@@ -52,7 +52,7 @@ ctaContent:
           external: true
     - prefix: "3"
       title: "Migliora l’esperienza digitale dei cittadini"
-      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro 9 mesi dall’avvio dei lavori e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
+      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro i termini previsti dall'avviso (9 o 12 mesi dall’avvio dei lavori) e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
@@ -65,10 +65,10 @@ ctaContent:
 
 orientarsiContent:
   title: Realizza un’esperienza digitale efficace
-  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali incentrate sugli utenti e contribuisce alla trasformazione digitale della PA
+  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali coerenti, centrate sugli utenti e contribuisce alla trasformazione digitale delle pubbliche amministrazioni
   cards:
     - title: Risorse pronte all'uso
-      subtitle: "<p>La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Il modello di sito e i flussi di servizi digitali per i Comuni permettono di rispondere ai bisogni dei cittadini in modo rapido e a basso costo, sfruttando procedure e funzionalità validate dalla ricerca.</p>
+      subtitle: "<p>La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Il modello di sito e i flussi di servizi digitali per i Comuni permettono di rispondere ai bisogni dei cittadini in modo rapido e a basso costo, sfruttando flussi e funzionalità validate dalla ricerca.</p>
       <p>Le risorse disponibili sono pronte all’uso e guidano su tutti gli aspetti della realizzazione, dallo sviluppo alla migrazione dei contenuti</p>"
       iconImage: "/assets/images/modelli/comuni-2022-full.png"
       iconAlt: ""
@@ -81,7 +81,7 @@ orientarsiContent:
           anchor: true
     - title: Il futuro della PA
       subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.</p>
-      <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni EU basate sul <a href="https://op.europa.eu/en/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1/language-en" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
+      <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate sul <a href="https://op.europa.eu/en/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1/language-en" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
@@ -90,7 +90,7 @@ orientarsiContent:
 
 coreContent:
   title: Il modello di sito comunale
-  subtitle: Il principale punto di contatto tra la PA e i cittadini
+  subtitle: Il punto di contatto tra le amministrazioni locali e i cittadini
   icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVE
   text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti: chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per <strong>trovare con facilità le informazioni di cui hanno bisogno</strong>. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’esperienza coerente tra le varie amministrazioni.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
@@ -140,9 +140,6 @@ coreContent:
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
             link: <a href='https://bootstrap-italia-next-development.vercel.app/docs/esempi/comuni/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
-            otherResources:
-              - description: Sorgenti dei template HTML sito
-                link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai ai sorgenti</a>
           - title: Sorgenti dei template HTML sito istituzionale
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
@@ -178,13 +175,12 @@ serviziContent:
   icon: '/assets/icons/kit/modelli.svg'
   occhiello: A COSA SERVONO
   text: "<p>Lo scopo dei nuovi flussi di interfaccia è di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
-  <p>Per migliorare l’usabilità ed assicurare la soddisfazione degli utenti, i flussi di interfaccia sono stati creati in conformità con l’eGovernment benchmark e le linee guida al design della PA.</p>
   <p>Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per <strong>rappresentare le principali interazioni del cittadino con il Comune</strong> e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
         - <a href='#' target="_blank" >Come usare le risorse</a>
-        - <a href='#' target="_blank" >Come usare le risorse</a>
+        - <a href='#' target="_blank" >La conformità ai servizi</a>
   cardsTitle: "SERVIZI"
   cards:
     - title: "Vantaggi economici"
