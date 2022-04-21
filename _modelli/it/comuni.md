@@ -297,6 +297,7 @@ serviziContent:
       iconImage:
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
+      linksMidFiDisabled: true
       linksMidFi:
         - title: Naviga mobile
           url: "#"
@@ -305,15 +306,14 @@ serviziContent:
           url: "#"
           external: true
       linksHiFiTitle: Esempio agevolazioni scolastiche
+      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
           url: "#"
           external: true
-          disabled: true
         - title: Naviga desktop
           url: "#"
           external: true
-          disabled: true
     - title: "Come progettare modelli di servizio"
       subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà; se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per integrare con facilità flussi di servizio personalizzati."
       designerType: true
@@ -325,11 +325,11 @@ serviziContent:
           url: "#"
           external: true
       linksMidFiTitle: Libreria componenti per designer
+      linksMidFiDisabled: true
       linksMidFi:
         - title: Vai alla risorsa
           url: "#"
           external: true
-          disabled: true
   superAccordion:
     title: STRUMENTI
     accordions:
