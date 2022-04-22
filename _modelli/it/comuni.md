@@ -219,7 +219,7 @@ serviziContent:
       linksMidFiTitle: Modello di servizio
       linksMidFi:
         - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=780%3A69120&node-id=1428%3A157894&viewport=501%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1428%3A157894"
+          url: "#"
           external: true
         - title: Naviga desktop
           url: "#"
@@ -227,7 +227,7 @@ serviziContent:
       linksHiFiTitle: Esempio iscrizione scuola infanzia
       linksHiFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=780%3A69120&node-id=1428%3A157894&viewport=501%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1428%3A157894"
           external: true
         - title: Naviga desktop
           url: "#"
@@ -246,7 +246,7 @@ serviziContent:
       linksMidFiTitle: Modello di servizio
       linksMidFi:
         - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=827%3A119463&node-id=1000%3A116693&viewport=501%2C48%2C0.15&scaling=scale-down&starting-point-node-id=1000%3A116693"
+          url: "#"
           external: true
         - title: Naviga desktop
           url: "#"
@@ -254,7 +254,7 @@ serviziContent:
       linksHiFiTitle: Esempio richiesta ZTL
       linksHiFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=827%3A119463&node-id=1000%3A116693&viewport=501%2C48%2C0.15&scaling=scale-down&starting-point-node-id=1000%3A116693"
           external: true
         - title: Naviga desktop
           url: "#"
