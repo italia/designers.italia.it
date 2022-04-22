@@ -22,8 +22,8 @@ header:
   links:
     - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
     - <a href="#servizi" class="u-color-whitet">I flussi di servizi digitali</a>
-    - <a href="#servizi" class="u-color-whitet">La documentazione del modello</a>
-    - <a href="#servizi" class="u-color-whitet">PA digitale 2026</a>
+    - <a href="https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/stabile/index.html" class="u-color-whitet">La documentazione del modello</a>
+    - <a href="#" class="u-color-whitet">PA digitale 2026</a>
 
 ctaContent:
   title: Adottare il modello è semplice con i fondi del PNRR
@@ -42,12 +42,12 @@ ctaContent:
           title: Scopri i finanziamenti
           external: true
     - prefix: "2"
-      title: "Avvia i lavori "
+      title: "Avvia i lavori"
       subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro i termini previsti dall'avviso (6 o 9 mesi dalla pubblicazione del decreto di finanziamento)."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
-        - url: "#"
+        - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa"
           title: Scopri i passi da seguire
           external: true
     - prefix: "3"
@@ -85,7 +85,7 @@ orientarsiContent:
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
-      buttonUrl: https://docs.italia.it
+      buttonUrl: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/stabile/index.html
       buttonExternal: true
 
 coreContent:
