@@ -20,8 +20,8 @@ redirect_from:
 header:
   links:
     - <a href="#cta" class="u-color-white">Il modello di sito</a>
-    - <a href="#orientarsi" class="u-color-white">La documentazione del modello</a>
-    - <a href="#sito" class="u-color-white">PA digitale 2026</a>
+    - <a href="https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html" target="_blank" class="u-color-white">La documentazione del modello</a>
+    - <a href="#sito" target="_blank" class="u-color-white">PA digitale 2026</a>
 
 ctaContent:
   title: Adottare il modello è semplice con i fondi del PNRR 
@@ -41,7 +41,7 @@ ctaContent:
           external: true
     - prefix: "2"
       title: "Avvia i lavori "
-      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro in tempi previsti dall'avviso (6 o 9 mesi dalla pubblicazione del decreto di finanziamento)."
+      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro in tempi previsti dall'avviso (massimo 6 mesi dalla pubblicazione del decreto di finanziamento)."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
@@ -50,7 +50,7 @@ ctaContent:
           external: true
     - prefix: "3"
       title: "Migliora l’esperienza digitale della comunità scolastica"
-      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro i termini previsti dall'avviso (9 o 12 mesi dall’avvio dei lavori) e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
+      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro i termini previsti dall'avviso (massimo 9 mesi dall’avvio dei lavori) e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
@@ -77,7 +77,7 @@ orientarsiContent:
       iconImage: "/assets/images/modelli/scuola-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
-      buttonUrl: https://docs.italia.it
+      buttonUrl: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html
       buttonExternal: true
 
 coreContent:
@@ -124,37 +124,32 @@ coreContent:
         text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
-          - title: Titolo risorsa principale
+          - title: Anteprime dei template HTML sito
+            disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-          - title: Altra risorsa principale
+            description: Gli esempi delle pagine del sito scolastico basati sui template HTML Bootstrap
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Sorgenti dei template HTML sito scolastico
+            disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione altra risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di una scuola
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-          - icon: "/assets/icons/info-grey.svg"
-            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
       - title: Tema per Wordpress 
         text: "<p>Permette di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html su una fra le più comuni piattaforme di gestione contenuti.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
           - title: Tema scuole per Wordpress
+            disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: Descrizione risorsa principale
+            description: Il tema del sito scolastico per Wordpress
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-          - title: Altra risorsa principale
-            icon: "/assets/icons/pencil.svg"
-            description: Descrizione altra risorsa principale
-            link: <a href='https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-          - icon: "/assets/icons/info-grey.svg"
-            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
-
+         
 tags:
   - user-stories
   - stakeholder
