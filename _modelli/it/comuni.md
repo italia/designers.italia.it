@@ -133,7 +133,7 @@ coreContent:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: Template HTML per il sito
-        text: "<p>I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, servono ai developers per velocizzare la creazione del <em>front-end</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        text: "<p>I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, servono ai developer per velocizzare la creazione del <em>front-end</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: Anteprime dei template HTML sito
@@ -334,7 +334,7 @@ serviziContent:
     title: STRUMENTI
     accordions:
       - title: Template HTML per i servizi
-        text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>fron-tend</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
+        text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>front-end</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: I template HTML per i servizi digitali
