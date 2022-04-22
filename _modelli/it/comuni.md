@@ -186,9 +186,9 @@ serviziContent:
       services:
         - name: Agevolazioni scolastiche
         - name: Agevolazioni tributarie
+        - name: Assegno di maternità
         - name: Bonus economici
         - name: Domanda di contributi
-        - name: Assegno di maternità
       iconImage:
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
@@ -207,7 +207,7 @@ serviziContent:
         - title: Naviga desktop
           url: "#"
           external: true
-    - title: "Domande con graduatoria"
+    - title: "Iscrizione a graduatoria"
       subtitle: "Il flusso di interazione per le richieste di  prestazioni accessibili tramite una graduatoria redatta dall'amministrazione, come:"
       services:
         - name: Assegnazione alloggio
@@ -219,12 +219,12 @@ serviziContent:
       linksMidFiTitle: Modello di servizio
       linksMidFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=780%3A69120&node-id=1428%3A157894&viewport=501%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1428%3A157894"
           external: true
         - title: Naviga desktop
           url: "#"
           external: true
-      linksHiFiTitle: Esempio agevolazioni scolastiche
+      linksHiFiTitle: Esempio iscrizione scuola infanzia
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -246,12 +246,12 @@ serviziContent:
       linksMidFiTitle: Modello di servizio
       linksMidFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=827%3A119463&node-id=1000%3A116693&viewport=501%2C48%2C0.15&scaling=scale-down&starting-point-node-id=1000%3A116693"
           external: true
         - title: Naviga desktop
           url: "#"
           external: true
-      linksHiFiTitle: Esempio agevolazioni scolastiche
+      linksHiFiTitle: Esempio richiesta ZTL
       linksHiFi:
         - title: Naviga mobile
           url: "#"
