@@ -22,8 +22,8 @@ header:
   links:
     - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
     - <a href="#servizi" class="u-color-whitet">I flussi di servizi digitali</a>
-    - <a href="https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/stabile/index.html" class="u-color-whitet">La documentazione del modello</a>
-    - <a href="#" class="u-color-whitet">PA digitale 2026</a>
+    - <a href="https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/stabile/index.html" target="_blank" class="u-color-whitet">La documentazione del modello </a>
+    - <a href="#" target="_blank" class="u-color-whitet">PA digitale 2026</a>
 
 ctaContent:
   title: Adottare il modello è semplice con i fondi del PNRR
@@ -109,7 +109,7 @@ coreContent:
     title: RISORSE
     accordions:
       - title: Architettura e contenuti
-        text: "<p>Costruisci la struttura del sito comunale a partire dal documento di architettura dell’informazione. L'architettura dell'informazione del modello Comuni è la struttura usata dai developer per realizzare <em>front-end</em> e <em>back-end</em> del sito; è inoltre fondamentale per i designer per organizzare i vari livelli di contenuto sulle pagine del sito.</p>"
+        text: "<p>Costruisci la struttura del sito comunale a partire dal documento di architettura dell’informazione. L'architettura dell'informazione del modello Comuni è la struttura usata dai developer per realizzare <em>front-end</em> e <em>back-end</em> del sito; è inoltre fondamentale per i designer per organizzare i vari livelli di contenuto sulle pagine del sito.</p> <p>Le risorse dedicate alla migrazione ti aiutano a organizzare il processo di migrazione dei contenuti del sito alla nuova architettura.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
           - title: L'architettura dell'informazione del modello Comuni
@@ -133,7 +133,7 @@ coreContent:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: Template HTML per il sito
-        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del <em>front-end</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        text: "<p>I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, servono ai developers per velocizzare la creazione del <em>front-end</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: Anteprime dei template HTML sito
