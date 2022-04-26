@@ -91,8 +91,8 @@ coreContent:
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='#' target="_blank">Come usare le risorse</a>
-        - <a href='#' target="_blank">La conformità al modello</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/risorse.html' target="_blank">Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/conformita-modello-scuola.html' target="_blank">La conformità al modello</a>
   superAccordion:
     title: RISORSE
     accordions:
