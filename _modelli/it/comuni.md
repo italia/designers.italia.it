@@ -22,7 +22,7 @@ header:
   links:
     - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
     - <a href="#servizi" class="u-color-whitet">I flussi di servizi digitali</a>
-    - <a href="https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/stabile/index.html" target="_blank" class="u-color-whitet">La documentazione del modello </a>
+    - <a href="https://docs.italia.it/italia/designers-italia/design-comuni-docs" target="_blank" class="u-color-whitet">La documentazione del modello </a>
     - <a href="#" target="_blank" class="u-color-whitet">PA digitale 2026</a>
 
 ctaContent:
@@ -56,10 +56,10 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
-        - url: "#"
+        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html"
           title: Vai ai requisiti per il sito
           external: true
-        - url: "#"
+        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html"
           title: Vai ai requisiti per i servizi
           external: true
 
@@ -85,7 +85,7 @@ orientarsiContent:
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
-      buttonUrl: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/stabile/index.html
+      buttonUrl: https://docs.italia.it/italia/designers-italia/design-comuni-docs/
       buttonExternal: true
 
 coreContent:
@@ -97,8 +97,8 @@ coreContent:
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='#' target="_blank">Come usare le risorse</a>
-        - <a href='#' target="_blank">La conformità al modello</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
   cta:
     text: "Partecipa alla discussione sulla community di Designers Italia"
     buttonTitle: "Scopri i canali della community"
@@ -109,17 +109,17 @@ coreContent:
     title: RISORSE
     accordions:
       - title: Architettura e contenuti
-        text: "<p>Costruisci la struttura del sito comunale a partire dal documento di architettura dell’informazione. L'architettura dell'informazione del modello Comuni è la struttura usata dai developer per realizzare <em>front-end</em> e <em>back-end</em> del sito; è inoltre fondamentale per i designer per organizzare i vari livelli di contenuto sulle pagine del sito.</p> <p>Le risorse dedicate alla migrazione ti aiutano a organizzare il processo di migrazione dei contenuti del sito alla nuova architettura.</p>"
+        text: "<p>Costruisci la struttura del sito comunale a partire dal documento di architettura dell’informazione. L'architettura dell'informazione del modello Comuni serve a realizzare <em>front-end</em> e <em>back-end</em> del sito e per organizzare i vari livelli di contenuto sulle pagine.</p> <p>Le risorse dedicate alla migrazione ti aiutano a organizzare il processo di migrazione dei contenuti del sito alla nuova architettura.</p>"
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
           - title: L'architettura dell'informazione del modello Comuni
             icon: "/assets/icons/pencil.svg"
             description: Indicazioni su tipologie di contenuti (<em>content type</em>), sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.google.com/spreadsheets/d/1D4KbaA__xO9x_iBm08KvZASjrrFLYLKX/edit?usp=sharing&ouid=109069620194773449819&rtpof=true&sd=true' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/pencil.svg"
             description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Modello di analisi dei contenuti
                 link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
@@ -133,19 +133,19 @@ coreContent:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: Template HTML per il sito
-        text: "<p>I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, servono ai developer per velocizzare la creazione del <em>front-end</em> del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        text: "<p>I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, servono a velocizzare la creazione del <em>front-end</em> del sito e sono utili come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: Anteprime dei template HTML sito
             disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
-            link: <a href='https://bootstrap-italia-next-development.vercel.app/docs/esempi/comuni/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
           - title: Sorgenti dei template HTML sito istituzionale
             disabled: true
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
-            link: <a href='https://github.com/italia/bootstrap-italia-next/tree/development/docs/esempi/comuni' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
@@ -199,7 +199,7 @@ serviziContent:
         - title: Naviga desktop
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A213863&node-id=1104%3A218809&viewport=241%2C48%2C0.16&scaling=scale-down&starting-point-node-id=1104%3A217652"
           external: true
-      linksHiFiTitle: Esempio: domanda assegno di maternità
+      linksHiFiTitle: Esempio domanda assegno di maternità
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -224,10 +224,10 @@ serviziContent:
         - title: Naviga desktop
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A149701&node-id=1104%3A155514&viewport=501%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1101%3A165095"
           external: true
-      linksHiFiTitle: Esempio: iscrizione alla scuola dell'infanzia
+      linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
       linksHiFi:
         - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=780%3A69120&node-id=1428%3A157894&viewport=501%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1428%3A157894"
+          url: "#"
           external: true
         - title: Naviga desktop
           url: "#"
@@ -251,10 +251,10 @@ serviziContent:
         - title: Naviga desktop
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A179516&node-id=1104%3A184388&viewport=501%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1104%3A228190&fuid=1077558514369167099"
           external: true
-      linksHiFiTitle: Esempio: richiesta permesso ZTL
+      linksHiFiTitle: Esempio richiesta permesso ZTL
       linksHiFi:
         - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=827%3A119463&node-id=1000%3A116693&viewport=501%2C48%2C0.15&scaling=scale-down&starting-point-node-id=1000%3A116693"
+          url: "#"
           external: true
         - title: Naviga desktop
           url: "#"
@@ -278,7 +278,7 @@ serviziContent:
         - title: Naviga desktop
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A230464&node-id=1104%3A236271&viewport=241%2C48%2C0.36&scaling=scale-down&starting-point-node-id=1104%3A243693"
           external: true
-      linksHiFiTitle: Esempio: pagamento IMU
+      linksHiFiTitle: Esempio pagamento IMU
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -305,7 +305,7 @@ serviziContent:
         - title: Naviga desktop
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A245054&node-id=1104%3A250070&viewport=241%2C48%2C0.18&scaling=scale-down"
           external: true
-      linksHiFiTitle: Esempio: richiesta mensa scolastica
+      linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
