@@ -26,7 +26,7 @@ header:
     - <a href="#cta" class="u-color-white">PA digitale 2026</a>
 
 ctaContent:
-  title: Adottare il modello è semplice con il PNRR
+  title: Adottare il modello è semplice con il&nbsp;PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
   buttonTitle: Vai a PA digitale 2026
   buttonUrl: https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk829QAA
@@ -41,15 +41,15 @@ ctaContent:
         - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk829QAA"
           title: Scopri i finanziamenti
           external: true
+        - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa"
+          title: Scopri i passi da seguire
+          external: true
     - prefix: "2"
       title: "Avvia i lavori"
       subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare, in base alla dimensione del comune, entro 6 o 9 mesi dalla pubblicazione del decreto di finanziamento."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
-        - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa"
-          title: Scopri i passi da seguire
-          external: true
     - prefix: "3"
       title: "Migliora l’esperienza digitale dei cittadini"
       subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati, in base alla dimensione del comune, entro 9 o 12 mesi dall’avvio dei lavori e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
@@ -81,7 +81,7 @@ orientarsiContent:
           anchor: true
     - title: Il futuro della PA
       subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.</p>
-      <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate su <a href="https://op.europa.eu/en/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1/language-en" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
+      <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate su <a href="https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
