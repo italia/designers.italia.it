@@ -20,11 +20,11 @@ redirect_from:
 header:
   links:
     - <a href="#sito" class="u-color-white">Il modello di sito</a>
-    - <a href="https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html" target="_blank" class="u-color-white">La documentazione del modello</a>
-    - <a href="#cta" target="_blank" class="u-color-white">PA digitale 2026</a>
+    - <a href="#orientarsi" class="u-color-white">La documentazione del modello</a>
+    - <a href="#cta" class="u-color-white">PA digitale 2026</a>
 
 ctaContent:
-  title: Adottare il modello è semplice con i fondi del PNRR
+  title: Adottare il modello è semplice con il PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza utente del cittadino nei siti web scolastici
   buttonTitle: Vai a PA digitale 2026
   buttonUrl: https://padigitale2026.gov.it
@@ -36,7 +36,7 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-A.svg"
       iconAlt: ""
       links:
-        - url: "#"
+        - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk82wQAA"
           title: Scopri i finanziamenti
           external: true
     - prefix: "2"
@@ -45,7 +45,7 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
-        - url: "#"
+        - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa/"
           title: Scopri i passi da seguire
           external: true
     - prefix: "3"
@@ -54,7 +54,7 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
-        - url: "#"
+        - url: "https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/conformita-modello-scuola.html"
           title: Scopri i requisiti per il sito
           external: true
 
@@ -77,7 +77,7 @@ orientarsiContent:
       iconImage: "/assets/images/modelli/scuola-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
-      buttonUrl: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html
+      buttonUrl: https://docs.italia.it/italia/designers-italia/design-scuole-docs/
       buttonExternal: true
 
 coreContent:
@@ -103,11 +103,11 @@ coreContent:
           - title: L'architettura dell'informazione del modello scuole
             icon: "/assets/icons/pencil.svg"
             description: Indicazioni su tipologie di contenuti (<em>content type</em>), sistemi di navigazione e tassonomie per tutte le aree del sito di una scuola
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit#gid=782511705' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/pencil.svg"
             description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito scolastico
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/risorse/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Modello di analisi dei contenuti
                 link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
