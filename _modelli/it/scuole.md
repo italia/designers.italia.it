@@ -21,42 +21,6 @@ header:
   links:
     - <a href="#cta" class="u-color-white">Il modello di sito</a>
     - <a href="https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html" target="_blank" class="u-color-white">La documentazione del modello</a>
-    - <a href="#sito" target="_blank" class="u-color-white">PA digitale 2026</a>
-
-ctaContent:
-  title: Adottare il modello è semplice con i fondi del PNRR 
-  subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza utente del cittadino nei siti web scolastici
-  buttonTitle: Vai a PA digitale 2026
-  buttonUrl: https://padigitale2026.gov.it
-  buttonExternal: true
-  cards:
-    - prefix: "1"
-      title: "Richiedi un finanziamento"
-      subtitle: "Tutte le scuole italiane di 1° e 2° grado possono accedere ai fondi PNRR per l'aggiornamento del sito web. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026."
-      iconImage: "/assets/images/modelli/pad2026-A.svg"
-      iconAlt: ""
-      links:
-        - url: "#"
-          title: Scopri i finanziamenti
-          external: true
-    - prefix: "2"
-      title: "Avvia i lavori "
-      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro in tempi previsti dall'avviso (massimo 6 mesi dalla pubblicazione del decreto di finanziamento)."
-      iconImage: "/assets/images/modelli/pad2026-B.svg"
-      iconAlt: ""
-      links:
-        - url: "#"
-          title: Scopri i passi da seguire
-          external: true
-    - prefix: "3"
-      title: "Migliora l’esperienza digitale della comunità scolastica"
-      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro i termini previsti dall'avviso (massimo 9 mesi dall’avvio dei lavori) e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
-      iconImage: "/assets/images/modelli/pad2026-C.svg"
-      iconAlt: ""
-      links:
-        - url: "#"
-          title: Scopri i requisiti per il sito
-          external: true
 
 orientarsiContent:
   title: Realizza un’esperienza digitale efficace
@@ -137,7 +101,7 @@ coreContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-      - title: Tema per Wordpress 
+      - title: Tema per Wordpress
         text: "<p>Permette di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html su una fra le più comuni piattaforme di gestione contenuti.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
@@ -149,7 +113,7 @@ coreContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-         
+
 tags:
   - user-stories
   - stakeholder
