@@ -19,12 +19,12 @@ redirect_from:
 
 header:
   links:
-    - <a href="#cta" class="u-color-white">Il modello di sito</a>
+    - <a href="#sito" class="u-color-white">Il modello di sito</a>
     - <a href="https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html" target="_blank" class="u-color-white">La documentazione del modello</a>
-    - <a href="#sito" target="_blank" class="u-color-white">PA digitale 2026</a>
+    - <a href="#cta" target="_blank" class="u-color-white">PA digitale 2026</a>
 
 ctaContent:
-  title: Adottare il modello è semplice con i fondi del PNRR 
+  title: Adottare il modello è semplice con i fondi del PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza utente del cittadino nei siti web scolastici
   buttonTitle: Vai a PA digitale 2026
   buttonUrl: https://padigitale2026.gov.it
@@ -137,7 +137,7 @@ coreContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-      - title: Tema per Wordpress 
+      - title: Tema per Wordpress
         text: "<p>Permette di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html su una fra le più comuni piattaforme di gestione contenuti.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
@@ -149,7 +149,7 @@ coreContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-         
+
 tags:
   - user-stories
   - stakeholder
