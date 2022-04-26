@@ -196,9 +196,6 @@ serviziContent:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A91595&node-id=1005%3A95646&viewport=501%2C48%2C0.26&scaling=scale-down&starting-point-node-id=1067%3A117214"
           external: true
-        - title: Naviga desktop
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A213863&node-id=1104%3A218809&viewport=241%2C48%2C0.16&scaling=scale-down&starting-point-node-id=1104%3A217652"
-          external: true
       linksHiFiTitle: Esempio domanda assegno di maternità
       linksHiFiDisabled: true
       linksHiFi:
@@ -221,9 +218,6 @@ serviziContent:
       linksMidFi:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A101174&node-id=1005%3A111701&viewport=501%2C48%2C0.23&scaling=scale-down&starting-point-node-id=1067%3A115961"
-          external: true
-        - title: Naviga desktop
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A149701&node-id=1104%3A155514&viewport=501%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1101%3A165095"
           external: true
       linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
       linksHiFiDisabled: true
@@ -250,9 +244,6 @@ serviziContent:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1033%3A492653&node-id=1033%3A505782&viewport=501%2C48%2C0.18&scaling=scale-down&starting-point-node-id=1067%3A115451"
           external: true
-        - title: Naviga desktop
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A179516&node-id=1104%3A184388&viewport=501%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1104%3A228190&fuid=1077558514369167099"
-          external: true
       linksHiFiTitle: Esempio richiesta permesso ZTL
       linksHiFiDisabled: true
       linksHiFi:
@@ -278,9 +269,6 @@ serviziContent:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A137467&node-id=1067%3A147528&viewport=501%2C48%2C0.11&scaling=scale-down&starting-point-node-id=1067%3A137469"
           external: true
-        - title: Naviga desktop
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A230464&node-id=1104%3A236271&viewport=241%2C48%2C0.36&scaling=scale-down&starting-point-node-id=1104%3A243693"
-          external: true
       linksHiFiTitle: Esempio pagamento IMU
       linksHiFiDisabled: true
       linksHiFi:
@@ -304,9 +292,6 @@ serviziContent:
       linksMidFi:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A121340&node-id=1067%3A130935&viewport=501%2C48%2C0.13&scaling=scale-down&starting-point-node-id=1067%3A121342"
-          external: true
-        - title: Naviga desktop
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A245054&node-id=1104%3A250070&viewport=241%2C48%2C0.18&scaling=scale-down"
           external: true
       linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFiDisabled: true
