@@ -26,7 +26,7 @@ header:
     - <a href="#" target="_blank" class="u-color-whitet">PA digitale 2026</a>
 
 ctaContent:
-  title: Adottare il modello è semplice con i fondi del PNRR
+  title: Adottare il modello è semplice con il PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
   buttonTitle: Vai a PA digitale 2026
   buttonUrl: https://padigitale2026.gov.it
@@ -43,7 +43,7 @@ ctaContent:
           external: true
     - prefix: "2"
       title: "Avvia i lavori"
-      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro i termini previsti dall'avviso (6 o 9 mesi dalla pubblicazione del decreto di finanziamento)."
+      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare, in base alla dimensione del comune, entro 6 o 9 mesi dalla pubblicazione del decreto di finanziamento."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
@@ -52,7 +52,7 @@ ctaContent:
           external: true
     - prefix: "3"
       title: "Migliora l’esperienza digitale dei cittadini"
-      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro i termini previsti dall'avviso (9 o 12 mesi dall’avvio dei lavori) e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
+      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati, in base alla dimensione del comune, entro 9 o 12 mesi dall’avvio dei lavori e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
@@ -194,12 +194,12 @@ serviziContent:
       linksMidFiTitle: Modello di servizio
       linksMidFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A91595&node-id=1005%3A95646&viewport=501%2C48%2C0.26&scaling=scale-down&starting-point-node-id=1067%3A117214"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A213863&node-id=1104%3A218809&viewport=241%2C48%2C0.16&scaling=scale-down&starting-point-node-id=1104%3A217652"
           external: true
-      linksHiFiTitle: Esempio agevolazioni scolastiche
+      linksHiFiTitle: Esempio: domanda assegno di maternità
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -219,12 +219,12 @@ serviziContent:
       linksMidFiTitle: Modello di servizio
       linksMidFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A101174&node-id=1005%3A111701&viewport=501%2C48%2C0.23&scaling=scale-down&starting-point-node-id=1067%3A115961"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A149701&node-id=1104%3A155514&viewport=501%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1101%3A165095"
           external: true
-      linksHiFiTitle: Esempio iscrizione scuola infanzia
+      linksHiFiTitle: Esempio: iscrizione alla scuola dell'infanzia
       linksHiFi:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=780%3A69120&node-id=1428%3A157894&viewport=501%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1428%3A157894"
@@ -246,12 +246,12 @@ serviziContent:
       linksMidFiTitle: Modello di servizio
       linksMidFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1033%3A492653&node-id=1033%3A505782&viewport=501%2C48%2C0.18&scaling=scale-down&starting-point-node-id=1067%3A115451"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A179516&node-id=1104%3A184388&viewport=501%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1104%3A228190&fuid=1077558514369167099"
           external: true
-      linksHiFiTitle: Esempio richiesta ZTL
+      linksHiFiTitle: Esempio: richiesta permesso ZTL
       linksHiFi:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=827%3A119463&node-id=1000%3A116693&viewport=501%2C48%2C0.15&scaling=scale-down&starting-point-node-id=1000%3A116693"
@@ -273,12 +273,12 @@ serviziContent:
       linksMidFiTitle: Modello di servizio
       linksMidFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A137467&node-id=1067%3A147528&viewport=501%2C48%2C0.11&scaling=scale-down&starting-point-node-id=1067%3A137469"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A230464&node-id=1104%3A236271&viewport=241%2C48%2C0.36&scaling=scale-down&starting-point-node-id=1104%3A243693"
           external: true
-      linksHiFiTitle: Esempio agevolazioni scolastiche
+      linksHiFiTitle: Esempio: pagamento IMU
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -300,12 +300,12 @@ serviziContent:
       linksMidFiDisabled: true
       linksMidFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A121340&node-id=1067%3A130935&viewport=501%2C48%2C0.13&scaling=scale-down&starting-point-node-id=1067%3A121342"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A245054&node-id=1104%3A250070&viewport=241%2C48%2C0.18&scaling=scale-down"
           external: true
-      linksHiFiTitle: Esempio agevolazioni scolastiche
+      linksHiFiTitle: Esempio: richiesta mensa scolastica
       linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
@@ -322,7 +322,7 @@ serviziContent:
       linksHiFiTitle: Tutti i prototipi disponibili
       linksHiFi:
         - title: Naviga
-          url: "#"
+          url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
           external: true
       linksMidFiTitle: Libreria componenti per designer
       linksMidFiDisabled: true
