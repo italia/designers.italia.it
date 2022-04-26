@@ -21,15 +21,15 @@ redirect_from:
 header:
   links:
     - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
-    - <a href="#servizi" class="u-color-whitet">I flussi di servizi digitali</a>
-    - <a href="https://docs.italia.it/italia/designers-italia/design-comuni-docs" target="_blank" class="u-color-whitet">La documentazione del modello </a>
-    - <a href="#" target="_blank" class="u-color-whitet">PA digitale 2026</a>
+    - <a href="#servizi" class="u-color-white">I flussi di servizi digitali</a>
+    - <a href="#orientarsi" class="u-color-white">La documentazione del modello </a>
+    - <a href="#cta" class="u-color-white">PA digitale 2026</a>
 
 ctaContent:
   title: Adottare il modello è semplice con il PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
   buttonTitle: Vai a PA digitale 2026
-  buttonUrl: https://padigitale2026.gov.it
+  buttonUrl: https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk829QAA
   buttonExternal: true
   cards:
     - prefix: "1"
@@ -38,7 +38,7 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-A.svg"
       iconAlt: ""
       links:
-        - url: "#"
+        - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk829QAA"
           title: Scopri i finanziamenti
           external: true
     - prefix: "2"
@@ -81,7 +81,7 @@ orientarsiContent:
           anchor: true
     - title: Il futuro della PA
       subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.</p>
-      <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate sul <a href="https://op.europa.eu/en/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1/language-en" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
+      <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate su <a href="https://op.europa.eu/en/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1/language-en" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
@@ -200,6 +200,7 @@ serviziContent:
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A213863&node-id=1104%3A218809&viewport=241%2C48%2C0.16&scaling=scale-down&starting-point-node-id=1104%3A217652"
           external: true
       linksHiFiTitle: Esempio domanda assegno di maternità
+      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -225,6 +226,7 @@ serviziContent:
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A149701&node-id=1104%3A155514&viewport=501%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1101%3A165095"
           external: true
       linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
+      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -252,6 +254,7 @@ serviziContent:
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A179516&node-id=1104%3A184388&viewport=501%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1104%3A228190&fuid=1077558514369167099"
           external: true
       linksHiFiTitle: Esempio richiesta permesso ZTL
+      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -279,6 +282,7 @@ serviziContent:
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1104%3A230464&node-id=1104%3A236271&viewport=241%2C48%2C0.36&scaling=scale-down&starting-point-node-id=1104%3A243693"
           external: true
       linksHiFiTitle: Esempio pagamento IMU
+      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
           url: "#"
@@ -297,7 +301,6 @@ serviziContent:
       iconImage:
       iconAlt: ""
       linksMidFiTitle: Modello di servizio
-      linksMidFiDisabled: true
       linksMidFi:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A121340&node-id=1067%3A130935&viewport=501%2C48%2C0.13&scaling=scale-down&starting-point-node-id=1067%3A121342"
