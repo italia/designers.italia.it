@@ -19,7 +19,7 @@ redirect_from:
 
 header:
   links:
-    - <a href="#cta" class="u-color-white">Il modello di sito</a>
+    - <a href="#sito" class="u-color-white">Il modello di sito</a>
     - <a href="https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/master/index.html" target="_blank" class="u-color-white">La documentazione del modello</a>
 
 orientarsiContent:
