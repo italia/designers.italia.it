@@ -39,15 +39,15 @@ ctaContent:
         - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk82wQAA"
           title: Scopri i finanziamenti
           external: true
+        - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa/"
+          title: Scopri i passi da seguire
+          external: true
     - prefix: "2"
       title: "Avvia i lavori "
       subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro in tempi previsti dall'avviso (massimo 6 mesi dalla pubblicazione del decreto di finanziamento)."
       iconImage: "/assets/images/modelli/pad2026-B.svg"
       iconAlt: ""
       links:
-        - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa/"
-          title: Scopri i passi da seguire
-          external: true
     - prefix: "3"
       title: "Migliora l’esperienza digitale della comunità scolastica"
       subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro i termini previsti dall'avviso (massimo 9 mesi dall’avvio dei lavori) e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
