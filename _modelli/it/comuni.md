@@ -177,8 +177,8 @@ serviziContent:
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='#' target="_blank" >Come usare le risorse</a>
-        - <a href='#' target="_blank" >La conformità ai servizi</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' target="_blank" >La conformità ai servizi</a>
   cardsTitle: "SERVIZI"
   cards:
     - title: "Vantaggi economici"
