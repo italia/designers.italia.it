@@ -1285,18 +1285,25 @@ html {
     padding: 0px 30px;
     cursor: pointer;
     &:last-of-type {
-      padding-right:16px;
+      //padding-right:16px;
     }
   }
   .active {
     border-bottom: 8px solid white;
     border-top: 8px solid #06c;
   }
+  .active-modelli {
+    border-bottom: 8px solid #26394d;
+    border-top: 8px solid #65dcdf;
+  }
   .all {
     border-right: 1px solid white;
     padding-right: 40px;
     margin-right: 10px;
     padding-left: 16px;
+  }
+  .all-modelli {
+    border-right: 1px solid #212121;
   }
 }
 
@@ -1330,13 +1337,13 @@ html {
   .super-breadcrumb li.active {
     margin: 0px 16px;
   }
-  .layout-process .super-breadcrumb li:not(.active):not(.all) {
+    .layout-modellinew .super-breadcrumb li:not(.active):not(.all), .layout-process .super-breadcrumb li:not(.active):not(.all) {
     display:block;
   }
 }
 
 @media screen and (max-width:480px) {
-  .layout-process .super-breadcrumb li:not(.active):not(.all) {
+  .layout-modellinew .super-breadcrumb li:not(.active):not(.all), .layout-process .super-breadcrumb li:not(.active):not(.all) {
     width:100%;
   }
 }

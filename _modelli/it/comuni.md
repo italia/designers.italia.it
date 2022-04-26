@@ -1,73 +1,342 @@
 ---
-title: Il modello per i siti comunali
+title: Il sito e i servizi digitali dei Comuni italiani
+subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i cittadini
 lang: it
-layout: download
-description: "Design del sito di un comune: architettura dell’informazione e template HTML"
-backgroundImage : '/assets/images/kits/backgrounds/16_Comuni_Background.png'
-thumbnail: '/assets/images/modelli/comune-2021.png'
-backgroundColor: '#439af1'
+layout: modello
+description: "Il modello di sito e di servizi digitali per i Comuni italiani. Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i cittadini"
+image: '/assets/images/modelli/comuni-2022-full.png'
+iconImage: '/assets/images/modelli/comuni-2022.png'
+backgroundColor: "#439af1"
 nodate: true
 kitcategory: comuni
-tags:
-  - web-development
-  - information-architecture
+order: 0
+disabled: false
 redirect_from:
   - /kit/comuni/
   - /kit/comuni
+  - /progetti/siti-comuni/
+  - /siti-comuni/
+  - /progetti/siti-web-comuni/
 
-documents:
-- Design comuni
+header:
+  links:
+    - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
+    - <a href="#servizi" class="u-color-white">I flussi di servizi digitali</a>
+    - <a href="#orientarsi" class="u-color-white">La documentazione del modello </a>
+    - <a href="#cta" class="u-color-white">PA digitale 2026</a>
 
-download_file :
-- file : 'https://docs.google.com/spreadsheets/d/1bE0Ns0LsU0VDvCBT1WXZ5_yIxJU5AbUYcu_F8yMfpHQ/edit'
-  caption : Architettura dell’informazione
-- file : 'https://italia.github.io/design-comuni-prototipi/it/kit.html#template-html'
-  caption : Template HTML basati su Bootstrap Italia
-- file : 'https://italia.github.io/design-comuni-prototipi/it/esempi.html'
-  caption : Alcuni esempi di realizzazione
+ctaContent:
+  title: Adottare il modello è semplice con il&nbsp;PNRR
+  subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
+  buttonTitle: Vai a PA digitale 2026
+  buttonUrl: https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk829QAA
+  buttonExternal: true
+  cards:
+    - prefix: "1"
+      title: "Richiedi un finanziamento"
+      subtitle: "Puoi scegliere di aggiornare soltanto il sito o di creare anche una serie di servizi digitali. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026."
+      iconImage: "/assets/images/modelli/pad2026-A.svg"
+      iconAlt: ""
+      links:
+        - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk829QAA"
+          title: Scopri i finanziamenti
+          external: true
+        - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa"
+          title: Scopri i passi da seguire
+          external: true
+    - prefix: "2"
+      title: "Avvia i lavori"
+      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare, in base alla dimensione del Comune, entro 6 o 9 mesi dalla pubblicazione del decreto di finanziamento."
+      iconImage: "/assets/images/modelli/pad2026-B.svg"
+      iconAlt: ""
+      links:
+    - prefix: "3"
+      title: "Migliora l’esperienza digitale dei cittadini"
+      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati, in base alla dimensione del Comune, entro 9 o 12 mesi dall’avvio dei lavori e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
+      iconImage: "/assets/images/modelli/pad2026-C.svg"
+      iconAlt: ""
+      links:
+        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html"
+          title: Vai ai requisiti per il sito
+          external: true
+        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html"
+          title: Vai ai requisiti per i servizi
+          external: true
 
-carousel:
-- img: '/assets/images/kits/carousel/16_Comuni_Slide_01.jpg'
-  label: Esempio di template generico
-- img: '/assets/images/kits/carousel/16_Comuni_Slide_02.jpg'
-  label: Esempio di template del comune di Cagliari
-- img: '/assets/images/kits/carousel/16_Comuni_Slide_03.jpg'
-  label: Esempio di architettura dell’informazione
+orientarsiContent:
+  title: Realizza un’esperienza digitale efficace
+  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle pubbliche amministrazioni
+  cards:
+    - title: Risorse pronte all'uso
+      subtitle: "<p>La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Il modello di sito e i flussi di servizi digitali per i Comuni permettono di rispondere ai bisogni dei cittadini in modo rapido e a basso costo, sfruttando flussi e funzionalità validate dalla ricerca.</p>
+      <p>Le risorse disponibili sono pronte all’uso e guidano su tutti gli aspetti della realizzazione, dallo sviluppo alla migrazione dei contenuti.</p>"
+      iconImage: "/assets/images/modelli/comuni-2022-full.png"
+      iconAlt: ""
+      links:
+        - url: "#sito"
+          title: Guarda il modello di sito
+          anchor: true
+        - url: "#servizi"
+          title: Scopri i flussi di servizi digitali
+          anchor: true
+    - title: Il futuro della PA
+      subtitle: '<p>Il modello di sito e i flussi di servizi digitali sono il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.</p>
+      <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate su <a href="https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
+      iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
+      iconAlt: ""
+      buttonTitle: Vai alla documentazione
+      buttonUrl: https://docs.italia.it/italia/designers-italia/design-comuni-docs/
+      buttonExternal: true
+
+coreContent:
+  title: Il modello di sito comunale
+  subtitle: Il punto di contatto tra le amministrazioni locali e i cittadini
+  icon: '/assets/icons/kit/modelli.svg'
+  occhiello: A COSA SERVE
+  text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti: chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per <strong>trovare con facilità le informazioni di cui hanno bisogno</strong>. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’esperienza coerente tra le varie amministrazioni.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
+  rightColumnItems:
+    - title: DOCUMENTAZIONE
+      items:
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
+  cta:
+    text: "Partecipa alla discussione sulla community di Designers Italia"
+    buttonTitle: "Scopri i canali della community"
+    buttonUrl: "#community"
+    buttonExternal: false
+    buttonAnchor: true
+  superAccordion:
+    title: RISORSE
+    accordions:
+      - title: Architettura e contenuti
+        text: "<p>Costruisci la struttura del sito comunale a partire dal documento di architettura dell’informazione. L'architettura dell'informazione del modello Comuni serve a realizzare <em>front-end</em> e <em>back-end</em> del sito e per organizzare i vari livelli di contenuto sulle pagine.</p> <p>Le risorse dedicate alla migrazione ti aiutano a organizzare il processo di migrazione dei contenuti del sito alla nuova architettura.</p>"
+        img: "/assets/icons/kit/kit_architettura.svg"
+        resources:
+          - title: L'architettura dell'informazione del modello Comuni
+            icon: "/assets/icons/pencil.svg"
+            description: Indicazioni su tipologie di contenuti (<em>content type</em>), sistemi di navigazione e tassonomie per tutte le aree del sito di un Comune
+            link: <a href='https://docs.google.com/spreadsheets/d/1D4KbaA__xO9x_iBm08KvZASjrrFLYLKX/edit?usp=sharing&ouid=109069620194773449819&rtpof=true&sd=true' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Guida alla migrazione dei contenuti
+            icon: "/assets/icons/pencil.svg"
+            description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            otherResources:
+              - description: Modello di analisi dei contenuti
+                link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+              - description: Guida al linguaggio della PA
+                link: <a href='https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+              - description: Modello di liberatoria privacy per immagini e video
+                link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/info-grey.svg"
+            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
+      - title: Template HTML per il sito
+        text: "<p>I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, servono a velocizzare la creazione del <em>front-end</em> del sito e sono utili come esempi di pagine e contenuti.</p>"
+        img: "/assets/icons/kit/kit_webDevelopment.svg"
+        resources:
+          - title: Anteprime dei template HTML sito
+            disabled: true
+            icon: "/assets/icons/pencil.svg"
+            description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
+          - title: Sorgenti dei template HTML sito istituzionale
+            disabled: true
+            icon: "/assets/icons/pencil.svg"
+            description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
+      - title: Temi per Wordpress e Drupal
+        text: "<p>I temi pronti all'uso realizzati per Wordpress e Drupal ti permettono di abbreviare la fase di realizzazione del sito istituzionale, implementando direttamente l’architettura dell'informazione e il codice html sulle più comuni piattaforme di gestione contenuti.</p>"
+        img: "/assets/icons/kit/kit_coprog_contenuti.svg"
+        resources:
+          - title: Tema Wordpress sito istituzionale
+            disabled: true
+            icon: "/assets/icons/pencil.svg"
+            description: Il tema del sito comunale per Wordpress
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Tema Drupal sito istituzionale
+            disabled: true
+            icon: "/assets/icons/pencil.svg"
+            description: Il tema del sito comunale per Drupal
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
+
+serviziContent:
+  title: I nuovi flussi di servizi digitali per il cittadino
+  subtitle: I principali servizi comunali a portata di clic
+  icon: '/assets/icons/kit/modelli.svg'
+  occhiello: A COSA SERVONO
+  text: "<p>Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
+  <p>Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per <strong>rappresentare le principali interazioni del cittadino con il Comune</strong> e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
+  rightColumnItems:
+    - title: DOCUMENTAZIONE
+      items:
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' target="_blank" >La conformità ai servizi</a>
+  cardsTitle: "SERVIZI"
+  cards:
+    - title: "Vantaggi economici"
+      subtitle: "Il flusso di interazione per la richiesta di un vantaggio economico vincolato dalla presenza di determinati requisiti di idoneità, come:"
+      services:
+        - name: Agevolazioni scolastiche
+        - name: Agevolazioni tributarie
+        - name: Assegno di maternità
+        - name: Bonus economici
+        - name: Domanda di contributi
+      iconImage:
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A91595&node-id=1005%3A95646&viewport=501%2C48%2C0.26&scaling=scale-down&starting-point-node-id=1067%3A117214"
+          external: true
+      linksHiFiTitle: Esempio domanda assegno di maternità
+      linksHiFiDisabled: true
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Iscrizione a graduatoria"
+      subtitle: "Il flusso di interazione per le richieste di  prestazioni accessibili tramite una graduatoria redatta dall'amministrazione, come:"
+      services:
+        - name: Assegnazione alloggio
+        - name: Iscrizione all’asilo nido
+        - name: Iscrizione alla scuola dell’infanzia
+        - name: Partecipazione ad un concorso pubblico
+      iconImage:
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A101174&node-id=1005%3A111701&viewport=501%2C48%2C0.23&scaling=scale-down&starting-point-node-id=1067%3A115961"
+          external: true
+      linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
+      linksHiFiDisabled: true
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Permessi e autorizzazioni"
+      subtitle: "Il flusso di interazione per le richiesta di  rilascio di permessi o autorizzazioni, come:"
+      services:
+        - name: Accesso agli atti
+        - name: Accesso ZTL
+        - name: Parcheggio invalidi
+        - name: Parcheggio per residenti
+        - name: Pubblicazione di matrimonio
+        - name: Occupazione suolo pubblico
+      iconImage:
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1033%3A492653&node-id=1033%3A505782&viewport=501%2C48%2C0.18&scaling=scale-down&starting-point-node-id=1067%3A115451"
+          external: true
+      linksHiFiTitle: Esempio richiesta permesso ZTL
+      linksHiFiDisabled: true
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Pagamenti dovuti"
+      subtitle: "Il flusso di interazione per adempire al pagamento di oneri, come:"
+      services:
+        - name: Canone CIMP
+        - name: Canone COSAP
+        - name: Canone idrico
+        - name: Canone lampade votive
+        - name: Contravvenzioni
+        - name: Tributi IMU
+      iconImage:
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A137467&node-id=1067%3A147528&viewport=501%2C48%2C0.11&scaling=scale-down&starting-point-node-id=1067%3A137469"
+          external: true
+      linksHiFiTitle: Esempio pagamento IMU
+      linksHiFiDisabled: true
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Servizi a pagamento"
+      subtitle: "Il flusso di interazione per la richiesta di servizi che prevedono un pagamento da parte del cittadino per l’erogazione, come:"
+      services:
+        - name: Assegno di ricchezza
+        - name: Corsi di formazione
+        - name: Mensa scolastica
+        - name: Sepoltura di un defunto
+        - name: Trasporto scolastico
+      iconImage:
+      iconAlt: ""
+      linksMidFiTitle: Modello di servizio
+      linksMidFi:
+        - title: Naviga mobile
+          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A121340&node-id=1067%3A130935&viewport=501%2C48%2C0.13&scaling=scale-down&starting-point-node-id=1067%3A121342"
+          external: true
+      linksHiFiTitle: Esempio richiesta mensa scolastica
+      linksHiFiDisabled: true
+      linksHiFi:
+        - title: Naviga mobile
+          url: "#"
+          external: true
+        - title: Naviga desktop
+          url: "#"
+          external: true
+    - title: "Come progettare modelli di servizio"
+      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà; se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per integrare con facilità flussi di servizio personalizzati."
+      designerType: true
+      iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
+      iconAlt: ""
+      linksHiFiTitle: Tutti i prototipi disponibili
+      linksHiFi:
+        - title: Naviga
+          url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
+          external: true
+      linksMidFiTitle: Libreria componenti per designer
+      linksMidFiDisabled: true
+      linksMidFi:
+        - title: Vai alla risorsa
+          url: "#"
+          external: true
+  superAccordion:
+    title: STRUMENTI
+    accordions:
+      - title: Template HTML per i servizi
+        text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>front-end</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
+        img: "/assets/icons/kit/kit_webDevelopment.svg"
+        resources:
+          - title: I template HTML per i servizi digitali
+            disabled: true
+            icon: "/assets/icons/pencil.svg"
+            description: I template HTML dedicati alla costruzione dei flussi di servizi digitali per il cittadino
+            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
+
+tags:
+  - web-development
+  - information-architecture
+  - design-models
+  - service-design
 ---
-
-{:.u-color-50}
-###### CHE COS’È
-
-{:.u-color-50 .u-margin-bottom-xxl}
-#### Questo kit è una raccolta di risorse sviluppate appositamente per realizzare il sito di un comune, con l’obiettivo finale di offrire un’esperienza d’uso efficace per il cittadino nel rispetto delle linee guida di design dei servizi della Pubblica Amministrazione.
-
-{% include simplecarousel.html  %}
-
-{:.u-color-50 .u-margin-top-xxl}
-###### COME SI UTILIZZA
-Per creare il sito di un comune utilizza il documento di architettura dell’informazione come guida per la struttura dei contenuti, il sistema di navigazione e i flussi di interazione Con i template html potrai realizzare il front-end dell’intero sito.
-
-Il kit è indipendente rispetto alle scelte tecnologiche di un comune (per esempio la scelta di un CMS), ma contemporaneamente pone delle sfide tecnologiche fondamentali per realizzare in modo efficace l’esperienza d’uso del servizio (ad esempio, funzionalità di ricerca tra i contenuti). Rappresentando uno standard, favorisce l’utilizzo di soluzioni tecnologiche condivise e la diffusione di best practice.
-
-Attraverso gli strumenti di Designers Italia e Developers Italia è possibile interagire, confrontarsi, ricevere feedback sul progetto e partecipare alla sua evoluzione.
-
-{:.u-color-50 .u-margin-top-xxl}
-
-###### A COSA SERVE
-Il kit permette ai comuni di semplificare la realizzazione del sito e organizzare le informazioni in modo efficace e senza “dover reinventare ogni volta la ruota”, riducendo tempi e costi. Esso permette all’Amministrazione concentrarsi sulla produzione di servizi digitali e contenuti di qualità (all’interno di modelli di interazione con l’utente già definiti e contenuti all’interno del kit) oltre che su test di usabilità con gli utenti per avviare processi di miglioramento continuo.
-
-L’utilizzo del kit per il design dei siti comunali, che è bene inserire all’interno dei capitolati tecnici in caso di affidamento all’esterno di attività di sviluppo web, permette di attuare le linee guida di design dei siti web della Pubblica Amministrazione.
-
-[Vai alla documentazione di progetto](https://docs.italia.it/italia/designers-italia/design-comuni-docs/)
-
-{:.u-color-50 .u-margin-top-xxl}
-###### COSA CONTIENE QUESTO KIT
-Il kit si è avvalso di un’attività di ricerca e di design con i cittadini e i funzionari comunali, e fondato su esperienze concrete già corso in diversi comuni (a partire da quello di Cagliari, primo in Italia a realizzarlo) e descritte nella [documentazione](#related-documents).
-
-Il documento di architettura dell’informazione definisce e organizza le informazioni contenute all’interno di un comune e rappresenta la guida per la realizzazione delle strutture di front-end e di backend. In particolare, contiene indicazioni su content type, sistemi di navigazione e tassonomie per tutte le aree del sito di un comune: descrizione dell’organizzazione, pubblicazione di documenti, notizie e servizi, oltre naturalmente alla home page, al motore di ricerca e all’area personale utente.
-I template HTML pronti all’uso (basati sul kit [Bootstrap Italia](https://italia.github.io/bootstrap-italia/), e conformi alle linee guida di design) permettono di costruire il front-end completo del sito di un comune (cioè senza dover realizzare nuovi template).
-
-Cosa non contiene questo kit:
-Il kit non contiene una descrizione dettagliata delle caratteristiche dei singoli servizi digitali di un comune, allo stato attuale troppo variabile per essere modellata secondo standard. Il kit definisce però una struttura standard di presentazione di un servizio (scheda servizio), definisce il flusso standard di esperienza di un servizio comunale e offre un esempio di realizzazione.
-
-Il kit non contiene i contenuti del sito di un comune, ma definisce i contenuti che devono essere realizzati. La realizzazione di un sito comunale aderente a questo modello richiede un’attività di mappatura dei contenuti esistenti, scrittura e riscrittura dei contenuti e cambiamento dei dati inseriti che può essere realizzata utilizzando metodi e strumenti previsti dal kit [Contenuti e linguaggio]({% link _kits/it/contenuti-linguaggio.md %}).
