@@ -19,10 +19,10 @@ redirect_from:
 
 header:
   links:
+    - <a href="#pa-digitale-2026" class="u-color-white">PA digitale 2026</a>
+    - <a href="#documentazione" class="u-color-white">La documentazione del modello</a>
     - <a href="#sito" class="u-color-white">Il modello di sito</a>
-    - <a href="#orientarsi" class="u-color-white">La documentazione del modello</a>
-    - <a href="#cta" class="u-color-white">PA digitale 2026</a>
-
+    
 ctaContent:
   title: Adottare il modello è semplice con il PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza utente del cittadino nei siti web scolastici
