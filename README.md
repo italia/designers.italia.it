@@ -27,3 +27,4 @@ Il sito sarà disponibile all’indirizzo http://localhost:4000/.
 Se vuoi contribuire e proporre una modifica, è sufficiente aprire una [pull request](https://github.com/italia/designers.italia.it/pulls) su GitHub.
 
 Il sito necessita di essere ricompilato ad ogni pubblicazione su Medium.
+
