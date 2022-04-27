@@ -22,10 +22,10 @@ header:
   links:
     - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
     - <a href="#servizi" class="u-color-white">I flussi di servizi digitali</a>
-    - <a href="#orientarsi" class="u-color-white">La documentazione del modello </a>
-    - <a href="#pnrr" class="u-color-white">PA digitale 2026</a>
+    - <a href="#documentazione" class="u-color-white">La documentazione del modello </a>
+    - <a href="#pa-digitale-2026" class="u-color-white">PA digitale 2026</a>
 
-pnrrContent:
+ctaContent:
   title: Adottare il modello è semplice con il&nbsp;PNRR
   subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
   buttonTitle: Vai a PA digitale 2026

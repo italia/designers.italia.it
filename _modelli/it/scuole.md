@@ -20,8 +20,8 @@ redirect_from:
 header:
   links:
     - <a href="#sito" class="u-color-white">Il modello di sito</a>
-    - <a href="#orientarsi" class="u-color-white">La documentazione del modello</a>
-    - <a href="#cta" class="u-color-white">PA digitale 2026</a>
+    - <a href="#documentazione" class="u-color-white">La documentazione del modello</a>
+    - <a href="#pa-digitale-2026" class="u-color-white">PA digitale 2026</a>
 
 ctaContent:
   title: Adottare il modello è semplice con il PNRR
