@@ -281,7 +281,6 @@ serviziContent:
     - title: "Servizi a pagamento"
       subtitle: "Il flusso di interazione per la richiesta di servizi che prevedono un pagamento da parte del cittadino per l’erogazione, come:"
       services:
-        - name: Assegno di ricchezza
         - name: Corsi di formazione
         - name: Mensa scolastica
         - name: Sepoltura di un defunto
