@@ -1,0 +1,696 @@
+---
+layout: default
+---
+
+{% include setlang.html %}
+{% assign title = page.title %}
+{% assign subtitle = page.subtitle %}
+{% assign image = page.image %}
+
+{% assign ctaContent = page.ctaContent %}
+{% assign orientarsiContent = page.orientarsiContent %}
+{% assign coreContent = page.coreContent %}
+{% assign serviziContent = page.serviziContent %}
+
+
+{% include super_breadcrumb_modelli.html kitCategory=page.kitcategory showAll=true quickOpen=true %}
+
+<article class="u-color-grey-ui-kit a-text-semi-bold">
+
+  <div class="super-breadcrumb u-background-50 u-color-white">
+    <div class="u-layout-wide u-layoutCenter u-padding-r-top">
+
+      {% if page.disabled == true %}
+
+          <!-- header kit in lavorazione -->
+          <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+            <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+              <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Kit</div>
+              <h1 class="u-text-h1">{{title}}</h1>
+              <div class="u-text-r-l">
+                {{subtitle}}
+                <p class="u-padding-top-l" style="opacity:.6"><strong><em>Modello in lavorazione</em></strong></p>
+              </div>
+            </div>
+            <div class="Grid-cell u-md-size3of12 u-lg-size3of12 u-md-before1of12 u-lg-before1of12">
+              {% if page.iconImage %}
+              <img class="u-sizeFull" alt="{{title}}" src="{{ page.iconImage }}"/>
+              {% endif %}
+            </div>
+          </div>
+
+      {% else %}
+
+      <!-- header -->
+        <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+          <div class="Grid-cell u-md-before1of12 u-lg-size5of12 u-md-size5of12">
+            <div class="u-text-r-xs u-margin-bottom-s u-text-h1">Modello</div>
+            <h1 class="u-text-h1">{{title}}</h1>
+            <div class="u-text-r-l">
+              {{subtitle}}
+            </div>
+            <div class="u-margin-top-xxl u-margin-bottom-m">
+              <ul>
+                {% for link in page.header.links %}
+                  <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-white u-special-list-r u-padding-left-none u-padding-right-xl u-padding-right-xxl">{{link}}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+          <div class="Grid-cell u-md-size5of12 u-lg-size4of12 u-md-before1of12 u-lg-before1of12">
+            {% if page.iconImage %}
+            <img class="u-sizeFull u-padding-r-top" alt="{{title}}" src="{{ page.iconImage }}" style="max-width:480px"/>
+            {% endif %}
+          </div>
+        </div>
+
+      {% endif %}
+
+    </div>
+  </div>
+
+  <hr class="Separator-room u-background-50" />
+  <hr class="Separator Separator--up u-background-white" />
+
+  {% if page.disabled != true %}
+  <div>
+
+    {% if ctaContent %}
+      <!-- ///// CTA ///// -->
+      <section id="pa-digitale-2026" class="fase">
+        <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-xxl">
+          <!-- header -->
+          <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter">
+            <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
+              <h2 class="u-text-h2">{{ctaContent.title}}</h2>
+              <div class="u-text-r-l">
+                {{ctaContent.subtitle}}
+              </div>
+            </div>
+          </div>
+
+          <!-- ctas in fase, grid -->
+          {% assign cards = ctaContent.cards %}
+          <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
+            <!-- single cta card -->
+            {%- for item in cards  -%}
+              <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of4 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+                <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+                  <div class="u-flexAlignSelfStart u-sizeFull">
+                    {% if item.iconImage %}
+                      <!-- card img -->
+                      <img class="u-padding-left-xl u-padding-top-xl u-padding-bottom-m" style="height: 164px" alt="{{item.iconAlt}}" src="{{ item.iconImage }}"/>
+                    {% endif %}
+                    <!-- card content -->
+                    <div class="u-padding-right-xl u-padding-left-xl u-padding-top-s u-padding-bottom-l">
+                      <h3 class="u-text-r-m u-padding-bottom-s u-textWeight-600">
+                        <span id="kitCardTitle"><span style="font-weight:lighter; color:#666">{{item.prefix}}.&nbsp;</span>{{item.title}}</span>
+                      </h3>
+                      <div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+                      <div class="u-margin-top-l u-margin-bottom-l">
+                        <ul>
+                        {%- for link in item.links  -%}
+                          <li class="u-margin-top-xs">
+                            {% if link.anchor %}
+                              <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
+                            {% endif %}
+                            <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                            {{link.title}}
+                            </a>
+                            {% if link.external %}
+                              <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
+                            {% endif %}
+                        </li>
+                        {%- endfor -%}
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            {%- endfor -%}
+          </div>
+
+          <!-- cta button -->
+          {% if ctaContent.buttonTitle %}
+          <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-textCenter">
+            <a href="{{ctaContent.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if ctaContent.buttonExternal %} aria-label="{{ctaContent.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{ctaContent.buttonTitle}}</span>
+              </a>
+          </div>
+          {% endif %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if orientarsiContent %}
+      <!-- ///// ORIENTARSI ///// -->
+      <section id="documentazione" class="fase u-padding-top-xs u-padding-bottom-xxs">
+        <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-margin-bottom-xxl u-margin-top-m">
+
+          <!-- header -->
+          <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter ">
+            <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
+              <h2 class="u-text-h2">{{orientarsiContent.title}}</h2>
+              <div class="u-text-r-l">
+                {{orientarsiContent.subtitle}}
+              </div>
+            </div>
+          </div>
+
+          <!-- orientarsi in fase, grid -->
+          {% assign cards = orientarsiContent.cards %}
+          <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM Grid--equalHeight Grid--fill Grid--alignCenter">
+            <!-- single cta card -->
+            {%- for item in cards  -%}
+              <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-flex u-margin-bottom-l {{item.kitcategory|slugify}}">
+                <article class="u-sizeFull u-flex u-flexWrap u-flexAlignSelfStretch">
+                  <div class="u-flexAlignSelfStart u-sizeFull">
+                    <h3 class="u-text-r-m u-padding-bottom-m u-textWeight-600">
+                      <span id="kitCardTitle">{{item.title}}</span>
+                    </h3>
+                    {% if item.iconImage %}
+                      <!-- card img -->
+                      <img class="u-sizeFull u-padding-bottom-m" alt="{{item.iconAlt}}" src="{{ item.iconImage }}"/>
+                    {% endif %}
+                    <!-- card content -->
+                    <div class="kitIntro Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{item.subtitle}}</div>
+
+                      <div class="u-margin-top-l u-margin-bottom-l">
+                        <ul>
+                        {%- for link in item.links  -%}
+                          <li class="u-margin-top-m">
+                            {% if link.anchor %}
+                              <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
+                            {% endif %}
+                            <a class="u-textClean u-text-r-xs u-color-50" href="{{link.url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                            {{link.title}}
+                            </a>
+                            {% if link.external %}
+                              <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
+                            {% endif %}
+                        </li>
+                        {%- endfor -%}
+                        </ul>
+                      </div>
+
+                    <!-- cta button -->
+                    {% if item.buttonTitle %}
+                    <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl">
+                      <a href="{{item.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                          <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{item.buttonTitle}}</span>
+                        </a>
+                    </div>
+                    {% endif %}
+                  </div>
+                </article>
+              </div>
+            {%- endfor -%}
+          </div>
+
+        </div>
+      </section>
+    {% endif %}
+
+    <!-- ///// SITO ///// -->
+    <section id="sito" class="fase">
+      <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-bottom-xxl">
+        <!-- header -->
+        <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+          <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+            <h2 class="u-text-h2">{{coreContent.title}}</h2>
+            <div class="u-text-r-l">
+              {{coreContent.subtitle}}
+            </div>
+          </div>
+          <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+            {% if coreContent.icon %}
+            <img class="u-sizeFull" alt="{{title}}" src="{{ coreContent.icon }}" style="max-width:128px"/>
+            {% endif %}
+          </div>
+        </div>
+
+        <!-- intro -->
+        <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+          <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+            <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{coreContent.occhiello}}</h2>
+            <div class="kitIntro u-layout-prose u-color-grey-ui-kit">
+              {{coreContent.text}}
+            </div>
+          </div>
+          <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
+
+            {% assign rightColumnItems = coreContent.rightColumnItems %}
+            {% for rightColumnItem in rightColumnItems %}
+              {% if forloop.index == 1 %}
+                <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom {% if guideLinesChunk.link != null %} u-margin-top-xxl {% endif %}">{{rightColumnItem.title}}</div>
+              {% else %}
+                <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
+              {% endif %}
+              <ul>
+                {% for item in rightColumnItem.items %}
+                  <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r">
+                    {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          </div>
+        </div>
+
+        <!-- tools -->
+        {% assign superAccordion = coreContent.superAccordion %}
+        <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+          <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+            <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{superAccordion.title}}</h2>
+          </div>
+
+          {% for accordion in superAccordion.accordions %}
+          <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-m u-margin-top-l u-margin-bottom-l u-posRelative u-borderRadius-l u-background-white">
+            <div class="accordion-expand-button-close" data-accordion-expanded="false">
+              <img alt="" src="/assets/images/icons/arrow-down-big.svg">
+            </div>
+            <div class="Accordion fr-accordion js-fr-accordion" id="accordion-{{forloop.index}}">
+
+              <!-- tool header -->
+              <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{forloop.index}}">
+                <div class="Grid Grid--alignCenter Grid--withGutter u-padding-all-s u-md-padding-all-none u-lg-padding-all-none">
+                  <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-textCenter u-padding-top-m">
+                    <img alt="{{accordion.title}}" src="{{accordion.img}}" style="max-width:144px">
+                  </div>
+                  <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10 u-padding-bottom-xl u-padding-top-xl">
+                    <h3 class="toolTitle u-text-h3 u-color-50">{{accordion.title}}</h3>
+                    <div data-accordion-header-text class="accordion-line-clamp u-layout-prose accordion-super-text u-color-grey-ui-kit">
+                      {{accordion.text}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- tool panel -->
+              <div id="accordion-panel-{{forloop.index}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
+
+                <div class="Grid Grid--alignCenter Grid--withGutter u-margin-bottom-m">
+                  <div class="Grid-cell u-sm-padding-all-xl u-md-padding-all-xl u-lg-padding-all-xl" style="background-color: #F0F6FC">
+                    {% for resource in accordion.resources %}
+                    <div class="u-background-white u-margin-all-m
+                                u-padding-top-m u-padding-bottom-m
+                                u-padding-left-s u-padding-right-s
+                                u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
+                                u-borderShadow-m u-margin-bottom-xxl u-borderRadius-m
+                                u-text-r-xxs" style="border-left: 8px solid
+                                {% if resource.disabled == true %} #BEBEBE {% else %} #0066CC {% endif %}
+                                ">
+                      <!-- main resource item -->
+                      <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs"
+                         {% if resource.disabled == true %} style="opacity:.6" {% endif %}
+                         >
+                          <div class="u-textWeight-600 u-text-r-s u-margin-bottom-xxs">{{resource.title}}</div>
+                          <div>{{resource.description}}</div>
+                        </div>
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight"
+                        {% if resource.disabled == true %} style="opacity:.6" {% endif %}
+                        >
+                          {% if resource.disabled == true %}
+                             In lavorazione
+                          {% else %}
+                            {{resource.link}}
+                            {% if resource.icon %}
+                              <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
+                            {% endif %}
+                          {% endif %}
+                        </div>
+                      </div>
+                      {% for otherResource in resource.otherResources %}
+                      <!-- secondary resource item -->
+                      <hr style="border:none;height:1px;background:#C5C7C9"/>
+                      <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
+                          <div>{{otherResource.description}}</div>
+                        </div>
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
+                          {{otherResource.link}}
+                        </div>
+                      </div>
+                      {% endfor %}
+                    </div>
+                    {% endfor %}
+                  </div>
+                </div>
+
+                <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
+                  <div class="Grid-cell u-md-before2of10 u-lg-before2of10 u-md-size7of10 u-lg-size7of10 u-md-after1of10 u-lg-after1of10 u-padding-all-s u-text-r-xxs">
+                    <div class="Grid Grid--withGutter Grid--alignRight">
+                      {% for item in accordion.footer %}
+                        <div class="Grid-cell u-lg-size5of10 u-md-size5of10 u-margin-bottom-l u-flex u-flexAlignItemsStart">
+                          {% if item.icon %}
+                            <img alt="" src="{{item.icon}}" style="margin: 5px 10px" />
+                          {% endif %}
+                          <div>{{item.text}}</div>
+                        </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          {% endfor %}
+        </div>
+        <!-- end tools -->
+
+        {% if coreContent.cta %}
+                  <!-- cta button -->
+          {% assign item = coreContent.cta %}
+          <div class="Grid  u-padding-all-l Grid--alignCenter u-textCenter u-padding-bottom-xxl">
+            <div class="Grid-cell u-lg-size7of12 u-md-size7of12">
+              <div class="u-text-r-m u-padding-bottom-l">
+                {{ item.text }}
+              </div>
+              {% if item.buttonAnchor %}
+                <span class="u-text-r-xs Icon Icon-arrow-down u-color-50 u-margin-left-xs u-margin-right-xs"></span>
+                <a class="u-textClean u-text-r-xs u-color-50" href="{{item.buttonUrl}}">
+                  {{item.buttonTitle}}
+                </a>
+              {% else %}
+                <a href="{{item.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-xs u-border-all-xs u-padding-r-all u-color-50" style="min-width: 16em" {% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                  <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-m u-padding-left-m">{{item.buttonTitle}}</span>
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
+
+      </div>
+
+    </section>
+
+    {% if serviziContent %}
+      <!-- ///// SERVIZI ///// -->
+      <section id="servizi" class="fase u-background-grey-10 u-color-grey-ui-kit">
+        <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-padding-top-l u-margin-top-xxs">
+          <!-- header -->
+          <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
+            <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+              <h2 class="u-text-h2">{{serviziContent.title}}</h2>
+              <div class="u-text-r-l">
+                {{serviziContent.subtitle}}
+              </div>
+            </div>
+            <div class="Grid-cell u-md-size2of12 u-lg-size2of12 u-md-before1of12 u-lg-before1of12">
+              {% if serviziContent.icon %}
+              <img class="u-sizeFull" alt="{{title}}" src="{{ serviziContent.icon }}" style="max-width:128px"/>
+              {% endif %}
+            </div>
+          </div>
+
+          <!-- intro -->
+          <div class="Grid Grid--alignCenter u-padding-all-l Prose u-color-grey-ui-kit">
+            <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
+              <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.occhiello}}</h2>
+              <div class="kitIntro u-layout-prose u-color-grey-ui-kit">
+                {{serviziContent.text}}
+              </div>
+            </div>
+            <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
+
+              {% assign rightColumnItems = serviziContent.rightColumnItems %}
+              {% for rightColumnItem in rightColumnItems %}
+                {% if forloop.index == 1 %}
+                  <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom {% if guideLinesChunk.link != null %} u-margin-top-xxl {% endif %}">{{rightColumnItem.title}}</div>
+                {% else %}
+                  <div class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom u-margin-top-xxl">{{rightColumnItem.title}}</div>
+                {% endif %}
+                <ul>
+                  {% for item in rightColumnItem.items %}
+                    <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r">
+                      {{item}} <img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" />
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endfor %}
+            </div>
+          </div>
+
+          <!-- servizi in fase, grid -->
+          {% assign cards = serviziContent.cards %}
+          <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+            <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.cardsTitle}}</h2>
+          </div>
+          <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM"> <!-- Grid--equalHeight Grid--fill -->
+            <!-- single cta card -->
+            {%- for item in cards  -%}
+              <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-margin-bottom-l {{item.kitcategory|slugify}}">
+                <article class="u-sizeFull u-text-r-s u-flex u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m {% if item.designerType %} u-background-50 u-color-white {% else %} u-background-white u-color-grey-ui-kit{% endif %}">
+                  <div class="u-flexAlignSelfStart u-sizeFull Grid">
+                    <!-- card content -->
+                    <div class="u-padding-top-xl Grid-cell {% if item.iconImage %}u-size3of4 u-md-size2of3 u-lg-size2of3{% else %}u-sm-size1of1 u-md-size1of1 u-lg-size1of1{% endif %}">
+                      <div class=" u-padding-right-l u-padding-left-l u-padding-bottom-l">
+                        <h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 ">
+                          <span id="kitCardTitle">{{item.title}}</span>
+                        </h3>
+                        <div class="Prose u-text-r-xxs u-textWeight-400 {% if item.designerType %} u-color-white {% endif %}">{{item.subtitle}}</div>
+                        <div class="u-margin-top-l">
+                          <ul class="u-color-grey-ui-kit u-text-r-xxs">
+                          {%- for service in item.services  -%}
+                            <li class="u-margin-bottom-xs u-font-weight-semibold u-textWeight-600">
+                              <span>{{service.name}}</span>
+                            </li>
+                          {%- endfor -%}
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    {% if item.iconImage %}
+                      <!-- card img -->
+                      <div class="Grid-cell u-size1of4 u-md-size1of3 u-lg-size1of3 u-textRight">
+                        <img class="u-sizeFull u-padding-top-s" alt="{{item.iconAlt}}" src="{{ item.iconImage }}" style="max-width:156px"/>
+                      </div>
+                    {% endif %}
+                    <div class="Grid-cell u-sm-size1of1 u-md-size1of1 u-lg-size1of1 u-padding-top-s u-padding-bottom-xs" style="background-color:#f0f6fc">
+                      {% if item.linksHiFi %}
+                      <!-- link hi-fi -->
+                        <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
+                          <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-600">{{item.linksHiFiTitle}}</span>
+                        </div>
+                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
+                          <ul class="u-margin-top-s u-margin-bottom-l">
+                          {% if item.linksHiFiDisabled == true %}
+                            <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" style="opacity:.6" >
+                              In lavorazione
+                            </li>
+                          {% else %}
+                            {%- for link in item.linksHiFi  -%}
+                              <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" {% if link.disabled == true %} style="opacity:.6" {% endif %}>
+                                {% if link.disabled == true %}
+                                   In lavorazione
+                                {% else %}
+                                  <a class="u-textClean u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                                  {{link.title}}
+                                  </a>
+                                {% endif %}
+                            </li>
+                            {%- endfor -%}
+                          {% endif %}
+                          </ul>
+                        </div>
+                      </div>
+                      {% endif %}
+                      {% if item.linksMidFi %}
+                      <!-- link mid-fi -->
+                        <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
+                            <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}<!--<br/><sup>mid-fi</sup>--></span>
+                          </div>
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
+                            <ul class="u-margin-top-s u-margin-bottom-l">
+                            {% if item.linksMidFiDisabled == true %}
+                              <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" style="opacity:.6" >
+                                In lavorazione
+                              </li>
+                            {% else %}
+                              {%- for link in item.linksMidFi  -%}
+                                <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" {% if link.disabled == true %} style="opacity:.6" {% endif %}>
+                                  {% if link.disabled == true %}
+                                     In lavorazione
+                                  {% else %}
+                                    <a class="u-textClean u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                                    {{link.title}}
+                                    </a>
+                                  {% endif %}
+                              </li>
+                              {%- endfor -%}
+                            {% endif %}
+                            </ul>
+                          </div>
+                        </div>
+                      {% endif %}
+                    </div>
+                  </div>
+                </article>
+              </div>
+            {%- endfor -%}
+          </div>
+
+        <!-- tools -->
+          {% assign superAccordion = serviziContent.superAccordion %}
+          <div class="Grid Grid--alignCenter u-padding-all-l Prose">
+            <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+              <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{superAccordion.title}}</h2>
+            </div>
+
+            {% for accordion in superAccordion.accordions %}
+            <div class="Grid-cell u-md-size10of12 u-lg-size10of12 u-borderShadow-m u-margin-top-l u-margin-bottom-l u-posRelative u-borderRadius-l u-background-white">
+              <div class="accordion-expand-button-close" data-accordion-expanded="false">
+                <img alt="" src="/assets/images/icons/arrow-down-big.svg">
+              </div>
+              <div class="Accordion fr-accordion js-fr-accordion" id="accordion-{{ forloop.index | plus:10 }}">
+
+                <!-- tool header -->
+                <div class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{ forloop.index | plus:10 }}">
+                  <div class="Grid Grid--alignCenter Grid--withGutter u-padding-all-s u-md-padding-all-none u-lg-padding-all-none">
+                    <div class="Grid-cell u-md-size2of10 u-lg-size2of10 u-textCenter u-padding-top-m">
+                      <img alt="{{accordion.title}}" src="{{accordion.img}}" style="max-width:144px">
+                    </div>
+                    <div class="Grid-cell u-lg-size6of10 u-lg-after2of10 u-md-size6of10 u-md-after2of10 u-padding-bottom-xl u-padding-top-xl">
+                      <h3 class="toolTitle u-text-h3 u-color-50">{{accordion.title}}</h3>
+                      <div data-accordion-header-text class="accordion-line-clamp u-layout-prose accordion-super-text u-color-grey-ui-kit">
+                        {{accordion.text}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- tool panel -->
+                <div id="accordion-panel-{{ forloop.index | plus:10 }}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel">
+
+                  <div class="Grid Grid--alignCenter Grid--withGutter u-margin-bottom-m">
+                    <div class="Grid-cell u-sm-padding-all-xl u-md-padding-all-xl u-lg-padding-all-xl" style="background-color: #F0F6FC">
+                      {% for resource in accordion.resources %}
+                      <div class="u-background-white u-margin-all-m
+                                  u-padding-top-m u-padding-bottom-m
+                                  u-padding-left-s u-padding-right-s
+                                  u-sm-padding-x-xxl u-md-padding-x-xxl u-lg-padding-x-xxl
+                                  u-borderShadow-m u-margin-bottom-xxl u-borderRadius-m
+                                  u-text-r-xxs" style="border-left: 8px solid
+                                  {% if resource.disabled == true %} #BEBEBE {% else %} #0066CC {% endif %}
+                                  ">
+                        <!-- main resource item -->
+                        <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xs"
+                           {% if resource.disabled == true %} style="opacity:.6" {% endif %}
+                           >
+                            <div class="u-textWeight-600 u-text-r-s u-margin-bottom-xxs">{{resource.title}}</div>
+                            <div>{{resource.description}}</div>
+                          </div>
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight"
+                          {% if resource.disabled == true %} style="opacity:.6" {% endif %}
+                          >
+                            {% if resource.disabled == true %}
+                               In lavorazione
+                            {% else %}
+                              {{resource.link}}
+                              {% if resource.icon %}
+                                <img alt="" class="u-margin-left-xs" src="{{resource.icon}}" />
+                              {% endif %}
+                            {% endif %}
+                          </div>
+                        </div>
+                        {% for otherResource in resource.otherResources %}
+                        <!-- secondary resource item -->
+                        <hr style="border:none;height:1px;background:#C5C7C9"/>
+                        <div class="kitResourceItem Grid Grid--alignCenter u-flexAlignItemsCenter">
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
+                            <div>{{otherResource.description}}</div>
+                          </div>
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
+                            {{otherResource.link}}
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                      {% endfor %}
+                    </div>
+                  </div>
+
+                  <div class="Grid Grid--alignCenter Grid--withGutter u-margin-top-m u-margin-bottom-m">
+                    <div class="Grid-cell u-md-before2of10 u-lg-before2of10 u-md-size7of10 u-lg-size7of10 u-md-after1of10 u-lg-after1of10 u-padding-all-s u-text-r-xxs">
+                      <div class="Grid Grid--withGutter Grid--alignRight">
+                        {% for item in accordion.footer %}
+                          <div class="Grid-cell u-lg-size5of10 u-md-size5of10 u-margin-bottom-l u-flex u-flexAlignItemsStart">
+                            <img alt="" src="{{item.icon}}" style="margin: 5px 10px" />
+                            <div>{{item.text}}</div>
+                          </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            {% endfor %}
+          </div>
+          <!-- end tools -->
+        </div>
+
+      </section>
+    {% endif %}
+
+    <!-- Community --->
+    <section id="community" class="u-nbfc u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl u-xs-padding-all-none u-posRelative u-zindex-30 u-background-white">
+      <div class="u-layout-wide u-layoutCenter u-padding-top-m">
+        <h2 class="u-layoutCenter u-text-h2 u-color-grey-ui-kit u-textCenter" style="max-width:672px">La comunità di riferimento</h2>
+        <div class="u-layoutCenter u-text-r-l u-color-grey-ui-kit u-padding-r-bottom u-textCenter" style="max-width:672px">Scopri i canali della community dove confrontarti sulle risorse del modello</div>
+        <div class="u-textCenter u-margin-top-l">
+          <img src="{{ '/assets/images/blk7/conversation.svg' | relative_url }}" alt="" role="presentation">
+        </div>
+        {%- for i in (1..11) -%}
+        <img src="{{ '/assets/images/blk7/balloon.svg' | relative_url }}" alt="" role="presentation" class="u-posAbsolute Balloon-{{ forloop.index }}"/>
+        {%- endfor -%}
+        <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative Grid--equalHeight Grid--fill Grid--alignCenter">
+          <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
+            {%- include card.html
+              title = "<img src=\"/assets/icons/partecipa-forum-italia.svg\" alt=\"Forum Italia\" height=\"32\">"
+              target = "blank"
+              link = "https://forum.italia.it/c/design"
+              link_text = "Visita il forum"
+              text = "Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore."
+              hasSocial = false
+              classes = "u-background-white u-minHeight-250 u-borderShadow-m" -%}
+          </div>
+          <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
+            {%- include card.html
+              title = "<img src=\"/assets/icons/partecipa-slack.svg\" alt=\"Slack\" height=\"32\">"
+              target = "blank"
+              link = "https://slack.developers.italia.it/"
+              link_text = "Entra nel canale #design"
+              text = "Dialoga e collabora in tempo reale con i designer e i maintainer sui canali dedicati al <i>#design</i>."
+              hasSocial = false
+              classes = "u-background-white u-minHeight-250 u-borderShadow-m" -%}
+          </div>
+          <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
+            {%- include card.html
+              title = "<img src=\"/assets/icons/partecipa-github.svg\" alt=\"GitHub\" height=\"32\">"
+              target = "blank"
+              link = "https://github.com/italia/"
+              link_text = "Visita github.com/italia"
+              text = "Disegna e sviluppa con noi nuove soluzioni per i servizi digitali nazionali."
+              hasSocial = false
+              classes = "u-background-white u-minHeight-250 u-borderShadow-m" -%}
+          </div>
+      </div>
+    </section>
+
+
+  </div>
+  {% endif %}
+
+</article>

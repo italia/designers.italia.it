@@ -1,53 +1,55 @@
 <section class="u-nbfc u-layout-r-withGutter u-padding-bottom-xxl u-padding-top-xxl u-xs-padding-all-none u-posRelative u-zindex-30 u-background-white">
   <div class="u-layout-wide u-layoutCenter u-padding-top-m">
-    <h2 class="u-text-r-xxl u-textWeight-700 u-color-grey-ui-kit u-textCenter">{{ t.home_partecipa_title }}</h2>
-    <p class="u-text-r-xs u-textWeight-400 u-color-grey-ui-kit u-padding-top-l u-padding-r-bottom u-textCenter">{{ t.home_partecipa_subtitle }}</p>
+    <h2 class="u-text-h2 u-color-grey-ui-kit u-textCenter">{{ t.home_partecipa_title }}</h2>
+    {% if t.home_partecipa_subtitle %}
+      <div class="u-text-r-l u-color-grey-ui-kit u-color-grey-ui-kit u-padding-r-bottom u-textCenter">{{ t.home_partecipa_subtitle }}</div>
+    {% endif %}
     <div class="u-textCenter u-margin-top-l">
       <img src="{{ '/assets/images/blk7/conversation.svg' | relative_url }}" alt="" role="presentation">
     </div>
     {%- for i in (1..11) -%}
     <img src="{{ '/assets/images/blk7/balloon.svg' | relative_url }}" alt="" role="presentation" class="u-posAbsolute Balloon-{{ forloop.index }}"/>
     {%- endfor -%}
-    <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative">
+    <div class="Grid Grid--withGutter u-padding-all-l guides-grid u-posRelative Grid--equalHeight Grid--fill Grid--alignCenter">
       <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
         {%- include card.html
-          title = "<img src=\"/assets/icons/partecipa-forum-italia.svg\" alt=\"icona\" height=\"32\">"
+          title = "<img src=\"/assets/icons/partecipa-forum-italia.svg\" alt=\"Forum Italia\" height=\"32\">"
           target = "blank"
           link = "https://forum.italia.it/c/design"
           link_text = "Visita il forum"
           text = "Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore."
           hasSocial = false
-          classes = "u-background-white u-minHeight-250" -%}
+          classes = "u-background-white u-minHeight-250 u-borderShadow-m" -%}
       </div>
       <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
         {%- include card.html
-          title = "<img src=\"/assets/icons/partecipa-slack.svg\" alt=\"icona\" height=\"32\">"
+          title = "<img src=\"/assets/icons/partecipa-slack.svg\" alt=\"Slack\" height=\"32\">"
           target = "blank"
           link = "https://slack.developers.italia.it/"
           link_text = "Entra nel canale #design"
           text = "Dialoga e collabora in tempo reale con i designer e i maintainer sui canali dedicati al <i>#design</i>."
           hasSocial = false
-          classes = "u-background-white u-minHeight-250" -%}
+          classes = "u-background-white u-minHeight-250 u-borderShadow-m" -%}
       </div>
       <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
         {%- include card.html
-          title = "<img src=\"/assets/icons/partecipa-github.svg\" alt=\"icona\" height=\"32\">"
+          title = "<img src=\"/assets/icons/partecipa-github.svg\" alt=\"GitHub\" height=\"32\">"
           target = "blank"
           link = "https://github.com/italia/"
           link_text = "Visita github.com/italia"
           text = "Disegna e sviluppa con noi nuove soluzioni per i servizi digitali nazionali."
           hasSocial = false
-          classes = "u-background-white u-minHeight-250" -%}
+          classes = "u-background-white u-minHeight-250 u-borderShadow-m" -%}
       </div>
       <div class="Grid-cell u-sm-size1of2 u-md-size1of4 u-lg-size1of4 u-margin-top-s">
         {%- include card.html
-          title = "<img src=\"/assets/icons/partecipa-docs-italia.svg\" alt=\"icona\" height=\"32\">"
+          title = "<img src=\"/assets/icons/partecipa-docs-italia.svg\" alt=\"Docs Italia\" height=\"32\">"
           target = "blank"
           link = "https://docs.italia.it/"
           link_text = "Visita Docs Italia"
           text = "Rendi servizi e siti web più efficaci grazie a documentazioni aperte e collaborative."
           hasSocial = false
-          classes = "u-background-white u-minHeight-250" -%}
+          classes = "u-background-white u-minHeight-250 u-borderShadow-m" -%}
       </div>
     </div>
   </div>

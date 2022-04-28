@@ -1,27 +1,9 @@
 <section class="u-nbfc u-layout-r-withGutter u-padding-bottom-xl u-padding-top-xl u-xs-padding-all-none u-posRelative u-zindex-30">
   <div class="u-layout-wide u-layoutCenter u-padding-top-m">
     <div class="Grid Grid--withGutterL Grid--alignCenter u-padding-all-xs u-padding-bottom-l guides-grid u-posRelative">
-      <div class="Grid-cell u-sm-size1of2 u-md-size5of12 u-lg-size1of2 u-margin-top-s">
-        {% assign head_scuole = "/assets/images/modelli/scuola-2021.png" | relative_url %}
-        {% capture link_modello_scuole %}{% link _modelli/it/scuole.md %}{% endcapture %}
-        {% capture link_progetto_scuole %}{% link _projects/it/siti-web-scuole.md %}{% endcapture %}
-        {%- include card.html
-        title = "Il modello per i siti scolastici"
-        subtitle = "Modello di sito web e template CMS, gratis e a disposizione di tutti"
-        image = head_scuole
-        textCenter = false
-        hasMore = false
-        link = link_modello_scuole
-        cta1Text = "Usa il modello"
-        cta1 = link_modello_scuole
-        cta2Text = "Scopri il progetto"
-        cta2 = link_progetto_scuole
-        alt = "Esempio di modello dei siti scolastici" -%}
-      </div>
       <div class="Grid-cell u-sm-size1of2 u-md-size5of12 u-lg-size1of2  u-margin-top-s">
         {% assign head_comuni = "/assets/images/modelli/comune-2021.png" | relative_url %}
         {% capture link_modello_comuni %}{% link _modelli/it/comuni.md %}{% endcapture %}
-        {% capture link_progetto_comuni %}{% link _projects/it/siti-web-comuni.md %}{% endcapture %}
         {%- include card.html
         title = "Il modello per i siti comunali"
         subtitle = "Modello di sito web e template grafico, gratis e a disposizione di tutti"
@@ -29,10 +11,8 @@
         textCenter = false
         hasMore = false
         link = link_modello_comuni
-        cta1Text = "Usa il modello"
+        cta1Text = "Scopri il modello"
         cta1 = link_modello_comuni
-        cta2Text = "Scopri il progetto"
-        cta2 = link_progetto_comuni
         alt = "Esempio di modello dei siti comunali" -%}
       </div>
     </div>
