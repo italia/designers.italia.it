@@ -105,9 +105,9 @@ Nella seconda giornata, gli studenti si sono concentrati sull’analisi dei dati
 
 #### Anagrafe. Percorsi e prospetti futuri
 ![Foto interna del capitolo "Anagrafe. Percorsi e prospetti futuri"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_11.jpg)
-Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte dei cittadini nelle fasi principali della loro vita, i *Life event* ([Egovernment benchmark 2021 (PDF, 3.1 MB)](https://www.capgemini.com/wp-content/uploads/2021/10/eGovernment-Benchmark-2021-Insight-Report.pdf){:target="_blank" rel="noopener noreferrer"}).
+Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte dei cittadini nelle fasi principali della loro vita, i *Life event* ([Egovernment benchmark 2021 (PDF, 3,1 MB)](https://www.capgemini.com/wp-content/uploads/2021/10/eGovernment-Benchmark-2021-Insight-Report.pdf){:target="_blank" rel="noopener noreferrer"}).
 
-[Scarica il capitolo (PDF, 2.5 MB)](https://drive.google.com/file/d/143drOj7ADWktMytR92VGxFGKGflmxjBv/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 2,5 MB)](https://drive.google.com/file/d/143drOj7ADWktMytR92VGxFGKGflmxjBv/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -123,7 +123,7 @@ Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo 
 ![Foto interna del capitolo "Che impresa! Attività produttive"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_13.jpg)
 Una narrazione leggera e solida del percorso che ogni impresa deve affrontare quando incontra la Pubblica Amministrazione, tra pratiche e oneri amministrativi.
 
-[Scarica il capitolo (PDF, 0.3 MB)](https://drive.google.com/file/d/1XnB4vuoucDHsZ_MO8SNsH3d6Vvviuxuj/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 0,3 MB)](https://drive.google.com/file/d/1XnB4vuoucDHsZ_MO8SNsH3d6Vvviuxuj/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -139,7 +139,7 @@ Lo stato attuale del trasporto pubblico in Italia, fra attori e *touchpoint* dig
 ![Foto interna del capitolo "La giusta via di mezzo: servizi di sharing"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_15.jpg)
 La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con un focus su Roma, fra problemi, numeri e i cambiamenti portati dalla pandemia.
 
-[Scarica il capitolo (PDF, 0.8 MB)](https://drive.google.com/file/d/1iqhkddNMlIm46lWGbKKyfR3S0c9n3lJo/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 0,8 MB)](https://drive.google.com/file/d/1iqhkddNMlIm46lWGbKKyfR3S0c9n3lJo/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -155,7 +155,7 @@ Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambi
 ![Foto interna del capitolo "La cura"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_17.jpg)
 Un’analisi del fitto reticolo di strutture e servizi che garantiscono un accesso equo all’erogazione delle prestazioni sanitarie a tutti i cittadini, in attuazione dell’art. 32 della Costituzione.
 
-[Scarica il capitolo (PDF, 0.4 MB)](https://drive.google.com/file/d/13nlR62__DDrVYa5VYf_BVpfyYH-4E352/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 0,4 MB)](https://drive.google.com/file/d/13nlR62__DDrVYa5VYf_BVpfyYH-4E352/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -163,7 +163,7 @@ Un’analisi del fitto reticolo di strutture e servizi che garantiscono un acces
 ![Foto interna del capitolo "I nodi dell'assistenza socio-sanitaria"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_18.jpg)
 Un viaggio fra le esigenze e le problematiche molto diversificate di questo ambito, che riguardano utenti dai profili molto distanti tra loro, dai minori agli anziani non più autosufficienti.
 
-[Scarica il capitolo (PDF, 8.1 MB)](https://drive.google.com/file/d/1NwnQsK7YIqU_a7JEOkrpIgZkFn0YPR1I/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 8,1 MB)](https://drive.google.com/file/d/1NwnQsK7YIqU_a7JEOkrpIgZkFn0YPR1I/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -187,7 +187,7 @@ Una narrazione dei massimi sistemi dell’università italiana e della sua trasf
 ![Foto interna del capitolo "Il sistema bibliotecario: tra analogico e digitale"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg)
 Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio.
 
-[Scarica il capitolo (PDF, 2.8 MB)](https://drive.google.com/file/d/12jmaoEe-7y6VgSljlrsJxSTHQY59UpwW/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 2,8 MB)](https://drive.google.com/file/d/12jmaoEe-7y6VgSljlrsJxSTHQY59UpwW/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -195,7 +195,7 @@ Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro del
 ![Foto interna del capitolo "Musei senza pareti"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_22.jpg)
 Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo chiave del digitale per veicolare servizi ai visitatori che siano sempre più utili e coinvolgenti.
 
-[Scarica il capitolo (PDF, 1.3 MB)](https://drive.google.com/file/d/135akewogpXvNbWQ9LokNER-QmkKANRn6/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 1,3 MB)](https://drive.google.com/file/d/135akewogpXvNbWQ9LokNER-QmkKANRn6/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
@@ -203,7 +203,7 @@ Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo ch
 ![Foto interna del capitolo "Un gioco impossibile: organizzare eventi"](/assets/images/projects/atlante/atlante-della-trasformazione-digitale-della-pa_23.jpg)
 Una metafora per raccontare l’ambito degli eventi culturali, un contesto sfumato che può essere sintetizzato in GLAM (acronimo di Galleries, Libraries, Archives and Museums).
 
-[Scarica il capitolo (PDF, 0.9 MB)](https://drive.google.com/file/d/1N1I_4kOQZuL-TgJYsf1gZ011KKVQRXQr/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
+[Scarica il capitolo (PDF, 0,9 MB)](https://drive.google.com/file/d/1N1I_4kOQZuL-TgJYsf1gZ011KKVQRXQr/view?usp=sharing){:target="_blank" rel="noopener noreferrer"}
 
 -----
 
