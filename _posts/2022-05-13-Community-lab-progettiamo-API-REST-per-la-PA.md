@@ -25,4 +25,4 @@ Come progettare delle interfacce *machine to machine*? Come descrivere un serviz
 
 Alla fine, ci sarà anche il consueto spazio per fare domande.
 
-Ti aspettiamo online éémercoledì 25 maggio alle ore 15.30**. Per partecipare [registrati all’evento](https://mobilizon.it/events/f3e835a0-3d5c-44a2-949e-b665cdce5aab){:target="_blank" rel="noopener noreferrer"}.
+Ti aspettiamo online **mercoledì 25 maggio alle ore 15.30**. Per partecipare [registrati all’evento](https://mobilizon.it/events/f3e835a0-3d5c-44a2-949e-b665cdce5aab){:target="_blank" rel="noopener noreferrer"}.
