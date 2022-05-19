@@ -49,3 +49,18 @@ redirect_from:
 Designers Italia è un progetto aperto basato sulla **partecipazione** e il **contributo di designer e professionisti** interni ed esterni alla Pubblica Amministrazione.
 
 Puoi prendere parte alla vita e all’evoluzione di Designers Italia in diversi modi, dalla semplice condivisione di idee e best practice, allo sviluppo delle linee guida di design, alla diffusione delle soluzioni proposte.
+
+{: .u-padding-top-xl }
+## Newsletter {#mailing-list}
+Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccontare.
+
+Lasciaci la tua email e ti aggiorneremo sulle prossime iniziative di Designers
+Italia e Developers Italia.
+
+([leggi l´informativa](/privacy-policy#mailing-list))
+
+<div class="u-padding-bottom-xxl u-padding-top-m">
+{% include newsletter.html %}
+</div>
+
+<script src="{{ 'assets/newsletter/newsletter.form.js' | relative_url }}"></script>

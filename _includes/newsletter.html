@@ -1,15 +1,20 @@
 {% include setlang.html %}
-<form class="Form" action="https://a0x0b4.mailupclient.com/frontend/subscribe.aspx" method="get" target="_blank" style="max-width: 25em">
+<form class="Form" id="newsletter-form" style="max-width: 25em">
   <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xl">
     <button class="Grid-cell u-sizeFit Icon-mail u-color-grey-40 u-text-r-m u-padding-all-s u-textWeight-400"
       role="presentation" aria-hidden="true">
     </button>
-    <input class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus " required id="newsletter" name="email" />
-    <label class="Form-label u-color-grey-40 u-padding-left-xxl" for="newsletter"><span class="u-hidden u-md-inline u-lg-inline">
-          {{t.home_newsletter_placeholder }}</span></label>
-    <input type="hidden" name="list" value="2">
+    <input type="email" class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus" required id="email" placeholder="{{t.home_newsletter_placeholder }}" name="email" />
+    <label class="Form-label u-color-grey-40 u-padding-left-xxl" for="newsletter"></label>
+    <input type="hidden" name="tag_id" value="7">
+    <input type="hidden" name="workspace_id" value="1">
     <button type="submit" class="Grid-cell u-sizeFit u-background-teal-60 u-color-grey-ui-kit u-textWeight-600 u-padding-r-left u-padding-r-right u-textUppercase u-borderRadius-s">
        {{ t.home_newsletter_button }}
       </button>
   </div>
 </form>
+
+<div class="Prose Alert Alert--success Alert--withIcon u-layout-prose" style="display: none" aria-hidden="true" role="alert" id="newsletter-alert">
+  <p class="u-text-p">
+  </p>
+</div>
