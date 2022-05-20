@@ -54,7 +54,8 @@ partecipazione e ai suggerimenti.
 
 - **[Guarda il
 video](https://www.youtube.com/watch?v=cWUzfFVB7lY){:target="_blank"
-rel="noopener noreferrer"}** della community call - **[Scarica la
+rel="noopener noreferrer"}** della community call
+- **[Scarica la
 presentazione](https://developers.italia.it/assets/images/posts/2022-05-20/18_05_22_Community_Call.pdf){:target="_blank"
 rel="noopener noreferrer"}**
 
