@@ -12,7 +12,7 @@ Con il tuo **consenso** a partecipare all’intervista di profondità (on line) 
 
  In riferimento ai dati che ci comunicherai, ti informiamo che il Titolare del Trattamento è la Presidenza del Consiglio dei Ministri - Dipartimento per la Trasformazione Digitale con sede in Largo Pietro di Brazzà 86, 00186 Roma contattabile ai seguenti recapiti: [segreteria.trasformazionedigitale@governo.it](mailto:segreteria.trasformazionedigitale@governo.it); PEC: [diptrasformazionedigitale@pec.governo.it](mailto:diptrasformazionedigitale@pec.governo.it)
 
-Il Responsabile per la protezione dei dati - Data Protection Officer, è contattabile ai seguenti recapiti: [responsabileprotezionedatipcm@governo.it](mailto:responsabileprotezionedatipcm@governo.it); PEC: [USG@mailbox.governo.it](mailto:USG@mailbox.governo.it)
+Il Responsabile per la protezione dei dati - Data Protection Officer, è contattabile ai seguenti recapiti: [responsabileprotezionedatipcm@governo.it](mailto:responsabileprotezionedatipcm@governo.it); PEC: [rpd@pec.governo.it](mailto:rpd@pec.governo.it)
 
 I dati di contatto saranno conservati per 12 mesi, dopo di che saranno distrutti.
 
