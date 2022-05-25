@@ -29,14 +29,14 @@
 <meta property="og:site_name" content="Designers Italia" />
 <meta property="og:image" content="https://designers.italia.it/assets/icons/logo-it.png" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2022-05-24T19:41:16+02:00" />
+<meta property="article:published_time" content="2022-05-25T11:16:34+02:00" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta property="twitter:image" content="https://designers.italia.it/assets/icons/logo-it.png" />
 <meta property="twitter:title" content="Designers Italia" />
 <meta name="twitter:site" content="@designersITA" />
 <meta name="twitter:creator" content="@Team per la Trasformazione Digitale e AGID" />
 <script type="application/ld+json">
-{"description":"Il punto di riferimento per la progettazione dei servizi pubblici digitali","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://designers.italia.it/assets/icons/logo-it.png"},"name":"Team per la Trasformazione Digitale e AGID"},"image":"https://designers.italia.it/assets/icons/logo-it.png","@type":"WebSite","url":"https://designers.italia.it/","name":"Designers Italia","headline":"Designers Italia","dateModified":"2022-05-24T19:41:16+02:00","datePublished":"2022-05-24T19:41:16+02:00","author":{"@type":"Person","name":"Team per la Trasformazione Digitale e AGID"},"@context":"https://schema.org"}</script>
+{"description":"Il punto di riferimento per la progettazione dei servizi pubblici digitali","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://designers.italia.it/assets/icons/logo-it.png"},"name":"Team per la Trasformazione Digitale e AGID"},"image":"https://designers.italia.it/assets/icons/logo-it.png","@type":"WebSite","url":"https://designers.italia.it/","name":"Designers Italia","headline":"Designers Italia","dateModified":"2022-05-25T11:16:34+02:00","datePublished":"2022-05-25T11:16:34+02:00","author":{"@type":"Person","name":"Team per la Trasformazione Digitale e AGID"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -50,7 +50,7 @@
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 
   <link media="all" rel="stylesheet" href="/assets/toolkit/build-autoprefixed.css">
-  <link media="all" rel="stylesheet" href="/assets/main.css?202205241941">
+  <link media="all" rel="stylesheet" href="/assets/main.css?202205251116">
 
   <script src="/assets/toolkit/vendor/jquery-1.12.4.min.js"></script>
 
@@ -431,29 +431,38 @@
         </div>
       </div>
       <div class="Grid-cell Grid-cell u-md-size5of12 u-lg-size5of12 u-lg-before1of12 u-md-before1of12">
-        <div class="u-textCenter">
+        <div>
           <div class="plane u-margin-0auto u-block u-margin-top-xxl u-padding-all-xxl">
             <img role="presentation" alt="Aeroplano di carta, verso il futuro." src="/assets/images/blk1/plane.svg" style="max-width:100%;">
           </div>
           <div class="u-inlineBlock" style="margin-top: -4rem;">
-            <h3
-              class="u-text-r-xxs u-color-grey-ui-kit u-textLeft u-padding-all-xs u-textWeight-600">
-              Scopri</h3>
-            <a class="u-margin-all-xs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-top-s u-padding-bottom-s u-text-r-xxs u-borderShadow-m"
-               href="#i-modelli"
-               style="width: 15rem">
-              <span class="u-text-r-xxs u-textUppercase u-textWeight-700">I modelli</span>
-            </a>
-            <a class="u-margin-all-xs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-top-s u-padding-bottom-s u-text-r-xxs u-borderShadow-m"
-               href="#i-design-kit"
-               style="width: 15rem">
-              <span class="u-text-r-xxs u-textUppercase u-textWeight-700">I kit di design</span>
-            </a>
-            <a class="u-margin-all-xs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-top-s u-padding-bottom-s u-text-r-xxs u-borderShadow-m"
-               href="#le-linee-guida"
-               style="width: 15rem">
-              <span class="u-text-r-xxs u-textUppercase u-textWeight-700">Le linee guida</span>
-            </a>
+            <p class="u-textWeight-400 u-lineHeight-xl u-text-r-xxs u-color-grey-ui-kit u-padding-bottom-xl">
+              Lasciaci la tua email e ti aggiorneremo sulle prossime iniziative di Designers
+              Italia e Developers Italia
+
+              <a href="/privacy-policy#mailing-list">(leggi l’informativa)</a>
+            </p>
+
+            
+
+
+<form class="Form" id="newsletter-form" style="max-width: 25em">
+  <div class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s u-borderShadow-xl">
+    <span class="u-padding-all-s Icon Icon-mail"></span>
+    <input type="email" class="Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderHideFocus" required id="email" placeholder="indirizzo email" name="email" aria-label="Indirizzo email" />
+    <input type="hidden" name="tag_id" value="7">
+    <input type="hidden" name="workspace_id" value="1">
+    <button type="submit" class="Button Button--default">
+       Iscriviti
+      </button>
+  </div>
+</form>
+
+<div class="Prose Alert Alert--success Alert--withIcon u-layout-prose" style="display: none" aria-hidden="true" role="alert" id="newsletter-alert">
+  <p class="u-text-p">
+  </p>
+</div>
+
           </div>
         </div>
       </div>
@@ -1007,6 +1016,8 @@
 </section>
 
 
+<script src="/assets/newsletter/newsletter.form.js"></script>
+
   </div>
 </div><a href="#" title="torna all'inizio dei contenuti" class="ScrollTop js-scrollTop js-scrollTo">
   <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
@@ -1076,7 +1087,7 @@
  <script> __PUBLIC_PATH__ = '/assets/toolkit/'</script>
  <script src="/assets/toolkit/IWT.min.js"></script>
 
-<script src="/assets/scripts/main.js?202205241941"></script>
+<script src="/assets/scripts/main.js?202205251116"></script>
 
 <script>
   $(document).on('keydown', function(e) {
