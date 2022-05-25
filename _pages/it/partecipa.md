@@ -51,7 +51,7 @@ Designers Italia è un progetto aperto basato sulla **partecipazione** e il **co
 Puoi prendere parte alla vita e all’evoluzione di Designers Italia in diversi modi, dalla semplice condivisione di idee e best practice, allo sviluppo delle linee guida di design, alla diffusione delle soluzioni proposte.
 
 {: .u-padding-top-xl }
-## Newsletter {#mailing-list}
+## Mailing list {#mailing-list}
 Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccontare.
 
 Lasciaci la tua email e ti aggiorneremo sulle prossime iniziative di Designers
