@@ -85,6 +85,22 @@ sopra indicati. Se invece ritieni che il trattamento dei dati personali a te rif
 avvenga in violazione di quanto previsto dal GDPR, hai anche diritto di proporre reclamo,
 ai sensi dell’art. 77 del GDPR, al Garante per la protezione dei dati personali.
 
+## Mailing list
+
+Le comunicazioni relative alle iniziative di Developers Italia e Designers
+Italia sono distribuite, in automatico e gratuitamente, a quanti fanno richiesta
+di riceverle compilando il form.
+
+L’indirizzo mail fornito è utilizzato al solo fine di fornirti il servizio
+richiesto e, per tale ragione, sarà conservato esclusivamente per il periodo in
+cui lo stesso è attivo. La base giuridica di tale trattamento è da rinvenirsi
+nei compiti istituzionali volti a favorire la conoscenza delle iniziative del
+Dipartimento per la Trasformazione Digitale.
+
+Per non ricevere più l’aggiornamento puoi in ogni momento richiedere la
+cancellazione dal servizio selezionando l’apposito pulsante all’interno della
+comunicazione ricevuta oppure scrivendoci agli indirizzi sopra riportati.
+
 ## Cookie
 
 Questa sezione fornisce informazioni dettagliate sull'uso dei cookie, su come sono
@@ -114,7 +130,7 @@ Inoltre noi e i nostri fornitori ci asteniamo dal combinare questi cookie con al
 elaborazioni né li trasmettiamo a terzi.
 Tali cookie vengono conservati per un periodo non superiore a 13 mesi dal momento della
 raccolta, salvo che la loro ulteriore conservazione non si renda necessaria per
-l’accertamento di reati. 
+l’accertamento di reati.
 
 ## Come disabilitare i cookie (opt-out) sul proprio dispositivo
 
@@ -123,7 +139,7 @@ Se non si desidera ricevere o memorizzare i cookie, si possono modificare le imp
 di sicurezza del browser utilizzato, secondo le istruzioni rese disponibili dai
 relativi fornitori ai link di seguito indicati. Nel caso in cui si disabilitino tutti
 i cookie, il sito potrebbe non funzionare correttamente.
- 
+
 * [Chrome](https://support.google.com/chrome/answer/95647)
 * [Firefox](https://support.mozilla.org/it/kb/protezione-antitracciamento-avanzata-firefox-desktop)
 * [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)
