@@ -9,7 +9,7 @@ pinned: false
 nodate: false
 homeBottomLink: false
 homeHideCategories: true
-date_prepend: "Article"
+date_prepend: "Articolo"
 categories:
   - cittadini
   - pubblica amministrazione
