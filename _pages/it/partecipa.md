@@ -57,7 +57,7 @@ Ci piace scriverti, ma solo quando abbiamo qualche novità importante da raccont
 Lasciaci la tua email e ti aggiorneremo sulle prossime iniziative di Designers
 Italia e Developers Italia.
 
-([leggi l´informativa](/privacy-policy#mailing-list))
+([leggi l’informativa](/privacy-policy#mailing-list))
 
 <div class="u-padding-bottom-xxl u-padding-top-m">
 {% include newsletter.html %}
