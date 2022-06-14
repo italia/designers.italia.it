@@ -42,7 +42,7 @@ superAccordion:
   accordions:
     - title: Individua i contenuti
       text: "<p>Gli scenari sono delle storie che raccontano specifiche vicende di utilizzo di un servizio digitale da parte di uno specifico utente, in uno specifico contesto; puoi usarli in modi diversi e con diversi scopi, a seconda del focus del progetto: qui trovi lo strumento <em>scenari d'uso</em> come punto di partenza per ideare le caratteristiche del futuro <em>touchpoint</em> digitale del servizio, in termini di contenuti e funzioni che questo dovrebbe avere. Gli Scenari solitamente hanno come soggetto una delle Personas di riferimento, e sono perciò un modo per trasporre quanto emerso dalla ricerca in idee per migliorare l’interazione con il servizio.</p>
-      <p>Contestualizzare una Persona in uno scenario d’uso ti aiuta a comprendere i suoi obiettivi e a declinarli in sotto-obiettivi specifici. Questo è utile per mettere a fuoco le possibili criticità che l’utente potrebbe incontrare nell’interagire con il servizio digitale, sia nel caso della ri-progettazione un servizio digitale già esistente sia nel caso tu debba ipotizzare nuove soluzioni per future implementazioni di servizi.</p>"
+      <p>Contestualizzare una Persona in uno scenario d’uso ti aiuta a comprendere i suoi obiettivi e a declinarli in sotto-obiettivi specifici. Questo è utile per mettere a fuoco le possibili criticità che l’utente potrebbe incontrare nell’interagire con il servizio digitale, sia nel caso della ri-progettazione di un servizio digitale già esistente sia nel caso tu debba ipotizzare nuove soluzioni per future implementazioni di servizi.</p>"
       img: "/assets/icons/kit/kit_architettura_scenari.svg"
       resources:
         - title: Scenari d'uso
