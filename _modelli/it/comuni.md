@@ -197,13 +197,12 @@ serviziContent:
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A91595&node-id=1005%3A95646&viewport=501%2C48%2C0.26&scaling=scale-down&starting-point-node-id=1067%3A117214"
           external: true
       linksHiFiTitle: Esempio domanda assegno di maternità
-      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19477&node-id=903%3A176540&viewport=466%2C48%2C0.15&scaling=scale-down&starting-point-node-id=903%3A176540"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19478&node-id=1018%3A238734&viewport=466%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1018%3A238734"
           external: true
     - title: "Iscrizione a graduatoria"
       subtitle: "Il flusso di interazione per le richieste di  prestazioni accessibili tramite una graduatoria redatta dall'amministrazione, come:"
@@ -220,13 +219,12 @@ serviziContent:
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A101174&node-id=1005%3A111701&viewport=501%2C48%2C0.23&scaling=scale-down&starting-point-node-id=1067%3A115961"
           external: true
       linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
-      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19472&node-id=903%3A138696&viewport=466%2C48%2C0.4&scaling=scale-down&starting-point-node-id=903%3A138696"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19473&node-id=1018%3A235159&viewport=466%2C48%2C0.21&scaling=scale-down&starting-point-node-id=1018%3A235159"
           external: true
     - title: "Permessi e autorizzazioni"
       subtitle: "Il flusso di interazione per le richiesta di  rilascio di permessi o autorizzazioni, come:"
@@ -245,13 +243,12 @@ serviziContent:
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1033%3A492653&node-id=1033%3A505782&viewport=501%2C48%2C0.18&scaling=scale-down&starting-point-node-id=1067%3A115451"
           external: true
       linksHiFiTitle: Esempio richiesta permesso ZTL
-      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19474&node-id=903%3A139469&viewport=466%2C48%2C0.31&scaling=scale-down&starting-point-node-id=903%3A139469"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19475&node-id=1018%3A236176&viewport=466%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1018%3A236176"
           external: true
     - title: "Pagamenti dovuti"
       subtitle: "Il flusso di interazione per adempire al pagamento di oneri, come:"
@@ -269,14 +266,13 @@ serviziContent:
         - title: Naviga mobile
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A137467&node-id=1067%3A147528&viewport=501%2C48%2C0.11&scaling=scale-down&starting-point-node-id=1067%3A137469"
           external: true
-      linksHiFiTitle: Esempio pagamento IMU
-      linksHiFiDisabled: true
+      linksHiFiTitle: Esempio pagamento multa
       linksHiFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=3131%3A323423&node-id=3131%3A323723&viewport=612%2C-96%2C0.07&scaling=scale-down&starting-point-node-id=3131%3A323723"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=4208%3A337501&node-id=4208%3A347851&viewport=960%2C764%2C0.07&scaling=scale-down&starting-point-node-id=4208%3A347851"
           external: true
     - title: "Servizi a pagamento"
       subtitle: "Il flusso di interazione per la richiesta di servizi che prevedono un pagamento da parte del cittadino per l’erogazione, come:"
@@ -293,13 +289,12 @@ serviziContent:
           url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A121340&node-id=1067%3A130935&viewport=501%2C48%2C0.13&scaling=scale-down&starting-point-node-id=1067%3A121342"
           external: true
       linksHiFiTitle: Esempio richiesta mensa scolastica
-      linksHiFiDisabled: true
       linksHiFi:
         - title: Naviga mobile
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
         - title: Naviga desktop
-          url: "#"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
     - title: "Come progettare modelli di servizio"
       subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà; se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per integrare con facilità flussi di servizio personalizzati."
