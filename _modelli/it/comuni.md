@@ -312,10 +312,9 @@ serviziContent:
           url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
           external: true
       linksMidFiTitle: Libreria componenti per designer
-      linksMidFiDisabled: true
       linksMidFi:
         - title: Vai alla risorsa
-          url: "#"
+          url: "https://www.figma.com/file/WkVMh3JnkyUQGE3POb0TSI/Designers-Italia---Documentazione-Moduli-e-Sezioni?node-id=0%3A1"
           external: true
   superAccordion:
     title: STRUMENTI
