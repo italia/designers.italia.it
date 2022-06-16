@@ -100,6 +100,12 @@ coreContent:
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
   cta:
+    text: "Hai bisogno di chiarimenti o supporto tecnico? Consulta le domande frequenti o scrivici"
+    buttonTitle: "Vai al supporto di PA digitale 2026"
+    buttonUrl: "https://padigitale2026.gov.it/supporto"
+    buttonExternal: true
+    buttonAnchor: false
+  cta:
     text: "Partecipa alla discussione sulla community di Designers Italia"
     buttonTitle: "Scopri i canali della community"
     buttonUrl: "#community"
