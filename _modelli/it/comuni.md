@@ -104,7 +104,6 @@ coreContent:
     buttonTitle: "Vai al supporto di PA digitale 2026"
     buttonUrl: "https://padigitale2026.gov.it/supporto"
     buttonExternal: true
-    buttonAnchor: false
   cta:
     text: "Partecipa alla discussione sulla community di Designers Italia"
     buttonTitle: "Scopri i canali della community"
@@ -156,7 +155,7 @@ coreContent:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: Temi per Wordpress e Drupal
-        text: "<p>I temi pronti all'uso realizzati per Wordpress e Drupal ti permettono di abbreviare la fase di realizzazione del sito istituzionale, implementando direttamente l’architettura dell'informazione e il codice html sulle più comuni piattaforme di gestione contenuti.</p>"
+        text: "<p>Nonostante le piattaforme di gestione contenuti siano molteplici, stiamo lavorando alla creazione di temi pronti all'uso per Wordpress e Drupal. Questi temi ti permettono di abbreviare la fase di realizzazione del sito istituzionale, implementando direttamente l’architettura dell'informazione e il codice html.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
           - title: Tema Wordpress sito istituzionale
