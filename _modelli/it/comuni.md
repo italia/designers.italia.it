@@ -297,7 +297,7 @@ serviziContent:
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
     - title: "Come progettare modelli di servizio"
-      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà; se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per integrare con facilità flussi di servizio personalizzati."
+      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà. Se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per creare flussi di servizio personalizzati."
       designerType: true
       iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
