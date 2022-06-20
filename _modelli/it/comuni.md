@@ -104,12 +104,7 @@ coreContent:
     buttonTitle: "Vai al supporto di PA digitale 2026"
     buttonUrl: "https://padigitale2026.gov.it/supporto"
     buttonExternal: true
-  cta:
-    text: "Partecipa alla discussione sulla community di Designers Italia"
-    buttonTitle: "Scopri i canali della community"
-    buttonUrl: "#community"
-    buttonExternal: false
-    buttonAnchor: true
+    buttonAnchor: false
   superAccordion:
     title: RISORSE
     accordions:
