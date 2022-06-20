@@ -17,7 +17,7 @@ Se hai bisogno di informazioni, chiarimenti o supporto tecnico riguardo i **mode
 
 Per richiedere informazioni generali riguardanti il piano attività, inviare segnalazioni sui progetti o proporre contributi per i blog, [contattaci via email](#link){:target="blank" rel="noopener"}
 
-Nota bene che le risposte ricevute tramite questo canale sono suggerimenti tecnici utili alla realizzazione dei modelli, ma non hanno valore tecnico e amministrativo per realizzare le attività relative agli avvisi pubblici di PA digitale 2026. Resta quindi esclusa qualsiasi responsabilità in capo a Designers Italia, all’Agenzia per l’Italia digitale o al Dipartimento per la trasformazione digitale rispetto agli avvisi di PA digitale 2026.
+Le indicazioni ricevute tramite questo canale sono chiarimenti o suggerimenti tecnici utili alla realizzazione dei modelli, per agevolare l'attuazione degli interventi e incoraggiare le buone pratiche di progettazione. Tali risposte non pregiudicano la valutazione dell'amministrazione rispetto ai temi di gestione, attuazione e controllo degli interventi finanziati con le risorse del PNRR.
 
 ## Per contribuire ai nostri progetti
 
