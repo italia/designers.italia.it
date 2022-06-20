@@ -42,8 +42,6 @@ blocks:
 redirect_from:
   - /it/come-partecipo/
   - /come-partecipo/
-  - /it/contatti/
-  - /contatti/
 ---
 
 Designers Italia è un progetto aperto basato sulla **partecipazione** e il **contributo di designer e professionisti** interni ed esterni alla Pubblica Amministrazione.
