@@ -6,6 +6,8 @@ lang: it
 order: 1
 highlight: true
 layout: contatti
+redirect_from:
+  - /it/contatti/
 ---
 
 ## Per i modelli di siti e servizi (PNRR)
