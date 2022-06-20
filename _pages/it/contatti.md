@@ -15,7 +15,7 @@ Se hai bisogno di informazioni, chiarimenti o supporto tecnico riguardo i **mode
 
 ## Per tutte le altre informazioni
 
-Per richiedere informazioni generali riguardanti il piano attività, inviare segnalazioni sui progetti o proporre contributi per i blog, [contattaci via email](#link){:target="blank" rel="noopener"}
+Per richiedere informazioni generali riguardanti il piano attività, inviare segnalazioni sui progetti o proporre contributi per i blog, [contattaci via email](mailto:contatti@designers.italia.it){:target="blank" rel="noopener"}
 
 Le indicazioni ricevute tramite questo canale sono chiarimenti o suggerimenti tecnici utili alla realizzazione dei modelli, per agevolare l'attuazione degli interventi e incoraggiare le buone pratiche di progettazione. Tali risposte non pregiudicano la valutazione dell'amministrazione rispetto ai temi di gestione, attuazione e controllo degli interventi finanziati con le risorse del PNRR.
 
