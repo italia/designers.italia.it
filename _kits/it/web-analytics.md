@@ -64,10 +64,11 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: Una guida per creare una dashboard di dati custom con il software open source Matomo
           link: <a href='https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: Crea una dashboard con Google Analytics
+        - title: Crea una dashboard con Plausible analytics
           icon: "/assets/icons/pencil.svg"
-          description: Una guida per creare una dashboard di dati custom con Google Analytics
-          link: <a href='https://docs.google.com/document/d/1MEiEDKfxMh7c3-7BKx0WlvgIBRe5gXrFd0LqpVpNAhg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Una guida per creare una dashboard di dati custom con il software open source Plausible analytics
+          disabled: true
+          link: <a href='#' >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
