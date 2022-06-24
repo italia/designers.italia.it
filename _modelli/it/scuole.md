@@ -32,7 +32,7 @@ ctaContent:
   cards:
     - prefix: "1"
       title: "Richiedi un finanziamento"
-      subtitle: "Tutte le scuole italiane di 1° e 2° grado possono accedere ai fondi PNRR per l'aggiornamento del sito web. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026."
+      subtitle: "Tutte le scuole italiane possono accedere ai fondi PNRR per l'aggiornamento del sito web. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026."
       iconImage: "/assets/images/modelli/pad2026-A.svg"
       iconAlt: ""
       links:
@@ -125,15 +125,13 @@ coreContent:
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: Anteprime dei template HTML sito
-            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito scolastico basati sui template HTML Bootstrap
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://design-scuole-pagine-statiche.vercel.app/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Sorgenti dei template HTML sito scolastico
-            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di una scuola
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -142,7 +140,6 @@ coreContent:
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
           - title: Tema scuole per Wordpress
-            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito scolastico per Wordpress
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
