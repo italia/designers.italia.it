@@ -131,7 +131,7 @@ coreContent:
           - title: Sorgenti dei template HTML sito scolastico
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di una scuola
-            link: <a href='' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-scuole-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -142,7 +142,7 @@ coreContent:
           - title: Tema scuole per Wordpress
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito scolastico per Wordpress
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-scuole-wordpress-theme' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
