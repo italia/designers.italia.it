@@ -127,7 +127,7 @@ coreContent:
           - title: Anteprime dei template HTML sito
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito scolastico basati sui template HTML Bootstrap
-            link: <a href='https://design-scuole-pagine-statiche.vercel.app/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://italia.github.io/design-scuole-pagine-statiche/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Sorgenti dei template HTML sito scolastico
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di una scuola
