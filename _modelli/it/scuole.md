@@ -36,7 +36,7 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-A.svg"
       iconAlt: ""
       links:
-        - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk82wQAA"
+        - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000ocbtrQAA"
           title: Scopri i finanziamenti
           external: true
         - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa/"
