@@ -32,11 +32,11 @@ ctaContent:
   cards:
     - prefix: "1"
       title: "Richiedi un finanziamento"
-      subtitle: "Tutte le scuole italiane di 1° e 2° grado possono accedere ai fondi PNRR per l'aggiornamento del sito web. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026."
+      subtitle: "Tutte le scuole italiane possono accedere ai fondi PNRR per l'aggiornamento del sito web. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026."
       iconImage: "/assets/images/modelli/pad2026-A.svg"
       iconAlt: ""
       links:
-        - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000dk82wQAA"
+        - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000ocbtrQAA"
           title: Scopri i finanziamenti
           external: true
         - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa/"
@@ -101,11 +101,11 @@ coreContent:
         img: "/assets/icons/kit/kit_architettura.svg"
         resources:
           - title: L'architettura dell'informazione del modello scuole
-            icon: "/assets/icons/pencil.svg"
+            icon: "/assets/icons/external-link-.svg"
             description: Indicazioni su tipologie di contenuti (<em>content type</em>), sistemi di navigazione e tassonomie per tutte le aree del sito di una scuola
             link: <a href='https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit#gid=782511705' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Guida alla migrazione dei contenuti
-            icon: "/assets/icons/pencil.svg"
+            icon: "/assets/icons/external-link-.svg"
             description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito scolastico
             link: <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/risorse/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
@@ -125,15 +125,13 @@ coreContent:
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: Anteprime dei template HTML sito
-            disabled: true
-            icon: "/assets/icons/pencil.svg"
+            icon: "/assets/icons/external-link-.svg"
             description: Gli esempi delle pagine del sito scolastico basati sui template HTML Bootstrap
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://italia.github.io/design-scuole-pagine-statiche/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Sorgenti dei template HTML sito scolastico
-            disabled: true
-            icon: "/assets/icons/pencil.svg"
+            icon: "/assets/icons/external-link-.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di una scuola
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-scuole-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
@@ -142,10 +140,9 @@ coreContent:
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
           - title: Tema scuole per Wordpress
-            disabled: true
-            icon: "/assets/icons/pencil.svg"
+            icon: "/assets/icons/external-link-.svg"
             description: Il tema del sito scolastico per Wordpress
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-scuole-wordpress-theme' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
