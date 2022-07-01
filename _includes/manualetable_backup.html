@@ -1,0 +1,85 @@
+{% assign guides = site.data.guidelines %}
+{% assign family = guides | where_exp:"item","item.parent == nil" %}
+{% assign numfamily = family.size %}
+{% assign layoutClass=include.layoutClass | default:'u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl' %}
+{% assign headingClass=include.headingClass | default:'u-block u-padding-bottom-m' %}
+
+<!-- manuale dettaglio -->
+<!--<div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xs">
+<div class="Grid Grid--withGutterL guides-grid">
+{%- for main in family -%}
+	<div class="Grid-cell u-md-size1of3 u-lg-size1of3 u-sm-size1of2 u-padding-top-xxl">
+		{% if main.img %}
+			<img src="{{main.img | relative_url}}" class="guides-grid__img" alt="icona linee guida">
+		{% endif %}
+    <h3 class="u-block u-text-r-l u-layout-prose u-color-grey-ui-kit u-lineHeight-m u-margin-top-l ">
+      <a class="u-color-50" href="{{main.url}}">
+        {{main.desc}}
+      </a>
+    </h3>
+		<p>
+			{{main.body}}
+		</p>
+		<div class="u-sizeFull u-margin-top-xl">
+      {% assign items = guides | where_exp:"item","item.parent == main.desc" %}
+      <ul>
+      {%- for item in items -%}
+        <li class="u-margin-top-l u-margin-bottom-l u-text-r-xs u-posRelative">
+          <a href="{{item.url}}" class="u-color-50 u-textWeight-600 u-textClean" target="_blank">
+          {{item.desc}}
+          </a>
+        </li>
+      {%- endfor -%}
+      </ul>
+		</div>
+	</div>
+{%- endfor -%}
+</div>
+</div>-->
+
+
+<div id="manuale-capitoli" class="/*u-padding-top-xxl*/ u-padding-bottom-xxl">
+	<div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxs">
+		<!-- kits in fase, grid -->
+		<div class="u-margin-top-xl Grid Grid--withGutterM u-margin-bottom-l
+			Grid--equalHeight Grid--fill
+		">
+			<!-- single kit card -->
+			{%- for main in family -%}
+				<div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-bottom-l">
+					<article class="u-sizeFull u-text-r-s u-flex-start u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+						<div class="kitCard u-flexAlignSelfStart u-sizeFull">
+							{% if main.img %}
+								<!-- card img -->
+								<img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{main.desc}}" src="{{ main.img }}"/>
+							{% endif %}
+							<!-- card content -->
+							<div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">
+								<h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 ">
+									<span id="kitCardTitle">{{main.desc}}</span>
+								</h3>
+								<div class="u-text-r-s u-textWeight-600 u-padding-bottom-m">
+									<a class="u-textClean u-color-50" href="{{main.url | relative_url}}" aria-label="Vai al capitolo (link esterno)">Vai al capitolo</a>
+									<img alt="" class="u-margin-left-xs" src="/assets/icons/external-link-.svg">
+								</div>
+								<div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{main.body}}</div>
+							</div>
+						</div>
+					<!-- <div class="u-flexAlignSelfStart u-sizeFull u-padding-right-xxl u-padding-top-s u-padding-left-xxl u-padding-bottom-m" style="background:#f0f6fc">
+					      {% assign items = guides | where_exp:"item","item.parent == main.desc" %}
+					      <ul>
+					      {%- for item in items -%}
+					        <li class="u-margin-top-l u-margin-bottom-l u-text-r-xs u-posRelative">
+					          <a href="{{item.url}}" class="u-color-50 u-textWeight-600 u-textClean" target="_blank">
+					          {{item.desc}}
+					          </a>
+					        </li>
+					      {%- endfor -%}
+					      </ul>
+						</div> -->
+					</article>
+				</div>
+			{%- endfor -%}
+		</div>
+	</div>
+</div>
