@@ -21,8 +21,8 @@ textChunk1:
   <p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI).</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/web-analytics.html' target="_blank">Web analytics</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/web-analytics.html' target="_blank" aria-label="Web analytics (link esterno)">Web analytics</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

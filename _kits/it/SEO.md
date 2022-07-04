@@ -20,8 +20,8 @@ textChunk1:
   <p>Il kit SEO ha l’obiettivo di fornire suggerimenti operativi su come individuare il livello di visibilità dei contenuti sui motori di ricerca, in relazione a specifici “intenti di ricerca”, così come analizzare lo stato di ottimizzazione del sito dal punto di vista strutturale, contenutistico e tecnologico.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design/seo.html' target="_blank">Search engine optimization</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design/seo.html' target="_blank" aria-label="Search engine optimization (link esterno)">Search engine optimization</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

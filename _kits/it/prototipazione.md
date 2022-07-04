@@ -20,8 +20,8 @@ textChunk1:
   <p>In questo kit puoi trovare gli strumenti per costruire e visualizzare i flussi di interazione dell’utente con il servizio futuro e per progettare, sulla base di questi, i wireframe dell’interfaccia.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/prototyping.html' target="_blank">Prototipazione</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/prototyping.html' target="_blank" aria-label="Prototipazione (link esterno)">Prototipazione</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

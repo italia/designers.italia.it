@@ -20,8 +20,8 @@ textChunk1:
   <p>Il kit comprende modelli pre-organizzati per supportare la pianificazione e lo svolgimento della ricerca, ma anche l’analisi e sintesi dei suoi risultati.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html'>Service design</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' aria-label="Service design (link esterno)" target="_blank">Service design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

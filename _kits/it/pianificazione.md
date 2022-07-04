@@ -14,11 +14,11 @@ disabled: true
 
 textChunk1:
   title: A COSA SERVE
-  text: "<p>Bla bla lorem ipsum</p>"
+  text: "<p>Lorem ipsum</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='#' target="_blank">Quelle lì</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='#' target="_blank" aria-label="Soon (link esterno)">Soon</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

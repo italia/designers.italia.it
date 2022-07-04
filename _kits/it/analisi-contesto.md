@@ -19,8 +19,8 @@ textChunk1:
   text: "<p>Il kit di analisi del contesto ti consente di ottenere <strong>una visione d’insieme dei fattori e delle variabili che influenzano l'erogazione e la fruizione di un servizio digitale</strong>. L’obiettivo è quello di aiutarti a mettere a fuoco gli obiettivi e il perimetro del progetto, attività fondamentale per poi impostare in maniera bilanciata le successive attività di ricerca e di concettualizzazione.</p><p>Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi ed evolvere.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank">Service design</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank" aria-label="Service design (link esterno)">Service design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

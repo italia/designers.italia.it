@@ -22,8 +22,8 @@ textChunk1:
   <p>Il kit consiste in una serie di simboli realizzati con la libreria Sketch, ovvero porzioni pre-lavorate finalizzate alla progettazione di un’interfaccia digitale con uno stile visivo definito e coerente. I simboli ti consentono di costruire un prototipo con le varie schermate necessarie, che possono poi essere rese interattive — e gestite in maniera collaborativa nell’ambito di un team di lavoro — per es. su Invision.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-interface.html' target="_blank">User interface</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-interface.html' target="_blank" aria-label="User interface (link esterno)">User interface</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
