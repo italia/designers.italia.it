@@ -22,8 +22,8 @@ header:
   title: "Linee guida e manuale operativo di design"
   description: "Regole da rispettare e indicazioni operative di design: progettare e realizzare siti internet e servizi digitali per la Pubblica Amministrazione con i cittadini al centro"
   links:
-    - <a href="#manuale" class="u-color-grey-ui-kit">Il manuale operativo di design</a>
     - <a href="#linee-guida" class="u-color-grey-ui-kit">Le linee guida</a>
+    - <a href="#manuale" class="u-color-grey-ui-kit">Il manuale operativo di design</a>
   image: '/assets/icons/manuale/linee-guida-e-manuale.svg'
 manuale:
   title: "Il manuale operativo di design"
