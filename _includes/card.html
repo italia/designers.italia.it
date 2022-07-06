@@ -1,5 +1,5 @@
 <div class="{% if include.noHeight != true %}u-nbfc{% endif %} u-color-grey-30 u-xs-padding-all-none
-  {% if include.flat != true %}u-borderShadow-xxs u-xs-borderShadow-none u-borderRadius-m{% endif %}
+  {% if include.flat != true %}u-borderShadow-m u-xs-borderShadow-none u-borderRadius-m{% endif %}
   {{ include.classes | default: 'u-background-white' }} u-sizeFill">
   {%- if include.hasImage != false and include.image -%}
     {%- if include.rowImage -%}
