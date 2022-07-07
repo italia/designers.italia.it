@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-width: auto;
+}
+
 /** Utilities
   ================ */
 .u-letterSpace-l {
@@ -232,9 +236,12 @@ html {
   }
   &-Main-Logo {
     img {
-      max-width: 24rem;
+      max-width: 16rem;
+      @media screen and (min-width: 320px) {
+        max-width: 20rem;
+      }
       @media screen and (min-width: 992px) {
-          max-width: 36rem;
+          max-width: 24rem;
       }
     }
   }
@@ -292,8 +299,10 @@ html {
         border-right: 0.1rem solid #127ae2;
       }
     }
-    &-toggle a {
+    &-toggle {
+      a {
       text-decoration: none !important;
+      }
     }
   }
 }
