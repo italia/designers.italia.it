@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-width: auto;
+}
+
 /** Utilities
   ================ */
 .u-letterSpace-l {
@@ -206,7 +210,10 @@ html {
    ================ */
 .Header {
   &-navbar {
-    padding-bottom: 0 !important;
+    @media screen and (min-width: 992px) {
+        padding-bottom: 0 !important;
+        padding-top:3.6rem!important;
+    }
   }
   &-PinWheel {
     margin-left: -16px;
@@ -232,7 +239,13 @@ html {
   }
   &-Main-Logo {
     img {
-      max-width: 24rem;
+      max-width: 16rem;
+      @media screen and (min-width: 320px) {
+        max-width: 20rem;
+      }
+      @media screen and (min-width: 480px) {
+          max-width: 24rem;
+      }
       @media screen and (min-width: 992px) {
           max-width: 36rem;
       }
@@ -292,8 +305,10 @@ html {
         border-right: 0.1rem solid #127ae2;
       }
     }
-    &-toggle a {
+    &-toggle {
+      a {
       text-decoration: none !important;
+      }
     }
   }
 }
@@ -305,6 +320,15 @@ html {
 
 /** Header tweaks
     ===================== */
+.Header-toggleText {
+  color:#06c;
+  font-size: 14px!important;
+}
+.Hamburger-toggleContainer {
+    @media screen and (min-width: 768px) {
+      padding-top: 2rem;
+    }
+}
 .Hamburger-toggle,
 .Hamburger-toggle:after,
 .Hamburger-toggle:before {
@@ -410,8 +434,8 @@ html {
       padding-right: 3.2rem !important;
       padding-left: 3.2rem !important;
       @media screen and (max-width: 1150px) {
-        padding-right: 1.2rem !important;
-        padding-left: 1.2rem !important;
+        padding-right: 2.6rem !important;
+        padding-left: 2.6rem !important;
       }
 
       &.is-current {
@@ -1417,5 +1441,12 @@ html {
   .u-sm-padding-x-xxl {
     padding-left: 4rem!important;
     padding-right: 4rem!important;
+  }
+}
+
+/* more tweaks for small widths and 1024/400% */
+@media screen and (max-width:320px) {
+  .u-padding-r-all {
+    padding: .5em!important;
   }
 }
