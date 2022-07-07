@@ -19,7 +19,7 @@
         <h2 class="u-text-r-xxl u-textWeight-700 u-padding-r-top">Le notizie</h2>
       </div>
 
-      <div class="Grid Grid--withGutter Grid--equalHeight u-padding-all-l guides-grid u-posRelative">
+      <div class="Grid Grid--withGutter Grid--equalHeight u-padding-r-all guides-grid u-posRelative">
         {%- if site.medium_feed -%}
         {%- assign posts = site.medium_feed | where: "medium_detected_lang", page.lang | sort: "medium_firstpublished_at"
         | reverse -%}
