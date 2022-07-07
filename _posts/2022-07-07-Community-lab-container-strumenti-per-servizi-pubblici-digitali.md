@@ -27,6 +27,6 @@ L’incontro si è chiuso con le domande dei partecipanti e con una call to acti
 
 I community lab per questa stagione terminano qui, ma è solo un arrivederci: appuntamento a dopo l’estate! 
 
-Nel frattempo, [guarda la registrazione di questo lab](https://www.youtube.com/watch?v=SwbP7DA9eR0&t=1995s){:target="_blank" rel="noopener noreferrer"} e scarica [la presentazione in PDF](https://developers.italia.it/assets/images/posts/2022-05-30/CommunityLab-2022-05-25.pdf){:target="_blank" rel="noopener noreferrer"}.
+Nel frattempo, [guarda la registrazione di questo lab](https://www.youtube.com/watch?v=SwbP7DA9eR0){:target="_blank" rel="noopener noreferrer"} e scarica [la presentazione in PDF](https://developers.italia.it/assets/images/posts/2022-07-07/290622_Community_lab.pdf){:target="_blank" rel="noopener noreferrer"}.
 
 Per ricevere i prossimi aggiornamenti resta in contatto con noi su [Slack Developers](https://slack.developers.italia.it/){:target="_blank" rel="noopener noreferrer"}, iscriviti alla nostra [mailing list](https://unisciti.designers.italia.it){:target="_blank" rel="noopener noreferrer"} e continua a seguirci sugli account Twitter di Designers Italia](https://twitter.com/DesignersITA){:target="_blank" rel="noopener noreferrer"} e [Developers Italia](https://twitter.com/developersITA){:target="_blank" rel="noopener noreferrer"}.
