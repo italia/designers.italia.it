@@ -210,7 +210,10 @@ body {
    ================ */
 .Header {
   &-navbar {
-    padding-bottom: 0 !important;
+    @media screen and (min-width: 992px) {
+        padding-bottom: 0 !important;
+        padding-top:3.6rem!important;
+    }
   }
   &-PinWheel {
     margin-left: -16px;
@@ -240,8 +243,11 @@ body {
       @media screen and (min-width: 320px) {
         max-width: 20rem;
       }
-      @media screen and (min-width: 992px) {
+      @media screen and (min-width: 480px) {
           max-width: 24rem;
+      }
+      @media screen and (min-width: 992px) {
+          max-width: 36rem;
       }
     }
   }
@@ -314,6 +320,15 @@ body {
 
 /** Header tweaks
     ===================== */
+.Header-toggleText {
+  color:#06c;
+  font-size: 14px!important;
+}
+.Hamburger-toggleContainer {
+    @media screen and (min-width: 768px) {
+      padding-top: 2rem;
+    }
+}
 .Hamburger-toggle,
 .Hamburger-toggle:after,
 .Hamburger-toggle:before {
