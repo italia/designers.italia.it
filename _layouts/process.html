@@ -8,7 +8,7 @@ layout: default
   <div class="u-layout-wide u-layoutCenter u-padding-r-top u-color-white u-border-bottom-xxs u-padding-r-bottom">
 
     <!-- header -->
-    <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl u-margin-bottom-xxl">
+    <div class="Grid Grid--alignCenter u-padding-r-all u-margin-top-xxl u-margin-bottom-xxl">
       <div class="Grid-cell u-lg-size5of12 u-md-size5of12">
         <h1 class="u-text-h1">{{page.header.title}}</h1>
         <div class="u-text-r-l">
@@ -39,7 +39,7 @@ layout: default
     {%- for fase in page.fasi -%}
     <div id="{{ fase.slug }}" class="fase u-padding-top-xxl u-padding-bottom-xxl">
 
-      <div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl">
+      <div class="u-layout-wide u-layoutCenter u-padding-r-all u-padding-top-xxl">
 
         <!-- fase header -->
         <div class="Grid Grid--withGutter u-margin-top-l u-padding-top-xxl">
@@ -80,7 +80,7 @@ layout: default
                     <img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{item.title}}" src="{{ item.iconImage }}"/>
                   {% endif %}
                   <!-- card content -->
-                  <div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">
+                  <div class="u-padding-r-right u-padding-r-left u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">
                     <h3 class="u-text-r-xs u-padding-bottom-s u-font-weight-bold">
                       {% if item.disabled == true %}
                         <span id="kitCardTitle">{{item.title}}</span>
