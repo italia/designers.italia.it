@@ -85,7 +85,7 @@ orientarsiContent:
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
       buttonTitle: Vai alla documentazione
-      buttonUrl: https://docs.italia.it/italia/designers-italia/design-comuni-docs/
+      buttonUrl: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/
       buttonExternal: true
 
 coreContent:
