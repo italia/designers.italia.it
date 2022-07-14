@@ -38,5 +38,5 @@ guide:
   description: "Le regole tecniche da rispettare in ogni fornitura di prodotti digitali per la Pubblica Amministrazione, hanno lo scopo di migliorare e misurare la qualità della progettazione e della realizzazione."
   thumbLarge: '/assets/icons/kit/linee-guida-e-manuale.svg'
   cta:
-    - '<a class="u-margin-all-xxs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-all-s u-padding-right-l u-padding-left-l u-text-r-xxs u-borderShadow-m" href="#" target="_blank"><span class="u-text-r-xxs u-textUppercase u-textWeight-700">Leggi le Linee guida su Docs Italia</span></a>'
+    - '<a class="u-margin-all-xxs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-all-s u-padding-right-l u-padding-left-l u-text-r-xxs u-borderShadow-m" href="https://docs.italia.it/italia/design/lg-design-servizi-web/" target="_blank"><span class="u-text-r-xxs u-textUppercase u-textWeight-700">Leggi le Linee guida su Docs Italia</span></a>'
 ---
