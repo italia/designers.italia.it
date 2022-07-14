@@ -84,9 +84,12 @@ orientarsiContent:
       <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate su <a href="https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
-      buttonTitle: Vai alla documentazione
+      buttonTitle: Vai al report della ricerca
       buttonUrl: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/
       buttonExternal: true
+      buttonSecondaryTitle: Vai alla documentazione
+      buttonSecondaryUrl: https://docs.italia.it/italia/designers-italia/design-comuni-docs/
+      buttonSecondaryExternal: true
 
 coreContent:
   title: Il modello di sito comunale
