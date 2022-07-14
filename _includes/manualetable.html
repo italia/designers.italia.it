@@ -18,7 +18,7 @@
 						<div class="kitCard u-flexAlignSelfStart u-sizeFull">
 							{% if main.img %}
 								<!-- card img -->
-								<div class="u-background-{{chapterIndex | times:10 }}">
+								<div class="u-background-50">
 									<img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{main.desc}}" src="{{ main.img }}"/>
 								</div>
 							{% endif %}
@@ -35,27 +35,6 @@
 									<img alt="" class="u-margin-left-xs" src="/assets/icons/external-link-.svg">
 								</div>
 								<div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{main.body}}</div>
-							</div>
-						</div>
-						<!-- indice sottocapitoli -->
-						<div class="Accordion Accordion--default fr-accordion js-fr-accordion fr-accordion--is-ready" id="accordion-1" role="tablist" aria-multiselectable="true" style="border-top:1px solid #D8D8D8">
-							<h2 class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{chapterIndex}}" role="tab" aria-controls="accordion-panel-0" tabindex="0" aria-selected="false" aria-expanded="false" style="background-position-x: 24px;">
-								<span class="Accordion-link" style="font-size:16px!important; padding-left:24px!important">INDICE CONTENUTI</span>
-							</h2>
-							<!-- sottocapitoli -->
-							<div id="accordion-panel-{{chapterIndex}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel" role="tabpanel" aria-labelledby="accordion-header-0" tabindex="0" aria-hidden="true" style="height: 0px;">
-								<div class="u-flexAlignSelfStart u-sizeFull u-padding-right-xxl u-padding-top-s u-padding-left-xxl u-padding-bottom-m" style="background:#f0f6fc">
-							      {% assign items = guides | where_exp:"item","item.parent == main.desc" %}
-							      <ul>
-							      {%- for item in items -%}
-							        <li class="u-margin-top-l u-margin-bottom-l u-text-r-xs u-posRelative">
-							          <a href="{{item.url}}" class="u-color-50 u-textWeight-600 u-textClean" target="_blank">
-							          {{item.desc}}
-							          </a>
-							        </li>
-							      {%- endfor -%}
-							      </ul>
-								</div>
 							</div>
 						</div>
 					</article>
