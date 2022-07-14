@@ -291,10 +291,10 @@ serviziContent:
       linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFi:
         - title: Naviga mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
         - title: Naviga desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19482&node-id=1136%3A280880&viewport=466%2C48%2C0.05&scaling=scale-down&starting-point-node-id=1136%3A280880"
           external: true
     - title: "Come progettare modelli di servizio"
       subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà. Se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per creare flussi di servizio personalizzati."
