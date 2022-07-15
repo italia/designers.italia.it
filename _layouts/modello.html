@@ -134,8 +134,8 @@ layout: default
           <!-- cta button -->
           {% if ctaContent.buttonTitle %}
           <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl u-textCenter">
-            <a href="{{ctaContent.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if ctaContent.buttonExternal %} aria-label="{{ctaContent.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{ctaContent.buttonTitle}}</span>
+            <a href="{{ctaContent.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" {% if ctaContent.buttonExternal %} aria-label="{{ctaContent.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                <span class="u-text-r-xs u-textUppercase u-textWeight-700">{{ctaContent.buttonTitle}}</span>
               </a>
           </div>
           {% endif %}
@@ -197,9 +197,14 @@ layout: default
                     <!-- cta button -->
                     {% if item.buttonTitle %}
                     <div class="u-layout-wide u-layoutCenter u-padding-bottom-xxl">
-                      <a href="{{item.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" style="min-width: 16em" {% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                          <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-l u-padding-left-l">{{item.buttonTitle}}</span>
+                      <a href="{{item.buttonUrl}}" class="{% if item.buttonSecondaryTitle %}u-margin-r-right{% endif %} u-inlineBlock u-textClean u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-r-all u-borderShadow-m" {% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                          <span class="u-text-r-xs u-textUppercase u-textWeight-700 ">{{item.buttonTitle}}</span>
                         </a>
+                        {% if item.buttonSecondaryTitle %}
+                        <a href="{{item.buttonSecondaryUrl}}" class="u-inlineBlock u-textClean u-borderRadius-s u-border-all-xs u-color-grey-ui-kit u-padding-r-all u-borderShadow-m u-margin-r-top" style="border-color:#0BD9D3 !important" {% if item.buttonSecondaryExternal %} aria-label="{{item.buttonSecondaryTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                            <span class="u-text-r-xs u-textUppercase u-textWeight-700 ">{{item.buttonSecondaryTitle}}</span>
+                          </a>
+                        {% endif %}
                     </div>
                     {% endif %}
                   </div>
@@ -377,8 +382,8 @@ layout: default
                   {{item.buttonTitle}}
                 </a>
               {% else %}
-                <a href="{{item.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-xs u-border-all-xs u-padding-r-all u-color-50" style="min-width: 16em" {% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
-                  <span class="u-text-r-xs u-textUppercase u-textWeight-700 u-padding-right-m u-padding-left-m">{{item.buttonTitle}}</span>
+                <a href="{{item.buttonUrl}}" class="u-inlineBlock u-textClean u-borderRadius-xs u-border-all-xs u-padding-r-all u-color-50"{% if item.buttonExternal %} aria-label="{{item.buttonTitle}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
+                  <span class="u-text-r-xs u-textUppercase u-textWeight-700">{{item.buttonTitle}}</span>
                 </a>
               {% endif %}
             </div>

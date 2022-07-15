@@ -84,9 +84,12 @@ orientarsiContent:
       <p>L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate su <a href="https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1" target="_blank" aria-label="eGovernment benchmark (si apre in una nuova finestra)">eGovernment benchmark</a><img class="u-margin-left-xs" alt="" src="/assets/icons/external-link-.svg" /></p>'
       iconImage: "/assets/images/modelli/comuni-2022-B-full.png"
       iconAlt: ""
-      buttonTitle: Vai alla documentazione
-      buttonUrl: https://docs.italia.it/italia/designers-italia/design-comuni-docs/
+      buttonTitle: Vai al report della ricerca
+      buttonUrl: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/
       buttonExternal: true
+      buttonSecondaryTitle: Vai alla documentazione
+      buttonSecondaryUrl: https://docs.italia.it/italia/designers-italia/design-comuni-docs/
+      buttonSecondaryExternal: true
 
 coreContent:
   title: Il modello di sito comunale
@@ -291,10 +294,10 @@ serviziContent:
       linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFi:
         - title: Naviga mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
         - title: Naviga desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
+          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19482&node-id=1136%3A280880&viewport=466%2C48%2C0.05&scaling=scale-down&starting-point-node-id=1136%3A280880"
           external: true
     - title: "Come progettare modelli di servizio"
       subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà. Se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per creare flussi di servizio personalizzati."
