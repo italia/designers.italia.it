@@ -21,7 +21,7 @@ textChunk1:
 
 guideLinesChunk:
   title: MANUALE OPERATIVO DI DESIGN
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design/seo.html' target="_blank" aria-label="Search engine optimization (link esterno)">Search engine optimization</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/seo.html' target="_blank" aria-label="Search engine optimization (link esterno)">Search engine optimization</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
