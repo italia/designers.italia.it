@@ -23,7 +23,7 @@ textChunk1:
 
 guideLinesChunk:
   title: MANUALE OPERATIVO DI DESIGN
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-interface.html' target="_blank" aria-label="User interface (link esterno)">User interface</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/il-progetto-della-interfaccia-utente.html' target="_blank" aria-label="Il progetto dell'interfaccia utente (link esterno)">Il progetto dell'interfaccia utente</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
