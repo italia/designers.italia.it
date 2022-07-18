@@ -22,7 +22,7 @@ textChunk1:
 
 guideLinesChunk:
   title: MANUALE OPERATIVO DI DESIGN
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/usabilita.html' target="_blank" aria-label="Usabilità (link esterno)">Usabilità</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/test-usabilita.html' target="_blank" aria-label="Test di usabilità (link esterno)">Test di usabilità</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
