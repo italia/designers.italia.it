@@ -20,7 +20,7 @@ redirect_from:
   - /manuale-operativo/
 header:
   title: "Linee guida e manuale operativo di design"
-  description: "Regole tecniche e indicazioni operative di design per definire e orientare la progettazione e la realizzazione di siti e servizi digitali della Pubblica Amministrazione"
+  description: "Le regole tecniche da rispettare e le indicazioni operative di design per orientare la progettazione e la realizzazione di siti e servizi digitali della Pubblica Amministrazione"
   links:
     - <a href="#linee-guida" class="u-color-grey-ui-kit">Le linee guida</a>
     - <a href="#manuale" class="u-color-grey-ui-kit">Il manuale operativo di design</a>
