@@ -22,7 +22,7 @@ textChunk1:
 
 guideLinesChunk:
   title: MANUALE OPERATIVO DI DESIGN
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/web-analytics.html' target="_blank" aria-label="Web analytics (link esterno)">Web analytics</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/web-analytics.html' target="_blank" aria-label="Web analytics (link esterno)">Web analytics</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
