@@ -35,7 +35,7 @@ manuale:
 guide:
   title: "Le linee guida di design per i siti internet e i servizi digitali della PA"
   subtitle: 
-  description: "Linee guida contenenti regole tecniche da rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione, ai sensi dell'art. 53, comma 1 ter - Siti internet delle pubbliche amministrazioni del Codice dell'Amministrazione Digitale. Hanno l'obiettivo di migliorare la qualità della progettazione e ottimizzare l'esperienza digitale dei cittadini."
+  description: "Regole tecniche da rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione, ai sensi dell'art. 53, comma 1 ter - Siti internet delle pubbliche amministrazioni del Codice dell'Amministrazione Digitale."
   thumbLarge: '/assets/icons/kit/linee-guida-e-manuale.svg'
   cta:
     - '<a class="u-margin-all-xxs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-all-s u-padding-right-l u-padding-left-l u-text-r-xxs u-borderShadow-m" aria-label="Leggi le Linee guida su Docs Italia (link esterno)" href="https://docs.italia.it/italia/design/lg-design-servizi-web/" target="_blank"><span class="u-text-r-xxs u-textUppercase u-textWeight-700">Leggi le Linee guida su Docs Italia</span></a>'
