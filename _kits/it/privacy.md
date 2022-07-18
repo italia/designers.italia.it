@@ -19,7 +19,7 @@ textChunk1:
 
   guideLinesChunk:
     title: MANUALE OPERATIVO DI DESIGN
-    link: <a href='#' target="_blank" aria-label="Soon (link esterno)">Soon</a>
+    link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/privacy-by-design.html' target="_blank" aria-label="Privacy by design (link esterno)">Privacy by design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
