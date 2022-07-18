@@ -18,7 +18,7 @@ textChunk1:
 
 guideLinesChunk:
   title: MANUALE OPERATIVO DI DESIGN
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank" aria-label="Service design (link esterno)">Service design</a>
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html' target="_blank" aria-label="Questionari (link esterno)">Questionari</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
