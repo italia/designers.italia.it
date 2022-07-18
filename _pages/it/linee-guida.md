@@ -34,7 +34,7 @@ manuale:
     - '<a class="u-margin-all-xxs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-all-s u-padding-right-l u-padding-left-l u-text-r-xxs u-borderShadow-m" aria-label="Leggi il manuale su Docs Italia (link esterno)" href="https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs" target="_blank"><span class="u-text-r-xxs u-textUppercase u-textWeight-700">Leggi il manuale su Docs Italia</span></a>'
 guide:
   title: "Le linee guida di design per i siti internet e i servizi digitali della PA"
-  subtitle: "Emesse ai sensi dell’art. 71 del CAD e della Determinazione AGID n. 160 del 2018"
+  subtitle: "Linee guida contenenti regole tecniche, ai sensi dell'art. 53, comma 1 ter - Siti internet delle pubbliche amministrazioni del Codice dell'Amministrazione Digitale."
   description: "Le regole tecniche da rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione. Hanno l'obiettivo di migliorare la qualità della progettazione e ottimizzare l'esperienza digitale dei cittadini."
   thumbLarge: '/assets/icons/kit/linee-guida-e-manuale.svg'
   cta:
