@@ -31,12 +31,12 @@ manuale:
   description: "Uno strumento di lavoro dedicato alla PA e i suoi fornitori, ha l’obiettivo di fornire indicazioni operative a supporto della progettazione e della realizzazione dei punti di contatto digitali verso il cittadino."
   thumbLarge: '/assets/icons/kit/linee-guida-e-manuale.svg'
   cta:
-    - '<a class="u-margin-all-xxs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-all-s u-padding-right-l u-padding-left-l u-text-r-xxs u-borderShadow-m" href="#" target="_blank"><span class="u-text-r-xxs u-textUppercase u-textWeight-700">Leggi il manuale su Docs Italia</span></a>'
+    - '<a class="u-margin-all-xxs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-all-s u-padding-right-l u-padding-left-l u-text-r-xxs u-borderShadow-m" aria-label="Leggi il manuale su Docs Italia (link esterno)" href="https://docs.italia.it/docs/manuale-operativo-design-docs" target="_blank"><span class="u-text-r-xxs u-textUppercase u-textWeight-700">Leggi il manuale su Docs Italia</span></a>'
 guide:
   title: "Le linee guida di design per i siti internet e i servizi digitali della PA"
   subtitle: "Emesse ai sensi dell’art. 71 del CAD e della Determinazione AGID n. 160 del 2018"
   description: "Le regole tecniche da rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione. Hanno l'obiettivo di migliorare la qualità della progettazione e ottimizzare l'esperienza digitale dei cittadini."
   thumbLarge: '/assets/icons/kit/linee-guida-e-manuale.svg'
   cta:
-    - '<a class="u-margin-all-xxs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-all-s u-padding-right-l u-padding-left-l u-text-r-xxs u-borderShadow-m" href="https://docs.italia.it/italia/design/lg-design-servizi-web/" target="_blank"><span class="u-text-r-xxs u-textUppercase u-textWeight-700">Leggi le Linee guida su Docs Italia</span></a>'
+    - '<a class="u-margin-all-xxs u-inlineBlock u-textClean u-textCenter u-borderRadius-s u-background-teal-60 u-color-grey-ui-kit u-padding-all-s u-padding-right-l u-padding-left-l u-text-r-xxs u-borderShadow-m" aria-label="Leggi le Linee guida su Docs Italia (link esterno)" href="https://docs.italia.it/italia/design/lg-design-servizi-web/" target="_blank"><span class="u-text-r-xxs u-textUppercase u-textWeight-700">Leggi le Linee guida su Docs Italia</span></a>'
 ---
