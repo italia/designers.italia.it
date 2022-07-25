@@ -194,11 +194,6 @@ serviziContent:
         - name: Domanda di contributi
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A91595&node-id=1005%3A95646&viewport=501%2C48%2C0.26&scaling=scale-down&starting-point-node-id=1067%3A117214"
-          external: true
       linksHiFiTitle: Esempio domanda assegno di maternità
       linksHiFi:
         - title: Naviga mobile
@@ -216,11 +211,6 @@ serviziContent:
         - name: Partecipazione ad un concorso pubblico
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A101174&node-id=1005%3A111701&viewport=501%2C48%2C0.23&scaling=scale-down&starting-point-node-id=1067%3A115961"
-          external: true
       linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
       linksHiFi:
         - title: Naviga mobile
@@ -240,11 +230,6 @@ serviziContent:
         - name: Occupazione suolo pubblico
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1033%3A492653&node-id=1033%3A505782&viewport=501%2C48%2C0.18&scaling=scale-down&starting-point-node-id=1067%3A115451"
-          external: true
       linksHiFiTitle: Esempio richiesta permesso ZTL
       linksHiFi:
         - title: Naviga mobile
@@ -264,11 +249,6 @@ serviziContent:
         - name: Tributi IMU
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A137467&node-id=1067%3A147528&viewport=501%2C48%2C0.11&scaling=scale-down&starting-point-node-id=1067%3A137469"
-          external: true
       linksHiFiTitle: Esempio pagamento multa
       linksHiFi:
         - title: Naviga mobile
@@ -286,11 +266,6 @@ serviziContent:
         - name: Trasporto scolastico
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A121340&node-id=1067%3A130935&viewport=501%2C48%2C0.13&scaling=scale-down&starting-point-node-id=1067%3A121342"
-          external: true
       linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFi:
         - title: Naviga mobile
@@ -308,11 +283,6 @@ serviziContent:
       linksHiFi:
         - title: Naviga
           url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
-          external: true
-      linksMidFiTitle: Libreria componenti per designer
-      linksMidFi:
-        - title: Vai alla risorsa
-          url: "https://www.figma.com/file/WkVMh3JnkyUQGE3POb0TSI/Designers-Italia---Documentazione-Moduli-e-Sezioni?node-id=0%3A1"
           external: true
   superAccordion:
     title: STRUMENTI
