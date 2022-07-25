@@ -145,7 +145,6 @@ coreContent:
             description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
           - title: Sorgenti dei template HTML sito istituzionale
-            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
             link: <a href='https://github.com/italia/design-comuni-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
