@@ -182,7 +182,7 @@ serviziContent:
       items:
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' target="_blank" >La conformità ai servizi</a>
-  cardsTitle: "SERVIZI"
+  cardsTitle: "QUALI SONO"
   cards:
     - title: "Vantaggi economici"
       subtitle: "Il flusso di interazione per la richiesta di un vantaggio economico vincolato dalla presenza di determinati requisiti di idoneità, come:"
@@ -285,7 +285,7 @@ serviziContent:
           url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
           external: true
   superAccordion:
-    title: STRUMENTI
+    title: COME SI REALIZZANO
     accordions:
       - title: Template HTML per i servizi
         text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>front-end</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
