@@ -303,6 +303,9 @@ serviziContent:
             description: Descrizione della risorsa
             icon: "/assets/icons/external-link.svg"
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: 2. Progettare i flussi
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget odio at ante cursus pulvinar. Vivamus nec nisl vulputate, dictum nisi vitae, posuere purus."
         img: "/assets/icons/kit/kit_prototipazione.svg"
@@ -323,6 +326,9 @@ serviziContent:
           - title: Libreria dei componenti
             description: La libreria dei componenti per Figma
             link: <a href="#">Link a Figma</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: 3. Realizzare il servizio
         text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>front-end</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
