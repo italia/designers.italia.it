@@ -314,15 +314,20 @@ serviziContent:
             description: Descrizione dei diagrammi di flusso 
             otherResources:
               - description: Diagramma di flusso per Vantaggi Economici
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Iscrizione Graduatoria
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Permessi e Autorizzazioni
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Pagamenti Dovuti
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Servizi a Pagamento
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
           - title: Libreria dei componenti
             description: La libreria dei componenti per Figma
             link: <a href="#">Link a Figma</a>
