@@ -328,8 +328,9 @@ serviziContent:
                 link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
           - title: Libreria dei componenti
-            description: La libreria dei componenti per Figma
-            link: <a href="#">Link a Figma</a>
+            description: La libreria dei componenti UI per creare un servizio. Versione per Figma.
+            link: <a href="https://www.figma.com/file/WkVMh3JnkyUQGE3POb0TSI/Designers-Italia---Documentazione-Moduli-e-Sezioni?node-id=0%3A1" aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            icon: "/assets/icons/external-link.svg"
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
