@@ -287,19 +287,65 @@ serviziContent:
   superAccordion:
     title: COME SI REALIZZANO
     accordions:
-      - title: Template HTML per i servizi
+      - title: 1. Comprendere lo stato dell'arte
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget odio at ante cursus pulvinar. Vivamus nec nisl vulputate, dictum nisi vitae, posuere purus. "
+        img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
+        resources:
+          - title: Archetipi flussi di servizio
+            description: Descrizione della risorsa
+            icon: "/assets/icons/external-link.svg"
+            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Criteri di conformità
+            description: Descrizione della risorsa
+            icon: "/assets/icons/external-link.svg"
+            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Catalogo del riuso
+            description: Descrizione della risorsa
+            icon: "/assets/icons/external-link.svg"
+            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+      - title: 2. Progettare i flussi
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget odio at ante cursus pulvinar. Vivamus nec nisl vulputate, dictum nisi vitae, posuere purus."
+        img: "/assets/icons/kit/kit_prototipazione.svg"
+        resources:
+          - title: Diagrammi di flusso
+            description: Descrizione dei diagrammi di flusso 
+            otherResources:
+              - description: Diagramma di flusso per Vantaggi Economici
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+              - description: Diagramma di flusso per Iscrizione Graduatoria
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+              - description: Diagramma di flusso per Permessi e Autorizzazioni
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+              - description: Diagramma di flusso per Pagamenti Dovuti
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+              - description: Diagramma di flusso per Servizi a Pagamento
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+          - title: Libreria dei componenti
+            description: La libreria dei componenti per Figma
+            link: <a href="#">Link a Figma</a>
+      - title: 3. Realizzare il servizio
         text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>front-end</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: I template HTML per i servizi digitali
-            disabled: true
-            icon: "/assets/icons/pencil.svg"
+            icon: "/assets/icons/external-link.svg"
             description: I template HTML dedicati alla costruzione dei flussi di servizi digitali per il cittadino
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            otherResources:
+              - description: Template per Vantaggi Economici
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+              - description: Template per Iscrizione a Graduatoria
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+              - description: Template per Permessi e Autorizzazioni
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+              - description: Template per Pagamenti Dovuti
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+              - description: Template per Servizi a Pagamento
+                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
-
+    
 tags:
   - web-development
   - information-architecture
