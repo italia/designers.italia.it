@@ -98,7 +98,7 @@ coreContent:
   occhiello: A COSA SERVE
   text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti: chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per <strong>trovare con facilità le informazioni di cui hanno bisogno</strong>. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’esperienza coerente tra le varie amministrazioni.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
   rightColumnItems:
-    - title: DOCUMENTAZIONE
+    - title: DOCUMENTI UTILI
       items:
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
@@ -177,7 +177,7 @@ serviziContent:
   text: "<p>Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
   <p>Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per <strong>rappresentare le principali interazioni del cittadino con il Comune</strong> e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
   rightColumnItems:
-    - title: DOCUMENTAZIONE
+    - title: DOCUMENTI UTILI
       items:
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' target="_blank" >La conformità ai servizi</a>
