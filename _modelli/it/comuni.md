@@ -290,18 +290,22 @@ serviziContent:
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget odio at ante cursus pulvinar. Vivamus nec nisl vulputate, dictum nisi vitae, posuere purus. "
         img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
         resources:
-          - title: Archetipi flussi di servizio
-            description: Descrizione della risorsa
+          - title: Checklist delle attività progettuali
+            description: Usa la checklist per tenere traccia delle attività chiave da svolgere
+            link: <a href='https://docs.google.com/document/d/1E76BHQ5BnyopPU8_7i6VLfeteGxT1CttHnnuM3g5xb8/edit#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             icon: "/assets/icons/external-link.svg"
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Archetipi - flussi di servizio
+            description: Individua quale flusso e risorse utilizzare per il servizio scelto
+            icon: "/assets/icons/external-link.svg"
+            link: <a href='https://docs.google.com/spreadsheets/d/12RgHGrhrGKhAGOUf2kOThrgIEyFngknVOhoVIrAeOOk/edit' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Criteri di conformità
-            description: Descrizione della risorsa
+            description: Tutti i requisiti minimi da rispettare per l’adesione al modello e le raccomandazioni aggiuntive per migliorare l’esperienza utente 
             icon: "/assets/icons/external-link.svg"
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Catalogo del riuso
-            description: Descrizione della risorsa
+            description: Un catalogo che raccoglie soluzioni per l’implementazione esistenti
             icon: "/assets/icons/external-link.svg"
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://developers.italia.it/it/search?pnrr=1&pnrr_target=Comuni&pnrr_measure=1.4.1&type=all_catalogue&sort_by=release_date&page=0#68d7bad414e40309778a939a5e4da9c2809011d7' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
@@ -312,20 +316,20 @@ serviziContent:
           - title: Diagrammi di flusso
             description: Descrizione dei diagrammi di flusso 
             otherResources:
-              - description: Diagramma di flusso per Vantaggi Economici
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
-                icon: "/assets/icons/external-link.svg"
-              - description: Diagramma di flusso per Iscrizione Graduatoria
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
-                icon: "/assets/icons/external-link.svg"
-              - description: Diagramma di flusso per Permessi e Autorizzazioni
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
+              - description: Diagramma di flusso per Permessi e Documenti
+                link: <a href='https://drive.google.com/file/d/1X_plEwMUT2NhAUHUoMuy-RbasRROQuup/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Pagamenti Dovuti
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
+                link: <a href='https://drive.google.com/file/d/1cd9PL4ghpisa0O2NDWvL6qcFD-fdkNej/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Diagramma di flusso per Vantaggi Economici
+                link: <a href='https://drive.google.com/file/d/1pV7KIpjj2Z4pHyytyqVac1Srj7FrOej0/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Diagramma di flusso per Iscrizione in Graduatoria
+                link: <a href='https://drive.google.com/file/d/1Km09i_yuKic7Rh5KSOzWz7voNtplJ0Ke/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Servizi a Pagamento
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)"  target="_blank">Vai alla risorsa</a>
+                link: <a href='https://drive.google.com/file/d/1pJs7JBZA2YvBycLrWeKVbyOPSZ23Zy_x/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
           - title: Libreria dei componenti
             description: La libreria dei componenti UI per creare un servizio. Versione per Figma.
