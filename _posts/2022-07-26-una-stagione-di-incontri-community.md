@@ -2,6 +2,7 @@
 layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
+title: Una stagione di incontri community
 subtitle: "Community call e community lab dedicate ai servizi pubblici digitali: facciamo un bilancio insieme."
 date: 2022-07-26 08:00:00 +0200
 pinned: false
