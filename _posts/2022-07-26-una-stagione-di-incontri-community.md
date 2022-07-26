@@ -35,7 +35,7 @@ Per rivivere la stagione che ci lasciamo alle spalle e recuperare qualche puntat
 
 #### Community lab
 
-- L’uso di Git ([23 febbraio](https://www.youtube.com/watch?v=2Ph4VSyi9lU&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&index=9&t=2s))
+- L’uso di Git ([23 febbraio](https://www.youtube.com/watch?v=2Ph4VSyi9lU&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&index=9))
 - Bootstrap Italia 2.0 ([23 marzo](https://designers.italia.it/notizie/Accessibilita-migliorata-con-bootstrap-italia/))
 - Il nuovo UI Kit e l’introduzione dei design token ([20 aprile](https://designers.italia.it/notizie/Community-lab-a-che-punto-siamo-con-UIkit-design-token/))
 - Progettiamo API REST per la Pubblica Amministrazione ([25 maggio](https://designers.italia.it/notizie/Progettare-API-interoperabili-conformi-linee-guida-Agid/))
