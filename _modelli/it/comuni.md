@@ -283,24 +283,24 @@ serviziContent:
       designerType: true
       iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
-      linksHiFiTitle: Tutti i prototipi disponibili
-      linksHiFi:
-        - title: Naviga
+      linksMidFiTitle: Tutti i prototipi disponibili
+      linksMidFi:
+        - title: Vai alle risorse
           url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
           external: true
   superAccordion:
     title: COME SI REALIZZANO
     accordions:
-      - title: 1. Comprendere lo stato dell'arte
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget odio at ante cursus pulvinar. Vivamus nec nisl vulputate, dictum nisi vitae, posuere purus. "
+      - title: 1. Comprendi lo stato dell'arte
+        text: "Definisci gli obiettivi e il perimetro del progetto, individuando le attività da svolgere e i criteri a cui attenersi per essere conformi al modello. Analizzare i processi amministrativi e tecnologici relativi ai servizi da digitalizzare è fondamentale per comprendere la tipologia di flusso (archetipo) da seguire come esempio nella progettazione."
         img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
         resources:
           - title: Checklist delle attività progettuali
             description: Usa la checklist per tenere traccia delle attività chiave da svolgere
             link: <a href='https://docs.google.com/document/d/1E76BHQ5BnyopPU8_7i6VLfeteGxT1CttHnnuM3g5xb8/edit#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             icon: "/assets/icons/external-link.svg"
-          - title: Archetipi - flussi di servizio
-            description: Individua quale flusso e risorse utilizzare per il servizio scelto
+          - title: Tipologie di flussi di servizio
+            description: Individua il flusso di interazione in cui rientra il servizio scelto e da quali componenti è composto
             icon: "/assets/icons/external-link.svg"
             link: <a href='https://docs.google.com/spreadsheets/d/12RgHGrhrGKhAGOUf2kOThrgIEyFngknVOhoVIrAeOOk/edit' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Criteri di conformità
@@ -308,14 +308,14 @@ serviziContent:
             icon: "/assets/icons/external-link.svg"
             link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Catalogo del riuso
-            description: Un catalogo che raccoglie soluzioni per l’implementazione esistenti
+            description: Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni
             icon: "/assets/icons/external-link.svg"
             link: <a href='https://developers.italia.it/it/search?pnrr=1&pnrr_target=Comuni&pnrr_measure=1.4.1&type=all_catalogue&sort_by=release_date&page=0#68d7bad414e40309778a939a5e4da9c2809011d7' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
-      - title: 2. Progettare i flussi
-        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget odio at ante cursus pulvinar. Vivamus nec nisl vulputate, dictum nisi vitae, posuere purus."
+      - title: 2. Progetta i flussi
+        text: "Una volta individuata la tipologia di flusso di riferimento, consulta il relativo diagramma grafico per progettare l’interazione. Ogni diagramma presenta i componenti (chiamati moduli e sezioni) e l’ordine di assemblaggio per creare un flusso di interazione per la fruizione del servizio digitale."
         img: "/assets/icons/kit/kit_prototipazione.svg"
         resources:
           - title: Diagrammi di flusso
@@ -344,24 +344,17 @@ serviziContent:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
       - title: 3. Realizzare il servizio
-        text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>front-end</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
+        text: "<p>I template HTML, pronti all’uso e già validati in termini di accessibilità, permettono di assemblare rapidamente le schermate necessarie alla fruizione del servizio da parte del cittadino. Seleziona i template relativi alla tipologia di flusso per il servizio che stai progettando e personalizza i contenuti, integrando tutte le componenti di <em>front-end</em> necessarie ad abilitare il flusso.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
-          - title: I template HTML per i servizi digitali
+          - title: Anteprime dei template HTML per i servizi digitali
             icon: "/assets/icons/external-link.svg"
-            description: I template HTML dedicati alla costruzione dei flussi di servizi digitali per il cittadino
+            description: Gli esempi delle schermate di interazione dei servizi basati sui template HTML Bootstrap
             link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-            otherResources:
-              - description: Template per Vantaggi Economici
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
-              - description: Template per Iscrizione a Graduatoria
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
-              - description: Template per Permessi e Autorizzazioni
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
-              - description: Template per Pagamenti Dovuti
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
-              - description: Template per Servizi a Pagamento
-                link: <a href='https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing' aria-label="Vai all'esempio (link esterno)"  target="_blank">Vai all'esempio</a>
+          - title: Sorgenti dei template HTML per i servizi digitali
+            icon: "/assets/icons/external-link.svg"
+            description: La repository GitHub con il codice sorgente di tutti i template per creare i servizi digitali di un Comune
+            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
