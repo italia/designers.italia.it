@@ -319,7 +319,7 @@ serviziContent:
         img: "/assets/icons/kit/kit_prototipazione.svg"
         resources:
           - title: Diagrammi di flusso
-            description: Descrizione dei diagrammi di flusso 
+            description: I diagrammi di flusso definiscono i passaggi di interazione necessari per la fruizione di un servizio.
             otherResources:
               - description: Diagramma di flusso per Permessi e Documenti
                 link: <a href='https://drive.google.com/file/d/1X_plEwMUT2NhAUHUoMuy-RbasRROQuup/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
