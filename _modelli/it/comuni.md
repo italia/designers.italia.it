@@ -22,7 +22,7 @@ header:
   links:
     - <a href="#pa-digitale-2026" class="u-color-white">PA digitale 2026</a>
     - <a href="#documentazione" class="u-color-white">La documentazione del modello </a>
-    - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
+    - <a href="#sito" class="u-color-white">Il modello di sito comunale</a>
     - <a href="#servizi" class="u-color-white">I flussi di servizi digitali</a>    
 
 ctaContent:
@@ -139,12 +139,12 @@ coreContent:
         text: "<p>I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, servono a velocizzare la creazione del <em>front-end</em> del sito e sono utili come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
-          - title: Anteprime dei template HTML sito
+          - title: Anteprime dei template HTML sito comunale
             disabled: true
             icon: "/assets/icons/pencil.svg"
-            description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
+            description: Gli esempi delle pagine del sito comunale basati sui template HTML Bootstrap
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
-          - title: Sorgenti dei template HTML sito istituzionale
+          - title: Sorgenti dei template HTML sito comunale
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
             link: <a href='https://github.com/italia/design-comuni-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
@@ -155,12 +155,12 @@ coreContent:
         text: "<p>Nonostante le piattaforme di gestione contenuti siano molteplici, stiamo lavorando alla creazione di temi pronti all'uso per Wordpress e Drupal. Questi temi ti permettono di abbreviare la fase di realizzazione del sito istituzionale, implementando direttamente l’architettura dell'informazione e il codice html.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
-          - title: Tema Wordpress sito istituzionale
+          - title: Tema Wordpress sito comunale
             disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Wordpress
             link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-          - title: Tema Drupal sito istituzionale
+          - title: Tema Drupal sito comunale
             disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Drupal
@@ -278,8 +278,8 @@ serviziContent:
         - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19482&node-id=1136%3A280880&viewport=466%2C48%2C0.05&scaling=scale-down&starting-point-node-id=1136%3A280880"
           external: true
-    - title: "Come progettare modelli di servizio"
-      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà. Se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per creare flussi di servizio personalizzati."
+    - title: "Esplora tutti i protitipi"
+      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> utili alla comprensione e alla progettazione dei flussi di servizio, dai modelli a media fedeltà agli esempi reali ad alta fedeltà."
       designerType: true
       iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
