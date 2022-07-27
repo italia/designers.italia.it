@@ -337,7 +337,7 @@ serviziContent:
                 link: <a href='https://drive.google.com/file/d/1pJs7JBZA2YvBycLrWeKVbyOPSZ23Zy_x/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
           - title: Libreria dei componenti
-            description: La libreria dei componenti UI per creare un servizio.
+            description: Tutti i componenti che compongono l'interfaccia di un servizio digitale
             otherResources:
               - description: Libreria per Figma
                 link: <a href="https://www.figma.com/file/WkVMh3JnkyUQGE3POb0TSI/Designers-Italia---Documentazione-Moduli-e-Sezioni?node-id=0%3A1" aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
