@@ -621,8 +621,12 @@ layout: default
                           <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
                             <div>{{otherResource.description}}</div>
                           </div>
-                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
-                            {{otherResource.link}}
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight" {% if resource.disabled == true %} style="opacity:.6" {% endif %}>
+                            {% if otherResource.disabled == true %}
+                               In lavorazione
+                            {% else %}
+                              {{otherResource.link}}
+                            {% endif %}
                           </div>
                         </div>
                         {% endfor %}
