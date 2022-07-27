@@ -347,7 +347,7 @@ serviziContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
-      - title: 3. Realizzare il servizio
+      - title: 3. Realizza il servizio
         text: "<p>I template HTML, pronti all’uso e già validati in termini di accessibilità, permettono di assemblare rapidamente le schermate necessarie alla fruizione del servizio da parte del cittadino. Seleziona i template relativi alla tipologia di flusso per il servizio che stai progettando e personalizza i contenuti, integrando tutte le componenti di <em>front-end</em> necessarie ad abilitare il flusso.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
