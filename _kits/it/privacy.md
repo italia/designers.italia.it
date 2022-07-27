@@ -17,6 +17,10 @@ textChunk1:
   text: "<p>Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre tenere conto di <strong>quali categorie di dati personali stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore</strong>. L’utilizzo da parte di un ente pubblico di dati personali è soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti.</p>
   <p>Questo kit dedicato a tematiche di privacy ha l’obiettivo di fornirti <strong>informazioni e modelli utili per aiutarti a trattare correttamente i dati personali riferiti ad alcuni dei principali casi d'uso </strong>che dovrai gestire progettando e realizzando un servizio digitale.</p>"
 
+  guideLinesChunk:
+    title: MANUALE OPERATIVO DI DESIGN
+    link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/privacy-by-design.html' target="_blank" aria-label="Privacy by design (link esterno)">Privacy by design</a>
+
 rightColumnItems:
   - title: KIT CORRELATI
     items:

@@ -15,7 +15,7 @@ header:
   title: "Kit di design"
   description: "Strumenti e attività per sviluppare progetti e punti di accesso digitali dei servizi pubblici: un approccio iterativo in cinque fasi dedicato al design e alla trasformazione digitale"
   links:
-    - <a href="#superBreadcrumb">Scopri</a>
+    - <a href="#superBreadcrumb">Scopri tutti i kit</a>
   image: '/assets/icons/super_breadcrumb/2021_designers-italia_fasi-kit.svg'
 
 fasi:
