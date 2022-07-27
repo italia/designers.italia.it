@@ -195,10 +195,11 @@ serviziContent:
       iconAlt: ""
       linksHiFiTitle: Esempio domanda assegno di maternità
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19477&node-id=903%3A176540&viewport=466%2C48%2C0.15&scaling=scale-down&starting-point-node-id=903%3A176540"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19478&node-id=1018%3A238734&viewport=466%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1018%3A238734"
           external: true
     - title: "Iscrizione a graduatoria"
@@ -212,10 +213,11 @@ serviziContent:
       iconAlt: ""
       linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19472&node-id=903%3A138696&viewport=466%2C48%2C0.4&scaling=scale-down&starting-point-node-id=903%3A138696"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19473&node-id=1018%3A235159&viewport=466%2C48%2C0.21&scaling=scale-down&starting-point-node-id=1018%3A235159"
           external: true
     - title: "Permessi e autorizzazioni"
@@ -231,10 +233,11 @@ serviziContent:
       iconAlt: ""
       linksHiFiTitle: Esempio richiesta permesso ZTL
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19474&node-id=903%3A139469&viewport=466%2C48%2C0.31&scaling=scale-down&starting-point-node-id=903%3A139469"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19475&node-id=1018%3A236176&viewport=466%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1018%3A236176"
           external: true
     - title: "Pagamenti dovuti"
@@ -250,10 +253,11 @@ serviziContent:
       iconAlt: ""
       linksHiFiTitle: Esempio pagamento multa
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=3131%3A323423&node-id=3131%3A323723&viewport=612%2C-96%2C0.07&scaling=scale-down&starting-point-node-id=3131%3A323723"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=4208%3A337501&node-id=4208%3A347851&viewport=960%2C764%2C0.07&scaling=scale-down&starting-point-node-id=4208%3A347851"
           external: true
     - title: "Servizi a pagamento"
@@ -267,10 +271,11 @@ serviziContent:
       iconAlt: ""
       linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19482&node-id=1136%3A280880&viewport=466%2C48%2C0.05&scaling=scale-down&starting-point-node-id=1136%3A280880"
           external: true
     - title: "Come progettare modelli di servizio"
