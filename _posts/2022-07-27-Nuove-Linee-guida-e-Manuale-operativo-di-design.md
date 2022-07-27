@@ -20,7 +20,7 @@ categories:
 <!-- MORE -->
 Oggi aggiungiamo un ulteriore e fondamentale tassello alla missione del Dipartimento per la trasformazione digitale e del progetto Designers Italia: **creare servizi pubblici sempre più semplici, coerenti, accessibili e inclusivi**.
 
-Infatti, AGID ha adottato ufficialmente le “[**Linee guida di design per i siti internet e i servizi digitali della Pubblica Amministrazione**](https://docs.italia.it/italia/design/lg-design-servizi-web/){:target="_blank" rel="noopener noreferrer"}” (Determina n.224). Il documento sostituisce le “Linee guida per i siti web delle PA”, previste dall’art. 4 della Direttiva del Ministro per la Pubblica Amministrazione e l’innovazione del 2009.
+Infatti, AGID ha adottato ufficialmente le “[**Linee guida di design per i siti internet e i servizi digitali della Pubblica Amministrazione**](https://docs.italia.it/italia/design/lg-design-servizi-web/){:target="_blank" rel="noopener noreferrer"}” (Determina n.224/2022). Il documento sostituisce le “Linee guida per i siti web delle PA”, previste dall’art. 4 della Direttiva del Ministro per la Pubblica Amministrazione e l’innovazione del 2009.
 
 **Si tratta di un risultato ancora più strategico**, perché arriva in concomitanza con l’attuazione del **Piano Nazionale di Ripresa e Resilienza**, che vede l’Italia impegnata proprio nella progettazione di diversi servizi pubblici digitali ([scopri di più sulle Misure](https://padigitale2026.gov.it/misure){:target="_blank" rel="noopener noreferrer"}).
 
