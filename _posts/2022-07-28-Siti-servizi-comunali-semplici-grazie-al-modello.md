@@ -17,7 +17,7 @@ categories:
 ---
 
 <!-- MORE -->
-Siti e servizi pubblici digitali sempre più a misura di cittadino. È questo lo spirito con il quale, negli scorso mesi, il team di Designers Italia ha affrontato l’aggiornamento delle risorse operative messe a disposizione dei Comuni italiani per realizzare o aggiornare il proprio sito web e i servizi digitali. 
+Siti e servizi pubblici digitali sempre più a misura di cittadino. È questo lo spirito con il quale, negli scorsi mesi, il team di Designers Italia ha affrontato l’aggiornamento delle risorse operative messe a disposizione dei Comuni italiani per realizzare o aggiornare il proprio sito web e i servizi digitali. 
 
 Con l’aggiornamento del [modello disponibile sul sito di Designers Italia](https://designers.italia.it/modello/comuni/), gli enti comunali potranno quindi migliorare l'esperienza digitale dei propri cittadini e il loro rapporto con l’ente quando ricercano informazioni, richiedono una prestazione o effettuano un adempimento. Tutto ciò risparmiando tempo e risorse economiche, con la certezza di rispettare i principi standard e la normativa vigente in materia di design.
 
