@@ -17,13 +17,15 @@ layout: default
         <div class="u-margin-top-xxl u-margin-bottom-m">
         <ul>
           {% for link in page.header.links %}
-            <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r u-padding-left-none u-padding-right-xl u-padding-right-xxl">{{link}}</li>
+            <li class="u-margin-bottom-xs u-textWeight-600 u-inlineBlock u-md-block u-lg-block u-text-r-xxs u-color-grey-ui-kit u-special-list-r u-padding-left-none u-padding-right-xl u-padding-right-xxl">
+              {{link}}
+            </li>
           {% endfor %}
         </ul>
         </div>
       </div>
       <div class="Grid-cell u-md-before1of12 u-lg-before1of12 u-md-size3of12 u-lg-size3of12 u-padding-top-s" style="max-width:360px">
-        <img class="u-sizeFull " alt="Fasi del progetto: organizzare; comprendere; progettare; realizzare; validare." src="{{page.header.image}}"/>
+        <img class="u-sizeFull " alt="" src="{{page.header.image}}"/>
       </div>
     </div>
 

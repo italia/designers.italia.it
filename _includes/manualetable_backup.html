@@ -1,0 +1,66 @@
+{% assign guides = site.data.guidelines %}
+{% assign family = guides | where_exp:"item","item.parent == nil" %}
+{% assign numfamily = family.size %}
+{% assign layoutClass=include.layoutClass | default:'u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl' %}
+{% assign headingClass=include.headingClass | default:'u-block u-padding-bottom-m' %}
+
+<div id="manuale-capitoli" class="/*u-padding-top-xxl*/ u-padding-bottom-xxl">
+	<div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxs">
+		<!-- chapters in manual, grid -->
+		<div class="u-margin-top-xl Grid Grid--withGutterM u-margin-bottom-l
+			/*Grid--equalHeight Grid--fill*/
+		">
+			<!-- single chapter card -->
+			{%- for main in family -%}
+			{% assign chapterIndex = {{forloop.index}} %}
+				<div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-bottom-l">
+					<article class="u-sizeFull u-text-r-s u-flex-start u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+						<div class="kitCard u-flexAlignSelfStart u-sizeFull">
+							{% if main.img %}
+								<!-- card img -->
+								<div class="u-background-{{chapterIndex | times:10 }}">
+									<img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{main.desc}}" src="{{ main.img }}"/>
+								</div>
+							{% endif %}
+							<!-- card content -->
+							<div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">
+								<h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 ">
+										<!-- <a class="u-textClean u-color-50" href="{{main.url | relative_url}}" aria-label="{{main.desc}} (link esterno)"> -->
+											<span id="kitCardTitle">{{main.desc}}</span>
+										<!-- </a> -->
+										<!-- <img alt="" class="u-margin-left-xs" src="/assets/icons/external-link-.svg"> -->
+								</h3>
+								<div class="u-text-r-s u-textWeight-600 u-padding-bottom-m">
+									<a class="u-textClean u-color-50" href="{{main.url | relative_url}}" aria-label="Vai al capitolo: {{main.desc}} (link esterno)">Vai al capitolo</a>
+									<img alt="" class="u-margin-left-xs" src="/assets/icons/external-link-.svg">
+								</div>
+								<div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{main.body}}</div>
+							</div>
+						</div>
+						<!-- indice sottocapitoli -->
+						<div class="Accordion Accordion--default fr-accordion js-fr-accordion fr-accordion--is-ready" id="accordion-1" role="tablist" aria-multiselectable="true" style="border-top:1px solid #D8D8D8">
+							<h2 class="Accordion-header js-fr-accordion__header fr-accordion__header" id="accordion-header-{{chapterIndex}}" role="tab" aria-controls="accordion-panel-0" tabindex="0" aria-selected="false" aria-expanded="false" style="background-position-x: 24px;">
+								<span class="Accordion-link" style="font-size:16px!important; padding-left:24px!important">INDICE CONTENUTI</span>
+							</h2>
+							<!-- sottocapitoli -->
+							<div id="accordion-panel-{{chapterIndex}}" class="Accordion-panel fr-accordion__panel js-fr-accordion__panel" role="tabpanel" aria-labelledby="accordion-header-0" tabindex="0" aria-hidden="true" style="height: 0px;">
+								<div class="u-flexAlignSelfStart u-sizeFull u-padding-right-xxl u-padding-top-s u-padding-left-xxl u-padding-bottom-m" style="background:#f0f6fc">
+							      {% assign items = guides | where_exp:"item","item.parent == main.desc" %}
+							      <ul>
+							      {%- for item in items -%}
+							        <li class="u-margin-top-l u-margin-bottom-l u-text-r-xs u-posRelative">
+							          <a href="{{item.url}}" class="u-color-50 u-textWeight-600 u-textClean" target="_blank">
+							          {{item.desc}}
+							          </a>
+							        </li>
+							      {%- endfor -%}
+							      </ul>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			{%- endfor -%}
+		</div>
+	</div>
+</div>

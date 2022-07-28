@@ -24,8 +24,8 @@ textChunk1:
   <p>Le librerie ti forniscono componenti <em>open-source</em> pronti per l’uso: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-interface/lo-sviluppo-di-un-interfaccia-e-i-web-kit.html' target="_blank">Sviluppo</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html' target="_blank" aria-label="Lo sviluppo dell'interfaccia utente (link esterno)">Lo sviluppo dell'interfaccia utente</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

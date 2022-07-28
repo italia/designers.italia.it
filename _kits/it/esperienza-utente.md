@@ -22,8 +22,8 @@ textChunk1:
   <p>Il kit dedicato all'esperienza utente o user experience (UX) contiene <strong>gli strumenti necessari per aiutarti a mappare la UX di un servizio esistente</strong> (<em>as is</em>), ma puoi utilizzarlo anche per progettare la sua evoluzione (<em>to be</em>), mettendoti nei panni dell'utente attraverso strumenti quali i personas e gli <em>user journey</em>.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank">Service design</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html' target="_blank" aria-label="Progettazione di servizi (link esterno)">Progettazione di servizi</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

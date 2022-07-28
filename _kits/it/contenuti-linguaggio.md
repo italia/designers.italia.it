@@ -20,8 +20,8 @@ textChunk1:
   <p>Esempi e  strumenti ti guidano nella buona pratica di utilizzare un approccio condiviso alla creazione e alla gestione dei contenuti testuali e multimediali; la guida al linguaggio della Pubblica Amministrazione ti fornisce <strong>indicazioni sull’uso delle parole, sulle regole di scrittura oltre che esempi di tono di voce da utilizzare nei vari contesti d’uso</strong> di un <em>touchpoint</em> (punto di accesso) digitale.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/content-design.html' target="_blank">Content design</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design.html' target="_blank" aria-label="Content design (link esterno)">Content design</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

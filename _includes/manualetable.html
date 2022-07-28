@@ -1,0 +1,45 @@
+{% assign guides = site.data.guidelines %}
+{% assign family = guides | where_exp:"item","item.parent == nil" %}
+{% assign numfamily = family.size %}
+{% assign layoutClass=include.layoutClass | default:'u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxl' %}
+{% assign headingClass=include.headingClass | default:'u-block u-padding-bottom-m' %}
+
+<div id="manuale-capitoli" class="/*u-padding-top-xxl*/ u-padding-bottom-xxl">
+	<div class="u-layout-wide u-layoutCenter u-padding-all-l u-padding-top-xxs">
+		<!-- chapters in manual, grid -->
+		<div class="u-margin-top-xl Grid Grid--withGutterM u-margin-bottom-l
+			/*Grid--equalHeight Grid--fill*/
+		">
+			<!-- single chapter card -->
+			{%- for main in family -%}
+			{% assign chapterIndex = {{forloop.index}} %}
+				<div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of3 u-lg-size1of3 u-margin-bottom-l">
+					<article class="u-sizeFull u-text-r-s u-flex-start u-flexWrap u-flexAlignSelfStretch u-borderShadow-m u-borderRadius-m u-background-white">
+						<div class="kitCard u-flexAlignSelfStart u-sizeFull">
+							{% if main.img %}
+								<!-- card img -->
+								<div class="u-background-50">
+									<img class="u-sizeFull u-padding-top-m u-padding-bottom-m" style="height: 20rem" aria-labelledby="kitCardTitle" alt="{{main.desc}}" src="{{ main.img }}"/>
+								</div>
+							{% endif %}
+							<!-- card content -->
+							<div class="u-padding-right-l u-padding-left-l u-padding-top-s u-padding-bottom-m" style="border-top:1px solid #D8D8D8">
+								<h3 class="u-text-r-l u-padding-bottom-s u-textWeight-600 ">
+										<!-- <a class="u-textClean u-color-50" href="{{main.url | relative_url}}" aria-label="{{main.desc}} (link esterno)"> -->
+											<span id="kitCardTitle">{{main.desc}}</span>
+										<!-- </a> -->
+										<!-- <img alt="" class="u-margin-left-xs" src="/assets/icons/external-link-.svg"> -->
+								</h3>
+								<div class="u-text-r-s u-textWeight-600 u-padding-bottom-m">
+									<a class="u-textClean u-color-50" target="_blank" href="{{main.url | relative_url}}" aria-label="Vai al capitolo: {{main.desc}} (link esterno)">Vai al capitolo</a>
+									<img alt="" class="u-margin-left-xs" src="/assets/icons/external-link-.svg">
+								</div>
+								<div class="Prose u-text-r-xxs u-textWeight-400 u-color-grey-ui-kit">{{main.body}}</div>
+							</div>
+						</div>
+					</article>
+				</div>
+			{%- endfor -%}
+		</div>
+	</div>
+</div>
