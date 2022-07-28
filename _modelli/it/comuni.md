@@ -140,10 +140,9 @@ coreContent:
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
           - title: Anteprime dei template HTML sito comunale
-            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito comunale basati sui template HTML Bootstrap
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
+            link: <a href='https://italia.github.io/design-comuni-pagine-statiche/sito/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
           - title: Sorgenti dei template HTML sito comunale
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
@@ -156,15 +155,13 @@ coreContent:
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
           - title: Tema Wordpress sito comunale
-            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Wordpress
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-comuni-wordpress-theme' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Tema Drupal sito comunale
-            disabled: true
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Drupal
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-comuni-drupal-theme' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
@@ -354,11 +351,11 @@ serviziContent:
           - title: Anteprime dei template HTML per i servizi digitali
             icon: "/assets/icons/external-link.svg"
             description: Gli esempi delle schermate di interazione dei servizi basati sui template HTML Bootstrap
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://italia.github.io/design-comuni-pagine-statiche/servizi/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Sorgenti dei template HTML per i servizi digitali
             icon: "/assets/icons/external-link.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare i servizi digitali di un Comune
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://italia.github.io/design-comuni-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
