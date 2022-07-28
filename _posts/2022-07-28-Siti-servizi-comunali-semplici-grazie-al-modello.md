@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Siti e servizi comunali a misura di cittadino grazie al modello aggiornato di Designers Italia"
 subtitle: "Pubblicata la prima versione delle risorse operative per realizzare esperienze digitali semplici e accessibili"
-date: 2022-07-28 11:00:00 +0200
+date: 2022-07-28 09:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
