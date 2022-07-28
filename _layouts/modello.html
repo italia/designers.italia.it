@@ -443,8 +443,10 @@ layout: default
 
           <!-- servizi in fase, grid -->
           {% assign cards = serviziContent.cards %}
-          <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
-            <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.cardsTitle}}</h2>
+          <div class="Grid Grid--alignCenter u-padding-right-l u-padding-left-l">
+            <div class="Grid-cell u-md-size9of12 u-lg-size9of12">
+              <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.cardsTitle}}</h2>
+            </div>
           </div>
           <div class="u-padding-top-l u-padding-bottom-l Grid Grid--withGutterM"> <!-- Grid--equalHeight Grid--fill -->
             <!-- single cta card -->
@@ -460,7 +462,7 @@ layout: default
                         </h3>
                         <div class="Prose u-text-r-xxs u-textWeight-400 {% if item.designerType %} u-color-white {% endif %}">{{item.subtitle}}</div>
                         <div class="u-margin-top-l">
-                          <ul class="u-color-grey-ui-kit u-text-r-xxs">
+                          <ul class="u-color-grey-ui-kit u-text-r-xxs" style="list-style-type: square; list-style-position: inside">
                           {%- for service in item.services  -%}
                             <li class="u-margin-bottom-xs u-font-weight-semibold u-textWeight-600">
                               <span>{{service.name}}</span>
@@ -480,39 +482,45 @@ layout: default
                       {% if item.linksHiFi %}
                       <!-- link hi-fi -->
                         <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
-                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
+                        <div class="Grid-cell u-padding-bottom-s u-padding-top-xs">
                           <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-600">{{item.linksHiFiTitle}}</span>
                         </div>
-                        <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
-                          <ul class="u-margin-top-s u-margin-bottom-l">
+                        <div class="Grid-cell">
+                          <p class="u-margin-bottom-l">
                           {% if item.linksHiFiDisabled == true %}
-                            <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" style="opacity:.6" >
+                            <span class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" style="opacity:.6" >
                               In lavorazione
-                            </li>
+                            </span>
                           {% else %}
+                            <span class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit">
+                              Vai al prototipo:
+                            </span>
                             {%- for link in item.linksHiFi  -%}
-                              <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" {% if link.disabled == true %} style="opacity:.6" {% endif %}>
+                              <span class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" {% if link.disabled == true %} style="opacity:.6" {% endif %}>
                                 {% if link.disabled == true %}
                                    In lavorazione
                                 {% else %}
                                   <a class="u-textClean u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
                                   {{link.title}}
-                                  </a>
+                                  </a> 
                                 {% endif %}
-                            </li>
+                                {% if link.divider %}
+                                  {{link.divider}}
+                                {% endif %}
+                              </span>
                             {%- endfor -%}
                           {% endif %}
-                          </ul>
+                          </p>
                         </div>
                       </div>
                       {% endif %}
                       {% if item.linksMidFi %}
                       <!-- link mid-fi -->
                         <div class="Grid Grid--alignMiddle u-margin-left-m u-margin-right-m u-margin-top-s u-margin-bottom-s u-padding-top-xxs u-padding-left-m u-padding-right-m u-borderShadow-m u-borderRadius-m u-background-white" style="background-color: #F0F6FC; border-left: 8px solid #06c">
-                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-bottom-s u-padding-top-xs">
-                            <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}<!--<br/><sup>mid-fi</sup>--></span>
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size8of12 u-padding-bottom-s u-padding-top-xs">
+                            <span class="u-text-r-xs u-color-grey-ui-kit u-textWeight-400">{{item.linksMidFiTitle}}</span>
                           </div>
-                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12  u-sm-textRight u-md-textRight u-lg-textRight">
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size4of12  u-sm-textRight u-md-textRight u-lg-textRight">
                             <ul class="u-margin-top-s u-margin-bottom-l">
                             {% if item.linksMidFiDisabled == true %}
                               <li class="u-text-r-xxs u-margin-bottom-xs u-color-grey-ui-kit" style="opacity:.6" >
@@ -613,8 +621,12 @@ layout: default
                           <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xxs u-padding-bottom-xxs">
                             <div>{{otherResource.description}}</div>
                           </div>
-                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight">
-                            {{otherResource.link}}
+                          <div class="Grid-cell u-sm-size6of12 u-md-size6of12 u-lg-size6of12 u-padding-top-xs u-padding-bottom-xs u-sm-textRight u-md-textRight u-lg-textRight" {% if resource.disabled == true %} style="opacity:.6" {% endif %}>
+                            {% if otherResource.disabled == true %}
+                               In lavorazione
+                            {% else %}
+                              {{otherResource.link}}
+                            {% endif %}
                           </div>
                         </div>
                         {% endfor %}

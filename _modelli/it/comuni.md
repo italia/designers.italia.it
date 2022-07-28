@@ -22,7 +22,7 @@ header:
   links:
     - <a href="#pa-digitale-2026" class="u-color-white">PA digitale 2026</a>
     - <a href="#documentazione" class="u-color-white">La documentazione del modello </a>
-    - <a href="#sito" class="u-color-white">Il modello di sito istituzionale</a>
+    - <a href="#sito" class="u-color-white">Il modello di sito comunale</a>
     - <a href="#servizi" class="u-color-white">I flussi di servizi digitali</a>    
 
 ctaContent:
@@ -98,7 +98,7 @@ coreContent:
   occhiello: A COSA SERVE
   text: "<p>Il modello permette di creare siti internet comunali che rispondono ai bisogni degli utenti: chiari, semplici da usare e navigare. Lo scopo del modello è fornire ai cittadini un chiaro punto di riferimento per <strong>trovare con facilità le informazioni di cui hanno bisogno</strong>. L’adozione del modello di sito permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’esperienza coerente tra le varie amministrazioni.</p> <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
   rightColumnItems:
-    - title: DOCUMENTAZIONE
+    - title: DOCUMENTI UTILI
       items:
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
@@ -139,16 +139,14 @@ coreContent:
         text: "<p>I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, servono a velocizzare la creazione del <em>front-end</em> del sito e sono utili come esempi di pagine e contenuti.</p>"
         img: "/assets/icons/kit/kit_webDevelopment.svg"
         resources:
-          - title: Anteprime dei template HTML sito
-            disabled: true
+          - title: Anteprime dei template HTML sito comunale
             icon: "/assets/icons/pencil.svg"
-            description: Gli esempi delle pagine del sito istituzionale basati sui template HTML Bootstrap
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
-          - title: Sorgenti dei template HTML sito istituzionale
-            disabled: true
+            description: Gli esempi delle pagine del sito comunale basati sui template HTML Bootstrap
+            link: <a href='https://italia.github.io/design-comuni-pagine-statiche/sito/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
+          - title: Sorgenti dei template HTML sito comunale
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-comuni-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
@@ -156,16 +154,14 @@ coreContent:
         text: "<p>Nonostante le piattaforme di gestione contenuti siano molteplici, stiamo lavorando alla creazione di temi pronti all'uso per Wordpress e Drupal. Questi temi ti permettono di abbreviare la fase di realizzazione del sito istituzionale, implementando direttamente l’architettura dell'informazione e il codice html.</p>"
         img: "/assets/icons/kit/kit_coprog_contenuti.svg"
         resources:
-          - title: Tema Wordpress sito istituzionale
-            disabled: true
+          - title: Tema Wordpress sito comunale
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Wordpress
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-          - title: Tema Drupal sito istituzionale
-            disabled: true
+            link: <a href='https://github.com/italia/design-comuni-wordpress-theme' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Tema Drupal sito comunale
             icon: "/assets/icons/pencil.svg"
             description: Il tema del sito comunale per Drupal
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-comuni-drupal-theme' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
@@ -178,11 +174,11 @@ serviziContent:
   text: "<p>Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.</p>
   <p>Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per <strong>rappresentare le principali interazioni del cittadino con il Comune</strong> e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.</p>"
   rightColumnItems:
-    - title: DOCUMENTAZIONE
+    - title: DOCUMENTI UTILI
       items:
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
         - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' target="_blank" >La conformità ai servizi</a>
-  cardsTitle: "SERVIZI"
+  cardsTitle: "QUALI SONO"
   cards:
     - title: "Vantaggi economici"
       subtitle: "Il flusso di interazione per la richiesta di un vantaggio economico vincolato dalla presenza di determinati requisiti di idoneità, come:"
@@ -194,17 +190,13 @@ serviziContent:
         - name: Domanda di contributi
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A91595&node-id=1005%3A95646&viewport=501%2C48%2C0.26&scaling=scale-down&starting-point-node-id=1067%3A117214"
-          external: true
       linksHiFiTitle: Esempio domanda assegno di maternità
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19477&node-id=903%3A176540&viewport=466%2C48%2C0.15&scaling=scale-down&starting-point-node-id=903%3A176540"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19478&node-id=1018%3A238734&viewport=466%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1018%3A238734"
           external: true
     - title: "Iscrizione a graduatoria"
@@ -216,17 +208,13 @@ serviziContent:
         - name: Partecipazione ad un concorso pubblico
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1005%3A101174&node-id=1005%3A111701&viewport=501%2C48%2C0.23&scaling=scale-down&starting-point-node-id=1067%3A115961"
-          external: true
       linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19472&node-id=903%3A138696&viewport=466%2C48%2C0.4&scaling=scale-down&starting-point-node-id=903%3A138696"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19473&node-id=1018%3A235159&viewport=466%2C48%2C0.21&scaling=scale-down&starting-point-node-id=1018%3A235159"
           external: true
     - title: "Permessi e autorizzazioni"
@@ -240,17 +228,13 @@ serviziContent:
         - name: Occupazione suolo pubblico
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1033%3A492653&node-id=1033%3A505782&viewport=501%2C48%2C0.18&scaling=scale-down&starting-point-node-id=1067%3A115451"
-          external: true
       linksHiFiTitle: Esempio richiesta permesso ZTL
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19474&node-id=903%3A139469&viewport=466%2C48%2C0.31&scaling=scale-down&starting-point-node-id=903%3A139469"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19475&node-id=1018%3A236176&viewport=466%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1018%3A236176"
           external: true
     - title: "Pagamenti dovuti"
@@ -264,17 +248,13 @@ serviziContent:
         - name: Tributi IMU
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A137467&node-id=1067%3A147528&viewport=501%2C48%2C0.11&scaling=scale-down&starting-point-node-id=1067%3A137469"
-          external: true
       linksHiFiTitle: Esempio pagamento multa
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=3131%3A323423&node-id=3131%3A323723&viewport=612%2C-96%2C0.07&scaling=scale-down&starting-point-node-id=3131%3A323723"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=4208%3A337501&node-id=4208%3A347851&viewport=960%2C764%2C0.07&scaling=scale-down&starting-point-node-id=4208%3A347851"
           external: true
     - title: "Servizi a pagamento"
@@ -286,50 +266,100 @@ serviziContent:
         - name: Trasporto scolastico
       iconImage:
       iconAlt: ""
-      linksMidFiTitle: Modello di servizio
-      linksMidFi:
-        - title: Naviga mobile
-          url: "https://www.figma.com/proto/HjUHcyt8Wp0d4lfTsa4LDt/Designers-Italia---Flussi-Servizi-Mid-fi?page-id=1067%3A121340&node-id=1067%3A130935&viewport=501%2C48%2C0.13&scaling=scale-down&starting-point-node-id=1067%3A121342"
-          external: true
       linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFi:
-        - title: Naviga mobile
+        - title: mobile
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
-        - title: Naviga desktop
+          divider: "-"
+        - title: desktop
           url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19482&node-id=1136%3A280880&viewport=466%2C48%2C0.05&scaling=scale-down&starting-point-node-id=1136%3A280880"
           external: true
-    - title: "Come progettare modelli di servizio"
-      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> a disposizione a diverso livello di fedeltà. Se il servizio non rientra negli archetipi proposti, <strong>i designer coinvolti nel progetto</strong> hanno a disposizione una risorsa per creare flussi di servizio personalizzati."
+    - title: "Esplora tutti i protitipi"
+      subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> utili alla comprensione e alla progettazione dei flussi di servizio, dai modelli a media fedeltà agli esempi reali ad alta fedeltà."
       designerType: true
       iconImage: "/assets/images/modelli/comuni-servizi-2022-A.png"
       iconAlt: ""
-      linksHiFiTitle: Tutti i prototipi disponibili
-      linksHiFi:
-        - title: Naviga
+      linksMidFiTitle: Tutti i prototipi disponibili
+      linksMidFi:
+        - title: Vai alle risorse
           url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
           external: true
-      linksMidFiTitle: Libreria componenti per designer
-      linksMidFi:
-        - title: Vai alla risorsa
-          url: "https://www.figma.com/file/WkVMh3JnkyUQGE3POb0TSI/Designers-Italia---Documentazione-Moduli-e-Sezioni?node-id=0%3A1"
-          external: true
   superAccordion:
-    title: STRUMENTI
+    title: COME SI REALIZZANO
     accordions:
-      - title: Template HTML per i servizi
-        text: "<p>Usa i template HTML basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia per costruire i tuoi flussi di servizio ai cittadini. I template HTML sono utili ai developer per la creazione del <em>front-end</em> del servizio, ma possono essere utili anche ai designer quali esempi di pagine e contenuti.</p>"
-        img: "/assets/icons/kit/kit_webDevelopment.svg"
+      - title: 1. Comprendi lo stato dell'arte
+        text: "Definisci gli obiettivi e il perimetro del progetto, individuando le attività da svolgere e i criteri a cui attenersi per essere conformi al modello. Analizzare i processi amministrativi e tecnologici relativi ai servizi da digitalizzare è fondamentale per comprendere la tipologia di flusso (archetipo) da seguire come esempio nella progettazione."
+        img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
         resources:
-          - title: I template HTML per i servizi digitali
-            disabled: true
-            icon: "/assets/icons/pencil.svg"
-            description: I template HTML dedicati alla costruzione dei flussi di servizi digitali per il cittadino
-            link: <a href='https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Checklist delle attività progettuali
+            description: Usa la checklist per tenere traccia delle attività chiave da svolgere
+            link: <a href='https://docs.google.com/document/d/1E76BHQ5BnyopPU8_7i6VLfeteGxT1CttHnnuM3g5xb8/edit#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            icon: "/assets/icons/external-link.svg"
+          - title: Tipologie di flussi di servizio
+            description: Individua il flusso di interazione in cui rientra il servizio scelto e da quali componenti è composto
+            icon: "/assets/icons/external-link.svg"
+            link: <a href='https://docs.google.com/spreadsheets/d/12RgHGrhrGKhAGOUf2kOThrgIEyFngknVOhoVIrAeOOk/edit' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Criteri di conformità
+            description: Tutti i requisiti minimi da rispettare per l’adesione al modello e le raccomandazioni aggiuntive per migliorare l’esperienza utente 
+            icon: "/assets/icons/external-link.svg"
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Catalogo del riuso
+            description: Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni
+            icon: "/assets/icons/external-link.svg"
+            link: <a href='https://developers.italia.it/it/search?pnrr=1&pnrr_target=Comuni&pnrr_measure=1.4.1&type=all_catalogue&sort_by=release_date&page=0#68d7bad414e40309778a939a5e4da9c2809011d7' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
-
+      - title: 2. Progetta i flussi
+        text: "Una volta individuata la tipologia di flusso di riferimento, consulta il relativo diagramma grafico per progettare l’interazione. Ogni diagramma presenta i componenti (chiamati moduli e sezioni) e l’ordine di assemblaggio per creare un flusso di interazione per la fruizione del servizio digitale."
+        img: "/assets/icons/kit/kit_prototipazione.svg"
+        resources:
+          - title: Diagrammi di flusso
+            description: I diagrammi di flusso definiscono i passaggi di interazione necessari per la fruizione di un servizio.
+            otherResources:
+              - description: Diagramma di flusso per Permessi e Documenti
+                link: <a href='https://drive.google.com/file/d/1X_plEwMUT2NhAUHUoMuy-RbasRROQuup/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Diagramma di flusso per Pagamenti Dovuti
+                link: <a href='https://drive.google.com/file/d/1cd9PL4ghpisa0O2NDWvL6qcFD-fdkNej/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Diagramma di flusso per Vantaggi Economici
+                link: <a href='https://drive.google.com/file/d/1pV7KIpjj2Z4pHyytyqVac1Srj7FrOej0/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Diagramma di flusso per Iscrizione in Graduatoria
+                link: <a href='https://drive.google.com/file/d/1Km09i_yuKic7Rh5KSOzWz7voNtplJ0Ke/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Diagramma di flusso per Servizi a Pagamento
+                link: <a href='https://drive.google.com/file/d/1pJs7JBZA2YvBycLrWeKVbyOPSZ23Zy_x/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+          - title: Libreria dei componenti
+            description: Tutti i componenti che compongono l'interfaccia di un servizio digitale
+            otherResources:
+              - description: Libreria per Figma
+                link: <a href="https://www.figma.com/file/WkVMh3JnkyUQGE3POb0TSI/Designers-Italia---Documentazione-Moduli-e-Sezioni?node-id=0%3A1" aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Libreria per Sketch
+                disabled: true
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
+      - title: 3. Realizza il servizio
+        text: "<p>I template HTML, pronti all’uso e già validati in termini di accessibilità, permettono di assemblare rapidamente le schermate necessarie alla fruizione del servizio da parte del cittadino. Seleziona i template relativi alla tipologia di flusso per il servizio che stai progettando e personalizza i contenuti, integrando tutte le componenti di <em>front-end</em> necessarie ad abilitare il flusso.</p>"
+        img: "/assets/icons/kit/kit_webDevelopment.svg"
+        resources:
+          - title: Anteprime dei template HTML per i servizi digitali
+            icon: "/assets/icons/external-link.svg"
+            description: Gli esempi delle schermate di interazione dei servizi basati sui template HTML Bootstrap
+            link: <a href='https://italia.github.io/design-comuni-pagine-statiche/servizi/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Sorgenti dei template HTML per i servizi digitali
+            icon: "/assets/icons/external-link.svg"
+            description: La repository GitHub con il codice sorgente di tutti i template per creare i servizi digitali di un Comune
+            link: <a href='https://github.com/italia/design-comuni-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
+    
 tags:
   - web-development
   - information-architecture
