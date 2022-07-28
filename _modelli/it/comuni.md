@@ -355,7 +355,7 @@ serviziContent:
           - title: Sorgenti dei template HTML per i servizi digitali
             icon: "/assets/icons/external-link.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare i servizi digitali di un Comune
-            link: <a href='https://italia.github.io/design-comuni-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/design-comuni-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
