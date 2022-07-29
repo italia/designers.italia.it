@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Designer sotto l’ombrellone: i libri da leggere quest’estate"
 subtitle: "Come lo scorso anno, le esperte e gli esperti del team  condividono le loro letture consigliate per le ferie"
-date: 2022-07-29 09:00:00 +0200
+date: 2022-08-04 09:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
