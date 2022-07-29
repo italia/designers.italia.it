@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Designer sotto l’ombrellone: i podcast da ascoltare durante le vacanze"
 subtitle: "Non solo libri: ecco alcuni podcast da ascoltare, consigliati direttamente dalle esperte e dagli esperti del team"
-date: 2022-07-29 09:00:00 +0200
+date: 2022-07-29 09:00:01 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
