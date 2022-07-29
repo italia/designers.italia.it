@@ -19,7 +19,7 @@ categories:
 <!-- MORE -->
 Che siano al mare, in montagna, su un lago, in città o a casa, le vacanze estive sono uno dei momenti migliori per riposarsi e godersi un bel libro. Per questo, come abbiamo fatto l'estate scorsa, abbiamo deciso di condividere una lista di libri a tema design, e non solo. Perché il design è una disciplina che, per sua natura, si nutre di stimoli eterogenei e che fonda parte del suo successo anche sulla serendipità, quel momento sorprendente nel quale una pagina di un libro ci regala una scoperta che cambierà il nostro modo di pensare.
 
-Quest'anno, però, non ci facciamo bastare i libri e aggiungiamo anche i podcast ai nostri consigli. [Leggi l'articolo dedicato.](/notizie/designer-sotto-ombrellone-podcast-da-ascoltare-durante-vacanze)
+Quest'anno, però, non ci facciamo bastare i libri e aggiungiamo anche i podcast ai nostri consigli. Leggi l'articolo dedicato.
 
 #### Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones, James Clear
 Il libro ripercorre l'intero processo di assuefazione negli esseri umani: come prendere nuove abitudini, rompere quelle vecchie e farle aderire.
