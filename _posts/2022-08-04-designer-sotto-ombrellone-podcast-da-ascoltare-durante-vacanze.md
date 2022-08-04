@@ -35,4 +35,4 @@ Due format: uno di interviste a persone dai mestieri più disparati, accomunate 
 Dall'autore del libro "Come annoiarsi meglio" e della newsletter "Link molto belli", il podcast racconta otto invenzioni, dal tamagotchi al PowerPoint, che hanno cambiato per sempre la storia della tecnologia e della società. Consigliato da Mauro Filippi, service designer.
 
 #### Pillole di design, Il Sole 24 Ore
-Sei episodi per raccontare i magici anni della creatività italiana e gli oggetti-icona: solo le cose intelligenti e di qualità durano nel tempo e possono diventare un mito. Consigliato da Francesco Mascia., UI/UX designer.
+Sei episodi per raccontare i magici anni della creatività italiana e gli oggetti-icona: solo le cose intelligenti e di qualità durano nel tempo e possono diventare un mito. Consigliato da Francesco Mascia, UI/UX designer.
