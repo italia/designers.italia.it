@@ -31,7 +31,7 @@ Nel limbo tra imprenditoria e precariato: una condizione comune ad una fetta di 
 #### Design Justice, Sasha Costanza-Chock
 Il libro d'"avventura" che sto leggendo sotto l'ombrellone ha un sottotitolo interessante: "Community-Led Practices to Build the Worlds We Need". È un testo, [disponibile anche in open access](https://design-justice.pubpub.org/), che invita ad esplorare la relazione tra design, potere e giustizia sociale. L'obiettivo dichiarato fin dalla quarta di copertina è riflettere come orientare la progettazione per costruire un mondo migliore: un mondo che sia quello di cui abbiamo bisogno, più sostenibile, dove molti mondi diversi possano convivere, e, detto in un altro modo, dove nessuno e nessuna comunità sia esclusa by design. Le premesse per un viaggio avventuroso ci sono tutte, no? Consigliato da Daniele Tabellini, UI/UX designer.
 
-#### Designing Agentive Technology, Christopher Noessel\
+#### Designing Agentive Technology, Christopher Noessel
 Come si può creare una relazione di fiducia e di collaborazione proattiva tra un'intelligenza artificiale e le persone? In questo libro, Christopher Noessel ci aiuta a creare prodotti e servizi che orchestrino magistralmente l'interazione tra esseri umani e macchine lungo l'intero ciclo di vita del prodotto. Consigliato da Federico Giaimo, service designer.
 
 #### How to Speak Machine: Computational Thinking for the Rest of Us, John Maeda
