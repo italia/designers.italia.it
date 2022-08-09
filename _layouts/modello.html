@@ -397,7 +397,7 @@ layout: default
     {% if serviziContent %}
       <!-- ///// SERVIZI ///// -->
       <section id="servizi" class="fase u-background-grey-10 u-color-grey-ui-kit">
-        <div class="u-layout-wide u-layoutCenter u-padding-r-top u-padding-top-l u-margin-top-xxs">
+        <div class="u-layout-wide u-padding-all-l u-layoutCenter u-padding-r-top u-padding-top-l u-margin-top-xxs">
           <!-- header -->
           <div class="Grid Grid--alignCenter u-padding-all-l u-margin-top-xxl">
             <div class="Grid-cell u-lg-size6of12 u-md-size6of12">
@@ -448,7 +448,7 @@ layout: default
               <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{serviziContent.cardsTitle}}</h2>
             </div>
           </div>
-          <div class="u-padding-all-l Grid Grid--withGutterM"> <!-- Grid--equalHeight Grid--fill -->
+          <div class="u-padding-bottom-l u-padding-top-l Grid Grid--withGutterM"> <!-- Grid--equalHeight Grid--fill -->
             <!-- single cta card -->
             {%- for item in cards  -%}
               <div class="Grid-cell u-sizeFull u-sm-size1of2 u-md-size1of2 u-lg-size1of3 u-margin-bottom-l {{item.kitcategory|slugify}}">
@@ -502,7 +502,7 @@ layout: default
                                 {% else %}
                                   <a class="u-textClean u-color-50" href="{{link.url | relative_url}}" {% if link.external %} aria-label="{{link.title}} (si apre in una nuova finestra)" target="_blank"{% endif %}>
                                   {{link.title}}
-                                  </a> 
+                                  </a>
                                 {% endif %}
                                 {% if link.divider %}
                                   {{link.divider}}
