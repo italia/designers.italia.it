@@ -334,7 +334,7 @@ serviziContent:
                 link: <a href='https://drive.google.com/file/d/1pJs7JBZA2YvBycLrWeKVbyOPSZ23Zy_x/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
           - title: Libreria dei componenti
-            description: Tutti i componenti che compongono l'interfaccia del modello di sito e dei servizi digitali
+            description: Tutti i componenti per l'interfaccia del modello di sito e dei servizi digitali
             otherResources:
               - description: Libreria per Figma
                 link: <a href="https://www.figma.com/file/6J9UCfPJkKYvtFo6Va31Ls/Designers-Italia---Organismi-Hi-Fi?node-id=184%3A26301" aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
