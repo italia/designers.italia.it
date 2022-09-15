@@ -334,13 +334,19 @@ serviziContent:
                 link: <a href='https://drive.google.com/file/d/1pJs7JBZA2YvBycLrWeKVbyOPSZ23Zy_x/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
           - title: Libreria dei componenti
-            description: Tutti i componenti che compongono l'interfaccia di un servizio digitale
+            description: Tutti i componenti per l'interfaccia del modello di sito e dei servizi digitali
+            otherResources:
+              - description: Libreria per Figma
+                link: <a href="https://www.figma.com/file/6J9UCfPJkKYvtFo6Va31Ls/Designers-Italia---Organismi-Hi-Fi?node-id=184%3A26301" aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Libreria per Sketch
+                disabled: true
+          - title: Documentazione Moduli e Sezioni
+            description: I moduli e le sezioni necessari per la creazione di servizi comunali digitali
             otherResources:
               - description: Libreria per Figma
                 link: <a href="https://www.figma.com/file/WkVMh3JnkyUQGE3POb0TSI/Designers-Italia---Documentazione-Moduli-e-Sezioni?node-id=0%3A1" aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
-              - description: Libreria per Sketch
-                disabled: true
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
