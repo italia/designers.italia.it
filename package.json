@@ -22,7 +22,7 @@
     "start": "npm run prepare && gatsby develop",
     "develop": "npm run start",
     "dev": "npm run start",
-    "build": "npm run prepare && gatsby build",
+    "build": "npm run prepare && gatsby build && recursive-copy -w ./public/ ./_site/",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
