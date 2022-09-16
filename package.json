@@ -1,6 +1,6 @@
 {
   "name": "designers.italia.it",
-  "version": "1.0.0",
+  "version": "2.0.0a",
   "description": "Il punto di riferimento per la progettazione dei servizi pubblici digitali",
   "author": "Presidenza del Consiglio dei Ministri",
   "license": "BSD-3-Clause",
@@ -18,10 +18,16 @@
     "italia"
   ],
   "scripts": {
-    "test": "bundle exec htmlproofer ./_site  --check-html --allow-hash-href --empty-alt-ignore --only-4xx --disable-external",
-    "dev": "bundle exec jekyll serve --destination /tmp/jekyll-site --trace --disable-disk-cache --host 0.0.0.0 --watch",
-    "build": "rm -fr _site && JEKYLL_ENV=production bundle exec jekyll build"
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "dev": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
-  "devDependencies": {},
-  "dependencies": {}
+  "dependencies": {
+    "gatsby": "^4.23.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
 }
