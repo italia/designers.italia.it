@@ -1,7 +1,36 @@
 import * as React from "react"
 import "../scss/styles.scss"
+import "../js/globals"
+import { CarouselBI, Alert, Tooltip, Sticky, InputNumber, BackToTop } from 'bootstrap-italia'
+import { useState, useEffect } from 'react';
+
 
 const IndexPage = () => {
+  // Similar to componentDidMount and componentDidUpdate:
+  useEffect(() => {
+    const carousel = new CarouselBI(document.getElementById('myCarousel'))
+
+    const alert = new Alert(document.getElementsByClassName('alert')[0])
+
+    setTimeout(() => {
+      alert.close()
+    }, 15000);
+
+    document.querySelectorAll('.ttp').forEach(el => {
+      new Tooltip(el);
+    });
+
+    const stickyElement = document.getElementById('sticky');
+    const sticky = new Sticky(stickyElement, {
+      positionType: 'sticky',
+      stickyClassName: 'is-sticky',
+      stackable: true,
+      paddingTop: 0,
+    });
+    const inputNumber = new InputNumber(document.getElementById('inputNumber3'))
+    const backToTop = new BackToTop(document.getElementsByClassName('back-to-top')[0])
+  });
+
   return (
     <main>
       <div id="sticky" class="it-header-slim-wrapper it-header-sticky" data-bs-toggle="sticky"
@@ -206,7 +235,6 @@ const IndexPage = () => {
         </svg>
       </a>
       <footer class="py-4"></footer>
-      <script src="./dist/js/demo.bundle.min.js"></script>
     </main>
   )
 }
