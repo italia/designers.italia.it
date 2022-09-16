@@ -1,1 +1,3 @@
-window.__PUBLIC_PATH__ = '/node_modules/bootstrap-italia/dist/fonts'
+if (typeof document !== "undefined") {
+  window.__PUBLIC_PATH__ = '/fonts'
+}

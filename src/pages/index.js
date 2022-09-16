@@ -95,7 +95,7 @@ const IndexPage = () => {
                   <a class="read-more" href="#">
                     <span class="text">Leggi di più</span>
                     <svg class="icon">
-                      <use href="node_modules/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+                      <use href="/svg/sprites.svg#it-arrow-right"></use>
                     </svg>
                   </a>
                 </div>
@@ -140,7 +140,7 @@ const IndexPage = () => {
                         <span class="text">Leggi di più <span class="visually-hidden">Lorem ipsum dolor
                           sit amet, consectetur adipiscing elit…</span></span>
                         <svg class="icon">
-                          <use href="node_modules/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+                          <use href="/svg/sprites.svg#it-arrow-right"></use>
                         </svg>
                       </a>
                     </div>
@@ -166,7 +166,7 @@ const IndexPage = () => {
                         <span class="text">Leggi di più <span class="visually-hidden">Lorem ipsum dolor
                           sit amet, consectetur adipiscing elit…</span></span>
                         <svg class="icon">
-                          <use href="node_modules/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+                          <use href="/svg/sprites.svg#it-arrow-right"></use>
                         </svg>
                       </a>
                     </div>
@@ -192,7 +192,7 @@ const IndexPage = () => {
                         <span class="text">Leggi di più <span class="visually-hidden">Lorem ipsum dolor
                           sit amet, consectetur adipiscing elit…</span></span>
                         <svg class="icon">
-                          <use href="node_modules/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+                          <use href="/svg/sprites.svg#it-arrow-right"></use>
                         </svg>
                       </a>
                     </div>
@@ -218,7 +218,7 @@ const IndexPage = () => {
                         <span class="text">Leggi di più <span class="visually-hidden">Lorem ipsum dolor
                           sit amet, consectetur adipiscing elit…</span></span>
                         <svg class="icon">
-                          <use href="node_modules/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right"></use>
+                          <use href="/svg/sprites.svg#it-arrow-right"></use>
                         </svg>
                       </a>
                     </div>
@@ -231,7 +231,7 @@ const IndexPage = () => {
       </div>
       <a href="#" aria-hidden="true" data-bs-toggle="backtotop" class="back-to-top back-to-top-small">
         <svg class="icon icon-light">
-          <use href="node_modules/bootstrap-italia/dist/svg/sprites.svg#it-arrow-up"></use>
+          <use href="/svg/sprites.svg#it-arrow-up"></use>
         </svg>
       </a>
       <footer class="py-4"></footer>
