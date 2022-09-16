@@ -16,18 +16,15 @@ Il sito necessita di essere ricompilato ad ogni pubblicazione su Medium.
 
 ## 🚀 Gatsby Quick start
 
-1.  **Create a Gatsby site.**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+1.  **Install dependencies.**
 
     ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
+    npm i
     ```
 
 2.  **Start developing.**
 
-    Navigate into your new site’s directory and start it up.
+    To start your project up run
 
     ```shell
     npm run develop
@@ -39,8 +36,7 @@ Il sito necessita di essere ricompilato ad ogni pubblicazione su Medium.
 
 3.  **Build static website (production).**
 
-    To build a static version of this website, navigate into your new site’s
-    directory and start the build process.
+    To build a static version of this website, start the build process.
 
     ```shell
     npm run build
