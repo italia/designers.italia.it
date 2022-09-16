@@ -30,15 +30,23 @@ Il sito necessita di essere ricompilato ad ogni pubblicazione su Medium.
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
     npm run develop
     ```
-
-3.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
 
     Edit `src/pages/index.js` to see your site update in real-time!
+
+3.  **Build static website (production).**
+
+    To build a static version of this website, navigate into your new site’s
+    directory and start the build process.
+
+    ```shell
+    npm run build
+    ```
+
+    Your statically generated site is placed inside the `public` directory.
 
 4.  **Learn more**
 
