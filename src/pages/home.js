@@ -24,6 +24,23 @@ const HomePage = () => {
 			}>
 			Label del bottone con icona a destra
 		</Button>
+		<Button
+			style="primary"
+			size="lg"
+			iconRounded
+			iconLeft={
+				<Icon icon="sprites.svg#it-tool" size="sm" color="primary"/>
+			}>
+			Label del bottone con icona stondata a sinistra
+		</Button>
+		<Button
+			style="primary"
+			iconRounded
+			srOnly="Testo per screen reader"
+			iconLeft={
+				<Icon icon="sprites.svg#it-tool" size="sm" color="primary"/>
+			}>
+		</Button>
 		<Button role="button" url="#" style="secondary">Label del link</Button>
 	  </Template>
 	)
