@@ -5,6 +5,7 @@ import { BackToTop } from 'bootstrap-italia'
 
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
+import BackToTopEl from "../components/back-to-top/back-to-top"
 
 const MainTemplate = ({children}) => {
 	return (
@@ -14,6 +15,7 @@ const MainTemplate = ({children}) => {
         {children}
       </main>
       <Footer/>
+      <BackToTopEl/>
     </>
 	)
 }
