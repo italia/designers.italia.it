@@ -8,17 +8,22 @@ const Button = ({
 	label,
 	role,   	   //button role for link <a>
 	disabled,   //true,no prop
-	iconLeft,  //icon in left position
-	iconRight,	//icon in right position
+	iconLeft,   //icon in left position (component Icon)
+	iconRight,	//icon in right position  (component Icon)
+	children
 	
 
 }) => {
-	let styles = `btn ${size ? 'icon-'+size : ''} ${style ? 'btn-'+style : ''} ${disabled ? 'disabled' : ''}`
+	let styles = 'btn'
+		+ `${size ? ' icon-'+size : ''}`
+		+ `${style ? ' btn-'+style : ''}`
+		+ `${disabled ? ' disabled' : ''}`
+
 	if (url) {
 		return (
 			<a href={url} className={styles} role={role} data-disabled={disabled}>
 				{iconLeft}
-				<span>{label}</span>
+				<span>{children}</span>
 				{iconRight}
 			</a>
 		)
@@ -26,7 +31,7 @@ const Button = ({
 		return (
 			<button type={type ? type : 'button'} className={styles}>
 				{iconLeft}
-				<span>{label}</span>
+				<span>{children}</span>
 				{iconRight}
 			</button>
 		)
