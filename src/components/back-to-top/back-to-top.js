@@ -4,14 +4,17 @@ import { BackToTop } from 'bootstrap-italia'
 import Icon from '../icon/icon'
 import "./back-to-top.scss"
 
-const BackToTopEl = () => {
-  // Similar to componentDidMount and componentDidUpdate:
+const BackToTopEl = (props) => {
   useEffect(() => {
-    const backToTop = new BackToTop(document.getElementsByClassName('back-to-top')[0])
+    const backToTop = new BackToTop(document.getElementById('backToTop'), {
+      positionTop: props.positionTop,
+      scrollLimit: props.scrollLimit,
+      duration: props.duration,
+      easing: props.easing,
+    })
   });
   return (
-    <a href="#" aria-hidden="true" data-bs-toggle="backtotop" class="back-to-top">
-      {/*<svg class="icon icon-light"><use href="/svg/sprites.svg#it-arrow-up"></use></svg>*/}
+    <a href="#" aria-hidden="true" data-bs-toggle="backtotop" class="back-to-top" id="backToTop">
       <Icon icon="sprites.svg#it-arrow-up" color="light"/>
     </a>
   )
