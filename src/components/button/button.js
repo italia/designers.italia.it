@@ -5,7 +5,6 @@ const Button = ({
 	type,
 	size,
 	style,       //primary,secondary,outline-primary,outline-secondary,success,warning,danger,info
-	label,
 	role,   	    //button role for link <a>
 	disabled,    //true,no prop
 	iconLeft,    //icon in left position (component Icon)
