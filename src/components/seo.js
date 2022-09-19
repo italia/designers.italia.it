@@ -1,5 +1,5 @@
 import React from "react"
-import { useSiteMetadata } from "./use-site-metadata"
+import { SeoGetSiteMetadata } from "./seo-get-site-metadata"
 
 export const Seo = ({title, description, image, pathname, children}) => {
 	const {
@@ -13,8 +13,9 @@ export const Seo = ({title, description, image, pathname, children}) => {
 		siteUrl,
 		twitterUsername,
 		twitter_creator,
-		twitter_site
-	} = useSiteMetadata()
+		twitter_site,
+		theme_color
+	} = SeoGetSiteMetadata()
 
 	const seo = {
 		site_name,
@@ -29,6 +30,7 @@ export const Seo = ({title, description, image, pathname, children}) => {
 		twitter_image,
 		twitter_creator,
 		twitter_site,
+		theme_color
 	}
 	return (
 		<>
@@ -48,16 +50,16 @@ export const Seo = ({title, description, image, pathname, children}) => {
 			<meta name="twitter:image" content={seo.twitter_image} />
 			<meta name="twitter:site" content={seo.twitter_site} />
 			<meta name="twitter:creator" content={seo.twitter_creator} />
-			<link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png"/>
-			<link rel="icon" type="image/png" href="/assets/icons/favicon-32x32.png" sizes="32x32"/>
-			<link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16"/>
-			<link rel="manifest" href="/assets/icons/manifest.json"/>
-			<link rel="mask-icon" href="/assets/icons/safari-pinned-tab.svg"/>
-			<link rel="shortcut icon" href="/assets/icons/favicon.ico"/>
+			<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png"/>
+			<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32"/>
+			<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16"/>
+			<link rel="manifest" href="images/favicons/manifest.json"/>
+			<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg"/>
+			<link rel="shortcut icon" href="images/favicons/favicon.ico"/>
 			<meta name="apple-mobile-web-app-title" content="Designers Italia"/>
 			<meta name="application-name" content="Designers Italia"/>
-			<meta name="msapplication-config" content="/assets/icons/browserconfig.xml"/>
-			<meta name="theme-color" content="#0066cc"/>
+			<meta name="msapplication-config" content="images/favicons/browserconfig.xml"/>
+			<meta name="theme-color" content={seo.theme_color}/>
 			{children}
 		</>
 	)

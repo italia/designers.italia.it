@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-export const useSiteMetadata = () => {
+export const SeoGetSiteMetadata = () => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -15,6 +15,7 @@ export const useSiteMetadata = () => {
 			twitter_image
 			twitter_site
 			twitter_creator
+			theme_color
         }
       }
     }

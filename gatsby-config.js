@@ -9,7 +9,8 @@ module.exports = {
     image : "https://designers.italia.it/assets/icons/logo-it.png",
     twitter_image : "https://designers.italia.it/assets/icons/logo-it.png",
     twitter_site : "@designersITA",
-    twitter_creator : "@Team per la Trasformazione Digitale e AGID"
+    twitter_creator : "@Team per la Trasformazione Digitale e AGID",
+    theme_color: "#0066cc"
   },
   plugins: [`gatsby-plugin-sass`],
 }
