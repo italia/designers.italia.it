@@ -3,7 +3,7 @@ import "./header.scss"
 
 const Header = ({ props }) => {
   return (
-    <header className="bg-primary">
+    <header className="bg-primary" id="header">
       <p className="text-white">Header</p>
     </header>
   )

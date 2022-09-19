@@ -3,9 +3,9 @@ import "./footer.scss"
 
 const Footer = ({ props }) => {
   return (
-    <header className="bg-secondary">
+    <footer className="bg-secondary" id="footer">
       <p className="text-white">Footer</p>
-    </header>
+    </footer>
   )
 }
 

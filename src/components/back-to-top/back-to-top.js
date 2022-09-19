@@ -2,7 +2,6 @@ import React from "react"
 import { useEffect } from 'react';
 import { BackToTop } from 'bootstrap-italia'
 import Icon from '../icon/icon'
-import "./back-to-top.scss"
 
 const BackToTopEl = (props) => {
   useEffect(() => {
