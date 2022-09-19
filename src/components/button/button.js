@@ -10,6 +10,7 @@ const Button = ({
 	iconLeft,    //icon in left position (component Icon)
 	iconRight,	 //icon in right position  (component Icon)
 	iconRounded, //icon width white circle bg: true, no prop
+	srOnly,      //for buttons icon only, text for screen reader
 	children
 	
 
@@ -37,7 +38,7 @@ const Button = ({
 
 	if (url) {
 		return (
-			<a href={url} className={styles} role={role} data-disabled={disabled}>
+			<a href={url} className={styles} role={role} aria-label={srOnly} data-disabled={disabled}>
 				{iconLeftRendered}
 				<span>{children}</span>
 				{iconRightRendered}
@@ -45,7 +46,7 @@ const Button = ({
 		)
 	}else{
 		return (
-			<button type={type ? type : 'button'} className={styles}>
+			<button type={type ? type : 'button'} aria-label={srOnly} className={styles}>
 				{iconLeftRendered}
 				<span>{children}</span>
 				{iconRightRendered}
