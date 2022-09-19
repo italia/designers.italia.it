@@ -1,6 +1,6 @@
 import * as React from "react"
 import Template from "../templates/default"
-import {Seo} from "../components/seo"
+import {Seo} from "../components/seo/seo"
 import Icon from "../components/icon/icon"
 
 const HomePage = () => {
@@ -15,5 +15,8 @@ const HomePage = () => {
  export default HomePage
 
  export const Head = () => (
-	<Seo title = "Home Page" description = "Il punto di riferimento per la progettazione dei servizi pubblici digitali"></Seo>
+	<Seo
+    title = "Designers Italia | Il punto di riferimento per la progettazione dei servizi pubblici digitali"
+    description = "Il punto di riferimento per la progettazione dei servizi pubblici digitali">
+  </Seo>
  )
