@@ -1,7 +1,6 @@
 import * as React from "react"
 import "../scss/styles.scss"
 import "../js/globals"
-import { BackToTop } from 'bootstrap-italia'
 
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
@@ -15,7 +14,12 @@ const MainTemplate = ({children}) => {
         {children}
       </main>
       <Footer/>
-      <BackToTopEl/>
+      <BackToTopEl
+        positionTop={0}
+        scrollLimit={100}
+        duration={800}
+        easing="easeInOutSine"
+      />
     </>
 	)
 }

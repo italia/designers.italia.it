@@ -34,7 +34,7 @@ export const Seo = ({title, description, image, pathname, children}) => {
 	}
 	return (
 		<>
-			<title>{seo.site_name} | {seo.title}</title>
+			<title>{seo.title}</title>
 			<meta property="og:title" content={seo.site_name}></meta>
 			<meta name="author" content={seo.author}></meta>
 			<meta property="og:locale" content={seo.lang}></meta>
