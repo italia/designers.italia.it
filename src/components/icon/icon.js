@@ -10,10 +10,10 @@ const Icon = ({
 
 }) => {
 	
-	
+	const styles = `icon ${padded ? 'icon-padded' : ''} ${size ? 'icon-'+size : ''} ${bg ? 'bg-'+bg : ''} ${align ? 'align-'+align : ''} ${color ? 'icon-'+color : ''}`
 
 	return(
-		<svg className={`icon ${padded ? 'icon-padded' : ''} ${size ? 'icon-'+size : ''} ${bg ? 'bg-'+bg : ''} ${align ? 'align-'+align : ''} ${color ? 'icon-'+color : ''}`}>
+		<svg className={styles}>
 			<use href={`/svg/${icon}`}></use>
 		</svg>
 	)
