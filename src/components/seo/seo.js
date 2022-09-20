@@ -44,7 +44,7 @@ export const Seo = ({title, description, image, pathname, children}) => {
 			<meta property="og:url" content={seo.url} />
 			<meta property="og:site_name" content={seo.site_name} />
 			<meta property="og:image"  content={seo.image} />
-			<meta property="og:type"  content="artcle" />
+			<meta property="og:type"  content="article" />
 			<meta name="twitter:card" content="summary_large_image" />
 			<meta name="twitter:title" content={seo.title} />
 			<meta name="twitter:image" content={seo.twitter_image} />
@@ -56,8 +56,8 @@ export const Seo = ({title, description, image, pathname, children}) => {
 			<link rel="manifest" href="/favicons/manifest.json"/>
 			<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg"/>
 			<link rel="shortcut icon" href="/favicons/favicon.ico"/>
-			<meta name="apple-mobile-web-app-title" content="Designers Italia"/>
-			<meta name="application-name" content="Designers Italia"/>
+			<meta name="apple-mobile-web-app-title" content={seo.site_name}/>
+			<meta name="application-name" content={seo.site_name}/>
 			<meta name="msapplication-config" content="/favicons/browserconfig.xml"/>
 			<meta name="theme-color" content={seo.theme_color}/>
 			{children}
