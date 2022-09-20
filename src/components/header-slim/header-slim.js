@@ -20,21 +20,10 @@ const HeaderSlim = ({data}) => {
 									<List id={data.nav.id} isMenu collapsable>
 										{data.nav.items.map((value,index)=>{
 											return(
-												<ListItem key={'item-' + index} url={value.url}></ListItem>
+												<ListItem key={'item-' + index} url={value.url} active={value.active}>{value.title}</ListItem>
 											)
 										})}
 									</List>
-									<div className="link-list-wrapper collapse" id={data.nav.id}>
-										<ul className="link-list">
-											{data.nav.items.map((value,index)=>{
-												return(
-													<li key={'item-' + index}>{value.title}</li>
-												)
-											})}
-											<li><a className="list-item active" href="https://designers.italia.it" aria-current="page" data-focus-mouse="false">Designers Italia</a></li>
-											<li><a className="dropdown-item list-item" href="https://developers.italia.it" target="_blank" data-focus-mouse="false">Developers Italia</a></li>
-										</ul>
-									</div>
 								</nav>
 							</div>
 						</div>
