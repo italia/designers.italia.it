@@ -26,7 +26,7 @@ const Button = ({
 		+ `${size ? ' btn-'+size : ''}`
 		+ `${btnStyle ? ' btn-'+btnStyle : ''}`
 		+ `${disabled ? ' disabled' : ''}`
-		+ `${iconLeft || iconRight ? ' btn-icon' : ''}`
+		+ `${iconLeft || iconRight && !dataBsToggle ? ' btn-icon' : ''}`
 		+ `${customStyle ? customStyle : ''}`
 		+ `${addonStyle ? ' '+addonStyle : ''}`
 

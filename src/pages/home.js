@@ -6,13 +6,47 @@ import Button from "../components/button/button"
 import Section from "../components/section/section"
 import Breadcrumbs from "../components/breadcrumbs/breadcrumbs"
 import Dropdown from '../components/dropdown/dropdown'
+import List from "../components/list/list"
+import ListItem from "../components/list-item/list-item"
 
 const HomePage = () => {
 	return (
 	  <Template>
 		
       <Section>
-			<Dropdown id="dropdownMenuButton" labelButton="Apri dropdown"></Dropdown>
+			<Dropdown
+				idButton="dropdownMenuButton"
+				dropStart
+				button={<Button btnStyle="dropdown dropdown-toggle" type="button" dataBsToggle="dropdown" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false"
+					iconRight={
+						<Icon icon="sprites.svg#it-expand"
+						color="primary"
+						size="sm"
+						addonClasses="icon-expand"/>
+					}>Apri Dropdown</Button>
+				}>
+				<List isMenu>
+					<ListItem url="#" isDropdown>Azione 1</ListItem>
+					<ListItem url="#" isDropdown>Azione 2</ListItem>
+					<ListItem url="#" isDropdown>Azione 3</ListItem>
+				</List>
+			</Dropdown>
+			<Dropdown
+				idButton="dropdownMenuButton2"
+				button={<Button btnStyle="primary" addonStyle="dropdown dropdown-toggle" type="button" dataBsToggle="dropdown" id="dropdownMenuButton2" aria-haspopup="true" aria-expanded="false"
+					iconRight={
+						<Icon icon="sprites.svg#it-expand"
+						color="light"
+						size="sm"
+						addonClasses="icon-expand"/>
+					}>Apri Dropdown</Button>
+				}>
+				<List isMenu>
+					<ListItem url="#" isDropdown>Azione 1</ListItem>
+					<ListItem url="#" isDropdown>Azione 2</ListItem>
+					<ListItem url="#" isDropdown>Azione 3</ListItem>
+				</List>
+			</Dropdown>
 			<Breadcrumbs
 				separator="/"
 				//dark={true}
