@@ -7,7 +7,8 @@ const Icon = ({
 	bg,       //light, dark 
 	align,    //bottom,middle,top
 	color,    //primary,secondary,success,warning,danger,light,white
-	hidden
+	hidden,
+	addonClasses
 
 }) => {
 	const styles = 'icon'
@@ -16,6 +17,7 @@ const Icon = ({
 		+ `${bg ? ' bg-'+bg : ''}`
 		+ `${align ? ' align-'+align : ''}`
 		+ `${color ? ' icon-'+color : ''}`
+		+ `${addonClasses ? ' '+addonClasses : ''}`
 
 	return(
 		<svg className={styles} aria-hidden={hidden}>
