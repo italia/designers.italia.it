@@ -1,6 +1,7 @@
 import * as React from "react"
 import Icon from "../icon/icon"
-
+import List from "../list/list"
+import ListItem from "../list-item/list-item"
 
 const HeaderSlim = ({data}) => {
 	return (
@@ -16,6 +17,13 @@ const HeaderSlim = ({data}) => {
 										<span>{data.title}</span>
 										<Icon icon="sprites.svg#it-expand" hidden="true"></Icon>
 									</a>
+									<List id={data.nav.id} isMenu collapsable>
+										{data.nav.items.map((value,index)=>{
+											return(
+												<ListItem key={'item-' + index} url={value.url}></ListItem>
+											)
+										})}
+									</List>
 									<div className="link-list-wrapper collapse" id={data.nav.id}>
 										<ul className="link-list">
 											{data.nav.items.map((value,index)=>{
