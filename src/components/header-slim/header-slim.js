@@ -5,7 +5,7 @@ import ListItem from "../list-item/list-item"
 
 const HeaderSlim = ({data}) => {
 	return (
-		<div className="it-header-slim-wrapper theme-dark">
+		<div className="it-header-slim-wrapper">
 			<div className="container">
 				<div className="row">
 					<div className="col-12">

@@ -1,5 +1,4 @@
 import React from "react"
-import HeaderSlim from "../header-slim/header-slim"
 import "./header.scss"
 
 const Header = ({ data, children }) => {
@@ -13,7 +12,7 @@ const Header = ({ data, children }) => {
       data-bs-toggle={data.sticky ? 'sticky' : ''}
       data-bs-position-type={data.sticky ? 'fixed' : ''}
       data-bs-sticky-class-name={data.sticky ? 'is-sticky' : ''}
-      data-bs-target={data.navbar.id}>
+      data-bs-target={`#${data.navbar.id}`}>
       {children}
     </header>
   )
