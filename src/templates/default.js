@@ -10,6 +10,7 @@ import HeaderSlim from "../components/header-slim/header-slim"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
 import HeaderData from '../data/header.json'
+import HeaderNav from "../components/header-nav/header-nav"
 
 const MainTemplate = ({children}) => {
 	return (
@@ -19,6 +20,7 @@ const MainTemplate = ({children}) => {
 			<HeaderSlim data={HeaderData.header_slim}/>
 			<NavWrapper>
 				<HeaderCenter data={HeaderData.header_center}/>
+				<HeaderNav data={HeaderData.navbar}/>
 			</NavWrapper>
 		</Header>
       <main id="main">

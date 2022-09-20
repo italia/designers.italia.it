@@ -6,7 +6,7 @@ const ListItem = ({
 	active      //state of the link
 
 }) => {
-	const styles = url ? false : "list-item"
+	const styles = url ? undefined : "list-item"
 	
 	//link
 	var listContent
