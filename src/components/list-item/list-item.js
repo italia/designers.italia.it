@@ -1,9 +1,9 @@
 import * as React from "react"
 
 const ListItem = ({
-	url,
-	children,
-	active
+	url,        //link of item
+	children,   //usually label of link
+	active      //state of the link
 
 }) => {
 	const styles = url ? false : "list-item"

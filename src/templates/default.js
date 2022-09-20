@@ -12,9 +12,10 @@ import HeaderData from '../data/header.json'
 const MainTemplate = ({children}) => {
 	return (
     <>
-	 	<HeaderSlim data={HeaderData.header_slim}></HeaderSlim>
       <Skiplinks/>
-      <Header/>
+      <Header data={HeaderData}>
+			<HeaderSlim data={HeaderData.header_slim}/>
+		</Header>
       <main id="main">
         {children}
       </main>

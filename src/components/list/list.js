@@ -1,8 +1,8 @@
 import * as React from "react"
 
 const List = ({
-	isMenu,
-	collapsable,
+	isMenu,       //if list is inside nav menu: true or false
+	collapsable,  //true / false
 	id,
 	children
 
