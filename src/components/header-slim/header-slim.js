@@ -12,7 +12,7 @@ const HeaderSlim = ({data}) => {
 						<div className="it-header-slim-wrapper-content">
 							<a className="d-none d-lg-block navbar-brand" href="#" data-focus-mouse="false">{data.title}</a>
 							<div className="nav-mobile">
-								<nav aria-label={data.nav.aria_label}>
+								<nav aria-label={data.nav.ariaLabel}>
 									<a className="it-opener d-lg-none collapsed" data-bs-toggle="collapse" href={`#${data.nav.id}`} role="button" aria-expanded="false" aria-controls={data.nav.id} data-focus-mouse="false">
 										<span>{data.title}</span>
 										<Icon icon="sprites.svg#it-expand" hidden="true"></Icon>

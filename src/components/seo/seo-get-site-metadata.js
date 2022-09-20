@@ -10,12 +10,12 @@ export const SeoGetSiteMetadata = () => {
 			author
 			lang
 			description
-			site_name
+			siteName
 			image
-			twitter_image
-			twitter_site
-			twitter_creator
-			theme_color
+			twitterImage
+			twitterSite
+			twitterCreator
+			themeColor
         }
       }
     }

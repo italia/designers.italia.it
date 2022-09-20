@@ -5,12 +5,12 @@ module.exports = {
     author : "Team per la Trasformazione Digitale e AGID",
     lang : "it",
     description : "Il punto di riferimento per la progettazione dei servizi pubblici digitali",
-    site_name : "Designers Italia",
+    siteName : "Designers Italia",
     image : "https://designers.italia.it/assets/icons/logo-it.png",
-    twitter_image : "https://designers.italia.it/assets/icons/logo-it.png",
-    twitter_site : "@designersITA",
-    twitter_creator : "@Team per la Trasformazione Digitale e AGID",
-    theme_color: "#0066cc"
+    twitterImage : "https://designers.italia.it/assets/icons/logo-it.png",
+    twitterSite : "@designersITA",
+    twitterCreator : "@Team per la Trasformazione Digitale e AGID",
+    themeColor: "#0066cc"
   },
   plugins: [`gatsby-plugin-sass`],
 }

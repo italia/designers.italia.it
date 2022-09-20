@@ -17,9 +17,9 @@ const MainTemplate = ({children}) => {
     <>
       <Skiplinks/>
       <Header data={HeaderData}>
-			<HeaderSlim data={HeaderData.header_slim}/>
+			<HeaderSlim data={HeaderData.headerSlim}/>
 			<NavWrapper>
-				<HeaderCenter data={HeaderData.header_center}/>
+				<HeaderCenter data={HeaderData.headerCenter}/>
 				<HeaderNav data={HeaderData.navbar}/>
 			</NavWrapper>
 		</Header>
