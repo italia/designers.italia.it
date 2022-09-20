@@ -4,7 +4,7 @@ const Button = ({
 	url,
 	type,
 	size,
-	btnStyle,       //primary,secondary,outline-primary,outline-secondary,success,warning,danger,info
+	btnStyle,       //primary,secondary,outline-primary,outline-secondary,success,warning,danger,info,dropdown
 	customStyle,
 	addonStyle,
 	role,   	       //button role for link <a>
@@ -15,7 +15,7 @@ const Button = ({
 	srOnly,         //for buttons icon only, text for screen reader
 	ariaControls,   //id for menu opened by button
 	ariaExpanded,   //true / no prop
-	openMenu,		 //true / no prop
+	dataBsToggle,	 //navbarcollapsible,dropdown
 	children
 
 
@@ -46,7 +46,7 @@ const Button = ({
 
 	if (url) {
 		return (
-			<a href={url} className={btnStyles} role={role} aria-label={srOnly} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={openMenu ? 'navbarcollapsible' : undefined} data-bs-target={ariaControls ? '#'+ariaControls : undefined}>
+			<a href={url} className={btnStyles} role={role} aria-label={srOnly} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined}>
 				{iconLeftRendered}
 				<span>{children}</span>
 				{iconRightRendered}
@@ -54,7 +54,7 @@ const Button = ({
 		)
 	}else{
 		return (
-			<button type={type ? type : 'button'} aria-label={srOnly} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={openMenu ? 'navbarcollapsible' : undefined} data-bs-target={ariaControls ? '#'+ariaControls : undefined}>
+			<button type={type ? type : 'button'} aria-label={srOnly} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined}>
 				{iconLeftRendered}
 				<span>{children}</span>
 				{iconRightRendered}

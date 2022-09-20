@@ -9,7 +9,7 @@ const HeaderNav = ({data}) => {
 			<div className="row">
 				<div className="col-12">
 					<nav className="navbar navbar-expand-lg has-megamenu" aria-label={data.ariaLabel}>
-						<Button customStyle="custom-navbar-toggler" type="button" openMenu ariaControls={data.nav.id} ariaExpanded="false" srOnly={data.toggler.srOnly}>
+						<Button customStyle="custom-navbar-toggler" type="button" dataBsToggle="navbarcollapsible" ariaControls={data.nav.id} ariaExpanded="false" srOnly={data.toggler.srOnly}>
 							<Icon icon="sprites.svg#it-burger"/>
 						</Button>
 						<div className="navbar-collapsable" id={data.nav.id}>
