@@ -6,7 +6,8 @@ const Icon = ({
 	padded,   //true, no prop 
 	bg,       //light, dark 
 	align,    //bottom,middle,top
-	color     //primary,secondary,success,warning,danger,light,white
+	color,    //primary,secondary,success,warning,danger,light,white
+	hidden
 
 }) => {
 	const styles = 'icon'
@@ -17,7 +18,7 @@ const Icon = ({
 		+ `${color ? ' icon-'+color : ''}`
 
 	return(
-		<svg className={styles}>
+		<svg className={styles} aria-hidden={hidden}>
 			<use href={`/svg/${icon}`}></use>
 		</svg>
 	)
