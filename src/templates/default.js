@@ -9,7 +9,7 @@ import BackToTopEl from "../components/back-to-top/back-to-top"
 import HeaderSlim from "../components/header-slim/header-slim"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
-import HeaderData from '../data/header.json'
+import HeaderData from '../data/header.yaml'
 import HeaderNav from "../components/header-nav/header-nav"
 
 const MainTemplate = ({children}) => {

@@ -2,6 +2,7 @@ import * as React from "react"
 import Button from "../button/button"
 import Icon from "../icon/icon"
 import HeaderMenu from "../header-menu/header-menu"
+import HeaderMenuItem from "../header-menu-item/header-menu-item"
 
 const HeaderNav = ({data}) => {
 	return(
@@ -21,7 +22,13 @@ const HeaderNav = ({data}) => {
 								</Button>
 							</div>
 							<HeaderMenu>
-								
+								{data.nav.voices.map((value,index)=>{
+									return(
+										<HeaderMenuItem key={"item-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
+											
+										</HeaderMenuItem>
+									)
+								})}
 							</HeaderMenu>
 						</div>
 					</nav>

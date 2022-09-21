@@ -2,7 +2,7 @@ import * as React from "react"
 
 const HeaderMenuItem = ({
 	isDropDown,
-	isMegaMenu
+	isMegaMenu,
 }) => {
 
 	const styles = "nav-item"
