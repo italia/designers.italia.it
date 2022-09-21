@@ -3,6 +3,7 @@ import * as React from "react"
 const HeaderMenuItem = ({
 	isDropDown,
 	isMegaMenu,
+	children
 }) => {
 
 	const styles = "nav-item"
@@ -11,7 +12,7 @@ const HeaderMenuItem = ({
 	
 		return(
 		<li class={styles}>
-
+			{children}
 		</li>
 	)
 }

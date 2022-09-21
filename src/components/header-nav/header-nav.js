@@ -3,6 +3,8 @@ import Button from "../button/button"
 import Icon from "../icon/icon"
 import HeaderMenu from "../header-menu/header-menu"
 import HeaderMenuItem from "../header-menu-item/header-menu-item"
+import HeaderMenuLink from "../header-menu-link/header-menu-link"
+import DropdownMenu from "../dropdown-menu/dropdown-menu"
 
 const HeaderNav = ({data}) => {
 	return(
@@ -25,7 +27,10 @@ const HeaderNav = ({data}) => {
 								{data.nav.voices.map((value,index)=>{
 									return(
 										<HeaderMenuItem key={"item-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
-											
+											<HeaderMenuLink key={"item-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu}></HeaderMenuLink>
+											<DropdownMenu idMegamenu={value.idMegamenu}>
+												
+											</DropdownMenu>
 										</HeaderMenuItem>
 									)
 								})}
