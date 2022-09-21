@@ -8,11 +8,12 @@ import Breadcrumbs from "../components/breadcrumbs/breadcrumbs"
 import Dropdown from '../components/dropdown/dropdown'
 import List from "../components/list/list"
 import ListItem from "../components/list-item/list-item"
+import Pagedata from "../data/pages/home.yaml"
 
 const HomePage = () => {
 	return (
 	  <Template>
-		
+
       <Section>
 			<Dropdown
 				idButton="dropdownMenuButton"
@@ -119,7 +120,7 @@ const HomePage = () => {
 
  export const Head = () => (
 	<Seo
-    title = "Designers Italia | Il punto di riferimento per la progettazione dei servizi pubblici digitali"
-    description = "Il punto di riferimento per la progettazione dei servizi pubblici digitali">
+    title = {Pagedata.name}
+    description = {Pagedata.description}>
   </Seo>
  )
