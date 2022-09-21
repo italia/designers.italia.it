@@ -1,11 +1,13 @@
 import * as React from "react"
 import Section from "../section/section"
 
-const TestYaml = () => {
+const TestYaml = ({
+  title,
+}) => {
 	return (
 		<div className="test">
 			<Section>
-				<p>Content</p>
+				<h1>{title}</h1>
 			</Section>
 		</div>
 	)
