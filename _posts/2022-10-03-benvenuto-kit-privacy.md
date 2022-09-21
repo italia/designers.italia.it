@@ -17,7 +17,7 @@ categories:
 ---
 
 <!-- MORE -->
-Quante volte, nella progettazione e realizzazione di un servizio digitale, ti sei chiesto se tutti gli aspetti riguardanti la privacy fossero stati correttamente compresi e presi in considerazione? Per esempio, nell’uso delle immagini online, nell’impostazione della *cookie policy* del nostro sito web o, nell’informativa per l’invio della newsletter? 
+Quante volte, nella progettazione e realizzazione di un servizio digitale, non avevi certezza che tutti gli aspetti riguardanti la privacy fossero stati correttamente compresi e presi in considerazione, per esempio, nell’uso delle immagini online, nell’impostazione della *cookie policy* del nostro sito web o, nell’informativa per l’invio della newsletter? 
 
 Per rispondere a questi e altri dubbi, da oggi la [sezione kit](https://designers.italia.it/kit/) di Designers Italia si arricchisce di **un nuovo strumento: il Kit Privacy**. 
 
