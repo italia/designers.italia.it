@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Benvenuto Kit Privacy"
 subtitle: "Rispetta la privacy dei tuoi utenti quando realizzi un servizio digitale"
-date: 2022-10-03 09:00:00 +0200
+date: 2022-09-21 09:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
