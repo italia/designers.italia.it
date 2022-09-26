@@ -1,4 +1,5 @@
 import React from "react"
+import ReactMarkdown from 'react-markdown'
 import "./footer.scss"
 import List from "../list/list"
 import ListItem from "../list-item/list-item"
@@ -16,7 +17,7 @@ const Footer = ({ data }) => {
   function text(boolean) {
     if(boolean) {
       return (
-        <p>{boolean}</p>
+        <p><ReactMarkdown>{boolean}</ReactMarkdown></p>
       )
     }
   }
