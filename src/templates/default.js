@@ -10,6 +10,7 @@ import HeaderSlim from "../components/header-slim/header-slim"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
 import HeaderData from '../data/header.yaml'
+import FooterData from '../data/footer.yaml'
 import HeaderNav from "../components/header-nav/header-nav"
 
 const MainTemplate = ({children}) => {
@@ -26,7 +27,8 @@ const MainTemplate = ({children}) => {
       <main id="main">
         {children}
       </main>
-      <Footer/>
+      <Footer data={FooterData.footer}>
+      </Footer>
       <BackToTopEl
         positionTop={0}
         scrollLimit={100}
