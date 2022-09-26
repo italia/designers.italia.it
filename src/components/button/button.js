@@ -34,12 +34,12 @@ const Button = ({
 
 	// rounded icon wrapper
 	if (iconRounded && iconLeft) {
-		iconLeftRendered = <span class="rounded-icon">{iconLeft}</span>
+		iconLeftRendered = <span className="rounded-icon">{iconLeft}</span>
 	} else {
 		iconLeftRendered = iconLeft
 	}
 	if (iconRounded && iconRight) {
-		iconRightRendered = <span class="rounded-icon">{iconLeft}</span>
+		iconRightRendered = <span className="rounded-icon">{iconLeft}</span>
 	} else {
 		iconRightRendered = iconRight
 	}

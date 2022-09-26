@@ -11,7 +11,7 @@ const HeaderMenuItem = ({
 		+ `${isMegaMenu ? ' megamenu' : ''}`
 	
 		return(
-		<li class={styles}>
+		<li className={styles}>
 			{children}
 		</li>
 	)
