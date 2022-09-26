@@ -18,11 +18,11 @@ const MainTemplate = ({children}) => {
     <>
       <Skiplinks/>
       <Header data={HeaderData}>
-			  <HeaderSlim data={HeaderData.headerSlim}/>
-        <NavWrapper>
-          <HeaderCenter data={HeaderData.headerCenter}/>
-          <HeaderNav data={HeaderData.navbar}/>
-        </NavWrapper>
+			<HeaderSlim data={HeaderData.headerSlim}/>
+			<NavWrapper>
+				<HeaderCenter data={HeaderData.headerCenter}/>
+				<HeaderNav data={HeaderData.navbar}/>
+			</NavWrapper>
 		</Header>
       <main id="main">
         {children}
