@@ -2,12 +2,20 @@ import * as React from "react"
 import Template from "../templates/default"
 import {Seo} from "../components/seo/seo"
 import TestYaml from "../components/test-yaml/test-yaml"
-import Pagedata from '../data/pages/home.yaml'
+import Pagedata from '../data/pages/cycle.yaml'
 
-const Yaml = ({data}) => {
+const SwitchComponents= {
+	testyaml : TestYaml
+};
+const Yaml = () => {
 	return (
 	  <Template>
-      <TestYaml title={Pagedata.components.testyaml.title}  subtitle={Pagedata.components.testyaml.subtitle} text={Pagedata.components.testyaml.text}></TestYaml>
+			{Pagedata.components.map((component,index)=>{
+				const Switcher = SwitchComponents[component.name]
+				return(
+					<Switcher {...component.props} key={"item-"+index}/>
+				)
+			})}
 	  </Template>
 	)
 }
