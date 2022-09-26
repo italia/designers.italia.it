@@ -4,7 +4,8 @@ const ListItem = ({
 	url,        //link of item
 	isDropdown, //true / false 
 	children,   //usually label of link
-	active      //state of the link
+	active,      //state of the link
+	ariaLabel
 
 }) => {
 	const styles = url ? undefined : "list-item"
@@ -15,7 +16,7 @@ const ListItem = ({
 	listContent = <span>{children}</span>
 	
 	if (url) {
-		listContent = <a className={`list-item ${active ? ' active' : ''} ${isDropdown ? ' dropdown-item' : ''}`}  href={url}>{children}</a>
+		listContent = <a className={`list-item ${active ? ' active' : ''} ${isDropdown ? ' dropdown-item' : ''}` } aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  href={url}>{children}</a>
 	}
 	if (isDropdown) {
 		listContent = <a className={`list-item ${active ? ' active' : ''} ${isDropdown ? ' dropdown-item' : ''}`}  href={url}><span>{children}</span></a>

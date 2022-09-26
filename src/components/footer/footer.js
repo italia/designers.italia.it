@@ -1,5 +1,7 @@
 import React from "react"
 import "./footer.scss"
+import List from "../list/list"
+import ListItem from "../list-item/list-item"
 
 const Footer = ({ data }) => {
   function sub(boolean){
@@ -26,6 +28,26 @@ const Footer = ({ data }) => {
                     </a>
                   </div>
                 </div>
+              </div>
+            </section>
+            <section>
+			        <div class="row">
+              {data.footerMain.cols.map((value,index)=>{
+                return(
+                  <div key={"item-"+index} class="col-lg-3 col-md-3 col-sm-6 pb-2">
+                    <h4>
+                      <a href={value.url} aria-label={`Vai alla pagina: ${value.title}`}>{value.title}</a>
+                    </h4>
+                    <List isMenu={value.isMenu} customStyleUl={value.customStyleUl}>
+                      {value.items.map((item,index)=>{
+                        return (
+                          <ListItem ariaLabel={item.ariaLabel} key={"item-"+index} url={item.url}>{item.title}</ListItem>
+                        )
+                      })}
+                    </List>
+                  </div>
+                )
+              })}
               </div>
             </section>
           </div>
