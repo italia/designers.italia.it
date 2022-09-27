@@ -1,25 +1,55 @@
 import * as React from "react"
+import Icon from "../icon/icon"
 
 const ListItem = ({
 	url,        //link of item
 	isDropdown, //true / false 
 	children,   //usually label of link
-	active,      //state of the link
-	ariaLabel
+	active,     //state of the link
+	disabled,
+	label,
+	visuallyHidden, //screen reader active state
+	divider,
+	textLarge,
+	ariaLabel,
+	icon,
+	iconRight,
+	iconLeft
 
 }) => {
-	const styles = url ? undefined : "list-item"
-		+ `${isDropdown ? ' dropdown-item' : ''}`
+	let styles = url ? undefined : "list-item"
+
+	//icon render
+	let iconRendered
+	if (icon) {
+		iconRendered = <Icon {...icon}/>
+	}
+
+	if(label){
+		children = label
+	}
 	
 	//link
 	var listContent
 	listContent = <span>{children}</span>
+
+	var isActive
+	if (active) {
+		isActive = <span className="visually-hidden">{visuallyHidden}</span>
+	}
 	
+
+
 	if (url) {
-		listContent = <a className={`list-item ${active ? ' active' : ''} ${isDropdown ? ' dropdown-item' : ''}` } aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  href={url}>{children}</a>
+		listContent = <a className={`list-item ${active ? ' active' : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  href={url}>{iconLeft ? iconRendered: ''}{children}{isActive}{iconRight ? iconRendered: ''}</a>
 	}
 	if (isDropdown) {
-		listContent = <a className={`list-item ${active ? ' active' : ''} ${isDropdown ? ' dropdown-item' : ''}`}  href={url}><span>{children}</span></a>
+		listContent = <a className={`list-item ${active ? ' active' : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  href={url}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</a>
+	}
+	
+	if (divider) {
+		listContent = <span class="divider"></span>
+		styles = ''
 	}
 
 	return(

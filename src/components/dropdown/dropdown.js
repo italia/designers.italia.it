@@ -1,5 +1,6 @@
 import * as React from "react"
 import Button from "../button/button"
+import List from "../list/list"
 
 
 const Dropdown = ({
@@ -7,6 +8,7 @@ const Dropdown = ({
 	dropUp,
 	dropEnd,
 	dropStart,
+	list,
 	children,
 	button,
 	
@@ -19,7 +21,17 @@ const Dropdown = ({
 
 	let btnComponents
 	if (button) {
-		btnComponents = <Button id={btnId} ariaExpanded="false" ariaHaspopup="true" dataBsToggle="dropdown" {...button}></Button>
+		btnComponents = <Button
+			id={btnId}
+			ariaExpanded="false"
+			ariaHaspopup="true"
+			dataBsToggle="dropdown"
+			{...button}></Button>
+	}
+
+
+	if (list) {
+		children = <List {...list} isMenu isDropdown></List>
 	}
 
 	return (

@@ -4,10 +4,13 @@ import ListItem from "../list-item/list-item"
 const List = ({
 	isMenu,       //if list is inside nav menu: true or false
 	collapsable,  //true / false
+	isDropdown,   // if inside dropdown
 	id,
+	textLarge,
 	children,
 	customStyle,
 	customStyleUl,
+	title,		  //if has heading
 	listItems
 
 }) => {
@@ -18,15 +21,22 @@ const List = ({
 	const ulStyles = `${isMenu ? 'link-list' : 'it-list'}`
 		+ `${customStyleUl ? ' '+customStyleUl : ''}`
 
-
+	
 	if (listItems) {
+		console.log(isDropdown)
 		children = listItems.map(listitems => {
-			return <ListItem {...listitems}></ListItem>
+			return <ListItem {...listitems} isDropdown={isDropdown} textLarge={textLarge}></ListItem>
 		})
+	}
+
+	let heading
+	if(title) {
+		heading =<div class="link-list-heading">{title}</div>
 	}
 
 	return(
 		<div className={styles} id={id}>
+			{heading}
 			<ul className={ulStyles}>
 				{children}
 			</ul>
