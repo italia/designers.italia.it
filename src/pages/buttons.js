@@ -27,6 +27,34 @@ const Buttons = () => {
 								<Button key={"cutton-color-"+index} {...button}/>
 							)
 						})}
+						<h2 className="mt-3">Link disabilitato</h2>
+						<Button {...Pagedata.components.disabledLink}></Button>
+						<h2 className="mt-3">Sfondo scuro</h2>
+						<div className="bg-dark ps-1 p-2">
+							{ Pagedata.components.buttonColors.map((button,index) => {
+								return(
+									<Button key={"button-color-2-"+index} {...button}/>
+								)
+							})}
+						</div>
+						<h2 className="mt-3">Pulsanti con icona</h2>
+						{ Pagedata.components.buttonIcon.map((button,index) => {
+								return(
+									<Button key={"button-icon-"+index} {...button}/>
+								)
+							})}
+						<h2 className="mt-3">Pulsanti con icona cerchiata</h2>
+						{ Pagedata.components.buttonIconCircle.map((button,index) => {
+								return(
+									<Button key={"button-icon-circle-"+index} {...button}/>
+								)
+							})}
+						<h2 className="mt-3">Dimensioni</h2>
+						{ Pagedata.components.buttonSize.map((button,index) => {
+								return(
+									<Button key={"button-size-"+index} {...button}/>
+								)
+							})}
 					</div>
 				</div>
 			</div>
