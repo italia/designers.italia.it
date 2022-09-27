@@ -10,22 +10,33 @@ import List from "../components/list/list"
 import ListItem from "../components/list-item/list-item"
 import Pagedata from "../data/pages/home.yaml"
 
+
 const HomePage = () => {
 	return (
 	  <Template>
 
       <Section>
+      <Button {...Pagedata.components.button}></Button>
+      <Dropdown {...Pagedata.components.dropdown}>
+        <List {...Pagedata.components.dropdown.list}></List>
+      </Dropdown>
 			<Dropdown
-				idButton="dropdownMenuButton"
+				btnId="dropdownMenuButton"
 				dropStart
-				button={<Button btnStyle="dropdown dropdown-toggle" type="button" dataBsToggle="dropdown" id="dropdownMenuButton" aria-haspopup="true" aria-expanded="false"
-					iconRight={
-						<Icon icon="sprites.svg#it-expand"
-						color="primary"
-						size="sm"
-						addonClasses="icon-expand"/>
-					}>Apri Dropdown</Button>
-				}>
+				button = {
+          {
+            btnStyle:"dropdown dropdown-toggle",
+            iconRight : true,
+            icon : {
+              icon:"sprites.svg#it-expand",
+              color:"primary",
+              size:"sm",
+              addonClasses:"icon-expand",
+              iconRounded: false
+            },
+            children:"Apri Dropdown",
+        }}
+        >
 				<List isMenu>
 					<ListItem url="#" isDropdown>Azione 1</ListItem>
 					<ListItem url="#" isDropdown>Azione 2</ListItem>
@@ -33,15 +44,22 @@ const HomePage = () => {
 				</List>
 			</Dropdown>
 			<Dropdown
-				idButton="dropdownMenuButton2"
-				button={<Button btnStyle="primary" addonStyle="dropdown dropdown-toggle" type="button" dataBsToggle="dropdown" id="dropdownMenuButton2" aria-haspopup="true" aria-expanded="false"
-					iconRight={
-						<Icon icon="sprites.svg#it-expand"
-						color="light"
-						size="sm"
-						addonClasses="icon-expand"/>
-					}>Apri Dropdown</Button>
-				}>
+				btnId="dropdownMenuButton2"
+        button = {
+          {
+            btnStyle: "primary",
+            addonStyle:"dropdown dropdown-toggle",
+            icon : {
+              color:"primary",
+              size:"sm",
+              icon:"sprites.svg#it-expand",
+              color:"light",
+              addonClasses:"icon-expand"
+            },
+            children:"Apri Dropdown",
+            iconRight: true,
+          }
+        }>
 				<List isMenu>
 					<ListItem url="#" isDropdown>Azione 1</ListItem>
 					<ListItem url="#" isDropdown>Azione 2</ListItem>
@@ -63,34 +81,43 @@ const HomePage = () => {
         <Icon icon="sprites.svg#it-tool" size="lg" bg="light" color="success"></Icon>
         <Button
           btnStyle="primary"
-          iconLeft={
-            <Icon icon="sprites.svg#it-tool" size="sm" color="light"/>
-          }>
+          iconLeft
+          icon="sprites.svg#it-tool"
+          iconSize="sm"
+          iconColor="light"
+          >
+          
           Label del bottone con icona a sinistra
         </Button>
         <Button
           btnStyle="primary"
-          iconRight={
-            <Icon icon="sprites.svg#it-tool" size="sm" color="light"/>
-          }>
+          iconRight
+          icon="sprites.svg#it-tool"
+          iconSize="sm"
+          iconColor="light"
+          >
           Label del bottone con icona a destra
         </Button>
         <Button
           btnStyle="primary"
           size="lg"
           iconRounded
-          iconLeft={
-            <Icon icon="sprites.svg#it-tool" size="sm" color="primary"/>
-          }>
+          iconLeft
+          icon="sprites.svg#it-tool"
+          iconSize="sm"
+          iconColor="primary"
+          >
           Label del bottone con icona stondata a sinistra
         </Button>
         <Button
           btnStyle="primary"
           iconRounded
           srOnly="Testo per screen reader"
-          iconLeft={
-            <Icon icon="sprites.svg#it-tool" size="sm" color="primary"/>
-          }>
+          iconLeft
+          icon="sprites.svg#it-tool"
+          iconSize="sm"
+          iconColor="primary"
+          >
         </Button>
         <Button
           role="button"

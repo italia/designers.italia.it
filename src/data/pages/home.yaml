@@ -2,7 +2,45 @@
 name: Home Page
 description : Descrizione Pagina
 components:
+  
   testyaml :
     title : "Heading level 1"
     subtitle : "Heading level 2"
     text: Testo
+  
+  button :
+    btnStyle: primary
+    iconRight: true
+    icon: sprites.svg#it-expand
+    iconSize: sm
+    iconColor: light
+    iconAddonClasses: false
+    iconRounded: false
+    children: Label del bottone
+  
+  dropdown :
+    btnId: dropdownMenuButtonDynamic
+    button:
+      btnStyle: primary
+      addonStyle: dropdown dropdown-toggle
+      children: Apri Dropdown
+      iconRight: true
+      iconRounded: false
+      icon: 
+        color: light
+        size: sm
+        icon: sprites.svg#it-expand
+        addonClasses : icon-expand
+    list:
+      isMenu: true
+      listItems:
+        - url: "#"
+          isDropdown : true
+          children : Azione 1
+        - url: "#"
+          isDropdown : true
+          children : Azione 2
+        - url: "#"
+          isDropdown : true
+          children : Azione 3
+

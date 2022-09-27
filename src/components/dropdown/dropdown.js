@@ -1,14 +1,14 @@
 import * as React from "react"
 import Button from "../button/button"
-import Icon from "../icon/icon"
+
 
 const Dropdown = ({
-	idButton,
+	btnId,
 	dropUp,
 	dropEnd,
 	dropStart,
 	children,
-	button
+	button,
 	
 }) => {
 	
@@ -17,10 +17,15 @@ const Dropdown = ({
 		+ `${dropEnd ? ' dropend' : ''}`
 		+ `${dropStart ? ' dropstart' : ''}`
 
+	let btnComponents
+	if (button) {
+		btnComponents = <Button id={btnId} ariaExpanded="false" ariaHaspopup="true" dataBsToggle="dropdown" {...button}></Button>
+	}
+
 	return (
 		<div className={styles}>
-			{button}
-			<div className="dropdown-menu" aria-labelledby={idButton}>
+			{btnComponents}
+			<div className="dropdown-menu" aria-labelledby={btnId}>
 				{children}
 			</div>
 		</div>
