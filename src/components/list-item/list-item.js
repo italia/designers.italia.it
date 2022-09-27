@@ -1,5 +1,6 @@
 import * as React from "react"
 import Icon from "../icon/icon"
+import Avatar from "../avatar/avatar"
 
 const ListItem = ({
 	url,        //link of item
@@ -14,10 +15,14 @@ const ListItem = ({
 	ariaLabel,
 	icon,
 	iconRight,
-	iconLeft
+	iconLeft,
+	simpleList,
+	avatar
 
 }) => {
 	let styles = url ? undefined : "list-item"
+
+
 
 	//icon render
 	let iconRendered
@@ -29,6 +34,11 @@ const ListItem = ({
 		children = label
 	}
 	
+	let avatarRendered
+	if(avatar){
+		avatarRendered = <Avatar {...avatar}/>
+	}
+
 	//link
 	var listContent
 	listContent = <span>{children}</span>
@@ -38,17 +48,21 @@ const ListItem = ({
 		isActive = <span className="visually-hidden">{visuallyHidden}</span>
 	}
 	
-
-
 	if (url) {
 		listContent = <a className={`list-item ${active ? ' active' : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  href={url}>{iconLeft ? iconRendered: ''}{children}{isActive}{iconRight ? iconRendered: ''}</a>
 	}
 	if (isDropdown) {
 		listContent = <a className={`list-item ${active ? ' active' : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  href={url}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</a>
 	}
-	
+	if (simpleList) {
+		listContent = 	<div className="list-item">{avatarRendered}<div className="it-right-zone"><span className="text">{children}</span></div></div>
+		styles=''
+	}
+	if (simpleList && url) {
+		listContent = 	<a className={`list-item ${active ? ' active' : ''}`} href={url}>{avatarRendered}<div className="it-right-zone"><span className="text">{children}</span></div></a> 
+	}
 	if (divider) {
-		listContent = <span class="divider"></span>
+		listContent = <span className="divider"></span>
 		styles = ''
 	}
 
