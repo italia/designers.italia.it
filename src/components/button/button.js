@@ -6,6 +6,7 @@ const Button = ({
 	type,
 	size,
 	id,
+	label,				//if data is yaml
 	btnStyle,         //primary,secondary,outline-primary,outline-secondary,success,warning,danger,info,dropdown
 	customStyle,  
 	addonStyle,  
@@ -37,6 +38,10 @@ const Button = ({
 		iconRender = <Icon {...icon}/>
 	}
 
+	if (label) {
+		children = label
+	}
+
 	// rounded icon wrapper
 	if (iconRounded) {
 		iconRendered = <span className="rounded-icon">{iconRender}</span>
@@ -46,7 +51,7 @@ const Button = ({
 
 	if (url) {
 		return (
-			<a href={url} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined}>
+			<a href={url} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
@@ -54,7 +59,7 @@ const Button = ({
 		)
 	}else{
 		return (
-			<button id={id} type={type ? type : 'button'} aria-label={ariaLabel} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined}>
+			<button id={id} type={type ? type : 'button'} aria-label={ariaLabel} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
