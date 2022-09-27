@@ -2,7 +2,6 @@ import * as React from "react"
 import Template from "../templates/default"
 import {Seo} from "../components/seo/seo"
 import Pagedata from "../data/pages/list.yaml"
-import Dropdown from "../components/dropdown/dropdown"
 import List from "../components/list/list"
 
 const Buttons = () => {

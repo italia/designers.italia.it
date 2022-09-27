@@ -1,7 +1,6 @@
 import * as React from "react"
 import Template from "../templates/default"
 import {Seo} from "../components/seo/seo"
-import Icon from "../components/icon/icon"
 import Button from "../components/button/button"
 import Pagedata from "../data/pages/buttons.yaml"
 
