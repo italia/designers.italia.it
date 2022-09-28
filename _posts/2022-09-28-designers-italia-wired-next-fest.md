@@ -20,7 +20,7 @@ categories:
 Segnate queste date: **il 7 e l’8 ottobre,** il team di **Designers Italia**, in collaborazione con **Agenzia per l’Italia digitale (AGID)** e **Accessibility Days**, sarà presente con un talk e due eventi speciali al **[Wired Next Fest](https://nextfest2022-milano.wired.it/)** alla **Fabbrica del Vapore** di **Milano**, l’evento organizzato da **Wired** per parlare del futuro della democrazia del ruolo del digitale e della tecnologia come strumenti per trovare soluzioni ai temi globali.
 
 ### Il Design delle istituzioni
-Come creare servizi pubblici digitali usabili, accessibili, coerenti e fruibili da tutte le persone? Ne parlerà **venerdì 7 ottobre** alle **17:30** **Marco Maria Pedrazzo**, Head of Design del Dipartimento per la trasformazione digitale. Durante l’incontro, avremo l’occasione di presentare il **design system del Paese**, l’insieme dei principi e degli strumenti a disposizione per creare interfacce digitali usabili e accessibili a disposizione di tutta la Pubblica Amministrazione, e non solo.
+Come creare servizi pubblici digitali usabili, accessibili, coerenti e fruibili da tutte le persone? Ne parlerà, **venerdì 7 ottobre** alle **17:30**, **Marco Maria Pedrazzo**, Head of Design del Dipartimento per la trasformazione digitale. Durante l’incontro, avremo l’occasione di presentare il **design system del Paese**, l’insieme dei principi e degli strumenti a disposizione per creare interfacce digitali usabili e accessibili a disposizione di tutta la Pubblica Amministrazione, e non solo.
 
 [Registrati all'evento](https://nextfest2022-milano.wired.it/events/il-design-delle-istituzioni-pedrazzo/)
 
