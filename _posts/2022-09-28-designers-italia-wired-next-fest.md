@@ -32,6 +32,6 @@ Come creare servizi pubblici digitali usabili, accessibili, coerenti e fruibili 
 
 
 ### Test d’usabilità del modello dei siti dei Comuni
-Progettare interfacce realmente usabili e accessibili significa metterle alla prova. In questo test d’usabilità, organizzato assieme ad **AGID** e **Accessibility Days**, chiederemo alle persone di navigare il modello di sito e servizi di un Comune realizzato da Designers Italia e Developers Italia, individuare i punti deboli dell’esperienza e capire quali possono essere le soluzioni da mettere in campo. Appuntamento **sabato 8 ottobre dalle 10 alle 12.**
+Progettare interfacce realmente usabili e accessibili significa metterle alla prova. In questo test d’usabilità, organizzato assieme ad **AGID** e **Accessibility Days**, chiederemo alle persone di navigare il modello di sito e servizi di un Comune realizzato da Designers Italia e Developers Italia, individuare i punti deboli dell’esperienza e capire quali possono essere le soluzioni da mettere in campo. Appuntamento **sabato 8 ottobre dalle 10 alle 12** per assistere al test.
 
 [Registrati all'evento](https://nextfest2022-milano.wired.it/events/prova-la-tua-idea-test-di-accessibilita/)
