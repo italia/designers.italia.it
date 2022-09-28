@@ -11,8 +11,9 @@ const List = ({
 	customStyle,
 	customStyleUl,
 	title,		  //if has heading
+	titleLink,    //if heading has link
 	listItems,
-	simpleList
+	simpleList,
 
 }) => {
 	const styles = `${isMenu ? 'link-list-wrapper' : 'it-list-wrapper'}`
@@ -32,6 +33,9 @@ const List = ({
 	let heading
 	if(title) {
 		heading =<div class="link-list-heading">{title}</div>
+		if (titleLink) {
+			heading = <div class="link-list-heading"><a href={titleLink}>{title}</a></div>
+		}
 	}
 
 	return(

@@ -191,6 +191,52 @@ components:
             ariaLabel: "Testo azione 3"
         metadata:
           label: metadata testo
+  listSingle:
+    isMenu: true
+    listItems:
+      - label: Link lista 1
+        url: "#"
+      - label: Link lista 2 attivo
+        url: "#"
+        active: true
+      - label: Link lista 3 disabilitato
+        url: "#"
+        disabled: true
+  listHeading:
+    isMenu: true
+    title: Intestazione
+    listItems:
+      - url: "#"
+        label: Azione 1
+      - url: "#"
+        label: Azione 2
+      - divider: true
+      - url: "#"
+        label: Azione 3
+  listHeadingLink:
+    isMenu: true
+    title: Intestazione
+    titleLink: "#"
+    listItems:
+      - url: "#"
+        label: Azione 1
+      - url: "#"
+        label: Azione 2
+      - divider: true
+      - url: "#"
+        label: Azione 3
+  listLarge:
+    isMenu: true
+    title: Intestazione
+    textLarge: true
+    listItems:
+      - url: "#"
+        label: Azione 1
+      - url: "#"
+        label: Azione 2
+      - divider: true
+      - url: "#"
+        label: Azione 3
         
           
 

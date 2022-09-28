@@ -27,7 +27,15 @@ const Buttons = () => {
 						<List {...Pagedata.components.listMetadata}></List>
 						<h2 className="mt-3">Con testo aggiuntivo, azioni multiple e metadata</h2>
 						<List {...Pagedata.components.listAll}></List>
-						
+						<h2 className="mt-3">Liste per menù di navigazione</h2>
+						<h3 className="mt-3">Linea singola</h3>
+						<List {...Pagedata.components.listSingle}></List>
+						<h3 className="mt-3">Intestazione e divisore</h3>
+						<List {...Pagedata.components.listHeading}></List>
+						<h3 className="mt-3">Intestazione con link</h3>
+						<List {...Pagedata.components.listHeadingLink}></List>
+						<h3 className="mt-3">Large</h3>
+						<List {...Pagedata.components.listLarge}></List>
 					</div>
 				</div>
 			</div>
