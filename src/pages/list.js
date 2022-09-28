@@ -15,6 +15,18 @@ const Buttons = () => {
 						<List {...Pagedata.components.list}></List>
 						<h2 className="mt-3">Lista con avatar</h2>
 						<List {...Pagedata.components.listAvatar}></List>
+						<h2 className="mt-3">Lista con icona</h2>
+						<List {...Pagedata.components.listIcon}></List>
+						<h2 className="mt-3">Lista con immagine</h2>
+						<List {...Pagedata.components.listImg}></List>
+						<h2 className="mt-3">Lista con azioni</h2>
+						<List {...Pagedata.components.listAction}></List>
+						<h2 className="mt-3">Lista con azioni multiple</h2>
+						<List {...Pagedata.components.listActionMultiple}></List>
+						<h2 className="mt-3">Lista con metadata</h2>
+						<List {...Pagedata.components.listMetadata}></List>
+						<h2 className="mt-3">Con testo aggiuntivo, azioni multiple e metadata</h2>
+						<List {...Pagedata.components.listAll}></List>
 						
 					</div>
 				</div>

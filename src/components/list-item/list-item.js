@@ -17,24 +17,44 @@ const ListItem = ({
 	iconRight,       //icon on right
 	iconLeft,		  //icon on left
 	simpleList, 
-	avatar
+	avatar,
+	img,
+	alt,
+	action,          //arrow right
+	actions,			  //multiple actions right
+	metadata         //metadata right
 
 }) => {
-	let styles = url ? undefined : "list-item"
+	var styles = url ? undefined : "list-item"
 
 	//icon render
-	let iconRendered
+	var iconRendered
 	if (icon) {
 		iconRendered = <Icon {...icon}/>
 	}
+	//icon render simple list
+	var iconRenderedSimpleList
+	if (icon) {
+		iconRenderedSimpleList = <div class="it-rounded-icon"><Icon {...icon}/></div>
+	}
+	// arrow right
+	var actionRendered
+	if (action){
+		actionRendered = <Icon {...icon}></Icon>
+	}
 
-	//-lettura label
+	//immagine
+	var imgRendered
+	if(img) {
+		imgRendered = <div class="it-thumb"><img src={img} alt={alt}/></div>
+	}
+	//-vartura label
 	if(label){
 		children = label
 	}
 	
 	//-avatar
-	let avatarRendered
+	var avatarRendered
 	if(avatar){
 		avatarRendered = <Avatar {...avatar}/>
 	}
@@ -49,6 +69,28 @@ const ListItem = ({
 		isActive = <span className="visually-hidden">{visuallyHidden}</span>
 	}
 	
+	//multiple actions right
+	var actionsRendered
+	var icons
+	if(actions) {
+		icons =  actions.map(icons => {
+			return <a href={icons.url} aria-label={icons.ariaLabel}><Icon {...icons}></Icon></a>
+		})
+		actionsRendered = <span class="it-multiple">{icons}</span>
+	}
+	// metadata
+	var metadataRendered
+	if (metadata) {
+		metadataRendered = <span class="metadata">{metadata.label}</span>
+		if(metadata.url) {
+			metadataRendered = <a href="#">{metadataRendered}</a>
+		}
+	}
+	var metadataActionsRendered
+	// metadata & multiple actions
+	if (metadata && actions) {
+		metadataActionsRendered = <span class="it-multiple">{metadataRendered}{icons}</span>
+	}
 	//-se esiste un link
 	if (url) {
 		listContent = <a className={`list-item ${active ? ' active' : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  href={url}>{iconLeft ? iconRendered: ''}{children}{isActive}{iconRight ? iconRendered: ''}</a>
@@ -59,12 +101,33 @@ const ListItem = ({
 	}
 	//- se è una lista semplice
 	if (simpleList) {
-		listContent = 	<div className="list-item">{avatarRendered}<div className="it-right-zone"><span className="text">{children}</span></div></div>
+		listContent = 	<div className="list-item">{
+			iconLeft ? iconRenderedSimpleList : ''}
+			{imgRendered}
+			{avatarRendered}
+			<div className="it-right-zone"><span className="text">{children}</span>
+				{actionRendered}
+				{!metadataActionsRendered ? actionsRendered : ''}
+				{!metadataActionsRendered ? metadataRendered : ''}
+				{metadataActionsRendered}
+			</div>
+			</div>
 		styles=''
 	}
 	//- se è una lista semplice con link
 	if (simpleList && url) {
-		listContent = 	<a className={`list-item ${active ? ' active' : ''}`} href={url}>{avatarRendered}<div className="it-right-zone"><span className="text">{children}</span></div></a> 
+		listContent = 	<a className={`list-item ${active ? ' active' : ''}`} href={url}>
+			{iconLeft ? iconRenderedSimpleList : ''}
+			{imgRendered}
+			{avatarRendered}
+			<div className="it-right-zone">
+				<span className="text">{children}</span>
+				{actionRendered}
+				{!metadataActionsRendered ? actionsRendered : ''}
+				{!metadataActionsRendered ? metadataRendered : ''}
+				{metadataActionsRendered}
+			</div>
+		</a> 
 	}
 	//- se è un divider
 	if (divider) {

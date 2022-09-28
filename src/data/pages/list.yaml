@@ -32,6 +32,166 @@ components:
           size : lg
           img : https://randomuser.me/api/portraits/women/41.jpg
           alt: Anna Barbieri
+  listIcon:
+    simpleList : true
+    listItems:
+      - label: Testo
+        iconLeft: true
+        icon:
+          icon: sprites.svg#it-folder
+      - label: Link
+        url: "#"
+        iconLeft: true
+        icon:
+          icon: sprites.svg#it-folder
+      - label: Link Attivo
+        url: "#"
+        active: true
+        iconLeft: true
+        icon:
+          icon: sprites.svg#it-folder
+  listImg:
+    simpleList : true
+    listItems:
+      - label: Testo
+        img: https://via.placeholder.com/40x40.png?text=40x40
+        alt: Descrizione
+      - label: Link
+        url: "#"
+        img: https://via.placeholder.com/40x40.png?text=40x40
+        alt: Descrizione
+      - label: Link Attivo
+        url: "#"
+        active: true
+        img: https://via.placeholder.com/40x40.png?text=40x40
+        alt: Descrizione
+  listAction:
+    simpleList : true
+    listItems:
+      - label: Link
+        url: "#"
+        action: true
+        icon:
+          icon: sprites.svg#it-chevron-right
+      - label: Link Attivo
+        url: "#"
+        active: true
+        action: true
+        icon:
+          icon: sprites.svg#it-chevron-right
+  listActionMultiple:
+    simpleList : true
+    listItems:
+      - label: Testo
+        actions:
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 1"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 2"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 3"
+      - label: link
+        url: "#"
+        actions:
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 1"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 2"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 3"
+      - label: link attivo
+        url: "#"
+        active: true
+        actions:
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 1"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 2"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 3"
+  listMetadata:
+    simpleList : true
+    listItems:
+      - label: Testo
+        avatar :
+          size : lg
+          img : https://randomuser.me/api/portraits/women/41.jpg
+          alt: Anna Barbieri
+        metadata:
+          label: metadata testo
+      - label: Link
+        url: "#"
+        avatar :
+          size : lg
+          img : https://randomuser.me/api/portraits/women/41.jpg
+          alt: Anna Barbieri
+        metadata:
+          label: metadata testo
+      - label: Link Attivo
+        url: "#"
+        active: true
+        avatar :
+          size : lg
+          img : https://randomuser.me/api/portraits/women/41.jpg
+          alt: Anna Barbieri
+        metadata:
+          label: metadata testo
+  listAll:
+    simpleList : true
+    listItems:
+      - label: Testo
+        subLabel: Lorem ipsum dolor sit amet.
+        actions:
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 1"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 2"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 3"
+        metadata:
+          label: metadata testo
+      - label: Link
+        url: "#"
+        actions:
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 1"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 2"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 3"
+        metadata:
+          label: metadata testo
+      - label: Link Attivo
+        url: "test"
+        active: true
+        actions:
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 1"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 2"
+          - icon: sprites.svg#it-code-circle
+            url: "#"
+            ariaLabel: "Testo azione 3"
+        metadata:
+          label: metadata testo
+        
           
 
 

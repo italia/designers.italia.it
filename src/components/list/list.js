@@ -24,7 +24,6 @@ const List = ({
 
 	
 	if (listItems) {
-		console.log(isDropdown)
 		children = listItems.map(listitems => {
 			return <ListItem {...listitems} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList}></ListItem>
 		})
