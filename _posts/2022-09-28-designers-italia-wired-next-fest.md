@@ -4,7 +4,7 @@ lang: it
 excerpt_separator: <!-- MORE -->
 title: "Designers Italia va al Wired Next Fest"
 subtitle: "Il nostro team protagonista nella tappa di Milano per parlare di accessibilità e inclusività dei servizi pubblici digitali"
-date: 2022-09-29 12:00:00 +0200
+date: 2022-09-29 11:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
