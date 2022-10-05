@@ -20,6 +20,7 @@ const Highlight = (
 	}
 ) => {
 	let styles = 'highlight'
+	+ `${background ? ' highlight-'+background : ''}`
 	
 	//heading level
 	let HLevel
