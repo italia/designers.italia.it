@@ -37,9 +37,16 @@
 		}
 	}
 }
-//Small tablet ------------------------------------------------------------------------------------------
+//mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
 	.highlight {
+		.img-container {
+			margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
+			margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
+			img {
+				width: calc(100% + var(--bs-gutter-x));
+			}
+		}
 		.text-container {
 			.buttons-wrapper {
 				.btn {
@@ -54,7 +61,17 @@
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-	
+	.highlight {
+		.text-container {
+			.buttons-wrapper {
+				margin-top: var(--hl-button-distance-desk);
+				.btn {
+					margin-right: var(--hl-button-x-margin-desk);
+					margin-bottom: var(--hl-button-x-margin-desk);
+				}
+			}
+		}
+	}
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
@@ -63,22 +80,13 @@
 		.ratio-1x1 {
 			--bs-aspect-ratio : 40%
 		}
-		.text-container {
-			.buttons-wrapper {
-				margin-top: var(--hl-button-distance-desk);
-				.btn {
-					&:not(:last-child) {
-						margin-right: var(--hl-button-x-margin-desk);
-					}
-				}
-			}
-		}
 	}
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
 	.highlight {
+
 		.img-container {
 			--bs-aspect-ratio: none;
 			width: 25%;
@@ -86,7 +94,11 @@
 		}
 		.text-container {
 			padding: var(--hl-y-padding-desk) var(--hl-x-padding-desk);
-			
+		}
+		&.highlight-big {
+			.img-container {
+				width: 50%;
+			}
 		}
 	}
 }
