@@ -41,7 +41,7 @@ const Highlight = (
 		<div className={styles}>
 			<div className="highlight-content d-lg-flex">
 				<div className="img-container ratio ratio-1x1">
-					<img className="" src={img} alt={title}/>
+					<img className="main-image" src={img} alt={title}/>
 				</div>
 				<div className="text-container">
 					<HLevel>{title}</HLevel>

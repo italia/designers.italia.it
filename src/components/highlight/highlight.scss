@@ -21,6 +21,26 @@
 			margin-top: var(--hl-button-distance-mob);
 		}
 	}
+	img {
+		&.main-image {
+			object-fit: cover;
+		}
+	}
+}
+//Small tablet ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+	.highlight {
+		.text-container {
+			.buttons-wrapper {
+				.btn {
+					display: block;
+					&:not(:last-child) {
+						margin-bottom: var(--hl-button-y-margin-mob);
+					}
+				}
+			}
+		}
+	}
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
@@ -29,11 +49,36 @@
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
+	.highlight {
+		.ratio-1x1 {
+			--bs-aspect-ratio : 40%
+		}
+		.text-container {
+			.buttons-wrapper {
+				margin-top: var(--hl-button-distance-desk);
+				.btn {
+					&:not(:last-child) {
+						margin-right: var(--hl-button-x-margin-desk);
+					}
+				}
+			}
+		}
+	}
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-	
+	.highlight {
+		.img-container {
+			--bs-aspect-ratio: none;
+			width: 25%;
+			flex-shrink: 0;
+		}
+		.text-container {
+			padding: var(--hl-y-padding-desk) var(--hl-x-padding-desk);
+			
+		}
+	}
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
