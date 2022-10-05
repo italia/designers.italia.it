@@ -21,11 +21,17 @@ const Highlight = (
 ) => {
 	let styles = 'highlight'
 	+ `${background ? ' highlight-'+background : ''}`
+	+ `${big ? ' highlight-big' : ''}`
+
+	let classes = 'highlight-content d-lg-flex'
+	+ `${specular ? ' flex-lg-row-reverse' : ''}`
 	
 	//heading level
 	let HLevel
 	if (headingLevel) {
 		HLevel = `h${headingLevel}`;
+	} else {
+		HLevel = `h3`
 	}
 	//buttons
 	let ButtonsRender
@@ -39,19 +45,19 @@ const Highlight = (
 	
 
 	return (
-		<div className={styles}>
-			<div className="highlight-content d-lg-flex">
+		<section className={styles} aria-labelled-by={title}>
+			<div className={classes}>
 				<div className="img-container ratio ratio-1x1">
 					<img className="main-image" src={img} alt={title}/>
 				</div>
 				<div className="text-container">
 					<HLevel>{title}</HLevel>
-					{subtitle && <p className="sub-title">{subtitle}</p>}
+					{subtitle && !big && <p className="sub-title">{subtitle}</p>}
 					{text && <div className="h-text font-serif"><ReactMarkdown>{text}</ReactMarkdown></div>}
 					{ButtonsRender && <div className="buttons-wrapper">{ButtonsRender}</div>}
 				</div>
 			</div>
-		</div>
+		</section>
 	)
 }
 
