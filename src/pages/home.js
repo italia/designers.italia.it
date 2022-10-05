@@ -8,13 +8,20 @@ import Breadcrumbs from "../components/breadcrumbs/breadcrumbs"
 import Dropdown from '../components/dropdown/dropdown'
 import List from "../components/list/list"
 import ListItem from "../components/list-item/list-item"
+import Chip from "../components/chip/chip"
+import Tag from "../components/tag/tag"
 import Pagedata from "../data/pages/home.yaml"
 
 
 const HomePage = () => {
 	return (
 	  <Template>
-
+      <Tag url="#">Registrazione</Tag>
+      { Pagedata.components.chips.map((chip,index) => {
+          return(
+            <Chip key={"chip-"+index} {...chip}/>
+          )
+        })}
       <Section>
       <Button {...Pagedata.components.button}></Button>
       <Dropdown {...Pagedata.components.dropdown}>
