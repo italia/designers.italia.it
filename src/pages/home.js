@@ -10,6 +10,7 @@ import List from "../components/list/list"
 import ListItem from "../components/list-item/list-item"
 import Chip from "../components/chip/chip"
 import Tag from "../components/tag/tag"
+import Numbers from "../components/numbers/numbers"
 import Pagedata from "../data/pages/home.yaml"
 
 
@@ -93,7 +94,7 @@ const HomePage = () => {
           iconSize="sm"
           iconColor="light"
           >
-          
+
           Label del bottone con icona a sinistra
         </Button>
         <Button
@@ -147,6 +148,12 @@ const HomePage = () => {
         <h2>Section with background image</h2>
         <p>Maecenas vel efficitur felis. In elementum scelerisque molestie. Integer ac ex quis erat vestibulum vestibulum ut vitae erat. Ut enim ipsum, euismod luctus nunc sit amet, elementum convallis enim. Nunc turpis dolor, aliquam sed metus in, aliquet dignissim augue. </p>
       </Section>
+
+      <Numbers
+        icon="sprites.svg#it-tool"
+        number="1200"
+        label="Milioni di euro già versati"
+      />
 	  </Template>
 	)
  }

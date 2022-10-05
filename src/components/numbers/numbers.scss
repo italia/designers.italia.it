@@ -1,0 +1,58 @@
+
+@import "../../scss/bootstrap-breakpoints";
+
+.numbers {
+  .icon {
+    fill: var(--color-accent);
+    flex-shrink: 0;
+  }
+  .number {
+    color: var(--color-accent);
+  }
+  .label {
+    max-width: 15ch;
+    line-height: 1.3;
+  }
+}
+
+//Mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+  .numbers {
+    .icon {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}
+//Small tablet ------------------------------------------------------------------------------------------
+@include media-breakpoint-up(sm) {
+
+}
+
+//Tablet portrait ---------------------------------------------------------------------------------------
+@include media-breakpoint-up(md) {
+ .numbers {
+  width: 40%;
+ }
+}
+
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+
+}
+
+//Laptop ------------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xl) {
+}
+
+//Desktop -----------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xxl) {
+}
+
+//Hover states ------------------------------------------------------------------------------------------
+@media (hover: hover) {
+}
+
+//Transitions (A11y reduced motion disabled) ------------------------------------------------------------
+@media screen and (prefers-reduced-motion: no-preference) {
+}

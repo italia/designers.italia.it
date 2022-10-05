@@ -8,21 +8,19 @@ const Button = ({
 	id,
 	label,				//if data is yaml
 	btnStyle,         //primary,secondary,outline-primary,outline-secondary,success,warning,danger,info,dropdown
-	customStyle,  
-	addonStyle,  
+	customStyle,
+	addonStyle,
 	role,   	         //button role for link <a>
 	disabled,         //true,no prop
 	iconLeft,         //icon in left position (component Icon)
 	iconRight,			 //icon in right position  (component Icon)
 	icon,
-	iconRounded,            
+	iconRounded,
 	ariaLabel,        //for buttons icon only, text for screen reader
 	ariaControls,     //id for menu opened by button
 	ariaExpanded,     //true / no prop
 	dataBsToggle,	   //navbarcollapsible,dropdown
 	children
-
-
 }) => {
 	let iconRendered
 	let btnStyles = `${customStyle ? '' : 'btn'}`
