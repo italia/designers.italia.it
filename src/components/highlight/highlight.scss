@@ -40,6 +40,13 @@
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
 	.highlight {
+		.img-container {
+			margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
+			margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
+			img {
+				width: calc(100% + var(--bs-gutter-x));
+			}
+		}
 		.text-container {
 			.buttons-wrapper {
 				.btn {

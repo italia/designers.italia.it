@@ -46,15 +46,21 @@ const Highlight = (
 
 	return (
 		<section className={styles} aria-labelled-by={title}>
-			<div className={classes}>
-				<div className="img-container ratio ratio-1x1">
-					<img className="main-image" src={img} alt={title}/>
-				</div>
-				<div className="text-container">
-					<HLevel>{title}</HLevel>
-					{subtitle && !big && <p className="sub-title">{subtitle}</p>}
-					{text && <div className="h-text font-serif"><ReactMarkdown>{text}</ReactMarkdown></div>}
-					{ButtonsRender && <div className="buttons-wrapper">{ButtonsRender}</div>}
+			<div className="container">
+				<div className="row">
+					<div className="col-12">
+						<div className={classes}>
+							<div className="img-container ratio ratio-1x1">
+								<img className="main-image" src={img} alt={title}/>
+							</div>
+							<div className="text-container">
+								<HLevel>{title}</HLevel>
+								{subtitle && !big && <p className="sub-title">{subtitle}</p>}
+								{text && <div className="h-text font-serif"><ReactMarkdown>{text}</ReactMarkdown></div>}
+								{ButtonsRender && <div className="buttons-wrapper">{ButtonsRender}</div>}
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
