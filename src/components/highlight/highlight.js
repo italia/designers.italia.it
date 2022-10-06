@@ -54,7 +54,7 @@ const Highlight = (
 							<div className="img-container ratio ratio-1x1">
 								<img className="main-image" src={img} alt={title}/>
 							</div>
-							<div className="text-container">
+							<div className="text-container px-3 py-4 px-md-0 px-lg-10 py-lg-10">
 								<HLevel>{title}</HLevel>
 								{subtitle && !big && <p className="sub-title">{subtitle}</p>}
                 <Numbers props={numbers}/>
