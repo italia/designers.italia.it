@@ -4,6 +4,7 @@ import SimpleCta from "../simple-cta/simple-cta"
 import Chip from "../chip/chip"
 import Dropdown from "../dropdown/dropdown"
 import Tag from "../tag/tag"
+import Icon from "../icon/icon"
 import './card.scss'
 
 const Card =(
@@ -22,12 +23,15 @@ const Card =(
 		chips,
 		externalLink,
 		author,
-		imgPlaceholder
+		imgPlaceholder,
+		iconImg
 	}
 )=>{
 	let styles = 'di-card d-md-flex flex-md-column w-100'
 	let imgStyle = 'img-wrapper ratio'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
+		+ `${imgPlaceholder ? ' img-placeholder' : ''}`
+		+ `${iconImg ? ' icon-img' : ''}`
 
 	//heading level
 	let HLevel
@@ -39,14 +43,18 @@ const Card =(
 
 	return(
 		<div className={styles}>
-			{(img || imgPlaceholder) && <div className={imgStyle}>
+			{(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
 				{img && !imgPlaceholder && <img src={img} alt={title}/>}
+				{iconImg && <img src={iconImg} alt={title}/>}
 				{dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
 					<span class="day font-monospace">{dateOverlay.day}</span>
 					<span class="month">{dateOverlay.month}</span>
 				</div>}
+				{iconOverlay && <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
+					<Icon {...iconOverlay}></Icon>
+				</div>}
 			</div>}
-			<div className="di-card-body p-4 d-flex flex-md-column justify-content-between pb-3">
+			<div className="di-card-body p-4 d-flex flex-md-column justify-content-between">
 				<div className="text-zone">
 					{HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
 					{text && <ReactMarkdown>{text}</ReactMarkdown>}

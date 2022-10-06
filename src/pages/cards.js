@@ -10,7 +10,7 @@ const Cards = () => {
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h2 className="my-3">Card 3° livello</h2>
+            <h2 className="my-3">Cards</h2>
           </div>
           { Pagedata.components.cards.map((card,index) => {
             return(
