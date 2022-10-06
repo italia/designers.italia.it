@@ -8,8 +8,31 @@
 			object-fit: cover;
 		}
 	}
+	h2,
+	h3,
+	h4,
+	h5 {
+		font-size: var(--card-title-size);
+		margin-bottom: var(--card-text-mb);
+		font-weight: var(--card-title-fw);
+		a {
+			text-decoration: none;
+		}
+	}
 	.di-card-body {
 
+	}
+	.simple-cta{
+		& + * {
+			margin-top: var(--card-text-mb);
+		}
+	}
+	.author {
+		display: block;
+		font-size: var(--card-author-size);
+	}
+	.di-card-footer {
+		margin-top: var(--card-footer-mt);
 	}
 }
 //mobile only ------------------------------------------------------------------------------------------

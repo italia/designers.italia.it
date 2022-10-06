@@ -1,24 +1,26 @@
 import * as React from "react"
 import ReactMarkdown from 'react-markdown'
+import SimpleCta from "../simple-cta/simple-cta"
+import Chip from "../chip/chip"
 import './card.scss'
 
 const Card =(
 	{
 		title,
-		url,		
-		text,		
-		tag,			
-		share,		
+		headingLevel,
+		url,
+		text,
+		tag,
+		share,
 		img,
-		imgRatio,		
+		imgRatio,
 		iconOverlay,
-		date,			
-		dateOverlay,	
-		day,		
+		date,
+		dateOverlay,
+		day,
 		month,
 		chips,
-		extLinkLabel,
-		extLinkUrl,
+		externalLink,
 		author,
 		imgPlaceholder
 	}
@@ -26,13 +28,37 @@ const Card =(
 	let styles = 'di-card'
 	let imgStyle = 'img-wrapper ratio'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
+
+	//heading level
+	let HLevel
+	if (headingLevel) {
+		HLevel = `h${headingLevel}`;
+	} else {
+		HLevel = `h3`
+	}
+
 	return(
 		<div className={styles}>
 			{(img || imgPlaceholder) && <div className={imgStyle}>
 				{img && !imgPlaceholder && <img src={img} alt={title}/>}
 			</div>}
-			<div className="di-card-body">
-
+			<div className="di-card-body p-4">
+				<div className="text-zone">
+					{HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
+					{externalLink && <SimpleCta {...externalLink}></SimpleCta>}
+					{author && <span className="author font-monospace">{author}</span>}
+				</div>
+				{(tag || share || chips) && <div className="di-card-footer">
+					<div className="di-card-footer-content">
+						{chips && <div className="chip-container">
+							{ chips.map((chip,index) => {
+								return(
+									<Chip key={"chip-"+index} {...chip}/>
+								)
+							})}
+						</div>}
+					</div>
+				</div>}
 			</div>
 		</div>
 	)

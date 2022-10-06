@@ -1,0 +1,18 @@
+.simple-cta {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: var(--simple-cta-color);
+	font-size: var(--simple-cta-size);
+	text-transform: uppercase;
+	font-weight: 700;
+	span.text {
+		display: block;
+	}
+	.icon {
+		fill: var(--simple-cta-color)
+	}
+	span:last-of-type + .icon {
+		margin-left: calc(var(--spacer));
+	}
+}

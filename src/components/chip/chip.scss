@@ -1,6 +1,17 @@
 .chip {
 	text-decoration: none;
+	padding-left: var(--chip-x-padding);
+	padding-right: var(--chip-x-padding);
+	&.chip-simple {
+		padding-right: var(--chip-x-padding);
+	}
+	.chip-label {
+		font-size: var(--chip-font-size);
+	}
 	&.chip-disabled {
 		pointer-events: none;
+	}
+	&.chip-secondary {
+		border-color: var(--chip-secondary-border-color);
 	}
 }
