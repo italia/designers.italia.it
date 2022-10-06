@@ -2,6 +2,7 @@ import * as React from "react"
 import ReactMarkdown from 'react-markdown'
 import SimpleCta from "../simple-cta/simple-cta"
 import Chip from "../chip/chip"
+import Dropdown from "../dropdown/dropdown"
 import './card.scss'
 
 const Card =(
@@ -49,7 +50,7 @@ const Card =(
 					{author && <span className="author font-monospace">{author}</span>}
 				</div>
 				{(tag || share || chips) && <div className="di-card-footer">
-					<div className="di-card-footer-content">
+					<div className="di-card-footer-content d-flex justify-content-between align-items-end">
 						{chips && <div className="chip-container">
 							{ chips.map((chip,index) => {
 								return(
@@ -57,6 +58,7 @@ const Card =(
 								)
 							})}
 						</div>}
+						{share && <Dropdown {...share}></Dropdown>}
 					</div>
 				</div>}
 			</div>

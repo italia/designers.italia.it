@@ -1,5 +1,6 @@
 import * as React from "react"
 import Icon from "../icon/icon"
+import './button.scss'
 
 const Button = ({
 	url,
@@ -61,6 +62,7 @@ const Button = ({
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
+				{(!iconLeft || icon) ? iconRendered : ''}
 			</button>
 		)
 	}
