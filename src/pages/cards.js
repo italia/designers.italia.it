@@ -9,9 +9,12 @@ const Cards = () => {
 		<Template>
       <div className="container">
         <div className="row">
+          <div className="col-12">
+            <h2 className="my-3">Card 3° livello</h2>
+          </div>
           { Pagedata.components.cards.map((card,index) => {
             return(
-              <div className="col-12 col-md-6 col-lg-4">
+              <div className="col-12 col-md-6 col-lg-4 d-md-flex pb-4">
                 <Card key={"card-"+index} {...card}></Card>
               </div>
             )

@@ -3,6 +3,7 @@ import ReactMarkdown from 'react-markdown'
 import SimpleCta from "../simple-cta/simple-cta"
 import Chip from "../chip/chip"
 import Dropdown from "../dropdown/dropdown"
+import Tag from "../tag/tag"
 import './card.scss'
 
 const Card =(
@@ -18,15 +19,13 @@ const Card =(
 		iconOverlay,
 		date,
 		dateOverlay,
-		day,
-		month,
 		chips,
 		externalLink,
 		author,
 		imgPlaceholder
 	}
 )=>{
-	let styles = 'di-card'
+	let styles = 'di-card d-md-flex flex-md-column w-100'
 	let imgStyle = 'img-wrapper ratio'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 
@@ -42,10 +41,15 @@ const Card =(
 		<div className={styles}>
 			{(img || imgPlaceholder) && <div className={imgStyle}>
 				{img && !imgPlaceholder && <img src={img} alt={title}/>}
+				{dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
+					<span class="day font-monospace">{dateOverlay.day}</span>
+					<span class="month">{dateOverlay.month}</span>
+				</div>}
 			</div>}
-			<div className="di-card-body p-4">
+			<div className="di-card-body p-4 d-flex flex-md-column justify-content-between pb-3">
 				<div className="text-zone">
 					{HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
+					{text && <ReactMarkdown>{text}</ReactMarkdown>}
 					{externalLink && <SimpleCta {...externalLink}></SimpleCta>}
 					{author && <span className="author font-monospace">{author}</span>}
 				</div>
@@ -57,6 +61,9 @@ const Card =(
 									<Chip key={"chip-"+index} {...chip}/>
 								)
 							})}
+						</div>}
+						{tag && <div className="tag-container">
+							<Tag {...tag}></Tag>
 						</div>}
 						{share && <Dropdown {...share}></Dropdown>}
 					</div>

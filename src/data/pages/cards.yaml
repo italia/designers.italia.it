@@ -3,7 +3,7 @@ name: Cards
 description : Componente Card
 components:
   cards:
-    - title: Titolo card
+    - title: Titolo articolo
       img: https://via.placeholder.com/600x400?text=Placeholder
       imgRatio: 16x9
       imgPlaceholder: false
@@ -40,24 +40,117 @@ components:
             color: secondary
         list:
           isDropdown: true
+          title: Condividi
           listItems:
             - url: "#"
               ariaLabel: Condividi su Facebook
+              label: Facebook
               icon:
                 icon: sprites.svg#it-facebook-square
                 color: primary
             - url: "#"
+              label: Twitter
               ariaLabel: Condividi su Twitter
               icon:
                 icon: sprites.svg#it-twitter-square
                 color: primary
             - url: "#"
-              ariaLabel: Condividi su Twitter
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
               icon:
                 icon: sprites.svg#it-linkedin-square
                 color: primary
-
-        
+    - title: Titolo notizia
+      img: https://via.placeholder.com/600x400?text=Placeholder
+      imgRatio: 16x9
+      imgPlaceholder: false
+      url: "#"
+      text: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed pulvinar lacus. Donec iaculis scelerisque ipsum ac semper. Praesent sit amet velit sed tortor laoreet placerat.
+      chips:
+        - color : secondary
+          label : Accessibilità
+          url : "#"
+          blank: false
+        - color : secondary
+          label : Servizi
+          url : "#"
+          blank: false
+        - color : secondary
+          label : PA Digitale 2026
+          url : "#"
+          blank: false
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          title: Condividi
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              icon:
+                icon: sprites.svg#it-facebook-square
+                color: primary
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              icon:
+                icon: sprites.svg#it-twitter-square
+                color: primary
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              icon:
+                icon: sprites.svg#it-linkedin-square
+                color: primary
+    - title: Titolo evento
+      img: https://via.placeholder.com/600x400?text=Placeholder
+      imgRatio: 16x9
+      imgPlaceholder: false
+      dateOverlay:
+        day: 22
+        month: Aprile
+      url: "#"
+      tag:
+        url: "#"
+        label: Tipologia evento
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          title: Condividi
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              icon:
+                icon: sprites.svg#it-facebook-square
+                color: primary
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              icon:
+                icon: sprites.svg#it-twitter-square
+                color: primary
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              icon:
+                icon: sprites.svg#it-linkedin-square
+                color: primary    
 
 
 

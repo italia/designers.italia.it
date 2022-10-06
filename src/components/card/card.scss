@@ -4,6 +4,7 @@
 	box-shadow: var(--card-box-shadow);
 	.img-wrapper {
 		background-color: rgb(var(--bs-medium-rgb));
+		position: relative;
 		img {
 			object-fit: cover;
 		}
@@ -19,8 +20,13 @@
 			text-decoration: none;
 		}
 	}
+	.text-zone {
+		p{
+			font-size: var(--card-p-size);
+		}
+	}
 	.di-card-body {
-
+		height: 100%;
 	}
 	.simple-cta{
 		& + * {
@@ -34,7 +40,29 @@
 	.di-card-footer {
 		margin-top: var(--card-footer-mt);
 	}
-	
+	.date-overlay {
+		height: var(--card-date-overlay-height);
+		width: var(--card-date-overlay-width);
+		background-color: var(--card-date-overlay-bg);
+		border-radius: var(--card-date-overlay-border-radius);
+		text-align: center;
+		box-shadow: var(--card-date-overlay-border-shadow);
+		position: absolute;
+		left: auto;
+		top: var(--card-date-overlay-distance);
+		right: var(--card-date-overlay-distance);
+		span {
+			display: block;
+		}
+		.day {
+			font-size: var(--card-date-overlay-day-font-size);
+			font-weight: 700;
+		}
+		.month {
+			font-size: var(--card-date-overlay-month-font-size);
+			font-weight: 600;
+		}
+	}
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
