@@ -7,12 +7,13 @@ import ReactMarkdown from 'react-markdown'
 
 const Highlight = (
 	{
+		id,
 		background,
 		img,
 		icon,
 		big,
 		title,
-    numbers,
+    	numbers,
 		headingLevel,
 		subtitle,
 		text,
@@ -46,7 +47,7 @@ const Highlight = (
 	}
 
 	return (
-		<section className={styles} aria-labelled-by={title}>
+		<section className={styles} aria-labelled-by={id}>
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
@@ -55,10 +56,10 @@ const Highlight = (
 								<img className="main-image" src={img} alt={title}/>
 							</div>
 							<div className="text-container px-3 py-5 px-md-0 px-lg-10 py-lg-10">
-								<HLevel>{title}</HLevel>
-								{subtitle && !big && <p className="sub-title">{subtitle}</p>}
+								<HLevel id={id}>{title}</HLevel>
+								{subtitle && <p className="sub-title">{subtitle}</p>}
                 			{!big && <Numbers props={numbers}/>}
-								{text && <div className="h-text font-serif"><ReactMarkdown>{text}</ReactMarkdown></div>}
+								{text && !big && <div className="h-text font-serif"><ReactMarkdown>{text}</ReactMarkdown></div>}
 								{ButtonsRender && <div className="buttons-wrapper">{ButtonsRender}</div>}
 							</div>
 						</div>
