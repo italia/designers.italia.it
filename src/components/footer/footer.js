@@ -4,6 +4,7 @@ import "./footer.scss"
 import List from "../list/list"
 import ListItem from "../list-item/list-item"
 import FooterBrand from "../footer-brand/footer-brand"
+import FooterSmall from "../footer-small/footer-small"
 import Icon from "../icon/icon"
 
 const Footer = ({ data }) => {
@@ -18,7 +19,7 @@ const Footer = ({ data }) => {
   function text(boolean) {
     if(boolean) {
       return (
-        <p><ReactMarkdown>{boolean}</ReactMarkdown></p>
+        <ReactMarkdown>{boolean}</ReactMarkdown>
       )
     }
   }
@@ -73,52 +74,51 @@ const Footer = ({ data }) => {
     }
   }
   return (
-	<>
+	<footer className="it-footer">
 		<FooterBrand {...data.footerProject}/>
 		<FooterBrand {...data.footerContribute}/>
-		<footer className="it-footer">
-			<div className="it-footer-main">
-				<div className="container">
+		<div className="it-footer-main" id= {data.footerMain.id}>
+			<div className="container-xxl">
 				<section>
-				<div className="row clearfix">
-					<div className="col-sm-12">
-					<div className="it-brand-wrapper">
-						<a href={data.footerMain.brand.url} data-focus-mouse="false">
-						<img src={data.footerMain.brand.img} alt={data.footerMain.brand.title}/>
-						<div className="it-brand-text">
-							<h2>{data.footerMain.brand.title}</h2>
-							{sub(data.footerMain.brand.subtitle)}
+					<div className="row clearfix">
+						<div className="col-sm-12">
+						<div className="it-brand-wrapper">
+							<a href={data.footerMain.brand.url} data-focus-mouse="false">
+							<img src={data.footerMain.brand.img} alt={data.footerMain.brand.title}/>
+							<div className="it-brand-text">
+								<h2>{data.footerMain.brand.title}</h2>
+								{sub(data.footerMain.brand.subtitle)}
+							</div>
+							</a>
 						</div>
-						</a>
+						</div>
 					</div>
-					</div>
-				</div>
 				</section>
 				<section>
-						<div className="row">
-				{data.footerMain.cols.map((value,index)=>{
-					return(
-					<div key={"item-"+index} className="col-lg-3 col-md-3 col-sm-6 pb-2">
-						<h4>
-						<a href={value.url} aria-label={`Vai alla pagina: ${value.title}`}>{value.title}</a>
-						</h4>
-						<List isMenu={value.isMenu} customStyleUl={value.customStyleUl}>
-						{value.items.map((item,index)=>{
-							return (
-							<ListItem ariaLabel={item.ariaLabel} key={"subitem-"+index} url={item.url}>{item.title}</ListItem>
-							)
-						})}
-						</List>
+					<div className="row">
+					{data.footerMain.cols.map((value,index)=>{
+						return(
+						<div key={"item-"+index} className="col-lg-3 col-md-3 col-sm-6 pb-2">
+							<h4>
+							<a href={value.url} aria-label={`Vai alla pagina: ${value.title}`}>{value.title}</a>
+							</h4>
+							<List isMenu={value.isMenu} customStyleUl={value.customStyleUl}>
+							{value.items.map((item,index)=>{
+								return (
+								<ListItem ariaLabel={item.ariaLabel} key={"subitem-"+index} url={item.url}>{item.title}</ListItem>
+								)
+							})}
+							</List>
+						</div>
+						)
+					})}
 					</div>
-					)
-				})}
-				</div>
 				</section>
 				{infoRow(data.footerMain.info)}
 			</div>
-			</div>
-		</footer>
-	</>
+		</div>
+		<FooterSmall {...data.footerSmall}/>
+	</footer>
   )
 }
 
