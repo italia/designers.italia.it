@@ -17,7 +17,7 @@ const FooterBrand = ({
 
 	return (
 		<div className={styles}>
-			<div className="container">
+			<div className="container-xxl">
 				<div className="row">
 					<div className="col text-center text-md-start">
 						<ReactMarkdown className="small mb-4">{title}</ReactMarkdown>
