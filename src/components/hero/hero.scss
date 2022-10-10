@@ -7,6 +7,19 @@
     justify-content: space-between;
     align-items: center;
   }
+  .pre-text {
+    display: flex;
+    align-items: center;
+  }
+  &.bg-primary {
+    color: var(--hero-bg-primary-color);
+  }
+  .subtitle {
+    font-size: var(  --hero-subtitle-size);
+  }
+  .bottom-text {
+    margin-top: var( --hero-bottom-text-mt);
+  }
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
