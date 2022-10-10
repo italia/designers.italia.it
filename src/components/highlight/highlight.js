@@ -47,13 +47,14 @@ const Highlight = (
 	}
 
 	return (
-		<section className={styles} aria-labelled-by={id}>
+		<section className={styles} aria-labelledby={id}>
 			<div className="container">
 				<div className="row">
 					<div className="col-12">
 						<div className={classes}>
 							<div className="img-container ratio ratio-1x1">
 								<img className="main-image" src={img} alt={title}/>
+								{icon && <Icon {...icon} classdName="translate-middle"/>}
 							</div>
 							<div className="text-container px-3 py-5 px-md-0 px-lg-10 py-lg-10">
 								<HLevel id={id}>{title}</HLevel>
