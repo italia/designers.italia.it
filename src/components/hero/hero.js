@@ -30,7 +30,14 @@ const Hero =({
               {share  && <Dropdown {...share}></Dropdown>}
             </div>
             <div className="hero-main">
+              <div className="row">
+                <div className="col-12 col-lg-6 offset-1">
 
+                </div>
+                <div className="col-12 col-lg-3 offset-lg-1">
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
