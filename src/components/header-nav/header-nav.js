@@ -9,7 +9,7 @@ import DropdownMenu from "../dropdown-menu/dropdown-menu"
 const HeaderNav = ({data}) => {
 	return(
 	<div className={"it-header-navbar-wrapper" + ' '+data.theme} id={data.id}>
-		<div className="container">
+		<div className="container-xxl">
 			<div className="row">
 				<div className="col-12">
 					<nav className="navbar navbar-expand-lg has-megamenu" aria-label={data.ariaLabel}>
@@ -29,7 +29,7 @@ const HeaderNav = ({data}) => {
 										<HeaderMenuItem key={"item-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
 											<HeaderMenuLink key={"item-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu}></HeaderMenuLink>
 											<DropdownMenu idMegamenu={value.idMegamenu}>
-												
+
 											</DropdownMenu>
 										</HeaderMenuItem>
 									)
@@ -39,7 +39,7 @@ const HeaderNav = ({data}) => {
 					</nav>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</div>
 	)
 }

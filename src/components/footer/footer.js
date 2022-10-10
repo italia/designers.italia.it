@@ -7,7 +7,7 @@ import FooterBrand from "../footer-brand/footer-brand"
 import Icon from "../icon/icon"
 
 const Footer = ({ data }) => {
-  
+
   function sub(boolean){
     if(boolean) {
       return (

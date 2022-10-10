@@ -3,8 +3,59 @@ name: Hero
 description : Componente Hero
 components:
   heros:
-    - title : test
+    - background: bg-primary
+      title: Fondamenti (hero bg-primary)
+      subtitle: Questo è un sottotitolo che ti fa capire a cosa serve la pagina sotto ci potrebbe stare altro
+      img: https://via.placeholder.com/400x300?text=Placeholder
+      imgRatio: 4x3
+      pretext:
+        icon:
+          icon: sprites.svg#it-info-circle
+          size: sm
+          color: light
+        text: IN BREVE
+      text: |
+        **Lorem ipsum** dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      breadcrumbs :
+        separator : '/'
+        items :
+          - label : Inizio
+            active: false
+            url: '#'
+          - label : Fondamenti
+            active: true
+      share:
+        btnId: shareButton
+        button:
+          label: Condividi
+          addonStyle: btn-share-hero text-white
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: light
+            addonClasses: ms-3
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              icon:
+                icon: sprites.svg#it-facebook-square
+                color: primary
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              icon:
+                icon: sprites.svg#it-twitter-square
+                color: primary
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              icon:
+                icon: sprites.svg#it-linkedin-square
+                color: primary
 
-  
-  
+
+
 

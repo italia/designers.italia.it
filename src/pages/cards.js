@@ -7,7 +7,7 @@ import Card from "../components/card/card"
 const Cards = () => {
 	return(
 		<Template>
-      <div className="container">
+      <div className="container-xxl">
         <div className="row">
           <div className="col-12">
             <h2 className="my-3">Cards</h2>
@@ -21,7 +21,7 @@ const Cards = () => {
           })}
         </div>
       </div>
-			
+
 		</Template>
 	)
 }
