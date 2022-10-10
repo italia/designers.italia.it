@@ -48,7 +48,7 @@ const Highlight = (
 
 	return (
 		<section className={styles} aria-labelled-by={id}>
-			<div className="container">
+			<div className="container-xxl">
 				<div className="row">
 					<div className="col-12">
 						<div className={classes}>
