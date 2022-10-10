@@ -4,13 +4,16 @@ import './tag.scss'
 const Tag = ({
 	url,
 	children,
-	label
+	label,
+  addonClasses
 }) => {
 	if (label) {
 		children = label
 	}
+  let styles = "tag"
+    + `${addonClasses ? ' '+addonClasses : ''}`
 	return(
-		<a href={url} className="tag">
+		<a href={url} className={styles}>
 			{children}
 		</a>
 	)

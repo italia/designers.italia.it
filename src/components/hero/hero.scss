@@ -2,6 +2,33 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .hero {
+  position: relative;
+  .container-xxl {
+    position: relative;
+  }
+  .bg-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      background-color: var(--hero-bg-primary-color);
+      opacity: 0.9;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
   .hero-top {
     display: flex;
     justify-content: space-between;
@@ -10,9 +37,33 @@
   .pre-text {
     display: flex;
     align-items: center;
+    color: var(--hero-pretext-color);
+    font-weight: 600;
+    .icon {
+      fill: var(--hero-pretext-color)
+    }
   }
   &.bg-primary {
     color: var(--hero-bg-primary-color);
+    .pre-text {
+      color: var(--hero-bg-primary-color);
+      .icon {
+        fill: var(--hero-bg-primary-color)
+      }
+    }
+    .bg-image {
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background-color: var(--color-primary);
+        opacity: 0.9;
+      }
+    }
   }
   .subtitle {
     font-size: var(  --hero-subtitle-size);

@@ -4,6 +4,7 @@ import ReactMarkdown from 'react-markdown'
 import Breadcrumbs from "../breadcrumbs/breadcrumbs"
 import Dropdown from "../dropdown/dropdown"
 import Icon from "../icon/icon"
+import Tag from "../tag/tag"
 
 const Hero =({
 	breadcrumbs,
@@ -37,8 +38,10 @@ const Hero =({
   let imgStyle = 'img-wrapper ratio'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 
+
 	return(
 		<div className={styles}>
+      {bgImg && <div className="bg-image"><img src={bgImg} alt={title}/></div>}
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
@@ -52,6 +55,7 @@ const Hero =({
                   <div className="texts px-3 px-md-0 py-3 pb-lg-5">
                     <HLevel className="title">{title}</HLevel>
                     <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
+                    {tag && <Tag {...tag}></Tag>}
                     <div className="bottom-text">
                       {pretext && <div className="pre-text">
                         {pretext.icon && <Icon {...pretext.icon} addonClasses="me-2"></Icon>}
