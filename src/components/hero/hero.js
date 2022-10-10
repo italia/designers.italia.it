@@ -39,7 +39,7 @@ const Hero =({
 
 	return(
 		<div className={styles}>
-      <div className="container">
+      <div className="container-xxl">
         <div className="row">
           <div className="col-12">
             <div className="hero-top px-3 px-md-0 px-lg-3 py-3">

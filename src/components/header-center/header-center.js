@@ -4,7 +4,7 @@ import Icon from "../icon/icon"
 
 
 const HeaderCenter = ({data}) => {
-	
+
 	//-search zone
 	function search(boolean) {
 		if (boolean) {
@@ -40,10 +40,10 @@ const HeaderCenter = ({data}) => {
 			)
 		}
 	}
-	
+
 	return (
 		<div className="it-header-center-wrapper">
-			<div className="container">
+			<div className="container-xxl">
 				<div className="row">
 					<div className="col-12">
 						<div className="it-header-center-content-wrapper">

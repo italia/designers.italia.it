@@ -6,7 +6,7 @@ import ListItem from "../list-item/list-item"
 import Icon from "../icon/icon"
 
 const Footer = ({ data }) => {
-  
+
   function sub(boolean){
     if(boolean) {
       return (
@@ -74,7 +74,7 @@ const Footer = ({ data }) => {
   return (
     <footer className="it-footer">
         <div className="it-footer-main">
-	        <div className="container">
+	        <div className="container-xxl">
             <section>
               <div className="row clearfix">
                 <div className="col-sm-12">

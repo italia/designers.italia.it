@@ -35,7 +35,7 @@ const IndexPage = () => {
     <main>
       <div id="sticky" class="it-header-slim-wrapper it-header-sticky" data-bs-toggle="sticky"
         data-bs-position-type="fixed" data-bs-target="#stickyTrigger1" data-bs-sticky-class-name="is-sticky">
-        <div class="container">
+        <div class="container-xxl">
           <div class="row">
             <div class="col-12">
               <div class="it-header-slim-wrapper-content">
@@ -54,7 +54,7 @@ const IndexPage = () => {
               title="img title" alt="imagealt" /></div>
           </div>
         </div>
-        <div class="container">
+        <div class="container-xxl">
           <div class="row">
             <div class="col-12">
               <div class="it-hero-text-wrapper bg-dark">
@@ -70,7 +70,7 @@ const IndexPage = () => {
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container-xxl">
         <div class="row">
           <div class="col-12">
             <div class="card-wrapper card-space">
