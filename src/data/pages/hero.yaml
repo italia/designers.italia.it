@@ -3,8 +3,47 @@ name: Hero
 description : Componente Hero
 components:
   heros:
-    - title : test
+    - background: bg-primary
+      breadcrumbs :
+        separator : '/'
+        items :
+          - label : Inizio
+            active: false
+            url: '#'
+          - label : Fondamenti
+            active: true
+      share:
+        btnId: shareButton
+        button:
+          label: Condividi
+          addonStyle: btn-share-hero text-white
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: light
+            addonClasses: ms-3
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              icon:
+                icon: sprites.svg#it-facebook-square
+                color: primary
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              icon:
+                icon: sprites.svg#it-twitter-square
+                color: primary
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              icon:
+                icon: sprites.svg#it-linkedin-square
+                color: primary
 
-  
-  
+
+
 
