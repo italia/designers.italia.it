@@ -47,8 +47,8 @@ const Card =(
 				{img && !imgPlaceholder && <img src={img} alt={title}/>}
 				{iconImg && <img src={iconImg} alt={title}/>}
 				{dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
-					<span class="day font-monospace">{dateOverlay.day}</span>
-					<span class="month">{dateOverlay.month}</span>
+					<span className="day font-monospace">{dateOverlay.day}</span>
+					<span className="month">{dateOverlay.month}</span>
 				</div>}
 				{iconOverlay && <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
 					<Icon {...iconOverlay}></Icon>

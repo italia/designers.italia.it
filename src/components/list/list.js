@@ -32,9 +32,9 @@ const List = ({
 
 	let heading
 	if(title) {
-		heading =<div class="link-list-heading">{title}</div>
+		heading =<div className="link-list-heading">{title}</div>
 		if (titleLink) {
-			heading = <div class="link-list-heading"><a href={titleLink}>{title}</a></div>
+			heading = <div className="link-list-heading"><a href={titleLink}>{title}</a></div>
 		}
 	}
 

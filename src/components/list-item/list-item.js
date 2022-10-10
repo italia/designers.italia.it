@@ -35,7 +35,7 @@ const ListItem = ({
 	//icon render simple list
 	var iconRenderedSimpleList
 	if (icon) {
-		iconRenderedSimpleList = <div class="it-rounded-icon"><Icon {...icon}/></div>
+		iconRenderedSimpleList = <div className="it-rounded-icon"><Icon {...icon}/></div>
 	}
 	// arrow right
 	var actionRendered
@@ -46,7 +46,7 @@ const ListItem = ({
 	//immagine
 	var imgRendered
 	if(img) {
-		imgRendered = <div class="it-thumb"><img src={img} alt={alt}/></div>
+		imgRendered = <div className="it-thumb"><img src={img} alt={alt}/></div>
 	}
 	//-vartura label
 	if(label){
@@ -76,12 +76,12 @@ const ListItem = ({
 		icons =  actions.map(icons => {
 			return <a href={icons.url} aria-label={icons.ariaLabel}><Icon {...icons}></Icon></a>
 		})
-		actionsRendered = <span class="it-multiple">{icons}</span>
+		actionsRendered = <span className="it-multiple">{icons}</span>
 	}
 	// metadata
 	var metadataRendered
 	if (metadata) {
-		metadataRendered = <span class="metadata">{metadata.label}</span>
+		metadataRendered = <span className="metadata">{metadata.label}</span>
 		if(metadata.url) {
 			metadataRendered = <a href="#">{metadataRendered}</a>
 		}
@@ -89,7 +89,7 @@ const ListItem = ({
 	var metadataActionsRendered
 	// metadata & multiple actions
 	if (metadata && actions) {
-		metadataActionsRendered = <span class="it-multiple">{metadataRendered}{icons}</span>
+		metadataActionsRendered = <span className="it-multiple">{metadataRendered}{icons}</span>
 	}
 	//-se esiste un link
 	if (url) {
