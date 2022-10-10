@@ -13,6 +13,7 @@ import HeaderData from '../data/header.yaml'
 import FooterData from '../data/footer.yaml'
 import HeaderNav from "../components/header-nav/header-nav"
 
+
 const MainTemplate = ({children}) => {
 	return (
     <>

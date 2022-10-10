@@ -48,7 +48,7 @@ const Hero =({
             </div>
             <div className="hero-main">
               <div className="row">
-                <div className="col-12 col-lg-6 offset-lg-1 ">
+                <div className="col-12 col-md-10 col-lg-6 offset-md-1 ">
                   <div className="texts px-3 px-md-0 py-3 pb-lg-5">
                     <HLevel className="title">{title}</HLevel>
                     <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
@@ -62,7 +62,7 @@ const Hero =({
                   </div>
                 </div>
                 {img &&
-                  <div className="col-12 col-lg-3 offset-lg-1 px-4 px-lg-0">
+                  <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-md-2 px-lg-2">
                     <div className={imgStyle}>
                       <img src={img} alt={title} />
                     </div>
