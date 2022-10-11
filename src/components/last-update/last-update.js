@@ -13,7 +13,7 @@ const LastUpdate = ({
       <div className="container-xxl">
         <div className="row">
           <div className="col col-md-10 offset-md-1">
-            <p class="px-3 px-md-0">
+            <p className="px-3 px-md-0">
               <small>{title} {date}
                 <a
                   href={licence.url}

@@ -10,9 +10,9 @@ import List from "../components/list/list"
 import ListItem from "../components/list-item/list-item"
 import Chip from "../components/chip/chip"
 import Tag from "../components/tag/tag"
-import LinkCustom from "../components/link-custom/link-custom"
+import NavPreFooter from "../components/nav-pre-footer/nav-pre-footer"
 import Pagedata from "../data/pages/home.yaml"
-import NavOtherPrevNext from "../components/nav-other-prev-next/nav-other-prev-next"
+
 
 
 const HomePage = () => {
@@ -151,8 +151,7 @@ const HomePage = () => {
         <p>Maecenas vel efficitur felis. In elementum scelerisque molestie. Integer ac ex quis erat vestibulum vestibulum ut vitae erat. Ut enim ipsum, euismod luctus nunc sit amet, elementum convallis enim. Nunc turpis dolor, aliquam sed metus in, aliquet dignissim augue. </p>
       </Section>
 
-      <NavOtherPrevNext {...Pagedata.components.navOtherPrevNext}/>
-
+      <NavPreFooter {...Pagedata.components.navPreFooter}/>
 
 	  </Template>
 	)

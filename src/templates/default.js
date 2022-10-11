@@ -9,15 +9,15 @@ import BackToTopEl from "../components/back-to-top/back-to-top"
 import HeaderSlim from "../components/header-slim/header-slim"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
+import HeaderNav from "../components/header-nav/header-nav"
 import HeaderData from '../data/header.yaml'
 import FooterData from '../data/footer.yaml'
-import HeaderNav from "../components/header-nav/header-nav"
-
+import skipLinksData from "../data/skiplinks.yaml"
 
 const MainTemplate = ({children}) => {
 	return (
     <>
-      <Skiplinks/>
+      <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
 			<HeaderSlim data={HeaderData.headerSlim}/>
 			<NavWrapper>
