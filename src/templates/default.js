@@ -28,7 +28,7 @@ const MainTemplate = ({children}) => {
       <main id="main">
         {children}
       </main>
-      <Footer data={FooterData.footer}>
+      <Footer {...FooterData.footer}>
       </Footer>
       <BackToTopEl
         positionTop={0}

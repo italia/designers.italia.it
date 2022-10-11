@@ -1,13 +1,29 @@
 .it-footer {
-  .it-brand-wrapper {
-    img {
-      width: 48px;
-      margin-right: 8px;
-      flex-shrink: 0;
-    }
-  }
   .link-list-wrapper ul li a span,
   .link-list-wrapper ul li a:hover span {
     color: #FFF;
+  }
+  .it-footer-main .link-list-wrapper ul li a:hover:not(.disabled) {
+    text-decoration: none;
+  }
+  .link-list-wrapper ul li a:hover svg{
+    text-decoration: none;
+  }
+  .footer-title{
+    text-transform: uppercase;
+    font-size: var(--footer-title-font-size);
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  .last-item-end {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    li {
+      width: 100%;
+      &:last-child {
+        margin-top: auto;
+      }
+    }
   }
 }
