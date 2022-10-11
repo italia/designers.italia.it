@@ -12,6 +12,7 @@ import Chip from "../components/chip/chip"
 import Tag from "../components/tag/tag"
 import NavOtherPrevNext from "../components/nav-other-prev-next/nav-other-prev-next"
 import NavOtherLinks from "../components/nav-other-links/nav-other-links"
+import NavPosition from "../components/nav-position/nav-position"
 import Pagedata from "../data/pages/home.yaml"
 
 
@@ -155,6 +156,8 @@ const HomePage = () => {
       <NavOtherPrevNext {...Pagedata.components.navOtherPrevNext}/>
 
       <NavOtherLinks {...Pagedata.components.navOtherLinks}/>
+
+      <NavPosition data={Pagedata.components.navPosition}/>
 
 
 	  </Template>
