@@ -1,4 +1,5 @@
 import React from "react"
+import "./footer-small.scss"
 
 const FooterSmall = ({
   items
