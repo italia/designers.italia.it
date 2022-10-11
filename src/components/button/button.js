@@ -21,7 +21,8 @@ const Button = ({
 	ariaControls,     //id for menu opened by button
 	ariaExpanded,     //true / no prop
 	dataBsToggle,	   //navbarcollapsible,dropdown
-	children
+	children,
+	blank
 }) => {
 	let iconRendered
 	let btnStyles = `${customStyle ? '' : 'btn'}`
@@ -50,10 +51,11 @@ const Button = ({
 
 	if (url) {
 		return (
-			<a href={url} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined}>
+			<a href={url} target={blank ? '_blank' : undefined} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
+				{(!iconLeft || icon) ? iconRendered : ''}
 			</a>
 		)
 	}else{
