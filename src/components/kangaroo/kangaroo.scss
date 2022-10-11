@@ -1,0 +1,30 @@
+.kangaroo {
+	.title-wrapper {
+		font-size: var(--kangaroo-title-font-size);
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+	.dropdwon-zone{
+		.btn {
+			font-size: var(--kangaroo-title-font-size);
+			text-transform: uppercase;
+		}
+	}
+}
+
+.bg-primary {
+	.kangaroo {
+		.chip.chip-primary {
+			border-color: var(--kangaroo-negative-element-color);
+			&:active {
+				border-color: var(--kangaroo-negative-element-color);
+			}
+			.chip-label {
+				color: var(--kangaroo-negative-element-color)
+			}
+		}
+		.btn-dropdown {
+			color: var(--kangaroo-negative-element-color)
+		}
+	}
+}

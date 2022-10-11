@@ -55,7 +55,7 @@ const Button = ({
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
-				{(!iconLeft || icon) ? iconRendered : ''}
+				{(!iconLeft && !iconRight && icon) ? iconRendered : ''}
 			</a>
 		)
 	}else{
@@ -64,7 +64,7 @@ const Button = ({
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
-				{(!iconLeft || icon) ? iconRendered : ''}
+				{(!iconLeft && !iconRight && icon) ? iconRendered : ''}
 			</button>
 		)
 	}

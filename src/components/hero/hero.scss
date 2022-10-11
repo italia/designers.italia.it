@@ -64,6 +64,9 @@
         opacity: 0.9;
       }
     }
+    .kangaroo-zone{
+      border-top: 1px solid var(--hero-bg-primary-color);
+    }
   }
   .subtitle {
     font-size: var(  --hero-subtitle-size);
@@ -83,6 +86,10 @@
 			margin-bottom: calc(var(--spacer) * 4);
 		}
 	}
+  .kangaroo-zone{
+    border-top: var(--hero-kangaroo-zone-border-top);
+    position: relative;
+  }
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
