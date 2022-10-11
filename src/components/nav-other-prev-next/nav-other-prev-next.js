@@ -1,5 +1,4 @@
 import React from "react"
-import Icon from "../icon/icon"
 import LinkCustom from "../link-custom/link-custom"
 
 const NavOtherPrevNext = ({
@@ -20,6 +19,8 @@ const NavOtherPrevNext = ({
     color :"primary",
     hidden: true,
   }
+  prev.imageClass = "mx-3"
+  next.imageClass = "mx-3"
   return (
     <div className="nav-other-prev-next border neutral-1-border-color-a3 py-5 border-end-0 border-start-0">
       <div className="container-xxl">
