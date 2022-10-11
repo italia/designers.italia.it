@@ -29,7 +29,7 @@ const HeaderSlim = ({data}) => {
 								</nav>
 							</div>
 							{data.langs &&
-								<div class="it-header-slim-right-zone">
+								<div className="it-header-slim-right-zone">
 									<Dropdown {...data.langs}></Dropdown>
 								</div>
 							}

@@ -1,10 +1,24 @@
 import React from "react"
 
-const Skiplinks = (props) => {
+const Skiplinks = (
+  {data}
+) => {
+
+  let skiplinksItems
+
+  if (data) {
+    skiplinksItems = data.map((item,index) => {
+      return(
+        <a className="visually-hidden-focusable" key={"link-"+index} href={item.url}>
+          {item.label}
+        </a>
+      )
+    })
+  }
+
   return (
     <div className="skiplinks">
-      <a className="visually-hidden-focusable" href="#main">Vai al contenuto principale</a>
-      <a className="visually-hidden-focusable" href="#footer">Vai al piede di pagina</a>
+      {skiplinksItems}
     </div>
   )
 }
