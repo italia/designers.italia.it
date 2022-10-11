@@ -2,6 +2,8 @@ import * as React from "react"
 import Icon from "../icon/icon"
 import List from "../list/list"
 import ListItem from "../list-item/list-item"
+import Dropdown from "../dropdown/dropdown"
+import "./header-slim.scss"
 
 const HeaderSlim = ({data}) => {
 	return (
@@ -26,6 +28,11 @@ const HeaderSlim = ({data}) => {
 									</List>
 								</nav>
 							</div>
+							{data.langs &&
+								<div class="it-header-slim-right-zone">
+									<Dropdown {...data.langs}></Dropdown>
+								</div>
+							}
 						</div>
 					</div>
 				</div>
