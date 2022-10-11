@@ -10,9 +10,7 @@ import List from "../components/list/list"
 import ListItem from "../components/list-item/list-item"
 import Chip from "../components/chip/chip"
 import Tag from "../components/tag/tag"
-import NavOtherPrevNext from "../components/nav-other-prev-next/nav-other-prev-next"
-import NavOtherLinks from "../components/nav-other-links/nav-other-links"
-import NavPosition from "../components/nav-position/nav-position"
+import NavPreFooter from "../components/nav-pre-footer/nav-pre-footer"
 import Pagedata from "../data/pages/home.yaml"
 
 
@@ -153,12 +151,7 @@ const HomePage = () => {
         <p>Maecenas vel efficitur felis. In elementum scelerisque molestie. Integer ac ex quis erat vestibulum vestibulum ut vitae erat. Ut enim ipsum, euismod luctus nunc sit amet, elementum convallis enim. Nunc turpis dolor, aliquam sed metus in, aliquet dignissim augue. </p>
       </Section>
 
-      <NavOtherPrevNext {...Pagedata.components.navOtherPrevNext}/>
-
-      <NavOtherLinks {...Pagedata.components.navOtherLinks}/>
-
-      <NavPosition data={Pagedata.components.navPosition}/>
-
+      <NavPreFooter {...Pagedata.components.navPreFooter}/>
 
 	  </Template>
 	)

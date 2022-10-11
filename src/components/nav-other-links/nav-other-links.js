@@ -23,7 +23,7 @@ const NavOtherLinks = ({
 
 
   return (
-    <div className="nav-other-links py-2">
+    <div className="nav-other-links pb-5">
       <div className="container-xxl">
       <div className="row">
         <p className="d-flex align-items-center small text-uppercase text-secondary fw-bold">

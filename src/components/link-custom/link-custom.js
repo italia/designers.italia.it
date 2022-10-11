@@ -23,7 +23,7 @@ const LinkCustom = ({
       target={blank ? "_blank" : undefined}
     >
       {icon ? <Icon {...icon}/> : ''}
-      <img src={image} aria-hidden="true" className={imageStyles}/>
+      {image ? <img src={image} aria-hidden="true" className={imageStyles}/> : ''}
       <strong className={labelSmall ? 'small fw-bold' : 'fw-bold'}>{label}</strong>
     </a>
   )

@@ -22,7 +22,7 @@ const NavPosition = ({
     })
   }
   return (
-    <div className="nav-position py-4">
+    <div className="nav-position">
       <div className="container-xxl">
         <div className="row">
           {linkItems}
