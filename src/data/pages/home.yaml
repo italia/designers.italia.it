@@ -77,9 +77,31 @@ components:
         - url: "#"
           isDropdown : true
           children : Azione 3
-  linkCustom:
-    label: Analizza il contesto del progetto
-    url: "#"
-    image: /images/link-custom-icon.svg
-    blank: false
+  navOtherPrevNext:
+    prev:
+      label: Analizza il contesto del progetto
+      url: "#"
+      image: /images/link-custom-icon.svg
+      blank: false
+      specular: false
+      icon:
+        icon: "sprites.svg#it-arrow-left"
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: flex-shrink-0
+    next:
+      label: Usa i temi CMS Wordpress e Drupal
+      url: "#"
+      image: /images/link-custom-icon.svg
+      blank: false
+      specular: true
+      icon:
+        icon: "sprites.svg#it-arrow-right"
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: flex-shrink-0
 
