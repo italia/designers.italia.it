@@ -66,55 +66,81 @@ footer:
               color: white
               size: sm
             addonClasses: fw-bold
-    info:
-      cols:
-        - title: Contatti
+    social:
+      title: Seguici su
+      buttons:
+        - ariaLabel: Seguici su Medium
           url : "#"
-          text : |
-            **Comune di Lorem Ipsum**
-            Via Roma 0 - 00000 Lorem Ipsum Codice fiscale / P. IVA: 000000000
-          customStyleUl: footer-list clearfix
-          isMenu: true
-          items :
-            - title: Posta Elettronica Certificata
-              url : "#"
-              ariaLabel: "Vai alla pagina:"
-            - title: URP - Ufficio Relazioni con il Pubblico
-              url : "#"
-              ariaLabel: "Vai alla pagina:"
-        - title: Lorem Ipsum
-          url: "#"
-        - title: Seguici su
-          socials:
-            - title: Designers Italia
-              url : "#"
-              icon :
-                icon: sprites.svg#it-designers-italia
-                size: sm
-                color: white
-                addonClasses: align-top
-            - title: Twitter
-              url : "#"
-              icon :
-                icon: sprites.svg#it-twitter
-                size: sm
-                color: white
-                addonClasses: align-top
-            - title: Medium
-              url : "#"
-              icon :
-                icon: sprites.svg#it-medium
-                size: sm
-                color: white
-                addonClasses: align-top
-            - title: Behance
-              url : "#"
-              icon :
-                icon: sprites.svg#it-behance
-                size: sm
-                color: white
-                addonClasses: align-top
-
+          addonStyle: p-0 me-4
+          blank: true
+          icon :
+            icon: sprites.svg#it-medium
+            size: sm
+            color: white
+            addonClasses: align-top
+        - ariaLabel: Seguici su Twitter
+          url : "#"
+          blank: true
+          addonStyle: p-0 
+          icon :
+            icon: sprites.svg#it-twitter
+            size: sm
+            color: white
+            addonClasses: align-top
+    community:
+      title: Community
+      buttons:
+        - ariaLabel: Seguici su github
+          url : "#"
+          blank: true
+          addonStyle: p-0 me-4
+          icon :
+            icon: sprites.svg#it-github
+            size: sm
+            color: white
+            addonClasses: align-top
+        - ariaLabel: Seguici su Twitter
+          url : "#"
+          blank: true
+          addonStyle: p-0 me-4
+          icon :
+            icon: sprites.svg#it-twitter
+            size: sm
+            color: white
+            addonClasses: align-top
+        - ariaLabel: Seguici su Twitter
+          url : "#"
+          blank: true
+          addonStyle: p-0 me-4
+          icon :
+            icon: sprites.svg#it-twitter
+            size: sm
+            color: white
+            addonClasses: align-top
+        - ariaLabel: Seguici su Twitter
+          url : "#"
+          blank: true
+          addonStyle: p-0 me-4
+          icon :
+            icon: sprites.svg#it-twitter
+            size: sm
+            color: white
+            addonClasses: align-top
+    subscribe:
+      title: Newsletter
+      link:
+        label: Leggi l’informativa sulla privacy
+        url: "#"
+      subscribe:
+        label: Email
+        labelClass: text-white
+        id: emailInput
+        idForm: nwesletterForm
+        action: "#"
+        button:
+          label: Iscriviti
+          type: submit
+          btnStyle: outline-primary
   footerProject:
     background: "dark"
     title: |

@@ -9,6 +9,9 @@
   .link-list-wrapper ul li a:hover svg{
     text-decoration: none;
   }
+  .it-footer-main {
+    background-color: var(--footer-bg-color);
+  }
   .footer-title{
     text-transform: uppercase;
     font-size: var(--footer-title-font-size);
@@ -23,6 +26,24 @@
       width: 100%;
       &:last-child {
         margin-top: auto;
+      }
+    }
+  }
+  .footer-utilities {
+    border-top: var(--footer-utilities-border-top);
+  }
+  .subscribe {
+    .form-group {
+      input {
+        border-bottom-color: #FFF !important;
+        color: #FFF;
+      }
+    }
+    .btn-outline-primary {
+      box-shadow: inset 0 0 0 2px #fff;
+      color: #FFF;
+      &:focus {
+        box-shadow: inset 0 0 0 2px #fff;
       }
     }
   }
