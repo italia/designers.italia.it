@@ -13,11 +13,27 @@ headerSlim:
     - title: Developers Italia
       url: https://developers.italia.it/
       blank: true
-  langs : 
-    - title : ita
-      url : "#"
-    - title : eng
-      url : "#" 
+  langs :
+    btnId: langButton
+    customStyle: nav-item
+    button:
+      customStyle: nav-link dropdown-toggle
+      label: "ita"
+      url: "#"
+      ariaLabel: "Selezione lingua: Italiano"
+      icon:
+        icon: sprites.svg#it-expand
+        size: sm
+    list:
+      customStyle: lang-dropdown
+      isDropdown: true
+      listItems:
+        - url: "#"
+          label: Italiano
+          ariaLabel: Seleziona lingua italiano
+        - url: "#"
+          ariaLabel: Select english language
+          label: English
 headerCenter:
   title: Designers Italia
   socials:

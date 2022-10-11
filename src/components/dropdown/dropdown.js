@@ -11,6 +11,7 @@ const Dropdown = ({
 	list,
 	children,
 	button,
+	customStyle
 	
 }) => {
 	
@@ -18,6 +19,7 @@ const Dropdown = ({
 		+ `${dropUp ? ' dropup' : ''}`
 		+ `${dropEnd ? ' dropend' : ''}`
 		+ `${dropStart ? ' dropstart' : ''}`
+		+ `${customStyle ? ' '+customStyle : ''}`
 
 	let btnComponents
 	if (button) {
