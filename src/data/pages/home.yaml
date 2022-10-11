@@ -2,7 +2,7 @@
 name: Home Page
 description : Descrizione Pagina
 components:
-  chips: 
+  chips:
     - color : primary
       label : Primary Lg
       size: lg
@@ -41,7 +41,7 @@ components:
       	| heading | b | c | d |
         | - | :- | -: | :-: |
         | cell 1 | cell 2 | 3 | 4 |
-  
+
   button :
     btnStyle: primary
     iconRight: true
@@ -51,7 +51,7 @@ components:
     iconAddonClasses: false
     iconRounded: false
     children: Label del bottone
-  
+
   dropdown :
     btnId: dropdownMenuButtonDynamic
     button:
@@ -60,7 +60,7 @@ components:
       children: Apri Dropdown
       iconRight: true
       iconRounded: false
-      icon: 
+      icon:
         color: light
         size: sm
         icon: sprites.svg#it-expand
@@ -77,4 +77,9 @@ components:
         - url: "#"
           isDropdown : true
           children : Azione 3
+  linkCustom:
+    label: Analizza il contesto del progetto
+    url: "#"
+    image: /images/link-custom-icon.svg
+    blank: false
 

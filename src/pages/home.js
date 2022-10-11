@@ -10,7 +10,7 @@ import List from "../components/list/list"
 import ListItem from "../components/list-item/list-item"
 import Chip from "../components/chip/chip"
 import Tag from "../components/tag/tag"
-import Numbers from "../components/numbers/numbers"
+import LinkCustom from "../components/link-custom/link-custom"
 import Pagedata from "../data/pages/home.yaml"
 
 
@@ -24,6 +24,7 @@ const HomePage = () => {
           )
         })}
       <Section>
+
       <Button {...Pagedata.components.button}></Button>
       <Dropdown {...Pagedata.components.dropdown}>
         <List {...Pagedata.components.dropdown.list}></List>
@@ -149,11 +150,9 @@ const HomePage = () => {
         <p>Maecenas vel efficitur felis. In elementum scelerisque molestie. Integer ac ex quis erat vestibulum vestibulum ut vitae erat. Ut enim ipsum, euismod luctus nunc sit amet, elementum convallis enim. Nunc turpis dolor, aliquam sed metus in, aliquet dignissim augue. </p>
       </Section>
 
-      <Numbers
-        icon="sprites.svg#it-tool"
-        number="1200"
-        label="Milioni di euro già versati"
-      />
+      <LinkCustom {...Pagedata.components.linkCustom}/>
+
+
 	  </Template>
 	)
  }
