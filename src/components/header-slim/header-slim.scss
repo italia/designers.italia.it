@@ -1,6 +1,18 @@
-header .link-list-wrapper.lang-dropdown  ul li a span,
-header .link-list-wrapper.lang-dropdown  ul li a:hover span,
-header .link-list-wrapper.lang-dropdown  ul li a:hover:not(.disabled) span,
-header .link-list-wrapper.lang-dropdown  ul li a.active span {
+.it-header-slim-wrapper .link-list-wrapper.lang-dropdown  ul li a span,
+.it-header-slim-wrapper .link-list-wrapper.lang-dropdown  ul li a:hover span,
+.it-header-slim-wrapper .link-list-wrapper.lang-dropdown  ul li a:hover:not(.disabled) span,
+.it-header-slim-wrapper .link-list-wrapper.lang-dropdown  ul li a.active span {
 	color: var(--color-primary)
+}
+
+.it-header-slim-wrapper {
+	.link-list-wrapper ul li a span,
+   .link-list-wrapper ul li a:hover span,
+	.link-list-wrapper ul li a:hover:not(.disabled) span,
+	.link-list-wrapper ul li a.active span {
+   	color: #FFF;
+  }
+  .link-list-wrapper ul li a.active span {
+		text-decoration: none;
+  }
 }
