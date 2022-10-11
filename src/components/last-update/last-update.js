@@ -1,5 +1,6 @@
 import React from "react"
 import Icon from '../icon/icon'
+import "./last-update.scss"
 
 const LastUpdate = ({
   title,
@@ -17,7 +18,7 @@ const LastUpdate = ({
                 <a
                   href={licence.url}
                   target={licence.blank ? "_blank" : undefined}
-                  className="fw-bolder d-block d-md-inline-block mt-2 mt-md-0 ms-md-5">
+                  className="fw-bolder d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5">
                   <strong className="d-inline-block me-2">{licence.label} <Icon {...licence.icon} /></strong>
                 </a>
               </small>
@@ -27,7 +28,7 @@ const LastUpdate = ({
                 <a
                   href={edit.url}
                   target={edit.blank ? "_blank" : undefined}
-                  className="fw-bolder d-inline-block">
+                  className="fw-bolder d-inline-block text-decoration-none">
                   <strong className="d-inline-block me-2">{edit.label}</strong><Icon {...edit.icon} />
                 </a>
               </small>
