@@ -12,6 +12,7 @@ import Chip from "../components/chip/chip"
 import Tag from "../components/tag/tag"
 import LinkCustom from "../components/link-custom/link-custom"
 import Pagedata from "../data/pages/home.yaml"
+import NavOtherPrevNext from "../components/nav-other-prev-next/nav-other-prev-next"
 
 
 const HomePage = () => {
@@ -150,7 +151,7 @@ const HomePage = () => {
         <p>Maecenas vel efficitur felis. In elementum scelerisque molestie. Integer ac ex quis erat vestibulum vestibulum ut vitae erat. Ut enim ipsum, euismod luctus nunc sit amet, elementum convallis enim. Nunc turpis dolor, aliquam sed metus in, aliquet dignissim augue. </p>
       </Section>
 
-      <LinkCustom {...Pagedata.components.linkCustom}/>
+      <NavOtherPrevNext {...Pagedata.components.navOtherPrevNext}/>
 
 
 	  </Template>
