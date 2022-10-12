@@ -14,7 +14,7 @@ import HeaderData from '../data/header.yaml'
 import FooterData from '../data/footer.yaml'
 import skipLinksData from "../data/skiplinks.yaml"
 
-const MainTemplate = ({children}) => {
+const MainTemplate = ({children,page}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
@@ -22,7 +22,7 @@ const MainTemplate = ({children}) => {
 			<HeaderSlim data={HeaderData.headerSlim}/>
 			<NavWrapper>
 				<HeaderCenter data={HeaderData.headerCenter}/>
-				<HeaderNav data={HeaderData.navbar}/>
+				<HeaderNav data={HeaderData.navbar} page={page}/>
 			</NavWrapper>
 		</Header>
       <main id="main">

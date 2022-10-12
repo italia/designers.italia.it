@@ -7,7 +7,7 @@ import HeaderMenuLink from "../header-menu-link/header-menu-link"
 import DropdownMenu from "../dropdown-menu/dropdown-menu"
 import Megamenu from "../megamenu/megamenu"
 
-const HeaderNav = ({data}) => {
+const HeaderNav = ({data,page}) => {
 	return(
 	<div className={"it-header-navbar-wrapper" + ' '+data.theme} id={data.id}>
 		<div className="container-xxl">
@@ -28,7 +28,7 @@ const HeaderNav = ({data}) => {
 								{data.nav.voices.map((value,index)=>{
 									return(
 										<HeaderMenuItem key={"item-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
-											<HeaderMenuLink key={"item-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu}></HeaderMenuLink>
+											<HeaderMenuLink key={"item-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
 											<DropdownMenu idMegamenu={value.idMegamenu}>
 												{value.megamenu &&
 													<Megamenu {...value.megamenu}></Megamenu>

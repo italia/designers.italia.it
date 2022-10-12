@@ -5,11 +5,13 @@ const HeaderMenuLink = ({
 	isDropDown,
 	idMegamenu,
 	label,
-	url
+	url,
+	page
 }) => {
 
 	const styles = 'nav-link'
 		+ `${isDropDown ? ' dropdown-toggle' : ''}`
+		+ `${page==label ? ' active' : ''}`
 	
 	function icon(boolean){
 		if (boolean) {
@@ -18,7 +20,6 @@ const HeaderMenuLink = ({
 			)
 		}
 	}
-
 	return (
 		<a
 			className={styles}
