@@ -6,7 +6,7 @@ import Pagedata from "../data/pages/index.yaml"
 const Index = () => {
   return(
     <Template>
-
+      <p>Home page</p>
     </Template>
   )
 }
