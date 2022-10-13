@@ -47,14 +47,14 @@ const Hero =({
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="hero-top px-3 px-md-0 px-lg-3 py-3">
+              <div className="hero-top px-3 px-lg-0 px-lg-3 py-3">
                 <Breadcrumbs {...breadcrumbs}></Breadcrumbs>
                 {share  && <Dropdown {...share}></Dropdown>}
               </div>
               <div className="hero-main">
                 <div className="row">
                   <div className="col-12 col-md-10 col-lg-6 offset-md-1 ">
-                    <div className="texts px-3 px-md-0 py-3 pb-lg-5">
+                    <div className="texts px-3 px-lg-0 py-3 pb-lg-5">
                       <HLevel className="title">{title}</HLevel>
                       <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
                       {tag && <Tag {...tag}></Tag>}

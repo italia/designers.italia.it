@@ -51,7 +51,7 @@ const EditorialContent = ({
       <div className="container-xxl">
         <div className="row">
           <div className={columnStyles}>
-              <div className="px-3 px-md-0">
+              <div className="px-3 px-lg-0">
                 {title ? <HLevel id={id} className="mb-4">{title}</HLevel> : null}
                 <ReactMarkdown>{text}</ReactMarkdown>
 

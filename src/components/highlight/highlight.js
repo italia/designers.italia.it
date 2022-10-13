@@ -56,7 +56,7 @@ const Highlight = (
 								<img className="main-image" src={img} alt={title}/>
 								{icon && <Icon {...icon} classdName="translate-middle"/>}
 							</div>
-							<div className="text-container px-3 py-5 px-md-0 px-lg-6 py-lg-6">
+							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
 								<HLevel id={id}>{title}</HLevel>
 								{subtitle && <p className="sub-title">{subtitle}</p>}
                 			{!big && <Numbers props={numbers}/>}
