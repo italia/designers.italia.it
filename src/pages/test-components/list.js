@@ -1,8 +1,8 @@
 import * as React from "react"
-import Template from "../templates/default"
-import {Seo} from "../components/seo/seo"
-import Pagedata from "../data/pages/list.yaml"
-import List from "../components/list/list"
+import Template from "../../templates/default"
+import {Seo} from "../../components/seo/seo"
+import List from "../../components/list/list"
+import Pagedata from "./list.yaml"
 
 const Buttons = () => {
 	return (

@@ -1,11 +1,11 @@
 import * as React from "react"
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from "react-markdown"
 import SimpleCta from "../simple-cta/simple-cta"
 import Chip from "../chip/chip"
 import Dropdown from "../dropdown/dropdown"
 import Tag from "../tag/tag"
 import Icon from "../icon/icon"
-import './card.scss'
+import "./card.scss"
 
 const Card =(
 	{

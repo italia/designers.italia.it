@@ -1,8 +1,8 @@
 import * as React from "react"
-import Template from "../templates/default"
-import {Seo} from "../components/seo/seo"
-import Pagedata from "../data/pages/cards.yaml"
-import Card from "../components/card/card"
+import Template from "../../templates/default"
+import {Seo} from "../../components/seo/seo"
+import Card from "../../components/card/card"
+import Pagedata from "./cards.yaml"
 
 const Cards = () => {
 	return(

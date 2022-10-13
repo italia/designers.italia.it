@@ -1,9 +1,9 @@
 import * as React from "react"
-import Template from "../templates/default"
-import {Seo} from "../components/seo/seo"
-import Pagedata from "../data/pages/dropdown.yaml"
-import Dropdown from "../components/dropdown/dropdown"
-import List from "../components/list/list"
+import Template from "../../templates/default"
+import {Seo} from "../../components/seo/seo"
+import Dropdown from "../../components/dropdown/dropdown"
+import List from "../../components/list/list"
+import Pagedata from "./dropdown.yaml"
 
 const Buttons = () => {
 	return (

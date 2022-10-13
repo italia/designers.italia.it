@@ -1,5 +1,5 @@
 import React from "react"
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from "react-markdown"
 import "./footer-brand.scss"
 
 const FooterBrand = ({

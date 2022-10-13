@@ -1,8 +1,8 @@
 import * as React from "react"
-import Template from "../templates/default"
-import {Seo} from "../components/seo/seo"
-import Kangaroo from "../components/kangaroo/kangaroo"
-import Pagedata from "../data/pages/kangaroo.yaml"
+import Template from "../../templates/default"
+import {Seo} from "../../components/seo/seo"
+import Kangaroo from "../../components/kangaroo/kangaroo"
+import Pagedata from "./kangaroo.yaml"
 
 const Kangaroos = () => {
 	return(
@@ -18,7 +18,7 @@ const Kangaroos = () => {
 					</div>
 				</div>
 			</div>
-			
+
 		</Template>
 	)
 }

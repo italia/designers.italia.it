@@ -3,7 +3,7 @@ import './highlight.scss'
 import Button from "../button/button"
 import Icon from "../icon/icon"
 import Numbers from "../numbers/numbers"
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from "react-markdown"
 
 const Highlight = (
 	{

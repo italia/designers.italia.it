@@ -1,6 +1,6 @@
 import * as React from "react"
-import './hero.scss'
-import ReactMarkdown from 'react-markdown'
+import "./hero.scss"
+import ReactMarkdown from "react-markdown"
 import Breadcrumbs from "../breadcrumbs/breadcrumbs"
 import Dropdown from "../dropdown/dropdown"
 import Icon from "../icon/icon"
