@@ -10,11 +10,12 @@ import HeaderSlim from "../components/header-slim/header-slim"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
+import LastUpdate from "../components/last-update/last-update"
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const MainTemplate = ({children,page}) => {
+const MainTemplate = ({children,page,lastUpdate}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
@@ -27,6 +28,7 @@ const MainTemplate = ({children,page}) => {
 		</Header>
       <main id="main">
         {children}
+        {lastUpdate ? <LastUpdate {...lastUpdate} /> : null }
       </main>
       <Footer {...FooterData.footer}>
       </Footer>

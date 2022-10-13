@@ -15,7 +15,7 @@ const NavPosition = ({
       return(
           <div className="d-inline-flex align-items-center me-5 mb-3 small w-auto">
             <Icon {...item.icon}/>
-            <span className="text-uppercase text-secondary fw-bold me-3">{item.title}</span>
+            <span className="text-uppercase text-secondary me-3"><strong>{item.title}</strong></span>
             <a href={item.url}>{item.label}</a>
           </div>
       )

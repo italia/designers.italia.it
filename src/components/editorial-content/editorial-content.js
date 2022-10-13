@@ -55,7 +55,7 @@ const EditorialContent = ({
                 {title ? <HLevel id={id} className="mb-4">{title}</HLevel> : null}
                 <ReactMarkdown>{text}</ReactMarkdown>
 
-                {moreButton ? <a href="#" role="button" class="read-more mt-3 mb-4 d-inline-flex align-items-center fw-bold text-decoration-none" data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'} aria-expanded="false" aria-controls={id+'ReadMore'}>
+                {moreButton ? <a href="#" role="button" class="read-more mt-3 mb-4 d-inline-flex align-items-center text-decoration-none" data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'} aria-expanded="false" aria-controls={id+'ReadMore'}>
                   <span>Leggi di più</span>
                   <Icon {...icon}/>
                 </a> : null}

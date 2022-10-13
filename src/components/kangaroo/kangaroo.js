@@ -18,7 +18,7 @@ const Kangaroo = ({
 			<div className="kangarro-wrapper py-4 d-lg-flex justify-content-between align-items-center">
 				<div className="pills-wrapper d-md-flex align-items-center">
 					{title &&
-						<div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0">
+						<div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase">
 							<Icon {...icon} addonClasses="me-2"></Icon>
 							<span className={colorStyle}>{title}</span>
 						</div>

@@ -61,7 +61,7 @@ const Hero =({
                       <div className="bottom-text">
                         {pretext && <div className="pre-text">
                           {pretext.icon && <Icon {...pretext.icon} addonClasses="me-2"></Icon>}
-                          <span>{pretext.text}</span>
+                          <span className="text-uppercase">{pretext.text}</span>
                         </div>}
                         {text && <ReactMarkdown>{text}</ReactMarkdown>}
                       </div>

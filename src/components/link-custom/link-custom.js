@@ -24,7 +24,7 @@ const LinkCustom = ({
     >
       {icon ? <Icon {...icon}/> : ''}
       {image ? <img src={image} aria-hidden="true" className={imageStyles}/> : ''}
-      <strong className={labelSmall ? 'small fw-bold' : 'fw-bold'}>{label}</strong>
+      <strong className={labelSmall ? 'small' : null}>{label}</strong>
     </a>
   )
 }

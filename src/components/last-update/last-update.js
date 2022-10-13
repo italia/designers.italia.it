@@ -9,7 +9,7 @@ const LastUpdate = ({
   edit
 }) => {
   return (
-    <div className="last-update py-5">
+    <div className="last-update py-5 py-lg-7">
       <div className="container-xxl">
         <div className="row">
           <div className="col col-md-10 offset-md-1">
@@ -18,7 +18,7 @@ const LastUpdate = ({
                 <a
                   href={licence.url}
                   target={licence.blank ? "_blank" : undefined}
-                  className="fw-bolder d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5">
+                  className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5">
                   <strong className="d-inline-block me-2">{licence.label} <Icon {...licence.icon} /></strong>
                 </a>
               </small>
@@ -28,7 +28,7 @@ const LastUpdate = ({
                 <a
                   href={edit.url}
                   target={edit.blank ? "_blank" : undefined}
-                  className="fw-bolder d-inline-block text-decoration-none">
+                  className="d-inline-block text-decoration-none">
                   <strong className="d-inline-block me-2">{edit.label}</strong><Icon {...edit.icon} />
                 </a>
               </small>
