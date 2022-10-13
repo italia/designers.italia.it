@@ -1,0 +1,18 @@
+.editorial-content {
+  .read-more {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.8888888888888888rem;
+    .icon {
+      transition: transform 0.3s;
+    }
+    &[aria-expanded="true"] {
+      .icon {
+        transform: scaleY(-1);
+      }
+    }
+  }
+  p, ul, ol {
+    font-family: "Lora",Georgia,serif;
+  }
+}

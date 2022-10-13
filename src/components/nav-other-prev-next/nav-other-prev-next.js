@@ -5,20 +5,6 @@ const NavOtherPrevNext = ({
   prev,
   next
 }) => {
-  let iconPrev = ({
-    icon: "sprites.svg#it-arrow-left",
-    size: "sm",
-    align : "middle",
-    color :"primary",
-    hidden: true,
-  })
-  let iconNext = {
-    icon: "sprites.svg#it-arrow-right",
-    size: "sm",
-    align : "middle",
-    color :"primary",
-    hidden: true,
-  }
   prev.imageClass = "mx-3"
   next.imageClass = "mx-3"
   return (

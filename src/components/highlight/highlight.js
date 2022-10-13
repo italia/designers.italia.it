@@ -13,7 +13,7 @@ const Highlight = (
 		icon,
 		big,
 		title,
-    	numbers,
+    numbers,
 		headingLevel,
 		subtitle,
 		text,

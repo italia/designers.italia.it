@@ -48,7 +48,7 @@ const HeaderCenter = ({data}) => {
           <div className="col-12">
             <div className="it-header-center-content-wrapper">
               <div className="it-brand-wrapper">
-                <a href="#">
+                <a href="/">
                   <Icon icon="sprites.svg#it-designers-italia" hidden/>
                   <div className="it-brand-text">
                     <div className="it-brand-title">{data.title}</div>
