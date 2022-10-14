@@ -1,20 +1,22 @@
 import * as React from "react"
 import './section-editorial.scss'
 import Highlight from "../highlight/highlight"
+import Card from "../card/card"
+import Kangaroo from "../kangaroo/kangaroo"
 
 const SectionEditorial = ({
   title,
   components,
 }) => {
 
-  let SwitchComponents;
+  const SwitchComponents = {
+    highlight : Highlight,
+    card : Card,
+    kangaroo : Kangaroo
+  };
   return(
     <section className="section-editorial">
         {components.map((item,index) => {
-          SwitchComponents = {
-            highlight : Highlight
-          }
-          console.log(item.name)
           const Switcher = SwitchComponents[item.name]
           return(
             <Switcher {...item}/>
