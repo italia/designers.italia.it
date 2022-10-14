@@ -10,9 +10,9 @@ const SectionEditorial = ({
 }) => {
 
   const SwitchComponents = {
-    Highlight : Highlight,
-    Card : Card,
-    Kangaroo : Kangaroo
+    Highlight,
+    Card,
+    Kangaroo
   };
   return(
     <section className="section-editorial">
