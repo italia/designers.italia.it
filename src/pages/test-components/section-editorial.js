@@ -2,17 +2,18 @@ import * as React from "react"
 import Template from "../../templates/default"
 import {Seo} from "../../components/seo/seo"
 import Pagedata from "./section-editorial.yaml"
+import SectionEditorial from "../../components/section-editorial/section-editorial"
 
 
-const SectionEditorial = () => {
+const SectionEditorialPage = () => {
 	return (
 	  <Template>
-
+      <SectionEditorial {...Pagedata.components.sectionEditorial}></SectionEditorial>
 	  </Template>
 	)
 }
 
-export default SectionEditorial
+export default SectionEditorialPage
 
 export const Head = () => (
 	<Seo
