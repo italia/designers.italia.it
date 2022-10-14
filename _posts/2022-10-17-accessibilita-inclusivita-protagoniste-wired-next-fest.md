@@ -18,7 +18,7 @@ categories:
 ---
 
 <!-- MORE -->
-La settimana scorsa al [Wired Next Fest a Milano](https://designers.italia.it/notizie/designers-italia-wired-next-fest/) abbiamo avuto l’occasione di parlare di **progettazione digitale inclusiva.** Lo abbiamo fatto non in astratto o a distanza, ma nella pratica, con le **persone.** 
+La settimana scorsa al **Wired Next Fest a Milano** abbiamo avuto l’occasione di parlare di **progettazione digitale inclusiva.** Lo abbiamo fatto non in astratto o a distanza, ma nella pratica, con le **persone.** 
 
 L’interessante [chiacchierata con Veronica Yoko Plebani](https://www.wired.it/article/wired-next-fest-veronica-yoko-plebani-marco-maria-pedrazzo-inclusione/) ci ha ricordato ancora una volta quanto sia importante il lavoro che stiamo portando avanti nella sensibilizzazione delle istituzioni e degli enti pubblici alla progettazione di servizi pubblici inclusivi e accessibili ([guarda il video dell’incontro](https://www.linkedin.com/video/live/urn:li:ugcPost:6984180474311028736/)). Come abbiamo già scritto in passato, “**progettare interfacce è un atto di responsabilità**”: significa decidere continuamente chi includere, o escludere, dall’esperienza d’uso di un servizio, in base alle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o permanenti. Nel caso di servizi pubblici digitali, **tutte le cittadine e i cittadini devono poter avere un’esperienza d’uso piena e soddisfacente**, semplice e chiara, senza discriminazione e senza lasciare indietro nessuno (ne abbiamo già parlato in [un articolo](https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099) sul nostro canale Medium).
 
