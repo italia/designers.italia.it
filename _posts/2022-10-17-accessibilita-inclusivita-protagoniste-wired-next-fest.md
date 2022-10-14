@@ -5,7 +5,7 @@ excerpt_separator: <!-- MORE -->
 title: "Accessibilità e inclusività dei servizi pubblici digitali protagoniste al Wired Next Fest"
 subtitle: "Ecco il racconto di cosa abbiamo fatto e imparato a Milano lo scorso 7 e 8 ottobre
 "
-date: 2022-10-17 09:00:00 +0200
+date: 2022-10-14 09:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
