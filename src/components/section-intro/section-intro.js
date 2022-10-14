@@ -1,11 +1,9 @@
 import * as React from "react"
 import ReactMarkdown from "react-markdown"
-import "./editorial-content.scss"
+import "./section-intro.scss"
 import Icon from "../icon/icon"
 
-const EditorialContent = ({
-  fullWidth,
-  section,
+const SectionIntro = ({
   id,
   background,
   title,
@@ -13,21 +11,10 @@ const EditorialContent = ({
   text,
   moreButton,
   moreText,
-  paddingTop,
-  paddingBottom
 }) => {
 
-  let CustomTag
-
-  section ? CustomTag = 'section' : CustomTag = "div"
-
-  let styles = 'editorial-content'
+  let styles = 'section-intro py-5 '
 	+ `${background ? ' bg-'+background : ''}`
-  + `${paddingTop ? ' pt-'+paddingTop : ''}`
-  + `${paddingBottom ? ' pb-'+paddingBottom : ''}`
-
-  let columnStyles = 'col'
-	+ `${fullWidth ? '' : ' col-md-10 offset-md-1 col-lg-7'}`
 
   //heading level
 	let HLevel
@@ -47,10 +34,10 @@ const EditorialContent = ({
   })
 
   return (
-    <CustomTag className={styles} aria-labelledby={id}>
+    <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         <div className="row">
-          <div className={columnStyles}>
+          <div className='col col-md-10 offset-md-1 col-lg-7'>
               <div className="px-3 px-lg-0">
                 {title ? <HLevel id={id} className="mb-4">{title}</HLevel> : null}
                 <ReactMarkdown>{text}</ReactMarkdown>
@@ -66,8 +53,8 @@ const EditorialContent = ({
           </div>
         </div>
       </div>
-    </CustomTag>
+    </section>
   )
 }
 
-export default EditorialContent
+export default SectionIntro

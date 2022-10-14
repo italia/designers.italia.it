@@ -5,7 +5,8 @@ const Header = ({ data, children }) => {
   const styles = "it-header-wrapper"
     + `${data.sticky ? ' it-header-sticky' : ''}`
     + `${data.shadow ? ' shadow' : ''}`
-  
+    + `${data.border ? ' border-bottom border-white' : ''}`
+
   return (
     <header
       className={styles}
