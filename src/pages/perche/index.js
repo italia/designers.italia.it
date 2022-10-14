@@ -5,6 +5,7 @@ import Hero from "../../components/hero/hero"
 import SectionIntro from "../../components/section-intro/section-intro"
 import Highlight from "../../components/highlight/highlight"
 import Pagedata from "../../data/pages/perche/index.yaml"
+import ImageIcons from "../../components/image-icons/image-icons"
 
 const Perche = () => {
   return(
@@ -18,6 +19,8 @@ const Perche = () => {
         <Highlight key={"hl-"+index} {...hl}/>
       )
     })}
+
+    <ImageIcons {...Pagedata.components.imageIcons}/>
 
     </Template>
   )
