@@ -41,7 +41,7 @@ const Highlight = (
 	if (buttons) {
 		ButtonsRender = buttons.map((btn,index) => {
 			return(
-			   <Button key={"button-"+index} {...btn}/>
+			   <Button key={"h-button-"+index} {...btn}/>
 			)
 		})
 	}
