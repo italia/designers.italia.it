@@ -13,4 +13,8 @@ module.exports = {
     themeColor: "#0066cc"
   },
   plugins: [`gatsby-plugin-sass`],
+  pathPrefix: '/',
+  flags: {
+    DEV_SSR: true
+  },
 }

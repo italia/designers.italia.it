@@ -9,7 +9,7 @@ import Megamenu from "../megamenu/megamenu"
 
 const HeaderNav = ({data,page}) => {
 	return(
-	<div className={"it-header-navbar-wrapper" + ' '+data.theme} id={data.id}>
+	<div className={`it-header-navbar-wrapper {data.theme}`} id={data.id}>
 		<div className="container-xxl">
 			<div className="row">
 				<div className="col-12">

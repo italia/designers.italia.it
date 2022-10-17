@@ -1,5 +1,7 @@
 import * as React from "react"
 import Icon from "../icon/icon"
+import { useEffect } from "react";
+import {Dropdown} from "bootstrap-italia"
 
 const HeaderMenuLink = ({
 	isDropDown,
@@ -9,10 +11,14 @@ const HeaderMenuLink = ({
 	page
 }) => {
 
+  useEffect(() => {
+    const dropDown = new Dropdown(document.getElementById(idMegamenu), {})
+  });
+
 	const styles = 'nav-link'
 		+ `${isDropDown ? ' dropdown-toggle' : ''}`
-		+ `${page==label ? ' active' : ''}`
-	
+		+ `${page===label ? ' active' : ''}`
+
 	function icon(boolean){
 		if (boolean) {
 			return (
