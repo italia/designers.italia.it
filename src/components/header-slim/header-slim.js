@@ -22,7 +22,7 @@ const HeaderSlim = ({data}) => {
 									<List id={data.nav.id} isMenu collapsable>
 										{data.nav.items.map((value,index)=>{
 											return(
-												<ListItem key={'item-' + index} url={value.url} active={value.active}>{value.title}</ListItem>
+												<ListItem key={'list-item-' + index} url={value.url} active={value.active}>{value.title}</ListItem>
 											)
 										})}
 									</List>

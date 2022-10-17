@@ -9,7 +9,6 @@ const Megamenu = ({
 	heading,
 	cols
 }) => {
-	console.log(cols)
 	return(
 		<div className="megamenu">
 			<div className="row">

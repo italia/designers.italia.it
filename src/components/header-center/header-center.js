@@ -28,7 +28,7 @@ const HeaderCenter = ({data}) => {
           <ul>
             {data.socials.items.map((value,index)=>{
               return(
-                <li key={"item-"+index}>
+                <li key={"social-item-"+index}>
                   <a href={value.url} aria-label={value.title} target="_blank">
                     <Icon icon={value.icon}/>
                   </a>

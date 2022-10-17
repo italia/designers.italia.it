@@ -24,7 +24,7 @@ const Footer = ({
           {footerMain.title &&
             <div className="row clearfix pb-4">
               <div className="col-12">
-              <h3 className="footer-title">{footerMain.title}</h3>
+                <h3 className="footer-title">{footerMain.title}</h3>
               </div>
             </div>
           }
@@ -33,7 +33,7 @@ const Footer = ({
 					<div className="row">
             {footerMain.cols.map((value,index)=>{
               return(
-              <div key={"item-"+index} className="col-lg-3 col-md-6 col-lg-3 col-sm-6 pb-2 pb-lg-0">
+              <div key={"item-"+index} className="col-12 col-md-6 col-lg-3 col-sm-6 pb-mb-2 pb-lg-0">
                 <List {...value}>
                 {value.items.map((item,index)=>{
                   return (
@@ -49,7 +49,7 @@ const Footer = ({
 				<section className="footer-utilities mt-5 pt-5">
           <div className="row">
             {footerMain.social &&
-              <div className="col-12 col-md-6 col-lg-3">
+              <div className="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
                 <h3 className="footer-title pb-4">{footerMain.social.title}</h3>
                 {footerMain.social.buttons.map((button,index)=>{
                   return (
@@ -59,7 +59,7 @@ const Footer = ({
               </div>
             }
             {footerMain.social &&
-              <div className="col-12 col-md-6 col-lg-3">
+              <div className="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
                 <h3 className="footer-title pb-4">{footerMain.community.title}</h3>
                 {footerMain.community.buttons.map((button,index)=>{
                   return (

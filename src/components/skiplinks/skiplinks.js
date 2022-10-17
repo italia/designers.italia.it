@@ -9,7 +9,7 @@ const Skiplinks = (
   if (data) {
     skiplinksItems = data.map((item,index) => {
       return(
-        <a className="visually-hidden-focusable" key={"link-"+index} href={item.url}>
+        <a className="visually-hidden-focusable" key={"skiplink-"+index} href={item.url}>
           {item.label}
         </a>
       )
