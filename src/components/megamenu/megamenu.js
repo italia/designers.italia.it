@@ -45,8 +45,8 @@ const Megamenu = ({
 						<div className="row">
 							{cols.map((col,index)=>{
 								return(
-									<div className="col-12 col-lg-6">
-										<List key={"megalist-"+index} {...col}></List>
+									<div  key={"megalist-"+index} className="col-12 col-lg-6">
+										<List {...col}></List>
 									</div>
 								)
 							})}
