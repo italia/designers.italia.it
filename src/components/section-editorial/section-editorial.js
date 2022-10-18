@@ -19,7 +19,7 @@ const SectionEditorial = ({
         {components.map((item,index) => {
           const Switcher = SwitchComponents[item.name]
           return(
-            <Switcher {...item}/>
+            <Switcher key={"switcher-"+index} {...item}/>
           )
         })}
     </section>

@@ -19,14 +19,14 @@ const List = ({
 	const styles = `${isMenu ? 'link-list-wrapper' : 'it-list-wrapper'}`
 		+ `${collapsable ? ' collapse' : ''}`
 		+ `${customStyle ? ' '+customStyle : ''}`
-	
+
 	const ulStyles = `${isMenu ? 'link-list' : 'it-list'}`
 		+ `${customStyleUl ? ' '+customStyleUl : ''}`
 
-	
+
 	if (listItems) {
-		children = listItems.map(listitems => {
-			return <ListItem {...listitems} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList}></ListItem>
+		children = listItems.map((listitems,index) => {
+			return <ListItem {...listitems} key={"z-list-"+index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList}></ListItem>
 		})
 	}
 

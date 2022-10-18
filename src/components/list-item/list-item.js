@@ -4,19 +4,19 @@ import Avatar from "../avatar/avatar"
 
 const ListItem = ({
 	url,             //link of item
-	isDropdown,      //true / false 
+	isDropdown,      //true / false
 	children,        //usually label of link
 	active,          //state of the link
 	disabled,        //disabled state
 	label,           //text
 	visuallyHidden,  //screen reader active state
-	divider, 
+	divider,
 	textLarge,		  //bigger text
 	ariaLabel,		  //screen reader message
-	icon,				  
+	icon,
 	iconRight,       //icon on right
 	iconLeft,		  //icon on left
-	simpleList, 
+	simpleList,
 	avatar,
 	img,
 	alt,
@@ -53,7 +53,7 @@ const ListItem = ({
 	if(label){
 		children = label
 	}
-	
+
 	//-avatar
 	var avatarRendered
 	if(avatar){
@@ -69,13 +69,13 @@ const ListItem = ({
 	if (active) {
 		isActive = <span className="visually-hidden">{visuallyHidden}</span>
 	}
-	
+
 	//multiple actions right
 	var actionsRendered
 	var icons
 	if(actions) {
-		icons =  actions.map(icons => {
-			return <a href={icons.url} aria-label={icons.ariaLabel}><Icon {...icons}></Icon></a>
+		icons =  actions.map((icons,index) => {
+			return <a href={icons.url} aria-label={icons.ariaLabel} key={"iconsation-"+index} ><Icon {...icons}></Icon></a>
 		})
 		actionsRendered = <span className="it-multiple">{icons}</span>
 	}
@@ -128,7 +128,7 @@ const ListItem = ({
 				{!metadataActionsRendered ? metadataRendered : ''}
 				{metadataActionsRendered}
 			</div>
-		</a> 
+		</a>
 	}
 	//- se è un divider
 	if (divider) {

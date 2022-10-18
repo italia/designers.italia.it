@@ -27,11 +27,11 @@ const HeaderNav = ({data,page}) => {
 							<HeaderMenu>
 								{data.nav.voices.map((value,index)=>{
 									return(
-										<HeaderMenuItem key={"item-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
-											<HeaderMenuLink key={"item-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
-											<DropdownMenu idMegamenu={value.idMegamenu}>
+										<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
+											<HeaderMenuLink key={"item-menu-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
+											<DropdownMenu key={"dropDown-"+index} idMegamenu={value.idMegamenu}>
 												{value.megamenu &&
-													<Megamenu {...value.megamenu}></Megamenu>
+													<Megamenu key={"mega-"+index} {...value.megamenu}></Megamenu>
 												}
 											</DropdownMenu>
 										</HeaderMenuItem>

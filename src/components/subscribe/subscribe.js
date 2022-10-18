@@ -16,7 +16,7 @@ const Subscribe =({
 		<div className="subscribe">
 			<form id={idForm} action={action}>
 				<div className="form-group mb-0 me-3">
-					<label for={id} className={labelStyle}>{label}</label>
+					<label htmlFor={id} className={labelStyle}>{label}</label>
 					<input type="email" className="form-control" id={id}></input>
 				</div>
 				<Button {...button}></Button>

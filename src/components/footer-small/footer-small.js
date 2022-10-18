@@ -12,7 +12,7 @@ const FooterSmall = ({
         <ul className="it-footer-small-prints-list list-inline mb-0 d-flex flex-column flex-md-row">
           {items.map((value,index)=>{
             return(
-              <li key={"item-"+index} className="list-inline-item" >
+              <li key={"foot-item-"+index} className="list-inline-item" >
                 <a
                   href={value.url}
                   target={value.blank ? "_blank" : undefined}
