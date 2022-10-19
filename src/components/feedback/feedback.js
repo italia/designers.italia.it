@@ -54,7 +54,7 @@ const Feedback = ({
                     <Button {...introBtn2}/>
                   </div>
                   {/* ----------- feedback step 1 ----------- */}
-                  <div className="step" id="feedbackStep1">
+                  <div className="step d-none" id="feedbackStep1">
                     <h2 className="mb-3">Grazie per la tua risposta! Aiutaci a migliorare.</h2>
                     <form>
                       <fieldset>
@@ -89,7 +89,7 @@ const Feedback = ({
                     </form>
                   </div>
                   {/* ----------- feedback step 2 ----------- */}
-                  <div className="step" id="feedbackStep2">
+                  <div className="step d-none" id="feedbackStep2">
                     <h2 className="mb-3">Ancora una curiosità</h2>
                     <form>
                       <fieldset>
@@ -126,7 +126,7 @@ const Feedback = ({
                       <Button {...btnFw}/>
                       <Button {...btnBk}/>
                       {/* ----------- feedback step 3 ----------- */}
-                      <div className="step" id="feedbackStep3">
+                      <div className="step d-none" id="feedbackStep3">
                         <h2 className="mb-4">Il tuo parere è importante per noi, se hai ancora tempo</h2>
                         <fieldset>
                           <legend className="d-flex mb-5 px-0 w-100"><span className="w-75">Come possiamo migliorare questa pagina?</span><span className="w-25 text-end">3/3</span></legend>
@@ -140,7 +140,7 @@ const Feedback = ({
                         <Button {...btnBk}/>
                       </div>
                       {/* ----------- feedback end ----------- */}
-                      <div className="step" id="feedbackEnd">
+                      <div className="step d-none" id="feedbackEnd">
                         <h2 className="mb-3">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
                         <p>Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia</p>
                         <p className="mb-5"><a href="#">Leggi l’informativa sulla privacy</a></p>
