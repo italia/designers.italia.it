@@ -56,10 +56,10 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
-        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html"
+        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html"
           title: Vai ai requisiti per il sito
           external: true
-        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html"
+        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-servizi-digitali.html"
           title: Vai ai requisiti per i servizi
           external: true
 
@@ -100,8 +100,8 @@ coreContent:
   rightColumnItems:
     - title: DOCUMENTI UTILI
       items:
-        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
-        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
   cta:
     text: "Hai bisogno di chiarimenti o supporto tecnico? Consulta le domande frequenti o scrivici"
     buttonTitle: "Vai al supporto di PA digitale 2026"
@@ -122,7 +122,7 @@ coreContent:
           - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/pencil.svg"
             description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale
-            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Modello di analisi dei contenuti
                 link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
@@ -176,8 +176,8 @@ serviziContent:
   rightColumnItems:
     - title: DOCUMENTI UTILI
       items:
-        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
-        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' target="_blank" >La conformità ai servizi</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-servizi-digitali.html' target="_blank" >La conformità ai servizi</a>
   cardsTitle: "QUALI SONO"
   cards:
     - title: "Vantaggi economici"
@@ -294,7 +294,7 @@ serviziContent:
         resources:
           - title: Checklist delle attività progettuali
             description: Usa la checklist per tenere traccia delle attività chiave da svolgere
-            link: <a href='https://docs.google.com/document/d/1E76BHQ5BnyopPU8_7i6VLfeteGxT1CttHnnuM3g5xb8/edit#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.google.com/document/d/1DqLvGOP4QNkRXG0bObjTOxxUIOJ3tR3Obbq4FruWpys/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             icon: "/assets/icons/external-link.svg"
           - title: Tipologie di flussi di servizio
             description: Individua il flusso di interazione in cui rientra il servizio scelto e da quali componenti è composto
@@ -303,7 +303,7 @@ serviziContent:
           - title: Criteri di conformità
             description: Tutti i requisiti minimi da rispettare per l’adesione al modello e le raccomandazioni aggiuntive per migliorare l’esperienza utente 
             icon: "/assets/icons/external-link.svg"
-            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-servizi-digitali.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Catalogo del riuso
             description: Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni
             icon: "/assets/icons/external-link.svg"

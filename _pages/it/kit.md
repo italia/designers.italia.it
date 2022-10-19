@@ -28,7 +28,7 @@ fasi:
 - slug: comprendere
   title: Comprendere
   subtitle: "Comprendi il contesto d'uso del servizio: chiarisci il contesto di fruizione con l'analisi e la ricerca utente"  
-  description: "<p>Per chiarire il perimetro entro il quale si colloca il servizio digitale, i processi e i ruoli dei diversi attori coinvolti, puoi fare riferimento alle risorse operative di questa fase. I kit ti forniscono strumenti pratici per organizzare varie attività di ricerca utente, raccogliere dati utili a comprendere il quadro di utilizzo del servizio e il punto dei vista dei suoi fruitori.</p>"
+  description: "<p>Per chiarire il perimetro entro il quale si colloca il servizio digitale, i processi e i ruoli dei diversi attori coinvolti, puoi fare riferimento alle risorse operative di questa fase. I kit ti forniscono strumenti pratici per organizzare varie attività di ricerca utente, raccogliere dati utili a comprendere il quadro di utilizzo del servizio e il punto di vista dei suoi fruitori.</p>"
   thumbLarge: '/assets/icons/super_breadcrumb/comprendere-large.svg'
   thumbSmall: '/assets/icons/super_breadcrumb/comprendere-large.svg'
 - slug: progettare
