@@ -172,7 +172,7 @@ coreContent:
           - title: Documentazione tecnica e file di installazione
             otherResources:
               - description: Scopri di più sull’app, controlla i requisiti tecnici e segui le istruzioni per l'installazione  
-                link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                link: <a href='https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/it/versione-attuale/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
               - description: Scarica l’app adatta al tuo sistema operativo dal repository GitHub 
                 link: <a href='https://github.com/italia/pa-website-validator' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
