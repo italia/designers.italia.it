@@ -165,7 +165,17 @@ coreContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
-
+      - title: App di valutazione dell'adesione al modello
+        text: "<p>Un applicativo desktop a supporto degli sviluppatori che aiuta a valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità della misura <em>1.4.1 Esperienza del cittadino nei servizi pubblici digitali</em>.</p> <p>Se ne raccomanda l’uso in tutte le fasi di sviluppo del sito per individuare prontamente eventuali aspetti di miglioramento. L’app è in versione beta e quindi soggetta a revisioni e perfezionamenti.</p>"
+        resources:
+          - title: Documentazione tecnica e file di installazione
+            icon: "/assets/icons/pencil.svg"
+            description: Scopri di più sull’app, controlla i requisiti tecnici e segui le istruzioni per l'installazione 
+            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Documentazione tecnica e file di installazione
+            icon: "/assets/icons/pencil.svg"
+            description: Scarica l’app adatta al tuo sistema operativo dal repository GitHub 
+            link: <a href='https://github.com/italia/pa-website-validator' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
 serviziContent:
   title: I nuovi flussi di servizi digitali per il cittadino
   subtitle: I principali servizi comunali a portata di clic
