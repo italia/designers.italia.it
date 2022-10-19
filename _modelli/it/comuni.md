@@ -170,13 +170,13 @@ coreContent:
         img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
         resources:
           - title: Documentazione tecnica e file di installazione
-            icon: "/assets/icons/external-link.svg"
-            description: Scopri di più sull’app, controlla i requisiti tecnici e segui le istruzioni per l'installazione 
-            link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
-          - title: Documentazione tecnica e file di installazione
-            icon: "/assets/icons/external-link.svg"
-            description: Scarica l’app adatta al tuo sistema operativo dal repository GitHub 
-            link: <a href='https://github.com/italia/pa-website-validator' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            otherResources:
+              - description: Scopri di più sull’app, controlla i requisiti tecnici e segui le istruzioni per l'installazione  
+                link: <a href='#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Scarica l’app adatta al tuo sistema operativo dal repository GitHub 
+                link: <a href='https://github.com/italia/pa-website-validator' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
 serviziContent:
   title: I nuovi flussi di servizi digitali per il cittadino
   subtitle: I principali servizi comunali a portata di clic
