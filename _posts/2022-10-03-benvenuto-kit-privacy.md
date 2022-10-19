@@ -2,8 +2,8 @@
 layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
-title: "Benvenuto Kit Privacy"
-subtitle: "Rispetta la privacy dei tuoi utenti quando realizzi un servizio digitale"
+title: "Benvenuto, Kit Privacy"
+subtitle: "Rispetta la privacy delle persone quando realizzi un servizio digitale"
 date: 2022-10-19 10:00:00 +0200
 pinned: false
 nodate: false
