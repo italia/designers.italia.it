@@ -18,7 +18,7 @@ textChunk1:
   title: A COSA SERVE
   text: "<p>Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponda in maniera adeguata ai bisogni degli utenti.</p>
   <p>L’analisi dei dati di traffico web (web analytics) risponde proprio a questa esigenza e le piattaforme per <strong>raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito</strong>. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le <strong>decisioni che riguardano design e re-design dei servizi</strong>, in ottica <em>data-driven</em>.</p>
-  <p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI).</p>"
+  <p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo piattaforme di web analytics di tipo open source. </p>"
 
 guideLinesChunk:
   title: MANUALE OPERATIVO DI DESIGN
@@ -40,13 +40,13 @@ footerItems:
 superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
-    - title: Usa Web Analytics Italia
+    - title: Monitora i dati di traffico della tua soluzione digitale
       text: "<p>La piattaforma Web Analytics Italia (WAI) è una soluzione open source creata ad hoc dall'Agenzia per l'Italia Digitale per la raccolta e l'analisi dei dati di traffico dei siti web delle amministrazioni pubbliche.</p> <p>WAI ha la finalità di aiutare gli operatori della PA a migliorare l'usabilità dei <em>touchpoint</em> digitali grazie al monitoraggio continuo, l'elaborazione e la condivisione dei dati statistici di analisi web dei siti web aderenti al progetto, in completa aderenza alla normativa GDPR.</p>"
       img: "/assets/icons/kit/kit_analytics_usa.svg"
       resources:
-        - title: La piattaforma Web Analytics Italia
+        - title: Le piattaforme open source
           icon: "/assets/icons/pencil.svg"
-          description: Un servizio open source dedicato alla raccolta e all'analisi dei dati di traffico dei servizi digitali della PA
+          description: "Scopri la lista di alcuni dei servizi open source dedicati alla raccolta e all'analisi dei dati di traffico di siti e servizi digitali."
           link: <a href='https://webanalytics.italia.it/' aria-label="Vai alla piattaforma WAI (link esterno)">Vai alla piattaforma</a>
           otherResources:
             - description: Guida utente WAI
