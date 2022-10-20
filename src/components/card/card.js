@@ -24,14 +24,19 @@ const Card =(
 		externalLink,
 		author,
 		imgPlaceholder,
-		iconImg
+		iconImg,
+    fullHeight,
+    rounded
 	}
 )=>{
 	let styles = 'di-card d-md-flex flex-md-column w-100'
+    + `${fullHeight ? ' h-100' : ''}`
+    + `${rounded ? ' rounded' : ''}`
 	let imgStyle = 'img-wrapper ratio'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 		+ `${imgPlaceholder ? ' img-placeholder' : ''}`
 		+ `${iconImg ? ' icon-img' : ''}`
+
 
 	//heading level
 	let HLevel
@@ -54,7 +59,7 @@ const Card =(
 					<Icon {...iconOverlay}></Icon>
 				</div>}
 			</div>}
-			<div className="di-card-body p-4 d-flex flex-md-column justify-content-between">
+			<div className="di-card-body p-4 d-md-flex flex-md-column justify-content-between">
 				<div className="text-zone">
 					{HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
 					{text && <ReactMarkdown>{text}</ReactMarkdown>}

@@ -36,7 +36,7 @@ const Hero =({
     SubtitleLevel = `h2`
 	}
 
-  let imgStyle = 'img-wrapper ratio'
+  let imgStyle = 'img-wrapper ratio mb-3 mb-lg-auto'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 
 
@@ -49,7 +49,7 @@ const Hero =({
             <div className="col-12">
               <div className="hero-top px-3 px-lg-0 px-lg-3 py-3">
                 <Breadcrumbs {...breadcrumbs}></Breadcrumbs>
-                {share  && <Dropdown {...share}></Dropdown>}
+
               </div>
               <div className="hero-main">
                 <div className="row">
@@ -68,10 +68,11 @@ const Hero =({
                     </div>
                   </div>
                   {img &&
-                    <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-md-2 px-lg-2">
+                    <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-md-2 px-lg-2 d-flex flex-column">
                       <div className={imgStyle}>
                         <img src={img} alt={title} />
                       </div>
+                      {share  && <Dropdown {...share}></Dropdown>}
                     </div>
                   }
                 </div>

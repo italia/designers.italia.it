@@ -39,16 +39,20 @@ const SectionIntro = ({
         <div className="row">
           <div className='col col-md-10 offset-md-1 col-lg-7'>
               <div className="px-3 px-lg-0">
-                {title ? <HLevel id={id} className="mb-4">{title}</HLevel> : null}
+                {title && <HLevel id={id} className="mb-4">{title}</HLevel>}
                 <ReactMarkdown>{text}</ReactMarkdown>
 
-                {moreButton ? <a href="#" role="button" class="read-more mt-3 mb-4 d-inline-flex align-items-center text-decoration-none" data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'} aria-expanded="false" aria-controls={id+'ReadMore'}>
-                  <span>Leggi di più</span>
-                  <Icon {...icon}/>
-                </a> : null}
-                {moreText ? <div class="collapse" id={id+'ReadMore'}>
-                  <ReactMarkdown>{moreText}</ReactMarkdown>
-                </div> : null}
+                {moreButton &&
+                  <a href="#" role="button" class="read-more mt-3 mb-4 d-inline-flex align-items-center text-decoration-none" data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'} aria-expanded="false" aria-controls={id+'ReadMore'}>
+                    <span>Leggi di più</span>
+                    <Icon {...icon}/>
+                  </a>
+                }
+                {moreText &&
+                  <div class="collapse" id={id+'ReadMore'}>
+                    <ReactMarkdown>{moreText}</ReactMarkdown>
+                  </div>
+                }
               </div>
           </div>
         </div>

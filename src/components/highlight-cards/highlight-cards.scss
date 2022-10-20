@@ -1,34 +1,45 @@
+
 @import "../../scss/bootstrap-breakpoints";
 
-.image-icons {
-  .icons{
-    width: 83.3333%;
-    .icon,
-    img {
-      width: 13vw;
-      max-width: 170px;
-      max-height: 170px;
+.highlight-cards {
+  .intro {
+    p {
+      font-size: 1.3333333333333333rem;
+      line-height: 1.2;
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
-    .icon {
-      height: 13vw;
+  }
+  .highlight-cards {
+    .buttons {
+      .btn {
+        margin-right: calc(var(--spacer) * 4);
+        &:last-child {
+          margin-right: 0;
+        }
+      }
     }
   }
 }
 
-//Mobile and tablet only ------------------------------------------------------------------------------------------
-@include media-breakpoint-down(lg) {
-  .image-icons {
-    .container-xxl {
-      padding: 0;
-      .row {
-        margin: 0;
-      }
-      .col {
-        padding: 0;
+//mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+  .highlight-cards {
+    .buttons {
+      .btn {
+        width: 100%;
+        display: block;
+        margin-bottom: calc(var(--spacer) * 4);
+        margin-right: 0;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
   }
 }
+
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
 

@@ -40,7 +40,7 @@ const Feedback = ({
   })
 
   return (
-    <div className="feedback bg-medium py-5 px-3 px-lg-0">
+    <section className="feedback bg-medium py-5 px-3 px-lg-0" aria-labelledby="feedbackSectionTitle">
       <div className="container-xxl">
         <div className="row d-flex justify-content-center">
           <div className="col-12 col-lg-6">
@@ -49,12 +49,12 @@ const Feedback = ({
                 <div className="card-body p-5">
                   {/* ----------- feedback intro  ----------- */}
                   <div className="step" id="feedbackIntro">
-                    <h2 className="mb-4">Ciao, questa pagina è stata utile?</h2>
+                    <h2 className="mb-4" id="feedbackSectionTitle">Ciao, questa pagina è stata utile?</h2>
                     <Button {...introBtn1}/>
                     <Button {...introBtn2}/>
                   </div>
                   {/* ----------- feedback step 1 ----------- */}
-                  <div className="step" id="feedbackStep1">
+                  <div className="step d-none" id="feedbackStep1">
                     <h2 className="mb-3">Grazie per la tua risposta! Aiutaci a migliorare.</h2>
                     <form>
                       <fieldset>
@@ -89,7 +89,7 @@ const Feedback = ({
                     </form>
                   </div>
                   {/* ----------- feedback step 2 ----------- */}
-                  <div className="step" id="feedbackStep2">
+                  <div className="step d-none" id="feedbackStep2">
                     <h2 className="mb-3">Ancora una curiosità</h2>
                     <form>
                       <fieldset>
@@ -125,33 +125,36 @@ const Feedback = ({
                       </fieldset>
                       <Button {...btnFw}/>
                       <Button {...btnBk}/>
-                      {/* ----------- feedback step 3 ----------- */}
-                      <div className="step" id="feedbackStep3">
-                        <h2 className="mb-4">Il tuo parere è importante per noi, se hai ancora tempo</h2>
-                        <fieldset>
-                          <legend className="d-flex mb-5 px-0 w-100"><span className="w-75">Come possiamo migliorare questa pagina?</span><span className="w-25 text-end">3/3</span></legend>
-                          <div class="form-group">
-                            <label for="feedbackText" className="custom-label">Risposta</label>
-                            <input type="text" class="form-control" id="feedbackText" name="feedbackText"/>
-                            <small class="form-control form-text">Hai a disposizione 200 caratteri</small>
-                          </div>
-                        </fieldset>
-                        <Button {...btnFw}/>
-                        <Button {...btnBk}/>
-                      </div>
-                      {/* ----------- feedback end ----------- */}
-                      <div className="step" id="feedbackEnd">
-                        <h2 className="mb-3">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
-                        <p>Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia</p>
-                        <p className="mb-5"><a href="#">Leggi l’informativa sulla privacy</a></p>
-                        <div className="d-md-flex align-items-start">
-                          <div class="form-group w-75 me-5">
-                            <label for="feedbackMail" className="custom-label">Email</label>
-                            <input type="text" class="form-control" id="feedbackMail" name="feedbackMail"/>
-                          </div>
-                          <Button {...btnSubscribe}/>
+                    </form>
+                  </div>
+                  {/* ----------- feedback step 3 ----------- */}
+                  <div className="step d-none" id="feedbackStep3">
+                    <h2 className="mb-4">Il tuo parere è importante per noi, se hai ancora tempo</h2>
+                    <form>
+                      <fieldset>
+                        <legend className="d-flex mb-5 px-0 w-100"><span className="w-75">Come possiamo migliorare questa pagina?</span><span className="w-25 text-end">3/3</span></legend>
+                        <div class="form-group">
+                          <label for="feedbackText" className="custom-label">Risposta</label>
+                          <input type="text" class="form-control" id="feedbackText" name="feedbackText"/>
+                          <small class="form-control form-text">Hai a disposizione 200 caratteri</small>
                         </div>
-
+                      </fieldset>
+                      <Button {...btnFw}/>
+                      <Button {...btnBk}/>
+                    </form>
+                  </div>
+                  {/* ----------- feedback end ----------- */}
+                  <div className="step d-none" id="feedbackEnd">
+                    <h2 className="mb-3">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
+                    <p>Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia</p>
+                    <p className="mb-5"><a href="#">Leggi l’informativa sulla privacy</a></p>
+                    <form>
+                      <div className="d-md-flex align-items-start">
+                        <div class="form-group w-75 me-5">
+                          <label for="feedbackMail" className="custom-label">Email</label>
+                          <input type="text" class="form-control" id="feedbackMail" name="feedbackMail"/>
+                        </div>
+                        <Button {...btnSubscribe}/>
                       </div>
                     </form>
                   </div>
@@ -161,7 +164,7 @@ const Feedback = ({
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
   )
 }

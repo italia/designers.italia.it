@@ -1,8 +1,6 @@
 import React from "react"
 import Icon from "../icon/icon"
 
-
-
 const HeaderCenter = ({data}) => {
 
   //-search zone

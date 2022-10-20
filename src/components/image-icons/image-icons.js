@@ -5,10 +5,12 @@ import "./image-icons.scss"
 const ImageIcons = ({
   image,
   alt,
-  icons
+  icons,
+  images
 }) => {
 
   let iconItems
+  let imagesItems
 
   if (icons) {
     iconItems = icons.map((item,index) => {
@@ -16,6 +18,14 @@ const ImageIcons = ({
       item.icon.hidden = true
       return(
         <Icon {...item.icon} key={"icons-"+index}/>
+      )
+    })
+  }
+
+  if (images) {
+    imagesItems = images.map((item,index) => {
+      return(
+        <img src={item.img} alt={item.alt} key={"image-"+index}/>
       )
     })
   }
@@ -28,11 +38,12 @@ const ImageIcons = ({
           <div className="col">
             <img src={image} alt={alt} className="img-fluid w-100"/>
           </div>
-          {iconItems ?
-          <div className="icons position-absolute top-0 start-50 translate-middle-x h-100 d-flex align-items-center justify-content-between">
-              {iconItems}
-          </div>
-          : null}
+          {iconItems &&
+            <div className="icons position-absolute top-0 start-50 translate-middle-x h-100 d-flex align-items-center justify-content-between">
+                {iconItems}
+                {imagesItems}
+            </div>
+          }
         </div>
       </div>
     </div>

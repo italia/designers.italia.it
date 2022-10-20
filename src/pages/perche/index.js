@@ -6,6 +6,7 @@ import SectionIntro from "../../components/section-intro/section-intro"
 import Highlight from "../../components/highlight/highlight"
 import Pagedata from "../../data/pages/perche/index.yaml"
 import ImageIcons from "../../components/image-icons/image-icons"
+import HighlightCards from "../../components/highlight-cards/highlight-cards"
 
 const Perche = () => {
   return(
@@ -21,6 +22,8 @@ const Perche = () => {
     })}
 
     <ImageIcons {...Pagedata.components.imageIcons}/>
+
+    <HighlightCards {...Pagedata.components.highlightCards} />
 
     </Template>
   )
