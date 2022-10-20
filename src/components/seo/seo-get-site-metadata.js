@@ -5,17 +5,17 @@ export const SeoGetSiteMetadata = () => {
     query {
       site {
         siteMetadata {
-			siteUrl
-			title
-			author
-			lang
-			description
-			siteName
-			image
-			twitterImage
-			twitterSite
-			twitterCreator
-			themeColor
+          siteUrl
+          title
+          author
+          lang
+          description
+          siteName
+          image
+          twitterImage
+          twitterSite
+          twitterCreator
+          themeColor
         }
       }
     }

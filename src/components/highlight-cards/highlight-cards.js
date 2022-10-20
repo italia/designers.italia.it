@@ -30,7 +30,6 @@ const HighlightCards = ({
 
   if (cards) {
     cardsItems = cards.map((item,index) => {
-      //item.icon.addonClasses = "flex-shrink-0"
       return(
         <div className="col col-md-6 col-lg-4">
           <Card {...item} key={"card-"+index}/>
@@ -41,7 +40,6 @@ const HighlightCards = ({
 
   if (buttons) {
     buttonsItems = buttons.map((item,index) => {
-      //item.icon.addonClasses = "flex-shrink-0"
       return(
         <Button {...item} key={"button-"+index}/>
       )

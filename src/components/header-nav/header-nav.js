@@ -7,7 +7,10 @@ import HeaderMenuLink from "../header-menu-link/header-menu-link"
 import DropdownMenu from "../dropdown-menu/dropdown-menu"
 import Megamenu from "../megamenu/megamenu"
 
-const HeaderNav = ({data,page}) => {
+const HeaderNav = ({
+  data,
+  page
+}) => {
 	return(
 	<div className={"it-header-navbar-wrapper" + ' '+data.theme} id={data.id}>
 		<div className="container-xxl">
