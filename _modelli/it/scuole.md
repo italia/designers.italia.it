@@ -147,7 +147,7 @@ coreContent:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
       - title: App di valutazione dell'adesione al modello
-        text: "<p>Un applicativo desktop a supporto degli sviluppatori che aiuta a valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità della misura <em>1.4.1 Esperienza del cittadino nei servizi pubblici digitali</em>.</p> <p>Se ne raccomanda l’uso in tutte le fasi di sviluppo del sito per individuare prontamente eventuali aspetti di miglioramento. L’app è in versione beta e quindi soggetta a revisioni e perfezionamenti.</p>"
+        text: "<p>Un applicativo desktop a supporto degli sviluppatori che aiuta a valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità della misura <em>1.4.1 Esperienza del cittadino nei servizi pubblici digitali</em>.</p> <p>Se ne raccomanda l’uso in tutte le fasi di sviluppo del sito per individuare prontamente eventuali aspetti di miglioramento. L’app è in <strong>versione beta</strong> e quindi soggetta a revisioni e perfezionamenti.</p>"
         img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
         resources:
           - title: Documentazione tecnica e file di installazione
