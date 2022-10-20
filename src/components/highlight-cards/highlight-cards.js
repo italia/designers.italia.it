@@ -54,22 +54,22 @@ const HighlightCards = ({
         <div className="row mb-4 mb-md-5 intro">
           <div className='col col-md-10 offset-md-1'>
               <div className="px-3 px-lg-0">
-                {title ? <HLevel id={id} className="mb-2">{title}</HLevel> : null}
+                {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
                 <ReactMarkdown>{text}</ReactMarkdown>
               </div>
           </div>
         </div>
-        {cardsItems ?
+        {cardsItems &&
           <div className="row g-3 mb-4 mb-md-5">
             {cardsItems}
-          </div> : null
+          </div>
         }
-        {buttonsItems ?
+        {buttonsItems &&
           <div className="row buttons">
             <div className='col col-md-10 offset-md-1 justify-content-center d-md-flex'>
               {buttonsItems}
             </div>
-          </div> : null
+          </div>
         }
       </div>
     </section>

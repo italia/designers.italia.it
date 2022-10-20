@@ -38,12 +38,12 @@ const ImageIcons = ({
           <div className="col">
             <img src={image} alt={alt} className="img-fluid w-100"/>
           </div>
-          {iconItems ?
-          <div className="icons position-absolute top-0 start-50 translate-middle-x h-100 d-flex align-items-center justify-content-between">
-              {iconItems}
-              {imagesItems}
-          </div>
-          : null}
+          {iconItems &&
+            <div className="icons position-absolute top-0 start-50 translate-middle-x h-100 d-flex align-items-center justify-content-between">
+                {iconItems}
+                {imagesItems}
+            </div>
+          }
         </div>
       </div>
     </div>
