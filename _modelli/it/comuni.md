@@ -175,7 +175,7 @@ coreContent:
             icon: "/assets/icons/external-link.svg"
           - title: File di installazione
             description: Scarica l’app adatta al tuo sistema operativo dal repository GitHub 
-            link: <a href='https://github.com/italia/pa-website-validator' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://github.com/italia/pa-website-validator/releases' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             icon: "/assets/icons/external-link.svg"
 serviziContent:
   title: I nuovi flussi di servizi digitali per il cittadino
