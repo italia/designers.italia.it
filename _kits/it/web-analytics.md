@@ -44,13 +44,13 @@ superAccordion:
       text: "<p>La piattaforma Web Analytics Italia (WAI) è una soluzione open source creata ad hoc dall'Agenzia per l'Italia Digitale per la raccolta e l'analisi dei dati di traffico dei siti web delle amministrazioni pubbliche.</p> <p>WAI ha la finalità di aiutare gli operatori della PA a migliorare l'usabilità dei <em>touchpoint</em> digitali grazie al monitoraggio continuo, l'elaborazione e la condivisione dei dati statistici di analisi web dei siti web aderenti al progetto, in completa aderenza alla normativa GDPR.</p>"
       img: "/assets/icons/kit/kit_analytics_usa.svg"
       resources:
-        - title: Le piattaforme open source
+        - title: Plausible analytics
           icon: "/assets/icons/pencil.svg"
-          description: "Scopri la lista di alcuni dei servizi open source dedicati alla raccolta e all'analisi dei dati di traffico di siti e servizi digitali."
-          link: <a href='https://webanalytics.italia.it/' aria-label="Vai alla piattaforma WAI (link esterno)">Vai alla piattaforma</a>
+          description: "Plausible è una piattaforma di web analytics open source e quindi conforme alla normativa privacy in vigore."
+          link: <a href='https://webanalytics.italia.it/' aria-label="Vai alla scheda di Plausible analytics (link esterno)">Vai alla scheda di Plausible analytics</a>
           otherResources:
-            - description: Guida utente WAI
-              link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+            - description: Guida utente di Plausible analytics
+              link: <a href='https://plausible.io/docs' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
