@@ -2,14 +2,14 @@ import React from "react"
 import Icon from "../icon/icon"
 
 const NavPosition = ({
-  data
+  items
 }) => {
 
   let  linkItems
 
 
-  if (data) {
-    linkItems = data.map((item,index) => {
+  if (items) {
+    linkItems = items.map((item,index) => {
       item.icon.addonClasses = "flex-shrink-0 me-3"
       item.icon.hidden = true
       return(
