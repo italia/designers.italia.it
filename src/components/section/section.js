@@ -1,6 +1,12 @@
 import React from "react"
 
-const Section = ({bgColor, bgImage, whiteText, describedBy, children}) => {
+const Section = ({
+  bgColor,
+  bgImage,
+  whiteText,
+  describedBy,
+  children
+}) => {
   let sectionnStyles = 'section'
 		+ `${bgColor ? ' section-'+bgColor : ''}`   // muted, primary, neutral
 		+ `${bgImage ? ' section-image' : ''}`      // url
