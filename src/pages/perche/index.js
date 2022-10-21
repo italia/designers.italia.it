@@ -3,6 +3,7 @@ import Template from "../../templates/default"
 import {Seo} from "../../components/seo/seo"
 import Hero from "../../components/hero/hero"
 import SectionIntro from "../../components/section-intro/section-intro"
+import TitleText from "../../components/title-text/title-text"
 import Highlight from "../../components/highlight/highlight"
 import Pagedata from "../../data/pages/perche/index.yaml"
 import ImageIcons from "../../components/image-icons/image-icons"
@@ -13,7 +14,7 @@ const Perche = () => {
     <Template page={Pagedata.name} lastUpdate={Pagedata.lastUpdate}>
 		<Hero {...Pagedata.components.hero}></Hero>
     <SectionIntro {...Pagedata.components.sectionIntro}/>
-    <SectionIntro {...Pagedata.components.sectionIntro2}/>
+    <TitleText {...Pagedata.components.titleText}/>
 
     { Pagedata.components.highlights.map((hl,index) => {
       return(
