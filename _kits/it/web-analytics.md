@@ -41,15 +41,22 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Monitora i dati di traffico della tua soluzione digitale
-      text: "<p>La piattaforma Web Analytics Italia (WAI) è una soluzione open source creata ad hoc dall'Agenzia per l'Italia Digitale per la raccolta e l'analisi dei dati di traffico dei siti web delle amministrazioni pubbliche.</p> <p>WAI ha la finalità di aiutare gli operatori della PA a migliorare l'usabilità dei <em>touchpoint</em> digitali grazie al monitoraggio continuo, l'elaborazione e la condivisione dei dati statistici di analisi web dei siti web aderenti al progetto, in completa aderenza alla normativa GDPR.</p>"
+      text: "<p>Esistono numerosi software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali. In questa scheda ti proponiamo una lista di alcune fra le principali piattaforme che puoi utilizzare per il tracciamento, l'elaborazione e la condivisione dei dati statistici della tua soluzione digitale, in completa aderenza alla normativa GDPR.</p>"
       img: "/assets/icons/kit/kit_analytics_usa.svg"
       resources:
+        - title: Matomo analytics
+          icon: "/assets/icons/pencil.svg"
+          description: "Matomo è una piattaforma di web analytics open source conforme alla normativa privacy in vigore."
+          link: <a href='https://developers.italia.it/it/software/italia-software-matomo-32c75d' aria-label="Vai alla scheda di Matomo analytics (link esterno)">Vai alla scheda di Matomo analytics</a>
+          otherResources:
+            - description: Guida utente di Matomo analytics
+              link: <a href='https://matomo.org/guides/' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Plausible analytics
           icon: "/assets/icons/pencil.svg"
-          description: "Plausible è una piattaforma di web analytics open source e quindi conforme alla normativa privacy in vigore."
-          link: <a href='https://webanalytics.italia.it/' aria-label="Vai alla scheda di Plausible analytics (link esterno)">Vai alla scheda di Plausible analytics</a>
+          description: "Plausible è una piattaforma di web analytics open source conforme alla normativa privacy in vigore."
+          link: <a href='https://developers.italia.it/it/software/italia-software-plausible-a9b3cb' aria-label="Vai alla scheda di Plausible analytics (link esterno)">Vai alla scheda di Plausible analytics</a>
           otherResources:
-            - description: Guida utente di Plausible analytics
+            - description: Guida utente di Plausible
               link: <a href='https://plausible.io/docs' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
@@ -57,7 +64,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Crea e condividi una dashboard con altre piattaforme
-      text: "<p>Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics: potrai visualizzare metriche e dimensioni d'analisi di tuo interesse nello stesso template e popolare i widget con i dati di performance di tuo interesse</p>"
+      text: "<p>Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source: potrai visualizzare metriche e dimensioni d'analisi di tuo interesse nello stesso template e popolare i widget con i dati di performance del tuo sito o servizio.</p>"
       img: "/assets/icons/kit/kit_analytics_creaDashboards.svg"
       resources:
         - title: Crea una dashboard con Matomo
