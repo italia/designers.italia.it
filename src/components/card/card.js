@@ -59,7 +59,7 @@ const Card =(
 					<Icon {...iconOverlay}></Icon>
 				</div>}
 			</div>}
-			<div className="di-card-body p-4 d-md-flex flex-md-column justify-content-between">
+			<div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
 				<div className="text-zone">
 					{HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
 					{text && <ReactMarkdown>{text}</ReactMarkdown>}
