@@ -2,6 +2,25 @@
 name: Home Page
 description : Descrizione Pagina
 components:
+  resourceList:
+    title: Titoletto eventuale gruppo risorse
+    list:
+      isMenu: false
+      simpleList: true
+      listItems:
+        - url: "#"
+          label : Risorsa esterna linkata qui anche nel nome
+          actions:
+            - url: "#"
+              icon:
+                color: primary
+                icon: sprites.svg#it-expand
+                addonClasses : icon-expand
+            - url: "#"
+              icon:
+                color: primary
+                icon: sprites.svg#it-expand
+                addonClasses : icon-expand
   chips:
     - color : primary
       label : Primary Lg
@@ -77,6 +96,9 @@ components:
         - url: "#"
           isDropdown : true
           children : Azione 3
+
+
+
   navPreFooter:
     navPosition:
       - title: Ti trovi in
