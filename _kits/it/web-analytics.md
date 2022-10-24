@@ -57,7 +57,7 @@ superAccordion:
           link: <a href='https://developers.italia.it/it/software/italia-software-plausible-a9b3cb' aria-label="Vai alla scheda di Plausible analytics (link esterno)">Vai alla scheda di Plausible analytics</a>
           otherResources:
             - description: Guida utente di Plausible
-              link: <a href='https://plausible.io/docs' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+              link: <a href='https://plausible.io/docs' target="_blank" aria-label="Vai alla risorsa (link esterno in lingua inglese)" >Vai alla risorsa (lingua inglese) </a>
         - title: Web analytics Italia (WAI)
           icon: "/assets/icons/pencil.svg"
           description: "WAI è una soluzione open source creata da AGID per il monitoraggio dei siti web delle PA."
