@@ -50,7 +50,7 @@ superAccordion:
           link: <a href='https://developers.italia.it/it/software/italia-software-matomo-32c75d' aria-label="Vai alla scheda di Matomo analytics (link esterno)">Vai alla scheda di Matomo analytics</a>
           otherResources:
             - description: Guida utente di Matomo analytics
-              link: <a href='https://matomo.org/guides/' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+              link: <a href='https://matomo.org/guides/' target="_blank" aria-label="Vai alla risorsa (link esterno in lingua inglese)" >Vai alla risorsa (lingua inglese)</a>
         - title: Plausible analytics
           icon: "/assets/icons/pencil.svg"
           description: "Plausible è una piattaforma di web analytics open source."
