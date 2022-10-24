@@ -58,12 +58,12 @@ superAccordion:
           otherResources:
             - description: Guida utente di Plausible
               link: <a href='https://plausible.io/docs' target="_blank" aria-label="Vai alla risorsa (link esterno in lingua inglese)" >Vai alla risorsa (lingua inglese) </a>
-        - title: Web analytics Italia (WAI)
+        - title: Web Analytics Italia (WAI)
           icon: "/assets/icons/pencil.svg"
           description: "WAI è una soluzione open source creata da AGID per il monitoraggio dei siti web delle PA."
-          link: <a href='https://webanalytics.italia.it/' aria-label="Vai a Web analytics Italia(link esterno)">Vai a Web analytics Italia</a>
+          link: <a href='https://webanalytics.italia.it/' aria-label="Vai a Web Analytics Italia(link esterno)">Vai a Web Analytics Italia</a>
           otherResources:
-            - description: Guida utente di Web analytics Italia
+            - description: Guida utente di Web Analytics Italia
               link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
