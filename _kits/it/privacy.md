@@ -47,7 +47,7 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: "Consigli e informazioni utili per iniziare a progettare con un approccio orientato alla privacy"
           link: <a href='https://docs.google.com/document/d/1RPOA6UthFxl0Xqa7Lm0NtdkMZ1cTgFzPGicr_8RZZ1M/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
-        - title: "Consenso si, consenso no"
+        - title: "Consenso sì, consenso no"
           icon: "/assets/icons/pencil.svg"
           description: "Suggerimenti per aiutarti a valutare se il consenso è la base giuridica corretta per il tuo caso d'uso"
           link: <a href='https://docs.google.com/document/d/1crsDAJkETOTfYsO5SA5qtr5pPYpUj6wFEhow5MqqECk/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
