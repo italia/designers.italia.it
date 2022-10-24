@@ -54,7 +54,7 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
-        - url: "https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/conformita-modello-scuola.html"
+        - url: "https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html"
           title: Scopri i requisiti per il sito
           external: true
 
@@ -91,8 +91,8 @@ coreContent:
   rightColumnItems:
     - title: DOCUMENTAZIONE
       items:
-        - <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/risorse.html' target="_blank">Come usare le risorse</a>
-        - <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/conformita-modello-scuola.html' target="_blank">La conformità al modello</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse.html' target="_blank">Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html' target="_blank">La conformità al modello</a>
   superAccordion:
     title: RISORSE
     accordions:
@@ -107,7 +107,7 @@ coreContent:
           - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/external-link-.svg"
             description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito scolastico
-            link: <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/v2022.1/risorse/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Modello di analisi dei contenuti
                 link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
@@ -146,7 +146,18 @@ coreContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-
+      - title: App di valutazione dell'adesione al modello
+        text: "<p>Un applicativo desktop a supporto degli sviluppatori che aiuta a valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità della misura <em>1.4.1 Esperienza del cittadino nei servizi pubblici digitali</em>.</p> <p>Se ne raccomanda l’uso in tutte le fasi di sviluppo del sito per individuare prontamente eventuali aspetti di miglioramento. L’app è in <strong>versione beta</strong> e quindi soggetta a revisioni e perfezionamenti.</p>"
+        img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
+        resources:
+          - title: Documentazione tecnica
+            description: Scopri di più sull’app, controlla i requisiti tecnici e segui le istruzioni per l'installazione  
+            link: <a href='https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/it/versione-attuale/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            icon: "/assets/icons/external-link.svg"
+          - title: File di installazione
+            description: Scarica l’app adatta al tuo sistema operativo dal repository GitHub 
+            link: <a href='https://github.com/italia/pa-website-validator/releases' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            icon: "/assets/icons/external-link.svg"
 tags:
   - user-stories
   - stakeholder

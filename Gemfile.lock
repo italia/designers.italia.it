@@ -74,8 +74,14 @@ GEM
     mime-types-data (3.2021.0225)
     mini_portile2 (2.8.0)
     netrc (0.11.0)
-    nokogiri (1.13.6)
+    nokogiri (1.13.9)
       mini_portile2 (~> 2.8.0)
+      racc (~> 1.4)
+    nokogiri (1.13.9-arm64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.13.9-x86_64-linux)
       racc (~> 1.4)
     nokogumbo (2.0.5)
       nokogiri (~> 1.8, >= 1.8.4)
@@ -110,7 +116,10 @@ GEM
     yell (2.2.2)
 
 PLATFORMS
+  arm64-darwin
   ruby
+  x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   html-proofer (~> 3.19.1)
@@ -129,4 +138,4 @@ RUBY VERSION
    ruby 2.6.6p146
 
 BUNDLED WITH
-   2.1.4
+   2.3.24
