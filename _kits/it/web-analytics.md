@@ -53,7 +53,7 @@ superAccordion:
               link: <a href='https://matomo.org/guides/' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
         - title: Plausible analytics
           icon: "/assets/icons/pencil.svg"
-          description: "Plausible è una piattaforma di web analytics open source conforme alla normativa privacy in vigore."
+          description: "Plausible è una piattaforma di web analytics open source."
           link: <a href='https://developers.italia.it/it/software/italia-software-plausible-a9b3cb' aria-label="Vai alla scheda di Plausible analytics (link esterno)">Vai alla scheda di Plausible analytics</a>
           otherResources:
             - description: Guida utente di Plausible
