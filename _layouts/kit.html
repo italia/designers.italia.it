@@ -64,6 +64,14 @@ layout: default
         <div class="kitIntro u-layout-prose u-color-grey-ui-kit">
           {{textChunk1.text}}
         </div>
+        {% if page.alert %}
+        <div class="u-margin-top-xxl kitIntro u-layout-prose Alert {{page.alert.type}} Alert--withIcon u-color-grey-ui-kit" role="alert">
+            <h2 class="u-text-r-xxs u-textWeight-600 u-margin-r-bottom">{{page.alert.title}}</h2>
+            <div class="kitIntro u-layout-prose u-color-grey-ui-kit">
+              {{page.alert.text}}
+            </div>
+        </div>
+        {% endif %}
       </div>
       <div class="Grid-cell u-lg-before1of12 u-lg-size2of12 u-md-before1of12 u-md-size2of12 u-margin-top-xxl u-md-margin-top-none u-lg-margin-top-none">
         {% if guideLinesChunk.link %}
