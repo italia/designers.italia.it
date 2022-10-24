@@ -46,7 +46,7 @@ superAccordion:
       resources:
         - title: Matomo analytics
           icon: "/assets/icons/pencil.svg"
-          description: "Matomo è una piattaforma di web analytics open source conforme alla normativa privacy in vigore."
+          description: "Matomo è una piattaforma di web analytics open source."
           link: <a href='https://developers.italia.it/it/software/italia-software-matomo-32c75d' aria-label="Vai alla scheda di Matomo analytics (link esterno)">Vai alla scheda di Matomo analytics</a>
           otherResources:
             - description: Guida utente di Matomo analytics
