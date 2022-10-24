@@ -21,8 +21,8 @@ textChunk1:
   <p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI).</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/web-analytics.html' target="_blank">Web analytics</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/web-analytics.html' target="_blank" aria-label="Web analytics (link esterno)">Web analytics</a>
 
 rightColumnItems:
   - title: KIT CORRELATI
@@ -64,10 +64,11 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: Una guida per creare una dashboard di dati custom con il software open source Matomo
           link: <a href='https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-        - title: Crea una dashboard con Google Analytics
+        - title: Crea una dashboard con Plausible analytics
           icon: "/assets/icons/pencil.svg"
-          description: Una guida per creare una dashboard di dati custom con Google Analytics
-          link: <a href='https://docs.google.com/document/d/1MEiEDKfxMh7c3-7BKx0WlvgIBRe5gXrFd0LqpVpNAhg/edit?usp=sharing' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
+          description: Una guida per creare una dashboard di dati custom con il software open source Plausible analytics
+          disabled: true
+          link: <a href='#' >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.

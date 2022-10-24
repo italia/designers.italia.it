@@ -29,6 +29,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  min-width: auto;
+}
+
 /** Utilities
   ================ */
 .u-letterSpace-l {
@@ -98,15 +102,40 @@ html {
     ===================== */
 .Project {
   h2 {
-    margin-top: 1em !important;
+    /**margin-top: 1em !important;
+    margin-bottom:.25em !important;
     font-weight: 600 !important;
-    font-size: 1.5em !important;
+    font-size: 1.5em !important;**/
+    margin-top: 64px !important;
+    margin-bottom: 16px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
   }
 
   h3 {
-    margin-top: 1em !important;
+    /**margin-top: .75em !important;
+    margin-bottom: .25em !important;
     font-weight: 400 !important;
-    font-size: 1.5em !important;
+    font-size: 1.5em !important;**/
+    margin-top: 48px !important;
+    margin-bottom: 8px !important;
+    font-weight: 400 !important;
+    font-size: 1.33em !important;
+  }
+
+  h4 {
+    margin-top: 1.75em !important;
+    margin-bottom: .5em !important;
+  }
+
+  hr {
+    margin-top: 48px;
+    height: 3rem;
+    border: none;
+    background: lightgray;
+    height: 1px;
+    margin-bottom: 48px;
   }
 
   ul {
@@ -134,7 +163,7 @@ html {
     font-weight: 600;
     border-bottom: 1px solid #eee;
     text-decoration: none;
-    font-size: 18px !important;
+    font-size: 15px !important;
   }
   &:last-child a {
     border-bottom: none;
@@ -181,7 +210,10 @@ html {
    ================ */
 .Header {
   &-navbar {
-    padding-bottom: 0 !important;
+    @media screen and (min-width: 992px) {
+        padding-bottom: 0 !important;
+        padding-top:3.6rem!important;
+    }
   }
   &-PinWheel {
     margin-left: -16px;
@@ -207,7 +239,13 @@ html {
   }
   &-Main-Logo {
     img {
-      max-width: 24rem;
+      max-width: 16rem;
+      @media screen and (min-width: 320px) {
+        max-width: 20rem;
+      }
+      @media screen and (min-width: 480px) {
+          max-width: 24rem;
+      }
       @media screen and (min-width: 992px) {
           max-width: 36rem;
       }
@@ -267,8 +305,10 @@ html {
         border-right: 0.1rem solid #127ae2;
       }
     }
-    &-toggle a {
+    &-toggle {
+      a {
       text-decoration: none !important;
+      }
     }
   }
 }
@@ -280,6 +320,15 @@ html {
 
 /** Header tweaks
     ===================== */
+.Header-toggleText {
+  color:#06c;
+  font-size: 14px!important;
+}
+.Hamburger-toggleContainer {
+    @media screen and (min-width: 768px) {
+      padding-top: 2rem;
+    }
+}
 .Hamburger-toggle,
 .Hamburger-toggle:after,
 .Hamburger-toggle:before {
@@ -385,8 +434,8 @@ html {
       padding-right: 3.2rem !important;
       padding-left: 3.2rem !important;
       @media screen and (max-width: 1150px) {
-        padding-right: 1.2rem !important;
-        padding-left: 1.2rem !important;
+        padding-right: 2.6rem !important;
+        padding-left: 2.6rem !important;
       }
 
       &.is-current {
@@ -976,7 +1025,7 @@ html {
   &__img {
     display: block;
     margin-bottom: 0.5em;
-    height: 75px;
+    height: 128px;
   }
 }
 
@@ -1260,18 +1309,25 @@ html {
     padding: 0px 30px;
     cursor: pointer;
     &:last-of-type {
-      padding-right:16px;
+      //padding-right:16px;
     }
   }
   .active {
     border-bottom: 8px solid white;
     border-top: 8px solid #06c;
   }
+  .active-modelli {
+    border-bottom: 8px solid #26394d;
+    border-top: 8px solid #65dcdf;
+  }
   .all {
     border-right: 1px solid white;
     padding-right: 40px;
     margin-right: 10px;
     padding-left: 16px;
+  }
+  .all-modelli {
+    border-right: 1px solid #212121;
   }
 }
 
@@ -1305,13 +1361,13 @@ html {
   .super-breadcrumb li.active {
     margin: 0px 16px;
   }
-  .layout-process .super-breadcrumb li:not(.active):not(.all) {
+    .layout-modellinew .super-breadcrumb li:not(.active):not(.all), .layout-process .super-breadcrumb li:not(.active):not(.all) {
     display:block;
   }
 }
 
 @media screen and (max-width:480px) {
-  .layout-process .super-breadcrumb li:not(.active):not(.all) {
+  .layout-modellinew .super-breadcrumb li:not(.active):not(.all), .layout-process .super-breadcrumb li:not(.active):not(.all) {
     width:100%;
   }
 }
@@ -1385,5 +1441,12 @@ html {
   .u-sm-padding-x-xxl {
     padding-left: 4rem!important;
     padding-right: 4rem!important;
+  }
+}
+
+/* more tweaks for small widths and 1024/400% */
+@media screen and (max-width:320px) {
+  .u-padding-r-all {
+    padding: .5em!important;
   }
 }

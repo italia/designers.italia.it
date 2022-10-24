@@ -17,12 +17,12 @@ redirect_from:
 textChunk1:
   title: A COSA SERVE
   text: "<p>I test di usabilità sono delle sessioni di <strong>osservazione diretta dell’interazione tra un utente e un servizio digitale.</strong> I test vengono svolti assegnando all’utente uno o più attività da svolgere e analizzando il suo comportamento nel portarli a termine.</p>
-  <p>Puoi svolgere dei testi di usabilità con gli utenti durante la fase di sviluppo del servizio, per verificare il loro comportamento e apportare eventuali modifiche in corso d’opera, oppure quando un servizio digitale è già in uso, per capire eventuali problemi di utilizzo e riprogettare di conseguenza alcuni componenti in ottica di miglioramento.</p>
+  <p>Puoi svolgere dei test di usabilità con gli utenti durante la fase di sviluppo del servizio, per verificare il loro comportamento e apportare eventuali modifiche in corso d’opera, oppure quando un servizio digitale è già in uso, per capire eventuali problemi di utilizzo e riprogettare di conseguenza alcuni componenti in ottica di miglioramento.</p>
   <p>Questo kit ti fornisce tutti gli strumenti necessari per la preparazione, conduzione e l’analisi dei risultati di un test di usabilità, sulla base di quanto indicato nel Protocollo eGLU.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/user-research/usabilita.html'>Usabilità</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/test-usabilita.html' target="_blank" aria-label="Test di usabilità (link esterno)">Test di usabilità</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

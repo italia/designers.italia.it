@@ -41,8 +41,7 @@
   <meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | relative_url }}">
   <meta name="theme-color" content="{{ site.theme_color }}">
 
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-  {% include google-analytics.html %}
+  {%- if jekyll.environment == 'production' and site.wai_siteid -%}
   {% include wai.html %}
   {%- endif -%}
 

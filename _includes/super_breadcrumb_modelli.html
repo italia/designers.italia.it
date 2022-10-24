@@ -1,0 +1,33 @@
+{% assign showAll = include.showAll %}
+{% assign kitCategory = include.kitCategory %}
+{% assign quickOpen = include.quickOpen %}
+
+<div id="superBreadcrumb" class="super-breadcrumb u-background-50  u-color-white {% if showAll==false %} superSticky {% else %} u-border-bottom-xxs {% endif %}">
+  <div class="superContent">
+    <div class="u-layout-wide u-layoutCenter u-color-white {% if showAll==false %} u-padding-bottom-xxs u-padding-top-xxs {% endif %}">
+      <nav>
+        <ul>
+          {% if showAll %}
+          <li class="all">
+            <a href="/modelli" class="u-color-white">
+              Tutti i modelli
+            </a>
+          </li>
+          {% endif %}
+          <li class="{% if kitCategory == 'comuni' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="{% if quickOpen %} /modello/comuni/ {% else %} #comuni {% endif %}" class="u-color-white">
+              <img alt="" width="64" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/comuni-2022-icon-white.svg" />
+              Comuni
+            </a>
+          </li>
+          <li class="{% if kitCategory == 'scuole' %} active {% endif %} {% if showAll==false %} u-padding-top-xxs u-padding-bottom-xxs {% else %} u-padding-top-xs u-padding-bottom-xs {% endif %}">
+            <a href="{% if quickOpen %} /modello/scuole/ {% else %} #scuole {% endif %}" class="u-color-white">
+              <img alt="" width="54" class="u-margin-right-m" src="/assets/icons/super_breadcrumb/scuola-2022-icon-white.svg" />
+              Scuole
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

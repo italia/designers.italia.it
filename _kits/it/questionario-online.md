@@ -17,8 +17,8 @@ textChunk1:
   <p>Questo kit dedicato ai questionari comprende modelli pre-organizzati per supportarti nelle attività di pianificazione, esecuzione e analisi della ricerca.</p>"
 
 guideLinesChunk:
-  title: GUIDA PRATICA
-  link: <a href='https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design.html' target="_blank">Service design</a>
+  title: MANUALE OPERATIVO DI DESIGN
+  link: <a href='https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html' target="_blank" aria-label="Questionari (link esterno)">Questionari</a>
 
 rightColumnItems:
   - title: KIT CORRELATI

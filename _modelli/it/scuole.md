@@ -1,89 +1,166 @@
 ---
-title: Il modello per i siti scolastici
+title: Il sito delle scuole italiane
+subtitle: "Tutte le risorse per realizzare con facilità esperienze digitali semplici e moderne per la comunità scolastica"
 lang: it
-layout: download
-description: "Design del sito di una scuola: architettura dell’informazione, template HTML e tema Wordpress"
-backgroundImage: "/assets/images/kits/backgrounds/17_Scuole_Background.png"
-thumbnail: "/assets/images/modelli/scuola-2021.png"
+layout: modello
+description: "Il modello di sito per le scuole italiane. Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per la comunità scolastica"
+image: '/assets/images/modelli/scuola-2022-full.png'
+iconImage: '/assets/images/modelli/scuola-2022.png'
 backgroundColor: "#439af1"
 nodate: true
 kitcategory: scuole
-tags:
-  - web-development
-  - information-architecture
+order: 1
 redirect_from:
   - /kit/scuole/
   - /kit/scuole
+  - /progetti/siti-scuole/
+  - /siti-scuole/
+  - /progetti/siti-web-scuole/
 
-documents:
-- Design scuole
+header:
+  links:
+    - <a href="#pa-digitale-2026" class="u-color-white">PA digitale 2026</a>
+    - <a href="#documentazione" class="u-color-white">La documentazione del modello</a>
+    - <a href="#sito" class="u-color-white">Il modello di sito</a>
+    
+ctaContent:
+  title: Adottare il modello è semplice con il PNRR
+  subtitle: Scopri su <b>PA digitale 2026</b> come partecipare all'avviso per il finanziamento dedicato a migliorare l'esperienza utente del cittadino nei siti web scolastici
+  buttonTitle: Vai a PA digitale 2026
+  buttonUrl: https://padigitale2026.gov.it
+  buttonExternal: true
+  cards:
+    - prefix: "1"
+      title: "Richiedi un finanziamento"
+      subtitle: "Tutte le scuole italiane possono accedere ai fondi PNRR per l'aggiornamento del sito web. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026."
+      iconImage: "/assets/images/modelli/pad2026-A.svg"
+      iconAlt: ""
+      links:
+        - url: "https://areariservata.padigitale2026.gov.it/Pa_digitale2026_dettagli_avviso?id=a017Q00000ocbtrQAA"
+          title: Scopri i finanziamenti
+          external: true
+        - url: "https://padigitale2026.gov.it/come-partecipare/candida-pa/"
+          title: Scopri i passi da seguire
+          external: true
+    - prefix: "2"
+      title: "Avvia i lavori "
+      subtitle: "Contatta i tuoi fornitori di fiducia o ricercane di nuovi tramite il portale MePA. Le attività devono iniziare entro 6 mesi dalla pubblicazione del decreto di finanziamento."
+      iconImage: "/assets/images/modelli/pad2026-B.svg"
+      iconAlt: ""
+      links:
+    - prefix: "3"
+      title: "Migliora l’esperienza digitale della comunità scolastica"
+      subtitle: "Il nuovo sito e i servizi digitali devono essere rilasciati entro 9 mesi dall’avvio dei lavori e rispettare i requisiti tecnici minimi per l’accesso ai fondi."
+      iconImage: "/assets/images/modelli/pad2026-C.svg"
+      iconAlt: ""
+      links:
+        - url: "https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html"
+          title: Scopri i requisiti per il sito
+          external: true
 
-download_file:
-- file: "https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing"
-  caption: Architettura dell’informazione
-- file: "https://github.com/italia/design-scuole-pagine-statiche/"
-  caption: Template HTML basati su Bootstrap Italia
-- file: "https://github.com/italia/design-scuole-wordpress-theme/"
-  caption: Un tema già pronto per WordPress
+orientarsiContent:
+  title: Realizza un’esperienza digitale efficace
+  subtitle: Scopri come il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle pubblica amministrazione
+  cards:
+    - title: Strumenti pronti all'uso
+      subtitle: "<p>L’ideazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Il modello di sito per le scuole permette di rispondere alle esigenze di studenti, genitori e tutta la comunità scolastica in modo rapido e a basso costo, sfruttando procedure e funzionalità già validate con gli utenti.</p>
+      <p>Le risorse disponibili sono pronte all’uso e guidano su tutti gli aspetti della realizzazione, dall’implementazione dei template alla migrazione dei contenuti.</p>"
+      iconImage: "/assets/images/modelli/scuola-2022-full.png"
+      iconAlt: ""
+      links:
+        - url: "#sito"
+          title: Scopri il modello di sito scolastico
+          anchor: true
+    - title: Per il futuro della PA
+      subtitle: '<p>Il modello di sito scolastico è stato creato a seguito di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto <strong>Designers Italia</strong>.</p>
+      <p>L’uso del modello permette di aderire più facilmente alle linee guida nazionali di design e alle migliori pratiche di progettazione digitale, anticipando l’adozione di indicazioni di livello europeo.</p>'
+      iconImage: "/assets/images/modelli/scuola-2022-B-full.png"
+      iconAlt: ""
+      buttonTitle: Vai alla documentazione
+      buttonUrl: https://docs.italia.it/italia/designers-italia/design-scuole-docs/
+      buttonExternal: true
 
-carousel:
-- img: "/assets/images/kits/carousel/17_Scuole_Slide_01.png"
-  label: Esempio di template generico di homepage
-- img: "/assets/images/kits/carousel/17_Scuole_Slide_02.png"
-  label: Esempio di template generico di pagina interna
-- img: "/assets/images/kits/carousel/17_Scuole_Slide_03.png"
-  label: Architettura dell’informazione
+coreContent:
+  title: Il modello di sito scolastico
+  subtitle: Tutte le informazioni scolastiche a portata di clic
+  icon: '/assets/icons/kit/modelli.svg'
+  occhiello: A COSA SERVE
+  text: "<p>Il modello permette di creare siti web scolastici che rispondono ai bisogni degli utenti, con interfacce e strutture informative semplici da usare e navigare. Lo scopo è di fornire a studenti, genitori e tutta la comunità scolastica un solido punto di riferimento per trovare con facilità tutte le informazioni di cui hanno bisogno.</p>
+  <p>L’adozione del modello di sito permette di aderire alle linee guida di design per i siti internet e i servizi digitali della PA, fornendo un’esperienza coerente tra le istituzioni e facilitandone l’uso per i cittadini che si spostano tra varie scuole.</p>
+  <p>Il modello comprende l’architettura dell’informazione, i template HTML e i temi CMS, corredati da una serie di guide pratiche a supporto.</p>"
+  rightColumnItems:
+    - title: DOCUMENTAZIONE
+      items:
+        - <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse.html' target="_blank">Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html' target="_blank">La conformità al modello</a>
+  superAccordion:
+    title: RISORSE
+    accordions:
+      - title: Architettura e contenuti del sito
+        text: "<p>Costruisci il tuo sito web scolastico a partire dal documento di architettura dell’informazione. L'architettura dell'informazione rappresenta la struttura del sito e viene usata dai developer per la realizzazione delle strutture di <em>front-end</em> a <em>back-end</em>; è inoltre fondamentale per i designer per organizzare i vari livelli di contenuto nelle pagine del sito.</p>"
+        img: "/assets/icons/kit/kit_architettura.svg"
+        resources:
+          - title: L'architettura dell'informazione del modello scuole
+            icon: "/assets/icons/external-link-.svg"
+            description: Indicazioni su tipologie di contenuti (<em>content type</em>), sistemi di navigazione e tassonomie per tutte le aree del sito di una scuola
+            link: <a href='https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit#gid=782511705' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Guida alla migrazione dei contenuti
+            icon: "/assets/icons/external-link-.svg"
+            description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito scolastico
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            otherResources:
+              - description: Modello di analisi dei contenuti
+                link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+              - description: Guida al linguaggio della PA
+                link: <a href='https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+              - description: Modello di liberatoria privacy per immagini e video
+                link: <a href='https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+          - icon: "/assets/icons/info-grey.svg"
+            text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+      - title: Template HTML del sito scolastico
+        text: "<p>Basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, i template HTML servono ai developers per la creazione del frontend del sito, ma possono essere utili anche ai designer come esempi di pagine e contenuti.</p>"
+        img: "/assets/icons/kit/kit_webDevelopment.svg"
+        resources:
+          - title: Anteprime dei template HTML sito
+            icon: "/assets/icons/external-link-.svg"
+            description: Gli esempi delle pagine del sito scolastico basati sui template HTML Bootstrap
+            link: <a href='https://italia.github.io/design-scuole-pagine-statiche/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+          - title: Sorgenti dei template HTML sito scolastico
+            icon: "/assets/icons/external-link-.svg"
+            description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di una scuola
+            link: <a href='https://github.com/italia/design-scuole-pagine-statiche' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+      - title: Tema per Wordpress
+        text: "<p>Permette di abbreviare la fase di realizzazione e di implementare direttamente l’architettura dell'informazione e il codice html su una fra le più comuni piattaforme di gestione contenuti.</p>"
+        img: "/assets/icons/kit/kit_coprog_contenuti.svg"
+        resources:
+          - title: Tema scuole per Wordpress
+            icon: "/assets/icons/external-link-.svg"
+            description: Il tema del sito scolastico per Wordpress
+            link: <a href='https://github.com/italia/design-scuole-wordpress-theme' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+        footer:
+          - icon: "/assets/icons/external-link-grey.svg"
+            text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
+      - title: App di valutazione dell'adesione al modello
+        text: "<p>Un applicativo desktop a supporto degli sviluppatori che aiuta a valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità della misura <em>1.4.1 Esperienza del cittadino nei servizi pubblici digitali</em>.</p> <p>Se ne raccomanda l’uso in tutte le fasi di sviluppo del sito per individuare prontamente eventuali aspetti di miglioramento. L’app è in <strong>versione beta</strong> e quindi soggetta a revisioni e perfezionamenti.</p>"
+        img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
+        resources:
+          - title: Documentazione tecnica
+            description: Scopri di più sull’app, controlla i requisiti tecnici e segui le istruzioni per l'installazione  
+            link: <a href='https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/it/versione-attuale/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            icon: "/assets/icons/external-link.svg"
+          - title: File di installazione
+            description: Scarica l’app adatta al tuo sistema operativo dal repository GitHub 
+            link: <a href='https://github.com/italia/pa-website-validator/releases' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            icon: "/assets/icons/external-link.svg"
+tags:
+  - user-stories
+  - stakeholder
+  - human-centered-design
+  - x-mind
 ---
-
-{:.u-color-50}
-###### CHE COS’È
-
-{:.u-color-50 .u-margin-bottom-xxl}
-#### Questo kit è una raccolta di risorse sviluppate appositamente per realizzare il sito di una scuola (ma utilizzabili per qualsiasi altro progetto digitale per la scuola italiana), con l’obiettivo finale di offrire un’esperienza d’uso efficace per il cittadino nel rispetto delle linee guida di design.
-
-{% include simplecarousel.html  %}
-
-{:.u-color-50 .u-margin-top-xxl}
-###### COME SI UTILIZZA
-Per creare il sito di una scuola utilizza il [documento di architettura dell'informazione](https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing) come guida per la struttura dei contenuti, il sistema di navigazione e i flussi di interazione.
-
-Con i template HTML (basati sul kit [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e conformi alle linee guida di design) potrai realizzare il front-end dell’intero sito. Il kit è indipendente dalle scelte tecnologiche di una scuola, come la scelta di un CMS. Rappresentando uno standard, favorisce l’utilizzo di soluzioni tecnologiche condivise e la diffusione di best practice.
-
-[Vai ai template](https://github.com/italia/design-scuole-pagine-statiche/)
-
-Un primo tema per il CMS [WordPress](https://it.wordpress.org/){:target="_blank" rel="noopener noreferrer"} è già disponibile in modalità open-source e rappresenta la soluzione più rapida per aderire al nuovo modello di sito scolastico.
-
-[Vai al tema WordPress](https://github.com/italia/design-scuole-wordpress-theme)
-
-
-Attraverso gli strumenti di Designers Italia e Developers Italia è possibile interagire, confrontarsi, ricevere feedback sul progetto e partecipare alla sua evoluzione. In particolare, è disponibile il canale Slack #design-siti-scuole a disposizione delle scuole per confrontarsi e condividere soluzioni.
-
-[Vai al canale Slack](https://slack.developers.italia.it/){:target="_blank" rel="noopener"}
-
-{:.u-color-50 .u-margin-top-xxl}
-###### A COSA SERVE
-Il kit permette alle scuole di semplificare la realizzazione del sito e organizzare le informazioni in modo efficace e senza “dover reinventare ogni volta la ruota”, riducendo tempi e costi.
-
-Esso permette di concentrarsi sulla produzione di servizi digitali e contenuti di qualità (all’interno di modelli di interazione con l’utente già definiti e contenuti all’interno del kit).
-
-L’utilizzo del kit per il design dei siti delle scuole, che è bene inserire all’interno dei capitolati tecnici in caso di affidamento all’esterno di attività di sviluppo web, permette di attuare le linee guida di design dei siti web della Pubblica Amministrazione.
-
-Il kit è l’esito di un lungo percorso di analisi dell’esistente e di ricerca con gli utenti (famiglie, studenti, personale scolastico) che ha permesso di fare una mappa dei bisogni e definire le priorità. La ricerca e il concept hanno un valore più ampio rispetto alla realizzazione del sito web e sono a disposizione dell’intero sistema scolastico (comprese naturalmente le software house che realizzano prodotti per la scuola) come base per la definizione delle proprie attività digitali. L’intera attività di ricerca e definizione di scenari d’uso è disponibile nella documentazione di progetto.
-
-[Vai alla documentazione di progetto](https://docs.italia.it/italia/designers-italia/design-scuole-docs/)
-
-{:.u-color-50 .u-margin-top-xxl}
-###### COSA CONTIENE QUESTO KIT
-All’interno del kit è presente un documento di architettura dell’informazione che definisce e organizza le informazioni contenute all’interno del sito di una scuola e rappresenta la guida per la realizzazione delle strutture di front-end e di backend.
-
-In particolare, contiene indicazioni su content type, sistemi di navigazione e tassonomie per tutte le aree del sito: descrizione dell’organizzazione, pubblicazione di documenti, notizie ed eventi, presentazione dei servizi e dei percorsi di studio oltre naturalmente alla homepage e al motore di ricerca.
-
-I template HTML pronti all’uso (basati sul kit [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) e conformi alle linee guida di design) permettono di costruire il front-end completo del sito (cioè senza dover realizzare nuovi template).
-
-Il kit non contiene una descrizione dettagliata delle caratteristiche dei singoli servizi e percorsi di studio di una scuola (che possono cambiare da scuola a scuola), ma propone un modello strutturato di descrizione e diversi esempi pratici tratti dai progetti pilota realizzati insieme alle prime scuole italiane che hanno aderito al modello.
-
-La realizzazione di un sito aderente a questo modello richiede in genere un’attività iniziale di produzione dei contenuti che non erano presenti - o erano presenti in maniera poco strutturata - sul sito scolastico (in particolare relativi all’organizzazione della scuola, ai servizi scolastici e ai percorsi di studio).
-
-Altri contenuti, come documenti e notizie, possono essere migrati dal sito precedente verso il nuovo sito che si sta realizzando.
-
-La mappatura dei contenuti esistenti, la scrittura e la riscrittura dei contenuti e il cambiamento dei dati inseriti può essere realizzata utilizzando metodi e strumenti previsti kit [Contenuti e linguaggio]({% link _kits/it/contenuti-linguaggio.md %}).
