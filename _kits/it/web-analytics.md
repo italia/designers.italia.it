@@ -41,7 +41,7 @@ superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
     - title: Monitora i dati di traffico della tua soluzione digitale
-      text: "<p>Esistono numerosi software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali. In questa scheda ti proponiamo una lista di alcune fra le principali piattaforme che puoi utilizzare per il tracciamento, l'elaborazione e la condivisione dei dati statistici della tua soluzione digitale, in completa aderenza alla normativa GDPR.</p>"
+      text: "<p>Esistono numerosi software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali. In questa scheda ti proponiamo una lista di alcune fra le principali piattaforme che puoi utilizzare per il monitoraggio, l'elaborazione e la condivisione dei dati statistici della tua soluzione digitale, in completa aderenza alla normativa GDPR.</p>"
       img: "/assets/icons/kit/kit_analytics_usa.svg"
       resources:
         - title: Matomo analytics
