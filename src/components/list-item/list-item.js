@@ -98,7 +98,7 @@ const ListItem = ({
 	}
 	//-se è all'interno di un dropdown
 	if (isDropdown) {
-		listContent = <a className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined}  href={url}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</a>
+		listContent = <a className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined}  href={url}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</a>
 	}
 	//- se è una lista semplice
 	if (simpleList) {
