@@ -56,10 +56,10 @@ ctaContent:
       iconImage: "/assets/images/modelli/pad2026-C.svg"
       iconAlt: ""
       links:
-        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html"
+        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html"
           title: Vai ai requisiti per il sito
           external: true
-        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html"
+        - url: "https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-servizi-digitali.html"
           title: Vai ai requisiti per i servizi
           external: true
 
@@ -100,8 +100,8 @@ coreContent:
   rightColumnItems:
     - title: DOCUMENTI UTILI
       items:
-        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
-        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale.html' target="_blank">Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html' target="_blank">La conformità al modello</a>
   cta:
     text: "Hai bisogno di chiarimenti o supporto tecnico? Consulta le domande frequenti o scrivici"
     buttonTitle: "Vai al supporto di PA digitale 2026"
@@ -122,7 +122,7 @@ coreContent:
           - title: Guida alla migrazione dei contenuti
             icon: "/assets/icons/pencil.svg"
             description: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale
-            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/modello-sito-comunale/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale/guida-migrazione-contenuti.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             otherResources:
               - description: Modello di analisi dei contenuti
                 link: <a href='https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing' target="_blank" aria-label="Vai all'esempio (link esterno)">Vai alla risorsa</a>
@@ -165,7 +165,18 @@ coreContent:
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."
-
+      - title: App di valutazione dell'adesione al modello
+        text: "<p>Un applicativo desktop a supporto degli sviluppatori che aiuta a valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità della misura <em>1.4.1 Esperienza del cittadino nei servizi pubblici digitali</em>.</p> <p>Se ne raccomanda l’uso in tutte le fasi di sviluppo del sito per individuare prontamente eventuali aspetti di miglioramento. L’app è in <strong>versione beta</strong> e quindi soggetta a revisioni e perfezionamenti.</p>"
+        img: "/assets/icons/kit/kit_linguaggio_analizza.svg"
+        resources:
+          - title: Documentazione tecnica
+            description: Scopri di più sull’app, controlla i requisiti tecnici e segui le istruzioni per l'installazione  
+            link: <a href='https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/it/versione-attuale/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            icon: "/assets/icons/external-link.svg"
+          - title: File di installazione
+            description: Scarica l’app adatta al tuo sistema operativo dal repository GitHub 
+            link: <a href='https://github.com/italia/pa-website-validator/releases' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            icon: "/assets/icons/external-link.svg"
 serviziContent:
   title: I nuovi flussi di servizi digitali per il cittadino
   subtitle: I principali servizi comunali a portata di clic
@@ -176,8 +187,8 @@ serviziContent:
   rightColumnItems:
     - title: DOCUMENTI UTILI
       items:
-        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
-        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' target="_blank" >La conformità ai servizi</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizio.html' target="_blank" >Come usare le risorse</a>
+        - <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-servizi-digitali.html' target="_blank" >La conformità ai servizi</a>
   cardsTitle: "QUALI SONO"
   cards:
     - title: "Vantaggi economici"
@@ -294,7 +305,7 @@ serviziContent:
         resources:
           - title: Checklist delle attività progettuali
             description: Usa la checklist per tenere traccia delle attività chiave da svolgere
-            link: <a href='https://docs.google.com/document/d/1E76BHQ5BnyopPU8_7i6VLfeteGxT1CttHnnuM3g5xb8/edit#' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.google.com/document/d/1DqLvGOP4QNkRXG0bObjTOxxUIOJ3tR3Obbq4FruWpys/edit?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
             icon: "/assets/icons/external-link.svg"
           - title: Tipologie di flussi di servizio
             description: Individua il flusso di interazione in cui rientra il servizio scelto e da quali componenti è composto
@@ -303,7 +314,7 @@ serviziContent:
           - title: Criteri di conformità
             description: Tutti i requisiti minimi da rispettare per l’adesione al modello e le raccomandazioni aggiuntive per migliorare l’esperienza utente 
             icon: "/assets/icons/external-link.svg"
-            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/v2022.1/flussi-di-servizi/conformita-flussi-servizio.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+            link: <a href='https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-servizi-digitali.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
           - title: Catalogo del riuso
             description: Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni
             icon: "/assets/icons/external-link.svg"
@@ -334,13 +345,19 @@ serviziContent:
                 link: <a href='https://drive.google.com/file/d/1pJs7JBZA2YvBycLrWeKVbyOPSZ23Zy_x/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
           - title: Libreria dei componenti
-            description: Tutti i componenti che compongono l'interfaccia di un servizio digitale
+            description: Tutti i componenti per l'interfaccia del modello di sito e dei servizi digitali
+            otherResources:
+              - description: Libreria per Figma
+                link: <a href="https://www.figma.com/file/6J9UCfPJkKYvtFo6Va31Ls/Designers-Italia---Organismi-Hi-Fi?node-id=184%3A26301" aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                icon: "/assets/icons/external-link.svg"
+              - description: Libreria per Sketch
+                disabled: true
+          - title: Documentazione Moduli e Sezioni
+            description: I moduli e le sezioni necessari per la creazione di servizi comunali digitali
             otherResources:
               - description: Libreria per Figma
                 link: <a href="https://www.figma.com/file/WkVMh3JnkyUQGE3POb0TSI/Designers-Italia---Documentazione-Moduli-e-Sezioni?node-id=0%3A1" aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
-              - description: Libreria per Sketch
-                disabled: true
         footer:
           - icon: "/assets/icons/external-link-grey.svg"
             text: "Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra."

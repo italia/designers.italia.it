@@ -18,7 +18,7 @@ textChunk1:
   title: A COSA SERVE
   text: "<p>Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponda in maniera adeguata ai bisogni degli utenti.</p>
   <p>L’analisi dei dati di traffico web (web analytics) risponde proprio a questa esigenza e le piattaforme per <strong>raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito</strong>. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le <strong>decisioni che riguardano design e re-design dei servizi</strong>, in ottica <em>data-driven</em>.</p>
-  <p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo la piattaforma di web analytics open source - costruita ad hoc per la Pubblica Amministrazione - Web Analytics Italia (WAI).</p>"
+  <p>Questo kit ha la finalità di aiutarti a capire come sfruttare la web analytics per comprendere come i tuoi utenti fruiscono i servizi. Ha inoltre l’obiettivo di mostrarti come i dati possono indirizzare azioni di ottimizzazione delle performance, utilizzando in primo luogo piattaforme di web analytics di tipo open source. </p>"
 
 guideLinesChunk:
   title: MANUALE OPERATIVO DI DESIGN
@@ -40,16 +40,30 @@ footerItems:
 superAccordion:
   title: ATTIVITÀ E RISORSE
   accordions:
-    - title: Usa Web Analytics Italia
-      text: "<p>La piattaforma Web Analytics Italia (WAI) è una soluzione open source creata ad hoc dall'Agenzia per l'Italia Digitale per la raccolta e l'analisi dei dati di traffico dei siti web delle amministrazioni pubbliche.</p> <p>WAI ha la finalità di aiutare gli operatori della PA a migliorare l'usabilità dei <em>touchpoint</em> digitali grazie al monitoraggio continuo, l'elaborazione e la condivisione dei dati statistici di analisi web dei siti web aderenti al progetto, in completa aderenza alla normativa GDPR.</p>"
+    - title: Monitora i dati di traffico della tua soluzione digitale
+      text: "<p>Esistono numerosi software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali. In questa scheda ti proponiamo una lista di alcune fra le principali piattaforme che puoi utilizzare per ottenere informazioni statistiche relarive all'uso della tua soluzione digitale, nel rispetto della normativa vigente.</p>"
       img: "/assets/icons/kit/kit_analytics_usa.svg"
       resources:
-        - title: La piattaforma Web Analytics Italia
+        - title: Matomo analytics
           icon: "/assets/icons/pencil.svg"
-          description: Un servizio open source dedicato alla raccolta e all'analisi dei dati di traffico dei servizi digitali della PA
-          link: <a href='https://webanalytics.italia.it/' aria-label="Vai alla piattaforma WAI (link esterno)">Vai alla piattaforma</a>
+          description: "Matomo è una piattaforma di web analytics open source."
+          link: <a href='https://developers.italia.it/it/software/italia-software-matomo-32c75d' aria-label="Vai alla scheda di Matomo analytics (link esterno)">Vai alla scheda di Matomo analytics</a>
           otherResources:
-            - description: Guida utente WAI
+            - description: Guida utente di Matomo analytics
+              link: <a href='https://matomo.org/guides/' target="_blank" aria-label="Vai alla risorsa (link esterno in lingua inglese)" >Vai alla risorsa (lingua inglese)</a>
+        - title: Plausible analytics
+          icon: "/assets/icons/pencil.svg"
+          description: "Plausible è una piattaforma di web analytics open source."
+          link: <a href='https://developers.italia.it/it/software/italia-software-plausible-a9b3cb' aria-label="Vai alla scheda di Plausible analytics (link esterno)">Vai alla scheda di Plausible analytics</a>
+          otherResources:
+            - description: Guida utente di Plausible
+              link: <a href='https://plausible.io/docs' target="_blank" aria-label="Vai alla risorsa (link esterno in lingua inglese)" >Vai alla risorsa (lingua inglese) </a>
+        - title: Web Analytics Italia (WAI)
+          icon: "/assets/icons/pencil.svg"
+          description: "WAI è una soluzione open source creata da AGID per il monitoraggio dei siti web delle PA."
+          link: <a href='https://webanalytics.italia.it/' aria-label="Vai a Web Analytics Italia(link esterno)">Vai a Web Analytics Italia</a>
+          otherResources:
+            - description: Guida utente di Web Analytics Italia
               link: <a href='https://docs.italia.it/AgID/wai/wai-user-guide-docs/it/stabile/index.html' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
@@ -57,7 +71,7 @@ superAccordion:
         - icon: "/assets/icons/info-grey.svg"
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
     - title: Crea e condividi una dashboard con altre piattaforme
-      text: "<p>Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics: potrai visualizzare metriche e dimensioni d'analisi di tuo interesse nello stesso template e popolare i widget con i dati di performance di tuo interesse</p>"
+      text: "<p>Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source: potrai visualizzare metriche e dimensioni d'analisi di tuo interesse nello stesso template e popolare i widget con i dati di performance del tuo sito o servizio.</p>"
       img: "/assets/icons/kit/kit_analytics_creaDashboards.svg"
       resources:
         - title: Crea una dashboard con Matomo

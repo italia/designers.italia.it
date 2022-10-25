@@ -39,7 +39,7 @@ superAccordion:
   accordions:
     - title: Schematizza il contesto d'uso del servizio
       text: "<p>Identifica tutte le figure con cui l’utente si trova a interagire in prima persona, ma anche quelle che, dietro le quinte, consentono l’erogazione del servizio: in questo modo potrai comprendere come il ruolo dei diversi attori ha un impatto sia sul progetto che sull'utente/cittadino.</p>
-      <p>Gli strumenti ti aiutano poi a sintetizzare lo stato dell’arte del servizio e approfondire la comprensione dei processi e infrastrutture che lo compongono, schematizzando le transazioni che avvengono tra gli diversi attori e touchpoint coinvolti, anche mettendo in evidenza eventuali inefficienze del sistema.</p>"
+      <p>Gli strumenti ti aiutano poi a sintetizzare lo stato dell’arte del servizio e approfondire la comprensione dei processi e infrastrutture che lo compongono, schematizzando le transazioni che avvengono tra i diversi attori e touchpoint coinvolti, anche mettendo in evidenza eventuali inefficienze del sistema.</p>"
       img: "/assets/icons/kit/kit_analisiContesto_schematizza.svg"
       resources:
         - title: Mappa degli attori
