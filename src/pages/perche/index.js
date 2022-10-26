@@ -9,6 +9,7 @@ import Pagedata from "../../data/pages/perche/index.yaml"
 import ImageIcons from "../../components/image-icons/image-icons"
 import HighlightCards from "../../components/highlight-cards/highlight-cards"
 import Topics from "../../components/topics/topics"
+import TextImageCta from "../../components/text-image-cta/text-image-cta"
 
 const Perche = () => {
   return(
