@@ -1,10 +1,10 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import gfm from "remark-gfm"
-import Template from "../../templates/default"
+import Template from "../../templates/level-1"
 import {Seo} from "../../components/seo/seo"
 import TestYaml from "../../components/test-yaml/test-yaml"
-import Pagedata from "./home.yaml"
+import Pagedata from "./various.yaml"
 
 const Yaml = ({data}) => {
 	return (

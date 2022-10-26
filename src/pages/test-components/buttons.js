@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/default"
+import Template from "../../templates/level-1"
 import {Seo} from "../../components/seo/seo"
 import Button from "../../components/button/button"
 import Pagedata from "./buttons.yaml"

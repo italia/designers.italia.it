@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/default"
+import Template from "../../templates/level-1"
 import {Seo} from "../../components/seo/seo"
 import Dropdown from "../../components/dropdown/dropdown"
 import List from "../../components/list/list"

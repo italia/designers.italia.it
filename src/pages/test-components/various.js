@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/default"
+import Template from "../../templates/level-1"
 import {Seo} from "../../components/seo/seo"
 import Icon from "../../components/icon/icon"
 import Button from "../../components/button/button"
@@ -12,7 +12,7 @@ import Chip from "../../components/chip/chip"
 import Tag from "../../components/tag/tag"
 import NavPreFooter from "../../components/nav-pre-footer/nav-pre-footer"
 import ResourceList from "../../components/resource-list/resource-list"
-import Pagedata from "./home.yaml"
+import Pagedata from "./various.yaml"
 
 
 
