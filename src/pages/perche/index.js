@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/default"
+import Template from "../../templates/level-1"
 import {Seo} from "../../components/seo/seo"
 import Hero from "../../components/hero/hero"
 import SectionIntro from "../../components/section-intro/section-intro"
@@ -8,6 +8,8 @@ import Highlight from "../../components/highlight/highlight"
 import Pagedata from "../../data/pages/perche/index.yaml"
 import ImageIcons from "../../components/image-icons/image-icons"
 import HighlightCards from "../../components/highlight-cards/highlight-cards"
+import Topics from "../../components/topics/topics"
+import TextImageCta from "../../components/text-image-cta/text-image-cta"
 
 const Perche = () => {
   return(
@@ -25,6 +27,8 @@ const Perche = () => {
     <ImageIcons {...Pagedata.components.imageIcons}/>
 
     <HighlightCards {...Pagedata.components.highlightCards} />
+
+    <Topics {...Pagedata.components.topics}/>
 
     </Template>
   )

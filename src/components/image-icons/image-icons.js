@@ -6,8 +6,12 @@ const ImageIcons = ({
   image,
   alt,
   icons,
-  images
+  images,
+  background,
 }) => {
+
+  let styles = 'image-icons'
+	+ `${background ? ' bg-'+background : ''}`
 
   let iconItems
   let imagesItems
@@ -32,17 +36,18 @@ const ImageIcons = ({
 
 
   return (
-    <div className="image-icons">
+    <div className={styles}>
       <div className="container-xxl">
         <div className="row position-relative">
           <div className="col">
             <img src={image} alt={alt} className="img-fluid w-100"/>
           </div>
-          {iconItems &&
-            <div className="icons position-absolute top-0 start-50 translate-middle-x h-100 d-flex align-items-center justify-content-between">
-                {iconItems}
-                {imagesItems}
-            </div>
+          {(iconItems || imagesItems) && (
+              <div className="icons position-absolute top-0 start-50 translate-middle-x h-100 d-flex align-items-center justify-content-between">
+                  {iconItems}
+                  {imagesItems}
+              </div>
+            )
           }
         </div>
       </div>

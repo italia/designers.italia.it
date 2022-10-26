@@ -24,7 +24,7 @@ const Hero =({
 
 })=>{
   let styles = 'hero'
-  + `${background ? ' '+background : ''}`
+  + `${background ? ' bg-'+background : ''}`
   //heading level
 	let HLevel
   let SubtitleLevel
