@@ -26,7 +26,9 @@ const Perche = () => {
 
     <ImageIcons {...Pagedata.components.imageIcons}/>
 
-    <HighlightCards {...Pagedata.components.highlightCards} />
+    <HighlightCards {...Pagedata.components.highlightCards1} />
+
+    <HighlightCards {...Pagedata.components.highlightCards2} />
 
     <Topics {...Pagedata.components.topics}/>
 

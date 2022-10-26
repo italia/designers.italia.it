@@ -2,6 +2,7 @@
 
 .di-card {
 	box-shadow: var(--card-box-shadow);
+
 	.img-wrapper {
 		position: relative;
 		img {
@@ -44,6 +45,8 @@
 	}
 	.di-card-body {
 		height: 100%;
+    position: relative;
+    z-index: 1;
 	}
 	.simple-cta{
 		& + * {

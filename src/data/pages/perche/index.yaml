@@ -177,10 +177,11 @@ components:
       alt: descrizione immagine piccola
     - img: /images/conversation.svg
       alt: descrizione immagine piccola
-  highlightCards:
+  highlightCards1:
     id: highlightCards1
     title: Articoli di approfondimento
     text: La teoria che sta dietro alla pratica di Designers Italia
+    col4: false
     buttons:
     - type: button
       btnStyle: primary
@@ -353,6 +354,209 @@ components:
           label : PA Digitale 2026
           url : "#"
           blank: false
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              iconRight: true
+              ariaLabel: Condividi su Linkedin
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+  highlightCards2:
+    id: highlightCards2
+    title: Media
+    text: Registrazioni degli eventi, tutorial tecnici e video dalle feste del progetto Designers Italia
+    col4: true
+    buttons:
+    - type: button
+      btnStyle: primary
+      label: Esplora tutti i media
+      addonStyle: d-block
+    cards:
+    - title: "Community Call: il bottone SPID e gli altri"
+      img: /images/highlight-big.jpg
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      rounded: true
+      url: "#"
+      author: durata 21 minuti
+      iconOverlay:
+        icon: sprites.svg#it-camera
+      tag:
+        url: "#"
+        label: Registrazione
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              iconRight: true
+              ariaLabel: Condividi su Linkedin
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: Come usare il design system del Paese quando sei al mare
+      img: /images/highlight-sm.jpg
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      rounded: true
+      url: "#"
+      author: durata 1 minuto
+      iconOverlay:
+        icon: sprites.svg#it-camera
+      tag:
+        url: "#"
+        label: Tutorial
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              iconRight: true
+              ariaLabel: Condividi su Linkedin
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: Fanelli parla di Designers Italia
+      img: /images/highlight-big.jpg
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      rounded: true
+      url: "#"
+      author: durata 21 minuti
+      iconOverlay:
+        icon: sprites.svg#it-hearing
+      tag:
+        url: "#"
+        label: Podcast
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              iconRight: true
+              ariaLabel: Condividi su Linkedin
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
+      img: /images/highlight-sm.jpg
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      rounded: true
+      url: "#"
+      author: durata 8 minuti
+      iconOverlay:
+        icon: sprites.svg#it-camera
+      tag:
+        url: "#"
+        label: Registrazione
       share:
         btnId: shareButton
         button:
