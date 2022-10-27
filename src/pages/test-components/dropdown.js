@@ -8,10 +8,10 @@ import Pagedata from "./dropdown.yaml"
 const Buttons = () => {
 	return (
 	  <Template>
-			<div className="container mt-3 mb-3">
+			<div className="container-xxl my-5">
 				<div className="row">
 					<div className="col-12">
-						<h1>{Pagedata.name}</h1>
+						<h1 className="mb-5">{Pagedata.name}</h1>
 						<h2>Simple dropdown</h2>
 						<Dropdown {...Pagedata.components.dropdownSimple}></Dropdown>
 						<h2 className="mt-3">Dropdown button varianti</h2>

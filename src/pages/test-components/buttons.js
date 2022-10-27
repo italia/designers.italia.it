@@ -7,10 +7,10 @@ import Pagedata from "./buttons.yaml"
 const Buttons = () => {
 	return (
 	  <Template>
-			<div className="container mt-3 mb-3">
+			<div className="container-xxl my-5">
 				<div className="row">
 					<div className="col-12">
-						<h1>{Pagedata.name}</h1>
+						<h1 className="mb-5">{Pagedata.name}</h1>
 						<h2>Simple Button</h2>
 						<Button {...Pagedata.components.button1}></Button>
 						<Button type="button>">Button da dati in pagina</Button>

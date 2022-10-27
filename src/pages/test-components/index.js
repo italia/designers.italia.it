@@ -7,7 +7,7 @@ const Index = () => {
   return(
     <Template>
       <div className="container-xxl py-5 py-lg-6">
-      <h1>{Pagedata.name}</h1>
+      <h1 className="mb-5">{Pagedata.name}</h1>
         <List {...Pagedata.components.list}></List>
       </div>
     </Template>

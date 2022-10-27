@@ -7,10 +7,10 @@ import Pagedata from "./text-image-cta.yaml"
 const Buttons = () => {
 	return (
 	  <Template>
-			<div className="container mt-3 mb-3">
+			<div className="container-xxl my-5">
 				<div className="row justify-content-center">
           <div className="col-12 mb-3">
-          <h1>{Pagedata.name}</h1>
+          <h1 className="mb-5">{Pagedata.name}</h1>
           </div>
 					<div className="col-12 col-md-10 col-lg-7">
 

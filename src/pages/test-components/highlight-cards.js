@@ -1,22 +1,23 @@
 import * as React from "react"
 import Template from "../../templates/level-1"
 import {Seo} from "../../components/seo/seo"
-import Highlight from "../../components/highlight/highlight"
-import Pagedata from "./highlight.yaml"
+import HighlightCards from "../../components/highlight-cards/highlight-cards"
+import Pagedata from "./highlight-cards.yaml"
 
 const Highlights = () => {
 	return(
 		<Template>
       <div className="container-xxl my-5">
-        <div className="row">
-          <div className="col-12">
-            <h1 className="mb-5">{Pagedata.name}</h1>
+				<div className="row">
+					<div className="col-12">
+						<h1 className="mb-5">{Pagedata.name}</h1>
           </div>
         </div>
       </div>
-			{ Pagedata.components.highlights.map((hl,index) => {
+
+			{ Pagedata.components.highlightCards.map((hl,index) => {
           return(
-            <Highlight key={"hl-"+index} {...hl}/>
+            <HighlightCards key={"hl-"+index} {...hl}/>
           )
         })}
 		</Template>
