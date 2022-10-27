@@ -45,7 +45,7 @@ const Feedback = ({
         <div className="row d-flex justify-content-center">
           <div className="col-12 col-lg-6">
             <div className="card shadow card-wrapper rounded">
-              <div className="cmp-rating__card-first">
+              <div>
                 <div className="card-body p-5">
                   {/* ----------- feedback intro  ----------- */}
                   <div className="step" id="feedbackIntro">
@@ -54,7 +54,7 @@ const Feedback = ({
                     <Button {...introBtn2}/>
                   </div>
                   {/* ----------- feedback step 1 ----------- */}
-                  <div className="step d-none" id="feedbackStep1">
+                  {/*<div className="step d-none" id="feedbackStep1">
                     <h2 className="mb-3">Grazie per la tua risposta! Aiutaci a migliorare.</h2>
                     <form>
                       <fieldset>
@@ -87,9 +87,9 @@ const Feedback = ({
                       <Button {...btnFw}/>
                       <Button {...btnBk}/>
                     </form>
-                  </div>
+                  </div>*/}
                   {/* ----------- feedback step 2 ----------- */}
-                  <div className="step d-none" id="feedbackStep2">
+                  {/*<div className="step d-none" id="feedbackStep2">
                     <h2 className="mb-3">Ancora una curiosità</h2>
                     <form>
                       <fieldset>
@@ -126,7 +126,7 @@ const Feedback = ({
                       <Button {...btnFw}/>
                       <Button {...btnBk}/>
                     </form>
-                  </div>
+                  </div>*/}
                   {/* ----------- feedback step 3 ----------- */}
                   <div className="step d-none" id="feedbackStep3">
                     <h2 className="mb-4">Il tuo parere è importante per noi, se hai ancora tempo</h2>
