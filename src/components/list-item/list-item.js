@@ -4,11 +4,15 @@ import Avatar from "../avatar/avatar"
 
 const ListItem = ({
 	url,             //link of item
+  blank,
 	isDropdown,      //true / false
 	children,        //usually label of link
 	active,          //state of the link
 	disabled,        //disabled state
-	label,           //text
+	label,           //label
+  srBefore,        // screenreader text before label
+  srAfter,         // screenreader text after label
+  text,            //text under the label
 	visuallyHidden,  //screen reader active state
 	divider,
 	textLarge,		  //bigger text
@@ -26,79 +30,83 @@ const ListItem = ({
 	addonClasses
 
 }) => {
-	var styles = url ? undefined : "list-item"
+	let styles = url ? undefined : "list-item"
 
 	//icon render
-	var iconRendered
+	let iconRendered
 	if (icon) {
 		iconRendered = <Icon {...icon}/>
 	}
 	//icon render simple list
-	var iconRenderedSimpleList
+	let iconRenderedSimpleList
 	if (icon) {
 		iconRenderedSimpleList = <div className="it-rounded-icon"><Icon {...icon}/></div>
 	}
 	// arrow right
-	var actionRendered
+	let actionRendered
 	if (action){
 		actionRendered = <Icon {...icon}></Icon>
 	}
 
 	//immagine
-	var imgRendered
+	let imgRendered
 	if(img) {
 		imgRendered = <div className="it-thumb"><img src={img} alt={alt}/></div>
 	}
-	//-vartura label
+	// label
 	if(label){
 		children = label
 	}
 
 	//-avatar
-	var avatarRendered
+	let avatarRendered
 	if(avatar){
 		avatarRendered = <Avatar {...avatar}/>
 	}
 
 	//link
-	var listContent
+	let listContent
 	listContent = <span>{children}</span>
 
 	//screen reader rule
-	var isActive
+	let isActive
 	if (active) {
 		isActive = <span className="visually-hidden">{visuallyHidden}</span>
 	}
 
 	//multiple actions right
-	var actionsRendered
-	var icons
+	let actionsRendered
+	let icons
 	if(actions) {
 		icons =  actions.map((icons,index) => {
-			return <a href={icons.url} aria-label={icons.ariaLabel} key={"iconsation-"+index} ><Icon {...icons}></Icon></a>
+			return <a href={icons.url} target={icons.blank ? '_blank' : undefined} aria-label={icons.ariaLabel} key={"iconsation-"+index} ><Icon {...icons}></Icon></a>
 		})
-		actionsRendered = <span className="it-multiple">{icons}</span>
+		actionsRendered = <span className="it-multiple flex-shrink-0">{icons}</span>
 	}
 	// metadata
-	var metadataRendered
+	let metadataRendered
 	if (metadata) {
 		metadataRendered = <span className="metadata">{metadata.label}</span>
 		if(metadata.url) {
 			metadataRendered = <a href="#">{metadataRendered}</a>
 		}
 	}
-	var metadataActionsRendered
+	let metadataActionsRendered
 	// metadata & multiple actions
 	if (metadata && actions) {
-		metadataActionsRendered = <span className="it-multiple">{metadataRendered}{icons}</span>
+		metadataActionsRendered = <span className="it-multiple flex-shrink-0">{metadataRendered}{icons}</span>
 	}
 	//-se esiste un link
 	if (url) {
-		listContent = <a className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  href={url}>{iconLeft ? iconRendered: ''}<span>{children}</span>{isActive}{iconRight ? iconRendered: ''}</a>
+		listContent = <a className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  href={url} target={blank ? '_blank' : undefined}>{iconLeft ? iconRendered: ''}<span>{children}</span>{isActive}{iconRight ? iconRendered: ''}</a>
+	}
+  //-se esiste un link
+	if (url) {
+		listContent = <a className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  href={url} target={blank ? '_blank' : undefined}>{iconLeft ? iconRendered: ''}<span>{children}</span>{isActive}{iconRight ? iconRendered: ''}</a>
 	}
 	//-se è all'interno di un dropdown
 	if (isDropdown) {
-		listContent = <a className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined}  href={url}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</a>
+		listContent = <a className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined}  href={url} target={blank ? '_blank' : undefined}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</a>
 	}
 	//- se è una lista semplice
 	if (simpleList) {
@@ -117,18 +125,43 @@ const ListItem = ({
 	}
 	//- se è una lista semplice con link
 	if (simpleList && url) {
-		listContent = 	<a className={`list-item ${active ? ' active' : ''}`} href={url}>
+		listContent = 	<a className={`list-item ${active ? ' active' : ''}`} href={url} target={blank ? '_blank' : undefined}>
 			{iconLeft ? iconRenderedSimpleList : ''}
 			{imgRendered}
 			{avatarRendered}
 			<div className="it-right-zone">
-				<span className="text">{children}</span>
+				<span className="text">
+          {srBefore && <span className="visually-hidden">{srBefore}</span>}
+          {children}
+          {srAfter && <span className="visually-hidden">{srAfter}</span>}
+        </span>
 				{actionRendered}
 				{!metadataActionsRendered ? actionsRendered : ''}
 				{!metadataActionsRendered ? metadataRendered : ''}
 				{metadataActionsRendered}
 			</div>
 		</a>
+	}
+  //- se è una lista semplice con link ed actions
+	if (simpleList && url && actions) {
+		listContent = 	<div className={`list-item ${active ? ' active' : ''}`} >
+			{iconLeft ? iconRenderedSimpleList : ''}
+			{imgRendered}
+			{avatarRendered}
+			<div className="it-right-zone">
+        <a href={url} target={blank ? '_blank' : undefined}>
+          <span className="text">
+            {srBefore && <span className="visually-hidden">{srBefore}</span>}
+            {children}
+            {srAfter && <span className="visually-hidden">{srAfter}</span>}
+            {text && <em>{text}</em>}</span>
+        </a>
+				{actionRendered}
+				{!metadataActionsRendered ? actionsRendered : ''}
+				{!metadataActionsRendered ? metadataRendered : ''}
+				{metadataActionsRendered}
+			</div>
+		</div>
 	}
 	//- se è un divider
 	if (divider) {
