@@ -17,7 +17,7 @@ categories:
 ---
 
 <!-- MORE -->
-Qual è il **ruolo del design** nella Pubblica Amministrazione per creare servizi sempre più usabili, inclusivi ed equi? Come si conciliano la necessità di **inclusione** con la **velocità** del mondo digitale? Quali sinergie virtuose possono nascere fra **pubblico e privato?** In occasione della **Milano Digital Week 2022**, Designers Italia organizza, in collaborazione con Hublab, una** tavola rotonda** per rispondere a queste e altre domande. 
+Qual è il **ruolo del design** nella Pubblica Amministrazione per creare servizi sempre più usabili, inclusivi ed equi? Come si conciliano la necessità di **inclusione** con la **velocità** del mondo digitale? Quali sinergie virtuose possono nascere fra **pubblico e privato?** In occasione della **Milano Digital Week 2022**, Designers Italia organizza, in collaborazione con Hublab, una **tavola rotonda** per rispondere a queste e altre domande. 
 
 Insieme a **Marco Maria Pedrazzo**, Head of Design del Dipartimento per la trasformazione digitale, saranno presenti **Daniela Sangiorgi** del Politecnico di Milano, **Marco Tortoioli Ricci**, presidente di Associazione italiana design della comunicazione visiva (AIAP), **Flavio Sergio**, Managing Director, Head of Design ICEG (Italia, Europa Centrale, Grecia) di Accenture Song e **Alessandro Bider**, Head of Customer Experience di NeN.
 
