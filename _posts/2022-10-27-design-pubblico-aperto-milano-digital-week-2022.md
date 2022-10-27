@@ -5,7 +5,7 @@ excerpt_separator: <!-- MORE -->
 title: "Design Pubblico Aperto alla Milano Digital Week 2022"
 subtitle: "Appuntamento a venerdì 11 novembre per una tavola rotonda sulle buone pratiche di progettazione
 "
-date: 2022-10-26 09:00:00 +0200
+date: 2022-10-27 09:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
