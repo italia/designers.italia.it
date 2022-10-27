@@ -7,14 +7,9 @@
     &.negative-margin {
       margin-left: calc(var(--card-image-negative-margin) * -1);
       margin-right: calc(var(--card-image-negative-margin) * -1);
+      width: calc(100% + calc(var(--card-image-negative-margin)*2));
       img {
-        width: calc(100% + calc(var(--card-image-negative-margin)*2));
-      }
-      .date-overlay {
-        right: calc(var(--card-image-negative-margin) * -1);
-      }
-      .icon-overlay {
-        right: calc(var(--card-image-negative-margin) * -1);
+
       }
     }
 		img {
