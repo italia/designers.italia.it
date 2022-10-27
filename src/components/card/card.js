@@ -32,7 +32,7 @@ const Card =(
 	}
 )=>{
 	let styles = 'di-card d-md-flex flex-md-column w-100'
-    + `${fullHeight ? ' h-100' : ''}`
+    + `${fullHeight ? ' fullheight' : ''}`
     + `${rounded ? ' rounded' : ''}`
     + `${titleSmall ? ' title-small' : ''}`
 	let imgStyle = 'img-wrapper ratio'

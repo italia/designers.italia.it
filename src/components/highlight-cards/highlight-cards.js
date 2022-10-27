@@ -18,7 +18,7 @@ const HighlightCards = ({
   let styles = 'highlight-cards py-5 py-lg-6'
 	+ `${background ? ' bg-'+background : ''}`
 
-  let cardStyles = 'col col-md-6'
+  let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4 mb-lg-0'
 	+ `${col4 ? ' col-lg-3' : ' col-lg-4'}`
 
   let cardsItems
@@ -62,7 +62,7 @@ const HighlightCards = ({
           </div>
         </div>
         {cardsItems &&
-          <div className="row mb-4 mb-md-5">
+          <div className="row mb-4 mb-lg-5">
             {cardsItems}
           </div>
         }
