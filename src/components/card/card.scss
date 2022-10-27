@@ -2,9 +2,21 @@
 
 .di-card {
 	box-shadow: var(--card-box-shadow);
-
 	.img-wrapper {
 		position: relative;
+    &.negative-margin {
+      margin-left: calc(var(--card-image-negative-margin) * -1);
+      margin-right: calc(var(--card-image-negative-margin) * -1);
+      img {
+        width: calc(100% + calc(var(--card-image-negative-margin)*2));
+      }
+      .date-overlay {
+        right: calc(var(--card-image-negative-margin) * -1);
+      }
+      .icon-overlay {
+        right: calc(var(--card-image-negative-margin) * -1);
+      }
+    }
 		img {
 			object-fit: cover;
 		}
@@ -106,6 +118,14 @@
 			margin-bottom: calc(var(--spacer) * 4);
 		}
 	}
+  &.title-small {
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-size: var(--card-title-size-small);
+    }
+  }
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
