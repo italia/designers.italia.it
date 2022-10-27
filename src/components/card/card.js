@@ -9,7 +9,9 @@ import "./card.scss"
 
 const Card =(
 	{
+    cardEvent,
 		title,
+    titleSmall,
 		headingLevel,
 		url,
 		text,
@@ -22,7 +24,7 @@ const Card =(
 		dateOverlay,
 		chips,
 		externalLink,
-		author,
+		moreInfo,
 		imgPlaceholder,
 		iconImg,
     fullHeight,
@@ -30,12 +32,14 @@ const Card =(
 	}
 )=>{
 	let styles = 'di-card d-md-flex flex-md-column w-100'
-    + `${fullHeight ? ' h-100' : ''}`
+    + `${fullHeight ? ' fullheight' : ''}`
     + `${rounded ? ' rounded' : ''}`
+    + `${titleSmall ? ' title-small' : ''}`
 	let imgStyle = 'img-wrapper ratio'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 		+ `${imgPlaceholder ? ' img-placeholder' : ''}`
 		+ `${iconImg ? ' icon-img' : ''}`
+    + `${cardEvent ? ' mb-4 negative-margin' : ''}`
 
 
 	//heading level
@@ -45,45 +49,85 @@ const Card =(
 	} else {
 		HLevel = `h3`
 	}
-
-	return(
-		<div className={styles}>
-			{(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
-				{img && !imgPlaceholder && <img src={img} alt={title}/>}
-				{iconImg && <img src={iconImg} alt={title}/>}
-				{dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
-					<span className="day font-monospace">{dateOverlay.day}</span>
-					<span className="month">{dateOverlay.month}</span>
-				</div>}
-				{iconOverlay && <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
-					<Icon {...iconOverlay}></Icon>
-				</div>}
-			</div>}
-			<div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
-				<div className="text-zone">
-					{HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
-					{text && <ReactMarkdown>{text}</ReactMarkdown>}
-					{externalLink && <SimpleCta {...externalLink}></SimpleCta>}
-					{author && <span className="author font-monospace">{author}</span>}
-				</div>
-				{(tag || share || chips) && <div className="di-card-footer">
-					<div className="di-card-footer-content d-flex justify-content-between align-items-end">
-						{chips && <div className="chip-container">
-							{ chips.map((chip,index) => {
-								return(
-									<Chip key={"chip-"+index} {...chip}/>
-								)
-							})}
-						</div>}
-						{tag && <div className="tag-container">
-							<Tag {...tag}></Tag>
-						</div>}
-						{share && <Dropdown {...share}></Dropdown>}
-					</div>
-				</div>}
-			</div>
-		</div>
-	)
+  if (cardEvent) {
+    return(
+      <div className={styles}>
+        <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
+          <div className="text-zone">
+            {HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
+            {text && <ReactMarkdown>{text}</ReactMarkdown>}
+            {externalLink && <SimpleCta {...externalLink}></SimpleCta>}
+            {moreInfo && <span className="author font-monospace">{moreInfo}</span>}
+          </div>
+          {(tag || share || chips || img) && <div className="di-card-footer">
+            {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
+              {img && !imgPlaceholder && <img src={img} alt={title}/>}
+              {iconImg && <img src={iconImg} alt={title}/>}
+              {dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
+                <span className="day font-monospace">{dateOverlay.day}</span>
+                <span className="month">{dateOverlay.month}</span>
+              </div>}
+              {iconOverlay && <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
+                <Icon {...iconOverlay}></Icon>
+              </div>}
+            </div>}
+            <div className="di-card-footer-content d-flex justify-content-between align-items-end">
+              {chips && <div className="chip-container">
+                { chips.map((chip,index) => {
+                  return(
+                    <Chip key={"chip-"+index} {...chip}/>
+                  )
+                })}
+              </div>}
+              {tag && <div className="tag-container">
+                <Tag {...tag}></Tag>
+              </div>}
+              {share && <Dropdown {...share}></Dropdown>}
+            </div>
+          </div>}
+        </div>
+      </div>
+    )
+  }else{
+    return(
+      <div className={styles}>
+        {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
+          {img && !imgPlaceholder && <img src={img} alt={title}/>}
+          {iconImg && <img src={iconImg} alt={title}/>}
+          {dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
+            <span className="day font-monospace">{dateOverlay.day}</span>
+            <span className="month">{dateOverlay.month}</span>
+          </div>}
+          {iconOverlay && <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
+            <Icon {...iconOverlay}></Icon>
+          </div>}
+        </div>}
+        <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
+          <div className="text-zone">
+            {HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
+            {text && <ReactMarkdown>{text}</ReactMarkdown>}
+            {externalLink && <SimpleCta {...externalLink}></SimpleCta>}
+            {moreInfo && <span className="author font-monospace">{moreInfo}</span>}
+          </div>
+          {(tag || share || chips) && <div className="di-card-footer">
+            <div className="di-card-footer-content d-flex justify-content-between align-items-end">
+              {chips && <div className="chip-container">
+                { chips.map((chip,index) => {
+                  return(
+                    <Chip key={"chip-"+index} {...chip}/>
+                  )
+                })}
+              </div>}
+              {tag && <div className="tag-container">
+                <Tag {...tag}></Tag>
+              </div>}
+              {share && <Dropdown {...share}></Dropdown>}
+            </div>
+          </div>}
+        </div>
+      </div>
+    )
+  }
 }
 
 export default Card

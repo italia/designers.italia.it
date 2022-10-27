@@ -177,10 +177,11 @@ components:
       alt: descrizione immagine piccola
     - img: /images/conversation.svg
       alt: descrizione immagine piccola
-  highlightCards:
+  highlightCards1:
     id: highlightCards1
     title: Articoli di approfondimento
     text: La teoria che sta dietro alla pratica di Designers Italia
+    col4: false
     buttons:
     - type: button
       btnStyle: primary
@@ -211,7 +212,7 @@ components:
         icon:
           icon: sprites.svg#it-external-link
           size: xs
-      author: di Daniele Tabellini e Fabrizio Caccavello
+      moreInfo: di Daniele Tabellini e Fabrizio Caccavello
       chips:
         - color : secondary
           label : Accessibilità
@@ -275,7 +276,7 @@ components:
         icon:
           icon: sprites.svg#it-external-link
           size: xs
-      author: di Mauro Filippi
+      moreInfo: di Mauro Filippi
       chips:
         - color : secondary
           label : Accessibilità
@@ -339,7 +340,7 @@ components:
         icon:
           icon: sprites.svg#it-external-link
           size: xs
-      author: di Francesco Zaia
+      moreInfo: di Francesco Zaia
       chips:
         - color : secondary
           label : Accessibilità
@@ -388,6 +389,412 @@ components:
                 icon: sprites.svg#it-linkedin
                 color: primary
                 size: sm
+  highlightCards2:
+    id: highlightCards2
+    title: Media
+    text: Registrazioni degli eventi, tutorial tecnici e video dalle feste del progetto Designers Italia
+    col4: true
+    buttons:
+    - type: button
+      btnStyle: primary
+      label: Esplora tutti i media
+      addonStyle: d-block
+    cards:
+    - title: "Community Call: il bottone SPID e gli altri"
+      titleSmall: true
+      moreInfo : durata 21 minuti
+      cardEvent: true
+      img: /images/highlight-big.jpg
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      iconOverlay:
+        icon: sprites.svg#it-video
+      url: "#"
+      tag:
+        label: Registrazione
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: Come usare il design system del Paese quanso sei al mare
+      titleSmall: true
+      moreInfo : durata 1 minuto
+      cardEvent: true
+      img: /images/highlight-sm.jpg
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      iconOverlay:
+        icon: sprites.svg#it-video
+      url: "#"
+      tag:
+        label: Tutorial
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: Fanelli parla di Designers Italia
+      titleSmall: true
+      moreInfo : durata 21 minuti
+      cardEvent: true
+      img: /images/highlight-big.jpg
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      iconOverlay:
+        icon: sprites.svg#it-hearing
+      url: "#"
+      tag:
+        label: Podcast
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
+      titleSmall: true
+      moreInfo : durata 10 minuti
+      cardEvent: true
+      img: /images/highlight-sm.jpg
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      iconOverlay:
+        icon: sprites.svg#it-video
+      url: "#"
+      tag:
+        label: Registrazione
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+
+  highlightCards3:
+    id: highlightCards3
+    title: Eventi
+    text: I prossimi eventi dove trovare gli esperti di Designers Italia, e i cicli di eventi dedicati alla community curati dal progetto
+    background: light
+    col4: true
+    buttons:
+    - type: button
+      btnStyle: primary
+      label: Esplora il calendario eventi
+      addonStyle: d-block
+    cards:
+    - title: Designers Italia a Wired Next Festival
+      cardEvent: true
+      img: /images/highlight-sm.jpg
+      imgRatio: 4x3
+      fullHeight: true
+      imgPlaceholder: false
+      dateOverlay:
+        day: 22
+        month: Aprile
+      url: "#"
+      tag:
+        label: Invito
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: Community Lab sui temi dell’upgrade del Kit Design React
+      cardEvent: true
+      img: /images/highlight-big.jpg
+      imgRatio: 4x3
+      imgPlaceholder: false
+      fullHeight: true
+      dateOverlay:
+        day: 14
+        month: Agosto
+      url: "#"
+      tag:
+        label: Community Lab
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: "Eventone #1!()!A :-)"
+      cardEvent: true
+      img: /images/highlight-sm.jpg
+      imgRatio: 4x3
+      imgPlaceholder: false
+      fullHeight: true
+      dateOverlay:
+        day: 30
+        month: Settembre
+      url: "#"
+      tag:
+        label: Invito
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+    - title: Titolo dell’evento senza immagine!
+      cardEvent: true
+      imgRatio: 4x3
+      imgPlaceholder: true
+      fullHeight: true
+      dateOverlay:
+        day: 18
+        month: Dicembre
+      url: "#"
+      text: |
+        Descrizione **test**
+      tag:
+        label: Invito
+      share:
+        btnId: shareButton
+        button:
+          addonStyle: icon-only-drop
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isDropdown: true
+          listItems:
+            - url: "#"
+              ariaLabel: Condividi su Facebook
+              label: Facebook
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-facebook
+                color: primary
+                size: sm
+            - url: "#"
+              label: Twitter
+              ariaLabel: Condividi su Twitter
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-twitter
+                color: primary
+                size: sm
+            - url: "#"
+              label: Linkedin
+              ariaLabel: Condividi su Linkedin
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-linkedin
+                color: primary
+                size: sm
+
   topics:
     title: Nelle notizie si parla di
     icon:

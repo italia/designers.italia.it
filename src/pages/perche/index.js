@@ -9,7 +9,6 @@ import Pagedata from "../../data/pages/perche/index.yaml"
 import ImageIcons from "../../components/image-icons/image-icons"
 import HighlightCards from "../../components/highlight-cards/highlight-cards"
 import Topics from "../../components/topics/topics"
-import TextImageCta from "../../components/text-image-cta/text-image-cta"
 
 const Perche = () => {
   return(
@@ -26,7 +25,11 @@ const Perche = () => {
 
     <ImageIcons {...Pagedata.components.imageIcons}/>
 
-    <HighlightCards {...Pagedata.components.highlightCards} />
+    <HighlightCards {...Pagedata.components.highlightCards1} />
+
+    <HighlightCards {...Pagedata.components.highlightCards2} />
+
+    <HighlightCards {...Pagedata.components.highlightCards3} />
 
     <Topics {...Pagedata.components.topics}/>
 

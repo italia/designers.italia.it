@@ -4,6 +4,14 @@
 	box-shadow: var(--card-box-shadow);
 	.img-wrapper {
 		position: relative;
+    &.negative-margin {
+      margin-left: calc(var(--card-image-negative-margin) * -1);
+      margin-right: calc(var(--card-image-negative-margin) * -1);
+      width: calc(100% + calc(var(--card-image-negative-margin)*2));
+      img {
+
+      }
+    }
 		img {
 			object-fit: cover;
 		}
@@ -44,6 +52,8 @@
 	}
 	.di-card-body {
 		height: 100%;
+    position: relative;
+    z-index: 1;
 	}
 	.simple-cta{
 		& + * {
@@ -103,6 +113,14 @@
 			margin-bottom: calc(var(--spacer) * 4);
 		}
 	}
+  &.title-small {
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-size: var(--card-title-size-small);
+    }
+  }
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
@@ -115,7 +133,11 @@
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-
+  .di-card {
+    &.fullheight {
+      height: 100%;
+    }
+  }
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------

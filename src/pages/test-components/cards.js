@@ -7,10 +7,10 @@ import Pagedata from "./cards.yaml"
 const Cards = () => {
 	return(
 		<Template>
-      <div className="container-xxl">
+      <div className="container-xxl my-5">
         <div className="row">
           <div className="col-12">
-            <h2 className="my-3">Cards</h2>
+            <h1 className="mb-5">Cards</h1>
           </div>
           { Pagedata.components.cards.map((card,index) => {
             return(

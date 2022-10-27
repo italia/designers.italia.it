@@ -11,11 +11,15 @@ const HighlightCards = ({
   headingLevel,
   text,
   cards,
+  col4,
   buttons
 }) => {
 
   let styles = 'highlight-cards py-5 py-lg-6'
 	+ `${background ? ' bg-'+background : ''}`
+
+  let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'
+	+ `${col4 ? ' col-lg-3' : ' col-lg-4'}`
 
   let cardsItems
   let buttonsItems
@@ -31,7 +35,7 @@ const HighlightCards = ({
   if (cards) {
     cardsItems = cards.map((item,index) => {
       return(
-        <div className="col col-md-6 col-lg-4">
+        <div className={cardStyles}>
           <Card {...item} key={"card-"+index}/>
         </div>
       )
@@ -58,7 +62,7 @@ const HighlightCards = ({
           </div>
         </div>
         {cardsItems &&
-          <div className="row g-3 mb-4 mb-md-5">
+          <div className="row mb-4">
             {cardsItems}
           </div>
         }
