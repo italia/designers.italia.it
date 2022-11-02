@@ -9,6 +9,7 @@ const SectionEditorialPage = () => {
 	return (
 	  <Template>
       <SectionEditorial {...Pagedata.components.sectionEditorial}></SectionEditorial>
+      <SectionEditorial {...Pagedata.components.sectionEditorial2}></SectionEditorial>
 	  </Template>
 	)
 }
