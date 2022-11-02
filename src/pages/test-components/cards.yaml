@@ -3,19 +3,19 @@ name: Cards
 description : Componente Card
 components:
   cards:
-    - title: Titolo articolo
+    - title: Titolo articoloz
       img: https://via.placeholder.com/600x400?text=Placeholder
       imgRatio: 16x9
       imgPlaceholder: false
       url: "#"
+      blank: true
       externalLink:
         label : Leggi su medium
-        url: "#"
-        blank: true
         screenReaderText: l'articolo completo
         icon:
           icon: sprites.svg#it-external-link
           size: xs
+          align: middle
       moreInfo: di Nome Cognome e Nome Cognome
       chips:
         - color : secondary
@@ -73,6 +73,15 @@ components:
       url: "#"
       text: |
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed pulvinar lacus. Donec iaculis scelerisque ipsum ac semper. Praesent sit amet velit sed tortor laoreet placerat.
+      externalLink:
+        label : Leggi su medium
+        url: "#"
+        blank: true
+        screenReaderText: l'articolo completo
+        icon:
+          icon: sprites.svg#it-external-link
+          size: xs
+          align: middle
       chips:
         - color : secondary
           label : Accessibilità
@@ -267,6 +276,13 @@ components:
       url: "#"
       text: |
         Descrizione **test**
+      externalLink:
+        label : Leggi su medium
+        screenReaderText: l'articolo completo
+        icon:
+          icon: sprites.svg#it-external-link
+          size: xs
+          align: middle
       tag:
         label: Invito
       share:
