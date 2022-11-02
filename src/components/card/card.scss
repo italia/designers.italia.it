@@ -4,13 +4,11 @@
 	box-shadow: var(--card-box-shadow);
 	.img-wrapper {
 		position: relative;
+    background-color: var(--card-image-bg);
     &.negative-margin {
       margin-left: calc(var(--card-image-negative-margin) * -1);
       margin-right: calc(var(--card-image-negative-margin) * -1);
       width: calc(100% + calc(var(--card-image-negative-margin)*2));
-      img {
-
-      }
     }
 		img {
 			object-fit: cover;
@@ -53,7 +51,6 @@
 	.di-card-body {
 		height: 100%;
     position: relative;
-    z-index: 1;
 	}
 	.simple-cta{
 		& + * {
