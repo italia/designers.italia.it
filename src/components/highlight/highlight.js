@@ -10,6 +10,7 @@ const Highlight = (
 		id,
 		background,
 		img,
+    alt,
 		icon,
 		big,
 		title,
@@ -53,7 +54,7 @@ const Highlight = (
 					<div className="col-12">
 						<div className={classes}>
 							<div className="img-container ratio ratio-1x1">
-								<img className="main-image" src={img} alt={title}/>
+								<img className="main-image" src={img} alt={alt}/>
 								{icon && <Icon {...icon} classdName="translate-middle"/>}
 							</div>
 							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
