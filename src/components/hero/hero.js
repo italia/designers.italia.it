@@ -36,7 +36,7 @@ const Hero =({
     SubtitleLevel = `h2`
 	}
 
-  let imgStyle = 'img-wrapper ratio mb-3 mb-lg-auto'
+  let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 
   let rowStyle = 'row'
