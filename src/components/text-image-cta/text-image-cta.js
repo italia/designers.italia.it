@@ -48,7 +48,7 @@ const TextImageCta =({
       }
       <div className={contentStyles}>
         {title && <HLevel className="h3 mb-3">{title}</HLevel>}
-        {text && <ReactMarkdown className="font-serif">{text}</ReactMarkdown>}
+        {text && <ReactMarkdown>{text}</ReactMarkdown>}
         {ctaItems && <div className="ctas mt-4 d-md-flex">{ctaItems}</div>}
       </div>
     </div>

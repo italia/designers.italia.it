@@ -4,6 +4,7 @@ import ReactMarkdown from "react-markdown"
 import TextImageCta from "../text-image-cta/text-image-cta"
 import Numbers from "../numbers/numbers"
 import TitleText from "../title-text/title-text"
+import ImgFull from "../img-full/img-full"
 import Highlight from "../highlight/highlight"
 import Card from "../card/card"
 import Kangaroo from "../kangaroo/kangaroo"
@@ -24,7 +25,8 @@ const SectionEditorial = ({
     Kangaroo,
     TextImageCta,
     Numbers,
-    TitleText
+    TitleText,
+    ImgFull
   };
 
   //heading level
