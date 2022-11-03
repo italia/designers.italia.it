@@ -14,6 +14,7 @@ const Card =(
     titleSmall,
 		headingLevel,
 		url,
+    blank,
 		text,
 		tag,
 		share,
@@ -54,9 +55,9 @@ const Card =(
       <div className={styles}>
         <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
           <div className="text-zone">
-            {HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
+            {HLevel && <HLevel><a href={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</a></HLevel>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
-            {externalLink && <SimpleCta {...externalLink}></SimpleCta>}
+            {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
             {moreInfo && <span className="author font-monospace">{moreInfo}</span>}
           </div>
           {(tag || share || chips || img) && <div className="di-card-footer">
@@ -104,9 +105,9 @@ const Card =(
         </div>}
         <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
           <div className="text-zone">
-            {HLevel && <HLevel><a href={url}>{title}</a></HLevel>}
+            {HLevel && <HLevel><a href={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</a></HLevel>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
-            {externalLink && <SimpleCta {...externalLink}></SimpleCta>}
+            {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
             {moreInfo && <span className="author font-monospace">{moreInfo}</span>}
           </div>
           {(tag || share || chips) && <div className="di-card-footer">

@@ -16,4 +16,18 @@
 	span:last-of-type + .icon {
 		margin-left: calc(var(--spacer));
 	}
+  &:hover {
+    .icon {
+      fill: var( --simple-cta-color-hover);
+    }
+  }
+}
+
+a:hover {
+  .simple-cta {
+    color: var( --simple-cta-color-hover);
+    .icon {
+      fill: var( --simple-cta-color-hover);
+    }
+  }
 }
