@@ -26,7 +26,7 @@ const SectionEditorial = ({
     TextImageCta,
     Numbers,
     TitleText,
-    ImgFull
+    ImgFull,
   };
 
   //heading level
@@ -41,6 +41,7 @@ const SectionEditorial = ({
     grid="col-12"
   }else{
     grid="col-10 offset-1 col-lg-7 offset-lg-1"
+    + `${centered ? ' m-auto' : ''}`
   }
 
   let styles = "section-editorial"
