@@ -59,7 +59,7 @@ const Kangaroo = ({
         </div>
         <div className="right-zone">
           {dropdown &&
-            <div className="dropdwon-zone">
+            <div className="dropdwon-zone mt-4 mt-lg-0">
               <Dropdown {...dropdown}></Dropdown>
             </div>
           }
