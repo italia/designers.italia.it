@@ -17,6 +17,7 @@ const SectionEditorial = ({
   centered,
   bgColor,
   components,
+  menu
 }) => {
 
   const SwitchComponents = {
@@ -67,6 +68,24 @@ const SectionEditorial = ({
                 })
               }
             </div>
+            {menu &&
+              <div className="d-none d-lg-block col-lg-3 offset-lg-1 affix-parent">
+                <div className="sidebar-wrapper my-lg-0 affix-top">
+                  <div className="sidebar-linklist-wrapper">
+                    <div className="link-list-wrapper">
+                      <ul className="link-list">
+                        <li><a className="list-item medium active" href="#"><span>Link lista 1 (attivo)</span></a>
+                        </li>
+                        <li><a className="list-item medium" href="#"><span>Link lista 3</span></a>
+                        </li>
+                        <li><a className="list-item medium" href="#"><span>Link lista 4</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            }
           </div>
         </div>
     </section>
