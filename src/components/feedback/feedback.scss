@@ -1,6 +1,6 @@
 .feedback {
   h2 {
-    font-size: 1.75rem;
+    font-size: 1.3333333333333333rem;
   }
   .card {
     &:after {
@@ -23,4 +23,38 @@
     font-weight: bold;
   }
 
+}
+
+//fix BI
+.modal-backdrop {
+  z-index: 10100;
+}
+.modal {
+  z-index: 10200;
+}
+
+//modal custom styles (move to future modal component?)
+.modal-header {
+  .btn-close {
+    background: none;
+    opacity: 1;
+    &:hover {
+      .icon {
+        fill: var(--color-hover)
+      }
+    }
+  }
+}
+
+.modal-body {
+  color: var(--bs-body-color);
+  h2 {
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 1.5555555555555556rem
+  }
+}
+
+.modal-lg {
+  max-width: 580px;
 }
