@@ -39,6 +39,10 @@ const SectionEditorial = ({
 	} else {
 		HLevel = `h2`
 	}
+
+  let row="row"
+  + `${menu ? ' flex-lg-row-reverse' : ''}`
+
   let grid
   if(full) {
     grid="col-12"
@@ -53,24 +57,8 @@ const SectionEditorial = ({
   return(
     <section className={styles}>
         <div className="container-xxl">
-          <div className="row">
-            <div className={grid}>
-              {title && <HLevel className={text ? "mb-1" : "mb-0"}>{title}</HLevel>}
-              {text &&
-                <div className="text-container mb-5">
-                  <ReactMarkdown>{text}</ReactMarkdown>
-                </div>
-              }
-              {components &&
-                components.map((item,index) => {
-                  const Switcher = SwitchComponents[item.name]
-                  return(
-                    <Switcher key={"switcher-"+index} {...item}/>
-                  )
-                })
-              }
-            </div>
-            {menu &&
+          <div className={row}>
+          {menu &&
               <div className="d-none d-lg-block col-lg-3 offset-lg-1 affix-parent">
                 <div className="sidebar-wrapper my-lg-0 affix-top">
                   <div className="sidebar-linklist-wrapper">
@@ -88,6 +76,22 @@ const SectionEditorial = ({
                 </div>
               </div>
             }
+            <div className={grid}>
+              {title && <HLevel className={text ? "mb-1" : "mb-0"}>{title}</HLevel>}
+              {text &&
+                <div className="text-container mb-5">
+                  <ReactMarkdown>{text}</ReactMarkdown>
+                </div>
+              }
+              {components &&
+                components.map((item,index) => {
+                  const Switcher = SwitchComponents[item.name]
+                  return(
+                    <Switcher key={"switcher-"+index} {...item}/>
+                  )
+                })
+              }
+            </div>
           </div>
         </div>
     </section>
