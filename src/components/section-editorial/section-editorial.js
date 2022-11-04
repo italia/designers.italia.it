@@ -5,6 +5,7 @@ import TextImageCta from "../text-image-cta/text-image-cta"
 import Numbers from "../numbers/numbers"
 import TitleText from "../title-text/title-text"
 import ImgFull from "../img-full/img-full"
+import ImageIcons from "../image-icons/image-icons"
 import Highlight from "../highlight/highlight"
 import Card from "../card/card"
 import Kangaroo from "../kangaroo/kangaroo"
@@ -28,6 +29,7 @@ const SectionEditorial = ({
     Numbers,
     TitleText,
     ImgFull,
+    ImageIcons,
   };
 
   //heading level
