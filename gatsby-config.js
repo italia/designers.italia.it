@@ -8,7 +8,7 @@ module.exports = {
     siteName : "Designers Italia",
     image : "https://designers.italia.it/assets/icons/logo-it.png",
     twitterImage : "https://designers.italia.it/assets/icons/logo-it.png",
-    twitterSite : "@designersITA",
+    twitterSite : "@DesignersITA",
     twitterCreator : "@Team per la Trasformazione Digitale e AGID",
     themeColor: "#0066cc"
   },
