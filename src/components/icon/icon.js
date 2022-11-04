@@ -8,7 +8,8 @@ const Icon = ({
 	align,    //bottom,middle,top
 	color,    //primary,secondary,success,warning,danger,light,white
 	hidden,
-	addonClasses
+	addonClasses,
+  ariaLabel
 
 }) => {
 	const styles = 'icon'
@@ -20,7 +21,7 @@ const Icon = ({
 		+ `${addonClasses ? ' '+addonClasses : ''}`
 
 	return(
-		<svg className={styles} aria-hidden={hidden}>
+		<svg className={styles} aria-hidden={hidden} aria-label={ariaLabel}>
 			<use href={`/svg/${icon}`}></use>
 		</svg>
 	)

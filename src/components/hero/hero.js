@@ -19,8 +19,10 @@ const Hero =({
 	pretext,
 	text,
 	img,
+  alt,
   imgRatio,
 	bgImg,
+  bgImgAlt,
 	kangaroo
 })=>{
   let styles = 'hero'
@@ -52,7 +54,7 @@ const Hero =({
 	return(
 		<div className={styles}>
       <div className="hero-content">
-        {bgImg && <div className="bg-image"><img src={bgImg} alt={title}/></div>}
+        {bgImg && <div className="bg-image"><img src={bgImg} alt={bgImgAlt}/></div>}
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -80,7 +82,7 @@ const Hero =({
                   {!centered &&
                     <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-md-2 px-lg-2 d-flex flex-column">
                       <div className={imgStyle}>
-                        <img src={img} alt={title} />
+                        <img src={img} alt={alt} />
                       </div>
                       {share  && <Dropdown {...share}></Dropdown>}
                     </div>

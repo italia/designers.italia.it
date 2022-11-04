@@ -7,6 +7,12 @@
       font-size: var(--section-editorial-intro-text-size);
     }
   }
+  .sidebar-wrapper .sidebar-linklist-wrapper .link-list-wrapper ul li a:not(.active) {
+    font-weight: normal;
+  }
+  .sidebar-wrapper.affix-top {
+    top: 42px;
+  }
 }
 //Mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {

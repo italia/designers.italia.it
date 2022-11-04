@@ -19,15 +19,16 @@ const Card =(
 		tag,
 		share,
 		img,
+    alt,
 		imgRatio,
 		iconOverlay,
-		date,
 		dateOverlay,
 		chips,
 		externalLink,
 		moreInfo,
 		imgPlaceholder,
 		iconImg,
+    iconImgAlt,
     fullHeight,
     rounded
 	}
@@ -62,8 +63,8 @@ const Card =(
           </div>
           {(tag || share || chips || img) && <div className="di-card-footer">
             {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
-              {img && !imgPlaceholder && <img src={img} alt={title}/>}
-              {iconImg && <img src={iconImg} alt={title}/>}
+              {img && !imgPlaceholder && <img src={img} alt={alt}/>}
+              {iconImg && <img src={iconImg} alt={iconImgAlt}/>}
               {dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
                 <span className="day font-monospace">{dateOverlay.day}</span>
                 <span className="month">{dateOverlay.month}</span>
@@ -93,8 +94,8 @@ const Card =(
     return(
       <div className={styles}>
         {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
-          {img && !imgPlaceholder && <img src={img} alt={title}/>}
-          {iconImg && <img src={iconImg} alt={title}/>}
+          {img && !imgPlaceholder && <img src={img} alt={alt}/>}
+          {iconImg && <img src={iconImg} alt={iconImgAlt}/>}
           {dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
             <span className="day font-monospace">{dateOverlay.day}</span>
             <span className="month">{dateOverlay.month}</span>
