@@ -13,7 +13,7 @@ const Feedback = ({
     label: "Conferma",
     btnStyle: "primary",
     type: "button",
-    addonStyle: "me-3 d-none"
+    addonStyle: "d-none"
   })
 
   const btnFw = ({
@@ -43,6 +43,9 @@ const Feedback = ({
   })
 
   return (
+
+
+
     <section className="feedback bg-medium py-5 px-3 px-lg-0" aria-labelledby="feedbackSectionTitle">
       <div className="container-xxl">
         <div className="row d-flex justify-content-center">
@@ -51,10 +54,26 @@ const Feedback = ({
               <div className="cmp-rating__card-first">
                 <div className="card-body p-5">
                   <div className="step" id="feedbackIntro">
-                    <h2 className="mb-4" id="feedbackSectionTitle">Ciao, questa pagina è stata utile?</h2>
-                    <Button {...introBtn}/>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#feedbackYes">Modale sì</button>
-                    <button type="button" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#feedbackNo">Modale no</button>
+                    <h2 className="mb-3 mb-mb-4" id="feedbackSectionTitle">Ciao, questa pagina è stata utile?</h2>
+
+                    <form>
+                        <fieldset className="d-flex">
+                          <div className="form-check me-5">
+                            <input name="feedbackValue" type="radio" id="feedbackValueYes" value="Si" />
+                            <label htmlFor="feedbackValueYes">Si</label>
+                          </div>
+                          <div className="form-check">
+                            <input name="feedbackValue" type="radio" id="feedbackValueNo" value="No" />
+                            <label htmlFor="feedbackValueNo">No</label>
+                          </div>
+                        </fieldset>
+                        <Button {...introBtn}/>
+                      </form>
+                    {/* demo buttons */}
+                    <p className="mt-4">Demo buttons (TEMP)</p>
+                    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#feedbackYes">Modale sì</button>
+                    <button type="button" className="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#feedbackNo">Modale no</button>
+                    {/* demo buttons */}
                   </div>
                 </div>
               </div>
@@ -63,7 +82,7 @@ const Feedback = ({
         </div>
       </div>
 
-        <div className="modal fade" tabindex="-1" role="dialog" id="feedbackYes" aria-labelledby="feedbackYesTitle">
+        <div className="modal fade" tabIndex="-1" role="dialog" id="feedbackYes" aria-labelledby="feedbackYesTitle">
             <div className="modal-dialog modal-lg modal-dialog-centered " role="document">
               <div className="modal-content">
                   <div className="modal-header">
@@ -74,7 +93,7 @@ const Feedback = ({
                   <div className="modal-body pt-0 pb-4 pb-md-0 px-md-4">
                     <img src="/images/kit-analitics.svg" className="" alt=""/>
                     <h2 className="mb-3 h4" id="feedbackYesTitle">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
-                    <div class="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
+                    <div className="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
                     <div className="p mb-5"><a href="#">Leggi l’informativa sulla privacy</a></div>
                     <form action="#">
                       <div className="d-md-flex align-items-start">
@@ -90,7 +109,7 @@ const Feedback = ({
             </div>
         </div>
 
-        <div className="modal fade" tabindex="-1" role="dialog" id="feedbackNo" aria-labelledby="feedbackNoTitle">
+        <div className="modal fade" tabIndex="-1" role="dialog" id="feedbackNo" aria-labelledby="feedbackNoTitle">
             <div className="modal-dialog modal-lg modal-dialog-centered " role="document">
               <div className="modal-content">
                   <div className="modal-header align-items-start">
@@ -193,7 +212,7 @@ const Feedback = ({
                     <div className="step" id="feedbackStep4">
                       <img src="/images/kit-analitics.svg" className="" alt=""/>
                       <h2 className="mb-3 h4" id="feedbackYesTitle">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
-                      <div class="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
+                      <div className="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
                       <div className="p mb-5"><a href="#">Leggi l’informativa sulla privacy</a></div>
                       <form action="#">
                         <div className="d-md-flex align-items-start">
