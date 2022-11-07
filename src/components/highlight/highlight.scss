@@ -23,11 +23,9 @@
 			margin-top: var(--hl-button-distance-mob);
 		}
 	}
-	img {
-		&.main-image {
-			object-fit: cover;
-		}
-	}
+  .main-image {
+    object-fit: cover;
+  }
 	.img-container {
 		.icon {
 			position: absolute;
@@ -44,13 +42,6 @@
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
 	.highlight {
-		.img-container {
-			margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
-			margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
-			img {
-				width: calc(100% + var(--bs-gutter-x));
-			}
-		}
 		.text-container {
 			.buttons-wrapper {
 				.btn {
@@ -81,9 +72,22 @@
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
 	.highlight {
-		.ratio-1x1 {
+		.img-container {
 			--bs-aspect-ratio : 40%
 		}
+	}
+}
+
+//Mobile and Tablet only --------------------------------------------------------------------------------
+@include media-breakpoint-down(lg) {
+	.highlight {
+		.img-container {
+			margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
+			margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
+		}
+    .main-image {
+      width: calc(100% + var(--bs-gutter-x));
+    }
 	}
 }
 

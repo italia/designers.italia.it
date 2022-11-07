@@ -7,19 +7,24 @@ import NavPosition from "../nav-position/nav-position"
 
 const Kangaroo = ({
   id,
-	title,
-	icon,
-	chips,
-	dropdown,
-	color,
+  titleSr,
+  tagsLabel,
+  icon,
+  chips,
+  dropdown,
+  color,
   navposition,
   personalInfo,
   otherInfo,
 }) =>{
 
 	let colorStyle = `${color ? ' text-'+color : ''}`
+
+  let tagsLabelStyle="text-uppercase small "+colorStyle
+
 	return(
-		<section className="kangaroo" aria-labelledby={id}>
+		<section className="kangaroo px-3 px-lg-0" aria-labelledby={id}>
+      { titleSr && <h2 className="visually-hidden" id={id}>{titleSr}</h2>}
 			<div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-top">
         <div className="left-zone">
           {navposition &&
@@ -38,10 +43,10 @@ const Kangaroo = ({
             </div>
           }
           <div className="pills-wrapper d-md-flex align-items-center">
-            {title &&
+            {tagsLabel &&
               <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase">
                 <Icon {...icon} addonClasses="me-2"></Icon>
-                <h2 className={colorStyle} id={id}>{title}</h2>
+                <span className={tagsLabelStyle}><strong>{tagsLabel}</strong></span>
               </div>
             }
             {

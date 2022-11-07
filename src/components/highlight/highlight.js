@@ -53,7 +53,7 @@ const Highlight = (
 				<div className="row">
 					<div className="col-12">
 						<div className={classes}>
-							<div className="img-container ratio ratio-1x1">
+							<div className="img-container ratio ratio-16x9">
 								<img className="main-image" src={img} alt={alt}/>
 								{icon && <Icon {...icon} classdName="translate-middle"/>}
 							</div>
