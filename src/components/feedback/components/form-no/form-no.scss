@@ -1,0 +1,13 @@
+.feedback-formno-step {
+  //display: none;
+  overflow: hidden;
+  height: 0;
+  transition: opacity 0.5s;
+  opacity: 0;
+
+  &.show {
+    //display: block;
+    opacity: 1;
+    height: auto;
+  }
+}
