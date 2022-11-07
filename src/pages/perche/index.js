@@ -41,7 +41,13 @@ export default Perche
 
 export const Head = () => (
 	<Seo
-    title = {Pagedata.name}
-    description = {Pagedata.description}>
+    title = {Pagedata.seo.name}
+    description = {Pagedata.seo.description}
+    image = {Pagedata.seo.image}
+    twitterImage = {Pagedata.seo.twitterImage}
+    pathname = {Pagedata.seo.pathname}
+    canonical = {Pagedata.seo.canonical}
+  >
+
   </Seo>
 )
