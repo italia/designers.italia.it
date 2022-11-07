@@ -1,6 +1,5 @@
 import * as React from "react"
 import Template from "../../templates/level-1"
-import {Seo} from "../../components/seo/seo"
 import Card from "../../components/card/card"
 import Pagedata from "./cards.yaml"
 
@@ -27,10 +26,3 @@ const Cards = () => {
 }
 
 export default Cards
-
-export const Head = () => (
-	<Seo
-    title = {Pagedata.name}
-    description = {Pagedata.description}>
-  </Seo>
- )

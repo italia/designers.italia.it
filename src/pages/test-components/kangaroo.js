@@ -1,6 +1,5 @@
 import * as React from "react"
 import Template from "../../templates/level-1"
-import {Seo} from "../../components/seo/seo"
 import Kangaroo from "../../components/kangaroo/kangaroo"
 import Pagedata from "./kangaroo.yaml"
 
@@ -25,10 +24,3 @@ const Kangaroos = () => {
 }
 
 export default Kangaroos
-
-export const Head = () => (
-	<Seo
-    title = {Pagedata.name}
-    description = {Pagedata.description}>
-  </Seo>
- )

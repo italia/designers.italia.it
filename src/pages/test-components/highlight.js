@@ -1,6 +1,5 @@
 import * as React from "react"
 import Template from "../../templates/level-1"
-import {Seo} from "../../components/seo/seo"
 import Highlight from "../../components/highlight/highlight"
 import Pagedata from "./highlight.yaml"
 
@@ -24,10 +23,3 @@ const Highlights = () => {
 }
 
 export default Highlights
-
-export const Head = () => (
-	<Seo
-    title = {Pagedata.name}
-    description = {Pagedata.description}>
-  </Seo>
- )
