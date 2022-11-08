@@ -1,7 +1,7 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .text-image-cta {
-  img {
+  .img-main {
     max-width: 132px;
   }
   p,ol,ul {
@@ -10,6 +10,13 @@
   .content {
     p:last-of-type {
       margin-bottom: 0;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: calc(var(--spacer) * 8) auto;
+      border-radius: 4px;
     }
   }
   .simple-cta {
@@ -52,6 +59,13 @@
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
+  .text-image-cta {
+    .content {
+      img {
+        margin: calc(var(--spacer) * 12) auto;
+      }
+    }
+  }
 }
 
 //Desktop -----------------------------------------------------------------------------------------------

@@ -36,14 +36,14 @@ const TextImageCta =({
   + `${specular ? '' : ' flex-row-reverse'}`
   let imageWrapperStyles = "w-25 d-flex align-items-start"
   + `${specular ? ' justify-content-end me-4' : ' justify-content-start ms-4'}`
-  let contentStyles = "content5"
+  let contentStyles = "content"
   + `${image ? ' w-75' : ' w-100'}`
 
   return (
     <div className={styles}>
       {image &&
         <div className={imageWrapperStyles}>
-          <img src={image} alt={alt} className="w-100 img-fluid"/>
+          <img src={image} alt={alt} className="w-100 img-fluid img-main"/>
         </div>
       }
       <div className={contentStyles}>
