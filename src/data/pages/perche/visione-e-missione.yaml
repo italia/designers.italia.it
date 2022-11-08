@@ -1,10 +1,10 @@
 seo:
-  name: Perché
+  name: Visione e missione
   description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
   image : null
   twitterImage: null
   canonical: null
-  pathname: /perche
+  pathname: /perche/visione-e-missione
 
 lastUpdate:
   title: Pagina aggiornata il
@@ -27,11 +27,26 @@ lastUpdate:
       color: primary
     blank: true
 
+navPreFooter:
+  navOtherPrevNext:
+    next:
+      label: Storia ed evidenze
+      url: "#"
+      blank: false
+      specular: true
+      icon:
+        icon: "sprites.svg#it-arrow-right"
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: flex-shrink-0 ms-3
+
 components:
   hero:
-    background: primary
-    title: Perché
-    subtitle: Questo è un sottotitolo che ti fa capire a cosa serve la pagina sotto ci potrebbe stare altro
+    background: light
+    title: Visione e missione
+    subtitle: Sottotitolo o claim che parla del titolo che è qui sopra e dell’importanza di cosa possiamo fare per voi che state leggendo come progetto
     img: https://via.placeholder.com/400x300?text=Placeholder
     alt: descrizione immagine
     imgRatio: 4x3
@@ -41,7 +56,7 @@ components:
         size: sm
       text: In breve
     text: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
     breadcrumbs :
       separator : '/'
       items :
@@ -54,11 +69,11 @@ components:
       btnId: shareButton
       button:
         label: Condividi
-        addonStyle: btn-share-hero text-white mb-4 mt-lg-4 ms-auto
+        addonStyle: btn-share-hero text-primary mb-4 mt-lg-4 ms-auto
         icon:
           icon: sprites.svg#it-more-items
           size: sm
-          color: light
+          color: primary
           addonClasses: ms-3
       list:
         isDropdown: true
@@ -91,7 +106,7 @@ components:
       id: kangarooHero
       titleSr: Titolo della sezione (per screenreader)
       tagsLabel : Parliamo di
-      color : white
+      color : primary
       icon:
         icon: sprites.svg#it-horn
         size: sm
@@ -105,7 +120,7 @@ components:
           url: "#"
           color: primary
           size: lg
-        - label: Sviluppo front end
+        - label: "+2"
           url: "#"
           color: primary
           size: lg
@@ -118,7 +133,7 @@ components:
           icon:
             icon: sprites.svg#it-expand
             size: sm
-            color: white
+            color: primary
             addonClasses: icon-expand ms-2
         list:
           listItems:
@@ -143,25 +158,10 @@ components:
                 icon: sprites.svg#it-info-circle
                 color: primary
                 size: sm
-  sectionIntro:
-    section: true
-    id: contenutoEditoriale1
-    headingLevel: 2
-    title: Il design è un processo complesso e noi abbiamo creato Designers Italia
-    background: null
-    text: |
-      **Il design è la disciplina che si occupa di risolvere problemi complessi,** in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella [Pubblica Amministrazione](#). Le risorse messe a disposizione da Designers Italia possono così essere la chiave per affrontare la complessità, soprattutto se contestualizzate grazie a un approccio chiaro e un solido **processo di progettazione.**
-    moreButton: Leggi di più
-    icon:
-      icon: sprites.svg#it-arrow-right
-      color: white
-      size: sm
-    moreText: |
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
-      ### Titolo livello 3
-      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?\
-      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+
+  imageIcons:
+    image: /images/image-icons-fullwidth.jpg
+    alt: Descrizione immagine grande
   titleText:
     title: Scopri il progetto
   highlights :
@@ -188,27 +188,7 @@ components:
         - label : Scopri storia ed evidenze
           btnStyle: primary
           url: "storia-ed-evidenze"
-  imageIcons:
-    image: /images/image-icons-fullwidth.jpg
-    alt: Descrizione immagine grande
-    icons:
-    - icon:
-        icon: sprites.svg#it-presentation
-        color: white
-    - icon:
-        icon: sprites.svg#it-telephone
-        color: white
-    - icon:
-        icon: sprites.svg#it-piattaforme
-        color: white
-    - icon:
-        icon: sprites.svg#it-video
-        color: white
-    images:
-    - img: /images/conversation.svg
-      alt: descrizione immagine piccola
-    - img: /images/conversation.svg
-      alt: descrizione immagine piccola
+
   highlightCards1:
     id: highlightCards1
     title: Articoli di approfondimento
