@@ -13,12 +13,13 @@ const Numbers = ({
 			return(
         <div className="numbers mb-3 mb-md-4 pe-3" key={"number-"+index}>
           <div className="label"><small><strong>{num.label}</strong></small></div>
-          <div className="d-flex justify-content-start align-content-start">
+          <div className="d-flex align-items-center">
             <Icon
               icon={num.icon}
               size="lg"
+              addonClasses="mt-1 mt-sm-2 me-1"
             />
-            <div className="number font-monospace fw-normal h2 mb-0">{num.number}</div>
+            <div className="number font-monospace fw-normal display-1">{num.number}</div>
           </div>
         </div>
 			)
