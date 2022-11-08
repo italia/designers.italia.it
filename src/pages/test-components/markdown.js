@@ -2,7 +2,6 @@ import React from "react"
 import ReactMarkdown from "react-markdown"
 import gfm from "remark-gfm"
 import Template from "../../templates/level-1"
-import {Seo} from "../../components/seo/seo"
 import TestYaml from "../../components/test-yaml/test-yaml"
 import Pagedata from "./various.yaml"
 
@@ -18,10 +17,3 @@ const Yaml = ({data}) => {
 }
 
 export default Yaml
-
-export const Head = () => (
-	<Seo
-    title = {Pagedata.name}
-    description = {Pagedata.description}>
-  </Seo>
- )

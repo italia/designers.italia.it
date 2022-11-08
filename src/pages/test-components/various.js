@@ -1,6 +1,5 @@
 import * as React from "react"
 import Template from "../../templates/level-1"
-import {Seo} from "../../components/seo/seo"
 import Icon from "../../components/icon/icon"
 import Button from "../../components/button/button"
 import Section from "../../components/section/section"
@@ -64,7 +63,6 @@ const HomePage = () => {
               color:"primary",
               size:"sm",
               icon:"sprites.svg#it-expand",
-              color:"light",
               addonClasses:"icon-expand"
             },
             children:"Apri Dropdown",
@@ -160,10 +158,3 @@ const HomePage = () => {
 	)
  }
  export default HomePage
-
- export const Head = () => (
-	<Seo
-    title = {Pagedata.name}
-    description = {Pagedata.description}>
-  </Seo>
- )

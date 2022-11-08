@@ -1,6 +1,5 @@
 import * as React from "react"
 import Template from "../../templates/level-1"
-import {Seo} from "../../components/seo/seo"
 import Button from "../../components/button/button"
 import Pagedata from "./buttons.yaml"
 
@@ -62,10 +61,3 @@ const Buttons = () => {
 }
 
 export default Buttons
-
-export const Head = () => (
-	<Seo
-    title = {Pagedata.name}
-    description = {Pagedata.description}>
-  </Seo>
-)

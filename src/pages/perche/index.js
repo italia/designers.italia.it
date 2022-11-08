@@ -48,6 +48,5 @@ export const Head = () => (
     pathname = {Pagedata.seo.pathname}
     canonical = {Pagedata.seo.canonical}
   >
-
   </Seo>
 )
