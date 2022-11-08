@@ -1,8 +1,8 @@
-import * as React from "react"
+import React from "react"
 import ListItem from "../list-item/list-item"
 import "./list.scss"
 
-const List = ({
+const List = React.forwardRef(({
 	isMenu,       //if list is inside nav menu: true or false
 	collapsable,  //true / false
 	isDropdown,   // if inside dropdown
@@ -17,8 +17,7 @@ const List = ({
 	headingLink,    //if heading has link
 	listItems,
 	simpleList,
-
-}) => {
+}, ref) => {
 
   //heading level
 	let HLevel
@@ -51,7 +50,7 @@ const List = ({
 	}
 
 	return(
-		<div className={styles} id={id}>
+		<div ref={ref} className={styles} id={id}>
 			{ListHeading}
       {title && <HLevel className="title h4 mb-0">{title}</HLevel>}
 			<ul className={ulStyles}>
@@ -59,6 +58,6 @@ const List = ({
 			</ul>
 		</div>
 	)
-}
+})
 
 export default List
