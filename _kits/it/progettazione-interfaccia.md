@@ -47,7 +47,7 @@ superAccordion:
       <p>Il kit è un progetto aperto e in continua evoluzione che permette, — grazie all’interazione con il team di sviluppo e la facile resa in codice con i kit di sviluppo web, in particolare con Boostrap Italia — di progettare e prototipare efficacemente l'interfaccia del touchpoint digitale in realizzazione.</p>"
       img: "/assets/icons/kit/kit_UI_InterfacciaUtente.svg"
       resources:
-        - title: Design system del Paese, nuovo UI kit v3.0.0-beta.1
+        - title: Design system del Paese, nuovo UI kit
           icon: "/assets/icons/pencil.svg"
           description: Versione 3.0.0-beta.1 del kit di progettazione interfaccia, caratterizzata da nuova tecnologia e implementazione design token. L'attuale versione beta è usabile in produzione e coerente con Bootstrap Italia
           link: <a href='https://www.figma.com/community/file/1105848677422572920' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
@@ -63,8 +63,8 @@ superAccordion:
             - description: Anteprima su Figma
               link: <a href='https://www.figma.com/file/bLexfydXWzF6ACxFokgzXs/italia-UI-Kit-2.0?node-id=0%3A1' target="_blank" aria-label="Vai all'anteprima (link esterno)" >Vai all'anteprima</a>
       footer:
-        - icon: "/assets/icons/info-grey.svg"
-          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
+        - icon: "/assets/icons/external-link-grey.svg"
+          text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
 
 tags:
   - user experience
