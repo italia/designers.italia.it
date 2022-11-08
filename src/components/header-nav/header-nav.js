@@ -1,4 +1,4 @@
-import * as React from "react"
+import React, { useEffect, useRef } from "react"
 import Button from "../button/button"
 import Icon from "../icon/icon"
 import HeaderMenu from "../header-menu/header-menu"
@@ -6,11 +6,19 @@ import HeaderMenuItem from "../header-menu-item/header-menu-item"
 import HeaderMenuLink from "../header-menu-link/header-menu-link"
 import DropdownMenu from "../dropdown-menu/dropdown-menu"
 import Megamenu from "../megamenu/megamenu"
+import { NavBarCollapsible } from "bootstrap-italia/dist/bootstrap-italia.esm"
 
 const HeaderNav = ({
   data,
   page
 }) => {
+
+  const collRef = useRef(null)
+
+  useEffect(() => {
+    new NavBarCollapsible(collRef.current)
+  })
+
 	return(
 	<div className={`it-header-navbar-wrapper {data.theme}`} id={data.id}>
 		<div className="container-xxl">
@@ -20,7 +28,7 @@ const HeaderNav = ({
 						<Button customStyle="custom-navbar-toggler" type="button" dataBsToggle="navbarcollapsible" ariaControls={data.nav.id} ariaExpanded="false" srOnly={data.toggler.srOnly}>
 							<Icon icon="sprites.svg#it-burger"/>
 						</Button>
-						<div className="navbar-collapsable" id={data.nav.id}>
+						<div className="navbar-collapsable" ref={collRef} id={data.nav.id}>
 							<div className="overlay"></div>
 							<div className="close-div">
 								<Button addonStyle="close-menu">

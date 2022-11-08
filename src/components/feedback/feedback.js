@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"
+import { Modal } from "bootstrap-italia/dist/bootstrap-italia.esm"
 //import Button from "../button/button"
 import "./feedback.scss"
 import Icon from "../icon/icon"
@@ -31,6 +32,8 @@ const Feedback = ({
 
   const sliderWrapperRef = useRef(null)
   const sliderRef = useRef(null)
+  const modalYes = useRef(null)
+  const modalNo = useRef(null)
 
   const onChange = (evt) => {
     if (evt.currentTarget.checked) {
@@ -43,6 +46,11 @@ const Feedback = ({
     if (!sliderWrapperRef.current.classList.contains(CLASS_SLIDE_ANIMEND)) {
       sliderWrapperRef.current.classList.add(CLASS_SLIDE_ANIMEND)
     }
+  }
+
+  const openModal = () => {
+    let modalElement = parseInt(choiceVal) === 1 ? modalYes.current : modalNo.current
+    new Modal(modalElement).show()
   }
 
   useEffect(() => {
@@ -83,7 +91,7 @@ const Feedback = ({
 
                       <div ref={sliderWrapperRef} className="slidedown" style={{height: slideHeight + 'px'}}>
                         <div ref={sliderRef}>
-                          { isChecked && <button type="button" className="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target={parseInt(choiceVal) === 1 ? '#feedbackYes' : '#feedbackNo'}>{BTN_INTRO.label}</button> }
+                          { isChecked && <button type="button" className="btn btn-primary mt-3" onClick={openModal}>{BTN_INTRO.label}</button> }
                         </div>
                       </div>
 
@@ -96,7 +104,7 @@ const Feedback = ({
         </div>
       </div>
 
-      <div className="modal fade" tabIndex="-1" role="dialog" id="feedbackYes" aria-labelledby="feedbackYesTitle">
+      <div ref={modalYes} className="modal fade" tabIndex="-1" role="dialog" id="feedbackYes" aria-labelledby="feedbackYesTitle">
         <div className="modal-dialog modal-lg modal-dialog-centered " role="document">
           <div className="modal-content">
             <div className="modal-header">
@@ -111,7 +119,7 @@ const Feedback = ({
         </div>
       </div>
 
-      <div className="modal fade" tabIndex="-1" role="dialog" id="feedbackNo" aria-labelledby="feedbackNoTitle">
+      <div ref={modalNo} className="modal fade" tabIndex="-1" role="dialog" id="feedbackNo" aria-labelledby="feedbackNoTitle">
         <div className="modal-dialog modal-lg modal-dialog-centered " role="document">
           <div className="modal-content">
             <div className="modal-header align-items-start">
