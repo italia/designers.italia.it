@@ -47,7 +47,7 @@ const SectionEditorial = ({
   if(full) {
     grid="col-12"
   }else{
-    grid="col-10 offset-1 col-lg-7 offset-lg-1"
+    grid="col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-1"
     + `${centered ? ' m-auto' : ''}`
   }
 
@@ -77,20 +77,22 @@ const SectionEditorial = ({
               </div>
             }
             <div className={grid}>
-              {title && <HLevel className={text ? "mb-1" : "mb-0"}>{title}</HLevel>}
-              {text &&
-                <div className="text-container mb-5">
-                  <ReactMarkdown>{text}</ReactMarkdown>
-                </div>
-              }
-              {components &&
-                components.map((item,index) => {
-                  const Switcher = SwitchComponents[item.name]
-                  return(
-                    <Switcher key={"switcher-"+index} {...item}/>
-                  )
-                })
-              }
+              <div className="px-3 p-md-0">
+                {title && <HLevel className={text ? "mb-1" : "mb-0"}>{title}</HLevel>}
+                {text &&
+                  <div className="text-container mb-5">
+                    <ReactMarkdown>{text}</ReactMarkdown>
+                  </div>
+                }
+                {components &&
+                  components.map((item,index) => {
+                    const Switcher = SwitchComponents[item.name]
+                    return(
+                      <Switcher key={"switcher-"+index} {...item}/>
+                    )
+                  })
+                }
+              </div>
             </div>
           </div>
         </div>
