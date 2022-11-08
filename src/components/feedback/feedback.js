@@ -10,7 +10,7 @@ const BTN_INTRO = {
   label: "Conferma",
   btnStyle: "primary",
   type: "button",
-  //addonStyle: "d-none"
+  //addonStyle: ""
 }
 
 const ICON_CLOSE = {
@@ -55,7 +55,7 @@ const Feedback = ({
                           <label htmlFor="feedbackValueNo">No</label>
                         </div>
                       </fieldset>
-                      {isChecked && <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target={parseInt(choiceVal) === 1 ? '#feedbackYes' : '#feedbackNo'}>{BTN_INTRO.label}</button>}
+                      {isChecked && <button type="button" className="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target={parseInt(choiceVal) === 1 ? '#feedbackYes' : '#feedbackNo'}>{BTN_INTRO.label}</button>}
                     </form>
                     {/* demo buttons }
                     <p className="mt-4">Demo buttons (TEMP)</p>

@@ -21,8 +21,8 @@ const FormYes = ({
     <form action="#">
       <div className="d-md-flex align-items-start">
         <div className="form-group w-75 me-5">
-          <label htmlFor="feedbackMail" className="custom-label">Email</label>
-          <input type="text" className="form-control" id="feedbackMail" name="feedbackMail" />
+          <label htmlFor="feedbackMailYes" className="custom-label">Email</label>
+          <input type="text" className="form-control" id="feedbackMailYes" name="feedbackMail" />
         </div>
         <Button {...BTN_SUBSCRIBE} />
       </div>

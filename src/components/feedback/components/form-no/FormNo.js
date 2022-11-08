@@ -160,8 +160,8 @@ const FormNo = ({
       <form action="#">
         <div className="d-md-flex align-items-start">
           <div className="form-group w-75 me-5">
-            <label htmlFor="feedbackMail" className="custom-label">Email</label>
-            <input type="text" className="form-control" id="feedbackMail" name="feedbackMail" />
+            <label htmlFor="feedbackMailNo" className="custom-label">Email</label>
+            <input type="text" className="form-control" id="feedbackMailNo" name="feedbackMail" />
           </div>
           <Button {...BTN_SUBSCRIBE} />
         </div>
