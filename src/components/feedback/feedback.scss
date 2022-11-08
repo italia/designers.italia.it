@@ -62,3 +62,12 @@
 .modal-lg {
   max-width: 580px;
 }
+
+.slidedown {
+  overflow: hidden;
+  transition: height 0.5s;
+
+  &.slidedown-animend {
+    overflow: visible;
+  }
+}
