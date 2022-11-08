@@ -18,7 +18,7 @@ const Numbers = ({
               icon={num.icon}
               size="lg"
             />
-            <div className="number font-monospace fw-normal h2 mb-0">{num.number}</div>
+            <div className="number font-monospace fw-normal display-1 mb-0">{num.number}</div>
           </div>
         </div>
 			)
