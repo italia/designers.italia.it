@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import Button from "../button/button"
+import React, { useState, useRef, useEffect } from "react"
+//import Button from "../button/button"
 import "./feedback.scss"
 import Icon from "../icon/icon"
 
@@ -19,12 +19,18 @@ const ICON_CLOSE = {
   size: "lg",
 }
 
+const CLASS_SLIDE_ANIMEND = 'slidedown-animend'
+
 const Feedback = ({
 
 }) => {
 
   const [isChecked, setIsChecked] = useState(false)
   const [choiceVal, setChoiceVal] = useState(0)
+  const [slideHeight, setSlideHeight] = useState(0)
+
+  const sliderWrapperRef = useRef(null)
+  const sliderRef = useRef(null)
 
   const onChange = (evt) => {
     if (evt.currentTarget.checked) {
@@ -32,6 +38,25 @@ const Feedback = ({
       setChoiceVal(evt.currentTarget.value)
     }
   }
+
+  const animEnd = () => {
+    if (!sliderWrapperRef.current.classList.contains(CLASS_SLIDE_ANIMEND)) {
+      sliderWrapperRef.current.classList.add(CLASS_SLIDE_ANIMEND)
+    }
+  }
+
+  useEffect(() => {
+    if (sliderRef.current) {
+      setSlideHeight(sliderRef.current.offsetHeight)
+    }
+  }, [isChecked])
+
+  useEffect(() => {
+    sliderWrapperRef.current.addEventListener('transitionend', animEnd)
+    return () => {
+      sliderWrapperRef.current.removeEventListener('transitionend ', animEnd)
+    }
+  }, [sliderWrapperRef])
 
   return (
     <section className="feedback bg-medium py-5 px-3 px-lg-0" aria-labelledby="feedbackSectionTitle">
@@ -55,13 +80,14 @@ const Feedback = ({
                           <label htmlFor="feedbackValueNo">No</label>
                         </div>
                       </fieldset>
-                      {isChecked && <button type="button" className="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target={parseInt(choiceVal) === 1 ? '#feedbackYes' : '#feedbackNo'}>{BTN_INTRO.label}</button>}
+
+                      <div ref={sliderWrapperRef} className="slidedown" style={{height: slideHeight + 'px'}}>
+                        <div ref={sliderRef}>
+                          { isChecked && <button type="button" className="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target={parseInt(choiceVal) === 1 ? '#feedbackYes' : '#feedbackNo'}>{BTN_INTRO.label}</button> }
+                        </div>
+                      </div>
+
                     </form>
-                    {/* demo buttons }
-                    <p className="mt-4">Demo buttons (TEMP)</p>
-                    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#feedbackYes">Modale sì</button>
-                    <button type="button" className="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#feedbackNo">Modale no</button>
-                    {/* demo buttons */}
                   </div>
                 </div>
               </div>

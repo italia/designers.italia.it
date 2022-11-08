@@ -1,5 +1,6 @@
 .feedback-formno-step {
   //display: none;
+  visibility: hidden;
   overflow: hidden;
   height: 0;
   transition: opacity 0.5s;
@@ -7,6 +8,7 @@
 
   &.show {
     //display: block;
+    visibility: visible;
     opacity: 1;
     height: auto;
   }
