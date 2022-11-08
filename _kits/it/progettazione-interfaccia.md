@@ -49,7 +49,7 @@ superAccordion:
       resources:
         - title: Design system del Paese, nuovo UI kit v3.0.0-beta.1
           icon: "/assets/icons/pencil.svg"
-          description: Versione completamente rinnovata del kit di progettazione interfaccia, caratterizzata da nuova tecnologia e implementazione design token. L'attuale versione beta, è usabile in produzione e coerente con Bootstrap Italia.
+          description: Versione 3.0.0-beta.1 del kit di progettazione interfaccia, caratterizzata da nuova tecnologia e implementazione design token. L'attuale versione beta è usabile in produzione e coerente con Bootstrap Italia
           link: <a href='https://www.figma.com/community/file/1105848677422572920' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
         - title: Design UI kit
           icon: "/assets/icons/pencil.svg"
