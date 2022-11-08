@@ -5,12 +5,12 @@ import Hero from "../../components/hero/hero"
 import SectionIntro from "../../components/section-intro/section-intro"
 import TitleText from "../../components/title-text/title-text"
 import Highlight from "../../components/highlight/highlight"
-import Pagedata from "../../data/pages/perche/index.yaml"
+import Pagedata from "../../data/pages/progetto/index.yaml"
 import ImageIcons from "../../components/image-icons/image-icons"
 import HighlightCards from "../../components/highlight-cards/highlight-cards"
 import Topics from "../../components/topics/topics"
 
-const Perche = () => {
+const Progetto = () => {
   return(
     <Template page={Pagedata.name} lastUpdate={Pagedata.lastUpdate}>
 		<Hero {...Pagedata.components.hero}></Hero>
@@ -37,7 +37,7 @@ const Perche = () => {
   )
 }
 
-export default Perche
+export default Progetto
 
 export const Head = () => (
 	<Seo

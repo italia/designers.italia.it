@@ -2,8 +2,12 @@ import React from "react"
 import Icon from "../icon/icon"
 
 const NavPosition = ({
-  items
+  items,
+  footerVersion
 }) => {
+
+  let containerStyles = "nav-position"
+  + `${footerVersion ? ' py-5 border-top neutral-1-border-color-a3 border-end-0 border-start-0 border-bottom-0' : ''}`
 
   let  linkItems
 
@@ -22,7 +26,7 @@ const NavPosition = ({
     })
   }
   return (
-    <div className="nav-position py-5 border-top neutral-1-border-color-a3 border-end-0 border-start-0 border-bottom-0">
+    <div className={containerStyles}>
       <div className="container-xxl">
         <div className="row">
           {linkItems}

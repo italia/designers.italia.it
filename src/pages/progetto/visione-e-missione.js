@@ -2,7 +2,7 @@ import * as React from "react"
 import Template from "../../templates/level-2"
 import {Seo} from "../../components/seo/seo"
 import Hero from "../../components/hero/hero"
-import Pagedata from "../../data/pages/perche/visione-e-missione.yaml"
+import Pagedata from "../../data/pages/progetto/visione-e-missione.yaml"
 import ImageIcons from "../../components/image-icons/image-icons"
 import SectionEditorial from "../../components/section-editorial/section-editorial"
 
