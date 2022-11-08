@@ -12,6 +12,8 @@ const Highlight = (
 		img,
     alt,
 		icon,
+    overlayImg,
+    overlayAlt,
 		big,
 		title,
     numbers,
@@ -55,7 +57,8 @@ const Highlight = (
 						<div className={classes}>
 							<div className="img-container ratio ratio-16x9">
 								<img className="main-image" src={img} alt={alt}/>
-								{icon && <Icon {...icon} classdName="translate-middle"/>}
+								{icon && <Icon {...icon}/>}
+                {overlayImg && <img src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
 							</div>
 							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
 								<HLevel id={id}>{title}</HLevel>
