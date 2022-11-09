@@ -47,7 +47,7 @@ superAccordion:
       <p>Il kit è un progetto aperto e in continua evoluzione che permette, — grazie all’interazione con il team di sviluppo e la facile resa in codice con i kit di sviluppo web, in particolare con Boostrap Italia — di progettare e prototipare efficacemente l'interfaccia del touchpoint digitale in realizzazione.</p>"
       img: "/assets/icons/kit/kit_UI_InterfacciaUtente.svg"
       resources:
-        - title: "Design system del Paese: nuovo UI kit <em>in progress</em>"
+        - title: "Nuovo UI kit - <em>in progress</em>"
           icon: "/assets/icons/pencil.svg"
           description: "Versione 3.0.0-beta.1 del kit di progettazione interfaccia, caratterizzata da nuova tecnologia e implementazione design token. L'attuale versione beta è usabile in produzione e coerente con Bootstrap Italia"
           link: <a href='https://www.figma.com/community/file/1105848677422572920' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
