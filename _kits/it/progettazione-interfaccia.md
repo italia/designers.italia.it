@@ -61,7 +61,5 @@ superAccordion:
 
 tags:
   - user experience
-  - ui kit
   - usability
-  - service design
 ---
