@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/level-1"
+import Template from "../../templates/tmpl-level-1"
 import HighlightCards from "../../components/highlight-cards/highlight-cards"
 import Pagedata from "./highlight-cards.yaml"
 

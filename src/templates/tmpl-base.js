@@ -12,11 +12,12 @@ import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
 import LastUpdate from "../components/last-update/last-update"
 import Feedback from "../components/feedback/feedback"
+
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const Template = ({children,page,lastUpdate}) => {
+const Template = ({children,Pagedata}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
@@ -24,12 +25,12 @@ const Template = ({children,page,lastUpdate}) => {
 			<HeaderSlim data={HeaderData.headerSlim}/>
 			<NavWrapper>
 				<HeaderCenter data={HeaderData.headerCenter}/>
-				<HeaderNav data={HeaderData.navbar} page={page}/>
+				<HeaderNav data={HeaderData.navbar} page={Pagedata.seo.name}/>
 			</NavWrapper>
 		</Header>
       <main id="main">
         {children}
-        {lastUpdate ? <LastUpdate {...lastUpdate} /> : null }
+        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>

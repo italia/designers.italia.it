@@ -1,10 +1,10 @@
 import * as React from "react"
-import Template from "../../../../templates/level-2"
+import Template from "../../../../templates/tmpl-level-2"
 import {Seo} from "../../../../components/seo/seo"
 import Hero from "../../../../components/hero/hero"
-import Pagedata from "../../../../data/pages/modelli/comuni/realizza-il-sito-istituzionale/index.yaml"
 import ImageIcons from "../../../../components/image-icons/image-icons"
 import SectionEditorial from "../../../../components/section-editorial/section-editorial"
+import Pagedata from "./index.yaml"
 
 const realizzaSitoIstituzionale = () => {
   return(

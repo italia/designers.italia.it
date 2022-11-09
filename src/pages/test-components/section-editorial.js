@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/level-1"
+import Template from "../../templates/tmpl-level-1"
 import Pagedata from "./section-editorial.yaml"
 import SectionEditorial from "../../components/section-editorial/section-editorial"
 

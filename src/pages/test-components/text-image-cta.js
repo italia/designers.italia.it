@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/level-1"
+import Template from "../../templates/tmpl-level-1"
 import TextImageCta from "../../components/text-image-cta/text-image-cta"
 import Pagedata from "./text-image-cta.yaml"
 
