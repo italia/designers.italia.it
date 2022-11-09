@@ -51,7 +51,7 @@ superAccordion:
           icon: "/assets/icons/pencil.svg"
           description: "Versione 3.0.0-beta.1 del kit di progettazione interfaccia, caratterizzata da nuova tecnologia e implementazione design token. L'attuale versione beta è usabile in produzione e coerente con Bootstrap Italia"
           link: <a href='https://www.figma.com/community/file/1105848677422572920' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
-        - title: "Design UI kit <em>legacy</em>"
+        - title: "Design UI kit - <em>legacy</em>"
           icon: "/assets/icons/pencil.svg"
           description: "Repository GitHub con componenti e template ufficiali del design system della Pubblica Amministrazione italiana"
           link: <a href='https://github.com/italia/design-ui-kit' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
