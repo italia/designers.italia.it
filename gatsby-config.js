@@ -12,7 +12,12 @@ module.exports = {
     twitterCreator : "@Team per la Trasformazione Digitale e AGID",
     themeColor: "#0066cc"
   },
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
+  ],
   pathPrefix: '/',
   flags: {
     DEV_SSR: true
