@@ -69,8 +69,6 @@ superAccordion:
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-        - icon: "/assets/icons/info-grey.svg"
-          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
 tags:
   - design system
