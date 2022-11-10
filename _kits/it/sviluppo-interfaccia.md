@@ -73,10 +73,5 @@ superAccordion:
           text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
 tags:
-  - web-development-kit
-  - web-development
-  - prototyping
-  - usability
-  - bootstrap
-  - react
+  - design system
 ---
