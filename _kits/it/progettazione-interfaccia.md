@@ -60,6 +60,5 @@ superAccordion:
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
 
 tags:
-  - user experience
-  - usability
+  - design system
 ---
