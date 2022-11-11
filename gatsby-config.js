@@ -2,14 +2,14 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://designers.italia.it`,
     title : "Designers Italia",
-    author : "Team per la Trasformazione Digitale e AGID",
+    author : "Dipartimento per la trasformazione digitale e AGID",
     lang : "it",
     description : "Il punto di riferimento per la progettazione dei servizi pubblici digitali",
     siteName : "Designers Italia",
     image : "https://designers.italia.it/assets/icons/logo-it.png",
     twitterImage : "https://designers.italia.it/assets/icons/logo-it.png",
     twitterSite : "@DesignersITA",
-    twitterCreator : "@Team per la Trasformazione Digitale e AGID",
+    twitterCreator : "Dipartimento per la trasformazione digitale e AGID",
     themeColor: "#0066cc"
   },
   plugins: [
