@@ -12,11 +12,17 @@ import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
 import LastUpdate from "../components/last-update/last-update"
 import Feedback from "../components/feedback/feedback"
+import NavPreFooter from "../components/nav-pre-footer/nav-pre-footer"
+
+import Hero from "../components/hero/hero"
+import ImageIcons from "../components/image-icons/image-icons"
+import SectionEditorial from "../components/section-editorial/section-editorial"
+
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const MainTemplate = ({children,page,lastUpdate}) => {
+const Template = ({children,Pagedata}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
@@ -24,12 +30,16 @@ const MainTemplate = ({children,page,lastUpdate}) => {
 			<HeaderSlim data={HeaderData.headerSlim}/>
 			<NavWrapper>
 				<HeaderCenter data={HeaderData.headerCenter}/>
-				<HeaderNav data={HeaderData.navbar} page={page}/>
+				<HeaderNav data={HeaderData.navbar} page={Pagedata.seo.page}/>
 			</NavWrapper>
 		</Header>
       <main id="main">
+        <Hero {...Pagedata.components.hero}></Hero>
+        <ImageIcons {...Pagedata.components.imageIcons}/>
+        <SectionEditorial {...Pagedata.components.sectionEditorial}></SectionEditorial>
         {children}
-        {lastUpdate ? <LastUpdate {...lastUpdate} /> : null }
+        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
+        {Pagedata.navPreFooter ? <NavPreFooter {...Pagedata.navPreFooter} /> : null }
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
@@ -44,4 +54,4 @@ const MainTemplate = ({children,page,lastUpdate}) => {
 	)
 }
 
-export default MainTemplate
+export default Template

@@ -1,17 +1,18 @@
 import * as React from "react"
-import Template from "../templates/tmpl-base"
-import {Seo} from "../components/seo/seo"
-import Pagedata from "./index.yaml"
+import Template from "../../templates/tmpl-level-2"
+import {Seo} from "../../components/seo/seo"
 
-const Index = () => {
+import Pagedata from "./visione-e-missione.yaml"
+
+const VisioneEMissione = () => {
   return(
     <Template Pagedata={Pagedata}>
-      <p>Home page</p>
+
     </Template>
   )
 }
 
-export default Index
+export default VisioneEMissione
 
 export const Head = () => (
 	<Seo

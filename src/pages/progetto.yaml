@@ -1,14 +1,36 @@
 seo:
-  name: Perché
+  name: Progetto
   description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
   image : null
   twitterImage: null
   canonical: null
-  pathname: /perche
+  pathname: /progetto
+
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 24 maggio 2022
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
 components:
   hero:
     background: primary
-    title: Perché
+    title: Progetto
     subtitle: Questo è un sottotitolo che ti fa capire a cosa serve la pagina sotto ci potrebbe stare altro
     img: https://via.placeholder.com/400x300?text=Placeholder
     alt: descrizione immagine
@@ -26,7 +48,7 @@ components:
         - label : Inizio
           active: false
           url: ../
-        - label : Perchè
+        - label : Progetto
           active: true
     share:
       btnId: shareButton
@@ -39,32 +61,7 @@ components:
           color: light
           addonClasses: ms-3
       list:
-        isDropdown: true
-        listItems:
-          - url: "#"
-            ariaLabel: Condividi su Facebook
-            label: Facebook
-            iconRight: true
-            icon:
-              icon: sprites.svg#it-facebook
-              color: primary
-              size: sm
-          - url: "#"
-            label: Twitter
-            ariaLabel: Condividi su Twitter
-            iconRight: true
-            icon:
-              icon: sprites.svg#it-twitter
-              color: primary
-              size: sm
-          - url: "#"
-            label: Linkedin
-            ariaLabel: Condividi su Linkedin
-            iconRight: true
-            icon:
-              icon: sprites.svg#it-linkedin
-              color: primary
-              size: sm
+        isShare: true
     kangaroo:
       id: kangarooHero
       titleSr: Titolo della sezione (per screenreader)
@@ -100,27 +97,21 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems:
-            - url: "#"
-              label: Azione 1
+            - url: "visione-e-missione"
+              label: Visione e missione
               iconRight: true
               icon:
                 icon: sprites.svg#it-info-circle
                 color: primary
                 size: sm
             - url: "#"
-              label: Azione 2
+              label: Storia ed evidenze
               iconRight: true
               icon:
                 icon: sprites.svg#it-info-circle
                 color: primary
                 size: sm
-            - url: "#"
-              label: Azione 3
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-info-circle
-                color: primary
-                size: sm
+
   sectionIntro:
     section: true
     id: contenutoEditoriale1
@@ -142,7 +133,7 @@ components:
       Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
   titleText:
     title: Scopri il progetto
-  highlights :
+  highlightsLoop1 :
     - title : Visione e missione
       id: HL1
       img : /images/highlight-big.jpg
@@ -187,8 +178,8 @@ components:
       alt: descrizione immagine piccola
     - img: /images/conversation.svg
       alt: descrizione immagine piccola
-  highlightCards1:
-    id: highlightCards1
+  highlightCards:
+    id: highlightCards
     title: Articoli di approfondimento
     text: La teoria che sta dietro alla pratica di Designers Italia
     col4: false
@@ -245,32 +236,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              iconRight: true
-              ariaLabel: Condividi su Linkedin
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
     - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
       img: /images/highlight-sm.jpg
       alt: descrizione immagine
@@ -309,32 +275,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              iconRight: true
-              ariaLabel: Condividi su Linkedin
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
     - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
       img: /images/highlight-big.jpg
       alt: descrizione immagine
@@ -373,32 +314,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              iconRight: true
-              ariaLabel: Condividi su Linkedin
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
   highlightCards2:
     id: highlightCards2
     title: Media
@@ -435,32 +351,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              ariaLabel: Condividi su Linkedin
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
     - title: Come usare il design system del Paese quanso sei al mare
       titleSmall: true
       moreInfo : durata 1 minuto
@@ -486,32 +377,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              ariaLabel: Condividi su Linkedin
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
     - title: Fanelli parla di Designers Italia
       titleSmall: true
       moreInfo : durata 21 minuti
@@ -537,32 +403,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              ariaLabel: Condividi su Linkedin
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
     - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
       titleSmall: true
       moreInfo : durata 10 minuti
@@ -588,32 +429,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              ariaLabel: Condividi su Linkedin
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
 
   highlightCards3:
     id: highlightCards3
@@ -650,32 +466,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              ariaLabel: Condividi su Linkedin
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
     - title: Community Lab sui temi dell’upgrade del Kit Design React
       cardEvent: true
       img: /images/highlight-big.jpg
@@ -699,32 +490,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              ariaLabel: Condividi su Linkedin
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
     - title: "Eventone #1!()!A :-)"
       cardEvent: true
       img: /images/highlight-sm.jpg
@@ -748,32 +514,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              ariaLabel: Condividi su Linkedin
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
     - title: Titolo dell’evento senza immagine!
       cardEvent: true
       imgRatio: 4x3
@@ -797,32 +538,7 @@ components:
             size: sm
             color: secondary
         list:
-          isDropdown: true
-          listItems:
-            - url: "#"
-              ariaLabel: Condividi su Facebook
-              label: Facebook
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-facebook
-                color: primary
-                size: sm
-            - url: "#"
-              label: Twitter
-              ariaLabel: Condividi su Twitter
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-twitter
-                color: primary
-                size: sm
-            - url: "#"
-              label: Linkedin
-              ariaLabel: Condividi su Linkedin
-              iconRight: true
-              icon:
-                icon: sprites.svg#it-linkedin
-                color: primary
-                size: sm
+          isShare: true
 
   topics:
     title: Nelle notizie si parla di
@@ -871,23 +587,3 @@ components:
       url: "#"
       color: primary
       size: lg
-lastUpdate:
-  title: Pagina aggiornata il
-  date: 24 maggio 2022
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true

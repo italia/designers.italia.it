@@ -9,7 +9,7 @@ const NavPreFooter = ({
   navOtherPrevNext
 }) => {
   return (
-    <div className="nav-pre-footer py-5 border neutral-1-border-color-a3 border-end-0 border-start-0">
+    <div className="nav-pre-footer">
       {navPosition && <NavPosition items={navPosition}/>}
       {navOtherLinks && <NavOtherLinks {...navOtherLinks}/>}
       {navOtherPrevNext && <NavOtherPrevNext {...navOtherPrevNext}/>}
