@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/tmpl-level-1"
+import Template from "../../templates/tmpl-base"
 import Icon from "../../components/icon/icon"
 import Button from "../../components/button/button"
 import Section from "../../components/section/section"

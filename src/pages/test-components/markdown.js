@@ -1,7 +1,7 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import gfm from "remark-gfm"
-import Template from "../../templates/tmpl-level-1"
+import Template from "../../templates/tmpl-base"
 import TestYaml from "../../components/test-yaml/test-yaml"
 import Pagedata from "./various.yaml"
 

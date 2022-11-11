@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/tmpl-level-1"
+import Template from "../../templates/tmpl-base"
 import Highlight from "../../components/highlight/highlight"
 import Pagedata from "./highlight.yaml"
 

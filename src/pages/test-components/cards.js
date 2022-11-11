@@ -1,5 +1,5 @@
 import * as React from "react"
-import Template from "../../templates/tmpl-level-1"
+import Template from "../../templates/tmpl-base"
 import Card from "../../components/card/card"
 import Pagedata from "./cards.yaml"
 
