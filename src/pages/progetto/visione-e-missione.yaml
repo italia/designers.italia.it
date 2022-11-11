@@ -68,7 +68,7 @@ components:
           url: ../
         - label : Progetto
           active: false
-          url: /Progetto
+          url: /progetto
         - label : Visione e missione
           active: true
     share:
@@ -82,32 +82,7 @@ components:
           color: primary
           addonClasses: ms-3
       list:
-        isDropdown: true
-        listItems:
-          - url: "#"
-            ariaLabel: Condividi su Facebook
-            label: Facebook
-            iconRight: true
-            icon:
-              icon: sprites.svg#it-facebook
-              color: primary
-              size: sm
-          - url: "#"
-            label: Twitter
-            ariaLabel: Condividi su Twitter
-            iconRight: true
-            icon:
-              icon: sprites.svg#it-twitter
-              color: primary
-              size: sm
-          - url: "#"
-            label: Linkedin
-            ariaLabel: Condividi su Linkedin
-            iconRight: true
-            icon:
-              icon: sprites.svg#it-linkedin
-              color: primary
-              size: sm
+        isShare: true
     kangaroo:
       id: kangarooHero
       titleSr: Titolo della sezione (per screenreader)

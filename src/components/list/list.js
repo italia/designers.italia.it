@@ -2,8 +2,11 @@ import * as React from "react"
 import ListItem from "../list-item/list-item"
 import "./list.scss"
 
+import shareData from "../../data/share.yaml"
+
 const List = ({
-	isMenu,       //if list is inside nav menu: true or false
+	isMenu,       //is list inside nav menu: true or false
+  isShare,      //is list a share: true or false
 	collapsable,  //true / false
 	isDropdown,   // if inside dropdown
 	id,
@@ -35,6 +38,13 @@ const List = ({
 	const ulStyles = `${isMenu ? 'link-list' : 'it-list'}`
 		+ `${customStyleUl ? ' '+customStyleUl : ''}`
 
+
+  if (isShare) {
+    let shareItems = shareData.share
+    children = shareItems.map((shareItems,index) => {
+			return <ListItem {...shareItems} key={"z-list-"+index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList}></ListItem>
+		})
+  }
 
 	if (listItems) {
 		children = listItems.map((listitems,index) => {
