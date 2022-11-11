@@ -12,7 +12,33 @@ module.exports = {
     twitterCreator : "@Team per la Trasformazione Digitale e AGID",
     themeColor: "#0066cc"
   },
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-htaccess',
+      // docs here: https://www.npmjs.com/package/gatsby-plugin-htaccess
+      options: {
+        RewriteBase: true,
+        https: true,
+        www: true,
+        SymLinksIfOwnerMatch: true,
+        host: 'designers.italia.it/', // if 'www' is set to 'false', be sure to also remove it here!
+        /*ErrorDocument: `
+          ErrorDocument 401 /error_pages/401.html
+          ErrorDocument 404 /error_pages/404.html
+          ErrorDocument 500 /error_pages/500.html
+        `,*/
+        redirect: [
+          // redirects go here
+          'RewriteRule ^not-existing-url/?$ /existing-url [R=301,L,NE]',
+        ],
+        /*custom: `
+            # This is a custom rule!
+            # This is a another custom rule!
+        `,*/
+      },
+    },
+  ],
   pathPrefix: '/',
   flags: {
     DEV_SSR: true
