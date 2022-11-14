@@ -1,0 +1,418 @@
+seo:
+  name: Level3
+  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
+  image : null
+  twitterImage: null
+  canonical: null
+  pathname: /level2/level3/level3
+
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 24 maggio 2022
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Modello Comuni
+        url: "#"
+navPreFooter:
+  navOtherPrevNext:
+    next:
+      label: Next page
+      url: "#"
+      blank: false
+      specular: true
+      icon:
+        icon: "sprites.svg#it-arrow-right"
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: light
+    title: Level 3
+    subtitle: Aliquam cursus, mauris id posuere mattis, tellus massa maximus diam, vitae pulvinar ante dolor vel leo.
+    img: https://via.placeholder.com/400x300?text=Placeholder
+    alt: descrizione immagine
+    imgRatio: 4x3
+    tag:
+        label: tag
+        addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: Pre-text
+    text: |
+      Aliquam cursus, mauris id posuere mattis, tellus massa maximus diam, vitae pulvinar ante dolor vel leo. Aliquam eget varius urna. Suspendisse sollicitudin orci at metus eleifend faucibus. Suspendisse ac velit tellus. Nulla mattis aliquet quam, non interdum diam mattis nec. Vestibulum tincidunt, nisi et vulputate scelerisque, lorem risus mattis erat, a commodo ante nibh nec ipsum. Nam ultrices neque eu lectus luctus, eu aliquet ex volutpat. Maecenas commodo neque ac lacus mollis blandit. Vestibulum quam est, tincidunt id bibendum id, mollis in lorem. Maecenas eu dignissim erat. Mauris a lorem eget ipsum posuere fermentum vitae a mauris.
+    breadcrumbs :
+      separator : '/'
+      items :
+        - label : Inizio
+          active: false
+          url: ../
+        - label : Level1
+          active: false
+          url: /progetto
+        - label : Level2
+          url: /level2/level2
+          active: false
+        - label : Level3
+          active: true
+    share:
+      btnId: shareButton
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero text-primary mb-4 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+    kangaroo:
+      id: kangarooExample
+      titleSr: Titolo della sezione (per screenreader)
+      tagsLabel : Parliamo di
+      color : primary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: primary
+      chips:
+        - label: Accessibilità
+          url: "#"
+          color: primary
+          size: lg
+        - label: Ricerca Utente
+          url: "#"
+          color: primary
+          size: lg
+        - label: Sviluppo front end
+          url: "#"
+          color: primary
+          size: lg
+      personalInfo:
+         items:
+          - title: Sei
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer
+          - title: Vuoi
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare, Realizzare
+
+      navposition:
+        items:
+          - title: Ti trovi in
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Modello Comuni
+            url: "#"
+      otherInfo:
+        items:
+          - title: Rispettando
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Design standard X
+            url: "#"
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Apri dropdown
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: primary
+            addonClasses: icon-expand ms-2
+        list:
+          listItems:
+            - url: "#"
+              label: Azione 1
+            - url: "#"
+              label: Azione 2
+            - url: "#"
+              label: Azione 3
+  sectionsEditorial :
+    - menu: false
+      title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      components:
+        - name: TextImageCta
+          title: A cosa servono
+          text: |
+            Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.
+            Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per rappresentare le principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.
+        - name: TextImageCta
+          title: Documenti utili
+          text: |
+            LSed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Come usare le risorse
+            url: "#"
+            blank: true
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: La conformità ai servizi
+            url: "#"
+            blank: true
+    - menu: true
+      title: I principali servizi digitali comunali
+      bgColor: light
+      text: Sottotitolo o lead text
+      components:
+        - name: TextImageCta
+          title: Titolo
+          text: |
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 1
+            url: "#"
+            blank: true
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 2
+            url: "#"
+            blank: true
+        - name: TextImageCta
+          title: Titolo
+          text: |
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 1
+            url: "#"
+            blank: true
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 2
+            url: "#"
+            blank: true
+        - name: TextImageCta
+          title: Titolo
+          text: |
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 1
+            url: "#"
+            blank: true
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 2
+            url: "#"
+            blank: true
+        - name: TextImageCta
+          title: Titolo
+          text: |
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 1
+            url: "#"
+            blank: true
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 2
+            url: "#"
+            blank: true
+    - menu: false
+      centered : true
+      bgColor: primary-light
+      title: Esplora tutti i prototipi
+      components:
+        - name: TextImageCta
+          title: A cosa servono
+          text: |
+            ![Descrizione immagine](https://via.placeholder.com/1400x600?text=Placeholder)
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Link 1
+            url: "#"
+            blank: true
+
+
+  highlightCards:
+    id: highlightCards
+    title: Spazio card
+    text: Testo spazio card
+    col4: false
+    nospace: false
+    cards:
+      - title: Titolo evento
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg
+        iconImgAlt: Descrizione immagine
+        url: "#"
+        text: |
+          Descrizione **test**
+        tag:
+          label: Tipologia evento
+        share:
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Titolo evento
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg
+        iconImgAlt: Descrizione immagine
+        url: "#"
+        text: |
+          Descrizione **test**
+        tag:
+          label: Tipologia evento
+        share:
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Titolo evento
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg
+        iconImgAlt: Descrizione immagine
+        url: "#"
+        text: |
+          Descrizione **test**
+        tag:
+          label: Tipologia evento
+        share:
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+  sectionsEditorial2 :
+    - menu: false
+      centered: true
+      title: Hai bisogno di chiarimenti o supporto tecnico?
+      components:
+        - name: TextImageCta
+          specular: true
+          image: /images/text-image-cta-img.svg
+          text: |
+            Consulta le domande frequenti o scrivici.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Supporto di PA digitale 2026
+            url: "#"
+            blank: true
+
+

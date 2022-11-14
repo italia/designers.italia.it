@@ -2,6 +2,9 @@
 .section-editorial {
   padding-top: var(--section-editorial-y-padding);
   padding-bottom: var(--section-editorial-y-padding);
+  h2.mb-0 + .text-image-cta {
+    margin-top: 48px;
+  }
   .text-container {
     p {
       font-size: var(--section-editorial-intro-text-size);
@@ -14,6 +17,10 @@
   .sidebar-wrapper.affix-top {
     top: 42px;
   }
+  &.bg-primary-light {
+    background-color: var(--color-primary-light);
+  }
+
 }
 //Mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
