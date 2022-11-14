@@ -4,22 +4,27 @@ components:
   resourceList:
     title: Titoletto eventuale gruppo risorse
     list:
-      isMenu: false
-      simpleList: true
-      listItems:
-        - url: "#"
-          label : Risorsa esterna linkata qui anche nel nome
-          actions:
-            - url: "#"
-              icon:
-                color: primary
-                icon: sprites.svg#it-expand
-                addonClasses : icon-expand
-            - url: "#"
-              icon:
-                color: primary
-                icon: sprites.svg#it-expand
-                addonClasses : icon-expand
+      - simpleList: true
+        listItems:
+          - label: Foglio costruzione dei flussi di interazione
+            srBefore: PDF
+            srAfter: (si apre in una nuova finestra)
+            text: Inizia a progettare un’interfaccia che sia basata sui percorsi che l’utente compie per raggiungere i suoi obiettivi
+            url: "#"
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link
+                url: "#"
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra)
+                blank: true
+              - icon: sprites.svg#it-github
+                url: "#"
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra)
+                blank: true
+              - icon: sprites.svg#it-file
+                url: "#"
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra)
+                blank: true
   chips:
     - color : primary
       label : Primary Lg
