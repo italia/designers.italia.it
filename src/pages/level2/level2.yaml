@@ -30,7 +30,7 @@ lastUpdate:
 navPreFooter:
   navOtherPrevNext:
     next:
-      label: Storia ed evidenze
+      label: Next page
       url: "#"
       blank: false
       specular: true
@@ -141,6 +141,15 @@ components:
                 size: sm
   sectionsEditorial :
     - menu: false
+      title: false
+      text: false
+      full: true
+      noSpace: true
+      components:
+        - name: ImageIcons
+          image: /images/image-icons-fullwidth.jpg
+          alt: Descrizione immagine grande
+    - menu: false
       title: Titolo editoriale sulla visione h2
       text: |
         Sottotitolo o claim che parla del progetto e della fase progettare che può essere anche lungo
@@ -233,3 +242,133 @@ components:
             label: Passi da seguire
             url: "#"
             blank: true
+  highlightCards:
+    id: highlightCards
+    title: Spazio card
+    text: Testo spazio card
+    col4: false
+    nospace: true
+    cards:
+      - title: "Titolo Card"
+        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+        titleSmall: false
+        fullHeight: true
+        url: "#"
+        tag:
+          label: Tag
+        share:
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: "Titolo Card"
+        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+        titleSmall: false
+        fullHeight: true
+        url: "#"
+        tag:
+          label: Tag
+        share:
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: "Titolo Card"
+        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+        titleSmall: false
+        fullHeight: true
+        url: "#"
+        tag:
+          label: Tag
+        share:
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+  sectionsEditorial2 :
+    - menu: false
+      centered: true
+      title: Hai bisogno di chiarimenti o supporto tecnico?
+      components:
+        - name: TextImageCta
+          specular: true
+          image: /images/text-image-cta-img.svg
+          text: |
+            Consulta le domande frequenti o scrivici.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+            label: Supporto di PA digitale 2026
+            url: "#"
+            blank: true
+    - menu: false
+      centered: true
+      bgColor: light
+      title: La community di riferimento
+      text: Scopri i canali della community dove confrontarti sulle risorse del modello
+      components:
+        - name: TextImageCta
+          specular: true
+          image: /images/ItForum.svg
+          text: |
+            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              size: sm
+              hidden: true
+            label: Vai su Forum Italia
+            url: "#"
+            blank: true
+        - name: TextImageCta
+          specular: true
+          image: /images/Slack.svg
+          text: |
+            Dialoga e collabora in tempo reale con i designer e i maintainer sui canali dedicati al #design.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              size: sm
+              hidden: true
+            label: "Entra nei canali #design"
+            url: "#"
+            blank: true
+        - name: TextImageCta
+          specular: true
+          image: /images/Github.svg
+          text: |
+            Disegna e sviluppa con noi nuove soluzioni per i servizi digitali nazionali.
+          ctas:
+          - icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              size: sm
+              hidden: true
+            label: "Visita github.com/italia"
+            url: "#"
+            blank: true
+

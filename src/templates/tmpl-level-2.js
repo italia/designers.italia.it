@@ -17,6 +17,7 @@ import NavPreFooter from "../components/nav-pre-footer/nav-pre-footer"
 import Hero from "../components/hero/hero"
 import ImageIcons from "../components/image-icons/image-icons"
 import SectionEditorial from "../components/section-editorial/section-editorial"
+import HighlightCards from "../components/highlight-cards/highlight-cards"
 
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
@@ -39,6 +40,12 @@ const Template = ({children,Pagedata}) => {
         { Pagedata.components.sectionsEditorial.map((section,index) => {
           return(
             <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
+          )
+        })}
+        {Pagedata.components.highlightCards && <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>}
+        { Pagedata.components.sectionsEditorial2.map((section,index) => {
+          return(
+            <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
           )
         })}
         {children}

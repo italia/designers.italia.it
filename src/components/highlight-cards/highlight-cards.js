@@ -12,11 +12,13 @@ const HighlightCards = ({
   text,
   cards,
   col4,
-  buttons
+  buttons,
+  nospace
 }) => {
 
-  let styles = 'highlight-cards py-5 py-lg-6'
+  let styles = 'highlight-cards'
 	+ `${background ? ' bg-'+background : ''}`
+  + `${nospace ? '' : '  py-5 py-lg-6'}`
 
   let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'
 	+ `${col4 ? ' col-lg-3' : ' col-lg-4'}`
