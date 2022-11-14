@@ -35,11 +35,15 @@ const Template = ({children,Pagedata}) => {
 		</Header>
       <main id="main">
         <Hero {...Pagedata.components.hero}></Hero>
-        <ImageIcons {...Pagedata.components.imageIcons}/>
-        <SectionEditorial {...Pagedata.components.sectionEditorial}></SectionEditorial>
+        {Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}
+        { Pagedata.components.sectionsEditorial.map((section,index) => {
+          return(
+            <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
+          )
+        })}
         {children}
-        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
-        {Pagedata.navPreFooter ? <NavPreFooter {...Pagedata.navPreFooter} /> : null }
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} />}
+        {Pagedata.navPreFooter && <NavPreFooter {...Pagedata.navPreFooter} />}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
