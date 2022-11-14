@@ -37,13 +37,13 @@ const Template = ({children,Pagedata}) => {
       <main id="main">
         <Hero {...Pagedata.components.hero}></Hero>
         {Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}
-        { Pagedata.components.sectionsEditorial.map((section,index) => {
+        {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
           return(
             <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
           )
         })}
         {Pagedata.components.highlightCards && <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>}
-        { Pagedata.components.sectionsEditorial2.map((section,index) => {
+        {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => {
           return(
             <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
           )
