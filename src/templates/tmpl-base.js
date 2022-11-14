@@ -10,7 +10,6 @@ import HeaderSlim from "../components/header-slim/header-slim"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
-import Feedback from "../components/feedback/feedback"
 
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
