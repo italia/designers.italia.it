@@ -16,7 +16,7 @@ const ResourceList = ({
 		HLevel = `h3`
 	}
 
-  let addonClasses = full ? ' px-0 mx-0 w-100' : 'col col-md-10 offset-md-1 col-lg-7'
+  let addonClasses = full ? ' px-0 mx-0 w-100' : 'col col-md-10 offset-md-1 col-lg-9'
 
   return (
     <div className="resource-list py-5">

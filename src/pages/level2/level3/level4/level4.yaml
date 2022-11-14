@@ -77,7 +77,6 @@ navPreFooter:
 
 components:
   hero:
-    background: light
     title: Level 4
     subtitle: Aliquam cursus, mauris id posuere mattis, tellus massa maximus diam, vitae pulvinar ante dolor vel leo.
     img: https://via.placeholder.com/400x300?text=Placeholder
@@ -202,6 +201,7 @@ components:
               label: Azione 3
   sectionsEditorial :
     - menu: false
+      centered: true
       title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
       components:
         - name: TextImageCta
@@ -213,7 +213,6 @@ components:
 
   resourceList:
     title: Titoletto eventuale gruppo risorse
-    full: true
     list:
       simpleList : true
       title: Esempio lista risorse
@@ -242,10 +241,8 @@ components:
 
   sectionsEditorial2 :
     - menu: true
-      centered: false
       title: Tutorial
       text: Sottotitolo o lead text
-      full: true
       components:
         - name: TextImageCta
           text: |
