@@ -4,7 +4,7 @@ seo:
   image : null
   twitterImage: null
   canonical: null
-  pathname: /level2/level2
+  pathname: /level2/
 
 lastUpdate:
   title: Pagina aggiornata il
@@ -65,10 +65,10 @@ components:
       items :
         - label : Inizio
           active: false
-          url: ../
+          url: /
         - label : Level1
           active: false
-          url: /progetto
+          url: /level1
         - label : Level2
           active: true
     share:
@@ -118,8 +118,8 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems:
-            - url: "#"
-              label: Azione 1
+            - url: "./level2/level3"
+              label: Level 3
               iconRight: true
               icon:
                 icon: sprites.svg#it-info-circle

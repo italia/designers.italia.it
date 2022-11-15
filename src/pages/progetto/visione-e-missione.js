@@ -7,7 +7,7 @@ import Pagedata from "./visione-e-missione.yaml"
 const VisioneEMissione = () => {
   return(
     <Template Pagedata={Pagedata}>
-
+      {/* place extra components / HTML here */}
     </Template>
   )
 }

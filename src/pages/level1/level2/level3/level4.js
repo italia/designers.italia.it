@@ -7,7 +7,7 @@ import Pagedata from "./level4.yaml"
 const Level4 = () => {
   return(
     <Template Pagedata={Pagedata}>
-
+      {/* place extra components / HTML here */}
     </Template>
   )
 }

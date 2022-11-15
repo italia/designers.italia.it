@@ -1,9 +1,10 @@
 import * as React from "react"
-import Template from "../templates/tmpl-level-1"
-import {Seo} from "../components/seo/seo"
-import Pagedata from "./progetto.yaml"
+import Template from "../../templates/tmpl-level-2"
+import {Seo} from "../../components/seo/seo"
 
-const Progetto = () => {
+import Pagedata from "./level2.yaml"
+
+const Level2 = () => {
   return(
     <Template Pagedata={Pagedata}>
       {/* place extra components / HTML here */}
@@ -11,7 +12,7 @@ const Progetto = () => {
   )
 }
 
-export default Progetto
+export default Level2
 
 export const Head = () => (
 	<Seo

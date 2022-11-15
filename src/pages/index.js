@@ -6,7 +6,25 @@ import Pagedata from "./index.yaml"
 const Index = () => {
   return(
     <Template Pagedata={Pagedata}>
-      <p>Home page</p>
+      <div className="container-xxl py-5 py-lg-6">
+        <div className="row px-3 px-md-0">
+          <div className="col-12 col-md-10 offset-md-1">
+            <h1 className="mb-4">Home page</h1>
+            <h2>Templates</h2>
+            <ul>
+              <li><a href="level1">Level 1</a></li>
+              <li><a href="level1/level2">Level 2</a></li>
+              <li><a href="level1/level2/level3">Level 3</a></li>
+              <li><a href="level1/level2/level3/level4">Level 4</a></li>
+            </ul>
+            <hr className="my-4"/>
+            <h2>Components</h2>
+            <ul>
+              <li><a href="test-components">Components list (partial)</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </Template>
   )
 }
