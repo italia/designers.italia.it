@@ -12,9 +12,23 @@ const Index = () => {
             <h1 className="mb-4">Home page</h1>
             <h2>Templates</h2>
             <ul>
-              <li><a href="level1/">Level 1</a></li>
+              <li>
+                <a href="level1/">Level 1</a>
+                <ul>
+                  <li>
+                    <a href="community/">Community exception</a>
+                  </li>
+                </ul>
+              </li>
               <li><a href="level1/level2/">Level 2</a></li>
-              <li><a href="level1/level2/level3/">Level 3</a></li>
+              <li>
+                <a href="level1/level2/level3/">Level 3</a>
+                <ul>
+                  <li>
+                    <a href="level1/level2/article-detail/">Article detail (same template)</a>
+                  </li>
+                </ul>
+              </li>
               <li><a href="level1/level2/level3/level4/">Level 4</a></li>
             </ul>
             <hr className="my-4"/>
