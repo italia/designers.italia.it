@@ -1,6 +1,7 @@
 import React from "react"
 import Card from "../card/card"
 import Button from "../button/button"
+import Topics from "../topics/topics"
 import ReactMarkdown from "react-markdown"
 import "./highlight-cards.scss"
 
@@ -13,6 +14,7 @@ const HighlightCards = ({
   cards,
   col4,
   buttons,
+  topics,
   nospace
 }) => {
 
@@ -67,6 +69,9 @@ const HighlightCards = ({
           <div className="row mb-4">
             {cardsItems}
           </div>
+        }
+        {topics &&
+          <Topics {...topics}/>
         }
         {buttonsItems &&
           <div className="row buttons">

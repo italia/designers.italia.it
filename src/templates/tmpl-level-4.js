@@ -29,13 +29,13 @@ const Template = ({children,Pagedata}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
-      <Header data={HeaderData}>
-			<HeaderSlim data={HeaderData.headerSlim}/>
-			<NavWrapper>
-				<HeaderCenter data={HeaderData.headerCenter}/>
-				<HeaderNav data={HeaderData.navbar} page={Pagedata.seo.page}/>
-			</NavWrapper>
-		</Header>
+        <Header data={HeaderData}>
+        <HeaderSlim data={HeaderData.headerSlim}/>
+        <NavWrapper>
+          <HeaderCenter data={HeaderData.headerCenter}/>
+          <HeaderNav data={HeaderData.navbar} page={Pagedata.seo.page}/>
+        </NavWrapper>
+      </Header>
       <main id="main">
         <Hero {...Pagedata.components.hero}></Hero>
         {Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}

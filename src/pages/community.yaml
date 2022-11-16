@@ -1,0 +1,711 @@
+seo:
+  name: Community
+  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
+  image : null
+  twitterImage: null
+  canonical: null
+  pathname: /community
+
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 24 maggio 2022
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+components:
+  hero:
+    background: primary
+    title: Community
+    subtitle: Aliquam cursus, mauris id posuere mattis, tellus massa maximus diam, vitae pulvinar ante dolor vel leo.
+    img: https://via.placeholder.com/400x300?text=Placeholder
+    alt: descrizione immagine
+    imgRatio: 4x3
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve
+    text: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+    breadcrumbs :
+      separator : '/'
+      items :
+        - label : Inizio
+          active: false
+          url: /
+        - label : Level 1
+          active: true
+    share:
+      btnId: shareButtonHero
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero text-white mb-4 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: light
+          addonClasses: ms-3
+      list:
+        isShare: true
+    kangaroo:
+      id: kangarooHero
+      titleSr: Titolo della sezione (per screenreader)
+      tagsLabel : Parliamo di
+      color : white
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: white
+      chips:
+        - label: Accessibilità
+          url: "#"
+          color: primary
+          size: lg
+        - label: Ricerca Utente
+          url: "#"
+          color: primary
+          size: lg
+        - label: Sviluppo front end
+          url: "#"
+          color: primary
+          size: lg
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri il perché
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: white
+            addonClasses: icon-expand ms-2
+        list:
+          listItems:
+            - url: "level2/"
+              label: Level 2
+              iconRight: true
+              icon:
+                icon: sprites.svg#it-info-circle
+                color: primary
+                size: sm
+
+  sectionIntro:
+    section: true
+    id: contenutoEditoriale1
+    headingLevel: 2
+    title: Il design è un processo di comunità, aperto e collaborativo
+    background: null
+    text: |
+      Il design è la disciplina che si occupa di risolvere problemi complessi, in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella Pubblica Amministrazione.
+    moreButton: Leggi di più
+    icon:
+      icon: sprites.svg#it-arrow-right
+      color: white
+      size: sm
+    moreText: |
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
+      ### Titolo livello 3
+      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?\
+      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+  titleText:
+    title: Scopri le attività della community
+
+  highlightCardsLoop:
+    - id: highlightCardsEventi
+      title: Eventi
+      text: I prossimi eventi dove trovare gli esperti di Designers Italia, e i cicli di eventi dedicati alla community curati dal progetto
+      col4: true
+      background: light
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora il calendario eventi
+        addonStyle: d-block
+      cards:
+      - title: Designers Italia a Wired Next Festival
+        cardEvent: true
+        img: /images/highlight-sm.jpg
+        alt: descrizione immagine
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: 22
+          month: Aprile
+        url: "#"
+        tag:
+          label: Invito
+        share:
+          btnId: shareButtonCard8
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Community Lab sui temi dell’upgrade del Kit Design React
+        cardEvent: true
+        img: /images/highlight-big.jpg
+        alt: descrizione immagine
+        imgRatio: 4x3
+        imgPlaceholder: false
+        fullHeight: true
+        dateOverlay:
+          day: 14
+          month: Agosto
+        url: "#"
+        tag:
+          label: Community Lab
+        share:
+          btnId: shareButtonCard9
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: "Eventone #1!()!A :-)"
+        cardEvent: true
+        img: /images/highlight-sm.jpg
+        alt: descrizione immagine
+        imgRatio: 4x3
+        imgPlaceholder: false
+        fullHeight: true
+        dateOverlay:
+          day: 30
+          month: Settembre
+        url: "#"
+        tag:
+          label: Invito
+        share:
+          btnId: shareButtonCard10
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Titolo dell’evento senza immagine!
+        cardEvent: true
+        imgRatio: 4x3
+        imgPlaceholder: true
+        fullHeight: true
+        dateOverlay:
+          day: 18
+          month: Dicembre
+        url: "#"
+        text: |
+          Descrizione **test**
+        tag:
+          label: Invito
+        share:
+          btnId: shareButtonCard11
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+    - id: highlightCardsNotizie
+      title: Notizie
+      text: Le ultime notizie sulle attività del progetto Designers Italia
+      col4: false
+      background: null
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutte le notizie
+        addonStyle: d-block
+      cards:
+      - title: Titolo notizia
+        text: E descrizione corta corta vedi lo spazio va bene questa.
+        img: /images/highlight-big.jpg
+        alt: descrizione immagine
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "#"
+        dateInfo: 6 dicembre 2022
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Titolo della notizia su due righette belle belle che diventano tre
+        text: Neque blandit pellentesque nunc sed amet. Nisl, semper sed aliquam amet proin purus augue et.
+        img: /images/highlight-sm.jpg
+        alt: descrizione immagine
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "#"
+        dateInfo: 6 dicembre 2022
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Titolo della notizia senza immagine utile magari per titoli e descrizioni lunghe anche lunghissime che non si sa mai
+        text: Neque blandit pellentesque nunc sed amet. Nisl, semper sed aliquam amet proin purus augue et.
+        fullHeight: true
+        rounded: true
+        url: "#"
+        dateInfo: 6 dicembre 2022
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard3
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      topics:
+        title: Nelle notizie si parla di
+        icon:
+          icon: sprites.svg#it-horn
+          color: secondary
+          hidden: true
+        button:
+          url: "#"
+          btnStyle: outline-primary
+          label: Scopri tutti gli argomenti
+        chips:
+        - label: Accessibilità
+          url: "#"
+          color: primary
+          size: lg
+        - label: Ricerca Utente
+          url: "#"
+          color: primary
+          size: lg
+        - label: Sviluppo front end
+          url: "#"
+          color: primary
+          size: lg
+        - label: Progettazione dei servizi
+          url: "#"
+          color: primary
+          size: lg
+        - label: Wired Next Fest
+          url: "#"
+          color: primary
+          size: lg
+        - label: Futuro
+          url: "#"
+          color: primary
+          size: lg
+        - label: Prossimo
+          url: "#"
+          color: primary
+          size: lg
+        - label: Interessante
+          url: "#"
+          color: primary
+          size: lg
+        - label: X-Media Festival
+          url: "#"
+          color: primary
+          size: lg
+    - id: highlightCardsArticoli
+      title: Articoli di approfondimento
+      text: La teoria che sta dietro alla pratica di Designers Italia
+      col4: false
+      background: light
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti gli approfondimenti
+        addonStyle: me-3 d-block
+      - type: button
+        btnStyle: outline-primary
+        label: Vai al Medium di Designers Italia
+        icon:
+          icon: sprites.svg#it-external-link
+          color: primary
+          align: middle
+          size: sm
+          addonClasses: ms-2
+      cards:
+      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+        img: /images/highlight-big.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "#"
+        externalLink:
+          label : Leggi su medium
+          screenReaderText: l'articolo completo
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Daniele Tabellini e Fabrizio Caccavello
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
+        img: /images/highlight-sm.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "#"
+        externalLink:
+          label : Leggi su medium
+          screenReaderText: l'articolo completo
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Mauro Filippi
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
+        img: /images/highlight-big.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "#"
+        externalLink:
+          label : Leggi su medium
+          screenReaderText: l'articolo completo
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Francesco Zaia
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard3
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+    - id: highlightCardsMedia
+      title: Media
+      text: Registrazioni degli eventi, tutorial tecnici e video dalle feste del progetto Designers Italia
+      col4: true
+      background: null
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti i media
+        addonStyle: d-block
+      cards:
+      - title: "Community Call: il bottone SPID e gli altri"
+        titleSmall: true
+        moreInfo : durata 21 minuti
+        cardEvent: true
+        img: /images/highlight-big.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "#"
+        tag:
+          label: Registrazione
+        share:
+          btnId: shareButtonCard4
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Come usare il design system del Paese quanso sei al mare
+        titleSmall: true
+        moreInfo : durata 1 minuto
+        cardEvent: true
+        img: /images/highlight-sm.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "#"
+        tag:
+          label: Tutorial
+        share:
+          btnId: shareButtonCard5
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Fanelli parla di Designers Italia
+        titleSmall: true
+        moreInfo : durata 21 minuti
+        cardEvent: true
+        img: /images/highlight-big.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-hearing
+          ariaLabel: Audio
+        url: "#"
+        tag:
+          label: Podcast
+        share:
+          btnId: shareButtonCard6
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
+        titleSmall: true
+        moreInfo : durata 10 minuti
+        cardEvent: true
+        img: /images/highlight-sm.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "#"
+        tag:
+          label: Registrazione
+        share:
+          btnId: shareButtonCard7
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+  highlightsLoop:
+    - title : Piano attività
+      subtitle: Una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri
+      id: HL1
+      img : /images/highlight-big.jpg
+      alt: descrizione immagine
+      headingLevel : 2
+      big: false
+      background: medium
+      buttons:
+        - label : Scopri il piano attività
+          btnStyle: primary
+          url: "#"
+        - label : Label text
+          btnStyle: outline-secondary
+          url: "#"
+    - title : Progetti
+      subtitle: Alcuni dei progetti più significativi legati al progetto Designers Italia
+      id: HL2
+      img : /images/highlight-sm.jpg
+      alt: descrizione immagine
+      headingLevel : 2
+      background: dark
+      specular: true
+      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      buttons:
+        - label : Esplora i progetti
+          btnStyle: primary
+          url: "#"
+        - label : Proponi un progetto
+          btnStyle: outline-primary
+          url: "#"
+    - title : Come partecipare
+      subtitle: Vuoi contribuire al design system? Partecipare all’evoluzione delle risorse per progettare o all’aggiornamento di linee guida e design standard? Vuoi semplicemente segnalarci un refuso su questo sito?
+      id: HL3
+      img : /images/highlight-big.jpg
+      alt: descrizione immagine
+      headingLevel : 2
+      big: false
+      background: light
+      buttons:
+        - label : Scopri come partecipare
+          btnStyle: primary
+          url: "#"
+        - label : Per designer
+          btnStyle: outline-secondary
+          url: "#"
+        - label : Per developer
+          btnStyle: outline-secondary
+          url: "#"
+  imageIcons:
+    image: /images/image-icons-fullwidth.jpg
+    alt: Descrizione immagine grande
+    icons:
+    - icon:
+        icon: sprites.svg#it-presentation
+        color: white
+    - icon:
+        icon: sprites.svg#it-telephone
+        color: white
+    - icon:
+        icon: sprites.svg#it-piattaforme
+        color: white
+    - icon:
+        icon: sprites.svg#it-video
+        color: white
+    images:
+    - img: /images/conversation.svg
+      alt: descrizione immagine piccola
+    - img: /images/conversation.svg
+      alt: descrizione immagine piccola
+
+

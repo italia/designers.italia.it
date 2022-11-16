@@ -21,7 +21,7 @@ const Topics = ({
                 <Icon {...icon}/>
               </div>
               <div className="content">
-                <h2 className="h4 fw-bold mb-2">{title}</h2>
+                <h3 className="h4 fw-bold mb-2">{title}</h3>
                 {chips && <div className="chip-container">
                   { chips.map((chip,index) => {
                     return(

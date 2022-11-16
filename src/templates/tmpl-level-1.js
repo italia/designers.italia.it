@@ -30,12 +30,12 @@ const Template = ({children,Pagedata}) => {
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
-			<HeaderSlim data={HeaderData.headerSlim}/>
-			<NavWrapper>
-				<HeaderCenter data={HeaderData.headerCenter}/>
-				<HeaderNav data={HeaderData.navbar} page={Pagedata.seo.name}/>
-			</NavWrapper>
-		</Header>
+        <HeaderSlim data={HeaderData.headerSlim}/>
+        <NavWrapper>
+          <HeaderCenter data={HeaderData.headerCenter}/>
+          <HeaderNav data={HeaderData.navbar} page={Pagedata.seo.name}/>
+        </NavWrapper>
+      </Header>
       <main id="main">
 
         { Pagedata.components.hero && <Hero {...Pagedata.components.hero}></Hero>}

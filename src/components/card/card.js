@@ -26,6 +26,7 @@ const Card =(
 		chips,
 		externalLink,
 		moreInfo,
+    dateInfo,
 		imgPlaceholder,
 		iconImg,
     iconImgAlt,
@@ -57,9 +58,10 @@ const Card =(
         <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
           <div className="text-zone">
             {HLevel && <HLevel><a href={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</a></HLevel>}
+            {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
-            {moreInfo && <span className="author font-monospace">{moreInfo}</span>}
+            {moreInfo && <span className="more-info font-monospace">{moreInfo}</span>}
           </div>
           {(tag || share || chips || img) && <div className="di-card-footer">
             {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
@@ -107,9 +109,10 @@ const Card =(
         <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
           <div className="text-zone">
             {HLevel && <HLevel><a href={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</a></HLevel>}
+            {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
-            {moreInfo && <span className="author font-monospace">{moreInfo}</span>}
+            {moreInfo && <span className="more-info font-monospace">{moreInfo}</span>}
           </div>
           {(tag || share || chips) && <div className="di-card-footer">
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">

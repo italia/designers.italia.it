@@ -12,55 +12,49 @@ import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
 import LastUpdate from "../components/last-update/last-update"
 import Feedback from "../components/feedback/feedback"
-import NavPreFooter from "../components/nav-pre-footer/nav-pre-footer"
 
 import Hero from "../components/hero/hero"
-import ImageIcons from "../components/image-icons/image-icons"
-import SectionEditorial from "../components/section-editorial/section-editorial"
+import SectionIntro from "../components/section-intro/section-intro"
+import TitleText from "../components/title-text/title-text"
+import Highlight from "../components/highlight/highlight"
 import HighlightCards from "../components/highlight-cards/highlight-cards"
 
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
-import Kangaroo from "../components/kangaroo/kangaroo"
 
 const Template = ({children,Pagedata}) => {
-	return (
+  return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderSlim data={HeaderData.headerSlim}/>
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter}/>
-          <HeaderNav data={HeaderData.navbar} page={Pagedata.seo.page}/>
+          <HeaderNav data={HeaderData.navbar} page={Pagedata.seo.name}/>
         </NavWrapper>
       </Header>
       <main id="main">
-        <Hero {...Pagedata.components.hero}></Hero>
-        {Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}
-        {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
+
+        { Pagedata.components.hero && <Hero {...Pagedata.components.hero}></Hero>}
+        { Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}/>}
+
+        { Pagedata.components.titleText && <TitleText {...Pagedata.components.titleText}/>}
+
+        { Pagedata.components.highlightCardsLoop && Pagedata.components.highlightCardsLoop.map((hlc,index) => {
           return(
-            <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
+            <HighlightCards key={"hcl-"+index} {...hlc}/>
           )
         })}
-        {Pagedata.components.highlightCards && <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>}
-        {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => {
+
+        { Pagedata.components.highlightsLoop && Pagedata.components.highlightsLoop.map((hl,index) => {
           return(
-            <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
+            <Highlight key={"hl-"+index} {...hl}/>
           )
         })}
+
         {children}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} />}
-        {Pagedata.kangaroo &&
-          <div className="container-xxl">
-            <div className="row">
-              <div className="col-12">
-                <Kangaroo {...Pagedata.kangaroo} />
-              </div>
-            </div>
-          </div>
-        }
-        {Pagedata.navPreFooter && <NavPreFooter {...Pagedata.navPreFooter} />}
+        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>

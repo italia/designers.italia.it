@@ -56,8 +56,8 @@ const SectionEditorial = ({
   }
 
   let styles = "section-editorial"
-  + `${bgColor=="light" ? ' bg-light' : ''}`
-  + `${bgColor=="primary-light" ? ' bg-primary-light' : ''}`
+  + `${bgColor==="light" ? ' bg-light' : ''}`
+  + `${bgColor==="primary-light" ? ' bg-primary-light' : ''}`
   + `${noSpace ? ' py-0' : ''}`
 
   return(

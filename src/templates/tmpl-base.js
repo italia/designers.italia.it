@@ -20,7 +20,7 @@ const Template = ({children,Pagedata}) => {
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
-			  <HeaderSlim data={HeaderData.headerSlim}/>
+        <HeaderSlim data={HeaderData.headerSlim}/>
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter}/>
           <HeaderNav data={HeaderData.navbar} />
