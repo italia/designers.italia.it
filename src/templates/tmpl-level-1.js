@@ -52,6 +52,12 @@ const Template = ({children,Pagedata}) => {
 
         { Pagedata.components.highlightCards && <HighlightCards {...Pagedata.components.highlightCards} /> }
 
+        { Pagedata.components.highlightsLoop2 && Pagedata.components.highlightsLoop2.map((hl,index) => {
+          return(
+            <Highlight key={"hl-"+index} {...hl}/>
+          )
+        })}
+
         { Pagedata.components.topics && <Topics {...Pagedata.components.topics}/> }
 
         {children}
