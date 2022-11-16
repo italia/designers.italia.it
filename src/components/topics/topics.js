@@ -6,10 +6,19 @@ import "./topics.scss"
 
 const Topics = ({
   title,
+  headingLevel,
   icon,
   chips,
   button
 }) => {
+
+  //heading level
+	let HLevel
+	if (headingLevel) {
+		HLevel = `h${headingLevel}`;
+	} else {
+		HLevel = `h2`
+	}
 
   return (
     <div className="topics py-5">
@@ -21,7 +30,7 @@ const Topics = ({
                 <Icon {...icon}/>
               </div>
               <div className="content">
-                <h3 className="h4 fw-bold mb-2">{title}</h3>
+                <HLevel className="h4 fw-bold mb-2">{title}</HLevel>
                 {chips && <div className="chip-container">
                   { chips.map((chip,index) => {
                     return(
