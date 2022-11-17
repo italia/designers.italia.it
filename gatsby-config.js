@@ -17,6 +17,13 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, // Needed for dynamic images
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `staticImages`,
+        path: `${__dirname}/static/images/`,
+      },
+    }
     /*{
       resolve: 'gatsby-plugin-htaccess',
       // docs here: https://www.npmjs.com/package/gatsby-plugin-htaccess

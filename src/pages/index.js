@@ -3,6 +3,8 @@ import Template from "../templates/tmpl-base"
 import {Seo} from "../components/seo/seo"
 import Pagedata from "./index.yaml"
 
+import Buttons from "./test-components/list"
+
 const Index = () => {
   return(
     <Template Pagedata={Pagedata}>
