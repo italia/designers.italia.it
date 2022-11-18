@@ -1,4 +1,5 @@
 import React from "react"
+import ImageResponsive from "../image-responsive/image-responsive"
 import Icon from "../icon/icon"
 import "./image-icons.scss"
 
@@ -29,7 +30,7 @@ const ImageIcons = ({
   if (images) {
     imagesItems = images.map((item,index) => {
       return(
-        <img src={item.img} alt={item.alt} key={"image-"+index}/>
+        <ImageResponsive src={item.img} alt={item.alt} key={"image-"+index}/>
       )
     })
   }
@@ -40,7 +41,7 @@ const ImageIcons = ({
       <div className="container-xxl">
         <div className="row position-relative">
           <div className="col">
-            <img src={image} alt={alt} className="img-fluid w-100"/>
+            <ImageResponsive src={image} alt={alt} className="w-100" imgClassName="img-fluid w-100"/>
           </div>
           {(iconItems || imagesItems) && (
               <div className="icons position-absolute top-0 start-50 translate-middle-x h-100 d-flex align-items-center justify-content-between">

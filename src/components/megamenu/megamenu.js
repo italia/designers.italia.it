@@ -4,6 +4,8 @@ import List from "../list/list"
 import Icon from "../icon/icon"
 import './megamenu.scss'
 
+import ImageResponsive from "../image-responsive/image-responsive"
+
 const Megamenu = ({
 	left,
 	heading,
@@ -17,7 +19,8 @@ const Megamenu = ({
 						<div className="description-content mx-4 mx-lg-0">
 							{left.img &&
 								<div className="ratio ratio-16x9 lightgrey-bg-a1 mb-4 rounded">
-									<img className="rounded" src={left.img} alt={left.imgAlt}/>
+									{/*<img className="rounded" src={left.img} alt={left.imgAlt}/>*/}
+									<ImageResponsive className="rounded" src={left.img} alt={left.imgAlt}/>
 								</div>
 							}
 							{left.text &&

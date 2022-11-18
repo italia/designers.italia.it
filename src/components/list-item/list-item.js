@@ -2,6 +2,8 @@ import * as React from "react"
 import Icon from "../icon/icon"
 import Avatar from "../avatar/avatar"
 
+import ImageResponsive from "../image-responsive/image-responsive"
+
 const ListItem = ({
 	url,             //link of item
   blank,
@@ -51,7 +53,7 @@ const ListItem = ({
 	//immagine
 	let imgRendered
 	if(img) {
-		imgRendered = <div className="it-thumb"><img src={img} alt={alt}/></div>
+		imgRendered = <div className="it-thumb"><ImageResponsive src={img} alt={alt}/></div>
 	}
 	// label
 	if(label){

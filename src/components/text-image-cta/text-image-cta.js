@@ -3,6 +3,8 @@ import ReactMarkdown from "react-markdown"
 import SimpleCta from "../simple-cta/simple-cta"
 import "./text-image-cta.scss"
 
+import ImageResponsive from "../image-responsive/image-responsive"
+
 const TextImageCta =({
   title,
   headingLevel,
@@ -43,7 +45,7 @@ const TextImageCta =({
     <div className={styles}>
       {image &&
         <div className={imageWrapperStyles}>
-          <img src={image} alt={alt} className="w-100 img-fluid img-main"/>
+          <ImageResponsive src={image} alt={alt} imgClassName="w-100 img-fluid img-main"/>
         </div>
       }
       <div className={contentStyles}>

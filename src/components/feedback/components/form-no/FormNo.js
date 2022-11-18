@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
+import ImageResponsive from "../../../image-responsive/image-responsive"
 
 import Button from "../../../button/button"
 
@@ -153,7 +154,7 @@ const FormNo = ({
 
     {/* ----------- feedback step 4 ----------- */}
     <div className="step feedback-formno-step">
-      <img src="/images/kit-analitics.svg" className="" alt="" />
+      <ImageResponsive src="/images/kit-analitics.svg" alt="" />
       <h2 className="mb-3 h4" id="feedbackYesTitle">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
       <div className="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
       <div className="p mb-5"><a href="#">Leggi l’informativa sulla privacy</a></div>

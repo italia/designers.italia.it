@@ -1,5 +1,6 @@
 import * as React from "react"
 import './highlight.scss'
+import ImageResponsive from "../image-responsive/image-responsive"
 import Button from "../button/button"
 import Icon from "../icon/icon"
 import Numbers from "../numbers/numbers"
@@ -56,9 +57,9 @@ const Highlight = (
 					<div className="col-12">
 						<div className={classes}>
 							<div className="img-container ratio ratio-16x9">
-								<img className="main-image" src={img} alt={alt}/>
+								<ImageResponsive className="main-image" src={img} alt={alt}/>
 								{icon && <Icon {...icon}/>}
-                {overlayImg && <img src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
+                {overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
 							</div>
 							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
 								<HLevel id={id}>{title}</HLevel>
