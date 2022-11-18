@@ -1,6 +1,7 @@
 import * as React from "react"
 import "./hero.scss"
 import ReactMarkdown from "react-markdown"
+import ImageResponsive from "../image-responsive/image-responsive"
 import Breadcrumbs from "../breadcrumbs/breadcrumbs"
 import Dropdown from "../dropdown/dropdown"
 import Icon from "../icon/icon"
@@ -54,7 +55,7 @@ const Hero =({
 	return(
 		<div className={styles}>
       <div className="hero-content">
-        {bgImg && <div className="bg-image"><img src={bgImg} alt={bgImgAlt}/></div>}
+        {bgImg && <div className="bg-image"><ImageResponsive src={bgImg} alt={bgImgAlt}/></div>}
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
@@ -82,7 +83,7 @@ const Hero =({
                   {!centered &&
                     <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
                       <div className={imgStyle}>
-                        <img src={img} alt={alt} />
+                        <ImageResponsive src={img} alt={alt} />
                       </div>
                       {share  && <Dropdown {...share}></Dropdown>}
                     </div>

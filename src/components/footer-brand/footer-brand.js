@@ -1,5 +1,6 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
+import ImageResponsive from "../image-responsive/image-responsive"
 import "./footer-brand.scss"
 
 const FooterBrand = ({
@@ -34,7 +35,7 @@ const FooterBrand = ({
                       target={value.blank ? "_blank" : undefined}
                       className="d-block"
                     >
-                      <img src={value.img} alt={value.title} className={value.small ? "small" : undefined}/>
+                      <ImageResponsive src={value.img} alt={value.title} className={value.small ? "small" : undefined}/>
                     </a>
                   </li>
                 )

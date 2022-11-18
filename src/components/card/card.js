@@ -1,5 +1,6 @@
 import * as React from "react"
 import ReactMarkdown from "react-markdown"
+import ImageResponsive from "../image-responsive/image-responsive"
 import SimpleCta from "../simple-cta/simple-cta"
 import Chip from "../chip/chip"
 import Dropdown from "../dropdown/dropdown"
@@ -65,8 +66,8 @@ const Card =(
           </div>
           {(tag || share || chips || img) && <div className="di-card-footer">
             {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
-              {img && !imgPlaceholder && <img src={img} alt={alt}/>}
-              {iconImg && <img src={iconImg} alt={iconImgAlt}/>}
+              {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt}/>}
+              {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt}/>}
               {dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
                 <span className="day font-monospace">{dateOverlay.day}</span>
                 <span className="month">{dateOverlay.month}</span>
@@ -96,8 +97,8 @@ const Card =(
     return(
       <div className={styles}>
         {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
-          {img && !imgPlaceholder && <img src={img} alt={alt}/>}
-          {iconImg && <img src={iconImg} alt={iconImgAlt}/>}
+          {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt}/>}
+          {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt}/>}
           {dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
             <span className="day font-monospace">{dateOverlay.day}</span>
             <span className="month">{dateOverlay.month}</span>

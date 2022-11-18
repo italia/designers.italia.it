@@ -1,4 +1,5 @@
 import React from "react"
+import ImageResponsive from "../image-responsive/image-responsive"
 
 const ImgFull = ({
   img,
@@ -6,7 +7,7 @@ const ImgFull = ({
 }) => {
   return(
     <div className="img-full mb-5">
-      <img className="w-100" src={img} alt={alt}/>
+      <ImageResponsive imgClassName="w-100 img-fluid" src={img} alt={alt}/>
     </div>
   )
 }

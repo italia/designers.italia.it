@@ -1,4 +1,5 @@
 import React from "react"
+import ImageResponsive from "../image-responsive/image-responsive"
 import Icon from "../icon/icon"
 import "./link-custom.scss"
 
@@ -23,7 +24,7 @@ const LinkCustom = ({
       target={blank ? "_blank" : undefined}
     >
       {icon ? <Icon {...icon}/> : ''}
-      {image ? <img src={image} aria-hidden="true" className={imageStyles}/> : ''}
+      {image ? <ImageResponsive src={image} aria-hidden="true" imgClassName={imageStyles}/> : ''}
       <strong className={labelSmall ? 'small' : null}>{label}</strong>
     </a>
   )

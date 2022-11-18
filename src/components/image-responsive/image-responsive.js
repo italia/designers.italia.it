@@ -1,9 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import "./image-responsive.scss"
 
 const ImageResponsive = (props) => {
-  const { src, alt, ...otherProps } = props
+  const { src, alt, imgClassName, ...otherProps } = props
 
   const data = useStaticQuery(graphql`
     query ImageResponsiveQuery {
@@ -38,8 +39,8 @@ const ImageResponsive = (props) => {
 
   return (
     gatsbyImageData
-      ? <GatsbyImage image={gatsbyImageData} alt={ alt || '' } {...otherProps} />
-      : <img src={realSrc} alt={alt || ''}  {...otherProps} />
+      ? <GatsbyImage image={gatsbyImageData} alt={ alt || '' } imgClassName={imgClassName} {...otherProps} />
+      : <img src={realSrc} alt={alt || ''}  className={imgClassName} />
   )
 }
 

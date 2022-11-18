@@ -45,7 +45,7 @@ const TextImageCta =({
     <div className={styles}>
       {image &&
         <div className={imageWrapperStyles}>
-          <ImageResponsive src={image} alt={alt} className="w-100 img-fluid img-main"/>
+          <ImageResponsive src={image} alt={alt} imgClassName="w-100 img-fluid img-main"/>
         </div>
       }
       <div className={contentStyles}>
