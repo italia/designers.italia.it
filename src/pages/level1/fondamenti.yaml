@@ -157,10 +157,19 @@ components:
             blank: true
 
   filterCards:
-    id: highlightCards
-    title: Spazio card
-    text: Testo spazio card
+    id: fundamentCards
+    title: Esplora i fondamenti
+    idInput: fundamentCardsInput
     col2: true
+    button:
+      type: button
+      btnStyle: outline-secondary justify-content-center w-100
+      label: Filtra
+      iconRight: true
+      icon:
+        icon: sprites.svg#it-funnel
+        color: secondary
+        addonClasses: ms-1 flex-shrink-0
     cards:
       - title: Lorem ipsum
         img: /images/600x400.png

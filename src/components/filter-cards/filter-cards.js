@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../card/card";
+import Button from "../button/button";
 
 import "./filter-cards.scss"
 
@@ -8,7 +9,8 @@ const FilterCards = ({
   background,
   title,
   headingLevel,
-  text,
+  idInput,
+  button,
   cards,
   col2,
   nospace
@@ -45,10 +47,26 @@ const FilterCards = ({
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         <div className="row">
-          {title && <HLevel id={id} className="mb-5">{title}</HLevel>}
-          <form className="">
+          <div  className="col-12 mb-5">
+            {title && <HLevel id={id}>{title}</HLevel>}
+          </div>
 
-          </form>
+          <div className="col-12 mb-3">
+            <form className="" action="#">
+              <div className="row">
+                <div className="col-7 col-md-9 col-lg-10">
+                  <div className="form-group">
+                    <label for={idInput}>Filtra</label>
+                    <input type="text" id={idInput} className="form-control"/>
+                  </div>
+                </div>
+                <div className="col-5 col-md-3 col-lg-2">
+                  <Button {...button}/>
+                </div>
+              </div>
+            </form>
+          </div>
+
         </div>
         <div className="row cards-wrapper">
           {cardsItems}
