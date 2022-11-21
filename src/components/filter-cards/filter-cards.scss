@@ -18,8 +18,10 @@
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
   .filter-cards {
-    .cards-wrapper {
-      width: 88.88889%;
+    &.two-columns {
+      .cards-wrapper {
+        width: 88.88889%;
+      }
     }
   }
 }
