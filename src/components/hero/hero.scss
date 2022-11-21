@@ -92,6 +92,11 @@
     border-bottom: var(--hero-kangaroo-zone-border-top);
     position: relative;
   }
+  &.column-hero {
+    .kangaroo-zone{
+      border-top: none;
+    }
+  }
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {

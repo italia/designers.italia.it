@@ -6,13 +6,24 @@ const LastUpdate = ({
   title,
   date,
   licence,
-  edit
+  edit,
+  column
 }) => {
+
+  let containerStyle = ''
+  + `${column ? '' : 'container-xxl'}`
+
+  let rowStyle = ''
+  + `${column ? '' : 'row'}`
+
+  let columnStyle = ''
+  + `${column ? '' : 'col col-md-10 offset-md-1'}`
+
   return (
     <div className="last-update py-5 py-lg-7">
-      <div className="container-xxl">
-        <div className="row">
-          <div className="col col-md-10 offset-md-1">
+      <div className={containerStyle}>
+        <div className={rowStyle}>
+          <div className={columnStyle}>
             <p className="px-3 px-lg-0">
               <small>{title} {date}
                 <a
