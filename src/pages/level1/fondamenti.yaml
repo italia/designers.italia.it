@@ -1,10 +1,10 @@
 seo:
-  name: Fondamenti
+  name: Design System - Fondamenti
   description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
   image : null
   twitterImage: null
   canonical: null
-  pathname: /level1/design-system
+  pathname: /level1/fondamenti/
 
 lastUpdate:
   column: true
@@ -120,13 +120,13 @@ components:
           size: lg
 
   sectionsEditorial :
-    - column: true
+    - fullColumn: true
       noSpace: true
       components:
         - name: ImgFull
           img: /images/image-icons-fullwidth.jpg
           alt: Descrizione immagine grande
-    - column: true
+    - full: true
       noSpace: true
       title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
       components:
@@ -156,58 +156,134 @@ components:
             url: "#"
             blank: true
 
-  highlightCards:
+  filterCards:
     id: highlightCards
     title: Spazio card
     text: Testo spazio card
-    col4: false
-    nospace: true
+    col2: true
     cards:
-      - title: "Titolo Card"
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-        titleSmall: false
-        fullHeight: true
+      - title: Lorem ipsum
+        img: /images/600x400.png
+        alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
         url: "#"
-        tag:
-          label: Tag
+        text: |
+          Descrizione
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
         share:
           btnId: shareButtonCard1
           button:
             addonStyle: icon-only-drop
+            ariaLabel: Condividi
             icon:
               icon: sprites.svg#it-more-items
               size: sm
               color: secondary
           list:
             isShare: true
-      - title: "Titolo Card"
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-        titleSmall: false
-        fullHeight: true
+      - title: Lorem ipsum
+        img: /images/600x400.png
+        alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
         url: "#"
-        tag:
-          label: Tag
+        text: |
+          Descrizione
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
         share:
           btnId: shareButtonCard2
           button:
             addonStyle: icon-only-drop
+            ariaLabel: Condividi
             icon:
               icon: sprites.svg#it-more-items
               size: sm
               color: secondary
           list:
             isShare: true
-      - title: "Titolo Card"
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-        titleSmall: false
-        fullHeight: true
+      - title: Lorem ipsum
+        img: /images/600x400.png
+        alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
         url: "#"
-        tag:
-          label: Tag
+        text: |
+          Descrizione
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
         share:
-          btnId: shareButtonCard3
+          btnId: shareButtonCard2
           button:
             addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: Lorem ipsum
+        img: /images/600x400.png
+        alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "#"
+        text: |
+          Descrizione
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
             icon:
               icon: sprites.svg#it-more-items
               size: sm
@@ -216,7 +292,7 @@ components:
             isShare: true
 
   sectionsEditorial2 :
-    - column: true
+    - full: true
       noSpace: true
       title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
       components:

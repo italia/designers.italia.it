@@ -1,32 +1,7 @@
 @import "../../scss/bootstrap-breakpoints";
-.section-editorial {
-  padding-top: var(--section-editorial-y-padding);
-  padding-bottom: var(--section-editorial-y-padding);
-  h2.mb-0 + .text-image-cta {
-    margin-top: 48px;
-  }
-  .text-container {
-    p {
-      font-size: var(--section-editorial-intro-text-size);
-    }
-    & + .text-image-cta {
-      p img {
-        margin-top: 0;
-      }
-    }
-  }
-  .sidebar-wrapper .sidebar-linklist-wrapper .link-list-wrapper ul li a:not(.active) {
-    font-weight: normal;
-  }
-  .sidebar-wrapper.affix-top {
-    top: 42px;
-  }
-  &.bg-primary-light {
-    background-color: var(--color-primary-light);
-  }
 
-}
-//Mobile only ------------------------------------------------------------------------------------------
+
+//mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
 
 }
@@ -42,16 +17,9 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-  .section-editorial {
-    padding-top: var(--section-editorial-y-padding-desk);
-    padding-bottom: var(--section-editorial-y-padding-desk);
-  }
-}
-
-.content-column {
-  .section-editorial {
-    h2 {
-      width: 75%;
+  .filter-cards {
+    .cards-wrapper {
+      width: 88.88889%;
     }
   }
 }

@@ -16,7 +16,7 @@ const SectionEditorial = ({
   text,
   full,
   centered,
-  column,
+  fullColumn,
   bgColor,
   components,
   menu,
@@ -43,7 +43,7 @@ const SectionEditorial = ({
 	}
 
   let container=""
-  + `${column ? 'column-editorial mx-auto' : ' container-xxl'}`
+  + `${fullColumn ? 'fullcolumn-editorial' : ' container-xxl'}`
 
   let row="row"
   + `${menu ? ' flex-lg-row-reverse' : ''}`
@@ -58,7 +58,7 @@ const SectionEditorial = ({
   if(full && menu){
     grid="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
   }
-  if(column) {
+  if(fullColumn) {
     grid=""
     row=""
   }

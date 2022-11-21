@@ -16,6 +16,7 @@ import Feedback from "../components/feedback/feedback"
 import Hero from "../components/hero/hero"
 import ImageIcons from "../components/image-icons/image-icons"
 import SectionEditorial from "../components/section-editorial/section-editorial"
+import FilterCards from "../components/filter-cards/filter-cards"
 
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
@@ -36,19 +37,18 @@ const Template = ({children,Pagedata}) => {
 
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12 col-lg-3">
+            <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column">
 
             </div>
-            <div className="col-12 col-lg-9">
+            <div className="col-12 col-lg-9 px-lg-0 content-column">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero}></Hero>}
-              { Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}
               {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
                 return(
                   <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
                 )
               })}
 
-              {/* space for cards */}
+              { Pagedata.components.filterCards && <FilterCards {...Pagedata.components.filterCards}/>}
 
               {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => {
                 return(

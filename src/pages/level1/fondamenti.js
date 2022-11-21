@@ -2,9 +2,9 @@ import * as React from "react"
 import Template from "../../templates/tmpl-design-system-index"
 import {Seo} from "../../components/seo/seo"
 
-import Pagedata from "./design-system.yaml"
+import Pagedata from "./fondamenti.yaml"
 
-const DesignSystem = () => {
+const DesignSystemFondamenti = () => {
   return(
     <Template Pagedata={Pagedata}>
       {/* place extra components / HTML here */}
@@ -12,7 +12,7 @@ const DesignSystem = () => {
   )
 }
 
-export default DesignSystem
+export default DesignSystemFondamenti
 
 export const Head = () => (
 	<Seo
