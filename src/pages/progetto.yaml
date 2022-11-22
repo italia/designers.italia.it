@@ -163,7 +163,7 @@ components:
   # HIGHLIGHTS
   # ///////////////////
   titleText:
-    title: Esplora il lorem ipsum #C
+    title: Scopri Designers Italia #C
 
   # —
   # HIGHLIGHT LOOP
@@ -173,56 +173,50 @@ components:
     # —
     # HIGHLIGHT BIG IMG
     # —
-    - title : Lorem ipsum #C
+    - title : Visione e missione #C
       id: HL1
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
       headingLevel : 3
-      background: light # null | light | medium | dark  
+      background: medium # null | light | medium | dark  
       big: true
       specular: false
-      subtitle: Lorem ipsum #C
+      subtitle: I princìpi e i valori che ispirano il nostro lavoro e i nostri strumenti #C
       buttons: #C #I
-        - label : Scopri lorem ipsum #C
+        - label : Scopri visione e missione #C
           btnStyle: primary
-          url: "lorem-ipsum/" #M
+          url: "visione-e-missione/" #M
 
     # —
     # HIGHLIGHT 
     # —
-    - title : Lorem ipsum #C
+    - title : Formazione e disseminazione #C
       id: HL2
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
       headingLevel : 3
-      background: null  # null | light | medium | dark  
+      background: light  # null | light | medium | dark  
       big: false
       specular: true
-      subtitle: Lorem ipsum #C 
+      subtitle: Il nostro impegno per diffondere e condividere con la community le buone pratiche di design applicate ai servizi digitali pubblici #C 
       numbers: #C #I
         items:
         - icon: sprites.svg#it-pa
           number: 555
-          label: Number label
+          label: Corsi erogati
         - icon: sprites.svg#it-user
           number: 555
-          label: Number label
-      text: Lorem ipsum #C
+          label: Video realizzati
+      text: Abbiamo l’obiettivo di divulgare i princìpi, la cultura della progettazione e le risorse di Designers Italia, per favorire la condivisione di buone pratiche tra progettisti di servizi pubblici digitali, community del design e mondo della PA #C
       buttons: #C #M
-        - label : Scopri lorem ipsum 
+        - label : Scopri formazione e disseminazione
           btnStyle: primary
-          url: "lorem-ipsum/" 
-        - label : Label button
-          btnStyle: outline-secondary
-          url: "#"
-        - label : Label button
-          btnStyle: outline-secondary
-          url: "#"
-    
+          url: "formazione-e-disseminazione/" 
+     
     # —
     # HIGHLIGHT BIG IMG
     # —
-    - title : Lorem ipsum #C
+    - title : Storia e progetti #C
       id: HL3
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
@@ -230,346 +224,8 @@ components:
       background: medium # null | light | medium | dark  
       big: true
       specular: true
-      subtitle: Lorem ipsum #C
+      subtitle: Una storia fatta di persone, idee e open design: le piattaforme, gli strumenti e i progetti a cui Designers Italia ha contribuito  #C
       buttons: #C #M
-        - label : Scopri lorem ipsum 
+        - label : Scopri storia e progetti 
           btnStyle: primary
-          url: "lorem-ipsum/" 
-
-    # —
-    # HIGHLIGHT
-    # —
-    - title : Lorem ipsum #C
-      id: HL4
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 3
-      big: false
-      background: dark
-      specular: true
-      subtitle: Lorem ipsum #C
-      numbers: #C #I
-        items:
-        - icon: sprites.svg#it-pa
-          number: 555
-          label: Number label
-        - icon: sprites.svg#it-user
-          number: 555
-          label: Number label
-      text: Lorem ipsum #C
-      buttons: #C #M
-        - label : Scopri lorem ipsum 
-          btnStyle: primary
-          url: "lorem-ipsum/" 
-        - label : Label button
-          btnStyle: outline-secondary
-          url: "#"
-        - label : Label button
-          btnStyle: outline-secondary
-          url: "#"
-
-    # —
-    # HIGHLIGHT NO IMG (EXAMPLE | MANUALE)
-    # SENZA IMMAGINE SOLO con big=false
-    # —
-    - title : Lorem ipsum #C
-      id: HL5
-      img : null #I
-      alt: null #C
-      headingLevel : 3
-      big: false
-      background: medium
-      specular: true
-      subtitle: Lorem ipsum #C
-      numbers: #C #I
-        items:
-        - icon: sprites.svg#it-pa
-          number: 555
-          label: Number label
-        - icon: sprites.svg#it-user
-          number: 555
-          label: Number label
-      text: Lorem ipsum
-      buttons: #C #M
-        - label : Scopri lorem ipsum 
-          btnStyle: primary
-          url: "lorem-ipsum/" 
-        - label : Label button
-          btnStyle: outline-secondary
-          url: "#"
-        - label : Label button
-          btnStyle: outline-secondary
-          url: "#"
-
-  # —
-  # IMAGE COVER WITH ICONS
-  # —
-  imageIcons: #I
-    image: /images/400x300.png 
-    alt: Alt lorem ipsum #C
-    icons:
-    - icon:
-        icon: sprites.svg#it-presentation
-        color: white
-    - icon:
-        icon: sprites.svg#it-telephone
-        color: white
-    - icon:
-        icon: sprites.svg#it-piattaforme
-        color: white
-    - icon:
-        icon: sprites.svg#it-video
-        color: white
-    images:
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-
-  # —
-  # HIGHLIGHT WITH CARDS
-  # —
-  highlightCards:
-    id: HC1
-    title: Articoli di approfondimento #C
-    text: La teoria che sta dietro alla pratica di Designers Italia #C
-    col4: false # FALSE notizie + Medium | TRUE eventi + media
-    buttons: 
-    - type: button
-      btnStyle: primary
-      label: Esplora tutti gli approfondimenti #C
-      url: "#" #M
-      addonStyle: me-3 d-block
-    - type: button
-      btnStyle: outline-primary
-      label: Vai al Medium di Designers Italia #C
-      url: "#" #M
-      icon:
-        icon: sprites.svg#it-external-link
-        color: primary
-        align: middle
-        size: sm
-        addonClasses: ms-2
-
-    # CARDS
-    cards:
-
-    #CARD MEDIUM
-    - title: "Lorem ipsum" #C
-      img: /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      imgRatio: 16x9
-      imgPlaceholder: false
-      fullHeight: true
-      rounded: true
-      url: "#" #M
-      externalLink:
-        label : Leggi su medium
-        screenReaderText: l'articolo completo
-        icon:
-          icon: sprites.svg#it-external-link
-          size: xs
-      moreInfo: di Nome Cognome e Nome Cognome #C
-      chips: #C #M
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-      share: #AUTO
-        btnId: shareButtonCard1
-        button:
-          addonStyle: icon-only-drop
-          ariaLabel: Condividi
-          icon:
-            icon: sprites.svg#it-more-items
-            size: sm
-            color: secondary
-        list:
-          isShare: true
-
-    #CARD
-    - title: "Lorem ipsum" #C
-      img: /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      imgRatio: 16x9
-      imgPlaceholder: false
-      fullHeight: true
-      rounded: true
-      url: "#"
-      externalLink:
-        label : Leggi su medium
-        screenReaderText: l'articolo completo
-        icon:
-          icon: sprites.svg#it-external-link
-          size: xs
-      moreInfo: di Nome Cognome e Nome Cognome #C
-      chips: #C #M
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-      share: #AUTO
-        btnId: shareButtonCard2
-        button:
-          addonStyle: icon-only-drop
-          ariaLabel: Condividi
-          icon:
-            icon: sprites.svg#it-more-items
-            size: sm
-            color: secondary
-        list:
-          isShare: true
-
-    #CARD
-    - title: "Lorem ipsum" #C
-      img: /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      imgRatio: 16x9
-      imgPlaceholder: false
-      fullHeight: true
-      rounded: true
-      url: "#"
-      externalLink:
-        label : Leggi su medium
-        screenReaderText: l'articolo completo
-        icon:
-          icon: sprites.svg#it-external-link
-          size: xs
-      moreInfo: di Nome Cognome e Nome Cognome #C
-      chips: #C #M
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-        - color : secondary
-          label : Argomento
-          url : "#"
-          blank: false
-      share: #AUTO
-        btnId: shareButtonCard3
-        button:
-          addonStyle: icon-only-drop
-          ariaLabel: Condividi
-          icon:
-            icon: sprites.svg#it-more-items
-            size: sm
-            color: secondary
-        list:
-          isShare: true
-
-  # —
-  # HIGHLIGHT LOOP
-  # —
-  highlightsLoop2:
-
-    #   —
-    # HIGHLIGHT BIG IMG
-    # —
-    - title : Lorem ipsum #C
-      id: HLB1
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 3
-      background: medium # null | light | medium | dark  
-      big: true
-      specular: false
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
-      text: null
-      buttons: #C #M
-        - label : Scopri lorem ipsum 
-          btnStyle: primary
-          url: "lorem-ipsum/" 
-      
-    # —
-    # HIGHLIGHT OVERLAY IMAGE
-    # —
-    - title : Lorem ipsum #C
-      id: HLB1
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      overlayAlt: "descrizione immagine overlay" #C USE "" FOR DECORATIVE IMGS, IF NEED DESCRIBE ALSO THE SVE NOT JUST THE BACKGROUND IMAGE IN THE MAIN ALT
-      overlayImg: /images/conversation.svg #I
-      headingLevel : 3
-      background: light # null | light | medium | dark  
-      big: false
-      specular: false
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
-      text: null
-      buttons: #C #M
-        - label : Scopri lorem ipsum 
-          btnStyle: primary
-          url: "lorem-ipsum/" 
-    
-    #   —
-    # HIGHLIGHT OVERLAY ICON
-    # —
-    - title : Lorem ipsum #C
-      id: HLB1
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C #IF NEED DESCRIBE ALSO THE ICON NOT JUST THE BACKGROUND IMAGE IN THE MAIN ALT
-      icon: #I
-        icon: sprites.svg#it-pa
-        hidden: true
-      overlayAlt: descrizione immagine overlay #C
-      headingLevel : 3
-      background: light # null | light | medium | dark  
-      big: false
-      specular: true
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
-      text: null
-      buttons: #C #M
-        - label : Scopri lorem ipsum 
-          btnStyle: primary
-          url: "lorem-ipsum/" 
-
-    # —
-    # HIGHLIGHT
-    # —
-    - title : Lorem ipsum #C
-      id: HLB2
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 3
-      big: false
-      background: dark
-      specular: true
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
-      numbers: #C #I
-        items:
-        - icon: sprites.svg#it-pa
-          number: 555
-          label: Number label
-        - icon: sprites.svg#it-user
-          number: 555
-          label: Number label
-      text: Lorem ipsum #C
-      buttons: #C #M
-        - label : Scopri lorem ipsum 
-          btnStyle: primary
-          url: "lorem-ipsum/" 
-        - label : Label button
-          btnStyle: outline-secondary
-          url: "#"
-        - label : Label button
-          btnStyle: outline-secondary
-          url: "#"
+          url: "storia-e-progetti/" 
