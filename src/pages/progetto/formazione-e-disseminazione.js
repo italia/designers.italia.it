@@ -2,7 +2,7 @@ import * as React from "react"
 import Template from "../../templates/tmpl-level-2"
 import {Seo} from "../../components/seo/seo"
 
-import Pagedata from "./level2.yaml"
+import Pagedata from "./formazione-e-disseminazione.yaml"
 
 const Level2 = () => {
   return(
