@@ -31,6 +31,7 @@ const Highlight = (
 
 	let classes = 'highlight-content d-lg-flex'
 	+ `${specular ? ' flex-lg-row-reverse' : ''}`
+  + `${img ? '' : ' no-image'}`
 
 	//heading level
 	let HLevel
@@ -56,8 +57,8 @@ const Highlight = (
 				<div className="row">
 					<div className="col-12">
 						<div className={classes}>
-							<div className="img-container ratio ratio-16x9">
-								<ImageResponsive className="main-image" src={img} alt={alt}/>
+              <div className="img-container ratio ratio-16x9">
+                {img &&<ImageResponsive className="main-image" src={img} alt={alt}/> }
 								{icon && <Icon {...icon}/>}
                 {overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
 							</div>
