@@ -2,19 +2,19 @@
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Level 1 - Designers Italia #C
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
-  image : null #I
+  name: Level 1 - Designers Italia #C REMING "- Designers Italia"
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  image: null #I
   twitterImage: null #I
   canonical: null
-  pathname: /level1 #M
+  pathname: /level1/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
 # ————————————————————————————————————————————
 lastUpdate:
   title: Pagina aggiornata il
-  date: 24 maggio 2022 #C #AUTO
+  date: 15 dicembre 2022 #C #AUTO
   licence:
     label: Licenza CC BY SA 4.0
     url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
@@ -26,7 +26,7 @@ lastUpdate:
     blank: true
   edit:
     label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it  #C #AUTO
+    url: https://github.com/italia/designers.italia.it  #M #AUTO
     icon:
       icon: sprites.svg#it-pencil
       size: sm
@@ -43,15 +43,15 @@ components:
   # ///////////////////
   hero:
     background: primary
-    breadcrumbs :
-      separator : '>'
-      items :
-        - label : Inizio
+    breadcrumbs: #M #AUTO
+      separator: '>'
+      items:
+        - label: Inizio
           active: false
           url: /
-        - label : Level 1
+        - label : Level 1 #C 
           active: true
-    title: Level 1 #C
+    title: Level 1 h1 #C
     subtitle: Subtitle #C
     pretext:
       icon:
@@ -59,11 +59,11 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      Lorem **ipsum** 
+      Lorem **ipsum**
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
-    share:
+    share: #AUTO
       btnId: shareButtonHero
       button:
         label: Condividi
@@ -113,12 +113,12 @@ components:
             color: white
             addonClasses: icon-expand ms-2
         list:
-          listItems: #M
-            - url: "level2/"
-              label: Level 2
-              iconRight: true
+          listItems: #AUTO
+            - url: "level2/" #M
+              label: "Bello lebvel2" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
-                icon: sprites.svg#it-info-circle
+                icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
 
@@ -129,7 +129,7 @@ components:
     section: true
     id: introEditorial
     headingLevel: 2
-    title: Title #C
+    title: Title h2 #C
     background: null
     text: | #C
       **Lorem** ipsum
@@ -139,10 +139,13 @@ components:
       color: white
       size: sm
     moreText: | #C
-      Lorem ipsum
+      Lorem **ipsum**
+      
       ![Alt lorem ipsum](https://via.placeholder.com/1200x500?text=Placeholder)
+      
       ### Heading 3
-      Lorem ipsum
+      Lorem [ipsum](#)
+      
       #### Heading 4
       Lorem ipsum
 
@@ -167,9 +170,8 @@ components:
       headingLevel : 3
       background: light # null | light | medium | dark  
       big: true
-      specular: null
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
-      text: null #C
+      specular: false
+      subtitle: Lorem ipsum #C
       buttons: #C #I
         - label : Scopri lorem ipsum #C
           btnStyle: primary
@@ -184,9 +186,9 @@ components:
       alt: Alt lorem ipsum #C
       headingLevel : 3
       background: null  # null | light | medium | dark  
-      big: null
+      big: false
       specular: true
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      subtitle: Lorem ipsum #C 
       numbers: #C #I
         items:
         - icon: sprites.svg#it-pa
@@ -217,9 +219,8 @@ components:
       headingLevel : 3
       background: medium # null | light | medium | dark  
       big: true
-      specular: false
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
-      text: null
+      specular: true
+      subtitle: Lorem ipsum #C
       buttons: #C #M
         - label : Scopri lorem ipsum 
           btnStyle: primary
@@ -233,10 +234,10 @@ components:
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
       headingLevel : 3
-      big: null
+      big: false
       background: dark
       specular: true
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      subtitle: Lorem ipsum #C
       numbers: #C #I
         items:
         - icon: sprites.svg#it-pa
@@ -266,10 +267,10 @@ components:
       img : null #I
       alt: null #C
       headingLevel : 3
-      big: null
+      big: false
       background: medium
       specular: true
-      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      subtitle: Lorem ipsum #C
       numbers: #C #I
         items:
         - icon: sprites.svg#it-pa
@@ -311,9 +312,9 @@ components:
         color: white
     images:
     - img: /images/conversation.svg
-      alt: descrizione immagine piccola
+      alt: Alt lorem ipsum #C
     - img: /images/conversation.svg
-      alt: descrizione immagine piccola
+      alt: Alt lorem ipsum #C
 
   # —
   # HIGHLIGHT WITH CARDS
@@ -327,12 +328,12 @@ components:
     - type: button
       btnStyle: primary
       label: Esplora tutti gli approfondimenti #C
-      url: "./community#articoli-di-approfondimento" #C
+      url: "#" #M
       addonStyle: me-3 d-block
     - type: button
       btnStyle: outline-primary
       label: Vai al Medium di Designers Italia #C
-      url: "#" #C
+      url: "#" #M
       icon:
         icon: sprites.svg#it-external-link
         color: primary
@@ -343,7 +344,7 @@ components:
     # CARDS
     cards:
 
-    #CARD
+    #CARD MEDIUM
     - title: "Lorem ipsum" #C
       img: /images/400x300.png #I
       alt: Alt lorem ipsum #C
@@ -351,7 +352,7 @@ components:
       imgPlaceholder: false
       fullHeight: true
       rounded: true
-      url: "#"
+      url: "#" #M
       externalLink:
         label : Leggi su medium
         screenReaderText: l'articolo completo
@@ -372,7 +373,7 @@ components:
           label : Argomento
           url : "#"
           blank: false
-      share:
+      share: #AUTO
         btnId: shareButtonCard1
         button:
           addonStyle: icon-only-drop
@@ -413,7 +414,7 @@ components:
           label : Argomento
           url : "#"
           blank: false
-      share:
+      share: #AUTO
         btnId: shareButtonCard2
         button:
           addonStyle: icon-only-drop
@@ -454,7 +455,7 @@ components:
           label : Argomento
           url : "#"
           blank: false
-      share:
+      share: #AUTO
         btnId: shareButtonCard3
         button:
           addonStyle: icon-only-drop
