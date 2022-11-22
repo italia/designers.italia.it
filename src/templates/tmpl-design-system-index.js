@@ -21,6 +21,7 @@ import FilterCards from "../components/filter-cards/filter-cards"
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
+import dsNav from "../data/dsnav.yaml"
 
 const Template = ({children,Pagedata}) => {
 	return (
@@ -38,7 +39,7 @@ const Template = ({children,Pagedata}) => {
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column">
-              <NavSidebar/>
+              <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
             </div>
             <div className="col-12 col-lg-9 px-lg-0 content-column">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero}></Hero>}
