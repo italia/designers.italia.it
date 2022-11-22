@@ -1,14 +1,36 @@
-seo:
-  name: Level 1
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
-  image : null
-  twitterImage: null
-  canonical: null
-  pathname: /level1
+# INSTRUCTIONS
+# folder structure:
+# levelX.js < connector, just for developers
+# levelX.yaml < contents and settings of the page
+# levelX/ < folder where are the childrens, same structure 
+# important: each level has its dedicated template from level1 to level4!
+#
+# to edit search for 
+# #C to locate all editable content
+# #M for links/navigation
+# #I for images/media
+# #AUTO for parts that will soon be automated, preferably
+#
+# comment with # to hide something
+# delete with caution
 
+# ————————————————————————————————————————————
+# SEO, OPENGRAPH
+# ————————————————————————————————————————————
+seo:
+  name: Level 1 - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  image: null #I
+  twitterImage: null #I
+  canonical: null
+  pathname: /level1/ #M
+
+# ————————————————————————————————————————————
+# DATE, LICENSE, URL
+# ————————————————————————————————————————————
 lastUpdate:
   title: Pagina aggiornata il
-  date: 24 maggio 2022
+  date: 15 dicembre 2022 #C #AUTO
   licence:
     label: Licenza CC BY SA 4.0
     url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
@@ -20,37 +42,44 @@ lastUpdate:
     blank: true
   edit:
     label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
+    url: https://github.com/italia/designers.italia.it  #M #AUTO
     icon:
       icon: sprites.svg#it-pencil
       size: sm
       color: primary
     blank: true
 
+# ————————————————————————————————————————————
+# CONTENT
+# ————————————————————————————————————————————
 components:
+  
+  # ///////////////////
+  # HERO
+  # ///////////////////
   hero:
     background: primary
-    title: Level 1
-    subtitle: Aliquam cursus, mauris id posuere mattis, tellus massa maximus diam, vitae pulvinar ante dolor vel leo.
-    img: /images/400x300.png
-    alt: descrizione immagine
-    imgRatio: 4x3
+    breadcrumbs: #M #AUTO
+      separator: '>'
+      items:
+        - label: Inizio
+          active: false
+          url: /
+        - label : Level 1 #C 
+          active: true
+    title: Level 1 h1 #C
+    subtitle: Subtitle #C
     pretext:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve
-    text: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-    breadcrumbs :
-      separator : '/'
-      items :
-        - label : Inizio
-          active: false
-          url: /
-        - label : Level 1
-          active: true
-    share:
+      text: In breve 
+    text: | #C
+      Lorem **ipsum**
+    img: /images/400x300.png #I
+    alt: alt lorem ipsum #C
+    imgRatio: 4x3
+    share: #AUTO
       btnId: shareButtonHero
       button:
         label: Condividi
@@ -62,33 +91,37 @@ components:
           addonClasses: ms-3
       list:
         isShare: true
+    
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
-      titleSr: Titolo della sezione (per screenreader)
-      tagsLabel : Parliamo di
+      titleSr: Metadati e link per approfondire
+      tagsLabel : Parliamo di 
       color : white
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: white
-      chips:
-        - label: Accessibilità
+      chips: #C
+        - label: Argomento
           url: "#"
           color: primary
           size: lg
-        - label: Ricerca Utente
+        - label: Argomento
           url: "#"
           color: primary
           size: lg
-        - label: Sviluppo front end
+        - label: Argomento
           url: "#"
           color: primary
           size: lg
+      
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il perché
+          label: Scopri il level 1 #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -96,63 +129,186 @@ components:
             color: white
             addonClasses: icon-expand ms-2
         list:
-          listItems:
-            - url: "level2/"
-              label: Level 2
-              iconRight: true
+          listItems: #AUTO
+            - url: "level2/" #M
+              label: "Level" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
-                icon: sprites.svg#it-info-circle
+                icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
 
+  # ///////////////////
+  # INTRO
+  # ///////////////////
   sectionIntro:
     section: true
-    id: contenutoEditoriale1
+    id: introEditorial
     headingLevel: 2
-    title: Il design è un processo complesso e noi abbiamo creato Designers Italia
+    title: Title h2 #C
     background: null
-    text: |
-      **Il design è la disciplina che si occupa di risolvere problemi complessi,** in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella [Pubblica Amministrazione](#). Le risorse messe a disposizione da Designers Italia possono così essere la chiave per affrontare la complessità, soprattutto se contestualizzate grazie a un approccio chiaro e un solido **processo di progettazione.**
+    text: | #C
+      **Lorem** ipsum
     moreButton: Leggi di più
-    icon:
-      icon: sprites.svg#it-arrow-right
-      color: white
-      size: sm
-    moreText: |
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
-      ### Titolo livello 3
-      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?\
-      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+    moreText: | #C
+      Lorem **ipsum**
+      
+      ![Alt lorem ipsum](https://via.placeholder.com/1200x500?text=Placeholder)
+      
+      ### Heading 3
+      Lorem [ipsum](#)
+      
+      #### Heading 4
+      Lorem ipsum
+
+  # ///////////////////
+  # HIGHLIGHTS
+  # ///////////////////
   titleText:
-    title: Scopri il progetto
+    title: Esplora il lorem ipsum #C
+
+  # —
+  # HIGHLIGHT LOOP
+  # —
   highlightsLoop1 :
-    - title : Visione e missione
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title : Lorem ipsum #C
       id: HL1
-      img : /images/highlight-big.jpg
-      alt: descrizione immagine
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
       headingLevel : 3
+      background: light # null | light | medium | dark  
       big: true
-      background: medium
-      text: Designers Italia è un progetto e su questo poco c’è da dire ci piove e si rende felice
-      buttons:
-        - label : Scopri visione e missione
+      specular: false
+      subtitle: Lorem ipsum #C
+      buttons: #C #I
+        - label : Scopri lorem ipsum #C
           btnStyle: primary
-          url: "visione-e-missione/"
-    - title : Storia ed evidenze
+          url: "lorem-ipsum/" #M
+
+    # —
+    # HIGHLIGHT 
+    # —
+    - title : Lorem ipsum #C
       id: HL2
-      img : /images/highlight-sm.jpg
-      alt: descrizione immagine
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
       headingLevel : 3
-      background: light
-      text: Una storia fatta di passione, idee e open design che da la vita al tutto e questo è un testo segnaposto ovviamente
-      buttons:
-        - label : Scopri storia ed evidenze
+      background: null  # null | light | medium | dark  
+      big: false
+      specular: true
+      subtitle: Lorem ipsum #C 
+      numbers: #C #I
+        items:
+        - icon: sprites.svg#it-pa
+          number: 555
+          label: Number label
+        - icon: sprites.svg#it-user
+          number: 555
+          label: Number label
+      text: Lorem ipsum #C
+      buttons: #C #M
+        - label : Scopri lorem ipsum 
           btnStyle: primary
-          url: "storia-ed-evidenze"
-  imageIcons:
-    image: /images/image-icons-fullwidth.jpg
-    alt: Descrizione immagine grande
+          url: "lorem-ipsum/" 
+        - label : Label button
+          btnStyle: outline-secondary
+          url: "#"
+        - label : Label button
+          btnStyle: outline-secondary
+          url: "#"
+    
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title : Lorem ipsum #C
+      id: HL3
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: medium # null | light | medium | dark  
+      big: true
+      specular: true
+      subtitle: Lorem ipsum #C
+      buttons: #C #M
+        - label : Scopri lorem ipsum 
+          btnStyle: primary
+          url: "lorem-ipsum/" 
+
+    # —
+    # HIGHLIGHT
+    # —
+    - title : Lorem ipsum #C
+      id: HL4
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      headingLevel : 3
+      big: false
+      background: dark
+      specular: true
+      subtitle: Lorem ipsum #C
+      numbers: #C #I
+        items:
+        - icon: sprites.svg#it-pa
+          number: 555
+          label: Number label
+        - icon: sprites.svg#it-user
+          number: 555
+          label: Number label
+      text: Lorem ipsum #C
+      buttons: #C #M
+        - label : Scopri lorem ipsum 
+          btnStyle: primary
+          url: "lorem-ipsum/" 
+        - label : Label button
+          btnStyle: outline-secondary
+          url: "#"
+        - label : Label button
+          btnStyle: outline-secondary
+          url: "#"
+
+    # —
+    # HIGHLIGHT NO IMG (EXAMPLE | MANUALE)
+    # SENZA IMMAGINE SOLO con big=false
+    # —
+    - title : Lorem ipsum #C
+      id: HL5
+      img : null #I
+      alt: null #C
+      headingLevel : 3
+      big: false
+      background: medium
+      specular: true
+      subtitle: Lorem ipsum #C
+      numbers: #C #I
+        items:
+        - icon: sprites.svg#it-pa
+          number: 555
+          label: Number label
+        - icon: sprites.svg#it-user
+          number: 555
+          label: Number label
+      text: Lorem ipsum
+      buttons: #C #M
+        - label : Scopri lorem ipsum 
+          btnStyle: primary
+          url: "lorem-ipsum/" 
+        - label : Label button
+          btnStyle: outline-secondary
+          url: "#"
+        - label : Label button
+          btnStyle: outline-secondary
+          url: "#"
+
+  # —
+  # IMAGE COVER WITH ICONS
+  # —
+  imageIcons: #I
+    image: /images/400x300.png 
+    alt: Alt lorem ipsum #C
     icons:
     - icon:
         icon: sprites.svg#it-presentation
@@ -168,58 +324,68 @@ components:
         color: white
     images:
     - img: /images/conversation.svg
-      alt: descrizione immagine piccola
+      alt: Alt lorem ipsum #C
     - img: /images/conversation.svg
-      alt: descrizione immagine piccola
+      alt: Alt lorem ipsum #C
+
+  # —
+  # HIGHLIGHT WITH CARDS
+  # —
   highlightCards:
-    id: highlightCards
-    title: Articoli di approfondimento
-    text: La teoria che sta dietro alla pratica di Designers Italia
-    col4: false
-    buttons:
+    id: HC1
+    title: Articoli di approfondimento #C
+    text: La teoria che sta dietro alla pratica di Designers Italia #C
+    col4: false # FALSE notizie + Medium | TRUE eventi + media
+    buttons: 
     - type: button
       btnStyle: primary
-      label: Esplora tutti gli approfondimenti
+      label: Esplora tutti gli approfondimenti #C
+      url: "#" #M
       addonStyle: me-3 d-block
     - type: button
       btnStyle: outline-primary
-      label: Vai al Medium di Designers Italia
+      label: Vai al Medium di Designers Italia #C
+      url: "#" #M
       icon:
         icon: sprites.svg#it-external-link
         color: primary
         align: middle
         size: sm
         addonClasses: ms-2
+
+    # CARDS
     cards:
-    - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
-      img: /images/highlight-big.jpg
-      alt: descrizione immagine
+
+    #CARD MEDIUM
+    - title: "Lorem ipsum" #C
+      img: /images/400x300.png #I
+      alt: Alt lorem ipsum #C
       imgRatio: 16x9
       imgPlaceholder: false
       fullHeight: true
       rounded: true
-      url: "#"
+      url: "#" #M
       externalLink:
         label : Leggi su medium
         screenReaderText: l'articolo completo
         icon:
           icon: sprites.svg#it-external-link
           size: xs
-      moreInfo: di Daniele Tabellini e Fabrizio Caccavello
-      chips:
+      moreInfo: di Nome Cognome e Nome Cognome #C
+      chips: #C #M
         - color : secondary
-          label : Accessibilità
+          label : Argomento
           url : "#"
           blank: false
         - color : secondary
-          label : Servizi
+          label : Argomento
           url : "#"
           blank: false
         - color : secondary
-          label : PA Digitale 2026
+          label : Argomento
           url : "#"
           blank: false
-      share:
+      share: #AUTO
         btnId: shareButtonCard1
         button:
           addonStyle: icon-only-drop
@@ -230,9 +396,11 @@ components:
             color: secondary
         list:
           isShare: true
-    - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
-      img: /images/highlight-sm.jpg
-      alt: descrizione immagine
+
+    #CARD
+    - title: "Lorem ipsum" #C
+      img: /images/400x300.png #I
+      alt: Alt lorem ipsum #C
       imgRatio: 16x9
       imgPlaceholder: false
       fullHeight: true
@@ -244,21 +412,21 @@ components:
         icon:
           icon: sprites.svg#it-external-link
           size: xs
-      moreInfo: di Mauro Filippi
-      chips:
+      moreInfo: di Nome Cognome e Nome Cognome #C
+      chips: #C #M
         - color : secondary
-          label : Accessibilità
+          label : Argomento
           url : "#"
           blank: false
         - color : secondary
-          label : Servizi
+          label : Argomento
           url : "#"
           blank: false
         - color : secondary
-          label : PA Digitale 2026
+          label : Argomento
           url : "#"
           blank: false
-      share:
+      share: #AUTO
         btnId: shareButtonCard2
         button:
           addonStyle: icon-only-drop
@@ -269,9 +437,11 @@ components:
             color: secondary
         list:
           isShare: true
-    - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
-      img: /images/highlight-big.jpg
-      alt: descrizione immagine
+
+    #CARD
+    - title: "Lorem ipsum" #C
+      img: /images/400x300.png #I
+      alt: Alt lorem ipsum #C
       imgRatio: 16x9
       imgPlaceholder: false
       fullHeight: true
@@ -283,21 +453,21 @@ components:
         icon:
           icon: sprites.svg#it-external-link
           size: xs
-      moreInfo: di Francesco Zaia
-      chips:
+      moreInfo: di Nome Cognome e Nome Cognome #C
+      chips: #C #M
         - color : secondary
-          label : Accessibilità
+          label : Argomento
           url : "#"
           blank: false
         - color : secondary
-          label : Servizi
+          label : Argomento
           url : "#"
           blank: false
         - color : secondary
-          label : PA Digitale 2026
+          label : Argomento
           url : "#"
           blank: false
-      share:
+      share: #AUTO
         btnId: shareButtonCard3
         button:
           addonStyle: icon-only-drop
@@ -308,63 +478,100 @@ components:
             color: secondary
         list:
           isShare: true
-  highlightsLoop2:
-  - title : Storia ed evidenze
-    id: HL2B
-    img : /images/highlight-sm.jpg
-    alt: descrizione immagine
-    headingLevel : 2
-    background: light
-    text: Una storia fatta di passione, idee e open design che da la vita al tutto e questo è un testo segnaposto ovviamente
-    buttons:
-      - label : Scopri storia ed evidenze
-        btnStyle: primary
-        url: "storia-ed-evidenze"
 
-  topics:
-    title: Nelle notizie si parla di
-    icon:
-      icon: sprites.svg#it-horn
-      color: secondary
-      hidden: true
-    button:
-      url: "#"
-      btnStyle: outline-primary
-      label: Scopri tutti gli argomenti
-    chips:
-    - label: Accessibilità
-      url: "#"
-      color: primary
-      size: lg
-    - label: Ricerca Utente
-      url: "#"
-      color: primary
-      size: lg
-    - label: Sviluppo front end
-      url: "#"
-      color: primary
-      size: lg
-    - label: Progettazione dei servizi
-      url: "#"
-      color: primary
-      size: lg
-    - label: Wired Next Fest
-      url: "#"
-      color: primary
-      size: lg
-    - label: Futuro
-      url: "#"
-      color: primary
-      size: lg
-    - label: Prossimo
-      url: "#"
-      color: primary
-      size: lg
-    - label: Interessante
-      url: "#"
-      color: primary
-      size: lg
-    - label: X-Media Festival
-      url: "#"
-      color: primary
-      size: lg
+  # —
+  # HIGHLIGHT LOOP
+  # —
+  highlightsLoop2:
+
+    #   —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title : Lorem ipsum #C
+      id: HLB1
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: medium # null | light | medium | dark  
+      big: true
+      specular: false
+      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      text: null
+      buttons: #C #M
+        - label : Scopri lorem ipsum 
+          btnStyle: primary
+          url: "lorem-ipsum/" 
+      
+    # —
+    # HIGHLIGHT OVERLAY IMAGE
+    # —
+    - title : Lorem ipsum #C
+      id: HLB1
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      overlayAlt: "descrizione immagine overlay" #C USE "" FOR DECORATIVE IMGS, IF NEED DESCRIBE ALSO THE SVE NOT JUST THE BACKGROUND IMAGE IN THE MAIN ALT
+      overlayImg: /images/conversation.svg #I
+      headingLevel : 3
+      background: light # null | light | medium | dark  
+      big: false
+      specular: false
+      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      text: null
+      buttons: #C #M
+        - label : Scopri lorem ipsum 
+          btnStyle: primary
+          url: "lorem-ipsum/" 
+    
+    #   —
+    # HIGHLIGHT OVERLAY ICON
+    # —
+    - title : Lorem ipsum #C
+      id: HLB1
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C #IF NEED DESCRIBE ALSO THE ICON NOT JUST THE BACKGROUND IMAGE IN THE MAIN ALT
+      icon: #I
+        icon: sprites.svg#it-pa
+        hidden: true
+      overlayAlt: descrizione immagine overlay #C
+      headingLevel : 3
+      background: light # null | light | medium | dark  
+      big: false
+      specular: true
+      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      text: null
+      buttons: #C #M
+        - label : Scopri lorem ipsum 
+          btnStyle: primary
+          url: "lorem-ipsum/" 
+
+    # —
+    # HIGHLIGHT
+    # —
+    - title : Lorem ipsum #C
+      id: HLB2
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      headingLevel : 3
+      big: false
+      background: dark
+      specular: true
+      subtitle: Lorem ipsum #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      numbers: #C #I
+        items:
+        - icon: sprites.svg#it-pa
+          number: 555
+          label: Number label
+        - icon: sprites.svg#it-user
+          number: 555
+          label: Number label
+      text: Lorem ipsum #C
+      buttons: #C #M
+        - label : Scopri lorem ipsum 
+          btnStyle: primary
+          url: "lorem-ipsum/" 
+        - label : Label button
+          btnStyle: outline-secondary
+          url: "#"
+        - label : Label button
+          btnStyle: outline-secondary
+          url: "#"
