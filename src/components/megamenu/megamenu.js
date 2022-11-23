@@ -18,7 +18,7 @@ const Megamenu = ({
 				<div className="row">
 					{left &&
 						<div className="col-12 it-vertical it-description pb-lg-3">
-							<div className="description-content mx-1 mx-lg-1">
+							<div className="description-content img-max-megamenu mx-1 mx-lg-1">
 								{left.img &&
 									<div className="ratio ratio-megamenu lightgrey-bg-a1 mb-4 rounded">
 										{/*<img className="rounded" src={left.img} alt={left.imgAlt}/>*/}
