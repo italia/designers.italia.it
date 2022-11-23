@@ -3,3 +3,11 @@
 .dropdown-item {
     white-space: normal;
 }
+
+.ratio-megamenu {
+    --bs-aspect-ratio: 42.85%; // 21x9
+    @include media-breakpoint-up(lg) {
+      --bs-aspect-ratio: 56.25%; // 16x9
+    }
+  }
+  
