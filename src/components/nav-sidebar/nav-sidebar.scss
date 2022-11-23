@@ -64,13 +64,21 @@
 
 }
 
-//Tablet portrait ---------------------------------------------------------------------------------------
-@include media-breakpoint-up(md) {
-
+//Mobile & Tablet portrait only -------------------------------------------------------------------------
+@include media-breakpoint-down(lv) {
+  .menu-column {
+    z-index: 10010 !important;
+  }
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
+
+  .menu-column {
+    height: calc(100vh);
+    overflow-y: auto;
+  }
+
   .nav-sidebar {
     .it-navscroll-wrapper {
       background-color: transparent !important;

@@ -37,8 +37,8 @@ const FilterCards = ({
   if (cards) {
     cardsItems = cards.map((item,index) => {
       return(
-        <div className={cardStyles}>
-          <Card {...item} key={"card-"+index}/>
+        <div className={cardStyles} key={"cardcol-"+index}>
+          <Card {...item} />
         </div>
       )
     })
@@ -57,7 +57,7 @@ const FilterCards = ({
               <div className="row">
                 <div className="col-7 col-md-9 col-lg-10">
                   <div className="form-group">
-                    <label for={idInput}>Filtra</label>
+                    <label htmlFor={idInput}>Filtra</label>
                     <input type="text" id={idInput} className="form-control"/>
                   </div>
                 </div>

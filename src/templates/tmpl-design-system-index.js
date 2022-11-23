@@ -34,14 +34,14 @@ const Template = ({children,Pagedata}) => {
           <HeaderNav data={HeaderData.navbar} page={Pagedata.seo.name}/>
         </NavWrapper>
       </Header>
-      <main id="main">
+      <main id="main" className="bg-light">
 
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column">
+            <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column bs-is-sticky" data-bs-toggle="sticky" data-bs-stackable="true">
               <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
             </div>
-            <div className="col-12 col-lg-9 px-lg-0 content-column">
+            <div className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero}></Hero>}
               {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
                 return(
