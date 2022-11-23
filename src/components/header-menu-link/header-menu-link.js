@@ -23,7 +23,7 @@ const HeaderMenuLink = ({
 	function icon(boolean){
 		if (boolean) {
 			return (
-				<Icon icon="sprites.svg#it-expand" size="xs"/>
+				<Icon icon="sprites.svg#it-expand" size="xs" addonClasses="ms-1"/>
 			)
 		}
 	}
