@@ -15,7 +15,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
-    `gatsby-transformer-sharp`, // Needed for dynamic images
+    {
+      resolve: `gatsby-transformer-sharp`, // Needed for dynamic images
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-sharp`,
       options: {

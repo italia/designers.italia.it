@@ -1,24 +1,25 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { childrenToReact } from "react-markdown/lib/ast-to-react"
 
 const pageStyles = {
   color: "#232129",
-  padding: "96px",
+  padding: "24px",
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  maxWidth: 820,
 }
 const headingStyles = {
   marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
+  marginBottom: 48,
 }
 
 const paragraphStyles = {
-  marginBottom: 48,
+  marginBottom: 24,
 }
 const codeStyles = {
-  color: "#8A6534",
+  color: "#8a8a8a",
   padding: 4,
-  backgroundColor: "#FFF4DB",
+  backgroundColor: "#f4f4f4",
   fontSize: "1.25rem",
   borderRadius: 4,
 }
@@ -26,19 +27,18 @@ const codeStyles = {
 const NotFoundPage = () => {
   return (
     <main style={pageStyles}>
-      <h1 style={headingStyles}>Page not found</h1>
+      <h1 style={headingStyles}>Questa pagina non esiste</h1>
       <p style={paragraphStyles}>
-        Sorry 😔, we couldn’t find what you were looking for.
-        <br />
+        ✨ Vuoi proporti per scriverla? 🧐
         {process.env.NODE_ENV === "development" ? (
           <>
             <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
+            Siamo in locale, puoi crearla se vuoi a partire dalla root <code style={codeStyles}>src/pages/</code>.
             <br />
           </>
         ) : null}
         <br />
-        <Link to="/">Go home</Link>.
+        <Link to="/">Vai all'inizio del sito Designers Italia</Link>.
       </p>
     </main>
   )
