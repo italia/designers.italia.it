@@ -45,7 +45,7 @@ const Kangaroo = ({
           <div className="pills-wrapper d-md-flex align-items-center">
             {tagsLabel &&
               <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase">
-                <Icon {...icon} addonClasses="me-2"></Icon>
+                <Icon {...icon} addonClasses="me-3"></Icon>
                 <span className={tagsLabelStyle}><strong>{tagsLabel}</strong></span>
               </div>
             }
