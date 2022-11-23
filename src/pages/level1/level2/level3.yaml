@@ -56,14 +56,14 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi in
+      - title: Ti trovi in #C
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
         label: Level 2 #C
-        url: "#"
+        url: "../" #M
 navPreFooter:
   navOtherPrevNext:
     prev:
@@ -111,9 +111,9 @@ components:
           url: /
         - label : Level1
           active: false
-          url: /level1/
+          url: ../../
         - label : Level2
-          url: /level1/level2/
+          url: ../
           active: false
         - label : Level3
           active: true
@@ -128,7 +128,7 @@ components:
         icon: sprites.svg#it-info-circle
         size: sm
       text: In breve
-    text: |
+    text: | #C
       Lorem **ipsum** 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
@@ -186,11 +186,11 @@ components:
               color: "secondary"
             label: Progettare, Realizzare #C
       tagsLabel : Parliamo di
-      color : primary
+      color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
-        color: primary
+        color: secondary
       chips: #C
         - label: Argomento
           url: "#"
@@ -243,7 +243,7 @@ components:
       #  Lorem **ipsum**
       components:
 
-         # TXT BLOCK
+        # TXT BLOCK
         - name: TextImageCta
           title: A cosa servono h3 #C
           text: | #C
@@ -537,7 +537,7 @@ components:
           list:
             isShare: true
             
-# ///////////////////
+  # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
