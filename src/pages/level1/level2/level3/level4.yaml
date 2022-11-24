@@ -2,10 +2,10 @@
 # folder structure:
 # levelX.js < connector, just for developers
 # levelX.yaml < contents and settings of the page
-# levelX/ < folder where are the childrens, same structure 
+# levelX/ < folder where are the childrens, same structure
 # important: each level has its dedicated template from level1 to level4!
 #
-# to edit search for 
+# to edit search for
 # #C to locate all editable content
 # #M for links/navigation
 # #I for images/media
@@ -23,7 +23,7 @@ seo:
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /level2/level3/level4/ #M
+  pathname: /level1/level2/level3/level4/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -51,7 +51,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -139,7 +139,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Lorem **ipsum** 
+      Lorem **ipsum**
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     imgRatio: 4x3
@@ -215,7 +215,7 @@ components:
           url: "#"
           color: primary
           size: lg
-      
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -225,7 +225,7 @@ components:
     - title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem #C
       menu: false
       centered: true
-      bgColor: null
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -235,7 +235,7 @@ components:
           title: A cosa servono h3 #C
           text: | #C
             Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.
-            
+
             Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per rappresentare le principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.
 
   # ///////////////////
@@ -268,7 +268,7 @@ components:
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C
                 blank: true
       - simpleList : true
         title: Second group title #C
@@ -293,25 +293,25 @@ components:
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C
                 blank: true
 
-          
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
-  
+
   # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: Lorem ipsum h2
-      bgColor: null
+      background: null
       menu: false
       centered: false
       text: | #C
         Lorem **ipsum**
-      components: 
+      components:
 
         # TXT BLOCK
         - name: TextImageCta
@@ -351,7 +351,7 @@ components:
           - label: Fai lorem ipsum #C
             url: "#" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -360,7 +360,7 @@ components:
               addonClasses: ms-2
           - label: Vai su ipsum #C
             url: "#" #M
-            blank: true 
+            blank: true
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -403,7 +403,7 @@ components:
           - label: Fai lorem ipsum #C
             url: "#" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -412,7 +412,7 @@ components:
               addonClasses: ms-2
           - label: Vai su ipsum #C
             url: "#" #M
-            blank: true 
+            blank: true
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -421,4 +421,3 @@ components:
               size: sm
               addonClasses: ms-2
 
-   

@@ -23,6 +23,9 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 import dsNav from "../data/dsnav.yaml"
 
+import { Sticky } from "bootstrap-italia/dist/bootstrap-italia.esm"
+Sticky //trick for treeshaking
+
 const Template = ({children,Pagedata}) => {
 	return (
     <>

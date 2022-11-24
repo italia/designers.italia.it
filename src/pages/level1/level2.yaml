@@ -2,10 +2,10 @@
 # folder structure:
 # levelX.js < connector, just for developers
 # levelX.yaml < contents and settings of the page
-# levelX/ < folder where are the childrens, same structure 
+# levelX/ < folder where are the childrens, same structure
 # important: each level has its dedicated template from level1 to level4!
 #
-# to edit search for 
+# to edit search for
 # #C to locate all editable content
 # #M for links/navigation
 # #I for images/media
@@ -23,7 +23,7 @@ seo:
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /level2/ #M
+  pathname: /level1/level2/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -111,9 +111,9 @@ components:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve 
+      text: In breve
     text: | #C
-      Lorem **ipsum** 
+      Lorem **ipsum**
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -130,7 +130,7 @@ components:
       list:
         isShare: true
 
-    # KANGAROO: METADATA    
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       titleSr: Metadati e link per approfondire
@@ -154,7 +154,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -185,7 +185,7 @@ components:
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
-      bgColor: null
+      background: null
       full: true
       noSpace: true
       title: false
@@ -198,14 +198,14 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: Lorem ipsum h2
-      bgColor: null
+      background: null
       menu: false
       centered: false
       text: | #C
         Lorem **ipsum**
-      components: 
+      components:
 
         # TXT BLOCK
         - name: TextImageCta
@@ -245,7 +245,7 @@ components:
           - label: Fai lorem ipsum #C
             url: "#" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -254,7 +254,7 @@ components:
               addonClasses: ms-2
           - label: Vai su ipsum #C
             url: "#" #M
-            blank: true 
+            blank: true
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -297,7 +297,7 @@ components:
           - label: Fai lorem ipsum #C
             url: "#" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -306,7 +306,7 @@ components:
               addonClasses: ms-2
           - label: Vai su ipsum #C
             url: "#" #M
-            blank: true 
+            blank: true
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -346,7 +346,7 @@ components:
               color: secondary
           list:
             isShare: true
-      
+
       # CARD CHILDREN
       - title: Lorem ipsum #C
         text: Lorem ipum #C
@@ -390,17 +390,17 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
-  
+
   # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: Lorem ipsum h2
-      bgColor: null
+      background: null
       menu: false
       centered: false
       text: | #C
         Lorem **ipsum**
-      components: 
+      components:
 
         # TXT BLOCK
         - name: TextImageCta
@@ -440,7 +440,7 @@ components:
           - label: Fai lorem ipsum #C
             url: "#" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -449,7 +449,7 @@ components:
               addonClasses: ms-2
           - label: Vai su ipsum #C
             url: "#" #M
-            blank: true 
+            blank: true
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -492,7 +492,7 @@ components:
           - label: Fai lorem ipsum #C
             url: "#" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -501,7 +501,7 @@ components:
               addonClasses: ms-2
           - label: Vai su ipsum #C
             url: "#" #M
-            blank: true 
+            blank: true
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -512,13 +512,13 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - menu: false
       centered: true
-      bgColor: null
+      background: null
       title: Lorem ipsum #C
       text: | #C
-        Lorem **ipsum** 
+        Lorem **ipsum**
       components:
 
         # TXT + IMG + CTA BLOCK
@@ -533,7 +533,7 @@ components:
           - label: Fai lorem ipsum #C
             url: "#" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -542,7 +542,7 @@ components:
               addonClasses: ms-2
           - label: Vai su ipsum #C
             url: "#" #M
-            blank: true 
+            blank: true
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -553,10 +553,10 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # — 
+    # —
     - menu: false
       centered: true
-      bgColor: light
+      background: light
       title: Lorem ipsum #C
       text: | #C
         Lorem **ipsum**
