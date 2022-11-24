@@ -15,7 +15,7 @@ const SectionIntro = ({
   moreText,
 }) => {
 
-  let styles = 'section-intro py-5 '
+  let styles = 'section-intro py-5'
 	+ `${background ? ' bg-'+background : ''}`
 
   //heading level
@@ -70,7 +70,7 @@ const SectionIntro = ({
                 <ReactMarkdown>{text}</ReactMarkdown>
 
                 {moreButton &&
-                  <a href="#" role="button" onClick={collapseToggle} className="read-more mt-3 mb-4 d-inline-flex align-items-center text-decoration-none" /*data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'}*/ aria-expanded="false" aria-controls={id+'ReadMore'}>
+                  <a href="#" role="button" onClick={collapseToggle} className="read-more mt-3 d-inline-flex align-items-center text-decoration-none" /*data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'}*/ aria-expanded="false" aria-controls={id+'ReadMore'}>
                     <span className="more-text">{moreButton}</span>
                     <span className="less-text">{moreButtonClose}</span>
                     <Icon {...icon}/>
@@ -78,7 +78,7 @@ const SectionIntro = ({
                 }
                 {moreText &&
                   <div ref={collRef} className="collapse" id={id+'ReadMore'}>
-                    <ReactMarkdown>{moreText}</ReactMarkdown>
+                    <ReactMarkdown className="mt-4">{moreText}</ReactMarkdown>
                   </div>
                 }
               </div>

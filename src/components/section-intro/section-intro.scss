@@ -1,6 +1,7 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .section-intro {
+  padding-top: calc(var(--spacer) * 24) !important;
   .read-more {
     text-transform: none;
     letter-spacing: 0;
@@ -10,6 +11,8 @@
     }
     .icon {
       transition: transform 0.3s;
+      width: 24px !important;
+      height: 24px !important;
     }
     &[aria-expanded="true"] {
       .icon {
