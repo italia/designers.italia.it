@@ -18,7 +18,7 @@
     "italia"
   ],
   "scripts": {
-    "prepare": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/",
+    "prepare": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && ls -lah",
     "start": "npm run prepare && gatsby develop",
     "develop": "npm run start",
     "dev": "npm run start",
