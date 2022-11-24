@@ -1,14 +1,14 @@
 import React from "react"
 
 const Section = ({
-  bgColor,
+  background,
   bgImage,
   whiteText,
   describedBy,
   children
 }) => {
   let sectionnStyles = 'section'
-		+ `${bgColor ? ' section-'+bgColor : ''}`   // muted, primary, neutral
+		+ `${background ? ' section-'+background : ''}`   // muted, primary, neutral
 		+ `${bgImage ? ' section-image' : ''}`      // url
     + `${whiteText ? ' white-color' : ''}`      // boolean for white text
 
