@@ -18,11 +18,11 @@
     "italia"
   ],
   "scripts": {
-    "prepare": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && ls -lah",
+    "prepare": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/",
     "start": "npm run prepare && gatsby develop",
     "develop": "npm run start",
     "dev": "npm run start",
-    "build": "npm run clean && npm run prepare && gatsby build --prefix-paths && recursive-copy -w ./public/ ./_site/",
+    "build": "npm run clean && npm run prepare && gatsby build --prefix-paths && recursive-copy -w ./public/ ./_site/ && ls -lah",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
