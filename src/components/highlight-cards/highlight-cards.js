@@ -39,8 +39,8 @@ const HighlightCards = ({
   if (cards) {
     cardsItems = cards.map((item,index) => {
       return(
-        <div className={cardStyles}>
-          <Card {...item} key={"card-"+index}/>
+        <div className={cardStyles} key={"cardcol-"+index}>
+          <Card {...item} />
         </div>
       )
     })
