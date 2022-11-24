@@ -1,10 +1,10 @@
 import * as React from "react"
-import Template from "../../templates/tmpl-level-2"
-import {Seo} from "../../components/seo/seo"
+import Template from "../../../../templates/tmpl-level-4"
+import {Seo} from "../../../../components/seo/seo"
 
-import Pagedata from "./realizzare.yaml"
+import Pagedata from "./level4.yaml"
 
-const Level2 = () => {
+const Level4 = () => {
   return(
     <Template Pagedata={Pagedata}>
       {/* place extra components / HTML here */}
@@ -12,7 +12,7 @@ const Level2 = () => {
   )
 }
 
-export default Level2
+export default Level4
 
 export const Head = () => (
 	<Seo
