@@ -1,0 +1,17 @@
+@import "../../scss/bootstrap-breakpoints";
+
+.dropdown-item {
+  white-space: normal;
+}
+
+.img-max-megamenu {
+  max-width:480px;
+}
+
+.ratio-megamenu {
+    --bs-aspect-ratio: 42.85%; // 21x9
+    @include media-breakpoint-up(lg) {
+      --bs-aspect-ratio: 56.25%; // 16x9
+    }
+  }
+  
