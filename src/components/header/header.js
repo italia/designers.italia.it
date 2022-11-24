@@ -1,6 +1,9 @@
 import React from "react"
 import "./header.scss"
 
+import { Sticky } from "bootstrap-italia/dist/bootstrap-italia.esm"
+Sticky //trick for treeshaking
+
 const Header = ({
   data,
   children
