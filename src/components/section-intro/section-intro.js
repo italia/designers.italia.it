@@ -11,6 +11,7 @@ const SectionIntro = ({
   headingLevel,
   text,
   moreButton,
+  moreButtonClose,
   moreText,
 }) => {
 
@@ -70,7 +71,8 @@ const SectionIntro = ({
 
                 {moreButton &&
                   <a href="#" role="button" onClick={collapseToggle} className="read-more mt-3 mb-4 d-inline-flex align-items-center text-decoration-none" /*data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'}*/ aria-expanded="false" aria-controls={id+'ReadMore'}>
-                    <span>Leggi di più</span>
+                    <span className="more-text">{moreButton}</span>
+                    <span className="less-text">{moreButtonClose}</span>
                     <Icon {...icon}/>
                   </a>
                 }
