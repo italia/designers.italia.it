@@ -1,5 +1,4 @@
 import base64
-import html
 import os
 from json import dumps
 
@@ -36,7 +35,8 @@ async def message(req):
       return json({"message": "Invalid feedback field"}, status=422)
 
     icon = {'+': '👍', '-': '👎'}[feedback]
-    escaped = {k: html.escape(req.json.get(k, '-')) for k in fields}
+    # escaped = {k: html.escape(req.json.get(k, '-')) for k in fields}
+    escaped = {k: req.json.get(k, '-') for k in fields}
 
     body = f"""
     <p>
