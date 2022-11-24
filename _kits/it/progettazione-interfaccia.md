@@ -47,26 +47,18 @@ superAccordion:
       <p>Il kit è un progetto aperto e in continua evoluzione che permette, — grazie all’interazione con il team di sviluppo e la facile resa in codice con i kit di sviluppo web, in particolare con Boostrap Italia — di progettare e prototipare efficacemente l'interfaccia del touchpoint digitale in realizzazione.</p>"
       img: "/assets/icons/kit/kit_UI_InterfacciaUtente.svg"
       resources:
-        - title: Design UI kit
+        - title: "Nuovo UI kit - <em>in progress</em>"
           icon: "/assets/icons/pencil.svg"
-          description: Componenti e template ufficiali del design system della Pubblica Amministrazione italiana
+          description: "Versione 3.0.0-beta.1 del kit di progettazione interfaccia, caratterizzata da nuova tecnologia e implementazione design token. L'attuale versione beta è usabile in produzione e coerente con Bootstrap Italia"
+          link: <a href='https://www.figma.com/community/file/1105848677422572920' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
+        - title: "Design UI kit - <em>legacy</em>"
+          icon: "/assets/icons/pencil.svg"
+          description: "Repository GitHub con componenti e template ufficiali del design system della Pubblica Amministrazione italiana"
           link: <a href='https://github.com/italia/design-ui-kit' target="_blank" aria-label="Vai alla risorsa (link esterno)">Vai alla risorsa</a>
-          otherResources:
-            - description: Come iniziare e come contribuire
-              link: <a href='https://github.com/italia/design-ui-kit#blue_book-come-iniziare' target="_blank" aria-label="Vai alla risorsa (link esterno)" >Vai alla risorsa</a>
-            - description: Anteprima su Invision
-              link: <a href='https://invis.io/RJFGS2UC3HS' target="_blank" aria-label="Vai all'anteprima (link esterno)" >Vai all'anteprima</a>
-            - description: Anteprima su Figma
-              link: <a href='https://www.figma.com/file/bLexfydXWzF6ACxFokgzXs/italia-UI-Kit-2.0?node-id=0%3A1' target="_blank" aria-label="Vai all'anteprima (link esterno)" >Vai all'anteprima</a>
       footer:
         - icon: "/assets/icons/external-link-grey.svg"
           text: Tutte le risorse sono collegamenti esterni che si aprono in una nuova finestra.
-        - icon: "/assets/icons/info-grey.svg"
-          text: "Per usare i template fai una copia e personalizza il file: trovi le istruzioni nella prima pagina della risorsa."
 
 tags:
-  - user experience
-  - ui kit
-  - usability
-  - service design
+  - design system
 ---
