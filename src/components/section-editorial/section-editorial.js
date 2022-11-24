@@ -16,7 +16,8 @@ const SectionEditorial = ({
   text,
   full,
   centered,
-  bgColor,
+  fullColumn,
+  background,
   components,
   menu,
   noSpace
@@ -41,6 +42,9 @@ const SectionEditorial = ({
 		HLevel = `h2`
 	}
 
+  let container=""
+  + `${fullColumn ? 'fullcolumn-editorial' : ' container-xxl'}`
+
   let row="row"
   + `${menu ? ' flex-lg-row-reverse' : ''}`
 
@@ -54,15 +58,19 @@ const SectionEditorial = ({
   if(full && menu){
     grid="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
   }
+  if(fullColumn) {
+    grid=""
+    row=""
+  }
 
-  let styles = "section-editorial"
-  + `${bgColor==="light" ? ' bg-light' : ''}`
-  + `${bgColor==="primary-light" ? ' bg-primary-light' : ''}`
+  let styles = 'section-editorial'
+	+ `${background ? ' bg-'+background : ''}`
   + `${noSpace ? ' py-0' : ''}`
+  + `${background==="dark" ? ' text-white' : ''}`
 
   return(
     <section className={styles}>
-        <div className="container-xxl">
+        <div className={container}>
           <div className={row}>
           {menu &&
               <div className="d-none d-lg-block col-lg-3 offset-lg-1 affix-parent">

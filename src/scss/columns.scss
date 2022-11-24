@@ -1,14 +1,11 @@
-@import "../../scss/bootstrap-breakpoints";
+@import "./bootstrap-breakpoints";
 
 
-//mobile only ------------------------------------------------------------------------------------------
-@include media-breakpoint-down(sm) {
-
-  .img-full {
-    margin-left: calc(var(--spacer) * -4);
-    margin-right: calc(var(--spacer) * -4);
+//tablet only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(lg) {
+  .content-column {
+    padding: 0 !important;
   }
-
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
@@ -23,17 +20,14 @@
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
 
-
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
-
 }
 
 //Desktop -----------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xxl) {
-
 }
 
 //Hover states ------------------------------------------------------------------------------------------
@@ -43,3 +37,5 @@
 //Transitions (A11y reduced motion disabled) ------------------------------------------------------------
 @media screen and (prefers-reduced-motion: no-preference) {
 }
+
+

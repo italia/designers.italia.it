@@ -1,0 +1,109 @@
+@import "../../scss/bootstrap-breakpoints";
+
+.nav-sidebar {
+
+  .nav-sidebar-header{
+
+  }
+
+  .header-image {
+    width: calc(var(--spacer) * 16);
+    height: auto;
+  }
+
+  .navbar.it-navscroll-wrapper {
+    .link-list-wrapper {
+      ul {
+        &.link-list {
+          a {
+            &.active {
+              border-left-color: transparent !important;
+            }
+            &.text-uppercase {
+              font-weight: 700;
+              padding-top: calc(var(--spacer) * 4);
+              padding-bottom: calc(var(--spacer) * 4);
+              &.active {
+                span {
+                  color: var(--color-primary-active) !important;
+                }
+                .icon {
+                  fill: var(--color-primary-active) !important;
+                }
+              }
+            }
+          }
+        }
+        li {
+          font-size: 0.8888888888888888rem !important;
+        }
+      }
+    }
+    .linklist-secondary {
+      a {
+        font-weight: 400;
+        &.active {
+          span {
+            color: var(--color-primary-active) !important;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+
+
+}
+
+//Small tablet ------------------------------------------------------------------------------------------
+@include media-breakpoint-up(sm) {
+
+}
+
+//Mobile & Tablet portrait only -------------------------------------------------------------------------
+@include media-breakpoint-down(lg) {
+  .menu-column {
+    z-index: 10010 !important;
+  }
+}
+
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+
+  .menu-column {
+    height: calc(100vh);
+    overflow-y: auto;
+	z-index: auto !important;
+  }
+
+  .nav-sidebar {
+    .it-navscroll-wrapper {
+      background-color: transparent !important;
+      .menu-wrapper {
+        z-index: 0;
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+//Laptop ------------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xl) {
+
+}
+
+//Desktop -----------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xxl) {
+}
+
+//Hover states ------------------------------------------------------------------------------------------
+@media (hover: hover) {
+}
+
+//Transitions (A11y reduced motion disabled) ------------------------------------------------------------
+@media screen and (prefers-reduced-motion: no-preference) {
+}

@@ -10,6 +10,7 @@ import Kangaroo from "../kangaroo/kangaroo"
 
 const Hero =({
   centered,
+  column,
 	breadcrumbs,
 	share,
 	tag,
@@ -28,6 +29,7 @@ const Hero =({
 })=>{
   let styles = 'hero'
   + `${background ? ' bg-'+background : ''}`
+  + `${column ? ' column-hero' : ''}`
   //heading level
 	let HLevel
   let SubtitleLevel
@@ -48,9 +50,16 @@ const Hero =({
   let columnStyle = 'col-12 col-md-10 offset-md-1'
 		+ `${centered ? ' col-lg-7 offset-lg-0' : ' col-lg-6'}`
 
-    let kangarooColumnStyle = 'col-12 col-md-10 offset-md-1'
+  let breadcrumbsStyle = 'hero-top px-3 py-3'
+    + `${column ? ' px-lg-0' : ''}`
+
+  let kangarooColumnStyle = 'col-12 col-md-10 offset-md-1'
 		+ `${centered ? ' col-lg-7 offset-lg-0' : ''}`
 
+  if (column) {
+    columnStyle = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
+    kangarooColumnStyle = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
+  }
 
 	return(
 		<div className={styles}>
@@ -59,9 +68,8 @@ const Hero =({
         <div className="container-xxl">
           <div className="row">
             <div className="col-12">
-              <div className="hero-top px-3 px-lg-0 px-lg-3 py-3">
+              <div className={breadcrumbsStyle}>
                 <Breadcrumbs {...breadcrumbs}></Breadcrumbs>
-
               </div>
               <div className="hero-main">
                 <div className={rowStyle}>
@@ -82,9 +90,9 @@ const Hero =({
                   </div>
                   {!centered &&
                     <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
-                      <div className={imgStyle}>
+                      { img && <div className={imgStyle}>
                         <ImageResponsive src={img} alt={alt} />
-                      </div>
+                      </div>}
                       {share  && <Dropdown {...share}></Dropdown>}
                     </div>
                   }
