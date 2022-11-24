@@ -17,7 +17,7 @@ const SectionEditorial = ({
   full,
   centered,
   fullColumn,
-  bgColor,
+  background,
   components,
   menu,
   noSpace
@@ -63,12 +63,10 @@ const SectionEditorial = ({
     row=""
   }
 
-  let styles = "section-editorial"
-  + `${bgColor==="light" ? ' bg-light' : ''}`
-  + `${bgColor==="primary-light" ? ' bg-primary-light' : ''}`
+  let styles = 'section-editorial'
+	+ `${background ? ' bg-'+background : ''}`
   + `${noSpace ? ' py-0' : ''}`
-
-
+  + `${background==="dark" ? ' text-white' : ''}`
 
   return(
     <section className={styles}>

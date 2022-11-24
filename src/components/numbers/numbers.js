@@ -27,7 +27,7 @@ const Numbers = ({
 	}
 
   return (
-    <div className="d-md-flex flex-wrap">
+    <div className="numbers-wrapper d-md-flex flex-wrap">
       {NumbersRender}
     </div>
   )

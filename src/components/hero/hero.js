@@ -90,9 +90,9 @@ const Hero =({
                   </div>
                   {!centered &&
                     <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
-                      <div className={imgStyle}>
+                      { img && <div className={imgStyle}>
                         <ImageResponsive src={img} alt={alt} />
-                      </div>
+                      </div>}
                       {share  && <Dropdown {...share}></Dropdown>}
                     </div>
                   }
