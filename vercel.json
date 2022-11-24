@@ -8,6 +8,11 @@
       "Access-Control-Allow-Headers": "*"
     }
   }],
+  "functions": {
+    "api/**/*.py": {
+      "excludeFiles": "public/**"
+    }
+  },
   "github": {
     "silent": true
   }
