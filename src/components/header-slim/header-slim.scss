@@ -1,3 +1,5 @@
+@import "../../scss/bootstrap-breakpoints";
+
 .it-header-slim-wrapper .link-list-wrapper.lang-dropdown  ul li a span,
 .it-header-slim-wrapper .link-list-wrapper.lang-dropdown  ul li a:hover span,
 .it-header-slim-wrapper .link-list-wrapper.lang-dropdown  ul li a:hover:not(.disabled) span,
@@ -7,7 +9,7 @@
 
 .it-header-slim-wrapper {
 	.link-list-wrapper ul li a span,
-   .link-list-wrapper ul li a:hover span,
+  .link-list-wrapper ul li a:hover span,
 	.link-list-wrapper ul li a:hover:not(.disabled) span,
 	.link-list-wrapper ul li a.active span {
    	color: #FFF;
@@ -18,6 +20,27 @@
   .link-list-wrapper ul li a span {
     margin-right: 0;
   }
+
+  .it-header-slim-wrapper-content .dropdown-menu {
+    top: 6px !important;
+    right: 5px !important;
+  }
+
 }
 
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+  .it-header-slim-wrapper {
+    .it-header-slim-wrapper-content .dropdown-menu {
+      top: 0 !important;
+    }
+  }
+}
 
+@media screen and (min-width: 1485px ) {
+  .it-header-slim-wrapper {
+    .it-header-slim-wrapper-content .dropdown-menu {
+        top: -15px !important;
+    }
+  }
+}
