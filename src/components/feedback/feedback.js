@@ -67,7 +67,7 @@ const Feedback = ({
   }, [sliderWrapperRef])
 
   return (
-    <section className="feedback bg-medium py-5 px-3 px-lg-0" aria-labelledby="feedbackSectionTitle">
+    <section className="feedback bg-medium py-5 px-3 px-lg-0" aria-labelledby="feedbackSectionTitle" id="feedbackSection">
       <div className="container-xxl">
         <div className="row d-flex justify-content-center">
           <div className="col-12 col-lg-6">

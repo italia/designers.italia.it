@@ -1,3 +1,5 @@
+@import "../../scss/bootstrap-breakpoints";
+
 .kangaroo {
 	.title-wrapper {
     h2 {
@@ -38,4 +40,57 @@
 			color: var(--kangaroo-negative-element-color)
 		}
 	}
+}
+
+
+
+
+
+//mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+
+}
+//Small tablet ------------------------------------------------------------------------------------------
+@include media-breakpoint-up(sm) {
+
+}
+
+//Tablet portrait ---------------------------------------------------------------------------------------
+@include media-breakpoint-up(md) {
+  .kangaroo {
+    .title-wrapper {
+      margin-top: calc(var(--spacer) * 1.5);
+    }
+  }
+}
+
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+
+  .hero {
+    &.column-hero {
+      .kangaroo-wrapper {
+        padding-top: 0 !important;
+      }
+    }
+  }
+
+}
+
+//Laptop ------------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xl) {
+
+}
+
+//Desktop -----------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xxl) {
+
+}
+
+//Hover states ------------------------------------------------------------------------------------------
+@media (hover: hover) {
+}
+
+//Transitions (A11y reduced motion disabled) ------------------------------------------------------------
+@media screen and (prefers-reduced-motion: no-preference) {
 }
