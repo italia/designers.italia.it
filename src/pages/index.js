@@ -20,7 +20,14 @@ const Index = () => {
                   </li>
                 </ul>
               </li>
-              <li><a href="level1/level2/">Level 2</a></li>
+              <li>
+                <a href="level1/level2/">Level 2</a>
+                <ul>
+                  <li>
+                    <a href="level1/fondamenti/">Design System - Fondamenti</a>
+                  </li>
+                </ul>
+              </li>
               <li>
                 <a href="level1/level2/level3/">Level 3</a>
                 <ul>

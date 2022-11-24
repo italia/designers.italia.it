@@ -1,5 +1,6 @@
 import React from "react"
 import ImageResponsive from "../image-responsive/image-responsive"
+import "./img-full.scss"
 
 const ImgFull = ({
   img,
