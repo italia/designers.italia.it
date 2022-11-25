@@ -106,7 +106,7 @@ components:
   sectionsEditorial :
     - full: true
       noSpace: true
-      title: Lorem ipsum
+      title: Come usarlo al meglio
       text: Eventuale lead paragraph
       background: null
       components:
@@ -115,35 +115,60 @@ components:
           text: |
             Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
 
-            Da capire come implementare il do’s and dont’s, qui sotto vive solo come segnaposto per ora. Da capire se deve essercene uno per ogni caso d’uso o uno generale. Pensare a scalabilità, mvp iniziale, e modularità. Target sempre misto in questa prima scheda d’uso, non dimenticarlo.
+            ### Sottocapitoletto
+            Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
 
             ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
+        - name: TextImageCta
+          text: |
+            ### Va bene (Do’s)
+            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 
+            ### Non va bene (Dont’s)
+            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+        - name: TextImageCta
+          title: Accessibilità
+
+        - name: Table
+
+        - name: TextImageCta
+          text: |
+            Contenuto di sezione, ci immaginiamo due o tre paragrafi con evidenze di cose a cui stare attenti e/o implementazioni particolari da fare (eg. ordine heading a seconda di dove lo usi e interazioni da tastiera, custom o meno).
+
+            Contenuto di sezione, ci immaginiamo due o tre paragrafi con evidenze di cose a cui stare attenti e/o implementazioni particolari da fare (eg. ordine heading a seconda di dove lo usi e interazioni da tastiera, custom o meno).
+
+            ### Etichette
+            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+
+            ### Interazioni da tastiera
+            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+    - full: true
+      noSpace: true
+      title: Stato del componente
+      text: Eventuale sottotitolo lead
+      background: null
+      components:
         - name: Table
         - name: TextImageCta
           text: |
-            ### Lorem ipsum
-
-            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
-            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
-            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ### Lorem ipsum
-
-            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
-            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
-            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-  sectionsEditorial2 :
+            Contenuto di sezione, da considerare un lorem ipsum segnaposto, ricordiamoci che questa tabella per forze di cose è responsive, scorre su mobile destra<>sinistra il resto è testo finto.
+          ctas:
+          - label: Esplora il changelog completo
+            url: "#"
+            blank: true
     - full: true
-      noSpace: true
-      title: Lorem Ipsum
-      text: |
-            Eventuale lead paragraph
+      noSpace: false
+      title: Altri componenti per
+      text: Eventuale sottotitolo lead
+      background: null
       components:
         - name: TextImageCta
-          title: Lorem ipsum
           text: |
-            Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
-
-            Da capire come implementare il do’s and dont’s, qui sotto vive solo come segnaposto per ora. Da capire se deve essercene uno per ogni caso d’uso o uno generale. Pensare a scalabilità, mvp iniziale, e modularità. Target sempre misto in questa prima scheda d’uso, non dimenticarlo.
+            Contenuto di sezione, ragionare se qui basterebbero le card.
