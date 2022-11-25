@@ -14,7 +14,7 @@ const Megamenu = ({
 	return(
 		<div className="megamenu pb-5 pb-lg-0">
 			<div className="row /*align-items-center*/">
-			<div class="col-xs-12 col-lg-4 px-0">
+			<div className="col-xs-12 col-lg-4 px-0">
 				<div className="row">
 					{left &&
 						<div className="col-12 it-vertical it-description pb-lg-3">
