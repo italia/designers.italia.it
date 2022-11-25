@@ -220,14 +220,13 @@ components:
           text: | #C 
             SPID (Sistema Pubblico di Identità Digitale) è il sistema di identità digitale che permette di utilizzare le stesse credenziali per accedere a tutti i servizi digitali della Pubblica Amministrazione da computer, tablet e smartphone. Il cittadino può ottenere SPID tramite i Gestori di identità (Identity Provider): una volta completata la procedura di verifica (che certifica l’identità del richiedente), vengono rilasciate delle credenziali (user e password) che possono essere utilizzate su tutti i siti che offrono servizi al cittadino (Service Provider).
             
-            Leggi di più sull’integrazione SPID e la documentazione tecnica sulla scheda SPID di Developers Italia.  
+            Leggi di più sull’integrazione SPID e la documentazione tecnica sulla [scheda SPID di Developers Italia](https://developers.italia.it/it/spid/).  
 
-            #### Titoletto interno h4
-            Asset e codice sorgente SPID
+            #### Linee guida SPID h4
           ctas:
           - label: Regole tecniche #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+            url: "https://docs.italia.it/italia/spid/spid-regole-tecniche/" #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -235,8 +234,21 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+            
+            #### Asset e codice sorgente SPID h4
+          ctas:
           - label: Bottone di accesso con scelta IDP integrata #C
-            url: "#" #M
+            url: "https://github.com/italia/spid-sp-access-button" #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Icone, loghi e asset grafici #C
+            url: "https://github.com/italia/spid-graphics" #M
             blank: true 
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -245,7 +257,45 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
+          - label: Layout standard di IDP #C
+            url: "https://github.com/italia/spid-idp-login-layout" #M
+            blank: true 
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Playbook Ansible di SP #C
+            url: "https://github.com/italia/spid-sp-playbook" #M
+            blank: true 
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+           
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Web analytics Italia (WAI)" #C
+          text: | #C 
+            Web Analytics Italia (WAI) è una piattaforma di web analytics open source dedicata all’analisi dei dati di traffico dei siti della Pubblica Amministrazione. 
+            
+            WAI consente di:
+            
+* monitorare gratuitamente le statistiche di fruizione di siti e servizi digitali 
+* semplificare la condivisione dei dati nell’ambito della PA e/o con gli stakeholders esterni
+* facilitare l’individuazione dei punti critici su cui intervenire per migliorare l’esperienza utente di siti e servizi
+* detenere il totale controllo del dato e la sua proprietà, in linea con la norma GDPR
+* disporre di strumenti ad hoc per pubblicare online le statistiche di siti e servizi monitorati (art.7 del CAD)
+* esporre pubblicamente i dati rilevati in forma aggregata sul portale Web Analytics Italia
+* beneficiare del supporto di una community di riferimento dedicata al progetto.
+            
+            Web Analytics Italia (WAI) si basa sul software open source Matomo per le funzionalità di ingestion e reporting. 
+        
         # NUMBERS BLOCK
         - name: Numbers
           items: #C #I
