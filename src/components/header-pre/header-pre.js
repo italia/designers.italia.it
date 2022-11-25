@@ -1,17 +1,14 @@
-import React, { useRef, useEffect } from "react"
-import { Collapse } from "bootstrap-italia/dist/bootstrap-italia.esm"
-import Icon from "../icon/icon"
-import "./header-pre.scss"
+import React from "react"
 
 const HeaderPre = ({data}) => {
 
 	return (
-		<div className=" bg-light py-2 small">
+		<div className="header-pre bg-light py-2 small">
 			<div className="container-xxl">
 				<div className="row">
 					<div className="col-12">
-						<div className="it-header-slim-wrapper-content text-bold text-center">
-						<span className="fw-semibold">{data.title}</span> - <a className="" href={`${data.url}`} data-focus-mouse="false">{data.link}</a>
+						<div className="text-center">
+						  <span className="fw-semibold">{data.title}</span> - <a href={data.url}>{data.link}</a>
 						</div>
 					</div>
 				</div>
