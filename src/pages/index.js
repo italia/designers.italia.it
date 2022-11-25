@@ -26,6 +26,9 @@ const Index = () => {
                   <li>
                     <a href="level1/fondamenti/">Design System - Fondamenti</a>
                   </li>
+                  <li>
+                    <a href="level1/componenti/">Design System - Componenti</a>
+                  </li>
                 </ul>
               </li>
               <li>
