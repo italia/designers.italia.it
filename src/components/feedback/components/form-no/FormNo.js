@@ -68,7 +68,7 @@ const FormNo = ({
 
       {/* ----------- feedback step 1 ----------- */}
       <div className="step feedback-formno-step">
-        <h2 className="mb-3">Grazie per la tua risposta! Aiutaci a migliorare.</h2>
+        <h2 className="mb-3" id="feedbackNoTitle">Grazie per la tua risposta! Aiutaci a migliorare.</h2>
         <fieldset>
           <legend className="d-flex mb-3 px-0 w-100"><span className="w-75">Sei:</span><span className="w-25 text-end">1/3</span></legend>
           <div className="form-check pb-2 border-bottom">
@@ -155,7 +155,7 @@ const FormNo = ({
     {/* ----------- feedback step 4 ----------- */}
     <div className="step feedback-formno-step">
       <ImageResponsive src="/images/kit-analitics.svg" alt="" />
-      <h2 className="mb-3 h4" id="feedbackYesTitle">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
+      <h2 className="mb-3 h4" id="feedbackNoThanksTitle">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
       <div className="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
       <div className="p mb-5"><a href="#">Leggi l’informativa sulla privacy</a></div>
       <form action="#">
