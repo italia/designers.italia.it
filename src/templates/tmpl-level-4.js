@@ -7,6 +7,7 @@ import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
 import BackToTopEl from "../components/back-to-top/back-to-top"
 import HeaderSlim from "../components/header-slim/header-slim"
+import HeaderPre from "../components/header-pre/header-pre"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
@@ -29,7 +30,8 @@ const Template = ({children,Pagedata}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
-        <Header data={HeaderData}>
+      <Header data={HeaderData}>
+        <HeaderPre data={HeaderData.headerPre}/>
         <HeaderSlim data={HeaderData.headerSlim}/>
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter}/>
