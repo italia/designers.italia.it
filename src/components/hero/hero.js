@@ -38,7 +38,7 @@ const Hero =({
     SubtitleLevel = `h${headingLevel+1}`
 	} else {
 		HLevel = `h1`
-    SubtitleLevel = `h2`
+    SubtitleLevel = `p`
 	}
 
   let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3'
@@ -50,7 +50,7 @@ const Hero =({
   let columnStyle = 'col-12 col-md-10 offset-md-1'
 		+ `${centered ? ' col-lg-7 offset-lg-0' : ' col-lg-6'}`
 
-  let breadcrumbsStyle = 'hero-top px-3 py-3'
+  let breadcrumbsStyle = 'hero-top px-3 pt-3'
     + `${column ? ' px-lg-0' : ''}`
 
   let kangarooColumnStyle = 'col-12 col-md-10 offset-md-1'
