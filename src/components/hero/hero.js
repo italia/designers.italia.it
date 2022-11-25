@@ -38,7 +38,7 @@ const Hero =({
     SubtitleLevel = `h${headingLevel+1}`
 	} else {
 		HLevel = `h1`
-    SubtitleLevel = `h2`
+    SubtitleLevel = `p`
 	}
 
   let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3'
