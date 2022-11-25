@@ -9,6 +9,7 @@ import Highlight from "../highlight/highlight"
 import Card from "../card/card"
 import Kangaroo from "../kangaroo/kangaroo"
 import ImageIcons from "../image-icons/image-icons"
+import Table from "../table/table"
 
 const SectionEditorial = ({
   title,
@@ -32,6 +33,7 @@ const SectionEditorial = ({
     TitleText,
     ImgFull,
     ImageIcons,
+    Table,
   };
 
   //heading level
