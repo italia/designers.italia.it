@@ -105,7 +105,7 @@ components:
     title: Comprendere #C
     subtitle: "Comprendi lo scenario d'uso del servizio: studia il contesto di fruizione con l'analisi e la ricerca utente" #C
     tag:
-        label: tag  #C
+        label: Fase di progettazione  #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -113,7 +113,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      Lorem **ipsum** 
+      "Con la fase di comprensione, **acquisisci consapevolezza del contesto** in cui si colloca il servizio digitale, **esplorando i processi e gli attori coinvolti per progettare l’esperienza d’uso** dal punto di vista dell’utente. Grazie ai kit dedicati puoi **identificare figure ed elementi** coinvolti nell’erogazione del servizio pubblico, **organizzare e condurre una ricerca utente, definire gli utenti tipo** e il modo in cui si relazionano al servizio." 
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -141,15 +141,15 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Argomento
+        - label: Analisi del contesto
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Interviste utente
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Esperienza utente
           url: "#"
           color: primary
           size: lg
@@ -159,7 +159,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il level 2 #C
+          label: Scopri i kit di questa fase #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -168,8 +168,29 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "level3/"
-              label: Level 3 #C
+            - url: "analisi-del-contesto/"
+              label: Analisi del contesto #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "interviste-soggetti-coinvolti/"
+              label: Interviste soggetti coinvolti #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "esperienza-utente/"
+              label: Esperienza utente #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "questionario-online/"
+              label: Questionario online #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -199,13 +220,10 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: Lorem ipsum h2
+    - title: Esplora e usa i kit di design
       bgColor: null
       menu: false
       centered: false
-      text: | #C
-        Lorem **ipsum**
-      components: 
 
         # TXT BLOCK
         - name: TextImageCta
