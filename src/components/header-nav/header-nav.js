@@ -35,20 +35,50 @@ const HeaderNav = ({
 									<Icon icon="sprites.svg#it-close-big"/>
 								</Button>
 							</div>
-							<HeaderMenu>
-								{data.nav.voices.map((value,index)=>{
-									return(
-										<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
-											<HeaderMenuLink key={"item-menu-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
-											<DropdownMenu key={"dropDown-"+index} idMegamenu={value.idMegamenu}>
-												{value.megamenu &&
-													<Megamenu key={"mega-"+index} {...value.megamenu}></Megamenu>
-												}
-											</DropdownMenu>
-										</HeaderMenuItem>
-									)
-								})}
-							</HeaderMenu>
+							<div className="menu-wrapper">
+								<HeaderMenu>
+									{data.nav.voicesLeft.map((value,index)=>{
+										return(
+											<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
+												<HeaderMenuLink key={"item-menu-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
+												<DropdownMenu key={"dropDown-"+index} idMegamenu={value.idMegamenu}>
+													{value.megamenu &&
+														<Megamenu key={"mega-"+index} {...value.megamenu}></Megamenu>
+													}
+												</DropdownMenu>
+											</HeaderMenuItem>
+										)
+									})}
+								</HeaderMenu>
+								<HeaderMenu>
+									{data.nav.voicesCenter.map((value,index)=>{
+										return(
+											<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
+												<HeaderMenuLink key={"item-menu-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
+												<DropdownMenu key={"dropDown-"+index} idMegamenu={value.idMegamenu}>
+													{value.megamenu &&
+														<Megamenu key={"mega-"+index} {...value.megamenu}></Megamenu>
+													}
+												</DropdownMenu>
+											</HeaderMenuItem>
+										)
+									})}
+								</HeaderMenu>
+								<HeaderMenu>
+									{data.nav.voicesRight.map((value,index)=>{
+										return(
+											<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
+												<HeaderMenuLink key={"item-menu-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
+												<DropdownMenu key={"dropDown-"+index} idMegamenu={value.idMegamenu}>
+													{value.megamenu &&
+														<Megamenu key={"mega-"+index} {...value.megamenu}></Megamenu>
+													}
+												</DropdownMenu>
+											</HeaderMenuItem>
+										)
+									})}
+								</HeaderMenu>
+							</div>
 						</div>
 					</nav>
 				</div>
