@@ -29,8 +29,8 @@ const Template = ({children,Pagedata}) => {
           <HeaderNav data={HeaderData.navbar} />
         </NavWrapper>
       </Header>
-      <HeaderPost data={HeaderData.headerPost}/>
       <main id="main">
+        <HeaderPost data={HeaderData.headerPost}/>
         {children}
       </main>
       <Footer {...FooterData.footer}>
