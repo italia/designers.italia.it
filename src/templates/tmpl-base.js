@@ -8,6 +8,7 @@ import Footer from "../components/footer/footer"
 import BackToTopEl from "../components/back-to-top/back-to-top"
 import HeaderSlim from "../components/header-slim/header-slim"
 import HeaderPre from "../components/header-pre/header-pre"
+import HeaderPost from "../components/header-post/header-post"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
@@ -27,6 +28,7 @@ const Template = ({children,Pagedata}) => {
           <HeaderCenter data={HeaderData.headerCenter}/>
           <HeaderNav data={HeaderData.navbar} />
         </NavWrapper>
+        <HeaderPost data={HeaderData.headerPost}/>
       </Header>
       <main id="main">
         {children}
