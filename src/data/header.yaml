@@ -240,10 +240,10 @@ navbar:
                 - url: "/community/come-partecipare/"
                   label: Come partecipare
 headerPost: 
-  title: null
+  isActive: true
   nav:
     id: navBanner
-    ariaLabel: Potrebbe interessarti 
+    ariaLabel: Potrebbe interessarti
     items: #C #M
     - title: Pubblicato il **kit UI v3**
       url: "#"
@@ -254,10 +254,19 @@ headerPost:
         color : "primary"
         hidden: true
         addonClasses: "me-2"
-    - title: Il **nuovo** kit privacy
+    - title: Benvenuto **kit privacy**
       url: "#"
       icon: 
         icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
+        size: "sm"
+        align : "middle"
+        color : "primary"
+        hidden: true
+        addonClasses: "me-2"
+    - title: Questo **nuovo sito** è online!
+      url: "#"
+      icon: 
+        icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
         size: "sm"
         align : "middle"
         color : "primary"
