@@ -239,16 +239,32 @@ navbar:
                   label: Progetti
                 - url: "/community/come-partecipare/"
                   label: Come partecipare
-headerPost: #C #M
+headerPost: 
   title: null
   nav:
     id: navBanner
-    ariaLabel: Potrebbe interessarti
-    items:
-    - title: Pubblicato il kit UI v3
+    ariaLabel: Potrebbe interessarti 
+    items: #C #M
+    - title: Pubblicato il **kit UI v3**
       url: "#"
-    - title: Il design system passa alla versione beta
+      icon: 
+        icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
+        size: "sm"
+        align : "middle"
+        color : "primary"
+        hidden: true
+        addonClasses: "me-2"
+    - title: Il **nuovo** kit privacy
       url: "#"
+      icon: 
+        icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
+        size: "sm"
+        align : "middle"
+        color : "primary"
+        hidden: true
+        addonClasses: "me-2"
     newsletter:
       title: Iscriviti alla newsletter
       url: "#"
+
+
