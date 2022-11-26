@@ -5,7 +5,7 @@ import Pagedata from "./index.yaml"
 
 const Index = () => {
   return(
-    <Template>
+    <Template Pagedata={Pagedata}>
       <div className="container-xxl py-5 py-lg-6">
         <div className="row px-3 px-md-0">
           <div className="col-12 col-md-10 offset-md-1">
