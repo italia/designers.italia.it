@@ -28,8 +28,8 @@ const Template = ({children,Pagedata}) => {
           <HeaderCenter data={HeaderData.headerCenter}/>
           <HeaderNav data={HeaderData.navbar} />
         </NavWrapper>
-        <HeaderPost data={HeaderData.headerPost}/>
       </Header>
+      <HeaderPost data={HeaderData.headerPost}/>
       <main id="main">
         {children}
       </main>
