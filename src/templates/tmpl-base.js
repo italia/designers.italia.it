@@ -11,6 +11,8 @@ import HeaderPre from "../components/header-pre/header-pre"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
 import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
+import LastUpdate from "../components/last-update/last-update"
+import Feedback from "../components/feedback/feedback"
 
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
@@ -30,6 +32,8 @@ const Template = ({children,Pagedata}) => {
       </Header>
       <main id="main">
         {children}
+        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
+        <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
       </Footer>
