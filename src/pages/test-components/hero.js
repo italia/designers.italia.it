@@ -6,7 +6,7 @@ import Pagedata from "./hero.yaml"
 
 const HeroPage = () => {
 	return(
-		<Template>
+		<Template Pagedata={Pagedata}>
 			{ Pagedata.components.heros.map((hero,index) => {
           return(
             <Hero key={"hero-"+index} {...hero}/>
