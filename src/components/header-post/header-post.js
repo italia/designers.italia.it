@@ -53,7 +53,7 @@ const HeaderPost = ({data}) => {
 												href={data.nav.newsletter.url}
 												target={data.nav.newsletter.blank ? "_blank" : undefined}
 												>
-													<span class="text-end">
+													<span className="text-end">
 														{data.nav.newsletter.title}
 													</span>
 													<Icon {...iconNewsletter}/>
