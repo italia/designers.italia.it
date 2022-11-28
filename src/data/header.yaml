@@ -14,11 +14,12 @@ headerSlim:
     items:
     - title: Designers Italia
       url: "/"
-      black: false
+      blank: false
       active: true
     - title: Developers Italia
       url: https://developers.italia.it/
       blank: true
+      active: false
   # # —
   # # LANG SWITCHER
   # # —
@@ -240,3 +241,41 @@ navbar:
                   label: Progetti
                 - url: "/community/come-partecipare/"
                   label: Come partecipare
+headerPost: 
+  isActive: true
+  nav:
+    id: navBanner
+    ariaLabel: Potrebbe interessarti
+    items: #C #M
+    - title: Pubblicato il **kit UI v3**
+      url: "#"
+      icon: 
+        icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
+        size: "sm"
+        align : "middle"
+        color : "primary"
+        hidden: true
+        addonClasses: "me-2"
+    - title: Benvenuto **kit privacy**
+      url: "#"
+      icon: 
+        icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
+        size: "sm"
+        align : "middle"
+        color : "primary"
+        hidden: true
+        addonClasses: "me-2"
+    # - title: Questo **nuovo sito** è online!
+    #   url: "#"
+    #   icon: 
+    #     icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
+    #     size: "sm"
+    #     align : "middle"
+    #     color : "primary"
+    #     hidden: true
+    #     addonClasses: "me-2"
+    newsletter:
+      title: Iscriviti alla newsletter
+      url: "#iscrivitiNewsletter" # right now just scroll down to the form in the footer
+
+
