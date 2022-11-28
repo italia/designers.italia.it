@@ -7,7 +7,7 @@ import Pagedata from "./various.yaml"
 
 const Yaml = ({data}) => {
 	return (
-	  <Template>
+	  <Template Pagedata={Pagedata}>
       <TestYaml
 			title={Pagedata.components.testyaml.title}
 			subtitle={Pagedata.components.testyaml.subtitle}
