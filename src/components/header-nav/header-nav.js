@@ -64,7 +64,6 @@ const HeaderNav = ({
 										)
 									})}
 								</HeaderMenu>
-								{/* XXX ex. we need to pass to this third UL the class justify-content-end for the ul to be right aligned on the sticky menu... */}
 								<HeaderMenu>
 									{data.nav.voicesRight.map((value,index)=>{
 										return(
