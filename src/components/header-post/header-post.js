@@ -3,7 +3,6 @@ import ReactMarkdown from "react-markdown"
 import Icon from "../icon/icon"
 
 let styles;
-let countItems = 0;
 
 let iconNewsletter = ({
     icon: "sprites.svg#it-mail",
@@ -47,7 +46,7 @@ const HeaderPost = ({data}) => {
 												</li>
 												)
 											})}
-											<li key={"banner-item-"+countItems+1} className="list-item mb-1 mb-md-0 mt-3 mt-md-0">
+											<li key={"banner-item-"+data.nav.items.length+1} className="list-item mb-1 mb-md-0 mt-3 mt-md-0">
 												<a
 												className="simple-cta fw-semibold"
 												href={data.nav.newsletter.url}
