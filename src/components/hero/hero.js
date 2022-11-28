@@ -25,7 +25,8 @@ const Hero =({
   imgRatio,
 	bgImg,
   bgImgAlt,
-	kangaroo
+	kangaroo,
+  noBorder
 })=>{
   let styles = 'hero'
   + `${background ? ' bg-'+background : ''}`
@@ -53,8 +54,11 @@ const Hero =({
   let breadcrumbsStyle = 'hero-top px-3 pt-3'
     + `${column ? ' px-lg-0' : ''}`
 
+  let kangarooZoneStyle = 'kangaroo-zone'
+  + `${noBorder ? ' no-border' : ''}`
+
   let kangarooColumnStyle = 'col-12 col-md-10 offset-md-1'
-		+ `${centered ? ' col-lg-7 offset-lg-0' : ''}`
+  + `${centered ? ' col-lg-7 offset-lg-0' : ''}`
 
   if (column) {
     columnStyle = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
@@ -103,7 +107,7 @@ const Hero =({
         </div>
       </div>
       {kangaroo &&
-        <div className="kangaroo-zone">
+        <div className={kangarooZoneStyle}>
           <div className="container-xxl">
             <div className={rowStyle}>
               <div className={kangarooColumnStyle}>

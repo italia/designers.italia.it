@@ -77,7 +77,7 @@
   .menu-column {
     height: calc(100vh);
     overflow-y: auto;
-	z-index: auto !important;
+	  z-index: auto !important;
   }
 
   .nav-sidebar {
@@ -86,6 +86,12 @@
       .menu-wrapper {
         z-index: 0;
         background-color: transparent !important;
+      }
+    }
+    .list-item {
+      border-right: 2px solid transparent !important;
+      &.contains-active {
+        border-right-color: var(--color-primary) !important;
       }
     }
   }

@@ -41,6 +41,7 @@ const NavSidebar = ({
 
           if (subItem.label === page) {
             expandSublinks = true
+            linksStyle = linksStyle+' contains-active'
           }
 
           subLinksStyle = "list-item"

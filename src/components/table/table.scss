@@ -5,4 +5,17 @@
     border-bottom-width: 1px;
     border-top: none;
   }
+  th,
+  td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  tr {
+    th,
+    td {
+      &:first-child {
+        padding-left: 0;
+      }
+    }
+  }
 }
