@@ -117,7 +117,7 @@ components:
           active: false
         - label : Web analytics
           active: true
-    title: Analisi del contesto #C
+    title: Web analytics #C
     subtitle: "Osserva i comportamenti degli utenti partendo dai dati di utilizzo del servizio" #C
     tag:
       label: Kit di design #C
@@ -222,6 +222,13 @@ components:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
+            - url: "crea-e-condividi-una-dashboard-dati/"
+              label: Crea e condividi una dashboard dati #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -242,16 +249,17 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            Il kit di analisi del contesto ti consente di **ottenere una panoramica dei fattori e delle variabili** che influenzano l'erogazione e la fruizione di un servizio digitale, aiutandoti a **individuare gli obiettivi e il perimetro del progetto.** Potrai, così, impostare in maniera ragionata le successive fasi di ricerca e  concettualizzazione.
-            Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi e successivamente evolvere.
+            L’analisi dei dati di traffico web (web analytics) ha la finalità di ottimizzare l’usabilità di siti e servizi sulla base di dati: le piattaforme per raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le decisioni che riguardano design e re-design dei servizi, in ottica di progettazione basata sui dati (data driven design).
+            
+            Questo kit ha inoltre l’obiettivo di mostrarti come i dati possono aiutarti a indirizzare le azioni di miglioramento ed evoluzione delle performance, utilizzando in primo luogo piattaforme di web analytics open source. 
 
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
           text: | #C
-            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come individuare tutte le variabili e a gestire la complessità del progetto, strutturando il servizio in modo che sia usabile ed efficace per l’utente, e allo stesso tempo, efficiente per gli operatori della Pubblica Amministrazione.
+            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni sulla web analytics e su come una lettura sistematica dei dati può migliorare la comprensione dei comportamenti online degli utenti e quindi migliorare la qualità dei servizi digitali.
           ctas:
-          - label: Vai all'argomento "Progettazione di servizi" #C
+          - label: Vai all'argomento "Introduzione alla web analytics" #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -273,7 +281,7 @@ components:
   highlightCards:
     id: HC1
     title: Le attività di questo kit di design #C
-    text: Esplora le attività di questo kit di design per schematizzare il contesto d’uso del servizio #C
+    text: Esplora le attività di questo kit di design per migliorare l’efficienza e l’efficacia di siti e servizi digitali sulla base dei dati di web analytics #C
     col4: false
     nospace: false
 
@@ -281,13 +289,13 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Schematizza il contesto d'uso #C
+      - title: Monitora la tua soluzione digitale #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "#" #M
         text: | #C
-          Identifica le figure con cui l’utente potrebbe interagire e comprendi l’impatto che potrebbero avere sia sul progetto che sul cittadino. Inoltre, puoi schematizzare le relazioni tra attori e touchpoint coinvolti.
+          Esplora alcune fra le principali soluzioni software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali.
         tag:
           label: Attività del kit #C
         share: #AUTO
@@ -301,3 +309,26 @@ components:
               color: secondary
           list:
             isShare: true
+            
+      # CARD CHILDREN ACTION
+      - title: Crea e condividi una dashboard di dati #C
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        url: "#" #M
+        text: | #C
+          Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source.
+        tag:
+          label: Attività del kit #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
