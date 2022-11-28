@@ -35,7 +35,7 @@ const HeaderNav = ({
 									<Icon icon="sprites.svg#it-close-big"/>
 								</Button>
 							</div>
-							<div className="menu-wrapper">
+							<div className="menu-wrapper justify-content-lg-between">
 								<HeaderMenu>
 									{data.nav.voicesLeft.map((value,index)=>{
 										return(
@@ -65,7 +65,7 @@ const HeaderNav = ({
 									})}
 								</HeaderMenu>
 								{/* XXX ex. we need to pass to this third UL the class justify-content-end for the ul to be right aligned on the sticky menu... */}
-								<HeaderMenu> 
+								<HeaderMenu>
 									{data.nav.voicesRight.map((value,index)=>{
 										return(
 											<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
