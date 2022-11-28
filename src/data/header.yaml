@@ -64,7 +64,7 @@ navbar:
   theme: theme-dark-desk
   ariaLabel: Menu principale
   toggler:
-    srOnly: Mostra o nascondi il menu
+    ariaLabel: Mostra o nascondi il menu
   nav:
     id: menu
     # —
@@ -124,7 +124,7 @@ navbar:
                 - url: "/norme-e-riferimenti/#articoli-di-approfondimento/"
                   label: Articoli di approfondimento teorici (Medium)
                 - url: "/norme-e-riferimenti/altre-norme-e-riferimenti"
-                  label: Altre norme e riferimenti  
+                  label: Altre norme e riferimenti
       - isDropDown : true
         isMegaMenu : true
         idMegamenu : menuC
@@ -169,9 +169,9 @@ navbar:
               listItems: #C #M
                 - url: "/design-system/come-iniziare/"
                   label: Come iniziare
-                - url: "/design-system/fondamenti/"
+                - url: "/level1/fondamenti/"
                   label: Fondamenti
-                - url: "/design-system/componenti/"
+                - url: "/level1/componenti/"
                   label: Componenti
             - isMenu: true
               listItems: #C #M
@@ -192,7 +192,7 @@ navbar:
           heading:
             url: "/risorse-per-progettare/" #M
             label: Panoramica sulle risorse per progettare servizi digitali della PA #C
-          cols: 
+          cols:
             - isMenu: true
               listItems: #C #M
                 - url: "/risorse-per-progettare/organizzare/"
@@ -275,5 +275,3 @@ headerPost:
     newsletter:
       title: Iscriviti alla newsletter
       url: "#iscrivitiNewsletter" # right now just scroll down to the form in the footer
-
-
