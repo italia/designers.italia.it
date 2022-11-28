@@ -8,7 +8,7 @@ import FormYes from "./components/form-yes/FormYes"
 import FormNo from "./components/form-no/FormNo"
 
 const BTN_INTRO = {
-  label: "Conferma",
+  label: "Invia",
   btnStyle: "primary",
   type: "button",
 }
