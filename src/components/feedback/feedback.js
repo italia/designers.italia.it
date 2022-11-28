@@ -11,13 +11,20 @@ const BTN_INTRO = {
   label: "Conferma",
   btnStyle: "primary",
   type: "button",
-  //addonStyle: ""
 }
 
 const ICON_CLOSE = {
   icon: "sprites.svg#it-close",
   color: "primary",
   size: "lg",
+}
+
+const ICON_CONFIRM = {
+  icon: "sprites.svg#it-check-circle",
+  color: "primary",
+  size: "lg",
+  align : "middle",
+  addonClasses: "me-2"
 }
 
 const CLASS_SLIDE_ANIMEND = 'slidedown-animend'
@@ -75,8 +82,10 @@ const Feedback = ({
               <div>
                 <div className="card-body p-5">
                   <div className="step" id="feedbackIntro">
-                    <h2 className="mb-3 mb-mb-4" id="feedbackSectionTitle">Ciao, questa pagina è stata utile?</h2>
-
+                    <h2 className="mb-3 mb-mb-4" id="feedbackSectionTitle">
+                      <span className="feedback-title">Ciao, questa pagina è stata utile?</span>
+                      <span className="feedback-confirm d-flex align-items-center"><Icon {...ICON_CONFIRM} /> Feedback inviato. Grazie.</span>
+                    </h2>
                     <form>
                       <fieldset className="d-flex">
                         <div className="form-check me-5">
