@@ -13,7 +13,7 @@ const BackToTopEl = (props) => {
     })
   });
   return (
-    <a href="#" aria-hidden="true" data-bs-toggle="backtotop" className="back-to-top" id="backToTop">
+    <a href="#" aria-label={props.ariaLabel} data-bs-toggle="backtotop" className="back-to-top" id="backToTop">
       <Icon icon="sprites.svg#it-arrow-up" color="light"/>
     </a>
   )

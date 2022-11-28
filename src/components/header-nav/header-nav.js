@@ -31,7 +31,7 @@ const HeaderNav = ({
 						<div className="navbar-collapsable" ref={collRef} id={data.nav.id}>
 							<div className="overlay"></div>
 							<div className="close-div">
-								<Button addonStyle="close-menu">
+								<Button addonStyle="close-menu" ariaLabel={data.close.ariaLabel}>
 									<Icon icon="sprites.svg#it-close-big"/>
 								</Button>
 							</div>
