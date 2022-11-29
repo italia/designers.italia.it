@@ -184,7 +184,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Disegnare e sviluppare l'interfaccia utente #C
+            label: Progettare l'interfaccia utente #C
       tagsLabel : Parliamo di
       color: secondary
       icon:
@@ -192,6 +192,10 @@ components:
         size: sm
         color: secondary
       chips: #C
+        - label: Design system
+          url: "#"
+          color: primary
+          size: lg
         - label: Interfaccia utente
           url: "#"
           color: primary
@@ -245,6 +249,7 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
+          # title: A cosa servono h3 #C
           text: | #C
             Grazie a un insieme di componenti visivi già pronti, puoi **assemblare il front-end di siti web e applicazioni** e rendere le schermate interattive per creare un prototipo ad alta fedeltà. Un prototipo in alta fedeltà è utile per **svolgere ulteriori test di usabilità prima dello sviluppo**.
         # TXT BLOCK
@@ -270,11 +275,6 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-            
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  #sectionsEditorial2 :
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -290,7 +290,7 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Realizza un prototipo in alta fedeltà #C
+      - title: "Realizza un prototipo in alta fedeltà" #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
@@ -298,7 +298,7 @@ components:
         text: | #C
           Costruisci le schermate del servizio digitale e rendile interattive per svolgere test di usabilità e, successivamente, passare allo sviluppo
         tag:
-          label: Attività del kit #C
+          label: "Attività del kit" #C
         share: #AUTO
           btnId: shareButton
           button:
