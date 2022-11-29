@@ -18,12 +18,12 @@
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Analisi del contesto - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : "Identifica i principali elementi che compongono il servizio e le loro connessioni." #C
+  name: Sintetizza i risultati della ricerca - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Analizza e rappresenta efficacemente i risultati dell’indagine. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/analisi-del-contesto/ #M
+  pathname: /risorse-per-progettare/comprendere/esperienza-utente/sintetizza-i-risultati-della-ricerca/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -63,13 +63,21 @@ kangaroo:
           align: "middle"
           color: "secondary"
         label: Comprendere #C
+        url: "../../" #M
+      - title: Nel kit di design #C
+        icon:
+          icon: "sprites.svg#it-tool"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Questionario online #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
     prev:
       label: Titolo sorella precedente #C
       url: "#" #M
-      # image: /images/link-custom-icon.svg #I
+      image: /images/link-custom-icon.svg #I
       blank: false
       specular: false
       icon:
@@ -80,18 +88,18 @@ navPreFooter:
         hidden: true
         addonClasses: flex-shrink-0 me-3
     next:
-      label: Titolo sorella successiva #C
-      url: "#" #M
-      # image: /images/link-custom-icon.svg #I
-      blank: false
-      specular: true
-      icon:
-        icon: "sprites.svg#it-arrow-right"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 ms-3
+        label: Titolo sorella successiva #C
+        url: "#" #M
+        image: /images/link-custom-icon.svg #I
+        blank: false
+        specular: true
+        icon:
+          icon: "sprites.svg#it-arrow-right"
+          size: "sm"
+          align: "middle"
+          color: "primary"
+          hidden: true
+          addonClasses: flex-shrink-0 ms-3
 
 # ————————————————————————————————————————————
 # CONTENT
@@ -111,27 +119,30 @@ components:
           url: /
         - label : Risorse per progettare
           active: false
-          url: ../../
+          url: ../../../
         - label : Comprendere
+          url: ../../
+          active: false
+        - label : Questionario online
           url: ../
           active: false
-        - label : Analisi del contesto
+        - label : Sintetizza i risultati della ricerca
           active: true
-    title: Analisi del contesto #C
-    subtitle: "Identifica i principali elementi che compongono il servizio e le loro connessioni" #C
+    title: Sintetizza i risultati della ricerca #C
+    subtitle: Analizza e rappresenta efficacemente i risultati dell’indagine  #C
     tag:
-      label: Kit di design #C
+      label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
-    imgRatio: 4x3
     pretext:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve
-    text: | #C
-      Analizzare il contesto significa **conoscere i fattori che influenzano la fruizione del servizio.** Con gli strumenti di questo kit hai il **vantaggio di poter analizzare in modo strutturato** l’ambito del servizio che stai progettando. 
+   #  text: In breve
+  # text: | #C
+  #  Lorem **ipsum** 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
+    imgRatio: 4x3
     share:
       btnId: shareButton
       button:
@@ -158,7 +169,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Comprendere #C
-            url: "../" #M
+            url: "../../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -184,120 +195,74 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Capire il contesto d’uso del servizio #C
-      tagsLabel : Parliamo di
+            label: Capire il contesto d'uso del servizio #C
+      tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
       chips: #C
-        - label: Analisi del contesto
+        - label: Ricerca utente
           url: "#"
           color: primary
           size: lg
-        - label: Progettazioni servizi
+        - label: Questionari
           url: "#"
           color: primary
           size: lg
-
-      # KANGAROO: CHILDREN SHORTCUTS 
-      dropdown:
-        btnId: dropdownKang
-        button:
-          addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri le attività del kit #C
-          iconRight: true
-          icon:
-            icon: sprites.svg#it-expand
-            size: sm
-            color: primary
-            addonClasses: icon-expand ms-2
-        list:
-          listItems: #M
-            - url: "schematizza-contesto-uso/"
-              label: Schematizza il contesto d'uso #C
-              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
-
+      
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial :
 
-    # —
-    # EDITORIAL #C #I
-    # —   
-    - title: A cosa serve il kit di analisi del contesto #C
+
+    - title: Come definire un piano di ricerca, scegliere il target e progettare le domande  #C
       menu: false
       centered: true
-      bgColor: null  
+      bgColor: null
       #text: | #C
       #  Lorem **ipsum**
       components:
 
         # TXT BLOCK
         - name: TextImageCta
+          # title: A cosa servono h3 #C
           text: | #C
-            Il kit di analisi del contesto ti consente di **ottenere una panoramica dei fattori e delle variabili** che influenzano l'erogazione e la fruizione di un servizio digitale, aiutandoti a **individuare gli obiettivi e il perimetro del progetto.** Potrai, così, impostare in maniera ragionata le successive fasi di ricerca e  concettualizzazione.
-            Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi e successivamente evolvere.
+            Definisci gli obiettivi dell'indagine e **i temi da investigare** così da capire qual è il target più appropriato e come reclutarlo attraverso i canali che hai a disposizione. Struttura il questionario in modo da affrontare prima i temi più ampi e semplici, per poi approfondire i temi più complessi.
 
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Scopri di più nel Manuale operativo di design #C
-          text: | #C
-            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come individuare tutte le variabili e a gestire la complessità del progetto, strutturando il servizio in modo che sia usabile ed efficace per l’utente, e allo stesso tempo, efficiente per gli operatori della Pubblica Amministrazione.
-          ctas:
-          - label: Vai all'argomento "Progettazione di servizi" #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html" #M
-            blank: true #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-            
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  #sectionsEditorial2 :
+            Rifletti sulla **strategia migliore per estrapolare le informazioni**, nel porre le domande ricordati di contestualizzarle fornendo esempi o descrizioni laddove necessario, rifletti su quale siano le modalità di risposta più appropriate a raggiungere il tuo scopo.
 
   # ///////////////////
-  # HIGHLIGHT WITH CARDS
+  # RESOURCES
   # ///////////////////
-  highlightCards:
-    id: HC1
-    title: Le attività di questo kit di design #C
-    text: Esplora le attività di questo kit di design per schematizzare il contesto d’uso del servizio #C
-    col4: false
-    nospace: false
-
-    # CARDS
-    cards: # AUTO?
-
-      # CARD CHILDREN ACTION
-      - title: Schematizza il contesto d'uso #C
-        imgRatio: 16x9
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        url: "schematizza-il-contesto-d-uso-di-un-servizio" #M
-        text: | #C
-          Identifica le figure con cui l’utente potrebbe interagire e comprendi l’impatto che potrebbero avere sia sul progetto che sul cittadino. Inoltre, puoi schematizzare le relazioni tra attori e touchpoint coinvolti.
-        tag:
-          label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+  resourceList:
+    title: Risorse operative #C
+    headingLevel: 3
+    list:
+      - simpleList : true
+        headingLevel: 4
+        listItems:
+          - label: Piano di ricerca - questionari #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Il riepilogo del perimetro della ricerca e della selezione dei partecipanti #C
+            url: "https://docs.google.com/document/d/1WpM1qTHUUy8oDbKs_GXXpH6hgKquLrEgfIympfjhbE4/edit" #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+            - label: Struttura del questionario #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Un insieme di domande pronte all’uso per profilare e selezionare i partecipanti alle tue interviste #C
+            url: "https://docs.google.com/document/d/1sJVKi9JL2RMGXBporm_zjUXJ-zRjvKSmmKOKWKYDeEY/edit?usp=sharing" #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "https://docs.google.com/document/d/1sJVKi9JL2RMGXBporm_zjUXJ-zRjvKSmmKOKWKYDeEY/edit?usp=sharing" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
