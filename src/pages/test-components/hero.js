@@ -5,7 +5,7 @@ import LastUpdate from "../../components/last-update/last-update"
 import Pagedata from "./hero.yaml"
 
 const HeroPage = () => {
-	return(
+	// return(
 		// <Template Pagedata={Pagedata}> // XXX disable to use breadcrumb plugin, unavaible on test-components
 		// 	{ Pagedata.components.heros.map((hero,index) => {
     //       return(
@@ -14,7 +14,7 @@ const HeroPage = () => {
     //     })}
     //     <LastUpdate {...Pagedata.components.lastUpdate}/>
 		// </Template>
-	)
+	// )
 }
 
 export default HeroPage
