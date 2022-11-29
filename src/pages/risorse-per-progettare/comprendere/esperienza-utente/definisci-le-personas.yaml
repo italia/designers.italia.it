@@ -18,12 +18,12 @@
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Schematizza il contesto d'uso del servizio - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Identifica le figure e comprendi l’impatto che potrebbero avere sul tuo servizio e sull’esperienza d’uso del cittadino. #C
+  name: Definisci le personas - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Identifica i profili delle persone che usano il tuo servizio specificando le loro caratteristiche ed esigenze . #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso-del-servizio/ #M
+  pathname: /risorse-per-progettare/comprendere/esperienza-utente/definisci-le-personas/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -70,7 +70,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Analizza il contesto d'uso #C
+        label: Esperienza utente #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -123,13 +123,13 @@ components:
         - label : Comprendere
           url: ../../
           active: false
-        - label : Analisi del contesto
+        - label : Esperienza utente
           url: ../
           active: false
-        - label : Schematizza il contesto d'uso del servizio
+        - label : Definisci le personas
           active: true
-    title: Schematizza il contesto d’uso del servizio #C
-    subtitle: Identifica le figure e comprendi l’impatto che potrebbero avere sul tuo servizio e sull’esperienza d’uso del cittadino #C
+    title: Definisci le personas #C
+    subtitle: Identifica i profili delle persone che usano il tuo servizio specificando le loro caratteristiche ed esigenze  #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
@@ -195,7 +195,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Capire il contesto d’uso del servizio #C
+            label: Progettare l'interazione delle persone con il servizio #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -203,11 +203,7 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Mappa attori
-          url: "#"
-          color: primary
-          size: lg
-        - label: Mappa ecosistema
+        - label: User personas
           url: "#"
           color: primary
           size: lg
@@ -218,7 +214,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Come mappare le figure coinvolte e l’ecosistema #C
+    - title: Come identificare i profili delle persone che usano il servizio #C
       menu: false
       centered: true
       bgColor: null
@@ -230,9 +226,8 @@ components:
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
-            **Traccia tutte le figure coinvolte** nell’erogazione del servizio e *classificale in modo strutturato*, distinguendole tra primarie e secondarie, interne o esterne alla Pubblica Amministrazione. 
-            Approfondisci e **schematizza le interazioni e i flussi di scambio** che avvengono tra i diversi attori e touchpoint coinvolti, mettendo in evidenza eventuali inefficienze del sistema e potenziali miglioramenti.
-            **Comprenderai l’impatto che i diversi ruoli** hanno sul servizio e sulle persone come destinatarie. 
+            Con il modello personas puoi **definire le tipologie di persone che utilizzao il tuo servizio**, dettagliando le loro **caratteristiche** rispetto all'uso del servizio e dei canali digitali, facendo emergere le loro **esigenze e difficoltà** rispetto all'esperienza attuale.
+            Lo strumento ti aiuta, inoltre, a **raccontare la loro situazione e i motivi che li spingono ad approcciarsi al servizio**, descrivendo i loro comportamenti in come utilizzano il servizio e i suoi touchpoint digitali: un ottimo punto di partenza per riprogettare il tuo servizio e migliorarne l’esperienza d’uso.
 
   # ///////////////////
   # RESOURCES
@@ -244,24 +239,14 @@ components:
       - simpleList : true
         headingLevel: 4
         listItems:
-          - label: Mappa degli attori #C
+          - label: Modello personas #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Uno schema per individuare e calssificare tutti gli attori coinvolti nel contesto d’uso del servizio #C
-            url: "https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing" #M
+            text: Una guida per delineare i profili delle persone che usano il tuo servizio #C
+            url: "https://docs.google.com/presentation/d/1KB6qaOKfxM0eYS-yYGIKapPshlwI4wKcsr6vprTJ3i4/edit?usp=sharing" #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-          - label: Mappa dell'ecosistema #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un diagramma per schematizzare le possibili relazioni e interdipendenze tra le figure interessate #C
-            url: "https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing" #M
-            actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
                 blank: true
