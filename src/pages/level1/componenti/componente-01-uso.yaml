@@ -1,0 +1,198 @@
+title: Uso e accessibilità
+sectionsEditorial:
+  - full: true
+    noSpace: true
+    title: Anteprima
+  - full: true
+    noSpace: false
+    title: Come usarlo al meglio
+    text: Eventuale lead paragraph
+    background: null
+    components:
+      - name: TextImageCta
+        title: Lorem ipsum
+        text: |
+          Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
+
+          ### Sottocapitoletto
+          Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
+
+          ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
+      - name: TextImageCta
+        text: |
+          ### Va bene (Do’s)
+          - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+          - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+          - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+          ### Non va bene (Dont’s)
+          - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+          - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+          - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+      - name: TextImageCta
+        title: Accessibilità
+
+      - name: Table
+        responsive: table-responsive-md
+        head:
+          - text: Caratteristica
+          - text: Stato
+          - text: Descrizione
+        rows:
+          - cols:
+            - text: Visivamente accessibile
+              scope: row
+            - tag:
+                label: Pronto
+                addonClasses: bg-success
+            - text: Uso e contrasto dei colori, leggibilità
+          - cols:
+            - text: Amichevole con lettori di schermo
+              scope: row
+            - tag:
+                label: Pronto
+                addonClasses: bg-success
+            - text: Struttura titolazioni, etichette e testi alternativi
+          - cols:
+            - text: Navigabile
+              scope: row
+            - tag:
+                label: In revisione
+                addonClasses: bg-warning
+            - text: Focus, struttura, navigazione da tastiera o altri device
+          - cols:
+            - text: Comprensibile
+              scope: row
+            - tag:
+                label: Da rivedere
+                addonClasses: bg-danger
+            - text: Comprensibile, prevedibile, gestione semplice dell’errore
+
+      - name: TextImageCta
+        text: |
+          Contenuto di sezione, ci immaginiamo due o tre paragrafi con evidenze di cose a cui stare attenti e/o implementazioni particolari da fare (eg. ordine heading a seconda di dove lo usi e interazioni da tastiera, custom o meno).
+
+          Contenuto di sezione, ci immaginiamo due o tre paragrafi con evidenze di cose a cui stare attenti e/o implementazioni particolari da fare (eg. ordine heading a seconda di dove lo usi e interazioni da tastiera, custom o meno).
+
+          ### Etichette
+          - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+          - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+
+          ### Interazioni da tastiera
+          - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+          - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+      - name: TextImageCta
+        text: |
+          Contenuto di sezione, da considerare un lorem ipsum segnaposto, ricordiamoci che questa tabella per forze di cose è responsive, scorre su mobile destra<>sinistra il resto è testo finto.
+        ctas:
+        - label: Esplora il changelog completo
+          url: "#"
+          blank: true
+  - full: true
+    noSpace: false
+    title: Stato del componente
+    id: ComponentStatus
+    text: Eventuale sottotitolo lead
+    background: null
+    components:
+      - name: Table
+        responsive: table-responsive-md
+        head:
+          - text: UI Kit
+          - text: Bootstrap Italia
+          - text: React
+          - text: Angular
+          - text: Vue
+        rows:
+          - cols:
+            - addonClasses: border-bottom-2
+              tag:
+                label: Pronto
+                addonClasses: bg-success
+            - addonClasses: border-bottom-2
+              tag:
+                label: Pronto
+                addonClasses: bg-success
+            - addonClasses: border-bottom-2
+              tag:
+                label: Da rivedere
+                addonClasses: bg-warning
+            - addonClasses: border-bottom-2
+              tag:
+                label: Non presente
+                addonClasses: neutral-2-bg text-muted
+            - addonClasses: border-bottom-2
+              tag:
+                label: Non presente
+                addonClasses: neutral-2-bg text-muted
+          - cols:
+            - addonClasses: border-bottom-0
+              simpleCta :
+                label: Figma
+                url: "#"
+                screenReaderText: Apri lo UI Kit
+                icon:
+                  icon: sprites.svg#it-external-link
+                  size: sm
+            - addonClasses: border-bottom-0
+              simpleCta :
+                label: Documentazione
+                url: "#"
+                screenReaderText: Apri lo UI Kit
+                icon:
+                  icon: sprites.svg#it-external-link
+                  size: sm
+            - addonClasses: border-bottom-0
+              simpleCta :
+                label: Documentazione
+                url: "#"
+                screenReaderText: Apri lo UI Kit
+                icon:
+                  icon: sprites.svg#it-external-link
+                  size: sm
+            - addonClasses: border-bottom-0
+              text: null
+            - addonClasses: border-bottom-0
+              text: null
+          - cols:
+            - simpleCta :
+                label: Repository
+                url: "#"
+                screenReaderText: Apri lo UI Kit
+                icon:
+                  icon: sprites.svg#it-github
+                  size: sm
+            - simpleCta :
+                label: Repository
+                url: "#"
+                screenReaderText: Apri lo UI Kit
+                icon:
+                  icon: sprites.svg#it-github
+                  size: sm
+            - simpleCta :
+                label: Repository
+                url: "#"
+                screenReaderText: Apri lo UI Kit
+                icon:
+                  icon: sprites.svg#it-github
+                  size: sm
+            - text: null
+            - text: null
+
+      - name: TextImageCta
+        text: |
+          Contenuto di sezione, da considerare un lorem ipsum segnaposto, ricordiamoci che questa tabella per forze di cose è responsive, scorre su mobile destra<>sinistra il resto è testo finto.
+        ctas:
+          - label: Esplora il changelog completo
+            url: "#"
+            blank: true
+  - full: true
+    noSpace: true
+    title: Altri componenti per
+    text: Eventuale lead paragraph
+    background: null
+    components:
+      - name: TextImageCta
+        text: |
+          Contenuto di sezione, ragionare se qui basterebbero le card.
