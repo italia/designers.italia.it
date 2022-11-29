@@ -6,14 +6,14 @@ import Pagedata from "./hero.yaml"
 
 const HeroPage = () => {
 	return(
-		<Template Pagedata={Pagedata}>
-			{ Pagedata.components.heros.map((hero,index) => {
-          return(
-            <Hero key={"hero-"+index} {...hero}/>
-          )
-        })}
-        <LastUpdate {...Pagedata.components.lastUpdate}/>
-		</Template>
+		// <Template Pagedata={Pagedata}> // XXX disable to use breadcrumb plugin, unavaible on test-components
+		// 	{ Pagedata.components.heros.map((hero,index) => {
+    //       return(
+    //         <Hero key={"hero-"+index} {...hero}/>
+    //       )
+    //     })}
+    //     <LastUpdate {...Pagedata.components.lastUpdate}/>
+		// </Template>
 	)
 }
 
