@@ -1,6 +1,6 @@
 import * as React from "react"
-import Template from "../../../../templates/tmpl-level-4"
-import {Seo} from "../../../../components/seo/seo"
+import Template from "../../../templates/tmpl-level-3"
+import {Seo} from "../../../components/seo/seo"
 
 import Pagedata from "./sviluppo-interfaccia.yaml"
 
