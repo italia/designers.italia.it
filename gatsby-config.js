@@ -13,6 +13,20 @@ module.exports = {
     themeColor: "#0066cc"
   },
   plugins: [
+    { 
+      resolve:`gatsby-plugin-breadcrumb`,
+      options: {
+        useAutoGen: true,
+        autoGenHomeLabel: `Inizio`,
+        exclude: [
+          `**/dev-404-page/**`,
+          `**/404/**`,
+          `**/404.html`,
+          `**/offline-plugin-app-shell-fallback/**`
+        ],
+        trailingSlashes: true,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {
