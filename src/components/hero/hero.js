@@ -16,6 +16,7 @@ const Hero =({
 	tag,
 	background,
 	title,
+  titleTag,
   headingLevel,
 	subtitle,
 	pretext,
@@ -79,7 +80,7 @@ const Hero =({
                 <div className={rowStyle}>
                   <div className={columnStyle}>
                     <div className="texts px-3 px-lg-0 py-3 pb-lg-5">
-                      <HLevel className="title">{title}</HLevel>
+                      <HLevel className="title">{title}{titleTag && <Tag {...titleTag}></Tag>}</HLevel>
                       <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
                       {tag && <Tag {...tag}></Tag>}
                       <div className="bottom-text">

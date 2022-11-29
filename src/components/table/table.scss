@@ -2,13 +2,22 @@
   font-size: 0.8888888888888888rem;
   > :not(:first-child) {
     border-bottom-color: #C5C7C9;
-    border-bottom-width: 1px;
     border-top: none;
+  }
+  thead {
+    border-style: none;
+    th {
+      border-bottom-width: 2px;
+      border-bottom-color: #C5C7C9;
+    }
   }
   th,
   td {
     padding-top: 16px;
     padding-bottom: 16px;
+    &.border-bottom-2 {
+      border-bottom-width: 2px;
+    }
   }
   tr {
     th,

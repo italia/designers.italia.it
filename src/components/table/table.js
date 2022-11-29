@@ -5,8 +5,13 @@ import "./table.scss"
 
 const Table = ({
   head,
-  rows
+  rows,
+  addonClasses,
+  responsive
 }) => {
+
+  let tableClasses = "table mb-4"
+    + `${addonClasses ? ' '+addonClasses : ''}`
 
   let headItems
   let rowItems
@@ -33,8 +38,9 @@ const Table = ({
               CellType = `td`
               CellScope = null
             }
+
             return(
-              <CellType scope={CellScope} key={"td-"+index}>
+              <CellType scope={CellScope} key={"td-"+index} className={tdItem.addonClasses}>
                 { tdItem.text }
                 { tdItem.tag && <Tag {...tdItem.tag}/>}
                 { tdItem.simpleCta && <SimpleCta {...tdItem.simpleCta} />}
@@ -47,16 +53,18 @@ const Table = ({
   }
 
   return (
-    <table className="table mb-4">
-      { headItems && <thead>
-        <tr>
-          {headItems}
-        </tr>
-      </thead> }
-      <tbody>
-        {rowItems}
-      </tbody>
-    </table>
+    <div className={responsive}>
+      <table className={tableClasses}>
+        { headItems && <thead>
+          <tr>
+            {headItems}
+          </tr>
+        </thead> }
+        <tbody>
+          {rowItems}
+        </tbody>
+      </table>
+    </div>
   )
 }
 

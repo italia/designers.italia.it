@@ -21,7 +21,8 @@ const SectionEditorial = ({
   background,
   components,
   menu,
-  noSpace
+  noSpace,
+  id
 }) => {
 
   const SwitchComponents = {
@@ -71,7 +72,7 @@ const SectionEditorial = ({
   + `${background==="dark" ? ' text-white' : ''}`
 
   return(
-    <section className={styles}>
+    <section className={styles} aria-describedby={id}>
         <div className={container}>
           <div className={row}>
           {menu &&
@@ -94,7 +95,7 @@ const SectionEditorial = ({
             }
             <div className={grid}>
               <div className="px-3 p-md-0">
-                {title && <HLevel className={text ? "mb-1" : "mb-0"}>{title}</HLevel>}
+                {title && <HLevel className={text ? "mb-1" : "mb-0"} id={id}>{title}</HLevel>}
                 {text &&
                   <div className="text-container mb-5">
                     <ReactMarkdown>{text}</ReactMarkdown>
