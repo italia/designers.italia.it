@@ -18,12 +18,12 @@
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Analisi del contesto - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : "Identifica i principali elementi che compongono il servizio e le loro connessioni." #C
+  name: Esperienza - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : "Analizza l’esperienza d’uso attuale del tuo servizio digitale e riprogettalo rendendolo migliore per le persone." #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/analisi-del-contesto/ #M
+  pathname: /risorse-per-progettare/comprendere/esperienza-utente/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -115,10 +115,10 @@ components:
         - label : Comprendere
           url: ../
           active: false
-        - label : Analisi del contesto
+        - label : Esperienza utente
           active: true
-    title: Analisi del contesto #C
-    subtitle: "Identifica i principali elementi che compongono il servizio e le loro connessioni" #C
+    title: Esperienza utente #C
+    subtitle: "Analizza l’esperienza d’uso attuale del tuo servizio digitale e riprogettalo rendendolo migliore per le persone" #C
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
@@ -129,7 +129,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Analizzare il contesto significa **conoscere i fattori che influenzano la fruizione del servizio.** Con gli strumenti di questo kit hai il **vantaggio di poter analizzare in modo strutturato** l’ambito del servizio che stai progettando. 
+      Grazie alle risorse del kit, potrai **definire i profili delle persone che useranno il servizio (personas)** e **mappare l'esperienza d'uso attuale del tuo servizio digitale**, per poi riprogettarlo rendendolo più adeguato alle loro necessità. 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     share:
@@ -184,7 +184,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Capire il contesto d’uso del servizio #C
+            label: Progettare l'interazione delle persone con il servizio #C
       tagsLabel : Parliamo di
       color: secondary
       icon:
@@ -192,11 +192,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Analisi del contesto
+        - label: Esperienza utente
           url: "#"
           color: primary
           size: lg
-        - label: Progettazioni servizi
+        - label: User journey
+          url: "#"
+          color: primary
+          size: lg
+        - label: Personas
           url: "#"
           color: primary
           size: lg
@@ -215,8 +219,15 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "schematizza-contesto-uso/"
-              label: Schematizza il contesto d'uso #C
+            - url: "definisci-i-profili-delle-persone/"
+              label: Definisci i profili delle persone #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "analizza-l-esperienza-d-uso-attuale/"
+              label: Analizza l'esperienza d'uso attuale #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -242,16 +253,22 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            Il kit di analisi del contesto ti consente di **ottenere una panoramica dei fattori e delle variabili** che influenzano l'erogazione e la fruizione di un servizio digitale, aiutandoti a **individuare gli obiettivi e il perimetro del progetto.** Potrai, così, impostare in maniera ragionata le successive fasi di ricerca e  concettualizzazione.
-            Fra le risorse del kit hai a disposizione una serie di strumenti utili per analizzare l’ambito e le circostanze in cui la soluzione progettuale dovrà collocarsi e successivamente evolvere.
+            **Comprendere lo stato attuale del tuo servizio digitale** e come le persone lo percepiscono è il punto di partenza fondamentale per migliorarlo.
+            I servizi rivolti a cittadine e cittadini e quelli interni alla Pubblica Amministrazione devono essere analizzati e progettati in modo da offrire **esperienze digitali di qualità ed efficienti.**
+            L’obiettivo comune è **garantire che il servizio funzioni in modo soddisfacente** Per raggiungerlo puoi avvalerti delle risorse dedicate del kit.
+            Lo strumento personas serve a raccontare le diverse tipologie di persona che utilizzano un servizio, definite sulla base dei dati quantitativi e qualitativi della ricerca.
+            Le personas sono anche un ottimo punto di partenza per mappare:
+            - gli **user journey as-is**, che raccontano come avviene servizio allo stato attuale;
+            - **gli user journey to-be**, che raccontano come sarà il futuro servizio digitale e sono utili soprattutto in fase di progettazione.
+            Lo strumento di **mappatura dell’esperienza dell’utente**, o **user journey**, sintetizza tutte le interazioni delle persone attraverso i diversi touchpoint messi loro a disposizione (sito, app, sportello/punto vendita, ecc.) per raggiungere un determinato obiettivo.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
           text: | #C
-            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come individuare tutte le variabili e a gestire la complessità del progetto, strutturando il servizio in modo che sia usabile ed efficace per l’utente, e allo stesso tempo, efficiente per gli operatori della Pubblica Amministrazione.
+            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come mappare l’esperienza d’uso di un servizio esistente (as-is) e a riprogettare la sua evoluzione (to-be), comprendendo le caratteristiche dell'utente con risorse operative dedicate quali personas e user journey.
           ctas:
-          - label: Vai all'argomento "Progettazione di servizi" #C
+          - label: Vai all’argomento “La progettazione di servizi al cittadino”" #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -273,7 +290,7 @@ components:
   highlightCards:
     id: HC1
     title: Le attività di questo kit di design #C
-    text: Esplora le attività di questo kit di design per schematizzare il contesto d’uso del servizio #C
+    text: Esplora le attività di questo kit di design per definire le personas del servizio e analizzare l’esperienza d’uso #C
     col4: false
     nospace: false
 
@@ -281,11 +298,11 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Schematizza il contesto d'uso #C
+      - title: Definisci le personas #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "schematizza-il-contesto-d-uso-di-un-servizio" #M
+        url: "schematizza-il-contest-d-uso-di-un-servizio" #M
         text: | #C
           Identifica le figure con cui l’utente potrebbe interagire e comprendi l’impatto che potrebbero avere sia sul progetto che sul cittadino. Inoltre, puoi schematizzare le relazioni tra attori e touchpoint coinvolti.
         tag:
