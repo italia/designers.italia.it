@@ -19,11 +19,11 @@
 # ————————————————————————————————————————————
 seo:
   name: Test di usabilità - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : "Un kit di Designers Italia che ti permette di capire come osservare i comportamenti degli utenti partendo dai dati di utilizzo del servizio" #C
+  description : "Un kit di Designers Italia che ti permette di capire come migliorare un servizio digitale osservando le interazioni degli utenti" #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/validare/web-analytics/ #M
+  pathname: /risorse-per-progettare/validare/test-di-usabilita/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -115,10 +115,10 @@ components:
         - label : Validare
           url: ../
           active: false
-        - label : Web analytics
+        - label : Test di usabilità
           active: true
-    title: Web analytics #C
-    subtitle: "Osserva i comportamenti degli utenti partendo dai dati di utilizzo del servizio" #C
+    title: Test di usabilità #C
+    subtitle: "Migliora un servizio digitale osservando le interazioni degli utenti" #C
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
@@ -129,7 +129,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponde in maniera adeguata ai bisogni degli utenti. Questo kit ha la finalità di aiutarti a capire **come usare la web analytics per comprendere la maniera in cui i tuoi utenti fruiscono i servizi**.  
+      I test di usabilità ti permettono di **verificare l’usabilità e l’efficacia di un servizio digitale e di informare eventuali modifiche di miglioramento**. Le risorse di questo kit ti aiutano a pianificare gli obiettivi e le attività dei test, a condurli e ad analizzare i risultati.  
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     share:
@@ -158,7 +158,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Validare #C
-            url: "../" #M
+            url: "validare/" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -192,11 +192,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Data driven design
+        - label: Usabilità
           url: "#"
           color: primary
           size: lg
-        - label: Analytics
+        - label: Ricerca utente
+          url: "#"
+          color: primary
+          size: lg
+        - label: Questionari
           url: "#"
           color: primary
           size: lg
@@ -215,15 +219,22 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "monitora-la-tua-soluzione-digitale/"
-              label: Monitora la tua soluzione digitale #C
+            - url: "pianifica-i-test/"
+              label: Pianifica i test #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
-            - url: "crea-e-condividi-una-dashboard-dati/"
-              label: Crea e condividi una dashboard dati #C
+            - url: "prepara-le-attivita-e-svolgi-i-test/"
+              label: Prepara le attività e svolgi i test #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+             - url: "rielabora-e-condividi-i-risultati/"
+              label: Rielabora e condividi i risultati #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -238,7 +249,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: A cosa serve #C
+    - title: "A cosa serve il kit dedicato ai test di usabilità" #C
       menu: false
       centered: true
       bgColor: null  
@@ -249,18 +260,25 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            L’analisi dei dati di traffico web (web analytics) ha la finalità di ottimizzare l’usabilità di siti e servizi sulla base di dati: le piattaforme per raccogliere informazioni sul comportamento degli utenti consentono di isolare preziosi dati qualitativi e quantitativi su come un servizio viene fruito. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, consentono poi di orientare le decisioni che riguardano design e re-design dei servizi, in ottica di progettazione basata sui dati (data driven design).
+            "Questo kit ti fornisce tutti gli strumenti necessari per la preparazione, conduzione e l’analisi dei risultati di un test di usabilità.
             
-            Questo kit ha inoltre l’obiettivo di mostrarti come i dati possono aiutarti a indirizzare le azioni di miglioramento ed evoluzione delle performance, utilizzando in primo luogo piattaforme di web analytics open source. 
+            I test di usabilità sono delle sessioni di **osservazione diretta dell’interazione tra un utente e un servizio digitale**. I test vengono svolti assegnando all’utente uno o più attività da svolgere e analizzando il suo comportamento nel portarli a termine. 
+            I test servono a:
+            *capire come **aiutare i cittadini a trovare facilmente ciò che cercano**;
+            *ridurre gli errori e **aumentare la soddisfazione** di fruizione di un servizio;
+            *evitare la produzione di servizi inadeguati e **aumentare la fiducia dei cittadini nei confronti dell’amministrazione**.
+            
+            Puoi svolgere dei test di usabilità con gli utenti durante la fase di sviluppo del servizio, per verificare il loro comportamento e apportare eventuali modifiche in corso d’opera, oppure quando un servizio digitale è già in uso.
+            I test si basano sul Protocollo eGLU LG, uno strumento pensato per coloro che lavorano nella gestione dei siti istituzionali e tematici di tutte le pubbliche amministrazioni."
 
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
           text: | #C
-            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni sulla web analytics e su come una lettura sistematica dei dati può migliorare la comprensione dei comportamenti online degli utenti e quindi migliorare la qualità dei servizi digitali.
+            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni sui criteri di valutazione dell’usabilità di un servizio, lo svolgimento dei test e il Protocollo eGLU.
           ctas:
-          - label: Vai all'argomento "Introduzione alla web analytics" #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html" #M
+          - label: Vai all'argomento "Test di usabilità" #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/test-usabilita.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -281,7 +299,7 @@ components:
   highlightCards:
     id: HC1
     title: Le attività di questo kit di design #C
-    text: Esplora le attività di questo kit di design per migliorare l’efficienza e l’efficacia di siti e servizi digitali sulla base dei dati di web analytics #C
+    text: Esplora le attività di questo kit di design per svolgere i test di usabilità, dalla pianificazione all’elaborazione dei risultati #C
     col4: false
     nospace: false
 
@@ -289,13 +307,13 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Monitora la tua soluzione digitale #C
+      - title: Pianifica i test #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "#" #M
         text: | #C
-          Esplora alcune fra le principali soluzioni software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali.
+          Definisci gli obiettivi dei test, le attività da svolgere e il numero e la tipologia dei partecipanti.
         tag:
           label: Attività del kit #C
         share: #AUTO
@@ -311,13 +329,35 @@ components:
             isShare: true
             
       # CARD CHILDREN ACTION
-      - title: Crea e condividi una dashboard di dati #C
+      - title: Prepara le attività e svolgi i test #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "#" #M
         text: | #C
-          Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source.
+          Massimizza l’utilità dei test preparando un ambiente idoneo e interagendo correttamente con i partecipanti.
+        tag:
+          label: Attività del kit #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+      # CARD CHILDREN ACTION
+      - title: Rielabora e condividi i risultati #C
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        url: "#" #M
+        text: | #C
+          Schematizza, categorizza e classifica le informazioni raccolte per individuare eventuali modifiche di miglioramento.
         tag:
           label: Attività del kit #C
         share: #AUTO
