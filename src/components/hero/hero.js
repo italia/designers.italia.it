@@ -11,7 +11,7 @@ import Kangaroo from "../kangaroo/kangaroo"
 
 const Hero =({
   pageContext, 
-  pageTitle,
+  name,
   centered,
   column,
 	// breadcrumbs,
@@ -72,7 +72,7 @@ const Hero =({
           <div className="row">
             <div className="col-12">
               <div className={breadcrumbsStyle}>
-                <Breadcrumbs /*{...breadcrumbs}*/ pageTitle={pageTitle} pageContext={pageContext}></Breadcrumbs>
+                <Breadcrumbs pageContext={pageContext} title={name} ></Breadcrumbs>
               </div>
               <div className="hero-main">
                 <div className={rowStyle}>
