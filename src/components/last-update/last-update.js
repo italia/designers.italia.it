@@ -11,15 +11,14 @@ const LastUpdate = ({
   column
 }) => {
 
-  // XXX temporary for fast prototyping
-  let editGithubUrl = "https://github.com/italia/designers.italia.it" // < fallback if not trackable via pathname...
   const branch = 'next'
+  let editGithubUrl = "https://github.com/italia/designers.italia.it/tree/" + branch + "/src/pages/"  // < fallback if not trackable via pathname let's go to repo root...
   if (pathname) {
     let pathSplitted = pathname.split('/')
     pathSplitted.pop()
     let path = pathSplitted.join('/')
     if (path === "") path="index"
-    editGithubUrl = "https://github.com/italia/designers.italia.it/blob/" + branch + "/src/pages/" + path + ".yaml"
+    editGithubUrl += path + ".yaml"
   }
   
   let columnStyle = 'col-12'
