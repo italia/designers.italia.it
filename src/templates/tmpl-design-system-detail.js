@@ -16,8 +16,6 @@ import Feedback from "../components/feedback/feedback"
 
 import NavSidebar from "../components/nav-sidebar/nav-sidebar"
 import Hero from "../components/hero/hero"
-import SectionEditorial from "../components/section-editorial/section-editorial"
-import FilterCards from "../components/filter-cards/filter-cards"
 
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
@@ -49,24 +47,13 @@ const Template = ({children,Pagedata}) => {
             <div className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero}></Hero>}
 
-              {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
-                return(
-                  <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
-                )
-              })}
+              {children}
 
-              { Pagedata.components.filterCards && <FilterCards {...Pagedata.components.filterCards}/>}
-
-              {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => {
-                return(
-                  <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
-                )
-              })}
               {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
             </div>
           </div>
         </div>
-        {children}
+
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
