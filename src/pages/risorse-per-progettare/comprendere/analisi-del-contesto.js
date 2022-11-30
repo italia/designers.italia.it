@@ -4,9 +4,9 @@ import {Seo} from "../../../components/seo/seo"
 
 import Pagedata from "./analisi-del-contesto.yaml"
 
-const Level3 = () => {
+const Level3 = ({ pageContext }) => {
   return(
-    <Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext}>
       {/* place extra components / HTML here */}
     </Template>
   )
