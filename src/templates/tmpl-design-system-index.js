@@ -18,7 +18,6 @@ import NavSidebar from "../components/nav-sidebar/nav-sidebar"
 import Hero from "../components/hero/hero"
 import SectionEditorial from "../components/section-editorial/section-editorial"
 import FilterCards from "../components/filter-cards/filter-cards"
-import Tab from "../components/tab/tab"
 
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
@@ -49,8 +48,6 @@ const Template = ({children,Pagedata}) => {
             </div>
             <div className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero}></Hero>}
-
-              <Tab/>
 
               {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
                 return(
