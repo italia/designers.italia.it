@@ -63,7 +63,7 @@ const Highlight = (
 
   let ratioClass
   if (fullImg) {
-    ratioClass = "img-container"
+    ratioClass = "img-container full"
   }else{
     ratioClass = "img-container ratio ratio-16x9"
   }
