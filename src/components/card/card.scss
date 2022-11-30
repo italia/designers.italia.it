@@ -126,7 +126,11 @@
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-
+  .chip-container {
+    .chip  {
+      margin-top: 4px;
+    }
+  }
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
