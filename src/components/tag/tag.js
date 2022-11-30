@@ -5,7 +5,8 @@ const Tag = ({
 	url,
 	children,
 	label,
-  addonClasses
+  addonClasses,
+  screenReaderText
 }) => {
 	if (label) {
 		children = label
@@ -14,7 +15,8 @@ const Tag = ({
     + `${addonClasses ? ' '+addonClasses : ''}`
 	return(
 		<a href={url} className={styles}>
-			{children}
+			<span className="visually-hidden">{screenReaderText}</span>
+      {children}
 		</a>
 	)
 }
