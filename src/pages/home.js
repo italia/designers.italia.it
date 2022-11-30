@@ -3,11 +3,16 @@ import Template from "../templates/tmpl-home"
 import {Seo} from "../components/seo/seo"
 import Pagedata from "./home.yaml"
 import Highlight from "../components/highlight/highlight"
+import ContentCollapse from "../components/content-collapse/contentCollapse"
 
 const Home = () =>{
   return(
     <Template Pagedata={Pagedata}>
-      <Highlight {...Pagedata.components.hero}></Highlight>
+      <Highlight {...Pagedata.components.hero}>
+        {Pagedata.components.hero.moreText && <ContentCollapse label={Pagedata.components.hero.moreButton} labelClose={Pagedata.components.hero.moreButtonClose}>
+          {Pagedata.components.hero.moreText}
+        </ContentCollapse>}
+      </Highlight>
     </Template>
   )
 }
