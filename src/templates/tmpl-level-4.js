@@ -26,7 +26,7 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 import Kangaroo from "../components/kangaroo/kangaroo"
 
-const Template = ({children,Pagedata}) => {
+const Template = ({children,Pagedata,pageContext}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
@@ -39,7 +39,7 @@ const Template = ({children,Pagedata}) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        <Hero {...Pagedata.components.hero}></Hero>
+        <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>
         {Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}
         {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
           return(
