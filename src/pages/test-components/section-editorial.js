@@ -6,7 +6,7 @@ import SectionEditorial from "../../components/section-editorial/section-editori
 
 const SectionEditorialPage = () => {
 	return (
-	  <Template>
+	  <Template Pagedata={Pagedata}>
       <SectionEditorial {...Pagedata.components.sectionEditorial}></SectionEditorial>
       <SectionEditorial {...Pagedata.components.sectionEditorialMenu}></SectionEditorial>
       <SectionEditorial {...Pagedata.components.sectionEditorial2}></SectionEditorial>

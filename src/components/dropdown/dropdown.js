@@ -12,10 +12,9 @@ const Dropdown = ({
 	children,
 	button,
 	customStyle
-	
 }) => {
-	
-	const styles = "dropdown" 
+
+	const styles = "dropdown"
 		+ `${dropUp ? ' dropup' : ''}`
 		+ `${dropEnd ? ' dropend' : ''}`
 		+ `${dropStart ? ' dropstart' : ''}`

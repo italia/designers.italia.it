@@ -18,12 +18,12 @@
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Organizzare - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  name: Comprendere - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : "Comprendi lo scenario d'uso del servizio: studia il contesto di fruizione con l'analisi e la ricerca utente." #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/organizzare/ #M
+  pathname: /risorse-per-progettare/comprendere/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -97,15 +97,15 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Risorse per progettare 
           active: false
-          url: /level1/
-        - label : Level2
+          url: /risorse-per-progettare/
+        - label : Comprendere
           active: true
-    title: Level 2 #C
-    subtitle: Subtitle #C
+    title: Comprendere #C
+    subtitle: "Comprendi lo scenario d'uso del servizio: studia il contesto di fruizione con l'analisi e la ricerca utente" #C
     tag:
-        label: tag  #C
+        label: Fase di progettazione  #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -113,7 +113,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      Lorem **ipsum** 
+      Con la fase di comprensione, **acquisisci consapevolezza del contesto** in cui si colloca il servizio digitale, **esplorando i processi e gli attori coinvolti per progettare l’esperienza d’uso** dal punto di vista dell’utente. Grazie ai kit dedicati puoi **identificare figure ed elementi** coinvolti nell’erogazione del servizio pubblico, **organizzare e condurre una ricerca utente, definire gli utenti tipo** e il modo in cui si relazionano al servizio. 
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -141,15 +141,15 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Argomento
+        - label: Analisi del contesto
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Interviste utente
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Esperienza utente
           url: "#"
           color: primary
           size: lg
@@ -159,7 +159,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il level 2 #C
+          label: Scopri i kit di questa fase #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -168,8 +168,29 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "level3/"
-              label: Level 3 #C
+            - url: "analisi-del-contesto/"
+              label: Analisi del contesto #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "interviste-soggetti-coinvolti/"
+              label: Interviste soggetti coinvolti #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "esperienza-utente/"
+              label: Esperienza utente #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "questionario-online/"
+              label: Questionario online #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -179,163 +200,29 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial:
-
-    # —
-    # IMG FULL COVER
-    # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      bgColor: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
-
-    # —
-    # EDITORIAL #C #I
-    # —   
-    - title: Lorem ipsum h2
-      bgColor: null
-      menu: false
-      centered: false
-      text: | #C
-        Lorem **ipsum**
-      components: 
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+  # sectionsEditorial:
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Esplora lorem ipsum #C
-    text: Lorem ipsum #C
+    title: Esplora e usa i kit di design #C
+    text: #C
     col4: false
-    nospace: true
+    nospace: false
 
     # CARDS
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+      - title: Analisi del contesto #C
+        text: "Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze" #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "analisi-del-contesto" #M
         tag:
-          label: Tag #C
+          label: Kit di design #C
         share: #AUTO
           btnId: shareButtonCard1
           button:
@@ -347,14 +234,14 @@ components:
           list:
             isShare: true
       
-      # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+       # CARD CHILDREN
+      - title: Interviste soggetti coinvolti #C
+        text: "Intraprendi conversazioni costruttive con tutti gli attori coinvolti nel contesto di servizio" #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "interviste-soggetti-coinvolti" #M
         tag:
-          label: Tag #C
+          label: Kit di design #C
         share: #AUTO
           btnId: shareButtonCard1
           button:
@@ -366,14 +253,33 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+        # CARD CHILDREN
+      - title: Esperienza utente #C
+        text: "Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale" #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "esperienza-utente" #M
         tag:
-          label: Tag #C
+          label: Kit di design #C
+        share: #AUTO
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+        # CARD CHILDREN
+      - title: Questionario online #C
+        text: "Svolgi un’indagine per raccogliere informazioni utili sul punto di vista degli utenti" #C
+        titleSmall: false
+        fullHeight: true
+        url: "questionario-online" #M
+        tag:
+          label: Kit di design #C
         share: #AUTO
           btnId: shareButtonCard1
           button:
@@ -391,232 +297,39 @@ components:
   # ///////////////////
   sectionsEditorial2 :
   
-  # —
+    # —
+    # IMG FULL COVER
+    # —
+    - menu: false #TOGGLE RIGHT SECTION INDEX
+      bgColor: null
+      full: true
+      noSpace: true
+      title: false
+      text: false
+      components:
+        # IMG
+        - name: ImageIcons
+          image: /images/image-icons-fullwidth.jpg #I
+          alt: Descrizione immagine grande #C
+  
+    # —
     # EDITORIAL #C #I
-    # —   
-    - title: Lorem ipsum h2
+    # — 
+    - title: Adottare un approccio utente-centrico
       bgColor: null
       menu: false
       centered: false
       text: | #C
-        Lorem **ipsum**
+        Progettare servizi pubblici a misura di persona
       components: 
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Lorem ipsum h3 #C
+          title: Comprendere le necessità delle persone per progettare servizi pubblici digitali migliori #C
           text: | #C
-            Lorem **ipsum**.
+            **Capire, studiare e approfondire i comportamenti, le necessità, i desideri e le  aspettative di un utente** rispetto alla fruizione di un servizio pubblico rende più facile creare **soluzioni che riducono le disuguaglianze e sono adatte a tutte le persone.**
 
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
+            Con questo approccio, chi progetta servizi pubblici entra in contatto diretto con i destinatari, e può **identificare criticità e opportunità** per creare interfacce accessibili e conformi ai criteri di usabilità.
 
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    # —
-    # EDITORIAL #C #I
-    # —   
-    - menu: false
-      centered: true
-      bgColor: null
-      title: Lorem ipsum #C
-      text: | #C
-        Lorem **ipsum** 
-      components:
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: ciao
-          text: |
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    # —
-    # EDITORIAL #C #I
-    # — 
-    - menu: false
-      centered: true
-      bgColor: light
-      title: Lorem ipsum #C
-      text: | #C
-        Lorem **ipsum**
-      components:
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/ItForum.svg
-          alt: Alt lorem ipsum #C
-          specular: true
-          #title: #C
-          text: | #C
-            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore.
-          ctas:
-          - label: Vai su Forum Italia #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              size: sm
-              hidden: true
-              addonClasses: ms-2
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/Slack.svg
-          alt: Alt lorem ipsum #C
-          specular: true
-          #title: #C
-          text: | #C
-            Dialoga e collabora in tempo reale con i designer e i maintainer sui canali dedicati al #design.
-          ctas:
-          - label: "Entra nei canali #design" #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              size: sm
-              hidden: true
-              addonClasses: ms-2
-        - name: TextImageCta
-          image: /images/Github.svg
-          alt: Alt lorem ipsum #C
-          specular: true
-          #title: #C
-          text: | #C
-            Disegna e sviluppa con noi nuove soluzioni per i servizi digitali nazionali.
-          ctas:
-          - label: "Visita github.com/italia" #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              size: sm
-              hidden: true
-              addonClasses: ms-2
+            **Coinvolgere le persone** nelle fasi di progettazione del servizio è fondamentale per costruire il processo decisionale e successivamente validare i risultati ottenuti.
 
