@@ -3,11 +3,13 @@ import Template from "../templates/tmpl-home"
 import {Seo} from "../components/seo/seo"
 import Pagedata from "./home.yaml"
 import Highlight from "../components/highlight/highlight"
+import SearchMain from "../components/search-main/search-main"
 
 const Home = () =>{
   return(
     <Template Pagedata={Pagedata}>
-      <Highlight {...Pagedata.components.hero}></Highlight>
+      {Pagedata.components.hero && <Highlight {...Pagedata.components.hero}></Highlight>}
+      {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain}></SearchMain>}
     </Template>
   )
 }
