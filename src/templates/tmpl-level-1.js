@@ -26,7 +26,7 @@ import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const Template = ({children,Pagedata,pageContext,pageTitle}) => {
+const Template = ({children,Pagedata,pageContext}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
@@ -40,7 +40,7 @@ const Template = ({children,Pagedata,pageContext,pageTitle}) => {
       </Header>
       <main id="main">
 
-        { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} pageTitle={pageTitle}></Hero>}
+        { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
         { Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}/>}
         { Pagedata.components.titleText && <TitleText {...Pagedata.components.titleText}/>}
 
