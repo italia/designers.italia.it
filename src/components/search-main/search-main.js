@@ -1,7 +1,7 @@
 import * as React from "react"
 import ReactMarkdown from "react-markdown"
 import Button from "../button/button"
-
+import './search-main.scss'
 const SearchMain =({
   title,
   text,
@@ -14,32 +14,38 @@ const SearchMain =({
   suggest,
   background
 })=> {
+  let styles = 'search-main'
+	+ `${background ? ' bg-'+background : ''}`
   return (
-    <section className="search-main">
+    <section className={styles}>
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
-            <div className="search-main-content">
-              <div className="text-container">
+            <div className="search-main-content px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
+              <div className="text-container mb-5">
                 {title && <h2>{title}</h2>}
                 {text && <ReactMarkdown>{text}</ReactMarkdown>}
-                <div className="search-form">
-                  <form id={formId} action={formAction} method="post">
-                      <div className="d-flex align-items-center">
-                        <div class="form-group mb-0 flex-grow-1 me-4">
-                          <label className="active" for={inputId}>{label}</label>
-                          <input type="search" class="form-control" name={inputName} id={inputId}/>
-                        </div>
-                        <Button {...button}></Button>
+              </div>
+              <div className="search-form px-4 pb-4 mb-5">
+                <form id={formId} action={formAction} method="post">
+                    <div className="d-flex align-items-center">
+                      <div class="form-group mb-0 flex-grow-1 me-4">
+                        <label className="active" for={inputId}>{label}</label>
+                        <input type="search" class="form-control" name={inputName} id={inputId}/>
                       </div>
-                  </form>
-                </div>
-                <div className="suggest-wrapper">
-                  <h3>{suggest.title}</h3>
-                  {suggest.items && <div className="items-wrapper">
-
-                  </div>}
-                </div>
+                      <Button {...button}></Button>
+                    </div>
+                </form>
+              </div>
+              <div className="suggest-wrapper d-lg-flex">
+                <h3>{suggest.title}</h3>
+                {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5 mt-2">
+                  { suggest.items.map((item,index) => {
+                    return(
+                      <a className="me-4" key={"a"+index} href={item.url}>{item.label}</a>
+                    )
+                  })}
+                </div>}
               </div>
             </div>
           </div>

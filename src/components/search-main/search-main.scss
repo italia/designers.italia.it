@@ -1,6 +1,19 @@
 @import "../../scss/bootstrap-breakpoints";
 
-
+.search-main {
+  p {
+    font-size: 1.3333333333333333rem;
+  }
+  .search-form {
+    background: #FFF;
+    border: var(--search-main-border);
+    border-radius: var(--search-main-radius);
+    padding-top: var(--search-main-padding-top);
+  }
+  .form-group label {
+    text-transform: uppercase;
+  }
+}
 
 //Mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
@@ -18,7 +31,11 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-
+  .search-main {
+    h3 {
+      white-space: nowrap;
+    }
+  }
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
