@@ -18,12 +18,12 @@
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Comprendere - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : "Comprendi lo scenario d'uso del servizio: studia il contesto di fruizione con l'analisi e la ricerca utente." #C
+  name: Validare - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : "Valida la tua soluzione digitale: scopri come monitorare e valutare le performance di un sito o di un servizio" #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/ #M
+  pathname: /risorse-per-progettare/validare/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -100,10 +100,10 @@ components:
         - label : Risorse per progettare 
           active: false
           url: /risorse-per-progettare/
-        - label : Comprendere
+        - label : Validare
           active: true
-    title: Comprendere #C
-    subtitle: "Comprendi lo scenario d'uso del servizio: studia il contesto di fruizione con l'analisi e la ricerca utente" #C
+    title: Validare #C
+    subtitle: "Valida la tua soluzione digitale: scopri come monitorare e valutare le performance di un sito o di un servizio" #C
     tag:
         label: Fase di progettazione  #C
         addonClasses: mt-3 text-uppercase
@@ -113,7 +113,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      Con la fase di comprensione, **acquisisci consapevolezza del contesto** in cui si colloca il servizio digitale, **esplorando i processi e gli attori coinvolti per progettare l’esperienza d’uso** dal punto di vista dell’utente. Grazie ai kit dedicati puoi **identificare figure ed elementi** coinvolti nell’erogazione del servizio pubblico, **organizzare e condurre una ricerca utente, definire gli utenti tipo** e il modo in cui si relazionano al servizio. 
+      Con la fase di validazione **ottimizzi la tua soluzione digitale per iterazioni successive**, verificando le performance rispetto a standard condivisi di usabilità e accessibilità. I kit di questa fase ti aiutano a **condurre test con gli utenti e a monitorare con la web analytics** i principali indicatori di performance di un sito o di un servizio digitale.
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -141,15 +141,15 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Analisi del contesto
+        - label: Fasi di progettazione
           url: "#"
           color: primary
           size: lg
-        - label: Interviste utente
+        - label: Data driven design
           url: "#"
           color: primary
           size: lg
-        - label: Esperienza utente
+        - label: Analytics
           url: "#"
           color: primary
           size: lg
@@ -168,29 +168,15 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "analisi-del-contesto/"
-              label: Analisi del contesto #C
+            - url: "test-di-usabilita/"
+              label: Test di usabilità #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
-            - url: "interviste-soggetti-coinvolti/"
-              label: Interviste soggetti coinvolti #C
-              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
-            - url: "esperienza-utente/"
-              label: Esperienza utente #C
-              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
-            - url: "questionario-online/"
-              label: Questionario online #C
+            - url: "web-analytics/"
+              label: Web analytics #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -202,12 +188,13 @@ components:
   # ///////////////////
   # sectionsEditorial:
 
+
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Esplora e usa i kit di design #C
+    title: I kit di design di questa fase #C
     text: #C
     col4: false
     nospace: false
@@ -216,11 +203,30 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: Analisi del contesto #C
-        text: "Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze" #C
+      - title: Test di usabilità #C
+        text: "Rendi più usabile un servizio digitale osservando le interazioni degli utenti" #C
         titleSmall: false
         fullHeight: true
-        url: "analisi-del-contesto" #M
+        url: "test-di-usabilita/" #M
+        tag:
+          label: Kit di design #C
+        share: #AUTO
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+            
+      # CARD CHILDREN
+      - title: Web analytics #C
+        text: "Osserva e analizza  i comportamenti degli utenti partendo dai dati di utilizzo del servizio" #C
+        titleSmall: false
+        fullHeight: true
+        url: "web-analytics/" #M
         tag:
           label: Kit di design #C
         share: #AUTO
@@ -234,70 +240,12 @@ components:
           list:
             isShare: true
       
-       # CARD CHILDREN
-      - title: Interviste soggetti coinvolti #C
-        text: "Intraprendi conversazioni costruttive con tutti gli attori coinvolti nel contesto di servizio" #C
-        titleSmall: false
-        fullHeight: true
-        url: "interviste-soggetti-coinvolti" #M
-        tag:
-          label: Kit di design #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-        # CARD CHILDREN
-      - title: Esperienza utente #C
-        text: "Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale" #C
-        titleSmall: false
-        fullHeight: true
-        url: "esperienza-utente" #M
-        tag:
-          label: Kit di design #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-        # CARD CHILDREN
-      - title: Questionario online #C
-        text: "Svolgi un’indagine per raccogliere informazioni utili sul punto di vista degli utenti" #C
-        titleSmall: false
-        fullHeight: true
-        url: "questionario-online" #M
-        tag:
-          label: Kit di design #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
-  
-    # —
+
+   # —
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
@@ -312,24 +260,21 @@ components:
           image: /images/image-icons-fullwidth.jpg #I
           alt: Descrizione immagine grande #C
   
-    # —
+  # —
     # EDITORIAL #C #I
-    # — 
-    - title: Adottare un approccio utente-centrico
+    # —   
+    - title: Monitorare e valutare una soluzione digitale
       bgColor: null
       menu: false
       centered: false
       text: | #C
-        Progettare servizi pubblici a misura di persona
+        Ottimizza il design di siti e servizi in modo ciclico ed efficace
       components: 
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Comprendere le necessità delle persone per progettare servizi pubblici digitali migliori #C
+          title: Un processo iterativo di validazione #C
           text: | #C
-            **Capire, studiare e approfondire i comportamenti, le necessità, i desideri e le  aspettative di un utente** rispetto alla fruizione di un servizio pubblico rende più facile creare **soluzioni che riducono le disuguaglianze e sono adatte a tutte le persone.**
-
-            Con questo approccio, chi progetta servizi pubblici entra in contatto diretto con i destinatari, e può **identificare criticità e opportunità** per creare interfacce accessibili e conformi ai criteri di usabilità.
-
-            **Coinvolgere le persone** nelle fasi di progettazione del servizio è fondamentale per costruire il processo decisionale e successivamente validare i risultati ottenuti.
-
+            "I processi di design digitale prevedono cicli iterativi di validazione: ogni ciclo si intende concluso se la soluzione è stata monitorata e testata in modo diretto o indiretto con gli utenti finali. Attività di monitoraggio e validazione continua ti permettono di **capire quanto un sito o un servizio rispondono in maniera adeguata ed efficace ai bisogni del pubblico di riferimento**."
+            
+            "Si tratta quindi, oltre che di verificare la **conformità agli standard normativi (ad esempio di usabilità e accessibilità)**, di misurare in maniera qualitativa o quantitativa **il grado di efficienza e soddisfazione nell’utilizzo del sito o del servizio**, individuando allo stesso tempo potenziali aree di miglioramento."
