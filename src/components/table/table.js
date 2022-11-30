@@ -4,13 +4,14 @@ import SimpleCta from "../simple-cta/simple-cta"
 import "./table.scss"
 
 const Table = ({
+  title,
   head,
   rows,
   addonClasses,
   responsive
 }) => {
 
-  let tableClasses = "table mb-4"
+  let tableClasses = "table my-4"
     + `${addonClasses ? ' '+addonClasses : ''}`
 
   let headItems
@@ -54,6 +55,7 @@ const Table = ({
 
   return (
     <div className={responsive}>
+      {title && <h3 className="mt-4">{title}</h3>}
       <table className={tableClasses}>
         { headItems && <thead>
           <tr>
