@@ -2,6 +2,9 @@ import React from "react"
 import "./tab.scss"
 import SectionEditorial from "../section-editorial/section-editorial"
 
+import { Tab as TabBI } from "bootstrap-italia/dist/bootstrap-italia.esm"
+const tabDummy = TabBI //trick treeshaking
+
 const Tab = ({
   tab01,
   tab02,
