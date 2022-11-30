@@ -11,7 +11,7 @@ const LastUpdate = ({
   column
 }) => {
 
-  // XXX temporary for fast prototyping, we can do better :-) 
+  // XXX temporary for fast prototyping
   let editGithubUrl = "https://github.com/italia/designers.italia.it" // < fallback if not trackable via pathname...
   const branch = 'next'
   if (pathname) {
