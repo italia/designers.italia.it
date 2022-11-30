@@ -3,6 +3,7 @@ import Icon from "../icon/icon"
 import "./last-update.scss"
 
 const LastUpdate = ({
+  pathname,
   title,
   date,
   licence,
@@ -10,6 +11,17 @@ const LastUpdate = ({
   column
 }) => {
 
+  // XXX temporary for fast prototyping, we can do better :-) 
+  let editGithubUrl = "https://github.com/italia/designers.italia.it" // < fallback if not trackable via pathname...
+  const branch = 'next'
+  if (pathname) {
+    let pathSplitted = pathname.split('/')
+    pathSplitted.pop()
+    let path = pathSplitted.join('/')
+    if (path === "") path="index"
+    editGithubUrl = "https://github.com/italia/designers.italia.it/blob/" + branch + "/src/pages/" + path + ".yaml"
+  }
+  
   let columnStyle = 'col-12'
   + `${column ? '' : ' col-md-10 offset-md-1'}`
 
@@ -31,7 +43,7 @@ const LastUpdate = ({
             <p className="mb-0 px-3 px-lg-0">
               <small>
                 <a
-                  href={edit.url}
+                  href={editGithubUrl}
                   target={edit.blank ? "_blank" : undefined}
                   className="d-inline-block text-decoration-none">
                   <strong className="d-inline-block me-2">{edit.label}</strong><Icon {...edit.icon} />
