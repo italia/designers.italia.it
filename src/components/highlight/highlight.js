@@ -22,7 +22,9 @@ const Highlight = (
 		subtitle,
 		text,
 		buttons,
-		specular
+		specular,
+    textSanSerif,
+    fullImg,
 	}
 ) => {
 	let styles = 'highlight'
@@ -51,13 +53,28 @@ const Highlight = (
 		})
 	}
 
+  let textClass
+  if (textSanSerif) {
+    textClass = "h-text"
+  }else{
+    textClass = "h-text font-serif"
+  }
+
+  let ratioClass
+  if (fullImg) {
+    ratioClass = "img-container"
+  }else{
+    ratioClass = "img-container ratio ratio-16x9"
+  }
+
+
 	return (
 		<section className={styles} aria-labelledby={id}>
 			<div className="container-xxl">
 				<div className="row">
 					<div className="col-12">
 						<div className={classes}>
-              <div className="img-container ratio ratio-16x9">
+              <div className={ratioClass}>
                 {img &&<ImageResponsive className="main-image" src={img} alt={alt}/> }
 								{icon && <Icon {...icon}/>}
                 {overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
@@ -66,7 +83,7 @@ const Highlight = (
 								<HLevel id={id}>{title}</HLevel>
 								{subtitle && <p className="sub-title mb-4">{subtitle}</p>}
                 {numbers && <Numbers {...numbers}/>}
-								{text && <div className="h-text font-serif"><ReactMarkdown>{text}</ReactMarkdown></div>}
+								{text && <div className={textClass}><ReactMarkdown>{text}</ReactMarkdown></div>}
 								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
 							</div>
 						</div>
