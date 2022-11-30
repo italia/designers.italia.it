@@ -8,6 +8,7 @@ import ImageResponsive from "../image-responsive/image-responsive"
 const TextImageCta =({
   title,
   headingLevel,
+  lead,
   text,
   image,
   alt,
@@ -52,6 +53,7 @@ const TextImageCta =({
       }
       <div className={contentStyles}>
         {title && <HLevel className="h3 mb-3">{title}</HLevel>}
+        {lead && <p className="lead font-sans-serif">{lead}</p>}
         {text && <ReactMarkdown>{text}</ReactMarkdown>}
         {ctaItems && <div className="ctas mt-4 d-md-flex">{ctaItems}</div>}
       </div>

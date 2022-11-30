@@ -57,8 +57,27 @@ sectionsEditorial:
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 
   - full: true
-    noSpace: true
+    noSpace: false
     title: Kit UI
+    buttons:
+      - label : Vai alla scheda componente su Figma
+        btnStyle: primary me-3
+        url: "#"
+        icon:
+          icon: sprites.svg#it-external-link
+          size: sm
+          color: white
+          align: middle
+          addonClasses: ms-2
+      - label : Apri la repository con tutte le versioni
+        btnStyle: outline-secondary
+        url: "#"
+        icon:
+          icon: sprites.svg#it-github
+          size: sm
+          color: secondary
+          align: middle
+          addonClasses: ms-2
     background: null
 
   - full: true

@@ -10,11 +10,13 @@ import Card from "../card/card"
 import Kangaroo from "../kangaroo/kangaroo"
 import ImageIcons from "../image-icons/image-icons"
 import Table from "../table/table"
+import Button from "../button/button"
 
 const SectionEditorial = ({
   title,
   headingLevel,
   text,
+  buttons,
   full,
   centered,
   fullColumn,
@@ -71,6 +73,16 @@ const SectionEditorial = ({
   + `${noSpace ? ' py-0' : ''}`
   + `${background==="dark" ? ' text-white' : ''}`
 
+  //buttons
+	let ButtonsRender
+	if (buttons) {
+		ButtonsRender = buttons.map((btn,index) => {
+			return(
+			   <Button key={"button-"+index} {...btn}/>
+			)
+		})
+	}
+
   return(
     <section className={styles} aria-describedby={id}>
         <div className={container}>
@@ -101,6 +113,7 @@ const SectionEditorial = ({
                     <ReactMarkdown>{text}</ReactMarkdown>
                   </div>
                 }
+								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
                 {components &&
                   components.map((item,index) => {
                     const Switcher = SwitchComponents[item.name]
