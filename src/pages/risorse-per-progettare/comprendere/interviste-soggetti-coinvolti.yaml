@@ -18,12 +18,12 @@
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Questionario online - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : "Svolgi un'indagine per raccogliere informazioni utili sul punto di vista delle persone che usano il servizio." #C
+  name: Interviste soggetti coinvolti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : "Svolgi colloqui costruttivi con tutte le persone e i soggetti interessati (stakeholder) nel tuo servizio." #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/questionario-online/ #M
+  pathname: /risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -115,10 +115,10 @@ components:
         - label : Comprendere
           url: ../
           active: false
-        - label : Questionario online
+        - label : Interviste soggetti coinvolti
           active: true
-    title: Questionario online #C
-    subtitle: "Svolgi un'indagine per raccogliere informazioni utili sul punto di vista delle persone che usano il servizio" #C
+    title: Interviste soggetti coinvolti #C
+    subtitle: "Svolgi colloqui costruttivi con tutte le persone e i soggetti interessati (stakeholder) nel tuo servizio" #C
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
@@ -129,7 +129,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-     Questo kit dedicato ai questionari comprende modelli pre-organizzati per aiutarti nelle attività di **pianificazione, esecuzione e analisi di una ricerca** per raccogliere informazioni preziose su **come le persone percepiscono il servizio digitale** che stai progettando o ri-progettando. 
+     Con gli strumenti del kit approfondisci il contesto e l’esperienza d’uso, **raccogliendo informazioni direttamente dai soggetti coinvolti** e sfruttandole per **rendere più efficace il tuo servizio.**
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     share:
@@ -196,11 +196,11 @@ components:
           url: "#"
           color: primary
           size: lg
-        - label: Questionari
+        - label: Interviste utente
           url: "#"
           color: primary
           size: lg
-        - label: Esperienza utente
+        - label: Analisi del contesto
           url: "#"
           color: primary
           size: lg
@@ -219,15 +219,22 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "pianifica-l-indagine/"
-              label: Pianifica l'indagine #C
+            - url: "pianifica-le-interviste/"
+              label: Pianifica le interviste #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
-            - url: "sintetizza-i-risultati-della-ricerca/"
-              label: Sintetizza i risultati della ricerca #C
+            - url: "predisponi-il-protocollo/"
+              label: Predisponi il protocollo #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "rielabora-le-informazioni/"
+              label: Rielabora le informazioni #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -242,7 +249,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: A cosa serve il kit di questionario online #C
+    - title: A cosa serve il kit per le interviste ai soggetti coinvolti #C
       menu: false
       centered: true
       bgColor: null  
@@ -253,18 +260,22 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            I questionari online consentono di raccogliere informazioni dalle persone in maniera strutturata, così da poterle elaborare quantitativamente. Il vantaggio chi progetta è poter **raggiungere una grande quantità di persone contemporaneamente poiché la somministrazione avviene online** e attraverso i canali di comunicazione digitale più consoni a raggiungere i partecipanti.
+            **Raccogliere informazioni direttamente sul campo**, coinvolgendo le persone e gli stakeholder toccati dal tuo servizio, è un vantaggio da non sottovalutare.
 
-            Il kit dedicato ai questionari online ti offre modelli già pronti all’uso per la pianificazione, l’esecuzione e l’analisi delle attività relative a questa tipologia di ricerca utente.  
+            Grazie al kit, puoi **programmare le attività** da svolgere, **definire la modalità di somministrazione delle interviste e la tipologia di protocolli** da seguire per persone che usano il servizio e stakeholder. E, ancora, **stabilire le caratteristiche che le persone intervistate dovranno avere** per rappresentare appropriatamente il target d'utenza del servizio o le figure coinvolte nella sua erogazione. Infine, **predisporre l’insieme di domande da sottoporre.**
+            
+            Successivamente, puoi **sintetizzare le tue conclusioni** in maniera strutturata per presentarle agli stakeholder di progetto e produrre una relazione mirata.
+
+            Tutte le risorse ti aiuteranno ad evidenziare **le necessità e le criticità** che incontrano le persone e stakeholder interessate dal servizio.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
           text: | #C
-            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come mappare l’esperienza d’uso di un servizio esistente (as-is) e a riprogettare la sua evoluzione (to-be), comprendendo le caratteristiche dell'utente con risorse operative dedicate quali personas e user journey.
+            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come pianificare e strutturare le interviste sulla base degli obiettivi di perseguire durante la ricerca, predisporre il protocollo da adottare e rielaborare i dati emersi per ottenere una sintesi razionale dei risultati.
           ctas:
-          - label: Vai all’argomento “Questionari” #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html" #M
+          - label: Vai all’argomento "Interviste" #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/interviste.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -285,7 +296,7 @@ components:
   highlightCards:
     id: HC1
     title: Le attività di questo kit di design #C
-    text: Esplora le attività di questo kit di design per svolgere un questionario online #C
+    text: Esplora le attività di questo kit di design per pianificare le interviste, preparare il protocollo da seguire e rielaborare le informazioni raccolte #C
     col4: false
     nospace: false
 
@@ -293,13 +304,13 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Pianifica l'indagine #C
+      - title: Pianifica le interviste #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "pianifica-l-indagine" #M
+        url: "pianifica-le-interviste" #M
         text: | #C
-          Definisci gli obiettivi dell’indagine e inizia a progettare il questionario riflettendo sulla strategia migliore per estrapolare le informazioni di cui hai bisogno.
+          Definisci gli obiettivi della ricerca e i temi da investigare: in questo modo sarà più semplice capire quali criteri seguire per strutturare il questionario di selezione dei partecipanti.
         tag:
           label: Attività del kit #C
         share: #AUTO
@@ -315,13 +326,34 @@ components:
             isShare: true
 
         # CARD CHILDREN ACTION
-      - title: Sintetizza i risultati della ricerca #C
+      - title: Predisponi il protocollo #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "sintetizza-i-risultati-della-ricerca" #M
+        url: "predisponi-il-protocollo" #M
         text: | #C
-          Analizza le informazioni raccolte con tecniche quanti-qualitative e rielaborale in maniera rilevante per lo scopo della ricerca.
+          Scegli la struttura e mantieni il focus. Rendi fruttuosa la conversazione, defininendo i macro temi da affrontare e le domande per comprendere la percezione e le aspettative della persona intervistata rispetto al tuo servizio. 
+        tag:
+          label: Attività del kit #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+        # CARD CHILDREN ACTION
+      - title: Rielabora le informazioni #C
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        url: "rielabora-le-informazioni" #M
+        text: | #C
+          Schematizza, categorizza e classifica le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista. 
         tag:
           label: Attività del kit #C
         share: #AUTO
