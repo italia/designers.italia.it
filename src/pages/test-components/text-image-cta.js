@@ -5,7 +5,7 @@ import Pagedata from "./text-image-cta.yaml"
 
 const Buttons = () => {
 	return (
-	  <Template>
+	  <Template Pagedata={Pagedata}>
 			<div className="container-xxl my-5">
 				<div className="row justify-content-center">
           <div className="col-12 mb-3">

@@ -25,13 +25,13 @@ const HeaderNav = ({
 			<div className="row">
 				<div className="col-12">
 					<nav className="navbar navbar-expand-lg has-megamenu" aria-label={data.ariaLabel}>
-						<Button customStyle="custom-navbar-toggler" type="button" dataBsToggle="navbarcollapsible" ariaControls={data.nav.id} ariaExpanded="false" srOnly={data.toggler.srOnly}>
+						<Button customStyle="custom-navbar-toggler" type="button" dataBsToggle="navbarcollapsible" ariaControls={data.nav.id} ariaExpanded="false" ariaLabel={data.toggler.ariaLabel}>
 							<Icon icon="sprites.svg#it-burger"/>
 						</Button>
 						<div className="navbar-collapsable" ref={collRef} id={data.nav.id}>
 							<div className="overlay"></div>
 							<div className="close-div">
-								<Button addonStyle="close-menu">
+								<Button addonStyle="close-menu" ariaLabel={data.close.ariaLabel}>
 									<Icon icon="sprites.svg#it-close-big"/>
 								</Button>
 							</div>
