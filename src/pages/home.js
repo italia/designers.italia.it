@@ -5,6 +5,7 @@ import Pagedata from "./home.yaml"
 import Highlight from "../components/highlight/highlight"
 import SearchMain from "../components/search-main/search-main"
 import ContentCollapse from "../components/content-collapse/contentCollapse"
+import SectionIntro from "../components/section-intro/section-intro"
 
 const Home = () =>{
   return(
@@ -15,6 +16,7 @@ const Home = () =>{
         </ContentCollapse>}
       </Highlight>
       {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain}></SearchMain>}
+      {Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}></SectionIntro>}
     </Template>
   )
 }

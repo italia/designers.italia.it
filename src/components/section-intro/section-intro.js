@@ -8,6 +8,7 @@ const SectionIntro = ({
   id,
   background,
   title,
+  subtitle,
   headingLevel,
   text,
   moreButton,
@@ -33,11 +34,12 @@ const SectionIntro = ({
           <div className='col col-md-10 offset-md-1 col-lg-7'>
               <div className="px-3 px-lg-0">
                 {title && <HLevel id={id} className="mb-4">{title}</HLevel>}
+                {subtitle && <h3 className="h5">{subtitle}</h3>}
                 <ReactMarkdown>{text}</ReactMarkdown>
 
-                <ContentCollapse label={moreButton} labelClose={moreButtonClose}>
+                {moreButton && <ContentCollapse label={moreButton} labelClose={moreButtonClose}>
                   { moreText }
-                </ContentCollapse>
+                </ContentCollapse>}
               </div>
           </div>
         </div>
