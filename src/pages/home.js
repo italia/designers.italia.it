@@ -4,11 +4,16 @@ import {Seo} from "../components/seo/seo"
 import Pagedata from "./home.yaml"
 import Highlight from "../components/highlight/highlight"
 import SearchMain from "../components/search-main/search-main"
+import ContentCollapse from "../components/content-collapse/contentCollapse"
 
 const Home = () =>{
   return(
     <Template Pagedata={Pagedata}>
-      {Pagedata.components.hero && <Highlight {...Pagedata.components.hero}></Highlight>}
+      <Highlight {...Pagedata.components.hero}>
+        {Pagedata.components.hero.moreText && <ContentCollapse label={Pagedata.components.hero.moreButton} labelClose={Pagedata.components.hero.moreButtonClose}>
+          {Pagedata.components.hero.moreText}
+        </ContentCollapse>}
+      </Highlight>
       {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain}></SearchMain>}
     </Template>
   )

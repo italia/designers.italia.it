@@ -25,6 +25,7 @@ const Highlight = (
 		specular,
     textSanSerif,
     fullImg,
+    children,
 	}
 ) => {
 	let styles = 'highlight'
@@ -85,6 +86,8 @@ const Highlight = (
                 {numbers && <Numbers {...numbers}/>}
 								{text && <div className={textClass}><ReactMarkdown>{text}</ReactMarkdown></div>}
 								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
+
+                { children }
 							</div>
 						</div>
 					</div>

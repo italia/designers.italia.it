@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from "react"
-import { Collapse } from "bootstrap-italia/dist/bootstrap-italia.esm"
 import ReactMarkdown from "react-markdown"
 import "./section-intro.scss"
-import Icon from "../icon/icon"
+
+import ContentCollapse from "../content-collapse/contentCollapse"
 
 const SectionIntro = ({
   id,
@@ -26,40 +26,6 @@ const SectionIntro = ({
 		HLevel = `h2`
 	}
 
-  let icon = ({
-    icon: "sprites.svg#it-arrow-down",
-    size: "sm",
-    align : "middle",
-    color :"primary",
-    hidden: true,
-    addonClasses: "ms-2"
-  })
-
-  const collRef = useRef(null)
-  const collObjRef = useRef(null)
-
-  const collapseToggle = (evt) => {
-    console.log('----');
-    evt.preventDefault()
-    if (collObjRef.current) {
-      collObjRef.current.toggle()
-      toggleAria(evt.currentTarget)
-    }
-  }
-
-  const toggleAria = (element) => {
-    const ariaAttr = element.getAttribute('aria-expanded')
-    let newVal = 'true'
-    if (ariaAttr === 'true') {
-      newVal = 'false'
-    }
-    element.setAttribute('aria-expanded', newVal)
-  }
-
-  useEffect(() => {
-    collObjRef.current = new Collapse(collRef.current, { toggle: false })
-  })
-
   return (
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
@@ -69,18 +35,9 @@ const SectionIntro = ({
                 {title && <HLevel id={id} className="mb-4">{title}</HLevel>}
                 <ReactMarkdown>{text}</ReactMarkdown>
 
-                {moreButton &&
-                  <a href="#" role="button" onClick={collapseToggle} className="read-more mt-3 d-inline-flex align-items-center text-decoration-none" /*data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'}*/ aria-expanded="false" aria-controls={id+'ReadMore'}>
-                    <span className="more-text">{moreButton}</span>
-                    <span className="less-text">{moreButtonClose}</span>
-                    <Icon {...icon}/>
-                  </a>
-                }
-                {moreText &&
-                  <div ref={collRef} className="collapse" id={id+'ReadMore'}>
-                    <ReactMarkdown className="mt-4">{moreText}</ReactMarkdown>
-                  </div>
-                }
+                <ContentCollapse label={moreButton} labelClose={moreButtonClose}>
+                  { moreText }
+                </ContentCollapse>
               </div>
           </div>
         </div>
