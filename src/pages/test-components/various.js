@@ -15,9 +15,9 @@ import Pagedata from "./various.yaml"
 
 
 
-const HomePage = () => {
+const HomePage = ({ pageContext }) => {
 	return (
-	  <Template Pagedata={Pagedata}>
+	  <Template Pagedata={Pagedata} pageContext={pageContext}>
       <Tag url="#">Registrazione</Tag>
       { Pagedata.components.chips.map((chip,index) => {
           return(

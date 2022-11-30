@@ -6,7 +6,7 @@ import Pagedata from "./level2.yaml"
 
 const Level2 = ({ pageContext }) => {  	
   return(
-    <Template Pagedata={Pagedata} pageContext={pageContext} pageTitle={Pagedata.seo.name}>
+    <Template Pagedata={Pagedata} pageContext={pageContext}>
       {/* place extra components / HTML here */}
     </Template>
   )
