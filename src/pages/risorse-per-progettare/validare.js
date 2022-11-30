@@ -2,11 +2,7 @@ import * as React from "react"
 import Template from "../../templates/tmpl-level-2"
 import {Seo} from "../../components/seo/seo"
 
-<<<<<<<< HEAD:src/pages/risorse-per-progettare/progettare.js
-import Pagedata from "./realizzare.yaml"
-========
 import Pagedata from "./validare.yaml"
->>>>>>>> next:src/pages/risorse-per-progettare/validare.js
 
 const Level2 = () => {
   return(
