@@ -5,7 +5,7 @@ import Pagedata from "./highlight.yaml"
 
 const Highlights = () => {
 	return(
-		<Template>
+		<Template Pagedata={Pagedata}>
       <div className="container-xxl my-5">
         <div className="row">
           <div className="col-12">

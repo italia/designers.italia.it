@@ -1,3 +1,6 @@
+
+@import "../../scss/bootstrap-breakpoints";
+
 .chip {
 	text-decoration: none;
 	padding-left: var(--chip-x-padding);
@@ -14,4 +17,13 @@
 	&.chip-secondary {
 		border-color: var(--chip-secondary-border-color);
 	}
+}
+
+//mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+  .chip  {
+    .chip-label {
+      height: 14px;
+    }
+  }
 }

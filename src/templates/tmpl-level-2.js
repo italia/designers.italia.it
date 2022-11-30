@@ -62,6 +62,7 @@ const Template = ({children,Pagedata}) => {
         scrollLimit={100}
         duration={800}
         easing="easeInOutSine"
+        ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
     </>
 	)

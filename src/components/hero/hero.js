@@ -16,6 +16,7 @@ const Hero =({
 	tag,
 	background,
 	title,
+  titleTag,
   headingLevel,
 	subtitle,
 	pretext,
@@ -25,7 +26,8 @@ const Hero =({
   imgRatio,
 	bgImg,
   bgImgAlt,
-	kangaroo
+	kangaroo,
+  noBorder
 })=>{
   let styles = 'hero'
   + `${background ? ' bg-'+background : ''}`
@@ -53,8 +55,11 @@ const Hero =({
   let breadcrumbsStyle = 'hero-top px-3 pt-3'
     + `${column ? ' px-lg-0' : ''}`
 
+  let kangarooZoneStyle = 'kangaroo-zone'
+  + `${noBorder ? ' no-border' : ''}`
+
   let kangarooColumnStyle = 'col-12 col-md-10 offset-md-1'
-		+ `${centered ? ' col-lg-7 offset-lg-0' : ''}`
+  + `${centered ? ' col-lg-7 offset-lg-0' : ''}`
 
   if (column) {
     columnStyle = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
@@ -75,7 +80,10 @@ const Hero =({
                 <div className={rowStyle}>
                   <div className={columnStyle}>
                     <div className="texts px-3 px-lg-0 py-3 pb-lg-5">
-                      <HLevel className="title">{title}</HLevel>
+                      <div className="d-flex align-items-start flex-wrap">
+                        <HLevel className="title">{title}</HLevel>
+                        {titleTag && <Tag {...titleTag}></Tag>}
+                      </div>
                       <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
                       {tag && <Tag {...tag}></Tag>}
                       <div className="bottom-text">
@@ -103,7 +111,7 @@ const Hero =({
         </div>
       </div>
       {kangaroo &&
-        <div className="kangaroo-zone">
+        <div className={kangarooZoneStyle}>
           <div className="container-xxl">
             <div className={rowStyle}>
               <div className={kangarooColumnStyle}>
