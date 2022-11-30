@@ -1,3 +1,12 @@
+const getCrumbLabelUpdates = () => {
+  return [
+    {
+      pathname: '/level1',
+      crumbLabel: 'Level 1'
+    }
+  ]
+};
+
 module.exports = {
   siteMetadata: {
     siteUrl: `https://designers.italia.it`,
@@ -18,6 +27,7 @@ module.exports = {
       options: {
         useAutoGen: true,
         autoGenHomeLabel: `Inizio`,
+        crumbLabelUpdates: getCrumbLabelUpdates(),
         exclude: [
           `**/dev-404-page/**`,
           `**/404/**`,
