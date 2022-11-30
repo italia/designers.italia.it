@@ -5,7 +5,7 @@ import Template from "../../templates/tmpl-base"
 import TestYaml from "../../components/test-yaml/test-yaml"
 import Pagedata from "./various.yaml"
 
-const Yaml = ({Pagedata}) => {
+const Yaml = ({data}) => {
 	return (
 	  <Template Pagedata={Pagedata}>
     	<TestYaml
