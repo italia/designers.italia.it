@@ -56,7 +56,7 @@ const Template = ({children,Pagedata}) => {
         })}
 
         {children}
-        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...Pagedata.seo} />}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>

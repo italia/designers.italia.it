@@ -38,7 +38,8 @@ const Template = ({children,Pagedata}) => {
       <main id="main">
         <HeaderPost data={HeaderData.headerPost}/>
         {children}
-        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
+        {/* {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null } */}
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...Pagedata.seo} />}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
