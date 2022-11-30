@@ -1,11 +1,4 @@
-const getCrumbLabelUpdates = () => {
-  return [
-    {
-      pathname: '/level1',
-      crumbLabel: 'Level 1'
-    }
-  ]
-};
+const { getCrumbLabelUpdates } = require('./scripts/breadcrumbs');
 
 module.exports = {
   siteMetadata: {
@@ -26,7 +19,6 @@ module.exports = {
       resolve:`gatsby-plugin-breadcrumb`,
       options: {
         useAutoGen: true,
-        autoGenHomeLabel: `Inizio`,
         crumbLabelUpdates: getCrumbLabelUpdates(),
         exclude: [
           `**/dev-404-page/**`,

@@ -8,7 +8,7 @@ import './breadcrumbs.scss'
 
 const Breadcrumbs = ({ 
   pageContext, 
-  title,
+  // title,
   // separator,
   // dark,
   // ariaLabel,
@@ -36,13 +36,11 @@ const Breadcrumbs = ({
   //     )
   //   })
   // }
-
 	return (
     <Breadcrumb
       // location={location}
       crumbs={crumbs}
       crumbSeparator=" > "
-      crumbLabel={title.split("-")[0]}
     />
 
 		// <nav className="breadcrumb-container" aria-label={ariaLabel}>
@@ -52,6 +50,7 @@ const Breadcrumbs = ({
     //     {breadcrumbItems}
 		// 	</ol>
 		// </nav>
+
 	)
 }
 
