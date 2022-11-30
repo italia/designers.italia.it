@@ -1,18 +1,18 @@
 import * as React from "react"
-import Template from "../../templates/tmpl-level-2"
-import {Seo} from "../../components/seo/seo"
+import Template from "../../../templates/tmpl-level-3"
+import {Seo} from "../../../components/seo/seo"
 
-import Pagedata from "./level2.yaml"
+import Pagedata from "./interviste-soggetti-coinvolti.yaml"
 
-const Level2 = ({ pageContext }) => {  	
+const Level3 = () => {
   return(
-    <Template Pagedata={Pagedata} pageContext={pageContext}>
+    <Template Pagedata={Pagedata}>
       {/* place extra components / HTML here */}
     </Template>
   )
 }
 
-export default Level2
+export default Level3
 
 export const Head = () => (
 	<Seo

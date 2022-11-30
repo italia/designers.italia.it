@@ -7,9 +7,12 @@
   p,ol,ul {
     font-family: var(--font-serif);
   }
+  .lead {
+    font-size: var(--section-editorial-intro-text-size);
+  }
   .content {
     p:last-of-type {
-      margin-bottom: 0;
+      //margin-bottom: 0;
       img {
         margin-bottom: 0;
       }
@@ -18,7 +21,8 @@
       max-width: 100%;
       height: auto;
       display: block;
-      margin: calc(var(--spacer) * 8) auto;
+      //margin: calc(var(--spacer) * 8) auto;
+      margin: 1rem auto;
       border-radius: 4px;
     }
   }
@@ -82,7 +86,7 @@
   .text-image-cta {
     .content {
       img {
-        margin: calc(var(--spacer) * 12) auto;
+        //margin: calc(var(--spacer) * 12) auto;
       }
     }
   }

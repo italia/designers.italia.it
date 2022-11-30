@@ -1,41 +1,72 @@
 import React from "react"
+import Tag from "../tag/tag"
+import SimpleCta from "../simple-cta/simple-cta"
 import "./table.scss"
 
 const Table = ({
-  data
+  title,
+  head,
+  rows,
+  addonClasses,
+  responsive
 }) => {
+
+  let tableClasses = "table my-4"
+    + `${addonClasses ? ' '+addonClasses : ''}`
+
+  let headItems
+  let rowItems
+	let CellType
+  let CellScope
+
+  if (head) {
+    headItems = head.map((item,index) => {
+      return(
+        <th scope="col" key={"th-"+index}>{item.text}</th>
+      )
+    })
+  }
+
+  if (rows) {
+    rowItems = rows.map((rowItem,index) => {
+      return(
+        <tr key={"tr-"+index}>{
+          rowItem.cols.map((tdItem,index) => {
+            if (tdItem.scope) {
+              CellType = `th`
+              CellScope = 'row'
+            } else {
+              CellType = `td`
+              CellScope = null
+            }
+
+            return(
+              <CellType scope={CellScope} key={"td-"+index} className={tdItem.addonClasses}>
+                { tdItem.text }
+                { tdItem.tag && <Tag {...tdItem.tag}/>}
+                { tdItem.simpleCta && <SimpleCta {...tdItem.simpleCta} />}
+              </CellType>
+            )
+          })
+        }</tr>
+      )
+    })
+  }
+
   return (
-    <table className="table mb-4">
-      <thead>
-        <tr>
-          <th scope="col">Caratteristica</th>
-          <th scope="col">Stato</th>
-          <th scope="col">Descrizione</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">Visivamente accessibile</th>
-          <td>Pronto</td>
-          <td>Uso e contrasto dei colori, leggibilità</td>
-        </tr>
-        <tr>
-          <th scope="row">Amichevole con lettori di schermo</th>
-          <td>Pronto</td>
-          <td>Struttura titolazioni, etichette e testi alternativi</td>
-        </tr>
-        <tr>
-          <th scope="row">Navigabile</th>
-          <td>In revisione</td>
-          <td>Focus, struttura, navigazione da tastiera o altri device</td>
-        </tr>
-        <tr>
-          <th scope="row">Comprensibile</th>
-          <td>Da rivedere</td>
-          <td>Comprensibile, prevedibile, gestione semplice dell’errore</td>
-        </tr>
-      </tbody>
-    </table>
+    <div className={responsive}>
+      {title && <h3 className="mt-4">{title}</h3>}
+      <table className={tableClasses}>
+        { headItems && <thead>
+          <tr>
+            {headItems}
+          </tr>
+        </thead> }
+        <tbody>
+          {rowItems}
+        </tbody>
+      </table>
+    </div>
   )
 }
 

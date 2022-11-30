@@ -1,5 +1,12 @@
 @import "../../scss/bootstrap-breakpoints";
 
+.content-column {
+  .img-full {
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 24px 0;
+  }
+}
 
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
@@ -23,6 +30,11 @@
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
 
+  .content-column {
+    .img-full {
+      width: 75%;
+    }
+  }
 
 }
 

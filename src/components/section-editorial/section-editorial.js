@@ -10,18 +10,21 @@ import Card from "../card/card"
 import Kangaroo from "../kangaroo/kangaroo"
 import ImageIcons from "../image-icons/image-icons"
 import Table from "../table/table"
+import Button from "../button/button"
 
 const SectionEditorial = ({
   title,
   headingLevel,
   text,
+  buttons,
   full,
   centered,
   fullColumn,
   background,
   components,
   menu,
-  noSpace
+  noSpace,
+  id
 }) => {
 
   const SwitchComponents = {
@@ -70,8 +73,18 @@ const SectionEditorial = ({
   + `${noSpace ? ' py-0' : ''}`
   + `${background==="dark" ? ' text-white' : ''}`
 
+  //buttons
+	let ButtonsRender
+	if (buttons) {
+		ButtonsRender = buttons.map((btn,index) => {
+			return(
+			   <Button key={"button-"+index} {...btn}/>
+			)
+		})
+	}
+
   return(
-    <section className={styles}>
+    <section className={styles} aria-describedby={id}>
         <div className={container}>
           <div className={row}>
           {menu &&
@@ -94,12 +107,13 @@ const SectionEditorial = ({
             }
             <div className={grid}>
               <div className="px-3 p-md-0">
-                {title && <HLevel className={text ? "mb-1" : "mb-0"}>{title}</HLevel>}
+                {title && <HLevel className={text ? "mb-1" : "mb-0"} id={id}>{title}</HLevel>}
                 {text &&
                   <div className="text-container mb-5">
                     <ReactMarkdown>{text}</ReactMarkdown>
                   </div>
                 }
+								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
                 {components &&
                   components.map((item,index) => {
                     const Switcher = SwitchComponents[item.name]
