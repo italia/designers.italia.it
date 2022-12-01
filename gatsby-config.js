@@ -21,6 +21,7 @@ module.exports = {
       options: {
         useAutoGen: true,
         crumbLabelUpdates: getCrumbLabelUpdates(),
+        autoGenHomeLabel: `Inizio`,
         exclude: [
           `**/dev-404-page/**`,
           `**/404/**`,
