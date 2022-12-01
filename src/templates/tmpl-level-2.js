@@ -52,7 +52,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
           )
         })}
         {children}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location}/>}
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         {Pagedata.navPreFooter && <NavPreFooter {...Pagedata.navPreFooter} />}
         <Feedback/>
       </main>
