@@ -170,6 +170,14 @@ components:
               color: "secondary"
             label: Comuni #C
             url: "../../" #M
+          - title: Nella scheda operativa #C
+        icon:
+          icon: "sprites.svg#it-tool"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Adotta il modello di sito comunale #C
+        url: "../" #M  
       #otherInfo:
         #items:
           #- title: Rispettando
@@ -227,25 +235,33 @@ components:
       centered: true
       bgColor: null
       text: | #C
-        I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, permettono di creare rapidamente il front-end del sito comunale indipendentemente dalle soluzioni tecnologiche adottate dall’amministrazione.
-        
-        Seleziona i template relativi alla pagina del sito che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie a comporre l’interfaccia web.
-        
-        I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le Linee guida sull’accessibilità degli strumenti informatici.
       #components:
 
         # TXT BLOCK
-        #- name: TextImageCta
+        - name: TextImageCta
           #title: A cosa servono h3 #C
-          #text: | #C
+          text: | #C
+            I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, permettono di creare rapidamente il front-end del sito comunale indipendentemente dalle soluzioni tecnologiche adottate dall’amministrazione.
+            
+            Seleziona i template relativi alla pagina del sito che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie a comporre l’interfaccia web.
+            
+            I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le Linee guida sull’accessibilità degli strumenti informatici.
+            
     - title: I temi per WordPress e Drupal #C
       menu: false
       centered: true
       bgColor: null
       text: | #C
-        I temi per i content management system (sistema di gestione contenuti, CMS) WordPress e Drupal sono pronti all’uso e permettono di passare rapidamente alla creazione e alla gestione dei contenuti, una volta installati e configurati correttamente sul dominio istituzionale dell’ente.
-        
-        I temi sono aggiornati alla versione 2.0 di Bootstrap Italia e raggiungono il livello di accessibilità AA delle WCAG 2.1. Il loro utilizzo non prescinde da un’attenta cura editoriale di sezioni e contenuti del sito, così come dalla compilazione e pubblicazione della Dichiarazione di accessibilità prevista dalla normativa vigente.
+      #components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          #title: A cosa servono h3 #C
+          text: | #C
+            I temi per i content management system (sistema di gestione contenuti, CMS) WordPress e Drupal sono pronti all’uso e permettono di passare rapidamente alla creazione e alla gestione dei contenuti, una volta installati e configurati correttamente sul dominio istituzionale dell’ente.
+            
+            I temi sono aggiornati alla versione 2.0 di Bootstrap Italia e raggiungono il livello di accessibilità AA delle WCAG 2.1. Il loro utilizzo non prescinde da un’attenta cura editoriale di sezioni e contenuti del sito, così come dalla compilazione e pubblicazione della Dichiarazione di accessibilità prevista dalla normativa vigente.
+            
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -299,4 +315,17 @@ components:
                 ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
                 blank: true
 
-  
+  - title: CMS alternativi #C
+      menu: false
+      centered: true
+      bgColor: null
+      text: | #C
+      #components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          #title: A cosa servono h3 #C
+          text: | #C
+            Con la guida del documento di architettura dell’informazione e l’uso del codice dei template HTML, la realizzazione del sito istituzionale di un Comune è completamente svincolata dalle scelte tecnologiche e dalla tipologia CMS utilizzata dagli enti.
+            
+              La scelta di CMS alternativi è sempre possibile. Come previsto dagli articolo 68 e 69 del Codice dell’Amministrazione Digitale (CAD), dovrebbe principalmente riguardare software a riuso oppure open source. Sul [catalogo del software della PA](https://developers.italia.it/it/software) è possibile trovare software già utilizzati da altre amministrazioni o pubblicare le soluzioni sviluppate in proprio.
