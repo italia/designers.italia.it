@@ -1,23 +1,23 @@
 @import "../../scss/bootstrap-breakpoints";
-
-.section-intro {
-  padding-top: calc(var(--spacer) * 24) !important;
-
-  p, ul, ol {
-    font-family: "Lora",Georgia,serif;
+.testimonials {
+  .icon-wrapper {
+    width: var( --testimonials-icon-size);
+    height: var( --testimonials-icon-size);
+    border-radius: var( --testimonials-icon-size);
+    background-color: var(--color-accent);
   }
-  img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: calc(var(--spacer) * 8) auto;
-    border-radius: 4px;
+  .icon {
+    flex-shrink: 0;
+    width: var(--testimonials-icon-inside-size);
+    height: var(--testimonials-icon-inside-size);
+    fill: #FFF;
+  }
+  .fw-medium {
+    font-weight: 600;
   }
 }
-
-
-//Mobile and tablet only ------------------------------------------------------------------------------------------
-@include media-breakpoint-down(lg) {
+//mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
 
 }
 //Small tablet ------------------------------------------------------------------------------------------
@@ -32,21 +32,17 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-
+  .testimonials {
+    .col-12:last-child{
+      .testimonial-wrapper {
+        margin-top: -50px;
+      }
+    }
+  }
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
-  .section-intro {
-    img {
-      margin: calc(var(--spacer) * 12) auto;
-    }
-    .negative-x {
-      margin-left: -10%;
-      margin-right: -10%;
-    }
-  }
-
 }
 
 //Desktop -----------------------------------------------------------------------------------------------

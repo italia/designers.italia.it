@@ -6,6 +6,9 @@ import Highlight from "../components/highlight/highlight"
 import SearchMain from "../components/search-main/search-main"
 import ContentCollapse from "../components/content-collapse/contentCollapse"
 import SectionIntro from "../components/section-intro/section-intro"
+import HighlightCards from "../components/highlight-cards/highlight-cards"
+import ImgFull from "../components/img-full/img-full"
+import Testimonials from "../components/testimonials/testimonials"
 
 const Home = () =>{
   return(
@@ -17,11 +20,25 @@ const Home = () =>{
       </Highlight>
       {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain}></SearchMain>}
       {Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}></SectionIntro>}
-      {Pagedata.components.highLights.map((hl,index) => {
+      {Pagedata.components.highLights && Pagedata.components.highLights.map((hl,index) => {
         return(
           <Highlight key={"hl-"+index} {...hl}/>
         )
       })}
+      {Pagedata.components.highlightCards &&
+        <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>
+      }
+      {Pagedata.components.sectionIntroImg &&
+        <SectionIntro {...Pagedata.components.sectionIntroImg}>
+          {Pagedata.components.sectionIntroImg.imgFull &&
+            <div className="negative-x">
+              <ImgFull {...Pagedata.components.sectionIntroImg.imgFull}></ImgFull>
+            </div>
+          }
+          {Pagedata.components.sectionIntroImg.testimonials &&
+            <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
+          }
+        </SectionIntro>}
     </Template>
   )
 }
