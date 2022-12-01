@@ -65,17 +65,17 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Progetto #C 
+        - label : Norme e riferimenti #C 
           active: true
-    title: Il progetto Designers Italia #C
-    subtitle: Siamo il punto di riferimento per la progettazione dei servizi digitali pubblici della Pubblica Amministrazione #C
+    title: Norme e riferimenti #C
+    subtitle: La documentazione ufficiale che ti guida nella progettazione per la PA, mettendo le persone al centro #C
     pretext:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
       text: In breve 
     text: | #C
-      Designers Italia nasce nel 2017 per facilitare l’adesione delle PA italiane a una cultura della progettazione e a processi di design dei servizi pubblici centrati sui bisogni dei cittadini. Da allora e insieme alla community, continuiamo a proporre strumenti operativi e di indirizzo dedicati alla PA e ai suoi fornitori, con l’obiettivo di innalzare gli standard di qualità dei siti e dei servizi digitali del Paese.  
+      La progettazione e la realizzazione di siti e servizi digitali per la Pubblica Amministrazione sono guidate da regole tecniche e indicazioni operative attente all’usabilità e a un approccio progettuale rivolto alle persone.  
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -103,11 +103,23 @@ components:
         size: sm
         color: white
       chips: #C
-        - label: Human centered design
+        - label: Normativa
           url: "#"
           color: primary
           size: lg
-        - label: Cultura progettuale
+        - label: Linee guida
+          url: "#"
+          color: primary
+          size: lg
+          - label: Manuale operativo
+          url: "#"
+          color: primary
+          size: lg
+          - label: CAD
+          url: "#"
+          color: primary
+          size: lg
+          - label: Accessibilità
           url: "#"
           color: primary
           size: lg
@@ -117,7 +129,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il progetto #C
+          label: Scopri norme e riferimenti #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -126,22 +138,15 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #AUTO
-            - url: "visione-e-missione/" #M
-              label: "Visione e missione" #C
+            - url: "linee-guida-di-design/" #M
+              label: "Linee guida di design" #C
               iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
-            - url: "formazione-e-disseminazione/" #M
-              label: "Formazione e disseminazione" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
-            - url: "storia/" #M
-              label: "Storia" #C
+            - url: "manuale-operativo-di-design/" #M
+              label: "Manuale operativo di design" #C
               iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -155,23 +160,21 @@ components:
     section: true
     id: introEditorial
     headingLevel: 2
-    title: Diffondiamo la cultura della progettazione nella PA italiana #C
+    title: Progettare per la PA è un processo basato sulla legge #C
     background: null
     text: | #C
-      Il design è la disciplina che si occupa di risolvere problemi complessi, in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella Pubblica Amministrazione. Insieme alla community abbiamo l’obiettivo di **diffondere una cultura della progettazione** grazie alla quale le pubbliche amministrazioni italiane possono ideare e rilasciare **siti e servizi digitali semplici, accessibili, equi e inclusivi**. 
+      **L'accesso a siti e servizi pubblici digitali di qualità è un diritto da garantire a tutte le persone** che desiderano farne uso. Per questo, **i requisiti da rispettare sono indicati in modo dettagliato dalla legge**, affinché ogni aspetto della loro progettazione e realizzazione sia attentamente considerato e diligentemente applicato da tutti gli attori coinvolti nel processo. 
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     moreText: | #C
-     Per fare questo, mettiamo a disposizione guide, risorse e modelli adatti ad affrontare la complessità di questo scenario: utilizziamo un approccio sistemico, aperto e centrato sull’utente, fondato su un processo che prevede cinque fasi di progettazione. 
-     Siamo il principale punto di riferimento italiano per la progettazione dei servizi digitali delle amministrazioni pubbliche e **strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA, ai sensi dell'art. 53, comma 1 ter - Siti internet delle pubbliche amministrazioni del Codice dell'Amministrazione Digitale**. 
-
-     Designers Italia è un progetto a cura del [Dipartimento per la trasformazione digitale](https://innovazione.gov.it) in collaborazione con l’Agenzia per l’Italia Digitale (AGID). 
+    Per orientarti nell'ecosistema di norme e riferimenti, la tua bussola è rappresentata dalle **Linee guida di design, secondo quanto definito dall’articolo 53 del Codice dell’Amministrazione Digitale**: ti indicano le regole che hai l'obbligo di rispettare, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle opzionali. 
+Ad applicare concretamente le Linee guida ti aiuta il **Manuale operativo di design**: ti fornisce indicazioni operative a supporto della progettazione e della realizzazione di siti e servizi pubblici digitali accessibili, inclusivi e che riducono le disuguaglianze. 
 
   # ///////////////////
   # HIGHLIGHTS
   # ///////////////////
   titleText:
-    title: Scopri Designers Italia #C
+    title: Scopri la normativa e come applicarla #C
 
   # —
   # HIGHLIGHT LOOP
@@ -181,50 +184,43 @@ components:
     # —
     # HIGHLIGHT BIG IMG
     # —
-    - title : Visione e missione #C
+    - title : Linee guida di design #C
       id: HL1
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
       headingLevel : 3
-      background: medium # null | light | medium | dark  
+      background: light # null | light | medium | dark  
       big: true
       specular: false
-      subtitle: "I princìpi e i valori che ispirano il nostro lavoro e i nostri strumenti" #C
+      subtitle: "Le regole tecniche che devi rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione" #C
+      text: "Le disposizioni delle linee guida rispondono all’articolo 53 del decreto legislativo del 7 marzo 2005, n. 82, contenente il Codice dell’Amministrazione Digitale." #C
       buttons: #C #I
-        - label : Scopri visione e missione #C
+        - label : Esplora le linee guida di design #C
           btnStyle: primary
-          url: "visione-e-missione/" #M
+          url: "linee-guida-di-design/" #M
 
     # —
     # HIGHLIGHT 
     # —
-    - title : Formazione e disseminazione #C
+    - title : Linee guida sull'accessibilità #C
       id: HL2
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
       headingLevel : 3
-      background: light  # null | light | medium | dark  
+      background: null  # null | light | medium | dark  
       big: false
       specular: true
-      subtitle: Il nostro impegno per diffondere e condividere con la community le buone pratiche di design applicate ai servizi digitali pubblici #C 
-      numbers: #C #I
-        items:
-        - icon: sprites.svg#it-pa
-          number: 1200
-          label: Partecipanti ai corsi PA
-        - icon: sprites.svg#it-user
-          number: 21000
-          label: Iscritti alla community
-      text: "Abbiamo l’obiettivo di divulgare i princìpi, la cultura della progettazione e le risorse di Designers Italia, per favorire la condivisione di buone pratiche tra progettisti di servizi pubblici digitali, community del design e mondo della PA" #C
+      subtitle: La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici #C 
+      text: "Il documento è stato redatto ed emanato dall'Agenzia per l'Italia Digitale (AGID) secondo quanto disposto dall’articolo 11 della legge del 9 gennaio 2004, n. 4." #C
       buttons: #C #M
-        - label : Scopri formazione e disseminazione
+        - label : Scopri le linee guida sull'accessibilità
           btnStyle: primary
-          url: "formazione-e-disseminazione/" 
+          url: https://docs.italia.it/AgID/documenti-in-consultazione/lg-accessibilita-docs/it/stabile/index.html 
      
     # —
     # HIGHLIGHT BIG IMG
     # —
-    - title : Storia #C
+    - title : Manuale operativo di design #C
       id: HL3
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
@@ -232,8 +228,9 @@ components:
       background: medium # null | light | medium | dark  
       big: true
       specular: true
-      subtitle: "Una storia fatta di persone, idee e open design: le piattaforme, gli strumenti e i progetti a cui Designers Italia ha contribuito"  #C
+      subtitle: "Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento"  #C
+      text: "Uno strumento di lavoro per la PA e i suoi fornitori, offre tutte le informazioni necessarie a realizzare siti e servizi pubblici digitali secondo le regole tecniche descritte dalla Linee guida." #C
       buttons: #C #M
-        - label : Scopri storia 
+        - label : Espolora il manuale operativo 
           btnStyle: primary
-          url: "storia/" 
+          url: "manuale-operativo-di-design/" 
