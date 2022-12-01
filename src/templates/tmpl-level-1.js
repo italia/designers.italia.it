@@ -63,7 +63,7 @@ const Template = ({children,Pagedata,pageContext}) => {
         { Pagedata.components.topics && <Topics {...Pagedata.components.topics}/> }
 
         {children}
-        {/* {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null } */}
+        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
