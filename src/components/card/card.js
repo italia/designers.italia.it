@@ -6,6 +6,7 @@ import Chip from "../chip/chip"
 import Dropdown from "../dropdown/dropdown"
 import Tag from "../tag/tag"
 import Icon from "../icon/icon"
+import Link from "../link/link"
 import Button from "../button/button"
 import "./card.scss"
 
@@ -69,7 +70,7 @@ const Card =(
       <div className={styles}>
         <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
           <div className="text-zone">
-            {HLevel && <HLevel><a href={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</a></HLevel>}
+            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
@@ -120,7 +121,7 @@ const Card =(
         </div>}
         <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
           <div className="text-zone">
-            {HLevel && <HLevel><a href={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</a></HLevel>}
+            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}

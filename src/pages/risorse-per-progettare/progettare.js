@@ -2,11 +2,11 @@ import * as React from "react"
 import Template from "../../templates/tmpl-level-2"
 import {Seo} from "../../components/seo/seo"
 
-import Pagedata from "./realizzare.yaml"
+import Pagedata from "./progettare.yaml"
 
-const Level2 = () => {
+const Level2 = ({ pageContext }) => {
   return(
-    <Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext}>
       {/* place extra components / HTML here */}
     </Template>
   )

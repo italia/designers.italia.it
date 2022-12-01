@@ -1,5 +1,6 @@
 import React from "react"
 import ListItem from "../list-item/list-item"
+import Link from "../link/link"
 import "./list.scss"
 
 import shareData from "../../data/share.yaml"
@@ -55,7 +56,7 @@ const List = React.forwardRef(({
 	if(heading) {
 		ListHeading =<div className="link-list-heading">{heading}</div>
 		if (headingLink) {
-			ListHeading = <div className="link-list-heading"><a href={headingLink}>{heading}</a></div>
+			ListHeading = <div className="link-list-heading"><Link to={headingLink}>{heading}</Link></div>
 		}
 	}
 

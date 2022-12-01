@@ -6,17 +6,16 @@ import Icon from "../icon/icon"
 import Numbers from "../numbers/numbers"
 import ReactMarkdown from "react-markdown"
 
-const Highlight = (
-	{
-		id,
-		background,
-		img,
+const Highlight = ({
+	id,
+	background,
+	img,
     alt,
-		icon,
+	icon,
     overlayImg,
     overlayAlt,
-		big,
-		title,
+	big,
+	title,
     numbers,
 		headingLevel,
 		subtitle,
@@ -78,7 +77,7 @@ const Highlight = (
               <div className={ratioClass}>
                 {img &&<ImageResponsive className="main-image" src={img} alt={alt}/> }
 								{icon && <Icon {...icon}/>}
-                {overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
+                				{overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
 							</div>
 							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
 								<HLevel id={id}>{title}</HLevel>
