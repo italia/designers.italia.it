@@ -10,15 +10,7 @@ const Link= ({ children, to, activeClassName, partiallyActive, ...other }) => {
   // will start with exactly one slash, and that anything else is external.
   // const internal = /^\/(?!\/)/.test(to) <--- from example
   const external = /^http/.test(to)
-  const anchor = /^(")/.test(to) // <---- unnecessary?
-
-  const styleInternal = {
-    outline: '2px dotted lime'
-  }
-
-  const styleExternal = {
-    outline: '2px dotted red'
-  }
+  const anchor = /^(")/.test(to) // <---- just for anchors unnecessary?
 
   // Use Gatsby Link for internal links, and <a> for others
   if (!external && !anchor) {
@@ -29,13 +21,13 @@ const Link= ({ children, to, activeClassName, partiallyActive, ...other }) => {
         partiallyActive={partiallyActive}
         {...other}
       >
-        <span style={styleInternal}>{children}</span>
+        {children}
       </GatsbyLink>
     )
   }
   return (
     <a href={to} {...other}>
-      <span style={styleExternal}>{children}</span>
+      {children}
     </a>
   )
 }
