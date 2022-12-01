@@ -3,6 +3,7 @@ import List from "../list/list"
 import ListItem from "../list-item/list-item"
 import Button from "../button/button"
 import Subscribe from "../subscribe/subscribe"
+import Link from "../link/link"
 import "./footer-main.scss"
 
 const FooterMain = ({
@@ -69,7 +70,7 @@ const FooterMain = ({
                 <div className="title-wrapper d-flex justify-content-between">
                   <h3 className="footer-title pb-4">{subscribe.title}</h3>
                   {subscribe.link &&
-                    <a className="text-white" href={subscribe.link.url} target="_blank">{subscribe.link.label}</a>
+                    <Link className="text-white" to={subscribe.link.url} target="_blank">{subscribe.link.label}</Link>
                   }
                 </div>
                 {subscribe.subscribe &&

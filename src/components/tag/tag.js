@@ -1,4 +1,5 @@
 import * as React from "react"
+import Link from "../link/link"
 import './tag.scss'
 
 const Tag = ({
@@ -14,10 +15,10 @@ const Tag = ({
   let styles = "tag"
     + `${addonClasses ? ' '+addonClasses : ''}`
 	return(
-		<a href={url} className={styles}>
+		<Link to={url} className={styles}>
 			<span className="visually-hidden">{screenReaderText}</span>
       {children}
-		</a>
+		</Link>
 	)
 }
 

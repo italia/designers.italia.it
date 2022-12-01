@@ -1,5 +1,6 @@
 import * as React from "react"
 import Icon from "../icon/icon"
+import Link from "../link/link"
 import './button.scss'
 
 const Button = ({
@@ -52,12 +53,12 @@ const Button = ({
 
 	if (url) {
 		return (
-			<a href={url} target={blank ? '_blank' : undefined} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} onClick={onClick}>
+			<Link to={url} target={blank ? '_blank' : undefined} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} onClick={onClick}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
 				{(!iconLeft && !iconRight && icon) ? iconRendered : ''}
-			</a>
+			</Link>
 		)
 	}else{
 		return (
