@@ -1,6 +1,7 @@
 const { getCrumbLabelUpdates } = require('./scripts/breadcrumbs');
 
 module.exports = {
+  trailingSlash: "always",
   siteMetadata: {
     siteUrl: `https://designers.italia.it`,
     title : "Designers Italia",
