@@ -57,16 +57,18 @@ const HighlightCards = ({
   return (
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
-        <div className="row mb-4 mb-md-5 intro">
-          <div className='col col-md-10 offset-md-1'>
-              <div className="px-3 px-lg-0">
-                {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
-                <ReactMarkdown>{text}</ReactMarkdown>
-              </div>
+        {
+          title && <div className="row mb-4 mb-md-5 intro">
+            <div className='col col-md-10 offset-md-1'>
+                <div className="px-3 px-lg-0">
+                  {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
+                  <ReactMarkdown>{text}</ReactMarkdown>
+                </div>
+            </div>
           </div>
-        </div>
+        }
         {cardsItems &&
-          <div className="row mb-4">
+          <div className="row pb-4">
             {cardsItems}
           </div>
         }

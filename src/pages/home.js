@@ -36,7 +36,14 @@ const Home = () =>{
             </div>
           }
           {Pagedata.components.sectionIntroImg.testimonials &&
-            <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
+            <div className="pt-5">
+              <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
+            </div>
+          }
+          {Pagedata.components.sectionIntroImg.highlightCards &&
+            <div className="negative-x">
+              <HighlightCards {...Pagedata.components.sectionIntroImg.highlightCards}></HighlightCards>
+            </div>
           }
         </SectionIntro>}
     </Template>
