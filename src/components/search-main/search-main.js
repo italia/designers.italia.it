@@ -28,12 +28,14 @@ const SearchMain =({
               </div>
               <div className="search-form px-4 pb-4 mb-5 shadow-lg">
                 <form id={formId} action={formAction} method="post">
-                    <div className="d-flex align-items-center">
-                      <div class="form-group mb-0 flex-grow-1 me-4">
+                    <div className="d-flex flex-column align-items-center flex-md-row w-100">
+                      <div class="form-group mb-0 flex-grow-1 me-md-4 w-100">
                         <label className="active" for={inputId}>{label}</label>
-                        <input type="search" class="form-control" name={inputName} id={inputId}/>
+                        <input type="search" className="form-control" name={inputName} id={inputId}/>
                       </div>
-                      <Button {...button}></Button>
+                      <div className="button-wrapper mt-4 mt-md-0">
+                        <Button {...button}></Button>
+                      </div>
                     </div>
                 </form>
               </div>
