@@ -4,9 +4,9 @@ import {Seo} from "../../components/seo/seo"
 
 import Pagedata from "./validare.yaml"
 
-const Level2 = () => {
+const Level2 = ({ pageContext }) => {  	
   return(
-    <Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext}>
       {/* place extra components / HTML here */}
     </Template>
   )

@@ -25,7 +25,7 @@ import dsNav from "../data/dsnav.yaml"
 import { Sticky } from "bootstrap-italia/dist/bootstrap-italia.esm"
 const sticky = Sticky //trick for treeshaking
 
-const Template = ({children,Pagedata}) => {
+const Template = ({children,Pagedata,pageContext}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
@@ -45,7 +45,7 @@ const Template = ({children,Pagedata}) => {
               <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
             </div>
             <div className="col-12 col-lg-9 px-lg-0 content-column bg-white">
-              { Pagedata.components.hero && <Hero {...Pagedata.components.hero}></Hero>}
+              { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
 
               {children}
 
