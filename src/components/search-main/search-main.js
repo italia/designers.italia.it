@@ -26,7 +26,7 @@ const SearchMain =({
                 {title && <h2>{title}</h2>}
                 {text && <ReactMarkdown>{text}</ReactMarkdown>}
               </div>
-              <div className="search-form px-4 pb-4 mb-5">
+              <div className="search-form px-4 pb-4 mb-5 shadow-lg">
                 <form id={formId} action={formAction} method="post">
                     <div className="d-flex align-items-center">
                       <div class="form-group mb-0 flex-grow-1 me-4">
@@ -38,11 +38,11 @@ const SearchMain =({
                 </form>
               </div>
               <div className="suggest-wrapper d-lg-flex">
-                <h3>{suggest.title}</h3>
+                <h3 class="mb-4">{suggest.title}</h3>
                 {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5 mt-2">
                   { suggest.items.map((item,index) => {
                     return(
-                      <a className="me-4" key={"a"+index} href={item.url}>{item.label}</a>
+                      <a className="me-5 mb-3" key={"a"+index} href={item.url}>{item.label}</a>
                     )
                   })}
                 </div>}
