@@ -52,7 +52,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
           )
         })}
         {children}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...Pagedata.seo} />}
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location}/>}
         {Pagedata.kangaroo &&
           <div className="container-xxl">
             <div className="row">
@@ -62,7 +62,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
             </div>
           </div>
         }
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location}/>}
+        {Pagedata.navPreFooter && <NavPreFooter {...Pagedata.navPreFooter} />}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
