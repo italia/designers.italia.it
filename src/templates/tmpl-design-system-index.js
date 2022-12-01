@@ -61,7 +61,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
                   <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
                 )
               })}
-             {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location}/>}
+             {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
             </div>
           </div>
         </div>

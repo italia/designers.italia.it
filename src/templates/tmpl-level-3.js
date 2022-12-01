@@ -52,7 +52,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
           )
         })}
         {children}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location}/>}
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         {Pagedata.kangaroo &&
           <div className="container-xxl">
             <div className="row">
