@@ -25,9 +25,8 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
 const Template = ({children,Pagedata,pageContext}) => {
-
   return (
-    <>
+    <div id="app">
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderPre data={HeaderData.headerPre}/>
@@ -65,7 +64,7 @@ const Template = ({children,Pagedata,pageContext}) => {
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
-    </>
+    </div>
 	)
 }
 

@@ -28,7 +28,7 @@ import skipLinksData from "../data/skiplinks.yaml"
 
 const Template = ({children,Pagedata,pageContext}) => {
 	return (
-    <>
+    <div id="app">
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderPre data={HeaderData.headerPre}/>
@@ -63,7 +63,7 @@ const Template = ({children,Pagedata,pageContext}) => {
         { Pagedata.components.topics && <Topics {...Pagedata.components.topics}/> }
 
         {children}
-        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
+        {/* {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null } */}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
@@ -75,7 +75,7 @@ const Template = ({children,Pagedata,pageContext}) => {
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
-    </>
+    </div>
 	)
 }
 
