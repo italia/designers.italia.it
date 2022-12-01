@@ -25,7 +25,7 @@ const trackFocusDummy = TrackFocus //trick treeshaking
 
 const Template = ({children,Pagedata,location}) => {
 	return (
-    <>
+    <div id="app">
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderPre data={HeaderData.headerPre}/>
@@ -51,7 +51,7 @@ const Template = ({children,Pagedata,location}) => {
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
-    </>
+    </div>
 	)
 }
 

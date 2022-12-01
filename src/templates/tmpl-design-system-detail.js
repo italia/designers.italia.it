@@ -27,7 +27,7 @@ const sticky = Sticky //trick for treeshaking
 
 const Template = ({children,Pagedata,pageContext,location}) => {
 	return (
-    <>
+    <div id="app">
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderPre data={HeaderData.headerPre}/>
@@ -65,7 +65,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
-    </>
+    </div>
 	)
 }
 
