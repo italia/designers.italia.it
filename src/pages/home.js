@@ -9,6 +9,8 @@ import SectionIntro from "../components/section-intro/section-intro"
 import HighlightCards from "../components/highlight-cards/highlight-cards"
 import ImgFull from "../components/img-full/img-full"
 import Testimonials from "../components/testimonials/testimonials"
+import BannerTextCta from "../components/banner-text-cta/banner-text-cta"
+import Numbers from "../components/numbers/numbers"
 
 const Home = () =>{
   return(
@@ -46,6 +48,13 @@ const Home = () =>{
             </div>
           }
         </SectionIntro>}
+      {Pagedata.components.bannerTextCta &&
+          <BannerTextCta {...Pagedata.components.bannerTextCta}>
+            {Pagedata.components.bannerTextCta.numbers &&
+              <Numbers {...Pagedata.components.bannerTextCta.numbers}></Numbers>
+            }
+          </BannerTextCta>
+      }
     </Template>
   )
 }

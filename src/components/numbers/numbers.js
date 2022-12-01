@@ -3,8 +3,13 @@ import "./numbers.scss"
 import Icon from "../icon/icon"
 
 const Numbers = ({
-  items
+  items,
+  inline
 }) => {
+
+
+  let styles = "numbers-wrapper d-md-flex flex-wrap"
+  + `${inline ? ' inline-numbers' : ''}`
 
   //numbers
 	let NumbersRender
@@ -27,7 +32,7 @@ const Numbers = ({
 	}
 
   return (
-    <div className="numbers-wrapper d-md-flex flex-wrap">
+    <div className={styles}>
       {NumbersRender}
     </div>
   )
