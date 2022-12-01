@@ -3,6 +3,7 @@ import Icon from "../icon/icon"
 import "./last-update.scss"
 
 const LastUpdate = ({
+  // location,
   pathname,
   title,
   date,
