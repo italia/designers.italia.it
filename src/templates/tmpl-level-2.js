@@ -24,7 +24,7 @@ import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const Template = ({children,Pagedata,pageContext}) => {
+const Template = ({children,Pagedata,pageContext,location}) => {
 
   return (
     <>
@@ -52,7 +52,7 @@ const Template = ({children,Pagedata,pageContext}) => {
           )
         })}
         {children}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...Pagedata.seo} />}
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location}/>}
         {Pagedata.navPreFooter && <NavPreFooter {...Pagedata.navPreFooter} />}
         <Feedback/>
       </main>
