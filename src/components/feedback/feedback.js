@@ -8,16 +8,23 @@ import FormYes from "./components/form-yes/FormYes"
 import FormNo from "./components/form-no/FormNo"
 
 const BTN_INTRO = {
-  label: "Conferma",
+  label: "Invia",
   btnStyle: "primary",
   type: "button",
-  //addonStyle: ""
 }
 
 const ICON_CLOSE = {
   icon: "sprites.svg#it-close",
   color: "primary",
   size: "lg",
+}
+
+const ICON_CONFIRM = {
+  icon: "sprites.svg#it-check-circle",
+  color: "primary",
+  size: "lg",
+  align : "middle",
+  addonClasses: "me-2"
 }
 
 const CLASS_SLIDE_ANIMEND = 'slidedown-animend'
@@ -29,6 +36,7 @@ const Feedback = ({
   const [isChecked, setIsChecked] = useState(false)
   const [choiceVal, setChoiceVal] = useState(0)
   const [slideHeight, setSlideHeight] = useState(0)
+  const [isSubmit, setIsSubmit] = useState(false)
 
   const sliderWrapperRef = useRef(null)
   const sliderRef = useRef(null)
@@ -48,6 +56,10 @@ const Feedback = ({
     }
   }
 
+  const submit = () => {
+    setIsSubmit(true)
+  }
+
   const openModal = () => {
     let modalElement = parseInt(choiceVal) === 1 ? modalYes.current : modalNo.current
     new Modal(modalElement).show()
@@ -60,9 +72,13 @@ const Feedback = ({
   }, [isChecked])
 
   useEffect(() => {
-    sliderWrapperRef.current.addEventListener('transitionend', animEnd)
+    if (sliderWrapperRef.current) {
+      sliderWrapperRef.current.addEventListener('transitionend', animEnd)
+    }
     return () => {
-      sliderWrapperRef.current.removeEventListener('transitionend ', animEnd)
+      if (sliderWrapperRef.current) {
+        sliderWrapperRef.current.removeEventListener('transitionend ', animEnd)
+      }
     }
   }, [sliderWrapperRef])
 
@@ -75,9 +91,11 @@ const Feedback = ({
               <div>
                 <div className="card-body p-5">
                   <div className="step" id="feedbackIntro">
-                    <h2 className="mb-3 mb-mb-4" id="feedbackSectionTitle">Ciao, questa pagina è stata utile?</h2>
-
-                    <form>
+                    <h2 className="mb-0" id="feedbackSectionTitle">
+                      {!isSubmit && <span className="feedback-title">Ciao, questa pagina è stata utile?</span>}
+                      {isSubmit && <span className="feedback-confirm d-flex align-items-center"><Icon {...ICON_CONFIRM} /> Feedback inviato. Grazie.</span>}
+                    </h2>
+                    {!isSubmit && <form className="mt-3 mt-md-4">
                       <fieldset className="d-flex">
                         <div className="form-check me-5">
                           <input name="feedbackValue" type="radio" id="feedbackValueYes" value="1" onChange={onChange} />
@@ -91,11 +109,10 @@ const Feedback = ({
 
                       <div ref={sliderWrapperRef} className="slidedown" style={{height: slideHeight + 'px'}}>
                         <div ref={sliderRef}>
-                          { isChecked && <button type="button" className="btn btn-primary mt-3" onClick={openModal}>{BTN_INTRO.label}</button> }
+                          { isChecked && <button type="button" className="btn btn-primary mt-3" onClick={() => { openModal(); submit(); }}>{BTN_INTRO.label}</button> }
                         </div>
                       </div>
-
-                    </form>
+                    </form>}
                   </div>
                 </div>
               </div>

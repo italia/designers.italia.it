@@ -3,9 +3,9 @@ import Template from "../templates/tmpl-base"
 import {Seo} from "../components/seo/seo"
 import Pagedata from "./index.yaml"
 
-const Index = () => {
+const Index = ({ pageContext }) => {
   return(
-    <Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext}>
       <div className="container-xxl py-5 py-lg-6">
         <div className="row px-3 px-md-0">
           <div className="col-12 col-md-10 offset-md-1">
@@ -25,6 +25,19 @@ const Index = () => {
                 <ul>
                   <li>
                     <a href="level1/fondamenti/">Design System - Fondamenti</a>
+                    <ul>
+                      <li>
+                        <a href="level1/fondamenti/fondamento/">Scheda Fondamento</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="level1/componenti/">Design System - Componenti</a>
+                    <ul>
+                      <li>
+                        <a href="level1/componenti/componente/">Scheda Componente</a>
+                      </li>
+                    </ul>
                   </li>
                 </ul>
               </li>

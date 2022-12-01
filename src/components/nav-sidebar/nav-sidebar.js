@@ -30,7 +30,7 @@ const NavSidebar = ({
   if (list) {
     links = list.map((item,index) => {
 
-      expandSublinks = ''
+      expandSublinks = false
 
       linksStyle = "list-item text-uppercase right-icon"
         + `${(item.label === page) ? ' active' : ''}`
@@ -41,6 +41,7 @@ const NavSidebar = ({
 
           if (subItem.label === page) {
             expandSublinks = true
+            linksStyle = linksStyle+' contains-active'
           }
 
           subLinksStyle = "list-item"

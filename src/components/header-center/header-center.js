@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "../link/link"
 import Icon from "../icon/icon"
 
 const HeaderCenter = ({data}) => {
@@ -8,9 +9,9 @@ const HeaderCenter = ({data}) => {
     if (boolean) {
       return(
         <div className="it-search-wrapper">
-          <a className="search-link rounded-icon" aria-label={data.search.title} href={data.search.url}>
+          <Link className="search-link rounded-icon" aria-label={data.search.title} to={data.search.url}>
             <Icon icon={data.search.icon}/>
-          </a>
+          </Link>
         </div>
       )
     }
@@ -27,9 +28,9 @@ const HeaderCenter = ({data}) => {
             {data.socials.items.map((value,index)=>{
               return(
                 <li key={"social-item-"+index}>
-                  <a href={value.url} aria-label={value.title} target="_blank">
+                  <Link to={value.url} aria-label={value.title} target="_blank">
                     <Icon icon={value.icon}/>
-                  </a>
+                  </Link>
                 </li>
               )
             })}
@@ -46,12 +47,12 @@ const HeaderCenter = ({data}) => {
           <div className="col-12">
             <div className="it-header-center-content-wrapper">
               <div className="it-brand-wrapper">
-                <a href="/">
+                <Link to="/">
                   <Icon icon="sprites.svg#it-designers-italia" hidden/>
                   <div className="it-brand-text">
                     <div className="it-brand-title">{data.title}</div>
                   </div>
-                </a>
+                </Link>
               </div>
               <div className="it-right-zone">
                 {socials(data.socials)}

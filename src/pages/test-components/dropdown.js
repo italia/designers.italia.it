@@ -4,9 +4,9 @@ import Dropdown from "../../components/dropdown/dropdown"
 import List from "../../components/list/list"
 import Pagedata from "./dropdown.yaml"
 
-const Buttons = () => {
+const Buttons = ({ pageContext }) => {
 	return (
-	  <Template>
+    	<Template Pagedata={Pagedata} pageContext={pageContext}>
 			<div className="container-xxl my-5">
 				<div className="row">
 					<div className="col-12">

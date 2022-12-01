@@ -3,9 +3,9 @@ import Template from "../../templates/tmpl-base"
 import Card from "../../components/card/card"
 import Pagedata from "./cards.yaml"
 
-const Cards = () => {
+const Cards = ({ pageContext }) => {
 	return(
-		<Template>
+    <Template Pagedata={Pagedata} pageContext={pageContext}>
       <div className="container-xxl my-5">
         <div className="row">
           <div className="col-12">

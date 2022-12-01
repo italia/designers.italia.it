@@ -1,5 +1,6 @@
 import React from "react"
 import Icon from "../icon/icon"
+import Link from "../link/link"
 
 const NavPosition = ({
   items,
@@ -20,7 +21,7 @@ const NavPosition = ({
           <div key={"linkItems-"+index} className="d-inline-flex align-items-center me-5 my-2 small w-auto">
             <Icon {...item.icon}/>
             <span className="text-uppercase text-secondary me-3"><strong>{item.title}</strong></span>
-            <a href={item.url}>{item.label}</a>
+            <Link to={item.url}>{item.label}</Link>
           </div>
       )
     })

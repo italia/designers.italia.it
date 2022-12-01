@@ -14,11 +14,12 @@ headerSlim:
     items:
     - title: Designers Italia
       url: "/"
-      black: false
+      blank: false
       active: true
     - title: Developers Italia
       url: https://developers.italia.it/
       blank: true
+      active: false
   # # —
   # # LANG SWITCHER
   # # —
@@ -63,7 +64,9 @@ navbar:
   theme: theme-dark-desk
   ariaLabel: Menu principale
   toggler:
-    srOnly: Mostra o nascondi il menu
+    ariaLabel: Mostra o nascondi il menu
+  close:
+    ariaLabel: Chiudi il menu
   nav:
     id: menu
     # —
@@ -123,7 +126,7 @@ navbar:
                 - url: "/norme-e-riferimenti/#articoli-di-approfondimento/"
                   label: Articoli di approfondimento teorici (Medium)
                 - url: "/norme-e-riferimenti/altre-norme-e-riferimenti"
-                  label: Altre norme e riferimenti  
+                  label: Altre norme e riferimenti
       - isDropDown : true
         isMegaMenu : true
         idMegamenu : menuC
@@ -168,15 +171,15 @@ navbar:
               listItems: #C #M
                 - url: "/design-system/come-iniziare/"
                   label: Come iniziare
-                - url: "/design-system/fondamenti/"
+                - url: "/level1/fondamenti/"
                   label: Fondamenti
-                - url: "/design-system/componenti/"
+                - url: "/level1/componenti/"
                   label: Componenti
             - isMenu: true
               listItems: #C #M
-                - url: "design-system/design-pattern/"
+                - url: "/design-system/design-pattern/"
                   label: Design pattern
-                - url: "design-system/showcase/"
+                - url: "/design-system/showcase/"
                   label: Showcase
       - isDropDown : true
         isMegaMenu : true
@@ -191,7 +194,7 @@ navbar:
           heading:
             url: "/risorse-per-progettare/" #M
             label: Panoramica sulle risorse per progettare servizi digitali della PA #C
-          cols: 
+          cols:
             - isMenu: true
               listItems: #C #M
                 - url: "/risorse-per-progettare/organizzare/"
@@ -238,3 +241,41 @@ navbar:
                   label: Progetti
                 - url: "/community/come-partecipare/"
                   label: Come partecipare
+headerPost:
+  isActive: true
+  nav:
+    id: navBanner
+    ariaLabel: Potrebbe interessarti
+    items: #C #M
+    - title: Pubblicato il **kit UI v3**
+      url: "#"
+      blank: false
+      icon:
+        icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
+        size: "sm"
+        align : "middle"
+        color : "primary"
+        hidden: true
+        addonClasses: "me-2"
+    - title: Benvenuto **kit privacy**
+      url: "#"
+      blank: false
+      icon:
+        icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
+        size: "sm"
+        align : "middle"
+        color : "primary"
+        hidden: true
+        addonClasses: "me-2"
+    # - title: Questo **nuovo sito** è online!
+    #   url: "#"
+    #   icon:
+    #     icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
+    #     size: "sm"
+    #     align : "middle"
+    #     color : "primary"
+    #     hidden: true
+    #     addonClasses: "me-2"
+    newsletter:
+      title: Iscriviti alla newsletter
+      url: "#iscrivitiNewsletter" # right now just scroll down to the form in the footer
