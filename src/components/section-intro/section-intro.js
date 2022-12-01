@@ -14,6 +14,7 @@ const SectionIntro = ({
   moreButton,
   moreButtonClose,
   moreText,
+  isHome
 }) => {
 
   let styles = 'section-intro py-5'
@@ -27,12 +28,21 @@ const SectionIntro = ({
 		HLevel = `h2`
 	}
 
+  let cols
+  let pad
+  if (isHome) {
+    cols = "col-12"
+    pad = "px-3 px-lg-6"
+  }else{
+    cols = "col col-md-10 offset-md-1 col-lg-7"
+    pad= "px-3 px-lg-0"
+  }
   return (
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         <div className="row">
-          <div className='col col-md-10 offset-md-1 col-lg-7'>
-              <div className="px-3 px-lg-0">
+          <div className={cols}>
+              <div className={pad}>
                 {title && <HLevel id={id} className="mb-4">{title}</HLevel>}
                 {subtitle && <h3 className="h5">{subtitle}</h3>}
                 <ReactMarkdown>{text}</ReactMarkdown>

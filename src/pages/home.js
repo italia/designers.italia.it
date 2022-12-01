@@ -17,6 +17,11 @@ const Home = () =>{
       </Highlight>
       {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain}></SearchMain>}
       {Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}></SectionIntro>}
+      {Pagedata.components.highLights.map((hl,index) => {
+        return(
+          <Highlight key={"hl-"+index} {...hl}/>
+        )
+      })}
     </Template>
   )
 }
