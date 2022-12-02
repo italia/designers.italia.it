@@ -43,14 +43,15 @@ const SectionIntro = ({
     cols= "col col-md-10 offset-md-1"
     pad= "px-3 px-lg-0"
   }
+
   return (
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         <div className="row">
           <div className={cols}>
               <div className={pad}>
-                {title && <HLevel id={id} className="mb-4">{title}</HLevel>}
-                {subtitle && <h3 className="h5">{subtitle}</h3>}
+                {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
+                {subtitle && <p className="lead font-sans-serif">{subtitle}</p>}
                 <ReactMarkdown>{text}</ReactMarkdown>
                 {children}
                 {moreButton && <ContentCollapse label={moreButton} labelClose={moreButtonClose}>

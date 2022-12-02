@@ -62,7 +62,7 @@ const HighlightCards = ({
             <div className='col col-md-10 offset-md-1'>
                 <div className="px-3 px-lg-0">
                   {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
-                  <ReactMarkdown>{text}</ReactMarkdown>
+                  <p class="lead">{text}</p> {/*<ReactMarkdown>{text}</ReactMarkdown>*/}
                 </div>
             </div>
           </div>

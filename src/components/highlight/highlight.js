@@ -81,7 +81,7 @@ const Highlight = ({
 							</div>
 							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
 								<HLevel id={id}>{title}</HLevel>
-								{subtitle && <p className="sub-title mb-4">{subtitle}</p>}
+								{subtitle && <p className="lead mb-4">{subtitle}</p>}
                 {numbers && <Numbers {...numbers}/>}
 								{text && <div className={textClass}><ReactMarkdown>{text}</ReactMarkdown></div>}
 								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
