@@ -124,7 +124,10 @@ exports.onCreatePage = async({ page, actions }) => {
       ...page,
       context: {
         ...page.context,
-        lastmodified: logs.latest.date,
+        lastmodified: new Date(logs.latest.date).toLocaleDateString(
+          'it-IT', 
+          { year: 'numeric', month: 'long', day: 'numeric' }
+        )
       },
     })
   }

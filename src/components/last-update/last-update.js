@@ -35,11 +35,7 @@ const LastUpdate = ({
       <div className="row">
         <div className={columnStyle}>
           <p className="px-3 px-lg-0">
-            <small>{title} {new Date(lastmodified).toLocaleDateString(
-                'it-IT', 
-                { year: 'numeric', month: 'long', day: 'numeric' }
-              )
-              }
+            <small>{title} {lastmodified}
               <Link
                 to={licence.url}
                 target={licence.blank ? "_blank" : undefined}
