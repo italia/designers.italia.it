@@ -19,11 +19,11 @@
 # ————————————————————————————————————————————
 seo:
   name: Manuale operativo - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Designers Italia è da sempre una community aperta a tutti i designers e professionisti della PA italiana #C
+  description : Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /progetto/storia/ #M
+  pathname: /norme-e-riferimenti/manuale-operativo/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -97,15 +97,15 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Progetto
+        - label : Norme e riferimenti
           active: false
-          url: /progetto/
-        - label : Storia
+          url: /norme-e-riferimenti/
+        - label : Manuale operativo
           active: true
-    title: Storia #C
-    subtitle: Designers Italia è da sempre una community aperta a tutti i designers e professionisti della PA italiana #C
+    title: Manuale operativo #C
+    subtitle: Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento #C
     tag:
-        label: Progetto  #C
+        label: Fondamento  #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -113,7 +113,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      I contenuti e le risorse di Designers Italia sono in continua evoluzione: dalla versione alpha delle prime linee guida di design per i siti web della PA del 2015 ad oggi, Designers Italia e la sua community hanno **contribuito alla creazione di numerosi progetti digitali** e perseguono l’obiettivo di far evolvere l’identità visiva e i processi di progettazione e ottimizzazione continua dei siti e dei servizi digitali pubblici.  
+      Il Manuale operativo di design è uno strumento di lavoro che Designers Italia mette a disposizione della PA e dei suoi fornitori per raggiungere gli obiettivi definiti nelle Linee guida di design e progettare siti e servizi digitali di qualità con le persone al centro.  
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -141,11 +141,19 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Cultura progettuale
+        - label: Normativa
           url: "#"
           color: primary
           size: lg
-        - label: Human centered design
+        - label: Manuale operativo
+          url: "#"
+          color: primary
+          size: lg
+        - label: Linee guida
+          url: "#"
+          color: primary
+          size: lg
+        - label: CAD
           url: "#"
           color: primary
           size: lg
@@ -195,7 +203,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: I progetti storici di Designers Italia
+    - title: Dalla norma alla pratica progettuale
       bgColor: null
       menu: false
       centered: false
@@ -205,27 +213,32 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "pagoPA - Il servizio di pagamento verso la Pubblica Amministrazione" #C
+          title: "L’approccio a una progettazione virtuosa" #C
           text: | #C 
-            pagoPA è il nodo di pagamenti della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
-          
-            Integrare pagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati in tempo reale, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale. Per un cittadino, pagoPA permette di scegliere il metodo di pagamento tra i diversi a disposizione, a seconda delle comodità e del livello di digitalizzazione.
-            La community di Designers Italia ha lavorato alla revisione del logo e del marchio pagoPA e alla revisione dell’esperienza utente. 
+            L’approccio di design determina profondamente le modalità di gestione di un progetto e ne influenza in maniera decisiva i risultati. Il Manuale operativo ti propone **un approccio basato su cinque fattori chiave**, utili a gestire in maniera efficace i processi di digitalizzazione della Pubblica Amministrazione.
+
+**Sistemico** - Comprendere e progettare le interazioni tra i diversi elementi coinvolti nella fornitura e nell’utilizzo del servizio ti consente di assicurare coerenza, armonia, integrazione e ottimizzazione degli scambi tra cittadini, processi, norme e risorse.
+
+**Utente centrico** - Investigare le necessità degli utenti e coinvolgerli nelle fasi del processo ti permette di realizzare servizi e interfacce accessibili e conformi ai criteri di usabilità, informando la progettazione e validando i risultati.
+
+**Partecipato** - Coinvolgi nel processo progettuale persone con competenze diverse, per facilitare l’esplorazione, l’ideazione e la prototipazione delle tue soluzioni insieme a chi le utilizzerà.
+
+**Aperto** - Condividi pubblicamente le informazioni sui progetti, sfrutta le buone pratiche attingendo a risorse esistenti valide e metti a disposizione i risultati del tuo lavoro sotto forma di documentazione, strumenti e risorse per la community degli attori coinvolti.
+
+**Iterativo** - Segui un processo ciclico di pianificazione, analisi, definizione, sviluppo e test, per valutare le soluzioni proposte, analizzare i risultati e definire le modifiche da apportare nell’ottica del miglioramento continuo del tuo servizio o prodotto digitale. 
             
             ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "SPID - Sistema pubblico di identità digitale" #C
+          title: "Un processo in cinque fasi" #C
           text: | #C 
-            SPID (Sistema Pubblico di Identità Digitale) è il sistema di identità digitale che permette di utilizzare le stesse credenziali per accedere a tutti i servizi digitali della Pubblica Amministrazione da computer, tablet e smartphone. Il cittadino può ottenere SPID tramite i Gestori di identità (Identity Provider): una volta completata la procedura di verifica (che certifica l’identità del richiedente), vengono rilasciate delle credenziali (user e password) che possono essere utilizzate su tutti i siti che offrono servizi al cittadino (Service Provider).
-            
-            Leggi di più sull’integrazione SPID e la documentazione tecnica sulla [scheda SPID di Developers Italia](https://developers.italia.it/it/spid/).  
+            L’approccio del Manuale operativo si articola in **un processo strutturato in cinque fasi**, a cui fare riferimento per impostare il progetto, capire quali competenze coinvolgere e organizzare le attività nell’ordine più adeguato. Le fasi sono ulteriormente **dettagliate in termini di attività suggerite**, e per ciascuna di esse sono **messi a disposizione gli strumenti** adatti per svolgerla.  
 
-          #### Linee guida SPID, asset e codice sorgente h4
+          #### Leggi il Manuale operativo su Docs Italia h4
           ctas:
-          - label: Regole tecniche #C
-            url: "https://docs.italia.it/italia/spid/spid-regole-tecniche/" #M
+          - label: Manuale operativo di design #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/index.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
