@@ -15,6 +15,13 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level4
+
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
@@ -195,7 +202,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Disegnare e sviluppare l'interfaccia utente #C
+            label: "Disegnare e sviluppare l'interfaccia utente" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -256,11 +263,11 @@ components:
   # ///////////////////
   resourceList:
     title: Risorse operative #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
         #title: First group title #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Nuovo UI kit - versione 3.0.0-beta.1 #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
@@ -273,15 +280,32 @@ components:
                 url: "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
           - label: Design UI kit - legacy #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Il repository GitHub con componenti e template ufficiali del design system della Pubblica Amministrazione Italiana #C
             url: "https://github.com/italia/design-ui-kit" #M
+            blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
                 ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
 
 

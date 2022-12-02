@@ -259,11 +259,11 @@ components:
   # ///////////////////
   resourceList:
     title: Risorse operative #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
         #title: First group title #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Anteprime dei template HTML per i servizi digitali comunali #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
@@ -276,6 +276,14 @@ components:
                 url: "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
           - label: Sorgenti dei template HTML per i servizi digitali comunali #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
@@ -285,5 +293,13 @@ components:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
                 ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
           
