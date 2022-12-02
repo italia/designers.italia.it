@@ -67,7 +67,7 @@ components:
           url: /
         - label : Level 1 #C 
           active: true
-    title: Level 1 h1 #C
+    title: Modelli #C
     subtitle: Subtitle #C
     pretext:
       icon:
@@ -130,8 +130,15 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #AUTO
-            - url: "level2/" #M
-              label: "Level" #C
+            - url: "comuni/" #M
+              label: "Comuni" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "scuole/" #M
+              label: "Scuole" #C
               iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
