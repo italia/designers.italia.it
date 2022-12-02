@@ -22,14 +22,10 @@ const SearchMain =({
         <div className="row">
           <div className="col-12">
             <div className="search-main-content px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
-            <div className="row">
-              <div className="col-12 col-lg-9 col-xl-7">
-                <div className="text-container mb-5">
-                  {title && <h2>{title}</h2>}
-                  <p className="lead">{text}</p>
-                </div>
-              </div>
-            </div>
+              <div className="text-container mb-5">
+                {title && <h2>{title}</h2>}
+                <p className="lead">{text}</p>
+               </div>
               <div className="search-form px-4 pb-4 mb-5 shadow-lg">
                 <form id={formId} action={formAction} method="post">
                     <div className="d-flex flex-column align-items-center flex-md-row w-100">
