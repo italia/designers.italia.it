@@ -3,9 +3,9 @@ import Template from "../templates/tmpl-level-1"
 import {Seo} from "../components/seo/seo"
 import Pagedata from "./progetto.yaml"
 
-const Progetto = ({ pageContext }) => {
+const Progetto = ({ pageContext,location }) => {
   return(
-    <Template Pagedata={Pagedata} pageContext={pageContext}>
+    <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}
     </Template>
   )

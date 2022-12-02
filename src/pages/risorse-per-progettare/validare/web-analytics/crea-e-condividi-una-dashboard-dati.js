@@ -4,7 +4,7 @@ import {Seo} from "../../../../components/seo/seo"
 
 import Pagedata from "./crea-e-condividi-una-dashboard-dati.yaml"
 
-const Level4 = ( { pageContext,location }) => {
+const Level4 = ({ pageContext,location }) => {
   return(
     <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}

@@ -4,7 +4,7 @@ import {Seo} from "../../../../components/seo/seo"
 
 import Pagedata from "./prepara-le-attivita-e-svolgi-i-test-di-usabilita.yaml"
 
-const Level4 = ( { pageContext,location }) => {
+const Level4 = ({ pageContext,location }) => {
   return(
     <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}

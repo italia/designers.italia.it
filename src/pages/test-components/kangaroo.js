@@ -3,9 +3,9 @@ import Template from "../../templates/tmpl-base"
 import Kangaroo from "../../components/kangaroo/kangaroo"
 import Pagedata from "./kangaroo.yaml"
 
-const Kangaroos = ({ pageContext }) => {
+const Kangaroos = ({ pageContex, location }) => {
 	return(
-		<Template Pagedata={Pagedata} pageContext={pageContext}>
+		<Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
 			<div className="container-xxl my-5">
 				<div className="row">
 					<div className="col-12">
