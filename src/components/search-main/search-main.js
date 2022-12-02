@@ -29,7 +29,7 @@ const SearchMain =({
               <div className="search-form px-4 pb-4 mb-5 shadow-lg">
                 <form id={formId} action={formAction} method="post">
                     <div className="d-flex flex-column align-items-center flex-md-row w-100">
-                      <div class="form-group mb-0 flex-grow-1 me-md-4 w-100">
+                      <div className="form-group mb-0 flex-grow-1 me-md-4 w-100">
                         <label className="active search-disabled" for={inputId}>{label}</label>
                         <input type="search" className="form-control-plaintext border-search-disabled search-disabled" name={inputName} id={inputId} value="Voglio progettare con Qualità" disabled/>
                       </div>
@@ -40,7 +40,7 @@ const SearchMain =({
                 </form>
               </div>
               <div className="suggest-wrapper d-lg-flex">
-                <h3 class="mb-4 search-disabled">{suggest.title}</h3>
+                <h3 className="mb-4 search-disabled">{suggest.title}</h3>
                 {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5 mt-2">
                   { suggest.items.map((item,index) => {
                     return(
