@@ -3,9 +3,9 @@ import Template from "../../templates/tmpl-base"
 import TextImageCta from "../../components/text-image-cta/text-image-cta"
 import Pagedata from "./text-image-cta.yaml"
 
-const Buttons = ({ pageContext }) => {
+const Buttons = ({ pageContext,location }) => {
 	return (
-		<Template Pagedata={Pagedata} pageContext={pageContext}>
+		<Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
 			<div className="container-xxl my-5">
 				<div className="row justify-content-center">
 					<div className="col-12 mb-3">

@@ -6,9 +6,9 @@ import Pagedata from "./hero.yaml"
 
 // XXX doesn't work with the new breadcrumb plugin, as is, see correct templates
 
-const HeroPage = ({ pageContext }) => {
+const HeroPage = ({ pageContext,location }) => {
 	// return(
-    // // <Template Pagedata={Pagedata} pageContext={pageContext}>
+    // //  <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
 	// 	// 	{ Pagedata.components.heros.map((hero,index) => {
     // //       return(
     // //         <Hero key={"hero-"+index} {...hero} />
