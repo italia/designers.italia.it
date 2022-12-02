@@ -218,9 +218,9 @@ components:
           text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem maecenas nunc, felis tempor blandit.
           signature: GinoMagenta
   highlightCards2:
-    col4: false # FALSE notizie + Medium | TRUE eventi + media
     background: light
     nopadtop: true
+    hasCustomCols: true
     buttons:
     - type: button
       btnStyle: primary
@@ -240,6 +240,7 @@ components:
 
     #CARD with Button
     - title: Community Lab sui temi dell’upgrade del Kit Design React
+      customCol: col-lg-3
       cardEvent: true
       img: /images/600x400.png
       alt: Descrizione immagine
@@ -263,6 +264,7 @@ components:
         list:
           isShare: true
     - title: Titolo articoloz
+      customCol: col-lg-4
       img: /images/600x400.png
       alt: Descrizione immagine
       imgRatio: 16x9
@@ -297,6 +299,7 @@ components:
         list:
           isShare: true
     - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+      customCol: col-lg-4
       img: /images/600x400.png
       alt: Descrizione immagine
       imgRatio: 16x9

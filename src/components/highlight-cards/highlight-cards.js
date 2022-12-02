@@ -16,7 +16,9 @@ const HighlightCards = ({
   buttons,
   topics,
   nospace,
-  nopadtop
+  nopadtop,
+  customCol,
+  hasCustomCols,
 }) => {
 
   let styles = 'highlight-cards'
@@ -40,11 +42,21 @@ const HighlightCards = ({
 
   if (cards) {
     cardsItems = cards.map((item,index) => {
-      return(
-        <div className={cardStyles} key={"cardcol-"+index}>
-          <Card {...item} />
-        </div>
-      )
+      if (!item.customCol){
+        return(
+          <div className={cardStyles} key={"cardcol-"+index}>
+            <Card {...item} />
+          </div>
+        )
+      }else{
+        cardStyles = 'col-12 col-md-6 mb-3 mb-md-4 '+item.customCol
+        return(
+          <div className={cardStyles} key={"cardcol-"+index}>
+            <Card {...item} />
+          </div>
+        )
+      }
+
     })
   }
 
@@ -60,7 +72,7 @@ const HighlightCards = ({
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         {
-          title && <div className="row mb-4 mb-md-5 intro">
+          title && <div className={"row mb-4 mb-md-5 intro"}>
             <div className='col col-md-10 offset-md-1'>
                 <div className="px-3 px-lg-0">
                   {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
@@ -70,7 +82,7 @@ const HighlightCards = ({
           </div>
         }
         {cardsItems &&
-          <div className="row pb-4">
+          <div className={"row pb-4"+hasCustomCols ? 'row pb-4 justify-content-center' : ''}>
             {cardsItems}
           </div>
         }
