@@ -4,6 +4,7 @@ require("dotenv").config({
 })
 
 module.exports = {
+  trailingSlash: "always",
   siteMetadata: {
     siteUrl: `https://designers.italia.it`,
     title : "Designers Italia",
@@ -23,6 +24,7 @@ module.exports = {
       options: {
         useAutoGen: true,
         crumbLabelUpdates: getCrumbLabelUpdates(),
+        autoGenHomeLabel: `Inizio`,
         exclude: [
           `**/dev-404-page/**`,
           `**/404/**`,
