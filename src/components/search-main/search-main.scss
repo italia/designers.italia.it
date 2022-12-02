@@ -1,9 +1,18 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .search-main {
-  p {
-    font-size: 1.3333333333333333rem;
+  .search-disabled {
+    color: #768594;
   }
+  .icon-search-disabled {
+    fill: #768594;
+  }
+  .border-search-disabled {
+    border-bottom: 1px solid #D9DADB;
+  }
+  // p {
+  //   // font-size: 1.3333333333333333rem;
+  // }
   .search-form {
     background: #FFF;
     border: var(--search-main-border);

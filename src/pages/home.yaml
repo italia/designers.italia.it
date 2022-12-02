@@ -24,6 +24,7 @@ seo:
   twitterImage: null #I
   canonical: null
   pathname: /
+  
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
 # ————————————————————————————————————————————
@@ -50,29 +51,34 @@ lastUpdate:
 
 components:
   hero:
-    title : Diventa protagonista della trasformazione digitale
     id: HL1
-    img : /images/it.jpg
-    alt: descrizione immagine
     headingLevel : 1
     big: true
-    subtitle: Designers Italia mette a disposizione la conoscenza e gli strumenti per progettare e realizzare servizi pubblici centrati sulle necessità delle persone
     specular: true
-    fullImg: true
+    title : Diventa protagonista della trasformazione digitale #C
+    subtitle: Designers Italia mette a disposizione la conoscenza e gli strumenti per progettare e realizzare servizi pubblici centrati sulle necessità delle persone
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     moreText: | #C
       Lorem **ipsum**
+
       ## Heading 2
       Lorem [ipsum](#)
+
       ### Heading 3
       Lorem ipsum
+
       ### Heading 4
       Lorem ipsum
+    img : /images/it.jpg #I
+    alt: Alt lorem ipsum #C
+    fullImg: true
+
   searchMain:
+    disabled: true
     background: light
     title: Da dove vuoi iniziare?
-    text: Lorem ipsum
+    text: "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
     formId: searchForm
     formAction: "#"
     label: Cerca
@@ -80,20 +86,20 @@ components:
     imputName: search
     button:
       label: Cerca
-      type: submit
-      btnStyle: primary
+      type: #submit
+      btnStyle: primary disabled search-disabled
       iconRight: true
       icon:
         icon: sprites.svg#it-search
-        color: white
-        addonClasses: ms-1
+        color: #white
+        addonClasses: ms-1 icon-search-disabled
     suggest:
       title: "Ti suggeriamo:"
       items:
         - label : voglio progettare una cosa bella
           url : "#"
         - label : ho bisogno del kit UI
-          url : "#"
+          url : ""
         - label : test usabilità
           url : "#"
         - label : rispettare le linee guida di design
@@ -112,7 +118,7 @@ components:
       specular: true
       img : /images/highlight-sm.jpg
       alt: descrizione immagine
-      headingLevel : 2
+      headingLevel : 3
       background: medium
       text: false
       buttons:
@@ -126,7 +132,7 @@ components:
       specular: false
       img : /images/highlight-sm.jpg
       alt: descrizione immagine
-      headingLevel : 2
+      headingLevel : 3
       background: dark
       text: false
       buttons:
