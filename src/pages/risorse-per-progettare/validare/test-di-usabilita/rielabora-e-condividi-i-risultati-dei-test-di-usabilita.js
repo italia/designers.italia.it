@@ -4,9 +4,9 @@ import {Seo} from "../../../../components/seo/seo"
 
 import Pagedata from "./rielabora-e-condividi-i-risultati-dei-test-di-usabilita.yaml"
 
-const Level4 = () => {
+const Level4 = ({ pageContext }) => {
   return(
-    <Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext}>
       {/* place extra components / HTML here */}
     </Template>
   )

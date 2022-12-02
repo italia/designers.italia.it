@@ -3,9 +3,9 @@ import Template from "../../templates/tmpl-base"
 import Button from "../../components/button/button"
 import Pagedata from "./buttons.yaml"
 
-const Buttons = () => {
+const Buttons = ({ pageContext }) => {
 	return (
-	  <Template Pagedata={Pagedata}>
+		<Template Pagedata={Pagedata} pageContext={pageContext}>
 			<div className="container-xxl my-5">
 				<div className="row">
 					<div className="col-12">

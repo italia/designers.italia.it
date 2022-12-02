@@ -3,9 +3,9 @@ import Template from "../../templates/tmpl-base"
 import HighlightCards from "../../components/highlight-cards/highlight-cards"
 import Pagedata from "./highlight-cards.yaml"
 
-const Highlights = () => {
+const Highlights = ({ pageContext }) => {
 	return(
-		<Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext}>
       <div className="container-xxl my-5">
 				<div className="row">
 					<div className="col-12">

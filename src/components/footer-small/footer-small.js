@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "../link/link"
 import "./footer-small.scss"
 
 const FooterSmall = ({
@@ -13,10 +14,10 @@ const FooterSmall = ({
           {items.map((value,index)=>{
             return(
               <li key={"foot-item-"+index} className="list-inline-item" >
-                <a
-                  href={value.url}
+                <Link
+                  to={value.url}
                   target={value.blank ? "_blank" : undefined}
-                >{value.title}</a>
+                >{value.title}</Link>
               </li>
             )
           })}
