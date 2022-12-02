@@ -42,12 +42,10 @@ const Home = () =>{
               <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
             </div>
           }
-          {Pagedata.components.sectionIntroImg.highlightCards &&
-            <div className="negative-x">
-              <HighlightCards {...Pagedata.components.sectionIntroImg.highlightCards}></HighlightCards>
-            </div>
-          }
         </SectionIntro>}
+      {Pagedata.components.highlightCards2 &&
+        <HighlightCards {...Pagedata.components.highlightCards2}></HighlightCards>
+      }
       {Pagedata.components.bannerTextCta &&
           <BannerTextCta {...Pagedata.components.bannerTextCta}>
             {Pagedata.components.bannerTextCta.numbers &&

@@ -20,6 +20,7 @@
         }
       }
     }
+
   }
 }
 
@@ -49,6 +50,9 @@
 @include media-breakpoint-up(md) {
   .highlight-cards{
     padding-top: calc(var(--spacer) * 24) !important;
+    &.no-pad-top{
+      padding-top: 24px !important;
+    }
     .di-card {
       height: 100%;
     }

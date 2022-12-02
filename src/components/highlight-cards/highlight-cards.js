@@ -15,12 +15,14 @@ const HighlightCards = ({
   col4,
   buttons,
   topics,
-  nospace
+  nospace,
+  nopadtop
 }) => {
 
   let styles = 'highlight-cards'
 	+ `${background ? ' bg-'+background : ''}`
   + `${nospace ? '' : '  py-5 py-lg-6'}`
+  + `${nopadtop ? '  no-pad-top' : ''}`
 
   let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'
 	+ `${col4 ? ' col-lg-3' : ' col-lg-4'}`

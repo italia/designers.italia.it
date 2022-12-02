@@ -209,123 +209,125 @@ components:
             icon: sprites.svg#it-user
           text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sem maecenas nunc, felis tempor blandit.
           signature: GinoMagenta
-    highlightCards:
-      col4: false # FALSE notizie + Medium | TRUE eventi + media
-      buttons:
-      - type: button
-        btnStyle: primary
-        label: Esplora tutti gli approfondimenti
-        addonStyle: me-3 d-block
-      - type: button
-        btnStyle: outline-primary
-        label: Vai al Medium di Designers Italia
-        icon:
-          icon: sprites.svg#it-external-link
-          color: primary
-          align: middle
-          size: sm
-          addonClasses: ms-2
-      # CARDS
-      cards:
+  highlightCards2:
+    col4: false # FALSE notizie + Medium | TRUE eventi + media
+    background: light
+    nopadtop: true
+    buttons:
+    - type: button
+      btnStyle: primary
+      label: Esplora tutti gli approfondimenti
+      addonStyle: me-3 d-block
+    - type: button
+      btnStyle: outline-primary
+      label: Vai al Medium di Designers Italia
+      icon:
+        icon: sprites.svg#it-external-link
+        color: primary
+        align: middle
+        size: sm
+        addonClasses: ms-2
+    # CARDS
+    cards:
 
-      #CARD with Button
-      - title: Community Lab sui temi dell’upgrade del Kit Design React
-        cardEvent: true
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 4x3
-        imgPlaceholder: false
-        dateOverlay:
-          day: 22
-          month: Aprile
-        url: "#"
-        tag:
-          label: Community Lab
-        share:
-          btnId: shareButtonCard5
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-      - title: Titolo articoloz
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
+    #CARD with Button
+    - title: Community Lab sui temi dell’upgrade del Kit Design React
+      cardEvent: true
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 4x3
+      imgPlaceholder: false
+      dateOverlay:
+        day: 22
+        month: Aprile
+      url: "#"
+      tag:
+        label: Community Lab
+      share:
+        btnId: shareButtonCard5
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+    - title: Titolo articoloz
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 16x9
+      imgPlaceholder: false
+      url: "#"
+      blank: true
+      moreInfo: 6 dicembre 2022
+      text: |
+        E descrizione corta corta vedi lo spazio va bene questa.
+      chips:
+        - color : secondary
+          label : Accessibilità
+          url : "#"
+          blank: false
+        - color : secondary
+          label : Servizi
+          url : "#"
+          blank: false
+        - color : secondary
+          label : PA Digitale 2026
+          url : "#"
+          blank: false
+      share:
+        btnId: shareButtonCard1
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+    - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 16x9
+      imgPlaceholder: false
+      url: "#"
+      moreInfo: di Daniele Tabellini  e Fabrizio Caccavello
+      externalLink:
+        label : Leggi su medium
         url: "#"
         blank: true
-        moreInfo: 6 dicembre 2022
-        text: |
-          E descrizione corta corta vedi lo spazio va bene questa.
-        chips:
-          - color : secondary
-            label : Accessibilità
-            url : "#"
-            blank: false
-          - color : secondary
-            label : Servizi
-            url : "#"
-            blank: false
-          - color : secondary
-            label : PA Digitale 2026
-            url : "#"
-            blank: false
-        share:
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        url: "#"
-        moreInfo: di Daniele Tabellini  e Fabrizio Caccavello
-        externalLink:
-          label : Leggi su medium
-          url: "#"
-          blank: true
-          screenReaderText: l'articolo completo
+        screenReaderText: l'articolo completo
+        icon:
+          icon: sprites.svg#it-external-link
+          size: xs
+          align: middle
+      chips:
+        - color : secondary
+          label : Accessibilità
+          url : "#"
+          blank: false
+        - color : secondary
+          label : Servizi
+          url : "#"
+          blank: false
+        - color : secondary
+          label : PA Digitale 2026
+          url : "#"
+          blank: false
+      share:
+        btnId: shareButtonCard2
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
           icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-            align: middle
-        chips:
-          - color : secondary
-            label : Accessibilità
-            url : "#"
-            blank: false
-          - color : secondary
-            label : Servizi
-            url : "#"
-            blank: false
-          - color : secondary
-            label : PA Digitale 2026
-            url : "#"
-            blank: false
-        share:
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
   bannerTextCta:
     id: bannerBottom
     title: Diamo i numeri
