@@ -91,7 +91,7 @@ exports.onCreateNode = async ({
 
 exports.onCreatePage = async({ page, actions }) => {
   const { createPage, deletePage } = actions
-  console.log(page.path)
+  console.log(`📑 Generating ${page.path}`);
   if (page.context.lastmodified === undefined) {
     let yamlPath = path.join('src', 'pages', `${page.path.replace(/^\/|\/$/g, '')}.yaml`)
     try {
