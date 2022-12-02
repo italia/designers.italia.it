@@ -9,9 +9,29 @@
 }
 
 .ratio-megamenu {
-    --bs-aspect-ratio: 42.85%; // 21x9
-    @include media-breakpoint-up(lg) {
-      --bs-aspect-ratio: 56.25%; // 16x9
-    }
+  --bs-aspect-ratio: 42.85%; // 21x9
+  @include media-breakpoint-up(lg) {
+    --bs-aspect-ratio: 56.25%; // 16x9
   }
-  
+}
+
+.heading-link {
+  margin-left: 28px;
+  margin-right: 28px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #d9dadb !important;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: .8889em;
+  line-height: 1em;
+}
+
+
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+  .heading-link {
+    margin: 0 0 24px;
+    padding: 16px 28px 32px;
+  }
+}
