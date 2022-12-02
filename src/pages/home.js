@@ -31,12 +31,12 @@ const Home = () =>{
       {Pagedata.components.highlightCards &&
         <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>
       }
-      {Pagedata.components.imageIcons &&
-        <ImageIcons {...Pagedata.components.imageIcons}></ImageIcons>
-      }
 
       {Pagedata.components.sectionIntroImg &&
         <SectionIntro {...Pagedata.components.sectionIntroImg}>
+                {Pagedata.components.imageIcons &&
+        <ImageIcons {...Pagedata.components.imageIcons}></ImageIcons>
+      }
           {Pagedata.components.sectionIntroImg.testimonials &&
             <div className="pt-5">
               <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
