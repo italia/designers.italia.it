@@ -2,6 +2,7 @@ import * as React from "react"
 import Icon from "../icon/icon"
 import { useEffect } from "react";
 import {Dropdown} from "bootstrap-italia"
+import "./header-menu-link.scss"
 
 const HeaderMenuLink = ({
 	isDropDown,
@@ -18,7 +19,7 @@ const HeaderMenuLink = ({
 	const styles = 'nav-link'
 		+ `${isDropDown ? ' dropdown-toggle' : ''}`
 		+ `${page===label ? ' active' : ''}`
-		+ ' px-lg-3 px-xl-4'
+		+ ' px-lg-3 fw-semibold'
 
 	function icon(boolean){
 		if (boolean) {
@@ -27,17 +28,33 @@ const HeaderMenuLink = ({
 			)
 		}
 	}
-	return (
-		<a
-			className={styles}
-			href={url ? url : '#'}
-			data-bs-toggle={isDropDown ? 'dropdown' : undefined}
-			aria-expanded={isDropDown ? 'false' : undefined}
-			id={idMegamenu}
-			>
-			<span>{label}</span>
-			{icon(isDropDown)}
-		</a>
-	)
+
+  if (isDropDown) {
+    return (
+      <button
+        className={styles}
+        data-bs-toggle={isDropDown ? 'dropdown' : undefined}
+        aria-expanded={isDropDown ? 'false' : undefined}
+        id={idMegamenu}
+        >
+        <span>{label}</span>
+        {icon(isDropDown)}
+      </button>
+    )
+  } else {
+    return (
+      <a
+        className={styles}
+        href={url ? url : '#'}
+        data-bs-toggle={isDropDown ? 'dropdown' : undefined}
+        aria-expanded={isDropDown ? 'false' : undefined}
+        id={idMegamenu}
+        >
+        <span>{label}</span>
+        {icon(isDropDown)}
+      </a>
+    )
+  }
+
 }
 export default HeaderMenuLink

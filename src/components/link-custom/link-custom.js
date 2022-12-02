@@ -1,6 +1,7 @@
 import React from "react"
 import ImageResponsive from "../image-responsive/image-responsive"
 import Icon from "../icon/icon"
+import Link from "../link/link"
 import "./link-custom.scss"
 
 const LinkCustom = ({
@@ -18,15 +19,15 @@ const LinkCustom = ({
   let imageStyles = "flex-shrink-0"
     + `${imageClass ? ' '+imageClass : ''}`
   return (
-    <a
+    <Link
       className={linkStyles}
-      href={url}
+      to={url}
       target={blank ? "_blank" : undefined}
     >
       {icon ? <Icon {...icon}/> : ''}
       {image ? <ImageResponsive src={image} aria-hidden="true" imgClassName={imageStyles}/> : ''}
       <strong className={labelSmall ? 'small' : null}>{label}</strong>
-    </a>
+    </Link>
   )
 }
 

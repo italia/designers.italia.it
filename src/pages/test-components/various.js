@@ -15,9 +15,9 @@ import Pagedata from "./various.yaml"
 
 
 
-const HomePage = () => {
+const HomePage = ({ pageContext }) => {
 	return (
-	  <Template>
+	  <Template Pagedata={Pagedata} pageContext={pageContext}>
       <Tag url="#">Registrazione</Tag>
       { Pagedata.components.chips.map((chip,index) => {
           return(
@@ -75,11 +75,11 @@ const HomePage = () => {
 					<ListItem url="#" isDropdown>Azione 3</ListItem>
 				</List>
 			</Dropdown>
-			<Breadcrumbs
+			{/* <Breadcrumbs // XXX Now via plugin, not anymore usefull
 				separator="/"
 				//dark={true}
 				//icon="sprites.svg#it-link"
-			/>
+			/> */}
         <h1>Page content</h1>
         <p>Maecenas vel efficitur felis. In elementum scelerisque molestie. Integer ac ex quis erat vestibulum vestibulum ut vitae erat. Ut enim ipsum, euismod luctus nunc sit amet, elementum convallis enim. Nunc turpis dolor, aliquam sed metus in, aliquet dignissim augue. Mauris eros massa, blandit eget tortor ac, ornare pellentesque ante. Ut pretium accumsan elit, at ultrices nisl. Quisque pulvinar nibh nisi, id elementum sem faucibus nec. Vivamus commodo placerat elit, ac dignissim nibh sodales ac. Pellentesque consectetur nisi erat, vel dignissim elit eleifend feugiat. Pellentesque enim eros, convallis id ante quis, iaculis vulputate enim.</p>
       </Section>

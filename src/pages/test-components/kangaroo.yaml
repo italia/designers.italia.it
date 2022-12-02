@@ -1,5 +1,37 @@
 ---
 name: Kangaroo
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: base
+    
+# ————————————————————————————————————————————
+# DATE, LICENSE, URL
+# ————————————————————————————————————————————
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 15 dicembre 2022 #C #AUTO
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it  #M #AUTO
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
 components:
   kangaroos:
     - id: kangarooExample
