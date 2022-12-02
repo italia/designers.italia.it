@@ -25,6 +25,7 @@ const Highlight = ({
     textSanSerif,
     fullImg,
     children,
+    reversedMobile
 	}
 ) => {
 	let styles = 'highlight'
@@ -33,6 +34,7 @@ const Highlight = ({
 
 	let classes = 'highlight-content d-lg-flex'
 	+ `${specular ? ' flex-lg-row-reverse' : ''}`
+  + `${reversedMobile ? ' d-flex flex-column-reverse' : ''}`
   + `${img ? '' : ' no-image'}`
 
 	//heading level

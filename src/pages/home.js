@@ -11,6 +11,7 @@ import ImgFull from "../components/img-full/img-full"
 import Testimonials from "../components/testimonials/testimonials"
 import BannerTextCta from "../components/banner-text-cta/banner-text-cta"
 import Numbers from "../components/numbers/numbers"
+import ImageIcons from "../components/image-icons/image-icons"
 
 const Home = () =>{
   return(
@@ -30,15 +31,14 @@ const Home = () =>{
       {Pagedata.components.highlightCards &&
         <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>
       }
+      {Pagedata.components.imageIcons &&
+        <ImageIcons {...Pagedata.components.imageIcons}></ImageIcons>
+      }
+
       {Pagedata.components.sectionIntroImg &&
         <SectionIntro {...Pagedata.components.sectionIntroImg}>
-          {Pagedata.components.sectionIntroImg.imgFull &&
-            <div className="negative-x mt-5">
-              <ImgFull {...Pagedata.components.sectionIntroImg.imgFull}></ImgFull>
-            </div>
-          }
           {Pagedata.components.sectionIntroImg.testimonials &&
-            <div className="pt-5">
+            <div className="pt-5 negative-x">
               <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
             </div>
           }
