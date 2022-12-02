@@ -15,6 +15,13 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level4
+        
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
@@ -23,7 +30,7 @@ seo:
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/validare/web-analytics/rispetta-la-privacy-per-il-go-live-di-un-sito/ #M
+  pathname: /risorse-per-progettare/organizzare/privacy/rispetta-la-privacy-per-il-go-live-di-un-sito/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -247,21 +254,29 @@ components:
   # ///////////////////
   resourceList:
     title: Risorse operative #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
         title: Uso delle immagini e di altri contenuti digitali #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Uso delle immagini online #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Gli aspetti da considerare per un uso delle immagini online nel rispetto della normativa privacy vigente e delle licenze di distribuzione dei contenuti #C
-            url: "https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing" #M
+            url: https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing" #M
+                url: https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
           - label: Modello di liberatoria #C
@@ -273,7 +288,15 @@ components:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing" #M
                 ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                blank: true  
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
       - simpleList : true
         title: La cookie policy #C
         headingLevel: 4
@@ -287,6 +310,14 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "https://docs.google.com/document/d/1ChKavo4luDearddgPfD56KahRgpe91Qrej6rNLq_w-E/edit?usp=sharing" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
       - simpleList : true
@@ -304,6 +335,14 @@ components:
                 url: "https://docs.google.com/document/d/1tE6wL2eOJEW6_ru307eE6piDqGDHII6UQvHGJ3VSG8Q/edit?usp=sharing" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
       - simpleList : true
         title: Contenuti multimediali incorporati #C
         headingLevel: 4
@@ -317,6 +356,14 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "https://docs.google.com/document/d/1URK2eWjnw9h8T1z3CG6ycax0BxNKvfd2ndUpvP5ZHy8/edit?usp=sharing" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
          
