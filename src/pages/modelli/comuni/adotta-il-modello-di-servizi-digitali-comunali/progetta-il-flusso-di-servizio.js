@@ -4,9 +4,9 @@ import {Seo} from "../../../../components/seo/seo"
 
 import Pagedata from "./progetta-il-flusso-di-servizio.yaml"
 
-const Level4 = ({ pageContext }) => {
+const Level4 = ({ pageContext, location }) => {
   return(
-    <Template Pagedata={Pagedata} pageContext={pageContext}>
+    <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}
     </Template>
   )
