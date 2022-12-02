@@ -20,17 +20,17 @@
 metadata: 
   template:
     name: level4
-
+        
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Rielabora le informazioni - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Schematizza, analizza e rilabora le informazioni raccolte per presentarle agli stakeholder. #C
+  name: Rispetta la privacy per il go-live di un servizio digitale - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : "Scopri come valutare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali" #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/esperienza-utente/rielabora-le-informazioni/ #M
+  pathname: /risorse-per-progettare/organizzare/privacy/rispetta-la-privacy-per-il-go-live-di-un-sito/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -69,7 +69,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Comprendere #C
+        label: Organizzare #C
         url: "../../" #M
       - title: Nel kit di design #C
         icon:
@@ -77,7 +77,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Interviste soggetti coinvolti #C
+        label: Privacy #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -127,16 +127,16 @@ components:
         - label : Risorse per progettare
           active: false
           url: ../../../
-        - label : Comprendere
+        - label : Organizzare
           url: ../../
           active: false
-        - label : Interviste soggetti coinvolti
+        - label : Privacy
           url: ../
           active: false
-        - label : Rielabora le informazioni
+        - label : Rispetta la privacy per il go-live di un sito o servizio digitale
           active: true
-    title: Rielabora le informazioni #C
-    subtitle: Schematizza, analizza e rilabora le informazioni raccolte per presentarle agli stakeholder  #C
+    title: Rispetta la privacy per il go-live di un sito o servizio digitale #C
+    subtitle: Scopri come valutare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
@@ -175,15 +175,15 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Comprendere #C
+            label: Organizzare #C
             url: "../../" #M
-          - title: Nel kit #C
+          - title: Nel kit di design #C
             icon:
               icon: "sprites.svg#it-tool"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Interviste soggetti coinvolti #C
+            label: Privacy #C
             url: "../" #M
       otherInfo:
         items:
@@ -203,14 +203,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer #C
+            label: Designer, Legale #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Capire il contesto d'uso del servizio #C
+            label: Pianificare le attività di progettazione #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -218,11 +218,11 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Ricerca utente
+        - label: Dati personali
           url: "#"
           color: primary
           size: lg
-        - label: Interviste
+        - label: Privacy
           url: "#"
           color: primary
           size: lg
@@ -233,7 +233,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Come sintetizzare i risultati e presentarli #C
+    - title: Valuta quali categorie di dati personali tratterai per l'erogazione di un servizio digitale #C
       menu: false
       centered: true
       bgColor: null
@@ -243,33 +243,73 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          # title: A cosa servono h3 #C
+          # title: | #C
           text: | #C
-            **Schematizza le informazioni raccolte** riportando in maniera sintetica i resoconti verbali delle interviste con le persone partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli. 
-
-            **Categorizza e classifica le evidenze** per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.
-
-            **Sintetizza le tue conclusioni** in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc.
-
+            Quando progetti la messa on line di un servizio devi **considerare se le funzionalità che intendi offrire ai tuoi utenti comportano la raccolta e l’utilizzo di dati personali (art.4, punto 1 del GDPR)**. Tra le casistiche più frequenti che richiedono un trattamento di dati personali ti ricordiamo: l’invio di una newsletter, la registrazione/sottoscrizione mediante compilazione di un form, la presenza di una sezione Contatti, la ricezione di candidature o la gestione dei cookie. 
+            
+            Ricorda che per ciascuna di queste casistiche, e nel rispetto del principio di minimizzazione, **ti è consentito richiedere esclusivamente i dati strettamente necessari all’erogazione del servizio**.
+            
   # ///////////////////
   # RESOURCES
   # ///////////////////
   resourceList:
     title: Risorse operative #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
+        title: Uso delle immagini e di altri contenuti digitali #C
+        headingLevel: 3
+        listItems:
+          - label: Uso delle immagini online #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Gli aspetti da considerare per un uso delle immagini online nel rispetto della normativa privacy vigente e delle licenze di distribuzione dei contenuti #C
+            url: https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://docs.google.com/document/d/1UoGQkbdXFwEs0h1sDdW2jJHK44LhVfNqTjJwQdKhRBc/edit?usp=sharing #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+          - label: Modello di liberatoria #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Modello di liberatoria al trattamento delle immagini online per maggiorenni e minorenni #C
+            url: "https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing" #M
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+      - simpleList : true
+        title: La cookie policy #C
         headingLevel: 4
         listItems:
-          - label: Tabella di analisi dei risultati #C
+          - label: Suggerimenti per la cookie policy di un sito #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: I fogli di lavoro dove riportare le evidenze delle interviste per elaborare le conclusioni #C
-            url: https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing #M
+            text: Una risorsa che contiene suggerimenti e informazioni utili per la gestione del consenso legato all'uso dei cookie  #C
+            url: "https://docs.google.com/document/d/1ChKavo4luDearddgPfD56KahRgpe91Qrej6rNLq_w-E/edit?usp=sharing" #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing #M
+                url: "https://docs.google.com/document/d/1ChKavo4luDearddgPfD56KahRgpe91Qrej6rNLq_w-E/edit?usp=sharing" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -280,15 +320,19 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: Presentazione dei risultati delle interviste #C
+      - simpleList : true
+        title: L'invio di newsletter #C
+        headingLevel: 4
+        listItems:
+          - label: Modello di informativa per l'invio di newsletter #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il modello per presentare i risultati delle interviste #C
-            url: https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing #M
+            text: Un modello di informativa di primo livello dedicata all'invio di una newsletter  #C
+            url: "https://docs.google.com/document/d/1tE6wL2eOJEW6_ru307eE6piDqGDHII6UQvHGJ3VSG8Q/edit?usp=sharing" #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing #M
+                url: "https://docs.google.com/document/d/1tE6wL2eOJEW6_ru307eE6piDqGDHII6UQvHGJ3VSG8Q/edit?usp=sharing" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -299,15 +343,19 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: Consenso al trattamento dei dati #C
+      - simpleList : true
+        title: Contenuti multimediali incorporati #C
+        headingLevel: 4
+        listItems:
+          - label: Come escludere i cookie di terze parti dai contenuti multimediali incorporati #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell’intervista #C
-            url: https://docs.google.com/document/d/1c4Ea2ni0aq4_4zq9kaojtrFRH5QQGKhYZvCo2b1mr2U/edit?usp=sharing #M
+            text: Istruzioni per escludere il tracciamento di cookie di terze parti dai contenuti multimediali incorporati  #C
+            url: "https://docs.google.com/document/d/1URK2eWjnw9h8T1z3CG6ycax0BxNKvfd2ndUpvP5ZHy8/edit?usp=sharing" #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/document/d/1c4Ea2ni0aq4_4zq9kaojtrFRH5QQGKhYZvCo2b1mr2U/edit?usp=sharing #M
+                url: "https://docs.google.com/document/d/1URK2eWjnw9h8T1z3CG6ycax0BxNKvfd2ndUpvP5ZHy8/edit?usp=sharing" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -318,3 +366,4 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
+         

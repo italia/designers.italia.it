@@ -3,9 +3,9 @@ import Template from "../templates/tmpl-base"
 import {Seo} from "../components/seo/seo"
 import Pagedata from "./index.yaml"
 
-const Index = ({ pageContext }) => {
+const Index = ({ pageContext,location }) => {
   return(
-    <Template Pagedata={Pagedata} pageContext={pageContext}>
+    <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       <div className="container-xxl py-5 py-lg-6">
         <div className="row px-3 px-md-0">
           <div className="col-12 col-md-10 offset-md-1">

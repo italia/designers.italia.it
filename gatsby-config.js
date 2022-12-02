@@ -1,4 +1,7 @@
 const { getCrumbLabelUpdates } = require('./scripts/breadcrumbs');
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
 
 module.exports = {
   trailingSlash: "always",
@@ -56,7 +59,14 @@ module.exports = {
         name: `staticImages`,
         path: `${__dirname}/static/images/`,
       },
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/pages/`,
+      },
+    },
+    `@colliercz/gatsby-transformer-gitinfo`,
     /*{
       resolve: 'gatsby-plugin-htaccess',
       // docs here: https://www.npmjs.com/package/gatsby-plugin-htaccess

@@ -2,7 +2,7 @@ import * as React from "react"
 import Template from "../../../../templates/tmpl-level-4"
 import {Seo} from "../../../../components/seo/seo"
 
-import Pagedata from "./pianifica-le-interviste.yaml"
+import Pagedata from "./rispetta-la-privacy-quando-coinvolgi-gli-utenti-nella-ricerca.yaml"
 
 const Level4 = ({ pageContext,location }) => {
   return(

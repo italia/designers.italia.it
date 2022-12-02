@@ -22,14 +22,11 @@ const ResourceList = ({
   if (list) {
     listItem = list.map((item,index) => {
       return(
-        <>
-          <div className={addonClasses}>
-              <div className="px-3 px-lg-0">
-                <List {...item} key={"list-"+index}/>
-              </div>
-          </div>
-
-        </>
+        <div className={addonClasses} key={"list-"+index}>
+            <div className="px-3 px-lg-0">
+              <List {...item}/>
+            </div>
+        </div>
       )
     })
   }

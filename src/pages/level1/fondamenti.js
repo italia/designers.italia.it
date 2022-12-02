@@ -4,9 +4,9 @@ import {Seo} from "../../components/seo/seo"
 
 import Pagedata from "./fondamenti.yaml"
 
-const DesignSystemFondamenti = ({ pageContext }) => {
+const DesignSystemFondamenti = ({ pageContext,location }) => {
   return(
-    <Template Pagedata={Pagedata} pageContext={pageContext}>
+    <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}
     </Template>
   )

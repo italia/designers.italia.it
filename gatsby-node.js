@@ -5,6 +5,12 @@ const { findValues } = require('./server/utils/findValues')
 
 const STATIC_ASSET_PATH = __dirname + '/static'
 
+const { simpleGit } = require('simple-git');
+var path = require('path');
+const fs = require('fs')
+
+
+
 const isRemoteAsset= (assetPath) => {
   return assetPath.startsWith('http')
 }
@@ -69,9 +75,7 @@ exports.onCreateNode = async ({
   createNodeId,
   getCache,
 }) => {
-  if (
-    node.internal.type === "RemoteAsset"
-  ) {
+  if (node.internal.type === "RemoteAsset") {
     const fileNode = await createRemoteFileNode({
       url: node.source,
       parentNodeId: node.id,
@@ -82,5 +86,49 @@ exports.onCreateNode = async ({
     if (fileNode) {
       createNodeField({ node, name: "localFile", value: fileNode.id })
     }
+   }
+}
+
+exports.onCreatePage = async({ page, actions }) => {
+  const { createPage, deletePage } = actions
+  console.log(`📑 Generating ${page.path}`);
+  if (page.context.lastmodified === undefined) {
+    let yamlPath = path.join('src', 'pages', `${page.path.replace(/^\/|\/$/g, '')}.yaml`)
+    try {
+      if (!fs.existsSync(yamlPath)) {
+        yamlPath = path.join('src', 'pages', `${page.path.replace(/^\/|\/$/g, '')}`, '/', 'index.yaml')
+      }
+    } catch(err) {
+      return
+    }
+    const logOptions = {
+      file: yamlPath,
+      n: 1,
+      format: {
+        date: `%ai`,
+        authorName: `%an`,
+        authorEmail: "%ae"
+      }
+    };
+    let logs = []
+    try {
+      logs = await simpleGit().log(logOptions)
+      if (!logs.latest) {
+        return
+      }
+    } catch(err) {
+      return
+    }
+    deletePage(page)
+    createPage({
+      ...page,
+      context: {
+        ...page.context,
+        lastmodified: new Date(logs.latest.date).toLocaleDateString(
+          'it-IT', 
+          { year: 'numeric', month: 'long', day: 'numeric' }
+        )
+      },
+    })
   }
 }

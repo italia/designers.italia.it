@@ -14,12 +14,23 @@ const Tag = ({
 	}
   let styles = "tag"
     + `${addonClasses ? ' '+addonClasses : ''}`
-	return(
-		<Link to={url} className={styles}>
-			<span className="visually-hidden">{screenReaderText}</span>
-      {children}
-		</Link>
-	)
+
+  if (url) {
+    return(
+      <Link to={url} className={styles}>
+        <span className="visually-hidden">{screenReaderText}</span>
+        {children}
+      </Link>
+    )
+  } else {
+    return(
+      <span className={styles}>
+        <span className="visually-hidden">{screenReaderText}</span>
+        {children}
+      </span>
+    )
+  }
+
 }
 
 export default Tag

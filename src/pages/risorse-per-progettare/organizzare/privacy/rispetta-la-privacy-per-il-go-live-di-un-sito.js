@@ -2,9 +2,9 @@ import * as React from "react"
 import Template from "../../../../templates/tmpl-level-4"
 import {Seo} from "../../../../components/seo/seo"
 
-import Pagedata from "./pianifica-le-interviste.yaml"
+import Pagedata from "./rispetta-la-privacy-per-il-go-live-di-un-sito.yaml"
 
-const Level4 = ({ pageContext,location }) => {
+const Level4 = ({ pageContext,location }) => {  	
   return(
     <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}

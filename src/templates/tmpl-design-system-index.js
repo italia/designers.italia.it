@@ -27,7 +27,7 @@ import dsNav from "../data/dsnav.yaml"
 import { Sticky } from "bootstrap-italia/dist/bootstrap-italia.esm"
 const sticky = Sticky //trick for treeshaking
 
-const Template = ({children,Pagedata,pageContext}) => {
+const Template = ({children,Pagedata,pageContext,location}) => {
 	return (
     <div id="app">
       <Skiplinks data={skipLinksData.skiplinks}/>
@@ -61,7 +61,7 @@ const Template = ({children,Pagedata,pageContext}) => {
                   <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
                 )
               })}
-              {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
+             {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
             </div>
           </div>
         </div>
