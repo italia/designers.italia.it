@@ -38,7 +38,7 @@ const Home = () =>{
       {Pagedata.components.sectionIntroImg &&
         <SectionIntro {...Pagedata.components.sectionIntroImg}>
           {Pagedata.components.sectionIntroImg.testimonials &&
-            <div className="pt-5 negative-x">
+            <div className="pt-5">
               <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
             </div>
           }

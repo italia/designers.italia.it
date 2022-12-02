@@ -1,15 +1,15 @@
 @import "../../scss/bootstrap-breakpoints";
 .testimonials {
   .icon-wrapper {
-    width: var( --testimonials-icon-size);
-    height: var( --testimonials-icon-size);
-    border-radius: var( --testimonials-icon-size);
+    width: calc(var(--testimonials-icon-size) / 1.5);
+    height: calc(var(--testimonials-icon-size) / 1.5);
+    border-radius: 50%;
     background-color: var(--color-accent);
   }
   .icon {
     flex-shrink: 0;
-    width: var(--testimonials-icon-inside-size);
-    height: var(--testimonials-icon-inside-size);
+    width: calc(var(--testimonials-icon-inside-size) / 1.5);
+    height: calc(var(--testimonials-icon-inside-size) / 1.5);
     fill: #FFF;
   }
   .fw-medium {
@@ -43,6 +43,16 @@
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
+  .testimonials {
+    .icon-wrapper {
+      width: var( --testimonials-icon-size);
+      height: var( --testimonials-icon-size);
+    }
+    .icon {
+      width: var(--testimonials-icon-inside-size);
+      height: var(--testimonials-icon-inside-size);
+    }
+  }
 }
 
 //Desktop -----------------------------------------------------------------------------------------------
