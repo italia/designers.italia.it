@@ -22,27 +22,33 @@ const SearchMain =({
         <div className="row">
           <div className="col-12">
             <div className="search-main-content px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
-              <div className="text-container mb-5">
-                {title && <h2>{title}</h2>}
-                {text && <ReactMarkdown>{text}</ReactMarkdown>}
+            <div className="row">
+              <div className="col-12 col-lg-9 col-xl-7">
+                <div className="text-container mb-5">
+                  {title && <h2>{title}</h2>}
+                  <p className="lead">{text}</p>
+                </div>
               </div>
+            </div>
               <div className="search-form px-4 pb-4 mb-5 shadow-lg">
                 <form id={formId} action={formAction} method="post">
-                    <div className="d-flex align-items-center">
-                      <div class="form-group mb-0 flex-grow-1 me-4">
-                        <label className="active" for={inputId}>{label}</label>
-                        <input type="search" class="form-control" name={inputName} id={inputId}/>
+                    <div className="d-flex flex-column align-items-center flex-md-row w-100">
+                      <div class="form-group mb-0 flex-grow-1 me-md-4 w-100">
+                        <label className="active search-disabled" for={inputId}>{label}</label>
+                        <input type="search" className="form-control-plaintext border-search-disabled search-disabled" name={inputName} id={inputId} value="Voglio progettare con Qualità" disabled/>
                       </div>
-                      <Button {...button}></Button>
+                      <div className="button-wrapper mt-4 mt-md-0">
+                        <Button {...button}></Button>
+                      </div>
                     </div>
                 </form>
               </div>
               <div className="suggest-wrapper d-lg-flex">
-                <h3 class="mb-4">{suggest.title}</h3>
+                <h3 class="mb-4 search-disabled">{suggest.title}</h3>
                 {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5 mt-2">
                   { suggest.items.map((item,index) => {
                     return(
-                      <a className="me-5 mb-3" key={"a"+index} href={item.url}>{item.label}</a>
+                      <a className="me-5 mb-3 search-disabled" key={"a"+index} /*href={item.url}*/>{item.label}</a>
                     )
                   })}
                 </div>}
