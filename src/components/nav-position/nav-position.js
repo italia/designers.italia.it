@@ -21,7 +21,7 @@ const NavPosition = ({
           <div key={"linkItems-"+index} className="d-inline-flex align-items-center me-5 my-2 small w-auto">
             <Icon {...item.icon}/>
             <span className="text-uppercase text-secondary me-3"><strong>{item.title}</strong></span>
-            <Link to={item.url}>{item.label}</Link>
+            {item.url ?<Link to={item.url}>{item.label}</Link> : <span>{item.label}</span>}
           </div>
       )
     })
