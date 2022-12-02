@@ -2,30 +2,7 @@
 
 .section-intro {
   padding-top: calc(var(--spacer) * 24) !important;
-  .read-more {
-    text-transform: none;
-    letter-spacing: 0;
-    font-size: 0.8888888888888888rem;
-    .less-text {
-      display: none;
-    }
-    .icon {
-      transition: transform 0.3s;
-      width: 24px !important;
-      height: 24px !important;
-    }
-    &[aria-expanded="true"] {
-      .icon {
-        transform: scaleY(-1);
-      }
-      .less-text {
-        display: inline;
-      }
-      .more-text {
-        display: none;
-      }
-    }
-  }
+
   p, ul, ol {
     font-family: "Lora",Georgia,serif;
   }
@@ -35,6 +12,12 @@
     display: block;
     margin: calc(var(--spacer) * 8) auto;
     border-radius: 4px;
+  }
+  .di-card .text-zone p {
+    font-family: var(--bs-body-font-family);
+  }
+  .di-card img {
+    border-radius: 0;
   }
 }
 
@@ -63,6 +46,10 @@
   .section-intro {
     img {
       margin: calc(var(--spacer) * 12) auto;
+    }
+    .negative-x {
+      margin-left: -10%;
+      margin-right: -10%;
     }
   }
 

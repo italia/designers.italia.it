@@ -2,6 +2,32 @@
 
 .di-card {
 	box-shadow: var(--card-box-shadow);
+  .rounded {
+    .gatsby-image-wrapper {
+      border-radius: 4px;
+      overflow: hidden;
+    }
+  }
+  &.shadow-none {
+    box-shadow: none;
+  }
+  &.has-button {
+    h2,
+    h3,
+    h4,
+    h5 {
+      a {
+        color: var(--bs-body-color);
+      }
+    }
+  }
+  &.text-serif {
+    .text-zone {
+      p {
+        font-family: var(--font-serif);
+      }
+    }
+  }
 	.img-wrapper {
 		position: relative;
     background-color: var(--card-image-bg);
@@ -121,6 +147,16 @@
     h5 {
       font-size: var(--card-title-size-small);
       line-height: var(--card-title-lh-small);
+    }
+  }
+  &.title-big {
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-size: var(--card-title-size-big);
+      line-height: auto;
+      font-weight: 700;
     }
   }
 }

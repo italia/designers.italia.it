@@ -1,40 +1,36 @@
-
 @import "../../scss/bootstrap-breakpoints";
 
-.numbers {
-  .icon {
-    fill: var(--color-accent);
-    flex-shrink: 0;
+.search-main {
+  .search-disabled {
+    color: #768594;
   }
-  .number {
-    color: var(--color-accent);
-    line-height: 1;
+  .icon-search-disabled {
+    fill: #768594;
   }
-  .label {
-    line-height: 1.3;
+  .border-search-disabled {
+    border-bottom: 1px solid #D9DADB;
   }
-}
-
-.section-editorial {
-  .numbers-wrapper {
-    margin-bottom: calc(var(--spacer) * 8);
+  // p {
+  //   // font-size: 1.3333333333333333rem;
+  // }
+  .search-form {
+    background: #FFF;
+    border: var(--search-main-border);
+    border-radius: var(--search-main-radius);
+    padding-top: var(--search-main-padding-top);
+  }
+  .form-group label {
+    text-transform: uppercase;
   }
 }
 
 //Mobile only ------------------------------------------------------------------------------------------
-@include media-breakpoint-down(xs) {
-  .numbers {
-    .icon {
-      width: 42px;
-      height: 42px;
-    }
-  }
+@include media-breakpoint-down(sm) {
+
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-  .numbers {
-    width: 50%;
- }
+
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
@@ -44,11 +40,9 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-  .numbers-wrapper {
-    &.inline-numbers {
-      .numbers {
-        width: 25%;
-      }
+  .search-main {
+    h3 {
+      white-space: nowrap;
     }
   }
 }

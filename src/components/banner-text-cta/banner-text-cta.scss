@@ -1,40 +1,30 @@
-
 @import "../../scss/bootstrap-breakpoints";
 
-.numbers {
-  .icon {
-    fill: var(--color-accent);
-    flex-shrink: 0;
-  }
-  .number {
-    color: var(--color-accent);
-    line-height: 1;
-  }
-  .label {
-    line-height: 1.3;
-  }
-}
 
-.section-editorial {
-  .numbers-wrapper {
-    margin-bottom: calc(var(--spacer) * 8);
+.banner-text-cta {
+  .simple-cta {
+    text-transform: none;
+    color: #FFF;
+  }
+  &.bg-dark {
+    color: #FFF;
   }
 }
 
 //Mobile only ------------------------------------------------------------------------------------------
-@include media-breakpoint-down(xs) {
-  .numbers {
-    .icon {
-      width: 42px;
-      height: 42px;
+@include media-breakpoint-down(sm) {
+  .banner-text-cta {
+    .simple-cta {
+      &:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
     }
   }
 }
+
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-  .numbers {
-    width: 50%;
- }
+
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
@@ -44,17 +34,19 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-  .numbers-wrapper {
-    &.inline-numbers {
-      .numbers {
-        width: 25%;
+  .banner-text-cta {
+    .simple-cta {
+      &:not(:last-of-type) {
+        margin-right: 54px;
       }
     }
   }
+
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
+
 }
 
 //Desktop -----------------------------------------------------------------------------------------------

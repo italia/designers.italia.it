@@ -39,6 +39,11 @@
 			height: 200px;
 			fill: var(--color-secondary);
 		}
+    &.full {
+      img {
+        width: 100%;
+      }
+    }
 	}
 }
 //mobile only ------------------------------------------------------------------------------------------
@@ -86,6 +91,11 @@
 		.img-container {
 			margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
 			margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
+      &.full {
+        .main-image {
+          width: 100%;
+        }
+      }
 		}
     .main-image {
       width: calc(100% + var(--bs-gutter-x));
