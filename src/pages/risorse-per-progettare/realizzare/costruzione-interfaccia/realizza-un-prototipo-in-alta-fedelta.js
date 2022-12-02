@@ -4,9 +4,9 @@ import {Seo} from "../../../../components/seo/seo"
 
 import Pagedata from "./realizza-un-prototipo-in-alta-fedelta.yaml"
 
-const Level4 = () => {
+const Level4 = ({ pageContext,location }) => {
   return(
-    <Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}
     </Template>
   )

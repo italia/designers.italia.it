@@ -6,25 +6,23 @@ import Icon from "../icon/icon"
 import Numbers from "../numbers/numbers"
 import ReactMarkdown from "react-markdown"
 
-const Highlight = (
-	{
-		id,
-		background,
-		img,
+const Highlight = ({
+	id,
+	background,
+	img,
     alt,
-		icon,
+	icon,
     overlayImg,
     overlayAlt,
-		big,
-		title,
+	big,
+	title,
     numbers,
-		headingLevel,
-		subtitle,
-		text,
-		buttons,
-		specular
-	}
-) => {
+	headingLevel,
+	subtitle,
+	text,
+	buttons,
+	specular
+	}) => {
 	let styles = 'highlight'
 	+ `${background ? ' bg-'+background : ''}`
 	+ `${big ? ' highlight-big' : ''}`
@@ -57,15 +55,15 @@ const Highlight = (
 				<div className="row">
 					<div className="col-12">
 						<div className={classes}>
-              <div className="img-container ratio ratio-16x9">
-                {img &&<ImageResponsive className="main-image" src={img} alt={alt}/> }
+             				<div className="img-container ratio ratio-16x9">
+                				{img &&<ImageResponsive className="main-image" src={img} alt={alt}/> }
 								{icon && <Icon {...icon}/>}
-                {overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
+                				{overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
 							</div>
 							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
 								<HLevel id={id}>{title}</HLevel>
 								{subtitle && <p className="sub-title mb-4">{subtitle}</p>}
-                {numbers && <Numbers {...numbers}/>}
+                				{numbers && <Numbers {...numbers}/>}
 								{text && <div className="h-text font-serif"><ReactMarkdown>{text}</ReactMarkdown></div>}
 								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
 							</div>

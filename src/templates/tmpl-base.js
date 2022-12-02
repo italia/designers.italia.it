@@ -23,9 +23,9 @@ import skipLinksData from "../data/skiplinks.yaml"
 
 const trackFocusDummy = TrackFocus //trick treeshaking
 
-const Template = ({children,Pagedata}) => {
+const Template = ({children, Pagedata, location, pageContext}) => {
 	return (
-    <>
+    <div id="app">
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderPre data={HeaderData.headerPre}/>
@@ -38,7 +38,8 @@ const Template = ({children,Pagedata}) => {
       <main id="main">
         <HeaderPost data={HeaderData.headerPost}/>
         {children}
-        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
+        {/* {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null } */}
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
@@ -50,7 +51,7 @@ const Template = ({children,Pagedata}) => {
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
-    </>
+    </div>
 	)
 }
 

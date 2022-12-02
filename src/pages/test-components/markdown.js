@@ -8,10 +8,11 @@ import Pagedata from "./various.yaml"
 const Yaml = ({data}) => {
 	return (
 	  <Template Pagedata={Pagedata}>
-      <TestYaml
+    	<TestYaml
 			title={Pagedata.components.testyaml.title}
 			subtitle={Pagedata.components.testyaml.subtitle}
-			text={<ReactMarkdown remarkPlugins={[gfm]}>{Pagedata.components.testyaml.text}</ReactMarkdown>}></TestYaml>
+			text={<ReactMarkdown remarkPlugins={[gfm]}>{Pagedata.components.testyaml.text}</ReactMarkdown>}>
+		</TestYaml>
 	  </Template>
 	)
 }

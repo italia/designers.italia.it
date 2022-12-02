@@ -1,8 +1,9 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import Icon from "../icon/icon"
+import Link from "../link/link"
 
-let styles;
+let styles
 
 let iconNewsletter = ({
     icon: "sprites.svg#it-mail",
@@ -15,14 +16,14 @@ let iconNewsletter = ({
 
 const HeaderPost = ({data}) => {
 
-	// XXX TO DO: 
+	// XXX TO DO:
 	// Check A11y
 	// Verify if to add a Skiplink dedicated to this "Ti potrebbe interessare" between Menu and Main content
 	if (data.isActive){
 		return (
 			<div id={data.nav.id}>
 				<nav className="" aria-label={data.nav.ariaLabel}>
-					<div className="it-header-slim-wrapper p-0 h-100">   
+					<div className="it-header-slim-wrapper p-0 h-100">
 						<div className="header-pre bg-white py-4 border-bottom border-200 /*shadow-sm*/">
 							<div className="container-xxl">
 								<div className="row px-4 px-lg-5 pt-2 pt-md-0">
@@ -36,27 +37,27 @@ const HeaderPost = ({data}) => {
 												}
 												return(
 												<li key={"banner-item-"+index} className={styles} >
-													<a
-													href={value.url}
+													<Link
+													to={value.url}
 													target={value.blank ? "_blank" : undefined}
 													>
 														<Icon {...value.icon}/>
 														{value.title && <ReactMarkdown components={{ p: "span" }}>{value.title}</ReactMarkdown>}
-													</a>
+													</Link>
 												</li>
 												)
 											})}
 											<li key={"banner-item-"+data.nav.items.length+1} className="list-item mb-1 mb-md-0 mt-3 mt-md-0">
-												<a
+												<Link
 												className="simple-cta fw-semibold"
-												href={data.nav.newsletter.url}
+												to={data.nav.newsletter.url}
 												target={data.nav.newsletter.blank ? "_blank" : undefined}
 												>
 													<span className="text-end">
 														{data.nav.newsletter.title}
 													</span>
 													<Icon {...iconNewsletter}/>
-												</a>
+												</Link>
 											</li>
 										</ul>
 									</div>

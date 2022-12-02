@@ -15,15 +15,22 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level4
+    
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Schematizza il contesto d'uso del servizio - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Identifica le figure e comprendi l’impatto che potrebbero avere sul tuo servizio e sull’esperienza d’uso delle persone. #C
+  name: Comprendi lo stato dell'arte - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Definisci gli obiettivi e il perimetro del progetto per adottare il modello di servizi digitali dei Comuni. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso-del-servizio/ #M
+  pathname: /modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/comprendi-lo-stato-dell-arte/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -56,21 +63,21 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi nella fase #C
+      - title: Ti trovi nel modello #C
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Comprendere #C
+        label: Comuni #C
         url: "../../" #M
-      - title: Nel kit di design #C
+      - title: Nella scheda operativa #C
         icon:
           icon: "sprites.svg#it-tool"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Analizza il contesto d'uso #C
+        label: Adotta il modello di servizi digitali comunali #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -117,29 +124,29 @@ components:
         - label : Inizio
           active: false
           url: /
-        - label : Risorse per progettare
+        - label : Modelli
           active: false
           url: ../../../
-        - label : Comprendere
+        - label : Comuni
           url: ../../
           active: false
-        - label : Analisi del contesto
+        - label : Adotta il modello di servizi digitali comunali
           url: ../
           active: false
-        - label : Schematizza il contesto d'uso del servizio
+        - label : Comprendi lo stato dell'arte
           active: true
-    title: Schematizza il contesto d’uso del servizio #C
-    subtitle: Identifica le figure e comprendi l’impatto che potrebbero avere sul tuo servizio e sull’esperienza d’uso delle persone #C
+    title: Comprendi lo stato dell'arte #C
+    subtitle: Definisci gli obiettivi e il perimetro del progetto per adottare il modello di servizi digitali dei Comuni #C
     tag:
-      label: Attività del kit #C
+      label: Attività del modello #C
       addonClasses: mt-3 text-uppercase
-    pretext:
-      icon:
-        icon: sprites.svg#it-info-circle
-        size: sm
-   #  text: In breve
-  # text: | #C
-  #  Lorem **ipsum** 
+    #pretext:
+      #icon:
+        #icon: sprites.svg#it-info-circle
+        #size: sm
+      #text: In breve
+    #text: | #C
+      #Lorem **ipsum** 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     imgRatio: 4x3
@@ -162,32 +169,32 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase
+          - title: Ti trovi nel modello
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Comprendere #C
+            label: Comuni #C
             url: "../../" #M
-          - title: Nel kit #C
+          - title: Nella scheda operativa
             icon:
               icon: "sprites.svg#it-tool"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Analisi del contesto #C
+            label: Adotta il modello di servizi digitali comunali #C
             url: "../" #M
-      otherInfo:
-        items:
-          - title: Rispettando
-            icon:
-              icon: "sprites.svg#it-pa"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Design standard X #C
-            url: "#" #M
+      #otherInfo:
+        #items:
+          #- title: Rispettando
+            #icon:
+              #icon: "sprites.svg#it-pa"
+              #size: "sm"
+              #align: "middle"
+              #color: "secondary"
+            #label: Design standard X #C
+            #url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -196,14 +203,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer #C
+            label: Designer, Project manager #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Capire il contesto d’uso del servizio #C
+            label: Pianificare le attività di progettazione #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -211,11 +218,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Mappa attori
+        - label: Analisi del contesto
           url: "#"
           color: primary
           size: lg
-        - label: Mappa ecosistema
+        - label: Pianificazione
+          url: "#"
+          color: primary
+          size: lg
+        - label: Adozione modelli
           url: "#"
           color: primary
           size: lg
@@ -226,24 +237,25 @@ components:
   sectionsEditorial :
 
 
-    - title: Come mappare le figure coinvolte e l’ecosistema #C
+    - title: Le risorse per preparare il lavoro #C
       menu: false
       centered: true
       bgColor: null
       #text: | #C
-      #  Lorem **ipsum**
+        
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          # title: A cosa servono h3 #C
+          #title: A cosa servono h3 #C
           text: | #C
-            **Traccia tutte le figure coinvolte** nell’erogazione del servizio e **classificale in modo strutturato**, distinguendole tra primarie e secondarie, interne o esterne alla Pubblica Amministrazione.
-
-            Approfondisci e **schematizza le interazioni e i flussi di scambio** che avvengono tra i diversi attori e touchpoint coinvolti, mettendo in evidenza eventuali inefficienze del sistema e potenziali miglioramenti
+            Una volta scelto il servizio da digitalizzare, è fondamentale analizzare i processi amministrativi e tecnologici sottostanti per comprendere la tipologia di flusso di appartenenza e selezionare le risorse adatte per la progettazione.
             
-
-            **Comprenderai l’impatto che i diversi ruoli** hanno sul servizio e sulle persone come destinatarie. 
+            Le risorse ti aiutano a:
+            - individuare e pianificare le attività da svolgere nel dettaglio;
+            - analizzare il servizio che si vuole digitalizzare;
+            - comprendere i criteri tecnici e di design a cui attenersi per essere conformi al modello;
+            - valutare le soluzioni adottate da altre amministrazioni.
 
   # ///////////////////
   # RESOURCES
@@ -253,26 +265,49 @@ components:
     headingLevel: 3
     list:
       - simpleList : true
+        #title: First group title #C
         headingLevel: 4
         listItems:
-          - label: Mappa degli attori #C
+          - label: Checklist delle attività progettuali per i servizi comunali #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Uno schema per individuare e classificare tutti gli attori coinvolti nel contesto d’uso del servizio #C
-            url: "https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing" #M
+            text: Usa la checklist per tenere traccia delle attività progettuali per adottare il modello di servizi digitali comunali #C
+            url: https://docs.google.com/document/d/1DqLvGOP4QNkRXG0bObjTOxxUIOJ3tR3Obbq4FruWpys/edit?usp=sharing #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing" #M
+                url: "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: Mappa dell'ecosistema #C
+          - label: Tipologie di flussi di servizio #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un diagramma per schematizzare le possibili relazioni e interdipendenze tra le figure interessate #C
-            url: "https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing" #M
+            text: Individua il flusso di interazione in cui rientra il servizio scelto e da quali componenti è composto #C
+            url: https://docs.google.com/spreadsheets/d/12RgHGrhrGKhAGOUf2kOThrgIEyFngknVOhoVIrAeOOk/edit?usp=sharing #M
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing" #M
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
                 ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
                 blank: true
+          - label: Criteri di conformità per i servizi digitali comunali #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Tutti i requisiti minimi da rispettare per l’adesione al modello e le raccomandazioni aggiuntive per migliorare l’esperienza utente #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-servizi-digitali.html #M
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+          - label: Catalogo del riuso #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni #C
+            url: https://developers.italia.it/it/search?pnrr=1&type=all_catalogue&sort_by=release_date&page=0#68d7bad414e40309778a939a5e4da9c2809011d7 #M
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+
+  

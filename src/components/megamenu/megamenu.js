@@ -2,6 +2,7 @@ import * as React from "react"
 import ReactMarkdown from "react-markdown"
 import List from "../list/list"
 import Icon from "../icon/icon"
+import Link from "../link/link"
 import './megamenu.scss'
 
 import ImageResponsive from "../image-responsive/image-responsive"
@@ -35,18 +36,10 @@ const Megamenu = ({
 					</div>
 					<div className="col-12 col-lg-8">
 						{heading &&
-							<div className="row ps-3 me-1">
-								<div className="link-list-wrapper">
-									<ul className="link-list">
-										<li className="it-more pb-4 pb-lg-3 mb-4 neutral-1-border-color-a2 border border-top-0 border-start-0 border-end-0">
-											<a className="dropdown-item px-0 px-sm-4 list-item medium mt-0 d-flex justify-content-between align-items-center" href={heading.url}>
-												<span>{heading.label}</span>
-												<Icon icon="sprites.svg#it-arrow-right" size="sm" color="primary"></Icon>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
+              <Link className="heading-link d-flex justify-content-between align-items-center" to={heading.url}>
+                <span>{heading.label}</span>
+                <Icon icon="sprites.svg#it-arrow-right" size="sm" color="primary"></Icon>
+              </Link>
 						}
 						{cols &&
 							<div className="row">

@@ -15,11 +15,18 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level3
+
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
   name: Privacy - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  description : "Un kit di Designers Italia che ti permette di capire come rispettare la privacy dei tuoi utenti quando realizzi un sito o un servizio digitale" #C
   image : null #I
   twitterImage: null #I
   canonical: null
@@ -56,13 +63,13 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi in #C
+      - title: Ti trovi nella fase #C
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Level 2 #C
+        label: Organizzare #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -109,18 +116,18 @@ components:
         - label : Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Risorse per progettare
           active: false
           url: ../../
-        - label : Level2
+        - label : Organizzare
           url: ../
           active: false
-        - label : Level3
+        - label : Privacy
           active: true
-    title: Level 3 #C
-    subtitle: Subtitle #C
+    title: Privacy #C
+    subtitle: "Rispetta la privacy dei tuoi utenti quando realizzi un sito o un servizio digitale" #C
     tag:
-      label: tag #C
+      label: Kit di design #C
       addonClasses: mt-3 text-uppercase
     imgRatio: 4x3
     pretext:
@@ -129,7 +136,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Lorem **ipsum** 
+      Con gli strumenti di questo kit dedicato a tematiche di privacy ottieni informazioni di base e una serie di modelli utili per aiutarti a **trattare correttamente i dati personali riferiti ai principali casi d'uso** che dovrai gestire progettando e realizzando un servizio digitale.  
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     share:
@@ -151,14 +158,14 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi in
+          - title: Ti trovi nella fase
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Level 2 #C
-            url: "../" #M
+            label: Organizzare #C
+            url: "organizzare/" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -177,14 +184,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer, Developer #C
+            label: Designer, Legale #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare, Realizzare #C
+            label: Pianificare le attività di progettazione #C
       tagsLabel : Parliamo di
       color: secondary
       icon:
@@ -192,15 +199,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Argomento
+        - label: Dati personali
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Privacy
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Pianificazione
           url: "#"
           color: primary
           size: lg
@@ -210,7 +217,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il level 3 #C
+          label: Scopri le attività del kit #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -219,8 +226,22 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "level4/"
-              label: Level 4 #C
+            - url: "rispetta-la-privacy-per-il-go-live-di-un-sito/"
+              label: Rispetta la privacy per il go-live di un sito #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "rispetta-la-privacy-quando-coinvolgi-gli-utenti-nella-ricerca/"
+              label: Rispetta la privacy quando coinvolgi utenti nella ricerca #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "rispetta-la-privacy-quando-usi-i-social-network/"
+              label: Rispetta la privacy quando usi i social #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -235,7 +256,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem h2 #C
+    - title: "A cosa serve il kit dedicato alla privacy" #C
       menu: false
       centered: true
       bgColor: null  
@@ -245,226 +266,40 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: A cosa servono h3 #C
           text: | #C
-            Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.
-
-            Le risorse comprendono i **flussi** per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per rappresentare le principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            **Lorem** ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    # —
-    # EDITORIAL #C #I
-    # —   
-    - title: Lorem ipsum #C
-      bgColor: light
-      menu: false
-      centered: false
-      text: | #C
-        Sottotitolo o lead text 
-      components:
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            **Lorem** ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            **Lorem** ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-       
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            **Lorem** ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-       
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            **Lorem** ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    # —
-    # EDITORIAL #C #I
-    # —  
-    - title: Lorem ipsum h2 #C
-      bgColor: primary-light
-      menu: false
-      centered : true
-      # text: | #C
-      #  Lorem **ipsum**
-      components:
-
-      # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque **laudantium, totam rem** aperiam.
+            Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre **tenere conto di quali categorie di dati personali stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore**. 
             
-            Saque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            L’utilizzo di dati personali da parte di una Pubblica amministrazione è soggetto a norme specifiche (es. GDPR, Codice Privacy), e **il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti**.
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: Scopri di più nel Manuale operativo di design #C
+          text: | #C
+            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi i riferimenti alle basi normative che prevedono che che la protezione dei dati personali degli utenti sia integrata e presente lungo tutto il ciclo di progettazione del sito o del servizio digitale. 
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Vai all'argomento "Privacy by design" #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/privacy-by-design.html" #M
+            blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
+            
+  # ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  #sectionsEditorial2 :
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Esplora lorem ipsum #C
-    text: Lorem ipsum #C
+    title: Le attività di questo kit di design #C
+    text: Esplora le attività di questo kit di design per comprendere e mettere in pratica gli adempimenti connessi alla privacy per la tua soluzione digitale.  #C
     col4: false
     nospace: false
 
@@ -472,64 +307,17 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Lorem azione #C
-        fullHeight: true
+      - title: Rispetta la privacy per il go-live di un sito o un servizio #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "#" #M
+        url: "rispetta-la-privacy-per-il-go-live-di-un-sito/" #M
         text: | #C
-          Lorem **ipsum**
+          Valuta se le funzionalità che offri mediante la tua soluzione digitale comportano raccolta e utilizzo di dati personali
         tag:
-          label: Tipologia contenuto #C
+          label: Attività del kit #C
         share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-      # CARD CHILDREN ACTION
-      - title: Lorem azione #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        url: "#" #M
-        text: | #C
-          Lorem **ipsum**
-        tag:
-          label: Tipologia contenuto #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-      # CARD CHILDREN ACTION
-      - title: Lorem azione #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        url: "#" #M
-        text: | #C
-          Lorem **ipsum**
-        tag:
-          label: Tipologia contenuto #C
-        share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -540,128 +328,48 @@ components:
           list:
             isShare: true
             
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial2 :
-  
-  # —
-    # EDITORIAL #C #I
-    # —   
-    - title: Lorem ipsum h2
-      bgColor: null
-      menu: false
-      centered: false
-      text: | #C
-        Lorem **ipsum**
-      components: 
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
+      # CARD CHILDREN ACTION
+      - title: Rispetta la privacy quando coinvolgi gli utenti nella ricerca #C
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        url: "rispetta-la-privacy-quando-coinvolgi-gli-utenti-nella-ricerca/" #M
+        text: | #C
+          I suggerimenti e le risorse per condurre test di usabilità e interviste utente in modalità anonima e nel rispetto della normativa privacy in vigore
+        tag:
+          label: Attività del kit #C
+        share: #AUTO
+          btnId: shareButtonCard2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
             icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
+              icon: sprites.svg#it-more-items
               size: sm
-              addonClasses: ms-2
+              color: secondary
+          list:
+            isShare: true
 
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
+      # CARD CHILDREN ACTION
+      - title: Rispetta la privacy quando usi i social network #C
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        url: "rispetta-la-privacy-quando-usi-i-social-network/" #M
+        text: | #C
+          Scopri come rispettare la privacy dei tuoi follower quando usi le piattaforme social per comunicare la tua soluzione digitale
+        tag:
+          label: Attività del kit #C
+        share: #AUTO
+          btnId: shareButtonCard3
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
             icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
+              icon: sprites.svg#it-more-items
               size: sm
-              addonClasses: ms-2
+              color: secondary
+          list:
+            isShare: true
 
    
