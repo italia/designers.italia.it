@@ -20,17 +20,17 @@
 metadata: 
   template:
     name: level3
-
+    
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Questionario online - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : "Svolgi un'indagine per raccogliere informazioni utili sul punto di vista delle persone che usano il servizio." #C
+  name: Costruzione interfaccia - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : "Costruisci l’interfaccia di un servizio digitale in alta fedeltà, con uno stile grafico semplice e coerente" #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/questionario-online/ #M
+  pathname: /risorse-per-progettare/realizzare/costruzione-interfaccia/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -69,7 +69,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Comprendere #C
+        label: Realizzare #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -119,13 +119,13 @@ components:
         - label : Risorse per progettare
           active: false
           url: ../../
-        - label : Comprendere
+        - label : Realizzare
           url: ../
           active: false
-        - label : Questionario online
+        - label : Costruzione interfaccia
           active: true
-    title: Questionario online #C
-    subtitle: "Svolgi un'indagine per raccogliere informazioni utili sul punto di vista delle persone che usano il servizio" #C
+    title: Costruzione interfaccia #C
+    subtitle: "Costruisci l’interfaccia di un servizio digitale in alta fedeltà, con uno stile grafico semplice e coerente" #C
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
@@ -136,7 +136,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-     Questo kit dedicato ai questionari comprende modelli pre-organizzati per aiutarti nelle attività di **pianificazione, esecuzione e analisi di una ricerca** per raccogliere informazioni preziose su **come le persone percepiscono il servizio digitale** che stai progettando o ri-progettando. 
+      La costruzione dell’**interfaccia in alta fedeltà** è una delle fasi finali della realizzazione di un servizio digitale. Le risorse di questo kit ti aiutano ad assemblare velocemente l’interfaccia utente in alta fedeltà, tramite componenti (tipografia, pulsanti, icone, navigazione) già validati e con uno **stile visivo coerente**.
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     share:
@@ -164,7 +164,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Comprendere #C
+            label: Realizzare #C
             url: "../" #M
       otherInfo:
         items:
@@ -191,7 +191,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Capire il contesto d’uso del servizio #C
+            label: "Progettare l'interfaccia utente" #C
       tagsLabel : Parliamo di
       color: secondary
       icon:
@@ -199,15 +199,19 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Ricerca utente
+        - label: Design system
           url: "#"
           color: primary
           size: lg
-        - label: Questionari
+        - label: Interfaccia utente
           url: "#"
           color: primary
           size: lg
-        - label: Esperienza utente
+        - label: Progettazione interfaccia
+          url: "#"
+          color: primary
+          size: lg
+        - label: Prototipazione
           url: "#"
           color: primary
           size: lg
@@ -226,15 +230,8 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "questionario-online/pianifica-l-indagine/"
-              label: "Pianifica l'indagine" #C
-              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
-            - url: "questionario-online/sintetizza-i-risultati-della-ricerca/"
-              label: Sintetizza i risultati della ricerca #C
+            - url: "realizza-un-prototipo-in-alta-fedelta/"
+              label: Realizza un prototipo in alta fedeltà #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -249,7 +246,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: A cosa serve il kit di questionario online #C
+    - title: A cosa serve il kit costruzione interfaccia #C
       menu: false
       centered: true
       bgColor: null  
@@ -259,19 +256,26 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
+          # title: A cosa servono h3 #C
           text: | #C
-            I questionari online consentono di raccogliere informazioni dalle persone in maniera strutturata, così da poterle elaborare quantitativamente. Il vantaggio chi progetta è poter **raggiungere una grande quantità di persone contemporaneamente poiché la somministrazione avviene online** e attraverso i canali di comunicazione digitale più consoni a raggiungere i partecipanti.
-
-            Il kit dedicato ai questionari online ti offre modelli già pronti all’uso per la pianificazione, l’esecuzione e l’analisi delle attività relative a questa tipologia di ricerca utente.  
-
+            Grazie a un insieme di componenti visivi già pronti, puoi **assemblare il front-end di siti web e applicazioni** e rendere le schermate interattive per creare un prototipo ad alta fedeltà. Un prototipo in alta fedeltà è utile per **svolgere ulteriori test di usabilità prima dello sviluppo**.
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Interfacce efficaci
+          text: | #C
+            Una buona interfaccia è **intuitiva**, **inclusiva** e **accessibile**. Deve essere comprensibile e usabile da tutti i cittadini, perciò è importante realizzarla tenendo in mente la possibilità di errori e fornire un modo di gestirli. Non ci si deve aspettare che l’utente abbia sempre chiaro ciò che vuole, sappia comprendere appieno eventuali istruzioni, o che sia in grado di decifrare colori, simboli ed elementi non familiari. 
+            
+            L’uso di componenti creati per i servizi digitali della Pubblica Amministrazione permette di creare una **coerenza visiva che diminuisce la possibilità di errori**: gli utenti utilizzano con più efficacia e facilità i percorsi che hanno già imparato a riconoscere.
+            
+            L’uso di questi componenti non basta però a costruire un’interfaccia efficace. Gli standard rispondono a processi cognitivi e di percezione generali, che vanno però considerati nel contesto del servizio specifico.
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
           text: | #C
-            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come mappare l’esperienza d’uso di un servizio esistente (as-is) e a riprogettare la sua evoluzione (to-be), comprendendo le caratteristiche dell'utente con risorse operative dedicate quali personas e user journey.
+            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno, puoi approfondire le caratteristiche per la realizzazione di interfacce efficaci, l’importanza di uno stile visivo coerente e l’utilità di realizzare un prototipo in alta fedeltà prima dello sviluppo.
           ctas:
-          - label: "Vai all'argomento Questionari" #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html" #M
+          - label: "Vai all'argomento Progettare e costruire in alta fedeltà" #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/progettare-e-costruire-in-alta-fedelta.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -280,11 +284,6 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-            
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  #sectionsEditorial2 :
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -292,7 +291,7 @@ components:
   highlightCards:
     id: HC1
     title: Le attività di questo kit di design #C
-    text: Esplora le attività di questo kit di design per svolgere un questionario online #C
+    text: Esplora le attività di questo kit di design per per realizzare l’interfaccia utente e creare un prototipo in alta fedeltà #C
     col4: false
     nospace: false
 
@@ -300,41 +299,17 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: "Pianifica l'indagine" #C
-        fullHeight: true
+      - title: "Realizza un prototipo in alta fedeltà" #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "pianifica-l-indagine/" #M
+        url: "#" #M
         text: | #C
-          Definisci gli obiettivi dell’indagine e inizia a progettare il questionario riflettendo sulla strategia migliore per estrapolare le informazioni di cui hai bisogno.
+          Costruisci le schermate del servizio digitale e rendile interattive per svolgere test di usabilità e, successivamente, passare allo sviluppo
         tag:
-          label: Attività del kit #C
+          label: "Attività del kit" #C
         share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-        # CARD CHILDREN ACTION
-      - title: Sintetizza i risultati della ricerca #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        url: "sintetizza-i-risultati-della-ricerca/" #M
-        text: | #C
-          Analizza le informazioni raccolte con tecniche quanti-qualitative e rielaborale in maniera rilevante per lo scopo della ricerca.
-        tag:
-          label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
+          btnId: shareButton
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi

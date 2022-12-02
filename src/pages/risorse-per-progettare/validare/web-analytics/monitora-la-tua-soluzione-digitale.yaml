@@ -136,7 +136,7 @@ components:
         - label : Monitora la tua soluzione digitale
           active: true
     title: Monitora la tua soluzione digitale #C
-    subtitle: Esplora alcune fra le principali soluzioni software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali. #C
+    subtitle: "Esplora alcune fra le principali soluzioni software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali." #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
@@ -254,11 +254,11 @@ components:
   # ///////////////////
   resourceList:
     title: Risorse operative #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
         title: Matomo analytics #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Scheda di Matomo analytics #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
@@ -284,6 +284,7 @@ components:
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Leggi la guida utente di Matomo analytics (risorsa in inglese) #C
             url: https://matomo.org/guides/ #M
+            blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
@@ -297,9 +298,10 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true 
+   
       - simpleList : true
         title: Plausible analytics #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Scheda di Plausible analytics #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
@@ -325,6 +327,7 @@ components:
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Leggi la guida utente di Plausible analytics (risorsa in inglese) #C
             url: https://plausible.io/docs #M
+            blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M

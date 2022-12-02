@@ -25,12 +25,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Realizza l'interfaccia del sito comunale - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description : Assembla l’interfaccia web e aggiungi i contenuti per dare forma al sito del Comune. #C
+  name: "Sviluppa l'interfaccia di un servizio digitale - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description : Assembla velocemente il front-end di un servizio digitale tramite componenti, soluzioni di design e codice già validati. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /modelli/comuni/adotta-il-modello-di-sito-comunale/realizza-l-interfaccia-del-sito-comunale/ #M
+  pathname: /risorse-per-progettare/realizzare/sviluppo-interfaccia/sviluppa-l-interfaccia-di-un-servizio-digitale/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -63,21 +63,21 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi nel modello #C
+      - title: Ti trovi nella fase #C
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Comuni #C
+        label: Realizzare #C
         url: "../../" #M
-      - title: Nella scheda operativa #C
+      - title: Nel kit di design #C
         icon:
           icon: "sprites.svg#it-tool"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Adotta il modello di sito comunale #C
+        label: Sviluppo interfaccia #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -124,29 +124,29 @@ components:
         - label : Inizio
           active: false
           url: /
-        - label : Modelli
+        - label : Risorse per progettare
           active: false
           url: ../../../
-        - label : Comuni
+        - label : Realizzare
           url: ../../
           active: false
-        - label : Adotta il modello di sito comunale
+        - label : Sviluppo interfaccia
           url: ../
           active: false
-        - label : "Realizza l'interfaccia del sito comunale"
+        - label : "Sviluppa l'interfaccia di un servizio digitale"
           active: true
-    title: "Realizza l'interfaccia del sito comunale" #C
-    subtitle: Assembla l’interfaccia web e aggiungi i contenuti per dare forma al sito del Comune #C
+    title: "Sviluppa l'interfaccia di un servizio digitale" #C
+    subtitle: Assembla velocemente il front-end del servizio digitale tramite componenti, soluzioni di design e codice già validati #C
     tag:
-      label: Attività del modello #C
+      label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
-    #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
-    #text: | #C
-      #Lorem **ipsum** 
+    # #pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    text: | #C
+      Lorem **ipsum** 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     imgRatio: 4x3
@@ -169,32 +169,24 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nel modello
+          - title: Ti trovi nella fase
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Comuni #C
+            label: Realizzare #C
             url: "../../" #M
-          - title: Nella scheda operativa #C
+      otherInfo:
+        items:
+          - title: Rispettando
             icon:
-              icon: "sprites.svg#it-tool"
+              icon: "sprites.svg#it-pa"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Adotta il modello di sito comunale #C
-            url: "../" #M  
-      #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+            label: Design standard X #C
+            url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -218,18 +210,18 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Progettazione interfaccia
+        - label: Interfaccia utente
           url: "#"
           color: primary
           size: lg
-        - label: Sviluppo interfaccia
+        - label: Prototipazione
           url: "#"
           color: primary
           size: lg
-        - label: Adozione modelli
-          url: "#"
-          color: primary
-          size: lg
+        # - label: Argomento
+        #   url: "#"
+        #   color: primary
+        #   size: lg
       
   # ///////////////////
   # SECTION EDITORIAL
@@ -237,40 +229,23 @@ components:
   sectionsEditorial :
 
 
-    - title: I template HTML #C
+    - title: Le librerie di codice #C
       menu: false
       centered: true
       bgColor: null
-      #text: | #C
-        
+      text: | #C
+         Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
+         
+         Le librerie ti forniscono **componenti open-source pronti all’uso**: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          #title: A cosa servono h3 #C
+          title: Bootstrap Italia e React #C
           text: | #C
-            I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, permettono di creare rapidamente il front-end del sito comunale indipendentemente dalle soluzioni tecnologiche adottate dall’amministrazione.
-            
-            Seleziona i template relativi alla pagina del sito che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie a comporre l’interfaccia web.
-            
-            I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le Linee guida sull’accessibilità degli strumenti informatici.
-            
-    - title: I temi per WordPress e Drupal #C
-      menu: false
-      centered: true
-      bgColor: null
-      #text: | #C
-        
-      components:
+            **Bootstrap Italia** è il principale punto di riferimento e il più moderno set di componenti disponibile per la costruzione di interfacce per servizi della PA, costruito sulle basi delle più recenti modifiche allo UI Kit e sulla libreria Bootstrap 4. Contiene codice **HTML e CSS** già pronto all’utilizzo per l’applicazione di tipografia, spaziature, design responsivo ed altri pattern di interfaccia conformi alle attuali Linee Guida.
 
-        # TXT BLOCK
-        - name: TextImageCta
-          #title: A cosa servono h3 #C
-          text: | #C
-            I temi per i content management system (sistema di gestione contenuti, CMS) WordPress e Drupal sono pronti all’uso e permettono di passare rapidamente alla creazione e alla gestione dei contenuti, una volta installati e configurati correttamente sul dominio istituzionale dell’ente.
-            
-            I temi sono aggiornati alla versione 2.0 di Bootstrap Italia e raggiungono il livello di accessibilità AA delle WCAG 2.1. Il loro utilizzo non prescinde da un’attenta cura editoriale di sezioni e contenuti del sito, così come dalla compilazione e pubblicazione della Dichiarazione di accessibilità prevista dalla normativa vigente.
-            
+            **React kit** contiene componenti programmati in linguaggio **JavaScript**, costruiti sulle basi di React, una libreria open source per sviluppo di applicazioni web e mobile ad alta interattività e scambio di dati.
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -282,11 +257,11 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Anteprime dei template HTML del sito comunale #C
+          - label: Nuovo UI kit - versione 3.0.0-beta.1 #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia  #C
-            url: https://italia.github.io/design-comuni-pagine-statiche/sito/index.html #M
+            text: La libreria dei componenti per realizzare l’interfaccia utente, coerente con Bootstrap Italia #C
+            url: "https://www.figma.com/community/file/1105848677422572920" #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -301,49 +276,11 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: Sorgenti dei template HTML del sito comunale #C
+          - label: Design UI kit - legacy #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: La repository GitHub con il codice sorgente  #C
-            url: https://github.com/italia/design-comuni-pagine-statiche #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-          - label: Tema WordPress per il sito comunale #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il repository GitHub con il file e le istruzioni per l’installazione del tema #C
-            url: https://github.com/italia/design-comuni-wordpress-theme #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-          - label: Tema Drupal per il sito comunale #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il repository GitHub con il file e le istruzioni per l’installazione del tema #C
-            url: https://github.com/italia/design-comuni-drupal-theme #M
+            text: Il repository GitHub con componenti e template ufficiali del design system della Pubblica Amministrazione Italiana #C
+            url: "https://github.com/italia/design-ui-kit" #M
             blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -361,26 +298,4 @@ components:
 
 
 
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial2 :
-
-    # —
-    # EDITORIAL #C #I
-    # —
-    - title: I template HTML #C
-      background: null
-      menu: false
-      centered: true
-      #text: | #C
-      #  Lorem **ipsum**
-      components:
-
-        # TXT BLOCK
-        - name: TextImageCta
-          #title: A cosa servono h3 #C
-          text: | #C
-            Con la guida del documento di architettura dell’informazione e l’uso del codice dei template HTML, la realizzazione del sito istituzionale di un Comune è completamente svincolata dalle scelte tecnologiche e dalla tipologia CMS utilizzata dagli enti.
-            
-              La scelta di CMS alternativi è sempre possibile. Come previsto dagli articolo 68 e 69 del Codice dell’Amministrazione Digitale (CAD), dovrebbe principalmente riguardare software a riuso oppure open source. Sul [catalogo del software della PA](https://developers.italia.it/it/software) è possibile trovare software già utilizzati da altre amministrazioni o pubblicare le soluzioni sviluppate in proprio.
+   
