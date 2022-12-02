@@ -22,7 +22,7 @@
 }
 
 //Mobile only ------------------------------------------------------------------------------------------
-@include media-breakpoint-down(sm) {
+@include media-breakpoint-down(xs) {
   .numbers {
     .icon {
       width: 42px;
@@ -32,14 +32,14 @@
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-
+  .numbers {
+    width: 50%;
+ }
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
- .numbers {
-    width: 50%;
- }
+
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
