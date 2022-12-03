@@ -28,7 +28,7 @@ const TitleText = ({
           {/* <div className='col col-md-10 offset-md-1 col-lg-7'>
               <div className="px-3 px-lg-0"> */}
           <div className ="col-12 col-lg-9">
-            <div className="px-lg-6">
+            <div className="px-lg-6 px-3">
                 {title && <HLevel className={text ? "mb-4" : "mb-0"} id={id}>{title}</HLevel>}
                 <ReactMarkdown>{text}</ReactMarkdown>
               </div>
