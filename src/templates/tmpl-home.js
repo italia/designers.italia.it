@@ -38,7 +38,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
       <main id="main">
         <HeaderPost data={HeaderData.headerPost}/>
         {children}
-        {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null }
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>
