@@ -1,1 +1,1 @@
-import "bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js";
+// import "bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js";
