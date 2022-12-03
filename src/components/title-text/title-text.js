@@ -25,8 +25,10 @@ const TitleText = ({
     <div className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         <div className="row">
-          <div className='col col-md-10 offset-md-1 col-lg-7'>
-              <div className="px-3 px-lg-0">
+          {/* <div className='col col-md-10 offset-md-1 col-lg-7'>
+              <div className="px-3 px-lg-0"> */}
+          <div className ="col-12 col-lg-9">
+            <div className="px-lg-6">
                 {title && <HLevel className={text ? "mb-4" : "mb-0"} id={id}>{title}</HLevel>}
                 <ReactMarkdown>{text}</ReactMarkdown>
               </div>
