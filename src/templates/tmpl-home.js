@@ -23,7 +23,7 @@ import skipLinksData from "../data/skiplinks.yaml"
 
 const trackFocusDummy = TrackFocus //trick treeshaking
 
-const Template = ({children,Pagedata}) => {
+const Template = ({children,Pagedata,pageContext,location}) => {
 	return (
     <>
       <Skiplinks data={skipLinksData.skiplinks}/>
