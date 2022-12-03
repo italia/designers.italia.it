@@ -16,7 +16,7 @@ import Pagedata from "./index.yaml"
 
 const Home = ({ pageContext, location }) =>{
   return(
-    <Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       <Highlight {...Pagedata.components.hero}>
         {Pagedata.components.hero.moreText && <ContentCollapse label={Pagedata.components.hero.moreButton} labelClose={Pagedata.components.hero.moreButtonClose}>
           {Pagedata.components.hero.moreText}
