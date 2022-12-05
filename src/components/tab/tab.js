@@ -1,6 +1,8 @@
 import React from "react"
 import "./tab.scss"
 import SectionEditorial from "../section-editorial/section-editorial"
+import ComponentView from "../component-view/component-view"
+import ComponentViewSelect from "../component-view-select/component-view-select"
 
 import { Tab as TabBI } from "bootstrap-italia/dist/bootstrap-italia.esm"
 const tabDummy = TabBI //trick treeshaking
@@ -28,6 +30,10 @@ const Tab = ({
       <div className="tab-content" id="card-simpleContent">
         <div className="tab-pane py-5 fade show active" id="card-simpletab1" role="tabpanel" aria-labelledby="card-simple1-tab">
 
+          {tab01.variants && <ComponentViewSelect title="test">
+              { tab01.variants.map((v, idx) => <ComponentView key={'item-' + idx} name={v.name} content={v.content} />) }
+            </ComponentViewSelect>}
+
           {tab01.sectionsEditorial && tab01.sectionsEditorial.map((section,index) => {
             return(
               <SectionEditorial key={"sectionEditorialTab01-"+index} {...section}/>
@@ -37,6 +43,10 @@ const Tab = ({
         </div>
         <div className="tab-pane py-5 fade" id="card-simpletab2" role="tabpanel" aria-labelledby="card-simple2-tab">
 
+          {tab02.variants && <ComponentViewSelect title="test">
+              { tab02.variants.map((v, idx) => <ComponentView key={'item-' + idx} name={v.name} content={v.content} />) }
+            </ComponentViewSelect>}
+
           {tab02.sectionsEditorial && tab02.sectionsEditorial.map((section,index) => {
             return(
               <SectionEditorial key={"sectionEditorialTab02-"+index} {...section}/>
@@ -45,6 +55,10 @@ const Tab = ({
 
         </div>
         <div className="tab-pane py-5 fade" id="card-simpletab3" role="tabpanel" aria-labelledby="card-simple3-tab">
+
+          {tab03.variants && <ComponentViewSelect title="test">
+              { tab03.variants.map((v, idx) => <ComponentView key={'item-' + idx} name={v.name} content={v.content} />) }
+            </ComponentViewSelect>}
 
           {tab03.sectionsEditorial && tab03.sectionsEditorial.map((section,index) => {
             return(

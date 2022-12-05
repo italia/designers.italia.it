@@ -16,7 +16,7 @@ module.exports = {
     themeColor: "#0066cc"
   },
   plugins: [
-    { 
+    {
       resolve:`gatsby-plugin-breadcrumb`,
       options: {
         useAutoGen: true,
