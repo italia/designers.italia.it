@@ -1,5 +1,6 @@
 import React from "react"
 import Tag from "../tag/tag"
+import Link from "../link/link"
 import "./nav-sidebar.scss"
 
 const NavSidebar = ({
@@ -20,12 +21,12 @@ const NavSidebar = ({
 
   let links
   let linksStyle
-  let subLinksStyle
   let subLinks
   let expandSublinks
   let subStyles
   let secondaryLinks
-  let secondaryLinksstyle
+
+  const GATSBY_ACTIVE = "active"
 
   if (list) {
     links = list.map((item,index) => {
@@ -44,12 +45,9 @@ const NavSidebar = ({
             linksStyle = linksStyle+' contains-active'
           }
 
-          subLinksStyle = "list-item"
-            + `${(subItem.label === page) ? ' active' : ''}`
-
           return (
             <li key={"subl-"+index}>
-              <a className={subLinksStyle} href={subItem.url}><span>{subItem.label}</span></a>
+              <Link to={subItem.url} activeClassName={GATSBY_ACTIVE}><span>{subItem.label}</span></Link>
             </li>
           )
         })
@@ -59,7 +57,7 @@ const NavSidebar = ({
 
         return(
           <li key={"l-"+index}>
-            <a className={linksStyle} href={"#collapseNav-"+index} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={"collapseNav-"+index} >
+            <a className={linksStyle} href={"#collapseNav-"+index} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={"collapseNav-"+index}>
               <span className="list-item-title-icon-wrapper">
                 <span>{item.label}</span>
                 <svg className="icon icon-sm icon-primary right" aria-hidden="true"><use href="/svg/sprites.svg#it-expand"></use></svg>
@@ -73,9 +71,9 @@ const NavSidebar = ({
       } else {
         return(
           <li key={"l-"+index}>
-            <a className={linksStyle} href={item.url}>
+            <Link className={linksStyle} to={item.url} activeClassName={GATSBY_ACTIVE}>
               <span>{item.label}</span>
-            </a>
+            </Link>
           </li>
         )
       }
@@ -84,17 +82,12 @@ const NavSidebar = ({
   }
 
   if (secondaryList) {
-
-    let secondaryStyle
-
     secondaryLinks = secondaryList.map((item,index) => {
-      secondaryStyle = "list-item"
-        + `${(item.label === page) ? ' active' : ''}`
       return(
         <li key={"sl-"+index}>
-          <a className={secondaryStyle} href={item.url}>
+          <Link className="list-item" to={item.url} activeClassName={GATSBY_ACTIVE}>
             <span>{item.label}</span>
-          </a>
+          </Link>
         </li>
       )
     })
@@ -132,16 +125,19 @@ const NavSidebar = ({
                 {links}
               </ul>
             </div>
-          </div>
-          { secondaryLinks &&
-            <div className="sidebar-linklist-wrapper linklist-secondary">
-              <div className="link-list-wrapper">
-                <ul className="link-list">
-                  {secondaryLinks}
-                </ul>
+
+            { secondaryLinks &&
+              <div className="sidebar-linklist-wrapper linklist-secondary">
+                <div className="link-list-wrapper">
+                  <ul className="link-list">
+                    {secondaryLinks}
+                  </ul>
+                </div>
               </div>
-            </div>
-          }
+            }
+
+          </div>
+
         </div>
       </nav>
     </div>
