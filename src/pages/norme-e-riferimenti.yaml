@@ -1,0 +1,378 @@
+# INSTRUCTIONS
+# folder structure:
+# levelX.js < connector, just for developers
+# levelX.yaml < contents and settings of the page
+# levelX/ < folder where are the childrens, same structure 
+# important: each level has its dedicated template from level1 to level4!
+#
+# to edit search for 
+# #C to locate all editable content
+# #M for links/navigation
+# #I for images/media
+# #AUTO for parts that will soon be automated, preferably
+#
+# comment with # to hide something
+# delete with caution
+
+# ————————————————————————————————————————————
+# SEO, OPENGRAPH
+# ————————————————————————————————————————————
+seo:
+  name: Norme e riferimenti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: "La documentazione ufficiale che ti guida nella progettazione per la PA, mettendo le persone al centro" #C
+  image: null #I
+  twitterImage: null #I
+  canonical: null
+  pathname: /norme-e-riferimenti/ #M
+
+# ————————————————————————————————————————————
+# DATE, LICENSE, URL
+# ————————————————————————————————————————————
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 15 dicembre 2022 #C #AUTO
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it  #M #AUTO
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+# ————————————————————————————————————————————
+# CONTENT
+# ————————————————————————————————————————————
+components:
+  
+  # ///////////////////
+  # HERO
+  # ///////////////////
+  hero:
+    background: primary
+    breadcrumbs: #M #AUTO
+      separator: '>'
+      items:
+        - label: Inizio
+          active: false
+          url: /
+        - label : Norme e riferimenti #C 
+          active: true
+    title: Norme e riferimenti #C
+    subtitle: La documentazione ufficiale che ti guida nella progettazione per la Pubblica Amministrazione, mettendo le persone al centro #C
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve 
+    text: | #C
+      La progettazione e la realizzazione di siti e servizi digitali per la PA sono guidate da regole tecniche e indicazioni operative attente all’usabilità e a un approccio progettuale rivolto alle persone.  
+    img: /images/400x300.png #I
+    alt: alt lorem ipsum #C
+    imgRatio: 4x3
+    share: #AUTO
+      btnId: shareButtonHero
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero text-white mb-4 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: light
+          addonClasses: ms-3
+      list:
+        isShare: true
+    
+    # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      titleSr: Metadati e link per approfondire
+      tagsLabel : Parliamo di 
+      color : white
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: white
+      chips: #C
+        - label: Normativa
+          url: "#"
+          color: primary
+          size: lg
+        - label: Linee guida
+          url: "#"
+          color: primary
+          size: lg
+        - label: Manuale operativo
+          url: "#"
+          color: primary
+          size: lg
+        - label: CAD
+          url: "#"
+          color: primary
+          size: lg
+        - label: Accessibilità
+          url: "#"
+          color: primary
+          size: lg
+      
+      # KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri norme e riferimenti #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: white
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #AUTO
+            - url: "linee-guida-di-design/" #M
+              label: "Linee guida di design" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "manuale-operativo/" #M
+              label: "Manuale operativo" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+
+  # ///////////////////
+  # INTRO
+  # ///////////////////
+  sectionIntro:
+    section: true
+    id: introEditorial
+    headingLevel: 2
+    title: Progettare per la PA è un processo basato sulla legge #C
+    background: null
+    text: | #C
+      **L'accesso a siti e servizi pubblici digitali di qualità è un diritto da garantire a tutte le persone** che desiderano farne uso. Per questo, **i requisiti da rispettare sono indicati in modo dettagliato dalla legge**, affinché ogni aspetto della loro progettazione e realizzazione sia attentamente considerato e diligentemente applicato da tutti gli attori coinvolti nel processo. 
+    moreButton: Leggi di più
+    moreButtonClose: Chiudi
+    moreText: | #C
+      Per orientarti nell'ecosistema di norme e riferimenti, la stella polare è rappresentata dalle **Linee guida di design, secondo quanto definito dall’articolo 53 del Codice dell’Amministrazione Digitale**: ti indicano le regole che hai l'obbligo di rispettare, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle opzionali. 
+      Ad applicare concretamente le Linee guida ti aiuta il **Manuale operativo di design**: ti fornisce indicazioni operative a supporto della progettazione e della realizzazione di siti e servizi pubblici digitali accessibili, inclusivi e che riducono le disuguaglianze. 
+
+  # ///////////////////
+  # HIGHLIGHTS
+  # ///////////////////
+  titleText:
+    title: Scopri la normativa e come applicarla #C
+
+  # —
+  # HIGHLIGHT LOOP
+  # —
+  highlightsLoop1 :
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title : Linee guida di design #C
+      id: HL1
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: light # null | light | medium | dark  
+      big: true
+      specular: false
+      subtitle: "Le regole tecniche che devi rispettare in ogni fornitura di siti e servizi digitali per la PA" #C
+      text: "Le disposizioni delle Linee guida rispondono all’articolo 53 del decreto legislativo del 7 marzo 2005, n. 82, contenente il Codice dell’Amministrazione Digitale." #C
+      buttons: #C #I
+        - label : Scopri le Linee guida di design #C
+          btnStyle: primary
+          url: "linee-guida-di-design/" #M
+
+    # —
+    # HIGHLIGHT 
+    # —
+    - title : Linee guida sull'accessibilità #C
+      id: HL2
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: null  # null | light | medium | dark  
+      big: false
+      specular: true
+      subtitle: "La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici" #C 
+      text: "Il documento è stato redatto ed emanato dall'Agenzia per l'Italia Digitale (AGID) secondo quanto disposto dall’articolo 11 della legge del 9 gennaio 2004, n. 4." #C
+      buttons: #C #M
+        - label : Esplora le Linee guida sull'accessibilità
+          btnStyle: primary
+          url: "https://docs.italia.it/AgID/documenti-in-consultazione/lg-accessibilita-docs/it/stabile/index.html" #M 
+     
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title : Manuale operativo #C
+      id: HL3
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: medium # null | light | medium | dark  
+      big: true
+      specular: true
+      subtitle: "Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento" #C
+      text: "Uno strumento di lavoro per la PA e i suoi fornitori, offre tutte le informazioni necessarie a realizzare siti e servizi pubblici digitali secondo le regole tecniche descritte dalla Linee guida." #C
+      buttons: #C #M
+        - label : Scopri il Manuale operativo 
+          btnStyle: primary
+          url: "manuale-operativo/" #M
+          
+    - id: highlightCardsArticoli
+      title: Articoli di approfondimento
+      headingLevel: 3
+      text: I casi di studio e le idee sulla progettazione dei servizi pubblici, scritti dalla community di Designers Italia
+      col4: false
+      background: light
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti gli approfondimenti
+        addonStyle: me-3 d-block
+      - type: button
+        btnStyle: outline-primary
+        label: Vai al Medium di Designers Italia
+        icon:
+          icon: sprites.svg#it-external-link
+          color: primary
+          align: middle
+          size: sm
+          addonClasses: ms-2
+      cards:
+      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+        headingLevel: 4
+        img: /images/highlight-big.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "#"
+        externalLink:
+          label : Leggi su medium
+          screenReaderText: l'articolo completo
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Daniele Tabellini e Fabrizio Caccavello
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
+        headingLevel: 4
+        img: /images/highlight-sm.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "#"
+        externalLink:
+          label : Leggi su medium
+          screenReaderText: l'articolo completo
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Mauro Filippi
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+      - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
+        headingLevel: 4
+        img: /images/highlight-big.jpg
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "#"
+        externalLink:
+          label : Leggi su medium
+          screenReaderText: l'articolo completo
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Francesco Zaia
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi
+            url : "#"
+            blank: false
+          - color : secondary
+            label : PA Digitale 2026
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard3
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
