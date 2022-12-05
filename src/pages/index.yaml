@@ -19,7 +19,7 @@
 # ————————————————————————————————————————————
 metadata: 
   template:
-    name: base
+    name: home
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -76,9 +76,9 @@ components:
       ### Heading 3
       Lorem ipsum
 
-      ### Heading 4
+      #### Heading 4
       Lorem ipsum
-    img : /images/it.jpg #I
+    img : /images/highlight-big.jpg #I
     alt: Alt lorem ipsum #C
     fullImg: true
 
@@ -166,14 +166,14 @@ components:
       fullHeight: true
       imgRounded: true
       titleBig: true
-      noShadow: true,
-      url: "#" #M
+      noShadow: true
+      # url: "#" #M
       textSerif: true
       buttonBottom:
         btnStyle: primary
         label: Esplora/Scopri il titolo
-        url: "#"
-    - title: "Modelli di design" #C
+        url: "modelli/"
+    - title: "Design system" #C
       img: /images/400x300.png #I
       alt: Alt lorem ipsum #C
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
@@ -182,14 +182,14 @@ components:
       fullHeight: true
       imgRounded: true
       titleBig: true
-      noShadow: true,
-      url: "#" #M
+      noShadow: true
+      # url: "#" #M
       textSerif: true
       buttonBottom:
         btnStyle: primary
         label: Esplora/Scopri il titolo
-        url: "#"
-    - title: "Modelli di design" #C
+        url: "design-system/"
+    - title: "Risorse per progettare" #C
       img: /images/400x300.png #I
       alt: Alt lorem ipsum #C
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
@@ -198,13 +198,13 @@ components:
       fullHeight: true
       imgRounded: true
       titleBig: true
-      noShadow: true,
-      url: "#" #M
+      noShadow: true
+      # url: "#" #M
       textSerif: true
       buttonBottom:
         btnStyle: primary
         label: Esplora/Scopri il titolo
-        url: "#"
+        url: "risorse-per-progettare/"
   imageIcons:
     image: /images/full.jpg
     alt: descrizione immagine
@@ -248,7 +248,9 @@ components:
     cards:
 
     #CARD with Button
-    - title: Community Lab sui temi dell’upgrade del Kit Design React
+    - title: "Community Lab sui temi dell’upgrade del Kit Design React"
+      titleBig: false
+      titleSmall: false
       customCol: col-lg-3
       cardEvent: true
       img: /images/600x400.png
@@ -272,42 +274,9 @@ components:
             color: secondary
         list:
           isShare: true
-    - title: Titolo articoloz
-      customCol: col-lg-4
-      img: /images/600x400.png
-      alt: Descrizione immagine
-      imgRatio: 16x9
-      imgPlaceholder: false
-      url: "#"
-      blank: true
-      moreInfo: 6 dicembre 2022
-      text: |
-        E descrizione corta corta vedi lo spazio va bene questa.
-      chips:
-        - color : secondary
-          label : Accessibilità
-          url : "#"
-          blank: false
-        - color : secondary
-          label : Servizi
-          url : "#"
-          blank: false
-        - color : secondary
-          label : PA Digitale 2026
-          url : "#"
-          blank: false
-      share:
-        btnId: shareButtonCard1
-        button:
-          addonStyle: icon-only-drop
-          ariaLabel: Condividi
-          icon:
-            icon: sprites.svg#it-more-items
-            size: sm
-            color: secondary
-        list:
-          isShare: true
     - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+      titleBig: false
+      titleSmall: false
       customCol: col-lg-4
       img: /images/600x400.png
       alt: Descrizione immagine
@@ -348,6 +317,45 @@ components:
             color: secondary
         list:
           isShare: true
+  
+    - title: Titolo notizia
+      titleBig: false
+      titleSmall: false
+      customCol: col-lg-4
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 21x9
+      imgPlaceholder: false
+      url: "#"
+      blank: true
+      moreInfo: 6 dicembre 2022
+      text: |
+        E descrizione corta corta vedi lo spazio va bene questa.
+      chips:
+        - color : secondary
+          label : Accessibilità
+          url : "#"
+          blank: false
+        - color : secondary
+          label : Servizi
+          url : "#"
+          blank: false
+        - color : secondary
+          label : PA Digitale 2026
+          url : "#"
+          blank: false
+      share:
+        btnId: shareButtonCard1
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+
   bannerTextCta:
     id: bannerBottom
     title: Diamo i numeri
@@ -358,7 +366,7 @@ components:
         color: white
         align: middle
         hidden: true
-      label: Report dei dati
+      label: Dashboard
       url: "#"
       blank: true
     - icon:
@@ -366,7 +374,7 @@ components:
         color: white
         align: middle
         hidden: true
-      label: Opendata
+      label: Open data
       url: "#"
       blank: true
     numbers:
@@ -383,6 +391,6 @@ components:
         label: Alieni gatti
       - icon: sprites.svg#it-star-outline
         number: 2
-        label: Gatti nobili dell'etruria
+        label: "Gatti nobili dell'etruria"
 
 

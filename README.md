@@ -6,7 +6,7 @@ Il nuovo sito utilizza [Bootstrap Italia 2](https://italia.github.io/bootstrap-i
 
 Un'anteprima del sito è disponibile su **[prossima.designers.italia.it](https://prossima.designers.italia.it)**  
 
-È possibile seguirne le levorazioni nella [board di progetto](https://github.com/orgs/italia/projects/15) e nelle [issue con etichetta next](https://github.com/italia/designers.italia.it/issues?q=is%3Aissue+is%3Aopen+label%3Anext)
+È possibile seguirne le lavorazioni nella [board di progetto](https://github.com/orgs/italia/projects/15) e nelle [issue con etichetta next](https://github.com/italia/designers.italia.it/issues?q=is%3Aissue+is%3Aopen+label%3Anext)
 
 ----------
 

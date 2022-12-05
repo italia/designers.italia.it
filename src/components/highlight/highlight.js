@@ -64,7 +64,7 @@ const Highlight = ({
 
   let ratioClass
   if (fullImg) {
-    ratioClass = "img-container full"
+    ratioClass = "img-container full img-fluid" // xxx img-fluid added for home 1st highlight...
   }else{
     ratioClass = "img-container ratio ratio-16x9"
   }
@@ -72,8 +72,8 @@ const Highlight = ({
 
 	return (
 		<section className={styles} aria-labelledby={id}>
-			<div className="container-xxl">
-				<div className="row">
+			<div className="container-xxl /*p-0*/">
+				<div className="row /*p-0*/">
 					<div className="col-12">
 						<div className={classes}>
               <div className={ratioClass}>

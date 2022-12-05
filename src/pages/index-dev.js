@@ -14,48 +14,48 @@ const Index = ({ pageContext }) => {
             <h2>Templates</h2>
             <ul>
               <li>
-                <a href="level1/">Level 1</a>
+                <a href="../level1/">Level 1</a>
                 <ul>
                   <li>
-                    <a href="community/">Community exception</a>
+                    <a href="../community/">Community exception</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="level1/level2/">Level 2</a>
+                <a href="../level1/level2/">Level 2</a>
                 <ul>
                   <li>
-                    <a href="level1/fondamenti/">Design System - Fondamenti</a>
+                    <a href="../level1/fondamenti/">Design System - Fondamenti</a>
                     <ul>
                       <li>
-                        <a href="level1/fondamenti/fondamento/">Scheda Fondamento</a>
+                        <a href="../level1/fondamenti/fondamento/">Scheda Fondamento</a>
                       </li>
                     </ul>
                   </li>
                   <li>
-                    <a href="level1/componenti/">Design System - Componenti</a>
+                    <a href="../level1/componenti/">Design System - Componenti</a>
                     <ul>
                       <li>
-                        <a href="level1/componenti/componente/">Scheda Componente</a>
+                        <a href="../level1/componenti/componente/">Scheda Componente</a>
                       </li>
                     </ul>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="level1/level2/level3/">Level 3</a>
+                <a href="../level1/level2/level3/">Level 3</a>
                 <ul>
                   <li>
-                    <a href="level1/level2/article-detail/">Article detail (same template)</a>
+                    <a href="../level1/level2/article-detail/">Article detail (same template)</a>
                   </li>
                 </ul>
               </li>
-              <li><a href="level1/level2/level3/level4/">Level 4</a></li>
+              <li><a href="../level1/level2/level3/level4/">Level 4</a></li>
             </ul>
             <hr className="my-4"/>
             <h2>Components</h2>
             <ul>
-              <li><a href="test-components">Components list (partial)</a></li>
+              <li><a href="../test-components">Components list (partial)</a></li>
             </ul>
           </div>
         </div>
