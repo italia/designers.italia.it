@@ -1,6 +1,7 @@
 import React from "react"
 
-import DOMPurify from 'isomorphic-dompurify'
+//import DOMPurify from 'isomorphic-dompurify'
+import sanitizeHtml from 'sanitize-html';
 import { lucario } from 'react-syntax-highlighter/dist/esm/styles/prism'
 
 import loadable from "@loadable/component";
@@ -13,7 +14,10 @@ const ComponentView = ({
 }) => {
 
   const createMarkup = (html) => {
-    return { __html: DOMPurify.sanitize(html) };
+    return { __html: sanitizeHtml(html, {
+      allowedTags: false, //all tags allowed
+      allowedAttributes: false, //all attribs allowed
+    }) };
   }
 
   return (
