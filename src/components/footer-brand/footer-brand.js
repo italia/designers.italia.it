@@ -21,12 +21,12 @@ const FooterBrand = ({
     <div className={styles}>
       <div className="container-xxl">
         <div className="row">
-          <div className="col text-center text-md-start">
+          <div className="col px-4 text-center text-md-start">
             <ReactMarkdown className="small mb-4">{title}</ReactMarkdown>
           </div>
         </div>
         <div className="row">
-          <div className="col">
+          <div className="col px-4">
             <ul className={logosStyles}>
               {logos.map((value,index)=>{
                 return(
