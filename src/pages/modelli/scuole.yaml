@@ -25,8 +25,8 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Scuole - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  name: Modello scuole - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Tutte le risorse per realizzare con facilità siti le scuole. #C
   image : null #I
   twitterImage: null #I
   canonical: null
@@ -104,15 +104,15 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Modelli
           active: false
           url: /level1/
-        - label : Level2
+        - label : Scuole
           active: true
     title: Scuole #C
-    subtitle: Subtitle #C
+    subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per la comunità scolastica #C
     tag:
-        label: tag  #C
+        label: Modello #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -120,7 +120,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      Lorem **ipsum** 
+      Il modello ti permette di **realizzare siti istituzionali per le scuole** già validati dalla ricerca e progettati sui bisogni dela comunità scolastica. Le risorse, pronte all'uso, comprendono l'architettura dell'informazione, i template HTML e i temi per CMS, oltre a una serie di guide pratiche a supporto per impostare e svolgere il lavoro in modo rapido ed economico.
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -148,15 +148,15 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Argomento
+        - label: Adozione modelli
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Siti delle scuole
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Servizi digitali per le scuole
           url: "#"
           color: primary
           size: lg
@@ -166,7 +166,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il level 2 #C
+          label: Scopri le schede operative #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -175,13 +175,20 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "level3/"
-              label: Level 3 #C
+            - url: "adotta-il-modello-di-sito-scolastico/"
+              label: Adotta il modello di sito scolastico #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
+            #- url: "adotta-il-modello-di-servizi-digitali-comunali/"
+              #label: Adotta il modello di servizi digitali comunali #C
+              #iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              #icon:
+                #icon: sprites.svg#it-arrow-right
+                #color: primary
+                #size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -206,104 +213,88 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: Lorem ipsum h2
-      bgColor: null
+    - title: "Realizza un’esperienza digitale efficace"
+      bgColor: medium
       menu: false
       centered: false
       text: | #C
-        Lorem **ipsum**
+        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale degli istituti scolastici
       components: 
 
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
+          #title: Lorem ipsum h3 #C
+          #text: | #C
+          #  Lorem ipsum
 
             #### Titoletto interno h4
-            Lorem ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
+            # Lorem ipsum
+          #ctas:
+          #- label: Fai lorem ipsum #C
+            #url: "#" #M
+            #blank: false #M #C true if new tab for external links
+            #icon: 
+              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+          #- label: Vai su ipsum #C
+            #url: "#" #M
+            #blank: true 
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+        
+        # TXT + CTA BLOCK
         - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
+          title: Il sito per la comunità scolastico #C
+          text: | #C
+            Il modello per un sito chiaro, semplice da usare e accessibile. Un solido punto di riferimento per la comunità scolastica, dove trovare facilmente tutte le informazioni di cui hanno bisogno: dagli orari delle lezioni e i materiali didattici, alle novità e gli eventi. 
+          ctas:
+          #- label: Naviga un esempio di sito #C
+            #url: "#" #M
+            #blank: true #M #C true if new tab for external links
+            #icon: 
+              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+    
+    
+    # —
+    # EDITORIAL #C #I
+    # —   
+    - title: Il futuro della PA
+      bgColor: light
+      menu: false
+      centered: false
+      #text: | #C
+        #Lorem ipsum
+      components: 
 
         # TXT + CTA BLOCK
         - name: TextImageCta
-          title: Lorem ipsum h3 #C
+          #title: Lorem ipsum #C
           text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Il modello di sito per le scuole è il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto Designers Italia.
+            
+            L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1). 
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Vai alla documentazione del modello #C
+            url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -311,24 +302,91 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+        
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: "Risorse pronte all'uso" #C
+          text: | #C
+            La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Le risorse operative del modello permettono di realizzare sito e servizi digitali con funzionalità già validate dalla ricerca, rispondendo così ai bisogni dei cittadini in modo rapido e a basso costo. 
+          #ctas:
+          #- label: Vai al report della ricerca #C
+            #url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
+            #blank: true #M #C true if new tab for external links
+            #icon: 
+              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+          #- label: Vai alla documentazione del modello #C
+            #url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
+            #blank: true 
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+              
+        # NUMBERS BLOCK
+        - name: Numbers
+          items: #C #I
+          - label: Documento di architettura
+            icon: sprites.svg#it-tool
+            #number: 1200
+          - label: Template HTML
+            icon: sprites.svg#it-tool
+            number: 28
+          - label: Tema WordPress
+            icon: sprites.svg#it-tool
+            #number: 2
+          - label: Prototipi
+            icon: sprites.svg#it-tool
+            number: 18
+            
+    
+    # —
+    # EDITORIAL #C #I
+    # —   
+    - title: Adottare il modello è semplice con il PNRR
+      bgColor: medium
+      menu: false
+      centered: false
+      #text: | #C
+      #  Lorem **ipsum**
+      components: 
+
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          #title: Lorem ipsum h3 #C
+          text: | #C
+            Scopri su PA digitale 2026 se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
+          ctas:
+          - label: Vai su PA digitale 2016 #C
+            url: https://padigitale2026.gov.it/ #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-
+        
+        
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Esplora lorem ipsum #C
-    text: Lorem ipsum #C
+    title: Adotta il modello #C
+    text: Le risorse disponibili guidano su tutti gli aspetti progettuali, dalla pianificazione allo sviluppo #C
     col4: false
     nospace: true
 
@@ -336,13 +394,13 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+      - title: Il sito scolastico #C
+        text: SSegui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito scolastico semplice, accessibile e centrato sui bisogni degli utenti. #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "adotta-il-modello-di-sito-scolastico/" #M
         tag:
-          label: Tag #C
+          label: Scheda operativa #C
         share: #AUTO
           btnId: shareButtonCard1
           button:
@@ -356,44 +414,44 @@ components:
             isShare: true
       
       # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
-        titleSmall: false
-        fullHeight: true
-        url: "#" #M
-        tag:
-          label: Tag #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+      #- title: I servizi digitali #C
+        #text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
+        #titleSmall: false
+        #fullHeight: true
+        #url: "adotta-il-modello-di-servizi-digitali-comunali/" #M
+        #tag:
+          #label: Scheda operativa #C
+        #share: #AUTO
+          #btnId: shareButtonCard2
+          #button:
+            #ariaLabel: Condividi
+            #addonStyle: icon-only-drop
+            #icon:
+              #icon: sprites.svg#it-more-items
+              #size: sm
+              #color: secondary
+          #list:
+            #isShare: true
 
       # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
-        titleSmall: false
-        fullHeight: true
-        url: "#" #M
-        tag:
-          label: Tag #C
-        share: #AUTO
-          btnId: shareButtonCard3
-          button:
-            ariaLabel: Condividi
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+      #- title: Lorem ipsum #C
+        #text: Lorem ipum #C
+        #titleSmall: false
+        #fullHeight: true
+        #url: "#" #M
+        #tag:
+          #label: Tag #C
+        #share: #AUTO
+          #btnId: shareButtonCard3
+          #button:
+            #ariaLabel: Condividi
+            #addonStyle: icon-only-drop
+            #icon:
+              #icon: sprites.svg#it-more-items
+              #size: sm
+              #color: secondary
+          #list:
+            #isShare: true
 
 
   # ///////////////////
@@ -404,52 +462,26 @@ components:
   # —
     # EDITORIAL #C #I
     # —   
-    - title: Lorem ipsum h2
+    - title: Hai bisogno di chiarimenti o supporto tecnico?
       bgColor: null
       menu: false
       centered: false
-      text: | #C
-        Lorem **ipsum**
+      #text: | #C
+        #Lorem **ipsum**
       components: 
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          title: Lorem ipsum h3 #C
+          #title: Lorem ipsum h3 #C
           text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
+            Consulta le domande frequenti o scrivici
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Vai al supporto di PA digitale 2026 #C
+            url: https://padigitale2026.gov.it/supporto #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -457,78 +489,27 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+          #- label: Vai su ipsum #C
+            #url: "#" #M
+            #blank: true 
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
 
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
 
     # —
     # EDITORIAL #C #I
     # —   
     - menu: false
       centered: true
-      bgColor: null
-      title: Lorem ipsum #C
+      bgColor: light
+      title: La community di riferimento #C
       text: | #C
-        Lorem **ipsum** 
+        Scopri i canali dove confrontarti sulle risorse del modello 
       components:
 
         # TXT + IMG + CTA BLOCK
@@ -536,13 +517,13 @@ components:
           image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          title: ciao
+          #title: ciao
           text: |
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Vai su Forum Italia #C
+            url: https://forum.italia.it/c/design/modello-scuole/ #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -550,83 +531,47 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    # —
-    # EDITORIAL #C #I
-    # — 
-    - menu: false
-      centered: true
-      bgColor: light
-      title: Lorem ipsum #C
-      text: | #C
-        Lorem **ipsum**
-      components:
-
+        
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/ItForum.svg
+          image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          #title: #C
-          text: | #C
-            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore.
+          #title: ciao
+          text: |
+            Dialoga e collabora in tempo reale con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole 
           ctas:
-          - label: Vai su Forum Italia #C
-            url: "#" #M
+          - label: Vai su Slack #C
+            url: https://developersitalia.slack.com/archives/CQ7J0KANT #M
             blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
-              size: sm
               hidden: true
+              size: sm
               addonClasses: ms-2
-
+        
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/Slack.svg
+          image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          #title: #C
-          text: | #C
-            Dialoga e collabora in tempo reale con i designer e i maintainer sui canali dedicati al #design.
+          #title: ciao
+          text: |
+            Progetta e sviluppa con noi nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
-          - label: "Entra nei canali #design" #C
-            url: "#" #M
+          - label: Vai su GitHub #C
+            url: Visita github.com/italia  #M
             blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
-              size: sm
               hidden: true
-              addonClasses: ms-2
-        - name: TextImageCta
-          image: /images/Github.svg
-          alt: Alt lorem ipsum #C
-          specular: true
-          #title: #C
-          text: | #C
-            Disegna e sviluppa con noi nuove soluzioni per i servizi digitali nazionali.
-          ctas:
-          - label: "Visita github.com/italia" #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
               size: sm
-              hidden: true
               addonClasses: ms-2
+                       
+
+
 
