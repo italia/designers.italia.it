@@ -15,6 +15,13 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level4
+
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
@@ -133,13 +140,13 @@ components:
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
-    pretext:
-      icon:
-        icon: sprites.svg#it-info-circle
-        size: sm
-   #  text: In breve
-  # text: | #C
-  #  Lorem **ipsum** 
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    # text: In breve
+    # text: | #C
+    #   Lorem **ipsum** 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     imgRatio: 4x3
@@ -247,21 +254,29 @@ components:
   # ///////////////////
   resourceList:
     title: Risorse operative #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
         title: Matomo analytics dashboard #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Crea una dashboard dati con Matomo analytics  #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Una guida per creare una dashboard di dati custom con il software open source Matomo #C
-            url: "https://developers.italia.it/it/software/italia-software-matomo-32c75d" #M
+            url: https://developers.italia.it/it/software/italia-software-matomo-32c75d #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing" #M
+                url: https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
        

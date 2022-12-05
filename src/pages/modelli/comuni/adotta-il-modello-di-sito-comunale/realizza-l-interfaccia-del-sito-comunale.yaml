@@ -15,15 +15,22 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level4
+
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Level 4 - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  name: "Realizza l'interfaccia del sito comunale - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description : Assembla l’interfaccia web e aggiungi i contenuti per dare forma al sito del Comune. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /level1/level2/level3/level4/ #M
+  pathname: /modelli/comuni/adotta-il-modello-di-sito-comunale/realizza-l-interfaccia-del-sito-comunale/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -56,21 +63,21 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi in #C
+      - title: Ti trovi nel modello #C
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Level 2 #C
+        label: Comuni #C
         url: "../../" #M
-      - title: Nella scheda #C
+      - title: Nella scheda operativa #C
         icon:
           icon: "sprites.svg#it-tool"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Level 3 #C
+        label: Adotta il modello di sito comunale #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -117,29 +124,29 @@ components:
         - label : Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Modelli
           active: false
           url: ../../../
-        - label : Level2
+        - label : Comuni
           url: ../../
           active: false
-        - label : Level3
+        - label : Adotta il modello di sito comunale
           url: ../
           active: false
-        - label : Level4
+        - label : "Realizza l'interfaccia del sito comunale"
           active: true
-    title: Level 4 #C
-    subtitle: Subtitle #C
+    title: "Realizza l'interfaccia del sito comunale" #C
+    subtitle: Assembla l’interfaccia web e aggiungi i contenuti per dare forma al sito del Comune #C
     tag:
-      label: tag #C
+      label: Attività del modello #C
       addonClasses: mt-3 text-uppercase
-    pretext:
-      icon:
-        icon: sprites.svg#it-info-circle
-        size: sm
-      text: In breve
-    text: | #C
-      Lorem **ipsum** 
+    #pretext:
+      #icon:
+        #icon: sprites.svg#it-info-circle
+        #size: sm
+      #text: In breve
+    #text: | #C
+      #Lorem **ipsum** 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     imgRatio: 4x3
@@ -162,32 +169,32 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi in
+          - title: Ti trovi nel modello
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Level 2 #C
+            label: Comuni #C
             url: "../../" #M
-          - title: Nella scheda #C
+          - title: Nella scheda operativa #C
             icon:
               icon: "sprites.svg#it-tool"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Level 3 #C
-            url: "../" #M
-      otherInfo:
-        items:
-          - title: Rispettando
-            icon:
-              icon: "sprites.svg#it-pa"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Design standard X #C
-            url: "#" #M
+            label: Adotta il modello di sito comunale #C
+            url: "../" #M  
+      #otherInfo:
+        #items:
+          #- title: Rispettando
+            #icon:
+              #icon: "sprites.svg#it-pa"
+              #size: "sm"
+              #align: "middle"
+              #color: "secondary"
+            #label: Design standard X #C
+            #url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -196,14 +203,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer, Developer #C
+            label: Developer #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare, Realizzare #C
+            label: "Disegnare e sviluppare l'interfaccia utente" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -211,15 +218,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Argomento
+        - label: Progettazione interfaccia
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Sviluppo interfaccia
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Adozione modelli
           url: "#"
           color: primary
           size: lg
@@ -230,203 +237,150 @@ components:
   sectionsEditorial :
 
 
-    - title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem #C
+    - title: I template HTML #C
       menu: false
       centered: true
       bgColor: null
+      #text: | #C
+        
+      components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          #title: A cosa servono h3 #C
+          text: | #C
+            I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, permettono di creare rapidamente il front-end del sito comunale indipendentemente dalle soluzioni tecnologiche adottate dall’amministrazione.
+            
+            Seleziona i template relativi alla pagina del sito che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie a comporre l’interfaccia web.
+            
+            I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le Linee guida sull’accessibilità degli strumenti informatici.
+            
+    - title: I temi per WordPress e Drupal #C
+      menu: false
+      centered: true
+      bgColor: null
+      #text: | #C
+        
+      components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          #title: A cosa servono h3 #C
+          text: | #C
+            I temi per i content management system (sistema di gestione contenuti, CMS) WordPress e Drupal sono pronti all’uso e permettono di passare rapidamente alla creazione e alla gestione dei contenuti, una volta installati e configurati correttamente sul dominio istituzionale dell’ente.
+            
+            I temi sono aggiornati alla versione 2.0 di Bootstrap Italia e raggiungono il livello di accessibilità AA delle WCAG 2.1. Il loro utilizzo non prescinde da un’attenta cura editoriale di sezioni e contenuti del sito, così come dalla compilazione e pubblicazione della Dichiarazione di accessibilità prevista dalla normativa vigente.
+            
+  # ///////////////////
+  # RESOURCES
+  # ///////////////////
+  resourceList:
+    title: Risorse operative #C
+    headingLevel: 2
+    list:
+      - simpleList : true
+        #title: First group title #C
+        headingLevel: 3
+        listItems:
+          - label: Anteprime dei template HTML del sito comunale #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia  #C
+            url: https://italia.github.io/design-comuni-pagine-statiche/sito/index.html #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+          - label: Sorgenti dei template HTML del sito comunale #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: La repository GitHub con il codice sorgente  #C
+            url: https://github.com/italia/design-comuni-pagine-statiche #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+          - label: Tema WordPress per il sito comunale #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Il repository GitHub con il file e le istruzioni per l’installazione del tema #C
+            url: https://github.com/italia/design-comuni-wordpress-theme #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+          - label: Tema Drupal per il sito comunale #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Il repository GitHub con il file e le istruzioni per l’installazione del tema #C
+            url: https://github.com/italia/design-comuni-drupal-theme #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+
+
+
+  # ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial2 :
+
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: I template HTML #C
+      background: null
+      menu: false
+      centered: true
       #text: | #C
       #  Lorem **ipsum**
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: A cosa servono h3 #C
+          #title: A cosa servono h3 #C
           text: | #C
-            Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.
+            Con la guida del documento di architettura dell’informazione e l’uso del codice dei template HTML, la realizzazione del sito istituzionale di un Comune è completamente svincolata dalle scelte tecnologiche e dalla tipologia CMS utilizzata dagli enti.
             
-            Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per rappresentare le principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.
-
-  # ///////////////////
-  # RESOURCES
-  # ///////////////////
-  resourceList:
-    title: Resource list title #C
-    headingLevel: 3
-    list:
-      - simpleList : true
-        title: First group title #C
-        headingLevel: 4
-        listItems:
-          - label: Resource title #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Resource description #C
-            url: "#" #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-          - label: Resource title #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Resource description #C
-            url: "#" #M
-            actions:
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                blank: true
-      - simpleList : true
-        title: Second group title #C
-        headingLevel: 4
-        listItems:
-          - label: Resource title #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Resource description #C
-            url: "#" #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-          - label: Resource title #C
-            url: "#" #M
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Resource description #C
-            actions:
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                blank: true
-
-          
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial2 :
-  
-  # —
-    # EDITORIAL #C #I
-    # —   
-    - title: Lorem ipsum h2
-      bgColor: null
-      menu: false
-      centered: false
-      text: | #C
-        Lorem **ipsum**
-      components: 
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-   
+              La scelta di CMS alternativi è sempre possibile. Come previsto dagli articolo 68 e 69 del Codice dell’Amministrazione Digitale (CAD), dovrebbe principalmente riguardare software a riuso oppure open source. Sul [catalogo del software della PA](https://developers.italia.it/it/software) è possibile trovare software già utilizzati da altre amministrazioni o pubblicare le soluzioni sviluppate in proprio.

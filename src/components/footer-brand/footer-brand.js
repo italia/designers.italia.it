@@ -1,6 +1,7 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import ImageResponsive from "../image-responsive/image-responsive"
+import Link from "../link/link"
 import "./footer-brand.scss"
 
 const FooterBrand = ({
@@ -30,13 +31,13 @@ const FooterBrand = ({
               {logos.map((value,index)=>{
                 return(
                   <li key={"item-"+index} className="mb-5 me-md-5 ">
-                    <a
-                      href={value.url}
+                    <Link
+                      to={value.url}
                       target={value.blank ? "_blank" : undefined}
                       className="d-block"
                     >
                       <ImageResponsive src={value.img} alt={value.title} className={value.small ? "small" : undefined}/>
-                    </a>
+                    </Link>
                   </li>
                 )
               })}

@@ -15,15 +15,22 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level4
+
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Schematizza il contesto d'uso del servizio - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Identifica le figure e comprendi l’impatto che potrebbero avere sul tuo servizio e sull’esperienza d’uso delle persone. #C
+  name: "Sviluppa l'interfaccia di un servizio digitale - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description : Assembla velocemente il front-end di un servizio digitale tramite componenti, soluzioni di design e codice già validati. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso-del-servizio/ #M
+  pathname: /risorse-per-progettare/realizzare/sviluppo-interfaccia/sviluppa-l-interfaccia-di-un-servizio-digitale/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -62,7 +69,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Comprendere #C
+        label: Realizzare #C
         url: "../../" #M
       - title: Nel kit di design #C
         icon:
@@ -70,7 +77,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Analizza il contesto d'uso #C
+        label: Sviluppo interfaccia #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -120,26 +127,26 @@ components:
         - label : Risorse per progettare
           active: false
           url: ../../../
-        - label : Comprendere
+        - label : Realizzare
           url: ../../
           active: false
-        - label : Analisi del contesto
+        - label : Sviluppo interfaccia
           url: ../
           active: false
-        - label : Schematizza il contesto d'uso del servizio
+        - label : "Sviluppa l'interfaccia di un servizio digitale"
           active: true
-    title: Schematizza il contesto d’uso del servizio #C
-    subtitle: Identifica le figure e comprendi l’impatto che potrebbero avere sul tuo servizio e sull’esperienza d’uso delle persone #C
+    title: "Sviluppa l'interfaccia di un servizio digitale" #C
+    subtitle: Assembla velocemente il front-end del servizio digitale tramite componenti, soluzioni di design e codice già validati #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
-    pretext:
-      icon:
-        icon: sprites.svg#it-info-circle
-        size: sm
-   #  text: In breve
-  # text: | #C
-  #  Lorem **ipsum** 
+    # #pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    text: | #C
+      Lorem **ipsum** 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     imgRatio: 4x3
@@ -168,16 +175,8 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Comprendere #C
+            label: Realizzare #C
             url: "../../" #M
-          - title: Nel kit #C
-            icon:
-              icon: "sprites.svg#it-tool"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Analisi del contesto #C
-            url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -196,14 +195,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer #C
+            label: Developer #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Capire il contesto d’uso del servizio #C
+            label: "Disegnare e sviluppare l'interfaccia utente" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -211,14 +210,18 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Mappa attori
+        - label: Interfaccia utente
           url: "#"
           color: primary
           size: lg
-        - label: Mappa ecosistema
+        - label: Prototipazione
           url: "#"
           color: primary
           size: lg
+        # - label: Argomento
+        #   url: "#"
+        #   color: primary
+        #   size: lg
       
   # ///////////////////
   # SECTION EDITORIAL
@@ -226,53 +229,73 @@ components:
   sectionsEditorial :
 
 
-    - title: Come mappare le figure coinvolte e l’ecosistema #C
+    - title: Le librerie di codice #C
       menu: false
       centered: true
       bgColor: null
-      #text: | #C
-      #  Lorem **ipsum**
+      text: | #C
+         Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
+         
+         Le librerie ti forniscono **componenti open-source pronti all’uso**: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          # title: A cosa servono h3 #C
+          title: Bootstrap Italia e React #C
           text: | #C
-            **Traccia tutte le figure coinvolte** nell’erogazione del servizio e **classificale in modo strutturato**, distinguendole tra primarie e secondarie, interne o esterne alla Pubblica Amministrazione.
+            **Bootstrap Italia** è il principale punto di riferimento e il più moderno set di componenti disponibile per la costruzione di interfacce per servizi della PA, costruito sulle basi delle più recenti modifiche allo UI Kit e sulla libreria Bootstrap 4. Contiene codice **HTML e CSS** già pronto all’utilizzo per l’applicazione di tipografia, spaziature, design responsivo ed altri pattern di interfaccia conformi alle attuali Linee Guida.
 
-            Approfondisci e **schematizza le interazioni e i flussi di scambio** che avvengono tra i diversi attori e touchpoint coinvolti, mettendo in evidenza eventuali inefficienze del sistema e potenziali miglioramenti
-            
-
-            **Comprenderai l’impatto che i diversi ruoli** hanno sul servizio e sulle persone come destinatarie. 
-
+            **React kit** contiene componenti programmati in linguaggio **JavaScript**, costruiti sulle basi di React, una libreria open source per sviluppo di applicazioni web e mobile ad alta interattività e scambio di dati.
   # ///////////////////
   # RESOURCES
   # ///////////////////
   resourceList:
     title: Risorse operative #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
-        headingLevel: 4
+        #title: First group title #C
+        headingLevel: 3
         listItems:
-          - label: Mappa degli attori #C
+          - label: Nuovo UI kit - versione 3.0.0-beta.1 #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Uno schema per individuare e classificare tutti gli attori coinvolti nel contesto d’uso del servizio #C
-            url: "https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing" #M
+            text: La libreria dei componenti per realizzare l’interfaccia utente, coerente con Bootstrap Italia #C
+            url: "https://www.figma.com/community/file/1105848677422572920" #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing" #M
+                url: "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: Mappa dell'ecosistema #C
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+          - label: Design UI kit - legacy #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un diagramma per schematizzare le possibili relazioni e interdipendenze tra le figure interessate #C
-            url: "https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing" #M
+            text: Il repository GitHub con componenti e template ufficiali del design system della Pubblica Amministrazione Italiana #C
+            url: "https://github.com/italia/design-ui-kit" #M
+            blank: true
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing" #M
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
                 ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
                 blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+
+
+
+   

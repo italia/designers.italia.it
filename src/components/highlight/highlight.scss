@@ -6,15 +6,15 @@
 		color: var(--hl-dark-theme-color);
 	}
 	.text-container {
-		h2,
-		h3,
-		h4 {
-			font-size: var(--hl-title-font-size);
-		}
-		p.sub-title {
-			font-size: var(--hl-sub-title-font-size);
-      line-height: 1.3333333333333333;
-		}
+		// h2, // xxx removed, we use BI classic measures
+		// h3,
+		// h4 {
+		// 	font-size: var(--hl-title-font-size);
+		// }
+	// 	p.sub-title {
+	// 		font-size: var(--hl-sub-title-font-size);
+    //   line-height: 1.3333333333333333;
+	// 	}
 		.h-text {
 			p {
 				margin: 0;
@@ -39,6 +39,11 @@
 			height: 200px;
 			fill: var(--color-secondary);
 		}
+    &.full {
+      img {
+        width: 100%;
+      }
+    }
 	}
 }
 //mobile only ------------------------------------------------------------------------------------------
@@ -86,6 +91,11 @@
 		.img-container {
 			margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
 			margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
+      &.full {
+        .main-image {
+          width: 100%;
+        }
+      }
 		}
     .main-image {
       width: calc(100% + var(--bs-gutter-x));

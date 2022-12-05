@@ -1,12 +1,5 @@
 @import "../../scss/bootstrap-breakpoints";
 
-.content-column {
-  .img-full {
-    border-radius: 4px;
-    overflow: hidden;
-    margin: 24px 0;
-  }
-}
 
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
@@ -14,6 +7,9 @@
   .img-full {
     margin-left: calc(var(--spacer) * -4);
     margin-right: calc(var(--spacer) * -4);
+    .gatsby-image-wrapper-constrained {
+      display: block;
+    }
   }
 
 }

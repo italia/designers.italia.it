@@ -72,7 +72,7 @@ navbar:
     # —
     # NAV ITEMS
     # —
-    voices:
+    voicesLeft:
       - isDropDown : true
         isMegaMenu : true
         idMegamenu : menuA
@@ -126,7 +126,8 @@ navbar:
                 - url: "/norme-e-riferimenti/#articoli-di-approfondimento/"
                   label: Articoli di approfondimento teorici (Medium)
                 - url: "/norme-e-riferimenti/altre-norme-e-riferimenti"
-                  label: Altre norme e riferimenti
+                  label: Altre norme e riferimenti  
+    voicesCenter:
       - isDropDown : true
         isMegaMenu : true
         idMegamenu : menuC
@@ -177,9 +178,9 @@ navbar:
                   label: Componenti
             - isMenu: true
               listItems: #C #M
-                - url: "design-system/design-pattern/"
+                - url: "/design-system/design-pattern/"
                   label: Design pattern
-                - url: "design-system/showcase/"
+                - url: "/design-system/showcase/"
                   label: Showcase
       - isDropDown : true
         isMegaMenu : true
@@ -209,6 +210,7 @@ navbar:
                   label: Realizzare
                 - url: "/risorse-per-progettare/validare/"
                   label: Validare
+    voicesRight:
       - isDropDown : true
         isMegaMenu : true
         idMegamenu : menuF
@@ -260,7 +262,7 @@ headerPost:
     - title: Benvenuto **kit privacy**
       url: "#"
       blank: false
-      icon: 
+      icon:
         icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
         size: "sm"
         align : "middle"

@@ -6,23 +6,26 @@ import Icon from "../icon/icon"
 import Numbers from "../numbers/numbers"
 import ReactMarkdown from "react-markdown"
 
-const Highlight = (
-	{
-		id,
-		background,
-		img,
+const Highlight = ({
+	id,
+	background,
+	img,
     alt,
-		icon,
+	icon,
     overlayImg,
     overlayAlt,
-		big,
-		title,
+	big,
+	title,
     numbers,
 		headingLevel,
 		subtitle,
 		text,
 		buttons,
-		specular
+		specular,
+    textSanSerif,
+    fullImg,
+    children,
+    reversedMobile
 	}
 ) => {
 	let styles = 'highlight'
@@ -31,6 +34,7 @@ const Highlight = (
 
 	let classes = 'highlight-content d-lg-flex'
 	+ `${specular ? ' flex-lg-row-reverse' : ''}`
+  + `${reversedMobile ? ' d-flex flex-column-reverse' : ''}`
   + `${img ? '' : ' no-image'}`
 
 	//heading level
@@ -51,23 +55,40 @@ const Highlight = (
 		})
 	}
 
+  let textClass
+  if (textSanSerif) {
+    textClass = "h-text"
+  }else{
+    textClass = "h-text font-serif"
+  }
+
+  let ratioClass
+  if (fullImg) {
+    ratioClass = "img-container full img-fluid" // xxx img-fluid added for home 1st highlight...
+  }else{
+    ratioClass = "img-container ratio ratio-16x9"
+  }
+
+
 	return (
 		<section className={styles} aria-labelledby={id}>
-			<div className="container-xxl">
-				<div className="row">
+			<div className="container-xxl /*p-0*/">
+				<div className="row /*p-0*/">
 					<div className="col-12">
 						<div className={classes}>
-              <div className="img-container ratio ratio-16x9">
+              <div className={ratioClass}>
                 {img &&<ImageResponsive className="main-image" src={img} alt={alt}/> }
 								{icon && <Icon {...icon}/>}
-                {overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
+                				{overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
 							</div>
 							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
 								<HLevel id={id}>{title}</HLevel>
-								{subtitle && <p className="sub-title mb-4">{subtitle}</p>}
+								{subtitle && <p className="lead mb-4">{subtitle}</p>}
                 {numbers && <Numbers {...numbers}/>}
-								{text && <div className="h-text font-serif"><ReactMarkdown>{text}</ReactMarkdown></div>}
+								{text && <div className={textClass}><ReactMarkdown>{text}</ReactMarkdown></div>}
 								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
+
+                { children }
 							</div>
 						</div>
 					</div>

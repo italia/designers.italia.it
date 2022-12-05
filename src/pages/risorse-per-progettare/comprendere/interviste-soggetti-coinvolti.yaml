@@ -15,6 +15,13 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level3
+
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
@@ -274,7 +281,7 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come pianificare e strutturare le interviste sulla base degli obiettivi di perseguire durante la ricerca, predisporre il protocollo da adottare e rielaborare i dati emersi per ottenere una sintesi razionale dei risultati.
           ctas:
-          - label: Vai all’argomento "Interviste" #C
+          - label: "Vai all'argomento Interviste" #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/interviste.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -309,13 +316,13 @@ components:
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "interviste-soggetti-coinvolti/pianifica-le-interviste" #M
+        url: "pianifica-le-interviste/" #M
         text: | #C
           Definisci gli obiettivi della ricerca e i temi da investigare: in questo modo sarà più semplice capire quali criteri seguire per strutturare il questionario di selezione dei partecipanti.
         tag:
           label: Attività del kit #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -332,13 +339,13 @@ components:
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "interviste-soggetti-coinvolti/predisponi-il-protocollo" #M
+        url: "predisponi-il-protocollo/" #M
         text: | #C
           Scegli la struttura e mantieni il focus. Rendi fruttuosa la conversazione, defininendo i macro temi da affrontare e le domande per comprendere la percezione e le aspettative della persona intervistata rispetto al tuo servizio. 
         tag:
           label: Attività del kit #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -348,19 +355,20 @@ components:
               color: secondary
           list:
             isShare: true
+
         # CARD CHILDREN ACTION
       - title: Rielabora le informazioni #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "interviste-soggetti-coinvolti/rielabora-le-informazioni" #M
+        url: "rielabora-le-informazioni/" #M
         text: | #C
           Schematizza, categorizza e classifica le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista. 
         tag:
           label: Attività del kit #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard3
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi

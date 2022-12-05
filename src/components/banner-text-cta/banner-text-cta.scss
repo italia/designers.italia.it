@@ -1,0 +1,62 @@
+@import "../../scss/bootstrap-breakpoints";
+
+
+.banner-text-cta {
+  .simple-cta {
+    text-transform: none;
+    color: #FFF;
+  }
+  &.bg-dark {
+    color: #FFF;
+  }
+}
+
+//Mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+  .banner-text-cta {
+    .simple-cta {
+      &:not(:last-of-type) {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+//Small tablet ------------------------------------------------------------------------------------------
+@include media-breakpoint-up(sm) {
+
+}
+
+//Tablet portrait ---------------------------------------------------------------------------------------
+@include media-breakpoint-up(md) {
+
+}
+
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+  .banner-text-cta {
+    .simple-cta {
+      &:not(:last-of-type) {
+        margin-right: 54px;
+      }
+    }
+  }
+
+}
+
+//Laptop ------------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xl) {
+
+}
+
+//Desktop -----------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xxl) {
+}
+
+//Hover states ------------------------------------------------------------------------------------------
+@media (hover: hover) {
+}
+
+//Transitions (A11y reduced motion disabled) ------------------------------------------------------------
+@media screen and (prefers-reduced-motion: no-preference) {
+}

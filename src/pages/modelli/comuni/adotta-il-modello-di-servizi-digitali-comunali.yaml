@@ -15,15 +15,22 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level3
+
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Level 3 - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  name: Adotta il modello di servizi digitali comunali - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Segui la procedura guidata e usa le risorse per realizzare i servizi digitali di un Comune. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/realizzare/level3/ #M
+  pathname: /modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -56,13 +63,13 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi in #C
+      - title: Ti trovi nel modello #C
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Level 2 #C
+        label: Comuni #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -109,18 +116,18 @@ components:
         - label : Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Modelli
           active: false
           url: ../../
-        - label : Level2
+        - label : Comuni
           url: ../
           active: false
-        - label : Level3
+        - label : Adotta il modello di servizi digitali comunali
           active: true
-    title: Level 3 #C
-    subtitle: Subtitle #C
+    title: Adotta il modello di servizi digitali comunali #C
+    subtitle: I servizi comunali a portata di clic #C
     tag:
-      label: tag #C
+      label: Scheda operativa #C
       addonClasses: mt-3 text-uppercase
     imgRatio: 4x3
     pretext:
@@ -129,7 +136,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Lorem **ipsum** 
+      Le attività ti guidano a **impostare il lavoro da un punto di vista organizzativo e ti supportano nella progettazione e nello sviluppo dei servizi comunali**, tenendo conto di aspetti importanti come i requisiti tecnici per la corretta adozione del modello. Le risorse ti permettono di comprendere i flussi di interazione, comporre l’interfaccia grafica e abilitare velocemente il front-end. 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     share:
@@ -151,24 +158,24 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi in
+          - title: Ti trovi nel modello
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Level 2 #C
+            label: Comuni #C
             url: "../" #M
-      otherInfo:
-        items:
-          - title: Rispettando
-            icon:
-              icon: "sprites.svg#it-pa"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Design standard X #C
-            url: "#" #M
+      #otherInfo:
+        #items:
+          #- title: Rispettando
+            #icon:
+              #icon: "sprites.svg#it-pa"
+              #size: "sm"
+              #align: "middle"
+              #color: "secondary"
+            #label: Design standard X #C
+           # url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -184,7 +191,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare, Realizzare #C
+            label: "Progettare l'interazione dell'utente con il servizio, Disegnare e sviluppare l'interfaccia utente" #C
       tagsLabel : Parliamo di
       color: secondary
       icon:
@@ -192,15 +199,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Argomento
+        - label: Progettazione servizi
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Servizi digitali per i Comuni
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Interfaccia utente
           url: "#"
           color: primary
           size: lg
@@ -219,13 +226,27 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "level4/"
-              label: Level 4 #C
+            - url: "comprendi-lo-stato-dell-arte/"
+              label: "Comprendi lo stato dell'arte" #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
+            - url: "progetta-il-flusso-di-servizio/"
+              label: Progetta il flusso #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "realizza-l-interfaccia-del-servizio-digitale-comunale/"
+              label: "Realizza l'interfaccia" #C
+              iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm    
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -235,7 +256,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem h2 #C
+    - title: I flussi di servizio #C
       menu: false
       centered: true
       bgColor: null  
@@ -247,22 +268,30 @@ components:
         - name: TextImageCta
           title: A cosa servono h3 #C
           text: | #C
-            Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.
-
-            Le risorse comprendono i **flussi** per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per rappresentare le principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.
-
+            I nuovi flussi di servizio permettono di creare servizi digitali comunali semplici, veloci e accessibili. 
+            
+            Le risorse permettono di realizzare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.
+            
+            Le risorse sono suddivise per fasi progettuali e comprendono:
+            - strumenti e guide pratiche per pianificare e svolgere il lavoro;
+            - diagrammi di flusso e prototipi a media e alta definizione, per comprendere i flussi di interazione;
+            - le librerie di componenti, che consentono di comporre l’interfaccia grafica sia su mobile che su desktop;
+            - i template HTML, che consentono l’implementazione veloce del front-end.
+            
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
           # specular: true
-          title: Lorem ipsum h3 #C
+          title: Componenti modulari #C
           text: | #C
-            **Lorem** ipsum
+            Una mappatura dei principali servizi erogati dai Comuni e l’analisi dei passaggi necessari al completamento delle procedure hanno permesso di individuare 5 tipologie di interazione digitale tra il cittadino e il servizio comunale.
+            
+            La struttura modulare dei modelli si adatta facilmente anche a un numero più ampio di servizi digitali per il cittadino. I vari moduli e sezioni sono consultabili nell’apposita libreria di componenti UI e possono essere combinati per far fronte a diverse esigenze. Ulteriori componenti sono anche disponibili nel Design System del Paese.
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Scopri come usare le risorse #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizio.html #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -270,26 +299,37 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+          
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          title: La conformità al modello #C
+          text: | #C
+            I criteri di conformità guidano alla corretta adozione del modello in termini di esperienza utente, sicurezza, performance e rispetto della normativa. Sono stati definiti per assicurare l’aderenza ai principi contenuti nelle Linee guida di design per i siti internet e i servizi digitali della PA.
+          ctas:
+          - label: Vai ai criteri di conformità #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-servizi-digitali.html #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
-              addonClasses: ms-2
+              addonClasses: ms-2        
+        
 
     # —
     # EDITORIAL #C #I
     # —   
-    - title: Lorem ipsum #C
+    - title: I principali servizi digitali comunali #C
       bgColor: light
       menu: false
       centered: false
       text: | #C
-        Sottotitolo o lead text 
+        Esplora le 5 tipologie di flusso di servizio
       components:
 
         # TXT + IMG + CTA BLOCK
@@ -473,7 +513,6 @@ components:
 
       # CARD CHILDREN ACTION
       - title: Lorem azione #C
-        fullHeight: true
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
@@ -483,7 +522,7 @@ components:
         tag:
           label: Tipologia contenuto #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -496,7 +535,6 @@ components:
 
       # CARD CHILDREN ACTION
       - title: Lorem azione #C
-        fullHeight: true
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
@@ -506,7 +544,7 @@ components:
         tag:
           label: Tipologia contenuto #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -519,7 +557,6 @@ components:
 
       # CARD CHILDREN ACTION
       - title: Lorem azione #C
-        fullHeight: true
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
@@ -529,7 +566,7 @@ components:
         tag:
           label: Tipologia contenuto #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard3
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi

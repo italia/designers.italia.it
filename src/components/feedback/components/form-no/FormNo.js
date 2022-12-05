@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
 import ImageResponsive from "../../../image-responsive/image-responsive"
+import Link from "../../../link/link"
 
 import Button from "../../../button/button"
 
@@ -157,7 +158,7 @@ const FormNo = ({
       <ImageResponsive src="/images/kit-analitics.svg" alt="" />
       <h2 className="mb-3 h4">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
       <div className="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
-      <div className="p mb-5"><a href="#">Leggi l’informativa sulla privacy</a></div>
+      <div className="p mb-5"><Link to="#">Leggi l’informativa sulla privacy</Link></div>
       <form action="#">
         <div className="d-md-flex align-items-start">
           <div className="form-group w-75 me-5">

@@ -3,9 +3,9 @@ import Template from "../templates/tmpl-level-1-community"
 import {Seo} from "../components/seo/seo"
 import Pagedata from "./community.yaml"
 
-const Community = () => {
+const Community = ({ pageContext,location }) => {
   return(
-    <Template Pagedata={Pagedata}>
+    <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}
     </Template>
   )

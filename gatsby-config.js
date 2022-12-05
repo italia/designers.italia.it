@@ -1,4 +1,10 @@
+const { getCrumbLabelUpdates } = require('./scripts/breadcrumbs');
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
+  trailingSlash: "always",
   siteMetadata: {
     siteUrl: `https://designers.italia.it`,
     title : "Designers Italia",
@@ -13,6 +19,21 @@ module.exports = {
     themeColor: "#0066cc"
   },
   plugins: [
+    { 
+      resolve:`gatsby-plugin-breadcrumb`,
+      options: {
+        useAutoGen: true,
+        crumbLabelUpdates: getCrumbLabelUpdates(),
+        autoGenHomeLabel: `Inizio`,
+        exclude: [
+          `**/dev-404-page/**`,
+          `**/404/**`,
+          `**/404.html`,
+          `**/offline-plugin-app-shell-fallback/**`
+        ],
+        trailingSlashes: true,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     {
@@ -38,7 +59,14 @@ module.exports = {
         name: `staticImages`,
         path: `${__dirname}/static/images/`,
       },
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `./src/pages/`,
+      },
+    },
+    `@colliercz/gatsby-transformer-gitinfo`,
     /*{
       resolve: 'gatsby-plugin-htaccess',
       // docs here: https://www.npmjs.com/package/gatsby-plugin-htaccess

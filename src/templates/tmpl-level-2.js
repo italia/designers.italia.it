@@ -24,9 +24,10 @@ import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const Template = ({children,Pagedata}) => {
-	return (
-    <>
+const Template = ({children,Pagedata,pageContext,location}) => {
+
+  return (
+    <div id="app">
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderPre data={HeaderData.headerPre}/>
@@ -37,7 +38,7 @@ const Template = ({children,Pagedata}) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        <Hero {...Pagedata.components.hero}></Hero>
+        <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>
         {Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}
         {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
           return(
@@ -51,7 +52,7 @@ const Template = ({children,Pagedata}) => {
           )
         })}
         {children}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} />}
+        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         {Pagedata.navPreFooter && <NavPreFooter {...Pagedata.navPreFooter} />}
         <Feedback/>
       </main>
@@ -64,7 +65,7 @@ const Template = ({children,Pagedata}) => {
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
-    </>
+    </div>
 	)
 }
 

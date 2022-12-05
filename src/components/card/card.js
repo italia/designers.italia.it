@@ -6,6 +6,8 @@ import Chip from "../chip/chip"
 import Dropdown from "../dropdown/dropdown"
 import Tag from "../tag/tag"
 import Icon from "../icon/icon"
+import Link from "../link/link"
+import Button from "../button/button"
 import "./card.scss"
 
 const Card =(
@@ -13,13 +15,17 @@ const Card =(
     cardEvent,
 		title,
     titleSmall,
+    titleBig,
 		headingLevel,
 		url,
     blank,
 		text,
+    textSerif,
 		tag,
 		share,
 		img,
+    imgRounded,
+    noShadow,
     alt,
 		imgRatio,
 		iconOverlay,
@@ -32,18 +38,24 @@ const Card =(
 		iconImg,
     iconImgAlt,
     fullHeight,
-    rounded
+    rounded,
+    buttonBottom
 	}
 )=>{
 	let styles = 'di-card d-md-flex flex-md-column w-100'
     + `${fullHeight ? ' fullheight' : ''}`
     + `${rounded ? ' rounded' : ''}`
     + `${titleSmall ? ' title-small' : ''}`
+    + `${titleBig ? ' title-big' : ''}`
+    + `${noShadow ? ' shadow-none' : ''}`
+    + `${textSerif ? ' text-serif' : ''}`
+    + `${buttonBottom ? ' has-button' : ''}`
 	let imgStyle = 'img-wrapper ratio'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 		+ `${imgPlaceholder ? ' img-placeholder' : ''}`
 		+ `${iconImg ? ' icon-img' : ''}`
     + `${cardEvent ? ' mb-4 negative-margin' : ''}`
+    + `${imgRounded ? ' rounded' : ''}`
 
 
 	//heading level
@@ -58,7 +70,7 @@ const Card =(
       <div className={styles}>
         <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
           <div className="text-zone">
-            {HLevel && <HLevel><a href={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</a></HLevel>}
+            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
@@ -109,11 +121,16 @@ const Card =(
         </div>}
         <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
           <div className="text-zone">
-            {HLevel && <HLevel><a href={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</a></HLevel>}
+            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
             {moreInfo && <span className="more-info font-monospace">{moreInfo}</span>}
+            {buttonBottom &&
+              <div className="button-wrapper mt-4">
+                <Button {...buttonBottom}></Button>
+              </div>
+            }
           </div>
           {(tag || share || chips) && <div className="di-card-footer">
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">

@@ -2,7 +2,7 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .highlight-cards {
-  .intro {
+  /*.intro {
     p {
       font-size: 1.3333333333333333rem;
       line-height: 1.2;
@@ -10,16 +10,15 @@
         margin-bottom: 0;
       }
     }
-  }
-  .highlight-cards {
-    .buttons {
-      .btn {
-        margin-right: calc(var(--spacer) * 4);
-        &:last-child {
-          margin-right: 0;
-        }
+  }*/
+  .buttons {
+    .btn {
+      margin-right: calc(var(--spacer) * 4);
+      &:last-child {
+        margin-right: 0;
       }
     }
+
   }
 }
 
@@ -47,7 +46,12 @@
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-
+  .highlight-cards{
+    padding-top: calc(var(--spacer) * 24) !important;
+    &.no-pad-top{
+      padding-top: 24px !important;
+    }
+  }
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------

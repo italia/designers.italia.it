@@ -9,10 +9,12 @@ const ImageIcons = ({
   icons,
   images,
   background,
+  customStyle
 }) => {
 
   let styles = 'image-icons'
 	+ `${background ? ' bg-'+background : ''}`
+  + `${customStyle ? ' '+customStyle : ''}`
 
   let iconItems
   let imagesItems

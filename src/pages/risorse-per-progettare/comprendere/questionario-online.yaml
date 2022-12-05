@@ -15,6 +15,13 @@
 # delete with caution
 
 # ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level3
+
+# ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
@@ -220,7 +227,7 @@ components:
         list:
           listItems: #M
             - url: "questionario-online/pianifica-l-indagine/"
-              label: Pianifica l'indagine #C
+              label: "Pianifica l'indagine" #C
               iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -263,7 +270,7 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come mappare l’esperienza d’uso di un servizio esistente (as-is) e a riprogettare la sua evoluzione (to-be), comprendendo le caratteristiche dell'utente con risorse operative dedicate quali personas e user journey.
           ctas:
-          - label: Vai all’argomento “Questionari” #C
+          - label: "Vai all'argomento Questionari" #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -293,18 +300,18 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Pianifica l'indagine #C
+      - title: "Pianifica l'indagine" #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "questionario-online/pianifica-l-indagine" #M
+        url: "pianifica-l-indagine/" #M
         text: | #C
           Definisci gli obiettivi dell’indagine e inizia a progettare il questionario riflettendo sulla strategia migliore per estrapolare le informazioni di cui hai bisogno.
         tag:
           label: Attività del kit #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -321,13 +328,13 @@ components:
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "questionario-online/sintetizza-i-risultati-della-ricerca" #M
+        url: "sintetizza-i-risultati-della-ricerca/" #M
         text: | #C
           Analizza le informazioni raccolte con tecniche quanti-qualitative e rielaborale in maniera rilevante per lo scopo della ricerca.
         tag:
           label: Attività del kit #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi

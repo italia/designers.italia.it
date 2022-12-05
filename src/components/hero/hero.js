@@ -1,5 +1,6 @@
 import * as React from "react"
 import "./hero.scss"
+
 import ReactMarkdown from "react-markdown"
 import ImageResponsive from "../image-responsive/image-responsive"
 import Breadcrumbs from "../breadcrumbs/breadcrumbs"
@@ -9,9 +10,12 @@ import Tag from "../tag/tag"
 import Kangaroo from "../kangaroo/kangaroo"
 
 const Hero =({
+  pageContext,
+  name,
   centered,
   column,
-	breadcrumbs,
+	// breadcrumbs,
+  reversedMobile,
 	share,
 	tag,
 	background,
@@ -74,7 +78,7 @@ const Hero =({
           <div className="row">
             <div className="col-12">
               <div className={breadcrumbsStyle}>
-                <Breadcrumbs {...breadcrumbs}></Breadcrumbs>
+                <Breadcrumbs pageContext={pageContext} title={name} ></Breadcrumbs>
               </div>
               <div className="hero-main">
                 <div className={rowStyle}>

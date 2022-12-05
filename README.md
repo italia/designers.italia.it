@@ -1,12 +1,16 @@
-# Sorgenti del nuovo sito di Designers Italia
+# 🚧 Sorgenti del nuovo sito di Designers Italia
 
-Questo _repository_ contiene il codice sorgente del sito **[Designers Italia](https://designers.italia.it)**, il punto di riferimento per la progettazione dei servizi pubblici digitali: modelli, kit e guide per facilitare processi di design centrati sui bisogni dei cittadini.
+Questo repository contiene il codice sorgente del sito **[Designers Italia](https://designers.italia.it)**, il progetto di riferimento per la progettazione dei servizi pubblici digitali.
 
-Il nuovo sito, previsto in uscita in Q4 2022, è in sviluppo utilizzando il nuovo [Bootstrap Italia 2](https://italia.github.io/bootstrap-italia/), [Gatsby](https://www.gatsbyjs.com) e fa uso dell'ecosistema [Node.js](https://nodejs.org/it/).
+Il nuovo sito utilizza [Bootstrap Italia 2](https://italia.github.io/bootstrap-italia/), [Gatsby](https://www.gatsbyjs.com) e l'ecosistema [Node.js](https://nodejs.org/it/)
 
-🚀 Un'anteprima del sito in lavorazione è disponibile su [https://designers-italia-it-next.vercel.app](https://designers-italia-it-next.vercel.app/).
+Un'anteprima del sito è disponibile su **[prossima.designers.italia.it](https://prossima.designers.italia.it)**  
 
-## Come contribuire
+È possibile seguirne le lavorazioni nella [board di progetto](https://github.com/orgs/italia/projects/15) e nelle [issue con etichetta next](https://github.com/italia/designers.italia.it/issues?q=is%3Aissue+is%3Aopen+label%3Anext)
+
+----------
+
+## 💙 Come contribuire
 
 Ogni commento o proposta relativa all'evoluzione del sito e delle risorse può essere fatta utilizzando le [issues](https://github.com/italia/designers.italia.it/issues) di GitHub.
 
