@@ -188,74 +188,107 @@ components:
   # ///////////////////
   sectionsEditorial:
 
-  #  # —
-  #  # IMG FULL COVER
-  #  # —
-  #  - menu: false #TOGGLE RIGHT SECTION INDEX
-  #    bgColor: null
-  #    full: true
-  #    noSpace: true
-  #    title: false
-  #    text: false
-  #    components:
-  #      # IMG
-  #      - name: ImageIcons
-  #        image: /images/image-icons-fullwidth.jpg #I
-  #        alt: Descrizione immagine grande #C
-
     # —
     # EDITORIAL #C #I
     # —   
     - title: Visione
-      bgColor: null
+      background: dark
       menu: false
-      centered: false
+      centered: true
       text: | #C
         Crediamo in una Pubblica Amministrazione vicina, semplice e utile alle persone di oggi e di domani, grazie a siti e servizi pubblici digitali progettati in modo collaborativo. 
+      # components: 
+
+    # —
+    # IMG FULL COVER
+    # —
+    - menu: false #TOGGLE RIGHT SECTION INDEX
+      background: dark
+      full: true
+      noSpace: true
+      title: false
+      text: false
+      components:
+        # IMG
+        - name: ImageIcons
+          image: /images/600x400.png #I
+          alt: Descrizione immagine grande #C
+
+    # —
+    # EDITORIAL #C #I
+    # —   
+    - title: Missione
+      background: null
+      menu: false
+      centered: true
+      text: | #C
+        Quello che stiamo facendo per costruire il presente e il futuro della PA italiana.
       components: 
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Missione #C
+          title: Creiamo strumenti pratici per progettare servizi pubblici digitali migliori #C
+          headingLevel: 3
           text: | #C
-            Quello che stiamo facendo per costruire il presente e il futuro della PA italiana.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Creiamo strumenti pratici per progettare servizi pubblici digitali migliori
             Designers Italia crea e diffonde strumenti pratici che aiutano a progettare e realizzare servizi pubblici digitali con le persone al centro: semplici, accessibili, inclusivi, che riducono le disuguaglianze e rispettano le norme.
-            
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
 
-            #### Curiamo una community che condivide buone pratiche
+            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
+            
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Curiamo una community che condivide buone pratiche #C
+          headingLevel: 3
+          text: | #C
             Offrire servizi pubblici digitali di qualità richiede che **tutti gli attori coinvolti collaborino**.
-            
+
             Designers Italia **cura una comunità composta da persone della Pubblica Amministrazione**, delle imprese, da cittadine e cittadini, che si confronta sulle buone pratiche del settore e le condivide.
-            
-      # —
+
+            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)            
+                         
+    # —
     # EDITORIAL #C #I
     # —   
     - title: Valori
-      bgColor: null
+      background: medium
       menu: false
-      centered: false
+      centered: true
+      headingLevel: 2
       text: | #C
         I quattro princìpi alla base del progetto Designers Italia
       components: 
 
         # TXT BLOCK
         - name: TextImageCta
-          title: | #C
-          text: | #C
-            
-            #### Responsabilità
+          image: /images/600x400.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          title: Responsabilità
+          text: | #C       
             Designers Italia crea e diffonde strumenti pratici che aiutano a progettare e realizzare servizi pubblici digitali con le persone al centro: semplici, accessibili, inclusivi, che riducono le disuguaglianze e rispettano le norme.
-            
-            #### Semplicità
+
+        # TXT BLOCK
+        - name: TextImageCta
+          image: /images/600x400.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          title: Semplicità
+          text: | #C            
             Offrire servizi pubblici digitali di qualità richiede che **tutti gli attori coinvolti collaborino**.
             
-            #### Pluralità
+        # TXT BLOCK
+        - name: TextImageCta
+          image: /images/600x400.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          title: Pluralità
+          text: | #C  
             Offrire servizi pubblici digitali di qualità richiede che **tutti gli attori coinvolti collaborino**.
             
-            #### Apertura
+        # TXT BLOCK
+        - name: TextImageCta
+          image: /images/600x400.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          title: Apertura
+          text: | #C  
             Offrire servizi pubblici digitali di qualità richiede che **tutti gli attori coinvolti collaborino**.
