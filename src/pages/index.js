@@ -39,7 +39,7 @@ const Home = ({ pageContext, location }) =>{
         <ImageIcons {...Pagedata.components.imageIcons}></ImageIcons>
       }
           {Pagedata.components.sectionIntroImg.testimonials &&
-            <div className="pt-5">
+            <div className="">
               <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
             </div>
           }
