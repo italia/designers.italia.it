@@ -40,7 +40,7 @@ const ImageIcons = ({
 
   return (
     <div className={styles}>
-      <div className="container-xxl px-0">
+      <div className="container-xxl">
         <div className="row position-relative">
           <div className="col g-0">
             <ImageResponsive src={image} alt={alt} className="w-100" imgClassName="img-fluid w-100"/>
