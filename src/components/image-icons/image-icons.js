@@ -42,7 +42,7 @@ const ImageIcons = ({
     <div className={styles}>
       <div className="container-xxl">
         <div className="row position-relative">
-          <div className="col">
+          <div className="col g-0">
             <ImageResponsive src={image} alt={alt} className="w-100" imgClassName="img-fluid w-100"/>
           </div>
           {(iconItems || imagesItems) && (

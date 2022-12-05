@@ -23,7 +23,7 @@ const HighlightCards = ({
 
   let styles = 'highlight-cards'
 	+ `${background ? ' bg-'+background : ''}`
-  + `${nospace ? '' : '  py-5 py-lg-6'}`
+  + `${nospace ? '' : '  py-5 py-lg-7'}`
   + `${nopadtop ? '  no-pad-top' : ''}`
 
   let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'
@@ -73,8 +73,9 @@ const HighlightCards = ({
       <div className="container-xxl">
         {
           title && <div className={"row mb-4 mb-md-5 intro"}>
-            <div className='col col-md-10 offset-md-1'>
-                <div className="px-3 px-lg-0">
+            <div className="col-12">
+            {/* <div className='col col-md-10 offset-md-1'> */}
+                <div className="px-3 /*px-lg-0*/ px-lg-6">
                   {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
                   <p className="lead">{text}</p> {/*<ReactMarkdown>{text}</ReactMarkdown>*/}
                 </div>

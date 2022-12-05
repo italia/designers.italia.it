@@ -89,8 +89,8 @@
 @include media-breakpoint-down(lg) {
 	.highlight {
 		.img-container {
-			margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
-			margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
+			// margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
+			// margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
       &.full {
         .main-image {
           width: 100%;
@@ -98,7 +98,8 @@
       }
 		}
     .main-image {
-      width: calc(100% + var(--bs-gutter-x));
+		width: 100%;
+    //   width: calc(100% + var(--bs-gutter-x));
     }
     .no-image {
       .img-container {
@@ -131,6 +132,13 @@
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
+	.highlight {
+		&.highlight-big {
+			.img-container {
+				width: 50%;
+			}
+		}
+	}
 }
 
 //Desktop -----------------------------------------------------------------------------------------------
