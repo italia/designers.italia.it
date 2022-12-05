@@ -23,7 +23,7 @@ const HighlightCards = ({
 
   let styles = 'highlight-cards'
 	+ `${background ? ' bg-'+background : ''}`
-  + `${nospace ? '' : '  py-5 py-lg-6'}`
+  + `${nospace ? '' : '  py-5 py-lg-7'}`
   + `${nopadtop ? '  no-pad-top' : ''}`
 
   let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'
