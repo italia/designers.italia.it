@@ -27,8 +27,8 @@ let ctaItems
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         <div className="row">
-          <div className="col-12">
-            <div className="banner-text-cta-content px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
+          <div className="col-12 /**/ g-0">
+            <div className="banner-text-cta-content px-4 py-5 px-lg-0 /*px-lg-6*/ px-lg-7 py-lg-6">
               <div className="text-zone">
                 <h2 className="mb-5" id={id}>{title}</h2>
               </div>
