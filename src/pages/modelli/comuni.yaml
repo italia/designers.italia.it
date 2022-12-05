@@ -25,8 +25,8 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Comuni - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  name: Modello Comuni - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Tutte le risorse per realizzare con facilità siti e servizi digitali per i Comuni. #C
   image : null #I
   twitterImage: null #I
   canonical: null
@@ -104,15 +104,15 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Modelli
           active: false
           url: /level1/
-        - label : Level2
+        - label : Comuni
           active: true
     title: Comuni #C
-    subtitle: Subtitle #C
+    subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i cittadini #C
     tag:
-        label: tag  #C
+        label: Modello  #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -120,7 +120,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      Lorem **ipsum** 
+      Il modello ti permette di **realizzare siti e servizi comunali** già validati dalla ricerca e progettati sui bisogni dei cittadini. Le risorse, pronte all'uso, comprendono l'architettura dell'informazione, i template HTML e i temi per CMS, oltre a una serie di guide pratiche a supporto per impostare e svolgere il lavoro in modo rapido ed economico.
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -148,15 +148,15 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Argomento
+        - label: Adozione modelli
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Siti dei Comuni
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Servizi digitali per i Comuni
           url: "#"
           color: primary
           size: lg
@@ -213,52 +213,57 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: Lorem ipsum h2
-      bgColor: null
+    - title: "Realizza un’esperienza digitale efficace"
+      bgColor: medium
       menu: false
       centered: false
       text: | #C
-        Lorem **ipsum**
+        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle amministrazioni comunali
       components: 
 
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
+          #title: Lorem ipsum h3 #C
+          #text: | #C
+            #Lorem ipsum
 
             #### Titoletto interno h4
             Lorem ipsum
+          #ctas:
+          #- label: Fai lorem ipsum #C
+            #url: "#" #M
+            #blank: false #M #C true if new tab for external links
+            #icon: 
+              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+          #- label: Vai su ipsum #C
+            #url: "#" #M
+            #blank: true 
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+        
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: Un solido punto di riferimento per i cittadini #C
+          text: | #C
+            Il modello per un sito e servizi digitali chiari, semplici da usare e accessibili. Un unico posto dove i cittadini possono trovare facilmente le informazioni di cui hanno bisogno e presentare richieste o completare adempimenti verso l’amministrazione comunale direttamente online. 
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Naviga un esempio di sito #C
+            url: http://sb01.eurobeta.it:8080/ #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -266,8 +271,8 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
+          - label: Naviga un esempio di servizio digitale #C
+            url: https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19473&node-id=1018%3A235159&viewport=466%2C48%2C0.21&scaling=scale-down&starting-point-node-id=1018%3A235159 #M
             blank: true 
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -276,41 +281,30 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
+    
+    
+    # —
+    # EDITORIAL #C #I
+    # —   
+    - title: Il futuro della PA
+      bgColor: light
+      menu: false
+      centered: false
+      #text: | #C
+        #Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle amministrazioni comunali
+      components: 
 
         # TXT + CTA BLOCK
         - name: TextImageCta
-          title: Lorem ipsum h3 #C
+          #title: Lorem ipsum #C
           text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Il modello di sito e servizi digitali per i Comuni è il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto Designers Italia.
+            
+            L’uso del modello permette di fornire ai cittadini un’esperienza coerente tra le varie amministrazioni, aderendo alle linee guida nazionali e alle migliori pratiche di progettazione digitale e anticipando, inoltre, l’adozione delle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1). 
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Vai al report della ricerca #C
+            url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -318,8 +312,8 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
+          - label: Vai alla documentazione del modello #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
             blank: true 
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -328,14 +322,96 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+        
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: "Risorse pronte all'uso" #C
+          text: | #C
+            La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Le risorse operative del modello permettono di realizzare sito e servizi digitali con funzionalità già validate dalla ricerca, rispondendo così ai bisogni dei cittadini in modo rapido e a basso costo. 
+          #ctas:
+          #- label: Vai al report della ricerca #C
+            #url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
+            #blank: true #M #C true if new tab for external links
+            #icon: 
+              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+          #- label: Vai alla documentazione del modello #C
+            #url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
+            #blank: true 
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+              
+        # NUMBERS BLOCK
+        - name: Numbers
+          items: #C #I
+          - label: Documento di architettura
+            icon: sprites.svg#it-tool
+            #number: 1200
+          - label: Template HTML
+            icon: sprites.svg#it-tool
+            number: 90
+          - label: Temi CMS
+            icon: sprites.svg#it-tool
+            number: 2
+          - label: Servizi supportati
+            icon: sprites.svg#it-tool
+            number: 26
+          - label: Librerie di componenti
+            icon: sprites.svg#it-tool
+            number: 2
+          - label: Prototipi
+            icon: sprites.svg#it-tool
+            number: 21
+    
+    # —
+    # EDITORIAL #C #I
+    # —   
+    - title: Adottare il modello è semplice con il PNRR
+      bgColor: medium
+      menu: false
+      centered: false
+      #text: | #C
+      #  Lorem **ipsum**
+      components: 
 
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          #title: Lorem ipsum h3 #C
+          text: | #C
+            Scopri su PA digitale 2026 se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
+          ctas:
+          - label: Vai su PA digitale 2016 #C
+            url: https://padigitale2026.gov.it/ #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Esplora lorem ipsum #C
-    text: Lorem ipsum #C
+    title: Adotta il modello #C
+    text: Le risorse disponibili guidano su tutti gli aspetti progettuali, dalla pianificazione allo sviluppo #C
     col4: false
     nospace: true
 
@@ -343,13 +419,13 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+      - title: Il sito comunale #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "adotta-il-modello-di-sito-comunale/" #M
         tag:
-          label: Tag #C
+          label: Scheda operativa #C
         share: #AUTO
           btnId: shareButtonCard1
           button:
@@ -363,13 +439,13 @@ components:
             isShare: true
       
       # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+      - title: I servizi digitali #C
+        text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "adotta-il-modello-di-servizi-digitali-comunali/" #M
         tag:
-          label: Tag #C
+          label: Scheda operativa #C
         share: #AUTO
           btnId: shareButtonCard2
           button:
@@ -383,24 +459,24 @@ components:
             isShare: true
 
       # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
-        titleSmall: false
-        fullHeight: true
-        url: "#" #M
-        tag:
-          label: Tag #C
-        share: #AUTO
-          btnId: shareButtonCard3
-          button:
-            ariaLabel: Condividi
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+      #- title: Lorem ipsum #C
+        #text: Lorem ipum #C
+        #titleSmall: false
+        #fullHeight: true
+        #url: "#" #M
+        #tag:
+          #label: Tag #C
+        #share: #AUTO
+          #btnId: shareButtonCard3
+          #button:
+            #ariaLabel: Condividi
+            #addonStyle: icon-only-drop
+            #icon:
+              #icon: sprites.svg#it-more-items
+              #size: sm
+              #color: secondary
+          #list:
+            #isShare: true
 
 
   # ///////////////////
@@ -411,52 +487,26 @@ components:
   # —
     # EDITORIAL #C #I
     # —   
-    - title: Lorem ipsum h2
+    - title: Hai bisogno di chiarimenti o supporto tecnico?
       bgColor: null
       menu: false
       centered: false
-      text: | #C
-        Lorem **ipsum**
+      #text: | #C
+        #Lorem **ipsum**
       components: 
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          title: Lorem ipsum h3 #C
+          #title: Lorem ipsum h3 #C
           text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
+            Consulta le domande frequenti o scrivici
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Vai al supporto di PA digitale 2026 #C
+            url: https://padigitale2026.gov.it/supporto #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -464,78 +514,27 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+          #- label: Vai su ipsum #C
+            #url: "#" #M
+            #blank: true 
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
 
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
 
     # —
     # EDITORIAL #C #I
     # —   
     - menu: false
       centered: true
-      bgColor: null
-      title: Lorem ipsum #C
+      bgColor: light
+      title: La community di riferimento #C
       text: | #C
-        Lorem **ipsum** 
+        Scopri i canali dove confrontarti sulle risorse del modello 
       components:
 
         # TXT + IMG + CTA BLOCK
@@ -543,13 +542,13 @@ components:
           image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          title: ciao
+          #title: ciao
           text: |
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
+            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore
           ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Vai su Forum Italia #C
+            url: https://forum.italia.it/c/design/modello-comuni/ #M
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -557,83 +556,46 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    # —
-    # EDITORIAL #C #I
-    # — 
-    - menu: false
-      centered: true
-      bgColor: light
-      title: Lorem ipsum #C
-      text: | #C
-        Lorem **ipsum**
-      components:
-
+        
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/ItForum.svg
+          image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          #title: #C
-          text: | #C
-            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore.
+          #title: ciao
+          text: |
+            Dialoga e collabora in tempo reale con i designer e i maintainer sul canale Slack dedicato #design-siti-comuni 
           ctas:
-          - label: Vai su Forum Italia #C
-            url: "#" #M
+          - label: Vai su Slack #C
+            url: https://developersitalia.slack.com/archives/CME9AD8NN #M
             blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
-              size: sm
               hidden: true
+              size: sm
               addonClasses: ms-2
-
+        
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/Slack.svg
+          image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          #title: #C
-          text: | #C
-            Dialoga e collabora in tempo reale con i designer e i maintainer sui canali dedicati al #design.
+          #title: ciao
+          text: |
+            Progetta e sviluppa con noi nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
-          - label: "Entra nei canali #design" #C
-            url: "#" #M
+          - label: Vai su GitHub #C
+            url: Visita github.com/italia  #M
             blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
-              size: sm
               hidden: true
-              addonClasses: ms-2
-        - name: TextImageCta
-          image: /images/Github.svg
-          alt: Alt lorem ipsum #C
-          specular: true
-          #title: #C
-          text: | #C
-            Disegna e sviluppa con noi nuove soluzioni per i servizi digitali nazionali.
-          ctas:
-          - label: "Visita github.com/italia" #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
               size: sm
-              hidden: true
               addonClasses: ms-2
+                       
+
 
