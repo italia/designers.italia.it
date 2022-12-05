@@ -25,7 +25,7 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Valuta l'adesione al modello di sito comunale - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  name: "Valuta l'adesione al modello di sito comunale - Designers Italia" #C REMIND "- Designers Italia" #AUTO
   description : Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento. #C
   image : null #I
   twitterImage: null #I
@@ -77,7 +77,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Valuta l'adesione al modello di sito comunale #C
+        label: "Adotta il modello di sito comunale" #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -133,9 +133,9 @@ components:
         - label : Adotta il modello di sito comunale
           url: ../
           active: false
-        - label : Valuta l'adesione al modello di sito comunale
+        - label : "Valuta l'adesione al modello di sito comunale"
           active: true
-    title: Valuta l'adesione al modello di sito comunale #C
+    title: "Valuta l'adesione al modello di sito comunale" #C
     subtitle: Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento #C
     tag:
       label: Attività del modello #C
@@ -183,7 +183,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Valuta l'adesione al modello di sito comunale #C
+            label: "Valuta l'adesione al modello di sito comunale" #C
             url: "../" #M
       #otherInfo:
         #items:
@@ -237,7 +237,7 @@ components:
   sectionsEditorial :
 
 
-    - title: L'App di valutazione #C
+    - title: "L'App di valutazione" #C
       menu: false
       centered: true
       bgColor: null
@@ -260,11 +260,11 @@ components:
   # ///////////////////
   resourceList:
     title: Risorse operative #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
         #title: First group title #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Documentazione tecnica dell’App di valutazione #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
@@ -277,15 +277,32 @@ components:
                 url: "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
           - label: File di installazione dell’App di valutazione #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Il repository GitHub con i file di installazione dell’App di valutazione per MacOS, Windows e Linux #C
             url: https://github.com/italia/pa-website-validator/releases #M
+            blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
                 ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
           
           

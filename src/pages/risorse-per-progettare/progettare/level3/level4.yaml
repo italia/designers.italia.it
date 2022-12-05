@@ -250,11 +250,11 @@ components:
   # ///////////////////
   resourceList:
     title: Resource list title #C
-    headingLevel: 3
+    headingLevel: 2
     list:
       - simpleList : true
         title: First group title #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Resource title #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
@@ -280,6 +280,7 @@ components:
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Resource description #C
             url: "#" #M
+            blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
@@ -293,9 +294,10 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
+   
       - simpleList : true
         title: Second group title #C
-        headingLevel: 4
+        headingLevel: 3
         listItems:
           - label: Resource title #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
@@ -321,6 +323,7 @@ components:
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Resource description #C
+            blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M

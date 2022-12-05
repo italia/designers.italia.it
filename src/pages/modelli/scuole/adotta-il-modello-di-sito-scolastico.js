@@ -2,9 +2,9 @@ import * as React from "react"
 import Template from "../../../templates/tmpl-level-3"
 import {Seo} from "../../../components/seo/seo"
 
-import Pagedata from "./level3.yaml"
+import Pagedata from "./adotta-il-modello-di-sito-scolastico.yaml"
 
-const Level3 = ({ pageContext,location }) => {
+const Level3 = ({ pageContext, location }) => {
   return(
     <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}

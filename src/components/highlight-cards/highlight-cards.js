@@ -15,12 +15,16 @@ const HighlightCards = ({
   col4,
   buttons,
   topics,
-  nospace
+  nospace,
+  nopadtop,
+  customCol,
+  hasCustomCols,
 }) => {
 
   let styles = 'highlight-cards'
 	+ `${background ? ' bg-'+background : ''}`
   + `${nospace ? '' : '  py-5 py-lg-6'}`
+  + `${nopadtop ? '  no-pad-top' : ''}`
 
   let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'
 	+ `${col4 ? ' col-lg-3' : ' col-lg-4'}`
@@ -38,11 +42,21 @@ const HighlightCards = ({
 
   if (cards) {
     cardsItems = cards.map((item,index) => {
-      return(
-        <div className={cardStyles} key={"cardcol-"+index}>
-          <Card {...item} />
-        </div>
-      )
+      if (!item.customCol){
+        return(
+          <div className={cardStyles} key={"cardcol-"+index}>
+            <Card {...item} />
+          </div>
+        )
+      }else{
+        cardStyles = 'col-12 col-md-6 mb-3 mb-md-4 '+item.customCol
+        return(
+          <div className={cardStyles} key={"cardcol-"+index}>
+            <Card {...item} />
+          </div>
+        )
+      }
+
     })
   }
 
@@ -57,16 +71,18 @@ const HighlightCards = ({
   return (
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
-        <div className="row mb-4 mb-md-5 intro">
-          <div className='col col-md-10 offset-md-1'>
-              <div className="px-3 px-lg-0">
-                {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
-                <ReactMarkdown>{text}</ReactMarkdown>
-              </div>
+        {
+          title && <div className={"row mb-4 mb-md-5 intro"}>
+            <div className='col col-md-10 offset-md-1'>
+                <div className="px-3 px-lg-0">
+                  {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
+                  <p className="lead">{text}</p> {/*<ReactMarkdown>{text}</ReactMarkdown>*/}
+                </div>
+            </div>
           </div>
-        </div>
+        }
         {cardsItems &&
-          <div className="row mb-4">
+          <div className={"row pb-4"+hasCustomCols ? 'row pb-4 justify-content-center' : ''}>
             {cardsItems}
           </div>
         }

@@ -10,11 +10,12 @@ import Tag from "../tag/tag"
 import Kangaroo from "../kangaroo/kangaroo"
 
 const Hero =({
-  pageContext, 
+  pageContext,
   name,
   centered,
   column,
 	// breadcrumbs,
+  reversedMobile,
 	share,
 	tag,
 	background,

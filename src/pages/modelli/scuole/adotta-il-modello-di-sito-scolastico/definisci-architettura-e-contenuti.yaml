@@ -25,12 +25,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Level 4 - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  name: Definisci architettura e contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Imposta la struttura informativa del sito scolastico e organizza la migrazione dei contenuti. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /level1/level2/level3/level4/ #M
+  pathname: /modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -63,21 +63,21 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi in #C
+      - title: Ti trovi nel modello #C
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Level 2 #C
+        label: Scuole #C
         url: "../../" #M
-      - title: Nella scheda #C
+      - title: Nella scheda operativa #C
         icon:
           icon: "sprites.svg#it-tool"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Level 3 #C
+        label: Adotta il modello di sito scolastico #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -124,29 +124,29 @@ components:
         - label : Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Modelli
           active: false
           url: ../../../
-        - label : Level2
+        - label : Scuole
           url: ../../
           active: false
-        - label : Level3
+        - label : Adotta il modello di sito scolastico
           url: ../
           active: false
-        - label : Level4
+        - label : Definisci architettura e contenuti
           active: true
-    title: Level 4 #C
-    subtitle: Subtitle #C
+    title: Definisci architettura e contenuti #C
+    subtitle: Imposta la struttura informativa del sito scolastico e organizza la migrazione dei contenuti #C
     tag:
-      label: tag #C
+      label: Attività del modello #C
       addonClasses: mt-3 text-uppercase
-    pretext:
-      icon:
-        icon: sprites.svg#it-info-circle
-        size: sm
-      text: In breve
-    text: | #C
-      Lorem **ipsum** 
+    #pretext:
+      #icon:
+        #icon: sprites.svg#it-info-circle
+        #size: sm
+      #text: In breve
+    #text: | #C
+      #Lorem **ipsum** 
     img: /images/400x300.png #I
     alt: descrizione immagine #C
     imgRatio: 4x3
@@ -169,24 +169,32 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi in
+          - title: Ti trovi nel modello
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Level 2 #C
+            label: "Scuole" #C
             url: "../../" #M
-      otherInfo:
-        items:
-          - title: Rispettando
+          - title: Nella scheda operativa #C
             icon:
-              icon: "sprites.svg#it-pa"
+              icon: "sprites.svg#it-tool"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Design standard X #C
-            url: "#" #M
+            label: Adotta il modello di sito scolastico #C
+            url: "../" #M
+      #otherInfo:
+        #items:
+          #- title: Rispettando
+            #icon:
+              #icon: "sprites.svg#it-pa"
+              #size: "sm"
+              #align: "middle"
+              #color: "secondary"
+            #label: Design standard X #C
+            #url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -195,14 +203,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer, Developer #C
+            label: Designer, Editor, Developer #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare, Realizzare #C
+            label: "Progettare l'interazione dell'utente con il servizio" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -210,15 +218,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Argomento
+        - label: Architettura informazione
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Progettazione contenuti
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Adozione modelli
           url: "#"
           color: primary
           size: lg
@@ -229,38 +237,40 @@ components:
   sectionsEditorial :
 
 
-    - title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem #C
+    - title: La struttura informativa e la migrazione dei contenuti #C
       menu: false
       centered: true
       bgColor: null
       #text: | #C
-      #  Lorem **ipsum**
+        
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: A cosa servono h3 #C
+          #title: A cosa servono #C
           text: | #C
-            Lo scopo dei nuovi flussi d'interazione è quello di creare servizi digitali che permettano ai cittadini di inoltrare richieste o completare adempimenti verso l’amministrazione, tramite procedure semplici, veloci e accessibili.
+            Imposta la struttura del sito scolastico a partire dal documento di architettura dell’informazione, utile a realizzare front-end e back-end del sito e per organizzare i vari livelli di contenuto sulle pagine.
             
-            Le risorse comprendono i flussi per 5 archetipi di servizio e alcuni esempi reali, oltre a una guida pratica all’applicazione. I 5 archetipi di servizio sono stati individuati per rappresentare le principali interazioni del cittadino con il Comune e permettono di creare sia i servizi dove il cittadino completa un adempimento verso l’amministrazione, sia quelli dove il cittadino si vede erogata una prestazione.
+            Il documento definisce i percorsi di navigazione e l’organizzazione dei contenuti nelle varie sezioni e livelli del sito, fondamentali per garantire l’efficienza del sito stesso.
+            
+            Il redesign del sito è un’ottima opportunità per riorganizzare, riscrivere e ristrutturare i contenuti al fine di renderli più efficienti e allineati ai bisogni degli utenti. Le risorse a disposizione ti aiutano a gestire l’intero processo di migrazione dei contenuti sul nuovo sito: dalla revisione dei contenuti esistenti e la creazione di nuovi, all’impostazione del linguaggio e del tone of voice (tono di voce) da utilizzare.
 
   # ///////////////////
   # RESOURCES
   # ///////////////////
   resourceList:
-    title: Resource list title #C
-    headingLevel: 3
+    title: Risorse operative #C
+    headingLevel: 2
     list:
       - simpleList : true
-        title: First group title #C
-        headingLevel: 4
+        #title: First group title #C
+        headingLevel: 3
         listItems:
-          - label: Resource title #C
+          - label: Documento di Architettura dell’informazione #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Resource description #C
-            url: "#" #M
+            text: Indicazioni su tipologie di contenuto (content type), sistemi di navigazione e tassonomie per tutte le sezioni del sito scolastico #C
+            url: https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -275,38 +285,16 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: Resource title #C
+          - label: Guida alla migrazione dei contenuti #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Resource description #C
-            url: "#" #M
-            actions:
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-      - simpleList : true
-        title: Second group title #C
-        headingLevel: 4
-        listItems:
-          - label: Resource title #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Resource description #C
-            url: "#" #M
+            text: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito scolastico #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale/guida-migrazione-contenuti.html #M
             blank: true
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
                 blank: true
               - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  "#" #M
@@ -316,11 +304,12 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: Resource title #C
-            url: "#" #M
+          - label: Guida al linguaggio della PA #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Resource description #C
+            text: Suggerimenti e strumenti per il linguaggio dei servizi digitali della Pubblica Amministrazione #C
+            url: https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html #M
+            blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "#" #M
@@ -334,130 +323,15 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-
-          
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial2 :
+          - label: Privacy - Kit di design #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Le indicazioni e le risorse per progettare con un approccio orientato alla privacy degli utenti #M
+            url: "/risorse-per-progettare/organizzare/privacy" #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "/risorse-per-progettare/organizzare/privacy" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: false
   
-  # —
-    # EDITORIAL #C #I
-    # —   
-    - title: Lorem ipsum h2
-      bgColor: null
-      menu: false
-      centered: false
-      text: | #C
-        Lorem **ipsum**
-      components: 
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-   
