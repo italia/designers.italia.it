@@ -17,7 +17,7 @@ const DesignSystemComponente = ({ pageContext }) => {
       <Tab
         tab01={Object.assign({}, Tab01, { variants: variantMock })}
         tab02={Tab02}
-        tab03={Tab03}
+        tab03={Object.assign({}, Tab03, { variants: variantMock })}
       />
     </Template>
   )
