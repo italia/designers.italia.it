@@ -20,8 +20,8 @@ const SearchMain =({
     <section className={styles}>
       <div className="container-xxl">
         <div className="row">
-          <div className="col-12">
-            <div className="search-main-content px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
+          <div className="col-12 g-0">
+            <div className="search-main-content px-3 py-5 px-lg-0 px-lg-5 py-lg-6">
               <div className="text-container mb-5">
                 {title && <h2>{title}</h2>}
                 <p className="lead">{text}</p>

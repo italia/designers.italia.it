@@ -23,7 +23,7 @@ const Kangaroo = ({
   let tagsLabelStyle="text-uppercase small "+colorStyle
 
 	return(
-		<section className="kangaroo px-3 px-lg-0" aria-labelledby={id}>
+		<section className="kangaroo px-3 px-lg-5" aria-labelledby={id}>
       { titleSr && <h2 className="visually-hidden" id={id}>{titleSr}</h2>}
 			<div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-top">
         <div className="left-zone">

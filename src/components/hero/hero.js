@@ -53,7 +53,7 @@ const Hero =({
   let rowStyle = 'row g-0'
 		+ `${centered ? ' justify-content-lg-center' : ''}`
 
-  let columnStyle = 'col-12 px-lg-6' // col-md-10 offset-md-1'
+  let columnStyle = 'col-12 px-3 px-lg-5 g-0' // col-md-10 offset-md-1'
 		+ `${centered ? ' col-lg-7 offset-lg-0' : ' col-lg-7'}`
 
   let breadcrumbsStyle = 'hero-top px-3 pt-3'
@@ -62,7 +62,7 @@ const Hero =({
   let kangarooZoneStyle = 'kangaroo-zone'
   + `${noBorder ? ' no-border' : ''}`
 
-  let kangarooColumnStyle = 'col-12 px-lg-6' //col-12 col-md-10 offset-md-1'
+  let kangarooColumnStyle = 'col-12 g-0' //col-12 col-md-10 offset-md-1'
   + `${centered ? ' col-lg-7 offset-lg-0' : ''}`
 
   if (column) {
@@ -75,8 +75,8 @@ const Hero =({
       <div className="hero-content">
         {bgImg && <div className="bg-image"><ImageResponsive src={bgImg} alt={bgImgAlt}/></div>}
         <div className="container-xxl">
-          <div className="row g-0">
-            <div className="col-12">
+          <div className="row">
+            <div className="col-12 g-0">
               <div className={breadcrumbsStyle}>
                 <Breadcrumbs pageContext={pageContext} title={name} ></Breadcrumbs>
               </div>
@@ -118,7 +118,7 @@ const Hero =({
       {kangaroo &&
         <div className={kangarooZoneStyle}>
           <div className="container-xxl">
-            <div className={rowStyle}>
+            <div className="row">{/*rowStyle*/}
               <div className={kangarooColumnStyle}>
                 <Kangaroo {...kangaroo}></Kangaroo>
               </div>
