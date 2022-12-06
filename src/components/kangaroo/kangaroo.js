@@ -25,7 +25,7 @@ const Kangaroo = ({
 	return(
 		<section className="kangaroo px-3 px-lg-0" aria-labelledby={id}>
       { titleSr && <h2 className="visually-hidden" id={id}>{titleSr}</h2>}
-			<div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-center">
+			<div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-top">
         <div className="left-zone">
           {navposition &&
             <div className="navposition-wrapper">
@@ -62,7 +62,7 @@ const Kangaroo = ({
           </div>
 
         </div>
-        <div className="right-zone">
+        <div className="right-zone pt-1">
           {dropdown &&
             <div className="dropdwon-zone mt-4 mt-lg-0">
               <Dropdown {...dropdown}></Dropdown>
