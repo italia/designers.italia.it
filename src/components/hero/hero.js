@@ -62,7 +62,7 @@ const Hero =({
   let kangarooZoneStyle = 'kangaroo-zone'
   + `${noBorder ? ' no-border' : ''}`
 
-  let kangarooColumnStyle = 'col-12 col-md-10 offset-md-1'
+  let kangarooColumnStyle = 'col-12 px-lg-6' //col-12 col-md-10 offset-md-1'
   + `${centered ? ' col-lg-7 offset-lg-0' : ''}`
 
   if (column) {
