@@ -14,9 +14,15 @@ const HeaderNav = ({
 }) => {
 
   const collRef = useRef(null)
+  const navBar = useRef(null)
 
   useEffect(() => {
-    new NavBarCollapsible(collRef.current)
+    navBar.current = new NavBarCollapsible(collRef.current)
+    return () => {
+      if (navBar.current) {
+        navBar.current.hide()
+      }
+    }
   })
 
 	return(
