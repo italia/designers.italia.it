@@ -201,12 +201,12 @@ components:
       menu: false
       centered: true
       text: | #C
-        Sottotitolo o **lead tex**
+        Le attività più importanti, gli obiettivi e i traguardi realizzati
       components:
 
        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: 2023 #C
+          title: 2022 #C
           headingLevel: 3
           noSpace: false
 
@@ -216,20 +216,9 @@ components:
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
           specular: false
-          title: "Design system: rilascio UI kit 3.0.0-beta" #C
+          title: "Rilascio design system del Paese, versione alpha" #C
           text: | #C
-            Versione beta del kit di progettazione interfaccia, usabile in produzione e coerente con Bootstrap Italia.
-          ctas:
-          - label: Vai al kit UI nella community Figma #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            Rilascio versione alpha della nuova documentazione del design system del Paese.
  
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -237,22 +226,11 @@ components:
           image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
           specular: true
-          title: "Benvenuto, Kit Privacy" #C
+          title: "Pubblicazione compendio sulle linee guida di design" #C
           text: | #C
-            Pubblicazione nuovo kit dedicato a x e y
-          ctas:
-          - label: Vai al kit privacy #C
-            url: "/risorse-per-progettare/organizzare/privacy/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-                # TXT + IMG + CTA BLOCK
+            Pubblicazione nuove schede informative che raccordino linee guida, manuale operativo e strumenti.
+   
+        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
           image: /images/400x300.png #I
