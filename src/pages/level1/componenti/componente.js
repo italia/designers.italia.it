@@ -8,11 +8,17 @@ import Tab01 from "./componente-01-uso.yaml"
 import Tab02 from "./componente-02-progettazione.yaml"
 import Tab03 from "./componente-03-sviluppo.yaml"
 
-const DesignSystemComponente = ({ pageContext,location }) => {
+import variantMock from './component_view_accordion.json'
+
+const DesignSystemComponente = ({ pageContext, location }) => {
   return(
     <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}
-      <Tab tab01={Tab01} tab02={Tab02} tab03={Tab03}/>
+      <Tab
+        tab01={Object.assign({}, Tab01, { variants: variantMock })}
+        tab02={Tab02}
+        tab03={Object.assign({}, Tab03, { variants: variantMock })}
+      />
     </Template>
   )
 }
