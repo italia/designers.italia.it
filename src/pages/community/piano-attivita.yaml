@@ -252,7 +252,7 @@ components:
           ctas:
           - label: Vai alla pagina del UI kit nella community Figma #C
             url: "https://www.figma.com/community/file/1105848677422572920" #M
-            blank: false #M #C true if new tab for external links
+            blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -260,16 +260,26 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: true
+          title: "Design system: definizione supporto evolutivo Design React Kit" #C
+          text: | #C
+            Definizione supporto all'evoluzione della libreria community-driven che implementa il design system in React.
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
           specular: false
           title: "Benvenuto, Kit Privacy" #C
           text: | #C
-            Pubblicazione nuovo kit dedicato a x e y
+            Pubblicazione nuovo kit dedicato a tematiche di privacy e trattamento dei dati personali
           ctas:
           - label: Vai al kit privacy #C
             url: "/risorse-per-progettare/organizzare/privacy/" #M
@@ -281,5 +291,24 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-    
+              
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Modelli: rilascio App di valutazione" #C
+          text: | #C
+            Pubblicazione su Github di nuovi strumenti a supporto della corretta adesione ai modelli per i siti istituzionali dei Comuni e delle scuole.  Applicativi desktop che aiutano a valutare la qualità, le caratteristiche e la corrispondenza ad alcuni dei criteri di conformità della misura 1.4.1 Esperienza del cittadino nei servizi pubblici digitali. Sono di supporto agli sviluppatori dei siti istituzionali per verificare la corretta implementazione del modello Comuni e del modello Scuole, sia durante che dopo lo sviluppo, e così informare eventuali modifiche o piani di miglioramento.
+          ctas:
+          - label: Vai alla App di valutazione modelli #C
+            url: "https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/it/versione-attuale/index.html" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
