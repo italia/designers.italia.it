@@ -39,36 +39,9 @@ const FormNo = ({
   const [steps, setSteps] = useState([]);
   const [stepIdx, setStepIdx] = useState(0);
 
-  const showStep = () => {
-    steps.forEach((step, idx) => idx === stepIdx ? step.classList.add(CLASS_SHOW) : step.classList.remove(CLASS_SHOW))
-  }
-
-  const changeStep = (incr) => {
-    const result = stepIdx + incr
-    if (result < 0) {
-      setStepIdx(0)
-    } else if (result >= steps.length) {
-      setStepIdx(steps.length -1)
-    } else {
-      setStepIdx(result)
-    }
-  }
-
-  useEffect(() => {
-    if (rootRef.current) {
-      setSteps(rootRef.current.querySelectorAll(SELECTOR_STEP))
-    }
-  }, [rootRef]);
-
-  useEffect(() => {
-    showStep()
-  }, [steps, stepIdx])
-
   return <div ref={rootRef}>
     <form action="#">
 
-      {/* ----------- feedback step 1 ----------- */}
-      <div className="step feedback-formno-step">
         <h2 className="mb-3" id="feedbackNoTitle">Grazie per la tua risposta! Aiutaci a migliorare.</h2>
         <fieldset>
           <legend className="d-flex mb-3 px-0 w-100"><span className="w-75">Sei:</span><span className="w-25 text-end">1/3</span></legend>
@@ -97,10 +70,7 @@ const FormNo = ({
             <label htmlFor="optsStep1Opt6">altro</label>
           </div>
         </fieldset>
-      </div>
 
-      {/* ----------- feedback step 2 ----------- */}
-      <div className="step feedback-formno-step">
         <h2 className="mb-3">Ancora una curiosità</h2>
         <fieldset>
           <legend className="d-flex mb-3 px-0 w-100"><span className="w-75">Hai trovato questa pagina grazie a:</span><span className="w-25 text-end">2/3</span></legend>
@@ -134,10 +104,6 @@ const FormNo = ({
           </div>
         </fieldset>
 
-      </div>
-
-      {/* ----------- feedback step 3 ----------- */}
-      <div className="step feedback-formno-step">
         <h2 className="mb-4">Il tuo parere è importante per noi, se hai ancora tempo</h2>
         <fieldset>
           <legend className="d-flex mb-5 px-0 w-100"><span className="w-75">Come possiamo migliorare questa pagina?</span><span className="w-25 text-end">3/3</span></legend>
@@ -147,14 +113,9 @@ const FormNo = ({
             <small className="form-control form-text">Hai a disposizione 200 caratteri</small>
           </div>
         </fieldset>
-      </div>
-
-      { stepIdx > 0 && stepIdx < steps.length -1 && <Button {...BTN_BK} onClick={() => changeStep(-1)} /> }
-      { stepIdx < steps.length -1 && <Button {...BTN_FW} onClick={() => changeStep(1)} /> }
+ 
     </form>
 
-    {/* ----------- feedback step 4 ----------- */}
-    <div className="step feedback-formno-step">
       <ImageResponsive src="/images/kit-analitics.svg" alt="" />
       <h2 className="mb-3 h4">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
       <div className="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
@@ -168,7 +129,6 @@ const FormNo = ({
           <Button {...BTN_SUBSCRIBE} />
         </div>
       </form>
-    </div>
 
   </div>
 }
