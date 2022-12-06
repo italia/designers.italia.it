@@ -56,7 +56,7 @@ const Hero =({
   let columnStyle = ' col-12 px-3 ps-lg-5 pe-lg-0 g-0' // col-md-10 offset-md-1'
 		+ `${centered ? ' col-lg-7 offset-lg-0' : ' col-lg-7'}`
 
-  let breadcrumbsStyle = 'hero-top px-3 pt-3'
+  let breadcrumbsStyle = 'hero-top px-3 px-lg-5 pt-4'
     + `${column ? ' px-lg-0' : ''}`
 
   let kangarooZoneStyle = 'kangaroo-zone'
@@ -83,7 +83,7 @@ const Hero =({
               <div className="hero-main">
                 <div className={rowStyle}>
                   <div className={columnStyle}>
-                    <div className="texts ps-lg-1 py-3 pb-lg-5">
+                    <div className="texts py-3 pb-lg-5">
                       <div className="d-flex align-items-start flex-wrap">
                         <HLevel className="title">{title}</HLevel>
                         {titleTag && <Tag {...titleTag}></Tag>}
