@@ -38,7 +38,7 @@ const TextImageCta =({
 
   let styles = "text-image-cta d-flex"
   + `${specular ? '' : ' flex-row-reverse'}`
-  + `${noSpace ? ' mb-0' : ' mb-5'}`
+  + `${noSpace ? ' mb-0' : ' mb-3 mb-lg-4'}`
   let imageWrapperStyles = "w-25 d-flex align-items-start"
   + `${specular ? ' justify-content-end me-4' : ' justify-content-start ms-4'}`
   let contentStyles = "content"
