@@ -27,8 +27,8 @@ const HeaderPost = ({data}) => {
 						<div className="header-pre bg-white py-4 border-bottom border-200 /*shadow-sm*/">
 							<div className="container-xxl">
 								<div className="row px-4 px-lg-5 pt-2 pt-md-0">
-									<div className="col-12">
-										<ul className="list-inline mb-0 d-flex flex-column flex-md-row align-items-center">
+									<div className="col-12 g-0">
+										<ul className="list-inline mb-0 d-flex flex-column flex-md-row">
 											{data.nav.items.map((value,index)=>{
 												if (index + 1 === data.nav.items.length) { // last on the left side has "me-auto"
 													styles="list-item me-md-auto mb-3 mb-md-0"
