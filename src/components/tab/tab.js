@@ -32,7 +32,9 @@ const Tab = ({
         <div className="tab-pane py-5 fade show active" id="card-simpletab1" role="tabpanel" aria-labelledby="card-simple1-tab">
 
           {tab01.variants && <ContentSelect {...tab01.componentVariant}>
-              { tab01.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}><ComponentView content={v.content} viewer={tab01.componentVariant.viewer}/></ContentSelectItem>) }
+              { tab01.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
+                  <ComponentView content={v.content} viewer={tab01.componentVariant.viewer} codeLabel={tab01.componentVariant.codeLabel} codeUrl={tab01.componentVariant.codeUrl} />
+                </ContentSelectItem>) }
             </ContentSelect>}
 
           {tab01.sectionsEditorial && tab01.sectionsEditorial.map((section,index) => {
