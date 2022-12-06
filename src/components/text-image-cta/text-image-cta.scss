@@ -55,6 +55,14 @@
 //Mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
   .text-image-cta {
+     .content {
+      width:100%!important;
+     }
+     .image-cta {
+      width:100%!important;
+      max-width:164px;
+     }
+     .text-image-cta
     .simple-cta {
       &:not(:last-of-type) {
         margin-bottom: 16px;
@@ -65,7 +73,6 @@
 
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
