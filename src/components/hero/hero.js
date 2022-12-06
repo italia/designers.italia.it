@@ -83,7 +83,7 @@ const Hero =({
               <div className="hero-main">
                 <div className={rowStyle}>
                   <div className={columnStyle}>
-                    <div className="texts px-3 px-lg-0 ps-lg-1 py-3 pb-lg-5">
+                    <div className="texts ps-lg-1 py-3 pb-lg-5">
                       <div className="d-flex align-items-start flex-wrap">
                         <HLevel className="title">{title}</HLevel>
                         {titleTag && <Tag {...titleTag}></Tag>}
