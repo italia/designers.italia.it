@@ -18,7 +18,7 @@
     "italia"
   ],
   "scripts": {
-    "prepare": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/",
+    "prepare": "recursive-copy ./bootstrap-italia -w ./node_modules/bootstrap-italia && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/",
     "start": "npm run prepare && gatsby develop",
     "develop": "npm run start",
     "dev": "npm run start",
@@ -27,8 +27,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "boostrap-italia": "./bootstrap-italia/",
     "@colliercz/gatsby-transformer-gitinfo": "^1.3.0",
-    "bootstrap-italia": "^2.0.9",
     "gatsby": "^4.23.0",
     "gatsby-plugin-breadcrumb": "^12.3.1",
     "gatsby-plugin-htaccess": "^1.4.0",
