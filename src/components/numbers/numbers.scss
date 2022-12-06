@@ -17,7 +17,8 @@
 
 .section-editorial {
   .numbers-wrapper {
-    margin-bottom: calc(var(--spacer) * 8);
+    // margin-bottom: calc(var(--spacer) * 8);
+    margin-top: 48px
   }
 }
 
@@ -35,6 +36,9 @@
   .numbers {
     width: 50%;
  }
+ .label {
+  max-width:80%;
+}
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
@@ -47,14 +51,27 @@
   .numbers-wrapper {
     &.inline-numbers {
       .numbers {
-        width: 25%;
+        width: 33.33%;
       }
+    }
+    .label {
+      max-width:80%
     }
   }
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
+  .numbers-wrapper {
+    &.inline-numbers {
+      .numbers {
+        width: 25%;
+      }
+    }
+    .label {
+      max-width:80%;
+    }
+  }
 }
 
 //Desktop -----------------------------------------------------------------------------------------------
