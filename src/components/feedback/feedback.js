@@ -86,10 +86,10 @@ const Feedback = ({
     <section className="feedback bg-medium py-5 px-3 px-lg-0" aria-labelledby="feedbackSectionTitle" id="feedbackSection">
       <div className="container-xxl">
         <div className="row d-flex justify-content-center">
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-sm-10 col-md-8 col-lg-6">
             <div className="card shadow card-wrapper rounded">
               <div>
-                <div className="card-body p-5">
+                <div className="card-body p-4 p-md-5 ">
                   <div className="step" id="feedbackIntro">
                     <h2 className="mb-0" id="feedbackSectionTitle">
                       {!isSubmit && <span className="feedback-title">Ciao, questa pagina è stata utile?</span>}
