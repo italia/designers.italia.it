@@ -9,7 +9,6 @@ import loadable from "@loadable/component";
 const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'));
 
 const ComponentView = ({
-  name,
   content
 }) => {
 

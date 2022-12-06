@@ -1,18 +1,18 @@
 import React, { useState } from "react"
 
-import ComponentView from "../component-view/component-view"
+import ContentSelectItem from "./components/content-select-item/content-select-item"
 
-import './component-view-select.scss'
+import './content-select.scss'
 
 const VARIANT_PREFIX = 'variant-'
 
-const ComponentViewSelect = ({
+const ContentSelect = ({
   title,
 	children,
-  selected,
+  selectedIdx,
 }) => {
 
-  const [itemSelected, setItemSelected] = useState(!isNaN(selected) ?  VARIANT_PREFIX + selected : VARIANT_PREFIX + 0)
+  const [itemSelected, setItemSelected] = useState(!isNaN(selectedIdx) ?  VARIANT_PREFIX + selectedIdx : VARIANT_PREFIX + 0)
 
   const changeValue = (evt) => {
     setItemSelected(evt.currentTarget.value)
@@ -20,14 +20,14 @@ const ComponentViewSelect = ({
 
   const variants = []
   React.Children.forEach(children, (child, idx) => {
-    if (child.type === ComponentView) {
+    if (child.type === ContentSelectItem) {
       variants.push({
         name: child.props.name,
         value: VARIANT_PREFIX + idx,
         component: child
       })
     } else {
-      throw new Error('ComponentViewSelect accepts only ComponentView as its children')
+      throw new Error('ContentSelect accepts only ContentSelectItem as its children')
     }
   })
 
@@ -48,4 +48,4 @@ const ComponentViewSelect = ({
 	)
 }
 
-export default ComponentViewSelect
+export default ContentSelect
