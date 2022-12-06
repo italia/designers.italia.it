@@ -48,11 +48,11 @@
 
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-  .kangaroo {
-    .right-zone {
-      width:100%
-    }
-  }
+  // .kangaroo {
+  //   .right-zone {
+  //     // width:100%
+  //   }
+  // }
 
 }
 //Small tablet ------------------------------------------------------------------------------------------
@@ -73,8 +73,12 @@
 @include media-breakpoint-up(lg) {
   .kangaroo {
     .right-zone {
-      text-align: right;
-      width:33.33%
+      // text-align: right;
+      // width:33.33%
+      .dropdown-menu {
+        width:14rem;
+
+      }
     }
   }
 
