@@ -97,11 +97,10 @@ const NavSidebar = ({
   }
 
   useEffect(() => {
+    const navColl = navCollRef.current
     return () => {
-      console.log('---', { navCollRef })
-      if (navCollRef.current) {
-        const navCollObj = NavBarCollapsible.getInstance(navCollRef.current)
-        console.log('---', { navCollObj })
+      if (navColl) {
+        const navCollObj = NavBarCollapsible.getInstance(navColl)
         if (navCollObj) {
           navCollObj.hide()
         }
