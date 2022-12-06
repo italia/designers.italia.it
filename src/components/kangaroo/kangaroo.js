@@ -25,7 +25,7 @@ const Kangaroo = ({
 	return(
 		<section className="kangaroo px-3 px-lg-0" aria-labelledby={id}>
       { titleSr && <h2 className="visually-hidden" id={id}>{titleSr}</h2>}
-			<div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-top">
+			<div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-center">
         <div className="left-zone">
           {navposition &&
             <div className="navposition-wrapper">
