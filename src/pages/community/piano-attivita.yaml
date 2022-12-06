@@ -206,7 +206,7 @@ components:
 
        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: 2022 #C
+          title: 2022 Q4 #C
           headingLevel: 3
           noSpace: false
 
@@ -223,13 +223,44 @@ components:
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
           specular: true
           title: "Pubblicazione compendio sulle linee guida di design" #C
           text: | #C
-            Pubblicazione nuove schede informative che raccordino linee guida, manuale operativo e strumenti.
+            Pubblicazione nuove schede informative che raccordano linee guida, manuale operativo e strumenti.
+ 
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: true
+          title: "Rilascio del quadro sinottico servizi al cittadino" #C
+          text: | #C
+            Pubblicazione su Medium di articoli di descrizione e approfondimento del quadro sinottico.
    
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio UI kit 3.0.0-beta" #C
+          text: | #C
+            Versione beta del kit di progettazione interfaccia, usabile in produzione e coerente con Bootstrap Italia.
+          ctas:
+          - label: Vai alla pagina del UI kit nella community Figma #C
+            url: "https://www.figma.com/community/file/1105848677422572920" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
