@@ -29,6 +29,9 @@ const HighlightCards = ({
   let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'
 	+ `${col4 ? ' col-lg-3' : ' col-lg-4'}`
 
+  let styleCustomCols = 'row pb-4'
+  + `${hasCustomCols ? ' justify-content-center' : ''}`
+
   let cardsItems
   let buttonsItems
 
@@ -39,6 +42,7 @@ const HighlightCards = ({
 	} else {
 		HLevel = `h2`
 	}
+
 
   if (cards) {
     cardsItems = cards.map((item,index) => {
@@ -83,7 +87,7 @@ const HighlightCards = ({
           </div>
         }
         {cardsItems &&
-          <div className={"row pb-4"+hasCustomCols ? 'row pb-4 justify-content-center' : ''}>
+          <div className={styleCustomCols}>
             {cardsItems}
           </div>
         }
