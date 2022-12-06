@@ -75,7 +75,7 @@ const ComponentView = ({
           <div id={collId} className="accordion-collapse collapse show" data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
             <div className="accordion-body p-0">
               <SyntaxHighlighter language="markup" style={lucario} showLineNumbers={true}>
-                {content}
+                {content.replace(/^\s+|\s+$/g, '')}
               </SyntaxHighlighter>
             </div>
           </div>
