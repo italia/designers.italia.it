@@ -11,7 +11,8 @@ const LastUpdate = ({
   licence,
   edit,
   column,
-  lastmodified
+  lastmodified,
+  noPadding
 }) => {
 
   let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/${process.env.GATSBY_BRANCH}/src/pages/`  // < fallback if not trackable via pathname let's go to repo root...
@@ -30,12 +31,15 @@ const LastUpdate = ({
   // + `${column ? '' : ' col-md-10 offset-md-1'}`
   + ' g-0'
 
+  let paddingStyle = 'px-4'
+   + `${noPadding ? '' : ' px-lg-7'}`
+
   return (
     <div className="last-update py-5 py-lg-7">
       <div className="container-xxl">
         <div className="row">
           <div className={columnStyle}>
-            <div className ="px-4 px-lg-7">
+            <div className ={paddingStyle}>
               <p className="">
                 <small>{title} {lastmodified}
                   <Link

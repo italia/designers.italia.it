@@ -2,10 +2,10 @@
 # folder structure:
 # levelX.js < connector, just for developers
 # levelX.yaml < contents and settings of the page
-# levelX/ < folder where are the childrens, same structure 
+# levelX/ < folder where are the childrens, same structure
 # important: each level has its dedicated template from level1 to level4!
 #
-# to edit search for 
+# to edit search for
 # #C to locate all editable content
 # #M for links/navigation
 # #I for images/media
@@ -25,12 +25,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Organizzare - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : "Organizza il tuo progetto digitale: pianifica l’impostazione del lavoro dal punto di vista gestionale e operativo" #C
+  name: Piano attività - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/organizzare/ #M
+  pathname: /community/piano-attivita/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -104,23 +104,23 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Risorse per progettare 
+        - label : Level1
           active: false
-          url: /risorse-per-progettare/
-        - label : Organizzare
+          url: /level1/
+        - label : Level2
           active: true
-    title: Organizzare #C
-    subtitle: "Organizza il tuo progetto digitale: pianifica l’impostazione del lavoro dal punto di vista gestionale e operativo" #C
+    title: Piano attività #C
+    subtitle: Subtitle #C
     tag:
-        label: Fase di progettazione  #C
+        label: tag  #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve 
+      text: In breve
     text: | #C
-      Con la fase di organizzazione definisci tutti gli aspetti necessari a **pianificare e gestire il tuo progetto digitale**. I kit di questa fase ti aiutano a capire **quali attività e competenze devi prevedere**, a stimare adeguatamente tempi e risorse, oltre ad adempiere alla **normativa privacy vigente**.
+      Lorem **ipsum**
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -137,7 +137,7 @@ components:
       list:
         isShare: true
 
-    # KANGAROO: METADATA    
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       titleSr: Metadati e link per approfondire
@@ -148,115 +148,129 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Fasi di progettazione
+        - label: Argomento
           url: "#"
           color: primary
           size: lg
-        - label: Pianificazione
+        - label: Argomento
           url: "#"
           color: primary
           size: lg
-        - label: Privacy dati personali
+        - label: Argomento
           url: "#"
           color: primary
           size: lg
-
-      # KANGAROO: CHILDREN SHORTCUTS 
-      dropdown:
-        btnId: dropdownKang
-        button:
-          addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri i kit di questa fase #C
-          iconRight: true
-          icon:
-            icon: sprites.svg#it-expand
-            size: sm
-            color: primary
-            addonClasses: icon-expand ms-2
-        list:
-          listItems: #M
-            - url: "privacy/"
-              label: Privacy #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  # sectionsEditorial:
+  sectionsEditorial:
 
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: I nostri obiettivi per il futuro
+      headingLevel: 2
+      background: null
+      menu: false
+      centered: true
+      text: | #C
+        Sottotitolo o **lead tex**
+      components:
 
-  # ///////////////////
-  # HIGHLIGHT WITH CARDS
-  # ///////////////////
-  highlightCards:
-    id: HC1
-    title: Esplora e usa i kit di design #C
-    text: #C
-    col4: false
-    nospace: false
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          title: "2023 Q1"
+          headingLevel: 3
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: true
+          text: | #C
+            #### Design system: rilascio UI kit 3.0.0
+            Versione stabile del kit di progettazione interfaccia, con evidenza del nuovo modello di contribuzione.
 
-    # CARDS
-    cards: # AUTO?
-
-      # CARD CHILDREN
-      - title: Privacy #C
-        text: "Rispetta la privacy dei tuoi utenti quando realizzi un servizio digitale" #C
-        titleSmall: false
-        fullHeight: true
-        url: "privacy/" #M
-        tag:
-          label: Kit di design #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            ariaLabel: Condividi
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-      
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial2 :
+            #### Nuovo sito designers.italia.it
+            Rilascio del nuovo sito ufficiale, con navigazione migliorata e accesso semplificato alle risorse operative e al design system, per le PA e i loro fornitori.
 
    # —
-    # IMG FULL COVER
-    # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      bgColor: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
-  
-  # —
     # EDITORIAL #C #I
-    # —   
-    - title: Pianificare e coordinare un progetto digitale
-      bgColor: null
+    # —
+    - title: I risultati che abbiamo raggiunto
+      headingLevel: 2
+      background: light
       menu: false
-      centered: false
+      centered: true
       text: | #C
-        Organizza le attività per lo sviluppo di siti e servizi della Pubblica Amministrazione
-      components: 
+        Sottotitolo o **lead tex**
+      components:
 
-        # TXT BLOCK
+       # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: Uno sguardo ampio per definire il perimetro delle attività #C
+          title: 2023 #C
+          headingLevel: 3
+          noSpace: false
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio UI kit 3.0.0-beta" #C
           text: | #C
-            Una **pianificazione chiara, completa e, al contempo, flessibile** serve come “tracciato da seguire” per orientare fin dall’inizio nella direzione dell’efficacia lo svolgimento di un progetto digitale. Si tratta di **definire con precisione le attività per ciascuna fase progettuale, così da individuare le competenze da coinvolgere, allocare le risorse interne ed esterne in modo corretto e stimare adeguatamente i tempi**.
-            
-            Organizzare un progetto digitale nell’ambito della Pubblica Amministrazione, tuttavia, richiede uno sguardo più ampio. Rende indispensabile, cioè, considerare anche la **gestione della privacy, dell’approccio open source e dell’integrazione con le piattaforme abilitanti**: tutti elementi necessari a definire gli standard di qualità, usabilità e accessibilità da raggiungere, e quindi i termini dell’ingaggio dei fornitori.
+            Versione beta del kit di progettazione interfaccia, usabile in produzione e coerente con Bootstrap Italia.
+          ctas:
+          - label: Vai al kit UI nella community Figma #C
+            url: "#" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+ 
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          title: "Benvenuto, Kit Privacy" #C
+          text: | #C
+            Pubblicazione nuovo kit dedicato a x e y
+          ctas:
+          - label: Vai al kit privacy #C
+            url: "/risorse-per-progettare/organizzare/privacy/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+                # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: false
+          title: "Benvenuto, Kit Privacy" #C
+          text: | #C
+            Pubblicazione nuovo kit dedicato a x e y
+          ctas:
+          - label: Vai al kit privacy #C
+            url: "/risorse-per-progettare/organizzare/privacy/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+    
