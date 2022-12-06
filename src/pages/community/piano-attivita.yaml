@@ -208,6 +208,7 @@ components:
         - name: TextImageCta
           title: 2023 #C
           headingLevel: 3
+          noSpace: false
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -217,8 +218,6 @@ components:
           specular: false
           title: "Design system: rilascio UI kit 3.0.0-beta" #C
           text: | #C
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
             Versione beta del kit di progettazione interfaccia, usabile in produzione e coerente con Bootstrap Italia.
           ctas:
           - label: Vai al kit UI nella community Figma #C
@@ -233,6 +232,27 @@ components:
               addonClasses: ms-2
  
         # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          title: "Benvenuto, Kit Privacy" #C
+          text: | #C
+            Pubblicazione nuovo kit dedicato a x e y
+          ctas:
+          - label: Vai al kit privacy #C
+            url: "/risorse-per-progettare/organizzare/privacy/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+                # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
           image: /images/400x300.png #I
