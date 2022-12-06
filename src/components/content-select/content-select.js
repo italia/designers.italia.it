@@ -41,8 +41,8 @@ const ContentSelect = ({
           <h2 id={id} className="px-3 px-md-0">{title}</h2>
         </div>
         <div className="col-12 col-md-6 col-lg-5 mb-4">
-          <div class="select-wrapper px-3 px-md-0">
-            <label for={id+"-select"}>Etichetta</label>
+          <div className="select-wrapper px-3 px-md-0">
+            <label htmlFor={id+"-select"}>Etichetta</label>
             <select value={itemSelected} onChange={changeValue} autoComplete="off" id={id+"-select"}>
               { variants.map((v, idx) => <option key={'opt-' + idx} value={v.value}>{v.name}</option>) }
             </select>

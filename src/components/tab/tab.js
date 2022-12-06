@@ -16,7 +16,7 @@ const Tab = ({
   return (
     <div className="tab pt-5 pt-lg-6">
       <ul className="nav nav-tabs nav-tabs-cards" id="card-simple" role="tablist">
-      <li className="nav-item-filler flex-grow-0 px-3 p-md-0"></li>
+        <li className="nav-item-filler flex-grow-0 px-3 p-md-0"></li>
         <li className="nav-item">
           <a className="nav-link active" id="card-simple1-tab" data-bs-toggle="tab" href="#card-simpletab1" role="tab" aria-controls="card-simpletab1" aria-selected="true">{tab01.title}</a>
         </li>
