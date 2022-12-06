@@ -56,8 +56,8 @@ const Hero =({
   let columnStyle = ' col-12 px-3 ps-lg-5 pe-lg-0 g-0' // col-md-10 offset-md-1'
 		+ `${centered ? ' col-lg-7 offset-lg-0' : ' col-lg-7'}`
 
-  let breadcrumbsStyle = 'hero-top px-3 px-lg-5 pt-4'
-    + `${column ? ' px-lg-0' : ''}`
+  let breadcrumbsStyle = 'hero-top px-3 pt-4'
+    + `${column ? ' ' : ' px-lg-5 '}`
 
   let kangarooZoneStyle = 'kangaroo-zone'
   + `${noBorder ? ' no-border' : ''}`
@@ -65,10 +65,16 @@ const Hero =({
   let kangarooColumnStyle = 'col-12 g-0' //col-12 col-md-10 offset-md-1'
   + `${centered ? ' col-lg-7 offset-lg-0' : ''}`
 
+  let imageStyle = "  col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4"
+
   if (column) {
-    columnStyle = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
-    kangarooColumnStyle = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
+    columnStyle = "px-3 col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
+    kangarooColumnStyle = "col-12 g-0"
+    imageStyle = "  col-12 col-md-12 col-lg-3 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4"
   }
+
+
+
 
 	return(
 		<div className={styles}>
@@ -102,7 +108,7 @@ const Hero =({
                   </div>
                   {!centered &&
                     // <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
-                    <div className="col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4">
+                    <div className={imageStyle}>
                       { img && <div className={imgStyle}>
                         <ImageResponsive src={img} alt={alt} />
                       </div>}
