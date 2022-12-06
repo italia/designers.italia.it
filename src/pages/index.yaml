@@ -62,7 +62,7 @@ components:
     headingLevel : 1
     big: true
     specular: true
-    reversedMobile: true
+    reversedMobile: false
     title : Diventa protagonista della trasformazione digitale #C
     subtitle: Designers Italia mette a disposizione la conoscenza e gli strumenti per progettare e realizzare servizi pubblici centrati sulle necessità delle persone
     moreButton: Leggi di più
@@ -78,7 +78,7 @@ components:
 
       #### Heading 4
       Lorem ipsum
-    img : /images/highlight-big.jpg #I
+    img : /images/home/home.png #I
     alt: Alt lorem ipsum #C
     fullImg: true
 
@@ -104,49 +104,52 @@ components:
     suggest:
       title: "Ti suggeriamo:"
       items:
-        - label : voglio progettare una cosa bella
+        - label : voglio scoprire di cosa hanno bisogno gli utenti
           url : "#"
         - label : ho bisogno del kit UI
           url : ""
-        - label : test usabilità
+        - label : test di usabilità
           url : "#"
         - label : rispettare le linee guida di design
           url : "#"
         - label : accessibilità
           url : "#"
+
+
   sectionIntro:
     title: In evidenza
-    subtitle: Lorem Ipsum
+    # subtitle: Storie da copertina che ti guidano alle ultime attività 
     isHome: true
   highLights:
-    - title : Si va al mare
-      subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elrit.
+    - title : Abbiamo rilasciato la v3 stabile del kit UI!
+      subtitle: Un piccolo passo per l'uomo, un grande passo per tutti gli UI e UX designer che lavorano per la Pubblica Amministrazione.
       big: true
       id: HL2
       specular: true
-      img : /images/highlight-sm.jpg
+      img : /images/home/in-evidenza/evidenza-kit-ui-11-2022.png
       alt: descrizione immagine
       headingLevel : 3
       background: medium
       text: false
       buttons:
-        - label : Label button
+        - label : Scopri come usare il kit UI
           btnStyle: primary
           url: "#"
-    - title : Esce il nuovo kit UI
-      subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
+    - title : Design pubblico e aperto
+      subtitle: Designers Italia ha partecipato alla Milano Digital Week dando vita a una tavola rotonda all'ADI Design Museum.
       big: true
       id: HL2
       specular: false
-      img : /images/highlight-sm.jpg
-      alt: descrizione immagine
+      img : /images/home/in-evidenza/evidenza-mdw-10-2022.jpg
+      alt: "Luci rosse e pubblico durante l'evento"
       headingLevel : 3
       background: dark
-      text: false
       buttons:
-        - label : Label button
+        - label : Scopri com'è andata a Milano
           btnStyle: primary
           url: "#"
+
+    
   highlightCards:
     id: HC1
     title: Utilizza strumenti semplici e utili #C
@@ -160,7 +163,8 @@ components:
     - title: "Modelli di design" #C
       img: /images/400x300.png #I
       alt: Alt lorem ipsum #C
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
+      text: |
+        **Usa i modelli di design per realizzare siti e servizi digitali già testati e performanti.** Inizia da qui.
       imgRatio: 21x9
       imgPlaceholder: false
       fullHeight: true
@@ -176,7 +180,8 @@ components:
     - title: "Design system" #C
       img: /images/400x300.png #I
       alt: Alt lorem ipsum #C
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
+      text: |
+        **Costruisci prodotti digitali pubblici utilizzando i mattoncini del design system del Paese.** Scopri il potenziale.
       imgRatio: 21x9
       imgPlaceholder: false
       fullHeight: true
@@ -192,7 +197,8 @@ components:
     - title: "Risorse per progettare" #C
       img: /images/400x300.png #I
       alt: Alt lorem ipsum #C
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
+      text: |
+        Crea il tuo progetto digitale pubblico in **cinque fasi** e con tutti gli **strumenti necessari già validati e pronti all'uso**. Non perdere tempo."
       imgRatio: 21x9
       imgPlaceholder: false
       fullHeight: true
@@ -205,11 +211,15 @@ components:
         btnStyle: primary
         label: Esplora/Scopri il titolo
         url: "risorse-per-progettare/"
+
   imageIcons:
-    image: /images/full.jpg
+    image: /images/home/community.jpg
     alt: descrizione immagine
-    background: null
-    customStyle: negative-x
+    background: light
+    customStyle: #negative-x
+    images:
+    - img: /images/home/community-icon.svg
+      alt: Alt lorem ipsum #C
 
   sectionIntroImg:
     title: Prendi parte alla community
@@ -233,17 +243,18 @@ components:
     buttons:
     - type: button
       btnStyle: primary
-      label: Esplora tutti gli approfondimenti
+      label: Esplora cosa accade nella community
+      url: "community/"
       addonStyle: me-3 d-block
-    - type: button
-      btnStyle: outline-primary
-      label: Vai al Medium di Designers Italia
-      icon:
-        icon: sprites.svg#it-external-link
-        color: primary
-        align: middle
-        size: sm
-        addonClasses: ms-2
+    # - type: button
+    #   btnStyle: outline-primary
+    #   label: Vai al Medium di Designers Italia
+    #   icon:
+    #     icon: sprites.svg#it-external-link
+    #     color: primary
+    #     align: middle
+    #     size: sm
+    #     addonClasses: ms-2
     # CARDS
     cards:
 
@@ -360,37 +371,44 @@ components:
     id: bannerBottom
     title: Diamo i numeri
     background: dark
-    ctas:
-    - icon:
-        icon: sprites.svg#it-external-link
-        color: white
-        align: middle
-        hidden: true
-      label: Dashboard
-      url: "#"
-      blank: true
-    - icon:
-        icon: sprites.svg#it-external-link
-        color: white
-        align: middle
-        hidden: true
-      label: Open data
-      url: "#"
-      blank: true
+    # ctas:
+    # - icon:
+    #     icon: sprites.svg#it-external-link
+    #     color: white
+    #     align: middle
+    #     hidden: true
+    #     size: sm
+    #     addonClasses: ms-2
+    #   label: Dashboard
+    #   url: "#"
+    #   blank: true
+    # - icon:
+    #     icon: sprites.svg#it-external-link
+    #     color: white
+    #     align: middle
+    #     hidden: true
+    #     size: sm
+    #     addonClasses: ms-2
+    #   label: Open data
+    #   url: "#"
+    #   blank: true
     numbers:
       inline: true
       items:
-      - icon: sprites.svg#it-tool
-        number: 1200
-        label: Comuni interattivi
-      - icon: sprites.svg#it-exchange-circle
-        number: 270
-        label: Milioni di euro già versati
-      - icon: sprites.svg#it-settings
-        number: 90
-        label: Alieni gatti
       - icon: sprites.svg#it-star-outline
+        label: Modelli di sito validati e pronti all'uso
         number: 2
-        label: "Gatti nobili dell'etruria"
+      - icon: sprites.svg#it-plug
+        label: Pattern di servizio che semplificano la vita del cittadino
+        number: 5
+      - icon: sprites.svg#it-files
+        label: Risorse che ti aiutano a progettare a norma
+        number: 40
+      - icon: sprites.svg#it-pa
+        number: "2300+"
+        label: "Enti che usano Bootstrap Italia per risparmiare tempi e costi"
+      - icon: sprites.svg#it-user
+        number: "18000+"
+        label: "Tecnici e amministrativi nella community"
 
 

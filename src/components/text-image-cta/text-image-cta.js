@@ -38,7 +38,7 @@ const TextImageCta =({
 
   let styles = "text-image-cta d-flex"
   + `${specular ? '' : ' flex-row-reverse'}`
-  + `${noSpace ? ' mb-0' : ' mb-5'}`
+  + `${noSpace ? ' mb-0' : ' mb-3 mb-lg-4'}`
   let imageWrapperStyles = "w-25 d-flex align-items-start"
   + `${specular ? ' justify-content-end me-4' : ' justify-content-start ms-4'}`
   let contentStyles = "content"
@@ -52,7 +52,7 @@ const TextImageCta =({
         </div>
       }
       <div className={contentStyles}>
-        {title && <HLevel className="h3 mb-3">{title}</HLevel>}
+        {title && <HLevel className="/*h3*/ mb-3">{title}</HLevel>}
         {lead && <p className="lead font-sans-serif">{lead}</p>}
         {text && <ReactMarkdown>{text}</ReactMarkdown>}
         {ctaItems && <div className="ctas mt-4 d-md-flex">{ctaItems}</div>}

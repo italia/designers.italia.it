@@ -64,7 +64,7 @@ const Highlight = ({
 
   let ratioClass
   if (fullImg) {
-    ratioClass = "img-container full img-fluid" // xxx img-fluid added for home 1st highlight...
+    ratioClass = "img-container full"
   }else{
     ratioClass = "img-container ratio ratio-16x9"
   }
@@ -72,23 +72,22 @@ const Highlight = ({
 
 	return (
 		<section className={styles} aria-labelledby={id}>
-			<div className="container-xxl /*p-0*/">
-				<div className="row /*p-0*/">
-					<div className="col-12">
+			<div className="container-xxl">
+				<div className="row">
+					<div className="col-12 g-0">
 						<div className={classes}>
-              <div className={ratioClass}>
-                {img &&<ImageResponsive className="main-image" src={img} alt={alt}/> }
+							<div className={ratioClass}>
+								{img &&<ImageResponsive className="main-image" src={img} alt={alt}/> }
 								{icon && <Icon {...icon}/>}
                 				{overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
 							</div>
-							<div className="text-container px-3 py-5 px-lg-0 px-lg-6 py-lg-6">
-								<HLevel id={id}>{title}</HLevel>
+							<div className="text-container px-4 py-5 px-lg-7 py-lg-6">
+								<HLevel id={id} className="pt-3">{title}</HLevel>
 								{subtitle && <p className="lead mb-4">{subtitle}</p>}
-                {numbers && <Numbers {...numbers}/>}
+              					{numbers && <Numbers {...numbers}/>}
 								{text && <div className={textClass}><ReactMarkdown>{text}</ReactMarkdown></div>}
 								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
-
-                { children }
+               					{ children }
 							</div>
 						</div>
 					</div>

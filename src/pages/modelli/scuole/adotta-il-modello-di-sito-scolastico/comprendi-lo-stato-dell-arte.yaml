@@ -25,12 +25,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Valuta l'adesione al modello di sito comunale - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description : Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento. #C
+  name: "Comprendi lo stato dell'arte - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description : Definisci gli obiettivi e il perimetro del progetto per adottare il modello di sito scolastico. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /modelli/comuni/adotta-il-modello-di-sito-comunale/valuta-l-adesione-al-modello-di-sito-comunale/ #M
+  pathname: /modelli/scuole/adotta-il-modello-di-sito-scolastico/comprendi-lo-stato-dell-arte/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -69,7 +69,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Comuni #C
+        label: Scuole #C
         url: "../../" #M
       - title: Nella scheda operativa #C
         icon:
@@ -77,7 +77,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: "Adotta il modello di sito comunale" #C
+        label: Adotta il modello di sito scolastico #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -127,16 +127,16 @@ components:
         - label : Modelli
           active: false
           url: ../../../
-        - label : Comuni
+        - label : Scuole
           url: ../../
           active: false
-        - label : Adotta il modello di sito comunale
+        - label : Adotta il modello di sito scolastico
           url: ../
           active: false
-        - label : "Valuta l'adesione al modello di sito comunale"
+        - label : "Comprendi lo stato dell'arte"
           active: true
-    title: "Valuta l'adesione al modello di sito comunale" #C
-    subtitle: Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento #C
+    title: "Comprendi lo stato dell'arte" #C
+    subtitle: Definisci gli obiettivi e il perimetro del progetto per adottare il modello di sito scolastico #C
     tag:
       label: Attività del modello #C
       addonClasses: mt-3 text-uppercase
@@ -175,7 +175,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Comuni #C
+            label: Scuole #C
             url: "../../" #M
           - title: Nella scheda operativa
             icon:
@@ -183,7 +183,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "Valuta l'adesione al modello di sito comunale" #C
+            label: Adotta il modello di sito scolastico #C
             url: "../" #M
       #otherInfo:
         #items:
@@ -203,14 +203,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Developer #C
+            label: Designer, Project manager #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Verificare e ottimizzare la soluzione digitale #C
+            label: Pianificare le attività di progettazione #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -218,18 +218,18 @@ components:
         size: sm
         color: secondary
       chips: #C
+        - label: Analisi del contesto
+          url: "#"
+          color: primary
+          size: lg
+        - label: Pianificazione
+          url: "#"
+          color: primary
+          size: lg
         - label: Adozione modelli
           url: "#"
           color: primary
           size: lg
-        - label: Siti dei comuni
-          url: "#"
-          color: primary
-          size: lg
-        #- label: Adozione modelli
-          #url: "#"
-          #color: primary
-          #size: lg
       
   # ///////////////////
   # SECTION EDITORIAL
@@ -237,7 +237,7 @@ components:
   sectionsEditorial :
 
 
-    - title: "L'App di valutazione" #C
+    - title: Le risorse per preparare il lavoro #C
       menu: false
       centered: true
       bgColor: null
@@ -249,12 +249,14 @@ components:
         - name: TextImageCta
           #title: A cosa servono h3 #C
           text: | #C
-            L’App di valutazione dell’adesione è uno strumento a supporto del processo di verifica della corretta adesione al modello Comuni. Aiuta a valutare, sia durante che dopo lo sviluppo, la qualità del sito e la corrispondenza ad alcuni dei criteri di conformità della misura 1.4.1 del PNRR *Esperienza del cittadino nei servizi pubblici digitali*.
+            Per pianificare l’adozione del modello di sito scolastico, è fondamentale avere un quadro chiaro dei processi e delle risorse necessare a svolgere il lavoro.
             
-            L’app è basata su tecnologia Lighthouse ed è disponibili per sistemi operativi Windows, MacOS e Linux. Permette la valutazione del sito in locale (ad esempio, un ambiente di sviluppo) e online (disponibile al pubblico).
-            
-            L’app è in **versione beta** e quindi soggetta a revisioni e perfezionamento.
-            
+            Le risorse ti aiutano a:
+            - individuare e pianificare le attività da svolgere nel dettaglio;
+            - analizzare la struttura e i contenuti del sito attuale, in modo da indirizzare le attività di migrazione e gestione dei contenuti;
+            - comprendere i criteri tecnici e di design a cui attenersi per essere conformi al modello;
+            - valutare le soluzioni adottate da altre amministrazioni.
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -266,11 +268,11 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Documentazione tecnica dell’App di valutazione #C
+          - label: Checklist delle attività progettuali per il sito scolastico #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: La guida all’installazione, all’uso e ai requisiti tecnici per il corretto funzionamento dell’App di valutazione dell’adesione ai modelli #C
-            url: https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/ #M
+            text: Usa la checklist per tenere traccia delle attività progettuali per adottare il modello di sito scolastico #C
+            url: "#" #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -285,11 +287,11 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: File di installazione dell’App di valutazione #C
+          - label: Modello di analisi dei contenuti #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il repository GitHub con i file di installazione dell’App di valutazione per MacOS, Windows e Linux #C
-            url: https://github.com/italia/pa-website-validator/releases #M
+            text: Uno strumento per aiutarti a strutturare un audit dei contenuti e coordinare gli interventi di revisione #C
+            url: https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing #M
             blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -304,7 +306,43 @@ components:
                 url:  "#" #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-          
-          
+          - label: Criteri di conformità per il sito scolastico #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Tutti i requisiti minimi da rispettare per l’adesione al modello e le raccomandazioni aggiuntive per migliorare l’esperienza utente #C
+            url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+          - label: Catalogo del riuso #C
+            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni #C
+            url: https://developers.italia.it/it/search?pnrr=1&type=all_catalogue&sort_by=release_date&page=0#68d7bad414e40309778a939a5e4da9c2809011d7 #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "#" #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                blank: true
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  "#" #M
+                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: true
 
   

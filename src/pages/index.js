@@ -33,13 +33,14 @@ const Home = ({ pageContext, location }) =>{
         <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>
       }
 
-      {Pagedata.components.sectionIntroImg &&
-        <SectionIntro {...Pagedata.components.sectionIntroImg}>
-                {Pagedata.components.imageIcons &&
+      {Pagedata.components.imageIcons &&
         <ImageIcons {...Pagedata.components.imageIcons}></ImageIcons>
       }
+
+      {Pagedata.components.sectionIntroImg &&
+        <SectionIntro {...Pagedata.components.sectionIntroImg}>
           {Pagedata.components.sectionIntroImg.testimonials &&
-            <div className="pt-5">
+            <div className="">
               <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
             </div>
           }

@@ -15,6 +15,8 @@ $navigation-h-padding: 24px;
 $navigation-v-padding: 13px;
 $navigation-link-active-bar-size: 3px;
 
+// temp fix for menu a11y
+// button css could be removed once megamenu <button>s are implemented in Bootstrap Italia
 
 .nav-item {
   & > button.nav-link {
@@ -64,12 +66,10 @@ $navigation-link-active-bar-size: 3px;
       display: flex;
       align-self: flex-end;
       align-items: center;
-
       font-weight: 400;
       padding: $navigation-v-padding $navigation-h-padding;
       color: $navigation-link-color-desk;
       border-bottom: $navigation-link-active-bar-size solid transparent;
-
       &.dropdown-toggle {
         svg {
           fill: $navigation-bg-color;
@@ -93,6 +93,28 @@ $navigation-link-active-bar-size: 3px;
           opacity: $navigation-disabled-item-opacity;
         }
       }
+
+      // megamenu white triangle
+      &:before {
+        content: "";
+        position: absolute;
+        top: auto;
+        bottom: -14px;
+        left: 24px;
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        background-color: $navigation-link-color-desk;
+        transform: rotate(45deg);
+        opacity: 0;
+        display: block;
+        transition: opacity 0.15s cubic-bezier(0.1, 0.57, 0.36, 0.99);
+        z-index: 2;
+      }
+      &.dropdown-toggle.show:before {
+        opacity: 1;
+      }
+
     }
   }
 }
