@@ -52,8 +52,8 @@ const Hero =({
 
   let rowStyle = 'row g-0'
 		+ `${centered ? ' justify-content-lg-center' : ''}`
-
-  let columnStyle = 'col-12 px-3 px-lg-5 g-0' // col-md-10 offset-md-1'
+   
+  let columnStyle = ' col-12 px-3 ps-lg-5 pe-lg-0 g-0' // col-md-10 offset-md-1'
 		+ `${centered ? ' col-lg-7 offset-lg-0' : ' col-lg-7'}`
 
   let breadcrumbsStyle = 'hero-top px-3 pt-3'
@@ -102,7 +102,7 @@ const Hero =({
                   </div>
                   {!centered &&
                     // <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
-                    <div className="col-12 col-md-12 col-lg-3 offset-lg-1 d-flex flex-column px-0">
+                    <div className="col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4">
                       { img && <div className={imgStyle}>
                         <ImageResponsive src={img} alt={alt} />
                       </div>}
