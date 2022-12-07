@@ -39,6 +39,7 @@ const Tab = ({
                     accordionLabel={tab01.componentVariant.accordionLabel}
                     accordionUrl={tab01.componentVariant.accordionUrl}
                     accordionSrLabel={tab01.componentVariant.accordionSrLabel}
+                    accordionOpen={tab01.componentVariant.accordionOpen}
                   />
               </ContentSelectItem>) }
             </ContentSelect>}
@@ -60,6 +61,7 @@ const Tab = ({
                   accordionLabel={tab02.componentVariant.accordionLabel}
                   accordionUrl={tab02.componentVariant.accordionUrl}
                   accordionSrLabel={tab02.componentVariant.accordionSrLabel}
+                  accordionOpen={tab02.componentVariant.accordionOpen}
                 />
               </ContentSelectItem>) }
             </ContentSelect>}
@@ -81,6 +83,7 @@ const Tab = ({
                   accordionLabel={tab03.componentVariant.accordionLabel}
                   accordionUrl={tab03.componentVariant.accordionUrl}
                   accordionSrLabel={tab03.componentVariant.accordionSrLabel}
+                  accordionOpen={tab03.componentVariant.accordionOpen}
                 />
               </ContentSelectItem>) }
             </ContentSelect>}

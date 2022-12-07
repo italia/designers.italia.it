@@ -18,6 +18,7 @@ const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'))
 const ComponentView = ({
   content,
   viewer,
+  accordionOpen,
   accordionLabel,
   accordionUrl,
   accordionSrLabel,
@@ -81,6 +82,11 @@ const ComponentView = ({
   let componentStyles = "bg-light p-3 p-md-5"
     + `${responsiveButtonsItems ? ' pt-4' : ''}`
 
+  let accordionStyle = "accordion-collapse collapse" 
+    + `${accordionOpen ? ' show' : ' hide'}`
+  let accordionButtonStyle = "accordion-button border-top-0 collapsed"
+   + `${accordionOpen ? ' collapsed' : ''}`
+
   return (
     <>
       <div className={componentStyles}>
@@ -95,7 +101,7 @@ const ComponentView = ({
         <div className="accordion-item">
           <div className="d-flex justify-content-between align-items-center" id={headId}>
             <h3 id="codeViewer" className ="accordion-header ">
-              <button className="accordion-button border-top-0" type="button" data-bs-toggle="collapse" data-bs-target={'#' + collId } aria-expanded="true" aria-controls={collId}>
+              <button className={accordionButtonStyle} type="button" data-bs-toggle="collapse" data-bs-target={'#' + collId } aria-expanded={accordionOpen} aria-controls={collId}>
                 {accordionLabel}
               </button>
             </h3>
@@ -113,7 +119,7 @@ const ComponentView = ({
             </div>
             </div>
 
-          <div id={collId} className="accordion-collapse collapse hide" data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
+          <div id={collId} className={accordionStyle} data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
             <div className="accordion-body p-0">
               <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true}>
                 {content}
