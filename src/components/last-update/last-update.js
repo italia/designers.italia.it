@@ -31,8 +31,8 @@ const LastUpdate = ({
   // + `${column ? '' : ' col-md-10 offset-md-1'}`
   + ' g-0'
 
-  let paddingStyle = 'px-4'
-   + `${noPadding ? '' : ' px-lg-7'}`
+  let paddingStyle = 'px-3'
+   + `${noPadding ? '' : ' px-lg-5'}`
 
   return (
     <div className="last-update py-5 py-lg-7">

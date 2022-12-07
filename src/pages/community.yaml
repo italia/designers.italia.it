@@ -61,7 +61,7 @@ components:
       btnId: shareButtonHero
       button:
         label: Condividi
-        addonStyle: btn-share-hero text-white mb-4 mt-lg-4 ms-auto
+        addonStyle: btn-share-hero text-white mb-5 mt-lg-4 ms-auto
         icon:
           icon: sprites.svg#it-more-items
           size: sm
@@ -95,7 +95,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il perché
+          label: Scopri la community
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -104,9 +104,9 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems:
-            - url: "level2/"
-              label: Level 2
-              iconRight: true
+            - url: "piano-attivita/"
+              label: Piano attività
+              iconRight: false
               icon:
                 icon: sprites.svg#it-info-circle
                 color: primary
@@ -683,11 +683,7 @@ components:
       buttons:
         - label : Scopri il piano attività
           btnStyle: primary
-          url: "#"
-          addonStyle: mb-0
-        - label : Label text
-          btnStyle: outline-secondary
-          url: "#"
+          url: "piano-attivita/"
           addonStyle: mb-0
     - title : Progetti
       subtitle: Alcuni dei progetti più significativi legati al progetto Designers Italia
@@ -699,16 +695,13 @@ components:
       specular: true
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
       buttons:
-        - label : Esplora i progetti
+        - label : Scopri i progetti
           btnStyle: primary
           url: "#"
           addonStyle: mb-0
-        - label : Proponi un progetto
-          btnStyle: outline-primary
-          url: "#"
-          addonStyle: mb-0
     - title : Come partecipare
-      subtitle: Vuoi contribuire al design system? Partecipare all’evoluzione delle risorse per progettare o all’aggiornamento di linee guida e design standard? Vuoi semplicemente segnalarci un refuso su questo sito?
+      subtitle: "Designers Italia è un progetto open per definizione, vuoi farne parte?"
+      text: "Vuoi contribuire al design system? Partecipare all’evoluzione delle risorse per progettare o all’aggiornamento di linee guida e design standard? Vuoi semplicemente segnalarci un refuso su questo sito?"
       id: hl3
       img : /images/highlight-big.jpg
       alt: descrizione immagine

@@ -56,7 +56,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
         {Pagedata.kangaroo &&
           <div className="container-xxl">
             <div className="row">
-              <div className="col-12">
+              <div className="col-12 g-0">
                 <Kangaroo {...Pagedata.kangaroo} />
               </div>
             </div>
