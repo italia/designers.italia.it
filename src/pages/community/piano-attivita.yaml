@@ -343,3 +343,71 @@ components:
           text: | #C
             Progettazione di un quadro sinottico che crei un linguaggio comune tra chi progetta, chi sviluppa soluzioni di servizi digitali al cittadino e le amministrazioni che le devono gestire. Definizione dei diversi ambiti in cui viene usata la parola servizio. Definizione dei diversi livelli di granularità di un servizio e come vengono chiamati dal cittadino, dalla Pubblica Amministrazione e dagli ambienti tecnici. 
 
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          title: 2022 Q2 #C
+          headingLevel: 3
+          noSpace: false
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio UI kit 3.0.0-alpha.3" #C
+          text: | #C
+            Versione completamente rinnovata del kit di progettazione interfaccia caratterizzata da nuova tecnologia e implementazione design token.
+          ctas:
+          - label: Vai alla pagina del UI kit nella community Figma #C
+            url: "https://www.figma.com/community/file/1105848677422572920" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: false
+          title: "Evoluzione modello Comuni" #C
+          text: | #C
+            Rilascio di una nuova versione del modello Comuni in ottica PNRR investimento 1.4.1. Identificazione, progettazione e realizzazione template dei principali modelli di servizio digitali al cittadino (richiedere un sussidio, richiedere un servizio a pagamento, effettuare una iscrizione a un servizio, pagare un dovuto) e allineamento del modello al design system aggiornato. Realizzazione e rilasci temi CMS del modello Comuni.
+          ctas:
+          - label: Vai al modello Comuni #C
+            url: "/modelli/comuni/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+                
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio Bootstrap italia 2.0" #C
+          text: | #C
+            Versione completamente rinnovata del kit di sviluppo interfaccia basata sul framework Bootstrap 5.
+          ctas:
+          - label: Vai alla documentazione di Bootstrap Italia #C
+            url: "https://italia.github.io/bootstrap-italia/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
