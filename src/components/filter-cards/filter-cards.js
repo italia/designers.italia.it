@@ -52,7 +52,7 @@ const FilterCards = ({
             {title && <HLevel id={id}>{title}</HLevel>}
           </div>
 
-          <div className="col-12 mb-3">
+        {idInput &&  <div className="col-12 mb-3">
             <form className="" action="#">
               <div className="row">
                 <div className="col-7 col-md-9 col-lg-10">
@@ -67,6 +67,7 @@ const FilterCards = ({
               </div>
             </form>
           </div>
+          }
 
         </div>
         <div className="row cards-wrapper">
