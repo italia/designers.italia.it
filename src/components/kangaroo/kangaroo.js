@@ -16,7 +16,7 @@ const Kangaroo = ({
   navposition,
   personalInfo,
   otherInfo,
-  noPadding
+  noPadding,
 }) =>{
 
   let styles= "kangaroo px-3"

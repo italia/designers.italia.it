@@ -47,14 +47,17 @@ const Hero =({
     SubtitleLevel = `p`
 	}
 
+  let textStyle= "texts py-3"
+   + `${centered ? ' pb-lg-4' : ' pb-lg-5'}`
+
   let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 
   let rowStyle = 'row g-0'
 		+ `${centered ? ' justify-content-lg-center' : ''}`
    
-  let columnStyle = ' col-12 px-3 ps-lg-5 pe-lg-0 g-0' // col-md-10 offset-md-1'
-		+ `${centered ? ' col-lg-7 offset-lg-0' : ' col-lg-7'}`
+  let columnStyle = ' col-12 g-0 px-3' // col-md-10 offset-md-1'
+		+ `${centered ? ' col-lg-7 offset-lg-0' : ' ps-lg-5 pe-lg-0 col-lg-7'}`
 
   let breadcrumbsStyle = 'hero-top px-3 pt-4'
     + `${column ? ' ' : ' px-lg-5 '}`
@@ -89,7 +92,7 @@ const Hero =({
               <div className="hero-main">
                 <div className={rowStyle}>
                   <div className={columnStyle}>
-                    <div className="texts py-3 pb-lg-5">
+                    <div className={textStyle}>
                       <div className="d-flex align-items-start flex-wrap">
                         <HLevel className="title">{title}</HLevel>
                         {titleTag && <Tag {...titleTag}></Tag>}
@@ -102,9 +105,10 @@ const Hero =({
                           <span className="text-uppercase">{pretext.text}</span>
                         </div>}
                         {text && <ReactMarkdown>{text}</ReactMarkdown>}
-                        {centered && <Dropdown {...share}></Dropdown>}
                       </div>
                     </div>
+                    {centered && <Dropdown {...share}></Dropdown>}
+
                   </div>
                   {!centered &&
                     // <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
