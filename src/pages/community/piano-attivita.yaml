@@ -474,3 +474,75 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2      
+              
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          title: 2022 Q1 #C
+          headingLevel: 3
+          noSpace: false
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio Bootstrap Italia 1.5" #C
+          text: | #C
+            Risoluzione dei problemi di accessibilità noti, integrazione dei contributi e rilancio della community di sviluppo.
+          ctas:
+          - label: Vai alla documentazione di Bootstrap Italia #C
+            url: "https://italia.github.io/bootstrap-italia/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Modello scuole e modello Comuni" #C
+          text: | #C
+            Avvio delle attività di individuazione e modellizzazione dei principali flussi di servizi digitali al cittadino.
+                
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system" #C
+          text: | #C
+            Avvio delle attività operative di aggiornamento: assessment di accessibilità e coerenza delle librerie, e stesura piano di ricerca.
+            Analisi e pianificazione delle evolutive delle librerie tecnologiche (Bootstrap Italia, Design React Kit) e visuali (UI kit e Wireframe Kit) in parallelo. 
+            
+            Predisposizione piano di ricerca per comprendere bisogni degli stakeholder del design system del Paese e coinvolgerli in un processo di validazione continua delle lavorazioni in corso.
+              
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Atlante della Trasformazione Digitale della PA" #C
+          text: | #C
+            Realizzazione di una ricerca su archetipi e pattern ricorrenti in 5 ambiti della vita civica. Attività di formazione nell’ambito di un master in comunicazione visiva: co-progettazione e pubblicazione di un atlante illustrato dedicato ai processi di trasformazione digitale della pubblica amministrazione.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "https://designers.italia.it/notizie/Altante-trasformazione-digitale-PA/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+  
