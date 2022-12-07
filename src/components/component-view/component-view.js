@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import { v4 as uuidv4 } from 'uuid'
 
 //import DOMPurify from 'isomorphic-dompurify'
 import sanitizeHtml from 'sanitize-html'
 import { lucario } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Button from "../button/button"
+import Checkbox from "../checkbox/checkbox"
 import Icon from "../icon/icon"
 import loadable from "@loadable/component"
 
@@ -60,6 +61,7 @@ const ComponentView = ({
   const headId = uuid + '-heading'
   const collId = uuid + '-collapse'
   let responsiveButtonsItems
+  const [wrappedCode, setWrappedCode] = useState(false)
 
   content = content.replace(/^\s+|\s+$/g, '')
 
@@ -91,6 +93,9 @@ const ComponentView = ({
               {accordionLabel}
             </button>
 			      {content &&
+              <Checkbox id="wrap" label="Wrap" customStyle={'me-3'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
+            }
+            {content &&
               <a href="" onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrLabel}>
                 <Icon {...ICON_COPY_CODE}/>
               </a>
@@ -104,9 +109,9 @@ const ComponentView = ({
 
           <div id={collId} className="accordion-collapse collapse show" data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
             <div className="accordion-body p-0">
-              <SyntaxHighlighter language="markup" style={lucario} showLineNumbers={true}>
-                {content}
-              </SyntaxHighlighter>
+                <SyntaxHighlighter language="markup" style={lucario} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{style: {wordBreak: 'break-all', whiteSpace: 'pre-wrap'}}}>
+                  {content}
+                </SyntaxHighlighter>
             </div>
           </div>
           <div class="notification with-icon success bottom-fix dismissable fade" role="alert" aria-labelledby="not1d-title" id="copyToast">
