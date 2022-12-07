@@ -75,7 +75,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      La progettazione e la realizzazione di siti e servizi digitali per la PA sono guidate da regole tecniche e indicazioni operative attente all’usabilità e a un approccio progettuale rivolto alle persone.  
+      La progettazione e la realizzazione di siti e servizi digitali per la PA sono guidate da regole tecniche e indicazioni operative attente all’usabilità, all'accessibilità e a un approccio progettuale rivolto alle persone.  
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -145,8 +145,15 @@ components:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
-            - url: "manuale-operativo/" #M
-              label: "Manuale operativo" #C
+            - url: "linee-guida-sull-accessibilita/" #M
+              label: "Linee guida sull'accessibilità" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "manuale-operativo-di-design/" #M
+              label: "Manuale operativo di design" #C
               iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -168,7 +175,7 @@ components:
     moreButtonClose: Chiudi
     moreText: | #C
       Per orientarti nell'ecosistema di norme e riferimenti, la stella polare è rappresentata dalle **Linee guida di design, secondo quanto definito dall’articolo 53 del Codice dell’Amministrazione Digitale**: ti indicano le regole che hai l'obbligo di rispettare, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle opzionali. 
-      Ad applicare concretamente le Linee guida ti aiuta il **Manuale operativo di design**: ti fornisce indicazioni operative a supporto della progettazione e della realizzazione di siti e servizi pubblici digitali accessibili, inclusivi e che riducono le disuguaglianze. 
+      Nell'applicazione concreta delle Linee guida ti aiuta il **Manuale operativo di design**: ti fornisce indicazioni operative a supporto della progettazione e della realizzazione di siti e servizi pubblici digitali accessibili, inclusivi e che riducono le disuguaglianze. 
 
   # ///////////////////
   # HIGHLIGHTS
@@ -214,15 +221,14 @@ components:
       subtitle: "La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici" #C 
       text: "Il documento è stato redatto ed emanato dall'Agenzia per l'Italia Digitale (AGID) secondo quanto disposto dall’articolo 11 della legge del 9 gennaio 2004, n. 4." #C
       buttons: #C #M
-        - label : Esplora le Linee guida sull'accessibilità
+        - label : Scopri le Linee guida sull'accessibilità
           btnStyle: primary
-          url: "https://docs.italia.it/AgID/documenti-in-consultazione/lg-accessibilita-docs/it/stabile/index.html" #M 
-          addonStyle: mb-0
-
+          url: "linee-guida-sull-accessibilita/" #M 
+     
     # —
     # HIGHLIGHT BIG IMG
     # —
-    - title : Manuale operativo #C
+    - title : Manuale operativo di design #C
       id: HL3
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
@@ -233,10 +239,9 @@ components:
       subtitle: "Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento" #C
       text: "Uno strumento di lavoro per la PA e i suoi fornitori, offre tutte le informazioni necessarie a realizzare siti e servizi pubblici digitali secondo le regole tecniche descritte dalla Linee guida." #C
       buttons: #C #M
-        - label : Scopri il Manuale operativo 
+        - label : Scopri il Manuale operativo di design
           btnStyle: primary
-          url: "manuale-operativo/" #M
-          addonStyle: mb-0
+          url: "manuale-operativo-di-design/" #M
           
     - id: highlightCardsArticoli
       title: Articoli di approfondimento

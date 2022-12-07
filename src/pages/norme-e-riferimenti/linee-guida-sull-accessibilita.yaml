@@ -18,12 +18,12 @@
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Linee guida di design - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Le regole tecniche che devi rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione #C
+  name: Linee guida sull'accessibilità - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/ #M
+  pathname: /norme-e-riferimenti/linee-guida-sull-accessibilita/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -100,10 +100,10 @@ components:
         - label : Norme e riferimenti
           active: false
           url: /norme-e-riferimenti/
-        - label : Linee guida di design
+        - label : Linee guida sull'accessibilità
           active: true
-    title: Linee guida di design #C
-    subtitle: Le regole tecniche che devi rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione #C
+    title: Linee guida sull'accessibilità #C
+    subtitle: La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici #C
     tag:
         label: Fondamento #C
         addonClasses: mt-3 text-uppercase
@@ -113,7 +113,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
-      Le linee guida rappresentano la norma di riferimento per orientare la progettazione e la realizzazione di siti e servizi pubblici digitali, valorizzando l’usabilità e un approccio progettuale che mette le persone al centro.  
+      Le Linee guida emanate da AGID indirizzano la Pubblica Amministrazione verso servizi digitali sempre più accessibili.  
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -121,7 +121,7 @@ components:
       btnId: shareButtonHero
       button:
         label: Condividi
-        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
+        addonStyle: btn-share-hero text-primary mb-4 mt-lg-4 ms-auto
         icon:
           icon: sprites.svg#it-more-items
           size: sm
@@ -141,7 +141,7 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Normativa
+        - label: Accessibilità
           url: "#"
           color: primary
           size: lg
@@ -149,11 +149,7 @@ components:
           url: "#"
           color: primary
           size: lg
-        - label: Manuale operativo
-          url: "#"
-          color: primary
-          size: lg
-        - label: CAD
+        - label: Normativa
           url: "#"
           color: primary
           size: lg
@@ -174,7 +170,7 @@ components:
     #      listItems: #M
     #        - url: "level3/"
     #          label: Level 3 #C
-    #          iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+    #          iconRight: true #SHOW CHILDREN DROPDOWN ITEM ICONS
     #          icon:
     #            icon: sprites.svg#it-arrow-right
     #            color: primary
@@ -203,42 +199,41 @@ components:
     # —
     # EDITORIAL #C #I
     # —   
-    - title: Progettare a norma di legge
+    - title: Progettare senza barriere
       bgColor: null
       menu: false
       centered: false
       text: | #C
-        Le Linee guida di design garantiscono che l'accesso a servizi semplici e inclusivi sia un diritto per tutte le persone 
+        Le Linee guida sull'accessibilità garantiscono servizi digitali pienamente fruibili anche da parte delle persone con disabilità 
       components: 
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "La stella polare della progettazione per la PA" #C
+          title: "Pubblico è accessibile" #C
           text: | #C 
-            Orientare la progettazione, la realizzazione e la manutenzione di siti e servizi pubblici digitali, con particolare attenzione all’usabilità e alla persona: sono questi gli obiettivi delle Linee guida di design per i siti internet e i servizi digitali della Pubblica Amministrazione, **emesse ai sensi dell’articolo 53, comma 1 ter - Siti internet delle pubbliche amministrazioni del Codice dell’Amministrazione Digitale (CAD)**.
-          
-            Il documento è frutto del lavoro congiunto tra AGID e il Dipartimento per la Trasformazione Digitale, arricchito da una consultazione pubblica e da un dialogo costruttivo con la Conferenza Unificata e ANCI.
+            Per accessibilità si intende la capacità dei sistemi informatici di erogare servizi e **fornire informazioni fruibili, senza discriminazioni**, anche da parte delle persone che, a causa di disabilità, abbiano necessità di tecnologie assistive o di configurazioni particolari.
             
-            Le linee guida di design costituiscono uno **strumento funzionale alla realizzazione dei [progetti di miglioramento dei servizi pubblici previsti dal PNRR](https://padigitale2026.gov.it/misure/)**, cui sono destinati importanti investimenti.
-            
-            In base alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee Guida di design ti forniscono **le indicazioni che devi obbligatoriamente rispettare** per la realizzazione di siti internet e servizi digitali della PA, **quelle opzionali** e **quelle per cui ti è richiesta un’attenta valutazione**.
-            
+            Allo scopo di indirizzare la Pubblica Amministrazione e tutti i soggetti che erogano servizi pubblici verso servizi digitali sempre più accessibili, AGID ha emanato le Linee guida sull’accessibilità degli strumenti informatici. Il documento attua la Direttiva UE 2016/2102, relativa all’accessibilità dei siti web e delle applicazioni mobili degli enti pubblici, ed è **redatto secondo l’articolo 11 della Legge del 9 gennaio 2004, n. 4**.
+           
             ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
+            
         # TXT BLOCK
         - name: TextImageCta
-          title: "I requisiti enunciati dalle Linee guida" #C
+          title: "Che cosa dicono le Linee guida sull'accessibilità" #C
           text: | #C 
-            **Semplicità di consultazione ed esperienza d’uso** costituiscono uno snodo cruciale per l’efficacia dei prodotti digitali della PA: siti internet e servizi digitali utili e facili da usare, progettati secondo una metodologia centrata sull’utente, sono un diritto per tutte le persone, che possono così usufruirne in modo semplice e chiaro, accrescendone la diffusione.
+            Le Linee guida definiscono:
             
-            Tra gli altri requisiti, grande valore è attribuito anche alla **trasparenza** e alla **sicurezza delle informazioni**, all’**accessibilità**, al **monitoraggio dei servizi**, alle **interfacce utente**, all’**integrazione delle piattaforme abilitanti** e alle **licenze**.
-            
-            Per l’implementazione di queste regole tecniche, hai a disposizione diversi strumenti: i **modelli**, i **kit** e il **Manuale operativo di design**, una guida pratica dedicata alla PA e ai suoi fornitori per raggiungere gli obiettivi definiti nelle Linee guida.
+             * i **requisiti tecnici per l’accessibilità degli strumenti informatici**, compresi i siti web e le applicazioni mobili;
+             * le **metodologie tecniche per la verifica dell’accessibilità** degli strumenti informatici;
+             * il modello della **dichiarazione di accessibilità** e l’obbligo annuale di pubblicazione degli **obiettivi di accessibilità**;
+             * la **metodologia di monitoraggio della conformità** degli strumenti informatici alle prescrizioni in materia di accessibilità;
+             * le circostanze che possono determinare un **onere sproporzionato** da parte del soggetto erogatore.
+       
 
           #### Leggi le Linee guida su Docs Italia
           ctas:
-          - label: Linee guida di design #C
-            url: "https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/index.html" #M
+          - label: Linee guida sull'accessibilità #C
+            url: "https://docs.italia.it/AgID/documenti-in-consultazione/lg-accessibilita-docs/it/stabile/index.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -258,5 +253,5 @@ components:
 
        #     Lorem ipsum.
 
- 
+         
            
