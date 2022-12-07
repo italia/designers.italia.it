@@ -1,7 +1,9 @@
-import React from "react"
+import React, { useRef, useEffect } from "react"
 import Tag from "../tag/tag"
 import Link from "../link/link"
 import "./nav-sidebar.scss"
+
+import { NavBarCollapsible } from "bootstrap-italia/dist/bootstrap-italia.esm"
 
 const NavSidebar = ({
   id,
@@ -27,6 +29,7 @@ const NavSidebar = ({
   let secondaryLinks
 
   const GATSBY_ACTIVE = "active"
+  const navCollRef = useRef(null)
 
   if (list) {
     links = list.map((item,index) => {
@@ -93,13 +96,25 @@ const NavSidebar = ({
     })
   }
 
+  useEffect(() => {
+    const navColl = navCollRef.current
+    return () => {
+      if (navColl) {
+        const navCollObj = NavBarCollapsible.getInstance(navColl)
+        if (navCollObj) {
+          navCollObj.hide()
+        }
+      }
+    }
+  })
+
   return (
     <div className="nav-sidebar">
 
       <nav className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0" aria-label={ariaLabel}>
         <button className="custom-navbar-toggler" type="button" aria-controls={id} aria-expanded="false" aria-label={toggleAriaLabel} data-bs-toggle="navbarcollapsible" data-bs-target="#navSidebarDs"><span className="it-list"></span>{toggleLabel}
         </button>
-        <div className="navbar-collapsable" id={id}>
+        <div className="navbar-collapsable" id={id} ref={navCollRef}>
           <div className="overlay"></div>
           <div className="close-div visually-hidden">
             <button className="btn close-menu" type="button">

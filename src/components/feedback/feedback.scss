@@ -1,6 +1,6 @@
 .feedback {
   h2 {
-    font-size: 1.3333333333333333rem;
+    // font-size: 1.3333333333333333rem;
   }
   .card {
     &:after {
@@ -52,15 +52,29 @@
 
 .modal-body {
   color: var(--bs-body-color);
-  h2 {
-    line-height: 1.2;
-    font-weight: 600;
-    font-size: 1.5555555555555556rem
+  // h2 {
+  //   // line-height: 1.2;
+  //   // font-weight: 600;
+  //   // font-size: 1.5555555555555556rem
+  // }
+  p {
+    font-size: 1rem !important;
+    margin-bottom: 48px !important;
+    line-height: 1.5 !important;
+  }
+  p.lead {
+    font-size: 1.2rem !important;
+    margin-bottom: 24px !important;
+    line-height: 1.35 !important;
   }
 }
 
 .modal-lg {
-  max-width: 580px;
+  // max-width: 580px;
+}
+
+.modal-dialog {
+  margin:48px auto!important
 }
 
 .slidedown {

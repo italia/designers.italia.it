@@ -81,8 +81,8 @@ const Highlight = ({
 								{icon && <Icon {...icon}/>}
                 				{overlayImg && <ImageResponsive src={overlayImg} alt={overlayAlt} className="overlay-image"/>}
 							</div>
-							<div className="text-container px-4 py-5 px-lg-7 py-lg-6">
-								<HLevel id={id} className="pt-3">{title}</HLevel>
+							<div className="text-container px-3 py-5 px-lg-5 py-lg-6">
+								<HLevel id={id}>{title}</HLevel>
 								{subtitle && <p className="lead mb-4">{subtitle}</p>}
               					{numbers && <Numbers {...numbers}/>}
 								{text && <div className={textClass}><ReactMarkdown>{text}</ReactMarkdown></div>}

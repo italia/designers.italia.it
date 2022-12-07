@@ -1,34 +1,65 @@
 import React, { useState, useEffect, useRef } from "react"
 import ImageResponsive from "../../../image-responsive/image-responsive"
 import Link from "../../../link/link"
+import Icon from "../../../icon/icon"
 
 import Button from "../../../button/button"
 
 import './form-no.scss'
 
-const BTN_BK = {
-  label: "Indietro",
-  btnStyle: "outline-primary",
-  type: "button",
-  addonStyle: "me-3"
+const ICON_USER = {
+  icon: "sprites.svg#it-user",
+  size: "lg",
+  color: "secondary",
+  addonClasses: "align-middle me-3",
+  hidden: true
 }
 
-const BTN_FW = {
-  label: "Avanti",
+const ICON_HELP= {
+  icon: "sprites.svg#it-help-circle",
+  size: "lg",
+  color: "secondary",
+  addonClasses: "align-middle me-3",
+  hidden: true
+}
+
+const ICON_INFO = {
+  icon: "sprites.svg#it-info-circle",
+  size: "lg",
+  color: "secondary",
+  addonClasses: "align-middle me-3",
+  hidden: true
+}
+
+// const BTN_BK = {
+//   label: "Indietro",
+//   btnStyle: "outline-primary",
+//   type: "button",
+//   addonStyle: "me-3"
+// }
+
+// const BTN_FW = {
+//   label: "Avanti",
+//   btnStyle: "primary",
+//   type: "button",
+// }
+
+const BTN_SEND = {
+  label: "Invia dettagli",
   btnStyle: "primary",
   type: "button",
 }
 
-const BTN_SUBSCRIBE = {
-  label: "Iscriviti",
-  btnStyle: "primary",
-  type: "button",
-  addonStyle: "text-uppercase"
-}
+// const BTN_SUBSCRIBE = {
+//   label: "Iscriviti",
+//   btnStyle: "primary",
+//   type: "button",
+//   addonStyle: "text-uppercase"
+// }
 
-const SELECTOR_STEP = '.step'
+// const SELECTOR_STEP = '.step'
 
-const CLASS_SHOW = 'show'
+// const CLASS_SHOW = 'show'
 
 const FormNo = ({
 
@@ -36,128 +67,123 @@ const FormNo = ({
 
   const rootRef = useRef(null);
 
-  const [steps, setSteps] = useState([]);
-  const [stepIdx, setStepIdx] = useState(0);
-
-  const showStep = () => {
-    steps.forEach((step, idx) => idx === stepIdx ? step.classList.add(CLASS_SHOW) : step.classList.remove(CLASS_SHOW))
-  }
-
-  const changeStep = (incr) => {
-    const result = stepIdx + incr
-    if (result < 0) {
-      setStepIdx(0)
-    } else if (result >= steps.length) {
-      setStepIdx(steps.length -1)
-    } else {
-      setStepIdx(result)
-    }
-  }
-
-  useEffect(() => {
-    if (rootRef.current) {
-      setSteps(rootRef.current.querySelectorAll(SELECTOR_STEP))
-    }
-  }, [rootRef]);
-
-  useEffect(() => {
-    showStep()
-  }, [steps, stepIdx])
+  // const [steps, setSteps] = useState([]);
+  // const [stepIdx, setStepIdx] = useState(0);
 
   return <div ref={rootRef}>
     <form action="#">
 
-      {/* ----------- feedback step 1 ----------- */}
-      <div className="step feedback-formno-step">
-        <h2 className="mb-3" id="feedbackNoTitle">Grazie per la tua risposta! Aiutaci a migliorare.</h2>
-        <fieldset>
-          <legend className="d-flex mb-3 px-0 w-100"><span className="w-75">Sei:</span><span className="w-25 text-end">1/3</span></legend>
-          <div className="form-check pb-2 border-bottom">
-            <input name="optsStep1" type="radio" id="optsStep1Opt1" value="progettista" />
-            <label htmlFor="optsStep1Opt1">progettista</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep1" type="radio" id="optsStep1Opt2" value="sviluppatore" />
-            <label htmlFor="optsStep1Opt2">sviluppatore</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep1" type="radio" id="optsStep1Opt3" value="funzionario della Pubblica Amministrazione" />
-            <label htmlFor="optsStep1Opt3">funzionario della Pubblica Amministrazione</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep1" type="radio" id="optsStep1Opt4" value="fornitore" />
-            <label htmlFor="optsStep1Opt4">fornitore</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep1" type="radio" id="optsStep1Opt5" value="esperto di temi legali" />
-            <label htmlFor="optsStep1Opt5">esperto di temi legali</label>
-          </div>
-          <div className="form-check pt-2 pb-5">
-            <input name="optsStep1" type="radio" id="optsStep1Opt6" value="altro" />
-            <label htmlFor="optsStep1Opt6">altro</label>
-          </div>
-        </fieldset>
-      </div>
+        <ImageResponsive src="/images/kit-analitics.svg" alt="" />
+        <h2 className="mb-3" id="feedbackNoTitle">Grazie per la tua risposta!</h2>
 
-      {/* ----------- feedback step 2 ----------- */}
-      <div className="step feedback-formno-step">
-        <h2 className="mb-3">Ancora una curiosità</h2>
+        {/* <!-- XXX testi e item tutti da spostare nello yaml possibilmente --> */}
+        <h3 className="mb-3">Aiutaci a migliorare dandoci qualche dettaglio in più.</h3>
+        <p>Quanto segue è una raccolta dati anonima, non raccogliamo i tuoi dati personali, usiamo solo le seguenti informazioni per capire come migliorare l'esperienza. Se vuoi puoi leggere <Link to="#">l’informativa sulla privacy</Link> o esplorare come funziona questo meccanismo nella <Link to="#">repository GitHub</Link> dedicata.</p>
+
         <fieldset>
-          <legend className="d-flex mb-3 px-0 w-100"><span className="w-75">Hai trovato questa pagina grazie a:</span><span className="w-25 text-end">2/3</span></legend>
-          <div className="form-check pb-2 border-bottom">
-            <input name="optsStep2" type="radio" id="optsStep2Opt1" value="motore di ricerca" />
-            <label htmlFor="optsStep2Opt1">motore di ricerca</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep2" type="radio" id="optsStep2Opt2" value="altro sito web" />
-            <label htmlFor="optsStep2Opt2">altro sito web</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep2" type="radio" id="optsStep2Opt3" value="funzione “Cerca” del sito" />
-            <label htmlFor="optsStep2Opt3">funzione “Cerca” del sito</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep2" type="radio" id="optsStep2Opt4" value="navigazione del sito" />
-            <label htmlFor="optsStep2Opt4">navigazione del sito</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep2" type="radio" id="optsStep2Opt5" value="messaggio social" />
-            <label htmlFor="optsStep2Opt5">messaggio social</label>
-          </div>
-          <div className="form-check py-2 border-bottom">
-            <input name="optsStep2" type="radio" id="optsStep2Opt6" value="posta elettronica" />
-            <label htmlFor="optsStep2Opt6">posta elettronica</label>
-          </div>
-          <div className="form-check pt-2 pb-5">
-            <input name="optsStep2" type="radio" id="optsStep2Opt7" value="altro" />
-            <label htmlFor="optsStep2Opt7">altro</label>
+          <legend className="d-flex mb-3 px-0 align-items-center w-75"><Icon {...ICON_USER}/><span className="text-secondary">Sei:</span></legend>
+          <div className="px-3 px-lg-5 py-3 py-lg-5 rounded shadow-lg"> 
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt1" value="Designer" />
+              <label htmlFor="optsStep1Opt1">Designer</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt2" value="Developer" />
+              <label htmlFor="optsStep1Opt2">Developer</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt3" value="Dirigente" />
+              <label htmlFor="optsStep1Opt3">Dirigente</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt4" value="Docente" />
+              <label htmlFor="optsStep1Opt4">Docente</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt5" value="Editor" />
+              <label htmlFor="optsStep1Opt5">Editor</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt6" value="Legale" />
+              <label htmlFor="optsStep1Opt6">Legale</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt7" value="Personale amministrativo" />
+              <label htmlFor="optsStep1Opt7">Personale amministrativo</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt8" value="Project manager" />
+              <label htmlFor="optsStep1Opt8">Project manager</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt9" value="Specialista comunicazione" />
+              <label htmlFor="optsStep1Opt9">Specialista comunicazione</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt10" value="Studente" />
+              <label htmlFor="optsStep1Opt10">Studente</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep1" type="radio" id="optsStep1Opt11" value="Qui per curiosità / interesse" />
+              <label htmlFor="optsStep1Opt11">Qui per curiosità / interesse</label>
+            </div>
           </div>
         </fieldset>
 
-      </div>
-
-      {/* ----------- feedback step 3 ----------- */}
-      <div className="step feedback-formno-step">
-        <h2 className="mb-4">Il tuo parere è importante per noi, se hai ancora tempo</h2>
         <fieldset>
-          <legend className="d-flex mb-5 px-0 w-100"><span className="w-75">Come possiamo migliorare questa pagina?</span><span className="w-25 text-end">3/3</span></legend>
-          <div className="form-group">
-            <label htmlFor="feedbackText" className="custom-label">Risposta</label>
-            <input type="text" className="form-control" id="feedbackText" name="feedbackText" />
-            <small className="form-control form-text">Hai a disposizione 200 caratteri</small>
+          <legend className="d-flex mb-3 px-0 pt-5 align-items-center w-75"><Icon {...ICON_HELP}/><span className="text-secondary">Hai trovato questa pagina grazie a:</span></legend>
+          <div className="px-3 px-lg-5 py-3 py-lg-5 rounded shadow-lg"> 
+            <div className="form-check form-check-group">
+              <input name="optsStep2" type="radio" id="optsStep2Opt1" value="motore di ricerca" />
+              <label htmlFor="optsStep2Opt1">Altro sito web</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep2" type="radio" id="optsStep2Opt2" value="altro sito web" />
+              <label htmlFor="optsStep2Opt2">Funzione "Cerca" del sito</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep2" type="radio" id="optsStep2Opt3" value="funzione “Cerca” del sito" />
+              <label htmlFor="optsStep2Opt3">Motore di ricerca</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep2" type="radio" id="optsStep2Opt4" value="navigazione del sito" />
+              <label htmlFor="optsStep2Opt4">Messaggio social</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep2" type="radio" id="optsStep2Opt5" value="messaggio social" />
+              <label htmlFor="optsStep2Opt5">Navigazione del sito</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep2" type="radio" id="optsStep2Opt6" value="posta elettronica" />
+              <label htmlFor="optsStep2Opt6">Posta elettronica</label>
+            </div>
+            <div className="form-check form-check-group">
+              <input name="optsStep2" type="radio" id="optsStep2Opt7" value="altro" />
+              <label htmlFor="optsStep2Opt7">Altro</label>
+            </div>
           </div>
         </fieldset>
-      </div>
 
-      { stepIdx > 0 && stepIdx < steps.length -1 && <Button {...BTN_BK} onClick={() => changeStep(-1)} /> }
-      { stepIdx < steps.length -1 && <Button {...BTN_FW} onClick={() => changeStep(1)} /> }
+        <fieldset>
+          <legend className="d-flex pt-5 pb-4 px-0 align-items-center w-75"><Icon {...ICON_INFO}/><span className="text-secondary">Come possiamo migliorare questa pagina?</span></legend>
+          <div className="px-3 px-lg-5 pt-5 pb-1 rounded shadow-lg"> 
+            <div className="form-group">
+              <label htmlFor="feedbackText" className="custom-label">Risposta</label>
+              <input type="text" className="form-control" id="feedbackText" name="feedbackText" />
+              <small className="form-control form-text">Hai a disposizione 200 caratteri</small>
+            </div>
+          </div>
+        </fieldset>
+
+        <div className="mt-5">
+          <Button {...BTN_SEND} />
+        </div>
+ 
     </form>
 
-    {/* ----------- feedback step 4 ----------- */}
-    <div className="step feedback-formno-step">
-      <ImageResponsive src="/images/kit-analitics.svg" alt="" />
-      <h2 className="mb-3 h4">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2>
-      <div className="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
+      {/* <ImageResponsive src="/images/kit-analitics.svg" alt="" />
+      <h2 className="mb-3 h4">Grazie davvero, il tuo contributo ci aiuterà a migliorare il progetto Designers Italia!</h2> */}
+      {/* <div className="lead mb-3">Se vuoi lasciaci la tua email e ti terremo aggiornato sulle prossime iniziative di Designers Italia e Developers Italia.</div>
       <div className="p mb-5"><Link to="#">Leggi l’informativa sulla privacy</Link></div>
       <form action="#">
         <div className="d-md-flex align-items-start">
@@ -167,8 +193,7 @@ const FormNo = ({
           </div>
           <Button {...BTN_SUBSCRIBE} />
         </div>
-      </form>
-    </div>
+      </form> */}
 
   </div>
 }
