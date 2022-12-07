@@ -352,8 +352,8 @@ components:
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio UI kit 3.0.0-alpha.3" #C
           text: | #C
@@ -373,8 +373,8 @@ components:
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
           specular: false
           title: "Evoluzione modello Comuni" #C
           text: | #C
@@ -394,8 +394,8 @@ components:
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio Bootstrap italia 2.0" #C
           text: | #C
@@ -411,3 +411,66 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+              
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Aggiornamento modello scuole" #C
+          text: | #C
+            Rilascio di una nuova versione del modello scuole in ottica PNRR investimento 1.4.1. Allineamento del modello al design system aggiornato, in particolare: allineamento template statici HTML e tema Wordpress a disposizione delle scuole italiane; aggiornamento della ricerca quantitativa e qualitativa a cura del Ministero dell'Istruzione.
+          ctas:
+          - label: Vai al modello Scuole #C
+            url: "modelli/scuole" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2      
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio Bootstrap italia 1.6 legacy" #C
+          text: | #C
+            Verifica e risoluzione di problematiche di accessibilità. Ultimo rilascio basato sul framework di sviluppo web Bootstrap 4.
+          ctas:
+          - label: Vai alla documentazione di Bootstrap Italia #C
+            url: "https://italia.github.io/bootstrap-italia/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Linee guida e manuale operativo di design" #C
+          text: | #C
+            Pubblicazione delle nuove Linee guida di design per i siti internet e i servizi digitali della Pubblica Amministrazione.
+          ctas:
+          - label: Vai a norme e riferimenti #C
+            url: "/norme-e-riferimenti/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2      
