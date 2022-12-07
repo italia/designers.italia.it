@@ -47,43 +47,52 @@ const Hero =({
     SubtitleLevel = `p`
 	}
 
+  let textStyle= "texts py-3"
+   + `${centered ? ' pb-lg-4' : ' pb-lg-5'}`
+
   let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 
   let rowStyle = 'row g-0'
 		+ `${centered ? ' justify-content-lg-center' : ''}`
+   
+  let columnStyle = ' col-12 g-0 px-3' // col-md-10 offset-md-1'
+		+ `${centered ? ' col-lg-7 offset-lg-0' : ' ps-lg-5 pe-lg-0 col-lg-7'}`
 
-  let columnStyle = 'col-12 px-lg-6' // col-md-10 offset-md-1'
-		+ `${centered ? ' col-lg-7 offset-lg-0' : ' col-lg-7'}`
-
-  let breadcrumbsStyle = 'hero-top px-3 pt-3'
-    + `${column ? ' px-lg-0' : ''}`
+  let breadcrumbsStyle = 'hero-top px-3 pt-4'
+    + `${column ? ' ' : ' px-lg-5 '}`
 
   let kangarooZoneStyle = 'kangaroo-zone'
   + `${noBorder ? ' no-border' : ''}`
 
-  let kangarooColumnStyle = 'col-12 px-lg-6' //col-12 col-md-10 offset-md-1'
-  + `${centered ? ' col-lg-7 offset-lg-0' : ''}`
+  let kangarooColumnStyle = 'col-12 g-0' //col-12 col-md-10 offset-md-1'
+  + `${centered ? ' col-lg-7 offset-lg-0 ' : ''}`
+
+  let rightColumnStyle = "  col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4"
 
   if (column) {
-    columnStyle = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
-    kangarooColumnStyle = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0"
+    columnStyle = "px-3 col-12 col-md-8"
+    kangarooColumnStyle = "col-12 g-0"
+    rightColumnStyle = "col-12 col-md-3 offset-md-1 d-flex flex-column px-3 pe-lg-5 pt-md-4"
   }
+
+
+
 
 	return(
 		<div className={styles}>
       <div className="hero-content">
         {bgImg && <div className="bg-image"><ImageResponsive src={bgImg} alt={bgImgAlt}/></div>}
         <div className="container-xxl">
-          <div className="row g-0">
-            <div className="col-12">
+          <div className="row">
+            <div className="col-12 g-0">
               <div className={breadcrumbsStyle}>
                 <Breadcrumbs pageContext={pageContext} title={name} ></Breadcrumbs>
               </div>
               <div className="hero-main">
                 <div className={rowStyle}>
                   <div className={columnStyle}>
-                    <div className="texts px-3 px-lg-0 ps-lg-1 py-3 pb-lg-5">
+                    <div className={textStyle}>
                       <div className="d-flex align-items-start flex-wrap">
                         <HLevel className="title">{title}</HLevel>
                         {titleTag && <Tag {...titleTag}></Tag>}
@@ -96,13 +105,14 @@ const Hero =({
                           <span className="text-uppercase">{pretext.text}</span>
                         </div>}
                         {text && <ReactMarkdown>{text}</ReactMarkdown>}
-                        {centered && <Dropdown {...share}></Dropdown>}
                       </div>
                     </div>
+                    {centered && <Dropdown {...share}></Dropdown>}
+
                   </div>
                   {!centered &&
                     // <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
-                    <div className="col-12 col-md-12 col-lg-3 offset-lg-1 d-flex flex-column px-0">
+                    <div className={rightColumnStyle}>
                       { img && <div className={imgStyle}>
                         <ImageResponsive src={img} alt={alt} />
                       </div>}
@@ -118,7 +128,7 @@ const Hero =({
       {kangaroo &&
         <div className={kangarooZoneStyle}>
           <div className="container-xxl">
-            <div className={rowStyle}>
+            <div className="row justify-content-lg-center">{/*rowStyle*/}
               <div className={kangarooColumnStyle}>
                 <Kangaroo {...kangaroo}></Kangaroo>
               </div>

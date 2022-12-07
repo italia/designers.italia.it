@@ -1,7 +1,19 @@
 .tab {
+  font-size:1rem;
   .nav-link {
+    -moz-transition: none;
+    -o-transition:none;
+    -webkit-transition: none;
+    transition:none;
+    padding: 16px 24px;
+    color: #0066cc;
     &:not(.active) {
-      //border-bottom: 1px solid hsl(224deg, 43.1818181818%, 91.2%);
+      // border-bottom: 1px solid #dfe4f2!important;
+    }
+    &:is(.active) {
+      border-bottom:none!important;
+      color:#003366;
+      padding: 16px 23px 18px 23px;
     }
   }
   .nav-item {

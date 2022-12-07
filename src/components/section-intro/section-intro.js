@@ -34,16 +34,16 @@ const SectionIntro = ({
   let pad
   if (isHome) {
     cols = "col-12 g-0"
-    pad = "px-4 px-lg-7"
+    pad = "px-3 px-lg-5"
   }else{
     // cols = "col col-md-10 offset-md-1 col-lg-7"
     // pad= "px-3 px-lg-0"
-    cols = "col-12 col-lg-9 g-0"
-    pad = "px-4 px-lg-7"
+    cols = "col-12 col-lg-8 g-0"
+    pad = "px-3 px-lg-5"
   }
   if (isFull) {
     cols = "col-12 g-0"
-    pad = "px-4 px-lg-7"
+    pad = "px-3 px-lg-5"
     // cols= "col col-md-10 offset-md-1"
     // pad= "px-3 px-lg-0"
   }

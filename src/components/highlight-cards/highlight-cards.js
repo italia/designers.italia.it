@@ -77,9 +77,9 @@ const HighlightCards = ({
       <div className="container-xxl">
         {
           title && <div className={"row mb-4 mb-md-5 intro"}>
-            <div className="col-12">
+            <div className="col-12 g-0">
             {/* <div className='col col-md-10 offset-md-1'> */}
-                <div className="px-3 /*px-lg-0*/ px-lg-6">
+                <div className="px-3 px-lg-5">
                   {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
                   <p className="lead">{text}</p> {/*<ReactMarkdown>{text}</ReactMarkdown>*/}
                 </div>
