@@ -31,7 +31,7 @@ const Tab = ({
       <div className="tab-content" id="card-simpleContent">
         <div className="tab-pane py-5 fade show active" id="card-simpletab1" role="tabpanel" aria-labelledby="card-simple1-tab">
 
-          {tab01.variants && <ContentSelect {...tab01.componentVariant}>
+          {tab01.variants && <ContentSelect label="Variante" {...tab01.componentVariant}>
               { tab01.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
                   <ComponentView
                     content={v.content}
@@ -53,7 +53,7 @@ const Tab = ({
         <div className="tab-pane py-5 fade" id="card-simpletab2" role="tabpanel" aria-labelledby="card-simple2-tab">
 
           {tab02.variants && <ContentSelect {...tab02.componentVariant}>
-              { tab02.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
+              { tab02.variants.map((v, idx) => <ContentSelectItem label="Variante" key={'item-' + idx} name={v.name}>
               <ComponentView
                   content={v.content}
                   viewer={tab02.componentVariant.viewer}
@@ -73,7 +73,7 @@ const Tab = ({
         </div>
         <div className="tab-pane py-5 fade" id="card-simpletab3" role="tabpanel" aria-labelledby="card-simple3-tab">
 
-          {tab03.variants && <ContentSelect {...tab03.componentVariant}>
+          {tab03.variants && <ContentSelect label="Variante" {...tab03.componentVariant}>
               { tab03.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
                 <ComponentView
                   content={v.content}
