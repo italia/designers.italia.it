@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from 'uuid'
 
 //import DOMPurify from 'isomorphic-dompurify'
 import sanitizeHtml from 'sanitize-html'
-import { lucario } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Button from "../button/button"
 import Icon from "../icon/icon"
 import loadable from "@loadable/component"
@@ -17,8 +17,11 @@ const ComponentView = ({
   viewer,
   accordionLabel,
   accordionUrl,
-  accordionSrLabel
+  accordionSrLabel,
+  accordionSrCopyLabel
 }) => {
+
+  const theme = a11yDark;
 
   const createMarkup = (html) => {
     return { __html: sanitizeHtml(html, {
@@ -45,7 +48,7 @@ const ComponentView = ({
   }
 
   const ICON_COPY_CODE = {
-    icon: "sprites.svg#it-file",
+    icon: "sprites.svg#it-copy",
     size: "sm",
     color: "primary",
     addonClasses: "align-middle me-3",
@@ -86,31 +89,35 @@ const ComponentView = ({
       </div>
       <div className="accordion accordion-left-icon" id={accId}>
         <div className="accordion-item">
-          <h3 className="accordion-header d-flex justify-content-between align-items-center" id={headId}>
-            <button className="accordion-button border-top-0" type="button" data-bs-toggle="collapse" data-bs-target={'#' + collId } aria-expanded="true" aria-controls={collId}>
-              {accordionLabel}
-            </button>
-			      {content &&
-              <a href="" onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrLabel}>
-                <Icon {...ICON_COPY_CODE}/>
-              </a>
-            }
-			      {accordionUrl &&
-              <a href={accordionUrl} target="_blank" aria-label={accordionSrLabel}>
-                <Icon {...ICON_EXTERNAL}/>
-              </a>
-            }
-          </h3>
+          <div className="d-flex justify-content-between align-items-center" id={headId}>
+            <h3 id="codeViewer" className ="accordion-header ">
+              <button className="accordion-button border-top-0" type="button" data-bs-toggle="collapse" data-bs-target={'#' + collId } aria-expanded="true" aria-controls={collId}>
+                {accordionLabel}
+              </button>
+            </h3>
+            <div>
+              {content &&
+                <a href="" onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel}>
+                  <Icon {...ICON_COPY_CODE}/>
+                </a>
+              }
+              {accordionUrl &&
+                <a href={accordionUrl} target="_blank" aria-label={accordionSrLabel}>
+                  <Icon {...ICON_EXTERNAL}/>
+                </a>
+              }
+            </div>
+            </div>
 
-          <div id={collId} className="accordion-collapse collapse show" data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
+          <div id={collId} className="accordion-collapse collapse hide" data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
             <div className="accordion-body p-0">
-              <SyntaxHighlighter language="markup" style={lucario} showLineNumbers={true}>
+              <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true}>
                 {content}
               </SyntaxHighlighter>
             </div>
           </div>
           <div class="notification with-icon success bottom-fix dismissable fade" role="alert" aria-labelledby="not1d-title" id="copyToast">
-              <h2 id="not1d-title" class="h5 "><Icon {...ICON_SUCCESS}/>Codice copiato negli appunti</h2>
+              <h2 id="not1d-title" class="h5 "><Icon {...ICON_SUCCESS}/>Codice Bootstrap Italia del componente copiato negli appunti</h2>
           </div>
         </div>
       </div>
