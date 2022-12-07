@@ -46,14 +46,14 @@ const ComponentView = ({
     icon: "sprites.svg#it-external-link",
     size: "sm",
     color: "primary",
-    addonClasses: "align-middle me-3",
+    addonClasses: "align-middle me-3 mb-1",
   }
 
   const ICON_COPY_CODE = {
     icon: "sprites.svg#it-copy",
     size: "sm",
     color: "primary",
-    addonClasses: "align-middle me-3",
+    addonClasses: "align-middle me-3 mb-1",
   }
 
   const ICON_SUCCESS = {
