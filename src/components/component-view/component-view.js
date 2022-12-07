@@ -1,10 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import { v4 as uuidv4 } from 'uuid'
 
 //import DOMPurify from 'isomorphic-dompurify'
 import sanitizeHtml from 'sanitize-html'
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Button from "../button/button"
+import Checkbox from "../checkbox/checkbox"
 import Icon from "../icon/icon"
 import loadable from "@loadable/component"
 
@@ -65,6 +66,7 @@ const ComponentView = ({
   const headId = uuid + '-heading'
   const collId = uuid + '-collapse'
   let responsiveButtonsItems
+  const [wrappedCode, setWrappedCode] = useState(false)
 
   content = content.replace(/^\s+|\s+$/g, '')
 
