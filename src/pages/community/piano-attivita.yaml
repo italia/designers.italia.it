@@ -26,7 +26,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Piano attività - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  description : Una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri. #C
   image : null #I
   twitterImage: null #I
   canonical: null
@@ -104,15 +104,15 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Community
           active: false
-          url: /level1/
-        - label : Level2
+          url: /community/
+        - label : Piano attività
           active: true
     title: Piano attività #C
-    subtitle: Subtitle #C
+    subtitle: Gli obiettivi e i risultati del progetto Designers Italia #C
     tag:
-        label: tag  #C
+        label: Community #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -120,7 +120,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Lorem **ipsum**
+      Scopri la roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi mesi e anni, con uno sguardo rivolto ad azioni e obiettivi futuri.
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -148,15 +148,15 @@ components:
         size: sm
         color: primary
       chips: #C
-        - label: Argomento
+        - label: Cultura progettuale
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Pianificazione
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Design System
           url: "#"
           color: primary
           size: lg
@@ -201,12 +201,12 @@ components:
       menu: false
       centered: true
       text: | #C
-        Sottotitolo o **lead tex**
+        Le attività più importanti, gli obiettivi e i traguardi realizzati
       components:
 
        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: 2023 #C
+          title: 2022 Q4 #C
           headingLevel: 3
           noSpace: false
 
@@ -216,13 +216,43 @@ components:
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
           specular: false
+          title: "Rilascio design system del Paese, versione alpha" #C
+          text: | #C
+            Rilascio versione alpha della nuova documentazione del design system del Paese.
+ 
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: true
+          title: "Pubblicazione compendio sulle linee guida di design" #C
+          text: | #C
+            Pubblicazione nuove schede informative che raccordano linee guida, manuale operativo e strumenti.
+ 
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: true
+          title: "Rilascio del quadro sinottico servizi al cittadino" #C
+          text: | #C
+            Pubblicazione su Medium di articoli di descrizione e approfondimento del quadro sinottico.
+   
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: false
           title: "Design system: rilascio UI kit 3.0.0-beta" #C
           text: | #C
             Versione beta del kit di progettazione interfaccia, usabile in produzione e coerente con Bootstrap Italia.
           ctas:
-          - label: Vai al kit UI nella community Figma #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+          - label: Vai alla pagina del UI kit nella community Figma #C
+            url: "https://www.figma.com/community/file/1105848677422572920" #M
+            blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -230,40 +260,128 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: true
+          title: "Design system: definizione supporto evolutivo Design React Kit" #C
+          text: | #C
+            Definizione supporto all'evoluzione della libreria community-driven che implementa il design system in React.
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Benvenuto, Kit Privacy" #C
+          text: | #C
+            Pubblicazione nuovo kit dedicato a tematiche di privacy e trattamento dei dati personali
+          ctas:
+          - label: Vai al kit privacy #C
+            url: "/risorse-per-progettare/organizzare/privacy/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Modelli: rilascio App di valutazione" #C
+          text: | #C
+            Pubblicazione su Github di nuovi strumenti a supporto della corretta adesione ai modelli per i siti istituzionali dei Comuni e delle scuole.  
+            
+            Applicativi desktop che aiutano a valutare la qualità, le caratteristiche e la corrispondenza ad alcuni dei criteri di conformità della misura 1.4.1 Esperienza del cittadino nei servizi pubblici digitali. 
+            
+            Sono di supporto agli sviluppatori dei siti istituzionali per verificare la corretta implementazione del modello Comuni e del modello Scuole, sia durante che dopo lo sviluppo, e così informare eventuali modifiche o piani di miglioramento.
+          ctas:
+          - label: Vai alla App di valutazione modelli #C
+            url: "https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/it/versione-attuale/index.html" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
+         
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          title: 2022 Q3 #C
+          headingLevel: 3
+          noSpace: false
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Avvio riprogettazione sito designers.italia.it" #C
+          text: | #C
+            Avvio attività per una nuova versione che tenga conto dei suggerimenti della community, degli aggiornamenti al design system e del tema accessibilità. Le fasi di progettazione e realizzazione saranno incorso fino a tutto Q4. Puoi seguire i lavori di sviluppo sul ramo *next* della repository GitHub del sito.
  
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
           specular: true
-          title: "Benvenuto, Kit Privacy" #C
+          title: "Progettazione quadro sinottico servizi al cittadino" #C
           text: | #C
-            Pubblicazione nuovo kit dedicato a x e y
-          ctas:
-          - label: Vai al kit privacy #C
-            url: "/risorse-per-progettare/organizzare/privacy/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            Progettazione di un quadro sinottico che crei un linguaggio comune tra chi progetta, chi sviluppa soluzioni di servizi digitali al cittadino e le amministrazioni che le devono gestire. Definizione dei diversi ambiti in cui viene usata la parola servizio. Definizione dei diversi livelli di granularità di un servizio e come vengono chiamati dal cittadino, dalla Pubblica Amministrazione e dagli ambienti tecnici. 
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          title: 2022 Q2 #C
+          headingLevel: 3
+          noSpace: false
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: "Benvenuto, Kit Privacy" #C
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio UI kit 3.0.0-alpha.3" #C
           text: | #C
-            Pubblicazione nuovo kit dedicato a x e y
+            Versione completamente rinnovata del kit di progettazione interfaccia caratterizzata da nuova tecnologia e implementazione design token.
           ctas:
-          - label: Vai al kit privacy #C
-            url: "/risorse-per-progettare/organizzare/privacy/" #M
+          - label: Vai alla pagina del UI kit nella community Figma #C
+            url: "https://www.figma.com/community/file/1105848677422572920" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Evoluzione modello Comuni" #C
+          text: | #C
+            Rilascio di una nuova versione del modello Comuni in ottica PNRR investimento 1.4.1. Identificazione, progettazione e realizzazione template dei principali modelli di servizio digitali al cittadino (richiedere un sussidio, richiedere un servizio a pagamento, effettuare una iscrizione a un servizio, pagare un dovuto) e allineamento del modello al design system aggiornato. Realizzazione e rilasci temi CMS del modello Comuni.
+          ctas:
+          - label: Vai al modello Comuni #C
+            url: "/modelli/comuni/" #M
             blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -272,5 +390,159 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+                
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio Bootstrap italia 2.0" #C
+          text: | #C
+            Versione completamente rinnovata del kit di sviluppo interfaccia basata sul framework Bootstrap 5.
+          ctas:
+          - label: Vai alla documentazione di Bootstrap Italia #C
+            url: "https://italia.github.io/bootstrap-italia/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Aggiornamento modello scuole" #C
+          text: | #C
+            Rilascio di una nuova versione del modello scuole in ottica PNRR investimento 1.4.1. Allineamento del modello al design system aggiornato, in particolare: allineamento template statici HTML e tema Wordpress a disposizione delle scuole italiane; aggiornamento della ricerca quantitativa e qualitativa a cura del Ministero dell'Istruzione.
+          ctas:
+          - label: Vai al modello Scuole #C
+            url: "modelli/scuole" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2      
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio Bootstrap italia 1.6 legacy" #C
+          text: | #C
+            Verifica e risoluzione di problematiche di accessibilità. Ultimo rilascio basato sul framework di sviluppo web Bootstrap 4.
+          ctas:
+          - label: Vai alla documentazione di Bootstrap Italia #C
+            url: "https://italia.github.io/bootstrap-italia/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Linee guida e manuale operativo di design" #C
+          text: | #C
+            Pubblicazione delle nuove Linee guida di design per i siti internet e i servizi digitali della Pubblica Amministrazione.
+          ctas:
+          - label: Vai a norme e riferimenti #C
+            url: "/norme-e-riferimenti/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2      
+              
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          title: 2022 Q1 #C
+          headingLevel: 3
+          noSpace: false
 
-    
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system: rilascio Bootstrap Italia 1.5" #C
+          text: | #C
+            Risoluzione dei problemi di accessibilità noti, integrazione dei contributi e rilancio della community di sviluppo.
+          ctas:
+          - label: Vai alla documentazione di Bootstrap Italia #C
+            url: "https://italia.github.io/bootstrap-italia/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Modello scuole e modello Comuni" #C
+          text: | #C
+            Avvio delle attività di individuazione e modellizzazione dei principali flussi di servizi digitali al cittadino.
+                
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Design system" #C
+          text: | #C
+            Avvio delle attività operative di aggiornamento: assessment di accessibilità e coerenza delle librerie, e stesura piano di ricerca.
+            Analisi e pianificazione delle evolutive delle librerie tecnologiche (Bootstrap Italia, Design React Kit) e visuali (UI kit e Wireframe Kit) in parallelo. 
+            
+            Predisposizione piano di ricerca per comprendere bisogni degli stakeholder del design system del Paese e coinvolgerli in un processo di validazione continua delle lavorazioni in corso.
+              
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          headingLevel: 4
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Atlante della Trasformazione Digitale della PA" #C
+          text: | #C
+            Realizzazione di una ricerca su archetipi e pattern ricorrenti in 5 ambiti della vita civica. Attività di formazione nell’ambito di un master in comunicazione visiva: co-progettazione e pubblicazione di un atlante illustrato dedicato ai processi di trasformazione digitale della pubblica amministrazione.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "https://designers.italia.it/notizie/Altante-trasformazione-digitale-PA/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+  
