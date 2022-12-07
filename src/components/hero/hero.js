@@ -63,7 +63,7 @@ const Hero =({
   + `${noBorder ? ' no-border' : ''}`
 
   let kangarooColumnStyle = 'col-12 g-0' //col-12 col-md-10 offset-md-1'
-  + `${centered ? ' col-lg-7 offset-lg-0' : ''}`
+  + `${centered ? ' col-lg-7 offset-lg-0 ' : ''}`
 
   let rightColumnStyle = "  col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4"
 
@@ -124,7 +124,7 @@ const Hero =({
       {kangaroo &&
         <div className={kangarooZoneStyle}>
           <div className="container-xxl">
-            <div className="row">{/*rowStyle*/}
+            <div className="row justify-content-lg-center">{/*rowStyle*/}
               <div className={kangarooColumnStyle}>
                 <Kangaroo {...kangaroo}></Kangaroo>
               </div>
