@@ -61,8 +61,13 @@ const Feedback = ({
   }
 
   const openModal = () => {
-    let modalElement = parseInt(choiceVal) === 1 ? modalYes.current : modalNo.current
-    new Modal(modalElement).show()
+    // XXX temporarily disables yes modal 
+    // let modalElement = parseInt(choiceVal) === 1 ? modalYes.current : modalNo.current
+    // new Modal(modalElement).show()
+    let which = parseInt(choiceVal)
+    if (which === 0) {
+      new Modal(modalNo.current).show()
+    }
   }
 
   useEffect(() => {
@@ -91,7 +96,7 @@ const Feedback = ({
               <div>
                 <div className="card-body p-4 p-md-5 ">
                   <div className="step" id="feedbackIntro">
-                    <h2 className="mb-0" id="feedbackSectionTitle">
+                    <h2 className="mb-0 h4" id="feedbackSectionTitle">
                       {!isSubmit && <span className="feedback-title">Ciao, questa pagina è stata utile?</span>}
                       {isSubmit && <span className="feedback-confirm d-flex align-items-center"><Icon {...ICON_CONFIRM} /> Feedback inviato. Grazie.</span>}
                     </h2>
