@@ -128,6 +128,8 @@ components:
           color: primary
           size: lg
 
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
   sectionsEditorial :
     - fullColumn: true
       noSpace: true
@@ -140,10 +142,12 @@ components:
       title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
       background: null
       components:
+        
         - name: TextImageCta
           title: Lorem ipsum
           text: |
             Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
+        
         - name: TextImageCta
           title: Lorem ipsum
           text: |
@@ -166,20 +170,22 @@ components:
             url: "#"
             blank: true
 
+
+  # /////////// COMPONENT LIST FROM HERE ////////////
   filterCards:
     id: fundamentCards
     title: Esplora i fondamenti
-    idInput: fundamentCardsInput
+    # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
     col2: true
-    button:
-      type: button
-      btnStyle: outline-secondary justify-content-center w-100
-      label: Filtra
-      iconRight: true
-      icon:
-        icon: sprites.svg#it-funnel
-        color: secondary
-        addonClasses: ms-1 flex-shrink-0
+    # button:
+    #   type: button
+    #   btnStyle: outline-secondary justify-content-center w-100
+    #   label: Filtra
+    #   iconRight: true
+    #   icon:
+    #     icon: sprites.svg#it-funnel
+    #     color: secondary
+    #     addonClasses: ms-1 flex-shrink-0
     cards:
       - title: Fondamento
         img: /images/600x400.png
@@ -313,35 +319,3 @@ components:
               color: secondary
           list:
             isShare: true
-
-  sectionsEditorial2 :
-    - full: true
-      noSpace: true
-      title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-      components:
-        - name: TextImageCta
-          title: Lorem ipsum
-          text: |
-            Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
-        - name: TextImageCta
-          title: Lorem ipsum
-          text: |
-            Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
-          ctas:
-          - icon:
-              icon: sprites.svg#it-external-link
-              color: primary
-              align: middle
-              hidden: true
-            label: Lorem ipsum
-            url: "#"
-            blank: true
-          - icon:
-              icon: sprites.svg#it-external-link
-              color: primary
-              align: middle
-              hidden: true
-            label: Lorem ipsum
-            url: "#"
-            blank: true
-

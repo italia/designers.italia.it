@@ -128,6 +128,8 @@ components:
           color: primary
           size: lg
 
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
   sectionsEditorial :
     - fullColumn: true
       noSpace: true
@@ -165,22 +167,24 @@ components:
             url: "#"
             blank: true
 
+
+  # /////////// COMPONENT LIST FROM HERE ////////////
   filterCards:
     id: componentCards
     title: Esplora i componenti
-    idInput: componentCardsInput
+    # idInput: componentCardsInput
     col2: false
-    button:
-      type: button
-      btnStyle: outline-secondary justify-content-center w-100
-      label: Filtra
-      iconRight: true
-      icon:
-        icon: sprites.svg#it-funnel
-        color: secondary
-        addonClasses: ms-1 flex-shrink-0
+    # button:
+    #   type: button
+    #   btnStyle: outline-secondary justify-content-center w-100
+    #   label: Filtra
+    #   iconRight: true
+    #   icon:
+    #     icon: sprites.svg#it-funnel
+    #     color: secondary
+    #     addonClasses: ms-1 flex-shrink-0
     cards:
-      - title: Lorem ipsum
+      - title: Componente
         img: /images/600x400.png
         alt: Descrizione immagine
         imgRatio: 16x9
