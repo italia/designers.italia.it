@@ -8,6 +8,8 @@ import Button from "../button/button"
 import Icon from "../icon/icon"
 import loadable from "@loadable/component"
 
+import "./component-view.scss"
+
 import { Notification } from 'bootstrap-italia'
 
 const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'))
@@ -33,9 +35,9 @@ const ComponentView = ({
   const copyToClipboard = (e, code) => {
     e.preventDefault()
     navigator.clipboard.writeText(code)
-    console.log("Codice copiato negli appunti!")
+    // console.log("Codice copiato negli appunti!")
     const notification = new Notification(document.getElementById("copyToast"), {
-      timeout: 2000
+      timeout: 3000
     })
     notification.show()
   }
@@ -95,7 +97,7 @@ const ComponentView = ({
                 {accordionLabel}
               </button>
             </h3>
-            <div>
+            <div className="d-flex justify-content-between align-items-center">
               {content &&
                 <a href="" onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel}>
                   <Icon {...ICON_COPY_CODE}/>
@@ -116,8 +118,8 @@ const ComponentView = ({
               </SyntaxHighlighter>
             </div>
           </div>
-          <div class="notification with-icon success bottom-fix dismissable fade" role="alert" aria-labelledby="not1d-title" id="copyToast">
-              <h2 id="not1d-title" class="h5 "><Icon {...ICON_SUCCESS}/>Codice Bootstrap Italia del componente copiato negli appunti</h2>
+          <div class="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby="not1d-title" id="copyToast">
+              <h2 id="not1d-title" class="h5 "><Icon {...ICON_SUCCESS}/>Codice copiato negli appunti</h2>
           </div>
         </div>
       </div>
