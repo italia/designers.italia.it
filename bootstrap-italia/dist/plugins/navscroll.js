@@ -163,10 +163,10 @@ class NavScroll extends BaseComponent {
         },*/
       });
 
-      if (history.pushState) {
-        history.pushState(null, null, hash);
+      if (window.history.pushState) {
+        window.history.pushState(null, null, hash);
       } else {
-        location.hash = hash;
+        window.location.hash = hash;
       }
     }
   }
