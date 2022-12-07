@@ -94,27 +94,27 @@ const Feedback = ({
           <div className="col-12 col-sm-10 col-md-8 col-lg-6">
             <div className="card shadow card-wrapper rounded">
               <div>
-                <div className="card-body p-4 p-md-5 ">
+                <div className="card-body p-4 p-md-5">
                   <div className="step" id="feedbackIntro">
-                    <h2 className="mb-0 h4" id="feedbackSectionTitle">
+                    <h2 className="mb-0 h5 fw-semibold" id="feedbackSectionTitle">
                       {!isSubmit && <span className="feedback-title">Ciao, questa pagina è stata utile?</span>}
                       {isSubmit && <span className="feedback-confirm d-flex align-items-center"><Icon {...ICON_CONFIRM} /> Feedback inviato. Grazie.</span>}
                     </h2>
-                    {!isSubmit && <form className="mt-3 mt-md-4">
+                    {!isSubmit && <form className="mt-3 mt-md-3">
                       <fieldset className="d-flex">
-                        <div className="form-check me-5">
+                        <div className="form-check me-4">
                           <input name="feedbackValue" type="radio" id="feedbackValueYes" value="1" onChange={onChange} />
-                          <label htmlFor="feedbackValueYes">Si</label>
+                          <label className="mb-0" htmlFor="feedbackValueYes">Si</label>
                         </div>
                         <div className="form-check">
                           <input name="feedbackValue" type="radio" id="feedbackValueNo" value="0" onChange={onChange} />
-                          <label htmlFor="feedbackValueNo">No</label>
+                          <label className="mb-0" htmlFor="feedbackValueNo">No</label>
                         </div>
                       </fieldset>
 
                       <div ref={sliderWrapperRef} className="slidedown" style={{height: slideHeight + 'px'}}>
                         <div ref={sliderRef}>
-                          { isChecked && <button type="button" className="btn btn-primary mt-3" onClick={() => { openModal(); submit(); }}>{BTN_INTRO.label}</button> }
+                          { isChecked && <button type="button" className="btn btn-primary mt-4" onClick={() => { openModal(); submit(); }}>{BTN_INTRO.label}</button> }
                         </div>
                       </div>
                     </form>}
