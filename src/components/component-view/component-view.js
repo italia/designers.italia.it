@@ -71,7 +71,7 @@ const ComponentView = ({
   if (viewer) {
     responsiveButtonsItems = (viewer.responsiveButtons).map((item,index) => {
       return(
-        <Button key={"rb"-+index} {...item}/>
+        <Button key={"rb"+index} {...item}/>
       )
     })
   }
@@ -118,8 +118,8 @@ const ComponentView = ({
               </SyntaxHighlighter>
             </div>
           </div>
-          <div class="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby="not1d-title" id="copyToast">
-              <h2 id="not1d-title" class="h5 "><Icon {...ICON_SUCCESS}/>Codice copiato negli appunti</h2>
+          <div className="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby="not1d-title" id="copyToast">
+              <h2 id="not1d-title" className="h5 "><Icon {...ICON_SUCCESS}/>Codice copiato negli appunti</h2>
           </div>
         </div>
       </div>
