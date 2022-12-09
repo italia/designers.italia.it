@@ -25,18 +25,20 @@ const Highlight = ({
     textSanSerif,
     fullImg,
     children,
-    reversedMobile
+    reversedMobile,
+	padBottom
 	}
 ) => {
 	let styles = 'highlight'
 	+ `${background ? ' bg-'+background : ''}`
 	+ `${big ? ' highlight-big' : ''}`
+	+ `${padBottom ? ' mb-5' : ''}`
 
 	let classes = 'highlight-content d-lg-flex'
 	+ `${specular ? ' flex-lg-row-reverse' : ''}`
   + `${reversedMobile ? ' d-flex flex-column-reverse' : ''}`
   + `${img ? '' : ' no-image'}`
-
+  
 	//heading level
 	let HLevel
 	if (headingLevel) {
