@@ -30,7 +30,7 @@ const SearchMain =({
                 <form id={formId}  aria-disabled="true" action={formAction} method="post">
                     <div className="d-flex flex-column align-items-center flex-md-row w-100">
                       <div className="form-group mb-0 flex-grow-1 me-md-4 w-100">
-                        <label className="active /*search-disabled*/" for={inputId}>{label}</label>
+                        <label className="active /*search-disabled*/" htmlFor={inputId}>{label}</label>
                         <input type="search" aria-disabled="true" className="form-control-plaintext border-search-disabled search-disabled" name={inputName} id={inputId} value="Voglio progettare con Qualità" disabled/>
                       </div>
                       <div className="button-wrapper mt-4 mt-md-0">
