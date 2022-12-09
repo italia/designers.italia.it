@@ -18,14 +18,14 @@ const Tag = ({
   if (url) {
     return(
       <Link to={url} className={styles}>
-        <span className="visually-hidden">{screenReaderText}</span>
+        {screenReaderText && <span className="visually-hidden">{screenReaderText}</span>}
         {children}
       </Link>
     )
   } else {
     return(
       <span className={styles}>
-        <span className="visually-hidden">{screenReaderText}</span>
+         {screenReaderText && <span className="visually-hidden">{screenReaderText}</span>}
         {children}
       </span>
     )
