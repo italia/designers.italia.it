@@ -1,5 +1,5 @@
 import * as React from "react"
-import ReactMarkdown from "react-markdown"
+// import ReactMarkdown from "react-markdown"
 import Button from "../button/button"
 import './search-main.scss'
 const SearchMain =({
@@ -27,7 +27,7 @@ const SearchMain =({
                 <p className="lead">{text}</p>
                </div>
               <div className="search-form px-4 pb-4 mb-5 shadow-lg">
-                <form id={formId}  aria-disabled="true" action={formAction} method="post">
+                <form id={formId}  action={formAction} method="post">
                     <div className="d-flex flex-column align-items-center flex-md-row w-100">
                       <div className="form-group mb-0 flex-grow-1 me-md-4 w-100">
                         <label className="active /*search-disabled*/" htmlFor={inputId}>{label}</label>
