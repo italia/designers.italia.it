@@ -32,7 +32,7 @@ const HeaderPost = ({data}) => {
 										<ul className="list-inline py-4 px-4 px-lg-5 mb-0 d-flex align-items-center flex-nowrap overflow-x-list">
 											{data.nav.items.map((value,index)=>{
 												if (index + 1 === data.nav.items.length) { // last on the left side has "me-auto"
-													styles="list-item text-nowrap me-5 me-sm-auto"
+													styles="list-item text-nowrap me-5 me-md-auto"
 												} else {
 													styles="list-item text-nowrap me-5"
 												}
