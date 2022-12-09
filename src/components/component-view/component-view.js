@@ -49,6 +49,7 @@ const ComponentView = ({
     size: "sm",
     color: "primary",
     addonClasses: "align-middle me-3 mb-1",
+    ariaLabel: " (Link esterno)"
   }
 
   const ICON_COPY_CODE = {
@@ -56,6 +57,7 @@ const ComponentView = ({
     size: "sm",
     color: "primary",
     addonClasses: "align-middle me-3 mb-1",
+    ariaLabel: " Copia il codice negli appunti"
   }
 
   const ICON_SUCCESS = {
