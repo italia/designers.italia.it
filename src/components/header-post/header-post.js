@@ -2,6 +2,7 @@ import React from "react"
 import ReactMarkdown from "react-markdown"
 import Icon from "../icon/icon"
 import Link from "../link/link"
+import "./header-post.scss"
 
 let styles
 
@@ -24,16 +25,16 @@ const HeaderPost = ({data}) => {
 			<div id={data.nav.id}>
 				<nav className="" aria-label={data.nav.ariaLabel}>
 					<div className="it-header-slim-wrapper p-0 h-100">
-						<div className="header-pre bg-white py-3 border-bottom border-100 shadow-sm">
+						<div className="header-pre bg-white border-bottom border-100 shadow-sm">
 							<div className="container-xxl">
-								<div className="row px-4 px-lg-5 pt-2 pt-md-0">
+								<div className="row ">
 									<div className="col-12 g-0">
-										<ul className="list-inline mb-0 d-flex flex-column flex-md-row align-items-center">
+										<ul className="list-inline py-4 px-4 px-lg-5 mb-0 d-flex align-items-center flex-nowrap overflow-x-list">
 											{data.nav.items.map((value,index)=>{
 												if (index + 1 === data.nav.items.length) { // last on the left side has "me-auto"
-													styles="list-item me-md-auto mb-3 mb-md-0"
+													styles="list-item text-nowrap me-5 me-sm-auto"
 												} else {
-													styles="list-item me-md-5 mb-3 mb-md-0"
+													styles="list-item text-nowrap me-5"
 												}
 												return(
 												<li key={"banner-item-"+index} className={styles} >
@@ -47,7 +48,7 @@ const HeaderPost = ({data}) => {
 												</li>
 												)
 											})}
-											<li key={"banner-item-"+data.nav.items.length+1} className="list-item mt-3 mt-md-0">
+											<li key={"banner-item-"+data.nav.items.length+1} className="list-item text-nowrap ms-5 me-md-0">
 												<Link
 												className="simple-cta fw-semibold"
 												to={data.nav.newsletter.url}
