@@ -2,7 +2,7 @@ import React from "react"
 import Card from "../card/card"
 import Button from "../button/button"
 import Topics from "../topics/topics"
-import ReactMarkdown from "react-markdown"
+// import ReactMarkdown from "react-markdown"
 import "./highlight-cards.scss"
 
 const HighlightCards = ({
