@@ -14,6 +14,7 @@ const Hero =({
   name,
   centered,
   column,
+  specialKangarooComponent,
 	// breadcrumbs,
   reversedMobile,
 	share,
@@ -64,6 +65,7 @@ const Hero =({
 
   let kangarooZoneStyle = 'kangaroo-zone'
   + `${noBorder ? ' no-border' : ''}`
+  + `${specialKangarooComponent ? ' pb-4 pb-md-5 pb-lg-0' : ''}`
 
   let kangarooColumnStyle = 'col-12 g-0' //col-12 col-md-10 offset-md-1'
   + `${centered ? ' col-lg-7 offset-lg-0 ' : ''}`
@@ -99,16 +101,30 @@ const Hero =({
                       </div>
                       <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
                       {tag && <Tag {...tag}></Tag>}
+                      {pretext && 
                       <div className="bottom-text">
-                        {pretext && <div className="pre-text">
+                        <div className="pre-text">
                           {pretext.icon && <Icon {...pretext.icon} addonClasses="me-2"></Icon>}
                           <span className="text-uppercase">{pretext.text}</span>
-                        </div>}
+                        </div>
                         {text && <ReactMarkdown>{text}</ReactMarkdown>}
                       </div>
+                      }
                     </div>
                     {centered && <Dropdown {...share}></Dropdown>}
-
+                    {kangaroo && specialKangarooComponent &&
+                      <div className="">
+                        <div className={kangarooZoneStyle}>
+                          <div className="container-xxl">
+                            <div className="row justify-content-lg-center">{/*rowStyle*/}
+                              <div className={kangarooColumnStyle}>
+                                <Kangaroo {...kangaroo}></Kangaroo>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    }
                   </div>
                   {!centered &&
                     // <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
@@ -125,7 +141,7 @@ const Hero =({
           </div>
         </div>
       </div>
-      {kangaroo &&
+      {kangaroo && !specialKangarooComponent &&
         <div className={kangarooZoneStyle}>
           <div className="container-xxl">
             <div className="row justify-content-lg-center">{/*rowStyle*/}
