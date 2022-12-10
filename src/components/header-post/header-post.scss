@@ -9,9 +9,6 @@
     overflow-x: scroll;
     overflow-y: hidden;
   }
-  .nav-tabs-hidescroll {
-    height:4.33rem;
-  }
 }
 
 //Small tablet ------------------------------------------------------------------------------------------
@@ -20,19 +17,22 @@
     overflow-x: scroll;
     overflow-y: hidden;
   }
-  .nav-tabs-hidescroll {
-    height:4rem;
-  }
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-
+  .overflow-x-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-
+  .overflow-x-list {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
