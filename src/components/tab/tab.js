@@ -15,19 +15,21 @@ const Tab = ({
 }) => {
   return (
     <div className="tab pt-5 pt-lg-6">
-      <ul className="nav nav-tabs nav-tabs-cards" id="card-simple" role="tablist">
-        <li className="nav-item-filler flex-grow-0 px-3 p-md-0"></li>
-        <li className="nav-item">
-          <a className="nav-link active" id="card-simple1-tab" data-bs-toggle="tab" href="#card-simpletab1" role="tab" aria-controls="card-simpletab1" aria-selected="true">{tab01.title}</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" id="card-simple2-tab" data-bs-toggle="tab" href="#card-simpletab2" role="tab" aria-controls="card-simpletab2" aria-selected="false">{tab02.title}</a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" id="card-simple3-tab" data-bs-toggle="tab" href="#card-simpletab3" role="tab" aria-controls="card-simpletab3" aria-selected="false">{tab03.title}</a>
-        </li>
-        <li className="nav-item-filler px-3 p-md-0"></li>
-      </ul>
+      <div className="nav-tabs-hidescroll">
+        <ul className="nav nav-tabs nav-tabs-cards auto" id="card-simple" role="tablist">
+          <li className="nav-item-filler flex-grow-0 px-3 p-md-0"></li>
+          <li className="nav-item">
+            <a className="nav-link active" id="card-simple1-tab" data-bs-toggle="tab" href="#card-simpletab1" role="tab" aria-controls="card-simpletab1" aria-selected="true">{tab01.title}</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" id="card-simple2-tab" data-bs-toggle="tab" href="#card-simpletab2" role="tab" aria-controls="card-simpletab2" aria-selected="false">{tab02.title}</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" id="card-simple3-tab" data-bs-toggle="tab" href="#card-simpletab3" role="tab" aria-controls="card-simpletab3" aria-selected="false">{tab03.title}</a>
+          </li>
+          <li className="nav-item-filler px-3 p-md-0"></li>
+        </ul>
+      </div>
       <div className="tab-content" id="card-simpleContent">
         <div className="tab-pane py-5 fade show active" id="card-simpletab1" role="tabpanel" aria-labelledby="card-simple1-tab">
 

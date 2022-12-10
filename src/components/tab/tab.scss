@@ -8,9 +8,10 @@
     padding: 16px 24px;
     color: #0066cc;
     &:not(.active) {
-      // border-bottom: 1px solid #dfe4f2!important;
+      border-color: #C5C7C9!important;
     }
     &:is(.active) {
+      border-color: #C5C7C9!important;
       border-bottom:none!important;
       color:#003366;
       padding: 16px 23px 18px 23px;
@@ -20,8 +21,13 @@
     padding-bottom: 0.5px;
   }
   .nav-item-filler {
+    border-color: #C5C7C9!important;
+    // border-width:2px!important;
     &.flex-grow-0 {
       width: 24px;
     }
+  }
+  .nav-tabs-hidescroll {
+    height:4rem;
   }
 }
