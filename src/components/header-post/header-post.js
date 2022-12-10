@@ -29,38 +29,40 @@ const HeaderPost = ({data}) => {
 							<div className="container-xxl">
 								<div className="row ">
 									<div className="col-12 g-0">
-										<ul className="list-inline py-4 px-4 px-lg-5 mb-0 d-flex align-items-center flex-nowrap overflow-x-list">
-											{data.nav.items.map((value,index)=>{
-												if (index + 1 === data.nav.items.length) { // last on the left side has "me-auto"
-													styles="list-item text-nowrap me-5 me-md-auto"
-												} else {
-													styles="list-item text-nowrap me-5"
-												}
-												return(
-												<li key={"banner-item-"+index} className={styles} >
+										{/* <div className="nav-tabs-hidescroll"> */}
+											<ul className="list-inline py-4 px-4 px-lg-5 mb-0 d-flex align-items-center flex-nowrap overflow-x-list">
+												{data.nav.items.map((value,index)=>{
+													if (index + 1 === data.nav.items.length) { // last on the left side has "me-auto"
+														styles="list-item text-nowrap me-5 me-md-auto"
+													} else {
+														styles="list-item text-nowrap me-5"
+													}
+													return(
+													<li key={"banner-item-"+index} className={styles} >
+														<Link
+														to={value.url}
+														target={value.blank ? "_blank" : undefined}
+														>
+															<Icon {...value.icon}/>
+															{value.title && <ReactMarkdown components={{ p: "span" }}>{value.title}</ReactMarkdown>}
+														</Link>
+													</li>
+													)
+												})}
+												<li key={"banner-item-"+data.nav.items.length+1} className="list-item text-nowrap ms-5 me-md-0">
 													<Link
-													to={value.url}
-													target={value.blank ? "_blank" : undefined}
+													className="simple-cta fw-semibold"
+													to={data.nav.newsletter.url}
+													target={data.nav.newsletter.blank ? "_blank" : undefined}
 													>
-														<Icon {...value.icon}/>
-														{value.title && <ReactMarkdown components={{ p: "span" }}>{value.title}</ReactMarkdown>}
+														<span className="text-end">
+															{data.nav.newsletter.title}
+														</span>
+														<Icon {...iconNewsletter}/>
 													</Link>
 												</li>
-												)
-											})}
-											<li key={"banner-item-"+data.nav.items.length+1} className="list-item text-nowrap ms-5 me-md-0">
-												<Link
-												className="simple-cta fw-semibold"
-												to={data.nav.newsletter.url}
-												target={data.nav.newsletter.blank ? "_blank" : undefined}
-												>
-													<span className="text-end">
-														{data.nav.newsletter.title}
-													</span>
-													<Icon {...iconNewsletter}/>
-												</Link>
-											</li>
-										</ul>
+											</ul>
+										{/* </div> */}
 									</div>
 								</div>
 							</div>
