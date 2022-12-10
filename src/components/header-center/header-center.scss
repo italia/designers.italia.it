@@ -1,0 +1,43 @@
+@import "../../scss/bootstrap-breakpoints";
+
+.it-header-center-wrapper .it-header-center-content-wrapper .it-brand-wrapper a .icon {
+  max-width:72px;
+  max-height: 72px;
+}
+
+//mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+}
+
+//Small tablet ------------------------------------------------------------------------------------------
+@include media-breakpoint-up(sm) {
+
+}
+
+//Tablet portrait ---------------------------------------------------------------------------------------
+@include media-breakpoint-up(md) {
+
+}
+
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+  .it-header-center-wrapper {
+    height:104px
+  }
+}
+
+//Laptop ------------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xl) {
+}
+
+//Desktop -----------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xxl) {
+}
+
+//Hover states ------------------------------------------------------------------------------------------
+@media (hover: hover) {
+}
+
+//Transitions (A11y reduced motion disabled) ------------------------------------------------------------
+@media screen and (prefers-reduced-motion: no-preference) {
+}
