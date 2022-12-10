@@ -1,6 +1,9 @@
 import React from "react"
 import Link from "../link/link"
 import Icon from "../icon/icon"
+import ImageResponsive from "../image-responsive/image-responsive"
+import "./header-center.scss"
+
 
 const HeaderCenter = ({data}) => {
 
@@ -41,14 +44,15 @@ const HeaderCenter = ({data}) => {
   }
 
   return (
-    <div className="it-header-center-wrapper">
+    <div className="it-header-center-wrapper "> {/* it-small-header */}
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
             <div className="it-header-center-content-wrapper">
               <div className="it-brand-wrapper">
                 <Link to="/">
-                  <Icon icon="sprites.svg#it-designers-italia" hidden/>
+                  {/* <Icon icon="sprites.svg#it-designers-italia" hidden/> */}
+                  <ImageResponsive src={data.logo} alt="" imgClassName="icon"/>
                   <div className="it-brand-text">
                     <div className="it-brand-title">{data.title}</div>
                   </div>
