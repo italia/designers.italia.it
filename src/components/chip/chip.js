@@ -21,7 +21,8 @@ const Chip = (
 		children = label
 	}
 
-    let screenReaderText = "Argomento:" // XXX Hardcoded, to be addressed
+    let screenReaderText = "Argomento:" 
+	// XXX Hardcoded, to be addressed
 
 	return (
 		<Link to={url} className={styles} target={blank ? '_blank' : undefined}>
