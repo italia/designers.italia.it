@@ -116,7 +116,7 @@ components:
     section: true
     id: contenutoEditoriale1
     headingLevel: 2
-    title: Il design è un processo di comunità, aperto e collaborativo
+    title: "Il design è un processo di comunità, aperto e collaborativo"
     background: null
     text: |
       Il design è la disciplina che si occupa di risolvere problemi complessi, in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella Pubblica Amministrazione.
@@ -136,6 +136,7 @@ components:
     title: Scopri le attività della community
 
   highlightCardsLoop:
+
     - id: highlightCardsEventi
       title: Eventi
       headingLevel: 3
@@ -151,7 +152,7 @@ components:
       - title: Designers Italia a Wired Next Festival
         headingLevel: 4
         cardEvent: true
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 4x3
         fullHeight: true
@@ -163,7 +164,7 @@ components:
         tag:
           label: Invito
         share:
-          btnId: shareButtonCard8
+          btnId: shareButtonCardEventi1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -173,10 +174,11 @@ components:
               color: secondary
           list:
             isShare: true
-      - title: Community Lab sui temi dell’upgrade del Kit Design React
+
+      - title: "Community Lab sui temi dell’upgrade del Kit Design React"
         headingLevel: 4
         cardEvent: true
-        img: /images/highlight-big.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 4x3
         imgPlaceholder: false
@@ -188,7 +190,7 @@ components:
         tag:
           label: Community Lab
         share:
-          btnId: shareButtonCard9
+          btnId: shareButtonCardEventi2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -198,10 +200,11 @@ components:
               color: secondary
           list:
             isShare: true
+
       - title: "Eventone #1!()!A :-)"
         headingLevel: 4
         cardEvent: true
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 4x3
         imgPlaceholder: false
@@ -213,7 +216,7 @@ components:
         tag:
           label: Invito
         share:
-          btnId: shareButtonCard10
+          btnId: shareButtonCardEventi3
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -223,7 +226,8 @@ components:
               color: secondary
           list:
             isShare: true
-      - title: Titolo dell’evento senza immagine!
+
+      - title: "Titolo dell’evento senza immagine!"
         headingLevel: 4
         cardEvent: true
         imgRatio: 4x3
@@ -238,7 +242,7 @@ components:
         tag:
           label: Invito
         share:
-          btnId: shareButtonCard11
+          btnId: shareButtonCardEventi4
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -248,6 +252,9 @@ components:
               color: secondary
           list:
             isShare: true
+
+
+
     - id: highlightCardsNotizie
       title: Notizie
       headingLevel: 3
@@ -260,10 +267,11 @@ components:
         label: Esplora tutte le notizie
         addonStyle: d-block
       cards:
-      - title: Titolo notizia
+
+      - title: "Titolo notizia"
         headingLevel: 4
         text: E descrizione corta corta vedi lo spazio va bene questa.
-        img: /images/highlight-big.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 21x9
         imgPlaceholder: false
@@ -285,7 +293,7 @@ components:
             url : "#"
             blank: false
         share:
-          btnId: shareButtonCard1
+          btnId: shareButtonCardNotizia1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -295,10 +303,11 @@ components:
               color: secondary
           list:
             isShare: true
-      - title: Titolo della notizia su due righette belle belle che diventano tre
+
+      - title: "Titolo della notizia su due righette belle belle che diventano tre"
         headingLevel: 4
         text: Neque blandit pellentesque nunc sed amet. Nisl, semper sed aliquam amet proin purus augue et.
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 21x9
         imgPlaceholder: false
@@ -320,7 +329,7 @@ components:
             url : "#"
             blank: false
         share:
-          btnId: shareButtonCard2
+          btnId: shareButtonCardNotizia2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -330,7 +339,8 @@ components:
               color: secondary
           list:
             isShare: true
-      - title: Titolo della notizia senza immagine utile magari per titoli e descrizioni lunghe anche lunghissime che non si sa mai
+
+      - title: "Titolo della notizia senza immagine utile magari per titoli e descrizioni lunghe anche lunghissime che non si sa mai"
         headingLevel: 4
         text: Neque blandit pellentesque nunc sed amet. Nisl, semper sed aliquam amet proin purus augue et.
         fullHeight: true
@@ -351,7 +361,7 @@ components:
             url : "#"
             blank: false
         share:
-          btnId: shareButtonCard3
+          btnId: shareButtonCardNotizia3
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -361,6 +371,8 @@ components:
               color: secondary
           list:
             isShare: true
+
+
       topics:
         title: Nelle notizie si parla di
         headingLevel: 4
@@ -409,6 +421,9 @@ components:
           url: "#"
           color: primary
           size: lg
+
+
+
     - id: highlightCardsArticoli
       title: Articoli di approfondimento
       headingLevel: 3
@@ -420,9 +435,12 @@ components:
         btnStyle: primary
         label: Esplora tutti gli approfondimenti
         addonStyle: me-3 d-block
+        url: "#"
       - type: button
         btnStyle: outline-primary
         label: Vai al Medium di Designers Italia
+        url: "https://medium.com/designers-italia"
+        blank: true
         icon:
           icon: sprites.svg#it-external-link
           color: primary
@@ -430,15 +448,18 @@ components:
           size: sm
           addonClasses: ms-2
       cards:
+      
+      #CARD MEDIUM
       - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
-        headingLevel: 4
-        img: /images/highlight-big.jpg
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/2022-medium-tabellini-accessibilita.webp
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "#"
+        url: "https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099"
+        blank: true
         externalLink:
           label : Leggi su medium
           screenReaderText: "l'articolo completo"
@@ -471,14 +492,15 @@ components:
           list:
             isShare: true
       - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
-        headingLevel: 4
-        img: /images/highlight-sm.jpg
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/2022-medium-filippi-etica.webp
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "#"
+        blank: true
+        url: "https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469"
         externalLink:
           label : Leggi su medium
           screenReaderText: "l'articolo completo"
@@ -511,14 +533,15 @@ components:
           list:
             isShare: true
       - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
-        headingLevel: 4
-        img: /images/highlight-big.jpg
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/2021-medium-zaia-processo.webp
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "#"
+        url: "https://medium.com/designers-italia/ripartire-da-approccio-e-processo-la-progettazione-di-servizi-pubblici-digitali-fb62858e2c6d"
+        blank: true
         externalLink:
           label : Leggi su medium
           screenReaderText: "l'articolo completo"
@@ -550,6 +573,9 @@ components:
               color: secondary
           list:
             isShare: true
+
+
+
     - id: highlightCardsMedia
       title: Media
       headingLevel: 3
@@ -561,13 +587,14 @@ components:
         btnStyle: primary
         label: Esplora tutti i media
         addonStyle: d-block
+
       cards:
       - title: "Community Call: il bottone SPID e gli altri"
         headingLevel: 4
         titleSmall: true
         moreInfo : durata 21 minuti
         cardEvent: true
-        img: /images/highlight-big.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
@@ -579,7 +606,7 @@ components:
         tag:
           label: Registrazione
         share:
-          btnId: shareButtonCard4
+          btnId: shareButtonCardMedia1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -589,12 +616,13 @@ components:
               color: secondary
           list:
             isShare: true
+
       - title: Come usare il design system del Paese quanso sei al mare
         headingLevel: 4
         titleSmall: true
         moreInfo : durata 1 minuto
         cardEvent: true
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
@@ -606,7 +634,7 @@ components:
         tag:
           label: Tutorial
         share:
-          btnId: shareButtonCard5
+          btnId: shareButtonCardMedia2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -616,12 +644,13 @@ components:
               color: secondary
           list:
             isShare: true
+
       - title: Fanelli parla di Designers Italia
         headingLevel: 4
         titleSmall: true
         moreInfo : durata 21 minuti
         cardEvent: true
-        img: /images/highlight-big.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
@@ -633,7 +662,7 @@ components:
         tag:
           label: Podcast
         share:
-          btnId: shareButtonCard6
+          btnId: shareButtonCardMedia3
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -643,12 +672,13 @@ components:
               color: secondary
           list:
             isShare: true
+
       - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
         headingLevel: 4
         titleSmall: true
         moreInfo : durata 10 minuti
         cardEvent: true
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
@@ -660,7 +690,7 @@ components:
         tag:
           label: Registrazione
         share:
-          btnId: shareButtonCard7
+          btnId: shareButtonCardMedia4
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -671,13 +701,16 @@ components:
           list:
             isShare: true
 
+
+
+
   highlightsLoop:
     - title : Piano attività
-      subtitle: Una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri
+      subtitle: "Una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri"
       id: hl1
-      img : /images/highlight-big.jpg
+      img : /images/400x300.png
       alt: descrizione immagine
-      headingLevel : 3
+      headingLevel : 2
       big: false
       background: medium
       buttons:
@@ -685,12 +718,13 @@ components:
           btnStyle: primary
           url: "piano-attivita/"
           addonStyle: mb-0
+
     - title : Progetti
-      subtitle: Alcuni dei progetti più significativi legati al progetto Designers Italia
+      subtitle: "Alcuni dei progetti più significativi legati al progetto Designers Italia"
       id: hl2
-      img : /images/highlight-sm.jpg
+      img : /images/400x300.png
       alt: descrizione immagine
-      headingLevel : 3
+      headingLevel : 2
       background: dark
       specular: true
       text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
@@ -699,13 +733,14 @@ components:
           btnStyle: primary
           url: "#"
           addonStyle: mb-0
+
     - title : Come partecipare
       subtitle: "Designers Italia è un progetto open per definizione, vuoi farne parte?"
       text: "Vuoi contribuire al design system? Partecipare all’evoluzione delle risorse per progettare o all’aggiornamento di linee guida e design standard? Vuoi semplicemente segnalarci un refuso su questo sito?"
       id: hl3
-      img : /images/highlight-big.jpg
+      img : /images/400x300.png
       alt: descrizione immagine
-      headingLevel : 3
+      headingLevel : 2
       big: false
       background: light
       buttons:
@@ -722,26 +757,27 @@ components:
           url: "#"
           addonStyle: mb-0
 
-  imageIcons:
-    image: /images/image-icons-fullwidth.jpg
-    alt: Descrizione immagine grande
-    icons:
-    - icon:
-        icon: sprites.svg#it-presentation
-        color: white
-    - icon:
-        icon: sprites.svg#it-telephone
-        color: white
-    - icon:
-        icon: sprites.svg#it-piattaforme
-        color: white
-    - icon:
-        icon: sprites.svg#it-video
-        color: white
-    images:
-    - img: /images/conversation.svg
-      alt: descrizione immagine piccola
-    - img: /images/conversation.svg
-      alt: descrizione immagine piccola
+
+  # imageIcons:
+  #   image: /images/image-icons-fullwidth.jpg
+  #   alt: Descrizione immagine grande
+  #   icons:
+  #   - icon:
+  #       icon: sprites.svg#it-presentation
+  #       color: white
+  #   - icon:
+  #       icon: sprites.svg#it-telephone
+  #       color: white
+  #   - icon:
+  #       icon: sprites.svg#it-piattaforme
+  #       color: white
+  #   - icon:
+  #       icon: sprites.svg#it-video
+  #       color: white
+  #   images:
+  #   - img: /images/conversation.svg
+  #     alt: descrizione immagine piccola
+  #   - img: /images/conversation.svg
+  #     alt: descrizione immagine piccola
 
 
