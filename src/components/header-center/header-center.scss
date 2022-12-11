@@ -1,37 +1,28 @@
-
 @import "../../scss/bootstrap-breakpoints";
 
-
+.it-header-center-wrapper .it-header-center-content-wrapper .it-brand-wrapper a .icon {
+  max-width:72px;
+  max-height: 72px;
+}
 
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-  .overflow-x-list {
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
 }
 
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-  .overflow-x-list {
-    overflow-x: scroll;
-    overflow-y: hidden;
-  }
+
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-  .overflow-x-list {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
+
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-  .overflow-x-list {
-    overflow-x: auto;
-    overflow-y: hidden;
+  .it-header-center-wrapper {
+    height:104px
   }
 }
 
