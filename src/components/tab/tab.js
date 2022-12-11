@@ -38,6 +38,7 @@ const Tab = ({
                   <ComponentView
                     content={v.content}
                     viewer={tab01.componentVariant.viewer}
+                    idPrefix={tab01.componentVariant.idPrefix}
                     accordionLabel={tab01.componentVariant.accordionLabel}
                     accordionUrl={tab01.componentVariant.accordionUrl}
                     accordionSrLabel={tab01.componentVariant.accordionSrLabel}
@@ -60,6 +61,7 @@ const Tab = ({
               <ComponentView
                   content={v.content}
                   viewer={tab02.componentVariant.viewer}
+                  idPrefix={tab02.componentVariant.idPrefix}
                   accordionLabel={tab02.componentVariant.accordionLabel}
                   accordionUrl={tab02.componentVariant.accordionUrl}
                   accordionSrLabel={tab02.componentVariant.accordionSrLabel}
@@ -82,6 +84,7 @@ const Tab = ({
                 <ComponentView
                   content={v.content}
                   viewer={tab03.componentVariant.viewer}
+                  idPrefix={tab03.componentVariant.idPrefix}
                   accordionLabel={tab03.componentVariant.accordionLabel}
                   accordionUrl={tab03.componentVariant.accordionUrl}
                   accordionSrLabel={tab03.componentVariant.accordionSrLabel}
