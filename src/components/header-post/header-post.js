@@ -29,7 +29,7 @@ const HeaderPost = ({data}) => {
 							<div className="container-xxl">
 								<div className="row ">
 									<div className="col-12 g-0">
-										{/* <div className="nav-tabs-hidescroll"> */}
+										<div className="header-post-wrapper">
 											<ul className="list-inline py-4 px-4 px-lg-5 mb-0 d-flex align-items-center flex-nowrap overflow-x-list">
 												{data.nav.items.map((value,index)=>{
 													if (index + 1 === data.nav.items.length) { // last on the left side has "me-auto"
@@ -62,7 +62,7 @@ const HeaderPost = ({data}) => {
 													</Link>
 												</li>
 											</ul>
-										{/* </div> */}
+										</div>
 									</div>
 								</div>
 							</div>
