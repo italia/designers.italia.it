@@ -119,23 +119,23 @@ const FormNo = () => {
         </legend>
         <div className="px-3 px-lg-5 py-3 py-lg-5 rounded shadow-lg">
           <div className="form-check form-check-group">
-            <input name="optsStep2" type="radio" id="optsStep2Opt1" value="motore di ricerca" />
+            <input name="optsStep2" type="radio" id="optsStep2Opt1" value="altro sito web" />
             <label htmlFor="optsStep2Opt1">Altro sito web</label>
           </div>
           <div className="form-check form-check-group">
-            <input name="optsStep2" type="radio" id="optsStep2Opt2" value="altro sito web" />
+            <input name="optsStep2" type="radio" id="optsStep2Opt2" value="funzione “Cerca” del sito" />
             <label htmlFor="optsStep2Opt2">Funzione “Cerca” del sito</label>
           </div>
           <div className="form-check form-check-group">
-            <input name="optsStep2" type="radio" id="optsStep2Opt3" value="funzione “Cerca” del sito" />
+            <input name="optsStep2" type="radio" id="optsStep2Opt3" value="motore di ricerca" />
             <label htmlFor="optsStep2Opt3">Motore di ricerca</label>
           </div>
           <div className="form-check form-check-group">
-            <input name="optsStep2" type="radio" id="optsStep2Opt4" value="navigazione del sito" />
+            <input name="optsStep2" type="radio" id="optsStep2Opt4" value="messaggio social" />
             <label htmlFor="optsStep2Opt4">Messaggio social</label>
           </div>
           <div className="form-check form-check-group">
-            <input name="optsStep2" type="radio" id="optsStep2Opt5" value="messaggio social" />
+            <input name="optsStep2" type="radio" id="optsStep2Opt5" value="navigazione del sito" />
             <label htmlFor="optsStep2Opt5">Navigazione del sito</label>
           </div>
           <div className="form-check form-check-group">
