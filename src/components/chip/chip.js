@@ -17,6 +17,11 @@ const Chip = (
 		+ `${color ? ' chip-'+color : ''}`
 		+ `${disabled ? ' chip-disabled' : ''}`
 
+	// XXX disable all chips "argomento" for alpha release:
+	styles = 'chip chip-simple chip-disabled' 
+		+ `${size ? ' chip-'+size : ''}`
+	//
+
 	if (label) {
 		children = label
 	}

@@ -101,7 +101,7 @@ components:
     
     # KANGAROO: METADATA
     kangaroo:
-      id: kangarooHero
+      id: metadati-e-link
       titleSr: Metadati e link per approfondire
       tagsLabel : Parliamo di 
       color : white
@@ -151,13 +151,20 @@ components:
                 icon: sprites.svg#it-arrow-right
                 color: primary
                 size: sm
+            - url: "#" #M
+              label: "Servizi" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
 
   # ///////////////////
   # INTRO
   # ///////////////////
   sectionIntro:
     section: true
-    id: introEditorial
+    id: intro
     headingLevel: 2
     title: "Realizza un’esperienza digitale efficace" #C
     background: null
@@ -185,45 +192,45 @@ components:
   # —
   highlightsLoop1 :
 
-    # —
-    # HIGHLIGHT BIG IMG
-    # —
-    - title : Lorem ipsum #C
-      id: HL1
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 3
-      background: light # null | light | medium | dark  
-      big: true
-      specular: false
-      subtitle: Lorem ipsum #C
-      buttons: #C #I
-        - label : Scopri lorem ipsum #C
-          btnStyle: primary
-          url: "lorem-ipsum/" #M
-          addonStyle: mb-0
+    # # —
+    # # HIGHLIGHT BIG IMG
+    # # —
+    # - title : Lorem ipsum #C
+    #   id: HL1
+    #   img : /images/400x300.png #I
+    #   alt: Alt lorem ipsum #C
+    #   headingLevel : 3
+    #   background: light # null | light | medium | dark  
+    #   big: true
+    #   specular: false
+    #   subtitle: Lorem ipsum #C
+    #   buttons: #C #I
+    #     - label : Scopri lorem ipsum #C
+    #       btnStyle: primary
+    #       url: "lorem-ipsum/" #M
+    #       addonStyle: mb-0
 
     # —
     # HIGHLIGHT 
     # —
     - title : Comuni #C
-      id: HL2
+      id: comuni
       img : /images/400x300.png #I
       alt: Alt lorem ipsum #C
       headingLevel : 3
+      specular: false
       background: light  # null | light | medium | dark  
       big: false
-      specular: true
       subtitle: Il modello per il sito e i servizi comunali #C 
       numbers: #C #I
         items:
-        - icon: sprites.svg#it-pa
-          #number: 555
+        - icon: sprites.svg#it-file
+          number: 1
           label: Documento di architettura
-        - icon: sprites.svg#it-user
+        - icon: sprites.svg#it-files
           number: 90
           label: Template HTML
-        - icon: sprites.svg#it-user
+        - icon: sprites.svg#it-folder
           number: 2
           label: Temi CMS
         - icon: sprites.svg#it-user
@@ -231,7 +238,7 @@ components:
           label: Prototipi
       text: Le risorse per realizzare un solido punto di riferimento per i cittadini, dove trovare facilmente le informazioni di cui hanno bisogno e completare adempimenti verso l’amministrazione comunale direttamente online.  #C
       buttons: #C #M
-        - label : Esplora il modello comuni 
+        - label : Scopri il modello comuni 
           btnStyle: primary
           url: "comuni/" 
           addonStyle: mb-0
@@ -259,21 +266,21 @@ components:
       subtitle: Il modello per il sito scolastico #C
       numbers: #C #I
         items:
-        - icon: sprites.svg#it-pa
-          #number: 555
+        - icon: sprites.svg#it-file
+          number: 1
           label: Documento di architettura
-        - icon: sprites.svg#it-user
+        - icon: sprites.svg#it-files
           number: 28
           label: Template HTML
-        - icon: sprites.svg#it-user
-          #number: 555
+        - icon: sprites.svg#it-folder
+          number: 1
           label: Tema per WordPress
         - icon: sprites.svg#it-user
           number: 18
           label: Prototipi
       text: Le risorse per creare un punto di accesso semplice e funzionale alla realtà della scuola. Dagli orari delle lezioni e i materiali didattici, alle novità e gli eventi, il modello di sito per le scuole risponde alle esigenze degli studenti, dei gentitori e dell’intera comunità scolastica. #C
       buttons: #C #M
-        - label : Esplora il modello scuole
+        - label : Scopri il modello scuole
           btnStyle: primary
           url: "scuole/" 
           addonStyle: mb-0
@@ -285,3 +292,22 @@ components:
           #btnStyle: outline-secondary
           #url: "#"
           #addonStyle: mb-0
+
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title : Servizi #C
+      id: servizi
+      img : /images/400x300.png #I
+      alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: dark # null | light | medium | dark  
+      big: true
+      specular: false
+      subtitle: Lorem ipsum #C
+      buttons: #C #I
+        - label : Scopri i servizi #C
+          btnStyle: primary
+          url: "lorem-ipsum/" #M
+          addonStyle: mb-0

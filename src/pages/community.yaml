@@ -7,7 +7,7 @@ metadata:
 
 seo:
   name: Community
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
+  description : Lo spazio per informarti e confrontarti sulla progettazione dei servizi pubblici digitali
   image : null
   twitterImage: null
   canonical: null
@@ -38,7 +38,7 @@ components:
   hero:
     background: primary
     title: Community
-    subtitle: Aliquam cursus, mauris id posuere mattis, tellus massa maximus diam, vitae pulvinar ante dolor vel leo.
+    subtitle: Lo spazio per informarti e confrontarti sulla progettazione dei servizi pubblici digitali
     img: /images/400x300.png
     alt: descrizione immagine
     imgRatio: 4x3
@@ -48,7 +48,7 @@ components:
         size: sm
       text: In breve
     text: |
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      In questa sezione, trovi tutti i contributi della community: eventi, notizie, articoli di approfondimento, video e podcast per approfondire il tema del design e le buone pratiche di progettazione dei servizi pubblici digitali. Inoltre, puoi scoprire come partecipare e dare il tuo contributo.
     breadcrumbs :
       separator : '/'
       items :
@@ -71,7 +71,7 @@ components:
         isShare: true
     kangaroo:
       id: kangarooHero
-      titleSr: Titolo della sezione (per screenreader)
+      titleSr: Metadati e link per approfondire
       tagsLabel : Parliamo di
       color : white
       icon:
@@ -115,12 +115,12 @@ components:
 
   sectionIntro:
     section: true
-    id: contenutoEditoriale1
+    id: intro
     headingLevel: 2
-    title: Il design è un processo di comunità, aperto e collaborativo
+    title: "Il design è un processo di comunità, aperto e collaborativo"
     background: null
     text: |
-      Il design è la disciplina che si occupa di risolvere problemi complessi, in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella Pubblica Amministrazione.
+      Quando ci sono numerosi elementi e attori coinvolti in un servizio, come nel caso della Pubblica Amministrazione, i problemi da risolvere possono diventare particolarmente complessi. **Molte pubbliche amministrazioni condividono gli stessi problemi**: allo stesso modo, possono esserlo le **soluzioni**. per questo motivo, ispirandoci agli articoli 68 e 69 del Codice dell’amministrazione digitale, adottiamo un approccio open source che promuove il riuso e valorizza il lavoro degli altri anche nella progettazione dei servizi pubblici digitali. Perché non serve reinventare la ruota ogni volta.
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     icon:
@@ -128,21 +128,21 @@ components:
       color: white
       size: sm
     moreText: |
-      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+      Il progetto Designers Italia nasce proprio con questo obiettivo: **condividere in un unico luogo informazioni, conoscenze, buone pratiche, strumenti e risorse progettuali** che possano essere d’aiuto alle pubbliche amministrazioni impegnate in percorso di trasformazione digitale o desiderose di iniziarlo.
+
+      In questo contesto, è fondamentale il contributo della community, che sia collaborare attivamente sui progetti, fornirci un feedback o segnalarci un problema. 
+
       ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
-      ### Titolo livello 3
-      Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?\
-      Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
   titleText:
     title: Scopri le attività della community
 
 
 
   highlightCardsLoop:
-    - id: highlightCardsEventi
-      title: "Eventi"
+    - id: eventi
+      title: Eventi
       headingLevel: 3
-      text: "I prossimi eventi dove trovare gli esperti di Designers Italia, e i cicli di eventi dedicati alla community curati dal progetto"
+      text: "I prossimi eventi dove trovare le esperte e gli esperti di Designers Italia e i nostri cicli di eventi dedicati alla community"
       col4: true
       background: light
       buttons:
@@ -154,7 +154,7 @@ components:
       - title: Designers Italia a Wired Next Festival
         headingLevel: 4
         cardEvent: true
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 4x3
         fullHeight: true
@@ -166,7 +166,7 @@ components:
         tag:
           label: Invito
         share:
-          btnId: shareButtonEvent1
+          btnId: shareButtonCardEventi1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -180,7 +180,7 @@ components:
       - title: "Community Lab sui temi dell’upgrade del Kit Design React"
         headingLevel: 4
         cardEvent: true
-        img: /images/highlight-big.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 4x3
         imgPlaceholder: false
@@ -192,7 +192,7 @@ components:
         tag:
           label: Community Lab
         share:
-          btnId: shareButtonEvent2
+          btnId: shareButtonCardEventi2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -206,7 +206,7 @@ components:
       - title: "Eventone #1!()!A :-)"
         headingLevel: 4
         cardEvent: true
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 4x3
         imgPlaceholder: false
@@ -218,7 +218,7 @@ components:
         tag:
           label: Invito
         share:
-          btnId: shareButtonEvent3
+          btnId: shareButtonCardEventi3
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -244,7 +244,7 @@ components:
         tag:
           label: Invito
         share:
-          btnId: shareButtonEvent4
+          btnId: shareButtonCardEventi4
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -257,7 +257,7 @@ components:
 
 
 
-    - id: highlightCardsNotizie
+    - id: notizie
       title: Notizie
       headingLevel: 3
       text: Le ultime notizie sulle attività del progetto Designers Italia
@@ -270,10 +270,11 @@ components:
         addonStyle: d-block
 
       cards:
-      - title: Titolo notizia
+
+      - title: "Titolo notizia"
         headingLevel: 4
         text: E descrizione corta corta vedi lo spazio va bene questa.
-        img: /images/highlight-big.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 21x9
         imgPlaceholder: false
@@ -295,7 +296,7 @@ components:
             url : "#"
             blank: false
         share:
-          btnId: shareButtonNews1
+          btnId: shareButtonCardNotizia1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -306,10 +307,10 @@ components:
           list:
             isShare: true
 
-      - title: Titolo della notizia su due righette belle belle che diventano tre
+      - title: "Titolo della notizia su due righette belle belle che diventano tre"
         headingLevel: 4
         text: Neque blandit pellentesque nunc sed amet. Nisl, semper sed aliquam amet proin purus augue et.
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 21x9
         imgPlaceholder: false
@@ -331,7 +332,7 @@ components:
             url : "#"
             blank: false
         share:
-          btnId: shareButtonNews2
+          btnId: shareButtonCardNotizia2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -342,7 +343,7 @@ components:
           list:
             isShare: true
 
-      - title: Titolo della notizia senza immagine utile magari per titoli e descrizioni lunghe anche lunghissime che non si sa mai
+      - title: "Titolo della notizia senza immagine utile magari per titoli e descrizioni lunghe anche lunghissime che non si sa mai"
         headingLevel: 4
         text: Neque blandit pellentesque nunc sed amet. Nisl, semper sed aliquam amet proin purus augue et.
         fullHeight: true
@@ -363,7 +364,7 @@ components:
             url : "#"
             blank: false
         share:
-          btnId: shareButtonNews3
+          btnId: shareButtonCardNotizia3
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -373,6 +374,7 @@ components:
               color: secondary
           list:
             isShare: true
+
 
       topics:
         title: Nelle notizie si parla di
@@ -382,9 +384,10 @@ components:
           color: secondary
           hidden: true
         button:
-          url: "#"
-          btnStyle: outline-primary
+          # url: "#"
+          btnStyle: outline-secondary
           label: Scopri tutti gli argomenti
+          addonStyle: disabled
         chips:
         - label: Accessibilità
           url: "#"
@@ -425,11 +428,10 @@ components:
 
 
 
-
-    - id: highlightCardsArticoli
+    - id: articoli-di-approfondimento
       title: Articoli di approfondimento
       headingLevel: 3
-      text: La teoria che sta dietro alla pratica di Designers Italia
+      text: "I casi di studio e le idee sulla progettazione dei servizi pubblici, scritti dalla community di Designers Italia"
       col4: false
       background: light
       buttons:
@@ -437,9 +439,12 @@ components:
         btnStyle: primary
         label: Esplora tutti gli approfondimenti
         addonStyle: me-3 d-block
+        url: "#"
       - type: button
         btnStyle: outline-primary
         label: Vai al Medium di Designers Italia
+        url: "https://medium.com/designers-italia"
+        blank: true
         icon:
           icon: sprites.svg#it-external-link
           color: primary
@@ -448,15 +453,18 @@ components:
           addonClasses: ms-2
 
       cards:
+      
+      #CARD MEDIUM
       - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
         headingLevel: 4
-        img: /images/highlight-big.jpg
+        img: /images/community/articoli-di-approfondimento/2022-medium-tabellini-accessibilita.webp
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "#"
+        url: "https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099"
+        blank: true
         externalLink:
           label : Leggi su medium
           screenReaderText: "l'articolo completo"
@@ -491,13 +499,14 @@ components:
 
       - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
         headingLevel: 4
-        img: /images/highlight-sm.jpg
+        img: /images/community/articoli-di-approfondimento/2022-medium-filippi-etica.webp
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "#"
+        blank: true
+        url: "https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469"
         externalLink:
           label : Leggi su medium
           screenReaderText: "l'articolo completo"
@@ -532,13 +541,14 @@ components:
 
       - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
         headingLevel: 4
-        img: /images/highlight-big.jpg
+        img: /images/community/articoli-di-approfondimento/2021-medium-zaia-processo.webp
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "#"
+        url: "https://medium.com/designers-italia/ripartire-da-approccio-e-processo-la-progettazione-di-servizi-pubblici-digitali-fb62858e2c6d"
+        blank: true
         externalLink:
           label : Leggi su medium
           screenReaderText: "l'articolo completo"
@@ -573,10 +583,10 @@ components:
 
 
 
-    - id: highlightCardsMedia
+    - id: media
       title: Media
       headingLevel: 3
-      text: Registrazioni degli eventi, tutorial tecnici e video dalle feste del progetto Designers Italia
+      text: "I video degli eventi a cui partecipiamo, i tutorial tecnici e i podcast sul progetto Designers Italia"
       col4: true
       background: null
       buttons:
@@ -584,13 +594,14 @@ components:
         btnStyle: primary
         label: Esplora tutti i media
         addonStyle: d-block
+
       cards:
       - title: "Community Call: il bottone SPID e gli altri"
         headingLevel: 4
         titleSmall: true
         moreInfo : durata 21 minuti
         cardEvent: true
-        img: /images/highlight-big.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
@@ -618,7 +629,7 @@ components:
         titleSmall: true
         moreInfo : durata 1 minuto
         cardEvent: true
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
@@ -646,7 +657,7 @@ components:
         titleSmall: true
         moreInfo : durata 21 minuti
         cardEvent: true
-        img: /images/highlight-big.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
@@ -674,7 +685,7 @@ components:
         titleSmall: true
         moreInfo : durata 10 minuti
         cardEvent: true
-        img: /images/highlight-sm.jpg
+        img: /images/400x300.png
         alt: descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
@@ -697,13 +708,16 @@ components:
           list:
             isShare: true
 
+
+
+
   highlightsLoop:
     - title : Piano attività
-      subtitle: Una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri
-      id: hl1
-      img : /images/highlight-big.jpg
+      subtitle: "Una tabella di marcia delle attività passate e future, i risultati ottenuti e ancora da raggiungere dal progetto Designers Italia negli ultimi anni"
+      id: piano-attivita
+      img : /images/400x300.png
       alt: descrizione immagine
-      headingLevel : 3
+      headingLevel : 2
       big: false
       background: medium
       buttons:
@@ -711,27 +725,30 @@ components:
           btnStyle: primary
           url: "piano-attivita/"
           addonStyle: mb-0
+
     - title : Progetti
-      subtitle: Alcuni dei progetti più significativi legati al progetto Designers Italia
-      id: hl2
-      img : /images/highlight-sm.jpg
+      subtitle: "Piattaforme, strumenti e modelli a cui Designers Italia ha contribuito"
+      id: progetti
+      img : /images/400x300.png
       alt: descrizione immagine
-      headingLevel : 3
+      headingLevel : 2
       background: dark
       specular: true
-      text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      text: |
+       Negli anni, Designers Italia ha collaborato con altri enti e università per realizzare progetti che portano avanti la nostra missione: rendere i servizi pubblici digitali più equi, accessibili e inclusivi.
       buttons:
         - label : Scopri i progetti
           btnStyle: primary
           url: "#"
           addonStyle: mb-0
+
     - title : Come partecipare
-      subtitle: "Designers Italia è un progetto open per definizione, vuoi farne parte?"
-      text: "Vuoi contribuire al design system? Partecipare all’evoluzione delle risorse per progettare o all’aggiornamento di linee guida e design standard? Vuoi semplicemente segnalarci un refuso su questo sito?"
-      id: hl3
-      img : /images/highlight-big.jpg
+      subtitle: "Il design è bello quando è condiviso"
+      text: "Vuoi contribuire all’evoluzione del design system, delle risorse per progettare, o delle linee guida e design standard?"
+      id: come-partecipare
+      img : /images/400x300.png
       alt: descrizione immagine
-      headingLevel : 3
+      headingLevel : 2
       big: false
       background: light
       buttons:
@@ -748,26 +765,27 @@ components:
           url: "#"
           addonStyle: mb-0
 
-  imageIcons:
-    image: /images/image-icons-fullwidth.jpg
-    alt: Descrizione immagine grande
-    icons:
-    - icon:
-        icon: sprites.svg#it-presentation
-        color: white
-    - icon:
-        icon: sprites.svg#it-telephone
-        color: white
-    - icon:
-        icon: sprites.svg#it-piattaforme
-        color: white
-    - icon:
-        icon: sprites.svg#it-video
-        color: white
-    images:
-    - img: /images/conversation.svg
-      alt: descrizione immagine piccola
-    - img: /images/conversation.svg
-      alt: descrizione immagine piccola
+
+  # imageIcons:
+  #   image: /images/image-icons-fullwidth.jpg
+  #   alt: Descrizione immagine grande
+  #   icons:
+  #   - icon:
+  #       icon: sprites.svg#it-presentation
+  #       color: white
+  #   - icon:
+  #       icon: sprites.svg#it-telephone
+  #       color: white
+  #   - icon:
+  #       icon: sprites.svg#it-piattaforme
+  #       color: white
+  #   - icon:
+  #       icon: sprites.svg#it-video
+  #       color: white
+  #   images:
+  #   - img: /images/conversation.svg
+  #     alt: descrizione immagine piccola
+  #   - img: /images/conversation.svg
+  #     alt: descrizione immagine piccola
 
 

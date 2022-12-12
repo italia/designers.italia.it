@@ -43,7 +43,7 @@ const HeaderMenuLink = ({
     )
   } else {
     return (
-      <a
+      <a // < XXX We need to use <Link> component? 
         className={styles}
         href={url ? url : '#'}
         data-bs-toggle={isDropDown ? 'dropdown' : undefined}
