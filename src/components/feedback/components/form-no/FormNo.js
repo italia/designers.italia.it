@@ -40,8 +40,9 @@ const BTN_SEND = {
 const FormNo = () => {
   const rootRef = useRef(null);
 
-  // const [steps, setSteps] = useState([]);
-  // const [stepIdx, setStepIdx] = useState(0);
+  const [who, setWho] = useState("");
+  const [from, setFrom] = useState("");
+  const [details, setDetails] = useState("");
 
   return <div ref={rootRef}>
     <form action="#">
@@ -58,7 +59,7 @@ const FormNo = () => {
         <Link to="#">repository GitHub</Link> dedicata.
       </p>
 
-      <fieldset>
+      <fieldset onChange={e => setWho(e.target.value)}>
         <legend className="d-flex mb-3 px-0 align-items-center w-75">
           <Icon {...ICON_USER} />
           <span className="text-secondary">Sei:</span>
@@ -111,7 +112,7 @@ const FormNo = () => {
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset onChange={e => setFrom(e.target.value)}>
         <legend className="d-flex mb-3 px-0 pt-5 align-items-center w-75">
           <Icon {...ICON_HELP} />
           <span className="text-secondary">Hai trovato questa pagina grazie a:</span>
@@ -148,7 +149,7 @@ const FormNo = () => {
         </div>
       </fieldset>
 
-      <fieldset>
+      <fieldset onChange={e => setDetails(e.target.value)}>
         <legend className="d-flex pt-5 pb-4 px-0 align-items-center w-75">
           <Icon {...ICON_INFO} />
           <span className="text-secondary">Come possiamo migliorare questa pagina?</span>
@@ -163,7 +164,7 @@ const FormNo = () => {
       </fieldset>
 
       <div className="mt-5">
-        <Button {...BTN_SEND} />
+        <Button disabled={!who && !from && !details} {...BTN_SEND} />
       </div>
     </form>
   </div>
