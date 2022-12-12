@@ -38,10 +38,10 @@ const TextImageCta =({
 
   let styles = "text-image-cta d-flex"
   + `${noSpace ? ' mb-0' : ' mb-5 /*mb-lg-5*/'}`
-  + `${image ? ' flex-column /*flex-sm-row*/' : ''}` // XXX to fix SM full width...
-  + `${specular ? '' : ' flex-row-reverse'}`
+  + `${image && specular ? ' flex-column flex-sm-row' : ''}` 
+  + `${image && !specular ? ' flex-column flex-sm-row-reverse' : ''}` 
   let imageWrapperStyles = "image-cta w-25 d-flex align-items-start"
-  + `${specular ? ' justify-content-end me-4' : ' justify-content-start ms-4'}`
+  + `${specular ? ' justify-content-end me-4' : ' justify-content-start ms-sm-4'}`
   let contentStyles = "content"
   + `${image ? ' w-75 pt-4 pt-sm-0' : ' w-100'}`
 
