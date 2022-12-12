@@ -61,11 +61,7 @@ const Feedback = ({
   }
 
   const openModal = () => {
-    // XXX temporarily disables yes modal 
-    // let modalElement = parseInt(choiceVal) === 1 ? modalYes.current : modalNo.current
-    // new Modal(modalElement).show()
-    let which = parseInt(choiceVal)
-    if (which === 0) {
+    if (parseInt(choiceVal) === 0) {
       new Modal(modalNo.current).show()
     }
   }
