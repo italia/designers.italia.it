@@ -128,6 +128,7 @@ navbar:
                   label: Articoli di approfondimento teorici (Medium)
                 - #url: "#"
                   label: Altre norme e riferimenti  
+                  disabled: true
     voicesCenter:
       - isDropDown : true
         isMegaMenu : true
@@ -150,11 +151,13 @@ navbar:
                 - url: "/modelli/scuole/"
                   label: Scuole
                 - #url: "#"
-                  label: Fascicolo sanitario elettronico
+                  label: Servizi
+                  disabled: true
             - isMenu: true
               listItems: #C #M
-                # - url: "modelli/lorem-ipsum"
-                #   label: Lorem ipsum
+                - #url: "#"
+                  label: Fascicolo sanitario elettronico
+                  disabled: true
       - isDropDown : true
         isMegaMenu : true
         idMegamenu : menuD
@@ -173,6 +176,7 @@ navbar:
               listItems: #C #M
                 - #url: "#"
                   label: Come iniziare
+                  disabled: true
                 - url: "/design-system/fondamenti/"
                   label: Fondamenti
                 - url: "/design-system/componenti/"
@@ -181,8 +185,10 @@ navbar:
               listItems: #C #M
                 - #url: "#"
                   label: Design pattern
+                  disabled: true
                 - #url: "#"
                   label: Showcase
+                  disabled: true
       - isDropDown : true
         isMegaMenu : true
         idMegamenu : menuE
@@ -242,8 +248,10 @@ navbar:
                   label: Piano attività
                 - #url: "#"
                   label: Progetti
+                  disabled: true
                 - #url: "#"
                   label: Come partecipare
+                  disabled: true
 headerPost:
   isActive: true
   nav:
