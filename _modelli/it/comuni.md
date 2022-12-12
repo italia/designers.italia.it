@@ -262,11 +262,11 @@ serviziContent:
       linksHiFiTitle: Esempio pagamento multa
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=3131%3A323423&node-id=3131%3A323723&viewport=612%2C-96%2C0.07&scaling=scale-down&starting-point-node-id=3131%3A323723"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=3131%3A323423&node-id=3131%3A323723&viewport=1118%2C-248%2C0.13&scaling=scale-down&starting-point-node-id=3131%3A323723"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=4208%3A337501&node-id=4208%3A347851&viewport=960%2C764%2C0.07&scaling=scale-down&starting-point-node-id=4208%3A347851"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=93%3A201883&node-id=93%3A202855&viewport=-532%2C-4298%2C0.25&scaling=scale-down&starting-point-node-id=93%3A202855"
           external: true
     - title: "Servizi a pagamento"
       subtitle: "Il flusso di interazione per la richiesta di servizi che prevedono un pagamento da parte del cittadino per l’erogazione, come:"
