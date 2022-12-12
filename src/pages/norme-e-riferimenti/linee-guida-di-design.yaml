@@ -188,17 +188,17 @@ components:
     # —
     # IMG FULL COVER
     # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
+    # - menu: false #TOGGLE RIGHT SECTION INDEX
+    #   background: null
+    #   full: true
+    #   noSpace: true
+    #   title: false
+    #   text: false
+    #   components:
+    #     # IMG
+    #     - name: ImageIcons
+    #       image: /images/image-icons-fullwidth.jpg #I
+    #       alt: Descrizione immagine grande #C
 
     # —
     # EDITORIAL #C #I
@@ -206,7 +206,7 @@ components:
     - title: Progettare a norma di legge
       background: null
       menu: false
-      centered: false
+      centered: true
       text: | #C
         Le Linee guida di design garantiscono che l'accesso a servizi semplici e inclusivi sia un diritto per tutte le persone 
       components: 
@@ -225,6 +225,17 @@ components:
             
             ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
 
+    # # —
+    # # EDITORIAL #C #I
+    # # —   
+    # - #title: Progettare a norma di legge
+    #   background: light
+    #   menu: false
+    #   centered: true
+    #   # text: | #C
+    #   #   Le Linee guida di design garantiscono che l'accesso a servizi semplici e inclusivi sia un diritto per tutte le persone 
+    #   components: 
+
         # TXT BLOCK
         - name: TextImageCta
           title: "I requisiti enunciati dalle Linee guida" #C
@@ -234,10 +245,8 @@ components:
             Tra gli altri requisiti, grande valore è attribuito anche alla **trasparenza** e alla **sicurezza delle informazioni**, all’**accessibilità**, al **monitoraggio dei servizi**, alle **interfacce utente**, all’**integrazione delle piattaforme abilitanti** e alle **licenze**.
             
             Per l’implementazione di queste regole tecniche, hai a disposizione diversi strumenti: i **modelli**, i **kit** e il **Manuale operativo di design**, una guida pratica dedicata alla PA e ai suoi fornitori per raggiungere gli obiettivi definiti nelle Linee guida.
-
-          #### Leggi le Linee guida su Docs Italia
           ctas:
-          - label: Linee guida di design #C
+          - label: Vai alle Linee guida di design #C
             url: "https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/index.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
