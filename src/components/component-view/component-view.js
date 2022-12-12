@@ -18,6 +18,7 @@ const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'))
 const ComponentView = ({
   content,
   viewer,
+  idPrefix,
   accordionOpen,
   accordionLabel,
   accordionUrl,
@@ -38,7 +39,7 @@ const ComponentView = ({
     e.preventDefault()
     navigator.clipboard.writeText(code)
     // console.log("Codice copiato negli appunti!")
-    const notification = new Notification(document.getElementById("copyToast"), {
+    const notification = new Notification(document.getElementById(idPrefix + '-' + "copyToast"), {
       timeout: 3000
     })
     notification.show()
@@ -64,7 +65,7 @@ const ComponentView = ({
     icon: "sprites.svg#it-check-circle",
   }
 
-  const uuid = 'component-view-' + uuidv4()
+  const uuid = idPrefix + '-' + 'component-view-' + uuidv4()
   const accId = uuid + '-accordion'
   const headId = uuid + '-heading'
   const collId = uuid + '-collapse'
@@ -102,11 +103,11 @@ const ComponentView = ({
       <div className="accordion accordion-left-icon" id={accId}>
         <div className="accordion-item">
           <div className="d-flex justify-content-between align-items-center" id={headId}>
-            <h3 id="codeViewer" className ="accordion-header ">
+            <h2 id={idPrefix + '-' + 'codeViewer'} className ="accordion-header ">
               <button className={accordionButtonStyle} type="button" data-bs-toggle="collapse" data-bs-target={'#' + collId } aria-expanded={accordionOpen} aria-controls={collId}>
                 {accordionLabel}
               </button>
-            </h3>
+            </h2>
             <div className="d-flex justify-content-between align-items-center">
               {content &&
                 <a href="" onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel}>
@@ -128,8 +129,8 @@ const ComponentView = ({
               </SyntaxHighlighter>
             </div>
           </div>
-          <div className="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby="not1d-title" id="copyToast">
-              <h2 id="not1d-title" className="h5 "><Icon {...ICON_SUCCESS}/>Codice copiato negli appunti</h2>
+          <div className="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby={idPrefix + '-' + 'not1d-title'} id={idPrefix + '-' + 'copyToast'}>
+              <span id={idPrefix + '-' + 'not1d-title'} className="h5 "><Icon {...ICON_SUCCESS}/>Codice copiato negli appunti</span>
           </div>
         </div>
       </div>
