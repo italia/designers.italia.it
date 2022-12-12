@@ -199,7 +199,7 @@ components:
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
-      bgColor: null
+      background: light
       full: true
       noSpace: true
       title: false
@@ -214,46 +214,22 @@ components:
     # EDITORIAL #C #I
     # —   
     - title: "Realizza un’esperienza digitale efficace"
-      background: medium
+      background: light
       menu: false
-      centered: false
+      centered: true
       text: | #C
         Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale degli istituti scolastici
       components: 
 
-
         # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
+        # - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
           #title: Lorem ipsum h3 #C
-          #text: | #C
-          #  Lorem ipsum
+          # text: | #C
+          #  ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
 
-            #### Titoletto interno h4
-            # Lorem ipsum
-          #ctas:
-          #- label: Fai lorem ipsum #C
-            #url: "#" #M
-            #blank: false #M #C true if new tab for external links
-            #icon: 
-              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
-          #- label: Vai su ipsum #C
-            #url: "#" #M
-            #blank: true 
-            #icon:
-              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
         
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -261,25 +237,25 @@ components:
           text: | #C
             Il modello per un sito chiaro, semplice da usare e accessibile. Un solido punto di riferimento per la comunità scolastica, dove trovare facilmente tutte le informazioni di cui hanno bisogno: dagli orari delle lezioni e i materiali didattici, alle novità e gli eventi. 
           ctas:
-          #- label: Naviga un esempio di sito #C
-            #url: "#" #M
-            #blank: true #M #C true if new tab for external links
-            #icon: 
-              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
+          - label: Naviga un esempio di sito #C
+            url: "#" #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
     
     
     # —
     # EDITORIAL #C #I
     # —   
     - title: Il futuro della PA
-      background: light
+      background: null
       menu: false
-      centered: false
+      centered: true
       #text: | #C
         #Lorem ipsum
       components: 
@@ -296,7 +272,7 @@ components:
             url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -334,16 +310,16 @@ components:
         - name: Numbers
           items: #C #I
           - label: Documento di architettura
-            icon: sprites.svg#it-tool
-            #number: 1200
+            icon: sprites.svg#it-file
+            number: 1
           - label: Template HTML
-            icon: sprites.svg#it-tool
+            icon: sprites.svg#it-files
             number: 28
           - label: Tema WordPress
-            icon: sprites.svg#it-tool
-            #number: 2
+            icon: sprites.svg#it-folder
+            number: 1
           - label: Prototipi
-            icon: sprites.svg#it-tool
+            icon: sprites.svg#it-user
             number: 18
             
     
@@ -351,9 +327,9 @@ components:
     # EDITORIAL #C #I
     # —   
     - title: Adottare il modello è semplice con il PNRR
-      background: medium
+      background: light
       menu: false
-      centered: false
+      centered: true
       #text: | #C
       #  Lorem **ipsum**
       components: 
@@ -366,13 +342,14 @@ components:
           specular: true
           #title: Lorem ipsum h3 #C
           text: | #C
-            Scopri su PA digitale 2026 se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
+            **Scopri su PA digitale 2026** se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
           ctas:
           - label: Vai su PA digitale 2016 #C
             url: https://padigitale2026.gov.it/ #M
+            color: white
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -465,7 +442,7 @@ components:
     - title: Hai bisogno di chiarimenti o supporto tecnico?
       bgColor: null
       menu: false
-      centered: false
+      centered: true
       #text: | #C
         #Lorem **ipsum**
       components: 
@@ -483,7 +460,7 @@ components:
             url: https://padigitale2026.gov.it/supporto #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -519,13 +496,13 @@ components:
           specular: true
           #title: ciao
           text: |
-            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore
+            **Unisciti alla discussion** sul design dei servizi digitali con gli esperti del settore
           ctas:
           - label: Vai su Forum Italia #C
             url: https://forum.italia.it/c/design/modello-scuole/ #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -539,13 +516,13 @@ components:
           specular: true
           #title: ciao
           text: |
-            Dialoga e collabora in tempo reale con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole 
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole 
           ctas:
           - label: Vai su Slack #C
             url: https://developersitalia.slack.com/archives/CQ7J0KANT #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -559,13 +536,13 @@ components:
           specular: true
           #title: ciao
           text: |
-            Progetta e sviluppa con noi nuove soluzioni per i servizi digitali nazionali su GitHub
+            **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
           - label: Vai su GitHub #C
             url: Visita github.com/italia  #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true

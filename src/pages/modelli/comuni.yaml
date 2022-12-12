@@ -199,7 +199,7 @@ components:
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
-      bgColor: null
+      background: light
       full: true
       noSpace: true
       title: false
@@ -214,19 +214,19 @@ components:
     # EDITORIAL #C #I
     # —   
     - title: "Realizza un’esperienza digitale efficace"
-      background: medium
+      background: light
       menu: false
-      centered: false
+      centered: true
       text: | #C
         Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle amministrazioni comunali
       components: 
 
 
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
+        # # TXT + IMG + CTA BLOCK
+        # - name: TextImageCta
+        #   image: /images/400x300.png #I
+        #   alt: Alt lorem ipsum #C
+        #   specular: true
           #title: Lorem ipsum h3 #C
           #text: | #C
           #  Lorem ipsum
@@ -265,7 +265,7 @@ components:
             url: http://sb01.eurobeta.it:8080/ #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -287,9 +287,9 @@ components:
     # EDITORIAL #C #I
     # —   
     - title: Il futuro della PA
-      background: light
+      background: null
       menu: false
-      centered: false
+      centered: true
       #text: | #C
         #Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle amministrazioni comunali
       components: 
@@ -306,7 +306,7 @@ components:
             url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -354,31 +354,31 @@ components:
         - name: Numbers
           items: #C #I
           - label: Documento di architettura
-            icon: sprites.svg#it-tool
-            #number: 1200
+            icon: sprites.svg#it-file
+            number: 1
           - label: Template HTML
-            icon: sprites.svg#it-tool
+            icon: sprites.svg#it-files
             number: 90
           - label: Temi CMS
-            icon: sprites.svg#it-tool
+            icon: sprites.svg#it-folder
             number: 2
           - label: Servizi supportati
-            icon: sprites.svg#it-tool
+            icon: sprites.svg#it-files
             number: 26
           - label: Librerie di componenti
             icon: sprites.svg#it-tool
             number: 2
           - label: Prototipi
-            icon: sprites.svg#it-tool
+            icon: sprites.svg#it-user
             number: 21
     
     # —
     # EDITORIAL #C #I
     # —   
     - title: Adottare il modello è semplice con il PNRR
-      background: medium
+      background: light
       menu: false
-      centered: false
+      centered: true
       #text: | #C
       #  Lorem **ipsum**
       components: 
@@ -388,16 +388,16 @@ components:
         - name: TextImageCta
           image: /images/400x300.png #I
           alt: Alt lorem ipsum #C
-          specular: true
+          specular: false
           #title: Lorem ipsum h3 #C
           text: | #C
-            Scopri su PA digitale 2026 se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
+            **Scopri su PA digitale 2026** se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
           ctas:
           - label: Vai su PA digitale 2026 #C
             url: https://padigitale2026.gov.it/ #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -490,7 +490,7 @@ components:
     - title: Hai bisogno di chiarimenti o supporto tecnico?
       bgColor: null
       menu: false
-      centered: false
+      centered: true
       #text: | #C
         #Lorem **ipsum**
       components: 
@@ -508,7 +508,7 @@ components:
             url: https://padigitale2026.gov.it/supporto #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -544,13 +544,13 @@ components:
           specular: true
           #title: ciao
           text: |
-            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore
+            **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
           - label: Vai su Forum Italia #C
             url: https://forum.italia.it/c/design/modello-comuni/ #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -564,13 +564,13 @@ components:
           specular: true
           #title: ciao
           text: |
-            Dialoga e collabora in tempo reale con i designer e i maintainer sul canale Slack dedicato #design-siti-comuni 
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-comuni 
           ctas:
           - label: Vai su Slack #C
             url: https://developersitalia.slack.com/archives/CME9AD8NN #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -584,13 +584,13 @@ components:
           specular: true
           #title: ciao
           text: |
-            Progetta e sviluppa con noi nuove soluzioni per i servizi digitali nazionali su GitHub
+            **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
           - label: Vai su GitHub #C
             url: https://github.com/italia/  #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
