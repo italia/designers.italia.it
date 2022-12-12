@@ -157,7 +157,7 @@ const FormNo = () => {
         <div className="px-3 px-lg-5 pt-5 pb-1 rounded shadow-lg">
           <div className="form-group">
             <label htmlFor="feedbackText" className="custom-label">Risposta</label>
-            <input type="text" className="form-control" id="feedbackText" name="feedbackText" />
+            <textarea className="form-control" rows="3" maxLength="200" id="feedbackText" name="feedbackText" />
             <small className="form-control form-text">Hai a disposizione 200 caratteri</small>
           </div>
         </div>
