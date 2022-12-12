@@ -2,7 +2,7 @@ import * as React from "react"
 import Template from "../../templates/tmpl-level-2"
 import {Seo} from "../../components/seo/seo"
 
-import Pagedata from "./linee-guida-sull-accessibilita.yaml"
+import Pagedata from "./linee-guida-accessibilita.yaml"
 
 const Level2 = ({ pageContext, location }) => {
   return(
