@@ -171,20 +171,25 @@ components:
     # —
     - title: I nostri obiettivi per il futuro
       headingLevel: 2
-      background: null
+      background: dark
       menu: false
       centered: true
       text: | #C
-        Sottotitolo o **lead tex**
+        Una roadmap delle attività, uno sguardo rivolto ad azioni e obiettivi futuri
       components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: "2023 Q1"
+          title: 2023 — Q1
           headingLevel: 3
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
-          specular: true
+          specular: false
+
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          # headingLevel: 4
           text: | #C
             #### Design system: rilascio UI kit 3.0.0
             Versione stabile del kit di progettazione interfaccia, con evidenza del nuovo modello di contribuzione.
@@ -197,24 +202,25 @@ components:
     # —
     - title: I risultati che abbiamo raggiunto
       headingLevel: 2
-      background: light
+      background: null
       menu: false
       centered: true
       text: | #C
         Le attività più importanti, gli obiettivi e i traguardi realizzati
+      
       components:
 
        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: 2022 Q4 #C
+          title: 2022 — Q4 #C
           headingLevel: 3
           noSpace: false
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
           specular: false
           title: "Rilascio design system del Paese, versione alpha" #C
           text: | #C
@@ -225,7 +231,7 @@ components:
           headingLevel: 4
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
-          specular: true
+          specular: false
           title: "Pubblicazione compendio sulle linee guida di design" #C
           text: | #C
             Pubblicazione nuove schede informative che raccordano linee guida, manuale operativo e strumenti.
@@ -235,7 +241,7 @@ components:
           headingLevel: 4
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
-          specular: true
+          specular: false
           title: "Rilascio del quadro sinottico servizi al cittadino" #C
           text: | #C
             Pubblicazione su Medium di articoli di descrizione e approfondimento del quadro sinottico.
@@ -266,7 +272,7 @@ components:
           headingLevel: 4
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
-          specular: true
+          specular: false
           title: "Design system: definizione supporto evolutivo Design React Kit" #C
           text: | #C
             Definizione supporto all'evoluzione della libreria community-driven che implementa il design system in React.
@@ -295,8 +301,8 @@ components:
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
           specular: false
           title: "Modelli: rilascio App di valutazione" #C
           text: | #C
@@ -319,7 +325,7 @@ components:
          
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: 2022 Q3 #C
+          title: 2022 — Q3 #C
           headingLevel: 3
           noSpace: false
 
@@ -338,14 +344,14 @@ components:
           headingLevel: 4
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
-          specular: true
+          specular: false
           title: "Progettazione quadro sinottico servizi al cittadino" #C
           text: | #C
             Progettazione di un quadro sinottico che crei un linguaggio comune tra chi progetta, chi sviluppa soluzioni di servizi digitali al cittadino e le amministrazioni che le devono gestire. Definizione dei diversi ambiti in cui viene usata la parola servizio. Definizione dei diversi livelli di granularità di un servizio e come vengono chiamati dal cittadino, dalla Pubblica Amministrazione e dagli ambienti tecnici. 
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: 2022 Q2 #C
+          title: 2022 — Q2 #C
           headingLevel: 3
           noSpace: false
 
@@ -423,7 +429,7 @@ components:
             Rilascio di una nuova versione del modello scuole in ottica PNRR investimento 1.4.1. Allineamento del modello al design system aggiornato, in particolare: allineamento template statici HTML e tema Wordpress a disposizione delle scuole italiane; aggiornamento della ricerca quantitativa e qualitativa a cura del Ministero dell'Istruzione.
           ctas:
           - label: Vai al modello Scuole #C
-            url: "modelli/scuole" #M
+            url: "/modelli/scuole/" #M
             blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -477,7 +483,7 @@ components:
               
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: 2022 Q1 #C
+          title: 2022 — Q1 #C
           headingLevel: 3
           noSpace: false
 
@@ -537,7 +543,7 @@ components:
           ctas:
           - label: Leggi la notizia #C
             url: "https://designers.italia.it/notizie/Altante-trasformazione-digitale-PA/" #M
-            blank: false #M #C true if new tab for external links
+            blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -546,3 +552,33 @@ components:
               size: sm
               addonClasses: ms-2
   
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: L'archivio storico
+      headingLevel: 2
+      background: light
+      menu: false
+      centered: true
+      # text: | #C
+      #   Da dove veniamo
+      components:
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          title: 2017 — 2021
+          headingLevel: 3
+          image: /images/400x300.png #I
+          alt: Alt lorem ipsum #C
+          specular: true
+          ctas:
+          - label: Vai alla pagina sul sito storico #C
+            url: "https://designers.italia.it/piano-attivita" #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
