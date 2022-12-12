@@ -204,11 +204,11 @@ serviziContent:
       linksHiFiTitle: Esempio domanda assegno di maternità
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19477&node-id=903%3A176540&viewport=466%2C48%2C0.15&scaling=scale-down&starting-point-node-id=903%3A176540"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=360%3A19477&node-id=903%3A176540&viewport=1122%2C116%2C0.13&scaling=scale-down&starting-point-node-id=903%3A176540"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19478&node-id=1018%3A238734&viewport=466%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1018%3A238734"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=79%3A240782&node-id=79%3A241580&viewport=1214%2C-2428%2C0.25&scaling=scale-down&starting-point-node-id=79%3A241580"
           external: true
     - title: "Iscrizione a graduatoria"
       subtitle: "Il flusso di interazione per le richieste di  prestazioni accessibili tramite una graduatoria redatta dall'amministrazione, come:"
@@ -242,11 +242,11 @@ serviziContent:
       linksHiFiTitle: Esempio richiesta permesso ZTL
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19474&node-id=903%3A139469&viewport=466%2C48%2C0.31&scaling=scale-down&starting-point-node-id=903%3A139469"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=360%3A19474&node-id=903%3A139469&viewport=-525%2C-857%2C0.25&scaling=scale-down&starting-point-node-id=903%3A139469"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19475&node-id=1018%3A236176&viewport=466%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1018%3A236176"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=79%3A222516&node-id=79%3A223525&viewport=2209%2C-6205%2C0.5&scaling=scale-down&starting-point-node-id=79%3A223525"
           external: true
     - title: "Pagamenti dovuti"
       subtitle: "Il flusso di interazione per adempire al pagamento di oneri, come:"
