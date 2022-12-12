@@ -222,11 +222,11 @@ serviziContent:
       linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19472&node-id=903%3A138696&viewport=466%2C48%2C0.4&scaling=scale-down&starting-point-node-id=903%3A138696"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=360%3A19473&node-id=21781%3A204859&viewport=647%2C805%2C0.06&scaling=scale-down&starting-point-node-id=21781%3A204859"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19473&node-id=1018%3A235159&viewport=466%2C48%2C0.21&scaling=scale-down&starting-point-node-id=1018%3A235159"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=79%3A200932&node-id=79%3A201522&viewport=1280%2C-1252%2C0.25&scaling=scale-down&starting-point-node-id=79%3A201522"
           external: true
     - title: "Permessi e autorizzazioni"
       subtitle: "Il flusso di interazione per le richiesta di  rilascio di permessi o autorizzazioni, come:"
