@@ -187,17 +187,17 @@ components:
     # —
     # IMG FULL COVER
     # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
+    # - menu: false #TOGGLE RIGHT SECTION INDEX
+    #   background: null
+    #   full: true
+    #   noSpace: true
+    #   title: false
+    #   text: false
+    #   components:
+    #     # IMG
+    #     - name: ImageIcons
+    #       image: /images/image-icons-fullwidth.jpg #I
+    #       alt: Descrizione immagine grande #C
 
     # —
     # EDITORIAL #C #I
@@ -205,7 +205,7 @@ components:
     - title: I progetti storici di Designers Italia
       background: null
       menu: false
-      centered: false
+      centered: true
       text: | #C
         Le soluzioni digitali cui Designers Italia e i designers e developers della community hanno contribuito 
       components: 
@@ -218,8 +218,7 @@ components:
           
             Integrare pagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati in tempo reale, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale. Per un cittadino, pagoPA permette di scegliere il metodo di pagamento tra i diversi a disposizione, a seconda delle comodità e del livello di digitalizzazione.
             La community di Designers Italia ha lavorato alla revisione del logo e del marchio pagoPA e alla revisione dell’esperienza utente. 
-            
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
+          
 
         # TXT BLOCK
         - name: TextImageCta
@@ -231,56 +230,61 @@ components:
 
           #### Linee guida SPID, asset e codice sorgente h4
           ctas:
-          - label: Regole tecniche #C
-            url: "https://docs.italia.it/italia/spid/spid-regole-tecniche/" #M
-            blank: true #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Bottone di accesso con scelta IDP integrata #C
-            url: "https://github.com/italia/spid-sp-access-button" #M
-            blank: true #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Icone, loghi e asset grafici #C
-            url: "https://github.com/italia/spid-graphics" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Layout standard di IDP #C
-            url: "https://github.com/italia/spid-idp-login-layout" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Playbook Ansible di SP #C
-            url: "https://github.com/italia/spid-sp-playbook" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+          # - label: Regole tecniche #C
+          #   url: "https://docs.italia.it/italia/spid/spid-regole-tecniche/" #M
+          #   blank: true #M #C true if new tab for external links
+          #   icon: 
+          #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm
+          #     addonClasses: ms-2
+          # - label: Bottone di accesso con scelta IDP integrata #C
+          #   url: "https://github.com/italia/spid-sp-access-button" #M
+          #   blank: true #M #C true if new tab for external links
+          #   icon: 
+          #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm
+          #     addonClasses: ms-2
+          # - label: Icone, loghi e asset grafici #C
+          #   url: "https://github.com/italia/spid-graphics" #M
+          #   blank: true 
+          #   icon:
+          #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm
+          #     addonClasses: ms-2
+
+        #  # TXT BLOCK
+        # - name: TextImageCta
+        #   #title: "SPID - Sistema pubblico di identità digitale" #C 
+        #   ctas:
+          # - label: Layout standard di IDP #C
+          #   url: "https://github.com/italia/spid-idp-login-layout" #M
+          #   blank: true 
+          #   icon:
+          #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm
+          #     addonClasses: ms-2
+          # - label: Playbook Ansible di SP #C
+          #   url: "https://github.com/italia/spid-sp-playbook" #M
+          #   blank: true 
+          #   icon:
+          #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm
+          #     addonClasses: ms-2
            
         # TXT BLOCK
         - name: TextImageCta
