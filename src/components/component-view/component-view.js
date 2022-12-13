@@ -110,6 +110,9 @@ const ComponentView = ({
             </h2>
             <div className="d-flex justify-content-between align-items-center">
               {content &&
+                <Checkbox id="wrap" label="Wrap" customStyle={'me-3'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
+              }
+              {content &&
                 <a href="" onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel}>
                   <Icon {...ICON_COPY_CODE}/>
                 </a>
@@ -124,7 +127,7 @@ const ComponentView = ({
 
           <div id={collId} className={accordionStyle} data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
             <div className="accordion-body p-0">
-              <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true}>
+              <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{style: {wordBreak: 'break-all', whiteSpace: 'pre-wrap'}}}>
                 {content}
               </SyntaxHighlighter>
             </div>
