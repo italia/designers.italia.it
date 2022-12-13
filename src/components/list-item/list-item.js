@@ -3,6 +3,7 @@ import Icon from "../icon/icon"
 import Avatar from "../avatar/avatar"
 import Link from "../link/link"
 import ImageResponsive from "../image-responsive/image-responsive"
+import './list-item.scss'
 
 const ListItem = ({
 	url,             //link of item
