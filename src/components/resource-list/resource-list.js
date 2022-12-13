@@ -32,7 +32,7 @@ const ResourceList = ({
   }
 
   return (
-    <div className="resource-list py-5">
+    <div className="resource-list pb-5">
       <div className="container-xxl">
         <div className="row justify-content-lg-center">
           <div className={addonClasses}>
