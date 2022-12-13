@@ -1,9 +1,9 @@
-import React, { useState, useRef } from "react"
+import React, { useCallback, useState, useRef } from "react"
 import ImageResponsive from "../../../image-responsive/image-responsive"
 import Link from "../../../link/link"
 import Icon from "../../../icon/icon"
 
-import Button from "../../../button/button"
+import FeedbackState from "../../state"
 
 import './form-no.scss'
 
@@ -31,21 +31,19 @@ const ICON_INFO = {
   hidden: true
 }
 
-const BTN_SEND = {
-  label: "Invia dettagli",
-  btnStyle: "primary",
-  type: "button",
-}
-
-const FormNo = () => {
+const FormNo = ({ onResult, state }) => {
   const rootRef = useRef(null);
 
-  const [who, setWho] = useState("");
-  const [from, setFrom] = useState("");
-  const [details, setDetails] = useState("");
+  const [who, setWho] = useState(null);
+  const [from, setFrom] = useState(null);
+  const [details, setDetails] = useState(null);
+
+  const handleClick = useCallback(() => {
+    onResult({who, from, details})
+  }, [who, from, details, onResult])
 
   return <div ref={rootRef}>
-    <form action="#">
+    <form>
       <ImageResponsive src="/images/kit-analitics.svg" alt="" />
       <h2 className="mb-3" id="feedbackNoTitle">Grazie per la tua risposta!</h2>
 
@@ -164,7 +162,21 @@ const FormNo = () => {
       </fieldset>
 
       <div className="mt-5">
-        <Button disabled={!who && !from && !details} {...BTN_SEND} />
+        <button
+          type="button"
+          className="btn btn-primary"
+          disabled={(!who && !from && !details) || state === FeedbackState.Loading}
+          onClick={handleClick}
+        >
+          {state === FeedbackState.Loading ? (
+            <>
+            <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true" />
+            <span className="sr-only">Invio in corso...</span>
+            </>
+          ) : (
+            "Invia dettagli"
+          )}
+        </button>
       </div>
     </form>
   </div>

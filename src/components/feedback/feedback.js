@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useCallback, useState, useRef } from "react"
 import { Modal } from "bootstrap-italia/dist/bootstrap-italia.esm"
-//import Button from "../button/button"
 import "./feedback.scss"
 import Icon from "../icon/icon"
 
+import FeedbackState from "./state"
 import FormNo from "./components/form-no/FormNo"
 
 const BTN_INTRO = {
@@ -18,29 +18,51 @@ const ICON_CLOSE = {
   size: "lg",
 }
 
-const ICON_CONFIRM = {
-  icon: "sprites.svg#it-check-circle",
+const ICON_RESULT = {
   color: "primary",
   size: "lg",
   align : "middle",
   addonClasses: "me-2"
 }
 
-const CLASS_SLIDE_ANIMEND = 'slidedown-animend'
-
-const Feedback = ({
-
-}) => {
-
+const Feedback = () => {
   const [isChecked, setIsChecked] = useState(false)
-  const [choiceVal, setChoiceVal] = useState(0)
-  const [slideHeight, setSlideHeight] = useState(0)
-  const [isSubmit, setIsSubmit] = useState(false)
+  const [feedbackState, setFeedbackState] = useState(FeedbackState.Start)
+  const [choiceVal, setChoiceVal] = useState("")
+  const [modal, setModal] = useState(null)
 
-  const sliderWrapperRef = useRef(null)
-  const sliderRef = useRef(null)
-  const modalYes = useRef(null)
   const modalNo = useRef(null)
+
+  const sendFeedback = useCallback(async (result = {}) => {
+    setFeedbackState(FeedbackState.Loading);
+    const feedback = choiceVal === "1" ? '+' : '-';
+
+    try {
+      const r = await fetch("https://feedback-designers-italia-rkhvp64pz-dip-trasformazione-digitale.vercel.app/api/messages", {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          feedback,
+          url: window.location.href,
+          ...result,
+        }),
+      });
+
+      if (!r.ok) {
+        throw new Error(`HTTP response: ${r.status}`);
+      }
+    } catch (e) {
+      setFeedbackState(FeedbackState.Error);
+      console.error(`Feedback request error: ${e}`);
+
+      return;
+    }
+
+    setFeedbackState(FeedbackState.Success);
+  }, [choiceVal]);
 
   const onChange = (evt) => {
     if (evt.currentTarget.checked) {
@@ -49,38 +71,71 @@ const Feedback = ({
     }
   }
 
-  const animEnd = () => {
-    if (!sliderWrapperRef.current.classList.contains(CLASS_SLIDE_ANIMEND)) {
-      sliderWrapperRef.current.classList.add(CLASS_SLIDE_ANIMEND)
-    }
-  }
+  const onModalResult = useCallback(async (result) => {
+    await sendFeedback(result);
 
-  const submit = () => {
-    setIsSubmit(true)
-  }
+    modal.hide()
+  }, [modal]);
 
   const openModal = () => {
-    if (parseInt(choiceVal) === 0) {
-      new Modal(modalNo.current).show()
+    if (choiceVal === "0") {
+      const modal = new Modal(modalNo.current);
+      modal.show();
+
+      setModal(modal);
     }
   }
 
-  useEffect(() => {
-    if (sliderRef.current) {
-      setSlideHeight(sliderRef.current.offsetHeight)
-    }
-  }, [isChecked])
+  const renderState = (feedbackState) => {
+    switch(feedbackState) {
+      case FeedbackState.Loading:
+      case FeedbackState.Start: return (
+        <>
+          <span className="feedback-title">Ciao, questa pagina è stata utile?</span>
+          <form className="mt-3 mt-md-3">
+            <fieldset className="d-flex">
+              <div className="form-check me-4">
+                <input name="feedbackValue" type="radio" id="feedbackValueYes" value="1" onChange={onChange} />
+                <label className="mb-0" htmlFor="feedbackValueYes">Si</label>
+              </div>
+              <div className="form-check">
+                <input name="feedbackValue" type="radio" id="feedbackValueNo" value="0" onChange={onChange} />
+                <label className="mb-0" htmlFor="feedbackValueNo">No</label>
+              </div>
+            </fieldset>
 
-  useEffect(() => {
-    if (sliderWrapperRef.current) {
-      sliderWrapperRef.current.addEventListener('transitionend', animEnd)
+            <button
+              type="button"
+              className="btn btn-primary mt-4"
+              disabled={!isChecked || feedbackState === FeedbackState.Loading}
+              onClick={() => { sendFeedback(); openModal(); }}
+            >
+              {feedbackState === FeedbackState.Loading ? (
+                <>
+                  <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true" />
+                  <span className="sr-only">Invio in corso...</span>
+                </>
+              ) : (
+                BTN_INTRO.label
+              )}
+            </button>
+          </form>
+        </>
+        )
+      case FeedbackState.Success: return (
+          <span className="feedback-confirm d-flex align-items-center">
+            <Icon icon="sprites.svg#it-check-circle" {...ICON_RESULT} />
+            Feedback inviato. Grazie.
+          </span>
+        )
+      case FeedbackState.Error: return (
+          <span className="feedback-confirm d-flex align-items-center">
+            <Icon {...ICON_RESULT} icon="sprites.svg#it-error" addonClasses="icon-danger me-2" />
+            C’è stato un problema nell’invio 😞<br/> Ti va di riprovare più tardi? 🙏
+          </span>
+        )
     }
-    return () => {
-      if (sliderWrapperRef.current) {
-        sliderWrapperRef.current.removeEventListener('transitionend ', animEnd)
-      }
-    }
-  }, [sliderWrapperRef])
+  };
 
   return (
     <section className="feedback bg-medium py-5 px-3 px-lg-0" aria-labelledby="feedbackSectionTitle" id="feedbackSection">
@@ -92,27 +147,8 @@ const Feedback = ({
                 <div className="card-body p-4 p-md-5">
                   <div className="step" id="feedbackIntro">
                     <h2 className="mb-0 h5 fw-semibold" id="feedbackSectionTitle">
-                      {!isSubmit && <span className="feedback-title">Ciao, questa pagina è stata utile?</span>}
-                      {isSubmit && <span className="feedback-confirm d-flex align-items-center"><Icon {...ICON_CONFIRM} /> Feedback inviato. Grazie.</span>}
-                    </h2>
-                    {!isSubmit && <form className="mt-3 mt-md-3">
-                      <fieldset className="d-flex">
-                        <div className="form-check me-4">
-                          <input name="feedbackValue" type="radio" id="feedbackValueYes" value="1" onChange={onChange} />
-                          <label className="mb-0" htmlFor="feedbackValueYes">Si</label>
-                        </div>
-                        <div className="form-check">
-                          <input name="feedbackValue" type="radio" id="feedbackValueNo" value="0" onChange={onChange} />
-                          <label className="mb-0" htmlFor="feedbackValueNo">No</label>
-                        </div>
-                      </fieldset>
-
-                      <div ref={sliderWrapperRef} className="slidedown" style={{height: slideHeight + 'px'}}>
-                        <div ref={sliderRef}>
-                          <button type="button" className="btn btn-primary mt-4" disabled={!isChecked} onClick={() => { openModal(); submit(); }}>{BTN_INTRO.label}</button>
-                        </div>
-                      </div>
-                    </form>}
+                      {renderState(feedbackState)}
+                   </h2>
                   </div>
                 </div>
               </div>
@@ -130,7 +166,7 @@ const Feedback = ({
               </button>
             </div>
             <div className="modal-body pt-0 pb-4 pb-md-5 px-md-4">
-              <FormNo />
+              <FormNo onResult={onModalResult} state={feedbackState} />
             </div>
           </div>
         </div>
