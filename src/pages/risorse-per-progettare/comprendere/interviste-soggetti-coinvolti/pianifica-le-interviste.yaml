@@ -264,7 +264,7 @@ components:
         headingLevel: 3
         listItems:
           - label: Piano di ricerca - interviste #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Documento google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Il riepilogo del perimetro della ricerca e della selezione dei partecipanti #C
             url: https://docs.google.com/document/d/1G2aq7tvl8ocvhSsZUJzIENd6s5DreTO7bxQSfAj2PDI/edit?usp=sharing #M
@@ -272,18 +272,15 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/document/d/1G2aq7tvl8ocvhSsZUJzIENd6s5DreTO7bxQSfAj2PDI/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Documento google: Piano di ricerca - interviste (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/pianifica-interviste/DI-Piano-di-ricerca-interviste.odt #M
+                ariaLabel: "Scarica ODT Piano di ricerca - interviste" #C #COMPILE FOR EACH ITEM
+                blank: false
+
           - label: Questionario di reclutamento #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Documento google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Un insieme di domande pronte all’uso per profilare e selezionare i partecipanti alle tue interviste #C
             url: https://docs.google.com/document/d/1NJgv3kgo9YUxAaHLzkMFxWUKbewS8VSijoLNcDh1vcQ/edit# #M
@@ -291,13 +288,9 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/document/d/1NJgv3kgo9YUxAaHLzkMFxWUKbewS8VSijoLNcDh1vcQ/edit# #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Documento google: Questionario di reclutamento (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/pianifica-interviste/DI-Questionario-di-reclutamento.odt #M
+                ariaLabel: "Scarica ODT Questionario di reclutamento" #C #COMPILE FOR EACH ITEM
+                blank: false
