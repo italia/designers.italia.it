@@ -121,8 +121,8 @@ components:
       text: In breve 
     text: | #C
       Con la fase di organizzazione definisci tutti gli aspetti necessari a **pianificare e gestire il tuo progetto digitale**. I kit di questa fase ti aiutano a capire **quali attività e competenze devi prevedere**, a stimare adeguatamente tempi e risorse, oltre ad adempiere alla **normativa privacy vigente**.
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    img: /images/risorse-per-progettare/icons/organizzare-large.svg #I
+    alt: "Organizzare è come si inizia" #C
     imgRatio: 4x3
     share:
       btnId: shareButtonHero
@@ -204,6 +204,9 @@ components:
 
       # CARD CHILDREN
       - title: Privacy #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_privacy.svg #I
+        iconImgAlt: "Proteggi l'utente, conta su di te" #C
         text: "Rispetta la privacy dei tuoi utenti quando realizzi un servizio digitale" #C
         titleSmall: false
         fullHeight: true
@@ -227,20 +230,20 @@ components:
   # ///////////////////
   sectionsEditorial2 :
 
-   # —
-    # IMG FULL COVER
-    # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
+  #  # —
+  #   # IMG FULL COVER
+  #   # —
+  #   - menu: false #TOGGLE RIGHT SECTION INDEX
+  #     background: null
+  #     full: true
+  #     noSpace: true
+  #     title: false
+  #     text: false
+  #     components:
+  #       # IMG
+  #       - name: ImageIcons
+  #         image: /images/image-icons-fullwidth.jpg #I
+  #         alt: Descrizione immagine grande #C
   
   # —
     # EDITORIAL #C #I
@@ -248,7 +251,7 @@ components:
     - title: Pianificare e coordinare un progetto digitale
       background: null
       menu: false
-      centered: false
+      centered: true
       text: | #C
         Organizza le attività per lo sviluppo di siti e servizi della Pubblica Amministrazione
       components: 

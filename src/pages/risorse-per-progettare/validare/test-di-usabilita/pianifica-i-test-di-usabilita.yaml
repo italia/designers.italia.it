@@ -147,8 +147,8 @@ components:
     # text: In breve
     # text: | #C
     #   Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    img: /images/risorse-per-progettare/icons/kit_testusability_pianifica.svg #I
+    alt: "Pianifica con attenzione" #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -260,41 +260,30 @@ components:
         title: Risorse operative #C
         headingLevel: 3
         listItems:
-          - label: Guida alla pianificazione dei test di usabilità #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Istruzioni operative per la preparazione di sessioni di test di usabilità #C
-            url: "#" #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
+          # - label: Guida alla pianificazione dei test di usabilità #C
+          #   srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          #   srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+          #   text: Istruzioni operative per la preparazione di sessioni di test di usabilità #C
+          #   url: "#" #M
+          #   blank: true
+          #   actions:
+          #     - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+          #       url: "#" #M
+          #       ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+          #       blank: true
+
           - label: Scheda partecipanti #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Documento google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Questionario minimo per la raccolta dei dati anagrafici dei partecipanti ai test di usabilità e descrivere il campione complessivo  di persone coinvolte #C
             url: https://docs.google.com/document/d/1qoZzPVaIDE8sKg1Fa6JKSG-EPsy_YTtgSlDaV7O4X2c/edit?usp=sharing #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                url: https://docs.google.com/document/d/1qoZzPVaIDE8sKg1Fa6JKSG-EPsy_YTtgSlDaV7O4X2c/edit?usp=sharing #M
+                ariaLabel: "Documento google: Scheda partecipanti (si apre in una nuova finestra)" #C 
                 blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/validare/test-usabilita/pianifica-test/DI-Scheda-partecipanti.odt #M
+                ariaLabel: "Scarica ODT Scheda partecipanti" #C #COMPILE FOR EACH ITEM
+                blank: false
