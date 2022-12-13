@@ -293,8 +293,8 @@ serviziContent:
       iconAlt: ""
       linksMidFiTitle: Tutti i prototipi disponibili
       linksMidFi:
-        - title: Vai alle risorse
-          url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
+        - title: In aggiornamento
+          url: ""
           external: true
   superAccordion:
     title: COME SI REALIZZANO
