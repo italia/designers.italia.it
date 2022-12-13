@@ -8,6 +8,7 @@ import React, { useState } from 'react';
 const Checkbox = ({
     chkId,
     label,
+    labelId,
     checked,
     customStyle,
     handleChange,
@@ -22,7 +23,7 @@ const Checkbox = ({
     return (
         <div className={"form-check " + customStyle} onClick={() => onClickEvent()}>
             <input id={chkId} type="checkbox" checked={isChecked} {...props}/>
-            <label htmlFor={chkId}>{label}</label>
+            <label htmlFor={labelId}>{label}</label>
         </div>
     );
 };
