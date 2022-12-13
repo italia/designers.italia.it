@@ -109,7 +109,7 @@ const Feedback = ({
 
                       <div ref={sliderWrapperRef} className="slidedown" style={{height: slideHeight + 'px'}}>
                         <div ref={sliderRef}>
-                          { isChecked && <button type="button" className="btn btn-primary mt-4" onClick={() => { openModal(); submit(); }}>{BTN_INTRO.label}</button> }
+                          <button type="button" className="btn btn-primary mt-4" disabled={!isChecked} onClick={() => { openModal(); submit(); }}>{BTN_INTRO.label}</button>
                         </div>
                       </div>
                     </form>}
