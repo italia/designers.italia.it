@@ -295,7 +295,7 @@ serviziContent:
       linksMidFi:
         - title: In aggiornamento
           url: ""
-          external: true
+          disabled: true
   superAccordion:
     title: COME SI REALIZZANO
     accordions:
