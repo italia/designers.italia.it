@@ -236,28 +236,22 @@ components:
       text: | #C
          La realizzazione dell’interfaccia in alta fedeltà (in inglese high-fidelity, abbr. hi-fi) è una delle fasi finali della realizzazione del prodotto. Si concentra su aspetti visivi di progettazione grafica, aggiungendo dettagli, stile grafico e animazioni. 
          
-         L’interfaccia viene costruita tenendo come punto di riferimento il wireframe in bassa fedeltà (in inglese, low-fi) precedentemente creato. La struttura generale viene trasformata e arricchita in modo da dare una resa reale del prodotto finale.
-         
-         È utile rendere interattive le schermate e crearne prototipi per svolgere test di usabilità e confermare o modificare le scelte fatte.
       components:
+
+        
+        # TXT BLOCK
+        - name: TextImageCta
+          text: | #C
+            L’interfaccia viene costruita tenendo come punto di riferimento il wireframe in bassa fedeltà (in inglese, low-fi) precedentemente creato. La struttura generale viene trasformata e arricchita in modo da dare una resa reale del prodotto finale.
+         
+            È utile rendere interattive le schermate e crearne prototipi per svolgere test di usabilità e confermare o modificare le scelte fatte.
 
         # TXT BLOCK
         - name: TextImageCta
           title: Lo UI kit #C
           text: | #C
-            Il Design UI kit è una libreria di componenti già pronti che puoi assemblare e adattare per costruire l’interfaccia di un servizio digitale. Ogni componente ha un numero di proprietà, come la forma e il colore, che possono essere combinati o variati per comunicare un diverso significato.
-            
-            I componenti dello UI kit sono raggruppati nelle seguenti categorie:
-            - tipografia;
-            - definizione di colori e loro applicazione;
-            - posizionamento e spaziature, con un sistema di griglie;
-            - icone;
-            - pulsanti;
-            - elementi di navigazione, come menu e liste di link;
-            - elementi per la visualizzazione di dati e contenuti;
-            - elementi di data entry, come campi di testo ed esempi di form.
+            Lo UI kit è una libreria di componenti già pronti che puoi assemblare e adattare per costruire l’interfaccia di un servizio digitale. Ogni componente ha un numero di proprietà, come la forma e il colore, che possono essere combinati o variati per comunicare un diverso significato.
 
-            Lo UI kit è ospitato su Sketch. Puoi gestire la libreria di componenti in modo trasversale a tutti i file che vuoi creare e aggiornarla facilmente. Puoi anche importare il file nei programmi per la prototipazione dell’interfaccia utente più diffusi, come Adobe XD, Studio o Figma.
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -270,42 +264,26 @@ components:
         headingLevel: 3
         listItems:
           - label: Nuovo UI kit - versione 3.0.0-beta.1 #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "File Figma: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: La libreria dei componenti per realizzare l’interfaccia utente, coerente con Bootstrap Italia #C
             url: "https://www.figma.com/community/file/1105848677422572920" #M
             blank: true
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "https://www.figma.com/community/file/1105848677422572920" #M
+                ariaLabel: "File Figma: Nuovo UI kit - versione 3.0.0-beta.1 (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
           - label: Design UI kit - legacy #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Repository GitHub: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: La repository GitHub con componenti e template ufficiali del design system della Pubblica Amministrazione Italiana #C
             url: "https://github.com/italia/design-ui-kit" #M
             blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "#" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                url: "https://github.com/italia/design-ui-kit" #M
+                ariaLabel: "Repository GitHub: Design UI kit - Legacy (si apre in una nuova finestra)" #C 
                 blank: true
 
 
