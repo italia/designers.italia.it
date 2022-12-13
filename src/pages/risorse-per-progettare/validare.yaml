@@ -121,8 +121,8 @@ components:
       text: In breve 
     text: | #C
       Con la fase di validazione **ottimizzi la tua soluzione digitale per iterazioni successive**, verificando le performance rispetto a standard condivisi di usabilità e accessibilità. I kit di questa fase ti aiutano a **condurre test con gli utenti e a monitorare con la web analytics** i principali indicatori di performance di un sito o di un servizio digitale.
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    img: /images/risorse-per-progettare/icons/validare-large.svg #I
+    alt: "Validare è l'inizio e la fine di ogni nuovo ciclo" #C
     imgRatio: 4x3
     share:
       btnId: shareButtonHero
@@ -211,6 +211,9 @@ components:
 
       # CARD CHILDREN
       - title: Test di usabilità #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_testusability.svg #I
+        iconImgAlt: "L'usabilità rende felici" #C
         text: "Rendi più usabile un servizio digitale osservando le interazioni degli utenti" #C
         titleSmall: false
         fullHeight: true
@@ -231,6 +234,9 @@ components:
             
       # CARD CHILDREN
       - title: Web analytics #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_analytics.svg #I
+        iconImgAlt: "Osserva con attenzione e cura" #C
         text: "Osserva e analizza  i comportamenti degli utenti partendo dai dati di utilizzo del servizio" #C
         titleSmall: false
         fullHeight: true
@@ -254,20 +260,20 @@ components:
   # ///////////////////
   sectionsEditorial2 :
 
-   # —
-    # IMG FULL COVER
-    # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
+  #  # —
+  #   # IMG FULL COVER
+  #   # —
+  #   - menu: false #TOGGLE RIGHT SECTION INDEX
+  #     background: null
+  #     full: true
+  #     noSpace: true
+  #     title: false
+  #     text: false
+  #     components:
+  #       # IMG
+  #       - name: ImageIcons
+  #         image: /images/image-icons-fullwidth.jpg #I
+  #         alt: Descrizione immagine grande #C
   
   # —
     # EDITORIAL #C #I
@@ -275,7 +281,7 @@ components:
     - title: Monitorare e valutare una soluzione digitale
       background: null
       menu: false
-      centered: false
+      centered: true
       text: | #C
         Ottimizza il design di siti e servizi in modo ciclico ed efficace
       components: 

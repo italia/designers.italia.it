@@ -121,8 +121,8 @@ components:
       text: In breve 
     text: | #C
       Con la fase di comprensione, **acquisisci consapevolezza del contesto** in cui si colloca il servizio digitale, **esplorando i processi e gli attori coinvolti per progettare l’esperienza d’uso** dal punto di vista delle persone che lo utilizzano. Grazie ai kit dedicati puoi **identificare figure ed elementi** coinvolti nell’erogazione del servizio pubblico, **organizzare e condurre una ricerca utente e definire i profili delle persone che lo utilizzano** e il modo in cui si relazionano al servizio. 
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    img: /images/risorse-per-progettare/icons/comprendere-large.svg #I
+    alt: "Comprendere è una questione di attenzione" #C
     imgRatio: 4x3
     share:
       btnId: shareButtonHero
@@ -224,6 +224,9 @@ components:
 
       # CARD CHILDREN
       - title: Analisi del contesto #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_analisiContesto.svg #I
+        iconImgAlt: "L'utente al centro del contesto" #C
         text: "Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze" #C
         titleSmall: false
         fullHeight: true
@@ -244,6 +247,9 @@ components:
       
        # CARD CHILDREN
       - title: Interviste soggetti coinvolti #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_interviste.svg #I
+        iconImgAlt: "Attivare dialoghi con le persone" #C
         text: "Intraprendi conversazioni costruttive con tutti gli attori coinvolti nel contesto di servizio" #C
         titleSmall: false
         fullHeight: true
@@ -264,6 +270,9 @@ components:
 
         # CARD CHILDREN
       - title: Esperienza utente #C
+        iconImg: /images/risorse-per-progettare/icons/kit_esperienzautente.svg #I
+        imgRatio: 16x9
+        iconImgAlt: "L'esperienza guida gli utenti ai loro bisogni" #C
         text: "Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale" #C
         titleSmall: false
         fullHeight: true
@@ -284,6 +293,9 @@ components:
 
         # CARD CHILDREN
       - title: Questionario online #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_questionario.svg #I
+        iconImgAlt: "Modelli utili a capire" #C      
         text: "Svolgi un’indagine per raccogliere informazioni utili sul punto di vista degli utenti" #C
         titleSmall: false
         fullHeight: true
@@ -308,20 +320,20 @@ components:
   # ///////////////////
   sectionsEditorial2 :
   
-    # —
-    # IMG FULL COVER
-    # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
+    # # —
+    # # IMG FULL COVER
+    # # —
+    # - menu: false #TOGGLE RIGHT SECTION INDEX
+    #   background: null
+    #   full: true
+    #   noSpace: true
+    #   title: false
+    #   text: false
+    #   components:
+    #     # IMG
+    #     - name: ImageIcons
+    #       image: /images/image-icons-fullwidth.jpg #I
+    #       alt: Descrizione immagine grande #C
   
     # —
     # EDITORIAL #C #I
@@ -329,7 +341,7 @@ components:
     - title: Adottare un approccio con la persona al centro
       background: null
       menu: false
-      centered: false
+      centered: true
       text: | #C
         Comprendere le necessità per progettare servizi pubblici digitali migliori
       components: 
