@@ -26,7 +26,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Progettare - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. #C
+  description : "Progetta il servizio immaginando e prototipando l’interazione fra utente e touchpoint digitale" #C
   image : null #I
   twitterImage: null #I
   canonical: null
@@ -104,15 +104,15 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Level1
+        - label : Risorse per progettare 
           active: false
-          url: /level1/
-        - label : Level2
+          url: /risorse-per-progettare/
+        - label : Progettare
           active: true
-    title: Level 2 #C
-    subtitle: Subtitle #C
+    title: Progettare #C
+    subtitle: "Progetta il servizio immaginando e prototipando l’interazione fra utente e touchpoint digitale" #C
     tag:
-        label: tag  #C
+        label: Fase di progettazione  #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -120,6 +120,7 @@ components:
         size: sm
       text: In breve 
     text: | #C
+      I kit della fase di progettazione sono dedicati **all’impostazione di elementi e funzionalità del servizio**, emersi dalla ricerca utente: **dall'architettura dell'informazione** alla definizione dei contenuti, fino alla **simulazione dell'esperienza utente** grazie ai prototipi a bassa fedeltà dell’interfaccia. 
       Lorem **ipsum** 
     img: /images/risorse-per-progettare/icons/progettare-large.svg #I
     alt: "Progettare è una questione di cura" #C
@@ -148,15 +149,19 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Argomento
+        - label: Architettura informativa
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Co-progettazione
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Ottimizzazione SEO
+          url: "#"
+          color: primary
+          size: lg
+        - label: Content design
           url: "#"
           color: primary
           size: lg
@@ -166,7 +171,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il level 2 #C
+          label: Scopri i kit di questa fase #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -175,8 +180,36 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "level3/"
-              label: Level 3 #C
+            - url: "architettura-dell-informazione/"
+              label: Architettura dell'informazione #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "co-progettazione/"
+              label: Co-progettazione #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "contenuti-e-linguaggio/"
+              label: Contenuti e linguaggio #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "prototipazione/"
+              label: Prototipazione #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
+            - url: "seo/"
+              label: SEO #C
               iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -186,163 +219,29 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial:
-
-    # —
-    # IMG FULL COVER
-    # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
-
-    # —
-    # EDITORIAL #C #I
-    # —   
-    - title: Lorem ipsum h2
-      background: null
-      menu: false
-      centered: false
-      text: | #C
-        Lorem **ipsum**
-      components: 
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem **ipsum**.
-
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+  # sectionsEditorial:
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Esplora lorem ipsum #C
-    text: Lorem ipsum #C
+    title: Esplora e usa i kit di design #C
+    text: #C
     col4: false
-    nospace: true
+    nospace: false
 
     # CARDS
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+      - title: Architettura dell'informazione #C
+        text: "Organizza e classifica i contenuti di un touchpoint e definisci le principali funzioni del servizio" #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "architettura-dell-informazione/" #M
         tag:
-          label: Tag #C
+          label: Kit di design #C
         share: #AUTO
           btnId: shareButtonCard1
           button:
@@ -355,14 +254,14 @@ components:
           list:
             isShare: true
       
-      # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+       # CARD CHILDREN
+      - title: Co-progettazione #C
+        text: "Coinvolgi stakeholder e utenti del servizio in una sessione di co-progettazione utilizzando un approccio aperto" #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "co-progettazione/" #M
         tag:
-          label: Tag #C
+          label: Kit di design #C
         share: #AUTO
           btnId: shareButtonCard2
           button:
@@ -375,16 +274,56 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN
-      - title: Lorem ipsum #C
-        text: Lorem ipum #C
+        # CARD CHILDREN
+      - title: Contenuti e linguaggio #C
+        text: "Definisci i contenuti del tuo progetto e usa un linguaggio chiaro e inclusivo" #C
         titleSmall: false
         fullHeight: true
-        url: "#" #M
+        url: "contenuti-e-linguaggio/" #M
         tag:
-          label: Tag #C
+          label: Kit di design #C
         share: #AUTO
           btnId: shareButtonCard3
+          button:
+            ariaLabel: Condividi
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+        # CARD CHILDREN
+      - title: Prototipazione #C
+        text: "Progetta l’esperienza-utente del servizio realizzando un prototipo a bassa fedeltà dell’interfaccia" #C
+        titleSmall: false
+        fullHeight: true
+        url: "prototipazione/" #M
+        tag:
+          label: Kit di design #C
+        share: #AUTO
+          btnId: shareButtonCard4
+          button:
+            ariaLabel: Condividi
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+        # CARD CHILDREN
+      - title: SEO #C
+        text: "Ottimizza i contenuti in base ai bisogni e alle priorità che gli utenti esprimono durante le ricerche" #C
+        titleSmall: false
+        fullHeight: true
+        url: "seo/" #M
+        tag:
+          label: Kit di design #C
+        share: #AUTO
+          btnId: shareButtonCard4
           button:
             ariaLabel: Condividi
             addonStyle: icon-only-drop
@@ -401,232 +340,38 @@ components:
   # ///////////////////
   sectionsEditorial2 :
   
-  # —
+    # —
+    # IMG FULL COVER
+    # —
+    - menu: false #TOGGLE RIGHT SECTION INDEX
+      background: null
+      full: true
+      noSpace: true
+      title: false
+      text: false
+      components:
+        # IMG
+        - name: ImageIcons
+          image: /images/image-icons-fullwidth.jpg #I
+          alt: Descrizione immagine grande #C
+  
+    # —
     # EDITORIAL #C #I
-    # —   
-    - title: Lorem ipsum h2
+    # — 
+    - title: Aprirsi al confronto per una progettazione aperta e collaborativa
       background: null
       menu: false
       centered: false
       text: | #C
-        Lorem **ipsum**
+        Progettare servizi pubblici facendo tesoro delle esperienze altrui
       components: 
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Lorem ipsum h3 #C
+          title: Come rendere efficace la progettazione #C
           text: | #C
-            Lorem **ipsum**.
+            Per rendere efficace la progettazione di servizi pubblici digitali è utile mantenere **un approccio aperto, inclusivo e costruttivo**.
 
-            ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
+            Questa strategia promuove la **collaborazione attiva tra i soggetti interessati ai processi di trasformazione digitale della PA**, grazie alla condivisione pubblica di informazioni, conoscenze, strumenti e risorse progettuali. 
 
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-            ###### Titoletto interno h6
-            Lorem ipsum.
-
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ##### Titoletto interno h5
-            Lorem ipsum.
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Lorem ipsum
-
-            #### Titoletto interno h4
-            Lorem ipsum
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-          - label: Comuni interattivi
-            icon: sprites.svg#it-tool
-            number: 1200
-
-        # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-        # HEADING STARD WITH H4 JUST IN CASE
-        - name: TextImageCta
-          text: |
-            #### Titoletto interno h4
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            Lorem ipsum.
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Lorem ipsum h3 #C
-          text: | #C
-            Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    # —
-    # EDITORIAL #C #I
-    # —   
-    - menu: false
-      centered: true
-      background: null
-      title: Lorem ipsum #C
-      text: | #C
-        Lorem **ipsum** 
-      components:
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
-          specular: true
-          title: ciao
-          text: |
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium
-          ctas:
-          - label: Fai lorem ipsum #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            url: "#" #M
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-    # —
-    # EDITORIAL #C #I
-    # — 
-    - menu: false
-      centered: true
-      background: light
-      title: Lorem ipsum #C
-      text: | #C
-        Lorem **ipsum**
-      components:
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/ItForum.svg
-          alt: Alt lorem ipsum #C
-          specular: true
-          #title: #C
-          text: | #C
-            Unisciti alla discussione sul design dei servizi digitali con gli esperti del settore.
-          ctas:
-          - label: Vai su Forum Italia #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              size: sm
-              hidden: true
-              addonClasses: ms-2
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/Slack.svg
-          alt: Alt lorem ipsum #C
-          specular: true
-          #title: #C
-          text: | #C
-            Dialoga e collabora in tempo reale con i designer e i maintainer sui canali dedicati al #design.
-          ctas:
-          - label: "Entra nei canali #design" #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              size: sm
-              hidden: true
-              addonClasses: ms-2
-        - name: TextImageCta
-          image: /images/Github.svg
-          alt: Alt lorem ipsum #C
-          specular: true
-          #title: #C
-          text: | #C
-            Disegna e sviluppa con noi nuove soluzioni per i servizi digitali nazionali.
-          ctas:
-          - label: "Visita github.com/italia" #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              size: sm
-              hidden: true
-              addonClasses: ms-2
-
+            La progettazione aperta consiste, quindi, nell’utilizzare le risorse progettuali e tecnologiche già condivise nella community, per **valorizzare il lavoro già svolto** da altri, migliorare qualità, usabilità e funzionalità dei servizi digitali grazie a **buone pratiche condivise e ben documentate**.
