@@ -108,7 +108,7 @@ const Feedback = () => {
               type="button"
               className="btn btn-primary mt-4"
               disabled={!isChecked || feedbackState === FeedbackState.Loading}
-              onClick={() => { sendFeedback(); openModal(); }}
+              onClick={async () => { await sendFeedback(); openModal(); }}
             >
               {feedbackState === FeedbackState.Loading ? (
                 <>
