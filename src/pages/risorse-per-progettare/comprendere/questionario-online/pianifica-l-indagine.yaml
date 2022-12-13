@@ -260,26 +260,23 @@ components:
         headingLevel: 3
         listItems:
           - label: Piano di ricerca - questionari #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Documento google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Il riepilogo del perimetro della ricerca e della selezione dei partecipanti #C
             url: https://docs.google.com/document/d/1WpM1qTHUUy8oDbKs_GXXpH6hgKquLrEgfIympfjhbE4/edit #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/presentation/d/1kxsFXSesX2kCOR1L3SbPfYqFInFhf_A7RW3_2xZ943o/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                url: https://docs.google.com/document/d/1WpM1qTHUUy8oDbKs_GXXpH6hgKquLrEgfIympfjhbE4/edit #M
+                ariaLabel: "Documento googole: Piano di ricerca - questionari (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/questionario-online/pianifica-l-indagine/DI-Piano-di-ricerca-questionario.odt #M
+                ariaLabel: "Scarica ODT Piano di ricerca - questionari" #C #COMPILE FOR EACH ITEM
+                blank: false
+
           - label: Struttura del questionario #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Documento google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Un insieme di domande pronte all’uso per profilare e selezionare i partecipanti alle tue interviste #C
             url: https://docs.google.com/document/d/1sJVKi9JL2RMGXBporm_zjUXJ-zRjvKSmmKOKWKYDeEY/edit?usp=sharing #M
@@ -287,13 +284,9 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/document/d/1sJVKi9JL2RMGXBporm_zjUXJ-zRjvKSmmKOKWKYDeEY/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Documento google: Struttura del questionario (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/questionario-online/pianifica-l-indagine/DI-Struttura-questionario.odt #M
+                ariaLabel: "Scarica ODT Struttura del questionario" #C #COMPILE FOR EACH ITEM
+                blank: false

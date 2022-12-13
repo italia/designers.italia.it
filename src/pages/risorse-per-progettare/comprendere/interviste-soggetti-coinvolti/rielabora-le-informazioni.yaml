@@ -262,7 +262,7 @@ components:
         headingLevel: 3
         listItems:
           - label: Tabella di analisi dei risultati #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Foglio google:" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: I fogli di lavoro dove riportare le evidenze delle interviste per elaborare le conclusioni #C
             url: https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing #M
@@ -270,16 +270,13 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/spreadsheets/d/1zQrPhJIl0deg8YHbm87Y7GvCbDwxBNO1OIA33DYWsXE/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Foglio google: Tabella di analisi dei risultati (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Tabella-di-Analisi-dei-risultati.ods #M
+                ariaLabel: "Scarica ODS Tabella di analisi dei risultati" #C #COMPILE FOR EACH ITEM
+                blank: false
+
           - label: Presentazione dei risultati delle interviste #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
@@ -289,32 +286,26 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/presentation/d/1h9O7JOPhye95nZ2f4zDdzVrtVPmpry6yRH-5R9Y_bEg/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Presentazione google: Presentazione dei risultati delle interviste (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-          - label: Consenso al trattamento dei dati #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+              - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Presentazione-risultati-interviste.odp #M
+                ariaLabel: "Scarica ODP Presentazione dei risultati delle interviste" #C #COMPILE FOR EACH ITEM
+                blank: false
+
+          - label: Relazione delle conclusioni della ricerca #C
+            srBefore: "Documento google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il modulo precompilato da personalizzare in base alla ricerca e far firmare prima dell’intervista #C
-            url: https://docs.google.com/document/d/1c4Ea2ni0aq4_4zq9kaojtrFRH5QQGKhYZvCo2b1mr2U/edit?usp=sharing #M
+            text: Un modello di struttura per la relazione di sintesi dei risultati delle interviste #C
+            url: https://docs.google.com/document/d/1ufkimx2_10Qe4APacfcI6vjoPbMpPwltC2-2MUpUckA/edit?usp=sharing #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/document/d/1c4Ea2ni0aq4_4zq9kaojtrFRH5QQGKhYZvCo2b1mr2U/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                size: lg
+                url: https://docs.google.com/document/d/1ufkimx2_10Qe4APacfcI6vjoPbMpPwltC2-2MUpUckA/edit?usp=sharing #M
+                ariaLabel: "Documento google: Relazione delle conclusioni della ricerca (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  "#" #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Relazione-conclusioni-della-ricerca.odt #M
+                ariaLabel: "Scarica ODT Relazione delle conclusioni della ricerca" #C #COMPILE FOR EACH ITEM
+                blank: false
