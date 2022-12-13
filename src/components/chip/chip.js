@@ -31,7 +31,7 @@ const Chip = (
 
 	return (
 		<Link to={url} className={styles} target={blank ? '_blank' : undefined}>
-			<span className="chip-label"><span class="visually-hidden">{screenReaderText}</span> {children}</span>
+			<span className="chip-label"><span className="visually-hidden">{screenReaderText}</span> {children}</span>
 		</Link>
 	)
 }
