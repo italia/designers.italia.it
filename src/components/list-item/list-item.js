@@ -84,7 +84,7 @@ const ListItem = ({
 	let icons
 	if(actions) {
 		icons =  actions.map((icons,index) => {
-			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} aria-label={icons.ariaLabel} key={"iconsation-"+index} ><Icon {...icons}></Icon></Link>
+			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} aria-label={icons.ariaLabel} key={"iconsaction-"+index} ><Icon {...icons}></Icon></Link>
 		})
 		actionsRendered = <span className="it-multiple flex-shrink-0">{icons}</span>
 	}
