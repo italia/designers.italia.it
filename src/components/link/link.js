@@ -11,9 +11,10 @@ const Link= ({ children, to, activeClassName, partiallyActive, ...other }) => {
   // const internal = /^\/(?!\/)/.test(to) <--- from example
   const external = /^http/.test(to)
   const anchor = /#[^\s,]+/.test(to)
+  const file = /\.[0-9a-z]+$/i.test(to)
 
   // Use Gatsby Link for internal links, and <a> for others
-  if (external || anchor) {
+  if (external || anchor || file) {
     return (
       <a href={to} {...other}>
         {children}
