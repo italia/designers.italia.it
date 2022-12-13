@@ -58,16 +58,26 @@ const Feedback = () => {
       setFeedbackState(FeedbackState.Error);
       console.error(`Feedback request error: ${e}`);
 
-      return;
+      return false;
     }
 
     setFeedbackState(FeedbackState.Success);
+
+    return true;
   }, [choiceVal]);
 
   const onChange = (evt) => {
     if (evt.currentTarget.checked) {
       setIsChecked(true)
       setChoiceVal(evt.currentTarget.value)
+    }
+  }
+
+  const onSend = async () => {
+    const res = await sendFeedback();
+
+    if (res) {
+      openModal();
     }
   }
 
@@ -108,7 +118,7 @@ const Feedback = () => {
               type="button"
               className="btn btn-primary mt-4"
               disabled={!isChecked || feedbackState === FeedbackState.Loading}
-              onClick={async () => { await sendFeedback(); openModal(); }}
+              onClick={onSend}
             >
               {feedbackState === FeedbackState.Loading ? (
                 <>
