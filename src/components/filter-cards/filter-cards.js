@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "../card/card";
 import Button from "../button/button";
+import LabelInput from "../labelinput/labelinput";
+
 
 import "./filter-cards.scss"
 
@@ -56,10 +58,12 @@ const FilterCards = ({
             <form className="" action="#">
               <div className="row">
                 <div className="col-7 col-md-9 col-lg-10">
-                  <div className="form-group">
-                    <label htmlFor={idInput}>Filtra</label>
-                    <input type="text" id={idInput} className="form-control"/>
-                  </div>
+                  <LabelInput 
+                    id={idInput} 
+                    label='Filtra tutto' 
+                    onChange={(e) => console.log(e.value)}
+                    value="Esempio di ricerca">
+                  </LabelInput>
                 </div>
                 <div className="col-5 col-md-3 col-lg-2">
                   <Button {...button}/>
