@@ -38,7 +38,7 @@ const Feedback = () => {
     const feedback = choiceVal === "1" ? '+' : '-';
 
     try {
-      const r = await fetch("https://feedback-designers-italia-rkhvp64pz-dip-trasformazione-digitale.vercel.app/api/messages", {
+      const r = await fetch("https://feedback.designers.italia.it/api/messages", {
         method: 'POST',
         headers: {
           Accept: 'application/json',
