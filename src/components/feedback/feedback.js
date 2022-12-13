@@ -4,7 +4,6 @@ import { Modal } from "bootstrap-italia/dist/bootstrap-italia.esm"
 import "./feedback.scss"
 import Icon from "../icon/icon"
 
-import FormYes from "./components/form-yes/FormYes"
 import FormNo from "./components/form-no/FormNo"
 
 const BTN_INTRO = {
@@ -117,21 +116,6 @@ const Feedback = ({
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div ref={modalYes} className="modal fade" tabIndex="-1" role="dialog" id="feedbackYes" aria-labelledby="feedbackYesTitle">
-        <div className="modal-dialog modal-lg modal-dialog-centered " role="document">
-          <div className="modal-content">
-            <div className="modal-header">
-              <button className="btn-close flex-shrink-0" type="button" data-bs-dismiss="modal" aria-label="Chiudi finestra modale">
-                <Icon {...ICON_CLOSE} />
-              </button>
-            </div>
-            <div className="modal-body pt-0 pb-4 pb-md-0 px-md-4">
-              <FormYes />
             </div>
           </div>
         </div>
