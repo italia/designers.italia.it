@@ -280,11 +280,11 @@ serviziContent:
       linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=360%3A19481&node-id=903%3A181261&viewport=966%2C501%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19482&node-id=1136%3A280880&viewport=466%2C48%2C0.05&scaling=scale-down&starting-point-node-id=1136%3A280880"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=106%3A205561&node-id=106%3A206503&viewport=1680%2C-1563%2C0.25&scaling=scale-down&starting-point-node-id=106%3A206503"
           external: true
     - title: "Esplora tutti i protitipi"
       subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> utili alla comprensione e alla progettazione dei flussi di servizio, dai modelli a media fedeltà agli esempi reali ad alta fedeltà."
