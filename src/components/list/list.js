@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react"
+
 import ListItem from "../list-item/list-item"
 import Link from "../link/link"
 import "./list.scss"
@@ -47,7 +48,7 @@ const List = React.forwardRef(({
   if (isShare) {
     const iconProps = {color: 'primary', size: 'sm'}
     const onCopyLink = async () => {
-      return await navigator.clipboard.writeText(currentUrl);
+      await navigator.clipboard.writeText(currentUrl);
     }
 
     children = (
@@ -66,6 +67,7 @@ const List = React.forwardRef(({
           iconRight={true} isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
           url={`https://twitter.com/intent/tweet/?text=${currentTitle}&url=${currentUrl}`}
+          blank="true"
         />
         <ListItem
           label="Condividi su LinkedIn"
@@ -73,6 +75,7 @@ const List = React.forwardRef(({
           iconRight={true} isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
           url={`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`}
+          blank="true"
         />
       </>
     )
