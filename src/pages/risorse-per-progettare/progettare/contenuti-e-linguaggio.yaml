@@ -284,7 +284,7 @@ components:
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come progettare, creare e revisionare contenuti utilizzando un linguaggio chiaro, inclusivo e coerente.
           ctas:
           - label: "Vai all’argomento Linguaggio” #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/prototipare-un-servizio.html #M
+            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/linguaggio.html #M
             blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -302,7 +302,7 @@ components:
   highlightCards:
     id: HC1
     title: Le attività di questo kit di design #C
-    text: Esplora le attività di questo kit di design per definire i flussi di interazione e realizzare un prototipo del servizio digitale #C
+    text: Esplora le attività di questo kit di design per progettare contenuti con un linguaggio definito e nel rispetto della privacy delle persone #C
     col4: false
     nospace: false
     nopadtop: true
@@ -311,14 +311,14 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Definisci i flussi di interazione #C
+      - title: Analizza i contenuti esistenti #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "definisci-i-flussi-di-interazione/" #M
+        url: "analizza-i-contenuti-esistenti/" #M
         text: | #C
-          Identifica le azioni che un utente compie per interagire con con un servizio digitale, utili a individuare eventuali complessità e a scegliere soluzioni tecnologiche appropriate.
+          Analizza i contenuti di un servizio digitale per verificare che soddisfino le esigenze di utenti e stakeholder e definisci il processo di creazione, revisione, organizzazione, aggiornamento, traduzione e migrazione a una nuova interfaccia.
         tag:
           label: Attività del kit #C
         share: #AUTO
@@ -334,14 +334,14 @@ components:
             isShare: true
 
       # CARD CHILDREN ACTION
-      - title: Realizza un prototipo in bassa fedeltà #C
+      - title: Crea il linguaggio del touchpoint digitale #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
-        url: "realizza-un-prototipo-in-bassa-fedelta/" #M
+        url: "crea-il-linguaggio-del-touchpoint-digitale/" #M
         text: | #C
-          Imposta la struttura dell’interfaccia con gli elementi essenziali per verificare l’efficienza e l’efficacia di un servzio digitale, senza preoccuparti dell’aspetto grafico. 
+          Progetta e ottimizza i contenuti dell'interfaccia digitale di un servizio, coinvolgendo utenti e stakeholder nel processo, svolgendo un esercizio di editing collaborativo e seguendo la guida alla linguaggio della Pubblica Amministrazione. 
         tag:
           label: Attività del kit #C
         share: #AUTO
@@ -355,7 +355,29 @@ components:
               color: secondary
           list:
             isShare: true
-
+           
+      # CARD CHILDREN ACTION
+      - title: Rispetta la privacy quando usi i contenuti #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        url: "rispetta-la-privacy-quando-usi-i-contenuti/" #M
+        text: | #C
+          Quando utilizzi immagini o video originali che ritraggono delle persone, devi ottenere il loro consenso all'utilizzo e alla pubblicazione. Utilizza il modello di liberatoria redatto ai sensi dell’art. 13 del Regolamento (UE) 2016/679. 
+        tag:
+          label: Attività del kit #C
+        share: #AUTO
+          btnId: shareButtonCard2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
      
 
    
