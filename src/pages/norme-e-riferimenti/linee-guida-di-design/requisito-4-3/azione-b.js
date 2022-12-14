@@ -1,10 +1,10 @@
 import * as React from "react"
-import Template from "../../../templates/tmpl-level-3"
-import {Seo} from "../../../components/seo/seo"
+import Template from "../../../../templates/tmpl-level-4"
+import {Seo} from "../../../../components/seo/seo"
 
-import Pagedata from "./4-3-semplicita-di-consultazione-ed-esperienza-d-uso.yaml"
+import Pagedata from "./azione-b.yaml"
 
-const Level3 = ({ pageContext,location }) => {
+const Level4 = ({ pageContext,location }) => {  	
   return(
     <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
       {/* place extra components / HTML here */}
@@ -12,7 +12,7 @@ const Level3 = ({ pageContext,location }) => {
   )
 }
 
-export default Level3
+export default Level4
 
 export const Head = () => (
 	<Seo
