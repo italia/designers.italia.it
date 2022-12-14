@@ -2,10 +2,10 @@
 # folder structure:
 # levelX.js < connector, just for developers
 # levelX.yaml < contents and settings of the page
-# levelX/ < folder where are the childrens, same structure 
+# levelX/ < folder where are the childrens, same structure
 # important: each level has its dedicated template from level1 to level4!
 #
-# to edit search for 
+# to edit search for
 # #C to locate all editable content
 # #M for links/navigation
 # #I for images/media
@@ -17,9 +17,10 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level1
+  activeLabel: Progetto
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -60,7 +61,7 @@ lastUpdate:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-  
+
   # ///////////////////
   # HERO
   # ///////////////////
@@ -72,7 +73,7 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Progetto #C 
+        - label : Progetto #C
           active: true
     title: Il progetto Designers Italia #C
     subtitle: Siamo il punto di riferimento per la progettazione dei servizi digitali pubblici della Pubblica Amministrazione #C
@@ -80,9 +81,9 @@ components:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve 
+      text: In breve
     text: | #C
-      Designers Italia nasce nel 2017 per facilitare l’adesione delle PA italiane a una cultura della progettazione e a processi di design dei servizi pubblici centrati sulle necessità delle persone. Da allora e insieme alla community, continuiamo a proporre strumenti operativi e di indirizzo dedicati alla PA e ai suoi fornitori, con l’obiettivo di innalzare gli standard di qualità dei siti e dei servizi digitali del Paese.  
+      Designers Italia nasce nel 2017 per facilitare l’adesione delle PA italiane a una cultura della progettazione e a processi di design dei servizi pubblici centrati sulle necessità delle persone. Da allora e insieme alla community, continuiamo a proporre strumenti operativi e di indirizzo dedicati alla PA e ai suoi fornitori, con l’obiettivo di innalzare gli standard di qualità dei siti e dei servizi digitali del Paese.
     # img: /images/400x300.png #I
     # alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -98,12 +99,12 @@ components:
           addonClasses: ms-3
       list:
         isShare: true
-    
+
     # KANGAROO: METADATA
     kangaroo:
       id: metadati-e-link
       titleSr: Metadati e link per approfondire
-      tagsLabel : Parliamo di 
+      tagsLabel : Parliamo di
       color : white
       icon:
         icon: sprites.svg#it-horn
@@ -118,7 +119,7 @@ components:
           url: "#"
           color: primary
           size: lg
-      
+
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
@@ -165,14 +166,14 @@ components:
     title: Diffondiamo la cultura della progettazione nella PA italiana #C
     background: null
     text: | #C
-      Il design è la disciplina che si occupa di risolvere problemi complessi, in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella Pubblica Amministrazione. Insieme alla community abbiamo l’obiettivo di **diffondere una cultura della progettazione** grazie alla quale le pubbliche amministrazioni italiane possono progettare e realizzare **siti e servizi digitali semplici, accessibili, inclusivi e che riducono le disuguaglianze**. 
+      Il design è la disciplina che si occupa di risolvere problemi complessi, in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella Pubblica Amministrazione. Insieme alla community abbiamo l’obiettivo di **diffondere una cultura della progettazione** grazie alla quale le pubbliche amministrazioni italiane possono progettare e realizzare **siti e servizi digitali semplici, accessibili, inclusivi e che riducono le disuguaglianze**.
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     moreText: | #C
-     Per fare questo, mettiamo a disposizione guide, risorse e modelli adatti ad affrontare la complessità di questo scenario: utilizziamo un approccio sistemico, aperto e centrato sull’utente, fondato su un processo che prevede cinque fasi di progettazione. 
-     Siamo il principale punto di riferimento italiano per la progettazione dei servizi digitali delle amministrazioni pubbliche e **strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA, ai sensi dell'art. 53, comma 1 ter - Siti internet delle pubbliche amministrazioni del Codice dell'amministrazione digitale**. 
+     Per fare questo, mettiamo a disposizione guide, risorse e modelli adatti ad affrontare la complessità di questo scenario: utilizziamo un approccio sistemico, aperto e centrato sull’utente, fondato su un processo che prevede cinque fasi di progettazione.
+     Siamo il principale punto di riferimento italiano per la progettazione dei servizi digitali delle amministrazioni pubbliche e **strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA, ai sensi dell'art. 53, comma 1 ter - Siti internet delle pubbliche amministrazioni del Codice dell'amministrazione digitale**.
 
-     Designers Italia è un progetto a cura del [Dipartimento per la trasformazione digitale](https://innovazione.gov.it) in collaborazione con l’Agenzia per l’Italia digitale (AGID). 
+     Designers Italia è un progetto a cura del [Dipartimento per la trasformazione digitale](https://innovazione.gov.it) in collaborazione con l’Agenzia per l’Italia digitale (AGID).
 
   # ///////////////////
   # HIGHLIGHTS
@@ -193,7 +194,7 @@ components:
       # img : /images/400x300.png #I
       # alt: Alt lorem ipsum #C
       headingLevel : 3
-      background: dark # null | light | medium | dark  
+      background: dark # null | light | medium | dark
       big: true
       specular: true
       subtitle: "I princìpi e i valori che ispirano il nostro lavoro e i nostri strumenti" #C
@@ -204,17 +205,17 @@ components:
           addonStyle: mb-0
 
     # —
-    # HIGHLIGHT 
+    # HIGHLIGHT
     # —
     - title : Formazione e disseminazione #C
       id: formazione-e-disseminazione
       # img : /images/400x300.png #I
       # alt: Alt lorem ipsum #C
       headingLevel : 3
-      background: light  # null | light | medium | dark  
+      background: light  # null | light | medium | dark
       big: false
       specular: true
-      subtitle: Il nostro impegno per diffondere e condividere con la community le buone pratiche di design applicate ai servizi digitali pubblici #C 
+      subtitle: Il nostro impegno per diffondere e condividere con la community le buone pratiche di design applicate ai servizi digitali pubblici #C
       numbers: #C #I
         items:
         - icon: sprites.svg#it-user
@@ -227,9 +228,9 @@ components:
       buttons: #C #M
         - label : Scopri formazione e disseminazione
           btnStyle: primary
-          url: "formazione-e-disseminazione/" 
+          url: "formazione-e-disseminazione/"
           addonStyle: mb-0
-     
+
     # —
     # HIGHLIGHT BIG IMG
     # —
@@ -238,12 +239,12 @@ components:
       # img : /images/400x300.png #I
       # alt: Alt lorem ipsum #C
       headingLevel : 3
-      background: medium # null | light | medium | dark  
+      background: medium # null | light | medium | dark
       big: true
       specular: true
       subtitle: "Una storia fatta di persone, idee e open design: le piattaforme, gli strumenti e i progetti a cui Designers Italia ha contribuito"  #C
       buttons: #C #M
-        - label : Scopri storia 
+        - label : Scopri storia
           btnStyle: primary
-          url: "storia/" 
+          url: "storia/"
           addonStyle: mb-0
