@@ -200,9 +200,9 @@ components:
     # —
     - title : Linee guida di design  #C
       id: linee-guida-di-design
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 2
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel : 3
       background: light # null | light | medium | dark  
       big: false
       specular: true
@@ -223,12 +223,12 @@ components:
     # —
     - title : Linee guida accessibilità #C
       id: linee-guida-accessibilita
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 2
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel : 3
       background: null  # null | light | medium | dark  
       big: false
-      specular: false
+      specular: true
       subtitle: "La norma a cui riferirti per favorire e semplificare l'accesso di tutte le persone, senza discriminazioni, agli strumenti informatici" #C 
       text: "Il documento, che guida quanto disposto dall’articolo 11 della legge del 9 gennaio 2004, n. 4 e successivi aggiornamenti, è stato redatto ed emanato dall'Agenzia per l'Italia Digitale (AGID) per attuare la Direttiva UE 2016/2102, recepita in Italia con il Decreto legislativo n. 106 del 10 agosto 2018." #C
       buttons: #C #M
@@ -243,7 +243,7 @@ components:
       id: manuale-operativo-di-design
       # img : /images/400x300.png #I
       # alt: Alt lorem ipsum #C
-      headingLevel : 2
+      headingLevel : 3
       background: medium # null | light | medium | dark  
       big: false
       specular: true
@@ -254,24 +254,24 @@ components:
           btnStyle: primary
           url: "manuale-operativo-di-design/" #M
 
-  # —
-  # IMAGE COVER WITH ICONS
-  # —
-  imageIcons: #I
-    image: /images/400x300.png
-    alt: Alt lorem ipsum #C
-    background: medium
-    images:
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
+  # # —
+  # # IMAGE COVER WITH ICONS
+  # # —
+  # imageIcons: #I
+  #   image: /images/400x300.png
+  #   alt: Alt lorem ipsum #C
+  #   background: medium
+  #   images:
+  #   - img: /images/conversation.svg
+  #     alt: Alt lorem ipsum #C
+  #   - img: /images/conversation.svg
+  #     alt: Alt lorem ipsum #C
+  #   - img: /images/conversation.svg
+  #     alt: Alt lorem ipsum #C
+  #   - img: /images/conversation.svg
+  #     alt: Alt lorem ipsum #C
+  #   - img: /images/conversation.svg
+  #     alt: Alt lorem ipsum #C
 
   # —
   # HIGHLIGHT WITH CARDS
@@ -280,6 +280,7 @@ components:
     id: articoli-di-approfondimento
     title: Articoli di approfondimento teorico #C
     text: La teoria che sta dietro alla pratica di Designers Italia #C
+    headingLevel: 3
     background: null
     col4: false # FALSE notizie + Medium | TRUE eventi + media
     buttons:
@@ -305,7 +306,7 @@ components:
 
     #CARD MEDIUM
     - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
-      headingLevel: 3
+      headingLevel: 4
       img: /images/community/articoli-di-approfondimento/2022-medium-tabellini-accessibilita.webp
       alt: descrizione immagine
       imgRatio: 16x9
@@ -346,7 +347,7 @@ components:
         list:
           isShare: true
     - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
-      headingLevel: 3
+      headingLevel: 4
       img: /images/community/articoli-di-approfondimento/2022-medium-filippi-etica.webp
       alt: descrizione immagine
       imgRatio: 16x9
@@ -387,7 +388,7 @@ components:
         list:
           isShare: true
     - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
-      headingLevel: 3
+      headingLevel: 4
       img: /images/community/articoli-di-approfondimento/2021-medium-zaia-processo.webp
       alt: descrizione immagine
       imgRatio: 16x9
@@ -440,16 +441,17 @@ components:
     # —
     - title : Altre norme e riferimenti #C
       id: altre-norme-e-riferimenti
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 2
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel : 3
       background: light  # null | light | medium | dark  
       big: false
       specular: true
-      subtitle: "Indici europei, piani triennali e tutti gli altri riferimenti per la progettazione di servizi digitali pubblici" #C 
-      text: | #C 
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      subtitle: "Indici europei, il Piano Triennale, il CAD e gli altri riferimenti utili alla progettazione di servizi digitali pubblici" #C 
+      # text: | #C 
+      #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
       buttons: #C #M
         - label : Scopri altre norme e riferimenti
           btnStyle: primary
           url: "#" #M 
+          disabled: true
