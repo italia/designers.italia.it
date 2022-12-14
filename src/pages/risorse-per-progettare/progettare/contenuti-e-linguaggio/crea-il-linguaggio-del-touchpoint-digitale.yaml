@@ -25,12 +25,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Analizza i contenuti esistenti - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Analizza i contenuti di un servizio digitale per verificarne l'efficacia e e definisci il processo di migrazione. #C
+  name: Crea il linguaggio del touchpoint digitale - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Definisci il linguaggio per i tuoi contenuti in modo collaborativo seguendo la guida al linguaggio della Pubblica Amministrazione. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/progettare/contenuti-e-linguaggio/analizza-i-contenuti-esistenti/ #M
+  pathname: /risorse-per-progettare/progettare/contenuti-e-linguaggio/crea-il-linguaggio-del-touchpoint-digitale/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -133,10 +133,10 @@ components:
         - label : Contenuti e linguaggio
           url: ../
           active: false
-        - label : Analizza i contenuti esistenti
+        - label : Crea il linguaggio del touchpoint digitale
           active: true
-    title: Analizza i contenuti esistenti #C
-    subtitle: Analizza i contenuti di un servizio digitale per verificare che soddisfino le esigenze di persone e stakeholder e definisci il processo dalla creazione alla migrazione #C
+    title: Crea il linguaggio del touchpoint digitale #C
+    subtitle: Definisci il linguaggio per creare e ottimizzare i tuoi contenuti e scrivili in modo collaborativo seguendo la nostra guida al linguaggio della Pubblica Amministrazione #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
@@ -210,11 +210,11 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Analisi contenuti
+        - label: Linguaggio
           url: "#"
           color: primary
           size: lg
-        - label: Linguaggio
+        - label: Tono di voce
           url: "#"
           color: primary
           size: lg
@@ -229,7 +229,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Come fare un audit dei contenuti e impostare un processo di gestione #C
+    - title: Come creare e ottimizzare i contenuti, coinvolgendo gli stakeholder  #C
       menu: false
       centered: true
       background: null
@@ -241,9 +241,10 @@ components:
         - name: TextImageCta
           #title: A cosa servono h3 #C
           text: | #C
-            Attraverso l’audit dei contenuti utilizzati in un servizio digitale puoi ottimizzare in maniera iterativa e collaborativa i contenuti per far sì che rispondano alle necessità informative di persone e stakeholder.
-            
-            Gli strumenti ti permettono anche di impostare un processo di gestione delle risorse e dei flussi di lavoro, sia per attività ordinarie (creazione, revisione, organizzazione, aggiornamento) che per attività straordinarie (traduzione, migrazione).
+            Hai a disposizione diversi strumenti operativi per creare e ottimizzare i contenuti dell'interfaccia digitale di un servizio. In questa pagina trovi:
+            - le indicazioni per svolgere un workshop che coinvolge utenti e stakeholder nel percorso iniziale di content design e linguaggio di un servizio;
+            - il riferimento alla Guida alla linguaggio della Pubblica Amministrazione, che ti offre regole, indicazioni e suggerimenti per l'uso del linguaggio a seconda dei vari contesti d'uso del servizio digitale;
+            - un esercizio di scrittura collaborativa.
             
   # ///////////////////
   # RESOURCES
@@ -256,11 +257,11 @@ components:
         #title: Costruzione dei flussi #C
         headingLevel: 3
         listItems:
-          - label: Modello di analisi dei contenuti #C
+          - label: Workshop sul linguaggio #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un modello per aiutarti a strutturare un audit dei contenuti e coordinare gli interventi di revisione #C
-            url: https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing #M
+            text: Tutte le indicazioni operative per organizzare un workshop dedicato ai contenuti e al linguaggio #C
+            url: https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing #M
             blank: true
             actions:
               #- icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -268,37 +269,37 @@ components:
                 #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 #blank: true
               - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing #M
+                url:  https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
               #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 #url:  https://github.com/italia/design-wireframe-kit #M
                 #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 #blank: true
-          - label: Esercizio di card sorting #C
+          - label: Guida al linguaggio della Pubblica Amministrazione #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Uno strumento per definire in maniera collaborativa le funzionalità più importanti di un servizio digitale #C
-            url: https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf #M
+            text: Regole, indicazioni e suggerimenti per l’uso del linguaggio nei contenuti della PA #C
+            url: https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html #M
+                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
                 blank: true
+              #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                #url: "#" #M
+                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                #blank: true
               #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 #url:  "#" #M
                 #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 #blank: true
-          - label: Esercizio di content journey #C
+          - label: Esercizio di scrittura collaborativa #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un modello per comprendere l’esperienza delle persone, guardando soprattutto ai contenuti che possono renderla più semplice e fluida #C
-            url: https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view #M
+            text: Un esercizio e buone pratiche per migliorare i contenuti digitali attraverso la collaborazione fra diversi stakeholder #C
+            url: https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing #M
             blank: true
             actions:
               #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -306,7 +307,7 @@ components:
                 #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
                 #blank: true
               - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view #M
+                url: https://docs.google.com/document/d/1nkfs_xaMZdn2Q6ohSWYbFP7bvLnmKO75hyqO3ws38Fc/edit?usp=sharing #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
               #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
