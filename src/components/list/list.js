@@ -1,9 +1,7 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import ListItem from "../list-item/list-item"
 import Link from "../link/link"
 import "./list.scss"
-
-import shareData from "../../data/share.yaml"
 
 const List = React.forwardRef(({
 	isMenu,       //is list inside nav menu: true or false
@@ -23,6 +21,14 @@ const List = React.forwardRef(({
 	simpleList,
 }, ref) => {
 
+  const [currentUrl, setCurrentUrl ] = useState('')
+  const [currentTitle, setCurrentTitle] = useState('')
+
+  useEffect(() => {
+    setCurrentUrl(window.location.href)
+    setCurrentTitle(window.document.title)
+  })
+
   //heading level
 	let HLevel
 	if (headingLevel) {
@@ -38,12 +44,39 @@ const List = React.forwardRef(({
 	const ulStyles = `${isMenu ? 'link-list' : 'it-list'}`
 		+ `${customStyleUl ? ' '+customStyleUl : ''}`
 
-
   if (isShare) {
-    let shareItems = shareData.share
-    children = shareItems.map((shareItems,index) => {
-			return <ListItem {...shareItems} key={"z-list-"+index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList}></ListItem>
-		})
+    const iconProps = {color: 'primary', size: 'sm'}
+    const onCopyLink = async () => {
+      console.log(currentUrl)
+      return await navigator.clipboard.writeText(currentUrl);
+    }
+
+    children = (
+      <>
+        <ListItem
+          label="Copia collegamento"
+          icon={{icon: 'sprites.svg#it-copy', ...iconProps}}
+          iconRight={true} isDropdown={isDropdown}
+          textLarge={textLarge} simpleList={simpleList}
+          url="#"
+          onClick={onCopyLink}
+        />
+        <ListItem
+          label="Condividi su Twitter"
+          icon={{icon: 'sprites.svg#it-twitter', ...iconProps}}
+          iconRight={true} isDropdown={isDropdown}
+          textLarge={textLarge} simpleList={simpleList}
+          url={`https://twitter.com/intent/tweet/?text=${currentTitle}&url=${currentUrl}`}
+        />
+        <ListItem
+          label="Condividi su LinkedIn"
+          icon={{icon: 'sprites.svg#it-linkedin', ...iconProps}}
+          iconRight={true} isDropdown={isDropdown}
+          textLarge={textLarge} simpleList={simpleList}
+          url={`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`}
+        />
+      </>
+    )
   }
 
 	if (listItems) {
