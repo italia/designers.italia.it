@@ -47,7 +47,6 @@ const List = React.forwardRef(({
   if (isShare) {
     const iconProps = {color: 'primary', size: 'sm'}
     const onCopyLink = async () => {
-      console.log(currentUrl)
       return await navigator.clipboard.writeText(currentUrl);
     }
 
