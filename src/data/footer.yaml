@@ -136,11 +136,13 @@ footer:
         labelClass: text-white
         id: emailInput
         idForm: iscrivitiNewsletter
-        action: "#"
+        sendportalArgs:
+          # Sendportal workspace id
+          workspace_id: 1
+          # Des+Dev tag in Sendportal
+          tag_id: 7
         button:
           label: Iscriviti
-          type: submit
-          btnStyle: outline-primary
   footerProject:
     background: "dark"
     title: |
