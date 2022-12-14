@@ -237,200 +237,212 @@ components:
   sectionsEditorial :
 
 
-    - title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem #C
+    - title: Strumenti e indicazioni a supporto #C
       menu: false
       centered: true
       background: null
-      #text: | #C
-      #  Lorem **ipsum**
+      # full: true
+      text: | #C
+       Lorem **ipsum**
+      components:
+
+
+    - title: Manuale operativo di design #C
+      headingLevel: 3
+      menu: false
+      centered: true
+      background: light
+      noSpace: false
+      text: | #C
+       Lorem **ipsum**
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Lorem ipsum #C
+          title: Capitolo o parafrafo x #C
+          headingLevel: 4
           text: | #C
             Lorem ipsum
+          ctas:
+          - label: Vai su lorem #C
+            url: "#" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai su ipsum #C
+            url: "#" #M
+            blank: true
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
-  # # ///////////////////
-  # # RESOURCES
-  # # ///////////////////
-  # resourceList:
-  #   title: Resource list title #C
-  #   headingLevel: 2
-  #   list:
-  #     - simpleList : true
-  #       title: First group title #C
-  #       headingLevel: 3
-  #       listItems:
-  #         - label: Resource title #C
-  #           srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-  #           srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-  #           text: Resource description #C
-  #           url: "#" #M
-  #           blank: true
-  #           actions:
-  #             - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-  #               url: "#" #M
-  #               ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-  #               blank: true
-  #         - label: Resource title #C
-  #           srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-  #           srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-  #           text: Resource description #C
-  #           url: "#" #M
-  #           actions:
-  #             - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-  #               url: "#" #M
-  #               ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C
-  #               blank: true
-  #     - simpleList : true
-  #       title: Second group title #C
-  #       headingLevel: 4
-  #       listItems:
-  #         - label: Resource title #C
-  #           srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-  #           srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-  #           text: Resource description #C
-  #           url: "#" #M
-  #           blank: true
-  #           actions:
-  #             - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-  #               url: "#" #M
-  #               ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-  #               blank: true
-  #         - label: Resource title #C
-  #           url: "#" #M
-  #           srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-  #           srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-  #           text: Resource description #C
-  #           actions:
-  #             - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-  #               url: "#" #M
-  #               ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C
-  #               blank: true
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Capitolo o parafrafo 7 #C
+          headingLevel: 4
+          text: | #C
+            Lorem ipsum
+          ctas:
+          - label: Vai su lorem #C
+            url: "#" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai su ipsum #C
+            url: "#" #M
+            blank: true
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
+# ///////////////////
+  # HIGHLIGHT WITH CARDS
+  # ///////////////////
+  highlightCards:
+    id: HC1
+    title: Scopri le risorse a disposizione  #C
+    text: Lorem ipsum #C
+    col4: false
+    nospace: false
+    nopadtop: false
 
-  # # ///////////////////
-  # # SECTION EDITORIAL
-  # # ///////////////////
-  # sectionsEditorial2 :
+    # CARDS
+    cards: # AUTO?
 
-  # # —
-  #   # EDITORIAL #C #I
-  #   # —
-  #   - title: Lorem ipsum h2
-  #     background: null
-  #     menu: false
-  #     centered: false
-  #     text: | #C
-  #       Lorem **ipsum**
-  #     components:
+      # CARD CHILDREN ACTION
+      - title: Titolo kit #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /images/kit-analisi-contesto.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "#" #M
+        text: | #C
+          Lorem **ipsum**
+        tag:
+          label: Kit di design #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
 
-  #       # TXT BLOCK
-  #       - name: TextImageCta
-  #         title: Lorem ipsum h3 #C
-  #         text: | #C
-  #           Lorem **ipsum**.
+      # CARD CHILDREN ACTION
+      - title: Titolo sezione intera, eg. Design system #C
+        fullHeight: true
+        imgRatio: 4x3
+        img: /images/400x300.png
+        alt: Alt lorem ipsum
+        rounded: true
+        url: "#" #M
+        text: | #C
+          Lorem **ipsum**
+        # tag:
+        #   label: Tipologia contenuto #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
 
-  #           ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
+      # CARD CHILDREN ACTION
+      - title: Titolo modello intero, eg. Comuni #C
+        fullHeight: true
+        imgRatio: 4x3
+        img: /images/400x300.png
+        alt: Alt lorem ipsum
+        rounded: true
+        url: "#" #M
+        text: | #C
+          Lorem **ipsum**
+        # tag:
+        #   label: Tipologia contenuto #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
 
-  #           #### Titoletto interno h4
-  #           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, [eaque](#) ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-  #           ##### Titoletto interno h5
-  #           Lorem ipsum.
-
-  #           ###### Titoletto interno h6
-  #           Lorem ipsum.
-
-  #           #### Titoletto interno h4
-  #           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-  #           ##### Titoletto interno h5
-  #           Lorem ipsum.
-
-  #       # TXT + IMG + CTA BLOCK
-  #       - name: TextImageCta
-  #         image: /images/400x300.png #I
-  #         alt: Alt lorem ipsum #C
-  #         specular: true
-  #         title: Lorem ipsum h3 #C
-  #         text: | #C
-  #           Lorem ipsum
-
-  #           #### Titoletto interno h4
-  #           Lorem ipsum
-  #         ctas:
-  #         - label: Fai lorem ipsum #C
-  #           url: "#" #M
-  #           blank: false #M #C true if new tab for external links
-  #           icon:
-  #             icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-  #             color: primary
-  #             align: middle
-  #             hidden: true
-  #             size: sm
-  #             addonClasses: ms-2
-  #         - label: Vai su ipsum #C
-  #           url: "#" #M
-  #           blank: true
-  #           icon:
-  #             icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-  #             color: primary
-  #             align: middle
-  #             hidden: true
-  #             size: sm
-  #             addonClasses: ms-2
-
-  #       # NUMBERS BLOCK
-  #       - name: Numbers
-  #         items: #C #I
-  #         - label: Comuni interattivi
-  #           icon: sprites.svg#it-tool
-  #           number: 1200
-  #         - label: Comuni interattivi
-  #           icon: sprites.svg#it-tool
-  #           number: 1200
-  #         - label: Comuni interattivi
-  #           icon: sprites.svg#it-tool
-  #           number: 1200
-  #         - label: Comuni interattivi
-  #           icon: sprites.svg#it-tool
-  #           number: 1200
-
-  #       # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-  #       # HEADING STARD WITH H4 JUST IN CASE
-  #       - name: TextImageCta
-  #         text: |
-  #           #### Titoletto interno h4
-  #           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-  #           Lorem ipsum.
-
-  #       # TXT + CTA BLOCK
-  #       - name: TextImageCta
-  #         title: Lorem ipsum h3 #C
-  #         text: | #C
-  #           Sed ut **perspiciatis** unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-  #         ctas:
-  #         - label: Fai lorem ipsum #C
-  #           url: "#" #M
-  #           blank: false #M #C true if new tab for external links
-  #           icon:
-  #             icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-  #             color: primary
-  #             align: middle
-  #             hidden: true
-  #             size: sm
-  #             addonClasses: ms-2
-  #         - label: Vai su ipsum #C
-  #           url: "#" #M
-  #           blank: true
-  #           icon:
-  #             icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-  #             color: primary
-  #             align: middle
-  #             hidden: true
-  #             size: sm
-  #             addonClasses: ms-2
-
+      # CARD CHILDREN ACTION
+      - title: Titolo scheda operativa #C
+        fullHeight: true
+        # imgRatio: 16x9
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "#" #M
+        text: | #C
+          Lorem **ipsum**
+        tag:
+          label: Scheda operativa #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+            
+      # CARD CHILDREN ACTION
+      - title: Titolo scheda operativa #C
+        fullHeight: true
+        # imgRatio: 16x9
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "#" #M
+        text: | #C
+          Lorem **ipsum**
+        tag:
+          label: Scheda operativa #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
