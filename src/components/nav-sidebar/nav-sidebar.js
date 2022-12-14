@@ -60,12 +60,12 @@ const NavSidebar = ({
 
         return(
           <li key={"l-"+index}>
-            <a className={linksStyle} href={"#collapseNav-"+index} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={"collapseNav-"+index}>
-              <span className="list-item-title-icon-wrapper">
+            <button className={linksStyle} data-bs-target={"#collapseNav-"+index} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={"collapseNav-"+index}>
+              <span className="list-item-title-icon-wrapper list-item-title-icon-wrapper d-flex justify-content-between align-items-center">
                 <span>{item.label}</span>
                 <svg className="icon icon-sm icon-primary right" aria-hidden="true"><use href="/svg/sprites.svg#it-expand"></use></svg>
               </span>
-            </a>
+            </button>
             <ul className={subStyles} id={"collapseNav-"+index}>
               {subLinks}
             </ul>

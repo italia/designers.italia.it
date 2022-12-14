@@ -2,10 +2,10 @@
 # folder structure:
 # levelX.js < connector, just for developers
 # levelX.yaml < contents and settings of the page
-# levelX/ < folder where are the childrens, same structure 
+# levelX/ < folder where are the childrens, same structure
 # important: each level has its dedicated template from level1 to level4!
 #
-# to edit search for 
+# to edit search for
 # #C to locate all editable content
 # #M for links/navigation
 # #I for images/media
@@ -17,9 +17,10 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level1
+  activeLabel: Risorse per progettare
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -60,7 +61,7 @@ lastUpdate:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-  
+
   # ///////////////////
   # HERO
   # ///////////////////
@@ -72,7 +73,7 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Risorse per progettare #C 
+        - label : Risorse per progettare #C
           active: true
     title: Risorse per progettare #C
     subtitle: Strumenti e attività già pronti per creare siti, app e interfacce digitali dei servizi pubblici #C
@@ -80,7 +81,7 @@ components:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve 
+      text: In breve
     text: | #C
       In questa sezione, trovi i kit per raggiungere gli obiettivi delle cinque fasi di un progetto, da quando lo imposti a quando validi la soluzione progettata. Ogni kit contiene strumenti e attività già testati sul campo per progettare siti, app e interfacce digitali. Riutilizzali quando ne hai bisogno: non serve reinventare la ruota ogni volta.
     img: /images/risorse-per-progettare/icons/risorse-per-progettare.svg #I
@@ -98,12 +99,12 @@ components:
           addonClasses: ms-3
       list:
         isShare: true
-    
+
     # KANGAROO: METADATA
     kangaroo:
       id: metadati-e-link
       titleSr: Metadati e link per approfondire
-      tagsLabel : Parliamo di 
+      tagsLabel : Parliamo di
       color : white
       icon:
         icon: sprites.svg#it-horn
@@ -122,7 +123,7 @@ components:
           url: "#"
           color: primary
           size: lg
-      
+
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
@@ -189,8 +190,8 @@ components:
     moreButtonClose: Chiudi
     moreText: | #C
       ### Sistemico
-      Per progettare, bisogna **guardare a tutti gli elementi in campo**: non solo le persone che utilizzano un servizio, ma anche tutti gli attori che lo rendono possibile, come le pubbliche amministrazioni e i fornitori. Solo quando si ha una visione complessiva, si può definire il perimetro del progetto, fissare le priorità e progettare come e dove questi attori interagiscono, e quali infrastrutture sono necessarie per farlo. 
-      
+      Per progettare, bisogna **guardare a tutti gli elementi in campo**: non solo le persone che utilizzano un servizio, ma anche tutti gli attori che lo rendono possibile, come le pubbliche amministrazioni e i fornitori. Solo quando si ha una visione complessiva, si può definire il perimetro del progetto, fissare le priorità e progettare come e dove questi attori interagiscono, e quali infrastrutture sono necessarie per farlo.
+
       ### Con la persona al centro
       Progettare con la persona al centro significa comprenderne le necessità, osservarne i comportamenti, conoscere le sue preferenze e le aspettative rispetto all’esperienza di utilizzo di un servizio. Significa, soprattutto **creare soluzioni che sono realmente adeguate per tutte le persone**, riducendo le disuguaglianze.
 
@@ -198,12 +199,12 @@ components:
 
       ### Partecipato
       Il modo migliore di entrare in contatto con le persone è coinvolgerle direttamente nelle diverse fasi del progetto. È fondamentale, quindi, individuare i diversi i portatori d’interesse (stakeholder) interni ed esterni alla Pubblica Amministrazione che sono toccati dal servizio e creare le condizioni per facilitare la loro partecipazione, utilizzando diversi strumenti e attività già pronti all’uso.
-      
+
       Il valore di una progettazione partecipativa non sta solo nelle informazioni che si raccolgono durante il percorso, ma nel processo stesso. **Un processo partecipativo permette alle persone di lavorare alla soluzione dei propri problemi**, generando quel senso d’appartenenza che “olia” tutti gli ingranaggi e crea le condizioni per il successo del progetto.
 
       ### Aperto
       L’esistenza di Designers Italia è la manifestazione più concreta del nostro approccio aperto. Incoraggiamo, soprattutto in ambito pubblico, la **collaborazione attiva** fra tutti gli attori interessati alla trasformazione digitale della PA, attraverso la condivisione d’informazioni, conoscenze, strumenti e risorse progettuali.
-      
+
       Come abbiamo già scritto in questa pagina: per migliorare la qualità e usabilità dei servizi pubblici digitali non serve reinventare la ruota ogni volta, ma **si può riutilizzare il lavoro di altre persone** in pieno spirito *open source.*
 
       ### Iterativo
@@ -229,13 +230,13 @@ components:
       overlayImg: /images/risorse-per-progettare/icons/organizzare-large.svg #I
       overlayAlt: "Organizzare è come si inizia" #C
       headingLevel : 3
-      background: light # null | light | medium | dark  
+      background: light # null | light | medium | dark
       big: false
       specular: false
       subtitle: "Organizza il progetto: pianifica le attività e coordina il lavoro dal punto di vista operativo" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
       text: null
       buttons: #C #M
-        - label : Esplora i kit per organizzare 
+        - label : Esplora i kit per organizzare
           btnStyle: primary
           url: "organizzare/"
           addonStyle: mb-0
@@ -247,17 +248,17 @@ components:
       overlayImg: /images/risorse-per-progettare/icons/comprendere-large.svg #I
       overlayAlt: "Comprendere è una questione di attenzione" #C
       headingLevel : 3
-      background: null # null | light | medium | dark  
+      background: null # null | light | medium | dark
       big: false
       specular: false
       subtitle: "Comprendi lo scenario d'uso del servizio: studia il contesto di fruizione con l'analisi e la ricerca utente" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
       text: null
       buttons: #C #M
-        - label : Esplora i kit per comprendere 
+        - label : Esplora i kit per comprendere
           btnStyle: primary
           url: "comprendere/"
           addonStyle: mb-0
-    
+
     - title : Progettare #C
       id: progettare
       img : /images/400x300.png #I
@@ -265,13 +266,13 @@ components:
       overlayImg: /images/risorse-per-progettare/icons/progettare-large.svg #I
       overlayAlt: "Progettare è una questione di cura" #C
       headingLevel : 3
-      background: light # null | light | medium | dark  
+      background: light # null | light | medium | dark
       big: false
       specular: false
       subtitle: "Progetta il servizio immaginando e prototipando l’interazione fra utente e touchpoint" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
       text: null
       buttons: #C #M
-        - label : Esplora i kit per progettare 
+        - label : Esplora i kit per progettare
           btnStyle: primary
           url: "progettare/"
           addonStyle: mb-0
@@ -283,13 +284,13 @@ components:
       overlayImg: /images/risorse-per-progettare/icons/realizzare-large.svg #I
       overlayAlt: "Realizzare è ciò che rende reale un progetto digitale" #C
       headingLevel : 3
-      background: null # null | light | medium | dark  
+      background: null # null | light | medium | dark
       big: false
       specular: false
       subtitle: "Realizza il progetto: costruisci e sviluppa l’interfaccia digitale del servizio" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
       text: null
       buttons: #C #M
-        - label : Esplora i kit per realizzare 
+        - label : Esplora i kit per realizzare
           btnStyle: primary
           url: "realizzare/"
           addonStyle: mb-0
@@ -301,13 +302,13 @@ components:
       overlayImg: /images/risorse-per-progettare/icons/validare-large.svg #I
       overlayAlt: "Validare è l'inizio e la fine di ogni nuovo ciclo" #C
       headingLevel : 3
-      background: light # null | light | medium | dark  
+      background: light # null | light | medium | dark
       big: false
       specular: false
       subtitle: "Valida la soluzione ottenuta: scopri come monitorare e valutare le prestazioni" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
       text: null
       buttons: #C #M
-        - label : Esplora i kit per validare 
+        - label : Esplora i kit per validare
           btnStyle: primary
           url: "validare/"
           addonStyle: mb-0
