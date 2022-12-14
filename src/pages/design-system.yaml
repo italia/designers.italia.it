@@ -26,7 +26,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Design system - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Questo è un sottotitolo che ti fa capire a cosa serve la pagina sotto ci potrebbe stare altro. #C
+  description: "L’insieme di indicazioni e risorse per progettare e realizzare siti e servizi pubblici di qualità, efficienti e accessibili." #C
   image: null #I
   twitterImage: null #I
   canonical: null
@@ -75,14 +75,14 @@ components:
         - label : Design system #C
           active: true
     title: Design system del Paese #C
-    subtitle: Questo è un sottotitolo che ti fa capire a cosa serve la pagina sotto ci potrebbe stare altro. #C
+    subtitle: "L’insieme di indicazioni e risorse per realizzare siti e servizi pubblici di qualità, efficienti e accessibili." #C
     pretext:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
       text: In breve
     text: | #C
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      Qui trovi fondamenti, componenti, design pattern e showcase per creare il tuo progetto in linea con gli standard della Pubblica Amministrazione, che offra un’esperienza d’uso ottimale e che ti permetta di guadagnare tempo e risorse pur mantendendo alto il livello di qualità.
     img: /images/400x300.png #I
     alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -181,7 +181,7 @@ components:
     section: true
     id: intro
     headingLevel: 2
-    title: Una scatola di puzzle a disposizione di tutta la Pubblica Amministrazione #C
+    title: Istruzioni e mattoncini per la realizzazione di siti e servizi della PA #C
     background: null
     text: | #C
       **Lorem** ipsum
@@ -202,7 +202,7 @@ components:
   # HIGHLIGHTS
   # ///////////////////
   titleText:
-    title: Scopri e usa il design system #C
+    title: Scopri e usa il design system del Paese #C
 
   # —
   # HIGHLIGHT LOOP
@@ -220,20 +220,23 @@ components:
       background: light # null | light | medium | dark
       big: false
       specular: false
-      subtitle: Schede informative che ti guidano a orientarti  #C
+      subtitle: Scopri i primi passi da compiere per progettare con il design system #C
       buttons: #C #I
         - label : Scopri come iniziare #C
           btnStyle: primary
           url: "come-iniziare/" #M
           addonStyle: mb-0
+          disabled: true
         - label : Per designer #C
           btnStyle: outline-secondary
           url: "#" #M
           addonStyle: mb-0
+          disabled: true
         - label : Per sviluppatori #C
           btnStyle: outline-secondary
           url: "#" #M
-          addonStyle: mb-0          
+          addonStyle: mb-0        
+          disabled: true  
 
     # —
     # HIGHLIGHT
@@ -246,9 +249,9 @@ components:
       background: null  # null | light | medium | dark
       big: false
       specular: true
-      subtitle: Le basi di come costruire un touchpoint digitale, dal microcopy all'accessibilità, alle griglie #C
+      subtitle: Princìpi e guide per progettare #C
       text: | #C
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec interdum sapien at dolor gravida, et finibus lorem vestibulum. Maecenas eleifend feugiat malesuada. Nullam congue orci felis, sed porttitor odio fermentum ut. Vivamus eu maximus mi. Fusce sagittis tristique neque nec cursus. Sed risus felis, dapibus vitae venenatis vestibulum, gravida lobortis nisi.
+       Tutto ciò di cui hai bisogno per progettare in modo inclusivo e accessibile. A partire dalla terminologia, dal linguaggio e dal tone of voice da utilizzare, per fare in modo che i contenuti siano comprensibili per tutti. Fino a scoprire come impostare griglie, dimensioni, immagini e illustrazioni per elevare l’esperienza d’uso delle persone.
       buttons: #C #M
         - label : Scopri i fondamenti
           btnStyle: primary
@@ -266,7 +269,7 @@ components:
       big: false
       background: light
       specular: false
-      subtitle: I pezzi del puzzle, dal kit UI ai framework di sviluppo #C
+      subtitle: "Gli elementi per realizzare l’interfaccia" #C
       numbers: #C #I
         items:
         - icon: sprites.svg#it-tool
@@ -276,7 +279,7 @@ components:
           number: 1800
           label: Varianti
       text: | #C
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec interdum sapien at dolor gravida, et finibus lorem vestibulum. 
+        Una libreria completa di elementi pronti per essere utilizzati per creare un’interfaccia utente che offra un’esperienza d’uso ottimale. Ogni componente garantisce accessibilità, inclusività e usabilità, senza riservare brutte sorprese. 
       buttons: #C #M
         - label : Scopri i componenti
           btnStyle: primary
@@ -289,19 +292,20 @@ components:
     # —
     - title : Design pattern #C
       id: design-pattern
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
       headingLevel : 3
       background: medium # null | light | medium | dark
       big: true
       specular: true
       subtitle: | #C
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+       Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficaciemente testati in situazioni simili
       buttons: #C #M
         - label : Scopri i design pattern
           btnStyle: primary
           url: "design-pattern/"
           addonStyle: mb-0
+          disabled: true
 
 
   # —
@@ -347,14 +351,16 @@ components:
       background: dark
       specular: true
       subtitle: I progetti più significativi realizzati con il design system del Paese #C
-      text: | #C
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      # text: | #C
+      #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
       buttons: #C #M
         - label : Scopri i casi studio
           btnStyle: primary
           url: "showcase/"
           addonStyle: mb-0
+          disabled: true
         - label : Proponi un caso studio
           btnStyle: outline-primary
           url: "#"
           addonStyle: mb-0
+          disabled: true
