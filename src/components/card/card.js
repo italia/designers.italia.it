@@ -9,6 +9,7 @@ import Icon from "../icon/icon"
 import Link from "../link/link"
 import Button from "../button/button"
 import "./card.scss"
+import style from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark"
 
 const Card =(
 	{
@@ -50,13 +51,16 @@ const Card =(
     + `${noShadow ? ' shadow-none' : ''}`
     + `${textSerif ? ' text-serif' : ''}`
     + `${buttonBottom ? ' has-button' : ''}`
-	let imgStyle = 'img-wrapper ratio'
+
+    let imgStyle = 'img-wrapper ratio'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
 		+ `${imgPlaceholder ? ' img-placeholder' : ''}`
 		+ `${iconImg ? ' icon-img' : ''}`
     + `${cardEvent ? ' mb-4 negative-margin' : ''}`
     + `${imgRounded ? ' rounded' : ''}`
 
+    let styleBody = 'di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between'
+    + `${rounded ? ' rounded' : ''}`
 
 	//heading level
 	let HLevel
@@ -68,7 +72,7 @@ const Card =(
   if (cardEvent) {
     return(
       <div className={styles}>
-        <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
+        <div className={styleBody}>
           <div className="text-zone">
             {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
@@ -119,7 +123,7 @@ const Card =(
             <Icon {...iconOverlay}></Icon>
           </div>}
         </div>}
-        <div className="di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between">
+        <div className={styleBody}>
           <div className="text-zone">
             {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
