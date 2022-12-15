@@ -58,6 +58,7 @@ const List = React.forwardRef(({
           icon={{icon: 'sprites.svg#it-copy', ...iconProps}}
           iconRight={true} isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
+          ariaLabel=""
           url="#"
           onClick={onCopyLink}
         />
@@ -66,6 +67,7 @@ const List = React.forwardRef(({
           icon={{icon: 'sprites.svg#it-twitter', ...iconProps}}
           iconRight={true} isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
+          ariaLabel="Condividi su Twitter (si apre in una nuova finestra)"
           url={`https://twitter.com/intent/tweet/?text=${currentTitle}&url=${currentUrl}`}
           blank="true"
         />
@@ -74,6 +76,7 @@ const List = React.forwardRef(({
           icon={{icon: 'sprites.svg#it-linkedin', ...iconProps}}
           iconRight={true} isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
+          ariaLabel="Condividi su LinkedIn (si apre in una nuova finestra)"
           url={`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`}
           blank="true"
         />
