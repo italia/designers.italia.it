@@ -83,8 +83,13 @@ const ListItem = ({
 	let actionsRendered
 	let icons
 	if(actions) {
+		let urlHidden = false
 		icons =  actions.map((icons,index) => {
-			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} aria-label={icons.ariaLabel} key={"iconsaction-"+index} ><Icon {...icons}></Icon></Link>
+			// to set aria-hidden if an icon on the right side has the same url of the main element
+			if (icons.url === url) urlHidden = true 
+			else urlHidden = false 
+			//
+			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} aria-label={icons.ariaLabel} aria-hidden={urlHidden ? 'true' : undefined} key={"iconsaction-"+index} ><Icon {...icons}></Icon></Link>
 		})
 		actionsRendered = <span className="it-multiple flex-shrink-0">{icons}</span>
 	}
@@ -143,20 +148,20 @@ const ListItem = ({
 			</div>
 		</Link>
 	}
-  //- se è una lista semplice con link ed actions
+  //- se è una lista semplice con link ed actions - eg: resources
 	if (simpleList && url && actions) {
 		listContent = 	<div className={`list-item ${active ? ' active' : ''}`} >
 			{iconLeft ? iconRenderedSimpleList : ''}
 			{imgRendered}
 			{avatarRendered}
 			<div className="it-right-zone">
-        <Link to={url} target={blank ? '_blank' : undefined}>
-          <span className="text">
-            {srBefore && <span className="visually-hidden">{srBefore}</span>}
-            {children}
-            {srAfter && <span className="visually-hidden">{srAfter}</span>}
-            {text && <em>{text}</em>}</span>
-        </Link>
+       			<Link to={url} target={blank ? '_blank' : undefined}>
+					<span className="text">
+					{srBefore && <span className="visually-hidden">{srBefore}</span>}
+					{children}
+					{srAfter && <span className="visually-hidden">{srAfter}</span>}
+					{text && <em>{text}</em>}</span>
+       			 </Link>
 				{actionRendered}
 				{!metadataActionsRendered ? actionsRendered : ''}
 				{!metadataActionsRendered ? metadataRendered : ''}
