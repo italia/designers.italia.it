@@ -77,7 +77,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Architettura dell'informazione #C
+        label: "Architettura dell'informazione" #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -140,15 +140,15 @@ components:
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
-    pretext:
-      icon:
-        icon: sprites.svg#it-info-circle
-        size: sm
-      text: In breve
-    text: | #C
-      Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: | #C
+    #   Lorem **ipsum** 
+    img: /images/risorse-per-progettare/icons/kit_architettura_scenari.svg #I
+    alt: "" #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -169,14 +169,22 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi in
-            icon:
-              icon: "sprites.svg#it-folder"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Level 2 #C
-            url: "../../" #M
+        - title: Ti trovi nella fase #C
+          icon:
+            icon: "sprites.svg#it-folder"
+            size: "sm"
+            align: "middle"
+            color: "secondary"
+          label: Progettare #C
+          url: "../../" #M
+        - title: Nel kit di design #C
+          icon:
+            icon: "sprites.svg#it-tool"
+            size: "sm"
+            align: "middle"
+            color: "secondary"
+          label: "Architettura dell'informazione" #C
+          url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -202,7 +210,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare l'interazione dell'utente con il servizio #C
+            label: "Progettare l'interazione dell'utente con il servizio" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -210,7 +218,7 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Architettura dell'informazione
+        - label: "Architettura dell'informazione"
           url: "#"
           color: primary
           size: lg
@@ -264,14 +272,14 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing #M
-                ariaLabel: "Documento Google: Scenari d'uso (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Foglio Google: Scenari d'uso (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  LINK #M
+                url:  /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso.ods #M
                 ariaLabel: "Scarica ODS Scenari d'uso" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: Esempio di scenari d'uso #C
-            srBefore: "Documento Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Foglio Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Guarda l'esempio di uno scenario d'uso basato sul modello Comuni #C
             url: https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing #M
@@ -279,10 +287,10 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing #M
-                ariaLabel: "Documento Google: Scenari d'uso (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Documento Google: Esempio di scenari d'uso (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  LINK #M
+                url:  /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso-esempio.ods #M
                 ariaLabel: "Scarica ODS Esempio di scenari d'uso" #C #COMPILE FOR EACH ITEM
                 blank: false
  

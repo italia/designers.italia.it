@@ -77,7 +77,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Architettura dell'informazione #C
+        label: "Architettura dell'informazione" #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -140,15 +140,15 @@ components:
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
-    pretext:
-      icon:
-        icon: sprites.svg#it-info-circle
-        size: sm
-      text: In breve
-    text: | #C
-      Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: | #C
+    #   Lorem **ipsum** 
+    img: /images/risorse-per-progettare/icons/kit_architettura_cardsorting.svg #I
+    alt: "descrizione immagine" #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -169,14 +169,22 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi in
-            icon:
-              icon: "sprites.svg#it-folder"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Level 2 #C
-            url: "../../" #M
+        - title: Ti trovi nella fase #C
+          icon:
+            icon: "sprites.svg#it-folder"
+            size: "sm"
+            align: "middle"
+            color: "secondary"
+          label: Progettare #C
+          url: "../../" #M
+        - title: Nel kit di design #C
+          icon:
+            icon: "sprites.svg#it-tool"
+            size: "sm"
+            align: "middle"
+            color: "secondary"
+          label: "Architettura dell'informazione" #C
+          url: "../" #M 
       otherInfo:
         items:
           - title: Rispettando
@@ -202,7 +210,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare l'interazione dell'utente con il servizio #C
+            label: "Progettare l'interazione dell'utente con il servizio" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -210,7 +218,7 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Architettura dell'informazione
+        - label: "Architettura dell'informazione"
           url: "#"
           color: primary
           size: lg
@@ -258,7 +266,7 @@ components:
         headingLevel: 3
         listItems:
           - label: Card sorting #C
-            srBefore: "Documento Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Presentazione Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Organizza contenuti e funzioni del servizio digitale #C
             url: https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing #M
@@ -266,40 +274,32 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing #M
-                ariaLabel: "Documento Google: Card sorting (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Presentazione Google: Card sorting (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  LINK #M
-                ariaLabel: "Scarica ODS Card sorting" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
+                ariaLabel: "Scarica ODP Card sorting" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: Esempio di card sorting #C
-            srBefore: "Documento Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Guarda l'esempio di card sorting #C
-            url: https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing #M
-            blank: true
+            srBefore: "PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: Scarica un esempio #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/CardSorting-esempio.pdf #M
+            blank: false
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing #M
-                ariaLabel: "Documento Google: Scenari d'uso (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  LINK #M
-                ariaLabel: "Scarica ODS Esempio di card sorting" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/CardSorting-esempio.pdf #M
+                ariaLabel: "PDF: Esempio di card sorting" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: Card sorting in versione stampabile #C
-            srBefore: "PDF: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Stampa il card sorting per fare l'esercizio dal vivo #C
-            url: https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf #M
-            blank: true
+            srBefore: "PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: "Scarica e stampa il card sorting per fare l'esercizio dal vivo" #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
+            blank: false
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf #M
-                ariaLabel: "PDF: Card sorting in versione stampabile (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  LINK #M
-                ariaLabel: "Scarica ODS Card sorting in formato stampabile" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
+                ariaLabel: "PDF: Card sorting in versione stampabile" #C #COMPILE FOR EACH ITEM
                 blank: false
  
