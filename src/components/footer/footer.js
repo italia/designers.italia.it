@@ -5,6 +5,7 @@ import FooterSmall from "../footer-small/footer-small"
 
 
 const Footer = ({
+  title,
   footerProject,
   footerContribute,
   footerMain,
@@ -13,10 +14,11 @@ const Footer = ({
 
   return (
 	<footer className="it-footer">
-		{footerProject && <FooterBrand {...footerProject}/>}
-		{footerContribute && <FooterBrand {...footerContribute}/>}
-		{footerMain && <FooterMain {...footerMain}/>}
-		{footerSmall && <FooterSmall {...footerSmall}/>}
+    <h2 className="visually-hidden">{title}</h2>
+    {footerProject && <FooterBrand {...footerProject}/>}
+    {footerContribute && <FooterBrand {...footerContribute}/>}
+    {footerMain && <FooterMain {...footerMain}/>}
+    {footerSmall && <FooterSmall {...footerSmall}/>}
 	</footer>
   )
 }

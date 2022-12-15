@@ -30,9 +30,9 @@ const sticky = Sticky //trick for treeshaking
 const Template = ({children,Pagedata,pageContext,location}) => {
 	return (
     <div id="app">
+      <HeaderPre data={HeaderData.headerPre}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
-        <HeaderPre data={HeaderData.headerPre}/>
         <HeaderSlim data={HeaderData.headerSlim}/>
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter}/>
@@ -40,7 +40,6 @@ const Template = ({children,Pagedata,pageContext,location}) => {
         </NavWrapper>
       </Header>
       <div className="bg-light">
-
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column bs-is-sticky" data-bs-toggle="sticky" data-bs-stackable="true">
