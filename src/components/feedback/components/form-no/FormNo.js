@@ -122,8 +122,8 @@ const FormNo = ({ onResult, state }) => {
             <label htmlFor="optsStep2Opt1">Altro sito web</label>
           </div>
           <div className="form-check form-check-group">
-            <input name="optsStep2" type="radio" id="optsStep2Opt2" value="funzione “Cerca” del sito" />
-            <label htmlFor="optsStep2Opt2">Funzione “Cerca” del sito</label>
+            <input name="optsStep2" type="radio" id="optsStep2Opt2" value="funzione Cerca del sito" />
+            <label htmlFor="optsStep2Opt2">Funzione Cerca del sito</label>
           </div>
           <div className="form-check form-check-group">
             <input name="optsStep2" type="radio" id="optsStep2Opt3" value="motore di ricerca" />
