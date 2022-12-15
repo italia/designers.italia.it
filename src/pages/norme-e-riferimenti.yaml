@@ -2,10 +2,10 @@
 # folder structure:
 # levelX.js < connector, just for developers
 # levelX.yaml < contents and settings of the page
-# levelX/ < folder where are the childrens, same structure 
+# levelX/ < folder where are the childrens, same structure
 # important: each level has its dedicated template from level1 to level4!
 #
-# to edit search for 
+# to edit search for
 # #C to locate all editable content
 # #M for links/navigation
 # #I for images/media
@@ -13,6 +13,14 @@
 #
 # comment with # to hide something
 # delete with caution
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level1
+  activeLabel: Norme e riferimenti
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -53,7 +61,7 @@ lastUpdate:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-  
+
   # ///////////////////
   # HERO
   # ///////////////////
@@ -65,7 +73,7 @@ components:
         - label: Inizio
           active: false
           url: /
-        - label : Norme e riferimenti #C 
+        - label : Norme e riferimenti #C
           active: true
     title: Norme e riferimenti #C
     subtitle: La documentazione ufficiale che ti guida nella progettazione per la Pubblica Amministrazione, mettendo le persone al centro #C
@@ -73,11 +81,11 @@ components:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve 
+      text: In breve
     text: | #C
-      La progettazione e la realizzazione di siti e servizi digitali per la PA sono guidate da regole tecniche e indicazioni operative attente all’usabilità, all'accessibilità ed a un approccio progettuale rivolto alle persone.  
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+      La progettazione e la realizzazione di siti e servizi digitali per la PA sono guidate da regole tecniche e indicazioni operative attente all’usabilità, all'accessibilità ed a un approccio progettuale rivolto alle persone.
+    # img: /images/400x300.png #I
+    # alt: alt lorem ipsum #C
     imgRatio: 4x3
     share: #AUTO
       btnId: shareButtonHero
@@ -91,12 +99,12 @@ components:
           addonClasses: ms-3
       list:
         isShare: true
-    
+
     # KANGAROO: METADATA
     kangaroo:
       id: metadati-e-link
       titleSr: Metadati e link per approfondire
-      tagsLabel : Parliamo di 
+      tagsLabel : Parliamo di
       color : white
       icon:
         icon: sprites.svg#it-horn
@@ -123,7 +131,7 @@ components:
           url: "#"
           color: primary
           size: lg
-      
+
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
@@ -177,12 +185,12 @@ components:
     title: Progettare per la Pubblica Amministrazione è un processo basato sulla legge #C
     background: null
     text: | #C
-      **L'accesso a siti e servizi pubblici digitali di qualità è un diritto da garantire a tutte le persone** che desiderano farne uso. Per questo, **i requisiti da rispettare sono indicati in modo dettagliato dalla legge**, affinché ogni aspetto della loro progettazione e realizzazione sia attentamente considerato e diligentemente applicato da tutti gli attori coinvolti nel processo. 
+      **L'accesso a siti e servizi pubblici digitali di qualità è un diritto da garantire a tutte le persone** che desiderano farne uso. Per questo, **i requisiti da rispettare sono indicati in modo dettagliato dalla legge**, affinché ogni aspetto della loro progettazione e realizzazione sia attentamente considerato e diligentemente applicato da tutti gli attori coinvolti nel processo.
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     moreText: | #C
-      Per orientarti nell'ecosistema di norme e riferimenti, la stella polare è rappresentata dalle **Linee guida di design, emesse secondo quanto definito dall’articolo 53 del Codice dell’Amministrazione Digitale**: ti indicano le regole che hai l'obbligo di rispettare, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle opzionali. 
-      Nell'applicazione concreta delle Linee guida ti aiuta il **Manuale operativo di design**: ti fornisce indicazioni operative a supporto della progettazione e della realizzazione di siti e servizi pubblici digitali accessibili, inclusivi e che riducono le disuguaglianze. 
+      Per orientarti nell'ecosistema di norme e riferimenti, la stella polare è rappresentata dalle **Linee guida di design, emesse secondo quanto definito dall’articolo 53 del Codice dell’Amministrazione Digitale**: ti indicano le regole che hai l'obbligo di rispettare, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle opzionali.
+      Nell'applicazione concreta delle Linee guida ti aiuta il **Manuale operativo di design**: ti fornisce indicazioni operative a supporto della progettazione e della realizzazione di siti e servizi pubblici digitali accessibili, inclusivi e che riducono le disuguaglianze.
 
   # ///////////////////
   # HIGHLIGHTS
@@ -200,10 +208,10 @@ components:
     # —
     - title : Linee guida di design  #C
       id: linee-guida-di-design
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 2
-      background: light # null | light | medium | dark  
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: light # null | light | medium | dark
       big: false
       specular: true
       subtitle: "Le regole tecniche che devi rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione" #C
@@ -213,25 +221,29 @@ components:
           btnStyle: primary
           url: "linee-guida-di-design/" #M
           addonStyle: mb-0
+        - label : Scopri i requisiti #C
+          btnStyle: outline-secondary
+          url: "linee-guida-di-design#requisiti" #M
+          addonStyle: mb-0
 
     # —
-    # HIGHLIGHT 
+    # HIGHLIGHT
     # —
     - title : Linee guida accessibilità #C
       id: linee-guida-accessibilita
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 2
-      background: null  # null | light | medium | dark  
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: null  # null | light | medium | dark
       big: false
-      specular: false
-      subtitle: "La norma a cui riferirti per favorire e semplificare l'accesso di tutte le persone, senza discriminazioni, agli strumenti informatici" #C 
+      specular: true
+      subtitle: "La norma a cui riferirti per favorire e semplificare l'accesso di tutte le persone, senza discriminazioni, agli strumenti informatici" #C
       text: "Il documento, che guida quanto disposto dall’articolo 11 della legge del 9 gennaio 2004, n. 4 e successivi aggiornamenti, è stato redatto ed emanato dall'Agenzia per l'Italia Digitale (AGID) per attuare la Direttiva UE 2016/2102, recepita in Italia con il Decreto legislativo n. 106 del 10 agosto 2018." #C
       buttons: #C #M
         - label : Scopri le Linee guida accessibilità
           btnStyle: primary
-          url: "linee-guida-accessibilita/" #M 
-     
+          url: "linee-guida-accessibilita/" #M
+
     # —
     # HIGHLIGHT BIG IMG
     # —
@@ -239,8 +251,8 @@ components:
       id: manuale-operativo-di-design
       # img : /images/400x300.png #I
       # alt: Alt lorem ipsum #C
-      headingLevel : 2
-      background: medium # null | light | medium | dark  
+      headingLevel : 3
+      background: medium # null | light | medium | dark
       big: false
       specular: true
       subtitle: "Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento" #C
@@ -254,20 +266,20 @@ components:
   # IMAGE COVER WITH ICONS
   # —
   imageIcons: #I
-    image: /images/400x300.png
-    alt: Alt lorem ipsum #C
+    image: /images/norme-e-riferimenti/manuale-operativo-di-design.jpg #I
+    alt: "Progettare è multi-disciplinare per definizione" #C
     background: medium
     images:
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
+    - img: /images/norme-e-riferimenti/manuale-0.svg
+      alt: "" #C
+    - img: /images/norme-e-riferimenti/manuale-1.svg
+      alt: "" #C
+    - img: /images/norme-e-riferimenti/manuale-2.svg
+      alt: "" #C
+    - img: /images/norme-e-riferimenti/manuale-3.svg
+      alt: "" #C
+    - img: /images/norme-e-riferimenti/manuale-4.svg
+      alt: "" #C
 
   # —
   # HIGHLIGHT WITH CARDS
@@ -276,6 +288,7 @@ components:
     id: articoli-di-approfondimento
     title: Articoli di approfondimento teorico #C
     text: La teoria che sta dietro alla pratica di Designers Italia #C
+    headingLevel: 3
     background: null
     col4: false # FALSE notizie + Medium | TRUE eventi + media
     buttons:
@@ -287,7 +300,7 @@ components:
       - type: button
         btnStyle: outline-primary
         label: Vai al Medium di Designers Italia #C
-        url: "https://medium.com/designers-italia" #M
+        url: https://medium.com/designers-italia #M
         blank: true
         icon:
           icon: sprites.svg#it-external-link
@@ -301,14 +314,14 @@ components:
 
     #CARD MEDIUM
     - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
-      headingLevel: 3
+      headingLevel: 4
       img: /images/community/articoli-di-approfondimento/2022-medium-tabellini-accessibilita.webp
       alt: descrizione immagine
       imgRatio: 16x9
       imgPlaceholder: false
       fullHeight: true
       rounded: true
-      url: "https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099"
+      url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099
       blank: true
       externalLink:
         label : Leggi su medium
@@ -342,7 +355,7 @@ components:
         list:
           isShare: true
     - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
-      headingLevel: 3
+      headingLevel: 4
       img: /images/community/articoli-di-approfondimento/2022-medium-filippi-etica.webp
       alt: descrizione immagine
       imgRatio: 16x9
@@ -350,7 +363,7 @@ components:
       fullHeight: true
       rounded: true
       blank: true
-      url: "https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469"
+      url: https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469
       externalLink:
         label : Leggi su medium
         screenReaderText: "l'articolo completo"
@@ -383,14 +396,14 @@ components:
         list:
           isShare: true
     - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
-      headingLevel: 3
+      headingLevel: 4
       img: /images/community/articoli-di-approfondimento/2021-medium-zaia-processo.webp
       alt: descrizione immagine
       imgRatio: 16x9
       imgPlaceholder: false
       fullHeight: true
       rounded: true
-      url: "https://medium.com/designers-italia/ripartire-da-approccio-e-processo-la-progettazione-di-servizi-pubblici-digitali-fb62858e2c6d"
+      url: https://medium.com/designers-italia/ripartire-da-approccio-e-processo-la-progettazione-di-servizi-pubblici-digitali-fb62858e2c6d
       blank: true
       externalLink:
         label : Leggi su medium
@@ -430,22 +443,23 @@ components:
   # HIGHLIGHT LOOP
   # —
   highlightsLoop2:
-   
+
     # —
-    # HIGHLIGHT 
+    # HIGHLIGHT
     # —
     - title : Altre norme e riferimenti #C
       id: altre-norme-e-riferimenti
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 2
-      background: light  # null | light | medium | dark  
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel : 3
+      background: light  # null | light | medium | dark
       big: false
       specular: true
-      subtitle: "Indici europei, piani triennali e tutti gli altri riferimenti per la progettazione di servizi digitali pubblici" #C 
-      text: | #C 
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+      subtitle: "Indici europei, il Piano Triennale, il CAD e gli altri riferimenti utili alla progettazione di servizi digitali pubblici" #C
+      # text: | #C
+      #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
       buttons: #C #M
         - label : Scopri altre norme e riferimenti
           btnStyle: primary
-          url: "#" #M 
+          url: "#" #M
+          disabled: true

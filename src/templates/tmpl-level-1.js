@@ -27,15 +27,22 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
 const Template = ({children,Pagedata,pageContext,location}) => {
+
+  let activePage = null
+
+    if (Pagedata.metadata.activeLabel) {
+        activePage = Pagedata.metadata.activeLabel
+    }
+
 	return (
     <div id="app">
+      <HeaderPre data={HeaderData.headerPre}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
-        <HeaderPre data={HeaderData.headerPre}/>
         <HeaderSlim data={HeaderData.headerSlim}/>
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter}/>
-          <HeaderNav data={HeaderData.navbar} page={Pagedata.seo.name}/>
+          <HeaderNav data={HeaderData.navbar} page={activePage}/>
         </NavWrapper>
       </Header>
       <main id="main">

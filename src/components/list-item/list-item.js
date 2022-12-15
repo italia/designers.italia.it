@@ -30,8 +30,8 @@ const ListItem = ({
 	action,          //arrow right
 	actions,			  //multiple actions right
 	metadata,        //metadata right
-	addonClasses
-
+	addonClasses,
+	onClick
 }) => {
 
   const GATSBY_ACTIVE = "active"
@@ -101,17 +101,13 @@ const ListItem = ({
 	if (metadata && actions) {
 		metadataActionsRendered = <span className="it-multiple flex-shrink-0">{metadataRendered}{icons}</span>
 	}
-	//-se esiste un link
-	if (url) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  to={url} target={blank ? '_blank' : undefined}>{iconLeft ? iconRendered: ''}<span>{children}</span>{isActive}{iconRight ? iconRendered: ''}</Link>
-	}
   //-se esiste un link
 	if (url) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  to={url} target={blank ? '_blank' : undefined}>{iconLeft ? iconRendered: ''}<span>{children}</span>{isActive}{iconRight ? iconRendered: ''}</Link>
+		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  to={url} target={blank ? '_blank' : undefined} onClick={onClick}>{iconLeft ? iconRendered: ''}<span>{children}</span>{isActive}{iconRight ? iconRendered: ''}</Link>
 	}
 	//-se è all'interno di un dropdown
 	if (isDropdown) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined}  to={url} target={blank ? '_blank' : undefined}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</Link>
+		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined}  to={url} target={blank ? '_blank' : undefined} onClick={onClick}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</Link>
 	}
 	//- se è una lista semplice
 	if (simpleList) {

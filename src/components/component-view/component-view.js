@@ -98,7 +98,9 @@ const ComponentView = ({
             {responsiveButtonsItems}
           </div>
         }
+        <span className="visually-hidden">Inizio componente:</span> {/* xxx move string to src/data/ */}
         <div dangerouslySetInnerHTML={createMarkup(content)} />
+        <span className="visually-hidden">Fine componente.</span>  {/* xxx move string to src/data/ */}
       </div>
       <div className="accordion accordion-left-icon" id={accId}>
         <div className="accordion-item">
@@ -109,9 +111,11 @@ const ComponentView = ({
               </button>
             </h2>
             <div className="d-flex justify-content-between align-items-center">
-              {content &&
-                <Checkbox id={idPrefix + '-' + 'wrap'} label='Wrap' customStyle={'me-3'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
-              }
+              <div aria-hidden="true" className="me-4">
+                {content &&
+                  <Checkbox id={idPrefix + '-' + 'wrap'} label='Wrap' customStyle={'me-3'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
+                }
+              </div>
               {content &&
                 <a href="" onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel}>
                   <Icon {...ICON_COPY_CODE}/>

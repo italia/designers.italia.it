@@ -16,20 +16,16 @@ let iconNewsletter = ({
   })
 
 const HeaderPost = ({data}) => {
-
-	// XXX TO DO:
-	// Check A11y
-	// Verify if to add a Skiplink dedicated to this "Ti potrebbe interessare" between Menu and Main content
 	if (data.isActive){
 		return (
-			<div id={data.nav.id}>
-				<nav className="" aria-label={data.nav.ariaLabel}>
+			<section aria-labelledby={data.nav.id}>
 					<div className="it-header-slim-wrapper p-0 h-100">
 						<div className="header-pre bg-white border-bottom border-100 shadow-sm">
 							<div className="container-xxl">
 								<div className="row ">
 									<div className="col-12 g-0">
 										<div className="header-post-wrapper">
+											<span id={data.nav.id} className="visually-hidden">{data.nav.ariaLabel}</span>
 											<ul className="list-inline py-4 px-4 px-lg-5 mb-0 d-flex align-items-center flex-nowrap overflow-x-list">
 												{data.nav.items.map((value,index)=>{
 													if (index + 1 === data.nav.items.length) { // last on the left side has "me-auto"
@@ -68,8 +64,7 @@ const HeaderPost = ({data}) => {
 							</div>
 						</div>
 					</div>
-				</nav>
-			</div>
+				</section>
 		)
 	}
 }

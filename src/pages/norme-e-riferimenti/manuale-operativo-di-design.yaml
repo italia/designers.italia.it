@@ -114,8 +114,8 @@ components:
       text: In breve 
     text: | #C
       Il Manuale operativo di design è uno strumento di lavoro che Designers Italia ti mette a disposizione per raggiungere gli obiettivi definiti nelle Linee guida di design e progettare siti e servizi digitali di qualità con le persone al centro.  
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    # img: /images/400x300.png #I
+    # alt: alt lorem ipsum #C
     imgRatio: 4x3
     share:
       btnId: shareButtonHero
@@ -185,20 +185,33 @@ components:
   # ///////////////////
   sectionsEditorial:
 
-    # —
+   # —
     # IMG FULL COVER
     # —
-    # - menu: false #TOGGLE RIGHT SECTION INDEX
-    #   background: null
-    #   full: true
-    #   noSpace: true
-    #   title: false
-    #   text: false
-    #   components:
-    #     # IMG
-    #     - name: ImageIcons
-    #       image: /images/image-icons-fullwidth.jpg #I
-    #       alt: Descrizione immagine grande #C
+    - menu: false #TOGGLE RIGHT SECTION INDEX
+      background: medium
+      full: true
+      noSpace: true
+      title: false
+      text: false
+      components:
+          # —
+          # IMAGE COVER WITH ICONS
+          # —
+        - name: ImageIcons #I
+          image: /images/norme-e-riferimenti/manuale-operativo-di-design.jpg #I
+          alt: "Progettare è multi-disciplinare per definizione" #C
+          images:
+          - img: /images/norme-e-riferimenti/manuale-0.svg
+            alt: "" #C
+          - img: /images/norme-e-riferimenti/manuale-1.svg
+            alt: "" #C
+          - img: /images/norme-e-riferimenti/manuale-2.svg
+            alt: "" #C
+          - img: /images/norme-e-riferimenti/manuale-3.svg
+            alt: "" #C
+          - img: /images/norme-e-riferimenti/manuale-4.svg
+            alt: "" #C
 
     # —
     # EDITORIAL #C #I
@@ -233,16 +246,16 @@ components:
             Segui un processo ciclico di pianificazione, analisi, definizione, sviluppo e test, per valutare le soluzioni proposte, analizzare i risultati e definire le modifiche da apportare nell’ottica del miglioramento continuo del tuo servizio o prodotto digitale. 
           
 
-  #  # —
-  #   # EDITORIAL #C #I
-  #   # —   
-  #   - #title: Dalla norma alla pratica progettuale
-  #     background: light
-  #     menu: false
-  #     centered: true
-  #     # text: | #C
-  #     #   Il Manuale operativo di design ti indica un approccio chiaro, un solido processo e tutte le risorse per progettare secondo la normativa
-  #     components: 
+   # —
+    # EDITORIAL #C #I
+    # —   
+    - #title: Dalla norma alla pratica progettuale
+      background: light
+      menu: false
+      centered: true
+      # text: | #C
+      #   Il Manuale operativo di design ti indica un approccio chiaro, un solido processo e tutte le risorse per progettare secondo la normativa
+      components: 
 
         # TXT BLOCK
         - name: TextImageCta
@@ -268,7 +281,7 @@ components:
           #### Leggi il Manuale operativo di design su Docs Italia h4
           ctas:
           - label: Vai al manuale operativo di design #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/index.html" #M
+            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/index.html #M
             blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links

@@ -114,8 +114,8 @@ components:
       text: In breve 
     text: | #C
       Le linee guida rappresentano la norma di riferimento per orientare la progettazione e la realizzazione di siti e servizi pubblici digitali, valorizzando l’usabilità e un approccio progettuale che mette le persone al centro.  
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    # img: /images/400x300.png #I
+    # alt: alt lorem ipsum #C
     imgRatio: 4x3
     share:
       btnId: shareButtonHero
@@ -255,7 +255,7 @@ components:
             Per l’implementazione di queste regole tecniche, hai a disposizione diversi strumenti: i **modelli**, i **kit** e il **Manuale operativo di design**, una guida pratica dedicata alla PA e ai suoi fornitori per raggiungere gli obiettivi definiti nelle Linee guida.
           ctas:
           - label: Vai alle Linee guida di design #C
-            url: "https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/index.html" #M
+            url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/index.html #M
             blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -266,7 +266,7 @@ components:
               addonClasses: ms-2
 
   highlightCards:
-    id: HC1
+    id: requisiti
     title: Scopri i requisiti #C
     text: Le schede informative che raccordano linee guida, manuale operativo e strumenti #C
     col4: false
@@ -333,7 +333,7 @@ components:
         fullHeight: true
         # noShadow: true
         customCol: col-lg-9
-        url: "#" #M
+        url: "requisito-4-3/" #M
         rounded: true
         # tag:
         #   label: Design standard #C

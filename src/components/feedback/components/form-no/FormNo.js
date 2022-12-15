@@ -1,5 +1,6 @@
 import React, { useCallback, useState, useRef } from "react"
 import ImageResponsive from "../../../image-responsive/image-responsive"
+import LabelTextArea from "../../../label-textarea/label-text-area"
 import Link from "../../../link/link"
 import Icon from "../../../icon/icon"
 
@@ -154,9 +155,8 @@ const FormNo = ({ onResult, state }) => {
         </legend>
         <div className="px-3 px-lg-5 pt-5 pb-1 rounded shadow-lg">
           <div className="form-group">
-            <label htmlFor="feedbackText" className="custom-label">Risposta</label>
-            <textarea className="form-control" rows="3" maxLength="200" id="feedbackText" name="feedbackText" />
-            <small className="form-control form-text">Hai a disposizione 200 caratteri</small>
+            <LabelTextArea ariadescribedby="helperText" id="feedbackText" label="Risposta" rows="3" maxLength="200" />
+            <small id="helperText" className="form-control form-text">Hai a disposizione 200 caratteri</small>
           </div>
         </div>
       </fieldset>
