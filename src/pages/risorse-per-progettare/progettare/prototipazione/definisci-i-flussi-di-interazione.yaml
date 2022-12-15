@@ -147,8 +147,8 @@ components:
       #text: In breve
     #text: | #C
       #Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    img: /images/risorse-per-progettare/icons/kit_prototipazione_flussi.svg #I
+    alt: "" #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -169,7 +169,7 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase
+          - title: Ti trovi nella fase #C
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -177,16 +177,24 @@ components:
               color: "secondary"
             label: Progettare #C
             url: "../../" #M
-      #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+          - title: Nel kit di design #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Prototipazione #C
+            url: "../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -259,85 +267,68 @@ components:
         headingLevel: 3
         listItems:
           - label: Foglio di costruzione dei flussi di interazione #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Foglio Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Lo strumento per definire l'interazione con un servizio digitale in termini di azioni, scelte dell'utente e risposte del sistema #C
+            text: "Lo strumento per definire l'interazione con un servizio digitale in termini di azioni, scelte dell'utente e risposte del sistema" #C
             url: https://docs.google.com/spreadsheets/d/19u8t0EuGCck3yNS12F4V9IjuwETJhVXOB_PvPpGSTnU/edit?usp=sharing #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://docs.google.com/spreadsheets/d/19u8t0EuGCck3yNS12F4V9IjuwETJhVXOB_PvPpGSTnU/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Foglio Google: Foglio di costruzione dei flussi di interazione (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Costruzione-dei-Flussi-di-Interazione.ods #M
+                ariaLabel: "ODS Foglio di costruzione dei flussi di interazione" #C #COMPILE FOR EACH ITEM
+                blank: false
+
           - label: Esempio di costruzione dei flussi #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Foglio Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Un esempio di come impostare un foglio di costruzione dei flussi con informazioni e osservazioni utili #C
             url: https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit?usp=sharing #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/spreadsheets/d/1AZE8G7QDRThxfxRZUqVgX0qjPYhJkPuSVQjVqx_Bf2U/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Foglio Google:  Esempio di costruzione dei flussi (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Flussi-di-Interazione-esempio.ods #M
+                ariaLabel: "ODS Esempio di costruzione dei flussi" #C #COMPILE FOR EACH ITEM
+                blank: false
    
       - simpleList : true
         title: Visualizzazione dei flussi #C
         headingLevel: 3
         listItems:
           - label: Strumento di visualizzazione dei flussi di interazione #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Presentazione Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: La risorsa per creare dei diagrammi grafici dei flussi per evidenziare i punti di entrata, di arrivo e i percorsi alternativi di un servizio digitale #C
             url: https://docs.google.com/presentation/d/1qzEtt75yfSaQihD6jy0WGElrvQeyp37MCgJuqEG8Q_U/edit?usp=sharing #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://docs.google.com/presentation/d/1qzEtt75yfSaQihD6jy0WGElrvQeyp37MCgJuqEG8Q_U/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Presentazione Google: Strumento di visualizzazione dei flussi di interazione (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-La-visualizzazione-dei-flussi-di-interazione.odp #M 
+                ariaLabel: "ODP Strumento di visualizzazione dei flussi di interazione" #C #COMPILE FOR EACH ITEM
+                blank: false
+
           - label: Esempio di visualizzazione dei flussi #C
-            url: https://drive.google.com/file/d/1eeFE81ReRPkeBTQ4KlW2mwqDDjI0SylU/view #M
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un esempio di come realizzare una visualizzazione dei flussi comprensibile e utile #C
-            blank: true
+            url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Flussi-di-Interazione-esempio.jpg #M
+            srBefore: JPG #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: Una immagine esempio di come realizzare una visualizzazione dei flussi comprensibile e utile #C
+            blank: false
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  https://drive.google.com/file/d/1eeFE81ReRPkeBTQ4KlW2mwqDDjI0SylU/view #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-camera  #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Flussi-di-Interazione-esempio.jpg #M
+                ariaLabel: JPG Esempio di visualizzazione dei flussi  #C #COMPILE FOR EACH ITEM
+                blank: false
+
 
           

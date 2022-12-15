@@ -26,7 +26,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Realizza un prototipo in bassa fedeltà - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Imposta la struttura dell’interfaccia di un servizio digitale con gli elementi essenziali per verificarne l’efficienza e l’efficacia. #C
+  description : "Imposta la struttura dell’interfaccia di un servizio digitale con gli elementi essenziali per verificarne l’efficienza e l’efficacia." #C
   image : null #I
   twitterImage: null #I
   canonical: null
@@ -147,8 +147,8 @@ components:
       #text: In breve
     #text: | #C
       #Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    img: /images/risorse-per-progettare/icons/kit_prototipazione_costruisci.svg #I
+    alt: "" #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -169,7 +169,7 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase
+          - title: Ti trovi nella fase #C
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -177,16 +177,24 @@ components:
               color: "secondary"
             label: Progettare #C
             url: "../../" #M
-      #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+          - title: Nel kit di design #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Prototipazione #C
+            url: "../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -257,42 +265,27 @@ components:
         headingLevel: 3
         listItems:
           - label: Wireframe kit per Sketch #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Repository GitHub " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: La libreria di elementi per costruire un prototipo in bassa fedeltà delle schermate di interfaccia di un servizio su Sketch #C
             url: https://github.com/italia/design-wireframe-kit #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  https://docs.google.com/spreadsheets/d/19u8t0EuGCck3yNS12F4V9IjuwETJhVXOB_PvPpGSTnU/edit?usp=sharing #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://github.com/italia/design-wireframe-kit #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: Repository GitHub Wireframe kit per Sketch (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
           - label: Wireframe di carta #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: La versione stampabile della libreria di elementi per costruire un prototipo in bassa fedeltà delle schermate di interfaccia di un servizio #C
-            url: https://drive.google.com/file/d/1wdb4JWlcJRYum2LpnllFy2zlxx2EptYx/view #M
+            srBefore: PDF #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: "La versione stampabile della libreria di elementi per costruire un prototipo in bassa fedeltà delle schermate di interfaccia di un servizio" #C
+            url:  /files/resources/risorse-per-progettare/progettare/prototipazione/visualizza-flussi-interazione/DI-WireframeKit_carta.pdf #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://drive.google.com/file/d/1wdb4JWlcJRYum2LpnllFy2zlxx2EptYx/view #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/prototipazione/visualizza-flussi-interazione/DI-WireframeKit_carta.pdf #M
+                ariaLabel: PDF Wireframe di carta #C #COMPILE FOR EACH ITEM
+                blank: false
+
 
           

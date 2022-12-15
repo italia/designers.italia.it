@@ -137,8 +137,8 @@ components:
       text: In breve
     text: | #C
       Il prototipo di un servizio digitale ti permette di **testare un'idea in maniera rapida ed economica**, prima di investire nello sviluppo vero e proprio. Le risorse di questo kit ti aiutano a definire i flussi di interazione e a realizzare un prototipo in bassa fedeltà dell'interfaccia utente, così da validare funzionalità e contenuti con utenti e stakeholder. 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    img: /images/risorse-per-progettare/icons/kit_prototipazione.svg #I
+    alt: "" #C
     share:
       btnId: shareButton
       button:
@@ -166,16 +166,16 @@ components:
               color: "secondary"
             label: Progettare #C
             url: "../" #M
-      #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -280,7 +280,7 @@ components:
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/prototipare-un-servizio.html #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -305,10 +305,11 @@ components:
 
       # CARD CHILDREN ACTION
       - title: Definisci i flussi di interazione #C
+        rounded: true
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        iconImg: /images/risorse-per-progettare/icons/kit_prototipazione_flussi.svg #I
+        iconImgAlt: "" #C
         url: "definisci-i-flussi-di-interazione/" #M
         text: | #C
           Identifica le azioni che un utente compie per interagire con con un servizio digitale, utili a individuare eventuali complessità e a scegliere soluzioni tecnologiche appropriate.
@@ -328,10 +329,11 @@ components:
 
       # CARD CHILDREN ACTION
       - title: Realizza un prototipo in bassa fedeltà #C
+        rounded: true
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        iconImg: static/images/risorse-per-progettare/icons/kit_prototipazione_costruisci.svg #I
+        iconImgAlt: "" #C
         url: "realizza-un-prototipo-in-bassa-fedelta/" #M
         text: | #C
           Imposta la struttura dell’interfaccia con gli elementi essenziali per verificare l’efficienza e l’efficacia di un servzio digitale, senza preoccuparti dell’aspetto grafico. 
