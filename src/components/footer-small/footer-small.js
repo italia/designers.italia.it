@@ -17,6 +17,7 @@ const FooterSmall = ({
                 <Link
                   to={value.url}
                   target={value.blank ? "_blank" : undefined}
+                  aria-label={value.ariaLabel}
                 >{value.title}</Link>
               </li>
             )
