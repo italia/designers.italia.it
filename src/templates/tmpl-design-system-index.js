@@ -40,7 +40,6 @@ const Template = ({children,Pagedata,pageContext,location}) => {
         </NavWrapper>
       </Header>
       <main id="main" className="bg-light">
-
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column bs-is-sticky" data-bs-toggle="sticky" data-bs-stackable="true">
