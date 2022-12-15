@@ -25,12 +25,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Crea e condividi una dashboard dati - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source. #C
+  name: Individua i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni del futuro touchpoint digitale. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/validare/web-analytics/crea-e-condividi-una-dashboard-dati/ #M
+  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/individua-i-contenuti/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -69,7 +69,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Validare #C
+        label: Progettare #C
         url: "../../" #M
       - title: Nel kit di design #C
         icon:
@@ -77,7 +77,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Web analytics #C
+        label: Architettura dell'informazione #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -127,28 +127,28 @@ components:
         - label : Risorse per progettare
           active: false
           url: ../../../
-        - label : Validare
+        - label : Progettare
           url: ../../
           active: false
-        - label : Web analytics
+        - label : Architettura dell'informazione
           url: ../
           active: false
-        - label : Crea e condividi una dashboard dati
+        - label : Individua i contenuti
           active: true
-    title: Crea e condividi una dashboard dati #C
-    subtitle: Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source. #C
+    title: Individua i contenuti #C
+    subtitle: Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni del futuro touchpoint digitale #C
     tag:
-      label: Attività del kit #C
+      label: Kit di design #C
       addonClasses: mt-3 text-uppercase
-    # pretext:
-    #   icon:
-    #     icon: sprites.svg#it-info-circle
-    #     size: sm
-    # text: In breve
-    # text: | #C
-    #   Lorem **ipsum** 
-    img: /images/risorse-per-progettare/icons/kit_analytics_creaDashboards.svg #I
-    alt: "Dashboard per tutti i gusti" #C
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve
+    text: | #C
+      Lorem **ipsum** 
+    img: /images/400x300.png #I
+    alt: descrizione immagine #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -169,22 +169,14 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase
+          - title: Ti trovi in
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Validare #C
+            label: Level 2 #C
             url: "../../" #M
-          - title: Nel kit di design #C
-            icon:
-              icon: "sprites.svg#it-tool"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Web analytics #C
-            url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -193,8 +185,8 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            label: Design standard X #C
+            url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -203,14 +195,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer #C
+            label: Designer, Developer #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Verificare la tua soluzione digitale #C
+            label: Progettare l'interazione dell'utente con il servizio #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -218,22 +210,26 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Data driven design
+        - label: Architettura dell'informazione
           url: "#"
           color: primary
           size: lg
-        - label: Analytics
+        - label: Scenari d'uso
+          url: "#"
+          color: primary
+          size: lg
+        - label: Contenuti
           url: "#"
           color: primary
           size: lg
       
-  # ///////////////////
+  ## ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial :
 
 
-    - title: Imposta una visualizzazione dinamica relativa ai dati del tuo sito o servizio #C
+    - title: Come utilizzare gli scenari per definire il contesto d’uso di un touchpoint #C
       menu: false
       centered: true
       background: null
@@ -243,11 +239,11 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          # title: | #C
+          # title: A cosa servono h3 #C
           text: | #C
-            Le configurazioni dashboard personalizzate ti permettono di risparmiare tempo quando hai bisogno di visualizzare metriche e dimensioni d'analisi di tuo interesse. 
+            Gli scenari sono delle **storie** che raccontano specifiche vicende di utilizzo di un servizio digitale da parte di uno specifico utente, in uno specifico contesto; puoi usarli in modi diversi e con diversi scopi, a seconda del focus del progetto: qui trovi lo strumento scenari d'uso come punto di partenza per ideare le caratteristiche del futuro touchpoint digitale del servizio, in termini di contenuti e funzioni che questo dovrebbe avere. Gli scenari solitamente hanno come soggetto una delle **personas** di riferimento, e sono perciò un modo per trasporre quanto emerso dalla ricerca in idee per migliorare l’interazione con il servizio.
             
-            Imparando a costruire dashboard di dati relative ai principali indicatori di performance del tuo sito o servizio, potrai **ottenere a colpo d’occhio indicazioni sull’andamento delle performance della tua soluzione digitale** e facilitare inoltre la condivisioni di queste informazioni con decisori e altri stakeholder. 
+            Contestualizzare una persona in uno scenario d’uso ti aiuta a comprendere i suoi obiettivi e a declinarli in sotto-obiettivi specifici. Questo è utile per mettere a fuoco le possibili **criticità** che l’utente potrebbe incontrare nell’interagire con il servizio digitale, sia nel caso della ri-progettazione un servizio digitale già esistente sia nel caso tu debba ipotizzare nuove soluzioni per future implementazioni di servizi.
             
   # ///////////////////
   # RESOURCES
@@ -257,23 +253,36 @@ components:
     headingLevel: 2
     list:
       - simpleList : true
-        # title: Matomo analytics dashboard #C
         headingLevel: 3
         listItems:
-          - label: Crea una dashboard dati con Matomo analytics #C
+          - label: Scenari d'uso #C
             srBefore: "Documento Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Una guida per creare una dashboard di dati custom con il software open source Matomo #C
-            url: https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing #M
+            text: Metti a fuoco il contesto di utilizzo di un servizio digitale #C
+            url: https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing #M
-                ariaLabel: "Documento Google: Crea una dashboard dati con Matomo analytics (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                url: https://docs.google.com/spreadsheets/d/1G2OHLvQ25efMf_mSUA-DgKXs8PyT9fLK2eiA1BbCdhI/edit?usp=sharing #M
+                ariaLabel: "Documento Google: Scenari d'uso (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/webanalytics/DI-Crea-una-dashboard-con-Matomo.odt #M
-                ariaLabel: "Scarica ODT Crea una dashboard dati con Matomo analytics" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  LINK #M
+                ariaLabel: "Scarica ODS Scenari d'uso" #C #COMPILE FOR EACH ITEM
                 blank: false
-
-       #  https://developers.italia.it/it/software/italia-software-matomo-32c75d
+          - label: Esempio di scenari d'uso #C
+            srBefore: "Documento Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Guarda l'esempio di uno scenario d'uso basato sul modello Comuni #C
+            url: https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://docs.google.com/spreadsheets/d/1bxHH3xV6QtGcl_0_IDLjGCjazzD4-9nWyDQqczWSdRc/edit?usp=sharing #M
+                ariaLabel: "Documento Google: Scenari d'uso (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  LINK #M
+                ariaLabel: "Scarica ODS Esempio di scenari d'uso" #C #COMPILE FOR EACH ITEM
+                blank: false
+ 

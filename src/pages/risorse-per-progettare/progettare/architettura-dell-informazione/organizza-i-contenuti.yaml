@@ -25,12 +25,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Crea e condividi una dashboard dati - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description : Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source. #C
+  name: Organizza i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description : Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie. #C
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/validare/web-analytics/crea-e-condividi-una-dashboard-dati/ #M
+  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/organizza-i-contenuti/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -69,7 +69,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Validare #C
+        label: Progettare #C
         url: "../../" #M
       - title: Nel kit di design #C
         icon:
@@ -77,7 +77,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Web analytics #C
+        label: Architettura dell'informazione #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -127,28 +127,28 @@ components:
         - label : Risorse per progettare
           active: false
           url: ../../../
-        - label : Validare
+        - label : Progettare
           url: ../../
           active: false
-        - label : Web analytics
+        - label : Architettura dell'informazione
           url: ../
           active: false
-        - label : Crea e condividi una dashboard dati
+        - label : Organizza i contenuti
           active: true
-    title: Crea e condividi una dashboard dati #C
-    subtitle: Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source. #C
+    title: Organizza i contenuti #C
+    subtitle: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie #C
     tag:
-      label: Attività del kit #C
+      label: Kit di design #C
       addonClasses: mt-3 text-uppercase
-    # pretext:
-    #   icon:
-    #     icon: sprites.svg#it-info-circle
-    #     size: sm
-    # text: In breve
-    # text: | #C
-    #   Lorem **ipsum** 
-    img: /images/risorse-per-progettare/icons/kit_analytics_creaDashboards.svg #I
-    alt: "Dashboard per tutti i gusti" #C
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve
+    text: | #C
+      Lorem **ipsum** 
+    img: /images/400x300.png #I
+    alt: descrizione immagine #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -169,22 +169,14 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase
+          - title: Ti trovi in
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Validare #C
+            label: Level 2 #C
             url: "../../" #M
-          - title: Nel kit di design #C
-            icon:
-              icon: "sprites.svg#it-tool"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Web analytics #C
-            url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -193,8 +185,8 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            label: Design standard X #C
+            url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -203,14 +195,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer #C
+            label: Designer, Developer #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Verificare la tua soluzione digitale #C
+            label: Progettare l'interazione dell'utente con il servizio #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -218,22 +210,26 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Data driven design
+        - label: Architettura dell'informazione
           url: "#"
           color: primary
           size: lg
-        - label: Analytics
+        - label: Card sorting
+          url: "#"
+          color: primary
+          size: lg
+        - label: Contenuti
           url: "#"
           color: primary
           size: lg
       
-  # ///////////////////
+  ## ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial :
 
 
-    - title: Imposta una visualizzazione dinamica relativa ai dati del tuo sito o servizio #C
+    - title: Come catalogare e raggruppare i contenuti con il card sorting #C
       menu: false
       centered: true
       background: null
@@ -243,11 +239,13 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          # title: | #C
+          # title: A cosa servono h3 #C
           text: | #C
-            Le configurazioni dashboard personalizzate ti permettono di risparmiare tempo quando hai bisogno di visualizzare metriche e dimensioni d'analisi di tuo interesse. 
-            
-            Imparando a costruire dashboard di dati relative ai principali indicatori di performance del tuo sito o servizio, potrai **ottenere a colpo d’occhio indicazioni sull’andamento delle performance della tua soluzione digitale** e facilitare inoltre la condivisioni di queste informazioni con decisori e altri stakeholder. 
+            Se gli scenari d'uso ti permettono di individuare una serie di contenuti e funzioni potenziali per il servizio che stai progettando, l'attività di card sorting ti aiuterà a **raggruppare, ordinare e declinare** queste caratteristiche-chiave.
+
+            L'attività di card sorting è infatti utile per **individuare le macro-categorie** in cui contenuti e funzioni sono raggruppati e i percorsi attraverso i quali si articolano. Serve anche a **descrivere le tipologie di contenuti** presenti nel sistema e le relazioni che intercorrono fra esse.
+
+            Questo lavoro di catalogazione e raggruppamento è fondamentale per costruire e/o consolidare l’architettura dell’Informazione alla base del servizio digitale.
             
   # ///////////////////
   # RESOURCES
@@ -257,23 +255,51 @@ components:
     headingLevel: 2
     list:
       - simpleList : true
-        # title: Matomo analytics dashboard #C
         headingLevel: 3
         listItems:
-          - label: Crea una dashboard dati con Matomo analytics #C
+          - label: Card sorting #C
             srBefore: "Documento Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Una guida per creare una dashboard di dati custom con il software open source Matomo #C
-            url: https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing #M
+            text: Organizza contenuti e funzioni del servizio digitale #C
+            url: https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/document/d/1F1nUtrNh_E5AkEfJSYcSnK0fEIWSr5tTiZ-ZTH5nai8/edit?usp=sharing #M
-                ariaLabel: "Documento Google: Crea una dashboard dati con Matomo analytics (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                url: https://docs.google.com/presentation/d/1cN3KCS_sBkJpbeFPwobdkCPzMe1ulWxfbXwJU-dqq6Q/edit?usp=sharing #M
+                ariaLabel: "Documento Google: Card sorting (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/webanalytics/DI-Crea-una-dashboard-con-Matomo.odt #M
-                ariaLabel: "Scarica ODT Crea una dashboard dati con Matomo analytics" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  LINK #M
+                ariaLabel: "Scarica ODS Card sorting" #C #COMPILE FOR EACH ITEM
                 blank: false
-
-       #  https://developers.italia.it/it/software/italia-software-matomo-32c75d
+          - label: Esempio di card sorting #C
+            srBefore: "Documento Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Guarda l'esempio di card sorting #C
+            url: https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://drive.google.com/file/d/1kDeHA9yx7IUbeLFGwz8mmuZsdtVJ9HJ2/view?usp=sharing #M
+                ariaLabel: "Documento Google: Scenari d'uso (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  LINK #M
+                ariaLabel: "Scarica ODS Esempio di card sorting" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Card sorting in versione stampabile #C
+            srBefore: "PDF: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Stampa il card sorting per fare l'esercizio dal vivo #C
+            url: https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf #M
+                ariaLabel: "PDF: Card sorting in versione stampabile (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  LINK #M
+                ariaLabel: "Scarica ODS Card sorting in formato stampabile" #C #COMPILE FOR EACH ITEM
+                blank: false
+ 
