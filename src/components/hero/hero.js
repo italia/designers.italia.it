@@ -51,8 +51,10 @@ const Hero =({
   let textStyle= "texts py-3"
    + `${centered ? ' pb-lg-4' : ' pb-lg-5'}`
 
-  let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3'
+  let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3 rounded'
 		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
+
+  let imgResponsiveStyle = 'rounded'
 
   let rowStyle = 'row g-0'
 		+ `${centered ? ' justify-content-lg-center' : ''}`
@@ -130,7 +132,7 @@ const Hero =({
                     // <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
                     <div className={rightColumnStyle}>
                       { img && <div className={imgStyle}>
-                        <ImageResponsive src={img} alt={alt} />
+                        <ImageResponsive src={img} alt={alt} imgClassName={imgResponsiveStyle}/>
                       </div>}
                       {share  && <Dropdown {...share}></Dropdown>}
                     </div>
