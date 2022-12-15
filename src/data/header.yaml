@@ -80,8 +80,8 @@ navbar:
         label : Progetto #C
         megamenu:
           left:
-            img : /images/progetto/visione-e-missione.jpg #I
-            alt: Testare con gli utenti reali è progettare #C
+            img : /images/home/home.jpg #I
+            alt: La Qualità ha le persone al centro #C
             text: | #C
               **Designers Italia è il punto di partenza** per la realizzazione di servizi digitali pubblici. Esplora e prendi parte al progetto.
           heading:
@@ -96,8 +96,8 @@ navbar:
                   label: Formazione e disseminazione
                 - url: "/progetto/storia/"
                   label: Storia
-            - isMenu: true
-              listItems: #C #M
+            # - isMenu: true
+            #   listItems: #C #M
                 # - url: "modelli/lorem-ipsum"
                 #   label: Lorem ipsum
       - isDropDown : true
@@ -106,7 +106,7 @@ navbar:
         label : Norme e riferimenti #C
         megamenu:
           left:
-            img: /images/400x300.png #I
+            img: /images/norme-e-riferimenti/manuale-operativo-di-design.jpg #I
             imgAlt: Alt lorem ipsum #C
             text: | #C
               **Scopri i principali riferimenti normativi** per progettare servizi digitali pubblici inclusivi, equi e accessibili.
@@ -150,14 +150,14 @@ navbar:
                   label: Comuni
                 - url: "/modelli/scuole/"
                   label: Scuole
-                - url: "#"
-                  label: Servizi
-                  disabled: true
-            - isMenu: true
-              listItems: #C #M
-                - url: "#"
-                  label: Fascicolo sanitario elettronico
-                  disabled: true
+                # - url: "#" # XXX
+                #   label: Servizi
+                #   disabled: true
+            # - isMenu: true
+            #   listItems: #C #M
+            #     - url: "#"
+            #       label: Fascicolo sanitario elettronico
+            #       disabled: true
       - isDropDown : true
         isMegaMenu : true
         idMegamenu : menuD
