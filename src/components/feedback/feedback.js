@@ -101,7 +101,9 @@ const Feedback = () => {
       case FeedbackState.Loading:
       case FeedbackState.Start: return (
         <>
-          <span className="feedback-title">Ciao, questa pagina è stata utile?</span>
+          <h2 className="mb-0 h5 fw-semibold" id="feedbackSectionTitle">
+            <span className="feedback-title">Ciao, questa pagina è stata utile?</span>
+          </h2>
           <form className="mt-3 mt-md-3">
             <fieldset className="d-flex">
               <legend>
@@ -159,9 +161,7 @@ const Feedback = () => {
               <div>
                 <div className="card-body p-4 p-md-5">
                   <div className="step" id="feedbackIntro">
-                    <h2 className="mb-0 h5 fw-semibold" id="feedbackSectionTitle">
-                      {renderState(feedbackState)}
-                   </h2>
+                    {renderState(feedbackState)}
                   </div>
                 </div>
               </div>
