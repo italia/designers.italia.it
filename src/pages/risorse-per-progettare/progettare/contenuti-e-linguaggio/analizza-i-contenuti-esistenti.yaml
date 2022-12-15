@@ -147,8 +147,8 @@ components:
       #text: In breve
     #text: | #C
       #Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    img: /images/risorse-per-progettare/icons/kit_linguaggio_analizza.svg #I
+    alt: "" #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -169,7 +169,7 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase
+          - title: Ti trovi nella fase #C
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -177,6 +177,14 @@ components:
               color: "secondary"
             label: Progettare #C
             url: "../../" #M
+          - title: Nel kit di design #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Contenuti e linguaggio #C
+            url: "../" #M
       #otherInfo:
         #items:
           #- title: Rispettando
@@ -257,60 +265,39 @@ components:
         headingLevel: 3
         listItems:
           - label: Modello di analisi dei contenuti #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: Foglio Google #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Un modello per aiutarti a strutturare un audit dei contenuti e coordinare gli interventi di revisione #C
             url: https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://docs.google.com/spreadsheets/d/1tmVB0unvsZ5wViYFtyaf95t69Pt4a5JAIFmGdjJjdwI/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Foglio Google: Modello di analisi dei contenuti (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  https://github.com/italia/design-wireframe-kit #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/analizza-contenuti/DI-Modello-analisi-contenuti.ods #M
+                ariaLabel: "ODS Modello di analisi dei contenuti" #C #COMPILE FOR EACH ITEM
+                blank: false
           - label: Esercizio di card sorting #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            srBefore: PDF #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: # FOR SCREEN READER ARIA LABEL
             text: Uno strumento per definire in maniera collaborativa le funzionalità più importanti di un servizio digitale #C
-            url: https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf #M
-            blank: true
+            url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/analizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
+            blank: false
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://designers.italia.it/assets/downloads/CoDesignWorkshop_Card%20sorting.pdf #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/analizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
+                ariaLabel: PDF Esercizio di card sorting #C #COMPILE FOR EACH ITEM
+                blank: false
           - label: Esercizio di content journey #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            srBefore: PDF #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: # FOR SCREEN READER ARIA LABEL
             text: Un modello per comprendere l’esperienza delle persone, guardando soprattutto ai contenuti che possono renderla più semplice e fluida #C
-            url: https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view #M
-            blank: true
+            url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/analizza-contenuti/DI-Content-journey-canvas.pdf #M
+            blank: false
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://drive.google.com/file/d/1HEaJVym_dHbT2HdNd8oWDZZBMUwCuaFe/view #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-          
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/analizza-contenuti/DI-Content-journey-canvas.pdf #M
+                ariaLabel: PDF Esercizio di content journey #C #COMPILE FOR EACH ITEM
+                blank: false

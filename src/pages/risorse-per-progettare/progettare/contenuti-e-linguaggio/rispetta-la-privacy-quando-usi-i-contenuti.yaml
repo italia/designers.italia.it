@@ -147,8 +147,8 @@ components:
       #text: In breve
     #text: | #C
       #Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    img: /images/risorse-per-progettare/icons/kit_linguaggio_privacy.svg #I
+    alt: "" #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -169,7 +169,7 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase
+          - title: Ti trovi nella fase #C
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -177,6 +177,14 @@ components:
               color: "secondary"
             label: Progettare #C
             url: "../../" #M
+          - title: Nel kit di design #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Contenuti e linguaggio #C
+            url: "../" #M
       #otherInfo:
         #items:
           #- title: Rispettando
@@ -256,23 +264,18 @@ components:
         #title: Costruzione dei flussi #C
         headingLevel: 3
         listItems:
-          - label: Modello di liberatoria per l’uso d’immagini o altri contenuti multimediali #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          - label: "Modello di liberatoria per l’uso d’immagini o altri contenuti multimediali" #C
+            srBefore: "Documento Google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Un modello per ottenere il consenso delle persone ritratte in immagini o video che s’intende utilizzare e pubblicare online #C
             url: https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://docs.google.com/document/d/1HHyrk8L86XHuC0NOCAnSDY68Bjbjpp0vxvk5cL330vo/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Documento Google: Modello di liberatoria per l’uso d’immagini o altri contenuti multimediali (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  https://github.com/italia/design-wireframe-kit #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-          
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/rispetta-privacy/DI-Modello-di-liberatoria-e-consenso-al-trattamento-delle-immagini-per-maggiorenni-minorenni.odt #M
+                ariaLabel: "ODT Modello di liberatoria per l’uso d’immagini o altri contenuti multimediali" #C #COMPILE FOR EACH ITEM
+                blank: false
