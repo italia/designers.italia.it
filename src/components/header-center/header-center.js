@@ -51,7 +51,6 @@ const HeaderCenter = ({data}) => {
             <div className="it-header-center-content-wrapper">
               <div className="it-brand-wrapper">
                 <Link to="/">
-                  {/* <Icon icon="sprites.svg#it-designers-italia" hidden/> */}
                   <ImageResponsive src={data.logo} alt="" imgClassName="icon"/>
                   <div className="it-brand-text">
                     <div className="it-brand-title">{data.title}</div>

@@ -41,7 +41,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
 
         <div className="container-xxl">
           <div className="row">
-            <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column bs-is-sticky" data-bs-toggle="sticky" data-bs-stackable="true">
+            <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column bs-is-sticky" data-bs-stackable="true">
               <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
             </div>
             <div className="col-12 col-lg-9 px-lg-0 content-column bg-white">

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react"
-import { Collapse } from "bootstrap-italia/dist/bootstrap-italia.esm"
+import { Collapse } from "bootstrap-italia"
 import Icon from "../icon/icon"
 import List from "../list/list"
 import ListItem from "../list-item/list-item"

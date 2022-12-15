@@ -2,8 +2,6 @@ import * as React from "react"
 import "../scss/styles.scss"
 import "../js/globals"
 
-import { TrackFocus } from "bootstrap-italia/dist/bootstrap-italia.esm"
-
 import Skiplinks from "../components/skiplinks/skiplinks"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
@@ -21,7 +19,6 @@ import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const trackFocusDummy = TrackFocus //trick treeshaking
 
 const Template = ({children, Pagedata, location, pageContext}) => {
 	return (

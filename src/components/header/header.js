@@ -1,15 +1,14 @@
 import React from "react"
 import { useEffect } from "react"
 import "./header.scss"
-
-import { Sticky } from "bootstrap-italia"
+import {HeaderSticky} from "bootstrap-italia"
 
 const Header = ({
   data,
   children
 }) => {
   useEffect(() => {
-    new Sticky(document.getElementById('header-nav-wrapper'))
+   new HeaderSticky(document.getElementById("header"))
   })
   const styles = "it-header-wrapper"
     + `${data.sticky ? ' it-header-sticky' : ''}`
@@ -19,10 +18,12 @@ const Header = ({
   return (
     <header
       className={styles}
-      data-bs-toggle={data.sticky ? 'sticky' : ''}
+      id="header"
+      // data-bs-toggle={data.sticky ? 'sticky' : ''}
       data-bs-position-type={data.sticky ? 'fixed' : ''}
       data-bs-sticky-class-name={data.sticky ? 'is-sticky' : ''}
-      data-bs-target={`#${data.navbar.id}`}>
+      data-bs-target={`#${data.navbar.id}`}
+      >
       {children}
     </header>
   )

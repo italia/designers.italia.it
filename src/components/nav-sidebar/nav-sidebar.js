@@ -3,7 +3,7 @@ import Tag from "../tag/tag"
 import Link from "../link/link"
 import "./nav-sidebar.scss"
 
-import { NavBarCollapsible } from "bootstrap-italia/dist/bootstrap-italia.esm"
+import { NavBarCollapsible } from "bootstrap-italia"
 
 const NavSidebar = ({
   id,

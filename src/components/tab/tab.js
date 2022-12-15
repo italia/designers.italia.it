@@ -5,7 +5,7 @@ import ComponentView from "../component-view/component-view"
 import ContentSelect from "../content-select/content-select"
 import ContentSelectItem from "../content-select/components/content-select-item/content-select-item"
 
-import { Tab as TabBI } from "bootstrap-italia/dist/bootstrap-italia.esm"
+import { Tab as TabBI } from "bootstrap-italia"
 const tabDummy = TabBI //trick treeshaking
 
 const Tab = ({

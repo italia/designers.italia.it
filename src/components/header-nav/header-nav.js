@@ -6,7 +6,7 @@ import HeaderMenuItem from "../header-menu-item/header-menu-item"
 import HeaderMenuLink from "../header-menu-link/header-menu-link"
 import DropdownMenu from "../dropdown-menu/dropdown-menu"
 import Megamenu from "../megamenu/megamenu"
-import { NavBarCollapsible } from "bootstrap-italia/dist/bootstrap-italia.esm"
+import { NavBarCollapsible } from "bootstrap-italia"
 
 const HeaderNav = ({
   data,
