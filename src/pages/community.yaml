@@ -151,6 +151,7 @@ components:
         btnStyle: primary
         label: Esplora il calendario eventi
         addonStyle: d-block
+        disabled: true
       cards:
       - title: Designers Italia a Wired Next Festival
         headingLevel: 4
@@ -269,6 +270,7 @@ components:
         btnStyle: primary
         label: Esplora tutte le notizie
         addonStyle: d-block
+        disabled: true
 
       cards:
 
@@ -441,6 +443,7 @@ components:
         label: Esplora tutti gli approfondimenti
         addonStyle: me-3 d-block
         url: "#"
+        disabled: true
       - type: button
         btnStyle: outline-primary
         label: Vai al Medium di Designers Italia
@@ -583,131 +586,133 @@ components:
             isShare: true
 
 
+    # XXX DISABLED MEDIA AREA > WILL GO TO BETA MILESTONE
 
-    - id: media
-      title: Media
-      headingLevel: 3
-      text: "I video degli eventi a cui partecipiamo, i tutorial tecnici e i podcast sul progetto Designers Italia"
-      col4: true
-      background: null
-      buttons:
-      - type: button
-        btnStyle: primary
-        label: Esplora tutti i media
-        addonStyle: d-block
+    # - id: media
+    #   title: Media
+    #   headingLevel: 3
+    #   text: "I video degli eventi a cui partecipiamo, i tutorial tecnici e i podcast sul progetto Designers Italia"
+    #   col4: true
+    #   background: null
+    #   buttons:
+    #   - type: button
+    #     btnStyle: primary
+    #     label: Esplora tutti i media
+    #     addonStyle: d-block
+    #     disabled: true
 
-      cards:
-      - title: "Community Call: il bottone SPID e gli altri"
-        headingLevel: 4
-        titleSmall: true
-        moreInfo : durata 21 minuti
-        cardEvent: true
-        img: /images/400x300.png
-        alt: descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        iconOverlay:
-          icon: sprites.svg#it-video
-          ariaLabel: Video
-        url: "#"
-        tag:
-          label: Registrazione
-        share:
-          btnId: shareButtonCardMedia1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+    #   cards:
+    #   - title: "Community Call: il bottone SPID e gli altri"
+    #     headingLevel: 4
+    #     titleSmall: true
+    #     moreInfo : durata 21 minuti
+    #     cardEvent: true
+    #     img: /images/400x300.png
+    #     alt: descrizione immagine
+    #     imgRatio: 16x9
+    #     imgPlaceholder: false
+    #     fullHeight: true
+    #     iconOverlay:
+    #       icon: sprites.svg#it-video
+    #       ariaLabel: Video
+    #     url: "#"
+    #     tag:
+    #       label: Registrazione
+    #     share:
+    #       btnId: shareButtonCardMedia1
+    #       button:
+    #         addonStyle: icon-only-drop
+    #         ariaLabel: Condividi
+    #         icon:
+    #           icon: sprites.svg#it-more-items
+    #           size: sm
+    #           color: secondary
+    #       list:
+    #         isShare: true
 
-      - title: Come usare il design system del Paese quanso sei al mare
-        headingLevel: 4
-        titleSmall: true
-        moreInfo : durata 1 minuto
-        cardEvent: true
-        img: /images/400x300.png
-        alt: descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        iconOverlay:
-          icon: sprites.svg#it-video
-          ariaLabel: Video
-        url: "#"
-        tag:
-          label: Tutorial
-        share:
-          btnId: shareButtonCardMedia2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+    #   - title: Come usare il design system del Paese quanso sei al mare
+    #     headingLevel: 4
+    #     titleSmall: true
+    #     moreInfo : durata 1 minuto
+    #     cardEvent: true
+    #     img: /images/400x300.png
+    #     alt: descrizione immagine
+    #     imgRatio: 16x9
+    #     imgPlaceholder: false
+    #     fullHeight: true
+    #     iconOverlay:
+    #       icon: sprites.svg#it-video
+    #       ariaLabel: Video
+    #     url: "#"
+    #     tag:
+    #       label: Tutorial
+    #     share:
+    #       btnId: shareButtonCardMedia2
+    #       button:
+    #         addonStyle: icon-only-drop
+    #         ariaLabel: Condividi
+    #         icon:
+    #           icon: sprites.svg#it-more-items
+    #           size: sm
+    #           color: secondary
+    #       list:
+    #         isShare: true
 
-      - title: Fanelli parla di Designers Italia
-        headingLevel: 4
-        titleSmall: true
-        moreInfo : durata 21 minuti
-        cardEvent: true
-        img: /images/400x300.png
-        alt: descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        iconOverlay:
-          icon: sprites.svg#it-hearing
-          ariaLabel: Audio
-        url: "#"
-        tag:
-          label: Podcast
-        share:
-          btnId: shareButtonCardMedia3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+    #   - title: Fanelli parla di Designers Italia
+    #     headingLevel: 4
+    #     titleSmall: true
+    #     moreInfo : durata 21 minuti
+    #     cardEvent: true
+    #     img: /images/400x300.png
+    #     alt: descrizione immagine
+    #     imgRatio: 16x9
+    #     imgPlaceholder: false
+    #     fullHeight: true
+    #     iconOverlay:
+    #       icon: sprites.svg#it-hearing
+    #       ariaLabel: Audio
+    #     url: "#"
+    #     tag:
+    #       label: Podcast
+    #     share:
+    #       btnId: shareButtonCardMedia3
+    #       button:
+    #         addonStyle: icon-only-drop
+    #         ariaLabel: Condividi
+    #         icon:
+    #           icon: sprites.svg#it-more-items
+    #           size: sm
+    #           color: secondary
+    #       list:
+    #         isShare: true
 
-      - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
-        headingLevel: 4
-        titleSmall: true
-        moreInfo : durata 10 minuti
-        cardEvent: true
-        img: /images/400x300.png
-        alt: descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        iconOverlay:
-          icon: sprites.svg#it-video
-          ariaLabel: Video
-        url: "#"
-        tag:
-          label: Registrazione
-        share:
-          btnId: shareButtonCardMedia4
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+    #   - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
+    #     headingLevel: 4
+    #     titleSmall: true
+    #     moreInfo : durata 10 minuti
+    #     cardEvent: true
+    #     img: /images/400x300.png
+    #     alt: descrizione immagine
+    #     imgRatio: 16x9
+    #     imgPlaceholder: false
+    #     fullHeight: true
+    #     iconOverlay:
+    #       icon: sprites.svg#it-video
+    #       ariaLabel: Video
+    #     url: "#"
+    #     tag:
+    #       label: Registrazione
+    #     share:
+    #       btnId: shareButtonCardMedia4
+    #       button:
+    #         addonStyle: icon-only-drop
+    #         ariaLabel: Condividi
+    #         icon:
+    #           icon: sprites.svg#it-more-items
+    #           size: sm
+    #           color: secondary
+    #       list:
+    #         isShare: true
 
 
 
