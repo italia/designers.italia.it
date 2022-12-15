@@ -104,9 +104,12 @@ const Feedback = () => {
           <span className="feedback-title">Ciao, questa pagina è stata utile?</span>
           <form className="mt-3 mt-md-3">
             <fieldset className="d-flex">
+              <legend>
+                <span className="visually-hidden">Scegli la risposta:</span>
+              </legend>
               <div className="form-check me-4">
                 <input name="feedbackValue" type="radio" id="feedbackValueYes" value="1" onChange={onChange} />
-                <label className="mb-0" htmlFor="feedbackValueYes">Si</label>
+                <label className="mb-0" htmlFor="feedbackValueYes">Sì</label>
               </div>
               <div className="form-check">
                 <input name="feedbackValue" type="radio" id="feedbackValueNo" value="0" onChange={onChange} />
