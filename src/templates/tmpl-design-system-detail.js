@@ -37,25 +37,25 @@ const Template = ({children,Pagedata,pageContext,location}) => {
           <HeaderNav data={HeaderData.navbar} page={Pagedata.seo.name}/>
         </NavWrapper>
       </Header>
-      <main id="main" className="bg-light">
+      <div className="bg-light">
 
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column bs-is-sticky" data-bs-toggle="sticky" data-bs-stackable="true">
               <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
             </div>
-            <div className="col-12 col-lg-9 px-lg-0 content-column bg-white">
+            <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
 
               {children}
 
               {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
-            </div>
+            </main>
           </div>
         </div>
 
         <Feedback/>
-      </main>
+      </div>
       <Footer {...FooterData.footer}>
       </Footer>
       <BackToTopEl
