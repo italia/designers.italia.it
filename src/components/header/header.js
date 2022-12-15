@@ -1,13 +1,16 @@
 import React from "react"
+import { useEffect } from "react"
 import "./header.scss"
 
-import { Sticky } from "bootstrap-italia/dist/bootstrap-italia.esm"
-const sticky = Sticky //trick for treeshaking
+import { Sticky } from "bootstrap-italia"
 
 const Header = ({
   data,
   children
 }) => {
+  useEffect(() => {
+    new Sticky(document.getElementById('header-nav-wrapper'))
+  })
   const styles = "it-header-wrapper"
     + `${data.sticky ? ' it-header-sticky' : ''}`
     + `${data.shadow ? ' shadow' : ''}`
