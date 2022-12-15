@@ -2,7 +2,7 @@ import * as React from "react"
 import Template from "../../../../templates/tmpl-level-4"
 import {Seo} from "../../../../components/seo/seo"
 
-import Pagedata from "./individua-i-contenuti.yaml"
+import Pagedata from "./costruisci-l-architettura-informativa.yaml"
 
 const Level4 = ({ pageContext,location }) => {
   return(
