@@ -35,8 +35,8 @@ const Template = ({children, Pagedata, location, pageContext}) => {
           <HeaderNav data={HeaderData.navbar} />
         </NavWrapper>
       </Header>
+      {/* <HeaderPost data={HeaderData.headerPost}/> */}
       <main id="main">
-        <HeaderPost data={HeaderData.headerPost}/>
         {children}
         {/* {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null } */}
         {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
