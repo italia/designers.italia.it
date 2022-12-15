@@ -86,7 +86,7 @@ const Hero =({
 	return(
 		<div className={styles}>
       <div className="hero-content">
-        {bgImg && <div className="bg-image"><ImageResponsive src={bgImg} alt={bgImgAlt}/></div>}
+        {/* {bgImg && <div className="bg-image"><ImageResponsive src={bgImg} alt={bgImgAlt}/></div>} */}
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 g-0">
