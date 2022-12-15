@@ -121,8 +121,8 @@ components:
       text: In breve
     text: | #C
       Scopri la roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi mesi e anni, con uno sguardo rivolto ad azioni e obiettivi futuri.
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    # img: /images/400x300.png #I
+    # alt: alt lorem ipsum #C
     imgRatio: 4x3
     share:
       btnId: shareButtonHero
@@ -195,7 +195,10 @@ components:
             Versione stabile del kit di progettazione interfaccia, con evidenza del nuovo modello di contribuzione.
 
             #### Nuovo sito designers.italia.it
-            Rilascio del nuovo sito ufficiale, con navigazione migliorata e accesso semplificato alle risorse operative e al design system, per le PA e i loro fornitori.
+            Validazione e rilascio del nuovo sito ufficiale, con navigazione migliorata e accesso semplificato alle risorse operative e al design system, per le PA e i loro fornitori.
+
+            #### Pubblicazione compendio sulle linee guida di design
+            Pubblicazione nuove schede informative che raccordano linee guida, manuale operativo e strumenti.
 
    # —
     # EDITORIAL #C #I
@@ -225,16 +228,17 @@ components:
           title: "Rilascio design system del Paese, versione alpha" #C
           text: | #C
             Rilascio versione alpha della nuova documentazione del design system del Paese.
- 
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          specular: false
-          title: "Pubblicazione compendio sulle linee guida di design" #C
-          text: | #C
-            Pubblicazione nuove schede informative che raccordano linee guida, manuale operativo e strumenti.
+          ctas:
+          - label: Vai al design system #C
+            url: "/design-system/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
  
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -261,7 +265,7 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -277,6 +281,18 @@ components:
           title: "Design system: definizione supporto evolutivo Design React Kit" #C
           text: | #C
             Definizione supporto all'evoluzione della libreria community-driven che implementa il design system in React.
+          ctas: 
+          - label: Segui le lavorazioni nella PR dedicata
+            url: https://github.com/italia/design-react-kit/pull/885
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -339,7 +355,30 @@ components:
           specular: false
           title: "Avvio riprogettazione sito designers.italia.it" #C
           text: | #C
-            Avvio attività per una nuova versione che tenga conto dei suggerimenti della community, degli aggiornamenti al design system e del tema accessibilità. Le fasi di progettazione e realizzazione saranno incorso fino a tutto Q4. Puoi seguire i lavori di sviluppo sul ramo *next* della repository GitHub del sito.
+            Avvio attività per una nuova versione che tenga conto dei suggerimenti della community, degli aggiornamenti al design system e del tema accessibilità. Le fasi di progettazione e realizzazione saranno incorso fino a tutto Q4. 
+          ctas: 
+          - label: Segui i lavori sul ramo next della repository GitHub
+            url: https://github.com/italia/designers.italia.it/tree/next
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
+          - label: Visita la board con le attività in corso
+            url: https://github.com/orgs/italia/projects/15
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
  
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -372,7 +411,7 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
