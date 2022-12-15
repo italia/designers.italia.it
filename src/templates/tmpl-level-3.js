@@ -28,9 +28,9 @@ import Kangaroo from "../components/kangaroo/kangaroo"
 const Template = ({children,Pagedata,pageContext,location}) => {
 	return (
     <div id="app">
+      <HeaderPre data={HeaderData.headerPre}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
-        <HeaderPre data={HeaderData.headerPre}/>
         <HeaderSlim data={HeaderData.headerSlim}/>
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter}/>
