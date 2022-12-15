@@ -98,7 +98,9 @@ const ComponentView = ({
             {responsiveButtonsItems}
           </div>
         }
+        <span className="visually-hidden">Inizio componente:</span> {/* xxx move string to src/data/ */}
         <div dangerouslySetInnerHTML={createMarkup(content)} />
+        <span className="visually-hidden">Fine componente.</span>  {/* xxx move string to src/data/ */}
       </div>
       <div className="accordion accordion-left-icon" id={accId}>
         <div className="accordion-item">
