@@ -9,7 +9,7 @@ const Chip = (
 		label,
 		blank,
 		disabled,
-		children
+		children,
 	}
 ) =>{
 	let styles = 'chip chip-simple'
@@ -26,12 +26,9 @@ const Chip = (
 		children = label
 	}
 
-    let screenReaderText = "Argomento:" 
-	// XXX Hardcoded, to be addressed
-
 	return (
 		<Link to={url} className={styles} target={blank ? '_blank' : undefined}>
-			<span className="chip-label"><span className="visually-hidden">{screenReaderText}</span> {children}</span>
+			<span className="chip-label">{children}</span>
 		</Link>
 	)
 }
