@@ -48,9 +48,15 @@ const NavSidebar = ({
             linksStyle = linksStyle+' contains-active'
           }
 
+          let subLiStyle = undefined
+
+          if (subItem.disabled) {
+            subLiStyle = 'disabled'
+          }
+
           return (
-            <li key={"subl-"+index}>
-              <Link to={subItem.url} activeClassName={GATSBY_ACTIVE}><span>{subItem.label}</span></Link>
+             <li key={"subl-"+index}>
+              <Link to={subItem.url} className={subLiStyle} activeClassName={GATSBY_ACTIVE}><span>{subItem.label}</span></Link>
             </li>
           )
         })
