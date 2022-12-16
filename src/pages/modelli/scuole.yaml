@@ -121,8 +121,8 @@ components:
       text: In breve 
     text: | #C
       Il modello ti permette di **realizzare siti istituzionali per le scuole** già validati dalla ricerca e progettati sui bisogni dela comunità scolastica. Le risorse, pronte all'uso, comprendono l'architettura dell'informazione, i template HTML e i temi per CMS, oltre a una serie di guide pratiche a supporto per impostare e svolgere il lavoro in modo rapido ed economico.
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    img: /images/modelli/scuole-icon.svg #I
+    alt: "" #C
     imgRatio: 4x3
     share:
       btnId: shareButtonHero
@@ -207,8 +207,8 @@ components:
       components:
         # IMG
         - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
+          image : /images/modelli/scuole-pattern.png #I
+          alt: "Pattern di navigazione dal modello scuole" #C
 
     # —
     # EDITORIAL #C #I
@@ -341,8 +341,8 @@ components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/modelli/PA-digitale-adotta.svg #I
+          alt: "" #C
           specular: false
           #title: Lorem ipsum h3 #C
           text: | #C
@@ -378,6 +378,10 @@ components:
       # CARD CHILDREN
       - title: Il sito scolastico #C
         text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito scolastico semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/scuole.png
+        alt: ""
+        imgRatio: 4x3
+        imgPlaceholder: false
         titleSmall: false
         fullHeight: true
         url: "adotta-il-modello-di-sito-scolastico/" #M
@@ -454,8 +458,8 @@ components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/modelli/PA-digitale-lettera.svg #I
+          alt: "" #C
           specular: true
           #title: Lorem ipsum h3 #C
           text: | #C
@@ -484,7 +488,7 @@ components:
               #addonClasses: ms-2
 
 
-    # —
+     # —
     # EDITORIAL #C #I
     # —   
     - menu: false
@@ -497,17 +501,17 @@ components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/itForum.svg #I
+          alt: "" #C
           specular: true
           #title: ciao
           text: |
-            **Unisciti alla discussion** sul design dei servizi digitali con gli esperti del settore
+            **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
           - label: Vai su Forum Italia #C
-            url: https://forum.italia.it/c/design/modello-scuole/ #M
-            blank: true #M #C true if new tab for external links
+            url: https://forum.italia.it/c/design/modello-comuni/ #M
             screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -518,17 +522,17 @@ components:
         
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/Slack.svg #I
+          alt: "" #C
           specular: true
           #title: ciao
           text: |
-            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole 
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-comuni 
           ctas:
           - label: Vai su Slack #C
-            url: https://developersitalia.slack.com/archives/CQ7J0KANT #M
-            blank: true #M #C true if new tab for external links
+            url: https://developersitalia.slack.com/archives/CME9AD8NN #M
             screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -539,17 +543,17 @@ components:
         
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/Github.svg #I
+          alt: "" #C
           specular: true
           #title: ciao
           text: |
             **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
           - label: Vai su GitHub #C
-            url: Visita github.com/italia  #M
-            blank: true #M #C true if new tab for external links
+            url: https://github.com/italia/  #M
             screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
             icon: 
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -558,6 +562,5 @@ components:
               size: sm
               addonClasses: ms-2
                        
-
 
 

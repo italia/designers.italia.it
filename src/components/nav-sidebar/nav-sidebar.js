@@ -3,7 +3,7 @@ import Tag from "../tag/tag"
 import Link from "../link/link"
 import "./nav-sidebar.scss"
 
-import { NavBarCollapsible } from "bootstrap-italia"
+import { NavBarCollapsible, Sticky } from "bootstrap-italia"
 
 const NavSidebar = ({
   id,
@@ -30,6 +30,7 @@ const NavSidebar = ({
 
   const GATSBY_ACTIVE = "active"
   const navCollRef = useRef(null)
+  const navStickyRef = useRef(null)
 
   if (list) {
     links = list.map((item,index) => {
@@ -104,6 +105,12 @@ const NavSidebar = ({
 
   useEffect(() => {
     const navColl = navCollRef.current
+    const navSticky = navStickyRef.current
+    if (navSticky) {
+      new Sticky(navSticky, {
+        stackable: true
+      })
+    }
     return () => {
       if (navColl) {
         const navCollObj = NavBarCollapsible.getInstance(navColl)
@@ -115,52 +122,53 @@ const NavSidebar = ({
   })
 
   return (
-    <div className="nav-sidebar">
+    <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column bs-is-sticky" ref={navStickyRef}>
+      <div className="nav-sidebar">
+        <nav className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0" aria-label={ariaLabel}>
+          <button className="custom-navbar-toggler" type="button" aria-controls={id} aria-expanded="false" aria-label={toggleAriaLabel} data-bs-toggle="navbarcollapsible" data-bs-target="#navSidebarDs"><span className="it-list"></span>{toggleLabel}
+          </button>
+          <div className="navbar-collapsable" id={id} ref={navCollRef}>
+            <div className="overlay"></div>
+            <div className="close-div visually-hidden">
+              <button className="btn close-menu" type="button">
+                <span className="it-close"></span>{buttonCloseAriaLabel}
+              </button>
+            </div>
+            <a className="it-back-button" href="#" role="button">
+              <svg className="icon icon-sm icon-primary align-top">
+                <use href="/svg/sprites.svg#it-chevron-left"></use>
+              </svg>
+              <span>{backLabel}</span>
+            </a>
+            <div className="menu-wrapper">
 
-      <nav className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0" aria-label={ariaLabel}>
-        <button className="custom-navbar-toggler" type="button" aria-controls={id} aria-expanded="false" aria-label={toggleAriaLabel} data-bs-toggle="navbarcollapsible" data-bs-target="#navSidebarDs"><span className="it-list"></span>{toggleLabel}
-        </button>
-        <div className="navbar-collapsable" id={id} ref={navCollRef}>
-          <div className="overlay"></div>
-          <div className="close-div visually-hidden">
-            <button className="btn close-menu" type="button">
-              <span className="it-close"></span>{buttonCloseAriaLabel}
-            </button>
-          </div>
-          <a className="it-back-button" href="#" role="button">
-            <svg className="icon icon-sm icon-primary align-top">
-              <use href="/svg/sprites.svg#it-chevron-left"></use>
-            </svg>
-            <span>{backLabel}</span>
-          </a>
-          <div className="menu-wrapper">
-
-          <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
-            <img src={img} className="header-image my-2" alt={alt}/>
-            <h2 className="h4 text-primary">{title}</h2>
-            { tag && <Tag {...tag}/>}
-          </div>
-
-            <div className="link-list-wrapper">
-              <ul className="link-list">
-                {links}
-              </ul>
+            <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
+              <img src={img} className="header-image my-2" alt={alt}/>
+              <h2 className="h4 text-primary">{title}</h2>
+              { tag && <Tag {...tag}/>}
             </div>
 
-            { secondaryLinks &&
-              <div className="sidebar-linklist-wrapper linklist-secondary">
-                <div className="link-list-wrapper">
-                  <ul className="link-list">
-                    {secondaryLinks}
-                  </ul>
-                </div>
+              <div className="link-list-wrapper">
+                <ul className="link-list">
+                  {links}
+                </ul>
               </div>
-            }
+
+              { secondaryLinks &&
+                <div className="sidebar-linklist-wrapper linklist-secondary">
+                  <div className="link-list-wrapper">
+                    <ul className="link-list">
+                      {secondaryLinks}
+                    </ul>
+                  </div>
+                </div>
+              }
+
+            </div>
 
           </div>
-
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
   )
 }
