@@ -266,25 +266,21 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Documento di Architettura dell’informazione #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          - label: Documento di Architettura dell’informazione - Comuni #C
+            srBefore: "Foglio Google :" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Indicazioni su tipologie di contenuto (content type), sistemi di navigazione e tassonomie per tutte le sezioni del sito di un Comune #C
             url: https://docs.google.com/spreadsheets/d/1D4KbaA__xO9x_iBm08KvZASjrrFLYLKX/edit?usp=sharing&ouid=109069620194773449819&rtpof=true&sd=true #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://docs.google.com/spreadsheets/d/1D4KbaA__xO9x_iBm08KvZASjrrFLYLKX/edit?usp=sharing&ouid=109069620194773449819&rtpof=true&sd=true #M
                 ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url:  /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/definisci-architettura-e-contenuti/Architettura-informazione-modello-Comuni.ods #M
+                ariaLabel: "ODS Documento di Architettura dell'informazione per il modello di sito comunale" (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                blank: false
           - label: Guida alla migrazione dei contenuti #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
@@ -325,7 +321,7 @@ components:
                 #blank: true
           - label: Privacy - Kit di design #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            srAfter: (si apre nella stessa finestra) # FOR SCREEN READER ARIA LABEL
             text: Le indicazioni e le risorse per progettare con un approccio orientato alla privacy degli utenti #M
             url: "/risorse-per-progettare/organizzare/privacy" #M
             blank: false
