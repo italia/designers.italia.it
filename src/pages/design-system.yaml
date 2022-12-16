@@ -84,8 +84,8 @@ components:
       text: In breve
     text: | #C
       Qui trovi fondamenti, componenti, design pattern e showcase per creare il tuo progetto in linea con gli standard della Pubblica Amministrazione, che offra un’esperienza d’uso ottimale e che ti permetta di guadagnare tempo e risorse pur mantendendo alto il livello di qualità.
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    # img: /images/400x300.png #I
+    # alt: alt lorem ipsum #C
     imgRatio: 4x3
     share: #AUTO
       btnId: shareButtonHero
@@ -216,12 +216,12 @@ components:
     # —
     - title : Come iniziare #C
       id: come-iniziare
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
       headingLevel : 3
       background: light # null | light | medium | dark
       big: false
-      specular: false
+      specular: true
       subtitle: Scopri i primi passi da compiere per progettare con il design system #C
       buttons: #C #I
         - label : Scopri come iniziare #C
@@ -245,8 +245,8 @@ components:
     # —
     - title : Fondamenti #C
       id: fondamenti
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
       headingLevel : 3
       background: null  # null | light | medium | dark
       big: false
@@ -265,21 +265,21 @@ components:
     # —
     - title : Componenti #C
       id: componenti
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
       headingLevel : 3
       big: false
       background: light
-      specular: false
+      specular: true
       subtitle: "Gli elementi per realizzare l’interfaccia" #C
-      numbers: #C #I
-        items:
-        - icon: sprites.svg#it-tool
-          number: 55
-          label: Componenti
-        - icon: sprites.svg#it-tool
-          number: 1800
-          label: Varianti
+      # numbers: #C #I
+      #   items:
+      #   - icon: sprites.svg#it-tool
+      #     number: 55
+      #     label: Componenti
+      #   - icon: sprites.svg#it-tool
+      #     number: 1800
+      #     label: Varianti
       text: | #C
         Una libreria completa di elementi pronti per essere utilizzati per creare un’interfaccia utente che offra un’esperienza d’uso ottimale. Ogni componente garantisce accessibilità, inclusività e usabilità, senza riservare brutte sorprese.
       buttons: #C #M
@@ -310,30 +310,30 @@ components:
           disabled: true
 
 
-  # —
-  # IMAGE COVER WITH ICONS
-  # —
-  imageIcons: #I
-    image: /images/400x300.png
-    alt: Alt lorem ipsum #C
-    # icons:
-    # - icon:
-    #     icon: sprites.svg#it-presentation
-    #     color: white
-    # - icon:
-    #     icon: sprites.svg#it-telephone
-    #     color: white
-    # - icon:
-    #     icon: sprites.svg#it-piattaforme
-    #     color: white
-    # - icon:
-    #     icon: sprites.svg#it-video
-    #     color: white
-    images:
-    - img: /images/conversation.svg
-      alt: Alt lorem ipsum #C
-    # - img: /images/conversation.svg
-    #   alt: Alt lorem ipsum #C
+  # # —
+  # # IMAGE COVER WITH ICONS
+  # # —
+  # imageIcons: #I
+  #   image: /images/400x300.png
+  #   alt: Alt lorem ipsum #C
+  #   # icons:
+  #   # - icon:
+  #   #     icon: sprites.svg#it-presentation
+  #   #     color: white
+  #   # - icon:
+  #   #     icon: sprites.svg#it-telephone
+  #   #     color: white
+  #   # - icon:
+  #   #     icon: sprites.svg#it-piattaforme
+  #   #     color: white
+  #   # - icon:
+  #   #     icon: sprites.svg#it-video
+  #   #     color: white
+  #   images:
+  #   - img: /images/conversation.svg
+  #     alt: Alt lorem ipsum #C
+  #   # - img: /images/conversation.svg
+  #   #   alt: Alt lorem ipsum #C
 
   # —
   # HIGHLIGHT LOOP
@@ -346,8 +346,8 @@ components:
     # —
     - title : Showcase #C
       id: showcase
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
+      # img : /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
       headingLevel : 3
       big: false
       background: dark
