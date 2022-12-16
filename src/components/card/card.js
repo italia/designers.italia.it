@@ -103,7 +103,7 @@ const Card =(
               {tag && <div className="tag-container">
                 <Tag {...tag}></Tag>
               </div>}
-              {share && <Dropdown {...share}></Dropdown>}
+              {share && <Dropdown {...share} shareUrl={url}></Dropdown>}
             </div>
           </div>}
         </div>
@@ -148,7 +148,7 @@ const Card =(
               {tag && <div className="tag-container">
                 <Tag {...tag}></Tag>
               </div>}
-              {share && <Dropdown {...share}></Dropdown>}
+              {share && <Dropdown {...share} shareUrl={url}></Dropdown>}
             </div>
           </div>}
         </div>

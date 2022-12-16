@@ -20,15 +20,15 @@ const List = React.forwardRef(({
 	headingLink,    //if heading has link
 	listItems,
 	simpleList,
+	shareUrl,
 }, ref) => {
-
   const [currentUrl, setCurrentUrl ] = useState('')
   const [currentTitle, setCurrentTitle] = useState('')
 
   useEffect(() => {
-    setCurrentUrl(window.location.href)
-    setCurrentTitle(window.document.title)
-  })
+    setCurrentUrl(shareUrl || window.location.href)
+    setCurrentTitle(shareUrl || window.document.title)
+  }, [shareUrl])
 
   //heading level
 	let HLevel
