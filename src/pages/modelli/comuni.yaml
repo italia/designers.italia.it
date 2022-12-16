@@ -59,34 +59,34 @@ lastUpdate:
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
 # ————————————————————————————————————————————
-navPreFooter:
-  navOtherPrevNext:
-    prev:
-      label: Titolo sorella precedente #C
-      url: "#" #M
-      # image: /images/link-custom-icon.svg #I
-      blank: false
-      specular: false
-      icon:
-        icon: "sprites.svg#it-arrow-left"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 me-3
-    next:
-      label: Titolo sorella successiva #C
-      url: "#" #M
-      # image: /images/link-custom-icon.svg #I
-      blank: false
-      specular: true
-      icon:
-        icon: "sprites.svg#it-arrow-right"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 ms-3
+# navPreFooter:
+#   navOtherPrevNext:
+#     prev:
+#       label: Titolo sorella precedente #C
+#       url: "#" #M
+#       # image: /images/link-custom-icon.svg #I
+#       blank: false
+#       specular: false
+#       icon:
+#         icon: "sprites.svg#it-arrow-left"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 me-3
+#     next:
+#       label: Titolo sorella successiva #C
+#       url: "#" #M
+#       # image: /images/link-custom-icon.svg #I
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
 
 # ————————————————————————————————————————————
 # CONTENT
@@ -121,8 +121,8 @@ components:
       text: In breve 
     text: | #C
       Il modello ti permette di **realizzare siti e servizi comunali** già validati dalla ricerca e progettati sui bisogni dei cittadini. Le risorse, pronte all'uso, comprendono l'architettura dell'informazione, i template HTML e i temi per CMS, oltre a una serie di guide pratiche a supporto per impostare e svolgere il lavoro in modo rapido ed economico.
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    img: /images/modelli/comuni-icon.svg #I
+    alt: "" #C
     imgRatio: 4x3
     share:
       btnId: shareButtonHero
@@ -195,7 +195,7 @@ components:
   # ///////////////////
   sectionsEditorial:
 
-    # —
+      # —
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
@@ -207,9 +207,8 @@ components:
       components:
         # IMG
         - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
-
+          image : /images/modelli/comuni-pattern.png #I
+          alt: "Pattern di navigazione dal modello Comuni" #C
     # —
     # EDITORIAL #C #I
     # —   
@@ -393,8 +392,8 @@ components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/modelli/PA-digitale-adotta.svg #I
+          alt: "" #C
           specular: false
           #title: Lorem ipsum h3 #C
           text: | #C
@@ -429,6 +428,10 @@ components:
       # CARD CHILDREN
       - title: Il sito comunale #C
         text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/comuni.png
+        alt: ""
+        imgRatio: 4x3
+        imgPlaceholder: false
         titleSmall: false
         fullHeight: true
         url: "adotta-il-modello-di-sito-comunale/" #M
@@ -449,6 +452,10 @@ components:
       # CARD CHILDREN
       - title: I servizi digitali #C
         text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
+        # img: 
+        # alt: ""
+        # imgRatio: 4x3
+        # imgPlaceholder: true
         titleSmall: false
         fullHeight: true
         url: "adotta-il-modello-di-servizi-digitali-comunali/" #M
@@ -505,8 +512,8 @@ components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/modelli/PA-digitale-lettera.svg #I
+          alt: "" #C
           specular: true
           #title: Lorem ipsum h3 #C
           text: | #C
@@ -548,8 +555,8 @@ components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/itForum.svg #I
+          alt: "" #C
           specular: true
           #title: ciao
           text: |
@@ -569,8 +576,8 @@ components:
         
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/Slack.svg #I
+          alt: "" #C
           specular: true
           #title: ciao
           text: |
@@ -590,8 +597,8 @@ components:
         
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/Github.svg #I
+          alt: "" #C
           specular: true
           #title: ciao
           text: |

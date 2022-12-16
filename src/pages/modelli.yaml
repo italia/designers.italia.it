@@ -84,8 +84,8 @@ components:
       text: In breve
     text: | #C
       I modelli di design ti permettono di **realizzare siti e servizi istituzionali già validati dalla ricerca e progettati sui bisogni dei cittadini**. Aderenti alle linee guida nazionali e alle migliori pratiche di progettazione digitale, **i modelli comprendono guide e risorse pronte all'uso** che ti aiutano a impostare e svolgere il lavoro in modo rapido ed economico.
-    img: /images/400x300.png #I
-    alt: alt lorem ipsum #C
+    # img: /images/400x300.png #I
+    # alt: alt lorem ipsum #C
     imgRatio: 4x3
     share: #AUTO
       btnId: shareButtonHero
@@ -216,12 +216,13 @@ components:
     # —
     - title : Comuni #C
       id: comuni
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
+      img : /images/modelli/comuni-pattern.png #I
+      alt: "" #C
       headingLevel : 3
-      specular: false
+      specular: true
+      # fullImg: false
       background: light  # null | light | medium | dark
-      big: false
+      big: true
       subtitle: Il modello per il sito e i servizi comunali #C
       numbers: #C #I
         items:
@@ -258,12 +259,12 @@ components:
     # —
     - title : Scuole #C
       id: HL4
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
+      img : /images/modelli/scuole-pattern.png #I
+      alt: "" #C
       headingLevel : 3
-      big: false
+      big: true
       background: null
-      specular: true
+      specular: false
       subtitle: Il modello per il sito scolastico #C
       numbers: #C #I
         items:
@@ -295,20 +296,20 @@ components:
           #addonStyle: mb-0
 
 
-    # —
-    # HIGHLIGHT BIG IMG
-    # —
-    - title : Servizi #C
-      id: servizi
-      img : /images/400x300.png #I
-      alt: Alt lorem ipsum #C
-      headingLevel : 3
-      background: dark # null | light | medium | dark
-      big: true
-      specular: false
-      subtitle: Lorem ipsum #C
-      buttons: #C #I
-        - label : Scopri i servizi #C
-          btnStyle: primary
-          url: "lorem-ipsum/" #M
-          addonStyle: mb-3 mb-sm-0
+    # # —
+    # # HIGHLIGHT BIG IMG
+    # # —
+    # - title : Servizi #C
+    #   id: servizi
+    #   img : /images/400x300.png #I
+    #   alt: Alt lorem ipsum #C
+    #   headingLevel : 3
+    #   background: dark # null | light | medium | dark
+    #   big: true
+    #   specular: false
+    #   subtitle: Lorem ipsum #C
+    #   buttons: #C #I
+    #     - label : Scopri i servizi #C
+    #       btnStyle: primary
+    #       url: "lorem-ipsum/" #M
+    #       addonStyle: mb-3 mb-sm-0

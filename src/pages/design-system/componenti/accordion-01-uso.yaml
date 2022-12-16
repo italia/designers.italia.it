@@ -35,27 +35,37 @@ sectionsEditorial:
   - full: true
     noSpace: true
     title: Come usarlo al meglio
-    text: Lorem ipsum
+  - full: true
+    noSpace: true
     background: null
     components:
       - name: TextImageCta
-        # title: Lorem ipsum
-        text: |          
-          ### Va bene (Do’s)
-          - Lorem **ipsum**;
-          - Lorem **ipsum**;
-          - Lorem **ipsum**.
-
-          ### Non va bene (Dont’s)
-          - Lorem **ipsum**;
-          - Lorem **ipsum**;
-          - Lorem **ipsum**.
+        noSpace: false
+      - name: TextImageCta
+        noSpace: false
+        text: |
+          Stiamo lavorando a questo contenuto e sarà presto disponibile.  
+          Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina. 
+      - name: TextImageCta
+        noSpace: true
+        title: Va bene
+        # text: |
+        #  Lorem **ipsum**
+      - name: TextImageCta
+        noSpace: true
+        title: Non va bene
+        # text: |
+        #   Lorem **ipsum**
+      - name: TextImageCta
+        noSpace: true
+        title: Considerazioni sui contenuti
+        #   Lorem **ipsum**
 
   - full: true
     noSpace: false
     title: Accessibilità
     background: null
-    text: Lorem ipsum
+    text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
     components:
       - name: Table
         # title: Stato dell'accessibilità
@@ -98,7 +108,7 @@ sectionsEditorial:
         # title: Feedback
         headingLevel: 4
         text: |
-          Hai trovato problematiche di accessibilità sul componente? Vuoi contribuire alla sua evoluzione o a questa documentazione?
+          Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
         ctas:
         - label: Apri una issue su Bootstrap Italia #C
           screenReaderText: " (si apre in una nuova finestra)" #C
@@ -106,17 +116,6 @@ sectionsEditorial:
           blank: true #M #C true if new tab for external links
           icon: 
             icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-            color: primary
-            align: middle
-            hidden: true
-            size: sm
-            addonClasses: ms-2
-        - label: Proponi una modifica a questa documentazione #C
-          screenReaderText: " (si apre in una nuova finestra)" #C
-          url: https://github.com/italia/designers.italia.it/tree/next/src/pages/design-system/componenti #M
-          blank: true #M #C true if new tab for external links
-          icon: 
-            icon: sprites.svg#it-pencil #C #I #it-arrow-right | it-external-link for external links
             color: primary
             align: middle
             hidden: true
@@ -185,21 +184,21 @@ sectionsEditorial:
                 icon:
                   icon: sprites.svg#it-external-link
                   size: sm
-          - cols:
-            - text: Angular 
-              scope: row
-            - tag:
-                label: Non presente
-                addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-            - text: null
+          # - cols:
+          #   - text: Angular 
+          #     scope: row
+          #   - tag:
+          #       label: Non presente
+          #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+          #   - text: null
             
-          - cols:
-            - text: Vue 
-              scope: row
-            - tag:
-                label: Non presente
-                addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-            - text: null
+          # - cols:
+          #   - text: Vue 
+          #     scope: row
+          #   - tag:
+          #       label: Non presente
+          #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+          #   - text: null
 
   
       - name: TextImageCta

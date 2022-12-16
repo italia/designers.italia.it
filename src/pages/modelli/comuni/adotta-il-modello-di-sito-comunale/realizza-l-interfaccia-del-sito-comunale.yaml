@@ -79,34 +79,34 @@ kangaroo:
           color: "secondary"
         label: Adotta il modello di sito comunale #C
         url: "../" #M
-navPreFooter:
-  navOtherPrevNext:
-    prev:
-      label: Titolo sorella precedente #C
-      url: "#" #M
-      image: /images/link-custom-icon.svg #I
-      blank: false
-      specular: false
-      icon:
-        icon: "sprites.svg#it-arrow-left"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 me-3
-    next:
-        label: Titolo sorella successiva #C
-        url: "#" #M
-        image: /images/link-custom-icon.svg #I
-        blank: false
-        specular: true
-        icon:
-          icon: "sprites.svg#it-arrow-right"
-          size: "sm"
-          align: "middle"
-          color: "primary"
-          hidden: true
-          addonClasses: flex-shrink-0 ms-3
+# navPreFooter:
+#   navOtherPrevNext:
+#     prev:
+#       label: Titolo sorella precedente #C
+#       url: "#" #M
+#       image: /images/link-custom-icon.svg #I
+#       blank: false
+#       specular: false
+#       icon:
+#         icon: "sprites.svg#it-arrow-left"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 me-3
+#     next:
+#         label: Titolo sorella successiva #C
+#         url: "#" #M
+#         image: /images/link-custom-icon.svg #I
+#         blank: false
+#         specular: true
+#         icon:
+#           icon: "sprites.svg#it-arrow-right"
+#           size: "sm"
+#           align: "middle"
+#           color: "primary"
+#           hidden: true
+#           addonClasses: flex-shrink-0 ms-3
 
 # ————————————————————————————————————————————
 # CONTENT
@@ -147,8 +147,8 @@ components:
       #text: In breve
     #text: | #C
       #Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+  # img: /images/400x300.png #I
+  # alt: descrizione immagine #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -283,7 +283,7 @@ components:
         headingLevel: 3
         listItems:
           - label: Anteprime dei template HTML del sito comunale #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia  #C
             url: https://italia.github.io/design-comuni-pagine-statiche/sito/index.html #M
@@ -291,72 +291,43 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://italia.github.io/design-comuni-pagine-statiche/sito/index.html #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Anteprime dei template HTML del sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+
           - label: Sorgenti dei template HTML del sito comunale #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: La repository GitHub con il codice sorgente  #C
             url: https://github.com/italia/design-comuni-pagine-statiche #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://github.com/italia/design-comuni-pagine-statiche #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Repository GitHub: Sorgenti dei template HTML del sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
+
           - label: Tema WordPress per il sito comunale #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: La repository GitHub con il file e le istruzioni per l’installazione del tema #C
             url: https://github.com/italia/design-comuni-wordpress-theme #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://github.com/italia/design-comuni-wordpress-theme #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Repository GitHub: Tema WordPress per il sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
+
           - label: Tema Drupal per il sito comunale #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: La repository GitHub con il file e le istruzioni per l’installazione del tema #C
             url: https://github.com/italia/design-comuni-drupal-theme #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://github.com/italia/design-comuni-drupal-theme #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Repository GitHub: Tema Drupal per il sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
 
 

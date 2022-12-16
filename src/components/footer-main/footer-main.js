@@ -45,7 +45,22 @@ const FooterMain = ({
 				</section>
 				<section className="footer-utilities mt-5 pt-5">
           <div className="row">
-            {social &&
+
+            {community &&
+              <div className="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                <h3 className="footer-title pb-4">{community.title}</h3>
+
+                <List {...community.list}>
+                {community.list.items.map((item,index)=>{
+                  return (
+                  <ListItem {...item} key={"subitem-"+index}></ListItem>
+                  )
+                })}
+                </List>
+              </div>
+            }
+
+        {social &&
               <div className="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
                 <h3 className="footer-title pb-4">{social.title}</h3>
                 {social.buttons.map((button,index)=>{
@@ -55,22 +70,14 @@ const FooterMain = ({
                 })}
               </div>
             }
-            {community &&
-              <div className="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
-                <h3 className="footer-title pb-4">{community.title}</h3>
-                {community.buttons.map((button,index)=>{
-                  return (
-                    <Button key={"community-"+index} {...button}></Button>
-                  )
-                })}
-              </div>
-            }
+
+            
             {subscribe &&
               <div className="col-12 col-lg-6">
                 <div className="title-wrapper d-flex justify-content-between">
                   <h3 className="footer-title pb-4">{subscribe.title}</h3>
                   {subscribe.link &&
-                    <Link className="text-white" to={subscribe.link.url} target="_blank">{subscribe.link.label}</Link>
+                    <Link className="text-white" to={subscribe.link.url} target="_blank" aria-label={subscribe.link.ariaLabel}>{subscribe.link.label}</Link>
                   }
                 </div>
                 {subscribe.subscribe &&

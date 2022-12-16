@@ -71,34 +71,34 @@ kangaroo:
           color: "secondary"
         label: Comuni #C
         url: "../" #M
-navPreFooter:
-  navOtherPrevNext:
-    prev:
-      label: Titolo sorella precedente #C
-      url: "#" #M
-      # image: /images/link-custom-icon.svg #I
-      blank: false
-      specular: false
-      icon:
-        icon: "sprites.svg#it-arrow-left"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 me-3
-    next:
-      label: Titolo sorella successiva #C
-      url: "#" #M
-      # image: /images/link-custom-icon.svg #I
-      blank: false
-      specular: true
-      icon:
-        icon: "sprites.svg#it-arrow-right"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 ms-3
+# navPreFooter:
+#   navOtherPrevNext:
+#     prev:
+#       label: Titolo sorella precedente #C
+#       url: "#" #M
+#       # image: /images/link-custom-icon.svg #I
+#       blank: false
+#       specular: false
+#       icon:
+#         icon: "sprites.svg#it-arrow-left"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 me-3
+#     next:
+#       label: Titolo sorella successiva #C
+#       url: "#" #M
+#       # image: /images/link-custom-icon.svg #I
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
 
 # ————————————————————————————————————————————
 # CONTENT
@@ -137,8 +137,8 @@ components:
       text: In breve
     text: | #C
       Le attività ti guidano a **impostare il lavoro da un punto di vista organizzativo e ti supportano nella progettazione e nello sviluppo dei servizi comunali**, tenendo conto di aspetti importanti come i requisiti tecnici per la corretta adozione del modello. Le risorse ti permettono di comprendere i flussi di interazione, comporre l’interfaccia grafica e abilitare velocemente il front-end. 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    # img: /images/400x300.png #I
+    # alt: descrizione immagine #C
     share:
       btnId: shareButton
       button:
@@ -557,8 +557,9 @@ components:
       - title: "Comprendi lo stato dell’arte" #C
         imgRatio: 16x9
         rounded: true
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        fullHeight: true
+      # iconImg: /images/kit-analisi-contesto.svg #I
+      # iconImgAlt: Alt lorem ipsum #C
         url: "comprendi-lo-stato-dell-arte/" #M
         text: | #C
           Definisci gli obiettivi del progetto, stabilisci il perimetro di lavoro e individua le risorse necessarie
@@ -580,8 +581,9 @@ components:
       - title: Progetta il flusso #C
         imgRatio: 16x9
         rounded: true
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        fullHeight: true
+      # iconImg: /images/kit-analisi-contesto.svg #I
+      # iconImgAlt: Alt lorem ipsum #C
         url: "progetta-il-flusso-di-servizio/" #M
         text: | #C
           Prototipa il flusso di interazione e l’interfaccia grafica per i servizi che vuoi digitalizzare
@@ -603,8 +605,9 @@ components:
       - title: "Realizza l'interfaccia" #C
         imgRatio: 16x9
         rounded: true
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        fullHeight: true
+      # iconImg: /images/kit-analisi-contesto.svg #I
+      # iconImgAlt: Alt lorem ipsum #C
         url: "realizza-l-interfaccia-del-servizio-digitale-comunale/" #M
         text: | #C
           Assembla velocemente il front-end dei servizi con i template HTML
@@ -640,8 +643,8 @@ components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
+          image: /images/modelli/PA-digitale-lettera.svg #I
+          alt: "" #C
           specular: true
           #title: Lorem ipsum h3 #C
           text: | #C
