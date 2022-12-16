@@ -101,12 +101,17 @@ const Feedback = () => {
       case FeedbackState.Loading:
       case FeedbackState.Start: return (
         <>
-          <span className="feedback-title">Ciao, questa pagina è stata utile?</span>
+          <h2 className="mb-0 h5 fw-semibold" id="feedbackSectionTitle">
+            <span className="feedback-title">Ciao, questa pagina è stata utile?</span>
+          </h2>
           <form className="mt-3 mt-md-3">
             <fieldset className="d-flex">
+              <legend>
+                <span className="visually-hidden">Scegli la risposta:</span>
+              </legend>
               <div className="form-check me-4">
                 <input name="feedbackValue" type="radio" id="feedbackValueYes" value="1" onChange={onChange} />
-                <label className="mb-0" htmlFor="feedbackValueYes">Si</label>
+                <label className="mb-0" htmlFor="feedbackValueYes">Sì</label>
               </div>
               <div className="form-check">
                 <input name="feedbackValue" type="radio" id="feedbackValueNo" value="0" onChange={onChange} />
@@ -156,9 +161,7 @@ const Feedback = () => {
               <div>
                 <div className="card-body p-4 p-md-5">
                   <div className="step" id="feedbackIntro">
-                    <h2 className="mb-0 h5 fw-semibold" id="feedbackSectionTitle">
-                      {renderState(feedbackState)}
-                   </h2>
+                    {renderState(feedbackState)}
                   </div>
                 </div>
               </div>

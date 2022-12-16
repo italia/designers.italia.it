@@ -122,8 +122,8 @@ const FormNo = ({ onResult, state }) => {
             <label htmlFor="optsStep2Opt1">Altro sito web</label>
           </div>
           <div className="form-check form-check-group">
-            <input name="optsStep2" type="radio" id="optsStep2Opt2" value="funzione “Cerca” del sito" />
-            <label htmlFor="optsStep2Opt2">Funzione “Cerca” del sito</label>
+            <input name="optsStep2" type="radio" id="optsStep2Opt2" value="funzione Cerca del sito" />
+            <label htmlFor="optsStep2Opt2">Funzione Cerca del sito</label>
           </div>
           <div className="form-check form-check-group">
             <input name="optsStep2" type="radio" id="optsStep2Opt3" value="motore di ricerca" />
@@ -155,8 +155,8 @@ const FormNo = ({ onResult, state }) => {
         </legend>
         <div className="px-3 px-lg-5 pt-5 pb-1 rounded shadow-lg">
           <div className="form-group">
-            <LabelTextArea id="feedbackText" label="Risposta" rows="3" maxLength="200" />
-            <small className="form-control form-text">Hai a disposizione 200 caratteri</small>
+            <LabelTextArea ariadescribedby="helperText" id="feedbackText" label="Risposta" rows="3" maxLength="200" />
+            <small id="helperText" className="form-control form-text">Hai a disposizione 200 caratteri</small>
           </div>
         </div>
       </fieldset>

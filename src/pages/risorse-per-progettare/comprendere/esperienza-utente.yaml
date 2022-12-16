@@ -279,6 +279,7 @@ components:
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come mappare l’esperienza d’uso di un servizio esistente (as-is) e a riprogettare la sua evoluzione (to-be), comprendendo le caratteristiche dell'utente con risorse operative dedicate quali personas e user journey.
           ctas:
           - label: "Vai all'argomento La progettazione di servizi al cittadino" #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -311,9 +312,10 @@ components:
       # CARD CHILDREN ACTION
       - title: Definisci le personas #C
         fullHeight: true
+        rounded: true
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_esperienzautente_personas.svg #I
-        iconImgAlt: "Chi sono gli utenti" #C
+        iconImgAlt: "" #C
         url: "definisci-le-personas/" #M
         text: | #C
           Identifica i profili delle persone che utilizzano il servizio, evidenziando le loro esigenze e difficoltà rispetto all'esperienza attuale d’uso del servizio.
@@ -334,9 +336,10 @@ components:
         # CARD CHILDREN ACTION
       - title: Analizza l‘esperienza d’uso #C
         fullHeight: true
+        rounded: true
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_esperienzautente_journey.svg #I
-        iconImgAlt: "L'esperienza guida gli utenti ai loro bisogni" #C
+        iconImgAlt: "" #C
         url: "analizza-l-esperienza-d-uso/" #M
         text: | #C
           Analizza l'esperienza delle persone e le interazioni nelle diverse fasi del tuo servizio. Specifica le attività che svolgono, gli attori coinvolti, i canali e touchpoint attraverso cui interagiscono con il servizio digitale.

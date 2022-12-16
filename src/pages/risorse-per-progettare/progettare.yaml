@@ -181,7 +181,7 @@ components:
         list:
           listItems: #M
             - url: "architettura-dell-informazione/"
-              label: Architettura dell'informazione #C
+              label: "Architettura dell'informazione" #C
               iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
               icon:
                 icon: sprites.svg#it-arrow-right
@@ -235,7 +235,10 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: Architettura dell'informazione #C
+      - title: "Architettura dell'informazione" #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_architettura.svg #I
+        iconImgAlt: "" #C
         text: "Organizza e classifica i contenuti di un touchpoint e definisci le principali funzioni del servizio" #C
         titleSmall: false
         fullHeight: true
@@ -256,6 +259,9 @@ components:
       
        # CARD CHILDREN
       - title: Co-progettazione #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_coprog.svg #I
+        iconImgAlt: "" #C
         text: "Coinvolgi stakeholder e utenti del servizio in una sessione di co-progettazione utilizzando un approccio aperto" #C
         titleSmall: false
         fullHeight: true
@@ -276,6 +282,9 @@ components:
 
         # CARD CHILDREN
       - title: Contenuti e linguaggio #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_linguaggio.svg #I
+        iconImgAlt: "" #C
         text: "Definisci i contenuti del tuo progetto e usa un linguaggio chiaro e inclusivo" #C
         titleSmall: false
         fullHeight: true
@@ -296,6 +305,9 @@ components:
 
         # CARD CHILDREN
       - title: Prototipazione #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_prototipazione.svg #I
+        iconImgAlt: "" #C
         text: "Progetta l’esperienza-utente del servizio realizzando un prototipo a bassa fedeltà dell’interfaccia" #C
         titleSmall: false
         fullHeight: true
@@ -316,6 +328,9 @@ components:
 
         # CARD CHILDREN
       - title: SEO #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_seo.svg #I
+        iconImgAlt: "" #C
         text: "Ottimizza i contenuti in base ai bisogni e alle priorità che gli utenti esprimono durante le ricerche" #C
         titleSmall: false
         fullHeight: true
@@ -340,20 +355,20 @@ components:
   # ///////////////////
   sectionsEditorial2 :
   
-    # —
-    # IMG FULL COVER
-    # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: null
-      full: true
-      noSpace: true
-      title: false
-      text: false
-      components:
-        # IMG
-        - name: ImageIcons
-          image: /images/image-icons-fullwidth.jpg #I
-          alt: Descrizione immagine grande #C
+    # # —
+    # # IMG FULL COVER
+    # # —
+    # - menu: false #TOGGLE RIGHT SECTION INDEX
+    #   background: null
+    #   full: true
+    #   noSpace: true
+    #   title: false
+    #   text: false
+    #   components:
+    #     # IMG
+    #     - name: ImageIcons
+    #       image: /images/image-icons-fullwidth.jpg #I
+    #       alt: Descrizione immagine grande #C
   
     # —
     # EDITORIAL #C #I
@@ -361,7 +376,8 @@ components:
     - title: Aprirsi al confronto per una progettazione aperta e collaborativa
       background: null
       menu: false
-      centered: false
+      centered: true
+      # noSpace: true
       text: | #C
         Progettare servizi pubblici facendo tesoro delle esperienze altrui
       components: 

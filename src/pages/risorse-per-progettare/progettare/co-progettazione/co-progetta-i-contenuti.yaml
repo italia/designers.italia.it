@@ -30,7 +30,7 @@ seo:
   image : null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/progettare/seo/co-progetta-i-contenuti/ #M
+  pathname: /risorse-per-progettare/progettare/co-progettazione/co-progetta-i-contenuti/ #M
 
 # ————————————————————————————————————————————
 # DATE, LICENSE, URL
@@ -63,7 +63,7 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi nella fase #C
+      - title: Ti trovi nella fase
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
@@ -71,13 +71,13 @@ kangaroo:
           color: "secondary"
         label: Progettare #C
         url: "../../" #M
-      - title: Nel kit di design #C
+      - title: Nel kit #C
         icon:
           icon: "sprites.svg#it-tool"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: SEO #C
+        label: Co-progettazione #C
         url: "../" #M
 navPreFooter:
   navOtherPrevNext:
@@ -147,8 +147,8 @@ components:
     # text: In breve
     # text: | #C
     #   Lorem **ipsum** 
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    img: /images/risorse-per-progettare/icons/kit_coprog_contenuti.svg #I
+    alt: "" #C
     imgRatio: 4x3
     share:
       btnId: shareButton
@@ -193,8 +193,8 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Design standard X #C
-            url: "#" #M
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -210,7 +210,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare l’interazione dell’utente con il servizio #C
+            label: "Progettare l’interazione dell’utente con il servizio" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -256,7 +256,7 @@ components:
         headingLevel: 3
         listItems:
           - label: Guida alla sessione di co-progettazione dei contenuti #C
-            srBefore: "Documento google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: "Presentazione google: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Istruzioni per pianificare e svolgere collaborativamente una sessione dedicata alla progettazione dell’esperienza d’uso di un servizio pubblico #C
             url: https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing #M
@@ -264,10 +264,10 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing #M
-                ariaLabel: "Documento google: Guida alla sessione di co-progettazione dei contenuti (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Presentazione google: Guida alla sessione di co-progettazione dei contenuti (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  /files/resources/risorse-per-progettare//progettare/co-progettazione/contenuti.odp #M
-                ariaLabel: "Scarica ODS Guida alla sessione di co-progettazione dei contenuti" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.odp #M
+                ariaLabel: "Scarica ODP Guida alla sessione di co-progettazione dei contenuti" #C #COMPILE FOR EACH ITEM
                 blank: false
  

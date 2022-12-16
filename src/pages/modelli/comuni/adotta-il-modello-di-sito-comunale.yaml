@@ -295,6 +295,7 @@ components:
             - una serie di guide pratiche a supporto.
           ctas:
           - label: Scopri come usare le risorse #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale.html #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -317,6 +318,7 @@ components:
             Gli sviluppatori possono valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità con l’App di valutazione dell’adesione al modello Comuni.
           ctas:
           - label: Vai ai criteri di conformità #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -343,8 +345,10 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Comprendi lo stato dell’arte #C
+      - title: "Comprendi lo stato dell’arte" #C
         imgRatio: 16x9
+        fullHeight: true
+        rounded: true
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "comprendi-lo-stato-dell-arte/" #M
@@ -367,6 +371,8 @@ components:
       # CARD CHILDREN ACTION
       - title: Definisci architettura e contenuti #C
         imgRatio: 16x9
+        fullHeight: true
+        rounded: true
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "definisci-architettura-e-contenuti/" #M
@@ -387,8 +393,10 @@ components:
             isShare: true
 
       # CARD CHILDREN ACTION
-      - title: Realizza l’interfaccia #C
+      - title: "Realizza l’interfaccia" #C
         imgRatio: 16x9
+        rounded: true
+        fullHeight: true
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "realizza-l-interfaccia-del-sito-comunale/" #M
@@ -409,8 +417,10 @@ components:
             isShare: true
                   
       # CARD CHILDREN ACTION
-      - title: Valuta l’adesione al modello #C
+      - title: "Valuta l’adesione al modello" #C
         imgRatio: 16x9
+        rounded: true
+        fullHeight: true
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "valuta-l-adesione-al-modello-di-sito-comunale/" #M
@@ -457,6 +467,7 @@ components:
             Consulta le domande frequenti o scrivici
           ctas:
           - label: Vai al supporto di PA digitale 2026 #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://padigitale2026.gov.it/supporto/ #M
             blank: false #M #C true if new tab for external links
             icon: 

@@ -295,6 +295,7 @@ components:
             - una serie di guide pratiche a supporto.
           ctas:
           - label: Scopri come usare le risorse #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse.html #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -317,6 +318,7 @@ components:
             Gli sviluppatori possono valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità con l’App di valutazione dell’adesione al modello Comuni.
           ctas:
           - label: Vai ai criteri di conformità #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -343,12 +345,13 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Comprendi lo stato dell’arte #C
+      - title: "Comprendi lo stato dell’arte" #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "comprendi-lo-stato-dell-arte/" #M
         fullHeight: true
+        rounded: true
         text: | #C
           Definisci gli obiettivi del progetto, stabilisci il perimetro di lavoro e individua le risorse necessarie
         tag:
@@ -372,6 +375,7 @@ components:
         iconImgAlt: Alt lorem ipsum #C
         url: "definisci-architettura-e-contenuti/" #M
         fullHeight: true
+        rounded: true
         text: | #C
           Imposta la struttura informativa del sito scolastico e organizza la migrazione dei contenuti
         tag:
@@ -389,12 +393,13 @@ components:
             isShare: true
 
       # CARD CHILDREN ACTION
-      - title: Realizza l’interfaccia #C
+      - title: "Realizza l’interfaccia" #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "realizza-l-interfaccia-del-sito-scolastico/" #M
         fullHeight: true
+        rounded: true
         text: | #C
           Assembla l’interfaccia web del sito scolastico con i template HTML o i temi per CMS
         tag:
@@ -412,12 +417,13 @@ components:
             isShare: true
                   
       # CARD CHILDREN ACTION
-      - title: Valuta l’adesione al modello #C
+      - title: "Valuta l’adesione al modello" #C
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         url: "valuta-l-adesione-al-modello-di-sito-scolastico/" #M
         fullHeight: true
+        rounded: true
         text: | #C
           Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento
         tag:
@@ -461,6 +467,7 @@ components:
             Consulta le domande frequenti o scrivici
           ctas:
           - label: Vai al supporto di PA digitale 2026 #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://padigitale2026.gov.it/supporto/ #M
             blank: false #M #C true if new tab for external links
             icon: 

@@ -137,8 +137,8 @@ components:
       text: In breve
     text: | #C
      Con gli strumenti del kit puoi organizzare un vero e proprio workshop per **identificare i problemi chiave di un progetto o servizio** e allo stesso tempo trovare soluzioni adeguate in poco tempo.
-    img: /images/400x300.png #I
-    alt: descrizione immagine #C
+    img: /images/risorse-per-progettare/icons/kit_coprog.svg #I
+    alt: "" #C
     share:
       btnId: shareButton
       button:
@@ -174,8 +174,8 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Design standard X #C
-            url: "#" #M
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -191,7 +191,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare l’interazione dell’utente con il servizio #C
+            label: "Progettare l’interazione dell’utente con il servizio" #C
       tagsLabel : Parliamo di
       color: secondary
       icon:
@@ -264,6 +264,7 @@ components:
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come trattare tutti gli elementi che creano un servizio, rendere protagonista la centralità dell’utente, individuare nella co-progettazione una metodologia per fare innovazione e definire un servizio pubblico digitale.          
           ctas:
           - label: "Vai all'argomento Progettazione dei servizi" #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html" #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -295,10 +296,11 @@ components:
 
       # CARD CHILDREN ACTION
       - title: "Co-progetta l'esperienza d'uso" #C
+        rounded: true
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        iconImg: /images/risorse-per-progettare/icons/kit_coprog_pianificazione.svg #I
+        iconImgAlt: "" #C
         url: "co-progetta-l-esperienza-d-uso/" #M
         text: | #C
           Organizza un workshop dedicato all’esperienza di un servizio digitale. Identifica un obiettivo chiaro e condiviso e poi definisci gli aspetti organizzativi e logistici
@@ -318,10 +320,11 @@ components:
 
         # CARD CHILDREN ACTION
       - title: Co-progetta i contenuti #C
+        rounded: true
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /images/kit-analisi-contesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        iconImg: /images/risorse-per-progettare/icons/kit_coprog_contenuti.svg #I 
+        iconImgAlt: "" #C
         url: "co-progetta-i-contenuti/" #M
         text: | #C
           Predisponi un workshop dedicato al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti.

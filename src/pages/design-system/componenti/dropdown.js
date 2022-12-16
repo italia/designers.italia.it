@@ -3,12 +3,12 @@ import Template from "../../../templates/tmpl-design-system-detail"
 import {Seo} from "../../../components/seo/seo"
 import Tab from "../../../components/tab/tab"
 
-import Pagedata from "./componente.yaml"
-import Tab01 from "./componente-01-uso.yaml"
-import Tab02 from "./componente-02-progettazione.yaml"
-import Tab03 from "./componente-03-sviluppo.yaml"
+import Pagedata from "./dropdown.yaml"
+import Tab01 from "./dropdown-01-uso.yaml"
+import Tab02 from "./dropdown-02-progettazione.yaml"
+import Tab03 from "./dropdown-03-sviluppo.yaml"
 
-import variantMock from './component_view_accordion.json'
+import variantMock from './dropdown.json'
 
 const DesignSystemComponente = ({ pageContext, location }) => {
   return(

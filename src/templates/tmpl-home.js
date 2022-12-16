@@ -23,17 +23,17 @@ import skipLinksData from "../data/skiplinks.yaml"
 const Template = ({children,Pagedata,pageContext,location}) => {
 	return (
     <div id="app">
+      <HeaderPre data={HeaderData.headerPre}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
-        <HeaderPre data={HeaderData.headerPre}/>
         <HeaderSlim data={HeaderData.headerSlim}/>
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter}/>
           <HeaderNav data={HeaderData.navbar} />
         </NavWrapper>
       </Header>
+      <HeaderPost data={HeaderData.headerPost}/>
       <main id="main">
-        <HeaderPost data={HeaderData.headerPost}/>
         {children}
         {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>

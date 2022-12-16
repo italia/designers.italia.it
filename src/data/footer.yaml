@@ -1,4 +1,5 @@
 footer:
+  title: Piede # < visually hidden
   footerMain:
     id: footer
     title: Parliamo di
@@ -7,59 +8,44 @@ footer:
         customStyleUl: footer-list clearfix mb-0
         items :
           - label : Accessibilità
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Adozione modelli
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Architettura informazione
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Cultura progettuale
-            ariaLabel: "Argomento: "
             url : "#"
       - isMenu : true
         customStyleUl: footer-list clearfix mb-0
         items :
           - label : Design system
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Esperienza utente
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Fasi di progettazione
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Linee guida
-            ariaLabel: "Argomento: "
             url : "#"
       - isMenu : true
         customStyleUl: footer-list clearfix mb-0
         items :
           - label : Linguaggio
-            ariaLabel: "Argomento: "
             url : "#"
           - label : "Progettazione contenuti"
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Progettazione servizi
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Siti dei comuni
-            ariaLabel: "Argomento: "
             url : "#"
       - isMenu : true
         customStyle: h-100
         customStyleUl: footer-list clearfix last-item-end mb-0 h-100
         items :
           - label : Sviluppo interfaccia
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Test di usabilità
-            ariaLabel: "Argomento: "
             url : "#"
           - label : Scopri tutti gli argomenti
-            ariaLabel: "Argomento: "
             url : "#"
             icon:
               icon: sprites.svg#it-arrow-right
@@ -186,16 +172,19 @@ footer:
       #   url :  "#"
       #   blank : false
       - title : Privacy policy
-        url :  "#"
-        blank : false
+        url :  https://designers.italia.it/privacy-policy
+        blank : true
+        ariaLabel: "Privacy policy (si apre in una nuova finestra)"
       - title : Note legali
-        url :  "#"
-        blank : false
+        url :  https://designers.italia.it/note-legali
+        blank : true
+        ariaLabel: "Note legali (si apre in una nuova finestra)"
       # - title : Mappa del sito
       #   url :  "#"
       #   blank : false
       - title : Dichiarazione di accessibilità
         url: "#"
         blank : true
+        ariaLabel: "Dichiarazione di accessibilità (si apre in una nuova finestra)"
   backToTop:
     ariaLabel: Torna all'inizio della pagina

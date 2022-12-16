@@ -265,6 +265,7 @@ components:
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni sulle attività preliminari, gli approcci e gli strumenti utili allo sviluppo dell’interfaccia di un servizio digitale.
           ctas:
           - label: "Vai all'argomento Lo sviluppo dell'interfaccia utente" #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -290,10 +291,12 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Sviluppa l’interfaccia di un servizio digitale #C
+      - title: "Sviluppa l’interfaccia di un servizio digitale" #C
+        rounded: true
+        fullHeight: true
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_webDevelopment_sviluppa.svg #I
-        iconImgAlt: "Interesse pubblico, codice pubblico" #C
+        iconImgAlt: "" #C
         url: "sviluppa-l-interfaccia-di-un-servizio-digitale/" #M
         text: | #C
           Assembla velocemente il front-end del servizio digitale tramite componenti, soluzioni di design e codice già validati

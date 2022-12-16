@@ -271,6 +271,7 @@ components:
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come mappare l’esperienza d’uso di un servizio esistente (as-is) e a riprogettare la sua evoluzione (to-be), comprendendo le caratteristiche dell'utente con risorse operative dedicate quali personas e user journey.
           ctas:
           - label: "Vai all'argomento Questionari" #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html #M
             blank: true #M #C true if new tab for external links
             icon: 
@@ -303,9 +304,10 @@ components:
       # CARD CHILDREN ACTION
       - title: "Pianifica l'indagine" #C
         fullHeight: true
+        rounded: true
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_questionario_pianifica.svg #I
-        iconImgAlt: "Adoro i piani ben riusciti" #C
+        iconImgAlt: "" #C
         url: "pianifica-l-indagine/" #M
         text: | #C
           Definisci gli obiettivi dell’indagine e inizia a progettare il questionario riflettendo sulla strategia migliore per estrapolare le informazioni di cui hai bisogno.
@@ -326,9 +328,10 @@ components:
         # CARD CHILDREN ACTION
       - title: Sintetizza i risultati della ricerca #C
         fullHeight: true
+        rounded: true
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_questionario_risultati.svg #I
-        iconImgAlt: "Rielabora con attenzione e cura" #C
+        iconImgAlt: "" #C
         url: "sintetizza-i-risultati-della-ricerca/" #M
         text: | #C
           Analizza le informazioni raccolte con tecniche quanti-qualitative e rielaborale in maniera rilevante per lo scopo della ricerca.
