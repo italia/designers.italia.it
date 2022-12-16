@@ -266,43 +266,28 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Documentazione tecnica dell’App di valutazione #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          - label: "Documentazione tecnica dell'App di valutazione" #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: La guida all’installazione, all’uso e ai requisiti tecnici per il corretto funzionamento dell’App di valutazione dell’adesione ai modelli #C
+            text: "La guida all’installazione, all’uso e ai requisiti tecnici per il corretto funzionamento dell’App di valutazione dell’adesione ai modelli" #C
             url: https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/ #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/ #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Documentazione tecnica dell’App di valutazione (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-          - label: File di installazione dell’App di valutazione #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+
+          - label: "File di installazione dell’App di valutazione" #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: La repository GitHub con i file di installazione dell’App di valutazione per MacOS, Windows e Linux #C
+            text: "La repository GitHub con i file di installazione dell’App di valutazione per MacOS, Windows e Linux" #C
             url: https://github.com/italia/pa-website-validator/releases #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
-                #blank: true
-              #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://github.com/italia/pa-website-validator/releases #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Repository GitHub: File di installazione dell’App di valutazione (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
           
           
