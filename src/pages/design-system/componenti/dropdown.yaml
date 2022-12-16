@@ -1,0 +1,119 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: design-system-detail
+    
+seo:
+  name: Dropdown
+  description: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina."
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/componenti/button/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: Pagina aggiornata il
+  date: 24 maggio 2022
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://github.com/italia/designers.italia.it/blob/main/LICENSE
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+navPreFooter:
+  navOtherPrevNext:
+    next:
+      label: Next page
+      url: "#"
+      blank: false
+      specular: true
+      icon:
+        icon: "sprites.svg#it-arrow-right"
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    specialKangarooComponent: true
+    background: null
+    title: Dropdown
+    titleTag:
+      label: Pronto
+      url: "#ComponentStatus"
+      addonClasses: bg-success mb-2
+      screenReaderText: "Stato del componente:"
+    column: true
+    subtitle: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina."
+    img: /images/400x300.png #I
+    alt: alt lorem ipsum #C
+    imgRatio: 1x1
+    noBorder: true
+    breadcrumbs :
+      separator : '/'
+      items :
+        - label : Inizio
+          active: false
+          url: /
+        - label : Design System
+          active: false
+          url: /level1/
+        - label : Componenti
+          active: false
+          url: /level1/componenti/
+        - label : Scheda componente x
+          active: true
+    share:
+      btnId: shareButtonHero
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Utile per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips: #C
+        - label: Struttura
+          url: "#"
+          color: primary
+          size: lg
+        - label: Contenuti
+          url: "#"
+          color: primary
+          size: lg
+
+  tab:
+    - full: true
