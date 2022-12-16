@@ -75,43 +75,27 @@ footer:
             addonClasses: align-top
     community:
       title: Community
-      buttons:
-        - ariaLabel: Vai a Forum Italia
-          url : "https://forum.italia.it"
-          blank: true
-          addonStyle: p-0 me-4
-          icon :
-            icon: sprites.svg#it-designers-italia
-            size: sm
-            color: white
-            addonClasses: align-top
-        - ariaLabel: "Vai a Slack, cerca i canali #design"
-          url : "https://slack.developers.italia.it/"
-          blank: true
-          addonStyle: p-0 me-4
-          icon :
-            icon: sprites.svg#it-comment
-            size: sm
-            color: white
-            addonClasses: align-top
-        - ariaLabel: Vai su GitHub, organizzazione Italia
-          url : "https://github.com/italia"
-          blank: true
-          addonStyle: p-0 me-4
-          icon :
-            icon: sprites.svg#it-github
-            size: sm
-            color: white
-            addonClasses: align-top
-        - ariaLabel: Vai su Docs Italia
-          url : "https://docs.italia.it/"
-          blank: true
-          addonStyle: p-0 me-4
-          icon :
-            icon: sprites.svg#it-designers-italia
-            size: sm
-            color: white
-            addonClasses: align-top
+      list: 
+        isMenu : true
+        customStyle: h-100
+        customStyleUl: footer-list clearfix mb-0 h-100
+        items:
+          - label: Forum Italia
+            ariaLabel: Vai a Forum Italia
+            url : "https://forum.italia.it"
+            blank: true
+          - label: Slack 
+            ariaLabel: "Vai a Slack, cerca i canali #design"
+            url : "https://slack.developers.italia.it/"
+            blank: true
+          - label: GitHub
+            ariaLabel: Vai su GitHub, organizzazione Italia
+            url : "https://github.com/italia"
+            blank: true
+          - label: Docs Italia
+            ariaLabel: Vai su Docs Italia
+            url : "https://docs.italia.it/"
+            blank: true
     subscribe:
       title: Mailing list
       link:
