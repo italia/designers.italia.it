@@ -5,7 +5,7 @@ excerpt_separator: <!-- MORE -->
 title: "Ecco l’anteprima del nuovo Designers Italia"
 subtitle: "Esploralo all’indirizzo dedicato e aiutaci a costruirlo insieme
 "
-date: 2022-12-19 07:00:00 +0200
+date: 2022-12-16 07:00:00 +0200
 pinned: false
 nodate: false
 homeBottomLink: false
