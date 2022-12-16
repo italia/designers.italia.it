@@ -129,45 +129,6 @@ components:
           size: lg
 
 
-  # # /////////// EDITORIAL CONTENTS FROM HERE ////////////
-  # sectionsEditorial :
-  #   - fullColumn: true
-  #     noSpace: true
-  #     components:
-  #       - name: ImgFull
-  #         img: /images/image-icons-fullwidth.jpg
-  #         alt: Descrizione immagine grande
-  #   - full: true
-  #     noSpace: true
-  #     title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-  #     components:
-  #       - name: TextImageCta
-  #         title: Lorem ipsum
-  #         text: |
-  #           Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
-  #       - name: TextImageCta
-  #         title: Lorem ipsum
-  #         text: |
-  #           Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
-  #         ctas:
-  #         - icon:
-  #             icon: sprites.svg#it-external-link
-  #             color: primary
-  #             align: middle
-  #             hidden: true
-  #           label: Lorem ipsum
-  #           url: "#"
-  #           blank: true
-  #         - icon:
-  #             icon: sprites.svg#it-external-link
-  #             color: primary
-  #             align: middle
-  #             hidden: true
-  #           label: Lorem ipsum
-  #           url: "#"
-  #           blank: true
-
-
   # /////////// COMPONENT LIST FROM HERE ////////////
   filterCards:
     id: componentCards
@@ -185,56 +146,52 @@ components:
     #     addonClasses: ms-1 flex-shrink-0
     cards:
       - title: Accordion
-        img: /images/600x400.png
-        alt: Descrizione immagine
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
         imgRatio: 16x9
+        rounded: true
         imgPlaceholder: false
         fullHeight: true
         url: accordion/
-        text: |
-          Descrizione
-      - title: Lorem ipsum
-        img: /images/600x400.png
-        alt: Descrizione immagine
+        # text: |
+        #   Descrizione
+      - title: Buttons
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
         imgRatio: 16x9
+        rounded: true
         imgPlaceholder: false
         fullHeight: true
-        url: componente/
-        text: |
-          Descrizione
-      - title: Lorem ipsum
-        img: /images/600x400.png
-        alt: Descrizione immagine
+        url: buttons/
+        # text: |
+        #   Descrizione
+      - title: Dropdown
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
         imgRatio: 16x9
+        rounded: true
         imgPlaceholder: false
         fullHeight: true
-        url: componente/
-        text: |
-          Descrizione
-      - title: Lorem ipsum
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        url: componente/
-        text: |
-          Descrizione
-      - title: Lorem ipsum
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        url: componente/
-        text: |
-          Descrizione
-      - title: Lorem ipsum
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        url: componente/
-        text: |
-          Descrizione
+        url: dropdown/
+        # text: |
+        #   Descrizione
+
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
+  sectionsEditorial2 :
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    - full: true
+      noSpace: true
+      # title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      components:
+        - name: TextImageCta
+          noSpace: true
+          title: 🟡 Lavori in corso
+          text: |
+            Stiamo lavorando a questo contenuto e sarà presto disponibile.   
+            Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi di seguito. 

@@ -60,9 +60,10 @@ const FilterCards = ({
                 <div className="col-7 col-md-9 col-lg-10">
                   <LabelInput 
                     id={idInput} 
-                    label='Filtra tutto' 
+                    label='Filtra' // xxx move to data yaml this string
                     onChange={(e) => console.log(e.value)}
-                    value="Esempio di ricerca">
+                    // value="Esempio di ricerca"
+                    >
                   </LabelInput>
                 </div>
                 <div className="col-5 col-md-3 col-lg-2">

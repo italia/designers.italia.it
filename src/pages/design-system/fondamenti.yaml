@@ -188,25 +188,22 @@ components:
     #     addonClasses: ms-1 flex-shrink-0
     cards:
       - title: Fondamento
-        img: /images/600x400.png
-        alt: Descrizione immagine
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
         url: "fondamento/"
         fullHeight: true
+        rounded: true
         text: |
           Descrizione
         chips:
           - color : secondary
-            label : Accessibilità
+            label : Argomento
             url : "#"
             blank: false
           - color : secondary
-            label : Servizi
-            url : "#"
-            blank: false
-          - color : secondary
-            label : PA Digitale 2026
+            label : Argomento
             url : "#"
             blank: false
         share:
@@ -220,102 +217,23 @@ components:
               color: secondary
           list:
             isShare: true
-      - title: Fondamento
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        url: "fondamento/"
-        fullHeight: true
-        text: |
-          Descrizione
-        chips:
-          - color : secondary
-            label : Accessibilità
-            url : "#"
-            blank: false
-          - color : secondary
-            label : Servizi
-            url : "#"
-            blank: false
-          - color : secondary
-            label : PA Digitale 2026
-            url : "#"
-            blank: false
-        share:
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-      - title: Fondamento
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        url: "fondamento/"
-        fullHeight: true
-        text: |
-          Descrizione
-        chips:
-          - color : secondary
-            label : Accessibilità
-            url : "#"
-            blank: false
-          - color : secondary
-            label : Servizi
-            url : "#"
-            blank: false
-          - color : secondary
-            label : PA Digitale 2026
-            url : "#"
-            blank: false
-        share:
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-      - title: Fondamento
-        img: /images/600x400.png
-        alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        url: "fondamento/"
-        fullHeight: true
-        text: |
-          Descrizione
-        chips:
-          - color : secondary
-            label : Accessibilità
-            url : "#"
-            blank: false
-          - color : secondary
-            label : Servizi
-            url : "#"
-            blank: false
-          - color : secondary
-            label : PA Digitale 2026
-            url : "#"
-            blank: false
-        share:
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+    
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
+  sectionsEditorial2 :
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    - full: true
+      noSpace: true
+      # title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      components:
+        - name: TextImageCta
+          noSpace: true
+          title: 🟡 Lavori in corso
+          text: |
+            Stiamo lavorando a questo contenuto e sarà presto disponibile.   
+            Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi di seguito. 
