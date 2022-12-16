@@ -27,7 +27,7 @@ const List = React.forwardRef(({
 
   useEffect(() => {
     setCurrentUrl(shareUrl || window.location.href)
-    setCurrentTitle(shareUrl || window.document.title)
+    setCurrentTitle(window.document.title)
   }, [shareUrl])
 
   //heading level
