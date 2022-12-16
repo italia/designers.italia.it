@@ -26,7 +26,14 @@ const List = React.forwardRef(({
   const [currentTitle, setCurrentTitle] = useState('')
 
   useEffect(() => {
-    setCurrentUrl(shareUrl || window.location.href)
+    let url = window.location.href
+    if (shareUrl) {
+      const re = new RegExp('^(?:[a-z+]+:)?//', 'i')
+      url = re.test(shareUrl) ?
+        shareUrl : `https://${window.location.hostname}${shareUrl}`
+    }
+
+    setCurrentUrl(url)
     setCurrentTitle(window.document.title)
   }, [shareUrl])
 
