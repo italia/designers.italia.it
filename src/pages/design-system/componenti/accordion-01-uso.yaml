@@ -111,12 +111,12 @@ sectionsEditorial:
             hidden: true
             size: sm
             addonClasses: ms-2
-        - label: Contribuisci a questa documentazione #C
+        - label: Proponi una modifica a questa documentazione #C
           screenReaderText: " (si apre in una nuova finestra)" #C
-          url: https://github.com/italia/designers.italia.it/tree/next #M
+          url: https://github.com/italia/designers.italia.it/tree/next/src/pages/design-system/componenti #M
           blank: true #M #C true if new tab for external links
           icon: 
-            icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+            icon: sprites.svg#it-pencil #C #I #it-arrow-right | it-external-link for external links
             color: primary
             align: middle
             hidden: true
@@ -148,8 +148,9 @@ sectionsEditorial:
                 label: Pronto
                 addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
             - simpleCta :
-                label: Pagina componente
-                url: "#"
+                label: Kit
+                url: https://www.figma.com/community/file/1105848677422572920
+                blank: true
                 screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
                 icon:
                   icon: sprites.svg#it-figma
@@ -163,7 +164,8 @@ sectionsEditorial:
                 addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
             - simpleCta :
                 label: Scheda documentazione
-                url: "#"
+                blank: true
+                url: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
                 screenReaderText: " (si apre in una nuova finestra)"
                 icon:
                   icon: sprites.svg#it-external-link
@@ -177,7 +179,8 @@ sectionsEditorial:
                 addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
             - simpleCta :
                 label: Scheda storybook
-                url: "#"
+                url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-accordion--page
+                blank: true
                 screenReaderText: " (si apre in una nuova finestra)"
                 icon:
                   icon: sprites.svg#it-external-link
@@ -201,7 +204,8 @@ sectionsEditorial:
   
       - name: TextImageCta
         text: |
-          Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate. Aiutaci a migliorare il design system del Paese. 
+          Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
+          Partecipa all'evoluzione del design system del Paese!
       
       - name: TextImageCta
         title: Nota sullo stato
