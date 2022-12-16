@@ -70,7 +70,7 @@ const FooterMain = ({
                 <div className="title-wrapper d-flex justify-content-between">
                   <h3 className="footer-title pb-4">{subscribe.title}</h3>
                   {subscribe.link &&
-                    <Link className="text-white" to={subscribe.link.url} target="_blank">{subscribe.link.label}</Link>
+                    <Link className="text-white" to={subscribe.link.url} target="_blank" aria-label={subscribe.link.ariaLabel}>{subscribe.link.label}</Link>
                   }
                 </div>
                 {subscribe.subscribe &&
