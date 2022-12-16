@@ -1,5 +1,5 @@
 import React, { useCallback, useState, useRef } from "react"
-import { Modal } from "bootstrap-italia/dist/bootstrap-italia.esm"
+import { Modal } from "bootstrap-italia"
 import "./feedback.scss"
 import Icon from "../icon/icon"
 

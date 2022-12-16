@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react"
 import ReactMarkdown from "react-markdown"
 
-import { Collapse } from "bootstrap-italia/dist/bootstrap-italia.esm"
+import { Collapse } from "bootstrap-italia"
 
 import Icon from "../icon/icon"
 

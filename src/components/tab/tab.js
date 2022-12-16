@@ -5,8 +5,7 @@ import ComponentView from "../component-view/component-view"
 import ContentSelect from "../content-select/content-select"
 import ContentSelectItem from "../content-select/components/content-select-item/content-select-item"
 
-import { Tab as TabBI } from "bootstrap-italia/dist/bootstrap-italia.esm"
-const tabDummy = TabBI //trick treeshaking
+import TabButton from "./tabbutton"
 
 const Tab = ({
   tab01,
@@ -15,17 +14,17 @@ const Tab = ({
 }) => {
   return (
     <div className="tab pt-5 pt-lg-6">
-      <div className=""> {/* nav-tabs-hidescroll */}
+      <div className="">
         <ul className="nav nav-tabs nav-tabs-cards auto" id="card-simple" role="tablist">
           <li className="nav-item-filler flex-grow-0 px-3 p-md-0"></li>
           <li className="nav-item">
-            <a className="nav-link active" id="card-simple1-tab" data-bs-toggle="tab" href="#card-simpletab1" role="tab" aria-controls="card-simpletab1" aria-selected="true">{tab01.title}</a>
+            <TabButton className="nav-link active" id="card-simple1-tab" href="#card-simpletab1" role="tab" aria-controls="card-simpletab1" aria-selected="true">{tab01.title}</TabButton>
           </li>
           <li className="nav-item">
-            <a className="nav-link" id="card-simple2-tab" data-bs-toggle="tab" href="#card-simpletab2" role="tab" aria-controls="card-simpletab2" aria-selected="false">{tab02.title}</a>
+            <TabButton className="nav-link" id="card-simple2-tab" href="#card-simpletab2" role="tab" aria-controls="card-simpletab2" aria-selected="false">{tab02.title}</TabButton>
           </li>
           <li className="nav-item">
-            <a className="nav-link" id="card-simple3-tab" data-bs-toggle="tab" href="#card-simpletab3" role="tab" aria-controls="card-simpletab3" aria-selected="false">{tab03.title}</a>
+            <TabButton className="nav-link" id="card-simple3-tab" href="#card-simpletab3" role="tab" aria-controls="card-simpletab3" aria-selected="false">{tab03.title}</TabButton>
           </li>
           <li className="nav-item-filler px-3 p-md-0"></li>
         </ul>
