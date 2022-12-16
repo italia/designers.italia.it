@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.1.1/dist/css/bootstrap-italia.min.css">
+    <title>Esempio button</title>
+</head>
+<body>
+    
+
+<div class="bg-dark py-1">{% for color in site.data.theme-colors %}{% if color.name == "primary" or color.name == "secondary" %}
+<div class="btn-example">
+  <button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>
+  <button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }} outline</button>
+  <button type="button" class="btn btn-{{ color.name }} disabled">{{ color.name | capitalize }} disabled</button>
+</div>{% endif %}{% endfor %}</div>
+
+    <script>
+        window.__PUBLIC_PATH__ = "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.1.1/dist/fonts/"
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.1.1/dist/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>
