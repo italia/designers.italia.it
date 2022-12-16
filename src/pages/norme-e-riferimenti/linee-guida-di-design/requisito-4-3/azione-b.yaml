@@ -135,7 +135,7 @@ components:
           active: false
         - label : Level4
           active: true
-    title: SI DEVONO definire e valutare in modo esplicito obiettivi, destinatari, processi e attori nella progettazione del sito/servizio; #C
+    title: SI DEVONO definire e valutare in modo esplicito obiettivi, destinatari, processi e attori nella progettazione del sito/servizio #C
     # subtitle: Subtitle #C
     tag:
       label: Azione Linee guida #C
@@ -218,15 +218,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Argomento
+        - label: Normativa
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Analisi del contesto
           url: "#"
           color: primary
           size: lg
-        - label: Argomento
+        - label: Esperienza utente
           url: "#"
           color: primary
           size: lg
@@ -237,7 +237,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Scopri le indicazioni a supporto nel Manuale operativo di design #C
+    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
       menu: false
       centered: true
       background: null
@@ -248,25 +248,14 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Capitolo o parafrafo x #C
+          title: Capitolo 2. Gestione del progetto #C
           headingLevel: 4
           text: | #C
             Lorem ipsum
           ctas:
-          - label: Vai su lorem #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai su ipsum #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: "#" #M
-            blank: true
+          - label: Vai all'argomento sul Manuale#C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto.html" #M
+            blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
