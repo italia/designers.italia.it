@@ -20,15 +20,22 @@ const List = React.forwardRef(({
 	headingLink,    //if heading has link
 	listItems,
 	simpleList,
+	shareUrl,
 }, ref) => {
-
   const [currentUrl, setCurrentUrl ] = useState('')
   const [currentTitle, setCurrentTitle] = useState('')
 
   useEffect(() => {
-    setCurrentUrl(window.location.href)
+    let url = window.location.href
+    if (shareUrl) {
+      const re = new RegExp('^(?:[a-z+]+:)?//', 'i')
+      url = re.test(shareUrl) ?
+        shareUrl : `https://${window.location.hostname}${shareUrl}`
+    }
+
+    setCurrentUrl(url)
     setCurrentTitle(window.document.title)
-  })
+  }, [shareUrl])
 
   //heading level
 	let HLevel
