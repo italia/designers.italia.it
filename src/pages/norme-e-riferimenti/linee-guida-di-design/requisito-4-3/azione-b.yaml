@@ -251,7 +251,7 @@ components:
           title: Capitolo 2. Gestione del progetto #C
           headingLevel: 4
           text: | #C
-            Definire il perimetro di un progetto digitale, gli attori coinvolti e i potenziali destinatari.
+            Definisci il perimetro di un progetto digitale, gli attori coinvolti e i potenziali destinatari.
           ctas:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto.html" #M
@@ -269,7 +269,7 @@ components:
           title: Paragrafo 3.2.2 Analizzare il contesto con un approccio olistico e sistemico #C
           headingLevel: 4
           text: | #C
-            Ottenere una visione d’insieme dei fattori e delle variabili che influenzano l’erogazione e la fruizione di un servizio digitale
+            Ottieni una visione d’insieme dei fattori e delle variabili che influenzano l’erogazione e la fruizione di un servizio digitale
           ctas:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/analizzare-il-contesto-con-un-approccio-olistico-e-sistemico.html" #M
@@ -281,10 +281,35 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai su ipsum #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: "#" #M
-            blank: true
+              
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Paragrafo 3.2.3 Conoscere gli utenti e gli erogatori del servizio #C
+          headingLevel: 4
+          text: | #C
+            Tieni in alta considerazione le necessità degli utenti e conosci la loro esperienza di interazione con il servizio
+          ctas:
+          - label: Vai all'argomento sul Manuale #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/conoscere-gli-utenti-e-gli-erogatori-del-servizio.html" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Paragrafo 3.2.4 Gli strumenti per visualizzare mappe dell’esperienza del servizio #C
+          headingLevel: 4
+          text: | #C
+            Mappa l'esperienza dell'utente per descrivere in che modo avviene l'interazione con il servizio
+          ctas:
+          - label: Vai all'argomento sul Manuale #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/gli-strumenti-per-visualizzare-mappa-della-esperienza-del-servizio.html" #M
+            blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -298,8 +323,8 @@ components:
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Scopri le risorse a disposizione  #C
-    text: Lorem ipsum #C
+    title: Scopri le risorse correlate a questa azione  #C
+    # text: Lorem ipsum #C
     col4: false
     nospace: false
     nopadtop: true
@@ -308,7 +333,7 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Titolo kit #C
+      - title: Analisi del contesto #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /images/kit-analisi-contesto.svg #I
@@ -316,7 +341,31 @@ components:
         rounded: true
         url: "#" #M
         text: | #C
-          Lorem **ipsum**
+          Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze
+        tag:
+          label: Kit di design #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+            
+      # CARD CHILDREN ACTION
+      - title: Esperienza utente #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /images/kit_esperienzautente.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "#" #M
+        text: | #C
+          Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale
         tag:
           label: Kit di design #C
         share: #AUTO
@@ -331,98 +380,75 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN ACTION
-      - title: Titolo sezione intera, eg. Design system #C
-        fullHeight: true
-        imgRatio: 4x3
-        img: /images/400x300.png
-        alt: Alt lorem ipsum
-        rounded: true
-        url: "#" #M
-        text: | #C
-          Lorem **ipsum**
-        # tag:
-        #   label: Tipologia contenuto #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+     # # CARD CHILDREN ACTION
+     # - title: Titolo sezione intera, eg. Design system #C
+     #   fullHeight: true
+     #   imgRatio: 4x3
+     #   img: /images/400x300.png
+     #   alt: Alt lorem ipsum
+     #   rounded: true
+     #   url: "#" #M
+     #   text: | #C
+     #     Lorem **ipsum**
+     #   # tag:
+     #   #   label: Tipologia contenuto #C
+     #   share: #AUTO
+     #     btnId: shareButton
+     #     button:
+     #       addonStyle: icon-only-drop
+     #       ariaLabel: Condividi
+     #       icon:
+     #         icon: sprites.svg#it-more-items
+     #         size: sm
+     #         color: secondary
+     #     list:
+     #       isShare: true
 
-      # CARD CHILDREN ACTION
-      - title: Titolo modello intero, eg. Comuni #C
-        fullHeight: true
-        imgRatio: 4x3
-        img: /images/400x300.png
-        alt: Alt lorem ipsum
-        rounded: true
-        url: "#" #M
-        text: | #C
-          Lorem **ipsum**
-        # tag:
-        #   label: Tipologia contenuto #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+     # # CARD CHILDREN ACTION
+     # - title: Titolo modello intero, eg. Comuni #C
+     #   fullHeight: true
+     #   imgRatio: 4x3
+     #   img: /images/400x300.png
+     #   alt: Alt lorem ipsum
+     #   rounded: true
+     #   url: "#" #M
+     #   text: | #C
+     #     Lorem **ipsum**
+     #   # tag:
+     #   #   label: Tipologia contenuto #C
+     #   share: #AUTO
+     #     btnId: shareButton
+     #     button:
+     #       addonStyle: icon-only-drop
+     #       ariaLabel: Condividi
+     #       icon:
+     #         icon: sprites.svg#it-more-items
+     #         size: sm
+     #         color: secondary
+     #     list:
+     #       isShare: true
 
-      # CARD CHILDREN ACTION
-      - title: Titolo scheda operativa #C
-        fullHeight: true
-        # imgRatio: 16x9
-        # iconImg: /images/kit-analisi-contesto.svg #I
-        # iconImgAlt: Alt lorem ipsum #C
-        rounded: true
-        url: "#" #M
-        text: | #C
-          Lorem **ipsum**
-        tag:
-          label: Scheda operativa #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+     # # CARD CHILDREN ACTION
+     # - title: Titolo scheda operativa #C
+     #   fullHeight: true
+     #   # imgRatio: 16x9
+     #   # iconImg: /images/kit-analisi-contesto.svg #I
+     #   # iconImgAlt: Alt lorem ipsum #C
+     #   rounded: true
+     #   url: "#" #M
+     #   text: | #C
+     #     Lorem **ipsum**
+     #   tag:
+     #     label: Scheda operativa #C
+     #   share: #AUTO
+     #     btnId: shareButton
+     #     button:
+     #       addonStyle: icon-only-drop
+     #       ariaLabel: Condividi
+     #       icon:
+     #         icon: sprites.svg#it-more-items
+     #         size: sm
+     #         color: secondary
+     #     list:
+     #       isShare: true
             
-      # CARD CHILDREN ACTION
-      - title: Titolo scheda operativa #C
-        fullHeight: true
-        # imgRatio: 16x9
-        # iconImg: /images/kit-analisi-contesto.svg #I
-        # iconImgAlt: Alt lorem ipsum #C
-        rounded: true
-        url: "#" #M
-        text: | #C
-          Lorem **ipsum**
-        tag:
-          label: Scheda operativa #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
