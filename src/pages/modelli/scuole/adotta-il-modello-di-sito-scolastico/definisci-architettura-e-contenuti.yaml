@@ -266,25 +266,21 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Documento di Architettura dell’informazione #C
-            srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          - label: Documento di Architettura dell’informazione - Scuole #C
+            srBefore: "Foglio Google :" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Indicazioni su tipologie di contenuto (content type), sistemi di navigazione e tassonomie per tutte le sezioni del sito scolastico #C
             url: https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing #M
             blank: true
             actions:
-              #- icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url: "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
-              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url:  https://docs.google.com/spreadsheets/d/1MoayTY05SE4ixtgBsfsdngdrFJf_Z2KNvDkMF3tKfc8/edit?usp=sharing #M
-                ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Foglio Google: Documento di Architettura dell'informazione per il sito scolastico (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-              #- icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                #url:  "#" #M
-                #ariaLabel: FORMATO titolo risorsa (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
-                #blank: true
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/Architettura-informazione-sito-scuole.ods #M
+                ariaLabel: "ODS Documento di Architettura dell'informazione per il sito scolastico" #C #COMPILE FOR EACH ITEM
+                blank: false
           - label: Guida alla migrazione dei contenuti #C
             srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
@@ -294,7 +290,7 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale/guida-migrazione-contenuti.html #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                ariaLabel: "Guida alla migrazione dei contenuti (si apre in una nuova finestra)" #C 
                 blank: true
               #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
                 #url:  "#" #M
@@ -313,7 +309,7 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                ariaLabel: "Guida al linguaggio della PA (si apre in una nuova finestra)" #C 
                 blank: true
               #- icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
                 #url:  "#" #M
@@ -332,6 +328,6 @@ components:
             actions:
               - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: "/risorse-per-progettare/organizzare/privacy" #M
-                ariaLabel: ALTRO FORMATO titolo risorsa (si apre in una nuova finestra) #C 
+                ariaLabel: "Privacy - Kit di design" #C 
                 blank: false
   
