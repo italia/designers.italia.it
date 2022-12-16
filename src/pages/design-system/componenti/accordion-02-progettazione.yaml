@@ -1,5 +1,6 @@
 title: Progettazione
 sectionsEditorial:
+
   - full: true
     noSpace: true
     title: Anatomia
@@ -8,43 +9,46 @@ sectionsEditorial:
     background: null
     components:
       - name: TextImageCta
-        noSpace: true
+        noSpace: false
+      - name: TextImageCta
+        noSpace: false
         text: |
-          ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
+          Stiamo lavorando a questo contenuto e sarà presto disponibile.  
+          Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina. 
       - name: TextImageCta
         noSpace: true
         title: Contenuti
-        text: |
-         Lorem **ipsum**
-
+        # text: |
+        #  Lorem **ipsum**
       - name: TextImageCta
         noSpace: true
         title: Comportamento
-        text: |
-          Lorem **ipsum**
-
+        # text: |
+        #   Lorem **ipsum**
       - name: TextImageCta
         noSpace: true
         title: Interazione
-        text: |
-          Lorem **ipsum**
-          
+        # text: |
+        #   Lorem **ipsum**
       - name: TextImageCta
         noSpace: true
         title: Specifiche di design
         # lead: Eventuale lead paragraph
-        text: |
-          Lorem **ipsum**
+        # text: |
+        #   Lorem **ipsum**
+
+          
           
   - full: true
     noSpace: false
     title: Kit UI
+    text: La scatola per costruire prototipi hi-fi con il design system del Paese
     background: null
     buttons:
-      - label : Vai alla pagina del componente
-        target: blank
+      - label : Vai al kit nella community Figma
+        blank: true
         btnStyle: primary me-3
-        url: "#"
+        url: https://www.figma.com/community/file/1105848677422572920
         icon:
           icon: sprites.svg#it-figma
           size: sm
@@ -63,97 +67,168 @@ sectionsEditorial:
       #     align: middle
       #     addonClasses: ms-2
 
-
-
   - full: true
     noSpace: false
     title: Design Tokens
-    background: null
+    # text: 
     components:
+
+      - name: TextImageCta
+        text: |
+           Stiamo lavorando a questo contenuto e sarà presto disponibile in forma completa.   
+           La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI. 
+           Quelle che seguono fanno riferimento al componente base. 
+
       - name: Table
         title: Colori
         responsive: table-responsive-md
         head:
           - text: Elemento
+          - text: Stato
           - text: Proprietà
-          - text: Token colore
+          - text: Token
         rows:
           - cols:
-            - text: Titolo
+            - text: Text
               scope: row
+            - text: null
             - text: color
             - tag:
-                label: $text-primary
+                label: $color-text-base
                 addonClasses: neutral-1-bg-a3 text-dark fw-bold
           - cols:
-            - text: Content
+            - text: Link
               scope: row
+            - text: null
             - text: color
             - tag:
-                label: $text-primary
+                label: $color-text-primary
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Link
+              scope: row
+            - text: active
+            - text: color
+            - tag:
+                label: $color-text-primary-active
                 addonClasses: neutral-1-bg-a3 text-dark fw-bold
           - cols:
             - text: Icon
               scope: row
-            - text: color
+            - text: null
+            - text: background
             - tag:
-                label: $text-primary
+                label: $color-background-primary
                 addonClasses: neutral-1-bg-a3 text-dark fw-bold
           - cols:
-            - text: Testata
+            - text: Icon
               scope: row
+            - text: active
             - text: background
-            - text: Transparent
-
-      - name: TextImageCta
-        text: |
-          Lorem **ipsum**
+            - tag:
+                label: $color-background-primary-active
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Separators
+              scope: row
+            - text: null
+            - text: border
+            - tag:
+                label: $color-bluegray-04
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
 
 
       - name: Table
-        title: Stati interattivi
+        title: Spaziature
+        responsive: table-responsive-md
+        head:
+          - text: Elemento
+          - text: Dimensione
+          - text: Token 
+        rows:
+          - cols:
+            - text: Inset
+              scope: row
+            - text: S
+            - tag:
+                label: $spacing-inset-s
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Inset
+              scope: row
+            - text: M
+            - tag:
+                label: $spacing-inset-m
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Stack
+              scope: row
+            - text: M
+            - tag:
+                label: $spacing-stack-m
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Stack
+              scope: row
+            - text: XL
+            - tag:
+                label: $spacing-stack-xl
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+
+
+      - name: Table
+        title: Icone
         responsive: table-responsive-md
         head:
           - text: Elemento
           - text: Stato
-          - text: Proprietà
-          - text: Token colore
+          - text: Icona 
         rows:
           - cols:
-            - text: Testata
+            - text: Chevron
               scope: row
-            - text: Hover
-            - text: color
+            - text: Collapse
             - tag:
-                label: $color-hover
+                label: Navigation/Chevron/Collapse
                 addonClasses: neutral-1-bg-a3 text-dark fw-bold
           - cols:
-            - text: Testata
+            - text: Chevron
               scope: row
-            - text: Hover
-            - text: background
+            - text: Expand
             - tag:
-                label: $background-hover
+                label: Navigation/Chevron/Expand
                 addonClasses: neutral-1-bg-a3 text-dark fw-bold
-          - cols:
-            - text: Testata
-              scope: row
-            - text: Disabled
-            - text: color
-            - tag:
-                label: $color-disabled
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
-          - cols:
-            - text: Testata
-              scope: row
-            - text: Disabled
-            - text: background
-            - tag:
-                label: $background-disabled
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+        
 
-      - name: TextImageCta
-        text: |
-          Lorem **ipsum**
+      - name: Table
+        title: Stili di testo
+        responsive: table-responsive-md
+        head:
+          - text: Elemento
+          - text: Stato
+          - text: Stile 
+        rows:
+          - cols:
+            - text: Text
+              scope: row
+            - text: 
+            - tag:
+                label: body text/sans
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: link
+              scope: row
+            - text: 
+            - tag:
+                label: link/sans-bold
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: link
+              scope: row
+            - text: active
+            - tag:
+                label: link/sans-bold-underline
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      
 
     
