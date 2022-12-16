@@ -35,27 +35,37 @@ sectionsEditorial:
   - full: true
     noSpace: true
     title: Come usarlo al meglio
-    text: Lorem ipsum
+  - full: true
+    noSpace: true
     background: null
     components:
       - name: TextImageCta
-        # title: Lorem ipsum
-        text: |          
-          ### Va bene (Do’s)
-          - Lorem **ipsum**;
-          - Lorem **ipsum**;
-          - Lorem **ipsum**.
-
-          ### Non va bene (Dont’s)
-          - Lorem **ipsum**;
-          - Lorem **ipsum**;
-          - Lorem **ipsum**.
+        noSpace: false
+      - name: TextImageCta
+        noSpace: false
+        text: |
+          Stiamo lavorando a questo contenuto e sarà presto disponibile.  
+          Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina. 
+      - name: TextImageCta
+        noSpace: true
+        title: Va bene
+        # text: |
+        #  Lorem **ipsum**
+      - name: TextImageCta
+        noSpace: true
+        title: Non va bene
+        # text: |
+        #   Lorem **ipsum**
+      - name: TextImageCta
+        noSpace: true
+        title: Considerazioni sui contenuti
+        #   Lorem **ipsum**
 
   - full: true
     noSpace: false
     title: Accessibilità
     background: null
-    text: Lorem ipsum
+    text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
     components:
       - name: Table
         # title: Stato dell'accessibilità
@@ -98,22 +108,11 @@ sectionsEditorial:
         # title: Feedback
         headingLevel: 4
         text: |
-          Hai trovato problematiche di accessibilità sul componente? Vuoi contribuire alla sua evoluzione o a questa documentazione?
+          Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
         ctas:
         - label: Apri una issue su Bootstrap Italia #C
           screenReaderText: " (si apre in una nuova finestra)" #C
           url: https://github.com/italia/bootstrap-italia/issues #M
-          blank: true #M #C true if new tab for external links
-          icon: 
-            icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-            color: primary
-            align: middle
-            hidden: true
-            size: sm
-            addonClasses: ms-2
-        - label: Contribuisci a questa documentazione #C
-          screenReaderText: " (si apre in una nuova finestra)" #C
-          url: https://github.com/italia/designers.italia.it/tree/next #M
           blank: true #M #C true if new tab for external links
           icon: 
             icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
@@ -148,8 +147,9 @@ sectionsEditorial:
                 label: Pronto
                 addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
             - simpleCta :
-                label: Pagina componente
-                url: "#"
+                label: Kit
+                url: https://www.figma.com/community/file/1105848677422572920
+                blank: true
                 screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
                 icon:
                   icon: sprites.svg#it-figma
@@ -163,7 +163,8 @@ sectionsEditorial:
                 addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
             - simpleCta :
                 label: Scheda documentazione
-                url: "#"
+                blank: true
+                url: https://italia.github.io/bootstrap-italia/docs/componenti/buttons/
                 screenReaderText: " (si apre in una nuova finestra)"
                 icon:
                   icon: sprites.svg#it-external-link
@@ -177,31 +178,33 @@ sectionsEditorial:
                 addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
             - simpleCta :
                 label: Scheda storybook
-                url: "#"
+                url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-bottoni--page
+                blank: true
                 screenReaderText: " (si apre in una nuova finestra)"
                 icon:
                   icon: sprites.svg#it-external-link
                   size: sm
-          - cols:
-            - text: Angular 
-              scope: row
-            - tag:
-                label: Non presente
-                addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-            - text: null
+          # - cols:
+          #   - text: Angular 
+          #     scope: row
+          #   - tag:
+          #       label: Non presente
+          #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+          #   - text: null
             
-          - cols:
-            - text: Vue 
-              scope: row
-            - tag:
-                label: Non presente
-                addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-            - text: null
+          # - cols:
+          #   - text: Vue 
+          #     scope: row
+          #   - tag:
+          #       label: Non presente
+          #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+          #   - text: null
 
   
       - name: TextImageCta
         text: |
-          Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate. Aiutaci a migliorare il design system del Paese. 
+          Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
+          Partecipa all'evoluzione del design system del Paese!
       
       - name: TextImageCta
         title: Nota sullo stato

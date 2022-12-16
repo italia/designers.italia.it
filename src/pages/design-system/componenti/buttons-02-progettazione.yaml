@@ -1,5 +1,6 @@
 title: Progettazione
 sectionsEditorial:
+
   - full: true
     noSpace: true
     title: Anatomia
@@ -8,43 +9,46 @@ sectionsEditorial:
     background: null
     components:
       - name: TextImageCta
-        noSpace: true
+        noSpace: false
+      - name: TextImageCta
+        noSpace: false
         text: |
-          ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
+          Stiamo lavorando a questo contenuto e sarà presto disponibile.  
+          Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina. 
       - name: TextImageCta
         noSpace: true
         title: Contenuti
-        text: |
-         Lorem **ipsum**
-
+        # text: |
+        #  Lorem **ipsum**
       - name: TextImageCta
         noSpace: true
         title: Comportamento
-        text: |
-          Lorem **ipsum**
-
+        # text: |
+        #   Lorem **ipsum**
       - name: TextImageCta
         noSpace: true
         title: Interazione
-        text: |
-          Lorem **ipsum**
-          
+        # text: |
+        #   Lorem **ipsum**
       - name: TextImageCta
         noSpace: true
         title: Specifiche di design
         # lead: Eventuale lead paragraph
-        text: |
-          Lorem **ipsum**
+        # text: |
+        #   Lorem **ipsum**
+
+          
           
   - full: true
     noSpace: false
     title: Kit UI
+    text: La scatola per costruire prototipi hi-fi con il design system del Paese
     background: null
     buttons:
-      - label : Vai alla pagina del componente
-        target: blank
+      - label : Vai al kit nella community Figma
+        blank: true
         btnStyle: primary me-3
-        url: "#"
+        url: https://www.figma.com/community/file/1105848677422572920
         icon:
           icon: sprites.svg#it-figma
           size: sm
@@ -63,97 +67,13 @@ sectionsEditorial:
       #     align: middle
       #     addonClasses: ms-2
 
-
-
   - full: true
-    noSpace: false
+    noSpace: true
     title: Design Tokens
-    background: null
+    # text: 
     components:
-      - name: Table
-        title: Colori
-        responsive: table-responsive-md
-        head:
-          - text: Elemento
-          - text: Proprietà
-          - text: Token colore
-        rows:
-          - cols:
-            - text: Titolo
-              scope: row
-            - text: color
-            - tag:
-                label: $text-primary
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
-          - cols:
-            - text: Content
-              scope: row
-            - text: color
-            - tag:
-                label: $text-primary
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
-          - cols:
-            - text: Icon
-              scope: row
-            - text: color
-            - tag:
-                label: $text-primary
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
-          - cols:
-            - text: Testata
-              scope: row
-            - text: background
-            - text: Transparent
 
       - name: TextImageCta
         text: |
-          Lorem **ipsum**
-
-
-      - name: Table
-        title: Stati interattivi
-        responsive: table-responsive-md
-        head:
-          - text: Elemento
-          - text: Stato
-          - text: Proprietà
-          - text: Token colore
-        rows:
-          - cols:
-            - text: Testata
-              scope: row
-            - text: Hover
-            - text: color
-            - tag:
-                label: $color-hover
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
-          - cols:
-            - text: Testata
-              scope: row
-            - text: Hover
-            - text: background
-            - tag:
-                label: $background-hover
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
-          - cols:
-            - text: Testata
-              scope: row
-            - text: Disabled
-            - text: color
-            - tag:
-                label: $color-disabled
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
-          - cols:
-            - text: Testata
-              scope: row
-            - text: Disabled
-            - text: background
-            - tag:
-                label: $background-disabled
-                addonClasses: neutral-1-bg-a3 text-dark fw-bold
-
-      - name: TextImageCta
-        text: |
-          Lorem **ipsum**
-
-    
+           Stiamo lavorando a questo contenuto e sarà presto disponibile.   
+           La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI. 
