@@ -40,8 +40,8 @@ components:
     background: primary
     title: Community
     subtitle: Lo spazio per informarti e confrontarti sulla progettazione dei servizi pubblici digitali
-    img: /images/400x300.png
-    alt: descrizione immagine
+    # img: /images/400x300.png
+    # alt: descrizione immagine
     imgRatio: 4x3
     pretext:
       icon:
@@ -721,11 +721,12 @@ components:
     - title : Piano attività
       subtitle: "Una tabella di marcia delle attività passate e future, i risultati ottenuti e ancora da raggiungere dal progetto Designers Italia negli ultimi anni"
       id: piano-attivita
-      img : /images/400x300.png
-      alt: descrizione immagine
+      # img : /images/400x300.png
+      # alt: descrizione immagine
       headingLevel : 2
       big: false
       background: medium
+      specular: true
       buttons:
         - label : Scopri il piano attività
           btnStyle: primary
@@ -735,8 +736,8 @@ components:
     - title : Progetti
       subtitle: "Piattaforme, strumenti e modelli a cui Designers Italia ha contribuito"
       id: progetti
-      img : /images/400x300.png
-      alt: descrizione immagine
+      # img : /images/400x300.png
+      # alt: descrizione immagine
       headingLevel : 2
       background: dark
       specular: true
@@ -747,13 +748,15 @@ components:
           btnStyle: primary
           url: "#"
           addonStyle: mb-3 mb-sm-0
+          disabled: true
 
     - title : Come partecipare
       subtitle: "Il design è bello quando è condiviso"
       text: "Vuoi contribuire all’evoluzione del design system, delle risorse per progettare, o delle Linee guida?"
       id: come-partecipare
-      img : /images/400x300.png
-      alt: descrizione immagine
+      specular: true
+      # img : /images/400x300.png
+      # alt: descrizione immagine
       headingLevel : 2
       big: false
       background: light
@@ -762,14 +765,17 @@ components:
           btnStyle: primary
           url: "#"
           addonStyle: mb-3 mb-sm-0
+          disabled: true
         - label : Per designer
           btnStyle: outline-secondary
           url: "#"
           addonStyle: mb-3 mb-sm-0
+          disabled: true
         - label : Per developer
           btnStyle: outline-secondary
           url: "#"
           addonStyle: mb-3 mb-sm-0
+          disabled: true
 
 
   # imageIcons:
