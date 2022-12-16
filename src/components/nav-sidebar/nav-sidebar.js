@@ -108,8 +108,7 @@ const NavSidebar = ({
     const navSticky = navStickyRef.current
     if (navSticky) {
       new Sticky(navSticky, {
-        stackable: true,
-        padding: 5
+        stackable: true
       })
     }
     return () => {
