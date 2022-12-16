@@ -204,11 +204,11 @@ serviziContent:
       linksHiFiTitle: Esempio domanda assegno di maternità
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19477&node-id=903%3A176540&viewport=466%2C48%2C0.15&scaling=scale-down&starting-point-node-id=903%3A176540"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=360%3A19477&node-id=903%3A176540&viewport=1122%2C116%2C0.13&scaling=scale-down&starting-point-node-id=903%3A176540"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19478&node-id=1018%3A238734&viewport=466%2C48%2C0.06&scaling=scale-down&starting-point-node-id=1018%3A238734"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=79%3A240782&node-id=79%3A241580&viewport=1214%2C-2428%2C0.25&scaling=scale-down&starting-point-node-id=79%3A241580"
           external: true
     - title: "Iscrizione a graduatoria"
       subtitle: "Il flusso di interazione per le richieste di  prestazioni accessibili tramite una graduatoria redatta dall'amministrazione, come:"
@@ -222,11 +222,11 @@ serviziContent:
       linksHiFiTitle: Esempio iscrizione alla scuola dell'infanzia
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19472&node-id=903%3A138696&viewport=466%2C48%2C0.4&scaling=scale-down&starting-point-node-id=903%3A138696"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=360%3A19473&node-id=21781%3A204859&viewport=647%2C805%2C0.06&scaling=scale-down&starting-point-node-id=21781%3A204859"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19473&node-id=1018%3A235159&viewport=466%2C48%2C0.21&scaling=scale-down&starting-point-node-id=1018%3A235159"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=79%3A200932&node-id=79%3A201522&viewport=1280%2C-1252%2C0.25&scaling=scale-down&starting-point-node-id=79%3A201522"
           external: true
     - title: "Permessi e autorizzazioni"
       subtitle: "Il flusso di interazione per le richiesta di  rilascio di permessi o autorizzazioni, come:"
@@ -242,11 +242,11 @@ serviziContent:
       linksHiFiTitle: Esempio richiesta permesso ZTL
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19474&node-id=903%3A139469&viewport=466%2C48%2C0.31&scaling=scale-down&starting-point-node-id=903%3A139469"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=360%3A19474&node-id=903%3A139469&viewport=-525%2C-857%2C0.25&scaling=scale-down&starting-point-node-id=903%3A139469"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=360%3A19475&node-id=1018%3A236176&viewport=466%2C48%2C0.17&scaling=scale-down&starting-point-node-id=1018%3A236176"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=79%3A222516&node-id=79%3A223525&viewport=2209%2C-6205%2C0.5&scaling=scale-down&starting-point-node-id=79%3A223525"
           external: true
     - title: "Pagamenti dovuti"
       subtitle: "Il flusso di interazione per adempire al pagamento di oneri, come:"
@@ -262,11 +262,11 @@ serviziContent:
       linksHiFiTitle: Esempio pagamento multa
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=3131%3A323423&node-id=3131%3A323723&viewport=612%2C-96%2C0.07&scaling=scale-down&starting-point-node-id=3131%3A323723"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=3131%3A323423&node-id=3131%3A323723&viewport=1118%2C-248%2C0.13&scaling=scale-down&starting-point-node-id=3131%3A323723"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi-per-sviluppo?page-id=4208%3A337501&node-id=4208%3A347851&viewport=960%2C764%2C0.07&scaling=scale-down&starting-point-node-id=4208%3A347851"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=93%3A201883&node-id=93%3A202855&viewport=-532%2C-4298%2C0.25&scaling=scale-down&starting-point-node-id=93%3A202855"
           external: true
     - title: "Servizi a pagamento"
       subtitle: "Il flusso di interazione per la richiesta di servizi che prevedono un pagamento da parte del cittadino per l’erogazione, come:"
@@ -280,11 +280,11 @@ serviziContent:
       linksHiFiTitle: Esempio richiesta mensa scolastica
       linksHiFi:
         - title: mobile
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19481&node-id=903%3A181261&viewport=466%2C48%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=360%3A19481&node-id=903%3A181261&viewport=966%2C501%2C0.13&scaling=scale-down&starting-point-node-id=903%3A181261"
           external: true
           divider: "-"
         - title: desktop
-          url: "https://www.figma.com/proto/Kfa8NiMX4BDgJmRZiXxjnY/Siti-Comuni---hi-fi?page-id=360%3A19482&node-id=1136%3A280880&viewport=466%2C48%2C0.05&scaling=scale-down&starting-point-node-id=1136%3A280880"
+          url: "https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/%5BComuni%5D-Modello-sito-e-servizi?page-id=106%3A205561&node-id=106%3A206503&viewport=1680%2C-1563%2C0.25&scaling=scale-down&starting-point-node-id=106%3A206503"
           external: true
     - title: "Esplora tutti i protitipi"
       subtitle: "Scopri <strong>tutti i prototipi navigabili</strong> utili alla comprensione e alla progettazione dei flussi di servizio, dai modelli a media fedeltà agli esempi reali ad alta fedeltà."
@@ -293,9 +293,9 @@ serviziContent:
       iconAlt: ""
       linksMidFiTitle: Tutti i prototipi disponibili
       linksMidFi:
-        - title: Vai alle risorse
-          url: "https://www.figma.com/proto/xSkfRizm0SsSg8Wytg1MRM/Hub-Link?page-id=0%3A1&node-id=1%3A707&viewport=241%2C48%2C0.68&scaling=min-zoom"
-          external: true
+        - title: In aggiornamento
+          url: ""
+          disabled: true
   superAccordion:
     title: COME SI REALIZZANO
     accordions:
