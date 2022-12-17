@@ -5,18 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.1.1/dist/css/bootstrap-italia.min.css">
-    <title>Esempio button</title>
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+    </style>
+    <title>Esempio Su sfondo scuro</title>
 </head>
 <body>
-    
+    <div class="bd-example">
+        
 
-<div class="bg-dark py-1">{% for color in site.data.theme-colors %}{% if color.name == "primary" or color.name == "secondary" %}
+<div class="bg-dark py-1">
 <div class="btn-example">
-  <button type="button" class="btn btn-{{ color.name }}">{{ color.name | capitalize }}</button>
-  <button type="button" class="btn btn-outline-{{ color.name }}">{{ color.name | capitalize }} outline</button>
-  <button type="button" class="btn btn-{{ color.name }} disabled">{{ color.name | capitalize }} disabled</button>
-</div>{% endif %}{% endfor %}</div>
+  <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-outline-primary">Primary outline</button>
+  <button type="button" class="btn btn-primary disabled">Primary disabled</button>
+</div>
+<div class="btn-example">
+  <button type="button" class="btn btn-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary outline</button>
+  <button type="button" class="btn btn-secondary disabled">Secondary disabled</button>
+</div></div>
 
+    </div>
     <script>
         window.__PUBLIC_PATH__ = "https://cdn.jsdelivr.net/npm/bootstrap-italia@2.1.1/dist/fonts/"
     </script>

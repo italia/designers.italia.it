@@ -17,7 +17,10 @@ function generateExamples() {
             const filePath = `${path.join(EXAMPLES_DIR, slugify(example.name).toLowerCase())}.html`
             fs.writeFileSync(
                 filePath,
-                Mustache.render(HTML_TEMPLATE, { code: example.content }),
+                Mustache.render(HTML_TEMPLATE, { 
+                    code: example.content,
+                    name: example.name
+                }),
                 'utf-8'
             )
         }
