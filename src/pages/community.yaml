@@ -274,42 +274,6 @@ components:
 
       cards:
 
-      # - title: "Titolo notizia"
-      #   headingLevel: 4
-      #   text: E descrizione corta corta vedi lo spazio va bene questa.
-      #   img: /images/400x300.png
-      #   alt: descrizione immagine
-      #   imgRatio: 21x9
-      #   imgPlaceholder: false
-      #   fullHeight: true
-      #   rounded: true
-      #   url: "#"
-      #   dateInfo: 6 dicembre 2022
-      #   chips:
-      #     - color : secondary
-      #       label : Accessibilità
-      #       url : "#"
-      #       blank: false
-      #     - color : secondary
-      #       label : Servizi
-      #       url : "#"
-      #       blank: false
-      #     - color : secondary
-      #       label : PA Digitale 2026
-      #       url : "#"
-      #       blank: false
-      #   share:
-      #     btnId: shareButtonCardNotizia1
-      #     button:
-      #       addonStyle: icon-only-drop
-      #       ariaLabel: Condividi
-      #       icon:
-      #         icon: sprites.svg#it-more-items
-      #         size: sm
-      #         color: secondary
-      #     list:
-      #       isShare: true
-
       - title: "Ecco l'anteprima del nuovo Designers Italia"
         headingLevel: 4
         text: "Esploralo all’indirizzo dedicato e aiutaci a costruirlo insieme."
@@ -339,7 +303,7 @@ components:
             url : "#"
             blank: false
         share:
-          btnId: shareButtonCardNotizia2
+          btnId: shareButtonCardNotizia1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -368,6 +332,46 @@ components:
             blank: false
           - color : secondary
             label : Privacy by default
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCardNotizia2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+      - title: "Accessibilità e inclusività dei servizi pubblici digitali protagoniste al Wired Next Fest"
+        headingLevel: 4
+        text: "Ecco il racconto di cosa abbiamo fatto e imparato a Milano lo scorso 7 e 8 ottobre"
+        # img: /images/400x300.png
+        # alt: descrizione immagine
+        imgRatio: 21x9
+        imgPlaceholder: true
+        fullHeight: true
+        rounded: true
+        url: "notizie/20221017-accessibilita-e-inclusivita-dei-servizi-pubblici-digitali-protagoniste-al-wired-next-fest/"
+        dateInfo: 20 ottobre 2022
+        chips:
+          - color : secondary
+            label : Accessibilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Usabilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Test di usabilità
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Validare
             url : "#"
             blank: false
         share:
