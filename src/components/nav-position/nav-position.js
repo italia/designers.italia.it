@@ -1,4 +1,5 @@
 import React from "react"
+import ReactMarkdown from "react-markdown"
 import Icon from "../icon/icon"
 import Link from "../link/link"
 
@@ -16,17 +17,22 @@ const NavPosition = ({
   if (items) {
     linkItems = items.map((item,index) => {
       item.icon.addonClasses = "flex-shrink-0 me-3"
-      item.icon.hidden = true
+      item.icon.hidden = true // xxx
       return(
-          <div key={"linkItems-"+index} className="d-inline-flex align-items-center me-5 my-2 small w-auto">
+        <div key={"linkItems-"+index} >
+          <div className="d-inline-flex align-items-center me-5 my-2 small w-auto">
             <Icon {...item.icon}/>
             <span className="text-uppercase text-secondary me-3"><strong>{item.title}</strong></span>
             {item.url ? <Link to={item.url} target={item.blank ? '_blank' : undefined}>
               {item.label}
             {item.screenReaderText && 
-              <span className="visually-hidden">{item.screenReaderText}</span> /* xxx to refactor screen labels everywhere */
+              <span className="visually-hidden">{item.screenReaderText}</span> 
             }</Link>  : <span>{item.label}</span>}
           </div>
+          <div>
+            {item.text && <ReactMarkdown>{item.text}</ReactMarkdown>}
+          </div>
+        </div>
       )
     })
   }
