@@ -143,29 +143,29 @@ components:
     #       btnStyle: primary
     #       url: "#"
     #       addonStyle: mb-3 mb-sm-0
-    - title : Ecco il nuovo Designers Italia
-      subtitle: Esplora il sito e aiutaci a costruirlo insieme.
+    - title : "Ecco l'anteprima del nuovo Designers Italia"
+      subtitle: "Esploralo all’indirizzo dedicato e aiutaci a costruirlo insieme"
       big: true
       id: HL2a
       specular: true
-      img : /images/home/in-evidenza/evidenza-kit-ui-11-2022.png
-      alt: descrizione immagine
+      # img : /images/home/in-evidenza/evidenza-kit-ui-11-2022.png
+      # alt: descrizione immagine
       headingLevel : 3
       background: medium
       text: false
       buttons:
         - label : Scopri come fare
           btnStyle: primary
-          url: "#"
+          url: "/community/notizie/20221220-ecco-l-anteprima-del-nuovo-designers-italia/"
           addonStyle: mb-3 mb-sm-0
     - title : Wired Next Fest
       subtitle: Designers Italia ha partecipato al Wired Next Fest di Milano per parlare di accessibilità nei servizi pubblici digitali.
       big: true
       id: HL2b
-      specular: false
+      specular: true
       padBottom: true # < last hightlight (or only hightlight in home page mut have this set to true)
-      img : /images/home/in-evidenza/evidenza-mdw-10-2022.jpg
-      alt: "Luci rosse e pubblico durante l'evento a Milano"
+      # img : /images/home/in-evidenza/evidenza-mdw-10-2022.jpg
+      # alt: "Luci rosse e pubblico durante l'evento a Milano"
       headingLevel : 3
       background: dark
       buttons:
@@ -298,33 +298,33 @@ components:
     cards:
 
     #CARD with Button
-    - title: "Community Lab sui temi dell’upgrade del Kit Design React"
-      headingLevel: 3
-      titleBig: false
-      titleSmall: false
-      customCol: col-lg-3
-      cardEvent: true
-      img: /images/600x400.png
-      alt: Descrizione immagine
-      imgRatio: 4x3
-      imgPlaceholder: false
-      dateOverlay:
-        day: 22
-        month: Aprile
-      url: "#"
-      tag:
-        label: Community Lab
-      share:
-        btnId: shareButtonCardEvento1
-        button:
-          addonStyle: icon-only-drop
-          ariaLabel: Condividi
-          icon:
-            icon: sprites.svg#it-more-items
-            size: sm
-            color: secondary
-        list:
-          isShare: true
+    # - title: "Community Lab sui temi dell’upgrade del Kit Design React"
+    #   headingLevel: 3
+    #   titleBig: false
+    #   titleSmall: false
+    #   customCol: col-lg-3
+    #   cardEvent: true
+    #   img: /images/600x400.png
+    #   alt: Descrizione immagine
+    #   imgRatio: 4x3
+    #   imgPlaceholder: false
+    #   dateOverlay:
+    #     day: 22
+    #     month: Aprile
+    #   url: "#"
+    #   tag:
+    #     label: Community Lab
+    #   share:
+    #     btnId: shareButtonCardEvento1
+    #     button:
+    #       addonStyle: icon-only-drop
+    #       ariaLabel: Condividi
+    #       icon:
+    #         icon: sprites.svg#it-more-items
+    #         size: sm
+    #         color: secondary
+    #     list:
+    #       isShare: true
    
     - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
       headingLevel: 3
@@ -369,35 +369,30 @@ components:
         list:
           isShare: true
   
-    - title: Titolo notizia
+
+    - title: Benvenuto, Kit Privacy
       headingLevel: 3
-      titleBig: false
-      titleSmall: false
       customCol: col-lg-4
-      img: /images/600x400.png
-      alt: Descrizione immagine
+      text: Rispetta la privacy delle persone quando realizzi un servizio digitale.
+      # img: /images/400x300.png
+      # alt: descrizione immagine
       imgRatio: 21x9
-      imgPlaceholder: false
-      url: "#"
-      blank: true
-      moreInfo: 6 dicembre 2022
-      text: |
-        E descrizione corta corta vedi lo spazio va bene questa.
+      imgPlaceholder: true
+      fullHeight: false
+      rounded: true
+      url: "/community/notizie/20221020-benvenuto-kit-privacy/"
+      dateInfo: 20 ottobre 2022
       chips:
         - color : secondary
-          label : Accessibilità
+          label : Privacy by design
           url : "#"
           blank: false
         - color : secondary
-          label : Servizi
-          url : "#"
-          blank: false
-        - color : secondary
-          label : PA Digitale 2026
+          label : Privacy by default
           url : "#"
           blank: false
       share:
-        btnId: shareButtonCardNotizia1
+        btnId: shareButtonCardNotizia3
         button:
           addonStyle: icon-only-drop
           ariaLabel: Condividi
