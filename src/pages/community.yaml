@@ -143,7 +143,7 @@ components:
     - id: eventi
       title: Eventi
       headingLevel: 3
-      text: "I prossimi eventi dove trovare le esperte e gli esperti di Designers Italia e i nostri cicli di eventi dedicati alla community"
+      text: "Gli eventi dove trovare le esperte e gli esperti di Designers Italia e i nostri cicli di eventi dedicati alla community"
       col4: true
       background: light
       buttons:
@@ -164,37 +164,39 @@ components:
         fullHeight: true
         imgPlaceholder: false
         dateOverlay:
-          day: 14
-          month: dicembre 
+          day: "14"
+          month: "dicembre" 
+          year: "2022"
         url: "eventi/20221214-democratising-co-production-of-sustainable-public-services"
         tag:
-          label: Partecipazione
-        share:
-          btnId: shareButtonCardEventi1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+          label: Tavola rotonda
+        # share:
+        #   btnId: shareButtonCardEventi1
+        #   button:
+        #     addonStyle: icon-only-drop
+        #     ariaLabel: Condividi
+        #     icon:
+        #       icon: sprites.svg#it-more-items
+        #       size: sm
+        #       color: secondary
+        #   list:
+        #     isShare: true
 
-      # - title: "Community Lab sui temi dell’upgrade del Kit Design React"
-      #   headingLevel: 4
-      #   cardEvent: true
-      #   img: /images/400x300.png
-      #   alt: descrizione immagine
-      #   imgRatio: 4x3
-      #   imgPlaceholder: false
-      #   fullHeight: true
-      #   dateOverlay:
-      #     day: 14
-      #     month: Agosto
-      #   url: "#"
-      #   tag:
-      #     label: Community Lab
+      - title: "GREEN BLUE — Percorso formativo sull’impatto del digitale"
+        headingLevel: 4
+        cardEvent: true
+        # img: /images/400x300.png
+        # alt: ""
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: "6"
+          month: "febbraio" 
+          year: "2023"
+        url: "eventi/20230206-green-blue-percorso-formativo-sull-impatto-del-digitale/"
+        tag:
+          label: Lezione
       #   share:
       #     btnId: shareButtonCardEventi2
       #     button:
@@ -481,7 +483,7 @@ components:
         blank: true
         externalLink:
           label : Leggi su medium
-          screenReaderText: "l'articolo completo"
+          screenReaderText: " l'articolo completo"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
@@ -492,11 +494,15 @@ components:
             url : "#"
             blank: false
           - color : secondary
-            label : Servizi
+            label : Qualità
             url : "#"
             blank: false
           - color : secondary
-            label : PA Digitale 2026
+            label : Design system
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Approfondimento teorico
             url : "#"
             blank: false
         share:
@@ -523,7 +529,7 @@ components:
         url: https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469
         externalLink:
           label : Leggi su medium
-          screenReaderText: "l'articolo completo"
+          screenReaderText: " l'articolo completo"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
@@ -534,11 +540,11 @@ components:
             url : "#"
             blank: false
           - color : secondary
-            label : Servizi
+            label : Etica
             url : "#"
             blank: false
           - color : secondary
-            label : PA Digitale 2026
+            label : Approfondimento teorico
             url : "#"
             blank: false
         share:
@@ -565,22 +571,22 @@ components:
         blank: true
         externalLink:
           label : Leggi su medium
-          screenReaderText: "l'articolo completo"
+          screenReaderText: " l'articolo completo"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
         moreInfo: di Francesco Zaia
         chips:
           - color : secondary
-            label : Accessibilità
+            label : Processo
             url : "#"
             blank: false
           - color : secondary
-            label : Servizi
+            label : Risorse per progettare
             url : "#"
             blank: false
           - color : secondary
-            label : PA Digitale 2026
+            label : Approfondimento teorico
             url : "#"
             blank: false
         share:
