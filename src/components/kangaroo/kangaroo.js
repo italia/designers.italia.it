@@ -17,6 +17,7 @@ const Kangaroo = ({
   personalInfo,
   otherInfo,
   noPadding,
+  eventInfo,
 }) =>{
 
   let styles= "kangaroo px-3"
@@ -39,6 +40,11 @@ const Kangaroo = ({
           {personalInfo &&
             <div className="personal-info-wrapper">
               <NavPosition {...personalInfo}></NavPosition>
+            </div>
+          }
+          {eventInfo &&
+            <div className="event-info-wrapper">
+              <NavPosition {...eventInfo}></NavPosition>
             </div>
           }
           {otherInfo &&

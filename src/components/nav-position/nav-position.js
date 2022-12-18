@@ -21,7 +21,11 @@ const NavPosition = ({
           <div key={"linkItems-"+index} className="d-inline-flex align-items-center me-5 my-2 small w-auto">
             <Icon {...item.icon}/>
             <span className="text-uppercase text-secondary me-3"><strong>{item.title}</strong></span>
-            {item.url ?<Link to={item.url}>{item.label}</Link> : <span>{item.label}</span>}
+            {item.url ? <Link to={item.url} target={item.blank ? '_blank' : undefined}>
+              {item.label}
+            {item.screenReaderText && 
+              <span className="visually-hidden">{item.screenReaderText}</span> /* xxx to refactor screen labels everywhere */
+            }</Link>  : <span>{item.label}</span>}
           </div>
       )
     })
