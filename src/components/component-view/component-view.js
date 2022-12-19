@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { v4 as uuidv4 } from 'uuid'
 
 //import DOMPurify from 'isomorphic-dompurify'
@@ -27,6 +27,18 @@ const ComponentView = ({
   accordionSrLabel,
   accordionSrCopyLabel
 }) => {
+
+  useEffect(() => {
+    const iframe = document.querySelector('iframe')
+    if (!iframe) return
+    const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
+    if (!exampleContainer) return
+    exampleContainer.addEventListener("click", () => {
+      setTimeout(() => {
+        iframe.height = exampleContainer.clientHeight
+      }, 100)
+    })
+  });
 
   const theme = a11yDark;
 
