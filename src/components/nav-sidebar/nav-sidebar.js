@@ -108,12 +108,13 @@ const NavSidebar = ({
     const navSticky = navStickyRef.current
     if (navSticky) {
       new Sticky(navSticky, {
-        stackable: true
+        stackable: true,
+        paddingTop: 100
       })
     }
     return () => {
       if (navColl) {
-        const navCollObj = NavBarCollapsible.getInstance(navColl)
+        const navCollObj = new NavBarCollapsible(navColl)
         if (navCollObj) {
           navCollObj.hide()
         }

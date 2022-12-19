@@ -8,7 +8,7 @@ const Header = ({
   children
 }) => {
   useEffect(() => {
-   new HeaderSticky(document.getElementById("header"))
+    new HeaderSticky(document.getElementById("header"))
   })
   const styles = "it-header-wrapper"
     + `${data.sticky ? ' it-header-sticky' : ''}`
@@ -19,7 +19,7 @@ const Header = ({
     <header
       className={styles}
       id="header"
-      // data-bs-toggle={data.sticky ? 'sticky' : ''}
+      data-bs-toggle={data.sticky ? 'sticky' : ''}
       data-bs-position-type={data.sticky ? 'fixed' : ''}
       data-bs-sticky-class-name={data.sticky ? 'is-sticky' : ''}
       data-bs-target={`#${data.navbar.id}`}
