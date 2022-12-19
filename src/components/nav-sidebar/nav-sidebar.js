@@ -39,6 +39,7 @@ const NavSidebar = ({
 
       linksStyle = "list-item text-uppercase right-icon"
         + `${(item.label === page) ? ' active' : ''}`
+        + `${(item.disabled) ? ' disabled' : ''}`
 
       if (item.subList) {
 
@@ -92,10 +93,17 @@ const NavSidebar = ({
   }
 
   if (secondaryList) {
+    
     secondaryLinks = secondaryList.map((item,index) => {
+
+      let secondaryItemStyle = undefined
+
+      secondaryItemStyle = "list-item"
+      + `${(item.disabled) ? ' disabled' : ''}`
+
       return(
         <li key={"sl-"+index}>
-          <Link className="list-item" to={item.url} activeClassName={GATSBY_ACTIVE}>
+          <Link className={secondaryItemStyle} to={item.url} activeClassName={GATSBY_ACTIVE}>
             <span>{item.label}</span>
           </Link>
         </li>
