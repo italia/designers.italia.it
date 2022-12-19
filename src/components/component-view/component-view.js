@@ -28,16 +28,23 @@ const ComponentView = ({
   accordionSrCopyLabel
 }) => {
 
-  useEffect(() => {
+  const initAutoHeight = () => {
     const iframe = document.querySelector('iframe')
     if (!iframe) return
     const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
     if (!exampleContainer) return
+    iframe.height = exampleContainer.clientHeight
     exampleContainer.addEventListener("click", () => {
       setTimeout(() => {
-        iframe.height = exampleContainer.clientHeight
-      }, 100)
+        iframe.height = exampleContainer.clientHeight + 50
+      }, 300)
     })
+  }
+
+  useEffect(() => {
+    initAutoHeight()
+    const iframe = document.querySelector('iframe')
+    iframe.addEventListener("load", initAutoHeight)
   });
 
   const theme = a11yDark;
