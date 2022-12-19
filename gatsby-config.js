@@ -77,7 +77,7 @@ module.exports = {
       resolve: "gatsby-plugin-matomo",
       options: {
         siteId: "1",
-        matomoUrl: `https://cdn.matomo.cloud/designers-italia.matomo.cloud`,
+        matomoUrl: `https://designers-italia.matomo.cloud/`,
         siteUrl: "https://prossima.designers.italia.it",
         matomoPhpScript: "matomo.php",
         matomoJsScript: "matomo.js",
