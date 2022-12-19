@@ -554,7 +554,7 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: "Comprendi lo stato dell’arte" #C
+      - title: "1. Comprendi lo stato dell’arte" #C
         imgRatio: 16x9
         rounded: true
         fullHeight: true
@@ -578,7 +578,7 @@ components:
             isShare: true
 
       # CARD CHILDREN ACTION
-      - title: Progetta il flusso #C
+      - title: 2. Progetta il flusso #C
         imgRatio: 16x9
         rounded: true
         fullHeight: true
@@ -602,7 +602,7 @@ components:
             isShare: true
 
       # CARD CHILDREN ACTION
-      - title: "Realizza l'interfaccia" #C
+      - title: "3. Realizza l'interfaccia" #C
         imgRatio: 16x9
         rounded: true
         fullHeight: true
@@ -630,36 +630,80 @@ components:
   # ///////////////////
   sectionsEditorial2 :
   
-  # —
+  
+
+    # —
     # EDITORIAL #C #I
     # —   
-    - title: Hai bisogno di chiarimenti o supporto tecnico?
-      background: null
-      menu: false
-      centered: false
-      #text: | #C
-        #Lorem **ipsum**
-      components: 
+    - menu: false
+      centered: true
+      background: light
+      title: La community di riferimento #C
+      text: | #C
+        Scopri i canali dove confrontarti sulle risorse del modello 
+      components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          image: /images/modelli/PA-digitale-lettera.svg #I
+          image: /images/ItForum.svg #I
           alt: "" #C
           specular: true
-          #title: Lorem ipsum h3 #C
-          text: | #C
-            Consulta le domande frequenti o scrivici
+          #title: ciao
+          text: |
+            **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
-          - label: Vai al supporto di PA digitale 2026 #C
+          - label: Vai su Forum Italia #C
+            url: https://forum.italia.it/c/design/modello-comuni/ #M
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://padigitale2026.gov.it/supporto #M
             blank: true #M #C true if new tab for external links
             icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/Slack.svg #I
+          alt: "" #C
+          specular: true
+          #title: ciao
+          text: |
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-comuni 
+          ctas:
+          - label: Vai su Slack #C
+            url: https://developersitalia.slack.com/archives/CME9AD8NN #M
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/Github.svg #I
+          alt: "" #C
+          specular: true
+          #title: ciao
+          text: |
+            **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
+          ctas:
+          - label: Vai su GitHub #C
+            url: https://github.com/italia/  #M
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+                       
 
-   
