@@ -35,6 +35,7 @@ const Tab = ({
           {tab01.variants && <ContentSelect label="Variante" {...tab01.componentVariant}>
               { tab01.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
                   <ComponentView
+                    name={v.name}
                     content={v.content}
                     viewer={tab01.componentVariant.viewer}
                     idPrefix={tab01.componentVariant.idPrefix}
@@ -58,6 +59,7 @@ const Tab = ({
           {tab02.variants && <ContentSelect {...tab02.componentVariant}>
               { tab02.variants.map((v, idx) => <ContentSelectItem label="Variante" key={'item-' + idx} name={v.name}>
               <ComponentView
+                  name={v.name}
                   content={v.content}
                   viewer={tab02.componentVariant.viewer}
                   idPrefix={tab02.componentVariant.idPrefix}
@@ -81,6 +83,7 @@ const Tab = ({
           {tab03.variants && <ContentSelect label="Variante" {...tab03.componentVariant}>
               { tab03.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
                 <ComponentView
+                  name={v.name}
                   content={v.content}
                   viewer={tab03.componentVariant.viewer}
                   idPrefix={tab03.componentVariant.idPrefix}

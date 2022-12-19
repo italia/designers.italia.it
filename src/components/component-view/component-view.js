@@ -1,8 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { v4 as uuidv4 } from 'uuid'
 
 //import DOMPurify from 'isomorphic-dompurify'
-import sanitizeHtml from 'sanitize-html'
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Button from "../button/button"
 import Checkbox from "../checkbox/checkbox"
@@ -13,9 +12,12 @@ import "./component-view.scss"
 
 import { Notification } from 'bootstrap-italia'
 
+const slugify = require('slugify')
+
 const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'))
 
 const ComponentView = ({
+  name,
   content,
   viewer,
   idPrefix,
@@ -26,14 +28,26 @@ const ComponentView = ({
   accordionSrCopyLabel
 }) => {
 
-  const theme = a11yDark;
-
-  const createMarkup = (html) => {
-    return { __html: sanitizeHtml(html, {
-      allowedTags: false, //all tags allowed
-      allowedAttributes: false, //all attribs allowed
-    }) };
+  const initAutoHeight = () => {
+    const iframe = document.querySelector('iframe')
+    if (!iframe) return
+    const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
+    if (!exampleContainer) return
+    iframe.height = exampleContainer.clientHeight
+    exampleContainer.addEventListener("click", () => {
+      setTimeout(() => {
+        iframe.height = exampleContainer.clientHeight + 50
+      }, 300)
+    })
   }
+
+  useEffect(() => {
+    initAutoHeight()
+    const iframe = document.querySelector('iframe')
+    iframe.addEventListener("load", initAutoHeight)
+  });
+
+  const theme = a11yDark;
 
   const copyToClipboard = (e, code) => {
     e.preventDefault()
@@ -99,7 +113,7 @@ const ComponentView = ({
           </div>
         }
         <span className="visually-hidden">Inizio componente:</span> {/* xxx move string to src/data/ */}
-        <div dangerouslySetInnerHTML={createMarkup(content)} />
+        <iframe src={`/examples/${slugify(name).toLowerCase()}.html`} title="Titolo componente" class="w-100 iframe-example"></iframe>
         <span className="visually-hidden">Fine componente.</span>  {/* xxx move string to src/data/ */}
       </div>
       <div className="accordion accordion-left-icon" id={accId}>
