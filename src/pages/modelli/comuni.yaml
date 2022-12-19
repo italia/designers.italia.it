@@ -304,7 +304,7 @@ components:
             
             L’uso del modello permette di fornire ai cittadini un’esperienza coerente tra le varie amministrazioni, aderendo alle linee guida nazionali e alle migliori pratiche di progettazione digitale e anticipando, inoltre, l’adozione delle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1). 
           ctas:
-          - label: Vai al report della ricerca #C
+          - label: Scopri di più sul processo di ricerca #C
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
             blank: true #M #C true if new tab for external links
@@ -315,25 +315,25 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Vai alla documentazione del modello #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true 
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+          #- label: Vai alla documentazione del modello #C
+            #url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
+            #screenReaderText: " (si apre in una nuova finestra)" #C
+            #blank: true 
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
         
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: "Risorse pronte all'uso" #C
           text: | #C
             La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Le risorse operative del modello permettono di realizzare sito e servizi digitali con funzionalità già validate dalla ricerca, rispondendo così ai bisogni dei cittadini in modo rapido e a basso costo. 
-          #ctas:
-          #- label: Vai al report della ricerca #C
+          ctas:
+          #- label: Vai alla documentazione tecnica #C
             #url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
             #blank: true #M #C true if new tab for external links
             #screenReaderText: " (si apre in una nuova finestra)" #C
@@ -344,17 +344,17 @@ components:
               #hidden: true
               #size: sm
               #addonClasses: ms-2
-          #- label: Vai alla documentazione del modello #C
-            #url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
-            #blank: true 
-             #screenReaderText: " (si apre in una nuova finestra)" #C
-            #icon:
-              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
+          - label: Vai alla documentazione tecnica #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
+            blank: true 
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
               
         # NUMBERS BLOCK
         - name: Numbers
