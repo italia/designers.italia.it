@@ -14,7 +14,7 @@ const ContentCollapse = ({
 }) => {
 
   const icon = ({
-    icon: "sprites.svg#it-arrow-down",
+    icon: "sprites.svg#it-collapse",
     size: "sm",
     align : "middle",
     color :"primary",
