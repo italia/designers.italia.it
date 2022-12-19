@@ -83,6 +83,11 @@ const SectionEditorial = ({
 		})
 	}
 
+  //xxx a11y downgrade if title is not set, quick fix to review asap
+  if (!title) {
+    id = undefined
+  }
+
   return(
     <section className={styles} aria-describedby={id}>
         <div className={container}>
