@@ -96,7 +96,7 @@ const ComponentView = ({
     })
   }
 
-  let componentStyles = "bg-light p-3 p-md-5"
+  let componentStyles = "bg-light p-3"
     + `${responsiveButtonsItems ? ' pt-4' : ''}`
 
   let accordionStyle = "accordion-collapse collapse" 
