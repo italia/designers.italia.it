@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,16 +7,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.1.1/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
         .bd-example {
             margin-top: 0;
             border: none;
         }
+        .bd-example > .accordion{
+            width: 100vw;
+        }
     </style>
     <title>Esempio Esempi con varianti di pulsanti</title>
 </head>
-<body>
-    <div class="bd-example">
-        
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
 
 <div class="btn-group">
   <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -64,6 +73,7 @@
   </div>
 </div>
 
+        </div>
     </div>
     <script>
         window.__PUBLIC_PATH__ = "/dist/fonts/"
