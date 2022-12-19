@@ -2,7 +2,7 @@ import * as React from "react"
 import Template from "../../../templates/tmpl-design-system-index"
 import {Seo} from "../../../components/seo/seo"
 
-import Pagedata from "./fondamento.yaml"
+import Pagedata from "./tono-di-voce.yaml"
 
 const DesignSystemFondamento = ({ pageContext,location }) => {
   return(

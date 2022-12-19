@@ -36,20 +36,20 @@ lastUpdate:
       color: primary
     blank: true
 
-navPreFooter:
-  navOtherPrevNext:
-    next:
-      label: Next page
-      url: "#"
-      blank: false
-      specular: true
-      icon:
-        icon: "sprites.svg#it-arrow-right"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 ms-3
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
 
 components:
   hero:
@@ -144,12 +144,43 @@ components:
     #     color: secondary
     #     addonClasses: ms-1 flex-shrink-0
     cards:
-      - title: Fondamento
+      - title: Linguaggio
         # img: /images/600x400.png
         # alt: Descrizione immagine
         imgRatio: 16x9
         imgPlaceholder: false
-        url: "fondamento/"
+        url: "linguaggio/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Descrizione
+        chips:
+          - color : secondary
+            label : Argomento
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Argomento
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+      - title: Tono di voce
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "tono-di-voce/"
         fullHeight: true
         rounded: true
         text: |
