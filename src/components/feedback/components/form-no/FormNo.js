@@ -53,7 +53,7 @@ const FormNo = ({ onResult, state }) => {
       <p>
         Quanto segue è una raccolta di informazioni anonima, che ci aiuta a capire come
         migliorare la tua esperienza sul sito senza trattare dati personali.
-        Se sei un developer vuoi puoi scoprire come funziona questo meccanismo nella
+        Se sei un developer vuoi puoi scoprire come funziona questo meccanismo nella 
         <Link to="#">repository GitHub</Link> dedicata.
       </p>
 
