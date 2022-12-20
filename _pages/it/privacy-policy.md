@@ -116,9 +116,9 @@ migliorare l’esperienza d’uso dei propri visitatori, il cui uso non è
 strumentale alla raccolta di dati personali identificativi dell’utente, nonché
 cookie analitici volti alla raccolta di informazioni, in forma aggregata, sul
 numero degli utenti e su come gli stessi visitano il sito. In particolare,
-utilizziamo il servizio Web Analytics Italia fornito da AGID che prevede
+utilizziamo il servizio Web Analytics Italia fornito da AGID, e di Matomo, che prevedono entrambi
 l'anonimizzazione dell'indirizzo IP dell' utente; per maggiori
-informazioni sulle funzionalità di WAI si rimanda alle
+informazioni sulle funzionalità di WAI e di Matomo si rimanda alle
 [domande frequenti di AGID](https://webanalytics.italia.it/faq).
 
 ## Come disabilitare i cookie (opt-out) sul proprio dispositivo
