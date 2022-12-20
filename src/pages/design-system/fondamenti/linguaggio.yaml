@@ -145,33 +145,33 @@ components:
           size: lg
 
   sectionsEditorial :
-    - fullColumn: true
-      noSpace: true
-      components:
-        - name: ImgFull
-          img: /images/image-icons-fullwidth.jpg
-          alt: Descrizione immagine grande
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
     - full: true
-      noSpace: true
+      noSpace: false
       title: Scrivi per le persone
-      subtitle: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
-      text: 
-        Il linguaggio è una risorsa preziosa nell’intero ecosistema e ciclo di vita di un prodotto digitale. Ha il potere di **orientare e influenzare l’esperienza delle persone** su siti e servizi, favorendo **la comprensione delle informazioni e l’abilità di portare a termine procedure**. 
-        
-        È quindi importante che i testi per le interfacce, i contenuti ad esse correlati, documentazione, o gli altri contenuti attivati dalle interazioni degli utenti (email, notifiche, SMS, etc...) siano progettati prediligendo un linguaggio semplice e frasi brevi. 
+      text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione      
       background: null
+
       components:
+
         - name: TextImageCta
-          title: Come le persone leggono gli schermi
+          title: 
           text: |
             Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Le persone, infatti, **non leggono necessariamente dall’alto al basso e parola per parola**. 
 
             Studi di monitoraggio oculare (eye-tracking) hanno dimostrato che le persone tendono a **scansionare blocchi di testo seguendo la forma di una F (F-pattern)**: tracciano una linea orizzontale lungo la parte superiore dello schermo, procedono poi in verticale lungo il lato sinistro alla ricerca di punti di interesse e procedono di nuovo in senso orizzontale.
 
-          # ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
+            ### Come le persone leggono gli schermi
 
-        - name: TextImageCta
-          text: |
+            Il linguaggio è una risorsa preziosa nell’intero ecosistema e ciclo di vita di un prodotto digitale. Ha il potere di **orientare e influenzare l’esperienza delle persone** su siti e servizi, favorendo **la comprensione delle informazioni e l’abilità di portare a termine procedure**. 
+            
+            È quindi importante che i testi per le interfacce, i contenuti ad esse correlati, documentazione, o gli altri contenuti attivati dalle interazioni degli utenti (email, notifiche, SMS, etc...) siano progettati prediligendo un linguaggio semplice e frasi brevi. 
+
             ### Organizza le informazioni
             
             Aiuta le persone a trovare ciò che cercano sul tuo sito o servizio **organizzando le informazioni in base alle loro esigenze informative** e alla natura del touchpoint. Tieni sempre in considerazione le funzioni principali del sito o servizio, la natura dei contenuti da veicolare e le relazioni fra di essi.  
@@ -220,7 +220,6 @@ components:
             Fai evolvere la qualità dei contenuti in base ai riscontri delle persone 
       components:
         - name: TextImageCta
-         # title: Lorem ipsum
           text: |
             I contenuti e il linguaggio dovrebbero sempre essere progettati - e ottimizzati in maniera iterativa e continua - sulla base di analisi e test sugli utenti finali del touchpoint. 
 
