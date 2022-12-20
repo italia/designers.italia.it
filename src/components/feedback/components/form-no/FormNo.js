@@ -51,10 +51,9 @@ const FormNo = ({ onResult, state }) => {
       {/* <!-- XXX testi e item tutti da spostare nello yaml possibilmente --> */}
       <h3 className="mb-3">Aiutaci a migliorare dandoci qualche dettaglio in più.</h3>
       <p>
-        Quanto segue è una raccolta dati anonima, non raccogliamo i tuoi dati personali,
-        usiamo solo le seguenti informazioni per capire come migliorare l’esperienza.
-        Se vuoi puoi leggere <Link to="#">l’informativa sulla privacy</Link>
-        o esplorare come funziona questo meccanismo nella
+        Quanto segue è una raccolta di informazioni anonima, che ci aiuta a capire come
+        migliorare la tua esperienza sul sito senza trattare dati personali.
+        Se sei un developer vuoi puoi scoprire come funziona questo meccanismo nella
         <Link to="#">repository GitHub</Link> dedicata.
       </p>
 
@@ -156,7 +155,7 @@ const FormNo = ({ onResult, state }) => {
         <div className="px-3 px-lg-5 pt-5 pb-1 rounded shadow-lg">
           <div className="form-group">
             <LabelTextArea ariadescribedby="helperText" id="feedbackText" label="Risposta" rows="3" maxLength="200" />
-            <small id="helperText" className="form-control form-text">Hai a disposizione 200 caratteri</small>
+            <small id="helperText" className="form-control form-text">Hai a disposizione 200 caratteri. Per favore non inserire dati personali in questo campo.</small>
           </div>
         </div>
       </fieldset>
