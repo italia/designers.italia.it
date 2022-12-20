@@ -2,7 +2,7 @@ import * as React from "react"
 import Template from "../../../templates/tmpl-level-3"
 import {Seo} from "../../../components/seo/seo"
 
-import Pagedata from "./20230123-angular-bootstrap-italia-e-non-solo.yaml"
+import Pagedata from "./20230130-angular-bootstrap-italia-e-non-solo.yaml"
 
 const ArticleDetail = ({ pageContext,location }) => {
   return(
