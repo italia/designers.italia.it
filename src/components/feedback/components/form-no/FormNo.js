@@ -53,8 +53,7 @@ const FormNo = ({ onResult, state }) => {
       <p>
         Quanto segue è una raccolta di informazioni anonima, che ci aiuta a capire come
         migliorare la tua esperienza sul sito senza trattare dati personali.
-        Se sei un developer vuoi puoi scoprire come funziona questo meccanismo nella 
-        <Link to="#">repository GitHub</Link> dedicata.
+        Se sei un developer puoi scoprire come funziona questo meccanismo nella <a href="https://github.com/italia/feedback.designers.italia.it" target="_blank" aria-label="repository GitHub dedicata (si apre in una nuova finestra">repository GitHub dedicata</a>.
       </p>
 
       <fieldset onChange={e => setWho(e.target.value)}>
