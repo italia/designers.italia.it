@@ -46,7 +46,7 @@ const LastUpdate = ({
                     to={licence.url}
                     target={licence.blank ? "_blank" : undefined}
                     className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5">
-                    <strong className="d-inline-block me-2">{licence.label} <Icon {...licence.icon} /></strong>
+                    <strong className="d-inline-block me-2">{licence.label} <span className="visually-hidden">(si apre in una nuova finestra)</span><Icon {...licence.icon} /></strong>
                   </Link>
                 </small>
               </p>
@@ -56,7 +56,7 @@ const LastUpdate = ({
                     to={editGithubUrl}
                     target={edit.blank ? "_blank" : undefined}
                     className="d-inline-block text-decoration-none">
-                    <strong className="d-inline-block me-2">{edit.label}</strong><Icon {...edit.icon} />
+                    <strong className="d-inline-block me-2">{edit.label} <span className="visually-hidden">(si apre in una nuova finestra)</span></strong><Icon {...edit.icon} />
                   </Link>
                 </small>
               </p>
