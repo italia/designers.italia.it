@@ -21,6 +21,7 @@ const HeaderNav = ({
     return () => {
       if (navBar.current) {
         navBar.current.hide()
+        document.scrollingElement.scrollTop = 0 //reset page scroll
       }
     }
   })
