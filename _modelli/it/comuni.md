@@ -142,7 +142,7 @@ coreContent:
           - title: Anteprime dei template HTML sito comunale
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito comunale basati sui template HTML Bootstrap
-            link: <a href='https://italia.github.io/design-comuni-pagine-statiche/sito/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
+            link: <a href='https://italia.github.io/design-comuni-pagine-statiche/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
           - title: Sorgenti dei template HTML sito comunale
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
