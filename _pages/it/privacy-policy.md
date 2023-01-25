@@ -6,7 +6,7 @@ backgroundColor: '#06c'
 nodate: true
 ---
 
-[https://designers.italia.it](https://developers.italia.it) è gestito dalla Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione digitale.
+[https://designers.italia.it](https://designers.italia.it) è gestito dalla Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione digitale.
 
 A norma degli articoli 13 e 14 del Regolamento UE 2016/679 (GDPR) vogliamo fornirti un'informativa semplice e chiara su come trattiamo i dati personali che ci fornisci direttamente o di cui comunque potremo venire in possesso tramite contatto con il sito web https://designers.italia.it.
 
