@@ -2,7 +2,7 @@ const { getCrumbLabelUpdates } = require('./scripts/breadcrumbs');
 const {generateExamples} = require("./scripts/generate-examples.js")
 
 console.log("🧵 Generate examples...")
-generateExamples()
+// generateExamples()
 console.log("✅ Done")
 
 require("dotenv").config({
@@ -64,6 +64,13 @@ module.exports = {
       options: {
         name: `staticImages`,
         path: `${__dirname}/static/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `./src/data/content`,
       },
     },
     {

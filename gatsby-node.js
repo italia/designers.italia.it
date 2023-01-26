@@ -9,8 +9,6 @@ const { simpleGit } = require('simple-git');
 var path = require('path');
 const fs = require('fs')
 
-
-
 const isRemoteAsset= (assetPath) => {
   return assetPath.startsWith('http')
 }
@@ -73,8 +71,12 @@ exports.onCreateNode = async ({
   node,
   actions: { createNode, createNodeField },
   createNodeId,
+  createContentDigest,
+  loadNodeContent,
   getCache,
 }) => {
+  const CONTENT_NODE_TYPE = "Content"
+
   if (node.internal.type === "RemoteAsset") {
     const fileNode = await createRemoteFileNode({
       url: node.source,
@@ -86,7 +88,28 @@ exports.onCreateNode = async ({
     if (fileNode) {
       createNodeField({ node, name: "localFile", value: fileNode.id })
     }
-   }
+  } else if (
+    node.internal.type === "File" &&
+    node.sourceInstanceName === "content" &&
+    (node.extension === 'yaml' ||
+     node.extension === 'yml')
+  ) {
+    createNode({
+      ...node,
+      fields: undefined,
+      id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
+      parent: null,
+      children: [],
+      internal: {
+        type: CONTENT_NODE_TYPE,
+        contentDigest: createContentDigest(node),
+      },
+      relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ''),
+      yaml: await loadNodeContent(node),
+    });
+
+    // createNodeField({node, content: loadNodeContent(node)});
+  }
 }
 
 exports.onCreatePage = async({ page, actions }) => {
@@ -125,7 +148,7 @@ exports.onCreatePage = async({ page, actions }) => {
       context: {
         ...page.context,
         lastmodified: new Date(logs.latest.date).toLocaleDateString(
-          'it-IT', 
+          'it-IT',
           { year: 'numeric', month: 'long', day: 'numeric' }
         )
       },
