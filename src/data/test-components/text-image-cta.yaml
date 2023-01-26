@@ -1,0 +1,78 @@
+---
+name: TextImageCta
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: base
+    
+# ————————————————————————————————————————————
+# DATE, LICENSE, URL
+# ————————————————————————————————————————————
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 15 dicembre 2022 #C #AUTO
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it  #M #AUTO
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+    
+components:
+  textImageCta1:
+    title: Richiedi un finanziamento
+    image: /images/text-image-cta-img.svg
+    text: |
+      Puoi scegliere di aggiornare **soltanto il sito** o di creare anche una serie di servizi digitali. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026.
+    ctas:
+    - icon:
+        icon: sprites.svg#it-external-link
+        color: primary
+        align: middle
+        hidden: true
+      label: Requisiti per il sito
+      screenReaderText: " (si apre in una nuova finestra)" #C
+      url: "#"
+      blank: true
+    - icon:
+        icon: sprites.svg#it-external-link
+        color: primary
+        align: middle
+        hidden: true
+      label: Requisiti per i servizi
+      screenReaderText: " (si apre in una nuova finestra)" #C
+      url: "#"
+      blank: true
+  textImageCta2:
+    title: Richiedi un finanziamento
+    specular: true
+    image: /images/bg-hero-img.jpg
+    text: |
+      Puoi scegliere di aggiornare **soltanto il sito** o di creare anche una serie di servizi digitali. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026.
+  textImageCta3:
+    text: |
+      Puoi scegliere di aggiornare **soltanto il sito** o di creare anche una serie di servizi digitali. Il processo di candidatura, semplice e veloce, è interamente online sulla piattaforma PA digitale 2026.
+    ctas:
+    - icon:
+        icon: sprites.svg#it-external-link
+        color: primary
+        align: middle
+        hidden: true
+      label: Requisiti per il sito
+      screenReaderText: " (si apre in una nuova finestra)" #C
+      url: "#"
+      blank: true

@@ -1,0 +1,115 @@
+---
+name: Kangaroo
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: base
+    
+# ————————————————————————————————————————————
+# DATE, LICENSE, URL
+# ————————————————————————————————————————————
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 15 dicembre 2022 #C #AUTO
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it  #M #AUTO
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+components:
+  kangaroos:
+    - id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      tagsLabel : Parliamo di
+      color : primary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: primary
+      chips:
+        - label: Accessibilità
+          url: "#"
+          color: primary
+          size: lg
+        - label: Ricerca Utente
+          url: "#"
+          color: primary
+          size: lg
+        - label: Sviluppo front end
+          url: "#"
+          color: primary
+          size: lg
+      personalInfo:
+         items:
+          - title: Sei
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer
+          - title: Vuoi
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare, Realizzare
+
+      navposition:
+        items:
+          - title: Ti trovi in
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Modello Comuni
+            url: "#"
+      otherInfo:
+        items:
+          - title: Rispettando
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Design standard X
+            url: "#"
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Apri dropdown
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: primary
+            addonClasses: icon-expand ms-2
+        list:
+          listItems:
+            - url: "#"
+              label: Azione 1
+            - url: "#"
+              label: Azione 2
+            - url: "#"
+              label: Azione 3
+
+

@@ -1,0 +1,174 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level3 # article?
+
+seo:
+  name: "Ciao, questa è la prossima versione di Designers Italia - Designers Italia"
+  description : "Esplora il sito in anteprima e costruiscilo insieme a noi"
+  image: https://prossima.designers.italia.it/images/home/in-evidenza/202212-designers-home-social.jpg #I
+  twitterImage: https://prossima.designers.italia.it/images/home/in-evidenza/202212-designers-home-social.jpg #I
+  canonical: null
+  pathname: /community/notizie/20221220-ecco-l-anteprima-del-nuovo-designers-italia/
+
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 24 maggio 2022
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../../" #xxx must direct to the archive soon
+
+components:
+  hero:
+    background: null
+    centered: true
+    title : "Ciao, questa è la prossima versione di Designers Italia"
+    subtitle: "Esplora il sito in anteprima e costruiscilo insieme a noi"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+    share:
+      btnId: shareButton
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel : Parliamo di
+      color : secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips:
+        - label: Prossima
+          url: "#"
+          color: primary
+          size: lg
+        - label: Anteprima
+          url: "#"
+          color: primary
+          size: lg
+        - label: Validare
+          url: "#"
+          color: primary
+          size: lg
+        - label: Realizzare
+          url: "#"
+          color: primary
+          size: lg
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 20 dicembre 2022
+
+  imageIcons:
+    image : /images/home/in-evidenza/202212-designers-home.png
+    alt: ""
+    background: medium
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione 
+      # text: 
+      id: corpoNotizia
+      components:
+        - name: TextImageCta
+          # title: Titoletto interno
+          text: |
+            **Una Pubblica Amministrazione più vicina alle persone, semplice e utile: [prossima.designers.italia.it](/)** non è solo **la prossima iterazione** del sito di Designers Italia, il progetto del Dipartimento per la trasformazione digitale e di Agenzia per l’Italia digitale (AGID), ma soprattutto un’ulteriore evoluzione dell’iniziativa che **crea e diffonde strumenti pratici** per progettare e realizzare servizi pubblici digitali di qualità e **cura una community** che si confronta sulle buone pratiche di settore.
+
+            Grazie ad analisi euristiche approfondite e ai dati di utilizzo di sito e risorse negli ultimi anni, abbiamo **riprogettato completamente l’architettura informativa**, rivisto i **modelli dei contenuti** e **l’esperienza di navigazione**. Lo abbiamo fatto pensando alle necessità di chi utilizza il sito e mettendoci nei loro panni: le persone della PA, i fornitori e la community di designer e developer impegnate nella trasformazione della PA e che, come ha testimoniato il successo degli ultimi eventi fisici e digitali, segue con attenzione e partecipazione questo progetto.
+
+            Due le grandi novità. La prima: già visibile in anteprima all'indirizzo [prossima.designers.italia.it](/), e che sarà arricchita di contenuti nei prossimi mesi, è la sezione che contiene il **Design system del Paese**, la cassetta degli attrezzi per progettare e realizzare esperienze di servizi pubblici digitali di qualità. 
+            Il nuovo sito è stato progettato e realizzato proprio utilizzando il design system aggiornato, che lo rende **pienamente accessibile** e usabile, e **sviluppato in open source** e in modo trasparente sulla repository GitHub [/italia/designers.italia.it (ramo Next)](https://github.com/italia/designers.italia.it/tree/next). 
+            Questa esperienza ci ha permesso anche di continuare a migliorare alcune delle risorse del design system del Paese, come Bootstrap Italia, e di rendere questo nuovo sito un esempio concreto di applicazione delle buone pratiche che promuoviamo.
+
+            La seconda: **sarà possibile dare feedback e proporre modifiche** a tutte le risorse disponibili (il sito stesso, il manuale, i kit di design, le librerie, ecc.). 
+            Da oggi, parte quindi un periodo intenso ed entusiasmante di test. Come prescrivono le [Linee guida di design per i siti internet e i servizi digitali della Pubblica Amministrazione](/norme-e-riferimenti/linee-guida-di-design/), in questi prossimi due mesi analizzeremo i dati di utilizzo, raccoglieremo i feedback e i suggerimenti del pubblico, e valuteremo l’impatto delle scelte prese in fase di progettazione, per assicurarci che il nuovo sito risponda alle necessità delle persone prima di mandare in soffitta la versione attuale.
+            
+          # ctas:
+          # - label: Scopri tutte le risorse del kit Privacy
+          #   url: "/risorse-per-progettare/organizzare/privacy"
+          #   screenReaderText: "" #C
+          #   blank: false
+          #   icon:
+          #     icon: sprites.svg#it-arrow-right
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm ms-2
+
+        - name: TextImageCta
+          title: Il tuo feedback è prezioso
+          text: | 
+            **Per contribuire**, usa il nuovo sito e facci sapere se l’esperienza ti soddisfa attraverso il modulo presente alla fine di ogni pagina. Buone feste! 
+          ctas:
+          - label: Inizia a navigare
+            url: "/"
+            icon:
+              icon: sprites.svg#it-designers-italia
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true

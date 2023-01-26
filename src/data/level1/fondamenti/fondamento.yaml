@@ -1,0 +1,199 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: design-system-detail
+
+seo:
+  name: Scheda fondamento x
+  description : Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper.
+  image : null
+  twitterImage: null
+  canonical: null
+  pathname: /level1/fondamenti/fondamento/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: Pagina aggiornata il
+  date: 24 maggio 2022
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+navPreFooter:
+  navOtherPrevNext:
+    next:
+      label: Next page
+      url: "#"
+      blank: false
+      specular: true
+      icon:
+        icon: "sprites.svg#it-arrow-right"
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Scheda fondamento x
+    column: true
+    subtitle: Un bel modo qui di raccontare cosa è questo fondamento a chiunque apra questa pagina, non termini tecnici ma a cosa serve e cosa è in parole italiane
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve
+    text: |
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+    breadcrumbs :
+      separator : '/'
+      items :
+        - label : Inizio
+          active: false
+          url: /
+        - label : Design System
+          active: false
+          url: /level1/
+        - label : Fondamenti
+          active: false
+          url: /level1/fondamenti/
+        - label : Scheda fondamento x
+          active: true
+    share:
+      btnId: shareButtonHero
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Realizzare #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips: #C
+        - label: Architettura dei contenuti
+          url: "#"
+          color: primary
+          size: lg
+        - label: "+3"
+          url: "#"
+          color: primary
+          size: lg
+
+  sectionsEditorial :
+    - fullColumn: true
+      noSpace: true
+      components:
+        - name: ImgFull
+          img: /images/image-icons-fullwidth.jpg
+          alt: Descrizione immagine grande
+    - full: true
+      noSpace: true
+      title: Lorem ipsum
+      text: Eventuale lead paragraph
+      background: null
+      components:
+        - name: TextImageCta
+          title: Lorem ipsum
+          text: |
+            Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
+
+            Da capire come implementare il do’s and dont’s, qui sotto vive solo come segnaposto per ora. Da capire se deve essercene uno per ogni caso d’uso o uno generale. Pensare a scalabilità, mvp iniziale, e modularità. Target sempre misto in questa prima scheda d’uso, non dimenticarlo.
+
+            ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
+
+        - name: TextImageCta
+          text: |
+            ### Lorem ipsum
+
+            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+            ### Lorem ipsum
+
+            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
+            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+  sectionsEditorial2 :
+    - full: true
+      noSpace: true
+      title: Lorem Ipsum
+      text: |
+            Eventuale lead paragraph
+      components:
+        - name: TextImageCta
+          title: Lorem ipsum
+          text: |
+            Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
+
+            Da capire come implementare il do’s and dont’s, qui sotto vive solo come segnaposto per ora. Da capire se deve essercene uno per ogni caso d’uso o uno generale. Pensare a scalabilità, mvp iniziale, e modularità. Target sempre misto in questa prima scheda d’uso, non dimenticarlo.

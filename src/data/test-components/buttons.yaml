@@ -1,0 +1,172 @@
+---
+name: Buttons
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: base
+    
+# ————————————————————————————————————————————
+# DATE, LICENSE, URL
+# ————————————————————————————————————————————
+lastUpdate:
+  title: Pagina aggiornata il
+  date: 15 dicembre 2022 #C #AUTO
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it  #M #AUTO
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+    
+components:
+  button1:
+    type: button
+    label: Button da dati yaml
+  buttonTypes:
+    - url : "#"
+      role : button
+      label: Link
+    - type: submit
+      label: Button
+  buttonColors:
+    - type: button
+      btnStyle: primary
+      label: Primary
+    - type: button
+      btnStyle: outline-primary
+      label: Outline Primary
+    - type: button
+      btnStyle: primary
+      disabled: true
+      label: Primary disabled
+    - type: button
+      btnStyle: secondary
+      label: Secondary
+    - type: button
+      btnStyle: outline-secondary
+      label: Outline Secondary
+    - type: button
+      btnStyle: secondary
+      disabled: true
+      label: Secondary disabled
+  disabledLink:
+    url: "#"
+    btnStyle: primary
+    disabled: true
+    role: button
+    label: link disabilitato
+  buttonIcon:
+    - type: button
+      btnStyle: success
+      label: Icon right Button LG
+      size: lg
+      iconRight: true
+      icon:
+        icon: sprites.svg#it-star-full
+        color: white
+        addonClasses: ms-1
+    - type: button
+      btnStyle: primary
+      label: Icon right Button
+      iconRight: true
+      icon:
+        icon: sprites.svg#it-star-full
+        color: white
+        addonClasses: ms-1
+    - type: button
+      btnStyle: danger
+      label: Icon right Button sm
+      size: sm
+      iconRight: true
+      icon:
+        icon: sprites.svg#it-star-full
+        color: secondary
+        addonClasses: ms-1
+    - type: button
+      btnStyle: info
+      label: Icon right Button xs
+      size: xs
+      iconRight: true
+      icon:
+        icon: sprites.svg#it-star-full
+        color: danger
+        addonClasses: ms-1
+  buttonIconCircle:
+    - type: button
+      btnStyle: success
+      label: Rounded icon Lg
+      size: lg
+      iconLeft: true
+      iconRounded: true
+      icon:
+        icon: sprites.svg#it-star-full
+        color: success
+    - type: button
+      btnStyle: primary
+      label: Rounded icon
+      iconLeft: true
+      iconRounded: true
+      icon:
+        icon: sprites.svg#it-star-full
+        color: primary
+    - type: button
+      btnStyle: danger
+      label: Rounded icon Sm
+      size: sm
+      iconLeft: true
+      iconRounded: true
+      icon:
+        icon: sprites.svg#it-star-full
+        color: danger
+    - type: button
+      btnStyle: secondary
+      label: Rounded icon xs
+      size: xs
+      iconLeft: true
+      iconRounded: true
+      icon:
+        icon: sprites.svg#it-star-full
+        color: secondary
+  buttonSize:
+    - type: button
+      btnStyle: primary
+      label: Primary large
+      size: lg
+    - type: button
+      btnStyle: secondary
+      label: Secondary large
+      size: lg
+    - type: button
+      btnStyle: primary
+      label: Primary small
+      size: sm
+    - type: button
+      btnStyle: secondary
+      label: Secondary small
+      size: sm
+    - type: button
+      btnStyle: primary
+      label: Primary mini
+      size: xs
+    - type: button
+      btnStyle: secondary
+      label: Secondary mini
+      size: xs
+
+
+
+
