@@ -73,17 +73,17 @@ module.exports = {
       },
     },
     `@colliercz/gatsby-transformer-gitinfo`,
-    // {
-    //   resolve: "gatsby-plugin-matomo",
-    //   options: {
-    //     siteId: "1",
-    //     matomoUrl: `https://designers-italia.matomo.cloud/`,
-    //     siteUrl: "https://prossima.designers.italia.it",
-    //     matomoPhpScript: "matomo.php",
-    //     matomoJsScript: "matomo.js",
-    //     enableJSErrorTracking: true,
-    //   },
-    // },
+    {
+      resolve: "gatsby-plugin-matomo",
+      options: {
+        siteId: "1",
+        matomoUrl: `https://designers-italia.matomo.cloud/`,
+        siteUrl: "https://prossima.designers.italia.it",
+        matomoPhpScript: "matomo.php",
+        matomoJsScript: "matomo.js",
+        enableJSErrorTracking: true,
+      },
+    },
     /*{
       resolve: 'gatsby-plugin-htaccess',
       // docs here: https://www.npmjs.com/package/gatsby-plugin-htaccess
