@@ -1,12 +1,25 @@
 import '../scss/bootstrap-italia.scss'
-import { Alert, Button, Carousel, Collapse, Dropdown, Modal, Offcanvas, Popover, ScrollSpy, Tab, Toast, Tooltip } from 'bootstrap'
 
 import { loadPlugin } from './load-plugin'
-import initBootstrapItalia from './plugins/init'
+import init from './plugins/init'
 import loadFonts from './plugins/fonts-loader'
 import * as icons from './icons'
 
 import {
+  // Bootstrap
+  Alert,
+  Button,
+  Carousel,
+  Collapse,
+  Dropdown,
+  Modal,
+  Offcanvas,
+  Popover,
+  ScrollSpy,
+  Tab,
+  Toast,
+  Tooltip,
+  // Extra components
   Dimmer,
   Notification,
   Cookiebar,
@@ -33,9 +46,8 @@ import {
   Transfer,
 } from './bootstrap-italia.esm'
 
-initBootstrapItalia()
-loadFonts()
 loadPlugin(icons)
+init()
 
 export default {
   Alert,
@@ -74,4 +86,5 @@ export default {
   Transfer,
   UploadDragDrop,
   ValidatorSelectAutocomplete,
+  loadFonts,
 }
