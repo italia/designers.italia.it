@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 
 import jsyaml from "js-yaml"
 
-import Template from "../templates/tmpl-level-1-community"
+import Template from "../templates/tmpl-level-3"
 import { Seo } from "../components/seo/seo"
 
 const Page = ({ pageContext, location, data: { content } }) => {
