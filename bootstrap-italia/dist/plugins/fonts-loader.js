@@ -1,5 +1,5 @@
 // Create our stylesheet
-var fontsLoader = (path='/bootstrap-italia/dist/fonts') => {
+var fontsLoader = (path = '/node_modules/bootstrap-italia/dist/fonts') => {
   const styleNode = document.createElement('style');
   const __PUBLIC_PATH__ = window.__PUBLIC_PATH__ ? window.__PUBLIC_PATH__ : path;
   styleNode.innerHTML = `

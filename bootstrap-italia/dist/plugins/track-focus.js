@@ -35,5 +35,13 @@ class TrackFocus {
   }
 }
 
+/**
+ * ------------------------------------------------------------------------
+ * Data Api implementation
+ * ------------------------------------------------------------------------
+ */
+
+new TrackFocus();
+
 export { TrackFocus as default };
 //# sourceMappingURL=track-focus.js.map

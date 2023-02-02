@@ -1,6 +1,5 @@
-import 'accessible-autocomplete/dist/accessible-autocomplete.min.css';
 import accessibleAutocomplete from 'accessible-autocomplete';
-import BaseComponent from './base-component.js';
+import BaseComponent from 'bootstrap/js/src/base-component.js';
 
 const NAME = 'selectautocomplete';
 //const DATA_KEY = 'bs.selectautocomplete'

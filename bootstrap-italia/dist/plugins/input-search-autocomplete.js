@@ -2,7 +2,7 @@ import BaseComponent from 'bootstrap/js/src/base-component';
 import EventHandler from 'bootstrap/js/src/dom/event-handler';
 import InputLabel from './input-label.js';
 
-//import BaseComponent from './base-component.js'
+//import BaseComponent from 'bootstrap/js/src/base-component.js'
 
 const NAME = 'inputsearchautocomplete';
 const DATA_KEY = 'bs.inputsearchautocomplete';
