@@ -94,20 +94,25 @@ exports.onCreateNode = async ({
     (node.extension === 'yaml' ||
      node.extension === 'yml')
   ) {
-    createNode({
-      ...node,
-      fields: undefined,
-      id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
-      parent: null,
-      children: [],
-      internal: {
-        type: CONTENT_NODE_TYPE,
-        contentDigest: createContentDigest(node),
-      },
-      relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ''),
-      yaml: await loadNodeContent(node),
-    });
-
+    console.log(node.relativePath)
+    if (    
+      !node.relativePath.endsWith('-01-uso.yaml') &&
+      !node.relativePath.endsWith('-02-progettazione.yaml') &&
+      !node.relativePath.endsWith('-03-sviluppo.yaml')) {
+      createNode({
+        ...node,
+        fields: undefined,
+        id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
+        parent: null,
+        children: [],
+        internal: {
+          type: CONTENT_NODE_TYPE,
+          contentDigest: createContentDigest(node),
+        },
+        relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ''),
+        yaml: await loadNodeContent(node),
+      });
+    }
     // createNodeField({node, content: loadNodeContent(node)});
   }
 }
