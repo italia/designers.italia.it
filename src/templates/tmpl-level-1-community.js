@@ -29,7 +29,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
 
     let activePage = null
 
-    if (Pagedata.metadata.activeLabel) {
+    if (Pagedata.metadata?.activeLabel) {
       activePage = Pagedata.metadata.activeLabel
     }
 
@@ -45,18 +45,18 @@ const Template = ({children,Pagedata,pageContext,location}) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
-        { Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}/>}
+        { Pagedata.components?.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
+        { Pagedata.components?.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}/>}
 
-        { Pagedata.components.titleText && <TitleText {...Pagedata.components.titleText}/>}
+        { Pagedata.components?.titleText && <TitleText {...Pagedata.components.titleText}/>}
 
-        { Pagedata.components.highlightCardsLoop && Pagedata.components.highlightCardsLoop.map((hlc,index) => {
+        { Pagedata.components?.highlightCardsLoop && Pagedata.components.highlightCardsLoop.map((hlc,index) => {
           return(
             <HighlightCards key={"hcl-"+index} {...hlc}/>
           )
         })}
 
-        { Pagedata.components.highlightsLoop && Pagedata.components.highlightsLoop.map((hl,index) => {
+        { Pagedata.components?.highlightsLoop && Pagedata.components.highlightsLoop.map((hl,index) => {
           return(
             <Highlight key={"hl-"+index} {...hl}/>
           )
