@@ -141,6 +141,60 @@ components:
     #     color: secondary
     #     addonClasses: ms-1 flex-shrink-0
     cards:
+      - title: Principi e intenzioni
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "principi-e-intenzioni/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Il Design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione.
+        chips:
+          - color : secondary
+            label : Content
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+      - title: Accessibilità
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "accessibilita/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
+        chips:
+          - color : secondary
+            label : Content
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
       - title: Linguaggio
         # img: /images/600x400.png
         # alt: Descrizione immagine
@@ -167,38 +221,6 @@ components:
               color: secondary
           list:
             isShare: true
-
-      # - title: Tono di voce
-      #   # img: /images/600x400.png
-      #   # alt: Descrizione immagine
-      #   imgRatio: 16x9
-      #   imgPlaceholder: false
-      #   url: "tono-di-voce/"
-      #   fullHeight: true
-      #   rounded: true
-      #   text: |
-      #     Descrizione
-      #   chips:
-      #     - color : secondary
-      #       label : Argomento
-      #       url : "#"
-      #       blank: false
-      #     - color : secondary
-      #       label : Argomento
-      #       url : "#"
-      #       blank: false
-      #   share:
-      #     btnId: shareButtonCard1
-      #     button:
-      #       addonStyle: icon-only-drop
-      #       ariaLabel: Condividi
-      #       icon:
-      #         icon: sprites.svg#it-more-items
-      #         size: sm
-      #         color: secondary
-      #     list:
-      #       isShare: true
-    
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
   sectionsEditorial :
