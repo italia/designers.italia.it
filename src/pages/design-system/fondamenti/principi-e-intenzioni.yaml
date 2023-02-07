@@ -6,8 +6,8 @@ metadata:
     name: design-system-detail
 
 seo:
-  name: Linguaggio - Designers Italia
-  description : Progetta contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone.
+  name: Principi e intenzioni - Designers Italia
+  description : Scopri come il Design system del Paese rende la progettazione di servizi pubblici digitali più efficiente.
   image : null
   twitterImage: null
   canonical: null
@@ -54,9 +54,9 @@ lastUpdate:
 components:
   hero:
     background: null
-    title: Princìpi e intenzioni
+    title: Principi e intenzioni
     column: true
-    subtitle: Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone.
+    subtitle: Il Design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione.
    # pretext:
    #   icon:
    #     icon: sprites.svg#it-info-circle
@@ -76,7 +76,7 @@ components:
         - label : Fondamenti
           active: false
           url: /design-system/fondamenti/
-        - label : Princìpi e intenzioni
+        - label : Principi e intenzioni
           active: true
     share:
       btnId: shareButtonHero
@@ -124,14 +124,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer #C
+            label: Designer, Developer #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare #C
+            label: Progettare e sviluppare l'interfaccia utente #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -139,7 +139,15 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Content
+        - label: Progettazione servizi
+          url: "#"
+          color: primary
+          size: lg
+        - label: Accessibilità
+          url: "#"
+          color: primary
+          size: lg
+        - label: Cultura progettuale
           url: "#"
           color: primary
           size: lg
@@ -153,7 +161,7 @@ components:
     #       alt: Descrizione immagine grande
     - full: true
       noSpace: false
-      title: Scrivi per le persone
+      title: A cosa serve il Design System del Paese
       text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione      
       background: null
 
@@ -162,67 +170,78 @@ components:
         - name: TextImageCta
           title: 
           text: |
-            Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Le persone, infatti, **non leggono necessariamente dall’alto al basso e parola per parola**. 
+            Crediamo in una Pubblica Amministrazione vicina, semplice e utile alle persone di oggi e di domani, grazie a siti e servizi digitali progettati in modo collaborativo.
+            
+            Il Design system del Paese è uno degli strumenti pratici creati per progettare servizi pubblici digitali migliori.
+            
+            Tra questi, il [Design system del Paese] serve a:
 
-            Studi di monitoraggio oculare (eye-tracking) hanno dimostrato che le persone tendono a **scansionare blocchi di testo seguendo la forma di una F (F-pattern)**: tracciano una linea orizzontale lungo la parte superiore dello schermo, procedono poi in verticale lungo il lato sinistro alla ricerca di punti di interesse e procedono di nuovo in senso orizzontale.
+            ### Rendere coerente l'esperienza digitale del cittadino
 
-            ### Come le persone leggono gli schermi
+            Gli enti pubblici in Italia sono più di 22.000. Ciascuno di essi ha, in media, più di un sito internet e ogni ente ha l’autonomia di impostarli secondo le proprie necessità. Tuttavia, per le persone che fruiscono di questi servizi digitali, lo Stato è uno solo.
+            
+            Il Design system istituisce le fondamenta per rendere coerenti le esperienze di utilizzo dei servizi digitali, il linguaggio visivo e le modalità di interazione. La personalizzazione guidata dai design token consente comunque agli enti di comunicare la propria identità. 
 
-            Il linguaggio è una risorsa preziosa nell’intero ecosistema e ciclo di vita di un prodotto digitale. Ha il potere di **orientare e influenzare l’esperienza delle persone** su siti e servizi, favorendo **la comprensione delle informazioni e l’abilità di portare a termine procedure**. 
+            ### Avvicinare la Pubblica Amministrazione alle persone
             
-            È quindi importante che i testi per le interfacce, i contenuti ad esse correlati, documentazione, o gli altri contenuti attivati dalle interazioni degli utenti (email, notifiche, SMS, etc...) siano progettati prediligendo un linguaggio semplice e frasi brevi. 
-
-            ### Organizza le informazioni
+            La lingua usata sui siti e nei servizi digitali pubblici può essere molto lontana da quella con cui comunichiamo abitualmente. In molti casi, il linguaggio è così complesso e burocratico da impedire l’accesso al servizio stesso e, quindi, l’esercizio di un proprio diritto.
             
-            Aiuta le persone a trovare ciò che cercano sul tuo sito o servizio **organizzando le informazioni in base alle loro esigenze informative** e alla natura del touchpoint. Tieni sempre in considerazione le funzioni principali del sito o servizio, la natura dei contenuti da veicolare e le relazioni fra di essi.  
+            Il Design system contiene indicazioni pratiche sull’uso del linguaggio per chi progetta i testi delle interfacce, così da rendere comprensibili i servizi pubblici digitali alle persone che ne usufruiscono.
+  
+            ### Rendere efficiente la realizzazione
             
-            ### Scegli le parole giuste
+            Un design system è un insieme di componenti tecniche e la loro documentazione, costruita per rendere fluidi la progettazione, lo sviluppo e la relazione tra i due. Le stime più recenti parlano di [efficienze di oltre il 30% in progettazione](https://www.toptal.com/designers/design-systems/benefits-of-design-system) e di oltre il 45% in sviluppo. Più difficili da misurare, anche se indiscutibili, sono l’aumento della qualità del risultato finale e la riduzione dei bug.
             
-            Siti e servizi digitali della Pubblica Amministrazione sono usati ogni giorno da milioni di persone: **un’esperienza utente di qualità è un diritto per tutte e tutti**.  
+            Il Design system documenta in un unico luogo i componenti, le specifiche di uso e di accessibilità, per la progettazione e i contenuti e per lo sviluppo, senza soluzione di continuità.
             
-            - usa il linguaggio come veicolo di inclusione: le parole sono cruciali per fare in modo che messaggi e informazioni raggiungano **tutte le persone senza distinzioni**, e senza riferimenti non necessari ad appartenenze o identità di genere;
-            - **evita la cattiva pratica di riportare in UI testi concepiti per supporti analogici** e destinati a personale amministrativo o legale;
-            - **scrivi accessibile**: progetta testi pienamente accessibili anche per le persone con disabilità permanenti o temporanee, e/o per chi fruisce i contenuti con tecnologie assistive.
+            ### Cambiare la visione dell’accessibilità: da adempimento a opportunità
             
-            ### Prediligi chiarezza, brevità e consistenza
+            L’accessibilità, oltre a essere un dovere di legge ed etico, rende le interfacce digitali migliori. Anche nelle situazioni quotidiane - ad esempio, quando c’è troppa luce, gli occhi sono stanchi o si cercano informazioni sullo smartphone mentre si è in bus o in metro - le interfacce accessibili rendono la vita, di tutti, più semplice.
             
-            Ecco alcuni suggerimenti utili per progettare contenuti con un linguaggio chiaro, efficace ed essenziale:
+            Il Design system del Paese è costantemente progettato, testato e aggiornato per essere alla frontiera dell’accessibilità. Già oggi Boostrap Italia è più accessibile della libreria nativa Boostrap, la più usata nel mondo.
             
-            - usa **parole chiare e facili da comprendere**, prediligendo una sintassi semplice, forme verbali attive, linguaggio naturale;
-            - **evita di utilizzare tecnicismi, formalismi e lessico burocratico o legale** senza adeguata disambiguazione;
-            - **modera l’uso di inglesismi e forestierismi**, e laddove indispensabile, fornisci una traduzione italiana;
-            - prediligi **periodi brevi**: frasi troppo lunghe e complesse riducono i livelli di comprensibilità e leggibilità dei contenuti;
-            - **sii consistente**: progetta i contenuti rispettando alcune semplici regole di coerenza, sia stilistica (punteggiatura, uso delle maiuscole) che concettuale (se introduci un concetto assicurati che anche successivamente sia espresso in maniera coerente).
+            ### Diffondere la cultura della progettazione
             
-            ### Accompagna le interazioni
+            Diffondere la cultura della progettazione è la missione ultima del progetto Designers Italia. Le attività di comunicazione, di indirizzo normativo e di progettazione dei modelli di design possono accelerare e frenare in base al variare delle priorità del Paese. Il prodotto di qualità, invece, non si ferma mai e, dal basso, mostra nel pratico come fare bene.
             
-            Saper accompagnare le persone a interagire efficacemente con siti, servizi e procedure online è una questione di (buona) UX: **il linguaggio incide in maniera considerevole sulla qualità dell’esperienza utente** e per questo motivo ti proponiamo alcuni semplici suggerimenti per aumentare l’efficacia dei flussi di interazione del tuo sito o servizio: 
-
-            - usa un linguaggio **diretto e naturale**: impiega termini di uso comune, che possono essere comprensibili da persone con qualsisi livello di alfabetizzazione;
-            - **accompagna le azioni che avvengono in interfaccia con le parole giuste**: presta adeguata attenzione ai termini che usi nelle etichette dei pulsanti, nelle finestre modali, negli stepper o nei breadcrumb;
-            - dai prova di empatia **mettendoti nei panni delle persone**: rendi comprensibili e di reale aiuto messaggi di errore, pagine di atterraggio e “stati vuoti” dei componenti.
-
-            ### Usa una formattazione semplice
+            Il Design system del Paese vuole essere una didattica pratica sui temi in cui la Pubblica Amministrazione deve fare innovazione: accessibilità, inclusività, semplicità e riduzione delle diseguaglianze.
             
-            Per facilitare la lettura e la comprensibilità delle informazioni su schermo ricorda di:
-
-            - **allineare il testo a sinistra**, invece di giustificarlo;
-            - evitare di usare grassetto e corsivo **per interi periodi o paragrafi**;
-            - **evitare di sottolineare il testo**, a meno che non si tratti di link;
-            - usare **il maiuscolo solo per sigle e acronomi**;
-            - scrivere **le date per esteso**, ad esempio 2 gennaio 2023.
+            ### Fare open, per fare meglio
+            
+            Spesso, nel mondo del software sviluppato per il pubblico, l’open source viene confuso con gratuità, perdita di controllo, regalo alla concorrenza o rischio per la sicurezza. L'open source è, invece, un modo per migliorare il codice e renderlo più sicuro e efficiente, nonché un’opportunità per il modello di business.
+            
+            Il Design system del Paese nasce in ambiente open e resta un patrimonio di tutti: viene aggiornato in parte centralmente, in parte dalla community.
 
   sectionsEditorial2 :
     - full: true
       noSpace: true
-      title: Testa e ottimizza i contenuti
-      text: |
-            Fai evolvere la qualità dei contenuti in base ai riscontri delle persone 
+      title: Manteniamo gli asset del Paese, insieme
+      #text: |
+            #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone 
       components:
         - name: TextImageCta
           text: |
-            I contenuti e il linguaggio dovrebbero sempre essere progettati - e ottimizzati in maniera iterativa e continua - sulla base di analisi e test sugli utenti finali del touchpoint. 
-
-            Esistono molti metodi per testare ipotesi di contenuto in pre-produzione, contenuti già esistenti o per valutare se il linguaggio utilizzato corrisponde alle attese e alle esigenze informative e interattive delle persone cui il sito o servizio sono destinati. 
+            Il Design system del Paese contiene la libreria UI, con i suoi componenti in Figma. Ogni major release sarà resa disponibile come esportazione in Sketch, in formato open-source. Entrambe le versioni sono curate dal team Designers Italia.
             
-            Si consiglia di svolgere test di usabilità moderati, preparando attività da svolgere con domande aperte.
+            Il Design system supporta lo sviluppo in diversi modi e contiene una serie di librerie di sviluppo: 
+            
+            - Boostrap Italia, mantenuta da Designers Italia;
+            - Design React Kit, mantenuta dalla community;
+            - Design Angular Kit, mantenuta dalla community.
+            
+  sectionsEditorial3 :
+    - full: true
+      noSpace: true
+      title: Come supportiamo l’adozione
+      #text: |
+            #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone 
+      components:
+        - name: TextImageCta
+          text: |
+            Ad oggi, circa 2300 Pubbliche Amministrazioni richiamano almeno una delle librerie di sviluppo.
+            
+            Lavoriamo per accrescere la consapevolezza del valore di un'esperienza coerente per il cittadino presso tutti i 22.000 enti pubblici e aiutiamo a implementarla tramite il Design System del Paese.
+       
+    
+
+
