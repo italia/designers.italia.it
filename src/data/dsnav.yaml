@@ -14,16 +14,19 @@ tag:
 list:
   - label: Come iniziare
     url: "#"
-    disabled: true
-    # subList:
-    #   - label: — Panoramica come iniziare
-    #     url: "#"
-    #   - label: Per designer
-    #     url: "#"
-    #   - label: Per developer
-    #     url: "#"
-    #   - label: "..."
-    #     url: "#"
+    # disabled: true
+    subList:
+      - label: — Panoramica come iniziare
+        disabled: true
+        url: "#"
+      - label: Per designer
+        url: "/design-system/come-iniziare/per-designer"
+      - label: Per developer
+        disabled: true
+        url: "#"
+      - label: Per i curiosi
+        disabled: true
+        url: "#"
   - label: Fondamenti
     url: "#"
     subList:
@@ -31,10 +34,10 @@ list:
         url: "/design-system/fondamenti/"
       # - label: Template scheda fondamento
       #   url: "/design-system/fondamenti/fondamento"
-      - url: "#"
+      - url: "/design-system/fondamenti/principi-e-intenzioni"
         disabled: true
         label: Principi e intenzioni
-      - url: "#"
+      - url: "/design-system/fondamenti/accessibilita"
         disabled: true
         label: Accessibilità
       - url: "#" #"/design-system/fondamenti/tono-di-voce"
