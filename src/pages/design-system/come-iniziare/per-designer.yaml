@@ -7,7 +7,7 @@ metadata:
 
 seo:
   name: Per designer - Designers Italia
-  description : Le istruzioni su come usare al meglio le risorse del design system del Paese per progettare esperienze e interfacce migliori
+  description : Scopri come utilizzare gli strumenti pensati per i designer di interfacce ed esperienze dei servizi pubblici
   image : null
   twitterImage: null
   canonical: null
@@ -56,14 +56,14 @@ components:
     background: null
     title: Per designer
     column: true
-    subtitle: Le istruzioni su come usare al meglio le risorse del design system del Paese per progettare esperienze e interfacce migliori
+    subtitle: Scopri come utilizzare gli strumenti pensati per i designer di interfacce ed esperienze dei servizi pubblici
     pretext:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
       text: In breve
     text: |
-      Scopri le indicazioni di come questa documentazione è pensata per il profilo del designer, dove trovare le ultime versioni del UI Kit, nei vari formati a disposizione, e come utilizzarlo al meglio. 
+      Dove trovare le ultime versioni del UI Kit, nei vari formati a disposizione, come iniziare ad usarlo o aggiornarlo, approfondimenti sui temi dell'accessibilità, dei design token. E apertura sui workflow di cura del UI Kit per partecipare consapevolmente. 
     breadcrumbs :
       separator : '/'
       items :
@@ -153,51 +153,137 @@ components:
           size: lg
 
   sectionsEditorial :
-    - fullColumn: true
-      noSpace: true
+
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    
+    - full: true
+      # noSpace: true
+      title: Scopri e usa il UI Kit
+      text: Lo strumento a disposizione dei designer per costruire e prototipare interfacce ed esperienze di siti e servizi pubblici digitali
+      background: null
       components:
-        - name: ImgFull
-          img: /images/image-icons-fullwidth.jpg
-          alt: Descrizione immagine grande
+        
+        - name: TextImageCta
+          title: Versione corrente
+          # text: |
+          ctas:
+          - label: Vai alla community @designersitalia #C
+            url: https://figma.com/@designersitalia #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Scopri e usa la versione corrente #C
+            url: https://www.figma.com/community/file/1105848677422572920 #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+      
+        - name: TextImageCta
+          title: Tutti i formati disponibili
+          headingLevel: 4
+          # text: |
+          ctas:
+          - label: Vai alla repository GitHub dedicata #C
+            url: "#" #M
+            blank: false #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Come utilizzarlo in Figma
+          text: |
+            - Vai sulla pagina della [versione corrente](https://www.figma.com/community/file/1105848677422572920) ↗
+            - copia il UI Kit nei **draft** del tuo account
+
+            #### Se hai un account free:
+             non è possibile aggiungerlo come libreria, ma puoi utilizzarlo con approccio "playground":
+            - **aggiungi una nuova pagina**, o utilizza la pagina Playground, per lavorare nel file appena duplicato
+            - **usa solo gli stili presenti** nel kit
+            - **cerca e trascina i componenti** della libreria dal pannello Asset 
+
+            **Non modificare nulla delle altre pagine del kit.** 
+
+            #### Se hai un account Pro:
+            - **sposta il UI Kit dai tuoi draft in un team**
+            - **pubblica stili e componenti** della tua copia appena spostata
+            - **crea un nuovo progetto**, o apri il progetto dove vuoi usare i componenti del UI Kit
+            - **aggiungi al progetto come libreria**, dal pannello Asset, la tua copia del UI Kit appena pubblicata
+
+
+            ### Come aggiornare all'ultima versione
+
+            - Vai sulla pagina della [versione corrente](https://www.figma.com/community/file/1105848677422572920) ↗
+            - copia il UI Kit nei **draft** del tuo account
+            - **sposta il UI Kit dai tuoi draft nel team** dove presente la precedente versione
+            - **rimuovi** la precedente versione
+            - **pubblica stili e componenti** dalla nuova versione
+            - **apri il progetto** da aggiornare
+            - **risulterà una libreria mancante** nel pannello Asset: **seleziona e scegli quella appena pubblicata**  
+
+            **Stili e componenti verranno ricollegati automaticamente.**
+
+        - name: TextImageCta
+          title: Se utilizzi altre soluzioni, Sketch/Adobe XD, …
+          text: |
+            _In stesura_
+    
+    
     - full: true
       noSpace: true
-      title: Lorem ipsum
-      text: Eventuale lead paragraph
+      title: Standard, open design e partecipazione
+      text: Processi e risorse per i processi di gestione del UI Kit e delle risorse per designer del design system del Paese
       background: null
       components:
         - name: TextImageCta
-          title: Lorem ipsum
+          title: Accessibilità
           text: |
-            Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
-
-            Da capire come implementare il do’s and dont’s, qui sotto vive solo come segnaposto per ora. Da capire se deve essercene uno per ogni caso d’uso o uno generale. Pensare a scalabilità, mvp iniziale, e modularità. Target sempre misto in questa prima scheda d’uso, non dimenticarlo.
-
-          # ![Descrizione immagine](https://via.placeholder.com/1200x500?text=Placeholder)
+            _In stesura_
+          ctas:
+          - label: Vai al fondamento accessibilità #C
+            url: "/design-system/fondamenti/accessibilita/" #M
+            blank: false #M #C true if new tab for external links
+            # disabled: true
+            icon: 
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         - name: TextImageCta
+          title: Design Tokens
           text: |
-            ### Lorem ipsum
+            _In stesura_
 
-            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
-            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
-            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-            ### Lorem ipsum
-
-            - Sed ut [perspiciatis unde](#) omnis iste natus error sit voluptatem accusantium doloremque laudantium;
-            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo;
-            - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-  sectionsEditorial2 :
-    - full: true
-      noSpace: true
-      title: Lorem Ipsum
-      text: |
-            Eventuale lead paragraph
-      components:
         - name: TextImageCta
-          title: Lorem ipsum
+          title: Workflow di design e revisione
           text: |
-            Contenuto di sezione, divisibile ancora in sotto capitoletti seguendo l’ordine h corretto, da capire se linkare varianti sopra e/o avere anteprime e/o avere immagini quando di parla di un caso x.
+            _In stesura_
 
-            Da capire come implementare il do’s and dont’s, qui sotto vive solo come segnaposto per ora. Da capire se deve essercene uno per ogni caso d’uso o uno generale. Pensare a scalabilità, mvp iniziale, e modularità. Target sempre misto in questa prima scheda d’uso, non dimenticarlo.
+        - name: TextImageCta
+          title: Workflow di rilascio versioni
+          text: |
+            _In stesura_
+
+          
