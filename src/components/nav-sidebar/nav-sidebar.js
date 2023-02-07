@@ -43,7 +43,7 @@ const NavSidebar = ({
 
       if (item.subList) {
 
-        subLinks = item.subList.map((subItem,index) => {
+        subLinks = item.subList.map((subItem,indexSub) => {
 
           if (subItem.label === page) {
             expandSublinks = true
@@ -57,7 +57,7 @@ const NavSidebar = ({
           }
 
           return (
-             <li key={"subl-"+index}>
+             <li key={"subl-"+indexSub}>
               <Link to={subItem.url} className={subLiStyle} activeClassName={GATSBY_ACTIVE}><span>{subItem.label}</span></Link>
             </li>
           )
