@@ -1,0 +1,245 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: design-system-index
+
+seo:
+  name: Panoramica come iniziare
+  description : Scopri i primi passi da compiere per progettare con il design system
+  image : null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/come-iniziare/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: Pagina aggiornata il
+  date: 24 maggio 2022
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: light
+    title: Come iniziare
+    column: true
+    subtitle: Scopri i primi passi da compiere per progettare con il design system
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve
+    text: |
+      Lorem ipsum
+    breadcrumbs :
+      separator : '/'
+      items :
+        - label : Inizio
+          active: false
+          url: /
+        - label : Design System
+          active: false
+          url: /level1/
+        - label : Come iniziare
+          active: true
+    share:
+      btnId: shareButtonHero
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      column: true
+      titleSr: Metadati e link per approfondire
+      tagsLabel : Utili per
+      color : secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips:
+        - label: UI Kit
+          url: "#"
+          color: primary
+          size: lg
+        - label: Bootstrap Italia
+          url: "#"
+          color: primary
+          size: lg
+        - label: Design system
+          url: "#"
+          color: primary
+          size: lg
+   
+
+  # /////////// COMPONENT LIST FROM HERE ////////////
+  filterCards:
+    id: fundamentCards
+    title: Esplora le schede
+    # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
+    col2: true
+    # button:
+    #   type: button
+    #   btnStyle: outline-secondary justify-content-center w-100
+    #   label: Filtra
+    #   iconRight: true
+    #   icon:
+    #     icon: sprites.svg#it-funnel
+    #     color: secondary
+    #     addonClasses: ms-1 flex-shrink-0
+    cards:
+      - title: Per designer
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "per-designer/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Le istruzioni su come usare al meglio le risorse del design system del Paese per progettare esperienze e interfacce migliori.
+        chips:
+          - color : secondary
+            label : Content
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+      # - title: Tono di voce
+      #   # img: /images/600x400.png
+      #   # alt: Descrizione immagine
+      #   imgRatio: 16x9
+      #   imgPlaceholder: false
+      #   url: "tono-di-voce/"
+      #   fullHeight: true
+      #   rounded: true
+      #   text: |
+      #     Descrizione
+      #   chips:
+      #     - color : secondary
+      #       label : Argomento
+      #       url : "#"
+      #       blank: false
+      #     - color : secondary
+      #       label : Argomento
+      #       url : "#"
+      #       blank: false
+      #   share:
+      #     btnId: shareButtonCard1
+      #     button:
+      #       addonStyle: icon-only-drop
+      #       ariaLabel: Condividi
+      #       icon:
+      #         icon: sprites.svg#it-more-items
+      #         size: sm
+      #         color: secondary
+      #     list:
+      #       isShare: true
+    
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
+  # sectionsEditorial :
+  # - fullColumn: true
+  #   noSpace: true
+  #   components:
+  #     - name: ImgFull
+  #       img: /images/design-system/fondamenti.jpg 
+  #       alt: ""
+  
+  sectionsEditorial2 :
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    - full: true
+      noSpace: true
+      # title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      components:
+        - name: TextImageCta
+          noSpace: true
+          title: 🟡 Presto disponibile
+          text: |
+            Stiamo lavorando all'evoluzione del Design system del Paese e sarà presto disponibile.
+            
+            Puoi contribuire anche tu proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare il kit UI e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento alla documentazione del framework di sviluppo Bootstrap Italia.
+
+    - full: true
+      noSpace: true
+      background: null
+      buttons:
+        - label : Vai al kit UI nella community Figma
+          blank: true
+          btnStyle: primary me-3
+          url: https://www.figma.com/community/file/1105848677422572920
+          addonStyle: mb-3
+          icon:
+            icon: sprites.svg#it-figma
+            size: sm
+            color: white
+            align: middle
+            addonClasses: ms-2
+        - label : Vai al sito di documentazione di Bootstrap Italia
+          btnStyle: primary me-3
+          url: https://italia.github.io/bootstrap-italia/
+          blank: true
+          addonStyle: mb-3 
+          icon:
+            icon: sprites.svg#it-external-link
+            size: sm
+            color: white
+            align: middle
+            addonClasses: ms-2
+
