@@ -13,7 +13,7 @@ const Tab = ({
   tab03
 }) => {
   return (
-    <div className="tab pt-5 pt-lg-6">
+    <div className="tab pt-5 /*pt-lg-6*/">
       <div className="">
         <ul className="nav nav-tabs nav-tabs-cards auto" id="card-simple" role="tablist">
           <li className="nav-item-filler flex-grow-0 px-3 p-md-0"></li>
