@@ -32,36 +32,44 @@ componentVariant:
   #         color: primary
 
 sectionsEditorial:
+
   - full: true
     noSpace: true
-    title: Come usarlo al meglio
-  - full: true
-    noSpace: true
-    background: null
     components:
       - name: TextImageCta
         noSpace: false
-      - name: TextImageCta
-        noSpace: true
-        # title: In lavorazione
+        title: Quando usarlo
+        headingLevel: 2
         text: |
-          *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
-          Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
+          I pulsanti comunicano che l’interazione dà il via a un’azione o a un evento. Non dovrebbero essere utilizzati come elementi di navigazione. 
+
+      
+  - full: true
+    noSpace: true
+    components:
       - name: TextImageCta
-        noSpace: true
-        title: Va bene
+        noSpace: false
+        title: Come usarlo
+        headingLevel: 2
         text: |
-         *In stesura*
-      - name: TextImageCta
-        noSpace: true
-        title: Non va bene
-        text: |
-         *In stesura*
-      - name: TextImageCta
-        noSpace: true
-        title: Considerazioni sui contenuti
-        text: |
-         *In stesura*
+          - Usa la variante primary per valorizzare l’azione principale
+          - Usa la variante secondary per valorizzare l’azione secondaria 
+          - Usa pulsanti disabilitati con moderazione, assicurandoti che per l’utente sia chiaro come attivarli
+          - Per comunicare senza ambiguità la gerarchia delle azioni generate dai pulsanti, usa le varianti di grandezza e tipologia. 
+          - Usa un pulsante con icona per aggiungere un’informazione visiva all’interazione (es. pulsante di accesso ad area riservata)
+
+          #### Attenzione a
+          - Non usare più di un pulsante primary nello stesso contesto di azione
+          - Non usare pulsanti primary per azioni di valore secondario 
+          - Non usare i pulsanti all’interno di paragrafi di testo
+          
+          #### Buone pratiche sui contenuti
+          - Le etichette di testo devono comunicare in maniera immediata, chiara e senza ambiguità il significato dell’azione
+          - Non usare etichette di testo troppo lunghe
+          - Prediligi etichette di testo che fanno riferimento a una sola azione alla volta
+          - Usa la seconda persona singolare (es. "Aggiungi un servizio") 
+          - Usa la prima persona singolare nel caso di accettazione di termini e condizioni o modali informative (es. "Accetto" o "Ho capito")
+          - I pulsanti con sola icona potrebbero generare ambiguità: se possibile, aggiungi sempre un’etichetta di testo
 
   - full: true
     noSpace: false
