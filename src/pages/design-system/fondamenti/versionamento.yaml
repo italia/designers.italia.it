@@ -155,15 +155,129 @@ components:
     #     - name: ImgFull
     #       img: /images/image-icons-fullwidth.jpg
     #       alt: Descrizione immagine grande
+    # - full: true
+    #   noSpace: false
+    #   # title: Scrivi per le persone
+    #   # text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione      
+    #   background: null
+
+    #   components:
+
     - full: true
       noSpace: false
-      # title: Scrivi per le persone
-      # text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione      
+      title: Versionamento semantico
+      text: Un insieme di regole che permettono di manutenere ed evolvere con trasparenza e responsabilità
       background: null
+      components:
+        - name: TextImageCta
+          title: Come costruiamo i "numeri versione"
+          text: |
+            Seguiamo le indicazioni per il versionamento semantico su tutte le risorse del design system, siano di progettazione, sviluppo o documentazione. 
+            
+            Convinti che la trasparenza dei processi che sottendono la cura e gestione delle risorse del design system, abilitata da come sono costruiti i "numeri versione", sia strumento importante per la sostenibilità e la scalabilità nel tempo dell'intero progetto.
 
+            È possibile seguire lo stato delle risorse leggendo il numero versione: ad esempio "1.0.0-alpha.2" indicherà la versione MAJOR "1", MINOR "0" e PATCH "0", in una seconda iterazione "2" del suo stato "alpha", una pre-release quindi in lavorazione dove tutto può ancora cambiare ed evolvere. 
+            Per la definizione di MAJOR, MINOR e PATCH si rimanda alla guida sul versionamento semantico (semver) che segue.
+          ctas:
+          - label: Scopri la guida al versionamento semantico (semver) #C
+            url: https://semver.org/lang/it/ #M
+            blank: true #M #C true if new tab for external links
+            # disabled: true
+            icon: 
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+    - full: true
+      noSpace: true
+      title: Stato delle risorse
+      id: ComponentStatus
+      text: Le versioni correnti di tutte le risorse
+      background: null
       components:
 
-        - name: TextImageCta
-          title: 
-          text: |
-            _In stesura_
+        - name: Table
+          # title: Stato dell'accessibilità
+          responsive: table-responsive-md
+          head:
+            - text: Risorsa
+            - text: Versione corrente
+            - text: Changelog
+          rows:
+            - cols:
+              - text: Documentazione (questo sito)
+                scope: row
+              - tag:
+                  label: 1.0.0-alpha.2
+                  addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+              - simpleCta :
+                  # label: Kit
+                  # url: https://www.figma.com/community/file/1105848677422572920
+                  # blank: true
+                  # screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                  # icon:
+                  #   icon: sprites.svg#it-figma
+                  #   size: sm
+
+            - cols:
+              - text: UI Kit (design)
+                scope: row
+              - tag:
+                  label: 3.0.0-beta.3
+                  addonClasses: ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+              - simpleCta :
+                  label: 'Pagina "Intro & release notes"'
+                  url: https://www.figma.com/community/file/1105848677422572920
+                  blank: true
+                  screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-figma
+                    size: sm
+
+            - cols:
+              - text: Bootstrap Italia
+                scope: row
+              - tag:
+                  label: 2.3.2
+                  addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+              - simpleCta :
+                  label: "Schede rilascio su GitHub" 
+                  blank: true
+                  url: https://github.com/italia/bootstrap-italia/releases
+                  screenReaderText: " (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-external-link
+                    size: sm
+
+            # - cols:
+            #   - text: React 
+            #     scope: row
+            #   - tag:
+            #       label: Da rivedere
+            #       addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+            #   - simpleCta :
+            #       label: Scheda storybook
+            #       url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-accordion--page
+            #       blank: true
+            #       screenReaderText: " (si apre in una nuova finestra)"
+            #       icon:
+            #         icon: sprites.svg#it-external-link
+            #         size: sm
+            # - cols:
+            #   - text: Angular 
+            #     scope: row
+            #   - tag:
+            #       label: Non presente
+            #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+            #   - text: null
+              
+            # - cols:
+            #   - text: Vue 
+            #     scope: row
+            #   - tag:
+            #       label: Non presente
+            #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+            #   - text: null
