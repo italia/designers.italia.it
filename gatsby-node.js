@@ -3,12 +3,6 @@ const { createRemoteFileNode,  } = require("gatsby-source-filesystem")
 const { fetchDataFiles } = require('./server/fetchDataFiles')
 const { findValues } = require('./server/utils/findValues')
 
-const STATIC_ASSET_PATH = __dirname + '/static'
-
-const { simpleGit } = require('simple-git');
-var path = require('path');
-const fs = require('fs')
-
 const isRemoteAsset= (assetPath) => {
   return assetPath.startsWith('http')
 }
@@ -94,69 +88,19 @@ exports.onCreateNode = async ({
     (node.extension === 'yaml' ||
      node.extension === 'yml')
   ) {
-    console.log(node.relativePath)
-    if (    
-      !node.relativePath.endsWith('-01-uso.yaml') &&
-      !node.relativePath.endsWith('-02-progettazione.yaml') &&
-      !node.relativePath.endsWith('-03-sviluppo.yaml')) {
-      createNode({
-        ...node,
-        fields: undefined,
-        id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
-        parent: null,
-        children: [],
-        internal: {
-          type: CONTENT_NODE_TYPE,
-          contentDigest: createContentDigest(node),
-        },
-        relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ''),
-        yaml: await loadNodeContent(node),
-      });
-    }
-    // createNodeField({node, content: loadNodeContent(node)});
-  }
-}
-
-exports.onCreatePage = async({ page, actions }) => {
-  const { createPage, deletePage } = actions
-  console.log(`📑 Generating ${page.path}`);
-  if (page.context.lastmodified === undefined) {
-    let yamlPath = path.join('src', 'pages', `${page.path.replace(/^\/|\/$/g, '')}.yaml`)
-    try {
-      if (!fs.existsSync(yamlPath)) {
-        yamlPath = path.join('src', 'pages', `${page.path.replace(/^\/|\/$/g, '')}`, '/', 'index.yaml')
-      }
-    } catch(err) {
-      return
-    }
-    const logOptions = {
-      file: yamlPath,
-      n: 1,
-      format: {
-        date: `%ai`,
-        authorName: `%an`,
-        authorEmail: "%ae"
-      }
-    };
-    let logs = []
-    try {
-      logs = await simpleGit().log(logOptions)
-      if (!logs.latest) {
-        return
-      }
-    } catch(err) {
-      return
-    }
-    deletePage(page)
-    createPage({
-      ...page,
-      context: {
-        ...page.context,
-        lastmodified: new Date(logs.latest.date).toLocaleDateString(
-          'it-IT',
-          { year: 'numeric', month: 'long', day: 'numeric' }
-        )
+    createNode({
+      ...node,
+      fields: undefined,
+      id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
+      parent: node.id,
+      children: [],
+      internal: {
+        type: CONTENT_NODE_TYPE,
+        contentDigest: createContentDigest(node),
       },
-    })
+      relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ''),
+      yaml: await loadNodeContent(node),
+    });
+    // createNodeField({node, content: loadNodeContent(node)});
   }
 }

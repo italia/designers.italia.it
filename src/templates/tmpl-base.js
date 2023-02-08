@@ -20,7 +20,7 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
 
-const Template = ({children, Pagedata, location, pageContext}) => {
+const Template = ({children, Pagedata, location, pageContext, lastModified}) => {
 	return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre}/>
@@ -36,7 +36,7 @@ const Template = ({children, Pagedata, location, pageContext}) => {
       <main id="main">
         {children}
         {/* {Pagedata.lastUpdate ? <LastUpdate {...Pagedata.lastUpdate} /> : null } */}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
+        {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>

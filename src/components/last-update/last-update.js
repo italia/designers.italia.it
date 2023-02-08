@@ -11,10 +11,9 @@ const LastUpdate = ({
   licence,
   edit,
   column,
-  lastmodified,
+  lastModified,
   noPadding
 }) => {
-
   let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/${process.env.GATSBY_BRANCH}/src/pages/`  // < fallback if not trackable via pathname let's go to repo root...
   let pathYaml = ''
   if (pathname) {
@@ -41,7 +40,10 @@ const LastUpdate = ({
           <div className={columnStyle}>
             <div className ={paddingStyle}>
               <p className="">
-                <small>{title} {lastmodified}
+                <small>{title} {new Date(lastModified).toLocaleDateString(
+                      'it-IT',
+                      { year: 'numeric', month: 'long', day: 'numeric' }
+                    )}
                   <Link
                     to={licence.url}
                     target={licence.blank ? "_blank" : undefined}

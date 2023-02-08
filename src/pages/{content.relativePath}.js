@@ -29,20 +29,28 @@ const TEMPLATES = {
 const Page = ({ pageContext, location, data: { content } }) => {
   const Pagedata = jsyaml.load(content.yaml)
   const Template = Pagedata.metadata.template ? TEMPLATES[Pagedata.metadata.template.name] : TemplateBase
+  const lastModified = content.parent.fields.gitLogLatestDate
   return(
-    <Template Pagedata={Pagedata} pageContext={pageContext} location={location}>
+    <Template Pagedata={Pagedata} pageContext={pageContext} location={location} lastModified={lastModified}>
       {/* place extra components / HTML here */}
     </Template>
   )
 }
 
 export const query = graphql`
- query ($id: String!) {
-   content(id: { eq: $id }) {
-     id
-     yaml
-   }
- }
+  query ($id: String!) {
+    content(id: { eq: $id }) {
+      id
+      yaml
+      parent {
+        ... on File {
+          fields {
+            gitLogLatestDate
+          }
+        }
+      }
+    }
+  }
 `
 
 export default Page

@@ -30,7 +30,7 @@ import BannerTextCta from "../components/banner-text-cta/banner-text-cta"
 import Numbers from "../components/numbers/numbers"
 import ImageIcons from "../components/image-icons/image-icons"
 
-const Template = ({children,Pagedata,pageContext,location}) => {
+const Template = ({Pagedata, pageContext, location, lastModified}) => {
 	return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre}/>
@@ -82,7 +82,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
               }
             </BannerTextCta>
         }
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
+        {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>

@@ -24,7 +24,7 @@ import skipLinksData from "../data/skiplinks.yaml"
 import dsNav from "../data/dsnav.yaml"
 
 
-const Template = ({Pagedata,pageContext,location}) => {
+const Template = ({Pagedata,pageContext,location, lastModified}) => {
   const variantMock = require(`../data/content/design-system/componenti/${Pagedata.metadata.json}`)
 	return (
     <div id="app">
@@ -48,7 +48,7 @@ const Template = ({Pagedata,pageContext,location}) => {
                 tab02={Pagedata.tabs[1]}
                 tab03={Object.assign({}, Pagedata.tabs[2], { variants: variantMock })}
               />
-              {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
+              {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
             </main>
           </div>
         </div>
