@@ -13,6 +13,7 @@ import HeaderCenter from "../components/header-center/header-center"
 import HeaderNav from "../components/header-nav/header-nav"
 import LastUpdate from "../components/last-update/last-update"
 import Feedback from "../components/feedback/feedback"
+import Tab from "../components/tab/tab"
 
 import NavSidebar from "../components/nav-sidebar/nav-sidebar"
 import Hero from "../components/hero/hero"
@@ -22,7 +23,9 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 import dsNav from "../data/dsnav.yaml"
 
-const Template = ({children,Pagedata,pageContext,location}) => {
+
+const Template = ({Pagedata,pageContext,location}) => {
+  const variantMock = require(`../data/content/design-system/componenti/${Pagedata.metadata.json}`)
 	return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre}/>
@@ -40,9 +43,11 @@ const Template = ({children,Pagedata,pageContext,location}) => {
             <NavSidebar page={Pagedata.components.hero.title} {...dsNav}/>
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
-
-              {children}
-
+              <Tab
+                tab01={Object.assign({}, Pagedata.tabs[0], { variants: variantMock })}
+                tab02={Pagedata.tabs[1]}
+                tab03={Object.assign({}, Pagedata.tabs[2], { variants: variantMock })}
+              />
               {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
             </main>
           </div>

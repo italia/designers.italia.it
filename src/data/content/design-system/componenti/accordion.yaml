@@ -2,6 +2,7 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata: 
+  json: accordion.json
   template:
     name: design-system-detail
     
@@ -17,7 +18,6 @@ lastUpdate:
   column: true
   noPadding: true
   title: Pagina aggiornata il
-  date: 24 maggio 2022
   licence:
     label: Licenza CC BY SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
@@ -29,27 +29,26 @@ lastUpdate:
     blank: true
   edit:
     label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
     icon:
       icon: sprites.svg#it-pencil
       size: sm
       color: primary
     blank: true
 
-navPreFooter:
-  navOtherPrevNext:
-    next:
-      label: Next page
-      url: "#"
-      blank: false
-      specular: true
-      icon:
-        icon: "sprites.svg#it-arrow-right"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 ms-3
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
 
 components:
   hero:
@@ -71,7 +70,7 @@ components:
       btnId: shareButtonHero
       button:
         label: Condividi
-        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
+        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
         icon:
           icon: sprites.svg#it-more-items
           size: sm
@@ -103,3 +102,495 @@ components:
 
   tab:
     - full: true
+
+tabs:
+
+  - title: Uso e accessibilità
+    componentVariant:
+      id: componentAnteprimaUso
+      idPrefix: cAU
+      title: Anteprima
+      accordionOpen: false
+      # XXX Accordion datas and viewer datas to move to /data/ folder... unique for all the components
+      accordionLabel: "Codice Bootstrap Italia"
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
+      accordionSrLabel: Apri la documentazione del componente sul sito Boostrap Italia
+      accordionSrCopyLabel: Copia negli appunti il codice del componente Bootstrap Italia
+      # viewer: # XXX ICONS FOR RESPONSIVE PREVIEW
+      #   responsiveButtons:
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Mobile
+      #       icon:
+      #         icon: sprites.svg#it-telephone
+      #         color: primary
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Laptop
+      #       icon:
+      #         icon: sprites.svg#it-software
+      #         color: primary
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Desktop
+      #       icon:
+      #         icon: sprites.svg#it-presentation
+      #         color: primary
+
+    sectionsEditorial:
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Quando usarlo
+            headingLevel: 2
+            text: |
+              Il componente Accordion permette di espandere e collassare delle sezioni con contenuti molto lunghi e non principali. L’intestazione delle sezioni dà una panoramica dei contenuti e permette all’utente di scegliere quali leggere. 
+          
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Come usarlo
+            headingLevel: 2
+            text: |
+              - Per ridurre lo scorrimento di contenuti testuali lunghi e non cruciali, soprattutto su mobile.
+              - Per dare un’anteprima di contenuti correlati tra loro.
+              - Per organizzare e collegare contenuti simili che si trovano su altre pagine.
+              - Per permettere all’utente di mostrare o nascondere contenuti che gli sono rilevanti.
+
+              #### Attenzione a
+              - Non nascondere in un accordion informazioni importanti che devono essere lette dagli utenti.
+              - Non usare l’accordion su pagine che devono essere stampate.
+              - Non usare l’accordion per contenuti molto articolati graficamente, ad esempio con immagini e icone.
+              
+              #### Buone pratiche sui contenuti
+              - I titoli delle sezioni dell’accordion devono essere il più breve possibile, rimanendo comunque chiari e descrittivi del contenuto della sezione.
+              - Ogni titolo deve essere formattato come un heading (H2-H4) appropriato all’informazione dell’architettura della pagina.
+              - Il contenuto di sezione può essere diviso in paragrafi e includere sottotitoli di paragrafo, se necessario.
+
+              #### Alternative a questo componente
+              - **Tabs**: mostrano i contenuti senza spingere altre sezioni verso il fondo della pagina e sono utili quando l’utente deve passare velocemente da una sezione all’altra.
+              - **Collapse**: visivamente meno prominente, utile quando ci sono una o due sezioni di contenuti brevi e meno importanti.
+
+      - full: true
+        noSpace: false
+        title: Accessibilità
+        background: null
+        text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
+        components:
+          - name: Table
+            # title: Stato dell'accessibilità
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                - text: Visivamente accessibile
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                - text: Amichevole con lettori di schermo
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                - text: Navigabile
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                - text: Comprensibile
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - text: Comprensibile, prevedibile, gestione semplice dell’errore
+
+          - name: TextImageCta
+            # title: Feedback
+            headingLevel: 4
+            text: |
+              Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
+            ctas:
+            - label: Apri una issue su Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues #M
+              blank: true #M #C true if new tab for external links
+              icon: 
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
+      - full: true
+        noSpace: true
+        title: Stato del componente
+        id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
+        components:
+
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React 
+                  scope: row
+                - tag:
+                    label: Da rivedere
+                    addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda storybook
+                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-accordion--page
+                    blank: true
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              # - cols:
+              #   - text: Angular 
+              #     scope: row
+              #   - tag:
+              #       label: Non presente
+              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+              #   - text: null
+                
+              # - cols:
+              #   - text: Vue 
+              #     scope: row
+              #   - tag:
+              #       label: Non presente
+              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+              #   - text: null
+      
+          - name: TextImageCta
+            text: |
+              Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
+              Partecipa all'evoluzione del design system del Paese!
+          
+          - name: TextImageCta
+            title: Nota sullo stato
+            text: |
+              Lo stato generale del componente, riportato nel titolo di pagina, è valutato sulla base dello stato dell'arte delle due librerie UI Kit e Bootstrap Italia. 
+            ctas: 
+              - label: Scopri di più su come si definisce lo stato (presto)
+                url: "#"
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  size: sm
+
+  - title: Progettazione
+    sectionsEditorial:
+
+      - full: true
+        noSpace: true
+        title: Anatomia
+      - full: true
+        noSpace: true
+        background: null
+        components:
+          - name: TextImageCta
+            noSpace: false
+          - name: TextImageCta
+            noSpace: false
+            text: |
+              *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
+              Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
+          - name: TextImageCta
+            noSpace: true
+            title: Contenuti
+            text: |
+              *In stesura*
+          - name: TextImageCta
+            noSpace: true
+            title: Comportamento
+            text: |
+              *In stesura*
+          - name: TextImageCta
+            noSpace: true
+            title: Interazione
+            text: |
+              *In stesura*
+          - name: TextImageCta
+            noSpace: true
+            title: Specifiche di design
+            # lead: Eventuale lead paragraph
+            text: |
+              *In stesura*   
+
+      - full: true
+        noSpace: false
+        title: Kit UI
+        text: La scatola per costruire prototipi hi-fi con il design system del Paese
+        background: null
+        buttons:
+          - label : Vai al kit nella community Figma
+            blank: true
+            btnStyle: primary me-3
+            url: https://www.figma.com/community/file/1105848677422572920
+            icon:
+              icon: sprites.svg#it-figma
+              size: sm
+              color: white
+              align: middle
+              addonClasses: ms-2
+
+          # - label : Apri la repository con tutte le versioni
+          #   target: blank
+          #   btnStyle: outline-secondary
+          #   url: "#"
+          #   icon:
+          #     icon: sprites.svg#it-github
+          #     size: sm
+          #     color: secondary
+          #     align: middle
+          #     addonClasses: ms-2
+
+      - full: true
+        noSpace: false
+        title: Design Tokens
+        # text: 
+        components:
+
+          - name: TextImageCta
+            text: |
+              *Stiamo lavorando a questo contenuto e sarà presto disponibile in forma completa.   
+              La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI. 
+              Quelle che seguono fanno riferimento al componente base.* 
+
+          - name: Table
+            title: Colori
+            responsive: table-responsive-md
+            head:
+              - text: Elemento
+              - text: Stato
+              - text: Proprietà
+              - text: Token
+            rows:
+              - cols:
+                - text: Text
+                  scope: row
+                - text: null
+                - text: color
+                - tag:
+                    label: $color-text-base
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Link
+                  scope: row
+                - text: null
+                - text: color
+                - tag:
+                    label: $color-text-primary
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Link
+                  scope: row
+                - text: active
+                - text: color
+                - tag:
+                    label: $color-text-primary-active
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Icon
+                  scope: row
+                - text: null
+                - text: background
+                - tag:
+                    label: $color-background-primary
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Icon
+                  scope: row
+                - text: active
+                - text: background
+                - tag:
+                    label: $color-background-primary-active
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Separators
+                  scope: row
+                - text: null
+                - text: border
+                - tag:
+                    label: $color-bluegray-04
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+
+
+          - name: Table
+            title: Spaziature
+            responsive: table-responsive-md
+            head:
+              - text: Elemento
+              - text: Dimensione
+              - text: Token 
+            rows:
+              - cols:
+                - text: Inset
+                  scope: row
+                - text: S
+                - tag:
+                    label: $spacing-inset-s
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Inset
+                  scope: row
+                - text: M
+                - tag:
+                    label: $spacing-inset-m
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Stack
+                  scope: row
+                - text: M
+                - tag:
+                    label: $spacing-stack-m
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Stack
+                  scope: row
+                - text: XL
+                - tag:
+                    label: $spacing-stack-xl
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+
+          - name: Table
+            title: Icone
+            responsive: table-responsive-md
+            head:
+              - text: Elemento
+              - text: Stato
+              - text: Icona 
+            rows:
+              - cols:
+                - text: Chevron
+                  scope: row
+                - text: Collapse
+                - tag:
+                    label: Navigation/Chevron/Collapse
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: Chevron
+                  scope: row
+                - text: Expand
+                - tag:
+                    label: Navigation/Chevron/Expand
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+            
+          - name: Table
+            title: Stili di testo
+            responsive: table-responsive-md
+            head:
+              - text: Elemento
+              - text: Stato
+              - text: Stile 
+            rows:
+              - cols:
+                - text: Text
+                  scope: row
+                - text: 
+                - tag:
+                    label: body text/sans
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: link
+                  scope: row
+                - text: 
+                - tag:
+                    label: link/sans-bold
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+              - cols:
+                - text: link
+                  scope: row
+                - text: active
+                - tag:
+                    label: link/sans-bold-underline
+                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      
+
+  - title: Sviluppo
+
+    componentVariant:
+      id: componentAnteprimaSviluppo
+      idPrefix: cAS
+      title: Anteprima e codice
+      # XXX Accordion datas and viewer datas to move to /data/ folder... unique for all the components
+      accordionOpen: true
+      accordionLabel: "Codice Bootstrap Italia"
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
+      accordionSrLabel: Apri la documentazione del componente sul sito Boostrap Italia
+      accordionSrCopyLabel: Copia negli appunti il codice del componente Bootstrap Italia
+
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        title: Bootstrap Italia
+        text: Il framework di riferimento per lo sviluppo del design system del Paese
+        buttons:
+          - label : Vai al sito di documentazione
+            btnStyle: primary me-3
+            url: https://italia.github.io/bootstrap-italia/
+            blank: true
+            icon:
+              icon: sprites.svg#it-external-link
+              size: sm
+              color: white
+              align: middle
+              addonClasses: ms-2
+          - label : Vai alla repository GitHub
+            btnStyle: outline-secondary
+            url: https://github.com/italia/bootstrap-italia/
+            blank: true
+            icon:
+              icon: sprites.svg#it-github
+              size: sm
+              color: secondary
+              align: middle
+              addonClasses: ms-2
