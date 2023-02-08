@@ -135,7 +135,7 @@ components:
           active: false
         - label : Level4
           active: true
-    title: Azione 1
+    title: Azione 1 - Requisito 4.3 Linee guida
     subtitle: "SI DEVE adottare un approccio progettuale orientato alle persone capace di coinvolgere, ascoltare e osservare gli utenti nelle fasi di analisi, ideazione, progettazione, sviluppo e manutenzione del sito/servizio in un’ottica di miglioramento continuo, secondo una logica iterativa, utilizzando ove possibile metodologie agile" #C
     # subtitle: Subtitle #C
     tag:
@@ -380,7 +380,7 @@ components:
         text: | #C
           Scopri gli obiettivi e i valori alla base dei fondamenti del design system
         tag:
-          label: Fondamenti #C
+          label: Fondamento #C
         share: #AUTO
           btnId: shareButton
           button:
@@ -394,7 +394,7 @@ components:
             isShare: true
             
       # CARD CHILDREN ACTION
-      - title: "Ripartire da approccio e processo:la progettazione di servizi pubblici digitali" #C
+      - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali" #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_esperienzautente.svg #I
@@ -417,7 +417,7 @@ components:
             isShare: true
  
       # CARD CHILDREN ACTION
-      - title: "Prove tecniche di design:come testare sul campo gli strumenti di progettazione" #C
+      - title: "Prove tecniche di design: come testare sul campo gli strumenti di progettazione" #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_esperienzautente.svg #I
@@ -461,7 +461,24 @@ components:
               color: secondary
           list:
             isShare: true  
-
+            
+      # TXT BLOCK
+      - name: TextImageCta
+          title: Scopri altri approfondimenti #C
+          headingLevel: 4
+          text: | #C
+          ctas:
+          - label: Vai alle risorse per progettare #C
+            url: "/risorse-per-progettare/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2          
+     
      # # CARD CHILDREN ACTION
      # - title: Titolo sezione intera, eg. Design system #C
      #   fullHeight: true
