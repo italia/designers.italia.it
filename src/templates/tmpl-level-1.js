@@ -26,7 +26,7 @@ import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const Template = ({children,Pagedata,pageContext,location}) => {
+const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
 
   let activePage = null
 
@@ -70,7 +70,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
         { Pagedata.components.topics && <Topics {...Pagedata.components.topics}/> }
 
         {children}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
+        {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>
       </main>
       <Footer {...FooterData.footer}>

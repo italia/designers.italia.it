@@ -2,17 +2,17 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata: 
-  json: buttons.json
+  json: dropdown.json
   template:
     name: design-system-detail
     
 seo:
-  name: Buttons
-  description: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione"
+  name: Dropdown
+  description: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
   image: null
   twitterImage: null
   canonical: null
-  pathname: /design-system/componenti/buttons/
+  pathname: /design-system/componenti/dropdown/
 
 lastUpdate:
   column: true
@@ -54,14 +54,14 @@ components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Buttons
+    title: Dropdown
     titleTag:
       label: Pronto
       url: "#ComponentStatus"
       addonClasses: bg-success mb-2
       screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione"
+    subtitle: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -103,7 +103,6 @@ components:
   tab:
     - full: true
 
-
 tabs:
 
   - title: Uso e accessibilità
@@ -117,26 +116,26 @@ tabs:
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
       accordionSrLabel: Apri la documentazione del componente sul sito Boostrap Italia
       accordionSrCopyLabel: Copia negli appunti il codice del componente Bootstrap Italia
-  # viewer: # XXX ICONS FOR RESPONSIVE PREVIEW
-  #   responsiveButtons:
-  #     - type: button
-  #       addonStyle: p-0 mx-3
-  #       ariaLabel: Visualizzazione Anteprima Mobile
-  #       icon:
-  #         icon: sprites.svg#it-telephone
-  #         color: primary
-  #     - type: button
-  #       addonStyle: p-0 mx-3
-  #       ariaLabel: Visualizzazione Anteprima Laptop
-  #       icon:
-  #         icon: sprites.svg#it-software
-  #         color: primary
-  #     - type: button
-  #       addonStyle: p-0 mx-3
-  #       ariaLabel: Visualizzazione Anteprima Desktop
-  #       icon:
-  #         icon: sprites.svg#it-presentation
-  #         color: primary
+      # viewer: # XXX ICONS FOR RESPONSIVE PREVIEW
+      #   responsiveButtons:
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Mobile
+      #       icon:
+      #         icon: sprites.svg#it-telephone
+      #         color: primary
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Laptop
+      #       icon:
+      #         icon: sprites.svg#it-software
+      #         color: primary
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Desktop
+      #       icon:
+      #         icon: sprites.svg#it-presentation
+      #         color: primary
 
     sectionsEditorial:
       - full: true
@@ -147,9 +146,8 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              I pulsanti comunicano che l’interazione dà il via a un’azione o a un evento. Non dovrebbero essere utilizzati come elementi di navigazione. 
+              _In stesura_
 
-          
       - full: true
         noSpace: true
         components:
@@ -158,25 +156,17 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Usa la variante primary per valorizzare l’azione principale
-              - Usa la variante secondary per valorizzare l’azione secondaria 
-              - Usa pulsanti disabilitati con moderazione, assicurandoti che per l’utente sia chiaro come attivarli
-              - Per comunicare senza ambiguità la gerarchia delle azioni generate dai pulsanti, usa le varianti di grandezza e tipologia. 
-              - Usa un pulsante con icona per aggiungere un’informazione visiva all’interazione (es. pulsante di accesso ad area riservata)
+              _In stesura_
 
               #### Attenzione a
-              - Non usare più di un pulsante primary nello stesso contesto di azione
-              - Non usare pulsanti primary per azioni di valore secondario 
-              - Non usare i pulsanti all’interno di paragrafi di testo
+              _In stesura_
               
               #### Buone pratiche sui contenuti
-              - Le etichette di testo devono comunicare in maniera immediata, chiara e senza ambiguità il significato dell’azione
-              - Non usare etichette di testo troppo lunghe
-              - Prediligi etichette di testo che fanno riferimento a una sola azione alla volta
-              - Usa la seconda persona singolare (es. "Aggiungi un servizio") 
-              - Usa la prima persona singolare nel caso di accettazione di termini e condizioni o modali informative (es. "Accetto" o "Ho capito")
-              - I pulsanti con sola icona potrebbero generare ambiguità: se possibile, aggiungi sempre un’etichetta di testo
+              _In stesura_
 
+              #### Alternative a questo componente
+              _In stesura_
+              
       - full: true
         noSpace: false
         title: Accessibilità
@@ -277,7 +267,7 @@ tabs:
                 - simpleCta :
                     label: Scheda documentazione
                     blank: true
-                    url: https://italia.github.io/bootstrap-italia/docs/componenti/buttons/
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/dropdown/
                     screenReaderText: " (si apre in una nuova finestra)"
                     icon:
                       icon: sprites.svg#it-external-link
@@ -291,28 +281,28 @@ tabs:
                     addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
                 - simpleCta :
                     label: Scheda storybook
-                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-bottoni--page
+                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-dropdown--page
                     blank: true
                     screenReaderText: " (si apre in una nuova finestra)"
                     icon:
                       icon: sprites.svg#it-external-link
                       size: sm
 
-                # - cols:
-                #   - text: Angular 
-                #     scope: row
-                #   - tag:
-                #       label: Non presente
-                #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                #   - text: null
-                  
-                # - cols:
-                #   - text: Vue 
-                #     scope: row
-                #   - tag:
-                #       label: Non presente
-                #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                #   - text: null
+              # - cols:
+              #   - text: Angular 
+              #     scope: row
+              #   - tag:
+              #       label: Non presente
+              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+              #   - text: null
+                
+              # - cols:
+              #   - text: Vue 
+              #     scope: row
+              #   - tag:
+              #       label: Non presente
+              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+              #   - text: null
       
           - name: TextImageCta
             text: |
@@ -332,7 +322,6 @@ tabs:
 
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         title: Anatomia
@@ -346,7 +335,7 @@ tabs:
             noSpace: false
             text: |
               *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
-              Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
+              Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.* 
           - name: TextImageCta
             noSpace: true
             title: Contenuti
@@ -368,7 +357,7 @@ tabs:
             # lead: Eventuale lead paragraph
             text: |
               *In stesura*
-    
+
       - full: true
         noSpace: false
         title: Kit UI
@@ -400,13 +389,12 @@ tabs:
       - full: true
         noSpace: true
         title: Design Tokens
-        # text: 
         components:
 
           - name: TextImageCta
             text: |
               *Stiamo lavorando a questo contenuto e sarà presto disponibile.   
-              La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI.*
+              La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI.* 
 
   - title: Sviluppo
 
@@ -420,48 +408,8 @@ tabs:
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
       accordionSrLabel: Apri la documentazione del componente sul sito Boostrap Italia
       accordionSrCopyLabel: Copia negli appunti il codice del componente Bootstrap Italia
-      # viewer: # XXX ICONS FOR RESPONSIVE PREVIEW
-      #   responsiveButtons:
-      #     - type: button
-      #       addonStyle: p-0 mx-3
-      #       ariaLabel: Visualizzazione Anteprima Mobile
-      #       icon:
-      #         icon: sprites.svg#it-telephone
-      #         color: primary
-      #     - type: button
-      #       addonStyle: p-0 mx-3
-      #       ariaLabel: Visualizzazione Anteprima Laptop
-      #       icon:
-      #         icon: sprites.svg#it-software
-      #         color: primary
-      #     - type: button
-      #       addonStyle: p-0 mx-3
-      #       ariaLabel: Visualizzazione Anteprima Desktop
-      #       icon:
-      #         icon: sprites.svg#it-presentation
-      #         color: primary
-
-
       
     sectionsEditorial:
-      # - full: true
-      #   noSpace: true
-      #   title: Lorem ipsum
-      #   background: null
-      #   components:
-      #     - name: TextImageCta
-      #       title: Set ut perspiciatis
-      #       text: |
-      #         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-      #         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-      #     - name: TextImageCta
-      #       title: Lorem ipsum
-      #       lead: Eventuale lead paragraph
-      #       text: |
-      #         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-      #         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
       - full: true
         noSpace: true
         title: Bootstrap Italia

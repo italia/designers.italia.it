@@ -25,7 +25,7 @@ import skipLinksData from "../data/skiplinks.yaml"
 import dsNav from "../data/dsnav.yaml"
 
 
-const Template = ({children,Pagedata,pageContext,location}) => {
+const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
 	return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre}/>
@@ -56,7 +56,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
                   <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
                 )
               })}
-             {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
+             {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
             </main>
           </div>
         </div>

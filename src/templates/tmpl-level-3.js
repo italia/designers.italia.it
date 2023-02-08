@@ -25,7 +25,7 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 import Kangaroo from "../components/kangaroo/kangaroo"
 
-const Template = ({children,Pagedata,pageContext,location}) => {
+const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
 	return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre}/>
@@ -52,7 +52,7 @@ const Template = ({children,Pagedata,pageContext,location}) => {
           )
         })}
         {children}
-        {Pagedata.lastUpdate && <LastUpdate {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
+        {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         {Pagedata.kangaroo &&
           <div className="container-xxl">
             <div className="row">
