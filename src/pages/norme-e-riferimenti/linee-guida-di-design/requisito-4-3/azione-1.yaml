@@ -223,11 +223,11 @@ components:
           url: "#"
           color: primary
           size: lg
-        - label: Analisi del contesto
+        - label: Cultura progettuale
           url: "#"
           color: primary
           size: lg
-        - label: Esperienza utente
+        - label: Progettazione servizi
           url: "#"
           color: primary
           size: lg
@@ -318,6 +318,42 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+              
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Progettazione di servizi #C
+          headingLevel: 4
+          text: | #C
+            Sfrutta le risorse utili all’analisi delle necessità di tutti gli attori coinvolti nella progettazione del servizio, per gestire la complessità del progetto, strutturando il servizio in modo che sia usabile per l’utente e efficiente per la Pubblica Amministrazione.
+          ctas:
+          - label: Vai all'argomento sul Manuale #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html#progettazione-di-servizi" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Progettare un servizio pubblico digitale #C
+          headingLevel: 4
+          text: | #C
+            Conosci tutti gli elementi da tenere in considerazione nella progettazione di un servizio. 
+          ctas:
+          - label: Vai all'argomento sul Manuale #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/progettare-un-servizio-pubblico-digitale.html#progettare-un-servizio-pubblico-digitale" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2  
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -334,17 +370,17 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Analisi del contesto #C
+      - title: Princìpi e intenzioni #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_analisiContesto.svg #I
         iconImgAlt: Alt lorem ipsum #C
         rounded: true
-        url: "/risorse-per-progettare/comprendere/analisi-del-contesto/" #M
+        url: "/design-system/come-iniziare/" #M
         text: | #C
-          Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze
+          Scopri gli obiettivi e i valori alla base dei fondamenti del design system
         tag:
-          label: Kit di design #C
+          label: Fondamenti #C
         share: #AUTO
           btnId: shareButton
           button:
@@ -358,17 +394,16 @@ components:
             isShare: true
             
       # CARD CHILDREN ACTION
-      - title: Esperienza utente #C
+      - title: Ripartire da approccio e processo: la progettazione di servizi pubblici digitali #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_esperienzautente.svg #I
         iconImgAlt: Alt lorem ipsum #C
         rounded: true
-        url: "/risorse-per-progettare/comprendere/esperienza-utente/" #M
+        url: "https://medium.com/designers-italia/ripartire-da-approccio-e-processo-la-progettazione-di-servizi-pubblici-digitali-fb62858e2c6d" #M
         text: | #C
-          Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale
         tag:
-          label: Kit di design #C
+          label: Articolo Medium #C
         share: #AUTO
           btnId: shareButton
           button:
@@ -380,6 +415,52 @@ components:
               color: secondary
           list:
             isShare: true
+ 
+      # CARD CHILDREN ACTION
+      - title: Prove tecniche di design:come testare sul campo gli strumenti di progettazione #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "https://medium.com/designers-italia/prove-tecniche-di-design-come-testare-sul-campo-gli-strumenti-di-progettazione-866e95d32986" #M
+        text: | #C
+        tag:
+          label: Articolo Medium #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true  
+            
+      # CARD CHILDREN ACTION
+      - title: PA digitale 2026: l'utente al centro della progettazione #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "https://medium.com/blog-per-la-trasformazione-digitale/pa-digitale-2026-lutente-al-centro-della-progettazione-59eeda5b4e40" #M
+        text: | #C
+        tag:
+          label: Articolo Medium #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true  
 
      # # CARD CHILDREN ACTION
      # - title: Titolo sezione intera, eg. Design system #C
