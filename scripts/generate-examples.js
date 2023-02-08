@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const slugify = require('slugify')
 const Mustache = require('mustache');
+const bsiData = require("../bootstrap-italia/package.json")
 
 
 const SEARCH_DIR = path.join("src", "data", "content", "design-system", "componenti")
@@ -19,7 +20,8 @@ function generateExamples() {
                 filePath,
                 Mustache.render(HTML_TEMPLATE, { 
                     code: example.content,
-                    name: example.name
+                    name: example.name,
+                    bsiversion: bsiData.version
                 }),
                 'utf-8'
             )
