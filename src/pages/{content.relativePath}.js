@@ -440,10 +440,9 @@ export const query = graphql`
           title
           text
           formId
-          formAction
           label
           inputId
-          imputName
+          inputName
           button {
             label
             # type
