@@ -234,7 +234,7 @@ components:
         - name: TextImageCta
           title: Workflow per migliorare lo sviluppo dei componenti
           text: |
-            Abbiamo costruito un promemoria minimo e non esaustivo di attività e controlli da fare, per supportare l’integrazione e la revisione dei componenti del design system del Paese durante lo sviluppo: indica come condurre alcune verifiche di accessibilità su componenti e pattern, e su proposte evolutive di questi, che siano utili a evidenziare criticità e opportunità durante le lavorazioni.  2
+            Abbiamo costruito un promemoria minimo e non esaustivo di attività e controlli da fare, per supportare l’integrazione e la revisione dei componenti del design system del Paese durante lo sviluppo: indica come condurre alcune verifiche di accessibilità su componenti e pattern, e su proposte evolutive di questi, che siano utili a evidenziare criticità e opportunità durante le lavorazioni.  
             
             **Per svolgere analisi di accessibilità è necessario coinvolgere esperti qualificati (es. [Web Accessibility Expert](https://www.webaccessibile.org/approfondimenti/arrivano-i-web-accessibility-expert/)) e, ogni qualvolta possibile, predisporre sessioni di test di usabilità con panel rappresentativi di utenti.** 
             
@@ -244,7 +244,7 @@ components:
             - Implementato nelle automazioni (CI/CD) di Bootstrap Italia tramite [HTMLProofer](https://github.com/gjtorikian/html-proofer)
 
             #### Test automatici
-            I test automatici di accessibilità possono essere condotti con molteplici soluzioni, sia generaliste che dedicate a particolari aspetti, e sono strumenti talvolta essenziali per l’individuazione di problematiche specifiche non rilevabili facilmente con analisi manuali; **va sottolineato tuttavia che tali soluzioni non sono soddisfacenti** per una rilevazione efficace di numerose tipologie di criteri di successo. 
+            I test automatici di accessibilità possono essere condotti con molteplici soluzioni, sia generaliste che dedicate a particolari aspetti, e sono strumenti talvolta essenziali per l’individuazione di problematiche specifiche; **va sottolineato tuttavia che tali soluzioni non sono soddisfacenti** per una rilevazione efficace di numerose tipologie di criteri di successo. 
 
             Una lista esaustiva, ma non validata, di tali tecnologie è [disponibile sul sito del W3C](https://www.w3.org/WAI/ER/tools/).
 
@@ -257,7 +257,7 @@ components:
               - [Pa11y](https://pa11y.org/) (integrato nella CI di Bootstrap Italia)
 
             #### Test manuali
-            **Fase critica che richiede competenze in materia di accessibilità in chi la esegue.** Il workflow che segue è utile per individuare ad esempio errori nelle interazioni e nel labeling non rilevabili dai test automatici in fase di sviluppo, ma **non sostituisce il test manuale condotto da una figura qualificata**.
+            **Fase critica che richiede competenze in materia di accessibilità in chi la esegue.** Il workflow che segue è utile per individuare ad esempio errori nelle interazioni e nel labeling non rilevabili dai test automatici in fase di sviluppo, ma **non sostituisce il test manuale condotto da esperti qualificati**.
 
             ##### Interazioni via tastiera  
             Da verificare anche rispetto ai [pattern ARIA standard](https://www.w3.org/WAI/ARIA/apg/patterns/):
@@ -272,8 +272,8 @@ components:
                 - non sono presenti "keyboard traps"
                 - comportamento delle modali
 
-            ##### Ingrandimento nativo
-            Supportare zoom nativo del browser fino a 400% per viewport larghe 1280px, e per elementi con scroll orizzontale supportare ingrandimento fino a 400% per viewport larghe 1024px. 
+            ##### Ingrandimento
+            Supportare l'ingrandimento nativo del browser fino a 400% per viewport larghe 1280px, e per elementi con scroll orizzontale per viewport larghe 1024px. 
             Verificare assenza di: 
              - errori nel ridimensionamento testo
              - scroll orizzontale non desiderato (o verticale per elementi con scroll orizzontale)
@@ -283,7 +283,8 @@ components:
             
             ##### Lettore di schermo (screen reader)
             Sono disponibili diversi screen reader a seconda del sistema operativo utilizzato. In Europa [lo screen reader più utilizzato](https://webaim.org/projects/screenreadersurvey9/) è l’open source [NVDA](https://www.nvda.it/), seguito da [JAWS](https://www.freedomscientific.com/products/software/jaws/) (a pagamento) e [VoiceOver](https://www.apple.com/it/accessibility/vision/) (integrato nei sistemi operativi Apple). Il browser più utilizzato è Chrome, seguito da Edge e Safari. 
-            Dovendo individuare una soluzione unica per il test durante le lavorazioni la combinazione suggerita è **Windows+Chrome+Jaws**, controlli da eseguire:
+            Dovendo individuare una soluzione unica per il test durante le lavorazioni, la combinazione suggerita è **Windows+Chrome+Jaws**. 
+            Controlli da eseguire:
             - controllo sequenza lettura
             - controllo label, label nascoste, label ARIA e ruoli
             - controllo elementi interattivi
