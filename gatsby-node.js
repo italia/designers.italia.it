@@ -1,4 +1,5 @@
 const { createRemoteFileNode,  } = require("gatsby-source-filesystem")
+const jsYaml = require(`js-yaml`)
 
 const { fetchDataFiles } = require('./server/fetchDataFiles')
 const { findValues } = require('./server/utils/findValues')
@@ -35,7 +36,6 @@ exports.createSchemaCustomization = ({ actions }) => {
 
 exports.sourceNodes = async ({
   actions: { createNode },
-  createContentDigest,
 }) => {
 
   //assets import in graphQL for gatsby-plugin-image
@@ -63,7 +63,7 @@ exports.sourceNodes = async ({
 
 exports.onCreateNode = async ({
   node,
-  actions: { createNode, createNodeField },
+  actions: { createParentChildLink, createNode, createNodeField },
   createNodeId,
   createContentDigest,
   loadNodeContent,
@@ -88,9 +88,11 @@ exports.onCreateNode = async ({
     (node.extension === 'yaml' ||
      node.extension === 'yml')
   ) {
-    createNode({
-      ...node,
-      fields: undefined,
+    const content = await loadNodeContent(node)
+    const parsedContent = jsYaml.load(content)
+
+    const contentNode = {
+      ...parsedContent,
       id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
       parent: node.id,
       children: [],
@@ -99,8 +101,9 @@ exports.onCreateNode = async ({
         contentDigest: createContentDigest(node),
       },
       relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ''),
-      yaml: await loadNodeContent(node),
-    });
-    // createNodeField({node, content: loadNodeContent(node)});
+    };
+
+    createNode(contentNode)
+    createParentChildLink({ parent: node, child: contentNode })
   }
 }
