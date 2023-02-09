@@ -169,13 +169,9 @@ components:
         - name: TextImageCta
           # title: Come costruiamo i "numeri versione"
           text: |
-            **The power of the Web is in its universality.  
-            Access by everyone regardless of disability is an essential aspect.**  
-            — Tim Berners-Lee, Direttore W3C e inventore della rete come la conosciamo
-
             Abbiamo scelto di considerare l'**accessibilità by design** parte di ogni processo e risorsa del design system del Paese, non solo come un orizzonte ideale o una risposta alle norme. Qui troverai risorse quindi **accessibili by default** per PA e fornitori, da cui partire per realizzare siti e servizi facili da usare e inclusivi, con più efficacia, minor tempo e costi.
           ctas:
-          - label: "Leggi l’approfondimento con le indicazioni ideali e pratiche" #C
+          - label: "Approfondimento su Medium" #C
             url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099 #M
             blank: true #M #C true if new tab for external links
             # disabled: true
@@ -192,7 +188,7 @@ components:
           text: |
             Il livello di conformità [richiesto](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#linee-guida-e-criteri-di-successo) per i siti della Pubblica Amministrazione dalla norma tecnica europea armonizzata **UNI EN 301 549**, corrisponde al **livello “A” e “AA” della W3C Recommendation WCAG 2.1**.
           ctas:
-          - label: "Scopri le Linee guida accessibilità" #C
+          - label: "Linee guida accessibilità" #C
             url: "/norme-e-riferimenti/linee-guida-accessibilita/" #M
             blank: false #M #C true if new tab for external links
             # disabled: true
@@ -203,7 +199,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: "Apri la specifica WCAG 2.1 in lingua italiana" #C
+          - label: "Specifica WCAG 2.1 in lingua italiana" #C
             url: https://www.w3.org/Translations/WCAG21-it/ #M
             blank: true #M #C true if new tab for external links
             # disabled: true
@@ -238,7 +234,7 @@ components:
         - name: TextImageCta
           title: Workflow per migliorare lo sviluppo dei componenti
           text: |
-            Abbiamo costruito un promemoria minimo e non esaustivo di attività e controlli da fare, per supportare l’integrazione e la revisione dei componenti del design system del Paese durante lo sviluppo: indica come condurre alcune verifiche di accessibilità su un componente, o pattern, e su proposte evolutive di questi, che siano utili a evidenziare criticità e opportunità durante le lavorazioni.  
+            Abbiamo costruito un promemoria minimo e non esaustivo di attività e controlli da fare, per supportare l’integrazione e la revisione dei componenti del design system del Paese durante lo sviluppo: indica come condurre alcune verifiche di accessibilità su componenti e pattern, e su proposte evolutive di questi, che siano utili a evidenziare criticità e opportunità durante le lavorazioni.  2
             
             **Per svolgere analisi di accessibilità è necessario coinvolgere esperti qualificati (es. [Web Accessibility Expert](https://www.webaccessibile.org/approfondimenti/arrivano-i-web-accessibility-expert/)) e, ogni qualvolta possibile, predisporre sessioni di test di usabilità con panel rappresentativi di utenti.** 
             
@@ -254,17 +250,17 @@ components:
 
             Le soluzioni "minime" da utilizzare sono: 
             - Controllo codice durante la scrittura (eg. con [axe-linter per VS Code](https://www.deque.com/blog/shift-further-left-with-deques-axe-linter-for-vs-code/), integrato nella CI di Bootstrap Italia);
-              - Test condotti sul DOM in-browser con estensioni (a titolo di esempio): 
-                - [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=it_IT)
-                - [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn)
-              - Test condotti con script: 
-                - [Pa11y](https://pa11y.org/) (integrato nella CI di Bootstrap Italia)
+            - Test condotti sul DOM in-browser con estensioni (a titolo di esempio): 
+              - [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=it_IT)
+              - [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn)
+            - Test condotti con script: 
+              - [Pa11y](https://pa11y.org/) (integrato nella CI di Bootstrap Italia)
 
             #### Test manuali
-            **Fase critica che richiede competenze in materia di accessibilità in chi la esegue.** Il workflow che segue è utile per individuare ad esempio errori nelle interazioni e nel labeling non rilevabili dai test automatici in fase di sviluppo, ma **non sostituisce il test manuale condotto da una figura qualificata, necessario per la validazione finale**.
+            **Fase critica che richiede competenze in materia di accessibilità in chi la esegue.** Il workflow che segue è utile per individuare ad esempio errori nelle interazioni e nel labeling non rilevabili dai test automatici in fase di sviluppo, ma **non sostituisce il test manuale condotto da una figura qualificata**.
 
             ##### Interazioni via tastiera  
-            Da verificare anche rispetto ai [pattern ARIA standard](https://www.w3.org/WAI/ARIA/apg/patterns/) 
+            Da verificare anche rispetto ai [pattern ARIA standard](https://www.w3.org/WAI/ARIA/apg/patterns/):
               - **Tab**: si sposta sul successivo elemento focusable
               - **Shift + Tab**: si sposta sul precedente elemento focusable
               - **Invio**: attiva links, bottoni ed altri elementi interattivi
@@ -287,15 +283,15 @@ components:
             
             ##### Lettore di schermo (screen reader)
             Sono disponibili diversi screen reader a seconda del sistema operativo utilizzato. In Europa [lo screen reader più utilizzato](https://webaim.org/projects/screenreadersurvey9/) è l’open source [NVDA](https://www.nvda.it/), seguito da [JAWS](https://www.freedomscientific.com/products/software/jaws/) (a pagamento) e [VoiceOver](https://www.apple.com/it/accessibility/vision/) (integrato nei sistemi operativi Apple). Il browser più utilizzato è Chrome, seguito da Edge e Safari. 
-            Dovendo individuare una soluzione unica per il test la combinazione suggerita è **Windows+Chrome+Jaws**.
+            Dovendo individuare una soluzione unica per il test durante le lavorazioni la combinazione suggerita è **Windows+Chrome+Jaws**, controlli da eseguire:
             - controllo sequenza lettura
             - controllo label, label nascoste, label ARIA e ruoli
             - controllo elementi interattivi
-            - controllo struttura titolazioni (heading), in special modo nei template di pagina
+            - controllo struttura e gerarchia titolazioni (heading), in special modo nei template di pagina
             - controllo alt text
             - controllo annuncio cambi dinamici del DOM (aria-live)
           ctas:
-          - label: "Per aprire segnalazioni di accessibilità per Bootstrap Italia" #C
+          - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
             url: https://github.com/italia/bootstrap-italia/issues/ #M
             blank: false #M #C true if new tab for external links
             # disabled: true
