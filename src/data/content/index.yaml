@@ -90,19 +90,18 @@ components:
     title: Da dove vuoi iniziare?
     text: "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
     formId: searchForm
-    formAction: "#"
     label: Cerca
     inputId: searchInput
     inputName: search
     button:
       label: Cerca
       type: #submit
-      btnStyle: primary disabled search-disabled
+      btnStyle: primary
       iconRight: true
       icon:
         icon: sprites.svg#it-search
         color: #white
-        addonClasses: ms-1 icon-search-disabled
+        addonClasses: ms-1 icon-search
     suggest:
       title: "Ti suggeriamo:"
       items:
