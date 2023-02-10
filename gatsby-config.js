@@ -116,6 +116,7 @@ module.exports = {
             edges {
               node {
                 id
+                relativePath
                 components {
                   sectionsEditorial {
                     components {
@@ -129,32 +130,31 @@ module.exports = {
         }`,
 
         // Field used as the reference value for each document.
-        // Default: 'id'.
-        // ref: "id",
+        ref: "id",
 
         // List of keys to index. The values of the keys are taken from the
         // normalizer function below.
-        // Default: all fields
         index: [
           "textContent",
-          "seo",
         ],
 
         // List of keys to store and make available in your UI. The values of
         // the keys are taken from the normalizer function below.
         // Default: all fields
-        store: ["id", "textContent", "seo"],
+        store: ["relativePath", "textContent"],
 
         // Function used to map the result from the GraphQL query. This should
         // return an array of items to index in the form of flat objects
         // containing properties to index. The objects must contain the `ref`
         // field above (default: 'id'). This is required.
         normalizer: ({ data }) =>
-          data.allContent.edges.map((edge) => ({
-            id: edge.node.id,
-            textContent: edge.node.components?.sectionsEditorial?.components?.map(c => c.text),
-            seo: edge.node.seo.description,
-          })),
+          data.allContent.edges.map((edge) => {
+            return {
+              id: edge.node.id,
+              relativePath: edge.node.relativePath,
+              textContent: edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c => c.text)).join(" "),
+            }
+          }),
       },
     },
     /*{

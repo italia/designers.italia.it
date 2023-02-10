@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { useFlexSearch } from "react-use-flexsearch"
 
 // import ReactMarkdown from "react-markdown"
@@ -59,7 +59,11 @@ const SearchMain =({
                         <Button type="submit" {...button}></Button>
                       </div>
                     </div>
-                    <ul>{results.map(r => (<li key={r.id}>{r.id}</li>))}</ul>
+                    <ul>{results.map((r, i) => (
+                      <li key={i}>
+                        <Link to={r.relativePath}>{r.relativePath}</Link>
+                      </li>
+                    ))}</ul>
                 </form>
               </div>
               <div className="suggest-wrapper d-lg-flex">
