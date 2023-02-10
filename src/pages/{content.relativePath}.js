@@ -52,7 +52,7 @@ export const query = graphql`
           name
         }
         activeLabel
-        # json
+        json
       }
       seo {
         name
