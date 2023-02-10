@@ -17,7 +17,7 @@ const LastUpdate = ({
   let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/${process.env.GATSBY_BRANCH}/src/pages/`  // < fallback if not trackable via pathname let's go to repo root...
   let pathYaml = ''
   if (pathname) {
-    
+
     let pathSplitted = pathname.split('/')
     pathSplitted.pop()
     let path = pathSplitted.join('/')
@@ -25,7 +25,7 @@ const LastUpdate = ({
     pathYaml = path.replace(/^\/|\/$/g, '') + ".yaml"
     editGithubUrl += pathYaml
   }
-  
+
   let columnStyle = 'col-12'
   // + `${column ? '' : ' col-md-10 offset-md-1'}`
   + ' g-0'
@@ -39,11 +39,18 @@ const LastUpdate = ({
         <div className="row">
           <div className={columnStyle}>
             <div className ={paddingStyle}>
-              <p className="">
-                <small>{title} {new Date(lastModified).toLocaleDateString(
+              <p>
+                <small>
+                  <span>{title} </span>
+                  <time
+                    dateTime={lastModified}
+                    title={lastModified}
+                  >
+                    {new Date(lastModified).toLocaleDateString(
                       'it-IT',
                       { year: 'numeric', month: 'long', day: 'numeric' }
                     )}
+                  </time>
                   <Link
                     to={licence.url}
                     target={licence.blank ? "_blank" : undefined}
