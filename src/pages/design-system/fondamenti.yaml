@@ -118,6 +118,7 @@ components:
   filterCards:
     id: fundamentCards
     title: Esplora i fondamenti
+    noSpace: true
     # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
     col2: true
     # button:
@@ -141,10 +142,18 @@ components:
         text: |
           Il design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione.
         chips:
-          - color : secondary
-            label : Content
-            url : "#"
-            blank: false
+          - label: Progettazione servizi
+            url: "#"
+            color: secondary
+          - label: Accessibilità
+            url: "#"
+            color: secondary
+          - label: Cultura progettuale
+            url: "#"
+            color: secondary
+          - label: Design system
+            url: "#"
+            color: secondary
         share:
           btnId: shareButtonCard1
           button:
@@ -168,10 +177,15 @@ components:
         text: |
           Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
         chips:
-          - color : secondary
-            label : Content
-            url : "#"
-            blank: false
+          - label: Accessibilità
+            url: "#"
+            color: secondary
+          - label: Design system
+            url: "#"
+            color: secondary
+          - label: Inclusione
+            url: "#"
+            color: secondary
         share:
           btnId: shareButtonCard1
           button:
@@ -199,6 +213,9 @@ components:
             label : Content
             url : "#"
             blank: false
+          - label: Design system
+            url: "#"
+            color: secondary
         share:
           btnId: shareButtonCard1
           button:
@@ -222,10 +239,12 @@ components:
         text: |
           Usiamo il versionamento semantico su ogni risorsa del design system del Paese.
         chips:
-          - color : secondary
-            label : Content
-            url : "#"
-            blank: false
+          - label: Organizzazione
+            url: "#"
+            color: secondary
+          - label: Design system
+            url: "#"
+            color: secondary
         share:
           btnId: shareButtonCard1
           button:
@@ -257,41 +276,62 @@ components:
     #       img: /images/image-icons-fullwidth.jpg
     #       alt: Descrizione immagine grande
     - full: true
-      noSpace: true
+      noSpace: false
       # title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
       components:
         - name: TextImageCta
           noSpace: true
-          title: 🟡 Presto disponibile
-          text: |
-            Stiamo lavorando all'evoluzione del design system del Paese e sarà presto disponibile.
-            
-            Puoi contribuire anche tu proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare il kit UI e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento alla documentazione del framework di sviluppo Bootstrap Italia.
+          # title: Contenuti in stesura
+          text: |   
+            Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare lo UI Kit e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento al framework di sviluppo Bootstrap Italia.
+          ctas:
+          - label: "Vai allo UI Kit nella community Figma " #C
+            url: https://www.figma.com/community/file/1105848677422572920 #M
+            blank: true #M #C true if new tab for external links
+            # disabled: true
+            icon: 
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: "Vai a Bootstrap Italia su GitHub " #C
+            url: https://github.com/italia/bootstrap-italia #M
+            blank: true #M #C true if new tab for external links
+            # disabled: true
+            icon: 
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
-    - full: true
-      noSpace: true
-      background: null
-      buttons:
-        - label : Vai al kit UI nella community Figma
-          blank: true
-          btnStyle: primary me-3
-          url: https://www.figma.com/community/file/1105848677422572920
-          addonStyle: mb-3
-          icon:
-            icon: sprites.svg#it-figma
-            size: sm
-            color: white
-            align: middle
-            addonClasses: ms-2
-        - label : Vai al sito di documentazione di Bootstrap Italia
-          btnStyle: primary me-3
-          url: https://italia.github.io/bootstrap-italia/
-          blank: true
-          addonStyle: mb-3 
-          icon:
-            icon: sprites.svg#it-external-link
-            size: sm
-            color: white
-            align: middle
-            addonClasses: ms-2
+    # - full: true
+    #   noSpace: true
+    #   background: null
+    #   buttons:
+    #     - label : Vai al kit UI nella community Figma
+    #       blank: true
+    #       btnStyle: primary me-3
+    #       url: https://www.figma.com/community/file/1105848677422572920
+    #       addonStyle: mb-3
+    #       icon:
+    #         icon: sprites.svg#it-figma
+    #         size: sm
+    #         color: white
+    #         align: middle
+    #         addonClasses: ms-2
+    #     - label : Vai al sito di documentazione di Bootstrap Italia
+    #       btnStyle: primary me-3
+    #       url: https://italia.github.io/bootstrap-italia/
+    #       blank: true
+    #       addonStyle: mb-3 
+    #       icon:
+    #         icon: sprites.svg#it-external-link
+    #         size: sm
+    #         color: white
+    #         align: middle
+    #         addonClasses: ms-2
 
