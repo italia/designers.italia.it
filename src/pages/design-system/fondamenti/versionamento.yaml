@@ -152,7 +152,7 @@ components:
     - full: true
       noSpace: false
       title: Versionamento semantico
-      text: Un insieme di regole che permettono di manutenere ed evolvere con trasparenza e responsabilità
+      text: Un insieme di regole che permettono di manutenere ed evolvere il design system e le sue risorse con trasparenza e responsabilità
       background: null
       components:
         - name: TextImageCta
@@ -162,7 +162,7 @@ components:
             
             Convinti che la trasparenza dei processi che sottendono la cura e gestione delle risorse, abilitata da come sono costruiti i "numeri versione", sia strumento importante per la sostenibilità e la scalabilità dell'intero progetto.
 
-            È possibile seguire l'evoluzione leggendo il numero versione: ad esempio "1.0.0-alpha.2" indicherà la versione corrente come MAJOR "1", MINOR "0" e PATCH "0", in una seconda iterazione "2" del suo stato "alpha", una pre-release quindi in lavorazione dove tutto può ancora cambiare ed evolvere. 
+            È possibile seguire l'evoluzione leggendo il numero versione: ad esempio "1.0.0-alpha.2" indicherà la versione corrente come MAJOR "1", MINOR "0" e PATCH "0", in una seconda iterazione "2" del suo stato "alpha", una pre-release in lavorazione dove tutto può ancora cambiare ed evolvere. 
             Per la definizione di MAJOR, MINOR e PATCH si rimanda alla guida sul versionamento semantico (semver) che segue.
           ctas:
           - label: Scopri la guida al versionamento semantico (semver) #C
@@ -197,7 +197,7 @@ components:
               - text: Documentazione (questo sito)
                 scope: row
               - tag:
-                  label: 1.0.0-alpha.2
+                  label: 1.0.0-alpha.2 #AUTO
                   addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   # label: Kit
@@ -212,13 +212,13 @@ components:
               - text: UI Kit (design)
                 scope: row
               - tag:
-                  label: 3.0.0-beta.3
+                  label: 3.0.0-beta.3 #AUTO
                   addonClasses: ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: 'Pagina "Intro & release notes"'
                   url: https://www.figma.com/community/file/1105848677422572920
                   blank: true
-                  screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                  screenReaderText: " nello UI Kit su Figma (si apre in una nuova finestra)"
                   icon:
                     icon: sprites.svg#it-figma
                     size: sm
@@ -227,7 +227,7 @@ components:
               - text: Bootstrap Italia
                 scope: row
               - tag:
-                  label: 2.3.2
+                  label: 2.3.4 #AUTO
                   addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
               - simpleCta :
                   label: "Schede rilascio su GitHub" 
