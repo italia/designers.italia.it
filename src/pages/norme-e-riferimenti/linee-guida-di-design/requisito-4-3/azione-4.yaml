@@ -257,13 +257,13 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Interviste #C
+          title: Visualizzare mappe dell’esperienza del servizio #C
           headingLevel: 4
           text: | #C
-            Usa le interviste per raccogliere informazioni attraverso conversazioni più o meno strutturate con gli attori e con gli utenti di un determinato ecosistema di servizio.
+            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.  
           ctas:
           - label: Vai all'argomento sul Manuale #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/interviste.html#interviste" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/dai-bisogni-degli-utenti-ai-flussi-di-interazione.html#dai-bisogni-degli-utenti-ai-flussi-di-interazione" #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -275,13 +275,13 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Questionari #C
+          title: Dai bisogni degli utenti ai flussi di interazione #C
           headingLevel: 4
           text: | #C
-            Raccogli informazioni qualitative direttamente dagli utenti di un servizio o touchpoint digitale, indirizzando un campione di utenti sufficientemente vasto, per renderle misurabili, e consentire l’analisi quantitativa.
+            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.  
           ctas:
           - label: Vai all'argomento sul Manuale #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html#questionari" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/dai-bisogni-degli-utenti-ai-flussi-di-interazione.html#dai-bisogni-degli-utenti-ai-flussi-di-interazione" #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -293,13 +293,13 @@ components:
               
         # TXT BLOCK
         - name: TextImageCta
-          title: "Personas: creare i profili degli utenti tipo" #C
+          title: "Prototipare un servizio" #C
           headingLevel: 4
           text: | #C
-            Racconta le evidenze della ricerca attraverso i profili degli utenti-tipo del servizio pubblico digitale, le personas, che supportano la narrativa della prospettiva dell’utente e della sua esperienza.
+            Tramite il prototipo puoi testare in maniera rapida ed economica un’idea, ridefinendo il progetto e valutando i cambiamenti. Effettua delle sessioni di validazione dell’esperienza e del concept già nelle prime fasi della progettazione, mantenendo gli utenti al centro del processo di design.
           ctas:
           - label: Vai all'argomento sul Manuale #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/personas.html#personas-creare-i-profili-degli-utenti-tipo" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/prototipare-un-servizio.html#prototipare-un-servizio" #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -310,24 +310,6 @@ components:
               addonClasses: ms-2
         
         # TXT BLOCK
-        - name: TextImageCta
-          title: Organizzare attività di co-progettazione #C
-          headingLevel: 4
-          text: | #C
-            Raccogli il punto di vista dei diversi attori coinvolti nell’erogazione e fruizione di un servizio, sollevando i problemi chiave e accelerando il processo di identificazione delle soluzioni.
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/organizzare-attivita-di-co-progettazione.html#organizzare-attivita-di-co-progettazione" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-              
-         # TXT BLOCK
         - name: TextImageCta
           title: Test di usabilità #C
           headingLevel: 4
@@ -343,7 +325,7 @@ components:
               align: middle
               hidden: true
               size: sm
-              addonClasses: ms-2 
+              addonClasses: ms-2
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -358,54 +340,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
-      # CARD CHILDREN ACTION
-      - title: Interviste soggetti coinvolti #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_analisiContesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        rounded: true
-        url: "/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/" #M
-        text: | #C
-          Intraprendi conversazioni costruttive con tutti gli attori coinvolti nel contesto del servizio
-        tag:
-          label: Kit di design #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-            
-      # CARD CHILDREN ACTION
-      - title: Questionario online #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_analisiContesto.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        rounded: true
-        url: "/risorse-per-progettare/comprendere/questionario-online/" #M
-        text: | #C
-          Svolgi un'indagine per raccogliere informazioni sul punto di vista degli utenti
-        tag:
-          label: Kit di design #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
             
       # CARD CHILDREN ACTION
       - title: Esperienza utente #C
@@ -456,15 +390,63 @@ components:
             isShare: true
             
       # CARD CHILDREN ACTION
-      - title: Co-progetta l'esperienza d'uso #C
+      - title: Web analytics #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_esperienzautente.svg #I
         iconImgAlt: Alt lorem ipsum #C
         rounded: true
-        url: "/risorse-per-progettare/progettare/co-progettazione/co-progetta-l-esperienza-d-uso/" #M
+        url: "/risorse-per-progettare/validare/web-analytics/" #M
         text: | #C
-          Organizza un workshop dedicato all’esperienza di un servizio digitale. Identifica un obiettivo chiaro e condiviso e poi definisci gli aspetti organizzativi e logistici.
+          Osserva e analizza i comportamenti degli utenti partendo dai dati di utilizzo del servizio
+        tag:
+          label: Kit di design #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true 
+            
+      # CARD CHILDREN ACTION
+      - title: Prototipazione #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "/risorse-per-progettare/progettare/prototipazione/" #M
+        text: | #C
+          Progetta l’esperienza-utente del servizio realizzando un prototipo a bassa fedeltà dell’interfaccia
+        tag:
+          label: Kit di design #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true 
+            
+      # CARD CHILDREN ACTION
+      - title: Individua i contenuti #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "/risorse-per-progettare/progettare/architettura-dell-informazione/individua-i-contenuti/" #M
+        text: | #C
+          Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni che dovrebbe avere il futuro touchpoint digitale del servizio.
         tag:
           label: Attività del kit #C
         share: #AUTO
@@ -480,13 +462,13 @@ components:
             isShare: true 
             
       # CARD CHILDREN ACTION
-      - title: Intervistare i cittadini per creare servizi pubblici più efficaci #C
+      - title: Una grammatica dei servizi pubblici digitali #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_esperienzautente.svg #I
         iconImgAlt: Alt lorem ipsum #C
         rounded: true
-        url: "https://medium.com/designers-italia/intervistare-cittadini-per-creare-servizi-pubblici-pi%C3%B9-efficaci-607612efb183" #M
+        url: "https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef" #M
         text: | #C
         tag:
           label: Articolo Medium #C
@@ -503,16 +485,17 @@ components:
             isShare: true 
             
       # CARD CHILDREN ACTION
-      - title: Il valore della community di Designers Italia e Developers Italia #C
+      - title: Il sito comunale #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_esperienzautente.svg #I
         iconImgAlt: Alt lorem ipsum #C
         rounded: true
-        url: "https://medium.com/designers-italia/il-valore-della-community-per-designers-italia-e-developers-italia-bd486dff2a6d" #M
+        url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
         text: | #C
+          Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti.
         tag:
-          label: Articolo Medium #C
+          label: Scheda operativa #C
         share: #AUTO
           btnId: shareButton
           button:
@@ -524,7 +507,31 @@ components:
               color: secondary
           list:
             isShare: true 
-
+            
+      # CARD CHILDREN ACTION
+      - title: I servizi digitali #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImgAlt: Alt lorem ipsum #C
+        rounded: true
+        url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
+        text: | #C
+          Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi.
+        tag:
+          label: Scheda operativa #C
+        share: #AUTO
+          btnId: shareButton
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true 
+            
      # # CARD CHILDREN ACTION
      # - title: Titolo sezione intera, eg. Design system #C
      #   fullHeight: true
