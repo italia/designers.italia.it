@@ -15,12 +15,12 @@ const FilterCards = ({
   button,
   cards,
   col2,
-  nospace
+  noSpace
 }) => {
 
   let styles = 'filter-cards px-3 p-md-0'
 	+ `${background ? ' bg-'+background : ''}`
-  + `${nospace ? '' : ' py-5 py-lg-6'}`
+  + `${noSpace ? '' : ' py-5 py-lg-6'}`
   + `${col2 ? ' two-columns' : ''}`
 
   let cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'

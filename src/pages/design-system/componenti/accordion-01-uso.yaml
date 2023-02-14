@@ -32,36 +32,45 @@ componentVariant:
   #         color: primary
 
 sectionsEditorial:
+
   - full: true
     noSpace: true
-    title: Come usarlo al meglio
-  - full: true
-    noSpace: true
-    background: null
     components:
       - name: TextImageCta
         noSpace: false
-      - name: TextImageCta
-        noSpace: true
-        # title: In lavorazione
+        title: Quando usarlo
+        headingLevel: 2
         text: |
-          *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
-          Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
+          Il componente Accordion permette di espandere e collassare delle sezioni con contenuti molto lunghi e non principali. L’intestazione delle sezioni dà una panoramica dei contenuti e permette all’utente di scegliere quali leggere. 
+      
+  - full: true
+    noSpace: true
+    components:
       - name: TextImageCta
-        noSpace: true
-        title: Va bene
+        noSpace: false
+        title: Come usarlo
+        headingLevel: 2
         text: |
-         *In stesura*
-      - name: TextImageCta
-        noSpace: true
-        title: Non va bene
-        text: |
-         *In stesura*
-      - name: TextImageCta
-        noSpace: true
-        title: Considerazioni sui contenuti
-        text: |
-         *In stesura*
+          - Per ridurre lo scorrimento di contenuti testuali lunghi e non cruciali, soprattutto su mobile.
+          - Per dare un’anteprima di contenuti correlati tra loro.
+          - Per organizzare e collegare contenuti simili che si trovano su altre pagine.
+          - Per permettere all’utente di mostrare o nascondere contenuti che gli sono rilevanti.
+
+          #### Attenzione a
+          - Non nascondere in un accordion informazioni importanti che devono essere lette dagli utenti.
+          - Non usare l’accordion su pagine che devono essere stampate.
+          - Non usare l’accordion per contenuti molto articolati graficamente, ad esempio con immagini e icone.
+          
+          #### Buone pratiche sui contenuti
+          - I titoli delle sezioni dell’accordion devono essere il più breve possibile, rimanendo comunque chiari e descrittivi del contenuto della sezione.
+          - Ogni titolo deve essere formattato come un heading (H2-H4) appropriato all’informazione dell’architettura della pagina.
+          - Il contenuto di sezione può essere diviso in paragrafi e includere sottotitoli di paragrafo, se necessario.
+
+          #### Alternative a questo componente
+          - **Tabs**: mostrano i contenuti senza spingere altre sezioni verso il fondo della pagina e sono utili quando l’utente deve passare velocemente da una sezione all’altra.
+          - **Collapse**: visivamente meno prominente, utile quando ci sono una o due sezioni di contenuti brevi e meno importanti.
+
+          
 
   - full: true
     noSpace: false
