@@ -233,10 +233,7 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          #title: Finalità #C
-          #headingLevel: 2
-          #text: | #C
-          #  progettare, realizzare e mantenere siti internet e servizi digitali utili e facili da usare, secondo una metodologia di progettazione centrata sull’utente.
+          noSpace: true
           ctas: 
             - label: "Vai all'articolo" #C
               url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/requisiti.html#semplicita-di-consultazione-ed-esperienza-d-uso #M
@@ -249,14 +246,31 @@ components:
                 hidden: true
                 size: sm
                 addonClasses: ms-2
+                
+    - title: Perchè è importante #C
+      menu: false
+      centered: true
+      background: light
+      # text: | #C
+      components: 
+              
+        - name: TextImageCta
+          noSpace: true
+          # title: Perché è importante #C
+          # headingLevel: 2
+          text: | #C
+            Coinvolgere l’utente dall’inizio della progettazione, analizzando i suoi bisogni e fino alla fase di sviluppo, è il miglior modo per assicurarsi che il servizio sia utile ed efficace. Infatti, mentre la tecnologia è del tutto prevedibile, la maniera in cui gli esseri umani interagiscono con essa è quasi del tutto imprevedibile. 
 
+            Ottenere dei riscontri fin dal principio del progetto serve a ridurre i costi di realizzazione del sito o servizio, perché già modellato sui bisogni dell'utente e quindi meno soggetto a modifiche. 
+
+        
   highlightCards:
     id: HC1
     title: Azioni previste dal requisito #C
     # text: Le schede informative che raccordano Linee guida, Manuale operativo e strumenti #C
     col4: false
-    noSpace: true
-    nopadtop: true
+    noSpace: false
+    nopadtop: false
     hasCustomCols: true
 
     # CARDS
@@ -269,7 +283,7 @@ components:
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
-        # url: "#" #M
+        url: "azione-1/" #M
         rounded: true
 
       # CARD CHILDREN
@@ -289,31 +303,21 @@ components:
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
-        # url: "#" #M
-        rounded: true
-        
-      # CARD CHILDREN
-      - title: Azione 4
-        text: |
-          **SI DEVE** adottare un approccio progettuale orientato alle persone capace di coinvolgere, ascoltare e osservare gli utenti nelle fasi di analisi, ideazione, progettazione, sviluppo e manutenzione del sito/servizio in un’ottica di miglioramento continuo, secondo una logica iterativa, utilizzando ove possibile metodologie agile
-        # titleSmall: true
-        fullHeight: true
-        customCol: col-lg-9
-        # url: "#" #M
+        url: "azione-3/" #M
         rounded: true
 
       # CARD CHILDREN
-      - title: Azione 5
+      - title: Azione 4
         text: |
           **SI DEVONO** mappare gli scenari d’uso e le funzionalità del sito/servizio dal punto di vista degli utenti per creare prototipi che verifichino la soluzione progettuale adottata e la sua usabilità
         # titleSmall: true
         fullHeight: true
         customCol: col-lg-9
-        # url: "#" #M
+        url: "azione-4/" #M
         rounded: true
 
       # CARD CHILDREN
-      - title: Azione 6
+      - title: Azione 5
         text: |
           **SI DEVONO** tenere presenti i risultati delle ricerche effettuate con utenti per la definizione dell’architettura dell’informazione
         # titleSmall: true
@@ -323,7 +327,7 @@ components:
         rounded: true
         
       # CARD CHILDREN
-      - title: Azione 7
+      - title: Azione 6
         text: |
           **SI DEVONO** condurre test di usabilità per comprendere se i servizi digitali, esistenti o in fase di progettazione, corrispondano alle esigenze degli utenti
         # titleSmall: true
@@ -333,7 +337,7 @@ components:
         rounded: true
         
       # CARD CHILDREN
-      - title: Azione 8
+      - title: Azione 7
         text: |
           **SI DEVONO** utilizzare ontologie e vocabolari controllati standard della Pubblica Amministrazione
         # titleSmall: true
@@ -343,7 +347,7 @@ components:
         rounded: true
         
       # CARD CHILDREN
-      - title: Azione 9
+      - title: Azione 8
         text: |
           **SI DEVE** utilizzare un linguaggio e un’organizzazione dei contenuti adeguati all’utente destinatario
         # titleSmall: true
@@ -353,7 +357,7 @@ components:
         rounded: true
         
       # CARD CHILDREN
-      - title: Azione 10
+      - title: Azione 9
         text: |
           **SI DEVE** rendere facilmente trovabile, mediante motori di ricerca esterni (ove consentito dalle vigenti normative) e interni al sito, il contenuto pubblicato
         # titleSmall: true
@@ -363,7 +367,7 @@ components:
         rounded: true
 
       # CARD CHILDREN
-      - title: Azione 11
+      - title: Azione 10
         text: |
           **SI DOVREBBE** pubblicare, su ogni pagina del sito internet, la data dell’ultimo aggiornamento o verifica del contenuto
         # titleSmall: true
@@ -381,6 +385,7 @@ components:
       menu: false
       centered: true
       background: null
+      noSpace: true
       components:
 
         # TXT BLOCK
@@ -392,6 +397,23 @@ components:
            
            - **Linee Guida sull’interoperabilità tecnica delle Pubbliche Amministrazioni**  
              Adottate da AGID con Determinazione n. 547 del 1° ottobre 2021.
+             
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Note di lettura
+          headingLevel: 2
+          ctas: 
+            - label: "Vai alle note di lettura" #C
+              url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/note-lettura.html #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
     # # —
     # # EDITORIAL #C #I
