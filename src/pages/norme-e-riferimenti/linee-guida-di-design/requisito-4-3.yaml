@@ -233,10 +233,6 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          #title: Finalità #C
-          #headingLevel: 2
-          #text: | #C
-          #  progettare, realizzare e mantenere siti internet e servizi digitali utili e facili da usare, secondo una metodologia di progettazione centrata sull’utente.
           ctas: 
             - label: "Vai all'articolo" #C
               url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/requisiti.html#semplicita-di-consultazione-ed-esperienza-d-uso #M
@@ -253,17 +249,27 @@ components:
     - title: Perchè è importante #C
       menu: false
       centered: true
-      background: null
-      text: | #C
-        Coinvolgere l’utente dall’inizio della progettazione, analizzando i suoi bisogni e fino alla fase di sviluppo, è il miglior modo per assicurarsi che il servizio sia utile ed efficace. Infatti, mentre la tecnologia è del tutto prevedibile, la maniera in cui gli esseri umani interagiscono con essa è quasi del tutto imprevedibile. 
-        Ottenere dei riscontri fin dal principio del progetto serve a ridurre i costi di realizzazione del sito o servizio, perché già modellato sui bisogni dell'utente e quindi meno soggetto a modifiche. 
+      background: light
+      # text: | #C
+      components: 
+              
+        - name: TextImageCta
+          noSpace: true
+          # title: Perché è importante #C
+          # headingLevel: 2
+          text: | #C
+            Coinvolgere l’utente dall’inizio della progettazione, analizzando i suoi bisogni e fino alla fase di sviluppo, è il miglior modo per assicurarsi che il servizio sia utile ed efficace. Infatti, mentre la tecnologia è del tutto prevedibile, la maniera in cui gli esseri umani interagiscono con essa è quasi del tutto imprevedibile. 
+
+            Ottenere dei riscontri fin dal principio del progetto serve a ridurre i costi di realizzazione del sito o servizio, perché già modellato sui bisogni dell'utente e quindi meno soggetto a modifiche. 
+
+        
   highlightCards:
     id: HC1
     title: Azioni previste dal requisito #C
     # text: Le schede informative che raccordano Linee guida, Manuale operativo e strumenti #C
     col4: false
-    noSpace: true
-    nopadtop: true
+    noSpace: false
+    nopadtop: false
     hasCustomCols: true
 
     # CARDS
@@ -378,6 +384,7 @@ components:
       menu: false
       centered: true
       background: null
+      noSpace: true
       components:
 
         # TXT BLOCK
@@ -389,23 +396,23 @@ components:
            
            - **Linee Guida sull’interoperabilità tecnica delle Pubbliche Amministrazioni**  
              Adottate da AGID con Determinazione n. 547 del 1° ottobre 2021.
-    
-    - title: Note di lettura #C
-      menu: false
-      centered: true
-      background: null
-      components:  
              
         # TXT BLOCK
         - name: TextImageCta
-          #title: Note di lettura #C
-          text: | #C
-           Conformemente alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le linee guida utilizzano le seguenti parole chiave e relativa interpretazione:
-           
-           - DEVE o DEVONO, indicano un requisito obbligatorio per rispettare la linea guida;
-           - NON DEVE o NON DEVONO o NON PUÒ o NON POSSONO, indicano un assoluto divieto delle specifiche;
-           - DOVREBBE o NON DOVREBBE, indicano che le implicazioni devono essere comprese e attentamente pesate prima di scegliere approcci alternativi;
-           - PUÒ o POSSONO o l’aggettivo OPZIONALE, indica che il lettore può scegliere di applicare o meno senza alcun tipo di implicazione la specifica.
+          title: Note di lettura
+          headingLevel: 2
+          ctas: 
+            - label: "Vai alle note di lettura" #C
+              url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/note-lettura.html #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
     # # —
     # # EDITORIAL #C #I
