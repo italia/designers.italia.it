@@ -336,7 +336,7 @@ components:
         tag:
           label: Kit di design #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButton1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -351,7 +351,7 @@ components:
       - title: Test di usabilità #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImg: /icons/kit_testusability.svg #I 
         iconImgAlt: Alt lorem ipsum #C
         rounded: true
         url: "/risorse-per-progettare/validare/test-di-usabilita/" #M
@@ -360,7 +360,7 @@ components:
         tag:
           label: Kit di design #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButton2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -375,8 +375,8 @@ components:
       - title: Web analytics #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        iconImg: /icons/kit_analytics.svg #I
+        iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/validare/web-analytics/" #M
         text: | #C
@@ -384,7 +384,7 @@ components:
         tag:
           label: Kit di design #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButton3
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -399,8 +399,8 @@ components:
       - title: Prototipazione #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        iconImg: /icons/kit_prototipazione.svg #I
+        iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/progettare/prototipazione/" #M
         text: | #C
@@ -408,7 +408,7 @@ components:
         tag:
           label: Kit di design #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButton4
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -423,8 +423,8 @@ components:
       - title: Individua i contenuti #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
-        iconImgAlt: Alt lorem ipsum #C
+        iconImg: /icons/kit_architettura_scenari.svg #I
+        iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/progettare/architettura-dell-informazione/individua-i-contenuti/" #M
         text: | #C
@@ -432,7 +432,7 @@ components:
         tag:
           label: Attività del kit #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButton5
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -442,44 +442,21 @@ components:
               color: secondary
           list:
             isShare: true 
-            
-      # CARD CHILDREN ACTION
-      - title: Una grammatica dei servizi pubblici digitali #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        rounded: true
-        url: "https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef" #M
-        text: | #C
-        tag:
-          label: Articolo Medium #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true 
-            
-      # CARD CHILDREN ACTION
+
+     # CARD CHILDREN
       - title: Il sito comunale #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/comuni.png
+        alt: ""
+        imgRatio: 4x3
+        imgPlaceholder: false
+        titleSmall: false
         fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        rounded: true
-        url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
-        text: | #C
-          Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti.
+        url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/" #M
         tag:
           label: Scheda operativa #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -488,22 +465,60 @@ components:
               size: sm
               color: secondary
           list:
-            isShare: true 
-            
-      # CARD CHILDREN ACTION
+            isShare: true
+      
+      # CARD CHILDREN
       - title: I servizi digitali #C
+        text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
+        # img: 
+        # alt: ""
+        # imgRatio: 4x3
+        # imgPlaceholder: true
+        titleSmall: false
         fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
-        iconImgAlt: Alt lorem ipsum #C
-        rounded: true
         url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
-        text: | #C
-          Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi.
         tag:
           label: Scheda operativa #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButtonCard2
+          button:
+            ariaLabel: Condividi
+            addonStyle: icon-only-drop
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+      - title: "Una grammatica dei servizi pubblici digitali"
+        headingLevel: 4
+        img: /images/community/articoli-di-approfondimento/una-grammatica-dei-servizi-pubblici-digitali.webp
+        alt: descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef
+        blank: true
+        externalLink:
+          label : Leggi su medium
+          screenReaderText: " l'articolo completo"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Marco Maria Pedrazzo
+        chips:
+          - color : secondary
+            label : Quadro sinottico
+            url : "#"
+            blank: false
+          - color : secondary
+            label : Servizi pubblici digitali
+            url : "#"
+            blank: false
+        share:
+          btnId: shareButtonCardMedium1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -512,7 +527,9 @@ components:
               size: sm
               color: secondary
           list:
-            isShare: true 
+            isShare: true
+            
+      
             
      # # CARD CHILDREN ACTION
      # - title: Titolo sezione intera, eg. Design system #C
