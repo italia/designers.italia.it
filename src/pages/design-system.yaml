@@ -33,12 +33,8 @@ seo:
   canonical: null
   pathname: /design-system/ #M
 
-# ————————————————————————————————————————————
-# DATE, LICENSE, URL
-# ————————————————————————————————————————————
 lastUpdate:
   title: Pagina aggiornata il
-  date: 15 dicembre 2022 #C #AUTO
   licence:
     label: Licenza CC BY SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
@@ -50,7 +46,6 @@ lastUpdate:
     blank: true
   edit:
     label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it  #M #AUTO
     icon:
       icon: sprites.svg#it-pencil
       size: sm
@@ -67,14 +62,6 @@ components:
   # ///////////////////
   hero:
     background: primary
-    breadcrumbs: #M #AUTO
-      separator: '>'
-      items:
-        - label: Inizio
-          active: false
-          url: /
-        - label : Design system #C
-          active: true
     title: Design system del Paese #C
     subtitle: "L’insieme di indicazioni e risorse per realizzare siti e servizi pubblici di qualità, efficienti e accessibili" #C
     pretext:
@@ -224,12 +211,12 @@ components:
           btnStyle: primary
           url: "come-iniziare/" #M
           addonStyle: mb-3 mb-sm-0
-          disabled: true
+          # disabled: true
         - label : Per designer #C
           btnStyle: outline-secondary
-          url: "#" #M
+          url: "come-iniziare/per-designer/" #M
           addonStyle: mb-3 mb-sm-0
-          disabled: true
+          # disabled: true
         - label : Per sviluppatori #C
           btnStyle: outline-secondary
           url: "#" #M

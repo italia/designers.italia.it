@@ -32,36 +32,37 @@ componentVariant:
   #         color: primary
 
 sectionsEditorial:
+
   - full: true
     noSpace: true
-    title: Come usarlo al meglio
-  - full: true
-    noSpace: true
-    background: null
     components:
       - name: TextImageCta
         noSpace: false
-      - name: TextImageCta
-        noSpace: true
-        # title: In lavorazione
+        title: Quando usarlo
+        headingLevel: 2
         text: |
-          *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
-          Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
+         _In stesura_
+
+  - full: true
+    noSpace: true
+    components:
       - name: TextImageCta
-        noSpace: true
-        title: Va bene
+        noSpace: false
+        title: Come usarlo
+        headingLevel: 2
         text: |
-         *In stesura*
-      - name: TextImageCta
-        noSpace: true
-        title: Non va bene
-        text: |
-         *In stesura*
-      - name: TextImageCta
-        noSpace: true
-        title: Considerazioni sui contenuti
-        text: |
-         *In stesura*
+          _In stesura_
+
+          #### Attenzione a
+          _In stesura_
+          
+          #### Buone pratiche sui contenuti
+          _In stesura_
+
+          #### Alternative a questo componente
+          _In stesura_
+          
+
 
   - full: true
     noSpace: false
@@ -104,7 +105,7 @@ sectionsEditorial:
             - tag:
                 label: Pronto
                 addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-            - text: Comprensibile, prevedibile, gestione semplice dell’errore
+            - text: "Comprensibile, prevedibile, gestione semplice dell’errore"
 
       - name: TextImageCta
         # title: Feedback

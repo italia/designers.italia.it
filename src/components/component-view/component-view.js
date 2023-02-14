@@ -113,7 +113,7 @@ const ComponentView = ({
           </div>
         }
         <span className="visually-hidden">Inizio componente:</span> {/* xxx move string to src/data/ */}
-        <iframe src={`/examples/${slugify(name).toLowerCase()}.html`} title="Titolo componente" class="w-100 iframe-example"></iframe>
+        <iframe src={`/examples/${slugify(name).toLowerCase()}.html`} title="Titolo componente" className="w-100 iframe-example"></iframe>
         <span className="visually-hidden">Fine componente.</span>  {/* xxx move string to src/data/ */}
       </div>
       <div className="accordion accordion-left-icon" id={accId}>
@@ -125,7 +125,7 @@ const ComponentView = ({
               </button>
             </h2>
             <div className="d-flex justify-content-between align-items-center">
-              <div aria-hidden="true" className="me-4">
+              <div aria-hidden="true" className="me-4 d-none d-sm-block">
                 {content &&
                   <Checkbox id={idPrefix + '-' + 'wrap'} label='Wrap' customStyle={'me-3'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
                 }

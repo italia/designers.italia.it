@@ -32,12 +32,8 @@ seo:
   canonical: null
   pathname: /level1/level2/level3/level4/ #M
 
-# ————————————————————————————————————————————
-# DATE, LICENSE, URL
-# ————————————————————————————————————————————
 lastUpdate:
   title: Pagina aggiornata il
-  date: 15 dicembre 2022  #C #AUTO
   licence:
     label: Licenza CC BY SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
@@ -49,7 +45,6 @@ lastUpdate:
     blank: true
   edit:
     label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it #M #AUTO
     icon:
       icon: sprites.svg#it-pencil
       size: sm
@@ -118,23 +113,6 @@ components:
   # ///////////////////
   hero:
     background: null
-    breadcrumbs : #M #AUTO
-      separator : '>'
-      items :
-        - label : Inizio
-          active: false
-          url: /
-        - label : Level1
-          active: false
-          url: ../../../
-        - label : Level2
-          url: ../../
-          active: false
-        - label : Level3
-          url: ../
-          active: false
-        - label : Level4
-          active: true
     title: Level 4 #C
     subtitle: Subtitle #C
     tag:
