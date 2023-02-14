@@ -199,7 +199,8 @@ components:
               - tag:
                   label: 1.0.0-alpha.2 #AUTO
                   addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-              - simpleCta :
+              - text: A seguire
+              #- simpleCta :
                   # label: Kit
                   # url: https://www.figma.com/community/file/1105848677422572920
                   # blank: true
@@ -238,32 +239,22 @@ components:
                     icon: sprites.svg#it-github
                     size: sm
 
-            # - cols:
-            #   - text: React 
-            #     scope: row
-            #   - tag:
-            #       label: Da rivedere
-            #       addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-            #   - simpleCta :
-            #       label: Scheda storybook
-            #       url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-accordion--page
-            #       blank: true
-            #       screenReaderText: " (si apre in una nuova finestra)"
-            #       icon:
-            #         icon: sprites.svg#it-external-link
-            #         size: sm
-            # - cols:
-            #   - text: Angular 
-            #     scope: row
-            #   - tag:
-            #       label: Non presente
-            #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-            #   - text: null
-              
-            # - cols:
-            #   - text: Vue 
-            #     scope: row
-            #   - tag:
-            #       label: Non presente
-            #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-            #   - text: null
+    - full: true
+      noSpace: false
+      title: Changelog documentazione (questo sito)
+      # text: Un insieme di regole che permettono di manutenere ed evolvere il design system e le sue risorse con trasparenza e responsabilità
+      background: null
+      components:
+        - name: TextImageCta
+          title: 
+          text: |
+            ### v1.0.0-alpha.2
+            14/02/2023
+            - Nuove schede Per designer, Princìpi e intenzioni, Accessibilità, Versionamento;
+            - nuova struttura parte Uso e accessibilità dei componenti Accordion, Buttons, Dropdown;
+            - migliorata struttura file YAML per l'inserimento contenuti;
+            - corretti bug su gestione menu design system e altri minor.
+
+            ### v1.0.0-alpha.1
+            20/12/2022
+            - Struttura, scheda Linguaggio e componenti Accordion, Buttons e Dropdown. 
