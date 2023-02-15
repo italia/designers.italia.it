@@ -3,11 +3,11 @@
 # ————————————————————————————————————————————
 metadata: 
   template:
-    name: design-system-index
+    name: design-system-detail
 
 seo:
-  name: Linguaggio - Designers Italia
-  description : Progetta contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone.
+  name: Linguaggio
+  description : "Progetta contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
   image : null
   twitterImage: null
   canonical: null
@@ -17,7 +17,7 @@ lastUpdate:
   column: true
   noPadding: true
   title: Pagina aggiornata il
- 
+  date: 24 maggio 2022
   licence:
     label: Licenza CC BY SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
@@ -56,7 +56,7 @@ components:
     background: null
     title: Linguaggio
     column: true
-    subtitle: Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone.
+    subtitle: "Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
    # pretext:
    #   icon:
    #     icon: sprites.svg#it-info-circle
@@ -64,20 +64,6 @@ components:
    #   text: In breve
    # text: |
    #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-    breadcrumbs :
-      separator : '/'
-      items :
-        - label : Inizio
-          active: false
-          url: /
-        - label : Design System
-          active: false
-          url: /design-system/
-        - label : Fondamenti
-          active: false
-          url: /design-system/fondamenti/
-        - label : Linguaggio
-          active: true
     share:
       btnId: shareButtonHero
       button:
@@ -124,14 +110,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer #C
+            label: Designer, Developer, Qui per curiosità #C
           - title: Vuoi
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare #C
+            label: Progettare e sviluppare l'interfaccia utente #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
@@ -140,6 +126,10 @@ components:
         color: secondary
       chips: #C
         - label: Content
+          url: "#"
+          color: primary
+          size: lg
+        - label: Design system
           url: "#"
           color: primary
           size: lg

@@ -17,7 +17,7 @@ lastUpdate:
   column: true
   noPadding: true
   title: Pagina aggiornata il
- 
+  date: 24 maggio 2022
   licence:
     label: Licenza CC BY SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
@@ -64,17 +64,6 @@ components:
       text: In breve
     text: |
       Tra i fondamenti troverai gli strumenti per impostare layout con le giuste dimensioni e proporzioni, stile coerente in bordi, colori e ombre, e contenuti  di facile comprensione. Il tutto garantendo qualità e accessibilità al tuo sito o servizio.
-    breadcrumbs :
-      separator : '/'
-      items :
-        - label : Inizio
-          active: false
-          url: /
-        - label : Design System
-          active: false
-          url: /level1/
-        - label : Fondamenti
-          active: true
     share:
       btnId: shareButtonHero
       button:
@@ -129,6 +118,7 @@ components:
   filterCards:
     id: fundamentCards
     title: Esplora i fondamenti
+    noSpace: true
     # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
     col2: true
     # button:
@@ -141,6 +131,73 @@ components:
     #     color: secondary
     #     addonClasses: ms-1 flex-shrink-0
     cards:
+      - title: Princìpi e intenzioni
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "principi-e-intenzioni/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Il design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione.
+        chips:
+          - label: Progettazione servizi
+            url: "#"
+            color: secondary
+          - label: Accessibilità
+            url: "#"
+            color: secondary
+          - label: Cultura progettuale
+            url: "#"
+            color: secondary
+          - label: Design system
+            url: "#"
+            color: secondary
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+      - title: Accessibilità
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "accessibilita/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
+        chips:
+          - label: Accessibilità
+            url: "#"
+            color: secondary
+          - label: Design system
+            url: "#"
+            color: secondary
+          - label: Inclusione
+            url: "#"
+            color: secondary
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
       - title: Linguaggio
         # img: /images/600x400.png
         # alt: Descrizione immagine
@@ -156,6 +213,9 @@ components:
             label : Content
             url : "#"
             blank: false
+          - label: Design system
+            url: "#"
+            color: secondary
         share:
           btnId: shareButtonCard1
           button:
@@ -168,37 +228,36 @@ components:
           list:
             isShare: true
 
-      # - title: Tono di voce
-      #   # img: /images/600x400.png
-      #   # alt: Descrizione immagine
-      #   imgRatio: 16x9
-      #   imgPlaceholder: false
-      #   url: "tono-di-voce/"
-      #   fullHeight: true
-      #   rounded: true
-      #   text: |
-      #     Descrizione
-      #   chips:
-      #     - color : secondary
-      #       label : Argomento
-      #       url : "#"
-      #       blank: false
-      #     - color : secondary
-      #       label : Argomento
-      #       url : "#"
-      #       blank: false
-      #   share:
-      #     btnId: shareButtonCard1
-      #     button:
-      #       addonStyle: icon-only-drop
-      #       ariaLabel: Condividi
-      #       icon:
-      #         icon: sprites.svg#it-more-items
-      #         size: sm
-      #         color: secondary
-      #     list:
-      #       isShare: true
-    
+      - title: Versionamento
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "versionamento/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Usiamo il versionamento semantico su ogni risorsa del design system del Paese.
+        chips:
+          - label: Organizzazione
+            url: "#"
+            color: secondary
+          - label: Design system
+            url: "#"
+            color: secondary
+        share:
+          btnId: shareButtonCard1
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+            
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
   sectionsEditorial :
@@ -210,48 +269,31 @@ components:
         alt: ""
   
   sectionsEditorial2 :
-    # - fullColumn: true
-    #   noSpace: true
-    #   components:
-    #     - name: ImgFull
-    #       img: /images/image-icons-fullwidth.jpg
-    #       alt: Descrizione immagine grande
     - full: true
-      noSpace: true
-      # title: Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      noSpace: false
       components:
         - name: TextImageCta
           noSpace: true
-          title: 🟡 Presto disponibile
-          text: |
-            Stiamo lavorando all'evoluzione del Design system del Paese e sarà presto disponibile.
-            
-            Puoi contribuire anche tu proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare il kit UI e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento alla documentazione del framework di sviluppo Bootstrap Italia.
-
-    - full: true
-      noSpace: true
-      background: null
-      buttons:
-        - label : Vai al kit UI nella community Figma
-          blank: true
-          btnStyle: primary me-3
-          url: https://www.figma.com/community/file/1105848677422572920
-          addonStyle: mb-3
-          icon:
-            icon: sprites.svg#it-figma
-            size: sm
-            color: white
-            align: middle
-            addonClasses: ms-2
-        - label : Vai al sito di documentazione di Bootstrap Italia
-          btnStyle: primary me-3
-          url: https://italia.github.io/bootstrap-italia/
-          blank: true
-          addonStyle: mb-3 
-          icon:
-            icon: sprites.svg#it-external-link
-            size: sm
-            color: white
-            align: middle
-            addonClasses: ms-2
-
+          text: |   
+            Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare lo UI Kit e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento al framework di sviluppo Bootstrap Italia.
+          ctas:
+          - label: "Vai allo UI Kit nella community Figma " #C
+            url: https://www.figma.com/community/file/1105848677422572920 #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: "Vai a Bootstrap Italia su GitHub " #C
+            url: https://github.com/italia/bootstrap-italia #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
