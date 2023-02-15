@@ -745,20 +745,6 @@ export const query = graphql`
             title
           }
           # background
-          buttons {
-            label
-            blank
-            btnStyle
-            url
-            addonStyle
-            icon {
-              icon
-              size
-              color
-              align
-              addonClasses
-            }
-          }
           title
           text
           menu
