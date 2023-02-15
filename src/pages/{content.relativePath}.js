@@ -102,14 +102,6 @@ export const query = graphql`
             text
           }
           text
-          breadcrumbs {
-            separator
-            items {
-              label
-              active
-              url
-            }
-          }
           share {
             btnId
             button {
