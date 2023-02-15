@@ -1,0 +1,303 @@
+---
+name: Dropdown
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: base
+    
+lastUpdate:
+  title: Pagina aggiornata il
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+    
+components:
+  dropdownSimple:
+    btnId: dropdownSimple
+    button:
+      addonStyle: dropdown-toggle btn-dropdown
+      label: Apri dropdown
+      iconRight: true
+      icon:
+        icon: sprites.svg#it-expand
+        size: sm
+        color: primary
+        addonClasses: icon-expand
+    list:
+      listItems:
+        - url: "#"
+          label: Azione 1
+        - url: "#"
+          label: Azione 2
+        - url: "#"
+          label: Azione 3
+  dropdownButtonVariant:
+    - btnId: dropdownBtnVariant
+      button:
+        btnStyle: primary
+        addonStyle: dropdown-toggle
+        label: Apri dropdown
+        iconRight: true
+        icon:
+          icon: sprites.svg#it-expand
+          size: sm
+          color: light
+          addonClasses: icon-expand
+      list:
+        listItems:
+          - url: "#"
+            label: Azione 1
+          - url: "#"
+            label: Azione 2
+          - url: "#"
+            label: Azione 3
+    - btnId: dropdownBtnVariant2
+      button:
+        btnStyle: secondary
+        addonStyle: dropdown-toggle
+        label: Apri dropdown
+        iconRight: true
+        icon:
+          icon: sprites.svg#it-expand
+          size: sm
+          color: light
+          addonClasses: icon-expand
+      list:
+        listItems:
+          - url: "#"
+            label: Azione 1
+          - url: "#"
+            label: Azione 2
+          - url: "#"
+            label: Azione 3
+    - btnId: dropdownBtnVariant3
+      button:
+        btnStyle: danger
+        addonStyle: dropdown-toggle
+        label: Apri dropdown
+        iconRight: true
+        icon:
+          icon: sprites.svg#it-expand
+          size: sm
+          color: light
+          addonClasses: icon-expand
+      list:
+        listItems:
+          - url: "#"
+            label: Azione 1
+          - url: "#"
+            label: Azione 2
+          - url: "#"
+            label: Azione 3
+  dropdownLink:
+    btnId: dropdownLink
+    button:
+      addonStyle: dropdown-toggle btn-dropdown
+      label: Apri dropdown
+      iconRight: true
+      url: "#"
+      icon:
+        icon: sprites.svg#it-expand
+        size: sm
+        color: primary
+        addonClasses: icon-expand
+    list:
+      listItems:
+        - url: "#"
+          label: Azione 1
+        - url: "#"
+          label: Azione 2
+        - url: "#"
+          label: Azione 3
+  dropUp:
+    btnId: dropUp
+    dropUp: true
+    button:
+      addonStyle: dropdown-toggle btn-dropdown
+      label: Apri dropup
+      iconRight: true
+      icon:
+        icon: sprites.svg#it-expand
+        size: sm
+        color: primary
+        addonClasses: icon-expand
+    list:
+      listItems:
+        - url: "#"
+          label: Azione 1
+        - url: "#"
+          label: Azione 2
+        - url: "#"
+          label: Azione 3
+  dropEnd:
+    btnId: dropEnd
+    dropEnd: true
+    button:
+      addonStyle: dropdown-toggle btn-dropdown
+      label: Apri dropend
+      iconRight: true
+      icon:
+        icon: sprites.svg#it-expand
+        size: sm
+        color: primary
+        addonClasses: icon-expand
+    list:
+      listItems:
+        - url: "#"
+          label: Azione 1
+        - url: "#"
+          label: Azione 2
+        - url: "#"
+          label: Azione 3
+  dropStart:
+    btnId: dropStart
+    dropStart: true
+    button:
+      addonStyle: dropdown-toggle btn-dropdown
+      label: Apri dropstart
+      iconLeft: true
+      icon:
+        icon: sprites.svg#it-expand
+        size: sm
+        color: primary
+        addonClasses: icon-expand
+    list:
+      listItems:
+        - url: "#"
+          label: Azione 1
+        - url: "#"
+          label: Azione 2
+        - url: "#"
+          label: Azione 3
+  dropdownMenu:
+    isMenu: true
+    isDropdown: true
+    listItems:
+      - url: "#"
+        label: Azione 1
+        active: true
+        visuallyHidden: Attivo
+      - url: "#"
+        label: Azione 2
+      - url: "#"
+        label: Azione 3
+  dropdownMenuDisabled:
+    isMenu: true
+    isDropdown: true
+    listItems:
+      - url: "#"
+        label: Azione 1
+        disabled: true
+      - url: "#"
+        label: Azione 2
+      - url: "#"
+        label: Azione 3
+  dropdownMenuSeparator:
+    isMenu: true
+    isDropdown: true
+    title: Intestazione
+    listItems:
+      - url: "#"
+        label: Azione 1
+      - url: "#"
+        label: Azione 2
+      - divider: true
+      - url: "#"
+        label: Azione 3
+  dropdownMenuBig:
+    isMenu: true
+    isDropdown: true
+    textLarge: true
+    listItems:
+      - url: "#"
+        label: Azione 1
+      - url: "#"
+        label: Azione 2
+      - url: "#"
+        label: Azione 3
+  dropdownMenuFull:
+    isMenu: true
+    isDropdown: true
+    listItems:
+      - url: "#"
+        label: Azione 1
+      - url: "#"
+        label: Azione 2
+      - url: "#"
+        label: Azione 3
+
+  dropdownMenuRightIcon:
+    isMenu: true
+    isDropdown: true
+    listItems:
+      - url: "#"
+        label: Azione 1
+        iconRight : true
+        icon:
+          icon: sprites.svg#it-star-outline
+          size: sm
+          color: primary
+      - url: "#"
+        label: Azione 2
+        iconRight : true
+        icon:
+          icon: sprites.svg#it-star-outline
+          size: sm
+          color: primary
+      - url: "#"
+        label: Azione 3
+        iconRight : true
+        icon:
+          icon: sprites.svg#it-star-outline
+          size: sm
+          color: primary
+  dropdownMenuLeftIcon:
+    isMenu: true
+    isDropdown: true
+    listItems:
+      - url: "#"
+        label: Azione 1
+        iconLeft : true
+        icon:
+          icon: sprites.svg#it-star-outline
+          size: sm
+          color: primary
+      - url: "#"
+        label: Azione 2
+        iconLeft : true
+        icon:
+          icon: sprites.svg#it-star-outline
+          size: sm
+          color: primary
+      - url: "#"
+        label: Azione 3
+        iconLeft : true
+        icon:
+          icon: sprites.svg#it-star-outline
+          size: sm
+          color: primary
+
+
+
+
+
+
+
+
+

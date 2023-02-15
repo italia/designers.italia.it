@@ -1,0 +1,232 @@
+---
+name: Cards
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: base
+
+lastUpdate:
+  title: Pagina aggiornata il
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+    
+components:
+  cards:
+    - title: Titolo articoloz
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 16x9
+      imgPlaceholder: false
+      url: "#"
+      blank: true
+      externalLink:
+        label : Leggi su medium
+        screenReaderText: "l'articolo completo"
+        icon:
+          icon: sprites.svg#it-external-link
+          size: xs
+          align: middle
+      moreInfo: di Nome Cognome e Nome Cognome
+      chips:
+        - color : secondary
+          label : Accessibilità
+          url : "#"
+          blank: false
+        - color : secondary
+          label : Servizi
+          url : "#"
+          blank: false
+        - color : secondary
+          label : PA Digitale 2026
+          url : "#"
+          blank: false
+      share:
+        btnId: shareButtonCard1
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+    - title: Titolo notizia
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 16x9
+      imgPlaceholder: false
+      url: "#"
+      text: |
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed pulvinar lacus. Donec iaculis scelerisque ipsum ac semper. Praesent sit amet velit sed tortor laoreet placerat.
+      externalLink:
+        label : Leggi su medium
+        url: "#"
+        blank: true
+        screenReaderText: "l'articolo completo"
+        icon:
+          icon: sprites.svg#it-external-link
+          size: xs
+          align: middle
+      chips:
+        - color : secondary
+          label : Accessibilità
+          url : "#"
+          blank: false
+        - color : secondary
+          label : Servizi
+          url : "#"
+          blank: false
+        - color : secondary
+          label : PA Digitale 2026
+          url : "#"
+          blank: false
+      share:
+        btnId: shareButtonCard2
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+    - title: Titolo evento
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 16x9
+      imgPlaceholder: false
+      dateOverlay:
+        day: 22
+        month: Aprile
+      url: "#"
+      tag:
+        label: Tipologia evento
+      share:
+        btnId: shareButtonCard3
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+    - title: Titolo evento
+      imgRatio: 16x9
+      imgPlaceholder: true
+      iconOverlay:
+        icon: sprites.svg#it-camera
+        ariaLabel: Immagini
+      url: "#"
+      tag:
+        label: Tipologia evento
+      share:
+        btnId: shareButtonCard4
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+    - title: Titolo evento
+      imgRatio: 16x9
+      iconImg: /images/kit-analisi-contesto.svg
+      iconImgAlt: Descrizione immagine
+      url: "#"
+      text: |
+        Descrizione **test**
+      tag:
+        label: Tipologia evento
+      share:
+        btnId:
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+    - title: Designers Italia a Wired Next Festival
+      cardEvent: true
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 16x9
+      imgPlaceholder: false
+      dateOverlay:
+        day: 22
+        month: Aprile
+      url: "#"
+      text: |
+        Descrizione **test**
+      externalLink:
+        label : Leggi su medium
+        screenReaderText: "l'articolo completo"
+        icon:
+          icon: sprites.svg#it-external-link
+          size: xs
+          align: middle
+      tag:
+        label: Invito
+      share:
+        btnId: shareButtonCard5
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+    - title: "Community Call: il bottone SPID e gli altri"
+      titleSmall: true
+      moreInfo : durata 21 minuti
+      cardEvent: true
+      img: /images/600x400.png
+      alt: Descrizione immagine
+      imgRatio: 16x9
+      imgPlaceholder: false
+      iconOverlay:
+        icon: sprites.svg#it-camera
+        ariaLabel: Immagini
+      url: "#"
+      tag:
+        label: Registrazione
+      share:
+        btnId: shareButtonCard6
+        button:
+          addonStyle: icon-only-drop
+          ariaLabel: Condividi
+          icon:
+            icon: sprites.svg#it-more-items
+            size: sm
+            color: secondary
+        list:
+          isShare: true
+
+

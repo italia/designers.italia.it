@@ -1,0 +1,234 @@
+title: Progettazione
+sectionsEditorial:
+
+  - full: true
+    noSpace: true
+    title: Anatomia
+  - full: true
+    noSpace: true
+    background: null
+    components:
+      - name: TextImageCta
+        noSpace: false
+      - name: TextImageCta
+        noSpace: false
+        text: |
+          *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
+          Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
+      - name: TextImageCta
+        noSpace: true
+        title: Contenuti
+        text: |
+         *In stesura*
+      - name: TextImageCta
+        noSpace: true
+        title: Comportamento
+        text: |
+         *In stesura*
+      - name: TextImageCta
+        noSpace: true
+        title: Interazione
+        text: |
+         *In stesura*
+      - name: TextImageCta
+        noSpace: true
+        title: Specifiche di design
+        # lead: Eventuale lead paragraph
+        text: |
+         *In stesura*
+
+          
+          
+  - full: true
+    noSpace: false
+    title: Kit UI
+    text: La scatola per costruire prototipi hi-fi con il design system del Paese
+    background: null
+    buttons:
+      - label : Vai al kit nella community Figma
+        blank: true
+        btnStyle: primary me-3
+        url: https://www.figma.com/community/file/1105848677422572920
+        icon:
+          icon: sprites.svg#it-figma
+          size: sm
+          color: white
+          align: middle
+          addonClasses: ms-2
+
+      # - label : Apri la repository con tutte le versioni
+      #   target: blank
+      #   btnStyle: outline-secondary
+      #   url: "#"
+      #   icon:
+      #     icon: sprites.svg#it-github
+      #     size: sm
+      #     color: secondary
+      #     align: middle
+      #     addonClasses: ms-2
+
+  - full: true
+    noSpace: false
+    title: Design Tokens
+    # text: 
+    components:
+
+      - name: TextImageCta
+        text: |
+           *Stiamo lavorando a questo contenuto e sarà presto disponibile in forma completa.   
+           La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI. 
+           Quelle che seguono fanno riferimento al componente base.* 
+
+      - name: Table
+        title: Colori
+        responsive: table-responsive-md
+        head:
+          - text: Elemento
+          - text: Stato
+          - text: Proprietà
+          - text: Token
+        rows:
+          - cols:
+            - text: Text
+              scope: row
+            - text: null
+            - text: color
+            - tag:
+                label: $color-text-base
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Link
+              scope: row
+            - text: null
+            - text: color
+            - tag:
+                label: $color-text-primary
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Link
+              scope: row
+            - text: active
+            - text: color
+            - tag:
+                label: $color-text-primary-active
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Icon
+              scope: row
+            - text: null
+            - text: background
+            - tag:
+                label: $color-background-primary
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Icon
+              scope: row
+            - text: active
+            - text: background
+            - tag:
+                label: $color-background-primary-active
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Separators
+              scope: row
+            - text: null
+            - text: border
+            - tag:
+                label: $color-bluegray-04
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+
+
+      - name: Table
+        title: Spaziature
+        responsive: table-responsive-md
+        head:
+          - text: Elemento
+          - text: Dimensione
+          - text: Token 
+        rows:
+          - cols:
+            - text: Inset
+              scope: row
+            - text: S
+            - tag:
+                label: $spacing-inset-s
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Inset
+              scope: row
+            - text: M
+            - tag:
+                label: $spacing-inset-m
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Stack
+              scope: row
+            - text: M
+            - tag:
+                label: $spacing-stack-m
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Stack
+              scope: row
+            - text: XL
+            - tag:
+                label: $spacing-stack-xl
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+
+
+      - name: Table
+        title: Icone
+        responsive: table-responsive-md
+        head:
+          - text: Elemento
+          - text: Stato
+          - text: Icona 
+        rows:
+          - cols:
+            - text: Chevron
+              scope: row
+            - text: Collapse
+            - tag:
+                label: Navigation/Chevron/Collapse
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: Chevron
+              scope: row
+            - text: Expand
+            - tag:
+                label: Navigation/Chevron/Expand
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+        
+
+      - name: Table
+        title: Stili di testo
+        responsive: table-responsive-md
+        head:
+          - text: Elemento
+          - text: Stato
+          - text: Stile 
+        rows:
+          - cols:
+            - text: Text
+              scope: row
+            - text: 
+            - tag:
+                label: body text/sans
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: link
+              scope: row
+            - text: 
+            - tag:
+                label: link/sans-bold
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+          - cols:
+            - text: link
+              scope: row
+            - text: active
+            - tag:
+                label: link/sans-bold-underline
+                addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      
+
+    
