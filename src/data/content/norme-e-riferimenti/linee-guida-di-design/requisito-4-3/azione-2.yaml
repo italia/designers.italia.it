@@ -25,19 +25,15 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 2 - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  name: "Azione 2 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
   description : "SI DEVONO definire e valutare in modo esplicito obiettivi, destinatari, processi e attori nella progettazione del sito/servizio" #C
   image : null #I
   twitterImage: null #I
   canonical: null
   pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-2/ #M
 
-# ————————————————————————————————————————————
-# DATE, LICENSE, URL
-# ————————————————————————————————————————————
 lastUpdate:
   title: Pagina aggiornata il
- 
   licence:
     label: Licenza CC BY SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
@@ -49,7 +45,6 @@ lastUpdate:
     blank: true
   edit:
     label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it #M #AUTO
     icon:
       icon: sprites.svg#it-pencil
       size: sm
@@ -118,24 +113,7 @@ components:
   # ///////////////////
   hero:
     background: null
-    breadcrumbs : #M #AUTO
-      separator : '>'
-      items :
-        - label : Inizio
-          active: false
-          url: /
-        - label : Level1
-          active: false
-          url: ../../../
-        - label : Level2
-          url: ../../
-          active: false
-        - label : Level3
-          url: ../
-          active: false
-        - label : Level4
-          active: true
-    title: Azione 2
+    title: Azione 2 - Requisito 4.3 - Linee guida di design
     subtitle: "SI DEVONO definire e valutare in modo esplicito obiettivi, destinatari, processi e attori nella progettazione del sito/servizio" #C
     # subtitle: Subtitle #C
     tag:
@@ -257,6 +235,7 @@ components:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto.html" #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: "Gestione del progetto"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -275,6 +254,7 @@ components:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/analizzare-il-contesto-con-un-approccio-olistico-e-sistemico.html" #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: "Analizzare il contesto con un approccio olistico e sistemico"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -293,6 +273,7 @@ components:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/conoscere-gli-utenti-e-gli-erogatori-del-servizio.html" #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: "Conoscere gli utenti e gli erogatori del servizio"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -311,6 +292,7 @@ components:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/gli-strumenti-per-visualizzare-mappa-della-esperienza-del-servizio.html" #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: "Gli strumenti per visualizzare mappe dell’esperienza del servizio"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -327,7 +309,7 @@ components:
     title: Scopri le risorse correlate a questa azione  #C
     # text: Lorem ipsum #C
     col4: false
-    nospace: false
+    noSpace: false
     nopadtop: true
 
     # CARDS
@@ -346,7 +328,7 @@ components:
         tag:
           label: Kit di design #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButton1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -370,7 +352,7 @@ components:
         tag:
           label: Kit di design #C
         share: #AUTO
-          btnId: shareButton
+          btnId: shareButton2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -380,76 +362,3 @@ components:
               color: secondary
           list:
             isShare: true
-
-     # # CARD CHILDREN ACTION
-     # - title: Titolo sezione intera, eg. Design system #C
-     #   fullHeight: true
-     #   imgRatio: 4x3
-     #   img: /images/400x300.png
-     #   alt: Alt lorem ipsum
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   # tag:
-     #   #   label: Tipologia contenuto #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
-
-     # # CARD CHILDREN ACTION
-     # - title: Titolo modello intero, eg. Comuni #C
-     #   fullHeight: true
-     #   imgRatio: 4x3
-     #   img: /images/400x300.png
-     #   alt: Alt lorem ipsum
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   # tag:
-     #   #   label: Tipologia contenuto #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
-
-     # # CARD CHILDREN ACTION
-     # - title: Titolo scheda operativa #C
-     #   fullHeight: true
-     #   # imgRatio: 16x9
-     #   # iconImg: /icons/kit_analisiContesto.svg #I
-     #   # iconImgAlt: Alt lorem ipsum #C
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   tag:
-     #     label: Scheda operativa #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
-            
