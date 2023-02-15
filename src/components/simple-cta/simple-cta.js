@@ -16,12 +16,12 @@ const SimpleCta = ({
 	}
 	return(
     <>
-		{ url && <Link className="simple-cta" to={url} target={blank ? '_blank' : undefined}>
+		{ url && <Link className="simple-cta py-1 mb-3" to={url} target={blank ? '_blank' : undefined}>
 			<span className="text">{children}</span>
 			<span className="visually-hidden">{screenReaderText}</span>
 			<Icon {...icon}></Icon>
 		</Link>}
-    { !url && <span className="simple-cta">
+    { !url && <span className="simple-cta py-1 mb-3">
 			<span className="text">{children}</span>
 			<span className="visually-hidden">{screenReaderText}</span>
 			<Icon {...icon}></Icon>

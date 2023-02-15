@@ -8,6 +8,8 @@ import { NavBarCollapsible, Sticky } from "bootstrap-italia"
 const NavSidebar = ({
   id,
   title,
+  subTitle,
+  url,
   img,
   alt,
   tag,
@@ -43,7 +45,7 @@ const NavSidebar = ({
 
       if (item.subList) {
 
-        subLinks = item.subList.map((subItem,index) => {
+        subLinks = item.subList.map((subItem,indexSub) => {
 
           if (subItem.label === page) {
             expandSublinks = true
@@ -57,7 +59,7 @@ const NavSidebar = ({
           }
 
           return (
-             <li key={"subl-"+index}>
+             <li key={"subl-"+indexSub}>
               <Link to={subItem.url} className={subLiStyle} activeClassName={GATSBY_ACTIVE}><span>{subItem.label}</span></Link>
             </li>
           )
@@ -152,8 +154,11 @@ const NavSidebar = ({
             <div className="menu-wrapper">
 
             <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
-              <img src={img} className="header-image my-2" alt={alt}/>
-              <h2 className="h4 text-primary">{title}</h2>
+              <a className="" href={url}> 
+                <img src={img} className="header-image my-2" alt={alt}/>
+                <h2 className="h4 text-primary">{title}</h2>
+              </a>  
+              <p className="lead fw-normal w-75">{subTitle}</p>
               { tag && <Tag {...tag}/>}
             </div>
 
