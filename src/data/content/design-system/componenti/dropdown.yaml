@@ -8,11 +8,100 @@ metadata:
     
 seo:
   name: Dropdown
-  description: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina."
+  description: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
   image: null
   twitterImage: null
   canonical: null
   pathname: /design-system/componenti/dropdown/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: Pagina aggiornata il
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    specialKangarooComponent: true
+    background: null
+    title: Dropdown
+    titleTag:
+      label: Pronto
+      url: "#ComponentStatus"
+      addonClasses: bg-success mb-2
+      screenReaderText: "Stato del componente:"
+    column: true
+    subtitle: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
+    # img: /images/400x300.png #I
+    # alt: "" #C
+    imgRatio: 1x1
+    noBorder: true
+    share:
+      btnId: shareButtonHero
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Utile per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips: #C
+        - label: Struttura
+          url: "#"
+          color: primary
+          size: lg
+        - label: Contenuti
+          url: "#"
+          color: primary
+          size: lg
+
+  tab:
+    - full: true
 
 tabs:
 
@@ -27,39 +116,57 @@ tabs:
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
       accordionSrLabel: Apri la documentazione del componente sul sito Boostrap Italia
       accordionSrCopyLabel: Copia negli appunti il codice del componente Bootstrap Italia
+      # viewer: # XXX ICONS FOR RESPONSIVE PREVIEW
+      #   responsiveButtons:
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Mobile
+      #       icon:
+      #         icon: sprites.svg#it-telephone
+      #         color: primary
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Laptop
+      #       icon:
+      #         icon: sprites.svg#it-software
+      #         color: primary
+      #     - type: button
+      #       addonStyle: p-0 mx-3
+      #       ariaLabel: Visualizzazione Anteprima Desktop
+      #       icon:
+      #         icon: sprites.svg#it-presentation
+      #         color: primary
 
     sectionsEditorial:
       - full: true
         noSpace: true
-        title: Come usarlo al meglio
-      - full: true
-        noSpace: true
-        background: null
         components:
           - name: TextImageCta
             noSpace: false
-          - name: TextImageCta
-            noSpace: true
-            # title: In lavorazione
+            title: Quando usarlo
+            headingLevel: 2
             text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
-              Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
-          - name: TextImageCta
-            noSpace: true
-            title: Va bene
-            text: |
-              *In stesura*
-          - name: TextImageCta
-            noSpace: true
-            title: Non va bene
-            text: |
-              *In stesura*
-          - name: TextImageCta
-            noSpace: true
-            title: Considerazioni sui contenuti
-            text: |
-              *In stesura*
+            _In stesura_
 
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Come usarlo
+            headingLevel: 2
+            text: |
+              _In stesura_
+
+              #### Attenzione a
+              _In stesura_
+              
+              #### Buone pratiche sui contenuti
+              _In stesura_
+
+              #### Alternative a questo componente
+              _In stesura_
+              
       - full: true
         noSpace: false
         title: Accessibilità
@@ -130,7 +237,6 @@ tabs:
         components:
 
           - name: Table
-            # title: Stato dell'accessibilità
             responsive: table-responsive-md
             head:
               - text: Libreria
@@ -181,6 +287,22 @@ tabs:
                     icon:
                       icon: sprites.svg#it-external-link
                       size: sm
+
+              # - cols:
+              #   - text: Angular 
+              #     scope: row
+              #   - tag:
+              #       label: Non presente
+              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+              #   - text: null
+                
+              # - cols:
+              #   - text: Vue 
+              #     scope: row
+              #   - tag:
+              #       label: Non presente
+              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+              #   - text: null
       
           - name: TextImageCta
             text: |
@@ -253,6 +375,17 @@ tabs:
               align: middle
               addonClasses: ms-2
 
+          # - label : Apri la repository con tutte le versioni
+          #   target: blank
+          #   btnStyle: outline-secondary
+          #   url: "#"
+          #   icon:
+          #     icon: sprites.svg#it-github
+          #     size: sm
+          #     color: secondary
+          #     align: middle
+          #     addonClasses: ms-2
+
       - full: true
         noSpace: true
         title: Design Tokens
@@ -302,110 +435,3 @@ tabs:
               color: secondary
               align: middle
               addonClasses: ms-2
-
-
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: Pagina aggiornata il
- 
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
-
-navPreFooter:
-  navOtherPrevNext:
-    next:
-      label: Next page
-      url: "#"
-      blank: false
-      specular: true
-      icon:
-        icon: "sprites.svg#it-arrow-right"
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: flex-shrink-0 ms-3
-
-components:
-  hero:
-    specialKangarooComponent: true
-    background: null
-    title: Dropdown
-    titleTag:
-      label: Pronto
-      url: "#ComponentStatus"
-      addonClasses: bg-success mb-2
-      screenReaderText: "Stato del componente:"
-    column: true
-    subtitle: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina."
-    # img: /images/400x300.png #I
-    # alt: "" #C
-    imgRatio: 1x1
-    noBorder: true
-    breadcrumbs :
-      separator : '/'
-      items :
-        - label : Inizio
-          active: false
-          url: /
-        - label : Design System
-          active: false
-          url: /level1/
-        - label : Componenti
-          active: false
-          url: /level1/componenti/
-        - label : Scheda componente x
-          active: true
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
-
-     # KANGAROO: METADATA
-    kangaroo:
-      id: kangarooHero
-      noPadding: true
-      titleSr: Metadati e link per approfondire
-      tagsLabel: Utile per
-      color: secondary
-      icon:
-        icon: sprites.svg#it-horn
-        size: sm
-        color: secondary
-      chips: #C
-        - label: Struttura
-          url: "#"
-          color: primary
-          size: lg
-        - label: Contenuti
-          url: "#"
-          color: primary
-          size: lg
-
-  tab:
-    - full: true
