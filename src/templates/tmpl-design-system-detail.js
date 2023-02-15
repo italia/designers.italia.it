@@ -34,13 +34,13 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
         <HeaderSlim data={HeaderData.headerSlim}/>
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter}/>
-          <HeaderNav data={HeaderData.navbar} page={Pagedata.seo.name}/>
+          <HeaderNav data={HeaderData.navbar} page={Pagedata.title}/>
         </NavWrapper>
       </Header>
       <div className="bg-light">
         <div className="container-xxl">
           <div className="row">
-            <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
+            <NavSidebar page={Pagedata.components.hero.title} {...dsNav}/>
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
               <Tab
