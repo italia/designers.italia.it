@@ -17,7 +17,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata:
+metadata: 
   template:
     name: home
 
@@ -32,12 +32,8 @@ seo:
   canonical: null
   pathname: /
 
-# ————————————————————————————————————————————
-# DATE, LICENSE, URL
-# ————————————————————————————————————————————
 lastUpdate:
   title: Pagina aggiornata il
-
   licence:
     label: Licenza CC BY SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
@@ -95,18 +91,19 @@ components:
     title: Da dove vuoi iniziare?
     text: "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
     formId: searchForm
+    formAction: "#"
     label: Cerca
     inputId: searchInput
-    inputName: search
+    imputName: search
     button:
       label: Cerca
       type: #submit
-      btnStyle: primary
+      btnStyle: primary disabled search-disabled
       iconRight: true
       icon:
         icon: sprites.svg#it-search
         color: #white
-        addonClasses: ms-1 icon-search
+        addonClasses: ms-1 icon-search-disabled
     suggest:
       title: "Ti suggeriamo:"
       items:
@@ -124,7 +121,7 @@ components:
 
   sectionIntro:
     title: In evidenza
-    # subtitle: Storie da copertina che ti guidano alle ultime attività
+    # subtitle: Storie da copertina che ti guidano alle ultime attività 
     isHome: true
   highLights:
     # - title : Abbiamo rilasciato la v3 stabile del kit UI!
@@ -188,7 +185,7 @@ components:
     #       url: "#"
     #       addonStyle: mb-3 mb-sm-0
 
-
+    
   highlightCards:
     id: strumenti
     title: "Crea servizi pubblici digitali con strumenti pronti all'uso" #C
@@ -217,7 +214,7 @@ components:
       #   label: Esplora/Scopri il titolo
       #   url: "modelli/"
     - title: "Design system" #C
-      img: /images/design-system/fondamenti.jpg
+      img: /images/design-system/fondamenti.jpg 
       alt: ""
       text: |
         Costruisci l'interfaccia di un servizio pubblico grazie a componenti già validati e linee guida di progettazione. Scopri come usarlo.
@@ -273,7 +270,7 @@ components:
             icon: sprites.svg#it-user
           text: "... ho trovato il lavoro di Designers Italia molto prezioso per diffondere l'importanza di user-centered design, ricerca con utenti, usabilità, accessibilità nelle pubbliche amministrazioni."
           signature: " Partecipante all’indagine 2022 sulla community di Designers Italia"
-
+  
   highlightCards2:
     background: light
     nopadtop: true
@@ -324,7 +321,7 @@ components:
     #         color: secondary
     #     list:
     #       isShare: true
-
+   
     - title: "Una grammatica dei servizi pubblici digitali"
       headingLevel: 3
       customCol: col-lg-4
@@ -363,7 +360,7 @@ components:
             color: secondary
         list:
           isShare: true
-
+  
 
     - title: Benvenuto, Kit Privacy
       headingLevel: 3
@@ -430,7 +427,7 @@ components:
         label: Risorse per progettare a norma
         number: 40
       - icon: sprites.svg#it-pa
-        label: Enti che usano i nostri strumenti
+        label: Enti che usano i nostri strumenti  
         number: 2300+
       - icon: sprites.svg#it-user
         number: "21000+"
