@@ -1,15 +1,15 @@
 import * as React from "react"
 import { graphql } from "gatsby"
 
-import TemplateBase from "../templates/tmpl-base"
-import TemplateDSDetail from "../templates/tmpl-design-system-detail"
-import TemplateDSIndex from "../templates/tmpl-design-system-index"
-import TemplateHome from "../templates/tmpl-home"
-import TemplateLV1Community from "../templates/tmpl-level-1-community"
-import TemplateLV1 from "../templates/tmpl-level-1"
-import TemplateLV2 from "../templates/tmpl-level-2"
-import TemplateLV3 from "../templates/tmpl-level-3"
-import TemplateLV4 from "../templates/tmpl-level-4"
+import TemplateBase from "../templates/base"
+import TemplateDSComponent from "../templates/design-system-component"
+import TemplateDSIndex from "../templates/design-system-index"
+import TemplateHome from "../templates/home"
+import TemplateLV1Community from "../templates/level-1-community"
+import TemplateLV1 from "../templates/level-1"
+import TemplateLV2 from "../templates/level-2"
+import TemplateLV3 from "../templates/level-3"
+import TemplateLV4 from "../templates/level-4"
 import { Seo } from "../components/seo/seo"
 
 const TEMPLATES = {
@@ -20,8 +20,8 @@ const TEMPLATES = {
   'level4' : TemplateLV4,
   'base' : TemplateBase,
   'home' : TemplateHome,
-  'design-system-detail' : TemplateDSDetail,
-  'design-system-index' : TemplateDSIndex
+  'design-system-index' : TemplateDSIndex,
+  'design-system-component' : TemplateDSComponent
 }
 
 const Page = ({ pageContext, location, data: { content } }) => {
@@ -435,7 +435,7 @@ export const query = graphql`
           formAction
           label
           inputId
-          imputName
+          inputName
           button {
             label
             # type

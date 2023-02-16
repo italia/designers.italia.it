@@ -18,6 +18,7 @@ const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'))
 
 const ComponentView = ({
   name,
+  source,
   content,
   viewer,
   idPrefix,
@@ -113,7 +114,7 @@ const ComponentView = ({
           </div>
         }
         <span className="visually-hidden">Inizio componente:</span> {/* xxx move string to src/data/ */}
-        <iframe src={`/examples/${slugify(name).toLowerCase()}.html`} title="Titolo componente" className="w-100 iframe-example"></iframe>
+        <iframe src={`/examples/${source}/${slugify(name).toLowerCase()}.html`} title="Titolo componente" className="w-100 iframe-example"></iframe>
         <span className="visually-hidden">Fine componente.</span>  {/* xxx move string to src/data/ */}
       </div>
       <div className="accordion accordion-left-icon" id={accId}>

@@ -25,6 +25,9 @@ import dsNav from "../data/dsnav.yaml"
 
 
 const Template = ({Pagedata,pageContext,location, lastModified}) => {
+  if (!Pagedata.metadata.json) {
+    throw new Error('json key is required for design-system-component!');
+  }
   const variantMock = require(`../data/components_json/${Pagedata.metadata.json}`)
 	return (
     <div id="app">
@@ -44,6 +47,7 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
               <Tab
+                componentSource={Pagedata.metadata.json.replace(".json", "")}
                 tab01={Object.assign({}, Pagedata.tabs[0], { variants: variantMock })}
                 tab02={Pagedata.tabs[1]}
                 tab03={Object.assign({}, Pagedata.tabs[2], { variants: variantMock })}
