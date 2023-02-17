@@ -53,7 +53,6 @@ const ComponentView = ({
   const copyToClipboard = (e, code) => {
     e.preventDefault()
     navigator.clipboard.writeText(code)
-    // console.log("Codice copiato negli appunti!")
     const notification = new Notification(document.getElementById(idPrefix + '-' + "copyToast"), {
       timeout: 3000
     })

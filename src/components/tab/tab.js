@@ -13,7 +13,6 @@ const Tab = ({
   tab02,
   tab03
 }) => {
-  console.log(tab01)
   return (
     <div className="tab pt-5 /*pt-lg-6*/">
       <div className="">

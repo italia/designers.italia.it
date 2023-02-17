@@ -1,5 +1,4 @@
 import React from "react"
-import Icon from "../icon/icon"
 
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css'

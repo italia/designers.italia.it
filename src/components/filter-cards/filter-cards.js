@@ -61,7 +61,6 @@ const FilterCards = ({
                   <LabelInput 
                     id={idInput} 
                     label='Filtra' // xxx move to data yaml this string
-                    onChange={(e) => console.log(e.value)}
                     // value="Esempio di ricerca"
                     >
                   </LabelInput>
