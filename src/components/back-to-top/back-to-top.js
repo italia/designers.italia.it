@@ -5,7 +5,7 @@ import Icon from "../icon/icon"
 
 const BackToTopEl = (props) => {
   useEffect(() => {
-    const backToTop = new BackToTop(document.getElementById('backToTop'), {
+    new BackToTop(document.getElementById('backToTop'), {
       positionTop: props.positionTop,
       scrollLimit: props.scrollLimit,
       duration: props.duration,

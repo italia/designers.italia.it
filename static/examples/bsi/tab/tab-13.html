@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio tab-13</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+
+<ul class="nav nav-tabs nav-tabs-icon-text" id="myTab3" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="tab1c-tab" data-bs-toggle="tab" href="#tab1b" role="tab" aria-controls="tab1b" aria-selected="true">
+      <svg class="icon"><use href="/dist/svg/sprites.svg#it-link"></use></svg> Tab 1
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="tab2b-tab" data-bs-toggle="tab" href="#tab2b" role="tab" aria-controls="tab2b" aria-selected="false">
+     <svg class="icon"><use href="/dist/svg/sprites.svg#it-link"></use></svg> Tab 2
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="tab3b-tab" data-bs-toggle="tab" href="#tab3b" role="tab" aria-controls="tab3b" aria-selected="false">
+      <svg class="icon"><use href="/dist/svg/sprites.svg#it-link"></use></svg> Tab 3
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" id="tab4b-tab" data-bs-toggle="tab" href="#tab4b" role="tab" aria-controls="tab3b" aria-selected="false" aria-disabled="true" tabindex="-1">
+      <svg class="icon"><use href="/dist/svg/sprites.svg#it-link"></use></svg> Tab 4
+    </a>
+  </li>
+</ul>
+<div class="tab-content" id="myTab3Content">
+  <div class="tab-pane p-4 fade show active" id="tab1b" role="tabpanel" aria-labelledby="tab1c-tab"><p>Contenuto 1</p></div>
+  <div class="tab-pane p-4 fade" id="tab2b" role="tabpanel" aria-labelledby="tab2b-tab"><p>Contenuto 2</p></div>
+  <div class="tab-pane p-4 fade" id="tab3b" role="tabpanel" aria-labelledby="tab3b-tab"><p>Contenuto 3</p></div>
+  <div class="tab-pane p-4 fade" id="tab4b" role="tabpanel" aria-labelledby="tab4b-tab">Contenuto 4 (non raggiungibile, il tab relativo è disabilitato)</div>
+</div>
+
+        </div>
+    </div>
+    <script>
+        window.__PUBLIC_PATH__ = "/dist/fonts/"
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>

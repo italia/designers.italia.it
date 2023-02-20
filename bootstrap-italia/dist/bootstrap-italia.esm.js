@@ -34,4 +34,5 @@ export { default as Tab } from './plugins/tab.js';
 export { default as Toast } from './plugins/toast.js';
 export { default as Tooltip } from './plugins/tooltip.js';
 export { default as loadFonts } from './plugins/fonts-loader.js';
+export { default as init } from './plugins/init.js';
 //# sourceMappingURL=bootstrap-italia.esm.js.map

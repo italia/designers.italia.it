@@ -1,4 +1,4 @@
-import BaseComponent from './base-component.js'
+import BaseComponent from 'bootstrap/js/src/base-component.js'
 
 import EventHandler from 'bootstrap/js/src/dom/event-handler'
 import SelectorEngine from 'bootstrap/js/src/dom/selector-engine'
@@ -166,10 +166,10 @@ class NavScroll extends BaseComponent {
         },*/
       })
 
-      if (window.history.pushState) {
-        window.history.pushState(null, null, hash)
+      if (history.pushState) {
+        history.pushState(null, null, hash)
       } else {
-        window.location.hash = hash
+        location.hash = hash
       }
     }
   }

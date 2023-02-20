@@ -1,4 +1,4 @@
-import BaseComponent from './base-component.js';
+import BaseComponent from 'bootstrap/js/src/base-component.js';
 import { getElementFromSelector, reflow } from 'bootstrap/js/src/util';
 import EventHandler from 'bootstrap/js/src/dom/event-handler';
 

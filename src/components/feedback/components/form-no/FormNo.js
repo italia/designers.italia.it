@@ -1,7 +1,6 @@
 import React, { useCallback, useState, useRef } from "react"
 import ImageResponsive from "../../../image-responsive/image-responsive"
 import LabelTextArea from "../../../label-textarea/label-text-area"
-import Link from "../../../link/link"
 import Icon from "../../../icon/icon"
 
 import FeedbackState from "../../state"

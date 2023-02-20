@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const getCrumbLabelUpdates = () => {
   let paths = [];
-  walk('./src/pages/', (path) => {
+  walk('./src/data/', (path) => {
     if (path.endsWith('.yaml')) {
       const doc = yaml.load(fs.readFileSync(path, 'utf8'));
       if(doc.seo && doc.seo.pathname) {

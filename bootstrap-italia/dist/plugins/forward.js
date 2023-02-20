@@ -1,4 +1,4 @@
-import BaseComponent from './base-component.js';
+import BaseComponent from 'bootstrap/js/src/base-component.js';
 import EventHandler from 'bootstrap/js/src/dom/event-handler';
 import Manipulator from 'bootstrap/js/src/dom/manipulator';
 import { getElementFromSelector } from 'bootstrap/js/src/util/index';

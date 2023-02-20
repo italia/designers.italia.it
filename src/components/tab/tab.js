@@ -8,6 +8,7 @@ import ContentSelectItem from "../content-select/components/content-select-item/
 import TabButton from "./tabbutton"
 
 const Tab = ({
+  componentSource,
   tab01,
   tab02,
   tab03
@@ -36,6 +37,7 @@ const Tab = ({
               { tab01.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
                   <ComponentView
                     name={v.name}
+                    source={componentSource}
                     content={v.content}
                     viewer={tab01.componentVariant.viewer}
                     idPrefix={tab01.componentVariant.idPrefix}
@@ -60,6 +62,7 @@ const Tab = ({
               { tab02.variants.map((v, idx) => <ContentSelectItem label="Variante" key={'item-' + idx} name={v.name}>
               <ComponentView
                   name={v.name}
+                  source={componentSource}
                   content={v.content}
                   viewer={tab02.componentVariant.viewer}
                   idPrefix={tab02.componentVariant.idPrefix}
@@ -84,6 +87,7 @@ const Tab = ({
               { tab03.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
                 <ComponentView
                   name={v.name}
+                  source={componentSource}
                   content={v.content}
                   viewer={tab03.componentVariant.viewer}
                   idPrefix={tab03.componentVariant.idPrefix}

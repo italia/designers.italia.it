@@ -13,7 +13,7 @@ const HeaderMenuLink = ({
 }) => {
 
   useEffect(() => {
-    const dropDown = new Dropdown(document.getElementById(idMegamenu), {})
+    new Dropdown(document.getElementById(idMegamenu), {})
   });
 
 	const styles = 'nav-link'

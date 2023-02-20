@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react"
+import React from "react"
 import ReactMarkdown from "react-markdown"
 import "./section-intro.scss"
 

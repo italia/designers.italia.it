@@ -19,18 +19,21 @@
     "site"
   ],
   "scripts": {
-    "prepare": "recursive-copy ./bootstrap-italia -w ./node_modules/bootstrap-italia && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
-    "start": "npm run prepare && gatsby develop",
+    "prepare-lib": "recursive-copy ./bootstrap-italia -w ./node_modules/bootstrap-italia && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
+    "prepare-content": "node ./scripts/prepare.js",
+    "start": "npm run prepare-lib && gatsby develop",
     "develop": "npm run start",
     "dev": "npm run start",
-    "build": "npm run clean && npm run prepare && gatsby build --prefix-paths && recursive-copy -w ./public/ ./_site/",
+    "build": "npm run clean && npm run prepare-lib && gatsby build --prefix-paths && recursive-copy -w ./public/ ./_site/",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@colliercz/gatsby-transformer-gitinfo": "^1.3.0",
+    "@colliercz/gatsby-transformer-gitinfo": "^1.4.0",
     "@loadable/component": "^5.15.2",
+    "adm-zip": "^0.5.10",
     "boostrap-italia": "./bootstrap-italia/",
+    "fs-extra": "^11.1.0",
     "gatsby": "^4.23.0",
     "gatsby-plugin-breadcrumb": "^12.3.1",
     "gatsby-plugin-htaccess": "^1.4.0",
@@ -40,6 +43,7 @@
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-source-filesystem": "^4.24.0",
     "gatsby-transformer-sharp": "^4.24.0",
+    "gatsby-transformer-yaml": "^4.25.0",
     "glob": "^8.0.3",
     "js-yaml": "^4.1.0",
     "react": "^18.1.0",
@@ -49,6 +53,7 @@
     "remark-gfm": "^3.0.1",
     "sanitize-html": "^2.7.3",
     "sass": "^1.54.9",
+    "superagent": "^8.0.9",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

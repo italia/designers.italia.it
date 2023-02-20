@@ -3,13 +3,11 @@ import ReactMarkdown from "react-markdown"
 import ImageResponsive from "../image-responsive/image-responsive"
 import SimpleCta from "../simple-cta/simple-cta"
 import Chip from "../chip/chip"
-import Dropdown from "../dropdown/dropdown"
 import Tag from "../tag/tag"
 import Icon from "../icon/icon"
 import Link from "../link/link"
 import Button from "../button/button"
 import "./card.scss"
-import style from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark"
 
 const Card =(
 	{

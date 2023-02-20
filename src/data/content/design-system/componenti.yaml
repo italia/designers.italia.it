@@ -1,0 +1,201 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: design-system-index
+
+seo:
+  name: Panoramica componenti
+  description: Una raccolta di strumenti che puoi riutilizzare per progettare l’interfaccia di siti e servizi della Pubblica Amministrazione
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/componenti/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: 'Ultimo aggiornamento:'
+ 
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+navPreFooter:
+  navOtherPrevNext:
+    next:
+      label: Next page
+      url: "#"
+      blank: false
+      specular: true
+      icon:
+        icon: "sprites.svg#it-arrow-right"
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: light
+    title: Componenti
+    column: true
+    subtitle: Una raccolta di strumenti che puoi riutilizzare per progettare l’interfaccia di siti e servizi della Pubblica Amministrazione
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve
+    text: |
+      Nella libreria di componenti troverai tutti gli elementi pronti all’uso e già testati per progettare un’interfaccia utente che sia accessibile, intuitiva, inclusiva e garantisca una user experience ottimale e a norma. Non devi fare altro che iniziare.   
+    share:
+      btnId: shareButtonHero
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      column: true
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Utili per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips:
+        - label: UI Kit
+          url: "#"
+          color: primary
+          size: lg
+        - label: Front end
+          url: "#"
+          color: primary
+          size: lg
+        - label: Struttura
+          url: "#"
+          color: primary
+          size: lg
+        - label: Altro tema
+          url: "#"
+          color: primary
+          size: lg
+        - label: Form
+          url: "#"
+          color: primary
+          size: lg
+        - label: Contenuti
+          url: "#"
+          color: primary
+          size: lg
+
+  # /////////// COMPONENT LIST FROM HERE ////////////
+  filterCards:
+    id: componentCards
+    title: Esplora i componenti
+    # idInput: componentCardsInput
+    col2: false
+    # button:
+    #   type: button
+    #   btnStyle: outline-secondary justify-content-center w-100
+    #   label: Filtra
+    #   iconRight: true
+    #   icon:
+    #     icon: sprites.svg#it-funnel
+    #     color: secondary
+    #     addonClasses: ms-1 flex-shrink-0
+    cards:
+      - title: Accordion
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        rounded: true
+        imgPlaceholder: false
+        fullHeight: true
+        url: accordion/
+        # text: |
+        #   Descrizione
+      - title: Buttons
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        rounded: true
+        imgPlaceholder: false
+        fullHeight: true
+        url: buttons/
+        # text: |
+        #   Descrizione
+      - title: Dropdown
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        rounded: true
+        imgPlaceholder: false
+        fullHeight: true
+        url: dropdown/
+        # text: |
+        #   Descrizione
+
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
+  sectionsEditorial :
+    - fullColumn: true
+      noSpace: true
+      components:
+        - name: ImgFull
+          img: /images/design-system/componenti.jpg 
+          alt: ""
+
+  sectionsEditorial2 :
+    - full: true
+      noSpace: false
+      components:
+        - name: TextImageCta
+          noSpace: true
+          text: |   
+            Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare lo UI Kit e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento al framework di sviluppo Bootstrap Italia.
+          ctas:
+          - label: "Vai allo UI Kit nella community Figma " #C
+            url: https://www.figma.com/community/file/1105848677422572920 #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: "Vai a Bootstrap Italia su GitHub " #C
+            url: https://github.com/italia/bootstrap-italia #M
+            blank: true #M #C true if new tab for external links
+            icon: 
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2

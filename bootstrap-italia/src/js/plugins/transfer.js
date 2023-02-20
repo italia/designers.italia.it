@@ -1,4 +1,4 @@
-import BaseComponent from './base-component.js'
+import BaseComponent from 'bootstrap/js/src/base-component.js'
 
 /*import {
   //defineJQueryPlugin,

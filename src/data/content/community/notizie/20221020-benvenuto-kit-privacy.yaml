@@ -1,0 +1,178 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level3 # article?
+
+seo:
+  name: Benvenuto, Kit Privacy - Designers Italia
+  description: Rispetta la privacy delle persone quando realizzi un servizio digitale
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /community/notizie/20221020-benvenuto-kit-privacy/
+
+lastUpdate:
+  title: 'Ultimo aggiornamento:'
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../../" #xxx must direct to the archive soon
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: Benvenuto, Kit Privacy
+    subtitle: Rispetta la privacy delle persone quando realizzi un servizio digitale
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve
+    text: |
+      Con gli strumenti di questo nuovo kit dedicato a tematiche di privacy ottieni informazioni di base e una serie di modelli utili per aiutarti a trattare correttamente i dati personali riferiti ai principali casi d'uso che dovrai gestire progettando e realizzando un servizio digitale.
+    share:
+      btnId: shareButton
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips:
+        - label: Privacy by design
+          url: "#"
+          color: primary
+          size: lg
+        - label: Privacy by default
+          url: "#"
+          color: primary
+          size: lg
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 20 ottobre 2022
+
+  # imageIcons:
+  #   image: /images/image-icons-fullwidth.jpg
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Una nuova risorsa per progettare applicando i príncipi della Privacy by design e by default
+      # text: Il kit che supporta le persone coinvolte nel processo di progettazione di un sito o di un servizio digitale
+      id: corpoNotizia
+      components:
+        - name: TextImageCta
+          # title: Titoletto interno
+          text: |
+            Quante volte, nella progettazione e realizzazione di un servizio digitale, avevi bisogno di verificare che tutti gli aspetti riguardanti la privacy fossero stati correttamente compresi e presi in considerazione? Per esempio, nell’uso delle immagini online, nell’impostazione della cookie policy del nostro sito web o, nell’informativa per l’invio della newsletter?
+
+            Per rispondere a questi e altri dubbi, da oggi la sezione kit di Designers Italia si arricchisce di **un nuovo strumento: il [Kit Privacy](/risorse-per-progettare/organizzare/privacy)**.
+            
+            L’obiettivo di questo nuovo strumento è **supportare le persone coinvolte nel processo di progettazione di un sito o di un servizio digitale**, fornendo informazioni e modelli utili per trattare correttamente i dati personali nel rispetto della privacy delle persone.
+            
+            Aspetto, quest’ultimo, che riteniamo fondamentale e da tenere bene in considerazione ogni qualvolta si progetta e realizza un servizio digitale, si pianifica l’invio di una newsletter, l’avvio di una ricerca sugli utenti o un test di usabilità. L’utilizzo da parte di un ente pubblico di dati personali è infatti soggetto a norme specifiche (es. GDPR, Codice Privacy), e il diritto alla protezione dei dati personali è un diritto e libertà fondamentale delle persone.
+            
+            **Il Kit Privacy semplifica e fornisce in un unico luogo riferimenti normativi e operativi in un ambito percepito**, a volte, come complicato o controverso da affrontare. Le risorse non pretendono di essere esaustive, ma supportano la **progettazione orientata alla privacy**.
+            
+            Vuole quindi invitare chi progetta e fornisce servizi delle pubbliche amministrazioni a considerare gli aspetti connessi a questo tema già dalle prime fasi del processo di progettazione di un punto di accesso digitale, oltre che in alcuni specifici casi d’uso che riguardano i servizi digitali e la loro fruizione da parte dei cittadini.
+            
+            Le attività e le risorse disponibili nella pagina dedicata riguardano tre casi d’uso principali: **il go-live (avviamento) di un servizio digitale, il coinvolgimento degli utenti nella ricerca, l’uso dei social network**. Forniscono, inoltre, modelli utili per verificare se un sito o un servizio già esistenti rispettano i requisiti di base previsti dalla normativa privacy vigente.
+            
+            Ciascuna sotto-sezione offre **suggerimenti** (per esempio, per la somministrazione di un questionario), **modelli** (come quello di una liberatoria per condurre un’intervista utente) e **spunti utili** ad alimentare la riflessione (compresa una disamina dei principi e dei riferimenti normativi in merito a privacy by design e privacy by default), e a rispettare in maniera pratica la privacy delle persone dal punto di vista tecnico (per esempio, come escludere i cookie di terze parti dai contenuti multimediali incorporati).
+            
+          ctas:
+          - label: Scopri tutte le risorse del kit Privacy
+            url: "/risorse-per-progettare/organizzare/privacy"
+            screenReaderText: "" #C
+            blank: false
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: Scopri tutte le risorse per progettare
+            url: "/risorse-per-progettare/"
+            screenReaderText: "" #C
+            blank: false
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+        - name: TextImageCta
+          title: Il tuo feedback è prezioso
+          text: | 
+            Non ci stancheremo mai di dirlo: anche in questo caso ci piacerebbe migliorare il kit, raccogliendo feedback e suggerimenti. Inviaci il tuo contributo sul canale *#design-service* di Slack Developers Italia.
+          ctas:
+          - label: Vai allo Slack Developers Italia
+            url: "https://slack.developers.italia.it/"
+            icon:
+              icon: sprites.svg#it-slack
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true

@@ -120,7 +120,7 @@ const SectionEditorial = ({
                 }
 								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
                 {components &&
-                  components.map((item,index) => {
+                  components.map((item,index) => {                    
                     const Switcher = SwitchComponents[item.name]
                     return(
                       <Switcher key={"switcher-"+index} {...item}/>
