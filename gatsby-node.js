@@ -107,3 +107,36 @@ exports.onCreateNode = async ({
     createParentChildLink({ parent: node, child: contentNode })
   }
 }
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createRedirect } = actions
+
+  const redirs = await graphql(`
+    {
+      allContent (filter: { metadata: { redirect_from: { ne: null } } }) {
+        edges {
+          node {
+            seo {
+              pathname
+            }
+            metadata {
+              redirect_from
+            }
+          }
+        }
+      }
+    }
+  `
+  )
+
+  redirs.data.allContent.edges.forEach((edge) => {
+    const node = edge.node
+
+    node.metadata.redirect_from.forEach((fromPath) => {
+      const toPath = edge.node.seo.pathname
+      console.log(`Creating redirect: ${fromPath} -> ${toPath}...`)
+
+      createRedirect({ fromPath, toPath, })
+    })
+  })
+}
