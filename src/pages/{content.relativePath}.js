@@ -253,7 +253,6 @@ export const query = graphql`
           id
           headingLevel
           title
-          # background
           text
           moreButton
           moreButtonClose
@@ -403,7 +402,7 @@ export const query = graphql`
           numbers {
             items {
               icon
-              # number
+              number
               label
             }
           }
@@ -465,7 +464,6 @@ export const query = graphql`
           alt
           headingLevel
           background
-          text
           buttons {
             label
             btnStyle
@@ -478,7 +476,7 @@ export const query = graphql`
           id
           title
           text
-          # background
+          background
           col4
           cards {
             title
@@ -643,17 +641,17 @@ export const query = graphql`
             items {
               icon
               label
-              # number
+              number
             }
           }
         }
         sectionsEditorial {
-          # title
+          title
           headingLevel
           background
           menu
           centered
-          # text
+          text
           components {
             name
             title
@@ -661,6 +659,30 @@ export const query = graphql`
             specular
             text
             noSpace
+            responsive
+            head {
+              text
+            }
+            rows {
+              cols {
+                text
+                scope
+                tag {
+                  label
+                  # addonClasses
+                }
+                simpleCta {
+                  label
+                  url
+                  blank
+                  screenReaderText
+                  icon {
+                    icon
+                    size
+                  }
+                }
+              }
+            }
             ctas {
               label
               url
@@ -682,7 +704,7 @@ export const query = graphql`
             items {
               label
               icon
-              # number
+              number
             }
             images {
               img
@@ -732,12 +754,66 @@ export const query = graphql`
         sectionsEditorial2 {
           full
           noSpace
+          title
           components {
             name
-            text
+            # responsive
             title
+            headingLevel
+            specular
+            text
+            # head {
+            #  text
+            # }
+            # rows {
+            #  cols {
+            #    text
+            #    scope
+            #   tag {
+            #      label
+            #      addonClasses
+            #    }
+            #    simpleCta {
+            #      label
+            #      url
+            #      blank
+            #      screenReaderText
+            #      icon {
+            #        icon
+            #        size
+            #      }
+            #    }
+            #  }
+            # }
+            noSpace
+            ctas {
+              label
+              url
+              screenReaderText
+              blank
+              icon {
+                icon
+                # color
+                align
+                hidden
+                size
+                addonClasses
+              }
+            }
+            image
+            alt
+            # img
+            # items {
+            #  label
+            #  icon
+            #  number
+            # }
+            # images {
+            #  img
+            #  alt
+            # }          
           }
-          # background
+          background
           title
           text
           menu
@@ -821,13 +897,14 @@ export const query = graphql`
           full
           noSpace
           title
-          # background
           components {
             name
             noSpace
             text
             title
             responsive
+            headingLevel
+            # specular
             head {
               text
             }
@@ -851,7 +928,6 @@ export const query = graphql`
                 }
               }
             }
-            headingLevel
             ctas {
               label
               screenReaderText
