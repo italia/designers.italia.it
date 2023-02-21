@@ -26,7 +26,7 @@ const Megamenu = ({
 								{left.img &&
 									<div className="ratio ratio-megamenu lightgrey-bg-a1 mb-4 rounded">
 										{/*<img className="rounded" src={left.img} alt={left.imgAlt}/>*/}
-										<ImageResponsive className="rounded" src={left.img} alt={left.imgAlt}/>
+										<ImageResponsive className="rounded" src={left.img} alt={left.imgAlt} loading="eager"/>
 									</div>
 								}
 								{left.text &&

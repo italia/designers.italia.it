@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 import "./image-responsive.scss"
 
 const ImageResponsive = (props) => {
-  const { src, alt, imgClassName, ...otherProps } = props
+  const { src, alt, imgClassName, loading, ...otherProps } = props
 
   const data = useStaticQuery(graphql`
     query ImageResponsiveQuery {
@@ -39,7 +39,7 @@ const ImageResponsive = (props) => {
 
   return (
     gatsbyImageData
-      ? <GatsbyImage image={gatsbyImageData} alt={ alt || '' } imgClassName={imgClassName} {...otherProps} />
+      ? <GatsbyImage image={gatsbyImageData} alt={ alt || '' } imgClassName={imgClassName} loading={loading ? loading : 'lazy'} {...otherProps} />
       : <img src={realSrc} alt={alt || ''}  className={imgClassName} />
   )
 }
