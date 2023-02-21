@@ -14,16 +14,14 @@ const LastUpdate = ({
   lastModified,
   noPadding
 }) => {
-  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/${process.env.GATSBY_BRANCH}/src/pages/`  // < fallback if not trackable via pathname let's go to repo root...
-  let pathYaml = ''
+  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/${process.env.GATSBY_BRANCH}/src/data/content/`  // < fallback if not trackable via pathname let's go to repo root...
   if (pathname) {
+    console.log (pathname)
+    const filePath = pathname === '/'
+      ? "index"
+      : pathname.slice(1).replace(/^\/|\/$/g, '')
 
-    let pathSplitted = pathname.split('/')
-    pathSplitted.pop()
-    let path = pathSplitted.join('/')
-    if (path === "") path="index"
-    pathYaml = path.replace(/^\/|\/$/g, '') + ".yaml"
-    editGithubUrl += pathYaml
+    editGithubUrl += `${filePath}.yaml`
   }
 
   let columnStyle = 'col-12'
