@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { useFlexSearch } from "react-use-flexsearch"
 
@@ -18,7 +18,19 @@ const SearchMain =({
   background
 })=> {
   const [input, setInput] = useState(null)
+  const [searchEnabled, setSearchEnabled] = useState(0.0)
   const [searchTerm, setSearchTerm] = useState(null)
+
+  useEffect(() => {
+    setSearchEnabled(window.localStorage.getItem("search-enabled") ? 1 : 0)
+  }, [])
+
+  useEffect(() => {
+    if (searchEnabled >= 1) {
+      window.localStorage.setItem("search-enabled", "true")
+    }
+  }, [searchEnabled])
+
   const { localSearchPages: { index, store } } = useStaticQuery(graphql`
      query {
        localSearchPages {
@@ -53,10 +65,19 @@ const SearchMain =({
                     <div className="d-flex flex-column align-items-center flex-md-row w-100">
                       <div className="form-group mb-0 flex-grow-1 me-md-4 w-100">
                         <label className="active" htmlFor={inputId}>{label}</label>
-                        <input type="search" className="border-search search" name={inputName} id={inputId} placeholder="Voglio progettare con Qualità" onChange={ev => setInput(ev.target.value)}/>
+                        <input
+                          type="search"
+                          className="border-search search"
+                          name={inputName}
+                          id={inputId}
+                          placeholder="Voglio progettare con Qualità"
+                          onChange={ev => setInput(ev.target.value)}
+                          onClick={ev => { setSearchEnabled(searchEnabled + 0.1) }}
+                          readOnly={searchEnabled < 1}
+                        />
                       </div>
                       <div className="button-wrapper mt-4 mt-md-0">
-                        <Button type="submit" {...button}></Button>
+                        <Button type="submit" {...button} disabled={searchEnabled < 1} />
                       </div>
                     </div>
                     <ul>{results.map((r, i) => (
