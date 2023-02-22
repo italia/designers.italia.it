@@ -56,9 +56,9 @@ components:
     background: null
     title: Affix
     titleTag:
-      label: Pronto
+      label: Da verificare
       url: "#ComponentStatus"
-      addonClasses: bg-success mb-2
+      addonClasses: neutral-2-bg text-secondary mb-2
       screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Lorem ipsum"
@@ -186,29 +186,29 @@ tabs:
                 - text: Visivamente accessibile
                   scope: row
                 - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                    label: Da verificare
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Da verificare > neutral-2-bg text-secondary
                 - text: Uso e contrasto dei colori, leggibilità
               - cols:
                 - text: Amichevole con lettori di schermo
                   scope: row
                 - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                    label: Da verificare
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Da verificare > neutral-2-bg text-secondary
                 - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
                 - text: Navigabile
                   scope: row
                 - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                    label: Da verificare
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Da verificare > neutral-2-bg text-secondary
                 - text: Focus, struttura, navigazione da tastiera o altri device
               - cols:
                 - text: Comprensibile
                   scope: row
                 - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                    label: Da verificare
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Da verificare > neutral-2-bg text-secondary
                 - text: Comprensibile, prevedibile, gestione semplice dell’errore
 
           - name: TextImageCta
@@ -248,8 +248,8 @@ tabs:
                 - text: UI Kit (design)
                   scope: row
                 - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
                 - simpleCta :
                     label: Kit
                     url: https://www.figma.com/community/file/1105848677422572920
@@ -277,7 +277,7 @@ tabs:
                   scope: row
                 - tag:
                     label: Non presente
-                    addonClasses: neutral-2-bg ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
                 # - simpleCta :
                 #     label: Scheda storybook
                 #     url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-affix--page
