@@ -8,7 +8,7 @@ metadata:
     
 seo:
   name: Breadcrumbs
-  description: "Lorem ipsum"
+  description: "Le breadcrumbs aiutano gli utenti a capire dove si trovano nella struttura di un sito e a navigare tra i vari livelli"
   image: null
   twitterImage: null
   canonical: null
@@ -61,7 +61,7 @@ components:
       addonClasses: neutral-2-bg text-secondary mb-2
       screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Lorem ipsum"
+    subtitle: "Le breadcrumbs aiutano gli utenti a capire dove si trovano nella struttura di un sito e a navigare tra i vari livelli"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -92,13 +92,13 @@ components:
         color: secondary
       chips: #C
         - label: Tag2
-          url: "#"
+          url: "Struttura"
           color: primary
           size: lg
-        - label: Tag2
-          url: "#"
-          color: primary
-          size: lg
+        #- label: Tag2
+          #url: "#"
+          #color: primary
+          #size: lg
 
   tab:
     - full: true
@@ -147,7 +147,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente Breadcrumbs quando un sito presenta molti contenuti, organizzati su più di due livelli gerarchici, e gli utenti hanno bisogno di spostarsi velocemente tra i vari livelli.
                         
       - full: true
         noSpace: true
@@ -157,16 +157,19 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Come elemento di navigazione secondaria
+              - Posizionato in alto a sinistra dopo l’header e la navigazione, ma prima del titolo di pagina
 
               #### Attenzione a
-              _In stesura_
+              - Non usarlo per sostituire il menu di navigazione principale
+              - Non usarlo per indicare il progresso di un flusso transazionale lineare, come la richiesta di un servizio o un pagamento
+              - Non usarlo per un sito che presenta un solo livello di architettura
               
               #### Buone pratiche sui contenuti
-              _In stesura_
+              I titoli delle breadcrumb devono corrispondere ai titoli delle pagine a cui si riferiscono
 
               #### Alternative a questo componente
-              _In stesura_
+              **Progress indicator** - utile a indicare il progresso di un flusso transazionale lineare, come la richiesta di un servizio o un pagamento.
 
       - full: true
         noSpace: false
@@ -333,23 +336,31 @@ tabs:
           - name: TextImageCta
             noSpace: false
             text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
-              Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
-          - name: TextImageCta
-            noSpace: true
-            title: Contenuti
-            text: |
-              *In stesura*
+              1. **Pagina del livello superiore con link**: indica il titolo della pagina del livello superiore e ne permette la navigazione tramite link
+              2. **Separatore**: distingue le pagine
+              3. **Pagina corrente**: indica il titolo della pagina su cui si trova l’utente
+          -# name: TextImageCta
+            #noSpace: true
+            #title: Contenuti
+            #text: |
+              #*In stesura*
           - name: TextImageCta
             noSpace: true
             title: Comportamento
             text: |
-              *In stesura*
+              Tutti i titoli di pagina nel componente breadcrumb devono essere interattivi e rimandare alle rispettive pagine, ad eccezione della pagina corrente.
+              
+              I separatori non sono interattivi.
+
           - name: TextImageCta
             noSpace: true
             title: Interazione
             text: |
-              *In stesura*
+              #### Mouse
+              Gli utenti cliccano sui link delle breadcrumb per raggiungere le pagine corrispondenti.
+              
+              #### Tastiera
+              Gli utenti navigano tra i link delle breadcrumb premendo _Tab_ e _Shift-Tab_ e raggiungono le pagine corrispondenti premendo _Enter_, una volta che il link è in focus.
           - name: TextImageCta
             noSpace: true
             title: Specifiche di design
