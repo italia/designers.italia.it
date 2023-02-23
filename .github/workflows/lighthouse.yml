@@ -41,13 +41,12 @@ jobs:
                 `| ${score(result.accessibility)} Accessibility | ${result.accessibility} |`,
                 `| ${score(result['best-practices'])} Best practices | ${result['best-practices']} |`,
                 `| ${score(result.seo)} SEO | ${result.seo} |`,
-                `| ${score(result.pwa)} PWA | ${result.pwa} |`,
                 ' ',
-                `**[See the full report...](${Object.values(links)[0]})**`
+                `#### See the full report`,
+                ...Object.keys(links).map(key => `* [${new URL(key).pathname}](${links[key]})\n`)
             ].join('\n')
             core.setOutput("comment", comment)
       - uses: marocchino/sticky-pull-request-comment@v2
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           message: |
             ${{ steps.format_lighthouse_score.outputs.comment }}
