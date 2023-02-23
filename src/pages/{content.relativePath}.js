@@ -431,7 +431,6 @@ export const query = graphql`
           title
           text
           formId
-          formAction
           label
           inputId
           inputName
