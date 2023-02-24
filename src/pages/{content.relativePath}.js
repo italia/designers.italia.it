@@ -26,7 +26,7 @@ const TEMPLATES = {
 
 const Page = ({ pageContext, location, data: { content } }) => {
   const Template = content.metadata.template ? TEMPLATES[content.metadata.template.name] : TemplateBase
-  const lastModified = content.parent.fields.gitLogLatestDate
+  const lastModified = content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
 
   return(
     <Template Pagedata={content} pageContext={pageContext} location={location} lastModified={lastModified}>
@@ -810,7 +810,7 @@ export const query = graphql`
             # images {
             #  img
             #  alt
-            # }          
+            # }
           }
           background
           title
