@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio upload-6</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+
+<p><button type="button" class="btn btn-primary" onClick="testAnimation()">Simula Upload</button></p>
+
+<form class="upload-dragdrop" method="post" action="" enctype="multipart/form-data" id="uploadChangeStateTarget" data-bs-upload-dragdrop>
+  <div class="upload-dragdrop-image">
+    <img src="/dist/assets/upload-drag-drop-icon.svg" alt="descrizione immagine" aria-hidden="true">
+    <div class="upload-dragdrop-loading">
+      <div class="progress-donut" data-bs-progress-donut></div>
+    </div>
+    <div class="upload-dragdrop-success">
+      <svg class="icon" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-check"></use></svg>
+    </div>
+  </div>
+  <div class="upload-dragdrop-text">
+    <p class="upload-dragdrop-weight">
+      <svg class="icon icon-xs" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-file"></use></svg> PDF (3.7MB)
+    </p>
+    <h5 id="simTitle">Trascina il file per caricarlo</h5>
+    <p id="simText">oppure <input type="file" name="upload8" id="upload8" class="upload-dragdrop-input" /><label for="upload8">selezionalo dal dispositivo</label></p>
+  </div>
+  <input value="Submit" type="submit" class="d-none" />
+</form>
+
+<script>
+  //attiva tooltip esempio loading
+  function testAnimation() {
+    var element = bootstrap.UploadDragDrop.getOrCreateInstance(document.getElementById('uploadChangeStateTarget'));
+    var title = document.getElementById('simTitle')
+    var text = document.getElementById('simText')
+
+    element.start();
+    title.innerText = 'nome_file.pdf';
+    text.innerText = 'Caricamento in corso...';
+
+    setTimeout(function() {
+        element.progress(0.33)
+      }, 1000);
+
+    setTimeout(function(){
+        element.progress(0.66)
+      }, 2000);
+
+    setTimeout(function(){
+        element.progress(0.99)
+      }, 3000);
+
+    setTimeout(function(){
+        element.success()
+        text.innerText = 'Caricamento completato'
+      }, 4500);
+  }
+</script>
+
+
+        </div>
+    </div>
+    <script>
+        window.__PUBLIC_PATH__ = "/dist/fonts/"
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+</body>
+</html>
