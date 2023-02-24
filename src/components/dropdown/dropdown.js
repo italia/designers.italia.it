@@ -14,6 +14,7 @@ const Dropdown = ({
 	button,
 	customStyle,
 	shareUrl,
+  shareTitle,
 }) => {
 
 	const styles = "dropdown"
@@ -34,7 +35,7 @@ const Dropdown = ({
 
 
 	if (list) {
-		children = <List {...list} shareUrl={shareUrl} isMenu isDropdown></List>
+		children = <List {...list} shareUrl={shareUrl} shareTitle={shareTitle} isMenu isDropdown></List>
 	}
 
 	return (

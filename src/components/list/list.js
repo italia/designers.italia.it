@@ -21,6 +21,7 @@ const List = React.forwardRef(({
 	listItems,
 	simpleList,
 	shareUrl,
+  shareTitle,
 }, ref) => {
   const [currentUrl, setCurrentUrl ] = useState('')
   const [currentTitle, setCurrentTitle] = useState('')
@@ -34,8 +35,8 @@ const List = React.forwardRef(({
     }
 
     setCurrentUrl(url)
-    setCurrentTitle(window.document.title)
-  }, [shareUrl])
+    setCurrentTitle(shareTitle)
+  }, [shareUrl, shareTitle])
 
   //heading level
 	let HLevel

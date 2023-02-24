@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +116,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponde in maniera adeguata ai bisogni degli utenti. Questo kit ha la finalità di aiutarti a capire **come usare la web analytics per comprendere la maniera in cui i tuoi utenti fruiscono i servizi**.  
+      Analizzare le performance di un servizio digitale è fondamentale per capire quanto questo risponde in maniera adeguata ai bisogni degli utenti. Questo kit ha la finalità di aiutarti a capire **come usare la web analytics per comprendere la maniera in cui i tuoi utenti fruiscono i servizi**.
     img: /images/risorse-per-progettare/icons/kit_analytics.svg #I
     alt: "Osserva con attenzione e cura" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -188,7 +176,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -224,11 +212,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit di web analytics #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -237,8 +225,8 @@ components:
         - name: TextImageCta
           text: | #C
             L’analisi dei dati di traffico web (web analytics) ha lo scopo di **ottimizzare l’usabilità di siti e servizi sulla base di dati**: le piattaforme per raccogliere informazioni sul comportamento degli utenti consentono di isolare **preziosi dati qualitativi e quantitativi su come un servizio viene fruito**. A seguito della raccolta dei dati, la loro segmentazione, interpretazione e condivisione con gli stakeholder, gli analytics consentono poi di orientare le decisioni che riguardano design e re-design dei servizi, in ottica di progettazione basata sui dati (data driven design).
-            
-            Questo kit ha inoltre l’obiettivo di mostrarti come **i dati possono aiutarti a indirizzare le azioni di miglioramento ed evoluzione delle performance**, utilizzando in primo luogo piattaforme di web analytics open source. 
+
+            Questo kit ha inoltre l’obiettivo di mostrarti come **i dati possono aiutarti a indirizzare le azioni di miglioramento ed evoluzione delle performance**, utilizzando in primo luogo piattaforme di web analytics open source.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -250,14 +238,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/web-analytics.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -288,18 +276,7 @@ components:
           Esplora alcune fra le principali soluzioni software open source per la raccolta e l'analisi dei dati di traffico di siti e servizi digitali.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-            
+
       # CARD CHILDREN ACTION
       - title: Crea e condividi una dashboard di dati #C
         fullHeight: true
@@ -311,15 +288,4 @@ components:
           Impara a costruire configurazioni di dashboard personalizzate con le principali piattaforme di web analytics open source.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 

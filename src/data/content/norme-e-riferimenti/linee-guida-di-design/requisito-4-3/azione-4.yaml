@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -128,18 +128,6 @@ components:
     # img: /images/400x300.png #I
     # alt: descrizione immagine #C
     # imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -237,7 +225,7 @@ components:
           title: Visualizzare mappe dell’esperienza del servizio #C
           headingLevel: 4
           text: | #C
-            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.  
+            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.
           ctas:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/dai-bisogni-degli-utenti-ai-flussi-di-interazione.html#dai-bisogni-degli-utenti-ai-flussi-di-interazione" #M
@@ -256,7 +244,7 @@ components:
           title: Dai bisogni degli utenti ai flussi di interazione #C
           headingLevel: 4
           text: | #C
-            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.  
+            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.
           ctas:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/dai-bisogni-degli-utenti-ai-flussi-di-interazione.html#dai-bisogni-degli-utenti-ai-flussi-di-interazione" #M
@@ -269,7 +257,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-              
+
         # TXT BLOCK
         - name: TextImageCta
           title: "Prototipare un servizio" #C
@@ -288,7 +276,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-        
+
         # TXT BLOCK
         - name: TextImageCta
           title: Test di usabilità #C
@@ -321,7 +309,7 @@ components:
 
     # CARDS
     cards: # AUTO?
-            
+
       # CARD CHILDREN ACTION
       - title: Esperienza utente #C
         fullHeight: true
@@ -334,23 +322,12 @@ components:
           Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale
         tag:
           label: Kit di design #C
-        share: #AUTO
-          btnId: shareButton1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-            
+
       # CARD CHILDREN ACTION
       - title: Test di usabilità #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_testusability.svg #I 
+        iconImg: /icons/kit_testusability.svg #I
         iconImgAlt: Alt lorem ipsum #C
         rounded: true
         url: "/risorse-per-progettare/validare/test-di-usabilita/" #M
@@ -358,18 +335,7 @@ components:
           Rendi più usabile un servizio digitale osservando le interazioni degli utenti
         tag:
           label: Kit di design #C
-        share: #AUTO
-          btnId: shareButton2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-            
+
       # CARD CHILDREN ACTION
       - title: Web analytics #C
         fullHeight: true
@@ -382,18 +348,7 @@ components:
           Osserva e analizza i comportamenti degli utenti partendo dai dati di utilizzo del servizio
         tag:
           label: Kit di design #C
-        share: #AUTO
-          btnId: shareButton3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true 
-            
+
       # CARD CHILDREN ACTION
       - title: Prototipazione #C
         fullHeight: true
@@ -406,18 +361,7 @@ components:
           Progetta l’esperienza-utente del servizio realizzando un prototipo a bassa fedeltà dell’interfaccia
         tag:
           label: Kit di design #C
-        share: #AUTO
-          btnId: shareButton4
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true 
-            
+
       # CARD CHILDREN ACTION
       - title: Individua i contenuti #C
         fullHeight: true
@@ -430,17 +374,6 @@ components:
           Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni che dovrebbe avere il futuro touchpoint digitale del servizio.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButton5
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true 
 
      # CARD CHILDREN
       - title: Il sito comunale #C
@@ -454,22 +387,11 @@ components:
         url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/" #M
         tag:
           label: Scheda operativa #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-      
+
       # CARD CHILDREN
       - title: I servizi digitali #C
         text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
-        # img: 
+        # img:
         # alt: ""
         # imgRatio: 4x3
         # imgPlaceholder: true
@@ -478,17 +400,6 @@ components:
         url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
         tag:
           label: Scheda operativa #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            ariaLabel: Condividi
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: "Una grammatica dei servizi pubblici digitali"
         headingLevel: 4
@@ -516,20 +427,9 @@ components:
             label: Servizi pubblici digitali
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardMedium1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-            
-      
-            
+
+
+
      # # CARD CHILDREN ACTION
      # - title: Titolo sezione intera, eg. Design system #C
      #   fullHeight: true
@@ -542,17 +442,6 @@ components:
      #     Lorem **ipsum**
      #   # tag:
      #   #   label: Tipologia contenuto #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
 
      # # CARD CHILDREN ACTION
      # - title: Titolo modello intero, eg. Comuni #C
@@ -566,17 +455,6 @@ components:
      #     Lorem **ipsum**
      #   # tag:
      #   #   label: Tipologia contenuto #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
 
      # # CARD CHILDREN ACTION
      # - title: Titolo scheda operativa #C
@@ -590,15 +468,4 @@ components:
      #     Lorem **ipsum**
      #   tag:
      #     label: Scheda operativa #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
-            
+
