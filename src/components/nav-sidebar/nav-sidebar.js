@@ -1,9 +1,12 @@
 import React, { useRef, useEffect } from "react"
 import Tag from "../tag/tag"
 import Link from "../link/link"
+import BackToTopEl from "../back-to-top/back-to-top";
 import "./nav-sidebar.scss"
 
 import { NavBarCollapsible, Sticky } from "bootstrap-italia"
+
+import FooterData from "../../data/footer.yaml";
 
 const NavSidebar = ({
   id,
@@ -138,6 +141,13 @@ const NavSidebar = ({
         <nav className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0" aria-label={ariaLabel}>
           <button className="custom-navbar-toggler" type="button" aria-controls={id} aria-expanded="false" aria-label={toggleAriaLabel} data-bs-toggle="navbarcollapsible" data-bs-target="#navSidebarDs"><span className="it-list"></span>{toggleLabel}
           </button>
+          <BackToTopEl
+            positionTop={0}
+            scrollLimit={100}
+            duration={800}
+            easing="easeInOutSine"
+            ariaLabel={FooterData.footer.backToTop.ariaLabel}
+          />
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
             <div className="overlay"></div>
             <div className="close-div visually-hidden">
