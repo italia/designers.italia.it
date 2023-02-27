@@ -32,19 +32,21 @@
   <button type="button" class="btn btn-primary">Primary</button>
   <button type="button" class="btn btn-outline-primary">Primary outline</button>
   <button type="button" class="btn btn-primary disabled">Primary disabled</button>
+  <button type="button" class="btn btn-outline-primary disabled">Primary o. disabled</button>
 </div>
 <div class="btn-example">
   <button type="button" class="btn btn-secondary">Secondary</button>
   <button type="button" class="btn btn-outline-secondary">Secondary outline</button>
   <button type="button" class="btn btn-secondary disabled">Secondary disabled</button>
+  <button type="button" class="btn btn-outline-secondary disabled">Secondary o. disabled</button>
 </div>
 </div>
 
         </div>
     </div>
-    <script>
-        window.__PUBLIC_PATH__ = "/dist/fonts/"
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
 </body>
 </html>
