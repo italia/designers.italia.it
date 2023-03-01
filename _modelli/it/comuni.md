@@ -142,7 +142,7 @@ coreContent:
           - title: Anteprime dei template HTML sito comunale
             icon: "/assets/icons/pencil.svg"
             description: Gli esempi delle pagine del sito comunale basati sui template HTML Bootstrap
-            link: <a href='https://italia.github.io/design-comuni-pagine-statiche/sito/index.html' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
+            link: <a href='https://italia.github.io/design-comuni-pagine-statiche/' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai agli esempi</a>
           - title: Sorgenti dei template HTML sito comunale
             icon: "/assets/icons/pencil.svg"
             description: La repository GitHub con il codice sorgente di tutti i template per creare il sito di un Comune
@@ -330,7 +330,7 @@ serviziContent:
             description: I diagrammi di flusso definiscono i passaggi di interazione necessari per la fruizione di un servizio.
             otherResources:
               - description: Diagramma di flusso per Permessi e Documenti
-                link: <a href='https://drive.google.com/file/d/1X_plEwMUT2NhAUHUoMuy-RbasRROQuup/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                link: <a href='https://drive.google.com/file/d/1KqDMWBOJziwXNdO5TMqhyvWBcPmfmYwJ/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Pagamenti Dovuti
                 link: <a href='https://drive.google.com/file/d/1cd9PL4ghpisa0O2NDWvL6qcFD-fdkNej/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
@@ -339,7 +339,7 @@ serviziContent:
                 link: <a href='https://drive.google.com/file/d/1pV7KIpjj2Z4pHyytyqVac1Srj7FrOej0/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Iscrizione in Graduatoria
-                link: <a href='https://drive.google.com/file/d/1Km09i_yuKic7Rh5KSOzWz7voNtplJ0Ke/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
+                link: <a href='https://drive.google.com/file/d/1OYfqsuwlztRM9MpYN88y01eAzajT3vdi/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
                 icon: "/assets/icons/external-link.svg"
               - description: Diagramma di flusso per Servizi a Pagamento
                 link: <a href='https://drive.google.com/file/d/1pJs7JBZA2YvBycLrWeKVbyOPSZ23Zy_x/view?usp=sharing' aria-label="Vai alla risorsa (link esterno)" target="_blank">Vai alla risorsa</a>
