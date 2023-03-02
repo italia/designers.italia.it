@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level2
 
@@ -101,26 +101,14 @@ components:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve 
+      text: In breve
     text: | #C
-      I contenuti e le risorse di Designers Italia sono in continua evoluzione: dalla versione alpha delle prime Linee guida di design per i siti web della PA del 2015 ad oggi, Designers Italia e la sua community hanno **contribuito alla creazione di numerosi progetti digitali** e perseguono l’obiettivo di far evolvere l’identità visiva e i processi di progettazione e ottimizzazione continua dei siti e dei servizi digitali pubblici.  
+      I contenuti e le risorse di Designers Italia sono in continua evoluzione: dalla versione alpha delle prime Linee guida di design per i siti web della PA del 2015 ad oggi, Designers Italia e la sua community hanno **contribuito alla creazione di numerosi progetti digitali** e perseguono l’obiettivo di far evolvere l’identità visiva e i processi di progettazione e ottimizzazione continua dei siti e dei servizi digitali pubblici.
     # img: /images/400x300.png #I
     # alt: alt lorem ipsum #C
     imgRatio: 4x3
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
-    # KANGAROO: METADATA    
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       titleSr: Metadati e link per approfondire
@@ -140,7 +128,7 @@ components:
           color: primary
           size: lg
 
-    #  # KANGAROO: CHILDREN SHORTCUTS 
+    #  # KANGAROO: CHILDREN SHORTCUTS
     #  dropdown:
     #    btnId: dropdownKang
     #    button:
@@ -182,49 +170,49 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: I progetti storici di Designers Italia
       background: null
       menu: false
       centered: true
       text: | #C
-        Le soluzioni digitali cui Designers Italia e i designers e developers della community hanno contribuito 
-      components: 
+        Le soluzioni digitali cui Designers Italia e i designers e developers della community hanno contribuito
+      components:
 
         # TXT BLOCK
         - name: TextImageCta
           title: "pagoPA - Il servizio di pagamento verso la Pubblica Amministrazione" #C
-          text: | #C 
+          text: | #C
             pagoPA è il nodo di pagamenti della Pubblica Amministrazione. È una piattaforma che connette tra loro cittadini, Pubblica Amministrazione e i Prestatori di Servizi di Pagamento (PSP) per effettuare pagamenti verso la Pubblica Amministrazione in sicurezza e con semplicità.
-          
+
             Integrare pagoPA rappresenta un grosso vantaggio per le Pubbliche Amministrazioni perché i pagamenti vengono accreditati in tempo reale, vengono correttamente rendicontati e di conseguenza può immediatamente essere rilasciato al cittadino la quietanza con valore legale. Per un cittadino, pagoPA permette di scegliere il metodo di pagamento tra i diversi a disposizione, a seconda delle comodità e del livello di digitalizzazione.
-            La community di Designers Italia ha lavorato alla revisione del logo e del marchio pagoPA e alla revisione dell’esperienza utente. 
+            La community di Designers Italia ha lavorato alla revisione del logo e del marchio pagoPA e alla revisione dell’esperienza utente.
 
         # TXT BLOCK
         - name: TextImageCta
           title: "SPID - Sistema pubblico di identità digitale" #C
-          text: | #C 
+          text: | #C
             SPID (Sistema Pubblico di Identità Digitale) è il sistema di identità digitale che permette di utilizzare le stesse credenziali per accedere a tutti i servizi digitali della Pubblica Amministrazione da computer, tablet e smartphone. Il cittadino può ottenere SPID tramite i Gestori di identità (Identity Provider): una volta completata la procedura di verifica (che certifica l’identità del richiedente), vengono rilasciate delle credenziali (user e password) che possono essere utilizzate su tutti i siti che offrono servizi al cittadino (Service Provider).
           ctas:
           - label: Scopri di più sulla scheda SPID di Developers Italia #C
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://developers.italia.it/it/spid/ #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
           #### Linee guida SPID, asset e codice sorgente h4
           #ctas:
           # - label: Regole tecniche #C
             # screenReaderText: " (si apre in una nuova finestra)" #C
           #   url: https://docs.italia.it/italia/spid/spid-regole-tecniche/ #M
           #   blank: true #M #C true if new tab for external links
-          #   icon: 
+          #   icon:
           #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
           #     color: primary
           #     align: middle
@@ -235,7 +223,7 @@ components:
             # screenReaderText: " (si apre in una nuova finestra)" #C
           #   url: https://github.com/italia/spid-sp-access-button #M
           #   blank: true #M #C true if new tab for external links
-          #   icon: 
+          #   icon:
           #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
           #     color: primary
           #     align: middle
@@ -245,7 +233,7 @@ components:
           # - label: Icone, loghi e asset grafici #C
             # screenReaderText: " (si apre in una nuova finestra)" #C
           #   url: https://github.com/italia/spid-graphics #M
-          #   blank: true 
+          #   blank: true
           #   icon:
           #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
           #     color: primary
@@ -256,12 +244,12 @@ components:
 
         #  # TXT BLOCK
         # - name: TextImageCta
-        #   #title: "SPID - Sistema pubblico di identità digitale" #C 
+        #   #title: "SPID - Sistema pubblico di identità digitale" #C
         #   ctas:
           # - label: Layout standard di IDP #C
             # screenReaderText: " (si apre in una nuova finestra)" #C
           #   url: https://github.com/italia/spid-idp-login-layout #M
-          #   blank: true 
+          #   blank: true
           #   icon:
           #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
           #     color: primary
@@ -272,7 +260,7 @@ components:
           # - label: Playbook Ansible di SP #C
             # screenReaderText: " (si apre in una nuova finestra)" #C
           #   url: https://github.com/italia/spid-sp-playbook #M
-          #   blank: true 
+          #   blank: true
           #   icon:
           #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
           #     color: primary
@@ -280,30 +268,30 @@ components:
           #     hidden: true
           #     size: sm
           #     addonClasses: ms-2
-           
+
         # TXT BLOCK
         - name: TextImageCta
           title: "Web Analytics Italia (WAI)" #C
-          text: | #C 
-            Web Analytics Italia (WAI) è una piattaforma di web analytics open source dedicata all’analisi dei dati di traffico dei siti della Pubblica Amministrazione. 
-            
+          text: | #C
+            Web Analytics Italia (WAI) è una piattaforma di web analytics open source dedicata all’analisi dei dati di traffico dei siti della Pubblica Amministrazione.
+
             WAI consente di:
-            
-            * monitorare gratuitamente le statistiche di fruizione di siti e servizi digitali 
+
+            * monitorare gratuitamente le statistiche di fruizione di siti e servizi digitali
             * semplificare la condivisione dei dati nell’ambito della PA e/o con gli stakeholders esterni
             * facilitare l’individuazione dei punti critici su cui intervenire per migliorare l’esperienza utente di siti e servizi
             * detenere il totale controllo del dato e la sua proprietà, in linea con la norma GDPR
             * disporre di strumenti ad hoc per pubblicare online le statistiche di siti e servizi monitorati (art.7 del Cad)
             * esporre pubblicamente i dati rilevati in forma aggregata sul portale Web Analytics Italia
             * beneficiare del supporto di una community di riferimento dedicata al progetto.
-            
-            Web Analytics Italia (WAI) si basa sul software open source Matomo per le funzionalità di ingestion e reporting. 
+
+            Web Analytics Italia (WAI) si basa sul software open source Matomo per le funzionalità di ingestion e reporting.
           ctas:
           - label: Vai a Web Analytics Italia (WAI) #C
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://webanalytics.italia.it/ #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -314,7 +302,7 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo1_sezione2_art7.html?highlight=statistiche%20utilizzo #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -323,7 +311,7 @@ components:
               addonClasses: ms-2
 
 
-        
+
        # # NUMBERS BLOCK
        # - name: Numbers
        #   items: #C #I
@@ -353,6 +341,6 @@ components:
         - name: TextImageCta
           title: Siti web delle Pubbliche Amministrazioni (versione alpha) #C
           text: | #C
-            La versione alpha del progetto italia.it nasce fra il 2014 e il 2015, per poi passare sotto la governance del Dipartimento per la trasformazione digitale. 
-            A partire dal 2015 vari siti web delle PA italiane iniziano ad adottare la versione alpha delle Linee guida di design della PA: il primo tentativo di rendere coerenti per identità visiva, usabilità ed esperienza utente migliaia di siti web della Pubblica amministrazione. 
-           
+            La versione alpha del progetto italia.it nasce fra il 2014 e il 2015, per poi passare sotto la governance del Dipartimento per la trasformazione digitale.
+            A partire dal 2015 vari siti web delle PA italiane iniziano ad adottare la versione alpha delle Linee guida di design della PA: il primo tentativo di rendere coerenti per identità visiva, usabilità ed esperienza utente migliaia di siti web della Pubblica amministrazione.
+

@@ -1,7 +1,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: design-system-index
 
@@ -64,18 +64,6 @@ components:
    #   text: In breve
    # text: |
    #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
      # KANGAROO: METADATA
     kangaroo:
@@ -144,7 +132,7 @@ components:
     # - full: true
     #   noSpace: false
     #   # title: Scrivi per le persone
-    #   # text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione      
+    #   # text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
     #   background: null
 
     #   components:
@@ -158,18 +146,18 @@ components:
         - name: TextImageCta
           title: Come costruiamo i "numeri di versione"
           text: |
-            Cerchiamo di seguire le indicazioni per il versionamento semantico su ogni risorsa del design system, sia questa di progettazione, sviluppo o documentazione. 
-            
+            Cerchiamo di seguire le indicazioni per il versionamento semantico su ogni risorsa del design system, sia questa di progettazione, sviluppo o documentazione.
+
             Siamo convinti che la trasparenza dei processi che sottendono la cura e gestione delle risorse, abilitata da come sono costruiti i "numeri di versione", sia uno strumento importante per la sostenibilità e la scalabilità dell'intero progetto.
 
-            Puoi seguire l'evoluzione del progetto leggendo il numero versione: ad esempio "1.0.0-alpha.2" indicherà la versione corrente come MAJOR "1", MINOR "0" e PATCH "0", in una seconda iterazione "2" del suo stato "alpha", una pre-release in lavorazione dove tutto può ancora cambiare ed evolvere. 
+            Puoi seguire l'evoluzione del progetto leggendo il numero versione: ad esempio "1.0.0-alpha.2" indicherà la versione corrente come MAJOR "1", MINOR "0" e PATCH "0", in una seconda iterazione "2" del suo stato "alpha", una pre-release in lavorazione dove tutto può ancora cambiare ed evolvere.
             Per la definizione di MAJOR, MINOR e PATCH consulta la guida sul versionamento semantico (semver) che segue.
           ctas:
           - label: Scopri la guida al versionamento semantico (semver) #C
             url: https://semver.org/lang/it/ #M
             blank: true #M #C true if new tab for external links
             # disabled: true
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -231,7 +219,7 @@ components:
                   label: 2.3.4 #AUTO
                   addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
               - simpleCta :
-                  label: "Schede rilascio su GitHub" 
+                  label: "Schede rilascio su GitHub"
                   blank: true
                   url: https://github.com/italia/bootstrap-italia/releases
                   screenReaderText: " (si apre in una nuova finestra)"
@@ -246,7 +234,7 @@ components:
       background: null
       components:
         - name: TextImageCta
-          title: 
+          title:
           text: |
             ### v1.0.0-alpha.2
             14/02/2023
@@ -257,4 +245,4 @@ components:
 
             ### v1.0.0-alpha.1
             20/12/2022
-            - Struttura, scheda Linguaggio e componenti Accordion, Buttons e Dropdown. 
+            - Struttura, scheda Linguaggio e componenti Accordion, Buttons e Dropdown.

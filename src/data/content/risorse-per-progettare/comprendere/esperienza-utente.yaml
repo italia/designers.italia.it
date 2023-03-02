@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +116,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Grazie alle risorse del kit, potrai **definire i profili delle persone che useranno il servizio (personas)** e **mappare l'esperienza d'uso attuale del tuo servizio digitale**, per poi riprogettarlo rendendolo più adeguato alle loro necessità. 
+      Grazie alle risorse del kit, potrai **definire i profili delle persone che useranno il servizio (personas)** e **mappare l'esperienza d'uso attuale del tuo servizio digitale**, per poi riprogettarlo rendendolo più adeguato alle loro necessità.
     img: /images/risorse-per-progettare/icons/kit_esperienzautente.svg #I
     alt: "L'esperienza guida gli utenti ai loro bisogni" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -192,7 +180,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -228,11 +216,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit di esperienza utente #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -249,7 +237,7 @@ components:
             Le personas sono anche un ottimo punto di partenza per mappare:
             - gli **user journey as-is**, che raccontano come avviene servizio allo stato attuale;
             - **gli user journey to-be**, che raccontano come sarà il futuro servizio digitale e sono utili soprattutto in fase di progettazione.
-            
+
             Lo strumento di **mappatura dell’esperienza dell’utente**, o **user journey**, sintetizza tutte le interazioni delle persone attraverso i diversi touchpoint messi loro a disposizione (sito, app, sportello/punto vendita, ecc.) per raggiungere un determinato obiettivo.
 
         # TXT + CTA BLOCK
@@ -262,14 +250,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -301,17 +289,6 @@ components:
           Identifica i profili delle persone che utilizzano il servizio, evidenziando le loro esigenze e difficoltà rispetto all'esperienza attuale d’uso del servizio.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
         # CARD CHILDREN ACTION
       - title: Analizza l‘esperienza d’uso #C
@@ -325,14 +302,3 @@ components:
           Analizza l'esperienza delle persone e le interazioni nelle diverse fasi del tuo servizio. Specifica le attività che svolgono, gli attori coinvolti, i canali e touchpoint attraverso cui interagiscono con il servizio digitale.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
