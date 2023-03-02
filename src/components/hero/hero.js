@@ -4,8 +4,8 @@ import "./hero.scss"
 import ReactMarkdown from "react-markdown"
 import ImageResponsive from "../image-responsive/image-responsive"
 import Breadcrumbs from "../breadcrumbs/breadcrumbs"
-import Dropdown from "../dropdown/dropdown"
 import Icon from "../icon/icon"
+import ShareButton from "../share-button/share-button"
 import Tag from "../tag/tag"
 import Kangaroo from "../kangaroo/kangaroo"
 
@@ -17,7 +17,6 @@ const Hero =({
   specialKangarooComponent,
 	// breadcrumbs,
   reversedMobile,
-	share,
 	tag,
 	background,
 	title,
@@ -58,7 +57,7 @@ const Hero =({
 
   let rowStyle = 'row g-0'
 		+ `${centered ? ' justify-content-lg-center' : ''}`
-   
+
   let columnStyle = ' col-12 g-0 px-3' // col-md-10 offset-md-1'
 		+ `${centered ? ' col-lg-7 offset-lg-0' : ' ps-lg-5 pe-lg-0 col-lg-7'}`
 
@@ -80,8 +79,8 @@ const Hero =({
     rightColumnStyle = "col-12 col-md-3 offset-md-1 d-flex flex-column px-3 pe-lg-5 pt-md-4"
   }
 
-
-
+  const shareColor = background === 'light' ? 'primary' : 'white'
+  const url = pageContext.breadcrumb.location
 
 	return(
 		<div className={styles}>
@@ -103,7 +102,7 @@ const Hero =({
                       </div>
                       <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
                       {tag && <Tag {...tag}></Tag>}
-                      {pretext && 
+                      {pretext &&
                       <div className="bottom-text">
                         <div className="pre-text">
                           {pretext.icon && <Icon {...pretext.icon} addonClasses="me-2"></Icon>}
@@ -113,7 +112,7 @@ const Hero =({
                       </div>
                       }
                     </div>
-                    {centered && <Dropdown {...share}></Dropdown>}
+                    {centered && <ShareButton title={title} url={url} color={shareColor} />}
                     {kangaroo && specialKangarooComponent &&
                       <div className="">
                         <div className={kangarooZoneStyle}>
@@ -134,7 +133,7 @@ const Hero =({
                       { img && <div className={imgStyle}>
                         <ImageResponsive src={img} alt={alt} imgClassName={imgResponsiveStyle}/>
                       </div>}
-                      {share  && <Dropdown {...share}></Dropdown>}
+                      {<ShareButton title={title} url={url} color={shareColor} />}
                     </div>
                   }
                 </div>

@@ -1,7 +1,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: design-system-index
 
@@ -17,7 +17,7 @@ lastUpdate:
   column: true
   noPadding: true
   title: 'Ultimo aggiornamento:'
- 
+
   licence:
     label: Licenza CC BY SA 4.0
     url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
@@ -64,18 +64,6 @@ components:
       text: In breve
     text: |
       Tra i fondamenti troverai gli strumenti per impostare layout con le giuste dimensioni e proporzioni, stile coerente in bordi, colori e ombre, e contenuti  di facile comprensione. Il tutto garantendo qualità e accessibilità al tuo sito o servizio.
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -112,7 +100,7 @@ components:
           url: "#"
           color: primary
           size: lg
-   
+
 
   # /////////// COMPONENT LIST FROM HERE ////////////
   filterCards:
@@ -154,17 +142,6 @@ components:
           - label: Design system
             url: "#"
             color: secondary
-        share:
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: Accessibilità
         # img: /images/600x400.png
@@ -186,17 +163,6 @@ components:
           - label: Inclusione
             url: "#"
             color: secondary
-        share:
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: Linguaggio
         # img: /images/600x400.png
@@ -216,17 +182,6 @@ components:
           - label: Design system
             url: "#"
             color: secondary
-        share:
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: Versionamento
         # img: /images/600x400.png
@@ -245,19 +200,8 @@ components:
           - label: Design system
             url: "#"
             color: secondary
-        share:
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
-            
+
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
   sectionsEditorial :
@@ -265,22 +209,22 @@ components:
     noSpace: true
     components:
       - name: ImgFull
-        img: /images/design-system/fondamenti.jpg 
+        img: /images/design-system/fondamenti.jpg
         alt: ""
-  
+
   sectionsEditorial2 :
     - full: true
       noSpace: false
       components:
         - name: TextImageCta
           noSpace: true
-          text: |   
+          text: |
             Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare lo UI Kit e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento al framework di sviluppo Bootstrap Italia.
           ctas:
           - label: "Vai allo UI Kit nella community Figma " #C
             url: https://www.figma.com/community/file/1105848677422572920 #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -290,7 +234,7 @@ components:
           - label: "Vai a Bootstrap Italia su GitHub " #C
             url: https://github.com/italia/bootstrap-italia #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle

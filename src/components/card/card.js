@@ -7,6 +7,8 @@ import Tag from "../tag/tag"
 import Icon from "../icon/icon"
 import Link from "../link/link"
 import Button from "../button/button"
+import ShareButton from "../share-button/share-button"
+
 import "./card.scss"
 
 const Card =(
@@ -78,9 +80,8 @@ const Card =(
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
             {moreInfo && <span className="more-info font-monospace">{moreInfo}</span>}
           </div>
-          {(tag || share || chips || img || dateOverlay) && <div className="di-card-footer">
-           <div className={imgStyle}>
-            {/* {(img || imgPlaceholder || iconImg) && <div className={imgStyle}> */}
+          {<div className="di-card-footer">
+            <div className={imgStyle}>
               {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt}/>}
               {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt}/>}
               {dateOverlay && <div className="date-overlay d-flex flex-column justify-content-center">
@@ -103,7 +104,8 @@ const Card =(
               {tag && <div className="tag-container">
                 <Tag {...tag}></Tag>
               </div>}
-              {/* {share && <Dropdown {...share}></Dropdown>} */ /* XXX disable sharer for cards (temp) */ } 
+              {}
+              {url && <ShareButton url={url} title={title} small={true} />}
             </div>
           </div>}
         </div>
@@ -148,7 +150,7 @@ const Card =(
               {tag && <div className="tag-container">
                 <Tag {...tag}></Tag>
               </div>}
-              {/* {share && <Dropdown {...share}></Dropdown>} */ /* XXX disable sharer for cards (temp) */ } 
+              {<ShareButton url={url} title={title} small={true} />}
             </div>
           </div>}
         </div>
