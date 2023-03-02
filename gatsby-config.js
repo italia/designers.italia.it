@@ -113,6 +113,11 @@ module.exports = {
                 id
                 relativePath
                 components {
+                  hero {
+                    title
+                    subtitle
+                    text
+                  }
                   sectionsEditorial {
                     components {
                       title
