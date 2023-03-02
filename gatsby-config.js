@@ -115,6 +115,13 @@ module.exports = {
                 components {
                   sectionsEditorial {
                     components {
+                      title
+                      text
+                    }
+                  }
+                  sectionsEditorial2 {
+                    components {
+                      title
                       text
                     }
                   }
