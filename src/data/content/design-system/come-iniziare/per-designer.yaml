@@ -1,7 +1,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: design-system-index
 
@@ -64,18 +64,6 @@ components:
       text: In breve
     text: |
       Scopri gli strumenti messi a disposizione per i designer, i vari formati, come utilizzarli e come partecipare attivamente: dalle ultime versioni dello UI kit e gli approfondimenti sui temi di accessibilità, ai design token e i processi per contribuire alla cura e all'evoluzione del kit.
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
      # KANGAROO: METADATA
     kangaroo:
@@ -146,14 +134,14 @@ components:
         - name: ImgFull
           img: /images/design-system/uikit.jpg
           alt: Il UI Kit in Figma
-    
+
     - full: true
       noSpace: true
       title: Scopri e usa lo UI Kit
       text: Lo strumento a disposizione dei designer per costruire e prototipare interfacce ed esperienze di siti e servizi pubblici digitali
       background: null
       components:
-        
+
         - name: TextImageCta
           title: Versione corrente
           # text: |
@@ -161,7 +149,7 @@ components:
           - label: Vai alla community @designersitalia #C
             url: https://figma.com/@designersitalia #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -171,14 +159,14 @@ components:
           - label: Scopri e usa la versione corrente #C
             url: https://www.figma.com/community/file/1105848677422572920 #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-      
+
         - name: TextImageCta
           title: Tutti i formati disponibili
           headingLevel: 4
@@ -187,7 +175,7 @@ components:
           - label: Vai al repository GitHub dedicato #C
             url: "#" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -197,20 +185,20 @@ components:
 
         - name: TextImageCta
           title: Come utilizzarlo in Figma
-          text: | 
+          text: |
             #### Se hai un account "Free"
             - Vai alla [versione corrente](https://www.figma.com/community/file/1105848677422572920);
             - **Copia lo UI Kit nei draft** del tuo profilo.
-            
+
             Non è possibile aggiungerlo come libreria, ma puoi utilizzarlo con "approccio playground":
             - **aggiungi una nuova pagina**, o utilizza la pagina Playground;
             - **usa solo gli stili presenti** nello UI Kit;
-            - **cerca e trascina i componenti** della libreria dal pannello *Asset*. 
-            
+            - **cerca e trascina i componenti** della libreria dal pannello *Asset*.
+
             Non modificare nulla delle altre pagine dello UI kit.
 
             ##### Come aggiornare all'ultima versione
-            Puoi procedere a usare la nuova versione seguendo i passi precedenti con il nuovo UI Kit, non è possibile aggiornare in automatico i componenti del tuo progetto. 
+            Puoi procedere a usare la nuova versione seguendo i passi precedenti con il nuovo UI Kit, non è possibile aggiornare in automatico i componenti del tuo progetto.
 
             #### Se hai un account "Professional"
             - Vai alla [versione corrente](https://www.figma.com/community/file/1105848677422572920);
@@ -227,7 +215,7 @@ components:
             - **Rimuovi** la versione precedente dal team;
             - **Pubblica stili e componenti** dalla nuova versione;
             - **Apri il progetto** da aggiornare;
-            - All'avviso di **libreria mancante** nel pannello *Asset*, **seleziona e scegli quella appena pubblicata**.  
+            - All'avviso di **libreria mancante** nel pannello *Asset*, **seleziona e scegli quella appena pubblicata**.
 
             Stili e componenti verranno ricollegati in automatico.
 
@@ -235,8 +223,8 @@ components:
           title: Se utilizzi altre soluzioni
           text: |
             _In stesura_
-    
-    
+
+
     - full: true
       noSpace: true
       title: Standard, open design e partecipazione
@@ -252,7 +240,7 @@ components:
             url: "/design-system/fondamenti/accessibilita/" #M
             blank: false #M #C true if new tab for external links
             # disabled: true
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -280,4 +268,4 @@ components:
           text: |
             _In stesura_
 
-          
+

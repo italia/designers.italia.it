@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +116,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      I test di usabilità ti permettono di **verificare l’usabilità e l’efficacia di un servizio digitale e di ipotizzare eventuali modifiche di miglioramento**. Le risorse di questo kit ti aiutano a pianificare gli obiettivi e le attività dei test, a condurli e ad analizzare i risultati.  
+      I test di usabilità ti permettono di **verificare l’usabilità e l’efficacia di un servizio digitale e di ipotizzare eventuali modifiche di miglioramento**. Le risorse di questo kit ti aiutano a pianificare gli obiettivi e le attività dei test, a condurli e ad analizzare i risultati.
     img: /images/risorse-per-progettare/icons/kit_testusability.svg #I
     alt: "L'usabilità rende felici" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -192,7 +180,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -235,11 +223,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: "A cosa serve il kit dedicato ai test di usabilità" #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -248,13 +236,13 @@ components:
         - name: TextImageCta
           text: | #C
             Questo kit ti fornisce tutti gli strumenti necessari per la preparazione, conduzione e l’analisi dei risultati di un test di usabilità.
-            
-            I test di usabilità sono delle sessioni di **osservazione diretta dell’interazione tra un utente e un servizio digitale**. I test vengono svolti assegnando all’utente uno o più attività da svolgere e analizzando il suo comportamento nel portarli a termine. 
+
+            I test di usabilità sono delle sessioni di **osservazione diretta dell’interazione tra un utente e un servizio digitale**. I test vengono svolti assegnando all’utente uno o più attività da svolgere e analizzando il suo comportamento nel portarli a termine.
             I test servono a:
             * capire come **aiutare i cittadini a trovare facilmente ciò che cercano**;
             * ridurre gli errori e **aumentare la soddisfazione** di fruizione di un servizio;
             * evitare la produzione di servizi inadeguati e **aumentare la fiducia dei cittadini nei confronti dell’amministrazione**.
-            
+
             Puoi svolgere dei test di usabilità con gli utenti durante la fase di sviluppo del servizio, per verificare il loro comportamento e apportare eventuali modifiche in corso d’opera, oppure quando un servizio digitale è già in uso.
             I test si basano sul Protocollo eGLU LG, uno strumento pensato per coloro che lavorano nella gestione dei siti istituzionali e tematici di tutte le pubbliche amministrazioni.
 
@@ -268,14 +256,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/test-usabilita.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -307,18 +295,7 @@ components:
           Definisci gli obiettivi dei test, le attività da svolgere e il numero e la tipologia dei partecipanti.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButshareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-            
+
       # CARD CHILDREN ACTION
       - title: Prepara le attività e svolgi i test di usabilità #C
         fullHeight: true
@@ -331,17 +308,6 @@ components:
           Massimizza l’utilità dei test preparando un ambiente idoneo e interagendo correttamente con i partecipanti.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       # CARD CHILDREN ACTION
       - title: Rielabora e condividi i risultati #C
@@ -355,14 +321,3 @@ components:
           Schematizza, categorizza e classifica le informazioni raccolte per individuare eventuali modifiche di miglioramento.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

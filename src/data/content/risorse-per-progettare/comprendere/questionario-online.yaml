@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +116,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-     Questo kit dedicato ai questionari comprende modelli pre-organizzati per aiutarti nelle attività di **pianificazione, esecuzione e analisi di una ricerca** per raccogliere informazioni preziose su **come le persone percepiscono il servizio digitale** che stai progettando o ri-progettando. 
+     Questo kit dedicato ai questionari comprende modelli pre-organizzati per aiutarti nelle attività di **pianificazione, esecuzione e analisi di una ricerca** per raccogliere informazioni preziose su **come le persone percepiscono il servizio digitale** che stai progettando o ri-progettando.
     img: /images/risorse-per-progettare/icons/kit_questionario.svg #I
     alt: "Modelli utili a capire" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -192,7 +180,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -228,11 +216,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit di questionario online #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -242,7 +230,7 @@ components:
           text: | #C
             I questionari online consentono di raccogliere informazioni dalle persone in maniera strutturata, così da poterle elaborare quantitativamente. Il vantaggio chi progetta è poter **raggiungere una grande quantità di persone contemporaneamente poiché la somministrazione avviene online** e attraverso i canali di comunicazione digitale più consoni a raggiungere i partecipanti.
 
-            Il kit dedicato ai questionari online ti offre modelli già pronti all’uso per la pianificazione, l’esecuzione e l’analisi delle attività relative a questa tipologia di ricerca utente.  
+            Il kit dedicato ai questionari online ti offre modelli già pronti all’uso per la pianificazione, l’esecuzione e l’analisi delle attività relative a questa tipologia di ricerca utente.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -254,14 +242,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -293,17 +281,6 @@ components:
           Definisci gli obiettivi dell’indagine e inizia a progettare il questionario riflettendo sulla strategia migliore per estrapolare le informazioni di cui hai bisogno.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
         # CARD CHILDREN ACTION
       - title: Sintetizza i risultati della ricerca #C
@@ -317,14 +294,3 @@ components:
           Analizza le informazioni raccolte con tecniche quanti-qualitative e rielaborale in maniera rilevante per lo scopo della ricerca.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

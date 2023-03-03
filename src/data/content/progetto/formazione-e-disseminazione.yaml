@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level2
 
@@ -101,26 +101,14 @@ components:
       icon:
         icon: sprites.svg#it-info-circle
         size: sm
-      text: In breve 
+      text: In breve
     text: | #C
-          L’obiettivo della nostra strategia di formazione e disseminazione è quello di **guidare la trasformazione digitale dei servizi pubblici** attraverso la **promozione di una cultura progettuale** che tenga conto della complessità e della molteplicità degli attori coinvolti nell’ambito pubblico. Il nostro approccio segue quattro aree di opportunità e intervento: formazione, insegnamento, promozione, partecipazione.  
+          L’obiettivo della nostra strategia di formazione e disseminazione è quello di **guidare la trasformazione digitale dei servizi pubblici** attraverso la **promozione di una cultura progettuale** che tenga conto della complessità e della molteplicità degli attori coinvolti nell’ambito pubblico. Il nostro approccio segue quattro aree di opportunità e intervento: formazione, insegnamento, promozione, partecipazione.
     # img: /images/400x300.png #I
     # alt: alt lorem ipsum #C
     imgRatio: 4x3
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
-    # KANGAROO: METADATA    
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       titleSr: Metadati e link per approfondire
@@ -165,14 +153,14 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
-    - title: La nostra strategia 
+    # —
+    - title: La nostra strategia
       background: null
       menu: false
       centered: true
       text: | #C
         Le attività di formazione, insegnamento, partecipazione e promozione tramite cui diffondiamo il progetto Designers Italia
-      components: 
+      components:
 
         # TXT BLOCK
         - name: TextImageCta
@@ -183,7 +171,7 @@ components:
           specular: true
           text: | #C
             Attraverso le nostre attività di formazione fra cui corsi dedicati alla progettazione dei servizi digitali, community lab e lezioni sull’uso di risorse e strumenti di Designers Italia, perseguiamo l’obiettivo di **fornire basi di cultura progettuale agli attori direttamente coinvolti nei processi di trasformazione digitale** dei servizi pubblici.
-            
+
             Crediamo quindi che per accelerare la trasformazione digitale in ambito pubblico sia fondamentale dedicare formazione specifica a dipendenti della PA, in-house e fornitori della Pubblica Amministrazione.
 
         ### IMAGE HERE #I
@@ -198,9 +186,9 @@ components:
           # noSpace: true
           text: | #C
             Collaboriamo con studenti, università e istituti di specializzazione pubblici e privati per **promuovere le buone pratiche di design in ambito pubblico**. Individuiamo docenti e corsi interessati ai temi della progettazione e della pubblica utilità per proporre lecture, accordi di collaborazione, contributi per tesi e progetti, sfruttando la prospettiva dei giovani e creando circoli virtuosi di generazione di conoscenze e competenze.
-            
+
             L’obiettivo del nostro stream di insegnamento è quello di avvicinare i designer e gli operatori pubblici del futuro ai temi del design per la pubblica utilità, secondo una logica open che può ampliare la conoscenza e le risorse sul tema.
-      
+
 
         # TXT BLOCK
         - name: TextImageCta
@@ -211,22 +199,22 @@ components:
           specular: true
           noSpace: true
           text: | #C
-            Crediamo nel valore della community e nella necessità di **creare collaborazione con le realtà sul campo, incoraggiare la partecipazione e la condivisione di buone pratiche**, partecipare ad eventi di divulgazione e networking. L’obiettivo è quello di condividere buone pratiche attraverso l’ascolto, la collaborazione e la partecipazione della comunità di designer e developers e grazie a eventi e conferenze, collaborazioni, community call, contributi esterni sul blog. 
+            Crediamo nel valore della community e nella necessità di **creare collaborazione con le realtà sul campo, incoraggiare la partecipazione e la condivisione di buone pratiche**, partecipare ad eventi di divulgazione e networking. L’obiettivo è quello di condividere buone pratiche attraverso l’ascolto, la collaborazione e la partecipazione della comunità di designer e developers e grazie a eventi e conferenze, collaborazioni, community call, contributi esterni sul blog.
 
      # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: Diamo i numeri
       background: dark
       headingLevel: 4
       menu: false
       centered: true
-      components: 
+      components:
 
         # NUMBERS BLOCK
         - name: Numbers
           items: #C #I
-          - label: Iscritti alla community 
+          - label: Iscritti alla community
             icon: sprites.svg#it-user
             number: "21000"
           - label: Partecipanti ai corsi per PA
@@ -242,12 +230,12 @@ components:
 
      # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - #title: Promozione
       background: null
       menu: false
       centered: true
-      components: 
+      components:
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -262,7 +250,7 @@ components:
           - label: Scopri le attività della community #C
             url: "/community/" #M
             blank: false #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle

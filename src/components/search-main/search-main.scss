@@ -1,10 +1,13 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .search-main {
-  .icon-search-disabled {
+  input:read-only {
+    cursor: not-allowed;
+  }
+  .icon-search {
     fill: #D9DADB;;
   }
-  .border-search-disabled {
+  .border-search {
     border-bottom: 1px solid #D9DADB;
   }
   // p {
