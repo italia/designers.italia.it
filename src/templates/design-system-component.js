@@ -5,7 +5,6 @@ import "../js/globals"
 import Skiplinks from "../components/skiplinks/skiplinks"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
-import BackToTopEl from "../components/back-to-top/back-to-top"
 import HeaderSlim from "../components/header-slim/header-slim"
 import HeaderPre from "../components/header-pre/header-pre"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
@@ -61,13 +60,6 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
       </div>
       <Footer {...FooterData.footer}>
       </Footer>
-      <BackToTopEl
-        positionTop={0}
-        scrollLimit={100}
-        duration={800}
-        easing="easeInOutSine"
-        ariaLabel={FooterData.footer.backToTop.ariaLabel}
-      />
     </div>
 	)
 }

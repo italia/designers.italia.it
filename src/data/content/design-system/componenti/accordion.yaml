@@ -1,11 +1,11 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   json: bsi/accordion.json
   template:
     name: design-system-component
-    
+
 seo:
   name: Accordion
   description: "Un accordion è una lista di intestazioni che possono espandersi per mostrare contenuti nascosti, utile per ottimizzare spazio su pagina e creare collegamenti con contenuti correlati"
@@ -66,18 +66,6 @@ components:
     # alt: "" #C
     imgRatio: 1x1
     noBorder: true
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
      # KANGAROO: METADATA
     kangaroo:
@@ -147,8 +135,8 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Il componente Accordion permette di espandere e collassare delle sezioni con contenuti molto lunghi e non principali. L’intestazione delle sezioni dà una panoramica dei contenuti e permette all’utente di scegliere quali leggere. 
-          
+              Il componente Accordion permette di espandere e collassare delle sezioni con contenuti molto lunghi e non principali. L’intestazione delle sezioni dà una panoramica dei contenuti e permette all’utente di scegliere quali leggere.
+
       - full: true
         noSpace: true
         components:
@@ -166,7 +154,7 @@ tabs:
               - Non nascondere in un accordion informazioni importanti che devono essere lette dagli utenti.
               - Non usare l’accordion su pagine che devono essere stampate.
               - Non usare l’accordion per contenuti molto articolati graficamente, ad esempio con immagini e icone.
-              
+
               #### Buone pratiche sui contenuti
               - I titoli delle sezioni dell’accordion devono essere il più breve possibile, rimanendo comunque chiari e descrittivi del contenuto della sezione.
               - Ogni titolo deve essere formattato come un heading (H2-H4) appropriato all’informazione dell’architettura della pagina.
@@ -229,7 +217,7 @@ tabs:
               screenReaderText: " (si apre in una nuova finestra)" #C
               url: https://github.com/italia/bootstrap-italia/issues #M
               blank: true #M #C true if new tab for external links
-              icon: 
+              icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
                 align: middle
@@ -281,7 +269,7 @@ tabs:
                       icon: sprites.svg#it-external-link
                       size: sm
               - cols:
-                - text: React 
+                - text: React
                   scope: row
                 - tag:
                     label: Da rivedere
@@ -295,31 +283,31 @@ tabs:
                       icon: sprites.svg#it-external-link
                       size: sm
               # - cols:
-              #   - text: Angular 
+              #   - text: Angular
               #     scope: row
               #   - tag:
               #       label: Non presente
               #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
               #   - text: ""
-                
+
               # - cols:
-              #   - text: Vue 
+              #   - text: Vue
               #     scope: row
               #   - tag:
               #       label: Non presente
               #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
               #   - text: ""
-      
+
           - name: TextImageCta
             text: |
               Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
               Partecipa all'evoluzione del design system del Paese!
-          
+
           - name: TextImageCta
             title: Nota sullo stato
             text: |
-              Lo stato generale del componente, riportato nel titolo di pagina, è valutato sulla base dello stato dell'arte delle due librerie UI Kit e Bootstrap Italia. 
-            ctas: 
+              Lo stato generale del componente, riportato nel titolo di pagina, è valutato sulla base dello stato dell'arte delle due librerie UI Kit e Bootstrap Italia.
+            ctas:
               - label: Scopri di più su come si definisce lo stato (presto)
                 url: "#"
                 icon:
@@ -341,7 +329,7 @@ tabs:
           - name: TextImageCta
             noSpace: false
             text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
+              *Stiamo lavorando a questo contenuto e sarà presto disponibile.
               Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
           - name: TextImageCta
             noSpace: true
@@ -363,7 +351,7 @@ tabs:
             title: Specifiche di design
             # lead: Eventuale lead paragraph
             text: |
-              *In stesura*   
+              *In stesura*
 
       - full: true
         noSpace: false
@@ -396,14 +384,14 @@ tabs:
       - full: true
         noSpace: false
         title: Design Tokens
-        # text: 
+        # text:
         components:
 
           - name: TextImageCta
             text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile in forma completa.   
-              La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI. 
-              Quelle che seguono fanno riferimento al componente base.* 
+              *Stiamo lavorando a questo contenuto e sarà presto disponibile in forma completa.
+              La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI.
+              Quelle che seguono fanno riferimento al componente base.*
 
           - name: Table
             title: Colori
@@ -470,7 +458,7 @@ tabs:
             head:
               - text: Elemento
               - text: Dimensione
-              - text: Token 
+              - text: Token
             rows:
               - cols:
                 - text: Inset
@@ -507,7 +495,7 @@ tabs:
             head:
               - text: Elemento
               - text: Stato
-              - text: Icona 
+              - text: Icona
             rows:
               - cols:
                 - text: Chevron
@@ -523,26 +511,26 @@ tabs:
                 - tag:
                     label: Navigation/Chevron/Expand
                     addonClasses: neutral-1-bg-a3 text-dark fw-bold
-            
+
           - name: Table
             title: Stili di testo
             responsive: table-responsive-md
             head:
               - text: Elemento
               - text: Stato
-              - text: Stile 
+              - text: Stile
             rows:
               - cols:
                 - text: Text
                   scope: row
-                - text: 
+                - text:
                 - tag:
                     label: body text/sans
                     addonClasses: neutral-1-bg-a3 text-dark fw-bold
               - cols:
                 - text: link
                   scope: row
-                - text: 
+                - text:
                 - tag:
                     label: link/sans-bold
                     addonClasses: neutral-1-bg-a3 text-dark fw-bold
@@ -553,7 +541,7 @@ tabs:
                 - tag:
                     label: link/sans-bold-underline
                     addonClasses: neutral-1-bg-a3 text-dark fw-bold
-      
+
 
   - title: Sviluppo
 

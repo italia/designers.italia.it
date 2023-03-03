@@ -16,10 +16,10 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
-    
+
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -119,18 +119,6 @@ components:
       La costruzione dell’**interfaccia in alta fedeltà** è una delle fasi finali della realizzazione di un servizio digitale. Le risorse di questo kit ti aiutano ad assemblare velocemente l’interfaccia utente in alta fedeltà, tramite componenti (tipografia, pulsanti, icone, navigazione) già validati e con uno **stile visivo coerente**.
     img: /images/risorse-per-progettare/icons/kit_UI.svg #I
     alt: "Il design è una questione di attenzione" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -196,7 +184,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -225,11 +213,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit costruzione interfaccia #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -243,10 +231,10 @@ components:
         - name: TextImageCta
           title: Interfacce efficaci
           text: | #C
-            Una buona interfaccia è **intuitiva**, **inclusiva** e **accessibile**. Deve essere comprensibile e usabile da tutti i cittadini, perciò è importante realizzarla tenendo in mente la possibilità di errori e fornire un modo di gestirli. Non ci si deve aspettare che l’utente abbia sempre chiaro ciò che vuole, sappia comprendere appieno eventuali istruzioni, o che sia in grado di decifrare colori, simboli ed elementi non familiari. 
-            
+            Una buona interfaccia è **intuitiva**, **inclusiva** e **accessibile**. Deve essere comprensibile e usabile da tutti i cittadini, perciò è importante realizzarla tenendo in mente la possibilità di errori e fornire un modo di gestirli. Non ci si deve aspettare che l’utente abbia sempre chiaro ciò che vuole, sappia comprendere appieno eventuali istruzioni, o che sia in grado di decifrare colori, simboli ed elementi non familiari.
+
             L’uso di componenti creati per i servizi digitali della Pubblica Amministrazione permette di creare una **coerenza visiva che diminuisce la possibilità di errori**: gli utenti utilizzano con più efficacia e facilità i percorsi che hanno già imparato a riconoscere.
-            
+
             L’uso di questi componenti non basta però a costruire un’interfaccia efficace. Gli standard rispondono a processi cognitivi e di percezione generali, che vanno però considerati nel contesto del servizio specifico.
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -258,7 +246,7 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/progettare-e-costruire-in-alta-fedelta.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -292,14 +280,3 @@ components:
           Costruisci le schermate del servizio digitale e rendile interattive per svolgere test di usabilità e, successivamente, passare allo sviluppo.
         tag:
           label: "Attività del kit" #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

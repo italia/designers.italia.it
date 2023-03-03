@@ -1,11 +1,11 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   json: bsi/buttons.json
   template:
     name: design-system-component
-    
+
 seo:
   name: Buttons
   description: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione"
@@ -66,18 +66,6 @@ components:
     # alt: "" #C
     imgRatio: 1x1
     noBorder: true
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
      # KANGAROO: METADATA
     kangaroo:
@@ -147,9 +135,9 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              I pulsanti comunicano che l’interazione dà il via a un’azione o a un evento. Non dovrebbero essere utilizzati come elementi di navigazione. 
+              I pulsanti comunicano che l’interazione dà il via a un’azione o a un evento. Non dovrebbero essere utilizzati come elementi di navigazione.
 
-          
+
       - full: true
         noSpace: true
         components:
@@ -159,21 +147,21 @@ tabs:
             headingLevel: 2
             text: |
               - Usa la variante primary per valorizzare l’azione principale
-              - Usa la variante secondary per valorizzare l’azione secondaria 
+              - Usa la variante secondary per valorizzare l’azione secondaria
               - Usa pulsanti disabilitati con moderazione, assicurandoti che per l’utente sia chiaro come attivarli
-              - Per comunicare senza ambiguità la gerarchia delle azioni generate dai pulsanti, usa le varianti di grandezza e tipologia. 
+              - Per comunicare senza ambiguità la gerarchia delle azioni generate dai pulsanti, usa le varianti di grandezza e tipologia.
               - Usa un pulsante con icona per aggiungere un’informazione visiva all’interazione (es. pulsante di accesso ad area riservata)
 
               #### Attenzione a
               - Non usare più di un pulsante primary nello stesso contesto di azione
-              - Non usare pulsanti primary per azioni di valore secondario 
+              - Non usare pulsanti primary per azioni di valore secondario
               - Non usare i pulsanti all’interno di paragrafi di testo
-              
+
               #### Buone pratiche sui contenuti
               - Le etichette di testo devono comunicare in maniera immediata, chiara e senza ambiguità il significato dell’azione
               - Non usare etichette di testo troppo lunghe
               - Prediligi etichette di testo che fanno riferimento a una sola azione alla volta
-              - Usa la seconda persona singolare (es. "Aggiungi un servizio") 
+              - Usa la seconda persona singolare (es. "Aggiungi un servizio")
               - Usa la prima persona singolare nel caso di accettazione di termini e condizioni o modali informative (es. "Accetto" o "Ho capito")
               - I pulsanti con sola icona potrebbero generare ambiguità: se possibile, aggiungi sempre un’etichetta di testo
 
@@ -230,7 +218,7 @@ tabs:
               screenReaderText: " (si apre in una nuova finestra)" #C
               url: https://github.com/italia/bootstrap-italia/issues #M
               blank: true #M #C true if new tab for external links
-              icon: 
+              icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
                 align: middle
@@ -284,7 +272,7 @@ tabs:
                       size: sm
 
               - cols:
-                - text: React 
+                - text: React
                   scope: row
                 - tag:
                     label: Da rivedere
@@ -299,31 +287,31 @@ tabs:
                       size: sm
 
                 # - cols:
-                #   - text: Angular 
+                #   - text: Angular
                 #     scope: row
                 #   - tag:
                 #       label: Non presente
                 #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
                 #   - text: ""
-                  
+
                 # - cols:
-                #   - text: Vue 
+                #   - text: Vue
                 #     scope: row
                 #   - tag:
                 #       label: Non presente
                 #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
                 #   - text: ""
-      
+
           - name: TextImageCta
             text: |
               Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
               Partecipa all'evoluzione del design system del Paese!
-          
+
           - name: TextImageCta
             title: Nota sullo stato
             text: |
-              Lo stato generale del componente, riportato nel titolo di pagina, è valutato sulla base dello stato dell'arte delle due librerie UI Kit e Bootstrap Italia. 
-            ctas: 
+              Lo stato generale del componente, riportato nel titolo di pagina, è valutato sulla base dello stato dell'arte delle due librerie UI Kit e Bootstrap Italia.
+            ctas:
               - label: Scopri di più su come si definisce lo stato (presto)
                 url: "#"
                 icon:
@@ -345,7 +333,7 @@ tabs:
           - name: TextImageCta
             noSpace: false
             text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.  
+              *Stiamo lavorando a questo contenuto e sarà presto disponibile.
               Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
           - name: TextImageCta
             noSpace: true
@@ -368,7 +356,7 @@ tabs:
             # lead: Eventuale lead paragraph
             text: |
               *In stesura*
-    
+
       - full: true
         noSpace: false
         title: Kit UI
@@ -400,12 +388,12 @@ tabs:
       - full: true
         noSpace: true
         title: Design Tokens
-        # text: 
+        # text:
         components:
 
           - name: TextImageCta
             text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.   
+              *Stiamo lavorando a questo contenuto e sarà presto disponibile.
               La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI.*
 
   - title: Sviluppo
@@ -442,7 +430,7 @@ tabs:
       #         color: primary
 
 
-      
+
     sectionsEditorial:
       # - full: true
       #   noSpace: true

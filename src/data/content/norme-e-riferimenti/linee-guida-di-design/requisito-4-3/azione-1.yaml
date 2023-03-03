@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -128,18 +128,6 @@ components:
     # img: /images/400x300.png #I
     # alt: descrizione immagine #C
     # imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -261,7 +249,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-              
+
         # TXT BLOCK
         - name: TextImageCta
           title: Metodo di lavoro #C
@@ -280,7 +268,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-        
+
         # TXT BLOCK
         - name: TextImageCta
           title: Le competenze per progettare servizi pubblici #C
@@ -299,7 +287,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-              
+
         # TXT BLOCK
         - name: TextImageCta
           title: Progettazione di servizi #C
@@ -318,13 +306,13 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          
+
         # TXT BLOCK
         - name: TextImageCta
           title: Progettare un servizio pubblico digitale #C
           headingLevel: 4
           text: | #C
-            Conosci tutti gli elementi da tenere in considerazione nella progettazione di un servizio. 
+            Conosci tutti gli elementi da tenere in considerazione nella progettazione di un servizio.
           ctas:
           - label: Vai all'argomento sul Manuale #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/progettare-un-servizio-pubblico-digitale.html#progettare-un-servizio-pubblico-digitale" #M
@@ -336,7 +324,7 @@ components:
               align: middle
               hidden: true
               size: sm
-              addonClasses: ms-2  
+              addonClasses: ms-2
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -351,7 +339,7 @@ components:
 
     # CARDS
     cards: # AUTO?
-            
+
       # CARD CHILDREN ACTION
       - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
         headingLevel: 4
@@ -383,17 +371,6 @@ components:
             label: Approfondimento teorico
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardMedium1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       # CARD CHILDREN ACTION
       - title: "Prove tecniche di design: come testare sul campo gli strumenti di progettazione"
@@ -422,18 +399,7 @@ components:
             label: Linee guida
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardMedium2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
- 
+
       # CARD CHILDREN ACTION
       - title: "PA digitale 2026, l'utente al centro della progettazione"
         headingLevel: 4
@@ -465,14 +431,3 @@ components:
             label: Accessibilità
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardMedium3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

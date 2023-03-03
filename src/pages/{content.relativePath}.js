@@ -26,7 +26,7 @@ const TEMPLATES = {
 
 const Page = ({ pageContext, location, data: { content } }) => {
   const Template = content.metadata.template ? TEMPLATES[content.metadata.template.name] : TemplateBase
-  const lastModified = content.parent.fields.gitLogLatestDate
+  const lastModified = content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
 
   return(
     <Template Pagedata={content} pageContext={pageContext} location={location} lastModified={lastModified}>
@@ -102,22 +102,6 @@ export const query = graphql`
             text
           }
           text
-          share {
-            btnId
-            button {
-              label
-              addonStyle
-              icon {
-                icon
-                size
-                color
-                addonClasses
-              }
-            }
-            list {
-              isShare
-            }
-          }
           kangaroo {
             id
             titleSr
@@ -308,21 +292,6 @@ export const query = graphql`
             tag {
               label
             }
-            share {
-              btnId
-              button {
-                addonStyle
-                ariaLabel
-                icon {
-                  icon
-                  size
-                  color
-                }
-              }
-              list {
-                isShare
-              }
-            }
             text
             rounded
             dateInfo
@@ -431,7 +400,6 @@ export const query = graphql`
           title
           text
           formId
-          formAction
           label
           inputId
           inputName
@@ -507,21 +475,6 @@ export const query = graphql`
               label
               url
               blank
-            }
-            share {
-              btnId
-              button {
-                addonStyle
-                ariaLabel
-                icon {
-                  icon
-                  size
-                  color
-                }
-              }
-              list {
-                isShare
-              }
             }
             titleSmall
             tag {
@@ -612,21 +565,6 @@ export const query = graphql`
               label
               url
               blank
-            }
-            share {
-              btnId
-              button {
-                addonStyle
-                ariaLabel
-                icon {
-                  icon
-                  size
-                  color
-                }
-              }
-              list {
-                isShare
-              }
             }
             text
             dateInfo
@@ -734,21 +672,6 @@ export const query = graphql`
               url
               blank
             }
-            share {
-              btnId
-              button {
-                addonStyle
-                ariaLabel
-                icon {
-                  icon
-                  size
-                  color
-                }
-              }
-              list {
-                isShare
-              }
-            }
           }
         }
         sectionsEditorial2 {
@@ -811,7 +734,7 @@ export const query = graphql`
             # images {
             #  img
             #  alt
-            # }          
+            # }
           }
           background
           title
