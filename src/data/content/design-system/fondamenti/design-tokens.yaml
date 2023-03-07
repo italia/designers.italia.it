@@ -113,10 +113,6 @@ components:
         size: sm
         color: secondary
       chips: #C
-        - label: Content
-          url: "#"
-          color: primary
-          size: lg
         - label: Design system
           url: "#"
           color: primary
@@ -131,20 +127,23 @@ components:
     #       alt: Descrizione immagine grande
     - full: true
       noSpace: false
-      title: Cosa sono
+      title: null
       text: null
       background: null
 
       components:
-
         - name: TextImageCta
-          title:
+          title: Cosa sono
+          headingLevel: 2
           text: |
             I _design token_ definiscono, documentano e consentono l'applicazione di **decisioni progettuali** su larga scala, garantendo la **coerenza** di progettazione e sviluppo di un’interfaccia digitale  su diverse piattaforme e dispositivi.
 
             Rappresentano associazioni fra **attributi**, come colori, tipografia, spaziature e dimensioni e i loro **valori**. Per questo motivo sono considerati i **fondamenti strutturali** di un design system.
 
-            ## Perché usarli e dove trovarli
+        - name: TextImageCta
+          title: Perché usarli e dove trovarli
+          headingLevel: 2
+          text: |
             Usiamo i design token per:
             - mantenere un sistema visivo **scalabile** e **coerente**;
             - semplificare le **decisioni di design**, rendendole sistematiche;
@@ -154,8 +153,22 @@ components:
 
             Sono disponibili come stili di Figma nel [kit UI](https://www.figma.com/file/2gaQw683ZazAPEILQtFLZF/%5BDesign-system-%E2%80%A8del-Paese%5D?node-id=986%3A122&t=9FQglVyiZQuCL7nt-1).
 
-            ## Nomenclatura  e organizzazione
-
+        - name: TextImageCta
+          title: Nomenclatura e organizzazione
+          headingLevel: 2
+          ctas:
+          - label: "Vai alla tassonomia" #C
+            url: https://docs.google.com/spreadsheets/d/1NKKSmJsB8XD5ydE5JOcDMG0uRVZyp42GKDX5Ad9CTeU/edit?usp=sharing #M
+            blank: true #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          text: |
             ### Il nome di un token
 
             Il **nome** di un _token_ è composto da una sequenza di termini separati dal simbolo “-”.
@@ -229,14 +242,41 @@ components:
 
             Questo approccio è raccomandato nel caso in cui non ci siano token semantici riutilizzabili per definire lo stile di un elemento o componente.
 
-            ## Strumenti
-
+        - name: TextImageCta
+          title: Strumenti
+          headingLevel: 2
+          ctas:
+          - label: "Vai al kit UI" #C
+            url: https://www.figma.com/file/2gaQw683ZazAPEILQtFLZF/%5BDesign-system-%E2%80%A8del-Paese%5D?node-id=986%3A122&t=9FQglVyiZQuCL7nt-1 #M
+            blank: true #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          text: |
             Integriamo i design token nei nostri progetti grazie all’utilizzo di strumenti avanzati che semplificano il processo di lavoro.
 
             ### Tokens Studio for Figma
+            Utilizziamo **[Tokens Studio for Figma](https://docs.tokens.studio)** per tenere in sincronia gli stili utilizzabili in Figma con i _design token_. 
+            Tramite questo plugin inoltre esportiamo i tre livelli – _global, semantic e specific_ – in formato .JSON.
 
-            Utilizziamo [Tokens Studio for Figma](https://docs.tokens.studio) per tenere in sincronia gli stili utilizzabili in Figma con i _design token_. Tramite questo plugin inoltre esportiamo i tre livelli – _global, semantic e specific_ – in formato .JSON.
-
-            ### Style Dictionary e CI
-
-            Abbiamo integrato [Style Dictionary](https://amzn.github.io/style-dictionary/#/) per poter generare le variabili CSS e Sass relative ai design token. Partendo dai file .JSON disponibili in [design-tokens-italia](https://github.com/italia/design-tokens-italia), questo strumento facilita la manutenzione automatizzando il processo di aggiornamento.
+        - name: TextImageCta
+          title: Style Dictiornary e CI
+          ctas:
+          - label: "Vai al repository GitHub" #C
+            url: https://github.com/italia/design-tokens-italia #M
+            blank: true #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          text: |
+            Abbiamo integrato **[Style Dictionary](https://amzn.github.io/style-dictionary/#/)** per poter generare le variabili CSS e Sass relative ai design token. Partendo dai file .JSON disponibili in [design-tokens-italia](https://github.com/italia/design-tokens-italia), questo strumento facilita la manutenzione automatizzando il processo di aggiornamento.
