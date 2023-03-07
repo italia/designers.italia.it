@@ -16,10 +16,10 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
-    
+
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
     #     size: sm
     # text: In breve
     # text: | #C
-    #   Lorem **ipsum** 
+    #   Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_privacy_social.svg #I
     alt: "Social ma attenti alla privacy" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -203,7 +191,7 @@ components:
           url: "#"
           color: primary
           size: lg
-      
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -223,9 +211,9 @@ components:
           # title: | #C
           text: | #C
             Se come Ente pubblico utilizzi i social network per rivolgerti ai tuoi utenti, devi tenere in considerazione tutti gli aspetti legati al consenso al trattamento dei dati dei tuoi follower.
-            
+
             Le risorse di questa sezione ti forniscono **informazioni utili per essere adempiente alla normativa privacy anche quando fai uso di iniziative di comunicazione o altre forme di partecipazione che coinvolgono i tuoi utenti mediante questi canali**.
-         
+
         # TXT + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png
@@ -234,7 +222,7 @@ components:
           specular: true
           text: | #C
             🟡 **Questo kit non ha la pretesa di trattare in maniera esaustiva ogni aspetto connesso agli adempimenti privacy.** Ciascun Ente è tenuto ad adottare le misure adeguate alla propria organizzazione.
-         
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -244,7 +232,7 @@ components:
     list:
       - simpleList: true
         # title: | #C
-        
+
         headingLevel: 3
         listItems:
           - label: Gestire il trattamento dati dei follower #C
@@ -262,4 +250,4 @@ components:
                 url: /files/resources/risorse-per-progettare/organizzare/privacy/rispetta-la-privacy-quando-usi-i-social-network/DI-Usare-i-social-network-privacy.odt #M
                 ariaLabel: "Scarica ODT Gestire il trattamento dati dei follower" #C #COMPILE FOR EACH ITEM
                 blank: false
-       
+

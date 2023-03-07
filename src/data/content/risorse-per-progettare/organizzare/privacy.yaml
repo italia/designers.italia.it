@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +116,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Con gli strumenti di questo kit dedicato a tematiche di privacy ottieni informazioni di base e una serie di modelli utili per aiutarti a **trattare correttamente i dati personali riferiti ai principali casi d'uso** che dovrai gestire progettando e realizzando un servizio digitale.  
+      Con gli strumenti di questo kit dedicato a tematiche di privacy ottieni informazioni di base e una serie di modelli utili per aiutarti a **trattare correttamente i dati personali riferiti ai principali casi d'uso** che dovrai gestire progettando e realizzando un servizio digitale.
     img: /images/risorse-per-progettare/icons/kit_privacy.svg #I
     alt: "Proteggi l'utente, conta su di te" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -192,7 +180,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -235,11 +223,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: "A cosa serve il kit dedicato alla privacy" #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -247,30 +235,30 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre **tenere conto di quali categorie di dati personali stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore**. 
-            
+            Quando progetti e realizzi un servizio digitale, pianifichi l’invio di una newsletter, decidi di eseguire una ricerca sugli utenti o un test di usabilità, devi sempre **tenere conto di quali categorie di dati personali stai raccogliendo e conservando, e trattare ognuna di queste nel rispetto della normativa privacy in vigore**.
+
             L’utilizzo di dati personali da parte di una Pubblica amministrazione è soggetto a norme specifiche (es. GDPR, Codice Privacy), e **il diritto alla protezione dei dati personali è un diritto e libertà fondamentale degli utenti**.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Parti dalle basi con il Manuale operativo di design #C
           text: | #C
-            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi i riferimenti teorici alle basi normative che prevedono che la protezione dei dati personali degli utenti sia integrata e presente lungo tutto il ciclo di progettazione del sito o del servizio digitale. 
-            
-            Trovi inoltre indicazioni generali sulle principali casistiche di progettazione per cui è necessario richiedere il consenso, e quali sono gli elementi di un sito o servizio digitale da tenere in considerazione per un'architettura orientata alla privacy.   
+            Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi i riferimenti teorici alle basi normative che prevedono che la protezione dei dati personali degli utenti sia integrata e presente lungo tutto il ciclo di progettazione del sito o del servizio digitale.
+
+            Trovi inoltre indicazioni generali sulle principali casistiche di progettazione per cui è necessario richiedere il consenso, e quali sono gli elementi di un sito o servizio digitale da tenere in considerazione per un'architettura orientata alla privacy.
           ctas:
           - label: "Vai all'argomento Privacy by design" #C
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/privacy-by-design.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-  
+
           # TXT + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png
@@ -279,7 +267,7 @@ components:
           specular: true
           text: | #C
             🟡 **Questo kit non ha la pretesa di trattare in maniera esaustiva ogni aspetto connesso agli adempimenti privacy.** Ciascun Ente è tenuto ad adottare le misure adeguate alla propria organizzazione.
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -311,18 +299,7 @@ components:
           Valuta se le funzionalità che offri mediante la tua soluzione digitale comportano raccolta e utilizzo di dati personali
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-            
+
       # CARD CHILDREN ACTION
       - title: Rispetta la privacy quando coinvolgi gli utenti nella ricerca #C
         fullHeight: true
@@ -335,17 +312,6 @@ components:
           I suggerimenti e le risorse per condurre test di usabilità e interviste utente in modalità anonima e nel rispetto della normativa privacy in vigore
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       # CARD CHILDREN ACTION
       - title: Rispetta la privacy quando usi i social network #C
@@ -359,16 +325,5 @@ components:
           Scopri come rispettare la privacy dei tuoi follower quando usi le piattaforme social per comunicare la tua soluzione digitale
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
-   
+

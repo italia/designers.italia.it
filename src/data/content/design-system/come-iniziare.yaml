@@ -1,7 +1,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: design-system-index
 
@@ -64,18 +64,6 @@ components:
       text: In breve
     text: |
       Scopri le finalità e l'impatto del design system e come iniziare a usare le risorse a disposizione di designer e developer per progettare servizi pubblici digitali.
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -100,7 +88,7 @@ components:
           url: "#"
           color: primary
           size: lg
-   
+
 
   # /////////// COMPONENT LIST FROM HERE ////////////
   filterCards:
@@ -133,17 +121,6 @@ components:
             label: Content
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       # - title: Tono di voce
       #   # img: /images/600x400.png
@@ -164,18 +141,7 @@ components:
       #       label: Argomento
       #       url: "#"
       #       blank: false
-      #   share:
-      #     btnId: shareButtonCard1
-      #     button:
-      #       addonStyle: icon-only-drop
-      #       ariaLabel: Condividi
-      #       icon:
-      #         icon: sprites.svg#it-more-items
-      #         size: sm
-      #         color: secondary
-      #     list:
-      #       isShare: true
-    
+
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
   # sectionsEditorial :
@@ -183,22 +149,22 @@ components:
   #   noSpace: true
   #   components:
   #     - name: ImgFull
-  #       img: /images/design-system/fondamenti.jpg 
+  #       img: /images/design-system/fondamenti.jpg
   #       alt: ""
-  
+
   sectionsEditorial2 :
     - full: true
       noSpace: false
       components:
         - name: TextImageCta
           noSpace: true
-          text: |   
+          text: |
             Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare lo UI Kit e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento al framework di sviluppo Bootstrap Italia.
           ctas:
           - label: "Vai allo UI Kit nella community Figma " #C
             url: https://www.figma.com/community/file/1105848677422572920 #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
@@ -208,7 +174,7 @@ components:
           - label: "Vai a Bootstrap Italia su GitHub " #C
             url: https://github.com/italia/bootstrap-italia #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle

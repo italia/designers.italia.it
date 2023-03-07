@@ -48,18 +48,6 @@ components:
       text: In breve
     text: |
       In questa sezione, trovi tutti i contributi della community: eventi, notizie, articoli di approfondimento, video e podcast per approfondire il tema del design e le buone pratiche di progettazione dei servizi pubblici digitali. Inoltre, puoi scoprire come partecipare e dare il tuo contributo.
-    share:
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-white mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: light
-          addonClasses: ms-3
-      list:
-        isShare: true
     kangaroo:
       id: kangarooHero
       titleSr: Metadati e link per approfondire
@@ -155,22 +143,11 @@ components:
         imgPlaceholder: false
         dateOverlay:
           day: "14"
-          month: "dicembre" 
+          month: "dicembre"
           year: "2022"
         url: "eventi/20221214-democratising-co-production-of-sustainable-public-services"
         tag:
           label: Tavola rotonda
-        # share:
-        #   btnId: shareButtonCardEventi1
-        #   button:
-        #     addonStyle: icon-only-drop
-        #     ariaLabel: Condividi
-        #     icon:
-        #       icon: sprites.svg#it-more-items
-        #       size: sm
-        #       color: secondary
-        #   list:
-        #     isShare: true
 
       - title: "Angular – Bootstrap Italia e non solo..."
         headingLevel: 4
@@ -187,17 +164,6 @@ components:
         url: "eventi/20230130-angular-bootstrap-it-e-non-solo/"
         tag:
           label: Meetup
-        share:
-          btnId: shareButtonCardEventi3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: "GREEN BLUE — Percorso formativo sull’impatto del digitale"
         headingLevel: 4
@@ -209,22 +175,11 @@ components:
         imgPlaceholder: false
         dateOverlay:
           day: "6"
-          month: "febbraio" 
+          month: "febbraio"
           year: "2023"
         url: "eventi/20230206-green-blue-percorso-formativo-sull-impatto-del-digitale/"
         tag:
           label: Lezione
-      #   share:
-      #     btnId: shareButtonCardEventi3
-      #     button:
-      #       addonStyle: icon-only-drop
-      #       ariaLabel: Condividi
-      #       icon:
-      #         icon: sprites.svg#it-more-items
-      #         size: sm
-      #         color: secondary
-      #     list:
-      #       isShare: true
 
 
       # - title: "Titolo dell’evento senza immagine!"
@@ -241,17 +196,6 @@ components:
       #     Descrizione **test**
       #   tag:
       #     label: Invito
-      #   share:
-      #     btnId: shareButtonCardEventi4
-      #     button:
-      #       addonStyle: icon-only-drop
-      #       ariaLabel: Condividi
-      #       icon:
-      #         icon: sprites.svg#it-more-items
-      #         size: sm
-      #         color: secondary
-      #     list:
-      #       isShare: true
 
 
 
@@ -269,6 +213,31 @@ components:
         disabled: true
 
       cards:
+
+      - title: "Formez lancia un corso per progettare e realizzare servizi pubblici di qualità"
+        headingLevel: 4
+        text: "Sono aperte le iscrizioni per il corso online. Puoi iscriverti fino al 20 marzo."
+        img: /images/community/20230307-formez-lancia-un-corso-per-progettare-e-realizzare-servizi-pubblici-di-qualita-1400x723.jpg
+        alt: ""
+        imgRatio: 21x9
+        # imgPlaceholder: true
+        fullHeight: true
+        rounded: true
+        url: "notizie/20230307-formez-lancia-un-corso-per-progettare-e-realizzare-servizi-pubblici-di-qualita/"
+        dateInfo: 7 marzo 2023
+        chips:
+          - color: secondary
+            label: Servizi pubblici digitali
+            url: "#"
+            blank: false
+          - color: secondary
+            label: Formazione
+            url: "#"
+            blank: false
+          - color: secondary
+            label: Validare
+            url: "#"
+            blank: false
 
       - title: "Ecco l'anteprima del nuovo Designers Italia"
         headingLevel: 4
@@ -298,18 +267,7 @@ components:
             label: Realizzazione
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardNotizia1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
+            
       - title: Benvenuto, Kit Privacy
         headingLevel: 4
         text: Rispetta la privacy delle persone quando realizzi un servizio digitale.
@@ -330,58 +288,6 @@ components:
             label: Privacy by default
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardNotizia2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-      - title: "Accessibilità e inclusività dei servizi pubblici digitali protagoniste al Wired Next Fest"
-        headingLevel: 4
-        text: "Ecco il racconto di cosa abbiamo fatto e imparato a Milano lo scorso 7 e 8 ottobre"
-        img: /images/home/in-evidenza/202212-wnf-home.jpg
-        alt: "Conferenze e workshop"
-        imgRatio: 21x9
-        # imgPlaceholder: true
-        fullHeight: true
-        rounded: true
-        url: "notizie/20221017-accessibilita-e-inclusivita-dei-servizi-pubblici-digitali-protagoniste-al-wired-next-fest/"
-        dateInfo: 20 ottobre 2022
-        chips:
-          - color: secondary
-            label: Accessibilità
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Usabilità
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Test di usabilità
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Validare
-            url: "#"
-            blank: false
-        share:
-          btnId: shareButtonCardNotizia3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
 
       topics:
         title: Nelle notizie si parla di
@@ -490,17 +396,6 @@ components:
             label: Servizi pubblici digitali
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardMedium1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
         headingLevel: 4
@@ -536,17 +431,6 @@ components:
             label: Approfondimento teorico
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardMedium2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
         headingLevel: 4
@@ -578,17 +462,6 @@ components:
             label: Approfondimento teorico
             url: "#"
             blank: false
-        share:
-          btnId: shareButtonCardMedium3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
     # XXX DISABLED MEDIA AREA > WILL GO TO BETA MILESTONE
 
@@ -622,17 +495,6 @@ components:
     #     url: "#"
     #     tag:
     #       label: Registrazione
-    #     share:
-    #       btnId: shareButtonCardMedia1
-    #       button:
-    #         addonStyle: icon-only-drop
-    #         ariaLabel: Condividi
-    #         icon:
-    #           icon: sprites.svg#it-more-items
-    #           size: sm
-    #           color: secondary
-    #       list:
-    #         isShare: true
 
     #   - title: Come usare il design system del Paese quanso sei al mare
     #     headingLevel: 4
@@ -650,17 +512,6 @@ components:
     #     url: "#"
     #     tag:
     #       label: Tutorial
-    #     share:
-    #       btnId: shareButtonCardMedia2
-    #       button:
-    #         addonStyle: icon-only-drop
-    #         ariaLabel: Condividi
-    #         icon:
-    #           icon: sprites.svg#it-more-items
-    #           size: sm
-    #           color: secondary
-    #       list:
-    #         isShare: true
 
     #   - title: Fanelli parla di Designers Italia
     #     headingLevel: 4
@@ -678,17 +529,6 @@ components:
     #     url: "#"
     #     tag:
     #       label: Podcast
-    #     share:
-    #       btnId: shareButtonCardMedia3
-    #       button:
-    #         addonStyle: icon-only-drop
-    #         ariaLabel: Condividi
-    #         icon:
-    #           icon: sprites.svg#it-more-items
-    #           size: sm
-    #           color: secondary
-    #       list:
-    #         isShare: true
 
     #   - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
     #     headingLevel: 4
@@ -706,17 +546,6 @@ components:
     #     url: "#"
     #     tag:
     #       label: Registrazione
-    #     share:
-    #       btnId: shareButtonCardMedia4
-    #       button:
-    #         addonStyle: icon-only-drop
-    #         ariaLabel: Condividi
-    #         icon:
-    #           icon: sprites.svg#it-more-items
-    #           size: sm
-    #           color: secondary
-    #       list:
-    #         isShare: true
 
 
 

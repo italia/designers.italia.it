@@ -102,22 +102,6 @@ export const query = graphql`
             text
           }
           text
-          share {
-            btnId
-            button {
-              label
-              addonStyle
-              icon {
-                icon
-                size
-                color
-                addonClasses
-              }
-            }
-            list {
-              isShare
-            }
-          }
           kangaroo {
             id
             titleSr
@@ -308,21 +292,6 @@ export const query = graphql`
             tag {
               label
             }
-            share {
-              btnId
-              button {
-                addonStyle
-                ariaLabel
-                icon {
-                  icon
-                  size
-                  color
-                }
-              }
-              list {
-                isShare
-              }
-            }
             text
             rounded
             dateInfo
@@ -507,21 +476,6 @@ export const query = graphql`
               url
               blank
             }
-            share {
-              btnId
-              button {
-                addonStyle
-                ariaLabel
-                icon {
-                  icon
-                  size
-                  color
-                }
-              }
-              list {
-                isShare
-              }
-            }
             titleSmall
             tag {
               label
@@ -611,21 +565,6 @@ export const query = graphql`
               label
               url
               blank
-            }
-            share {
-              btnId
-              button {
-                addonStyle
-                ariaLabel
-                icon {
-                  icon
-                  size
-                  color
-                }
-              }
-              list {
-                isShare
-              }
             }
             text
             dateInfo
@@ -732,21 +671,6 @@ export const query = graphql`
               label
               url
               blank
-            }
-            share {
-              btnId
-              button {
-                addonStyle
-                ariaLabel
-                icon {
-                  icon
-                  size
-                  color
-                }
-              }
-              list {
-                isShare
-              }
             }
           }
         }

@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +116,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Questo kit offre strumenti operativi per creare contenuti, revisionarli in maniera collaborativa, definire il corretto tone of voice (tono di voce) con cui rivolgerti alle persone e tutte le buone pratiche di scrittura da seguire nei diversi touchpointi digitali. 
+      Questo kit offre strumenti operativi per creare contenuti, revisionarli in maniera collaborativa, definire il corretto tone of voice (tono di voce) con cui rivolgerti alle persone e tutte le buone pratiche di scrittura da seguire nei diversi touchpointi digitali.
     img: /images/risorse-per-progettare/icons/kit_linguaggio.svg #I
     alt: "" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -192,7 +180,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -235,11 +223,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit contenuti e linguaggio #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -249,11 +237,11 @@ components:
           #title: A cosa servono h3 #C
           text: | #C
             Ogni interfaccia digitale vive e si alimenta di contenuti che soddisfano le necessità delle persone e guidano la loro esperienza. Il kit contiene tutti gli strumenti necessari per **definire quali contenuti sono necessari per un servizio digitale pubblico, crearli e revisionarli in maniera collaborativa**. Creare un’esperienza semplice, coerente e comprensibile significa assicurarsi che ogni contenuto sia scritto in modo coerente, seguendo lo stesso tone of voice (tono di voce).
-            
+
             Il **tone of voice** definisce il modo in cui comunichi e fa sì che la percezione delle persone corrisponda con quella che noi auspichiamo. Utile soprattutto a chi scrive i contenuti, **descrive il modo, le parole e le regole di stile** che bisognerebbe rispettare per farlo in modo più facile e coerente.
-            
+
             Diversi esempi e strumenti ti guidano nella buona pratica di utilizzare un approccio condiviso alla **creazione e alla gestione dei contenuti testuali e multimediali**; la guida al linguaggio della Pubblica Amministrazione ti fornisce indicazioni sull’**uso delle parole**, sulle **regole di scrittura** oltre che **esempi di tono di voce** da utilizzare nei vari contesti d’uso di un touchpoint digitale.
-            
+
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -267,14 +255,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/linguaggio.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-         
+
 
 
   # ///////////////////
@@ -303,17 +291,6 @@ components:
           Analizza i contenuti di un servizio digitale per verificare che soddisfino le esigenze di utenti e stakeholder e definisci il processo di creazione, revisione, organizzazione, aggiornamento, traduzione e migrazione a una nuova interfaccia.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       # CARD CHILDREN ACTION
       - title: Crea il linguaggio del touchpoint digitale #C
@@ -324,21 +301,10 @@ components:
         iconImgAlt: "" #C
         url: "crea-il-linguaggio-del-touchpoint-digitale/" #M
         text: | #C
-          Progetta e ottimizza i contenuti dell'interfaccia digitale di un servizio, coinvolgendo utenti e stakeholder nel processo, svolgendo un esercizio di editing collaborativo e seguendo la guida alla linguaggio della Pubblica Amministrazione. 
+          Progetta e ottimizza i contenuti dell'interfaccia digitale di un servizio, coinvolgendo utenti e stakeholder nel processo, svolgendo un esercizio di editing collaborativo e seguendo la guida alla linguaggio della Pubblica Amministrazione.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-           
+
       # CARD CHILDREN ACTION
       - title: Rispetta la privacy quando usi i contenuti #C
         rounded: true
@@ -348,20 +314,9 @@ components:
         iconImgAlt: "" #C
         url: "rispetta-la-privacy-quando-usi-i-contenuti/" #M
         text: | #C
-          Quando utilizzi immagini o video originali che ritraggono delle persone, devi ottenere il loro consenso all'utilizzo e alla pubblicazione. Utilizza il modello di liberatoria redatto ai sensi dell’art. 13 del Regolamento (UE) 2016/679. 
+          Quando utilizzi immagini o video originali che ritraggono delle persone, devi ottenere il loro consenso all'utilizzo e alla pubblicazione. Utilizza il modello di liberatoria redatto ai sensi dell’art. 13 del Regolamento (UE) 2016/679.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-     
 
-   
+
+

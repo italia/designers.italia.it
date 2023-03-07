@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -119,18 +119,6 @@ components:
       Lo svilupo dell’interfaccia è la fase finale della realizzazione di un servizio digitale. Le risorse di questo kit ti aiutano ad **assemblare velocemente il front-end** di un servizio digitale, tramite **componenti, soluzioni di design e codice già validati**.
     img: /images/risorse-per-progettare/icons/kit_webDevelopment.svg #I
     alt: "Interesse pubblico, codice pubblico" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -192,7 +180,7 @@ components:
           color: primary
           size: lg
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -221,11 +209,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit sviluppo interfaccia #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -235,9 +223,9 @@ components:
           # title: A cosa servono h3 #C
           text: | #C
             Il kit di sviluppo interfaccia ti permette di realizzare velocemente il front-end di un servizio digitale per essere utilizzato dagli utenti. Le risorse comprendono il riuso di componenti, soluzioni di design e di codice sviluppato già pronti, che sono il risultato di discussioni e decisioni già prese e validate.
-            
+
             L’uso di queste risorse favorisce una riduzione dei costi di produzione e dei costi di assistenza agli utenti, poiché l’adozione di standard incrementa la facilità d’uso di un servizio e di apprendimento in autonomia.
-        
+
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
@@ -248,14 +236,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
@@ -282,14 +270,3 @@ components:
           Assembla velocemente il front-end del servizio digitale tramite componenti, soluzioni di design e codice già validati.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
     #     size: sm
     #   text: In breve
     text: | #C
-      Lorem **ipsum** 
+      Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_webDevelopment_sviluppa.svg #I
     alt: "Interesse pubblico, codice pubblico" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -207,7 +195,7 @@ components:
         #   url: "#"
         #   color: primary
         #   size: lg
-      
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -220,16 +208,16 @@ components:
       background: null
       text: | #C
          #Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
-         
+
       components:
 
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
             Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
-            
+
             Le librerie ti forniscono **componenti open-source pronti all’uso**: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.
- 
+
         # TXT BLOCK
         - name: TextImageCta
           title: Bootstrap Italia e React #C
@@ -278,5 +266,5 @@ components:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://github.com/italia/design-react-kit/ #M
                 ariaLabel: "Repository GitHub: React Kit (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
-                blank: true 
-   
+                blank: true
+
