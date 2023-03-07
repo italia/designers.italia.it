@@ -1,0 +1,242 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Design Tokens
+  description: "Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali"
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/fondamenti/design-tokens/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: 'Ultimo aggiornamento:'
+
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Design Tokens
+    column: true
+    subtitle: "Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali"
+   # pretext:
+   #   icon:
+   #     icon: sprites.svg#it-info-circle
+   #     size: sm
+   #   text: In breve
+   # text: |
+   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips: #C
+        - label: Content
+          url: "#"
+          color: primary
+          size: lg
+        - label: Design system
+          url: "#"
+          color: primary
+          size: lg
+
+  sectionsEditorial :
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    - full: true
+      noSpace: false
+      title: Cosa sono
+      text: null
+      background: null
+
+      components:
+
+        - name: TextImageCta
+          title:
+          text: |
+            I _design token_ definiscono, documentano e consentono l'applicazione di **decisioni progettuali** su larga scala, garantendo la **coerenza** di progettazione e sviluppo di un’interfaccia digitale  su diverse piattaforme e dispositivi.
+
+            Rappresentano associazioni fra **attributi**, come colori, tipografia, spaziature e dimensioni e i loro **valori**. Per questo motivo sono considerati i **fondamenti strutturali** di un design system.
+
+            ## Perché usarli e dove trovarli
+            Usiamo i design token per:
+            - mantenere un sistema visivo **scalabile** e **coerente**;
+            - semplificare le **decisioni di design**, rendendole sistematiche;
+            - facilitare l’**implementazione** di componenti, _pattern_ e _template_;
+
+            Sono disponibili in formato .json sul repository GitHub [design-tokens-italia](https://github.com/italia/design-tokens-italia).
+
+            Sono disponibili come stili di Figma nel [kit UI](https://www.figma.com/file/2gaQw683ZazAPEILQtFLZF/%5BDesign-system-%E2%80%A8del-Paese%5D?node-id=986%3A122&t=9FQglVyiZQuCL7nt-1).
+
+            ## Nomenclatura  e organizzazione
+
+            ### Il nome di un token
+
+            Il **nome** di un _token_ è composto da una sequenza di termini separati dal simbolo “-”.
+
+            ![La sequenza di termini che compongono il nome di un design token](/images/design-system/token-livelli.png "I termini del nome di un design token")
+
+            Il nome di token globale descrive il valore grezzo – anche detto raw – che contiene. Esempio: `color-blue-40: #0066cc`.
+
+            Questi termini  possono essere di quattro tipologie:
+
+            - **elemento** / _element_ - può essere il nome di qualsiasi elemento specifico presente nell’interfaccia, come un componente (es. button), un elemento testuale (es. label) o un gruppo di elementi (es. form);
+            - **categoria** / _category_ - indica la categoria di stile come _color_, _font_, _space_, _size_, _radius_, etc.;
+            - **proprietà** / _property_ - indica la proprietà di una categoria a cui è strettamente correlata (es. _background_ è una proprietà solo della categoria color);
+            - **opzione** / _modifier_ - indica un’opzione di stile che può essere una variante (es. _primary_), uno stato (_active_) oppure il valore di una scala dimensionale (es. xs, s, lg);
+
+            Il numero di termini utilizzati per creare il nome di un _token_ dipende dalla sua tipologia o livello di appartenenza.
+
+            ### I livelli dei design token
+
+            I design token sono classificati  in tre livelli di profondità– globali, semantici e specifici –  in base al contesto di applicazione.
+
+            #### 1. Token globali
+
+            I token globali rappresentano i fondamenti visivi strutturali dell'intero design system. Sono agnostici rispetto allo strumento che stai utilizzando. 
+
+            ![Un esempio di un design token globale](/images/design-system/global-token.png "Un esempio di design token globale")
+
+            Il nome di _token_ globale descrive il valore grezzo – anche detto _raw_ – che contiene. Esempio: `color-blue-40: #0066cc`
+
+            ##### Come usiamo i token globali
+
+            I token globali vengono usati esclusivamente come riferimento per i livelli semantici e specifici. Non sono applicati in modo diretto ad alcun elemento o componente dell’interfaccia.
+
+            Questa tipologia di token è disponibile nel file [global.json](https://github.com/italia/design-tokens-italia/blob/main/tokens/global.json)
+
+            #### 2. Token semantici
+
+            I token semantici rappresentano decisioni progettuali che possono essere riutilizzate per più elementi e componenti dell’interfaccia. 
+
+            ![Un esempio di un design token semantico](/images/design-system/semantic-token.png "Un esempio di un design token semantico")
+
+            Sono detti semantici perché il nome comunica il caso d'uso previsto.
+
+            Usano i _token_ globali come valore. Esempio: `color-text-primary: color-blue-40`
+
+            ##### Come usiamo i token semantici
+
+            I token semantici sono utilizzati per applicare gli stili visivi ricorrenti a più elementi e componenti dell’interfaccia.
+
+            Questa tipologia di token è disponibile nel file [semantic.json](https://github.com/italia/design-tokens-italia/blob/main/tokens/specific.json)
+
+            #### 3. Token specifici
+
+            I token specifici sono una rappresentazione esaustiva di ogni valore associato a un elemento o componente. 
+            
+            Sono denominati in modo da facilitare l’adozione sia nella progettazione che nello sviluppo di un componente. Per questo motivo il nome include sempre il riferimento al componente.
+
+            Usano i token globali e, in alcuni casi, i semantici come valori.
+
+            Questa tipologia di token è disponibile nel file [specific.json](https://github.com/italia/design-tokens-italia/blob/main/tokens/specific.json)
+
+            ##### Casi d'uso
+
+            Esempio di un token specifico che referenzia un token semantico:
+            ![Un esempio di un design token specifico](/images/design-system/specific-token-reference.png "Un esempio di un design token specifico")
+
+            Questo approccio è raccomandato nel caso in cui si voglia gestire l’aspetto di un elemento o componente in modo circoscritto, pur riutilizzando token semantici, dove disponibili. 
+
+            Esempio di un token specifico che utilizza direttamente un valore grezzo (raw):
+            ![Un esempio di un design token specifico](/images/design-system/specific-token.png "Un esempio di un design token specifico")
+
+            Questo approccio è raccomandato nel caso in cui non ci siano token semantici riutilizzabili per definire lo stile di un elemento o componente.
+
+            ## Strumenti
+
+            Integriamo i design token nei nostri progetti grazie all’utilizzo di strumenti avanzati che semplificano il processo di lavoro.
+
+            ### Tokens Studio for Figma
+
+            Utilizziamo [Tokens Studio for Figma](https://docs.tokens.studio) per tenere in sincronia gli stili utilizzabili in Figma con i _design token_. Tramite questo plugin inoltre esportiamo i tre livelli – _global, semantic e specific_ – in formato .JSON.
+
+            ### Style Dictionary e CI
+
+            Abbiamo integrato [Style Dictionary](https://amzn.github.io/style-dictionary/#/) per poter generare le variabili CSS e Sass relative ai design token. Partendo dai file .JSON disponibili in [design-tokens-italia](https://github.com/italia/design-tokens-italia), questo strumento facilita la manutenzione automatizzando il processo di aggiornamento.
