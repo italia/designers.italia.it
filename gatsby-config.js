@@ -119,12 +119,16 @@ module.exports = {
                     text
                   }
                   sectionsEditorial {
+                    title
+                    text
                     components {
                       title
                       text
                     }
                   }
                   sectionsEditorial2 {
+                    title
+                    text
                     components {
                       title
                       text
@@ -142,13 +146,13 @@ module.exports = {
         // List of keys to index. The values of the keys are taken from the
         // normalizer function below.
         index: [
-          "textContent",
+          "titleContent", "textContent", "heroPage",
         ],
 
         // List of keys to store and make available in your UI. The values of
         // the keys are taken from the normalizer function below.
         // Default: all fields
-        store: ["relativePath", "textContent"],
+        store: ["relativePath", "textContent", "titleContent", "heroPage"],
 
         // Function used to map the result from the GraphQL query. This should
         // return an array of items to index in the form of flat objects
@@ -156,10 +160,17 @@ module.exports = {
         // field above (default: 'id'). This is required.
         normalizer: ({ data }) =>
           data.allContent.edges.map((edge) => {
+            // XXX Debug: console.log("Debug purpose: ", edge.node.components?.sectionsEditorial?.map(s => s.title).join('\n'))
             return {
               id: edge.node.id,
               relativePath: edge.node.relativePath,
-              textContent: edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c => c.text)).join(" "),
+              heroPage: `${edge.node.components?.hero?.title} ${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}`,
+              titleContent: edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
+                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
+                + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' '),
+              textContent: edge.node.components?.sectionsEditorial?.map(s => s.text).join(' ')
+                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c => c.text)).join(' ') 
+                + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.text)).join(' '),
             }
           }),
       },
