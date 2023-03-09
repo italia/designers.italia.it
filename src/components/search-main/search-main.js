@@ -33,6 +33,13 @@ const SearchMain =({
   //   }
   // }, [searchEnabled])
 
+  const iconOpt = {
+      icon: 'sprites.svg#it-file',
+      size: 'md',
+      color: "primary",
+      addonClasses: 'ms-3 me-3 mb-3'
+  }
+
   const { localSearchPages: { index, store } } = useStaticQuery(graphql`
      query {
        localSearchPages {
@@ -49,7 +56,7 @@ const SearchMain =({
   }
 
   const searchOptions = {
-    limit: 7,
+    limit: 5,
   }
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions) // XXX < search run
@@ -87,33 +94,30 @@ const SearchMain =({
                         <Button type="submit" {...button} /*disabled={searchEnabled < 1}*/ />
                       </div>
                     </div>
-                    {/* <List listItems={results}></List> */}
-                    <div className="link-list-wrapper pt-4">
-                      <ul className="it-list"> {/*< must be a list component, hack for speed XXX */}
+                    <div className="it-list-wrapper">
+                      <ul className="it-list"> {/* < could be a full list component, hack for speed XXX */}
                         {results.map( result => (
-                          <ListItem url={result.relativePath} key={result.id} isMenu="true" isDropdown="false" textLarge="true" simpleList="false">
-                            <div className="h6">
-                              <strong>{result.title}</strong>
-                            </div>
-                            <div className="text-secondary mb-3">
-                              {result.path}
-                            </div>
+                          <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="pt-3">
+                            <strong>{result.title}</strong>
+                            <p className="text-secondary fw-normal mb-3 d-block">
+                              <small>{result.summary}</small>
+                            </p>
                           </ListItem>
-                          // <li key={result.id}>
-                          //   <Link to={result.relativePath}>{result.title}</Link>
-                          // </li>
                         ))}
+                        {/* {results.length&& <p>ciao</p>} */}
                       </ul>
                     </div>
                 </form>
               </div>
               <div className="suggest-wrapper d-lg-flex">
                 <h3 className="mb-4">{suggest.title}</h3>
-                  {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5 mt-2">
+                  {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5">
                     <ul className="list-inline d-flex flex-wrap">
                       { suggest.items.map((item,index) => {
                         return(
-                          <li className="list-item me-5 mb-3 text-decoration-underline" key={"li"+index}><span /*href={item.url}*/>{item.label}</span></li>
+                          <li className="list-item me-4 mb-3" key={"li"+index}>
+                            <Button type="submit" size="md" btnStyle="outline-secondary"/*href={item.url}*/>{item.label}</Button>
+                          </li>
                         ) /* use <a href={item.url} instead of <span to activate */
                     })}
                   </ul>
