@@ -109,6 +109,7 @@ module.exports = {
           threshold: 11,
           resolution: 22,
           depth: 2,
+          bool: 'or',
           filter: [
             // array blacklist
             "di",
@@ -207,8 +208,9 @@ module.exports = {
               relativePath: edge.node.relativePath,
               title: `${edge.node.components?.hero?.title}`,
               path: `${edge.node.seo?.pathname}`,
-              summary: `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}`,
-              body: edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
+              summary: `${edge.node.components?.hero?.subtitle}`,
+              body:  `${edge.node.components?.hero?.text}` 
+                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.text).join(' ')
