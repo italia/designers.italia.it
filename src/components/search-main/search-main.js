@@ -100,7 +100,7 @@ const SearchMain =({
                           <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="pt-3">
                             <strong>{result.title}</strong>
                             <p className="text-secondary fw-normal mb-3 d-block">
-                              <small>{result.summary}</small>
+                               {(result.description!=null) && <small>{result.description}</small>}
                             </p>
                           </ListItem>
                         ))}

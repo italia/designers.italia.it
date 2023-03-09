@@ -189,12 +189,12 @@ module.exports = {
 
         // List of keys to index. The values of the keys are taken from the
         // normalizer function below.
-        index: ["title", "summary", "body"],
+        index: ["title", "description", "body"],
 
         // List of keys to store and make available in your UI. The values of
         // the keys are taken from the normalizer function below.
         // Default: all fields
-        store: ["id", "relativePath", "path", "title", "summary"],
+        store: ["id", "relativePath", "path", "title", "description"],
 
         // Function used to map the result from the GraphQL query. This should
         // return an array of items to index in the form of flat objects
@@ -208,8 +208,8 @@ module.exports = {
               relativePath: edge.node.relativePath,
               title: `${edge.node.components?.hero?.title}`,
               path: `${edge.node.seo?.pathname}`,
-              summary: `${edge.node.components?.hero?.subtitle}`,
-              body:  `${edge.node.components?.hero?.text}` 
+              description: `${edge.node.seo?.description}`,
+              body:  `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}` 
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' ')
