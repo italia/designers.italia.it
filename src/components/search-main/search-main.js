@@ -104,7 +104,11 @@ const SearchMain =({
                             </p>
                           </ListItem>
                         ))}
-                        {/* {results.length&& <p>ciao</p>} */}
+                        {(results.length > 4) && 
+                          <div className="mt-4 text-center d-block">
+                            <strong><a href="#" className="d-block">Scopri più risultati </a></strong>
+                          </div>
+                        }
                       </ul>
                     </div>
                 </form>
