@@ -99,9 +99,10 @@ const SearchMain =({
                         {results.map( result => (
                           <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="pt-3">
                             <strong>{result.title}</strong>
-                            <p className="text-secondary fw-normal mb-3 d-block">
+                            <p className="text-secondary fw-normal d-block mb-2">
                                {(result.description!=null) && <small>{result.description}</small>}
                             </p>
+                            <div className="mb-3 text-muted"><small>{result.path}</small></div>
                           </ListItem>
                         ))}
                         {(results.length > 4) && 
