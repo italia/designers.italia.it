@@ -4,7 +4,9 @@ import { useFlexSearch } from "react-use-flexsearch"
 
 // import ReactMarkdown from "react-markdown"
 import Button from "../button/button"
+import ListItem from "../list-item/list-item"
 import './search-main.scss'
+
 const SearchMain =({
   title,
   text,
@@ -18,18 +20,18 @@ const SearchMain =({
   background
 })=> {
   const [input, setInput] = useState(null)
-  const [searchEnabled, setSearchEnabled] = useState(0.0)
   const [searchTerm, setSearchTerm] = useState(null)
+  // const [searchEnabled, setSearchEnabled] = useState(0.0)
 
-  useEffect(() => {
-    setSearchEnabled(window.localStorage.getItem("search-enabled") ? 1 : 0)
-  }, [])
+  // useEffect(() => {
+  //   setSearchEnabled(window.localStorage.getItem("search-enabled") ? 1 : 0)
+  // }, [])
 
-  useEffect(() => {
-    if (searchEnabled >= 1) {
-      window.localStorage.setItem("search-enabled", "true")
-    }
-  }, [searchEnabled])
+  // useEffect(() => {
+  //   if (searchEnabled >= 1) {
+  //     window.localStorage.setItem("search-enabled", "true")
+  //   }
+  // }, [searchEnabled])
 
   const { localSearchPages: { index, store } } = useStaticQuery(graphql`
      query {
@@ -43,10 +45,14 @@ const SearchMain =({
   const search = (ev) => {
     ev.preventDefault()
     setSearchTerm(input)
-    console.log(index, store)
+    // console.log(index, store)
   }
 
-  const results = useFlexSearch(searchTerm, index, store)
+  const searchOptions = {
+    limit: 7,
+  }
+
+  const results = useFlexSearch(searchTerm, index, store, searchOptions) // XXX < search run
 
   let styles = 'search-main'
 	+ `${background ? ' bg-'+background : ''}`
@@ -70,21 +76,35 @@ const SearchMain =({
                           className="border-search search"
                           name={inputName}
                           id={inputId}
-                          placeholder="Voglio progettare con Qualità"
+                          placeholder="Da dove vuoi iniziare"
+                          autoComplete="off"
                           onChange={ev => setInput(ev.target.value)}
-                          onClick={ev => { setSearchEnabled(searchEnabled + 0.1) }}
-                          readOnly={searchEnabled < 1}
+                          // onClick={ev => { setSearchEnabled(searchEnabled + 0.1) }}
+                          // readOnly={searchEnabled < 1}
                         />
                       </div>
                       <div className="button-wrapper mt-4 mt-md-0">
-                        <Button type="submit" {...button} disabled={searchEnabled < 1} />
+                        <Button type="submit" {...button} /*disabled={searchEnabled < 1}*/ />
                       </div>
                     </div>
-                    <ul>{results.map((r, i) => (
-                      <li key={i}>
-                        <Link to={r.relativePath}>{r.relativePath}</Link>
-                      </li>
-                    ))}</ul>
+                    {/* <List listItems={results}></List> */}
+                    <div className="link-list-wrapper pt-4">
+                      <ul className="it-list"> {/*< must be a list component, hack for speed XXX */}
+                        {results.map( result => (
+                          <ListItem url={result.relativePath} key={result.id} isMenu="true" isDropdown="false" textLarge="true" simpleList="false">
+                            <div className="h6">
+                              <strong>{result.title}</strong>
+                            </div>
+                            <div className="text-secondary mb-3">
+                              {result.path}
+                            </div>
+                          </ListItem>
+                          // <li key={result.id}>
+                          //   <Link to={result.relativePath}>{result.title}</Link>
+                          // </li>
+                        ))}
+                      </ul>
+                    </div>
                 </form>
               </div>
               <div className="suggest-wrapper d-lg-flex">
