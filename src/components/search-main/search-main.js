@@ -113,7 +113,7 @@ const SearchMain =({
                         ))}
                         {(results.length > 4) && 
                           <div className="mt-4 ps-4 pt-4 d-block border-top">
-                            <strong><a href="#" className="d-block">Scopri più risultati </a></strong>
+                            <strong><Link to="/ricerca/" state={{ searchTerm: input }}>Scopri più risultati</Link></strong>
                           </div>
                         }
                       </ul>
