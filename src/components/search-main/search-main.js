@@ -36,9 +36,9 @@ const SearchMain =({
 
   const iconOpt = {
       icon: 'sprites.svg#it-file',
-      size: 'md',
+      size: 'sm',
       color: "primary",
-      addonClasses: 'ms-3 me-3 mb-3'
+      addonClasses: 'mt-1 flex-shrink-0 me-3'
   }
 
   const { localSearchPages: { index, store } } = useStaticQuery(graphql`
@@ -97,22 +97,22 @@ const SearchMain =({
                       </div>
                     </div>
                     <div className="it-list-wrapper">
-                      <ul className="it-list"> {/* < could be a full list component, hack for speed XXX */}
+                      <ul className="it-list mt-5 mt-md-3"> {/* < could be a full list component, hack for speed XXX */}
                         {results.map( result => (
-                          <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="pt-3">
+                          <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
                             <h3 className="h6 mb-0">
                               <strong>{result.title}</strong>
-                              {(result.tag !== "undefined") ? <Tag label={result.tag} addonClasses="ms-4 text-uppercase px-2 py-0 fw-normal"></Tag> : null}
+                              {(result.tag !== "undefined") ? <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block "><Tag label={result.tag} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"></Tag></div> : null}
                             </h3>
                             <p className="text-secondary fw-normal d-block mb-3">
                                {(result.description !== null) ? <small>{result.description}</small> : null}
                             </p>
-                            <div className="mb-3 text-muted"><small>{result.path}</small></div>
+                            {/* <div className="mb-3 text-muted"><small>{result.path}</small></div> */}
                             {/* <div className="mb-3 text-muted"><small>{result.template}</small></div> */}
                           </ListItem>
                         ))}
                         {(results.length > 4) && 
-                          <div className="mt-4 text-center d-block">
+                          <div className="mt-4 ps-4 pt-4 d-block border-top">
                             <strong><a href="#" className="d-block">Scopri più risultati </a></strong>
                           </div>
                         }
