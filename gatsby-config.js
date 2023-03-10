@@ -257,6 +257,11 @@ module.exports = {
               node {
                 id
                 relativePath
+                metadata {
+                  template {
+                    name
+                  }
+                }
                 seo {
                   name
                   description
@@ -267,6 +272,14 @@ module.exports = {
                     title
                     subtitle
                     text
+                    tag {
+                      label
+                    }
+                  }
+                  sectionIntro {
+                    title
+                    text
+                    moreText
                   }
                   sectionsEditorial {
                     title
@@ -300,7 +313,7 @@ module.exports = {
         // List of keys to store and make available in your UI. The values of
         // the keys are taken from the normalizer function below.
         // Default: all fields
-        store: ["id", "relativePath", "path", "title", "description"],
+        store: ["id", "template", "relativePath", "path", "title", "description", "tag"],
 
         // Function used to map the result from the GraphQL query. This should
         // return an array of items to index in the form of flat objects
@@ -310,11 +323,14 @@ module.exports = {
           data.allContent.edges.map((edge) => {
             return {
               id: edge.node.id,
+              template: edge.node.metadata?.template?.name,
               relativePath: edge.node.relativePath,
               path: `${edge.node.seo?.pathname}`,
               title: `${edge.node.components?.hero?.title}`,
               description: `${edge.node.seo?.description}`,
+              tag: `${edge.node.components?.hero?.tag?.label}`,
               body:  `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}` 
+                + ' ' + `${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}` 
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' ')

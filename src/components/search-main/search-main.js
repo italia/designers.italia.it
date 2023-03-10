@@ -4,6 +4,7 @@ import { useFlexSearch } from "react-use-flexsearch"
 
 // import ReactMarkdown from "react-markdown"
 import Button from "../button/button"
+import Tag from "../tag/tag"
 import ListItem from "../list-item/list-item"
 import './search-main.scss'
 
@@ -99,11 +100,15 @@ const SearchMain =({
                       <ul className="it-list"> {/* < could be a full list component, hack for speed XXX */}
                         {results.map( result => (
                           <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="pt-3">
-                            <strong>{result.title}</strong>
-                            <p className="text-secondary fw-normal d-block mb-2">
-                               {(result.description!=null) && <small>{result.description}</small>}
+                            <h3 className="h6 mb-0">
+                              <strong>{result.title}</strong>
+                              {(result.tag !== "undefined") ? <Tag label={result.tag} addonClasses="ms-4 text-uppercase px-2 py-0 fw-normal"></Tag> : null}
+                            </h3>
+                            <p className="text-secondary fw-normal d-block mb-3">
+                               {(result.description !== null) ? <small>{result.description}</small> : null}
                             </p>
                             <div className="mb-3 text-muted"><small>{result.path}</small></div>
+                            {/* <div className="mb-3 text-muted"><small>{result.template}</small></div> */}
                           </ListItem>
                         ))}
                         {(results.length > 4) && 
