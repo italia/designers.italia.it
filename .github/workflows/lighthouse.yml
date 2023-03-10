@@ -15,6 +15,17 @@ jobs:
       - uses: treosh/lighthouse-ci-action@v9
         id: lighthouse_audit
         with:
+          # Check sample pages from the main layouts.
+          #
+          # Note from lighthouse-ci docs:
+          # URLs will have their port replaced with the port of the local server that
+          # Lighthouse CI starts for you. This allows you to write URLs without worrying
+          # about the chosen temporary port.
+          urls: |
+            http://localhost/
+            http://localhost/progetto
+            http://localhost/norme-e-riferimenti/linee-guida-di-design
+            https://prossima.designers.italia.it/design-system/componenti
           configPath: './.lighthouserc.json'
           temporaryPublicStorage: true
 
@@ -30,20 +41,33 @@ jobs:
           script: |
             const result = JSON.parse(process.env.MANIFEST)[0].summary
             const links = JSON.parse(process.env.LINKS)
+
+            console.log(result, '\n', links)
+
             const formatResult = (res) => Math.round((res * 100))
             Object.keys(result).forEach(key => result[key] = formatResult(result[key]))
             const score = res => res >= 90 ? '🟢' : res >= 50 ? '🟠' : '🔴'
             const comment = [
-                `### ⚡️ Lighthouse report for the changes in this PR ⚡️`,
+                `### :zap:  Lighthouse report for the home page :house:`,
                 '| Category | Score |',
-                '| --- | --- |',
+                '| --- | --: |',
                 `| ${score(result.performance)} Performance | ${result.performance} |`,
                 `| ${score(result.accessibility)} Accessibility | ${result.accessibility} |`,
                 `| ${score(result['best-practices'])} Best practices | ${result['best-practices']} |`,
                 `| ${score(result.seo)} SEO | ${result.seo} |`,
                 ' ',
-                `#### See the full report`,
-                ...Object.keys(links).map(key => `* [${new URL(key).pathname}](${links[key]})\n`)
+                `[See the full report...](${links['http://localhost/']})`,
+                ' ',
+                `#### Other pages`,
+                ...Object.keys(links).map(key => {
+                  const pathname = new URL(key).pathname
+
+                  if (pathname !== '/') {
+                    return `* [${pathname}](${links[key]})\n`
+                  }
+
+                  return ``
+                )
             ].join('\n')
             core.setOutput("comment", comment)
       - uses: marocchino/sticky-pull-request-comment@v2
