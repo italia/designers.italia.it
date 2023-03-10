@@ -57,8 +57,7 @@ const SearchMain =({
 
   const searchOptions = {
     limit: 5,
-    // bool: 'and',
-    suggest: true
+    suggest: true, // XXX < activate to "fill" the spaces with suggestions, usefull for multiple words query
   }
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions) // XXX < search run

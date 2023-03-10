@@ -308,12 +308,11 @@ module.exports = {
         // field above (default: 'id'). This is required.
         normalizer: ({ data }) =>
           data.allContent.edges.map((edge) => {
-            // XXX Debug: console.log("Debug purpose: ", edge.node.components?.sectionsEditorial?.map(s => s.title).join('\n'))
             return {
               id: edge.node.id,
               relativePath: edge.node.relativePath,
-              title: `${edge.node.components?.hero?.title}`,
               path: `${edge.node.seo?.pathname}`,
+              title: `${edge.node.components?.hero?.title}`,
               description: `${edge.node.seo?.description}`,
               body:  `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}` 
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
