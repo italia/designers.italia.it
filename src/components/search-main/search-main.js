@@ -57,6 +57,8 @@ const SearchMain =({
 
   const searchOptions = {
     limit: 5,
+    // bool: 'and',
+    suggest: true
   }
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions) // XXX < search run
