@@ -1,0 +1,35 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "amd": true,
+    "es2021": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "ignorePatterns": ["**/*.min*"],
+  "settings": {
+    "react": {
+      "version": "detect" // React version. "detect" automatically picks the version you have installed.
+      // You can also use `16.0`, `16.3`, etc, if you want to override the detected value.
+      // It will default to "latest" and warn if missing, and to "detect" in the future
+    },
+    "formComponents": [
+      // Components used as alternatives to <form> for forms, eg. <Form endpoint={ url } />
+      "CustomForm",
+      { "name": "Form", "formAttribute": "endpoint" }
+    ],
+    "linkComponents": [
+      // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
+      "Hyperlink",
+      { "name": "Link", "linkAttribute": "to" }
+    ]
+  },
+  "rules": {
+    "react/prop-types": "off"
+  }
+}

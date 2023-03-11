@@ -24,6 +24,10 @@
     "start": "npm run prepare-lib && gatsby develop",
     "develop": "npm run start",
     "dev": "npm run start",
+    "lint": "eslint .",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier --check .",
+    "prettier:fix": "npm run prettier -- --write",
     "build": "npm run clean && npm run prepare-lib && gatsby build --prefix-paths && recursive-copy -w ./public/ ./_site/",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
