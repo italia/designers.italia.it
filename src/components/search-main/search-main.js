@@ -50,10 +50,13 @@ const SearchMain =({
      }
   `)
 
-  const search = (ev) => {
-    ev.preventDefault()
+  const formSubmit = (ev) => {
+    ev.preventDefault();
+    search(ev.target.elements.search.value);
+  }
+
+  const search = (input) => {
     setSearchTerm(input)
-    // console.log(index, store)
   }
 
   const searchOptions = {
@@ -76,18 +79,19 @@ const SearchMain =({
                 <p className="lead">{text}</p>
                </div>
               <div className="search-form px-4 pb-4 mb-5 shadow-lg">
-                <form id={formId} onSubmit={ev => search(ev)}>
+                <form id={formId} onSubmit={formSubmit}>
                     <div className="d-flex flex-column align-items-center flex-md-row w-100">
                       <div className="form-group mb-0 flex-grow-1 me-md-4 w-100">
                         <label className="active" htmlFor={inputId}>{label}</label>
                         <input
                           type="search"
                           className="border-search search"
-                          name={inputName}
+                          name="search"
                           id={inputId}
                           placeholder="Da dove vuoi iniziare"
                           autoComplete="off"
                           onChange={ev => setInput(ev.target.value)}
+                          value={input}
                           // onClick={ev => { setSearchEnabled(searchEnabled + 0.1) }}
                           // readOnly={searchEnabled < 1}
                         />
@@ -111,7 +115,7 @@ const SearchMain =({
                             {/* <div className="mb-3 text-muted"><small>{result.template}</small></div> */}
                           </ListItem>
                         ))}
-                        {(results.length > 4) && 
+                        {(results.length > 4) &&
                           <div className="mt-4 ps-4 pt-4 d-block border-top">
                             <strong><Link to="/ricerca/" state={{ searchTerm: input }}>Scopri più risultati</Link></strong>
                           </div>
@@ -122,15 +126,15 @@ const SearchMain =({
               </div>
               <div className="suggest-wrapper d-lg-flex">
                 <h3 className="mb-4">{suggest.title}</h3>
-                  {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5">
-                    <ul className="list-inline d-flex flex-wrap">
-                      { suggest.items.map((item,index) => {
-                        return(
-                          <li className="list-item me-4 mb-3" key={"li"+index}>
-                            <Button type="submit" size="md" btnStyle="outline-secondary"/*href={item.url}*/>{item.label}</Button>
-                          </li>
-                        ) /* use <a href={item.url} instead of <span to activate */
-                    })}
+                {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5">
+                  <ul className="list-inline d-flex flex-wrap">
+                    {suggest.items.map((item, index) => (
+                      <li className="list-item me-4 mb-3" key={index}>
+                        <Button onClick={() => { setInput(item.label); search(item.label) }} type="submit" size="md" btnStyle="outline-secondary">
+                          {item.label}
+                        </Button>
+                      </li>
+                    ))}
                   </ul>
                 </div>}
               </div>

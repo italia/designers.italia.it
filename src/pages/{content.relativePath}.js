@@ -418,7 +418,6 @@ export const query = graphql`
             title
             items {
               label
-              url
             }
           }
         }
