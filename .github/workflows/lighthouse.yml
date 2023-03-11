@@ -1,3 +1,7 @@
+# Don't change the name, it's used in lighthouse-pr-comment.yml
+# to detect the end of this workflow
+name: lighthouse
+
 on:
   pull_request:
 
@@ -31,11 +35,12 @@ jobs:
         env:
           MANIFEST: ${{ steps.lighthouse_audit.outputs.manifest }}
           LINKS: ${{ steps.lighthouse_audit.outputs.links }}
+          PR: ${{ github.event.number }}
         with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const manifest = JSON.parse(process.env.MANIFEST)
             const links = JSON.parse(process.env.LINKS)
+            const pr = process.env.PR
 
             console.log('Raw output:\n', manifest, '\n', links)
 
@@ -72,8 +77,13 @@ jobs:
                           [${score(result.summary.seo)}](## "SEO") ${result.summary.seo}`
                 })
             ].join('\n')
-            core.setOutput("comment", comment)
-      - uses: marocchino/sticky-pull-request-comment@v2
+
+            const fs = require('fs')
+            fs.writeFileSync(`lighthouse-pr-comment-${pr}.txt`, comment)
+
+      - uses: actions/upload-artifact@v3
         with:
-          message: |
-            ${{ steps.format_lighthouse_score.outputs.comment }}
+          name: lighthouse-pr-comment
+          path: lighthouse-pr-comment-${{ github.event.number }}.txt
+          # Don't need the full default retention of 90 days.
+          retention-days: 3
