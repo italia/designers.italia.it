@@ -136,6 +136,7 @@ const SearchMain =({
                             <h3 className="h6 mb-0">
                               <strong>{result.title}</strong>
                               {(result.tag !== "undefined") ? <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block "><Tag label={result.tag} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"></Tag></div> : null}
+                              {(result.template === 'level1') ? <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block "><Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal"></Tag></div> : null}
                             </h3>
                             <p className="text-secondary fw-normal d-block mb-3">
                                {(result.description !== null) ? <small>{result.description}</small> : null}
