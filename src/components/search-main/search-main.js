@@ -149,7 +149,7 @@ const SearchMain =({
                             {/* <div className="mb-3 text-muted"><small>{result.id}</small></div> */}
                           </ListItem>
                         ))}
-                        {(results.length > 5 && !isResultsPage) &&
+                        {(results.length > 4 && !isResultsPage) &&
                           <div className="mt-4 ps-4 pt-4 d-block border-top">
                             <strong><Link to="/ricerca/" state={{ searchTerm: input }}>Scopri più risultati</Link></strong>
                           </div>
