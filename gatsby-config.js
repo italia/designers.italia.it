@@ -324,7 +324,7 @@ module.exports = {
             return {
               id: edge.node.id,
               template: edge.node.metadata?.template?.name,
-              relativePath: edge.node.relativePath,
+              relativePath: "/" + edge.node.relativePath,
               path: `${edge.node.seo?.pathname}`,
               title: `${edge.node.components?.hero?.title}`,
               description: `${edge.node.seo?.description}`,
