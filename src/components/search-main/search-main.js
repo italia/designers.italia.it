@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { useFlexSearch } from "react-use-flexsearch"
 
@@ -9,6 +9,10 @@ import ListItem from "../list-item/list-item"
 import './search-main.scss'
 
 const SearchMain =({
+  location,
+  howMany,
+  isResultsPage,
+  useSuggestionEngine,
   title,
   text,
   formId,
@@ -20,8 +24,22 @@ const SearchMain =({
   suggest,
   background
 })=> {
-  const [input, setInput] = useState(null)
-  const [searchTerm, setSearchTerm] = useState(null)
+
+  const [input, setInput] = useState(() => {
+    if (location)
+    if (location.state) 
+      return location.state.searchTerm
+    else 
+      return null
+  })
+  const [searchTerm, setSearchTerm] = useState(() => {
+    if (location)
+    if (location.state) 
+      return location.state.searchTerm
+    else 
+      return null
+  })
+  
   // const [searchEnabled, setSearchEnabled] = useState(0.0)
 
   // useEffect(() => {
@@ -60,14 +78,25 @@ const SearchMain =({
   }
 
   const searchOptions = {
-    limit: 5,
-    suggest: true, // XXX < activate to "fill" the spaces with suggestions, usefull for multiple words query
+    limit: `${howMany ? howMany : ''}`,
+    suggest: `${useSuggestionEngine ? true : false}`, // XXX < activate to "fill" the spaces with suggestions, usefull for multiple words query
   }
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions) // XXX < search run
 
   let styles = 'search-main'
 	+ `${background ? ' bg-'+background : ''}`
+
+
+  // if (location) 
+  //   if(location.state) {
+  //     setSearchTerm(location.state.searchTerm)
+  //     // searchTerm: input = location.state.searchTerm
+  //     console.log('STATO XXX:' + location.state.searchTerm)
+  //     // setInput(stateSearchTerm)
+  //     // search(stateSearchTerm)
+  //   }
+
   return (
     <section className={styles}>
       <div className="container-xxl">
@@ -88,7 +117,7 @@ const SearchMain =({
                           className="border-search search"
                           name="search"
                           id={inputId}
-                          placeholder="Da dove vuoi iniziare"
+                          placeholder="Esplora Designers Italia"
                           autoComplete="off"
                           onChange={ev => setInput(ev.target.value)}
                           value={input}
@@ -115,7 +144,7 @@ const SearchMain =({
                             {/* <div className="mb-3 text-muted"><small>{result.template}</small></div> */}
                           </ListItem>
                         ))}
-                        {(results.length > 4) &&
+                        {(results.length > 4 && !isResultsPage) &&
                           <div className="mt-4 ps-4 pt-4 d-block border-top">
                             <strong><Link to="/ricerca/" state={{ searchTerm: input }}>Scopri più risultati</Link></strong>
                           </div>
@@ -124,6 +153,7 @@ const SearchMain =({
                     </div>
                 </form>
               </div>
+              {suggest &&
               <div className="suggest-wrapper d-lg-flex">
                 <h3 className="mb-4">{suggest.title}</h3>
                 {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5">
@@ -138,6 +168,7 @@ const SearchMain =({
                   </ul>
                 </div>}
               </div>
+              }
             </div>
           </div>
         </div>

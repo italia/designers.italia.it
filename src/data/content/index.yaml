@@ -86,6 +86,8 @@ components:
 
   searchMain:
     disabled: true
+    isResultsPage: false
+    useSuggestionEngine: true
     background: light
     title: Da dove vuoi iniziare?
     text: "" # "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
@@ -93,6 +95,7 @@ components:
     label: Cerca
     inputId: searchInput
     inputName: search
+    howMany: 5
     button:
       label: Cerca
       type: #submit
