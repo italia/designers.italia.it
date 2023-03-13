@@ -105,7 +105,7 @@ module.exports = {
           profile: "score",
           charset: "latin:advanced",
           // encode: "extra",
-          tokenize: "reverse",
+          tokenize: "strict", // < strict = full word (better performance) | forward or reverse partials... 
           threshold: 11,
           resolution: 22,
           depth: 2,
