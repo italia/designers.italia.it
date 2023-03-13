@@ -144,6 +144,7 @@ const SearchMain =({
                             {/* <div className="mb-3 text-muted"><small>{result.tag}</small></div> */}
                             {/* <div className="mb-3 text-muted"><small>{result.path}</small></div> */}
                             {/* <div className="mb-3 text-muted"><small>{result.template}</small></div> */}
+                            {/* <div className="mb-3 text-muted"><small>{result.id}</small></div> */}
                           </ListItem>
                         ))}
                         {(results.length > 4 && !isResultsPage) &&
