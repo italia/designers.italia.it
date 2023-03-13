@@ -118,7 +118,9 @@ const SearchMain =({
                           name="search"
                           id={inputId}
                           placeholder="Esplora Designers Italia"
-                          autoComplete="off"
+                          autocomplete="off"
+                          minlength="3" 
+                          required="true"
                           onChange={ev => setInput(ev.target.value)}
                           value={input}
                           // onClick={ev => { setSearchEnabled(searchEnabled + 0.1) }}
