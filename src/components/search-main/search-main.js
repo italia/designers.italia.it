@@ -110,7 +110,7 @@ const SearchMain =({
               <div className="search-form px-4 pb-4 mb-5 shadow-lg">
                 <form id={formId} onSubmit={formSubmit}>
                     <div className="d-flex flex-column align-items-center flex-md-row w-100">
-                      <div className="form-group mb-0 flex-grow-1 me-md-4 w-100">
+                      <div className="form-group mb-0 flex-grow-1 me-md-4 w-100" role="search">
                         <label className="active" htmlFor={inputId}>{label}</label>
                         <input
                           type="search"
@@ -118,11 +118,11 @@ const SearchMain =({
                           name="search"
                           id={inputId}
                           placeholder="Esplora Designers Italia"
-                          autocomplete="off"
-                          minlength="3" 
-                          required="true"
+                          autoComplete="off"
+                          minLength="3" 
+                          required={true}
                           onChange={ev => setInput(ev.target.value)}
-                          value={input}
+                          value={input || ''} // <  || '' in order to avoid 'undefined' initial state-value
                           // onClick={ev => { setSearchEnabled(searchEnabled + 0.1) }}
                           // readOnly={searchEnabled < 1}
                         />
