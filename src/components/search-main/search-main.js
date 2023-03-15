@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react"
+import React, { useState, useRef, useEffect } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { useFlexSearch } from "react-use-flexsearch"
 
@@ -68,6 +68,18 @@ const SearchMain =({
        }
      }
   `)
+
+  const liveRegionRef = useRef(null)
+  const firstRound = useRef(true)
+  useEffect(() => {
+    if (firstRound.current) {
+      firstRound.current = false
+      return
+    }
+    if (liveRegionRef.current) {
+      liveRegionRef.current.focus()
+    }
+  }, [storedInput])
 
   const formSubmit = (ev) => {
     ev.preventDefault();
@@ -146,11 +158,11 @@ const SearchMain =({
                     </div>
                     <div className="it-list-wrapper">
                       <div  className="fw-normal text-muted">
-                        <div aria-live="assertive" /* xxx could be better to move focus here */> 
+                        <div class="live-region" aria-live="assertive" tabIndex="-1" ref={liveRegionRef} /* xxx could be better to move focus here */> 
                           {(formSubmitted) && (results.length > 0) &&
                               <div className="mt-2 ps-4 pt-4"><p>Di seguito i migliori risultati per "<strong><mark>{storedInput}</mark></strong>":</p></div>
                           }
-                          {(formSubmitted) && (results.length == 0) &&
+                          {(formSubmitted) && (results.length === 0) &&
                               <div className="mt-2 ps-4 pt-4"><p>Non ci sono risultati utili per "<strong><mark>{storedInput}</mark></strong>", possiamo aiutarti in altro modo?</p></div>
                           }
                         </div>
