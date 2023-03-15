@@ -24,13 +24,7 @@ const SearchMain =({
   background
 })=> {
 
-  const [input, setInput] = useState(() => {
-    if (location)
-      if (location.state) 
-        return location.state.searchTerm
-      else 
-        return null
-  })
+  const [input, setInput] = useState(() => location?.state?.searchTerm)
   const [searchTerm, setSearchTerm] = useState(() => {
     if (location)
       if (location.state) 
