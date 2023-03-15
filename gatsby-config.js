@@ -171,7 +171,6 @@ module.exports = {
             "invece",
             "io",
             "la",
-            // "lavoro",
             "le",
             "lei",
             "lo",
