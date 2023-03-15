@@ -70,8 +70,8 @@ const SearchMain =({
 
   const searchOptions = {
     limit: `${howMany ? howMany : ''}`,
-    // if true "fill" the spaces with suggestions, useful for multiple words query
-    suggest: useSuggestionEngine, // XXX < 
+    // if true "fill" the spaces with suggestions, useful for multiple words query XXX
+    suggest: useSuggestionEngine,
   }
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions) 
@@ -133,7 +133,7 @@ const SearchMain =({
                     </div>
                     <div className="it-list-wrapper">
                       <div  className="fw-normal text-muted">
-                        <div class="live-region" aria-live="assertive" tabIndex="-1" ref={liveRegionRef} /* xxx could be better to move focus here */> 
+                        <div class="live-region" aria-live="assertive" tabIndex="-1" ref={liveRegionRef}> 
                           {(formSubmitted) && (results.length > 0) &&
                               <div className="mt-2 ps-4 pt-4"><p>Di seguito i migliori risultati per "<strong><mark>{storedInput}</mark></strong>":</p></div>
                           }
@@ -142,7 +142,7 @@ const SearchMain =({
                           }
                         </div>
                       </div>
-                      <ul className="it-list mt-5 mt-md-3"> {/* < could be a full list component, hack for speed XXX */}
+                      <ul className="it-list mt-5 mt-md-3">
                         {results.map( result => (
                           <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
                             <div className="d-md-flex">
