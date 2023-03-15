@@ -148,7 +148,7 @@ const SearchMain =({
                         />
                       </div>
                       <div className="button-wrapper mt-4 mt-md-0">
-                        <Button type="submit" {...button} /*disabled={searchEnabled < 1}*/ />
+                        <Button type="submit" {...button} />
                       </div>
                     </div>
                     <div className="it-list-wrapper">
