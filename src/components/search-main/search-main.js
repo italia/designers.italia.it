@@ -25,27 +25,9 @@ const SearchMain =({
 })=> {
 
   const [input, setInput] = useState(() => location?.state?.searchTerm)
-  const [searchTerm, setSearchTerm] = useState(() => {
-    if (location)
-      if (location.state) 
-        return location.state.searchTerm
-      else 
-        return null
-  })
-  const [formSubmitted, setFormSubmitted] = useState(() => {
-    if (location)
-      if (location.state) 
-        return true
-      else 
-        return false
-  })
-  const [storedInput, setStoredInput] = useState(() => {
-    if (location)
-      if (location.state) 
-        return location.state.searchTerm
-      else 
-        return null
-  })
+  const [searchTerm, setSearchTerm] = useState(() => location?.state?.searchTerm)
+  const [formSubmitted, setFormSubmitted] = useState(() => !!location?.state)
+  const [storedInput, setStoredInput] = useState(() => location?.state?.searchTerm)
 
   const iconOpt = {
       icon: 'sprites.svg#it-file',
@@ -97,7 +79,7 @@ const SearchMain =({
   const results = useFlexSearch(searchTerm, index, store, searchOptions) 
 
   let styles = 'search-main'
-	+ `${background ? ' bg-'+background : ''}`
+	  + `${background ? ' bg-'+background : ''}`
 
   return (
     <section className={styles}>
