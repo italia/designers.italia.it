@@ -96,7 +96,8 @@ const SearchMain =({
 
   const searchOptions = {
     limit: `${howMany ? howMany : ''}`,
-    suggest: useSuggestionEngine, // XXX < activate to "fill" the spaces with suggestions, usefull for multiple words query
+    // if true "fill" the spaces with suggestions, useful for multiple words query
+    suggest: useSuggestionEngine, // XXX < 
   }
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions) 
