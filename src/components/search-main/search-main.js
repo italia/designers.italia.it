@@ -15,10 +15,8 @@ const SearchMain =({
   title,
   text,
   formId,
-  formAction,
   label,
   inputId,
-  inputName,
   button,
   suggest,
   background
