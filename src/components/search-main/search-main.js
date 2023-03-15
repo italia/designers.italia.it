@@ -24,7 +24,7 @@ const SearchMain =({
 
   const [input, setInput] = useState(() => location?.state?.searchTerm)
   const [searchTerm, setSearchTerm] = useState(() => location?.state?.searchTerm)
-  const [formSubmitted, setFormSubmitted] = useState(() => !!location?.state)
+  const [formSubmitted, setFormSubmitted] = useState(() => !!location?.state?.searchTerm)
   const [storedInput, setStoredInput] = useState(() => location?.state?.searchTerm)
 
   const iconOpt = {
