@@ -137,7 +137,6 @@ module.exports = {
             "buono",
             "che",
             "chi",
-            // "cinque",
             "comprare",
             "con",
             "consecutivi",
