@@ -84,6 +84,12 @@ module.exports = {
         matomoPhpScript: "matomo.php",
         matomoJsScript: "matomo.js",
         enableJSErrorTracking: true,
+        additionalTrackers: [
+          {
+            siteId: `eO35WAwqon`,
+            trackerUrl: `https://ingestion.webanalytics.italia.it/matomo.php`,
+          },
+        ],
       },
     },
     {
