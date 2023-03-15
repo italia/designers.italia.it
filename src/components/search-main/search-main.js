@@ -38,9 +38,20 @@ const SearchMain =({
       else 
         return null
   })
-  const [formSubmitted, setFormSubmitted] = useState(false)
-  const [storedInput, setStoredInput] = useState('')
-  const resultsAlertRef = useRef(null)
+  const [formSubmitted, setFormSubmitted] = useState(() => {
+    if (location)
+      if (location.state) 
+        return true
+      else 
+        return false
+  })
+  const [storedInput, setStoredInput] = useState(() => {
+    if (location)
+      if (location.state) 
+        return location.state.searchTerm
+      else 
+        return null
+  })
 
   const iconOpt = {
       icon: 'sprites.svg#it-file',
