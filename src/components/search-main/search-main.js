@@ -133,7 +133,7 @@ const SearchMain =({
                     </div>
                     <div className="it-list-wrapper">
                       <div  className="fw-normal text-muted">
-                        <div class="live-region" aria-live="assertive" tabIndex="-1" ref={liveRegionRef}> 
+                        <div class="live-region" tabIndex="-1" ref={liveRegionRef}> 
                           {(formSubmitted) && (results.length > 0) &&
                               <div className="mt-2 ps-4 pt-4"><p>Di seguito i migliori risultati per "<strong><mark>{storedInput}</mark></strong>":</p></div>
                           }
