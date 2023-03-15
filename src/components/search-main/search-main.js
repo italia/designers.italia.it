@@ -98,10 +98,14 @@ const SearchMain =({
         <div className="row">
           <div className="col-12 g-0">
             <div className="search-main-content px-3 py-5 px-lg-0 px-lg-5 py-lg-6" role="search">
-              <div className="text-container mb-5">
-                {title && <h2>{title}</h2>}
-                <p className="lead">{text}</p>
-               </div>
+              {title || text ?
+                <div className="text-container mb-5">
+                  {title && <h2>{title}</h2>}
+                  {text && <p className="lead">{text}</p>}
+                </div>
+                : null
+              }
+
                {suggest &&
               <div className="suggest-wrapper d-lg-flex">
                 <h3 className="mb-4">{suggest.title}</h3>
