@@ -144,7 +144,7 @@ const SearchMain =({
                           minLength="3" 
                           required={true}
                           onChange={ev => setInput(ev.target.value)}
-                          value={input || ''} // <  || '' in order to avoid 'undefined' initial state-value
+                          value={input || ''}
                         />
                       </div>
                       <div className="button-wrapper mt-4 mt-md-0">
