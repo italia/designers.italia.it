@@ -1,8 +1,7 @@
-import React, { useState } from "react"
+import React, { useState, useRef } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { useFlexSearch } from "react-use-flexsearch"
 
-// import ReactMarkdown from "react-markdown"
 import Button from "../button/button"
 import Tag from "../tag/tag"
 import ListItem from "../list-item/list-item"
@@ -27,30 +26,21 @@ const SearchMain =({
 
   const [input, setInput] = useState(() => {
     if (location)
-    if (location.state) 
-      return location.state.searchTerm
-    else 
-      return null
+      if (location.state) 
+        return location.state.searchTerm
+      else 
+        return null
   })
   const [searchTerm, setSearchTerm] = useState(() => {
     if (location)
-    if (location.state) 
-      return location.state.searchTerm
-    else 
-      return null
+      if (location.state) 
+        return location.state.searchTerm
+      else 
+        return null
   })
-  
-  // const [searchEnabled, setSearchEnabled] = useState(0.0)
-
-  // useEffect(() => {
-  //   setSearchEnabled(window.localStorage.getItem("search-enabled") ? 1 : 0)
-  // }, [])
-
-  // useEffect(() => {
-  //   if (searchEnabled >= 1) {
-  //     window.localStorage.setItem("search-enabled", "true")
-  //   }
-  // }, [searchEnabled])
+  const [formSubmitted, setFormSubmitted] = useState(false)
+  const [storedInput, setStoredInput] = useState('')
+  const resultsAlertRef = useRef(null)
 
   const iconOpt = {
       icon: 'sprites.svg#it-file',
@@ -71,46 +61,56 @@ const SearchMain =({
   const formSubmit = (ev) => {
     ev.preventDefault();
     search(ev.target.elements.search.value);
+    setFormSubmitted(true)
+    setStoredInput(input)
   }
 
   const search = (input) => {
     setSearchTerm(input)
+    setFormSubmitted(true)
+    setStoredInput(input)
   }
 
   const searchOptions = {
     limit: `${howMany ? howMany : ''}`,
-    suggest: `${useSuggestionEngine ? true : false}`, // XXX < activate to "fill" the spaces with suggestions, usefull for multiple words query
+    suggest: useSuggestionEngine, // XXX < activate to "fill" the spaces with suggestions, usefull for multiple words query
   }
 
-  const results = useFlexSearch(searchTerm, index, store, searchOptions) // XXX < search run
+  const results = useFlexSearch(searchTerm, index, store, searchOptions) 
 
   let styles = 'search-main'
 	+ `${background ? ' bg-'+background : ''}`
-
-
-  // if (location) 
-  //   if(location.state) {
-  //     setSearchTerm(location.state.searchTerm)
-  //     // searchTerm: input = location.state.searchTerm
-  //     console.log('STATO XXX:' + location.state.searchTerm)
-  //     // setInput(stateSearchTerm)
-  //     // search(stateSearchTerm)
-  //   }
 
   return (
     <section className={styles}>
       <div className="container-xxl">
         <div className="row">
           <div className="col-12 g-0">
-            <div className="search-main-content px-3 py-5 px-lg-0 px-lg-5 py-lg-6">
+            <div className="search-main-content px-3 py-5 px-lg-0 px-lg-5 py-lg-6" role="search">
               <div className="text-container mb-5">
                 {title && <h2>{title}</h2>}
                 <p className="lead">{text}</p>
                </div>
+               {suggest &&
+              <div className="suggest-wrapper d-lg-flex">
+                <h3 className="mb-4">{suggest.title}</h3>
+                {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5">
+                  <ul className="list-inline d-flex flex-wrap">
+                    {suggest.items.map((item, index) => (
+                      <li className="list-item me-4 mb-3" key={index}>
+                        <Button onClick={() => { setInput(item.label); search(item.label); }} type="submit" size="md" btnStyle="outline-secondary">
+                          {item.label}
+                        </Button>
+                      </li>
+                    ))}
+                  </ul>
+                </div>}
+              </div>
+              }
               <div className="search-form px-4 pb-4 mb-5 shadow-lg">
                 <form id={formId} onSubmit={formSubmit}>
                     <div className="d-flex flex-column align-items-center flex-md-row w-100">
-                      <div className="form-group mb-0 flex-grow-1 me-md-4 w-100" role="search">
+                      <div className="form-group mb-0 flex-grow-1 me-md-4 w-100">
                         <label className="active" htmlFor={inputId}>{label}</label>
                         <input
                           type="search"
@@ -123,8 +123,6 @@ const SearchMain =({
                           required={true}
                           onChange={ev => setInput(ev.target.value)}
                           value={input || ''} // <  || '' in order to avoid 'undefined' initial state-value
-                          // onClick={ev => { setSearchEnabled(searchEnabled + 0.1) }}
-                          // readOnly={searchEnabled < 1}
                         />
                       </div>
                       <div className="button-wrapper mt-4 mt-md-0">
@@ -132,10 +130,20 @@ const SearchMain =({
                       </div>
                     </div>
                     <div className="it-list-wrapper">
+                      <div  className="fw-normal text-muted">
+                        <div aria-live="assertive" /* xxx could be better to move focus here */> 
+                          {(formSubmitted) && (results.length > 0) &&
+                              <div className="mt-2 ps-4 pt-4"><p>Di seguito i migliori risultati per "<strong><mark>{storedInput}</mark></strong>":</p></div>
+                          }
+                          {(formSubmitted) && (results.length == 0) &&
+                              <div className="mt-2 ps-4 pt-4"><p>Non ci sono risultati utili per "<strong><mark>{storedInput}</mark></strong>", possiamo aiutarti in altro modo?</p></div>
+                          }
+                        </div>
+                      </div>
                       <ul className="it-list mt-5 mt-md-3"> {/* < could be a full list component, hack for speed XXX */}
                         {results.map( result => (
                           <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
-                            <div class="d-md-flex">
+                            <div className="d-md-flex">
                               <h3 className="h6 mb-0">
                                <strong>{result.title}</strong>
                               </h3>
@@ -147,10 +155,6 @@ const SearchMain =({
                             <p className="text-secondary fw-normal d-block mb-3">
                                {(result.description !== null) ? <small>{result.description}</small> : null}
                             </p>
-                            {/* <div className="mb-3 text-muted"><small>{result.tag}</small></div> */}
-                            {/* <div className="mb-3 text-muted"><small>{result.path}</small></div> */}
-                            {/* <div className="mb-3 text-muted"><small>{result.template}</small></div> */}
-                            {/* <div className="mb-3 text-muted"><small>{result.id}</small></div> */}
                           </ListItem>
                         ))}
                         {(results.length > 4 && !isResultsPage) &&
@@ -162,22 +166,6 @@ const SearchMain =({
                     </div>
                 </form>
               </div>
-              {suggest &&
-              <div className="suggest-wrapper d-lg-flex">
-                <h3 className="mb-4">{suggest.title}</h3>
-                {suggest.items && <div className="items-wrapper d-flex flex-wrap ms-lg-5">
-                  <ul className="list-inline d-flex flex-wrap">
-                    {suggest.items.map((item, index) => (
-                      <li className="list-item me-4 mb-3" key={index}>
-                        <Button onClick={() => { setInput(item.label); search(item.label) }} type="submit" size="md" btnStyle="outline-secondary">
-                          {item.label}
-                        </Button>
-                      </li>
-                    ))}
-                  </ul>
-                </div>}
-              </div>
-              }
             </div>
           </div>
         </div>

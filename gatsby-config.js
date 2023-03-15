@@ -116,6 +116,7 @@ module.exports = {
           resolution: 22,
           depth: 2,
           filter: [
+            // XXX we need a stemmer also... 
             // array stopwords italian > https://www.ranks.nl/stopwords/italian
             "a",
             "adesso",
