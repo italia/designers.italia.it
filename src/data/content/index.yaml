@@ -86,13 +86,16 @@ components:
 
   searchMain:
     disabled: true
+    isResultsPage: false
+    useSuggestionEngine: true
     background: light
     title: Da dove vuoi iniziare?
-    text: "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
+    text: "" # "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
     formId: searchForm
     label: Cerca
     inputId: searchInput
     inputName: search
+    howMany: 5
     button:
       label: Cerca
       type: #submit
@@ -105,17 +108,11 @@ components:
     suggest:
       title: "Ti suggeriamo:"
       items:
-        - label: voglio scoprire di cosa hanno bisogno gli utenti
-          url: "#"
-        - label: ho bisogno del kit UI
-          url: ""
-        - label: test di usabilità
-          url: "#"
-        - label: rispettare le Linee guida di design
-          url: "#"
+        - label: bisogni utenti
+        - label: test usabilità
+        - label: rispettare
         - label: accessibilità
-          url: "#"
-
+        - label: UI Kit
 
   sectionIntro:
     title: In evidenza
