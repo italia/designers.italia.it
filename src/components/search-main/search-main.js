@@ -31,7 +31,7 @@ const SearchMain =({
       icon: 'sprites.svg#it-file',
       size: 'sm',
       color: "primary",
-      addonClasses: 'mt-1 flex-shrink-0 me-3'
+      addonClasses: 'mt-1 flex-shrink-0 me-1 me-md-3'
   }
 
   const { localSearchPages: { index, store } } = useStaticQuery(graphql`
@@ -107,10 +107,10 @@ const SearchMain =({
                   </div>}
                 </div>
               }
-              <div className="search-form px-4 pb-4 mb-5 shadow-lg">
+              <div className="search-form px-3 px-sm-4 pb-4 mb-5 shadow-lg">
                 <form id={formId} onSubmit={formSubmit}>
-                    <div className="d-flex flex-column align-items-center flex-md-row w-100">
-                      <div className="form-group mb-0 flex-grow-1 me-md-4 w-100">
+                    <div className="d-flex flex-column align-items-center flex-sm-row w-100">
+                      <div className="form-group mb-0 flex-grow-1 me-sm-4 w-100">
                         <label className="active" htmlFor={inputId}>{label}</label>
                         <input
                           type="search"
@@ -125,7 +125,7 @@ const SearchMain =({
                           value={input || ''}
                         />
                       </div>
-                      <div className="button-wrapper mt-4 mt-md-0">
+                      <div className="button-wrapper mt-4 mt-sm-0">
                         <Button type="submit" {...button} />
                       </div>
                     </div>
@@ -134,14 +134,14 @@ const SearchMain =({
                         <div  className="fw-normal text-muted">
                           <div class="live-region" tabIndex="-1" ref={liveRegionRef}> 
                             {(formSubmitted) && (results.length > 0) &&
-                                <div className="mt-2 ps-4 pt-4"><p>Di seguito i migliori risultati per "<strong><mark>{storedInput}</mark></strong>":</p></div>
+                                <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Di seguito i migliori risultati per "<strong><mark>{storedInput}</mark></strong>":</p></div>
                             }
                             {(formSubmitted) && (results.length === 0) &&
-                                <div className="mt-2 ps-4 pt-4"><p>Non ci sono risultati utili per "<strong><mark>{storedInput}</mark></strong>", possiamo aiutarti in altro modo?</p></div>
+                                <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Non ci sono risultati utili per "<strong><mark>{storedInput}</mark></strong>", possiamo aiutarti in altro modo?</p></div>
                             }
                           </div>
                         </div>
-                        <ul className="it-list mt-5 mt-md-3">
+                        <ul className="it-list mt-4 mt-md-3">
                           {results.map( result => (
                             <ListItem url={result.relativePath} key={result.id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
                               <div className="d-md-flex">
