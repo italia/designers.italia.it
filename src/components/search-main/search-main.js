@@ -43,6 +43,7 @@ const SearchMain =({
      }
   `)
 
+  const searchLabelRef = useRef(null)
   const liveRegionRef = useRef(null)
   const firstRound = useRef(true)
   useEffect(() => {
@@ -52,6 +53,9 @@ const SearchMain =({
     }
     if (liveRegionRef.current) {
       liveRegionRef.current.focus()
+    }
+    if (searchLabelRef.current) {
+      searchLabelRef.current.className="active"
     }
   }, [storedInput])
 
@@ -111,13 +115,13 @@ const SearchMain =({
                 <form id={formId} onSubmit={formSubmit}>
                     <div className="d-flex flex-column align-items-center flex-sm-row w-100">
                       <div className="form-group mb-0 flex-grow-1 me-sm-4 w-100">
-                        <label className="active" htmlFor={inputId}>{label}</label>
+                        <label ref={searchLabelRef} /*className="active"*/ htmlFor={inputId}>{label}</label>
                         <input
                           type="search"
-                          className="border-search search"
+                          className="border-search form-control-lg search"
                           name="search"
                           id={inputId}
-                          placeholder="Scrivi un argomento"
+                          placeholder=""
                           autoComplete="off"
                           minLength="3" 
                           required={true}
