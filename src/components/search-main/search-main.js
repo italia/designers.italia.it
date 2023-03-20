@@ -114,7 +114,7 @@ const SearchMain =({
                         <label className="active" htmlFor={inputId}>{label}</label>
                         <input
                           type="search"
-                          className="border-search search"
+                          className="border-search form-control-lg search"
                           name="search"
                           id={inputId}
                           placeholder="Esplora Designers Italia"
