@@ -138,10 +138,10 @@ const SearchMain =({
                         <div  className="fw-normal text-muted">
                           <div className="live-region" tabIndex="-1" ref={liveRegionRef}> 
                             {(formSubmitted) && (results.length > 0) &&
-                                <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Di seguito i migliori risultati per "<strong><mark>{storedInput}</mark></strong>":</p></div>
+                                <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Questi sono i risultati migliori per "<strong><mark>{storedInput}</mark></strong>":</p></div>
                             }
                             {(formSubmitted) && (results.length === 0) &&
-                                <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Non ci sono risultati utili per "<strong><mark>{storedInput}</mark></strong>", possiamo aiutarti in altro modo?</p></div>
+                                <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Non ci sono risultati per "<strong><mark>{storedInput}</mark></strong>", prova a cercare un altro argomento.</p></div>
                             }
                           </div>
                         </div>
