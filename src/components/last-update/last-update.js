@@ -52,8 +52,8 @@ const LastUpdate = ({
                   <Link
                     to={licence.url}
                     target={licence.blank ? "_blank" : undefined}
-                    className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5">
-                    <strong className="d-inline-block me-2">{licence.label} <span className="visually-hidden">(si apre in una nuova finestra)</span><Icon {...licence.icon} /></strong>
+                    className="d-block d-md-inline-block mt-2 mt-md-0 ms-md-5">
+                    <strong className="me-2">{licence.label} <span className="visually-hidden">(si apre in una nuova finestra)</span> <Icon {...licence.icon} /></strong>
                   </Link>
                 </small>
               </p>
@@ -62,8 +62,8 @@ const LastUpdate = ({
                   <Link
                     to={editGithubUrl}
                     target={edit.blank ? "_blank" : undefined}
-                    className="d-inline-block text-decoration-none">
-                    <strong className="d-inline-block me-2">{edit.label} <span className="visually-hidden">(si apre in una nuova finestra)</span></strong><Icon {...edit.icon} />
+                    className="d-inline-block">
+                    <strong className="me-2">{edit.label} <span className="visually-hidden">(si apre in una nuova finestra)</span></strong> <Icon {...edit.icon} />
                   </Link>
                 </small>
               </p>
