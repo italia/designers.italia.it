@@ -7,3 +7,17 @@ p {
   max-width:75ch;
 }
 
+.megamenu, #navSidebarDs { // xxx underline links for megamenu and sidebar menu #a11y
+  .link-list-wrapper {
+      ul li a {
+        span {
+          text-decoration: underline !important;
+        }
+        &.disabled, &.active {
+          span {
+            text-decoration: none !important;
+          }
+        }
+      }
+}
+}
