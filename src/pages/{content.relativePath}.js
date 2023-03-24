@@ -30,10 +30,22 @@ const Page = ({ pageContext, location, data: { content } }) => {
   const Template = content.metadata.template ? TEMPLATES[content.metadata.template.name] : TemplateBase
   const lastModified = content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
 
+  // XXX GIOCANDO COI TAGS
+  const Tags = content?.components?.hero?.kangaroo?.chips 
+  let TagsList = ""
+  if (Tags) TagsList = Tags.map((tag, index) => 
+    <ul>
+      <li key={index}>{tag.label}</li>
+    </ul>
+  )
+
   return(
-    <Template Pagedata={content} pageContext={pageContext} location={location} lastModified={lastModified}>
-      {/* place extra components / HTML here */}
-    </Template>
+    <div>
+      <div>{TagsList}</div>
+      <Template Pagedata={content} pageContext={pageContext} location={location} lastModified={lastModified}>
+        {/* place extra components / HTML here */}
+      </Template>
+    </div>
   )
 }
 
