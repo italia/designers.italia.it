@@ -114,6 +114,7 @@ export const query = graphql`
               size
               color
             }
+            tags
             chips {
               label
               url
