@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Con sfondo scuro, varianti intestazione</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<!-- Solo testo -->
+<div class="steppers bg-dark">
+  <div class="steppers-header">
+    <ul>
+      <li class="confirmed">Primo contenuto <svg class="icon steppers-success"><use href="/dist/svg/sprites.svg#it-check"></use></svg><span class="visually-hidden">Confermato</span></li>
+      <li class="active">Secondo contenuto <span class="visually-hidden">Attivo</span></li>
+      <li>Terzo contenuto</li>
+    </ul>
+    <span class="steppers-index" aria-hidden="true">2/6</span>
+  </div>
+</div>
+
+<!-- Testo e icone -->
+<div class="steppers bg-dark">
+  <div class="steppers-header">
+    <ul>
+      <li class="confirmed"><svg class="icon"><use href="/dist/svg/sprites.svg#it-calendar"></use></svg>Primo contenuto <svg class="icon steppers-success"><use href="/dist/svg/sprites.svg#it-check"></use></svg><span class="visually-hidden">Confermato</span></li>
+      <li class="active"><svg class="icon"><use href="/dist/svg/sprites.svg#it-lock"></use></svg>Secondo contenuto <span class="visually-hidden">Attivo</span></li>
+      <li><svg class="icon"><use href="/dist/svg/sprites.svg#it-settings"></use></svg>Terzo contenuto</li>
+    </ul>
+    <span class="steppers-index" aria-hidden="true">2/6</span>
+  </div>
+</div>
+
+<!-- Numeri -->
+<div class="steppers bg-dark">
+  <div class="steppers-header">
+    <ul>
+      <li class="confirmed"><span class="steppers-number"><svg class="icon steppers-success"><use href="/dist/svg/sprites.svg#it-check"></use></svg><span class="visually-hidden">Confermato Step 1</span></span>Primo contenuto</li>
+      <li class="active no-line"><span class="steppers-number"><span class="visually-hidden">Attivo Step </span>2</span>Secondo contenuto</li>
+      <li><span class="steppers-number"><span class="visually-hidden">Step </span>3</span>Terzo contenuto</li>
+    </ul>
+    <span class="steppers-index" aria-hidden="true"><span>1</span> <span class="active">2</span> <span>3</span> <span>4</span></span>
+  </div>
+</div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

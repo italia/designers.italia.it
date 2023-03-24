@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Con navigazione mobile pallini</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<div class="steppers mobile-examples">
+  <div class="steppers-content" aria-live="polite">
+    <!-- Esempio START -->
+    <p>Contenuto di esempio dello step corrente</p>
+    <!-- Esempio END -->
+  </div>
+  <nav class="steppers-nav">
+    <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-prev"><svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-left"></use></svg>Indietro</button>
+    <ul class="steppers-dots">
+      <li class="done"><span class="visually-hidden">Step 1 di 6 - Confermato</span></li>
+      <li class="done"><span class="visually-hidden">Step 2 di 6 - Confermato</span></li>
+      <li class="done"><span class="visually-hidden">Step 3 di 6 - Confermato</span></li>
+      <li><span class="visually-hidden">Step 4 di 6</span></li>
+      <li><span class="visually-hidden">Step 5 di 6</span></li>
+      <li><span class="visually-hidden">Step 6 di 6</span></li>
+    </ul>
+    <button type="button" class="btn btn-outline-primary btn-sm steppers-btn-next">Avanti<svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-right"></use></svg></button>
+  </nav>
+</div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>
