@@ -108,7 +108,39 @@ exports.onCreateNode = async ({
   }
 }
 
+const path = require("path")
+const _ = require("lodash")
+
 exports.createPages = async ({ graphql, actions }) => {
+  
+  // tags
+  const {createPage} = actions
+  const tagTemplate = path.resolve("src/templates/tag.js")
+
+  const tags = await graphql(`
+    {
+      tagsGroup: allContent {
+        group(field: components___hero___kangaroo___tags) {
+          fieldValue
+        }
+      }
+    }
+  `
+  )
+  
+  tags.data.tagsGroup.group.forEach(tag => {
+    console.log(`Creating tag page: ${tag.fieldValue}`)
+    createPage({
+      path: `/argomenti/${_.kebabCase(tag.fieldValue)}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      }
+    })
+  })
+
+
+  // redirs
   const { createRedirect } = actions
 
   const redirs = await graphql(`
