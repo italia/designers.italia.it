@@ -8,7 +8,7 @@ import './megamenu.scss'
 import ImageResponsive from "../image-responsive/image-responsive"
 
 const Megamenu = ({
-	left,
+	info,
 	heading,
 	cols
 }) => {
@@ -18,25 +18,6 @@ const Megamenu = ({
 	return(
 		<div className="megamenu pb-5 pb-lg-0">
 			<div className="row /*align-items-center*/">
-			<div className="col-xs-12 col-lg-4 px-0">
-				<div className="row">
-					{left &&
-						<div className="col-12 it-vertical it-description pb-lg-3">
-							<div className="description-content img-max-megamenu ps-4 ps-sm-5 ms-3">
-								{left.img &&
-									<div className="ratio ratio-megamenu lightgrey-bg-a1 mb-4 rounded">
-										{/*<img className="rounded" src={left.img} alt={left.imgAlt}/>*/}
-										<ImageResponsive className="rounded" src={left.img} alt={left.imgAlt} loading="eager"/>
-									</div>
-								}
-								{left.text &&
-									<ReactMarkdown>{left.text}</ReactMarkdown>
-								}
-							</div>
-						</div>
-					}
-					</div>
-					</div>
 					<div className="col-12 col-lg-8">
 						{heading &&
               <Link className="heading-link d-flex justify-content-between align-items-center" to={heading.url} activeClassName={GATSBY_ACTIVE}>
@@ -55,6 +36,25 @@ const Megamenu = ({
 								})}
 							</div>
 						}
+					</div>
+          <div className="col-xs-12 col-lg-4 px-0">
+				  <div className="row">
+					{info &&
+						<div className="col-12 it-vertical it-description pb-lg-3">
+							<div className="description-content img-max-megamenu ps-4 ps-sm-5 ms-3">
+								{info.img &&
+									<div className="ratio ratio-megamenu lightgrey-bg-a1 mb-4 rounded">
+										{/*<img className="rounded" src={info.img} alt={info.imgAlt}/>*/}
+										<ImageResponsive className="rounded" src={info.img} alt={info.imgAlt} loading="eager"/>
+									</div>
+								}
+								{info.text &&
+									<ReactMarkdown>{info.text}</ReactMarkdown>
+								}
+							</div>
+						</div>
+					}
+					</div>
 					</div>
 				</div>
 			</div>
