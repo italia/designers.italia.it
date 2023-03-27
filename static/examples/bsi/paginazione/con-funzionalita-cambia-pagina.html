@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Con funzionalità cambia pagina</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<nav class="pagination-wrapper" aria-label="Esempio di navigazione con page changer">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item"><a class="page-link" href="#">24</a></li>
+    <li class="page-item"><a class="page-link" href="#">25</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#" aria-current="page">
+        <span class="d-inline-block d-sm-none">Pagina </span>26
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">27</a></li>
+    <li class="page-item"><a class="page-link" href="#">28</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item"><a class="page-link" href="#">50</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+      </a>
+    </li>
+  </ul>
+  <div class="dropdown">
+    <a class="btn btn-dropdown dropdown-toggle" href="#" role="button" id="pagerChanger" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Salta alla pagina">
+    10/pagina
+    <svg class="icon icon-primary icon-sm"><use href="/dist/svg/sprites.svg#it-expand"></use></svg>
+    </a>
+    <div class="dropdown-menu" aria-labelledby="pagerChanger">
+      <div class="link-list-wrapper">
+        <ul class="link-list">
+           <li><a class="list-item active" href="#" aria-current="page"><span>10/pagina</span></a></li>
+           <li><a class="dropdown-item list-item" href="#"><span>20/pagina</span></a></li>
+           <li><a class="dropdown-item list-item" href="#"><span>30/pagina</span></a></li>
+           <li><a class="dropdown-item list-item" href="#"><span>40/pagina</span></a></li>
+           <li><a class="dropdown-item list-item" href="#"><span>50/pagina</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>
