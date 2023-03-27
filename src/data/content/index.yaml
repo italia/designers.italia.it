@@ -142,6 +142,7 @@ components:
       alt: "Homepage di Designers Italia"
       headingLevel: 3
       background: medium
+      padBottom: false
       buttons:
         - label: Scopri come fare
           btnStyle: primary
@@ -165,13 +166,13 @@ components:
     - title: "Nome in codice: ___ Italia"
       subtitle: Partecipa al sondaggio per definire il nuovo nome del design system del Paese
       big: true
-      id: HL2b
-      specular: false
-      padBottom: false
+      id: HL2c
+      specular: true
+      padBottom: true # < last hightlight (or only hightlight in home page mut have this set to true)
       img: /images/home/in-evidenza/20230314-nome-in-codice-italia-home.jpg
       alt: ""
       headingLevel: 3
-      background: light
+      background: dark
       buttons:
         - label: "Scopri come partecipare"
           btnStyle: primary
