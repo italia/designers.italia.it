@@ -18,7 +18,7 @@ const Megamenu = ({
 	return (
 		<div className="megamenu pb-5 pb-lg-0">
 			<div className="row /*align-items-center*/">
-				<div className="col-xs-12 col-lg-4 px-0">
+				<div className="col-xs-12 col-lg-4 px-0 order-lg-2">
 					<div className="row">
 						{info &&
 							<div className="col-12 it-vertical it-description pb-lg-3">
@@ -37,7 +37,7 @@ const Megamenu = ({
 						}
 					</div>
 				</div>
-				<div className="col-12 col-lg-8 order-first">
+				<div className="col-12 col-lg-8 order-lg-1">
 					{heading &&
 						<Link className="heading-link d-flex justify-content-between align-items-center" to={heading.url} activeClassName={GATSBY_ACTIVE}>
 							<span>{heading.label}</span>
