@@ -53,6 +53,7 @@ export const query = graphql`
         template {
           name
         }
+        archive
         activeLabel
         json
       }
