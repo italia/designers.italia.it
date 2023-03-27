@@ -26,4 +26,4 @@ Ora è di nuovo il momento di ascoltare la voce della community, per raccogliere
 
 Il questionario sarà aperto **fino al 7 aprile**. Aspettiamo la tua opinione!
 
-**[Compila il questionario](https://ec.europa.eu/eusurvey/runner/questionarioDESIDEVI2023_News)**
+**[Vai al questionario](https://ec.europa.eu/eusurvey/runner/questionarioDESIDEVI2023_News)**
