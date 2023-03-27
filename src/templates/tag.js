@@ -37,7 +37,7 @@ export default Tags
 export const pageQuery = graphql`
   query($tag: String) {
     allContent(
-      filter: {components: {hero: {kangaroo: {chips: {elemMatch: {label: {in: [$tag]}}}}}}}
+      filter: {components: {hero: {kangaroo: {tags: {in: [$tag]}}}}}
     ) {
       totalCount
       edges {
