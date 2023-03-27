@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{% assign buildTime =  site.time | date: '%Y%m%d%H%M' %}
+{% assign cssurl = '/assets/main.css?' | append: buildTime  %}
+
+<!--[if IE 8]><html lang="{{ active_lang }}" class="no-js ie89 ie8"><![endif]-->
+<!--[if IE 9]><html lang="{{ active_lang }}" class="no-js ie89 ie9"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="{{ active_lang }}" class="no-js" prefix="og: http://ogp.me/ns#">
+<!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="8IbTZ-PnSdvOnC8S4q-wjSiZ2B-90cVugO04xMu6vug" />
+
+  {% seo %}
+
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | relative_url }}">
+
+  <link rel="preload" href="{{ '/assets/toolkit/IWT.min.js' | relative_url }}" as="script">
+
+  <!-- include html5shim for IE8 -->
+  <script src="{{ '/assets/toolkit/vendor/modernizr.js' | relative_url }}"></script>
+  <!-- include polyfill for IE11 -->
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+
+  <link media="all" rel="stylesheet" href="{{ '/assets/toolkit/build-autoprefixed.css' | relative_url }}">
+  <link media="all" rel="stylesheet" href="{{ cssurl | relative_url }}">
+
+  <script src="{{ '/assets/toolkit/vendor/jquery-1.12.4.min.js' | relative_url }}"></script>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/icons/apple-touch-icon.png' | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-32x32.png' | relative_url }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ '/assets/icons/favicon-16x16.png' | relative_url }}" sizes="16x16">
+  <link rel="manifest" href="{{ '/assets/icons/manifest.json' | relative_url }}">
+  <link rel="mask-icon" href="{{ '/assets/icons/safari-pinned-tab.svg' | relative_url }}">
+  <link rel="shortcut icon" href="{{ '/assets/icons/favicon.ico' | relative_url }}">
+  <meta name="apple-mobile-web-app-title" content="{{ site.title }}">
+  <meta name="application-name" content="{{ site.title }}">
+  <meta name="msapplication-config" content="{{ '/assets/icons/browserconfig.xml' | relative_url }}">
+  <meta name="theme-color" content="{{ site.theme_color }}">
+
+  {%- if jekyll.environment == 'production' and site.matomo_siteid -%}
+  {% include matomo.html %}
+  {%- endif -%}
+
+</head>
+<body class="{{ site.css_theme }} layout-{{page.layout}} language-{{page.lang}}">
