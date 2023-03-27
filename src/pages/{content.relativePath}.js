@@ -326,7 +326,7 @@ export const query = graphql`
             button {
               btnStyle
               label
-              addonStyle
+              url
             }
             chips {
               label
