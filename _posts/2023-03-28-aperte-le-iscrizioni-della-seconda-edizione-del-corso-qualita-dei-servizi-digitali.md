@@ -19,7 +19,7 @@ categories:
 ---
 
 <!-- MORE -->
-Dopo il grande numero di persone iscritte alla prima edizione, Formez apre le iscrizioni per la seconda edizione del corso online **“Qualità dei servizi digitali”**, un’iniziativa dedicata a tutte le persone interessate ad **accrescere la conoscenza e la consapevolezza sulla qualità dei servizi digitali nella Pubblica Amministrazione (PA).** Il corso, **organizzato da Formez e promosso dal Dipartimento della funzione pubblica, è pensato in particolare per le persone che lavorano nella PA. 
+Dopo il grande numero di persone iscritte alla prima edizione, Formez apre le iscrizioni per la seconda edizione del corso online **“Qualità dei servizi digitali”**, un’iniziativa dedicata a tutte le persone interessate ad **accrescere la conoscenza e la consapevolezza sulla qualità dei servizi digitali nella Pubblica Amministrazione (PA).** Il corso, organizzato da Formez e promosso dal Dipartimento della funzione pubblica, è pensato in particolare per le persone che lavorano nella PA. 
 
 La seconda edizione avrà inizio il **23 maggio** e si concluderà il 28 giugno.
 
