@@ -22,14 +22,15 @@ const Chip = (
 	// styles = 'chip chip-simple' 
 	// 	+ `${size ? ' chip-'+size : ''}`
 		
-	if (label) {
-		children = label
-	}
+	// if (label) {
+	// 	children = label
+	// }
 
 	return (
-		<Link to={`/argomenti/${kebabCase(label)}/`} className={styles} /*target={blank ? '_blank' : undefined}*/>
-			<span className="chip-label">{children}</span>
-		</Link>
+			<Link to={`/argomenti/${kebabCase(label)}/`} className={styles} /*target={blank ? '_blank' : undefined}*/>
+				<span className="chip-label">{label}</span>
+				{children}
+			</Link>
 	)
 }
 
