@@ -1,0 +1,157 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata: 
+  template:
+    name: level3 # article?
+
+seo:
+  name: "Rispettare le Linee guida di design è sempre più facile grazie a Designers Italia” - Designers Italia"
+  description: "La sezione dedicata si aggiorna rendendo più veloce l’accesso alle risorse utili per applicare la normativa"
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /community/notizie/20230329-rispettare-le-linee-guida-di-design-e-sempre-più-facile-grazie-a-designers-italia/
+
+lastUpdate:
+  title: 'Ultimo aggiornamento:'
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../../" #xxx must direct to the archive soon
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Rispettare le Linee guida di design è sempre più facile grazie a Designers Italia"
+    subtitle: "La sezione dedicata si aggiorna rendendo più veloce l’accesso alle risorse utili per applicare la normativa"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+    share:
+      btnId: shareButton
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      chips:
+        - label: Linee guida di design
+          url: "#"
+          color: primary
+          size: lg
+        - label: Norme e riferimenti
+          url: "#"
+          color: primary
+          size: lg
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 29 marzo 2023
+
+  imageIcons:
+    image: /images/community/20230329-rispettare-le-linee-guida-di-design-e-sempre-più-facile-grazie-a-designers-italia-1920x923.png
+    background: light
+    alt: ""
+    
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Progettare interfacce è un atto di responsabilità, significa decidere continuamente chi includere, o escludere
+      # text: 
+      id: corpoNotizia
+      components:
+        - name: TextImageCta
+          # title: Titoletto interno
+          text: |
+            Designers Italia crea strumenti pratici per progettare servizi pubblici digitali di qualità. La nuova versione del sito, disponibile in anteprima, nasce proprio per renderla sempre più efficace. 
+
+            L’ultimo aggiornamento è tutto dedicato alla sezione “Norme e riferimenti”, che da oggi mostra** indicazioni e strumenti operativi** che rendono più facile applicare concretamente le **Linee guida di design**, la norma di riferimento che orienta la progettazione e la realizzazione di siti e servizi pubblici digitali. Questo aggiornamento risponde a un’esigenza manifestata dai rappresentanti delle diverse realtà territoriali durante il processo di approvazione delle linee guida stesse.
+
+            ## Cosa sono le Linee guida di design
+            Le Linee guida di design sono una norma emessa ai sensi del **Codice dell’amministrazione digitale (CAD)**, il testo unico che riunisce e organizza le norme riguardanti l'informatizzazione della Pubblica Amministrazione nei rapporti con i cittadini e le imprese: una vera e propria **stella polare** per chi progetta per la PA.
+
+            Sono composte da **8 requisiti**, ognuno focalizzato su un aspetto differente, dall’accessibilità, alla semplicità d’uso, l’applicazione delle licenze e il monitoraggio dei servizi.
+
+            Per rendere effettivo ognuno dei requisiti è necessario attuare una serie di **azioni** quando si realizzano o aggiornano siti e servizi digitali pubblici.
+
+            **Come metterle in pratica correttamente?** Ora ogni azione è corredata da** **riferimenti contestuali al Manuale operativo di design, agli articoli di approfondimento e alle risorse progettuali, come kit di design e riferimenti al design system, che ne rendono più facile l’applicazione per pubbliche amministrazioni, in-house e fornitori.
+
+        - name: TextImageCta
+          title: Lasciaci un feedback
+          headingLevel: 2
+          text: |
+            La sezione sarà arricchita nei prossimi mesi. Nel frattempo, potete lasciarci i vostri feedback attraverso il modulo presente in fondo a ogni pagina.
+
+          ctas:
+          - label: Vai alla sezione
+            url: "/norme-e-riferimenti/linee-guida-di-design/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true 
