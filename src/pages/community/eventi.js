@@ -36,6 +36,7 @@ export const pageQuery = graphql`
   query {
     allContent(
       filter: {metadata: {archive: {in: "eventi"}}}
+      sort: {order: DESC, fields: seo___pathname}
     ) {
       totalCount
       edges {
