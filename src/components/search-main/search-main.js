@@ -43,7 +43,6 @@ const SearchMain =({
      }
   `)
 
-  const searchLabelRef = useRef(null)
   const liveRegionRef = useRef(null)
   const firstRound = useRef(true)
   useEffect(() => {
@@ -54,8 +53,12 @@ const SearchMain =({
     if (liveRegionRef.current) {
       liveRegionRef.current.focus()
     }
-    if (searchLabelRef.current) {
-      searchLabelRef.current.className="active"
+  }, [storedInput])
+
+  const searchLabelRef = useRef(null)
+  useEffect(() => {
+    if (searchLabelRef.current && input) {
+      searchLabelRef.current.className = "active"
     }
   }, [storedInput])
 
