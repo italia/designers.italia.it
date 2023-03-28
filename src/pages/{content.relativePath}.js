@@ -299,12 +299,7 @@ export const query = graphql`
             text
             rounded
             dateInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            tags
             blank
             externalLink {
               label
@@ -329,12 +324,7 @@ export const query = graphql`
               label
               url
             }
-            chips {
-              label
-              url
-              color
-              size
-            }
+            tags
           }
         }
         highlightsLoop {
