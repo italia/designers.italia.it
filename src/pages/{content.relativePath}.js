@@ -545,7 +545,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            # tags
+            tags
             text
             dateInfo
           }
