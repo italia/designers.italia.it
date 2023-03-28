@@ -9,9 +9,9 @@ import { graphql } from "gatsby"
 
 const EventsArchive = ({ data }) => {
   const { edges, totalCount } = data.allContent
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } "Eventi"`
+  const tagHeader = `${totalCount} event${
+    totalCount === 1 ? "o" : "i"
+  }`
 
   const iconOpt = {
   icon: 'sprites.svg#it-file',
