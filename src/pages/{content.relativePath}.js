@@ -116,12 +116,6 @@ export const query = graphql`
               color
             }
             tags
-            chips {
-              label
-              url
-              color
-              size
-            }
             dropdown {
               btnId
               button {
@@ -466,12 +460,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            # tags
             titleSmall
             tag {
               label
@@ -556,12 +545,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            # tags
             text
             dateInfo
           }
@@ -662,12 +646,7 @@ export const query = graphql`
             fullHeight
             url
             text
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            tags
           }
         }
         sectionsEditorial2 {
