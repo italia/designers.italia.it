@@ -11,6 +11,7 @@ const Kangaroo = ({
   tagsLabel,
   icon,
   chips,
+  tags,
   dropdown,
   color,
   navposition,
@@ -60,11 +61,11 @@ const Kangaroo = ({
               </div>
             }
             {
-              chips &&
-              <div className="chips  ms-md-3 mb-2 mb-lg-0">
-                {chips.map((chip,index)=>{
+              tags &&
+              <div className="chips ms-md-3 mb-2 mb-lg-0">
+                {tags.map((tag,index)=>{
                   return(
-                    <Chip key={'chip-' + index} {...chip}></Chip>
+                    <Chip key={'chip-' + index} label={tag} size="lg" color="primary"></Chip>
                   )
                 })}
               </div>
