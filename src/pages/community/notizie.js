@@ -26,7 +26,7 @@ const NewsArchive = ({ data }) => {
       <div className="it-list-wrapper">
         <ul className="it-list mt-4 mt-md-3">
           {edges.map(({ node }) => {
-            const {id} = node.id
+            const {id} = node
             const {pathname} = node.seo
             const {title} = node.components?.hero
             const {description} = node.seo
