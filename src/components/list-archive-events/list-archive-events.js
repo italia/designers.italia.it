@@ -57,7 +57,7 @@ const ListArchiveEvents = ({
   const tagHeader = `C${totalCount === 1 ? "'è" : "i sono"} ${totalCount} event${totalCount === 1 ? "o" : "i"} in archivio:`
 
   const iconOpt = {
-    icon: 'sprites.svg#it-file',
+    icon: 'sprites.svg#it-calendar',
     size: 'sm',
     color: "primary",
     addonClasses: 'mt-1 flex-shrink-0 me-1 me-md-3'
