@@ -28,7 +28,7 @@ const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
 
   return (
     <div id="app">
-      <HeaderPre data={HeaderData.headerPre}/>
+      <HeaderPre data={HeaderData.headerPre} location={location}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderSlim data={HeaderData.headerSlim}/>

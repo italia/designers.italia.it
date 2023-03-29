@@ -23,9 +23,9 @@ import skipLinksData from "../data/skiplinks.yaml"
 import SearchMain from "../components/search-main/search-main"
 
 const Template = ({Pagedata, pageContext, location, lastModified}) => {
-	return (
+  return (
     <div id="app">
-      <HeaderPre data={HeaderData.headerPre}/>
+      <HeaderPre data={HeaderData.headerPre} location={location}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderSlim data={HeaderData.headerSlim}/>

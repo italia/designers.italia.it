@@ -30,9 +30,9 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
     throw new Error('json key is required for design-system-component!');
   }
   const variantMock = require(`../data/components_json/${Pagedata.metadata.json}`)
-	return (
+  return (
     <div id="app">
-      <HeaderPre data={HeaderData.headerPre}/>
+      <HeaderPre data={HeaderData.headerPre} location={location}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderSlim data={HeaderData.headerSlim}/>
