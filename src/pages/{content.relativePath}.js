@@ -2,6 +2,7 @@ import * as React from "react"
 import { graphql } from "gatsby"
 
 import TemplateBase from "../templates/base"
+import TemplateArchiveAllTags from "../templates/archive-all-tags"
 import TemplateArchiveNews from "../templates/archive-news"
 import TemplateArchiveEvents from "../templates/archive-events"
 import TemplateDSComponent from "../templates/design-system-component"
@@ -17,6 +18,7 @@ import { Seo } from "../components/seo/seo"
 
 const TEMPLATES = {
   'archive-news' : TemplateArchiveNews,
+  'archive-all-tags' : TemplateArchiveAllTags,
   'archive-events' : TemplateArchiveEvents,
   'community' : TemplateLV1Community,
   'level1' : TemplateLV1,
