@@ -5,6 +5,7 @@ import TemplateBase from "../templates/base"
 import TemplateDSComponent from "../templates/design-system-component"
 import TemplateDSIndex from "../templates/design-system-index"
 import TemplateHome from "../templates/home"
+import TemplateSearchResults from "../templates/search-results"
 import TemplateLV1Community from "../templates/level-1-community"
 import TemplateLV1 from "../templates/level-1"
 import TemplateLV2 from "../templates/level-2"
@@ -20,6 +21,7 @@ const TEMPLATES = {
   'level4' : TemplateLV4,
   'base' : TemplateBase,
   'home' : TemplateHome,
+  'search-results' : TemplateSearchResults,
   'design-system-index' : TemplateDSIndex,
   'design-system-component' : TemplateDSComponent
 }
@@ -396,6 +398,8 @@ export const query = graphql`
         }
         searchMain {
           disabled
+          isResultsPage
+          useSuggestionEngine
           background
           title
           text
@@ -403,6 +407,7 @@ export const query = graphql`
           label
           inputId
           inputName
+          howMany
           button {
             label
             # type
@@ -418,7 +423,6 @@ export const query = graphql`
             title
             items {
               label
-              url
             }
           }
         }

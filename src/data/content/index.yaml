@@ -86,13 +86,16 @@ components:
 
   searchMain:
     disabled: true
+    isResultsPage: false
+    useSuggestionEngine: true
     background: light
     title: Da dove vuoi iniziare?
-    text: "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
+    text: "" # "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
     formId: searchForm
     label: Cerca
     inputId: searchInput
     inputName: search
+    howMany: 5
     button:
       label: Cerca
       type: #submit
@@ -105,17 +108,11 @@ components:
     suggest:
       title: "Ti suggeriamo:"
       items:
-        - label: voglio scoprire di cosa hanno bisogno gli utenti
-          url: "#"
-        - label: ho bisogno del kit UI
-          url: ""
-        - label: test di usabilità
-          url: "#"
-        - label: rispettare le Linee guida di design
-          url: "#"
+        - label: bisogni utenti
+        - label: test usabilità
+        - label: rispettare
         - label: accessibilità
-          url: "#"
-
+        - label: UI Kit
 
   sectionIntro:
     title: In evidenza
@@ -142,45 +139,45 @@ components:
       id: HL2a
       specular: true
       img: /images/home/in-evidenza/202212-designers-home.png
-      alt: ""
+      alt: "Homepage di Designers Italia"
       headingLevel: 3
       background: medium
+      padBottom: false
       buttons:
         - label: Scopri come fare
           btnStyle: primary
           url: "/community/notizie/20221220-ecco-l-anteprima-del-nuovo-designers-italia/"
           addonStyle: mb-3 mb-sm-0
-    - title: Accessibilità e inclusività dei servizi pubblici digitali protagoniste al Wired Next Fest
-      subtitle: Ecco il racconto di cosa abbiamo fatto e imparato a Milano lo scorso 7 e 8 ottobre
+    - title: "Raccontaci cosa ne pensi di Designers Italia e Developers Italia"
+      subtitle: "Anche quest’anno lanciamo il questionario per le persone che progettano, sviluppano e lavorano nella Pubblica Amministrazione"
       big: true
       id: HL2b
       specular: false
+      padBottom: false
+      img: /images/home/in-evidenza/20230327-raccontaci-cosa-pensi-di-designers-italia-e-developers-italia-1920x1280.png
+      alt: ""
+      headingLevel: 3
+      background: light
+      buttons:
+        - label: "Scopri come dire la tua"
+          btnStyle: primary
+          url: "/community/notizie/20230327-raccontaci-cosa-ne-pensi-di-designers-italia-e-developers-italia"
+          addonStyle: mb-3 mb-sm-0
+    - title: "Nome in codice: ___ Italia"
+      subtitle: Partecipa al sondaggio per definire il nuovo nome del design system del Paese
+      big: true
+      id: HL2c
+      specular: true
       padBottom: true # < last hightlight (or only hightlight in home page mut have this set to true)
-      img: /images/home/in-evidenza/202212-wnf-home.jpg
-      alt: "Conferenze e workshop"
+      img: /images/home/in-evidenza/20230314-nome-in-codice-italia-home.jpg
+      alt: ""
       headingLevel: 3
       background: dark
       buttons:
-        - label: "Scopri com'è andata"
+        - label: "Scopri come partecipare"
           btnStyle: primary
-          url: "/community/notizie/20221017-accessibilita-e-inclusivita-dei-servizi-pubblici-digitali-protagoniste-al-wired-next-fest/"
+          url: "/community/notizie/20230314-nome-in-codice-italia/"
           addonStyle: mb-3 mb-sm-0
-    # - title: Design pubblico e aperto
-    #   subtitle: Designers Italia ha partecipato alla Milano Digital Week dando vita a una tavola rotonda all'ADI Design Museum.
-    #   big: true
-    #   id: HL2b
-    #   specular: false
-    #   padBottom: true # < last hightlight (or only hightlight in home page mut have this set to true)
-    #   img: /images/home/in-evidenza/evidenza-mdw-10-2022.jpg
-    #   alt: "Luci rosse e pubblico durante l'evento a Milano"
-    #   headingLevel: 3
-    #   background: dark
-    #   buttons:
-    #     - label: Scopri com'è andata a Milano
-    #       btnStyle: primary
-    #       url: "#"
-    #       addonStyle: mb-3 mb-sm-0
-
 
   highlightCards:
     id: strumenti
@@ -335,26 +332,25 @@ components:
           url: "#"
           blank: false
 
-
-    - title: Benvenuto, Kit Privacy
+    - title: Aperte le iscrizioni della seconda edizione del corso “Qualità dei servizi digitali”
       headingLevel: 3
       customCol: col-lg-4
-      text: Rispetta la privacy delle persone quando realizzi un servizio digitale.
-      # img: /images/400x300.png
+      text: Un’occasione per imparare a progettare e realizzare servizi pubblici di qualità.
+      img: /images/community/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali-1400x723.png
       # alt: descrizione immagine
       imgRatio: 21x9
       # imgPlaceholder: true
       fullHeight: false
       rounded: true
-      url: "/community/notizie/20221020-benvenuto-kit-privacy/"
-      dateInfo: 20 ottobre 2022
+      url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali"
+      dateInfo: 28 marzo 2023
       chips:
         - color: secondary
-          label: Privacy by design
+          label: Servizi pubblici digitali
           url: "#"
           blank: false
         - color: secondary
-          label: Privacy by default
+          label: Formazione
           url: "#"
           blank: false
 

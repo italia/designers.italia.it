@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Varianti di dimensione</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<!-- Small modal -->
+<button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target=".bd-example-modal-sm">Modale piccola</button>
+
+<div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5 no_toc" id="mySmallModalLabel">Modale piccola</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale"></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">...</div>
+    </div>
+  </div>
+</div>
+
+<!-- Large modal -->
+<button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target=".bd-example-modal-lg">Modale grande</button>
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5 no_toc" id="myLargeModalLabel">Modale grande</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale"></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">...</div>
+    </div>
+  </div>
+</div>
+
+<!-- Extra Large modal -->
+<button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target=".bd-example-modal-xl">Modale molto grande</button>
+
+<div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5 no_toc" id="myExtraLargeModalLabel">Modale molto grande</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi finestra modale"></button>
+      </div>
+      <div class="modal-body">...</div>
+      <div class="modal-footer">...</div>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

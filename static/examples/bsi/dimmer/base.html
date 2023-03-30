@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Base</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<div class="toggles col-md-6 col-lg-4">
+  <label for="toggleDimmer1">
+    Attiva Dimmer 1
+    <input type="checkbox" id="toggleDimmer1" data-bs-toggle="dimmer" data-bs-target="#dimmer1" checked>
+    <span class="lever"></span>
+  </label>
+</div>
+
+<div class="row dimmable">
+  <div class="dimmer fade show" id="dimmer1">
+    <div class="dimmer-inner">
+      <div class="dimmer-icon">
+        <svg class="icon icon-xl"><use href="/dist/svg/sprites.svg#it-unlocked"></use></svg>
+      </div>
+      <p>Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.</p>
+    </div>
+  </div>
+  <div class="col-12 col-lg-4">
+    <!--start card-->
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
+          <p class="card-text">Praesent volutpat in dolor in sollicitudin. Donec mollis varius condimentum. Nunc viverra, metus at viverra consectetur, magna orci posuere ipsum, et bibendum est urna sed sem. Fusce libero neque, elementum volutpat tincidunt id, egestas vitae nisi. Nulla vulputate luctus sem, eu maximus lacus faucibus eget. Fusce tristique enim augue, sed suscipit lorem bibendum vel. Donec vehicula vehicula nibh non suscipit.</p>
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+  </div>
+  <div class="col-12 col-lg-4 d-none d-lg-block">
+    <!--start card-->
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
+          <p class="card-text">Praesent volutpat in dolor in sollicitudin. Donec mollis varius condimentum. Nunc viverra, metus at viverra consectetur, magna orci posuere ipsum, et bibendum est urna sed sem. Fusce libero neque, elementum volutpat tincidunt id, egestas vitae nisi. Nulla vulputate luctus sem, eu maximus lacus faucibus eget. Fusce tristique enim augue, sed suscipit lorem bibendum vel. Donec vehicula vehicula nibh non suscipit.</p>
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+  </div>
+  <div class="col-12 col-lg-4 d-none d-lg-block">
+    <!--start card-->
+    <div class="card-wrapper">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor…</h5>
+          <p class="card-text">Praesent volutpat in dolor in sollicitudin. Donec mollis varius condimentum. Nunc viverra, metus at viverra consectetur, magna orci posuere ipsum, et bibendum est urna sed sem. Fusce libero neque, elementum volutpat tincidunt id, egestas vitae nisi. Nulla vulputate luctus sem, eu maximus lacus faucibus eget. Fusce tristique enim augue, sed suscipit lorem bibendum vel. Donec vehicula vehicula nibh non suscipit.</p>
+        </div>
+      </div>
+    </div>
+    <!--end card-->
+  </div>
+</div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

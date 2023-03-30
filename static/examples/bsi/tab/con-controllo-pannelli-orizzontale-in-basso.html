@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Con controllo pannelli, orizzontale in basso</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<div class="d-flex flex-column-reverse">
+  <ul class="nav nav-tabs" id="pos-hr" role="tablist">
+    <li class="nav-item"><a class="nav-link active" id="pos-hr1-tab" data-bs-toggle="tab" href="#pos-hrtab1" role="tab" aria-controls="pos-hrtab1" aria-selected="true">Tab 1</a></li>
+    <li class="nav-item"><a class="nav-link" id="pos-hr2-tab" data-bs-toggle="tab" href="#pos-hrtab2" role="tab" aria-controls="pos-hrtab2" aria-selected="false">Tab 2</a></li>
+    <li class="nav-item"><a class="nav-link" id="pos-hr3-tab" data-bs-toggle="tab" href="#pos-hrtab3" role="tab" aria-controls="pos-hrtab3" aria-selected="false">Tab 3</a></li>
+    <li class="nav-item"><a class="nav-link disabled" id="pos-hr4-tab" data-bs-toggle="tab" href="#pos-hrtab4" role="tab" aria-controls="pos-hrtab4" aria-selected="false" aria-disabled="true"  tabindex="-1">Tab 4 Disabilitato</a></li>
+  </ul>
+  <div class="tab-content" id="pos-hrContent">
+    <div class="tab-pane p-4 fade show active" id="pos-hrtab1" role="tabpanel" aria-labelledby="pos-hr1-tab">Contenuto 1</div>
+    <div class="tab-pane p-4 fade" id="pos-hrtab2" role="tabpanel" aria-labelledby="pos-hr2-tab">Contenuto 2</div>
+    <div class="tab-pane p-4 fade" id="pos-hrtab3" role="tabpanel" aria-labelledby="pos-hr3-tab">Contenuto 3</div>
+    <div class="tab-pane p-4 fade" id="pos-hrtab4" role="tabpanel" aria-labelledby="pos-hr3-tab">Contenuto 4 (non raggiungibile, il tab relativo è disabilitato)</div>
+  </div>
+</div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

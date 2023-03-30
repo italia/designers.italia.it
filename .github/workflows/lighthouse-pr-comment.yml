@@ -1,0 +1,26 @@
+# This is needed by GitHub limitations on PRs from forks,
+# replace it when they resolve the issue with a more
+# ergonomic system.
+on:
+  workflow_run:
+    workflows: [lighthouse]
+    types: [completed]
+
+jobs:
+  lighthouse-pr-comment:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: lighthouse-pr-comment
+
+      - id: pr_number
+        run: |
+          export PR_NUM=$(ls lighthouse-pr-comment-*.txt | sed -n 's/lighthouse-pr-comment-\(.*\).txt/\1/p')
+          echo "{pr_num}={$PR_NUM}" >> $GITHUB_OUTPUT
+
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          number: ${{ steps.pr_number.outputs.pr_num }}
+          path: lighthouse-pr-comment-${{ steps.pr_number.outputs.pr_num }}.txt
