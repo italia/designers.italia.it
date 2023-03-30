@@ -87,6 +87,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-catch-links`,
+      // options: {
+      //   excludePattern: /(excluded-link|external)/,
+      // },
+    },
+    {
       resolve: "gatsby-plugin-local-search",
       options: {
         // A unique name for the search index. This should be descriptive of
