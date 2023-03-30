@@ -53,7 +53,7 @@ const Kangaroo = ({
               <NavPosition {...otherInfo}></NavPosition>
             </div>
           }
-          {(tagsLabel && tags.length > 0) &&
+          {(tagsLabel && tags) && (tags.length > 0) &&
             <div className="pills-wrapper d-md-flex align-items-start">
               <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
                 <Icon {...icon} addonClasses="me-3"></Icon>
