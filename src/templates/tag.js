@@ -3,11 +3,6 @@ import * as React from "react"
 import "../scss/styles.scss"
 import "../js/globals"
 
-import Link from "../components/link/link"
-import ListItem from "../components/list-item/list-item"
-import Tag from "../components/tag/tag"
-import { graphql } from "gatsby"
-
 import Skiplinks from "../components/skiplinks/skiplinks"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
@@ -27,6 +22,11 @@ import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import TagPageData from "../data/tag.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
+
+import Link from "../components/link/link"
+import ListItem from "../components/list-item/list-item"
+import Tag from "../components/tag/tag"
+import { graphql } from "gatsby"
 
 const Tags = ({ children, pageContext, location, data }) => {
   const lastModified = data.content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
