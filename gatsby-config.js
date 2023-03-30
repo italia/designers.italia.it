@@ -78,18 +78,12 @@ module.exports = {
     {
       resolve: "gatsby-plugin-matomo",
       options: {
-        siteId: "1",
-        matomoUrl: `https://designers-italia.matomo.cloud/`,
-        siteUrl: "https://prossima.designers.italia.it",
+        siteId: process.env.MATOMO_SITE_ID,
+        matomoUrl: "https://ingestion.webanalytics.italia.it/",
+        siteUrl: process.env.MATOMO_SITE_URL,
         matomoPhpScript: "matomo.php",
         matomoJsScript: "matomo.js",
         enableJSErrorTracking: true,
-        additionalTrackers: [
-          {
-            siteId: `eO35WAwqon`,
-            trackerUrl: `https://ingestion.webanalytics.italia.it/matomo.php`,
-          },
-        ],
       },
     },
     {
@@ -111,12 +105,12 @@ module.exports = {
           profile: "score",
           charset: "latin:advanced",
           // encode: "extra",
-          tokenize: "strict", // < strict = full word (better performance) | forward or reverse partials... 
+          tokenize: "strict", // < strict = full word (better performance) | forward or reverse partials...
           threshold: 11,
           resolution: 22,
           depth: 2,
           filter: [
-            // XXX we need a stemmer also... 
+            // XXX we need a stemmer also...
             // array stopwords italian > https://www.ranks.nl/stopwords/italian
             "a",
             "adesso",
@@ -166,7 +160,7 @@ module.exports = {
             "hanno",
             "ho",
             "il",
-            "indietro", 
+            "indietro",
             "invece",
             "io",
             "la",
@@ -215,7 +209,7 @@ module.exports = {
             "sara",
             "secondo",
             "sei",
-            "sembra",	
+            "sembra",
             "sembrava",
             "senza",
             "sette",
@@ -334,13 +328,13 @@ module.exports = {
               title: `${edge.node.components?.hero?.title}`,
               description: `${edge.node.seo?.description}`,
               tag: `${edge.node.components?.hero?.tag?.label}`,
-              body:  `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}` 
-                + ' ' + `${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}` 
+              body:  `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}`
+                + ' ' + `${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}`
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.text).join(' ')
-                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c => c.text)).join(' ') 
+                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c => c.text)).join(' ')
                 + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.text)).join(' '),
             }
           }),
