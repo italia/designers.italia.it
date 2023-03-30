@@ -19,19 +19,19 @@ const Kangaroo = ({
   otherInfo,
   noPadding,
   eventInfo,
-}) =>{
+}) => {
 
-  let styles= "kangaroo px-3"
-  + `${noPadding ? ' ' : ' px-lg-5'}` 
-  
-	let colorStyle = `${color ? ' text-'+color : ''}`
+  let styles = "kangaroo px-3"
+    + `${noPadding ? ' ' : ' px-lg-5'}`
 
-  let tagsLabelStyle="text-uppercase small "+colorStyle
+  let colorStyle = `${color ? ' text-' + color : ''}`
 
-	return(
-		<section className={styles} aria-labelledby={id}>
-      { titleSr && <h2 className="visually-hidden" id={id}>{titleSr}</h2>}
-			<div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-top">
+  let tagsLabelStyle = "text-uppercase small " + colorStyle
+
+  return (
+    <section className={styles} aria-labelledby={id}>
+      {titleSr && <h2 className="visually-hidden" id={id}>{titleSr}</h2>}
+      <div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-top">
         <div className="left-zone">
           {navposition &&
             <div className="navposition-wrapper">
@@ -53,36 +53,33 @@ const Kangaroo = ({
               <NavPosition {...otherInfo}></NavPosition>
             </div>
           }
-          <div className="pills-wrapper d-md-flex align-items-start">
-            {tagsLabel &&
+          {(tagsLabel && tags.length > 0) &&
+            <div className="pills-wrapper d-md-flex align-items-start">
               <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
                 <Icon {...icon} addonClasses="me-3"></Icon>
                 <span className={tagsLabelStyle}><strong>{tagsLabel}</strong></span>
               </div>
-            }
-            {
-              tags &&
               <div className="chips ms-md-3 mb-2 mb-lg-0">
-                {tags.map((tag,index)=>{
-                  return(
+                {tags.map((tag, index) => {
+                  return (
                     <Chip key={'chip-' + index} label={tag} size="lg" color="primary"></Chip>
                   )
                 })}
               </div>
-            }
-          </div>
-
-        </div>
-          {dropdown &&
-            <div className="right-zone pt-1">
-              <div className="dropdwon-zone mt-4 mt-lg-0">
-                <Dropdown {...dropdown}></Dropdown>
-              </div>
             </div>
           }
-			</div>
-		</section>
-	)
+
+        </div>
+        {dropdown &&
+          <div className="right-zone pt-1">
+            <div className="dropdwon-zone mt-4 mt-lg-0">
+              <Dropdown {...dropdown}></Dropdown>
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+  )
 }
 
 export default Kangaroo
