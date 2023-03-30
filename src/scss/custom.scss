@@ -1,15 +1,34 @@
 $enable-smooth-scroll: false; // xxx forced to disable default BI behaviour xxx testing
+
 :root {
   scroll-behavior: auto !important;
 }
 
 p {
-  max-width:75ch;
+  max-width: 75ch;
 }
 
 div.chips-list-wrapper {
   ul.chips-list {
     list-style-type: none;
     padding-left: 0;
+  }
+}
+
+.it-footer-main {
+  .chip.chip-primary {
+    border-color: var(--kangaroo-negative-element-color);
+    &:active {
+      border-color: var(--kangaroo-negative-element-color);
+    }
+    &:hover {
+      background-color: var(--color-primary-active);
+    }
+    .chip-label {
+      color: var(--kangaroo-negative-element-color)
+    }
+  }
+  .btn-dropdown {
+    color: var(--kangaroo-negative-element-color)
   }
 }
