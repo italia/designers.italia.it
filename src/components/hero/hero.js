@@ -92,7 +92,7 @@ const Hero = ({
             <div className="col-12 g-0">
               <div className={breadcrumbsStyle}>
                 {crumbLabel ? (
-                  <Breadcrumbs pageContext={pageContext} crumbLabel={crumbLabel} title={name} ></Breadcrumbs> /* XXX better */
+                  <Breadcrumbs pageContext={pageContext} crumbLabel={crumbLabel} title={name} ></Breadcrumbs> 
                 ) : (
                   <Breadcrumbs pageContext={pageContext} title={name} ></Breadcrumbs>
                 )}
