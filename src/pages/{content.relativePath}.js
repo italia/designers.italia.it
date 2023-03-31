@@ -14,6 +14,7 @@ import TemplateLV1 from "../templates/level-1"
 import TemplateLV2 from "../templates/level-2"
 import TemplateLV3 from "../templates/level-3"
 import TemplateLV4 from "../templates/level-4"
+
 import { Seo } from "../components/seo/seo"
 
 const TEMPLATES = {

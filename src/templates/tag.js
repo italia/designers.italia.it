@@ -28,6 +28,8 @@ import ListItem from "../components/list-item/list-item"
 import Tag from "../components/tag/tag"
 import { graphql } from "gatsby"
 
+import { Seo } from "../components/seo/seo"
+
 const Tags = ({ children, pageContext, location, data }) => {
   const lastModified = data.content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
 
@@ -59,7 +61,7 @@ const Tags = ({ children, pageContext, location, data }) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        <Hero {...TagPageData.components.hero} title={`Argomento: "${tag}"`} pageContext={pageContext} {...TagPageData.seo}></Hero>
+        <Hero {...TagPageData.components.hero} title={`Argomento: "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero>
         <section className={styles} aria-describedby="archive-list-title">
           <div className={container}>
             <div className={row}>
@@ -173,3 +175,19 @@ export const pageQuery = graphql`
     }
   }
 `
+
+
+export const Head = ({ pageContext, data: { content } }) => {
+  const { tag } = pageContext
+  return ( 
+  <Seo
+    title = {`Argomento: "${tag}" - Designers Italia`}
+    description = "Tutte le pagine sull'argomento per la trasformazione dei servizi pubblici digitali dal progetto Designers Italia"
+    // image = {content.seo.image}
+    // twitterImage = {content.seo.twitterImage}
+    pathname = {`/argomenti/"${tag}"/`}
+    // canonical = {content.seo.canonical}
+  >
+  </Seo>
+  )
+}

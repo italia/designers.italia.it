@@ -7,6 +7,7 @@ import './breadcrumbs.scss'
 
 const Breadcrumbs = ({ 
   pageContext, 
+  crumbLabel,
 }) => {
 
   const {
@@ -14,12 +15,10 @@ const Breadcrumbs = ({
   } = pageContext
 
 	return (
-    <Breadcrumb
-      // location={location}
-      crumbs={crumbs}
-      crumbSeparator=" > "
-    />
-
+    <div>
+    {!crumbLabel && <Breadcrumb crumbs={crumbs} crumbSeparator=" > "/>}
+    {crumbLabel && <Breadcrumb crumbs={crumbs} crumbLabel={crumbLabel} crumbSeparator=" > "/>}
+    </div>
 	)
 }
 
