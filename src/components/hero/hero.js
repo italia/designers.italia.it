@@ -9,68 +9,68 @@ import ShareButton from "../share-button/share-button"
 import Tag from "../tag/tag"
 import Kangaroo from "../kangaroo/kangaroo"
 
-const Hero =({
+const Hero = ({
   pageContext,
   name,
   crumbLabel,
   centered,
   column,
   specialKangarooComponent,
-	// breadcrumbs,
+  // breadcrumbs,
   reversedMobile,
-	tag,
-	background,
-	title,
+  tag,
+  background,
+  title,
   titleTag,
   headingLevel,
-	subtitle,
-	pretext,
-	text,
-	img,
+  subtitle,
+  pretext,
+  text,
+  img,
   alt,
   imgRatio,
-	bgImg,
+  bgImg,
   bgImgAlt,
-	kangaroo,
+  kangaroo,
   noBorder
-})=>{
+}) => {
   let styles = 'hero'
-  + `${background ? ' bg-'+background : ''}`
-  + `${column ? ' column-hero' : ''}`
+    + `${background ? ' bg-' + background : ''}`
+    + `${column ? ' column-hero' : ''}`
   //heading level
-	let HLevel
+  let HLevel
   let SubtitleLevel
-	if (headingLevel) {
-		HLevel = `h${headingLevel}`;
-    SubtitleLevel = `h${headingLevel+1}`
-	} else {
-		HLevel = `h1`
+  if (headingLevel) {
+    HLevel = `h${headingLevel}`;
+    SubtitleLevel = `h${headingLevel + 1}`
+  } else {
+    HLevel = `h1`
     SubtitleLevel = `p`
-	}
+  }
 
-  let textStyle= "texts py-3"
-   + `${centered ? ' pb-lg-4' : ' pb-lg-5'}`
+  let textStyle = "texts py-3"
+    + `${centered ? ' pb-lg-4' : ' pb-lg-5'}`
 
   let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3 rounded'
-		+ `${imgRatio ? ' ratio-'+imgRatio : ''}`
+    + `${imgRatio ? ' ratio-' + imgRatio : ''}`
 
   let imgResponsiveStyle = 'rounded'
 
   let rowStyle = 'row g-0'
-		+ `${centered ? ' justify-content-lg-center' : ''}`
+    + `${centered ? ' justify-content-lg-center' : ''}`
 
   let columnStyle = ' col-12 g-0 px-3' // col-md-10 offset-md-1'
-		+ `${centered ? ' col-lg-7 offset-lg-0' : ' ps-lg-5 pe-lg-0 col-lg-7'}`
+    + `${centered ? ' col-lg-7 offset-lg-0' : ' ps-lg-5 pe-lg-0 col-lg-7'}`
 
   let breadcrumbsStyle = 'hero-top px-3 pt-4'
     + `${column ? ' ' : ' px-lg-5 '}`
 
   let kangarooZoneStyle = 'kangaroo-zone'
-  + `${noBorder ? ' no-border' : ''}`
-  + `${specialKangarooComponent ? ' pb-4 pb-md-5 pb-lg-0' : ''}`
+    + `${noBorder ? ' no-border' : ''}`
+    + `${specialKangarooComponent ? ' pb-4 pb-md-5 pb-lg-0' : ''}`
 
   let kangarooColumnStyle = 'col-12 g-0' //col-12 col-md-10 offset-md-1'
-  + `${centered ? ' col-lg-7 offset-lg-0 ' : ''}`
+    + `${centered ? ' col-lg-7 offset-lg-0 ' : ''}`
 
   let rightColumnStyle = "  col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4"
 
@@ -83,16 +83,19 @@ const Hero =({
   const shareColor = background === 'light' ? 'primary' : 'white'
   const url = pageContext.breadcrumb.location
 
-	return(
-		<div className={styles}>
+  return (
+    <div className={styles}>
       <div className="hero-content">
         {/* {bgImg && <div className="bg-image"><ImageResponsive src={bgImg} alt={bgImgAlt}/></div>} */}
         <div className="container-xxl">
           <div className="row">
             <div className="col-12 g-0">
               <div className={breadcrumbsStyle}>
-                {!crumbLabel && <Breadcrumbs pageContext={pageContext} title={name} ></Breadcrumbs>}
-                {crumbLabel && <Breadcrumbs pageContext={pageContext} crumbLabel={crumbLabel} title={name} ></Breadcrumbs> /* XXX better */} 
+                {crumbLabel ? (
+                  <Breadcrumbs pageContext={pageContext} crumbLabel={crumbLabel} title={name} ></Breadcrumbs> /* XXX better */
+                ) : (
+                  <Breadcrumbs pageContext={pageContext} title={name} ></Breadcrumbs>
+                )}
               </div>
               <div className="hero-main">
                 <div className={rowStyle}>
@@ -105,13 +108,13 @@ const Hero =({
                       <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
                       {tag && <Tag {...tag}></Tag>}
                       {pretext &&
-                      <div className="bottom-text">
-                        <div className="pre-text">
-                          {pretext.icon && <Icon {...pretext.icon} addonClasses="me-2"></Icon>}
-                          <span className="text-uppercase">{pretext.text}</span>
+                        <div className="bottom-text">
+                          <div className="pre-text">
+                            {pretext.icon && <Icon {...pretext.icon} addonClasses="me-2"></Icon>}
+                            <span className="text-uppercase">{pretext.text}</span>
+                          </div>
+                          {text && <ReactMarkdown>{text}</ReactMarkdown>}
                         </div>
-                        {text && <ReactMarkdown>{text}</ReactMarkdown>}
-                      </div>
                       }
                     </div>
                     {centered && <ShareButton title={title} url={url} color={shareColor} />}
@@ -132,8 +135,8 @@ const Hero =({
                   {!centered &&
                     // <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
                     <div className={rightColumnStyle}>
-                      { img && <div className={imgStyle}>
-                        <ImageResponsive src={img} alt={alt} imgClassName={imgResponsiveStyle}/>
+                      {img && <div className={imgStyle}>
+                        <ImageResponsive src={img} alt={alt} imgClassName={imgResponsiveStyle} />
                       </div>}
                       {<ShareButton title={title} url={url} color={shareColor} />}
                     </div>
@@ -155,8 +158,8 @@ const Hero =({
           </div>
         </div>
       }
-		</div>
-	)
+    </div>
+  )
 }
 
 export default Hero
