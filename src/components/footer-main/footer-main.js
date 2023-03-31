@@ -30,10 +30,9 @@ const FooterMain = ({
   }
   `)
 
-  // sort most important tags, get a fixed numbers of it, let space for the View all link on the last column
-  data.allContent.group.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount));
-  const footerTags = data.allContent.group.slice(0, tagsNo)
-  footerTags.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount));
+  const clonedData = JSON.parse(JSON.stringify(data)) /// XXX we need to review for performance this sort and slice!
+  clonedData.allContent.group.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount)); // sort by totalCount of each tag
+  const footerTags = clonedData.allContent.group.slice(0, tagsNo) // show just a fixed no. of them on the footer
 
   return (
     <div className="it-footer-main py-5" id={id}>
