@@ -37,7 +37,7 @@ const ListArchiveAllTags = ({
         <div className={row}>
           <div className="col-12 g-0">
             <div className="px-3 px-lg-0 px-lg-5">
-              <h2 className="border-bottom pb-4" id="archive-list-title">Tutti gli argomenti</h2>
+              <h2 className="border-bottom pb-4" id="archive-list-title">Esplora gli argomenti</h2>
               <div className="chips-list-wrapper">
                 <ul className="chips-list chips mt-4 mt-md-3 d-flex flex-wrap">
                   {data.allContent.group.map(tag => (

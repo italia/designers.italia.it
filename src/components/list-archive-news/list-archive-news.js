@@ -54,7 +54,8 @@ const ListArchiveNews = ({
   `)
 
   const { edges, totalCount } = data.allContent
-  const tagHeader = `C${totalCount === 1 ? "'è" : "i sono"} ${totalCount} notizi${totalCount === 1 ? "a" : "e"} in archivio:`
+  const tagHeader = 'Esplora l’archivio'
+  // const tagHeader = `C${totalCount === 1 ? "'è" : "i sono"} ${totalCount} notizi${totalCount === 1 ? "a" : "e"} in archivio:`
 
   const iconOpt = {
     icon: 'sprites.svg#it-file',

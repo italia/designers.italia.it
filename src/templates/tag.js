@@ -35,7 +35,8 @@ const Tags = ({ children, pageContext, location, data }) => {
 
   const { tag } = pageContext
   const { edges, totalCount } = data.allContentByTag
-  const tagHeader = `C${totalCount === 1 ? "'è" : "i sono"} ${totalCount} pagin${totalCount === 1 ? "a" : "e"} su questo argomento`
+  const tagHeader = `Esplora ${totalCount} pagin${totalCount === 1 ? "a" : "e"} su questo argomento`
+  // const tagHeader = `C${totalCount === 1 ? "'è" : "i sono"} ${totalCount} pagin${totalCount === 1 ? "a" : "e"} su questo argomento`
 
   const iconOpt = {
     icon: 'sprites.svg#it-file',
@@ -61,7 +62,8 @@ const Tags = ({ children, pageContext, location, data }) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        <Hero {...TagPageData.components.hero} title={`Argomento: "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero>
+        <Hero {...TagPageData.components.hero} title={tag} subtitle={`Tutti i contenuti relativi all'argomento "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero>
+        {/* <Hero {...TagPageData.components.hero} title={`Argomento: "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero> */}
         <section className={styles} aria-describedby="archive-list-title">
           <div className={container}>
             <div className={row}>
@@ -181,8 +183,9 @@ export const Head = ({ pageContext, data: { content } }) => {
   const { tag } = pageContext
   return ( 
   <Seo
-    title = {`Argomento: "${tag}" - Designers Italia`}
-    description = "Tutte le pagine sull'argomento per la trasformazione dei servizi pubblici digitali dal progetto Designers Italia"
+    // title = {`Argomento: "${tag}" - Designers Italia`}
+    title = {`${tag} - Designers Italia`}
+    description = {`Tutti i contenuti relativi all'argomento "${tag}"`}
     // image = {content.seo.image}
     // twitterImage = {content.seo.twitterImage}
     pathname = {`/argomenti/"${tag}"/`}
