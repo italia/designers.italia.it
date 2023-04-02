@@ -54,7 +54,6 @@ const FooterMain = ({
                 {footerTags.map(tag => (
                   <ListItem key={tag.fieldValue} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
                     <Chip label={tag.fieldValue} size="lg" color="primary">
-                      {/* <span className="ms-2 badge neutral-2-bg text-secondary my-0 pb-1">{tag.totalCount}</span> */}
                     </Chip>
                   </ListItem>
                 ))}
