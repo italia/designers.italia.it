@@ -323,7 +323,6 @@ module.exports = {
         // field above (default: 'id'). This is required.
         normalizer: ({ data }) =>
           data.allContent.edges.map((edge) => {
-            console.log(edge.node.components?.hero?.kangaroo?.tags)
             return {
               id: edge.node.id,
               template: edge.node.metadata?.template?.name,
