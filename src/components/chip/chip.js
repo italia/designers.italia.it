@@ -10,7 +10,6 @@ const Chip = (
 		color,
 		url,
 		label,
-		blank, // a tag chip can't leave the website
 		children,
 	}
 ) =>{
