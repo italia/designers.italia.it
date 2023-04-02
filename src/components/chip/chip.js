@@ -18,12 +18,6 @@ const Chip = (
 		+ `${color ? ' chip-'+color : ''}`
 		// + `${disabled ? ' chip-disabled' : ''}`
 
-	// styles = 'chip chip-simple' 
-	// 	+ `${size ? ' chip-'+size : ''}`
-		
-	// if (label) {
-	// 	children = label
-	// }
 
 	return (
 			<Link to={`/argomenti/${kebabCase(label)}/`} className={styles} /*target={blank ? '_blank' : undefined}*/>
