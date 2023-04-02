@@ -16,7 +16,6 @@ const Chip = (
 	let styles = 'chip chip-simple'
 		+ `${size ? ' chip-'+size : ''}`
 		+ `${color ? ' chip-'+color : ''}`
-		// + `${disabled ? ' chip-disabled' : ''}`
 
 
 	return (
