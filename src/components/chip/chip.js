@@ -19,7 +19,7 @@ const Chip = (
 
 
 	return (
-			<Link to={`/argomenti/${kebabCase(label)}/`} className={styles} /*target={blank ? '_blank' : undefined}*/>
+			<Link to={`/argomenti/${kebabCase(label)}/`} className={styles}>
 				<span className="chip-label">{label}</span>
 				{children}
 			</Link>
