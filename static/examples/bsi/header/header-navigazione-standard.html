@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Header navigazione standard</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<div class="it-header-navbar-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <!--start nav-->
+        <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Navigazione principale">
+          <button class="custom-navbar-toggler" type="button" aria-controls="nav0" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav0">
+            <svg class="icon bg-override">
+              <use href="/dist/svg/sprites.svg#it-burger"></use>
+            </svg>
+          </button>
+          <div class="navbar-collapsable" id="nav0" style="display: none;">
+            <div class="overlay" style="display: none;"></div>
+            <div class="close-div">
+              <button class="btn close-menu" type="button">
+                <span class="visually-hidden">Nascondi la navigazione</span>
+                <svg class="icon">
+                  <use href="/dist/svg/sprites.svg#it-close-big"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="menu-wrapper">
+              <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link active" href="#" aria-current="page"><span>Link 1 (attivo)</span></a></li>
+                <li class="nav-item"><a class="nav-link disabled" href="#" aria-disabled="true"><span>Link 2 (disabilitato)</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span>Link 3</span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#"><span>Link 4</span></a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavDropdown0">
+                    <span>Menu Dropdown</span>
+                    <svg class="icon icon-xs">
+                      <use href="/dist/svg/sprites.svg#it-expand"></use>
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu" role="region" aria-labelledby="mainNavDropdown0">
+                    <div class="link-list-wrapper">
+                      <div class="link-list-heading">Sezione</div>
+                      <ul class="link-list">
+                        <li><a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a></li>
+                        <li><a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a></li>
+                        <li><a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a></li>
+                        <li><span class="divider"></span></li>
+                        <li><a class="dropdown-item list-item" href="#"><span>Link lista 4</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown megamenu">
+                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false" id="mainNavMegamenu0">
+                    <span>Megamenu</span>
+                    <svg class="icon icon-xs">
+                      <use href="/dist/svg/sprites.svg#it-expand"></use>
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu" role="region" aria-labelledby="mainNavMegamenu0">
+                    <div class="row">
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <div class="link-list-heading">Sezione 1</div>
+                          <ul class="link-list">
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 1</span></a></li>
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 2</span></a></li>
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 3</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <ul class="link-list">
+                            <li>
+                              <div class="link-list-heading">Sezione 2</div>
+                            </li>
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 4</span></a></li>
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 5</span></a></li>
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 6</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <div class="link-list-wrapper">
+                          <ul class="link-list">
+                            <li>
+                              <div class="link-list-heading">Sezione 3</div>
+                            </li>
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 7</span></a></li>
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 8</span></a></li>
+                            <li><a class="dropdown-item list-item" href="#"><span>Link lista 9</span></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>
