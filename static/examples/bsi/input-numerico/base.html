@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Base </title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<div class="w-100">
+  <label for="inputNumber" class="input-number-label">Input Number inserito in una colonna a tutta larghezza</label>
+  <span class="input-number">
+    <input type="number" data-bs-input id="inputNumber" name="inputNumber" value="100" step="any" />
+    <button class="input-number-add">
+      <span class="visually-hidden">Aumenta valore</span>
+    </button>
+    <button class="input-number-sub">
+      <span class="visually-hidden">Diminuisci valore</span>
+    </button>
+  </span>
+</div>
+
+<div class="w-50 mt-5">
+  <label for="inputNumber1" class="input-number-label">Input Number inserito in una colonna di larghezza 50%</label>
+  <span class="input-number">
+    <input type="number" data-bs-input id="inputNumber1" name="inputNumber1" value="100" step="any" />
+    <button class="input-number-add">
+      <span class="visually-hidden">Aumenta valore</span>
+    </button>
+    <button class="input-number-sub">
+      <span class="visually-hidden">Diminuisci valore</span>
+    </button>
+  </span>
+</div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

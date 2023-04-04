@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Trascina e rilascia </title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<p><strong>Default</strong></p>
+<form class="upload-dragdrop" method="post" action="" enctype="multipart/form-data" data-bs-upload-dragdrop>
+  <div class="upload-dragdrop-image">
+    <img src="/dist/assets/upload-drag-drop-icon.svg" alt="descrizione immagine" aria-hidden="true">
+    <div class="upload-dragdrop-loading">
+      <div class="progress-donut" data-bs-progress-donut></div>
+    </div>
+    <div class="upload-dragdrop-success">
+      <svg class="icon" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-check"></use></svg>
+    </div>
+  </div>
+  <div class="upload-dragdrop-text">
+    <p class="upload-dragdrop-weight">
+      <svg class="icon icon-xs" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-file"></use></svg> PDF (3.7MB)
+    </p>
+    <h5>Trascina il file per caricarlo</h5>
+    <p>oppure <input type="file" name="upload7" id="upload7" class="upload-dragdrop-input" /><label for="upload7">selezionalo dal dispositivo</label></p>
+  </div>
+  <input value="Submit" type="submit" class="d-none" />
+</form>
+
+<p class="mt-5"><strong>Simula caricamento</strong></p>
+
+<form class="upload-dragdrop loading" method="post" action="" enctype="multipart/form-data" data-bs-upload-dragdrop>
+  <div class="upload-dragdrop-image">
+    <img src="/dist/assets/upload-drag-drop-icon.svg" alt="descrizione immagine" aria-hidden="true">
+    <div class="upload-dragdrop-loading">
+      <div class="progress-donut" data-bs-progress-donut></div>
+    </div>
+    <div class="upload-dragdrop-success">
+      <svg class="icon" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-check"></use></svg>
+    </div>
+  </div>
+  <div class="upload-dragdrop-text">
+    <p class="upload-dragdrop-weight">
+      <svg class="icon icon-xs" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-file"></use></svg> PDF (3.7MB)
+    </p>
+    <h5>Nome file in caricamento</h5>
+    <p>Caricamento in corso...</p>
+  </div>
+  <input value="Submit" type="submit" class="d-none" />
+</form>
+
+<p class="mt-5"><strong>Process completed</strong></p>
+
+<form class="upload-dragdrop success" method="post" action="" enctype="multipart/form-data" data-bs-upload-dragdrop>
+  <div class="upload-dragdrop-image">
+    <img src="/dist/assets/upload-drag-drop-icon.svg" alt="descrizione immagine" aria-hidden="true">
+    <div class="upload-dragdrop-loading">
+      <div class="progress-donut" data-bs-progress-donut></div>
+    </div>
+    <div class="upload-dragdrop-success">
+      <svg class="icon" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-check"></use></svg>
+    </div>
+  </div>
+  <div class="upload-dragdrop-text">
+    <p class="upload-dragdrop-weight">
+      <svg class="icon icon-xs" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-file"></use></svg> PDF (3.7MB)
+    </p>
+    <h5>Nome file caricato</h5>
+    <p>Caricamento completato</p>
+  </div>
+  <input value="Submit" type="submit" class="d-none" />
+</form>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

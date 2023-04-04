@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Lista, allineamento descrizione</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<dl class="row">
+  <dt class="col-sm-3">Lista descrizioni</dt>
+  <dd class="col-sm-9">Una lista di discrezioni è lo strumento ideale per definire dei termini.</dd>
+
+  <dt class="col-sm-3">Euismod</dt>
+  <dd class="col-sm-9">
+    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+    <p>Donec id elit non mi porta gravida at eget metus.</p>
+  </dd>
+
+  <dt class="col-sm-3">Malesuada porta</dt>
+  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+
+  <dt class="col-sm-3 text-truncate">Testo troncato: questo testo troppo lungo verrà troncato</dt>
+  <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+
+  <dt class="col-sm-3">Annidamento</dt>
+  <dd class="col-sm-9">
+    <dl class="row">
+      <dt class="col-sm-4">Lista descrizione annidata</dt>
+      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+    </dl>
+  </dd>
+</dl>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

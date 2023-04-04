@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Varianti di allineamento</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<p class="text-start">Testo allineato a sinistra per tutte le dimensioni del viewport.</p>
+<p class="text-center">Testo allineato al centro per tutte le dimensioni del viewport.</p>
+<p class="text-end">Testo allineato a destra per tutte le dimensioni del viewport.</p>
+
+<p class="text-sm-left">Testo allineato a sinistra per dimensioni SM (small) o maggiori.</p>
+<p class="text-md-left">Testo allineato a sinistra per dimensioni MD (medium) o maggiori.</p>
+<p class="text-lg-left">Testo allineato a sinistra per dimensioni LG (large) o maggiori.</p>
+<p class="text-xl-left">Testo allineato a sinistra per dimensioni XL (extra-large) o maggiori.</p>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

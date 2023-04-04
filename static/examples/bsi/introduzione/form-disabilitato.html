@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Form disabilitato </title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+<div>
+  <fieldset disabled aria-label="Form disabilitato">
+    <legend class="mb-4">Esempio di form disabilitato</legend>
+      <div class="row mt-4">
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <label for="disabledFieldsetInput">Input </label>
+            <input type="text" id="disabledFieldsetInput" class="form-control" value="Input disabilitato">
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-group">
+            <div class="select-wrapper">
+              <label for="disabledFieldsetSelect">Select</label>
+              <select id="disabledFieldsetSelect">
+                <option value="Value 1">Select disabilitata</option>
+                <option value="Value 2">Opzione 2</option>
+                <option value="Value 3">Opzione 3</option>
+                <option value="Value 4">Opzione 4</option>
+                <option value="Value 5">Opzione 5</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-4">
+        <div class="col-12 col-md-6">
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck1">
+            <label class="form-check-label" for="disabledFieldsetCheck1">
+              Check disabilitato 1
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck2">
+            <label class="form-check-label" for="disabledFieldsetCheck2">
+              Check disabilitato 2
+            </label>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="form-check">
+            <input name="gruppo1" type="radio" id="disabledFieldsetRadio1" checked>
+            <label for="disabledFieldsetRadio1">
+              Radio disabilitato 1
+            </label>
+          </div>
+          <div class="form-check">
+            <input name="gruppo1" type="radio" id="disabledFieldsetRadio2">
+            <label for="disabledFieldsetRadio2">
+              Radio disabilitato 2
+            </label>
+          </div>
+        </div>
+      </div>
+    <button class="btn btn-primary mt-3">Pulsante disabilitato</button>
+  </fieldset>
+</div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>

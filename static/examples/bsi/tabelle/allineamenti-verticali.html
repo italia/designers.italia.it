@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+        .bd-example > .accordion{
+            width: 90vw;
+        }
+    </style>
+    <title>Esempio Allineamenti verticali</title>
+</head>
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example">
+            
+  <div class="table-responsive">
+    <table class="table align-middle">
+      <thead>
+        <tr>
+          <th scope="col" class="w-25">Intestazione 1</th>
+          <th scope="col" class="w-25">Intestazione 2</th>
+          <th scope="col" class="w-25">Intestazione 3</th>
+          <th scope="col" class="w-25">Intestazione 4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Questa cella eredita <code>vertical-align: middle;</code> dalla tabella</td>
+          <td>Questa cella eredita <code>vertical-align: middle;</code> dalla tabella</td>
+          <td>Questa cella eredita <code>vertical-align: middle;</code> dalla tabella</td>
+          <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+        </tr>
+        <tr class="align-bottom">
+          <td>Questa cella eredita <code>vertical-align: bottom;</code>dalla riga</td>
+          <td>Questa cella eredita <code>vertical-align: bottom;</code>dalla riga</td>
+          <td>Questa cella eredita <code>vertical-align: bottom;</code>dalla riga</td>
+          <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+        </tr>
+        <tr>
+          <td>Questa cella eredita <code>vertical-align: middle;</code> dalla tabella</td>
+          <td>Questa cella eredita <code>vertical-align: middle;</code> dalla tabella</td>
+          <td class="align-top">This cell is aligned to the top.</td>
+          <td>This here is some placeholder text, intended to take up quite a bit of vertical space, to demonstrate how the vertical alignment works in the preceding cells.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.3.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+    </script>
+</body>
+</html>
