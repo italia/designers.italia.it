@@ -30,9 +30,9 @@ const FooterMain = ({
   }
   `)
 
-  const clonedData = JSON.parse(JSON.stringify(data)) /// XXX we need to review for performance this sort and slice!
-  clonedData.allContent.group.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount)); // sort by totalCount of each tag
-  const footerTags = clonedData.allContent.group.slice(0, tagsNo) // show just a fixed no. of them on the footer
+  const clonedData = JSON.parse(JSON.stringify(data))
+  clonedData.allContent.group.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount)); 
+  const footerTags = clonedData.allContent.group.slice(0, tagsNo)
 
   return (
     <div className="it-footer-main py-5" id={id}>
