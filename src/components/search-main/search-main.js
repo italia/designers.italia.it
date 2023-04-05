@@ -27,8 +27,6 @@ const SearchMain = ({
   const [formSubmitted, setFormSubmitted] = useState(() => !!location?.state?.searchTerm)
   const [storedInput, setStoredInput] = useState(() => location?.state?.searchTerm)
 
-  const [selectedTags, setSelectedTags] = useState([]);
-
   const iconOpt = {
     icon: 'sprites.svg#it-file',
     size: 'sm',
@@ -41,9 +39,6 @@ const SearchMain = ({
        localSearchPages {
          index
          store
-       }
-       allContent {
-         distinct(field:components___hero___kangaroo___tags)
        }
      }
   `)
@@ -84,12 +79,6 @@ const SearchMain = ({
     limit: `${howMany ? howMany : ''}`,
     // if true "fill" the spaces with suggestions, useful for multiple words query XXX
     suggest: useSuggestionEngine,
-    where: {
-      tags: { in: "Accessibilità"}
-    }
-      // where: selectedTags.length > 0 ? { tags: { in: "Accessibilità"/*selectedTags*/ } } : undefined,
-    //   // add more facets here
-    // },
   }
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions)
