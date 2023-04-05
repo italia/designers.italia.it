@@ -24,9 +24,6 @@ const ListArchiveAllTags = ({
     }
   `)
 
-  let container = "container-xxl"
-  let row = "row"
-  
   let styles = classNames(
     'section-editorial',
   {
@@ -37,8 +34,8 @@ const ListArchiveAllTags = ({
 
   return (
     <section className={styles} aria-describedby="archive-list-title">
-      <div className={container}>
-        <div className={row}>
+      <div className="container-xxl">
+        <div className="row">
           <div className="col-12 g-0">
             <div className="px-3 px-lg-0 px-lg-5">
               <h2 className="border-bottom pb-4" id="archive-list-title">Esplora gli argomenti</h2>
