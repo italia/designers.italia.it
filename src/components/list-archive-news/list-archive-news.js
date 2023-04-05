@@ -6,6 +6,7 @@ import "../../js/globals"
 import ListItem from "../list-item/list-item"
 import Tag from "../tag/tag"
 import { useStaticQuery, graphql } from "gatsby"
+import classNames from "classnames"
 
 const ListArchiveNews = ({
   background,
@@ -66,10 +67,13 @@ const ListArchiveNews = ({
   let container = "container-xxl"
   let row = "row"
 
-  let styles = 'section-editorial'
-    + `${background ? ' bg-' + background : ''}`
-    + `${noSpace ? ' py-0' : ''}`
-    + `${background === "dark" ? ' text-white' : ''}`
+  let styles = classNames(
+    'section-editorial',
+  {
+    [`bg-${background}`]: background, 
+    'py-0': noSpace, 
+    'text-white': (background === "dark")
+  })
 
   return (
     <section className={styles} aria-describedby="archive-list-title">
