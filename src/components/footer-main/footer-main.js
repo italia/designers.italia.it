@@ -21,7 +21,7 @@ const FooterMain = ({
 
   const data = useStaticQuery(graphql`
   query {
-    allContent {
+    footerTags: allContent {
       group(field: components___hero___kangaroo___tags) {
         fieldValue
         totalCount
@@ -30,9 +30,8 @@ const FooterMain = ({
   }
   `)
 
-  const clonedData = JSON.parse(JSON.stringify(data))
-  clonedData.allContent.group.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount)); 
-  const footerTags = clonedData.allContent.group.slice(0, tagsNo)
+  data.footerTags.group.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount)); 
+  const footerTags = data.footerTags.group.slice(0, tagsNo)
 
   return (
     <div className="it-footer-main py-5" id={id}>
