@@ -56,7 +56,7 @@ components:
     background: null
     title: UX Writing
     column: true
-    subtitle: "Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
+    subtitle: "Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di prodotto o di servizio"
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -134,18 +134,22 @@ components:
     #       alt: Descrizione immagine grande
     - full: true
       noSpace: false
-      title: Scrivi UX bla bla bla
-      text: Migliora lorem ipsum
+      title: Scrivi per facilitare e orientare l’interazione
+      #text: Migliora lorem ipsum
       background: null
       components:
         - name: TextImageCta
           title:
           text: |
-            Lorem ipsum qui c'è il testo
+            I testi di interfaccia dovrebbero rispondere ad alcuni bisogni primari dell’utente impegnato a interagire con il nostro prodotto:
+            - identificare il tipo di interfaccia digitale in cui si trova (es. heading, subheading, label)
+            - capire come i blocchi di informazioni sono collegati fra di loro (es. label, accordion, collapse, table, tag)
+            - scegliere/prevedere in tempo reale quale azione compiere sull’interfaccia (es. tooltip, button)
+            - essere “rassicurato” su quale sarà l’effetto dell’interazione successiva o sulla risolubilità di un errore es. (es. modal, error message)
 
     - full: true
       noSpace: false
-      title: Titolo zona tabella
+      title: Prima l'azione
       background: null
       text: Sottotitolo
       components:
@@ -158,12 +162,10 @@ components:
             - text: NON VA BENE
           rows:
             - cols:
-              - text: Frase corretta lorem ipsum che è una bella frase.
-              - text: Frase non corretta brutta brutta. 
+              - text: Aggiungi un servizio alla lista
             - cols:
-              - text: Frase corretta lorem ipsum che è una bella frase.
-              - text: Frase non corretta brutta brutta. 
-
+              - text: I servizi appariranno qui dopo averli aggiunti alla lista
+            
         - name: TextImageCta
           title:
           text: |
