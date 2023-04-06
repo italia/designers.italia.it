@@ -61,7 +61,7 @@ $navigation-link-active-bar-size: 3px;
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-  .nav-item {
+.nav-item {
     display: flex;
     & > button.nav-link {
       display: flex;
@@ -118,5 +118,15 @@ $navigation-link-active-bar-size: 3px;
       }
 
     }
+  }
+  .it-header-sticky.is-sticky .nav-item button.nav-link {
+    font-size: 16px;
+  }
+}
+
+//Desktop  --------------------------------------------------------------------------------------
+@include media-breakpoint-up(xl) {
+  .it-header-sticky.is-sticky .nav-item button.nav-link {
+    font-size: 18px;
   }
 }
