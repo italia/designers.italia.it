@@ -2,6 +2,9 @@ import * as React from "react"
 import { graphql } from "gatsby"
 
 import TemplateBase from "../templates/base"
+import TemplateArchiveAllTags from "../templates/archive-all-tags"
+import TemplateArchiveNews from "../templates/archive-news"
+import TemplateArchiveEvents from "../templates/archive-events"
 import TemplateDSComponent from "../templates/design-system-component"
 import TemplateDSIndex from "../templates/design-system-index"
 import TemplateHome from "../templates/home"
@@ -11,9 +14,13 @@ import TemplateLV1 from "../templates/level-1"
 import TemplateLV2 from "../templates/level-2"
 import TemplateLV3 from "../templates/level-3"
 import TemplateLV4 from "../templates/level-4"
+
 import { Seo } from "../components/seo/seo"
 
 const TEMPLATES = {
+  'archive-news' : TemplateArchiveNews,
+  'archive-all-tags' : TemplateArchiveAllTags,
+  'archive-events' : TemplateArchiveEvents,
   'community' : TemplateLV1Community,
   'level1' : TemplateLV1,
   'level2' : TemplateLV2,
@@ -53,6 +60,7 @@ export const query = graphql`
         template {
           name
         }
+        archive
         activeLabel
         json
       }
@@ -114,12 +122,7 @@ export const query = graphql`
               size
               color
             }
-            chips {
-              label
-              url
-              color
-              size
-            }
+            tags
             dropdown {
               btnId
               button {
@@ -297,12 +300,7 @@ export const query = graphql`
             text
             rounded
             dateInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            tags
             blank
             externalLink {
               label
@@ -325,14 +323,9 @@ export const query = graphql`
             button {
               btnStyle
               label
-              addonStyle
-            }
-            chips {
-              label
               url
-              color
-              size
             }
+            tags
           }
         }
         highlightsLoop {
@@ -474,12 +467,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            # tags
             titleSmall
             tag {
               label
@@ -564,12 +552,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            tags
             text
             dateInfo
           }
@@ -670,12 +653,7 @@ export const query = graphql`
             fullHeight
             url
             text
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            tags
           }
         }
         sectionsEditorial2 {
