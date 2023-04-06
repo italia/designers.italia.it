@@ -53,7 +53,7 @@ const ComponentView = ({
   const copyToClipboard = (e, code) => {
     e.preventDefault()
     navigator.clipboard.writeText(code)
-    const notification = new Notification(document.getElementById(idPrefix + '-' + "copyToast"), {
+    const notification = new Notification(document.getElementById(`${idPrefix}-copyToast`), {
       timeout: 3000
     })
     notification.show()
@@ -79,19 +79,19 @@ const ComponentView = ({
     icon: "sprites.svg#it-check-circle",
   }
 
-  const uuid = idPrefix + '-' + 'component-view-' + uuidv4()
-  const accId = uuid + '-accordion'
-  const headId = uuid + '-heading'
-  const collId = uuid + '-collapse'
+  const uuid = `${idPrefix}-component-view-${uuidv4()}`
+  const accId = `${uuid}-accordion`
+  const headId = `${uuid}-heading`
+  const collId = `${uuid}-collapse`
   let responsiveButtonsItems
   const [wrappedCode, setWrappedCode] = useState(false)
 
   content = content.replace(/^\s+|\s+$/g, '')
 
   if (viewer) {
-    responsiveButtonsItems = (viewer.responsiveButtons).map((item,index) => {
-      return(
-        <Button key={"rb"+index} {...item}/>
+    responsiveButtonsItems = (viewer.responsiveButtons).map((item, index) => {
+      return (
+        <Button key={"rb" + index} {...item} />
       )
     })
   }
@@ -99,10 +99,10 @@ const ComponentView = ({
   let componentStyles = "bg-light p-3"
     + `${responsiveButtonsItems ? ' pt-4' : ''}`
 
-  let accordionStyle = "accordion-collapse collapse" 
+  let accordionStyle = "accordion-collapse collapse"
     + `${accordionOpen ? ' show' : ' hide'}`
   let accordionButtonStyle = "accordion-button border-top-0 collapsed"
-   + `${accordionOpen ? ' collapsed' : ''}`
+    + `${accordionOpen ? ' collapsed' : ''}`
 
   return (
     <>
@@ -119,39 +119,39 @@ const ComponentView = ({
       <div className="accordion accordion-left-icon" id={accId}>
         <div className="accordion-item">
           <div className="d-flex justify-content-between align-items-center" id={headId}>
-            <h2 id={idPrefix + '-' + 'codeViewer'} className ="accordion-header ">
-              <button className={accordionButtonStyle} type="button" data-bs-toggle="collapse" data-bs-target={'#' + collId } aria-expanded={accordionOpen} aria-controls={collId}>
+            <h2 id={`${idPrefix}-codeViewer`} className="accordion-header ">
+              <button className={accordionButtonStyle} type="button" data-bs-toggle="collapse" data-bs-target={`#${collId}`} aria-expanded={accordionOpen} aria-controls={collId}>
                 {accordionLabel}
               </button>
             </h2>
             <div className="d-flex justify-content-between align-items-center">
               <div aria-hidden="true" className="me-4 d-none d-sm-block">
                 {content &&
-                  <Checkbox id={idPrefix + '-' + 'wrap'} label='Wrap' customStyle={'me-3'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
+                  <Checkbox id={`${idPrefix}-wrap`} label='Wrap' customStyle={'me-3'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
                 }
               </div>
               {content &&
-                <a href="" onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel}>
-                  <Icon {...ICON_COPY_CODE}/>
-                </a>
+                <Button onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel}>
+                  <Icon {...ICON_COPY_CODE} />
+                </Button>
               }
               {accordionUrl &&
-                <a href={accordionUrl} target="_blank" aria-label={accordionSrLabel}>
-                  <Icon {...ICON_EXTERNAL}/>
+                <a href={accordionUrl} target="_blank" rel="noreferrer" aria-label={accordionSrLabel}>
+                  <Icon {...ICON_EXTERNAL} />
                 </a>
               }
             </div>
-            </div>
+          </div>
 
           <div id={collId} className={accordionStyle} data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
             <div className="accordion-body p-0">
-              <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{style: {wordBreak: 'break-all', whiteSpace: 'pre-wrap'}}}>
+              <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
                 {content}
               </SyntaxHighlighter>
             </div>
           </div>
-          <div className="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby={idPrefix + '-' + 'not1d-title'} id={idPrefix + '-' + 'copyToast'}>
-              <span id={idPrefix + '-' + 'not1d-title'} className="h5 "><Icon {...ICON_SUCCESS}/>Codice copiato negli appunti</span>
+          <div className="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby={`${idPrefix}-not1d-title`} id={`${idPrefix}-copyToast`}>
+            <span id={`${idPrefix}-not1d-title`} className="h5 "><Icon {...ICON_SUCCESS} />Codice copiato negli appunti</span>
           </div>
         </div>
       </div>
