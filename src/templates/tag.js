@@ -36,7 +36,6 @@ const Tags = ({ children, pageContext, location, data }) => {
   const { tag } = pageContext
   const { edges, totalCount } = data.allContentByTag
   const tagHeader = `Esplora ${totalCount} pagin${totalCount === 1 ? "a" : "e"} su questo argomento`
-  // const tagHeader = `C${totalCount === 1 ? "'è" : "i sono"} ${totalCount} pagin${totalCount === 1 ? "a" : "e"} su questo argomento`
 
   const iconOpt = {
     icon: 'sprites.svg#it-file',
@@ -183,7 +182,6 @@ export const Head = ({ pageContext, data: { content } }) => {
   const { tag } = pageContext
   return ( 
   <Seo
-    // title = {`Argomento: "${tag}" - Designers Italia`}
     title = {`${tag} - Designers Italia`}
     description = {`Tutti i contenuti relativi all'argomento "${tag}"`}
     // image = {content.seo.image}
