@@ -127,7 +127,7 @@ const ComponentView = ({
         <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 iframe-example ${[...dynamicResClasses]}`}></iframe>
         <span className="visually-hidden">Fine componente.</span>
         {responsiveButtonsItems &&
-          <div className="responsive-buttons">
+          <div className="responsive-buttons d-none d-lg-block">
             <span className="visually-hidden">Cambia visualizzazione responsive dell'anteprima:</span>
             <div className="d-flex align-items-center justify-content-center mt-3">
               {responsiveButtonsItems}
