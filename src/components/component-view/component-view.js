@@ -3,7 +3,7 @@ import uniqueId from "lodash/uniqueId"
 
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Button from "../button/button"
-import Checkbox from "../checkbox/checkbox" 
+import Checkbox from "../checkbox/checkbox"
 import Icon from "../icon/icon"
 import loadable from "@loadable/component"
 
@@ -58,6 +58,13 @@ const ComponentView = ({
     notification.show()
   }
 
+  const [dynamicResClasses, setDynamicResClasses] = useState(" ")
+  const changeResolution = (e) => {
+    e.preventDefault()
+    let res = e.target.textContent // sm, md, full
+    setDynamicResClasses([...dynamicResClasses, ` viewer-${res}`])
+  }
+
   const ICON_EXTERNAL = {
     icon: "sprites.svg#it-external-link",
     size: "sm",
@@ -98,13 +105,13 @@ const ComponentView = ({
   if (viewer) {
     responsiveButtonsItems = (viewer.responsiveButtons).map((item, index) => {
       return (
-        <Button key={"rb" + index} {...item} />
+        <Button onClick={(e) => changeResolution(e)} key={"rb" + index} {...item} />
       )
     })
   }
 
-  let componentStyles = "bg-light p-3"
-    + `${responsiveButtonsItems ? ' pt-4' : ''}`
+  let componentStyles = "bg-light p-3 d-flex flex-column align-items-center"
+    + `${responsiveButtonsItems ? ' pb-4' : ''}`
 
   let accordionStyle = "accordion-collapse collapse"
     + `${accordionOpen ? ' show' : ' hide'}`
@@ -116,14 +123,17 @@ const ComponentView = ({
   return (
     <div id={uuid}>
       <div className={componentStyles}>
+        <span className="visually-hidden">Inizio componente:</span>
+        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 iframe-example ${[...dynamicResClasses]}`}></iframe>
+        <span className="visually-hidden">Fine componente.</span>
         {responsiveButtonsItems &&
-          <div className="d-flex align-items-center justify-content-center mb-4">
-            {responsiveButtonsItems}
+          <div className="responsive-buttons">
+            <span className="visually-hidden">Cambia visualizzazione responsive dell'anteprima:</span>
+            <div className="d-flex align-items-center justify-content-center mt-3">
+              {responsiveButtonsItems}
+            </div>
           </div>
         }
-        <span className="visually-hidden">Inizio componente:</span>
-        <iframe src={BSIExampleUrl} title={`Variante: ${name}`} className="w-100 iframe-example"></iframe>
-        <span className="visually-hidden">Fine componente.</span>
       </div>
       <div className="accordion accordion-left-icon" id={accId}>
         <div className="accordion-item">

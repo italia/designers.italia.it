@@ -797,6 +797,18 @@ export const query = graphql`
           accordionUrl
           accordionSrLabel
           accordionSrCopyLabel
+          viewer {
+            responsiveButtons {
+              type
+              label
+              addonStyle
+              ariaLabel
+              # icon {
+              #  icon
+              #  color
+              # }
+            }
+          }
         }
         sectionsEditorial {
           full
