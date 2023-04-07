@@ -78,7 +78,7 @@ const ComponentView = ({
     size: "sm",
     color: "primary",
     addonClasses: "align-middle me-4 mb-1 mt-1",
-    ariaLabel: " Mostra in una finestra dedicata"
+    ariaLabel: " Copia il codice negli appunti"
   }
 
   const ICON_FULLSCREEN = {
@@ -86,7 +86,7 @@ const ComponentView = ({
     size: "sm",
     color: "primary",
     addonClasses: "align-middle me-4 mb-1",
-    ariaLabel: " Copia il codice negli appunti"
+    ariaLabel: " Mostra in una finestra dedicata"
   }
 
   const ICON_SUCCESS = {
