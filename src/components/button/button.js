@@ -31,7 +31,7 @@ const Button = ({
 		+ `${size ? ' btn-'+size : ''}`
 		+ `${btnStyle ? ' btn-'+btnStyle : ''}`
 		+ `${disabled ? ' disabled' : ''}`
-		+ `${(iconLeft || iconRight && !dataBsToggle) ? ' btn-icon' : ''}`
+		+ `${(iconLeft || (iconRight && !dataBsToggle)) ? ' btn-icon' : ''}`
 		+ `${customStyle ? customStyle : ''}`
 		+ `${addonStyle ? ' '+addonStyle : ''}`
 
