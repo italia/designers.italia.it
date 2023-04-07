@@ -110,7 +110,7 @@ const ComponentView = ({
     })
   }
 
-  let componentStyles = "bg-light p-3 d-flex flex-column align-items-center"
+  let componentStyles = "border p-3 d-flex flex-column align-items-center"
     + `${responsiveButtonsItems ? ' pb-4' : ''}`
 
   let accordionStyle = "accordion-collapse collapse"
@@ -124,7 +124,7 @@ const ComponentView = ({
     <div id={uuid}>
       <div className={componentStyles}>
         <span className="visually-hidden">Inizio componente:</span>
-        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 iframe-example bg-white ${[...dynamicResClasses]}`}></iframe>
+        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 iframe-example ${[...dynamicResClasses]}`}></iframe>
         <span className="visually-hidden">Fine componente.</span>
         {responsiveButtonsItems &&
           <div className="responsive-buttons d-none d-lg-block">
