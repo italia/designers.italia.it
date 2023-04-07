@@ -29,7 +29,7 @@ const ComponentView = ({
 }) => {
 
   const initAutoHeight = () => {
-    const iframe = document.querySelector('iframe')
+    const iframe = document.querySelector('iframe') // xxx ref? there are two iframes...
     if (!iframe) return
     const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
     if (!exampleContainer) return
