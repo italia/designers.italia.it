@@ -790,25 +790,9 @@ export const query = graphql`
         title
         componentVariant {
           id
-          idPrefix
           title
-          accordionOpen
-          accordionLabel
           accordionUrl
-          accordionSrLabel
-          accordionSrCopyLabel
-          viewer {
-            responsiveButtons {
-              type
-              label
-              addonStyle
-              ariaLabel
-              # icon {
-              #  icon
-              #  color
-              # }
-            }
-          }
+          accordionOpen
         }
         sectionsEditorial {
           full
