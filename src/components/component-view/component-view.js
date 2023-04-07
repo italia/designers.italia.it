@@ -3,7 +3,7 @@ import uniqueId from "lodash/uniqueId"
 
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import Button from "../button/button"
-// import Checkbox from "../checkbox/checkbox" // < XXX disabled for now the wrap code (to be reviewed)
+import Checkbox from "../checkbox/checkbox" 
 import Icon from "../icon/icon"
 import loadable from "@loadable/component"
 
@@ -91,7 +91,7 @@ const ComponentView = ({
   const headId = `${uuid}-heading`
   const collId = `${uuid}-collapse`
   let responsiveButtonsItems
-  const [wrappedCode/*, setWrappedCode*/] = useState(false)
+  const [wrappedCode, setWrappedCode] = useState(false)
 
   content = content.replace(/^\s+|\s+$/g, '')
 
@@ -152,11 +152,11 @@ const ComponentView = ({
 
           <div id={collId} className={accordionStyle} data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
             <div className="accordion-body p-0">
-              {/* <div aria-hidden="true" className="d-flex flex-row-reverse">
+              <div aria-hidden="true" className="d-flex flex-row-reverse">
                 {content &&
                   <Checkbox id={`${idPrefix}-wrap`} label='Mostra codice a capo' customStyle={'me-4'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
                 }
-              </div> */}
+              </div>
               <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
                 {content}
               </SyntaxHighlighter>
