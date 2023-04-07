@@ -82,7 +82,7 @@ const ComponentView = ({
   }
 
   const ICON_FULLSCREEN = {
-    icon: "sprites.svg#it-maximize ",
+    icon: "sprites.svg#it-fullscreen",
     size: "sm",
     color: "primary",
     addonClasses: "align-middle me-4 mb-1",
