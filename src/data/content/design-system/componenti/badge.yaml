@@ -2,17 +2,17 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata:
-  json: bsi/componenti/dropdown.json
+  json: bsi/componenti/badge.json
   template:
     name: design-system-component
 
 seo:
-  name: "Dropdown - Designers Italia"
-  description: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
+  name: Badge - Designers Italia
+  description: "Un elemento grafico che contiene numeri o caratteri in prossimità di un altro elemento, utile per contatori ed etichette"
   image: null
   twitterImage: null
   canonical: null
-  pathname: /design-system/componenti/dropdown/
+  pathname: /design-system/componenti/badge/
 
 lastUpdate:
   column: true
@@ -39,7 +39,7 @@ components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Dropdown
+    title: Badge
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
@@ -49,7 +49,7 @@ components:
       addonClasses: bg-success mb-2
       screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
+    subtitle: "Un elemento grafico che contiene numeri o caratteri in prossimità di un altro elemento, utile per contatori ed etichette"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -66,7 +66,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Struttura,Contenuti]
+      # tags: [Tag1,Tag2,Tag3]
 
   tab:
     - full: true
@@ -78,7 +78,7 @@ tabs:
     componentVariant:
       id: "preview-use"
       title: "Anteprima"
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/dropdown/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/badge/
       accordionOpen: false
 
     sectionsEditorial:
@@ -102,13 +102,13 @@ tabs:
             text: |
               _In stesura_
 
-              #### Attenzione a
+              ### Attenzione a
               _In stesura_
 
-              #### Buone pratiche sui contenuti
+              ### Buone pratiche sui contenuti
               _In stesura_
 
-              #### Alternative a questo componente
+              ### Alternative a questo componente
               _In stesura_
 
       - full: true
@@ -117,45 +117,11 @@ tabs:
         background: null
         text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
         components:
-          - name: Table
-            responsive: table-responsive-md
-            head:
-              - text: Caratteristica
-              - text: Stato
-              - text: Descrizione
-            rows:
-              - cols:
-                - text: Visivamente accessibile
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - text: Uso e contrasto dei colori, leggibilità
-              - cols:
-                - text: Amichevole con lettori di schermo
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - text: Struttura titolazioni, etichette e testi alternativi
-              - cols:
-                - text: Navigabile
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - text: Focus, struttura, navigazione da tastiera o altri device
-              - cols:
-                - text: Comprensibile
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - text: Comprensibile, prevedibile, gestione semplice dell’errore
-
           - name: TextImageCta
             headingLevel: 4
             text: |
+              _In stesura_ 
+              
               Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
             ctas:
             - label: Apri una issue su Bootstrap Italia #C
@@ -178,73 +144,12 @@ tabs:
         background: null
         components:
 
-          - name: Table
-            responsive: table-responsive-md
-            head:
-              - text: Libreria
-              - text: Stato componente
-              - text: Link
-            rows:
-              - cols:
-                - text: UI Kit (design)
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - simpleCta :
-                    label: Kit
-                    url: https://www.figma.com/community/file/1105848677422572920
-                    blank: true
-                    screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-figma
-                      size: sm
-
-              - cols:
-                - text: Bootstrap Italia
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - simpleCta :
-                    label: Scheda documentazione
-                    blank: true
-                    url: https://italia.github.io/bootstrap-italia/docs/componenti/dropdown/
-                    screenReaderText: " (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-external-link
-                      size: sm
-
-              - cols:
-                - text: React
-                  scope: row
-                - tag:
-                    label: Da rivedere
-                    addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - simpleCta :
-                    label: Scheda storybook
-                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-dropdown--page
-                    blank: true
-                    screenReaderText: " (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-external-link
-                      size: sm
-
           - name: TextImageCta
             text: |
+              _In stesura_ 
+              
               Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
               Partecipa all'evoluzione del design system del Paese!
-
-          - name: TextImageCta
-            title: Nota sullo stato
-            text: |
-              Lo stato generale del componente, riportato nel titolo di pagina, è valutato sulla base dello stato dell'arte delle due librerie UI Kit e Bootstrap Italia.
-            ctas:
-              - label: Scopri di più su come si definisce lo stato (presto)
-                url: "#"
-                icon:
-                  icon: sprites.svg#it-arrow-right
-                  size: sm
 
   - title: Progettazione
     sectionsEditorial:
@@ -315,7 +220,7 @@ tabs:
     componentVariant:
       id: "preview-dev"
       title: "Anteprima"
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/dropdown/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/badge/
       accordionOpen: true
 
     sectionsEditorial:
