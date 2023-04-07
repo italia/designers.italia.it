@@ -35,21 +35,6 @@ lastUpdate:
       color: primary
     blank: true
 
-# navPreFooter:
-#   navOtherPrevNext:
-#     next:
-#       label: Next page
-#       url: "#"
-#       blank: false
-#       specular: true
-#       icon:
-#         icon: "sprites.svg#it-arrow-right"
-#         size: "sm"
-#         align: "middle"
-#         color: "primary"
-#         hidden: true
-#         addonClasses: flex-shrink-0 ms-3
-
 components:
   hero:
     specialKangarooComponent: true
@@ -70,7 +55,7 @@ components:
     imgRatio: 1x1
     noBorder: true
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -94,7 +79,6 @@ tabs:
       idPrefix: cAU
       title: Anteprima
       accordionOpen: false
-      # XXX Accordion datas and viewer datas to move to /data/ folder... unique for all the components
       accordionLabel: "Codice Bootstrap Italia"
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
       accordionSrLabel: Apri la documentazione del componente sul sito Boostrap Italia
@@ -166,7 +150,6 @@ tabs:
         text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
         components:
           - name: Table
-            # title: Stato dell'accessibilità
             responsive: table-responsive-md
             head:
               - text: Caratteristica
@@ -203,7 +186,6 @@ tabs:
                 - text: Comprensibile, prevedibile, gestione semplice dell’errore
 
           - name: TextImageCta
-            # title: Feedback
             headingLevel: 4
             text: |
               Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
@@ -277,21 +259,6 @@ tabs:
                     icon:
                       icon: sprites.svg#it-external-link
                       size: sm
-              # - cols:
-              #   - text: Angular
-              #     scope: row
-              #   - tag:
-              #       label: Non presente
-              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-              #   - text: ""
-
-              # - cols:
-              #   - text: Vue
-              #     scope: row
-              #   - tag:
-              #       label: Non presente
-              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-              #   - text: ""
 
           - name: TextImageCta
             text: |
@@ -364,17 +331,6 @@ tabs:
               color: white
               align: middle
               addonClasses: ms-2
-
-          # - label: Apri la repository con tutte le versioni
-          #   target: blank
-          #   btnStyle: outline-secondary
-          #   url: "#"
-          #   icon:
-          #     icon: sprites.svg#it-github
-          #     size: sm
-          #     color: secondary
-          #     align: middle
-          #     addonClasses: ms-2
 
       - full: true
         noSpace: false

@@ -35,21 +35,6 @@ lastUpdate:
       color: primary
     blank: true
 
-# navPreFooter:
-#   navOtherPrevNext:
-#     next:
-#       label: Next page
-#       url: "#"
-#       blank: false
-#       specular: true
-#       icon:
-#         icon: "sprites.svg#it-arrow-right"
-#         size: "sm"
-#         align: "middle"
-#         color: "primary"
-#         hidden: true
-#         addonClasses: flex-shrink-0 ms-3
-
 components:
   hero:
     specialKangarooComponent: true
@@ -79,7 +64,7 @@ components:
       list:
         isShare: true
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -103,31 +88,10 @@ tabs:
       idPrefix: cAU
       title: Anteprima
       accordionOpen: false
-      # XXX Accordion datas and viewer datas to move to /data/ folder... unique for all the components
       accordionLabel: "Codice Bootstrap Italia"
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/breadcrumbs/
       accordionSrLabel: Apri la documentazione del componente sul sito Boostrap Italia
       accordionSrCopyLabel: Copia negli appunti il codice del componente Bootstrap Italia
-      # viewer: # XXX ICONS FOR RESPONSIVE PREVIEW
-      #   responsiveButtons:
-      #     - type: button
-      #       addonStyle: p-0 mx-3
-      #       ariaLabel: Visualizzazione Anteprima Mobile
-      #       icon:
-      #         icon: sprites.svg#it-telephone
-      #         color: primary
-      #     - type: button
-      #       addonStyle: p-0 mx-3
-      #       ariaLabel: Visualizzazione Anteprima Laptop
-      #       icon:
-      #         icon: sprites.svg#it-software
-      #         color: primary
-      #     - type: button
-      #       addonStyle: p-0 mx-3
-      #       ariaLabel: Visualizzazione Anteprima Desktop
-      #       icon:
-      #         icon: sprites.svg#it-presentation
-      #         color: primary
 
     sectionsEditorial:
 
@@ -170,7 +134,6 @@ tabs:
         text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
         components:
           - name: Table
-            # title: Stato dell'accessibilità
             responsive: table-responsive-md
             head:
               - text: Caratteristica
@@ -207,7 +170,6 @@ tabs:
                 - text: Comprensibile, prevedibile, gestione semplice dell’errore
 
           - name: TextImageCta
-            # title: Feedback
             headingLevel: 4
             text: |
               Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
@@ -272,7 +234,7 @@ tabs:
                   scope: row
                 - tag:
                     label: Da rivedere
-                    addonClasses: bg-danger ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                    addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
                 - simpleCta :
                     label: Scheda storybook
                     url: https://italia.github.io/design-react-kit/?path=/story/documentazione-menu-di-navigazione-breadcrumb--page
@@ -281,21 +243,6 @@ tabs:
                     icon:
                       icon: sprites.svg#it-external-link
                       size: sm
-              # - cols:
-              #   - text: Angular 
-              #     scope: row
-              #   - tag:
-              #       label: Non presente
-              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-              #   - text: ""
-                
-              # - cols:
-              #   - text: Vue 
-              #     scope: row
-              #   - tag:
-              #       label: Non presente
-              #       addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-              #   - text: ""
       
           - name: TextImageCta
             text: |
@@ -331,11 +278,6 @@ tabs:
               1. **Pagina del livello superiore con link**: indica il titolo della pagina del livello superiore e ne permette la navigazione tramite link
               2. **Separatore**: distingue le pagine
               3. **Pagina corrente**: indica il titolo della pagina su cui si trova l’utente
-          #- name: TextImageCta
-            #noSpace: true
-            #title: Contenuti
-            #text: |
-              #*In stesura*
           - name: TextImageCta
             noSpace: true
             title: Comportamento
@@ -356,7 +298,6 @@ tabs:
           - name: TextImageCta
             noSpace: true
             title: Specifiche di design
-            # lead: Eventuale lead paragraph
             text: |
               *In stesura*   
 
@@ -377,21 +318,9 @@ tabs:
               align: middle
               addonClasses: ms-2
 
-          # - label: Apri la repository con tutte le versioni
-          #   target: blank
-          #   btnStyle: outline-secondary
-          #   url: "#"
-          #   icon:
-          #     icon: sprites.svg#it-github
-          #     size: sm
-          #     color: secondary
-          #     align: middle
-          #     addonClasses: ms-2
-
       - full: true
         noSpace: true
         title: Design Tokens
-        # text: 
         components:
 
           - name: TextImageCta
@@ -405,7 +334,6 @@ tabs:
       id: componentAnteprimaSviluppo
       idPrefix: cAS
       title: Anteprima e codice
-      # XXX Accordion datas and viewer datas to move to /data/ folder... unique for all the components
       accordionOpen: true
       accordionLabel: "Codice Bootstrap Italia"
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/breadcrumbs/
