@@ -64,6 +64,7 @@ const ComponentView = ({
     let res = e.target.textContent // sm, md, full
     setDynamicResClasses([...dynamicResClasses, ` viewer-${res}`])
   }
+  setDynamicResClasses([...dynamicResClasses, ` viewer-full`])
 
   const ICON_EXTERNAL = {
     icon: "sprites.svg#it-external-link",
