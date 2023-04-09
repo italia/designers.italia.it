@@ -28,43 +28,6 @@ const ComponentView = ({
   accordionSrCopyLabel
 }) => {
 
-  const initAutoHeight = () => {
-    const iframe = document.querySelector('iframe') // xxx ref? there are two iframes...
-    if (!iframe) return
-    const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
-    if (!exampleContainer) return
-    iframe.height = exampleContainer.clientHeight
-    exampleContainer.addEventListener("click", () => {
-      setTimeout(() => {
-        iframe.height = exampleContainer.clientHeight + 50
-      }, 300)
-    })
-  }
-
-  useEffect(() => {
-    initAutoHeight()
-    const iframe = document.querySelector('iframe')
-    iframe.addEventListener("load", initAutoHeight)
-  });
-
-  const theme = a11yDark;
-
-  const copyToClipboard = (e, code) => {
-    e.preventDefault()
-    navigator.clipboard.writeText(code)
-    const notification = new Notification(document.getElementById(`${idPrefix}-copyToast`), {
-      timeout: 3000
-    })
-    notification.show()
-  }
-
-  const [dynamicResClasses, setDynamicResClasses] = useState(" viewer-full")
-  const changeResolution = (e) => {
-    e.preventDefault()
-    let res = e.target.textContent // sm, md, full
-    setDynamicResClasses([...dynamicResClasses, ` viewer-${res}`])
-  }
-
   const ICON_EXTERNAL = {
     icon: "sprites.svg#it-external-link",
     size: "sm",
@@ -93,15 +56,53 @@ const ComponentView = ({
     icon: "sprites.svg#it-check-circle",
   }
 
+  const initAutoHeight = () => {
+    const iframe = document.querySelector('iframe') // xxx ref? there are two iframes...
+    if (!iframe) return
+    const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
+    if (!exampleContainer) return
+    iframe.height = exampleContainer.clientHeight
+    exampleContainer.addEventListener("click", () => {
+      setTimeout(() => {
+        iframe.height = exampleContainer.clientHeight + 50
+      }, 50)
+    })
+  }
+
+  useEffect(() => {
+    initAutoHeight()
+    const iframe = document.querySelector('iframe')
+    iframe.addEventListener("load", initAutoHeight)
+    iframe.addEventListener("transitionend", initAutoHeight)
+  });
+
+  const theme = a11yDark;
+
+  const copyToClipboard = (e, code) => {
+    e.preventDefault()
+    navigator.clipboard.writeText(code)
+    const notification = new Notification(document.getElementById(`${idPrefix}-copyToast`), {
+      timeout: 3000
+    })
+    notification.show()
+  }
+
   const uuid = `${idPrefix}-component-view-${uniqueId('id_')}`
   const accId = `${uuid}-accordion`
   const headId = `${uuid}-heading`
   const collId = `${uuid}-collapse`
-  let responsiveButtonsItems
   const [wrappedCode, setWrappedCode] = useState(false)
 
   content = content.replace(/^\s+|\s+$/g, '')
 
+  const [previewWidth, setPreviewWidth] = useState(" viewer-full")
+  const changeResolution = (e) => {
+    e.preventDefault()
+    let res = e.target.textContent // sm, md, full
+    setPreviewWidth(` viewer-${res}`)
+  }
+
+  let responsiveButtonsItems
   if (viewer) {
     responsiveButtonsItems = (viewer.responsiveButtons).map((item, index) => {
       return (
@@ -124,12 +125,14 @@ const ComponentView = ({
     <div id={uuid}>
       <div className={componentStyles}>
         <span className="visually-hidden">Inizio componente:</span>
-        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 iframe-example ${[...dynamicResClasses]}`}></iframe>
         <span className="visually-hidden">Fine componente.</span>
+        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 iframe-example ${previewWidth}`}></iframe>
         {responsiveButtonsItems &&
           <div className="responsive-buttons d-none d-lg-block">
-            <span className="visually-hidden">Cambia visualizzazione responsive dell'anteprima:</span>
-            <div className="d-flex align-items-center justify-content-center mt-3">
+            <div className="d-flex align-items-center justify-content-center pb-2 pt-4">
+              {viewer.label && 
+                <span className="small pe-3 text-secondary fw-semibold">{viewer.label}</span>
+              }
               {responsiveButtonsItems}
             </div>
           </div>
