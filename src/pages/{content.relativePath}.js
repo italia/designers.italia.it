@@ -793,6 +793,7 @@ export const query = graphql`
           title
           accordionUrl
           accordionOpen
+          accordionShow
         }
         sectionsEditorial {
           full
