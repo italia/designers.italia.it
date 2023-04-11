@@ -22,10 +22,11 @@ const ComponentView = ({
   viewer,
   idPrefix,
   accordionOpen,
+  accordionShow,
   accordionLabel,
   accordionUrl,
   accordionSrLabel,
-  accordionSrCopyLabel
+  accordionSrCopyLabel,
 }) => {
 
   const ICON_EXTERNAL = {
@@ -72,6 +73,10 @@ const ComponentView = ({
     })
   }
 
+  const initViewers = () => {
+
+  }
+
   useEffect(() => {
     initAutoHeight()
     const iframes = document.querySelectorAll('iframe')
@@ -116,7 +121,7 @@ const ComponentView = ({
     })
   }
 
-  let componentStyles = "border p-3 d-flex flex-column align-items-center"
+  let componentStyles = "border-bottom p-3 d-flex flex-column align-items-center"
     + `${responsiveButtonsItems ? ' pb-4' : ''}`
 
   let accordionStyle = "accordion-collapse collapse"
@@ -130,11 +135,11 @@ const ComponentView = ({
     <div id={uuid}>
       <div className={componentStyles}>
         <span className="visually-hidden">Inizio componente:</span>
-        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 iframe-example ${previewWidth}`}></iframe>
+        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 rounded border iframe-example ${previewWidth}`}></iframe>
         <span className="visually-hidden">Fine componente.</span>
         {responsiveButtonsItems &&
           <div className="responsive-buttons d-none d-lg-block">
-            <div className="d-flex align-items-center justify-content-center pb-2 pt-4">
+            <div className="d-flex align-items-center justify-content-center pb-2 pt-4 mt-2">
               {viewer.label &&
                 <span className="small pe-3 text-secondary fw-semibold">{viewer.label}</span>
               }
@@ -143,48 +148,50 @@ const ComponentView = ({
           </div>
         }
       </div>
-      <div className="accordion accordion-left-icon" id={accId}>
-        <div className="accordion-item">
-          <div className="d-flex justify-content-between align-items-center" id={headId}>
-            <h2 id={`${idPrefix}-codeViewer`} className="accordion-header ">
-              <button className={accordionButtonStyle} type="button" data-bs-toggle="collapse" data-bs-target={`#${collId}`} aria-expanded={accordionOpen} aria-controls={collId}>
-                {accordionLabel}
-              </button>
-            </h2>
-            <div className="d-flex justify-content-between align-items-center">
-              {content &&
-                <Button onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel} addonStyle="p-0 shadow-none">
-                  <Icon {...ICON_COPY_CODE} />
-                </Button>
-              }
-              <a href={BSIExampleUrl} target="_blank" rel="noreferrer" aria-label="Mostra il solo componente in una finestra dedicata">
-                <Icon {...ICON_FULLSCREEN} />
-              </a>
-              {accordionUrl &&
-                <a href={accordionUrl} target="_blank" rel="noreferrer" aria-label={accordionSrLabel}>
-                  <Icon {...ICON_EXTERNAL} />
-                </a>
-              }
-            </div>
-          </div>
-
-          <div id={collId} className={accordionStyle} data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
-            <div className="accordion-body p-0">
-              <div aria-hidden="true" className="d-flex flex-row-reverse">
+      {accordionShow &&
+        <div className="accordion accordion-left-icon" id={accId}>
+          <div className="accordion-item">
+            <div className="d-flex justify-content-between align-items-center" id={headId}>
+              <h2 id={`${idPrefix}-codeViewer`} className="accordion-header ">
+                <button className={accordionButtonStyle} type="button" data-bs-toggle="collapse" data-bs-target={`#${collId}`} aria-expanded={accordionOpen} aria-controls={collId}>
+                  {accordionLabel}
+                </button>
+              </h2>
+              <div className="d-flex justify-content-between align-items-center">
                 {content &&
-                  <Checkbox id={`${idPrefix}-wrap`} label='Mostra codice a capo' customStyle={'me-4'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
+                  <Button onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel} addonStyle="p-0 shadow-none">
+                    <Icon {...ICON_COPY_CODE} />
+                  </Button>
+                }
+                <a href={BSIExampleUrl} target="_blank" rel="noreferrer" aria-label="Mostra il solo componente in una finestra dedicata">
+                  <Icon {...ICON_FULLSCREEN} />
+                </a>
+                {accordionUrl &&
+                  <a href={accordionUrl} target="_blank" rel="noreferrer" aria-label={accordionSrLabel}>
+                    <Icon {...ICON_EXTERNAL} />
+                  </a>
                 }
               </div>
-              <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
-                {content}
-              </SyntaxHighlighter>
+            </div>
+
+            <div id={collId} className={accordionStyle} data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
+              <div className="accordion-body p-0">
+                <div aria-hidden="true" className="d-flex flex-row-reverse">
+                  {content &&
+                    <Checkbox id={`${idPrefix}-wrap`} label='Mostra codice a capo' customStyle={'me-4'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
+                  }
+                </div>
+                <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
+                  {content}
+                </SyntaxHighlighter>
+              </div>
+            </div>
+            <div className="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby={`${idPrefix}-not1d-title`} id={`${idPrefix}-copyToast`}>
+              <span id={`${idPrefix}-not1d-title`} className="h5 "><Icon {...ICON_SUCCESS} />Codice copiato negli appunti</span>
             </div>
           </div>
-          <div className="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby={`${idPrefix}-not1d-title`} id={`${idPrefix}-copyToast`}>
-            <span id={`${idPrefix}-not1d-title`} className="h5 "><Icon {...ICON_SUCCESS} />Codice copiato negli appunti</span>
-          </div>
         </div>
-      </div>
+      }
     </div>
   )
 }
