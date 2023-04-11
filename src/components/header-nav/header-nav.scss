@@ -1,34 +1,61 @@
 @import "../../scss/bootstrap-breakpoints";
 
+header {
+  &.it-header-wrapper {
+    &.it-header-sticky.is-sticky .it-header-navbar-wrapper .menu-wrapper {
+      .navbar-nav {
+        flex-grow: 0;
+      }
+    }
+  }
+}
+
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-  .overflow-x-list {
-    overflow-x: scroll;
-    overflow-y: hidden;
+  header {
+    &.it-header-wrapper {
+      &.it-header-sticky.is-sticky .it-header-navbar-wrapper .menu-wrapper {
+        .cloned-element {
+          display: none;
+        }
+      }
+    }
   }
 }
 
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-  .overflow-x-list {
-    overflow-x: scroll;
-    overflow-y: hidden;
+  header {
+    &.it-header-wrapper {
+      &.it-header-sticky.is-sticky .it-header-navbar-wrapper .menu-wrapper {
+        .cloned-element {
+          display: none;
+        }
+      }
+    }
   }
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-  .overflow-x-list {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-  .overflow-x-list {
-    overflow-x: auto;
-    overflow-y: hidden;
+  header {
+    &.it-header-wrapper {
+      &.it-header-sticky.is-sticky .it-header-navbar-wrapper .menu-wrapper {
+        .cloned-element {
+          display: block;
+        }
+        .it-search-wrapper {
+          margin-left: 0;
+          a.rounded-icon {
+            margin-left: 0;
+          }
+        }
+      }
+    }
   }
 }
 
