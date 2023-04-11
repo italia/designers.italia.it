@@ -80,7 +80,8 @@ const Hero = ({
     rightColumnStyle = "col-12 col-md-3 offset-md-1 d-flex flex-column px-3 pe-lg-5 pt-md-4"
   }
 
-  const shareColor = background === 'light' ? 'primary' : 'white'
+  const shareColor = background === ('primary' || 'dark') ? 'white' : 'primary'
+
   const url = pageContext.breadcrumb.location
 
   return (
