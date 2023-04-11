@@ -32,3 +32,14 @@ div.chips-list-wrapper {
     color: var(--kangaroo-negative-element-color)
   }
 }
+
+@include media-breakpoint-up(lg) {
+  .design-system {
+    #main.col-lg-9 {
+      width:80%;
+    }
+    .menu-column.col-lg-3 {
+      width:20%;
+    }
+  }
+}
