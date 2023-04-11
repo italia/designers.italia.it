@@ -37,6 +37,7 @@ import {
   ProgressDonut,
   UploadDragDrop,
   BackToTop,
+  AcceptOverlay,
   Sticky,
   HeaderSticky,
   HistoryBack,
@@ -44,6 +45,7 @@ import {
   Masonry,
   List,
   Transfer,
+  VideoPlayer,
 } from './bootstrap-italia.esm'
 
 loadPlugin(icons)
@@ -62,6 +64,8 @@ export default {
   Tab,
   Toast,
   Tooltip,
+  VideoPlayer,
+  AcceptOverlay,
   Accordion,
   BackToTop,
   CarouselBI,
