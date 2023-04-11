@@ -64,7 +64,7 @@ const ComponentView = ({
       if (!iframe) return
       const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
       if (!exampleContainer) return
-      iframe.height = exampleContainer.clientHeight
+      iframe.height = exampleContainer.clientHeight + 50
       exampleContainer.addEventListener("click", () => {
         setTimeout(() => {
           iframe.height = exampleContainer.clientHeight + 50
