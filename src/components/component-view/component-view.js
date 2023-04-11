@@ -73,10 +73,6 @@ const ComponentView = ({
     })
   }
 
-  const initViewers = () => {
-
-  }
-
   useEffect(() => {
     initAutoHeight()
     const iframes = document.querySelectorAll('iframe')
