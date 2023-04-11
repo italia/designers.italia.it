@@ -57,24 +57,29 @@ const ComponentView = ({
   }
 
   const initAutoHeight = () => {
-    const iframe = document.querySelector('iframe') // xxx ref? there are two iframes...
-    if (!iframe) return
-    const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
-    if (!exampleContainer) return
-    iframe.height = exampleContainer.clientHeight
-    exampleContainer.addEventListener("click", () => {
-      setTimeout(() => {
-        iframe.height = exampleContainer.clientHeight + 50
-      }, 50)
+    const iframes = document.querySelectorAll('iframe')
+    if (!iframes) return
+    iframes.forEach((iframe) => {
+      if (!iframe) return
+      const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
+      if (!exampleContainer) return
+      iframe.height = exampleContainer.clientHeight
+      exampleContainer.addEventListener("click", () => {
+        setTimeout(() => {
+          iframe.height = exampleContainer.clientHeight + 50
+        }, 50)
+      })
     })
   }
 
   useEffect(() => {
     initAutoHeight()
-    const iframe = document.querySelector('iframe')
-    iframe.addEventListener("load", initAutoHeight)
-    iframe.addEventListener("transitionend", initAutoHeight)
-  });
+    const iframes = document.querySelectorAll('iframe')
+    iframes.forEach((iframe) => {
+      iframe.addEventListener("load", initAutoHeight)
+      iframe.addEventListener("transitionend", initAutoHeight)
+    })
+  })
 
   const theme = a11yDark;
 
@@ -95,7 +100,7 @@ const ComponentView = ({
 
   content = content.replace(/^\s+|\s+$/g, '')
 
-  const [previewWidth, setPreviewWidth] = useState(" viewer-full")
+  const [previewWidth, setPreviewWidth] = useState(" viewer-desktop")
   const changeResolution = (e) => {
     e.preventDefault()
     let res = e.target.textContent // sm, md, full
@@ -130,7 +135,7 @@ const ComponentView = ({
         {responsiveButtonsItems &&
           <div className="responsive-buttons d-none d-lg-block">
             <div className="d-flex align-items-center justify-content-center pb-2 pt-4">
-              {viewer.label && 
+              {viewer.label &&
                 <span className="small pe-3 text-secondary fw-semibold">{viewer.label}</span>
               }
               {responsiveButtonsItems}
