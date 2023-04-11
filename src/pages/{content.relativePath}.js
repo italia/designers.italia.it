@@ -768,24 +768,24 @@ export const query = graphql`
           }
         }
       }
-      navPreFooter {
-        navOtherPrevNext {
-          next {
-            label
-            url
-            blank
-            specular
-            icon {
-              icon
-              size
-              align
-              color
-              hidden
-              addonClasses
-            }
-          }
-        }
-      }
+      # navPreFooter {
+      #  navOtherPrevNext {
+      #    next {
+      #      label
+      #      url
+      #      blank
+      #      specular
+      #      icon {
+      #        icon
+      #        size
+      #        align
+      #        color
+      #        hidden
+      #        addonClasses
+      #      }
+      #    }
+      #  }
+      # }
       tabs {
         title
         componentVariant {
