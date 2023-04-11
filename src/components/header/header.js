@@ -1,6 +1,5 @@
 import React from "react"
 import { useEffect } from "react"
-import "./header.scss"
 import {HeaderSticky} from "bootstrap-italia"
 
 const Header = ({
