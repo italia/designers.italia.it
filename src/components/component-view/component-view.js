@@ -58,7 +58,7 @@ const ComponentView = ({
   }
 
   const initAutoHeight = () => {
-    const iframes = document.querySelectorAll('iframe') // XXX
+    const iframes = document.querySelectorAll('iframe') 
     if (!iframes) return
     iframes.forEach((iframe) => {
       const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
@@ -69,6 +69,13 @@ const ComponentView = ({
           iframe.height = exampleContainer.clientHeight + 50
         }, 50)
       })
+      const tabs = document.querySelector('.nav-tabs') 
+      if (!tabs) return
+      tabs.addEventListener("click", () => {
+        setTimeout(() => {
+          iframe.height = exampleContainer.clientHeight + 50
+        }, 50)
+      })  
     })
   }
 
