@@ -58,10 +58,9 @@ const ComponentView = ({
   }
 
   const initAutoHeight = () => {
-    const iframes = document.querySelectorAll('iframe')
+    const iframes = document.querySelectorAll('iframe') // XXX
     if (!iframes) return
     iframes.forEach((iframe) => {
-      if (!iframe) return
       const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
       if (!exampleContainer) return
       iframe.height = exampleContainer.clientHeight + 50
