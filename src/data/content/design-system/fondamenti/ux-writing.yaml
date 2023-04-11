@@ -206,10 +206,51 @@ components:
   sectionsEditorial2 :
     - full: true
       noSpace: true
-      title: Lorem ipsum
-      text: |
-            Lorem ipsum
+      title: "Tieni presente obiettivo e contesto di ogni pagina/schermata"
+      #text: |
       components:
         - name: TextImageCta
           text: |
-            Lorem ipsum
+            I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. buttons) con la giusta gerarchia di importanza è fondamentale per **orientare le persone a compiere l’azione primaria, suggerire le possibilità di interazione secondarie/collaterali, far raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo**.
+
+  sectionsEditorial2 :
+    - full: true
+      noSpace: true
+      title: "Rispetta la consistenza delle tue scelte di scrittura"
+      #text: |
+      components:
+        - name: TextImageCta
+          text: |
+            La progettazione di pattern d’interazione a livello di UX e UI implica anche definire scelte e pattern di contenuto ricorrenti e consistenti nell’ambito dello stesso prodotto. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e in maniera consistente, la terminologia usata, gli ingombri di testo, i copy delle call to action. 
+            
+  sectionsEditorial2 :
+    - full: true
+      noSpace: true
+      title: "Progetta messaggi che aiutano a risolvere gli errori"
+      #text: |
+      components:
+        - name: TextImageCta
+          text: |
+            Dando per implicito che è buona norma progettare un’interfaccia che impedisca il più possibile all’utente di commettere errori, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di errori (es. compilazione di form, upload di documenti, note legali, 404 etc…)è bene seguire alcune buone pratiche quali: 
+            
+            - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**;
+            - fornire - se applicabile - una **soluzione immediata**;
+            - se non è possibile una soluzione immediata, fornire un’esperienza il più piacevole possibile della condizione inaspettata, suggerendo **una via di uscita alternativa**
+            
+    - full: true
+      noSpace: false
+      title: Titolo gruppo
+      background: null
+      #text: Sottotitolo
+      components:
+        
+        - name: Table
+          title: L'enfasi sulla soluzione 
+          responsive: table-responsive-md
+          head:
+            - text: VA BENE
+            - text: NON VA BENE
+          rows:
+            - cols:
+              - text: "La data deve rispettare il formato GG/MM/AA ed essere successiva al…"
+              - text: Data non valida
