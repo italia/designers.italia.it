@@ -210,6 +210,8 @@ components:
         - name: TextImageCta
           text: |
             I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. buttons) con la giusta gerarchia di importanza è fondamentale per **orientare le persone a compiere l’azione primaria, suggerire le possibilità di interazione secondarie/collaterali, far raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo**.
+            
+            Scopri le buone pratiche sui contenuti del componente Buttons
 
     - full: true
       noSpace: true
@@ -235,7 +237,7 @@ components:
             
     - full: true
       noSpace: false
-      title: Titolo gruppo
+      #title: Titolo gruppo
       background: null
       #text: Sottotitolo
       components:
@@ -250,3 +252,38 @@ components:
             - cols:
               - text: "La data deve rispettare il formato GG/MM/AA ed essere successiva al…"
               - text: Data non valida
+
+    - full: true
+      noSpace: true
+      title: Progetta empty state di valore
+      #text: |
+      components:
+        - name: TextImageCta
+          text: |
+            I cosiddetti “empty state” o “stati vuoti” sono necessari in varie situazioni, tipicamente quando l’utente deve iniziare ad aggiungere alcuni elementi a una sezione, oppure quando sta cercando qualcosa ma il sistema non restituisce risultati. Scrivere un copy per uno stato vuoto è un’opportunità utile per far comprendere all’utente come iniziare a interagire con l’interfaccia, perché questa sia davvero di valore per la sua esperienza, senza perdite di tempo. 
+
+            Ecco alcune buone pratiche per progettare stati vuoti efficaci: 
+
+            - evita termini e tono di voce "negativi";
+            - suggerisci come avviare l'interazione che annulla lo stato vuoto
+            
+    - full: true
+      noSpace: false
+      #title: Titolo gruppo
+      background: null
+      #text: Sottotitolo
+      components:
+        
+        - name: Table
+          #title: L'enfasi sulla soluzione 
+          responsive: table-responsive-md
+          head:
+            - text: VA BENE
+            - text: NON VA BENE
+          rows:
+            - cols:
+              - text: I tuoi documenti appariranno qui
+              - text: Ops, non ci sono documenti qui   
+              - text: I tuoi servizi preferiti appariranno qui. Aggiungi il primo servizio
+              - text: Nessun servizio disponibile  
+
