@@ -137,7 +137,7 @@ exports.createPages = async ({ graphql, actions }) => {
     })
   })
   // tagsDesignSystem
-  const tagDesignSystemTemplate = path.resolve("src/templates/tagsDesignSystem.js")
+  const tagDesignSystemTemplate = path.resolve("src/templates/design-system-index-components-tags.js")
   const tagsDesignSystem = await graphql(`
     {
       tagsDesignSystemGroup: allContent {
