@@ -35,7 +35,7 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
 
   const { tag } = pageContext
   const { edges, totalCount } = data.allContentDesignSystemByTag
-  const tagHeader = `Esplora ${totalCount} sched${totalCount === 1 ? "a" : "e"} su questo argomento`
+  const tagHeader = `Esplora ${totalCount} component${totalCount === 1 ? "e" : "i"} utili per questo argomento`
 
   const iconOpt = {
     icon: 'sprites.svg#it-file',
@@ -61,7 +61,7 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        <Hero {...TagPageData.components.hero} title={tag} subtitle={`Tutte le schede del Design system utili per "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero>
+        <Hero {...TagPageData.components.hero} title={tag} subtitle={`Tutti i componenti del design system utili per "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero>
         {/* <Hero {...TagPageData.components.hero} title={`Argomento: "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero> */}
         <section className={styles} aria-describedby="archive-list-title">
           <div className={container}>
@@ -108,7 +108,7 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
                       })}
                     </ul>
                     <div className="my-5 mx-5">
-                      <Link to="/design-system/argomenti/"><strong>Scopri tutti gli argomenti del design system</strong></Link>
+                      <Link to="/design-system/componenti/argomenti/"><strong>Scopri tutti gli argomenti dei componenti del design system</strong></Link>
                     </div>
                   </div>
                 </div>

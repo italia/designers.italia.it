@@ -79,7 +79,7 @@ const Kangaroo = ({
               <div className="chips ms-md-3 mb-2 mb-lg-0">
                 {tagsDesignSystem.map((tag, index) => {
                   return (
-                    <Chip key={'chip-' + index} label={tag} size="lg" color="primary" path="design-system/argomenti"></Chip>
+                    <Chip key={'chip-' + index} label={tag} size="lg" color="primary" path="design-system/componenti/argomenti"></Chip>
                   )
                 })}
               </div>

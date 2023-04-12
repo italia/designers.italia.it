@@ -151,7 +151,7 @@ exports.createPages = async ({ graphql, actions }) => {
   tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach(tag => {
     console.log(`Creating tag page: ${tag.fieldValue}`)
     createPage({
-      path: `/design-system/argomenti/${_.kebabCase(tag.fieldValue)}/`, //xxx
+      path: `/design-system/componenti/argomenti/${_.kebabCase(tag.fieldValue)}/`, //xxx
       component: tagDesignSystemTemplate,
       context: {
         tag: tag.fieldValue,
