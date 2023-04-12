@@ -2,7 +2,7 @@ import React from "react";
 import Card from "../card/card";
 import Button from "../button/button";
 import LabelInput from "../labelinput/labelinput";
-
+import ListArchiveDSTags from "../list-archive-ds-tags/list-archive-ds-tags";
 
 import "./filter-cards.scss"
 
@@ -50,11 +50,11 @@ const FilterCards = ({
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         <div className="row">
-          <div  className="col-12 mb-5">
+          <div  className="col-12 mb-4">
             {title && <HLevel id={id}>{title}</HLevel>}
           </div>
 
-        {idInput &&  <div className="col-12 mb-3">
+        {/* {idInput &&  <div className="col-12 mb-3">
             <form className="" action="#">
               <div className="row">
                 <div className="col-7 col-md-9 col-lg-10">
@@ -71,7 +71,9 @@ const FilterCards = ({
               </div>
             </form>
           </div>
-          }
+          } */}
+
+        <ListArchiveDSTags></ListArchiveDSTags>
 
         </div>
         <div className="row cards-wrapper">

@@ -108,7 +108,7 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
                       })}
                     </ul>
                     <div className="my-5 mx-5">
-                      <Link to="/design-system/componenti/argomenti/"><strong>Scopri tutti gli argomenti dei componenti del design system</strong></Link>
+                      <Link to="/design-system/componenti/"><strong>Esplora tutti i componenti</strong></Link>
                     </div>
                   </div>
                 </div>
