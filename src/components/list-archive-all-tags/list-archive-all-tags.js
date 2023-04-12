@@ -59,7 +59,7 @@ const ListArchiveAllTags = ({
               </div>
             </div>
             <div className="px-3 px-lg-0 px-lg-5 pt-5">
-              <h3 className="border-bottom pb-4" id="archive-list-title">Esplora i <Link to="/design-system/componenti">componenti del design system</Link> per utilità</h3>
+              <h3 className="border-bottom pb-4" id="archive-list-title">Esplora gli argomenti del <Link to="/design-system/">design system</Link></h3>
               <div className="chips-list-wrapper">
                 <ul className="chips-list chips mt-4 mt-md-3 d-flex flex-wrap">
                   {data.tagsDesignSystem.group.map(tag => (
