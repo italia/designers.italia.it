@@ -9,15 +9,15 @@ import Chip from "../chip/chip"
 import { useStaticQuery, graphql } from "gatsby"
 import classNames from "classnames"
 
-const ListArchiveAllTags = ({
+const ListArchiveDSTags = ({
   background,
   noSpace,
 }) => {
 
   const data = useStaticQuery(graphql`
     query {
-      tags: allContent {
-        group(field: components___hero___kangaroo___tags) {
+      tagsDesignSystem: allContent {
+        group(field: components___hero___kangaroo___tagsDesignSystem) {
           fieldValue
           totalCount
         }
@@ -38,13 +38,13 @@ const ListArchiveAllTags = ({
       <div className="container-xxl">
         <div className="row">
           <div className="col-12 g-0">
-          <div className="px-3 px-lg-0 px-lg-5">
-              <h2 className="border-bottom pb-4" id="archive-list-title">Esplora gli argomenti</h2>
+            <div className="px-3 px-lg-0 px-lg-5">
+              <h3 className="border-bottom pb-4" id="archive-list-title">Esplora gli argomenti del design system</h3>
               <div className="chips-list-wrapper">
                 <ul className="chips-list chips mt-4 mt-md-3 d-flex flex-wrap">
-                  {data.tags.group.map(tag => (
+                  {data.tagsDesignSystem.group.map(tag => (
                     <ListItem key={tag.fieldValue} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
-                      <Chip label={tag.fieldValue} size="lg" color="primary">
+                      <Chip label={tag.fieldValue} size="lg" color="primary" path="design-system/argomenti">
                         <span className="ms-2 badge neutral-2-bg text-secondary my-0 pb-1">{tag.totalCount}</span>
                       </Chip>
                     </ListItem>
@@ -59,4 +59,4 @@ const ListArchiveAllTags = ({
   )
 }
 
-export default ListArchiveAllTags
+export default ListArchiveDSTags

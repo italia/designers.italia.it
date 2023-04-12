@@ -8,21 +8,22 @@ const Chip = (
 	{
 		size,
 		color,
-		url,
+		path,
 		label,
 		children,
 	}
-) =>{
-	let styles = 'chip chip-simple'
-		+ `${size ? ' chip-'+size : ''}`
-		+ `${color ? ' chip-'+color : ''}`
+) => {
+	const styles = 'chip chip-simple'
+		+ `${size ? ' chip-' + size : ''}`
+		+ `${color ? ' chip-' + color : ''}`
 
+	if (!path) path = "argomenti"
 
 	return (
-			<Link to={`/argomenti/${kebabCase(label)}/`} className={styles}>
-				<span className="chip-label">{label}</span>
-				{children}
-			</Link>
+		<Link to={`/${path}/${kebabCase(label)}/`} className={styles}>
+			<span className="chip-label">{label}</span>
+			{children}
+		</Link>
 	)
 }
 
