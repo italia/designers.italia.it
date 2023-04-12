@@ -8,7 +8,6 @@ import TemplateArchiveNews from "../templates/archive-news"
 import TemplateArchiveEvents from "../templates/archive-events"
 import TemplateDSComponent from "../templates/design-system-component"
 import TemplateDSIndex from "../templates/design-system-index"
-import TemplateDSIndexComponents from "../templates/design-system-index-components"
 import TemplateHome from "../templates/home"
 import TemplateSearchResults from "../templates/search-results"
 import TemplateLV1Community from "../templates/level-1-community"
@@ -33,7 +32,6 @@ const TEMPLATES = {
   'home' : TemplateHome,
   'search-results' : TemplateSearchResults,
   'design-system-index' : TemplateDSIndex,
-  'design-system-index-components' : TemplateDSIndexComponents,
   'design-system-component' : TemplateDSComponent
 }
 
@@ -651,6 +649,7 @@ export const query = graphql`
           id
           title
           col2
+          showTags
           cards {
             title
             imgRatio
