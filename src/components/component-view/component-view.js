@@ -21,6 +21,7 @@ const ComponentView = ({
   content,
   viewer,
   idPrefix,
+  viewerHeight,
   accordionOpen,
   accordionShow,
   accordionLabel,
@@ -58,24 +59,31 @@ const ComponentView = ({
   }
 
   const initAutoHeight = () => {
-    const iframes = document.querySelectorAll('iframe') 
+    const iframes = document.querySelectorAll('iframe')
     if (!iframes) return
     iframes.forEach((iframe) => {
       const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
       if (!exampleContainer) return
-      iframe.height = exampleContainer.clientHeight + 50
-      exampleContainer.addEventListener("click", () => {
-        setTimeout(() => {
-          iframe.height = exampleContainer.clientHeight + 50
-        }, 50)
-      })
-      const tabs = document.querySelector('.nav-tabs') 
-      if (!tabs) return
-      tabs.addEventListener("click", () => {
-        setTimeout(() => {
-          iframe.height = exampleContainer.clientHeight + 50
-        }, 50)
-      })  
+      if (viewerHeight === 0) {
+        // auto width
+        iframe.height = exampleContainer.clientHeight + 50
+        exampleContainer.addEventListener("click", () => {
+          setTimeout(() => {
+            iframe.height = exampleContainer.clientHeight + 50
+          }, 50)
+        })
+        const tabs = document.querySelector('.nav-tabs')
+        if (!tabs) return
+        tabs.addEventListener("click", () => {
+          setTimeout(() => {
+            iframe.height = exampleContainer.clientHeight + 50
+          }, 50)
+        })
+      } else if (viewerHeight > 0) {
+        // fixed width
+        iframe.height = viewerHeight + 50
+        exampleContainer.classList.add("h-100")
+      }
     })
   }
 
