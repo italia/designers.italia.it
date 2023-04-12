@@ -123,6 +123,7 @@ export const query = graphql`
               color
             }
             tags
+            tagsDesignSystem
             dropdown {
               btnId
               button {

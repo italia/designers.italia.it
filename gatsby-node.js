@@ -1,15 +1,15 @@
-const { createRemoteFileNode,  } = require("gatsby-source-filesystem")
+const { createRemoteFileNode, } = require("gatsby-source-filesystem")
 const jsYaml = require(`js-yaml`)
 
 const { fetchDataFiles } = require('./server/fetchDataFiles')
 const { findValues } = require('./server/utils/findValues')
 
-const isRemoteAsset= (assetPath) => {
+const isRemoteAsset = (assetPath) => {
   return assetPath.startsWith('http')
 }
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === "build-html"  || stage === "develop-html") {
+  if (stage === "build-html" || stage === "develop-html") {
     actions.setWebpackConfig({
       module: {
         rules: [
@@ -86,7 +86,7 @@ exports.onCreateNode = async ({
     node.internal.type === "File" &&
     node.sourceInstanceName === "content" &&
     (node.extension === 'yaml' ||
-     node.extension === 'yml')
+      node.extension === 'yml')
   ) {
     const content = await loadNodeContent(node)
     const parsedContent = jsYaml.load(content)
@@ -112,11 +112,10 @@ const path = require("path")
 const _ = require("lodash")
 
 exports.createPages = async ({ graphql, actions }) => {
-  
-  // tags
-  const {createPage} = actions
-  const tagTemplate = path.resolve("src/templates/tag.js")
 
+  // tags
+  const { createPage } = actions
+  const tagTemplate = path.resolve("src/templates/tag.js")
   const tags = await graphql(`
     {
       tagsGroup: allContent {
@@ -127,7 +126,6 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `
   )
-  
   tags.data.tagsGroup.group.forEach(tag => {
     console.log(`Creating tag page: ${tag.fieldValue}`)
     createPage({
@@ -138,11 +136,31 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     })
   })
-
+  // tagsDesignSystem
+  const tagDesignSystemTemplate = path.resolve("src/templates/tagsDesignSystem.js")
+  const tagsDesignSystem = await graphql(`
+    {
+      tagsDesignSystemGroup: allContent {
+        group(field: components___hero___kangaroo___tagsDesignSystem) {
+          fieldValue
+        }
+      }
+    }
+  `
+  )
+  tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach(tag => {
+    console.log(`Creating tag page: ${tag.fieldValue}`)
+    createPage({
+      path: `/argomenti/${_.kebabCase(tag.fieldValue)}/`, //xxx
+      component: tagDesignSystemTemplate,
+      context: {
+        tag: tag.fieldValue,
+      }
+    })
+  })
 
   // redirs
   const { createRedirect } = actions
-
   const redirs = await graphql(`
     {
       allContent (filter: { metadata: { redirect_from: { ne: null } } }) {
@@ -160,14 +178,11 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `
   )
-
   redirs.data.allContent.edges.forEach((edge) => {
     const node = edge.node
-
     node.metadata.redirect_from.forEach((fromPath) => {
       const toPath = edge.node.seo.pathname
       console.log(`Creating redirect: ${fromPath} -> ${toPath}...`)
-
       createRedirect({ fromPath, toPath, })
     })
   })
