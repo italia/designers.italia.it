@@ -108,7 +108,7 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
                       })}
                     </ul>
                     <div className="my-5 mx-5">
-                      <Link to="/argomenti/"><strong>Scopri tutti gli argomenti</strong></Link>
+                      <Link to="/design-system/argomenti/"><strong>Scopri tutti gli argomenti del design system</strong></Link>
                     </div>
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export const Head = ({ pageContext, data: { content } }) => {
     description = {`Tutti i contenuti del design system relativi all'argomento "${tag}"`}
     // image = {content.seo.image}
     // twitterImage = {content.seo.twitterImage}
-    pathname = {`/argomenti/"${tag}"/`}
+    pathname = {`/design-system/argomenti/"${tag}"/`}
     // canonical = {content.seo.canonical}
   >
   </Seo>
