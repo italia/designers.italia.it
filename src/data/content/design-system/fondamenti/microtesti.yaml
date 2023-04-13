@@ -118,16 +118,10 @@ components:
       tags: [Content design,Progettazione interfaccia]
 
   sectionsEditorial :
-    # - fullColumn: true
-    #   noSpace: true
-    #   components:
-    #     - name: ImgFull
-    #       img: /images/image-icons-fullwidth.jpg
-    #       alt: Descrizione immagine grande
     - full: true
       noSpace: false
       title: Scrivi per facilitare e orientare l’interazione
-      text: Migliora lorem ipsum
+      text: Migliora il rapporto tra utenti e interfaccia
       background: null
       components:
         - name: TextImageCta
@@ -142,116 +136,139 @@ components:
 
     - full: true
       noSpace: true
-      title: Titolo gruppo
+      title: Buone pratiche
       background: null
-      #text: Sottotitolo
+      text: Cose da fare e cose da non fare
       components:
         
+        # 1st
         - name: Table
           title: Prima l'azione 
           responsive: table-responsive-md
           addonClasses: fixed
           head:
-            - text: VA BENE
-            - text: NON VA BENE
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
           rows:
             - cols:
               - text: Aggiungi un servizio alla lista.
               - text: I servizi appariranno qui dopo averli aggiunti alla lista.             
             
         - name: TextImageCta
-          title:
           text: |
-            Lorem ipsum qui c'è il testo
+            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
 
+
+        # 2nd
         - name: Table
           title: "Call to action: verbo e complemento oggetto"
           responsive: table-responsive-md
           addonClasses: fixed
           head:
-            - text: VA BENE
-            - text: NON VA BENE
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
           rows:
             - cols:
               - text: Cerca un documento. 
               - text: Fai una ricerca fra i documenti. 
           
         - name: TextImageCta
-          title:
           text: |
-            Lorem ipsum qui c'è il testo
-            
+            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
+
+
+        # 3rd   
         - name: Table
           title: Diritti al punto e accessibili
           responsive: table-responsive-md
           addonClasses: fixed
           head:
-            - text: VA BENE
-            - text: NON VA BENE
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
           rows:
             - cols:
               - text: I campi con asterisco sono obbligatori. 
               - text: Questo campo non è opzionale. 
           
         - name: TextImageCta
-          title:
           text: |
-            Lorem ipsum qui c'è il testo
-              
+            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
+
+
+    ####         
     - full: true
-      noSpace: true
-      title: "Tieni presente obiettivo e contesto di ogni pagina/schermata"
-      #text: |
+      noSpace: false
+      title: "Altre buone pratiche"
+      text: Da tenere presente per tutta l'esperienza
+
       components:
         - name: TextImageCta
+          title: Tieni presente obiettivo e contesto
           text: |
-            I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. buttons) con la giusta gerarchia di importanza è fondamentale per **orientare le persone a compiere l’azione primaria, suggerire le possibilità di interazione secondarie/collaterali, far raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo**.
+            I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. buttons) con la giusta gerarchia di importanza è fondamentale per **orientare le persone a compiere l’azione primaria, suggerire le possibilità di interazione secondarie o collaterali, far raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo**.
             
             Scopri le buone pratiche sui contenuti del componente Buttons
 
-    - full: true
-      noSpace: true
-      title: "Rispetta la consistenza delle tue scelte di scrittura"
-      #text: |
-      components:
         - name: TextImageCta
+          title: "Rispetta la consistenza delle tue scelte di scrittura"
           text: |
             La progettazione di pattern d’interazione a livello di UX e UI implica anche definire scelte e pattern di contenuto ricorrenti e consistenti nell’ambito dello stesso prodotto. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e in maniera consistente, la terminologia usata, gli ingombri di testo, i copy delle call to action. 
             
-    - full: true
-      noSpace: true
-      title: "Progetta messaggi che aiutano a risolvere gli errori"
-      #text: |
-      components:
         - name: TextImageCta
+          title: "Progetta messaggi che aiutano a risolvere gli errori"
           text: |
-            Dando per implicito che è buona norma progettare un’interfaccia che impedisca il più possibile all’utente di commettere errori, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di errori (es. compilazione di form, upload di documenti, note legali, 404 etc…)è bene seguire alcune buone pratiche quali: 
+            Dando per implicito che è buona norma progettare un’interfaccia che impedisca il più possibile all’utente di commettere errori, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di errori (es. compilazione di form, upload di documenti, note legali, 404 etc…) è bene seguire alcune buone pratiche quali: 
             
             - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**;
-            - fornire - se applicabile - una **soluzione immediata**;
-            - se non è possibile una soluzione immediata, fornire un’esperienza il più piacevole possibile della condizione inaspettata, suggerendo **una via di uscita alternativa**
+            - fornire — se applicabile — una **soluzione immediata**;
+            - se non è possibile una soluzione immediata, fornire un’esperienza il più piacevole possibile della condizione inaspettata, suggerendo **una via di uscita alternativa**.
             
+    ####
     - full: true
-      noSpace: false
-      #title: Titolo gruppo
+      noSpace: true
+      title: Titolo gruppo
       background: null
-      #text: Sottotitolo
+      text: Sottotitolo
       components:
         
+        # 4th
         - name: Table
           title: L'enfasi sulla soluzione 
           responsive: table-responsive-md
+          noSpace: true
           addonClasses: fixed
           head:
-            - text: VA BENE
-            - text: NON VA BENE
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
           rows:
             - cols:
               - text: "La data deve rispettare il formato GG/MM/AA ed essere successiva al…"
               - text: Data non valida
 
+        - name: TextImageCta
+          text: |
+            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
+
+
+    #
     - full: true
-      noSpace: true
+      noSpace: false
       title: Progetta empty state di valore
       #text: |
       components:
@@ -263,21 +280,18 @@ components:
 
             - evita termini e tono di voce "negativi";
             - suggerisci come avviare l'interazione che annulla lo stato vuoto
-            
-    - full: true
-      noSpace: false
-      #title: Titolo gruppo
-      background: null
-      #text: Sottotitolo
-      components:
-        
+          
         - name: Table
           #title: L'enfasi sulla soluzione 
           responsive: table-responsive-md
           addonClasses: fixed
           head:
-            - text: VA BENE
-            - text: NON VA BENE
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
           rows:
             - cols:
               - text: I tuoi documenti appariranno qui
@@ -285,4 +299,8 @@ components:
             - cols:
               - text: I tuoi servizi preferiti appariranno qui. Aggiungi il primo servizio
               - text: Nessun servizio disponibile  
+
+        - name: TextImageCta
+          text: |
+            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
 
