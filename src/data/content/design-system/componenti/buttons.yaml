@@ -42,7 +42,7 @@ components:
     title: Buttons
     titleTag:
       label: Pronto
-      url: "#ComponentStatus"
+      # url: "#ComponentStatus"
       addonClasses: bg-success mb-2
       screenReaderText: "Stato del componente:"
     column: true
@@ -109,12 +109,12 @@ tabs:
               - Per comunicare senza ambiguità la gerarchia delle azioni generate dai pulsanti, usa le varianti di grandezza e tipologia.
               - Usa un pulsante con icona per aggiungere un’informazione visiva all’interazione (es. pulsante di accesso ad area riservata)
 
-              #### Attenzione a
+              ### Attenzione a
               - Non usare più di un pulsante primary nello stesso contesto di azione
               - Non usare pulsanti primary per azioni di valore secondario
               - Non usare i pulsanti all’interno di paragrafi di testo
 
-              #### Buone pratiche sui contenuti
+              ### Buone pratiche sui contenuti
               - Le etichette di testo devono comunicare in maniera immediata, chiara e senza ambiguità il significato dell’azione
               - Non usare etichette di testo troppo lunghe
               - Prediligi etichette di testo che fanno riferimento a una sola azione alla volta
@@ -123,11 +123,13 @@ tabs:
               - I pulsanti con sola icona potrebbero generare ambiguità: se possibile, aggiungi sempre un’etichetta di testo
 
       - full: true
-        noSpace: false
-        title: Accessibilità
-        background: null
-        text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
+        noSpace: true
         components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
           - name: Table
             responsive: table-responsive-md
             head:
@@ -163,15 +165,11 @@ tabs:
                     label: Pronto
                     addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
                 - text: Comprensibile, prevedibile, gestione semplice dell’errore
-
           - name: TextImageCta
-            headingLevel: 4
-            text: |
-              Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
             ctas:
-            - label: Apri una issue su Bootstrap Italia #C
+            - label: Apri una issue sulla repository Bootstrap Italia #C
               screenReaderText: " (si apre in una nuova finestra)" #C
-              url: https://github.com/italia/bootstrap-italia/issues #M
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
               blank: true #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
@@ -225,7 +223,6 @@ tabs:
                     icon:
                       icon: sprites.svg#it-external-link
                       size: sm
-
               - cols:
                 - text: React
                   scope: row
@@ -240,78 +237,90 @@ tabs:
                     icon:
                       icon: sprites.svg#it-external-link
                       size: sm
-
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
           - name: TextImageCta
-            text: |
-              Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
-              Partecipa all'evoluzione del design system del Paese!
+            ctas:
+            - label: Apri una issue sulla repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sulla repository dello UI Kit #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Progettazione
     sectionsEditorial:
 
       - full: true
         noSpace: true
-        title: Anatomia
-      - full: true
-        noSpace: true
-        background: null
         components:
           - name: TextImageCta
             noSpace: false
+            title: Anatomia
+            headingLevel: 2
+            text: |
+              _In stesura_
+
+      - full: true
+        noSpace: true
+        components:
           - name: TextImageCta
             noSpace: false
-            text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.
-              Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
-          - name: TextImageCta
-            noSpace: true
-            title: Contenuti
-            text: |
-              *In stesura*
-          - name: TextImageCta
-            noSpace: true
             title: Comportamento
+            headingLevel: 2
             text: |
               *In stesura*
-          - name: TextImageCta
-            noSpace: true
-            title: Interazione
-            text: |
-              *In stesura*
-          - name: TextImageCta
-            noSpace: true
-            title: Specifiche di design
-            # lead: Eventuale lead paragraph
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: false
-        title: Kit UI
-        text: La scatola per costruire prototipi hi-fi con il design system del Paese
-        background: null
-        buttons:
-          - label: Vai al kit nella community Figma
-            blank: true
-            btnStyle: primary me-3
-            url: https://www.figma.com/community/file/1105848677422572920
-            icon:
-              icon: sprites.svg#it-figma
-              size: sm
-              color: white
-              align: middle
-              addonClasses: ms-2
 
       - full: true
         noSpace: true
-        title: Design Tokens
-        # text:
         components:
-
           - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
             text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.
-              La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI.*
+              *In stesura*
+
+      - full: true
+        noSpace: true
+        components: 
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per designer #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-designer/" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Sviluppo
 
@@ -326,26 +335,20 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
-        title: Bootstrap Italia
-        text: Il framework di riferimento per lo sviluppo del design system del Paese
-        buttons:
-          - label: Vai al sito di documentazione
-            btnStyle: primary me-3
-            url: https://italia.github.io/bootstrap-italia/
-            blank: true
-            icon:
-              icon: sprites.svg#it-external-link
-              size: sm
-              color: white
-              align: middle
-              addonClasses: ms-2
-          - label: Vai alla repository GitHub
-            btnStyle: outline-secondary
-            url: https://github.com/italia/bootstrap-italia/
-            blank: true
-            icon:
-              icon: sprites.svg#it-github
-              size: sm
-              color: secondary
-              align: middle
-              addonClasses: ms-2
+        components: 
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per sviluppatori #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-sviluppatori/" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

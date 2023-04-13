@@ -41,9 +41,9 @@ components:
     background: null
     title: Breadcrumbs
     titleTag:
-      label: Da verificare
-      url: "#ComponentStatus"
-      addonClasses: neutral-2-bg text-secondary mb-2
+      label: Pronto
+      # url: "#ComponentStatus"
+      addonClasses: bg-success mb-2
       screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Le breadcrumbs aiutano gli utenti a capire dove si trovano nella struttura di un sito e a navigare tra i vari livelli"
@@ -96,7 +96,6 @@ tabs:
       accordionShow: false
 
     sectionsEditorial:
-
       - full: true
         noSpace: true
         components:
@@ -118,23 +117,32 @@ tabs:
               - Come elemento di navigazione secondaria
               - Posizionato in alto a sinistra dopo l’header e la navigazione, ma prima del titolo di pagina
 
-              #### Attenzione a
+              ### Attenzione a
               - Non usarlo per sostituire il menu di navigazione principale
               - Non usarlo per indicare il progresso di un flusso transazionale lineare, come la richiesta di un servizio o un pagamento
               - Non usarlo per un sito che presenta un solo livello di architettura
               
-              #### Buone pratiche sui contenuti
+              ### Buone pratiche sui contenuti
               I titoli delle breadcrumb devono corrispondere ai titoli delle pagine a cui si riferiscono
-
-              #### Alternative a questo componente
-              **Progress indicator** - utile a indicare il progresso di un flusso transazionale lineare, come la richiesta di un servizio o un pagamento.
+ 
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Alternative a questo componente
+            headingLevel: 2
+            text: |
+              - **[Progress indicators](/design-system/componenti/progress-indicators)**, utile a indicare il progresso di un flusso transazionale lineare, come la richiesta di un servizio o un pagamento.
 
       - full: true
-        noSpace: false
-        title: Accessibilità
-        background: null
-        text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
+        noSpace: true
         components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
           - name: Table
             responsive: table-responsive-md
             head:
@@ -170,17 +178,13 @@ tabs:
                     label: Pronto
                     addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Da verificare > neutral-2-bg text-secondary
                 - text: Comprensibile, prevedibile, gestione semplice dell’errore
-
           - name: TextImageCta
-            headingLevel: 4
-            text: |
-              Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
             ctas:
-            - label: Apri una issue su Bootstrap Italia #C
+            - label: Apri una issue sulla repository Bootstrap Italia #C
               screenReaderText: " (si apre in una nuova finestra)" #C
-              url: https://github.com/italia/bootstrap-italia/issues #M
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
               blank: true #M #C true if new tab for external links
-              icon: 
+              icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
                 align: middle
@@ -190,12 +194,12 @@ tabs:
 
       - full: true
         noSpace: true
-        title: Stato del componente
-        id: ComponentStatus
-        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
-        background: null
         components:
-
+          - name: TextImageCta
+            noSpace: false
+            title: Stato del componente
+            headingLevel: 2
+            text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
           - name: Table
             responsive: table-responsive-md
             head:
@@ -245,79 +249,101 @@ tabs:
                     icon:
                       icon: sprites.svg#it-external-link
                       size: sm
-      
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
           - name: TextImageCta
-            text: |
-              Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
-              Partecipa all'evoluzione del design system del Paese!
+            ctas:
+            - label: Apri una issue sulla repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sulla repository dello UI Kit #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Progettazione
     sectionsEditorial:
 
       - full: true
         noSpace: true
-        title: Anatomia
-      - full: true
-        noSpace: true
-        background: null
         components:
           - name: TextImageCta
             noSpace: false
-          - name: TextImageCta
-            noSpace: false
+            title: Anatomia
+            headingLevel: 2
             text: |
+              *Immagine in via di definizione*
+
               1. **Pagina del livello superiore con link**: indica il titolo della pagina del livello superiore e ne permette la navigazione tramite link
               2. **Separatore**: distingue le pagine
               3. **Pagina corrente**: indica il titolo della pagina su cui si trova l’utente
+        
+      - full: true
+        noSpace: true
+        components:
           - name: TextImageCta
-            noSpace: true
+            noSpace: false
             title: Comportamento
+            headingLevel: 2
             text: |
               Tutti i titoli di pagina nel componente breadcrumb devono essere interattivi e rimandare alle rispettive pagine, ad eccezione della pagina corrente.
-              
               I separatori non sono interattivi.
 
-          - name: TextImageCta
-            noSpace: true
-            title: Interazione
-            text: |
-              #### Mouse
-              Gli utenti cliccano sui link delle breadcrumb per raggiungere le pagine corrispondenti.
-              
-              #### Tastiera
-              Gli utenti navigano tra i link delle breadcrumb premendo _Tab_ e _Shift-Tab_ e raggiungono le pagine corrispondenti premendo _Enter_, una volta che il link è in focus.
-          - name: TextImageCta
-            noSpace: true
-            title: Specifiche di design
-            text: |
-              *In stesura*   
+              ### Interazione
 
-      - full: true
-        noSpace: false
-        title: Kit UI
-        text: La scatola per costruire prototipi hi-fi con il design system del Paese
-        background: null
-        buttons:
-          - label: Vai al kit nella community Figma
-            blank: true
-            btnStyle: primary me-3
-            url: https://www.figma.com/community/file/1105848677422572920
-            icon:
-              icon: sprites.svg#it-figma
-              size: sm
-              color: white
-              align: middle
-              addonClasses: ms-2
+              - Mouse: gli utenti cliccano sui link delle breadcrumb per raggiungere le pagine corrispondenti.
+              
+              - Tastiera: gli utenti navigano tra i link delle breadcrumb premendo _Tab_ e _Shift-Tab_ e raggiungono le pagine corrispondenti premendo _Enter_, una volta che il link è in focus.
 
       - full: true
         noSpace: true
-        title: Design Tokens
         components:
-
           - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
             text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.   
-              La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI.*
+              *In stesura*
+
+      - full: true
+        noSpace: true
+        components: 
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per designer #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-designer/" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Sviluppo
 
@@ -332,26 +358,20 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
-        title: Bootstrap Italia
-        text: Il framework di riferimento per lo sviluppo del design system del Paese
-        buttons:
-          - label: Vai al sito di documentazione
-            btnStyle: primary me-3
-            url: https://italia.github.io/bootstrap-italia/
-            blank: true
-            icon:
-              icon: sprites.svg#it-external-link
-              size: sm
-              color: white
-              align: middle
-              addonClasses: ms-2
-          - label: Vai alla repository GitHub
-            btnStyle: outline-secondary
-            url: https://github.com/italia/bootstrap-italia/
-            blank: true
-            icon:
-              icon: sprites.svg#it-github
-              size: sm
-              color: secondary
-              align: middle
-              addonClasses: ms-2
+        components: 
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per sviluppatori #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-sviluppatori/" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
