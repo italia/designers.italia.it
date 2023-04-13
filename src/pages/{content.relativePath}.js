@@ -592,6 +592,10 @@ export const query = graphql`
             addonClasses
             head {
               text
+              tag {
+                label
+                addonClasses
+              }
             }
             rows {
               cols {
