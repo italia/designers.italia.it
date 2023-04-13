@@ -796,6 +796,7 @@ export const query = graphql`
         componentVariant {
           id
           title
+          textInfo
           viewerHeight
           accordionUrl
           accordionOpen
