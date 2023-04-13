@@ -234,7 +234,7 @@ export const query = graphql`
           specialKangarooComponent
           titleTag {
             label
-            url
+            # url
             addonClasses
             screenReaderText
           }
@@ -854,19 +854,19 @@ export const query = graphql`
           }
           text
           id
-          buttons {
-            label
-            blank
-            btnStyle
-            url
-            icon {
-              icon
-              size
-              color
-              align
-              addonClasses
-            }
-          }
+          # buttons {
+          #  label
+          #  blank
+          #  btnStyle
+          #  url
+          #  icon {
+          #    icon
+          #    size
+          #    color
+          #    align
+          #    addonClasses
+          #  }
+          # }
         }
       }
     }
