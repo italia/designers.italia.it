@@ -54,7 +54,7 @@ const ListArchiveNews = ({
     }
   `)
 
-  const { edges, totalCount } = data.allContent
+  const { edges } = data.allContent
   const tagHeader = 'Esplora l’archivio'
 
   const iconOpt = {

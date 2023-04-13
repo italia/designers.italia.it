@@ -16,8 +16,6 @@ import Feedback from "../components/feedback/feedback"
 
 import NavSidebar from "../components/nav-sidebar/nav-sidebar"
 import Hero from "../components/hero/hero"
-import SectionEditorial from "../components/section-editorial/section-editorial"
-import FilterCards from "../components/filter-cards/filter-cards"
 
 import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
@@ -27,7 +25,6 @@ import dsNav from "../data/dsnav.yaml"
 
 import Link from "../components/link/link"
 import ListItem from "../components/list-item/list-item"
-import Tag from "../components/tag/tag"
 import ListArchiveDSTags from "../components/list-archive-ds-tags/list-archive-ds-tags"
 import { graphql } from "gatsby"
 

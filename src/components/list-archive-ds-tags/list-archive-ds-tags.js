@@ -4,15 +4,10 @@ import "../../scss/styles.scss"
 import "../../js/globals"
 
 import ListItem from "../list-item/list-item"
-import Link from "../link/link"
 import Chip from "../chip/chip"
 import { useStaticQuery, graphql } from "gatsby"
-import classNames from "classnames"
 
-const ListArchiveDSTags = ({
-  background,
-  noSpace,
-}) => {
+const ListArchiveDSTags = () => {
 
   const data = useStaticQuery(graphql`
     query {

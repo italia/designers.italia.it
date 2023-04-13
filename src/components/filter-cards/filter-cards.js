@@ -1,7 +1,5 @@
 import React from "react";
 import Card from "../card/card";
-import Button from "../button/button";
-import LabelInput from "../labelinput/labelinput";
 import ListArchiveDSTags from "../list-archive-ds-tags/list-archive-ds-tags";
 
 import "./filter-cards.scss"
@@ -11,8 +9,6 @@ const FilterCards = ({
   background,
   title,
   headingLevel,
-  idInput,
-  button,
   cards,
   showTags,
   col2,
@@ -54,25 +50,6 @@ const FilterCards = ({
           <div className="col-12 mb-4">
             {title && <HLevel id={id}>{title}</HLevel>}
           </div>
-
-          {/* {idInput &&  <div className="col-12 mb-3">
-            <form className="" action="#">
-              <div className="row">
-                <div className="col-7 col-md-9 col-lg-10">
-                  <LabelInput 
-                    id={idInput} 
-                    label='Filtra' // xxx move to data yaml this string
-                    // value="Esempio di ricerca"
-                    >
-                  </LabelInput>
-                </div>
-                <div className="col-5 col-md-3 col-lg-2">
-                  <Button {...button}/>
-                </div>
-              </div>
-            </form>
-          </div>
-          } */}
 
           {showTags &&
             <ListArchiveDSTags></ListArchiveDSTags>
