@@ -136,7 +136,7 @@ const NavSidebar = ({
   })
 
   return (
-    <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column bs-is-sticky" ref={navStickyRef}>
+    <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column border-end bs-is-sticky" ref={navStickyRef}>
       <div className="nav-sidebar">
         <nav className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0" aria-label={ariaLabel}>
           <button className="custom-navbar-toggler" type="button" aria-controls={id} aria-expanded="false" aria-label={toggleAriaLabel} data-bs-toggle="navbarcollapsible" data-bs-target="#navSidebarDs"><span className="it-list"></span>{toggleLabel}
