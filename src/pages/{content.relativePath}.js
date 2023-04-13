@@ -589,7 +589,7 @@ export const query = graphql`
             text
             noSpace
             responsive
-            # addonClasses
+            addonClasses
             head {
               text
             }
