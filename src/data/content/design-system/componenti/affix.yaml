@@ -43,11 +43,11 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
+    titleTag:
+      # label: Pronto
+      # url: "#ComponentStatus"
+      # addonClasses: bg-success mb-2
+      # screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Un affix è un elemento ancorato su schermata durante lo scorrere di una specifica sezione di pagina, utile per i menu e gli indici"
     # img: /images/400x300.png #I
@@ -92,7 +92,9 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Su pagine lunghe, può essere utile ancorare in una specifica area della schermata alcuni elementi per facilitare l’interazione utente soprattutto su mobile. 
+              Un elemento affix rimane ancorato su schermata mentre si è su una specifica area della pagina.
+
 
       - full: true
         noSpace: true
@@ -102,7 +104,13 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Per elementi come il gli indici di sezione, le azioni principali (pulsanti), i pulsanti di condivisione dei social network.
+
+              ### Attenzione a
+              - Non nascondere il contenuto di una pagina sotto un affix.
+
+              ### Buone pratiche sui contenuti
+              - In base all’elemento che viene ancorato con un affix (pulsante, menu, icone), valgono le stesse considerazioni di contenuto valide per il componente specifico.
 
       - full: true
         noSpace: true
@@ -146,7 +154,9 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Un elemento affix rimane ancorato su schermata mentre si è su una specifica area della pagina. Allo scorrere completo dell’area di pagina, scorrerà anche l’elemento affix.
+
+              Un elemento affix può avere uno sviluppo **verticale** o **orizzontale** e può essere ancorato alla **parte alta** o alla **parte bassa** della schermata.
 
       - full: true
         noSpace: true

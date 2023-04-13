@@ -92,7 +92,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente Alert permette di creare messaggi di avviso per gli utenti. Questi messaggi sono utili per comunicare informazioni importanti o per avvisare gli utenti di situazioni che richiedono la loro attenzione, senza interrompere il flusso di navigazione.
+
+              Il componente Alert è usato per messaggi immediati e temporanei, come:
+              - errori o problemi tecnici;
+              - eventi importanti che richiedono attenzione, come una scadenza imminente o un imprevisto;
+              - conferme di completamento.
+
 
       - full: true
         noSpace: true
@@ -102,7 +108,28 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Personalizza il componente Alert per riflettere il tipo di messaggio di avviso.
+              - Aggiungi un pulsante di chiusura per consentire all'utente di chiudere l'avviso.
+
+              ### Attenzione a
+              - Non usarlo per avvisi e situazioni non importanti, potresti distrarre gli utenti e causare confusione.
+
+              ### Buone pratiche sui contenuti
+              - Assicurati che il testo del messaggio sia chiaro e conciso.
+              - Se il messaggio indica un errore, fornisci all’utente indicazioni chiare su come risolverlo.
+              - Usa collegamenti ipertestuali per rimandare a pagine di approfondimento, se rilevante.
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Alternative a questo componente
+            headingLevel: 2
+            text: |
+              - [Callout](/design-system/componenti/callout/), permette di evidenziare delle informazioni testuali in pagina.
+              - [Modal](/design-system/componenti/modal/), avvisa l’utente di azioni necessarie da compiere.
+              - [Notifications](/design-system/componenti/notifications/), avvisi a comparsa temporanei in sovraimpressione sulla schermata.
 
       - full: true
         noSpace: true
@@ -136,7 +163,14 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              *Immagine in via di definizione*
+
+              1. **Contenitore dell’Alert**
+              2. **Barra indicatrice della tipologia di Alert**: una barra che cambia colore in base alla tipologia di avviso
+              3. **Icona**: elemento grafico che cambia in base alla tipologia di avviso
+              4. **Testo dell’Alert**: il messaggio dell’avviso, che può contenere collegamenti ipertestuali
+              5. **Pulsante di chiusura**
+
 
       - full: true
         noSpace: true
@@ -146,7 +180,21 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
+              Un alert può apparire:
+              - prima di tutti i contenuti di interfaccia dopo l’header per i messaggi di status generali, come le conferme di salvataggio o invio;
+              - in un componente o una sezione delimitata, come i messaggi di errore nelle sezioni di un form;
+              - sopra al contenuto in pagina (on top) quando usata come notifica.
+
+              In base al tipo di avviso, la barra indicatrice può essere:
+              - blu (info), per i messaggi informativi;
+              - verde (success), per i messaggi di conferma;
+              - marrone (warning), per gli avvertimenti;
+              - rossa (danger), per gli errori critici.
+
+              ### Interazione
               *In stesura*
+
+
 
       - full: true
         noSpace: true
