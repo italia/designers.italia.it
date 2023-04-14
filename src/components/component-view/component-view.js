@@ -131,7 +131,7 @@ const ComponentView = ({
     })
   }
 
-  let componentStyles = "border-bottom p-3 d-flex flex-column align-items-center"
+  let componentStyles = "border-bottom p-xl-3 d-flex flex-column align-items-center"
     + `${responsiveButtonsItems ? ' pb-4' : ''}`
 
   let accordionStyle = "accordion-collapse collapse"
