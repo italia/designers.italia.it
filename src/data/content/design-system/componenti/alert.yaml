@@ -43,11 +43,11 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    titleTag:
-      label: Pronto
-      url: "#ComponentStatus"
-      addonClasses: bg-success mb-2
-      screenReaderText: "Stato del componente:"
+    # titleTag:
+    #   label: Pronto
+    #   url: "#ComponentStatus"
+    #   addonClasses: bg-success mb-2
+    #   screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Breve messaggio di testo con uno stile grafico distintivo, utile per avvisare gli utenti di un evento o di un'azione che richiede la loro attenzione"
     # img: /images/400x300.png #I
@@ -92,7 +92,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente Alert permette di creare messaggi di avviso per gli utenti. Questi messaggi sono utili per comunicare informazioni importanti o per avvisare gli utenti di situazioni che richiedono la loro attenzione, senza interrompere il flusso di navigazione.
+
+              Il componente Alert è usato per messaggi immediati e temporanei, come:
+              - errori o problemi tecnici;
+              - eventi importanti che richiedono attenzione, come una scadenza imminente o un imprevisto;
+              - conferme di completamento.
+
 
       - full: true
         noSpace: true
@@ -102,120 +108,124 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Personalizza il componente Alert per riflettere il tipo di messaggio di avviso.
+              - Aggiungi un pulsante di chiusura per consentire all'utente di chiudere l'avviso.
 
               ### Attenzione a
-              _In stesura_
+              - Non usarlo per avvisi e situazioni non importanti, potresti distrarre gli utenti e causare confusione.
 
               ### Buone pratiche sui contenuti
-              _In stesura_
-
-              ### Alternative a questo componente
-              _In stesura_
+              - Assicurati che il testo del messaggio sia chiaro e conciso.
+              - Se il messaggio indica un errore, fornisci all’utente indicazioni chiare su come risolverlo.
+              - Usa collegamenti ipertestuali per rimandare a pagine di approfondimento, se rilevante.
 
       - full: true
-        noSpace: false
-        title: Accessibilità
-        background: null
-        text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
+        noSpace: true
         components:
           - name: TextImageCta
-            headingLevel: 4
+            noSpace: false
+            title: Alternative a questo componente
+            headingLevel: 2
             text: |
-              _In stesura_ 
-              
-              Per segnalare problemi puoi usare le issue di Bootstrap Italia. Puoi contribuire inoltre all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.
+              - [Callout](/design-system/componenti/callout/), permette di evidenziare delle informazioni testuali in pagina.
+              - [Modal](/design-system/componenti/modal/), avvisa l’utente di azioni necessarie da compiere.
+              - [Notifications](/design-system/componenti/notifications/), avvisi a comparsa temporanei in sovraimpressione sulla schermata.
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Accessibilità
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+      - full: true
+        noSpace: true
+        id: ComponentStatus
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Stato del componente
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+  - title: Progettazione
+    sectionsEditorial:
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Anatomia
+            headingLevel: 2
+            text: |
+              *Immagine in via di definizione*
+
+              1. **Contenitore dell’Alert**
+              2. **Barra indicatrice della tipologia di Alert**: una barra che cambia colore in base alla tipologia di avviso
+              3. **Icona**: elemento grafico che cambia in base alla tipologia di avviso
+              4. **Testo dell’Alert**: il messaggio dell’avviso, che può contenere collegamenti ipertestuali
+              5. **Pulsante di chiusura**
+
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Comportamento
+            headingLevel: 2
+            text: |
+              Un alert può apparire:
+              - prima di tutti i contenuti di interfaccia dopo l’header per i messaggi di status generali, come le conferme di salvataggio o invio;
+              - in un componente o una sezione delimitata, come i messaggi di errore nelle sezioni di un form;
+              - sopra al contenuto in pagina (on top) quando usata come notifica.
+
+              In base al tipo di avviso, la barra indicatrice può essere:
+              - blu (info), per i messaggi informativi;
+              - verde (success), per i messaggi di conferma;
+              - marrone (warning), per gli avvertimenti;
+              - rossa (danger), per gli errori critici.
+
+              ### Interazione
+              *In stesura*
+
+
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+
+      - full: true
+        noSpace: true
+        components: 
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Apri una issue su Bootstrap Italia #C
-              screenReaderText: " (si apre in una nuova finestra)" #C
-              url: https://github.com/italia/bootstrap-italia/issues #M
+            - label: Vai alla scheda per designer #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-designer/" #M
               blank: true #M #C true if new tab for external links
               icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
                 align: middle
                 hidden: true
                 size: sm
                 addonClasses: ms-2
-
-      - full: true
-        noSpace: true
-        title: Stato del componente
-        id: ComponentStatus
-        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
-        background: null
-        components:
-
-          - name: TextImageCta
-            text: |
-              _In stesura_ 
-              
-              Vuoi contribuire allo sviluppo di questo componente? Apri direttamente issue o PR dedicate sulle varie repository GitHub dedicate.
-              Partecipa all'evoluzione del design system del Paese!
-
-  - title: Progettazione
-    sectionsEditorial:
-      - full: true
-        noSpace: true
-        title: Anatomia
-      - full: true
-        noSpace: true
-        background: null
-        components:
-          - name: TextImageCta
-            noSpace: false
-          - name: TextImageCta
-            noSpace: false
-            text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.
-              Puoi contribuire all'evoluzione del design system del Paese proponendo modifiche, usa il link che trovi a fondo pagina.*
-          - name: TextImageCta
-            noSpace: true
-            title: Contenuti
-            text: |
-              *In stesura*
-          - name: TextImageCta
-            noSpace: true
-            title: Comportamento
-            text: |
-              *In stesura*
-          - name: TextImageCta
-            noSpace: true
-            title: Interazione
-            text: |
-              *In stesura*
-          - name: TextImageCta
-            noSpace: true
-            title: Specifiche di design
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: false
-        title: Kit UI
-        text: La scatola per costruire prototipi hi-fi con il design system del Paese
-        background: null
-        buttons:
-          - label: Vai al kit nella community Figma
-            blank: true
-            btnStyle: primary me-3
-            url: https://www.figma.com/community/file/1105848677422572920
-            icon:
-              icon: sprites.svg#it-figma
-              size: sm
-              color: white
-              align: middle
-              addonClasses: ms-2
-
-      - full: true
-        noSpace: true
-        title: Design Tokens
-        components:
-
-          - name: TextImageCta
-            text: |
-              *Stiamo lavorando a questo contenuto e sarà presto disponibile.
-              La visualizzazione delle tabelle con i token sarà automatizzata a partire dai token che puoi già trovare nel kit UI.*
 
   - title: Sviluppo
 
@@ -230,26 +240,20 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
-        title: Bootstrap Italia
-        text: Il framework di riferimento per lo sviluppo del design system del Paese
-        buttons:
-          - label: Vai al sito di documentazione
-            btnStyle: primary me-3
-            url: https://italia.github.io/bootstrap-italia/
-            blank: true
-            icon:
-              icon: sprites.svg#it-external-link
-              size: sm
-              color: white
-              align: middle
-              addonClasses: ms-2
-          - label: Vai alla repository GitHub
-            btnStyle: outline-secondary
-            url: https://github.com/italia/bootstrap-italia/
-            blank: true
-            icon:
-              icon: sprites.svg#it-github
-              size: sm
-              color: secondary
-              align: middle
-              addonClasses: ms-2
+        components: 
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per sviluppatori #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-sviluppatori/" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

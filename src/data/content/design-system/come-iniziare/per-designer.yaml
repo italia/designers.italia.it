@@ -11,7 +11,7 @@ seo:
   image: null
   twitterImage: null
   canonical: null
-  pathname: /design-system/come-iniziare/per-designer
+  pathname: /design-system/come-iniziare/per-designer/
 
 lastUpdate:
   column: true
@@ -164,8 +164,8 @@ components:
           # text: |
           ctas:
           - label: Vai al repository GitHub dedicato #C
-            url: "#" #M
-            blank: false #M #C true if new tab for external links
+            url: https://github.com/italia/design-ui-kit #M
+            blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -243,6 +243,18 @@ components:
           title: Design tokens
           text: |
             _In stesura_
+          ctas:
+          - label: Vai al fondamento Design tokens #C
+            url: "/design-system/fondamenti/design-tokens/" #M
+            blank: false #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         - name: TextImageCta
           title: Workflow di design e revisione
