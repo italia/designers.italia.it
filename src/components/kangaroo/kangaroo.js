@@ -9,9 +9,11 @@ const Kangaroo = ({
   id,
   titleSr,
   tagsLabel,
+  tagsDesignSystemLabel,
   icon,
   chips,
   tags,
+  tagsDesignSystem,
   dropdown,
   color,
   navposition,
@@ -63,6 +65,21 @@ const Kangaroo = ({
                 {tags.map((tag, index) => {
                   return (
                     <Chip key={'chip-' + index} label={tag} size="lg" color="primary"></Chip>
+                  )
+                })}
+              </div>
+            </div>
+          }
+          {(tagsDesignSystemLabel && tagsDesignSystem) && (tagsDesignSystem.length > 0) &&
+            <div className="pills-wrapper d-md-flex align-items-start">
+              <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
+                <Icon {...icon} addonClasses="me-3"></Icon>
+                <span className={tagsLabelStyle}><strong>{tagsDesignSystemLabel}</strong></span>
+              </div>
+              <div className="chips ms-md-3 mb-2 mb-lg-0">
+                {tagsDesignSystem.map((tag, index) => {
+                  return (
+                    <Chip key={'chip-' + index} label={tag} size="lg" color="primary" path="design-system/componenti/utili-per"></Chip>
                   )
                 })}
               </div>

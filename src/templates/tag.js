@@ -107,7 +107,7 @@ const Tags = ({ children, pageContext, location, data }) => {
                         )
                       })}
                     </ul>
-                    <div className="my-5 mx-5">
+                    <div className="my-5 border-top pt-4 px-4">
                       <Link to="/argomenti/"><strong>Scopri tutti gli argomenti</strong></Link>
                     </div>
                   </div>

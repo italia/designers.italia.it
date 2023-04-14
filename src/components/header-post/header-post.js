@@ -20,7 +20,7 @@ const HeaderPost = ({data}) => {
 		return (
 			<section aria-labelledby={data.nav.id}>
 					<div className="it-header-slim-wrapper p-0 h-100">
-						<div className="header-pre bg-white border-bottom border-100 shadow-sm">
+						<div className="header-pre bg-white border-bottom border-100 w-100 shadow-sm">
 							<div className="container-xxl">
 								<div className="row ">
 									<div className="col-12 g-0">

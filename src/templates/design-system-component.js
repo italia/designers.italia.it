@@ -22,6 +22,8 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 import dsNav from "../data/dsnav.yaml"
 
+import viewerData from "../data/component-viewer.yaml"
+
 
 const Template = ({Pagedata,pageContext,location, lastModified}) => {
   if (!Pagedata.metadata.json) {
@@ -41,11 +43,12 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
       </Header>
       <div className="bg-light">
         <div className="container-xxl">
-          <div className="row">
+          <div className="row design-system">
             <NavSidebar page={Pagedata.components.hero.title} {...dsNav}/>
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
               <Tab
+                viewerData={viewerData}
                 componentSource={Pagedata.metadata.json.replace(".json", "")}
                 tab01={Object.assign({}, Pagedata.tabs[0], { variants: variantMock })}
                 tab02={Pagedata.tabs[1]}

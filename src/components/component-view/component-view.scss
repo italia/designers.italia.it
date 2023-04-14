@@ -7,4 +7,18 @@ pre {
 
 .iframe-example {
     min-height: 350px;
+    transition-property: height, max-width, width;
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
 }
+
+.viewer-mobile {
+    max-width: 360px;
+}
+.viewer-tablet {
+    max-width: 768px;
+}
+.viewer-desktop {
+    max-width: 1280px;
+}
+

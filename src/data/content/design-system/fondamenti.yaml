@@ -72,19 +72,20 @@ components:
       noPadding: true
       column: true
       titleSr: Metadati e link per approfondire
-      tagsLabel: Utili per
+      tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [UI Kit,Layout,Struttura,Contenuti,Stile,Accessibilità]
+      tags: [Progettazione interfaccia, Sviluppo interfaccia, Accessibilità, Content design]
 
 
   # /////////// COMPONENT LIST FROM HERE ////////////
   filterCards:
-    id: fundamentCards
+    id: esplora
     title: Esplora i fondamenti
+    showTags: false
     noSpace: true
     # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
     col2: true
@@ -120,6 +121,18 @@ components:
         rounded: true
         text: |
           Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
+        tags: [Accessibilità,Design system,Inclusione]
+
+      - title: Design tokens
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "design-tokens/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali.
         tags: [Accessibilità,Design system,Inclusione]
 
       - title: Linguaggio
