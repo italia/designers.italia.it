@@ -11,6 +11,7 @@ import Kangaroo from "../kangaroo/kangaroo"
 import ImageIcons from "../image-icons/image-icons"
 import Table from "../table/table"
 import Button from "../button/button"
+import ComponentView from "../component-view/component-view"
 
 const SectionEditorial = ({
   title,
@@ -37,7 +38,8 @@ const SectionEditorial = ({
     ImgFull,
     ImageIcons,
     Table,
-  };
+    ComponentView
+  }
 
   //heading level
 	let HLevel
