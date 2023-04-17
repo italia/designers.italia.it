@@ -639,6 +639,13 @@ export const query = graphql`
               img
               alt
             }
+            variantName
+            source
+            idPrefix
+            viewerHeight
+            accordionUrl
+            accordionOpen
+            accordionShow
           }
           id
           fullColumn

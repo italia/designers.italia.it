@@ -8,7 +8,7 @@ import ContentSelectItem from "../content-select/components/content-select-item/
 import TabButton from "./tabbutton"
 
 const Tab = ({
-  viewerData,
+  // viewerData,
   componentSource,
   tab01,
   tab02,
@@ -37,7 +37,7 @@ const Tab = ({
           {tab01.variants && <ContentSelect label="Variante" {...tab01.componentVariant}>
             {tab01.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
               <ComponentView
-                name={v.name}
+                variantName={v.name}
                 source={componentSource}
                 content={v.content}
                 idPrefix="use-preview-"
@@ -45,9 +45,6 @@ const Tab = ({
                 accordionUrl={tab01.componentVariant.accordionUrl}
                 accordionOpen={tab01.componentVariant.accordionOpen}
                 accordionShow={tab01.componentVariant.accordionShow}
-                viewer={viewerData.viewer}
-                accordionLabel={viewerData.accordionLabel}
-                accordionSrLabel={viewerData.accordionSrLabel}
               />
             </ContentSelectItem>)}
           </ContentSelect>}
@@ -64,7 +61,7 @@ const Tab = ({
           {tab02.variants && <ContentSelect {...tab02.componentVariant}>
             {tab02.variants.map((v, idx) => <ContentSelectItem label="Variante" key={'item-' + idx} name={v.name}>
               <ComponentView
-                name={v.name}
+                variantName={v.name}
                 source={componentSource}
                 content={v.content}
                 idPrefix="des-preview-"
@@ -72,9 +69,6 @@ const Tab = ({
                 accordionUrl={tab02.componentVariant.accordionUrl}
                 accordionOpen={tab02.componentVariant.accordionOpen}
                 accordionShow={tab02.componentVariant.accordionShow}
-                viewer={viewerData.viewer}
-                accordionLabel={viewerData.accordionLabel}
-                accordionSrLabel={viewerData.accordionSrLabel}
               />
             </ContentSelectItem>)}
           </ContentSelect>}
@@ -91,7 +85,7 @@ const Tab = ({
           {tab03.variants && <ContentSelect label="Variante" {...tab03.componentVariant}>
             {tab03.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
               <ComponentView
-                name={v.name}
+                variantName={v.name}
                 source={componentSource}
                 content={v.content}
                 idPrefix="dev-preview-"
@@ -99,9 +93,6 @@ const Tab = ({
                 accordionUrl={tab03.componentVariant.accordionUrl}
                 accordionOpen={tab03.componentVariant.accordionOpen}
                 accordionShow={tab03.componentVariant.accordionShow}
-                viewer={viewerData.viewer}
-                accordionLabel={viewerData.accordionLabel}
-                accordionSrLabel={viewerData.accordionSrLabel}
               />
             </ContentSelectItem>)}
           </ContentSelect>}

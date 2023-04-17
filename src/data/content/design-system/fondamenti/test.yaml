@@ -2,6 +2,7 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata:
+  json: bsi/organizzare-gli-spazi/griglie.json
   template:
     name: design-system-index
 
@@ -107,3 +108,38 @@ components:
           # title: Come costruiamo i "numeri versione"
           text: |
             testing...
+
+        - name: ComponentView
+          variantName: Base
+          source: bsi/organizzare-gli-spazi/griglie
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: false
+
+        - name: TextImageCta
+          title: Qui serve altro spazio
+          text: |
+            testing...
+
+        - name: ComponentView
+          variantName: Colonne con larghezze omogenee
+          source: bsi/organizzare-gli-spazi/griglie
+          idPrefix: "viewer02-"
+          viewerHeight: 0
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: false
+
+        - name: ComponentView
+          variantName: Responsive, mischiare e abbinare
+          source: bsi/organizzare-gli-spazi/griglie
+          idPrefix: "viewer03-"
+          viewerHeight: 0
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: false
+
+
+          

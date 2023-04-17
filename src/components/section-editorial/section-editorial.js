@@ -25,7 +25,8 @@ const SectionEditorial = ({
   components,
   menu,
   noSpace,
-  id
+  id,
+  componentViewerData,
 }) => {
 
   const SwitchComponents = {
@@ -90,6 +91,10 @@ const SectionEditorial = ({
     id = undefined
   }
 
+  if (!componentViewerData) {
+    componentViewerData=null
+  }
+
   return(
     <section className={styles} aria-describedby={id}>
         <div className={container}>
@@ -125,7 +130,7 @@ const SectionEditorial = ({
                   components.map((item,index) => {                    
                     const Switcher = SwitchComponents[item.name]
                     return(
-                      <Switcher key={"switcher-"+index} {...item}/>
+                      <Switcher key={"switcher-"+index} {...item} componentViewerData={componentViewerData}/>
                     )
                   })
                 }

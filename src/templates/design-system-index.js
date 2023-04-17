@@ -26,6 +26,10 @@ import dsNav from "../data/dsnav.yaml"
 
 
 const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
+  let variantMock = null
+  if (Pagedata.metadata.json) {
+    variantMock = require(`../data/components_json/${Pagedata.metadata.json}`)
+  }
 	return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre}/>
@@ -45,7 +49,7 @@ const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
               {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
                 return(
-                  <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
+                  <SectionEditorial key={"sectionEditorial-"+index} {...section} componentViewerData={Object.assign({}, { variants: variantMock })}/>
                 )
               })}
 

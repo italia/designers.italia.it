@@ -8,27 +8,35 @@ import Icon from "../icon/icon"
 import loadable from "@loadable/component"
 
 import "./component-view.scss"
+import viewerData from "../../data/component-viewer.yaml"
 
 import { Notification } from 'bootstrap-italia'
+
 
 const slugify = require('slugify')
 
 const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'))
 
 const ComponentView = ({
-  name,
+  variantName,
   source,
   content,
-  viewer,
   idPrefix,
   viewerHeight,
   accordionOpen,
   accordionShow,
-  accordionLabel,
   accordionUrl,
-  accordionSrLabel,
   accordionSrCopyLabel,
+  componentViewerData
 }) => {
+
+  if (componentViewerData?.variants) { // it is not a component viewer... 
+    content = componentViewerData.variants.filter(item => item.name === variantName)[0].content;
+  }
+
+  const viewer = viewerData.viewer
+  const accordionLabel = viewerData.accordionLabel
+  const accordionSrLabel = viewerData.accordionSrLabel
 
   const ICON_EXTERNAL = {
     icon: "sprites.svg#it-external-link",
@@ -139,13 +147,13 @@ const ComponentView = ({
   let accordionButtonStyle = "accordion-button border-top-0 collapsed"
     + `${accordionOpen ? ' collapsed' : ''}`
 
-  const BSIExampleUrl = `/examples/${source}/${slugify(name).toLowerCase()}.html`
+  const BSIExampleUrl = `/examples/${source}/${slugify(variantName).toLowerCase()}.html`
 
   return (
     <div id={uuid}>
       <div className={componentStyles}>
         <span className="visually-hidden">Inizio componente:</span>
-        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}></iframe>
+        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${variantName}`} className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}></iframe>
         <span className="visually-hidden">Fine componente.</span>
         {responsiveButtonsItems &&
           <div className="responsive-buttons d-none d-lg-block">
