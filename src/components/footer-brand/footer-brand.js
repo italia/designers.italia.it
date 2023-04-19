@@ -37,7 +37,6 @@ const FooterBrand = ({
                       className="d-block"
                       aria-label={value.ariaLabel}
                     >
-                      {/* <ImageResponsive src={value.img} alt={value.title} className={value.small ? "small" : undefined}/>  XXX Aria label moved to link a container */}
                       <ImageResponsive src={value.img} alt="" className={value.small ? "small" : undefined}/> 
                     </Link>
                   </li>

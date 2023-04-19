@@ -5,22 +5,24 @@ import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css'
 
 import './breadcrumbs.scss'
 
-const Breadcrumbs = ({ 
-  pageContext, 
+const Breadcrumbs = ({
+  pageContext,
+  crumbLabel,
 }) => {
 
   const {
     breadcrumb: { crumbs },
   } = pageContext
 
-	return (
-    <Breadcrumb
-      // location={location}
-      crumbs={crumbs}
-      crumbSeparator=" > "
-    />
-
-	)
+  return (
+    <div>
+      {crumbLabel ? (
+        <Breadcrumb crumbs={crumbs} crumbLabel={crumbLabel} crumbSeparator=" > " />
+      ) : (
+        <Breadcrumb crumbs={crumbs} crumbSeparator=" > " />
+      )}
+    </div>
+  )
 }
 
 export default Breadcrumbs

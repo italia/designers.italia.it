@@ -2,6 +2,10 @@ import * as React from "react"
 import { graphql } from "gatsby"
 
 import TemplateBase from "../templates/base"
+import TemplateArchiveAllTags from "../templates/archive-all-tags"
+import TemplateArchiveDSTags from "../templates/archive-ds-tags"
+import TemplateArchiveNews from "../templates/archive-news"
+import TemplateArchiveEvents from "../templates/archive-events"
 import TemplateDSComponent from "../templates/design-system-component"
 import TemplateDSIndex from "../templates/design-system-index"
 import TemplateHome from "../templates/home"
@@ -11,9 +15,14 @@ import TemplateLV1 from "../templates/level-1"
 import TemplateLV2 from "../templates/level-2"
 import TemplateLV3 from "../templates/level-3"
 import TemplateLV4 from "../templates/level-4"
+
 import { Seo } from "../components/seo/seo"
 
 const TEMPLATES = {
+  'archive-news' : TemplateArchiveNews,
+  'archive-all-tags' : TemplateArchiveAllTags,
+  'archive-ds-tags' : TemplateArchiveDSTags,
+  'archive-events' : TemplateArchiveEvents,
   'community' : TemplateLV1Community,
   'level1' : TemplateLV1,
   'level2' : TemplateLV2,
@@ -53,6 +62,7 @@ export const query = graphql`
         template {
           name
         }
+        archive
         activeLabel
         json
       }
@@ -108,18 +118,15 @@ export const query = graphql`
             id
             titleSr
             tagsLabel
+            tagsDesignSystemLabel
             color
             icon {
               icon
               size
               color
             }
-            chips {
-              label
-              url
-              color
-              size
-            }
+            tags
+            tagsDesignSystem
             dropdown {
               btnId
               button {
@@ -227,7 +234,7 @@ export const query = graphql`
           specialKangarooComponent
           titleTag {
             label
-            url
+            # url
             addonClasses
             screenReaderText
           }
@@ -297,12 +304,7 @@ export const query = graphql`
             text
             rounded
             dateInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            tags
             blank
             externalLink {
               label
@@ -325,14 +327,9 @@ export const query = graphql`
             button {
               btnStyle
               label
-              addonStyle
-            }
-            chips {
-              label
               url
-              color
-              size
             }
+            tags
           }
         }
         highlightsLoop {
@@ -474,12 +471,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            # tags
             titleSmall
             tag {
               label
@@ -564,12 +556,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            tags
             text
             dateInfo
           }
@@ -662,6 +649,7 @@ export const query = graphql`
           id
           title
           col2
+          showTags
           cards {
             title
             imgRatio
@@ -670,12 +658,7 @@ export const query = graphql`
             fullHeight
             url
             text
-            chips {
-              color
-              label
-              url
-              blank
-            }
+            tags
           }
         }
         sectionsEditorial2 {
@@ -790,35 +773,34 @@ export const query = graphql`
           }
         }
       }
-      navPreFooter {
-        navOtherPrevNext {
-          next {
-            label
-            url
-            blank
-            specular
-            icon {
-              icon
-              size
-              align
-              color
-              hidden
-              addonClasses
-            }
-          }
-        }
-      }
+      # navPreFooter {
+      #  navOtherPrevNext {
+      #    next {
+      #      label
+      #      url
+      #      blank
+      #      specular
+      #      icon {
+      #        icon
+      #        size
+      #        align
+      #        color
+      #        hidden
+      #        addonClasses
+      #      }
+      #    }
+      #  }
+      # }
       tabs {
         title
         componentVariant {
           id
-          idPrefix
           title
-          accordionOpen
-          accordionLabel
+          textInfo
+          viewerHeight
           accordionUrl
-          accordionSrLabel
-          accordionSrCopyLabel
+          accordionOpen
+          accordionShow
         }
         sectionsEditorial {
           full
@@ -872,19 +854,19 @@ export const query = graphql`
           }
           text
           id
-          buttons {
-            label
-            blank
-            btnStyle
-            url
-            icon {
-              icon
-              size
-              color
-              align
-              addonClasses
-            }
-          }
+          # buttons {
+          #  label
+          #  blank
+          #  btnStyle
+          #  url
+          #  icon {
+          #    icon
+          #    size
+          #    color
+          #    align
+          #    addonClasses
+          #  }
+          # }
         }
       }
     }

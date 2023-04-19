@@ -9,6 +9,7 @@ const Topics = ({
   headingLevel,
   icon,
   chips,
+  tags,
   button
 }) => {
 
@@ -31,10 +32,10 @@ const Topics = ({
               </div>
               <div className="content">
                 <HLevel className="h4 fw-bold mb-2">{title}</HLevel>
-                {chips && <div className="chip-container">
-                  { chips.map((chip,index) => {
+                {tags && <div className="chip-container">
+                  { tags.map((tag,index) => {
                     return(
-                      <Chip key={"chip-"+index} {...chip}/>
+                      <Chip key={"chip-"+index} label={tag} size="lg" color="primary" />
                     )
                   })}
                 </div>

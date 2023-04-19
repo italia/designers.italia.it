@@ -72,43 +72,20 @@ components:
       noPadding: true
       column: true
       titleSr: Metadati e link per approfondire
-      tagsLabel: Utili per
+      tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips:
-        - label: UI Kit
-          url: "#"
-          color: primary
-          size: lg
-        - label: Layout
-          url: "#"
-          color: primary
-          size: lg
-        - label: Struttura
-          url: "#"
-          color: primary
-          size: lg
-        - label: Contenuti
-          url: "#"
-          color: primary
-          size: lg
-        - label: Stile
-          url: "#"
-          color: primary
-          size: lg
-        - label: Accessibilità
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Progettazione interfaccia, Sviluppo interfaccia, Accessibilità, Content design]
 
 
   # /////////// COMPONENT LIST FROM HERE ////////////
   filterCards:
-    id: fundamentCards
+    id: esplora
     title: Esplora i fondamenti
+    showTags: false
     noSpace: true
     # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
     col2: true
@@ -132,19 +109,7 @@ components:
         rounded: true
         text: |
           Il design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione.
-        chips:
-          - label: Progettazione servizi
-            url: "#"
-            color: secondary
-          - label: Accessibilità
-            url: "#"
-            color: secondary
-          - label: Cultura progettuale
-            url: "#"
-            color: secondary
-          - label: Design system
-            url: "#"
-            color: secondary
+        tags: [Progettazione servizi,Accessibilità,Cultura progettuale,Design system]
 
       - title: Accessibilità
         # img: /images/600x400.png
@@ -156,16 +121,19 @@ components:
         rounded: true
         text: |
           Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
-        chips:
-          - label: Accessibilità
-            url: "#"
-            color: secondary
-          - label: Design system
-            url: "#"
-            color: secondary
-          - label: Inclusione
-            url: "#"
-            color: secondary
+        tags: [Accessibilità,Design system,Inclusione]
+
+      - title: Design tokens
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "design-tokens/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali.
+        tags: [Accessibilità,Design system,Inclusione]
 
       - title: Linguaggio
         # img: /images/600x400.png
@@ -177,14 +145,7 @@ components:
         rounded: true
         text: |
           Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone.
-        chips:
-          - color: secondary
-            label: Content
-            url: "#"
-            blank: false
-          - label: Design system
-            url: "#"
-            color: secondary
+        tags: [Content design,Design system]
 
       - title: Versionamento
         # img: /images/600x400.png
@@ -196,13 +157,7 @@ components:
         rounded: true
         text: |
           Usiamo il versionamento semantico su ogni risorsa del design system del Paese.
-        chips:
-          - label: Organizzazione
-            url: "#"
-            color: secondary
-          - label: Design system
-            url: "#"
-            color: secondary
+        tags: [Organizzazione,Design system]
 
 
 

@@ -19,7 +19,7 @@ const HeaderMenuLink = ({
 	const styles = 'nav-link'
 		+ `${isDropDown ? ' dropdown-toggle' : ''}`
 		+ `${page===label ? ' active' : ''}`
-		+ ' px-lg-3 fw-semibold'
+		+ ' px-lg-2 px-xl-3 fw-semibold'
 
 	function icon(boolean){
 		if (boolean) {

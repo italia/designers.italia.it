@@ -12,7 +12,7 @@ function searchInDir(startPath, filter, subfolders=true) {
         if (subfolders && fs.lstatSync(filename).isDirectory()) {
             collection = collection.concat(searchInDir(filename, filter, subfolders))
         } else if (filename.endsWith(filter)) {
-            collection.push(filename.replace(startPath + path.sep, ''));
+            collection.push(filename);
         };
     };
     return collection;

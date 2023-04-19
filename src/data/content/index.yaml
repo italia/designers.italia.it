@@ -142,40 +142,41 @@ components:
       alt: "Homepage di Designers Italia"
       headingLevel: 3
       background: medium
+      padBottom: false
       buttons:
         - label: Scopri come fare
           btnStyle: primary
           url: "/community/notizie/20221220-ecco-l-anteprima-del-nuovo-designers-italia/"
           addonStyle: mb-3 mb-sm-0
-    - title: "Nome in codice: ___ Italia"
-      subtitle: Partecipa al sondaggio per definire il nuovo nome del design system del Paese
+    - title: "Raccontaci cosa ne pensi di Designers Italia e Developers Italia"
+      subtitle: "Anche quest’anno lanciamo il questionario per le persone che progettano, sviluppano e lavorano nella Pubblica Amministrazione"
       big: true
       id: HL2b
       specular: false
       padBottom: false
-      img: /images/home/in-evidenza/20230314-nome-in-codice-italia-home.jpg
+      img: /images/home/in-evidenza/20230327-raccontaci-cosa-pensi-di-designers-italia-e-developers-italia-1920x1280.png
       alt: ""
       headingLevel: 3
       background: light
       buttons:
-        - label: "Scopri come partecipare"
+        - label: "Scopri come dire la tua"
           btnStyle: primary
-          url: "/community/notizie/20230314-nome-in-codice-italia/"
+          url: "/community/notizie/20230327-raccontaci-cosa-ne-pensi-di-designers-italia-e-developers-italia"
           addonStyle: mb-3 mb-sm-0
-    - title: Formez lancia un corso per progettare e realizzare servizi pubblici di qualità
-      subtitle: Sono aperte le iscrizioni per il corso online. Puoi iscriverti fino al 20 marzo
+    - title: "Nome in codice: ___ Italia"
+      subtitle: Partecipa al sondaggio per definire il nuovo nome del design system del Paese
       big: true
       id: HL2c
       specular: true
       padBottom: true # < last hightlight (or only hightlight in home page mut have this set to true)
-      img: /images/home/in-evidenza/20230307-formez-lancia-un-corso-per-progettare-e-realizzare-servizi-pubblici-di-qualita-1920x923.jpg
-      alt: "Qualità servizi digitali"
+      img: /images/home/in-evidenza/20230314-nome-in-codice-italia-home.jpg
+      alt: ""
       headingLevel: 3
       background: dark
       buttons:
-        - label: "Scopri come iscriverti"
+        - label: "Scopri come partecipare"
           btnStyle: primary
-          url: "/community/notizie/20230307-formez-lancia-un-corso-per-progettare-e-realizzare-servizi-pubblici-di-qualita"
+          url: "/community/notizie/20230314-nome-in-codice-italia/"
           addonStyle: mb-3 mb-sm-0
 
   highlightCards:
@@ -303,11 +304,39 @@ components:
     #   tag:
     #     label: Community Lab
 
+    - title: "Un Vademecum per ripensare lo spazio digitale delle Università"
+      headingLevel: 3
+      customCol: col-lg-4
+      img: /images/community/articoli-di-approfondimento/20230403-un-vademecum-per-ripensare-lo-spazio-digitale-delle-universita-1198x673.png
+      alt: "Mappa dell'ecosistema dei servizi universitari: attori che usufruiscono del servizio e quelli che, lavorando dietro le quinte, ne permettonono il funzionamento"
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      rounded: true
+      url: https://medium.com/designers-italia/un-vademecum-per-ripensare-lo-spazio-digitale-delle-universit%C3%A0-5d94b99905e5
+      blank: true
+      externalLink:
+        label: Leggi su Medium
+        screenReaderText: "l'articolo completo"
+        icon:
+          icon: sprites.svg#it-external-link
+          size: xs
+      moreInfo: di Daria Cantù
+      chips:
+        - color: secondary
+          label: Università
+          url: "#"
+          blank: false
+        - color: secondary
+          label: Servizi pubblici digitali
+          url: "#"
+          blank: false
+
     - title: "Una grammatica dei servizi pubblici digitali"
       headingLevel: 3
       customCol: col-lg-4
       img: /images/community/articoli-di-approfondimento/una-grammatica-dei-servizi-pubblici-digitali.webp
-      alt: descrizione immagine
+      alt: ""
       imgRatio: 16x9
       imgPlaceholder: false
       fullHeight: true
@@ -321,38 +350,20 @@ components:
           icon: sprites.svg#it-external-link
           size: xs
       moreInfo: di Marco Maria Pedrazzo
-      chips:
-        - color: secondary
-          label: Quadro sinottico
-          url: "#"
-          blank: false
-        - color: secondary
-          label: Servizi pubblici digitali
-          url: "#"
-          blank: false
 
-
-    - title: Benvenuto, Kit Privacy
+    - title: Aperte le iscrizioni della seconda edizione del corso “Qualità dei servizi digitali”
       headingLevel: 3
       customCol: col-lg-4
-      text: Rispetta la privacy delle persone quando realizzi un servizio digitale.
-      img: /images/community/20221020-benvenuto-kit-privacy-1400x723.jpg
-      # alt: descrizione immagine
+      text: Un’occasione per imparare a progettare e realizzare servizi pubblici di qualità.
+      img: /images/community/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali-1400x723.png
+      alt: "Qualità servizi digitali"
       imgRatio: 21x9
       # imgPlaceholder: true
       fullHeight: false
       rounded: true
-      url: "/community/notizie/20221020-benvenuto-kit-privacy/"
-      dateInfo: 20 ottobre 2022
-      chips:
-        - color: secondary
-          label: Privacy by design
-          url: "#"
-          blank: false
-        - color: secondary
-          label: Privacy by default
-          url: "#"
-          blank: false
+      url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali"
+      dateInfo: 28 marzo 2023
+      tags: [Servizi pubblici digitali,Formazione]
 
   bannerTextCta:
     id: bannerBottom

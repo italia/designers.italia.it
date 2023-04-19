@@ -17,7 +17,7 @@ const NavPosition = ({
   if (items) {
     linkItems = items.map((item,index) => {
       item.icon.addonClasses = "flex-shrink-0 me-3"
-      item.icon.hidden = true // xxx
+      item.icon.hidden = true 
       return(
         <div key={"linkItems-"+index} >
           <div className="d-inline-flex align-items-center me-5 my-2 small w-auto">
