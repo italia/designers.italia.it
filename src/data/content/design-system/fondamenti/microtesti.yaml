@@ -7,7 +7,7 @@ metadata:
 
 seo:
   name: Microtesti - Designers Italia
-  description: "Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di prodotto o di servizio"
+  description: "Progetta testi e microtesti dedicati alle interfacce per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
   image: null
   twitterImage: null
   canonical: null
@@ -56,7 +56,7 @@ components:
     background: null
     title: Microtesti
     column: true
-    subtitle: "Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di prodotto o di servizio"
+    subtitle: "Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -121,29 +121,60 @@ components:
     - full: true
       noSpace: false
       title: Scrivi per facilitare e orientare l’interazione
-      text: Migliora il rapporto tra utenti e interfaccia
+      #text: Migliora il rapporto tra utenti e interfaccia
       background: null
       components:
         - name: TextImageCta
           noSpace: true
           # title:
           text: |
-            I testi di interfaccia dovrebbero rispondere ad alcuni bisogni primari dell’utente impegnato a interagire con il nostro prodotto:
-            - identificare il tipo di interfaccia digitale in cui si trova (es. heading, subheading, label)
-            - capire come i blocchi di informazioni sono collegati fra di loro (es. label, accordion, collapse, table, tag)
-            - scegliere/prevedere in tempo reale quale azione compiere sull’interfaccia (es. tooltip, button)
-            - essere “rassicurato” su quale sarà l’effetto dell’interazione successiva o sulla risolubilità di un errore es. (es. modal, error message)
+            I testi di interfaccia dovrebbero aiutare l'utente a:
+            - identificare il tipo di interfaccia digitale in cui si trova, tramite l’uso di elementi quali heading, subheading, label
+            - capire come i blocchi di informazioni sono collegati fra di loro, tramite l’uso di componenti quali label, accordion, collapse, table, tag
+            - scegliere/prevedere in tempo reale quale azione compiere sull’interfaccia, tramite l’uso di componenti quali tooltip e button
+            - prevedere l’effetto dell’interazione con un elemento di interfaccia e guidare alla risoluzione di un errore, tramite modali, aiuti contestuali e messaggi di errore.
+
 
     - full: true
-      noSpace: true
-      title: Buone pratiche
+      noSpace: false
+      title: Tieni presente l’obiettivo e il contesto di ogni pagina o schermata
+      #text: Migliora il rapporto tra utenti e interfaccia
       background: null
-      text: Cose da fare e cose da non fare
+      components:
+        - name: TextImageCta
+          noSpace: true
+          # title:
+          text: |
+            I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. buttons) con la giusta gerarchia di importanza è fondamentale per orientare l’azione primaria, suggerire le possibilità di interazione secondarie/collaterali, far raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo.
+            
+            Scopri le buone pratiche sui contenuti del componente “Buttons”
+                  
+   
+    - full: true
+      noSpace: false
+      title: Rispetta la consistenza delle tue scelte di scrittura
+      #text: Migliora il rapporto tra utenti e interfaccia
+      background: null
+      components:
+        - name: TextImageCta
+          noSpace: true
+          # title:
+          text: |
+            La progettazione di pattern d’interazione a livello di UX e UI implica anche definire **scelte** e **pattern di contenuto** ricorrenti e consistenti nell’ambito dello stesso servizio. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e **in maniera consistente**, la terminologia usata, gli ingombri di testo, i copy delle call to action.
+            
+            Per facilitare l’aggiornamento consistente dei testi durante tutte le fasi di progettazione di un servizio, sono disponibili strumenti e integrazioni per i principali software di prototipazione che permettono di creare e gestire librerie di microtesti. 
+            
+             
+    - full: true
+      noSpace: true
+      title: Suggerimenti per microcopy efficaci e accessibili
+      background: null
+      #text: Cose da fare e cose da non fare
       components:
         
         # 1st
         - name: Table
-          title: Prima l'azione 
+          title: Usa azioni specifiche 
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -155,17 +186,17 @@ components:
                 addonClasses: bg-warning fw-bold
           rows:
             - cols:
-              - text: Aggiungi un servizio alla lista.
-              - text: I servizi appariranno qui dopo averli aggiunti alla lista.             
+              - text: Invia
+              - text: OK             
             
         - name: TextImageCta
           text: |
-            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
+            Usa verbi che indicano chiaramente l’azione da svolgere
 
 
         # 2nd
         - name: Table
-          title: "Call to action: verbo e complemento oggetto"
+          title: Usa un linguaggio semplice e conciso
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -177,17 +208,17 @@ components:
                 addonClasses: bg-warning fw-bold
           rows:
             - cols:
-              - text: Cerca un documento. 
-              - text: Fai una ricerca fra i documenti. 
+              - text: Cerca un documento 
+              - text: Fai una ricerca fra i documenti
           
         - name: TextImageCta
           text: |
-            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
+            Oltre alla semplicità di linguaggio, considera anche il limite massimo di caratteri che un componente specifico può presentare
 
 
         # 3rd   
         - name: Table
-          title: Diritti al punto e accessibili
+          title: "Prima l’obiettivo, poi l’azione"
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -199,55 +230,40 @@ components:
                 addonClasses: bg-warning fw-bold
           rows:
             - cols:
-              - text: I campi con asterisco sono obbligatori. 
-              - text: Questo campo non è opzionale. 
+              - text: Per scaricare la ricevuta di pagamento, accedi all’area personale
+              - text: Accedi all’area personale per scaricare la ricevuta di pagamento
+          
+        #- name: TextImageCta
+          #text: |
+            #Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
+         
+              
+        # 4th   
+        - name: Table
+          title: Evita le negazioni
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
+          rows:
+            - cols:
+              - text: *I campi con asterisco sono obbligatori
+              - text: *Questo campo non è opzionale
           
         - name: TextImageCta
           text: |
-            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
-
-
-    ####         
-    - full: true
-      noSpace: false
-      title: "Altre buone pratiche"
-      text: Da tenere presente per tutta l'esperienza
-
-      components:
-        - name: TextImageCta
-          title: Tieni presente obiettivo e contesto
-          text: |
-            I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. buttons) con la giusta gerarchia di importanza è fondamentale per **orientare le persone a compiere l’azione primaria, suggerire le possibilità di interazione secondarie o collaterali, far raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo**.
-            
-            Scopri le buone pratiche sui contenuti del componente Buttons
-
-        - name: TextImageCta
-          title: "Rispetta la consistenza delle tue scelte di scrittura"
-          text: |
-            La progettazione di pattern d’interazione a livello di UX e UI implica anche definire scelte e pattern di contenuto ricorrenti e consistenti nell’ambito dello stesso prodotto. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e in maniera consistente, la terminologia usata, gli ingombri di testo, i copy delle call to action. 
-            
-        - name: TextImageCta
-          title: "Progetta messaggi che aiutano a risolvere gli errori"
-          text: |
-            Dando per implicito che è buona norma progettare un’interfaccia che impedisca il più possibile all’utente di commettere errori, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di errori (es. compilazione di form, upload di documenti, note legali, 404 etc…) è bene seguire alcune buone pratiche quali: 
-            
-            - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**;
-            - fornire — se applicabile — una **soluzione immediata**;
-            - se non è possibile una soluzione immediata, fornire un’esperienza il più piacevole possibile della condizione inaspettata, suggerendo **una via di uscita alternativa**.
-            
-    ####
-    - full: true
-      noSpace: true
-      title: Titolo gruppo
-      background: null
-      text: Sottotitolo
-      components:
+            L’uso di negazioni rende il testo più difficile da capire
         
-        # 4th
+        
+        # 5th   
         - name: Table
-          title: L'enfasi sulla soluzione 
+          title: Aiuta nella risoluzione degli errori
           responsive: table-responsive-md
-          noSpace: true
           addonClasses: fixed
           head:
             - tag:
@@ -258,31 +274,68 @@ components:
                 addonClasses: bg-warning fw-bold
           rows:
             - cols:
-              - text: "La data deve rispettare il formato GG/MM/AA ed essere successiva al…"
+              - text: La data deve rispettare il formato GG/MM/AA ed essere successiva al …
               - text: Data non valida
-
-        - name: TextImageCta
-          text: |
-            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
-
-
-    #
-    - full: true
-      noSpace: false
-      title: Progetta empty state di valore
-      #text: |
-      components:
-        - name: TextImageCta
-          text: |
-            I cosiddetti “empty state” o “stati vuoti” sono necessari in varie situazioni, tipicamente quando l’utente deve iniziare ad aggiungere alcuni elementi a una sezione, oppure quando sta cercando qualcosa ma il sistema non restituisce risultati. Scrivere un copy per uno stato vuoto è un’opportunità utile per far comprendere all’utente come iniziare a interagire con l’interfaccia, perché questa sia davvero di valore per la sua esperienza, senza perdite di tempo. 
-
-            Ecco alcune buone pratiche per progettare stati vuoti efficaci: 
-
-            - evita termini e tono di voce "negativi";
-            - suggerisci come avviare l'interazione che annulla lo stato vuoto
-          
+        
         - name: Table
-          #title: L'enfasi sulla soluzione 
+          #title: Aiuta nella risoluzione degli errori
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
+          rows:
+            - cols:
+              - text: Verifica la data di completamento delle attività
+              - text: Risulta un errore nella data di completamento delle attività
+        
+        - name: Table
+          #title: Aiuta nella risoluzione degli errori
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
+          rows:
+            - cols:
+              - text: Il documento caricato non contiene alcuna firma. Assicurati di caricare un file che contiene una firma in corso di validità.
+              - text: Firma non presente!
+        
+        - name: Table
+          #title: Aiuta nella risoluzione degli errori
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
+          rows:
+            - cols:
+              - text: La ricerca non ha restituito risultati per “...”. Prova a cercare “...” o “...”.
+              - text: Non ci sono risultati
+        
+        - name: TextImageCta
+          text: |
+            Dando per implicito che è buona norma progettare un’interfaccia che impedisca il più possibile all’utente di trovarsi in condizioni di errore, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di eventuali errori (es. compilazione di form, upload di documenti, note legali, 404 etc…)  è bene seguire alcune buone pratiche quali: 
+            - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**
+            - fornire - se possibile - una **soluzione immediata**
+            - se non è possibile una soluzione immediata, fornire un’esperienza il più piacevole possibile della condizione inaspettata, suggerendo una **via di uscita alternativa**.
+              
+        
+        # 6th   
+        - name: Table
+          title: Progetta stati vuoti di valore
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -295,12 +348,119 @@ components:
           rows:
             - cols:
               - text: I tuoi documenti appariranno qui
-              - text: Ops, non ci sono documenti qui   
+              - text: Ops, non ci sono documenti qui
+        
+        - name: Table
+          #title: Aiuta nella risoluzione degli errori
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
+          rows:
             - cols:
-              - text: I tuoi servizi preferiti appariranno qui. Aggiungi il primo servizio
-              - text: Nessun servizio disponibile  
-
+              - text: I tuoi servizi preferiti appariranno qui. Aggiungi il primo servizio.
+              - text: Nessun servizio disponibile
+        
+        - name: Table
+          #title: Aiuta nella risoluzione degli errori
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-primary fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-warning fw-bold
+          rows:
+            - cols:
+              - text: Inizia a scrivere un messaggio: puoi salvarlo in bozza e inviarlo quando sei pronto. Nuovo messaggio
+              - text: Non ci sono messaggi in bozza
+        
         - name: TextImageCta
           text: |
-            Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima Lorem ipsum qui c'è il testo che spiega il contenuto della tabella che precede, potremmo pensare anche di metterlo prima
+            I cosiddetti “empty state” o “stati vuoti” sono necessari in varie situazioni, tipicamente quando l’utente deve iniziare ad aggiungere alcuni elementi a una sezione, oppure quando sta cercando qualcosa ma il sistema non restituisce risultati. Scrivere un microtesto per uno stato vuoto è un’opportunità per far comprendere all’utente come iniziare a interagire con l’interfaccia, perché questa sia davvero di valore per la sua esperienza, senza perdite di tempo.
+            
+            Ecco alcune buone pratiche per progettare stati vuoti efficaci:
+            - evita parole e tono di voce “negativi”
+            - suggerisci come avviare l’interazione che annulla lo stato vuoto
+            - suggerisci che tipo di esperienza offrirà la sezione una volta avviata la prima interazione
+            
+        
+        ####         
+        - full: true
+          noSpace: false
+          #title: "Altre buone pratiche"
+          #text: Da tenere presente per tutta l'esperienza
+
+          components:
+            - name: TextImageCta
+              title: "Progetta aiuti contestuali efficaci"
+              text: |
+                Tooltip (suggerimenti) e placeholder (testi segnaposto) fanno parte della categoria di testi detti di “aiuto contestuale”, cioè utili all’utente come guida aggiuntiva su come interagire con l’interfaccia e su come interpretare il significato di alcuni elementi di UI.
+                
+                Ecco alcune buone pratiche per la progettazione di questi microtesti:
+                - usa i tooltip con moderazione, valutando se l’aiuto contestuale è davvero necessario e ricordando che il testo del tooltip sarà visibile all’utente solo in mouseover (cioè al passaggio volontario del mouse)
+                - usa i testi segnaposto come aiuto alla compilazione, in particolare se hai bisogno di orientare l’utente su come compilare campi di testo “libero”
+                - usa i testi segnaposto per suggerire il modo giusto di usare alcune funzionalità (es. ricerca su sito)
+
+            - name: TextImageCta
+              title: "Rispetta il tono di voce del contesto"
+              text: |
+                Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Il rispetto di un tono di voce coerente e incentrato sull’utente è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi con l’obiettivo primario di farti capire ed essere efficace, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
+                
+                Scopri il fondamento dedicato al Tono di voce
+            
+            - name: TextImageCta
+              title: "Scrivi per tutti"
+              text: |
+                Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Numerosi studi hanno infatti dimostrato che le persone non leggono necessariamente dall’alto al basso e parola per parola, ma più frequentemente scansionano il contenuto della pagina secondo pattern visivi ricorrenti (F-shape, Z-shape), ancorando la lettura all’aspetto di alcuni componenti interattivi e a volte limitandosi ad una lettura superficiale delle informazioni.
+                
+                Scopri il fondamento dedicato al Linguaggio
+            
+            
+            ####
+            - full: true
+              noSpace: false
+              title: Metodi di ricerca
+              #text: Migliora il rapporto tra utenti e interfaccia
+              background: null
+              components:
+                - name: TextImageCta
+                  noSpace: true
+                  # title:
+                  text: |
+                    Prima di scrivere i microtesti, è importante essere a conoscenza del linguaggio che gli utenti usano in relazione a un determinato servizio.
+                    
+                    Alcune possibili attività di ricerca per indagare questo aspetto sono:
+                    - **conversation mining**, ovvero ricercare discussioni online (social network, forum, recensioni) per capire come gli utenti parlano di un servizio
+                    - **focus group**, ovvero guidare e osservare la conversazione tra un gruppo di partecipanti scelti accuratamente
+                    - **interviste utenti**, per approfondire il contesto e l’esperienza d’uso di un servizio
+            
+            
+            ####
+            - full: true
+              noSpace: false
+              title: Metodi di test
+              #text: Migliora il rapporto tra utenti e interfaccia
+              background: null
+              components:
+                - name: TextImageCta
+                  noSpace: true
+                  # title:
+                  text: |
+                    Dopo aver progettato testi e microtesti, è opportuno verificare che questi corrispondano al livello di comprensione, al tipo di linguaggio e alle aspettative degli utenti.
+                    
+                    Esistono diversi tipi di test che possono essere usati per verificare i microtesti, in base alla fase di sviluppo in cui ci si trova, il tempo a disposizione e lo scopo della verifica:
+                    - **test di leggibilità**, che aiuta a capire quanto è difficile un testo ma non se rispetta il tono di voce o se è adatto al target di riferimento
+                    - **cloze test** (o cloze deletion test) e **test di comprensione delle parole**, utili per capire se l’utente capisce cosa abbiamo scritto
+                    - **test dell’evidenziatore**, per capire come semplificare la descrizione di un servizio o un’istruzione tecnica
+                    - **test di usabilità delle parole**, per capire come gli utenti usano il contenuto per risolvere un problema
+                    - **test A/B**, per confrontare due versioni alternative di uno stesso testo.
+              
 
