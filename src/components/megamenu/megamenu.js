@@ -41,7 +41,6 @@ const Megamenu = ({
 					{heading &&
 						<Link className="heading-link d-flex justify-content-between align-items-center" to={heading.url} activeClassName={GATSBY_ACTIVE}>
 							<span>{heading.label}</span>
-							<Icon icon="sprites.svg#it-arrow-right" size="sm" color="primary"></Icon>
 						</Link>
 					}
 					{cols &&
