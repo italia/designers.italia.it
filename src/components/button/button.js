@@ -24,6 +24,7 @@ const Button = ({
 	dataBsToggle,	   //navbarcollapsible,dropdown
 	children,
 	blank,
+	title,
   onClick,
 }) => {
 	let iconRendered
@@ -62,7 +63,7 @@ const Button = ({
 		)
 	}else{
 		return (
-			<button id={id} type={type ? type : 'button'} aria-label={ariaLabel} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} onClick={onClick}>
+			<button id={id} type={type ? type : 'button'} aria-label={ariaLabel} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} title={title} onClick={onClick}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
