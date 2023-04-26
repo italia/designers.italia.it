@@ -2,6 +2,7 @@ import React from "react"
 import ReactMarkdown from "react-markdown"
 import Icon from "../icon/icon"
 import Link from "../link/link"
+import Tooltip from "../tooltip/tooltip"
 
 const NavPosition = ({
   items,
@@ -9,25 +10,29 @@ const NavPosition = ({
 }) => {
 
   let containerStyles = "nav-position"
-  + `${footerVersion ? ' py-5 border-top neutral-1-border-color-a3 border-end-0 border-start-0 border-bottom-0' : ''}`
+    + `${footerVersion ? ' py-5 border-top neutral-1-border-color-a3 border-end-0 border-start-0 border-bottom-0' : ''}`
 
-  let  linkItems
-
+  let linkItems
 
   if (items) {
-    linkItems = items.map((item,index) => {
+    linkItems = items.map((item, index) => {
       item.icon.addonClasses = "flex-shrink-0 me-3"
-      item.icon.hidden = true 
-      return(
-        <div key={"linkItems-"+index} >
-          <div className="d-inline-flex align-items-center me-5 my-2 small w-auto">
-            <Icon {...item.icon}/>
-            <span className="text-uppercase text-secondary me-3"><strong>{item.title}</strong></span>
-            {item.url ? <Link to={item.url} target={item.blank ? '_blank' : undefined}>
-              {item.label}
-            {item.screenReaderText && 
-              <span className="visually-hidden">{item.screenReaderText}</span> 
-            }</Link>  : <span>{item.label}</span>}
+      item.icon.hidden = true
+      return (
+        <div key={"linkItems-" + index} >
+          <div className="d-inline-flex align-items-center me-lg-5 my-2 small">
+            <Icon {...item.icon} />
+            <span className="text-uppercase text-secondary me-2"><strong>{item.title}</strong></span>
+            {item.tooltip &&
+              <Tooltip label={item.tooltip}></Tooltip>
+            }
+            <div className="ms-3">
+              {item.url ? <Link to={item.url} target={item.blank ? '_blank' : undefined}>
+                {item.label}
+                {item.screenReaderText &&
+                  <span className="visually-hidden">{item.screenReaderText}</span>
+                }</Link> : <span>{item.label}</span>}
+            </div>
           </div>
           <div>
             {item.text && <ReactMarkdown>{item.text}</ReactMarkdown>}

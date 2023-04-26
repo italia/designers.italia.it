@@ -174,6 +174,7 @@ export const query = graphql`
             personalInfo {
               items {
                 title
+                tooltip
                 icon {
                   icon
                   size
@@ -187,6 +188,7 @@ export const query = graphql`
             navposition {
               items {
                 title
+                tooltip
                 icon {
                   icon
                   size
@@ -200,6 +202,7 @@ export const query = graphql`
             otherInfo {
               items {
                 title
+                tooltip
                 icon {
                   icon
                   size
