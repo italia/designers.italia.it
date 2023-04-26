@@ -173,11 +173,14 @@ components:
           rows:
             - cols:
               - text: Invia
-              - text: OK             
+              - text: OK   
+            - cols:
+              - text: Aggiungi un nuovo provider
+              - text: Nuovo provider  
             
         - name: TextImageCta
           text: |
-            Usa verbi che indicano chiaramente l’azione da svolgere
+            Le etichette di testo di componenti azionabili (es. pulsanti) dovrebbero in linea generale iniziare con un verbo che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione. 
 
 
         # 2nd
@@ -226,7 +229,7 @@ components:
               
         # 4th   
         - name: Table
-          title: Evita le negazioni
+          title: Evita le negazioni e le forme passive
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -240,10 +243,16 @@ components:
             - cols:
               - text: I campi con asterisco sono obbligatori
               - text: Questo campo non è opzionale
+            - cols:
+              - text: Hai salvato il documento. Vai alla sezione "..." per visualizzarlo
+              - text: Il documento è stato salvato con successo nella sezione "..."
+            - cols:
+              - text: Mario ha pubblicato un nuovo commento
+              - text: Un nuovo commento è stato pubblicato da Mario
           
         - name: TextImageCta
           text: |
-            L’uso di negazioni rende il testo più difficile da capire
+            Le negazioni e le forme passive rendono il testo più difficile da capire. Prediligi l'uso di forme attive ed evita le negazioni quando progetti microtesti per orientare azioni da compiere in interfaccia.
         
         
         # 5th   
@@ -274,10 +283,10 @@ components:
         
         - name: TextImageCta
           text: |
-            Dando per implicito che è buona norma progettare un’interfaccia che impedisca il più possibile all’utente di trovarsi in condizioni di errore, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di eventuali errori (es. compilazione di form, upload di documenti, note legali, 404 etc…)  è bene seguire alcune buone pratiche quali: 
+            Dando per implicito che è buona norma progettare un’interfaccia che impedisca il più possibile all’utente di trovarsi in condizioni di errore, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di eventuali problemi (es. compilazione di form, upload di documenti, note legali, 404 etc…) è bene seguire alcune buone pratiche quali: 
             - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**
             - fornire - se possibile - una **soluzione immediata**
-            - se non è possibile una soluzione immediata, fornire un’esperienza il più piacevole possibile della condizione inaspettata, suggerendo una **via di uscita alternativa**.
+            - se non è possibile una soluzione immediata, suggerire una **via di uscita alternativa** in modo da fornire un’esperienza il più accettabile possibile della condizione inaspettata.
               
         
         # 6th   
