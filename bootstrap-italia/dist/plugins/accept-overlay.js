@@ -1,26 +1,35 @@
 import BaseComponent from 'bootstrap/js/src/base-component.js';
-import { getElementFromSelector, reflow } from 'bootstrap/js/src/util';
-import EventHandler from 'bootstrap/js/src/dom/event-handler';
+import { reflow } from 'bootstrap/js/src/util';
+import { getCookiePreference, setCookiePreference } from './util/cookies.js';
+import SelectorEngine from 'bootstrap/js/src/dom/selector-engine';
 
 const NAME = 'acceptoverlay';
-const DATA_KEY = 'bs.accept-overlay';
-const EVENT_KEY = `.${DATA_KEY}`;
-const DATA_API_KEY = '.data-api';
-
-const EVENT_CLICK_DATA_API = `click${EVENT_KEY}${DATA_API_KEY}`;
 
 const CLASS_NAME_FADE = 'fade';
 const CLASS_NAME_SHOW = 'show';
 
-const SELECTOR_DATA_TOGGLE = '[data-bs-toggle="accept-overlay"]';
-const SELECTOR_DATA_ARIAHIDDEN = '[aria-hidden=true]';
+const SELECTOR_DATA_TOGGLE = '[data-bs-accept-from]';
+const SELECTOR_DATA_REMEMBER = '[data-bs-accept-remember]';
 
 class AcceptOverlay extends BaseComponent {
-  constructor(element) {
-    super(element);
-
-    this._isShown = !element.matches(SELECTOR_DATA_ARIAHIDDEN);
-    this._isTransitioning = false;
+  constructor(element, config) {
+    const parentElement = element.closest('.acceptoverlay');
+    super(parentElement);
+    const preference = getCookiePreference(config.service);
+    this._isShown = true;
+    this._toggleElement = element;
+    if (preference === 2) {
+      this.hide();
+      setTimeout(() => {
+        this._toggleElement.dispatchEvent(new Event('click'));
+      }, 100);
+      return
+    }
+    this._toggleElement.addEventListener("click", () => {
+      this.hide();
+      this._remember = this._toggleElement.parentElement.querySelector(SELECTOR_DATA_REMEMBER).checked;
+      setCookiePreference(config.service, this._remember ? 2 : 1);
+    });
   }
 
   // Getters
@@ -98,12 +107,14 @@ class AcceptOverlay extends BaseComponent {
  * ------------------------------------------------------------------------
  */
 
-EventHandler.on(document, EVENT_CLICK_DATA_API, SELECTOR_DATA_TOGGLE, function () {
-  const acceptOverlayElement = getElementFromSelector(this);
-  const acceptOverlay = AcceptOverlay.getOrCreateInstance(acceptOverlayElement);
-
-  this.checked ? acceptOverlay.show() : acceptOverlay.hide();
-});
+const acceptOverlays = SelectorEngine.find(SELECTOR_DATA_TOGGLE);
+if (acceptOverlays.length > 0) {
+  acceptOverlays.forEach((element) => {
+    AcceptOverlay.getOrCreateInstance(
+      element, {service: element.dataset.bsAcceptFrom}
+    );
+  });
+}
 
 export { AcceptOverlay as default };
 //# sourceMappingURL=accept-overlay.js.map

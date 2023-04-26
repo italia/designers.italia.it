@@ -142,8 +142,8 @@ class VideoPlayer extends BaseComponent {
 
 const players = SelectorEngine.find(SELECTOR_TOGGLE);
 if (players.length > 0) {
-  players.forEach((masonry) => {
-    VideoPlayer.getOrCreateInstance(masonry);
+  players.forEach((player) => {
+    VideoPlayer.getOrCreateInstance(player);
   });
 }
 
