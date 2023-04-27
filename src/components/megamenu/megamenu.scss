@@ -11,33 +11,48 @@
 .ratio-megamenu {
   --bs-aspect-ratio: 42.85%; // 21x9
   @include media-breakpoint-up(lg) {
-    --bs-aspect-ratio: 56.25%; // 16x9
+    // --bs-aspect-ratio: 36.25%; // 16x9
   }
 }
 
-.heading-link {
+.heading-link-wrapper {
   margin-left: 28px;
   margin-right: 28px;
   padding-bottom: 24px;
   margin-bottom: 24px;
   border-bottom: 1px solid #d9dadb !important;
-  font-weight: 600;
-  text-decoration: none;
-  font-size: .8889em;
-  line-height: 1em;
-  &.active {
-    span {
-      text-decoration: underline;
-      color: var(--color-primary-active);
+  a.heading-link {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 1.2;
+    text-decoration: none;
+    :hover {
+        text-decoration: underline;
+    }
+    &.active {
+      span {
+        text-decoration: underline;
+        color: var(--color-primary-active);
+      }
     }
   }
 }
 
+.menu-wrapper {
+  .link-list-wrapper ul li a {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px!important;
+  }
+}
+
+
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-  .heading-link {
+  .heading-link-wrapper {
     margin: 0 0 24px;
-    padding: 16px 28px 32px;
+    padding: 16px 0 24px;
   }
 }
