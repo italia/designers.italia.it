@@ -28,6 +28,11 @@ import Testimonials from "../components/testimonials/testimonials"
 import BannerTextCta from "../components/banner-text-cta/banner-text-cta"
 import Numbers from "../components/numbers/numbers"
 import ImageIcons from "../components/image-icons/image-icons"
+import Video from "../components/video/video"
+
+import { Script } from "gatsby"
+
+
 
 const Template = ({Pagedata, pageContext, location, lastModified}) => {
 	return (
@@ -43,6 +48,7 @@ const Template = ({Pagedata, pageContext, location, lastModified}) => {
       </Header>
       <HeaderPost data={HeaderData.headerPost}/>
       <main id="main">
+        <Video></Video>
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && <ContentCollapse label={Pagedata.components.hero.moreButton} labelClose={Pagedata.components.hero.moreButtonClose}>
             {Pagedata.components.hero.moreText}
@@ -93,6 +99,7 @@ const Template = ({Pagedata, pageContext, location, lastModified}) => {
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js" />
     </div>
 	)
 }
