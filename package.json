@@ -19,7 +19,7 @@
     "site"
   ],
   "scripts": {
-    "prepare-lib": "recursive-copy ./bootstrap-italia -w ./node_modules/bootstrap-italia && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
+    "prepare-lib": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
     "prepare-content": "node ./scripts/prepare.js",
     "start": "npm run prepare-lib && gatsby develop",
     "develop": "npm run start",
@@ -32,7 +32,7 @@
     "@colliercz/gatsby-transformer-gitinfo": "^1.4.0",
     "@loadable/component": "^5.15.2",
     "adm-zip": "^0.5.10",
-    "boostrap-italia": "./bootstrap-italia/",
+    "bootstrap-italia": "^2.4.1",
     "classnames": "^2.3.2",
     "fs-extra": "^11.1.0",
     "gatsby": "^4.23.0",
