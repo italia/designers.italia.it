@@ -3,7 +3,7 @@ layout: post
 lang: it
 excerpt_separator: <!-- MORE -->
 title: "Design system: pubblicata la versione ufficiale dello UI Kit Italia"
-subtitle: "Il kit per progettare interfacce e siti digitali della Pubblica Amministrazione (PA) esce dalla fase beta."
+subtitle: "Il kit per progettare interfacce e siti digitali della Pubblica Amministrazione (PA) esce dalla fase beta"
 date: 2023-05-04 09:00:00 +0200
 pinned: false
 nodate: false
