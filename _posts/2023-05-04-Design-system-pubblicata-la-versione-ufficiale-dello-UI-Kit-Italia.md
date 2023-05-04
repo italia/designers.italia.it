@@ -28,7 +28,7 @@ Negli ultimi mesi, partendo dai feedback raccolti sulla community, la squadra al
 
 Da oggi, quindi, lo UI Kit entra in una nuova fase, nel quale seguirà il normale versionamento semantico “major.minor.patch”, per abilitarne scalabilità e miglioramento continuo.
 
-**[Scopri lo UI Kit Italia](https://www.figma.com/community/file/1105848677422572920)**
+**[Scopri lo UI Kit Italia](https://www.figma.com/community/file/1105848677422572920)**  
 **[Scopri la repository GitHub dedicata](http://github.com/italia/design-ui-kit)**
 
 ## Come contribuire al progetto
