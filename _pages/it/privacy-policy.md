@@ -1,0 +1,87 @@
+---
+title: Privacy Policy
+lang: it
+layout: page
+backgroundColor: '#06c'
+nodate: true
+---
+
+[https://designers.italia.it](https://designers.italia.it) è gestito dalla Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione digitale.
+
+A norma degli articoli 13 e 14 del Regolamento UE 2016/679 (GDPR) vogliamo fornirti un'informativa semplice e chiara su come trattiamo i dati personali che ci fornisci direttamente o di cui comunque potremo venire in possesso tramite contatto con il sito web https://designers.italia.it.
+
+## Titolare del trattamento
+
+Il Titolare del trattamento è la Presidenza del Consiglio dei Ministri - Dipartimento per la trasformazione digitale, con sede in Largo Pietro di Brazzà 86, 00187 Roma, contattabile ai seguenti recapiti:
+
+* E-mail: [segreteria.trasformazionedigitale@governo.it](mailto:segreteria.trasformazionedigitale@governo.it);
+* PEC: [diptrasformazionedigitale@pec.governo.it](mailto:diptrasformazionedigitale@pec.governo.it).
+
+## Responsabile per la protezione dei dati
+
+Il Responsabile per la protezione dei dati - Data Protection Officer è contattabile ai seguenti recapiti:
+
+* E-mail: [responsabileprotezionedatipcm@governo.it](mailto:responsabileprotezionedatipcm@governo.it);
+* PEC: [rpd@pec.governo.it](mailto:rpd@pec.governo.it).
+
+## Base giuridica del trattamento
+
+I dati personali indicati in questa informativa sono trattati dal Titolare nell'esecuzione dei propri compiti di interesse pubblico o comunque connessi all'sercizio dei propri pubblici poteri, ivi incluso il compito di favorire la conoscenza delle iniziative del Dipartimento per la trasformazione digitale (art. 6, par. 1, lett. e del GDPR). 
+
+## Tipologia di dati trattati, finalità del trattamento e periodo di conservazione
+
+### Dati di navigazione
+
+I sistemi informatici e le procedure software preposte al funzionamento di questo sito acquisiscono, nel corso del loro normale esercizio, alcuni dati personali la cui trasmissione è implicita nell’uso dei protocolli di comunicazione di Internet. In questa categoria di dati rientrano gli indirizzi IP o i nomi a dominio dei computer e dei terminali utilizzati dagli utenti, gli indirizzi in notazione URI/URL (Uniform Resource Identifier/Locator) delle risorse richieste, l’orario della richiesta, il metodo utilizzato nel sottoporre la richiesta al server, la dimensione del file ottenuto in risposta, il codice numerico indicante lo stato della risposta data dal server (buon fine, errore, ecc.) ed altri parametri relativi al sistema operativo e all’ambiente informatico dell’utente. Tali dati, necessari per la fruizione dei servizi web, vengono anche trattati allo scopo di controllare il corretto funzionamento del sito e dei servizi offerti, ottenere informazioni statistiche sull’uso dei servizi (pagine più visitate, numero di visitatori per fascia oraria o giornaliera, aree geografiche di provenienza, ecc.) e al fine di garantire la sicurezza della navigazione.
+I dati di navigazione verranno conservati per il tempo strettamente necessario a fornire i servizi richiesti e a svolgere le correlate operazioni tecniche e di sicurezza, fatta salva la necessità di conservarli ulteriormente per eventuali necessità di accertamento di reati da parte dell'Autorità giudiziaria.
+
+### Dati comunicati dall'utente
+
+#### Messaggi degli utenti
+L’invio facoltativo, esplicito e volontario di messaggi agli indirizzi di contatto del sito, nonché i messaggi privati inviati dagli utenti ai relativi profili/pagine istituzionali sui social media (laddove questa possibilità sia prevista), comportano l’acquisizione dei dati di contatto del mittente, necessari a rispondere, nonché dei dati personali inclusi nelle comunicazioni. Tali dati saranno trattati dal Titolare, esclusivamente al fine di - e per il periodo strettamente necessario a - gestire le interazioni con l’utenza.
+
+#### Mailing list
+Le comunicazioni relative alle iniziative di Developers Italia e Designers Italia sono distribuite, in automatico e gratuitamente, a quanti fanno richiesta di riceverle compilando il form.
+L’indirizzo mail fornito dall’utente è utilizzato al solo fine di prestare il servizio richiesto e, per tale ragione, sarà conservato esclusivamente per il periodo in cui lo stesso è attivo. 
+Per non ricevere più l’aggiornamento puoi in ogni momento richiedere la cancellazione dal servizio, selezionando l’apposito pulsante all’interno della comunicazione ricevuta oppure scrivendoci agli indirizzi sopra riportati.
+
+## Chi potrà conoscere i dati personali
+
+I dati personali raccolti potranno essere oggetto di comunicazione a soggetti, interni o esterni alla Presidenza del Consiglio dei Ministri, nei confronti dei quali la comunicazione si configura come necessaria per il perseguimento delle finalità sopra specificate, compresi soggetti terzi che forniscono un servizio al Titolare, ad esempio per la fornitura di servizi tecnologici di questo portale, e che tratteranno detti dati personali in qualità di responsabili del trattamento ai sensi e per gli effetti di cui all’articolo 28 del GDPR.
+
+L’elenco dei responsabili del trattamento può essere richiesto al Titolare in qualsiasi momento, scrivendo a
+[segreteria.trasformazionedigitale@governo.it](mailto:segreteria.trasformazionedigitale@governo.it).
+
+## Trasferimento dei dati
+
+I dati potranno essere liberamente trasferiti fuori dal territorio nazionale a Paesi situati nell’Unione Europea. Per la fornitura di alcuni servizi tecnologici, il Titolare potrebbe avvalersi di soggetti ubicati al di fuori dell’Unione Europea. L’eventuale trasferimento dei dati in Paesi situati al di fuori dell’Unione Europea avverrà, in ogni caso, nel rispetto delle garanzie appropriate e opportune ai fini del trasferimento stesso, ai sensi della normativa applicabile.
+
+## Quali sono i tuoi diritti
+
+* **Diritto di accedere ai dati**: puoi ottenere conferma e informazioni sul trattamento.
+* **Diritto di rettifica**: puoi rettificare dati inesatti o integrarli.
+* **Diritto di cancellazione**: nei casi di legge, puoi chiedere l'oblio.
+* **Diritto di limitazione al trattamento**: nei casi di legge, puoi chiedere di limitare
+  il trattamento.
+* **Diritto di opporsi al trattamento**: per particolari motivi puoi opporti al trattamento
+  per l'esecuzione di un compito di interesse pubblico o connesso all'esercizio di pubblici poteri.
+
+Per maggiori informazioni o esercitare i tuoi diritti contatta il Titolare agli indirizzi sopra indicati. Se invece ritieni che il trattamento dei dati personali a te riferiti avvenga in violazione di quanto previsto dal GDPR, hai anche diritto di proporre reclamo, ai sensi dell’art. 77 del GDPR, al Garante per la protezione dei dati personali.
+
+## Cookie
+
+Questa sezione fornisce informazioni dettagliate sull’uso dei cookie, su come sono utilizzati dal sito e su come gestirli, in attuazione dell’art. 122 del decreto legislativo 30 giugno 2003, n. 196, nonché nel rispetto delle "[Linee guida cookie e altri strumenti di tracciamento](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9677876)" emanate dal Garante per la protezione dei dati personali con provvedimento del 10 giugno 2021.
+
+Il sito non utilizza cookie per la profilazione degli utenti, ma soltanto cookie tecnici necessari per il suo funzionamento e per migliorare l’esperienza d’uso dei propri visitatori, nonché cookie analitici che raccolgono, in forma anonima (attraverso il mascheramento di porzioni dell’indirizzo IP dell’utente), informazioni statistiche e aggregate sulle modalità di navigazione degli utenti (ad es., numero di pagine visitate e accessi, tempo di permanenza nel sito). Tali cookie sono assimilati ai cookie tecnici e non necessitano del consenso dell’utente. Inoltre, i predetti cookie analitici, una volta memorizzati sul browser dell’utente, possono permanere fino a un massimo di 13 mesi, ferma la possibilità per l’utente di decidere di disabilitarne l’utilizzo sul proprio browser, in qualsiasi momento, nelle modalità indicate nella sezione che segue. 
+
+## Come disabilitare i cookie (opt-out) sul proprio dispositivo
+
+La maggior parte dei browser accetta i cookie automaticamente, ma è possibile rifiutarli. Se non si desidera ricevere o memorizzare i cookie, si possono modificare le impostazioni di sicurezza del browser utilizzato, secondo le istruzioni rese disponibili dai relativi fornitori ai link di seguito indicati. Nel caso in cui si disabilitino tutti i cookie, il sito potrebbe non funzionare correttamente.
+
+* [Chrome](https://support.google.com/chrome/answer/95647)
+* [Firefox](https://support.mozilla.org/it/kb/protezione-antitracciamento-avanzata-firefox-desktop)
+* [Safari](https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac)
+* [Edge](https://support.microsoft.com/it-it/help/4027947/microsoft-edge-delete-cookies)
+* [Opera](https://help.opera.com/en/latest/web-preferences/#cookies)
+
+*Ultimo aggiornamento: 19/1/2023*
