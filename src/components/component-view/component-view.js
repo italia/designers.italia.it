@@ -59,9 +59,7 @@ const ComponentView = ({
   }
 
   const initAutoHeight = () => {
-    const iframes = document.querySelectorAll('iframe')
-    if (!iframes) return
-    iframes.forEach((iframe) => {
+    const iframe = document.getElementById(`${idPrefix}-iframe`)
       const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
       if (!exampleContainer) return
       if (viewerHeight === 0) {
@@ -84,16 +82,13 @@ const ComponentView = ({
         iframe.height = viewerHeight + 50
         exampleContainer.classList.add("h-100")
       }
-    })
   }
 
   useEffect(() => {
     initAutoHeight()
-    const iframes = document.querySelectorAll('iframe')
-    iframes.forEach((iframe) => {
+    const iframe = document.getElementById(`${idPrefix}-iframe`)
       iframe.addEventListener("load", initAutoHeight)
       iframe.addEventListener("transitionend", initAutoHeight)
-    })
   })
 
   const theme = a11yDark;
