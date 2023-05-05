@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.4.1/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: rgb(242, 247, 252);
+            padding: 0;
+            margin: 0;
+        }
+
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+
+        .select-wrapper {
+            margin-top: 48px;
+        }
+
+        a.back-to-top {
+            position: relative;
+            bottom: unset;
+            right: unset;
+            visibility: visible;
+            margin: 0 auto;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .callout:not(.callout-highlight):not(.callout-more) .callout-title {
+            background-color: rgb(242, 247, 252);
+        }
+
+        .it-carousel-wrapper {
+            width: 96%;
+        }
+
+        .it-header-navbar-wrapper .custom-navbar-toggler .icon.bg-override {
+            fill: #06c;
+            width: 32px;
+            height: 32px;
+        }
+
+        .it-example-modal .modal {
+            position: relative;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+            z-index: 1;
+            display: block;
+        }
+
+        .test-docs .notification {
+            position: static;
+            top: auto;
+            bottom: auto;
+            right: auto;
+            left: auto;
+            transform: none;
+            display: block;
+        }
+
+        .test-docs .notification.dismissable {
+            position: relative;
+        }
+
+        .test-desktop .notification {
+            position: absolute;
+            display: block;
+        }
+    </style>
+    <title>Esempio video-player-6</title>
+</head>
+
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example w-100">
+            
+
+<script>
+  const loadYouTubeVideo = function(videoUrl) {
+    const videoEl = document.getElementById("vid1");
+    const video = bootstrap.VideoPlayer.getOrCreateInstance(videoEl);
+    video.setYouTubeVideo(videoUrl);
+  }
+</script>
+<div class="acceptoverlayable">
+  <div class="acceptoverlay acceptoverlay-primary fade show">
+    <div class="acceptoverlay-inner">
+      <div class="acceptoverlay-icon">
+        <svg class="icon icon-xl"><use href="/dist/svg/sprites.svg#it-video"></use></svg>
+      </div>
+      <p>Questo contenuto è ospitato da un sito di terze parti. Mostrando il contenuto esterno accetti i <a href="https://www.youtube.com/t/terms" class="text-white">termini e le condizioni di youtube.com.</a></p>
+      <div class="acceptoverlay-buttons bg-dark">
+        <div class="form-check">
+          <input id="chk-remember" type="checkbox" data-bs-accept-remember>
+          <label for="chk-remember">Ricorda la mia scelta</label>
+        </div>
+        <button type="button" class="btn btn-primary" data-bs-accept-from="youtube.com"
+        onclick="loadYouTubeVideo('https://youtu.be/_0j7ZQ67KtY')">Accetta</button>
+      </div>
+    </div>
+  </div>
+  <div>
+    <video controls data-bs-video id="vid1"
+      class="video-js"
+      width="640" height="264">
+    </video>
+    <div class="vjs-transcription accordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="transcription-head9">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transcription9" aria-expanded="true" aria-controls="transcription">
+            Trascrizione
+          </button>
+        </h2>
+        <div id="transcription9" class="accordion-collapse collapse" role="region" aria-labelledby="transcription-head9">
+          <div class="accordion-body">
+            Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.4.1/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+
+        // tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // popover
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+
+    </script>
+</body>
+
+</html>
