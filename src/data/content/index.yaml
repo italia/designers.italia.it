@@ -153,7 +153,7 @@ components:
       big: true
       id: HL2b
       specular: false
-      padBottom: false # last highlight must have padBottom: false!
+      padBottom: true
       img: /images/community/20230504-ui-kit-italia-official-release.png
       alt: "UI Kit Italia"
       headingLevel: 3
@@ -162,6 +162,21 @@ components:
         - label: "Leggi la notizia"
           btnStyle: primary
           url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/"
+          addonStyle: mb-3 mb-sm-0
+    - title: "Seconda edizione del corso Formez"
+      subtitle: "Scopri come progettare e realizzare servizi pubblici di qualità"
+      big: true
+      id: HL2c
+      specular: true
+      padBottom: false # last highlight must have padBottom: false!
+      img: /images/community/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali-1920x923.png
+      alt: "Corso Formez"
+      headingLevel: 3
+      background: light
+      buttons:
+        - label: "Scopri come registrarti"
+          btnStyle: primary
+          url: "https://designers-italia-ka7ar78n3-dip-trasformazione-digitale.vercel.app/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali/"
           addonStyle: mb-3 mb-sm-0
 
   highlightCards:
@@ -289,6 +304,20 @@ components:
     #   tag:
     #     label: Community Lab
 
+    - title: Tutti gli eventi di Designers Italia a maggio
+      headingLevel: 3
+      customCol: col-lg-4
+      text: Scopri il nostro tour fra Wired Next Festival, Forum PA e Accessibility Day.
+      img: /images/community/20230503-gli-eventi-di-designers-italia-a-maggio-1400x673.png
+      alt: ""
+      imgRatio: 21x9
+      # imgPlaceholder: true
+      fullHeight: false
+      rounded: true
+      url: "/community/notizie/20230506-tutti-gli-eventi-di-designers-italia-a-maggio/"
+      dateInfo: 5 maggio 2023
+      tags: [Eventi,Formazione]
+
     - title: "Un Vademecum per ripensare lo spazio digitale delle Università"
       headingLevel: 3
       customCol: col-lg-4
@@ -335,20 +364,6 @@ components:
           icon: sprites.svg#it-external-link
           size: xs
       moreInfo: di Marco Maria Pedrazzo
-
-    - title: Aperte le iscrizioni della seconda edizione del corso “Qualità dei servizi digitali”
-      headingLevel: 3
-      customCol: col-lg-4
-      text: Un’occasione per imparare a progettare e realizzare servizi pubblici di qualità.
-      img: /images/community/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali-1400x723.png
-      alt: "Qualità servizi digitali"
-      imgRatio: 21x9
-      # imgPlaceholder: true
-      fullHeight: false
-      rounded: true
-      url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali"
-      dateInfo: 28 marzo 2023
-      tags: [Servizi pubblici digitali,Formazione]
 
   bannerTextCta:
     id: bannerBottom
