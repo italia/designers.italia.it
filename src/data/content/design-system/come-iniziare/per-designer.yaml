@@ -132,10 +132,27 @@ components:
 
     - full: true
       noSpace: true
-      title: Scopri e usa lo UI Kit
+      title: Scopri e usa UI Kit Italia
       text: Lo strumento a disposizione dei designer per costruire e prototipare interfacce ed esperienze di siti e servizi pubblici digitali
       background: null
       components:
+
+        - name: TextImageCta
+          title: "Design system: pubblicata la versione ufficiale dello UI Kit Italia"
+          text: |
+            Il kit per progettare interfacce e siti digitali della PA esce dalla fase beta
+          ctas:
+          - label: "Leggi la notizia" #C
+            url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
+            blank: true #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         - name: TextImageCta
           title: Versione corrente
@@ -163,12 +180,22 @@ components:
               addonClasses: ms-2
 
         - name: TextImageCta
-          title: Tutti i formati disponibili
+          title: Altri formati e changelog
           headingLevel: 4
           # text: |
           ctas:
-          - label: Vai al repository GitHub dedicato #C
+          - label: Vai alla repository GitHub dedicata #C
             url: https://github.com/italia/design-ui-kit #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Changelog #C
+            url: https://github.com/italia/design-ui-kit/releases #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
