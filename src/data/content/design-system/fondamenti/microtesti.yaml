@@ -139,8 +139,18 @@ components:
           headingLevel: 3
           text: |
             I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. [buttons](/design-system/componenti/buttons/)) con la giusta gerarchia di importanza è fondamentale per **orientare l’azione primaria**, suggerire le possibilità di interazione secondarie o collaterali, far **raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo**.
-            
-            [Scopri le buone pratiche sui contenuti del componente “Buttons”](/design-system/componenti/buttons/)
+          ctas:
+          - label: "Scopri le buone pratiche sui contenuti del componente “Buttons”" #C
+            url: "/design-system/componenti/buttons/" #M
+            blank: false #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
                   
         - name: TextImageCta
           title: Rispetta la consistenza delle tue scelte di scrittura
@@ -336,15 +346,35 @@ components:
           title: "Rispetta il tono di voce del contesto"
           text: |
             Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Il rispetto di un tono di voce coerente e incentrato sull’utente è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi con **l’obiettivo primario di farti capire ed essere efficace**, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
-            
-            [Scopri il fondamento dedicato al Tono di voce](/design-system/fondamenti/tono-di-voce/)
+          ctas:
+          - label: "Scopri il fondamento dedicato al Tono di voce”" #C
+            url: "/design-system/fondamenti/tono-di-voce/" #M
+            blank: false #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
         
         - name: TextImageCta
           title: "Scrivi per tutti"
           text: |
             Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Numerosi studi hanno infatti dimostrato che le persone non leggono necessariamente dall’alto al basso e parola per parola, ma più frequentemente **scansionano il contenuto della pagina secondo pattern visivi ricorrenti** ([F-shape](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/), [Z-shape](https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c)), ancorando la lettura all’aspetto di alcuni componenti interattivi e a volte limitandosi ad una lettura superficiale delle informazioni.
-            
-            [Scopri il fondamento dedicato al Linguaggio](/design-system/fondamenti/linguaggio/)
+          ctas:
+          - label: "Scopri il fondamento dedicato al Linguaggio”" #C
+            url: "/design-system/fondamenti/linguaggio/" #M
+            blank: false #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
         
         
     ####
