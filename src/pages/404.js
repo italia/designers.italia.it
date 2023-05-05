@@ -1,45 +1,39 @@
 import * as React from "react"
-import { Link } from "gatsby"
 
-const pageStyles = {
-  color: "#232129",
-  padding: "24px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-  maxWidth: 820,
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 48,
-}
+import Button from "../components/button/button"
+import ImageResponsive from "../components/image-responsive/image-responsive"
 
-const paragraphStyles = {
-  marginBottom: 24,
-}
-const codeStyles = {
-  color: "#8a8a8a",
-  padding: 4,
-  backgroundColor: "#f4f4f4",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
+import Template from "../templates/base"
+
+import "../scss/404.scss"
 
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <h1 style={headingStyles}>Questa pagina non esiste</h1>
-      <p style={paragraphStyles}>
-        ✨ Vuoi proporti per scriverla? 🧐
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Siamo in locale, puoi crearla se vuoi a partire dalla root <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Vai all'inizio del sito Designers Italia</Link>.
-      </p>
-    </main>
+    <Template>
+      <section>
+        <div className="container-xxl pt-5 pb-5 mb-5 pt-lg-6 pb-lg-6">
+          <div className="row">
+            <div className="col-lg-4 col-12 pb-3 text-center">
+              <ImageResponsive imgClassName="logo" src="/static/images/404-logo.svg" alt="" />
+            </div>
+            <div className="col-lg-7 col-12">
+              <h1>Un imprevisto può capitare</h1>
+              <div className="lead">
+                <p>
+                  Non abbiamo trovato la pagina che cercavi.
+                </p>
+
+                <p>
+                  Verifica che l’indirizzo sia corretto oppure torna all’inizio per
+                  esplorare altri contenuti.
+                </p>
+                <Button btnStyle="primary" url="/"><strong>Ritorna all’inizio</strong></Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Template>
   )
 }
 
