@@ -26,8 +26,8 @@ const List = React.forwardRef(({
   const [currentUrl, setCurrentUrl] = useState('')
   const [currentTitle, setCurrentTitle] = useState('')
 
-  const ICON_CHEVRON_RIGHT = {
-		icon: "sprites.svg#it-chevron-right",
+  const ICON_ARROW_RIGHT_TRIANGLE = { 
+		icon: "sprites.svg#it-arrow-right-triangle",
 		size: "sm",
 		color: "primary",
 		addonClasses: "align-middle me-2",
@@ -103,7 +103,7 @@ const List = React.forwardRef(({
   if (listItems) {
     if (isMenu) { // megamenu
       children = listItems.map((listitems, index) => {
-        return <ListItem {...listitems} key={"z-list-" + index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList} icon={ICON_CHEVRON_RIGHT} iconLeft={true}></ListItem>
+        return <ListItem {...listitems} key={"z-list-" + index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList} icon={ICON_ARROW_RIGHT_TRIANGLE} iconLeft={true}></ListItem>
       })
     } else {
       children = listItems.map((listitems, index) => {

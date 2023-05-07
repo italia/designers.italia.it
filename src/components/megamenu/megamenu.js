@@ -40,7 +40,7 @@ const Megamenu = ({
 					{heading &&
 						<div className="heading-link-wrapper">
 							<Link className="heading-link d-flex-inline align-items-center" to={heading.url} activeClassName={GATSBY_ACTIVE}>
-								<Icon icon="sprites.svg#it-chevron-right" size="sm" color="primary" addonClasses="me-2"></Icon>
+								<Icon icon="sprites.svg#it-arrow-right-triangle" size="sm" color="primary" addonClasses="me-2"></Icon>
 								<span>{heading.label}</span>
 							</Link>
 						</div>
