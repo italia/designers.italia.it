@@ -38,7 +38,6 @@ const HeaderSlim = ({ data }) => {
 				<div className="row">
 					<div className="col-12">
 						<div className="it-header-slim-wrapper-content">
-							{/* <a className="d-none d-lg-block navbar-brand" href="#" data-focus-mouse="false">{data.title}</a> */}
 							<div className="navbar-brand d-none d-lg-block">
 								<span>
 									<a target="_blank" className="me-2" href="https://innovazione.gov.it">Dipartimento per la trasformazione digitale</a>+<a target="_blank" className="ms-2" href="https://agid.gov.it">Agenzia per l'Italia digitale</a>
