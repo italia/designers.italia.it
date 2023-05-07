@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const slugify = require('slugify')
 const Mustache = require('mustache');
-const bsiData = require("../bootstrap-italia/package.json")
+const bsiData = require("../node_modules/bootstrap-italia/package.json")
 
 
 const SEARCH_DIR = path.join("src", "data", "components_json")
