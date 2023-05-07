@@ -46,7 +46,7 @@ const HeaderSlim = ({ data }) => {
 							<div className="nav-mobile">
 								<nav aria-label={data.nav.ariaLabel}>
 									<div className="d-flex align-items-center" >
-										<div className="navbar-brand fw-semibold d-lg-none">
+										<div className="navbar-brand d-lg-none">
 											<span>
 												<a target="_blank" className="p-2" href="https://innovazione.gov.it">DTD</a> + <a target="_blank" className="p-2" href="https://agid.gov.it">AgID</a>
 											</span>
