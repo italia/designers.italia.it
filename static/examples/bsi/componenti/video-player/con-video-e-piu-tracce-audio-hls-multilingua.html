@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.4.1/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.4.2/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -77,7 +77,7 @@
             display: block;
         }
     </style>
-    <title>Esempio video-player-4</title>
+    <title>Esempio Con video e più tracce audio HLS multilingua</title>
 </head>
 
 <body class="h-100">
@@ -85,9 +85,9 @@
         <div class="bd-example w-100">
             
 <div class="row">
-  <video 
+  <video
     data-bs-video
-    poster="/docs/assets/video/ElephantsDream.mp4-poster16.gif"
+    poster="https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDream.mp4-poster21.jpg"
     preload="auto"
     data-setup='{
       "controls": true,
@@ -95,46 +95,16 @@
       "fluid": true
     }'
   >
-    <source src="/docs/assets/video/ElephantsDreamDASH/ElephantsDream.mp4.mpd" type="application/dash+xml">
-    <track 
-      kind="captions" 
-      src="/docs/assets/video/subtitles-it.vtt" 
-      srclang="it" 
-      label="Italiano" default>
-    <track 
-      kind="captions" 
-      src="/docs/assets/video/subtitles-en.vtt" 
-      srclang="en" 
-      label="English">
-    <track 
-      kind="captions" 
-      src="/docs/assets/video/subtitles-es.vtt" 
-      srclang="es" 
-      label="Español">
-    <track 
-      kind="chapters"
-      src="/docs/assets/video/chapters-en.vtt" 
-      srclang="en" 
-      label="English">
-    <track 
-      kind="chapters"
-      src="/docs/assets/video/chapters-es.vtt" 
-      srclang="es" 
-      label="Español">
-    <track 
-      kind="chapters"
-      src="/docs/assets/video/chapters-it.vtt" 
-      srclang="it" 
-      label="Italiano" default>
+    <source src="https://italia.github.io/bootstrap-italia/docs/assets/video/ElephantsDreamHLS/ElephantsDream.mp4.m3u8" type="application/x-mpegURL">
   </video>
   <div class="vjs-transcription accordion">
     <div class="accordion-item">
-      <h2 class="accordion-header" id="transcription-head6">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transcription6" aria-expanded="true" aria-controls="transcription">
+      <h2 class="accordion-header" id="transcription-head7">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transcription7" aria-expanded="true" aria-controls="transcription">
           Trascrizione
         </button>
       </h2>
-      <div id="transcription6" class="accordion-collapse collapse" role="region" aria-labelledby="transcription-head6">
+      <div id="transcription7" class="accordion-collapse collapse" role="region" aria-labelledby="transcription-head7">
         <div class="accordion-body">
           Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
         </div>
@@ -146,7 +116,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.4.1/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.4.2/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
