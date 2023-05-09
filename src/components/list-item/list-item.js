@@ -7,15 +7,15 @@ import './list-item.scss'
 
 const ListItem = ({
 	url,             //link of item
-  blank,
+	blank,
 	isDropdown,      //true / false
 	children,        //usually label of link
 	active,          //state of the link
 	disabled,        //disabled state
 	label,           //label
-  srBefore,        // screenreader text before label
-  srAfter,         // screenreader text after label
-  text,            //text under the label
+	srBefore,        // screenreader text before label
+	srAfter,         // screenreader text after label
+	text,            //text under the label
 	visuallyHidden,  //screen reader active state
 	divider,
 	textLarge,		  //bigger text
@@ -34,39 +34,39 @@ const ListItem = ({
 	onClick
 }) => {
 
-  const GATSBY_ACTIVE = "active"
+	const GATSBY_ACTIVE = "active"
 	let styles = url ? undefined : "list-item"
 
 	//icon render
 	let iconRendered
 	if (icon) {
-		iconRendered = <Icon {...icon}/>
+		iconRendered = <Icon {...icon} />
 	}
 	//icon render simple list
 	let iconRenderedSimpleList
 	if (icon) {
-		iconRenderedSimpleList = <div className="it-rounded-icon"><Icon {...icon}/></div>
+		iconRenderedSimpleList = <div className="it-rounded-icon"><Icon {...icon} /></div>
 	}
 	// arrow right
 	let actionRendered
-	if (action){
+	if (action) {
 		actionRendered = <Icon {...icon}></Icon>
 	}
 
 	//immagine
 	let imgRendered
-	if(img) {
-		imgRendered = <div className="it-thumb"><ImageResponsive src={img} alt={alt}/></div>
+	if (img) {
+		imgRendered = <div className="it-thumb"><ImageResponsive src={img} alt={alt} /></div>
 	}
 	// label
-	if(label){
+	if (label) {
 		children = label
 	}
 
 	//-avatar
 	let avatarRendered
-	if(avatar){
-		avatarRendered = <Avatar {...avatar}/>
+	if (avatar) {
+		avatarRendered = <Avatar {...avatar} />
 	}
 
 	//link
@@ -82,14 +82,14 @@ const ListItem = ({
 	//multiple actions right
 	let actionsRendered
 	let icons
-	if(actions) {
+	if (actions) {
 		let urlHidden = false
-		icons =  actions.map((icons,index) => {
+		icons = actions.map((icons, index) => {
 			// to set aria-hidden if an icon on the right side has the same url of the main element
-			if (icons.url === url) urlHidden = true 
-			else urlHidden = false 
+			if (icons.url === url) urlHidden = true
+			else urlHidden = false
 			//
-			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} aria-label={icons.ariaLabel} aria-hidden={urlHidden ? 'true' : undefined} key={"iconsaction-"+index} ><Icon {...icons}></Icon></Link>
+			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} aria-label={icons.ariaLabel} aria-hidden={urlHidden ? 'true' : undefined} key={"iconsaction-" + index} ><Icon {...icons}></Icon></Link>
 		})
 		actionsRendered = <span className="it-multiple flex-shrink-0">{icons}</span>
 	}
@@ -97,7 +97,7 @@ const ListItem = ({
 	let metadataRendered
 	if (metadata) {
 		metadataRendered = <span className="metadata">{metadata.label}</span>
-		if(metadata.url) {
+		if (metadata.url) {
 			metadataRendered = <Link to="#">{metadataRendered}</Link>
 		}
 	}
@@ -106,17 +106,17 @@ const ListItem = ({
 	if (metadata && actions) {
 		metadataActionsRendered = <span className="it-multiple flex-shrink-0">{metadataRendered}{icons}</span>
 	}
-  //-se esiste un link
+	//-se esiste un link
 	if (url) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined}  aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined}  to={url} target={blank ? '_blank' : undefined} onClick={onClick}>{iconLeft ? iconRendered: ''}<span>{children}</span>{isActive}{iconRight ? iconRendered: ''}</Link>
+		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' ' + addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined} aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined} to={url} target={blank ? '_blank' : undefined} onClick={onClick}>{iconLeft ? iconRendered : ''}<span>{children}</span>{isActive}{iconRight ? iconRendered : ''}</Link>
 	}
 	//-se è all'interno di un dropdown
 	if (isDropdown) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' '+addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined}  to={url} target={blank ? '_blank' : undefined} onClick={onClick}>{iconLeft ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered: ''}{isActive}</Link>
+		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' ' + addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined} to={url} target={blank ? '_blank' : undefined} onClick={onClick}>{(iconLeft && !disabled) ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered : ''}{isActive}</Link>
 	}
 	//- se è una lista semplice
 	if (simpleList) {
-		listContent = 	<div className="list-item">{
+		listContent = <div className="list-item">{
 			iconLeft ? iconRenderedSimpleList : ''}
 			{imgRendered}
 			{avatarRendered}
@@ -126,21 +126,21 @@ const ListItem = ({
 				{!metadataActionsRendered ? metadataRendered : ''}
 				{metadataActionsRendered}
 			</div>
-			</div>
-		styles=''
+		</div>
+		styles = ''
 	}
 	//- se è una lista semplice con link
 	if (simpleList && url) {
-		listContent = 	<Link className={`list-item ${active ? ' active' : ''}`} to={url} target={blank ? '_blank' : undefined}>
+		listContent = <Link className={`list-item ${active ? ' active' : ''}`} to={url} target={blank ? '_blank' : undefined}>
 			{iconLeft ? iconRenderedSimpleList : ''}
 			{imgRendered}
 			{avatarRendered}
 			<div className="it-right-zone">
 				<span className="text">
-          {srBefore && <span className="visually-hidden">{srBefore}</span>}
-          {children}
-          {srAfter && <span className="visually-hidden">{srAfter}</span>}
-        </span>
+					{srBefore && <span className="visually-hidden">{srBefore}</span>}
+					{children}
+					{srAfter && <span className="visually-hidden">{srAfter}</span>}
+				</span>
 				{actionRendered}
 				{!metadataActionsRendered ? actionsRendered : ''}
 				{!metadataActionsRendered ? metadataRendered : ''}
@@ -148,20 +148,20 @@ const ListItem = ({
 			</div>
 		</Link>
 	}
-  //- se è una lista semplice con link ed actions - eg: resources
+	//- se è una lista semplice con link ed actions - eg: resources
 	if (simpleList && url && actions) {
-		listContent = 	<div className={`list-item ${active ? ' active' : ''}`} >
+		listContent = <div className={`list-item ${active ? ' active' : ''}`} >
 			{iconLeft ? iconRenderedSimpleList : ''}
 			{imgRendered}
 			{avatarRendered}
 			<div className="it-right-zone">
-       			<Link to={url} target={blank ? '_blank' : undefined}>
+				<Link to={url} target={blank ? '_blank' : undefined}>
 					<span className="text">
-					{srBefore && <span className="visually-hidden">{srBefore}</span>}
-					{children}
-					{srAfter && <span className="visually-hidden">{srAfter}</span>}
-					{text && <em>{text}</em>}</span>
-       			 </Link>
+						{srBefore && <span className="visually-hidden">{srBefore}</span>}
+						{children}
+						{srAfter && <span className="visually-hidden">{srAfter}</span>}
+						{text && <em>{text}</em>}</span>
+				</Link>
 				{actionRendered}
 				{!metadataActionsRendered ? actionsRendered : ''}
 				{!metadataActionsRendered ? metadataRendered : ''}
@@ -175,7 +175,7 @@ const ListItem = ({
 		styles = ''
 	}
 
-	return(
+	return (
 		<li className={styles}>
 			{listContent}
 		</li>

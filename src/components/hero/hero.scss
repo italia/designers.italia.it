@@ -84,10 +84,14 @@
 		.dropdown-menu {
 			padding: 1rem 0;
 		}
-		.link-list-wrapper ul li a {
-			display: flex;
-			justify-content: space-between;
-		}
+    .link-list-wrapper ul li {
+      margin-bottom: 0!important;
+      a {
+        display: flex;
+        align-items: center;
+        padding: 8px 16px;
+      }
+    }
 		.link-list-wrapper ul li:not(:last-child) {
 			margin-bottom: calc(var(--spacer) * 4);
 		}
