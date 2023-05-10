@@ -58,6 +58,7 @@ kangaroo:
     id: kangEnd
     items:
       - title: Ti trovi nel modello #C
+        tooltip: Lorem ipsum
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
@@ -127,6 +128,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nel modello
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -134,19 +136,21 @@ components:
               color: "secondary"
             label: Comuni #C
             url: "../" #M
-      #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Design standard X #C
+            url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -154,6 +158,7 @@ components:
               color: "secondary"
             label: Designer, Developer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"

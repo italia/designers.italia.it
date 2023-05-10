@@ -174,6 +174,7 @@ export const query = graphql`
             personalInfo {
               items {
                 title
+                tooltip
                 icon {
                   icon
                   size
@@ -187,6 +188,7 @@ export const query = graphql`
             navposition {
               items {
                 title
+                tooltip
                 icon {
                   icon
                   size
@@ -200,6 +202,7 @@ export const query = graphql`
             otherInfo {
               items {
                 title
+                tooltip
                 icon {
                   icon
                   size
@@ -589,8 +592,13 @@ export const query = graphql`
             text
             noSpace
             responsive
+            addonClasses
             head {
               text
+              tag {
+                label
+                addonClasses
+              }
             }
             rows {
               cols {
@@ -675,6 +683,7 @@ export const query = graphql`
           components {
             name
             # responsive
+            # addonClasses
             title
             headingLevel
             specular
@@ -819,6 +828,7 @@ export const query = graphql`
             text
             title
             responsive
+            # addonClasses
             headingLevel
             # specular
             head {

@@ -76,6 +76,7 @@ components:
       navposition:
         items:
           - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -86,6 +87,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -96,6 +98,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -103,6 +106,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -128,10 +132,27 @@ components:
 
     - full: true
       noSpace: true
-      title: Scopri e usa lo UI Kit
+      title: Scopri e usa UI Kit Italia
       text: Lo strumento a disposizione dei designer per costruire e prototipare interfacce ed esperienze di siti e servizi pubblici digitali
       background: null
       components:
+
+        - name: TextImageCta
+          title: "Design system: pubblicata la versione ufficiale dello UI Kit Italia"
+          text: |
+            Il kit per progettare interfacce e siti digitali della PA esce dalla fase beta
+          ctas:
+          - label: "Leggi la notizia" #C
+            url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
+            blank: true #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         - name: TextImageCta
           title: Versione corrente
@@ -159,12 +180,22 @@ components:
               addonClasses: ms-2
 
         - name: TextImageCta
-          title: Tutti i formati disponibili
+          title: Altri formati e changelog
           headingLevel: 4
           # text: |
           ctas:
-          - label: Vai al repository GitHub dedicato #C
+          - label: Vai alla repository GitHub dedicata #C
             url: https://github.com/italia/design-ui-kit #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Changelog #C
+            url: https://github.com/italia/design-ui-kit/releases #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links

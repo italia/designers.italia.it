@@ -1,8 +1,13 @@
+@import "../../scss/bootstrap-breakpoints";
+
 .table {
   font-size: 0.8888888888888888rem;
   > :not(:first-child) {
     border-bottom-color: #C5C7C9;
     border-top: none;
+  }
+  &.fixed {
+      table-layout: fixed;
   }
   thead {
     border-style: none;

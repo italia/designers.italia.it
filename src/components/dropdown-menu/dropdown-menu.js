@@ -5,7 +5,7 @@ const DropdownMenu = ({
 	children
 }) => {
 	return (
-		<div className="dropdown-menu" role="region" aria-labelledby={idMegamenu}>
+		<div className="dropdown-menu shadow-lg" role="region" aria-labelledby={idMegamenu}>
 			{children}
 		</div>
 	)
