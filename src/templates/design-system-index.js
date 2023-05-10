@@ -47,9 +47,15 @@ const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
               {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
-                return(
-                  <SectionEditorial key={"sectionEditorial-"+index} {...section} componentViewerData={Object.assign({}, { variants: variantMock })}/>
-                )
+                if (variantMock) {
+                  return(
+                    <SectionEditorial key={"sectionEditorial-"+index} {...section} componentViewerData={{ variants: variantMock }}/>
+                  )
+                } else {
+                  return(
+                    <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
+                  )
+                }
               })}
 
               { Pagedata.components.filterCards && <FilterCards {...Pagedata.components.filterCards}/>}

@@ -2,7 +2,7 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata:
-  json: bsi/organizzare-gli-spazi/griglie.json
+  json: bsi/organizzare-gli-spazi/bordi.json
   template:
     name: design-system-index
 
@@ -105,11 +105,11 @@ components:
       components:
         - name: TextImageCta
           text: |
-            testing...
+            testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro
 
         - name: ComponentView
-          variantName: Base
-          source: bsi/organizzare-gli-spazi/griglie
+          variantName: Aggiuntivo
+          source: bsi/organizzare-gli-spazi/bordi
           idPrefix: "viewer01-"
           viewerHeight: 75
           accordionUrl: https://designers.italia.it/#test
@@ -117,23 +117,55 @@ components:
           accordionShow: false
 
         - name: TextImageCta
-          title: Qui serve altro spazio
+          title: E qui un titolo sezione tra un viewer e l'altro
           text: |
-            testing...
+            testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro
 
         - name: ComponentView
-          variantName: Colonne con larghezze omogenee
-          source: bsi/organizzare-gli-spazi/griglie
+          variantName: bordi-2
+          source: bsi/organizzare-gli-spazi/bordi
           idPrefix: "viewer02-"
           viewerHeight: 75
           accordionUrl: https://designers.italia.it/#test
           accordionOpen: false
           accordionShow: false
 
+        - name: TextImageCta
+          text: |
+            testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro
+
         - name: ComponentView
-          variantName: Responsive, mischiare e abbinare
-          source: bsi/organizzare-gli-spazi/griglie
+          variantName: Varianti di colore
+          source: bsi/organizzare-gli-spazi/bordi
           idPrefix: "viewer03-"
+          viewerHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: false
+
+    - full: true
+      noSpace: false
+      title: Test
+      text: Lorem ipsum
+      background: null
+      components:
+        - name: TextImageCta
+          text: |
+            testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro
+
+        - name: ComponentView
+          variantName: Arrotondati
+          source: bsi/organizzare-gli-spazi/bordi
+          idPrefix: "viewer04-"
+          viewerHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: false
+
+        - name: ComponentView
+          variantName: Gino
+          source: bsi/organizzare-gli-spazi/bordi
+          idPrefix: "viewer04-"
           viewerHeight: 150
           accordionUrl: https://designers.italia.it/#test
           accordionOpen: false

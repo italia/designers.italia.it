@@ -30,9 +30,11 @@ const ComponentView = ({
   componentViewerData
 }) => {
 
-  if (componentViewerData?.variants) { // it is not a component viewer... 
-    content = componentViewerData.variants.filter(item => item.name === variantName)[0].content;
+  if (componentViewerData?.variants) { // it is not a Componenti page, but a Fondamenti with one or more viewers... 
+    content = componentViewerData.variants.filter(item => item.name === variantName)[0]?.content
   }
+
+  if (content) content = content.replace(/^\s+|\s+$/g, '')
 
   const viewer = viewerData.viewer
   const accordionLabel = viewerData.accordionLabel
@@ -68,35 +70,35 @@ const ComponentView = ({
 
   const initAutoHeight = () => {
     const iframe = document.getElementById(`${idPrefix}-iframe`)
-      const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
-      if (!exampleContainer) return
-      if (viewerHeight === 0) {
-        // auto width
-        iframe.height = exampleContainer.clientHeight + 50
-        exampleContainer.addEventListener("click", () => {
-          setTimeout(() => {
-            iframe.height = exampleContainer.clientHeight + 50
-          }, 50)
-        })
-        const tabs = document.querySelector('.nav-tabs')
-        if (!tabs) return
-        tabs.addEventListener("click", () => {
-          setTimeout(() => {
-            iframe.height = exampleContainer.clientHeight + 50
-          }, 50)
-        })
-      } else if (viewerHeight > 0) {
-        // fixed width
-        iframe.height = viewerHeight + 50
-        exampleContainer.classList.add("h-100")
-      }
+    const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
+    if (!exampleContainer) return
+    if (viewerHeight === 0) {
+      // auto width
+      iframe.height = exampleContainer.clientHeight + 50
+      exampleContainer.addEventListener("click", () => {
+        setTimeout(() => {
+          iframe.height = exampleContainer.clientHeight + 50
+        }, 50)
+      })
+      const tabs = document.querySelector('.nav-tabs')
+      if (!tabs) return
+      tabs.addEventListener("click", () => {
+        setTimeout(() => {
+          iframe.height = exampleContainer.clientHeight + 50
+        }, 50)
+      })
+    } else if (viewerHeight > 0) {
+      // fixed width
+      iframe.height = viewerHeight + 50
+      exampleContainer.classList.add("h-100")
+    }
   }
 
   useEffect(() => {
     initAutoHeight()
     const iframe = document.getElementById(`${idPrefix}-iframe`)
-      iframe.addEventListener("load", initAutoHeight)
-      iframe.addEventListener("transitionend", initAutoHeight)
+    iframe.addEventListener("load", initAutoHeight)
+    iframe.addEventListener("transitionend", initAutoHeight)
   })
 
   const theme = a11yDark;
@@ -115,8 +117,6 @@ const ComponentView = ({
   const headId = `${uuid}-heading`
   const collId = `${uuid}-collapse`
   const [wrappedCode, setWrappedCode] = useState(false)
-
-  content = content.replace(/^\s+|\s+$/g, '')
 
   const [previewWidth, setPreviewWidth] = useState(" viewer-desktop")
   const changeResolution = (e) => {
@@ -146,22 +146,24 @@ const ComponentView = ({
 
   return (
     <div id={uuid}>
-      <div className={componentStyles}>
-        <span className="visually-hidden">Inizio componente:</span>
-        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${variantName}`} className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}></iframe>
-        <span className="visually-hidden">Fine componente.</span>
-        {responsiveButtonsItems &&
-          <div className="responsive-buttons d-none d-lg-block">
-            <div className="d-flex align-items-center justify-content-center pb-2 pt-4 mt-2">
-              {viewer.label &&
-                <span className="small pe-3 text-secondary fw-semibold">{viewer.label}</span>
-              }
-              {responsiveButtonsItems}
+      {content &&
+        <div className={componentStyles}>
+          <span className="visually-hidden">Inizio componente:</span>
+          <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${variantName}`} className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}></iframe>
+          <span className="visually-hidden">Fine componente.</span>
+          {responsiveButtonsItems &&
+            <div className="responsive-buttons d-none d-lg-block">
+              <div className="d-flex align-items-center justify-content-center pb-2 pt-4 mt-2">
+                {viewer.label &&
+                  <span className="small pe-3 text-secondary fw-semibold">{viewer.label}</span>
+                }
+                {responsiveButtonsItems}
+              </div>
             </div>
-          </div>
-        }
-      </div>
-      {accordionShow &&
+          }
+        </div>
+      }
+      {(content && accordionShow) &&
         <div className="accordion accordion-left-icon" id={accId}>
           <div className="accordion-item">
             <div className="d-flex justify-content-between align-items-center" id={headId}>
@@ -194,9 +196,11 @@ const ComponentView = ({
                     <Checkbox id={`${idPrefix}-wrap`} label='Mostra codice a capo' customStyle={'me-4'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
                   }
                 </div>
-                <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
-                  {content}
-                </SyntaxHighlighter>
+                {content &&
+                  <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
+                    {content}
+                  </SyntaxHighlighter>
+                }
               </div>
             </div>
             <div className="notification with-icon right-fix success dismissable fade" role="alert" aria-labelledby={`${idPrefix}-not1d-title`} id={`${idPrefix}-copyToast`}>
