@@ -8,7 +8,6 @@ import ContentSelectItem from "../content-select/components/content-select-item/
 import TabButton from "./tabbutton"
 
 const Tab = ({
-  // viewerData,
   componentSource,
   tab01,
   tab02,
