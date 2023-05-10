@@ -91,10 +91,6 @@ const SectionEditorial = ({
     id = undefined
   }
 
-  if (!componentViewerData) {
-    componentViewerData=null
-  }
-
   return(
     <section className={styles} aria-describedby={id}>
         <div className={container}>
@@ -129,9 +125,16 @@ const SectionEditorial = ({
                 {components &&
                   components.map((item,index) => {                    
                     const Switcher = SwitchComponents[item.name]
-                    return(
-                      <Switcher key={"switcher-"+index} {...item} componentViewerData={componentViewerData}/>
-                    )
+                    if (item.name === "ComponentView" && componentViewerData){
+                      return(
+                        <Switcher key={"switcher-"+index} {...item} componentViewerData={componentViewerData}/>
+                      )
+                    } else {
+                      return(
+                        <Switcher key={"switcher-"+index} {...item}/>
+                      )
+                    } 
+
                   })
                 }
               </div>
