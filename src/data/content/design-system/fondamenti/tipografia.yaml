@@ -1,0 +1,380 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/organizzare-i-contenuti/tipografia.json
+  template:
+    name: design-system-index
+
+seo:
+  name: Tipografia
+  description: "Documentazione sulla gestione della tipografia"
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/fondamenti/tipografia/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: 'Ultimo aggiornamento:'
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+components:
+  hero:
+    background: null
+    title: Tipografia
+    column: true
+    subtitle: "Documentazione sulla gestione della tipografia"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia,Sviluppo interfaccia]
+
+  sectionsEditorial :
+
+    - full: true
+      noSpace: false
+      title: Introduzione
+      text: _In stesura_
+      background: null
+      components:
+        # - name: TextImageCta
+        #   text: |
+        #     _In stesura_
+
+        - name: TextImageCta
+          title: Caratteri tipografici
+          headingLevel: 2
+
+        - name: TextImageCta
+          title: Titillium Web
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Titillium Web
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Lora
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Lora
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer02-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Roboto
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Roboto
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer03-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Gerarchia dei contenuti
+          headingLevel: 2
+
+        - name: TextImageCta
+          title: Intestazioni
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Intestazioni
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer04-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Paragrafi
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Paragrafi contenuti
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer05-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Paragrafi in evidenza
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Paragrafi in evidenza
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer07-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Formattazione
+          headingLevel: 2
+
+        - name: TextImageCta
+          title: Formattazione semantica dei contenuti
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Markup semantico nei paragrafi
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer08-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Link
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Link
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer09-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+        
+        - name: TextImageCta
+          title: Citazione
+          headingLevel: 2
+
+        - name: TextImageCta
+          title: Citazioni
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Citazioni
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer10-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Citazioni con fonte
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Citazioni con fonte
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer11-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Citazione, centrata
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Citazione, centrata
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer12-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Citazione, a destra
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Citazione, a destra
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer13-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Citazione, base
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Citazione, base
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer14-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Citazione, card
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Citazione, card
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer15-"
+          viewerHeight: 0
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Citazione, card con sfondo scuro
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Citazione, card con sfondo scuro
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer16-"
+          viewerHeight: 0
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Lista
+          headingLevel: 2
+
+        - name: TextImageCta
+          title: Lista senza stile
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Lista senza stile
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer17-"
+          viewerHeight: 0
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Lista inline
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Lista inline
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer18-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Lista, allineamento descrizione
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Lista, allineamento descrizione
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer19-"
+          viewerHeight: 0
+          accordionUrl: https://designers.italia.it/#test
+          accordionOpen: false
+          accordionShow: true

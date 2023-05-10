@@ -7,12 +7,12 @@ metadata:
     name: design-system-index
 
 seo:
-  name: Test
-  description: "Testing Component Viewer on fondamenti"
+  name: Bordi e raggi
+  description: "Modifica lo stile di bordi e raggi"
   image: null
   twitterImage: null
   canonical: null
-  pathname: /design-system/fondamenti/test/
+  pathname: /design-system/fondamenti/bordi-e-raggi/
 
 lastUpdate:
   column: true
@@ -39,9 +39,9 @@ lastUpdate:
 components:
   hero:
     background: null
-    title: Test
+    title: Bordi e raggi
     column: true
-    subtitle: "Testing Component Viewer on fondamenti"
+    subtitle: "Modifica lo stile di bordi e raggi"
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -54,6 +54,7 @@ components:
       navposition:
         items:
           - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -64,6 +65,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -74,13 +76,15 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer, Developer, Qui per curiosità #C
+            label: Designer, Developer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -99,14 +103,22 @@ components:
 
     - full: true
       noSpace: false
-      title: Test
-      text: Lorem ipsum
+      title: Introduzione
+      text: _In stesura_
       background: null
       components:
-        - name: TextImageCta
-          text: |
-            testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro
+        # - name: TextImageCta
+        #   text: |
+        #     _In stesura_
 
+        - name: TextImageCta
+          title: Esempi
+          headingLevel: 2
+
+        - name: TextImageCta
+          title: Aggiuntivo
+          text: |
+            _In stesura_
         - name: ComponentView
           variantName: Aggiuntivo
           source: bsi/organizzare-gli-spazi/bordi
@@ -115,13 +127,12 @@ components:
           minHeight: 150
           accordionUrl: https://designers.italia.it/#test
           accordionOpen: false
-          accordionShow: false
+          accordionShow: true
 
         - name: TextImageCta
-          title: E qui un titolo sezione tra un viewer e l'altro
+          title: Sottrattivo
           text: |
-            testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro
-
+            _In stesura_
         - name: ComponentView
           variantName: bordi-2
           source: bsi/organizzare-gli-spazi/bordi
@@ -133,9 +144,9 @@ components:
           accordionShow: true
 
         - name: TextImageCta
+          title: Varianti di colore
           text: |
-            testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro
-
+            _In stesura_
         - name: ComponentView
           variantName: Varianti di colore
           source: bsi/organizzare-gli-spazi/bordi
@@ -144,18 +155,12 @@ components:
           minHeight: 150
           accordionUrl: https://designers.italia.it/#test
           accordionOpen: false
-          accordionShow: false
-
-    - full: true
-      noSpace: false
-      title: Test
-      text: Lorem ipsum
-      background: null
-      components:
+          accordionShow: true
+  
         - name: TextImageCta
+          title: Varianti di raggio
           text: |
-            testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro testing altro testo tra un viewer e l'altro
-
+            _In stesura_
         - name: ComponentView
           variantName: Arrotondati
           source: bsi/organizzare-gli-spazi/bordi
@@ -164,17 +169,5 @@ components:
           minHeight: 150
           accordionUrl: https://designers.italia.it/#test
           accordionOpen: false
-          accordionShow: false
-
-        - name: ComponentView
-          variantName: Gino Nome Sbagliato per provare cosa succede runtime
-          source: bsi/organizzare-gli-spazi/bordi
-          idPrefix: "viewer05-"
-          viewerHeight: 0
-          minHeight: 150
-          accordionUrl: https://designers.italia.it/#test
-          accordionOpen: false
-          accordionShow: false
-
-
+          accordionShow: true
           
