@@ -592,8 +592,13 @@ export const query = graphql`
             text
             noSpace
             responsive
+            addonClasses
             head {
               text
+              tag {
+                label
+                addonClasses
+              }
             }
             rows {
               cols {
@@ -671,6 +676,7 @@ export const query = graphql`
           components {
             name
             # responsive
+            # addonClasses
             title
             headingLevel
             specular
@@ -815,6 +821,7 @@ export const query = graphql`
             text
             title
             responsive
+            # addonClasses
             headingLevel
             # specular
             head {
