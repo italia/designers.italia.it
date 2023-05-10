@@ -252,12 +252,12 @@ export const query = graphql`
           text
           moreButton
           moreButtonClose
+          moreText
           icon {
             icon
             color
             size
           }
-          moreText
           isHome
         }
         titleText {
@@ -593,6 +593,9 @@ export const query = graphql`
             noSpace
             responsive
             addonClasses
+            moreButton
+            moreButtonClose
+            moreText
             head {
               text
               tag {
