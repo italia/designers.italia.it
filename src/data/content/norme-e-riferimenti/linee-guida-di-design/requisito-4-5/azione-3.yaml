@@ -116,7 +116,7 @@ components:
     subtitle: "SI DEVONO realizzare interfacce che si adattino al dispositivo dell’utente" #C
     # subtitle: Subtitle #C
     tag:
-      label: Azione Linee guida #C
+      label: Norme - Azioni Linee guida design #C
       addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
@@ -186,88 +186,16 @@ components:
         color: secondary
       tags: [Linee guida,Interfaccia utente,Progettazione servizi,Manuale operativo]
 
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial :
-
-
-    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
-      menu: false
-      centered: true
-      background: null
-      # full: true
-      # text: | #C
-      # Lorem **ipsum**
-      components:
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Progettare e costruire in alta fedeltà" #C
-          headingLevel: 4
-          text: | #C
-            Costruisci un’interfaccia in alta fedeltà (o hi-fi), dando importanza ad aspetti visivi di progettazione grafica, dettagli, stile grafico e animazioni e tenendo come punto di riferimento il wireframe a bassa qualità (o low-fi) precedentemente progettato, per dare una resa reale del prodotto finito.
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            screenReaderText: "Progettare e costruire in alta fedeltà"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/progettare-e-costruire-in-alta-fedelta.html#progettare-e-costruire-in-alta-fedelta" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-              
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Approccio" #C
-          headingLevel: 4
-          text: | #C
-            Utilizza approcci che garantiscano una progettazione in alta fedeltà come ad esempio responsive, mobile first e feature detection.
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            screenReaderText: "Approccio"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html#approccio" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-              
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Le griglie" #C
-          headingLevel: 4
-          text: | #C
-            Organizza il contenuto seguendo un sistema di griglie responsivo, per mantenere una efficace esperienza utente trasversalmente ai dispositivi utilizzati.
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            screenReaderText: "Le griglie"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/progettare-e-costruire-in-alta-fedelta.html#le-griglie" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
 # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
     title: Scopri le risorse correlate a questa azione  #C
-    # text: Lorem ipsum #C
+    text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
     nospace: false
-    nopadtop: true
+    nopadtop: false
 
     # CARDS
     cards: # AUTO?
@@ -277,7 +205,7 @@ components:
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_UI.svg #I 
-        iconImgAlt: Alt lorem ipsum #C
+        iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/realizzare/costruzione-interfaccia/" #M
         text: | #C
@@ -301,7 +229,7 @@ components:
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_webDevelopment.svg #I 
-        iconImgAlt: Alt lorem ipsum #C
+        iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/realizzare/sviluppo-interfaccia/" #M
         text: | #C
@@ -328,7 +256,80 @@ components:
         # imgRatio: 4x3
         # imgPlaceholder: true
         titleSmall: false
-        fullHeight: true
+        fullHeight: false
         url: "/design-system/come-iniziare/" #M
         tag:
-          label: Come iniziare #C
+          label: DESIGN SYSTEM - FONDAMENTI #C
+
+
+  # ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial2 :
+
+    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
+      menu: false
+      centered: true
+      background: light
+      text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
+      components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Progettare e costruire in alta fedeltà" #C
+          headingLevel: 4
+          text: | #C
+            Costruisci un’interfaccia in alta fedeltà (o hi-fi), dando importanza ad aspetti visivi di progettazione grafica, dettagli, stile grafico e animazioni e tenendo come punto di riferimento il wireframe a bassa qualità (o low-fi) precedentemente progettato, per dare una resa reale del prodotto finito.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+
+            screenReaderText: "Progettare e costruire in alta fedeltà"
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/progettare-e-costruire-in-alta-fedelta.html#progettare-e-costruire-in-alta-fedelta" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Approccio" #C
+          headingLevel: 4
+          text: | #C
+            Utilizza approcci che garantiscano una progettazione in alta fedeltà come ad esempio responsive, mobile first e feature detection.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+
+            screenReaderText: "Approccio"
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html#approccio" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Le griglie" #C
+          headingLevel: 4
+          text: | #C
+            Organizza il contenuto seguendo un sistema di griglie responsivo, per mantenere una efficace esperienza utente trasversalmente ai dispositivi utilizzati.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+
+            screenReaderText: "Le griglie"
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/progettare-e-costruire-in-alta-fedelta.html#le-griglie" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
