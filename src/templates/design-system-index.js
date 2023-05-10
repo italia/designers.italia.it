@@ -26,10 +26,9 @@ import dsNav from "../data/dsnav.yaml"
 
 
 const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
-  let variantMock = null
-  if (Pagedata.metadata.json) {
-    variantMock = require(`../data/components_json/${Pagedata.metadata.json}`)
-  }
+  const variantMock = Pagedata.metadata.json
+    ? require(`../data/components_json/${Pagedata.metadata.json}`)
+    : null
 	return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre}/>
