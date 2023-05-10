@@ -46,7 +46,7 @@ const ContentSelect = ({
   }
 
   return (
-    <section className="container-xxl pb-5 pb-lg-6" aria-labelledby={id}>
+    <section className="container-xxl" aria-labelledby={id}>
       <div className="row">
         <div className="col-9 mb-5">
           <h2 id={id} className="px-3 px-md-0">{title}</h2>

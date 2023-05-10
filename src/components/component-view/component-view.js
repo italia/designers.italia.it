@@ -74,8 +74,8 @@ const ComponentView = ({
     const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
     if (!exampleContainer) return
     if (viewerHeight === 0 || !viewerHeight) {
-      iframe.classList.add("min-default-height")
       // auto height
+      iframe.classList.add("min-default-height")
       iframe.height = exampleContainer.clientHeight + 50
       exampleContainer.addEventListener("click", () => {
         setTimeout(() => {
@@ -148,7 +148,7 @@ const ComponentView = ({
   const BSIExampleUrl = `/examples/${source}/${slugify(variantName).toLowerCase()}.html`
 
   return (
-    <div id={uuid}>
+    <div id={uuid} className="pb-5 pb-lg-6">
       {content &&
         <div className={componentStyles}>
           <span className="visually-hidden">Inizio componente:</span>
