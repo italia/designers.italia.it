@@ -23,11 +23,12 @@ const ComponentView = ({
   content,
   idPrefix,
   viewerHeight,
+  minHeight,
   accordionOpen,
   accordionShow,
   accordionUrl,
   accordionSrCopyLabel,
-  componentViewerData
+  componentViewerData,
 }) => {
 
   if (componentViewerData?.variants) { // it is not a Componenti page, but a Fondamenti with one or more viewers... 
@@ -75,7 +76,11 @@ const ComponentView = ({
     if (!exampleContainer) return
     if (viewerHeight === 0 || !viewerHeight) {
       // auto height
-      iframe.classList.add("min-default-height")
+      if (!minHeight) {
+        iframe.classList.add("min-default-height")
+      } else {
+        iframe.style.minHeight = minHeight + "px"
+      }
       iframe.height = exampleContainer.clientHeight + 50
       exampleContainer.addEventListener("click", () => {
         setTimeout(() => {

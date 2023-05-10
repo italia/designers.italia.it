@@ -654,6 +654,7 @@ export const query = graphql`
             accordionUrl
             accordionOpen
             accordionShow
+            minHeight
           }
           id
           fullColumn
@@ -814,6 +815,7 @@ export const query = graphql`
           title
           textInfo
           viewerHeight
+          # minHeight
           accordionUrl
           accordionOpen
           accordionShow
