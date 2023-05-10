@@ -28,7 +28,7 @@ import Testimonials from "../components/testimonials/testimonials"
 import BannerTextCta from "../components/banner-text-cta/banner-text-cta"
 import Numbers from "../components/numbers/numbers"
 import ImageIcons from "../components/image-icons/image-icons"
-import Video from "../components/video/video"
+import YoutubeVideo from "../components/video/youtubevideo"
 
 import { Script } from "gatsby"
 
@@ -48,7 +48,9 @@ const Template = ({Pagedata, pageContext, location, lastModified}) => {
       </Header>
       <HeaderPost data={HeaderData.headerPost}/>
       <main id="main">
-        <Video></Video>
+        <div style={{ maxWidth: '1000px' }}>
+          <YoutubeVideo lang="it" url="https://youtu.be/_0j7ZQ67KtY" trascription="Vestibulum hendrerit ultrices nibh" />
+        </div>
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && <ContentCollapse label={Pagedata.components.hero.moreButton} labelClose={Pagedata.components.hero.moreButtonClose}>
             {Pagedata.components.hero.moreText}
