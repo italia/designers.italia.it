@@ -70,10 +70,12 @@ const ComponentView = ({
 
   const initAutoHeight = () => {
     const iframe = document.getElementById(`${idPrefix}-iframe`)
+    if (!iframe) return
     const exampleContainer = iframe.contentWindow.document.getElementsByClassName("bd-example")[0]
     if (!exampleContainer) return
-    if (viewerHeight === 0) {
-      // auto width
+    if (viewerHeight === 0 || !viewerHeight) {
+      iframe.classList.add("min-default-height")
+      // auto height
       iframe.height = exampleContainer.clientHeight + 50
       exampleContainer.addEventListener("click", () => {
         setTimeout(() => {
@@ -97,6 +99,7 @@ const ComponentView = ({
   useEffect(() => {
     initAutoHeight()
     const iframe = document.getElementById(`${idPrefix}-iframe`)
+    if (!iframe) return
     iframe.addEventListener("load", initAutoHeight)
     iframe.addEventListener("transitionend", initAutoHeight)
   })
