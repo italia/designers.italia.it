@@ -27,7 +27,7 @@ const NotFoundPage = () => {
                   Verifica che l’indirizzo sia corretto oppure torna all’inizio per
                   esplorare altri contenuti.
                 </p>
-                <Button btnStyle="primary" url="/"><strong>Ritorna all’inizio</strong></Button>
+                <Button btnStyle="primary" url="/"><strong>Vai all’inizio</strong></Button>
               </div>
             </div>
           </div>
