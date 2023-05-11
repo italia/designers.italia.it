@@ -20,3 +20,5 @@ jobs:
           npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MATOMO_SITE_ID: ${{ secrets.MATOMO_SITE_ID }}
+          MATOMO_SITE_URL: ${{ secrets.MATOMO_SITE_URL }}
