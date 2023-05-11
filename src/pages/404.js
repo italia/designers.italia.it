@@ -15,7 +15,7 @@ const NotFoundPage = () => {
   return (
     <Template>
       <section>
-        <div className="container-xxl pt-5 pb-5 mb-5 pt-lg-6 pb-lg-6">
+        <div className="container-xxl py-5 mb-5 pt-lg-6 pb-lg-6">
           <div className="row">
             <div className="col-lg-4 col-12 pb-3 text-center">
               <ImageResponsive
@@ -26,18 +26,20 @@ const NotFoundPage = () => {
                 alt=""
               />
             </div>
-            <div className="col-lg-7 col-12">
+            <div className="col-lg-7 col-12 hero">
               <h1>Un imprevisto può capitare</h1>
-              <div className="lead">
+              <div className="lead mb-4">
                 <p>
                   Non abbiamo trovato la pagina che cercavi.
                 </p>
 
-                <p>
+                <p className="pb-3">
                   Verifica che l’indirizzo sia corretto oppure torna all’inizio per
                   esplorare altri contenuti.
                 </p>
-                <Button btnStyle="primary" url="/"><strong>Vai all’inizio</strong></Button>
+                <div className="buttons-wrapper mt-5 d-grid d-md-block">
+                  <Button btnStyle="btn btn-primary mb-0" url="/"><strong>Vai all’inizio</strong></Button>
+                </div>
               </div>
             </div>
           </div>
