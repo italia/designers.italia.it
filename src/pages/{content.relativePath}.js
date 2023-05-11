@@ -348,9 +348,9 @@ export const query = graphql`
             btnStyle
             url
             addonStyle
-            disabled
+            # disabled
           }
-          text
+          # text
         }
         highlightsLoop1 {
           title
