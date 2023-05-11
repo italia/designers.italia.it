@@ -28,8 +28,6 @@ Commenti e proposte relative all'evoluzione del sito e delle risorse può essere
 
     Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
-
 3.  **Build static website (production).**
 
     To build a static version of this website, start the build process.
