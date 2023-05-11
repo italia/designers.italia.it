@@ -40,7 +40,7 @@ const ImageResponsive = (props) => {
   return (
     gatsbyImageData
       ? <GatsbyImage image={gatsbyImageData} alt={ alt || '' } imgClassName={imgClassName} loading={loading ? loading : 'lazy'} {...otherProps} />
-      : <img src={realSrc} alt={alt || ''}  className={imgClassName} />
+      : <img src={realSrc} alt={alt || ''}  className={imgClassName} {...otherProps} />
   )
 }
 
