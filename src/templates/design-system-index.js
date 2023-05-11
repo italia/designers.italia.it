@@ -26,9 +26,9 @@ import dsNav from "../data/dsnav.yaml"
 
 
 const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
-	return (
+  return (
     <div id="app">
-      <HeaderPre data={HeaderData.headerPre}/>
+      <HeaderPre data={HeaderData.headerPre} location={location}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderSlim data={HeaderData.headerSlim}/>
