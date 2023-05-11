@@ -15,7 +15,7 @@ const NotFoundPage = () => {
   return (
     <Template>
       <section>
-        <div className="container-xxl py-5 mb-5 pt-lg-6 pb-lg-6">
+        <div className="container-xxl py-5 mb-5 pt-lg-6 pb-lg-6 overflow-hidden">
           <div className="row">
             <div className="col-lg-4 col-12 pb-3 text-center">
               <ImageResponsive
