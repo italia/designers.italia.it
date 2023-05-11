@@ -126,6 +126,27 @@ components:
         size: sm
         color: secondary
       tags: [Cultura progettuale,Pianificazione,Design system]
+      # KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri l'archivio storico #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: primary
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #AUTO
+            - url: "archivio-storico/" #M
+              label: "2017–2021" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm    
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -627,8 +648,6 @@ components:
           ctas:
           - label: Vai alla notizia #C
             url: https://designers.italia.it/notizie/atlante-trasformazione-digitale-pa/ #M XXX
-            # screenReaderText: " (si apre in una nuova finestra)" #C
-            # blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -654,7 +673,7 @@ components:
           - label: Vai all'archivio storico #C
             url: "/community/piano-attivita/archivio-storico/" #M
             icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-arrow-right #C #I
               color: primary
               align: middle
               hidden: true
