@@ -19,7 +19,9 @@ const NotFoundPage = () => {
           <div className="row">
             <div className="col-lg-4 col-12 pb-3 text-center">
               <ImageResponsive
-                onMouseOver={animate} imgClassName="logo"
+                onMouseOver={animate}
+                onTouchStart={animate}
+                imgClassName="logo"
                 src="/static/images/404-logo.svg"
                 alt=""
               />
