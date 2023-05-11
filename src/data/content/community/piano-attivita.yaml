@@ -32,7 +32,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Piano attività - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri. #C
+  description: "Gli obiettivi e i risultati del progetto Designers Italia" #C
   image: null #I
   twitterImage: null #I
   canonical: null
@@ -126,49 +126,28 @@ components:
         size: sm
         color: secondary
       tags: [Cultura progettuale,Pianificazione,Design system]
+      # KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri l'archivio storico #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: primary
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #AUTO
+            - url: "archivio-storico/" #M
+              label: "2017–2021" #C    
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial:
 
-    # —
-    # EDITORIAL #C #I
-    # —
-    - title: I nostri obiettivi per il futuro
-      headingLevel: 2
-      background: dark
-      menu: false
-      centered: true
-      text: | #C
-        Una roadmap delle attività, uno sguardo rivolto ad azioni e obiettivi futuri
-      components:
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          title: 2023 — Q1
-          headingLevel: 3
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          specular: false
-
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # headingLevel: 4
-          text: | #C
-            #### Design system: rilascio UI kit 3.0.0
-            Versione stabile del kit di progettazione interfaccia, con evidenza del nuovo modello di contribuzione.
-
-            #### Nuovo sito designers.italia.it
-            Validazione e rilascio del nuovo sito ufficiale, con navigazione migliorata e accesso semplificato alle risorse operative e al design system, per le PA e i loro fornitori.
-
-            #### Pubblicazione compendio sulle Linee guida di design
-            Pubblicazione nuove schede informative che raccordano Linee guida, Manuale operativo e strumenti.
-
-   # —
-    # EDITORIAL #C #I
-    # —
     - title: I risultati che abbiamo raggiunto
       headingLevel: 2
       background: null
@@ -179,17 +158,126 @@ components:
 
       components:
 
-       # TXT + IMG + CTA BLOCK
+        ### 2023 - Q1
         - name: TextImageCta
-          title: 2022 — Q4 #C
+          title: "2023 — Q1" #C
           headingLevel: 3
           noSpace: false
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
+          specular: false
+          title: "Nuovo sito designers.italia.it" #C
+          text: | #C
+            Validazione e rilascio del nuovo sito ufficiale, con navigazione migliorata e accesso semplificato alle risorse operative e al design system, per le PA e i loro fornitori.
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system: pubblicata la versione ufficiale dello UI Kit Italia" #C
+          text: | #C
+            Il kit per progettare interfacce e siti digitali della Pubblica Amministrazione (PA) esce dalla fase beta
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Scopri come usarlo (per designer) #C
+            url: "/design-system/come-iniziare/per-designer/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system: nuovi contenuti e consolidamento struttura" #C
+          text: | #C
+            Rilascio nuove versioni alpha, dalla 1 alla 5, della documentazione del design system del Paese.
+          ctas:
+          - label: Vai al design system #C
+            url: "/design-system/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai al changelog #C
+            url: "/design-system/fondamenti/versionamento/#changelog-documentazione" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Nome in codice: ___ Italia" #C
+          text: | #C
+            Sondaggio per definire il nuovo nome del design system del Paese
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230314-nome-in-codice-italia/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+  
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Pubblicazione compendio sulle Linee guida di design" #C
+          text: | #C
+            Pubblicazione nuove schede informative che raccordano Linee guida, Manuale operativo e strumenti.
+          ctas:
+          - label: Vai alle Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+
+    - background: light
+      menu: false
+      centered: true
+
+      components:
+
+        ### 2022 - Q4
+        - name: TextImageCta
+          title: "2022 — Q4" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
           specular: false
           title: "Rilascio design system del Paese, versione alpha" #C
           text: | #C
@@ -206,21 +294,15 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Rilascio del quadro sinottico servizi al cittadino" #C
           text: | #C
             Pubblicazione su Medium di articoli di descrizione e approfondimento del quadro sinottico.
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio UI kit 3.0.0-beta" #C
           text: | #C
@@ -238,11 +320,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: definizione supporto evolutivo Design React Kit" #C
           text: | #C
@@ -260,11 +339,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Benvenuto, Kit Privacy" #C
           text: | #C
@@ -281,11 +357,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Modelli: rilascio App di valutazione" #C
           text: | #C
@@ -307,17 +380,21 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
+
+    - background: null
+      menu: false
+      centered: true
+
+      components:
+
+        ### 2022 - Q3
         - name: TextImageCta
-          title: 2022 — Q3 #C
+          title: "2022 — Q3" #C
           headingLevel: 3
           noSpace: false
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Avvio riprogettazione sito designers.italia.it" #C
           text: | #C
@@ -346,27 +423,28 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Progettazione quadro sinottico servizi al cittadino" #C
           text: | #C
             Progettazione di un quadro sinottico che crei un linguaggio comune tra chi progetta, chi sviluppa soluzioni di servizi digitali al cittadino e le amministrazioni che le devono gestire. Definizione dei diversi ambiti in cui viene usata la parola servizio. Definizione dei diversi livelli di granularità di un servizio e come vengono chiamati dal cittadino, dalla Pubblica Amministrazione e dagli ambienti tecnici.
 
-        # TXT + IMG + CTA BLOCK
+
+    - background: light
+      menu: false
+      centered: true
+
+      components:
+
+        ### 2022 - Q2
         - name: TextImageCta
-          title: 2022 — Q2 #C
+          title: "2022 — Q2" #C
           headingLevel: 3
           noSpace: false
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio UI kit 3.0.0-alpha.3" #C
           text: | #C
@@ -384,11 +462,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Evoluzione modello Comuni" #C
           text: | #C
@@ -405,11 +480,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio Bootstrap italia 2.0" #C
           text: | #C
@@ -427,11 +499,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Aggiornamento modello scuole" #C
           text: | #C
@@ -448,11 +517,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio Bootstrap italia 1.6 legacy" #C
           text: | #C
@@ -470,11 +536,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Linee guida e Manuale operativo di design" #C
           text: | #C
@@ -491,17 +554,20 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
+    - background: null
+      menu: false
+      centered: true
+
+      components:
+
+        ### 2022 - Q1
         - name: TextImageCta
-          title: 2022 — Q1 #C
+          title: "2022 — Q1" #C
           headingLevel: 3
           noSpace: false
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio Bootstrap Italia 1.5" #C
           text: | #C
@@ -519,21 +585,15 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Modello scuole e modello Comuni" #C
           text: | #C
             Avvio delle attività di individuazione e modellizzazione dei principali flussi di servizi digitali al cittadino.
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system" #C
           text: | #C
@@ -542,20 +602,16 @@ components:
 
             Predisposizione piano di ricerca per comprendere bisogni degli stakeholder del design system del Paese e coinvolgerli in un processo di validazione continua delle lavorazioni in corso.
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
+
           specular: false
           title: "Atlante della Trasformazione Digitale della PA" #C
           text: | #C
             Realizzazione di una ricerca su archetipi e pattern ricorrenti in 5 ambiti della vita civica. Attività di formazione nell’ambito di un master in comunicazione visiva: co-progettazione e pubblicazione di un atlante illustrato dedicato ai processi di trasformazione digitale della pubblica amministrazione.
           ctas:
           - label: Vai alla notizia #C
-            url: https://designers.italia.it/notizie/Altante-trasformazione-digitale-PA/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
+            url: https://designers.italia.it/notizie/atlante-trasformazione-digitale-pa/ #M XXX
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -564,32 +620,24 @@ components:
               size: sm
               addonClasses: ms-2
 
-    # —
-    # EDITORIAL #C #I
-    # —
+
+    ### ARCHIVIO
     - title: L'archivio storico
       headingLevel: 2
       background: light
       menu: false
       centered: true
-      # text: | #C
-      #   Da dove veniamo
       components:
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           title: 2017 — 2021
           headingLevel: 3
-          # image: /images/400x300.png #I
-          # alt: "" #C
           specular: true
           ctas:
-          - label: Vai alla pagina sul sito storico #C
-            url: https://designers.italia.it/piano-attivita #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
+          - label: Vai all'archivio storico #C
+            url: "/community/piano-attivita/archivio-storico/" #M
             icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-arrow-right #C #I
               color: primary
               align: middle
               hidden: true

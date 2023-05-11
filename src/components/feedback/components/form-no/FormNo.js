@@ -47,7 +47,6 @@ const FormNo = ({ onResult, state }) => {
       <ImageResponsive src="/images/kit-analitics.svg" alt="" />
       <h2 className="mb-3" id="feedbackNoTitle">Grazie per la tua risposta!</h2>
 
-      {/* <!-- XXX testi e item tutti da spostare nello yaml possibilmente --> */}
       <h3 className="mb-3">Aiutaci a migliorare dandoci qualche dettaglio in più.</h3>
       <p>
         Quanto segue è una raccolta di informazioni anonima, che ci aiuta a capire come

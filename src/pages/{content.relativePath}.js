@@ -144,13 +144,13 @@ export const query = graphql`
                 listItems {
                   url
                   label
-                  iconRight
-                  icon {
-                    icon
-                    color
-                    size
-                    # list
-                  }
+                  # iconRight
+                  # icon {
+                  #   icon
+                  #   color
+                  #   size
+                  #   # list
+                  # }
                 }
               }
             }
@@ -348,9 +348,9 @@ export const query = graphql`
             btnStyle
             url
             addonStyle
-            disabled
+            # disabled
           }
-          text
+          # text
         }
         highlightsLoop1 {
           title
