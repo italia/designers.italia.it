@@ -9,6 +9,8 @@ metadata:
     - /comunita
     - /it/come-partecipo
     - /come-partecipo
+    - /in-copertina
+    - /comunity
   activeLabel: Community
 
 seo:
@@ -62,7 +64,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: white
-      tags: [Accessibilità,Ricerca utente,Sviluppo front end]
+      tags: [Servizi pubblici digitali,Community,Partecipazione]
       dropdown:
         btnId: dropdownKang
         button:
@@ -76,8 +78,36 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems:
+            - url: "eventi/"
+              label: Eventi
+              iconRight: false
+              icon:
+                icon: sprites.svg#it-info-circle
+                color: primary
+                size: sm
+            - url: "notizie/"
+              label: Notizie
+              iconRight: false
+              icon:
+                icon: sprites.svg#it-info-circle
+                color: primary
+                size: sm
+            - url: "#articoli-di-approfondimento"
+              label: Articoli di approfondimento
+              iconRight: false
+              icon:
+                icon: sprites.svg#it-info-circle
+                color: primary
+                size: sm
             - url: "piano-attivita/"
               label: Piano attività
+              iconRight: false
+              icon:
+                icon: sprites.svg#it-info-circle
+                color: primary
+                size: sm
+            - url: "contatti/"
+              label: Contatti
               iconRight: false
               icon:
                 icon: sprites.svg#it-info-circle
