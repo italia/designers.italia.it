@@ -116,7 +116,7 @@ components:
     subtitle: "SI DEVONO definire e valutare in modo esplicito obiettivi, destinatari, processi e attori nella progettazione del sito/servizio" #C
     # subtitle: Subtitle #C
     tag:
-      label: Azione Linee guida #C
+      label: Norme - Azioni Linee guida design #C
       addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
@@ -186,19 +186,57 @@ components:
         color: secondary
       tags: [Normativa,Analisi del contesto,Esperienza utente]
 
+# ///////////////////
+  # HIGHLIGHT WITH CARDS
+  # ///////////////////
+  highlightCards:
+    id: HC1
+    title: Scopri le risorse correlate a questa azione  #C
+    text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
+    col4: false
+    noSpace: false
+    nopadtop: false
+
+    # CARDS
+    cards: # AUTO?
+
+      # CARD CHILDREN ACTION
+      - title: Analisi del contesto #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_analisiContesto.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/comprendere/analisi-del-contesto/" #M
+        text: | #C
+          Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
+
+      # CARD CHILDREN ACTION
+      - title: Esperienza utente #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/comprendere/esperienza-utente/" #M
+        text: | #C
+          Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
+  sectionsEditorial2:
 
 
     - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
       menu: false
       centered: true
-      background: null
-      # full: true
-      # text: | #C
-      # Lorem **ipsum**
+      background: light
+      text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
       components:
 
         # TXT BLOCK
@@ -208,7 +246,7 @@ components:
           text: | #C
             Definisci il perimetro di un progetto digitale, gli attori coinvolti e i potenziali destinatari.
           ctas:
-          - label: Vai all'argomento sul Manuale #C
+          - label: Argomento nel Manuale su Docs Italia  #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto.html" #M
             blank: true #M #C true if new tab for external links
             screenReaderText: "Gestione del progetto"
@@ -227,7 +265,7 @@ components:
           text: | #C
             Ottieni una visione d’insieme dei fattori e delle variabili che influenzano l’erogazione e la fruizione di un servizio digitale.
           ctas:
-          - label: Vai all'argomento sul Manuale #C
+          - label: Argomento nel Manuale su Docs Italia  #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/analizzare-il-contesto-con-un-approccio-olistico-e-sistemico.html" #M
             blank: true #M #C true if new tab for external links
             screenReaderText: "Analizzare il contesto con un approccio olistico e sistemico"
@@ -246,7 +284,7 @@ components:
           text: | #C
             Tieni in alta considerazione le necessità degli utenti e conosci la loro esperienza di interazione con il servizio.
           ctas:
-          - label: Vai all'argomento sul Manuale #C
+          - label: Argomento nel Manuale su Docs Italia  #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/conoscere-gli-utenti-e-gli-erogatori-del-servizio.html" #M
             blank: true #M #C true if new tab for external links
             screenReaderText: "Conoscere gli utenti e gli erogatori del servizio"
@@ -265,7 +303,7 @@ components:
           text: | #C
             Mappa l'esperienza dell'utente per descrivere in che modo avviene l'interazione con il servizio.
           ctas:
-          - label: Vai all'argomento sul Manuale #C
+          - label: Argomento nel Manuale su Docs Italia  #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/gli-strumenti-per-visualizzare-mappa-della-esperienza-del-servizio.html" #M
             blank: true #M #C true if new tab for external links
             screenReaderText: "Gli strumenti per visualizzare mappe dell’esperienza del servizio"
@@ -276,43 +314,3 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-# ///////////////////
-  # HIGHLIGHT WITH CARDS
-  # ///////////////////
-  highlightCards:
-    id: HC1
-    title: Scopri le risorse correlate a questa azione  #C
-    # text: Lorem ipsum #C
-    col4: false
-    noSpace: false
-    nopadtop: true
-
-    # CARDS
-    cards: # AUTO?
-
-      # CARD CHILDREN ACTION
-      - title: Analisi del contesto #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_analisiContesto.svg #I
-        iconImgAlt: "" #C
-        rounded: true
-        url: "/risorse-per-progettare/comprendere/analisi-del-contesto/" #M
-        text: | #C
-          Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze
-        tag:
-          label: Kit di design #C
-
-      # CARD CHILDREN ACTION
-      - title: Esperienza utente #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
-        iconImgAlt: "" #C
-        rounded: true
-        url: "/risorse-per-progettare/comprendere/esperienza-utente/" #M
-        text: | #C
-          Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale
-        tag:
-          label: Kit di design #C

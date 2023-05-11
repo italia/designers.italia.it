@@ -116,7 +116,7 @@ components:
     subtitle: "SI DEVONO realizzare, nell’ambito dello stesso sito internet o servizio digitale, interfacce coerenti nello stile e nell’esperienza d’uso, privilegiando le indicazioni e gli strumenti previsti su Designers Italia" #C
     # subtitle: Subtitle #C
     tag:
-      label: Azione Linee guida #C
+      label: Norme - Azioni Linee guida design #C
       addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
@@ -186,50 +186,16 @@ components:
         color: secondary
       tags: [Linee guida,Interfaccia utente,Progettazione servizi,Manuale operativo]
 
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial :
-
-
-    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
-      menu: false
-      centered: true
-      background: null
-      # full: true
-      # text: | #C
-      # Lorem **ipsum**
-      components:
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Il progetto dell’interfaccia utente" #C
-          headingLevel: 4
-          text: | #C
-            Costruisci un’interfaccia per aiutare l’utente a raggiungere ciò che cerca in modo naturale e immediato, in modo trasparente. Punti cardine di una buona interfaccia sono la coerenza tra gli elementi che la compongono, l’inclusività, l’accessibilità e la tolleranza agli errori.
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            screenReaderText: "Il progetto dell’interfaccia utente"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/il-progetto-della-interfaccia-utente.html#il-progetto-dell-interfaccia-utente" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
 # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
     title: Scopri le risorse correlate a questa azione  #C
-    # text: Lorem ipsum #C
+    text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
     nospace: false
-    nopadtop: true
+    nopadtop: false
 
     # CARDS
     cards: # AUTO?
@@ -245,7 +211,7 @@ components:
         text: | #C
           Costruisci l’interfaccia di un servizio digitale con uno stile grafico semplice e coerente
         tag:
-          label: Kit di design #C
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
         share: #AUTO
           btnId: shareButton2
           button:
@@ -269,7 +235,7 @@ components:
         text: | #C
           Realizza il front-end di un servizio digitale con codice e componenti open source di sviluppo
         tag:
-          label: Kit di design #C
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
         share: #AUTO
           btnId: shareButton2
           button:
@@ -290,10 +256,10 @@ components:
         # imgRatio: 4x3
         # imgPlaceholder: true
         titleSmall: false
-        fullHeight: true
+        fullHeight: false
         url: "/design-system/come-iniziare/" #M
         tag:
-          label: Come iniziare #C
+          label: DESIGN SYSTEM - FONDAMENTI #C
 
       # CARD CHILDREN ACTION
       - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
@@ -313,5 +279,37 @@ components:
             icon: sprites.svg#it-external-link
             size: xs
         moreInfo: di Daniele Tabellini e Fabrizio Caccavello
-            
-   
+
+
+  # ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial2:
+
+    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
+      menu: false
+      centered: true
+      background: light
+      text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
+      components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Il progetto dell’interfaccia utente" #C
+          headingLevel: 4
+          text: | #C
+            Costruisci un’interfaccia per aiutare l’utente a raggiungere ciò che cerca in modo naturale e immediato, in modo trasparente. Punti cardine di una buona interfaccia sono la coerenza tra gli elementi che la compongono, l’inclusività, l’accessibilità e la tolleranza agli errori.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+
+            screenReaderText: "Il progetto dell’interfaccia utente"
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/il-progetto-della-interfaccia-utente.html#il-progetto-dell-interfaccia-utente" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+

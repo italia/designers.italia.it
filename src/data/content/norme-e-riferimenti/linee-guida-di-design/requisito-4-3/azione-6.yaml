@@ -116,7 +116,7 @@ components:
     subtitle: "SI DEVONO condurre test di usabilità per comprendere se i servizi digitali, esistenti o in fase di progettazione, corrispondano alle esigenze degli utenti" #C
     # subtitle: Subtitle #C
     tag:
-      label: Azione Linee guida #C
+      label: Norme - Azioni Linee guida design #C
       addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
@@ -198,50 +198,16 @@ components:
         color: secondary
       tags: [Normativa,Linee guida,Test di usabilità]
 
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial :
-
-
-    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
-      menu: false
-      centered: true
-      background: null
-      # full: true
-      # text: | #C
-      # Lorem **ipsum**
-      components:
-        
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Test di usabilità #C
-          headingLevel: 4
-          text: | #C
-            Misura il grado in cui il servizio può essere usato dagli utenti per raggiungere efficacemente gli obiettivi in quel contesto d’uso.
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/test-usabilita.html#test-di-usabilita" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Test di usabilità"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
 # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
     title: Scopri i contenuti correlati a questa azione  #C
-    # text: Lorem ipsum #C
+    text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
     nospace: false
-    nopadtop: true
+    nopadtop: false
 
     # CARDS
     cards: # AUTO?
@@ -257,7 +223,7 @@ components:
         text: | #C
           Migliora un servizio digitale osservando le interazioni degli utenti
         tag:
-          label: Kit di design #C
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
         share: #AUTO
           btnId: shareButton1
           button:
@@ -273,7 +239,7 @@ components:
       - title: "PA digitale 2026, l’utente al centro della progettazione"
         headingLevel: 4
         img: /images/community/articoli-di-approfondimento/2022-medium-Dipartimento-PA-digitale-2026.webp
-        alt: descrizione immagine
+        alt: ""
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
@@ -286,7 +252,7 @@ components:
           icon:
             icon: sprites.svg#it-external-link
             size: xs
-       # moreInfo: di Marco Maria Pedrazzo
+        moreInfo: di Dipartimento per la trasformazione digitale
         share:
           btnId: shareButtonCardMedium1
           button:
@@ -299,77 +265,34 @@ components:
           list:
             isShare: true
             
-      
-            
-     # # CARD CHILDREN ACTION
-     # - title: Titolo sezione intera, eg. Design system #C
-     #   fullHeight: true
-     #   imgRatio: 4x3
-     #   img: /images/400x300.png
-     #   alt: Alt lorem ipsum
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   # tag:
-     #   #   label: Tipologia contenuto #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
+# ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial2:
+  
+    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
+      menu: false
+      centered: true
+      background: light
+      text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
+      components:
+        
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Test di usabilità #C
+          headingLevel: 4
+          text: | #C
+            Misura il grado in cui il servizio può essere usato dagli utenti per raggiungere efficacemente gli obiettivi in quel contesto d’uso.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
 
-     # # CARD CHILDREN ACTION
-     # - title: Titolo modello intero, eg. Comuni #C
-     #   fullHeight: true
-     #   imgRatio: 4x3
-     #   img: /images/400x300.png
-     #   alt: Alt lorem ipsum
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   # tag:
-     #   #   label: Tipologia contenuto #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
-
-     # # CARD CHILDREN ACTION
-     # - title: Titolo scheda operativa #C
-     #   fullHeight: true
-     #   # imgRatio: 16x9
-     #   # iconImg: /icons/kit_analisiContesto.svg #I
-     #   # iconImgAlt: Alt lorem ipsum #C
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   tag:
-     #     label: Scheda operativa #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
-            
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/test-usabilita.html#test-di-usabilita" #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Test di usabilità"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2

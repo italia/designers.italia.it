@@ -107,7 +107,7 @@ components:
     title: "4.1. Accessibilità" #C
     # subtitle: Subtitle #C
     tag:
-      label: Requisito Linee guida #C
+      label: Norme - Requisiti Linee guida design #C
       addonClasses: mt-3 text-uppercase
     imgRatio: 4x3
     # pretext:
@@ -169,27 +169,27 @@ components:
         color: secondary
       tags: [Linee guida,Normativa,Accessibilità]
 
-      # # KANGAROO: CHILDREN SHORTCUTS
-      # dropdown:
-      #   btnId: dropdownKang
-      #   button:
-      #     addonStyle: dropdown-toggle btn-dropdown
-      #     label: Scopri i requisiti #C
-      #     iconRight: true
-      #     icon:
-      #       icon: sprites.svg#it-expand
-      #       size: sm
-      #       color: primary
-      #       addonClasses: icon-expand ms-2
-      #   list:
-      #     listItems: #M
-      #       - url: "level4/"
-      #         label: Level 4 #C
-      #         iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-      #         icon:
-      #           icon: sprites.svg#it-arrow-right
-      #           color: primary
-      #           size: sm
+     # KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri le risorse correlate azione per azione #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: primary
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #AUTO
+            - url: "azione-1/" #M
+              label: "Azione 1" #C
+              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -205,23 +205,6 @@ components:
       background: null
       text: | #C
         Questo requisito delle Linee guida di design per i siti internet e i servizi digitali della PA intende descrivere come **rendere accessibili a tutti gli utenti il contenuto, la struttura e il comportamento degli strumenti informatici**, secondo i requisiti di legge.
-      components:
-
-        # TXT BLOCK
-        - name: TextImageCta
-          noSpace: true
-          ctas:
-            - label: "Vai all'articolo" #C
-              url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/requisiti.html#accessibilita #M
-              screenReaderText: " (si apre in una nuova finestra)" #C
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
 
     - title: Perché è importante #C
       menu: false
@@ -289,7 +272,7 @@ components:
           title: Note di lettura
           headingLevel: 2
           ctas:
-            - label: "Vai alle note di lettura" #C
+            - label: "Note di lettura su Docs Italia" #C
               url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/note-lettura.html #M
               screenReaderText: " (si apre in una nuova finestra)" #C
               blank: true #M #C true if new tab for external links
@@ -301,18 +284,19 @@ components:
                 size: sm
                 addonClasses: ms-2
 
-    # # —
-    # # EDITORIAL #C #I
-    # # —
-    # - title: Indicazioni e strumenti a supporto #C
-    #   menu: false
-    #   centered: true
-    #   background: light
-    #   noSpace: false
-    #   components:
-
-    #     # TXT BLOCK
-    #     - name: TextImageCta
-    #       #title: Riferimenti normativi #C
-    #       text: | #C
-    #        - **Designers Italia**
+        - name: TextImageCta
+          noSpace: false
+          title: Leggi su Docs Italia
+          headingLevel: 2
+          ctas:
+            - label: "Articolo 4.1 su Docs Italia" #C
+              url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/requisiti.html#accessibilita #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
