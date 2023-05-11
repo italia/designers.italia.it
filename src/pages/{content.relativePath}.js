@@ -144,13 +144,13 @@ export const query = graphql`
                 listItems {
                   url
                   label
-                  iconRight
-                  icon {
-                    icon
-                    color
-                    size
-                    # list
-                  }
+                  # iconRight
+                  # icon {
+                  #   icon
+                  #   color
+                  #   size
+                  #   # list
+                  # }
                 }
               }
             }
