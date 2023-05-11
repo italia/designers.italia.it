@@ -1,8 +1,7 @@
 on:
-  # TODO: enable this when we actually publish to production
-  # push:
-  #   branches:
-  #     - main
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -17,8 +16,7 @@ jobs:
       - run: npm run build
       - run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/italia/designers.italia.it
-          # TODO: enable this when we actually publish to production
-          # echo designers.italia.it > public/CNAME
-          # npm run deploy
+          echo designers.italia.it > public/CNAME
+          npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
