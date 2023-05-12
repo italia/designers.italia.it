@@ -148,9 +148,134 @@ components:
   # ///////////////////
   sectionsEditorial:
 
-    - title: I risultati che abbiamo raggiunto
+# —————— THE FUTURE ————— #
+
+    - title: Obiettivi per il futuro
       headingLevel: 2
       background: null
+      menu: false
+      centered: true
+      text: | #C
+        Una roadmap di cose da fare
+
+      components:
+
+        ### 2023 - Q2
+        - name: TextImageCta
+          title: "2023 — Q2" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Seconda edizione del corso Formez “Qualità dei servizi digitali”" #C
+          text: | #C
+            Un’occasione per imparare a progettare e realizzare servizi pubblici di qualità
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system: modello di contribuzione" #C
+          text: | #C
+            Rilascio del modello di contribuzione per il design system del Paese: modalità per segnalare e contribuire al codice, ai contenuti e allo sviluppo, i quattro pilastri del design system del Paese ospitato nella sezione Design system di questo sito, pari alla documentazione ufficiale, lo UI Kit Italia, Bootstrap Italia e il lavoro sui design tokens. 
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Sito Designers Italia: validazione, evolutive e miglioramento continuo" #C
+          text: | #C
+            Continuo lavori di consolidamento del nuovo sito Designers Italia, in particolare test usabilità e lavorazioni su contenuti, design e sviluppo volte a ottimizzare esperienza utente, manutenibilità e scalabilità nel tempo. 
+          ctas:
+          - label: Vai alla board del progetto su GitHub #C
+            url: https://github.com/orgs/italia/projects/15 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        ### 2023 - Q3
+        - name: TextImageCta
+          title: "2023 — Q3" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Pubblicazione dell’area Formazione" #C
+          text: | #C
+            Nella sezione Community, raccolta di materiali media (video, audio, registrazioni webinar) dei nostri  incontri, conferenze e corsi di formazione.
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system v.1.0.0-beta" #C
+          text: | #C
+            Rilascio della versione beta della documentazione del design system del Paese che comprende i contenuti dela totalità delle schede presenti nelle sezioni Fondamenti e Componenti.
+          ctas: 
+          - label: Vai alla board del progetto su GitHub #C
+            url: https://github.com/orgs/italia/projects/17 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai al changelog #C
+            url: "/design-system/fondamenti/versionamento/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        ### 2023 - Q4
+        - name: TextImageCta
+          title: "2023 — Q4" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system: design pattern" #C
+          text: | #C
+            Inizio lavorazioni sulla sezione Design pattern (eg. accesso , form, ricerca). Approfondimenti dedicati a consolidare standard condivisi e aperti su come assemblare e utilizzare le risorse del design system per creare esperienze e contenuti in linea con le migliori pratiche e le norme per la progettazione. 
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Produzione contenuti dedicati alla community" #C
+          text: | #C
+            Nell’area Formazione, pubblicazione  di contenuti media (video tutorial e podcast) sulla base delle necessità della community. 
+
+
+# ————— THE PAST ————— #
+
+    - title: I risultati che abbiamo raggiunto
+      headingLevel: 2
+      background: light
       menu: false
       centered: true
       text: | #C
@@ -264,7 +389,7 @@ components:
               addonClasses: ms-2
 
 
-    - background: light
+    - background: null
       menu: false
       centered: true
 
@@ -381,7 +506,7 @@ components:
               addonClasses: ms-2
 
 
-    - background: null
+    - background: light
       menu: false
       centered: true
 
@@ -431,7 +556,7 @@ components:
             Progettazione di un quadro sinottico che crei un linguaggio comune tra chi progetta, chi sviluppa soluzioni di servizi digitali al cittadino e le amministrazioni che le devono gestire. Definizione dei diversi ambiti in cui viene usata la parola servizio. Definizione dei diversi livelli di granularità di un servizio e come vengono chiamati dal cittadino, dalla Pubblica Amministrazione e dagli ambienti tecnici.
 
 
-    - background: light
+    - background: null
       menu: false
       centered: true
 
@@ -554,7 +679,7 @@ components:
               size: sm
               addonClasses: ms-2
 
-    - background: null
+    - background: light
       menu: false
       centered: true
 
@@ -624,7 +749,7 @@ components:
     ### ARCHIVIO
     - title: L'archivio storico
       headingLevel: 2
-      background: light
+      background: null
       menu: false
       centered: true
       components:
