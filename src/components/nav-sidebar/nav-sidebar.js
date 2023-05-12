@@ -85,7 +85,7 @@ const NavSidebar = ({
             <button className={linksStyle} data-bs-target={"#collapseNav-"+index} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={"collapseNav-"+index}>
               <span className="list-item-title-icon-wrapper list-item-title-icon-wrapper d-flex justify-content-between align-items-center">
                 <span>{item.label}</span>
-                <svg className="icon icon-sm icon-primary right" aria-hidden="true"><use href="/svg/sprites.svg#it-expand"></use></svg>
+                <svg role="img" className="icon icon-sm icon-primary right" aria-hidden="true"><use href="/svg/sprites.svg#it-expand"></use></svg>
               </span>
             </button>
             <ul className={subStyles} id={"collapseNav-"+index}>
@@ -165,7 +165,7 @@ const NavSidebar = ({
               </button>
             </div>
             <a className="it-back-button" href="#" role="button">
-              <svg className="icon icon-sm icon-primary align-top">
+              <svg role="img" className="icon icon-sm icon-primary align-top">
                 <use href="/svg/sprites.svg#it-chevron-left"></use>
               </svg>
               <span>{backLabel}</span>

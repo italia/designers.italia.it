@@ -116,7 +116,7 @@ components:
     subtitle: "SI DEVE utilizzare un linguaggio e un’organizzazione dei contenuti adeguati all’utente destinatario" #C
     # subtitle: Subtitle #C
     tag:
-      label: Azione Linee guida #C
+      label: Norme - Azioni Linee guida design #C
       addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
@@ -198,104 +198,56 @@ components:
         color: secondary
       tags: [Linee guida,Progettazione contenuti,Architettura informazione,Analisi contenuti,Linguaggio]
 
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial :
-
-
-    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
-      menu: false
-      centered: true
-      background: null
-      # full: true
-      # text: | #C
-      # Lorem **ipsum**
-      components:
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Architettura dell’informazione" #C
-          headingLevel: 4
-          text: | #C
-            Organizza semanticamente e logicamenti contenuti informativi e rendi i servizi pubblici più semplici da trovare, capire e usare. 
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html#architettura-dellinformazione" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Architettura dell’informazione"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Definizione e organizzazione dei contenuti" #C
-          headingLevel: 4
-          text: | #C
-            Definisci standard di architettura dell’informazione specifici per il mondo della Pubblica Amministrazione e avvia un’attività di modellazione più specifica, partendo da una segmentazione degli enti e delle funzioni a esse associate.  
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html#definizione-e-organizzazione-dei-contenuti" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Definizione e organizzazione dei contenuti"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-              
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Linguaggio" #C
-          headingLevel: 4
-          text: | #C
-            Scopri gli obiettivi da porti quando scrivi per i cittadini in modo tale da rendere i contenuti di facile comprensione.  
-          ctas:
-          - label: Vai all'argomento sul Manuale #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/linguaggio.html#linguaggio" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Linguaggio"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2  
-
 # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
     title: Scopri i contenuti correlati a questa azione  #C
-    # text: Lorem ipsum #C
+    text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
     nospace: false
-    nopadtop: true
+    nopadtop: false
 
     # CARDS
     cards: # AUTO?
-    
+
+      # CARD CHILDREN ACTION
+      - title: "Linguaggio" #C
+        fullHeight: false
+        imgRatio: 16x9
+        #iconImg: /icons/kit_coprog_contenuti.svg #I 
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/design-system/fondamenti/linguaggio/" #M
+        text: | #C
+          Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone
+        tag:
+          label: DESIGN SYSTEM - FONDAMENTI #C
+        share: #AUTO
+          btnId: shareButton2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
       # CARD CHILDREN ACTION
       - title: Architettura dell'informazione #C
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_architettura.svg #I 
-        iconImgAlt: Alt lorem ipsum #C
+        iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/progettare/architettura-dell-informazione/" #M
         text: | #C
           Organizza e classifica i contenuti di un touchpoint e definisci le principali funzioni del servizio
         tag:
-          label: Kit di design #C
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
         share: #AUTO
           btnId: shareButton2
           button:
@@ -313,37 +265,13 @@ components:
         fullHeight: true
         imgRatio: 16x9
         iconImg: /icons/kit_coprog_contenuti.svg #I 
-        iconImgAlt: Alt lorem ipsum #C
+        iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/progettare/co-progettazione/co-progetta-i-contenuti/" #M
         text: | #C
           Organizza un workshop dedicato al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti
         tag:
-          label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButton2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-            
-      # CARD CHILDREN ACTION
-      - title: "Linguaggio" #C
-        fullHeight: true
-        imgRatio: 16x9
-        #iconImg: /icons/kit_coprog_contenuti.svg #I 
-        iconImgAlt: Alt lorem ipsum #C
-        rounded: true
-        url: "/design-system/fondamenti/linguaggio/" #M
-        text: | #C
-          Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone
-        tag:
-          label: Fondamento #C
+          label: RISORSE PER PROGETTARE - ATTIVITÀ DEL KIT #C
         share: #AUTO
           btnId: shareButton2
           button:
@@ -357,17 +285,17 @@ components:
             isShare: true
       
       # CARD CHILDREN
-      - title: Comprendi lo stato dell'arte #C
+      - title: Communi - Comprendi lo stato dell'arte #C
         text: Definisci gli obiettivi e il perimetro del progetto per adottare il modello di sito comunale #C
         # img: 
         # alt: ""
         # imgRatio: 4x3
         # imgPlaceholder: true
         titleSmall: false
-        fullHeight: true
+        fullHeight: false
         url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/comprendi-lo-stato-dell-arte/" #M
         tag:
-          label: Attività del modello Comuni #C
+          label: MODELLI - ATTIVITÀ #C
         share: #AUTO
           btnId: shareButtonCard2
           button:
@@ -381,17 +309,17 @@ components:
             isShare: true
             
       # CARD CHILDREN
-      - title: Definisci architettura e contenuti #C
+      - title: Comuni - Definisci architettura e contenuti #C
         text: Imposta la struttura informativa del sito comunale e organizza la migrazione dei contenuti #C
         # img: 
         # alt: ""
         # imgRatio: 4x3
         # imgPlaceholder: true
         titleSmall: false
-        fullHeight: true
+        fullHeight: false
         url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/definisci-architettura-e-contenuti/" #M
         tag:
-          label: Attività del modello Comuni #C
+          label: MODELLI - ATTIVITÀ #C
         share: #AUTO
           btnId: shareButtonCard2
           button:
@@ -405,17 +333,17 @@ components:
             isShare: true
             
       # CARD CHILDREN
-      - title: Comprendi lo stato dell'arte #C
+      - title: Scuole - Comprendi lo stato dell'arte #C
         text: Definisci gli obiettivi e il perimetro del progetto per adottare il modello di sito scolastico #C
         # img: 
         # alt: ""
         # imgRatio: 4x3
         # imgPlaceholder: true
         titleSmall: false
-        fullHeight: true
+        fullHeight: false
         url: "/modelli/scuole/adotta-il-modello-di-sito-scolastico/comprendi-lo-stato-dell-arte/" #M
         tag:
-          label: Attività del modello Scuole #C
+          label: MODELLI - ATTIVITÀ #C
         share: #AUTO
           btnId: shareButtonCard2
           button:
@@ -429,17 +357,17 @@ components:
             isShare: true
             
       # CARD CHILDREN
-      - title: Definisci architettura e contenuti #C
+      - title: Scuole - Definisci architettura e contenuti #C
         text: Imposta la struttura informativa del sito comunale e organizza la migrazione dei contenuti #C
         # img: 
         # alt: ""
         # imgRatio: 4x3
         # imgPlaceholder: true
         titleSmall: false
-        fullHeight: true
+        fullHeight: false
         url: "/modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/" #M
         tag:
-          label: Attività del modello Scuole #C
+          label: MODELLI - ATTIVITÀ #C
         share: #AUTO
           btnId: shareButtonCard2
           button:
@@ -481,76 +409,76 @@ components:
               color: secondary
           list:
             isShare: true 
-            
-     # # CARD CHILDREN ACTION
-     # - title: Titolo sezione intera, eg. Design system #C
-     #   fullHeight: true
-     #   imgRatio: 4x3
-     #   img: /images/400x300.png
-     #   alt: Alt lorem ipsum
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   # tag:
-     #   #   label: Tipologia contenuto #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
 
-     # # CARD CHILDREN ACTION
-     # - title: Titolo modello intero, eg. Comuni #C
-     #   fullHeight: true
-     #   imgRatio: 4x3
-     #   img: /images/400x300.png
-     #   alt: Alt lorem ipsum
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   # tag:
-     #   #   label: Tipologia contenuto #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
+  # ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial2:
 
-     # # CARD CHILDREN ACTION
-     # - title: Titolo scheda operativa #C
-     #   fullHeight: true
-     #   # imgRatio: 16x9
-     #   # iconImg: /icons/kit_analisiContesto.svg #I
-     #   # iconImgAlt: Alt lorem ipsum #C
-     #   rounded: true
-     #   url: "#" #M
-     #   text: | #C
-     #     Lorem **ipsum**
-     #   tag:
-     #     label: Scheda operativa #C
-     #   share: #AUTO
-     #     btnId: shareButton
-     #     button:
-     #       addonStyle: icon-only-drop
-     #       ariaLabel: Condividi
-     #       icon:
-     #         icon: sprites.svg#it-more-items
-     #         size: sm
-     #         color: secondary
-     #     list:
-     #       isShare: true
-            
+    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
+      menu: false
+      centered: true
+      background: light
+      text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
+      components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Architettura dell’informazione" #C
+          headingLevel: 4
+          text: | #C
+            Organizza semanticamente e logicamenti contenuti informativi e rendi i servizi pubblici più semplici da trovare, capire e usare. 
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html#architettura-dellinformazione" #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Architettura dell’informazione"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Definizione e organizzazione dei contenuti" #C
+          headingLevel: 4
+          text: | #C
+            Definisci standard di architettura dell’informazione specifici per il mondo della Pubblica Amministrazione e avvia un’attività di modellazione più specifica, partendo da una segmentazione degli enti e delle funzioni a esse associate.  
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html#definizione-e-organizzazione-dei-contenuti" #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Definizione e organizzazione dei contenuti"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Linguaggio" #C
+          headingLevel: 4
+          text: | #C
+            Scopri gli obiettivi da porti quando scrivi per i cittadini in modo tale da rendere i contenuti di facile comprensione.  
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/linguaggio.html#linguaggio" #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Linguaggio"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2  
+
