@@ -54,7 +54,7 @@ const Button = ({
 
 	if (url) {
 		return (
-			<Link to={url} target={blank ? '_blank' : undefined} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} onClick={onClick}>
+			<Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} onClick={onClick}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
