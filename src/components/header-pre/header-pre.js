@@ -6,12 +6,12 @@ const HeaderPre = ({data}) => {
     return <></>
   }
 
-  return location.hostname === data.showOn ? (
+  return window.location.hostname === data.showOn ? (
     <div className="header-pre bg-white py-2 small">
       <div className="container-xxl">
         <div className="text-center">
           <span className="fw-semibold">{data.title}</span> -{' '}
-          <Link to={`https://designers.italia.it${location.pathname}`}>
+          <Link to={`https://designers.italia.it${window.location.pathname}`}>
             {data.link}
           </Link>
         </div>
