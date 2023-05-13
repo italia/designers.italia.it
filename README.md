@@ -6,9 +6,9 @@ Il sito utilizza l'ultima versione di [Bootstrap Italia](https://italia.github.i
 
 ## 💙 Come contribuire
 
-È possibile seguire e contribuire alle lavorazioni in corso nella [board di progetto](https://github.com/orgs/italia/projects/15). 
+È possibile seguire e contribuire alle lavorazioni in corso nella [board di progetto](https://github.com/orgs/italia/projects/15).
 
-Commenti e proposte relative all'evoluzione del sito e delle risorse può essere fatta aprendo una [nuova issue](https://github.com/italia/designers.italia.it/issues/new), o esplorando le [issues](https://github.com/italia/designers.italia.it/issues) esistenti. Se vuoi contribuire e proporre una modifica, è sufficiente aprire una [pull request](https://github.com/italia/designers.italia.it/pulls). 
+Commenti e proposte relative all'evoluzione del sito e delle risorse può essere fatta aprendo una [nuova issue](https://github.com/italia/designers.italia.it/issues/new), o esplorando le [issues](https://github.com/italia/designers.italia.it/issues) esistenti. Se vuoi contribuire e proporre una modifica, è sufficiente aprire una [pull request](https://github.com/italia/designers.italia.it/pulls).
 
 ## 🚀 Quick start
 
