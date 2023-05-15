@@ -40,7 +40,7 @@ const HeaderSlim = ({ data }) => {
 						<div className="it-header-slim-wrapper-content">
 							<div className="navbar-brand d-none d-lg-block">
 								<span>
-									<a target="_blank" className="me-2" href="https://innovazione.gov.it">Dipartimento per la trasformazione digitale</a>+<a target="_blank" className="ms-2" href="https://agid.gov.it">Agenzia per l'Italia digitale</a>
+									<a target="_blank" className="me-2" href="https://innovazione.gov.it" rel="noreferrer">Dipartimento per la trasformazione digitale</a>+<a target="_blank" className="ms-2" href="https://agid.gov.it" rel="noreferrer">Agenzia per l'Italia digitale</a>
 								</span>
 							</div>
 							<div className="nav-mobile">
@@ -48,7 +48,7 @@ const HeaderSlim = ({ data }) => {
 									<div className="d-flex align-items-center" >
 										<div className="navbar-brand d-lg-none">
 											<span>
-												<a target="_blank" className="p-2" href="https://innovazione.gov.it">DTD</a> + <a target="_blank" className="p-2" href="https://agid.gov.it">AgID</a>
+												<a target="_blank" className="p-2" href="https://innovazione.gov.it" rel="noreferrer">DTD</a> + <a target="_blank" className="p-2" href="https://agid.gov.it" rel="noreferrer">AgID</a>
 											</span>
 										</div>
 										<a className="it-opener d-lg-none p-2 collapsed" onClick={collapseToggle} href={`#${data.nav.id}`} role="button" aria-expanded="false" aria-controls={data.nav.id} data-focus-mouse="false">

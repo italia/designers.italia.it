@@ -27,7 +27,7 @@ const NavPosition = ({
               <Tooltip label={item.tooltip}></Tooltip>
             }
             <div className="ms-3">
-              {item.url ? <Link to={item.url} target={item.blank ? '_blank' : undefined}>
+              {item.url ? <Link to={item.url} target={item.blank ? '_blank' : undefined} rel={item.blank ? 'noreferrer' : undefined}>
                 {item.label}
                 {item.screenReaderText &&
                   <span className="visually-hidden">{item.screenReaderText}</span>

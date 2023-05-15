@@ -34,6 +34,7 @@ const FooterBrand = ({
                     <Link
                       to={value.url}
                       target={value.blank ? "_blank" : undefined}
+                      rel={value.blank ? 'noreferrer' : undefined}
                       className="d-block"
                       aria-label={value.ariaLabel}
                     >
