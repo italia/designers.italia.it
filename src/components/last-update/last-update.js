@@ -14,7 +14,7 @@ const LastUpdate = ({
   lastModified,
   noPadding
 }) => {
-  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/${process.env.GATSBY_BRANCH}/src/data/content/`  // < fallback if not trackable via pathname let's go to repo root...
+  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`  // < fallback if not trackable via pathname let's go to repo root...
   if (pathname) {
     const filePath = pathname === '/'
       ? "index"
