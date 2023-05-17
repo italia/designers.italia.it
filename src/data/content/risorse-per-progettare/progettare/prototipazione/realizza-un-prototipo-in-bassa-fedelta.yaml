@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
         #size: sm
       #text: In breve
     #text: | #C
-      #Lorem **ipsum** 
+      #Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_prototipazione_costruisci.svg #I
     alt: "" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase #C
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,20 +186,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Progettazione interfaccia
-          url: "#"
-          color: primary
-          size: lg
-        - label: Progettazione servizi
-          url: "#"
-          color: primary
-          size: lg
-        #- label: Argomento
-          #url: "#"
-          #color: primary
-          #size: lg
-      
+      tags: [Progettazione interfaccia,Progettazione servizi]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -227,9 +207,9 @@ components:
           #title: A cosa servono h3 #C
           text: | #C
             I prototipi in bassa fedeltà sono rappresentazioni schematiche e interattive di un servizio digitale. Ti permettono di definire gli elementi di interfaccia, i contenuti e le funzionalità fondamentali di un servizio, senza focalizzarti sull’aspetto grafico. Lo scopo dei prototipi in bassa fedeltà è infatti quello di individuare le modalità attraverso cui l’utente interagisce con i vari elementi dell’interfaccia e con il flusso del servizio, in modo da verificarne l’efficienza ed efficacia.
-            
+
             Le risorse ti aiutano a costruire i wireframe, ovvero le varie schermate a bassa definizione dell'interfaccia del servizio. Successivamente, potrai definire i comportamenti dei vari oggetti nelle schermate e le relative transizioni, in modo da generare un prototipo interattivo che simulerà i flussi di interazione precedentemente definiti.
-            
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -249,14 +229,14 @@ components:
             blank: true
             actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  https://github.com/italia/design-wireframe-kit #M
+                url: https://github.com/italia/design-wireframe-kit #M
                 ariaLabel: Repository GitHub Wireframe kit per Sketch (si apre in una nuova finestra) #C #COMPILE FOR EACH ITEM
                 blank: true
           - label: Wireframe di carta #C
             srBefore: PDF #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter:  # FOR SCREEN READER ARIA LABEL
             text: "La versione stampabile della libreria di elementi per costruire un prototipo in bassa fedeltà delle schermate di interfaccia di un servizio" #C
-            url:  /files/resources/risorse-per-progettare/progettare/prototipazione/visualizza-flussi-interazione/DI-WireframeKit_carta.pdf #M
+            url: /files/resources/risorse-per-progettare/progettare/prototipazione/visualizza-flussi-interazione/DI-WireframeKit_carta.pdf #M
             blank: true
             actions:
               - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -265,4 +245,4 @@ components:
                 blank: false
 
 
-          
+

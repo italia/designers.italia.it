@@ -19,6 +19,8 @@
 metadata:
   template:
     name: level1
+  redirect_from:
+    - /kit
   activeLabel: Risorse per progettare
 
 # ————————————————————————————————————————————
@@ -73,18 +75,6 @@ components:
     img: /images/risorse-per-progettare/icons/risorse-per-progettare.svg #I
     alt: "Il design è un processo iterativo" #C
     imgRatio: 4x3
-    share: #AUTO
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-white mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: light
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -96,20 +86,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: white
-      chips: #C
-        - label: Risorse per progettare
-          url: "#"
-          color: primary
-          size: lg
-        - label: Progettazione
-          url: "#"
-          color: primary
-          size: lg
-        - label: Approccio
-          url: "#"
-          color: primary
-          size: lg
-
+      tags: [Risorse per progettare,Progettazione,Approccio]
+      
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
@@ -126,39 +104,14 @@ components:
           listItems: #AUTO
             - url: "organizzare/" #M
               label: "Organizzare" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "comprendere/" #M
               label: "Comprendere" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "progettare/" #M
               label: "Progettare" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "realizzare/" #M
               label: "Realizzare" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "validare/" #M
               label: "Validare" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # INTRO

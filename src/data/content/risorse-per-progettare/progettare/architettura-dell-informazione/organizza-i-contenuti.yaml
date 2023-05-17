@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
     #     size: sm
     #   text: In breve
     # text: | #C
-    #   Lorem **ipsum** 
+    #   Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_architettura_cardsorting.svg #I
-    alt: "descrizione immagine" #C
+    alt: "" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -161,10 +149,11 @@ components:
             align: "middle"
             color: "secondary"
           label: "Architettura dell'informazione" #C
-          url: "../" #M 
+          url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +164,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +172,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,20 +185,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: "Architettura dell'informazione"
-          url: "#"
-          color: primary
-          size: lg
-        - label: Card sorting
-          url: "#"
-          color: primary
-          size: lg
-        - label: Contenuti
-          url: "#"
-          color: primary
-          size: lg
-      
+      tags: [Architettura informazione,Card sorting,Contenuti]
+
   ## ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -231,7 +210,7 @@ components:
             L'attività di card sorting è infatti utile per **individuare le macro-categorie** in cui contenuti e funzioni sono raggruppati e i percorsi attraverso i quali si articolano. Serve anche a **descrivere le tipologie di contenuti** presenti nel sistema e le relazioni che intercorrono fra esse.
 
             Questo lavoro di catalogazione e raggruppamento è fondamentale per costruire e/o consolidare l’architettura dell’Informazione alla base del servizio digitale.
-            
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -279,4 +258,4 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
                 ariaLabel: "PDF: Card sorting in versione stampabile" #C #COMPILE FOR EACH ITEM
                 blank: false
- 
+

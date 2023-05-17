@@ -5,48 +5,64 @@ import Link from "../link/link"
 import "./list.scss"
 
 const List = React.forwardRef(({
-	isMenu,       //is list inside nav menu: true or false
+  isMenu,       //is list inside nav menu: true or false
   isShare,      //is list a share: true or false
-	collapsable,  //true / false
-	isDropdown,   // if inside dropdown
-	id,
+  collapsable,  //true / false
+  isDropdown,   // if inside dropdown
+  id,
   title,
   headingLevel,
-	textLarge,
-	children,
-	customStyle,
-	customStyleUl,
-	heading,		    //if has heading
-	headingLink,    //if heading has link
-	listItems,
-	simpleList,
+  textLarge,
+  children,
+  customStyle,
+  customStyleUl,
+  heading,		    //if has heading
+  headingLink,    //if heading has link
+  listItems,
+  simpleList,
+  shareUrl,
+  shareTitle,
 }, ref) => {
-
-  const [currentUrl, setCurrentUrl ] = useState('')
+  const [currentUrl, setCurrentUrl] = useState('')
   const [currentTitle, setCurrentTitle] = useState('')
 
+  const ICON_ARROW_RIGHT_TRIANGLE = { 
+		icon: "sprites.svg#it-arrow-right-triangle",
+		size: "sm",
+		color: "primary",
+		addonClasses: "align-middle me-2",
+    // ariaLabel: ""
+	  }
+
   useEffect(() => {
-    setCurrentUrl(window.location.href)
-    setCurrentTitle(window.document.title)
-  })
+    let url = window.location.href
+    if (shareUrl) {
+      const re = new RegExp('^(?:[a-z+]+:)?//', 'i')
+      url = re.test(shareUrl) ?
+        shareUrl : `https://${window.location.hostname}${shareUrl}`
+    }
+
+    setCurrentUrl(url)
+    setCurrentTitle(shareTitle)
+  }, [shareUrl, shareTitle])
 
   //heading level
-	let HLevel
-	if (headingLevel) {
-		HLevel = `h${headingLevel}`;
-	} else {
-		HLevel = `h3`
-	}
+  let HLevel
+  if (headingLevel) {
+    HLevel = `h${headingLevel}`;
+  } else {
+    HLevel = `h3`
+  }
 
-	const styles = `${isMenu ? 'link-list-wrapper' : 'it-list-wrapper'}`
-		+ `${collapsable ? ' collapse' : ''}`
-		+ `${customStyle ? ' '+customStyle : ''}`
+  const styles = `${isMenu ? 'link-list-wrapper' : 'it-list-wrapper'}`
+    + `${collapsable ? ' collapse' : ''}`
+    + `${customStyle ? ' ' + customStyle : ''}`
 
-	const ulStyles = `${isMenu ? 'link-list' : 'it-list'}`
-		+ `${customStyleUl ? ' '+customStyleUl : ''}`
+  const ulStyles = `${isMenu ? 'link-list' : 'it-list'}`
+    + `${customStyleUl ? ' ' + customStyleUl : ''}`
 
   if (isShare) {
-    const iconProps = {color: 'primary', size: 'sm'}
+    const iconProps = { color: 'primary', size: 'sm' }
     const onCopyLink = async () => {
       await navigator.clipboard.writeText(currentUrl);
     }
@@ -55,7 +71,7 @@ const List = React.forwardRef(({
       <>
         <ListItem
           label="Copia collegamento"
-          icon={{icon: 'sprites.svg#it-copy', ...iconProps}}
+          icon={{ icon: 'sprites.svg#it-copy', ...iconProps }}
           iconRight={true} isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
           ariaLabel=""
@@ -64,7 +80,7 @@ const List = React.forwardRef(({
         />
         <ListItem
           label="Condividi su Twitter"
-          icon={{icon: 'sprites.svg#it-twitter', ...iconProps}}
+          icon={{ icon: 'sprites.svg#it-twitter', ...iconProps }}
           iconRight={true} isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
           ariaLabel="Condividi su Twitter (si apre in una nuova finestra)"
@@ -73,7 +89,7 @@ const List = React.forwardRef(({
         />
         <ListItem
           label="Condividi su LinkedIn"
-          icon={{icon: 'sprites.svg#it-linkedin', ...iconProps}}
+          icon={{ icon: 'sprites.svg#it-linkedin', ...iconProps }}
           iconRight={true} isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
           ariaLabel="Condividi su LinkedIn (si apre in una nuova finestra)"
@@ -84,29 +100,35 @@ const List = React.forwardRef(({
     )
   }
 
-	if (listItems) {
-		children = listItems.map((listitems,index) => {
-			return <ListItem {...listitems} key={"z-list-"+index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList}></ListItem>
-		})
-	}
+  if (listItems) {
+    if (isMenu) { // megamenu
+      children = listItems.map((listitems, index) => {
+        return <ListItem {...listitems} key={"z-list-" + index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList} icon={ICON_ARROW_RIGHT_TRIANGLE} iconLeft={true}></ListItem>
+      })
+    } else {
+      children = listItems.map((listitems, index) => {
+        return <ListItem {...listitems} key={"z-list-" + index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList}></ListItem>
+      })
+    }
+  }
 
-	let ListHeading
-	if(heading) {
-		ListHeading =<div className="link-list-heading">{heading}</div>
-		if (headingLink) {
-			ListHeading = <div className="link-list-heading"><Link to={headingLink}>{heading}</Link></div>
-		}
-	}
+  let ListHeading
+  if (heading) {
+    ListHeading = <div className="link-list-heading">{heading}</div>
+    if (headingLink) {
+      ListHeading = <div className="link-list-heading"><Link to={headingLink}>{heading}</Link></div>
+    }
+  }
 
-	return(
-		<div ref={ref} className={styles} id={id}>
-			{ListHeading}
+  return (
+    <div ref={ref} className={styles} id={id}>
+      {ListHeading}
       {title && <HLevel className="title h4 mb-0">{title}</HLevel>}
-			<ul className={ulStyles}>
-				{children}
-			</ul>
-		</div>
-	)
+      <ul className={ulStyles}>
+        {children}
+      </ul>
+    </div>
+  )
 })
 
 export default List

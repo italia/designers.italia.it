@@ -21,7 +21,7 @@ const Icon = ({
 		+ `${addonClasses ? ' '+addonClasses : ''}`
 
 	return(
-		<svg className={styles} aria-hidden={hidden} aria-label={ariaLabel}>
+		<svg role="img" className={styles} aria-hidden={hidden} aria-label={ariaLabel}>
 			<use href={`/svg/${icon}`}></use>
 		</svg>
 	)

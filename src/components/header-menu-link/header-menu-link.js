@@ -4,6 +4,8 @@ import { useEffect } from "react";
 import {Dropdown} from "bootstrap-italia"
 import "./header-menu-link.scss"
 
+import { Link } from "gatsby";
+
 const HeaderMenuLink = ({
 	isDropDown,
 	idMegamenu,
@@ -19,7 +21,7 @@ const HeaderMenuLink = ({
 	const styles = 'nav-link'
 		+ `${isDropDown ? ' dropdown-toggle' : ''}`
 		+ `${page===label ? ' active' : ''}`
-		+ ' px-lg-3 fw-semibold'
+		+ ' px-lg-2 px-xl-3 fw-semibold'
 
 	function icon(boolean){
 		if (boolean) {
@@ -31,7 +33,7 @@ const HeaderMenuLink = ({
 
   if (isDropDown) {
     return (
-      <button
+      <button 
         className={styles}
         data-bs-toggle={isDropDown ? 'dropdown' : undefined}
         aria-expanded={isDropDown ? 'false' : undefined}
@@ -43,7 +45,7 @@ const HeaderMenuLink = ({
     )
   } else {
     return (
-      <a // < XXX We need to use <Link> component? 
+      <Link
         className={styles}
         href={url ? url : '#'}
         data-bs-toggle={isDropDown ? 'dropdown' : undefined}
@@ -52,7 +54,7 @@ const HeaderMenuLink = ({
         >
         <span>{label}</span>
         {icon(isDropDown)}
-      </a>
+      </Link>
     )
   }
 

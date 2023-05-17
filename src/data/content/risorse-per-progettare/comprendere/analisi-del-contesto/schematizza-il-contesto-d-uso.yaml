@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
     #     size: sm
     # text: In breve
     # text: | #C
-    #   Lorem **ipsum** 
+    #   Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_analisiContesto_schematizza.svg #I
     alt: "L'utente al centro del contesto" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,16 +186,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Mappa attori
-          url: "#"
-          color: primary
-          size: lg
-        - label: Mappa ecosistema
-          url: "#"
-          color: primary
-          size: lg
-      
+      tags: [Mappa attori,Mappa ecosistema]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -225,9 +209,9 @@ components:
             **Traccia tutte le figure coinvolte** nell’erogazione del servizio e **classificale in modo strutturato**, distinguendole tra primarie e secondarie, interne o esterne alla Pubblica Amministrazione.
 
             Approfondisci e **schematizza le interazioni e i flussi di scambio** che avvengono tra i diversi attori e touchpoint coinvolti, mettendo in evidenza eventuali inefficienze del sistema e potenziali miglioramenti
-            
 
-            **Comprenderai l’impatto che i diversi ruoli** hanno sul servizio e sulle persone come destinatarie. 
+
+            **Comprenderai l’impatto che i diversi ruoli** hanno sul servizio e sulle persone come destinatarie.
 
   # ///////////////////
   # RESOURCES
@@ -251,7 +235,7 @@ components:
                 ariaLabel: "Presentazione google: Mappa degli attori (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-degli-attori.odp #M
+                url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-degli-attori.odp #M
                 ariaLabel: "Scarica ODP Mappa degli attori" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: "Mappa dell'ecosistema" #C
@@ -263,9 +247,9 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.google.com/presentation/d/1SiFNAvLJPPO86DgvkPB1I8W7gWHmBnE5CNJTM9JSSEM/edit?usp=sharing #M
-                ariaLabel: "Presentazione google: Mappa dell'ecosistema (si apre in una nuova finestra)" #C 
+                ariaLabel: "Presentazione google: Mappa dell'ecosistema (si apre in una nuova finestra)" #C
                 blank: true
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-dell-ecosistema.odp #M
+                url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-dell-ecosistema.odp #M
                 ariaLabel: "Scarica ODP Mappa dell'ecosistema" #C #COMPILE FOR EACH ITEM
                 blank: false

@@ -19,6 +19,15 @@
 metadata:
   template:
     name: level1
+  redirect_from:
+    - /linee-guida
+    - /lineeguida
+    - /it/guide/
+    - /guide/
+    - /service-design/
+    - /user-research/
+    - /content-design/
+    - /user-interface/
   activeLabel: Norme e riferimenti
 
 # ————————————————————————————————————————————
@@ -69,22 +78,10 @@ components:
         size: sm
       text: In breve
     text: | #C
-      La progettazione e la realizzazione di siti e servizi digitali per la PA sono guidate da regole tecniche e indicazioni operative attente all’usabilità, all'accessibilità ed a un approccio progettuale rivolto alle persone.
+      La progettazione e la realizzazione di siti e servizi digitali per la PA sono guidate da norme e indicazioni operative attente all’usabilità, all'accessibilità e a un approccio progettuale rivolto alle persone.
     # img: /images/400x300.png #I
     # alt: alt lorem ipsum #C
     imgRatio: 4x3
-    share: #AUTO
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-white mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: light
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -96,28 +93,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: white
-      chips: #C
-        - label: Normativa
-          url: "#"
-          color: primary
-          size: lg
-        - label: Linee guida
-          url: "#"
-          color: primary
-          size: lg
-        - label: Manuale operativo
-          url: "#"
-          color: primary
-          size: lg
-        - label: Cad
-          url: "#"
-          color: primary
-          size: lg
-        - label: Accessibilità
-          url: "#"
-          color: primary
-          size: lg
-
+      tags: [Normativa,Linee guida,Manuale operativo,Cad,Accessibilità]
+      
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
@@ -134,32 +111,10 @@ components:
           listItems: #AUTO
             - url: "linee-guida-di-design/" #M
               label: "Linee guida di design" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "linee-guida-accessibilita/" #M
               label: "Linee guida accessibilità" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "manuale-operativo-di-design/" #M
               label: "Manuale operativo di design" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
-            - url: "#" #M
-              label: "Altre norme e riferimenti" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # INTRO
@@ -175,8 +130,8 @@ components:
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     moreText: | #C
-      Per orientarti nell'ecosistema di norme e riferimenti, la stella polare è rappresentata dalle **Linee guida di design, emesse secondo quanto definito dall’articolo 53 del Codice dell’amministrazione digitale**: ti indicano le regole che hai l'obbligo di rispettare, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle opzionali.
-      
+      Per orientarti nell'ecosistema di norme e riferimenti, la stella polare è rappresentata dalle **Linee guida di design per i siti internet e i servizi digitali della PA, emesse secondo quanto definito dall’articolo 53 del Codice dell’amministrazione digitale**: ti indicano le regole che hai l'obbligo di rispettare, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle opzionali.
+
       Nell'applicazione concreta delle Linee guida ti aiuta il **Manuale operativo di design**: ti fornisce indicazioni operative a supporto della progettazione e della realizzazione di siti e servizi pubblici digitali accessibili, inclusivi e che riducono le disuguaglianze.
 
   # ///////////////////
@@ -201,8 +156,9 @@ components:
       background: light # null | light | medium | dark
       big: false
       specular: true
-      subtitle: "Le regole tecniche che devi rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione" #C
-      # text: "Le disposizioni delle Linee guida rispondono all’articolo 53 del decreto legislativo del 7 marzo 2005, n. 82, contenente il Codice dell’amministrazione digitale." #C
+      subtitle: "La norma che devi rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione" #C
+      text: |
+        Le disposizioni delle **Linee guida di design per i siti internet e i servizi digitali** rispondono all’articolo 53 del decreto legislativo del 7 marzo 2005, n. 82, contenente il **Codice dell’amministrazione digitale**. 
       buttons: #C #I
         - label: Scopri le Linee guida di design #C
           btnStyle: primary
@@ -225,7 +181,7 @@ components:
       big: false
       specular: true
       subtitle: "La norma a cui riferirti per favorire e semplificare l'accesso di tutte le persone, senza discriminazioni, agli strumenti informatici" #C
-      # text: "Il documento, che guida quanto disposto dall’articolo 11 della legge del 9 gennaio 2004, n. 4 e successivi aggiornamenti, è stato redatto ed emanato dall'Agenzia per l'Italia Digitale (AGID) per attuare la Direttiva UE 2016/2102, recepita in Italia con il Decreto legislativo n. 106 del 10 agosto 2018." #C
+      text: "Il documento, che guida quanto disposto dall’**articolo 11 della legge del 9 gennaio 2004, n. 4 e successivi aggiornamenti**, è stato redatto ed emanato dall'Agenzia per l'Italia Digitale (AGID) per attuare la **Direttiva UE 2016/2102**, recepita in Italia con il **Decreto legislativo n. 106 del 10 agosto 2018**." #C
       buttons: #C #M
         - label: Scopri le Linee guida accessibilità
           btnStyle: primary
@@ -243,7 +199,8 @@ components:
       big: false
       specular: true
       subtitle: "Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento" #C
-      text: "Uno strumento di lavoro per la Pubblica Amminisrazione e i suoi fornitori, offre tutte le informazioni necessarie a supportare la realizzazione di siti internet e servizi digitali pubblici che rispondano alle Linee guida." #C
+      text: |
+        **Uno strumento di lavoro per la Pubblica Amminisrazione e i suoi fornitori**, offre tutte le informazioni necessarie a supportare la realizzazione di siti internet e servizi digitali pubblici che rispondano alle Linee guida.
       buttons: #C #M
         - label: Scopri il Manuale operativo di design
           btnStyle: primary
@@ -290,7 +247,7 @@ components:
         url: https://medium.com/designers-italia #M
         blank: true
         icon:
-          icon: sprites.svg#it-external-link
+          icon: sprites.svg#it-medium
           color: primary
           align: middle
           size: sm
@@ -317,34 +274,6 @@ components:
             icon: sprites.svg#it-external-link
             size: xs
         moreInfo: di Daniele Tabellini e Fabrizio Caccavello
-        chips:
-          - color: secondary
-            label: Accessibilità
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Qualità
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Design system
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Approfondimento teorico
-            url: "#"
-            blank: false
-        share:
-          btnId: shareButtonCardMedium1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
         headingLevel: 4
@@ -363,30 +292,6 @@ components:
             icon: sprites.svg#it-external-link
             size: xs
         moreInfo: di Mauro Filippi
-        chips:
-          - color: secondary
-            label: Accessibilità
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Etica
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Approfondimento teorico
-            url: "#"
-            blank: false
-        share:
-          btnId: shareButtonCardMedium2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
         headingLevel: 4
@@ -405,54 +310,3 @@ components:
             icon: sprites.svg#it-external-link
             size: xs
         moreInfo: di Francesco Zaia
-        chips:
-          - color: secondary
-            label: Processo
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Risorse per progettare
-            url: "#"
-            blank: false
-          - color: secondary
-            label: Approfondimento teorico
-            url: "#"
-            blank: false
-        share:
-          btnId: shareButtonCardMedium3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-
-
-  # —
-  # HIGHLIGHT LOOP
-  # —
-  highlightsLoop2:
-
-    # —
-    # HIGHLIGHT
-    # —
-    - title: Altre norme e riferimenti #C
-      id: altre-norme-e-riferimenti
-      # img: /images/400x300.png #I
-      # alt: Alt lorem ipsum #C
-      headingLevel: 3
-      background: light  # null | light | medium | dark
-      big: false
-      specular: true
-      subtitle: "Indici europei, il Piano Triennale, il Cad e gli altri riferimenti utili alla progettazione di servizi digitali pubblici" #C
-      # text: | #C
-      #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-      buttons: #C #M
-        - label: Scopri altre norme e riferimenti
-          btnStyle: primary
-          url: "#" #M
-          disabled: true

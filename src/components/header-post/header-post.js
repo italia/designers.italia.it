@@ -20,7 +20,7 @@ const HeaderPost = ({data}) => {
 		return (
 			<section aria-labelledby={data.nav.id}>
 					<div className="it-header-slim-wrapper p-0 h-100">
-						<div className="header-pre bg-white border-bottom border-100 shadow-sm">
+						<div className="header-pre bg-white border-bottom border-100 w-100 shadow-sm">
 							<div className="container-xxl">
 								<div className="row ">
 									<div className="col-12 g-0">
@@ -38,6 +38,7 @@ const HeaderPost = ({data}) => {
 														<Link
 														to={value.url}
 														target={value.blank ? "_blank" : undefined}
+														rel={value.blank ? 'noreferrer' : undefined}
 														>
 															<Icon {...value.icon}/>
 															{value.title && <ReactMarkdown components={{ p: "span" }}>{value.title}</ReactMarkdown>}
@@ -50,6 +51,7 @@ const HeaderPost = ({data}) => {
 													className="simple-cta fw-semibold"
 													to={data.nav.newsletter.url}
 													target={data.nav.newsletter.blank ? "_blank" : undefined}
+													rel={data.nav.newsletter.blank ? 'noreferrer' : undefined}
 													>
 														<span className="text-end">
 															{data.nav.newsletter.title}

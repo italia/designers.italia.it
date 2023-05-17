@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
     #     size: sm
     # text: In breve
     # text: | #C
-    #   Lorem **ipsum** 
+    #   Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_interviste_protocollo.svg #I
     alt: "Cura la regia" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,16 +186,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Ricerca utente
-          url: "#"
-          color: primary
-          size: lg
-        - label: Interviste
-          url: "#"
-          color: primary
-          size: lg
-      
+      tags: [Ricerca utente,Interviste]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -248,7 +232,7 @@ components:
                 ariaLabel: "Documento google: Guida alla conduzione strutturata (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/predisponi-il-protocollo/DI-Guida-alla-conduzione-strutturata.odt #M
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/predisponi-il-protocollo/DI-Guida-alla-conduzione-strutturata.odt #M
                 ariaLabel: "Scarica ODT Guida alla conduzione strutturata" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: Guida alla conduzione semi-strutturata #C
@@ -263,7 +247,7 @@ components:
                 ariaLabel: "Documento google: Guida alla conduzione semi-strutturata (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/predisponi-il-protocollo/DI-Guida-alla-conduzione-semi-strutturata.odt #M
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/predisponi-il-protocollo/DI-Guida-alla-conduzione-semi-strutturata.odt #M
                 ariaLabel: "Scarica ODT Guida alla conduzione semi-strutturata" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: Liberatoria interviste utente #C
@@ -278,6 +262,6 @@ components:
                 ariaLabel: "Documento google: Consenso al trattamento dei dati (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/predisponi-il-protocollo/DI-Consenso-al-trattamento-dei-dati.odt #M
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/predisponi-il-protocollo/DI-Consenso-al-trattamento-dei-dati.odt #M
                 ariaLabel: "Scarica ODT Consenso al trattamento dei dati" #C #COMPILE FOR EACH ITEM
                 blank: false

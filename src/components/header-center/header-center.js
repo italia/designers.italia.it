@@ -31,7 +31,7 @@ const HeaderCenter = ({data}) => {
             {data.socials.items.map((value,index)=>{
               return(
                 <li key={"social-item-"+index}>
-                  <Link to={value.url} aria-label={value.title} target="_blank">
+                  <Link to={value.url} aria-label={value.title} target="_blank" rel="noreferrer">
                     <Icon icon={value.icon}/>
                   </Link>
                 </li>

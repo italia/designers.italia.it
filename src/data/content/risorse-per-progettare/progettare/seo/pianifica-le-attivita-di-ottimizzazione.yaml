@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
     #     size: sm
     # text: In breve
     # text: | #C
-    #   Lorem **ipsum** 
+    #   Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_SEO_pianifica.svg #I
     alt: "" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,16 +186,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Ottimizzazione SEO
-          url: "#"
-          color: primary
-          size: lg
-        - label: Content design
-          url: "#"
-          color: primary
-          size: lg
-      
+      tags: [SEO,Content design]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -222,11 +206,11 @@ components:
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
-            Programmare gli interventi di ottimizzazione che riguardano l’interno o l’esterno del sito (on-page e off-page), è **il primo passo da compiere per rendere vantaggioso il posizionamento del tuo sito** all’interno della classificazione dei risultati dei motori di ricerca. 
+            Programmare gli interventi di ottimizzazione che riguardano l’interno o l’esterno del sito (on-page e off-page), è **il primo passo da compiere per rendere vantaggioso il posizionamento del tuo sito** all’interno della classificazione dei risultati dei motori di ricerca.
 
             Con le risorse dedicate del kit puoi **programmare in modo strutturato le attività** da mettere in campo, tenendo sotto controllo scadenze, priorità e obiettivi.
             Nella bacheca condivisa troverai già le risorse organizzate in card e colonne e in questo modo non perderai nessun passaggio fondamentale per rendere il tuo sito ottimizzato.
-            
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -248,4 +232,4 @@ components:
                 url: https://trello.com/b/CPIl9SxJ/checklistseodesigners-italia #M
                 ariaLabel: "Bacheca Trello: Checklist SEO (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-         
+

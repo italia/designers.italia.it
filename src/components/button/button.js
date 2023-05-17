@@ -24,6 +24,7 @@ const Button = ({
 	dataBsToggle,	   //navbarcollapsible,dropdown
 	children,
 	blank,
+	title,
   onClick,
 }) => {
 	let iconRendered
@@ -31,7 +32,7 @@ const Button = ({
 		+ `${size ? ' btn-'+size : ''}`
 		+ `${btnStyle ? ' btn-'+btnStyle : ''}`
 		+ `${disabled ? ' disabled' : ''}`
-		+ `${(iconLeft || iconRight && !dataBsToggle) ? ' btn-icon' : ''}`
+		+ `${(iconLeft || (iconRight && !dataBsToggle)) ? ' btn-icon' : ''}`
 		+ `${customStyle ? customStyle : ''}`
 		+ `${addonStyle ? ' '+addonStyle : ''}`
 
@@ -53,7 +54,7 @@ const Button = ({
 
 	if (url) {
 		return (
-			<Link to={url} target={blank ? '_blank' : undefined} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} onClick={onClick}>
+			<Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined} id={id} className={btnStyles} role={role} aria-label={ariaLabel} data-disabled={disabled} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} onClick={onClick}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}
@@ -62,7 +63,7 @@ const Button = ({
 		)
 	}else{
 		return (
-			<button id={id} type={type ? type : 'button'} aria-label={ariaLabel} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} onClick={onClick}>
+			<button id={id} type={type ? type : 'button'} aria-label={ariaLabel} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? '#'+ariaControls : undefined} aria-disabled={disabled ? true : undefined} title={title} onClick={onClick}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>
 				{iconRight ? iconRendered : ''}

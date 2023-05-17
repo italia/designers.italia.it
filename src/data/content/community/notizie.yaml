@@ -16,16 +16,18 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
-    name: level2
+    name: archive-news
+  redirect_from:
+    - /notizie/
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
   name: Notizie - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Notizie sulla trasformazione dei servizi pubblici digitali dal progetto Designers Italia #C
+  description: Tutte le notizie sulle attività del progetto Designers Italia #C
   image: null #I
   twitterImage: null #I
   canonical: null
@@ -93,7 +95,7 @@ components:
   hero:
     background: light
     title: Notizie #C
-    subtitle: Notizie sulla trasformazione dei servizi pubblici digitali dal progetto Designers Italia #C
+    subtitle: Tutte le notizie sulle attività del progetto Designers Italia #C
     tag:
         label: Community #C
         addonClasses: mt-3 text-uppercase
@@ -107,18 +109,6 @@ components:
     # # img: /images/400x300.png #I
     # # alt: alt lorem ipsum #C
     # imgRatio: 4x3
-    # share:
-    #   btnId: shareButtonHero
-    #   button:
-    #     label: Condividi
-    #     addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-    #     icon:
-    #       icon: sprites.svg#it-more-items
-    #       size: sm
-    #       color: primary
-    #       addonClasses: ms-3
-    #   list:
-    #     isShare: true
 
     # # KANGAROO: METADATA
     # kangaroo:
@@ -130,23 +120,10 @@ components:
     #     icon: sprites.svg#it-horn
     #     size: sm
     #     color: secondary
-    #   chips: #C
-    #     - label: Cultura progettuale
-    #       url: "#"
-    #       color: primary
-    #       size: lg
-    #     - label: Pianificazione
-    #       url: "#"
-    #       color: primary
-    #       size: lg
-    #     - label: Design System
-    #       url: "#"
-    #       color: primary
-    #       size: lg
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   # sectionsEditorial:
 
-    
+

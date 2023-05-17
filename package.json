@@ -19,7 +19,7 @@
     "site"
   ],
   "scripts": {
-    "prepare-lib": "recursive-copy ./bootstrap-italia -w ./node_modules/bootstrap-italia && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
+    "prepare-lib": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
     "prepare-content": "node ./scripts/prepare.js",
     "start": "npm run prepare-lib && gatsby develop",
     "develop": "npm run start",
@@ -28,23 +28,25 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier --ignore-path .gitignore --check .",
     "prettier:fix": "npm run prettier -- --write",
-    "build": "npm run clean && npm run prepare-lib && gatsby build --prefix-paths && recursive-copy -w ./public/ ./_site/",
+    "build": "npm run clean && npm run prepare-lib && gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d public"
   },
   "dependencies": {
     "@colliercz/gatsby-transformer-gitinfo": "^1.4.0",
     "@loadable/component": "^5.15.2",
     "adm-zip": "^0.5.10",
     "babel-preset-gatsby": "^3.9.0",
-    "boostrap-italia": "./bootstrap-italia/",
+    "bootstrap-italia": "^2.4.2",
+    "classnames": "^2.3.2",
     "fs-extra": "^11.1.0",
     "gatsby": "^4.23.0",
     "gatsby-plugin-breadcrumb": "^12.3.1",
     "gatsby-plugin-htaccess": "^1.4.0",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-local-search": "^2.0.1",
-    "gatsby-plugin-matomo": "^0.14.0",
+    "gatsby-plugin-matomo": "github:bfabio/gatsby-plugin-matomo#multiple-trackers",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-sass": "^5.23.0",
     "gatsby-plugin-sharp": "^4.24.0",
@@ -53,6 +55,7 @@
     "gatsby-transformer-yaml": "^4.25.0",
     "glob": "^8.0.3",
     "js-yaml": "^4.1.0",
+    "lmdb": "^2.6.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-markdown": "^8.0.3",
@@ -74,13 +77,11 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-webpack-plugin": "^4.0.1",
     "gatsby-plugin-eslint": "^4.0.4",
+    "gh-pages": "^5.0.0",
     "mustache": "^4.2.0",
     "prettier": "2.8.4",
     "recursive-copy-cli": "^1.0.20",
     "simple-git": "^3.15.1",
     "slugify": "^1.6.5"
-  },
-  "overrides": {
-    "lmdb": "2.6.0"
   }
 }

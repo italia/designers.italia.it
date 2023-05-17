@@ -16,9 +16,14 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
+  redirect_from:
+    - /kit/esperienza-utente
+    - /esperienza-utente
+    - /kit/user-stories
+    - /kit/user-journey
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -52,7 +57,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +121,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Grazie alle risorse del kit, potrai **definire i profili delle persone che useranno il servizio (personas)** e **mappare l'esperienza d'uso attuale del tuo servizio digitale**, per poi riprogettarlo rendendolo più adeguato alle loro necessità. 
+      Grazie alle risorse del kit, potrai **definire i profili delle persone che useranno il servizio (personas)** e **mappare l'esperienza d'uso attuale del tuo servizio digitale**, per poi riprogettarlo rendendolo più adeguato alle loro necessità.
     img: /images/risorse-per-progettare/icons/kit_esperienzautente.svg #I
     alt: "L'esperienza guida gli utenti ai loro bisogni" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -139,6 +132,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -149,6 +143,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -159,6 +154,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -166,6 +162,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -178,21 +175,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Esperienza utente
-          url: "#"
-          color: primary
-          size: lg
-        - label: User journey
-          url: "#"
-          color: primary
-          size: lg
-        - label: Personas
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Esperienza utente,User journey,Personas]
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -208,18 +193,8 @@ components:
           listItems: #M
             - url: "definisci-le-personas/"
               label: Definisci le personas #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "analizza-l-esperienza-d-uso/"
               label: "Analizza l'esperienza d'uso" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -228,11 +203,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit di esperienza utente #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -249,7 +224,7 @@ components:
             Le personas sono anche un ottimo punto di partenza per mappare:
             - gli **user journey as-is**, che raccontano come avviene servizio allo stato attuale;
             - **gli user journey to-be**, che raccontano come sarà il futuro servizio digitale e sono utili soprattutto in fase di progettazione.
-            
+
             Lo strumento di **mappatura dell’esperienza dell’utente**, o **user journey**, sintetizza tutte le interazioni delle persone attraverso i diversi touchpoint messi loro a disposizione (sito, app, sportello/punto vendita, ecc.) per raggiungere un determinato obiettivo.
 
         # TXT + CTA BLOCK
@@ -262,14 +237,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -301,17 +276,6 @@ components:
           Identifica i profili delle persone che utilizzano il servizio, evidenziando le loro esigenze e difficoltà rispetto all'esperienza attuale d’uso del servizio.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
         # CARD CHILDREN ACTION
       - title: Analizza l‘esperienza d’uso #C
@@ -325,14 +289,3 @@ components:
           Analizza l'esperienza delle persone e le interazioni nelle diverse fasi del tuo servizio. Specifica le attività che svolgono, gli attori coinvolti, i canali e touchpoint attraverso cui interagiscono con il servizio digitale.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

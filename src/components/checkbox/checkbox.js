@@ -22,7 +22,7 @@ const Checkbox = (props) => {
     }
     return (
         <div className={"form-check " + customStyle} onClick={onClickEvent}>
-            <input id={id} type="checkbox" checked={isChecked} />
+            <input id={id} type="checkbox" checked={isChecked} onChange={()=>{}}/>
             <label htmlFor={id}>{label}</label>
         </div>
     );

@@ -5,7 +5,6 @@ import "../js/globals"
 import Skiplinks from "../components/skiplinks/skiplinks"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
-import BackToTopEl from "../components/back-to-top/back-to-top"
 import HeaderSlim from "../components/header-slim/header-slim"
 import HeaderPre from "../components/header-pre/header-pre"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper"
@@ -23,15 +22,17 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 import dsNav from "../data/dsnav.yaml"
 
+import viewerData from "../data/component-viewer.yaml"
+
 
 const Template = ({Pagedata,pageContext,location, lastModified}) => {
   if (!Pagedata.metadata.json) {
     throw new Error('json key is required for design-system-component!');
   }
   const variantMock = require(`../data/components_json/${Pagedata.metadata.json}`)
-	return (
+  return (
     <div id="app">
-      <HeaderPre data={HeaderData.headerPre}/>
+      <HeaderPre data={HeaderData.headerPre} location={location}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderSlim data={HeaderData.headerSlim}/>
@@ -42,11 +43,12 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
       </Header>
       <div className="bg-light">
         <div className="container-xxl">
-          <div className="row">
+          <div className="row design-system">
             <NavSidebar page={Pagedata.components.hero.title} {...dsNav}/>
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
               <Tab
+                viewerData={viewerData}
                 componentSource={Pagedata.metadata.json.replace(".json", "")}
                 tab01={Object.assign({}, Pagedata.tabs[0], { variants: variantMock })}
                 tab02={Pagedata.tabs[1]}
@@ -61,13 +63,6 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
       </div>
       <Footer {...FooterData.footer}>
       </Footer>
-      <BackToTopEl
-        positionTop={0}
-        scrollLimit={100}
-        duration={800}
-        easing="easeInOutSine"
-        ariaLabel={FooterData.footer.backToTop.ariaLabel}
-      />
     </div>
 	)
 }

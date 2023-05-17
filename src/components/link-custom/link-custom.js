@@ -23,6 +23,7 @@ const LinkCustom = ({
       className={linkStyles}
       to={url}
       target={blank ? "_blank" : undefined}
+      rel={blank ? 'noreferrer' : undefined}
     >
       {icon ? <Icon {...icon}/> : ''}
       {image ? <ImageResponsive src={image} aria-hidden="true" imgClassName={imageStyles}/> : ''}

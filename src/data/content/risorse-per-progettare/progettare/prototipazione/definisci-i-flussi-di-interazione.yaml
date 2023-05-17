@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
         #size: sm
       #text: In breve
     #text: | #C
-      #Lorem **ipsum** 
+      #Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_prototipazione_flussi.svg #I
     alt: "" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase #C
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,20 +186,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Progettazione interfaccia
-          url: "#"
-          color: primary
-          size: lg
-        - label: Progettazione servizi
-          url: "#"
-          color: primary
-          size: lg
-        #- label: Argomento
-          #url: "#"
-          #color: primary
-          #size: lg
-      
+      tags: [Progettazione interfaccia,Progettazione servizi]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -227,11 +207,11 @@ components:
           #title: A cosa servono h3 #C
           text: | #C
             I flussi di interazione, o user flow, descrivono nel dettaglio i singoli passaggi e le azioni che un utente compie interagendo con un servizio digitale per raggiungere il suo obiettivo. Visualizzano le interazioni possibili con il sistema e le risposte che questo darà alle azioni dell’utente.
-            
+
             Costruire gli user flow ti aiuta a evidenziare le possibili complessità di un servizio digitale, in modo da definire le soluzioni progettuali per sviluppare interfacce e funzionalità realmente centrate sui bisogni dell’utente.
-            
+
             Le risorse ti guidano nella costruzione dei flussi di interazione e, successivamente,  nella creazione di uno schema visuale per impostare la fase di wireframing.
-            
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -251,7 +231,7 @@ components:
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  https://docs.google.com/spreadsheets/d/19u8t0EuGCck3yNS12F4V9IjuwETJhVXOB_PvPpGSTnU/edit?usp=sharing #M
+                url: https://docs.google.com/spreadsheets/d/19u8t0EuGCck3yNS12F4V9IjuwETJhVXOB_PvPpGSTnU/edit?usp=sharing #M
                 ariaLabel: "Foglio Google: Foglio di costruzione dei flussi di interazione (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -274,7 +254,7 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Flussi-di-Interazione-esempio.ods #M
                 ariaLabel: "ODS Esempio di costruzione dei flussi" #C #COMPILE FOR EACH ITEM
                 blank: false
-   
+
       - simpleList: true
         title: Visualizzazione dei flussi #C
         headingLevel: 3
@@ -287,11 +267,11 @@ components:
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  https://docs.google.com/presentation/d/1qzEtt75yfSaQihD6jy0WGElrvQeyp37MCgJuqEG8Q_U/edit?usp=sharing #M
+                url: https://docs.google.com/presentation/d/1qzEtt75yfSaQihD6jy0WGElrvQeyp37MCgJuqEG8Q_U/edit?usp=sharing #M
                 ariaLabel: "Presentazione Google: Strumento di visualizzazione dei flussi di interazione (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-La-visualizzazione-dei-flussi-di-interazione.odp #M 
+                url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-La-visualizzazione-dei-flussi-di-interazione.odp #M
                 ariaLabel: "ODP Strumento di visualizzazione dei flussi di interazione" #C #COMPILE FOR EACH ITEM
                 blank: false
 
@@ -303,9 +283,9 @@ components:
             blank: false
             actions:
               - icon: sprites.svg#it-camera  #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Flussi-di-Interazione-esempio.jpg #M
+                url: /files/resources/risorse-per-progettare/progettare/prototipazione/definisci-flussi-interazione/DI-Flussi-di-Interazione-esempio.jpg #M
                 ariaLabel: JPG Esempio di visualizzazione dei flussi  #C #COMPILE FOR EACH ITEM
                 blank: false
 
 
-          
+

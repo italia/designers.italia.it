@@ -8,7 +8,7 @@ const TabButton = (props) => {
         instance = new TabBI(document.getElementById(props.id))
     });
     return (
-        <a {...props} onClick={() => {instance.show()}}>{props.children}</a>
+        <a {...props} onClick={(e) => {e.preventDefault(); instance.show()}}>{props.children}</a>
     )
 }
 

@@ -16,9 +16,16 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
+  redirect_from:
+    - /kit/architettura-informazione
+    - /architettura-informazione
+    - /architettura-informativa
+    - /risorse-per-progettare/progettare/architettura-informazione
+    - /risorse-per-progettare/progettare/architettura-informativa
+    - /kit/information-architecture
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -52,7 +59,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -119,18 +126,6 @@ components:
      L’ottimizzazione SEO è possibile grazie a **interventi mirati sui contenuti dei siti web**, migliorarando **la trovabilità da parte degli utenti durante le ricerche online**. Con le risorse del kit potrai **definire e pianificare le attività di ottimizzazione per i motori di ricerca del tuo progetto digitale**.
     img: /images/risorse-per-progettare/icons/kit_architettura.svg #I
     alt: "" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -139,6 +134,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -149,6 +145,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -159,6 +156,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -166,6 +164,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -178,13 +177,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: "Architettura dell'informazione"
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Architettura informazione]
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -200,18 +195,8 @@ components:
           listItems: #M
             - url: "individua-i-contenuti/"
               label: "Individua i contenuti" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "organizza-i-contenuti/"
               label: Organizza i contenuti #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -220,11 +205,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit di architettura dell'informazione #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -233,11 +218,11 @@ components:
         - name: TextImageCta
           text: | #C
             Il modello interattivo che sta alla base di un punto di contatto digitale (o touchpoint) - per esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso.
-            
+
             L’architettura dell’informazione è la **struttura che organizza e classifica i contenuti** di un touchpoint e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di **individuare le modalità ed i percorsi** che condurranno l’utente a raggiungere i suoi obiettivi.
-            
+
             Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare una architettura dell'informazione che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva.
-  
+
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
@@ -248,14 +233,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -287,17 +272,6 @@ components:
           Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni che dovrebbe avere il futuro touchpoint digitale del servizio.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
         # CARD CHILDREN ACTION
       - title: Organizza i contenuti #C
@@ -311,14 +285,3 @@ components:
           L'attività di card sorting ti aiuta a raggruppare, ordinare e declinare i contenuti e le funzioni del tuo touchpoint in macro-categorie.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

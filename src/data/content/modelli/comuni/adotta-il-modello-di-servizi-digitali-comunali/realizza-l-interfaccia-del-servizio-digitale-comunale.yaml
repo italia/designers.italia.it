@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
         #size: sm
       #text: In breve
     #text: | #C
-      #Lorem **ipsum** 
+      #Lorem **ipsum**
   # img: /images/400x300.png #I
   # alt: descrizione immagine #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nel modello
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -161,7 +150,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Adotta il modello di servizi digitali comunali #C
-            url: "../" #M  
+            url: "../" #M
       #otherInfo:
         #items:
           #- title: Rispettando
@@ -175,6 +164,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +172,7 @@ components:
               color: "secondary"
             label: Developer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,20 +185,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Progettazione interfaccia
-          url: "#"
-          color: primary
-          size: lg
-        - label: Sviluppo interfaccia
-          url: "#"
-          color: primary
-          size: lg
-        - label: Adozione modelli
-          url: "#"
-          color: primary
-          size: lg
-      
+      tags: [Progettazione interfaccia,Sviluppo interfaccia,Adozione modelli]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -219,7 +198,7 @@ components:
       centered: true
       background: null
       #text: | #C
-        
+
       components:
 
         # TXT BLOCK
@@ -227,10 +206,10 @@ components:
           #title: A cosa servono h3 #C
           text: | #C
             I template HTML permettono di assemblare rapidamente le schermate necessarie alla fruizione del servizio da parte del cittadino. Seleziona i template relativi alla tipologia di flusso per il servizio che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie ad abilitare il flusso.
-            
+
             I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le Linee guida sull’accessibilità degli strumenti informatici. I template permettono di creare i servizi digitali di un Comune utilizzando qualsiasi tipo di soluzione tecnologica. Usano ed estendono, inoltre, il design system del Paese e la libreria di componenti di sviluppo Bootstrap Italia.
-            
-            
+
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -263,7 +242,7 @@ components:
             actions:
 
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  https://github.com/italia/design-comuni-pagine-statiche #M
+                url: https://github.com/italia/design-comuni-pagine-statiche #M
                 ariaLabel: "Repository GitHub: Sorgenti dei template HTML per i servizi digitali comunali (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-          
+

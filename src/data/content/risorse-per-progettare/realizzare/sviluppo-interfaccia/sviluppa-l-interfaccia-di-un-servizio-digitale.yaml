@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
     #     size: sm
     #   text: In breve
     text: | #C
-      Lorem **ipsum** 
+      Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_webDevelopment_sviluppa.svg #I
     alt: "Interesse pubblico, codice pubblico" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase #C
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Developer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,20 +186,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Interfaccia utente
-          url: "#"
-          color: primary
-          size: lg
-        - label: Prototipazione
-          url: "#"
-          color: primary
-          size: lg
-        # - label: Argomento
-        #   url: "#"
-        #   color: primary
-        #   size: lg
-      
+      tags: [Interfaccia utente,Prototipazione]
+
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -220,16 +201,16 @@ components:
       background: null
       text: | #C
          #Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
-         
+
       components:
 
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
             Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
-            
+
             Le librerie ti forniscono **componenti open-source pronti all’uso**: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.
- 
+
         # TXT BLOCK
         - name: TextImageCta
           title: Bootstrap Italia e React #C
@@ -278,5 +259,5 @@ components:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://github.com/italia/design-react-kit/ #M
                 ariaLabel: "Repository GitHub: React Kit (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
-                blank: true 
-   
+                blank: true
+

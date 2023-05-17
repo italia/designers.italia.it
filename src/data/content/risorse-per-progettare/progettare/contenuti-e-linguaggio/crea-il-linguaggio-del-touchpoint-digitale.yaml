@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
         #size: sm
       #text: In breve
     #text: | #C
-      #Lorem **ipsum** 
+      #Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_linguaggio_individua.svg #I
     alt: "" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase #C
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,20 +186,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Linguaggio
-          url: "#"
-          color: primary
-          size: lg
-        - label: Tono di voce
-          url: "#"
-          color: primary
-          size: lg
-        - label: Co-progettazione
-          url: "#"
-          color: primary
-          size: lg
-      
+      tags: [Linguaggio,Tono di voce,Co-progettazione]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -230,7 +210,7 @@ components:
             - le indicazioni per svolgere un workshop che coinvolge utenti e stakeholder nel percorso iniziale di content design e linguaggio di un servizio;
             - il riferimento alla Guida alla linguaggio della Pubblica Amministrazione, che ti offre regole, indicazioni e suggerimenti per l'uso del linguaggio a seconda dei vari contesti d'uso del servizio digitale;
             - un esercizio di scrittura collaborativa.
-            
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -250,11 +230,11 @@ components:
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing #M
+                url: https://docs.google.com/presentation/d/1x5wtOl0D5LZEugRAp7-XwNdcyAV_ScG9O2e9Jy2Pnbg/edit?usp=sharing #M
                 ariaLabel: "Presentazione Google: Workshop sul linguaggio (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url:  /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Workshop-sul-linguaggio.odp #M
+                url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Workshop-sul-linguaggio.odp #M
                 ariaLabel: "ODP Workshop sul linguaggio" #C #COMPILE FOR EACH ITEM
                 blank: false
 
@@ -267,7 +247,7 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html #M
-                ariaLabel: Guida al linguaggio della Pubblica Amministrazione (si apre in una nuova finestra) #C 
+                ariaLabel: Guida al linguaggio della Pubblica Amministrazione (si apre in una nuova finestra) #C
                 blank: true
 
           - label: Esercizio di scrittura collaborativa #C
@@ -285,4 +265,4 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Esercizio-di-editing-collaborativo.odt #M
                 ariaLabel: "ODT Esercizio di scrittura collaborativa" #C #COMPILE FOR EACH ITEM
                 blank: false
-          
+

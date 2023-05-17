@@ -26,9 +26,9 @@ import dsNav from "../data/dsnav.yaml"
 
 
 const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
-	return (
+  return (
     <div id="app">
-      <HeaderPre data={HeaderData.headerPre}/>
+      <HeaderPre data={HeaderData.headerPre} location={location}/>
       <Skiplinks data={skipLinksData.skiplinks}/>
       <Header data={HeaderData}>
         <HeaderSlim data={HeaderData.headerSlim}/>
@@ -39,7 +39,7 @@ const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
       </Header>
       <div className="bg-light">
         <div className="container-xxl">
-          <div className="row">
+          <div className="row design-system">
             <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
               { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}

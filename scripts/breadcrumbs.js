@@ -17,6 +17,10 @@ const getCrumbLabelUpdates = () => {
         }
       }
     }
+    paths.push({ 
+      pathname: "/design-system/componenti/utili-per",
+      crumbLabel: "Utili per"
+    })
   });
   return paths
 };

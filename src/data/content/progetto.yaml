@@ -73,18 +73,6 @@ components:
     # img: /images/400x300.png #I
     # alt: alt lorem ipsum #C
     imgRatio: 4x3
-    share: #AUTO
-      btnId: shareButtonHero
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-white mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: light
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -96,15 +84,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: white
-      chips: #C
-        - label: Human centered design
-          url: "#"
-          color: primary
-          size: lg
-        - label: Cultura progettuale
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Human centred design,Cultura progettuale]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -122,25 +102,10 @@ components:
           listItems: #AUTO
             - url: "visione-e-missione/" #M
               label: "Visione e missione" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "formazione-e-disseminazione/" #M
               label: "Formazione e disseminazione" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "storia/" #M
               label: "Storia" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # INTRO

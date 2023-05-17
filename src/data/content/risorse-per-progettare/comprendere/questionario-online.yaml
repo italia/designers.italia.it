@@ -16,9 +16,14 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
+  redirect_from:
+    - /kit/questionario-online
+    - /questionario-online
+    - /risorse-per-progettare/comprendere/questionario
+
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -52,7 +57,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +121,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-     Questo kit dedicato ai questionari comprende modelli pre-organizzati per aiutarti nelle attività di **pianificazione, esecuzione e analisi di una ricerca** per raccogliere informazioni preziose su **come le persone percepiscono il servizio digitale** che stai progettando o ri-progettando. 
+     Questo kit dedicato ai questionari comprende modelli pre-organizzati per aiutarti nelle attività di **pianificazione, esecuzione e analisi di una ricerca** per raccogliere informazioni preziose su **come le persone percepiscono il servizio digitale** che stai progettando o ri-progettando.
     img: /images/risorse-per-progettare/icons/kit_questionario.svg #I
     alt: "Modelli utili a capire" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -139,6 +132,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -149,6 +143,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -159,6 +154,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -166,6 +162,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -178,21 +175,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Ricerca utente
-          url: "#"
-          color: primary
-          size: lg
-        - label: Questionari
-          url: "#"
-          color: primary
-          size: lg
-        - label: Esperienza utente
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Ricerca utente,Questionari,Esperienza utente]
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -208,18 +193,8 @@ components:
           listItems: #M
             - url: "pianifica-l-indagine/"
               label: "Pianifica l'indagine" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "sintetizza-i-risultati-della-ricerca/"
               label: Sintetizza i risultati della ricerca #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -228,11 +203,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit di questionario online #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -242,7 +217,7 @@ components:
           text: | #C
             I questionari online consentono di raccogliere informazioni dalle persone in maniera strutturata, così da poterle elaborare quantitativamente. Il vantaggio chi progetta è poter **raggiungere una grande quantità di persone contemporaneamente poiché la somministrazione avviene online** e attraverso i canali di comunicazione digitale più consoni a raggiungere i partecipanti.
 
-            Il kit dedicato ai questionari online ti offre modelli già pronti all’uso per la pianificazione, l’esecuzione e l’analisi delle attività relative a questa tipologia di ricerca utente.  
+            Il kit dedicato ai questionari online ti offre modelli già pronti all’uso per la pianificazione, l’esecuzione e l’analisi delle attività relative a questa tipologia di ricerca utente.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -254,14 +229,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -293,17 +268,6 @@ components:
           Definisci gli obiettivi dell’indagine e inizia a progettare il questionario riflettendo sulla strategia migliore per estrapolare le informazioni di cui hai bisogno.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
         # CARD CHILDREN ACTION
       - title: Sintetizza i risultati della ricerca #C
@@ -317,14 +281,3 @@ components:
           Analizza le informazioni raccolte con tecniche quanti-qualitative e rielaborale in maniera rilevante per lo scopo della ricerca.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

@@ -16,9 +16,16 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
+  redirect_from:
+    - /kit/interviste-utenti-stakeholder
+    - /interviste-soggetti-coinvolti
+    - /risorse-per-progettare/comprendere/interviste-stakeholder
+    - /risorse-per-progettare/comprendere/interviste
+    - /kit/user-interviews
+
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -52,7 +59,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -119,18 +126,6 @@ components:
      Con gli strumenti del kit approfondisci il contesto e l’esperienza d’uso, **raccogliendo informazioni direttamente dai soggetti coinvolti** e sfruttandole per **rendere più efficace il tuo servizio.**
     img: /images/risorse-per-progettare/icons/kit_interviste.svg #I
     alt: "Attivare dialoghi con le persone" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -139,6 +134,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -149,6 +145,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -159,6 +156,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -166,6 +164,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -178,21 +177,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Ricerca utente
-          url: "#"
-          color: primary
-          size: lg
-        - label: Interviste utente
-          url: "#"
-          color: primary
-          size: lg
-        - label: Analisi del contesto
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Ricerca utente,Interviste utente,Analisi del contesto]
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -208,25 +195,10 @@ components:
           listItems: #M
             - url: "pianifica-le-interviste/"
               label: Pianifica le interviste #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "predisponi-il-protocollo/"
               label: Predisponi il protocollo #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "rielabora-le-informazioni/"
               label: Rielabora le informazioni #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -235,11 +207,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit per le interviste ai soggetti coinvolti #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -250,7 +222,7 @@ components:
             **Raccogliere informazioni direttamente sul campo**, coinvolgendo le persone e gli stakeholder toccati dal tuo servizio, è un vantaggio da non sottovalutare.
 
             Grazie al kit, puoi **programmare le attività** da svolgere, **definire la modalità di somministrazione delle interviste e la tipologia di protocolli** da seguire per persone che usano il servizio e stakeholder. E, ancora, **stabilire le caratteristiche che le persone intervistate dovranno avere** per rappresentare appropriatamente il target d'utenza del servizio o le figure coinvolte nella sua erogazione. Infine, **predisporre l’insieme di domande da sottoporre.**
-            
+
             Successivamente, puoi **sintetizzare le tue conclusioni** in maniera strutturata per presentarle agli stakeholder di progetto e produrre una relazione mirata.
 
             Tutte le risorse ti aiuteranno ad evidenziare **le necessità e le criticità** che incontrano le persone e stakeholder interessate dal servizio.
@@ -265,14 +237,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/interviste.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -304,17 +276,6 @@ components:
           Definisci gli obiettivi della ricerca e i temi da investigare: in questo modo sarà più semplice capire quali criteri seguire per strutturare il questionario di selezione dei partecipanti.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
         # CARD CHILDREN ACTION
       - title: Predisponi il protocollo #C
@@ -325,20 +286,9 @@ components:
         iconImgAlt: "" #C
         url: "predisponi-il-protocollo/" #M
         text: | #C
-          Scegli la struttura e mantieni il focus. Rendi fruttuosa la conversazione, defininendo i macro temi da affrontare e le domande per comprendere la percezione e le aspettative della persona intervistata rispetto al tuo servizio. 
+          Scegli la struttura e mantieni il focus. Rendi fruttuosa la conversazione, defininendo i macro temi da affrontare e le domande per comprendere la percezione e le aspettative della persona intervistata rispetto al tuo servizio.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
         # CARD CHILDREN ACTION
       - title: Rielabora le informazioni #C
@@ -349,17 +299,6 @@ components:
         iconImgAlt: "" #C
         url: "rielabora-le-informazioni/" #M
         text: | #C
-          Schematizza, categorizza e classifica le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista. 
+          Schematizza, categorizza e classifica le informazioni raccolte riportando in maniera sintetica i resoconti verbali dei partecipanti per analizzarli sotto diversi punti di vista.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
    #     size: sm
    #   text: In breve
    # text: | #C
-   #   Lorem **ipsum** 
+   #   Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_UI_InterfacciaUtente.svg #I
     alt: "Il design è una questione di attenzione" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase #C
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,20 +186,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Interfaccia utente
-          url: "#"
-          color: primary
-          size: lg
-        - label: Prototipazione
-          url: "#"
-          color: primary
-          size: lg
-        - label: Argomento
-          url: "#"
-          color: primary
-          size: lg
-      
+      tags: [Interfaccia utente,Prototipazione]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -218,26 +198,22 @@ components:
       menu: false
       centered: true
       background: null
-      text: | #C
-         #La realizzazione dell’interfaccia in alta fedeltà (in inglese high-fidelity, abbr. hi-fi) è una delle fasi finali della realizzazione del prodotto. Si concentra su aspetti visivi di progettazione grafica, aggiungendo dettagli, stile grafico e animazioni. 
-         
       components:
 
-        
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
             La realizzazione dell’interfaccia in alta fedeltà (in inglese high-fidelity, abbr. hi-fi) è una delle fasi finali della realizzazione del prodotto. Si concentra su aspetti visivi di progettazione grafica, aggiungendo dettagli, stile grafico e animazioni.
-            
+
             L’interfaccia viene costruita tenendo come punto di riferimento il wireframe in bassa fedeltà (in inglese, low-fi) precedentemente creato. La struttura generale viene trasformata e arricchita in modo da dare una resa reale del prodotto finale.
-         
+
             È utile rendere interattive le schermate e crearne prototipi per svolgere test di usabilità e confermare o modificare le scelte fatte.
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Lo UI kit #C
+          title: UI Kit Italia #C
           text: | #C
-            Lo UI kit è una libreria di componenti già pronti che puoi assemblare e adattare per costruire l’interfaccia di un servizio digitale. Ogni componente ha un numero di proprietà, come la forma e il colore, che possono essere combinati o variati per comunicare un diverso significato.
+            UI Kit Italia, una tra le principali risorse del design system del Paese, è una libreria di componenti già pronti che puoi assemblare e adattare per progettare e prototipare l’interfaccia di un sito o servizio digitale. Ogni componente ha un numero di proprietà, come la forma e il colore, che possono essere combinati o variati per comunicare un diverso significato.
 
   # ///////////////////
   # RESOURCES
@@ -250,29 +226,23 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Nuovo UI kit - versione 3.0.0-beta.1 #C
+          - label: UI Kit Italia v3 #C
             srBefore: "File Figma: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: La libreria dei componenti per realizzare l’interfaccia utente, coerente con Bootstrap Italia #C
+            text: La libreria di fondamenti e componenti per progettare e realizzare l’interfaccia utente, coerente con Bootstrap Italia #C
             url: https://www.figma.com/community/file/1105848677422572920 #M
             blank: true
             actions:
               - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://www.figma.com/community/file/1105848677422572920 #M
-                ariaLabel: "File Figma: Nuovo UI kit - versione 3.0.0-beta.1 (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                ariaLabel: "UI Kit Italia v3 - Figma (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-          - label: Design UI kit - legacy #C
-            srBefore: "Repository GitHub: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: La repository GitHub con componenti e template ufficiali del design system della Pubblica Amministrazione Italiana #C
-            url: https://github.com/italia/design-ui-kit #M
-            blank: true
-            actions:
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://github.com/italia/design-ui-kit #M
-                ariaLabel: "Repository GitHub: Design UI kit - Legacy (si apre in una nuova finestra)" #C 
+                ariaLabel: "Repository GitHub: UI Kit Italia v3 - Altri formati e changelog (si apre in una nuova finestra)" #C
                 blank: true
 
 
 
-   
+
+

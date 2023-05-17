@@ -16,9 +16,15 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
+  redirect_from:
+    - /kit/sviluppo-interfaccia
+    - /sviluppo-interfaccia
+    - /kit/web-toolkit
+    - /kit/web-development
+    - /kit/web-development-kit
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -52,7 +58,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -119,18 +125,6 @@ components:
       Lo svilupo dell’interfaccia è la fase finale della realizzazione di un servizio digitale. Le risorse di questo kit ti aiutano ad **assemblare velocemente il front-end** di un servizio digitale, tramite **componenti, soluzioni di design e codice già validati**.
     img: /images/risorse-per-progettare/icons/kit_webDevelopment.svg #I
     alt: "Interesse pubblico, codice pubblico" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -139,6 +133,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -149,6 +144,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -159,6 +155,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -166,6 +163,7 @@ components:
               color: "secondary"
             label: Developer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -178,21 +176,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Design system
-          url: "#"
-          color: primary
-          size: lg
-        - label: Interfaccia utente
-          url: "#"
-          color: primary
-          size: lg
-        - label: Sviluppo interfaccia
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -208,11 +194,6 @@ components:
           listItems: #M
             - url: "sviluppa-l-interfaccia-di-un-servizio-digitale/"
               label: Sviluppa l’interfaccia di un servizio digitale #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -221,11 +202,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit sviluppo interfaccia #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -235,9 +216,9 @@ components:
           # title: A cosa servono h3 #C
           text: | #C
             Il kit di sviluppo interfaccia ti permette di realizzare velocemente il front-end di un servizio digitale per essere utilizzato dagli utenti. Le risorse comprendono il riuso di componenti, soluzioni di design e di codice sviluppato già pronti, che sono il risultato di discussioni e decisioni già prese e validate.
-            
+
             L’uso di queste risorse favorisce una riduzione dei costi di produzione e dei costi di assistenza agli utenti, poiché l’adozione di standard incrementa la facilità d’uso di un servizio e di apprendimento in autonomia.
-        
+
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
@@ -248,14 +229,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
@@ -282,14 +263,3 @@ components:
           Assembla velocemente il front-end del servizio digitale tramite componenti, soluzioni di design e codice già validati.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButton
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level4
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -123,22 +123,10 @@ components:
     #     size: sm
     # text: In breve
     # text: | #C
-    #   Lorem **ipsum** 
+    #   Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_analytics_usa.svg #I
     alt: "Usa le soluzioni migliori" #C
     imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -147,6 +135,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -165,6 +154,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -175,6 +165,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -182,6 +173,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -194,16 +186,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Data driven design
-          url: "#"
-          color: primary
-          size: lg
-        - label: Analytics
-          url: "#"
-          color: primary
-          size: lg
-      
+      tags: [Data driven design,Analytics]
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -222,10 +206,10 @@ components:
         - name: TextImageCta
           # title: | #C
           text: | #C
-            Esistono numerosi software open source per la **raccolta e l'analisi dei dati di traffico di siti e servizi digitali**. In questa scheda ti proponiamo una lista di alcune fra le principali piattaforme che puoi utilizzare per **ottenere informazioni statistiche relative all'uso della tua soluzione digitale, nel rispetto della normativa vigente**. 
-            
+            Esistono numerosi software open source per la **raccolta e l'analisi dei dati di traffico di siti e servizi digitali**. In questa scheda ti proponiamo una lista di alcune fra le principali piattaforme che puoi utilizzare per **ottenere informazioni statistiche relative all'uso della tua soluzione digitale, nel rispetto della normativa vigente**.
+
             A seguito della raccolta dei dati, della loro segmentazione, interpretazione e condivisione con gli stakeholder, potrai facilitare e  orientare le decisioni che riguardano design e re-design dei servizi, in ottica data-driven.
-            
+
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -258,9 +242,9 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://matomo.org/guides/ #M
-                ariaLabel: Guida utente di Matomo analytics (si apre in una nuova finestra, risorsa in inglese) #C 
+                ariaLabel: Guida utente di Matomo analytics (si apre in una nuova finestra, risorsa in inglese) #C
                 blank: true
-   
+
       - simpleList: true
         title: Plausible analytics #C
         headingLevel: 3
@@ -286,5 +270,5 @@ components:
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://plausible.io/docs #M
-                ariaLabel: Guida utente di Plausible analytics  (si apre in una nuova finestra, risorsa in inglese) #C 
+                ariaLabel: Guida utente di Plausible analytics  (si apre in una nuova finestra, risorsa in inglese) #C
                 blank: true

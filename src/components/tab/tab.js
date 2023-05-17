@@ -8,6 +8,7 @@ import ContentSelectItem from "../content-select/components/content-select-item/
 import TabButton from "./tabbutton"
 
 const Tab = ({
+  viewerData,
   componentSource,
   tab01,
   tab02,
@@ -34,24 +35,26 @@ const Tab = ({
         <div className="tab-pane py-5 fade show active" id="card-simpletab1" role="tabpanel" aria-labelledby="card-simple1-tab">
 
           {tab01.variants && <ContentSelect label="Variante" {...tab01.componentVariant}>
-              { tab01.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
-                  <ComponentView
-                    name={v.name}
-                    source={componentSource}
-                    content={v.content}
-                    viewer={tab01.componentVariant.viewer}
-                    idPrefix={tab01.componentVariant.idPrefix}
-                    accordionLabel={tab01.componentVariant.accordionLabel}
-                    accordionUrl={tab01.componentVariant.accordionUrl}
-                    accordionSrLabel={tab01.componentVariant.accordionSrLabel}
-                    accordionOpen={tab01.componentVariant.accordionOpen}
-                  />
-              </ContentSelectItem>) }
-            </ContentSelect>}
+            {tab01.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
+              <ComponentView
+                name={v.name}
+                source={componentSource}
+                content={v.content}
+                idPrefix="use-preview-"
+                viewerHeight={tab01.componentVariant.viewerHeight}
+                accordionUrl={tab01.componentVariant.accordionUrl}
+                accordionOpen={tab01.componentVariant.accordionOpen}
+                accordionShow={tab01.componentVariant.accordionShow}
+                viewer={viewerData.viewer}
+                accordionLabel={viewerData.accordionLabel}
+                accordionSrLabel={viewerData.accordionSrLabel}
+              />
+            </ContentSelectItem>)}
+          </ContentSelect>}
 
-          {tab01.sectionsEditorial && tab01.sectionsEditorial.map((section,index) => {
-            return(
-              <SectionEditorial key={"sectionEditorialTab01-"+index} {...section}/>
+          {tab01.sectionsEditorial && tab01.sectionsEditorial.map((section, index) => {
+            return (
+              <SectionEditorial key={"sectionEditorialTab01-" + index} {...section} />
             )
           })}
 
@@ -59,24 +62,26 @@ const Tab = ({
         <div className="tab-pane py-5 fade" id="card-simpletab2" role="tabpanel" aria-labelledby="card-simple2-tab">
 
           {tab02.variants && <ContentSelect {...tab02.componentVariant}>
-              { tab02.variants.map((v, idx) => <ContentSelectItem label="Variante" key={'item-' + idx} name={v.name}>
+            {tab02.variants.map((v, idx) => <ContentSelectItem label="Variante" key={'item-' + idx} name={v.name}>
               <ComponentView
-                  name={v.name}
-                  source={componentSource}
-                  content={v.content}
-                  viewer={tab02.componentVariant.viewer}
-                  idPrefix={tab02.componentVariant.idPrefix}
-                  accordionLabel={tab02.componentVariant.accordionLabel}
-                  accordionUrl={tab02.componentVariant.accordionUrl}
-                  accordionSrLabel={tab02.componentVariant.accordionSrLabel}
-                  accordionOpen={tab02.componentVariant.accordionOpen}
-                />
-              </ContentSelectItem>) }
-            </ContentSelect>}
+                name={v.name}
+                source={componentSource}
+                content={v.content}
+                idPrefix="des-preview-"
+                viewerHeight={tab02.componentVariant.viewerHeight}
+                accordionUrl={tab02.componentVariant.accordionUrl}
+                accordionOpen={tab02.componentVariant.accordionOpen}
+                accordionShow={tab02.componentVariant.accordionShow}
+                viewer={viewerData.viewer}
+                accordionLabel={viewerData.accordionLabel}
+                accordionSrLabel={viewerData.accordionSrLabel}
+              />
+            </ContentSelectItem>)}
+          </ContentSelect>}
 
-          {tab02.sectionsEditorial && tab02.sectionsEditorial.map((section,index) => {
-            return(
-              <SectionEditorial key={"sectionEditorialTab02-"+index} {...section}/>
+          {tab02.sectionsEditorial && tab02.sectionsEditorial.map((section, index) => {
+            return (
+              <SectionEditorial key={"sectionEditorialTab02-" + index} {...section} />
             )
           })}
 
@@ -84,24 +89,26 @@ const Tab = ({
         <div className="tab-pane py-5 fade" id="card-simpletab3" role="tabpanel" aria-labelledby="card-simple3-tab">
 
           {tab03.variants && <ContentSelect label="Variante" {...tab03.componentVariant}>
-              { tab03.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
-                <ComponentView
-                  name={v.name}
-                  source={componentSource}
-                  content={v.content}
-                  viewer={tab03.componentVariant.viewer}
-                  idPrefix={tab03.componentVariant.idPrefix}
-                  accordionLabel={tab03.componentVariant.accordionLabel}
-                  accordionUrl={tab03.componentVariant.accordionUrl}
-                  accordionSrLabel={tab03.componentVariant.accordionSrLabel}
-                  accordionOpen={tab03.componentVariant.accordionOpen}
-                />
-              </ContentSelectItem>) }
-            </ContentSelect>}
+            {tab03.variants.map((v, idx) => <ContentSelectItem key={'item-' + idx} name={v.name}>
+              <ComponentView
+                name={v.name}
+                source={componentSource}
+                content={v.content}
+                idPrefix="dev-preview-"
+                viewerHeight={tab03.componentVariant.viewerHeight}
+                accordionUrl={tab03.componentVariant.accordionUrl}
+                accordionOpen={tab03.componentVariant.accordionOpen}
+                accordionShow={tab03.componentVariant.accordionShow}
+                viewer={viewerData.viewer}
+                accordionLabel={viewerData.accordionLabel}
+                accordionSrLabel={viewerData.accordionSrLabel}
+              />
+            </ContentSelectItem>)}
+          </ContentSelect>}
 
-          {tab03.sectionsEditorial && tab03.sectionsEditorial.map((section,index) => {
-            return(
-              <SectionEditorial key={"sectionEditorialTab03-"+index} {...section}/>
+          {tab03.sectionsEditorial && tab03.sectionsEditorial.map((section, index) => {
+            return (
+              <SectionEditorial key={"sectionEditorialTab03-" + index} {...section} />
             )
           })}
 

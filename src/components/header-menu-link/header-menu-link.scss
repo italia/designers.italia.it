@@ -1,4 +1,3 @@
-
 @import "../../scss/bootstrap-breakpoints";
 
 $navigation-link-color: var(--color-primary) !default;
@@ -34,7 +33,7 @@ $navigation-link-active-bar-size: 3px;
         transition: all 0.3s;
       }
 
-      &[aria-expanded='true'] {
+      &[aria-expanded="true"] {
         .icon {
           transform: scaleY(-1);
         }
@@ -86,7 +85,7 @@ $navigation-link-active-bar-size: 3px;
         border-left: 0;
         border-color: $navigation-link-active-bar-color-desk;
         background: transparent;
-        color: $white
+        color: $white;
       }
 
       &.disabled {
@@ -116,7 +115,16 @@ $navigation-link-active-bar-size: 3px;
       &.dropdown-toggle.show:before {
         opacity: 1;
       }
-
     }
+  }
+  .it-header-sticky.is-sticky .nav-item button.nav-link {
+    font-size: 16px;
+  }
+}
+
+//Desktop  --------------------------------------------------------------------------------------
+@include media-breakpoint-up(xl) {
+  .it-header-sticky.is-sticky .nav-item button.nav-link {
+    font-size: 18px;
   }
 }

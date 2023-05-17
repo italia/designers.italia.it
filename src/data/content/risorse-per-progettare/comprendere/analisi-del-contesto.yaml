@@ -16,9 +16,16 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
+  redirect_from:
+    - /kit/analisi-contesto
+    - /analisi-contesto
+    - /analisi-del-contesto
+    - /risorse-per-progettare/comprendere/analisi-contesto
+    - /kit/ecosystem-map
+    
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
@@ -52,7 +59,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +123,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Analizzare il contesto significa **conoscere i fattori che influenzano la fruizione del servizio.** Con gli strumenti di questo kit hai il **vantaggio di poter analizzare in modo strutturato** l’ambito del servizio che stai progettando. 
+      Analizzare il contesto significa **conoscere i fattori che influenzano la fruizione del servizio.** Con gli strumenti di questo kit hai il **vantaggio di poter analizzare in modo strutturato** l’ambito del servizio che stai progettando.
     img: /images/risorse-per-progettare/icons/kit_analisiContesto.svg #I
     alt: "L'utente al centro del contesto" #C
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -139,6 +134,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -149,6 +145,7 @@ components:
       otherInfo:
         items:
           - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
             icon:
               icon: "sprites.svg#it-pa"
               size: "sm"
@@ -159,6 +156,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -166,6 +164,7 @@ components:
               color: "secondary"
             label: Designer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -178,17 +177,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Analisi del contesto
-          url: "#"
-          color: primary
-          size: lg
-        - label: Progettazioni servizi
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Analisi del contesto,Progettazione servizi]
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -204,11 +195,6 @@ components:
           listItems: #M
             - url: "schematizza-il-contesto-d-uso/"
               label: Schematizza il contesto d'uso #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -217,11 +203,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: A cosa serve il kit di analisi del contesto #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -242,14 +228,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
@@ -281,14 +267,3 @@ components:
           Identifica le figure con cui l’utente potrebbe interagire e comprendi l’impatto che potrebbero avere sia sul progetto che sul cittadino. Inoltre, puoi schematizzare le relazioni tra attori e touchpoint coinvolti.
         tag:
           label: Attività del kit #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true

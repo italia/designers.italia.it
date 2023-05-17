@@ -4,6 +4,7 @@ import SimpleCta from "../simple-cta/simple-cta"
 import "./text-image-cta.scss"
 
 import ImageResponsive from "../image-responsive/image-responsive"
+import ContentCollapse from "../content-collapse/contentCollapse"
 
 const TextImageCta =({
   title,
@@ -14,7 +15,10 @@ const TextImageCta =({
   alt,
   specular,
   ctas,
-  noSpace
+  noSpace,
+  moreButton,
+  moreButtonClose,
+  moreText
 }) => {
 
 
@@ -56,6 +60,9 @@ const TextImageCta =({
         {title && <HLevel className="/*mb-3*/">{title}</HLevel>}
         {lead && <p className="lead font-sans-serif">{lead}</p>}
         {text && <ReactMarkdown>{text}</ReactMarkdown>}
+        {moreButton && <ContentCollapse label={moreButton} labelClose={moreButtonClose}>
+                  { moreText }
+                </ContentCollapse>}
         {ctaItems && <div className="ctas mt-4 d-md-flex">{ctaItems}</div>}
       </div>
     </div>

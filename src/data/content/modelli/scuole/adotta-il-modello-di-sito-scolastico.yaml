@@ -16,7 +16,7 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   template:
     name: level3
 
@@ -52,7 +52,7 @@ lastUpdate:
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
-# ———————————————————————————————————————————— 
+# ————————————————————————————————————————————
 kangaroo:
   navposition:
     id: kangEnd
@@ -116,21 +116,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Le attività ti guidano a **impostare il lavoro da un punto di vista organizzativo e ti supportano nella progettazione e nello sviluppo del sito scolastico**, tenendo conto di aspetti importanti come i requisiti tecnici per la corretta adozione del modello. Le risorse ti permettono di comprendere e impostare la struttura del sito, creare l’interfaccia grafica, migrare e gestire correttamente i contenuti. 
+      Le attività ti guidano a **impostare il lavoro da un punto di vista organizzativo e ti supportano nella progettazione e nello sviluppo del sito scolastico**, tenendo conto di aspetti importanti come i requisiti tecnici per la corretta adozione del modello. Le risorse ti permettono di comprendere e impostare la struttura del sito, creare l’interfaccia grafica, migrare e gestire correttamente i contenuti.
     img: /images/modelli/scuole.png
     alt: ""
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -139,6 +127,7 @@ components:
       navposition:
         items:
           - title: Ti trovi nel modello
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
@@ -159,6 +148,7 @@ components:
       personalInfo:
          items: #C
           - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
               icon: "sprites.svg#it-user"
               size: "sm"
@@ -166,6 +156,7 @@ components:
               color: "secondary"
             label: Designer, Developer #C
           - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
@@ -178,21 +169,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      chips: #C
-        - label: Architettura informazione
-          url: "#"
-          color: primary
-          size: lg
-        - label: Progettazione contenuti
-          url: "#"
-          color: primary
-          size: lg
-        - label: Siti delle scuole
-          url: "#"
-          color: primary
-          size: lg
+      tags: [Architettura informazione,Progettazione contenuti,Siti delle scuole]
 
-      # KANGAROO: CHILDREN SHORTCUTS 
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -208,32 +187,12 @@ components:
           listItems: #M
             - url: "comprendi-lo-stato-dell-arte/"
               label: "Comprendi lo stato dell'arte" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "definisci-architettura-e-contenuti/"
               label: Definisci architettura e contenuti #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "realizza-l-interfaccia-del-sito-scolastico/"
               label: "Realizza l'interfaccia" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
             - url: "valuta-l-adesione-al-modello-di-sito-scolastico/"
               label: "Valuta l'adesione al modello" #C
-              iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              icon:
-                icon: sprites.svg#it-arrow-right
-                color: primary
-                size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -242,11 +201,11 @@ components:
 
     # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - title: Il modello di sito per le scuole #C
       menu: false
       centered: true
-      background: null  
+      background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
@@ -255,12 +214,12 @@ components:
         - name: TextImageCta
           title: A cosa serve #C
           text: | #C
-            Il modello permette di **creare siti web scolastici** che rispondono ai bisogni della comunità scolastica: **chiari, semplici da usare e navigare**. 
-            
+            Il modello permette di **creare siti web scolastici** che rispondono ai bisogni della comunità scolastica: **chiari, semplici da usare e navigare**.
+
             Lo scopo del modello di sito è fornire agli utenti un chiaro punto di riferimento per trovare con facilità le informazioni di cui hanno bisogno.
-            
+
             L’adozione del modello permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo agli utenti un’**esperienza coerente tra le varie amministrazioni**.
-            
+
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -278,14 +237,14 @@ components:
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-              
+
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -294,20 +253,20 @@ components:
           title: La conformità al modello #C
           text: | #C
             I criteri di conformità guidano alla corretta adozione del modello in termini di esperienza utente, sicurezza, performance e rispetto della normativa. Sono stati definiti per assicurare l’aderenza ai principi contenuti nelle Linee guida di design per i siti internet e i servizi digitali della PA.
-            
+
             Gli sviluppatori possono valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità con l’App di valutazione dell’adesione al modello Comuni.
           ctas:
           - label: Vai ai criteri di conformità #C
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html #M
             blank: true #M #C true if new tab for external links
-            icon: 
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
-              addonClasses: ms-2                  
+              addonClasses: ms-2
 
 
   # ///////////////////
@@ -336,17 +295,6 @@ components:
           Definisci gli obiettivi del progetto, stabilisci il perimetro di lavoro e individua le risorse necessarie
         tag:
           label: Attività del modello #C
-        share: #AUTO
-          btnId: shareButtonCard1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       # CARD CHILDREN ACTION
       - title: 2. Definisci architettura e contenuti #C
@@ -360,17 +308,6 @@ components:
           Imposta la struttura informativa del sito scolastico e organizza la migrazione dei contenuti
         tag:
           label: Attività del modello #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
 
       # CARD CHILDREN ACTION
       - title: "3. Realizza l’interfaccia" #C
@@ -384,18 +321,7 @@ components:
           Assembla l’interfaccia web del sito scolastico con i template HTML o i temi per CMS
         tag:
           label: Attività del modello #C
-        share: #AUTO
-          btnId: shareButtonCard3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-                  
+
       # CARD CHILDREN ACTION
       - title: "4. Valuta l’adesione al modello" #C
         imgRatio: 16x9
@@ -408,32 +334,21 @@ components:
           Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento
         tag:
           label: Attività del modello #C
-        share: #AUTO
-          btnId: shareButtonCard3
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true            
-            
+
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
-  
+
        # —
     # EDITORIAL #C #I
-    # —   
+    # —
     - menu: false
       centered: true
       background: light
       title: La community di riferimento #C
       text: | #C
-        Scopri i canali dove confrontarti sulle risorse del modello 
+        Scopri i canali dove confrontarti sulle risorse del modello
       components:
 
         # TXT + IMG + CTA BLOCK
@@ -449,14 +364,14 @@ components:
             url: https://forum.italia.it/c/design/modello-scuole/ #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-        
+
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/Slack.svg #I
@@ -464,20 +379,20 @@ components:
           specular: true
           #title: ciao
           text: |
-            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole 
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole
           ctas:
           - label: Vai su Slack #C
             url: https://developersitalia.slack.com/archives/CQ7J0KANT #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-        
+
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/Github.svg #I
@@ -491,16 +406,16 @@ components:
             url: https://github.com/italia/  #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
-            icon: 
+            icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
               size: sm
               addonClasses: ms-2
-                       
 
 
 
 
-       
+
+
