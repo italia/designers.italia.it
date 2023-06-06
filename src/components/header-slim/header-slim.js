@@ -48,7 +48,7 @@ const HeaderSlim = ({ data }) => {
 									<div className="d-flex align-items-center" >
 										<div className="navbar-brand d-lg-none">
 											<span>
-												<a target="_blank" className="p-2" href="https://innovazione.gov.it" rel="noreferrer">DTD</a> + <a target="_blank" className="p-2" href="https://agid.gov.it" rel="noreferrer">AgID</a>
+												<a target="_blank" className="p-2" href="https://innovazione.gov.it" rel="noreferrer">DTD</a> + <a target="_blank" className="p-2" href="https://agid.gov.it" rel="noreferrer">AGID</a>
 											</span>
 										</div>
 										<a className="it-opener d-lg-none p-2 collapsed" onClick={collapseToggle} href={`#${data.nav.id}`} role="button" aria-expanded="false" aria-controls={data.nav.id} data-focus-mouse="false">
