@@ -124,7 +124,7 @@ components:
       big: true
       id: HL2a
       specular: false
-      padBottom: false
+      padBottom: false # last highlight must have padBottom: true!
       img: /images/home/designers-italia-responsive.jpg
       alt: ""
       headingLevel: 3
@@ -139,11 +139,11 @@ components:
       big: true
       id: HL2b
       specular: true
-      padBottom: false
+      padBottom: true # last highlight must have padBottom: true!
       img: /images/community/20230504-ui-kit-italia-official-release.png
       alt: "UI Kit Italia"
       headingLevel: 3
-      background: null
+      background: light
       buttons:
         - label: "Leggi la notizia"
           btnStyle: primary
