@@ -89,7 +89,7 @@ const ListItem = ({
 			if (icons.url === url) urlHidden = true
 			else urlHidden = false
 			//
-			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} aria-label={icons.ariaLabel} aria-hidden={urlHidden ? 'true' : undefined} key={"iconsaction-" + index} ><Icon {...icons}></Icon></Link>
+			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} rel={icons.blank ? 'noreferrer' : undefined} aria-label={icons.ariaLabel} aria-hidden={urlHidden ? 'true' : undefined} key={"iconsaction-" + index} ><Icon {...icons}></Icon></Link>
 		})
 		actionsRendered = <span className="it-multiple flex-shrink-0">{icons}</span>
 	}
@@ -108,11 +108,11 @@ const ListItem = ({
 	}
 	//-se esiste un link
 	if (url) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' ' + addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined} aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined} to={url} target={blank ? '_blank' : undefined} onClick={onClick}>{iconLeft ? iconRendered : ''}<span>{children}</span>{isActive}{iconRight ? iconRendered : ''}</Link>
+		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' ' + addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined} aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined} to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined} onClick={onClick}>{iconLeft ? iconRendered : ''}<span>{children}</span>{isActive}{iconRight ? iconRendered : ''}</Link>
 	}
 	//-se è all'interno di un dropdown
 	if (isDropdown) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' ' + addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined} to={url} target={blank ? '_blank' : undefined} onClick={onClick}>{(iconLeft && !disabled) ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered : ''}{isActive}</Link>
+		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' ' + addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined} to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined} onClick={onClick}>{(iconLeft && !disabled) ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered : ''}{isActive}</Link>
 	}
 	//- se è una lista semplice
 	if (simpleList) {
@@ -131,7 +131,7 @@ const ListItem = ({
 	}
 	//- se è una lista semplice con link
 	if (simpleList && url) {
-		listContent = <Link className={`list-item ${active ? ' active' : ''}`} to={url} target={blank ? '_blank' : undefined}>
+		listContent = <Link className={`list-item ${active ? ' active' : ''}`} to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>
 			{iconLeft ? iconRenderedSimpleList : ''}
 			{imgRendered}
 			{avatarRendered}
@@ -155,7 +155,7 @@ const ListItem = ({
 			{imgRendered}
 			{avatarRendered}
 			<div className="it-right-zone">
-				<Link to={url} target={blank ? '_blank' : undefined}>
+				<Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>
 					<span className="text">
 						{srBefore && <span className="visually-hidden">{srBefore}</span>}
 						{children}

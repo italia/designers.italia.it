@@ -75,7 +75,7 @@ const Card = (
       <div className={styles}>
         <div className={styleBody}>
           <div className="text-zone">
-            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
+            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
@@ -128,7 +128,7 @@ const Card = (
         </div>}
         <div className={styleBody}>
           <div className="text-zone">
-            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
+            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
             {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}

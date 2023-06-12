@@ -16,7 +16,7 @@ const SimpleCta = ({
 	}
 	return(
     <>
-		{ url && <Link className="simple-cta py-1 mb-3" to={url} target={blank ? '_blank' : undefined}>
+		{ url && <Link className="simple-cta py-1 mb-3" to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>
 			<span className="text">{children}</span>
 			<span className="visually-hidden">{screenReaderText}</span>
 			<Icon {...icon}></Icon>
