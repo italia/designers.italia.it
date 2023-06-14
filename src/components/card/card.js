@@ -11,8 +11,7 @@ import ShareButton from "../share-button/share-button"
 
 import "./card.scss"
 
-const Card = (
-  {
+function Card({
     cardEvent,
     title,
     titleSmall,
@@ -42,9 +41,8 @@ const Card = (
     fullHeight,
     rounded,
     buttonBottom
-  }
-) => {
-  let styles = 'di-card d-md-flex flex-md-column w-100'
+  }) {
+  const styles = 'di-card d-md-flex flex-md-column w-100'
     + `${fullHeight ? ' fullheight' : ''}`
     + `${rounded ? ' rounded' : ''}`
     + `${titleSmall ? ' title-small' : ''}`
@@ -53,17 +51,17 @@ const Card = (
     + `${textSerif ? ' text-serif' : ''}`
     + `${buttonBottom ? ' has-button' : ''}`
 
-  let imgStyle = 'img-wrapper ratio'
-    + `${imgRatio ? ' ratio-' + imgRatio : ''}`
+  const imgStyle = 'img-wrapper ratio'
+    + `${imgRatio ? ` ratio-${  imgRatio}` : ''}`
     + `${imgPlaceholder ? ' img-placeholder' : ''}`
     + `${iconImg ? ' icon-img' : ''}`
     + `${cardEvent ? ' mb-4 negative-margin' : ''}`
     + `${imgRounded ? ' rounded' : ''}`
 
-  let styleBody = 'di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between'
+  const styleBody = 'di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between'
     + `${rounded ? ' rounded' : ''}`
 
-  //heading level
+  // heading level
   let HLevel
   if (headingLevel) {
     HLevel = `h${headingLevel}`;
@@ -75,13 +73,13 @@ const Card = (
       <div className={styles}>
         <div className={styleBody}>
           <div className="text-zone">
-            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
+            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink} />}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
-            {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
+            {(externalLink && externalLink.url) && <SimpleCta {...externalLink} />}
             {moreInfo && <span className="more-info font-monospace">{moreInfo}</span>}
           </div>
-          {<div className="di-card-footer">
+          <div className="di-card-footer">
             <div className={imgStyle}>
               {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt} />}
               {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt} />}
@@ -91,28 +89,26 @@ const Card = (
                 <span className="month">{dateOverlay.year}</span>
               </div>}
               {iconOverlay && <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
-                <Icon {...iconOverlay}></Icon>
+                <Icon {...iconOverlay} />
               </div>}
             </div>
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">
               {tags && <div className="chip-container">
-                {tags.map((tag, index) => {
-                  return (
-                    <Chip key={"chip-" + index} label={tag} size="sm" />
-                  )
-                })}
+                {tags.map((tag, index) => (
+                    <Chip key={`chip-${  index}`} label={tag} size="sm" />
+                  ))}
               </div>}
               {tag && <div className="tag-container">
-                <Tag {...tag}></Tag>
+                <Tag {...tag} />
               </div>}
               { }
-              {url && <ShareButton url={url} title={title} small={true} />}
+              {url && <ShareButton url={url} title={title} small />}
             </div>
-          </div>}
+          </div>
         </div>
       </div>
     )
-  } else {
+  } 
     return (
       <div className={styles}>
         {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
@@ -123,41 +119,39 @@ const Card = (
             <span className="month">{dateOverlay.month}</span>
           </div>}
           {iconOverlay && <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
-            <Icon {...iconOverlay}></Icon>
+            <Icon {...iconOverlay} />
           </div>}
         </div>}
         <div className={styleBody}>
           <div className="text-zone">
-            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}</Link></HLevel>}
+            {HLevel && <HLevel><Link to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>{title}{(externalLink && !externalLink.url) && <SimpleCta {...externalLink} />}</Link></HLevel>}
             {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
-            {(externalLink && externalLink.url) && <SimpleCta {...externalLink}></SimpleCta>}
+            {(externalLink && externalLink.url) && <SimpleCta {...externalLink} />}
             {moreInfo && <span className="more-info font-monospace">{moreInfo}</span>}
             {buttonBottom &&
               <div className="button-wrapper mt-4">
-                <Button {...buttonBottom}></Button>
+                <Button {...buttonBottom} />
               </div>
             }
           </div>
           {(tag || tags || share || chips) && <div className="di-card-footer">
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">
               {tags && <div className="chip-container">
-                {tags.map((tag, index) => {
-                  return (
-                    <Chip key={"chip-" + index} label={tag} size="sm" color="secondary" />
-                  )
-                })}
+                {tags.map((tag, index) => (
+                    <Chip key={`chip-${  index}`} label={tag} size="sm" color="secondary" />
+                  ))}
               </div>}
               {tag && <div className="tag-container">
-                <Tag {...tag}></Tag>
+                <Tag {...tag} />
               </div>}
-              {url && <ShareButton url={url} title={title} small={true} />}
+              {url && <ShareButton url={url} title={title} small />}
             </div>
           </div>}
         </div>
       </div>
     )
-  }
+  
 }
 
 export default Card

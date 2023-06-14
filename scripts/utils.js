@@ -6,8 +6,8 @@ function searchInDir(startPath, filter, subfolders=true) {
         throw Error("No dir ", startPath);
     }
     const files = fs.readdirSync(startPath);
-    var collection = []
-    for (var i = 0; i < files.length; i++) {
+    let collection = []
+    for (let i = 0; i < files.length; i++) {
         const filename = path.join(startPath, files[i]);
         if (subfolders && fs.lstatSync(filename).isDirectory()) {
             collection = collection.concat(searchInDir(filename, filter, subfolders))
@@ -20,8 +20,8 @@ function searchInDir(startPath, filter, subfolders=true) {
 
 function walk(dir, callback) {
     const files = fs.readdirSync(dir)
-    files.forEach(function (file) {
-        var filepath = path.join(dir, file);
+    files.forEach((file) => {
+        const filepath = path.join(dir, file);
         const stats = fs.statSync(filepath);
         if (stats.isDirectory()) {
             walk(filepath, callback);

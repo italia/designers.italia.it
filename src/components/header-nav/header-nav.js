@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react"
+import { NavBarCollapsible } from "bootstrap-italia"
 import Button from "../button/button"
 import Icon from "../icon/icon"
 import HeaderMenu from "../header-menu/header-menu"
@@ -6,13 +7,12 @@ import HeaderMenuItem from "../header-menu-item/header-menu-item"
 import HeaderMenuLink from "../header-menu-link/header-menu-link"
 import DropdownMenu from "../dropdown-menu/dropdown-menu"
 import Megamenu from "../megamenu/megamenu"
-import { NavBarCollapsible } from "bootstrap-italia"
 import "./header-nav.scss"
 
-const HeaderNav = ({
+function HeaderNav({
   data,
   page
-}) => {
+}) {
 
   const collRef = useRef(null)
   const navBar = useRef(null)
@@ -28,7 +28,7 @@ const HeaderNav = ({
   })
 
 	return(
-	<div className={`it-header-navbar-wrapper {data.theme}`} id={data.id}>
+	<div className="it-header-navbar-wrapper {data.theme}" id={data.id}>
 		<div className="container-xxl">
 			<div className="row">
 				<div className="col-12">
@@ -37,7 +37,7 @@ const HeaderNav = ({
 							<Icon icon="sprites.svg#it-burger"/>
 						</Button>
 						<div className="navbar-collapsable" ref={collRef} id={data.nav.id}>
-							<div className="overlay"></div>
+							<div className="overlay" />
 							<div className="close-div">
 								<Button addonStyle="close-menu" ariaLabel={data.close.ariaLabel}>
 									<Icon icon="sprites.svg#it-close-big"/>
@@ -45,46 +45,40 @@ const HeaderNav = ({
 							</div>
 							<div className="menu-wrapper justify-content-lg-between">
 								<HeaderMenu>
-									{data.nav.voicesLeft.map((value,index)=>{
-										return(
-											<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
-												<HeaderMenuLink key={"item-menu-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
-												<DropdownMenu key={"dropDown-"+index} idMegamenu={value.idMegamenu}>
+									{data.nav.voicesLeft.map((value,index)=>(
+											<HeaderMenuItem key={`item-header-${index}`} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
+												<HeaderMenuLink key={`item-menu-${index}`} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page} />
+												<DropdownMenu key={`dropDown-${index}`} idMegamenu={value.idMegamenu}>
 													{value.megamenu &&
-														<Megamenu key={"mega-"+index} {...value.megamenu}></Megamenu>
+														<Megamenu key={`mega-${index}`} {...value.megamenu} />
 													}
 												</DropdownMenu>
 											</HeaderMenuItem>
-										)
-									})}
+										))}
 								</HeaderMenu>
 								<HeaderMenu>
-									{data.nav.voicesCenter.map((value,index)=>{
-										return(
-											<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
-												<HeaderMenuLink key={"item-menu-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
-												<DropdownMenu key={"dropDown-"+index} idMegamenu={value.idMegamenu}>
+									{data.nav.voicesCenter.map((value,index)=>(
+											<HeaderMenuItem key={`item-header-${index}`} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
+												<HeaderMenuLink key={`item-menu-${index}`} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page} />
+												<DropdownMenu key={`dropDown-${index}`} idMegamenu={value.idMegamenu}>
 													{value.megamenu &&
-														<Megamenu key={"mega-"+index} {...value.megamenu}></Megamenu>
+														<Megamenu key={`mega-${index}`} {...value.megamenu} />
 													}
 												</DropdownMenu>
 											</HeaderMenuItem>
-										)
-									})}
+										))}
 								</HeaderMenu>
 								<HeaderMenu>
-									{data.nav.voicesRight.map((value,index)=>{
-										return(
-											<HeaderMenuItem key={"item-header-"+index} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
-												<HeaderMenuLink key={"item-menu-"+index} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page}></HeaderMenuLink>
-												<DropdownMenu key={"dropDown-"+index} idMegamenu={value.idMegamenu}>
+									{data.nav.voicesRight.map((value,index)=>(
+											<HeaderMenuItem key={`item-header-${index}`} isDropDown={value.isDropDown} isMegaMenu={value.isMegaMenu}>
+												<HeaderMenuLink key={`item-menu-${index}`} isDropDown={value.isDropDown} label={value.label} idMegamenu={value.idMegamenu} page={page} />
+												<DropdownMenu key={`dropDown-${index}`} idMegamenu={value.idMegamenu}>
 													{value.megamenu &&
-														<Megamenu key={"mega-"+index} {...value.megamenu}></Megamenu>
+														<Megamenu key={`mega-${index}`} {...value.megamenu} />
 													}
 												</DropdownMenu>
 											</HeaderMenuItem>
-										)
-									})}
+										))}
 								</HeaderMenu>
 							</div>
 						</div>

@@ -335,26 +335,24 @@ module.exports = {
         // containing properties to index. The objects must contain the `ref`
         // field above (default: 'id'). This is required.
         normalizer: ({ data }) =>
-          data.allContent.edges.map((edge) => {
-            return {
+          data.allContent.edges.map((edge) => ({
               id: edge.node.id,
               template: edge.node.metadata?.template?.name,
-              relativePath: "/" + edge.node.relativePath,
+              relativePath: `/${  edge.node.relativePath}`,
               tags: edge.node.components?.hero?.kangaroo?.tags,
               path: `${edge.node.seo?.pathname}`,
               title: `${edge.node.components?.hero?.title}`,
               description: `${edge.node.seo?.description}`,
               tag: `${edge.node.components?.hero?.tag?.label}`,
               body:  `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}`
-                + ' ' + `${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}`
-                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
-                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
-                + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' ')
-                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.text).join(' ')
-                + ' ' + edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c => c.text)).join(' ')
-                + ' ' + edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.text)).join(' '),
-            }
-          }),
+                + ` ` + `${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}`
+                + ` ${  edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
+                 } ${  edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
+                 } ${  edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' ')
+                 } ${  edge.node.components?.sectionsEditorial?.map(s => s.text).join(' ')
+                 } ${  edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c => c.text)).join(' ')
+                 } ${  edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.text)).join(' ')}`,
+            })),
       },
     },
     {

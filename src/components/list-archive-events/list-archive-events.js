@@ -3,15 +3,15 @@ import * as React from "react"
 import "../../scss/styles.scss"
 import "../../js/globals"
 
-import ListItem from "../list-item/list-item"
-import Tag from "../tag/tag"
 import { useStaticQuery, graphql } from "gatsby"
 import classNames from "classnames"
+import ListItem from "../list-item/list-item"
+import Tag from "../tag/tag"
 
-const ListArchiveEvents = ({
+function ListArchiveEvents({
   background,
   noSpace,
-}) => {
+}) {
 
   const data = useStaticQuery(graphql`
     query {
@@ -64,7 +64,7 @@ const ListArchiveEvents = ({
     addonClasses: 'mt-1 flex-shrink-0 me-1 me-md-3'
   }
 
-  let styles = classNames(
+  const styles = classNames(
     'section-editorial',
   {
     [`bg-${background}`]: background, 
@@ -95,13 +95,13 @@ const ListArchiveEvents = ({
                           <div>
                             {node.components?.hero?.tag?.label &&
                               <div className="mb-2 mt-1 mb-md-0 mt-md-0">
-                                <Tag label={node.components?.hero?.tag?.label} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"></Tag>
+                                <Tag label={node.components?.hero?.tag?.label} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal" />
                               </div>
                             }
                             {node.metadata?.template?.name &&
                               (node.metadata?.template?.name === 'level1' || node.metadata?.template?.name === 'community') ?
                               <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block ">
-                                <Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal"></Tag>
+                                <Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal" />
                               </div>
                               : null}
                           </div>
@@ -109,7 +109,7 @@ const ListArchiveEvents = ({
                         {(node.components?.hero?.kangaroo?.eventInfo?.items || description) &&
                           <p className="text-secondary fw-normal d-block mb-3">
                             {node.components?.hero?.kangaroo?.eventInfo?.items &&
-                              <small>{node.components?.hero?.kangaroo?.eventInfo?.items[1].label}</small>} {/*// XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
+                              <small>{node.components?.hero?.kangaroo?.eventInfo?.items[1].label}</small>} {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
                             <small> — {description}</small>
                           </p>
                         }

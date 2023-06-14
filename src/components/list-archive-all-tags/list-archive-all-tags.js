@@ -3,15 +3,15 @@ import * as React from "react"
 import "../../scss/styles.scss"
 import "../../js/globals"
 
-import ListItem from "../list-item/list-item"
-import Chip from "../chip/chip"
 import { useStaticQuery, graphql } from "gatsby"
 import classNames from "classnames"
+import ListItem from "../list-item/list-item"
+import Chip from "../chip/chip"
 
-const ListArchiveAllTags = ({
+function ListArchiveAllTags({
   background,
   noSpace,
-}) => {
+}) {
 
   const data = useStaticQuery(graphql`
     query {
@@ -24,7 +24,7 @@ const ListArchiveAllTags = ({
     }
   `)
 
-  let styles = classNames(
+  const styles = classNames(
     'section-editorial',
   {
     [`bg-${background}`]: background, 

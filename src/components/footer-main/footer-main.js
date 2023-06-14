@@ -9,7 +9,7 @@ import "./footer-main.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Chip from "../chip/chip"
 
-const FooterMain = ({
+function FooterMain({
   id,
   title,
   cols,
@@ -17,7 +17,7 @@ const FooterMain = ({
   social,
   community,
   subscribe
-}) => {
+}) {
 
   const data = useStaticQuery(graphql`
   query {
@@ -52,8 +52,7 @@ const FooterMain = ({
               <ul className="chips-list chips d-flex flex-wrap">
                 {footerTags.map(tag => (
                   <ListItem key={tag.fieldValue} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
-                    <Chip label={tag.fieldValue} size="lg" color="primary">
-                    </Chip>
+                    <Chip label={tag.fieldValue} size="lg" color="primary" />
                   </ListItem>
                 ))}
               </ul>
@@ -65,19 +64,15 @@ const FooterMain = ({
           }
 
           {cols && <div className="row">
-            {cols.map((value, index) => {
-              return (
-                <div key={"item-" + index} className="col-12 col-md-6 col-lg-3 col-sm-6 pb-mb-2 pb-lg-0">
+            {cols.map((value, index) => (
+                <div key={`item-${  index}`} className="col-12 col-md-6 col-lg-3 col-sm-6 pb-mb-2 pb-lg-0">
                   <List {...value}>
-                    {value.items.map((item, index) => {
-                      return (
-                        <ListItem {...item} key={"subitem-" + index}></ListItem>
-                      )
-                    })}
+                    {value.items.map((item, index) => (
+                        <ListItem {...item} key={`subitem-${  index}`} />
+                      ))}
                   </List>
                 </div>
-              )
-            })}
+              ))}
           </div>
           }
 
@@ -90,11 +85,9 @@ const FooterMain = ({
                 <h3 className="footer-title pb-4">{community.title}</h3>
 
                 <List {...community.list}>
-                  {community.list.items.map((item, index) => {
-                    return (
-                      <ListItem {...item} key={"subitem-" + index}></ListItem>
-                    )
-                  })}
+                  {community.list.items.map((item, index) => (
+                      <ListItem {...item} key={`subitem-${  index}`} />
+                    ))}
                 </List>
               </div>
             }
@@ -102,11 +95,9 @@ const FooterMain = ({
             {social &&
               <div className="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
                 <h3 className="footer-title pb-4">{social.title}</h3>
-                {social.buttons.map((button, index) => {
-                  return (
-                    <Button key={"social-" + index} {...button}></Button>
-                  )
-                })}
+                {social.buttons.map((button, index) => (
+                    <Button key={`social-${  index}`} {...button} />
+                  ))}
               </div>
             }
 
@@ -121,7 +112,7 @@ const FooterMain = ({
                 </div>
                 {subscribe.subscribe &&
                   <div className="subscribe-wrapper mt-4">
-                    <Subscribe {...subscribe.subscribe}></Subscribe>
+                    <Subscribe {...subscribe.subscribe} />
                   </div>
                 }
               </div>

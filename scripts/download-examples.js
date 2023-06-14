@@ -15,17 +15,17 @@ async function downloadExamples (context) {
 
     return new Promise((resolve, reject) => {
         request.get(source)
-            .on('error', function(error) {
+            .on('error', (error) => {
                 reject(error);
             })
             .pipe(fs.createWriteStream(zipFile))
-            .on('finish', function() {
+            .on('finish', () => {
                 console.log('✅ Finished downloading');
                 const zip = new admZip(zipFile);
                 console.log('📑 Extracting json');
                 fs.mkdirSync(path.join(DEST_DIR, context), { recursive: true })
                 const zipEntries = zip.getEntries();
-                zipEntries.forEach(function (zipEntry) {
+                zipEntries.forEach((zipEntry) => {
                     if (zipEntry.entryName.match(new RegExp('.*\/api\/.*.json'))) {
                         const newFolder = path.join(
                             DEST_DIR, context, 

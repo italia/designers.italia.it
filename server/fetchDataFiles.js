@@ -6,7 +6,7 @@ const glob = require('glob')
 const FILE_DATA_EXT = 'yaml'
 
 exports.fetchDataFiles = function() {
-  const files = glob.sync(__dirname + '/../src/**/*.' + FILE_DATA_EXT)
+  const files = glob.sync(`${__dirname  }/../src/**/*.${  FILE_DATA_EXT}`)
 
   const result = {}
   for (const filePath of files) {

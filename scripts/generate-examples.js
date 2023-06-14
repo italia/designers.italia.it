@@ -1,8 +1,8 @@
-const { searchInDir } = require("./utils")
 const path = require('path');
 const fs = require('fs');
 const slugify = require('slugify')
 const Mustache = require('mustache');
+const { searchInDir } = require("./utils")
 const bsiData = require("../node_modules/bootstrap-italia/package.json")
 
 

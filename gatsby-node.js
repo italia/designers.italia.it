@@ -1,12 +1,13 @@
 const { createRemoteFileNode, } = require("gatsby-source-filesystem")
+
 const jsYaml = require(`js-yaml`)
 
+const _ = require("lodash")
+const path = require("path")
 const { fetchDataFiles } = require('./server/fetchDataFiles')
 const { findValues } = require('./server/utils/findValues')
 
-const isRemoteAsset = (assetPath) => {
-  return assetPath.startsWith('http')
-}
+const isRemoteAsset = (assetPath) => assetPath.startsWith('http')
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html" || stage === "develop-html") {
@@ -38,9 +39,9 @@ exports.sourceNodes = async ({
   actions: { createNode },
 }) => {
 
-  //assets import in graphQL for gatsby-plugin-image
+  // assets import in graphQL for gatsby-plugin-image
   const data = fetchDataFiles()
-  const assets = [...new Set(findValues(data, 'img'))] //new Set removes duplicates
+  const assets = [...new Set(findValues(data, 'img'))] // new Set removes duplicates
 
   assets.forEach((asset, idx) => {
     if (isRemoteAsset(asset)) {
@@ -49,7 +50,7 @@ exports.sourceNodes = async ({
       }
       createNode({
         ...data,
-        id: 'asset-' + idx,
+        id: `asset-${  idx}`,
         parent: null,
         children: [],
         internal: {
@@ -76,7 +77,7 @@ exports.onCreateNode = async ({
       url: node.source,
       parentNodeId: node.id,
       createNode,
-      createNodeId,//`${node.unique_identifier_prop}-assets-${index}`,
+      createNodeId,// `${node.unique_identifier_prop}-assets-${index}`,
       getCache,
     })
     if (fileNode) {
@@ -108,8 +109,6 @@ exports.onCreateNode = async ({
   }
 }
 
-const path = require("path")
-const _ = require("lodash")
 
 exports.createPages = async ({ graphql, actions }) => {
 
@@ -179,7 +178,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `
   )
   redirs.data.allContent.edges.forEach((edge) => {
-    const node = edge.node
+    const {node} = edge
     node.metadata.redirect_from.forEach((fromPath) => {
       const toPath = edge.node.seo.pathname
       console.log(`Creating redirect: ${fromPath} -> ${toPath}...`)

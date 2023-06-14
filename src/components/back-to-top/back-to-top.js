@@ -1,9 +1,9 @@
-import React from "react"
-import { useEffect } from "react";
+import React, { useEffect } from "react"
+
 import { BackToTop } from "bootstrap-italia"
 import Icon from "../icon/icon"
 
-const BackToTopEl = (props) => {
+function BackToTopEl(props) {
   useEffect(() => {
     new BackToTop(document.getElementById('backToTop'), {
       positionTop: props.positionTop,

@@ -2,11 +2,11 @@ import React from "react"
 import Icon from "../icon/icon"
 import LinkCustom from "../link-custom/link-custom"
 
-const NavOtherLinks = ({
+function NavOtherLinks({
   icon,
   title,
   items
-}) => {
+}) {
 
   let linkItems
 
@@ -14,7 +14,7 @@ const NavOtherLinks = ({
     linkItems = items.map((item,index) => {
       item.imageClass = "me-3"
       return(
-        <div className="col-10 mb-2 mb-md-0 col-md-6 col-lg-3" key={"link-"+index}>
+        <div className="col-10 mb-2 mb-md-0 col-md-6 col-lg-3" key={`link-${index}`}>
           <LinkCustom {...item}/>
         </div>
       )

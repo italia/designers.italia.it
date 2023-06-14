@@ -3,7 +3,7 @@ import Icon from "../icon/icon"
 import Link from "../link/link"
 import "./last-update.scss"
 
-const LastUpdate = ({
+function LastUpdate({
   // location,
   pathname,
   title,
@@ -13,7 +13,7 @@ const LastUpdate = ({
   column,
   lastModified,
   noPadding
-}) => {
+}) {
   let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`  // < fallback if not trackable via pathname let's go to repo root...
   if (pathname) {
     const filePath = pathname === '/'
@@ -23,11 +23,11 @@ const LastUpdate = ({
     editGithubUrl += `${filePath}.yaml`
   }
 
-  let columnStyle = 'col-12'
+  const columnStyle = 'col-12'
   // + `${column ? '' : ' col-md-10 offset-md-1'}`
   + ' g-0'
 
-  let paddingStyle = 'px-3'
+  const paddingStyle = 'px-3'
    + `${noPadding ? '' : ' px-lg-5'}`
 
   return (

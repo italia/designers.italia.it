@@ -3,6 +3,7 @@ import * as React from "react"
 import "../scss/styles.scss"
 import "../js/globals"
 
+import { graphql } from "gatsby"
 import Skiplinks from "../components/skiplinks/skiplinks"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
@@ -26,11 +27,10 @@ import skipLinksData from "../data/skiplinks.yaml"
 import Link from "../components/link/link"
 import ListItem from "../components/list-item/list-item"
 import Tag from "../components/tag/tag"
-import { graphql } from "gatsby"
 
 import { Seo } from "../components/seo/seo"
 
-const Tags = ({ children, pageContext, location, data }) => {
+function Tags({ children, pageContext, location, data }) {
   const lastModified = data.content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
 
   const { tag } = pageContext
@@ -44,10 +44,10 @@ const Tags = ({ children, pageContext, location, data }) => {
     addonClasses: 'mt-1 flex-shrink-0 me-1 me-md-3'
   }
 
-  let container = "container-xxl"
-  let row = "row"
+  const container = "container-xxl"
+  const row = "row"
 
-  let styles = 'section-editorial'
+  const styles = 'section-editorial'
 
   return (
     <div id="app">
@@ -61,7 +61,7 @@ const Tags = ({ children, pageContext, location, data }) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        <Hero {...TagPageData.components.hero} title={tag} subtitle={`Tutti i contenuti relativi all'argomento "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero>
+        <Hero {...TagPageData.components.hero} title={tag} subtitle={`Tutti i contenuti relativi all'argomento "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo} />
         {/* <Hero {...TagPageData.components.hero} title={`Argomento: "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero> */}
         <section className={styles} aria-describedby="archive-list-title">
           <div className={container}>
@@ -85,13 +85,13 @@ const Tags = ({ children, pageContext, location, data }) => {
                               <div>
                                 {node.components?.hero?.tag?.label &&
                                   <div className="mb-2 mt-1 mb-md-0 mt-md-0">
-                                    <Tag label={node.components?.hero?.tag?.label} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"></Tag>
+                                    <Tag label={node.components?.hero?.tag?.label} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal" />
                                   </div>
                                 }
                                 {node.metadata?.template?.name &&
                                   (node.metadata?.template?.name === 'level1' || node.metadata?.template?.name === 'community') ?
                                   <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block ">
-                                    <Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal"></Tag>
+                                    <Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal" />
                                   </div>
                                   : null}
                               </div>
@@ -99,7 +99,7 @@ const Tags = ({ children, pageContext, location, data }) => {
                             {(node.components?.hero?.kangaroo?.personalInfo?.items || description) &&
                               <p className="text-secondary fw-normal d-block mb-3">
                                 {node.components?.hero?.kangaroo?.personalInfo?.items &&
-                                  <small>{node.components?.hero?.kangaroo?.personalInfo?.items[1].label}</small>} {/*// XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
+                                  <small>{node.components?.hero?.kangaroo?.personalInfo?.items[1].label}</small>} {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
                                 <small> — {description}</small>
                               </p>
                             }
@@ -121,8 +121,7 @@ const Tags = ({ children, pageContext, location, data }) => {
         {TagPageData.navPreFooter && <NavPreFooter {...TagPageData.navPreFooter} />}
         <Feedback />
       </main>
-      <Footer {...FooterData.footer}>
-      </Footer>
+      <Footer {...FooterData.footer} />
       <BackToTopEl
         positionTop={0}
         scrollLimit={100}
@@ -178,7 +177,7 @@ export const pageQuery = graphql`
 `
 
 
-export const Head = ({ pageContext, data: { content } }) => {
+export function Head({ pageContext, data: { content } }) {
   const { tag } = pageContext
   return ( 
   <Seo
@@ -188,7 +187,6 @@ export const Head = ({ pageContext, data: { content } }) => {
     // twitterImage = {content.seo.twitterImage}
     pathname = {`/argomenti/"${tag}"/`}
     // canonical = {content.seo.canonical}
-  >
-  </Seo>
+   />
   )
 }

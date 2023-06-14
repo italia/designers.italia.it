@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "../link/link"
 
-const HeaderPre = ({data}) => {
+function HeaderPre({data}) {
   if (typeof window === "undefined") {
     return <></>
   }

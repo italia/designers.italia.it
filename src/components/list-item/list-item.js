@@ -5,44 +5,44 @@ import Link from "../link/link"
 import ImageResponsive from "../image-responsive/image-responsive"
 import './list-item.scss'
 
-const ListItem = ({
-	url,             //link of item
+function ListItem({
+	url,             // link of item
 	blank,
-	isDropdown,      //true / false
-	children,        //usually label of link
-	active,          //state of the link
-	disabled,        //disabled state
-	label,           //label
+	isDropdown,      // true / false
+	children,        // usually label of link
+	active,          // state of the link
+	disabled,        // disabled state
+	label,           // label
 	srBefore,        // screenreader text before label
 	srAfter,         // screenreader text after label
-	text,            //text under the label
-	visuallyHidden,  //screen reader active state
+	text,            // text under the label
+	visuallyHidden,  // screen reader active state
 	divider,
-	textLarge,		  //bigger text
-	ariaLabel,		  //screen reader message
+	textLarge,		  // bigger text
+	ariaLabel,		  // screen reader message
 	icon,
-	iconRight,       //icon on right
-	iconLeft,		  //icon on left
+	iconRight,       // icon on right
+	iconLeft,		  // icon on left
 	simpleList,
 	avatar,
 	img,
 	alt,
-	action,          //arrow right
-	actions,			  //multiple actions right
-	metadata,        //metadata right
+	action,          // arrow right
+	actions,			  // multiple actions right
+	metadata,        // metadata right
 	addonClasses,
 	onClick
-}) => {
+}) {
 
 	const GATSBY_ACTIVE = "active"
 	let styles = url ? undefined : "list-item"
 
-	//icon render
+	// icon render
 	let iconRendered
 	if (icon) {
 		iconRendered = <Icon {...icon} />
 	}
-	//icon render simple list
+	// icon render simple list
 	let iconRenderedSimpleList
 	if (icon) {
 		iconRenderedSimpleList = <div className="it-rounded-icon"><Icon {...icon} /></div>
@@ -50,10 +50,10 @@ const ListItem = ({
 	// arrow right
 	let actionRendered
 	if (action) {
-		actionRendered = <Icon {...icon}></Icon>
+		actionRendered = <Icon {...icon} />
 	}
 
-	//immagine
+	// immagine
 	let imgRendered
 	if (img) {
 		imgRendered = <div className="it-thumb"><ImageResponsive src={img} alt={alt} /></div>
@@ -63,23 +63,23 @@ const ListItem = ({
 		children = label
 	}
 
-	//-avatar
+	// -avatar
 	let avatarRendered
 	if (avatar) {
 		avatarRendered = <Avatar {...avatar} />
 	}
 
-	//link
+	// link
 	let listContent
 	listContent = <span>{children}</span>
 
-	//screen reader rule
+	// screen reader rule
 	let isActive
 	if (active) {
 		isActive = <span className="visually-hidden">{visuallyHidden}</span>
 	}
 
-	//multiple actions right
+	// multiple actions right
 	let actionsRendered
 	let icons
 	if (actions) {
@@ -89,7 +89,7 @@ const ListItem = ({
 			if (icons.url === url) urlHidden = true
 			else urlHidden = false
 			//
-			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} rel={icons.blank ? 'noreferrer' : undefined} aria-label={icons.ariaLabel} aria-hidden={urlHidden ? 'true' : undefined} key={"iconsaction-" + index} ><Icon {...icons}></Icon></Link>
+			return <Link to={icons.url} target={icons.blank ? '_blank' : undefined} rel={icons.blank ? 'noreferrer' : undefined} aria-label={icons.ariaLabel} aria-hidden={urlHidden ? 'true' : undefined} key={`iconsaction-${  index}`} ><Icon {...icons} /></Link>
 		})
 		actionsRendered = <span className="it-multiple flex-shrink-0">{icons}</span>
 	}
@@ -106,15 +106,15 @@ const ListItem = ({
 	if (metadata && actions) {
 		metadataActionsRendered = <span className="it-multiple flex-shrink-0">{metadataRendered}{icons}</span>
 	}
-	//-se esiste un link
+	// -se esiste un link
 	if (url) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' ' + addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined} aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined} to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined} onClick={onClick}>{iconLeft ? iconRendered : ''}<span>{children}</span>{isActive}{iconRight ? iconRendered : ''}</Link>
+		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ` ${  addonClasses}` : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? ' dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-disabled={disabled ? 'true' : undefined} aria-label={ariaLabel ? `${ariaLabel} ${children}` : undefined} to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined} onClick={onClick}>{iconLeft ? iconRendered : ''}<span>{children}</span>{isActive}{iconRight ? iconRendered : ''}</Link>
 	}
-	//-se è all'interno di un dropdown
+	// -se è all'interno di un dropdown
 	if (isDropdown) {
-		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ' ' + addonClasses : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined} to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined} onClick={onClick}>{(iconLeft && !disabled) ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered : ''}{isActive}</Link>
+		listContent = <Link activeClassName={GATSBY_ACTIVE} className={`list-item ${active ? ' active' : ''} ${addonClasses ? ` ${  addonClasses}` : ''} ${textLarge ? ' large' : ''} ${iconLeft ? ' left-icon' : ''} ${iconRight ? ' right-icon' : ''} ${isDropdown ? 'dropdown-item' : ''} ${disabled ? ' disabled' : ''}`} aria-label={ariaLabel ? `${ariaLabel}` : undefined} aria-disabled={disabled ? 'true' : undefined} to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined} onClick={onClick}>{(iconLeft && !disabled) ? iconRendered : ''}<span>{children}</span>{iconRight ? iconRendered : ''}{isActive}</Link>
 	}
-	//- se è una lista semplice
+	// - se è una lista semplice
 	if (simpleList) {
 		listContent = <div className="list-item">{
 			iconLeft ? iconRenderedSimpleList : ''}
@@ -129,7 +129,7 @@ const ListItem = ({
 		</div>
 		styles = ''
 	}
-	//- se è una lista semplice con link
+	// - se è una lista semplice con link
 	if (simpleList && url) {
 		listContent = <Link className={`list-item ${active ? ' active' : ''}`} to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>
 			{iconLeft ? iconRenderedSimpleList : ''}
@@ -148,7 +148,7 @@ const ListItem = ({
 			</div>
 		</Link>
 	}
-	//- se è una lista semplice con link ed actions - eg: resources
+	// - se è una lista semplice con link ed actions - eg: resources
 	if (simpleList && url && actions) {
 		listContent = <div className={`list-item ${active ? ' active' : ''}`} >
 			{iconLeft ? iconRenderedSimpleList : ''}
@@ -169,9 +169,9 @@ const ListItem = ({
 			</div>
 		</div>
 	}
-	//- se è un divider
+	// - se è un divider
 	if (divider) {
-		listContent = <span className="divider"></span>
+		listContent = <span className="divider" />
 		styles = ''
 	}
 

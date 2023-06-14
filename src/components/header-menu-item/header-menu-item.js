@@ -1,10 +1,10 @@
 import * as React from "react"
 
-const HeaderMenuItem = ({
+function HeaderMenuItem({
 	isDropDown,
 	isMegaMenu,
 	children
-}) => {
+}) {
 
 	const styles = "nav-item"
 		+ `${isDropDown ? ' dropdown' : ''}`

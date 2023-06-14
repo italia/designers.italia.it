@@ -2,21 +2,18 @@ import React from "react"
 import Icon from "../icon/icon"
 import "./testimonials.scss"
 
-const Testimonials =(
-  {
+function Testimonials({
     items
-  }
-)=>{
+  }) {
   return (
     <div className="testimonials pt-5">
       <div className="row justify-content-md-between">
-        {items.map((item,index) => {
-          return(
-            <div key={"col-"+index} className="col-12 col-md-5">
+        {items.map((item,index) => (
+            <div key={`col-${index}`} className="col-12 col-md-5">
               <div className="testimonial-wrapper d-xl-flex mb-5 mb-lg-0">
                 <div className="icon-zone me-4">
                   <div className="icon-wrapper d-flex align-items-center justify-content-center">
-                    <Icon {...item.icon}></Icon>
+                    <Icon {...item.icon} />
                   </div>
                 </div>
                 <div className="testimonial-text mt-4">
@@ -29,8 +26,7 @@ const Testimonials =(
                 </div>
               </div>
             </div>
-          )
-        })}
+          ))}
       </div>
     </div>
   )

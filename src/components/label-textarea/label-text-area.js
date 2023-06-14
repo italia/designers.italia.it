@@ -1,8 +1,8 @@
-import React from "react"
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
+
 import { Input } from "bootstrap-italia"
 
-const LabelTextArea = (props) => {
+function LabelTextArea(props) {
     const {
         id,
         value,

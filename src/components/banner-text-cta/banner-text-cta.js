@@ -2,25 +2,23 @@ import React from "react"
 import SimpleCta from "../simple-cta/simple-cta"
 import "./banner-text-cta.scss"
 
-const BannerTextCta = ({
+function BannerTextCta({
   id,
   title,
   background,
   ctas,
   children
-}) => {
+}) {
 
-let styles = "banner-text-cta"
-+ `${background ? ' bg-'+background : ''}`
+const styles = "banner-text-cta"
++ `${background ? ` bg-${background}` : ''}`
 
 let ctaItems
 
   if (ctas) {
-    ctaItems = ctas.map((item,index) => {
-      return(
-        <SimpleCta {...item} key={"cta-"+index}/>
-      )
-    })
+    ctaItems = ctas.map((item,index) => (
+        <SimpleCta {...item} key={`cta-${index}`}/>
+      ))
   }
 
   return(
