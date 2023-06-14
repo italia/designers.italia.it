@@ -7,8 +7,8 @@ function searchInDir(startPath, filter, subfolders=true) {
     }
     const files = fs.readdirSync(startPath);
     let collection = []
-    for (let i = 0; i < files.length; i++) {
-        const filename = path.join(startPath, files[i]);
+    for (const element of files) {
+        const filename = path.join(startPath, element);
         if (subfolders && fs.lstatSync(filename).isDirectory()) {
             collection = collection.concat(searchInDir(filename, filter, subfolders))
         } else if (filename.endsWith(filter)) {

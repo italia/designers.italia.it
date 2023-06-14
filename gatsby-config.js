@@ -1,10 +1,10 @@
+const path = require('path');
 const { getCrumbLabelUpdates } = require('./scripts/breadcrumbs');
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
-const path = require('path');
 // Get paths of Gatsby's required rules, which as of writing is located at:
 // https://github.com/gatsbyjs/gatsby/tree/fbfe3f63dec23d279a27b54b4057dd611dce74bb/packages/
 // gatsby/src/utils/eslint-rules
@@ -345,7 +345,7 @@ module.exports = {
               description: `${edge.node.seo?.description}`,
               tag: `${edge.node.components?.hero?.tag?.label}`,
               body:  `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}`
-                + ` ` + `${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}`
+                + ` ${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}`
                 + ` ${  edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
                  } ${  edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
                  } ${  edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' ')

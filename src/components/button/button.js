@@ -28,20 +28,23 @@ function Button({
   onClick,
 }) {
 	let iconRendered
-	const btnStyles = `${customStyle ? '' : 'btn'}`
-		+ `${size ? ` btn-${size}` : ''}`
-		+ `${btnStyle ? ` btn-${btnStyle}` : ''}`
-		+ `${disabled ? ' disabled' : ''}`
-		+ `${(iconLeft || (iconRight && !dataBsToggle)) ? ' btn-icon' : ''}`
-		+ `${customStyle || ''}`
-		+ `${addonStyle ? ` ${addonStyle}` : ''}`
+	const btnStyles = `${customStyle ? '' : 'btn'}${
+		size ? ` btn-${size}` : ''}${
+		btnStyle ? ` btn-${btnStyle}` : ''}${
+		disabled ? ' disabled' : ''}${
+		(iconLeft || (iconRight && !dataBsToggle)) ? ' btn-icon' : ''}${
+		customStyle || ''}${
+		addonStyle ? ` ${addonStyle}` : ''
+	}`;
 
 	let iconRender
 	if (icon) {
+		// eslint-disable-next-line react/jsx-props-no-spreading
 		iconRender = <Icon {...icon}/>
 	}
 
 	if (label) {
+		// eslint-disable-next-line no-param-reassign
 		children = label
 	}
 
@@ -63,6 +66,7 @@ function Button({
 		)
 	}
 		return (
+			// eslint-disable-next-line react/button-has-type
 			<button id={id} type={type || 'button'} aria-label={ariaLabel} className={btnStyles} aria-controls={ariaControls} aria-expanded={ariaExpanded} data-bs-toggle={dataBsToggle} data-bs-target={ariaControls ? `#${ariaControls}` : undefined} aria-disabled={disabled ? true : undefined} title={title} onClick={onClick}>
 				{iconLeft ? iconRendered : ''}
 				<span>{children}</span>

@@ -40,8 +40,8 @@ exports.sourceNodes = async ({
 }) => {
 
   // assets import in graphQL for gatsby-plugin-image
-  const data = fetchDataFiles()
-  const assets = [...new Set(findValues(data, 'img'))] // new Set removes duplicates
+  const dataFiles = fetchDataFiles()
+  const assets = [...new Set(findValues(dataFiles, 'img'))] // new Set removes duplicates
 
   assets.forEach((asset, idx) => {
     if (isRemoteAsset(asset)) {
@@ -55,7 +55,7 @@ exports.sourceNodes = async ({
         children: [],
         internal: {
           type: 'RemoteAsset',
-          contentDigest: createContentDigest(data),
+          // contentDigest: createContentDigest(data),
         },
       })
     }

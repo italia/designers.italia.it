@@ -1,5 +1,5 @@
 const request = require('superagent');
-const admZip = require('adm-zip');
+const AdmZip = require('adm-zip');
 const fs = require('fs');
 const path = require('path');
 
@@ -21,12 +21,12 @@ async function downloadExamples (context) {
             .pipe(fs.createWriteStream(zipFile))
             .on('finish', () => {
                 console.log('✅ Finished downloading');
-                const zip = new admZip(zipFile);
+                const zip = new AdmZip(zipFile);
                 console.log('📑 Extracting json');
                 fs.mkdirSync(path.join(DEST_DIR, context), { recursive: true })
                 const zipEntries = zip.getEntries();
                 zipEntries.forEach((zipEntry) => {
-                    if (zipEntry.entryName.match(new RegExp('.*\/api\/.*.json'))) {
+                    if (zipEntry.entryName.match(/.*\/api\/.*.json/)) {
                         const newFolder = path.join(
                             DEST_DIR, context, 
                             path.dirname(zipEntry.entryName).split(path.sep).pop(), 
