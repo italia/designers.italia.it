@@ -38,6 +38,7 @@ const HeaderPost = ({data}) => {
 														<Link
 														to={value.url}
 														target={value.blank ? "_blank" : undefined}
+														rel={value.blank ? 'noreferrer' : undefined}
 														>
 															<Icon {...value.icon}/>
 															{value.title && <ReactMarkdown components={{ p: "span" }}>{value.title}</ReactMarkdown>}
@@ -50,6 +51,7 @@ const HeaderPost = ({data}) => {
 													className="simple-cta fw-semibold"
 													to={data.nav.newsletter.url}
 													target={data.nav.newsletter.blank ? "_blank" : undefined}
+													rel={data.nav.newsletter.blank ? 'noreferrer' : undefined}
 													>
 														<span className="text-end">
 															{data.nav.newsletter.title}

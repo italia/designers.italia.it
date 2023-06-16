@@ -14,7 +14,7 @@ const LastUpdate = ({
   lastModified,
   noPadding
 }) => {
-  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/${process.env.GATSBY_BRANCH}/src/data/content/`  // < fallback if not trackable via pathname let's go to repo root...
+  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`  // < fallback if not trackable via pathname let's go to repo root...
   if (pathname) {
     const filePath = pathname === '/'
       ? "index"
@@ -51,6 +51,7 @@ const LastUpdate = ({
                   <Link
                     to={licence.url}
                     target={licence.blank ? "_blank" : undefined}
+                    rel={licence.blank ? 'noreferrer' : undefined}
                     className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5">
                     <strong className="d-inline-block me-2">{licence.label} <span className="visually-hidden">(si apre in una nuova finestra)</span><Icon {...licence.icon} /></strong>
                   </Link>
@@ -61,6 +62,7 @@ const LastUpdate = ({
                   <Link
                     to={editGithubUrl}
                     target={edit.blank ? "_blank" : undefined}
+                    rel={edit.blank ? 'noreferrer' : undefined}
                     className="d-inline-block text-decoration-none">
                     <strong className="d-inline-block me-2">{edit.label} <span className="visually-hidden">(si apre in una nuova finestra)</span></strong><Icon {...edit.icon} />
                   </Link>
