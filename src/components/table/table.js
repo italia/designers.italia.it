@@ -22,7 +22,10 @@ const Table = ({
   if (head) {
     headItems = head.map((item,index) => {
       return(
-        <th scope="col" key={"th-"+index}>{item.text}</th>
+        <th scope="col" key={"th-"+index}>
+          {item.text}
+          { item.tag && <Tag {...item.tag}/>}
+          </th>
       )
     })
   }

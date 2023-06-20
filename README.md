@@ -1,24 +1,16 @@
-# 🚧 Sorgenti del nuovo sito di Designers Italia
+# 🖖 Sorgente del sito Designers Italia
 
-Questo repository contiene il codice sorgente del sito **[Designers Italia](https://designers.italia.it)**, il progetto di riferimento per la progettazione dei servizi pubblici digitali.
+Questo repository contiene il codice sorgente del sito **[Designers Italia](https://designers.italia.it)**, il progetto che mette a disposizione conoscenza e strumenti per creare i servizi digitali della Pubblica Amministrazione.
 
-Il nuovo sito utilizza [Bootstrap Italia 2](https://italia.github.io/bootstrap-italia/), [Gatsby](https://www.gatsbyjs.com) e l'ecosistema [Node.js](https://nodejs.org/it/)
-
-Un'anteprima del sito è disponibile su **[prossima.designers.italia.it](https://prossima.designers.italia.it)**  
-
-È possibile seguirne le lavorazioni nella [board di progetto](https://github.com/orgs/italia/projects/15) e nelle [issue con etichetta next](https://github.com/italia/designers.italia.it/issues?q=is%3Aissue+is%3Aopen+label%3Anext)
-
-----------
+Il sito utilizza l'ultima versione di [Bootstrap Italia](https://italia.github.io/bootstrap-italia/), [Gatsby](https://www.gatsbyjs.com) e l'ecosistema [Node.js](https://nodejs.org/it/).
 
 ## 💙 Come contribuire
 
-Ogni commento o proposta relativa all'evoluzione del sito e delle risorse può essere fatta utilizzando le [issues](https://github.com/italia/designers.italia.it/issues) di GitHub.
+È possibile seguire e contribuire alle lavorazioni in corso nella [board di progetto](https://github.com/orgs/italia/projects/15).
 
-Se vuoi contribuire e proporre una modifica, è sufficiente aprire una _[pull request](https://github.com/italia/designers.italia.it/pulls)_ su GitHub verso il ramo `next` in lavorazione.
+Commenti e proposte relative all'evoluzione del sito e delle risorse può essere fatta aprendo una [nuova issue](https://github.com/italia/designers.italia.it/issues/new), o esplorando le [issues](https://github.com/italia/designers.italia.it/issues) esistenti. Se vuoi contribuire e proporre una modifica, è sufficiente aprire una [pull request](https://github.com/italia/designers.italia.it/pulls).
 
------------
-
-## 🚀 Gatsby Quick start
+## 🚀 Quick start
 
 1.  **Install dependencies.**
 
@@ -31,12 +23,10 @@ Se vuoi contribuire e proporre una modifica, è sufficiente aprire una _[pull re
     To start your project up run
 
     ```shell
-    npm run develop
+    npm run dev
     ```
 
     Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
 
 3.  **Build static website (production).**
 

@@ -32,7 +32,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Piano attività - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Una roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi anni, con uno sguardo rivolto ad azioni e obiettivi futuri. #C
+  description: "Gli obiettivi e i risultati del progetto Designers Italia" #C
   image: null #I
   twitterImage: null #I
   canonical: null
@@ -126,52 +126,237 @@ components:
         size: sm
         color: secondary
       tags: [Cultura progettuale,Pianificazione,Design system]
+      # KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri l'archivio storico #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: primary
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #AUTO
+            - url: "archivio-storico/" #M
+              label: "2017–2021" #C    
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial:
 
-    # —
-    # EDITORIAL #C #I
-    # —
-    - title: I nostri obiettivi per il futuro
+# —————— THE FUTURE ————— #
+
+    - title: Obiettivi per il futuro
       headingLevel: 2
-      background: dark
+      background: null
       menu: false
       centered: true
       text: | #C
-        Una roadmap delle attività, uno sguardo rivolto ad azioni e obiettivi futuri
+        Una roadmap di cose da fare
+
       components:
 
-        # TXT + IMG + CTA BLOCK
+        ### 2023 - Q2
         - name: TextImageCta
-          title: 2023 — Q1
+          title: "2023 — Q2" #C
           headingLevel: 3
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          specular: false
+          noSpace: false
 
-
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          # headingLevel: 4
+          headingLevel: 4
+          specular: false
+          title: "Seconda edizione del corso Formez “Qualità dei servizi digitali”" #C
           text: | #C
-            #### Design system: rilascio UI kit 3.0.0
-            Versione stabile del kit di progettazione interfaccia, con evidenza del nuovo modello di contribuzione.
+            Un’occasione per imparare a progettare e realizzare servizi pubblici di qualità.
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
-            #### Nuovo sito designers.italia.it
-            Validazione e rilascio del nuovo sito ufficiale, con navigazione migliorata e accesso semplificato alle risorse operative e al design system, per le PA e i loro fornitori.
+        - name: TextImageCta
+          headingLevel: 4
+          title: "Design system: nuovi fondamenti di scrittura per la UX" #C
+          specular: true
+          # image: "/images/community/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente.jpg"
+          # alt: "" #C
+          text: | #C
+             La prima versione delle indicazioni per progettare contenuti di qualità per le interfacce.
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
-            #### Pubblicazione compendio sulle Linee guida di design
-            Pubblicazione nuove schede informative che raccordano Linee guida, Manuale operativo e strumenti.
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Sito Designers Italia: miglioramento continuo" #C
+          text: | #C
+            Continuo lavori di consolidamento del nuovo sito Designers Italia, in particolare avvio seconda sessione di test di usabilità, integrazioni funzionalità per l'archivio media e altre lavorazioni per ottimizzare l'esperienza utente, la manutenibilità e la scalabilità nel tempo. 
+          ctas:
+          - label: Vai alla board di progetto per seguire i lavori #C
+            url: https://github.com/orgs/italia/projects/15 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
-   # —
-    # EDITORIAL #C #I
-    # —
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system: modello di contribuzione" #C
+          text: | #C
+            Rilascio del modello di contribuzione per il design system del Paese: come partecipare alla cura delle risorse principali del design system del Paese: documentazione, UI Kit Italia, Bootstrap Italia e design tokens.
+
+        ### 2023 - Q3
+        - name: TextImageCta
+          title: "2023 — Q3" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Modello Azienda Sanitaria Locale: ricerca" #C
+          text: | #C
+            Avvio delle attività di ricerca utente finalizzate alla realizzazione del modello di sito per le Aziende Sanitarie Locali.
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Pubblicazione dei contenuti di formazione" #C
+          text: | #C
+            Nella sezione **Community**, inizio pubblicazione e raccolta di materiali media degli incontri, conferenze e corsi di formazione.
+          ctas:
+          - label: Vai alla sezione Community #C
+            url: "/community/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        ### 2023 - Q4
+        - name: TextImageCta
+          title: "2023 — Q4" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Modello Beni Culturali: ricerca" #C
+          text: | #C
+            Avvio delle attività di ricerca utente finalizzate alla realizzazione del modello di sito per i musei pubblici.
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system v.1.0.0-beta" #C
+          text: | #C
+            Rilascio della versione beta del design system del Paese che comprende la totalità delle schede presenti nelle sezioni **Fondamenti** e **Componenti**. 
+          ctas: 
+          - label: Vai alla board del progetto per seguire i lavori #C
+            url: https://github.com/orgs/italia/projects/17 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai al changelog #C
+            url: "/design-system/fondamenti/versionamento/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system: design pattern" #C
+          text: | #C
+            Inizio lavorazioni sulla sezione **Design pattern**. Approfondimenti dedicati a consolidare standard condivisi e aperti su come assemblare e utilizzare le risorse del design system per creare esperienze e contenuti in linea con le migliori pratiche e le norme per la progettazione. 
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Produzione contenuti dedicati alla community" #C
+          text: | #C
+            Nell’area **Formazione**, pubblicazione di contenuti media (video tutorial e podcast) sulla base delle necessità della community.  
+          ctas:
+          - label: Vai alla sezione Community #C
+            url: "/community/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        ### 2024 - Q1
+        - name: TextImageCta
+          title: "2024 — Q1" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Rilascio modello sito Azienda Sanitaria Locale" #C
+          text: | #C
+            Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi delle ASL.
+
+        ### 2024 - Q3
+        - name: TextImageCta
+          title: "2024 — Q3" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Rilascio modello sito Beni Culturali" #C
+          text: | #C
+            Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi dei musei pubblici.
+
+# ————— THE PAST ————— #
+
     - title: I risultati che abbiamo raggiunto
       headingLevel: 2
-      background: null
+      background: light
       menu: false
       centered: true
       text: | #C
@@ -179,17 +364,132 @@ components:
 
       components:
 
-       # TXT + IMG + CTA BLOCK
+        ### 2023 - Q1
         - name: TextImageCta
-          title: 2022 — Q4 #C
+          title: "2023 — Q1" #C
           headingLevel: 3
           noSpace: false
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
+          specular: true
+          title: "Nuovo sito designers.italia.it" #C
+          image: "/images/community/20230515-designer-italia-nuovo-sito-2023.png"
+          alt: "" #C
+          text: | #C
+            Validazione e rilascio del nuovo sito ufficiale, con navigazione migliorata e accesso semplificato alle risorse operative e al design system, per le PA e i loro fornitori.
+
+        - name: TextImageCta
+          headingLevel: 4
+          title: "Design system: pubblicata la versione ufficiale dello UI Kit Italia" #C
+          specular: true
+          image: "/images/community/20230504-ui-kit-italia-official-release.png"
+          alt: "" #C
+          text: | #C
+            Il kit per progettare interfacce e siti digitali della Pubblica Amministrazione (PA) esce dalla fase beta
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Scopri come usarlo (per designer) #C
+            url: "/design-system/come-iniziare/per-designer/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system: nuovi contenuti e consolidamento struttura" #C
+          text: | #C
+            Rilascio nuove versioni alpha, dalla 1 alla 5, della documentazione del design system del Paese.
+          ctas:
+          - label: Vai al design system #C
+            url: "/design-system/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai al changelog #C
+            url: "/design-system/fondamenti/versionamento/#changelog-documentazione" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: true
+          image: "/images/community/20230314-nome-in-codice-italia-hero.jpg"
+          alt: "" #C
+          title: "Nome in codice: ___ Italia" #C
+          text: | #C
+            Sondaggio per definire il nuovo nome del design system del Paese.
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230314-nome-in-codice-italia/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+  
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Pubblicazione compendio sulle Linee guida di design" #C
+          text: | #C
+            Pubblicazione nuove schede informative che raccordano Linee guida, Manuale operativo e strumenti.
+          ctas:
+          - label: Vai alle Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+
+    - background: null
+      menu: false
+      centered: true
+
+      components:
+
+        ### 2022 - Q4
+        - name: TextImageCta
+          title: "2022 — Q4" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
           specular: false
           title: "Rilascio design system del Paese, versione alpha" #C
           text: | #C
@@ -206,27 +506,34 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          specular: false
+          specular: true
+          image: "/images/community/articoli-di-approfondimento/una-grammatica-dei-servizi-pubblici-digitali.webp"
+          alt: ""
           title: "Rilascio del quadro sinottico servizi al cittadino" #C
           text: | #C
             Pubblicazione su Medium di articoli di descrizione e approfondimento del quadro sinottico.
+          ctas:
+          - label: 'Leggi "Una grammatica dei servizi pubblici digitali"' #C
+            url: https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
-          title: "Design system: rilascio UI kit 3.0.0-beta" #C
+          title: "Design system: rilascio UI Kit Italia 3.0.0-beta" #C
           text: | #C
             Versione beta del kit di progettazione interfaccia, usabile in produzione e coerente con Bootstrap Italia.
           ctas:
-          - label: Vai alla pagina del UI kit nella community Figma #C
+          - label: Vai alla pagina di UI Kit Italia nella community Figma #C
             url: https://www.figma.com/community/file/1105848677422572920 #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
@@ -238,11 +545,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: definizione supporto evolutivo Design React Kit" #C
           text: | #C
@@ -260,16 +564,23 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Benvenuto, Kit Privacy" #C
           text: | #C
             Pubblicazione nuovo kit dedicato a tematiche di privacy e trattamento dei dati personali
           ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20221020-benvenuto-kit-privacy/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
           - label: Vai al kit privacy #C
             url: "/risorse-per-progettare/organizzare/privacy/" #M
             blank: false #M #C true if new tab for external links
@@ -281,11 +592,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Modelli: rilascio App di valutazione" #C
           text: | #C
@@ -307,33 +615,37 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
+
+    - background: light
+      menu: false
+      centered: true
+
+      components:
+
+        ### 2022 - Q3
         - name: TextImageCta
-          title: 2022 — Q3 #C
+          title: "2022 — Q3" #C
           headingLevel: 3
           noSpace: false
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Avvio riprogettazione sito designers.italia.it" #C
           text: | #C
             Avvio attività per una nuova versione che tenga conto dei suggerimenti della community, degli aggiornamenti al design system e del tema accessibilità. Le fasi di progettazione e realizzazione saranno incorso fino a tutto Q4.
           ctas:
-          - label: Segui i lavori sul ramo next della repository GitHub
-            url: https://github.com/italia/designers.italia.it/tree/next
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+          # - label: Segui i lavori sul ramo next della repository GitHub
+          #   url: https://github.com/italia/designers.italia.it/tree/next
+          #   screenReaderText: " (si apre in una nuova finestra)" #C
+          #   blank: true #M #C true if new tab for external links
+          #   icon:
+          #     icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm
+          #     addonClasses: ms-2
           - label: Visita la board con le attività in corso
             url: https://github.com/orgs/italia/projects/15
             screenReaderText: " (si apre in una nuova finestra)" #C
@@ -346,33 +658,34 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Progettazione quadro sinottico servizi al cittadino" #C
           text: | #C
             Progettazione di un quadro sinottico che crei un linguaggio comune tra chi progetta, chi sviluppa soluzioni di servizi digitali al cittadino e le amministrazioni che le devono gestire. Definizione dei diversi ambiti in cui viene usata la parola servizio. Definizione dei diversi livelli di granularità di un servizio e come vengono chiamati dal cittadino, dalla Pubblica Amministrazione e dagli ambienti tecnici.
 
-        # TXT + IMG + CTA BLOCK
+
+    - background: null
+      menu: false
+      centered: true
+
+      components:
+
+        ### 2022 - Q2
         - name: TextImageCta
-          title: 2022 — Q2 #C
+          title: "2022 — Q2" #C
           headingLevel: 3
           noSpace: false
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
-          title: "Design system: rilascio UI kit 3.0.0-alpha.3" #C
+          title: "Design system: rilascio UI Kit Italia 3.0.0-alpha.3" #C
           text: | #C
             Versione completamente rinnovata del kit di progettazione interfaccia caratterizzata da nuova tecnologia e implementazione design token.
           ctas:
-          - label: Vai alla pagina del UI kit nella community Figma #C
+          - label: Vai alla pagina di UI Kit Italia nella community Figma #C
             url: https://www.figma.com/community/file/1105848677422572920 #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
@@ -384,11 +697,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Evoluzione modello Comuni" #C
           text: | #C
@@ -405,11 +715,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio Bootstrap italia 2.0" #C
           text: | #C
@@ -427,11 +734,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Aggiornamento modello scuole" #C
           text: | #C
@@ -448,11 +752,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio Bootstrap italia 1.6 legacy" #C
           text: | #C
@@ -470,11 +771,8 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Linee guida e Manuale operativo di design" #C
           text: | #C
@@ -491,17 +789,20 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
+    - background: light
+      menu: false
+      centered: true
+
+      components:
+
+        ### 2022 - Q1
         - name: TextImageCta
-          title: 2022 — Q1 #C
+          title: "2022 — Q1" #C
           headingLevel: 3
           noSpace: false
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system: rilascio Bootstrap Italia 1.5" #C
           text: | #C
@@ -519,43 +820,33 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Modello scuole e modello Comuni" #C
           text: | #C
             Avvio delle attività di individuazione e modellizzazione dei principali flussi di servizi digitali al cittadino.
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
           specular: false
           title: "Design system" #C
           text: | #C
             Avvio delle attività operative di aggiornamento: assessment di accessibilità e coerenza delle librerie, e stesura piano di ricerca.
-            Analisi e pianificazione delle evolutive delle librerie tecnologiche (Bootstrap Italia, Design React Kit) e visuali (UI kit e Wireframe Kit) in parallelo.
+            Analisi e pianificazione delle evolutive delle librerie tecnologiche (Bootstrap Italia, Design React Kit) e visuali (UI Kit Italia e Wireframe Kit) in parallelo.
 
             Predisposizione piano di ricerca per comprendere bisogni degli stakeholder del design system del Paese e coinvolgerli in un processo di validazione continua delle lavorazioni in corso.
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           headingLevel: 4
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
+
           specular: false
           title: "Atlante della Trasformazione Digitale della PA" #C
           text: | #C
             Realizzazione di una ricerca su archetipi e pattern ricorrenti in 5 ambiti della vita civica. Attività di formazione nell’ambito di un master in comunicazione visiva: co-progettazione e pubblicazione di un atlante illustrato dedicato ai processi di trasformazione digitale della pubblica amministrazione.
           ctas:
           - label: Vai alla notizia #C
-            url: https://designers.italia.it/notizie/Altante-trasformazione-digitale-PA/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
+            url: https://designers.italia.it/notizie/atlante-trasformazione-digitale-pa/ #M XXX
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -564,32 +855,24 @@ components:
               size: sm
               addonClasses: ms-2
 
-    # —
-    # EDITORIAL #C #I
-    # —
+
+    ### ARCHIVIO
     - title: L'archivio storico
       headingLevel: 2
-      background: light
+      background: null
       menu: false
       centered: true
-      # text: | #C
-      #   Da dove veniamo
       components:
 
-        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           title: 2017 — 2021
           headingLevel: 3
-          image: /images/400x300.png #I
-          alt: Alt lorem ipsum #C
           specular: true
           ctas:
-          - label: Vai alla pagina sul sito storico #C
-            url: https://designers.italia.it/piano-attivita #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
+          - label: Vai all'archivio storico #C
+            url: "/community/piano-attivita/archivio-storico/" #M
             icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-arrow-right #C #I
               color: primary
               align: middle
               hidden: true

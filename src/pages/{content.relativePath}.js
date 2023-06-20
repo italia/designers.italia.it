@@ -144,13 +144,13 @@ export const query = graphql`
                 listItems {
                   url
                   label
-                  iconRight
-                  icon {
-                    icon
-                    color
-                    size
-                    # list
-                  }
+                  # iconRight
+                  # icon {
+                  #   icon
+                  #   color
+                  #   size
+                  #   # list
+                  # }
                 }
               }
             }
@@ -252,12 +252,12 @@ export const query = graphql`
           text
           moreButton
           moreButtonClose
+          moreText
           icon {
             icon
             color
             size
           }
-          moreText
           isHome
         }
         titleText {
@@ -348,9 +348,9 @@ export const query = graphql`
             btnStyle
             url
             addonStyle
-            disabled
+            # disabled
           }
-          text
+          # text
         }
         highlightsLoop1 {
           title
@@ -592,8 +592,16 @@ export const query = graphql`
             text
             noSpace
             responsive
+            addonClasses
+            moreButton
+            moreButtonClose
+            moreText
             head {
               text
+              tag {
+                label
+                addonClasses
+              }
             }
             rows {
               cols {
@@ -671,6 +679,7 @@ export const query = graphql`
           components {
             name
             # responsive
+            # addonClasses
             title
             headingLevel
             specular
@@ -815,6 +824,7 @@ export const query = graphql`
             text
             title
             responsive
+            # addonClasses
             headingLevel
             # specular
             head {

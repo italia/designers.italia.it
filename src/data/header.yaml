@@ -3,9 +3,9 @@ sticky: true
 shadow: true
 border: false
 headerPre:
-  title: "Stai usando l'anteprima del nuovo Designers Italia"
-  link: Il tuo feedback è prezioso
-  url: "/community/notizie/20221220-ecco-l-anteprima-del-nuovo-designers-italia"
+  showOn: prossima.designers.italia.it
+  title: Ciao, stai navigando una versione del sito che verrà presto disattivata
+  link: Prosegui sul nuovo Designers Italia
 headerSlim:
   nav:
     id: menuC2
@@ -82,7 +82,7 @@ navbar:
             img: /images/home/home.jpg #I
             alt: "" #C
             text: | #C
-              **Designers Italia è il punto di riferimento per la progettazione** dei servizi digitali della Pubblica Amministrazione. 
+              **Designers Italia è il punto di riferimento per la progettazione** dei servizi digitali della Pubblica Amministrazione.
           heading:
             url: "/progetto/" #M
             label: Esplora il progetto Designers Italia #C
@@ -95,10 +95,6 @@ navbar:
                   label: Formazione e disseminazione
                 - url: "/progetto/storia/"
                   label: Storia
-            # - isMenu: true
-            #   listItems: #C #M
-                # - url: "modelli/lorem-ipsum"
-                #   label: Lorem ipsum
       - isDropDown: true
         isMegaMenu: true
         idMegamenu: menuB
@@ -125,9 +121,6 @@ navbar:
               listItems: #C #M
                 - url: "/norme-e-riferimenti#articoli-di-approfondimento"
                   label: Articoli di approfondimento
-                # - url: "#"
-                #   label: Altre norme e riferimenti  
-                #   disabled: true
     voicesCenter:
       - isDropDown: true
         isMegaMenu: true
@@ -155,10 +148,10 @@ navbar:
         label: Design system #C
         megamenu:
           left:
-            img: /images/design-system/fondamenti.jpg 
+            img: /images/design-system/fondamenti.jpg
             imgAlt: ""
             text: | #C
-              **Progetta e sviluppa interfacce e contenuti di siti e servizi digitali pubblici** utilizzando gli strumenti del design system del Paese. 
+              **Progetta e sviluppa interfacce e contenuti di siti e servizi digitali pubblici** utilizzando gli strumenti del design system del Paese.
           heading:
             url: "/design-system/" #M
             label: Esplora il design system del Paese #C
@@ -171,14 +164,6 @@ navbar:
                   label: Fondamenti
                 - url: "/design-system/componenti/"
                   label: Componenti
-            - isMenu: true
-              listItems: #C #M
-                # - url: "#"
-                #   label: Design pattern
-                #   disabled: true
-                # - url: "#"
-                #   label: Showcase
-                #   disabled: true
       - isDropDown: true
         isMegaMenu: true
         idMegamenu: menuE
@@ -224,36 +209,29 @@ navbar:
           cols:
             - isMenu: true
               listItems: #C #M
-                - url: "/community#eventi"
+                - url: "/community/eventi/"
                   label: Eventi
-                - url: "/community#notizie"
+                - url: "/community/notizie/"
                   label: Notizie
                 - url: "/community#articoli-di-approfondimento"
                   label: Articoli di approfondimento
-                # - url: "/community#media"
-                #   label: Media
-                #   disabled: true
             - isMenu: true
               listItems: #C #M
                 - url: "/community/piano-attivita/"
                   label: Piano attività
-                # - url: "#"
-                #   label: Progetti
-                #   disabled: true
-                # - url: "#"
-                #   label: Come partecipare
-                #   disabled: true
+                - url: "/community/contatti/"
+                  label: Contatti
 headerPost:
   isActive: true
   nav:
     id: navBanner
     ariaLabel: Potrebbe interessarti
     items: #C #M
-    - title: "Tutti gli eventi di maggio"
-      url: "/community/notizie/20230506-tutti-gli-eventi-di-designers-italia-a-maggio/"
+    - title: "Nuovi fondamenti di scrittura"
+      url: "community/notizie/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente/"
       blank: false
       icon:
-        icon: "sprites.svg#it-calendar" # it-flag, it-bookmark #I
+        icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
         size: "sm"
         align: "middle"
         color: "primary"

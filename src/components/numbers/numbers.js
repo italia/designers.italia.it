@@ -23,6 +23,7 @@ const Numbers = ({
               icon={num.icon}
               size="lg"
               addonClasses="mt-1 me-2"
+              hidden
             />
             <div className="number font-monospace fw-normal display-1">{num.number}</div>
           </div>
