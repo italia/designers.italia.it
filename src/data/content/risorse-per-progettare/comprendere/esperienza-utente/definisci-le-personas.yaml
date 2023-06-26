@@ -220,17 +220,21 @@ components:
         headingLevel: 3
         listItems:
           - label: Modello personas #C
-            srBefore: "Presentazione google:" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: "Una guida per delineare i profili delle persone che usano il tuo servizio" #C
-            url: https://docs.google.com/presentation/d/1KB6qaOKfxM0eYS-yYGIKapPshlwI4wKcsr6vprTJ3i4/edit?usp=sharing #M
-            blank: true
+            url: /files/resources/risorse-per-progettare/comprendere/esperienza-utente/definisci-le-personas/DI-Modello-Personas.odp #M
+            blank: false
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/presentation/d/1KB6qaOKfxM0eYS-yYGIKapPshlwI4wKcsr6vprTJ3i4/edit?usp=sharing #M
-                ariaLabel: "Presentazione google: Modello personas (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
-                blank: true
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: /files/resources/risorse-per-progettare/comprendere/esperienza-utente/definisci-le-personas/DI-Modello-Personas.odp #M
                 ariaLabel: "Scarica ODP Modello personas" #C #COMPILE FOR EACH ITEM
+                blank: false
+              - icon: sprites.svg#it-file-slides #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/esperienza-utente/definisci-le-personas/DI-Modello-Personas.pptx #M
+                ariaLabel: "Scarica PPTX Modello personas" #C #COMPILE FOR EACH ITEM
+                blank: false
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/esperienza-utente/definisci-le-personas/DI-Modello-Personas.pdf #M
+                ariaLabel: "Scarica PDF Modello personas" #C #COMPILE FOR EACH ITEM
                 blank: false
