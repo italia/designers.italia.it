@@ -16,7 +16,7 @@ const ListArchiveAllTags = ({
   const data = useStaticQuery(graphql`
     query {
       tags: allContent {
-        group(field: components___hero___kangaroo___tags) {
+        group(field: { components: { hero: { kangaroo: { tags: SELECT } } } }) {
           fieldValue
           totalCount
         }
@@ -27,8 +27,8 @@ const ListArchiveAllTags = ({
   let styles = classNames(
     'section-editorial',
   {
-    [`bg-${background}`]: background, 
-    'py-0': noSpace, 
+    [`bg-${background}`]: background,
+    'py-0': noSpace,
     'text-white': (background === "dark")
   })
 
