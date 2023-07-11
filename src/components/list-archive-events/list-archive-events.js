@@ -17,7 +17,7 @@ const ListArchiveEvents = ({
     query {
       allContent(
         filter: {metadata: {archive: {in: "eventi"}}}
-        sort: {order: DESC, fields: seo___pathname}
+        sort: { seo: { pathname: DESC } }
       ) {
         totalCount
         edges {
@@ -67,8 +67,8 @@ const ListArchiveEvents = ({
   let styles = classNames(
     'section-editorial',
   {
-    [`bg-${background}`]: background, 
-    'py-0': noSpace, 
+    [`bg-${background}`]: background,
+    'py-0': noSpace,
     'text-white': (background === "dark")
   })
 
