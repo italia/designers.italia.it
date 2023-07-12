@@ -152,7 +152,7 @@ export const pageQuery = graphql`
       query($tag: String) {
         allContentDesignSystemByTag: allContent(
       filter: {components: {hero: {kangaroo: {tagsDesignSystem: {in: [$tag]}}}}}
-      sort: {order: ASC, fields: components___hero___title}
+      sort: { components: { hero: { title: ASC } } }
       ) {
         totalCount
       edges {

@@ -26,7 +26,7 @@ const List = React.forwardRef(({
   const [currentUrl, setCurrentUrl] = useState('')
   const [currentTitle, setCurrentTitle] = useState('')
 
-  const ICON_ARROW_RIGHT_TRIANGLE = { 
+  const ICON_ARROW_RIGHT_TRIANGLE = {
 		icon: "sprites.svg#it-arrow-right-triangle",
 		size: "sm",
 		color: "primary",
@@ -35,12 +35,9 @@ const List = React.forwardRef(({
 	  }
 
   useEffect(() => {
-    let url = window.location.href
-    if (shareUrl) {
-      const re = new RegExp('^(?:[a-z+]+:)?//', 'i')
-      url = re.test(shareUrl) ?
-        shareUrl : `https://${window.location.hostname}${shareUrl}`
-    }
+    const url = shareUrl
+      ? new URL(shareUrl, window.location.href).toString()
+      : window.location.href;
 
     setCurrentUrl(url)
     setCurrentTitle(shareTitle)

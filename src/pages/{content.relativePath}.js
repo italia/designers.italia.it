@@ -762,7 +762,7 @@ export const query = graphql`
                 url
                 ariaLabel
                 blank
-                size
+                # size
               }
             }
             title

@@ -17,7 +17,7 @@ function ListArchiveNews({
     query {
       allContent(
         filter: {metadata: {archive: {in: "notizie"}}}
-        sort: {order: DESC, fields: seo___pathname}
+        sort: { seo: { pathname: DESC } }
       ) {
         totalCount
         edges {
@@ -67,8 +67,8 @@ function ListArchiveNews({
   const styles = classNames(
     'section-editorial',
   {
-    [`bg-${background}`]: background, 
-    'py-0': noSpace, 
+    [`bg-${background}`]: background,
+    'py-0': noSpace,
     'text-white': (background === "dark")
   })
 

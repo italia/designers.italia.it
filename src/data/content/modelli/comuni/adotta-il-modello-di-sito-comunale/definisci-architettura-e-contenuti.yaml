@@ -185,7 +185,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Progettazione contenuti,Adozione modelli]
+      tags: [Architettura informazione,Progettazione contenuti]
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -223,18 +223,14 @@ components:
         headingLevel: 3
         listItems:
           - label: Documento di Architettura dell’informazione - Comuni #C
-            srBefore: "Foglio Google :" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            #srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Indicazioni su tipologie di contenuto (content type), sistemi di navigazione e tassonomie per tutte le sezioni del sito di un Comune #C
-            url: https://docs.google.com/spreadsheets/d/1D4KbaA__xO9x_iBm08KvZASjrrFLYLKX/edit?usp=sharing&ouid=109069620194773449819&rtpof=true&sd=true #M
-            blank: true
+            url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/definisci-architettura-e-contenuti/Architettura-informazione-sito-Comuni.ods #M
+            blank: false
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.google.com/spreadsheets/d/1D4KbaA__xO9x_iBm08KvZASjrrFLYLKX/edit?usp=sharing&ouid=109069620194773449819&rtpof=true&sd=true #M
-                ariaLabel: "Foglio Google: Documento di Architettura dell’informazione - Comuni (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
-                blank: true
               - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/definisci-architettura-e-contenuti/Architettura-informazione-modello-Comuni.ods #M
+                url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/definisci-architettura-e-contenuti/Architettura-informazione-sito-Comuni.ods #M
                 ariaLabel: "Scarica ODS Documento di Architettura dell'informazione per il modello di sito comunale" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: Guida alla migrazione dei contenuti #C

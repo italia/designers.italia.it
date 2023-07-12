@@ -5,7 +5,7 @@ import Dropdown from "../dropdown/dropdown"
 
 function ShareButton({ title, url, color = 'primary', small = false}) {
   // TODO: Compatibility structure that Dropdown understands.
-  // Dropdown should not have the logic it for the share UI
+  // Dropdown should not have the logic in it for the share UI
   const shareOpts = {
     button: {
       icon: {

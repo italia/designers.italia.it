@@ -12,7 +12,7 @@ function ListArchiveDSTags() {
   const data = useStaticQuery(graphql`
     query {
       tagsDesignSystem: allContent {
-        group(field: components___hero___kangaroo___tagsDesignSystem) {
+        group(field: { components: { hero: { kangaroo: { tagsDesignSystem: SELECT } } } }) {
           fieldValue
           totalCount
         }

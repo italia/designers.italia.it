@@ -22,7 +22,7 @@ function FooterMain({
   const data = useStaticQuery(graphql`
   query {
     footerTags: allContent {
-      group(field: components___hero___kangaroo___tags) {
+      group(field: { components: { hero: { kangaroo: { tags: SELECT } } } }) {
         fieldValue
         totalCount
       }
@@ -30,7 +30,7 @@ function FooterMain({
   }
   `)
 
-  data.footerTags.group.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount)); 
+  data.footerTags.group.sort((a, b) => parseFloat(b.totalCount) - parseFloat(a.totalCount));
   const footerTags = data.footerTags.group.slice(0, tagsNo)
 
   return (

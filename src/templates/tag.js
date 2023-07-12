@@ -139,7 +139,7 @@ export const pageQuery = graphql`
   query($tag: String) {
     allContentByTag: allContent(
       filter: {components: {hero: {kangaroo: {tags: {in: [$tag]}}}}}
-      sort: {order: ASC, fields: components___hero___title}
+      sort: { components: { hero: { title: ASC } } }
     ) {
       totalCount
       edges {
@@ -179,7 +179,7 @@ export const pageQuery = graphql`
 
 export function Head({ pageContext, data: { content } }) {
   const { tag } = pageContext
-  return ( 
+  return (
   <Seo
     title = {`${tag} - Designers Italia`}
     description = {`Tutti i contenuti relativi all'argomento "${tag}"`}
