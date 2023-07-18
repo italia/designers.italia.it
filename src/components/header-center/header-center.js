@@ -5,9 +5,9 @@ import ImageResponsive from "../image-responsive/image-responsive"
 import "./header-center.scss"
 
 
-const HeaderCenter = ({data}) => {
+function HeaderCenter({data}) {
 
-  //-search zone
+  // -search zone
   function search(boolean) {
     if (boolean) {
       return(
@@ -21,22 +21,20 @@ const HeaderCenter = ({data}) => {
   }
 
 
-  //-socials zone
+  // -socials zone
   function socials(boolean) {
     if (boolean) {
       return (
         <div className="it-socials d-none d-md-flex">
           <span>{data.socials.title}</span>
           <ul>
-            {data.socials.items.map((value,index)=>{
-              return(
-                <li key={"social-item-"+index}>
+            {data.socials.items.map((value,index)=>(
+                <li key={`social-item-${index}`}>
                   <Link to={value.url} aria-label={value.title} target="_blank" rel="noreferrer">
                     <Icon icon={value.icon}/>
                   </Link>
                 </li>
-              )
-            })}
+              ))}
           </ul>
         </div>
       )

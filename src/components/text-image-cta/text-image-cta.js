@@ -6,7 +6,7 @@ import "./text-image-cta.scss"
 import ImageResponsive from "../image-responsive/image-responsive"
 import ContentCollapse from "../content-collapse/contentCollapse"
 
-const TextImageCta =({
+function TextImageCta({
   title,
   headingLevel,
   lead,
@@ -19,10 +19,10 @@ const TextImageCta =({
   moreButton,
   moreButtonClose,
   moreText
-}) => {
+}) {
 
 
-  //heading level
+  // heading level
 	let HLevel
 	if (headingLevel) {
 		HLevel = `h${headingLevel}`;
@@ -33,20 +33,18 @@ const TextImageCta =({
   let ctaItems
 
   if (ctas) {
-    ctaItems = ctas.map((item,index) => {
-      return(
-        <SimpleCta {...item} key={"cta-"+index}/>
-      )
-    })
+    ctaItems = ctas.map((item,index) => (
+        <SimpleCta {...item} key={`cta-${index}`}/>
+      ))
   }
 
-  let styles = "text-image-cta d-flex"
+  const styles = "text-image-cta d-flex"
   + `${noSpace ? ' mb-0' : ' mb-5 /*mb-lg-5*/'}`
   + `${image && specular ? ' flex-column flex-sm-row' : ''}` 
   + `${image && !specular ? ' flex-column flex-sm-row-reverse' : ''}` 
-  let imageWrapperStyles = "image-cta w-25 d-flex align-items-start"
+  const imageWrapperStyles = "image-cta w-25 d-flex align-items-start"
   + `${specular ? ' justify-content-end me-4' : ' justify-content-start ms-sm-4'}`
-  let contentStyles = "content"
+  const contentStyles = "content"
   + `${image ? ' w-75 pt-4 pt-sm-0' : ' w-100'}`
 
   return (

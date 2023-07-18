@@ -4,16 +4,16 @@ import Button from "../button/button"
 import Chip from "../chip/chip"
 import "./topics.scss"
 
-const Topics = ({
+function Topics({
   title,
   headingLevel,
   icon,
   chips,
   tags,
   button
-}) => {
+}) {
 
-  //heading level
+  // heading level
 	let HLevel
 	if (headingLevel) {
 		HLevel = `h${headingLevel}`;
@@ -33,11 +33,9 @@ const Topics = ({
               <div className="content">
                 <HLevel className="h4 fw-bold mb-2">{title}</HLevel>
                 {tags && <div className="chip-container">
-                  { tags.map((tag,index) => {
-                    return(
-                      <Chip key={"chip-"+index} label={tag} size="lg" color="primary" />
-                    )
-                  })}
+                  { tags.map((tag,index) => (
+                      <Chip key={`chip-${index}`} label={tag} size="lg" color="primary" />
+                    ))}
                 </div>
               }
               </div>

@@ -2,18 +2,18 @@ import * as React from "react"
 import Link from "../link/link"
 import './tag.scss'
 
-const Tag = ({
+function Tag({
 	url,
 	children,
 	label,
   addonClasses,
   screenReaderText
-}) => {
+}) {
 	if (label) {
 		children = label
 	}
-  let styles = "tag"
-    + `${addonClasses ? ' '+addonClasses : ''}`
+  const styles = "tag"
+    + `${addonClasses ? ` ${addonClasses}` : ''}`
 
   if (url) {
     return(
@@ -22,14 +22,14 @@ const Tag = ({
         {children}
       </Link>
     )
-  } else {
+  } 
     return(
       <span className={styles}>
          {screenReaderText && <span className="visually-hidden">{screenReaderText}</span>}
         {children}
       </span>
     )
-  }
+  
 
 }
 

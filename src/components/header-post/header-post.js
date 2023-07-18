@@ -6,7 +6,7 @@ import "./header-post.scss"
 
 let styles
 
-let iconNewsletter = ({
+const iconNewsletter = ({
     icon: "sprites.svg#it-mail",
     size: "sm",
     align : "middle",
@@ -15,7 +15,7 @@ let iconNewsletter = ({
     addonClasses: "ms-2"
   })
 
-const HeaderPost = ({data}) => {
+function HeaderPost({data}) {
 	if (data.isActive){
 		return (
 			<section aria-labelledby={data.nav.id}>
@@ -34,7 +34,7 @@ const HeaderPost = ({data}) => {
 														styles="list-item text-nowrap me-5"
 													}
 													return(
-													<li key={"banner-item-"+index} className={styles} >
+													<li key={`banner-item-${index}`} className={styles} >
 														<Link
 														to={value.url}
 														target={value.blank ? "_blank" : undefined}
@@ -46,7 +46,7 @@ const HeaderPost = ({data}) => {
 													</li>
 													)
 												})}
-												<li key={"banner-item-"+data.nav.items.length+1} className="list-item text-nowrap ms-5 me-md-0">
+												<li key={`banner-item-${data.nav.items.length}${1}`} className="list-item text-nowrap ms-5 me-md-0">
 													<Link
 													className="simple-cta fw-semibold"
 													to={data.nav.newsletter.url}

@@ -1,19 +1,15 @@
 import React from "react"
 
-const Skiplinks = (
-  {data}
-) => {
+function Skiplinks({data}) {
 
   let skiplinksItems
 
   if (data) {
-    skiplinksItems = data.map((item,index) => {
-      return(
-        <a className="visually-hidden-focusable" key={"skiplink-"+index} href={item.url}>
+    skiplinksItems = data.map((item,index) => (
+        <a className="visually-hidden-focusable" key={`skiplink-${index}`} href={item.url}>
           {item.label}
         </a>
-      )
-    })
+      ))
   }
 
   return (

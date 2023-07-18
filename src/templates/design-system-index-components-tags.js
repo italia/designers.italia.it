@@ -2,6 +2,7 @@ import * as React from "react"
 import "../scss/styles.scss"
 import "../js/globals"
 
+import { graphql } from "gatsby"
 import Skiplinks from "../components/skiplinks/skiplinks"
 import Header from "../components/header/header"
 import Footer from "../components/footer/footer"
@@ -26,11 +27,10 @@ import dsNav from "../data/dsnav.yaml"
 import Link from "../components/link/link"
 import ListItem from "../components/list-item/list-item"
 import ListArchiveDSTags from "../components/list-archive-ds-tags/list-archive-ds-tags"
-import { graphql } from "gatsby"
 
 import { Seo } from "../components/seo/seo"
 
-const TagsDesignSystem = ({ children, pageContext, location, data }) => {
+function TagsDesignSystem({ children, pageContext, location, data }) {
   const lastModified = data.content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
 
   const { tag } = pageContext
@@ -44,10 +44,10 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
     addonClasses: 'mt-1 flex-shrink-0 me-1 me-md-3'
   }
 
-  let container = "container-xxl"
-  let row = "row"
+  const container = "container-xxl"
+  const row = "row"
 
-  let styles = 'section-editorial'
+  const styles = 'section-editorial'
 
   const showTags = true
 
@@ -67,7 +67,7 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
           <div className="row design-system">
             <NavSidebar page="Panoramica componenti" {...dsNav} />
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
-              <Hero {...TagPageData.components.hero} title={tag} subtitle={`Tutti i componenti del design system utili per "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo}></Hero>
+              <Hero {...TagPageData.components.hero} title={tag} subtitle={`Tutti i componenti del design system utili per "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo} />
 
               {/* { Pagedata.components.filterCards && <FilterCards {...Pagedata.components.filterCards}/>} */}
 
@@ -117,7 +117,7 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
 
                       <div className="mb-5 ps-4">
                         {showTags &&
-                          <ListArchiveDSTags></ListArchiveDSTags>
+                          <ListArchiveDSTags />
                         }
                       </div>
 
@@ -133,8 +133,7 @@ const TagsDesignSystem = ({ children, pageContext, location, data }) => {
         {children}
         {lastModified && <LastUpdate lastModified={lastModified} {...TagPageData.lastUpdate} {...location} {...pageContext} />}
         <Feedback />
-        <Footer {...FooterData.footer}>
-        </Footer>
+        <Footer {...FooterData.footer} />
         <BackToTopEl
           positionTop={0}
           scrollLimit={100}
@@ -191,7 +190,7 @@ export const pageQuery = graphql`
       `
 
 
-export const Head = ({ pageContext, data: { content } }) => {
+export function Head({ pageContext, data: { content } }) {
   const { tag } = pageContext
   return (
     <Seo
@@ -201,7 +200,6 @@ export const Head = ({ pageContext, data: { content } }) => {
       // twitterImage = {content.seo.twitterImage}
       pathname={`/design-system/argomenti/"${tag}"/`}
     // canonical = {content.seo.canonical}
-    >
-    </Seo>
+     />
   )
 }

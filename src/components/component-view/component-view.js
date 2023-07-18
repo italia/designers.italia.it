@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react"
 import uniqueId from "lodash/uniqueId"
 
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
+import loadable from "@loadable/component"
 import Button from "../button/button"
 import Checkbox from "../checkbox/checkbox"
 import Icon from "../icon/icon"
-import loadable from "@loadable/component"
 
 import "./component-view.scss"
 
@@ -15,7 +15,7 @@ const slugify = require('slugify')
 
 const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'))
 
-const ComponentView = ({
+function ComponentView({
   name,
   source,
   content,
@@ -28,7 +28,7 @@ const ComponentView = ({
   accordionUrl,
   accordionSrLabel,
   accordionSrCopyLabel,
-}) => {
+}) {
 
   const ICON_EXTERNAL = {
     icon: "sprites.svg#it-external-link",
@@ -113,25 +113,23 @@ const ComponentView = ({
   const [previewWidth, setPreviewWidth] = useState(" viewer-desktop")
   const changeResolution = (e) => {
     e.preventDefault()
-    let res = e.target.textContent // mobile, tablet, desktop
+    const res = e.target.textContent // mobile, tablet, desktop
     setPreviewWidth(` viewer-${res}`)
   }
 
   let responsiveButtonsItems
   if (viewer) {
-    responsiveButtonsItems = (viewer.responsiveButtons).map((item, index) => {
-      return (
-        <Button onClick={(e) => changeResolution(e)} key={"rb" + index} {...item} />
-      )
-    })
+    responsiveButtonsItems = (viewer.responsiveButtons).map((item, index) => (
+        <Button onClick={(e) => changeResolution(e)} key={`rb${  index}`} {...item} />
+      ))
   }
 
-  let componentStyles = "border-bottom p-xl-3 d-flex flex-column align-items-center"
+  const componentStyles = "border-bottom p-xl-3 d-flex flex-column align-items-center"
     + `${responsiveButtonsItems ? ' pb-4' : ''}`
 
-  let accordionStyle = "accordion-collapse collapse"
+  const accordionStyle = "accordion-collapse collapse"
     + `${accordionOpen ? ' show' : ' hide'}`
-  let accordionButtonStyle = "accordion-button border-top-0 collapsed"
+  const accordionButtonStyle = "accordion-button border-top-0 collapsed"
     + `${accordionOpen ? ' collapsed' : ''}`
 
   const BSIExampleUrl = `/examples/${source}/${slugify(name).toLowerCase()}.html`
@@ -140,7 +138,7 @@ const ComponentView = ({
     <div id={uuid}>
       <div className={componentStyles}>
         <span className="visually-hidden">Inizio componente:</span>
-        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}></iframe>
+        <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${name}`} className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`} />
         <span className="visually-hidden">Fine componente.</span>
         {responsiveButtonsItems &&
           <div className="responsive-buttons d-none d-lg-block">
@@ -179,14 +177,14 @@ const ComponentView = ({
               </div>
             </div>
 
-            <div id={collId} className={accordionStyle} data-bs-parent={'#' + accId} role="region" aria-labelledby={headId}>
+            <div id={collId} className={accordionStyle} data-bs-parent={`#${  accId}`} role="region" aria-labelledby={headId}>
               <div className="accordion-body p-0">
                 <div aria-hidden="true" className="d-flex flex-row-reverse">
                   {content &&
-                    <Checkbox id={`${idPrefix}-wrap`} label='Mostra codice a capo' customStyle={'me-4'} checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
+                    <Checkbox id={`${idPrefix}-wrap`} label='Mostra codice a capo' customStyle="me-4" checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
                   }
                 </div>
-                <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
+                <SyntaxHighlighter language="markup" style={theme} showLineNumbers wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
                   {content}
                 </SyntaxHighlighter>
               </div>

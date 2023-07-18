@@ -1,10 +1,10 @@
 import React from "react"
 import LinkCustom from "../link-custom/link-custom"
 
-const NavOtherPrevNext = ({
+function NavOtherPrevNext({
   prev,
   next
-}) => {
+}) {
 
   if (prev) {
     prev.imageClass = "mx-3"

@@ -5,7 +5,7 @@ Toggle the text of a paragraph with the checkbox using the 'useState' hook.
 
 import React, { useState } from 'react';
 
-const Checkbox = (props) => {
+function Checkbox(props) {
     const {
         id,
         label,
@@ -13,7 +13,7 @@ const Checkbox = (props) => {
         customStyle,
         handleChange,
     } = props;
-    const defaultChecked = checked ? checked : false;
+    const defaultChecked = checked || false;
     const [isChecked, setIsChecked] = useState(defaultChecked);
     const onClickEvent = (e) => {
         e.preventDefault();
@@ -21,11 +21,11 @@ const Checkbox = (props) => {
         handleChange(!isChecked)
     }
     return (
-        <div className={"form-check " + customStyle} onClick={onClickEvent}>
+        <div className={`form-check ${  customStyle}`} onClick={onClickEvent}>
             <input id={id} type="checkbox" checked={isChecked} onChange={()=>{}}/>
             <label htmlFor={id}>{label}</label>
         </div>
     );
-};
+}
 
 export default Checkbox;

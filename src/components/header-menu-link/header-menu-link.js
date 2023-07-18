@@ -6,13 +6,13 @@ import "./header-menu-link.scss"
 
 import { Link } from "gatsby";
 
-const HeaderMenuLink = ({
+function HeaderMenuLink({
 	isDropDown,
 	idMegamenu,
 	label,
 	url,
 	page
-}) => {
+}) {
 
   useEffect(() => {
     new Dropdown(document.getElementById(idMegamenu), {})
@@ -43,11 +43,11 @@ const HeaderMenuLink = ({
         {icon(isDropDown)}
       </button>
     )
-  } else {
+  } 
     return (
       <Link
         className={styles}
-        href={url ? url : '#'}
+        href={url || '#'}
         data-bs-toggle={isDropDown ? 'dropdown' : undefined}
         aria-expanded={isDropDown ? 'false' : undefined}
         id={idMegamenu}
@@ -56,7 +56,7 @@ const HeaderMenuLink = ({
         {icon(isDropDown)}
       </Link>
     )
-  }
+  
 
 }
 export default HeaderMenuLink

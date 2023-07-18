@@ -2,18 +2,18 @@ import * as React from "react"
 import ReactMarkdown from "react-markdown"
 import "./title-text.scss"
 
-const TitleText = ({
+function TitleText({
   id,
   title,
   background,
   headingLevel,
   text
-}) => {
+}) {
 
-  let styles = 'title-text py-5 '
-	+ `${background ? ' bg-'+background : ''}`
+  const styles = 'title-text py-5 '
+	+ `${background ? ` bg-${background}` : ''}`
 
-  //heading level
+  // heading level
 	let HLevel
 	if (headingLevel) {
 		HLevel = `h${headingLevel}`;

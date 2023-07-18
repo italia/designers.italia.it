@@ -7,7 +7,7 @@ import Tag from "../tag/tag"
 import ListItem from "../list-item/list-item"
 import './search-main.scss'
 
-const SearchMain = ({
+function SearchMain({
   location,
   howMany,
   isResultsPage,
@@ -20,7 +20,7 @@ const SearchMain = ({
   button,
   suggest,
   background
-}) => {
+}) {
 
   const [input, setInput] = useState(() => location?.state?.searchTerm)
   const [searchTerm, setSearchTerm] = useState(() => location?.state?.searchTerm)
@@ -76,15 +76,15 @@ const SearchMain = ({
   }
 
   const searchOptions = {
-    limit: `${howMany ? howMany : ''}`,
+    limit: `${howMany || ''}`,
     // if true "fill" the spaces with suggestions, useful for multiple words query XXX
     suggest: useSuggestionEngine,
   }
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions)
 
-  let styles = 'search-main'
-    + `${background ? ' bg-' + background : ''}`
+  const styles = 'search-main'
+    + `${background ? ` bg-${  background}` : ''}`
 
   return (
     <section className={styles}>
@@ -118,7 +118,7 @@ const SearchMain = ({
                 <form id={formId} onSubmit={formSubmit}>
                   <div className="d-flex flex-column align-items-center flex-sm-row w-100">
                     <div className="form-group mb-0 flex-grow-1 me-sm-4 w-100">
-                      <label ref={searchLabelRef} /*className="active"*/ htmlFor={inputId}>{label}</label>
+                      <label ref={searchLabelRef} /* className="active" */ htmlFor={inputId}>{label}</label>
                       <input
                         type="search"
                         className="border-search form-control-lg search"
@@ -127,7 +127,7 @@ const SearchMain = ({
                         placeholder=""
                         autoComplete="off"
                         minLength="3"
-                        required={true}
+                        required
                         onChange={ev => setInput(ev.target.value)}
                         value={input || ''}
                       />
@@ -156,8 +156,8 @@ const SearchMain = ({
                                 <strong>{result.title}</strong>
                               </h3>
                               <div>
-                                {(result.tag !== "undefined") ? <div className="mb-2 mt-1 mb-md-0 mt-md-0"><Tag label={result.tag} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"></Tag></div> : null}
-                                {(result.template === 'level1' || result.template === 'community') ? <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block "><Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal"></Tag></div> : null}
+                                {(result.tag !== "undefined") ? <div className="mb-2 mt-1 mb-md-0 mt-md-0"><Tag label={result.tag} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal" /></div> : null}
+                                {(result.template === 'level1' || result.template === 'community') ? <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block "><Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal" /></div> : null}
                               </div>
                             </div>
                             <p className="text-secondary fw-normal d-block mb-3">

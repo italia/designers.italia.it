@@ -4,18 +4,16 @@ import kebabCase from "lodash/kebabCase"
 import './chip.scss'
 import Link from "../link/link"
 
-const Chip = (
-	{
+function Chip({
 		size,
 		color,
 		path,
 		label,
 		children,
-	}
-) => {
+	}) {
 	const styles = 'chip chip-simple'
-		+ `${size ? ' chip-' + size : ''}`
-		+ `${color ? ' chip-' + color : ''}`
+		+ `${size ? ` chip-${  size}` : ''}`
+		+ `${color ? ` chip-${  color}` : ''}`
 
 	if (!path) path = "argomenti"
 

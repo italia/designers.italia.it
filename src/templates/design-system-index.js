@@ -25,7 +25,7 @@ import skipLinksData from "../data/skiplinks.yaml"
 import dsNav from "../data/dsnav.yaml"
 
 
-const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
+function Template({children,Pagedata,pageContext,location, lastModified}) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} location={location}/>
@@ -42,20 +42,16 @@ const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
           <div className="row design-system">
             <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
-              { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
-              {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
-                return(
-                  <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
-                )
-              })}
+              { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo} />}
+              {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => (
+                  <SectionEditorial key={`sectionEditorial-${index}`} {...section}/>
+                ))}
 
               { Pagedata.components.filterCards && <FilterCards {...Pagedata.components.filterCards}/>}
 
-              {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => {
-                return(
-                  <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
-                )
-              })}
+              {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => (
+                  <SectionEditorial key={`sectionEditorial2-${index}`} {...section}/>
+                ))}
              {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
             </main>
           </div>
@@ -63,8 +59,7 @@ const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
         {children}
         <Feedback/>
       </div>
-      <Footer {...FooterData.footer}>
-      </Footer>
+      <Footer {...FooterData.footer} />
       <BackToTopEl
         positionTop={0}
         scrollLimit={100}
