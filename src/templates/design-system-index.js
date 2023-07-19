@@ -25,8 +25,9 @@ import skipLinksData from "../data/skiplinks.yaml"
 import dsNav from "../data/dsnav.yaml"
 
 
-const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
+function Template({children,Pagedata,pageContext,location, lastModified}) {
   const variantMock = Pagedata.metadata.json
+    // eslint-disable-next-line import/no-dynamic-require, global-require
     ? require(`../data/components_json/${Pagedata.metadata.json}`)
     : null
 	return (
@@ -45,18 +46,14 @@ const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
           <div className="row design-system">
             <NavSidebar page={Pagedata.seo.name} {...dsNav}/>
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
-              { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
-              {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
-                if (variantMock) {
-                  return(
-                    <SectionEditorial key={"sectionEditorial-"+index} {...section} componentViewerData={{ variants: variantMock }}/>
-                  )
-                } else {
-                  return(
-                    <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
-                  )
-                }
-              })}
+              { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}/>}
+              {Pagedata.components.sectionsEditorial?.map((section,index) => (
+                <SectionEditorial
+                  key={`sectioneditorial-${index}`}
+                  componentViewerData={variantMock ? { variants: variantMock } : undefined}
+                  {...section}
+                />
+              ))}
 
               { Pagedata.components.filterCards && <FilterCards {...Pagedata.components.filterCards}/>}
 

@@ -60,17 +60,17 @@ function SearchMain({
     if (searchLabelRef.current && input) {
       searchLabelRef.current.className = "active"
     }
-  }, [storedInput])
+  }, [storedInput, input])
+
+  const search = (term) => {
+    setSearchTerm(term)
+    setFormSubmitted(true)
+    setStoredInput(term)
+  }
 
   const formSubmit = (ev) => {
     ev.preventDefault();
     search(ev.target.elements.search.value);
-    setFormSubmitted(true)
-    setStoredInput(input)
-  }
-
-  const search = (input) => {
-    setSearchTerm(input)
     setFormSubmitted(true)
     setStoredInput(input)
   }
@@ -141,10 +141,10 @@ function SearchMain({
                       <div className="fw-normal text-muted">
                         <div className="live-region" tabIndex="-1" ref={liveRegionRef}>
                           {(formSubmitted) && (results.length > 0) &&
-                            <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Di seguito i migliori risultati per "<strong><mark>{storedInput}</mark></strong>":</p></div>
+                            <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Di seguito i migliori risultati per &ldquo;<strong><mark>{storedInput}</mark></strong>&rdquo;:</p></div>
                           }
                           {(formSubmitted) && (results.length === 0) &&
-                            <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Non ci sono risultati utili per "<strong><mark>{storedInput}</mark></strong>", possiamo aiutarti in altro modo?</p></div>
+                            <div className="mt-2 px-sm-2 px-md-4 pt-4"><p>Non ci sono risultati utili per &ldquo;<strong><mark>{storedInput}</mark></strong>&rdquo;, possiamo aiutarti in altro modo?</p></div>
                           }
                         </div>
                       </div>

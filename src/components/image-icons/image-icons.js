@@ -21,7 +21,10 @@ function ImageIcons({
 
   if (icons) {
     iconItems = icons.map((item,index) => {
+      // FIXME
+      // eslint-disable-next-line no-param-reassign
       item.icon.addonClasses = "flex-shrink-0"
+      // eslint-disable-next-line no-param-reassign
       item.icon.hidden = true
       return(
         <Icon {...item.icon} key={`icons-${index}`}/>

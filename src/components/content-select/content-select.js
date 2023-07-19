@@ -16,6 +16,11 @@ function ContentSelect({
   label
 }) {
 
+  // FIXME: Using Number.isNaN() breaks the component viewer in the *static*
+  // build, while still working with the dev server. No clue why.
+  // https://github.com/italia/designers.italia.it/pull/842#issuecomment-1691861173
+  //
+  // eslint-disable-next-line no-restricted-globals
   const [itemSelected, setItemSelected] = useState(!isNaN(selectedIdx) ? VARIANT_PREFIX + selectedIdx : VARIANT_PREFIX + 0)
 
   const changeValue = (evt) => {

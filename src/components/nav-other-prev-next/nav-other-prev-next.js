@@ -7,10 +7,12 @@ function NavOtherPrevNext({
 }) {
 
   if (prev) {
+    // eslint-disable-next-line no-param-reassign
     prev.imageClass = "mx-3"
   }
 
   if (next) {
+    // eslint-disable-next-line no-param-reassign
     next.imageClass = "mx-3"
   }
 

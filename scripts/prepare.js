@@ -1,3 +1,5 @@
+/* eslint-disable no-console */ // console.log is ok here for progress reporting
+
 const {generateExamples} = require("./generate-examples.js")
 const {downloadExamples} = require("./download-examples.js")
 

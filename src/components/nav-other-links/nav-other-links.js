@@ -12,6 +12,7 @@ function NavOtherLinks({
 
   if (items) {
     linkItems = items.map((item,index) => {
+      // eslint-disable-next-line no-param-reassign
       item.imageClass = "me-3"
       return(
         <div className="col-10 mb-2 mb-md-0 col-md-6 col-lg-3" key={`link-${index}`}>
