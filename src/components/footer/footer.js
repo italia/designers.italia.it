@@ -4,13 +4,13 @@ import FooterMain from "../footer-main/footer-main"
 import FooterSmall from "../footer-small/footer-small"
 
 
-const Footer = ({
+function Footer({
   title,
   footerProject,
   footerContribute,
   footerMain,
   footerSmall,
-}) => {
+}) {
 
   return (
 	<footer className="it-footer">

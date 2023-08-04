@@ -3,14 +3,14 @@ import Icon from "../icon/icon"
 import Link from "../link/link"
 import './simple-cta.scss'
 
-const SimpleCta = ({
+function SimpleCta({
 	icon,
 	children,
 	label,
 	url,
 	blank,
 	screenReaderText
-}) =>{
+}) {
 	if (label) {
 		children = label
 	}
@@ -19,12 +19,12 @@ const SimpleCta = ({
 		{ url && <Link className="simple-cta py-1 mb-3" to={url} target={blank ? '_blank' : undefined} rel={blank ? 'noreferrer' : undefined}>
 			<span className="text">{children}</span>
 			<span className="visually-hidden">{screenReaderText}</span>
-			<Icon {...icon}></Icon>
+			<Icon {...icon} />
 		</Link>}
     { !url && <span className="simple-cta py-1 mb-3">
 			<span className="text">{children}</span>
 			<span className="visually-hidden">{screenReaderText}</span>
-			<Icon {...icon}></Icon>
+			<Icon {...icon} />
 		</span>}
     </>
 	)

@@ -25,7 +25,7 @@ import dsNav from "../data/dsnav.yaml"
 import viewerData from "../data/component-viewer.yaml"
 
 
-const Template = ({Pagedata,pageContext,location, lastModified}) => {
+function Template({Pagedata,pageContext,location, lastModified}) {
   if (!Pagedata.metadata.json) {
     throw new Error('json key is required for design-system-component!');
   }
@@ -46,13 +46,13 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
           <div className="row design-system">
             <NavSidebar page={Pagedata.components.hero.title} {...dsNav}/>
             <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
-              { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
+              { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo} />}
               <Tab
                 viewerData={viewerData}
                 componentSource={Pagedata.metadata.json.replace(".json", "")}
-                tab01={Object.assign({}, Pagedata.tabs[0], { variants: variantMock })}
+                tab01={({ ...Pagedata.tabs[0], variants: variantMock})}
                 tab02={Pagedata.tabs[1]}
-                tab03={Object.assign({}, Pagedata.tabs[2], { variants: variantMock })}
+                tab03={({ ...Pagedata.tabs[2], variants: variantMock})}
               />
               {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
             </main>
@@ -61,8 +61,7 @@ const Template = ({Pagedata,pageContext,location, lastModified}) => {
 
         <Feedback/>
       </div>
-      <Footer {...FooterData.footer}>
-      </Footer>
+      <Footer {...FooterData.footer} />
     </div>
 	)
 }

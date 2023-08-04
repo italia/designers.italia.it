@@ -26,7 +26,7 @@ import HeaderData from "../data/header.yaml"
 import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 
-const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
+function Template({children,Pagedata,pageContext,location,lastModified}) {
 
   let activePage = null
 
@@ -47,25 +47,21 @@ const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
       </Header>
       <main id="main">
 
-        { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
+        { Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo} />}
         { Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}/>}
         { Pagedata.components.titleText && <TitleText {...Pagedata.components.titleText}/>}
 
-        { Pagedata.components.highlightsLoop1 && Pagedata.components.highlightsLoop1.map((hl,index) => {
-          return(
-            <Highlight key={"hl-"+index} {...hl}/>
-          )
-        })}
+        { Pagedata.components.highlightsLoop1 && Pagedata.components.highlightsLoop1.map((hl,index) => (
+            <Highlight key={`hl-${index}`} {...hl}/>
+          ))}
 
         { Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}
 
         { Pagedata.components.highlightCards && <HighlightCards {...Pagedata.components.highlightCards} /> }
 
-        { Pagedata.components.highlightsLoop2 && Pagedata.components.highlightsLoop2.map((hl,index) => {
-          return(
-            <Highlight key={"hl-"+index} {...hl}/>
-          )
-        })}
+        { Pagedata.components.highlightsLoop2 && Pagedata.components.highlightsLoop2.map((hl,index) => (
+            <Highlight key={`hl-${index}`} {...hl}/>
+          ))}
 
         { Pagedata.components.topics && <Topics {...Pagedata.components.topics}/> }
 
@@ -73,8 +69,7 @@ const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
         {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>
       </main>
-      <Footer {...FooterData.footer}>
-      </Footer>
+      <Footer {...FooterData.footer} />
       <BackToTopEl
         positionTop={0}
         scrollLimit={100}

@@ -9,7 +9,7 @@ import ShareButton from "../share-button/share-button"
 import Tag from "../tag/tag"
 import Kangaroo from "../kangaroo/kangaroo"
 
-const Hero = ({
+function Hero({
   pageContext,
   name,
   crumbLabel,
@@ -33,11 +33,11 @@ const Hero = ({
   bgImgAlt,
   kangaroo,
   noBorder
-}) => {
-  let styles = 'hero'
-    + `${background ? ' bg-' + background : ''}`
+}) {
+  const styles = 'hero'
+    + `${background ? ` bg-${  background}` : ''}`
     + `${column ? ' column-hero' : ''}`
-  //heading level
+  // heading level
   let HLevel
   let SubtitleLevel
   if (headingLevel) {
@@ -48,28 +48,28 @@ const Hero = ({
     SubtitleLevel = `p`
   }
 
-  let textStyle = "texts py-3"
+  const textStyle = "texts py-3"
     + `${centered ? ' pb-lg-4' : ' pb-lg-5'}`
 
-  let imgStyle = 'img-wrapper ratio mb-4 mb-lg-3 rounded'
-    + `${imgRatio ? ' ratio-' + imgRatio : ''}`
+  const imgStyle = 'img-wrapper ratio mb-4 mb-lg-3 rounded'
+    + `${imgRatio ? ` ratio-${  imgRatio}` : ''}`
 
-  let imgResponsiveStyle = 'rounded'
+  const imgResponsiveStyle = 'rounded'
 
-  let rowStyle = 'row g-0'
+  const rowStyle = 'row g-0'
     + `${centered ? ' justify-content-lg-center' : ''}`
 
   let columnStyle = ' col-12 g-0 px-3' // col-md-10 offset-md-1'
     + `${centered ? ' col-lg-7 offset-lg-0' : ' ps-lg-5 pe-lg-0 col-lg-7'}`
 
-  let breadcrumbsStyle = 'hero-top px-3 pt-4'
+  const breadcrumbsStyle = 'hero-top px-3 pt-4'
     + `${column ? ' ' : ' px-lg-5 '}`
 
-  let kangarooZoneStyle = 'kangaroo-zone'
+  const kangarooZoneStyle = 'kangaroo-zone'
     + `${noBorder ? ' no-border' : ''}`
     + `${specialKangarooComponent ? ' pb-4 pb-md-5 pb-lg-0' : ''}`
 
-  let kangarooColumnStyle = 'col-12 g-0' //col-12 col-md-10 offset-md-1'
+  let kangarooColumnStyle = 'col-12 g-0' // col-12 col-md-10 offset-md-1'
     + `${centered ? ' col-lg-7 offset-lg-0 ' : ''}`
 
   let rightColumnStyle = "  col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4"
@@ -93,9 +93,9 @@ const Hero = ({
             <div className="col-12 g-0">
               <div className={breadcrumbsStyle}>
                 {crumbLabel ? (
-                  <Breadcrumbs pageContext={pageContext} crumbLabel={crumbLabel} title={name} ></Breadcrumbs> 
+                  <Breadcrumbs pageContext={pageContext} crumbLabel={crumbLabel} title={name}  /> 
                 ) : (
-                  <Breadcrumbs pageContext={pageContext} title={name} ></Breadcrumbs>
+                  <Breadcrumbs pageContext={pageContext} title={name}  />
                 )}
               </div>
               <div className="hero-main">
@@ -104,14 +104,14 @@ const Hero = ({
                     <div className={textStyle}>
                       <div className="d-flex align-items-start flex-wrap">
                         <HLevel className="title">{title}</HLevel>
-                        {titleTag && <Tag {...titleTag}></Tag>}
+                        {titleTag && <Tag {...titleTag} />}
                       </div>
                       <SubtitleLevel className="subtitle fw-normal fs-10">{subtitle}</SubtitleLevel>
-                      {tag && <Tag {...tag}></Tag>}
+                      {tag && <Tag {...tag} />}
                       {pretext &&
                         <div className="bottom-text">
                           <div className="pre-text">
-                            {pretext.icon && <Icon {...pretext.icon} addonClasses="me-2"></Icon>}
+                            {pretext.icon && <Icon {...pretext.icon} addonClasses="me-2" />}
                             <span className="text-uppercase">{pretext.text}</span>
                           </div>
                           {text && <ReactMarkdown>{text}</ReactMarkdown>}
@@ -123,9 +123,9 @@ const Hero = ({
                       <div className="">
                         <div className={kangarooZoneStyle}>
                           <div className="container-xxl">
-                            <div className="row justify-content-lg-center">{/*rowStyle*/}
+                            <div className="row justify-content-lg-center">{/* rowStyle */}
                               <div className={kangarooColumnStyle}>
-                                <Kangaroo {...kangaroo}></Kangaroo>
+                                <Kangaroo {...kangaroo} />
                               </div>
                             </div>
                           </div>
@@ -139,7 +139,7 @@ const Hero = ({
                       {img && <div className={imgStyle}>
                         <ImageResponsive src={img} alt={alt} imgClassName={imgResponsiveStyle} />
                       </div>}
-                      {<ShareButton title={title} url={url} color={shareColor} />}
+                      <ShareButton title={title} url={url} color={shareColor} />
                     </div>
                   }
                 </div>
@@ -151,9 +151,9 @@ const Hero = ({
       {kangaroo && !specialKangarooComponent &&
         <div className={kangarooZoneStyle}>
           <div className="container-xxl">
-            <div className="row justify-content-lg-center">{/*rowStyle*/}
+            <div className="row justify-content-lg-center">{/* rowStyle */}
               <div className={kangarooColumnStyle}>
-                <Kangaroo {...kangaroo}></Kangaroo>
+                <Kangaroo {...kangaroo} />
               </div>
             </div>
           </div>

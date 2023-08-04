@@ -1,12 +1,12 @@
 import * as React from "react"
 import './highlight.scss'
+import ReactMarkdown from "react-markdown"
 import ImageResponsive from "../image-responsive/image-responsive"
 import Button from "../button/button"
 import Icon from "../icon/icon"
 import Numbers from "../numbers/numbers"
-import ReactMarkdown from "react-markdown"
 
-const Highlight = ({
+function Highlight({
 	id,
 	background,
 	img,
@@ -27,19 +27,18 @@ const Highlight = ({
     children,
     reversedMobile,
 	padBottom
-	}
-) => {
-	let styles = 'highlight'
-	+ `${background ? ' bg-'+background : ''}`
+	}) {
+	const styles = 'highlight'
+	+ `${background ? ` bg-${background}` : ''}`
 	+ `${big ? ' highlight-big' : ''}`
 	+ `${padBottom ? ' mb-5' : ''}`
 
-	let classes = 'highlight-content d-lg-flex'
+	const classes = 'highlight-content d-lg-flex'
 	+ `${specular ? ' flex-lg-row-reverse' : ''}`
   + `${reversedMobile ? ' d-flex flex-column-reverse' : ''}`
   + `${img || overlayImg ? '' : ' no-image'}`
 
-	//heading level
+	// heading level
 	let HLevel
 	if (headingLevel) {
 		HLevel = `h${headingLevel}`;
@@ -47,14 +46,12 @@ const Highlight = ({
 		HLevel = `h3`
 	}
 
-	//buttons
+	// buttons
 	let ButtonsRender
 	if (buttons) {
-		ButtonsRender = buttons.map((btn,index) => {
-			return(
-			   <Button key={"h-button-"+index} {...btn}/>
-			)
-		})
+		ButtonsRender = buttons.map((btn,index) => (
+			   <Button key={`h-button-${index}`} {...btn}/>
+			))
 	}
 
   let textClass

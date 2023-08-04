@@ -7,11 +7,11 @@ import Icon from "../icon/icon"
 
 import "./content-collapse.scss"
 
-const ContentCollapse = ({
+function ContentCollapse({
   label,
   labelClose,
   children,
-}) => {
+}) {
 
   const icon = ({
     icon: "sprites.svg#it-expand",
@@ -24,7 +24,7 @@ const ContentCollapse = ({
 
   const collRef = useRef(null)
   const collObjRef = useRef(null)
-  //const id = 'content-collapse-' + new Date().getTime()
+  // const id = 'content-collapse-' + new Date().getTime()
 
   const [id, setId] = useState('content-collapse-')
 
@@ -47,11 +47,11 @@ const ContentCollapse = ({
 
   useEffect(() => {
     collObjRef.current = new Collapse(collRef.current, { toggle: false })
-    setId('content-collapse-' + new Date().getTime())
+    setId(`content-collapse-${  new Date().getTime()}`)
   }, [])
 
   return <div className="content-collapse">
-    <a href="#" role="button" onClick={collapseToggle} className="read-more mt-3 d-inline-flex align-items-center text-decoration-none" /*data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'}*/ aria-expanded="false" aria-controls={id}>
+    <a href="#" role="button" onClick={collapseToggle} className="read-more mt-3 d-inline-flex align-items-center text-decoration-none" /* data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'} */ aria-expanded="false" aria-controls={id}>
       <span className="more-text">{label}</span>
       <span className="less-text">{labelClose}</span>
       <Icon {...icon}/>

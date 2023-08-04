@@ -1,9 +1,9 @@
 import React from "react"
 
-const ContentSelectItem = ({
+function ContentSelectItem({
   name,
   children
-}) => {
+}) {
 
   return (
     <div className="content-select-item">

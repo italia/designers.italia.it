@@ -4,7 +4,7 @@ import Icon from "../icon/icon"
 import Link from "../link/link"
 import "./link-custom.scss"
 
-const LinkCustom = ({
+function LinkCustom({
   label,
   labelSmall,
   url,
@@ -13,11 +13,11 @@ const LinkCustom = ({
   blank,
   specular,
   icon
-}) => {
-  let linkStyles = "link-custom d-inline-flex align-items-center text-decoration-none"
+}) {
+  const linkStyles = "link-custom d-inline-flex align-items-center text-decoration-none"
     + `${specular ? ' flex-row-reverse text-end' : ''}`
-  let imageStyles = "flex-shrink-0"
-    + `${imageClass ? ' '+imageClass : ''}`
+  const imageStyles = "flex-shrink-0"
+    + `${imageClass ? ` ${imageClass}` : ''}`
   return (
     <Link
       className={linkStyles}

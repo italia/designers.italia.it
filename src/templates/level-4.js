@@ -26,7 +26,7 @@ import FooterData from "../data/footer.yaml"
 import skipLinksData from "../data/skiplinks.yaml"
 import Kangaroo from "../components/kangaroo/kangaroo"
 
-const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
+function Template({children,Pagedata,pageContext,location,lastModified}) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} location={location}/>
@@ -39,20 +39,16 @@ const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>
+        <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo} />
         {Pagedata.components.imageIcons && <ImageIcons {...Pagedata.components.imageIcons}/>}
-        {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => {
-          return(
-            <SectionEditorial key={"sectionEditorial-"+index} {...section}/>
-          )
-        })}
+        {Pagedata.components.sectionsEditorial && Pagedata.components.sectionsEditorial.map((section,index) => (
+            <SectionEditorial key={`sectionEditorial-${index}`} {...section}/>
+          ))}
         {Pagedata.components.resourceList && <ResourceList {...Pagedata.components.resourceList}/>}
-        {Pagedata.components.highlightCards && <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>}
-        {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => {
-          return(
-            <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
-          )
-        })}
+        {Pagedata.components.highlightCards && <HighlightCards {...Pagedata.components.highlightCards} />}
+        {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => (
+            <SectionEditorial key={`sectionEditorial2-${index}`} {...section}/>
+          ))}
         {children}
         {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         {Pagedata.kangaroo &&
@@ -67,8 +63,7 @@ const Template = ({children,Pagedata,pageContext,location,lastModified}) => {
         {Pagedata.navPreFooter && <NavPreFooter {...Pagedata.navPreFooter} />}
         <Feedback/>
       </main>
-      <Footer {...FooterData.footer}>
-      </Footer>
+      <Footer {...FooterData.footer} />
       <BackToTopEl
         positionTop={0}
         scrollLimit={100}

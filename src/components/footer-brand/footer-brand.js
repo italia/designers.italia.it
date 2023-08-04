@@ -4,17 +4,17 @@ import ImageResponsive from "../image-responsive/image-responsive"
 import Link from "../link/link"
 import "./footer-brand.scss"
 
-const FooterBrand = ({
+function FooterBrand({
   background,
   title,
   justifyLogos,
   logos
-}) => {
-  let styles = 'footer-brand pt-5 pb-4'
-    + `${background ? ' bg-'+background : ''}`
+}) {
+  const styles = 'footer-brand pt-5 pb-4'
+    + `${background ? ` bg-${background}` : ''}`
     + `${background === "dark" || background === "primary" ? ' text-white' : ''}`
 
-  let logosStyles = 'logos list-unstyled d-flex flex-column flex-md-row flex-wrap align-items-center mb-0'
+  const logosStyles = 'logos list-unstyled d-flex flex-column flex-md-row flex-wrap align-items-center mb-0'
     + `${justifyLogos ? ' justify-content-md-between' : ''}`
 
   return (
@@ -28,9 +28,8 @@ const FooterBrand = ({
         <div className="row">
           <div className="col px-4">
             <ul className={logosStyles}>
-              {logos.map((value,index)=>{
-                return(
-                  <li key={"item-"+index} className="mb-5 me-md-5 ">
+              {logos.map((value,index)=>(
+                  <li key={`item-${index}`} className="mb-5 me-md-5 ">
                     <Link
                       to={value.url}
                       target={value.blank ? "_blank" : undefined}
@@ -41,8 +40,7 @@ const FooterBrand = ({
                       <ImageResponsive src={value.img} alt="" className={value.small ? "small" : undefined}/> 
                     </Link>
                   </li>
-                )
-              })}
+                ))}
             </ul>
           </div>
         </div>

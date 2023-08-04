@@ -1,17 +1,15 @@
 import * as React from "react"
 import { useEffect, useRef } from "react"
+import { Tooltip as BSITooltip } from 'bootstrap-italia'
 import Icon from "../icon/icon"
 import Button from "../button/button"
 
-import { Tooltip as BSITooltip } from 'bootstrap-italia'
 
 
-const Tooltip = (
-	{
+function Tooltip({
 		label,
 		children
-	}
-) => {
+	}) {
 
 	const ICON_INFO = {
 		icon: "sprites.svg#it-info-circle",

@@ -34,7 +34,7 @@ import { Script } from "gatsby"
 
 
 
-const Template = ({Pagedata, pageContext, location, lastModified}) => {
+function Template({Pagedata, pageContext, location, lastModified}) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} location={location}/>
@@ -56,44 +56,41 @@ const Template = ({Pagedata, pageContext, location, lastModified}) => {
             {Pagedata.components.hero.moreText}
           </ContentCollapse>}
         </Highlight>
-        {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain}></SearchMain>}
-        {Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro}></SectionIntro>}
-        {Pagedata.components.highLights && Pagedata.components.highLights.map((hl,index) => {
-          return(
-            <Highlight key={"hl-"+index} {...hl}/>
-          )
-        })}
+        {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain} />}
+        {Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro} />}
+        {Pagedata.components.highLights && Pagedata.components.highLights.map((hl,index) => (
+            <Highlight key={`hl-${index}`} {...hl}/>
+          ))}
         {Pagedata.components.highlightCards &&
-          <HighlightCards {...Pagedata.components.highlightCards}></HighlightCards>
+          <HighlightCards {...Pagedata.components.highlightCards} />
         }
 
         {Pagedata.components.imageIcons &&
-          <ImageIcons {...Pagedata.components.imageIcons}></ImageIcons>
+          <ImageIcons {...Pagedata.components.imageIcons} />
         }
 
         {Pagedata.components.sectionIntroImg &&
           <SectionIntro {...Pagedata.components.sectionIntroImg}>
             {Pagedata.components.sectionIntroImg.testimonials &&
               <div className="">
-                <Testimonials {...Pagedata.components.sectionIntroImg.testimonials}></Testimonials>
+                <Testimonials {...Pagedata.components.sectionIntroImg.testimonials} />
               </div>
             }
           </SectionIntro>}
         {Pagedata.components.highlightCards2 &&
-          <HighlightCards {...Pagedata.components.highlightCards2}></HighlightCards>
+          <HighlightCards {...Pagedata.components.highlightCards2} />
         }
         {Pagedata.components.bannerTextCta &&
             <BannerTextCta {...Pagedata.components.bannerTextCta}>
               {Pagedata.components.bannerTextCta.numbers &&
-                <Numbers {...Pagedata.components.bannerTextCta.numbers}></Numbers>
+                <Numbers {...Pagedata.components.bannerTextCta.numbers} />
               }
             </BannerTextCta>
         }
         {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>
       </main>
-      <Footer {...FooterData.footer}>
-      </Footer>
+      <Footer {...FooterData.footer} />
       <BackToTopEl
         positionTop={0}
         scrollLimit={100}

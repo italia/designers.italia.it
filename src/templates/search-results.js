@@ -22,7 +22,7 @@ import skipLinksData from "../data/skiplinks.yaml"
 
 import SearchMain from "../components/search-main/search-main"
 
-const Template = ({Pagedata, pageContext, location, lastModified}) => {
+function Template({Pagedata, pageContext, location, lastModified}) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} location={location}/>
@@ -35,13 +35,12 @@ const Template = ({Pagedata, pageContext, location, lastModified}) => {
         </NavWrapper>
       </Header>
       <main id="main">
-        {Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo}></Hero>}
-        {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain} location={location}></SearchMain>}
+        {Pagedata.components.hero && <Hero {...Pagedata.components.hero} pageContext={pageContext} {...Pagedata.seo} />}
+        {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain} location={location} />}
         {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
         <Feedback/>
       </main>
-      <Footer {...FooterData.footer}>
-      </Footer>
+      <Footer {...FooterData.footer} />
       <BackToTopEl
         positionTop={0}
         scrollLimit={100}

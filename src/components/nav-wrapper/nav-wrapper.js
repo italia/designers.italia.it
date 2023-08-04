@@ -1,6 +1,6 @@
 import React from "react"
 
-const NavWrapper = ({children}) => {
+function NavWrapper({children}) {
 	return(
 		<div className="it-nav-wrapper">
 			{children}

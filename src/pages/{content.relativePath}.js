@@ -35,7 +35,7 @@ const TEMPLATES = {
   'design-system-component' : TemplateDSComponent
 }
 
-const Page = ({ pageContext, location, data: { content } }) => {
+function Page({ pageContext, location, data: { content } }) {
   const Template = content.metadata.template ? TEMPLATES[content.metadata.template.name] : TemplateBase
   const lastModified = content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
 
@@ -887,14 +887,13 @@ export const query = graphql`
 `
 export default Page
 
-export const Head = ({ data: { content } }) => (
-  <Seo
+export function Head({ data: { content } }) {
+  return <Seo
     title = {content.seo.name}
     description = {content.seo.description}
     image = {content.seo.image}
     twitterImage = {content.seo.twitterImage}
     pathname = {content.seo.pathname}
     canonical = {content.seo.canonical}
-  >
-  </Seo>
-)
+   />
+}
