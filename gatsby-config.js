@@ -383,6 +383,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-satorare`,
+      options: {
+        path: `${__dirname}/src/components/social-card-image/SocialCardImage.tsx`,
+        width: 1200,
+        height: 630,
+        fonts: [
+          {
+            name: `FavoriteFont`,
+            path: `${__dirname}/static/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-600.ttf`,
+          },
+        ],
+        target_nodes: ['Content']
+      }
+    },
+    {
       resolve: "gatsby-plugin-eslint",
       options: {
         // Gatsby required rules directory

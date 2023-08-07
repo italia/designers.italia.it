@@ -58,6 +58,11 @@ function Page({ pageContext, location, data: { content } }) {
 
 export const query = graphql`
   query ($id: String!) {
+    contentOgImage(parent: { id: { eq: $id } }) {
+      attributes {
+        publicURL
+      }
+    }
     content(id: { eq: $id }) {
       id
       parent {
