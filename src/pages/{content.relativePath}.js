@@ -84,7 +84,6 @@ export const query = graphql`
       seo {
         name
         description
-        image
         twitterImage
         # canonical
         pathname
