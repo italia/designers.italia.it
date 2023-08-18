@@ -34,23 +34,21 @@ import { Script } from "gatsby"
 
 
 
-function Template({Pagedata, pageContext, location, lastModified}) {
+function Template({ Pagedata, pageContext, location, lastModified }) {
   return (
     <div id="app">
-      <HeaderPre data={HeaderData.headerPre} location={location}/>
-      <Skiplinks data={skipLinksData.skiplinks}/>
+      <HeaderPre data={HeaderData.headerPre} location={location} />
+      <Skiplinks data={skipLinksData.skiplinks} />
       <Header data={HeaderData}>
-        <HeaderSlim data={HeaderData.headerSlim}/>
+        <HeaderSlim data={HeaderData.headerSlim} />
         <NavWrapper>
-          <HeaderCenter data={HeaderData.headerCenter}/>
+          <HeaderCenter data={HeaderData.headerCenter} />
           <HeaderNav data={HeaderData.navbar} />
         </NavWrapper>
       </Header>
-      <HeaderPost data={HeaderData.headerPost}/>
+      <HeaderPost data={HeaderData.headerPost} />
       <main id="main">
-        <div style={{ maxWidth: '1000px' }}>
-          <YoutubeVideo lang="it" url="https://youtu.be/_0j7ZQ67KtY" trascription="Vestibulum hendrerit ultrices nibh" />
-        </div>
+        <YoutubeVideo lang="it" url="https://youtu.be/_0j7ZQ67KtY" trascription="Vestibulum hendrerit ultrices nibh" />
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && <ContentCollapse label={Pagedata.components.hero.moreButton} labelClose={Pagedata.components.hero.moreButtonClose}>
             {Pagedata.components.hero.moreText}
@@ -58,9 +56,9 @@ function Template({Pagedata, pageContext, location, lastModified}) {
         </Highlight>
         {Pagedata.components.searchMain && <SearchMain {...Pagedata.components.searchMain} />}
         {Pagedata.components.sectionIntro && <SectionIntro {...Pagedata.components.sectionIntro} />}
-        {Pagedata.components.highLights && Pagedata.components.highLights.map((hl,index) => (
-            <Highlight key={`hl-${index}`} {...hl}/>
-          ))}
+        {Pagedata.components.highLights && Pagedata.components.highLights.map((hl, index) => (
+          <Highlight key={`hl-${index}`} {...hl} />
+        ))}
         {Pagedata.components.highlightCards &&
           <HighlightCards {...Pagedata.components.highlightCards} />
         }
@@ -81,14 +79,14 @@ function Template({Pagedata, pageContext, location, lastModified}) {
           <HighlightCards {...Pagedata.components.highlightCards2} />
         }
         {Pagedata.components.bannerTextCta &&
-            <BannerTextCta {...Pagedata.components.bannerTextCta}>
-              {Pagedata.components.bannerTextCta.numbers &&
-                <Numbers {...Pagedata.components.bannerTextCta.numbers} />
-              }
-            </BannerTextCta>
+          <BannerTextCta {...Pagedata.components.bannerTextCta}>
+            {Pagedata.components.bannerTextCta.numbers &&
+              <Numbers {...Pagedata.components.bannerTextCta.numbers} />
+            }
+          </BannerTextCta>
         }
-        {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
-        <Feedback/>
+        {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext} />}
+        <Feedback />
       </main>
       <Footer {...FooterData.footer} />
       <BackToTopEl
@@ -100,7 +98,7 @@ function Template({Pagedata, pageContext, location, lastModified}) {
       />
       <Script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js" />
     </div>
-	)
+  )
 }
 
 export default Template
