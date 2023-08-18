@@ -361,7 +361,7 @@ module.exports = {
         // Gatsby required rules directory
         rulePaths: [gatsbyRequiredRules],
         // Default settings that may be omitted or customized
-        stages: ["develop"],
+        stages: [""],
         extensions: ["js", "jsx", "ts", "tsx"],
         exclude: ["node_modules", "bower_components", ".cache", "public"],
         // Any additional eslint-webpack-plugin options below
