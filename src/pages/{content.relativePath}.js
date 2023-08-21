@@ -650,6 +650,9 @@ export const query = graphql`
               img
               alt
             }
+            lang
+            url
+            trascription
           }
           id
           fullColumn

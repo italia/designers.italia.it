@@ -11,6 +11,7 @@ import Kangaroo from "../kangaroo/kangaroo"
 import ImageIcons from "../image-icons/image-icons"
 import Table from "../table/table"
 import Button from "../button/button"
+import MediaPlayer from "../media-player/media-player"
 
 function SectionEditorial({
   title,
@@ -37,7 +38,8 @@ function SectionEditorial({
     ImgFull,
     ImageIcons,
     Table,
-  };
+    MediaPlayer
+  }
 
   // heading level
 	let HLevel
