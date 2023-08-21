@@ -12,36 +12,36 @@ import ShareButton from "../share-button/share-button"
 import "./card.scss"
 
 function Card({
-    cardEvent,
-    title,
-    titleSmall,
-    titleBig,
-    headingLevel,
-    url,
-    blank,
-    text,
-    textSerif,
-    tag,
-    share,
-    img,
-    imgRounded,
-    noShadow,
-    alt,
-    imgRatio,
-    iconOverlay,
-    dateOverlay,
-    chips,
-    tags,
-    externalLink,
-    moreInfo,
-    dateInfo,
-    imgPlaceholder,
-    iconImg,
-    iconImgAlt,
-    fullHeight,
-    rounded,
-    buttonBottom
-  }) {
+  cardEvent,
+  title,
+  titleSmall,
+  titleBig,
+  headingLevel,
+  url,
+  blank,
+  text,
+  textSerif,
+  tag,
+  share,
+  img,
+  imgRounded,
+  noShadow,
+  alt,
+  imgRatio,
+  iconOverlay,
+  dateOverlay,
+  chips,
+  tags,
+  externalLink,
+  moreInfo,
+  dateInfo,
+  imgPlaceholder,
+  iconImg,
+  iconImgAlt,
+  fullHeight,
+  rounded,
+  buttonBottom
+}) {
   const styles = 'di-card d-md-flex flex-md-column w-100'
     + `${fullHeight ? ' fullheight' : ''}`
     + `${rounded ? ' rounded' : ''}`
@@ -52,7 +52,7 @@ function Card({
     + `${buttonBottom ? ' has-button' : ''}`
 
   const imgStyle = 'img-wrapper ratio'
-    + `${imgRatio ? ` ratio-${  imgRatio}` : ''}`
+    + `${imgRatio ? ` ratio-${imgRatio}` : ''}`
     + `${imgPlaceholder ? ' img-placeholder' : ''}`
     + `${iconImg ? ' icon-img' : ''}`
     + `${cardEvent ? ' mb-4 negative-margin' : ''}`
@@ -95,8 +95,8 @@ function Card({
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">
               {tags && <div className="chip-container">
                 {tags.map((tag, index) => (
-                    <Chip key={`chip-${  index}`} label={tag} size="sm" />
-                  ))}
+                  <Chip key={`chip-${index}`} label={tag} size="sm" />
+                ))}
               </div>}
               {tag && <div className="tag-container">
                 <Tag {...tag} />
@@ -108,7 +108,7 @@ function Card({
         </div>
       </div>
     )
-  } 
+  } else {
     return (
       <div className={styles}>
         {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
@@ -139,8 +139,8 @@ function Card({
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">
               {tags && <div className="chip-container">
                 {tags.map((tag, index) => (
-                    <Chip key={`chip-${  index}`} label={tag} size="sm" color="secondary" />
-                  ))}
+                  <Chip key={`chip-${index}`} label={tag} size="sm" color="secondary" />
+                ))}
               </div>}
               {tag && <div className="tag-container">
                 <Tag {...tag} />
@@ -151,7 +151,7 @@ function Card({
         </div>
       </div>
     )
-  
+  }
 }
 
 export default Card
