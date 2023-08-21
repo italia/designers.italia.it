@@ -3,7 +3,6 @@ import { useEffect } from "react";
 import { VideoPlayer, AcceptOverlay } from "bootstrap-italia"
 import parse from 'html-react-parser';
 
-
 const messages = {
   it: {
     rememberLabel: 'Ricorda la mia scelta',
@@ -19,7 +18,7 @@ const messages = {
   },
 };
 
-const YoutubeVideoEl = (
+const MediaPlayerEl = (
   {
     url,
     lang,
@@ -75,4 +74,4 @@ const YoutubeVideoEl = (
   )
 }
 
-export default YoutubeVideoEl
+export default MediaPlayerEl
