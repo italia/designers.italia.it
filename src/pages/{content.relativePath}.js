@@ -6,6 +6,7 @@ import TemplateArchiveAllTags from "../templates/archive-all-tags"
 import TemplateArchiveDSTags from "../templates/archive-ds-tags"
 import TemplateArchiveNews from "../templates/archive-news"
 import TemplateArchiveEvents from "../templates/archive-events"
+import TemplateArchiveMedia from "../templates/archive-media"
 import TemplateDSComponent from "../templates/design-system-component"
 import TemplateDSIndex from "../templates/design-system-index"
 import TemplateHome from "../templates/home"
@@ -23,6 +24,7 @@ const TEMPLATES = {
   'archive-all-tags' : TemplateArchiveAllTags,
   'archive-ds-tags' : TemplateArchiveDSTags,
   'archive-events' : TemplateArchiveEvents,
+  'archive-media' : TemplateArchiveMedia,
   'community' : TemplateLV1Community,
   'level1' : TemplateLV1,
   'level2' : TemplateLV2,
