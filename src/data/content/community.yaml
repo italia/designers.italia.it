@@ -84,6 +84,8 @@ components:
               label: Notizie
             - url: "#articoli-di-approfondimento"
               label: Articoli di approfondimento
+            - url: "media/"
+              label: Media
             - url: "piano-attivita/"
               label: Piano attività
             - url: "contatti/"
@@ -368,38 +370,36 @@ components:
             size: xs
         moreInfo: di Marco Maria Pedrazzo
 
-    # XXX DISABLED MEDIA AREA > WILL GO TO NEXT MILESTONE
+    - id: media
+      title: Media
+      headingLevel: 3
+      text: "I video, i tutorial e i podcast del progetto Designers Italia"
+      col4: true
+      background: null
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti i media
+        addonStyle: d-block
+        disabled: true
 
-    # - id: media
-    #   title: Media
-    #   headingLevel: 3
-    #   text: "I video degli eventi a cui partecipiamo, i tutorial tecnici e i podcast sul progetto Designers Italia"
-    #   col4: true
-    #   background: null
-    #   buttons:
-    #   - type: button
-    #     btnStyle: primary
-    #     label: Esplora tutti i media
-    #     addonStyle: d-block
-    #     disabled: true
-
-    #   cards:
-    #   - title: "Community Call: il bottone SPID e gli altri"
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 21 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Registrazione
+      cards:
+      - title: "Media foglia test"
+        headingLevel: 4
+        titleSmall: true
+        moreInfo: durata XX minuti
+        cardEvent: false
+        img: /images/community/media-thumbnails/2023-08-21-media-thumbnail.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "media/20230821-media-foglia-test/"
+        tag:
+          label: Webinar
 
     #   - title: Come usare il design system del Paese quanso sei al mare
     #     headingLevel: 4
