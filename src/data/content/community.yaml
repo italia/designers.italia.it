@@ -370,6 +370,7 @@ components:
             size: xs
         moreInfo: di Marco Maria Pedrazzo
 
+
     - id: media
       title: Media
       headingLevel: 3
@@ -380,15 +381,15 @@ components:
       - type: button
         btnStyle: primary
         label: Esplora tutti i media
+        url: "/community/media/"
         addonStyle: d-block
-        disabled: true
+        disabled: false
 
       cards:
       - title: "Media foglia test"
         headingLevel: 4
         titleSmall: true
-        moreInfo: durata XX minuti
-        cardEvent: false
+        cardEvent: true
         img: /images/community/media-thumbnails/2023-08-21-media-thumbnail.jpg
         alt: ""
         imgRatio: 16x9

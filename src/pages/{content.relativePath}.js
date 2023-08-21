@@ -297,6 +297,10 @@ export const query = graphql`
             imgRatio
             fullHeight
             imgPlaceholder
+            iconOverlay {
+              icon
+              ariaLabel
+            }
             dateOverlay {
               day
               month
