@@ -361,6 +361,8 @@ module.exports = {
         // Gatsby required rules directory
         rulePaths: [gatsbyRequiredRules],
         // Default settings that may be omitted or customized
+        // re-add "develop" to the stages once https://github.com/italia/designers.italia.it/issues/848
+        // is fixed
         stages: [""],
         extensions: ["js", "jsx", "ts", "tsx"],
         exclude: ["node_modules", "bower_components", ".cache", "public"],
