@@ -22,13 +22,16 @@ const messages = {
 // to do
 // - enable multiple videos (different ids + unique youtube.js + ...)
 // - media archive... 
+// - poster...
 // - modular approach
+// - download thumbnail during build- eg. url: http://i3.ytimg.com/vi/_0j7ZQ67KtY/hqdefault.jpg
 
 const MediaPlayerEl = (
   {
     url,
     lang,
-    trascription
+    trascription,
+    poster
   }) => {
   let video = null;
   const t = (key) => messages[lang][key];
@@ -36,7 +39,7 @@ const MediaPlayerEl = (
     new AcceptOverlay(document.getElementsByClassName('accept-video')[0], {
       service: 'youtube.com'
     })
-    video = new VideoPlayer(document.getElementsByClassName('video-js')[0])
+    video = new VideoPlayer(document.getElementsByClassName('video-js')[0]) 
   });
   return (
     <div style={{ maxWidth: '100%' }}>
