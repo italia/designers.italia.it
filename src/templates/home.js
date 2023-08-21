@@ -30,10 +30,6 @@ import Numbers from "../components/numbers/numbers"
 import ImageIcons from "../components/image-icons/image-icons"
 import MediaPlayer from "../components/media-player/media-player"
 
-import { Script } from "gatsby"
-
-
-
 function Template({ Pagedata, pageContext, location, lastModified }) {
   return (
     <div id="app">
@@ -96,7 +92,6 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
       />
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js" />
     </div>
   )
 }

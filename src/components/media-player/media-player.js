@@ -2,6 +2,7 @@ import React from "react"
 import { useEffect } from "react";
 import { VideoPlayer, AcceptOverlay } from "bootstrap-italia"
 import parse from 'html-react-parser';
+import { Script } from "gatsby"
 
 const messages = {
   it: {
@@ -17,6 +18,11 @@ const messages = {
     cookiePolicy: 'You must accept YouTube cookies to enable viewing of this content. Find out what cookies are and read more about them in our <a href="https://designers.italia.it/privacy-policy#cookie/" className="text-white">cookie policy (italian language)</a>.'
   },
 };
+
+// to do
+// - enable multiple videos (different ids + unique youtube.js + ...)
+// - media archive... 
+// - modular approach
 
 const MediaPlayerEl = (
   {
@@ -70,6 +76,7 @@ const MediaPlayerEl = (
           </div>
         </div>
       </div>
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js" />  
     </div>
   )
 }
