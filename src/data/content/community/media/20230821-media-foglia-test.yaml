@@ -80,18 +80,29 @@ components:
     #       poster: /images/community/media-thumbnails/2023-08-21-media-thumbnail.jpg
     #       trascription: Vestibulum hendrerit ultrices nibh
 
-    - menu: false
-      fullColumn: false # fullwidth vs normal
+    - fullColumn: false # fullwidth vs normal
       full: true # large column vs normal
       noSpace: false 
       centered: true
+      background: medium
       components:
         - name: MediaPlayer
           lang: it
           url: https://youtu.be/_0j7ZQ67KtY
           poster: /images/community/media-thumbnails/2023-08-21-media-thumbnail.jpg
           trascription: |
-            Vestibulum hendrerit ultrices nibh in laba blaba Vestibulum hendrerit ultrices nibh in laba blaba
+            Vestibulum _hendrerit_ ultrices nibh in laba blaba Vestibulum hendrerit ultrices nibh in laba blaba Vestibulum hendrerit ultrices nibh in laba blaba
 
-            Vestibulum hendrerit ultrices nibh in laba blaba
+            Vestibulum hendrerit **ultrices** nibh in laba blaba
+
+            Ciao terzo rigo trascrizione
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          headingLevel: 2
+          title: Info sul video
+          text: |
+             Lorem ipsum
 

@@ -2,6 +2,7 @@ import React from "react"
 import { useEffect } from "react";
 import { VideoPlayer, AcceptOverlay } from "bootstrap-italia"
 import parse from 'html-react-parser';
+import ReactMarkdown from "react-markdown"
 import { Script } from "gatsby"
 
 const messages = {
@@ -19,11 +20,14 @@ const messages = {
   },
 };
 
-// to do
+// TO DO
 // - enable multiple videos (different ids + unique youtube.js + ...)
-// - media archive... 
-// - poster...
 // - modular approach
+// - media archive card 
+// - poster...
+// - youtube link...
+// - privacy management
+// - privacy link... 
 // - download thumbnail during build- eg. url: http://i3.ytimg.com/vi/_0j7ZQ67KtY/hqdefault.jpg
 
 const MediaPlayerEl = (
@@ -39,7 +43,7 @@ const MediaPlayerEl = (
     new AcceptOverlay(document.getElementsByClassName('accept-video')[0], {
       service: 'youtube.com'
     })
-    video = new VideoPlayer(document.getElementsByClassName('video-js')[0]) 
+    video = new VideoPlayer(document.getElementsByClassName('video-js')[0])
   });
   return (
     <div style={{ maxWidth: '100%' }}>
@@ -74,12 +78,17 @@ const MediaPlayerEl = (
               {t('trascriptionLabel')}
             </button>
           </h2>
-          <div id="transcription9" className="accordion-collapse collapse" role="region" aria-labelledby="transcription-head9">
-            <div className="accordion-body">{parse(trascription)}</div>
-          </div>
+          {trascription &&
+            <div id="transcription9" className="accordion-collapse collapse" role="region" aria-labelledby="transcription-head9">
+              {/* <div className="accordion-body">{parse(trascription)}</div> */}
+              <div className="accordion-body">
+                <ReactMarkdown>{trascription}</ReactMarkdown>
+                </div>
+            </div>
+          }
         </div>
       </div>
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js" />  
+      <Script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js" />
     </div>
   )
 }
