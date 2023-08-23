@@ -28,7 +28,6 @@ import Testimonials from "../components/testimonials/testimonials"
 import BannerTextCta from "../components/banner-text-cta/banner-text-cta"
 import Numbers from "../components/numbers/numbers"
 import ImageIcons from "../components/image-icons/image-icons"
-import MediaPlayer from "../components/media-player/media-player"
 
 function Template({ Pagedata, pageContext, location, lastModified }) {
   return (
@@ -44,7 +43,6 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
       </Header>
       <HeaderPost data={HeaderData.headerPost} />
       <main id="main">
-        <MediaPlayer lang="it" url="https://youtu.be/_0j7ZQ67KtY" trascription="Vestibulum hendrerit ultrices nibh" />
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && <ContentCollapse label={Pagedata.components.hero.moreButton} labelClose={Pagedata.components.hero.moreButtonClose}>
             {Pagedata.components.hero.moreText}
