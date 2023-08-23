@@ -659,6 +659,7 @@ export const query = graphql`
             lang
             url
             trascription
+            poster
           }
           id
           fullColumn
