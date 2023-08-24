@@ -8,7 +8,6 @@ import ReactMarkdown from "react-markdown"
 import { Script } from "gatsby"
 
 // TO DO
-// - media archive > switch to cards...
 // - privacy management + link 
 // - [future] modular approach for local videos/youtubes/...
 // - [future] download thumbnail during build- eg. url: http://i3.ytimg.com/vi/_0j7ZQ67KtY/hqdefault.jpg

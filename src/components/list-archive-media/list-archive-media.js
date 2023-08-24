@@ -5,9 +5,6 @@ import "../../js/globals"
 
 import { useStaticQuery, graphql } from "gatsby"
 import classNames from "classnames"
-import ListItem from "../list-item/list-item"
-import Tag from "../tag/tag"
-
 import Card from "../card/card"
 
 function ListArchiveMedia({
