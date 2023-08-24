@@ -7,11 +7,11 @@ import './megamenu.scss'
 
 import ImageResponsive from "../image-responsive/image-responsive"
 
-const Megamenu = ({
+function Megamenu({
 	left,
 	heading,
 	cols
-}) => {
+}) {
 
 	const GATSBY_ACTIVE = "active"
 
@@ -40,20 +40,18 @@ const Megamenu = ({
 					{heading &&
 						<div className="heading-link-wrapper">
 							<Link className="heading-link d-flex-inline align-items-center" to={heading.url} activeClassName={GATSBY_ACTIVE}>
-								<Icon icon="sprites.svg#it-arrow-right-triangle" size="sm" color="primary" addonClasses="me-2"></Icon>
+								<Icon icon="sprites.svg#it-arrow-right-triangle" size="sm" color="primary" addonClasses="me-2" />
 								<span>{heading.label}</span>
 							</Link>
 						</div>
 					}
 					{cols &&
 						<div className="row">
-							{cols.map((col, index) => {
-								return (
-									<div key={"megalist-" + index} className="col-12 col-lg-6">
-										<List {...col} isDropdown="true"></List>
+							{cols.map((col, index) => (
+									<div key={`megalist-${  index}`} className="col-12 col-lg-6">
+										<List {...col} isDropdown="true" />
 									</div>
-								)
-							})}
+								))}
 						</div>
 					}
 				</div>

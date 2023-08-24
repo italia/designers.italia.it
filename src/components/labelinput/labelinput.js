@@ -1,8 +1,8 @@
-import React from "react"
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
+
 import { Input } from "bootstrap-italia"
 
-const LabelInput = (props) => {
+function LabelInput(props) {
     const {
         id,
         value,

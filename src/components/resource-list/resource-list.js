@@ -1,14 +1,14 @@
 import React from "react"
 import List from "../list/list"
 
-const ResourceList = ({
+function ResourceList({
   title,
   headingLevel,
   list,
   full
-}) => {
+}) {
 
-  //heading level
+  // heading level
 	let HLevel
 	if (headingLevel) {
 		HLevel = `h${headingLevel}`;
@@ -16,19 +16,17 @@ const ResourceList = ({
 		HLevel = `h3`
 	}
 
-  let addonClasses = full ? ' px-0 mx-0 w-100 pb-5' : 'col-12 col-md-10 offset-md-1 col-lg-9 offset-lg-0 pb-5'
+  const addonClasses = full ? ' px-0 mx-0 w-100 pb-5' : 'col-12 col-md-10 offset-md-1 col-lg-9 offset-lg-0 pb-5'
   let listItem
 
   if (list) {
-    listItem = list.map((item,index) => {
-      return(
-        <div className={addonClasses} key={"list-"+index}>
+    listItem = list.map((item,index) => (
+        <div className={addonClasses} key={`list-${index}`}>
             <div className="px-3 px-lg-0">
               <List {...item}/>
             </div>
         </div>
-      )
-    })
+      ))
   }
 
   return (

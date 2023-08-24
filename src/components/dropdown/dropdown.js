@@ -4,7 +4,7 @@ import List from "../list/list"
 import "./dropdown.scss"
 
 
-const Dropdown = ({
+function Dropdown({
 	btnId,
 	dropUp,
 	dropEnd,
@@ -15,13 +15,13 @@ const Dropdown = ({
 	customStyle,
 	shareUrl,
   shareTitle,
-}) => {
+}) {
 
 	const styles = "dropdown"
 		+ `${dropUp ? ' dropup' : ''}`
 		+ `${dropEnd ? ' dropend' : ''}`
 		+ `${dropStart ? ' dropstart' : ''}`
-		+ `${customStyle ? ' '+customStyle : ''}`
+		+ `${customStyle ? ` ${customStyle}` : ''}`
 
 	let btnComponents
 	if (button) {
@@ -30,12 +30,12 @@ const Dropdown = ({
 			ariaExpanded="false"
 			ariaHaspopup="true"
 			dataBsToggle="dropdown"
-			{...button}></Button>
+			{...button} />
 	}
 
 
 	if (list) {
-		children = <List {...list} shareUrl={shareUrl} shareTitle={shareTitle} isMenu isDropdown></List>
+		children = <List {...list} shareUrl={shareUrl} shareTitle={shareTitle} isMenu isDropdown />
 	}
 
 	return (

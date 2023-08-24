@@ -31,7 +31,7 @@ const ICON_INFO = {
   hidden: true
 }
 
-const FormNo = ({ onResult, state }) => {
+function FormNo({ onResult, state }) {
   const rootRef = useRef(null);
 
   const [who, setWho] = useState(null);

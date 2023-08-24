@@ -1,7 +1,7 @@
 import React from "react"
 import { SeoGetSiteMetadata } from "./seo-get-site-metadata"
 
-export const Seo = ({title, description, image, twitterImage, canonical, pathname, lang, children}) => {
+export function Seo({title, description, image, twitterImage, canonical, pathname, lang, children}) {
 	const {
 		siteName,
 		title: defaultTitle,
@@ -22,7 +22,7 @@ export const Seo = ({title, description, image, twitterImage, canonical, pathnam
 		title: title || defaultTitle,
 		lang: lang || defaultLang,
 		author,
-    canonical: canonical,
+    canonical,
 		description: description || defaultDescription,
 		image : image || defaultImage,
 		siteUrl,
@@ -37,11 +37,11 @@ export const Seo = ({title, description, image, twitterImage, canonical, pathnam
 		<>
 			<title>{seo.title}</title>
       <meta name="description" content={seo.description} />
-			<meta name="author" content={seo.author}></meta>
-      {seo.canonical && <link rel="canonical" href={seo.canonical}></link>}
+			<meta name="author" content={seo.author} />
+      {seo.canonical && <link rel="canonical" href={seo.canonical} />}
       {/* og metatags */}
-      <meta property="og:title" content={seo.title}></meta>
-			<meta property="og:locale" content={seo.lang}></meta>
+      <meta property="og:title" content={seo.title} />
+			<meta property="og:locale" content={seo.lang} />
 			<meta property="og:description" content={seo.description} />
 			<meta property="og:url" content={seo.url} />
 			<meta property="og:siteName" content={seo.siteName} />

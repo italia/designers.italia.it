@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const HeaderMenu = ({children}) => {
+function HeaderMenu({children}) {
 	return(
 			<ul className="navbar-nav">
 				{children}

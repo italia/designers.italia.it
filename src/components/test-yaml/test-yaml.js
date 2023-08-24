@@ -1,11 +1,11 @@
 import * as React from "react"
 import Section from "../section/section"
 
-const TestYaml = ({
+function TestYaml({
   title,
   subtitle,
   text
-}) => {
+}) {
 	return (
 		<div className="test">
 			<Section>

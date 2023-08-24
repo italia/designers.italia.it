@@ -60,11 +60,9 @@ const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
 
               { Pagedata.components.filterCards && <FilterCards {...Pagedata.components.filterCards}/>}
 
-              {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => {
-                return(
-                  <SectionEditorial key={"sectionEditorial2-"+index} {...section}/>
-                )
-              })}
+              {Pagedata.components.sectionsEditorial2 && Pagedata.components.sectionsEditorial2.map((section,index) => (
+                  <SectionEditorial key={`sectionEditorial2-${index}`} {...section}/>
+                ))}
              {lastModified && <LastUpdate lastModified={lastModified} {...Pagedata.lastUpdate} {...location} {...pageContext}/>}
             </main>
           </div>
@@ -72,8 +70,7 @@ const Template = ({children,Pagedata,pageContext,location, lastModified}) => {
         {children}
         <Feedback/>
       </div>
-      <Footer {...FooterData.footer}>
-      </Footer>
+      <Footer {...FooterData.footer} />
       <BackToTopEl
         positionTop={0}
         scrollLimit={100}

@@ -1,9 +1,9 @@
 import * as React from "react"
 
-const DropdownMenu = ({
+function DropdownMenu({
 	idMegamenu,
 	children
-}) => {
+}) {
 	return (
 		<div className="dropdown-menu shadow-lg" role="region" aria-labelledby={idMegamenu}>
 			{children}

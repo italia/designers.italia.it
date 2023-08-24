@@ -1,11 +1,11 @@
-import React from "react"
-import { useEffect } from "react"
+import React, { useEffect } from "react"
+
 import {HeaderSticky} from "bootstrap-italia"
 
-const Header = ({
+function Header({
   data,
   children
-}) => {
+}) {
   useEffect(() => {
     new HeaderSticky(document.getElementById("header"))
   })

@@ -25,7 +25,7 @@ const ICON_RESULT = {
   addonClasses: "me-2"
 }
 
-const Feedback = () => {
+function Feedback() {
   const [isChecked, setIsChecked] = useState(false)
   const [feedbackState, setFeedbackState] = useState(FeedbackState.Start)
   const [choiceVal, setChoiceVal] = useState("")

@@ -6,7 +6,7 @@ import ListItem from "../list-item/list-item"
 import Dropdown from "../dropdown/dropdown"
 import "./header-slim.scss"
 
-const HeaderSlim = ({ data }) => {
+function HeaderSlim({ data }) {
 
 	const collRef = useRef(null)
 	const collObjRef = useRef(null)
@@ -53,21 +53,19 @@ const HeaderSlim = ({ data }) => {
 										</div>
 										<a className="it-opener d-lg-none p-2 collapsed" onClick={collapseToggle} href={`#${data.nav.id}`} role="button" aria-expanded="false" aria-controls={data.nav.id} data-focus-mouse="false">
 											<span className="visually-hidden">Apri/chiudi menu secondario</span>
-											<Icon icon="sprites.svg#it-expand"></Icon>
+											<Icon icon="sprites.svg#it-expand" />
 										</a>
 									</div>
 									<List ref={collRef} id={data.nav.id} isMenu collapsable>
-										{data.nav.items.map((value, index) => {
-											return (
-												<ListItem key={'list-item-' + index} url={value.url} active={value.active}>{value.title}</ListItem>
-											)
-										})}
+										{data.nav.items.map((value, index) => (
+												<ListItem key={`list-item-${  index}`} url={value.url} active={value.active}>{value.title}</ListItem>
+											))}
 									</List>
 								</nav>
 							</div>
 							{data.langs &&
 								<div className="it-header-slim-right-zone">
-									<Dropdown {...data.langs}></Dropdown>
+									<Dropdown {...data.langs} />
 								</div>
 							}
 						</div>

@@ -1,8 +1,8 @@
-import React from "react"
-import { useEffect } from "react";
+import React, { useEffect } from "react"
+
 import { Tab as TabBI } from "bootstrap-italia"
 
-const TabButton = (props) => {
+function TabButton(props) {
     let instance;
     useEffect(() => {
         instance = new TabBI(document.getElementById(props.id))

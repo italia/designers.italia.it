@@ -31,7 +31,7 @@ const StateClass = Object.freeze({
   ERROR: { className: 'danger' },
 });
 
-const Subscribe =({
+function Subscribe({
   label,
   id,
   idForm,
@@ -39,7 +39,7 @@ const Subscribe =({
   button,
   labelClass,
   lang,
-}) => {
+}) {
   const [state, setState] = useState(StateClass.START);
   const [message, setMessage] = useState('');
 
@@ -81,8 +81,7 @@ const Subscribe =({
   };
 
   return (
-    <>
-      <div className="subscribe">
+    <div className="subscribe">
         <form id={idForm} onSubmit={onSubmit}>
           <div className="form-group mb-0 me-3">
             <label htmlFor={id} className={`active ${labelClass}`}>{label}</label>
@@ -123,7 +122,6 @@ const Subscribe =({
           {message}
         </div>
       </div>
-    </>
   );
 }
 

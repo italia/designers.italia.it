@@ -1,7 +1,7 @@
 const {generateExamples} = require("./generate-examples.js")
 const {downloadExamples} = require("./download-examples.js")
 
-const main = async function () {
+const main = async () => {
     console.log("⤵️ Downloading examples...")
     await downloadExamples('bsi')
     console.log("✅ Done")

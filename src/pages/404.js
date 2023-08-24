@@ -11,7 +11,7 @@ const animate = (ev) => {
   ev.target.classList.add("animate")
 }
 
-const NotFoundPage = () => {
+function NotFoundPage() {
   return (
     <Template>
       <section>
@@ -51,4 +51,6 @@ const NotFoundPage = () => {
 
 export default NotFoundPage
 
-export const Head = () => <title>Un imprevisto può capitare - Designers Italia</title>
+export function Head() {
+  return <title>Un imprevisto può capitare - Designers Italia</title>
+}
