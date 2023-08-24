@@ -13,7 +13,7 @@ import Table from "../table/table"
 import Button from "../button/button"
 import ComponentView from "../component-view/component-view"
 
-function SectionEditorial({
+const SectionEditorial = ({
   title,
   headingLevel,
   text,
