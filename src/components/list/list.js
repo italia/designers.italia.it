@@ -5,9 +5,9 @@ import Link from "../link/link"
 import "./list.scss"
 
 const List = React.forwardRef(({
-  isMenu,       //is list inside nav menu: true or false
-  isShare,      //is list a share: true or false
-  collapsable,  //true / false
+  isMenu,       // is list inside nav menu: true or false
+  isShare,      // is list a share: true or false
+  collapsable,  // true / false
   isDropdown,   // if inside dropdown
   id,
   title,
@@ -16,8 +16,8 @@ const List = React.forwardRef(({
   children,
   customStyle,
   customStyleUl,
-  heading,		    //if has heading
-  headingLink,    //if heading has link
+  heading,		    // if has heading
+  headingLink,    // if heading has link
   listItems,
   simpleList,
   shareUrl,
@@ -43,7 +43,7 @@ const List = React.forwardRef(({
     setCurrentTitle(shareTitle)
   }, [shareUrl, shareTitle])
 
-  //heading level
+  // heading level
   let HLevel
   if (headingLevel) {
     HLevel = `h${headingLevel}`;
@@ -53,10 +53,10 @@ const List = React.forwardRef(({
 
   const styles = `${isMenu ? 'link-list-wrapper' : 'it-list-wrapper'}`
     + `${collapsable ? ' collapse' : ''}`
-    + `${customStyle ? ' ' + customStyle : ''}`
+    + `${customStyle ? ` ${  customStyle}` : ''}`
 
   const ulStyles = `${isMenu ? 'link-list' : 'it-list'}`
-    + `${customStyleUl ? ' ' + customStyleUl : ''}`
+    + `${customStyleUl ? ` ${  customStyleUl}` : ''}`
 
   if (isShare) {
     const iconProps = { color: 'primary', size: 'sm' }
@@ -69,7 +69,7 @@ const List = React.forwardRef(({
         <ListItem
           label="Copia collegamento"
           icon={{ icon: 'sprites.svg#it-copy', ...iconProps }}
-          iconRight={true} isDropdown={isDropdown}
+          iconRight isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
           ariaLabel=""
           url="#"
@@ -78,7 +78,7 @@ const List = React.forwardRef(({
         <ListItem
           label="Condividi su Twitter"
           icon={{ icon: 'sprites.svg#it-twitter', ...iconProps }}
-          iconRight={true} isDropdown={isDropdown}
+          iconRight isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
           ariaLabel="Condividi su Twitter (si apre in una nuova finestra)"
           url={`https://twitter.com/intent/tweet/?text=${currentTitle}&url=${currentUrl}`}
@@ -87,7 +87,7 @@ const List = React.forwardRef(({
         <ListItem
           label="Condividi su LinkedIn"
           icon={{ icon: 'sprites.svg#it-linkedin', ...iconProps }}
-          iconRight={true} isDropdown={isDropdown}
+          iconRight isDropdown={isDropdown}
           textLarge={textLarge} simpleList={simpleList}
           ariaLabel="Condividi su LinkedIn (si apre in una nuova finestra)"
           url={`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`}
@@ -99,13 +99,9 @@ const List = React.forwardRef(({
 
   if (listItems) {
     if (isMenu) { // megamenu
-      children = listItems.map((listitems, index) => {
-        return <ListItem {...listitems} key={"z-list-" + index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList} icon={ICON_ARROW_RIGHT_TRIANGLE} iconLeft={true}></ListItem>
-      })
+      children = listItems.map((listitems, index) => <ListItem {...listitems} key={`z-list-${  index}`} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList} icon={ICON_ARROW_RIGHT_TRIANGLE} iconLeft />)
     } else {
-      children = listItems.map((listitems, index) => {
-        return <ListItem {...listitems} key={"z-list-" + index} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList}></ListItem>
-      })
+      children = listItems.map((listitems, index) => <ListItem {...listitems} key={`z-list-${  index}`} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList} />)
     }
   }
 

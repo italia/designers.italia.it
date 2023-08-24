@@ -1,9 +1,9 @@
-const {walk} = require('./utils');
 const yaml = require('js-yaml');
 const fs = require('fs');
+const {walk} = require('./utils');
 
 const getCrumbLabelUpdates = () => {
-  let paths = [];
+  const paths = [];
   walk('./src/data/', (path) => {
     if (path.endsWith('.yaml')) {
       const doc = yaml.load(fs.readFileSync(path, 'utf8'));

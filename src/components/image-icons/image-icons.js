@@ -3,18 +3,18 @@ import ImageResponsive from "../image-responsive/image-responsive"
 import Icon from "../icon/icon"
 import "./image-icons.scss"
 
-const ImageIcons = ({
+function ImageIcons({
   image,
   alt,
   icons,
   images,
   background,
   customStyle
-}) => {
+}) {
 
-  let styles = 'image-icons'
-	+ `${background ? ' bg-'+background : ''}`
-  + `${customStyle ? ' '+customStyle : ''}`
+  const styles = 'image-icons'
+	+ `${background ? ` bg-${background}` : ''}`
+  + `${customStyle ? ` ${customStyle}` : ''}`
 
   let iconItems
   let imagesItems
@@ -24,17 +24,15 @@ const ImageIcons = ({
       item.icon.addonClasses = "flex-shrink-0"
       item.icon.hidden = true
       return(
-        <Icon {...item.icon} key={"icons-"+index}/>
+        <Icon {...item.icon} key={`icons-${index}`}/>
       )
     })
   }
 
   if (images) {
-    imagesItems = images.map((item,index) => {
-      return(
-        <ImageResponsive src={item.img} alt={item.alt} key={"image-"+index}/>
-      )
-    })
+    imagesItems = images.map((item,index) => (
+        <ImageResponsive src={item.img} alt={item.alt} key={`image-${index}`}/>
+      ))
   }
 
 

@@ -42,7 +42,7 @@ const SectionEditorial = ({
     ComponentView
   }
 
-  //heading level
+  // heading level
 	let HLevel
 	if (headingLevel) {
 		HLevel = `h${headingLevel}`;
@@ -50,7 +50,7 @@ const SectionEditorial = ({
 		HLevel = `h2`
 	}
 
-  let container=""
+  const container=""
   + `${fullColumn ? 'fullcolumn-editorial' : ' container-xxl'}`
 
   let row="row"
@@ -71,22 +71,20 @@ const SectionEditorial = ({
     row=""
   }
 
-  let styles = 'section-editorial'
-	+ `${background ? ' bg-'+background : ''}`
+  const styles = 'section-editorial'
+	+ `${background ? ` bg-${background}` : ''}`
   + `${noSpace ? ' py-0' : ''}`
   + `${background==="dark" ? ' text-white' : ''}`
 
-  //buttons
+  // buttons
 	let ButtonsRender
 	if (buttons) {
-		ButtonsRender = buttons.map((btn,index) => {
-			return(
-			   <Button key={"button-"+index} {...btn}/>
-			)
-		})
+		ButtonsRender = buttons.map((btn,index) => (
+			   <Button key={`button-${index}`} {...btn}/>
+			))
 	}
 
-  //xxx a11y downgrade if title is not set, quick fix to review asap
+  // xxx a11y downgrade if title is not set, quick fix to review asap
   if (!title) {
     id = undefined
   }

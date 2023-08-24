@@ -9,7 +9,7 @@ import { NavBarCollapsible, Sticky } from "bootstrap-italia"
 import FooterData from "../../data/footer.yaml";
 import Icon from "../icon/icon";
 
-const NavSidebar = ({
+function NavSidebar({
   id,
   title,
   subTitle,
@@ -25,7 +25,7 @@ const NavSidebar = ({
   list,
   secondaryList,
   page
-}) => {
+}) {
 
   let links
   let linksStyle
@@ -61,17 +61,17 @@ const NavSidebar = ({
 
           if (subItem.label === page) {
             expandSublinks = true
-            linksStyle = linksStyle+' contains-active'
+            linksStyle +=' contains-active'
           }
 
-          let subLiStyle = undefined
+          let subLiStyle
 
           if (subItem.disabled) {
             subLiStyle = 'disabled'
           }
 
           return (
-             <li key={"subl-"+indexSub}>
+             <li key={`subl-${indexSub}`}>
               <Link to={subItem.url} className={subLiStyle} activeClassName={GATSBY_ACTIVE}><span>{subItem.label}</span></Link>
             </li>
           )
@@ -81,27 +81,27 @@ const NavSidebar = ({
           + `${expandSublinks ? ' show' : ''}`
 
         return(
-          <li key={"l-"+index}>
-            <button className={linksStyle} data-bs-target={"#collapseNav-"+index} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={"collapseNav-"+index}>
+          <li key={`l-${index}`}>
+            <button className={linksStyle} data-bs-target={`#collapseNav-${index}`} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={`collapseNav-${index}`}>
               <span className="list-item-title-icon-wrapper list-item-title-icon-wrapper d-flex justify-content-between align-items-center">
                 <span>{item.label}</span>
-                <svg role="img" className="icon icon-sm icon-primary right" aria-hidden="true"><use href="/svg/sprites.svg#it-expand"></use></svg>
+                <svg role="img" className="icon icon-sm icon-primary right" aria-hidden="true"><use href="/svg/sprites.svg#it-expand" /></svg>
               </span>
             </button>
-            <ul className={subStyles} id={"collapseNav-"+index}>
+            <ul className={subStyles} id={`collapseNav-${index}`}>
               {subLinks}
             </ul>
           </li>
         )
-      } else {
+      } 
         return(
-          <li key={"l-"+index}>
+          <li key={`l-${index}`}>
             <Link className={linksStyle} to={item.url} activeClassName={GATSBY_ACTIVE}>
               <span>{item.label}</span>
             </Link>
           </li>
         )
-      }
+      
 
     })
   }
@@ -110,13 +110,13 @@ const NavSidebar = ({
     
     secondaryLinks = secondaryList.map((item,index) => {
 
-      let secondaryItemStyle = undefined
+      let secondaryItemStyle
 
       secondaryItemStyle = "list-item"
       + `${(item.disabled) ? ' disabled' : ''}`
 
       return(
-        <li key={"sl-"+index}>
+        <li key={`sl-${index}`}>
           <Link className={secondaryItemStyle} to={item.url} activeClassName={GATSBY_ACTIVE}>
             <span>{item.label}</span>
           </Link>
@@ -148,7 +148,7 @@ const NavSidebar = ({
     <div className="col-12 col-lg-3 px-lg-0 bg-light menu-column border-end bs-is-sticky" ref={navStickyRef}>
       <div className="nav-sidebar">
         <nav className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0 border-top" aria-label={ariaLabel}>
-          <button className="custom-navbar-toggler" type="button" aria-controls={id} aria-expanded="false" aria-label={toggleAriaLabel} data-bs-toggle="navbarcollapsible" data-bs-target="#navSidebarDs"><span className="it-list"></span><Icon {...ICON_CHEVRON_RIGHT} />{toggleLabel}
+          <button className="custom-navbar-toggler" type="button" aria-controls={id} aria-expanded="false" aria-label={toggleAriaLabel} data-bs-toggle="navbarcollapsible" data-bs-target="#navSidebarDs"><span className="it-list" /><Icon {...ICON_CHEVRON_RIGHT} />{toggleLabel}
           </button>
           <BackToTopEl
             positionTop={0}
@@ -158,15 +158,15 @@ const NavSidebar = ({
             ariaLabel={FooterData.footer.backToTop.ariaLabel}
           />
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
-            <div className="overlay"></div>
+            <div className="overlay" />
             <div className="close-div visually-hidden">
               <button className="btn close-menu" type="button">
-                <span className="it-close"></span>{buttonCloseAriaLabel}
+                <span className="it-close" />{buttonCloseAriaLabel}
               </button>
             </div>
             <a className="it-back-button" href="#" role="button">
               <svg role="img" className="icon icon-sm icon-primary align-top">
-                <use href="/svg/sprites.svg#it-chevron-left"></use>
+                <use href="/svg/sprites.svg#it-chevron-left" />
               </svg>
               <span>{backLabel}</span>
             </a>

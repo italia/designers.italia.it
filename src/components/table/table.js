@@ -3,16 +3,16 @@ import Tag from "../tag/tag"
 import SimpleCta from "../simple-cta/simple-cta"
 import "./table.scss"
 
-const Table = ({
+function Table({
   title,
   head,
   rows,
   addonClasses,
   responsive
-}) => {
+}) {
 
-  let tableClasses = "table my-4"
-    + `${addonClasses ? ' '+addonClasses : ''}`
+  const tableClasses = "table my-4"
+    + `${addonClasses ? ` ${addonClasses}` : ''}`
 
   let headItems
   let rowItems
@@ -20,20 +20,17 @@ const Table = ({
   let CellScope
 
   if (head) {
-    headItems = head.map((item,index) => {
-      return(
-        <th scope="col" key={"th-"+index}>
+    headItems = head.map((item,index) => (
+        <th scope="col" key={`th-${index}`}>
           {item.text}
           { item.tag && <Tag {...item.tag}/>}
           </th>
-      )
-    })
+      ))
   }
 
   if (rows) {
-    rowItems = rows.map((rowItem,index) => {
-      return(
-        <tr key={"tr-"+index}>{
+    rowItems = rows.map((rowItem,index) => (
+        <tr key={`tr-${index}`}>{
           rowItem.cols.map((tdItem,index) => {
             if (tdItem.scope) {
               CellType = `th`
@@ -44,7 +41,7 @@ const Table = ({
             }
 
             return(
-              <CellType scope={CellScope} key={"td-"+index} className={tdItem.addonClasses}>
+              <CellType scope={CellScope} key={`td-${index}`} className={tdItem.addonClasses}>
                 { tdItem.text }
                 { tdItem.tag && <Tag {...tdItem.tag}/>}
                 { tdItem.simpleCta && <SimpleCta {...tdItem.simpleCta} />}
@@ -52,8 +49,7 @@ const Table = ({
             )
           })
         }</tr>
-      )
-    })
+      ))
   }
 
   return (

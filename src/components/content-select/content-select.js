@@ -7,14 +7,14 @@ import './content-select.scss'
 
 const VARIANT_PREFIX = 'variant-'
 
-const ContentSelect = ({
+function ContentSelect({
   id,
   title,
   textInfo,
   children,
   selectedIdx,
   label
-}) => {
+}) {
 
   const [itemSelected, setItemSelected] = useState(!isNaN(selectedIdx) ? VARIANT_PREFIX + selectedIdx : VARIANT_PREFIX + 0)
 
@@ -53,9 +53,9 @@ const ContentSelect = ({
         </div>
         <div className="col-12 col-md-6 col-lg-5 mb-4">
           <div className="select-wrapper px-3 px-md-0">
-            <label htmlFor={id + "-select"}>{label}</label>
-            <select value={itemSelected} onChange={changeValue} autoComplete="off" id={id + "-select"}>
-              {variants.map((v, idx) => <option key={'opt-' + idx} value={v.value}>{v.name}</option>)}
+            <label htmlFor={`${id  }-select`}>{label}</label>
+            <select value={itemSelected} onChange={changeValue} autoComplete="off" id={`${id  }-select`}>
+              {variants.map((v, idx) => <option key={`opt-${  idx}`} value={v.value}>{v.name}</option>)}
             </select>
           </div>
         </div>

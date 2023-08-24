@@ -5,10 +5,10 @@ import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css'
 
 import './breadcrumbs.scss'
 
-const Breadcrumbs = ({
+function Breadcrumbs({
   pageContext,
   crumbLabel,
-}) => {
+}) {
 
   const {
     breadcrumb: { crumbs },

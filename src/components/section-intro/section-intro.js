@@ -4,7 +4,7 @@ import "./section-intro.scss"
 
 import ContentCollapse from "../content-collapse/contentCollapse"
 
-const SectionIntro = ({
+function SectionIntro({
   id,
   background,
   title,
@@ -17,12 +17,12 @@ const SectionIntro = ({
   isHome,
   children,
   isFull,
-}) => {
+}) {
 
-  let styles = 'section-intro py-5'
-	+ `${background ? ' bg-'+background : ''}`
+  const styles = 'section-intro py-5'
+	+ `${background ? ` bg-${background}` : ''}`
 
-  //heading level
+  // heading level
 	let HLevel
 	if (headingLevel) {
 		HLevel = `h${headingLevel}`;
