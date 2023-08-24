@@ -8,6 +8,8 @@ import classNames from "classnames"
 import ListItem from "../list-item/list-item"
 import Tag from "../tag/tag"
 
+import Card from "../card/card"
+
 function ListArchiveMedia({
   background,
   noSpace,
@@ -31,6 +33,7 @@ function ListArchiveMedia({
             components {
               hero {
                 title
+                subtitle
                 tag {
                   label
                 }
@@ -39,6 +42,7 @@ function ListArchiveMedia({
             seo {
               description
               pathname
+              image
             }
           }
         }
@@ -58,11 +62,18 @@ function ListArchiveMedia({
 
   const styles = classNames(
     'section-editorial',
-  {
-    [`bg-${background}`]: background,
-    'py-0': noSpace,
-    'text-white': (background === "dark")
-  })
+    {
+      [`bg-${background}`]: background,
+      'py-0': noSpace,
+      'text-white': (background === "dark")
+    })
+
+  const cardStyles = 'col-12 col-md-6 mb-3 mb-md-4 col-lg-4'
+
+  const iconOverlay = {
+    icon: 'sprites.svg#it-video',
+    ariaLabel: 'video'
+  }
 
   return (
     <section className={styles} aria-describedby="archive-list-title">
@@ -70,38 +81,30 @@ function ListArchiveMedia({
         <div className="row">
           <div className="col-12 g-0">
             <div className="px-3 px-lg-0 px-lg-5">
-              <h2 className="border-bottom pb-4" id="archive-list-title">{tagHeader}</h2>
-              <div className="it-list-wrapper">
-                <ul className="it-list mt-4 mt-md-3">
-                  {edges.map(({ node }) => {
-                    const { id } = node
-                    const { pathname } = node.seo
-                    const { title } = node.components?.hero
-                    const { description } = node.seo
-                    return (
-                      <ListItem url={pathname} key={id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
-                        <div className="d-md-flex">
-                          <h3 className="h6 mb-0">
-                            <strong>{title}</strong>
-                          </h3>
-                          <div className="mb-3">
-                            {node.components?.hero?.tag?.label &&
-                              <div className="mb-2 mt-1 mb-md-0 mt-md-0">
-                                <Tag label={node.components?.hero?.tag?.label} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal" />
-                              </div>
-                            }
-                            {node.metadata?.template?.name &&
-                              (node.metadata?.template?.name === 'level1' || node.metadata?.template?.name === 'community') ?
-                              <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block ">
-                                <Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal" />
-                              </div>
-                              : null}
-                          </div>
-                        </div>
-                      </ListItem>
-                    )
-                  })}
-                </ul>
+              <h2 className="border-bottom pb-4 mb-4 mb-md-5" id="archive-list-title">{tagHeader}</h2>
+              <div className="">
+                {edges.map(({ node }) => {
+                  const { id } = node
+                  const { pathname } = node.seo
+                  const { title } = node.components?.hero
+                  const { tag } = node.components?.hero
+                  const { image } = node.seo
+                  return (
+                    <div className={cardStyles} key={id}>
+                      <Card
+                        title={title}
+                        url={pathname}
+                        cardEvent='true'
+                        img={image}
+                        alt=""
+                        imgRatio='21x9'
+                        fullHeight='true'
+                        tag={tag}
+                        iconOverlay={iconOverlay}
+                      />
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
