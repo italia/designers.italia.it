@@ -9,6 +9,11 @@ const { findValues } = require('./server/utils/findValues')
 
 const isRemoteAsset = (assetPath) => assetPath.startsWith('http')
 
+const express = require('express');
+exports.onCreateDevServer = ({ app }) => {
+  app.use(express.static('public'))
+}
+
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html" || stage === "develop-html") {
     actions.setWebpackConfig({
@@ -50,7 +55,7 @@ exports.sourceNodes = async ({
       }
       createNode({
         ...data,
-        id: `asset-${  idx}`,
+        id: `asset-${idx}`,
         parent: null,
         children: [],
         internal: {
@@ -178,7 +183,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `
   )
   redirs.data.allContent.edges.forEach((edge) => {
-    const {node} = edge
+    const { node } = edge
     node.metadata.redirect_from.forEach((fromPath) => {
       const toPath = edge.node.seo.pathname
       console.log(`Creating redirect: ${fromPath} -> ${toPath}...`)
