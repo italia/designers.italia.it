@@ -26,35 +26,42 @@ function Kangaroo({
   const styles = "kangaroo px-3"
     + `${noPadding ? ' ' : ' px-lg-5'}`
 
-  const colorStyle = `${color ? ` text-${  color}` : ''}`
+  const colorStyle = `${color ? ` text-${color}` : ''}`
 
-  const tagsLabelStyle = `text-uppercase small ${  colorStyle}`
+  const tagsLabelStyle = `text-uppercase small ${colorStyle}`
 
   return (
     <section className={styles} aria-labelledby={id}>
       {titleSr && <h2 className="visually-hidden" id={id}>{titleSr}</h2>}
       <div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-top">
-        <div className="left-zone">
-            {navposition &&
-              <div className="navposition-wrapper">
-                <NavPosition {...navposition} />
-              </div>
-            }
-            {personalInfo &&
-              <div className="personal-info-wrapper">
-                <NavPosition {...personalInfo} />
-              </div>
-            }
-            {eventInfo &&
-              <div className="event-info-wrapper">
-                <NavPosition {...eventInfo} />
-              </div>
-            }
-            {otherInfo &&
-              <div className="other-info-wrapper">
-                <NavPosition {...otherInfo} />
-              </div>
-            }
+        {dropdown &&
+          <div className="left-zone col-12 col-lg-4 d-flex pt-3 pb-4">
+            <div className="dropdwon-zone mt-4 mt-lg-0">
+              <Dropdown {...dropdown} />
+            </div>
+          </div>
+        }
+        <div className="right-zone">
+          {navposition &&
+            <div className="navposition-wrapper">
+              <NavPosition {...navposition} />
+            </div>
+          }
+          {personalInfo &&
+            <div className="personal-info-wrapper">
+              <NavPosition {...personalInfo} />
+            </div>
+          }
+          {eventInfo &&
+            <div className="event-info-wrapper">
+              <NavPosition {...eventInfo} />
+            </div>
+          }
+          {otherInfo &&
+            <div className="other-info-wrapper">
+              <NavPosition {...otherInfo} />
+            </div>
+          }
           {(tagsLabel && tags) && (tags.length > 0) &&
             <div className="pills-wrapper d-md-flex align-items-start pt-3 pt-md-2">
               <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
@@ -63,8 +70,8 @@ function Kangaroo({
               </div>
               <div className="chips ms-md-3 mb-2 mb-lg-0">
                 {tags.map((tag, index) => (
-                    <Chip key={`chip-${  index}`} label={tag} size="lg" color="primary" />
-                  ))}
+                  <Chip key={`chip-${index}`} label={tag} size="lg" color="primary" />
+                ))}
               </div>
             </div>
           }
@@ -76,20 +83,13 @@ function Kangaroo({
               </div>
               <div className="chips ms-md-3 mb-2 mb-lg-0">
                 {tagsDesignSystem.map((tag, index) => (
-                    <Chip key={`chip-${  index}`} label={tag} size="lg" color="primary" path="design-system/componenti/utili-per" />
-                  ))}
+                  <Chip key={`chip-${index}`} label={tag} size="lg" color="primary" path="design-system/componenti/utili-per" />
+                ))}
               </div>
             </div>
           }
 
         </div>
-        {dropdown &&
-          <div className="right-zone col-12 col-lg-4 d-flex flex-lg-row-reverse pt-3 pb-4">
-            <div className="dropdwon-zone mt-4 mt-lg-0">
-              <Dropdown {...dropdown} />
-            </div>
-          </div>
-        }
       </div>
     </section>
   )
