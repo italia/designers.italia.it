@@ -123,7 +123,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const tags = await graphql(`
     {
       tagsGroup: allContent {
-        group(field: components___hero___kangaroo___tags) {
+        group(field: {components: {hero: {kangaroo: {tags: SELECT}}}}) {
           fieldValue
         }
       }
@@ -145,7 +145,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const tagsDesignSystem = await graphql(`
     {
       tagsDesignSystemGroup: allContent {
-        group(field: components___hero___kangaroo___tagsDesignSystem) {
+        group(field: {components: {hero: {kangaroo: {tagsDesignSystem: SELECT}}}}) {
           fieldValue
         }
       }
