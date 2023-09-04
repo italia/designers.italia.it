@@ -1,0 +1,202 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/utilities/icone.json
+  template:
+    name: design-system-index
+
+seo:
+  name: Icone
+  description: "Un pacchetto di icone coerenti incluso nel design system ed estendibile"
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/fondamenti/icone/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: 'Ultimo aggiornamento:'
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+components:
+  hero:
+    background: null
+    title: Icone
+    column: true
+    subtitle: "Un pacchetto di icone coerenti incluso nel design system ed estendibile"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia,Sviluppo interfaccia,Media]
+
+  sectionsEditorial :
+
+    - full: true
+      noSpace: false
+      title: Introduzione
+      text: _In stesura_
+      background: null
+      components:
+        # - name: TextImageCta
+        #   text: |
+        #     _In stesura_
+
+        - name: TextImageCta
+          title: Tutte le icone disponibili
+          headingLevel: 2
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Icone disponibili
+          source: bsi/utilities/icone
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          # minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/utilities/icone/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Esempi
+          headingLevel: 2
+
+        - name: TextImageCta
+          title: Base
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Base
+          source: bsi/utilities/icone
+          idPrefix: "viewer02-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/utilities/icone/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Varianti dimensioni
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Varianti dimensioni
+          source: bsi/utilities/icone
+          idPrefix: "viewer03-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/utilities/icone/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Varianti dimensioni, con padding
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Varianti dimensioni, con padding
+          source: bsi/utilities/icone
+          idPrefix: "viewer04-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/utilities/icone/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Varianti colori
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Varianti colori
+          source: bsi/utilities/icone
+          idPrefix: "viewer05-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/utilities/icone/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Allineamenti
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Allineamenti
+          source: bsi/utilities/icone
+          idPrefix: "viewer06-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/utilities/icone/
+          accordionOpen: false
+          accordionShow: true
+
