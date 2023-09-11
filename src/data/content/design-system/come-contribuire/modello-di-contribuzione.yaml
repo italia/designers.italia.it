@@ -6,12 +6,12 @@ metadata:
     name: design-system-index
 
 seo:
-  name: Per contribuire
+  name: Modello di contribuzione
   description: Tutte le indicazioni per contribuire all'evoluzione della documentazione e delle risorse del design system del Paese
   image: null
   twitterImage: null
   canonical: null
-  pathname: /design-system/come-iniziare/per-contribuire/
+  pathname: /design-system/come-contribuire/modello-di-contribuzione/
 
 lastUpdate:
   column: true
@@ -53,11 +53,11 @@ lastUpdate:
 components:
   hero:
     background: null
-    title: Per contribuire
+    title: Modello di contribuzione
     column: true
     subtitle: Tutte le indicazioni per contribuire all'evoluzione della documentazione e delle risorse del design system del Paese
     tag:
-      label: Come iniziare #C
+      label: Come contribuire #C
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -175,13 +175,55 @@ components:
     #       img: /images/design-system/uikit.jpg
     #       alt: Schema sintetico del modello di contribuzione descritto in pagina
         
-
     - full: true
       noSpace: false
       title: Cosa puoi fare?
       text: _In stesura_ 
       background: null
       components:
+
+        - name: TextImageCta
+          title: A seconda dei tuoi interessi
+          noSpace: true
+          text: |
+            _In stesura_
+          ctas:
+            - label: "Per la documentazione" #C
+              screenReaderText: ""
+              url: "/design-system/come-contribuire/per-la-documentazione/" #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Per il design" #C
+              screenReaderText: ""
+              url: "/design-system/come-contribuire/per-il-design/" #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2 
+            - label: "Per lo sviluppo" #C
+              screenReaderText: ""
+              url: "/design-system/come-contribuire/per-lo-sviluppo/" #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2 
 
         - name: TextImageCta
           title: Partecipa a una discussione
@@ -215,132 +257,6 @@ components:
             Appunti per la stesura: 
               - Sempre collegato a segnalazione
               - Dipende da risorsa cosa sono le PR, se GitHub pure PR sennò se Figma o Design Tokens remix e link in segnalazione per eg., vedi dopo
-
-
-    - fullColumn: true
-      noSpace: false
-      text: qui una immagine schema delle risorse a cui si può contribuire
-      background: medium
-    #   components:
-    #     - name: ImgFull
-    #       img: /images/design-system/uikit.jpg
-    #       alt: Schema sintetico del modello di contribuzione descritto in pagina
-
-    - full: true
-      noSpace: false
-      title: Da dove puoi iniziare? 
-      text: Scegli la risorsa del design system a cui vuoi contribuire a seconda delle tue competenze
-      background: null
-      components:
-
-        - name: TextImageCta
-          title: Documentazione (questo sito)
-          noSpace: true
-          text: | 
-            Unica fonte di verità sulle risorse e sullo stato dei lavori del design system del Paese, questo è il cuore del progetto.
- 
-            Puoi contribuire ai **contenuti**, all'**immaginario visivo** e allo **sviluppo**. 
-        - name: TextImageCta
-          title: Per un contributo diretto alla documentazione
-          headingLevel: 4
-          text: |
-              Ogni scheda di contenuto ha un collegamento a fondo pagina "**Proponi una modifica**", che permette di poter aprire una richiesta di contribuzione (_PR - Pull request_) specifica per piccole integrazioni o correzioni di contenuto. 
-              
-              L'intero sorgente del sito è disponibile sul repository [italia/designers.italia.it](https://github.com/italia/designers.italia.it/) ed è possibile contribuire sia lato contenuti che sviluppo.
-
-              Per inviare un contributo diretto (_PR - Pull request_) è preferibile aprire prima una segnalazione evidenziando intenzioni e possibilità. 
-          ctas: 
-            - label: "Esplora tutte le segnalazioni" #C
-              screenReaderText: " relative alla documentazione"
-              url: https://github.com/italia/designers.italia.it/issues?q=is%3Aissue+is%3Aopen+label%3A%22design+system%22 #M
-              blank: true #M #C true if new tab for external links
-              # disabled: true
-              icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-            - label: "Apri una nuova segnalazione" #C
-              screenReaderText: " relativa alla documentazione"
-              url: https://github.com/italia/designers.italia.it/issues/new #M
-              blank: true #M #C true if new tab for external links
-              # disabled: true
-              icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-  
-        - name: TextImageCta
-          title: UI Kit Italia
-          noSpace: true
-          text: |
-            Il kit per progettare e prototipare interfacce ed esperienze di siti e servizi pubblici digitali. 
-
-            Puoi contribuire al **design di contenuti e interfaccia**, allo **sviluppo degli automatismi di conversione** verso altri formati e al **testing**. 
-
-            Disponibile per l'uso dalla [scheda della community Figma](https://www.figma.com/community/file/1105848677422572920/UI-Kit-Italia-v3.1.0) è versionato e rilasciato in altri formati sul repository GitHub [italia/design-ui-kit](https://github.com/italia/design-ui-kit).
-
-        - name: TextImageCta
-          title: Per un contributo diretto al kit in Figma
-          noSpace: true
-          headingLevel: 4
-          text: |
-              Per inviare un contributo diretto (_PR - Pull request_) di design al kit UI in Figma devi:
-              1. apri prima una segnalazione evidenziando intenzioni e possibilità  
-              2. parti sempre da un "[remix](https://help.figma.com/hc/en-us/articles/360038510873-Duplicate-Community-files#remix)" della versione più recente di UI Kit Italia disponibile nella community
-              3. pubblica in open il proprio remix con il contributo nella community
-              4. indica il proprio contributo nella segnalazione aperta al punto 1
-            
-              Poni particolare attenzione alla compabilità della proposta con la conversione del kit verso altri formati aperti, in particolare utiliziamo lo strumento [fig2sketch](https://github.com/sketch-hq/fig2sketch) per generare in automatico la conversione del kit nel formato Sketch a ogni rilascio nella repository dedicata. Scrivi nella segnalazione se hai testato la conversione della proposta. 
-
-        - name: TextImageCta
-          title: Per altri contributi
-          headingLevel: 4
-          text: |
-              Per contribuire per esempio agli automatismi di conversione verso altri formati, ai contenuti del respository dedicato o al testing delle risorse è sempre preferibile aprire prima una segnalazione evidenziando intenzioni e possibilità. 
-          ctas: 
-            - label: "Esplora tutte le segnalazioni" #C
-              screenReaderText: " relative a UI Kit Italia"
-              url: https://github.com/italia/design-ui-kit/issues #M
-              blank: true #M #C true if new tab for external links
-              # disabled: true
-              icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-            - label: "Apri una nuova segnalazione" #C
-              screenReaderText: " relativa a UI Kit Italia"
-              url: https://github.com/italia/design-ui-kit/issues/new #M
-              blank: true #M #C true if new tab for external links
-              # disabled: true
-              icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2  
-
-        - name: TextImageCta
-          title: Design Tokens Italia
-          text: _In stesura_ 
-          
-        - name: TextImageCta
-          title: Bootstrap Italia
-          text: _In stesura_ 
-
-        - name: TextImageCta
-          title: Altre librerie di sviluppo
-          text: _In stesura_ 
-
 
     - full: true
       noSpace: true

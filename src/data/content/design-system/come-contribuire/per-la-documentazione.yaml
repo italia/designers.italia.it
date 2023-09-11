@@ -1,0 +1,215 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Per la documentazione
+  description: In stesura
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/come-contribuire/per-la-documentazione/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: 'Ultimo aggiornamento:'
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Per la documentazione
+    column: true
+    subtitle: In stesura
+    tag:
+      label: Come contribuire #C
+      addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-info-circle
+        size: sm
+      text: In breve
+    text: |
+      In stesura
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Come iniziare #C
+            url: "../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Progettare e sviluppare l'interfaccia utente" #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
+
+  sectionsEditorial :
+
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/design-system/uikit.jpg
+    #       alt: Schema sintetico del modello di contribuzione descritto in pagina
+
+    - full: true
+      noSpace: false
+      title: Contribuisci a questa documentazione
+      text: Unica fonte di verità sulle risorse e sullo stato dei lavori del design system del Paese.
+      background: null
+      components:
+
+        - name: TextImageCta
+          # title: Documentazione (questo sito)
+          noSpace: false
+          text: |  
+            Puoi proporre modifiche, partecipare a discussioni, aprire segnalazioni e proporti per inviare contributi su tutte le schede della presente documentazione.
+
+            Puoi contribuire ad esempio alla correzione di editing, a migliorare il linguaggio dei **contenuti**, a fare proposte migliorative dell'**immaginario visivo** e allo **sviluppo** stesso del sito e del suo software. 
+
+            Premessa importante: assicurati di conoscere i [fondamenti del design system del Paese](/design-system/fondamenti/). 
+          ctas: 
+            - label: "Conosci il modello di contribuzione?" #C
+              screenReaderText: ""
+              url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
+        - name: TextImageCta
+          title: "Come contribuire alla documentazione:"
+          noSpace: true
+          headingLevel: 3
+        - name: TextImageCta
+          title: 1. Proponi una modifica di contenuto su una pagina
+          noSpace: true
+          headingLevel: 4
+          text: |
+            Ogni scheda di questa documentazione ha un collegamento al fondo "**Proponi una modifica**", utile per piccole integrazioni o correzioni di contenuto. L'azione permette di arrivare direttamente al file di testo che controlla i contenuti e aprire una richiesta di modifica e contribuzione (_PR - Pull request_).
+
+            _Immagine link "Proponi una modifica", valutare tutorial video XXX_
+
+        - name: TextImageCta
+          title: 2. Esplora la lista di tutte le discussioni
+          noSpace: true
+          headingLevel: 4
+          text: |
+              L'intero codice sorgente del sito è disponibile sul repository [italia/designers.italia.it](https://github.com/italia/designers.italia.it/) ed è possibile contribuire sia lato contenuti che sviluppo.
+
+              Controlla se c'è già una discussione sul tema che ti interessa, o su un tema simile. Se c'è, vai nella segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo sul tema proponiti lasciando un commento nella discussione evidenziando intenzioni e possibilità.
+          ctas: 
+            - label: "Esplora tutte le segnalazioni" #C
+              screenReaderText: " relative alla documentazione"
+              url: https://github.com/italia/designers.italia.it/issues?q=is%3Aissue+is%3Aopen+label%3A%22design+system%22 #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+                
+        - name: TextImageCta
+          title: 3. Apri una segnalazione
+          noSpace: false
+          headingLevel: 4
+          text: |
+            Se il tema di tuo interesse non è nella lista puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari ad approfondire.   
+          ctas:
+            - label: "Apri una nuova segnalazione" #C
+              screenReaderText: " relativa alla documentazione"
+              url: https://github.com/italia/designers.italia.it/issues/new #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
