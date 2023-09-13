@@ -172,9 +172,21 @@ components:
           text: |
             Controlla se già esiste una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai nella segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo di design sul tema scopri di seguito la procedura per inviare contributi e proponili nella discussione.  
           ctas: 
-            - label: "Esplora tutte le discussioni" #C
-              screenReaderText: " relative a UI Kit Italia"
+            - label: "Discussioni su UI Kit Italia" #C
+              screenReaderText: ""
               url: https://github.com/italia/design-ui-kit/issues #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Discussioni su Design Tokens Italia" #C
+              screenReaderText: ""
+              url: https://github.com/italia/design-tokens-italia/issues #M
               blank: true #M #C true if new tab for external links
               # disabled: true
               icon:
@@ -192,9 +204,21 @@ components:
           text: |
             Se il tema di tuo interesse non è nella lista puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari per approfondire il tema, in modo da consentire alla community e al team di Designers Italia di avere un quadro chiaro ed il più possibile completo della tua proposta.    
           ctas: 
-            - label: "Apri una nuova segnalazione" #C
-              screenReaderText: " relativa a UI Kit Italia"
+            - label: "Nuova segnalazione UI Kit Italia" #C
+              screenReaderText: ""
               url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Nuova segnalazione Design Tokens Italia" #C
+              screenReaderText: ""
+              url: https://github.com/italia/design-tokens-italia/issues/new #M
               blank: true #M #C true if new tab for external links
               # disabled: true
               icon:
@@ -213,26 +237,16 @@ components:
           noSpace: true
           headingLevel: 5
           text: |
-              Per inviare un contributo diretto (_PR - Pull request_) di design al kit UI in Figma:
-              1. apri prima una segnalazione, o proponi il contributo nei commenti a una discussione già esistente sul tema, evidenziando intenzioni e possibilità
+              Puoi inviare un contributo diretto (_PR - Pull request_) di design a UI Kit Italia in Figma:
+              1. apri prima una segnalazione, o proponi il contributo nei commenti a una discussione già esistente sul tema di interesse, evidenziando intenzioni e possibilità
               2. parti sempre da un "[remix](https://help.figma.com/hc/en-us/articles/360038510873-Duplicate-Community-files#remix)" della versione più recente di UI Kit Italia disponibile nella community
-              3. pubblica in open il tuo remix con il contributo nella community
-              4. indica il tuo remix nella segnalazione aperta al punto 1
+              3. pubblica in open il tuo remix nella community
+              4. indica l'indirizzo del tuo remix nella segnalazione aperta al punto 1 o in un commento dedicato
             
-              Poni particolare attenzione al rispetto dei fondamenti del design system del Paese e alla compabilità della proposta di contributo con la conversione del kit verso altri formati aperti; in particolare utilizziamo lo strumento [fig2sketch](https://github.com/sketch-hq/fig2sketch) per generare in automatico la conversione del kit nel formato Sketch a ogni rilascio nella repository dedicata. Scrivi nella segnalazione se hai testato la conversione della proposta. 
+              Nelle lavorazioni poni particolare attenzione al rispetto dei fondamenti del design system del Paese e alla compabilità della proposta di contributo con la conversione del kit verso altri formati aperti; in particolare utilizziamo lo strumento [fig2sketch](https://github.com/sketch-hq/fig2sketch) per generare in automatico la conversione del kit nel formato Sketch a ogni rilascio nella repository dedicata. Scrivi nella segnalazione se hai testato la conversione della proposta. 
 
         - name: TextImageCta
           title: Per altri tipi di contributo
           headingLevel: 5
           text: |
-              Se vuoi contribuire agli automatismi di conversione verso altri formati, ai contenuti del repository dedicato o al testing delle risorse è sempre preferibile aprire prima una segnalazione, o proporsi nei commenti a una discussione già esistente sul tema, evidenziando intenzioni e possibilità. 
-
-    - full: true
-      noSpace: true
-      title: Contribuisci a Design Tokens Italia
-      text: In stesura
-      background: null
-      components:
-        - name: TextImageCta
-          # title: Design Tokens Italia
-          text: _In stesura_ 
+              Se vuoi contribuire agli automatismi di conversione verso altri formati, ai contenuti dei repository dedicati o al testing delle risorse è sempre preferibile aprire prima una segnalazione, o proporsi nei commenti a una discussione già esistente sul tema, evidenziando intenzioni e possibilità. 

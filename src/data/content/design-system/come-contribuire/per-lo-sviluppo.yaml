@@ -142,9 +142,7 @@ components:
           noSpace: false
           headingLevel: 3
           text: |
-            Puoi partecipare a discussioni, aprire segnalazioni e inviare contributi alle principali risorse di sviluppo: **Bootstrap Italia** e **Design Tokens Italia**. Puoi partecipare all'evoluzione _community-driven_ dei _framework_ React e Angular che implementano Bootstrap Italia.
-
-            Puoi contribuire ad esempio allo **sviluppo di contenuti e interfaccia**, ... XXX 
+            Puoi partecipare a discussioni, aprire segnalazioni e inviare contributi alla principale risorsa di sviluppo. **Bootstrap Italia**. È inoltre possibile collaborare al lavoro di integrazione di **Design Tokens Italia** e puoi partecipare all'evoluzione _community-driven_ dei _framework_ React e Angular che implementano Bootstrap Italia.
 
             Premessa importante: assicurati di conoscere i [fondamenti del design system del Paese](/design-system/fondamenti/) e [le risorse per sviluppatori](/design-system/come-iniziare/per-sviluppatori/). 
           ctas: 
@@ -172,9 +170,21 @@ components:
           text: |
             Controlla se esiste già una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai nella segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo di design sul tema scopri di seguito come inviare contributi e proponilo nella discussione.  
           ctas: 
-            - label: "Esplora tutte le discussioni" #C
-              screenReaderText: " relative a Bootstrap Italia"
+            - label: "Discussioni su Bootstrap Italia" #C
+              screenReaderText: ""
               url: https://github.com/italia/bootstrap-italia/issues #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Discussioni su Design Tokens Italia" #C
+              screenReaderText: ""
+              url: https://github.com/italia/design-tokens-italia/issues #M
               blank: true #M #C true if new tab for external links
               # disabled: true
               icon:
@@ -192,9 +202,21 @@ components:
           text: |
             Se il tema di tuo interesse non è nella lista puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari ad approfondire.     
           ctas: 
-            - label: "Apri una nuova segnalazione" #C
-              screenReaderText: " relativa a Bootstrap Italia"
+            - label: "Nuova segnalazione Bootstrap Italia" #C
+              screenReaderText: ""
               url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Nuova segnalazione Design Tokens Italia" #C
+              screenReaderText: ""
+              url: https://github.com/italia/design-tokens-italia/issues/new #M
               blank: true #M #C true if new tab for external links
               # disabled: true
               icon:
@@ -212,18 +234,8 @@ components:
             _In stesura_
 
         - name: TextImageCta
-          title: "Come contribuire agli sviluppi React e Angular basati su Bootstrap Italia:"
+          title: "Come contribuire agli sviluppi community driven"
           noSpace: true
           headingLevel: 3
           text: |
             _In stesura_
-
-    - full: true
-      noSpace: true
-      title: Contribuisci a Design Tokens Italia
-      text: In stesura
-      background: null
-      components:
-        - name: TextImageCta
-          # title: Design Tokens Italia
-          text: _In stesura_ 
