@@ -131,38 +131,77 @@ components:
     - full: true
       noSpace: false
       title: "L'evoluzione del design system del Paese è aperta"
-      text: Scopri come contribuire in base alle tue competenze e al tempo che hai a disposizione. 
+      # text: Scopri come contribuire in base alle tue competenze e al tempo che hai a disposizione. 
       background: null
       components:
         - name: TextImageCta
-        # title: Documentazione (questo sito)
+          # title: Un approccio aperto e trasparente
           noSpace: false
           text: |  
-            La documentazione e le risorse di questo design system sono progettate e manutenute del team di Designers Italia con un approccio aperto e trasparente, privilegiando strumenti che permettono di seguire i lavori in tempo reale e di prendere parte alle evolutive tecniche e alle novità di progettazione.
+            La documentazione e le risorse del design system sono progettate e manutenute del team di Designers Italia con un approccio aperto e trasparente, privilegiando strumenti che permettono di seguire i lavori in tempo reale e di prendere parte alle evolutive tecniche e alle novità di progettazione. 
+          ctas: 
+            - label: "Conosci il fondamento Princìpi e intenzioni?" #C
+              # screenReaderText: ""
+              url: "/design-system/fondamenti/principi-e-intenzioni/" #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: "Perché contribuire al design system?"
           noSpace: true
           headingLevel: 3
-        - name: TextImageCta
-          title: Il design system Italia è per tutte le persone, e ognuno di noi può offrire un contributo basato su dati, ricerca utente e test sul campo. 
-          noSpace: true
-          headingLevel: 4
           text: |
-            Crediamo che il contributo attivo della community che osserva, utilizza, personalizza e implementa quotidianamente le soluzioni proposte nel design system del Paese sia fondamentale per far crescere la qualità della documentazione e delle risorse operative a supporto delle PA.   
-            I contributor come te sono ciò che rende questo design system vivo, e per questo ti siamo grati.
-            Dalla segnalazione di una correzione alla proposta di un’integrazione, dalla presentazione di un nuovo componente alle discussioni su modifiche futuribili, ogni contributor può prendere parte al miglioramento continuo del design system.
-
-            Ti suggeriamo di pensare oltre il singolo servizio digitale per immaginare componenti e pattern scalabili, riusabili e che possono evolvere nel tempo. Condividi ciò che hai imparato nel fare ricerca con gli utenti.  
-
-            Sii disponibile a ricevere feedback o richieste di modifica al tuo lavoro. Sii gentile e incoraggia gli altri a esserlo, quando ricevi domande o feedback. 
-
-            Quando una persona della community contribuisce al Design System, ci piace ringraziarla pubblicamente, ma se preferisci non ricevere menzioni pubbliche, puoi farcelo sapere in questo modo. 
+            Il design system del Paese è per tutte le persone, e ognuno può offrire un contributo basato su dati, ricerca utente e test sul campo.
             
+            Crediamo che il contributo attivo della community che osserva, utilizza, personalizza e implementa quotidianamente le soluzioni proposte sia fondamentale per far crescere la qualità della documentazione e delle risorse operative a supporto delle PA. 
+            
+            I contributor come te sono ciò che rende questo design system vivo, e per questo ti siamo grati.
+            
+    - fullColumn: true
+      noSpace: false
+      text: qui una immagine schema del modello in sintesi
+      background: medium
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/design-system/uikit.jpg
+    #       alt: Schema sintetico del modello di contribuzione descritto in pagina
+        
+
+    - full: true
+      noSpace: false
+      title: Cosa puoi fare?
+      text: Scopri come contribuire in base alle tue competenze e al tempo che hai a disposizione.
+      background: null
+      components:
+
         - name: TextImageCta
-          title: Scopri il piano delle attività e lo stato dei lavori
+          noSpace: false
+          text: | 
+            Dalla segnalazione di una correzione alla proposta di un’integrazione, dalla presentazione di un nuovo componente alla partecipazione a discussioni su modifiche futuribili, ogni contributor può prendere parte al miglioramento continuo del progetto. 
+            
+            Ti suggeriamo di pensare oltre il singolo servizio digitale per immaginare componenti e pattern scalabili, riusabili e che possono evolvere nel tempo. Condividi ciò che hai imparato nel fare ricerca con gli utenti. Sii disponibile a ricevere feedback o richieste di modifica al tuo lavoro. Sii gentile e incoraggia gli altri a esserlo, quando ricevi domande o feedback. 
+
+            Quando una persona della community contribuisce al design system ci piace ringraziarla pubblicamente, ma se preferisci non ricevere menzioni pubbliche, puoi farcelo sapere durante la contribuzione. 
+
+        
+        - name: TextImageCta
+          title: "Come contribuire al design system:"
+          headingLevel: 3
           noSpace: true
-          text: Per esplorare lo stato dell’arte della documentazione e delle risorse puoi fare riferimento al piano che contiene la roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi mesi e anni.  
+
+        - name: TextImageCta
+          title: 1. Scopri il piano delle attività e lo stato dei lavori
+          headingLevel: 4
+          noSpace: true
+          text: | 
+            Per esplorare lo stato dell’arte della documentazione e delle risorse puoi fare riferimento al piano che contiene la roadmap delle attività e i principali risultati raggiunti dal progetto Designers Italia negli ultimi mesi e anni.  
           ctas: 
             - label: "Vai al piano attività" #C
               # screenReaderText: ""
@@ -176,7 +215,7 @@ components:
                 hidden: true
                 size: sm
                 addonClasses: ms-2
-            - label: "Apri la board di gestione progetto" #C
+            - label: "Scopri le attività in lavorazione" #C
               screenReaderText: " su GitHub"
               url: https://github.com/orgs/italia/projects/17/views/5 #M
               blank: true #M #C true if new tab for external links
@@ -189,32 +228,35 @@ components:
                 size: sm
                 addonClasses: ms-2
 
-    - fullColumn: true
-      noSpace: false
-      text: qui una immagine schema del modello in sintesi
-      background: medium
-    #   components:
-    #     - name: ImgFull
-    #       img: /images/design-system/uikit.jpg
-    #       alt: Schema sintetico del modello di contribuzione descritto in pagina
-        
-    - full: true
-      noSpace: false
-      title: Cosa puoi fare?
-      text: _In stesura_ 
-      background: null
-      components:
-
         - name: TextImageCta
-          title: A seconda dei tuoi interessi
+          title: 2. Usa il tuo profilo personale, o creane uno nuovo
+          headingLevel: 4
           noSpace: true
           text: |
-            _In stesura_
+            Per contribuire hai bisogno di un profilo personale gratuito sulla piattaforma GitHub. 
+            
+            Per creare un nuovo profilo:
+              1. Naviga su [github.com](https://github.com) e segui le istruzioni 
+              2. Verifica il tuo indirizzo email e abilita un doppio fattore di autenticazione 
+              3. Imposta un'immagine del profilo come gesto di cordialità verso la community
+
+        - name: TextImageCta
+          title: 3. Scegli come e dove contribuire
+          noSpace: false
+          headingLevel: 4
+          text: |  
+            Puoi contribuire ai lavori della presente documentazione, ai lavori sulle risorse di design e a quelli di sviluppo. 
+            
+            Puoi farlo partecipando alle discussioni aperte e in lavorazione nelle diverse repository delle risorse, aprendo nuove segnalazioni sul tema di tuo interesse laddove non sia già presente e contribuire inviando contributi e integrazioni.
+
+            Qui puoi trovare il [Codice di condotta](https://github.com/italia/bootstrap-italia/blob/main/CODE_OF_CONDUCT.md) della community, utile a mantenere un ambiente di collaborazione inclusivo e propositivo per tutte le persone.  
+
+            Approfondisci le modalità nelle schede dedicate: 
           ctas:
             - label: "Per la documentazione" #C
               screenReaderText: ""
               url: "/design-system/come-contribuire/per-la-documentazione/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               # disabled: true
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -226,7 +268,7 @@ components:
             - label: "Per il design" #C
               screenReaderText: ""
               url: "/design-system/come-contribuire/per-il-design/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               # disabled: true
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -238,7 +280,7 @@ components:
             - label: "Per lo sviluppo" #C
               screenReaderText: ""
               url: "/design-system/come-contribuire/per-lo-sviluppo/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               # disabled: true
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -247,39 +289,6 @@ components:
                 hidden: true
                 size: sm
                 addonClasses: ms-2 
-
-        - name: TextImageCta
-          title: Partecipa a una discussione
-          noSpace: true
-          text: |
-            _In stesura_   
-            
-            Appunti per la stesura: 
-              - Cosa sono le segnalazioni e come si discute (eg. Account GitHub)
-              - Esplora la lista delle segnalazioni (dalla board generale o delle repository dedicate vedi dopo)
-              - Contribuisci con commenti etc.
-              - Condice di condotta...
-  
-        - name: TextImageCta
-          title: Apri una segnalazione
-          noSpace: true
-          text: |
-            _In stesura_   
-            
-            Appunti per la stesura: 
-              - Le segnalazioni sono il luogo della discussione come detto ma sono anche 'le card' che poi sono nel processo di review e gestione
-              - Le segnalazioni possono avere PR di risoluzione...
-              - Sono il luogo dove discutere con team e community
-  
-        - name: TextImageCta
-          title: Invia un contributo
-          noSpace: true
-          text: | 
-            _In stesura_  
-            
-            Appunti per la stesura: 
-              - Sempre collegato a segnalazione
-              - Dipende da risorsa cosa sono le PR, se GitHub pure PR sennò se Figma o Design Tokens remix e link in segnalazione per eg., vedi dopo
 
     - full: true
       noSpace: true
@@ -292,21 +301,12 @@ components:
           title: Un processo open e trasparente
           text: | 
             _In stesura_ 
-            
-            Appunti per la stesura: 
-              - definizione processo review trasparente
-              - CTA Principi e intenzioni
-              - CTA Board di progetto 
 
         - name: TextImageCta
           title: Aperto a feedback e discussioni
           text: _In stesura_ 
 
         - name: TextImageCta
-          title: Con un approccio di versionamento semantico su tutte le risorse
+          title: Con un approccio di versionamento semantico
           text: |
                 _In stesura _
-                
-                Appunti per la stesura: 
-                - CTA Fondamento versionamento 
-
