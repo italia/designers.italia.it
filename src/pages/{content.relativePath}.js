@@ -669,7 +669,7 @@ export const query = graphql`
             fullHeight
             url
             text
-            tags
+            # tags
           }
         }
         sectionsEditorial2 {
