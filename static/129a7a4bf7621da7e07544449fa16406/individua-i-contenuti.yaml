@@ -1,3 +1,4 @@
+# INSTRUCTIONS
 # folder structure:
 # levelX.yaml < contents and settings
 # levelX/ < folder with childrens
@@ -23,12 +24,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Organizza i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie. #C
-  image: null #I
-  twitterImage: null #I
+  name: Individua i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni del futuro touchpoint digitale. #C
+  image: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png #I
+  twitterImage: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png
   canonical: null
-  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/organizza-i-contenuti/ #M
+  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/individua-i-contenuti/ #M
 
 lastUpdate:
   title: 'Ultimo aggiornamento:'
@@ -111,8 +112,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Organizza i contenuti #C
-    subtitle: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie #C
+    title: Individua i contenuti #C
+    subtitle: Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni del futuro touchpoint digitale #C
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
@@ -123,7 +124,7 @@ components:
     #   text: In breve
     # text: | #C
     #   Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_architettura_cardsorting.svg #I
+    img: /images/risorse-per-progettare/icons/kit_architettura_scenari.svg #I
     alt: "" #C
     imgRatio: 4x3
 
@@ -192,7 +193,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Come catalogare e raggruppare i contenuti con il card sorting #C
+    - title: Come utilizzare gli scenari per definire il contesto d’uso di un touchpoint #C
       menu: false
       centered: true
       background: null
@@ -204,11 +205,9 @@ components:
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
-            Se gli scenari d'uso ti permettono di individuare una serie di contenuti e funzioni potenziali per il servizio che stai progettando, l'attività di card sorting ti aiuterà a **raggruppare, ordinare e declinare** queste caratteristiche-chiave.
+            Gli scenari sono delle **storie** che raccontano specifiche vicende di utilizzo di un servizio digitale da parte di uno specifico utente, in uno specifico contesto; puoi usarli in modi diversi e con diversi scopi, a seconda del focus del progetto: qui trovi lo strumento scenari d'uso come punto di partenza per ideare le caratteristiche del futuro touchpoint digitale del servizio, in termini di contenuti e funzioni che questo dovrebbe avere. Gli scenari solitamente hanno come soggetto una delle **personas** di riferimento, e sono perciò un modo per trasporre quanto emerso dalla ricerca in idee per migliorare l’interazione con il servizio.
 
-            L'attività di card sorting è infatti utile per **individuare le macro-categorie** in cui contenuti e funzioni sono raggruppati e i percorsi attraverso i quali si articolano. Serve anche a **descrivere le tipologie di contenuti** presenti nel sistema e le relazioni che intercorrono fra esse.
-
-            Questo lavoro di catalogazione e raggruppamento è fondamentale per costruire e/o consolidare l’architettura dell’Informazione alla base del servizio digitale.
+            Contestualizzare una persona in uno scenario d’uso ti aiuta a comprendere i suoi obiettivi e a declinarli in sotto-obiettivi specifici. Questo è utile per mettere a fuoco le possibili **criticità** che l’utente potrebbe incontrare nell’interagire con il servizio digitale, sia nel caso della ri-progettazione un servizio digitale già esistente sia nel caso tu debba ipotizzare nuove soluzioni per future implementazioni di servizi.
 
   # ///////////////////
   # RESOURCES
@@ -220,45 +219,26 @@ components:
       - simpleList: true
         headingLevel: 3
         listItems:
-          - label: Card sorting #C
-            srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          - label: Scenari d'uso #C
+            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Organizza contenuti e funzioni del servizio digitale #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
+            text: Metti a fuoco il contesto di utilizzo di un servizio digitale #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso.ods #M
             blank: false
             actions:
-              - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
-                ariaLabel: "Scarica ODP Card sorting" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso.ods #M
+                ariaLabel: "Scarica ODS Scenari d'uso" #C #COMPILE FOR EACH ITEM
                 blank: false
-              - icon: sprites.svg#it-file-slides #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.pptx #M
-                ariaLabel: "Scarica PPTX Card sorting" #C #COMPILE FOR EACH ITEM
-                blank: false
-              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.pdf #M
-                ariaLabel: "Scarica PDF Card sorting" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Esempio di card sorting #C
-            srBefore: "PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
-            text: Scarica un esempio #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
+          - label: Esempio di scenari d'uso #C
+            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Guarda l'esempio di uno scenario d'uso basato sul modello Comuni #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso-esempio.ods #M
             blank: false
             actions:
-              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
-                ariaLabel: "PDF: Esempio di card sorting" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Card sorting in versione stampabile #C
-            srBefore: "PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
-            text: "Scarica e stampa il card sorting per fare l'esercizio dal vivo" #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
-            blank: false
-            actions:
-              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
-                ariaLabel: "PDF: Card sorting in versione stampabile" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso-esempio.ods #M
+                ariaLabel: "Scarica ODS Esempio di scenari d'uso" #C #COMPILE FOR EACH ITEM
                 blank: false
 
