@@ -143,6 +143,7 @@ components:
       components:
         - name: TextImageCta
           title: Come costruiamo i "numeri di versione"
+          noSpace: true
           text: |
             Cerchiamo di seguire le indicazioni per il versionamento semantico su ogni risorsa del design system, sia questa di progettazione, sviluppo o documentazione.
 
@@ -167,17 +168,18 @@ components:
       noSpace: true
       title: Stato delle risorse
       id: ComponentStatus
-      text: Le versioni correnti di tutte le risorse
+      text: "Le versioni correnti delle principali risorse operative"
       background: null
       components:
 
         - name: Table
           # title: Stato dell'accessibilità
           responsive: table-responsive-md
+          # addonClasses: fixed
           head:
-            - text: Risorsa
-            - text: Versione corrente
-            - text: Changelog
+            - text: RISORSE PRINCIPALI
+            - text: VERSIONE CORRENTE
+            - text: CHANGELOG
           rows:
             - cols:
               - text: Documentazione (questo sito)
@@ -195,31 +197,46 @@ components:
                     size: sm
 
             - cols:
-              - text: UI Kit Italia
+              - text: UI Kit Italia (design)
                 scope: row
               - tag:
                   label: "3.1.0" #AUTO
-                  addonClasses: ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                  addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
-                  label: 'Schede rilascio su GitHub'
+                  label: 'Schede rilascio'
                   url: https://github.com/italia/design-ui-kit/releases
                   blank: true
-                  screenReaderText: " (si apre in una nuova finestra)"
+                  screenReaderText: " di UI Kit Italia (si apre in una nuova finestra)"
                   icon:
                     icon: sprites.svg#it-github
                     size: sm
 
             - cols:
-              - text: Bootstrap Italia
+              - text: Design Tokens Italia (design e sviluppo)
+                scope: row
+              - tag:
+                  label: "1.1.1" #AUTO
+                  addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+              - simpleCta :
+                  label: 'Schede rilascio'
+                  url: https://github.com/italia/design-tokens-italia/releases
+                  blank: true
+                  screenReaderText: " di Design Tokens Italia (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-github
+                    size: sm
+
+            - cols:
+              - text: Bootstrap Italia (sviluppo)
                 scope: row
               - tag:
                   label: "2.6.1" #AUTO
-                  addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                  addonClasses: bg-dark  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
               - simpleCta :
-                  label: "Schede rilascio su GitHub"
+                  label: "Schede rilascio"
                   blank: true
                   url: https://github.com/italia/bootstrap-italia/releases
-                  screenReaderText: " (si apre in una nuova finestra)"
+                  screenReaderText: " di Bootstrap Italia (si apre in una nuova finestra)"
                   icon:
                     icon: sprites.svg#it-github
                     size: sm
@@ -228,18 +245,19 @@ components:
       noSpace: false
       id: changelog-documentazione
       title: Changelog documentazione
-      text: Questa sezione del sito Designers Italia dedicata a ospitare la documentazione del design system del Paese
+      text: Questa sezione del sito Designers Italia ospita la documentazione del design system del Paese
       background: null
       components:
         - name: TextImageCta
-          title:
           text: |
             -------
             ### v1.0.0-alpha.9
             15 settembre 2023
             - **[Come contribuire](/design-system/come-contribuire/)**
-              - Nuove schede: [Modello di contribuzione](/design-system/come-contribuire/modello-di-contribuzione/), [Per documentazione](/design-system/come-contribuire/per-documentazione/), [Per design](/design-system/come-contribuire/per-design/), [Per sviluppo](/design-system/come-contribuire/per-sviluppo/).
+              - Nuove schede: [Modello di contribuzione](/design-system/come-contribuire/modello-di-contribuzione/), [Per la documentazione](/design-system/come-contribuire/per-la-documentazione/), [Per il design](/design-system/come-contribuire/per-il-design/), [Per lo sviluppo](/design-system/come-contribuire/per-lo-sviluppo/).
               - Struttura sezione.
+            - Risorse
+              - Aggiornato **Design Tokens Italia** alla versione v1.1.1.
 
             -------       
             ### v1.0.0-alpha.8
@@ -247,7 +265,6 @@ components:
             - Risorse
               - Aggiornato framework **Bootstrap Italia** alla versione 2.6.1.
               - Aggiornato **UI Kit Italia** alla versione v3.1.0.
-
             -------
             ### v1.0.0-alpha.7
             26 giugno 2023
@@ -256,7 +273,9 @@ components:
             - Risorse
               - Aggiornato framework **Bootstrap Italia** alla versione 2.5.1.
               - Aggiornato **UI Kit Italia** alla versione v3.0.1.
-
+          moreButton: Versioni precedenti
+          moreButtonClose: Chiudi
+          moreText: | #C
             -------
             ### v1.0.0-alpha.6
             12 maggio 2023
