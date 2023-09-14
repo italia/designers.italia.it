@@ -609,7 +609,7 @@ export const query = graphql`
                 scope
                 tag {
                   label
-                  # addonClasses
+                  addonClasses
                 }
                 simpleCta {
                   label
