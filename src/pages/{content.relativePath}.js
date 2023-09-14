@@ -595,6 +595,10 @@ export const query = graphql`
             title
             headingLevel
             specular
+            cookies {
+              label
+              key
+            }
             text
             noSpace
             responsive
