@@ -1,9 +1,10 @@
 import React from "react"
 import Button from "../button/button"
 
+export const isBrowser = () => typeof window !== "undefined"
 
 const isServiceRemembered = (serviceKey) => {
-  const services = JSON.parse(localStorage.getItem('bs-ck3') || "{}")
+  const services = isBrowser() ? JSON.parse(localStorage.getItem('bs-ck3') || "{}") : {}
   return services[serviceKey]
 }
 
@@ -19,7 +20,7 @@ function CookieRemove({ title, cookies }) {
     </div>
   ))
   return (
-    localStorage.getItem("bs-ck3") !== null && <div className="content w-100">
+    isBrowser() && localStorage.getItem("bs-ck3") !== null && <div className="content w-100">
       <h2>{title}</h2>
       {cookieItems}
     </div>
