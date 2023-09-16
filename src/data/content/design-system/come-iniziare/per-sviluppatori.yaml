@@ -183,9 +183,27 @@ components:
     - full: true
       noSpace: true
       title: Standard, open design e partecipazione
-      text: Processi e risorse per lo sviluppo
+      text: Processi e risorse per lo sviluppo di Bootstrap Italia e del suo ecosistema di risorse
       background: null
       components:
+
+        - name: TextImageCta
+          title: Modello di contribuzione
+          text: |
+            Se ti occupi di sviluppo sofware puoi aprire segnalazioni e inviare i tuoi contributi dedicati al kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali Bootstrap Italia e al suo ecosistema di risorse.          ctas:
+          ctas:
+          - label: Scopri come contribuire Per lo sviluppo #C
+            url: "/design-system/come-contribuire/per-lo-sviluppo/" #M
+            blank: false #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
         - name: TextImageCta
           title: Accessibilità
           text: |
@@ -229,10 +247,3 @@ components:
           title: Workflow di rilascio versioni
           text: |
             _In stesura_
-
-        - name: TextImageCta
-          title: Modello di contribuzione
-          text: |
-            _In stesura_
-
-
