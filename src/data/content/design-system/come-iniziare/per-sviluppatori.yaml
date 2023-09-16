@@ -144,8 +144,18 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Scopri e usa la documentazione dedicata #C
+          - label: Documentazione #C
             url: https://italia.github.io/bootstrap-italia/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Changelog #C
+            url: https://github.com/italia/bootstrap-italia/releases #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
@@ -156,10 +166,10 @@ components:
               addonClasses: ms-2
 
         - name: TextImageCta
-          title: Gli altri framework
-          text: _In aggiornamento_
+          title: Altri framework community driven
+          text: _In stesura_
           ctas:
-          - label: Design React Kit #C
+          - label: React Kit #C
             url: https://github.com/italia/design-react-kit #M
             blank: true #M #C true if new tab for external links
             icon:
@@ -169,7 +179,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Design Angular Kit #C
+          - label: Angular Kit #C
             url: https://github.com/italia/design-angular-kit  #M
             blank: true #M #C true if new tab for external links
             icon:
