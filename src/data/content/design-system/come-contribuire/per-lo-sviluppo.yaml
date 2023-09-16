@@ -232,9 +232,62 @@ components:
           title: Invia un contributo di sviluppo
           noSpace: true
           headingLevel: 3
+          text: | 
+            Puoi inviare un contributo diretto di sviluppo utilizzando un [flow semplificato](https://github.com/italia/bootstrap-italia/blob/main/CONTRIBUTING.md#lavorazione-di-una-issue) rispetto a un Git-flow standard.
+        - name: TextImageCta
+          title: Per Bootstrap Italia
+          noSpace: true
+          headingLevel: 4
           text: |
-            _In stesura_
+            Il repository contiene i sorgenti del framework di sviluppo e i sorgenti del sito di [documentazione dedicato agli sviluppatori](https://italia.github.io/bootstrap-italia/). 
 
+            Puoi proporre modifiche, correzioni o integrazioni al framework e al sito di documentazione dedicato:
+            
+            1. apri prima una segnalazione, o proponi il contributo nei commenti a una discussione già esistente sul tema di interesse, evidenziando intenzioni e possibilità
+            2. parti sempre da un fork del repository [/italia/bootstrap-italia](https://github.com/italia/bootstrap-italia) 
+            3. proponi le tue modifiche aprendo una pull request
+            4. indica la pull request nella segnalazione aperta al punto 1 o in un commento dedicato
+            
+            Nelle lavorazioni poni attenzione al rispetto dei fondamenti del design system del Paese. Può esserti utile il "workflow per migliorare lo sviluppo dei componenti" del [fondamento accessibilità](/design-system/fondamenti/accessibilita/). 
+          ctas: 
+            - label: "Approfondisci il Fondamento accessibilità" #C
+              screenReaderText: ""
+              url: "/design-system/fondamenti/accessibilita/" #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+        - name: TextImageCta
+          title: Per Design Tokens Italia
+          noSpace: true
+          headingLevel: 4
+          text: |
+            Il repository contiene i Design Tokens in formato `json` generati lato design da Figma, utilizzando il plugin Tokens Studio, e gli automatismi per convertirli in variabili disponibili nei formati `sass` e `css`.  
+
+            Puoi proporre correzioni o integrazioni alle automazioni e allo stack tecnologico disponibile dal repository:
+
+            1. apri prima una segnalazione, o proponi il contributo nei commenti a una discussione già esistente sul tema di interesse, evidenziando intenzioni e possibilità
+            2. parti sempre da un fork del repository [italia/design-tokens-italia](https://github.com/italia/design-tokens-italia)
+            3. proponi le tue modifiche aprendo una pull request
+            4. indica la pull request nella segnalazione aperta al punto 1 o in un commento dedicato
+          ctas: 
+            - label: "Approfondisci il Fondamento Design Tokens" #C
+              screenReaderText: ""
+              url: "/design-system/fondamenti/design-tokens/" #M
+              blank: true #M #C true if new tab for external links
+              # disabled: true
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
     - full: true
       noSpace: true
       title: "Contribuisci all'evoluzione delle risorse community-driven React e Angular Kit"
@@ -255,8 +308,7 @@ components:
             - c'è stato un profondo refactoring di Bootstrap Italia tra le v1 e le v2 in merito ad accessibilità dei componenti e coerenza generale con la risorsa di design UI Kit Italia
             - il [primo gennaio 2023](https://github.com/twbs/release) è avvenuto l'End of Life (EOF) di Bootstrap 4 su cui si basava Bootstrap Italia v1 
             
-            Di seguito le informazioni su dove trovare i lavori in corso.              
-            I commenti e i contributi di tutta la community sono più che necessari!
+            Di seguito le informazioni su dove trovare i lavori in corso. I commenti e i contributi di tutta la community sono più che necessari!
 
 
         - name: TextImageCta
@@ -264,7 +316,7 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Puoi seguire i lavori in corso per l'aggiornamento a Bootstrap Italia v2 sul ramo [next](https://github.com/italia/design-react-kit/tree/next) della repository e nella [pull request (885)](https://github.com/italia/design-react-kit/pull/885) dedicata. 
+            Puoi seguire i lavori in corso per l'aggiornamento a Bootstrap Italia v2 sul ramo [next](https://github.com/italia/design-react-kit/tree/next) del repository e nella [pull request (885)](https://github.com/italia/design-react-kit/pull/885) dedicata. 
           ctas: 
             - label: "Discussioni su React Kit" #C
               screenReaderText: ""
@@ -296,7 +348,7 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Puoi seguire i lavori in corso per l'aggiornamento a Bootstrap Italia v2 sulla [repository](https://github.com/italia/design-angular-kit/) e nella [milestone](https://github.com/italia/design-angular-kit/milestone/3) dedicata.
+            Puoi seguire i lavori in corso per l'aggiornamento a Bootstrap Italia v2 sul [repository](https://github.com/italia/design-angular-kit/) e nella [milestone](https://github.com/italia/design-angular-kit/milestone/3) dedicata.
           ctas: 
             - label: "Discussioni su Angular Kit" #C
               screenReaderText: ""
