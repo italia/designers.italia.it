@@ -132,9 +132,11 @@ components:
 
         - name: TextImageCta
           title: Versione corrente
+          noSpace: true
           # text: |
           ctas:
-          - label: Vai alla repository dedicata #C
+          - label: Vai al repository dedicato #C
+            screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
             url: https://github.com/italia/bootstrap-italia #M
             blank: true #M #C true if new tab for external links
             icon:
@@ -144,8 +146,20 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Scopri e usa la documentazione dedicata #C
+          - label: Documentazione #C
+            screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
             url: https://italia.github.io/bootstrap-italia/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Changelog #C
+            screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/bootstrap-italia/releases #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
@@ -156,11 +170,13 @@ components:
               addonClasses: ms-2
 
         - name: TextImageCta
-          title: Gli altri framework
-          text: _In aggiornamento_
+          title: I Design Tokens
+          noSpace: true
+          # text: |
           ctas:
-          - label: Design React Kit #C
-            url: https://github.com/italia/design-react-kit #M
+          - label: Vai al repository dedicato #C
+            screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/design-tokens-italia #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
@@ -169,7 +185,37 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Design Angular Kit #C
+          - label: Changelog #C
+            screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/design-tokens-italia/releases #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Altri framework community driven
+          noSpace: true
+          # text: |
+          #   Scopri i progetti community-driven React e Angular Kit che implementano Bootstrap Italia. 
+          ctas:
+          - label: React Kit #C
+            url: https://github.com/italia/design-react-kit #M
+            screenReaderText: " (si apre in una nuova finestra)"
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Angular Kit #C
+            screenReaderText: " (si apre in una nuova finestra)"
             url: https://github.com/italia/design-angular-kit  #M
             blank: true #M #C true if new tab for external links
             icon:
@@ -183,13 +229,33 @@ components:
     - full: true
       noSpace: true
       title: Standard, open design e partecipazione
-      text: Processi e risorse per lo sviluppo
+      text: Processi e risorse per lo sviluppo di Bootstrap Italia e del suo ecosistema di risorse
       background: null
       components:
+
+        - name: TextImageCta
+          title: Modello di contribuzione
+          noSpace: true
+          text: |
+            Se ti occupi di sviluppo sofware puoi aprire segnalazioni e inviare i tuoi contributi dedicati al kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali Bootstrap Italia e al suo ecosistema di risorse.
+          ctas:
+          - label: Scopri come contribuire Per lo sviluppo #C
+            url: "/design-system/come-contribuire/per-lo-sviluppo/" #M
+            blank: false #M #C true if new tab for external links
+            # disabled: true
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
         - name: TextImageCta
           title: Accessibilità
+          noSpace: true
           text: |
-            _In stesura_
+            Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
           ctas:
           - label: Vai al fondamento Accessibilità #C
             url: "/design-system/fondamenti/accessibilita/" #M
@@ -205,8 +271,9 @@ components:
 
         - name: TextImageCta
           title: Design tokens
+          noSpace: true
           text: |
-            _In stesura_
+            Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali.
           ctas:
           - label: Vai al fondamento Design tokens #C
             url: "/design-system/fondamenti/design-tokens/" #M
@@ -220,19 +287,14 @@ components:
               size: sm
               addonClasses: ms-2
 
-        - name: TextImageCta
-          title: Workflow di sviluppo e revisione
-          text: |
-            _In stesura_
+        # - name: TextImageCta
+        #   title: Workflow di sviluppo e revisione
+        #   noSpace: true
+        #   text: |
+        #     _In stesura_
 
-        - name: TextImageCta
-          title: Workflow di rilascio versioni
-          text: |
-            _In stesura_
-
-        - name: TextImageCta
-          title: Modello di contribuzione
-          text: |
-            _In stesura_
-
-
+        # - name: TextImageCta
+        #   title: Workflow di rilascio versioni
+        #   noSpace: true
+        #   text: |
+        #     _In stesura_
