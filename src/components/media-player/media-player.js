@@ -55,6 +55,9 @@ const MediaPlayerEl = (
     });
     video.player.controlBar.addChild(notesBut, {}, 7)
     notesBut.el_.innerHTML = '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestisci privacy" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg></button>'
+    if (JSON.parse(localStorage.getItem('bs-ck3') || "{}")['youtube.com']) {
+      video.setYouTubeVideo(url)
+    }
   })
 
   return (
@@ -71,7 +74,7 @@ const MediaPlayerEl = (
                 <input id="chk-remember" type="checkbox" data-bs-accept-remember></input>
                 <label htmlFor="chk-remember">{t('rememberLabel')}</label>
               </div>
-              <button onClick={() => video.setYouTubeVideo(url)}
+              <button onClick={() => {console.log("clicca"); video.setYouTubeVideo(url)}}
                 type="button" id={`${videoId}-accept-video`} className="btn btn-primary accept-video" data-bs-accept-from="youtube.com">{t('acceptLabel')}</button>
             </div>
           </div>
