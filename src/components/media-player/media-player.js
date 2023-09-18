@@ -45,6 +45,16 @@ const MediaPlayerEl = (
       service: 'youtube.com'
     })
     video = new VideoPlayer(document.getElementById(videoId))
+    var ButtonComp = videojs.getComponent('Button');
+    var notesBut = new ButtonComp(video.player, {
+      clickHandler: function() {
+        window.location.replace(
+          "/privacy-policy/",
+        );
+      }
+    });
+    video.player.controlBar.addChild(notesBut, {}, 7)
+    notesBut.el_.innerHTML = '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestisci privacy" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg></button>'
   })
 
   return (
