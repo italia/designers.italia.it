@@ -8,6 +8,16 @@ const isServiceRemembered = (serviceKey) => {
   return services[serviceKey]
 }
 
+const isSectionShowable = () => {
+  const services = isBrowser() ? JSON.parse(localStorage.getItem('bs-ck3') || "{}") : {}
+  for (const service in services) {
+    if (services[service] === true) {
+      return true
+    }
+  }
+  return false
+}
+
 function CookieRemove({ title, cookies }) {
   const cookieItems = cookies.map((cookie) => (
     isServiceRemembered(cookie.key) && <div className="row" key={cookie.key}>
@@ -20,7 +30,7 @@ function CookieRemove({ title, cookies }) {
     </div>
   ))
   return (
-    isBrowser() && localStorage.getItem("bs-ck3") !== null && <div className="content w-100">
+    isBrowser() && isSectionShowable() && <div className="content w-100">
       <h2>{title}</h2>
       {cookieItems}
     </div>
