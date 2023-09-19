@@ -71,8 +71,8 @@ const MediaPlayerEl = (
             <p>{parse(t('cookiePolicy'))}</p>
             <div className="acceptoverlay-buttons bg-dark">
               <div className="form-check">
-                <input id="chk-remember" type="checkbox" data-bs-accept-remember></input>
-                <label htmlFor="chk-remember">{t('rememberLabel')}</label>
+                <input id={`${videoId}-chk-remember`} type="checkbox" data-bs-accept-remember></input>
+                <label htmlFor={`${videoId}-chk-remember`}>{t('rememberLabel')}</label>
               </div>
               <button onClick={() => {console.log("clicca"); video.setYouTubeVideo(url)}}
                 type="button" id={`${videoId}-accept-video`} className="btn btn-primary accept-video" data-bs-accept-from="youtube.com">{t('acceptLabel')}</button>
