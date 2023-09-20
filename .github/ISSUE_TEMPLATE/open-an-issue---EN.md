@@ -21,4 +21,4 @@
  ## Other
  > If available, provide links to related examples, research, designs or code 
  ----
- [Do you know the Italia's Design System contribution model?](https://designers.italia.it/design-system/come-contribuire/modello-di-contribuzione/) (Italian language)
+ [Do you know Italia's Design System contribution model?](https://designers.italia.it/design-system/come-contribuire/modello-di-contribuzione/) (Italian language)
