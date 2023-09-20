@@ -14,7 +14,7 @@
  > To propose a contribution describe the solution you picture, what you expect, and any alternatives you've considered. 
  ## Why 
  > Explain why you consider this report relevant. 
- > Point out analyses, verifications, and tests performed to support it (e.g., data analytics, heuristic analysis, usability tests, accessibility checks), if available.
+ > Highlight any analyses, verifications, and tests you've conducted to support your report (e.g., data analytics, heuristic analysis, usability tests, accessibility checks), if available.
  ## Context.
  > If relevant please include information on device type, operating system, browser. 
  > You can also add screen captures to enrich the issue. 
