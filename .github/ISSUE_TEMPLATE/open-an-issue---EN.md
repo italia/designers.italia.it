@@ -16,7 +16,7 @@
  > Explain why you consider this report relevant. 
  > Highlight any analyses, verifications, and tests you've conducted to support your report (e.g., data analytics, heuristic analysis, usability tests, accessibility checks), if available.
  ## Context.
- > If relevant please include information on device type, operating system, browser. 
+ > If relevant, please provide details on the device type, operating system and browser. 
  > Consider adding screen captures to enhance your report. 
  ## Other
  > If available, provide links to related examples, research, designs or code 
