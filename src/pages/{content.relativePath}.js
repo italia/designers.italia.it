@@ -275,7 +275,7 @@ export const query = graphql`
             btnStyle
             label
             addonStyle
-            disabled
+            # disabled
             url
             blank
             icon {
@@ -365,7 +365,7 @@ export const query = graphql`
             btnStyle
             url
             addonStyle
-            disabled
+            # disabled
           }
           img
           alt
@@ -380,22 +380,22 @@ export const query = graphql`
           overlayImg
           overlayAlt
         }
-        highlightsLoop2 {
-          title
-          id
-          headingLevel
-          big
-          background
-          specular
-          subtitle
-          buttons {
-            label
-            btnStyle
-            url
-            addonStyle
-            disabled
-          }
-        }
+        # highlightsLoop2 {
+        #  title
+        #  id
+        #  headingLevel
+        #  big
+        #  background
+        #  specular
+        #  subtitle
+          # buttons {
+          #  label
+          #  btnStyle
+          #  url
+          #  addonStyle
+          #  # disabled
+          #}
+        #}
         searchMain {
           disabled
           isResultsPage
@@ -609,7 +609,7 @@ export const query = graphql`
                 scope
                 tag {
                   label
-                  # addonClasses
+                  addonClasses
                 }
                 simpleCta {
                   label
@@ -669,7 +669,7 @@ export const query = graphql`
             fullHeight
             url
             text
-            tags
+            # tags
           }
         }
         sectionsEditorial2 {
