@@ -17,7 +17,7 @@
  > Highlight any analyses, verifications, and tests you've conducted to support your report (e.g., data analytics, heuristic analysis, usability tests, accessibility checks), if available.
  ## Context.
  > If relevant please include information on device type, operating system, browser. 
- > You can also add screen captures to enrich the issue. 
+ > Consider adding screen captures to enhance your report. 
  ## Other
  > Add links to examples, research, design, or code to accompany the issue, if available. 
  ----
