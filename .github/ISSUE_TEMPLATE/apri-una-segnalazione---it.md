@@ -4,7 +4,6 @@ about: Per segnalare bug, aprire una discussione o inviare un contributo
 title: ''
 labels: ''
 assignees: ''
-
 ---
 
 <!-- Prima di aprire una segnalazione verifica se già esiste una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai alla discussione e partecipa lasciando un commento. -->
@@ -20,7 +19,8 @@ assignees: ''
 
 ## Contesto
 > Se significative, inserisci informazioni su tipo di dispositivo, sistema operativo, browser. 
-> Puoi anche aggiungere catture di schermo per arricchire la segnalazione. 
+> Puoi anche aggiungere catture di schermo per arricchire la segnalazione.
+> Assicurati di non condividere informazioni personali. 
 
 ## Altro
 > Inserisci link a esempi, ricerca, design o codice a corredo della segnalazione, se disponibili. 
