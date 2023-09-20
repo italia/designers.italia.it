@@ -1,0 +1,47 @@
+name: Apri una segnalazione - IT 🇮🇹
+description: Per segnalare bug, aprire una discussione o inviare un contributo
+title: "<title>"
+labels: []
+body:
+- type: checkboxes
+  attributes:
+    label: Esiste già una discussione sul tema che ti interessa, o su un tema simile?
+    description: Prima di aprire una segnalazione verifica. Se esiste, vai alla discussione e partecipa lasciando un commento.
+    options:
+    - label: Ho verificato nella lista delle discussioni
+      required: true
+- type: textarea
+  attributes:
+    label: Tema della segnalazione
+    description: |
+      > Descrivi in modo chiaro e conciso il tema della tua segnalazione indicando il link della pagina o delle pagine interessate.
+      > Per segnalare un bug indica come riprodurlo per passi: es. (1) Vai a '...'; (2) Fai click su '...'; (3) Ora trovi il bug '...'.
+      > Per proporre un contributo descrivi la soluzione che immagini, cosa ti aspetti e le eventuali alternative hai già valutato. 
+    placeholder: |
+       > Per segnalare un bug indica come riprodurlo per passi: es. (1) Vai a '...'; (2) Fai click su '...'; (3) Ora trovi il bug '...'.
+       > Per proporre un contributo descrivi la soluzione che immagini, cosa ti aspetti e le eventuali alternative hai già valutato. 
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Ubuntu 20.04
+        - **Node**: 13.14.0
+        - **npm**: 7.6.3
+    value: |
+        - OS:
+        - Node:
+        - npm:
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Anything that will give us more context about the issue you are encountering!
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
