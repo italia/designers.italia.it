@@ -41,6 +41,9 @@ const MediaPlayerEl = (
   const videoId = `video-js-${uniqueId('id_')}`
 
   useEffect(() => {
+    var script = document.createElement('script');
+    script.src = "https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js";
+    document.head.appendChild(script);
     new AcceptOverlay(document.getElementById(`${videoId}-accept-video`), {
       service: 'youtube.com'
     })
@@ -56,7 +59,9 @@ const MediaPlayerEl = (
     video.player.controlBar.addChild(notesBut, {}, 7)
     notesBut.el_.innerHTML = '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestisci privacy" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg></button>'
     if (JSON.parse(localStorage.getItem('bs-ck3') || "{}")['youtube.com']) {
-      video.setYouTubeVideo(url)
+      setTimeout(() => {
+        video.setYouTubeVideo(url)
+      }, 1000);
     }
   })
 
@@ -104,7 +109,6 @@ const MediaPlayerEl = (
           }
         </div>
       </div>
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js" />
     </div>
   )
 }
