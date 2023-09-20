@@ -13,7 +13,7 @@
  > To report a bug specify how to reproduce it in steps: e.g. (1) Go to '...'; (2) Click '...'; (3) Now you find the bug '...'.
  > To propose a contribution describe the solution you picture, what you expect, and any alternatives you've considered. 
  ## Why 
- > Explain why you consider this report as being relevant. 
+ > Explain why you consider this report relevant. 
  > Point out analyses, verifications, and tests performed to support it (e.g., data analytics, heuristic analysis, usability tests, accessibility checks), if available.
  ## Context.
  > If relevant please include information on device type, operating system, browser. 
