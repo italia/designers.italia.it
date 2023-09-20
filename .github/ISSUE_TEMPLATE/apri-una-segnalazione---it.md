@@ -15,7 +15,7 @@ assignees: ''
 > Per proporre un contributo descrivi la soluzione che immagini, cosa ti aspetti e le eventuali alternative hai già valutato. 
 
 ## Perché 
-> Spiega perché ritieni rilevante questa segnalazione. 
+> Spiega perché ritieni rilevante la segnalazione. 
 > Indica analisi, verifiche e test svolti a supporto (es. dati di analytics, analisi euristiche, test di usabilità, verifiche di accessibilità), se disponibili.
 
 ## Contesto
