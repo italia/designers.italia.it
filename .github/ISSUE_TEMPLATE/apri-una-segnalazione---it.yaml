@@ -30,3 +30,25 @@ body:
       Indica analisi, verifiche e test svolti a supporto (es. dati di analytics, analisi euristiche, test di usabilità, verifiche di accessibilità), se disponibili.
   validations:
     required: true
+- type: textarea
+  attributes:
+    label: Contesto 
+    description: |
+      Se significative, inserisci informazioni su tipo di dispositivo, sistema operativo, browser. 
+      Puoi anche aggiungere catture di schermo per arricchire la segnalazione.
+      Assicurati di non condividere informazioni personali.   
+ validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Altro 
+    description: |
+      Inserisci link a esempi, ricerca, design o codice a corredo della segnalazione, se disponibili.
+ validations:
+    required: false
+- type: markdown
+  attributes: 
+    value: |
+      -------
+
+      [Conosci il modello di contribuzione del design system del Paese?](https://designers.italia.it/design-system/come-contribuire/modello-di-contribuzione/) 
