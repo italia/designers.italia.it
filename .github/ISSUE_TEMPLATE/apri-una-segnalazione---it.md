@@ -19,7 +19,7 @@ assignees: ''
 > Indica analisi, verifiche e test svolti a supporto (es. dati di analytics, analisi euristiche, test di usabilità, verifiche di accessibilità), se disponibili.
 
 ## Contesto
-> Se significativo inserisci informazioni su tipo di dispositivo, sistema operativo, browser. 
+> Se significative, inserisci informazioni su tipo di dispositivo, sistema operativo, browser. 
 > Puoi anche aggiungere delle catture di schermo per arricchire la segnalazione. 
 
 ## Altro
