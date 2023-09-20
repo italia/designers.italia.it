@@ -20,7 +20,7 @@ assignees: ''
 
 ## Contesto
 > Se significative, inserisci informazioni su tipo di dispositivo, sistema operativo, browser. 
-> Puoi anche aggiungere delle catture di schermo per arricchire la segnalazione. 
+> Puoi anche aggiungere catture di schermo per arricchire la segnalazione. 
 
 ## Altro
 > Inserisci link a esempi, ricerca, design o codice a corredo della segnalazione, se disponibili. 
