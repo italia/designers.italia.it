@@ -19,6 +19,6 @@
  > If relevant please include information on device type, operating system, browser. 
  > Consider adding screen captures to enhance your report. 
  ## Other
- > Add links to examples, research, design, or code to accompany the issue, if available. 
+ > If available, provide links to related examples, research, designs or code 
  ----
  [Do you know the Italia's Design System contribution model?](https://designers.italia.it/design-system/come-contribuire/modello-di-contribuzione/) (Italian language)
