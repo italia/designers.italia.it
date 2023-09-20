@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-<!-- Prima di aprire una segnalazione verifica se già esiste una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai nella segnalazione dedicata e partecipa lasciando un commento. -->
+<!-- Prima di aprire una segnalazione verifica se già esiste una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai alla discussione e partecipa lasciando un commento. -->
 
 ## Cosa
 > Descrivi in modo chiaro e conciso il tema della tua segnalazione indicando il link della pagina o delle pagine interessate. 
