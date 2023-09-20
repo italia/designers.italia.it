@@ -1,10 +1,9 @@
 ---
- name: Open an issue - EN
- about: To report bugs, open a discussion, or submit a contribution
- title: ''
- labels: ''
- assignees: ''
-
+name: Open an issue - EN
+about: To report bugs, open a discussion, or submit a contribution
+title: ''
+labels: ''
+assignees: ''
 ---
 
 <!-- Before opening an issue, please check if there are already existing discussions on the topic you are interested in, or on similar topics. If it does, participate by posting a comment on the already existing issue. -->
