@@ -650,6 +650,14 @@ export const query = graphql`
               img
               alt
             }
+            variantName
+            source
+            idPrefix
+            viewerHeight
+            accordionUrl
+            accordionOpen
+            accordionShow
+            minHeight
           }
           id
           fullColumn
@@ -810,6 +818,7 @@ export const query = graphql`
           title
           textInfo
           viewerHeight
+          # minHeight
           accordionUrl
           accordionOpen
           accordionShow
