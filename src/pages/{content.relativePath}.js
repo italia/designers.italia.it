@@ -664,6 +664,14 @@ export const query = graphql`
             url
             trascription
             poster
+            variantName
+            source
+            idPrefix
+            viewerHeight
+            accordionUrl
+            accordionOpen
+            accordionShow
+            minHeight
           }
           id
           fullColumn
@@ -824,6 +832,7 @@ export const query = graphql`
           title
           textInfo
           viewerHeight
+          # minHeight
           accordionUrl
           accordionOpen
           accordionShow

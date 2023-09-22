@@ -13,8 +13,9 @@ import ImageIcons from "../image-icons/image-icons"
 import Table from "../table/table"
 import Button from "../button/button"
 import MediaPlayer from "../media-player/media-player"
+import ComponentView from "../component-view/component-view"
 
-function SectionEditorial({
+const SectionEditorial = ({
   title,
   headingLevel,
   text,
@@ -26,8 +27,9 @@ function SectionEditorial({
   components,
   menu,
   noSpace,
-  id
-}) {
+  id,
+  componentViewerData,
+}) => {
 
   const SwitchComponents = {
     Highlight,
@@ -40,7 +42,8 @@ function SectionEditorial({
     ImgFull,
     ImageIcons,
     Table,
-    MediaPlayer
+    MediaPlayer,
+    ComponentView
   }
 
   // heading level
@@ -124,9 +127,16 @@ function SectionEditorial({
                 {components &&
                   components.map((item,index) => {                    
                     const Switcher = SwitchComponents[item.name]
-                    return(
-                      <Switcher key={`switcher-${index}`} {...item}/>
-                    )
+                    if (item.name === "ComponentView" && componentViewerData){
+                      return(
+                        <Switcher key={"switcher-"+index} {...item} componentViewerData={componentViewerData}/>
+                      )
+                    } else {
+                      return(
+                        <Switcher key={"switcher-"+index} {...item}/>
+                      )
+                    } 
+
                   })
                 }
               </div>
