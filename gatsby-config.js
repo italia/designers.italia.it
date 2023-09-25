@@ -87,7 +87,16 @@ module.exports = {
         path: `./src/pages/`,
       },
     },
-    `@colliercz/gatsby-transformer-gitinfo`,
+    {
+      resolve: `@colliercz/gatsby-transformer-gitinfo`,
+      options: {
+        include: /\.ya?ml/i,
+        match: {
+          regex: "(last-update-skip)",
+          invert: true,
+        }
+      },
+    },
     {
       resolve: "gatsby-plugin-matomo",
       options: {
