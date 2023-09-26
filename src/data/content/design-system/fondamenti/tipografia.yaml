@@ -36,21 +36,6 @@ lastUpdate:
       color: primary
     blank: true
 
-# navPreFooter:
-#   navOtherPrevNext:
-#     next:
-#       label: Next page
-#       url: "#"
-#       blank: false
-#       specular: true
-#       icon:
-#         icon: "sprites.svg#it-arrow-right"
-#         size: "sm"
-#         align: "middle"
-#         color: "primary"
-#         hidden: true
-#         addonClasses: flex-shrink-0 ms-3
-
 components:
   hero:
     background: null
@@ -141,18 +126,51 @@ components:
           headingLevel: 2
           text: |
             Nell'ambito di questo design system puoi utilizzare tre diversi caratteri tipografici, ognuno dei quali ha un caso d'uso raccomandato specifico:
-            
-            ### Titillium web
 
-            Titillium Web è il nostro **carattere principale**. Disponibile in diverse varianti, è un carattere geometrico che garantisce flessibilità nel design. È raccomandato per titoli, sottotitoli, elementi interattivi e brevi paragrafi di testo. 
-            
-            ### Lora
-            
-            Lora è il carattere tipografico nato espressamente per la **lettura dei testi** su dispostivi digitali. Essendo un font con le grazie (*serif*), è raccomandato per paragrafi di testo più lunghi.
+        - name: TextImageCta
+          title: Titillium Web
+          headingLevel: 3
+          text: |
+              Titillium Web è il nostro **carattere principale**. Disponibile in diverse varianti, è un carattere geometrico che garantisce flessibilità nel design. È raccomandato per titoli, sottotitoli, elementi interattivi e brevi paragrafi di testo.
+        - name: ComponentView
+          variantName: Titillium Web
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+          accordionOpen: false
+          accordionShow: true
+        
+        - name: TextImageCta
+          title: Lora
+          headingLevel: 3
+          text: |
+              Lora è il carattere tipografico nato espressamente per la **lettura dei testi** su dispostivi digitali. Essendo un font con le grazie (*serif*), è raccomandato per paragrafi di testo più lunghi.
+        - name: ComponentView
+          variantName: Lora
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer02-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+          accordionOpen: false
+          accordionShow: true
 
-            ### Roboto Mono
-
+        - name: TextImageCta
+          title: Roboto Mono
+          headingLevel: 3
+          text: |
             Roboto Mono, variante monospaziata della famiglia Roboto, è un carattere ideato per la **visualizzazione di dati tecnici**. La sua uniformità dei caratteri è utile per rappresentare numeri, codici, calcoli matematici, e fornire esempi di stringhe di linguaggi di programmazione.
+        - name: ComponentView
+          variantName: Roboto Mono
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer03-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+          accordionOpen: false
+          accordionShow: true
             
         - name: TextImageCta
           title: Stili tipografici
@@ -166,6 +184,16 @@ components:
 
             ### Intestazioni
             La lista di tutti gli stili per creare le intestazioni di una pagina:
+        
+        - name: ComponentView
+          variantName: Intestazioni
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer04-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+          accordionOpen: false
+          accordionShow: true
 
         - name: Table
           title: null
@@ -180,10 +208,10 @@ components:
               - text: |
                   Intestazione 1
               - text: |
-                  type: Titillium Web
-                  size: 40/48px
-                  line height: 48/56px
-                  letter spacing: -1
+                  Titillium Web, 
+                  size: 40/48px, 
+                  line height: 48/56px, 
+                  letter spacing: -1, 
                   weight: Bold
               - text: |
                   heading-1
@@ -191,10 +219,10 @@ components:
               - text: |
                   Intestazione 2
               - text: |
-                  type: Titillium Web
-                  size: 32/40px
-                  line height: 40/48px
-                  letter spacing: -1
+                  Titillium Web, 
+                  size: 32/40px, 
+                  line height: 40/48px, 
+                  letter spacing: -1, 
                   weight: Bold
               - text: |
                   heading-2
@@ -202,9 +230,9 @@ components:
               - text: |
                   Intestazione 3
               - text: |
-                  type: Titillium Web
-                  size: 28/32px
-                  line height: 32/40px
+                  Titillium Web, 
+                  size: 28/32px, 
+                  line height: 32/40px, 
                   weight: Bold
               - text: |
                   heading-3
@@ -212,9 +240,9 @@ components:
               - text: |
                   Intestazione 4
               - text: |
-                  type: Titillium Web 
-                  size: 24/32px
-                  line height: 32/40px
+                  Titillium Web,  
+                  size: 24/32px, 
+                  line height: 32/40px, 
                   weight: SemiBold
               - text: |
                   heading-4
@@ -222,9 +250,9 @@ components:
               - text: |
                   Intestazione 5
               - text: |
-                  type: Titillium Web
-                  size: 20/24px
-                  line height: 24/32px
+                  Titillium Web, 
+                  size: 20/24px, 
+                  line-height: 24/32px, 
                   weight: SemiBold
               - text: |
                   heading-5
@@ -232,9 +260,9 @@ components:
               - text: |
                   Intestazione 6
               - text: |
-                  type: Titillium Web
-                  size: 16/18px
-                  line height: 24px
+                  Titillium Web, 
+                  size: 16/18px, 
+                  line-height: 24px
                   weight: SemiBold
               - text: |
                   heading-6
