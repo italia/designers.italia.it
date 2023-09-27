@@ -11,7 +11,7 @@ function InterestAside() {
         </div>
       </div>
     </aside>
-  )
+  );
 }
 
-export default InterestAside
+export default InterestAside;

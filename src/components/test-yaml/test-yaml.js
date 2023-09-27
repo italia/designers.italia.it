@@ -1,20 +1,16 @@
-import * as React from "react"
-import Section from "../section/section"
+import * as React from "react";
+import Section from "../section/section";
 
-function TestYaml({
-  title,
-  subtitle,
-  text
-}) {
-	return (
-		<div className="test">
-			<Section>
-				<h1>{title}</h1>
+function TestYaml({ title, subtitle, text }) {
+  return (
+    <div className="test">
+      <Section>
+        <h1>{title}</h1>
         <h2>{subtitle}</h2>
         <p>{text}</p>
-			</Section>
-		</div>
-	)
+      </Section>
+    </div>
+  );
 }
 
-export default TestYaml
+export default TestYaml;
