@@ -4,13 +4,10 @@ import Link from "../link/link"
 import "./last-update.scss"
 
 function LastUpdate({
-  // location,
   pathname,
   title,
-  date,
   licence,
   edit,
-  column,
   lastModified,
   noPadding
 }) {

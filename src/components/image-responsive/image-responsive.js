@@ -34,7 +34,9 @@ function ImageResponsive(props) {
   const imageRemoteFound = data ? data.allRemoteAsset.nodes.find((asset) => asset.source === src) : null
   const imageFound = data ? data.allFile.nodes.find((asset) => asset.absolutePath.endsWith(src)) : null
 
+  // eslint-disable-next-line no-nested-ternary
   const gatsbyImageData = imageRemoteFound && imageRemoteFound.file.childImageSharp ? imageRemoteFound.file.childImageSharp.gatsbyImageData : imageFound && imageFound.childImageSharp ? imageFound.childImageSharp.gatsbyImageData : null
+  // eslint-disable-next-line no-nested-ternary
   const realSrc = imageRemoteFound ? imageRemoteFound.file.publicURL : imageFound ? imageFound.publicURL : src
 
   return (

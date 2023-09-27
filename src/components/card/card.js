@@ -94,8 +94,8 @@ function Card({
             </div>
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">
               {tags && <div className="chip-container">
-                {tags.map((tag, index) => (
-                    <Chip key={`chip-${  index}`} label={tag} size="sm" />
+                {tags.map((t, index) => (
+                    <Chip key={`chip-${  index}`} label={t} size="sm" />
                   ))}
               </div>}
               {tag && <div className="tag-container">
@@ -108,7 +108,7 @@ function Card({
         </div>
       </div>
     )
-  } 
+  }
     return (
       <div className={styles}>
         {(img || imgPlaceholder || iconImg) && <div className={imgStyle}>
@@ -138,8 +138,8 @@ function Card({
           {(tag || tags || share || chips) && <div className="di-card-footer">
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">
               {tags && <div className="chip-container">
-                {tags.map((tag, index) => (
-                    <Chip key={`chip-${  index}`} label={tag} size="sm" color="secondary" />
+                {tags.map((t, index) => (
+                    <Chip key={`chip-${  index}`} label={t} size="sm" color="secondary" />
                   ))}
               </div>}
               {tag && <div className="tag-container">
@@ -151,7 +151,7 @@ function Card({
         </div>
       </div>
     )
-  
+
 }
 
 export default Card

@@ -7,7 +7,7 @@ import "./header-center.scss"
 
 function HeaderCenter({data}) {
 
-  // -search zone
+  // eslint-disable-next-line consistent-return
   function search(boolean) {
     if (boolean) {
       return(
@@ -20,8 +20,7 @@ function HeaderCenter({data}) {
     }
   }
 
-
-  // -socials zone
+  // eslint-disable-next-line consistent-return
   function socials(boolean) {
     if (boolean) {
       return (

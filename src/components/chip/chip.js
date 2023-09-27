@@ -7,15 +7,13 @@ import Link from "../link/link"
 function Chip({
 		size,
 		color,
-		path,
+		path = "argomenti",
 		label,
 		children,
 	}) {
 	const styles = 'chip chip-simple'
 		+ `${size ? ` chip-${  size}` : ''}`
 		+ `${color ? ` chip-${  color}` : ''}`
-
-	if (!path) path = "argomenti"
 
 	return (
 		<Link to={`/${path}/${kebabCase(label)}/`} className={styles}>
