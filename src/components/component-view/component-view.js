@@ -140,6 +140,8 @@ function ComponentView({
       ))
   }
 
+  const sectionStyles = "pb-4 mb-5"
+
   const componentStyles = "border-bottom p-xl-3 d-flex flex-column align-items-center"
     + `${responsiveButtonsItems ? ' pb-4' : ''}`
 
@@ -151,7 +153,7 @@ function ComponentView({
   const BSIExampleUrl = `/examples/${source}/${slugify(variantName).toLowerCase()}.html`
 
   return (
-    <div id={uuid} className="pb-5 pb-lg-6">
+    <div id={uuid} className={sectionStyles}>
       {contentTrimmed &&
         <div className={componentStyles}>
           <span className="visually-hidden">Inizio componente:</span>
