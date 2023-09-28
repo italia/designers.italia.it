@@ -1,0 +1,192 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/componenti/steppers.json
+  template:
+    name: design-system-component
+
+seo:
+  name: Steppers - Designers Italia
+  description: "Mostrano l’avanzamento del progresso di una procedura a più passi"
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/componenti/steppers/
+
+components:
+  hero:
+    specialKangarooComponent: true
+    background: null
+    title: Steppers
+    tag:
+      label: Componenti #C
+      addonClasses: mt-3 text-uppercase
+    # titleTag:
+    #   label: Pronto
+    #   url: "#ComponentStatus"
+    #   addonClasses: bg-success mb-2
+    #   screenReaderText: "Stato del componente:"
+    column: true
+    subtitle: "Mostrano l’avanzamento del progresso di una procedura a più passi"
+    # img: /images/400x300.png #I
+    # alt: "" #C
+    imgRatio: 1x1
+    noBorder: true
+
+    # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      tagsDesignSystemLabel: Utile per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tagsDesignSystem: [Interazione,Contenuti]
+
+  tab:
+    - full: true
+
+tabs:
+
+  - title: Uso e accessibilità
+
+    componentVariant:
+      id: "preview-use"
+      title: "Anteprima"
+      textInfo: Per visualizzare la modalità desktop è necessario uno schermo sufficientemente largo.
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/steppers/
+      accordionOpen: false
+      accordionShow: false
+
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Quando usarlo
+            headingLevel: 2
+            text: |
+              _In stesura_
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Come usarlo
+            headingLevel: 2
+            text: |
+              _In stesura_
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Accessibilità
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+      - full: true
+        noSpace: true
+        id: ComponentStatus
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Stato del componente
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+  - title: Progettazione
+    sectionsEditorial:
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Anatomia
+            headingLevel: 2
+            text: |
+              _In stesura_
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Comportamento
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per designer #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-designer/" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
+  - title: Sviluppo
+
+    componentVariant:
+      id: "preview-dev"
+      title: "Anteprima"
+      textInfo: Per visualizzare la modalità desktop è necessario uno schermo sufficientemente largo.
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/steppers/
+      accordionOpen: true
+      accordionShow: true
+
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per sviluppatori #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-sviluppatori/" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
