@@ -10,6 +10,14 @@ Il sito utilizza l'ultima versione di [Bootstrap Italia](https://italia.github.i
 
 Commenti e proposte relative all'evoluzione del sito e delle risorse può essere fatta aprendo una [nuova issue](https://github.com/italia/designers.italia.it/issues/new), o esplorando le [issues](https://github.com/italia/designers.italia.it/issues) esistenti. Se vuoi contribuire e proporre una modifica, è sufficiente aprire una [pull request](https://github.com/italia/designers.italia.it/pulls).
 
+### ✏️ Content
+
+The site's content is at [src/data/content/](src/data/content/), and whenever a
+file is updated the last modification time is automatically generated.
+
+If you want to update one of those files without altering the displayed last
+modification time, include `(last-update-skip)` somewhere in the commit message.
+
 ## 🚀 Quick start
 
 1.  **Install dependencies.**

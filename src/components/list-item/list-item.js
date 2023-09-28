@@ -60,6 +60,7 @@ function ListItem({
 	}
 	// label
 	if (label) {
+    // eslint-disable-next-line no-param-reassign
 		children = label
 	}
 

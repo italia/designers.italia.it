@@ -1,10 +1,10 @@
 import * as React from "react"
-import Icon from "../icon/icon"
 import { useEffect } from "react";
 import {Dropdown} from "bootstrap-italia"
 import "./header-menu-link.scss"
 
 import { Link } from "gatsby";
+import Icon from "../icon/icon"
 
 function HeaderMenuLink({
 	isDropDown,
@@ -15,6 +15,7 @@ function HeaderMenuLink({
 }) {
 
   useEffect(() => {
+    // eslint-disable-next-line no-new
     new Dropdown(document.getElementById(idMegamenu), {})
   });
 
@@ -23,6 +24,7 @@ function HeaderMenuLink({
 		+ `${page===label ? ' active' : ''}`
 		+ ' px-lg-2 px-xl-3 fw-semibold'
 
+  // eslint-disable-next-line consistent-return
 	function icon(boolean){
 		if (boolean) {
 			return (
@@ -33,7 +35,8 @@ function HeaderMenuLink({
 
   if (isDropDown) {
     return (
-      <button 
+      <button
+        type="button"
         className={styles}
         data-bs-toggle={isDropDown ? 'dropdown' : undefined}
         aria-expanded={isDropDown ? 'false' : undefined}
@@ -43,7 +46,7 @@ function HeaderMenuLink({
         {icon(isDropDown)}
       </button>
     )
-  } 
+  }
     return (
       <Link
         className={styles}
@@ -56,7 +59,7 @@ function HeaderMenuLink({
         {icon(isDropDown)}
       </Link>
     )
-  
+
 
 }
 export default HeaderMenuLink

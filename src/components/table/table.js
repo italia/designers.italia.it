@@ -1,4 +1,5 @@
 import React from "react"
+import ReactMarkdown from "react-markdown"
 import Tag from "../tag/tag"
 import SimpleCta from "../simple-cta/simple-cta"
 import "./table.scss"
@@ -42,7 +43,7 @@ function Table({
 
             return(
               <CellType scope={CellScope} key={`td-${index}`} className={tdItem.addonClasses}>
-                { tdItem.text }
+                { tdItem.text && <ReactMarkdown>{tdItem.text}</ReactMarkdown>}
                 { tdItem.tag && <Tag {...tdItem.tag}/>}
                 { tdItem.simpleCta && <SimpleCta {...tdItem.simpleCta} />}
               </CellType>

@@ -7,6 +7,7 @@ function Header({
   children
 }) {
   useEffect(() => {
+    // eslint-disable-next-line no-new
     new HeaderSticky(document.getElementById("header"))
   })
   const styles = "it-header-wrapper"

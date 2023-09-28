@@ -82,7 +82,7 @@ function TagsDesignSystem({ children, pageContext, location, data }) {
                             {edges.map(({ node }) => {
                               const { id } = node
                               const { pathname } = node.seo
-                              const { title } = node.components?.hero
+                              const title = node.components?.hero?.title
                               const { description } = node.seo
                               return (
                                 <ListItem url={pathname} key={id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
@@ -190,16 +190,12 @@ export const pageQuery = graphql`
       `
 
 
-export function Head({ pageContext, data: { content } }) {
-  const { tag } = pageContext
+export function Head({ pageContext: { tag } }) {
   return (
     <Seo
       title={`${tag} - Designers Italia`}
       description={`Tutti i contenuti del design system relativi all'argomento "${tag}"`}
-      // image = {content.seo.image}
-      // twitterImage = {content.seo.twitterImage}
       pathname={`/design-system/argomenti/"${tag}"/`}
-    // canonical = {content.seo.canonical}
      />
   )
 }

@@ -16,7 +16,9 @@ function NavPosition({
 
   if (items) {
     linkItems = items.map((item, index) => {
+      // eslint-disable-next-line no-param-reassign
       item.icon.addonClasses = "flex-shrink-0 me-3"
+      // eslint-disable-next-line no-param-reassign
       item.icon.hidden = true
       return (
         <div key={`linkItems-${  index}`} >
