@@ -43,7 +43,7 @@ function Table({
 
             return(
               <CellType scope={CellScope} key={`td-${index}`} className={tdItem.addonClasses}>
-                { tdItem.text && <ReactMarkdown>{...tdItem.text}</ReactMarkdown>}
+                { tdItem.text && <ReactMarkdown>{tdItem.text}</ReactMarkdown>}
                 { tdItem.tag && <Tag {...tdItem.tag}/>}
                 { tdItem.simpleCta && <SimpleCta {...tdItem.simpleCta} />}
               </CellType>
