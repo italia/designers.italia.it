@@ -19,7 +19,7 @@
     "site"
   ],
   "scripts": {
-    "prepare-lib": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
+    "prepare-lib": "cp -r node_modules/bootstrap-italia/dist/svg/ static/ && cp -r node_modules/bootstrap-italia/dist/fonts static/",
     "prepare-content": "node ./scripts/prepare.js",
     "start": "npm run prepare-lib && gatsby develop",
     "develop": "npm run start",
@@ -88,7 +88,6 @@
     "gh-pages": "^6.0.0",
     "mustache": "^4.2.0",
     "prettier": "3.0.3",
-    "recursive-copy-cli": "^1.0.20",
     "slugify": "^1.6.5"
   }
 }
