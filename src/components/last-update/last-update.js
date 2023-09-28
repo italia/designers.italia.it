@@ -5,13 +5,10 @@ import "./last-update.scss"
 
 function LastUpdate({
   pathname,
-  title,
-  licence,
-  edit,
   lastModified,
   noPadding
 }) {
-  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`  // < fallback if not trackable via pathname let's go to repo root...
+  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`
   if (pathname) {
     const filePath = pathname === '/'
       ? "index"
@@ -20,9 +17,7 @@ function LastUpdate({
     editGithubUrl += `${filePath}.yaml`
   }
 
-  const columnStyle = 'col-12'
-  // + `${column ? '' : ' col-md-10 offset-md-1'}`
-  + ' g-0'
+  const columnStyle = 'col-12 g-0'
 
   const paddingStyle = 'px-3'
    + `${noPadding ? '' : ' px-lg-5'}`
@@ -35,7 +30,7 @@ function LastUpdate({
             <div className ={paddingStyle}>
               <p>
                 <small>
-                  <span>{title} </span>
+                  <span>Ultimo aggiornamento: </span>
                   <time
                     dateTime={lastModified}
                     title={lastModified}
@@ -46,11 +41,21 @@ function LastUpdate({
                     )}
                   </time>
                   <Link
-                    to={licence.url}
-                    target={licence.blank ? "_blank" : undefined}
-                    rel={licence.blank ? 'noreferrer' : undefined}
-                    className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5">
-                    <strong className="d-inline-block me-2">{licence.label} <span className="visually-hidden">(si apre in una nuova finestra)</span><Icon {...licence.icon} /></strong>
+                    to="https://creativecommons.org/licenses/by-sa/4.0/deed.it"
+                    target="_blank"
+                    rel='noreferrer'
+                    className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5"
+                  >
+                    <strong className="d-inline-block me-2">
+                      Licenza CC BY-SA 4.0
+                      <span className="visually-hidden">(si apre in una nuova finestra)</span>
+                      <Icon
+                        icon="sprites.svg#it-external-link"
+                        size="md"
+                        color="primary"
+                        addonClasses="align-middle"
+                      />
+                    </strong>
                   </Link>
                 </small>
               </p>
@@ -58,10 +63,19 @@ function LastUpdate({
                 <small>
                   <Link
                     to={editGithubUrl}
-                    target={edit.blank ? "_blank" : undefined}
-                    rel={edit.blank ? 'noreferrer' : undefined}
-                    className="d-inline-block text-decoration-none">
-                    <strong className="d-inline-block me-2">{edit.label} <span className="visually-hidden">(si apre in una nuova finestra)</span></strong><Icon {...edit.icon} />
+                    target="_blank"
+                    rel="noreferrer"
+                    className="d-inline-block text-decoration-none"
+                  >
+                    <strong className="d-inline-block me-2">
+                      Proponi una modifica a questa pagina
+                      <span className="visually-hidden">(si apre in una nuova finestra)</span>
+                    </strong>
+                    <Icon
+                      icon="sprites.svg#it-pencil"
+                      size="sm"
+                      color="primary"
+                    />
                   </Link>
                 </small>
               </p>
