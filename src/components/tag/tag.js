@@ -9,9 +9,6 @@ function Tag({
   addonClasses,
   screenReaderText
 }) {
-	if (label) {
-		children = label
-	}
   const styles = "tag"
     + `${addonClasses ? ` ${addonClasses}` : ''}`
 
@@ -19,17 +16,17 @@ function Tag({
     return(
       <Link to={url} className={styles}>
         {screenReaderText && <span className="visually-hidden">{screenReaderText}</span>}
-        {children}
+        {label || children}
       </Link>
     )
-  } 
+  }
     return(
       <span className={styles}>
          {screenReaderText && <span className="visually-hidden">{screenReaderText}</span>}
-        {children}
+        {label || children}
       </span>
     )
-  
+
 
 }
 

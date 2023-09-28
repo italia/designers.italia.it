@@ -74,32 +74,6 @@ export const query = graphql`
         # canonical
         pathname
       }
-      lastUpdate {
-        title
-        licence {
-          label
-          url
-          icon {
-            icon
-            size
-            color
-            addonClasses
-          }
-          blank
-        }
-        edit {
-          label
-          url
-          icon {
-            icon
-            size
-            color
-          }
-          blank
-        }
-        column
-        noPadding
-      }
       components {
         hero {
           background

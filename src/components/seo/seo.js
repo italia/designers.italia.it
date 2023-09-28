@@ -1,6 +1,7 @@
 import React from "react"
 import { SeoGetSiteMetadata } from "./seo-get-site-metadata"
 
+// eslint-disable-next-line import/prefer-default-export
 export function Seo({title, description, image, twitterImage, canonical, pathname, lang, children}) {
 	const {
 		siteName,

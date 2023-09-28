@@ -73,6 +73,15 @@ function Feedback() {
     }
   }
 
+  const openModal = () => {
+    if (choiceVal === "0") {
+      const dialog = new Modal(modalNo.current);
+      dialog.show();
+
+      setModal(dialog);
+    }
+  }
+
   const onSend = async () => {
     const res = await sendFeedback();
 
@@ -85,19 +94,10 @@ function Feedback() {
     await sendFeedback(result);
 
     modal.hide()
-  }, [modal]);
+  }, [modal, sendFeedback]);
 
-  const openModal = () => {
-    if (choiceVal === "0") {
-      const modal = new Modal(modalNo.current);
-      modal.show();
-
-      setModal(modal);
-    }
-  }
-
-  const renderState = (feedbackState) => {
-    switch(feedbackState) {
+  const renderState = (state) => {
+    switch(state) {
       case FeedbackState.Loading:
       case FeedbackState.Start: return (
         <>
@@ -149,6 +149,7 @@ function Feedback() {
             C’è stato un problema nell’invio 😞<br/> Ti va di riprovare più tardi? 🙏
           </span>
         )
+      default: return null // should not happen
     }
   };
 

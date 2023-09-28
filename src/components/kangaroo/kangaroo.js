@@ -11,7 +11,6 @@ function Kangaroo({
   tagsLabel,
   tagsDesignSystemLabel,
   icon,
-  chips,
   tags,
   tagsDesignSystem,
   dropdown,

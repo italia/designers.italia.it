@@ -1,15 +1,17 @@
+/* eslint-disable no-console */ // console.log is ok here for progress reporting
+
 const { createRemoteFileNode, } = require("gatsby-source-filesystem")
 
 const jsYaml = require(`js-yaml`)
 
 const _ = require("lodash")
 const path = require("path")
+const express = require('express')
 const { fetchDataFiles } = require('./server/fetchDataFiles')
 const { findValues } = require('./server/utils/findValues')
 
 const isRemoteAsset = (assetPath) => assetPath.startsWith('http')
 
-const express = require('express');
 exports.onCreateDevServer = ({ app }) => {
   app.use(express.static('public'))
 }

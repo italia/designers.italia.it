@@ -64,6 +64,7 @@ const List = React.forwardRef(({
       await navigator.clipboard.writeText(currentUrl);
     }
 
+    // eslint-disable-next-line no-param-reassign
     children = (
       <>
         <ListItem
@@ -99,8 +100,10 @@ const List = React.forwardRef(({
 
   if (listItems) {
     if (isMenu) { // megamenu
+      // eslint-disable-next-line no-param-reassign
       children = listItems.map((listitems, index) => <ListItem {...listitems} key={`z-list-${  index}`} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList} icon={ICON_ARROW_RIGHT_TRIANGLE} iconLeft />)
     } else {
+      // eslint-disable-next-line no-param-reassign
       children = listItems.map((listitems, index) => <ListItem {...listitems} key={`z-list-${  index}`} isDropdown={isDropdown} textLarge={textLarge} simpleList={simpleList} />)
     }
   }

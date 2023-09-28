@@ -1,8 +1,6 @@
 import React from "react";
 
-function InterestAside({
-
-}) {
+function InterestAside() {
   return (
     <aside className="py-5 analogue-2-bg">
       <div className="container-xxl">

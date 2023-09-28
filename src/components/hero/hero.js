@@ -16,8 +16,6 @@ function Hero({
   centered,
   column,
   specialKangarooComponent,
-  // breadcrumbs,
-  reversedMobile,
   tag,
   background,
   title,
@@ -29,8 +27,6 @@ function Hero({
   img,
   alt,
   imgRatio,
-  bgImg,
-  bgImgAlt,
   kangaroo,
   noBorder
 }) {
@@ -93,9 +89,9 @@ function Hero({
             <div className="col-12 g-0">
               <div className={breadcrumbsStyle}>
                 {crumbLabel ? (
-                  <Breadcrumbs pageContext={pageContext} crumbLabel={crumbLabel} title={name}  /> 
+                  <Breadcrumbs pageContext={pageContext} crumbLabel={crumbLabel} title={name} />
                 ) : (
-                  <Breadcrumbs pageContext={pageContext} title={name}  />
+                  <Breadcrumbs pageContext={pageContext} title={name} />
                 )}
               </div>
               <div className="hero-main">

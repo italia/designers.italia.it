@@ -33,16 +33,11 @@ function Dropdown({
 			{...button} />
 	}
 
-
-	if (list) {
-		children = <List {...list} shareUrl={shareUrl} shareTitle={shareTitle} isMenu isDropdown />
-	}
-
 	return (
 		<div className={styles}>
 			{btnComponents}
 			<div className="dropdown-menu" aria-labelledby={btnId}>
-				{children}
+				{list ? <List {...list} shareUrl={shareUrl} shareTitle={shareTitle} isMenu isDropdown /> : children}
 			</div>
 		</div>
 	)

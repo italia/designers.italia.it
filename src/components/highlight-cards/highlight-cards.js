@@ -17,7 +17,6 @@ function HighlightCards({
   topics,
   nospace,
   nopadtop,
-  customCol,
   hasCustomCols,
 }) {
 
@@ -59,7 +58,7 @@ function HighlightCards({
             <Card {...item} />
           </div>
         )
-      
+
 
     })
   }

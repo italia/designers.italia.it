@@ -7,12 +7,12 @@ import ContentSelectItem from "../content-select/components/content-select-item/
 
 import TabButton from "./tabbutton"
 
-const Tab = ({
+function Tab({
   componentSource,
   tab01,
   tab02,
   tab03
-}) => {
+}) {
   return (
     <div className="tab pt-5 /*pt-lg-6*/">
       <div className="">
