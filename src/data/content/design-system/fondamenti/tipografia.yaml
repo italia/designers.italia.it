@@ -186,87 +186,93 @@ components:
             ### Intestazioni
             La lista di tutti gli stili per creare le intestazioni di una pagina:
         
-        - name: ComponentView
-          variantName: Intestazioni
-          source: bsi/organizzare-i-contenuti/tipografia
-          idPrefix: "viewer04-"
-          viewerHeight: 0
-          minHeight: 150
-          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
-          accordionOpen: false
-          accordionShow: true
+        # - name: ComponentView
+        #   noSpace: true
+        #   variantName: Intestazioni
+        #   source: bsi/organizzare-i-contenuti/tipografia
+        #   idPrefix: "viewer04-"
+        #   viewerHeight: 0
+        #   minHeight: 150
+        #   accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+        #   accordionOpen: false
+        #   accordionShow: true
 
         - name: Table
           title: null
-          responsive: table-responsive-md
-          addonClasses: fixed mb-5
+          responsive: table-responsive
+          addonClasses: mb-5
           head:
             - text: Stile
             - text: Specifiche
-            - text: Nome token
+            - text: Token
           rows:
             - cols:
               - text: |
-                  Intestazione 1
+                  # Intestazione 1
               - text: |
-                  Titillium Web, 
-                  size: 40/48px, 
-                  line height: 48/56px, 
-                  letter spacing: -1, 
-                  weight: Bold
+                  font-family: Titillium Web   
+                  font-size: 40/48px   
+                  line-height: 48/56px   
+                  letter-spacing: -1   
+                  font-weight: Bold
               - text: |
-                  heading-1
+                  heading-1  
+                  heading-1-lg
             - cols:
               - text: |
-                  Intestazione 2
+                  ## Intestazione 2
               - text: |
-                  Titillium Web, 
-                  size: 32/40px, 
-                  line height: 40/48px, 
-                  letter spacing: -1, 
+                  font-family: Titillium Web    
+                  size: 32/40px  
+                  line height: 40/48px  
+                  letter spacing: -1  
                   weight: Bold
               - text: |
-                  heading-2
+                  heading-2  
+                  heading-2-lg
             - cols:
               - text: |
-                  Intestazione 3
+                  ### Intestazione 3
               - text: |
-                  Titillium Web, 
-                  size: 28/32px, 
-                  line height: 32/40px, 
-                  weight: Bold
+                  font-family: Titillium Web   
+                  font-size: 28/32px  
+                  line height: 32/40px   
+                  font-weight: Bold  
               - text: |
-                  heading-3
+                  heading-3  
+                  heading-3-lg
             - cols:
               - text: |
-                  Intestazione 4
+                  #### Intestazione 4
               - text: |
-                  Titillium Web,  
-                  size: 24/32px, 
-                  line height: 32/40px, 
-                  weight: SemiBold
+                  font-family: Titillium Web  
+                  font-size: 24/32px  
+                  line-height: 32/40px   
+                  font-weight: SemiBold  
               - text: |
                   heading-4
             - cols:
               - text: |
-                  Intestazione 5
+                  ##### Intestazione 5
               - text: |
-                  Titillium Web, 
-                  size: 20/24px, 
-                  line-height: 24/32px, 
-                  weight: SemiBold
+                  font-family: Titillium Web  
+                  font-size: 20/24px  
+                  line-height: 24/32px  
+                  font-weight: SemiBold  
               - text: |
-                  heading-5
+                  heading-5  
+                  heading-5-lg
             - cols:
               - text: |
-                  Intestazione 6
+                  ###### Intestazione 6
               - text: |
-                  Titillium Web, 
-                  size: 16/18px, 
-                  line-height: 24px
-                  weight: SemiBold
+                  font-family: Titillium Web  
+                  font-size: 16/18px  
+                  line-height: 24px  
+                  font-weight: SemiBold  
               - text: |
-                  heading-6
+                  heading-6  
+                  heading-6-lg
 
         - name: TextImageCta
           title: Corpo del testo
