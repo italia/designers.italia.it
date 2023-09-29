@@ -585,6 +585,10 @@ export const query = graphql`
                   label
                   addonClasses
                 }
+                tags {
+                  label
+                  addonClasses
+                }
                 simpleCta {
                   label
                   url
