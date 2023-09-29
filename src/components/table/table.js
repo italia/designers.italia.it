@@ -43,13 +43,11 @@ function Table({
               CellType = `td`
               CellScope = null
             }
-            if (tdItem.tags) {
-                tagsItems = tdItem.tags.map((item,index) => (
-                  <div>
-                    <Tag {...item} key={`tag-${index}`}/>
-                  </div>
-                  ))
-            }
+            const tagsItems = tdItem.tags?.map((item,index) => (
+              <div>
+                <Tag {...item} key={`tag-${index}`}/>
+              </div>
+              ));
             return(
               <CellType scope={CellScope} key={`td-${index}`} className={tdItem.addonClasses}>
                 { tdItem.text && <ReactMarkdown>{tdItem.text}</ReactMarkdown>}
