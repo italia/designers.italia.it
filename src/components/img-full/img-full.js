@@ -1,16 +1,13 @@
-import React from "react"
-import ImageResponsive from "../image-responsive/image-responsive"
-import "./img-full.scss"
+import React from "react";
+import ImageResponsive from "../image-responsive/image-responsive";
+import "./img-full.scss";
 
-function ImgFull({
-  img,
-  alt
-}) {
-  return(
+function ImgFull({ img, alt }) {
+  return (
     <div className="img-full mb-5">
-      <ImageResponsive imgClassName="w-100 img-fluid" src={img} alt={alt}/>
+      <ImageResponsive imgClassName="w-100 img-fluid" src={img} alt={alt} />
     </div>
-  )
+  );
 }
 
-export default ImgFull
+export default ImgFull;

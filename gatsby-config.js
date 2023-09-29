@@ -1,40 +1,41 @@
-const path = require('path');
-const { getCrumbLabelUpdates } = require('./scripts/breadcrumbs');
+const path = require("path");
+const { getCrumbLabelUpdates } = require("./scripts/breadcrumbs");
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
 // Get paths of Gatsby's required rules, which as of writing is located at:
 // https://github.com/gatsbyjs/gatsby/tree/fbfe3f63dec23d279a27b54b4057dd611dce74bb/packages/
 // gatsby/src/utils/eslint-rules
 const gatsbyRequiredRules = path.join(
   process.cwd(),
-  'node_modules',
-  'gatsby',
-  'dist',
-  'utils',
-  'eslint-rules'
+  "node_modules",
+  "gatsby",
+  "dist",
+  "utils",
+  "eslint-rules",
 );
 
 module.exports = {
   trailingSlash: "always",
   siteMetadata: {
     siteUrl: `https://designers.italia.it`,
-    title : "Designers Italia",
-    author : "Dipartimento per la trasformazione digitale e AGID",
-    lang : "it",
-    description : "Il punto di riferimento per la progettazione dei servizi pubblici digitali",
-    siteName : "Designers Italia",
-    image : "https://designers.italia.it/assets/icons/logo-it.png",
-    twitterImage : "https://designers.italia.it/assets/icons/logo-it.png",
-    twitterSite : "@DesignersITA",
-    twitterCreator : "Dipartimento per la trasformazione digitale e AGID",
-    themeColor: "#0066cc"
+    title: "Designers Italia",
+    author: "Dipartimento per la trasformazione digitale e AGID",
+    lang: "it",
+    description:
+      "Il punto di riferimento per la progettazione dei servizi pubblici digitali",
+    siteName: "Designers Italia",
+    image: "https://designers.italia.it/assets/icons/logo-it.png",
+    twitterImage: "https://designers.italia.it/assets/icons/logo-it.png",
+    twitterSite: "@DesignersITA",
+    twitterCreator: "Dipartimento per la trasformazione digitale e AGID",
+    themeColor: "#0066cc",
   },
   plugins: [
     {
-      resolve:`gatsby-plugin-breadcrumb`,
+      resolve: `gatsby-plugin-breadcrumb`,
       options: {
         useAutoGen: true,
         crumbLabelUpdates: getCrumbLabelUpdates(),
@@ -43,7 +44,7 @@ module.exports = {
           `**/dev-404-page/**`,
           `**/404/**`,
           `**/404.html`,
-          `**/offline-plugin-app-shell-fallback/**`
+          `**/offline-plugin-app-shell-fallback/**`,
         ],
         trailingSlashes: true,
       },
@@ -63,8 +64,8 @@ module.exports = {
         defaults: {
           formats: ["auto", "webp", "avif"],
           placeholder: "dominantColor", // or blurred ...
-          quality: 70
-        }
+          quality: 70,
+        },
       },
     },
     {
@@ -94,7 +95,7 @@ module.exports = {
         match: {
           regex: "(last-update-skip)",
           invert: true,
-        }
+        },
       },
     },
     {
@@ -337,7 +338,16 @@ module.exports = {
         // List of keys to store and make available in your UI. The values of
         // the keys are taken from the normalizer function below.
         // Default: all fields
-        store: ["id", "template", "relativePath", "path", "title", "description", "tag", "tags"],
+        store: [
+          "id",
+          "template",
+          "relativePath",
+          "path",
+          "title",
+          "description",
+          "tag",
+          "tags",
+        ],
 
         // Function used to map the result from the GraphQL query. This should
         // return an array of items to index in the form of flat objects
@@ -345,23 +355,31 @@ module.exports = {
         // field above (default: 'id'). This is required.
         normalizer: ({ data }) =>
           data.allContent.edges.map((edge) => ({
-              id: edge.node.id,
-              template: edge.node.metadata?.template?.name,
-              relativePath: `/${  edge.node.relativePath}`,
-              tags: edge.node.components?.hero?.kangaroo?.tags,
-              path: `${edge.node.seo?.pathname}`,
-              title: `${edge.node.components?.hero?.title}`,
-              description: `${edge.node.seo?.description}`,
-              tag: `${edge.node.components?.hero?.tag?.label}`,
-              body:  `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}`
-                + ` ${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}`
-                + ` ${  edge.node.components?.sectionsEditorial?.map(s => s.title).join(' ')
-                 } ${  edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c=> c.title)).join(' ')
-                 } ${  edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.title)).join(' ')
-                 } ${  edge.node.components?.sectionsEditorial?.map(s => s.text).join(' ')
-                 } ${  edge.node.components?.sectionsEditorial?.map(s => s.components?.map(c => c.text)).join(' ')
-                 } ${  edge.node.components?.sectionsEditorial2?.map(s => s.components?.map(c => c.text)).join(' ')}`,
-            })),
+            id: edge.node.id,
+            template: edge.node.metadata?.template?.name,
+            relativePath: `/${edge.node.relativePath}`,
+            tags: edge.node.components?.hero?.kangaroo?.tags,
+            path: `${edge.node.seo?.pathname}`,
+            title: `${edge.node.components?.hero?.title}`,
+            description: `${edge.node.seo?.description}`,
+            tag: `${edge.node.components?.hero?.tag?.label}`,
+            body:
+              `${edge.node.components?.hero?.subtitle} ${edge.node.components?.hero?.text}` +
+              ` ${edge.node.components?.sectionIntro?.title} ${edge.node.components?.sectionIntro?.text} ${edge.node.components?.sectionIntro?.moreText}` +
+              ` ${edge.node.components?.sectionsEditorial
+                ?.map((s) => s.title)
+                .join(" ")} ${edge.node.components?.sectionsEditorial
+                ?.map((s) => s.components?.map((c) => c.title))
+                .join(" ")} ${edge.node.components?.sectionsEditorial2
+                ?.map((s) => s.components?.map((c) => c.title))
+                .join(" ")} ${edge.node.components?.sectionsEditorial
+                ?.map((s) => s.text)
+                .join(" ")} ${edge.node.components?.sectionsEditorial
+                ?.map((s) => s.components?.map((c) => c.text))
+                .join(" ")} ${edge.node.components?.sectionsEditorial2
+                ?.map((s) => s.components?.map((c) => c.text))
+                .join(" ")}`,
+          })),
       },
     },
     {
@@ -381,8 +399,8 @@ module.exports = {
     // This must be the last plugin in the array
     `gatsby-plugin-meta-redirect`,
   ],
-  pathPrefix: '/',
+  pathPrefix: "/",
   flags: {
-    DEV_SSR: true
+    DEV_SSR: true,
   },
-}
+};
