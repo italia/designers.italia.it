@@ -13,14 +13,7 @@ function Table({
   headingLevel
 }) {
 
-  // heading level
-	let HLevel
-	if (headingLevel) {
-		HLevel = `h${headingLevel}`;
-	} else {
-		HLevel = `h3`
-	}
-
+	const HLevel = headingLevel ? `h${headingLevel}` : "h3";
   const tableClasses = "table y-4"
     + `${addonClasses ? ` ${addonClasses}` : ''}`
 
