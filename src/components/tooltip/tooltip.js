@@ -22,6 +22,7 @@ function Tooltip({
 	const tRef = useRef()
 
 	useEffect(() => {
+    // eslint-disable-next-line no-new
 		new BSITooltip(tRef.current.children[0])
 	}, [])
 

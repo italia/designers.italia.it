@@ -1,3 +1,5 @@
+/* eslint-disable no-console */ // console.log is ok here for progress reporting
+
 const request = require('superagent');
 const AdmZip = require('adm-zip');
 const fs = require('fs');
@@ -28,8 +30,8 @@ async function downloadExamples (context) {
                 zipEntries.forEach((zipEntry) => {
                     if (zipEntry.entryName.match(/.*\/api\/.*.json/)) {
                         const newFolder = path.join(
-                            DEST_DIR, context, 
-                            path.dirname(zipEntry.entryName).split(path.sep).pop(), 
+                            DEST_DIR, context,
+                            path.dirname(zipEntry.entryName).split(path.sep).pop(),
                         )
                         fs.mkdirSync(newFolder, { recursive: true })
                         fs.writeFileSync(

@@ -8,7 +8,6 @@ function Topics({
   title,
   headingLevel,
   icon,
-  chips,
   tags,
   button
 }) {

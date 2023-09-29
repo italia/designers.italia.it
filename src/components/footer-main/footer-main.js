@@ -1,4 +1,5 @@
 import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
 import List from "../list/list"
 import ListItem from "../list-item/list-item"
 import Button from "../button/button"
@@ -6,7 +7,6 @@ import Subscribe from "../subscribe/subscribe"
 import Link from "../link/link"
 import "./footer-main.scss"
 
-import { useStaticQuery, graphql } from "gatsby"
 import Chip from "../chip/chip"
 
 function FooterMain({

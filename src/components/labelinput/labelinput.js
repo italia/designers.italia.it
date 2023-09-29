@@ -19,6 +19,7 @@ function LabelInput(props) {
         }
     };
     useEffect(() => {
+        // eslint-disable-next-line no-new
         new Input(document.getElementById(id))
     });
     return (

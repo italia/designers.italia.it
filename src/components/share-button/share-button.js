@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import Dropdown from "../dropdown/dropdown"
 
-function ShareButton({ title, url, color = 'primary', small = false}) {
+function ShareButton({ title, url, color, small }) {
   // TODO: Compatibility structure that Dropdown understands.
   // Dropdown should not have the logic in it for the share UI
   const shareOpts = {
@@ -29,6 +29,11 @@ function ShareButton({ title, url, color = 'primary', small = false}) {
   }
 
   return <Dropdown {...shareOpts} shareTitle={title} shareUrl={url} />
+}
+
+ShareButton.defaultProps = {
+  color: 'primary',
+  small: false,
 }
 
 ShareButton.propTypes = {
