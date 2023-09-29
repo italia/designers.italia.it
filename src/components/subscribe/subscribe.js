@@ -49,7 +49,7 @@ function Subscribe({
     const endpoint = 'https://sendportal.developers.italia.it/api/v1/subscribe';
     const data = {};
 
-    new FormData(e.target).forEach((value, key) => (data[key] = value));
+    new FormData(e.target).forEach((value, key) => { data[key] = value });
 
     e.preventDefault();
 
@@ -68,9 +68,10 @@ function Subscribe({
       if (!r.ok) {
         throw new Error(`HTTP response: ${r.status}`);
       }
-    } catch (e) {
+    } catch (ex) {
       setState(StateClass.ERROR);
-      console.error(`Mailing list subscribe error: ${e}`);
+      // eslint-disable-next-line no-console
+      console.error(`Mailing list subscribe error: ${ex}`);
       setMessage(t('errorText'));
 
       return;
@@ -130,9 +131,9 @@ Subscribe.propTypes = {
   labelClass: PropTypes.string,
   id: PropTypes.string.isRequired,
   idForm: PropTypes.string.isRequired,
-  button: PropTypes.object.isRequired,
+  button: PropTypes.object.isRequired, // eslint-disable-line react/forbid-prop-types
   lang: PropTypes.string,
-  sendportalArgs: PropTypes.object,
+  sendportalArgs: PropTypes.object, // eslint-disable-line react/forbid-prop-types
 };
 
 Subscribe.defaultProps = {

@@ -3,6 +3,7 @@ import uniqueId from "lodash/uniqueId"
 
 import { a11yDark } from 'react-syntax-highlighter/dist/esm/styles/prism'
 import loadable from "@loadable/component"
+import { Notification } from 'bootstrap-italia'
 import Button from "../button/button"
 import Checkbox from "../checkbox/checkbox"
 import Icon from "../icon/icon"
@@ -10,14 +11,11 @@ import Icon from "../icon/icon"
 import "./component-view.scss"
 import viewerData from "../../data/component-viewer.yaml"
 
-import { Notification } from 'bootstrap-italia'
-
-
 const slugify = require('slugify')
 
 const SyntaxHighlighter = loadable(() => import('./syntax-highlighter'))
 
-const ComponentView = ({
+function ComponentView({
   variantName,
   source,
   content,
@@ -29,17 +27,19 @@ const ComponentView = ({
   accordionUrl,
   accordionSrCopyLabel,
   componentViewerData,
-}) => {
+}) {
 
-  if (componentViewerData?.variants) { // it is not a Componenti page, but a Fondamenti with one or more viewers... 
-    content = componentViewerData.variants.filter(item => item.name === variantName)[0]?.content
+  let contentTrimmed = content?.trim();
+
+  if (componentViewerData?.variants) { // it is not a Componenti page, but a Fondamenti with one or more viewers...
+    contentTrimmed = componentViewerData
+      .variants
+      .filter(item => item.name === variantName)[0]
+      ?.content
+      ?.trim()
   }
 
-  if (content) content = content.replace(/^\s+|\s+$/g, '')
-
-  const viewer = viewerData.viewer
-  const accordionLabel = viewerData.accordionLabel
-  const accordionSrLabel = viewerData.accordionSrLabel
+  const { viewer, accordionLabel, accordionSrLabel } = viewerData
 
   const ICON_EXTERNAL = {
     icon: "sprites.svg#it-external-link",
@@ -79,7 +79,7 @@ const ComponentView = ({
       if (!minHeight) {
         iframe.classList.add("min-default-height")
       } else {
-        iframe.style.minHeight = minHeight + "px"
+        iframe.style.minHeight = `${minHeight}px`
       }
       iframe.height = exampleContainer.clientHeight + 50
       exampleContainer.addEventListener("click", () => {
@@ -151,11 +151,16 @@ const ComponentView = ({
   const BSIExampleUrl = `/examples/${source}/${slugify(variantName).toLowerCase()}.html`
 
   return (
-    <div id={uuid} className="pb-5 pb-lg-6">
-      {content &&
+    <div id={uuid} className="pb-4 mb-5">
+      {contentTrimmed &&
         <div className={componentStyles}>
           <span className="visually-hidden">Inizio componente:</span>
-          <iframe id={`${idPrefix}-iframe`} src={BSIExampleUrl} title={`Variante: ${variantName}`} className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}></iframe>
+          <iframe
+            id={`${idPrefix}-iframe`}
+            src={BSIExampleUrl}
+            title={`Variante: ${variantName}`}
+            className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}
+          />
           <span className="visually-hidden">Fine componente.</span>
           {responsiveButtonsItems &&
             <div className="responsive-buttons d-none d-lg-block">
@@ -169,7 +174,7 @@ const ComponentView = ({
           }
         </div>
       }
-      {(content && accordionShow) &&
+      {(contentTrimmed && accordionShow) &&
         <div className="accordion accordion-left-icon" id={accId}>
           <div className="accordion-item">
             <div className="d-flex justify-content-between align-items-center" id={headId}>
@@ -179,8 +184,8 @@ const ComponentView = ({
                 </button>
               </h2>
               <div className="d-flex justify-content-between align-items-center">
-                {content &&
-                  <Button onClick={(e) => copyToClipboard(e, content)} aria-label={accordionSrCopyLabel} addonStyle="p-0 shadow-none">
+                {contentTrimmed &&
+                  <Button onClick={(e) => copyToClipboard(e, contentTrimmed)} aria-label={accordionSrCopyLabel} addonStyle="p-0 shadow-none">
                     <Icon {...ICON_COPY_CODE} />
                   </Button>
                 }
@@ -198,12 +203,12 @@ const ComponentView = ({
             <div id={collId} className={accordionStyle} data-bs-parent={`#${  accId}`} role="region" aria-labelledby={headId}>
               <div className="accordion-body p-0">
                 <div aria-hidden="true" className="d-flex flex-row-reverse">
-                  {content &&
+                  {contentTrimmed &&
                     <Checkbox id={`${idPrefix}-wrap`} label='Mostra codice a capo' customStyle="me-4" checked={wrappedCode} handleChange={(val) => setWrappedCode(val)} />
                   }
                 </div>
                 {content &&
-                  <SyntaxHighlighter language="markup" style={theme} showLineNumbers={true} wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
+                  <SyntaxHighlighter language="markup" style={theme} showLineNumbers wrapLines={wrappedCode} lineProps={{ style: { wordBreak: 'break-all', whiteSpace: 'pre-wrap' } }}>
                     {content}
                   </SyntaxHighlighter>
                 }

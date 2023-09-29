@@ -28,14 +28,6 @@ function ContentCollapse({
 
   const [id, setId] = useState('content-collapse-')
 
-  const collapseToggle = (evt) => {
-    evt.preventDefault()
-    if (collObjRef.current) {
-      collObjRef.current.toggle()
-      toggleAria(evt.currentTarget)
-    }
-  }
-
   const toggleAria = (element) => {
     const ariaAttr = element.getAttribute('aria-expanded')
     let newVal = 'true'
@@ -43,6 +35,13 @@ function ContentCollapse({
       newVal = 'false'
     }
     element.setAttribute('aria-expanded', newVal)
+  }
+  const collapseToggle = (evt) => {
+    evt.preventDefault()
+    if (collObjRef.current) {
+      collObjRef.current.toggle()
+      toggleAria(evt.currentTarget)
+    }
   }
 
   useEffect(() => {

@@ -13,7 +13,7 @@ import Table from "../table/table"
 import Button from "../button/button"
 import ComponentView from "../component-view/component-view"
 
-const SectionEditorial = ({
+function SectionEditorial({
   title,
   headingLevel,
   text,
@@ -27,8 +27,7 @@ const SectionEditorial = ({
   noSpace,
   id,
   componentViewerData,
-}) => {
-
+}) {
   const SwitchComponents = {
     Highlight,
     Card,
@@ -86,6 +85,7 @@ const SectionEditorial = ({
 
   // xxx a11y downgrade if title is not set, quick fix to review asap
   if (!title) {
+    // eslint-disable-next-line no-param-reassign
     id = undefined
   }
 
@@ -120,21 +120,15 @@ const SectionEditorial = ({
                   </div>
                 }
 								{ButtonsRender && <div className="buttons-wrapper mt-5">{ButtonsRender}</div>}
-                {components &&
-                  components.map((item,index) => {                    
-                    const Switcher = SwitchComponents[item.name]
-                    if (item.name === "ComponentView" && componentViewerData){
-                      return(
-                        <Switcher key={"switcher-"+index} {...item} componentViewerData={componentViewerData}/>
-                      )
-                    } else {
-                      return(
-                        <Switcher key={"switcher-"+index} {...item}/>
-                      )
-                    } 
+                {components?.map((item,index) => {
+                  const Switcher = SwitchComponents[item.name]
 
-                  })
-                }
+                  return <Switcher
+                    key={`switcher-${index}`}
+                    componentViewerData={item.name === "ComponentView" ? componentViewerData : undefined}
+                    {...item}
+                  />
+                })}
               </div>
             </div>
           </div>

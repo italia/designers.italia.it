@@ -1,10 +1,9 @@
 import React, { useRef, useEffect } from "react"
+import { NavBarCollapsible, Sticky } from "bootstrap-italia"
 import Tag from "../tag/tag"
 import Link from "../link/link"
 import BackToTopEl from "../back-to-top/back-to-top";
 import "./nav-sidebar.scss"
-
-import { NavBarCollapsible, Sticky } from "bootstrap-italia"
 
 import FooterData from "../../data/footer.yaml";
 import Icon from "../icon/icon";
@@ -82,7 +81,7 @@ function NavSidebar({
 
         return(
           <li key={`l-${index}`}>
-            <button className={linksStyle} data-bs-target={`#collapseNav-${index}`} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={`collapseNav-${index}`}>
+            <button type="button" className={linksStyle} data-bs-target={`#collapseNav-${index}`} data-bs-toggle="collapse" aria-expanded={expandSublinks} aria-controls={`collapseNav-${index}`}>
               <span className="list-item-title-icon-wrapper list-item-title-icon-wrapper d-flex justify-content-between align-items-center">
                 <span>{item.label}</span>
                 <svg role="img" className="icon icon-sm icon-primary right" aria-hidden="true"><use href="/svg/sprites.svg#it-expand" /></svg>
@@ -93,7 +92,7 @@ function NavSidebar({
             </ul>
           </li>
         )
-      } 
+      }
         return(
           <li key={`l-${index}`}>
             <Link className={linksStyle} to={item.url} activeClassName={GATSBY_ACTIVE}>
@@ -101,18 +100,15 @@ function NavSidebar({
             </Link>
           </li>
         )
-      
+
 
     })
   }
 
   if (secondaryList) {
-    
+
     secondaryLinks = secondaryList.map((item,index) => {
-
-      let secondaryItemStyle
-
-      secondaryItemStyle = "list-item"
+      const secondaryItemStyle = "list-item"
       + `${(item.disabled) ? ' disabled' : ''}`
 
       return(
@@ -129,6 +125,7 @@ function NavSidebar({
     const navColl = navCollRef.current
     const navSticky = navStickyRef.current
     if (navSticky) {
+      // eslint-disable-next-line no-new
       new Sticky(navSticky, {
         stackable: true,
         paddingTop: 100
@@ -173,10 +170,10 @@ function NavSidebar({
             <div className="menu-wrapper">
 
             <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
-              <a className="" href={url}> 
+              <a className="" href={url}>
                 <img src={img} className="header-image my-2" alt={alt}/>
                 <h2 className="h4 text-primary">{title}</h2>
-              </a>  
+              </a>
               <p className="lead fw-normal w-75">{subTitle}</p>
               { tag && <Tag {...tag}/>}
             </div>

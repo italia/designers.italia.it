@@ -15,8 +15,8 @@ function generateExamples(context) {
     for (const jsonFile of jsonFiles) {
         const parsedJson = JSON.parse(fs.readFileSync(jsonFile, 'utf-8'))
         const componentFolder = path.join(
-            EXAMPLES_DIR, 
-            context, 
+            EXAMPLES_DIR,
+            context,
             path.dirname(jsonFile).split(path.sep).pop(),
             path.parse(jsonFile).base.replace(".json", "")
         )
@@ -25,7 +25,7 @@ function generateExamples(context) {
             const filePath = `${path.join(componentFolder, slugify(example.name).toLowerCase())}.html`
             fs.writeFileSync(
                 filePath,
-                Mustache.render(HTML_TEMPLATE, { 
+                Mustache.render(HTML_TEMPLATE, {
                     code: example.content,
                     name: example.name,
                     bsiversion: bsiData.version

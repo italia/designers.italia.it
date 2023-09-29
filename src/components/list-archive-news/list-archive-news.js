@@ -84,7 +84,7 @@ function ListArchiveNews({
                   {edges.map(({ node }) => {
                     const { id } = node
                     const { pathname } = node.seo
-                    const { title } = node.components?.hero
+                    const title = node.components?.hero?.title
                     const { description } = node.seo
                     return (
                       <ListItem url={pathname} key={id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">

@@ -29,6 +29,7 @@ function Template({Pagedata,pageContext,location, lastModified}) {
   if (!Pagedata.metadata.json) {
     throw new Error('json key is required for design-system-component!');
   }
+  // eslint-disable-next-line global-require, import/no-dynamic-require
   const variantMock = require(`../data/components_json/${Pagedata.metadata.json}`)
   return (
     <div id="app">
