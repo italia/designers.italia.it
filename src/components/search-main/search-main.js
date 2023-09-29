@@ -8,20 +8,7 @@ import Tag from "../tag/tag";
 import ListItem from "../list-item/list-item";
 import "./search-main.scss";
 
-function SearchMain({
-  location,
-  howMany,
-  isResultsPage,
-  useSuggestionEngine,
-  title,
-  text,
-  formId,
-  label,
-  inputId,
-  button,
-  suggest,
-  background,
-}) {
+function SearchMain({ location, maxResults, title, suggest }) {
   const [input, setInput] = useState(() => location?.state?.searchTerm);
   const [searchTerm, setSearchTerm] = useState(
     () => location?.state?.searchTerm,
@@ -84,16 +71,24 @@ function SearchMain({
   };
 
   const searchOptions = {
-    limit: `${howMany || ""}`,
+    limit: maxResults,
     // if true "fill" the spaces with suggestions, useful for multiple words query XXX
-    suggest: useSuggestionEngine,
+    suggest: false,
   };
 
   const results = useFlexSearch(searchTerm, index, store, searchOptions);
 
-  const styles = classNames("search-main", {
-    [`bg-${background}`]: background,
-  });
+  const styles = classNames("search-main bg-light");
+
+  const searchButton = {
+    label: "Cerca",
+    btnStyle: "primary",
+    iconRight: true,
+    icon: {
+      icon: "sprites.svg#it-search",
+      addonClasses: "ms-1 icon-search",
+    },
+  };
 
   return (
     <section className={styles}>
@@ -104,12 +99,11 @@ function SearchMain({
               className="search-main-content px-3 py-5 px-lg-0 px-lg-5 py-lg-6"
               role="search"
             >
-              {title || text ? (
+              {title && (
                 <div className="text-container mb-5">
                   {title && <h2>{title}</h2>}
-                  {text && <p className="lead">{text}</p>}
                 </div>
-              ) : null}
+              )}
               {suggest && (
                 <div className="suggest-wrapper d-lg-flex mb-3">
                   <h3 className="mb-4">{suggest.title}</h3>
@@ -137,20 +131,17 @@ function SearchMain({
                 </div>
               )}
               <div className="search-form px-3 px-sm-4 pb-4 mb-5 shadow-lg">
-                <form id={formId} onSubmit={formSubmit}>
+                <form id="searchForm" onSubmit={formSubmit}>
                   <div className="d-flex flex-column align-items-center flex-sm-row w-100">
                     <div className="form-group mb-0 flex-grow-1 me-sm-4 w-100">
-                      <label
-                        ref={searchLabelRef}
-                        /* className="active" */ htmlFor={inputId}
-                      >
-                        {label}
+                      <label ref={searchLabelRef} htmlFor="searchInput">
+                        Cerca
                       </label>
                       <input
                         type="search"
                         className="border-search form-control-lg search"
                         name="search"
-                        id={inputId}
+                        id="searchInput"
                         placeholder=""
                         autoComplete="off"
                         minLength="3"
@@ -160,7 +151,7 @@ function SearchMain({
                       />
                     </div>
                     <div className="button-wrapper mt-4 mt-sm-0">
-                      <Button type="submit" {...button} />
+                      <Button submit label="Cerca" {...searchButton} />
                     </div>
                   </div>
                   {(results.length > 0 || formSubmitted) && (
@@ -237,7 +228,7 @@ function SearchMain({
                             </ListItem>
                           ))}
                         </ul>
-                        {results.length > 4 && !isResultsPage && (
+                        {results.length === maxResults && (
                           <div className="mt-4 ps-4 pt-4 d-block border-top">
                             <strong>
                               <Link

@@ -253,7 +253,6 @@ export const query = graphql`
           col4
           background
           buttons {
-            type
             btnStyle
             label
             addonStyle
@@ -379,28 +378,8 @@ export const query = graphql`
         #}
         #}
         searchMain {
-          disabled
-          isResultsPage
-          useSuggestionEngine
-          background
           title
-          text
-          formId
-          label
-          inputId
-          inputName
-          howMany
-          button {
-            label
-            # type
-            btnStyle
-            iconRight
-            icon {
-              icon
-              # color
-              addonClasses
-            }
-          }
+          maxResults
           suggest {
             title
             items {
@@ -467,7 +446,6 @@ export const query = graphql`
           }
           headingLevel
           buttons {
-            type
             btnStyle
             label
             url
@@ -514,7 +492,6 @@ export const query = graphql`
           nopadtop
           hasCustomCols
           buttons {
-            type
             btnStyle
             label
             url

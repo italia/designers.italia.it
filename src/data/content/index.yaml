@@ -65,26 +65,8 @@ components:
     fullImg: false
 
   searchMain:
-    disabled: true
-    isResultsPage: false
-    useSuggestionEngine: true
-    background: light
     title: Da dove vuoi iniziare?
-    text: "" # "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
-    formId: searchForm
-    label: Cerca
-    inputId: searchInput
-    inputName: search
-    howMany: 5
-    button:
-      label: Cerca
-      type: #submit
-      btnStyle: primary
-      iconRight: true
-      icon:
-        icon: sprites.svg#it-search
-        color: #white
-        addonClasses: ms-1 icon-search
+    maxResults: 5
     suggest:
       title: "Ti suggeriamo:"
       items:
@@ -220,13 +202,11 @@ components:
     nopadtop: true
     hasCustomCols: true
     buttons:
-    - type: button
-      btnStyle: primary
+    - btnStyle: primary
       label: Esplora cosa accade nella community
       url: "community/"
       addonStyle: me-3 d-block
-    # - type: button
-    #   btnStyle: outline-primary
+    # - btnStyle: outline-primary
     #   label: Vai al Medium di Designers Italia
     #   icon:
     #     icon: sprites.svg#it-external-link

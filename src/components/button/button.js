@@ -5,7 +5,7 @@ import "./button.scss";
 
 function Button({
   url,
-  type,
+  submit = false,
   size,
   id,
   label, // if data is yaml
@@ -78,10 +78,9 @@ function Button({
     );
   }
   return (
-    // eslint-disable-next-line react/button-has-type
     <button
       id={id}
-      type={type || "button"}
+      type={submit ? "submit" : "button"}
       aria-label={ariaLabel}
       className={btnStyles}
       aria-controls={ariaControls}
