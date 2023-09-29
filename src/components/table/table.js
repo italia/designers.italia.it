@@ -9,10 +9,12 @@ function Table({
   head,
   rows,
   addonClasses,
-  responsive
+  responsive,
+  headingLevel
 }) {
 
-  const tableClasses = "table my-4"
+	const HLevel = headingLevel ? `h${headingLevel}` : "h3";
+  const tableClasses = "table y-4"
     + `${addonClasses ? ` ${addonClasses}` : ''}`
 
   let headItems
@@ -40,10 +42,15 @@ function Table({
               CellType = `td`
               CellScope = null
             }
-
+            const tagsItems = tdItem.tags?.map((item,index) => (
+              <div>
+                <Tag {...item} key={`tag-${index}`}/>
+              </div>
+              ));
             return(
               <CellType scope={CellScope} key={`td-${index}`} className={tdItem.addonClasses}>
                 { tdItem.text && <ReactMarkdown>{tdItem.text}</ReactMarkdown>}
+                { tdItem.tags && <div>{tagsItems}</div>}
                 { tdItem.tag && <Tag {...tdItem.tag}/>}
                 { tdItem.simpleCta && <SimpleCta {...tdItem.simpleCta} />}
               </CellType>
@@ -55,7 +62,8 @@ function Table({
 
   return (
     <div className={responsive}>
-      {title && <h3 className="mt-4">{title}</h3>}
+      {title && <HLevel>{title}</HLevel>}
+      
       <table className={tableClasses}>
         { headItems && <thead>
           <tr>

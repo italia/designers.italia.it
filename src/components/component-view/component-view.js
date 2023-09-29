@@ -151,7 +151,7 @@ function ComponentView({
   const BSIExampleUrl = `/examples/${source}/${slugify(variantName).toLowerCase()}.html`
 
   return (
-    <div id={uuid} className="pb-5 pb-lg-6">
+    <div id={uuid} className="pb-4 mb-5">
       {contentTrimmed &&
         <div className={componentStyles}>
           <span className="visually-hidden">Inizio componente:</span>
