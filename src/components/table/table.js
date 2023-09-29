@@ -30,7 +30,6 @@ function Table({
           </th>
       ))
   }
-  
 
   if (rows) {
     rowItems = rows.map((rowItem,index) => (
