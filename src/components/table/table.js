@@ -19,7 +19,6 @@ function Table({
 
   let headItems
   let rowItems
-  let tagsItems
 	let CellType
   let CellScope
 
