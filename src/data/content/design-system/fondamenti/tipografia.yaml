@@ -215,9 +215,11 @@ components:
                   line-height: 48/56px   
                   letter-spacing: -1   
                   font-weight: Bold
-              - text: |
-                  heading-1  
-                  heading-1-lg
+              - tags:
+                - label: heading-1
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: heading-1-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
             - cols:
               - text: |
                   ## Intestazione 2
@@ -227,9 +229,11 @@ components:
                   line height: 40/48px  
                   letter spacing: -1  
                   weight: Bold
-              - text: |
-                  heading-2  
-                  heading-2-lg
+              - tags:
+                - label: heading-2
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: heading-2-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
             - cols:
               - text: |
                   ### Intestazione 3
@@ -238,9 +242,11 @@ components:
                   font-size: 28/32px  
                   line height: 32/40px   
                   font-weight: Bold  
-              - text: |
-                  heading-3  
-                  heading-3-lg
+              - tags:
+                - label: heading-3
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: heading-3-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
             - cols:
               - text: |
                   #### Intestazione 4
@@ -249,8 +255,11 @@ components:
                   font-size: 24/32px  
                   line-height: 32/40px   
                   font-weight: SemiBold  
-              - text: |
-                  heading-4
+              - tags:
+                - label: heading-4
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: heading-4-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
             - cols:
               - text: |
                   ##### Intestazione 5
@@ -259,9 +268,11 @@ components:
                   font-size: 20/24px  
                   line-height: 24/32px  
                   font-weight: SemiBold  
-              - text: |
-                  heading-5  
-                  heading-5-lg
+              - tags:
+                - label: heading-5
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: heading-5-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
             - cols:
               - text: |
                   ###### Intestazione 6
@@ -270,9 +281,11 @@ components:
                   font-size: 16/18px  
                   line-height: 24px  
                   font-weight: SemiBold  
-              - text: |
-                  heading-6  
-                  heading-6-lg
+              - tags:
+                - label: heading-6
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: heading-6-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
 
         - name: TextImageCta
           title: Corpo del testo
@@ -286,7 +299,7 @@ components:
           responsive: table-responsive-md
           addonClasses: fixed mb-5
           head:
-            - text: Stile
+            - text: Stile (anteprima non disponibile)
             - text: Specifiche
             - text: Nome token
           rows:
@@ -294,32 +307,41 @@ components:
               - text: |
                   Lead text
               - text: |
-                  type: Titillium Web
-                  size: 20/24px
-                  line height: 32px
-                  weight: Regular
-              - text: |
-                  lead
+                  type: Titillium Web  
+                  size: 20/24px  
+                  line height: 32px  
+                  weight: Regular  
+              - tags:
+                - label: lead
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: lead-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
             - cols:
               - text: |
                   Body text sans
               - text: |
-                  type: Titillium Web
-                  size: 12/18px
-                  line height: 24px
-                  weight: Regular
-              - text: |
-                  body-sans
+                  font-family: Titillium Web  
+                  font-size: 12/18px  
+                  line-height: 24px  
+                  font-weight: Regular  
+              - tags:
+                - label: body-sans
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: body-sans-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
             - cols:
               - text: |
                   Body text serif
               - text: |
-                  type: Lora
-                  size: 16/18px
-                  line height: 24px
-                  weight: Regular
-              - text: |
-                  body-serif
+                  font-family: Lora  
+                  font-size: 16/18px  
+                  line-height: 24px  
+                  font-weight: Regular  
+              - tags:
+                - label: body-serif
+                  addonClasses: neutral-2-bg text-black text-lowercase mb-1
+                - label: body-serif-lg
+                  addonClasses: neutral-2-bg text-black text-lowercase
 
         - name: TextImageCta
           title: Etichette e didascalie
@@ -333,7 +355,7 @@ components:
           responsive: table-responsive-md
           addonClasses: fixed mb-5
           head:
-            - text: Stile
+            - text: Stile (anteprima non disponibile)
             - text: Specifiche
             - text: Nome token
           rows:
@@ -341,22 +363,24 @@ components:
               - text: |
                   Caption
               - text: |
-                  type: Titillium Web
-                  size: 14px
-                  line height: 16px
-                  weight: Regular
-              - text: |
-                  caption
+                  font-family: Titillium Web  
+                  font-size: 14px  
+                  line-height: 16px  
+                  font-weight: Regular
+              - tags:
+                - label: caption
+                  addonClasses: neutral-2-bg text-black text-lowercase
             - cols:
               - text: |
                   Label
               - text: |
-                  type: Titillium Web
-                  size: 16/18px
-                  line height: 24px
-                  weight: SemiBold
-              - text: |
-                  label         
+                  font-family: Titillium Web  
+                  font-size: 16/18px  
+                  line-height: 24px  
+                  font-weight: SemiBold  
+              - tags:
+                - label: label
+                  addonClasses: neutral-2-bg text-black text-lowercase         
 
         - name: TextImageCta
           title: Consigli d'uso
