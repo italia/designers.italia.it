@@ -1,22 +1,18 @@
-import * as React from "react"
+import * as React from "react";
 
-import "../../scss/styles.scss"
-import "../../js/globals"
+import "../../scss/styles.scss";
+import "../../js/globals";
 
-import { useStaticQuery, graphql } from "gatsby"
-import classNames from "classnames"
-import ListItem from "../list-item/list-item"
-import Tag from "../tag/tag"
+import { useStaticQuery, graphql } from "gatsby";
+import classNames from "classnames";
+import ListItem from "../list-item/list-item";
+import Tag from "../tag/tag";
 
-function ListArchiveNews({
-  background,
-  noSpace,
-}) {
-
+function ListArchiveNews({ background, noSpace }) {
   const data = useStaticQuery(graphql`
     query {
       allContent(
-        filter: {metadata: {archive: {in: "notizie"}}}
+        filter: { metadata: { archive: { in: "notizie" } } }
         sort: { seo: { pathname: DESC } }
       ) {
         totalCount
@@ -52,25 +48,23 @@ function ListArchiveNews({
         }
       }
     }
-  `)
+  `);
 
-  const { edges } = data.allContent
-  const tagHeader = 'Esplora l’archivio'
+  const { edges } = data.allContent;
+  const tagHeader = "Esplora l’archivio";
 
   const iconOpt = {
-    icon: 'sprites.svg#it-file',
-    size: 'sm',
+    icon: "sprites.svg#it-file",
+    size: "sm",
     color: "primary",
-    addonClasses: 'mt-1 flex-shrink-0 me-1 me-md-3'
-  }
+    addonClasses: "mt-1 flex-shrink-0 me-1 me-md-3",
+  };
 
-  const styles = classNames(
-    'section-editorial',
-  {
+  const styles = classNames("section-editorial", {
     [`bg-${background}`]: background,
-    'py-0': noSpace,
-    'text-white': (background === "dark")
-  })
+    "py-0": noSpace,
+    "text-white": background === "dark",
+  });
 
   return (
     <section className={styles} aria-describedby="archive-list-title">
@@ -78,43 +72,68 @@ function ListArchiveNews({
         <div className="row">
           <div className="col-12 g-0">
             <div className="px-3 px-lg-0 px-lg-5">
-              <h2 className="border-bottom pb-4" id="archive-list-title">{tagHeader}</h2>
+              <h2 className="border-bottom pb-4" id="archive-list-title">
+                {tagHeader}
+              </h2>
               <div className="it-list-wrapper">
                 <ul className="it-list mt-4 mt-md-3">
                   {edges.map(({ node }) => {
-                    const { id } = node
-                    const { pathname } = node.seo
-                    const { title } = node.components?.hero
-                    const { description } = node.seo
+                    const { id } = node;
+                    const { pathname } = node.seo;
+                    const title = node.components?.hero?.title;
+                    const { description } = node.seo;
                     return (
-                      <ListItem url={pathname} key={id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
+                      <ListItem
+                        url={pathname}
+                        key={id}
+                        iconLeft
+                        icon={iconOpt}
+                        addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4"
+                      >
                         <div className="d-md-flex">
                           <h3 className="h6 mb-0">
                             <strong>{title}</strong>
                           </h3>
                           <div>
-                            {node.components?.hero?.tag?.label &&
+                            {node.components?.hero?.tag?.label && (
                               <div className="mb-2 mt-1 mb-md-0 mt-md-0">
-                                <Tag label={node.components?.hero?.tag?.label} addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal" />
+                                <Tag
+                                  label={node.components?.hero?.tag?.label}
+                                  addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"
+                                />
                               </div>
-                            }
+                            )}
                             {node.metadata?.template?.name &&
-                              (node.metadata?.template?.name === 'level1' || node.metadata?.template?.name === 'community') ?
+                            (node.metadata?.template?.name === "level1" ||
+                              node.metadata?.template?.name === "community") ? (
                               <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block ">
-                                <Tag label="Panoramica" addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal" />
+                                <Tag
+                                  label="Panoramica"
+                                  addonClasses="ms-md-4 text-uppercase bg-primary px-2 py-0 fw-normal"
+                                />
                               </div>
-                              : null}
+                            ) : null}
                           </div>
                         </div>
-                        {(node.components?.hero?.kangaroo?.personalInfo?.items || description) &&
+                        {(node.components?.hero?.kangaroo?.personalInfo
+                          ?.items ||
+                          description) && (
                           <p className="text-secondary fw-normal d-block mb-3">
-                            {node.components?.hero?.kangaroo?.personalInfo?.items &&
-                              <small>{node.components?.hero?.kangaroo?.personalInfo?.items[1].label}</small>} {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
+                            {node.components?.hero?.kangaroo?.personalInfo
+                              ?.items && (
+                              <small>
+                                {
+                                  node.components?.hero?.kangaroo?.personalInfo
+                                    ?.items[1].label
+                                }
+                              </small>
+                            )}{" "}
+                            {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
                             <small> — {description}</small>
                           </p>
-                        }
+                        )}
                       </ListItem>
-                    )
+                    );
                   })}
                 </ul>
               </div>
@@ -122,8 +141,8 @@ function ListArchiveNews({
           </div>
         </div>
       </div>
-    </section >
-  )
+    </section>
+  );
 }
 
-export default ListArchiveNews
+export default ListArchiveNews;

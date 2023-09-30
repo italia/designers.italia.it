@@ -37,25 +37,6 @@ seo:
   canonical: null
   pathname: /design-system/ #M
 
-lastUpdate:
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
-
 # ————————————————————————————————————————————
 # CONTENT
 # ————————————————————————————————————————————
@@ -107,6 +88,8 @@ components:
           listItems: #AUTO
             - url: "come-iniziare/" #M
               label: "Come iniziare" #C
+            - url: "come-contribuire/" #M
+              label: "Come contribuire" #C
             - url: "fondamenti/" #M
               label: "Fondamenti" #C
             - url: "componenti/" #M
@@ -122,8 +105,8 @@ components:
     title: Istruzioni e mattoncini per la realizzazione di siti e servizi della PA #C
     background: null
     text: | #C
-      Ti diamo il benvenuto nel primo design system italiano dedicato al mondo delle pubbliche amministrazioni e dei loro fornitori: questo è il punto di partenza per la progettazione di siti e servizi digitali pubblici di qualità, accessibili, inclusivi e fondati sulle reali necessità delle persone. 
-      Scopri l'insieme delle indicazioni, delle regole e delle risorse alla base delle interfacce digitali dei servizi pubblici italiani. 
+      Ti diamo il benvenuto nel primo design system italiano dedicato al mondo delle pubbliche amministrazioni e dei loro fornitori: questo è il punto di partenza per la progettazione di siti e servizi digitali pubblici di qualità, accessibili, inclusivi e fondati sulle reali necessità delle persone.
+      Scopri l'insieme delle indicazioni, delle regole e delle risorse alla base delle interfacce digitali dei servizi pubblici italiani.
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     moreText: | #C
@@ -168,6 +151,10 @@ components:
         - label: Per sviluppatori #C
           btnStyle: outline-secondary
           url: "come-iniziare/per-sviluppatori/" #M
+          addonStyle: mb-3 mb-sm-0
+        - label: Per responsabili progetto #C
+          btnStyle: outline-secondary
+          url: "come-iniziare/per-responsabili-progetto/" #M
           addonStyle: mb-3 mb-sm-0
 
     # —
@@ -218,6 +205,35 @@ components:
           url: "componenti/"
           addonStyle: mb-3 mb-sm-0
 
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title: Come contribuire #C
+      id: come-contribuire
+      # img: /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel: 3
+      background: null # null | light | medium | dark
+      big: false
+      specular: true
+      subtitle: Scopri i passi da compiere per contribuire al design system del Paese #C
+      buttons: #C #I
+        - label: Scopri come contribuire #C
+          btnStyle: primary
+          url: "come-contribuire/" #M
+          addonStyle: mb-3 mb-sm-0
+        - label: Per la documentazione #C
+          btnStyle: outline-secondary
+          url: "come-contribuire/per-la-documentazione/" #M
+          addonStyle: mb-3 mb-sm-0
+        - label: Per il design #C
+          btnStyle: outline-secondary
+          url: "come-contribuire/per-il-design/" #M
+          addonStyle: mb-3 mb-sm-0
+        - label: Per lo sviluppo #C
+          btnStyle: outline-secondary
+          url: "come-contribuire/per-lo-sviluppo/" #M
+          addonStyle: mb-3 mb-sm-0
 
     # —
     # HIGHLIGHT BIG IMG
@@ -230,14 +246,15 @@ components:
       background: medium # null | light | medium | dark
       big: true
       specular: true
-      subtitle: | #C
-       Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficacemente testati in situazioni simili
-      buttons: #C #M
-        - label: Scopri i design pattern
-          btnStyle: primary
-          url: "design-pattern/"
-          addonStyle: mb-3 mb-sm-0
-          disabled: true
+      subtitle: Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficacemente testati in situazioni simili
+      text: |
+        _In stesura_
+      # buttons: #C #M
+      #   - label: Scopri i design pattern
+      #     btnStyle: primary
+      #     url: "design-pattern/"
+      #     addonStyle: mb-3 mb-sm-0
+      #     disabled: true
 
 
   # # —
@@ -268,7 +285,7 @@ components:
   # —
   # HIGHLIGHT LOOP
   # —
-  highlightsLoop2 :
+  # highlightsLoop2 :
 
 
     # —
@@ -283,16 +300,16 @@ components:
       background: dark
       specular: true
       subtitle: I progetti più significativi realizzati con il design system del Paese #C
-      # text: | #C
-      #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-      buttons: #C #M
-        - label: Scopri i casi studio
-          btnStyle: primary
-          url: "showcase/"
-          addonStyle: mb-3 mb-sm-0
-          disabled: true
-        - label: Proponi un caso studio
-          btnStyle: outline-primary
-          url: "#"
-          addonStyle: mb-3 mb-sm-0
-          disabled: true
+      text: | #C
+        _In stesura_
+      # buttons: #C #M
+      #   - label: Scopri i casi studio
+      #     btnStyle: primary
+      #     url: "showcase/"
+      #     addonStyle: mb-3 mb-sm-0
+      #     disabled: true
+      #   - label: Proponi un caso studio
+      #     btnStyle: outline-primary
+      #     url: "#"
+      #     addonStyle: mb-3 mb-sm-0
+      #     disabled: true

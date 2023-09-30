@@ -1,5 +1,5 @@
 const findValuesHelper = (obj, key, list) => {
-  if (!obj) return list
+  if (!obj) return list;
 
   let originalList = list;
 
@@ -13,18 +13,18 @@ const findValuesHelper = (obj, key, list) => {
     return originalList;
   }
 
-  if (obj[key]) list.push(obj[key])
+  if (obj[key]) list.push(obj[key]);
 
-  if ((typeof obj === "object") && (obj !== null)) {
-    const children = Object.keys(obj)
+  if (typeof obj === "object" && obj !== null) {
+    const children = Object.keys(obj);
     if (children.length > 0) {
       for (const element of children) {
-        originalList = list.concat(findValuesHelper(obj[element], key, []))
+        originalList = list.concat(findValuesHelper(obj[element], key, []));
       }
     }
   }
 
   return originalList;
-}
+};
 
-exports.findValues = (obj, key) => findValuesHelper(obj, key, [])
+exports.findValues = (obj, key) => findValuesHelper(obj, key, []);

@@ -1,0 +1,243 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/organizzare-gli-spazi/bordi.json
+  template:
+    name: design-system-index
+
+seo:
+  name: Template di test
+  description: "Lavori in corso, usiamo come esempio la scheda ipotetica Bordi e raggi"
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/fondamenti/technical-template/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: 'Ultimo aggiornamento:'
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+components:
+  hero:
+    background: null
+    title: Template di test
+    column: true
+    subtitle: "Lavori in corso, usiamo come esempio la scheda ipotetica Bordi e raggi"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Accessibilità,Inclusione,Progettazione interfaccia,Sviluppo interfaccia]
+
+  sectionsEditorial :
+
+    - full: true
+      noSpace: false
+      title: Introduzione
+      text: _In stesura_
+      background: null
+      components:
+        # - name: TextImageCta
+        #   text: |
+        #     _In stesura_
+
+        - name: TextImageCta
+          title: Esempi
+          headingLevel: 2
+
+        - name: TextImageCta
+          title: Aggiuntivo
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Aggiuntivo
+          source: bsi/organizzare-gli-spazi/bordi
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/bordi/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Sottrattivo
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: bordi-2
+          source: bsi/organizzare-gli-spazi/bordi
+          idPrefix: "viewer02-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/bordi/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Varianti di colore
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Varianti di colore
+          source: bsi/organizzare-gli-spazi/bordi
+          idPrefix: "viewer03-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/bordi/
+          accordionOpen: false
+          accordionShow: true
+  
+        - name: TextImageCta
+          title: Varianti di raggio
+          text: |
+            _In stesura_
+        - name: ComponentView
+          variantName: Arrotondati
+          source: bsi/organizzare-gli-spazi/bordi
+          idPrefix: "viewer04-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/bordi/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Varianti di raggio
+          text: |
+            _In stesura_ 
+        - name: Table
+          title: Esempio tabella
+          headingLevel: 4
+          responsive: table-responsive-md pb-4 mb-5
+          head:
+            - text: Prima colonna
+            - text: Seconda colonna
+            - text: Terza colonna
+            - text: Quarta colonna
+          rows:
+            - cols:
+              - text: |
+                  # heading 1
+                scope: row
+              - text: |
+                  Primo rigo con **bold**,  
+                  Secondo rigo con *italico*,  
+                  Terzo rigo. 
+              - text: |
+                  Primo rigo con **bold**,  
+                  Secondo rigo con *italico*,  
+                  Terzo rigo. 
+              - tags:
+                - label: nome-token 1
+                  addonClasses: neutral-2-bg text-black text-lowercase me-2 mb-2
+            - cols:
+              - text: |
+                  ## heading 2
+                scope: row
+              - text: |
+                  Primo rigo con **bold**,  
+                  Secondo rigo con *italico*,  
+                  Terzo rigo. 
+              - text: |
+                  Primo rigo con **bold**,  
+                  Secondo rigo con *italico*,  
+                  Terzo rigo. 
+              - tags:
+                - label: nome-token 1
+                  addonClasses: neutral-2-bg text-black text-lowercase me-2 mb-2
+                - label: nome-token 2
+                  addonClasses: neutral-2-bg text-black text-lowercase me-2 mb-2
+                - label: nome-token 3
+                  addonClasses: neutral-2-bg text-black text-lowercase me-2 mb-2
+            - cols:
+              - text: |
+                  ### heading 3
+                scope: row
+              - text: |
+                  Primo rigo con **bold**,  
+                  Secondo rigo con *italico*,  
+                  Terzo rigo. 
+              - text: |
+                  Primo rigo con **bold**,  
+                  Secondo rigo con *italico*,  
+                  Terzo rigo. 
+              - tags:
+                - label: nome-token 1
+                  addonClasses: neutral-2-bg text-black text-lowercase me-2 mb-2
+                - label: nome-token 2
+                  addonClasses: neutral-2-bg text-black text-lowercase me-2 mb-2
+                - label: nome-token 3
+                  addonClasses: neutral-2-bg text-black text-lowercase me-2 mb-2
+                - label: nome-token 3
+                  addonClasses: neutral-2-bg text-black text-lowercase me-2 mb-2
+

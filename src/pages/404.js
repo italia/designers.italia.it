@@ -1,15 +1,15 @@
-import * as React from "react"
+import * as React from "react";
 
-import Button from "../components/button/button"
-import ImageResponsive from "../components/image-responsive/image-responsive"
+import Button from "../components/button/button";
+import ImageResponsive from "../components/image-responsive/image-responsive";
 
-import Template from "../templates/base"
+import Template from "../templates/base";
 
-import "../scss/404.scss"
+import "../scss/404.scss";
 
 const animate = (ev) => {
-  ev.target.classList.add("animate")
-}
+  ev.target.classList.add("animate");
+};
 
 function NotFoundPage() {
   return (
@@ -29,16 +29,16 @@ function NotFoundPage() {
             <div className="col-lg-7 col-12 hero">
               <h1>Un imprevisto può capitare</h1>
               <div className="lead mb-4">
-                <p>
-                  Non abbiamo trovato la pagina che cercavi.
-                </p>
+                <p>Non abbiamo trovato la pagina che cercavi.</p>
 
                 <p className="pb-3">
-                  Verifica che l’indirizzo sia corretto oppure torna all’inizio per
-                  esplorare altri contenuti.
+                  Verifica che l’indirizzo sia corretto oppure torna all’inizio
+                  per esplorare altri contenuti.
                 </p>
                 <div className="buttons-wrapper mt-5 d-grid d-md-block">
-                  <Button btnStyle="btn btn-primary mb-0" url="/"><strong>Vai all’inizio</strong></Button>
+                  <Button btnStyle="btn btn-primary mb-0" url="/">
+                    <strong>Vai all’inizio</strong>
+                  </Button>
                 </div>
               </div>
             </div>
@@ -46,11 +46,11 @@ function NotFoundPage() {
         </div>
       </section>
     </Template>
-  )
+  );
 }
 
-export default NotFoundPage
+export default NotFoundPage;
 
 export function Head() {
-  return <title>Un imprevisto può capitare - Designers Italia</title>
+  return <title>Un imprevisto può capitare - Designers Italia</title>;
 }

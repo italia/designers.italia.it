@@ -1,15 +1,7 @@
-import React from "react"
+import React from "react";
 
-function ContentSelectItem({
-  name,
-  children
-}) {
-
-  return (
-    <div className="content-select-item">
-      { children }
-    </div>
-  )
+function ContentSelectItem({ children }) {
+  return <div className="content-select-item">{children}</div>;
 }
 
-export default ContentSelectItem
+export default ContentSelectItem;

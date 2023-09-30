@@ -1,13 +1,20 @@
-const { createRemoteFileNode, } = require("gatsby-source-filesystem")
+/* eslint-disable no-console */ // console.log is ok here for progress reporting
 
-const jsYaml = require(`js-yaml`)
+const { createRemoteFileNode } = require("gatsby-source-filesystem");
 
-const _ = require("lodash")
-const path = require("path")
-const { fetchDataFiles } = require('./server/fetchDataFiles')
-const { findValues } = require('./server/utils/findValues')
+const jsYaml = require(`js-yaml`);
 
-const isRemoteAsset = (assetPath) => assetPath.startsWith('http')
+const _ = require("lodash");
+const path = require("path");
+const express = require("express");
+const { fetchDataFiles } = require("./server/fetchDataFiles");
+const { findValues } = require("./server/utils/findValues");
+
+const isRemoteAsset = (assetPath) => assetPath.startsWith("http");
+
+exports.onCreateDevServer = ({ app }) => {
+  app.use(express.static("public"));
+};
 
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
   if (stage === "build-html" || stage === "develop-html") {
@@ -20,47 +27,44 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
           },
         ],
       },
-    })
+    });
   }
-}
+};
 
 exports.createSchemaCustomization = ({ actions }) => {
-  const { createTypes } = actions
+  const { createTypes } = actions;
 
   createTypes(`
     type RemoteAsset implements Node {
       source: String
       file: File @link(from: "fields.localFile")
     }
-  `)
-}
+  `);
+};
 
-exports.sourceNodes = async ({
-  actions: { createNode },
-}) => {
-
+exports.sourceNodes = async ({ actions: { createNode } }) => {
   // assets import in graphQL for gatsby-plugin-image
-  const dataFiles = fetchDataFiles()
-  const assets = [...new Set(findValues(dataFiles, 'img'))] // new Set removes duplicates
+  const dataFiles = fetchDataFiles();
+  const assets = [...new Set(findValues(dataFiles, "img"))]; // new Set removes duplicates
 
   assets.forEach((asset, idx) => {
     if (isRemoteAsset(asset)) {
       const data = {
-        source: asset
-      }
+        source: asset,
+      };
       createNode({
         ...data,
-        id: `asset-${  idx}`,
+        id: `asset-${idx}`,
         parent: null,
         children: [],
         internal: {
-          type: 'RemoteAsset',
+          type: "RemoteAsset",
           // contentDigest: createContentDigest(data),
         },
-      })
+      });
     }
-  })
-}
+  });
+};
 
 exports.onCreateNode = async ({
   node,
@@ -70,27 +74,26 @@ exports.onCreateNode = async ({
   loadNodeContent,
   getCache,
 }) => {
-  const CONTENT_NODE_TYPE = "Content"
+  const CONTENT_NODE_TYPE = "Content";
 
   if (node.internal.type === "RemoteAsset") {
     const fileNode = await createRemoteFileNode({
       url: node.source,
       parentNodeId: node.id,
       createNode,
-      createNodeId,// `${node.unique_identifier_prop}-assets-${index}`,
+      createNodeId, // `${node.unique_identifier_prop}-assets-${index}`,
       getCache,
-    })
+    });
     if (fileNode) {
-      createNodeField({ node, name: "localFile", value: fileNode.id })
+      createNodeField({ node, name: "localFile", value: fileNode.id });
     }
   } else if (
     node.internal.type === "File" &&
     node.sourceInstanceName === "content" &&
-    (node.extension === 'yaml' ||
-      node.extension === 'yml')
+    (node.extension === "yaml" || node.extension === "yml")
   ) {
-    const content = await loadNodeContent(node)
-    const parsedContent = jsYaml.load(content)
+    const content = await loadNodeContent(node);
+    const parsedContent = jsYaml.load(content);
 
     const contentNode = {
       ...parsedContent,
@@ -101,68 +104,72 @@ exports.onCreateNode = async ({
         type: CONTENT_NODE_TYPE,
         contentDigest: createContentDigest(node),
       },
-      relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ''),
+      relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ""),
     };
 
-    createNode(contentNode)
-    createParentChildLink({ parent: node, child: contentNode })
+    createNode(contentNode);
+    createParentChildLink({ parent: node, child: contentNode });
   }
-}
-
+};
 
 exports.createPages = async ({ graphql, actions }) => {
-
   // tags
-  const { createPage } = actions
-  const tagTemplate = path.resolve("src/templates/tag.js")
+  const { createPage } = actions;
+  const tagTemplate = path.resolve("src/templates/tag.js");
   const tags = await graphql(`
     {
       tagsGroup: allContent {
-        group(field: components___hero___kangaroo___tags) {
+        group(field: { components: { hero: { kangaroo: { tags: SELECT } } } }) {
           fieldValue
         }
       }
     }
-  `
-  )
-  tags.data.tagsGroup.group.forEach(tag => {
-    console.log(`Creating tag page: ${tag.fieldValue}`)
+  `);
+  tags.data.tagsGroup.group.forEach((tag) => {
+    console.log(`Creating tag page: ${tag.fieldValue}`);
     createPage({
       path: `/argomenti/${_.kebabCase(tag.fieldValue)}/`,
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
-      }
-    })
-  })
+      },
+    });
+  });
   // tagsDesignSystem
-  const tagDesignSystemTemplate = path.resolve("src/templates/design-system-index-components-tags.js")
+  const tagDesignSystemTemplate = path.resolve(
+    "src/templates/design-system-index-components-tags.js",
+  );
   const tagsDesignSystem = await graphql(`
     {
       tagsDesignSystemGroup: allContent {
-        group(field: components___hero___kangaroo___tagsDesignSystem) {
+        group(
+          field: {
+            components: { hero: { kangaroo: { tagsDesignSystem: SELECT } } }
+          }
+        ) {
           fieldValue
         }
       }
     }
-  `
-  )
-  tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach(tag => {
-    console.log(`Creating tag page: ${tag.fieldValue}`)
+  `);
+  tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach((tag) => {
+    console.log(`Creating tag page: ${tag.fieldValue}`);
     createPage({
-      path: `/design-system/componenti/utili-per/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/design-system/componenti/utili-per/${_.kebabCase(
+        tag.fieldValue,
+      )}/`,
       component: tagDesignSystemTemplate,
       context: {
         tag: tag.fieldValue,
-      }
-    })
-  })
+      },
+    });
+  });
 
   // redirs
-  const { createRedirect } = actions
+  const { createRedirect } = actions;
   const redirs = await graphql(`
     {
-      allContent (filter: { metadata: { redirect_from: { ne: null } } }) {
+      allContent(filter: { metadata: { redirect_from: { ne: null } } }) {
         edges {
           node {
             seo {
@@ -175,14 +182,13 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     }
-  `
-  )
+  `);
   redirs.data.allContent.edges.forEach((edge) => {
-    const {node} = edge
+    const { node } = edge;
     node.metadata.redirect_from.forEach((fromPath) => {
-      const toPath = edge.node.seo.pathname
-      console.log(`Creating redirect: ${fromPath} -> ${toPath}...`)
-      createRedirect({ fromPath, toPath, })
-    })
-  })
-}
+      const toPath = edge.node.seo.pathname;
+      console.log(`Creating redirect: ${fromPath} -> ${toPath}...`);
+      createRedirect({ fromPath, toPath });
+    });
+  });
+};
