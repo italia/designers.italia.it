@@ -261,7 +261,7 @@ function ComponentView({
                     />
                   )}
                 </div>
-                {content && (
+                {contentTrimmed && (
                   <SyntaxHighlighter
                     language="markup"
                     style={theme}
@@ -271,7 +271,7 @@ function ComponentView({
                       style: { wordBreak: "break-all", whiteSpace: "pre-wrap" },
                     }}
                   >
-                    {content}
+                    {contentTrimmed}
                   </SyntaxHighlighter>
                 )}
               </div>
