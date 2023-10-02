@@ -25,7 +25,7 @@ function Kangaroo({
   const styles = classNames("kangaroo px-3", { "px-lg-5": !noPadding });
   const colorStyle = classNames({ [`text-${color}`]: color });
 
-  const tagsLabelStyle = classNames("text-uppercase small", colorStyle);
+  const tagsLabelStyle = classNames("text-uppercase tagSmallSize", colorStyle);
 
   return (
     <section className={styles} aria-labelledby={id}>

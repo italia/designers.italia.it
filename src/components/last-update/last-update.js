@@ -23,8 +23,7 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
         <div className="row">
           <div className={columnStyle}>
             <div className={paddingStyle}>
-              <p>
-                <small>
+              <div className="mb-4">
                   <span>Ultimo aggiornamento: </span>
                   <time dateTime={lastModified} title={lastModified}>
                     {new Date(lastModified).toLocaleDateString("it-IT", {
@@ -52,10 +51,8 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
                       />
                     </strong>
                   </Link>
-                </small>
-              </p>
-              <p className="mb-0">
-                <small>
+              </div>
+              <div className="mb-0">
                   <Link
                     to={editGithubUrl}
                     target="_blank"
@@ -74,8 +71,7 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
                       color="primary"
                     />
                   </Link>
-                </small>
-              </p>
+              </div>
             </div>
           </div>
         </div>

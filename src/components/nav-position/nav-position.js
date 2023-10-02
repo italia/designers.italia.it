@@ -1,3 +1,4 @@
+import "./nav-position.scss";
 import React from "react";
 import ReactMarkdown from "react-markdown";
 import Icon from "../icon/icon";
@@ -23,7 +24,7 @@ function NavPosition({ items, footerVersion }) {
       item.icon.hidden = true;
       return (
         <div key={`linkItems-${index}`}>
-          <div className="d-inline-flex align-items-center me-lg-5 my-2 small">
+          <div className="d-inline-flex align-items-center me-lg-5 my-2 tagSmallSize">
             <Icon {...item.icon} />
             <span className="text-uppercase text-secondary me-2">
               <strong>{item.title}</strong>
