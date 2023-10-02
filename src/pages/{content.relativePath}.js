@@ -1,49 +1,57 @@
-import * as React from "react"
-import { graphql } from "gatsby"
+import * as React from "react";
+import { graphql } from "gatsby";
 
-import TemplateBase from "../templates/base"
-import TemplateArchiveAllTags from "../templates/archive-all-tags"
-import TemplateArchiveDSTags from "../templates/archive-ds-tags"
-import TemplateArchiveNews from "../templates/archive-news"
-import TemplateArchiveEvents from "../templates/archive-events"
-import TemplateDSComponent from "../templates/design-system-component"
-import TemplateDSIndex from "../templates/design-system-index"
-import TemplateHome from "../templates/home"
-import TemplateSearchResults from "../templates/search-results"
-import TemplateLV1Community from "../templates/level-1-community"
-import TemplateLV1 from "../templates/level-1"
-import TemplateLV2 from "../templates/level-2"
-import TemplateLV3 from "../templates/level-3"
-import TemplateLV4 from "../templates/level-4"
+import TemplateBase from "../templates/base";
+import TemplateArchiveAllTags from "../templates/archive-all-tags";
+import TemplateArchiveDSTags from "../templates/archive-ds-tags";
+import TemplateArchiveNews from "../templates/archive-news";
+import TemplateArchiveEvents from "../templates/archive-events";
+import TemplateDSComponent from "../templates/design-system-component";
+import TemplateDSIndex from "../templates/design-system-index";
+import TemplateHome from "../templates/home";
+import TemplateSearchResults from "../templates/search-results";
+import TemplateLV1Community from "../templates/level-1-community";
+import TemplateLV1 from "../templates/level-1";
+import TemplateLV2 from "../templates/level-2";
+import TemplateLV3 from "../templates/level-3";
+import TemplateLV4 from "../templates/level-4";
 
-import { Seo } from "../components/seo/seo"
+import { Seo } from "../components/seo/seo";
 
 const TEMPLATES = {
-  'archive-news' : TemplateArchiveNews,
-  'archive-all-tags' : TemplateArchiveAllTags,
-  'archive-ds-tags' : TemplateArchiveDSTags,
-  'archive-events' : TemplateArchiveEvents,
-  'community' : TemplateLV1Community,
-  'level1' : TemplateLV1,
-  'level2' : TemplateLV2,
-  'level3' : TemplateLV3,
-  'level4' : TemplateLV4,
-  'base' : TemplateBase,
-  'home' : TemplateHome,
-  'search-results' : TemplateSearchResults,
-  'design-system-index' : TemplateDSIndex,
-  'design-system-component' : TemplateDSComponent
-}
+  "archive-news": TemplateArchiveNews,
+  "archive-all-tags": TemplateArchiveAllTags,
+  "archive-ds-tags": TemplateArchiveDSTags,
+  "archive-events": TemplateArchiveEvents,
+  community: TemplateLV1Community,
+  level1: TemplateLV1,
+  level2: TemplateLV2,
+  level3: TemplateLV3,
+  level4: TemplateLV4,
+  base: TemplateBase,
+  home: TemplateHome,
+  "search-results": TemplateSearchResults,
+  "design-system-index": TemplateDSIndex,
+  "design-system-component": TemplateDSComponent,
+};
 
 function Page({ pageContext, location, data: { content } }) {
-  const Template = content.metadata.template ? TEMPLATES[content.metadata.template.name] : TemplateBase
-  const lastModified = content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
+  const Template = content.metadata.template
+    ? TEMPLATES[content.metadata.template.name]
+    : TemplateBase;
+  const lastModified =
+    content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString();
 
-  return(
-    <Template Pagedata={content} pageContext={pageContext} location={location} lastModified={lastModified}>
+  return (
+    <Template
+      Pagedata={content}
+      pageContext={pageContext}
+      location={location}
+      lastModified={lastModified}
+    >
       {/* place extra components / HTML here */}
     </Template>
-  )
+  );
 }
 
 export const query = graphql`
@@ -245,7 +253,6 @@ export const query = graphql`
           col4
           background
           buttons {
-            type
             btnStyle
             label
             addonStyle
@@ -362,37 +369,17 @@ export const query = graphql`
         #  background
         #  specular
         #  subtitle
-          # buttons {
-          #  label
-          #  btnStyle
-          #  url
-          #  addonStyle
-          #  # disabled
-          #}
+        # buttons {
+        #  label
+        #  btnStyle
+        #  url
+        #  addonStyle
+        #  # disabled
+        #}
         #}
         searchMain {
-          disabled
-          isResultsPage
-          useSuggestionEngine
-          background
           title
-          text
-          formId
-          label
-          inputId
-          inputName
-          howMany
-          button {
-            label
-            # type
-            btnStyle
-            iconRight
-            icon {
-              icon
-              # color
-              addonClasses
-            }
-          }
+          maxResults
           suggest {
             title
             items {
@@ -459,7 +446,6 @@ export const query = graphql`
           }
           headingLevel
           buttons {
-            type
             btnStyle
             label
             url
@@ -506,7 +492,6 @@ export const query = graphql`
           nopadtop
           hasCustomCols
           buttons {
-            type
             btnStyle
             label
             url
@@ -582,6 +567,10 @@ export const query = graphql`
                 text
                 scope
                 tag {
+                  label
+                  addonClasses
+                }
+                tags {
                   label
                   addonClasses
                 }
@@ -867,16 +856,18 @@ export const query = graphql`
       }
     }
   }
-`
-export default Page
+`;
+export default Page;
 
 export function Head({ data: { content } }) {
-  return <Seo
-    title = {content.seo.name}
-    description = {content.seo.description}
-    image = {content.seo.image}
-    twitterImage = {content.seo.twitterImage}
-    pathname = {content.seo.pathname}
-    canonical = {content.seo.canonical}
-   />
+  return (
+    <Seo
+      title={content.seo.name}
+      description={content.seo.description}
+      image={content.seo.image}
+      twitterImage={content.seo.twitterImage}
+      pathname={content.seo.pathname}
+      canonical={content.seo.canonical}
+    />
+  );
 }

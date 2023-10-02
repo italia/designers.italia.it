@@ -1,11 +1,7 @@
-import React from "react"
+import React from "react";
 
-function NavWrapper({children}) {
-	return(
-		<div className="it-nav-wrapper">
-			{children}
-		</div>
-	)
+function NavWrapper({ children }) {
+  return <div className="it-nav-wrapper">{children}</div>;
 }
 
-export default NavWrapper
+export default NavWrapper;
