@@ -1,55 +1,63 @@
-import React from "react"
-import Link from "../link/link"
-import Icon from "../icon/icon"
-import ImageResponsive from "../image-responsive/image-responsive"
-import "./header-center.scss"
+import React from "react";
+import Link from "../link/link";
+import Icon from "../icon/icon";
+import ImageResponsive from "../image-responsive/image-responsive";
+import "./header-center.scss";
 
-
-function HeaderCenter({data}) {
-
-  // -search zone
+function HeaderCenter({ data }) {
+  // eslint-disable-next-line consistent-return
   function search(boolean) {
     if (boolean) {
-      return(
+      return (
         <div className="it-search-wrapper">
-          <Link className="search-link rounded-icon" aria-label={data.search.title} to={data.search.url}>
-            <Icon icon={data.search.icon}/>
+          <Link
+            className="search-link rounded-icon"
+            aria-label={data.search.title}
+            to={data.search.url}
+          >
+            <Icon icon={data.search.icon} />
           </Link>
         </div>
-      )
+      );
     }
   }
 
-
-  // -socials zone
+  // eslint-disable-next-line consistent-return
   function socials(boolean) {
     if (boolean) {
       return (
         <div className="it-socials d-none d-md-flex">
           <span>{data.socials.title}</span>
           <ul>
-            {data.socials.items.map((value,index)=>(
-                <li key={`social-item-${index}`}>
-                  <Link to={value.url} aria-label={value.title} target="_blank" rel="noreferrer">
-                    <Icon icon={value.icon}/>
-                  </Link>
-                </li>
-              ))}
+            {data.socials.items.map((value, index) => (
+              <li key={`social-item-${index}`}>
+                <Link
+                  to={value.url}
+                  aria-label={value.title}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Icon icon={value.icon} />
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
-      )
+      );
     }
   }
 
   return (
-    <div className="it-header-center-wrapper "> {/* it-small-header */}
+    <div className="it-header-center-wrapper ">
+      {" "}
+      {/* it-small-header */}
       <div className="container-xxl">
         <div className="row">
           <div className="col-12">
             <div className="it-header-center-content-wrapper">
               <div className="it-brand-wrapper">
                 <Link to="/">
-                  <ImageResponsive src={data.logo} alt="" imgClassName="icon"/>
+                  <ImageResponsive src={data.logo} alt="" imgClassName="icon" />
                   <div className="it-brand-text">
                     <div className="it-brand-title">{data.title}</div>
                   </div>
@@ -64,7 +72,7 @@ function HeaderCenter({data}) {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default HeaderCenter
+export default HeaderCenter;

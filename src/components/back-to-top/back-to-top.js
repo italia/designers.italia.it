@@ -1,24 +1,30 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from "react";
 
-import { BackToTop } from "bootstrap-italia"
-import Icon from "../icon/icon"
+import { BackToTop } from "bootstrap-italia";
+import Icon from "../icon/icon";
 
-function BackToTopEl({ positionTop, scrollLimit, duration, easing, ariaLabel }) {
+function BackToTopEl({
+  positionTop,
+  scrollLimit,
+  duration,
+  easing,
+  ariaLabel,
+}) {
   useEffect(() => {
     // eslint-disable-next-line no-new
-    new BackToTop(document.getElementById('backToTop'), {
+    new BackToTop(document.getElementById("backToTop"), {
       positionTop,
       scrollLimit,
       duration,
       easing,
-    })
+    });
   });
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
     <a href="#" aria-label={ariaLabel} className="back-to-top" id="backToTop">
-      <Icon icon="sprites.svg#it-arrow-up" color="light"/>
+      <Icon icon="sprites.svg#it-arrow-up" color="light" />
     </a>
-  )
+  );
 }
 
-export default BackToTopEl
+export default BackToTopEl;
