@@ -1,20 +1,12 @@
-import * as React from "react"
+import * as React from "react";
 
-function HeaderMenuItem({
-	isDropDown,
-	isMegaMenu,
-	children
-}) {
+function HeaderMenuItem({ isDropDown, isMegaMenu, children }) {
+  const styles =
+    "nav-item" +
+    `${isDropDown ? " dropdown" : ""}` +
+    `${isMegaMenu ? " megamenu" : ""}`;
 
-	const styles = "nav-item"
-		+ `${isDropDown ? ' dropdown' : ''}`
-		+ `${isMegaMenu ? ' megamenu' : ''}`
-	
-		return(
-		<li className={styles}>
-			{children}
-		</li>
-	)
+  return <li className={styles}>{children}</li>;
 }
 
-export default HeaderMenuItem
+export default HeaderMenuItem;
