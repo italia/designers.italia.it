@@ -33,7 +33,7 @@ function CookieRemove({ title, cookies }) {
     <div className="text-image-cta d-flex mb-5">
       <div className="content w-100">
         {isBrowser() && isPreferencesSet() ? <div>
-          <p>Seno presenti le seguenti preferenze cookie di terze parti:</p>
+          <p>Sono presenti le seguenti preferenze cookie di terze parti:</p>
           {cookieItems}
         </div> : <div>
           <p>
