@@ -85,6 +85,9 @@ components:
               label: "Comuni" #C
             - url: "scuole/" #M
               label: "Scuole" #C
+            - url: "musei-civici/" #M
+              label: "Musei civici" #C
+  
 
   # ///////////////////
   # INTRO
@@ -220,6 +223,23 @@ components:
           #btnStyle: outline-secondary
           #url: "#"
           #addonStyle: mb-0
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title: Musei #C
+      id: musei
+      # img: /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel: 3
+      background: medium # null | light | medium | dark
+      big: false
+      specular: true
+      subtitle: Il modello in via di definizione per il sito museale #C
+      buttons: #C #I
+        - label: Scopri il modello musei #C
+          btnStyle: primary
+          url: "musei/" #M
 
 
     # # —
