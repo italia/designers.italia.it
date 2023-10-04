@@ -72,3 +72,10 @@ div.chips-list-wrapper {
     width: 3.5em;
   }
 }
+
+[id] {
+ @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+   scroll-margin-top: $header-center-max-height;
+ }
+ scroll-margin-top: $header-center-max-height-mob;
+}
