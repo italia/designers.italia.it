@@ -8,7 +8,7 @@ const isServiceRemembered = (serviceKey) => {
   return services[serviceKey]
 }
 
-const isSectionShowable = () => {
+const isPreferencesSet = () => {
   const services = isBrowser() ? JSON.parse(localStorage.getItem('bs-ck3') || "{}") : {}
   for (const service in services) {
     if (services[service] === true) {
@@ -20,19 +20,28 @@ const isSectionShowable = () => {
 
 function CookieRemove({ title, cookies }) {
   const cookieItems = cookies.map((cookie) => (
-    isServiceRemembered(cookie.key) && <div className="row" key={cookie.key}>
-      <div className="col-12 col-md-6 mt-2">
+    isServiceRemembered(cookie.key) && <div className="row mt-4" key={cookie.key}>
+      <div className="col-12 col-md-6 mt-md-1 mb-3 mb-lg-0 fw-semibold">
         <span>{cookie.label}</span>
       </div>
       <div className="col-12 col-md-6">
-       <Button btnStyle="secondary" onClick={() => { localStorage.removeItem('bs-ck3'); location.reload(); }} aria-label="{accordionSrCopyLabel}">Rimuovi</Button>
+        <Button btnStyle="outline-primary btn-xs" onClick={() => { localStorage.removeItem('bs-ck3'); location.reload(); }} aria-label="{accordionSrCopyLabel}">Rimuovi preferenza</Button>
       </div>
     </div>
   ))
   return (
-    isBrowser() && isSectionShowable() && <div className="content w-100">
-      <h2>{title}</h2>
-      {cookieItems}
+    <div className="text-image-cta d-flex mb-5">
+      <div className="content w-100">
+        {isBrowser() && isPreferencesSet() ? <div>
+          <p>Seno presenti le seguenti preferenze cookie di terze parti:</p>
+          {cookieItems}
+        </div> : <div>
+          <p>
+            Non ci sono cookie di terze parti.
+          </p>
+        </div>
+        }
+      </div>
     </div>
   );
 }
