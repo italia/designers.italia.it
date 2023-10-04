@@ -64,6 +64,7 @@ components:
         A norma degli articoli 13 e 14 del Regolamento UE 2016/679 (GDPR) vogliamo fornirti un’informativa semplice e chiara su come trattiamo i dati personali che ci fornisci direttamente o di cui comunque potremo venire in possesso tramite contatto con il sito web https://designers.italia.it.
       components:
         - name: TextImageCta
+          noSpace: true
           text: | #C
             ## Titolare del trattamento
 
@@ -118,8 +119,15 @@ components:
             
             Per maggiori informazioni o esercitare i tuoi diritti contatta il Titolare agli indirizzi sopra indicati. Se invece ritieni che il trattamento dei dati personali a te riferiti avvenga in violazione di quanto previsto dal GDPR, hai anche diritto di proporre reclamo, ai sensi dell’art. 77 del GDPR, al Garante per la protezione dei dati personali.
 
-            ## Cookie
-            
+    - menu: false
+      centered: true
+      noSpace: true
+      background: null
+      title: Cookies
+      id: gestione-cookie
+      components:
+        - name: TextImageCta
+          text: | #C            
             Questa sezione fornisce informazioni dettagliate sull’uso dei cookie, su come sono utilizzati dal sito e su come gestirli, in attuazione dell’art. 122 del decreto legislativo 30 giugno 2003, n. 196, nonché nel rispetto delle “[Linee guida cookie e altri strumenti di tracciamento](https://www.garanteprivacy.it/web/guest/home/docweb/-/docweb-display/docweb/9677876)” emanate dal Garante per la protezione dei dati personali con provvedimento del 10 giugno 2021.
 
             Il sito non utilizza cookie per la profilazione degli utenti, ma soltanto cookie tecnici necessari per il suo funzionamento e per migliorare l’esperienza d’uso dei propri visitatori, nonché cookie analitici che raccolgono, in forma anonima (attraverso il mascheramento di porzioni dell’indirizzo IP dell’utente), informazioni statistiche e aggregate sulle modalità di navigazione degli utenti (ad es., numero di pagine visitate e accessi, tempo di permanenza nel sito). Tali cookie sono assimilati ai cookie tecnici e non necessitano del consenso dell’utente. Inoltre, i predetti cookie analitici, una volta memorizzati sul browser dell’utente, possono permanere fino a un massimo di 13 mesi, ferma la possibilità per l’utente di decidere di disabilitarne l’utilizzo sul proprio browser, in qualsiasi momento, nelle modalità indicate nella sezione che segue.
@@ -134,7 +142,7 @@ components:
             - [Edge](https://support.microsoft.com/it-it/microsoft-edge/eliminare-i-cookie-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09)
             - [Opera](https://help.opera.com/en/latest/web-preferences/#cookies)
         - name: CookieRemove
-          title: Preferenze cookies per questo sito
+          title: Gestione cookie per questo sito
           cookies:
-            - label: Preferenze video Youtube
+            - label: Preferenza video YouTube
               key: youtube.com

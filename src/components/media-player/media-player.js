@@ -22,16 +22,16 @@ const MediaPlayerEl = (
 
   const messages = {
     it: {
-      rememberLabel: 'Ricorda la mia scelta',
+      rememberLabel: 'Ricorda per tutti i video',
       acceptLabel: 'Accetta',
       trascriptionLabel: 'Trascrizione',
-      cookiePolicy: 'Devi accettare i cookie di YouTube per abilitare la visione di questo contenuto. Scopri cosa sono i cookie e approfondisci i dettagli nella nostra <a href="https://designers.italia.it/privacy-policy#cookie/" className="text-white">cookie policy</a>. '
+      cookiePolicy: 'Accetta i cookie di YouTube per vedere il video. Puoi rimuovere le preferenze nella <a href="https://designers.italia.it/privacy-policy#cookie/" className="text-white">cookie policy</a>. '
     },
     en: {
       rememberLabel: 'Remember my choice',
       acceptLabel: 'Accept',
       trascriptionLabel: 'Transcription',
-      cookiePolicy: 'You must accept YouTube cookies to enable viewing of this content. Find out what cookies are and read more about them in our <a href="https://designers.italia.it/privacy-policy#cookie/" className="text-white">cookie policy (italian language)</a>.'
+      cookiePolicy: 'You have to accept YouTube cookies to enable viewing of this video. You can remove the preferences via <a href="https://designers.italia.it/privacy-policy#cookie/" className="text-white">cookie policy (italian language)</a>.'
     },
   }
 
@@ -50,7 +50,7 @@ const MediaPlayerEl = (
     video = new VideoPlayer(document.getElementById(videoId))
     var ButtonComp = videojs.getComponent('Button');
     var notesBut = new ButtonComp(video.player, {
-      clickHandler: function() {
+      clickHandler: function () {
         window.location.replace(
           "/privacy-policy/",
         );
@@ -75,12 +75,12 @@ const MediaPlayerEl = (
             </div>
             <p>{parse(t('cookiePolicy'))}</p>
             <div className="acceptoverlay-buttons bg-dark">
+              <button onClick={() => { console.log("clicca"); video.setYouTubeVideo(url) }}
+                type="button" id={`${videoId}-accept-video`} className="btn btn-primary accept-video" data-bs-accept-from="youtube.com">{t('acceptLabel')}</button>
               <div className="form-check">
                 <input id={`${videoId}-chk-remember`} type="checkbox" data-bs-accept-remember></input>
                 <label htmlFor={`${videoId}-chk-remember`}>{t('rememberLabel')}</label>
               </div>
-              <button onClick={() => {console.log("clicca"); video.setYouTubeVideo(url)}}
-                type="button" id={`${videoId}-accept-video`} className="btn btn-primary accept-video" data-bs-accept-from="youtube.com">{t('acceptLabel')}</button>
             </div>
           </div>
         </div>
