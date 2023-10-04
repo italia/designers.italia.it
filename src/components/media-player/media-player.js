@@ -52,7 +52,7 @@ const MediaPlayerEl = (
     var notesBut = new ButtonComp(video.player, {
       clickHandler: function () {
         window.location.replace(
-          "/privacy-policy/",
+          "/privacy-policy/#gestione-cookie",
         );
       }
     });
