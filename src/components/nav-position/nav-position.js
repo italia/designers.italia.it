@@ -24,7 +24,7 @@ function NavPosition({ items, footerVersion }) {
       item.icon.hidden = true;
       return (
         <div key={`linkItems-${index}`}>
-          <div className="d-inline-flex align-items-center me-lg-5 my-2 tagSmallSize">
+          <div className="d-inline-flex align-items-center me-lg-5 my-2 tag-small-size">
             <Icon {...item.icon} />
             <span className="text-uppercase text-secondary me-2">
               <strong>{item.title}</strong>
