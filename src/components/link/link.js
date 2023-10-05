@@ -1,5 +1,5 @@
-import React from "react"
-import { Link as GatsbyLink } from "gatsby"
+import React from "react";
+import { Link as GatsbyLink } from "gatsby";
 
 // Since DOM elements <a> cannot receive activeClassName
 // and partiallyActive, destructure the prop here and
@@ -9,9 +9,9 @@ function Link({ children, to, activeClassName, partiallyActive, ...other }) {
   // This example assumes that any internal link (intended for Gatsby)
   // will start with exactly one slash, and that anything else is external.
   // const internal = /^\/(?!\/)/.test(to) <--- from example
-  const external = /^http/.test(to)
-  const anchor = /#[^\s,]+/.test(to)
-  const file = /\.[0-9a-z]+$/i.test(to)
+  const external = /^http/.test(to);
+  const anchor = /#[^\s,]+/.test(to);
+  const file = /\.[0-9a-z]+$/i.test(to);
 
   // Use Gatsby Link for internal links, and <a> for others
   if (external || anchor || file) {
@@ -19,7 +19,7 @@ function Link({ children, to, activeClassName, partiallyActive, ...other }) {
       <a href={to} {...other}>
         {children}
       </a>
-    )
+    );
   }
   return (
     <GatsbyLink
@@ -30,7 +30,7 @@ function Link({ children, to, activeClassName, partiallyActive, ...other }) {
     >
       {children}
     </GatsbyLink>
-  )
+  );
 }
 
-export default Link
+export default Link;

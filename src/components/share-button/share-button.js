@@ -1,41 +1,46 @@
-import * as React from "react"
-import PropTypes from "prop-types"
+import * as React from "react";
+import PropTypes from "prop-types";
 
-import Dropdown from "../dropdown/dropdown"
+import Dropdown from "../dropdown/dropdown";
 
-function ShareButton({ title, url, color = 'primary', small = false}) {
+function ShareButton({ title, url, color, small }) {
   // TODO: Compatibility structure that Dropdown understands.
   // Dropdown should not have the logic in it for the share UI
   const shareOpts = {
     button: {
       icon: {
-        icon: 'sprites.svg#it-more-items',
-        size: 'sm',
+        icon: "sprites.svg#it-more-items",
+        size: "sm",
         color,
-        addonClasses: 'ms-3'
-      }
+        addonClasses: "ms-3",
+      },
     },
     list: {
-      isShare: true
-    }
-  }
+      isShare: true,
+    },
+  };
 
   if (!small) {
-    shareOpts.button.addonStyle = `btn-share-hero btn-dropdown text-${color} mb-5 mt-lg-4 ms-auto`
-    shareOpts.button.label = 'Condividi'
+    shareOpts.button.addonStyle = `btn-share-hero btn-dropdown text-${color} mb-5 mt-lg-4 ms-auto`;
+    shareOpts.button.label = "Condividi";
   } else {
-    shareOpts.button.addonStyle = 'icon-only-drop'
-    shareOpts.button.ariaLabel = 'Condividi'
+    shareOpts.button.addonStyle = "icon-only-drop";
+    shareOpts.button.ariaLabel = "Condividi";
   }
 
-  return <Dropdown {...shareOpts} shareTitle={title} shareUrl={url} />
+  return <Dropdown {...shareOpts} shareTitle={title} shareUrl={url} />;
 }
+
+ShareButton.defaultProps = {
+  color: "primary",
+  small: false,
+};
 
 ShareButton.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string.isRequired,
-  color: PropTypes.oneOf(['primary', 'white']),
+  color: PropTypes.oneOf(["primary", "white"]),
   small: PropTypes.bool,
-}
+};
 
-export default ShareButton
+export default ShareButton;

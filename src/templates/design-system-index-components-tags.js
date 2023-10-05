@@ -1,55 +1,58 @@
-import * as React from "react"
-import "../scss/styles.scss"
-import "../js/globals"
+import * as React from "react";
+import "../scss/styles.scss";
+import "../js/globals";
 
-import { graphql } from "gatsby"
-import Skiplinks from "../components/skiplinks/skiplinks"
-import Header from "../components/header/header"
-import Footer from "../components/footer/footer"
-import BackToTopEl from "../components/back-to-top/back-to-top"
-import HeaderSlim from "../components/header-slim/header-slim"
-import HeaderPre from "../components/header-pre/header-pre"
-import NavWrapper from "../components/nav-wrapper/nav-wrapper"
-import HeaderCenter from "../components/header-center/header-center"
-import HeaderNav from "../components/header-nav/header-nav"
-import LastUpdate from "../components/last-update/last-update"
-import Feedback from "../components/feedback/feedback"
+import { graphql } from "gatsby";
+import Skiplinks from "../components/skiplinks/skiplinks";
+import Header from "../components/header/header";
+import Footer from "../components/footer/footer";
+import BackToTopEl from "../components/back-to-top/back-to-top";
+import HeaderSlim from "../components/header-slim/header-slim";
+import HeaderPre from "../components/header-pre/header-pre";
+import NavWrapper from "../components/nav-wrapper/nav-wrapper";
+import HeaderCenter from "../components/header-center/header-center";
+import HeaderNav from "../components/header-nav/header-nav";
+import LastUpdate from "../components/last-update/last-update";
+import Feedback from "../components/feedback/feedback";
 
-import NavSidebar from "../components/nav-sidebar/nav-sidebar"
-import Hero from "../components/hero/hero"
+import NavSidebar from "../components/nav-sidebar/nav-sidebar";
+import Hero from "../components/hero/hero";
 
-import HeaderData from "../data/header.yaml"
-import FooterData from "../data/footer.yaml"
-import TagPageData from "../data/tag.yaml"
-import skipLinksData from "../data/skiplinks.yaml"
-import dsNav from "../data/dsnav.yaml"
+import HeaderData from "../data/header.yaml";
+import FooterData from "../data/footer.yaml";
+import TagPageData from "../data/tag.yaml";
+import skipLinksData from "../data/skiplinks.yaml";
+import dsNav from "../data/dsnav.yaml";
 
-import Link from "../components/link/link"
-import ListItem from "../components/list-item/list-item"
-import ListArchiveDSTags from "../components/list-archive-ds-tags/list-archive-ds-tags"
+import Link from "../components/link/link";
+import ListItem from "../components/list-item/list-item";
+import ListArchiveDSTags from "../components/list-archive-ds-tags/list-archive-ds-tags";
 
-import { Seo } from "../components/seo/seo"
+import { Seo } from "../components/seo/seo";
 
 function TagsDesignSystem({ children, pageContext, location, data }) {
-  const lastModified = data.content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
+  const lastModified =
+    data.content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString();
 
-  const { tag } = pageContext
-  const { edges, totalCount } = data.allContentDesignSystemByTag
-  const tagHeader = `Esplora ${totalCount} component${totalCount === 1 ? "e" : "i"} utili`
+  const { tag } = pageContext;
+  const { edges, totalCount } = data.allContentDesignSystemByTag;
+  const tagHeader = `Esplora ${totalCount} component${
+    totalCount === 1 ? "e" : "i"
+  } utili`;
 
   const iconOpt = {
-    icon: 'sprites.svg#it-file',
-    size: 'sm',
+    icon: "sprites.svg#it-file",
+    size: "sm",
     color: "primary",
-    addonClasses: 'mt-1 flex-shrink-0 me-1 me-md-3'
-  }
+    addonClasses: "mt-1 flex-shrink-0 me-1 me-md-3",
+  };
 
-  const container = "container-xxl"
-  const row = "row"
+  const container = "container-xxl";
+  const row = "row";
 
-  const styles = 'section-editorial'
+  const styles = "section-editorial";
 
-  const showTags = true
+  const showTags = true;
 
   return (
     <div id="app">
@@ -66,8 +69,18 @@ function TagsDesignSystem({ children, pageContext, location, data }) {
         <div className="container-xxl">
           <div className="row design-system">
             <NavSidebar page="Panoramica componenti" {...dsNav} />
-            <main id="main" className="col-12 col-lg-9 px-lg-0 content-column bg-white">
-              <Hero {...TagPageData.components.hero} title={tag} subtitle={`Tutti i componenti del design system utili per "${tag}"`} crumbLabel={tag} pageContext={pageContext} {...TagPageData.seo} />
+            <main
+              id="main"
+              className="col-12 col-lg-9 px-lg-0 content-column bg-white"
+            >
+              <Hero
+                {...TagPageData.components.hero}
+                title={tag}
+                subtitle={`Tutti i componenti del design system utili per "${tag}"`}
+                crumbLabel={tag}
+                pageContext={pageContext}
+                {...TagPageData.seo}
+              />
 
               {/* { Pagedata.components.filterCards && <FilterCards {...Pagedata.components.filterCards}/>} */}
 
@@ -76,16 +89,27 @@ function TagsDesignSystem({ children, pageContext, location, data }) {
                   <div className={row}>
                     <div className="col-12 g-0">
                       <div className="px-3 px-lg-0 px-lg-5">
-                        <h2 className="border-bottom pb-4 w-100" id="archive-list-title">{tagHeader}</h2>
+                        <h2
+                          className="border-bottom pb-4 w-100"
+                          id="archive-list-title"
+                        >
+                          {tagHeader}
+                        </h2>
                         <div className="it-list-wrapper">
                           <ul className="it-list mt-4 mt-md-3">
                             {edges.map(({ node }) => {
-                              const { id } = node
-                              const { pathname } = node.seo
-                              const { title } = node.components?.hero
-                              const { description } = node.seo
+                              const { id } = node;
+                              const { pathname } = node.seo;
+                              const title = node.components?.hero?.title;
+                              const { description } = node.seo;
                               return (
-                                <ListItem url={pathname} key={id} iconLeft icon={iconOpt} addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4">
+                                <ListItem
+                                  url={pathname}
+                                  key={id}
+                                  iconLeft
+                                  icon={iconOpt}
+                                  addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4"
+                                >
                                   <div className="d-md-flex">
                                     <h3 className="h6 mb-0">
                                       <strong>{title}</strong>
@@ -98,40 +122,45 @@ function TagsDesignSystem({ children, pageContext, location, data }) {
                                       } */}
                                     </div>
                                   </div>
-                                  {(node.components?.hero?.kangaroo?.personalInfo?.items || description) &&
+                                  {(node.components?.hero?.kangaroo
+                                    ?.personalInfo?.items ||
+                                    description) && (
                                     <p className="text-secondary fw-normal d-block mb-3">
                                       <small>{description}</small>
                                     </p>
-                                  }
+                                  )}
                                 </ListItem>
-                              )
+                              );
                             })}
                           </ul>
 
                           <div className="mt-5 mb-4 border-top pt-4 px-4">
-                            <Link to="/design-system/componenti/#esplora"><strong>Esplora tutti i componenti</strong></Link>
+                            <Link to="/design-system/componenti/#esplora">
+                              <strong>Esplora tutti i componenti</strong>
+                            </Link>
                           </div>
-
                         </div>
                       </div>
 
                       <div className="mb-5 ps-4">
-                        {showTags &&
-                          <ListArchiveDSTags />
-                        }
+                        {showTags && <ListArchiveDSTags />}
                       </div>
-
                     </div>
                   </div>
                 </div>
               </section>
-
-
             </main>
           </div>
         </div>
         {children}
-        {lastModified && <LastUpdate lastModified={lastModified} {...TagPageData.lastUpdate} {...location} {...pageContext} />}
+        {lastModified && (
+          <LastUpdate
+            lastModified={lastModified}
+            {...TagPageData.lastUpdate}
+            {...location}
+            {...pageContext}
+          />
+        )}
         <Feedback />
         <Footer {...FooterData.footer} />
         <BackToTopEl
@@ -143,63 +172,60 @@ function TagsDesignSystem({ children, pageContext, location, data }) {
         />
       </div>
     </div>
-  )
+  );
 }
 
-export default TagsDesignSystem
+export default TagsDesignSystem;
 
 export const pageQuery = graphql`
-      query($tag: String) {
-        allContentDesignSystemByTag: allContent(
-      filter: {components: {hero: {kangaroo: {tagsDesignSystem: {in: [$tag]}}}}}
+  query ($tag: String) {
+    allContentDesignSystemByTag: allContent(
+      filter: {
+        components: { hero: { kangaroo: { tagsDesignSystem: { in: [$tag] } } } }
+      }
       sort: { components: { hero: { title: ASC } } }
-      ) {
-        totalCount
+    ) {
+      totalCount
       edges {
         node {
-        id
+          id
           metadata {
-        template {
-        name
-      }
+            template {
+              name
+            }
           }
-      components {
-        hero {
-        title
+          components {
+            hero {
+              title
               tag {
-        label
-      }
-      kangaroo {
-        personalInfo {
-        items {
-        title
+                label
+              }
+              kangaroo {
+                personalInfo {
+                  items {
+                    title
                     label
                   }
                 }
               }
             }
           }
-      seo {
-        description
+          seo {
+            description
             pathname
           }
         }
       }
     }
   }
-      `
+`;
 
-
-export function Head({ pageContext, data: { content } }) {
-  const { tag } = pageContext
+export function Head({ pageContext: { tag } }) {
   return (
     <Seo
       title={`${tag} - Designers Italia`}
       description={`Tutti i contenuti del design system relativi all'argomento "${tag}"`}
-      // image = {content.seo.image}
-      // twitterImage = {content.seo.twitterImage}
       pathname={`/design-system/argomenti/"${tag}"/`}
-    // canonical = {content.seo.canonical}
-     />
-  )
+    />
+  );
 }
