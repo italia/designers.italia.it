@@ -13,7 +13,7 @@ import ImageIcons from "../image-icons/image-icons";
 import Table from "../table/table";
 import Button from "../button/button";
 import ComponentView from "../component-view/component-view";
-import CookieRemove  from "../cookieremove/cookieremove";
+import CookieRemove from "../cookieremove/cookieremove";
 import MediaPlayer from "../media-player/media-player";
 
 function SectionEditorial({

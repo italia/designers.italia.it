@@ -1,21 +1,17 @@
-import * as React from "react"
+import * as React from "react";
 
-import "../../scss/styles.scss"
-import "../../js/globals"
+import "../../scss/styles.scss";
+import "../../js/globals";
 
-import { useStaticQuery, graphql } from "gatsby"
-import classNames from "classnames"
-import Card from "../card/card"
+import { useStaticQuery, graphql } from "gatsby";
+import classNames from "classnames";
+import Card from "../card/card";
 
-function ListArchiveMedia({
-  background,
-  noSpace,
-}) {
-
+function ListArchiveMedia({ background, noSpace }) {
   const data = useStaticQuery(graphql`
     query {
       allContent(
-        filter: {metadata: {archive: {in: "media"}}}
+        filter: { metadata: { archive: { in: "media" } } }
         sort: { seo: { pathname: DESC } }
       ) {
         totalCount
@@ -45,32 +41,30 @@ function ListArchiveMedia({
         }
       }
     }
-  `)
+  `);
 
-  const { edges } = data.allContent
-  const tagHeader = 'Esplora l’archivio'
+  const { edges } = data.allContent;
+  const tagHeader = "Esplora l’archivio";
 
   const iconOpt = {
-    icon: 'sprites.svg#it-video',
-    size: 'sm',
+    icon: "sprites.svg#it-video",
+    size: "sm",
     color: "primary",
-    addonClasses: 'mt-1 flex-shrink-0 me-1 me-md-3'
-  }
+    addonClasses: "mt-1 flex-shrink-0 me-1 me-md-3",
+  };
 
-  const styles = classNames(
-    'section-editorial',
-    {
-      [`bg-${background}`]: background,
-      'py-0': noSpace,
-      'text-white': (background === "dark")
-    })
+  const styles = classNames("section-editorial", {
+    [`bg-${background}`]: background,
+    "py-0": noSpace,
+    "text-white": background === "dark",
+  });
 
-  const cardStyles = 'col-12 col-md-6 mb-3 mb-md-4 col-lg-4'
+  const cardStyles = "col-12 col-md-6 mb-3 mb-md-4 col-lg-4";
 
   const iconOverlay = {
-    icon: 'sprites.svg#it-video',
-    ariaLabel: 'video'
-  }
+    icon: "sprites.svg#it-video",
+    ariaLabel: "video",
+  };
 
   return (
     <section className={styles} aria-describedby="archive-list-title">
@@ -78,37 +72,42 @@ function ListArchiveMedia({
         <div className="row">
           <div className="col-12 g-0">
             <div className="px-3 px-lg-0 px-lg-5">
-              <h2 className="border-bottom pb-4 mb-4 mb-md-5" id="archive-list-title">{tagHeader}</h2>
+              <h2
+                className="border-bottom pb-4 mb-4 mb-md-5"
+                id="archive-list-title"
+              >
+                {tagHeader}
+              </h2>
               <div className="">
                 {edges.map(({ node }) => {
-                  const { id } = node
-                  const { pathname } = node.seo
-                  const { title } = node.components?.hero
-                  const { tag } = node.components?.hero
-                  const { image } = node.seo
+                  const { id } = node;
+                  const { pathname } = node.seo;
+                  const { title } = node.components?.hero;
+                  const { tag } = node.components?.hero;
+                  const { image } = node.seo;
                   return (
                     <div className={cardStyles} key={id}>
                       <Card
                         title={title}
                         url={pathname}
-                        cardEvent='true'
+                        cardEvent="true"
                         img={image}
                         alt=""
-                        imgRatio='21x9'
-                        fullHeight='true'
+                        imgRatio="21x9"
+                        fullHeight="true"
                         tag={tag}
                         iconOverlay={iconOverlay}
                       />
                     </div>
-                  )
+                  );
                 })}
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section >
-  )
+    </section>
+  );
 }
 
-export default ListArchiveMedia
+export default ListArchiveMedia;
