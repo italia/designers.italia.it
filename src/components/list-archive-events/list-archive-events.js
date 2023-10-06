@@ -117,18 +117,18 @@ function ListArchiveEvents({ background, noSpace }) {
                         </div>
                         {(node.components?.hero?.kangaroo?.eventInfo?.items ||
                           description) && (
-                          <p className="text-secondary fw-normal d-block mb-3">
+                          <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
                             {node.components?.hero?.kangaroo?.eventInfo
                               ?.items && (
-                              <small>
+                              <span>
                                 {
                                   node.components?.hero?.kangaroo?.eventInfo
                                     ?.items[1].label
                                 }
-                              </small>
+                              </span>
                             )}{" "}
                             {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
-                            <small> — {description}</small>
+                            <span> — {description}</span>
                           </p>
                         )}
                       </ListItem>
