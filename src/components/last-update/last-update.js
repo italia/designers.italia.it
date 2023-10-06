@@ -69,7 +69,7 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
                     icon="sprites.svg#it-pencil"
                     size="sm"
                     color="primary"
-                      addonClasses="mb-1"
+                    addonClasses="mb-1"
                   />
                 </Link>
               </div>
