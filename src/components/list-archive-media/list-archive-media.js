@@ -46,13 +46,6 @@ function ListArchiveMedia({ background, noSpace }) {
   const { edges } = data.allContent;
   const tagHeader = "Esplora l’archivio";
 
-  const iconOpt = {
-    icon: "sprites.svg#it-video",
-    size: "sm",
-    color: "primary",
-    addonClasses: "mt-1 flex-shrink-0 me-1 me-md-3",
-  };
-
   const styles = classNames("section-editorial", {
     [`bg-${background}`]: background,
     "py-0": noSpace,

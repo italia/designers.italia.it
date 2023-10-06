@@ -22,7 +22,7 @@ const isPreferencesSet = () => {
   return false;
 };
 
-function CookieRemove({ title, cookies }) {
+function CookieRemove({ cookies }) {
   const cookieItems = cookies.map(
     (cookie) =>
       isServiceRemembered(cookie.key) && (
