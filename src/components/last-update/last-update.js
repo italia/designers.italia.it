@@ -38,18 +38,18 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
                   rel="noreferrer"
                   className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5"
                 >
-                  <strong className="d-inline-block me-2">
+                  <strong className="me-2">
                     Licenza CC BY-SA 4.0
                     <span className="visually-hidden">
                       (si apre in una nuova finestra)
                     </span>
-                    <Icon
-                      icon="sprites.svg#it-external-link"
-                      size="md"
-                      color="primary"
-                      addonClasses="align-middle"
-                    />
                   </strong>
+                  <Icon
+                    icon="sprites.svg#it-external-link"
+                    size="sm"
+                    color="primary"
+                    addonClasses="mb-1"
+                  />
                 </Link>
               </div>
               <div className="mb-0">
@@ -59,7 +59,7 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
                   rel="noreferrer"
                   className="d-inline-block text-decoration-none"
                 >
-                  <strong className="d-inline-block me-2">
+                  <strong className="me-2">
                     Proponi una modifica a questa pagina
                     <span className="visually-hidden">
                       (si apre in una nuova finestra)
@@ -69,6 +69,7 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
                     icon="sprites.svg#it-pencil"
                     size="sm"
                     color="primary"
+                      addonClasses="mb-1"
                   />
                 </Link>
               </div>
