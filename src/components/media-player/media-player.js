@@ -25,13 +25,13 @@ const MediaPlayerEl = (
       rememberLabel: 'Ricorda per tutti i video',
       acceptLabel: 'Accetta',
       trascriptionLabel: 'Trascrizione',
-      cookiePolicy: 'Accetta i cookie di YouTube per vedere il video. Puoi rimuovere le preferenze nella <a href="/privacy-policy/#gestione-cookie" className="text-white">cookie policy</a>. '
+      cookiePolicy: 'Accetta i cookie di YouTube per vedere il video. Puoi gestire le preferenze nella <a href="/privacy-policy/#gestione-cookie" className="text-white">cookie policy</a>. '
     },
     en: {
       rememberLabel: 'Remember my choice',
       acceptLabel: 'Accept',
       trascriptionLabel: 'Transcription',
-      cookiePolicy: 'You have to accept YouTube cookies to enable viewing of this video. You can remove the preferences via <a href="/privacy-policy/#gestione-cookie" className="text-white">cookie policy (italian language)</a>.'
+      cookiePolicy: 'You have to accept YouTube cookies to enable viewing of this video. You can manage the preferences via <a href="/privacy-policy/#gestione-cookie" className="text-white">cookie policy (italian language)</a>.'
     },
   }
 
