@@ -25,7 +25,7 @@ function CookieRemove({ title, cookies }) {
         <span>{cookie.label}</span>
       </div>
       <div className="col-12 col-md-6">
-        <Button btnStyle="outline-primary btn-xs" onClick={() => { localStorage.removeItem('bs-ck3'); location.reload(); }} aria-label="{accordionSrCopyLabel}">Rimuovi preferenza</Button>
+        <Button btnStyle="outline-primary btn-xs" onClick={() => { localStorage.removeItem('bs-ck3'); location.reload(); }} aria-label="{accordionSrCopyLabel}">Revoca</Button>
       </div>
     </div>
   ))
@@ -33,7 +33,7 @@ function CookieRemove({ title, cookies }) {
     <div className="text-image-cta d-flex mb-5">
       <div className="content w-100">
         {isBrowser() && isPreferencesSet() ? <div>
-          <p>Sono presenti le seguenti preferenze cookie di terze parti:</p>
+          <p>Hai acconsentito all’installazione dei seguenti cookie di terze parti:</p>
           {cookieItems}
         </div> : <div>
           <p>
