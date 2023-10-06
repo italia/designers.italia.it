@@ -5,11 +5,9 @@ import { VideoPlayer, AcceptOverlay } from "bootstrap-italia";
 import parse from "html-react-parser";
 import ReactMarkdown from "react-markdown";
 
-import { Script } from "gatsby";
-
 // TO DO
 // - [future] modular approach for local videos/youtubes/...
-// - [future] download thumbnail during build- eg. url: http://i3.ytimg.com/vi/_0j7ZQ67KtY/hqdefault.jpg
+// - [future] download thumbnail during build - eg. url: http://i3.ytimg.com/vi/_0j7ZQ67KtY/hqdefault.jpg
 
 function MediaPlayerEl({ url, lang, trascription, poster }) {
   const messages = {
@@ -39,9 +37,11 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
     script.src =
       "https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js";
     document.head.appendChild(script);
+    // eslint-disable-next-line no-new
     new AcceptOverlay(document.getElementById(`${videoId}-accept-video`), {
       service: "youtube.com",
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     video = new VideoPlayer(document.getElementById(videoId));
     const ButtonComp = videojs.getComponent("Button");
     const notesBut = new ButtonComp(video.player, {

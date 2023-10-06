@@ -75,8 +75,8 @@ function ListArchiveMedia({ background, noSpace }) {
                 {edges.map(({ node }) => {
                   const { id } = node;
                   const { pathname } = node.seo;
-                  const { title } = node.components?.hero;
-                  const { tag } = node.components?.hero;
+                  const { title } = node.components?.hero || "";
+                  const { tag } = node.components?.hero || "";
                   const { image } = node.seo;
                   return (
                     <div className={cardStyles} key={id}>

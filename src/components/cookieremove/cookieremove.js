@@ -35,7 +35,7 @@ function CookieRemove({ cookies }) {
               btnStyle="outline-primary btn-xs"
               onClick={() => {
                 localStorage.removeItem("bs-ck3");
-                location.reload();
+                window.location.reload();
               }}
               aria-label="{accordionSrCopyLabel}"
             >
