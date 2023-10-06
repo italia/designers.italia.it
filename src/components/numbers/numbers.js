@@ -13,7 +13,7 @@ function Numbers({ items, inline }) {
     NumbersRender = items.map((num, index) => (
       <div className="numbers mb-4 mb-sm-4" key={`number-${index}`}>
         <div className="label mb-2">
-            <strong>{num.label}</strong>
+          <strong>{num.label}</strong>
         </div>
         <div className="d-flex align-items-center">
           <Icon icon={num.icon} size="lg" addonClasses="mt-1 me-2" hidden />

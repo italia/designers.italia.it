@@ -121,12 +121,12 @@ function ListArchiveNews({ background, noSpace }) {
                           <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
                             {node.components?.hero?.kangaroo?.personalInfo
                               ?.items && (
-                                <span>
+                              <span>
                                 {
                                   node.components?.hero?.kangaroo?.personalInfo
                                     ?.items[1].label
                                 }
-                                </span>
+                              </span>
                             )}{" "}
                             {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
                             <span> — {description}</span>
