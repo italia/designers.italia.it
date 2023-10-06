@@ -33,11 +33,11 @@ function CookieRemove({ title, cookies }) {
     <div className="text-image-cta d-flex mb-5">
       <div className="content w-100">
         {isBrowser() && isPreferencesSet() ? <div>
-          <p>Hai acconsentito all’installazione dei seguenti cookie di terze parti:</p>
+          <p>Hai acconsentito a installare i seguenti cookie di terze parti:</p>
           {cookieItems}
         </div> : <div>
           <p>
-            Non ci sono cookie di terze parti.
+            Non hai installato cookie di terze parti.
           </p>
         </div>
         }
