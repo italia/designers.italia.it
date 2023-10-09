@@ -1,15 +1,13 @@
-import * as React from "react"
+import * as React from "react";
 
-import ImageResponsive from "../image-responsive/image-responsive"
+import ImageResponsive from "../image-responsive/image-responsive";
 
-function Avatar({
-	size,
-	img,
-	alt
-}) {
-	return (
-		<div className={`avatar ${size ? `size-${size}` : undefined}`}><ImageResponsive src={img} alt={alt}/></div>
-	)
+function Avatar({ size, img, alt }) {
+  return (
+    <div className={`avatar ${size ? `size-${size}` : undefined}`}>
+      <ImageResponsive src={img} alt={alt} />
+    </div>
+  );
 }
 
-export default Avatar
+export default Avatar;

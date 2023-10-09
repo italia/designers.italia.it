@@ -1,19 +1,15 @@
-import React from "react"
-import LinkCustom from "../link-custom/link-custom"
+import React from "react";
+import LinkCustom from "../link-custom/link-custom";
 
-function NavOtherPrevNext({
-  prev,
-  next
-}) {
-
+function NavOtherPrevNext({ prev, next }) {
   if (prev) {
     // eslint-disable-next-line no-param-reassign
-    prev.imageClass = "mx-3"
+    prev.imageClass = "mx-3";
   }
 
   if (next) {
     // eslint-disable-next-line no-param-reassign
-    next.imageClass = "mx-3"
+    next.imageClass = "mx-3";
   }
 
   return (
@@ -21,15 +17,15 @@ function NavOtherPrevNext({
       <div className="container-xxl">
         <div className="row">
           <div className="col mb-4 mb-md-0 col-md-5 col-lg-4 col-xl-3">
-            {prev && <LinkCustom {...prev}/>}
+            {prev && <LinkCustom {...prev} />}
           </div>
           <div className="col col-md-5 offset-md-2 col-lg-4 offset-lg-4 col-xl-3 offset-xl-6 d-flex justify-content-end">
-            {next && <LinkCustom {...next}/>}
+            {next && <LinkCustom {...next} />}
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default NavOtherPrevNext
+export default NavOtherPrevNext;

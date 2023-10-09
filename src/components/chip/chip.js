@@ -1,26 +1,21 @@
-import * as React from "react"
-import kebabCase from "lodash/kebabCase"
+import * as React from "react";
+import kebabCase from "lodash/kebabCase";
 
-import './chip.scss'
-import Link from "../link/link"
+import "./chip.scss";
+import Link from "../link/link";
 
-function Chip({
-		size,
-		color,
-		path = "argomenti",
-		label,
-		children,
-	}) {
-	const styles = 'chip chip-simple'
-		+ `${size ? ` chip-${  size}` : ''}`
-		+ `${color ? ` chip-${  color}` : ''}`
+function Chip({ size, color, path = "argomenti", label, children }) {
+  const styles =
+    "chip chip-simple" +
+    `${size ? ` chip-${size}` : ""}` +
+    `${color ? ` chip-${color}` : ""}`;
 
-	return (
-		<Link to={`/${path}/${kebabCase(label)}/`} className={styles}>
-			<span className="chip-label">{label}</span>
-			{children}
-		</Link>
-	)
+  return (
+    <Link to={`/${path}/${kebabCase(label)}/`} className={styles}>
+      <span className="chip-label">{label}</span>
+      {children}
+    </Link>
+  );
 }
 
-export default Chip
+export default Chip;
