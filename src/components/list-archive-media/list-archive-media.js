@@ -71,7 +71,7 @@ function ListArchiveMedia({ background, noSpace }) {
               >
                 {tagHeader}
               </h2>
-              <div className="">
+              <div className="row pb-4">
                 {edges.map(({ node }) => {
                   const { id } = node;
                   const { pathname } = node.seo;
