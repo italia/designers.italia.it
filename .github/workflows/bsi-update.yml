@@ -10,16 +10,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+      - uses: actions/checkout@v4
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
           node-version: 18
       - name: Run Bootstrap Italia update
         run: | 
-          npm i
           npm i bootstrap-italia@latest
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
