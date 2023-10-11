@@ -5,7 +5,7 @@ import { VideoPlayer, AcceptOverlay } from "bootstrap-italia";
 import parse from "html-react-parser";
 import ReactMarkdown from "react-markdown";
 
-// TO DO
+// TODO
 // - [future] modular approach for local videos/youtubes/...
 // - [future] download thumbnail during build - eg. url: http://i3.ytimg.com/vi/_0j7ZQ67KtY/hqdefault.jpg
 
