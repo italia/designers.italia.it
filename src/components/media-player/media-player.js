@@ -75,7 +75,6 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
             <div className="acceptoverlay-buttons bg-dark">
               <button
                 onClick={() => {
-                  console.log("clicca");
                   video.setYouTubeVideo(url);
                 }}
                 type="button"
