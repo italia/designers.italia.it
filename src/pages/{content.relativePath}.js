@@ -278,7 +278,7 @@ export const query = graphql`
             imgRatio
             fullHeight
             imgPlaceholder
-            # iconOverlay { ## TO ENABLE AS SOON MEDIA ARCHIVE IS READY
+            # iconOverlay {
             #   icon
             #   ariaLabel
             # }
