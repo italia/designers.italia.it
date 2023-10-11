@@ -278,10 +278,10 @@ export const query = graphql`
             imgRatio
             fullHeight
             imgPlaceholder
-            iconOverlay {
-              icon
-              ariaLabel
-            }
+            # iconOverlay { ## TO ENABLE AS SOON MEDIA ARCHIVE IS READY
+            #   icon
+            #   ariaLabel
+            # }
             dateOverlay {
               day
               month
