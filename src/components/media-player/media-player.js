@@ -50,8 +50,9 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
       },
     });
     video.player.controlBar.addChild(notesBut, {}, 1);
-    notesBut.el_.innerHTML =
-      '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
+    notesBut.el_.innerHTML = '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
+    video.player.controlBar.removeChild("SkipBackward");
+    video.player.controlBar.removeChild("SkipForward");
     if (JSON.parse(localStorage.getItem("bs-ck3") || "{}")["youtube.com"]) {
       setTimeout(() => {
         video.setYouTubeVideo(url);
