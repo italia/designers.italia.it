@@ -49,9 +49,9 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
         window.location.replace("/privacy-policy/#gestione-cookie");
       },
     });
-    video.player.controlBar.addChild(notesBut, {}, 7);
+    video.player.controlBar.addChild(notesBut, {}, 1);
     notesBut.el_.innerHTML =
-      '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestisci privacy" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg></button>';
+      '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
     if (JSON.parse(localStorage.getItem("bs-ck3") || "{}")["youtube.com"]) {
       setTimeout(() => {
         video.setYouTubeVideo(url);
