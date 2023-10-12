@@ -1,0 +1,25 @@
+name: Bootstrap Italia update
+
+on:
+  schedule:
+    - cron:  '30 18 * * *'
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup NodeJS
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+      - name: Run Bootstrap Italia update
+        run: | 
+          npm i bootstrap-italia@latest
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "chore(deps): update bootstrap italia"
+          branch: feature/update-assets
