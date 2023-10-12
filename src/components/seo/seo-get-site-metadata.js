@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby";
 
 // eslint-disable-next-line import/prefer-default-export
 export const SeoGetSiteMetadata = () => {
@@ -20,7 +20,7 @@ export const SeoGetSiteMetadata = () => {
         }
       }
     }
-  `)
+  `);
 
-  return data.site.siteMetadata
-}
+  return data.site.siteMetadata;
+};
