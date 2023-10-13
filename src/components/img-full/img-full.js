@@ -4,14 +4,17 @@ import ImageResponsive from "../image-responsive/image-responsive";
 import "./img-full.scss";
 
 function ImgFull({ img, alt, isDSPreview }) {
-  const imgStyle = classNames("img-full", {
+  const containerStyle = classNames("img-full", {
     "mb-5": !isDSPreview,
-    "mb-3 mt-3": isDSPreview,
+    "mb-3 mt-3 border rounded": isDSPreview,
+  });
+  const imgStyle = classNames("w-100 img-fluid", {
+    "rounded": isDSPreview,
   });
 
   return (
-    <div className={imgStyle}>
-      <ImageResponsive imgClassName="w-100 img-fluid" src={img} alt={alt} />
+    <div className={containerStyle}>
+      <ImageResponsive imgClassName={imgStyle} src={img} alt={alt} />
     </div>
   );
 }
