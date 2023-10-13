@@ -33,10 +33,6 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
   const videoId = `video-js-${uniqueId("id_")}`;
 
   useEffect(() => {
-    const script = document.createElement("script");
-    script.src =
-      "https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js";
-    document.head.appendChild(script);
     // eslint-disable-next-line no-new
     new AcceptOverlay(document.getElementById(`${videoId}-accept-video`), {
       service: "youtube.com",
@@ -44,13 +40,13 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     video = new VideoPlayer(document.getElementById(videoId));
     const ButtonComp = videojs.getComponent("Button");
-    const notesBut = new ButtonComp(video.player, {
+    const privacyPolicyButton = new ButtonComp(video.player, {
       clickHandler() {
         window.location.replace("/privacy-policy/#gestione-cookie");
       },
     });
-    video.player.controlBar.addChild(notesBut, {}, 1);
-    notesBut.el_.innerHTML =
+    video.player.controlBar.addChild(privacyPolicyButton, {}, 1);
+    privacyPolicyButton.el_.innerHTML =
       '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
     video.player.controlBar.removeChild("SkipBackward");
     video.player.controlBar.removeChild("SkipForward");
