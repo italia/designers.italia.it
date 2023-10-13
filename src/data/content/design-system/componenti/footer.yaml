@@ -8,11 +8,11 @@ metadata:
 
 seo:
   name: Footer - Designers Italia
-  description: "Esempi per la creazione di piè di pagina di navigazione"
+  description: "Componente utile alla definizione del piè di pagina di siti e servizi della PA"
   image: null
   twitterImage: null
   canonical: null
-  pathname: /design-system/componenti/chips/
+  pathname: /design-system/componenti/footer/
 
 components:
   hero:
@@ -28,7 +28,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Esempi per la creazione di piè di pagina di navigazione"
+    subtitle: "Componente utile alla definizione del piè di pagina di siti e servizi della PA"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -107,15 +107,24 @@ tabs:
   - title: Progettazione
     sectionsEditorial:
 
+
       - full: true
         noSpace: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/footer-anatomy.png
+            alt: "Immagine degli elementi che compongono il footer"
+          - name: TextImageCta
+            noSpace: false
             text: |
-              _In stesura_
+              Il footer è composto dai seguenti elementi:
+
+              1. **primo elemento**
 
       - full: true
         noSpace: true
@@ -125,19 +134,29 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              _In stesura_
 
       - full: true
         noSpace: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
-
-
+              Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/footer-specs-1.png
+            alt: "Immagine del footer con la misura di tutte le spaziature"
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/footer-specs-2.png
+            alt: "Immagine del footer con la misura di tutte le spaziature utili alla parte di chiusura"
+          - name: TextImageCta
+            noSpace: false
+            # text: |             
+            
       - full: true
         noSpace: true
         components:
