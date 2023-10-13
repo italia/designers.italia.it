@@ -1,0 +1,93 @@
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Il riutilizzo dei modelli di Designers Italia"
+  description: Esempi di servizi pubblici sviluppati attraverso API conformi al modello di interoperabilità. 
+  image: /images/community/media-thumbnails/20211027-buone-api-per-buoni-servizi.jpg #da cambiare
+  twitterImage: null
+  canonical: null
+  pathname: /community/media/20211027-buone-api-per-buoni-servizi
+
+lastUpdate:
+  title: 'Ultimo aggiornamento:'
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Buone API per buoni servizi'
+    subtitle: Esempi di servizi pubblici sviluppati attraverso API conformi al modello di interoperabilità
+    tag:
+      label: Community call
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community call]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=aTBPk56SK3I&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&index=5&t=2s
+          poster: /images/community/media-thumbnails/20211027-buone-api-per-buoni-servizi.jpg
+          trascription: |
+            Vai alla [scheda del video su YouTube](https://www.youtube.com/watch?v=aTBPk56SK3I&list=PLLZQsns4g-N5Eu8xv0L-iYhGU-IWBQSTL&index=5&t=2s)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Community call di Developers Italia e Designers Italia del 27/10/2021. Incontro dedicato a esempi di servizi pubblici sviluppati attraverso API che rispettano il modello di interoperabilità, definito da AGID in collaborazione con il Dipartimento per la trasformazione digitale e Developers Italia.
