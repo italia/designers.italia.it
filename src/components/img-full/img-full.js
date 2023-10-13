@@ -3,16 +3,11 @@ import classNames from "classnames";
 import ImageResponsive from "../image-responsive/image-responsive";
 import "./img-full.scss";
 
-function ImgFull({
-  img,
-  alt,
-  isDSPreview
-}) {
-  let imgStyle = classNames("img-full", {
+function ImgFull({ img, alt, isDSPreview }) {
+  const imgStyle = classNames("img-full", {
     "mb-5": !isDSPreview,
     "mb-3 mt-3": isDSPreview,
   });
-
 
   return (
     <div className={imgStyle}>
