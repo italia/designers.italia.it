@@ -9,7 +9,7 @@ function ImgFull({ img, alt, isDSPreview }) {
     "mb-3 mt-3 border rounded": isDSPreview,
   });
   const imgStyle = classNames("w-100 img-fluid", {
-    "rounded": isDSPreview,
+    rounded: isDSPreview,
   });
 
   return (
