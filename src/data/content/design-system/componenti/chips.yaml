@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Chips - Designers Italia
-  description: "Elementi compatti che rappresentano un input, attributo o azione"
+  description: "Il componente Chips permette di etichettare, classificare e organizzare contenuti ed elementi dell'interfaccia utilizzando parole chiave (tag), stati o altri attributi per abilitare percorsi di navigazione trasversale o filtri e scelte dell'utente."
   image: null
   twitterImage: null
   canonical: null
@@ -28,7 +28,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Elementi compatti che rappresentano un input, attributo o azione"
+    subtitle: "Il componente Chips permette di etichettare, classificare e organizzare contenuti ed elementi dell'interfaccia utilizzando parole chiave (tag), stati o altri attributi per abilitare percorsi di navigazione trasversale o filtri e scelte dell'utente."
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -71,7 +71,8 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Il componente Chips permette di etichettare, classificare e organizzare contenuti ed elementi dell'interfaccia. Utilizzando parole chiave (tag), stati o altri tipi di attributo è possibile abilitare percorsi di navigazione trasversale o filtri e scelte dell'utente. Le Chips possono essere parte di un gruppo (set) e permettere selezione, deselezione o rimozione a seconda del contesto. 
+              Usa il componente per classificare e organizzare contenuti e parti dell'interfaccia a seconda di tag, stati, utenti o altre ontologie utili al contesto; per dare accesso diretto ad archivi di contenuti filtrati per attributi e per permettere all'utente di selezionare o rimuovere scelte di input (ad esempio filtri per attributo o utenti destinatari di un messaggio).      
+              Le chips possono essere parte di un gruppo (set) e permettere selezione, deselezione o rimozione a seconda del contesto. 
 
       - full: true
         noSpace: true
@@ -81,17 +82,19 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Usa Chips con icone o avatar per aggiungere un’informazione visiva all’interazione.
-              - Usa le Chips rimuovibili per scelte dell'utente. L'utente può rimuovere il filtro se lo ritiene. 
+              - Considera che il componente è visivamente riconoscibile come interattivo, per etichette statiche valuta l'uso del componente Badge.  
+              - Usa icone o avatar per aggiungere un’informazione visiva all’interazione.
+              - Usa chips rimuovibili per scelte: l'utente può rimuovere il filtro se lo ritiene. 
 
               ### Attenzione a
-              - Le Chips possono aumentare la quantità di rumore visivo sullo schermo, in particolare se combinate con altri elementi visivi, quindi vanno usate con moderazione.
-              - Le Chips colorate possono essere utilizzate per organizzare una grande quantità di contenuti. Ad esempio, utilizzando etichette per organizzare le segnalazioni per argomento in una lunga lista.
-              - Usa Chips disabilitate con moderazione, assicurandoti che per l’utente sia chiaro come attivarle.
+              - L'uso di molti componenti di questo tipo sulla stessa pagina può aumentare molto la quantità di rumore visivo sullo schermo, in particolare se combinato con altri elementi visivi, quindi va utilizzato con moderazione.
+              - Le chips colorate possono essere utilizzate per organizzare una grande quantità di contenuti: ad esempio utilizzando etichette per organizzare le segnalazioni per argomento in una lunga lista di segnalazioni. 
+              - Configura la parte interattiva del componente scegliendo i corretti elementi `HTML`: utilizza `<button>` laddove si configuri una azione (ad esempio selezione filtro), e `<a>` laddove faciliti la navigazione (ad esempio link a un archivio filtrato).  
+              - Usa chips disabilitate con moderazione, assicurandoti che per l’utente sia chiaro come attivarle.
 
               ### Buone pratiche sui contenuti
               - Usa etichette brevi, una parola o due, senza ritorni a capo, per un rapido riconoscimento.
-              - Usa etichette coerenti, definendo classificazioni precise (argomenti, stati, o altri attributi).
+              - Usa etichette coerenti, definendo classificazioni puntuali per le tipologie di cui hai bisogno (argomenti, stati, o altri attributi).
       - full: true
         noSpace: true
         components:
@@ -100,7 +103,7 @@ tabs:
             title: Alternative a questo componente
             headingLevel: 2
             text: |
-              - Per singole etichette statiche o quantitative usa il componente [Badge](/design-system/componenti/badge/).
+              - Per singole etichette statiche o quantitative (ad esempio numero notifiche) usa il componente [Badge](/design-system/componenti/badge/).
               - Per azioni che non coinvolgono scelte o filtri usa il componente [Buttons](/design-system/componenti/buttons/). 
 
       - full: true
@@ -137,9 +140,13 @@ tabs:
             text: |
               ![Gli elementi che compongono i breadcrumbs](/images/design-system/componenti/chips-anatomy.png)
 
-              Il componente chips è composto da:
+              Il componente Chips è composto da:
 
-              1. **elemento**, spiegazione.
+              1. **forma di sfondo**;
+              2. **icona**: opzionale, utile a rafforzare il significato dell'etichetta;
+              3. **avatar**: opzionale, utile per rappresentare scelte o attribuzioni di utenti;
+              4. **etichetta** (label): il testo dell'etichetta;
+              5. **icona rimozione**: opzionale, utile per i casi di utilizzo del componente come input di scelta.
 
       - full: true
         noSpace: true
