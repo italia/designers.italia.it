@@ -813,6 +813,9 @@ export const query = graphql`
             # addonClasses
             headingLevel
             # specular
+            img
+            alt
+            isDSPreview
             head {
               text
             }
