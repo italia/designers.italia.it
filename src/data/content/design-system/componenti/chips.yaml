@@ -71,7 +71,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _Inizio stesura_
+              Il componente Chips permette di etichettare, classificare e organizzare contenuti ed elementi dell'interfaccia. Utilizzando parole chiave (tag), stati o altri tipi di attributo è possibile abilitare percorsi di navigazione trasversale o filtri e scelte dell'utente. Le Chips possono essere parte di un gruppo (set) e permettere selezione, deselezione o rimozione a seconda del contesto. 
 
       - full: true
         noSpace: true
@@ -81,7 +81,27 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Usa Chips con icona per aggiungere un’informazione visiva all’interazione (es. avatar per scelte utente).
+              - Usa le Chips rimuovibili per scelte dell'utente. L'utente può rimuovere il filtro se lo ritiene. 
+
+              ### Attenzione a
+              - Le Chips possono aumentare la quantità di rumore visivo sullo schermo, in particolare se combinate con altri elementi visivi, quindi vanno usate con moderazione.
+              - Le Chips colorate possono essere utilizzate per organizzare una grande quantità di contenuti. Ad esempio, utilizzando etichette per organizzare le segnalazioni per argomento in una lunga lista.
+              - Usa Chips disabilitate con moderazione, assicurandoti che per l’utente sia chiaro come attivarle.
+
+              ### Buone pratiche sui contenuti
+              - Usa etichette brevi, una parola o due, senza ritorni a capo, per un rapido riconoscimento.
+              - Usa etichette coerenti, definendo classificazioni precise (argomenti, stati, o altri attributi).
+      - full: true
+        noSpace: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Alternative a questo componente
+            headingLevel: 2
+            text: |
+              - Per singole etichette statiche o quantitative usa il componente [Badge](/design-system/componenti/badge/).
+              - Per azioni che non coinvolgono scelte o filtri usa il componente [Buttons](/design-system/componenti/buttons/). 
 
       - full: true
         noSpace: true
