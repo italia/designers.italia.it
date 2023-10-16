@@ -136,17 +136,123 @@ components:
       text: La palette è suddivisa in quattro gruppi di colori, secondo il ruolo di ciascuno. 
       components:
 
-        # 1st
+        # Colore primario
         - name: Table
           title: Colore primario
           responsive: table-responsive-md
-          addonClasses: fixed
           head:
             - text: Anteprima
             - text: HEX
+            - text: HSL
+            - text: Contrasto su sfondo bianco
           rows:
             - cols:
               - text: |
-                  ![titolo immagine](/images/design-system/colore.png)
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-40.png)
               - text: | 
-                  #0066cc
+                  #0066cc  
+              - text: |
+                  210, 72%, 57%
+              - text: |
+                  5.56:1
+
+        - name: Table
+          title: Varianti monocromatiche
+          headingLevel: 4
+          responsive: table-responsive-md
+          head:
+            - text: Anteprima
+            - text: HEX
+            - text: HSL
+            - text: Contrasto su sfondo bianco
+          rows:
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-97.png)
+              - text: | 
+                  #f2f7fc  
+              - text: |
+                  210, 62%, 97%
+              - text: |
+                  1.07:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-87.png)
+              - text: | 
+                  #bfdfff  
+              - text: |
+                  210, 100%, 87%
+              - text: |
+                  1.38:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-77.png)
+              - text: | 
+                  #94c4f5  
+              - text: |
+                  210, 83%, 77%
+              - text: |
+                  1.83:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-67.png)
+              - text: | 
+                  #6aaaeb  
+              - text: |
+                  210, 76%, 67%
+              - text: |
+                  2.45:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-57.png)
+              - text: | 
+                  #4392E0  
+              - text: |
+                  210, 72%, 57%
+              - text: |
+                  3.26:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-48.png)
+              - text: | 
+                  #207ad5  
+              - text: |
+                  210, 74%, 48%
+              - text: |
+                  4.31:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-40.png)
+              - text: | 
+                  #0066cc  
+              - text: |
+                  210, 100%, 40%
+              - text: |
+                  5.56:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-30.png)
+              - text: | 
+                  #004d99  
+              - text: |
+                  210, 74%, 30%
+              - text: |
+                  8.32:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-25.png)
+              - text: | 
+                  #004080  
+              - text: |
+                  210, 100%, 25%
+              - text: |
+                  10.26:1
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-20.png)
+              - text: | 
+                  #003366  
+              - text: |
+                  210, 100%, 20%
+              - text: |
+                  10.26:1
