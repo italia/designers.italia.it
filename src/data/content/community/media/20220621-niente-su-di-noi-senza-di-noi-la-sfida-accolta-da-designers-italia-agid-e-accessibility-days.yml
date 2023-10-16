@@ -1,0 +1,93 @@
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Niente su di Noi, senza di Noi - La sfida accolta da Designers Italia, AGID e Accessibility Days"
+  description: Organizzatori, facilitatori e partecipanti raccontano la loro esperienza nei test di usabilità. 
+  image: /images/community/media-thumbnails/20220621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days.jpg
+  twitterImage: null
+  canonical: null
+  pathname: /community/media/20220621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days
+
+lastUpdate:
+  title: 'Ultimo aggiornamento:'
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: md
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Niente su di Noi, senza di Noi - La sfida accolta da Designers Italia, AGID e Accessibility Days'
+    subtitle: Organizzatori, facilitatori e partecipanti raccontano la loro esperienza nei test di usabilità
+    tag:
+      label: Evento
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Evento]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=LHe9ypCCPFY
+          poster: /images/community/media-thumbnails/20220621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days.jpg
+          trascription: |
+            Vai alla [scheda del video su YouTube](https://www.youtube.com/watch?v=LHe9ypCCPFY)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Webinar del 21/06/2023 nell'ambito degli Accessibility Days 2023. Designers Italia, assieme ai colleghi di Agenzia per l’Italia digitale (AGID) e Accessibility Days, ha voluto affrontare la sfida lanciata nella precedente edizione della manifestazione "Niente su di Noi, senza di Noi", organizzando dei test di usabilità dal vivo, coinvolgendo cittadini e cittadine, utenti anziani o con disabilità, rappresentanti dell’Ente Nazionale Sordi e Unione Italiana Ciechi e Ipovedenti. Ne discutono coloro che hanno organizzato, facilitato e partecipato direttamente all’esperienza dei test di usabilità.
