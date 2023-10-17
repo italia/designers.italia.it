@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Skiplinks - Designers Italia
-  description: "Consentono agli utenti, che navigano utilizzando la tastiera o Screen Reader, di arrivare direttamente al contenuto di interesse"
+  description: "Consentono agli utenti che navigano utilizzando tastiera o tecnologie assistive di saltare ai contenuti di interesse."
   image: null
   twitterImage: null
   canonical: null
@@ -28,7 +28,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Consentono agli utenti, che navigano utilizzando la tastiera o Screen Reader, di arrivare direttamente al contenuto di interesse"
+    subtitle: "Consentono agli utenti che navigano utilizzando tastiera o tecnologie assistive di saltare ai contenuti di interesse"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -72,7 +72,8 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _Inizio stesura_
+              Ogniqualvolta siano necessari collegamenti all'interno di una pagina per saltare a un'altra sezione per gli utenti che navigano con la tastiera o con lettori di schermo. 
+              È raccomandato l'uso a inizio di ogni pagina, prima di ogni altro componente compreso l'header, per permettere agli utenti di poter saltare direttamente ai contenuti di interesse, come il menu di navigazione, il contenuto principale o il pié di pagina, senza dover scorrere tutti i contenuti in sequenza. Particolarmente utile nel caso di pagine con liste menu o filtro molto lunghe. 
 
       - full: true
         noSpace: true
@@ -82,7 +83,20 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Il componente è visivamente nascosto finché non viene attivato (focus) dalla navigazione da tastiera o per mezzo di altro strumento di navigazione assistita.
+
+              ### Attenzione a
+              - Il componente permette di creare scorciatoie che abilitano una navigazione più facile ed efficace da parte degli utenti, metti particolare cura nella sua implementazione.
+              - Nel caso di una scorciatoia verso un menu di navigazione ti suggeriamo di puntare alla prima voce del menu. 
+              - Ricordati di controllare che tutti i link puntino ad ancore presenti nella pagina con `ID HTML` validi, perché spesso questo aspetto viene trascurato in fase di implementazione.
+              
+              ### Buone pratiche sui contenuti
+              - A seconda del contesto puoi usare un semplice skiplink "Vai al contenuto principale" che punti al primo titolo `h1` in pagina, oppure puoi implementare più skiplink che portino a diverse sezioni. Un elenco non esaustivo che può esserti utile, con diverse varianti, valido in molti casi: 
+                - Vai al menu principale / Vai al menu / Salta al menu
+                - Vai al contenuto principale / Vai al contenuto / Salta al contenuto
+                - Vai alla ricerca / Salta alla ricerca
+                - Vai alla sezione feedback / Salta alla sezioen feedback / Lasciaci un feedback 
+                - Vai al pié di pagina / Salta al pié di pagina
 
       - full: true
         noSpace: true
@@ -116,7 +130,11 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano uno skiplinks](/images/design-system/componenti/skiplinks-anatomy.png)
+
+              Il componente buttons è composto da:
+              1. **forma di sfondo**: utile a renderlo individuabile quando visualizzato;
+              2. **etichetta** (label): il testo della call to action, indica sempre un'azione che inizia tipicamente con "Vai" o "Salta".
 
       - full: true
         noSpace: true
@@ -126,7 +144,9 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Il componente diventa visibile dall'attivazione in focus tramite navigazione da tastiera o di altro strumento assistivo. 
+              
+              Alla pressione sul link visualizzato il browser salta all'ancora in pagina referenziata. 
 
       - full: true
         noSpace: true
@@ -136,7 +156,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design di uno skiplinks](/images/design-system/componenti/skiplinks-specs.png)
 
 
       - full: true
