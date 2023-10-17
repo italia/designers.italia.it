@@ -89,6 +89,8 @@ tabs:
               - Il componente permette di creare scorciatoie che abilitano una navigazione più facile ed efficace da parte degli utenti, metti particolare cura nella sua implementazione.
               - Nel caso di una scorciatoia verso un menu di navigazione ti suggeriamo di puntare alla prima voce del menu. 
               - Ricordati di controllare che tutti i link puntino ad ancore presenti nella pagina con `ID HTML` validi, perché spesso questo aspetto viene trascurato in fase di implementazione.
+              - Non racchiudere gli skipkinks in una region `<nav>` e non spostarlo all'interno del componente header.
+              - Alcuni strumenti di verifica dell'accessibilità possono avvertire che il componente non è racchiuso in un "landmark", questo avviso non si applica agli skiplinks quindi si può ignorare. 
               
               ### Buone pratiche sui contenuti
               - A seconda del contesto puoi usare un semplice skiplink "Vai al contenuto principale" che punti al primo titolo `h1` in pagina, oppure puoi implementare più skiplink che portino a diverse sezioni. Un elenco non esaustivo che può esserti utile, con diverse varianti, valido in molti casi: 
