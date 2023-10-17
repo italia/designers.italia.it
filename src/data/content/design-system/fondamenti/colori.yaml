@@ -128,6 +128,45 @@ components:
             il tuo servizio soddisfa il livello AA delle Linee guida per l'accessibilità dei contenuti Web
             (WCAG 2.1).
 
+    - full: true
+      noSpace: true
+      title: Come usare i colori
+      text: Suggerimenti pratici su come utilizzare al meglio la palette di colori.
+      background: null
+      components:
+
+        - name: Table
+          title: Combinazioni
+          responsive: table-responsive-md
+          head:
+            - tag:
+                label: Va bene
+                addonClasses: bg-success
+            - tag:
+                label: Non va bene
+                addonClasses: bg-danger
+          rows:
+            - cols: 
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-good.png)  
+                  Utilizzare il colore `primary` sullo sfondo `primary.lighter`. Utilizzare il colore `inverse` su uno sfondo saturo come `primary`, `secondary` o `emphasis`.
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-wrong.png)
+                  Utilizzare il colore `primary` su uno sfondo come `primary.light`. Utilizzare colore `accent` o `primary` su sfondi saturi e scuri come `secondary` e `emphasis`.
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-system-good.png)  
+                  Utilizzare il colore principale di sistema per il testo su sfondo `light`.  
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-system-wrong.png)  
+                  Utilizzare i colori `base` o `secondary` per il testo su sfondo `success`, `warning` e `alert`.
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-accent-good.png)  
+                  Utilizzare il colore `accent` come sfondo o testo in combinazione con `inverse`.  
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-accent-wrong.png)
+                  Utilizzare colori di testo `secondary` o `muted` su uno sfondo `accent`.
 
     - full: true
       noSpace: true
@@ -157,7 +196,7 @@ components:
                   5.56:1
 
         - name: Table
-          title: Varianti monocromatiche
+          title: Tutte le varianti
           headingLevel: 4
           responsive: table-responsive-md
           head:
