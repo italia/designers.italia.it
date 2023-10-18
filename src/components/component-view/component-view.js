@@ -147,7 +147,7 @@ function ComponentView({
     ));
   }
 
-  const componentStyles = "p-xl-3 d-flex flex-column align-items-center"
+  const componentStyles = "p-xl-3 d-flex flex-column align-items-center";
 
   const accordionStyle = classNames("accordion-collapse collapse", {
     show: accordionOpen,
@@ -170,17 +170,17 @@ function ComponentView({
           <div className="w-100 d-flex align-items-center justify-content-end mb-4">
             {responsiveButtonsItems && (
               <div className="responsive-buttons d-none d-lg-block">
-                <div class="btn-group" role="group" aria-label={viewer.responsiveAriaLabel}>
+                <div
+                  className="btn-group"
+                  role="group"
+                  aria-label={viewer.responsiveAriaLabel}
+                >
                   {responsiveButtonsItems}
                 </div>
               </div>
             )}
             <div className="ms-4">
-              <a
-                href={BSIExampleUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href={BSIExampleUrl} target="_blank" rel="noreferrer">
                 <Icon {...ICON_FULLSCREEN} />
               </a>
             </div>
@@ -196,7 +196,10 @@ function ComponentView({
         </div>
       )}
       {contentTrimmed && accordionShow && (
-        <div className="accordion accordion-left-icon  border-bottom-0" id={accId}>
+        <div
+          className="accordion accordion-left-icon  border-bottom-0"
+          id={accId}
+        >
           <div className="accordion-item">
             <div
               className="d-flex justify-content-between align-items-center"
