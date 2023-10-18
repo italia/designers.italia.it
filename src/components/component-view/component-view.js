@@ -248,13 +248,13 @@ function ComponentView({
               role="region"
               aria-labelledby={headId}
             >
-              <div className="accordion-body p-0">
-                <div aria-hidden="true" className="d-flex flex-row-reverse">
+              <div className="accordion-body p-0 position-relative">
+                <div aria-hidden="true" className="position-absolute end-0">
                   {contentTrimmed && (
                     <Checkbox
                       id={`${idPrefix}-wrap`}
                       label="Mostra codice a capo"
-                      customStyle="me-4 small"
+                      customStyle="me-4"
                       checked={wrappedCode}
                       handleChange={(val) => setWrappedCode(val)}
                     />

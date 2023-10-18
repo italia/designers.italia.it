@@ -1,5 +1,6 @@
 pre {
     max-height:70vh;
+    padding-top: 3rem !important;
 }
 .accordion.accordion-left-icon .accordion-header .accordion-button::before {
     width:1rem;
@@ -11,6 +12,16 @@ pre {
     transition-timing-function: ease-out;
     &.min-default-height {
         min-height: 350px;
+    }
+}
+
+.form-check {
+    label {
+        color: white;
+        font-size: 1rem !important;
+        &::after {
+            border-color: white !important;
+        }
     }
 }
 
