@@ -60,8 +60,8 @@ function ComponentView({
     icon: "sprites.svg#it-fullscreen",
     size: "sm",
     color: "primary",
-    addonClasses: "align-middle me-4 mb-1",
-    ariaLabel: " Mostra in una finestra dedicata",
+    addonClasses: "align-middle me-2",
+    ariaLabel: " Apri il solo componente in una finestra dedicata",
   };
 
   const ICON_SUCCESS = {
@@ -147,10 +147,7 @@ function ComponentView({
     ));
   }
 
-  const componentStyles = classNames(
-    "border-bottom p-xl-3 d-flex flex-column align-items-center",
-    { "pb-4": responsiveButtonsItems },
-  );
+  const componentStyles = "p-xl-3 d-flex flex-column align-items-center"
 
   const accordionStyle = classNames("accordion-collapse collapse", {
     show: accordionOpen,
@@ -170,6 +167,24 @@ function ComponentView({
     <div id={uuid} className="pb-4 mb-5">
       {contentTrimmed && (
         <div className={componentStyles}>
+          <div className="w-100 d-flex align-items-center justify-content-end mb-4">
+            {responsiveButtonsItems && (
+              <div className="responsive-buttons d-none d-lg-block">
+                <div class="btn-group" role="group" aria-label={viewer.responsiveAriaLabel}>
+                  {responsiveButtonsItems}
+                </div>
+              </div>
+            )}
+            <div className="ms-4">
+              <a
+                href={BSIExampleUrl}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Icon {...ICON_FULLSCREEN} />
+              </a>
+            </div>
+          </div>
           <span className="visually-hidden">Inizio componente:</span>
           <iframe
             id={`${idPrefix}-iframe`}
@@ -178,22 +193,10 @@ function ComponentView({
             className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}
           />
           <span className="visually-hidden">Fine componente.</span>
-          {responsiveButtonsItems && (
-            <div className="responsive-buttons d-none d-lg-block">
-              <div className="d-flex align-items-center justify-content-center pb-2 pt-4 mt-2">
-                {viewer.label && (
-                  <span className="small pe-3 text-secondary fw-semibold">
-                    {viewer.label}
-                  </span>
-                )}
-                {responsiveButtonsItems}
-              </div>
-            </div>
-          )}
         </div>
       )}
       {contentTrimmed && accordionShow && (
-        <div className="accordion accordion-left-icon" id={accId}>
+        <div className="accordion accordion-left-icon  border-bottom-0" id={accId}>
           <div className="accordion-item">
             <div
               className="d-flex justify-content-between align-items-center"
@@ -221,14 +224,6 @@ function ComponentView({
                     <Icon {...ICON_COPY_CODE} />
                   </Button>
                 )}
-                <a
-                  href={BSIExampleUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="Mostra il solo componente in una finestra dedicata"
-                >
-                  <Icon {...ICON_FULLSCREEN} />
-                </a>
                 {accordionUrl && (
                   <a
                     href={accordionUrl}
@@ -255,7 +250,7 @@ function ComponentView({
                     <Checkbox
                       id={`${idPrefix}-wrap`}
                       label="Mostra codice a capo"
-                      customStyle="me-4"
+                      customStyle="me-4 small"
                       checked={wrappedCode}
                       handleChange={(val) => setWrappedCode(val)}
                     />
