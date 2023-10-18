@@ -61,7 +61,7 @@ function ComponentView({
     size: "sm",
     color: "primary",
     addonClasses: "align-middle me-2",
-    ariaLabel: " Apri il solo componente in una finestra dedicata",
+    ariaLabel: " Apri l'anteprima in una nuova finestra",
   };
 
   const ICON_SUCCESS = {
@@ -185,14 +185,14 @@ function ComponentView({
               </a>
             </div>
           </div>
-          <span className="visually-hidden">Inizio componente:</span>
+          <span className="visually-hidden">Inizio anteprima:</span>
           <iframe
             id={`${idPrefix}-iframe`}
             src={BSIExampleUrl}
             title={`Variante: ${variantName}`}
             className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}
           />
-          <span className="visually-hidden">Fine componente.</span>
+          <span className="visually-hidden">Fine anteprima.</span>
         </div>
       )}
       {contentTrimmed && accordionShow && (
