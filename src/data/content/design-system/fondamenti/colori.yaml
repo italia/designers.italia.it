@@ -116,15 +116,14 @@ components:
           headingLevel: 3
           noSpace: true
           text: |
-            I colori contribuiscono alla creazione di una gerarchia visiva che mette in evidenza ciò che è davvero importante nel contesto della pagina. Non sono quindi elementi puramente decorativi, ma strumenti essenziali per orientare e semplificare l'esperienza utente attraverso lo stimolo visivo.
+            I colori contribuiscono alla creazione di una gerarchia visiva che mette in evidenza ciò che è davvero importante nel contesto della pagina. Non sono quindi elementi puramente decorativi, ma strumenti essenziali per orientare e semplificare l'esperienza utente attraverso lo stimolo visivo. 
         - name: TextImageCta
           noSpace: true
           title: Garantisci un contrasto minimo
           headingLevel: 3
           text: |
             Assicurati che il rapporto di contrasto del testo e degli elementi interattivi nel
-            il tuo servizio soddisfi il livello AA delle Linee guida per l'accessibilità dei contenuti Web
-            (WCAG 2.1).
+            il tuo servizio soddisfi i requisiti previsti dagli standard WCAG 2.1.
 
     - full: true
       noSpace: true
@@ -136,6 +135,7 @@ components:
         - name: Table
           title: Combinazioni
           responsive: table-responsive-md
+          addonClasses: mb-5
           head:
             - tag:
                 label: Va bene
@@ -165,6 +165,25 @@ components:
               - text: |
                   ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-accent-wrong.png)
                   Utilizzare colori di testo `secondary` o `muted` su uno sfondo `accent`.
+
+        - name: TextImageCta
+          title: Accessibilità
+          headingLevel: 3
+          text: |
+            Il contrasto di colore tra il testo e il suo sfondo deve soddisfare gli [standard WCAG 2.1](https://www.w3.org/Translations/WCAG21-it/).
+
+            I requisiti per soddisfare il livello AA sono:
+            - 4.5:1 per il testo normale
+            - 3:1 per il testo grande (>24px)
+            - 3:1 per elementi grafici e UI
+            
+            Nessun contrasto minimo è invece richiesto per elementi disabilitati e decorativi.
+
+            I colori contribuiscono alla creazione di una gerarchia visiva ma non devono essere usati come unica modalità per rappresentare informazioni o azioni, secondo il [criterio 1.4.1](https://www.w3.org/Translations/WCAG21-it/#use-of-color) delle WCAG 2.1.
+
+            Utilizza uno strumento per il [controllo del contrasto](https://webaim.org/resources/contrastchecker/) oppure un [plugin per Figma](https://www.figma.com/community/plugin/748533339900865323/Contrast) per testare il rispetto dei requisiti.
+
+            I design token rispettano tutti i requsiti richiesti. Sono pronti per essere utilizzati senza la necessità di fare ulteriori controlli.
 
     - full: true
       title: Palette
