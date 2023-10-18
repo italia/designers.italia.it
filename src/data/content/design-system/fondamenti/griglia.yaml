@@ -111,6 +111,7 @@ components:
         - name: TextImageCta
           title: Anatomia
           headingLevel: 2
+          noSpace: true
           text: |
               ![Gli elementi della griglia](/images/design-system/fondamenti/grid-anatomy.png)
 
@@ -152,8 +153,8 @@ components:
 
         - name: Table
           # title: Quale è l'ecosistema del design system
-          responsive: table-responsive-md
-          # addonClasses: fixed
+          responsive: table-responsive
+          addonClasses: mb-5
           head:
             - text: null
             - text: fino a 576px
@@ -165,6 +166,7 @@ components:
           rows:
             - cols:
               - text: Contenitore base
+                scope: row
               - text: 100%
               - text: 540px
               - text: 720px
@@ -173,6 +175,7 @@ components:
               - text: 1320px
             - cols:
               - text: Contenitore responsive (small)
+                scope: row
               - text: 100%
               - text: 100%
               - text: 720px
@@ -181,6 +184,7 @@ components:
               - text: 1320px
             - cols:
               - text: Contenitore responsive (medium)
+                scope: row                
               - text: 100%
               - text: 100%
               - text: 100%
@@ -189,6 +193,7 @@ components:
               - text: 1320px
             - cols:
               - text: Contenitore responsive (large)
+                scope: row
               - text: 100%
               - text: 100%
               - text: 100%
@@ -197,6 +202,7 @@ components:
               - text: 1320px
             - cols:
               - text: Contenitore responsive (extra large)
+                scope: row
               - text: 100%
               - text: 100%
               - text: 100%
@@ -205,6 +211,7 @@ components:
               - text: 1320px
             - cols:
               - text: Contenitore responsive (extra extra large)
+                scope: row
               - text: 100%
               - text: 100%
               - text: 100%
@@ -213,6 +220,7 @@ components:
               - text: 1320px
             - cols:
               - text: Intercolonna
+                scope: row
               - text: 12px
               - text: 12px
               - text: 24px
@@ -221,6 +229,7 @@ components:
               - text: 24px
             - cols:
               - text: Intercolonna variabile
+                scope: row
               - text: 12px
               - text: 12px
               - text: 20px
@@ -229,6 +238,7 @@ components:
               - text: 28px
             - cols:
               - text: Margine
+                scope: row
               - text: 12px
               - text: 12px
               - text: 12px
