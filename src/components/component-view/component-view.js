@@ -132,7 +132,8 @@ function ComponentView({
   const [previewWidth, setPreviewWidth] = useState(" viewer-desktop");
   const changeResolution = (e) => {
     e.preventDefault();
-    const res = e.target.textContent; // mobile, tablet, desktop
+    let res = e.target.textContent; // mobile, tablet, 100%
+    if (res === "100%") res = "desktop";
     setPreviewWidth(` viewer-${res}`);
   };
 
