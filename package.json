@@ -19,7 +19,7 @@
     "site"
   ],
   "scripts": {
-    "preinstall": "rm -fr /tmp/bi && git clone https://github.com/italia/bootstrap-italia.git /tmp/bi && cd /tmp/bi && git checkout fix/load-script-youtube && npm ci && npm run build",
+    "preinstall": "rm -fr /tmp/bi && git clone git@github.com:italia/bootstrap-italia.git /tmp/bi && cd /tmp/bi && git checkout fix/load-script-youtube && npm ci && npm run build",
     "postinstall": "rm -fr node_modules/bootstrap-italia/ && mv /tmp/bi node_modules/bootstrap-italia",
     "prepare-lib": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
     "prepare-content": "node ./scripts/prepare.js",
