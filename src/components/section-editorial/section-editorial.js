@@ -13,6 +13,8 @@ import ImageIcons from "../image-icons/image-icons";
 import Table from "../table/table";
 import Button from "../button/button";
 import ComponentView from "../component-view/component-view";
+import CookieRemove from "../cookieremove/cookieremove";
+import MediaPlayer from "../media-player/media-player";
 
 function SectionEditorial({
   title,
@@ -34,11 +36,13 @@ function SectionEditorial({
     Card,
     Kangaroo,
     TextImageCta,
+    CookieRemove,
     Numbers,
     TitleText,
     ImgFull,
     ImageIcons,
     Table,
+    MediaPlayer,
     ComponentView,
   };
 
