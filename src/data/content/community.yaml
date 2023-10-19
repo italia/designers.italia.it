@@ -65,6 +65,9 @@ components:
               label: Notizie
             - url: "#articoli-di-approfondimento"
               label: Articoli di approfondimento
+            # TODO: uncomment this as soon as media archive is ready
+            # - url: "media/"
+            #   label: Media
             - url: "piano-attivita/"
               label: Piano attività
             - url: "contatti/"
@@ -210,6 +213,20 @@ components:
 
       cards:
 
+      - title: 'Aziende sanitarie locali: un nuovo modello per migliorare il sito web'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Designers Italia avvia la fase di ricerca con gli attori interessati.
+        img: /images/community/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/"
+        dateInfo: 17 ottobre 2023
+        tags: [Modelli di sito, Adozione modelli]
+
       - title: 'Partono i lavori per il modello di sito web per i musei civici'
         headingLevel: 4
         customCol: col-lg-4
@@ -347,88 +364,37 @@ components:
             size: xs
         moreInfo: di Marco Maria Pedrazzo
 
-    # XXX DISABLED MEDIA AREA > WILL GO TO NEXT MILESTONE
-
+    # TODO: uncomment this as soon as media archive is ready
     # - id: media
     #   title: Media
     #   headingLevel: 3
-    #   text: "I video degli eventi a cui partecipiamo, i tutorial tecnici e i podcast sul progetto Designers Italia"
+    #   text: "I video, i tutorial e i podcast del progetto Designers Italia"
     #   col4: true
     #   background: null
     #   buttons:
-    #   - btnStyle: primary
+    #   - type: button
+    #     btnStyle: primary
     #     label: Esplora tutti i media
+    #     url: "/community/media/"
     #     addonStyle: d-block
-    #     disabled: true
+    #     disabled: false
 
     #   cards:
-    #   - title: "Community Call: il bottone SPID e gli altri"
+    #   - title: "Il design system del Paese e la responsabilità di progettare interfacce pubbliche"
     #     headingLevel: 4
     #     titleSmall: true
-    #     moreInfo: durata 21 minuti
     #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
+    #     img: /images/community/media-thumbnails/20230518-accessibility-days-2023.jpg
+    #     alt: ""
     #     imgRatio: 16x9
     #     imgPlaceholder: false
     #     fullHeight: true
     #     iconOverlay:
     #       icon: sprites.svg#it-video
     #       ariaLabel: Video
-    #     url: "#"
+    #     url: "media/20230518-accessibility-days-2023/"
     #     tag:
-    #       label: Registrazione
-
-    #   - title: Come usare il design system del Paese quanso sei al mare
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 1 minuto
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Tutorial
-
-    #   - title: Fanelli parla di Designers Italia
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 21 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-hearing
-    #       ariaLabel: Audio
-    #     url: "#"
-    #     tag:
-    #       label: Podcast
-
-    #   - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 10 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Registrazione
+    #       label: Intervento
 
 
 
