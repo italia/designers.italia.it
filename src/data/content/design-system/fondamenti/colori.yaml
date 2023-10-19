@@ -110,7 +110,6 @@ components:
           headingLevel: 3
           text: |
             Ciascun colore della palette ha un ruolo e funzione specifica. Ad esempio, il colore primario è associato ad elementi di azione mentre un colore neutro è riservato ad elementi di supporto o sfondi. Il rispetto di questi ruoli assicura coerenza visiva e chiarezza nella fruizione dei contenuti.
-
         - name: TextImageCta
           title: Applica con parsimonia
           headingLevel: 3
@@ -126,78 +125,11 @@ components:
             il tuo servizio soddisfi i requisiti previsti dagli standard WCAG 2.1.
 
     - full: true
-      noSpace: true
-      title: Come usare i colori
-      text: Suggerimenti pratici su come utilizzare al meglio la palette di colori.
-      background: null
-      components:
-
-        - name: Table
-          title: Combinazioni
-          responsive: table-responsive-md
-          addonClasses: mb-5
-          head:
-            - tag:
-                label: Va bene
-                addonClasses: bg-success
-            - tag:
-                label: Non va bene
-                addonClasses: bg-danger
-          rows:
-            - cols: 
-              - text: |
-                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-good.png)
-                  
-                  Utilizzare il colore `primary` sullo sfondo `primary.lighter`. Utilizzare il colore `inverse` su uno sfondo saturo come `primary`, `secondary` o `emphasis`.
-              - text: |
-                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-wrong.png)
-                 
-                  Utilizzare il colore `primary` su uno sfondo come `primary.light`. Utilizzare colore `accent` o `primary` su sfondi saturi e scuri come `secondary` e `emphasis`.
-            - cols:
-              - text: |
-                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-system-good.png)
-                  
-                  Utilizzare il colore principale di sistema per il testo su sfondo `light`.  
-              - text: |
-                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-system-wrong.png)
-                  
-                  Utilizzare i colori `base` o `secondary` per il testo su sfondo `success`, `warning` e `alert`.
-            - cols:
-              - text: |
-                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-accent-good.png)
-
-                  Utilizzare il colore `accent` come sfondo o testo in combinazione con `inverse`.  
-              - text: |
-                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-accent-wrong.png)
-                  
-                  Utilizzare colori di testo `secondary` o `muted` su uno sfondo `accent`.
-
-        - name: TextImageCta
-          title: Accessibilità
-          headingLevel: 3
-          noSpace: true
-          text: |
-            Il contrasto di colore tra il testo e il suo sfondo deve soddisfare gli [standard WCAG 2.1](https://www.w3.org/Translations/WCAG21-it/).
-
-            I requisiti per soddisfare il livello AA sono:
-            - 4.5:1 per il testo normale
-            - 3:1 per il testo grande (>24px)
-            - 3:1 per elementi grafici e UI
-            
-            Nessun contrasto minimo è invece richiesto per elementi disabilitati e decorativi.
-
-            I colori contribuiscono alla creazione di una gerarchia visiva ma non devono essere usati come unica modalità per rappresentare informazioni o azioni, secondo il [criterio 1.4.1](https://www.w3.org/Translations/WCAG21-it/#use-of-color) delle WCAG 2.1.
-
-            Utilizza uno strumento per il [controllo del contrasto](https://webaim.org/resources/contrastchecker/) oppure un [plugin per Figma](https://www.figma.com/community/plugin/748533339900865323/Contrast) per testare il rispetto dei requisiti.
-
-            Se utilizzi i design token non devi fare nulla, sono stati già verifcati.
-
-    - full: true
       title: Palette
+      noSpace: true
       background: null
-      text: 'La palette prevede quattro tipologie di colori: primario, accento, neutri e di sistema.' 
+      text: 'Ogni colore presente nella palette prevede dieci varianti monocromatiche.' 
       components:
-
         # Colore primario
         - name: Table
           title: Colore primario
@@ -977,4 +909,83 @@ components:
                   36, 100%, 20%
               - text: |
                     9.4:1
+
+    - full: true
+      title: Come usare i colori
+      text: Suggerimenti pratici su come utilizzare al meglio la palette di colori.
+      background: null
+      components:
+
+        - name: TextImageCta
+          title: Tipologie di colori
+          headingLevel: 3
+          nospace: true
+          text: |
+            Sono previsiti quattro tipologie di colori:
+
+            - **colore primario**, rappresenta il colore ufficiale del design system, rappresentando l'identità dei prodotti digitali della pubblica amministrazione; è utilizzato anche per gli elementi interattivi, come links o pulsanti;
+            - **colore accento**, è un'alternativa al colore primario per elementi interattivi, le varianti previste sono raccomandate per un utilizzo su sfondi saturi;
+            - **colori di sistema**, rappresentano i tre principali stati che informano l'utente sullo stato del sistema in un prodotto digitale;
+            - **colori neutri**, sono utilizzati per elementi tipografici, sfondi, bordi e separatori nella maggior parte dei componenti.
+
+        - name: Table
+          title: Combinazioni
+          responsive: table-responsive-md
+          addonClasses: mb-5
+          head:
+            - tag:
+                label: Va bene
+                addonClasses: bg-success
+            - tag:
+                label: Non va bene
+                addonClasses: bg-danger
+          rows:
+            - cols: 
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-good.png)
+                  
+                  Utilizzare il colore `primary` sullo sfondo `primary.lighter`. Utilizzare il colore `inverse` su uno sfondo saturo come `primary`, `secondary` o `emphasis`.
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-wrong.png)
+                 
+                  Utilizzare il colore `primary` su uno sfondo come `primary.light`. Utilizzare colore `accent` o `primary` su sfondi saturi e scuri come `secondary` e `emphasis`.
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-system-good.png)
+                  
+                  Utilizzare il colore principale di sistema per il testo su sfondo `light`.  
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-system-wrong.png)
+                  
+                  Utilizzare i colori `base` o `secondary` per il testo su sfondo `success`, `warning` e `alert`.
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-accent-good.png)
+
+                  Utilizzare il colore `accent` come sfondo o testo in combinazione con `inverse`.  
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/colors-usage-accent-wrong.png)
+                  
+                  Utilizzare colori di testo `secondary` o `muted` su uno sfondo `accent`.
+
+        - name: TextImageCta
+          title: Accessibilità
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Il contrasto di colore tra il testo e il suo sfondo deve soddisfare gli [standard WCAG 2.1](https://www.w3.org/Translations/WCAG21-it/).
+
+            I requisiti per soddisfare il livello AA sono:
+            - 4.5:1 per il testo normale
+            - 3:1 per il testo grande (>24px)
+            - 3:1 per elementi grafici e UI
             
+            Nessun contrasto minimo è invece richiesto per elementi disabilitati e decorativi.
+
+            I colori contribuiscono alla creazione di una gerarchia visiva ma non devono essere usati come unica modalità per rappresentare informazioni o azioni, secondo il [criterio 1.4.1](https://www.w3.org/Translations/WCAG21-it/#use-of-color) delle WCAG 2.1.
+
+            Utilizza uno strumento per il [controllo del contrasto](https://webaim.org/resources/contrastchecker/) oppure un [plugin per Figma](https://www.figma.com/community/plugin/748533339900865323/Contrast) per testare il rispetto dei requisiti.
+
+            Se utilizzi i design token non devi fare nulla, sono stati già verifcati.
+
+ 
