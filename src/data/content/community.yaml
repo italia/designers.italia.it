@@ -65,9 +65,8 @@ components:
               label: Notizie
             - url: "#articoli-di-approfondimento"
               label: Articoli di approfondimento
-            # TODO: uncomment this as soon as media archive is ready
-            # - url: "media/"
-            #   label: Media
+            - url: "media/"
+              label: Media
             - url: "piano-attivita/"
               label: Piano attività
             - url: "contatti/"
@@ -364,37 +363,38 @@ components:
             size: xs
         moreInfo: di Marco Maria Pedrazzo
 
-    # TODO: uncomment this as soon as media archive is ready
-    # - id: media
-    #   title: Media
-    #   headingLevel: 3
-    #   text: "I video, i tutorial e i podcast del progetto Designers Italia"
-    #   col4: true
-    #   background: null
-    #   buttons:
-    #   - type: button
-    #     btnStyle: primary
-    #     label: Esplora tutti i media
-    #     url: "/community/media/"
-    #     addonStyle: d-block
-    #     disabled: false
+    # MEDIA AREA
+    
+    - id: media
+      title: Media
+      headingLevel: 3
+      text: "I video, i tutorial e i podcast del progetto Designers Italia"
+      col4: true
+      background: null
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti i media
+        url: "/community/media/"
+        addonStyle: d-block
+        disabled: false
 
-    #   cards:
-    #   - title: "Il design system del Paese e la responsabilità di progettare interfacce pubbliche"
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     cardEvent: true
-    #     img: /images/community/media-thumbnails/20230518-accessibility-days-2023.jpg
-    #     alt: ""
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "media/20230518-accessibility-days-2023/"
-    #     tag:
-    #       label: Intervento
+      cards:
+      - title: "Il design system del Paese e la responsabilità di progettare interfacce pubbliche"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230518-accessibility-days-2023.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "media/20230518-accessibility-days-2023/"
+        tag:
+          label: Intervento
 
 
 
