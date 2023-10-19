@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Video player - Designers Italia
-  description: "Componente utile per mostrare video e audio con sottotitoli e trascrizioni, da locale o in streaming"
+  description: "Componente utile per mostrare video dal proprio sito o incorporati da piattaforme terze rispettando privacy e accessibilità."
   image: null
   twitterImage: null
   canonical: null
@@ -28,7 +28,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Componente utile per mostrare video e audio con sottotitoli e trascrizioni, da locale o in streaming"
+    subtitle: "Componente utile per mostrare video dal proprio sito o incorporati da piattaforme terze rispettando privacy e accessibilità"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -72,7 +72,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _Inizio stesura_
+              Per mostrare video nelle pagine del proprio sito. È possibile utilizzarlo per video caricati nel proprio hosting o per video provenienti da piattaforme di terze parti.  
 
       - full: true
         noSpace: true
@@ -82,7 +82,20 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Carica nei parametri del video player i sottotitoli (ad esempio fornendo l'url di un file in formato `.vtt`)
+              - Inserisci la trascrizione o un link a questa nello spazio dedicato.
+              - Implementa il meccanismo di gestione overlay del consenso ogniqualvolta utilizzi video provenienti da piattaforme di terze parti (ad esempio Youtube). 
+
+              ### Attenzione a
+              - Non forzare il player in modalità "auto-play", lascia all'utente la facoltà di farlo iniziare, mettere in pausa o interrompere. 
+              - Ottimizza i video per lo streaming se li carichi nel tuo spazio hosting e non in una piattaforma dedicata.   
+              - Se utilizzi video provenienti da piattaforme di terze parti dovrai collegare la tua Cookie Policy nel meccanismo di overlay, aggiornare la stessa cookie policy con l'aiuto del Responsabile trattamendo dati del tuo ente e implementare un meccanismo per la revoca del consenso, ad esempio come quello implementato su questo stesso sito web designers.italia.it. 
+
+              ### Buone pratiche per i contenuti
+              - È auspicabile l'inserimento di una immagine "thumbnail" che sostituisca il video in attesa del caricamento e/o consenso. 
+              - Devi fornire sottotitoli e trascrizioni come da normativa sull'accessibilità. Ti ricordiamo che i soli sottotitoli generati in automatico da una piattaforma non sono sufficienti, se non controllati ed eventualmente corretti o integrati da un umano.
+              - ... 
+
 
       - full: true
         noSpace: true
@@ -116,7 +129,16 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              _Immagine in via di definizione. Il componente è in lavorazione in UI Kit Italia, [segui i lavori o contribuisci nella issue specifica](https://github.com/italia/design-ui-kit/issues/100)._
+
+              Il componente hero nelle sue diverse varianti è composto da questi elementi: 
+
+              1. **immagine thumbnail**: opzionale, utile per introdurre i contenuti del video e/o nei casi di attesa accettazione dell'overlay di consenso; 
+              2. **overlay di consenso**: necesasrio in tutti i casi di streaming da piattaforme di terze parti, abilita l'implementazione di un meccanismo gestione cookie a norma GDPR;  
+              3. **video**: contenitore per il video 16:9 o 4:3;  
+              4. **sottotitoli**: necessari in tutti i casi ci sia parlato nel video;
+              5. **controlli**: spazio per la barra di controllo della riproduzione;
+              5. **trascrizione**: necessaria in tutti i casi ci sia parlato nel videoo necessità di descrizione di rumori e altro tipo di audio.
 
       - full: true
         noSpace: true
@@ -126,7 +148,7 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le varianti di hero sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
 
       - full: true
         noSpace: true
@@ -136,7 +158,7 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              _Immagine in via di definizione. Il componente è in lavorazione in UI Kit Italia, [segui i lavori o contribuisci nella issue specifica](https://github.com/italia/design-ui-kit/issues/100)._
 
 
       - full: true
