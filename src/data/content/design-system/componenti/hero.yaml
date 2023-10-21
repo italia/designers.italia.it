@@ -124,11 +124,16 @@ tabs:
         noSpace: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/hero-anatomy.jpg
+            alt: "Gli elementi che compongono l'hero"
+          - name: TextImageCta
+            noSpace: true
             text: |
-              _Immagine in via di definizione. Il componente è in lavorazione in UI Kit Italia, [segui i lavori o contribuisci nella issue specifica](https://github.com/italia/design-ui-kit/issues/101)._
               
               Il componente hero nelle sue diverse varianti è composto da questi elementi: 
 
@@ -157,8 +162,11 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              _Immagine in via di definizione. Il componente è in lavorazione in UI Kit Italia, [segui i lavori o contribuisci nella issue specifica](https://github.com/italia/design-ui-kit/issues/101)._
-
+              Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/hero-specs.png
+            alt: "L'hero con la misura di tutte le spaziature"
 
       - full: true
         noSpace: true
