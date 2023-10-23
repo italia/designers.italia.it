@@ -90,6 +90,7 @@ tabs:
               - Fai attenzione al corretto contrasto (minimo) tra testo e sfondo nella variante "Con testo e immagine di sfondo"
               - Scegli il corretto livello di heading `h1-h6` per il titolo a seconda del contesto e della struttura di pagina.
               - Usa la corretta semantica `html` per le call to action laddove presenti: `<a>` per link di navigazione o ancore, `<button>` per azioni. 
+              - Usa il componente hero con approccio "fullwidth", sfrutta cioè tutta la larghezza della viewport.
               
               ### Buone pratiche sui contenuti
               - Se usi la variante del componente con immagine e testo abbi cura di progettare un titolo e una descrizione brevi e concisi poiché le persone tendono a scansionare il testo e a evitare la lettura di porzioni di testo lunghe. La descrizione ha l'obiettivo di aggiungere maggiore contesto all'informazione principale contenuta nel titolo. 
@@ -124,11 +125,16 @@ tabs:
         noSpace: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/hero-anatomy.jpg
+            alt: "Gli elementi che compongono l'hero"
+          - name: TextImageCta
+            noSpace: true
             text: |
-              _Immagine in via di definizione. Il componente è in lavorazione in UI Kit Italia, [segui i lavori o contribuisci nella issue specifica](https://github.com/italia/design-ui-kit/issues/101)._
               
               Il componente hero nelle sue diverse varianti è composto da questi elementi: 
 
@@ -153,12 +159,18 @@ tabs:
         noSpace: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Specifiche di design
             headingLevel: 2
             text: |
-              _Immagine in via di definizione. Il componente è in lavorazione in UI Kit Italia, [segui i lavori o contribuisci nella issue specifica](https://github.com/italia/design-ui-kit/issues/101)._
-
+              Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/hero-specs.png
+            alt: "L'hero con la misura di tutte le spaziature"
+          - name: TextImageCta
+            noSpace: false
+            # text: |    
 
       - full: true
         noSpace: true
