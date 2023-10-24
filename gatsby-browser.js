@@ -1,7 +1,10 @@
-exports.shouldUpdateScroll = ({ routerProps: { location } }) => {
-  if (location.hash === "") {
-    window.scrollTo(0, 0);
-    document.scrollingElement.scrollTop = 0;
-  }
-  return false;
-};
+exports.shouldUpdateScroll = ({
+  routerProps: { location },
+  getSavedScrollPosition
+}) => {
+  const currentPosition = getSavedScrollPosition(location)
+
+  window.scrollTo(...(currentPosition || [0, 0]))
+
+  return false
+}
