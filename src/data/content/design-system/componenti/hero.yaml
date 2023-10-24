@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Hero - Designers Italia
-  description: "Un componente per la presentazione di contenuti in evidenza"
+  description: "Un'ampia sezione in evidenza, che di solito appare come uno dei primi elementi di una pagina; spesso contiene un'immagine a tutta larghezza e può contenere una testata e un invito all'azione (call to action)."
   image: null
   twitterImage: null
   canonical: null
@@ -28,7 +28,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Un componente per la presentazione di contenuti in evidenza"
+    subtitle: "Un'ampia sezione in evidenza, che di solito appare come uno dei primi elementi di una pagina; spesso contiene un'immagine a tutta larghezza e può contenere una testata e un invito all'azione (call to action)"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -71,7 +71,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente hero può essere usato per guidare l'utente verso un contenuto in evidenza e una call to action, oppure come apertura di grande impatto visivo della pagina che possa invogliare gli utenti a scorrere ulteriori contenuti. 
 
       - full: true
         noSpace: true
@@ -81,7 +81,21 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Usa le varianti con solo immagine per creare aperture di pagina d'effetto.
+              - Usa le varianti con testo e call to action se vuoi mettere in evidenza un contenuto del sito.
+              
+              ### Attenzione a
+              - Non usare più componenti hero sulla stessa pagina. 
+              - Usa il componente hero con moderazione, consideralo come fosse una copertina o un banner molto in evidenza. Difficilmente avrai bisogno di troppe copertine o banner nell'ambito dello stesso sito o servizio.
+              - Fai attenzione al corretto contrasto (minimo) tra testo e sfondo nella variante "Con testo e immagine di sfondo"
+              - Scegli il corretto livello di heading `h1-h6` per il titolo a seconda del contesto e della struttura di pagina.
+              - Usa la corretta semantica `html` per le call to action laddove presenti: `<a>` per link di navigazione o ancore, `<button>` per azioni. 
+              - Usa il componente hero con approccio "fullwidth", sfrutta cioè tutta la larghezza della viewport.
+              
+              ### Buone pratiche sui contenuti
+              - Se usi la variante del componente con immagine e testo abbi cura di progettare un titolo e una descrizione brevi e concisi poiché le persone tendono a scansionare il testo e a evitare la lettura di porzioni di testo lunghe. La descrizione ha l'obiettivo di aggiungere maggiore contesto all'informazione principale contenuta nel titolo. 
+              - Usa un linguaggio semplice.
+              - Prediligi l'uso di verbi per orientare le azioni anticipate dalla call to action primaria e da eventuali CTA secondarie. 
 
       - full: true
         noSpace: true
@@ -111,11 +125,25 @@ tabs:
         noSpace: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/hero-anatomy.jpg
+            alt: "Gli elementi che compongono l'hero"
+          - name: TextImageCta
+            noSpace: true
             text: |
-              _In stesura_
+              
+              Il componente hero nelle sue diverse varianti è composto da questi elementi: 
+
+              1. **contenitore con immagine o colore di sfondo**: definisce lo stile del componente, può essere un colore primario oppure un'immagine che si adatta in modo responsivo al contenitore, può essere grande o più piccolo in altezza;
+              2. **overlay di colore**: opzionale, utile per branding e accessibilità del testo sull'immagine;  
+              3. **occhiello**: opzionale, può ospitare ad esempio la categoria o un altro attributo del contenuto in evidenza o della pagina; 
+              4. **titolo**: opzionale, titolo del contenuto in evidenza o della pagina;
+              5. **testo**: opzionale, descrizione breve del contenuto in evidenza o della pagina;
+              5. **call to action**: opzionale, spazio che può ospitare uno o più pulsanti di navigazione o azione.
 
       - full: true
         noSpace: true
@@ -125,18 +153,24 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le varianti di hero sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
 
       - full: true
         noSpace: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
-
+              Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/hero-specs.png
+            alt: "L'hero con la misura di tutte le spaziature"
+          - name: TextImageCta
+            noSpace: false
+            # text: |    
 
       - full: true
         noSpace: true
