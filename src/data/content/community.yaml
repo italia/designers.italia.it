@@ -101,6 +101,116 @@ components:
 
 
   highlightCardsLoop:
+
+    - id: notizie
+      title: Notizie
+      headingLevel: 3
+      text: Le ultime notizie sulle attività del progetto Designers Italia
+      col4: false
+      background: null
+      buttons:
+      - btnStyle: primary
+        label: Esplora tutte le notizie
+        addonStyle: d-block
+        url: "/community/notizie/"
+        disabled: false
+
+      cards:
+
+      - title: 'Nuovi rilasci del design system del Paese e delle risorse di progettazione e sviluppo'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Tra le principali novità, il player video attento a privacy e accessibilità, e nuove schede informative.
+        img: /images/community/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo/"
+        dateInfo: 24 ottobre 2023
+        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia]
+
+      - title: 'Aziende sanitarie locali: un nuovo modello per migliorare il sito web'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Designers Italia avvia la fase di ricerca con gli attori interessati.
+        img: /images/community/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/"
+        dateInfo: 17 ottobre 2023
+        tags: [Modelli di sito, Adozione modelli]
+
+      - title: 'Partono i lavori per il modello di sito web per i musei civici'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale.
+        img: /images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/"
+        dateInfo: 27 settembre 2023
+        tags: [Modelli di sito, Adozione modelli]
+
+      - title: 'Prendi parte anche tu all’evoluzione del design system del Paese'
+        headingLevel: 4
+        text: Scopri tutte le novità per collaborare alla realizzazione della documentazione e delle risorse.
+        img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
+        dateInfo: 25 settembre 2023
+        tags: [Design system]
+
+      - title: 'Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto'
+        headingLevel: 4
+        text: Ora tutti i file di riferimento dei Modelli di siti e servizi di Designers Italia sono disponibili esclusivamente in formato aperto.
+        img: /images/community/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto/"
+        dateInfo: 01 settembre 2023
+        tags: [Modelli di sito, Adozione modelli]
+
+      - title: 'I libri per l’estate consigliati da Designers Italia'
+        headingLevel: 4
+        text: Come ogni anno, le esperte e gli esperti del Dipartimento per la trasformazione digitale condividono alcuni libri da scoprire durante le ferie estive.
+        img: /images/community/20230802-i-libri-per-l-estate-consigliati-da-designers-italia-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20230802-i-libri-per-l-estate-consigliati-da-designers-italia/"
+        dateInfo: 02 agosto 2023
+        tags: [Cultura progettuale]
+
+      topics:
+        title: Nelle notizie si parla di
+        headingLevel: 4
+        icon:
+          icon: sprites.svg#it-horn
+          color: secondary
+          hidden: true
+        button:
+          url: "/argomenti/"
+          btnStyle: outline-secondary
+          label: Scopri tutti gli argomenti
+        tags: [Accessibilità,Privacy by design,Ricerca utente,Sviluppo front end,Design system,Test di usabilità]
+  
     - id: eventi
       title: Eventi
       headingLevel: 3
@@ -179,108 +289,6 @@ components:
         url: "/community/eventi/20230516-forum-pa-2023-servizi-e-piattaforme-per-la-cittadinanza-digitale"
         tag:
           label: Talk
-
-
-      # - title: "Titolo dell’evento senza immagine!"
-      #   headingLevel: 4
-      #   cardEvent: true
-      #   imgRatio: 4x3
-      #   imgPlaceholder: true
-      #   fullHeight: true
-      #   dateOverlay:
-      #     day: 18
-      #     month: Dicembre
-      #   url: "#"
-      #   text: |
-      #     Descrizione **test**
-      #   tag:
-      #     label: Invito
-
-
-
-    - id: notizie
-      title: Notizie
-      headingLevel: 3
-      text: Le ultime notizie sulle attività del progetto Designers Italia
-      col4: false
-      background: null
-      buttons:
-      - btnStyle: primary
-        label: Esplora tutte le notizie
-        addonStyle: d-block
-        url: "/community/notizie/"
-        disabled: false
-
-      cards:
-
-      - title: 'Nuovi rilasci del design system del Paese e delle risorse di progettazione e sviluppo'
-        headingLevel: 4
-        customCol: col-lg-4
-        text: Tra le principali novità, il player video attento a privacy e accessibilità, e nuove schede informative.
-        img: /images/community/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo-1400x723.png
-        alt: ""
-        imgRatio: 21x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: "/community/notizie/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo/"
-        dateInfo: 24 ottobre 2023
-        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia]
-
-      - title: 'Aziende sanitarie locali: un nuovo modello per migliorare il sito web'
-        headingLevel: 4
-        customCol: col-lg-4
-        text: Designers Italia avvia la fase di ricerca con gli attori interessati.
-        img: /images/community/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web-1400x723.png
-        alt: ""
-        imgRatio: 21x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/"
-        dateInfo: 17 ottobre 2023
-        tags: [Modelli di sito, Adozione modelli]
-
-      - title: 'Partono i lavori per il modello di sito web per i musei civici'
-        headingLevel: 4
-        customCol: col-lg-4
-        text: Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale.
-        img: /images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png
-        alt: ""
-        imgRatio: 21x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/"
-        dateInfo: 27 settembre 2023
-        tags: [Modelli di sito, Adozione modelli]
-
-      - title: 'Prendi parte anche tu all’evoluzione del design system del Paese'
-        headingLevel: 4
-        text: Scopri tutte le novità per collaborare alla realizzazione della documentazione e delle risorse.
-        img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1400x723.png
-        alt: ""
-        imgRatio: 21x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
-        dateInfo: 25 settembre 2023
-        tags: [Design system]
-
-      topics:
-        title: Nelle notizie si parla di
-        headingLevel: 4
-        icon:
-          icon: sprites.svg#it-horn
-          color: secondary
-          hidden: true
-        button:
-          url: "/argomenti/"
-          btnStyle: outline-secondary
-          label: Scopri tutti gli argomenti
-        tags: [Accessibilità,Privacy by design,Ricerca utente,Sviluppo front end,Design system,Test di usabilità]
-
 
     - id: articoli-di-approfondimento
       title: Articoli di approfondimento
