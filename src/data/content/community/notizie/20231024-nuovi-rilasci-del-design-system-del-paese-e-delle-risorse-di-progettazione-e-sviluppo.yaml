@@ -102,33 +102,50 @@ components:
       id: corpoNotizia
       components:
         - name: TextImageCta
-          # title: Titoletto interno
           text: |
-           Sono appena stati rilasciati molti aggiornamenti per la documentazione del **design system del Paese v1.0.0-alpha.12** ([changelog](/design-system/fondamenti/versionamento#changelog-documentazione)), **UI Kit Italia v3.2.0** ([changelog](https://github.com/italia/design-ui-kit/releases)) e **Bootstrap Italia v2.7.4** ([changelog](https://github.com/italia/bootstrap-italia/releases)). 
+            Sono appena stati rilasciati molti aggiornamenti per la documentazione del **design system del Paese v1.0.0-alpha.12** ([changelog](/design-system/fondamenti/versionamento#changelog-documentazione)), **UI Kit Italia v3.2.0** ([changelog](https://github.com/italia/design-ui-kit/releases)) e **Bootstrap Italia v2.7.4** ([changelog](https://github.com/italia/bootstrap-italia/releases)). 
 
             Tra le principali novità di questi aggiornamenti:  
 
             - nuovo componente **["Video player"](/design-system/componenti/video-player/)** attento a privacy e accessibilità. Nelle prossime settimane, Designers Italia sarà il primo terreno di sperimentazione con la pubblicazione dell’archivio media, del nuovo meccanismo di gestione cookie di piattaforme di terze parti e l’aggiornamento del kit privacy; 
-            - la stesura della **[documentazione](/design-system/come-iniziare/)** procede spedita verso la beta prevista in Q4 2023 con nuove schede "Fondamenti" e aggiornamenti di molte schede componenti con istruzioni per l’uso e specifiche di design;  
+            - la stesura della **[documentazione](/design-system/come-iniziare/)** procede spedita verso la versione beta con nuove schede "Fondamenti" e aggiornamenti di molte schede componenti con istruzioni per l’uso e specifiche di design;  
             - nuovi **componenti “Video player” e “Hero”** in UI Kit Italia; 
             - aggiornamento consistente di tutta la **tipografia** di **Bootstrap Italia** per coerenza con UI Kit Italia;  
-            - molti miglioramenti e correzioni bug sia su UI Kit Italia che Bootstrap Italia con contributi anche dalla community (grazie a @Virtute90, @PiemP, @Simososi). 
+            - molti miglioramenti e correzioni bug sia su UI Kit Italia che Bootstrap Italia con contributi anche dalla community. 
 
-            Per ricevere aggiornamenti, [iscriviti alla nostra mailing list](/#iscrivitiNewsletter).
+            Per ricevere aggiornamenti, [iscriviti alla nostra mailing list](#iscrivitiNewsletter).
 
         - name: TextImageCta
           title: Inizia a usare il design system
           text: |
-
+            Scopri le finalità e l'impatto del design system e come iniziare a usare le risorse a disposizione di designer e developer per progettare servizi pubblici digitali.
           ctas:
-          
-          - label: Come iniziare
-            url: "/design-system/come-iniziare"
+          - label: Scopri come iniziare
+            url: "/design-system/come-iniziare/"
             icon:
               icon: sprites.svg#it-arrow-right
               color: primary
               align: middle
               hidden: true
               size: sm ms-2
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true
+
+        - name: TextImageCta
+          title: Partecipa alle lavorazioni
+          text: |
+            Unisciti alla community di contributori delle risorse open source del design system del Paese. 
+            
+            Un grazie da parte nostra a chi ha contribuito in questi ultimi due anni di aggiornamenti, in particolare a: abilancione, albertopasqualetto, alenap93, andrea-conforto, andrea-veronese, AntoninoBonanno, arturu, cri99, Cruyff97, davideginna, daviderana, de611, dennybiasolli, DomeT99, dvero23, elgorditosalsero, Enrico724, erikyo, federico-ntr, federicobortot, ludovicabonaldo, MassimoLuise, mzampetti, simomosi, OProf77, pdavide, PiemP, pnicolli, sabato-galasso, sanyamdogra, Virtute90, wankbinkimoon. 
+          ctas:
+          - label: Scopri come contribuire
+            url: "/design-system/come-contribuire/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+            
+
+
+
+            
