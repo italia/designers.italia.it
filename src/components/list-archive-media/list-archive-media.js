@@ -86,7 +86,7 @@ function ListArchiveMedia({ background, noSpace }) {
                         cardEvent="true"
                         img={image}
                         alt=""
-                        imgRatio="21x9"
+                        imgRatio="16x9"
                         fullHeight="true"
                         tag={tag}
                         iconOverlay={iconOverlay}
