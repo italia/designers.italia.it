@@ -88,6 +88,12 @@ export const query = graphql`
         hero {
           background
           title
+          titleTag {
+            url
+            label
+            addonClasses
+            screenReaderText
+          }
           subtitle
           imgRatio
           pretext {
