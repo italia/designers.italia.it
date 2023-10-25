@@ -246,6 +246,7 @@ export const query = graphql`
         }
         titleText {
           title
+          # text
         }
         highlightCardsLoop {
           id
@@ -432,6 +433,8 @@ export const query = graphql`
             headingLevel
             rounded
             blank
+            dateInfo
+            tags
             externalLink {
               label
               screenReaderText
