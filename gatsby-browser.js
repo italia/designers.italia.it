@@ -2,9 +2,12 @@ exports.shouldUpdateScroll = ({
   routerProps: { location },
   getSavedScrollPosition
 }) => {
+  window.history.scrollRestoration = "manual"
   const currentPosition = getSavedScrollPosition(location)
 
-  window.scrollTo(...(currentPosition || [0, 0]))
+  window.setTimeout(() => {
+    window.scrollTo(...(currentPosition || [0, 0]))
+  }, 100 )
 
   return false
 }
