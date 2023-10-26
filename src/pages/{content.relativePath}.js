@@ -246,6 +246,7 @@ export const query = graphql`
         }
         titleText {
           title
+          # text
         }
         highlightCardsLoop {
           id
@@ -375,12 +376,13 @@ export const query = graphql`
         #  background
         #  specular
         #  subtitle
+        #  text
         # buttons {
         #  label
         #  btnStyle
         #  url
         #  addonStyle
-        #  # disabled
+        #  disabled
         #}
         #}
         searchMain {
@@ -432,6 +434,8 @@ export const query = graphql`
             headingLevel
             rounded
             blank
+            dateInfo
+            tags
             externalLink {
               label
               screenReaderText
