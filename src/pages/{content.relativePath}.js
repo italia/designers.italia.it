@@ -368,15 +368,15 @@ export const query = graphql`
           overlayImg
           overlayAlt
         }
-        highlightsLoop2 {
-          title
-          id
-          headingLevel
-          big
-          background
-          specular
-          subtitle
-          text
+        # highlightsLoop2 {
+        #  title
+        #  id
+        #  headingLevel
+        #  big
+        #  background
+        #  specular
+        #  subtitle
+        #  text
           # buttons {
           #  label
           #  btnStyle
@@ -384,7 +384,7 @@ export const query = graphql`
           #  addonStyle
           #  disabled
           #}
-        }
+        #}
         searchMain {
           title
           maxResults
