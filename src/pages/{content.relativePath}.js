@@ -377,13 +377,13 @@ export const query = graphql`
         #  specular
         #  subtitle
         #  text
-          # buttons {
-          #  label
-          #  btnStyle
-          #  url
-          #  addonStyle
-          #  disabled
-          #}
+        # buttons {
+        #  label
+        #  btnStyle
+        #  url
+        #  addonStyle
+        #  disabled
+        #}
         #}
         searchMain {
           title
