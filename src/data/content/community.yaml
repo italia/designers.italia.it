@@ -65,9 +65,8 @@ components:
               label: Eventi
             - url: "#articoli-di-approfondimento"
               label: Articoli di approfondimento
-            # TODO: uncomment this as soon as media archive is ready
-            # - url: "media/"
-            #   label: Media
+            - url: "media/"
+              label: Media
             - url: "piano-attivita/"
               label: Piano attività
             - url: "contatti/"
@@ -372,40 +371,87 @@ components:
             size: xs
         moreInfo: di Marco Maria Pedrazzo
 
-    # TODO: uncomment this as soon as media archive is ready
-    # - id: media
-    #   title: Media
-    #   headingLevel: 3
-    #   text: "I video, i tutorial e i podcast del progetto Designers Italia"
-    #   col4: true
-    #   background: null
-    #   buttons:
-    #   - type: button
-    #     btnStyle: primary
-    #     label: Esplora tutti i media
-    #     url: "/community/media/"
-    #     addonStyle: d-block
-    #     disabled: false
+    # MEDIA
 
-    #   cards:
-    #   - title: "Il design system del Paese e la responsabilità di progettare interfacce pubbliche"
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     cardEvent: true
-    #     img: /images/community/media-thumbnails/20230518-accessibility-days-2023.jpg
-    #     alt: ""
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "media/20230518-accessibility-days-2023/"
-    #     tag:
-    #       label: Intervento
+    - id: media
+      title: Media
+      headingLevel: 3
+      text: "I video, i tutorial e i podcast del progetto Designers Italia"
+      col4: true
+      background: null
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti i media
+        url: "/community/media/"
+        addonStyle: d-block
+        disabled: false
 
+      cards:
+      
+      - title: "Niente su di Noi, senza di Noi - La sfida accolta da Designers Italia, AGID e Accessibility Days"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days"
+        tag:
+          label: Video - Evento
 
+      - title: "ll design system del Paese e la responsabilità di progettare interfacce pubbliche"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche"
+        tag:
+          label: Video - Evento
+        
+      - title: "La progettazione di API REST per la PA"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20220525-la-progettazione-di-api-rest-per-la-pa.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20220525-la-progettazione-di-api-rest-per-la-pa"
+        tag:
+          label: Video - Community lab
 
+      - title: "L’attenzione all’accessibilità nel design system del Paese"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20220521-l-attenzione-all-accessibilita-nel-design-system-del-paese.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20220521-l-attenzione-all-accessibilita-nel-design-system-del-paese"
+        tag:
+          label: Video - Evento
 
   highlightsLoop:
     - title: Piano attività
