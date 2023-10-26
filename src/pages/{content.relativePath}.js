@@ -368,22 +368,23 @@ export const query = graphql`
           overlayImg
           overlayAlt
         }
-        # highlightsLoop2 {
-        #  title
-        #  id
-        #  headingLevel
-        #  big
-        #  background
-        #  specular
-        #  subtitle
-        # buttons {
-        #  label
-        #  btnStyle
-        #  url
-        #  addonStyle
-        #  # disabled
-        #}
-        #}
+        highlightsLoop2 {
+          title
+          id
+          headingLevel
+          big
+          background
+          specular
+          subtitle
+          text
+          # buttons {
+          #  label
+          #  btnStyle
+          #  url
+          #  addonStyle
+          #  disabled
+          #}
+        }
         searchMain {
           title
           maxResults

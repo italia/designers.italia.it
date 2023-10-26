@@ -143,19 +143,19 @@ components:
         - label: Scopri come iniziare #C
           btnStyle: primary
           url: "come-iniziare/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
         - label: Per designer #C
           btnStyle: outline-secondary
           url: "come-iniziare/per-designer/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
         - label: Per sviluppatori #C
           btnStyle: outline-secondary
           url: "come-iniziare/per-sviluppatori/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
         - label: Per responsabili progetto #C
           btnStyle: outline-secondary
           url: "come-iniziare/per-responsabili-progetto/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
         
     # —
     # HIGHLIGHT
@@ -175,7 +175,7 @@ components:
         - label: Scopri i fondamenti
           btnStyle: primary
           url: "fondamenti/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
 
    # —
     # HIGHLIGHT
@@ -203,7 +203,7 @@ components:
         - label: Scopri i componenti
           btnStyle: primary
           url: "componenti/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
 
     # —
     # HIGHLIGHT BIG IMG
@@ -221,41 +221,19 @@ components:
         - label: Scopri come contribuire #C
           btnStyle: primary
           url: "come-contribuire/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
         - label: Per la documentazione #C
           btnStyle: outline-secondary
           url: "come-contribuire/per-la-documentazione/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
         - label: Per il design #C
           btnStyle: outline-secondary
           url: "come-contribuire/per-il-design/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3 mb-xs-0
         - label: Per lo sviluppo #C
           btnStyle: outline-secondary
           url: "come-contribuire/per-lo-sviluppo/" #M
-          addonStyle: mb-3 mb-sm-0
-
-
-    # —
-    # HIGHLIGHT BIG IMG
-    # —
-    - title: Design pattern #C
-      id: design-pattern
-      # img: /images/400x300.png #I
-      # alt: Alt lorem ipsum #C
-      headingLevel: 3
-      background: medium # null | light | medium | dark
-      big: true
-      specular: true
-      subtitle: Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficacemente testati in situazioni simili
-      text: |
-        _In stesura_
-      # buttons: #C #M
-      #   - label: Scopri i design pattern
-      #     btnStyle: primary
-      #     url: "design-pattern/"
-      #     addonStyle: mb-3 mb-sm-0
-      #     disabled: true
+          addonStyle: mb-3 mb-xs-0
 
 
   # # —
@@ -284,39 +262,6 @@ components:
   #   #   alt: Alt lorem ipsum #C
 
   # —
-  # HIGHLIGHT LOOP
-  # —
-  # highlightsLoop2 :
-
-
-    # —
-    # HIGHLIGHT
-    # —
-    - title: Showcase #C
-      id: showcase
-      # img: /images/400x300.png #I
-      # alt: Alt lorem ipsum #C
-      headingLevel: 3
-      big: false
-      background: dark
-      specular: true
-      subtitle: I progetti più significativi realizzati con il design system del Paese #C
-      text: | #C
-        _In stesura_
-      # buttons: #C #M
-      #   - label: Scopri i casi studio
-      #     btnStyle: primary
-      #     url: "showcase/"
-      #     addonStyle: mb-3 mb-sm-0
-      #     disabled: true
-      #   - label: Proponi un caso studio
-      #     btnStyle: outline-primary
-      #     url: "#"
-      #     addonStyle: mb-3 mb-sm-0
-      #     disabled: true
-
-
-  # —
   # HIGHLIGHT WITH CARDS
   # —
   highlightCards:
@@ -324,7 +269,7 @@ components:
     title: Le ultime notizie sul design system del Paese #C
     # text: 
     headingLevel: 3
-    background: null
+    background: light
     col4: false # FALSE notizie + Medium | TRUE eventi + media
 
     # CARDS
@@ -370,3 +315,34 @@ components:
         dateInfo: 30 maggio 2023
         tags: [Design system, Contenuti e linguaggio, Linguaggio, Microtesti, Tono di voce]
 
+  # —
+  # HIGHLIGHT LOOP
+  # —
+  highlightsLoop2 :
+
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title: Design pattern #C
+      id: design-pattern
+      headingLevel: 3
+      background: medium # null | light | medium | dark
+      big: false
+      specular: true
+      subtitle: Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficacemente testati in situazioni simili
+      text: |
+        _In stesura_
+        
+    # —
+    # HIGHLIGHT
+    # —
+    - title: Showcase #C
+      id: showcase
+      headingLevel: 3
+      big: false
+      background: dark
+      specular: true
+      subtitle: I progetti più significativi realizzati con il design system del Paese #C
+      text: | #C
+        _In stesura_
