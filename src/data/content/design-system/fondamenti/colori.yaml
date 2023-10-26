@@ -973,7 +973,7 @@ components:
           headingLevel: 3
           noSpace: true
           text: |
-            Il contrasto di colore tra il testo e il suo sfondo deve soddisfare gli [standard WCAG 2.1](https://www.w3.org/Translations/WCAG21-it/).
+            Il contrasto di colore tra il testo e il suo sfondo deve soddisfare i criteri richiesti dalla specifica [WCAG 2.1](https://www.w3.org/Translations/WCAG21-it/). 
 
             I requisiti per soddisfare il livello AA sono:
             - 4.5:1 per il testo normale
@@ -984,8 +984,12 @@ components:
 
             I colori contribuiscono alla creazione di una gerarchia visiva ma non devono essere usati come unica modalità per rappresentare informazioni o azioni, secondo il [criterio 1.4.1](https://www.w3.org/Translations/WCAG21-it/#use-of-color) delle WCAG 2.1.
 
-            Usa uno strumento per il [controllo del contrasto](https://webaim.org/resources/contrastchecker/) oppure un [plugin per Figma](https://www.figma.com/community/plugin/748533339900865323/Contrast) per testare il rispetto dei requisiti.
+            Per testare il rispetto dei requisit, puoi usare uno dei tanti strumenti online come [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
 
             Se usi i design token non devi fare nulla, sono stati già verificati.
-
+          ctas:
+            - label: "Vai al fondamento Accessibilità" #C
+              url: "/design-system/fondamenti/accessibilita/" #M
+              blank: false #M #C true if new tab for external links
+ 
  
