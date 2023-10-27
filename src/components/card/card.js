@@ -10,6 +10,7 @@ import Button from "../button/button";
 import ShareButton from "../share-button/share-button";
 
 import "./card.scss";
+import classNames from "classnames";
 
 function Card({
   cardEvent,
@@ -42,27 +43,28 @@ function Card({
   rounded,
   buttonBottom,
 }) {
-  const styles =
-    "di-card d-md-flex flex-md-column w-100" +
-    `${fullHeight ? " fullheight" : ""}` +
-    `${rounded ? " rounded" : ""}` +
-    `${titleSmall ? " title-small" : ""}` +
-    `${titleBig ? " title-big" : ""}` +
-    `${noShadow ? " shadow-none" : ""}` +
-    `${textSerif ? " text-serif" : ""}` +
-    `${buttonBottom ? " has-button" : ""}`;
+  
+  const styles = classNames("di-card d-md-flex flex-md-column w-100", {
+    "fullheight": fullHeight, 
+    rounded,
+    "title-small": titleSmall,
+    "title-big": titleBig,
+    "shadow-lg": !noShadow,
+    "text-serif": textSerif,
+    "has-button": buttonBottom,
+  })
 
-  const imgStyle =
-    "img-wrapper ratio" +
-    `${imgRatio ? ` ratio-${imgRatio}` : ""}` +
-    `${imgPlaceholder ? " img-placeholder" : ""}` +
-    `${iconImg ? " icon-img" : ""}` +
-    `${cardEvent ? " mb-4 negative-margin" : ""}` +
-    `${imgRounded ? " rounded" : ""}`;
+  const imgStyle = classNames("img-wrapper ratio", {
+    [`ratio-${imgRatio}`]: imgRatio,
+    "img-placeholder": imgPlaceholder,
+    "icon-img": iconImg,
+    "mb-4 negative-margin": cardEvent,
+    "rounded": imgRounded,
+  })
 
-  const styleBody =
-    "di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between" +
-    `${rounded ? " rounded" : ""}`;
+  const styleBody = classNames("di-card-body bg-white p-4 d-md-flex flex-md-column justify-content-between", {
+    rounded
+  })
 
   // heading level
   let HLevel;
