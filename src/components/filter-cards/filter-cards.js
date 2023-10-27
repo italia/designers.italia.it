@@ -14,7 +14,7 @@ function FilterCards({
   noSpace,
   designSystem,
 }) {
-  const styles = classNames("filter-cards px-3 p-md-0", {
+  const styles = classNames("filter-cards", {
     "px-lg-5": designSystem,
     [`bg-${background}`]: background,
     "py-5 py-lg-6": !noSpace,
