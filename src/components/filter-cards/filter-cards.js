@@ -20,13 +20,8 @@ function FilterCards({
     "py-5 py-lg-6": !noSpace,
     "py-2 py-lg-5": noSpace,
   });
-  // const styles =
-  //   "filter-cards px-3 p-md-0" +
-  //   `${background ? ` bg-${background}` : ""}` +
-  //   `${noSpace ? "" : " py-5 py-lg-6"}` +
-  //   `${col2 ? " two-columns" : ""}`;
 
-  const cardStyles = `col-12 col-md-6 mb-3 mb-md-4 ${col2 ? "" : " col-lg-4"}`;
+  const cardStyles = `col-12 col-md-6 mb-3 mb-md-4 ${col2 ? "" : " col-xl-4"}`;
 
   let cardsItems;
 
