@@ -64,7 +64,9 @@ components:
   filterCards:
     id: esplora
     title: Esplora i componenti
+    designSystem: true
     showTags: true
+    noSpace: true
     # idInput: componentCardsInput
     col2: false
     # button:
@@ -290,7 +292,7 @@ components:
         url: video-player/
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
-  sectionsEditorial :
+  sectionsEditorial:
     - fullColumn: true
       noSpace: true
       components:
@@ -298,9 +300,10 @@ components:
           img: /images/design-system/componenti.jpg
           alt: ""
 
-  sectionsEditorial2 :
+  sectionsEditorial2:
     - full: true
       noSpace: false
+      designSystem: true
       components:
         - name: TextImageCta
     #       noSpace: true

@@ -101,7 +101,7 @@ components:
         color: secondary
       tags: [Accessibilità,Progettazione interfaccia,Sviluppo interfaccia]
 
-  sectionsEditorial :
+  sectionsEditorial:
     # - fullColumn: true
     #   noSpace: true
     #   components:
@@ -111,6 +111,7 @@ components:
 
     - full: true
       noSpace: false
+      designSystem: true
       title: L’accessibilità al centro
       text: Per realizzare servizi pubblici digitali semplici, accessibili e inclusivi
       background: null
@@ -124,7 +125,7 @@ components:
           - label: "Approfondimento su Medium" #C
             url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099 #M
             blank: true #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -142,7 +143,7 @@ components:
           - label: "Linee guida accessibilità" #C
             url: "/norme-e-riferimenti/linee-guida-accessibilita/" #M
             blank: false #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -153,7 +154,7 @@ components:
           - label: "Specifica WCAG 2.1 in lingua italiana" #C
             url: https://www.w3.org/Translations/WCAG21-it/ #M
             blank: true #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -188,6 +189,7 @@ components:
 
     - full: true
       noSpace: true
+      designSystem: true
       title: Standard, open design e partecipazione
       text: Processi e risorse per l'evoluzione del design system e del suo ecosistema di risorse
       background: null
@@ -259,7 +261,7 @@ components:
           - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
             url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
             blank: true #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary

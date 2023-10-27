@@ -119,10 +119,11 @@ components:
         color: secondary
       tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
 
-  sectionsEditorial :
+  sectionsEditorial:
 
     - full: true
       noSpace: false
+      designSystem: true
       title: "L'evoluzione del design system del Paese è aperta"
       text: Scopri come contribuire in base alle tue competenze e al tempo che hai a disposizione. 
       background: null
@@ -147,7 +148,6 @@ components:
               # screenReaderText: ""
               url: "/design-system/fondamenti/principi-e-intenzioni/" #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -158,6 +158,7 @@ components:
             
     - full: true
       noSpace: true
+      designSystem: true
       title: Cosa puoi fare?
       text:  Partecipare a discussioni, aprire segnalazioni e inviare contributi. 
       background: null
@@ -180,6 +181,7 @@ components:
     #       alt: Scelgo dove, partecipo alla discussione, invio contributi. Schema del modello di contribuzione, descritto nel seguito dela pagina. 
     - full: true
       noSpace: true
+      designSystem: true
       background: null
       components:
 
@@ -194,7 +196,6 @@ components:
               # screenReaderText: ""
               url: "/community/piano-attivita/" #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -206,7 +207,6 @@ components:
               screenReaderText: " su GitHub"
               url: https://github.com/orgs/italia/projects/17/views/5 #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -250,7 +250,7 @@ components:
               screenReaderText: ""
               url: "/design-system/come-contribuire/per-la-documentazione/" #M
               blank: false #M #C true if new tab for external links
-              # disabled: true
+             
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -262,7 +262,7 @@ components:
               screenReaderText: ""
               url: "/design-system/come-contribuire/per-il-design/" #M
               blank: false #M #C true if new tab for external links
-              # disabled: true
+             
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -274,7 +274,7 @@ components:
               screenReaderText: ""
               url: "/design-system/come-contribuire/per-lo-sviluppo/" #M
               blank: false #M #C true if new tab for external links
-              # disabled: true
+             
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
