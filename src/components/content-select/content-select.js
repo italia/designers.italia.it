@@ -50,12 +50,12 @@ function ContentSelect({ id, title, textInfo, children, selectedIdx, label }) {
       <div className="row">
         <div className="ps-lg-2">
           <div className="col-9 mb-5 ps-lg-5">
-            <h2 id={id} className="px-3 px-md-0">
+            <h2 id={id} className="">
               {title}
             </h2>
           </div>
           <div className="col-12 col-md-6 col-lg-6 mb-4 ps-lg-5">
-            <div className="select-wrapper px-3 px-md-0">
+            <div className="select-wrapper">
               <label htmlFor={`${id}-select`}>{label}</label>
               <select
                 value={itemSelected}
@@ -72,7 +72,7 @@ function ContentSelect({ id, title, textInfo, children, selectedIdx, label }) {
             </div>
           </div>
           {textInfo && (
-            <div className="col-md-6 ps-lg-5 px-3 px-md-0">
+            <div className="col-md-6 ps-lg-5">
               <p className="small">
                 <Icon {...ICON_INFO} /> {textInfo}
               </p>
