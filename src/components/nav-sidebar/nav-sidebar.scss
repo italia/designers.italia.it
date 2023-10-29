@@ -1,9 +1,7 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .nav-sidebar {
-
-  .nav-sidebar-header{
-
+  .nav-sidebar-header {
   }
 
   .header-image {
@@ -21,7 +19,7 @@
             color: var(--color-primary) !important;
             width: 100%;
             .icon {
-              transition: transform .3s;
+              transition: transform 0.3s;
             }
             &[aria-expanded="true"] {
               .icon {
@@ -29,7 +27,8 @@
               }
             }
           }
-          a,button {
+          a,
+          button {
             background: transparent;
             border: none;
             &.active {
@@ -71,13 +70,10 @@
 
 //Mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-
-
 }
 
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-
 }
 
 //Mobile & Tablet portrait only -------------------------------------------------------------------------
@@ -89,10 +85,10 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-
   .menu-column {
     height: calc(100vh);
     overflow-y: auto;
+    z-index: 0 !important;
   }
 
   .nav-sidebar {
@@ -114,11 +110,16 @@
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
-
+  .menu-column {
+    z-index: 0 !important;
+  }
 }
 
 //Desktop -----------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xxl) {
+  .menu-column {
+    z-index: 0 !important;
+  }
 }
 
 //Hover states ------------------------------------------------------------------------------------------
