@@ -127,7 +127,7 @@ function SectionEditorial({
             </div>
           )}
           <div className={grid}>
-            <div className="">
+            <div>
               {title && (
                 <HLevel className={text ? "mb-1" : "mb-0"} id={id}>
                   {title}
