@@ -20,32 +20,33 @@ metadata:
   template:
     name: level2
   redirect_from:
-    - /scuole
-    - /modello/scuole
-    - /modello/scuola
-    - /modello/sito-scuole
-    - /modello/sito-scuola
-    - /modello-sito-scuole
-    - /modello-sito-scuola
-    - /modello-siti-scuole
-    - /modello-siti-scuola
-    - /modello-sito-scolastico
-    - /modello-siti-scolastici
-    - /kit/scuole
-    - /progetti/siti-scuole
-    - /siti-scuole
-    - /progetti/siti-web-scuole
+    - /comuni
+    - /modello/comuni
+    - /modello/comune
+    - /modello/sito-comuni
+    - /modello/sito-comune
+    - /modello-sito-comuni
+    - /modello-sito-comune
+    - /modello-siti-comuni
+    - /modello-siti-comune
+    - /modello-sito-comunale
+    - /modello-siti-comunali
+    - /kit/comuni
+    - /progetti/siti-comuni
+    - /siti-comuni
+    - /progetti/siti-web-comuni
+
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Modello scuole - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Tutte le risorse per realizzare con facilità siti per le scuole. #C
+  name: Modello Comuni - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Tutte le risorse per realizzare con facilità siti e servizi digitali per i Comuni. #C
   image: null #I
   twitterImage: null #I
   canonical: null
-  pathname: /modelli/scuole/ #M
+  pathname: /modelli/comuni/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -89,10 +90,10 @@ components:
   # ///////////////////
   hero:
     background: light
-    title: Scuole #C
-    subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per la comunità scolastica #C
+    title: Comuni #C
+    subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i cittadini #C
     tag:
-        label: Modello #C
+        label: Modello  #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -100,8 +101,8 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Il modello ti guida nella **realizzazione di siti istituzionali per le scuole** già validati dalla ricerca e progettati sui bisogni dela comunità scolastica. Comprende l'architettura dell'informazione, l'interfaccia e il codice, oltre a una serie di guide pratiche e risorse pronte all'uso per impostare e svolgere il lavoro in modo rapido ed economico, come i template HTML e i temi per CMS.
-    img: /images/modelli/scuole-icon.svg #I
+      Il modello ti permette di **realizzare siti e servizi comunali** già validati dalla ricerca e progettati sui bisogni dei cittadini. Comprende l'architettura dell'informazione, l'interfaccia e il codice, oltre a una serie di guide pratiche e risorse pronte all'uso per impostare e svolgere il lavoro in modo rapido ed economico, come i template HTML e i temi per CMS.
+    img: /images/modelli/comuni-icon.svg #I
     alt: "" #C
     imgRatio: 4x3
 
@@ -115,7 +116,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Modelli di sito]
+      tags: [Modelli di sito,Modelli di servizi]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -131,22 +132,17 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "adotta-il-modello-di-sito-scolastico/"
-              label: Adotta il modello di sito scolastico #C
-            #- url: "adotta-il-modello-di-servizi-digitali-comunali/"
-              #label: Adotta il modello di servizi digitali comunali #C
-              #iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
-              #icon:
-                #icon: sprites.svg#it-arrow-right
-                #color: primary
-                #size: sm
+            - url: "adotta-il-modello-di-sito-comunale/"
+              label: Adotta il modello di sito comunale #C
+            - url: "adotta-il-modello-di-servizi-digitali-comunali/"
+              label: Adotta il modello di servizi digitali comunali #C
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial:
 
-    # —
+      # —
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
@@ -156,9 +152,8 @@ components:
       components:
         # IMG
         - name: ImageIcons
-          image: /images/modelli/scuole-pattern.png #I
-          alt: "Pattern di navigazione dal modello scuole" #C
-
+          image: /images/modelli/comuni-pattern.png #I
+          alt: "Pattern di navigazione dal modello Comuni" #C
     # —
     # EDITORIAL #C #I
     # —
@@ -167,79 +162,25 @@ components:
       menu: false
       centered: true
       text: | #C
-        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale degli istituti scolastici
+        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle amministrazioni comunali
       components:
 
-        # TXT + IMG + CTA BLOCK
+
+        # # TXT + IMG + CTA BLOCK
         # - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
+        #   image: /images/400x300.png #I
+        #   alt: Alt lorem ipsum #C
+        #   specular: true
           #title: Lorem ipsum h3 #C
-          # text: | #C
-          #  ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
+          #text: | #C
+          #  Lorem ipsum
 
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Il sito per la comunità scolastica #C
-          text: | #C
-            Il modello comprende l'architettura dell'informazione, l'interfaccia e il codice per realizzare un sito chiaro, semplice da usare e accessibile. Un solido punto di riferimento per la comunità scolastica, dove trovare facilmente tutte le informazioni di cui hanno bisogno: dagli orari delle lezioni e i materiali didattici, alle novità e gli eventi.
+            #### Titoletto interno h4
+            # Lorem ipsum
           #ctas:
-          #- label: Naviga un esempio di sito #C
-            #screenReaderText: " (si apre in una nuova finestra)" #C
+          #- label: Fai lorem ipsum #C
             #url: "#" #M
-            #blank: true #M #C true if new tab for external links
-            #icon:
-              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
-
-
-    # —
-    # EDITORIAL #C #I
-    # —
-    - title: Il futuro della PA
-      background: null
-      menu: false
-      centered: true
-      #text: | #C
-        #Lorem ipsum
-      components:
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          #title: Lorem ipsum #C
-          text: | #C
-            Il modello di sito per le scuole è il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto Designers Italia.
-
-            L’uso del modello permette di aderire alle linee guida nazionali e alle migliori pratiche di progettazione digitale, anticipando inoltre l’adozione delle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
-          ctas:
-          - label: Vai alla documentazione del modello #C
-            url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: "Risorse pronte all'uso" #C
-          text: | #C
-            La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Le risorse operative disponibili permettono di aderire al modello in modo rapido e di realizzare, a basso costo, siti centrati sui bisogni delle comunità scolastiche.
-          #ctas:
-          #- label: Vai al report della ricerca #C
-            #url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
-            #blank: true #M #C true if new tab for external links
-            #screenReaderText: " (si apre in una nuova finestra)" #C
+            #blank: false #M #C true if new tab for external links
             #icon:
               #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               #color: primary
@@ -247,8 +188,8 @@ components:
               #hidden: true
               #size: sm
               #addonClasses: ms-2
-          #- label: Vai alla documentazione del modello #C
-            #url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
+          #- label: Vai su ipsum #C
+            #url: "#" #M
             #blank: true
             #screenReaderText: " (si apre in una nuova finestra)" #C
             #icon:
@@ -259,6 +200,96 @@ components:
               #size: sm
               #addonClasses: ms-2
 
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: Un solido punto di riferimento per i cittadini #C
+          text: | #C
+            Il modello comprende l'architettura dell'informazione, l'interfaccia e il codice per realizzare siti e servizi digitali chiari, semplici da usare e accessibili: un unico posto dove i cittadini possono trovare facilmente le informazioni di cui hanno bisogno e presentare richieste o completare adempimenti verso l’amministrazione comunale direttamente online.
+          ctas:
+          - label: Naviga un esempio di servizio digitale #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/Comuni---Modello-sito-e-servizi?page-id=79%3A200932&node-id=79%3A201522&viewport=1280%2C-1252%2C0.25&scaling=scale-down&starting-point-node-id=79%3A201522 #M
+            blank: true
+            icon:
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: Il futuro della PA
+      background: null
+      menu: false
+      centered: true
+      #text: | #C
+        #Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle amministrazioni comunali
+      components:
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          #title: Lorem ipsum #C
+          text: | #C
+            Il modello di sito e servizi digitali per i Comuni è il frutto di un processo pluriennale di ricerca e progettazione con i cittadini a cura del progetto Designers Italia.
+
+            L’uso del modello permette di fornire ai cittadini un’esperienza coerente tra le varie amministrazioni, aderendo alle linee guida nazionali e alle migliori pratiche di progettazione digitale e anticipando, inoltre, l’adozione delle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
+          ctas:
+          - label: Scopri di più sul processo di ricerca #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          #- label: Vai alla documentazione del modello #C
+            #url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
+            #screenReaderText: " (si apre in una nuova finestra)" #C
+            #blank: true
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: "Risorse pronte all'uso" #C
+          text: | #C
+            La progettazione di esperienze digitali semplici ed efficaci richiede tempo, risorse e molta ricerca. Le risorse operative disponibili permettono di aderire al modello in modo rapido e di realizzare, a basso costo, siti e servizi digitali centrati sui bisogni dei cittadini.
+          ctas:
+          #- label: Vai alla documentazione tecnica #C
+            #url: https://docs.italia.it/italia/designers-italia/design-report-ricerca-comuni-docs/ #M
+            #blank: true #M #C true if new tab for external links
+            #screenReaderText: " (si apre in una nuova finestra)" #C
+            #icon:
+              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+          - label: Vai alla documentazione tecnica #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/ #M
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
         # NUMBERS BLOCK
         - name: Numbers
           items: #C #I
@@ -267,14 +298,19 @@ components:
             number: "1"
           - label: Template HTML
             icon: sprites.svg#it-files
-            number: "28"
-          - label: Tema WordPress
+            number: "90"
+          - label: Temi CMS
             icon: sprites.svg#it-folder
-            number: "1"
+            number: "2"
+          - label: Servizi supportati
+            icon: sprites.svg#it-files
+            number: "26"
+          - label: Librerie di componenti
+            icon: sprites.svg#it-tool
+            number: "2"
           - label: Prototipi
             icon: sprites.svg#it-user
-            number: "18"
-
+            number: "21"
 
     # —
     # EDITORIAL #C #I
@@ -297,11 +333,10 @@ components:
           text: | #C
             **Scopri su PA digitale 2026** se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
           ctas:
-          - label: Vai su PA digitale 2016 #C
+          - label: Vai su PA digitale 2026 #C
             url: https://padigitale2026.gov.it/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            color: white
             blank: true #M #C true if new tab for external links
+            screenReaderText: " (si apre in una nuova finestra)" #C
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -325,26 +360,30 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: Il sito scolastico #C
-        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito scolastico semplice, accessibile e centrato sui bisogni degli utenti. #C
-        img: /images/modelli/scuole.png
+      - title: Il sito comunale #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/comuni.png
         alt: ""
         imgRatio: 4x3
         imgPlaceholder: false
         titleSmall: false
         fullHeight: true
-        url: "adotta-il-modello-di-sito-scolastico/" #M
+        url: "adotta-il-modello-di-sito-comunale/" #M
         tag:
           label: Scheda operativa #C
 
       # CARD CHILDREN
-      #- title: I servizi digitali #C
-        #text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
-        #titleSmall: false
-        #fullHeight: true
-        #url: "adotta-il-modello-di-servizi-digitali-comunali/" #M
-        #tag:
-          #label: Scheda operativa #C
+      - title: I servizi digitali #C
+        text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
+        # img:
+        # alt: ""
+        # imgRatio: 4x3
+        # imgPlaceholder: true
+        titleSmall: false
+        fullHeight: false
+        url: "adotta-il-modello-di-servizi-digitali-comunali/" #M
+        tag:
+          label: Scheda operativa #C
 
       # CARD CHILDREN
       #- title: Lorem ipsum #C
@@ -383,8 +422,8 @@ components:
           #ctas:
           #- label: Vai al supporto di PA digitale 2026 #C
             #url: https://padigitale2026.gov.it/supporto #M
-            #blank: true #M #C true if new tab for external links
             #screenReaderText: " (si apre in una nuova finestra)" #C
+            #blank: true #M #C true if new tab for external links
             #icon:
               #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               #color: primary
@@ -404,7 +443,7 @@ components:
               #addonClasses: ms-2
 
 
-     # —
+    # —
     # EDITORIAL #C #I
     # —
     - menu: false
@@ -425,7 +464,7 @@ components:
             **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
           - label: Vai su Forum Italia #C
-            url: https://forum.italia.it/c/design/modello-scuole/ #M
+            url: https://forum.italia.it/c/design/modello-comuni/ #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:
@@ -443,10 +482,10 @@ components:
           specular: true
           #title: ciao
           text: |
-            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer del modello: iscriviti allo Slack Developers Italia e cerca il canale #design-modello-comuni
           ctas:
           - label: Vai su Slack #C
-            url: https://developersitalia.slack.com/archives/CQ7J0KANT #M
+            url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:

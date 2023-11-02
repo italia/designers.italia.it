@@ -24,12 +24,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Adotta il modello di sito comunale - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Segui la procedura guidata e usa le risorse per realizzare il sito istituzionale di un Comune #C
+  name: Adotta il modello di sito scolastico - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Segui la procedura guidata e usa le risorse per realizzare il sito istituzionale di una scuola #C
   image: null #I
   twitterImage: null #I
   canonical: null
-  pathname: /modelli/comuni/adotta-il-modello-di-sito-comunale/ #M
+  pathname: /modelli/scuole/adotta-il-modello-di-sito-scolastico/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -39,13 +39,12 @@ kangaroo:
     id: kangEnd
     items:
       - title: Ti trovi nel modello #C
-        tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Comuni #C
+        label: Scuole #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -86,8 +85,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Adotta il modello di sito comunale #C
-    subtitle: Realizza il punto di contatto tra le amministrazioni locali e i cittadini #C
+    title: Adotta il modello di sito scolastico #C
+    subtitle: Il punto di riferimento per la comunità scolastica #C
     tag:
       label: Scheda operativa #C
       addonClasses: mt-3 text-uppercase
@@ -98,8 +97,8 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Le attività ti guidano a **impostare il lavoro da un punto di vista organizzativo e ti supportano nella progettazione e nello sviluppo del sito comunale**, tenendo conto di aspetti importanti come i requisiti tecnici per la corretta adozione del modello. Le risorse ti permettono di comprendere e impostare la struttura del sito, creare l’interfaccia grafica, migrare e gestire correttamente i contenuti.
-    img: /images/modelli/comuni.png
+      Le attività ti guidano a **impostare il lavoro da un punto di vista organizzativo e ti supportano nella progettazione e nello sviluppo del sito scolastico**, tenendo conto di aspetti importanti come i requisiti tecnici per la corretta adozione del modello. Le risorse ti permettono di comprendere e impostare la struttura del sito, creare l’interfaccia grafica, migrare e gestire correttamente i contenuti.
+    img: /images/modelli/scuole.png
     alt: ""
 
     # KANGAROO: METADATA
@@ -115,19 +114,18 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Comuni #C
+            label: Scuole #C
             url: "../" #M
-      otherInfo:
-        items:
-          - title: Rispettando
-            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
-            icon:
-              icon: "sprites.svg#it-pa"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+      #otherInfo:
+        #items:
+          #- title: Rispettando
+            #icon:
+              #icon: "sprites.svg#it-pa"
+              #size: "sm"
+              #align: "middle"
+              #color: "secondary"
+            #label: Design standard X #C
+            #url: "#" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -152,7 +150,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Progettazione contenuti,Modelli di sito,Adozione modelli]
+      tags: [Architettura informazione,Progettazione contenuti,Modelli di sito]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -172,9 +170,9 @@ components:
               label: "Comprendi lo stato dell'arte" #C
             - url: "definisci-architettura-e-contenuti/"
               label: Definisci architettura e contenuti #C
-            - url: "realizza-l-interfaccia-del-sito-comunale/"
+            - url: "realizza-l-interfaccia-del-sito-scolastico/"
               label: "Realizza l'interfaccia" #C
-            - url: "valuta-l-adesione-al-modello-di-sito-comunale/"
+            - url: "valuta-l-adesione-al-modello-di-sito-scolastico/"
               label: "Valuta l'adesione al modello" #C
 
   # ///////////////////
@@ -185,7 +183,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —
-    - title: Il modello di sito per i Comuni #C
+    - title: Il modello di sito per le scuole #C
       menu: false
       centered: true
       background: null
@@ -197,11 +195,11 @@ components:
         - name: TextImageCta
           title: A cosa serve #C
           text: | #C
-            Il modello permette di creare **siti web comunali** che rispondono ai bisogni degli utenti: **chiari, semplici da usare e navigare**.
+            Il modello permette di **creare siti web scolastici** che rispondono ai bisogni della comunità scolastica: **chiari, semplici da usare e navigare**.
 
-            Lo scopo del modello di sito è fornire ai cittadini un chiaro punto di riferimento per trovare con facilità le informazioni di cui hanno bisogno.
+            Lo scopo del modello di sito è fornire agli utenti un chiaro punto di riferimento per trovare con facilità le informazioni di cui hanno bisogno.
 
-            L’adozione del modello permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’**esperienza coerente tra le varie amministrazioni**.
+            L’adozione del modello permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo agli utenti un’**esperienza coerente tra le varie amministrazioni**.
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -213,12 +211,12 @@ components:
             Le risorse comprendono:
             - il documento di Architettura dell’informazione;
             - i template HTML;
-            - i temi per i CMS WordPress e Drupal;
+            - i temi per i CMS WordPress;
             - una serie di guide pratiche a supporto.
           ctas:
           - label: Scopri come usare le risorse #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale.html #M
+            url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse.html #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -241,7 +239,7 @@ components:
           ctas:
           - label: Vai ai criteri di conformità #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html #M
+            url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -258,7 +256,7 @@ components:
   highlightCards:
     id: HC1
     title: Le attività per adottare il modello #C
-    text: Segui la procedura guidata e usa le risorse per realizzare un sito comunale a misura di cittadino #C
+    text: Segui la procedura guidata e usa le risorse per realizzare un sito efficace per l'intera comunità scolastica #C
     col4: false
     noSpace: false
     nopadtop: true
@@ -269,11 +267,11 @@ components:
       # CARD CHILDREN ACTION
       - title: "1. Comprendi lo stato dell’arte" #C
         imgRatio: 16x9
+      # iconImg: /images/kit-analisi-contesto.svg #I
+      # iconImgAlt: Alt lorem ipsum #C
+        url: "comprendi-lo-stato-dell-arte/" #M
         fullHeight: true
         rounded: true
-        # iconImg: /images/kit-analisi-contesto.svg #I
-        # iconImgAlt: Alt lorem ipsum #C
-        url: "comprendi-lo-stato-dell-arte/" #M
         text: | #C
           Definisci gli obiettivi del progetto, stabilisci il perimetro di lavoro e individua le risorse necessarie
         tag:
@@ -282,37 +280,37 @@ components:
       # CARD CHILDREN ACTION
       - title: 2. Definisci architettura e contenuti #C
         imgRatio: 16x9
-        fullHeight: true
-        rounded: true
       # iconImg: /images/kit-analisi-contesto.svg #I
       # iconImgAlt: Alt lorem ipsum #C
         url: "definisci-architettura-e-contenuti/" #M
+        fullHeight: true
+        rounded: true
         text: | #C
-          Imposta la struttura informativa del sito comunale e organizza la migrazione dei contenuti
+          Imposta la struttura informativa del sito scolastico e organizza la migrazione dei contenuti
         tag:
           label: Attività del modello #C
 
       # CARD CHILDREN ACTION
       - title: "3. Realizza l’interfaccia" #C
         imgRatio: 16x9
-        rounded: true
-        fullHeight: true
       # iconImg: /images/kit-analisi-contesto.svg #I
       # iconImgAlt: Alt lorem ipsum #C
-        url: "realizza-l-interfaccia-del-sito-comunale/" #M
+        url: "realizza-l-interfaccia-del-sito-scolastico/" #M
+        fullHeight: true
+        rounded: true
         text: | #C
-          Assembla l’interfaccia web del sito comunale con i template HTML o i temi per CMS
+          Assembla l’interfaccia web del sito scolastico con i template HTML o i temi per CMS
         tag:
           label: Attività del modello #C
 
       # CARD CHILDREN ACTION
       - title: "4. Valuta l’adesione al modello" #C
         imgRatio: 16x9
-        rounded: true
-        fullHeight: true
       # iconImg: /images/kit-analisi-contesto.svg #I
       # iconImgAlt: Alt lorem ipsum #C
-        url: "valuta-l-adesione-al-modello-di-sito-comunale/" #M
+        url: "valuta-l-adesione-al-modello-di-sito-scolastico/" #M
+        fullHeight: true
+        rounded: true
         text: | #C
           Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento
         tag:
@@ -323,8 +321,7 @@ components:
   # ///////////////////
   sectionsEditorial2 :
 
-
-    # —
+       # —
     # EDITORIAL #C #I
     # —
     - menu: false
@@ -345,7 +342,7 @@ components:
             **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
           - label: Vai su Forum Italia #C
-            url: https://forum.italia.it/c/design/modello-comuni/ #M
+            url: https://forum.italia.it/c/design/modello-scuole/ #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:
@@ -363,10 +360,10 @@ components:
           specular: true
           #title: ciao
           text: |
-            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-comuni
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer del modello: iscriviti allo Slack Developers Italia e cerca il canale #design-siti-scuole
           ctas:
           - label: Vai su Slack #C
-            url: https://developersitalia.slack.com/archives/CME9AD8NN #M
+            url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:
@@ -397,5 +394,9 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+
+
+
+
 
 
