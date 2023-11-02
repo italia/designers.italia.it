@@ -72,10 +72,6 @@ function SectionEditorial({
     "m-auto": !full && centered && !fullColumn,
   });
 
-  // if (fullColumn) {
-  //   grid = "";
-  //   row = "";
-  // }
 
   const styles = classNames("section-editorial", {
     [`bg-${background}`]: background,
