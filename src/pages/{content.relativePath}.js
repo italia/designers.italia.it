@@ -668,7 +668,6 @@ export const query = graphql`
           full
           noSpace
           title
-          # designSystem
           components {
             name
             # responsive
