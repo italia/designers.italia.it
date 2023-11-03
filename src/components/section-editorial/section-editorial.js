@@ -72,7 +72,6 @@ function SectionEditorial({
     "m-auto": !full && centered && !fullColumn,
   });
 
-
   const styles = classNames("section-editorial", {
     [`bg-${background}`]: background,
     "py-0": noSpace,
