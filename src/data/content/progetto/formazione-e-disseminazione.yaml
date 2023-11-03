@@ -176,30 +176,8 @@ components:
           # image: /images/600x400.png #I
           # alt: Alt lorem ipsum #C
           specular: true
-          noSpace: true
           text: | #C
-            Crediamo nel valore della community e nella necessità di **creare collaborazione con le realtà sul campo, incoraggiare la partecipazione e la condivisione di buone pratiche**, partecipare ad eventi di divulgazione e networking. L’obiettivo è quello di condividere buone pratiche attraverso l’ascolto, la collaborazione e la partecipazione della comunità di designer e developers e grazie a eventi e conferenze, collaborazioni, community call, contributi esterni sul blog.
-
-
-
-     # —
-    # EDITORIAL #C #I
-    # —
-    - #title: Promozione
-      background: null
-      menu: false
-      centered: true
-      components:
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Promozione #C
-          # image: /images/600x400.png #I
-          # alt: Alt lorem ipsum #C
-          specular: true
-          headingLevel: 3
-          text: | #C
-            Per favorire la trasformazione digitale sono fondamentali **il coinvolgimento e il supporto delle PA e dei loro fornitori**. Stabilire pubbliche relazioni con le amministrazioni pubbliche, le in-house e i fornitori privati ci permette di trovare ambasciatori a sostegno del progetto puntando a coinvolgere tutti quelli che hanno un forte impatto sulla digitalizzazione dei servizi pubblici, sia a livello centrale che locale.
+            Crediamo nel valore della community e nella necessità di **creare collaborazione con le realtà sul campo, incoraggiare la partecipazione e la condivisione di buone pratiche**, partecipare ad eventi di divulgazione e networking. L’obiettivo è quello di condividere buone pratiche attraverso l’ascolto, la collaborazione e la partecipazione della comunità di designer e developer e grazie a eventi e conferenze, collaborazioni, community call, contributi esterni sul blog.
           ctas:
           - label: Scopri le attività della community #C
             url: "/community/" #M
@@ -211,12 +189,23 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+              
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: Promozione #C
+          # image: /images/600x400.png #I
+          # alt: Alt lorem ipsum #C
+          specular: true
+          headingLevel: 3
+          noSpace: true
+          text: | #C
+            Per favorire la trasformazione digitale sono fondamentali **il coinvolgimento e il supporto delle PA e dei loro fornitori**. Stabilire pubbliche relazioni con le amministrazioni pubbliche, le in-house e i fornitori privati ci permette di trovare ambasciatori a sostegno del progetto puntando a coinvolgere tutti quelli che hanno un forte impatto sulla digitalizzazione dei servizi pubblici, sia a livello centrale che locale.
  # —
     # EDITORIAL #C #I
     # —
     - title: Diamo i numeri
       background: dark
-      headingLevel: 4
+      headingLevel: 3
       menu: false
       centered: true
       components:
