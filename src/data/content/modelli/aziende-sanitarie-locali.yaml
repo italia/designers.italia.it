@@ -48,7 +48,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Modello Aziende Sanitarie Locali - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: In questa pagina verranno rese disponibili tutte le risorse per realizzare con facilità siti per le ASL. #C
+  description: A breve tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per gli utenti delle ASL #C
   image: null #I
   twitterImage: null #I
   canonical: null
@@ -107,7 +107,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Il modello, ora in lavorazione, ti permetterà di **realizzare siti delle ASL** già validati dalla ricerca e progettati sui bisogni degli utenti, in modo rapido ed economico. Scopri di più sul modello, i rilasci, le risorse in progettazione e tutti gli aggiornamenti.  
+      Il modello, ora in lavorazione, ti permetterà di realizzare siti delle ASL già validati dalla ricerca e progettati sui bisogni degli utenti, in modo rapido ed economico. Scopri tutti gli aggiornamenti sul modello, il processo di progettazione e le risorse presto disponibili.
     # img: /images/modelli/scuole-icon.svg #I
     # alt: "" #C
     imgRatio: 4x3
@@ -149,52 +149,131 @@ components:
     # —
     # IMG FULL COVER
     # —
-    # - menu: false #TOGGLE RIGHT SECTION INDEX
-    #   background: light
-    #   full: true
-    #   noSpace: true
-    #   components:
-    #     # IMG
-    #     - name: ImageIcons
-    #       image: /images/modelli/scuole-pattern.png #I
-    #       alt: "Pattern di navigazione dal modello scuole" #C
+    - menu: false #TOGGLE RIGHT SECTION INDEX
+      background: light
+      full: true
+      noSpace: true
+      components:
+        # IMG
+        - name: ImageIcons
+          image: /images/modelli/scuole-pattern.png #I
+          alt: "Pattern di navigazione dal modello scuole" #C
 
     # —
     # EDITORIAL #C #I
     # —
-    # - title: "Realizza un’esperienza digitale efficace"
-    #   background: light
-    #   menu: false
-    #   centered: true
-    #   text: | #C
-    #     Il modello ti aiuterà a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale dei musei civici
-    #   components:
+    - title: "Un punto di riferimento per gli utenti delle ASL"
+      background: light
+      menu: false
+      centered: true
+      #text: | #C
+        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale degli istituti scolastici
+      components:
 
-        # # TXT + CTA BLOCK
+        # TXT + IMG + CTA BLOCK
         # - name: TextImageCta
-        #   title: Partono i lavori per il modello di sito web per i musei civici #C
-        #   text: | #C
-        #     Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale.
-        #   ctas:
-        #   - label: Leggi la notizia e partecipa al progetto #C
-        #     url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/" #M
-        #     blank: false #M #C true if new tab for external links
-        #     # screenReaderText: " (si apre in una nuova finestra)" #C
-        #     icon:
-        #       icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-        #       color: primary
-        #       align: middle
-        #       hidden: true
-        #       size: sm
-        #       addonClasses: ms-2
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          #title: Lorem ipsum h3 #C
+          # text: | #C
+          #  ![Alt lorem ipsum](https://via.placeholder.com/1400x600?text=Placeholder)
+
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          #title: #C
+          text: | #C
+            Grazie ai siti web delle ASL creati seguendo le indicazioni del modello, gli utenti potranno trovare in un unico posto tutte le informazioni di cui hanno bisogno: gli indirizzi delle strutture più vicine, le modalità di accesso a visite ed esami, le indicazioni su percorsi di cura, le ultime novità e le campagne di prevenzione.
+            
+            Il modello comprenderà l'architettura dell'informazione e l'interfaccia per realizzare siti e servizi digitali chiari, semplici da usare e accessibili. 
+          #ctas:
+          #- label: Naviga un esempio di sito #C
+            #screenReaderText: " (si apre in una nuova finestra)" #C
+            #url: "#" #M
+            #blank: true #M #C true if new tab for external links
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: I benefici per enti e fornitori
+      background: null
+      menu: false
+      centered: true
+      #text: | #C
+        #Lorem ipsum
+      components:
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          #title: Lorem ipsum #C
+          text: | #C
+            Oltre a un sito utile per gli utenti, il modello ASL ti aiuterà a creare un’esperienza digitale coerente con gli altri enti della Pubblica Amministrazione, nel pieno rispetto della normativa vigente e senza reinventare la ruota. L’adozione del modello, infatti, facilita l’adesione alle linee guida nazionali, alle migliori pratiche di progettazione digitale e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
+
+            Le risorse operative, presto disponibili, saranno già validate dalla ricerca e ti permetteranno di realizzare il sito risparmiando tempo e risorse economiche.
+          #ctas:
+          #- label: Vai alla documentazione del modello #C
+            #url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
+            #blank: true #M #C true if new tab for external links
+            #screenReaderText: " (si apre in una nuova finestra)" #C
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: Risorse pronte all'uso
+      background: null
+      menu: false
+      centered: true
+      #text: | #C
+        #Lorem ipsum
+      components:
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          #title: Lorem ipsum #C
+          text: | #C
+            Tutte le risorse del modello saranno disponibili entro febbraio 2023 e ti permetteranno di realizzare, a basso costo e rapidamente, siti e servizi digitali centrati sui bisogni degli utenti:
+            - Architettura dell'informazione
+            - Layout hi-fi delle pagine del modello
+            - Prototipi navigabili
+            - Sito demo navigabile
+            - Documentazione tecnica 
+          #ctas:
+          #- label: Vai alla documentazione del modello #C
+            #url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
+            #blank: true #M #C true if new tab for external links
+            #screenReaderText: " (si apre in una nuova finestra)" #C
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
+
+
 
 # —
   # HIGHLIGHT WITH CARDS
   # —
   highlightCards:
     id: notizie
-    title: Notizie sul modello #C
-    text: Aggiornamenti e progressi delle lavorazioni in corso #C
+    title: Rimani aggiornato #C
+    text: Le ultime notizie sul modello ASL, il processo di progettazione e il rilascio delle risorse #C
     headingLevel: 2
     background: light
     col4: false # FALSE notizie + Medium | TRUE eventi + media
@@ -208,58 +287,19 @@ components:
     cards:
 
    #CARD NOTIZIA
-      - title: 'Partono i lavori per il modello di sito web per i musei civici'
+      - title: 'Aziende sanitarie locali: un nuovo modello per migliorare il sito web'
         headingLevel: 4
         customCol: col-lg-4
-        text: Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale.
-        img: /images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png
+        text: Designers Italia avvia la fase di ricerca con gli attori interessati
+        img: /images/community/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web-1400x723.png
         alt: ""
         imgRatio: 21x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/"
-        dateInfo: 27 settembre 2023
+        url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/"
+        dateInfo: 17 ottobre 2023
         tags: [Modelli di sito, Adozione modelli]
-
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial2 :
-
-    # —
-    # EDITORIAL #C #I
-    # —
-    - title: Adottare il modello sarà semplice con il PNRR
-      background: null
-      menu: false
-      centered: true
-      #text: | #C
-      #  Lorem **ipsum**
-      components:
-
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          image: /images/modelli/PA-digitale-adotta.svg #I
-          alt: "" #C
-          specular: false
-          #title: Lorem ipsum h3 #C
-          text: | #C
-            **Scopri su PA digitale 2026** se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
-          ctas:
-          - label: Vai su PA digitale 2016 #C
-            url: https://padigitale2026.gov.it/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            color: white
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
 
 
      # —
@@ -301,7 +341,7 @@ components:
           specular: true
           #title: ciao
           text: |
-            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole
+            **Dialoga e collabora in tempo reale** con i designer del modello: iscriviti allo Slack Developers Italia e cerca il canale dedicato #design-modello-asl
           ctas:
           - label: Vai su Slack #C
             url: https://developersitalia.slack.com/archives/CQ7J0KANT #M
