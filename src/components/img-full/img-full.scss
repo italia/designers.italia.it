@@ -3,7 +3,6 @@
 
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-
   .img-full {
     margin-left: calc(var(--spacer) * -4);
     margin-right: calc(var(--spacer) * -4);
@@ -11,7 +10,10 @@
       display: block;
     }
   }
-
+  .design-system-preview {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
@@ -25,22 +27,16 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-
   .design-system-preview {
-    margin-left: -3rem;
+    margin-left: -1.5rem;
   }
-
-  // .content-column {
-    // .img-full {
-    //   width: 75%;
-    // }
-  // }
-
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
-
+  .design-system-preview {
+    margin-left: -3rem;
+  }
 }
 
 //Desktop -----------------------------------------------------------------------------------------------
