@@ -59,12 +59,14 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems:
-            - url: "eventi/"
-              label: Eventi
             - url: "notizie/"
               label: Notizie
+            - url: "eventi/"
+              label: Eventi
             - url: "#articoli-di-approfondimento"
               label: Articoli di approfondimento
+            - url: "media/"
+              label: Media
             - url: "piano-attivita/"
               label: Piano attività
             - url: "contatti/"
@@ -98,12 +100,123 @@ components:
 
 
   highlightCardsLoop:
+
+    - id: notizie
+      title: Notizie
+      headingLevel: 3
+      text: Le ultime notizie sulle attività del progetto Designers Italia
+      col4: false
+      background: light
+      buttons:
+      - btnStyle: primary
+        label: Esplora tutte le notizie
+        addonStyle: d-block
+        url: "/community/notizie/"
+        disabled: false
+
+      cards:
+
+      - title: 'Disponibile il player video della Pubblica Amministrazione attento a privacy e accessibilità'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Il design system del Paese si arricchisce di un importante componente già in uso nel nuovo archivio media di Designers Italia.
+        img: /images/community/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita/"
+        dateInfo: 31 ottobre 2023
+        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, Accessibilità]
+
+      - title: 'Nuovi rilasci del design system del Paese e delle risorse di progettazione e sviluppo'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Tra le principali novità, il player video attento a privacy e accessibilità e nuove schede informative.
+        img: /images/community/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo/"
+        dateInfo: 24 ottobre 2023
+        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia]
+
+      - title: 'Aziende sanitarie locali: un nuovo modello per migliorare il sito web'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Designers Italia avvia la fase di ricerca con gli attori interessati.
+        img: /images/community/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/"
+        dateInfo: 17 ottobre 2023
+        tags: [Modelli di sito, Adozione modelli]
+
+      - title: 'Partono i lavori per il modello di sito web per i musei civici'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale.
+        img: /images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/"
+        dateInfo: 27 settembre 2023
+        tags: [Modelli di sito, Adozione modelli]
+
+      - title: 'Prendi parte anche tu all’evoluzione del design system del Paese'
+        headingLevel: 4
+        text: Scopri tutte le novità per collaborare alla realizzazione della documentazione e delle risorse.
+        img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
+        dateInfo: 25 settembre 2023
+        tags: [Design system]
+
+      - title: 'Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto'
+        headingLevel: 4
+        text: Ora tutti i file di riferimento dei Modelli di siti e servizi di Designers Italia sono disponibili esclusivamente in formato aperto.
+        img: /images/community/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto/"
+        dateInfo: 01 settembre 2023
+        tags: [Modelli di sito, Adozione modelli]
+
+      topics:
+        title: Nelle notizie si parla di
+        headingLevel: 4
+        icon:
+          icon: sprites.svg#it-horn
+          color: secondary
+          hidden: true
+        button:
+          url: "/argomenti/"
+          btnStyle: outline-secondary
+          label: Scopri tutti gli argomenti
+        tags: [Accessibilità,Privacy by design,Ricerca utente,Sviluppo front end,Design system,Test di usabilità]
+  
     - id: eventi
       title: Eventi
       headingLevel: 3
       text: "Gli eventi dove trovare le esperte e gli esperti di Designers Italia e i nostri cicli di eventi dedicati alla community"
       col4: true
-      background: light
+      background: null
       buttons:
       - btnStyle: primary
         label: Esplora tutti gli eventi
@@ -177,94 +290,6 @@ components:
         tag:
           label: Talk
 
-
-      # - title: "Titolo dell’evento senza immagine!"
-      #   headingLevel: 4
-      #   cardEvent: true
-      #   imgRatio: 4x3
-      #   imgPlaceholder: true
-      #   fullHeight: true
-      #   dateOverlay:
-      #     day: 18
-      #     month: Dicembre
-      #   url: "#"
-      #   text: |
-      #     Descrizione **test**
-      #   tag:
-      #     label: Invito
-
-
-
-    - id: notizie
-      title: Notizie
-      headingLevel: 3
-      text: Le ultime notizie sulle attività del progetto Designers Italia
-      col4: false
-      background: null
-      buttons:
-      - btnStyle: primary
-        label: Esplora tutte le notizie
-        addonStyle: d-block
-        url: "/community/notizie/"
-        disabled: false
-
-      cards:
-
-      - title: 'Partono i lavori per il modello di sito web per i musei civici'
-        headingLevel: 4
-        customCol: col-lg-4
-        text: Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale.
-        img: /images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png
-        alt: ""
-        imgRatio: 21x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/"
-        dateInfo: 27 settembre 2023
-        tags: [Modelli di sito, Adozione modelli]
-
-      - title: 'Prendi parte anche tu all’evoluzione del design system del Paese'
-        headingLevel: 4
-        text: Scopri tutte le novità per collaborare alla realizzazione della documentazione e delle risorse.
-        img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1400x723.png
-        alt: ""
-        imgRatio: 21x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
-        dateInfo: 25 settembre 2023
-        tags: [Design system]
-
-      - title: 'Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto'
-        headingLevel: 4
-        text: Ora tutti i file di riferimento dei Modelli di siti e servizi di Designers Italia sono disponibili esclusivamente in formato aperto.
-        img: /images/community/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto-1400x723.png
-        alt: ""
-        imgRatio: 21x9
-        imgPlaceholder: false
-        fullHeight: false
-        rounded: true
-        url: "/community/notizie/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto/"
-        dateInfo: 01 settembre 2023
-        tags: [Modelli di sito, Adozione modelli]
-
-
-      topics:
-        title: Nelle notizie si parla di
-        headingLevel: 4
-        icon:
-          icon: sprites.svg#it-horn
-          color: secondary
-          hidden: true
-        button:
-          url: "/argomenti/"
-          btnStyle: outline-secondary
-          label: Scopri tutti gli argomenti
-        tags: [Accessibilità,Privacy by design,Ricerca utente,Sviluppo front end,Design system,Test di usabilità]
-
-
     - id: articoli-di-approfondimento
       title: Articoli di approfondimento
       headingLevel: 3
@@ -272,11 +297,11 @@ components:
       col4: false
       background: light
       buttons:
-      - btnStyle: primary
-        label: Esplora tutti gli approfondimenti
-        addonStyle: me-3 d-block
-        url: "#"
-        disabled: true
+      # - btnStyle: primary
+      #   label: Esplora tutti gli approfondimenti
+      #   addonStyle: me-3 d-block
+      #   url: "#"
+      #   disabled: true
       - btnStyle: outline-primary
         label: Vai al Medium di Designers Italia
         url: https://medium.com/designers-italia
@@ -347,91 +372,87 @@ components:
             size: xs
         moreInfo: di Marco Maria Pedrazzo
 
-    # XXX DISABLED MEDIA AREA > WILL GO TO NEXT MILESTONE
+    # MEDIA
 
-    # - id: media
-    #   title: Media
-    #   headingLevel: 3
-    #   text: "I video degli eventi a cui partecipiamo, i tutorial tecnici e i podcast sul progetto Designers Italia"
-    #   col4: true
-    #   background: null
-    #   buttons:
-    #   - btnStyle: primary
-    #     label: Esplora tutti i media
-    #     addonStyle: d-block
-    #     disabled: true
+    - id: media
+      title: Media
+      headingLevel: 3
+      text: "I video, i tutorial e i podcast del progetto Designers Italia"
+      col4: true
+      background: null
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti i media
+        url: "/community/media/"
+        addonStyle: d-block
+        disabled: false
 
-    #   cards:
-    #   - title: "Community Call: il bottone SPID e gli altri"
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 21 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Registrazione
+      cards:
+      
+      - title: "Niente su di Noi, senza di Noi - La sfida accolta da Designers Italia, AGID e Accessibility Days"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days"
+        tag:
+          label: Video - Evento
 
-    #   - title: Come usare il design system del Paese quanso sei al mare
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 1 minuto
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Tutorial
+      - title: "ll design system del Paese e la responsabilità di progettare interfacce pubbliche"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche"
+        tag:
+          label: Video - Evento
+        
+      - title: "La progettazione di API REST per la PA"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20220525-la-progettazione-di-api-rest-per-la-pa.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20220525-la-progettazione-di-api-rest-per-la-pa"
+        tag:
+          label: Video - Community lab
 
-    #   - title: Fanelli parla di Designers Italia
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 21 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-hearing
-    #       ariaLabel: Audio
-    #     url: "#"
-    #     tag:
-    #       label: Podcast
-
-    #   - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 10 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Registrazione
-
-
-
+      - title: "L’attenzione all’accessibilità nel design system del Paese"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20220521-l-attenzione-all-accessibilita-nel-design-system-del-paese.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20220521-l-attenzione-all-accessibilita-nel-design-system-del-paese"
+        tag:
+          label: Video - Evento
 
   highlightsLoop:
     - title: Piano attività
@@ -447,7 +468,7 @@ components:
         - label: Scopri il piano attività
           btnStyle: primary
           url: "piano-attivita/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
 
     - title: Contatti
       subtitle: "Richiedi informazioni sulle attività e i progetti di Designers Italia"
@@ -462,5 +483,5 @@ components:
         - label: Scopri i contatti
           btnStyle: primary
           url: "contatti/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
 

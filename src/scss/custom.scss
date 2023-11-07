@@ -8,10 +8,15 @@ p {
   max-width: 75ch;
 }
 
+.design-system .text-image-cta .content img {
+  border: 1px solid hsl(210, 4%, 78%);
+}
+
 div.chips-list-wrapper {
   ul.chips-list {
     list-style-type: none;
     padding-left: 0;
+    line-height: 1.5;
   }
 }
 
@@ -41,5 +46,23 @@ div.chips-list-wrapper {
     .menu-column.col-lg-3 {
       width:20%;
     }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .vjs-remaining-time {
+    display: none;
+  }
+
+  .vjs-picture-in-picture-control {
+    display: none !important;
+  }
+
+  .vjs-control-bar {
+    overflow: hidden;
+  }
+
+  .video-js .vjs-control {
+    width: 3.5em;
   }
 }
