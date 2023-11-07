@@ -43,23 +43,23 @@ function ComponentView({
   const ICON_INFO = {
     icon: "sprites.svg#it-info-circle",
     size: "sm",
-    color: "primary",
-    addonClasses: "align-middle me-4",
+    color: "white",
+    addonClasses: "align-middle",
     ariaLabel: " (Link esterno)",
   };
 
   const ICON_COPY_CODE = {
     icon: "sprites.svg#it-copy",
     size: "sm",
-    color: "primary",
-    addonClasses: "align-middle me-4",
+    color: "white",
+    addonClasses: "align-middle",
     ariaLabel: " Copia il codice negli appunti",
   };
 
   const ICON_FULLSCREEN = {
     icon: "sprites.svg#it-external-link",
     size: "sm",
-    color: "primary",
+    color: "white",
     addonClasses: "align-middle",
     ariaLabel: " Apri l'anteprima in una nuova finestra",
   };
@@ -157,7 +157,7 @@ function ComponentView({
   );
 
   const accordionContainerStyle = classNames(
-    "accordion accordion-left-icon  border-bottom-0",
+    "accordion accordion-left-icon py-2",
     {
       "me-lg-4 me-xl-5": componentViewerData?.variants,
     },
@@ -183,9 +183,13 @@ function ComponentView({
     <div id={uuid} className="pb-4 mb-5">
       {contentTrimmed && (
         <div className={componentStyles}>
-          <div className="w-100 d-flex align-items-center justify-content-end mb-4">
+          <div className="w-100 d-flex align-items-end justify-content-center py-3">
             {responsiveButtonsItems && (
               <div className="responsive-buttons d-none d-lg-block">
+                {viewer.responsiveLabel &&  <span className="me-4">
+                  {viewer.responsiveLabel}
+                </span> 
+                }
                 <div
                   className="btn-group"
                   role="group"
@@ -200,7 +204,7 @@ function ComponentView({
                 href={BSIExampleUrl}
                 target="_blank"
                 rel="noreferrer"
-                className=""
+                className="btn btn-xs btn-primary p-2"
               >
                 <Icon {...ICON_FULLSCREEN} />
               </a>
@@ -237,7 +241,7 @@ function ComponentView({
                   <Button
                     onClick={(e) => copyToClipboard(e, contentTrimmed)}
                     aria-label={accordionSrCopyLabel}
-                    addonStyle="p-0 shadow-none"
+                    addonStyle="shadow-none btn btn-xs btn-secondary p-2 me-2"
                   >
                     <Icon {...ICON_COPY_CODE} />
                   </Button>
@@ -248,6 +252,7 @@ function ComponentView({
                     target="_blank"
                     rel="noreferrer"
                     aria-label={accordionSrLabel}
+                    className="shadow-none btn btn-xs btn-primary p-2"
                   >
                     <Icon {...ICON_INFO} />
                   </a>
