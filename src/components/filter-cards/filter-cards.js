@@ -12,13 +12,13 @@ function FilterCards({
   showTags,
   col2,
   noSpace,
-  designSystem,
+  paddingX,
 }) {
   const styles = classNames("filter-cards", {
-    "px-lg-5": designSystem,
     [`bg-${background}`]: background,
     "py-5 py-lg-6": !noSpace,
     "py-2 py-lg-5": noSpace,
+    "px-lg-4 px-xl-5": paddingX,
   });
 
   const cardStyles = `col-12 col-md-6 mb-3 mb-md-4 ${col2 ? "" : " col-xl-4"}`;

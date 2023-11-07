@@ -549,7 +549,7 @@ export const query = graphql`
         sectionsEditorial {
           title
           headingLevel
-          designSystem
+          paddingLeft
           background
           menu
           centered
@@ -652,7 +652,7 @@ export const query = graphql`
           col2
           showTags
           noSpace
-          designSystem
+          paddingX
           cards {
             title
             imgRatio
@@ -811,7 +811,7 @@ export const query = graphql`
           full
           noSpace
           title
-          designSystem
+          paddingLeft
           components {
             name
             noSpace

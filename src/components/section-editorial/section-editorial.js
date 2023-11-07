@@ -24,7 +24,7 @@ function SectionEditorial({
   full,
   centered,
   fullColumn,
-  designSystem,
+  paddingLeft,
   background,
   components,
   menu,
@@ -76,7 +76,7 @@ function SectionEditorial({
     [`bg-${background}`]: background,
     "py-0": noSpace,
     "text-white": background === "dark",
-    "ps-lg-5": designSystem,
+    "ps-lg-4 ps-xl-5": paddingLeft,
   });
 
   // buttons
