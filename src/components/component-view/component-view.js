@@ -148,7 +148,7 @@ function ComponentView({
   }
 
   const componentStyles = classNames(
-    "border-bottom p-xl-3 d-flex flex-column align-items-center",
+    "border-bottom d-flex flex-column align-items-center",
     { "pb-4": responsiveButtonsItems },
   );
 
