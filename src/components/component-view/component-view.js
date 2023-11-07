@@ -59,7 +59,7 @@ function ComponentView({
   const ICON_FULLSCREEN = {
     icon: "sprites.svg#it-external-link",
     size: "sm",
-    color: "white",
+    color: "primary",
     addonClasses: "align-middle",
     ariaLabel: " Apri l'anteprima in una nuova finestra",
   };
@@ -132,7 +132,7 @@ function ComponentView({
   const [previewWidth, setPreviewWidth] = useState(" viewer-full");
   const changeResolution = (e) => {
     e.preventDefault();
-    let res = e.target.textContent; // mobile, tablet, full
+    const res = e.target.textContent; // mobile, tablet, full
     setPreviewWidth(` viewer-${res}`);
   };
 
@@ -147,9 +147,21 @@ function ComponentView({
     ));
   }
 
-  const componentStyles = classNames("p-xl-3 d-flex flex-column align-items-center", {
-    "no-left-margin": componentViewerData?.variants,
+  const componentStyles = classNames("d-flex flex-column align-items-center", {
+    "me-lg-4 me-xl-5": componentViewerData?.variants,
   });
+
+  const accordionHeadingStyle = classNames(
+    "d-flex justify-content-between align-items-center",
+    {},
+  );
+
+  const accordionContainerStyle = classNames(
+    "accordion accordion-left-icon  border-bottom-0",
+    {
+      "me-lg-4 me-xl-5": componentViewerData?.variants,
+    },
+  );
 
   const accordionStyle = classNames("accordion-collapse collapse", {
     show: accordionOpen,
@@ -158,7 +170,9 @@ function ComponentView({
 
   const accordionButtonStyle = classNames(
     "accordion-button border-top-0 collapsed",
-    { collapsed: accordionOpen },
+    {
+      collapsed: accordionOpen,
+    },
   );
 
   const BSIExampleUrl = `/examples/${source}/${slugify(
@@ -182,7 +196,12 @@ function ComponentView({
               </div>
             )}
             <div className="ms-4">
-              <a href={BSIExampleUrl} target="_blank" rel="noreferrer" className="btn btn-xs btn-primary btn-icon p-2">
+              <a
+                href={BSIExampleUrl}
+                target="_blank"
+                rel="noreferrer"
+                className=""
+              >
                 <Icon {...ICON_FULLSCREEN} />
               </a>
             </div>
@@ -192,21 +211,15 @@ function ComponentView({
             id={`${idPrefix}-iframe`}
             src={BSIExampleUrl}
             title={`Variante: ${variantName}`}
-            className={`w-100 rounded border shadow-sm iframe-example ${previewWidth}`}
+            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth}`}
           />
           <span className="visually-hidden">Fine anteprima.</span>
         </div>
       )}
       {contentTrimmed && accordionShow && (
-        <div
-          className="accordion accordion-left-icon  border-bottom-0"
-          id={accId}
-        >
+        <div className={accordionContainerStyle} id={accId}>
           <div className="accordion-item">
-            <div
-              className="d-flex justify-content-between align-items-center"
-              id={headId}
-            >
+            <div className={accordionHeadingStyle} id={headId}>
               <h2 id={`${idPrefix}-codeViewer`} className="accordion-header ">
                 <button
                   className={accordionButtonStyle}
