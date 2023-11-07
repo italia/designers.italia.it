@@ -24,6 +24,7 @@ function SectionEditorial({
   full,
   centered,
   fullColumn,
+  paddingLeft,
   background,
   components,
   menu,
@@ -59,28 +60,23 @@ function SectionEditorial({
     "container-xxl": !fullColumn,
   });
 
-  let row = classNames("row", { "flex-lg-row-reverse": menu });
+  const row = classNames({
+    row: !fullColumn,
+    "flex-lg-row-reverse": menu && !fullColumn,
+  });
 
-  let grid;
-  if (full) {
-    grid = "col-12";
-  } else {
-    grid = classNames("col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-1", {
-      "m-auto": centered,
-    });
-  }
-  if (full && menu) {
-    grid = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0";
-  }
-  if (fullColumn) {
-    grid = "";
-    row = "";
-  }
+  const grid = classNames({
+    "col-12": full && !fullColumn,
+    "col-md-10 offset-md-1 col-lg-8 offset-lg-0": full && menu && !fullColumn,
+    "col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-1": !full && !fullColumn,
+    "m-auto": !full && centered && !fullColumn,
+  });
 
   const styles = classNames("section-editorial", {
     [`bg-${background}`]: background,
     "py-0": noSpace,
     "text-white": background === "dark",
+    "ps-lg-4 ps-xl-5": paddingLeft,
   });
 
   // buttons
@@ -130,7 +126,7 @@ function SectionEditorial({
             </div>
           )}
           <div className={grid}>
-            <div className="px-3 p-md-0">
+            <div>
               {title && (
                 <HLevel className={text ? "mb-1" : "mb-0"} id={id}>
                   {title}

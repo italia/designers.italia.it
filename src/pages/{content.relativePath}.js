@@ -246,6 +246,7 @@ export const query = graphql`
         }
         titleText {
           title
+          # text
         }
         highlightCardsLoop {
           id
@@ -278,10 +279,10 @@ export const query = graphql`
             imgRatio
             fullHeight
             imgPlaceholder
-            # iconOverlay {
-            #   icon
-            #   ariaLabel
-            # }
+            iconOverlay {
+              icon
+              ariaLabel
+            }
             dateOverlay {
               day
               month
@@ -375,12 +376,13 @@ export const query = graphql`
         #  background
         #  specular
         #  subtitle
+        #  text
         # buttons {
         #  label
         #  btnStyle
         #  url
         #  addonStyle
-        #  # disabled
+        #  disabled
         #}
         #}
         searchMain {
@@ -432,6 +434,8 @@ export const query = graphql`
             headingLevel
             rounded
             blank
+            dateInfo
+            tags
             externalLink {
               label
               screenReaderText
@@ -545,6 +549,7 @@ export const query = graphql`
         sectionsEditorial {
           title
           headingLevel
+          paddingLeft
           background
           menu
           centered
@@ -646,6 +651,8 @@ export const query = graphql`
           title
           col2
           showTags
+          noSpace
+          paddingX
           cards {
             title
             imgRatio
@@ -804,6 +811,7 @@ export const query = graphql`
           full
           noSpace
           title
+          paddingLeft
           components {
             name
             noSpace
