@@ -147,7 +147,9 @@ function ComponentView({
     ));
   }
 
-  const componentStyles = "p-xl-3 d-flex flex-column align-items-center";
+  const componentStyles = classNames("p-xl-3 d-flex flex-column align-items-center", {
+    "no-left-margin": componentViewerData?.variants,
+  });
 
   const accordionStyle = classNames("accordion-collapse collapse", {
     show: accordionOpen,

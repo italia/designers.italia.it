@@ -1,3 +1,5 @@
+@import "../../scss/bootstrap-breakpoints";
+
 pre {
     max-height:70vh;
     padding-top: 3rem !important;
@@ -41,3 +43,16 @@ pre {
     }
 }
 
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+    .no-left-margin {
+      margin-left: -1.5rem;
+    }
+  }
+  
+  //Laptop ------------------------------------------------------------------------------------------------
+  @include media-breakpoint-up(xl) {
+    .no-left-margin {
+      margin-left: -3rem;
+    }
+  }
