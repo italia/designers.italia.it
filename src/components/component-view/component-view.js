@@ -157,7 +157,7 @@ function ComponentView({
   );
 
   const accordionContainerStyle = classNames(
-    "accordion accordion-left-icon py-2",
+    "accordion accordion-left-icon py-2 border-bottom-0",
     {
       "me-lg-4 me-xl-5": componentViewerData?.variants,
     },
@@ -183,13 +183,12 @@ function ComponentView({
     <div id={uuid} className="pb-4 mb-5">
       {contentTrimmed && (
         <div className={componentStyles}>
-          <div className="w-100 d-flex align-items-end justify-content-center py-3">
+          <div className="w-100 d-flex align-items-end justify-content-end py-3">
             {responsiveButtonsItems && (
               <div className="responsive-buttons d-none d-lg-block">
-                {viewer.responsiveLabel &&  <span className="me-4">
-                  {viewer.responsiveLabel}
-                </span> 
-                }
+                {viewer.responsiveLabel && (
+                  <span className="me-4">{viewer.responsiveLabel}</span>
+                )}
                 <div
                   className="btn-group"
                   role="group"
@@ -199,7 +198,7 @@ function ComponentView({
                 </div>
               </div>
             )}
-            <div className="ms-4">
+            <div className="ms-2">
               <a
                 href={BSIExampleUrl}
                 target="_blank"
