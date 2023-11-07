@@ -57,17 +57,20 @@ function Hero({
 
   const imgResponsiveStyle = "rounded";
 
+  const breadcrumbsStyle = classNames("hero-top px-3 pt-4", {
+    "px-lg-4": column,
+  });
+
   const rowStyle = classNames("row g-0", {
     "justify-content-lg-center": centered,
+    "ps-lg-2": column,
   });
 
-  let columnStyle = classNames("col-12 g-0 px-3", {
+  const columnStyle = classNames({
+    "col-12 g-0 px-3": !column,
+    "col-12 col-md-8 px-3 ps-lg-5": column,
     "col-lg-7 offset-lg-0": centered,
-    "ps-lg-5 pe-lg-0 col-lg-7": !centered,
-  });
-
-  const breadcrumbsStyle = classNames("hero-top px-3 pt-4", {
-    "px-lg-5": column,
+    "ps-lg-5 pe-lg-0 col-lg-7": !centered && !column,
   });
 
   const kangarooZoneStyle = classNames("kangaroo-zone", {
@@ -75,19 +78,17 @@ function Hero({
     "pb-4 pb-md-5 pb-lg-0": specialKangarooComponent,
   });
 
-  let kangarooColumnStyle = classNames("col-12 g-0", {
-    "col-lg-7 offset-lg-0": centered,
+  const rightColumnStyle = classNames({
+    "col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4":
+      !column,
+    "col-12 col-md-3 offset-md-1 d-flex flex-column px-3 pe-lg-5 pt-md-4":
+      column,
   });
 
-  let rightColumnStyle =
-    "col-12 col-md-12 col-lg-4 offset-lg-1 d-flex flex-column px-3 pe-lg-5 pt-4";
-
-  if (column) {
-    columnStyle = "px-3 col-12 col-md-8";
-    kangarooColumnStyle = "col-12 g-0";
-    rightColumnStyle =
-      "col-12 col-md-3 offset-md-1 d-flex flex-column px-3 pe-lg-5 pt-md-4";
-  }
+  const kangarooColumnStyle = classNames("col-12 g-0", {
+    "ps-lg-5": column && !specialKangarooComponent,
+    "col-lg-7 offset-lg-0": centered,
+  });
 
   const shareColor = background === ("primary" || "dark") ? "white" : "primary";
 
@@ -143,7 +144,7 @@ function Hero({
                     {kangaroo && specialKangarooComponent && (
                       <div className="">
                         <div className={kangarooZoneStyle}>
-                          <div className="container-xxl">
+                          <div className="container-xxl g-0">
                             <div className="row justify-content-lg-center">
                               {/* rowStyle */}
                               <div className={kangarooColumnStyle}>
@@ -156,7 +157,6 @@ function Hero({
                     )}
                   </div>
                   {!centered && (
-                    // <div className="col-12 col-md-10 col-lg-3 offset-md-1 px-4 px-lg-2 d-flex flex-column">
                     <div className={rightColumnStyle}>
                       {img && (
                         <div className={imgStyle}>
