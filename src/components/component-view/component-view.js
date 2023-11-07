@@ -40,11 +40,11 @@ function ComponentView({
 
   const { viewer, accordionLabel, accordionSrLabel } = viewerData;
 
-  const ICON_EXTERNAL = {
-    icon: "sprites.svg#it-external-link",
+  const ICON_INFO = {
+    icon: "sprites.svg#it-info-circle",
     size: "sm",
     color: "primary",
-    addonClasses: "align-middle me-4 mb-1",
+    addonClasses: "align-middle me-4",
     ariaLabel: " (Link esterno)",
   };
 
@@ -52,15 +52,15 @@ function ComponentView({
     icon: "sprites.svg#it-copy",
     size: "sm",
     color: "primary",
-    addonClasses: "align-middle me-4 mb-1 mt-1",
+    addonClasses: "align-middle me-4",
     ariaLabel: " Copia il codice negli appunti",
   };
 
   const ICON_FULLSCREEN = {
-    icon: "sprites.svg#it-fullscreen",
+    icon: "sprites.svg#it-external-link",
     size: "sm",
-    color: "primary",
-    addonClasses: "align-middle me-2",
+    color: "white",
+    addonClasses: "align-middle",
     ariaLabel: " Apri l'anteprima in una nuova finestra",
   };
 
@@ -129,11 +129,10 @@ function ComponentView({
   const collId = `${uuid}-collapse`;
   const [wrappedCode, setWrappedCode] = useState(false);
 
-  const [previewWidth, setPreviewWidth] = useState(" viewer-desktop");
+  const [previewWidth, setPreviewWidth] = useState(" viewer-full");
   const changeResolution = (e) => {
     e.preventDefault();
-    let res = e.target.textContent; // mobile, tablet, 100%
-    if (res === "100%") res = "desktop";
+    let res = e.target.textContent; // mobile, tablet, full
     setPreviewWidth(` viewer-${res}`);
   };
 
@@ -181,7 +180,7 @@ function ComponentView({
               </div>
             )}
             <div className="ms-4">
-              <a href={BSIExampleUrl} target="_blank" rel="noreferrer">
+              <a href={BSIExampleUrl} target="_blank" rel="noreferrer" className="btn btn-xs btn-primary btn-icon p-2">
                 <Icon {...ICON_FULLSCREEN} />
               </a>
             </div>
@@ -235,7 +234,7 @@ function ComponentView({
                     rel="noreferrer"
                     aria-label={accordionSrLabel}
                   >
-                    <Icon {...ICON_EXTERNAL} />
+                    <Icon {...ICON_INFO} />
                   </a>
                 )}
               </div>
