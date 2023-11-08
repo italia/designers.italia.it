@@ -105,53 +105,246 @@ components:
       title: null
       text: null
       background: null
-
       components:
+        - name: TextImageCta
+          title: A cosa servono
+          headingLevel: 2
+          text: |
+            Le spaziature servono a:
+            1. **organizzare un layout**: le spaziature definiscono la disposizione degli elementi all'interno delle pagine e dei componenti, garantendo il rispetto di una struttura chiara e coesa;
+            2. **creare respiro**: le spaziature forniscono respiro visuale tra gli elementi, evitando sovrapposizioni indesiderate e migliorando la comprensione delle informazioni.
+            3. **fornire coerenza**: l'uso consistente delle spaziature contribuisce a garantire che i layouts siano uniformi e armoniosi in tutte le interfacce.
+        
+        - name: TextImageCta
+          title: Come usarle
+          headingLevel: 2
+          text: |
+            - **definisci una gerarchia** che consenta di gestire le distanze tra gli elementi in modo logico, utilizando spaziature più ampie tra le sezioni di una pagina e spaziature più strette all'interno di una sezione o componente.
+            - **utilizza i design token** dedicati alle spaziature, rispettando la distinzione tra quelli per lo spazio verticale (`spacing-stack`), quelli per lo spazio orizzontale (`spacing-inline`) e infine quelli per lo spazio interno ad un elemento (`spacing-inset`);
+        
+        - name: TextImageCta
+          title: I token per le spaziature
+          headingLevel: 2
+          text: |
+            I token **globali** costituiscono la lista delle misure disponibili. Come tali, non devono essere utilizzati direttamente nel design o nel codice, in favore dei token semantici. 
 
-      - name: TextImageCta
-        title: A cosa servono
-        headingLevel: 2
-        text: |
-          Le spaziature servono a:
-          1. **organizzare un layout**: le spaziature definiscono la disposizione degli elementi all'interno delle pagine e dei componenti, garantendo il rispetto di una struttura chiara e coesa;
-          2. **creare respiro**: le spaziature forniscono respiro visuale tra gli elementi, evitando sovrapposizioni indesiderate e migliorando la comprensione delle informazioni.
-          3. **fornire coerenza**: l'uso consistente delle spaziature contribuisce a garantire che i layouts siano uniformi e armoniosi in tutte le interfacce.
-      
-      - name: TextImageCta
-        title: Come usarle
-        headingLevel: 2
-        text: |
-          - **definisci una gerarchia** che consenta di gestire le distanze tra gli elementi in modo logico, utilizando spaziature più ampie tra le sezioni di una pagina e spaziature più strette all'interno di una sezione o componente.
-          - **utilizza i design token** dedicati alle spaziature, rispettando la distinzione tra quelli per lo spazio verticale (`spacing-stack`), quelli per lo spazio orizzontale (`spacing-inline`) e infine quelli per lo spazio interno ad un elemento (`spacing-inset`);
-      - name: Table
-        title: Spacing tokens
-        responsive: table-responsive
-        addonClasses: mb-5
-        head:
-          - text: Token
-          - text: Valore
-          - text: Descrizione
-        rows:
-          - cols:
-            - tag: 
-                label: spacing.xxs
-                addonClasses: neutral-1-bg-a1 text-dark fw-bold
-            - text: '![misura di spazio extra extra small](/images/design-system/fondamenti/spacing-xxs.png)'  4px
-            - text: Misura di spazio minima
-          - cols:
-            - text: spacing.xs
-            - text: 8px
-          - cols:
-            - text: spacing.s
-            - text: 16px
-          - cols:
-            - text: spacing.m
-            - text: 24px
-          - cols:
-            - text: spacing.l
-            - text: 32px
-          - cols:
-            - text: spacing.xxs
-            - text: 4px
-          
-           
+            I token **semantici** per le spaziature sono suddivisi in base al caso d'uso:
+            - **spaziatura verticale** (_stack_) tra sezioni di una pagina o componenti;
+            - **spaziatura orizzontale** (_inline_) tra sezioni di una pagina o componenti;
+            - **spaziatura interna** (_inset_) ad una sezione o componente.
+
+        - name: Table
+          title: Token globali
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Valore
+            - text: Descrizione
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  ![misura di spazio extra extra small](/images/design-system/fondamenti/spacing-xxs.png)
+                  4px
+              - text: Misura di spazio base xx-small
+              - tag: 
+                  label: spacing.xxs
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio extra small](/images/design-system/fondamenti/spacing-xs.png)
+                  8px
+              - text: Misura di spazio x-small
+              - tag: 
+                  label: spacing.xs
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio base](/images/design-system/fondamenti/spacing-s.png)
+                  16px
+              - text: Misura di spazio small
+              - tag: 
+                  label: spacing.s
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio medium](/images/design-system/fondamenti/spacing-m.png)
+                  24px
+              - text: Misura di spazio medium
+              - tag: 
+                  label: spacing.m  
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio large](/images/design-system/fondamenti/spacing-l.png)
+                  32px
+              - text: Misura di spazio large
+              - tag: 
+                  label: spacing.l
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio extra large](/images/design-system/fondamenti/spacing-xl.png)
+                  40px
+              - text: Misura di spazio x-large
+              - tag: 
+                  label: spacing.xl
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio extra extra large](/images/design-system/fondamenti/spacing-xxl.png)
+                  48px
+              - text: Misura di spazio xx-large
+              - tag: 
+                  label: spacing.xxl
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+
+        - name: Table
+          title: Token semantici verticali
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Valore
+            - text: Descrizione
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  ![misura di spazio verticale x-small](/images/design-system/fondamenti/spacing-stack-xs.png)
+                  8px
+              - text: Misura di spazio verticale x-small
+              - tag: 
+                  label: spacing.stack.xs
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio verticale small](/images/design-system/fondamenti/spacing-stack-s.png)
+                  16px
+              - text: Misura di spazio verticale small
+              - tag: 
+                  label: spacing.stack.s
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio verticale medium](/images/design-system/fondamenti/spacing-stack-m.png)
+                  24px
+              - text: Misura di spazio verticale medium
+              - tag: 
+                  label: spacing.stack.m
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio verticale large](/images/design-system/fondamenti/spacing-stack-l.png)
+                  32px
+              - text: Misura di spazio verticale large
+              - tag: 
+                  label: spacing.stack.l
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio verticale x-large](/images/design-system/fondamenti/spacing-stack-xl.png)
+                  40px
+              - text: Misura di spazio verticale x-large
+              - tag: 
+                  label: spacing.stack.xl
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio vertical xx-large](/images/design-system/fondamenti/spacing-stack-xxl.png)
+                  48px
+              - text: Misura di spazio verticale xx-large
+              - tag: 
+                  label: spacing.stack.xxl
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+        
+        - name: Table
+          title: Token semantici orizzontali
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Valore
+            - text: Descrizione
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  ![misura di spazio extra small](/images/design-system/fondamenti/spacing-inline-xxs.png)
+                  4px
+              - text: Misura di spazio verticale xx-small
+              - tag: 
+                  label: spacing.inline.xxs
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio base](/images/design-system/fondamenti/spacing-inline-xs.png)
+                  8px
+              - text: Misura di spazio orizzontale x-small
+              - tag: 
+                  label: spacing.inline.xs
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio medium](/images/design-system/fondamenti/spacing-inline-s.png)
+                  16px
+              - text: Misura di spazio orizzontale small
+              - tag: 
+                  label: spacing.inline.s
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio large](/images/design-system/fondamenti/spacing-inline-m.png)
+                  24px
+              - text: Misura di spazio orizzontale medium
+              - tag: 
+                  label: spacing.inline.m
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio extra large](/images/design-system/fondamenti/spacing-inline-l.png)
+                  32px
+              - text: Misura di spazio verticale large
+              - tag: 
+                  label: spacing.l
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+
+        - name: Table
+          title: Token semantici interni
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Valore
+            - text: Descrizione
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  ![misura di spazio interna small](/images/design-system/fondamenti/spacing-inset-s.png)
+                  4px
+              - text: Misura di spazio interna small
+              - tag: 
+                  label: spacing.inset.s
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio interna medium](/images/design-system/fondamenti/spacing-inset-m.png)
+                  8px
+              - text: Misura di spazio interna medium
+              - tag: 
+                  label: spacing.inset.m
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio interna large](/images/design-system/fondamenti/spacing-inset-l.png)
+                  16px
+              - text: Misura di spazio interna large
+              - tag: 
+                  label: spacing.inset.l
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura di spazio interna x-large](/images/design-system/fondamenti/spacing-inset-xl.png)
+                  24px
+              - text: Misura di spazio interna x-large
+              - tag: 
+                  label: spacing.inset.xl
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
