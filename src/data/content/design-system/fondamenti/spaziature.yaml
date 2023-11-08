@@ -113,16 +113,45 @@ components:
         headingLevel: 2
         text: |
           Le spaziature servono a:
-          1. **organizzare un layout**, le spaziature definiscono la disposizione degli elementi all'interno delle pagine e dei componenti, garantendo il rispetto di una struttura chiara e coesa;
-          2. **creare respiro**, le spaziature forniscono respiro visuale tra gli elementi, evitando sovrapposizioni indesiderate e migliorando la comprensione delle informazioni.
-          3. **fornire coerenza**, l'uso consistente delle spaziature contribuisce a garantire che i layouts siano uniformi e armoniosi in tutte le interfacce.
+          1. **organizzare un layout**: le spaziature definiscono la disposizione degli elementi all'interno delle pagine e dei componenti, garantendo il rispetto di una struttura chiara e coesa;
+          2. **creare respiro**: le spaziature forniscono respiro visuale tra gli elementi, evitando sovrapposizioni indesiderate e migliorando la comprensione delle informazioni.
+          3. **fornire coerenza**: l'uso consistente delle spaziature contribuisce a garantire che i layouts siano uniformi e armoniosi in tutte le interfacce.
       
       - name: TextImageCta
         title: Come usarle
         headingLevel: 2
         text: |
-          - **definisci una gerarchia** che consenta di gestire le distanze tra gli elementi in modo logico, avendo spaziature più ampie tra sezioni di una pagina e spaziature più strette all'interno dei componenti.
-          - **utilizza i design tokens** dedicati alle spaziature, seguendo la distinzione tra spaziatura verticale (`spacing-stack`), spaziatura orizzontale (`spacing-inline`) e spaziatura interna (`spacing-inset`);
-          - 
+          - **definisci una gerarchia** che consenta di gestire le distanze tra gli elementi in modo logico, utilizando spaziature più ampie tra le sezioni di una pagina e spaziature più strette all'interno di una sezione o componente.
+          - **utilizza i design token** dedicati alle spaziature, rispettando la distinzione tra quelli per lo spazio verticale (`spacing-stack`), quelli per lo spazio orizzontale (`spacing-inline`) e infine quelli per lo spazio interno ad un elemento (`spacing-inset`);
+      - name: Table
+        title: Spacing tokens
+        responsive: table-responsive
+        addonClasses: mb-5
+        head:
+          - text: Token
+          - text: Valore
+          - text: Descrizione
+        rows:
+          - cols:
+            - tag: 
+                label: spacing.xxs
+                addonClasses: neutral-1-bg-a1 text-dark fw-bold
+            - text: '![misura di spazio extra extra small](/images/design-system/fondamenti/spacing-xxs.png)'  4px
+            - text: Misura di spazio minima
+          - cols:
+            - text: spacing.xs
+            - text: 8px
+          - cols:
+            - text: spacing.s
+            - text: 16px
+          - cols:
+            - text: spacing.m
+            - text: 24px
+          - cols:
+            - text: spacing.l
+            - text: 32px
+          - cols:
+            - text: spacing.xxs
+            - text: 4px
           
            
