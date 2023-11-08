@@ -24,12 +24,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Sviluppa l'interfaccia di un servizio digitale - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: Assembla velocemente il front-end di un servizio digitale tramite componenti, soluzioni di design e codice già validati. #C
+  name: Realizza un prototipo in alta fedeltà - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Costruisci le schermate di un servizio digitale e rendile interattive per svolgere test di usabilità e, successivamente, passare allo sviluppo. #C
   image: null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/realizzare/sviluppo-interfaccia/sviluppa-l-interfaccia-di-un-servizio-digitale/ #M
+  pathname: /risorse-per-progettare/realizzare/costruzione-interfaccia/realizza-un-prototipo-in-alta-fedelta/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -52,7 +52,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Sviluppo interfaccia #C
+        label: Costruzione interfaccia #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -93,20 +93,20 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: "Sviluppa l'interfaccia di un servizio digitale" #C
-    subtitle: Assembla velocemente il front-end del servizio digitale tramite componenti, soluzioni di design e codice già validati #C
+    title: Realizza un prototipo in alta fedeltà #C
+    subtitle: Costruisci le schermate del servizio digitale e rendile interattive per svolgere test di usabilità e, successivamente, passare allo sviluppo #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
-    # #pretext:
-    #   icon:
-    #     icon: sprites.svg#it-info-circle
-    #     size: sm
-    #   text: In breve
-    text: | #C
-      Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_webDevelopment_sviluppa.svg #I
-    alt: "Interesse pubblico, codice pubblico" #C
+   # pretext:
+   #   icon:
+   #     icon: sprites.svg#it-info-circle
+   #     size: sm
+   #   text: In breve
+   # text: | #C
+   #   Lorem **ipsum**
+    img: /images/risorse-per-progettare/icons/kit_UI_InterfacciaUtente.svg #I
+    alt: "Il design è una questione di attenzione" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -130,7 +130,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Sviluppo interfaccia #C
+            label: Costruzione interfaccia #C
             url: "../" #M
       otherInfo:
         items:
@@ -152,7 +152,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Developer #C
+            label: Designer #C
           - title: Vuoi
             tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
@@ -169,36 +169,33 @@ components:
         color: secondary
       tags: [Interfaccia utente,Prototipazione]
 
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial :
 
 
-    - title: Le librerie di codice #C
+    - title: "L'interfaccia in alta fedeltà" #C
       menu: false
       centered: true
       background: null
-      text: | #C
-         Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
-
       components:
 
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            Le librerie dedicate allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
+            La realizzazione dell’interfaccia in alta fedeltà (in inglese high-fidelity, abbr. hi-fi) è una delle fasi finali della realizzazione del prodotto. Si concentra su aspetti visivi di progettazione grafica, aggiungendo dettagli, stile grafico e animazioni.
 
-            Le librerie ti forniscono **componenti open-source pronti all’uso**: ogni libreria è corredata da una documentazione tecnica completa e dettagliata che illustra come usare e personalizzare i relativi componenti. Fra le risorse del kit hai inoltre a disposizione pagine HTML di esempio da usare come punto di partenza per lo sviluppo del tuo progetto.
+            L’interfaccia viene costruita tenendo come punto di riferimento il wireframe in bassa fedeltà (in inglese, low-fi) precedentemente creato. La struttura generale viene trasformata e arricchita in modo da dare una resa reale del prodotto finale.
+
+            È utile rendere interattive le schermate e crearne prototipi per svolgere test di usabilità e confermare o modificare le scelte fatte.
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Bootstrap Italia e React #C
+          title: UI Kit Italia #C
           text: | #C
-            **Bootstrap Italia** è il principale punto di riferimento e il più moderno set di componenti disponibile per la costruzione di interfacce per servizi della PA, costruito sulle basi delle più recenti modifiche allo UI Kit e sul framework Bootstrap 5. Contiene codice **HTML e CSS** già pronto all’utilizzo per l’applicazione di tipografia, spaziature, design responsivo ed accessibile.
+            UI Kit Italia, una tra le principali risorse del design system del Paese, è una libreria di componenti già pronti che puoi assemblare e adattare per progettare e prototipare l’interfaccia di un sito o servizio digitale. Ogni componente ha un numero di proprietà, come la forma e il colore, che possono essere combinati o variati per comunicare un diverso significato.
 
-            **React kit** contiene componenti programmati in linguaggio **JavaScript**, costruiti sulle basi di React, un framework open source per sviluppo di applicazioni web e mobile ad alta interattività e scambio di dati.
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -210,35 +207,23 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Bootstrap Italia #C
-            srBefore: "Sito di documentazione: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          - label: UI Kit Italia v3+ #C
+            srBefore: "File Figma: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: "Il framework che permette di costruire interfacce web inclusive e semplici da mantenere" #C
-            url: https://italia.github.io/bootstrap-italia/ #M
+            text: La libreria di fondamenti e componenti per progettare e realizzare l’interfaccia utente, coerente con Bootstrap Italia #C
+            url: https://www.figma.com/community/file/1105848677422572920 #M
             blank: true
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://italia.github.io/bootstrap-italia/ #M
-                ariaLabel: "Sito di documentazione: Bootstrap Italia (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://www.figma.com/community/file/1105848677422572920 #M
+                ariaLabel: "UI Kit Italia v3+ - Figma (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://github.com/italia/bootstrap-italia #M
-                ariaLabel: "Repository GitHub: Bootstrap Italia (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                url: https://github.com/italia/design-ui-kit #M
+                ariaLabel: "Repository GitHub: UI Kit Italia v3+ - Altri formati e changelog (si apre in una nuova finestra)" #C
                 blank: true
 
-          - label: React Kit #C
-            srBefore: "Sito di documentazione: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: "Design React Kit per la Pubblica Amministrazione" #C
-            url: https://italia.github.io/design-react-kit/ #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://italia.github.io/bootstrap-italia/ #M
-                ariaLabel: "Sito di documentazione: Bootstrap Italia (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
-                blank: true
-              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://github.com/italia/design-react-kit/ #M
-                ariaLabel: "Repository GitHub: React Kit (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
-                blank: true
+
+
+
 
