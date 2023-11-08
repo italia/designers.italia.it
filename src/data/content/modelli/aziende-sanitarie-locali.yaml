@@ -20,34 +20,32 @@ metadata:
   template:
     name: level2
   redirect_from:
-    - /musei
-    - /musei-civici
-    - /modello/musei
-    - /modello/musei-civici
-    - /modello/museo
-    - /modello/museo-civico
-    - /modello/sito-musei
-    - /modello/sito-museo
-    - /modello-sito-musei
-    - /modello-sito-museo
-    - /modello-siti-musei
-    - /modello-siti-museo
-    - /modello-sito-museale
-    - /modello-siti-museali
-    - /kit/musei
-    - /kit/musei-civici
-    - /progetti/siti-musei
-    - /progetti/siti-musei-civici
-    - /siti-musei
-    - /siti-musei-civici
-    - /progetti/siti-web-musei
-    - /progetti/siti-web-musei-civici
+    - /asl
+    - /aziende-sanitarie-locali
+    - /modello/asl
+    - /modello/aziende-sanitarie-locali
+    - /modello/aziende
+    - /modello/azienda-sanitaria-locale
+    - /modello/sito-asl
+    - /modello/sito-aziende-sanitarie-locali
+    - /modello-sito-asl
+    - /modello-sito-aziende-sanitarie-locali
+    - /modello-siti-asl
+    - /modello-siti-aziende-sanitarie-locali
+    - /kit/asl
+    - /kit/aziende-sanitarie-locali
+    - /progetti/siti-asl
+    - /progetti/siti-aziende-sanitarie-locali
+    - /siti-asl
+    - /siti-aziende-sanitarie-locali
+    - /progetti/siti-web-asl
+    - /progetti/siti-web-aziende-sanitarie-locali
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Modello Aziende Sanitarie Locali - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  name: Aziende Sanitarie Locali - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: A breve tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per gli utenti delle ASL #C
   image: null #I
   twitterImage: null #I
@@ -149,15 +147,15 @@ components:
     # —
     # IMG FULL COVER
     # —
-    - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: light
-      full: true
-      noSpace: true
-      components:
+    # - menu: false #TOGGLE RIGHT SECTION INDEX
+     # background: light
+     # full: true
+      # noSpace: true
+      # components:
         # IMG
-        - name: ImageIcons
-          image: /images/modelli/scuole-pattern.png #I
-          alt: "Pattern di navigazione dal modello scuole" #C
+        # - name: ImageIcons
+        # image: /images/modelli/scuole-pattern.png #I
+        # alt: "Pattern di navigazione dal modello scuole" #C
 
     # —
     # EDITORIAL #C #I
@@ -167,7 +165,7 @@ components:
       menu: false
       centered: true
       text: | #C
-        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale degli istituti scolastici
+        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle aziende sanitarie locali
       components:
 
         # TXT + IMG + CTA BLOCK
@@ -214,6 +212,7 @@ components:
         # TXT + CTA BLOCK
         - name: TextImageCta
           #title: Lorem ipsum #C
+          noSpace: true
           text: | #C
             Oltre a un sito utile per gli utenti, il modello ASL ti aiuterà a creare un’esperienza digitale coerente con gli altri enti della Pubblica Amministrazione, nel pieno rispetto della normativa vigente e senza reinventare la ruota. L’adozione del modello, infatti, facilita l’adesione alle linee guida nazionali, alle migliori pratiche di progettazione digitale e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
 
@@ -231,11 +230,20 @@ components:
               #size: sm
               #addonClasses: ms-2
 
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: Un approccio di progettazione aperto, partecipato e con le persone al centro
+          text: |
+            Stiamo progettando il modello sulla base di un’estensiva ricerca qualitativa con tutti gli attori coinvolti nell’ambito sanitario: enti, fornitori, in-house e cittadini. Grazie a interviste, focus group e sessioni di validazione, teniamo conto di tutte le necessità per creare un modello funzionale e standardizzato, ma abbastanza flessibile da poter essere adattato a diverse realtà sanitarie. Anche dopo il rilascio, continueremo a raccogliere suggerimenti per migliorare nel tempo sempre di più l’esperienza degli utenti con i siti delle ASL.
+
+            ![Ricerca sul campo con utenti](images/xxx)
+
     # —
     # EDITORIAL #C #I
     # —
     - title: Risorse pronte all'uso
-      background: null
+      background: light
       menu: false
       centered: true
       #text: | #C
@@ -246,12 +254,12 @@ components:
         - name: TextImageCta
           #title: Lorem ipsum #C
           text: | #C
-            Tutte le risorse del modello saranno disponibili entro febbraio 2023 e ti permetteranno di realizzare, a basso costo e rapidamente, siti e servizi digitali centrati sui bisogni degli utenti:
-            - Architettura dell'informazione
-            - Layout hi-fi delle pagine del modello
-            - Prototipi navigabili
-            - Sito demo navigabile
-            - Documentazione tecnica 
+            Tutte le risorse del modello saranno disponibili entro febbraio 2024 e ti permetteranno di realizzare, a basso costo e rapidamente, siti e servizi digitali centrati sui bisogni degli utenti:
+            - architettura dell'informazione;
+            - layout hi-fi delle pagine del modello;
+            - prototipi navigabili;
+            - sito demo navigabile;
+            - documentazione tecnica.
           #ctas:
           #- label: Vai alla documentazione del modello #C
             #url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
@@ -275,7 +283,7 @@ components:
     title: Rimani aggiornato #C
     text: Le ultime notizie sul modello ASL, il processo di progettazione e il rilascio delle risorse #C
     headingLevel: 2
-    background: light
+    background: null
     col4: false # FALSE notizie + Medium | TRUE eventi + media
     # buttons:
     #   - btnStyle: outline-primary
