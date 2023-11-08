@@ -105,7 +105,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Il modello, ora in lavorazione, ti permetterà di realizzare siti delle ASL già validati dalla ricerca e progettati sui bisogni degli utenti, in modo rapido ed economico. Scopri tutti gli aggiornamenti sul modello, il processo di progettazione e le risorse presto disponibili.
+      Il modello, ora in lavorazione, ti permetterà di **realizzare siti delle ASL** già validati dalla ricerca e progettati sui bisogni degli utenti, in modo rapido ed economico. Scopri tutti gli aggiornamenti sul modello, il processo di progettazione e le risorse presto disponibili.
     # img: /images/modelli/scuole-icon.svg #I
     # alt: "" #C
     imgRatio: 4x3
@@ -181,6 +181,7 @@ components:
         # TXT + CTA BLOCK
         - name: TextImageCta
           #title: #C
+          noSpace: true
           text: | #C
             Grazie ai siti web delle ASL creati seguendo le indicazioni del modello, gli utenti potranno trovare in un unico posto tutte le informazioni di cui hanno bisogno: gli indirizzi delle strutture più vicine, le modalità di accesso a visite ed esami, le indicazioni su percorsi di cura, le ultime novità e le campagne di prevenzione.
             
@@ -212,7 +213,7 @@ components:
         # TXT + CTA BLOCK
         - name: TextImageCta
           #title: Lorem ipsum #C
-          noSpace: true
+          noSpace: false
           text: | #C
             Oltre a un sito utile per gli utenti, il modello ASL ti aiuterà a creare un’esperienza digitale coerente con gli altri enti della Pubblica Amministrazione, nel pieno rispetto della normativa vigente e senza reinventare la ruota. L’adozione del modello, infatti, facilita l’adesione alle linee guida nazionali, alle migliori pratiche di progettazione digitale e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
 
@@ -234,10 +235,11 @@ components:
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Un approccio di progettazione aperto, partecipato e con le persone al centro
+          noSpace: true
           text: |
-            Stiamo progettando il modello sulla base di un’estensiva ricerca qualitativa con tutti gli attori coinvolti nell’ambito sanitario: enti, fornitori, in-house e cittadini. Grazie a interviste, focus group e sessioni di validazione, teniamo conto di tutte le necessità per creare un modello funzionale e standardizzato, ma abbastanza flessibile da poter essere adattato a diverse realtà sanitarie. Anche dopo il rilascio, continueremo a raccogliere suggerimenti per migliorare nel tempo sempre di più l’esperienza degli utenti con i siti delle ASL.
+            ![Ricerca sul campo con utenti](/images/modelli/musei-test-usabilita.jpg)
 
-            ![Ricerca sul campo con utenti](images/xxx)
+            Stiamo progettando il modello sulla base di un’estensiva ricerca qualitativa con tutti gli attori coinvolti nell’ambito sanitario: enti, fornitori, in-house e cittadini. Grazie a interviste, focus group e sessioni di validazione, teniamo conto di tutte le necessità per creare un modello funzionale e standardizzato, ma abbastanza flessibile da poter essere adattato a diverse realtà sanitarie. Anche dopo il rilascio, continueremo a raccogliere suggerimenti per migliorare nel tempo sempre di più l’esperienza degli utenti con i siti delle ASL.
 
     # —
     # EDITORIAL #C #I
@@ -252,6 +254,7 @@ components:
 
         # TXT + CTA BLOCK
         - name: TextImageCta
+          noSpace: true
           #title: Lorem ipsum #C
           text: | #C
             Tutte le risorse del modello saranno disponibili entro febbraio 2024 e ti permetteranno di realizzare, a basso costo e rapidamente, siti e servizi digitali centrati sui bisogni degli utenti:
