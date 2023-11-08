@@ -1,0 +1,128 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Spaziature
+  description: "Le spaziature svolgono un ruolo fondamentale nella creazione di un layout ben strutturato e nella definizione del respiro e dell'equilibrio. Un utilizzo coerente delle spaziature contribuisce a migliorare la leggibilità, l'usabilità e l'aspetto generale di un'interfaccia."
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/fondamenti/spaziature/
+
+lastUpdate:
+  column: true
+  noPadding: true
+  title: 'Ultimo aggiornamento:'
+
+  licence:
+    label: Licenza CC BY SA 4.0
+    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
+    icon:
+      icon: sprites.svg#it-external-link
+      size: sm
+      color: primary
+      addonClasses: align-middle
+    blank: true
+  edit:
+    label: Proponi una modifica a questa pagina
+    url: https://github.com/italia/designers.italia.it
+    icon:
+      icon: sprites.svg#it-pencil
+      size: sm
+      color: primary
+    blank: true
+
+components:
+  hero:
+    background: null
+    title: Spaziature
+    column: true
+    subtitle: "Le spaziature svolgono un ruolo fondamentale nella creazione di un layout ben strutturato e nella definizione del respiro e dell'equilibrio. Un utilizzo coerente delle spaziature contribuisce a migliorare la leggibilità, l'usabilità e l'aspetto generale di un'interfaccia."
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+  # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia, Sviluppo interfaccia]
+  
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      title: null
+      text: null
+      background: null
+
+      components:
+
+      - name: TextImageCta
+        title: A cosa servono
+        headingLevel: 2
+        text: |
+          Le spaziature servono a:
+          1. **organizzare un layout**, le spaziature definiscono la disposizione degli elementi all'interno delle pagine e dei componenti, garantendo il rispetto di una struttura chiara e coesa;
+          2. **creare respiro**, le spaziature forniscono respiro visuale tra gli elementi, evitando sovrapposizioni indesiderate e migliorando la comprensione delle informazioni.
+          3. **fornire coerenza**, l'uso consistente delle spaziature contribuisce a garantire che i layouts siano uniformi e armoniosi in tutte le interfacce.
+      
+      - name: TextImageCta
+        title: Come usarle
+        headingLevel: 2
+        text: |
+          - **definisci una gerarchia** che consenta di gestire le distanze tra gli elementi in modo logico, avendo spaziature più ampie tra sezioni di una pagina e spaziature più strette all'interno dei componenti.
+          - **utilizza i design tokens** dedicati alle spaziature, seguendo la distinzione tra spaziatura verticale (`spacing-stack`), spaziatura orizzontale (`spacing-inline`) e spaziatura interna (`spacing-inset`);
+          - 
+          
+           
