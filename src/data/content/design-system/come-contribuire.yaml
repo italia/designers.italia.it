@@ -85,6 +85,8 @@ components:
   filterCards:
     id: esplora
     title: Esplora le schede
+    paddingX: true
+    noSpace: false
     showTags: false
     # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
     col2: true
@@ -147,7 +149,7 @@ components:
 
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
-  # sectionsEditorial :
+  # sectionsEditorial:
   # - fullColumn: true
   #   noSpace: true
   #   components:
@@ -155,9 +157,10 @@ components:
   #       img: /images/design-system/fondamenti.jpg
   #       alt: ""
 
-  sectionsEditorial2 :
+  sectionsEditorial2:
     - full: true
       noSpace: false
+      paddingLeft: true
       components:
         - name: TextImageCta
           noSpace: true
