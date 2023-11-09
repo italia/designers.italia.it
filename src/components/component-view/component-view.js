@@ -265,7 +265,7 @@ function ComponentView({
               aria-labelledby={headId}
             >
               <div className="accordion-body p-0 position-relative">
-                <div aria-hidden="true" className="position-absolute end-0">
+                <div aria-hidden="true" className="position-absolute end-0 split-code-checkbox">
                   {contentTrimmed && (
                     <Checkbox
                       id={`${idPrefix}-wrap`}
