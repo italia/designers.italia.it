@@ -151,7 +151,8 @@ function ComponentView({
     "me-lg-4 me-xl-5": componentViewerData?.variants,
   });
 
-  const accordionHeadingStyle = "d-flex justify-content-between align-items-center";
+  const accordionHeadingStyle =
+    "d-flex justify-content-between align-items-center";
 
   const accordionContainerStyle = classNames(
     "accordion accordion-left-icon py-2 border-bottom-0",
