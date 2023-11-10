@@ -1,0 +1,226 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Panoramica fondamenti
+  description: Le basi di cui hai bisogno per costruire un servizio pubblico senza ripartire da zero. Impara dal lavoro degli altri. Riduci costi e margini di errore, guadagnando qualità
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/fondamenti/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: light
+    title: Fondamenti
+    column: true
+    subtitle: Le basi di cui hai bisogno per costruire un servizio pubblico senza ripartire da zero. Impara dal lavoro degli altri. Riduci costi e margini di errore, guadagnando qualità
+    tag:
+      label: Design system #C
+      addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: |
+      Tra i fondamenti troverai gli strumenti per impostare layout con le giuste dimensioni e proporzioni, stile coerente in bordi, colori e ombre, e contenuti  di facile comprensione. Il tutto garantendo qualità e accessibilità al tuo sito o servizio.
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      column: true
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia, Sviluppo interfaccia, Accessibilità, Contenuti e linguaggio]
+
+
+  # /////////// COMPONENT LIST FROM HERE ////////////
+  filterCards:
+    id: esplora
+    title: Esplora i fondamenti
+    showTags: false
+    noSpace: true
+    paddingX: true
+    # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
+    col2: true
+    # button:
+    #   btnStyle: outline-secondary justify-content-center w-100
+    #   label: Filtra
+    #   iconRight: true
+    #   icon:
+    #     icon: sprites.svg#it-funnel
+    #     color: secondary
+    #     addonClasses: ms-1 flex-shrink-0
+    cards:
+      - title: Princìpi e intenzioni
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "principi-e-intenzioni/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Il design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione.
+        # tags: [Progettazione servizi,Accessibilità,Cultura progettuale,Design system]
+
+      - title: Accessibilità
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "accessibilita/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
+        # tags: [Accessibilità,Design system,Inclusione]
+
+      - title: Design tokens
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "design-tokens/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali.
+        # tags: [Accessibilità,Design system,Inclusione]
+
+      - title: Tono di voce
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "tono-di-voce/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. In questo fondamento trovi le indicazioni per dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti.
+        # tags: [Contenuti e linguaggio,Design system]
+
+      - title: Linguaggio
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "linguaggio/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone.
+        # tags: [Content design,Design system]
+
+      - title: Microtesti
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "microtesti/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di prodotto o di servizio.
+        # tags: [Content design,Design system]
+
+      - title: Versionamento
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "versionamento/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Usiamo il versionamento semantico su ogni risorsa del design system del Paese.
+        # tags: [Organizzazione,Design system]
+
+      - title: Tipografia
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "tipografia/"
+        fullHeight: true
+        rounded: true
+        text: |
+          I caratteri, gli stili e le regole tipografiche da usare per presentare i contenuti di un'interfaccia digitale in modo chiaro, leggibile ed efficace.
+        # tags: [Contenuti e linguaggio,Progettazione grafica,Design system]
+
+      - title: Griglia
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "griglia/"
+        fullHeight: true
+        rounded: true
+        text: |
+          La griglia di impaginazione rappresenta la struttura invisibile che permette di organizzare i contenuti della pagina.
+        # tags: [Contenuti e linguaggio,Progettazione Grafica,Design system]
+
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
+  sectionsEditorial:
+  - fullColumn: true
+    noSpace: true
+    components:
+      - name: ImgFull
+        img: /images/design-system/fondamenti.jpg
+        alt: ""
+
+  sectionsEditorial2:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      components:
+        - name: TextImageCta
+          noSpace: true
+        #   text: |
+        #     Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare lo UI Kit e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento al framework di sviluppo Bootstrap Italia.
+        #   ctas:
+        #   - label: "Vai allo UI Kit nella community Figma " #C
+        #     url: https://www.figma.com/community/file/1105848677422572920 #M
+        #     blank: true #M #C true if new tab for external links
+        #     icon:
+        #       icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+        #       color: primary
+        #       align: middle
+        #       hidden: true
+        #       size: sm
+        #       addonClasses: ms-2
+        #   - label: "Vai a Bootstrap Italia su GitHub " #C
+        #     url: https://github.com/italia/bootstrap-italia #M
+        #     blank: true #M #C true if new tab for external links
+        #     icon:
+        #       icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+        #       color: primary
+        #       align: middle
+        #       hidden: true
+        #       size: sm
+        #       addonClasses: ms-2
