@@ -2,6 +2,8 @@
 
 Questo repository contiene il codice sorgente del sito **[Designers Italia](https://designers.italia.it)**, il progetto che mette a disposizione conoscenza e strumenti per creare i servizi digitali della Pubblica Amministrazione.
 
+Il sito ospita la documentazione del design system del Paese nella sezione [/design-system/come-iniziare/](https://designers.italia.it/design-system/come-iniziare/).
+
 Il sito utilizza l'ultima versione di [Bootstrap Italia](https://italia.github.io/bootstrap-italia/), [Gatsby](https://www.gatsbyjs.com) e l'ecosistema [Node.js](https://nodejs.org/it/).
 
 ## 💙 Come contribuire
