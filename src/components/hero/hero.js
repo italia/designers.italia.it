@@ -58,7 +58,7 @@ function Hero({
   const imgResponsiveStyle = "rounded";
 
   const breadcrumbsStyle = classNames("hero-top px-3 pt-4", {
-    "px-lg-4": column,
+    "px-lg-0 px-xl-4": column,
   });
 
   const rowStyle = classNames("row g-0", {
@@ -68,7 +68,7 @@ function Hero({
 
   const columnStyle = classNames({
     "col-12 g-0 px-3": !column,
-    "col-12 col-md-8 px-3 ps-lg-5": column,
+    "col-12 col-md-8 px-3 ps-lg-4 ps-xl-5": column,
     "col-lg-7 offset-lg-0": centered,
     "ps-lg-5 pe-lg-0 col-lg-7": !centered && !column,
   });
@@ -86,7 +86,7 @@ function Hero({
   });
 
   const kangarooColumnStyle = classNames("col-12 g-0", {
-    "ps-lg-5": column && !specialKangarooComponent,
+    "ps-lg-4 ps-xl-5": column && !specialKangarooComponent,
     "col-lg-7 offset-lg-0": centered,
   });
 
