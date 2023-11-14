@@ -430,6 +430,7 @@ export const query = graphql`
             imgRounded
             noShadow
             url
+            dateInfo
             textSerif
             headingLevel
             rounded
@@ -445,7 +446,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            # tags
+            tags
             titleSmall
             tag {
               label
