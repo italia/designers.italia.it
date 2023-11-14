@@ -4,8 +4,14 @@
 //   scroll-behavior: auto !important;
 // }
 
-p {
+p, .content ul {
   max-width: 75ch;
+}
+
+p code {
+  background-color: $color-background-muted;
+  padding: 2px 4px;
+  border-radius: $border-radius;
 }
 
 .design-system .text-image-cta .content img {

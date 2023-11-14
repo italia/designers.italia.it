@@ -97,7 +97,7 @@ components:
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: | #C
@@ -203,12 +203,13 @@ components:
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Un solido punto di riferimento per i cittadini #C
+          noSpace: true
           text: | #C
             Il modello comprende l'architettura dell'informazione, l'interfaccia e il codice per realizzare siti e servizi digitali chiari, semplici da usare e accessibili: un unico posto dove i cittadini possono trovare facilmente le informazioni di cui hanno bisogno e presentare richieste o completare adempimenti verso l’amministrazione comunale direttamente online.
           ctas:
           - label: Naviga un esempio di servizio digitale #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/Comuni---Modello-sito-e-servizi?page-id=79%3A200932&node-id=79%3A201522&viewport=1280%2C-1252%2C0.25&scaling=scale-down&starting-point-node-id=79%3A201522 #M
+            url: https://www.figma.com/proto/FHlE0r9lhfvDR0SgkDRmVi/Comuni---Modello-sito-e-servizi?type=design&node-id=3727-207159&t=u3PkeZh1aCeZB2Qy-0&scaling=scale-down&page-id=360%3A19473&starting-point-node-id=3727%3A207159&hide-ui=1 #M
             blank: true
             icon:
               icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
@@ -329,6 +330,7 @@ components:
           image: /images/modelli/PA-digitale-adotta.svg #I
           alt: "" #C
           specular: false
+          noSpace: true
           #title: Lorem ipsum h3 #C
           text: | #C
             **Scopri su PA digitale 2026** se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
@@ -375,9 +377,9 @@ components:
       # CARD CHILDREN
       - title: I servizi digitali #C
         text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
+        img: /images/modelli/comuni-servizi.png
+        alt: ""
+        imgRatio: 4x3
         # imgPlaceholder: true
         titleSmall: false
         fullHeight: false
@@ -482,10 +484,10 @@ components:
           specular: true
           #title: ciao
           text: |
-            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-comuni
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer del modello: iscriviti allo Slack Developers Italia e cerca il canale #design-modello-comuni
           ctas:
           - label: Vai su Slack #C
-            url: https://developersitalia.slack.com/archives/CME9AD8NN #M
+            url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:
@@ -499,6 +501,7 @@ components:
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/Github.svg #I
+          noSpace: true
           alt: "" #C
           specular: true
           #title: ciao
