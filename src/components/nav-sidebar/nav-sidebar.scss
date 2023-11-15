@@ -1,4 +1,5 @@
-@use "bootstrap/scss/bootstrap-utilities" as bootstrap;
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
 @import "../../scss/bootstrap-breakpoints";
 
 .nav-sidebar {
@@ -87,7 +88,7 @@
 //Mobile & Tablet portrait only -------------------------------------------------------------------------
 @include media-breakpoint-down(lg) {
   .menu-column {
-    z-index: bootstrap.$zindex-modal;
+    z-index: $zindex-modal;
   }
 }
 

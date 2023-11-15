@@ -1,0 +1,32 @@
+// Remove this file when Bootstrap Italia incorporates the fixes
+
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+// Sticky and fixed shouldn't touch the z-index
+// https://github.com/italia/bootstrap-italia/issues/1009
+.bs-is-sticky {
+  position: sticky !important;
+  z-index: $zindex-sticky !important;
+}
+
+.bs-is-fixed {
+  position: fixed !important;
+  z-index: $zindex-fixed !important;
+}
+
+// .tooltip class should have the tooltip z-index
+.tooltip-fix {
+  z-index: $zindex-tooltip
+}
+
+// navbar shouldn't touch the z-index
+.navbar {
+  .navbar-collapsable {
+    z-index: auto !important;
+
+    .menu-wrapper: {
+      z-index: auto !important;
+    }
+  }
+}
