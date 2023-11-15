@@ -1,3 +1,4 @@
+@use "bootstrap/scss/bootstrap-utilities" as bootstrap;
 @import "../../scss/bootstrap-breakpoints";
 
 .nav-sidebar {
@@ -86,7 +87,7 @@
 //Mobile & Tablet portrait only -------------------------------------------------------------------------
 @include media-breakpoint-down(lg) {
   .menu-column {
-    z-index: 10010 !important;
+    z-index: bootstrap.$zindex-modal;
   }
 }
 
@@ -102,7 +103,6 @@
     .it-navscroll-wrapper {
       background-color: transparent !important;
       .menu-wrapper {
-        z-index: 0;
         background-color: transparent !important;
       }
     }

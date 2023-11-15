@@ -3,10 +3,8 @@ import React, { useRef, useEffect } from "react";
 import { NavBarCollapsible, Sticky } from "bootstrap-italia";
 import Tag from "../tag/tag";
 import Link from "../link/link";
-import BackToTopEl from "../back-to-top/back-to-top";
 import "./nav-sidebar.scss";
 
-import FooterData from "../../data/footer.yaml";
 import Icon from "../icon/icon";
 
 function NavSidebar({
@@ -188,13 +186,6 @@ function NavSidebar({
             <Icon {...ICON_CHEVRON_RIGHT} />
             {toggleLabel}
           </button>
-          <BackToTopEl
-            positionTop={0}
-            scrollLimit={100}
-            duration={800}
-            easing="easeInOutSine"
-            ariaLabel={FooterData.footer.backToTop.ariaLabel}
-          />
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
             <div className="overlay" />
             <div className="close-div visually-hidden">
