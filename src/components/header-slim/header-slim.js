@@ -78,7 +78,7 @@ function HeaderSlim({ data }) {
                           href="https://agid.gov.it"
                           rel="noreferrer"
                         >
-                          AgID
+                          AGID
                         </a>
                       </span>
                     </div>
