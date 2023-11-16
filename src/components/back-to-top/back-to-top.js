@@ -22,7 +22,13 @@ function BackToTopEl({
   });
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <a href="#" aria-label={ariaLabel} className="back-to-top" id="backToTop" {...opts}>
+    <a
+      href="#"
+      aria-label={ariaLabel}
+      className="back-to-top"
+      id="backToTop"
+      {...opts}
+    >
       <Icon icon="sprites.svg#it-arrow-up" color="light" />
     </a>
   );
