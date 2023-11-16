@@ -4,7 +4,7 @@ import { Tooltip as BSITooltip } from "bootstrap-italia";
 import Icon from "../icon/icon";
 import Button from "../button/button";
 
-import "../../scss/bootstrap-italia-temp-fixes.scss";
+import "../../scss/bootstrap-italia-TEMP-FIXES-REMOVEME.scss";
 
 function Tooltip({ label, children }) {
   const ICON_INFO = {

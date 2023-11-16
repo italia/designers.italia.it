@@ -9,6 +9,7 @@ function BackToTopEl({
   duration,
   easing,
   ariaLabel,
+  ...opts
 }) {
   useEffect(() => {
     // eslint-disable-next-line no-new
@@ -21,7 +22,7 @@ function BackToTopEl({
   });
   return (
     // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <a href="#" aria-label={ariaLabel} className="back-to-top" id="backToTop">
+    <a href="#" aria-label={ariaLabel} className="back-to-top" id="backToTop" {...opts}>
       <Icon icon="sprites.svg#it-arrow-up" color="light" />
     </a>
   );

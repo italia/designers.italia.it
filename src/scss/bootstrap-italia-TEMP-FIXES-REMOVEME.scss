@@ -22,11 +22,18 @@
 
 // navbar shouldn't touch the z-index
 .navbar {
+  &.it-bottom-navscroll {
+    z-index: $zindex-sticky !important;
+  }
+  &.it-navscroll-wrapper {
+    z-index: $zindex-modal !important;
+  }
+
   .navbar-collapsable {
-    z-index: auto !important;
+    z-index: $zindex-modal !important;
 
     .menu-wrapper {
-      z-index: auto !important;
+      z-index: $zindex-modal !important;
     }
   }
 }

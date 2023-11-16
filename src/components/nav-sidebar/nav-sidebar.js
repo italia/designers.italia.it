@@ -7,6 +7,8 @@ import "./nav-sidebar.scss";
 
 import Icon from "../icon/icon";
 
+import "../../scss/bootstrap-italia-TEMP-FIXES-REMOVEME.scss";
+
 function NavSidebar({
   id,
   title,
@@ -194,13 +196,14 @@ function NavSidebar({
                 {buttonCloseAriaLabel}
               </button>
             </div>
-            <a className="it-back-button" href="#" role="button">
-              <svg role="img" className="icon icon-sm icon-primary align-top">
-                <use href="/svg/sprites.svg#it-chevron-left" />
-              </svg>
-              <span>{backLabel}</span>
-            </a>
             <div className="menu-wrapper">
+              <a className="it-back-button" href="#" role="button">
+                <svg role="img" className="icon icon-sm icon-primary align-top">
+                  <use href="/svg/sprites.svg#it-chevron-left" />
+                </svg>
+                <span>{backLabel}</span>
+              </a>
+
               <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
                 <a className="" href={url}>
                   <img src={img} className="header-image my-2" alt={alt} />

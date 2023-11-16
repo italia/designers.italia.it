@@ -84,7 +84,7 @@
 //Mobile & Tablet portrait only -------------------------------------------------------------------------
 @include media-breakpoint-down(lg) {
   .menu-column {
-    z-index: $zindex-modal;
+    z-index: $zindex-modal !important;
     .navbar  {
       border-top: var(--hero-kangaroo-zone-border-top);
     }
