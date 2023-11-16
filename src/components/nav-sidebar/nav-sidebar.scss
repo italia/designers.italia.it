@@ -4,10 +4,6 @@
 
 .nav-sidebar {
 
-  .nav-sidebar-header{
-
-  }
-
   .header-image {
     width: calc(var(--spacer) * 16);
     height: auto;
@@ -89,6 +85,9 @@
 @include media-breakpoint-down(lg) {
   .menu-column {
     z-index: $zindex-modal;
+    .navbar  {
+      border-top: var(--hero-kangaroo-zone-border-top);
+    }
   }
 }
 
