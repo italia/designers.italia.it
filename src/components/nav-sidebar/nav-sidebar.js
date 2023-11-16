@@ -3,11 +3,11 @@ import React, { useRef, useEffect } from "react";
 import { NavBarCollapsible, Sticky } from "bootstrap-italia";
 import Tag from "../tag/tag";
 import Link from "../link/link";
-import BackToTopEl from "../back-to-top/back-to-top";
 import "./nav-sidebar.scss";
 
-import FooterData from "../../data/footer.yaml";
 import Icon from "../icon/icon";
+
+import "../../scss/bootstrap-italia-TEMP-FIXES-REMOVEME.scss";
 
 function NavSidebar({
   id,
@@ -167,12 +167,12 @@ function NavSidebar({
 
   return (
     <div
-      className="col-12 col-lg-3 px-lg-0 bg-light menu-column border-end bs-is-sticky"
+      className="col-12 col-lg-3 px-lg-0 bg-light menu-column border-end position-sticky"
       ref={navStickyRef}
     >
       <div className="nav-sidebar">
         <nav
-          className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0 border-top"
+          className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-right-side border-end-0"
           aria-label={ariaLabel}
         >
           <button
@@ -188,13 +188,6 @@ function NavSidebar({
             <Icon {...ICON_CHEVRON_RIGHT} />
             {toggleLabel}
           </button>
-          <BackToTopEl
-            positionTop={0}
-            scrollLimit={100}
-            duration={800}
-            easing="easeInOutSine"
-            ariaLabel={FooterData.footer.backToTop.ariaLabel}
-          />
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
             <div className="overlay" />
             <div className="close-div visually-hidden">
@@ -203,13 +196,14 @@ function NavSidebar({
                 {buttonCloseAriaLabel}
               </button>
             </div>
-            <a className="it-back-button" href="#" role="button">
-              <svg role="img" className="icon icon-sm icon-primary align-top">
-                <use href="/svg/sprites.svg#it-chevron-left" />
-              </svg>
-              <span>{backLabel}</span>
-            </a>
             <div className="menu-wrapper">
+              <a className="it-back-button" href="#" role="button">
+                <svg role="img" className="icon icon-sm icon-primary align-top">
+                  <use href="/svg/sprites.svg#it-chevron-left" />
+                </svg>
+                <span>{backLabel}</span>
+              </a>
+
               <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
                 <a className="" href={url}>
                   <img src={img} className="header-image my-2" alt={alt} />
