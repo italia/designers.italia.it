@@ -136,7 +136,7 @@ function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
               aria-labelledby="transcription-head9"
             >
               <div className="accordion-body">
-                <ReactMarkdown>{trascription} {subtitles} </ReactMarkdown>
+                <ReactMarkdown>{trascription}</ReactMarkdown>
               </div>
             </div>
           )}
