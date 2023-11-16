@@ -170,7 +170,7 @@ function NavSidebar({
     >
       <div className="nav-sidebar">
         <nav
-          className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0 border-top"
+          className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-right-side border-end-0"
           aria-label={ariaLabel}
         >
           <button
