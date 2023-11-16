@@ -1,0 +1,85 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Titolo del media - Designers Italia"
+  description: Descrizione.
+  image: /images/community/media-thumbnails/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days.jpg
+  twitterImage: /images/community/media-thumbnails/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days.jpg
+  canonical: null
+  pathname: /community/media/YYYYMMDD-titolo-del-media
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Titolo del media'
+    subtitle: Descrizione
+    tag:
+      label: Video - Evento
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Accessibilità, Test di usabilità]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/LHe9ypCCPFY?si=A6Ie4gcbyWZPs0CY
+          poster: /images/community/media-thumbnails/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days.jpg
+          trascription: |
+            È disponibile la sola trascrizione generata in automatico nella [scheda del video su YouTube](https://youtu.be/LHe9ypCCPFY?si=A6Ie4gcbyWZPs0CY)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Lorem ipsum
+          # ctas:
+          # - label: Leggi la notizia #C
+          #   url: "/community/notizie/20230706-accessibility-days-disponibili-i-video-dei-nostri-webinar" #M
+          #   blank: false #M #C true if new tab for external links
+          #   icon:
+          #     icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm
+          #     addonClasses: ms-2
