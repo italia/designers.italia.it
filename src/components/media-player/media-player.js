@@ -9,7 +9,7 @@ import ReactMarkdown from "react-markdown";
 // - [future] modular approach for local videos/youtubes/...
 // - [future] download thumbnail during build - eg. url: http://i3.ytimg.com/vi/_0j7ZQ67KtY/hqdefault.jpg
 
-function MediaPlayerEl({ url, lang, trascription, poster }) {
+function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
   const messages = {
     it: {
       rememberLabel: "Ricorda per tutti i video",
@@ -50,6 +50,14 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
       '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
     video.player.controlBar.removeChild("SkipBackward");
     video.player.controlBar.removeChild("SkipForward");
+    if (subtitles)
+      video.player.addRemoteTextTrack({
+        kind: "subtitles",
+        label: "Italiano",
+        srclang: 'it',
+        default: true, 
+        src: subtitles,
+      });
     if (JSON.parse(localStorage.getItem("bs-ck3") || "{}")["youtube.com"]) {
       setTimeout(() => {
         video.setYouTubeVideo(url);
@@ -72,6 +80,7 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
               <button
                 onClick={() => {
                   video.setYouTubeVideo(url);
+                  video.addTrack(subtitles);
                 }}
                 type="button"
                 id={`${videoId}-accept-video`}
@@ -127,7 +136,7 @@ function MediaPlayerEl({ url, lang, trascription, poster }) {
               aria-labelledby="transcription-head9"
             >
               <div className="accordion-body">
-                <ReactMarkdown>{trascription}</ReactMarkdown>
+                <ReactMarkdown>{trascription} {subtitles} </ReactMarkdown>
               </div>
             </div>
           )}
