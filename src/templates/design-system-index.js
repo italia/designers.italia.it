@@ -97,7 +97,7 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
         duration={800}
         easing="easeInOutSine"
         ariaLabel={FooterData.footer.backToTop.ariaLabel}
-        className="back-to-top mb-5"
+        className="back-to-top mb-5 mb-lg-0"
       />
     </div>
   );
