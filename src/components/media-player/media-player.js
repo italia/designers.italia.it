@@ -54,8 +54,8 @@ function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
       video.player.addRemoteTextTrack({
         kind: "subtitles",
         label: "Italiano",
-        srclang: 'it',
-        default: true, 
+        srclang: "it",
+        default: true,
         src: subtitles,
       });
     if (JSON.parse(localStorage.getItem("bs-ck3") || "{}")["youtube.com"]) {
