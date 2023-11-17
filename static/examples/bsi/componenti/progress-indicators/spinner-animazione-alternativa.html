@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.6.2/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.7.5/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
-            background-color: rgb(242, 247, 252);
+            background-color: #f5f5f5;
             padding: 0;
             margin: 0;
         }
@@ -147,14 +147,48 @@
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col-6 col-lg-3">
+      <p class="mb-3"><strong>Doppio large</strong></p>
+      <div class="progress-spinner progress-spinner-double size-lg">
+        <div class="progress-spinner-inner"></div>
+        <div class="progress-spinner-inner"></div>
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3">
+      <p class="mb-3"><strong>Doppio large attivo</strong></p>
+      <div class="progress-spinner progress-spinner-double size-lg progress-spinner-active">
+        <div class="progress-spinner-inner"></div>
+        <div class="progress-spinner-inner"></div>
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+      <p class="mb-3"><strong>Doppio extra-large</strong></p>
+      <div class="progress-spinner progress-spinner-double size-xl">
+        <div class="progress-spinner-inner"></div>
+        <div class="progress-spinner-inner"></div>
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+    <div class="col-6 col-lg-3 mt-3 mt-lg-0">
+      <p class="mb-3"><strong>Doppio extra-large attivo</strong></p>
+      <div class="progress-spinner progress-spinner-double size-xl progress-spinner-active">
+        <div class="progress-spinner-inner"></div>
+        <div class="progress-spinner-inner"></div>
+        <span class="visually-hidden">Caricamento...</span>
+      </div>
+    </div>
+  </div>
 </div>
 
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.6.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.7.5/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
-        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/fonts/");
 
         // tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -169,7 +203,6 @@
         })
 
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js"></script>
 </body>
 
 </html>

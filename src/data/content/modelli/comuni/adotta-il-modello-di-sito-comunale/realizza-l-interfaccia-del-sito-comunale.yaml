@@ -172,43 +172,48 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial :
-
-
-    - title: I template HTML #C
-      menu: false
+      
+    - menu: false
       centered: true
+      title: Le librerie di componenti e i layout di pagina
       background: null
-      #text: | #C
-
+      # text: |
+      
       components:
+        # TXT BLOCK
+        - name: TextImageCta
+          title: 
+          headingLevel: 2
+          # noSpace: true
+          text: | #C
+            Le librerie Figma dedicate ai componenti e ai layout di pagina permettono di creare rapidamente prototipi dell'interfaccia ad alta fedeltà. Combina autonomamente tipografia, colori, pulsanti, icone ed elementi visivi per creare layout personalizzati, da testare con gli utenti finali del sito web. Ciò ti consente di validare le scelte progettuali, intercettare potenziali criticità e integrare le dovute modifiche prima di passare all'aggiornamento del codice. 
+
+            Le librerie contengono tutti i layout delle principali pagine del modello e i singoli componenti di cui sono costituite, adattandosi ad eventuali esigenze specifiche. 
+
+            Se non vuoi personalizzare il modello, puoi usare direttamente i template HTML o i temi per CMS già pronti all'uso e aggiornarne i contenuti.
 
         # TXT BLOCK
         - name: TextImageCta
-          #title: A cosa servono h3 #C
-          noSpace: true
+          title: I template HTML #C
+          headingLevel: 2
+          noSpace: false
           text: | #C
-            I template HTML del modello, basati sullo UI Kit di Designers Italia e sulla libreria Bootstrap Italia, permettono di creare rapidamente il front-end del sito comunale indipendentemente dalle soluzioni tecnologiche adottate dall’amministrazione.
+            I template HTML del modello, basati su UI Kit Italia e sul framework di sviluppo Bootstrap Italia, permettono di creare rapidamente il front-end del sito comunale indipendentemente dalle soluzioni tecnologiche adottate dall’amministrazione.
 
             Seleziona i template relativi alla pagina del sito che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie a comporre l’interfaccia web.
 
-            I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le [Linee guida sull’accessibilità degli strumenti informatici](https://docs.italia.it/AgID/documenti-in-consultazione/lg-accessibilita-docs/).
+            I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le [Linee guida sull’accessibilità degli strumenti informatici](https://docs.italia.it/AGID/documenti-in-consultazione/lg-accessibilita-docs/).
 
-    - title: I temi per WordPress e Drupal #C
-      menu: false
-      centered: true
-      background: null
-      noSpace: true
-      #text: | #C
-
-      components:
 
         # TXT BLOCK
         - name: TextImageCta
-          #title: A cosa servono h3 #C
+          title: I temi per Wordpress e Drupal #C
+          headingLevel: 2
+          noSpace: true
           text: | #C
             I temi per i content management system (sistema di gestione contenuti, CMS) WordPress e Drupal sono pronti all’uso e permettono di passare rapidamente alla creazione e alla gestione dei contenuti, una volta installati e configurati correttamente sul dominio istituzionale dell’ente.
 
-            I temi sono aggiornati alla versione 2.0 di Bootstrap Italia e raggiungono il livello di accessibilità AA delle WCAG 2.1. Il loro utilizzo non prescinde da un’attenta cura editoriale di sezioni e contenuti del sito, così come dalla compilazione e pubblicazione della Dichiarazione di accessibilità prevista dalla normativa vigente.
+            I temi sono aggiornati alla versione 2.0 di Bootstrap Italia e rispettano i criteri di accessibilità richiesti dai livelli A e AA delle WCAG 2.1. Il loro utilizzo non prescinde da un’attenta cura editoriale di sezioni e contenuti del sito, così come dalla compilazione e pubblicazione della Dichiarazione di accessibilità prevista dalla normativa vigente.
 
   # ///////////////////
   # RESOURCES
@@ -221,6 +226,30 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
+          - label: Libreria dei componenti del modello Comuni #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Tutti i componenti per realizzare le interfacce del modello Comuni #C
+            url: https://www.figma.com/file/WWt2dI4AnnHDj53jHH41ko/Comuni---Libreria-componenti?type=design&node-id=330-40976&mode=design&t=8ERU4jRRe8NUkzOo-0 #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://www.figma.com/file/WWt2dI4AnnHDj53jHH41ko/Comuni---Libreria-componenti?type=design&node-id=330-40976&mode=design&t=8ERU4jRRe8NUkzOo-0 #M
+                ariaLabel: "Libreria dei componenti del modello Comuni - Figma (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                blank: true
+                
+          - label: Layout Hi-fi delle principali pagine del modello Comuni #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: I layout in alta definizione delle principali pagine del modello Comuni con i componenti già assemblati #C
+            url: https://www.figma.com/file/FHlE0r9lhfvDR0SgkDRmVi/Comuni---Modello-sito-e-servizi?type=design&node-id=1-1310&mode=design&t=5NPYXjwWBvKoeDl9-0 #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://www.figma.com/file/FHlE0r9lhfvDR0SgkDRmVi/Comuni---Modello-sito-e-servizi?type=design&node-id=1-1310&mode=design&t=5NPYXjwWBvKoeDl9-0 #M
+                ariaLabel: "Layout Hi-fi del modello Comuni - Figma (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                blank: true
+                
           - label: Anteprime dei template HTML del sito comunale #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
