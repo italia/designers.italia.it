@@ -1,10 +1,8 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
 @import "../../scss/bootstrap-breakpoints";
 
 .nav-sidebar {
-
-  .nav-sidebar-header{
-
-  }
 
   .header-image {
     width: calc(var(--spacer) * 16);
@@ -86,7 +84,10 @@
 //Mobile & Tablet portrait only -------------------------------------------------------------------------
 @include media-breakpoint-down(lg) {
   .menu-column {
-    z-index: 10010 !important;
+    z-index: $zindex-modal !important;
+    .navbar  {
+      border-top: var(--hero-kangaroo-zone-border-top);
+    }
   }
 }
 
@@ -102,7 +103,6 @@
     .it-navscroll-wrapper {
       background-color: transparent !important;
       .menu-wrapper {
-        z-index: 0;
         background-color: transparent !important;
       }
     }
