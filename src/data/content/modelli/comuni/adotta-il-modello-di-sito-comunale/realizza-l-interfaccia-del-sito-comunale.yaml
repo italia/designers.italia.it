@@ -274,6 +274,18 @@ components:
                 ariaLabel: "Repository GitHub: Sorgenti dei template HTML del sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
 
+          - label: Sito demo navigabile #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Un esempio visivo e pratico del sito del Comune realizzato seguendo il modello #C
+            url: https://comuni.designers.italia.it #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://comuni.designers.italia.it #M
+                ariaLabel: "Sito demo navigabile (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
+                blank: true
+                
           - label: Tema WordPress per il sito comunale #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
