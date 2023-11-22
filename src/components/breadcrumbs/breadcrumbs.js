@@ -10,16 +10,22 @@ function Breadcrumbs({ pageContext, crumbLabel }) {
     breadcrumb: { crumbs },
   } = pageContext;
 
+  const styles = "ps-lg-4 ms-lg-2";
+
   return (
     <div>
       {crumbLabel ? (
-        <Breadcrumb
-          crumbs={crumbs}
-          crumbLabel={crumbLabel}
-          crumbSeparator=" > "
-        />
+        <div className={styles}>
+          <Breadcrumb
+            crumbs={crumbs}
+            crumbLabel={crumbLabel}
+            crumbSeparator=" > "
+          />
+        </div>
       ) : (
-        <Breadcrumb crumbs={crumbs} crumbSeparator=" > " />
+        <div className={styles}>
+          <Breadcrumb crumbs={crumbs} crumbSeparator=" > " />
+        </div>
       )}
     </div>
   );
