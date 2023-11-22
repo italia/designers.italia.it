@@ -193,8 +193,11 @@ components:
       #  Lorem **ipsum**
       components:
 
-        # TXT BLOCK
+        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
           title: A cosa serve #C
           text: | #C
             Il modello permette di creare **siti web comunali** che rispondono ai bisogni degli utenti: **chiari, semplici da usare e navigare**.
@@ -202,7 +205,19 @@ components:
             Lo scopo del modello di sito è fornire ai cittadini un chiaro punto di riferimento per trovare con facilità le informazioni di cui hanno bisogno.
 
             L’adozione del modello permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’**esperienza coerente tra le varie amministrazioni**.
-
+          ctas:
+          - label: Naviga un esempio di sito #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://comuni.designers.italia.it #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
