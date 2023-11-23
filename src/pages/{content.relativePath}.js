@@ -632,6 +632,7 @@ export const query = graphql`
             lang
             url
             trascription
+            subtitles
             poster
             variantName
             source
