@@ -37,11 +37,8 @@ function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
     new AcceptOverlay(document.getElementById(`${videoId}-accept-video`), {
       service: "youtube.com",
     });
-    const videoOptions = {
-      poster: `${poster}`,
-    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    video = new VideoPlayer(document.getElementById(videoId), videoOptions);
+    video = new VideoPlayer(document.getElementById(videoId));
     const ButtonComp = videojs.getComponent("Button");
     const privacyPolicyButton = new ButtonComp(video.player, {
       clickHandler() {
@@ -83,6 +80,7 @@ function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
               <button
                 onClick={() => {
                   video.setYouTubeVideo(url);
+                  video.addTrack(subtitles);
                 }}
                 type="button"
                 id={`${videoId}-accept-video`}
@@ -108,6 +106,7 @@ function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
           <video
             controls
             data-bs-video
+            poster={poster}
             id={videoId}
             className="video-js"
             width="640"
