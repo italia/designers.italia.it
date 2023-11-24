@@ -1,0 +1,86 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Servizi inclusivi e usabili per tutti - Designers Italia"
+  description: "L'attenzione all'accessibilità e il design system del Paese."
+  image: /images/community/media-thumbnails/20230325-servizi-inclusivi-e-usabili-per-tutti.jpg
+  twitterImage: /images/community/media-thumbnails/20230325-servizi-inclusivi-e-usabili-per-tutti.jpg
+  canonical: null
+  pathname: /community/media/20230325-servizi-inclusivi-e-usabili-per-tutti
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Servizi inclusivi e usabili per tutti'
+    subtitle: "L'attenzione all'accessibilità e il design system del Paese"
+    tag:
+      label: Video - Webinar
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Linee guida, Manuale operativo]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=at3QnCjTpKQ&list=PLd5bJJul8c5qafJpT1RWN3jYIy654Kx5K&index=35&start=492
+          poster: /images/community/media-thumbnails/20230325-servizi-inclusivi-e-usabili-per-tutti.jpg
+          subtitles: /files/community/subtitles/20230325-servizi-inclusivi-e-usabili-per-tutti.vtt
+          trascription: |
+            La trascrizione sarà presto disponibile. 
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Il webinar si focalizza sull'aspetto normativo e pratico relativo all'accessibilità dei siti web della PA e i vantaggi nell'utilizzo delle risorse operative per realizzare le interfacce.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
