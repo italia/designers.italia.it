@@ -220,9 +220,9 @@ function SearchMain({ location, maxResults, title, suggest }) {
                                   ) : null}
                                 </div>
                               </div>
-                              <p className="text-secondary fw-normal d-block mb-3">
+                              <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
                                 {result.description !== null ? (
-                                  <small>{result.description}</small>
+                                  <span>{result.description}</span>
                                 ) : null}
                               </p>
                             </ListItem>
