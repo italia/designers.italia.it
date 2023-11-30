@@ -394,8 +394,8 @@ module.exports = {
             path: `${__dirname}/static/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-600.ttf`,
           },
         ],
-        target_nodes: ['Content']
-      }
+        target_nodes: ["Content"],
+      },
     },
     {
       resolve: "gatsby-plugin-eslint",
