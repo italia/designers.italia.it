@@ -890,12 +890,12 @@ export const query = graphql`
 `;
 export default Page;
 
-export function Head({ data: { content } }) {
+export function Head({ data: { content, contentOgImage } }) {
   return (
     <Seo
       title={content.seo.name}
       description={content.seo.description}
-      image={content.seo.image}
+      image={contentOgImage.attributes.publicURL}
       twitterImage={content.seo.twitterImage}
       pathname={content.seo.pathname}
       canonical={content.seo.canonical}
