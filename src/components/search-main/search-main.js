@@ -110,18 +110,21 @@ function SearchMain({ location, maxResults, title, suggest }) {
                   {suggest.items && (
                     <div className="items-wrapper d-flex flex-wrap ms-lg-5">
                       <ul className="list-inline d-flex flex-wrap">
-                        {suggest.items.map((item, index) => (
-                          <li className="list-item me-3 mb-3" key={index}>
+                        {suggest.items.map((suggestItem, suggestIndex) => (
+                          <li
+                            className="list-item me-3 mb-3"
+                            key={suggestIndex}
+                          >
                             <Button
                               onClick={() => {
-                                setInput(item.label);
-                                search(item.label);
+                                setInput(suggestItem.label);
+                                search(suggestItem.label);
                               }}
                               type="submit"
                               size="md"
                               btnStyle="outline-secondary"
                             >
-                              {item.label}
+                              {suggestItem.label}
                             </Button>
                           </li>
                         ))}
@@ -136,19 +139,19 @@ function SearchMain({ location, maxResults, title, suggest }) {
                     <div className="form-group mb-0 flex-grow-1 me-sm-4 w-100">
                       <label ref={searchLabelRef} htmlFor="searchInput">
                         Cerca
+                        <input
+                          type="search"
+                          className="border-search form-control-lg search"
+                          name="search"
+                          id="searchInput"
+                          placeholder=""
+                          autoComplete="off"
+                          minLength="3"
+                          required
+                          onChange={(ev) => setInput(ev.target.value)}
+                          value={input || ""}
+                        />
                       </label>
-                      <input
-                        type="search"
-                        className="border-search form-control-lg search"
-                        name="search"
-                        id="searchInput"
-                        placeholder=""
-                        autoComplete="off"
-                        minLength="3"
-                        required
-                        onChange={(ev) => setInput(ev.target.value)}
-                        value={input || ""}
-                      />
                     </div>
                     <div className="button-wrapper mt-4 mt-sm-0">
                       <Button submit label="Cerca" {...searchButton} />
