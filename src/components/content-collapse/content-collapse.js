@@ -49,7 +49,8 @@ function ContentCollapse({ label, labelClose, children }) {
         href="#"
         type="button"
         onClick={collapseToggle}
-        className="read-more mt-3 d-inline-flex align-items-center text-decoration-none" aria-expanded="false"
+        className="read-more mt-3 d-inline-flex align-items-center text-decoration-none"
+        aria-expanded="false"
         aria-controls={id}
       >
         <span className="more-text">{label}</span>
