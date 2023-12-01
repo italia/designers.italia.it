@@ -139,19 +139,19 @@ function SearchMain({ location, maxResults, title, suggest }) {
                     <div className="form-group mb-0 flex-grow-1 me-sm-4 w-100">
                       <label ref={searchLabelRef} htmlFor="searchInput">
                         Cerca
-                        <input
-                          type="search"
-                          className="border-search form-control-lg search"
-                          name="search"
-                          id="searchInput"
-                          placeholder=""
-                          autoComplete="off"
-                          minLength="3"
-                          required
-                          onChange={(ev) => setInput(ev.target.value)}
-                          value={input || ""}
-                        />
                       </label>
+                      <input
+                        type="search"
+                        className="border-search form-control-lg search"
+                        name="search"
+                        id="searchInput"
+                        placeholder=""
+                        autoComplete="off"
+                        minLength="3"
+                        required
+                        onChange={(ev) => setInput(ev.target.value)}
+                        value={input || ""}
+                      />
                     </div>
                     <div className="button-wrapper mt-4 mt-sm-0">
                       <Button submit label="Cerca" {...searchButton} />
