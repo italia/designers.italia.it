@@ -19,7 +19,6 @@ function ContentCollapse({ label, labelClose, children }) {
 
   const collRef = useRef(null);
   const collObjRef = useRef(null);
-  // const id = 'content-collapse-' + new Date().getTime()
 
   const [id, setId] = useState("content-collapse-");
 
@@ -46,18 +45,17 @@ function ContentCollapse({ label, labelClose, children }) {
 
   return (
     <div className="content-collapse">
-      <a
+      <button
         href="#"
-        role="button"
+        type="button"
         onClick={collapseToggle}
-        className="read-more mt-3 d-inline-flex align-items-center text-decoration-none"
-        /* data-bs-toggle="collapse" data-bs-target={'#'+id+'ReadMore'} */ aria-expanded="false"
+        className="read-more mt-3 d-inline-flex align-items-center text-decoration-none" aria-expanded="false"
         aria-controls={id}
       >
         <span className="more-text">{label}</span>
         <span className="less-text">{labelClose}</span>
         <Icon {...icon} />
-      </a>
+      </button>
       <div ref={collRef} className="collapse" id={id}>
         <ReactMarkdown className="mt-4">{children}</ReactMarkdown>
       </div>
