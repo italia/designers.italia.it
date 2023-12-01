@@ -118,18 +118,18 @@ function ListArchiveNews({ background, noSpace }) {
                         {(node.components?.hero?.kangaroo?.personalInfo
                           ?.items ||
                           description) && (
-                          <p className="text-secondary fw-normal d-block mb-3">
+                          <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
                             {node.components?.hero?.kangaroo?.personalInfo
                               ?.items && (
-                              <small>
+                              <span>
                                 {
                                   node.components?.hero?.kangaroo?.personalInfo
                                     ?.items[1].label
                                 }
-                              </small>
+                              </span>
                             )}{" "}
                             {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
-                            <small> — {description}</small>
+                            <span> — {description}</span>
                           </p>
                         )}
                       </ListItem>
