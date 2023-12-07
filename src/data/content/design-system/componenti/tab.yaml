@@ -7,18 +7,18 @@ metadata:
     name: design-system-component
 
 seo:
-  name: Tab - Designers Italia
+  name: Tabs - Designers Italia
   description: "Permette di raccogliere contenuti della pagina in una struttura navigabile"
   image: null
   twitterImage: null
   canonical: null
-  pathname: /design-system/componenti/tab/
+  pathname: /design-system/componenti/tabs/
 
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Tab
+    title: Tabs
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
@@ -73,7 +73,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente **Tabs** è consigliato quando si **organizza** il contenuto di una pagina in **sezioni distinte**, perché facilita la navigazione tra di esse. Questo è particolarmente utile per pagine con **molte informazioni** o dati complessi, in cui la separazione in categorie o argomenti **facilita** la **comprensione** e l'accesso.
+
+              Utilizzalo quindi quando:
+              - hai più di una sezione di contenuto sulla stessa pagina;
+              - vuoi migliorare la chiarezza e la struttura del tuo layout;
+              - desideri semplificare la navigazione dell'utente attraverso diverse categorie di informazioni.
+
 
       - full: true
         noSpace: true
@@ -84,7 +90,10 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Organizza le tabs in base ai **temi logici** del contenuto;
+              - Assicurati che l'organizzazione dei contenuti rifletta in modo intuitivo la **struttura delle informazioni** presenti;
+              - Fai in modo che le tabs siano chiaramente **distinguibili**, utilizzando colori o stili contrastanti;
+              - Indica chiaramente quale tab è **attivo**, attraverso elementi visivi come colore o bordo;
 
       - full: true
         noSpace: true
@@ -100,14 +109,85 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
-        id: ComponentStatus
         components:
           - name: TextImageCta
-            noSpace: true
+            noSpace: false
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: " nello UI Kit su Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/tab/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
+          - name: TextImageCta
+            ctas:
+            - label: Apri una issue sul repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sul repository UI Kit Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Progettazione
     sectionsEditorial:
