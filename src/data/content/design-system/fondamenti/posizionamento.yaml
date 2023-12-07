@@ -1,0 +1,97 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Posizionamento
+  description: "La posizione degli elementi sull'interfaccia"
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/fondamenti/ombre/
+
+components:
+
+  # HERO
+  hero:
+    background: null
+    title: Posizionamento
+    column: true
+    subtitle: "La posizione degli elementi sull'interfaccia"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase 
+
+    # KANGAROO
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia,Sviluppo interfaccia]
+  
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      components:
+        - name: TextImageCta
+          title: A cosa serve
+          headingLevel: 2
+          text: |
+            In stesura
+
+        - name: TextImageCta
+          title: Come si usa
+          headingLevel: 2
+          text: |
+            In stesura
+        
