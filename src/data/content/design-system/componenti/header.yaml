@@ -66,26 +66,56 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              È necessario utilizzare il componente header in cima ad ogni pagina di un sito o servizio digitale della Pubblica Amministrazione italiana.
+
+              La sua presenza, infatti, aiuta le persone ad orientarsi tra siti e servizi di enti diversi, mantenendo coerente l’esperienza di navigazione.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              La lista dei casi d’uso possibili per ciascuna variante del componente header.
+
+              ### Slim Header
+
+              Lo slim header è una porzione dell'header più **compatta** e **flessibile** che può indicare l'appartenenza del sito o servizio a una categoria o a un ordine gerarchico.  
+
+              Ecco alcuni possibili casi d’uso:
+              - **pagina di login/registrazione**: consente alle persone di concentrarsi sull’azione primaria;
+              - **pagine di contenuto focalizzato**: es. articoli o pagine di prodotto, nelle quali l’header slim mantiene informazioni di navigazione essenziali;
+              - **applicazioni di terze parti**: può essere utilizzato nelle schermate in cui è necessario mostrare solo un titolo o un'icona di ritorno alla schermata precedente, riducendo al minimo la presenza di elementi di navigazione;
+              - **dashboard o pannelli di controllo**: in un ambiente di amministrazione, l'header slim può contenere informazioni chiave come il nome dell'utente, le notifiche e l'accesso rapido alle funzionalità principali, contribuendo a mantenere la vista generale del dashboard più pulita e concentrata.
+
+              ### Header centrale
+
+              L’header centrale è una parte essenziale perché include il brand dell’ente e la sua descrizione. L’accesso al motore di ricerca e link aggiuntivi ai social media completano il componente.
+
+              Essendo priva di navigazione, questa variante è raccomandata per tutti quei casi in cui i contenuti si sviluppano su unica pagina. Ad esempio:
+              - **landing page**;
+              - **pagina di invito dati** (es. tramite un form);
+              - **pagine di supporto** (conferma, errore 404, etc.).
+
+              A differenza della variante “slim header”, l’header centrale preserva il brand garantendo una maggiore visibilità.
+
+              ### Header completa
+
+              L’header completa include tutte le altre varianti in un unico componente. È quindi la versione che si presta a qualsiasi caso d’uso. 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -96,6 +126,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         id: ComponentStatus
         components:
           - name: TextImageCta
@@ -110,37 +141,122 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/header-completo-anatomy.png
+            alt: "Gli elementi che compongono l'header completo"
+          - name: TextImageCta
+            noSpace: true
             text: |
-              _In stesura_
+              L'header completo è composto da tre elementi principali:
+
+              1. **header slim**
+              2. **header centrale**
+              3. **header nav**
+
+              Ciascuno di essi prevede una serie di elementi particolari.
+
+              ### Header slim
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/header-slim-anatomy.png
+            alt: "Gli elementi che compongono l'header slim"
+          - name: TextImageCta
+            noSpace: true
+            text: |             
+              L'header slim è composto da tre elementi:
+
+              1. **ente di appartenenza**: prevede il link ad un sito esterno;
+              2. **selettore lingua**: modifica la traduzione di tutti i contenuti del sito;
+              3. **pulsante di accesso**: abilita il login all'area personale laddove disponibile.
+
+              ### Header centrale
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/header-centrale-anatomy.png
+            alt: "Gli elementi che compongono l'header centrale"
+          - name: TextImageCta
+            noSpace: true
+            text: |             
+              L'header centrale è composto da cinque elementi:
+
+              1. **icona o logo** dell'ente;
+              2. **nome dell'ente** in formato testuale;
+              3. eventuale **sottotitolo** (tag line) che descrive la natura dell'ente;
+              4. **canali social** dell'ente;
+              5. link alla **ricerca**.
+
+              ### Header nav
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/header-nav-anatomy.png
+            alt: "Gli elementi che compongono l'header nav"
+          - name: TextImageCta
+            noSpace: false
+            text: |             
+              L'header nav contiene due diversi menu di navigazione:
+
+              1. **menu primario**: contiene le voci del primo livello di navigazione;
+              2. **menu secondario**: contiene le voci di navigazione trasversale rispetto all'alberatura dei contenuti (es. tag o argomenti).
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le varianti di header sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
+
+              ### Interazioni 
+
+              Su dispositivi mobile o touch, il menu di navigazione non è direttamente visibile in pagina ma si apre tramite click/tap sull’icona menu, con un’animazione di ingresso da sinistra verso destra.
+
+              I link del menu di navigazione che prevedono un sottomenu espandibile ereditano le interazioni del componente [dropdown](/design-system/componenti/dropdown/).
+
+              L’accesso alla barra di ricerca può avvenire in due modi: 
+              - tramite link alla pagina dedicata;
+              - tramite l’apertura di una finestra (overlay) rimanendo nella stessa pagina.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/header-slim-specs.png
+            alt: "Header slim con la misura di tutte le spaziature"
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/header-centrale-specs.png
+            alt: "Header centrale con la misura di tutte le spaziature"
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/header-nav-specs.png
+            alt: "Header nav con la misura di tutte le spaziature"
+          - name: TextImageCta
+            noSpace: false
+            # text: |             
+              
 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -173,6 +289,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
