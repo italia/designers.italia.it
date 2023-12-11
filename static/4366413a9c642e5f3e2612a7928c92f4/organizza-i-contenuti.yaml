@@ -1,4 +1,3 @@
-# INSTRUCTIONS
 # folder structure:
 # levelX.yaml < contents and settings
 # levelX/ < folder with childrens
@@ -24,12 +23,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Co-progetta i contenuti - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "Organizza un workshop dedicato al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti" #C
-  image: null #I
-  twitterImage: null #I
+  name: Organizza i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie. #C
+  image: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png #I
+  twitterImage: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png
   canonical: null
-  pathname: /risorse-per-progettare/progettare/co-progettazione/co-progetta-i-contenuti/ #M
+  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/organizza-i-contenuti/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -38,7 +37,7 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi nella fase
+      - title: Ti trovi nella fase #C
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
@@ -46,13 +45,13 @@ kangaroo:
           color: "secondary"
         label: Progettare #C
         url: "../../" #M
-      - title: Nel kit #C
+      - title: Nel kit di design #C
         icon:
           icon: "sprites.svg#it-tool"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Co-progettazione #C
+        label: "Architettura dell'informazione" #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -93,19 +92,19 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Co-progetta i contenuti #C
-    subtitle: Organizza un workshop dedicato al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti #C
+    title: Organizza i contenuti #C
+    subtitle: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie #C
     tag:
-      label: Attività del kit #C
+      label: Kit di design #C
       addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
     #     size: sm
-    # text: In breve
+    #   text: In breve
     # text: | #C
     #   Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_coprog_contenuti.svg #I
+    img: /images/risorse-per-progettare/icons/kit_architettura_cardsorting.svg #I
     alt: "" #C
     imgRatio: 4x3
 
@@ -115,23 +114,22 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase
-            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
-            icon:
-              icon: "sprites.svg#it-folder"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Progettare #C
-            url: "../../" #M
-          - title: Nel kit #C
-            icon:
-              icon: "sprites.svg#it-tool"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Co-progettazione #C
-            url: "../" #M
+        - title: Ti trovi nella fase #C
+          icon:
+            icon: "sprites.svg#it-folder"
+            size: "sm"
+            align: "middle"
+            color: "secondary"
+          label: Progettare #C
+          url: "../../" #M
+        - title: Nel kit di design #C
+          icon:
+            icon: "sprites.svg#it-tool"
+            size: "sm"
+            align: "middle"
+            color: "secondary"
+          label: "Architettura dell'informazione" #C
+          url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -160,22 +158,22 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "Progettare l’interazione dell’utente con il servizio" #C
+            label: "Progettare l'interazione dell'utente con il servizio" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Co-progettazione]
+      tags: [Architettura informazione,Contenuti e linguaggio]
 
-  # ///////////////////
+  ## ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial :
 
 
-    - title: Come organizzare un workshop sulla progettazione dei contenuti #C
+    - title: Come catalogare e raggruppare i contenuti con il card sorting #C
       menu: false
       centered: true
       background: null
@@ -187,9 +185,11 @@ components:
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
-            Nelle risorse del kit, oltre a indicazioni utili per la costruzione dell'agenda della sessione, trovi **suggerimenti e una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi durante la sessione di lavoro condivisa** e arrivare rapidamente al raggiungimento dell’obiettivo condiviso.
+            Se gli scenari d'uso ti permettono di individuare una serie di contenuti e funzioni potenziali per il servizio che stai progettando, l'attività di card sorting ti aiuterà a **raggruppare, ordinare e declinare** queste caratteristiche-chiave.
 
-            Tra le attività suggerite la mappatura del content journey, una sessione di **generazione di idee e un esercizio di card sorting e naming dei contenuti**.
+            L'attività di card sorting è infatti utile per **individuare le macro-categorie** in cui contenuti e funzioni sono raggruppati e i percorsi attraverso i quali si articolano. Serve anche a **descrivere le tipologie di contenuti** presenti nel sistema e le relazioni che intercorrono fra esse.
+
+            Questo lavoro di catalogazione e raggruppamento è fondamentale per costruire e/o consolidare l’architettura dell’Informazione alla base del servizio digitale.
 
   # ///////////////////
   # RESOURCES
@@ -201,23 +201,45 @@ components:
       - simpleList: true
         headingLevel: 3
         listItems:
-          - label: Guida alla sessione di co-progettazione dei contenuti #C
+          - label: Card sorting #C
             srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Istruzioni per pianificare e svolgere collaborativamente una sessione dedicata alla progettazione dell’esperienza d’uso di un servizio pubblico #C
-            url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.odp #M
+            text: Organizza contenuti e funzioni del servizio digitale #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.odp #M
-                ariaLabel: "Scarica ODP Guida alla sessione di co-progettazione dei contenuti" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
+                ariaLabel: "Scarica ODP Card sorting" #C #COMPILE FOR EACH ITEM
                 blank: false
-              - icon: sprites.svg#it-file-slides #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.pptx #M
-                ariaLabel: "Scarica PPTX Guida alla sessione di co-progettazione dei contenuti" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ppt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.pptx #M
+                ariaLabel: "Scarica PPTX Card sorting" #C #COMPILE FOR EACH ITEM
                 blank: false
               - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.pdf #M
-                ariaLabel: "Scarica PDF Guida alla sessione di co-progettazione dei contenuti" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.pdf #M
+                ariaLabel: "Scarica PDF Card sorting" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Esempio di card sorting #C
+            srBefore: "PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: Scarica un esempio #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
+                ariaLabel: "PDF: Esempio di card sorting" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Card sorting in versione stampabile #C
+            srBefore: "PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: "Scarica e stampa il card sorting per fare l'esercizio dal vivo" #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
+                ariaLabel: "PDF: Card sorting in versione stampabile" #C #COMPILE FOR EACH ITEM
                 blank: false
 

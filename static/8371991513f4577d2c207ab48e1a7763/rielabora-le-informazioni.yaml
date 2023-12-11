@@ -24,12 +24,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Sintetizza i risultati della ricerca - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Analizza e rappresenta efficacemente i risultati dell’indagine." #C
+  name: Rielabora le informazioni - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Schematizza, analizza e rilabora le informazioni raccolte per presentarle agli stakeholder. #C
   image: null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/comprendere/questionario-online/sintetizza-i-risultati-della-ricerca/ #M
+  pathname: /risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -52,7 +52,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Questionario online #C
+        label: Interviste soggetti coinvolti #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -93,8 +93,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Sintetizza i risultati della ricerca #C
-    subtitle: Analizza e rappresenta efficacemente i risultati dell’indagine  #C
+    title: Rielabora le informazioni #C
+    subtitle: Schematizza, analizza e rilabora le informazioni raccolte per presentarle agli stakeholder  #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
@@ -105,8 +105,8 @@ components:
     # text: In breve
     # text: | #C
     #   Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_questionario_risultati.svg #I
-    alt: "Rielabora con attenzione e cura" #C
+    img: /images/risorse-per-progettare/icons/kit_interviste_rielaboraRisultati.svg #I
+    alt: "Analizza con curiosità" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -130,7 +130,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Questionario online #C
+            label: Interviste soggetti coinvolti #C
             url: "../" #M
       otherInfo:
         items:
@@ -167,7 +167,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Ricerca utente,Questionari]
+      tags: [Ricerca utente,Interviste utente]
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -175,7 +175,7 @@ components:
   sectionsEditorial :
 
 
-    - title: "Come analizzare e rappresentare i risultati dell'indagine"  #C
+    - title: Come sintetizzare i risultati e presentarli #C
       menu: false
       centered: true
       background: null
@@ -187,10 +187,11 @@ components:
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
-            **Analizza le informazioni raccolte** con tecniche quanti-qualitative e **rielaborale in maniera rilevante per lo scopo della ricerca**. Puoi sfruttare gli strumenti di rappresentazione di grafici integrate nella piattaforma per i questionari online che stai utilizzando, oppure esportare un foglio di lavoro e utilizzare strumenti di visualizzazione dati più avanzati e personalizzabili.
+            **Schematizza le informazioni raccolte** riportando in maniera sintetica i resoconti verbali delle interviste con le persone partecipanti per analizzarli sotto diversi punti di vista e sintetizzarli.
 
-            Trova un modo efficace per **rappresentare e spiegare i risultati della ricerca** e sintetizza tutto in un report.
+            **Categorizza e classifica le evidenze** per poi rielaborarle in maniera trasversale e identificare tematiche rilevanti rispetto agli obiettivi della ricerca.
 
+            **Sintetizza le tue conclusioni** in maniera strutturata per presentarle agli altri stakeholder di progetto e produrre una relazione ad-hoc.
 
   # ///////////////////
   # RESOURCES
@@ -202,22 +203,45 @@ components:
       - simpleList: true
         headingLevel: 3
         listItems:
-          - label: "Presentazione risultati indagine" #C
+          - label: Tabella di analisi dei risultati #C
+            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: I fogli di lavoro dove riportare le evidenze delle interviste per elaborare le conclusioni #C
+            url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Tabella-di-Analisi-dei-risultati.ods #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Tabella-di-Analisi-dei-risultati.ods #M
+                ariaLabel: "Scarica ODS Tabella di analisi dei risultati" #C #COMPILE FOR EACH ITEM
+                blank: false
+
+          - label: Presentazione dei risultati delle interviste #C
             srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: "Un modello di presentazione strutturato dove puoi inserire i risultati dell'indagine" #C
-            url: /files/resources/risorse-per-progettare/comprendere/questionario-online/sintetizza-i-risultati-della-ricerca/DI-Presentazione-risultati-indagine.odp #M
+            text: Il modello per presentare i risultati delle interviste #C
+            url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Presentazione-risultati-interviste.odp #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/comprendere/questionario-online/sintetizza-i-risultati-della-ricerca/DI-Presentazione-risultati-indagine.odp #M
-                ariaLabel: "Scarica ODP Presentazione risultati indagine - questionario online" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Presentazione-risultati-interviste.odp #M
+                ariaLabel: "Scarica ODP Presentazione dei risultati delle interviste" #C #COMPILE FOR EACH ITEM
                 blank: false
-              - icon: sprites.svg#it-file-slides #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/comprendere/questionario-online/sintetizza-i-risultati-della-ricerca/DI-Presentazione-risultati-indagine.pptx #M
-                ariaLabel: "Scarica PPTX Presentazione risultati indagine - questionario online" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ppt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Presentazione-risultati-interviste.pptx #M
+                ariaLabel: "Scarica PPTX Presentazione dei risultati delle interviste" #C #COMPILE FOR EACH ITEM
                 blank: false
               - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/comprendere/questionario-online/sintetizza-i-risultati-della-ricerca/DI-Presentazione-risultati-indagine.pdf #M
-                ariaLabel: "Scarica PDF Presentazione risultati indagine - questionario online" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Presentazione-risultati-interviste.pdf #M
+                ariaLabel: "Scarica PDF Presentazione dei risultati delle interviste" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Relazione delle conclusioni della ricerca #C
+            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Un modello di struttura per la relazione di sintesi dei risultati delle interviste #C
+            url:  /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Relazione-conclusioni-della-ricerca.odt #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/DI-Relazione-conclusioni-della-ricerca.odt #M
+                ariaLabel: "Scarica ODT Relazione delle conclusioni della ricerca" #C #COMPILE FOR EACH ITEM
                 blank: false

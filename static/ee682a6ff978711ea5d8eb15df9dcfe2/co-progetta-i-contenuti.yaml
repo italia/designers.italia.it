@@ -24,12 +24,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Rielabora e condividi i risultati dei test di usabilità - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Schematizza, categorizza e classifica le informazioni raccolte per individuare eventuali modifiche di miglioramento al servizio digitale #C
+  name: "Co-progetta i contenuti - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "Organizza un workshop dedicato al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti" #C
   image: null #I
   twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/validare/test-di-usabilita/rielabora-e-condividi-i-risultati-dei-test-di-usabilita/ #M
+  pathname: /risorse-per-progettare/progettare/co-progettazione/co-progetta-i-contenuti/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -38,21 +38,21 @@ kangaroo:
   navposition:
     id: kangEnd
     items:
-      - title: Ti trovi nella fase #C
+      - title: Ti trovi nella fase
         icon:
           icon: "sprites.svg#it-folder"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Validare #C
+        label: Progettare #C
         url: "../../" #M
-      - title: Nel kit di design #C
+      - title: Nel kit #C
         icon:
           icon: "sprites.svg#it-tool"
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Test di usabilità #C
+        label: Co-progettazione #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -93,8 +93,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Rielabora e condividi i risultati dei test di usabilità #C
-    subtitle: Schematizza, categorizza e classifica le informazioni raccolte per individuare eventuali modifiche di miglioramento al servizio digitale #C
+    title: Co-progetta i contenuti #C
+    subtitle: Organizza un workshop dedicato al linguaggio e ai contenuti, per definire i bisogni informativi degli utenti #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
@@ -105,8 +105,8 @@ components:
     # text: In breve
     # text: | #C
     #   Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_testusability_risultati.svg #I
-    alt: "Come possiamo migliorare?" #C
+    img: /images/risorse-per-progettare/icons/kit_coprog_contenuti.svg #I
+    alt: "" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -122,15 +122,15 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Validare #C
+            label: Progettare #C
             url: "../../" #M
-          - title: Nel kit di design #C
+          - title: Nel kit #C
             icon:
               icon: "sprites.svg#it-tool"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Test di usabilità #C
+            label: Co-progettazione #C
             url: "../" #M
       otherInfo:
         items:
@@ -160,14 +160,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Verificare e ottimizzare la tua soluzione digitale #C
+            label: "Progettare l’interazione dell’utente con il servizio" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Usabilità,Ricerca utente]
+      tags: [Co-progettazione]
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -175,7 +175,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Come analizzare i risultati e produrre un report #C
+    - title: Come organizzare un workshop sulla progettazione dei contenuti #C
       menu: false
       centered: true
       background: null
@@ -185,11 +185,11 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          # title: | #C
+          # title: A cosa servono h3 #C
           text: | #C
-            Schematizza le informazioni raccolte e riporta in maniera sintetica i resoconti verbali dei partecipanti, così da porterli analizzare da diversi punti di vista. Successivamente, categorizza e classifica le evidenze. Rielaborandole in maniera trasversale, riuscirai a identificare tematiche rilevanti rispetto agli obiettivi della ricerca.
+            Nelle risorse del kit, oltre a indicazioni utili per la costruzione dell'agenda della sessione, trovi **suggerimenti e una serie di esercizi che permettono ai gruppi di lavoro coinvolti di essere produttivi durante la sessione di lavoro condivisa** e arrivare rapidamente al raggiungimento dell’obiettivo condiviso.
 
-            Una volta individuate le tue conclusioni e gli aspetti di miglioramento, **sintetizzali in maniera strutturata e produci una relazione per presentarli agli altri stakeholder di progetto**.
+            Tra le attività suggerite la mappatura del content journey, una sessione di **generazione di idee e un esercizio di card sorting e naming dei contenuti**.
 
   # ///////////////////
   # RESOURCES
@@ -199,48 +199,25 @@ components:
     headingLevel: 2
     list:
       - simpleList: true
-        title: Risorse operative #C
         headingLevel: 3
         listItems:
-          - label: Tabella dei risultati per i test di usabilità #C
-            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il template per annotare i risultati dei test di usabilità, analizzarli e calcolare il tasso di successo #C
-            url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Tabella-dei-risultati.odt #M
-            blank: false
-            actions:
-              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Tabella-dei-risultati.odt #M
-                ariaLabel: "Scarica ODT Tabella dei risultati per i test di usabilità" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Report dei risultati dei test di usabilità #C
+          - label: Guida alla sessione di co-progettazione dei contenuti #C
             srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il template e le istruzioni per realizzare un resoconto delle attività e dei risultati dei test di usabilità #C
-            url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Report-dei-risultati.odp #M
+            text: Istruzioni per pianificare e svolgere collaborativamente una sessione dedicata alla progettazione dell’esperienza d’uso di un servizio pubblico #C
+            url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.odp #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Report-dei-risultati.odp #M
-                ariaLabel: "Scarica ODP Report dei risultati dei test di usabilità" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.odp #M
+                ariaLabel: "Scarica ODP Guida alla sessione di co-progettazione dei contenuti" #C #COMPILE FOR EACH ITEM
                 blank: false
-              - icon: sprites.svg#it-file-slides #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Report-dei-risultati.pptx #M
-                ariaLabel: "Scarica PPTX Report dei risultati dei test di usabilità" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ppt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.pptx #M
+                ariaLabel: "Scarica PPTX Guida alla sessione di co-progettazione dei contenuti" #C #COMPILE FOR EACH ITEM
                 blank: false
               - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Report-dei-risultati.pdf #M
-                ariaLabel: "Scarica PDF Report dei risultati dei test di usabilità" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/progettare/co-progettazione/contenuti/DI-Guida-alla-sessione-di-co-progettazione-dei-contenuti.pdf #M
+                ariaLabel: "Scarica PDF Guida alla sessione di co-progettazione dei contenuti" #C #COMPILE FOR EACH ITEM
                 blank: false
-          - label: Comunicazione degli esiti dei test di usabilità #C
-            # srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il modulo ufficiale dell’Agenzia per l’Italia Digitale per comunicare gli esiti dei test #C
-            url: https://form.agid.gov.it/ #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://form.agid.gov.it/ #M
-                ariaLabel: Comunicazione degli esiti dei test di usabilità (si apre in una nuova finestra) #C
-                blank: true
 

@@ -24,12 +24,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Crea il linguaggio del touchpoint digitale - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Definisci il linguaggio per i tuoi contenuti in modo collaborativo seguendo la guida al linguaggio della Pubblica Amministrazione. #C
-  image: null #I
-  twitterImage: null #I
+  name: "Schematizza il contesto d'uso - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "Identifica le figure e comprendi l’impatto che potrebbero avere sul tuo servizio e sull’esperienza d’uso delle persone." #C
+  image: https://designers.italia.it/images/risorse-per-progettare/social/kit_analisiContesto.png #I
+  twitterImage: https://designers.italia.it/images/risorse-per-progettare/social/kit_analisiContesto.png #I
   canonical: null
-  pathname: /risorse-per-progettare/progettare/contenuti-e-linguaggio/crea-il-linguaggio-del-touchpoint-digitale/ #M
+  pathname: /risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -44,7 +44,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Progettare #C
+        label: Comprendere #C
         url: "../../" #M
       - title: Nel kit di design #C
         icon:
@@ -52,7 +52,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Contenuti e linguaggio #C
+        label: Analizza il contesto d'uso #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -93,20 +93,20 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Crea il linguaggio del touchpoint digitale #C
-    subtitle: Definisci il linguaggio per creare e ottimizzare i tuoi contenuti e scrivili in modo collaborativo seguendo la nostra guida al linguaggio della Pubblica Amministrazione #C
+    title: Schematizza il contesto d’uso del servizio #C
+    subtitle: Identifica le figure e comprendi l’impatto che potrebbero avere sul tuo servizio e sull’esperienza d’uso delle persone #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
-    #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
-    #text: | #C
-      #Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_linguaggio_individua.svg #I
-    alt: "" #C
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    # text: In breve
+    # text: | #C
+    #   Lorem **ipsum**
+    img: /images/risorse-per-progettare/icons/kit_analisiContesto_schematizza.svg #I
+    alt: "L'utente al centro del contesto" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -115,22 +115,22 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-          - title: Ti trovi nella fase #C
+          - title: Ti trovi nella fase
             tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
             icon:
               icon: "sprites.svg#it-folder"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Progettare #C
+            label: Comprendere #C
             url: "../../" #M
-          - title: Nel kit di design #C
+          - title: Nel kit #C
             icon:
               icon: "sprites.svg#it-tool"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Contenuti e linguaggio #C
+            label: Analisi del contesto #C
             url: "../" #M
       otherInfo:
         items:
@@ -160,14 +160,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "Progettare l'interazione dell'utente con il servizio" #C
+            label: Capire il contesto d’uso del servizio #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linguaggio,Tono di voce,Co-progettazione]
+      tags: [Analisi del contesto]
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -175,7 +175,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Come creare e ottimizzare i contenuti, coinvolgendo gli stakeholder  #C
+    - title: Come mappare le figure coinvolte e l’ecosistema #C
       menu: false
       centered: true
       background: null
@@ -185,12 +185,14 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          #title: A cosa servono h3 #C
+          # title: A cosa servono h3 #C
           text: | #C
-            Hai a disposizione diversi strumenti operativi per creare e ottimizzare i contenuti dell'interfaccia digitale di un servizio. In questa pagina trovi:
-            - le indicazioni per svolgere un workshop che coinvolge utenti e stakeholder nel percorso iniziale di content design e linguaggio di un servizio;
-            - il riferimento alla Guida alla linguaggio della Pubblica Amministrazione, che ti offre regole, indicazioni e suggerimenti per l'uso del linguaggio a seconda dei vari contesti d'uso del servizio digitale;
-            - un esercizio di scrittura collaborativa.
+            **Traccia tutte le figure coinvolte** nell’erogazione del servizio e **classificale in modo strutturato**, distinguendole tra primarie e secondarie, interne o esterne alla Pubblica Amministrazione.
+
+            Approfondisci e **schematizza le interazioni e i flussi di scambio** che avvengono tra i diversi attori e touchpoint coinvolti, mettendo in evidenza eventuali inefficienze del sistema e potenziali miglioramenti
+
+
+            **Comprenderai l’impatto che i diversi ruoli** hanno sul servizio e sulle persone come destinatarie.
 
   # ///////////////////
   # RESOURCES
@@ -200,50 +202,43 @@ components:
     headingLevel: 2
     list:
       - simpleList: true
-        #title: Costruzione dei flussi #C
         headingLevel: 3
         listItems:
-          - label: Workshop sul linguaggio #C
+          - label: Mappa degli attori #C
             srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Tutte le indicazioni operative per organizzare un workshop dedicato ai contenuti e al linguaggio #C
-            url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Workshop-sul-linguaggio.odp #M
+            text: Uno schema per individuare e classificare tutti gli attori coinvolti nel contesto d’uso del servizio #C
+            url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-degli-attori.odp #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Workshop-sul-linguaggio.odp #M
-                ariaLabel: "Scarica ODP Workshop sul linguaggio" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-degli-attori.odp #M
+                ariaLabel: "Scarica ODP Mappa degli attori" #C #COMPILE FOR EACH ITEM
                 blank: false
-              - icon: sprites.svg#it-file-slides #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Workshop-sul-linguaggio.pptx #M
-                ariaLabel: "Scarica PPTX Workshop sul linguaggio" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ppt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-degli-attori.pptx #M
+                ariaLabel: "Scarica PPTX Mappa degli attori" #C #COMPILE FOR EACH ITEM
                 blank: false
               - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Workshop-sul-linguaggio.pdf #M
-                ariaLabel: "Scarica PDF Workshop sul linguaggio" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-degli-attori.pdf #M
+                ariaLabel: "Scarica PDF Mappa degli attori" #C #COMPILE FOR EACH ITEM
                 blank: false
-
-          - label: Guida al linguaggio della Pubblica Amministrazione #C
-            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Regole, indicazioni e suggerimenti per l’uso del linguaggio nei contenuti della PA #C
-            url: https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html #M
-                ariaLabel: Guida al linguaggio della Pubblica Amministrazione (si apre in una nuova finestra) #C
-                blank: true
-
-          - label: Esercizio di scrittura collaborativa #C
-            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          - label: "Mappa dell'ecosistema" #C
+            srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un esercizio e buone pratiche per migliorare i contenuti digitali attraverso la collaborazione fra diversi stakeholder #C
-            url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Esercizio-di-editing-collaborativo.odt #M
+            text: "Un diagramma per schematizzare le possibili relazioni e interdipendenze tra le figure interessate" #C
+            url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-dell-ecosistema.odp #M
             blank: false
             actions:
-              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Esercizio-di-editing-collaborativo.odt #M
-                ariaLabel: "Scarica ODT Esercizio di scrittura collaborativa" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-dell-ecosistema.odp #M
+                ariaLabel: "Scarica ODP Mappa dell'ecosistema" #C #COMPILE FOR EACH ITEM
                 blank: false
-
+              - icon: sprites.svg#it-file-ppt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-dell-ecosistema.pptx #M
+                ariaLabel: "Scarica PPTX Mappa dell'ecosistema" #C #COMPILE FOR EACH ITEM
+                blank: false
+              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/comprendere/analisi-del-contesto/schematizza-il-contesto-d-uso/DI-Mappa-dell-ecosistema.pdf #M
+                ariaLabel: "Scarica PDF Mappa dell'ecosistema" #C #COMPILE FOR EACH ITEM
+                blank: false

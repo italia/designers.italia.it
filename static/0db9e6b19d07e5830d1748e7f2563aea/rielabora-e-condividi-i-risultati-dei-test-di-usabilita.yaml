@@ -1,3 +1,4 @@
+# INSTRUCTIONS
 # folder structure:
 # levelX.yaml < contents and settings
 # levelX/ < folder with childrens
@@ -23,12 +24,12 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Organizza i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie. #C
-  image: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png #I
-  twitterImage: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png
+  name: Rielabora e condividi i risultati dei test di usabilità - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Schematizza, categorizza e classifica le informazioni raccolte per individuare eventuali modifiche di miglioramento al servizio digitale #C
+  image: null #I
+  twitterImage: null #I
   canonical: null
-  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/organizza-i-contenuti/ #M
+  pathname: /risorse-per-progettare/validare/test-di-usabilita/rielabora-e-condividi-i-risultati-dei-test-di-usabilita/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -43,7 +44,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Progettare #C
+        label: Validare #C
         url: "../../" #M
       - title: Nel kit di design #C
         icon:
@@ -51,7 +52,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: "Architettura dell'informazione" #C
+        label: Test di usabilità #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -92,20 +93,20 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Organizza i contenuti #C
-    subtitle: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie #C
+    title: Rielabora e condividi i risultati dei test di usabilità #C
+    subtitle: Schematizza, categorizza e classifica le informazioni raccolte per individuare eventuali modifiche di miglioramento al servizio digitale #C
     tag:
-      label: Kit di design #C
+      label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
     #     size: sm
-    #   text: In breve
+    # text: In breve
     # text: | #C
     #   Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_architettura_cardsorting.svg #I
-    alt: "" #C
+    img: /images/risorse-per-progettare/icons/kit_testusability_risultati.svg #I
+    alt: "Come possiamo migliorare?" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -114,22 +115,23 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-        - title: Ti trovi nella fase #C
-          icon:
-            icon: "sprites.svg#it-folder"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: Progettare #C
-          url: "../../" #M
-        - title: Nel kit di design #C
-          icon:
-            icon: "sprites.svg#it-tool"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: "Architettura dell'informazione" #C
-          url: "../" #M
+          - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Validare #C
+            url: "../../" #M
+          - title: Nel kit di design #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Test di usabilità #C
+            url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -158,22 +160,22 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "Progettare l'interazione dell'utente con il servizio" #C
+            label: Verificare e ottimizzare la tua soluzione digitale #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Contenuti e linguaggio]
+      tags: [Usabilità,Ricerca utente]
 
-  ## ///////////////////
+  # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial :
 
 
-    - title: Come catalogare e raggruppare i contenuti con il card sorting #C
+    - title: Come analizzare i risultati e produrre un report #C
       menu: false
       centered: true
       background: null
@@ -183,13 +185,11 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          # title: A cosa servono h3 #C
+          # title: | #C
           text: | #C
-            Se gli scenari d'uso ti permettono di individuare una serie di contenuti e funzioni potenziali per il servizio che stai progettando, l'attività di card sorting ti aiuterà a **raggruppare, ordinare e declinare** queste caratteristiche-chiave.
+            Schematizza le informazioni raccolte e riporta in maniera sintetica i resoconti verbali dei partecipanti, così da porterli analizzare da diversi punti di vista. Successivamente, categorizza e classifica le evidenze. Rielaborandole in maniera trasversale, riuscirai a identificare tematiche rilevanti rispetto agli obiettivi della ricerca.
 
-            L'attività di card sorting è infatti utile per **individuare le macro-categorie** in cui contenuti e funzioni sono raggruppati e i percorsi attraverso i quali si articolano. Serve anche a **descrivere le tipologie di contenuti** presenti nel sistema e le relazioni che intercorrono fra esse.
-
-            Questo lavoro di catalogazione e raggruppamento è fondamentale per costruire e/o consolidare l’architettura dell’Informazione alla base del servizio digitale.
+            Una volta individuate le tue conclusioni e gli aspetti di miglioramento, **sintetizzali in maniera strutturata e produci una relazione per presentarli agli altri stakeholder di progetto**.
 
   # ///////////////////
   # RESOURCES
@@ -199,47 +199,48 @@ components:
     headingLevel: 2
     list:
       - simpleList: true
+        title: Risorse operative #C
         headingLevel: 3
         listItems:
-          - label: Card sorting #C
+          - label: Tabella dei risultati per i test di usabilità #C
+            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Il template per annotare i risultati dei test di usabilità, analizzarli e calcolare il tasso di successo #C
+            url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Tabella-dei-risultati.odt #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Tabella-dei-risultati.odt #M
+                ariaLabel: "Scarica ODT Tabella dei risultati per i test di usabilità" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Report dei risultati dei test di usabilità #C
             srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Organizza contenuti e funzioni del servizio digitale #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
+            text: Il template e le istruzioni per realizzare un resoconto delle attività e dei risultati dei test di usabilità #C
+            url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Report-dei-risultati.odp #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
-                ariaLabel: "Scarica ODP Card sorting" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Report-dei-risultati.odp #M
+                ariaLabel: "Scarica ODP Report dei risultati dei test di usabilità" #C #COMPILE FOR EACH ITEM
                 blank: false
-              - icon: sprites.svg#it-file-slides #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.pptx #M
-                ariaLabel: "Scarica PPTX Card sorting" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file-ppt #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Report-dei-risultati.pptx #M
+                ariaLabel: "Scarica PPTX Report dei risultati dei test di usabilità" #C #COMPILE FOR EACH ITEM
                 blank: false
               - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.pdf #M
-                ariaLabel: "Scarica PDF Card sorting" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/validare/test-usabilita/rielabora-e-condividi/DI-Report-dei-risultati.pdf #M
+                ariaLabel: "Scarica PDF Report dei risultati dei test di usabilità" #C #COMPILE FOR EACH ITEM
                 blank: false
-          - label: Esempio di card sorting #C
-            srBefore: "PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
-            text: Scarica un esempio #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
-            blank: false
+          - label: Comunicazione degli esiti dei test di usabilità #C
+            # srBefore: FORMATO #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Il modulo ufficiale dell’Agenzia per l’Italia Digitale per comunicare gli esiti dei test #C
+            url: https://form.agid.gov.it/ #M
+            blank: true
             actions:
-              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
-                ariaLabel: "PDF: Esempio di card sorting" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Card sorting in versione stampabile #C
-            srBefore: "PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
-            text: "Scarica e stampa il card sorting per fare l'esercizio dal vivo" #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
-            blank: false
-            actions:
-              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
-                ariaLabel: "PDF: Card sorting in versione stampabile" #C #COMPILE FOR EACH ITEM
-                blank: false
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://form.agid.gov.it/ #M
+                ariaLabel: Comunicazione degli esiti dei test di usabilità (si apre in una nuova finestra) #C
+                blank: true
 
