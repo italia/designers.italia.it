@@ -15,8 +15,8 @@ import "./card.scss";
 function Card({
   cardEvent,
   title,
-  titleSmall,
-  titleBig,
+  // titleSmall,
+  // titleBig,
   headingLevel,
   url,
   blank,
