@@ -426,6 +426,11 @@ export const query = graphql`
             text
             imgRatio
             imgPlaceholder
+            cardEvent
+            iconOverlay {
+              icon
+              ariaLabel
+            }
             fullHeight
             imgRounded
             noShadow
