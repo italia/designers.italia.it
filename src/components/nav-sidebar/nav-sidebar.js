@@ -177,7 +177,7 @@ function NavSidebar({
 
   return (
     <div
-      className="col-12 col-lg-3 px-lg-0 bg-light menu-column border-end position-sticky"
+      className="col-12 col-lg-3 px-lg-0 pb-lg-5 bg-light menu-column border-end position-sticky"
       ref={navStickyRef}
     >
       <div className="nav-sidebar">
