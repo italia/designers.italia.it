@@ -69,19 +69,23 @@ function NavSidebar({
 
           return (
             <li key={`subl-${indexSub}`}>
-              {subItem.url && <Link
-                to={subItem.url}
-                className={subLiStyle}
-                activeClassName={GATSBY_ACTIVE}
-              >
-                <span>{subItem.label}</span>
-              </Link>}
-              {!subItem.url && 
+              {subItem.url && (
+                <Link
+                  to={subItem.url}
+                  className={subLiStyle}
+                  activeClassName={GATSBY_ACTIVE}
+                >
+                  <span>{subItem.label}</span>
+                </Link>
+              )}
+              {!subItem.url && (
                 <span className="d-flex px-3 py-1 my-1">
                   {subItem.label}
-                  <span className="visually-hidden">(Pagina non ancora disponibile)</span>
+                  <span className="visually-hidden">
+                    (Pagina non ancora disponibile)
+                  </span>
                 </span>
-              }
+              )}
             </li>
           );
         });
