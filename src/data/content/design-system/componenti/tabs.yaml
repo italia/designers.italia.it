@@ -205,19 +205,27 @@ tabs:
               ### Tabs orizzontali
               ![Anatomia dei tabs orizzontali](/images/design-system/componenti/tabs-horizontal-anatomy.png)
 
-              Il componente tabs orizzontale è composto da:
+              La variante tabs orizzontale è composto da:
               1. **bordo**: delimita l'area di navigazione delle tabs, può essere collocato sotto o sopra dell'etichetta, nello stato attivo è evidenziato dal colore primary;
               2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
               3. **icona**: affianca o sostituisce l'etichetta; 
 
               ### Tabs verticali
               ![Anatomia dei tabs vertical](/images/design-system/componenti/tabs-vertical-anatomy.png)
-              TODO: Scrivi dettaglio
+              
+              La variante tabs verticale è composto da:
+              1. **bordo**: delimita l'area di navigazione delle tabs, può essere collocato a destra o sinistra dell'etichetta, nello stato attivo è evidenziato dal colore primary;
+              2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
+              3. **icona**: affianca o sostituisce l'etichetta; 
+              4. **sfondo**: il tab selezionato può avere uno sfondo (_opzionale_); 
 
               ### Tabs con card
               ![Anatomia dei tabs card](/images/design-system/componenti/tabs-card-anatomy.png)
-              TODO: Scrivi dettaglio
-            
+
+              La variante tabs con card è composto da:
+              1. **bordo**: visibile su tre lati, è presente solo per il tab attivo;
+              2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
+              3. **icona**: affianca l'etichetta sulla destra.
             
       - full: true
         noSpace: true
@@ -228,7 +236,13 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Elenco degli stati interattivi disponibili in tutte le varianti del componente:
+
+              - **default**: un tab si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul tab, è disponibile solo su dispositivi no-touch;
+              - **active**: si manifesta quando un tab è selezionato, ovvero è stato cliccato dall'utente;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **disabled**: indica che il tab è disattivato e non è possibile interagire con esso.
 
       - full: true
         noSpace: true
@@ -243,17 +257,13 @@ tabs:
               Le misure indicate sono espresse in `px`.
               
               ### Tabs orizzontali
-              
               ![Specifiche di design del button large](/images/design-system/componenti/tabs-horizontal-specs.png)
 
               ### Tabs verticali
               ![Specifiche dei tabs vertical](/images/design-system/componenti/tabs-vertical-specs.png)
-              TODO: Scrivi dettaglio
 
               ### Tabs con card
               ![Specifiche dei tabs card](/images/design-system/componenti/tabs-card-specs.png)
-              TODO: Scrivi dettaglio
-
 
       - full: true
         noSpace: true
