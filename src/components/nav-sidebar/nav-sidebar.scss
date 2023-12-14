@@ -18,6 +18,10 @@
             padding: 0 24px;
             color: var(--color-primary) !important;
             width: 100%;
+            border-right: 4px solid transparent!important;
+            &.contains-active {
+              border-color: var(--color-primary) !important;
+            }
             span span {
               text-align: left;
             }
