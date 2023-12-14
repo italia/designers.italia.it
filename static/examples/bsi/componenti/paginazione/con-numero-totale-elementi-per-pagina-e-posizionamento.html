@@ -105,29 +105,43 @@
             display: block;
         }
     </style>
-    <title>Esempio Dropstart, si apre a sinistra</title>
+    <title>Esempio Con numero totale elementi per pagina e posizionamento</title>
 </head>
 
 <body class="h-100">
     <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="bd-example w-100">
             
-
-<div class="dropdown dropstart text-center">
-  <a class="btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuDropleft" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    <svg class="icon-expand icon icon-sm icon-primary"><use href="/dist/svg/sprites.svg#it-expand"></use></svg>
-    Apri dropstart
-  </a>
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuDropleft">
-    <div class="link-list-wrapper">
-      <ul class="link-list">
-        <li><a class="dropdown-item list-item" href="#"><span>Azione 1</span></a></li>
-        <li><a class="dropdown-item list-item" href="#"><span>Azione 2</span></a></li>
-        <li><a class="dropdown-item list-item" href="#"><span>Azione 3</span></a></li>
-      </ul>
-    </div>
-  </div>
-</div>
+<nav class="pagination-wrapper justify-content-end pagination-total" aria-label="Esempio di navigazione con total number">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span class="visually-hidden">Pagina precedente</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item active">
+      <a class="page-link" href="#" aria-current="page">
+        <span class="d-inline-block d-sm-none">Pagina </span>24
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">25</a></li>
+    <li class="page-item"><a class="page-link" href="#">26</a></li>
+    <li class="page-item"><a class="page-link" href="#">27</a></li>
+    <li class="page-item"><a class="page-link" href="#">28</a></li>
+    <li class="page-item"><span class="page-link">...</span></li>
+    <li class="page-item"><a class="page-link" href="#">50</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">
+        <span class="visually-hidden">Pagina successiva</span>
+        <svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+      </a>
+    </li>
+  </ul>
+  <p>100-110 di 300 elementi</p>
+</nav>
 
         </div>
     </div>
