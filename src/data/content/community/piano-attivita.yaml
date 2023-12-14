@@ -141,62 +141,6 @@ components:
 
       components:
 
-        ### 2023 - Q3
-        - name: TextImageCta
-          title: "2023 — Q3" #C
-          headingLevel: 3
-          noSpace: false
-
-        - name: TextImageCta
-          headingLevel: 4
-          specular: false
-          title: "Sito Designers Italia: miglioramento continuo" #C
-          text: | #C
-            Continuo lavori di consolidamento del nuovo sito Designers Italia, in particolare avvio seconda sessione di test di usabilità, integrazioni funzionalità per l'archivio media e altre lavorazioni per ottimizzare l'esperienza utente, la manutenibilità e la scalabilità nel tempo.
-          ctas:
-          - label: Vai alla board di progetto per seguire i lavori #C
-            url: https://github.com/orgs/italia/projects/15 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        - name: TextImageCta
-          headingLevel: 4
-          specular: false
-          title: "Design system: modello di contribuzione" #C
-          text: | #C
-            Rilascio del modello di contribuzione per il design system del Paese: come partecipare alla cura delle risorse principali del design system del Paese: documentazione, UI Kit Italia, Bootstrap Italia e design tokens.
-
-        - name: TextImageCta
-          headingLevel: 4
-          specular: false
-          title: "Modello Azienda Sanitaria Locale: ricerca" #C
-          text: | #C
-            Avvio delle attività di ricerca utente finalizzate alla realizzazione del modello di sito per le Aziende Sanitarie Locali.
-
-        - name: TextImageCta
-          headingLevel: 4
-          specular: false
-          title: "Pubblicazione dei contenuti di formazione" #C
-          text: | #C
-            Nella sezione **Community**, inizio pubblicazione e raccolta di materiali media degli incontri, conferenze e corsi di formazione.
-          ctas:
-          - label: Vai alla sezione Community #C
-            url: "/community/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
         ### 2023 - Q4
         - name: TextImageCta
           title: "2023 — Q4" #C
@@ -206,16 +150,27 @@ components:
         - name: TextImageCta
           headingLevel: 4
           specular: false
-          title: "Modello Beni Culturali: ricerca" #C
+          title: "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica" #C
           text: | #C
-            Avvio delle attività di ricerca utente finalizzate alla realizzazione del modello di sito per i musei pubblici.
+            Al via un ciclo di webinar per scoprire come usare al meglio tutte le risorse dedicate ai Comuni, in collaborazione con l'Associazione Nazionale Comuni Italiani (ANCI).
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
           specular: false
           title: "Design system v.1.0.0-beta" #C
           text: | #C
-            Rilascio della versione beta del design system del Paese che comprende la totalità delle schede presenti nelle sezioni **Fondamenti** e **Componenti**.
+            Rilascio della versione beta del design system del Paese che comprenderà tutte le schede principali presenti nelle sezioni **Fondamenti** e **Componenti**.
           ctas:
           - label: Vai alla board del progetto per seguire i lavori #C
             url: https://github.com/orgs/italia/projects/17 #M
@@ -241,13 +196,6 @@ components:
         - name: TextImageCta
           headingLevel: 4
           specular: false
-          title: "Design system: design pattern" #C
-          text: | #C
-            Inizio lavorazioni sulla sezione **Design pattern**. Approfondimenti dedicati a consolidare standard condivisi e aperti su come assemblare e utilizzare le risorse del design system per creare esperienze e contenuti in linea con le migliori pratiche e le norme per la progettazione.
-
-        - name: TextImageCta
-          headingLevel: 4
-          specular: false
           title: "Produzione contenuti dedicati alla community" #C
           text: | #C
             Nell’area **Formazione**, pubblicazione di contenuti media (video tutorial e podcast) sulla base delle necessità della community.
@@ -257,6 +205,34 @@ components:
             blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai all'archivio Media #C
+            url: "/community/media/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Sito Designers Italia: miglioramento continuo" #C
+          text: | #C
+            Prosecuzione dei lavori di consolidamento del nuovo sito Designers Italia, in particolare avvio seconda sessione di test di usabilità, integrazione di funzionalità per l'archivio media e altre lavorazioni per ottimizzare l'esperienza utente, la manutenibilità e la scalabilità nel tempo.
+          ctas:
+          - label: Vai alla board di progetto per seguire i lavori #C
+            url: https://github.com/orgs/italia/projects/15 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -272,9 +248,27 @@ components:
         - name: TextImageCta
           headingLevel: 4
           specular: false
-          title: "Rilascio modello sito Azienda Sanitaria Locale" #C
+          title: "Rilascio modello aziende sanitarie locali" #C
           text: | #C
             Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi delle ASL.
+          ctas:
+          - label: Segui le lavorazioni nella pagina dedicata #C
+            url: "/modelli/aziende-sanitarie-locali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system: design pattern" #C
+          text: | #C
+            Inizio lavorazioni sulla sezione **Design pattern**. Approfondimenti dedicati a consolidare standard condivisi e aperti su come assemblare e utilizzare le risorse del design system per creare esperienze e contenuti in linea con le migliori pratiche e le norme per la progettazione.
 
         ### 2024 - Q2
         - name: TextImageCta
@@ -285,9 +279,20 @@ components:
         - name: TextImageCta
           headingLevel: 4
           specular: false
-          title: "Rilascio modello sito Beni Culturali" #C
+          title: "Rilascio modello musei civici" #C
           text: | #C
-            Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi dei musei pubblici.
+            Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi dei musei civici.
+          ctas:
+          - label: Segui le lavorazioni nella pagina dedicata #C
+            url: "/modelli/musei-civici/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
 # ————— THE PAST ————— #
 
@@ -301,7 +306,133 @@ components:
 
       components:
 
-### 2023 - Q2
+        ### 2023 - Q4
+        - name: TextImageCta
+          title: "2023 — Q3 Q4" #C
+          headingLevel: 3
+          noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: true
+          image: "/images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1400x723.png"
+          alt: ""
+          title: "Design system: modello di contribuzione" #C
+          text: | #C
+            Pubblicato il modello di contribuzione per il design system del Paese: come partecipare alla cura delle risorse principali del design system del Paese: documentazione, UI Kit Italia, Bootstrap Italia e design tokens.
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Scopri come contribuire #C
+            url: "/design-system/come-contribuire/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        - name: TextImageCta
+          headingLevel: 4
+          specular: true
+          image: "/images/community/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita-1920x923.png"
+          alt: ""
+          title: "Pubblicazione dei contenuti di formazione" #C
+          text: | #C
+            Nella sezione **Community**, inizio pubblicazione e raccolta di materiali media degli incontri, conferenze e corsi di formazione.
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai all'archivio Media #C
+            url: "/community/media/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          image: "/images/modelli/asl-hero.png"
+          alt: ""
+          specular: true
+          title: "Modello aziende sanitarie locali: ricerca" #C
+          text: | #C
+            Avvio delle attività di ricerca utente dedicate alla realizzazione del modello di sito per le ASL
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai alla pagina dedicata #C
+            url: "/modelli/aziende-sanitarie-locali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: true
+          image: "/images/modelli/musei-hero.png"
+          alt: ""
+          title: "Modello musei civici: ricerca" #C
+          text: | #C
+            Avvio delle attività di ricerca utente dedicate alla realizzazione del modello di sito per i musei civici.
+          ctas:
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai alla pagina dedicata #C
+            url: "/modelli/musei-civici/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        ### 2023 - Q2
         - name: TextImageCta
           title: "2023 — Q2" #C
           headingLevel: 3
@@ -813,7 +944,7 @@ components:
           specular: false
           title: "Atlante della Trasformazione Digitale della PA" #C
           text: | #C
-            Realizzazione di una ricerca su archetipi e pattern ricorrenti in 5 ambiti della vita civica. Attività di formazione nell’ambito di un master in comunicazione visiva: co-progettazione e pubblicazione di un atlante illustrato dedicato ai processi di trasformazione digitale della pubblica amministrazione.
+            Realizzazione di una ricerca su archetipi e pattern ricorrenti in 5 ambiti della vita civica. Attività di formazione nell’ambito di un master in comunicazione visiva: co-progettazione e pubblicazione di un atlante illustrato dedicato ai processi di trasformazione digitale della Pubblica Amministrazione.
           ctas:
           - label: Vai alla notizia #C
             url: https://designers.italia.it/notizie/atlante-trasformazione-digitale-pa/ #M XXX

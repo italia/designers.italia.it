@@ -181,6 +181,52 @@ components:
     # CARDS
     cards: # AUTO?
 
+      # CARD CHILDREN
+      - title: "Design system: come iniziare" #C
+        text: Scopri le finalità e l'impatto del design system e come iniziare a usare le risorse a disposizione di designer e developer per progettare servizi pubblici digitali. #C
+        # img:
+        # alt: ""
+        # imgRatio: 4x3
+        # imgPlaceholder: true
+        titleSmall: false
+        fullHeight: false
+        url: "/design-system/come-iniziare/" #M
+        tag:
+          label: DESIGN SYSTEM - FONDAMENTI #C
+
+      # CARD CHILDREN ACTION MEDIA
+      - title: "Servizi inclusivi e usabili per tutti"
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230325-servizi-inclusivi-e-usabili-per-tutti.jpg
+        alt: ""
+        imgRatio: 16x9
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230325-servizi-inclusivi-e-usabili-per-tutti/"
+        tag:
+          label: Video - Webinar
+
+      # CARD CHILDREN ACTION
+      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/20220705-progettare-con-qualita-l-accessibilita-al-centro-del-design-system-del-paese.webp
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099
+        blank: true
+        externalLink:
+          label: Leggi su medium
+          screenReaderText: " l'articolo completo"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Daniele Tabellini e Fabrizio Caccavello
+
       # CARD CHILDREN ACTION
       - title: "Costruzione interfaccia" #C
         fullHeight: true
@@ -229,38 +275,6 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN
-      - title: "Design system: come iniziare" #C
-        text: Scopri le finalità e l'impatto del design system e come iniziare a usare le risorse a disposizione di designer e developer per progettare servizi pubblici digitali. #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
-        titleSmall: false
-        fullHeight: false
-        url: "/design-system/come-iniziare/" #M
-        tag:
-          label: DESIGN SYSTEM - FONDAMENTI #C
-
-      # CARD CHILDREN ACTION
-      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
-        headingLevel: 4
-        img: /images/community/articoli-di-approfondimento/2022-medium-tabellini-accessibilita.webp
-        alt: Le risorse per progettare di Designers Italia
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " l'articolo completo"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Daniele Tabellini e Fabrizio Caccavello
-
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -277,7 +291,7 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           title: "Il progetto dell’interfaccia utente" #C
-          headingLevel: 4
+          headingLevel: 3
           text: | #C
             Costruisci un’interfaccia per aiutare l’utente a raggiungere ciò che cerca in modo naturale e immediato, in modo trasparente. Punti cardine di una buona interfaccia sono la coerenza tra gli elementi che la compongono, l’inclusività, l’accessibilità e la tolleranza agli errori.
           ctas:

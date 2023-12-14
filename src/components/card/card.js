@@ -15,8 +15,8 @@ import "./card.scss";
 function Card({
   cardEvent,
   title,
-  titleSmall,
-  titleBig,
+  // titleSmall,
+  // titleBig,
   headingLevel,
   url,
   blank,
@@ -46,8 +46,8 @@ function Card({
   const styles = classNames("di-card d-md-flex flex-md-column w-100", {
     fullheight: fullHeight,
     rounded,
-    "title-small": titleSmall,
-    "title-big": titleBig,
+    // "title-small": titleSmall,
+    // "title-big": titleBig,
     "shadow-lg": !noShadow,
     "text-serif": textSerif,
     "has-button": buttonBottom,
