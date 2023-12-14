@@ -44,14 +44,14 @@ function ListArchiveAllTags({ background, noSpace }) {
                     >
                       <Chip label={tag.fieldValue} size="lg" color="primary">
                         <span className="ms-2 badge bg-primary rounded-pill">
-                          <span class="visually-hidden">(</span>
+                          <span className="visually-hidden">(</span>
                           {tag.totalCount}
-                          {tag.totalCount >= 2 &&
-                            <span class="visually-hidden"> schede )</span>
-                          }
-                          {tag.totalCount === 1 &&
-                            <span class="visually-hidden"> scheda )</span>
-                          }
+                          {tag.totalCount >= 2 && (
+                            <span className="visually-hidden"> schede )</span>
+                          )}
+                          {tag.totalCount === 1 && (
+                            <span className="visually-hidden"> scheda )</span>
+                          )}
                         </span>
                       </Chip>
                     </ListItem>
