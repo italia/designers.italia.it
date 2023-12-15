@@ -78,14 +78,29 @@ components:
 
   sectionIntro:
     title: In evidenza
-    # subtitle: Storie da copertina che ti guidano alle ultime attività
+    subtitle: Storie da copertina che ti guidano alle ultime attività
     isHome: true
   highLights:
+    - title: 'Il 2023 di Designers Italia'
+      subtitle: "Facciamo il bilancio di ciò che è avvenuto nell'ultimo anno. Spoiler: un sacco di cose"
+      big: true
+      id: HL2a
+      specular: true
+      padBottom: false # last highlight must have padBottom: true!
+      img: /images/home/in-evidenza/20231219-il-2023-di-designers-italia-1920x1080-home.png
+      alt: ""
+      headingLevel: 3
+      background: dark
+      buttons:
+        - label: "Scopri cosa è avvenuto"
+          btnStyle: primary
+          url: "/community/notizie/20231219-il-2023-di-designers-italia/"
+          addonStyle: mb-3
     - title: "Collabora al design system del Paese"
       subtitle: "Leggi tutte le novità per contribuire alla realizzazione della documentazione e delle risorse"
       big: true
-      id: HL2a
-      specular: false
+      id: HL2b
+      specular: true
       padBottom: false # last highlight must have padBottom: true!
       img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1920x923.png
       alt: ""
@@ -94,12 +109,12 @@ components:
       buttons:
         - label: "Scopri come collaborare"
           btnStyle: primary
-          url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese"
+          url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
           addonStyle: mb-3
     - title: "Formazione modello Comuni"
       subtitle: "Parte un ciclo di webinar dedicati a Comuni e fornitori"
       big: true
-      id: HL2b
+      id: HL2c
       specular: true
       padBottom: true # last highlight must have padBottom: true!
       img: /images/community/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica-1920x923.png
@@ -109,7 +124,7 @@ components:
       buttons:
         - label: "Scopri come partecipare"
           btnStyle: primary
-          url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica"
+          url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica/"
           addonStyle: mb-3
 
   highlightCards:
