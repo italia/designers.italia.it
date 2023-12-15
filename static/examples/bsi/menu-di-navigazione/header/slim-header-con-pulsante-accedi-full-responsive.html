@@ -120,12 +120,10 @@
           <a class="d-lg-block navbar-brand" href="#">Ente appartenenza</a>
           <div class="it-header-slim-right-zone">
             <div class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <span class="visually-hidden">Selezione lingua: lingua selezionata</span>
                 <span>ITA</span>
-                <svg class="icon d-none d-lg-block">
-                  <use href="/dist/svg/sprites.svg#it-expand"></use>
-                </svg>
+                <svg class="icon d-none d-lg-block"><use href="/dist/svg/sprites.svg#it-expand"></use></svg>
               </a>
               <div class="dropdown-menu">
                 <div class="row">
@@ -160,7 +158,7 @@
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.7.12/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
-        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/fonts/");
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
         // tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

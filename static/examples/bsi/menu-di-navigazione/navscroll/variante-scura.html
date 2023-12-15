@@ -118,10 +118,14 @@
   <div class="navbar-collapsable" id="navbarNavC">
     <div class="overlay"></div>
     <div class="close-div visually-hidden">
-      <button class="btn close-menu" type="button"><span class="it-close"></span>close
+      <button class="btn close-menu" type="button">
+      <span class="it-close"></span>Chiudi
       </button>
     </div>
-    <a class="it-back-button" href="#"><svg class="icon icon-sm icon-white align-top"><use href="/dist/svg/sprites.svg#it-chevron-left"></use></svg><span>Back </span></a>
+    <button type="button" class="it-back-button btn w-100 text-start">
+      <svg class="icon icon-sm icon-white align-top"><use href="/dist/svg/sprites.svg#it-chevron-left" xlink:href="/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+      <span>Indietro</span>
+    </button>
     <div class="menu-wrapper">
       <div class="link-list-wrapper">
         <h3>header</h3>
@@ -173,7 +177,7 @@
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.7.12/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
-        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/fonts/");
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
         // tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

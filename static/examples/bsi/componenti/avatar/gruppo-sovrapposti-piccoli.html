@@ -163,11 +163,11 @@
   <li>
     <div class="avatar avatar-dropdown size-sm">
       <div class="dropdown">
-        <a class="btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuToggle1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="visually-hidden">Visualizza altri 4 utenti</span>
           <span aria-hidden="true">+4</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuToggle1">
           <div class="link-list-wrapper">
             <ul class="link-list">
               <li>
@@ -213,7 +213,7 @@
     <script
         src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.7.12/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
-        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/fonts/");
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
         // tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
