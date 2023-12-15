@@ -5,10 +5,12 @@ metadata:
   json: bsi/componenti/tab.json
   template:
     name: design-system-component
+  redirect_from:
+    - /design-system/componenti/tab
 
 seo:
   name: Tabs - Designers Italia
-  description: "Permette di raccogliere contenuti della pagina in una struttura navigabile"
+  description: "Permettono di raccogliere contenuti della pagina in una struttura navigabile"
   image: null
   twitterImage: null
   canonical: null
@@ -28,7 +30,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Permette di raccogliere contenuti della pagina in una struttura navigabile"
+    subtitle: "Permettono di raccogliere contenuti della pagina in una struttura navigabile"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -73,11 +75,11 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Le tab servono a raggruppare e organizzare contenuti di natura diversa ma correlati fra di loro, consentendo agli utenti di navigare tra insiemi di informazioni senza uscire dal contesto della pagina. Puoi usarle su layout a pagina intera o in componenti quali modali, schede o pannelli laterali.
+              Il componente tabs serve a raggruppare e organizzare contenuti di natura diversa ma correlati fra di loro, consentendo agli utenti di navigare tra insiemi di informazioni senza uscire dal contesto. Puoi usarlo su layout a pagina intera o all'interno di altre strutture quali ad esempio modali, schede e pannelli laterali.
 
-              Usa le tab per:
-              - **ridurre** il carico cognitivo di una pagina che contiene molte informazioni, raggruppando contenuti correlati in diverse sezioni;
-              - **organizzare** contenuti come forms, impostazioni e dashboard in modo che un utente non debba abbandonare il flusso d'interazione per completare un'attività.
+              Puoi usare le tab per:
+              - **ridurre** il carico cognitivo di una pagina che contiene molte informazioni, raggruppando contenuti correlati in diverse sezioni, una per tab;
+              - **organizzare** contenuti come form, impostazioni e dashboard in modo che un utente non debba abbandonare il flusso d'interazione per completare un'attività.
 
       - full: true
         noSpace: true
@@ -90,11 +92,11 @@ tabs:
             text: |
               Per usare al meglio le tab tieni presenti le seguenti indicazioni di base: 
               
-              - le tab devono contenere almeno due elementi; può essere attivo un solo tab alla volta;
-              - Organizza le tabs in base ai **temi logici** del contenuto;
-              - Assicurati che l'organizzazione dei contenuti rifletta in modo intuitivo la **struttura delle informazioni** presenti;
-              - Fai in modo che le tabs siano chiaramente **distinguibili**, utilizzando colori o stili contrastanti;
-              - Indica chiaramente quale tab è **attivo**, attraverso elementi visivi come colore o bordo.
+              - Il componente tabs deve contenere almeno due elementi tab, di cui può essere attivo un solo tab alla volta.
+              - Organizza le tab in base ai **temi logici** del contenuto.
+              - Assicurati che l'organizzazione dei contenuti rifletta in modo intuitivo la **struttura delle informazioni** presenti.
+              - Fai in modo che le tab siano chiaramente **distinguibili**, utilizzando colori o stili contrastanti.
+              - Indica chiaramente quale tab è **attiva**, attraverso elementi visivi come colore o bordo.
 
       - full: true
         noSpace: true
@@ -203,27 +205,27 @@ tabs:
             headingLevel: 2
             text: |
               ### Tab orizzontali
-              ![Anatomia dei tabs orizzontali](/images/design-system/componenti/tabs-horizontal-anatomy.png)
+              ![Anatomia delle tab orizzontali](/images/design-system/componenti/tabs-horizontal-anatomy.png)
 
-              La variante tabs orizzontale è composto da:
-              1. **bordo**: delimita l'area di navigazione delle tabs, può essere collocato sotto o sopra dell'etichetta, nello stato attivo è evidenziato dal colore primary;
+              La variante con tab orizzontali è composta da:
+              1. **bordo**: delimita l'area di navigazione delle tab, può essere collocato sotto o sopra l'etichetta, nello stato attivo è evidenziato dal colore primary;
               2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
               3. **icona**: affianca o sostituisce l'etichetta; 
 
               ### Tab verticali
               ![Anatomia delle tab verticali](/images/design-system/componenti/tabs-vertical-anatomy.png)
               
-              La variante tabs verticale è composto da:
-              1. **bordo**: delimita l'area di navigazione delle tabs, può essere collocato a destra o sinistra dell'etichetta, nello stato attivo è evidenziato dal colore primary;
+              La variante con tab verticali è composta da:
+              1. **bordo**: delimita l'area di navigazione delle tab, può essere collocato a destra o sinistra dell'etichetta, nello stato attivo è evidenziato dal colore primary;
               2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
               3. **icona**: affianca o sostituisce l'etichetta; 
-              4. **sfondo**: il tab selezionato può avere uno sfondo (_opzionale_); 
+              4. **sfondo**: la tab selezionata può avere uno sfondo (opzionale); 
 
               ### Tab con card
-              ![Anatomia delle tab card](/images/design-system/componenti/tabs-card-anatomy.png)
+              ![Anatomia delle tab con card](/images/design-system/componenti/tabs-card-anatomy.png)
 
-              La variante tabs con card è composto da:
-              1. **bordo**: visibile su tre lati, è presente solo per il tab attivo;
+              La variante con tab ti tipo card è composta da:
+              1. **bordo**: visibile su tre lati, è presente solo per la tab attiva;
               2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
               3. **icona**: affianca l'etichetta sulla destra.
             
@@ -242,7 +244,7 @@ tabs:
               - **hover**: si manifesta al passaggio del puntatore sul tab, è disponibile solo su dispositivi no-touch;
               - **active**: si manifesta quando un tab è selezionato, ovvero è stato cliccato dall'utente;
               - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
-              - **disabled**: indica che il tab è disattivato e non è possibile interagire con esso.
+              - **disabled**: indica che la tab è disattivata e non è possibile interagire con essa.
 
       - full: true
         noSpace: true
@@ -253,17 +255,17 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              Le specifiche di design si intendono relative a tutte le varianti di tabs previste dal componente.
+              Le specifiche di design si intendono relative a tutte le varianti di tab previste dal componente.
               Le misure indicate sono espresse in `px`.
               
               ### Tabs orizzontali
               ![Specifiche di design del button large](/images/design-system/componenti/tabs-horizontal-specs.png)
 
               ### Tabs verticali
-              ![Specifiche dei tabs vertical](/images/design-system/componenti/tabs-vertical-specs.png)
+              ![Specifiche delle tab verticali](/images/design-system/componenti/tabs-vertical-specs.png)
 
               ### Tabs con card
-              ![Specifiche dei tabs card](/images/design-system/componenti/tabs-card-specs.png)
+              ![Specifiche delle tab di tipo card](/images/design-system/componenti/tabs-card-specs.png)
 
       - full: true
         noSpace: true
