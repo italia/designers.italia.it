@@ -69,13 +69,23 @@ function NavSidebar({
 
           return (
             <li key={`subl-${indexSub}`}>
-              <Link
-                to={subItem.url}
-                className={subLiStyle}
-                activeClassName={GATSBY_ACTIVE}
-              >
-                <span>{subItem.label}</span>
-              </Link>
+              {subItem.url && (
+                <Link
+                  to={subItem.url}
+                  className={subLiStyle}
+                  activeClassName={GATSBY_ACTIVE}
+                >
+                  <span>{subItem.label}</span>
+                </Link>
+              )}
+              {!subItem.url && (
+                <span className="d-flex px-3 py-1 my-1">
+                  {subItem.label}
+                  <span className="visually-hidden">
+                    (Pagina non ancora disponibile)
+                  </span>
+                </span>
+              )}
             </li>
           );
         });
@@ -167,7 +177,7 @@ function NavSidebar({
 
   return (
     <div
-      className="col-12 col-lg-3 px-lg-0 bg-light menu-column border-end position-sticky"
+      className="col-12 col-lg-3 px-lg-0 pb-lg-5 bg-light menu-column border-end position-sticky"
       ref={navStickyRef}
     >
       <div className="nav-sidebar">
