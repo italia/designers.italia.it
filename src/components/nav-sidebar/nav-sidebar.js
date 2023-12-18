@@ -69,13 +69,23 @@ function NavSidebar({
 
           return (
             <li key={`subl-${indexSub}`}>
-              <Link
-                to={subItem.url}
-                className={subLiStyle}
-                activeClassName={GATSBY_ACTIVE}
-              >
-                <span>{subItem.label}</span>
-              </Link>
+              {subItem.url && (
+                <Link
+                  to={subItem.url}
+                  className={subLiStyle}
+                  activeClassName={GATSBY_ACTIVE}
+                >
+                  <span>{subItem.label}</span>
+                </Link>
+              )}
+              {!subItem.url && (
+                <span className="d-flex px-3 py-1 my-1">
+                  {subItem.label}
+                  <span className="visually-hidden">
+                    (Pagina non ancora disponibile)
+                  </span>
+                </span>
+              )}
             </li>
           );
         });
@@ -167,7 +177,7 @@ function NavSidebar({
 
   return (
     <div
-      className="col-12 col-lg-3 px-lg-0 bg-light menu-column border-end position-sticky"
+      className="col-12 col-lg-3 px-lg-0 pb-lg-5 bg-light menu-column border-end position-sticky"
       ref={navStickyRef}
     >
       <div className="nav-sidebar">
@@ -197,12 +207,15 @@ function NavSidebar({
               </button>
             </div>
             <div className="menu-wrapper">
-              <a className="it-back-button" href="#" role="button">
+              <button
+                className="it-back-button btn w-100 text-start"
+                type="button"
+              >
                 <svg role="img" className="icon icon-sm icon-primary align-top">
                   <use href="/svg/sprites.svg#it-chevron-left" />
                 </svg>
                 <span>{backLabel}</span>
-              </a>
+              </button>
 
               <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
                 <a className="" href={url}>

@@ -110,18 +110,21 @@ function SearchMain({ location, maxResults, title, suggest }) {
                   {suggest.items && (
                     <div className="items-wrapper d-flex flex-wrap ms-lg-5">
                       <ul className="list-inline d-flex flex-wrap">
-                        {suggest.items.map((item, index) => (
-                          <li className="list-item me-3 mb-3" key={index}>
+                        {suggest.items.map((suggestItem, suggestIndex) => (
+                          <li
+                            className="list-item me-3 mb-3"
+                            key={suggestIndex}
+                          >
                             <Button
                               onClick={() => {
-                                setInput(item.label);
-                                search(item.label);
+                                setInput(suggestItem.label);
+                                search(suggestItem.label);
                               }}
                               type="submit"
                               size="md"
                               btnStyle="outline-secondary"
                             >
-                              {item.label}
+                              {suggestItem.label}
                             </Button>
                           </li>
                         ))}
