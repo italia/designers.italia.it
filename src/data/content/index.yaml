@@ -81,26 +81,11 @@ components:
     subtitle: Storie da copertina che ti guidano alle ultime attività
     isHome: true
   highLights:
-    - title: 'Il 2023 di Designers Italia'
-      subtitle: "Facciamo il bilancio di ciò che è avvenuto nell'ultimo anno. Spoiler: un sacco di cose"
-      big: true
-      id: HL2a
-      specular: true
-      padBottom: false # last highlight must have padBottom: true!
-      img: /images/home/in-evidenza/20231219-il-2023-di-designers-italia-1920x1080-home.png
-      alt: ""
-      headingLevel: 3
-      background: dark
-      buttons:
-        - label: "Scopri cosa è avvenuto"
-          btnStyle: primary
-          url: "/community/notizie/20231219-il-2023-di-designers-italia/"
-          addonStyle: mb-3
     - title: "Collabora al design system del Paese"
       subtitle: "Leggi tutte le novità per contribuire alla realizzazione della documentazione e delle risorse"
       big: true
-      id: HL2b
-      specular: true
+      id: HL2a
+      specular: false
       padBottom: false # last highlight must have padBottom: true!
       img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1920x923.png
       alt: ""
@@ -109,12 +94,12 @@ components:
       buttons:
         - label: "Scopri come collaborare"
           btnStyle: primary
-          url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
+          url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese"
           addonStyle: mb-3
     - title: "Formazione modello Comuni"
       subtitle: "Parte un ciclo di webinar dedicati a Comuni e fornitori"
       big: true
-      id: HL2c
+      id: HL2b
       specular: true
       padBottom: true # last highlight must have padBottom: true!
       img: /images/community/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica-1920x923.png
@@ -124,7 +109,7 @@ components:
       buttons:
         - label: "Scopri come partecipare"
           btnStyle: primary
-          url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica/"
+          url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica"
           addonStyle: mb-3
 
   highlightCards:
@@ -250,6 +235,20 @@ components:
     #   tag:
     #   label: Community Lab
 
+    - title: 'Il 2023 di Designers Italia'
+      headingLevel: 3
+      customCol: col-lg-4
+      text: "Facciamo il bilancio di ciò che è avvenuto nell'ultimo anno. Spoiler: un sacco di cose."
+      img: /images/community/20231219-il-2023-di-designers-italia-1400x900.png
+      alt: ""
+      imgRatio: 21x9
+      imgPlaceholder: false
+      fullHeight: false
+      rounded: true
+      url: "/community/notizie/20231219-il-2023-di-designers-italia/"
+      dateInfo: 19 dicembre 2023
+      tags: [Partecipazione]
+
     - title: 'Disponibile il player video della Pubblica Amministrazione attento a privacy e accessibilità'
       headingLevel: 3
       customCol: col-lg-4
@@ -263,20 +262,6 @@ components:
       url: "/community/notizie/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita/"
       dateInfo: 31 ottobre 2023
       tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, Accessibilità]
-
-    - title: 'Nuovi rilasci del design system del Paese e delle risorse di progettazione e sviluppo'
-      headingLevel: 3
-      customCol: col-lg-4
-      text: Tra le principali novità, il player video attento a privacy e accessibilità e nuove schede informative.
-      img: /images/community/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo-1400x723.png
-      alt: ""
-      imgRatio: 21x9
-      imgPlaceholder: false
-      fullHeight: false
-      rounded: true
-      url: "/community/notizie/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo/"
-      dateInfo: 24 ottobre 2023
-      tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia]
 
     - title: "Quando il design incontra la formazione"
       headingLevel: 3
