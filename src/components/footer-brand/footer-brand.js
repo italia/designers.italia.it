@@ -32,11 +32,10 @@ function FooterBrand({ background, title, justifyLogos, logos }) {
                     target={value.blank ? "_blank" : undefined}
                     rel={value.blank ? "noreferrer" : undefined}
                     className="d-block"
-                    aria-label={value.ariaLabel}
                   >
                     <ImageResponsive
                       src={value.img}
-                      alt=""
+                      alt={value.ariaLabel}
                       className={value.small ? "small" : undefined}
                     />
                   </Link>
