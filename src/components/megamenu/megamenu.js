@@ -10,7 +10,7 @@ function Megamenu({ left, heading, cols }) {
   const GATSBY_ACTIVE = "active";
 
   return (
-    <div clasName="megamenu pb-5 pt-3 py-lg-0">
+    <div className="megamenu pb-5 pt-3 py-lg-0">
       <div className="row">
         <div className="col-xs-12 col-lg-4 px-0">
           <div className="row">
