@@ -165,7 +165,7 @@ components:
               - text: Documentazione (questo sito)
                 scope: row
               - tag:
-                  label: 1.0.0-alpha.14 #AUTO
+                  label: 1.0.0-alpha.15 #AUTO
                   addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: A seguire
@@ -180,7 +180,7 @@ components:
               - text: UI Kit Italia (design)
                 scope: row
               - tag:
-                  label: "3.2.0" #AUTO
+                  label: "3.3.1" #AUTO
                   addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: 'Schede rilascio'
@@ -195,7 +195,7 @@ components:
               - text: Design Tokens Italia (design e sviluppo)
                 scope: row
               - tag:
-                  label: "1.1.1" #AUTO
+                  label: "1.2.0" #AUTO
                   addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: 'Schede rilascio'
@@ -210,7 +210,7 @@ components:
               - text: Bootstrap Italia (sviluppo)
                 scope: row
               - tag:
-                  label: "2.7.7" #AUTO
+                  label: "2.8.1" #AUTO
                   addonClasses: bg-dark  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
               - simpleCta :
                   label: "Schede rilascio"
@@ -231,10 +231,26 @@ components:
       components:
         - name: TextImageCta
           text: |
+            ### v1.0.0-alpha.15
+            18 dicembre 2023
+            - **[Fondamenti](/design-system/fondamenti/)**
+              - Nuova scheda: [Dimensioni](/design-system/fondamenti/dimensioni/).
+              - Corretti valori in schede: [Colori](/design-system/fondamenti/colori/), [Griglia](/design-system/fondamenti/griglia/).
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornati contenuti scheda: [Tabs](/design-system/componenti/tabs/)
+            - Altro
+              - Corretto automatismo di generazione esempi per la documentazione a partire da API Bootstrap Italia.
+                - Corretta lingua impostata nell'HTML (grazie a @cfabry per la segnalazione).
+                - Corretto caricamenteo icone da file `sprites.svg`.
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione v3.3.1.
+              - Aggiornato **Design Tokens Italia** alla versione v1.2.0.           
+              - Aggiornato **Bootstrap Italia** alla versione v2.8.1.
+
             ### v1.0.0-alpha.14
             24 novembre 2023
             - **[Fondamenti](/design-system/fondamenti/)**
-              - Nuova scheda: [Bordi e raggi](/design-system/fondamenti/bordi-e-raggi/)
+              - Nuova scheda: [Bordi e raggi](/design-system/fondamenti/bordi-e-raggi/).
             - Risorse
               - Aggiornato **Bootstrap Italia** alla versione v2.7.7.
               
