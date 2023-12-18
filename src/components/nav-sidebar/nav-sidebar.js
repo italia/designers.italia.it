@@ -207,7 +207,10 @@ function NavSidebar({
               </button>
             </div>
             <div className="menu-wrapper">
-              <button className="it-back-button btn w-100 text-start" type="button">
+              <button
+                className="it-back-button btn w-100 text-start"
+                type="button"
+              >
                 <svg role="img" className="icon icon-sm icon-primary align-top">
                   <use href="/svg/sprites.svg#it-chevron-left" />
                 </svg>
