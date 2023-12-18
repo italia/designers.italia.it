@@ -207,12 +207,15 @@ function NavSidebar({
               </button>
             </div>
             <div className="menu-wrapper">
-              <a className="it-back-button" href="#" role="button">
+              <button
+                className="it-back-button btn w-100 text-start"
+                type="button"
+              >
                 <svg role="img" className="icon icon-sm icon-primary align-top">
                   <use href="/svg/sprites.svg#it-chevron-left" />
                 </svg>
                 <span>{backLabel}</span>
-              </a>
+              </button>
 
               <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
                 <a className="" href={url}>
