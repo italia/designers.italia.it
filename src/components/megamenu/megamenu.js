@@ -3,7 +3,6 @@ import ReactMarkdown from "react-markdown";
 import List from "../list/list";
 import Icon from "../icon/icon";
 import Link from "../link/link";
-import "./megamenu.scss";
 
 import ImageResponsive from "../image-responsive/image-responsive";
 
@@ -11,15 +10,15 @@ function Megamenu({ left, heading, cols }) {
   const GATSBY_ACTIVE = "active";
 
   return (
-    <div className="megamenu pb-5 pb-lg-0">
+    <div clasName="megamenu pb-5 pt-3 py-lg-0">
       <div className="row">
         <div className="col-xs-12 col-lg-4 px-0">
           <div className="row">
             {left && (
               <div className="col-12 it-vertical it-description pb-lg-3">
-                <div className="description-content img-max-megamenu ps-4 ps-sm-5 ms-3">
+                <div className="description-content ps-4 ps-sm-5 ms-3">
                   {left.img && (
-                    <div className="ratio ratio-megamenu lightgrey-bg-a1 mb-4 rounded">
+                    <div className="ratio ratio-21x9 lightgrey-bg-a1 mb-4 rounded">
                       <ImageResponsive
                         className="rounded"
                         src={left.img}
@@ -36,9 +35,9 @@ function Megamenu({ left, heading, cols }) {
         </div>
         <div className="col-12 col-lg-8">
           {heading && (
-            <div className="heading-link-wrapper">
+            <div className="it-heading-link-wrapper">
               <Link
-                className="heading-link d-flex-inline align-items-center"
+                className="it-heading-link"
                 to={heading.url}
                 activeClassName={GATSBY_ACTIVE}
               >
@@ -46,7 +45,7 @@ function Megamenu({ left, heading, cols }) {
                   icon="sprites.svg#it-arrow-right-triangle"
                   size="sm"
                   color="primary"
-                  addonClasses="me-2"
+                  addonClasses="me-2 mb-1"
                 />
                 <span>{heading.label}</span>
               </Link>
