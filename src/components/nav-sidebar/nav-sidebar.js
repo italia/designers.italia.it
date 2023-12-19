@@ -52,7 +52,7 @@ function NavSidebar({
       expandSublinks = false;
 
       linksStyle =
-        "list-item text-uppercase right-icon nav-link dropdown" +
+        "list-item text-uppercase right-icon nav-link" +
         `${item.label === page ? " active" : ""}` +
         `${item.disabled ? " disabled" : ""}`;
 
