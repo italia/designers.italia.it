@@ -201,15 +201,20 @@ function NavSidebar({
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
             <div className="overlay" />
             <div className="close-div visually-hidden">
-              <button className="btn close-menu" type="button">
+              <button
+                className="btn close-menu"
+                type="button"
+                aria-label={buttonCloseAriaLabel}
+              >
                 <span className="it-close" />
-                {buttonCloseAriaLabel}
+                {backLabel}
               </button>
             </div>
             <div className="menu-wrapper">
               <button
-                className="it-back-button btn w-100 text-start"
+                className="it-back-button btn w-100 text-start rounded-0"
                 type="button"
+                aria-label={buttonCloseAriaLabel}
               >
                 <svg role="img" className="icon icon-sm icon-primary align-top">
                   <use href="/svg/sprites.svg#it-chevron-left" />
