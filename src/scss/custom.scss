@@ -54,3 +54,34 @@ div.chips-list-wrapper {
     }
   }
 }
+
+[id] {
+ @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+   scroll-margin-top: $header-center-max-height;
+ }
+ scroll-margin-top: $header-center-max-height-mob + 48;
+}
+
+// special chips with numeric rounded-pill badge inside ("argomenti")
+.chips-list-wrapper {
+  .chips-list {
+    .chip-simple {
+      span.badge {
+        &.rounded-pill {
+          transform: translateY(-1px);
+        }
+      }
+
+      &:hover {
+        span.badge {
+          &.rounded-pill {
+            &.bg-primary {
+              background-color: white !important;
+              color: var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}
