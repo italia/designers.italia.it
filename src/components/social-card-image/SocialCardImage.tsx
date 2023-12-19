@@ -27,17 +27,24 @@ export default function (node: Node) {
               </div>
             </div>
             <div style={{ display: 'flex' }}>
-              <img src="https://designers.italia.it/images/40x40.png" width={172} height={172} style={{}} />
+              <img src="https://pbs.twimg.com/profile_images/869985002385231876/q2gatbqh_400x400.jpg" width={172} height={172} style={{}} /> {/* XXX logo image to host ourself on designers*/}
             </div>
           </div>
-          {image && <div style={{ display: 'flex', }}>
-            <img src={image} width={1200} height={480} style={{}}/>
-          </div>}
-          {/* <div style={{ height: 16, backgroundColor: '#06c', display: 'flex' }}>
+          {image ? <div style={{
+            display: 'flex',
+            width: 1200,
+            height: 600,
+            backgroundColor: '#06c',
+            backgroundImage: `url(${image})`,
+            // backgroundRepeat: 'no-repeat', 
+            backgroundSize: 'contain',
+            backgroundPosition: 'left top',
+          }}></div> : <div style={{ height: 480, backgroundColor: '#06c', display: 'flex' }}>
             &nbsp;
-          </div> */}
+          </div>
+          }
         </div>
-      </div>
+      </div >
     )
   } else {
     return (
