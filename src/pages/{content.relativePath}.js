@@ -233,6 +233,7 @@ export const query = graphql`
           id
           headingLevel
           title
+          subtitle
           text
           moreButton
           moreButtonClose
@@ -426,6 +427,11 @@ export const query = graphql`
             text
             imgRatio
             imgPlaceholder
+            cardEvent
+            iconOverlay {
+              icon
+              ariaLabel
+            }
             fullHeight
             imgRounded
             noShadow

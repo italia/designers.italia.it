@@ -42,8 +42,14 @@ function ListArchiveDSTags() {
                   color="primary"
                   path="design-system/componenti/utili-per"
                 >
-                  <span className="ms-2 badge neutral-2-bg text-secondary my-0 pb-1">
+                  <span className="ms-2 badge bg-primary rounded-pill small">
+                    <span className="visually-hidden">[</span>
                     {tag.totalCount}
+                    {tag.totalCount === 1 ? (
+                      <span className="visually-hidden"> componente ]</span>
+                    ) : (
+                      <span className="visually-hidden"> componenti ]</span>
+                    )}
                   </span>
                 </Chip>
               </ListItem>
