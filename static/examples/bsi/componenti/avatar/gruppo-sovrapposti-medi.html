@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.7.7/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.1/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -145,11 +145,11 @@
   <li>
     <div class="avatar avatar-dropdown size-md">
       <div class="dropdown">
-        <a class="btn btn-dropdown dropdown-toggle" href="#" role="button" id="dropdownMenuLink2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-dropdown dropdown-toggle" type="button" id="dropdownMenuToggle2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <span class="visually-hidden">Visualizza altri 4 utenti</span>
           <span aria-hidden="true">+4</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink2">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuToggle2">
           <div class="link-list-wrapper">
             <ul class="link-list">
               <li>
@@ -195,9 +195,9 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.7.7/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.1/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
-        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/fonts/");
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
         // tooltip
         var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
