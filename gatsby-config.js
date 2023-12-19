@@ -390,8 +390,12 @@ module.exports = {
         height: 630,
         fonts: [
           {
-            name: `FavoriteFont`,
-            path: `${__dirname}/static/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-600.ttf`,
+            name: `tRegular`,
+            path: `${__dirname}/static/dist/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-regular.ttf`,
+          },
+          {
+            name: `tBold`,
+            path: `${__dirname}/static/dist/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-700.ttf`,
           },
         ],
         target_nodes: ["Content"],
