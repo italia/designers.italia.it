@@ -184,7 +184,7 @@ function NavSidebar({
     >
       <div className="nav-sidebar">
         <nav
-          className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-right-side border-end-0 megamenu"
+          className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-right-side border-end-0"
           aria-label={ariaLabel}
         >
           <button
