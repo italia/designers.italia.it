@@ -66,7 +66,7 @@ function NavSidebar({
           let subLiStyle = "nav-link";
 
           if (subItem.disabled) {
-            subLiStyle += "disabled";
+            subLiStyle += " disabled";
           }
 
           return (
