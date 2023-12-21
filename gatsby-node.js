@@ -112,6 +112,28 @@ exports.onCreateNode = async ({
   }
 };
 
+exports.onCreatePage = ({ page, actions }) => {
+  // add variables to pageContext
+  if (page.context.highlights) {
+    return "Skipping already highlighted page";
+  }
+  const { createPage, deletePage } = actions;
+
+  deletePage(page);
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      highlighted: [
+        "Il 2023 di Designers Italia ",
+        "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica",
+        "Prendi parte anche tu all’evoluzione del design system del Paese",
+        "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto",
+      ],
+    },
+  });
+};
+
 exports.createPages = async ({ graphql, actions }) => {
   // tags
   const { createPage } = actions;
