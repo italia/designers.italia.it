@@ -7,7 +7,7 @@ import Card from "../card/card";
 // import Button from "../button/button";
 // import Topics from "../topics/topics";
 
-function HighlightContentsStatic({  }) {
+function HighlightContentsStatic() {
   const data = useStaticQuery(graphql`
     query {
       highlightedContent: allContent(
@@ -73,10 +73,10 @@ function HighlightContentsStatic({  }) {
                 className="border-bottom pb-4 mb-4 mb-md-5"
                 id="sandbox-list-title"
               >
-                Sandbox static query 
+                Sandbox static query
               </h2>
               <p className="lead mb-5">
-                - we cannot use variables for filter query 
+                - we cannot use variables for filter query
               </p>
               <div className="row pb-4">
                 {edges.map(({ node }) => (

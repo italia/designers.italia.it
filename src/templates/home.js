@@ -52,7 +52,7 @@ function Template({
       </Header>
       <HeaderPost data={HeaderData.headerPost} />
       <main id="main">
-      <HighlightContentsStatic />
+        <HighlightContentsStatic />
         <HighlightContents data={highlightedContent} />
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && (

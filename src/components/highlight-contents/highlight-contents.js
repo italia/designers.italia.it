@@ -24,7 +24,9 @@ function HighlightContents({ data }) {
                 Sandbox page query
               </h2>
               <p className="lead mb-5">
-                - to use variables for filter query we need to switch to a createPage approach all the pages with dinamic contents? In Gatsby node right?
+                - to use variables for filter query we need to switch to a
+                createPage approach all the pages with dinamic contents? In
+                Gatsby node right?
               </p>
               <div className="row pb-4">
                 {data.edges.map(({ node }) => (
