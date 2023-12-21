@@ -65,9 +65,9 @@ export const query = graphql`
           hero: {
             title: {
               in: [
-                "Il 2023 di Designers Italia ",
-                "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica",
-                "Prendi parte anche tu all’evoluzione del design system del Paese",
+                "Il 2023 di Designers Italia "
+                "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica"
+                "Prendi parte anche tu all’evoluzione del design system del Paese"
                 "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto"
               ]
             }
