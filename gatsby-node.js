@@ -112,6 +112,7 @@ exports.onCreateNode = async ({
   }
 };
 
+/* eslint-disable consistent-return */ // just setting a context variable
 exports.onCreatePage = ({ page, actions }) => {
   // add variables to pageContext
   if (page.context.highlighted) {
