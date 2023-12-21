@@ -20,7 +20,7 @@ function sandboxTestPage({ data: { highlightedContent } }) {
                 {highlightedContent.edges.map(({ node }) =>
                   <li key={node.seo.title} className="py-3">
                     <Card
-                      img={node.seo.image.replace(/.*\/\/[^\/]*/, '') // XXX }
+                      img={node.seo.image.replace(/.*\/\/[^\/]*/, '')} // XXX 
                       title={node.components.hero.title}
                       url={node.seo.url}
                       description={node.seo.description}
