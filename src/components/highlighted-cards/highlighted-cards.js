@@ -20,9 +20,9 @@ function HighlightedCards({ data }) {
               >
                 Sandbox page query
               </h2>
-              <p className="lead mb-5">
-                Cards loaded from an array of titles stored in gatsby-node.js and used via a global pageQuery. We have to load it dinamically. This is the way. More soon. 
-              </p>
+              <div className="lead mb-5">
+                Cards loaded from an array of titles stored in gatsbynode and used via a global pageQuery All is a sandbox
+              </div>
               <div className="row pb-4">
                 {data.edges.map(({ node }) => (
                   <div key={node.seo.title} className={cardStyles}>
