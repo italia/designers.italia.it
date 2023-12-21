@@ -37,7 +37,11 @@ const TEMPLATES = {
   "design-system-component": TemplateDSComponent,
 };
 
-function Page({ pageContext, location, data: { content, highlightedContent } }) {
+function Page({
+  pageContext,
+  location,
+  data: { content, highlightedContent },
+}) {
   const Template = content.metadata.template
     ? TEMPLATES[content.metadata.template.name]
     : TemplateBase;
@@ -60,13 +64,21 @@ function Page({ pageContext, location, data: { content, highlightedContent } }) 
 export const query = graphql`
   query ($id: String!) {
     highlightedContent: allContent(
-      filter: {components: {hero: {title: {in: [
-        "Il 2023 di Designers Italia ", 
-        "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica", 
-        "Prendi parte anche tu all’evoluzione del design system del Paese", 
-        "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto"
-      ]}}}}
-      sort: {seo: {pathname: DESC}}
+      filter: {
+        components: {
+          hero: {
+            title: {
+              in: [
+                "Il 2023 di Designers Italia "
+                "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica"
+                "Prendi parte anche tu all’evoluzione del design system del Paese"
+                "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto"
+              ]
+            }
+          }
+        }
+      }
+      sort: { seo: { pathname: DESC } }
     ) {
       totalCount
       edges {
@@ -79,7 +91,7 @@ export const query = graphql`
           components {
             hero {
               title
-              tag { 
+              tag {
                 label
                 addonClasses
               }

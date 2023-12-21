@@ -31,7 +31,13 @@ import ImageIcons from "../components/image-icons/image-icons";
 
 import HighlightContents from "../components/highlight-contents/highlight-contents";
 
-function Template({ Pagedata, highlightedContent, pageContext, location, lastModified }) {
+function Template({
+  Pagedata,
+  highlightedContent,
+  pageContext,
+  location,
+  lastModified,
+}) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} location={location} />
@@ -45,7 +51,7 @@ function Template({ Pagedata, highlightedContent, pageContext, location, lastMod
       </Header>
       <HeaderPost data={HeaderData.headerPost} />
       <main id="main">
-        <HighlightContents data= {highlightedContent}></HighlightContents>
+        <HighlightContents data={highlightedContent} />
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && (
             <ContentCollapse

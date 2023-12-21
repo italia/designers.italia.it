@@ -1,11 +1,11 @@
-import classNames from "classnames";
 import React from "react";
+// import classNames from "classnames";
+
 import Card from "../card/card";
-import Button from "../button/button";
-import Topics from "../topics/topics";
+// import Button from "../button/button";
+// import Topics from "../topics/topics";
 
 function HighlightContents({ data }) {
-
   const cardStyles = "col-12 col-md-6 mb-3 mb-md-4 col-lg-4";
 
   return (
@@ -44,7 +44,7 @@ function HighlightContents({ data }) {
           </div>
         </div>
       </div>
-    </section >
+    </section>
   );
 }
 

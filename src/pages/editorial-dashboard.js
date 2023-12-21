@@ -7,7 +7,6 @@ import Card from "../components/card/card";
 import Template from "../templates/base";
 
 function sandboxTestPage({ data: { highlightedContent } }) {
-  
   const cardStyles = "col-12 col-md-6 mb-3 mb-md-4 col-lg-4";
 
   return (
