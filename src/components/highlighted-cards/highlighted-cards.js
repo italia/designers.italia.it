@@ -21,9 +21,7 @@ function HighlightedCards({ data }) {
                 Sandbox page query
               </h2>
               <p className="lead mb-5">
-                - to use variables for filter query we need to switch to a
-                createPage approach all the pages with dinamic contents? In
-                Gatsby node right?
+                Cards loaded from an array of titles stored in gatsby-node.js and used via a global pageQuery. We have to load it dinamically. This is the way. More soon. 
               </p>
               <div className="row pb-4">
                 {data.edges.map(({ node }) => (
