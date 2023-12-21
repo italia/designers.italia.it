@@ -1,7 +1,7 @@
 import * as React from "react";
 import { graphql } from "gatsby";
 
-import Link from "../components/link/link";
+// import Link from "../components/link/link";
 import Card from "../components/card/card";
 
 import Template from "../templates/base";
@@ -15,21 +15,25 @@ function sandboxTestPage({ data: { highlightedContent } }) {
             <div className="col-12">
               <h1> Sandbox Test Filter Query</h1>
               <h2> Tutte le pagine filtrate per titolo </h2>
-              <p> Stiamo leggendo i dati di tre notizie cercandole per il loro titolo. L'obiettivo è arrivare a generare elenchi di cards in automatico partendo da titoli unici o altri dettagli unici (id, etc.). Per ora testando pageQuery. </p>
+              <p>
+                Stiamo leggendo i dati di tre notizie cercandole per il loro
+                titolo. Obiettivo generare elenchi di cards in automatico
+                partendo da titoli unici o altri dettagli unici come id, etc.
+                Per ora testando pageQuery.
+              </p>
               <ul>
-                {highlightedContent.edges.map(({ node }) =>
+                {highlightedContent.edges.map(({ node }) => (
                   <li key={node.seo.title} className="py-3">
                     <Card
-                      img={node.seo.image.replace(/.*\/\/[^\/]*/, '')} // XXX 
+                      img={node.seo.image}
                       title={node.components.hero.title}
                       url={node.seo.url}
                       description={node.seo.description}
-                    >
-                    </Card>
+                    />
                     {/* <h3><Link to={node.seo.pathname}>{node.components.hero.title}</Link></h3> */}
                     {/* <p>{node.seo.description}</p> */}
-                  </li>)
-                }
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -46,30 +50,30 @@ export function Head() {
 }
 
 export const query = graphql`
-query {
-  highlightedContent: allContent(
-    filter: { components: { hero: { title: { in: 
-      [
-        "Il 2023 di Designers Italia ",
-      ] 
-    } } } }
-    sort: { seo: { pathname: DESC } }
-  ) {
-    totalCount
-    edges {
-      node {
-        components {
-          hero {
-            title
-          }
+  query {
+    highlightedContent: allContent(
+      filter: {
+        components: {
+          hero: { title: { in: ["Il 2023 di Designers Italia "] } }
         }
-        seo {
-          description
-          pathname
-          image
+      }
+      sort: { seo: { pathname: DESC } }
+    ) {
+      totalCount
+      edges {
+        node {
+          components {
+            hero {
+              title
+            }
+          }
+          seo {
+            description
+            pathname
+            image
+          }
         }
       }
     }
   }
-}
 `;
