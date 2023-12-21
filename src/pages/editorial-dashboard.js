@@ -27,7 +27,7 @@ function sandboxTestPage({ data: { highlightedContent } }) {
                     <Card
                       img={node.seo.image}
                       title={node.components.hero.title}
-                      url={node.seo.url}
+                      url={node.seo.pathname}
                       description={node.seo.description}
                     />
                     {/* <h3><Link to={node.seo.pathname}>{node.components.hero.title}</Link></h3> */}
