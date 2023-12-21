@@ -1,11 +1,63 @@
 import React from "react";
+
+import { useStaticQuery, graphql } from "gatsby";
 // import classNames from "classnames";
 
 import Card from "../card/card";
 // import Button from "../button/button";
 // import Topics from "../topics/topics";
 
-function HighlightContents({ data }) {
+function HighlightContentsStatic({  }) {
+  const data = useStaticQuery(graphql`
+    query {
+      highlightedContent: allContent(
+        filter: {
+          components: {
+            hero: {
+              title: {
+                in: [
+                  "Il 2023 di Designers Italia "
+                  "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica"
+                  "Prendi parte anche tu all’evoluzione del design system del Paese"
+                  "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto"
+                ]
+              }
+            }
+          }
+        }
+        sort: { seo: { pathname: DESC } }
+      ) {
+        totalCount
+        edges {
+          node {
+            seo {
+              description
+              pathname
+              image
+            }
+            components {
+              hero {
+                title
+                tag {
+                  label
+                  addonClasses
+                }
+                kangaroo {
+                  tags
+                }
+              }
+              imageIcons {
+                image
+                alt
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+
+  const { edges } = data.highlightedContent;
   const cardStyles = "col-12 col-md-6 mb-3 mb-md-4 col-lg-4";
 
   return (
@@ -21,13 +73,13 @@ function HighlightContents({ data }) {
                 className="border-bottom pb-4 mb-4 mb-md-5"
                 id="sandbox-list-title"
               >
-                Sandbox page query
+                Sandbox static query 
               </h2>
               <p className="lead mb-5">
-                - to use variables for filter query we need to switch to a createPage approach all the pages with dinamic contents? In Gatsby node right?
+                - we cannot use variables for filter query 
               </p>
               <div className="row pb-4">
-                {data.edges.map(({ node }) => (
+                {edges.map(({ node }) => (
                   <div key={node.seo.title} className={cardStyles}>
                     <Card
                       img={node.components.imageIcons.image}
@@ -51,4 +103,4 @@ function HighlightContents({ data }) {
   );
 }
 
-export default HighlightContents;
+export default HighlightContentsStatic;

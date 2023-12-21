@@ -29,6 +29,7 @@ import BannerTextCta from "../components/banner-text-cta/banner-text-cta";
 import Numbers from "../components/numbers/numbers";
 import ImageIcons from "../components/image-icons/image-icons";
 
+import HighlightContentsStatic from "../components/highlight-contents-static/highlight-contents-static";
 import HighlightContents from "../components/highlight-contents/highlight-contents";
 
 function Template({
@@ -51,6 +52,7 @@ function Template({
       </Header>
       <HeaderPost data={HeaderData.headerPost} />
       <main id="main">
+      <HighlightContentsStatic />
         <HighlightContents data={highlightedContent} />
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && (
