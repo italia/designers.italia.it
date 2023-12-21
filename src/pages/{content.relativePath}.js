@@ -37,11 +37,7 @@ const TEMPLATES = {
   "design-system-component": TemplateDSComponent,
 };
 
-function Page({
-  pageContext,
-  location,
-  data: { content, highlightedContent },
-}) {
+function Page({ pageContext, location, data: { content, highlightedCards } }) {
   const Template = content.metadata.template
     ? TEMPLATES[content.metadata.template.name]
     : TemplateBase;
@@ -51,7 +47,7 @@ function Page({
   return (
     <Template
       Pagedata={content}
-      highlightedContent={highlightedContent}
+      highlightedCards={highlightedCards}
       pageContext={pageContext}
       location={location}
       lastModified={lastModified}
@@ -62,22 +58,9 @@ function Page({
 }
 
 export const query = graphql`
-  query ($id: String!) {
-    highlightedContent: allContent(
-      filter: {
-        components: {
-          hero: {
-            title: {
-              in: [
-                "Il 2023 di Designers Italia "
-                "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica"
-                "Prendi parte anche tu all’evoluzione del design system del Paese"
-                "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto"
-              ]
-            }
-          }
-        }
-      }
+  query ($id: String!, $highlighted: [String!]!) {
+    highlightedCards: allContent(
+      filter: { components: { hero: { title: { in: $highlighted } } } }
       sort: { seo: { pathname: DESC } }
     ) {
       totalCount
@@ -116,7 +99,6 @@ export const query = graphql`
           }
         }
       }
-
       metadata {
         template {
           name

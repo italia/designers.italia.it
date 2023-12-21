@@ -29,12 +29,11 @@ import BannerTextCta from "../components/banner-text-cta/banner-text-cta";
 import Numbers from "../components/numbers/numbers";
 import ImageIcons from "../components/image-icons/image-icons";
 
-import HighlightContentsStatic from "../components/highlight-contents-static/highlight-contents-static";
-import HighlightContents from "../components/highlight-contents/highlight-contents";
+import HighlightedCards from "../components/highlighted-cards/highlighted-cards";
 
 function Template({
   Pagedata,
-  highlightedContent,
+  highlightedCards,
   pageContext,
   location,
   lastModified,
@@ -52,8 +51,7 @@ function Template({
       </Header>
       <HeaderPost data={HeaderData.headerPost} />
       <main id="main">
-        <HighlightContentsStatic />
-        <HighlightContents data={highlightedContent} />
+        <HighlightedCards data={highlightedCards} />
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && (
             <ContentCollapse
