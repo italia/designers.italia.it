@@ -114,7 +114,7 @@ exports.onCreateNode = async ({
 
 exports.onCreatePage = ({ page, actions }) => {
   // add variables to pageContext
-  if (page.context.highlights) {
+  if (page.context.highlighted) {
     return "Skipping already highlighted page";
   }
   const { createPage, deletePage } = actions;
