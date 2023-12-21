@@ -85,7 +85,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -134,7 +133,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -157,7 +156,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
+      tags: [Design system, Interfaccia utente, Sviluppo interfaccia]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -179,8 +178,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -191,7 +189,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           # title: A cosa servono h3 #C
@@ -206,17 +203,17 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni sulle attività preliminari, gli approcci e gli strumenti utili allo sviluppo dell’interfaccia di un servizio digitale.
           ctas:
-          - label: "Vai all'argomento Lo sviluppo dell'interfaccia utente" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Vai all'argomento Lo sviluppo dell'interfaccia utente" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -231,7 +228,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "Sviluppa l’interfaccia di un servizio digitale" #C
         rounded: true

@@ -40,15 +40,15 @@ components:
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
-   # pretext:
-   #   icon:
-   #     icon: sprites.svg#it-info-circle
-   #     size: sm
-   #   text: In breve
-   # text: |
-   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -76,7 +76,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -99,7 +99,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Accessibilità,Progettazione interfaccia,Sviluppo interfaccia]
+      tags: [Accessibilità, Progettazione interfaccia, Sviluppo interfaccia]
 
   sectionsEditorial:
     # - fullColumn: true
@@ -122,17 +122,17 @@ components:
           text: |
             Abbiamo scelto di considerare l'**accessibilità by design** parte di ogni processo e risorsa del design system del Paese, non solo come un orizzonte ideale o una risposta alle norme. Nel design system trovi risorse quindi **accessibili by default** per PA e fornitori, da cui partire per realizzare siti e servizi facili da usare e inclusivi, con più efficacia, minor tempo e costi.
           ctas:
-          - label: "Approfondimento su Medium" #C
-            url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099 #M
-            blank: true #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Approfondimento su Medium" #C
+              url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099 #M
+              blank: true #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Linee guida e criteri di successo
@@ -140,28 +140,28 @@ components:
           text: |
             Il livello di conformità [richiesto](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#linee-guida-e-criteri-di-successo) per i siti della Pubblica Amministrazione dalla norma tecnica europea armonizzata **UNI EN 301 549**, corrisponde al **livello “A” e “AA” della W3C Recommendation WCAG 2.1**.
           ctas:
-          - label: "Linee guida accessibilità" #C
-            url: "/norme-e-riferimenti/linee-guida-accessibilita/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: "Specifica WCAG 2.1 in lingua italiana" #C
-            url: https://www.w3.org/Translations/WCAG21-it/ #M
-            blank: true #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Linee guida accessibilità" #C
+              url: "/norme-e-riferimenti/linee-guida-accessibilita/" #M
+              blank: false #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: "Specifica WCAG 2.1 in lingua italiana" #C
+              url: https://www.w3.org/Translations/WCAG21-it/ #M
+              blank: true #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Profili coinvolti nella cura dell'accessibilità
@@ -258,16 +258,14 @@ components:
             - controllo testi alternativi (alt text)
             - controllo annuncio cambi dinamici del DOM (aria-live)
           ctas:
-          - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
-            url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
-            blank: true #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
+              url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
+              blank: true #M #C true if new tab for external links
 
-
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

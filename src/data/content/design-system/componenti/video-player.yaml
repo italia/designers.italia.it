@@ -45,13 +45,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Contenuti,Media]
+      tagsDesignSystem: [Contenuti, Media]
 
   tab:
     - full: true
 
 tabs:
-
   - title: Uso e accessibilità
 
     componentVariant:
@@ -74,8 +73,8 @@ tabs:
             headingLevel: 2
             text: |
               Il componente video player è utile per mostrare contenuti video nelle pagine del proprio sito. Si può usare per video caricati su un hosting proprio oppure per video provenienti da piattaforme di terze parti, utilizzando la variante con overlay di consenso per la privacy.   
-              
-              I video possono essere strumenti preziosi sia dal punto di vista della comunicazione che dell'istruzione. È però importante valutare e curare gli aspetti di privacy e accessibilità dei contenuti prima di pubblicarli, di preferenza tenendo conto del parere di esperti di settore e responsabili della privacy del proprio ente o progetto.    
+
+              I video possono essere strumenti preziosi sia dal punto di vista della comunicazione che dell'istruzione. È però importante valutare e curare gli aspetti di privacy e accessibilità dei contenuti prima di pubblicarli, di preferenza tenendo conto del parere di esperti di settore e responsabili della privacy del proprio ente o progetto.
 
       - full: true
         noSpace: true
@@ -100,8 +99,7 @@ tabs:
               - Il contenuto video non dovrebbe essere usato come unica modalità per veicolare informazioni salienti nell'ambito del sito o servizio.
               - Se il video è uno dei contenuti predominanti della pagina, abbi cura di associargli un titolo e/o una descrizione o testo breve per offrire agli utenti informazioni di contesto preliminari alla visione.
               - Ti ricordiamo che i soli sottotitoli generati in automatico da una piattaforma non sono sufficienti, perché è necessario che sia un umano a correggerli o integrarli.
-              - Collega un'immagine di anteprima che anticipi il video in attesa del caricamento e/o del consenso. 
-
+              - Collega un'immagine di anteprima che anticipi il video in attesa del caricamento e/o del consenso.
 
       - full: true
         noSpace: true
@@ -127,8 +125,7 @@ tabs:
               *In stesura*
 
   - title: Progettazione
-    sectionsEditorial:      
-    
+    sectionsEditorial:
       - full: true
         noSpace: true
         paddingLeft: true
@@ -158,7 +155,7 @@ tabs:
             alt: "Gli elementi che compongono la barra di controllo del video player"
           - name: TextImageCta
             noSpace: true
-            text: |             
+            text: |
               La barra di controllo del video player è composta da: 
 
               1. **contenitore**: definisce un colore di fondo con il colore di brand, può essere leggermente trasparente per non coprire totalmente il video sottostante;
@@ -177,15 +174,14 @@ tabs:
             alt: "Gli elementi che compongono l'overlay di consenso per il video player"
           - name: TextImageCta
             noSpace: false
-            text: |             
+            text: |
               L'overlay di consenso, attivabile nel caso di riproduzione di video da piattaforme di terze parti, è composto da:
 
               1. **fondale**: fondo colorato nel colore di branding con leggera trasparenza, a coprire l'intera area del video player;
               2. **icona video**;
               3. **descrizione**: testo che spiega la CTA che segue e invita alla consultazione della Cookie policy;
               4. **opzione ricorda per tutti i video**: opzionale, attiva il meccanismo di memorizzazione delle preferenze utente del sito, se presente;
-              5. **pulsante accetta**: call to action primaria valida solo per questo video se non presente l'opzione di cui al punto 4. 
-
+              5. **pulsante accetta**: call to action primaria valida solo per questo video se non presente l'opzione di cui al punto 4.
 
       - full: true
         noSpace: true
@@ -198,7 +194,7 @@ tabs:
             text: |
               Tutte le varianti di video player sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
 
-              Nel caso di utilizzo di video da piattaforme di terze parti l'overlay di consenso appare in automatico sopra ogni video player se l'utente non ha accettato la Cookie policy specifica. Isolando il browser dell'utente dalla piattaforma di terze parti a meno non sia specificatamente accettato.  
+              Nel caso di utilizzo di video da piattaforme di terze parti l'overlay di consenso appare in automatico sopra ogni video player se l'utente non ha accettato la Cookie policy specifica. Isolando il browser dell'utente dalla piattaforma di terze parti a meno non sia specificatamente accettato.
 
       - full: true
         noSpace: true
@@ -211,7 +207,6 @@ tabs:
             text: |
               _In stesura._
 
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -221,17 +216,17 @@ tabs:
             headingLevel: 2
             text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per designer #C
+                # screenReaderText: " (si apre in una nuova finestra)" #C
+                url: "/design-system/come-iniziare/per-designer/" #M
+                blank: true #M #C true if new tab for external links
+                icon:
+                  icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
 
   - title: Sviluppo
 
@@ -254,14 +249,14 @@ tabs:
             headingLevel: 2
             text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori #C
+                # screenReaderText: " (si apre in una nuova finestra)" #C
+                url: "/design-system/come-iniziare/per-sviluppatori/" #M
+                blank: true #M #C true if new tab for external links
+                icon:
+                  icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

@@ -45,7 +45,7 @@ components:
     text: |
       Scopri gli strumenti messi a disposizione per i designer, i vari formati, come utilizzarli e come partecipare attivamente: dalle ultime versioni di UI Kit Italia e gli approfondimenti sui temi di accessibilità, ai design token e i processi per contribuire alla cura e all'evoluzione del kit.
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -73,7 +73,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design/" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -96,10 +96,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system,Interfaccia utente,Progettazione interfaccia]
+      tags: [Design system, Interfaccia utente, Progettazione interfaccia]
 
   sectionsEditorial:
-
     - fullColumn: true
       noSpace: true
       components:
@@ -114,80 +113,79 @@ components:
       text: Lo strumento a disposizione dei designer per costruire e prototipare interfacce ed esperienze di siti e servizi pubblici digitali
       background: null
       components:
-
         - name: TextImageCta
           title: "Design system: pubblicata la versione ufficiale di UI Kit Italia"
           noSpace: true
           text: |
             Il kit per progettare interfacce e siti digitali della PA esce dalla fase beta
           ctas:
-          - label: "Leggi la notizia" #C
-            url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
-            blank: true #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Leggi la notizia" #C
+              url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
+              blank: true #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Versione corrente
           noSpace: true
           # text: |
           ctas:
-          - label: Vai alla community @designersitalia #C
-            screenReaderText: " (si apre in una nuova finestra)"
-            url: https://figma.com/@designersitalia #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Versione corrente #C
-            screenReaderText: " (si apre in una nuova finestra)"
-            url: https://www.figma.com/community/file/1105848677422572920 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla community @designersitalia #C
+              screenReaderText: " (si apre in una nuova finestra)"
+              url: https://figma.com/@designersitalia #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Versione corrente #C
+              screenReaderText: " (si apre in una nuova finestra)"
+              url: https://www.figma.com/community/file/1105848677422572920 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Altri formati e changelog
           headingLevel: 4
           # text: |
           ctas:
-          - label: Vai al repository dedicato #C
-            screenReaderText: " UI Kit Italia (si apre in una nuova finestra)"
-            url: https://github.com/italia/design-ui-kit #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Changelog #C
-            screenReaderText: " UI Kit Italia (si apre in una nuova finestra)"
-            url: https://github.com/italia/design-ui-kit/releases #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al repository dedicato #C
+              screenReaderText: " UI Kit Italia (si apre in una nuova finestra)"
+              url: https://github.com/italia/design-ui-kit #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Changelog #C
+              screenReaderText: " UI Kit Italia (si apre in una nuova finestra)"
+              url: https://github.com/italia/design-ui-kit/releases #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Come utilizzarlo in Figma
@@ -231,7 +229,6 @@ components:
           text: |
             _In stesura_
 
-
     - full: true
       noSpace: true
       paddingLeft: true
@@ -245,34 +242,34 @@ components:
           text: |
             Se ti occupi di design puoi aprire segnalazioni e inviare i tuoi contributi dedicati alla progettazione delle interfacce di punti di contatto digitali delle amministrazioni pubbliche seguendo le istruzioni operative dedicate a UI kit Italia e Design tokens Italia.
           ctas:
-          - label: Scopri come contribuire Per il design #C
-            url: "/design-system/come-contribuire/per-il-design/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Scopri come contribuire Per il design #C
+              url: "/design-system/come-contribuire/per-il-design/" #M
+              blank: false #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
         - name: TextImageCta
           title: Accessibilità
           noSpace: true
           text: |
             Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
           ctas:
-          - label: Vai al fondamento Accessibilità #C
-            url: "/design-system/fondamenti/accessibilita/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al fondamento Accessibilità #C
+              url: "/design-system/fondamenti/accessibilita/" #M
+              blank: false #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Design tokens
@@ -280,17 +277,17 @@ components:
           text: |
             Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali.
           ctas:
-          - label: Vai al fondamento Design tokens #C
-            url: "/design-system/fondamenti/design-tokens/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al fondamento Design tokens #C
+              url: "/design-system/fondamenti/design-tokens/" #M
+              blank: false #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # - name: TextImageCta
         #   title: Workflow di design e revisione
@@ -301,5 +298,3 @@ components:
         #   title: Workflow di rilascio versioni
         #   text: |
         #     _In stesura_
-
-

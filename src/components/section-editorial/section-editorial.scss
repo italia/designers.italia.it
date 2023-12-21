@@ -15,7 +15,12 @@
       }
     }
   }
-  .sidebar-wrapper .sidebar-linklist-wrapper .link-list-wrapper ul li a:not(.active) {
+  .sidebar-wrapper
+    .sidebar-linklist-wrapper
+    .link-list-wrapper
+    ul
+    li
+    a:not(.active) {
     font-weight: normal;
   }
   .sidebar-wrapper.affix-top {
@@ -24,20 +29,16 @@
   &.bg-primary-light {
     background-color: var(--color-primary-light);
   }
-
 }
 //Mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
@@ -47,7 +48,8 @@
     padding-bottom: var(--section-editorial-y-padding-desk);
   }
   .design-system .section-editorial {
-    h2, .text-container p {
+    h2,
+    .text-container p {
       width: 75%;
     }
     .content h2 {

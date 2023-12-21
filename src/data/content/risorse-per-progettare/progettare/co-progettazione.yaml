@@ -85,7 +85,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -103,7 +102,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-     Con gli strumenti del kit puoi organizzare un vero e proprio workshop per **identificare i problemi chiave di un progetto o servizio** e allo stesso tempo trovare soluzioni adeguate in poco tempo.
+      Con gli strumenti del kit puoi organizzare un vero e proprio workshop per **identificare i problemi chiave di un progetto o servizio** e allo stesso tempo trovare soluzioni adeguate in poco tempo.
     img: /images/risorse-per-progettare/icons/kit_coprog.svg #I
     alt: "" #C
 
@@ -134,7 +133,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -181,8 +180,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -193,7 +191,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
@@ -208,17 +205,17 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come trattare tutti gli elementi che creano un servizio, rendere protagonista la centralità dell’utente, individuare nella co-progettazione una metodologia per fare innovazione e definire un servizio pubblico digitale.
           ctas:
-          - label: "Vai all'argomento Progettazione dei servizi" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Vai all'argomento Progettazione dei servizi" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -238,7 +235,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "Co-progetta l'esperienza d'uso" #C
         rounded: true

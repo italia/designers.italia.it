@@ -87,7 +87,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -99,12 +98,12 @@ components:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
+    #Lorem **ipsum**
     img: /images/risorse-per-progettare/icons/kit_linguaggio_individua.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -144,7 +143,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -167,22 +166,19 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linguaggio,Tono di voce,Co-progettazione]
+      tags: [Linguaggio, Tono di voce, Co-progettazione]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
-    - title: Come creare e ottimizzare i contenuti, coinvolgendo gli stakeholder  #C
+  sectionsEditorial:
+    - title: Come creare e ottimizzare i contenuti, coinvolgendo gli stakeholder #C
       menu: false
       centered: true
       background: null
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -246,4 +242,3 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/contenuti-e-linguaggio/individua-ottimizza/DI-Esercizio-di-editing-collaborativo.odt #M
                 ariaLabel: "Scarica ODT Esercizio di scrittura collaborativa" #C #COMPILE FOR EACH ITEM
                 blank: false
-

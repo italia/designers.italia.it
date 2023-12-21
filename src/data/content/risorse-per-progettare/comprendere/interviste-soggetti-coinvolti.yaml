@@ -26,7 +26,6 @@ metadata:
     - /risorse-per-progettare/comprendere/interviste
     - /kit/user-interviews
 
-
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
@@ -86,7 +85,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -104,7 +102,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-     Con gli strumenti del kit approfondisci il contesto e l’esperienza d’uso, **raccogliendo informazioni direttamente dai soggetti coinvolti** e sfruttandole per **rendere più efficace il tuo servizio.**
+      Con gli strumenti del kit approfondisci il contesto e l’esperienza d’uso, **raccogliendo informazioni direttamente dai soggetti coinvolti** e sfruttandole per **rendere più efficace il tuo servizio.**
     img: /images/risorse-per-progettare/icons/kit_interviste.svg #I
     alt: "Attivare dialoghi con le persone" #C
 
@@ -135,7 +133,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -158,7 +156,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Ricerca utente,Interviste utente,Analisi del contesto]
+      tags: [Ricerca utente, Interviste utente, Analisi del contesto]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -184,8 +182,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -196,7 +193,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
@@ -214,17 +210,17 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come pianificare e strutturare le interviste sulla base degli obiettivi di perseguire durante la ricerca, predisporre il protocollo da adottare e rielaborare i dati emersi per ottenere una sintesi razionale dei risultati.
           ctas:
-          - label: "Vai all'argomento Interviste" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/interviste.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Vai all'argomento Interviste" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/interviste.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -244,7 +240,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: Pianifica le interviste #C
         fullHeight: true

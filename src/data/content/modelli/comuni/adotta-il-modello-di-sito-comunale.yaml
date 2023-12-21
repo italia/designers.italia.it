@@ -80,7 +80,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -129,7 +128,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design/" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -152,7 +151,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Progettazione contenuti,Modelli di sito,Adozione modelli]
+      tags:
+        [
+          Architettura informazione,
+          Progettazione contenuti,
+          Modelli di sito,
+          Adozione modelli,
+        ]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -180,8 +185,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -192,7 +196,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -206,18 +209,18 @@ components:
 
             L’adozione del modello permette di aderire più facilmente alle migliori pratiche di progettazione, fornendo allo stesso tempo ai cittadini un’**esperienza coerente tra le varie amministrazioni**.
           ctas:
-          - label: Naviga un esempio di sito #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://comuni.designers.italia.it #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-              
+            - label: Naviga un esempio di sito #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://comuni.designers.italia.it #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
@@ -231,17 +234,17 @@ components:
             - i temi per i CMS WordPress e Drupal;
             - una serie di guide pratiche a supporto.
           ctas:
-          - label: Scopri come usare le risorse #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Scopri come usare le risorse #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -254,18 +257,17 @@ components:
 
             Gli sviluppatori possono valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità con l’App di valutazione dell’adesione al modello Comuni.
           ctas:
-          - label: Vai ai criteri di conformità #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+            - label: Vai ai criteri di conformità #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -280,7 +282,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "1. Comprendi lo stato dell’arte" #C
         imgRatio: 16x9
@@ -299,8 +300,8 @@ components:
         imgRatio: 16x9
         fullHeight: true
         rounded: true
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "definisci-architettura-e-contenuti/" #M
         text: | #C
           Imposta la struttura informativa del sito comunale e organizza la migrazione dei contenuti
@@ -312,8 +313,8 @@ components:
         imgRatio: 16x9
         rounded: true
         fullHeight: true
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "realizza-l-interfaccia-del-sito-comunale/" #M
         text: | #C
           Assembla l’interfaccia web del sito comunale con le librerie dei componenti, i template HTML o i temi per CMS
@@ -325,8 +326,8 @@ components:
         imgRatio: 16x9
         rounded: true
         fullHeight: true
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "valuta-l-adesione-al-modello-di-sito-comunale/" #M
         text: | #C
           Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento
@@ -336,9 +337,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-
-
+  sectionsEditorial2:
     # —
     # EDITORIAL #C #I
     # —
@@ -349,7 +348,6 @@ components:
       text: | #C
         Scopri i canali dove confrontarti sulle risorse del modello
       components:
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/ItForum.svg #I
@@ -359,17 +357,17 @@ components:
           text: |
             **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
-          - label: Vai su Forum Italia #C
-            url: https://forum.italia.it/c/design/modello-comuni/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Forum Italia #C
+              url: https://forum.italia.it/c/design/modello-comuni/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -380,17 +378,17 @@ components:
           text: |
             **Dialoga e collabora in tempo reale** con i designer e i maintainer del modello: iscriviti allo Slack Developers Italia e cerca il canale #design-modello-comuni
           ctas:
-          - label: Vai su Slack #C
-            url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Slack #C
+              url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -401,16 +399,14 @@ components:
           text: |
             **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
-          - label: Vai su GitHub #C
-            url: https://github.com/italia/  #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-
+            - label: Vai su GitHub #C
+              url: https://github.com/italia/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

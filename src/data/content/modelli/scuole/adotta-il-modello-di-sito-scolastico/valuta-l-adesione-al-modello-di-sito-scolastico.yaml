@@ -87,7 +87,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -99,14 +98,14 @@ components:
       label: Attività del modello #C
       addonClasses: mt-3 text-uppercase
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
- # img: /images/400x300.png #I
- # alt: descrizione immagine #C
+    #Lorem **ipsum**
+    # img: /images/400x300.png #I
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -133,17 +132,17 @@ components:
             label: "Adotta il modello di sito scolastico" #C
             url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -166,14 +165,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Adozione modelli,Modelli di sito]
+      tags: [Adozione modelli, Modelli di sito]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: "L'App di valutazione" #C
       menu: false
       centered: true
@@ -181,7 +178,6 @@ components:
       #text: | #C
 
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -204,7 +200,7 @@ components:
         headingLevel: 3
         listItems:
           - label: "Documentazione tecnica dell'App di valutazione" #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: "La guida all’installazione, all’uso e ai requisiti tecnici per il corretto funzionamento dell’App di valutazione dell’adesione ai modelli" #C
             url: https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/ #M
@@ -216,7 +212,7 @@ components:
                 blank: true
 
           - label: "File di installazione dell’App di valutazione" #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: "Il repository GitHub con i file di installazione dell’App di valutazione per MacOS, Windows e Linux" #C
             url: https://github.com/italia/pa-website-validator/releases #M
@@ -226,7 +222,3 @@ components:
                 url: https://github.com/italia/pa-website-validator/releases #M
                 ariaLabel: "Repository GitHub: File di installazione dell’App di valutazione (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-
-
-
-

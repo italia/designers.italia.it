@@ -67,7 +67,6 @@ seo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -76,8 +75,8 @@ components:
     title: Linee guida accessibilità #C
     subtitle: La norma a cui riferirti per favorire e semplificare l'accesso di tutte le persone, senza discriminazioni, agli strumenti informatici #C
     tag:
-        label: Norme #C
-        addonClasses: mt-3 text-uppercase
+      label: Norme #C
+      addonClasses: mt-3 text-uppercase
     pretext:
       icon:
         icon: sprites.svg#it-help-circle
@@ -99,7 +98,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Accessibilità,Linee guida,Normativa]
+      tags: [Accessibilità, Linee guida, Normativa]
 
     #  # KANGAROO: CHILDREN SHORTCUTS
     #  dropdown:
@@ -127,7 +126,6 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial:
-
     # —
     # IMG FULL COVER
     # —
@@ -151,7 +149,6 @@ components:
       text: | #C
         Le Linee guida accessibilità garantiscono servizi digitali pienamente fruibili da tutte le persone
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: "Pubblico è accessibile" #C
@@ -172,30 +169,25 @@ components:
              - la **metodologia di monitoraggio della conformità** degli strumenti informatici alle prescrizioni in materia di accessibilità;
              - le circostanze che possono determinare un **onere sproporzionato** da parte del soggetto erogatore.
 
-
           #### Leggi le Linee guida su Docs Italia
           ctas:
-          - label: Vai alle Linee guida accessibilità #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/AGID/documenti-in-consultazione/lg-accessibilita-docs/it/stabile/index.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alle Linee guida accessibilità #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/AGID/documenti-in-consultazione/lg-accessibilita-docs/it/stabile/index.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
+        # # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
+        # # HEADING STARD WITH H4 JUST IN CASE
+        # - name: TextImageCta
+        #   text: |
+        #     #### Titoletto interno h4
+        #     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 
-       # # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-       # # HEADING STARD WITH H4 JUST IN CASE
-       # - name: TextImageCta
-       #   text: |
-       #     #### Titoletto interno h4
-       #     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-       #     Lorem ipsum.
-
-
-
+        #     Lorem ipsum.

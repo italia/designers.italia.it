@@ -79,7 +79,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -117,17 +116,17 @@ components:
             label: Scuole #C
             url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -150,7 +149,8 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Progettazione contenuti,Modelli di sito]
+      tags:
+        [Architettura informazione, Progettazione contenuti, Modelli di sito]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -178,8 +178,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -190,7 +189,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: A cosa serve #C
@@ -214,17 +212,17 @@ components:
             - i temi per i CMS WordPress;
             - una serie di guide pratiche a supporto.
           ctas:
-          - label: Scopri come usare le risorse #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Scopri come usare le risorse #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/risorse.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -237,18 +235,17 @@ components:
 
             Gli sviluppatori possono valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità con l’App di valutazione dell’adesione al modello Comuni.
           ctas:
-          - label: Vai ai criteri di conformità #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+            - label: Vai ai criteri di conformità #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/versione-corrente/conformita-modello-scuola.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -263,12 +260,11 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "1. Comprendi lo stato dell’arte" #C
         imgRatio: 16x9
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "comprendi-lo-stato-dell-arte/" #M
         fullHeight: true
         rounded: true
@@ -280,8 +276,8 @@ components:
       # CARD CHILDREN ACTION
       - title: 2. Definisci architettura e contenuti #C
         imgRatio: 16x9
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "definisci-architettura-e-contenuti/" #M
         fullHeight: true
         rounded: true
@@ -293,8 +289,8 @@ components:
       # CARD CHILDREN ACTION
       - title: "3. Realizza l’interfaccia" #C
         imgRatio: 16x9
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "realizza-l-interfaccia-del-sito-scolastico/" #M
         fullHeight: true
         rounded: true
@@ -306,8 +302,8 @@ components:
       # CARD CHILDREN ACTION
       - title: "4. Valuta l’adesione al modello" #C
         imgRatio: 16x9
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
+        # iconImg: /images/kit-analisi-contesto.svg #I
+        # iconImgAlt: Alt lorem ipsum #C
         url: "valuta-l-adesione-al-modello-di-sito-scolastico/" #M
         fullHeight: true
         rounded: true
@@ -319,9 +315,8 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-
-       # —
+  sectionsEditorial2:
+    # —
     # EDITORIAL #C #I
     # —
     - menu: false
@@ -331,7 +326,6 @@ components:
       text: | #C
         Scopri i canali dove confrontarti sulle risorse del modello
       components:
-
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/ItForum.svg #I
@@ -341,17 +335,17 @@ components:
           text: |
             **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
           ctas:
-          - label: Vai su Forum Italia #C
-            url: https://forum.italia.it/c/design/modello-scuole/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Forum Italia #C
+              url: https://forum.italia.it/c/design/modello-scuole/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -362,17 +356,17 @@ components:
           text: |
             **Dialoga e collabora in tempo reale** con i designer e i maintainer del modello: iscriviti allo Slack Developers Italia e cerca il canale #design-siti-scuole
           ctas:
-          - label: Vai su Slack #C
-            url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai su Slack #C
+              url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -383,20 +377,14 @@ components:
           text: |
             **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
           ctas:
-          - label: Vai su GitHub #C
-            url: https://github.com/italia/  #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-
-
-
-
-
+            - label: Vai su GitHub #C
+              url: https://github.com/italia/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

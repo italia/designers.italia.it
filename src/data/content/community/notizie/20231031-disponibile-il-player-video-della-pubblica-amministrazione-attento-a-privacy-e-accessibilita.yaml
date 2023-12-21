@@ -33,8 +33,8 @@ components:
     title: "Disponibile il player video della Pubblica Amministrazione attento a privacy e accessibilità"
     subtitle: "Il design system del Paese si arricchisce di un importante componente già in uso nel nuovo archivio media di Designers Italia"
     tag:
-        label: Notizia
-        addonClasses: mt-3 text-uppercase
+      label: Notizia
+      addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
@@ -53,9 +53,15 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, Accessibilità]
+      tags:
+        [
+          Design system,
+          Progettazione interfaccia,
+          Sviluppo interfaccia,
+          Accessibilità,
+        ]
       personalInfo:
-         items:
+        items:
           - title: Tempo di lettura
             icon:
               icon: "sprites.svg#it-clock"
@@ -72,11 +78,11 @@ components:
             label: 31 ottobre 2023
 
   imageIcons:
-   image: /images/community/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita-1920x923.png
-   alt: ""
-   background: null
+    image: /images/community/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita-1920x923.png
+    alt: ""
+    background: null
 
-  sectionsEditorial :
+  sectionsEditorial:
     - menu: false
       centered: true
       # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
@@ -98,33 +104,28 @@ components:
 
         - name: TextImageCta
           title: Inizia ad utilizzarlo
-          text: | 
-            Il componente [“Video player”](/design-system/componenti/video-player/) è già disponibile per tutta la PA come parte del framework di sviluppo [Bootstrap Italia](https://italia.github.io/bootstrap-italia/), e puoi usarlo in fase di design e prototipazione ricorrendo al componente incluso nell’ultima versione di [UI Kit Italia.](https://www.figma.com/community/file/1105848677422572920) 
+          text: |
+            Il componente [“Video player”](/design-system/componenti/video-player/) è già disponibile per tutta la PA come parte del framework di sviluppo [Bootstrap Italia](https://italia.github.io/bootstrap-italia/), e puoi usarlo in fase di design e prototipazione ricorrendo al componente incluso nell’ultima versione di [UI Kit Italia.](https://www.figma.com/community/file/1105848677422572920)
           ctas:
-          - label: Vai alla documentazione
-            url: "/design-system/componenti/video-player/"
-            icon:
-              icon: sprites.svg#it-arrow-right
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
+            - label: Vai alla documentazione
+              url: "/design-system/componenti/video-player/"
+              icon:
+                icon: sprites.svg#it-arrow-right
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2
 
         - name: TextImageCta
           title: Provalo nella sezione "Media"
           text: |
-            Prova il video player come utente qui sul sito Designers Italia, nella nuova **sezione “Media”** che raccoglie i video di eventi, webinar, community call e lab, oltre a tutorial e podcast. Puoi scoprire il nuovo meccanismo di gestione del consenso nella [Cookie policy](/privacy-policy/#gestione-cookie). Quando apri un video dell’archivio ed esprimi il consenso per tutti i video del sito, puoi revocarlo tornando alla cookie policy attraverso il link “Gestione cookie” presente a fondo pagina o attraverso l’icona privacy (lucchetto) nello stesso player.   
+            Prova il video player come utente qui sul sito Designers Italia, nella nuova **sezione “Media”** che raccoglie i video di eventi, webinar, community call e lab, oltre a tutorial e podcast. Puoi scoprire il nuovo meccanismo di gestione del consenso nella [Cookie policy](/privacy-policy/#gestione-cookie). Quando apri un video dell’archivio ed esprimi il consenso per tutti i video del sito, puoi revocarlo tornando alla cookie policy attraverso il link “Gestione cookie” presente a fondo pagina o attraverso l’icona privacy (lucchetto) nello stesso player.
           ctas:
-          - label: Scopri la sezione media
-            url: "/community/media"
-            icon:
-              icon: sprites.svg#it-video
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
-            
-
-
-
-            
+            - label: Scopri la sezione media
+              url: "/community/media"
+              icon:
+                icon: sprites.svg#it-video
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2

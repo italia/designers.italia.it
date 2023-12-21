@@ -3,7 +3,6 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .nav-sidebar {
-
   .header-image {
     width: calc(var(--spacer) * 16);
     height: auto;
@@ -18,7 +17,7 @@
             padding: 0 24px;
             color: var(--color-primary) !important;
             width: 100%;
-            border-right: 4px solid transparent!important;
+            border-right: 4px solid transparent !important;
             &.contains-active {
               border-color: var(--color-primary) !important;
             }
@@ -26,7 +25,7 @@
               text-align: left;
             }
             .icon {
-              transition: transform .3s;
+              transition: transform 0.3s;
             }
             &[aria-expanded="true"] {
               .icon {
@@ -34,7 +33,8 @@
               }
             }
           }
-          a,button {
+          a,
+          button {
             background: transparent;
             border: none;
             &.active {
@@ -76,20 +76,17 @@
 
 //Mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-
-
 }
 
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-
 }
 
 //Mobile & Tablet portrait only -------------------------------------------------------------------------
 @include media-breakpoint-down(lg) {
   .menu-column {
     z-index: $zindex-modal !important;
-    .navbar  {
+    .navbar {
       border-top: var(--hero-kangaroo-zone-border-top);
     }
   }
@@ -97,7 +94,6 @@
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-
   .menu-column {
     height: calc(100vh);
     overflow-y: auto;
@@ -121,7 +117,6 @@
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
-
 }
 
 //Desktop -----------------------------------------------------------------------------------------------

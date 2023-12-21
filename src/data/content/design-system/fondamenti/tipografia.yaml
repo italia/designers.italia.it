@@ -23,15 +23,15 @@ components:
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
-   # pretext:
-   #   icon:
-   #     icon: sprites.svg#it-info-circle
-   #     size: sm
-   #   text: In breve
-   # text: |
-   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -59,7 +59,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -82,7 +82,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Contenuti e linguaggio,Progettazione interfaccia]
+      tags: [Contenuti e linguaggio, Progettazione interfaccia]
 
   sectionsEditorial:
     # - fullColumn: true
@@ -99,7 +99,6 @@ components:
       background: null
 
       components:
-
         - name: TextImageCta
           title: Caratteri tipografici
           headingLevel: 2
@@ -111,7 +110,7 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-              Titillium Web è il nostro **carattere principale**. Disponibile in diverse varianti, è un carattere geometrico che garantisce flessibilità nel design. È raccomandato per titoli, sottotitoli, elementi interattivi e brevi paragrafi di testo.
+            Titillium Web è il nostro **carattere principale**. Disponibile in diverse varianti, è un carattere geometrico che garantisce flessibilità nel design. È raccomandato per titoli, sottotitoli, elementi interattivi e brevi paragrafi di testo.
         - name: ComponentView
           variantName: Titillium Web
           source: bsi/organizzare-i-contenuti/tipografia
@@ -121,13 +120,13 @@ components:
           accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
           accordionOpen: false
           accordionShow: true
-        
+
         - name: TextImageCta
           title: Lora
           noSpace: true
           headingLevel: 3
           text: |
-              Lora è il carattere tipografico nato espressamente per facilitare la **lettura dei testi** su dispostivi digitali. Essendo un font con le grazie (*serif*), è raccomandato per paragrafi di testo più lunghi.
+            Lora è il carattere tipografico nato espressamente per facilitare la **lettura dei testi** su dispostivi digitali. Essendo un font con le grazie (*serif*), è raccomandato per paragrafi di testo più lunghi.
         - name: ComponentView
           variantName: Lora
           source: bsi/organizzare-i-contenuti/tipografia
@@ -153,7 +152,7 @@ components:
           accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
           accordionOpen: false
           accordionShow: true
-            
+
         - name: TextImageCta
           title: Stili tipografici
           noSpace: true
@@ -166,7 +165,7 @@ components:
 
             ### Intestazioni
             La lista di tutti gli stili per creare le intestazioni di una pagina:
-        
+
         # - name: ComponentView
         #   noSpace: true
         #   variantName: Intestazioni
@@ -188,98 +187,98 @@ components:
             - text: Token
           rows:
             - cols:
-              - text: |
-                  # Intestazione 1
-                scope: row
-              - text: |
-                  font-family: Titillium Web   
-                  font-size: 40/48px   
-                  line-height: 48/56px   
-                  letter-spacing: -1   
-                  font-weight: Bold
-              - tags:
-                - label: heading-1
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: heading-1-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    # Intestazione 1
+                  scope: row
+                - text: |
+                    font-family: Titillium Web   
+                    font-size: 40/48px   
+                    line-height: 48/56px   
+                    letter-spacing: -1   
+                    font-weight: Bold
+                - tags:
+                    - label: heading-1
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: heading-1-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
             - cols:
-              - text: |
-                  ## Intestazione 2
-                scope: row
-              - text: |
-                  font-family: Titillium Web    
-                  size: 32/40px  
-                  line height: 40/48px  
-                  letter spacing: -1  
-                  weight: Bold
-              - tags:
-                - label: heading-2
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: heading-2-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    ## Intestazione 2
+                  scope: row
+                - text: |
+                    font-family: Titillium Web    
+                    size: 32/40px  
+                    line height: 40/48px  
+                    letter spacing: -1  
+                    weight: Bold
+                - tags:
+                    - label: heading-2
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: heading-2-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
             - cols:
-              - text: |
-                  ### Intestazione 3
-                scope: row
-              - text: |
-                  font-family: Titillium Web   
-                  font-size: 28/32px  
-                  line height: 32/40px   
-                  font-weight: Bold  
-              - tags:
-                - label: heading-3
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: heading-3-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    ### Intestazione 3
+                  scope: row
+                - text: |
+                    font-family: Titillium Web   
+                    font-size: 28/32px  
+                    line height: 32/40px   
+                    font-weight: Bold
+                - tags:
+                    - label: heading-3
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: heading-3-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
             - cols:
-              - text: |
-                  #### Intestazione 4
-                scope: row
-              - text: |
-                  font-family: Titillium Web  
-                  font-size: 24/32px  
-                  line-height: 32/40px   
-                  font-weight: SemiBold  
-              - tags:
-                - label: heading-4
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: heading-4-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    #### Intestazione 4
+                  scope: row
+                - text: |
+                    font-family: Titillium Web  
+                    font-size: 24/32px  
+                    line-height: 32/40px   
+                    font-weight: SemiBold
+                - tags:
+                    - label: heading-4
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: heading-4-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
             - cols:
-              - text: |
-                  ##### Intestazione 5
-                scope: row
-              - text: |
-                  font-family: Titillium Web  
-                  font-size: 20/24px  
-                  line-height: 24/32px  
-                  font-weight: SemiBold  
-              - tags:
-                - label: heading-5
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: heading-5-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    ##### Intestazione 5
+                  scope: row
+                - text: |
+                    font-family: Titillium Web  
+                    font-size: 20/24px  
+                    line-height: 24/32px  
+                    font-weight: SemiBold
+                - tags:
+                    - label: heading-5
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: heading-5-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
             - cols:
-              - text: |
-                  ###### Intestazione 6
-                scope: row
-              - text: |
-                  font-family: Titillium Web  
-                  font-size: 16/18px  
-                  line-height: 24px  
-                  font-weight: SemiBold  
-              - tags:
-                - label: heading-6
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: heading-6-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    ###### Intestazione 6
+                  scope: row
+                - text: |
+                    font-family: Titillium Web  
+                    font-size: 16/18px  
+                    line-height: 24px  
+                    font-weight: SemiBold
+                - tags:
+                    - label: heading-6
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: heading-6-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
 
         - name: TextImageCta
           title: Corpo del testo
           headingLevel: 3
           noSpace: true
           text: |
-                La lista di tutti gli stili per il corpo del testo di una pagina:
+            La lista di tutti gli stili per il corpo del testo di una pagina:
 
         - name: Table
           title: null
@@ -291,47 +290,47 @@ components:
             - text: Nome token
           rows:
             - cols:
-              - text: |
-                  Lead paragraph
-                scope: row
-              - text: |
-                  type: Titillium Web  
-                  size: 20/24px  
-                  line height: 32px  
-                  weight: Regular  
-              - tags:
-                - label: lead
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: lead-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    Lead paragraph
+                  scope: row
+                - text: |
+                    type: Titillium Web  
+                    size: 20/24px  
+                    line height: 32px  
+                    weight: Regular
+                - tags:
+                    - label: lead
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: lead-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
             - cols:
-              - text: |
-                  Body text sans
-                scope: row
-              - text: |
-                  font-family: Titillium Web  
-                  font-size: 12/18px  
-                  line-height: 24px  
-                  font-weight: Regular  
-              - tags:
-                - label: body-sans
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: body-sans-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    Body text sans
+                  scope: row
+                - text: |
+                    font-family: Titillium Web  
+                    font-size: 12/18px  
+                    line-height: 24px  
+                    font-weight: Regular
+                - tags:
+                    - label: body-sans
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: body-sans-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
             - cols:
-              - text: |
-                  Body text serif
-                scope: row
-              - text: |
-                  font-family: Lora  
-                  font-size: 16/18px  
-                  line-height: 24px  
-                  font-weight: Regular  
-              - tags:
-                - label: body-serif
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: body-serif-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+                - text: |
+                    Body text serif
+                  scope: row
+                - text: |
+                    font-family: Lora  
+                    font-size: 16/18px  
+                    line-height: 24px  
+                    font-weight: Regular
+                - tags:
+                    - label: body-serif
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: body-serif-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
 
         - name: TextImageCta
           title: Etichette e didascalie
@@ -350,31 +349,31 @@ components:
             - text: Nome token
           rows:
             - cols:
-              - text: |
-                  Caption
-                scope: row
-              - text: |
-                  font-family: Titillium Web  
-                  font-size: 14px  
-                  line-height: 16px  
-                  font-weight: Regular
-              - tags:
-                - label: caption
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace font-monospace text-lowercase
+                - text: |
+                    Caption
+                  scope: row
+                - text: |
+                    font-family: Titillium Web  
+                    font-size: 14px  
+                    line-height: 16px  
+                    font-weight: Regular
+                - tags:
+                    - label: caption
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace font-monospace text-lowercase
             - cols:
-              - text: |
-                  Label
-                scope: row
-              - text: |
-                  font-family: Titillium Web  
-                  font-size: 16/18px  
-                  line-height: 24px  
-                  font-weight: SemiBold  
-              - tags:
-                - label: label
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
-                - label: label-lg
-                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase           
+                - text: |
+                    Label
+                  scope: row
+                - text: |
+                    font-family: Titillium Web  
+                    font-size: 16/18px  
+                    line-height: 24px  
+                    font-weight: SemiBold
+                - tags:
+                    - label: label
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                    - label: label-lg
+                      addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
 
         - name: TextImageCta
           title: Consigli d'uso
@@ -392,7 +391,7 @@ components:
 
             ### Lunghezza dei paragrafi
             Per una migliore leggibilità dei contenuti ti consigliamo di mantenere i paragrafi di testo entro una lunghezza ragionevole, evitando blocchi di testo troppo lunghi. 
-            
+
             Raccomandiamo ad esempio una lunghezza massima di **75 caratteri per riga**.
 
             ### Ritmo verticale
@@ -405,4 +404,4 @@ components:
             ### Gerarchia visiva
             La gerarchia tipografica è essenziale per guidare l'utente attraverso il contenuto e creare una struttura visiva chiara.
 
-            Ti consigliamo di **non superare quattro livelli di intestazione** (H1, H2, H3 e H4) per pagina, facendo attenzione a definire l’importanza di ciascuna sezione.       
+            Ti consigliamo di **non superare quattro livelli di intestazione** (H1, H2, H3 e H4) per pagina, facendo attenzione a definire l’importanza di ciascuna sezione.

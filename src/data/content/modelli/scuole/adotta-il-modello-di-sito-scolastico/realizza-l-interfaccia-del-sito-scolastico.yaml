@@ -87,7 +87,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -99,14 +98,14 @@ components:
       label: Attività del modello #C
       addonClasses: mt-3 text-uppercase
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
- # img: /images/400x300.png #I
- # alt: descrizione immagine #C
+    #Lorem **ipsum**
+    # img: /images/400x300.png #I
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -133,17 +132,17 @@ components:
             label: Adotta il modello di sito scolastico #C
             url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -166,14 +165,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione interfaccia,Sviluppo interfaccia,Adozione modelli]
+      tags: [Progettazione interfaccia, Sviluppo interfaccia, Adozione modelli]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: I template HTML #C
       menu: false
       centered: true
@@ -181,7 +178,6 @@ components:
       #text: | #C
 
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -201,7 +197,6 @@ components:
       #text: | #C
 
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -222,9 +217,9 @@ components:
         headingLevel: 3
         listItems:
           - label: Anteprime dei template HTML del sito scolastico #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia  #C
+            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia #C
             url: https://italia.github.io/design-scuole-pagine-statiche/ #M
             blank: true
             actions:
@@ -234,9 +229,9 @@ components:
                 blank: true
 
           - label: Sorgenti dei template HTML del sito scolastico #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il repository GitHub con il codice sorgente  #C
+            text: Il repository GitHub con il codice sorgente #C
             url: https://github.com/italia/design-scuole-pagine-statiche #M
             blank: true
             actions:
@@ -246,7 +241,7 @@ components:
                 blank: true
 
           - label: Tema WordPress per il sito scolastico #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: "Il repository GitHub con il file e le istruzioni per l’installazione del tema" #C
             url: https://github.com/italia/design-scuole-wordpress-theme #M
@@ -258,7 +253,7 @@ components:
                 blank: true
 
           - label: "Guida all'uso del tema WordPress per il sito scolastico" #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Le istruzioni pratiche per installare e usare il tema WordPress per creare il sito scolastico #C
             url: https://docs.italia.it/italia/designers-italia/design-scuole-wordpress-theme-docs/ #M
@@ -269,13 +264,10 @@ components:
                 ariaLabel: "Guida all'uso del tema WordPress per il sito scolastico (si apre in una nuova finestra)" #C
                 blank: true
 
-
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-
+  sectionsEditorial2:
     # —
     # EDITORIAL #C #I
     # —
@@ -287,7 +279,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C

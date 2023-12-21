@@ -87,7 +87,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -144,7 +143,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -167,24 +166,20 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Interfaccia utente,Prototipazione]
-
+      tags: [Interfaccia utente, Prototipazione]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: I framework per lo sviluppo #C
       menu: false
       centered: true
       background: null
       text: | #C
-         I framework dedicati allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
+        I framework dedicati allo sviluppo di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e consistenti**.
 
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
@@ -241,4 +236,3 @@ components:
                 url: https://github.com/italia/design-react-kit/ #M
                 ariaLabel: "Repository GitHub: React Kit (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-

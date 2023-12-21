@@ -34,8 +34,8 @@ components:
     title: "Il design system del Paese per realizzare siti e servizi dei Comuni. Cos'è e come si usa"
     subtitle: Un incontro per scoprire le risorse dedicate alla progettazione e allo sviluppo front-end.
     tag:
-        label: Webinar
-        addonClasses: mt-3 text-uppercase
+      label: Webinar
+      addonClasses: mt-3 text-uppercase
 
     kangaroo:
       id: kangarooExample
@@ -47,9 +47,15 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione interfaccia, Sviluppo interfaccia, Design system, Adozione modelli]
+      tags:
+        [
+          Progettazione interfaccia,
+          Sviluppo interfaccia,
+          Design system,
+          Adozione modelli,
+        ]
       eventInfo:
-         items:
+        items:
           - title: Partecipazione
             icon:
               icon: "sprites.svg#it-user"
@@ -72,34 +78,32 @@ components:
   #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
   #   alt: Descrizione immagine grande
 
-  sectionsEditorial :
+  sectionsEditorial:
     - menu: false
       centered: true
       # title: Titolo area h2
       # text: Sottotitolo area h2
       id: corpoEvento
       components:
-
         # - name: TextImageCta
         #   text: |
         #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
 
-
         - name: TextImageCta
           # title: Titoletto interno h3
           text: |
-             Parte il ciclo di webinar, organizzato in collaborazione con ANCI, “Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica”. Il primo incontro, dedicato ai Comuni che stanno implementando la Misura 1.4.1 del PNRR, sarà focalizzato sul design system del Paese, l’insieme delle indicazioni e delle risorse utili a realizzare le interfacce di siti e servizi pubblici di qualità, efficienti e accessibili. 
-             
-             Gli esperti di Designers Italia illustreranno le risorse disponibili per la realizzazione delle interfacce del sito web comunale e dei relativi servizi. 
+            Parte il ciclo di webinar, organizzato in collaborazione con ANCI, “Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica”. Il primo incontro, dedicato ai Comuni che stanno implementando la Misura 1.4.1 del PNRR, sarà focalizzato sul design system del Paese, l’insieme delle indicazioni e delle risorse utili a realizzare le interfacce di siti e servizi pubblici di qualità, efficienti e accessibili. 
+
+            Gli esperti di Designers Italia illustreranno le risorse disponibili per la realizzazione delle interfacce del sito web comunale e dei relativi servizi.
 
           ctas:
-          - label: Registrati
-            url: https://form.jotform.com/233062663672356
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true
-            icon:
-              icon: sprites.svg#it-external-link
-              color: primary
-              align: middle
-              hidden: true
-              size: sm ms-2
+            - label: Registrati
+              url: https://form.jotform.com/233062663672356
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true
+              icon:
+                icon: sprites.svg#it-external-link
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2

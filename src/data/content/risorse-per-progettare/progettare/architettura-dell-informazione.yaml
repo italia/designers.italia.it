@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -104,7 +103,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-     Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare un’architettura dell'informazione efficace, per garantire all’utente di **raggiungere i propri obiettivi** in maniera immediata, rapida e intuitiva.
+      Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare un’architettura dell'informazione efficace, per garantire all’utente di **raggiungere i propri obiettivi** in maniera immediata, rapida e intuitiva.
     img: /images/risorse-per-progettare/icons/kit_architettura.svg #I
     alt: "" #C
 
@@ -135,7 +134,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -182,8 +181,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -194,7 +192,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
@@ -210,17 +207,17 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi indicazioni pratiche relative alla progettazione di touchpoint e servizi digitali dal punto di vista delle tipologie di contenuti utilizzati (content type), dei flussi di interazione con l’utente e della modellazione dei contenuti (per esempio usando ontologie e vocabolari controllati).
           ctas:
-          - label: "Vai all'argomento Architettura dell'informazione" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: "Vai all'argomento Architettura dell'informazione" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -240,7 +237,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "Individua i contenuti" #C
         fullHeight: true

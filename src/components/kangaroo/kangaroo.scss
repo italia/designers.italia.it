@@ -1,19 +1,19 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .kangaroo {
-	.title-wrapper {
+  .title-wrapper {
     h2 {
       font-size: var(--kangaroo-title-font-size);
       font-weight: 600;
       margin-bottom: 0;
     }
-	}
-	.dropdwon-zone {
-		.btn {
-			font-size: var(--kangaroo-title-font-size);
-			text-transform: uppercase;
-		}
-	}
+  }
+  .dropdwon-zone {
+    .btn {
+      font-size: var(--kangaroo-title-font-size);
+      text-transform: uppercase;
+    }
+  }
   .nav-position {
     .container-xxl {
       padding-left: 0;
@@ -29,28 +29,24 @@
 }
 
 .bg-primary {
-	.kangaroo {
-		.chip.chip-primary {
-			border-color: var(--kangaroo-negative-element-color);
-			&:active {
-				border-color: var(--kangaroo-negative-element-color);
-			}
+  .kangaroo {
+    .chip.chip-primary {
+      border-color: var(--kangaroo-negative-element-color);
+      &:active {
+        border-color: var(--kangaroo-negative-element-color);
+      }
       &:hover {
         background-color: var(--kangaroo-tags-hover-color);
       }
-			.chip-label {
-				color: var(--kangaroo-negative-element-color)
-			}
-		}
-		.btn-dropdown {
-			color: var(--kangaroo-negative-element-color)
-		}
-	}
+      .chip-label {
+        color: var(--kangaroo-negative-element-color);
+      }
+    }
+    .btn-dropdown {
+      color: var(--kangaroo-negative-element-color);
+    }
+  }
 }
-
-
-
-
 
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
@@ -59,11 +55,9 @@
   //     // width:100%
   //   }
   // }
-
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
@@ -82,8 +76,7 @@
       // text-align: right;
       // width:33.33%
       .dropdown-menu {
-        width:14rem;
-
+        width: 14rem;
       }
     }
   }
@@ -95,18 +88,14 @@
       }
     }
   }
-
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
-  
-
 }
 
 //Desktop -----------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xxl) {
-
 }
 
 //Hover states ------------------------------------------------------------------------------------------

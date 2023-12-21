@@ -24,7 +24,7 @@ components:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
 
-     # KANGAROO: METADATA
+      # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -52,7 +52,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -75,10 +75,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione interfaccia,Sviluppo interfaccia]
+      tags: [Progettazione interfaccia, Sviluppo interfaccia]
 
   sectionsEditorial:
-
     - full: true
       noSpace: false
       paddingLeft: true
@@ -86,49 +85,48 @@ components:
       text: null
       background: null
       components:
-
         - name: TextImageCta
           title: Anatomia
           headingLevel: 2
           noSpace: true
           text: |
-              ![Gli elementi della griglia](/images/design-system/fondamenti/grid-anatomy.png)
+            ![Gli elementi della griglia](/images/design-system/fondamenti/grid-anatomy.png)
 
-              Gli elementi di una griglia sono quattro:
+            Gli elementi di una griglia sono quattro:
 
-              1. **margine**: è lo spazio che delimita il confine del contenitore della griglia, sia sul lato destro che sinistro; 
-              2. **intercolonna** (gutter): è lo spazio tra due colonne;
-              3. **colonna** (column): è la singola colonna delle grigia;
-              4. **contenitore** (container): è lo spazio totale occupato da margini, colonne e intercolonne.
+            1. **margine**: è lo spazio che delimita il confine del contenitore della griglia, sia sul lato destro che sinistro; 
+            2. **intercolonna** (gutter): è lo spazio tra due colonne;
+            3. **colonna** (column): è la singola colonna delle grigia;
+            4. **contenitore** (container): è lo spazio totale occupato da margini, colonne e intercolonne.
 
-              ### Margine
-              La dimensione dei margini è fissa ed è pari a `12px`, misura che su dispositivi mobile corrisponde alla metà dell'intercolonna. 
-             
-              ### Intercolonne
+            ### Margine
+            La dimensione dei margini è fissa ed è pari a `12px`, misura che su dispositivi mobile corrisponde alla metà dell'intercolonna. 
 
-              La dimensione delle intercolonne è espressa in valori fissi che cambiano a seconda della dimensione della viewport. Usiamo i [token](/design-system/fondamenti/design-tokens/) di griglia per definire questi valori.
+            ### Intercolonne
 
-              L’opzione **intercolonna variabile** cambia questi valori in modo progressivo, in base ai breakpoint.
+            La dimensione delle intercolonne è espressa in valori fissi che cambiano a seconda della dimensione della viewport. Usiamo i [token](/design-system/fondamenti/design-tokens/) di griglia per definire questi valori.
 
-              ### Colonne
+            L’opzione **intercolonna variabile** cambia questi valori in modo progressivo, in base ai breakpoint.
 
-              Le colonne definiscono l’area che può ospitare contenuti. La larghezza è definita in percentuale e si ridimensiona in base ai dispositivi. 
-              
-              È buona prassi che sia il contenuto a determinare il numero di colonne da mostrare per ciascuna dimensione della viewport.
+            ### Colonne
 
-              ### Contenitore
+            Le colonne definiscono l’area che può ospitare contenuti. La larghezza è definita in percentuale e si ridimensiona in base ai dispositivi. 
 
-              Il contenitore può essere di tre tipi:
-              
-              - **contenitore base**: prevede una dimensione fluida su dispositivi mobile e una larghezza fissa ad ogni specifico breakpoint;
-              - **contenitore responsive**: prevede una dimensione fluida fino al raggiungimento di uno specifico breakpoint; 
-              - **contenitore fluido**: prevede sempre una dimensione fluida.
+            È buona prassi che sia il contenuto a determinare il numero di colonne da mostrare per ciascuna dimensione della viewport.
 
-              La dimensione del contenitore è dato dalla somma delle spazio di margini, colonne e intercolonne.
+            ### Contenitore
 
-              Per capire meglio il funzionamento [consulta la guida tecnica](https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/griglie/#come-funziona) del framework Bootstrap Italia.
+            Il contenitore può essere di tre tipi:
 
-              ### Riepilogo Opzioni
+            - **contenitore base**: prevede una dimensione fluida su dispositivi mobile e una larghezza fissa ad ogni specifico breakpoint;
+            - **contenitore responsive**: prevede una dimensione fluida fino al raggiungimento di uno specifico breakpoint; 
+            - **contenitore fluido**: prevede sempre una dimensione fluida.
+
+            La dimensione del contenitore è dato dalla somma delle spazio di margini, colonne e intercolonne.
+
+            Per capire meglio il funzionamento [consulta la guida tecnica](https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/griglie/#come-funziona) del framework Bootstrap Italia.
+
+            ### Riepilogo Opzioni
 
         - name: Table
           # title: Quale è l'ecosistema del design system
@@ -144,86 +142,86 @@ components:
             - text: XXL (da 1400px)
           rows:
             - cols:
-              - text: Contenitore base
-                scope: row
-              - text: 100%
-              - text: 540px
-              - text: 720px
-              - text: 960px
-              - text: 1176px
-              - text: 1320px
+                - text: Contenitore base
+                  scope: row
+                - text: 100%
+                - text: 540px
+                - text: 720px
+                - text: 960px
+                - text: 1176px
+                - text: 1320px
             - cols:
-              - text: Contenitore responsive (small)
-                scope: row
-              - text: 100%
-              - text: 100%
-              - text: 720px
-              - text: 960px
-              - text: 1176px
-              - text: 1320px
+                - text: Contenitore responsive (small)
+                  scope: row
+                - text: 100%
+                - text: 100%
+                - text: 720px
+                - text: 960px
+                - text: 1176px
+                - text: 1320px
             - cols:
-              - text: Contenitore responsive (medium)
-                scope: row                
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 960px
-              - text: 1176px
-              - text: 1320px
+                - text: Contenitore responsive (medium)
+                  scope: row
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 960px
+                - text: 1176px
+                - text: 1320px
             - cols:
-              - text: Contenitore responsive (large)
-                scope: row
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 1176px
-              - text: 1320px
+                - text: Contenitore responsive (large)
+                  scope: row
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 1176px
+                - text: 1320px
             - cols:
-              - text: Contenitore responsive (extra large)
-                scope: row
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 1320px
+                - text: Contenitore responsive (extra large)
+                  scope: row
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 1320px
             - cols:
-              - text: Contenitore responsive (extra extra large)
-                scope: row
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 100%
-              - text: 1320px
+                - text: Contenitore responsive (extra extra large)
+                  scope: row
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 100%
+                - text: 1320px
             - cols:
-              - text: Intercolonna
-                scope: row
-              - text: 12px
-              - text: 12px
-              - text: 24px
-              - text: 24px
-              - text: 24px
-              - text: 24px
+                - text: Intercolonna
+                  scope: row
+                - text: 12px
+                - text: 12px
+                - text: 24px
+                - text: 24px
+                - text: 24px
+                - text: 24px
             - cols:
-              - text: Intercolonna variabile
-                scope: row
-              - text: 12px
-              - text: 12px
-              - text: 20px
-              - text: 20px
-              - text: 24px
-              - text: 28px
+                - text: Intercolonna variabile
+                  scope: row
+                - text: 12px
+                - text: 12px
+                - text: 20px
+                - text: 20px
+                - text: 24px
+                - text: 28px
             - cols:
-              - text: Margine
-                scope: row
-              - text: 12px
-              - text: 12px
-              - text: 12px
-              - text: 12px
-              - text: 12px
-              - text: 12px
+                - text: Margine
+                  scope: row
+                - text: 12px
+                - text: 12px
+                - text: 12px
+                - text: 12px
+                - text: 12px
+                - text: 12px
 
         - name: TextImageCta
           title: Come usare la griglia

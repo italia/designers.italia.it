@@ -55,39 +55,38 @@ kangaroo:
         label: "4.1. Accessibilità" #C
         url: "../" #M
 #navPreFooter:
-  #navOtherPrevNext:
-   # prev:
-    #  label: Titolo sorella precedente #C
-   #   url: "#" #M
-   #   # image: /images/link-custom-icon.svg #I
-    #  blank: false
-    #  specular: false
-    #  icon:
-        # icon: "sprites.svg#it-arrow-left"
-        #size: "sm"
-        #align: "middle"
-        #color: "primary"
-        #hidden: true
-        #addonClasses: flex-shrink-0 me-3
-    #next:
-        #label: Titolo sorella successiva #C
-     #   url: "#" #M
-     #   # image: /images/link-custom-icon.svg #I
-     #   blank: false
-     #   specular: true
-      #  icon:
-        #  icon: "sprites.svg#it-arrow-right"
-        #  size: "sm"
-       #   align: "middle"
-       #   color: "primary"
-       #   hidden: true
-        #  addonClasses: flex-shrink-0 ms-3
+#navOtherPrevNext:
+# prev:
+#  label: Titolo sorella precedente #C
+#   url: "#" #M
+#   # image: /images/link-custom-icon.svg #I
+#  blank: false
+#  specular: false
+#  icon:
+# icon: "sprites.svg#it-arrow-left"
+#size: "sm"
+#align: "middle"
+#color: "primary"
+#hidden: true
+#addonClasses: flex-shrink-0 me-3
+#next:
+#label: Titolo sorella successiva #C
+#   url: "#" #M
+#   # image: /images/link-custom-icon.svg #I
+#   blank: false
+#   specular: true
+#  icon:
+#  icon: "sprites.svg#it-arrow-right"
+#  size: "sm"
+#   align: "middle"
+#   color: "primary"
+#   hidden: true
+#  addonClasses: flex-shrink-0 ms-3
 
 # ————————————————————————————————————————————
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -165,14 +164,15 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Normativa,Accessibilità,Progettazione servizi,Cultura progettuale]
+      tags:
+        [Normativa, Accessibilità, Progettazione servizi, Cultura progettuale]
 
-# ///////////////////
+  # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Scopri le risorse correlate a questa azione  #C
+    title: Scopri le risorse correlate a questa azione #C
     text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
     nospace: false
@@ -180,7 +180,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: "Accessibilità" #C
         fullHeight: false
@@ -274,7 +273,6 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2:
-
     - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
       menu: false
       centered: true
@@ -282,7 +280,6 @@ components:
       noSpace: false
       text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: "Accessibilità by design" #C
@@ -290,17 +287,17 @@ components:
           text: | #C
             Segui il principio di accessibilità by design, cioè fin dalle basi della progettazione, e il principio di accessibilità by default, cioè il principio secondo cui ogni tipo di documentazione e risorsa a supporto dovrebbe contenere i requisiti di accessibilità, per creare servizi digitali accessibili.
           ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
-            screenReaderText: "Accessibilità by design"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/accessibilita-by-design.html#accessibilita-by-design" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Argomento nel Manuale su Docs Italia #C
+              screenReaderText: "Accessibilità by design"
+              url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/accessibilita-by-design.html#accessibilita-by-design" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         # TXT BLOCK
         - name: TextImageCta
@@ -309,15 +306,15 @@ components:
           text: | #C
             Rendi i tuoi strumenti informatici accessibili e usabili per tutti e senza discriminare nessuno, compresi i siti web e le applicazioni mobili così come previsto dalle “Linee guida sull’accessibilità degli strumenti informatici”.
           ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
+            - label: Argomento nel Manuale su Docs Italia #C
 
-            screenReaderText: "Accessibilità"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/accessibilita.html#accessibilita" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+              screenReaderText: "Accessibilità"
+              url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/accessibilita.html#accessibilita" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
