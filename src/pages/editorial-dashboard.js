@@ -7,34 +7,42 @@ import Card from "../components/card/card";
 import Template from "../templates/base";
 
 function sandboxTestPage({ data: { highlightedContent } }) {
+  const cardStyles = "col-12 col-md-6 mb-3 mb-md-4 col-lg-4";
+
   return (
     <Template>
-      <section>
-        <div className="container-xxl py-5 mb-5 pt-lg-6 pb-lg-6 overflow-hidden">
+      <section
+        className="section-editorial"
+        aria-describedby="sandbox-list-title"
+      >
+        <div className="container-xxl">
           <div className="row">
-            <div className="col-12">
-              <h1> Sandbox Test Filter Query</h1>
-              <h2> Tutte le pagine filtrate per titolo </h2>
-              <p>
-                Stiamo leggendo i dati di tre notizie cercandole per il loro
-                titolo. Obiettivo generare elenchi di cards in automatico
-                partendo da titoli unici o altri dettagli unici come id, etc.
-                Per ora testando pageQuery.
-              </p>
-              <ul>
-                {highlightedContent.edges.map(({ node }) => (
-                  <li key={node.seo.title} className="py-3">
-                    <Card
-                      img={node.seo.image}
-                      title={node.components.hero.title}
-                      url={node.seo.pathname}
-                      description={node.seo.description}
-                    />
-                    {/* <h3><Link to={node.seo.pathname}>{node.components.hero.title}</Link></h3> */}
-                    {/* <p>{node.seo.description}</p> */}
-                  </li>
-                ))}
-              </ul>
+            <div className="col-12 g-0">
+              <div className="px-3 px-lg-0 px-lg-5">
+                <h2
+                  className="border-bottom pb-4 mb-4 mb-md-5"
+                  id="sandbox-list-title"
+                >
+                  Sandbox loading dinamic cards
+                </h2>
+                <div className="row pb-4">
+                  {highlightedContent.edges.map(({ node }) => (
+                    <div key={node.seo.title} className={cardStyles}>
+                      <Card
+                        img={node.components.imageIcons.image}
+                        title={node.components.hero.title}
+                        url={node.seo.pathname}
+                        description={node.seo.description}
+                        fullHeight
+                        // tag={node.components.hero.tag}
+                        tags={node.components.hero.kangaroo.tags}
+                      />
+                      {/* <h3><Link to={node.seo.pathname}>{node.components.hero.title}</Link></h3> */}
+                      {/* <p>{node.seo.description}</p> */}
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -54,7 +62,16 @@ export const query = graphql`
     highlightedContent: allContent(
       filter: {
         components: {
-          hero: { title: { in: ["Il 2023 di Designers Italia "] } }
+          hero: {
+            title: {
+              in: [
+                "Il 2023 di Designers Italia "
+                "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica"
+                "Prendi parte anche tu all’evoluzione del design system del Paese"
+                "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto"
+              ]
+            }
+          }
         }
       }
       sort: { seo: { pathname: DESC } }
@@ -62,15 +79,26 @@ export const query = graphql`
       totalCount
       edges {
         node {
-          components {
-            hero {
-              title
-            }
-          }
           seo {
             description
             pathname
             image
+          }
+          components {
+            hero {
+              title
+              tag {
+                label
+                addonClasses
+              }
+              kangaroo {
+                tags
+              }
+            }
+            imageIcons {
+              image
+              alt
+            }
           }
         }
       }
