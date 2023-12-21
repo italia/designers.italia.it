@@ -37,15 +37,15 @@ components:
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
-   # pretext:
-   #   icon:
-   #     icon: sprites.svg#it-info-circle
-   #     size: sm
-   #   text: In breve
-   # text: |
-   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -73,7 +73,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -96,7 +96,14 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione servizi,Accessibilità,Cultura progettuale,Progettazione interfaccia,Sviluppo interfaccia]
+      tags:
+        [
+          Progettazione servizi,
+          Accessibilità,
+          Cultura progettuale,
+          Progettazione interfaccia,
+          Sviluppo interfaccia,
+        ]
 
   sectionsEditorial:
     # - fullColumn: true
@@ -113,7 +120,6 @@ components:
       background: null
 
       components:
-
         - name: TextImageCta
           title: "Per rendere coerente l'esperienza digitale del cittadino"
           noSpace: true
@@ -167,7 +173,7 @@ components:
       paddingLeft: true
       title: Manteniamo gli asset del Paese, insieme
       #text: |
-            #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
+      #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
       components:
         - name: TextImageCta
           # title: Manteniamo gli asset del Paese, insieme
@@ -188,8 +194,3 @@ components:
             Ad oggi, circa 2300 amministrazioni pubbliche richiamano almeno uno dei framework di sviluppo.
 
             Lavoriamo per accrescere la consapevolezza del valore di un'esperienza coerente per il cittadino presso tutti i 22.000 enti pubblici e aiutiamo a implementarla tramite .italia - il design system del Paese.
-
-
-
-
-

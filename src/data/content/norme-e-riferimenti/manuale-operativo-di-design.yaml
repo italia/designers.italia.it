@@ -70,7 +70,6 @@ seo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -79,8 +78,8 @@ components:
     title: Manuale operativo di design #C
     subtitle: Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento #C
     tag:
-        label: Riferimenti  #C
-        addonClasses: mt-3 text-uppercase
+      label: Riferimenti #C
+      addonClasses: mt-3 text-uppercase
     pretext:
       icon:
         icon: sprites.svg#it-help-circle
@@ -102,7 +101,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Normativa,Manuale operativo,Linee guida]
+      tags: [Normativa, Manuale operativo, Linee guida]
 
     #  # KANGAROO: CHILDREN SHORTCUTS
     #  dropdown:
@@ -130,8 +129,7 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial:
-
-   # —
+    # —
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
@@ -139,23 +137,23 @@ components:
       full: true
       noSpace: true
       components:
-          # —
-          # IMAGE COVER WITH ICONS
-          # —
+        # —
+        # IMAGE COVER WITH ICONS
+        # —
         - name: ImageIcons #I
           image: /images/norme-e-riferimenti/manuale-operativo-di-design.jpg #I
           alt: "Progettare è multi-disciplinare per definizione" #C
           images:
-          - img: /images/norme-e-riferimenti/manuale-0.svg
-            alt: "" #C
-          - img: /images/norme-e-riferimenti/manuale-1.svg
-            alt: "" #C
-          - img: /images/norme-e-riferimenti/manuale-2.svg
-            alt: "" #C
-          - img: /images/norme-e-riferimenti/manuale-3.svg
-            alt: "" #C
-          - img: /images/norme-e-riferimenti/manuale-4.svg
-            alt: "" #C
+            - img: /images/norme-e-riferimenti/manuale-0.svg
+              alt: "" #C
+            - img: /images/norme-e-riferimenti/manuale-1.svg
+              alt: "" #C
+            - img: /images/norme-e-riferimenti/manuale-2.svg
+              alt: "" #C
+            - img: /images/norme-e-riferimenti/manuale-3.svg
+              alt: "" #C
+            - img: /images/norme-e-riferimenti/manuale-4.svg
+              alt: "" #C
 
     # —
     # EDITORIAL #C #I
@@ -167,7 +165,6 @@ components:
       text: | #C
         Il Manuale operativo di design ti indica un approccio chiaro, un solido processo e tutte le risorse per progettare secondo la normativa
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: "L’approccio a una progettazione virtuosa" #C
@@ -189,8 +186,7 @@ components:
             - **Iterativo**
             Segui un processo ciclico di pianificazione, analisi, definizione, sviluppo e test, per valutare le soluzioni proposte, analizzare i risultati e definire le modifiche da apportare nell’ottica del miglioramento continuo del tuo servizio o prodotto digitale.
 
-
-   # —
+    # —
     # EDITORIAL #C #I
     # —
     - #title: Dalla norma alla pratica progettuale
@@ -200,7 +196,6 @@ components:
       # text: | #C
       #   Il Manuale operativo di design ti indica un approccio chiaro, un solido processo e tutte le risorse per progettare secondo la normativa
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: "Un processo in cinque fasi" #C
@@ -224,17 +219,14 @@ components:
 
           #### Leggi il Manuale operativo di design su Docs Italia h4
           ctas:
-          - label: Vai al Manuale operativo di design #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/index.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-
-
+            - label: Vai al Manuale operativo di design #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/index.html #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

@@ -87,7 +87,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -99,14 +98,14 @@ components:
       label: "Attività del modello" #C
       addonClasses: mt-3 text-uppercase
     #pretext:
-      #icon:
-        #icon: sprites.svg#it-info-circle
-        #size: sm
-      #text: In breve
+    #icon:
+    #icon: sprites.svg#it-info-circle
+    #size: sm
+    #text: In breve
     #text: | #C
-      #Lorem **ipsum**
-  # img: /images/400x300.png #I
-  # alt: descrizione immagine #C
+    #Lorem **ipsum**
+    # img: /images/400x300.png #I
+    # alt: descrizione immagine #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -133,17 +132,17 @@ components:
             label: Adotta il modello di servizi digitali comunali #C
             url: "../" #M
       #otherInfo:
-        #items:
-          #- title: Rispettando
-            #icon:
-              #icon: "sprites.svg#it-pa"
-              #size: "sm"
-              #align: "middle"
-              #color: "secondary"
-            #label: Design standard X #C
-            #url: "#" #M
+      #items:
+      #- title: Rispettando
+      #icon:
+      #icon: "sprites.svg#it-pa"
+      #size: "sm"
+      #align: "middle"
+      #color: "secondary"
+      #label: Design standard X #C
+      #url: "#" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -166,14 +165,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione interfaccia,Sviluppo interfaccia,Adozione modelli]
+      tags: [Progettazione interfaccia, Sviluppo interfaccia, Adozione modelli]
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: I template HTML #C
       menu: false
       centered: true
@@ -181,7 +178,6 @@ components:
       #text: | #C
 
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
@@ -189,7 +185,6 @@ components:
             I template HTML permettono di assemblare rapidamente le schermate necessarie alla fruizione del servizio da parte del cittadino. Seleziona i template relativi alla tipologia di flusso per il servizio che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie ad abilitare il flusso.
 
             I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le Linee guida sull’accessibilità degli strumenti informatici. I template permettono di creare i servizi digitali di un Comune utilizzando qualsiasi tipo di soluzione tecnologica. Usano ed estendono, inoltre, il design system del Paese e la libreria di componenti di sviluppo Bootstrap Italia.
-
 
   # ///////////////////
   # RESOURCES
@@ -203,9 +198,9 @@ components:
         headingLevel: 3
         listItems:
           - label: Anteprime dei template HTML per i servizi digitali comunali #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia  #C
+            text: Le anteprime delle pagine basate sui template HTML che utilizzano Bootstrap Italia #C
             url: https://italia.github.io/design-comuni-pagine-statiche/servizi/index.html #M
             blank: true
             actions:
@@ -215,15 +210,13 @@ components:
                 blank: true
 
           - label: Sorgenti dei template HTML per i servizi digitali comunali #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srBefore: #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Il repository GitHub con il codice sorgente #C
             url: https://github.com/italia/design-comuni-pagine-statiche #M
             blank: true
             actions:
-
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://github.com/italia/design-comuni-pagine-statiche #M
                 ariaLabel: "Repository GitHub: Sorgenti dei template HTML per i servizi digitali comunali (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-

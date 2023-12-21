@@ -67,7 +67,6 @@ seo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -76,8 +75,8 @@ components:
     title: Storia #C
     subtitle: Designers Italia è da sempre una community aperta a tutti i designers e professionisti della PA italiana #C
     tag:
-        label: Progetto  #C
-        addonClasses: mt-3 text-uppercase
+      label: Progetto #C
+      addonClasses: mt-3 text-uppercase
     pretext:
       icon:
         icon: sprites.svg#it-help-circle
@@ -99,7 +98,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Cultura progettuale,Human centred design]
+      tags: [Cultura progettuale, Human centred design]
 
     #  # KANGAROO: CHILDREN SHORTCUTS
     #  dropdown:
@@ -127,7 +126,6 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial:
-
     # —
     # IMG FULL COVER
     # —
@@ -151,7 +149,6 @@ components:
       text: | #C
         Le soluzioni digitali cui Designers Italia e i designers e developers della community hanno contribuito
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: "pagoPA - Il servizio di pagamento verso la Pubblica Amministrazione" #C
@@ -167,22 +164,22 @@ components:
           text: | #C
             SPID (Sistema Pubblico di Identità Digitale) è il sistema di identità digitale che permette di utilizzare le stesse credenziali per accedere a tutti i servizi digitali della Pubblica Amministrazione da computer, tablet e smartphone. Il cittadino può ottenere SPID tramite i Gestori di identità (Identity Provider): una volta completata la procedura di verifica (che certifica l’identità del richiedente), vengono rilasciate delle credenziali (user e password) che possono essere utilizzate su tutti i siti che offrono servizi al cittadino (Service Provider).
           ctas:
-          - label: Scopri di più sulla scheda SPID di Developers Italia #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://developers.italia.it/it/spid/ #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Scopri di più sulla scheda SPID di Developers Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://developers.italia.it/it/spid/ #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
           #### Linee guida SPID, asset e codice sorgente h4
           #ctas:
           # - label: Regole tecniche #C
-            # screenReaderText: " (si apre in una nuova finestra)" #C
+          # screenReaderText: " (si apre in una nuova finestra)" #C
           #   url: https://docs.italia.it/italia/spid/spid-regole-tecniche/ #M
           #   blank: true #M #C true if new tab for external links
           #   icon:
@@ -193,7 +190,7 @@ components:
           #     size: sm
           #     addonClasses: ms-2
           # - label: Bottone di accesso con scelta IDP integrata #C
-            # screenReaderText: " (si apre in una nuova finestra)" #C
+          # screenReaderText: " (si apre in una nuova finestra)" #C
           #   url: https://github.com/italia/spid-sp-access-button #M
           #   blank: true #M #C true if new tab for external links
           #   icon:
@@ -204,7 +201,7 @@ components:
           #     size: sm
           #     addonClasses: ms-2
           # - label: Icone, loghi e asset grafici #C
-            # screenReaderText: " (si apre in una nuova finestra)" #C
+          # screenReaderText: " (si apre in una nuova finestra)" #C
           #   url: https://github.com/italia/spid-graphics #M
           #   blank: true
           #   icon:
@@ -219,28 +216,28 @@ components:
         # - name: TextImageCta
         #   #title: "SPID - Sistema pubblico di identità digitale" #C
         #   ctas:
-          # - label: Layout standard di IDP #C
-            # screenReaderText: " (si apre in una nuova finestra)" #C
-          #   url: https://github.com/italia/spid-idp-login-layout #M
-          #   blank: true
-          #   icon:
-          #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-          #     color: primary
-          #     align: middle
-          #     hidden: true
-          #     size: sm
-          #     addonClasses: ms-2
-          # - label: Playbook Ansible di SP #C
-            # screenReaderText: " (si apre in una nuova finestra)" #C
-          #   url: https://github.com/italia/spid-sp-playbook #M
-          #   blank: true
-          #   icon:
-          #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-          #     color: primary
-          #     align: middle
-          #     hidden: true
-          #     size: sm
-          #     addonClasses: ms-2
+        # - label: Layout standard di IDP #C
+        # screenReaderText: " (si apre in una nuova finestra)" #C
+        #   url: https://github.com/italia/spid-idp-login-layout #M
+        #   blank: true
+        #   icon:
+        #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+        #     color: primary
+        #     align: middle
+        #     hidden: true
+        #     size: sm
+        #     addonClasses: ms-2
+        # - label: Playbook Ansible di SP #C
+        # screenReaderText: " (si apre in una nuova finestra)" #C
+        #   url: https://github.com/italia/spid-sp-playbook #M
+        #   blank: true
+        #   icon:
+        #     icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+        #     color: primary
+        #     align: middle
+        #     hidden: true
+        #     size: sm
+        #     addonClasses: ms-2
 
         # TXT BLOCK
         - name: TextImageCta
@@ -260,55 +257,53 @@ components:
 
             Web Analytics Italia (WAI) si basa sul software open source Matomo per le funzionalità di ingestion e reporting.
           ctas:
-          - label: Vai a Web Analytics Italia (WAI) #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://webanalytics.italia.it/ #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai all'art.7 del Cad #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo1_sezione2_art7.html?highlight=statistiche%20utilizzo #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai a Web Analytics Italia (WAI) #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://webanalytics.italia.it/ #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Vai all'art.7 del Cad #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2017-12-13/_rst/capo1_sezione2_art7.html?highlight=statistiche%20utilizzo #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
+        # # NUMBERS BLOCK
+        # - name: Numbers
+        #   items: #C #I
+        #   - label: Comuni interattivi
+        #     icon: sprites.svg#it-tool
+        #     number: "1200"
+        #   - label: Comuni interattivi
+        #     icon: sprites.svg#it-tool
+        #     number: "1200"
+        #   - label: Comuni interattivi
+        #     icon: sprites.svg#it-tool
+        #     number: "1200"
+        #   - label: Comuni interattivi
+        #     icon: sprites.svg#it-tool
+        #     number: "1200"
 
+        # # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
+        # # HEADING STARD WITH H4 JUST IN CASE
+        # - name: TextImageCta
+        #   text: |
+        #     #### Titoletto interno h4
+        #     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
 
-       # # NUMBERS BLOCK
-       # - name: Numbers
-       #   items: #C #I
-       #   - label: Comuni interattivi
-       #     icon: sprites.svg#it-tool
-       #     number: "1200"
-       #   - label: Comuni interattivi
-       #     icon: sprites.svg#it-tool
-       #     number: "1200"
-       #   - label: Comuni interattivi
-       #     icon: sprites.svg#it-tool
-       #     number: "1200"
-       #   - label: Comuni interattivi
-       #     icon: sprites.svg#it-tool
-       #     number: "1200"
-
-       # # TXT BLOCK WITHOUT TITLE, PLAIN MARKDOWN.
-       # # HEADING STARD WITH H4 JUST IN CASE
-       # - name: TextImageCta
-       #   text: |
-       #     #### Titoletto interno h4
-       #     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
-
-       #     Lorem ipsum.
+        #     Lorem ipsum.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -316,4 +311,3 @@ components:
           text: | #C
             La versione alpha del progetto italia.it nasce fra il 2014 e il 2015, per poi passare sotto la governance del Dipartimento per la trasformazione digitale.
             A partire dal 2015 vari siti web delle PA italiane iniziano ad adottare la versione alpha delle Linee guida di design della PA: il primo tentativo di rendere coerenti per identità visiva, usabilità ed esperienza utente migliaia di siti web della Pubblica Amministrazione.
-

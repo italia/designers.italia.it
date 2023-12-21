@@ -55,39 +55,38 @@ kangaroo:
         label: "4.3. Semplicità di consultazione ed esperienza d'uso" #C
         url: "../" #M
 #navPreFooter:
-  #navOtherPrevNext:
-   # prev:
-    #  label: Titolo sorella precedente #C
-   #   url: "#" #M
-   #   # image: /images/link-custom-icon.svg #I
-    #  blank: false
-    #  specular: false
-    #  icon:
-        # icon: "sprites.svg#it-arrow-left"
-        #size: "sm"
-        #align: "middle"
-        #color: "primary"
-        #hidden: true
-        #addonClasses: flex-shrink-0 me-3
-    #next:
-        #label: Titolo sorella successiva #C
-     #   url: "#" #M
-     #   # image: /images/link-custom-icon.svg #I
-     #   blank: false
-     #   specular: true
-      #  icon:
-        #  icon: "sprites.svg#it-arrow-right"
-        #  size: "sm"
-       #   align: "middle"
-       #   color: "primary"
-       #   hidden: true
-        #  addonClasses: flex-shrink-0 ms-3
+#navOtherPrevNext:
+# prev:
+#  label: Titolo sorella precedente #C
+#   url: "#" #M
+#   # image: /images/link-custom-icon.svg #I
+#  blank: false
+#  specular: false
+#  icon:
+# icon: "sprites.svg#it-arrow-left"
+#size: "sm"
+#align: "middle"
+#color: "primary"
+#hidden: true
+#addonClasses: flex-shrink-0 me-3
+#next:
+#label: Titolo sorella successiva #C
+#   url: "#" #M
+#   # image: /images/link-custom-icon.svg #I
+#   blank: false
+#   specular: true
+#  icon:
+#  icon: "sprites.svg#it-arrow-right"
+#  size: "sm"
+#   align: "middle"
+#   color: "primary"
+#   hidden: true
+#  addonClasses: flex-shrink-0 ms-3
 
 # ————————————————————————————————————————————
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -177,14 +176,14 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,SEO]
+      tags: [Linee guida, SEO]
 
-# ///////////////////
+  # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Scopri i contenuti correlati a questa azione  #C
+    title: Scopri i contenuti correlati a questa azione #C
     text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
     nospace: false
@@ -192,7 +191,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN ACTION
       - title: SEO #C
         fullHeight: true
@@ -250,14 +248,12 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2:
-
     - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
       menu: false
       centered: true
       background: light
       text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: SEO #C
@@ -265,16 +261,15 @@ components:
           text: | #C
             Ottimizza i contenuti e la struttura del tuo sito o servizio con l’obiettivo di rendere informazioni e servizi più semplici da trovare e più visibili sui motori di ricerca.
           ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
+            - label: Argomento nel Manuale su Docs Italia #C
 
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/seo.html#seo" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Ottimizzazione per i motori di ricerca: SEO"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+              url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/seo.html#seo" #M
+              blank: true #M #C true if new tab for external links
+              screenReaderText: "Ottimizzazione per i motori di ricerca: SEO"
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

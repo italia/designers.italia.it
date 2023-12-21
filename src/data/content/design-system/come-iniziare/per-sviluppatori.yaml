@@ -45,7 +45,7 @@ components:
     text: |
       Scopri gli strumenti messi a disposizione per gli sviluppatori, i vari framework, come utilizzarli e come partecipare attivamente: dalle ultime versioni di Bootstrap Italia e gli approfondimenti sui temi di accessibilità, ai design token e i processi per contribuire alla cura e all'evoluzione delle risorse 'community-driven' per React e Angular.
 
-     # KANGAROO: METADATA
+    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -73,7 +73,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design/" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -96,10 +96,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
+      tags: [Design system, Interfaccia utente, Sviluppo interfaccia]
 
   sectionsEditorial:
-
     - full: true
       noSpace: false
       paddingLeft: true
@@ -107,102 +106,101 @@ components:
       text: Lo strumento a disposizione degli sviluppatori per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali
       background: null
       components:
-
         - name: TextImageCta
           title: Versione corrente
           noSpace: true
           # text: |
           ctas:
-          - label: Vai al repository dedicato #C
-            screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
-            url: https://github.com/italia/bootstrap-italia #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Documentazione #C
-            screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
-            url: https://italia.github.io/bootstrap-italia/ #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Changelog #C
-            screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
-            url: https://github.com/italia/bootstrap-italia/releases #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al repository dedicato #C
+              screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
+              url: https://github.com/italia/bootstrap-italia #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Documentazione #C
+              screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
+              url: https://italia.github.io/bootstrap-italia/ #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Changelog #C
+              screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
+              url: https://github.com/italia/bootstrap-italia/releases #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: I Design Tokens
           noSpace: true
           # text: |
           ctas:
-          - label: Vai al repository dedicato #C
-            screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
-            url: https://github.com/italia/design-tokens-italia #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Changelog #C
-            screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
-            url: https://github.com/italia/design-tokens-italia/releases #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al repository dedicato #C
+              screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
+              url: https://github.com/italia/design-tokens-italia #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Changelog #C
+              screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
+              url: https://github.com/italia/design-tokens-italia/releases #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Altri framework community driven
           noSpace: true
           # text: |
-          #   Scopri i progetti community-driven React e Angular Kit che implementano Bootstrap Italia. 
+          #   Scopri i progetti community-driven React e Angular Kit che implementano Bootstrap Italia.
           ctas:
-          - label: React Kit #C
-            url: https://github.com/italia/design-react-kit #M
-            screenReaderText: " (si apre in una nuova finestra)"
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Angular Kit #C
-            screenReaderText: " (si apre in una nuova finestra)"
-            url: https://github.com/italia/design-angular-kit  #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: React Kit #C
+              url: https://github.com/italia/design-react-kit #M
+              screenReaderText: " (si apre in una nuova finestra)"
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Angular Kit #C
+              screenReaderText: " (si apre in una nuova finestra)"
+              url: https://github.com/italia/design-angular-kit #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
     - full: true
       noSpace: true
@@ -211,24 +209,23 @@ components:
       text: Processi e risorse per lo sviluppo di Bootstrap Italia e del suo ecosistema di risorse
       background: null
       components:
-
         - name: TextImageCta
           title: Modello di contribuzione
           noSpace: true
           text: |
             Se ti occupi di sviluppo sofware puoi aprire segnalazioni e inviare i tuoi contributi dedicati al kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali Bootstrap Italia e al suo ecosistema di risorse.
           ctas:
-          - label: Scopri come contribuire Per lo sviluppo #C
-            url: "/design-system/come-contribuire/per-lo-sviluppo/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Scopri come contribuire Per lo sviluppo #C
+              url: "/design-system/come-contribuire/per-lo-sviluppo/" #M
+              blank: false #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Accessibilità
@@ -236,17 +233,17 @@ components:
           text: |
             Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
           ctas:
-          - label: Vai al fondamento Accessibilità #C
-            url: "/design-system/fondamenti/accessibilita/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al fondamento Accessibilità #C
+              url: "/design-system/fondamenti/accessibilita/" #M
+              blank: false #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Design tokens
@@ -254,14 +251,14 @@ components:
           text: |
             Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali.
           ctas:
-          - label: Vai al fondamento Design tokens #C
-            url: "/design-system/fondamenti/design-tokens/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al fondamento Design tokens #C
+              url: "/design-system/fondamenti/design-tokens/" #M
+              blank: false #M #C true if new tab for external links
+
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

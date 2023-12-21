@@ -1,30 +1,29 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .tab {
-  font-size:1rem;
+  font-size: 1rem;
   .nav-link {
     -moz-transition: none;
-    -o-transition:none;
+    -o-transition: none;
     -webkit-transition: none;
-    transition:none;
+    transition: none;
     padding: 16px 24px;
     color: #0066cc;
     &:not(.active) {
-      border-color: #C5C7C9!important;
+      border-color: #c5c7c9 !important;
     }
     &:is(.active) {
-      border-color: #C5C7C9!important;
-      border-bottom:none!important;
-      color:#003366;
+      border-color: #c5c7c9 !important;
+      border-bottom: none !important;
+      color: #003366;
       padding: 16px 23px 18px 23px;
     }
   }
   .nav-item-filler {
-    border-color: #C5C7C9!important;
+    border-color: #c5c7c9 !important;
     min-width: 16px;
   }
 }
-
 
 // Tablet landscape
 @include media-breakpoint-up(lg) {

@@ -4,7 +4,8 @@ $enable-smooth-scroll: false; // xxx forced to disable default BI behaviour test
   scroll-behavior: auto !important;
 }
 
-p, .content ul {
+p,
+.content ul {
   max-width: 75ch;
 }
 
@@ -36,30 +37,30 @@ div.chips-list-wrapper {
       background-color: var(--color-primary-active);
     }
     .chip-label {
-      color: var(--kangaroo-negative-element-color)
+      color: var(--kangaroo-negative-element-color);
     }
   }
   .btn-dropdown {
-    color: var(--kangaroo-negative-element-color)
+    color: var(--kangaroo-negative-element-color);
   }
 }
 
 @include media-breakpoint-up(lg) {
   .design-system {
     #main.col-lg-9 {
-      width:80%;
+      width: 80%;
     }
     .menu-column.col-lg-3 {
-      width:20%;
+      width: 20%;
     }
   }
 }
 
 [id] {
- @media (min-width: #{map-get($grid-breakpoints, lg)}) {
-   scroll-margin-top: $header-center-max-height;
- }
- scroll-margin-top: $header-center-max-height-mob + 48;
+  @media (min-width: #{map-get($grid-breakpoints, lg)}) {
+    scroll-margin-top: $header-center-max-height;
+  }
+  scroll-margin-top: $header-center-max-height-mob + 48;
 }
 
 // special chips with numeric rounded-pill badge inside ("argomenti")

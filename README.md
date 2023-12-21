@@ -27,6 +27,7 @@ modification time, include `(last-update-skip)` somewhere in the commit message.
     ```shell
     npm i
     ```
+
 2.  **Start developing**
 
     To start your project up run.
@@ -62,6 +63,7 @@ modification time, include `(last-update-skip)` somewhere in the commit message.
     ```shell
     npm run lint:fix
     ```
+
     ```shell
     npm run prettier:fix
     ```

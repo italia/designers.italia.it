@@ -74,7 +74,6 @@ seo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -83,8 +82,8 @@ components:
     title: Piano attività #C
     subtitle: Gli obiettivi e i risultati del progetto Designers Italia #C
     tag:
-        label: Community #C
-        addonClasses: mt-3 text-uppercase
+      label: Community #C
+      addonClasses: mt-3 text-uppercase
     pretext:
       icon:
         icon: sprites.svg#it-help-circle
@@ -106,7 +105,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Cultura progettuale,Pianificazione,Design system]
+      tags: [Cultura progettuale, Pianificazione, Design system]
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
@@ -128,8 +127,7 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial:
-
-# —————— THE FUTURE ————— #
+    # —————— THE FUTURE ————— #
 
     - title: Obiettivi per il futuro
       headingLevel: 2
@@ -140,7 +138,6 @@ components:
         Una roadmap di cose da fare
 
       components:
-
         ### 2023 - Q4
         - name: TextImageCta
           title: "2023 — Q4" #C
@@ -154,16 +151,16 @@ components:
           text: | #C
             Al via un ciclo di webinar per scoprire come usare al meglio tutte le risorse dedicate ai Comuni, in collaborazione con l'Associazione Nazionale Comuni Italiani (ANCI).
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica/" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica/" #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -172,26 +169,26 @@ components:
           text: | #C
             Rilascio della versione beta del design system del Paese che comprenderà tutte le schede principali presenti nelle sezioni **Fondamenti** e **Componenti**.
           ctas:
-          - label: Vai alla board del progetto per seguire i lavori #C
-            url: https://github.com/orgs/italia/projects/17 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai al changelog #C
-            url: "/design-system/fondamenti/versionamento/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla board del progetto per seguire i lavori #C
+              url: https://github.com/orgs/italia/projects/17 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Vai al changelog #C
+              url: "/design-system/fondamenti/versionamento/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -200,26 +197,26 @@ components:
           text: | #C
             Nell’area **Formazione**, pubblicazione di contenuti media (video tutorial e podcast) sulla base delle necessità della community.
           ctas:
-          - label: Vai alla sezione Community #C
-            url: "/community/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai all'archivio Media #C
-            url: "/community/media/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla sezione Community #C
+              url: "/community/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Vai all'archivio Media #C
+              url: "/community/media/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -228,16 +225,16 @@ components:
           text: | #C
             Prosecuzione dei lavori di consolidamento del nuovo sito Designers Italia, in particolare avvio seconda sessione di test di usabilità, integrazione di funzionalità per l'archivio media e altre lavorazioni per ottimizzare l'esperienza utente, la manutenibilità e la scalabilità nel tempo.
           ctas:
-          - label: Vai alla board di progetto per seguire i lavori #C
-            url: https://github.com/orgs/italia/projects/15 #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla board di progetto per seguire i lavori #C
+              url: https://github.com/orgs/italia/projects/15 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         ### 2024 - Q1
         - name: TextImageCta
@@ -252,16 +249,16 @@ components:
           text: | #C
             Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi delle ASL.
           ctas:
-          - label: Segui le lavorazioni nella pagina dedicata #C
-            url: "/modelli/aziende-sanitarie-locali/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Segui le lavorazioni nella pagina dedicata #C
+              url: "/modelli/aziende-sanitarie-locali/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -283,18 +280,18 @@ components:
           text: | #C
             Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi dei musei civici.
           ctas:
-          - label: Segui le lavorazioni nella pagina dedicata #C
-            url: "/modelli/musei-civici/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Segui le lavorazioni nella pagina dedicata #C
+              url: "/modelli/musei-civici/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
-# ————— THE PAST ————— #
+    # ————— THE PAST ————— #
 
     - title: I risultati che abbiamo raggiunto
       headingLevel: 2
@@ -305,7 +302,6 @@ components:
         Le attività più importanti, gli obiettivi e i traguardi realizzati
 
       components:
-
         ### 2023 - Q4
         - name: TextImageCta
           title: "2023 — Q3 Q4" #C
@@ -321,27 +317,27 @@ components:
           text: | #C
             Pubblicato il modello di contribuzione per il design system del Paese: come partecipare alla cura delle risorse principali del design system del Paese: documentazione, UI Kit Italia, Bootstrap Italia e design tokens.
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Scopri come contribuire #C
-            url: "/design-system/come-contribuire/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-              
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Scopri come contribuire #C
+              url: "/design-system/come-contribuire/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
         - name: TextImageCta
           headingLevel: 4
           specular: true
@@ -351,26 +347,26 @@ components:
           text: | #C
             Nella sezione **Community**, inizio pubblicazione e raccolta di materiali media degli incontri, conferenze e corsi di formazione.
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai all'archivio Media #C
-            url: "/community/media/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Vai all'archivio Media #C
+              url: "/community/media/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -381,26 +377,26 @@ components:
           text: | #C
             Avvio delle attività di ricerca utente dedicate alla realizzazione del modello di sito per le ASL
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai alla pagina dedicata #C
-            url: "/modelli/aziende-sanitarie-locali/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Vai alla pagina dedicata #C
+              url: "/modelli/aziende-sanitarie-locali/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -411,26 +407,26 @@ components:
           text: | #C
             Avvio delle attività di ricerca utente dedicate alla realizzazione del modello di sito per i musei civici.
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai alla pagina dedicata #C
-            url: "/modelli/musei-civici/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Vai alla pagina dedicata #C
+              url: "/modelli/musei-civici/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         ### 2023 - Q2
         - name: TextImageCta
@@ -445,16 +441,16 @@ components:
           text: | #C
             Un’occasione per imparare a progettare e realizzare servizi pubblici di qualità.
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -463,18 +459,18 @@ components:
           # image: "/images/community/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente.jpg"
           # alt: "" #C
           text: | #C
-             La prima versione delle indicazioni per progettare contenuti di qualità per le interfacce.
+            La prima versione delle indicazioni per progettare contenuti di qualità per le interfacce.
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         ### 2023 - Q1
         - name: TextImageCta
@@ -500,26 +496,26 @@ components:
           text: | #C
             Il kit per progettare interfacce e siti digitali della Pubblica Amministrazione (PA) esce dalla fase beta
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Scopri come usarlo (per designer) #C
-            url: "/design-system/come-iniziare/per-designer/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Scopri come usarlo (per designer) #C
+              url: "/design-system/come-iniziare/per-designer/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -528,26 +524,26 @@ components:
           text: | #C
             Rilascio nuove versioni alpha, dalla 1 alla 5, della documentazione del design system del Paese.
           ctas:
-          - label: Vai al design system #C
-            url: "/design-system/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai al changelog #C
-            url: "/design-system/fondamenti/versionamento/#changelog-documentazione" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al design system #C
+              url: "/design-system/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Vai al changelog #C
+              url: "/design-system/fondamenti/versionamento/#changelog-documentazione" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -558,16 +554,16 @@ components:
           text: | #C
             Sondaggio per definire il nuovo nome del design system del Paese.
           ctas:
-          - label: Vai alla notizia #C
-            url: "/community/notizie/20230314-nome-in-codice-italia/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla notizia #C
+              url: "/community/notizie/20230314-nome-in-codice-italia/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -576,24 +572,22 @@ components:
           text: | #C
             Pubblicazione nuove schede informative che raccordano Linee guida, Manuale operativo e strumenti.
           ctas:
-          - label: Vai alle Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+            - label: Vai alle Linee guida di design #C
+              url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
     - background: null
       menu: false
       centered: true
 
       components:
-
         ### 2022 - Q4
         - name: TextImageCta
           title: "2022 — Q4" #C
@@ -607,16 +601,16 @@ components:
           text: | #C
             Rilascio versione alpha della nuova documentazione del design system del Paese.
           ctas:
-          - label: Vai al design system #C
-            url: "/design-system/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al design system #C
+              url: "/design-system/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -627,16 +621,16 @@ components:
           text: | #C
             Pubblicazione su Medium di articoli di descrizione e approfondimento del quadro sinottico.
           ctas:
-          - label: 'Leggi "Una grammatica dei servizi pubblici digitali"' #C
-            url: https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: 'Leggi "Una grammatica dei servizi pubblici digitali"' #C
+              url: https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -645,17 +639,17 @@ components:
           text: | #C
             Versione beta del kit di progettazione interfaccia, usabile in produzione e coerente con Bootstrap Italia.
           ctas:
-          - label: Vai alla pagina di UI Kit Italia nella community Figma #C
-            url: https://www.figma.com/community/file/1105848677422572920 #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla pagina di UI Kit Italia nella community Figma #C
+              url: https://www.figma.com/community/file/1105848677422572920 #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -664,17 +658,17 @@ components:
           text: | #C
             Definizione supporto all'evoluzione della libreria community-driven che implementa il design system in React.
           ctas:
-          - label: Segui le lavorazioni nella PR dedicata
-            url: https://github.com/italia/design-react-kit/pull/885
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Segui le lavorazioni nella PR dedicata
+              url: https://github.com/italia/design-react-kit/pull/885
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -683,26 +677,26 @@ components:
           text: | #C
             Pubblicazione nuovo kit dedicato a tematiche di privacy e trattamento dei dati personali
           ctas:
-          - label: Leggi la notizia #C
-            url: "/community/notizie/20221020-benvenuto-kit-privacy/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Vai al kit privacy #C
-            url: "/risorse-per-progettare/organizzare/privacy/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Leggi la notizia #C
+              url: "/community/notizie/20221020-benvenuto-kit-privacy/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Vai al kit privacy #C
+              url: "/risorse-per-progettare/organizzare/privacy/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -715,25 +709,23 @@ components:
 
             Sono di supporto agli sviluppatori dei siti istituzionali per verificare la corretta implementazione del modello Comuni e del modello Scuole, sia durante che dopo lo sviluppo, e così informare eventuali modifiche o piani di miglioramento.
           ctas:
-          - label: Vai alla App di valutazione modelli #C
-            url: https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/it/versione-attuale/index.html #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+            - label: Vai alla App di valutazione modelli #C
+              url: https://docs.italia.it/italia/designers-italia/app-valutazione-modelli-docs/it/versione-attuale/index.html #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
     - background: light
       menu: false
       centered: true
 
       components:
-
         ### 2022 - Q3
         - name: TextImageCta
           title: "2022 — Q3" #C
@@ -747,17 +739,17 @@ components:
           text: | #C
             Avvio attività per una nuova versione che tenga conto dei suggerimenti della community, degli aggiornamenti al design system e del tema accessibilità. Le fasi di progettazione e realizzazione saranno incorso fino a tutto Q4.
           ctas:
-          - label: Visita la board con le attività in corso
-            url: https://github.com/orgs/italia/projects/15
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Visita la board con le attività in corso
+              url: https://github.com/orgs/italia/projects/15
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -766,13 +758,11 @@ components:
           text: | #C
             Progettazione di un quadro sinottico che crei un linguaggio comune tra chi progetta, chi sviluppa soluzioni di servizi digitali al cittadino e le amministrazioni che le devono gestire. Definizione dei diversi ambiti in cui viene usata la parola servizio. Definizione dei diversi livelli di granularità di un servizio e come vengono chiamati dal cittadino, dalla Pubblica Amministrazione e dagli ambienti tecnici.
 
-
     - background: null
       menu: false
       centered: true
 
       components:
-
         ### 2022 - Q2
         - name: TextImageCta
           title: "2022 — Q2" #C
@@ -786,17 +776,17 @@ components:
           text: | #C
             Versione completamente rinnovata del kit di progettazione interfaccia caratterizzata da nuova tecnologia e implementazione design token.
           ctas:
-          - label: Vai alla pagina di UI Kit Italia nella community Figma #C
-            url: https://www.figma.com/community/file/1105848677422572920 #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla pagina di UI Kit Italia nella community Figma #C
+              url: https://www.figma.com/community/file/1105848677422572920 #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -805,16 +795,16 @@ components:
           text: | #C
             Rilascio di una nuova versione del modello Comuni in ottica PNRR investimento 1.4.1. Identificazione, progettazione e realizzazione template dei principali modelli di servizio digitali al cittadino (richiedere un sussidio, richiedere un servizio a pagamento, effettuare una iscrizione a un servizio, pagare un dovuto) e allineamento del modello al design system aggiornato. Realizzazione e rilasci temi CMS del modello Comuni.
           ctas:
-          - label: Vai al modello Comuni #C
-            url: "/modelli/comuni/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al modello Comuni #C
+              url: "/modelli/comuni/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -823,17 +813,17 @@ components:
           text: | #C
             Versione completamente rinnovata del kit di sviluppo interfaccia basata sul framework Bootstrap 5.
           ctas:
-          - label: Vai alla documentazione di Bootstrap Italia #C
-            url: https://italia.github.io/bootstrap-italia/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla documentazione di Bootstrap Italia #C
+              url: https://italia.github.io/bootstrap-italia/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -842,16 +832,16 @@ components:
           text: | #C
             Rilascio di una nuova versione del modello scuole in ottica PNRR investimento 1.4.1. Allineamento del modello al design system aggiornato, in particolare: allineamento template statici HTML e tema Wordpress a disposizione delle scuole italiane; aggiornamento della ricerca quantitativa e qualitativa a cura del Ministero dell'Istruzione.
           ctas:
-          - label: Vai al modello Scuole #C
-            url: "/modelli/scuole/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai al modello Scuole #C
+              url: "/modelli/scuole/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -860,17 +850,17 @@ components:
           text: | #C
             Verifica e risoluzione di problematiche di accessibilità. Ultimo rilascio basato sul framework di sviluppo web Bootstrap 4.
           ctas:
-          - label: Vai alla documentazione di Bootstrap Italia #C
-            url: https://italia.github.io/bootstrap-italia/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla documentazione di Bootstrap Italia #C
+              url: https://italia.github.io/bootstrap-italia/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -879,23 +869,22 @@ components:
           text: | #C
             Pubblicazione delle nuove Linee guida di design per i siti internet e i servizi digitali della Pubblica Amministrazione.
           ctas:
-          - label: Vai a norme e riferimenti #C
-            url: "/norme-e-riferimenti/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai a norme e riferimenti #C
+              url: "/norme-e-riferimenti/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
     - background: light
       menu: false
       centered: true
 
       components:
-
         ### 2022 - Q1
         - name: TextImageCta
           title: "2022 — Q1" #C
@@ -909,17 +898,17 @@ components:
           text: | #C
             Risoluzione dei problemi di accessibilità noti, integrazione dei contributi e rilancio della community di sviluppo.
           ctas:
-          - label: Vai alla documentazione di Bootstrap Italia #C
-            url: https://italia.github.io/bootstrap-italia/ #M
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai alla documentazione di Bootstrap Italia #C
+              url: https://italia.github.io/bootstrap-italia/ #M
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -946,16 +935,15 @@ components:
           text: | #C
             Realizzazione di una ricerca su archetipi e pattern ricorrenti in 5 ambiti della vita civica. Attività di formazione nell’ambito di un master in comunicazione visiva: co-progettazione e pubblicazione di un atlante illustrato dedicato ai processi di trasformazione digitale della Pubblica Amministrazione.
           ctas:
-          - label: Vai alla notizia #C
-            url: https://designers.italia.it/notizie/atlante-trasformazione-digitale-pa/ #M XXX
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+            - label: Vai alla notizia #C
+              url: https://designers.italia.it/notizie/atlante-trasformazione-digitale-pa/ #M XXX
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
     ### ARCHIVIO
     - title: L'archivio storico
@@ -964,18 +952,17 @@ components:
       menu: false
       centered: true
       components:
-
         - name: TextImageCta
           title: 2017 — 2021
           headingLevel: 3
           specular: true
           ctas:
-          - label: Vai all'archivio storico #C
-            url: "/community/piano-attivita/archivio-storico/" #M
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+            - label: Vai all'archivio storico #C
+              url: "/community/piano-attivita/archivio-storico/" #M
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

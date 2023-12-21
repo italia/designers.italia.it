@@ -67,7 +67,6 @@ seo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -76,8 +75,8 @@ components:
     title: Progettare #C
     subtitle: "Progetta il servizio immaginando e prototipando l’interazione fra utente e touchpoint digitale" #C
     tag:
-        label: Fase di progettazione  #C
-        addonClasses: mt-3 text-uppercase
+      label: Fase di progettazione #C
+      addonClasses: mt-3 text-uppercase
     pretext:
       icon:
         icon: sprites.svg#it-help-circle
@@ -99,7 +98,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Co-progettazione,SEO,Contenuti e linguaggio]
+      tags:
+        [
+          Architettura informazione,
+          Co-progettazione,
+          SEO,
+          Contenuti e linguaggio,
+        ]
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
@@ -142,7 +147,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Architettura dell'informazione" #C
         imgRatio: 16x9
@@ -155,7 +159,7 @@ components:
         tag:
           label: Kit di design #C
 
-       # CARD CHILDREN
+        # CARD CHILDREN
       - title: Co-progettazione #C
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_coprog.svg #I
@@ -203,12 +207,10 @@ components:
         tag:
           label: Kit di design #C
 
-
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial2 :
-
+  sectionsEditorial2:
     # # —
     # # IMG FULL COVER
     # # —
@@ -233,7 +235,6 @@ components:
       text: | #C
         Progettare servizi pubblici facendo tesoro delle esperienze altrui
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           title: Come rendere efficace la progettazione #C

@@ -86,7 +86,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -114,22 +113,22 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-        - title: Ti trovi nella fase #C
-          icon:
-            icon: "sprites.svg#it-folder"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: Progettare #C
-          url: "../../" #M
-        - title: Nel kit di design #C
-          icon:
-            icon: "sprites.svg#it-tool"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: "Architettura dell'informazione" #C
-          url: "../" #M
+          - title: Ti trovi nella fase #C
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare #C
+            url: "../../" #M
+          - title: Nel kit di design #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Architettura dell'informazione" #C
+            url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -142,7 +141,7 @@ components:
             label: Linee guida di design #C
             url: "/norme-e-riferimenti/linee-guida-di-design" #M
       personalInfo:
-         items: #C
+        items: #C
           - title: Sei
             tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
             icon:
@@ -165,14 +164,12 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Contenuti e linguaggio]
+      tags: [Architettura informazione, Contenuti e linguaggio]
 
   ## ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
-
+  sectionsEditorial:
     - title: Come catalogare e raggruppare i contenuti con il card sorting #C
       menu: false
       centered: true
@@ -180,7 +177,6 @@ components:
       #text: | #C
       #  Lorem **ipsum**
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           # title: A cosa servono h3 #C
@@ -222,7 +218,7 @@ components:
                 blank: false
           - label: Esempio di card sorting #C
             srBefore: "PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
+            srAfter: # FOR SCREEN READER ARIA LABEL
             text: Scarica un esempio #C
             url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
             blank: false
@@ -233,7 +229,7 @@ components:
                 blank: false
           - label: Card sorting in versione stampabile #C
             srBefore: "PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter:  # FOR SCREEN READER ARIA LABEL
+            srAfter: # FOR SCREEN READER ARIA LABEL
             text: "Scarica e stampa il card sorting per fare l'esercizio dal vivo" #C
             url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
             blank: false
@@ -242,4 +238,3 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
                 ariaLabel: "PDF: Card sorting in versione stampabile" #C #COMPILE FOR EACH ITEM
                 blank: false
-

@@ -5,7 +5,9 @@
     // max-width: 132px;
     max-width: 250px;
   }
-  p,ol,ul {
+  p,
+  ol,
+  ul {
     font-family: var(--font-serif);
   }
   .lead {
@@ -36,7 +38,8 @@
       margin-right: 54px;
     }
   }
-  h4, h5 {
+  h4,
+  h5 {
     font-weight: 700;
   }
   .justify-content-end {
@@ -48,22 +51,19 @@
       }
     }
   }
-
 }
-
 
 //Mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
   .text-image-cta {
-     .content {
-      width:100%!important;
-     }
-     .image-cta {
-      width:100%!important;
-      max-width:164px;
-     }
-     .text-image-cta
-    .simple-cta {
+    .content {
+      width: 100% !important;
+    }
+    .image-cta {
+      width: 100% !important;
+      max-width: 164px;
+    }
+    .text-image-cta .simple-cta {
       &:not(:last-of-type) {
         margin-bottom: 16px;
       }
@@ -77,7 +77,6 @@
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------

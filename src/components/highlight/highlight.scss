@@ -1,134 +1,132 @@
-
 @import "../../scss/bootstrap-breakpoints";
 
 .highlight {
-	&.bg-dark {
-		color: var(--hl-dark-theme-color);
-	}
-	.text-container {
-		.h-text {
-			p {
-				margin: 0;
-			}
-		}
-		.buttons-wrapper {
-			margin-top: var(--hl-button-distance-mob);
-		}
-	}
+  &.bg-dark {
+    color: var(--hl-dark-theme-color);
+  }
+  .text-container {
+    .h-text {
+      p {
+        margin: 0;
+      }
+    }
+    .buttons-wrapper {
+      margin-top: var(--hl-button-distance-mob);
+    }
+  }
   .main-image {
     object-fit: cover;
   }
-	.img-container {
-		.icon,
+  .img-container {
+    .icon,
     .overlay-image {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translateX(-50%) translateY(-50%);
-			width: 200px;
-			height: 200px;
-			fill: var(--color-secondary);
-		}
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      width: 200px;
+      height: 200px;
+      fill: var(--color-secondary);
+    }
     &.full {
       img {
         width: 100%;
       }
     }
-	}
+  }
 }
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
-	.highlight {
-		.text-container {
-			.buttons-wrapper {
-				.btn {
-					display: block;
-					&:not(:last-child) {
-						margin-bottom: var(--hl-button-y-margin-mob);
-					}
-				}
-			}
-		}
-	}
+  .highlight {
+    .text-container {
+      .buttons-wrapper {
+        .btn {
+          display: block;
+          &:not(:last-child) {
+            margin-bottom: var(--hl-button-y-margin-mob);
+          }
+        }
+      }
+    }
+  }
 }
 //Small tablet ------------------------------------------------------------------------------------------
 @include media-breakpoint-up(sm) {
-	.highlight {
-		.text-container {
-			.buttons-wrapper {
-				margin-top: var(--hl-button-distance-desk);
-				.btn {
-					margin-right: var(--hl-button-x-margin-desk);
-					margin-bottom: var(--hl-button-x-margin-desk);
-				}
-			}
-		}
-	}
+  .highlight {
+    .text-container {
+      .buttons-wrapper {
+        margin-top: var(--hl-button-distance-desk);
+        .btn {
+          margin-right: var(--hl-button-x-margin-desk);
+          margin-bottom: var(--hl-button-x-margin-desk);
+        }
+      }
+    }
+  }
 }
 
 //Tablet portrait ---------------------------------------------------------------------------------------
 @include media-breakpoint-up(md) {
-	.highlight {
-		.img-container {
-			--bs-aspect-ratio : 40%
-		}
-	}
+  .highlight {
+    .img-container {
+      --bs-aspect-ratio: 40%;
+    }
+  }
 }
 
 //Mobile and Tablet only --------------------------------------------------------------------------------
 @include media-breakpoint-down(lg) {
-	.highlight {
-		.img-container {
-			// margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
-			// margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
+  .highlight {
+    .img-container {
+      // margin-left: calc(var(--bs-gutter-x) * 0.5 * -1);
+      // margin-right: calc(var(--bs-gutter-x) * 0.5 * -1);
       &.full {
         .main-image {
           width: 100%;
         }
       }
-		}
+    }
     .main-image {
-		width: 100%;
-    //   width: calc(100% + var(--bs-gutter-x));
+      width: 100%;
+      //   width: calc(100% + var(--bs-gutter-x));
     }
     .no-image {
       .img-container {
         display: none;
       }
     }
-	}
+  }
 }
 
 //Tablet landscape --------------------------------------------------------------------------------------
 @include media-breakpoint-up(lg) {
-	.highlight {
-
-		.img-container {
-			--bs-aspect-ratio: none;
-			width: 25%;
-			flex-shrink: 0;
-		}
-		.text-container {
-			padding: var(--hl-y-padding-desk) var(--hl-x-padding-desk);
+  .highlight {
+    .img-container {
+      --bs-aspect-ratio: none;
+      width: 25%;
+      flex-shrink: 0;
+    }
+    .text-container {
+      padding: var(--hl-y-padding-desk) var(--hl-x-padding-desk);
       flex-grow: 1;
-		}
-		&.highlight-big {
-			.img-container {
-				width: 50%;
-			}
-		}
-	}
+    }
+    &.highlight-big {
+      .img-container {
+        width: 50%;
+      }
+    }
+  }
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xl) {
-	.highlight {
-		&.highlight-big {
-			.img-container {
-				width: 50%;
-			}
-		}
-	}
+  .highlight {
+    &.highlight-big {
+      .img-container {
+        width: 50%;
+      }
+    }
+  }
 }
 
 //Desktop -----------------------------------------------------------------------------------------------

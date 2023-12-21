@@ -79,7 +79,6 @@ kangaroo:
 # CONTENT
 # ————————————————————————————————————————————
 components:
-
   # ///////////////////
   # HERO
   # ///////////////////
@@ -92,10 +91,10 @@ components:
       addonClasses: mt-3 text-uppercase
     imgRatio: 4x3
     # pretext:
-      # icon:
-      #   icon: sprites.svg#it-info-circle
-      #   size: sm
-      # text: Finalità
+    # icon:
+    #   icon: sprites.svg#it-info-circle
+    #   size: sm
+    # text: Finalità
     # text: | #C
     #   **Finalità**: rendere accessibili a tutti gli utenti il contenuto, la struttura e il comportamento degli strumenti informatici, secondo i requisiti di legge.
     # img: /images/400x300.png #I
@@ -148,9 +147,9 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,Normativa,Accessibilità]
+      tags: [Linee guida, Normativa, Accessibilità]
 
-     # KANGAROO: CHILDREN SHORTCUTS
+      # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
@@ -170,8 +169,7 @@ components:
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
-  sectionsEditorial :
-
+  sectionsEditorial:
     # —
     # EDITORIAL #C #I
     # —
@@ -188,7 +186,6 @@ components:
       background: light
       # text: | #C
       components:
-
         - name: TextImageCta
           noSpace: true
           # title: Perché è importante #C
@@ -197,7 +194,6 @@ components:
             Progettare un sito o un servizio digitale pubblico accessibile, oltre a essere un requisito previsto dalla legge n. 4 del 9 gennaio 2004 e dalle Linee guida sull’accessibilità degli strumenti informatici quindi obbligatorio, è importante per **garantire il diritto a tutte le cittadine e i cittadini di navigare e comprendere i contenuti, a prescindere dalle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità**.
 
             Un sito o servizio di qualità è un sito o servizio **progettato per tutti**.
-
 
   highlightCards:
     id: HC1
@@ -210,7 +206,6 @@ components:
 
     # CARDS
     cards: # AUTO?
-
       # CARD CHILDREN
       - title: "Azione 1"
         text: | #C
@@ -221,8 +216,7 @@ components:
         url: "azione-1/" #M
         rounded: true
 
-  sectionsEditorial2 :
-
+  sectionsEditorial2:
     # —
     # EDITORIAL #C #I
     # —
@@ -232,16 +226,15 @@ components:
       background: null
       noSpace: true
       components:
-
         # TXT BLOCK
         - name: TextImageCta
           #title: Riferimenti normativi #C
           text: | #C
-           - **Legge 9 gennaio 2004, n. 4**
-             Disposizioni per favorire l'accesso dei soggetti disabili agli strumenti informatici.
+            - **Legge 9 gennaio 2004, n. 4**
+              Disposizioni per favorire l'accesso dei soggetti disabili agli strumenti informatici.
 
-           - **Linee guida sull'accessibilità degli strumenti informatici**
-             Adottate da AGID con Determinazione n. 396 in data 8 settembre 2020.
+            - **Linee guida sull'accessibilità degli strumenti informatici**
+              Adottate da AGID con Determinazione n. 396 in data 8 settembre 2020.
 
         # TXT BLOCK
         - name: TextImageCta
