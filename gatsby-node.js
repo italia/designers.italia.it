@@ -112,8 +112,8 @@ exports.onCreateNode = async ({
       createNode(contentNode);
       createParentChildLink({ parent: node, child: contentNode });
     } else if (node.sourceInstanceName === "editorialBoard") {
-      // editorialboard setting nodes 
-      // XXX > NOW WE HAVE THEM ON THE GRAPHQL SCHEMA, we have just to read them... and create the right array for the right page below... who know if it's the best way to do this... 
+      // editorialboard setting nodes
+      // XXX > NOW WE HAVE THEM ON THE GRAPHQL SCHEMA, we have just to read them... and create the right array for the right page below... who know if it's the best way to do this...
       /*
       try this query: 
         
@@ -180,29 +180,29 @@ exports.createPages = async ({ graphql, actions }) => {
   const tags = await graphql(`
     {
       tagsGroup: allContent {
-    group(field: { components: { hero: { kangaroo: { tags: SELECT } } } }) {
-      fieldValue
+        group(field: { components: { hero: { kangaroo: { tags: SELECT } } } }) {
+          fieldValue
+        }
+      }
     }
-  }
-    }
-`);
+  `);
   tags.data.tagsGroup.group.forEach((tag) => {
     if (process.env.DEBUG === "true") {
-      console.log(`Creating tag page: ${ tag.fieldValue } `);
+      console.log(`Creating tag page: ${tag.fieldValue} `);
     }
     createPage({
-      path: `/ argomenti / ${ _.kebabCase(tag.fieldValue) } /`,
-component: tagTemplate,
-  context: {
-  tag: tag.fieldValue,
+      path: `/ argomenti / ${_.kebabCase(tag.fieldValue)} /`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
       },
     });
   });
-// tagsDesignSystem
-const tagDesignSystemTemplate = path.resolve(
-  "src/templates/design-system-index-components-tags.js",
-);
-const tagsDesignSystem = await graphql(`
+  // tagsDesignSystem
+  const tagDesignSystemTemplate = path.resolve(
+    "src/templates/design-system-index-components-tags.js",
+  );
+  const tagsDesignSystem = await graphql(`
     {
       tagsDesignSystemGroup: allContent {
         group(
@@ -215,24 +215,24 @@ const tagsDesignSystem = await graphql(`
       }
     }
   `);
-tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach((tag) => {
-  if (process.env.DEBUG === "true") {
-    console.log(`Creating tag page: ${tag.fieldValue}`);
-  }
-  createPage({
-    path: `/design-system/componenti/utili-per/${_.kebabCase(
-      tag.fieldValue,
-    )}/`,
-    component: tagDesignSystemTemplate,
-    context: {
-      tag: tag.fieldValue,
-    },
+  tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach((tag) => {
+    if (process.env.DEBUG === "true") {
+      console.log(`Creating tag page: ${tag.fieldValue}`);
+    }
+    createPage({
+      path: `/design-system/componenti/utili-per/${_.kebabCase(
+        tag.fieldValue,
+      )}/`,
+      component: tagDesignSystemTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    });
   });
-});
 
-// redirs
-const { createRedirect } = actions;
-const redirs = await graphql(`
+  // redirs
+  const { createRedirect } = actions;
+  const redirs = await graphql(`
     {
       allContent(filter: { metadata: { redirect_from: { ne: null } } }) {
         edges {
@@ -248,15 +248,15 @@ const redirs = await graphql(`
       }
     }
   `);
-redirs.data.allContent.edges.forEach((edge) => {
-  const { node } = edge;
-  node.metadata.redirect_from.forEach((fromPath) => {
-    const toPath = edge.node.seo.pathname;
-    if (process.env.DEBUG === "true") {
-      console.log(`Creating redirect: ${fromPath} -> ${toPath}...`);
-    }
+  redirs.data.allContent.edges.forEach((edge) => {
+    const { node } = edge;
+    node.metadata.redirect_from.forEach((fromPath) => {
+      const toPath = edge.node.seo.pathname;
+      if (process.env.DEBUG === "true") {
+        console.log(`Creating redirect: ${fromPath} -> ${toPath}...`);
+      }
 
-    createRedirect({ fromPath, toPath });
+      createRedirect({ fromPath, toPath });
+    });
   });
-});
 };
