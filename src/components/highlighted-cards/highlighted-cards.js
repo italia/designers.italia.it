@@ -21,7 +21,9 @@ function HighlightedCards({ data }) {
                 Sandbox page query
               </h2>
               <p className="lead mb-5">
-                Cards loaded from an array of titles stored in gatsby-node.js and used via a global pageQuery. We have to load it dinamically. This is the way. More soon. 
+                Cards loaded from an array of titles stored in gatsby-node.js
+                and used via a global pageQuery. We have to load it dinamically.
+                This is the way. More soon.
               </p>
               <div className="row pb-4">
                 {data.edges.map(({ node }) => (
@@ -35,8 +37,6 @@ function HighlightedCards({ data }) {
                       // tag={node.components.hero.tag}
                       tags={node.components.hero.kangaroo.tags}
                     />
-                    {/* <h3><Link to={node.seo.pathname}>{node.components.hero.title}</Link></h3> */}
-                    {/* <p>{node.seo.description}</p> */}
                   </div>
                 ))}
               </div>
