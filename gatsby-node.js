@@ -75,6 +75,7 @@ exports.onCreateNode = async ({
   getCache,
 }) => {
   const CONTENT_NODE_TYPE = "Content";
+  const EDITORIALBOARD_NODE_TYPE = "EditorialBoard";
 
   if (node.internal.type === "RemoteAsset") {
     const fileNode = await createRemoteFileNode({
@@ -89,37 +90,73 @@ exports.onCreateNode = async ({
     }
   } else if (
     node.internal.type === "File" &&
-    node.sourceInstanceName === "content" &&
     (node.extension === "yaml" || node.extension === "yml")
   ) {
-    const content = await loadNodeContent(node);
-    const parsedContent = jsYaml.load(content);
+    // content
+    if (node.sourceInstanceName === "content") {
+      const content = await loadNodeContent(node);
+      const parsedContent = jsYaml.load(content);
 
-    const contentNode = {
-      ...parsedContent,
-      id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
-      parent: node.id,
-      children: [],
-      internal: {
-        type: CONTENT_NODE_TYPE,
-        contentDigest: createContentDigest(node),
-      },
-      relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ""),
-    };
+      const contentNode = {
+        ...parsedContent,
+        id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
+        parent: node.id,
+        children: [],
+        internal: {
+          type: CONTENT_NODE_TYPE,
+          contentDigest: createContentDigest(node),
+        },
+        relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ""),
+      };
 
-    createNode(contentNode);
-    createParentChildLink({ parent: node, child: contentNode });
+      createNode(contentNode);
+      createParentChildLink({ parent: node, child: contentNode });
+    } else if (node.sourceInstanceName === "editorialBoard") {
+      // editorialboard setting nodes 
+      // XXX > NOW WE HAVE THEM ON THE GRAPHQL SCHEMA, we have just to read them... and create the right array for the right page below... who know if it's the best way to do this... 
+      /*
+      try this query: 
+        
+      { allEditorialBoard {
+          nodes {
+            highlightedCards {
+              page
+              sections {
+                section
+              }
+            }
+          }
+        }
+      }
+      */
+      const content = await loadNodeContent(node);
+      const parsedContent = jsYaml.load(content);
+
+      const editorialBoardNode = {
+        ...parsedContent,
+        id: createNodeId(`${EDITORIALBOARD_NODE_TYPE}-${node.id}`),
+        parent: node.id,
+        children: [],
+        internal: {
+          type: EDITORIALBOARD_NODE_TYPE,
+          contentDigest: createContentDigest(node),
+        },
+        relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ""),
+      };
+
+      createNode(editorialBoardNode);
+      createParentChildLink({ parent: node, child: editorialBoardNode });
+    }
   }
 };
 
 /* eslint-disable consistent-return */
-exports.onCreatePage = ({ page, actions }) => {
+exports.onCreatePage = async ({ page, actions }) => {
   // add variables to pageContext
   if (page.context.highlighted) {
     return "Skipping already highlighted page";
   }
   const { createPage, deletePage } = actions;
-
   deletePage(page);
   createPage({
     ...page,
@@ -143,29 +180,29 @@ exports.createPages = async ({ graphql, actions }) => {
   const tags = await graphql(`
     {
       tagsGroup: allContent {
-        group(field: { components: { hero: { kangaroo: { tags: SELECT } } } }) {
-          fieldValue
-        }
-      }
+    group(field: { components: { hero: { kangaroo: { tags: SELECT } } } }) {
+      fieldValue
     }
-  `);
+  }
+    }
+`);
   tags.data.tagsGroup.group.forEach((tag) => {
     if (process.env.DEBUG === "true") {
-      console.log(`Creating tag page: ${tag.fieldValue}`);
+      console.log(`Creating tag page: ${ tag.fieldValue } `);
     }
     createPage({
-      path: `/argomenti/${_.kebabCase(tag.fieldValue)}/`,
-      component: tagTemplate,
-      context: {
-        tag: tag.fieldValue,
+      path: `/ argomenti / ${ _.kebabCase(tag.fieldValue) } /`,
+component: tagTemplate,
+  context: {
+  tag: tag.fieldValue,
       },
     });
   });
-  // tagsDesignSystem
-  const tagDesignSystemTemplate = path.resolve(
-    "src/templates/design-system-index-components-tags.js",
-  );
-  const tagsDesignSystem = await graphql(`
+// tagsDesignSystem
+const tagDesignSystemTemplate = path.resolve(
+  "src/templates/design-system-index-components-tags.js",
+);
+const tagsDesignSystem = await graphql(`
     {
       tagsDesignSystemGroup: allContent {
         group(
@@ -178,24 +215,24 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
-  tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach((tag) => {
-    if (process.env.DEBUG === "true") {
-      console.log(`Creating tag page: ${tag.fieldValue}`);
-    }
-    createPage({
-      path: `/design-system/componenti/utili-per/${_.kebabCase(
-        tag.fieldValue,
-      )}/`,
-      component: tagDesignSystemTemplate,
-      context: {
-        tag: tag.fieldValue,
-      },
-    });
+tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach((tag) => {
+  if (process.env.DEBUG === "true") {
+    console.log(`Creating tag page: ${tag.fieldValue}`);
+  }
+  createPage({
+    path: `/design-system/componenti/utili-per/${_.kebabCase(
+      tag.fieldValue,
+    )}/`,
+    component: tagDesignSystemTemplate,
+    context: {
+      tag: tag.fieldValue,
+    },
   });
+});
 
-  // redirs
-  const { createRedirect } = actions;
-  const redirs = await graphql(`
+// redirs
+const { createRedirect } = actions;
+const redirs = await graphql(`
     {
       allContent(filter: { metadata: { redirect_from: { ne: null } } }) {
         edges {
@@ -211,15 +248,15 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
-  redirs.data.allContent.edges.forEach((edge) => {
-    const { node } = edge;
-    node.metadata.redirect_from.forEach((fromPath) => {
-      const toPath = edge.node.seo.pathname;
-      if (process.env.DEBUG === "true") {
-        console.log(`Creating redirect: ${fromPath} -> ${toPath}...`);
-      }
+redirs.data.allContent.edges.forEach((edge) => {
+  const { node } = edge;
+  node.metadata.redirect_from.forEach((fromPath) => {
+    const toPath = edge.node.seo.pathname;
+    if (process.env.DEBUG === "true") {
+      console.log(`Creating redirect: ${fromPath} -> ${toPath}...`);
+    }
 
-      createRedirect({ fromPath, toPath });
-    });
+    createRedirect({ fromPath, toPath });
   });
+});
 };
