@@ -112,7 +112,7 @@ exports.onCreateNode = async ({
   }
 };
 
-/* eslint-disable consistent-return */ 
+/* eslint-disable consistent-return */
 exports.onCreatePage = ({ page, actions }) => {
   // add variables to pageContext
   if (page.context.highlighted) {
@@ -125,7 +125,8 @@ exports.onCreatePage = ({ page, actions }) => {
     ...page,
     context: {
       ...page.context,
-      highlighted: [ // editorial settings > we have to move this inside graphql loaded from the dedicated .yaml
+      highlighted: [
+        // editorial settings > we have to move this inside graphql loaded from the dedicated .yaml
         "Il 2023 di Designers Italia ",
         "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica",
         "Prendi parte anche tu all’evoluzione del design system del Paese",
