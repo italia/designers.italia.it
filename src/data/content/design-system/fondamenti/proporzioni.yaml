@@ -1,0 +1,148 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/organizzare-gli-spazi/proporzioni.json
+  template:
+    name: design-system-index
+
+seo:
+  name: Proporzioni
+  description: "Le proporzioni si riferiscono al rapporto tra larghezza e altezza di un'immagine che deve rimanere sempre coerente"
+  image: null
+  twitterImage: null
+  canonical: null
+  pathname: /design-system/fondamenti/proporzioni/
+
+components:
+
+  # HERO
+  hero:
+    background: null
+    title: Proporzioni
+    column: true
+    subtitle: "Le proporzioni si riferiscono al rapporto tra larghezza e altezza di un'immagine che deve rimanere sempre coerente"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase 
+
+    # KANGAROO
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia,Sviluppo interfaccia]
+  
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      components:
+        - name: TextImageCta
+          title: Cosa sono
+          headingLevel: 2
+          text: |
+            Le proporzioni delle immagini per il web indicano il rapporto tra larghezza e altezza di un'immagine. Quando si ridimensiona un'immagine, è essenziale mantenere questo rapporto per prevenire distorsioni. Ad esempio, un'immagine con un rapporto di 16:9 avrà una larghezza 16 volte superiore alla sua altezza, una proporzione comune per le immagini dei siti web e dei video.
+
+            Il mantenimento delle proporzioni corrette è vitale non solo per evitare distorsioni visive, ma anche per garantire una visualizzazione ottimale su vari dispositivi. Un'immagine con proporzioni errate potrebbe apparire corretta su un computer, ma potrebbe essere tagliata o distorta su uno smartphone o un tablet.
+
+        - name: TextImageCta
+          title: Obiettivi principali
+          headingLevel: 2
+          text: |
+            Le proporzioni delle immagini sono importanti per:
+
+            - **mantenere l'equilibrio** e l'armonia visiva durante il ridimensionamento dell'immagine;
+            - **evitare distorsioni** dell'immagine;
+            - **garantire** una corretta visualizzazione su tutti i dispositivi e risoluzioni di schermo;
+            - **scegliere il tipo di immagine** da utilizzare in base al messaggio o all'effetto visivo che si desidera trasmettere.
+
+        - name: TextImageCta
+          title: Come usare le proporzioni
+          headingLevel: 2
+          text: |
+            Per utilizzare correttamente le proporzioni delle immagini, segui questi passaggi:
+
+            1. identifica le proporzioni originali dell'immagine, utilizzando un editor di immagini o guardando le proprietà;
+            2. decidi quali proporzioni desideri per l'immagine finale, questo dipenderà dal tuo design del sito web o dall'uso previsto;
+            3. utilizza un editor di immagini per ridimensionare l'immagine mantenendo le proporzioni. La maggior parte degli editor di immagini ha una funzione di blocco del rapporto che ti consente di mantenere le proporzioni mentre ridimensioni l'immagine.
+            4. controlla l'immagine su vari dispositivi e risoluzioni di schermo per assicurarti che appaia come previsto.
+
+            Ricorda che la scelta della proporzione può influenzare l'impatto visivo dell'immagine. Ad esempio, una proporzione quadrata (1:1) potrebbe essere più adatta per un'immagine focalizzata su un singolo punto, mentre una proporzione più ampia (come 16:9) potrebbe essere migliore per un'immagine panoramica o un video.
+        
+
+
+        - name: Table
+          title: Proporzioni disponibili
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Nome
+            - text: Descrizione
+          rows:
+            - cols:
+              - text: |
+                  ![proporzione per immagine quadrata](/images/design-system/fondamenti/aspect-ratio-1_1.png)
+                  1:1
+              - text: Produce un'immagine quadrata, idonea per immagini focalizzate su un singolo punto.
+            - cols:
+              - text: |
+                  ![proporzione per immagine fotografica](/images/design-system/fondamenti/aspect-ratio-4_3.png)
+                  16:9
+              - text: La proporzione più utilizzato in fotografia.
+            - cols:
+              - text: |
+                  ![proporzione per immagine panoramica](/images/design-system/fondamenti/aspect-ratio-16_9.png)
+                  16:9
+              - text: Produce un'immagine panoramica, idonea per immagini panoramiche o video.
+
+            
+        
+
+        
