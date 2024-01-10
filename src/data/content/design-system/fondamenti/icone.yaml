@@ -85,32 +85,33 @@ components:
       text: null
       background: null
       components:
+        - name: ComponentView
+          variantName: Icone disponibili
+          source: bsi/utilities/icone
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/utilities/icone/
+          accordionOpen: false
+          accordionShow: true
+
         - name: TextImageCta
           title: A cosa servono
           headingLevel: 2
           text: |
-            Le spaziature servono a:
-            1. **organizzare un layout**: definiscono la disposizione degli elementi all'interno delle pagine e dei componenti, garantendo il rispetto di una struttura chiara e coesa;
-            2. **creare respiro**: forniscono "respiro visuale" agli elementi, evitando sovrapposizioni indesiderate e migliorando la comprensione delle informazioni;
-            3. **fornire coerenza**: l'uso consistente delle spaziature contribuisce a garantire che i layout siano uniformi e armoniosi in tutte le pagine.
+            
         
         - name: TextImageCta
           title: Come usarle
           headingLevel: 2
           text: |
-            - **definisci una gerarchia** per gestire le distanze tra gli elementi in modo logico, utilizzando spazi più ampi tra le sezioni di una pagina e spazi più stretti all'interno di una stessa sezione o componente;
-            - **usa i design token** dedicati alle spaziature, rispettando la distinzione tra quelli per lo spazio verticale (`spacing-stack`), quelli per lo spazio orizzontale (`spacing-inline`) e infine quelli per lo spazio interno ad un elemento (`spacing-inset`);
+            
         
         - name: TextImageCta
           title: I token per le icone
           headingLevel: 2
           text: |
-            I token **globali** costituiscono la lista delle misure disponibili. Come tali, non devono essere utilizzati direttamente nel design o nel codice, in favore dei token semantici. 
-
-            I token **semantici** per le spaziature sono suddivisi in base al caso d'uso:
-            - **spaziatura verticale** (stack) tra sezioni di una pagina o componenti;
-            - **spaziatura orizzontale** (inline) tra sezioni di una pagina o componenti;
-            - **spaziatura interna** (inset) a una sezione o componente.
+            
           ctas:
           - label: Vai al fondamento Design tokens #C
             url: "/design-system/fondamenti/design-tokens" #M
@@ -122,69 +123,3 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-        - name: Table
-          title: Token globali
-          responsive: table-responsive
-          addonClasses: mb-5
-          head:
-            - text: Valore
-            - text: Descrizione
-            - text: Token
-          rows:
-            - cols:
-              - text: |
-                  ![misura di spazio extra extra small](/images/design-system/fondamenti/spacing-xxs.png)
-                  4px
-              - text: Misura di spazio base xx-small
-              - tag: 
-                  label: spacing.xxs
-                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
-            - cols:
-              - text: |
-                  ![misura di spazio extra small](/images/design-system/fondamenti/spacing-xs.png)
-                  8px
-              - text: Misura di spazio x-small
-              - tag: 
-                  label: spacing.xs
-                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
-            - cols:
-              - text: |
-                  ![misura di spazio base](/images/design-system/fondamenti/spacing-s.png)
-                  16px
-              - text: Misura di spazio small
-              - tag: 
-                  label: spacing.s
-                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
-            - cols:
-              - text: |
-                  ![misura di spazio medium](/images/design-system/fondamenti/spacing-m.png)
-                  24px
-              - text: Misura di spazio medium
-              - tag: 
-                  label: spacing.m  
-                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
-            - cols:
-              - text: |
-                  ![misura di spazio large](/images/design-system/fondamenti/spacing-l.png)
-                  32px
-              - text: Misura di spazio large
-              - tag: 
-                  label: spacing.l
-                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
-            - cols:
-              - text: |
-                  ![misura di spazio extra large](/images/design-system/fondamenti/spacing-xl.png)
-                  40px
-              - text: Misura di spazio x-large
-              - tag: 
-                  label: spacing.xl
-                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
-            - cols:
-              - text: |
-                  ![misura di spazio extra extra large](/images/design-system/fondamenti/spacing-xxl.png)
-                  48px
-              - text: Misura di spazio xx-large
-              - tag: 
-                  label: spacing.xxl
-                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
