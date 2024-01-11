@@ -44,7 +44,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Aziende sanitarie locali #C
+        label: Aziende sanitarie locali (ASL) #C
         url: "../../" #M
       - title: Nella scheda operativa #C
         icon:
@@ -122,7 +122,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Aziende sanitarie locali #C
+            label: Aziende sanitarie locali (ASL) #C
             url: "../../" #M
           - title: Nella scheda operativa
             icon:
@@ -166,7 +166,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Analisi del contesto,Pianificazione]
+      tags: [Analisi del contesto,Pianificazione,Adozione modelli]
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -186,14 +186,54 @@ components:
         - name: TextImageCta
           #title: A cosa servono h3 #C
           text: | #C
-            Per pianificare l’adozione del modello di sito ASL, è fondamentale avere un quadro chiaro dei processi e delle risorse necessare a svolgere il lavoro.
+            Il rifacimento di un sito web è un’ottima opportunità per fare una ricognizione dello stato attuale, analizzare l’impatto dei contenuti esistenti e considerare l’adozione di scelte tecnologiche che possono facilitare la gestione e il mantenimento di un sito efficiente per gli utenti.
 
-            Le risorse ti aiutano a:
-            - individuare e pianificare le attività da svolgere nel dettaglio;
-            - analizzare la struttura e i contenuti del sito attuale, in modo da indirizzare le attività di migrazione e gestione dei contenuti;
-            - comprendere i criteri tecnici e di design a cui attenersi per essere conformi al modello;
-            - valutare le soluzioni adottate da altre amministrazioni.
+            In questa fase dei lavori è importante individuare le attività preparatorie, pianificare la migrazione dei contenuti e identificare requisiti e vincoli che possono impattare lo sviluppo del sito.
 
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Revisiona i contenuti attuali #C
+          headingLevel: 2
+          noSpace: false
+          text: | #C
+            Un’analisi dei contenuti attuali del sito ti aiuterà a decidere cosa migrare e cosa no.
+
+            Puoi usare il **Modello di analisi dei contenuti** di Designers Italia per creare una lista di tutte le pagine del vecchio sito, indicando le struttura gerarchica e le URL. Passa quindi in rassegna le pagine del vecchio sito, aiutandoti con strumenti per l’analisi dei dati come [Web Analytics Italia](https://webanalytics.italia.it/) e segna quali sono le pagine più visitate, i contenuti più efficaci per gli utenti ed eventuali problematiche come dati mancanti o incorretti.
+
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          title: Compara la struttura del vecchio sito con quella del modello #C
+          text: | #C
+            Consulta la struttura del nuovo sito sul **Grafico dell’alberatura** e affiancala a quella del vecchio, cercando il più possibile di far corrispondere una ad una le pagine (corrispondenza biunivoca). A ogni pagina, assegna la corretta Tipologia di contenuto dal **Documento di architettura**.
+          ctas:
+          - label: Scopri di più sulla struttura e le sezioni del modello ASL #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: # #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Identifica i requisiti e i vincoli tecnologici #C
+          headingLevel: 2
+          noSpace: false
+          text: | #C
+            L’adozione del modello ASL è completamente svincolata dalle scelte tecnologiche per la gestione quotidiana e l’aggiornamento del sito web, le quali restano una decisione degli enti in base alle proprie necessità.
+
+            È utile pianificare in anticipo e stabilire in questa fase se l’aggiornamento e la compilazione dei contenuti del sito verrà effettuata tramite codice o content management system (sistema di gestione contenuti, CMS).
+
+            La scelta di CMS, come previsto dagli articoli 68 e 69 del Codice dell’Amministrazione Digitale (CAD), dovrebbe principalmente riguardare software a riuso oppure open source. Sul **Catalogo del software della PA** è possibile trovare software già utilizzati da altre amministrazioni o pubblicare le soluzioni sviluppate in proprio.
+      
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -205,17 +245,6 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Checklist delle attività progettuali per il sito comunale #C
-            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            #srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Usa la checklist per tenere traccia delle attività progettuali per adottare il modello di sito comunale #C
-            url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/comprendi-lo-stato-dell-arte/Strumento-checklist-sito-Comuni.odt #M
-            blank: false
-            actions:
-              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/comprendi-lo-stato-dell-arte/Strumento-checklist-sito-Comuni.odt #M
-                ariaLabel: "Scarica ODT Strumento checklist delle attività progettuali per il sito comunale" #C #COMPILE FOR EACH ITEM
-                blank: false
           - label: Modello di analisi dei contenuti #C
             srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             #srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
@@ -228,26 +257,38 @@ components:
                 ariaLabel: "Scarica ODS Modello di analisi dei contenuti" #C #COMPILE FOR EACH ITEM
                 blank: false
 
-          - label: Criteri di conformità per il sito comunale #C
+          - label: "Grafico dell'alberatura del modello ASL" #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Tutti i requisiti minimi da rispettare per l’adesione al modello e le raccomandazioni aggiuntive per migliorare l’esperienza utente #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html #M
+            text: Il grafico che illustra la struttura e la posizione delle pagine del sito di una ASL #C
+            url: # #M
             blank: true
             actions:
-              - icon: ssprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html #M
-                ariaLabel: "Criteri di conformità per il sito comunale (si apre in una nuova finestra)" #C
+              - icon: ssprites.svg#it-file-pdf #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: # #M
+                ariaLabel: "Scarica il grafico dell'alberatura del modello ASL" (si apre in una nuova finestra)" #C
                 blank: true
 
-          - label: Catalogo del riuso #C
+         - label: "Documento di architettura dell'informazione del modello ASL" #C
+            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            #srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Indicazioni su tipologie di contenuto (content type), sistemi di navigazione e tassonomie per tutte le sezioni del sito di una ASL #C
+            url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/comprendi-lo-stato-dell-arte/Strumento-checklist-sito-Comuni.odt #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/comprendi-lo-stato-dell-arte/Strumento-checklist-sito-Comuni.odt #M
+                ariaLabel: "Scarica ODS Documento di architettura dell'informazione del modello ASL" #C #COMPILE FOR EACH ITEM
+                blank: false
+
+          - label: Catalogo del software della PA (Catalogo del riuso) #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni #C
-            url: https://developers.italia.it/it/search?pnrr=1&type=all_catalogue&sort_by=release_date&page=0#68d7bad414e40309778a939a5e4da9c2809011d7 #M
+            url: https://developers.italia.it/it/search?type=software_reuse&sort_by=release_date&page=0 #M
             blank: true
             actions:
               - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://developers.italia.it/it/search?pnrr=1&type=all_catalogue&sort_by=release_date&page=0#68d7bad414e40309778a939a5e4da9c2809011d7 #M
-                ariaLabel: "Catalogo del riuso (si apre in una nuova finestra)" #C
+                url: https://developers.italia.it/it/search?type=software_reuse&sort_by=release_date&page=0 #M
+                ariaLabel: "Catalogo del software della PA, Catalogo del riuso (si apre in una nuova finestra)" #C
                 blank: true
