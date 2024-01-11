@@ -24,7 +24,7 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Definisci architettura e contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  name: Definisci architettura e contenuti per il sito ASL - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Imposta la struttura informativa del sito ASL e organizza la migrazione dei contenuti. #C
   image: null #I
   twitterImage: null #I
@@ -44,7 +44,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Aziende sanitarie locali #C
+        label: Aziende sanitarie locali (ASL) #C
         url: "../../" #M
       - title: Nella scheda operativa #C
         icon:
@@ -93,8 +93,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Definisci architettura e contenuti #C
-    subtitle: Imposta la struttura informativa del sito ASL e organizza la migrazione dei contenuti #C
+    title: Definisci architettura e contenuti per il sito ASL #C
+    subtitle: Imposta la struttura informativa del sito della ASL e organizza la migrazione dei contenuti #C
     tag:
       label: Attività del modello #C
       addonClasses: mt-3 text-uppercase
@@ -122,7 +122,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "Aziende sanitarie locali" #C
+            label: "Aziende sanitarie locali (ASL)" #C
             url: "../../" #M
           - title: Nella scheda operativa #C
             icon:
@@ -179,18 +179,69 @@ components:
       centered: true
       background: null
       #text: | #C
-
       components:
 
         # TXT BLOCK
         - name: TextImageCta
           #title: A cosa servono h3 #C
           text: | #C
-            Imposta la struttura del sito ASL a partire dal documento di architettura dell’informazione, utile a realizzare front-end e back-end del sito e per organizzare i vari livelli di contenuto sulle pagine.
+            L’utilità e l’efficacia di un sito web passa soprattutto da un’organizzazione dei contenuti chiara, semplice e intuitiva. La rioriganizzazione della struttura informativa e la migrazione dei contenuti sono, infatti, due attività fondamentali da svolgere durante il rifacimento di un sito.
 
-            Il documento definisce i percorsi di navigazione e l’organizzazione dei contenuti nelle varie sezioni e livelli del sito, fondamentali per garantire l’efficienza del sito stesso.
+            È importante dedicare il giusto tempo a riorganizzare, riscrivere e ristrutturare i contenuti per renderli allineati ai bisogni degli utenti e semplici da comprendere. Le risorse a disposizione ti aiutano a gestire l’intero processo di migrazione dei contenuti sul nuovo sito: dall’impostazione delle sezioni del sito e della struttura di ogni pagina, alla definizione del linguaggio e del tono di voce da utilizzare.
 
-            Il redesign del sito è un’ottima opportunità per riorganizzare, riscrivere e ristrutturare i contenuti al fine di renderli più efficienti e allineati ai bisogni degli utenti. Le risorse a disposizione ti aiutano a gestire l’intero processo di migrazione dei contenuti sul nuovo sito: dalla revisione dei contenuti esistenti e la creazione di nuovi, all’impostazione del linguaggio e del tone of voice (tono di voce) da utilizzare.
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          title: Riorganizza la struttura del sito #C
+          text: | #C
+            Imposta la nuova struttura del sito della ASL a partire dal **Grafico dell’alberatura** e dal **Documento di architettura dell’informazione**, utile a realizzare front-end e back-end del sito e per organizzare i vari livelli di contenuto sulle pagine. 
+
+            Il documento definisce i percorsi di navigazione e l’organizzazione dei contenuti nelle varie sezioni e livelli del sito, fondamentali per garantire l’efficienza del sito stesso. 
+          ctas:
+          - label: Scopri di più sulla struttura e le sezioni del modello ASL #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: # #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Riscrivi i contenuti #C
+          headingLevel: 2
+          noSpace: false
+          text: | #C
+            Controlla sul **Documento di architettura** gli attributi necessari per ogni Tipologia di contenuto e riscrivi i tuoi contenuti. Consulta le **risorse del Design system** e la **Guida al linguaggio della Pubblica Amministrazione** per allineare il linguaggio in termini di tono di voce e vocabolario.
+
+            Con l’aiuto del **Kit SEO** di Designers Italia, individua le keyword ad alto volume di traffico che portano i contenuti a comparire tra le prime pagine di risultati ricerca di Google e usale per migliorare i titoli delle pagine, le URL, le meta description e i testi nel corpo delle pagine.
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Imposta URL parlanti e prepara i reindirizzamenti #C
+          headingLevel: 2
+          noSpace: false
+          text: | #C
+            Le URL delle pagine sono un elemento fondamentale nell'esperienza utente del sito. Le URL ottimali vengono dette "parlanti": brevi, descrittive e che rispecchiano la struttura dei vari livelli del sito. Una buona URL, infatti, permette agli utenti e ai motori di ricerca di capire di cosa parla una pagina e dove si trova nel sito.
+
+            Prendi nota delle nuove URL e affiancale a quelle vecchie sul file CSV del Modello di analisi di contenuti creato nell’attività precedente. Questo documento ti servirà per impostare i reindirizzamenti (redirects) una volta che il nuovo sito è online. Se un pagina del sito precedente non ha una corrispondenza con una del nuovo, scegli una pagina che tratta un argomento affine.
+
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Seleziona contenuti multimediali di qualità #C
+          headingLevel: 2
+          noSpace: false
+          text: | #C
+            Scegli i contenuti multimediali (immagini e video) da migrare o individuane di nuovi. Prediligi i contenuti di buona qualità e con una risoluzione ottimizzata per il web, senza testo in sovraimpressione e con soggetto centrale. Assicurati di aggiungere alt-text per le immagini e sottotitoli per i video, come da **linee guida di accessibilità WCAG 2.2**.
+
+            Ricorda che se i contenuti ritraggono delle persone, devi per legge ottenere il loro consenso. Il **Kit Privacy di Designers Italia** ti aiuta a rispettare la normativa privacy in vigore.
 
   # ///////////////////
   # RESOURCES
@@ -203,29 +254,50 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: Documento di Architettura dell’informazione - Comuni #C
+          - label: Documento di architettura dell'informazione del modello ASL #C
             srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             #srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Indicazioni su tipologie di contenuto (content type), sistemi di navigazione e tassonomie per tutte le sezioni del sito di un Comune #C
+            text: Indicazioni su tipologie di contenuto (content type), sistemi di navigazione e tassonomie per tutte le sezioni del sito di una ASL #C
             url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/definisci-architettura-e-contenuti/Architettura-informazione-sito-Comuni.ods #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: /files/resources/modelli/comuni/adotta-il-modello-di-sito-comunale/definisci-architettura-e-contenuti/Architettura-informazione-sito-Comuni.ods #M
-                ariaLabel: "Scarica ODS Documento di Architettura dell'informazione per il modello di sito comunale" #C #COMPILE FOR EACH ITEM
+                ariaLabel: "Scarica ODS Documento di Architettura dell'informazione per il modello di sito ASL" #C #COMPILE FOR EACH ITEM
                 blank: false
-          - label: Guida alla migrazione dei contenuti #C
+          - label: Tono di voce - Design system #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Tutti i passi per valutare, organizzare e migrare i contenuti esistenti sulla nuova struttura del sito comunale #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale/guida-migrazione-contenuti.html #M
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: Indicazioni per dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti #C
+            url: "/design-system/fondamenti/tono-di-voce/" #M
             blank: true
             actions:
-              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale/guida-migrazione-contenuti.html #M
-                ariaLabel: "Guida alla migrazione dei contenuti (si apre in una nuova finestra)" #C
+              - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "/design-system/fondamenti/tono-di-voce/" #M
+                ariaLabel: "Tono di voce - Design system" #C
                 blank: true
-
+          - label: Linguaggio - Design system #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre nella stessa finestra) # FOR SCREEN READER ARIA LABEL
+            text: Indicazioni per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone #C
+            url: "/design-system/fondamenti/linguaggio/" #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "/design-system/fondamenti/linguaggio/" #M
+                ariaLabel: "Linguaggio - Design system" #C
+                blank: true
+          - label: Microtesti - Design system #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter:  # FOR SCREEN READER ARIA LABEL
+            text: Indicazioni per progettare microtesti dedicati alle interfacce e rendere l’esperienza digitale semplice, fluida e coerente #C
+            url: "/design-system/fondamenti/microtesti/" #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "/design-system/fondamenti/microtesti/" #M
+                ariaLabel: "Microtesti - Design system" #C
+                blank: true
           - label: Guida al linguaggio della PA #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
@@ -237,7 +309,6 @@ components:
                 url: https://docs.italia.it/italia/designers-italia/writing-toolkit/it/bozza/index.html #M
                 ariaLabel: "Guida al linguaggio della PA (si apre in una nuova finestra)" #C
                 blank: true
-
           - label: Privacy - Kit di design #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter:  # FOR SCREEN READER ARIA LABEL
