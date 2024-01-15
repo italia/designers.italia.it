@@ -44,7 +44,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Aziende sanitarie locali #C
+        label: Aziende sanitarie locali (ASL) #C
         url: "../../" #M
       - title: Nella scheda operativa #C
         icon:
@@ -175,46 +175,71 @@ components:
       
     - menu: false
       centered: true
-      title: Le librerie di componenti e i layout di pagina
+      title: Interfacce intuitive e accessibili
       background: null
       # text: |
       
       components:
-        # TXT BLOCK
+        # TXT + IMG + CTA BLOCK
         - name: TextImageCta
-          title: 
-          headingLevel: 2
-          # noSpace: true
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          #title: Compara la struttura del vecchio sito con quella del modello #C
           text: | #C
-            Le librerie Figma dedicate ai componenti e ai layout di pagina permettono di creare rapidamente prototipi dell'interfaccia ad alta fedeltà. Combina autonomamente tipografia, colori, pulsanti, icone ed elementi visivi per creare layout personalizzati, da testare con gli utenti finali del sito web. Ciò ti consente di validare le scelte progettuali, intercettare potenziali criticità e integrare le dovute modifiche prima di passare all'aggiornamento del codice. 
+            Un buon sito web presenta interfacce intuitive, inclusive, accessibili e che non portano a errori di interazione.
 
-            Le librerie contengono tutti i layout delle principali pagine del modello e i singoli componenti di cui sono costituite, adattandosi ad eventuali esigenze specifiche. 
-
-            Se non vuoi personalizzare il modello, puoi usare direttamente i template HTML o i temi per CMS già pronti all'uso e aggiornarne i contenuti.
+            La costruzione dell’interfaccia è una delle fasi finali della realizzazione o del rifacimento di un sito web. Le risorse di questa attività ti aiutano ad assemblare velocemente l’interfaccia utente tramite componenti (tipografia, pulsanti, icone, navigazione) già validati e con uno stile visivo coerente con le altre Pubbliche Amministrazioni.
+          ctas:
+          - label: Scopri di più sull'interfaccia del modello ASL #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: # #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         # TXT BLOCK
         - name: TextImageCta
-          title: I template HTML #C
+          title: Esplora i prototipi #C
           headingLevel: 2
           noSpace: false
           text: | #C
-            I template HTML del modello, basati su UI Kit Italia e sul framework di sviluppo Bootstrap Italia, permettono di creare rapidamente il front-end del sito ASL indipendentemente dalle soluzioni tecnologiche adottate dall’amministrazione.
-
-            Seleziona i template relativi alla pagina del sito che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie a comporre l’interfaccia web.
-
-            I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le [Linee guida sull’accessibilità degli strumenti informatici](https://docs.italia.it/AGID/documenti-in-consultazione/lg-accessibilita-docs/).
-
+            Abbiamo creato i **prototipi dei principali flussi di interazione** degli utenti con il sito di una ASL. Comprendere a fondo le funzionalità del modello è fondamentale per affinare la progettazione del touchpoint digitale e dei contenuti prima dello sviluppo.
 
         # TXT BLOCK
         - name: TextImageCta
-          title: I temi per Wordpress e Drupal #C
+          title: "Assembla l'interfaccia" #C
           headingLevel: 2
           noSpace: true
           text: | #C
-            I temi per i content management system (sistema di gestione contenuti, CMS) WordPress e Drupal sono pronti all’uso e permettono di passare rapidamente alla creazione e alla gestione dei contenuti, una volta installati e configurati correttamente sul dominio istituzionale dell’ente.
+            La **libreria di componenti UI** ti permette di creare rapidamente il front-end del sito di una ASL indipendentemente dalle soluzioni tecnologiche adottate dall’ente. La libreria è basata sullo UI Kit di Designers Italia e su Bootstrap Italia, alle quali sono stati integrati alcuni elementi aggiuntivi caratterizzanti del modello.
 
-            I temi sono aggiornati alla versione 2.0 di Bootstrap Italia e rispettano i criteri di accessibilità richiesti dai livelli A e AA delle WCAG 2.1. Il loro utilizzo non prescinde da un’attenta cura editoriale di sezioni e contenuti del sito, così come dalla compilazione e pubblicazione della Dichiarazione di accessibilità prevista dalla normativa vigente.
+            Per facilitare il lavoro, abbiamo già assemblato i **layout hi-fi delle principali pagine del modello** per presentarti la struttura delle pagine e un esempio di contenuto reale.
 
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Personalizza l'interfaccia" #C
+          headingLevel: 2
+          noSpace: true
+          text: | #C
+            Aggiungi il logo dell’ASL, scegli la giusta tipologia di header e imposta i colori primari e secondari.
+
+            La **guida alla personalizzazione del modello** ti aiuta a creare un sito con una resa grafica fluida, accessibile e che rispecchia al meglio l’identità visiva dell’ente di riferimento. 
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Controlla l'accessibilità" #C
+          headingLevel: 2
+          noSpace: true
+          text: | #C
+            A corredo della libreria UI, abbiamo aggiunto delle **annotazioni di accessibilità** per aiutarti a interpretare e implementare correttamente il modello in conformità con le linee guida WCAG 2.2.
+
+            
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -310,29 +335,3 @@ components:
                 ariaLabel: "Repository GitHub: Tema Drupal per il sito comunale (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
 
-
-
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial2 :
-
-    # —
-    # EDITORIAL #C #I
-    # —
-    - title: CMS alternativi #C
-      background: null
-      menu: false
-      centered: true
-      noSpace: true
-      #text: | #C
-      #  Lorem **ipsum**
-      components:
-
-        # TXT BLOCK
-        - name: TextImageCta
-          #title: A cosa servono h3 #C
-          text: | #C
-            Con la guida del documento di architettura dell’informazione e l’uso del codice dei template HTML, la realizzazione del sito istituzionale di una ASL è completamente svincolata dalle scelte tecnologiche e dalla tipologia CMS utilizzata dagli enti.
-
-            La scelta di CMS alternativi è sempre possibile. Come previsto dagli articolo 68 e 69 del Codice dell’amministrazione digitale (Cad), dovrebbe principalmente riguardare software a riuso oppure open source. Sul [catalogo del software della PA](https://developers.italia.it/it/software) è possibile trovare software già utilizzati da altre amministrazioni o pubblicare le soluzioni sviluppate in proprio.
