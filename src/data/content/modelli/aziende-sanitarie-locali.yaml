@@ -185,7 +185,7 @@ components:
           text: | #C
             Grazie ai siti web delle ASL creati seguendo le indicazioni del modello, gli utenti possono trovare in un unico posto tutte le informazioni di cui hanno bisogno: gli indirizzi delle strutture più vicine, le modalità di accesso a visite ed esami, le indicazioni su percorsi di cura, le ultime novità e le campagne di prevenzione.
           ctas:
-          - label: Naviga un esempio di sito desktop #C
+          - label: Naviga un esempio di sito #C
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: "#" #M
             blank: true #M #C true if new tab for external links
@@ -196,17 +196,17 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Naviga un esempio di sito mobile #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: "#" #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+          #- label: Naviga un esempio di sito mobile #C
+            #screenReaderText: " (si apre in una nuova finestra)" #C
+            #url: "#" #M
+            #blank: true #M #C true if new tab for external links
+            #icon:
+              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2
               
     # —
     # EDITORIAL #C #I
@@ -310,21 +310,15 @@ components:
           - label: Documento di architettura
             icon: sprites.svg#it-file
             number: "1"
-          - label: Template HTML
+          - label: Layout hi-fi di pagina
             icon: sprites.svg#it-files
-            number: "90"
-          - label: Temi CMS
-            icon: sprites.svg#it-folder
-            number: "2"
-          - label: Servizi supportati
-            icon: sprites.svg#it-files
-            number: "26"
-          - label: Librerie di componenti
+            number: "15"
+          - label: Libreria dei componenti
             icon: sprites.svg#it-tool
-            number: "2"
-          - label: Prototipi
+            number: "1"
+          - label: Prototipi navigabili
             icon: sprites.svg#it-user
-            number: "21"
+            number: "7"
 
 
 
