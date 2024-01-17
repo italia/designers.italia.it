@@ -62,10 +62,6 @@
             transform: scale(1);
         }
 
-        .callout:not(.callout-highlight):not(.callout-more) .callout-title {
-            background-color: rgb(242, 247, 252);
-        }
-
         .it-carousel-wrapper {
             width: 96%;
         }
@@ -241,7 +237,7 @@
         },
       ])
       .onSuccess(() => {
-        document.forms['justValidate'].submit()
+        document.forms['justValidateForm'].submit()
       })
       .onFail((fields) => {
         errorWrapper.innerHTML = '';
