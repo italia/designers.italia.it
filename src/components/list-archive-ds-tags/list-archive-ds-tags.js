@@ -25,8 +25,8 @@ function ListArchiveDSTags() {
 
   return (
     <section className="pb-5" aria-describedby="archive-list-title">
-      <div className="ps-0 ps-md-3 ps-lg-4 ps-xl-5 d-md-flex flex-row align-items-center">
-        <h3 className="border-end pe-4" id="archive-list-title">
+      <div className="d-md-flex flex-row align-items-center">
+        <h3 className="h6 text-secondary border-end pe-4" id="archive-list-title">
           Esplora per utilizzo
         </h3>
         <div className="chips-list-wrapper ps-md-4">
