@@ -46,7 +46,7 @@ components:
     subtitle: Le risorse per realizzare il sito e i servizi digitali della tua amministrazione #C
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: | #C
@@ -85,6 +85,11 @@ components:
               label: "Comuni" #C
             - url: "scuole/" #M
               label: "Scuole" #C
+            - url: "musei-civici/" #M
+              label: "Musei civici" #C
+            - url: "aziende-sanitarie-locali/" #M
+              label: "Aziende sanitarie locali" #C
+  
 
   # ///////////////////
   # INTRO
@@ -169,7 +174,7 @@ components:
         - label: Scopri il modello Comuni
           btnStyle: primary
           url: "comuni/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
         #- label: Label button
           #btnStyle: outline-secondary
           #url: "#"
@@ -211,7 +216,7 @@ components:
         - label: Scopri il modello scuole
           btnStyle: primary
           url: "scuole/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
         #- label: Label button
           #btnStyle: outline-secondary
           #url: "#"
@@ -220,6 +225,42 @@ components:
           #btnStyle: outline-secondary
           #url: "#"
           #addonStyle: mb-0
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title: Musei civici #C
+      id: museicivici
+      img: /images/modelli/musei-hero.png #I
+      alt: "" #C
+      headingLevel: 3
+      background: medium # null | light | medium | dark
+      big: true
+      specular: true
+      subtitle: Il modello, in lavorazione, per il sito dei musei civici #C
+      text: "Presto disponibili le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici."
+      buttons: #C #I
+        - label: Scopri il modello Musei civici #C
+          btnStyle: primary
+          url: "musei-civici/" #M
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title: Aziende sanitarie locali (ASL) #C
+      id: aziendesanitarielocali
+      img: /images/modelli/asl-hero.png #I
+      alt: "" #C
+      headingLevel: 3
+      background: light # null | light | medium | dark
+      big: true
+      specular: false
+      subtitle: Il modello, in lavorazione, per il sito delle ASL #C
+      text: "Presto disponibili le risorse per realizzare con facilità esperienze digitali semplici e accessibili per gli utenti delle ASL."
+      buttons: #C #I
+        - label: Scopri il modello ASL #C
+          btnStyle: primary
+          url: "aziende-sanitarie-locali/" #M
 
 
     # # —
@@ -238,4 +279,4 @@ components:
     #     - label: Scopri i servizi #C
     #       btnStyle: primary
     #       url: "lorem-ipsum/" #M
-    #       addonStyle: mb-3 mb-sm-0
+    #       addonStyle: mb-3
