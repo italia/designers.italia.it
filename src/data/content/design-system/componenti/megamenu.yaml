@@ -138,6 +138,8 @@ tabs:
               5. **link "Esplora la sezione X"** per navigare verso una eventuale copertina della sezione;
               6. **lista di link** per navigare le pagine foglia della sezione.
 
+              A partire da questo schema sono poi disponibili varianti che prevedono spazi per link aggiuntivi in basso o a destra: "Esplora tutti" i contenuti della sezione in basso, e altri tipi di link correlati alla sezione in basso, o a destra.  
+
       - full: true
         noSpace: true
         paddingLeft: true
@@ -147,7 +149,15 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le varianti di megamenu sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
+
+              ### Interazioni 
+
+              Il megamenu si espande a partire dal click/tap su una voce del menu principale dell'[header](/design-system/componenti/header/). 
+              
+              Il megamenu si sviluppa in orizzontale e appare sopra ai contenuti sottostanti su dispositivi abbastanza larghi; si sviluppa in verticale con apertura a fisarmonica dentro lo spazio menu previsto dalla barra di navigazione dei dispositivi mobile/touch. Eredita il suo funzionamento di apertura dal componente [dropdown](/design-system/componenti/dropdown/). 
+              
+              La voce del menu principale dovrà essere semanticamente un pulsante `button` per definirne correttamente la sua natura di azione che agisce in pagina.
 
       - full: true
         noSpace: true
