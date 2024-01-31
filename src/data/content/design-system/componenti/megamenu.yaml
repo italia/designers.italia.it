@@ -117,11 +117,24 @@ tabs:
         paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/megamenu-completo-anatomy.png
+            alt: "Gli elementi che compongono il megamenu completo"
+          - name: TextImageCta
+            noSpace: true
             text: |
-              _In stesura_
+              Il megamenu completo è composto da questi elementi principali:
+
+              1. **freccia** che indica il pulsante di apertura; 
+              2. **sfondo** del megamenu, può essere bianco o di colore dark a seconda della variante in uso, ha una ombra per staccare dal contenuto intorno;
+              3. **immagine descrittiva** per introdurre la sezione di contenuti;
+              4. **testo descrittivo** per introdurre la sezione di contenuti;
+              5. **link "Esplora la sezione X"** per navigare verso una eventuale copertina della sezione;
+              6. **lista di link** per navigare le pagine foglia della sezione.
 
       - full: true
         noSpace: true
@@ -143,7 +156,11 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/megamenu-completo-specs.png
+            alt: "Megamenu completo con la misura di tutte le spaziature"
 
 
       - full: true
