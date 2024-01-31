@@ -63,14 +63,14 @@ function FooterMain({ id, title, cols, tagsNo, social, community, subscribe }) {
 
           {cols && (
             <div className="row">
-              {cols.map((value, index) => (
+              {cols.map((value, colsIndex) => (
                 <div
-                  key={`item-${index}`}
+                  key={`item-${colsIndex}`}
                   className="col-12 col-md-6 col-lg-3 col-sm-6 pb-mb-2 pb-lg-0"
                 >
                   <List {...value}>
-                    {value.items.map((item, index) => (
-                      <ListItem {...item} key={`subitem-${index}`} />
+                    {value.items.map((item, itemsIndex) => (
+                      <ListItem {...item} key={`subitem-${itemsIndex}`} />
                     ))}
                   </List>
                 </div>

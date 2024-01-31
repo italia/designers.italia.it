@@ -233,6 +233,7 @@ export const query = graphql`
           id
           headingLevel
           title
+          subtitle
           text
           moreButton
           moreButtonClose

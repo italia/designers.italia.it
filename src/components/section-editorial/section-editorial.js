@@ -97,7 +97,9 @@ function SectionEditorial({
     <section className={styles} aria-describedby={id}>
       <div className={container}>
         <div className={row}>
-          {menu && (
+          {
+            // XXX This is a section index template, don't remove
+            /* menu && ( }
             <div className="d-none d-lg-block col-lg-3 offset-lg-1 affix-parent">
               <div className="sidebar-wrapper my-lg-0 affix-top">
                 <div className="sidebar-linklist-wrapper">
@@ -114,7 +116,6 @@ function SectionEditorial({
                         </a>
                       </li>
                       <li>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a className="list-item medium" href="#">
                           <span>Link lista 4</span>
                         </a>
@@ -124,7 +125,8 @@ function SectionEditorial({
                 </div>
               </div>
             </div>
-          )}
+          ) */
+          }
           <div className={grid}>
             <div>
               {title && (

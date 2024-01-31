@@ -27,10 +27,9 @@ modification time, include `(last-update-skip)` somewhere in the commit message.
     ```shell
     npm i
     ```
+2.  **Start developing**
 
-2.  **Start developing.**
-
-    To start your project up run
+    To start your project up run.
 
     ```shell
     npm run dev
@@ -38,7 +37,15 @@ modification time, include `(last-update-skip)` somewhere in the commit message.
 
     Your site is now running at http://localhost:8000!
 
-3.  **Build static website (production).**
+3.  **Prepare previews of the design system**
+
+    Download and generate examples via the [Bootstrap Italia](https://italia.github.io/bootstrap-italia/) API.
+
+    ```shell
+    npm run prepare-content
+    ```
+
+4.  **Build static website (production)**
 
     To build a static version of this website, start the build process.
 
@@ -48,7 +55,18 @@ modification time, include `(last-update-skip)` somewhere in the commit message.
 
     Your statically generated site is placed inside the `public` directory.
 
-4.  **Learn more**
+5.  **Validate your work**
+
+    To lint and "prettify" your code.
+
+    ```shell
+    npm run lint:fix
+    ```
+    ```shell
+    npm run prettier:fix
+    ```
+
+6.  **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
