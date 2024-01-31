@@ -42,7 +42,7 @@ components:
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
@@ -64,7 +64,9 @@ components:
   filterCards:
     id: esplora
     title: Esplora i componenti
+    paddingX: true
     showTags: true
+    noSpace: true
     # idInput: componentCardsInput
     col2: false
     # button:
@@ -152,6 +154,10 @@ components:
         rounded: true
         fullHeight: true
         url: dropdown/
+      - title: Footer
+        rounded: true
+        fullHeight: true
+        url: footer/
       - title: Form
         rounded: true
         fullHeight: true
@@ -244,10 +250,10 @@ components:
         rounded: true
         fullHeight: true
         url: sticky/
-      - title: Tab
+      - title: Tabs
         rounded: true
         fullHeight: true
-        url: tab/
+        url: tabs/
       - title: Thumbnav
         rounded: true
         fullHeight: true
@@ -286,7 +292,7 @@ components:
         url: video-player/
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
-  sectionsEditorial :
+  sectionsEditorial:
     - fullColumn: true
       noSpace: true
       components:
@@ -294,9 +300,10 @@ components:
           img: /images/design-system/componenti.jpg
           alt: ""
 
-  sectionsEditorial2 :
+  sectionsEditorial2:
     - full: true
       noSpace: false
+      paddingLeft: true
       components:
         - name: TextImageCta
     #       noSpace: true
