@@ -22,11 +22,11 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
+    titleTag:
+      label: Pronto
+      url: "#ComponentStatus"
+      addonClasses: bg-success mb-2
+      screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Breve messaggio di testo con uno stile grafico distintivo, utile per avvisare gli utenti di un evento o di un'azione che richiede la loro attenzione"
     # img: /images/400x300.png #I
@@ -127,14 +127,68 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
         components:
-          - name: TextImageCta
-            noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/alert/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda storybook
+                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-alert--page
+                    blank: true
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
 
   - title: Progettazione
     sectionsEditorial:
@@ -173,10 +227,10 @@ tabs:
               - sopra il contenuto della pagina, quando usato come notifica.
 
               In base al tipo di avviso, la barra indicatrice può essere:
-              - blu (info), per i messaggi informativi;
-              - verde (success), per i messaggi di conferma;
-              - marrone (warning), per gli avvertimenti;
-              - rossa (danger), per gli errori critici.
+              - **blu** (info), per i messaggi informativi;
+              - **verde** (success), per i messaggi di conferma;
+              - **marrone** (warning), per gli avvertimenti;
+              - **rossa** (danger), per gli errori critici.
 
               ### Interazione
               Cliccando sul pulsante di chiusura l'alert viene rimosso dall'interfaccia.
