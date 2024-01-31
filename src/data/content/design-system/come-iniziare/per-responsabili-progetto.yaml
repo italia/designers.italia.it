@@ -39,7 +39,7 @@ components:
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
@@ -98,10 +98,11 @@ components:
         color: secondary
       tags: [Design system,Interfaccia utente]
 
-  sectionsEditorial :
+  sectionsEditorial:
 
     - full: true
       noSpace: false
+      paddingLeft: true
       title: Dalla norma all'azione
       text: In questa sezione di Designers Italia dedicata al design system, trovi una serie di strumenti che aiutano il tuo ente e i tuoi fornitori a dare seguito alle indicazioni normative sui servizi digitali e le loro interfacce
       background: null
@@ -154,8 +155,8 @@ components:
 
     - full: true
       noSpace: true
+      paddingLeft: true
       title: Oltre la norma, per fare bene
-      # text: Processi e risorse per lo sviluppo
       background: null
       components:
 
@@ -166,6 +167,18 @@ components:
             Il design system permette a chi progetta e sviluppa esperienze digitali di non reinventare la ruota, partendo da elementi di interfaccia già pensati, realizzati, testati per l’accessibilità e per funzionare su tutti i dispositivi.
 
             Valuta sempre con  i tuoi fornitori di usarlo per semplificare, velocizzare e aumentare la qualità del lavoro, fin dalle prime interazioni.
+
+        - name: TextImageCta
+          title: "L'attenzione su ciò che conta realmente: il servizio"
+          noSpace: true
+          text: |
+            Nelle discussioni sui servizi digitali si attribuisce spesso - e in maniera semplicistica - più importanza ad assunti di estetica e gusto personale rispetto a temi cruciali di efficacia, usabilità e accessibilità. 
+            
+            Questo accade perché la maggior parte delle persone tende a giudicare la qualità sulla base di impressioni sulla componente grafica del servizio, ma anche perché valutazioni puntuali su temi che riguardano l'efficacia dell'interazione, l'accessibilità o la semplicità d'uso **richiedono formazione tecnica ed esperienza per essere percepite, prima ancora che discusse**. 
+            Uno squilibrio che genera un problema di priorità, poiché un sito pubblico dall'estetica accattivante ma carente in termini di usabilità e accessibilità - o non centrato sul contesto dei suoi utilizzatori - è **un servizio pubblico inefficace**, uno spreco di risorse e denaro pubblico oltre che la **negazione di un diritto delle persone**. 
+            
+            Usare il design system permette invece di partire da una base tecnica solida che riguarda la qualità dell'interfaccia, sgomberando il campo da temi più effimeri e soggettivi per concentrare tempo, attenzione e risorse su ciò che più conta, ovvero il servizio pubblico digitale. Per esempio, la disponibilità di **componenti di design già sviluppati e testati** libera risorse per la ricerca utente sullo specifico caso d'uso, così come poter assemblare velocemente prototipi permette di pianificare la conduzione di test di usabilità in tempi più brevi, verificando con gli utilizzatori finali che la soluzione proposta sia efficace. 
+
           ctas:
           - label: Vai al fondamento Princìpi e intenzioni #C
             url: "/design-system/fondamenti/principi-e-intenzioni/" #M
@@ -183,7 +196,7 @@ components:
           text: |
             Sviluppare soluzioni personalizzate può sembrare un guadagno sul breve termine, ma accumula debito tecnico, cioè la somma di quelle complicazioni che emergono nel software dovute alla mancanza di azioni volte a ridurre la sua complessità. Trascurare azioni finalizzate a standardizzare e semplificare le soluzioni può generare problemi dopo poco tempo, rendendo soluzioni custom più costose e meno efficienti per la Pubblica Amministrazione stessa.
 
-            Il design system consente anche agli enti più piccoli di accedere a questo lavoro di standardizzazione, manutenzione e controllo della qualità fatto da tutta la comunità di pratica del digitale pubblico italiano, composta da migliaia di professionisti e abilitata dagli esperti del Dipartimento della trasformazione digitale e di AgID.
+            Il design system consente anche agli enti più piccoli di accedere a questo lavoro di standardizzazione, manutenzione e controllo della qualità fatto da tutta la comunità di pratica del digitale pubblico italiano, composta da migliaia di professionisti e abilitata dagli esperti del Dipartimento per la trasformazione digitale e di AGID.
           ctas:
           - label: Scopri le ultime discussioni e partecipa su Forum Italia #C
             url: https://forum.italia.it/c/design/user-interface/22 #M
