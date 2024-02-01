@@ -86,11 +86,11 @@ tabs:
               
               **Rendi le card azionabili.** Poiché sono una sintesi di informazioni più dettagliate, ogni singola card deve puntare a queste informazioni con un link.
 
-              **Includi contenuti unici.** Evita di ripetere immagini o informazioni che sono presenti in molte card. Questo aiuta a rendere ogni carta distintiva.
+              **Includi contenuti unici.** Evita di ripetere immagini o informazioni che sono presenti in molte card. Questo aiuta a rendere ogni carta unica.
 
               ### Attenzione a
 
-              **Non usare la card come decorazione.** Non usare questo componente per mettere un bordo attorno a qualsiasi tipo di contenuto.
+              **Non usare la card come decorazione.** Questo componente non è destinato a creare un bordo attorno a qualsiasi tipo di contenuto.
 
               **Assicurati che le immagini siano della dimensione corretta.** Le card spesso cambiano dimensione a seconda del dispositivo. Assicurati di utilizzare un'immagine che funzioni bene su qualsiasi dispositivo a qualsiasi dimensione.
 
@@ -108,14 +108,67 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
         components:
-          - name: TextImageCta
-            noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/card/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda storybook
+                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-card--page
+                    blank: true
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
 
   - title: Progettazione
     sectionsEditorial:
