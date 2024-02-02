@@ -266,11 +266,32 @@ tabs:
         paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/accordion-righticon-anatomy.png
+            alt: "Gli elementi che compongono l'accordion con icona a destra"
+          - name: TextImageCta
+            noSpace: true
             text: |
-              ...
+              Nell'esempio in immagine una composizione di tre accordion, composti dai seguenti elementi principali:
+
+              1. **header** del primo accordion aperto, con titolo e icona `chevron` a destra che ne mostra lo stato, qui mostrata la variante con sfondo che mostra lo stato
+              2. **contenuto** del primo accordion aperto
+              3. **separatore**
+              4. **header non aperti**, con titolo e icona `chevron` in stato chiuso
+
+              ### Variante con icona a sinistra
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/accordion-lefticon-anatomy.png
+            alt: "Gli elementi che compongono l'accordion con icona a sinistra"
+          - name: TextImageCta
+            noSpace: true
+            text: |             
+              La variante icona a sinistra prevede icone "+" e "-" per mostrare lo stato di apertura degli accordion. 
 
       - full: true
         noSpace: true
