@@ -2,6 +2,7 @@ import * as React from "react";
 import "../scss/styles.scss";
 import "../js/globals";
 
+import BackToTopEl from "../components/back-to-top/back-to-top";
 import Skiplinks from "../components/skiplinks/skiplinks";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
@@ -80,6 +81,14 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
         <Feedback />
       </div>
       <Footer {...FooterData.footer} />
+      <BackToTopEl
+        positionTop={0}
+        scrollLimit={100}
+        duration={800}
+        easing="easeInOutSine"
+        ariaLabel={FooterData.footer.backToTop.ariaLabel}
+        className="back-to-top mb-5 mb-lg-0"
+      />
     </div>
   );
 }
