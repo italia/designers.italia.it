@@ -75,6 +75,7 @@ exports.onCreateNode = async ({
   getCache,
 }) => {
   const CONTENT_NODE_TYPE = "Content";
+  const EDITORIALBOARD_NODE_TYPE = "EditorialBoard";
 
   if (node.internal.type === "RemoteAsset") {
     const fileNode = await createRemoteFileNode({
@@ -89,27 +90,87 @@ exports.onCreateNode = async ({
     }
   } else if (
     node.internal.type === "File" &&
-    node.sourceInstanceName === "content" &&
     (node.extension === "yaml" || node.extension === "yml")
   ) {
-    const content = await loadNodeContent(node);
-    const parsedContent = jsYaml.load(content);
+    // content
+    if (node.sourceInstanceName === "content") {
+      const content = await loadNodeContent(node);
+      const parsedContent = jsYaml.load(content);
 
-    const contentNode = {
-      ...parsedContent,
-      id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
-      parent: node.id,
-      children: [],
-      internal: {
-        type: CONTENT_NODE_TYPE,
-        contentDigest: createContentDigest(node),
-      },
-      relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ""),
-    };
+      const contentNode = {
+        ...parsedContent,
+        id: createNodeId(`${CONTENT_NODE_TYPE}-${node.id}`),
+        parent: node.id,
+        children: [],
+        internal: {
+          type: CONTENT_NODE_TYPE,
+          contentDigest: createContentDigest(node),
+        },
+        relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ""),
+      };
 
-    createNode(contentNode);
-    createParentChildLink({ parent: node, child: contentNode });
+      createNode(contentNode);
+      createParentChildLink({ parent: node, child: contentNode });
+    } else if (node.sourceInstanceName === "editorialBoard") {
+      // editorialboard setting nodes
+      // XXX > NOW WE HAVE THEM ON THE GRAPHQL SCHEMA, we have just to read them... and create the right array for the right page below... who know if it's the best way to do this...
+      /*
+      try this query: 
+        
+      { allEditorialBoard {
+          nodes {
+            highlightedCards {
+              page
+              sections {
+                section
+              }
+            }
+          }
+        }
+      }
+      */
+      const content = await loadNodeContent(node);
+      const parsedContent = jsYaml.load(content);
+
+      const editorialBoardNode = {
+        ...parsedContent,
+        id: createNodeId(`${EDITORIALBOARD_NODE_TYPE}-${node.id}`),
+        parent: node.id,
+        children: [],
+        internal: {
+          type: EDITORIALBOARD_NODE_TYPE,
+          contentDigest: createContentDigest(node),
+        },
+        relativePath: node.relativePath.replace(/(\.yaml$|\.yml$)/i, ""),
+      };
+
+      createNode(editorialBoardNode);
+      createParentChildLink({ parent: node, child: editorialBoardNode });
+    }
   }
+};
+
+/* eslint-disable consistent-return */
+exports.onCreatePage = async ({ page, actions }) => {
+  // add variables to pageContext
+  if (page.context.highlighted) {
+    return "Skipping already highlighted page";
+  }
+  const { createPage, deletePage } = actions;
+  deletePage(page);
+  createPage({
+    ...page,
+    context: {
+      ...page.context,
+      highlighted: [
+        // editorial settings > we have to move this inside graphql loaded from the dedicated .yaml
+        "Il 2023 di Designers Italia ",
+        "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica",
+        "Prendi parte anche tu all’evoluzione del design system del Paese",
+        "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto",
+      ],
+    },
+  });
 };
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -127,10 +188,10 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
   tags.data.tagsGroup.group.forEach((tag) => {
     if (process.env.DEBUG === "true") {
-      console.log(`Creating tag page: ${tag.fieldValue}`);
+      console.log(`Creating tag page: ${tag.fieldValue} `);
     }
     createPage({
-      path: `/argomenti/${_.kebabCase(tag.fieldValue)}/`,
+      path: `/ argomenti / ${_.kebabCase(tag.fieldValue)} /`,
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,

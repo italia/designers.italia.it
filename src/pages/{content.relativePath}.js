@@ -37,7 +37,7 @@ const TEMPLATES = {
   "design-system-component": TemplateDSComponent,
 };
 
-function Page({ pageContext, location, data: { content } }) {
+function Page({ pageContext, location, data: { content, highlightedCards } }) {
   const Template = content.metadata.template
     ? TEMPLATES[content.metadata.template.name]
     : TemplateBase;
@@ -47,6 +47,7 @@ function Page({ pageContext, location, data: { content } }) {
   return (
     <Template
       Pagedata={content}
+      highlightedCards={highlightedCards}
       pageContext={pageContext}
       location={location}
       lastModified={lastModified}
@@ -57,7 +58,38 @@ function Page({ pageContext, location, data: { content } }) {
 }
 
 export const query = graphql`
-  query ($id: String!) {
+  query ($id: String!, $highlighted: [String!]!) {
+    highlightedCards: allContent(
+      filter: { components: { hero: { title: { in: $highlighted } } } }
+      sort: { seo: { pathname: DESC } }
+    ) {
+      totalCount
+      edges {
+        node {
+          seo {
+            description
+            pathname
+            image
+          }
+          components {
+            hero {
+              title
+              tag {
+                label
+                addonClasses
+              }
+              kangaroo {
+                tags
+              }
+            }
+            imageIcons {
+              image
+              alt
+            }
+          }
+        }
+      }
+    }
     content(id: { eq: $id }) {
       id
       parent {
@@ -67,7 +99,6 @@ export const query = graphql`
           }
         }
       }
-
       metadata {
         template {
           name

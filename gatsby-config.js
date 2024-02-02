@@ -78,6 +78,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `editorialBoard`,
+        path: `./src/data/editorial-board`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `content`,
         path: `./src/data/content`,
       },
