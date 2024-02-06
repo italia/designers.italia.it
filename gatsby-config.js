@@ -27,8 +27,7 @@ module.exports = {
     description:
       "Il punto di riferimento per la progettazione dei servizi pubblici digitali",
     siteName: "Designers Italia",
-    image: "https://designers.italia.it/assets/icons/logo-it.png",
-    twitterImage: "https://designers.italia.it/assets/icons/logo-it.png",
+    image: "https://designers.italia.it/images/logo-designers-italia-quad.png",
     twitterSite: "@DesignersITA",
     twitterCreator: "Dipartimento per la trasformazione digitale e AGID",
     themeColor: "#0066cc",
