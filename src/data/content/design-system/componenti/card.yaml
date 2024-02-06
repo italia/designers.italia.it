@@ -188,7 +188,18 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              La maggior parte delle card è composta dagli stessi elementi, con poche eccezioni.
+              La maggior parte delle card è composta dagli stessi elementi, con poche eccezioni:
+
+              1. **sfondo**: la card ha un colore, solitamente bianco, e un'ombra che la mette in evidenza;
+              2. **titolo**: si tratta del nome del contenuto collegato dalla card;
+              3. **sommario**: una sintesi del contenuto della card;
+              4. **immagine**: è possibile utilizzare diversi formati - vedi proporzioni media;
+              5. **etichetta**: comunemente mostra la categoria. Può fungere da titolo o da link;
+              6. **data**: indica quando è stato pubblicato il contenuto. Non sempre è necessario;
+              7. **link**: un link "leggi tutto" può essere inserito per stimolare l'utente a scoprire di più. Non sempre è necessario. 
+              8. **bordo**: è presente solo nella variante "Highlight", mette in risalto la card;
+
+              > *Attenzione: le varianti presenti in questa scheda non sono disponibili nella libreria Bootstrap Italia.*
 
               ### Landscape
               ![Gli elementi della card editoriale Landscape](/images/design-system/componenti/card-landscape-anatomy.png)
@@ -215,7 +226,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              La card di solito ha uno sfondo bianco, quindi è importante creare il giusto contrasto con lo sfondo della pagina. Questo aiuta a suddividere il tuo contenuto in sezioni comprensibili e mostra ciò che è correlato.
+              La card solitamente è bianca, quindi è essenziale creare un contrasto adeguato con lo sfondo della pagina. 
+              Questo aiuta a dividere il tuo contenuto in sezioni facili da capire e mostra le parti correlate.
 
       - full: true
         noSpace: true
@@ -226,7 +238,22 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Le specifiche di design relative alle diverse varianti. Tutte le misure indicate sono espresse in `px`.
+
+              ### Landscape
+              ![Le specifiche della card editoriale grande](/images/design-system/componenti/card-landscape-specs.png)
+              ### Vertical
+              ![Le specifiche della card editoriale](/images/design-system/componenti/card-editorial-specs.png)
+              ### Text
+              ![Le specifiche della card editoriale con solo testo](/images/design-system/componenti/card-editorial-text-specs.png)
+              ### Icon 
+              ![Le specifiche della card editoriale con testo e icona](/images/design-system/componenti/card-editorial-icon-specs.png)
+              ### Date
+              ![Le specifiche della card editoriale con data](/images/design-system/componenti/card-date-specs.png)
+              ### Highlight
+              ![Le specifiche della card in evidenza](/images/design-system/componenti/card-highlight-specs.png)
+              ### Teaser
+              ![Le specifiche della card semplice ](/images/design-system/componenti/card-teaser-specs.png)
 
       - full: true
         noSpace: true
