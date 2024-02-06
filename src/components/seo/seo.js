@@ -24,7 +24,7 @@ export function Seo({
     twitterSite,
     themeColor,
   } = SeoGetSiteMetadata();
-  
+
   const seo = {
     siteName,
     title: title || defaultTitle,
