@@ -17,10 +17,14 @@ export default function (node: Node) {
     const { name, description, pathname, image } = content.seo;
     // specify pathroot only below second level pages
     const pathnameSplitted = pathname.split('/');
-    const pathroot = pathnameSplitted.slice(0, pathnameSplitted.length - 2).join('/');
+    const pathroot = pathnameSplitted.slice(0, pathnameSplitted.length - 2).join('/'); // < xxx pathname must finish with "/" to be correct
     // remove handmade branding in title (if present), and cut at 86 characters long/about 4 rows max
     const nameSimplified = truncate(name.replace(' - Designers Italia', ''), {
-      'length': 86,
+      'length': 80,
+    })
+
+    const descriptionSimplified = truncate(description, {
+      'length': 124
     })
 
     return (
@@ -34,9 +38,9 @@ export default function (node: Node) {
               <div style={{ fontSize: 80, fontFamily: "tBold", fontWeight: 700, lineHeight: .9, }}>
                 {nameSimplified}
               </div>
-              {/* <div style={{ fontSize: 40, fontFamily: "tRegular", fontWeight: 400, color: '#666', paddingRight: 50, display: 'flex', flexWrap: 'wrap', alignItems: 'center', marginTop: 8, }}>
-                <p>{description}</p>
-              </div> */}
+              <div style={{ fontSize: 28, fontFamily: "tRegular", fontWeight: 400, color: '#666', paddingRight: 50, display: 'flex', flexWrap: 'wrap', alignItems: 'center', marginTop: 8, }}>
+                <p>{descriptionSimplified}</p>
+              </div>
             </div>
             <div style={{ display: 'flex' }}>
               <img src="https://pbs.twimg.com/profile_images/869985002385231876/q2gatbqh_400x400.jpg" width={180} height={180} style={{}} /> {/* XXX logo image to host ourself on designers*/}
