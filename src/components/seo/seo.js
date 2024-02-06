@@ -60,7 +60,7 @@ export function Seo({
       {/* twitter metatags */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:image" content={seo.twitterImage} />
+      <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:site" content={seo.twitterSite} />
       <meta name="twitter:creator" content={seo.twitterCreator} />
       {/* icons */}
