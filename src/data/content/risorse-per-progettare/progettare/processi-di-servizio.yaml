@@ -104,7 +104,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-     Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare un’architettura dell'informazione efficace, per garantire all’utente di **raggiungere i propri obiettivi** in maniera immediata, rapida e intuitiva.
+     Con gli strumenti del kit puoi definire i processi e flussi necessari all’erogazione di un servizio e i relativi requisiti, in modo da veicolare poi la corretta esperienza di fruizione attraverso i suoi touchpoint.
     img: /images/risorse-per-progettare/icons/kit_architettura.svg #I
     alt: "" #C
 
@@ -151,14 +151,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "Progettare l’interazione dell’utente con il servizio" #C
+            label: "Progettare il servizio" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione]
+      tags: [Progettazione servizi, Esperienza utente]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -187,7 +187,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —
-    - title: A cosa serve il kit di architettura dell'informazione #C
+    - title: A cosa serve il kit di processi di servizio #C
       menu: false
       centered: true
       background: null
@@ -198,11 +198,9 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            Il modello interattivo che sta alla base di un punto di contatto digitale (o touchpoint) - per esempio i percorsi di navigazione, l’organizzazione delle informazioni e la loro fruizione - è fondamentale per garantire efficienza ed efficacia al servizio stesso.
-
-            L’architettura dell’informazione è la **struttura che organizza e classifica i contenuti** di un touchpoint e consente di definire le funzioni principali del servizio, le tipologie di contenuti da veicolare e le relazioni che intercorrono fra essi. In questo modo, permette di **individuare le modalità ed i percorsi** che condurranno l’utente a raggiungere i suoi obiettivi.
-
-            Il kit contiene strumenti operativi che, usati in maniera organica, ti aiutano a progettare una architettura dell'informazione che garantisce all’utente di raggiungere i propri obiettivi in maniera immediata, rapida e intuitiva.
+            Un servizio comprende una parte dedicata a tutto ciò che succede dietro le quinte, sia a livello di attori coinvolti che processi tecnologici (back-stage) che ne consente l’erogazione attraverso i punti di contatto (touchpoint) che ne mediano la fruizione da parte dell’utente attraverso i canali digitali o analogici 
+            (front-stage). Il kit processi di servizio aiuta a progettare processi e flussi centrati sulle esigenze del contesto e in linea con l’obiettivo del progetto. Serve descrivere, le fasi e step necessari all’erogazione del servizio e nel contempo definire nel dettaglio come veicolare un’esperienza di fruizione coerente 
+            attraverso i contenuti e le funzionalità dei suoi touchpoint digitali. 
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -210,9 +208,9 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi indicazioni pratiche relative alla progettazione di touchpoint e servizi digitali dal punto di vista delle tipologie di contenuti utilizzati (content type), dei flussi di interazione con l’utente e della modellazione dei contenuti (per esempio usando ontologie e vocabolari controllati).
           ctas:
-          - label: "Vai all'argomento Architettura dell'informazione" #C
+          - label: "Vai all'argomento Introduzione alla progettazione di servizi" #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html #M
+            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html#introduzione-alla-progettazione-di-servizi.html #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -242,27 +240,14 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: "Individua i contenuti" #C
+      - title: "Rappresenta i flussi di servizio" #C
         fullHeight: true
         rounded: true
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_architettura_scenari.svg #I
         iconImgAlt: "" #C
-        url: "individua-i-contenuti/" #M
+        url: "rappresenta-i-flussi-di-servizio/" #M
         text: | #C
-          Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni che dovrebbe avere il futuro touchpoint digitale del servizio.
-        tag:
-          label: Attività del kit #C
-
-        # CARD CHILDREN ACTION
-      - title: Organizza i contenuti #C
-        fullHeight: true
-        rounded: true
-        imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_architettura_cardsorting.svg #I
-        iconImgAlt: "" #C
-        url: "organizza-i-contenuti/" #M
-        text: | #C
-          L'attività di card sorting ti aiuta a raggruppare, ordinare e declinare i contenuti e le funzioni del tuo touchpoint in macro-categorie.
+          Utilizza la mappa per visualizzare processi, attori e touchpoint che consentono l'erogazione e fruizione di un servizio.
         tag:
           label: Attività del kit #C
