@@ -42,8 +42,8 @@ export default function (node: Node) {
                 <p>{descriptionSimplified}</p>
               </div>
             </div>
-            <div style={{ display: 'flex' }}>
-              <img src="https://pbs.twimg.com/profile_images/869985002385231876/q2gatbqh_400x400.jpg" width={180} height={180} style={{}} /> {/* XXX logo image to host ourself on designers*/}
+            <div style={{ display: 'flex' }}>            
+              <img src="https://i.imgur.com/leSBUEC.png" width={180} height={180} style={{}} /> 
             </div>
           </div>
           {image ? <div style={{ display: 'flex', backgroundColor: '#06c'}}>
