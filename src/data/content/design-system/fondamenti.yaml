@@ -39,7 +39,7 @@ components:
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
@@ -64,138 +64,110 @@ components:
     title: Esplora i fondamenti
     showTags: false
     noSpace: true
-    # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
+    paddingX: true
     col2: true
-    # button:
-    #   btnStyle: outline-secondary justify-content-center w-100
-    #   label: Filtra
-    #   iconRight: true
-    #   icon:
-    #     icon: sprites.svg#it-funnel
-    #     color: secondary
-    #     addonClasses: ms-1 flex-shrink-0
     cards:
       - title: Princìpi e intenzioni
-        # img: /images/600x400.png
-        # alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
         url: "principi-e-intenzioni/"
         fullHeight: true
         rounded: true
-        text: |
-          Il design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione.
-        # tags: [Progettazione servizi,Accessibilità,Cultura progettuale,Design system]
+        text: "Il design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione."
 
       - title: Accessibilità
-        # img: /images/600x400.png
-        # alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
         url: "accessibilita/"
         fullHeight: true
         rounded: true
-        text: |
-          Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
-        # tags: [Accessibilità,Design system,Inclusione]
+        text: "Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno."
 
       - title: Design tokens
-        # img: /images/600x400.png
-        # alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
         url: "design-tokens/"
         fullHeight: true
         rounded: true
-        text: |
-          Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali.
-        # tags: [Accessibilità,Design system,Inclusione]
+        text: "Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali."
 
       - title: Tono di voce
-        # img: /images/600x400.png
-        # alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
         url: "tono-di-voce/"
         fullHeight: true
         rounded: true
-        text: |
-          Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. In questo fondamento trovi le indicazioni per dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti.
-        # tags: [Contenuti e linguaggio,Design system]
+        text: "Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. In questo fondamento trovi le indicazioni per dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti."
 
       - title: Linguaggio
-        # img: /images/600x400.png
-        # alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
         url: "linguaggio/"
         fullHeight: true
         rounded: true
-        text: |
-          Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone.
-        # tags: [Content design,Design system]
+        text: "Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone."
 
       - title: Microtesti
-        # img: /images/600x400.png
-        # alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
         url: "microtesti/"
         fullHeight: true
         rounded: true
-        text: |
-          Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di prodotto o di servizio.
-        # tags: [Content design,Design system]
+        text: "Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di prodotto o di servizio."
 
       - title: Versionamento
-        # img: /images/600x400.png
-        # alt: Descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
         url: "versionamento/"
         fullHeight: true
         rounded: true
-        text: |
-          Usiamo il versionamento semantico su ogni risorsa del design system del Paese.
-        # tags: [Organizzazione,Design system]
+        text: "Usiamo il versionamento semantico su ogni risorsa del design system del Paese."
 
+      - title: Colori
+        url: "colori/"
+        fullHeight: true
+        rounded: true
+        text: "Usiamo un sistema di colori per garantire coerenza visiva a siti e servizi e orientare le persone verso azioni e informazioni importanti, rendendo i contenuti accessibili a tutti."
 
+      - title: Tipografia
+        url: "tipografia/"
+        fullHeight: true
+        rounded: true
+        text: "I caratteri, gli stili e le regole tipografiche da usare per presentare i contenuti di un'interfaccia digitale in modo chiaro, leggibile ed efficace."
+
+      - title: Griglia
+        url: "griglia/"
+        fullHeight: true
+        rounded: true
+        text: "La griglia di impaginazione rappresenta la struttura invisibile che permette di organizzare i contenuti della pagina."
+  
+      - title: Spaziature
+        url: "spaziature/"
+        fullHeight: true
+        rounded: true
+        text: "Le spaziature hanno il ruolo fondamentale di creare un layout dalla struttura armonica e di definire gli intervalli di spazio fra gli elementi della pagina. Un uso coerente ed equilibrato delle spaziature contribuisce a migliorare la leggibilità, l'usabilità e l'aspetto generale di un'interfaccia."
+ 
+      - title: Ombre
+        url: "ombre/"
+        fullHeight: true
+        rounded: true
+        text: "Le ombre aggiungono profondità, contrasto ed enfasi visiva ai componenti, contribuendo a migliorare l'usabilità e l'aspetto generale dell'interfaccia."
+        
+      - title: Bordi e raggi
+        url: "bordi-e-raggi/"
+        fullHeight: true
+        rounded: true
+        text: "I bordi e i raggi sono elementi fondamentali che influenzano l'aspetto visivo degli oggetti e componenti di un'interfaccia."
+
+      - title: Dimensioni
+        url: "dimensioni/"
+        fullHeight: true
+        rounded: true
+        text: "Le misure che definiscono lo spazio occupato dagli elementi di design all'interno di un'interfaccia."
+
+      - title: Proporzioni media
+        url: "proporzioni-media/"
+        fullHeight: true
+        rounded: true
+        text: "Le proporzioni delle immagini indicano il rapporto tra larghezza e altezza. Quando ridimensioni un'immagine, è essenziale mantenere questo rapporto per prevenire distorsioni."
+
+      - title: Icone
+        url: "icone/"
+        fullHeight: true
+        rounded: true
+        text: "Le icone sono elementi visivi che contengono simboli: sono cruciali per un'interfaccia di qualità e hanno lo scopo di veicolare informazioni agli utenti in modo rapido e immediato."
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
-  sectionsEditorial :
+  sectionsEditorial:
   - fullColumn: true
     noSpace: true
     components:
       - name: ImgFull
         img: /images/design-system/fondamenti.jpg
         alt: ""
-
-  sectionsEditorial2 :
-    - full: true
-      noSpace: false
-      components:
-        - name: TextImageCta
-          noSpace: true
-        #   text: |
-        #     Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare lo UI Kit e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento al framework di sviluppo Bootstrap Italia.
-        #   ctas:
-        #   - label: "Vai allo UI Kit nella community Figma " #C
-        #     url: https://www.figma.com/community/file/1105848677422572920 #M
-        #     blank: true #M #C true if new tab for external links
-        #     icon:
-        #       icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
-        #       color: primary
-        #       align: middle
-        #       hidden: true
-        #       size: sm
-        #       addonClasses: ms-2
-        #   - label: "Vai a Bootstrap Italia su GitHub " #C
-        #     url: https://github.com/italia/bootstrap-italia #M
-        #     blank: true #M #C true if new tab for external links
-        #     icon:
-        #       icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-        #       color: primary
-        #       align: middle
-        #       hidden: true
-        #       size: sm
-        #       addonClasses: ms-2

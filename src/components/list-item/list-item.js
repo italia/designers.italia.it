@@ -92,21 +92,21 @@ function ListItem({
   let icons;
   if (actions) {
     let urlHidden = false;
-    icons = actions.map((icons, index) => {
+    icons = actions.map((iconAction, actionsIndex) => {
       // to set aria-hidden if an icon on the right side has the same url of the main element
-      if (icons.url === url) urlHidden = true;
+      if (iconAction.url === url) urlHidden = true;
       else urlHidden = false;
       //
       return (
         <Link
-          to={icons.url}
-          target={icons.blank ? "_blank" : undefined}
-          rel={icons.blank ? "noreferrer" : undefined}
-          aria-label={icons.ariaLabel}
+          to={iconAction.url}
+          target={iconAction.blank ? "_blank" : undefined}
+          rel={iconAction.blank ? "noreferrer" : undefined}
+          aria-label={iconAction.ariaLabel}
           aria-hidden={urlHidden ? "true" : undefined}
-          key={`iconsaction-${index}`}
+          key={`iconsaction-${actionsIndex}`}
         >
-          <Icon {...icons} />
+          <Icon {...iconAction} />
         </Link>
       );
     });
@@ -119,7 +119,7 @@ function ListItem({
   if (metadata) {
     metadataRendered = <span className="metadata">{metadata.label}</span>;
     if (metadata.url) {
-      metadataRendered = <Link to="#">{metadataRendered}</Link>;
+      metadataRendered = <Link to={metadata.url}>{metadataRendered}</Link>;
     }
   }
   let metadataActionsRendered;
