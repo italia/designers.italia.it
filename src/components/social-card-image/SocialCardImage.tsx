@@ -37,7 +37,7 @@ export default function (node: Node) {
               <img src="https://pbs.twimg.com/profile_images/869985002385231876/q2gatbqh_400x400.jpg" width={172} height={172} style={{}} /> {/* XXX logo image to host ourself on designers*/}
             </div>
           </div>
-          <div style={{ display: 'flex', height: '640', backgroundColor: '#06c' }}>
+          <div style={{ display: 'flex', height: '640px', backgroundColor: '#06c' }}>
             {image ? <img style={{
               width: '100%',
               background: '#06c',
