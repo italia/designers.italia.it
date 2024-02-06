@@ -84,7 +84,6 @@ export const query = graphql`
       seo {
         name
         description
-        twitterImage
         # canonical
         pathname
       }
@@ -902,7 +901,6 @@ export function Head({ data: { content, contentOgImage } }) {
       title={content.seo.name}
       description={content.seo.description}
       image={contentOgImage.attributes.publicURL}
-      twitterImage={content.seo.twitterImage}
       pathname={content.seo.pathname}
       canonical={content.seo.canonical}
     />
