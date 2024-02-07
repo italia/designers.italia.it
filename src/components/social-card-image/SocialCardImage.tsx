@@ -42,7 +42,7 @@ export default function (node: Node) {
               </div>
             </div>
             <div style={{ display: 'flex' }}>
-              <img src="https://i.imgur.com/leSBUEC.png" width={180} height={180} style={{}} />
+              <img src="https://designers.italia.it/images/logo-designers-italia-quad.png" width={180} height={180} style={{}} />
             </div>
           </div>
           {image ? <div style={{ display: 'flex', backgroundColor: '#06c' }}>
