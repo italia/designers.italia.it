@@ -1,6 +1,5 @@
 import { Node } from 'gatsby'
 import React from 'react'
-import { truncate } from "lodash"
 
 interface ContentMetadata {
   seo: {
@@ -18,14 +17,8 @@ export default function (node: Node) {
     // specify pathroot only below second level pages
     const pathnameSplitted = pathname.split('/');
     const pathroot = pathnameSplitted.slice(0, pathnameSplitted.length - 2).join('/'); // < xxx pathname must finish with "/" to be correct
-    // remove handmade branding in title (if present), and cut at 86 characters long/about 4 rows max
-    const nameSimplified = truncate(name.replace(' - Designers Italia', ''), {
-      'length': 80,
-    })
-
-    const descriptionSimplified = truncate(description, {
-      'length': 124
-    })
+    // remove handmade branding in title (if present)
+    const nameSimplified = name.replace(' - Designers Italia', '')
 
     return (
       <div style={{ display: 'flex', height: '100%', width: '100%', backgroundColor: '#fff', }}>
@@ -35,18 +28,24 @@ export default function (node: Node) {
               {pathroot ? <div style={{ display: 'flex', fontSize: 36, fontFamily: "tBold", fontWeight: 700, lineHeight: .9, paddingBottom: 16, }}>
                 {pathroot}
               </div> : ''}
-              <div style={{ fontSize: 80, fontFamily: "tBold", fontWeight: 700, lineHeight: .9, }}>
+              <div style={{
+                fontSize: 72, fontFamily: "tBold", fontWeight: 700, lineHeight: .9,
+                display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden", textOverflow: "ellipsis"
+              }}>
                 {nameSimplified}
               </div>
-              <div style={{ fontSize: 28, fontFamily: "tRegular", fontWeight: 400, color: '#666', paddingRight: 50, display: 'flex', flexWrap: 'wrap', alignItems: 'center', marginTop: 8, }}>
-                <p>{descriptionSimplified}</p>
+              <div style={{
+                marginTop: 16, fontSize: 32, fontFamily: "tRegular", fontWeight: 400, color: '#666',
+                display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden", textOverflow: "ellipsis"
+              }}>
+                {description}
               </div>
             </div>
-            <div style={{ display: 'flex' }}>            
-              <img src="https://i.imgur.com/leSBUEC.png" width={180} height={180} style={{}} /> 
+            <div style={{ display: 'flex' }}>
+              <img src="https://i.imgur.com/leSBUEC.png" width={180} height={180} style={{}} />
             </div>
           </div>
-          {image ? <div style={{ display: 'flex', backgroundColor: '#06c'}}>
+          {image ? <div style={{ display: 'flex', backgroundColor: '#06c' }}>
             <img style={{
               width: '100%',
               background: '#06c',
