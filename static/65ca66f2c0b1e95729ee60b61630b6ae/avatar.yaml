@@ -154,7 +154,7 @@ tabs:
               2. **nome avatar**;
               3. **più avatar sovrapposti**;
               4. **indicatore ulteriori utenti**, indica quanti altri profili utente sono disponibili, può agire come un pulsante di apertura dropdown; 
-              5. **dropdown lista**, per mostra la lista di ulteriori utenti, opzionale.
+              5. **dropdown lista**, mostra la lista di utenti in chiaro, opzionale.
 
               Gli avatar nelle liste sovrapposte possono prevedere inoltre tooltip con il nome avatar.  
 
@@ -167,7 +167,12 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              _In stesura_
+              ### Interazioni
+              Il componente prevede la possibilità di stati di hover e di focus, da implementare a seconda del contesto. 
+
+              Se l'implementazione prevede un tooltip, questo appare all'attivazione del componente per click, tap o navigazione in focus da tastiera. 
+
+              Nel caso della variante lista con avatar sovrapposti, attivando l'indicatore con il numero di avatar nascosti, si apre un menu dropdown che mostra tutti gli avatar disponibili.
 
       - full: true
         noSpace: true
