@@ -70,7 +70,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura working on_
+              _In stesura_
 
       - full: true
         noSpace: true
@@ -118,7 +118,34 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che compongono una list](/images/design-system/componenti/list-anatomy.png)
+
+              Una list è composta da:
+              1. **elemento (item)**, da un minimo di due a n;
+              2. **elemento divisorio**, a distinguere due item;
+              3. **zona sinistra degli elementi**, può contenere titoli e altri contenuti di testo;
+              4. **zona destra degli elementi**, può contenere icone e/o metadati.
+
+              ### Varianti di item
+
+               ![Gli elementi che compongono un item nelle sue diverse varianti](/images/design-system/componenti/list-items-anatomy.png)
+
+               Un item di lista può essere:
+               1. **semplice**, solo testo; 
+               2. **con immagine thumbnail**; 
+               3. **con avatar**; 
+               4. **con link e icona freccia**;
+               5. **con link e più icone azione**;
+               6. **con link, descrizione, più icone azione e  metadati**;
+               6. **con link, descrizione e icona freccia**. 
+
+               Gli elementi utili a comporre queste varianti sono: 
+               a. **etichetta di testo**;
+               b. **immagine thumbnail o avatar**;
+               c. **metadati**, spazio per etichetta dedicata;
+               d. **icona freccia**, per link di navigazione;
+               e. **icone azione**, ad esempio più formati file;
+               f. **descrizione**, spazio per testo di approfondimento. 
 
       - full: true
         noSpace: true
@@ -140,8 +167,13 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Le specifiche di design si intendono relative a due tipologie di item: con o senza spazio per descrizioni e metadati. 
 
+              Tutte le misure indicate sono espresse in `px`.
+
+              ### Item
+
+              ![Specifiche di design di due tipologie di item list](/images/design-system/componenti/list-items-specs.png)
 
       - full: true
         noSpace: true
