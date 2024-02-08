@@ -27,8 +27,7 @@ module.exports = {
     description:
       "Il punto di riferimento per la progettazione dei servizi pubblici digitali",
     siteName: "Designers Italia",
-    image: "https://designers.italia.it/assets/icons/logo-it.png",
-    twitterImage: "https://designers.italia.it/assets/icons/logo-it.png",
+    image: "https://designers.italia.it/images/logo-designers-italia-quad.png",
     twitterSite: "@DesignersITA",
     twitterCreator: "Dipartimento per la trasformazione digitale e AGID",
     themeColor: "#0066cc",
@@ -380,6 +379,25 @@ module.exports = {
                 ?.map((s) => s.components?.map((c) => c.text))
                 .join(" ")}`,
           })),
+      },
+    },
+    {
+      resolve: `gatsby-plugin-satorare`,
+      options: {
+        path: `${__dirname}/src/components/social-card-image/SocialCardImage.tsx`,
+        width: 1200,
+        height: 630,
+        fonts: [
+          {
+            name: `tRegular`,
+            path: `${__dirname}/static/dist/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-regular.ttf`,
+          },
+          {
+            name: `tBold`,
+            path: `${__dirname}/static/dist/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-700.ttf`,
+          },
+        ],
+        target_nodes: ["Content"],
       },
     },
     {
