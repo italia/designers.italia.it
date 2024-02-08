@@ -9,31 +9,8 @@ seo:
   name: Per lo sviluppo
   description: Contribuisci alle risorse e alle librerie per sviluppare le interfacce e le esperienze di siti e servizi pubblici digitali.
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/come-contribuire/per-lo-sviluppo/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 # navPreFooter:
 #   navOtherPrevNext:
@@ -61,7 +38,7 @@ components:
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
@@ -120,17 +97,11 @@ components:
         color: secondary
       tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
 
-  sectionsEditorial :
-
-    # - fullColumn: true
-    #   noSpace: true
-    #   components:
-    #     - name: ImgFull
-    #       img: /images/design-system/uikit.jpg
-    #       alt: Schema sintetico del modello di contribuzione descritto in pagina
+  sectionsEditorial:
 
     - full: true
       noSpace: false
+      paddingLeft: true
       title: Contribuisci a Bootstrap Italia e al suo ecosistema di risorse
       text: | 
         Il kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali. 
@@ -138,7 +109,6 @@ components:
       components:
 
         - name: TextImageCta
-          # title: Approfondisci le risorse per designer
           noSpace: false
           headingLevel: 3
           text: |
@@ -150,7 +120,6 @@ components:
               screenReaderText: ""
               url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -158,11 +127,6 @@ components:
                 hidden: true
                 size: sm
                 addonClasses: ms-2
-
-        # - name: TextImageCta
-        #   title: "Come contribuire allo sviluppo di Bootstrap Italia:"
-        #   noSpace: true
-        #   headingLevel: 3
 
         - name: TextImageCta
           title: Esplora la lista di tutte le discussioni
@@ -175,7 +139,6 @@ components:
               screenReaderText: ""
               url: https://github.com/italia/bootstrap-italia/issues #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -187,7 +150,6 @@ components:
               screenReaderText: ""
               url: https://github.com/italia/design-tokens-italia/issues #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -207,7 +169,6 @@ components:
               screenReaderText: ""
               url: https://github.com/italia/bootstrap-italia/issues/new #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -219,7 +180,6 @@ components:
               screenReaderText: ""
               url: https://github.com/italia/design-tokens-italia/issues/new #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -254,7 +214,6 @@ components:
               screenReaderText: ""
               url: "/design-system/fondamenti/accessibilita/" #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -280,7 +239,6 @@ components:
               screenReaderText: ""
               url: "/design-system/fondamenti/design-tokens/" #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -288,17 +246,17 @@ components:
                 hidden: true
                 size: sm
                 addonClasses: ms-2
+
     - full: true
       noSpace: true
+      paddingLeft: true
       title: "Contribuisci all'evoluzione delle risorse community-driven React e Angular Kit"
       text: | 
        Partecipa all'aggiornamento per renderle coerenti con Bootstrap Italia e UI Kit Italia. 
       background: null
       
       components:
-
         - name: TextImageCta
-          # title: Scopri lo stato delle lavorazioni
           noSpace: false
           headingLevel: 3
           text: |
@@ -309,7 +267,6 @@ components:
             - il [primo gennaio 2023](https://github.com/twbs/release) è avvenuto l'End of Life (EOF) di Bootstrap 4 su cui si basava Bootstrap Italia v1 
             
             Di seguito le informazioni su dove trovare i lavori in corso. I commenti e i contributi di tutta la community sono più che necessari!
-
 
         - name: TextImageCta
           title: Per React Kit
@@ -322,7 +279,6 @@ components:
               screenReaderText: ""
               url: https://github.com/italia/design-react-kit/issues #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -334,7 +290,6 @@ components:
               screenReaderText: ""
               url: https://github.com/italia/design-react-kit/issues/new #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -354,7 +309,6 @@ components:
               screenReaderText: ""
               url: https://github.com/italia/design-angular-kit/issues #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -366,7 +320,6 @@ components:
               screenReaderText: ""
               url: https://github.com/italia/design-angular-kit/issues/new #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary

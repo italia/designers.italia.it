@@ -23,59 +23,56 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
         <div className="row">
           <div className={columnStyle}>
             <div className={paddingStyle}>
-              <p>
-                <small>
-                  <span>Ultimo aggiornamento: </span>
-                  <time dateTime={lastModified} title={lastModified}>
-                    {new Date(lastModified).toLocaleDateString("it-IT", {
-                      year: "numeric",
-                      month: "long",
-                      day: "numeric",
-                    })}
-                  </time>
-                  <Link
-                    to="https://creativecommons.org/licenses/by-sa/4.0/deed.it"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5"
-                  >
-                    <strong className="d-inline-block me-2">
-                      Licenza CC BY-SA 4.0
-                      <span className="visually-hidden">
-                        (si apre in una nuova finestra)
-                      </span>
-                      <Icon
-                        icon="sprites.svg#it-external-link"
-                        size="md"
-                        color="primary"
-                        addonClasses="align-middle"
-                      />
-                    </strong>
-                  </Link>
-                </small>
-              </p>
-              <p className="mb-0">
-                <small>
-                  <Link
-                    to={editGithubUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="d-inline-block text-decoration-none"
-                  >
-                    <strong className="d-inline-block me-2">
-                      Proponi una modifica a questa pagina
-                      <span className="visually-hidden">
-                        (si apre in una nuova finestra)
-                      </span>
-                    </strong>
-                    <Icon
-                      icon="sprites.svg#it-pencil"
-                      size="sm"
-                      color="primary"
-                    />
-                  </Link>
-                </small>
-              </p>
+              <div className="mb-4">
+                <span>Ultimo aggiornamento: </span>
+                <time dateTime={lastModified} title={lastModified}>
+                  {new Date(lastModified).toLocaleDateString("it-IT", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </time>
+                <Link
+                  to="https://creativecommons.org/licenses/by-sa/4.0/deed.it"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5"
+                >
+                  <strong className="me-2">
+                    Licenza CC BY-SA 4.0
+                    <span className="visually-hidden">
+                      (si apre in una nuova finestra)
+                    </span>
+                  </strong>
+                  <Icon
+                    icon="sprites.svg#it-external-link"
+                    size="sm"
+                    color="primary"
+                    addonClasses="mb-1"
+                  />
+                </Link>
+              </div>
+              <div className="mb-0">
+                <Link
+                  to={editGithubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="d-inline-block text-decoration-none"
+                >
+                  <strong className="me-2">
+                    Proponi una modifica a questa pagina
+                    <span className="visually-hidden">
+                      (si apre in una nuova finestra)
+                    </span>
+                  </strong>
+                  <Icon
+                    icon="sprites.svg#it-pencil"
+                    size="sm"
+                    color="primary"
+                    addonClasses="mb-1"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
