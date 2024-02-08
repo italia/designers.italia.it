@@ -9,8 +9,6 @@ metadata:
 seo:
   name: Avatar - Designers Italia
   description: "Rappresentazione grafica di un utente"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/avatar/
 
@@ -67,26 +65,42 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente avatar permette di rappresentare un utente o soggetto, il suo lo stato e le sue azioni in contesti di interazione. Può essere utile ad esempio per indicare l'autore di un testo, il proprio profilo in un'area riservata, gli utenti che hanno interagito con un contenuto. 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Per rappresentare un utente o soggetto durante l'esperienza.
+              - Per rappresentare lo stato e le azioni disponibili per l'utente nelle aree riservate.  
+              - Nella varianti lista (gruppi) per rappresentare chi ha interagito con il contenuto mostrato nel contesto. 
+
+              ### Attenzione a
+              - Rappresenta un solo utente o soggetto per ogni avatar.
+              - Per indicare gruppi o "oggetti" valuta di utilizzare solo icone se più indicate. 
+              - Prevedi sempre un modo di indicare il nome dell'utente; se scegli di non esplicitarlo usa tooltip e/o testi alternativi per i lettori di schermo.
+              - Usa con parsimonia le liste (gruppi) di avatar.  
+
+              ### Buone pratiche sui contenuti. 
+              - Dai la possibilità all'utente di caricare la propria immagine preferita.
+              - Implementa la possibilità per l'utente di tagliare (crop) l'immagine quadrata (o rotonda) durante o successivamente al caricamento, se possibile. 
+              - Metti a disposizione un set di icone con simboli o testo predefiniti nel caso in cui l'utente non voglia caricare un'immagine.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -97,6 +111,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         id: ComponentStatus
         components:
           - name: TextImageCta
@@ -111,37 +126,73 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che possono comporre un avatar](/images/design-system/componenti/avatar-anatomy.png)
+
+              Le varianti del componente avatar possono essere composte con i seguenti elementi:
+              1. **immagine dell'utente**; 
+              2. **forma di sfondo** per le varianti con icona o testo;
+              3. **icona** dell'utente;
+              4. **testo** con iniziali dell'utente;
+              5. **indicatore** colorato per indicare lo stato dell'utente;
+              6. **indicatore** colorato per indicare la presenza dell'utente.
+
+              Le scelte tra immagine, icona o testo a rappresentare l'utente sono alternative tra loro. 
+
+              ### Liste di avatar
+
+              ![Gli elementi che possono comporre una lista di avatar](/images/design-system/componenti/avatar-lists-anatomy.png)
+
+              Le varianti lista (o gruppo) del componente avatar possono essere composte con i seguenti elementi:
+              1. **spazio immagine**, può ospitare immagine dell'utente, icona o iniziali;  
+              2. **nome avatar**;
+              3. **più avatar sovrapposti**;
+              4. **indicatore ulteriori utenti**, indica quanti altri profili utente sono disponibili, può agire come un pulsante di apertura dropdown; 
+              5. **dropdown lista**, per mostra la lista di ulteriori utenti, opzionale.
+
+              Gli avatar nelle liste sovrapposte possono prevedere inoltre tooltip con il nome avatar.  
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              _In stesura_
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ### Varianti di dimensione
+              ![Specifiche di design di avatar](/images/design-system/componenti/avatar-sizes-specs.png)
+
+              ### Varianti con stati 
+              ![Specifiche di design di avatar con stati](/images/design-system/componenti/avatar-statuses-specs.png)
+
+              ### Liste di avatar 
+              ![Specifiche di design delle liste di avatar](/images/design-system/componenti/avatar-lists-specs.png)
 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -173,6 +224,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare

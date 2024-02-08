@@ -125,8 +125,8 @@ function TagsDesignSystem({ children, pageContext, location, data }) {
                                   {(node.components?.hero?.kangaroo
                                     ?.personalInfo?.items ||
                                     description) && (
-                                    <p className="text-secondary fw-normal d-block mb-3">
-                                      <small>{description}</small>
+                                    <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
+                                      <span>{description}</span>
                                     </p>
                                   )}
                                 </ListItem>
@@ -169,6 +169,7 @@ function TagsDesignSystem({ children, pageContext, location, data }) {
           duration={800}
           easing="easeInOutSine"
           ariaLabel={FooterData.footer.backToTop.ariaLabel}
+          className="back-to-top mb-5 mb-lg-0"
         />
       </div>
     </div>

@@ -26,10 +26,9 @@ metadata:
 seo:
   name: Formazione e disseminazione - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: "La strategia di Designers Italia per promuovere una cultura della progettazione virtuosa fra le PA italiane e i loro fornitori"  #C
-  image: null #I
-  twitterImage: null #I
+  image: https://designers.italia.it/images/progetto/formazione-e-disseminazione.jpg
   canonical: null
-  pathname: /progetto/formazione-e-disseminazione #M
+  pathname: /progetto/formazione-e-disseminazione/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -80,7 +79,7 @@ components:
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: | #C
@@ -176,55 +175,8 @@ components:
           # image: /images/600x400.png #I
           # alt: Alt lorem ipsum #C
           specular: true
-          noSpace: true
           text: | #C
-            Crediamo nel valore della community e nella necessità di **creare collaborazione con le realtà sul campo, incoraggiare la partecipazione e la condivisione di buone pratiche**, partecipare ad eventi di divulgazione e networking. L’obiettivo è quello di condividere buone pratiche attraverso l’ascolto, la collaborazione e la partecipazione della comunità di designer e developers e grazie a eventi e conferenze, collaborazioni, community call, contributi esterni sul blog.
-
-     # —
-    # EDITORIAL #C #I
-    # —
-    - title: Diamo i numeri
-      background: dark
-      headingLevel: 4
-      menu: false
-      centered: true
-      components:
-
-        # NUMBERS BLOCK
-        - name: Numbers
-          items: #C #I
-          - label: Iscritti alla community
-            icon: sprites.svg#it-user
-            number: "21000"
-          - label: Partecipanti ai corsi per PA
-            icon: sprites.svg#it-user
-            number: "1200"
-          - label: Iscritti alla newsletter
-            icon: sprites.svg#it-mail
-            number: "5000"
-          - label: Partecipanti a eventi della community
-            icon: sprites.svg#it-calendar
-            number: "1000"
-
-
-     # —
-    # EDITORIAL #C #I
-    # —
-    - #title: Promozione
-      background: null
-      menu: false
-      centered: true
-      components:
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Promozione #C
-          # image: /images/600x400.png #I
-          # alt: Alt lorem ipsum #C
-          specular: true
-          headingLevel: 3
-          text: | #C
-            Per favorire la trasformazione digitale sono fondamentali **il coinvolgimento e il supporto delle PA e dei loro fornitori**. Stabilire pubbliche relazioni con le amministrazioni pubbliche, le in-house e i fornitori privati ci permette di trovare ambasciatori a sostegno del progetto puntando a coinvolgere tutti quelli che hanno un forte impatto sulla digitalizzazione dei servizi pubblici, sia a livello centrale che locale.
+            Crediamo nel valore della community e nella necessità di **creare collaborazione con le realtà sul campo, incoraggiare la partecipazione e la condivisione di buone pratiche**, partecipare ad eventi di divulgazione e networking. L’obiettivo è quello di condividere buone pratiche attraverso l’ascolto, la collaborazione e la partecipazione della comunità di designer e developer e grazie a eventi e conferenze, collaborazioni, community call, contributi esterni sul blog.
           ctas:
           - label: Scopri le attività della community #C
             url: "/community/" #M
@@ -236,3 +188,39 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+              
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: Promozione #C
+          # image: /images/600x400.png #I
+          # alt: Alt lorem ipsum #C
+          specular: true
+          headingLevel: 3
+          noSpace: true
+          text: | #C
+            Per favorire la trasformazione digitale sono fondamentali **il coinvolgimento e il supporto delle PA e dei loro fornitori**. Stabilire pubbliche relazioni con le amministrazioni pubbliche, le in-house e i fornitori privati ci permette di trovare ambasciatori a sostegno del progetto puntando a coinvolgere tutti quelli che hanno un forte impatto sulla digitalizzazione dei servizi pubblici, sia a livello centrale che locale.
+ # —
+    # EDITORIAL #C #I
+    # —
+    - title: Diamo i numeri
+      background: dark
+      headingLevel: 3
+      menu: false
+      centered: true
+      components:
+
+        # NUMBERS BLOCK
+        - name: Numbers
+          items: #C #I
+          - label: Iscritti alla community
+            icon: sprites.svg#it-user
+            number: "24000+"
+          - label: Partecipanti ai corsi per la PA
+            icon: sprites.svg#it-user
+            number: "1200"
+          - label: Iscritti alla newsletter
+            icon: sprites.svg#it-mail
+            number: "5000+"
+          - label: Partecipanti a eventi della community
+            icon: sprites.svg#it-calendar
+            number: "1000"
