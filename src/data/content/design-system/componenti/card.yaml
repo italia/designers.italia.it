@@ -84,21 +84,20 @@ tabs:
             headingLevel: 2
             text: |
               
-              **Rendi le card azionabili.** Poiché sono una sintesi di informazioni più dettagliate, ogni singola card deve puntare a queste informazioni con un link.
-
-              **Includi contenuti unici.** Evita di ripetere immagini o informazioni che sono presenti in molte card. Questo aiuta a rendere ogni carta unica.
+              - Rendi le card azionabili poiché sono una sintesi di informazioni più dettagliate; ogni singola card deve puntare a queste informazioni con un link;
+              - Includi contenuti unici, evitando di ripetere immagini o informazioni che sono presenti in molte card;
 
               ### Attenzione a
 
-              **Non usare la card a scopo decorativo.** Questo componente non serve a creare un contorno attorno a ogni tipo di contenuto..
-
-              **Assicurati che le immagini siano della dimensione corretta.** Le card spesso cambiano dimensione a seconda del dispositivo. Assicurati di utilizzare un'immagine che funzioni bene su qualsiasi dispositivo a qualsiasi dimensione.
+              - Non usare la card a scopo decorativo, creando un contorno per qualunque tipologia di contenuto;
+              - Utilizzare la corretta semantica per le intestazioni (heading), rispettando la gerarchia visiva di base; 
+              - Usare immagini della dimensione corretta, assicurandoti che funzionino bene su qualsiasi dispositivo e dimensione;
+              - Usare gli elementi lista HTML `<ul>` e `<li>` per raggruppare molte card di un'unica sezione.
 
               ### Buone pratiche sui contenuti
 
-              **Il titolo deve essere conciso**. Evita di scrivere titoli troppo lunghi in quanto possono risultare difficili da leggere. Cerca di creare un riassunto che stimoli l'utente a saperne di più. 
-
-              **Usa la descrizione per contenuti secondari**. Gli utenti a volte ignorano le descrizioni, quindi assicurati che non contengano informazioni essenziali.
+              - Scrivi titoli concisi che stimolino l'interesse dell'utente ad approfondire il contenuto;
+              - Usa la descrizione per contenuti secondari, non per informazioni essenziali, in quanto spesso non viene letta.
 
       - full: true
         noSpace: true
@@ -198,8 +197,6 @@ tabs:
               6. **data**: indica quando è stato pubblicato il contenuto. Non sempre è necessario;
               7. **link**: un link "leggi tutto" può essere inserito per stimolare l'utente a scoprire di più. Non sempre è necessario. 
               8. **bordo**: è presente solo nella variante "Highlight", mette in risalto la card;
-
-              > *Attenzione: le varianti presenti in questa scheda non sono disponibili nella libreria Bootstrap Italia.*
 
               ### Landscape
               ![Gli elementi della card editoriale Landscape](/images/design-system/componenti/card-landscape-anatomy.png)
