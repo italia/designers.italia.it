@@ -1,5 +1,4 @@
 import { Node } from 'gatsby'
-import React from 'react'
 
 interface ContentMetadata {
   seo: {
