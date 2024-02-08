@@ -70,7 +70,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente permette di raggruppare in verticale una lista in chiaro di contenuti correlati. 
 
       - full: true
         noSpace: true
@@ -81,7 +81,33 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Per implementare una lista di informazioni correlate o che abbiano la stessa struttura. 
+              - Per implementare una lista di link di navigazione. 
+              - Per implementare una lista di utenti, con eventuali metadati.  
+              - Per implementare una lista di file da scaricare, anche in più formati.
+
+              ### Attenzione a
+              - Implementa la corretta gerarchia degli elementi, valuta sempre se implementare in alternativa liste standard, specialmente nel caso di una gerarchia o un ordine ben strutturato. 
+              - Cura le etichette di testo alternative per le icone, se rappresentano azioni o informazioni significative.  
+
+              ### Buone pratiche sui contenuti
+              - Gli elementi lista in lenea generale sono pensati per organizzare un numero limitato di contenuti.
+              - Usa se possibile un ordine degli elementi logico, ad esempio per link più usato, oppure alfabetico o numerico.
+              - Per le etichette cerca di non mescolare il tono di voce nello scorrere delle liste, a parità di livello gerarchico.  
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Alternative a questo componente
+            headingLevel: 2
+            text: |
+              - **Tables**: le tabelle sono utili a mostrare set di dati più complessi.
+              - **Dropdown**: utili per creare menu contestuali di navigazione laddove le scelte siano limitate. 
+
+
 
       - full: true
         noSpace: true
@@ -147,16 +173,16 @@ tabs:
                e. **icone azione**, ad esempio più formati file;
                f. **descrizione**, spazio per testo di approfondimento. 
 
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Comportamento
-            headingLevel: 2
-            text: |
-              *In stesura*
+      # - full: true
+      #   noSpace: true
+      #   paddingLeft: true
+      #   components:
+      #     - name: TextImageCta
+      #       noSpace: false
+      #       title: Comportamento
+      #       headingLevel: 2
+      #       text: |
+      #         *In stesura*
 
       - full: true
         noSpace: true
