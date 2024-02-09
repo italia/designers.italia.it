@@ -8,8 +8,7 @@ metadata:
 seo:
   name: Per designer
   description: Tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici.
-  image: null
-  twitterImage: null
+  image: https://designers.italia.it/images/design-system/uikit.jpg
   canonical: null
   pathname: /design-system/come-iniziare/per-designer/
 
@@ -39,7 +38,7 @@ components:
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
@@ -98,7 +97,7 @@ components:
         color: secondary
       tags: [Design system,Interfaccia utente,Progettazione interfaccia]
 
-  sectionsEditorial :
+  sectionsEditorial:
 
     - fullColumn: true
       noSpace: true
@@ -109,6 +108,7 @@ components:
 
     - full: true
       noSpace: true
+      paddingLeft: true
       title: Scopri e usa UI Kit Italia
       text: Lo strumento a disposizione dei designer per costruire e prototipare interfacce ed esperienze di siti e servizi pubblici digitali
       background: null
@@ -123,7 +123,7 @@ components:
           - label: "Leggi la notizia" #C
             url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
             blank: true #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -233,6 +233,7 @@ components:
 
     - full: true
       noSpace: true
+      paddingLeft: true
       title: Standard, open design e partecipazione
       text: Processi e risorse per la gestione di UI Kit Italia e Design Tokens Italia
       background: null
@@ -246,7 +247,7 @@ components:
           - label: Scopri come contribuire Per il design #C
             url: "/design-system/come-contribuire/per-il-design/" #M
             blank: false #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -263,7 +264,7 @@ components:
           - label: Vai al fondamento Accessibilità #C
             url: "/design-system/fondamenti/accessibilita/" #M
             blank: false #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -281,7 +282,7 @@ components:
           - label: Vai al fondamento Design tokens #C
             url: "/design-system/fondamenti/design-tokens/" #M
             blank: false #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
