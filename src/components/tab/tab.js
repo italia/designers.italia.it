@@ -16,7 +16,7 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
           id="card-simple"
           role="tablist"
         >
-          <li className="nav-item-filler flex-grow-0 px-3 p-md-0" />
+          <li className="nav-item-filler flex-grow-0" />
           <li className="nav-item">
             <TabButton
               className="nav-link active"
@@ -53,7 +53,7 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
               {tab03.title}
             </TabButton>
           </li>
-          <li className="nav-item-filler px-3 p-md-0" />
+          <li className="nav-item-filler" />
         </ul>
       </div>
       <div className="tab-content" id="card-simpleContent">

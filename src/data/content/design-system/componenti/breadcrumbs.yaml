@@ -9,8 +9,6 @@ metadata:
 seo:
   name: "Breadcrumbs - Designers Italia"
   description: "Le breadcrumbs aiutano gli utenti a capire dove si trovano nella struttura di un sito e a navigare tra i vari livelli"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/breadcrumbs/
 
@@ -77,6 +75,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -87,6 +86,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -106,6 +106,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -116,6 +117,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: true
@@ -173,6 +175,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -265,47 +268,56 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              *Immagine in via di definizione*
+              ![Gli elementi che compongono i breadcrumbs](/images/design-system/componenti/breadcrumbs-anatomy.png)
 
-              1. **Pagina del livello superiore con link**: indica il titolo della pagina del livello superiore e ne permette la navigazione tramite link
-              2. **Separatore**: distingue le pagine
-              3. **Pagina corrente**: indica il titolo della pagina su cui si trova l’utente
+              Il componente breadcrumbs è composto da:
+
+              1. **icone**: il componente è predisposto per permettere l’uso di icone, opzionali e da usare ad esempio per indicare tipo e livello delle pagine;
+              2. **pagina genitore con link**: indica il titolo della pagina del livello superiore e ne permette la navigazione tramite link;
+              3. **separatore**: distingue le pagine;
+              4. **pagina corrente**: indica il titolo della pagina su cui si trova l’utente.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              Tutti i titoli di pagina nel componente breadcrumb devono essere interattivi e rimandare alle rispettive pagine, ad eccezione della pagina corrente.
+              Tutti i titoli di pagina nel componente breadcrumbs devono essere link interattivi e rimandare alle rispettive pagine, ad eccezione della pagina corrente.
               I separatori non sono interattivi.
 
               ### Interazione
 
               - Mouse: gli utenti cliccano sui link delle breadcrumb per raggiungere le pagine corrispondenti.
-
-              - Tastiera: gli utenti navigano tra i link delle breadcrumb premendo _Tab_ e _Shift-Tab_ e raggiungono le pagine corrispondenti premendo _Enter_, una volta che il link è in focus.
+              - Tastiera: gli utenti navigano tra i link delle breadcrumb premendo _Tab_ e _Shift-Tab_ e raggiungono le pagine corrispondenti premendo _Invio_, una volta che il link è in focus.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design degli elementi dei breadcrumbs](/images/design-system/componenti/breadcrumbs-specs.png)
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -337,6 +349,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
