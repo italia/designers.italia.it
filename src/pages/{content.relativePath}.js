@@ -58,6 +58,11 @@ function Page({ pageContext, location, data: { content } }) {
 
 export const query = graphql`
   query ($id: String!) {
+    contentOgImage(parent: { id: { eq: $id } }) {
+      attributes {
+        publicURL
+      }
+    }
     content(id: { eq: $id }) {
       id
       parent {
@@ -79,8 +84,6 @@ export const query = graphql`
       seo {
         name
         description
-        image
-        twitterImage
         # canonical
         pathname
       }
@@ -898,13 +901,12 @@ export const query = graphql`
 `;
 export default Page;
 
-export function Head({ data: { content } }) {
+export function Head({ data: { content, contentOgImage } }) {
   return (
     <Seo
       title={content.seo.name}
       description={content.seo.description}
-      image={content.seo.image}
-      twitterImage={content.seo.twitterImage}
+      image={contentOgImage.attributes.publicURL}
       pathname={content.seo.pathname}
       canonical={content.seo.canonical}
     />
