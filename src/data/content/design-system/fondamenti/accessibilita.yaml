@@ -136,12 +136,11 @@ components:
           title: Linee guida e criteri di successo
           noSpace: true
           text: |
-            Il livello di conformità [richiesto](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#linee-guida-e-criteri-di-successo) per i siti della Pubblica Amministrazione dalla norma tecnica europea armonizzata **UNI EN 301 549**, corrisponde ai **livelli “A” e “AA” della W3C Recommendation WCAG 2.1**.
+            Il livello di conformità [richiesto](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#linee-guida-e-criteri-di-successo) per i siti della Pubblica Amministrazione dalla norma tecnica europea armonizzata **UNI EN 301 549**, corrisponde ai **livelli “A” e “AA” dello standard W3C Recommendation WCAG 2.1**.
           ctas:
           - label: "Linee guida accessibilità" #C
             url: "/norme-e-riferimenti/linee-guida-accessibilita/" #M
             blank: false #M #C true if new tab for external links
-           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -152,7 +151,34 @@ components:
           - label: "Specifica WCAG 2.1 in lingua italiana" #C
             url: https://www.w3.org/Translations/WCAG21-it/ #M
             blank: true #M #C true if new tab for external links
-           
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Nota sulle nuove WCAG 2.2 
+          noSpace: true
+          headingLevel: 4
+          text: |
+            La **nuova versione delle WCAG 2.2 è uno standard W3C Recommendation dal 5 ottobre 2023** che dichiara la **retrocompabilità con le WCAG 2.1**. Si consiglia pertanto, ove possibile, di lavorare già in ottica WCAG 2.2 per avere una conformità con la norma tecnica attuale e con i dettami della futura norma tecnica armonizzata di recepimento dell'European Accessibility Act.  
+          ctas:
+          - label: "Approfondimento su webaccessibile" #C
+            url: https://www.webaccessibile.org/comunicati/wcag-2-2-disponibili-in-lingua-italiana/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: "Specifica WCAG 2.2 in lingua italiana" #C
+            url: https://www.w3.org/Translations/WCAG22-it/ #M
+            blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -267,5 +293,3 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-
