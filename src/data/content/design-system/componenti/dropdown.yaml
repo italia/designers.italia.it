@@ -70,15 +70,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Il dropdown offre una navigazione veloce al contenuto desiderato, permettendo agli utenti di risparmiare tempo e accedere direttamente a specifici contenuti. 
-
-              È utile quindi per creare menu contestuali tramite un elenco di link o azioni.
+              Il dropdown offre una navigazione veloce al contenuto desiderato, permettendo agli utenti di risparmiare tempo e accedere direttamente a specifici contenuti. È utile quindi per creare menu contestuali tramite un elenco di link o azioni.
 
               Aiuta inoltre a nascondere le scelte meno rilevanti, mantenendo l'interfaccia pulita sopratutto nel caso di poco spazio a disposizione.
 
               ### Alternative a questo componente
 
-              Quando il numero di opzioni è ridotto, considera l’uso di una [select](/design-system/componenti/select) o un gruppo di [radio buttons](/design-system/componenti/radio-button).
+              Per permettere all'utente di esprimere scelte tra più elementi in un modulo (form), usa i componenti [select](/design-system/componenti/select/) e [autocomplete](/design-system/componenti/autocomplete/), o un gruppo di [radio button](/design-system/componenti/radio-button/).
 
       - full: true
         noSpace: true
@@ -89,21 +87,21 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Assicurati che il menu a tendina sia visibile e facilmente accessibile;
-              - Organizza le opzioni in un ordine logico o alfabetico;
-              - Limita il numero di opzioni per evitare all'utente un eccessivo carico cognitivo;
-              - Usa le varianti di colore nel rispetto del loro valore semantico;
+              - Assicurati che il menu a tendina sia visibile e facilmente accessibile.
+              - Organizza le opzioni in un ordine logico o alfabetico.
+              - Limita il numero di opzioni per evitare all'utente un eccessivo carico cognitivo.
+              - Usa le varianti di colore nel rispetto del loro valore semantico.
               - Nel caso ci siano molte opzioni, organizzale in sottocategorie.
 
               ### Attenzione a
 
-              - Non nascondere nel menu quelle opzioni che richiedono una accesso immediato o frequente;
-              - Garantire che il menu sia facilmente accessibile e utilizzabile con dispositivi touch, tastiera e strumenti di tecnologia assistiva come screen reader;
+              - Non nascondere nel menu quelle opzioni che richiedono una accesso immediato o frequente.
+              - Garantire che il menu sia facilmente accessibile e utilizzabile con dispositivi touch, tastiera e strumenti di tecnologia assistiva come screen reader.
               - Aggiungere un’icona all’etichetta di testo solo quando ne rafforza il significato.
 
               ### Buone pratiche sui contenuti
 
-              - Usa nomi di opzioni che siano intuitivi e facili da comprendere;
+              - Usa nomi di opzioni che siano intuitivi e facili da comprendere.
               - L'etichetta del pulsante di apertura deve descrivere in modo chiaro la finalità del menu.
 
 
@@ -263,9 +261,9 @@ tabs:
               ![Gli elementi che formano il pulsante o link del dropdown](/images/design-system/componenti/dropdown-anatomy.png)
               ![Gli elementi che formano il pulsante o link del dropdown](/images/design-system/componenti/dropdown-outline-anatomy.png)
 
-              1. **etichetta** (label): il testo rappresentare il contenuto del menu;
-              2. **icona freccia**: suggerisce all'utente cosa aspettarsi al click.
-              3. **bordo o sfondo** nelle varianti che lo prevedono;
+              1. **etichetta** (label): il testo rappresenta il contenuto del menu;
+              2. **icona freccia**: suggerisce all'utente cosa aspettarsi all'apertura.
+              3. **bordo o sfondo**: nelle varianti che lo prevedono;
 
               ### Menu
 
@@ -288,10 +286,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              - Quando l'utente fa clic sul menu a discesa, si apre un elenco di opzioni.
-              - L'utente può scorrere l'elenco e fare clic su un'opzione per selezionarla.
-              - Una volta selezionata un'opzione, il menu a discesa si chiude, mostrando l'opzione scelta.
-              - Il menu a discesa può essere riaperto per cambiare la selezione in qualsiasi momento.
+              - Quando l'utente fa clic o attiva il menu a discesa, si apre un elenco di opzioni.
+              - L'utente può scorrere l'elenco e fare clic su un'opzione, per navigare al link o per iniziare l'azione a seconda della tipologia di opzione.
 
       - full: true
         noSpace: true
