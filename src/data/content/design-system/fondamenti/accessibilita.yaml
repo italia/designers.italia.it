@@ -123,9 +123,24 @@ components:
           - label: "Approfondimento su Medium" #C
             url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099 #M
             blank: true #M #C true if new tab for external links
-           
             icon:
               icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        - name: TextImageCta
+          title: "Per cambiare la visione dell’accessibilità: da adempimento a opportunità"
+          noSpace: true
+          text: |
+            Il design system del Paese, .italia, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente.
+          ctas: 
+          - label: "Vai al fondamento Princípi e intenzioni" #C
+            url: "/design-system/fondamenti/principi-e-intenzioni/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -137,6 +152,12 @@ components:
           noSpace: true
           text: |
             Il livello di conformità [richiesto](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#linee-guida-e-criteri-di-successo) per i siti della Pubblica Amministrazione dalla norma tecnica europea armonizzata **UNI CEI EN 301549:2021** (Requisiti di accessibilità per prodotti e servizi ICT), corrisponde ai **livelli “A” e “AA” della W3C Recommendation WCAG 2.1**.
+
+            I **criteri di successo** previsti nelle WCAG 2.1 consistono in istruzioni testabili che non dipendono dalla tecnologia utilizzata. I criteri sono divisi in tredici linee guida che forniscono gli obiettivi e che rispondono a loro volta a livello più alto ai **[quattro principi](https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility) che fanno da pilastri all'accessibilità del Web**:   
+            1. [Percepibile](https://www.w3.org/Translations/WCAG21-it/#perceivable)
+            2. [Utilizzabile](https://www.w3.org/Translations/WCAG21-it/#operable)
+            3. [Comprensibile](https://www.w3.org/Translations/WCAG21-it/#understandable)
+            4. [Robusto](https://www.w3.org/Translations/WCAG21-it/#robust)
           ctas:
           - label: "Linee guida accessibilità" #C
             url: "/norme-e-riferimenti/linee-guida-accessibilita/" #M
@@ -185,31 +206,42 @@ components:
               align: middle
               hidden: true
               size: sm
-              addonClasses: ms-2
+              addonClasses: ms-2         
 
         - name: TextImageCta
           title: Profili coinvolti nella cura dell'accessibilità
           noSpace: true
           text: |
-            _In stesura_
+            L’accessibilità è una qualità da curare e testare fin dal principio del progetto, e poi far evolvere nel tempo, al pari della redazione dei contenuti e della manutenzione tecnologica. 
 
-        - name: TextImageCta
-          title: Come leggere la documentazione e lo stato dei componenti
-          noSpace: true
-          text: |
-            _In stesura_
+            I profili coinvolti nella cura dell'accessibilità, oltre gli esperti di dominio che indirizzano e validano il lavoro, sono tutti quelli coinvolti nelle diverse fasi del progetto digitale: **i responsabili progetto**, dalla raccolta dei requisiti alla validazione di processi e risultati; **i designer e gli sviluppatori** nel realizzare e manutenere progetti accessibili by design, definendo processi che abilitino il miglioramento continuo e testando fin dall'inizio del progetto; **la redazione** curando i contenuti nel tempo.
 
-        - name: TextImageCta
-          title: Consigli per il linguaggio
-          noSpace: true
-          text: |
-            _In stesura_
+            È quindi importante che tutti i profili coinvolti approfondiscano le norme, le specifiche tecniche di riferimento e le buone pratiche sul tema accessibilità per il proprio ambito di competenza, con particolare attenzione a **facilitare i passaggi di conoscenza tra le diverse fasi del progetto e tra le diverse competenze**. 
+
+        # - name: TextImageCta
+        #   title: Consigli per il linguaggio
+        #   noSpace: true
+        #   text: |
+        #     Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale.
+        #   ctas: 
+        #   - label: "Vai al fondamento Linguaggio" #C
+        #     url: "/design-system/fondamenti/linguaggio/" #M
+        #     blank: true #M #C true if new tab for external links
+        #     icon:
+        #       icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+        #       color: primary
+        #       align: middle
+        #       hidden: true
+        #       size: sm
+        #       addonClasses: ms-2  
 
         - name: TextImageCta
           noSpace: true
           title: Il design system non è tutto
           text: |
-            _In stesura_
+            I «pezzi» del design system del Paese non sono tutto: l’accessibilità è principalmente una questione semantica, di significato degli elementi e dei comportamenti. **L’utilizzo di componenti accessibili non rende automaticamente un applicativo accessibile**, tuttavia sono un aiuto fondamentale per compiere by default un processo nel modo più ottimale possibile.
+
+            Il percorso costruito attraverso il design system del Paese è proprio incentrato sul concetto di **accessibilità by default**. Per ogni attività devono essere utilizzabili elementi, strutture, procedure, che sono già passati attraverso i necessari processi di validazione (documentazione, mockup, framework, template, ecc). Al termine del processo le attività di verifica e di ottimizzazione potranno essere più limitate, per poi liberare risorse per la gestione di casi più complessi o attivare supporti più innovativi.
 
     - full: true
       noSpace: true
@@ -228,59 +260,59 @@ components:
             Il flusso di lavoro che segue prende a riferimento le implementazioni per il framework del design system **Bootstrap Italia**: è da considerare una traccia da seguire come aiuto allo sviluppo, rispetto al lavoro più completo da fare con gli esperti di dominio e con i test di usabilità.
 
             #### Test validazione HTML
-            - Implementato nelle automazioni (CI/CD) del repository di Bootstrap Italia tramite [HTMLProofer](https://github.com/gjtorikian/html-proofer)
+            - Implementato nelle automazioni (CI/CD) del repository di Bootstrap Italia tramite [HTMLProofer](https://github.com/gjtorikian/html-proofer).
 
             #### Test automatici
             I test automatici di accessibilità possono essere condotti con molteplici soluzioni, sia generaliste che dedicate a particolari aspetti, e sono talvolta essenziali per l’individuazione di problematiche specifiche; **va sottolineato tuttavia che tali soluzioni non sono soddisfacenti** per una rilevazione efficace di numerose tipologie di criteri di successo.
 
             Una lista esaustiva, ma non validata, di tali tecnologie è [disponibile sul sito del W3C](https://www.w3.org/WAI/ER/tools/).
 
-            Le soluzioni "minime" da utilizzare durante lo sviluppo sono:
-            - Controllo codice durante la scrittura (eg. con [axe-linter per VS Code](https://www.deque.com/blog/shift-further-left-with-deques-axe-linter-for-vs-code/), anche implementato nelle automazioni (CI/CD) di Bootstrap Italia);
-            - Test condotti sul DOM in-browser con estensioni (a titolo di esempio):
-              - [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=it_IT)
-              - [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn)
-            - Test condotti con script:
-              - [Pa11y](https://pa11y.org/) (implementato nelle automazioni (CI/CD) di Bootstrap Italia)
+            Le soluzioni "minime" suggerite per l'utilizzo durante lo sviluppo sono:
+            - controllo codice durante la scrittura (eg. con [axe-linter per VS Code](https://www.deque.com/blog/shift-further-left-with-deques-axe-linter-for-vs-code/), anche implementato nelle automazioni (CI/CD) di Bootstrap Italia);
+            - test condotti sul DOM in-browser con estensioni (a titolo di esempio):
+              - [WAVE Evaluation Tool](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=it_IT);
+              - [Siteimprove](https://chrome.google.com/webstore/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn);
+            - test condotti con script:
+              - [Pa11y](https://pa11y.org/) (implementato nelle automazioni (CI/CD) di Bootstrap Italia).
 
             #### Test manuali
             I test manuali sono una **fase critica che richiede competenze in materia di accessibilità in chi la esegue**. Il workflow che segue è utile per individuare durante lo sviluppo ad esempio errori nelle interazioni e nel labeling non rilevabili dai test automatici, ma **non sostituisce il test manuale condotto da esperti qualificati**.
 
             ##### Interazioni via tastiera
             Da verificare anche rispetto ai [pattern ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/):
-              - **Tab**: si sposta sul successivo elemento focusable
-              - **Shift + Tab**: si sposta sul precedente elemento focusable
-              - **Invio**: attiva link, pulsanti e altri elementi interattivi
-              - **Spazio**: attiva radio button, checkbox e pulsanti
-              - **Frecce**: navigano i radio button e le opzioni di select e dropdown, e scrollano la pagina
+              - **Tab**: si sposta sul successivo elemento focusable;
+              - **Shift + Tab**: si sposta sul precedente elemento focusable;
+              - **Invio**: attiva link, pulsanti e altri elementi interattivi;
+              - **Spazio**: attiva radio button, checkbox e pulsanti;
+              - **Frecce**: navigano i radio button e le opzioni di select e dropdown, e scrollano la pagina.
 
             Alcune delle funzionalità da verificare durante i test:
-              - l'ordine di tab è logico
-              - il focus è visibile
-              - non sono presenti "keyboard traps"
-              - comportamento delle modali
+              - l'ordine di tab è logico;
+              - il focus è visibile;
+              - non sono presenti "keyboard traps";
+              - comportamento delle modali.
 
             ##### Ingrandimento
             Supportare l'ingrandimento, nativo del browser, fino a 400% per viewport larghe 1280px, e laddove esistano elementi con scroll orizzontale, per viewport larghe 1024px.
 
             Verificare assenza di:
-             - errori nel ridimensionamento testo
-             - scroll orizzontale non desiderato (o verticale per elementi con scroll orizzontale)
-             - sovrapposizioni
-             - tagli di contenuto
-             - perdita di funzionalità
+             - errori nel ridimensionamento testo;
+             - scroll orizzontale non desiderato (o verticale per elementi con scroll orizzontale);
+             - sovrapposizioni;
+             - tagli di contenuto;
+             - perdita di funzionalità.
 
             ##### Lettore di schermo (screen reader)
             Sono disponibili diversi screen reader a seconda del sistema operativo utilizzato. In Europa [lo screen reader più utilizzato](https://webaim.org/projects/screenreadersurvey9/) è l’open source [NVDA](https://www.nvda.it/), seguito da [JAWS](https://www.freedomscientific.com/products/software/jaws/) (a pagamento) e [VoiceOver](https://www.apple.com/it/accessibility/vision/) (integrato nei sistemi operativi Apple). Il browser più utilizzato è Chrome, seguito da Edge e Safari.
             Dovendo individuare una soluzione unica per il test durante le lavorazioni, la combinazione suggerita è **Windows+Chrome+Jaws**.
 
             Controlli da eseguire:
-            - controllo sequenza lettura
-            - controllo etichette (label, label nascoste, label ARIA) e ruoli degli elementi
-            - controllo elementi interattivi
-            - controllo struttura e gerarchia titolazioni (heading), in special modo nei template di pagina
-            - controllo testi alternativi (alt text)
-            - controllo annuncio cambi dinamici del DOM (aria-live)
+            - controllo sequenza lettura;
+            - controllo etichette (label, label nascoste, label ARIA) e ruoli degli elementi;
+            - controllo elementi interattivi;
+            - controllo struttura e gerarchia titolazioni (heading), in special modo nei template di pagina;
+            - controllo testi alternativi (alt text);
+            - controllo annuncio cambi dinamici del DOM (aria-live).
           ctas:
           - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
             url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
