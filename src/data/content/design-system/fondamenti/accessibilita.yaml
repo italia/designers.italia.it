@@ -130,6 +130,16 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+          - label: "L'intervento agli Accessibility Days 2023" #C
+            url: "/community/media/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
         - name: TextImageCta
           title: "Per cambiare la visione dell’accessibilità: da adempimento a opportunità"
           noSpace: true
@@ -152,12 +162,6 @@ components:
           noSpace: true
           text: |
             Il livello di conformità [richiesto](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#linee-guida-e-criteri-di-successo) per i siti della Pubblica Amministrazione dalla norma tecnica europea armonizzata **UNI CEI EN 301549:2021** (Requisiti di accessibilità per prodotti e servizi ICT), corrisponde ai **livelli “A” e “AA” della W3C Recommendation WCAG 2.1**.
-
-            I **criteri di successo** oggetto di verifica previsti nelle WCAG 2.1 consistono in istruzioni testabili che non dipendono dalla tecnologia utilizzata. I criteri sono divisi in tredici linee guida che forniscono gli obiettivi e che rispondono a loro volta a livello più alto ai **[quattro principi](https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility) che fanno da pilastri all'accessibilità del Web**:   
-            1. [Percepibile](https://www.w3.org/Translations/WCAG21-it/#perceivable)
-            2. [Utilizzabile](https://www.w3.org/Translations/WCAG21-it/#operable)
-            3. [Comprensibile](https://www.w3.org/Translations/WCAG21-it/#understandable)
-            4. [Robusto](https://www.w3.org/Translations/WCAG21-it/#robust)
           ctas:
           - label: "Linee guida accessibilità" #C
             url: "/norme-e-riferimenti/linee-guida-accessibilita/" #M
@@ -179,6 +183,21 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+
+        - name: TextImageCta
+          noSpace: true
+          text: |
+            I **criteri di successo** oggetto di verifica previsti nelle WCAG 2.1 consistono in istruzioni testabili che non dipendono dalla tecnologia utilizzata. I criteri sono divisi in tredici linee guida che forniscono gli obiettivi e che rispondono a loro volta a livello più alto ai **quattro principi** che fanno da pilastri all'accessibilità del Web. 
+            
+            Chiunque voglia utilizzare il Web deve disporre di contenuto che sia:
+            1. **[Percepibile](https://www.w3.org/Translations/WCAG21-it/#perceivable) - Le informazioni e i componenti dell'interfaccia utente devono essere presentati agli utenti in modi in cui essi possano percepirli.**
+                - Questo significa che gli utenti devono essere in grado di percepire le informazioni presentate (non possono essere invisibili a tutti i loro sensi).
+            2. **[Utilizzabile](https://www.w3.org/Translations/WCAG21-it/#operable) - I componenti e la navigazione dell'interfaccia utente devono essere utilizzabili.**
+                - Questo significa che gli utenti devono essere in grado di utilizzare l'interfaccia (l'interfaccia non può richiedere un'interazione che l'utente non è in grado di eseguire).
+            3. **[Comprensibile](https://www.w3.org/Translations/WCAG21-it/#understandable) - Le informazioni e le operazioni dell'interfaccia utente devono essere comprensibili.**
+                - Questo significa che gli utenti devono essere in grado di comprendere le informazioni e il funzionamento dell'interfaccia utente (il contenuto o il funzionamento non possono essere al di là della loro comprensione).
+            4. **[Robusto](https://www.w3.org/Translations/WCAG21-it/#robust) - Il contenuto deve essere abbastanza robusto per essere interpretato in maniera affidabile da una grande varietà di programmi utente, comprese le tecnologie assistive.**
+                - Questo significa che gli utenti devono essere in grado di accedere ai contenuti con il progredire delle tecnologie (con l'evoluzione delle tecnologie e degli interpreti, i contenuti devono rimanere accessibili).
 
         - name: TextImageCta
           title: Nota sulle nuove WCAG 2.2 
@@ -250,6 +269,42 @@ components:
       text: Processi e risorse per l'evoluzione del design system e del suo ecosistema di risorse
       background: null
       components:
+
+        - name: TextImageCta
+          noSpace: true
+          title: "Lo stato di accessibilità dei componenti"
+          text: |          
+            Nelle schede di documentazione dei [componenti](/design-system/componenti/) è prevista una tabella che riporta quattro valutazioni soggettive sull'accessibilità del componente e delle sue varianti nel framework di sviluppo Bootstrap Italia: 
+              1. **Visivamente accessibile** - Uso e contrasto colori, leggibilità
+              2. **Amichevole con i lettori di schermo** - Struttura titolazioni, etichette e testi alternativi
+              3. **Navigabile** - Focus, struttura, navigazione da tastiera o altri device
+              4. **Comprensibile** - Comprensibile, prevedibile, gestione semplice dell'errore
+            
+            **Per svolgere queste le valutazioni è possibile isolare l'anteprima del componente in una  finestra dedicata**, con il pulsante in alto a destra dell'anteprima. Questa funzionalità permette di giudicare le caratteristiche intrinseche del componente isolate dal contesto documentazione, semplificando la necessità di implementare ambienti di test ad hoc.
+
+            **Per completare il passaggio della presente documentazione alle versioni stabili, è iniziato un nuovo ciclo completo di test che si svolgeranno tra Q1 e Q2 del 2024.**
+          ctas:
+          - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
+            url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: "Modello di contribuzione" #C
+            url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
         - name: TextImageCta
           title: Workflow per migliorare lo sviluppo dei componenti
           text: |
