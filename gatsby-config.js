@@ -85,6 +85,25 @@ const GATSBY_PLUGINS = [
     },
   },
   {
+    resolve: `gatsby-plugin-satorare`,
+    options: {
+      path: `${__dirname}/src/components/social-card-image/SocialCardImage.tsx`,
+      width: 1200,
+      height: 630,
+      fonts: [
+        {
+          name: `tRegular`,
+          path: `${__dirname}/static/dist/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-regular.ttf`,
+        },
+        {
+          name: `tBold`,
+          path: `${__dirname}/static/dist/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-700.ttf`,
+        },
+      ],
+      target_nodes: ["Content"],
+    },
+  },
+  {
     resolve: "gatsby-plugin-matomo",
     options: {
       siteId: process.env.MATOMO_SITE_ID,
@@ -388,27 +407,7 @@ const GATSBY_PLUGINS = [
 
 /* Dev / Production configurations and plugins */
 
-const ONLY_PRODUCTION_PLUGINS = [
-  {
-    resolve: `gatsby-plugin-satorare`,
-    options: {
-      path: `${__dirname}/src/components/social-card-image/SocialCardImage.tsx`,
-      width: 1200,
-      height: 630,
-      fonts: [
-        {
-          name: `tRegular`,
-          path: `${__dirname}/static/dist/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-regular.ttf`,
-        },
-        {
-          name: `tBold`,
-          path: `${__dirname}/static/dist/fonts/Titillium_Web/titillium-web-v10-latin-ext_latin-700.ttf`,
-        },
-      ],
-      target_nodes: ["Content"],
-    },
-  },
-]
+const ONLY_PRODUCTION_PLUGINS = []
 
 if (process.env.GATSBY_BUILD !== 'dev') {
   console.log("🙌 ", 'entra')
