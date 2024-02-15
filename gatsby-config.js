@@ -17,7 +17,7 @@ const gatsbyRequiredRules = path.join(
   "eslint-rules",
 );
 
-const PLUGIN_SHARP_FORMATS = ["auto", "webp"]
+const PLUGIN_SHARP_FORMATS = ["auto", "webp"];
 
 const GATSBY_PLUGINS = [
   {
@@ -407,12 +407,11 @@ const GATSBY_PLUGINS = [
 
 /* Dev / Production configurations and plugins */
 
-const ONLY_PRODUCTION_PLUGINS = []
+const ONLY_PRODUCTION_PLUGINS = [];
 
-if (process.env.GATSBY_BUILD !== 'dev') {
-  console.log("🙌 ", 'entra')
-  PLUGIN_SHARP_FORMATS.push("avif")
-  GATSBY_PLUGINS.push(...ONLY_PRODUCTION_PLUGINS)
+if (process.env.GATSBY_BUILD !== "dev") {
+  PLUGIN_SHARP_FORMATS.push("avif");
+  GATSBY_PLUGINS.push(...ONLY_PRODUCTION_PLUGINS);
 }
 
 /* ------------------------------------------ */
