@@ -10,7 +10,7 @@ interface ContentMetadata {
 }
 
 export default function (node: Node) {
-  if (node.internal.type === 'Content') {
+  if (node.internal.type === 'Content' && process.env.GATSBY_BUILD !== 'dev') {
     const content = node as unknown as ContentMetadata;
     const { name, description, pathname, image } = content.seo;
     // specify pathroot only below second level pages
