@@ -1,0 +1,333 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+  redirect_from:
+    - /design-system/componenti/tags/
+    - /design-system/componenti/utili-per/
+
+seo:
+  name: Panoramica componenti
+  description: Una raccolta di strumenti che puoi riutilizzare per progettare l’interfaccia di siti e servizi della Pubblica Amministrazione
+  image: https://designers.italia.it/images/design-system/componenti.jpg
+  canonical: null
+  pathname: /design-system/componenti/
+
+navPreFooter:
+  navOtherPrevNext:
+    next:
+      label: Next page
+      url: "#"
+      blank: false
+      specular: true
+      icon:
+        icon: "sprites.svg#it-arrow-right"
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: light
+    title: Componenti
+    column: true
+    subtitle: Una raccolta di strumenti che puoi riutilizzare per progettare l’interfaccia di siti e servizi della Pubblica Amministrazione
+    tag:
+      label: Design system #C
+      addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: |
+      Nella libreria di componenti troverai tutti gli elementi pronti all’uso e già testati per progettare un’interfaccia utente che sia accessibile, intuitiva, inclusiva e garantisca una user experience ottimale e a norma. Non devi fare altro che iniziare.
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      column: true
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia, Sviluppo interfaccia]
+
+  # /////////// COMPONENT LIST FROM HERE ////////////
+  filterCards:
+    id: esplora
+    title: Esplora i componenti
+    paddingX: true
+    showTags: true
+    noSpace: true
+    # idInput: componentCardsInput
+    col2: false
+    # button:
+    #   btnStyle: outline-secondary justify-content-center w-100
+    #   label: Filtra
+    #   iconRight: true
+    #   icon:
+    #     icon: sprites.svg#it-funnel
+    #     color: secondary
+    #     addonClasses: ms-1 flex-shrink-0
+    cards:
+      - title: Accordion
+        rounded: true
+        fullHeight: true
+        url: accordion/
+      - title: Affix
+        rounded: true
+        fullHeight: true
+        url: affix/
+      - title: Alert
+        rounded: true
+        fullHeight: true
+        url: alert/
+      - title: Autocomplete
+        rounded: true
+        fullHeight: true
+        url: autocomplete/
+      - title: Avatar
+        rounded: true
+        fullHeight: true
+        url: avatar/
+      - title: Back
+        rounded: true
+        fullHeight: true
+        url: back/
+      - title: Back to top
+        rounded: true
+        fullHeight: true
+        url: back-to-top/
+      - title: Badge
+        rounded: true
+        fullHeight: true
+        url: badge/
+      - title: Bottomnav
+        rounded: true
+        fullHeight: true
+        url: bottomnav/
+      - title: Breadcrumbs
+        rounded: true
+        fullHeight: true
+        url: breadcrumbs/
+      - title: Buttons
+        rounded: true
+        fullHeight: true
+        url: buttons/
+      - title: Callout
+        rounded: true
+        fullHeight: true
+        url: callout/
+      - title: Card
+        rounded: true
+        fullHeight: true
+        url: card/
+      - title: Carousel
+        rounded: true
+        fullHeight: true
+        url: carousel/
+      - title: Chips
+        rounded: true
+        fullHeight: true
+        url: chips/
+      - title: Collapse
+        rounded: true
+        fullHeight: true
+        url: collapse/
+      - title: Datepicker
+        rounded: true
+        fullHeight: true
+        url: datepicker/
+      - title: Dimmer
+        rounded: true
+        fullHeight: true
+        url: dimmer/
+      - title: Dropdown
+        rounded: true
+        fullHeight: true
+        url: dropdown/
+      - title: Footer
+        rounded: true
+        fullHeight: true
+        url: footer/
+      - title: Form
+        rounded: true
+        fullHeight: true
+        url: form/
+      - title: Forward
+        rounded: true
+        fullHeight: true
+        url: forward/
+      - title: Header
+        rounded: true
+        fullHeight: true
+        url: header/
+      - title: Hero
+        rounded: true
+        fullHeight: true
+        url: hero/
+      - title: Input
+        rounded: true
+        fullHeight: true
+        url: input/
+      - title: List
+        rounded: true
+        fullHeight: true
+        url: list/
+      - title: Megamenu
+        rounded: true
+        fullHeight: true
+        url: megamenu/
+      - title: Modal
+        rounded: true
+        fullHeight: true
+        url: modal/
+      - title: Navscroll
+        rounded: true
+        fullHeight: true
+        url: navscroll/
+      - title: Notifications
+        rounded: true
+        fullHeight: true
+        url: notifications/
+      - title: Number input
+        rounded: true
+        fullHeight: true
+        url: number-input/
+      - title: Overlay
+        rounded: true
+        fullHeight: true
+        url: overlay/
+      - title: Pagination
+        rounded: true
+        fullHeight: true
+        url: pagination/
+      - title: Popover
+        rounded: true
+        fullHeight: true
+        url: popover/
+      - title: Progress indicators
+        rounded: true
+        fullHeight: true
+        url: progress-indicators/
+      - title: Radio button
+        rounded: true
+        fullHeight: true
+        url: radio-button/
+      - title: Rating
+        rounded: true
+        fullHeight: true
+        url: rating/
+      - title: Sections
+        rounded: true
+        fullHeight: true
+        url: sections/
+      - title: Select
+        rounded: true
+        fullHeight: true
+        url: select/
+      - title: Sidebar
+        rounded: true
+        fullHeight: true
+        url: sidebar/
+      - title: Skiplinks
+        rounded: true
+        fullHeight: true
+        url: skiplinks/
+      - title: Steppers
+        rounded: true
+        fullHeight: true
+        url: steppers/
+      - title: Sticky
+        rounded: true
+        fullHeight: true
+        url: sticky/
+      - title: Tabs
+        rounded: true
+        fullHeight: true
+        url: tabs/
+      - title: Thumbnav
+        rounded: true
+        fullHeight: true
+        url: thumbnav/
+      - title: Timeline
+        rounded: true
+        fullHeight: true
+        url: timeline/
+      - title: Timepicker
+        rounded: true
+        fullHeight: true
+        url: timepicker/
+      - title: Toggles
+        rounded: true
+        fullHeight: true
+        url: toggles/
+      - title: Toolbar
+        rounded: true
+        fullHeight: true
+        url: toolbar/
+      - title: Tooltip
+        rounded: true
+        fullHeight: true
+        url: tooltip/
+      - title: Transfer
+        rounded: true
+        fullHeight: true
+        url: transfer/
+      - title: Upload
+        rounded: true
+        fullHeight: true
+        url: upload/
+      - title: Video player
+        rounded: true
+        fullHeight: true
+        url: video-player/
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
+  sectionsEditorial:
+    - fullColumn: true
+      noSpace: true
+      components:
+        - name: ImgFull
+          img: /images/design-system/componenti.jpg
+          alt: ""
+
+  sectionsEditorial2:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      components:
+        - name: TextImageCta
+    #       noSpace: true
+    #       text: |
+    #         Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili: se ti occupi di design, puoi utilizzare lo UI Kit e i design token per prototipare in alta fedeltà; se ti interessi di sviluppo, fai riferimento al framework di sviluppo Bootstrap Italia.
+    #       ctas:
+    #       - label: "Vai allo UI Kit nella community Figma " #C
+    #         url: https://www.figma.com/community/file/1105848677422572920 #M
+    #         blank: true #M #C true if new tab for external links
+    #          screenReaderText: " (si apre in una nuova finestra)"
+    #         icon:
+    #           icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+    #           color: primary
+    #           align: middle
+    #           hidden: true
+    #           size: sm
+    #           addonClasses: ms-2
+    #       - label: "Vai a Bootstrap Italia su GitHub " #C
+    #         url: https://github.com/italia/bootstrap-italia #M
+    #         blank: true #M #C true if new tab for external links
+    #          screenReaderText: " (si apre in una nuova finestra)"
+    #         icon:
+    #           icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+    #           color: primary
+    #           align: middle
+    #           hidden: true
+    #           size: sm
+    #           addonClasses: ms-2

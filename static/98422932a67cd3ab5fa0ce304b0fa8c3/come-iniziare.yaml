@@ -1,0 +1,152 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Panoramica come iniziare
+  description: Scopri i primi passi da compiere per progettare con il design system
+  canonical: null
+  pathname: /design-system/come-iniziare/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: light
+    title: Come iniziare
+    column: true
+    subtitle: I primi passi da compiere per progettare con il design system
+    tag:
+      label: Design system #C
+      addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: |
+      Scopri le finalità e l'impatto del design system e come iniziare a usare le risorse a disposizione di designer e developer per progettare servizi pubblici digitali.
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      column: true
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia, Sviluppo interfaccia,UI Kit]
+
+
+  # /////////// COMPONENT LIST FROM HERE ////////////
+  filterCards:
+    id: esplora
+    title: Esplora le schede
+    paddingX: true
+    noSpace: false
+    showTags: false
+    # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
+    col2: true
+    # button:
+    #   btnStyle: outline-secondary justify-content-center w-100
+    #   label: Filtra
+    #   iconRight: true
+    #   icon:
+    #     icon: sprites.svg#it-funnel
+    #     color: secondary
+    #     addonClasses: ms-1 flex-shrink-0
+    cards:
+      - title: Per designer
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "per-designer/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+        # tags: [Design system,Interfaccia utente,Progettazione interfaccia]
+
+      - title: Per sviluppatori
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "per-sviluppatori/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Tutti gli strumenti pensati per sviluppare interfacce ed esperienze dei servizi pubblici
+        # tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
+
+      - title: Per responsabili progetto
+        # img: /images/600x400.png
+        # alt: Descrizione immagine
+        imgRatio: 16x9
+        imgPlaceholder: false
+        url: "per-responsabili-progetto/"
+        fullHeight: true
+        rounded: true
+        text: |
+          Tutte le indicazioni per individuare gli strumenti a disposizione e iniziare a pianificare i lavori
+        # tags: [Design system,Interfaccia utente,Servizi pubblici digitali]
+
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
+  # sectionsEditorial:
+  # - fullColumn: true
+  #   noSpace: true
+  #   components:
+  #     - name: ImgFull
+  #       img: /images/design-system/fondamenti.jpg
+  #       alt: ""
+
+  sectionsEditorial2:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      components:
+        - name: TextImageCta
+          noSpace: true
+    #       text: |
+    #         Puoi contribuire anche tu all'evoluzione del design system del Paese proponendo suggerimenti utili.
+    #       ctas:
+    #       - label: "Scopri come iniziare se sei un designer" #C
+    #         url: "/design-system/come-iniziare/per-designer/" #M
+    #         blank: false #M #C true if new tab for external links
+    #         icon:
+    #           icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+    #           color: primary
+    #           align: middle
+    #           hidden: true
+    #           size: sm
+    #           addonClasses: ms-2
+    #       - label: "Scopri come iniziare se sei uno sviluppatore" #C
+    #         url: "/design-system/come-iniziare/per-sviluppatori/"
+    #         blank: false #M #C true if new tab for external links
+    #         icon:
+    #           icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+    #           color: primary
+    #           align: middle
+    #           hidden: true
+    #           size: sm
+    #           addonClasses: ms-2
