@@ -33,8 +33,7 @@ metadata:
 seo:
   name: Piano attività - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: "Gli obiettivi e i risultati del progetto Designers Italia" #C
-  image: null #I
-  twitterImage: null #I
+  image: null
   canonical: null
   pathname: /community/piano-attivita/ #M
 
@@ -156,7 +155,7 @@ components:
           ctas:
           - label: Vai alla notizia #C
             url: "/community/notizie/20231107-esperienza-del-cittadino-nei-servizi-pubblici-dalla-misura-alla-pratica/" #M
-            blank: true #M #C true if new tab for external links
+            blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -231,6 +230,7 @@ components:
           - label: Vai alla board di progetto per seguire i lavori #C
             url: https://github.com/orgs/italia/projects/15 #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: " (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -630,6 +630,7 @@ components:
           - label: 'Leggi "Una grammatica dei servizi pubblici digitali"' #C
             url: https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: " (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-medium #C #I #it-arrow-right | it-external-link for external links
               color: primary

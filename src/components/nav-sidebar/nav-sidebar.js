@@ -45,12 +45,14 @@ function NavSidebar({
     ariaLabel: " (Link esterno)",
   };
 
+  // XXX We are currently using and repurposing the "navscroll" component of BSI, there may be some improvements to be made in a11y
+
   if (list) {
     links = list.map((item, index) => {
       expandSublinks = false;
 
       linksStyle =
-        "list-item text-uppercase right-icon" +
+        "list-item text-uppercase right-icon nav-link" +
         `${item.label === page ? " active" : ""}` +
         `${item.disabled ? " disabled" : ""}`;
 
@@ -61,10 +63,10 @@ function NavSidebar({
             linksStyle += " contains-active";
           }
 
-          let subLiStyle;
+          let subLiStyle = "nav-link";
 
           if (subItem.disabled) {
-            subLiStyle = "disabled";
+            subLiStyle += " disabled";
           }
 
           return (
@@ -200,16 +202,11 @@ function NavSidebar({
           </button>
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
             <div className="overlay" />
-            <div className="close-div visually-hidden">
-              <button className="btn close-menu" type="button">
-                <span className="it-close" />
-                {buttonCloseAriaLabel}
-              </button>
-            </div>
             <div className="menu-wrapper">
               <button
-                className="it-back-button btn w-100 text-start"
+                className="it-back-button btn w-100 text-start rounded-0"
                 type="button"
+                aria-label={buttonCloseAriaLabel}
               >
                 <svg role="img" className="icon icon-sm icon-primary align-top">
                   <use href="/svg/sprites.svg#it-chevron-left" />
