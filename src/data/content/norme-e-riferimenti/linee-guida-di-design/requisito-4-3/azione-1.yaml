@@ -27,7 +27,6 @@ seo:
   name: "Azione 1 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
   description: "SI DEVE adottare un approccio progettuale orientato alle persone capace di coinvolgere, ascoltare e osservare gli utenti nelle fasi di analisi, ideazione, progettazione, sviluppo e manutenzione del sito/servizio in un’ottica di miglioramento continuo, secondo una logica iterativa, utilizzando ove possibile metodologie agile" #C
   image: null #I
-  twitterImage: null #I
   canonical: null
   pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-1/ #M
 
@@ -183,7 +182,6 @@ components:
 
       # CARD CHILDREN ACTION
       - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
-        headingLevel: 4
         img: /images/community/articoli-di-approfondimento/2021-medium-zaia-processo.webp
         alt: Le risorse per progettare di Designers Italia
         imgRatio: 16x9
@@ -194,7 +192,7 @@ components:
         blank: true
         externalLink:
           label: Leggi su medium
-          screenReaderText: " l'articolo completo"
+          screenReaderText: " (si apre in una nuova finestra)"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
@@ -202,7 +200,6 @@ components:
 
       # CARD CHILDREN ACTION
       - title: "Prove tecniche di design: come testare sul campo gli strumenti di progettazione"
-        headingLevel: 4
         img: /images/community/articoli-di-approfondimento/2021-medium-filippi-prove-tecniche.webp
         alt: "Il sistema .italia"
         imgRatio: 16x9
@@ -213,7 +210,7 @@ components:
         blank: true
         externalLink:
           label: Leggi su medium
-          screenReaderText: " l'articolo completo"
+          screenReaderText: " (si apre in una nuova finestra)"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
@@ -221,7 +218,6 @@ components:
 
       # CARD CHILDREN ACTION
       - title: "PA digitale 2026, l'utente al centro della progettazione"
-        headingLevel: 4
         img: /images/community/articoli-di-approfondimento/2022-medium-Dipartimento-PA-digitale-2026.webp
         alt: Il sito PA digitale 2026
         imgRatio: 16x9
@@ -232,11 +228,26 @@ components:
         blank: true
         externalLink:
           label: Leggi su medium
-          screenReaderText: " l'articolo completo"
+          screenReaderText: " (si apre in una nuova finestra)"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
         moreInfo: null
+
+
+      # CARD CHILDREN ACTION MEDIA
+      - title: "Comprendere il contesto d'uso"
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230324-comprendere-il-contesto-d-uso.jpg
+        alt: ""
+        imgRatio: 16x9
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230324-comprendere-il-contesto-d-uso/"
+        tag:
+          label: Video - Webinar
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -254,13 +265,11 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           title: "L'approccio progettuale" #C
-          headingLevel: 4
           text: | #C
             Scegli l’approccio progettuale tra quelli proposti per affrontare al meglio il processo sotto diversi punti di vista: quello delle persone, delle procedure e della tecnologia.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-
-            screenReaderText: "L'approccio progettuale"
+            screenReaderText: "L'approccio progettuale (si apre in una nuova finestra)"
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/approccio-progettuale.html#l-approccio-progettuale" #M
             blank: true #M #C true if new tab for external links
             icon:
@@ -274,13 +283,11 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           title: Il processo progettuale #C
-          headingLevel: 4
           text: | #C
             Segui l’approccio strutturato in cinque fasi, utile come riferimento per impostare il progetto, capire quali figure/competenze coinvolgere e organizzare le attività da svolgere nell’ordine più adeguato.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-
-            screenReaderText: "Il processo progettuale"
+            screenReaderText: "Il processo progettuale (si apre in una nuova finestra)"
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/processo-progettuale.html#il-processo-progettuale" #M
             blank: true #M #C true if new tab for external links
             icon:
@@ -294,15 +301,13 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           title: Metodo di lavoro #C
-          headingLevel: 4
           text: | #C
             Imposta una modalità di lavoro agile per orientare il processo di design al raggiungimento dei risultati.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto/metodo-di-lavoro.html#metodo-di-lavoro" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Metodo di lavoro"
+            screenReaderText: "Metodo di lavoro (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -314,7 +319,6 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           title: Le competenze per progettare servizi pubblici #C
-          headingLevel: 4
           text: | #C
             Individua l’insieme di competenze funzionali e organizzative di cui necessita il processo di design dei servizi pubblici.
           ctas:
@@ -322,7 +326,7 @@ components:
 
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto/le-competenze-per-progettare-servizi-pubblici.html#le-competenze-per-progettare-servizi-pubblici" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Le competenze per progettare servizi pubblici"
+            screenReaderText: "Le competenze per progettare servizi pubblici (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -334,7 +338,6 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           title: Progettazione di servizi #C
-          headingLevel: 4
           text: | #C
             Sfrutta le risorse utili all’analisi delle necessità di tutti gli attori coinvolti nella progettazione del servizio, per gestire la complessità del progetto, strutturando il servizio in modo che sia usabile per l’utente e efficiente per la Pubblica Amministrazione.
           ctas:
@@ -342,7 +345,7 @@ components:
 
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html#progettazione-di-servizi" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Progettazione di servizi"
+            screenReaderText: "Progettazione di servizi (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -354,7 +357,6 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           title: Progettare un servizio pubblico digitale #C
-          headingLevel: 4
           text: | #C
             Conosci tutti gli elementi da tenere in considerazione nella progettazione di un servizio.
           ctas:
@@ -362,7 +364,7 @@ components:
 
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/progettare-un-servizio-pubblico-digitale.html#progettare-un-servizio-pubblico-digitale" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Progettare un servizio pubblico digitale"
+            screenReaderText: "Progettare un servizio pubblico digitale (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary

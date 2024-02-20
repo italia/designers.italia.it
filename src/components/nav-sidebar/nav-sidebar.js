@@ -3,11 +3,11 @@ import React, { useRef, useEffect } from "react";
 import { NavBarCollapsible, Sticky } from "bootstrap-italia";
 import Tag from "../tag/tag";
 import Link from "../link/link";
-import BackToTopEl from "../back-to-top/back-to-top";
 import "./nav-sidebar.scss";
 
-import FooterData from "../../data/footer.yaml";
 import Icon from "../icon/icon";
+
+import "../../scss/bootstrap-italia-TEMP-FIXES-REMOVEME.scss";
 
 function NavSidebar({
   id,
@@ -45,12 +45,14 @@ function NavSidebar({
     ariaLabel: " (Link esterno)",
   };
 
+  // XXX We are currently using and repurposing the "navscroll" component of BSI, there may be some improvements to be made in a11y
+
   if (list) {
     links = list.map((item, index) => {
       expandSublinks = false;
 
       linksStyle =
-        "list-item text-uppercase right-icon" +
+        "list-item text-uppercase right-icon nav-link" +
         `${item.label === page ? " active" : ""}` +
         `${item.disabled ? " disabled" : ""}`;
 
@@ -61,21 +63,31 @@ function NavSidebar({
             linksStyle += " contains-active";
           }
 
-          let subLiStyle;
+          let subLiStyle = "nav-link";
 
           if (subItem.disabled) {
-            subLiStyle = "disabled";
+            subLiStyle += " disabled";
           }
 
           return (
             <li key={`subl-${indexSub}`}>
-              <Link
-                to={subItem.url}
-                className={subLiStyle}
-                activeClassName={GATSBY_ACTIVE}
-              >
-                <span>{subItem.label}</span>
-              </Link>
+              {subItem.url && (
+                <Link
+                  to={subItem.url}
+                  className={subLiStyle}
+                  activeClassName={GATSBY_ACTIVE}
+                >
+                  <span>{subItem.label}</span>
+                </Link>
+              )}
+              {!subItem.url && (
+                <span className="d-flex px-3 py-1 my-1">
+                  {subItem.label}
+                  <span className="visually-hidden">
+                    (Pagina non ancora disponibile)
+                  </span>
+                </span>
+              )}
             </li>
           );
         });
@@ -167,12 +179,12 @@ function NavSidebar({
 
   return (
     <div
-      className="col-12 col-lg-3 px-lg-0 bg-light menu-column border-end bs-is-sticky"
+      className="col-12 col-lg-3 px-lg-0 pb-lg-5 bg-light menu-column border-end position-sticky"
       ref={navStickyRef}
     >
       <div className="nav-sidebar">
         <nav
-          className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-left-side border-start-0 border-top"
+          className="navbar it-navscroll-wrapper navbar-expand-lg it-bottom-navscroll it-right-side border-end-0"
           aria-label={ariaLabel}
         >
           <button
@@ -188,28 +200,20 @@ function NavSidebar({
             <Icon {...ICON_CHEVRON_RIGHT} />
             {toggleLabel}
           </button>
-          <BackToTopEl
-            positionTop={0}
-            scrollLimit={100}
-            duration={800}
-            easing="easeInOutSine"
-            ariaLabel={FooterData.footer.backToTop.ariaLabel}
-          />
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
             <div className="overlay" />
-            <div className="close-div visually-hidden">
-              <button className="btn close-menu" type="button">
-                <span className="it-close" />
-                {buttonCloseAriaLabel}
-              </button>
-            </div>
-            <a className="it-back-button" href="#" role="button">
-              <svg role="img" className="icon icon-sm icon-primary align-top">
-                <use href="/svg/sprites.svg#it-chevron-left" />
-              </svg>
-              <span>{backLabel}</span>
-            </a>
             <div className="menu-wrapper">
+              <button
+                className="it-back-button btn w-100 text-start rounded-0"
+                type="button"
+                aria-label={buttonCloseAriaLabel}
+              >
+                <svg role="img" className="icon icon-sm icon-primary align-top">
+                  <use href="/svg/sprites.svg#it-chevron-left" />
+                </svg>
+                <span>{backLabel}</span>
+              </button>
+
               <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
                 <a className="" href={url}>
                   <img src={img} className="header-image my-2" alt={alt} />
