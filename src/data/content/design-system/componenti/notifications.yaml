@@ -70,9 +70,11 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente Notifiche per aggiornare l'utente su modifiche o aggiornamenti minori all'interno dell'applicazione. Questi messaggi temporanei tendono a scomparire dopo pochi secondi, quindi potrebbero non essere sempre notati o letti attentamente.
 
               ### Alternative
+
+              - Usa il componente **[Alert](/design-system/componenti/alert)** per mostrare messaggi di avviso importanti che richiedono l’attenzione dell’utente.
 
       - full: true
         noSpace: true
@@ -83,11 +85,19 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Cambia lo stile della notifica in base all'obiettivo del messaggio, usando le diverse opzioni disponibili;
+              - Decidi dove mostrare la notifica sull'interfaccia, variando l'esperienza tra dispositivi mobile e laptop/desktop;
+              - Usa un'icona per nascondere la notifica se vuoi che non scompaia automaticamente;
+              - Se la notifica richiede delle azioni, usa il componente **[Buttons](/design-system/componenti/buttons)**.
 
               ### Attenzione a
+              
+              - Mantenere un’esperienza coerente su dispositivi differenti.
 
               ### Buone pratiche sui contenuti
+
+              - Il titolo della notifica deve essere chiaro ma breve;
+              - Usa la descrizione solo per informazioni salienti;
 
 
       - full: true
@@ -141,7 +151,10 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Appare in una posizione predefinita sull'interfaccia utente, di solito in alto a destra o in basso a destra;
+              - Di solito, scompare automaticamente dopo un periodo di tempo predefinito;
+              - L'utente può anche chiuderla manualmente, se presente un'icona di chiusura;
+              - L'utente può continuare a interagire con l'applicazione anche quando la notifica è visibile.
 
       - full: true
         noSpace: true
