@@ -70,7 +70,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Utilizza il componente Datepicker quando gli utenti hanno bisogno di selezionare una data all'interno di un calendario, ad esempio per prenotare un appuntamento o cercare un evento.
+              Utilizza il componente Datepicker, nel contesto di un modulo ([form](/design-system/componenti/form/)) quando gli utenti hanno bisogno di selezionare una data all'interno di un calendario, ad esempio per prenotare un appuntamento o cercare un evento. 
 
               ### Alternative
 
@@ -85,13 +85,14 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Usa il calendario nella forma nativa offerta da ciascun browser, per garantirne il pieno supporto;
-              - Permetti agli utenti di inserire una data anche manualmente;
+              - Permetti agli utenti di inserire una data manualmente.
               - Permetti agli utenti di sfogliare i mesi utilizzando le frecce presenti nel calendario.
+              - Usa preferibilmente il calendario aperto nella forma nativa offerta da ciascun browser, per garantirne il pieno supporto. 
 
               ### Attenzione a
-
-              - Fornisci il suggerimento del formato `gg/mm/aaaa` per aiutare gli utenti a inserire correttamente una data se scelgono di non utilizzare la selezione a calendario.
+              - Fornire il suggerimento del formato `gg/mm/aaaa` per aiutare gli utenti a inserire correttamente una data se scelgono di non utilizzare la selezione a calendario.
+              - Validare il funzionamento con tastiera e tecnologie assistive. 
+              - Gestire correttamente eventuali messaggi di errore. 
 
       - full: true
         noSpace: true
@@ -227,7 +228,7 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              Una volta selezionata una data, il calendario si chiude e la data selezionata viene mostrata nel campo.
+              Una volta selezionata la data, il calendario si chiude e la data selezionata viene mostrata nel campo.
 
       - full: true
         noSpace: true
