@@ -70,7 +70,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Usa il componente Timepicker per far selezionare agli utenti un orario, indicando le ore e i minuti. È un componente utile per i flussi di interazione che prevedono la comunicazione di un orario, come la prenotazione di appuntamenti o di un posto a un evento.
+              Usa il componente Timepicker, nel contesto di un modulo ([form](/design-system/componenti/form/)), per permettere agli agli utenti di scegliere un orario, indicando ore e minuti. È un componente utile per i flussi di interazione che prevedono la comunicazione di un orario, come la prenotazione di appuntamenti o di posti per un evento.
 
               ### Alternative
 
@@ -85,7 +85,13 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              Suggerisci il formato orario, nel caso di differenza tra AM e PM.
+              - Permetti agli utenti di inserire un orario manualmente.
+              - Usa preferibilmente il campo nella forma nativa offerta da ciascun browser, per garantirne il pieno supporto. 
+
+              ### Attenzione a
+              - Scegliere ed eventualmente indicare il formato: 12 ore con AM/PM, o 24 ore.
+              - Validare il funzionamento con tastiera e tecnologie assistive. 
+              - Gestire correttamente eventuali messaggi di errore. 
 
       - full: true
         noSpace: true
@@ -222,8 +228,8 @@ tabs:
             headingLevel: 2
             text: |
               Cliccando sul componente si apre un menu a tendina per le ore e uno per i minuti. Il campo ore è il primo attivo. Dopo aver selezionato l'ora, si attiva il campo minuti.   
-              Le ore e i minuti possono essere selezionati al click/tap sulle opzioni nei menu a tendina oppure inseriti manualmente tramite inserimento a tastiera.  
-              Per spostare la selezione tra il campo ore e il campo minuti si possono usare i tasti freccia destra/sinistra oppure il tasto TAB.
+              Le ore e i minuti possono essere selezionati al click/tap/touch sulle opzioni nei menu a tendina oppure inseriti manualmente tramite tastiera.  
+              Per spostare la selezione tra il campo ore e il campo minuti si possono usare i tasti freccia o il tasto TAB.
 
       - full: true
         noSpace: true
