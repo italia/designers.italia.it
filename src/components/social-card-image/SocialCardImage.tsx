@@ -29,13 +29,13 @@ export default function (node: Node) {
               </div> : ''}
               <div style={{
                 fontSize: 72, fontFamily: "tBold", fontWeight: 700, lineHeight: .9,
-                display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", overflow: "hidden", textOverflow: "ellipsis"
+                display: "-webkit-box", WebkitLineClamp: 3, WebkitBoxOrient: "vertical", textOverflow: "ellipsis"
               }}>
                 {nameSimplified}
               </div>
               <div style={{
                 marginTop: 16, fontSize: 32, fontFamily: "tRegular", fontWeight: 400, color: '#666',
-                display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", overflow: "hidden", textOverflow: "ellipsis"
+                display: "-webkit-box", WebkitLineClamp: 2, WebkitBoxOrient: "vertical", textOverflow: "ellipsis"
               }}>
                 {description}
               </div>
