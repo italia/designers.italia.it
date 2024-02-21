@@ -61,13 +61,38 @@ function Kangaroo({
               <NavPosition {...eventInfo} />
             </div>
           )}
-          {(personalInfo || eventInfo || otherInfo && tagsLabel) ? <div>
-            <MetaCollapse label="Più informazioni" labelClose="Chiudi">
-              {otherInfo && (
-                <div className="other-info-wrapper">
-                  <NavPosition {...otherInfo} />
-                </div>
-              )}
+          {personalInfo || eventInfo || (otherInfo && tagsLabel) ? (
+            <div>
+              <MetaCollapse label="Più informazioni" labelClose="Chiudi">
+                {otherInfo && (
+                  <div className="other-info-wrapper">
+                    <NavPosition {...otherInfo} />
+                  </div>
+                )}
+                {tagsLabel && tags && tags.length > 0 && (
+                  <div className="pills-wrapper d-md-flex align-items-start pt-3 pt-md-2">
+                    <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
+                      <Icon {...icon} addonClasses="me-3" />
+                      <span className={tagsLabelStyle}>
+                        <strong>{tagsLabel}</strong>
+                      </span>
+                    </div>
+                    <div className="chips ms-md-3 mb-2 mb-lg-0">
+                      {tags.map((tag, index) => (
+                        <Chip
+                          key={`chip-${index}`}
+                          label={tag}
+                          size="lg"
+                          color="primary"
+                        />
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </MetaCollapse>
+            </div>
+          ) : (
+            <div>
               {tagsLabel && tags && tags.length > 0 && (
                 <div className="pills-wrapper d-md-flex align-items-start pt-3 pt-md-2">
                   <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
@@ -88,30 +113,8 @@ function Kangaroo({
                   </div>
                 </div>
               )}
-            </MetaCollapse>
-          </div> : <div>
-            {tagsLabel && tags && tags.length > 0 && (
-              <div className="pills-wrapper d-md-flex align-items-start pt-3 pt-md-2">
-                <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
-                  <Icon {...icon} addonClasses="me-3" />
-                  <span className={tagsLabelStyle}>
-                    <strong>{tagsLabel}</strong>
-                  </span>
-                </div>
-                <div className="chips ms-md-3 mb-2 mb-lg-0">
-                  {tags.map((tag, index) => (
-                    <Chip
-                      key={`chip-${index}`}
-                      label={tag}
-                      size="lg"
-                      color="primary"
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-          }
+            </div>
+          )}
           {tagsDesignSystemLabel &&
             tagsDesignSystem &&
             tagsDesignSystem.length > 0 && (

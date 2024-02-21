@@ -1,10 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
-
 import { Collapse } from "bootstrap-italia";
-
 import Icon from "../icon/icon";
-
 import "./meta-collapse.scss";
 
 function MetaCollapse({ label, labelClose, children }) {
