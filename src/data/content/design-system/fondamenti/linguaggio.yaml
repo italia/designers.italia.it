@@ -8,33 +8,8 @@ metadata:
 seo:
   name: Linguaggio
   description: "Progetta contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/fondamenti/linguaggio/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 # navPreFooter:
 #   navOtherPrevNext:
@@ -121,7 +96,7 @@ components:
         color: secondary
       tags: [Contenuti e linguaggio,Progettazione interfaccia]
 
-  sectionsEditorial :
+  sectionsEditorial:
     # - fullColumn: true
     #   noSpace: true
     #   components:
@@ -130,6 +105,7 @@ components:
     #       alt: Descrizione immagine grande
     - full: true
       noSpace: false
+      paddingLeft: true
       title: Scrivi per le persone
       text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
       background: null
@@ -138,13 +114,14 @@ components:
 
         - name: TextImageCta
           title:
+          noSpace: true
           text: |
             Il linguaggio è una risorsa preziosa nell’intero ecosistema e ciclo di vita di un prodotto digitale. Ha il potere di **orientare e influenzare l’esperienza delle persone** su siti e servizi, favorendo **la comprensione delle informazioni e l’abilità di portare a termine procedure**.
 
             È quindi importante che i testi per le interfacce, i contenuti ad esse correlati, documentazione, o gli altri contenuti attivati dalle interazioni degli utenti (email, notifiche, SMS, etc...) siano progettati prediligendo un linguaggio semplice e frasi brevi.
 
             ### Come le persone leggono gli schermi
-            
+
             Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Le persone, infatti, **non leggono necessariamente dall’alto al basso e parola per parola**.
 
             Studi di monitoraggio oculare (eye-tracking) hanno dimostrato che le persone tendono a **scansionare blocchi di testo seguendo la forma di una F (F-pattern)**: tracciano una linea orizzontale lungo la parte superiore dello schermo, procedono poi in verticale lungo il lato sinistro alla ricerca di punti di interesse e procedono di nuovo in senso orizzontale.
@@ -189,9 +166,9 @@ components:
             - usare **il maiuscolo solo per sigle e acronomi**;
             - scrivere **le date per esteso**, ad esempio 2 gennaio 2023.
 
-  sectionsEditorial2 :
     - full: true
       noSpace: true
+      paddingLeft: true
       title: Testa e ottimizza i contenuti
       text: |
             Fai evolvere la qualità dei contenuti in base ai riscontri delle persone

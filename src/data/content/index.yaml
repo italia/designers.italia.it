@@ -26,30 +26,9 @@ metadata:
 seo:
   name: Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Designers Italia mette a disposizione conoscenza e strumenti per creare i servizi digitali della Pubblica Amministrazione. #C
-  image: https://designers.italia.it/images/home/designers.jpg #I
-  twitterImage: https://designers.italia.it/images/home/designers.jpg #I
+  image: https://designers.italia.it/images/home/designers.jpg
   canonical: null
   pathname: /
-
-lastUpdate:
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italiait  #M #AUTO
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 components:
   hero:
@@ -85,26 +64,8 @@ components:
     fullImg: false
 
   searchMain:
-    disabled: true
-    isResultsPage: false
-    useSuggestionEngine: true
-    background: light
     title: Da dove vuoi iniziare?
-    text: "" # "Questo è un segnaposto, presto qui a disposizione l’inizio della navigazione personalizzata"
-    formId: searchForm
-    label: Cerca
-    inputId: searchInput
-    inputName: search
-    howMany: 5
-    button:
-      label: Cerca
-      type: #submit
-      btnStyle: primary
-      iconRight: true
-      icon:
-        icon: sprites.svg#it-search
-        color: #white
-        addonClasses: ms-1 icon-search
+    maxResults: 5
     suggest:
       title: "Ti suggeriamo:"
       items:
@@ -112,43 +73,43 @@ components:
         - label: test usabilità
         - label: rispettare
         - label: accessibilità
-        - label: UI Kit
+        - label: design system
 
   sectionIntro:
     title: In evidenza
-    # subtitle: Storie da copertina che ti guidano alle ultime attività
+    subtitle: Storie da copertina che ti guidano alle ultime attività
     isHome: true
   highLights:
-    - title: "Questionario community 2023"
-      subtitle: "Scopri i primi risultati dell’indagine condotta negli scorsi mesi sulla community di Designers Italia e Developers Italia"
+    - title: "Modello di sito web delle aziende sanitarie locali"
+      subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
       big: true
       id: HL2a
       specular: false
       padBottom: false # last highlight must have padBottom: true!
-      img: /images/community/20230711-come-e-cambiata-la-community-di-designers-italia-e-developers-italia-1920x923.png
+      img: /images/community/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali-1920x923.png
       alt: ""
       headingLevel: 3
-      background: medium
+      background: light
       buttons:
-        - label: "Scopri i risultati"
+        - label: "Scopri come utilizzarlo"
           btnStyle: primary
-          url: "/community/notizie/20230711-come-e-cambiata-la-community-di-designers-italia-e-developers-italia/"
-          addonStyle: mb-3 mb-sm-0
-    - title: "Design system: pubblicata la versione ufficiale dello UI Kit Italia"
-      subtitle: "Il kit per progettare interfacce e siti digitali della Pubblica Amministrazione (PA) esce dalla fase beta"
+          url: "/community/notizie/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali"
+          addonStyle: mb-3
+    - title: "Collabora al design system del Paese"
+      subtitle: "Leggi tutte le novità per contribuire alla realizzazione della documentazione e delle risorse"
       big: true
       id: HL2b
       specular: true
       padBottom: true # last highlight must have padBottom: true!
-      img: /images/community/20230504-ui-kit-italia-official-release.png
-      alt: "UI Kit Italia"
+      img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1920x923.png
+      alt: ""
       headingLevel: 3
-      background: light
+      background: medium
       buttons:
-        - label: "Leggi la notizia"
+        - label: "Scopri come collaborare"
           btnStyle: primary
-          url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/"
-          addonStyle: mb-3 mb-sm-0
+          url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese"
+          addonStyle: mb-3
 
   highlightCards:
     id: strumenti
@@ -162,7 +123,7 @@ components:
 
     #CARD with Button
     - title: "Modelli di design" #C
-      img: /images/modelli/comuni.png #I
+      img: /images/modelli/modelli-cover.png #I
       alt: "" #C
       text: |
         Realizza siti e servizi digitali di una Pubblica Amministrazione senza doverli progettare da zero. Inizia da qui.
@@ -240,104 +201,63 @@ components:
     nopadtop: true
     hasCustomCols: true
     buttons:
-    - type: button
-      btnStyle: primary
+    - btnStyle: primary
       label: Esplora cosa accade nella community
       url: "community/"
       addonStyle: me-3 d-block
-    # - type: button
-    #   btnStyle: outline-primary
-    #   label: Vai al Medium di Designers Italia
-    #   icon:
-    #     icon: sprites.svg#it-external-link
-    #     color: primary
-    #     align: middle
-    #     size: sm
-    #     addonClasses: ms-2
+
     # CARDS
     cards:
 
-    #CARD with Button
-    # - title: "Community Lab sui temi dell’upgrade del Kit Design React"
-    #   headingLevel: 3
-    #   titleBig: false
-    #   titleSmall: false
-    #   customCol: col-lg-3
-    #   cardEvent: true
-    #   img: /images/600x400.png
-    #   alt: Descrizione immagine
-    #   imgRatio: 4x3
-    #   imgPlaceholder: false
-    #   dateOverlay:
-    #     day: 22
-    #     month: Aprile
-    #   url: "#"
-    #   tag:
-    #   label: Community Lab
-
-    - title: 'Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto'
+    - title: 'Progettare servizi pubblici di qualità con il nuovo kit "Processi e servizi"'
       headingLevel: 3
       customCol: col-lg-4
-      text: Ora tutti i file di riferimento dei Modelli di siti e servizi di Designers Italia sono disponibili esclusivamente in formato aperto.
-      img: /images/community/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto-1400x723.png
+      text: "Il nuovo kit aiuta a definire i processi necessari all’erogazione di un servizio, analizzando ciò che è visibile all’utente finale e le attività svolte dietro le quinte."
+      img: /images/community/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi-1400x900.png
       alt: ""
       imgRatio: 21x9
       imgPlaceholder: false
       fullHeight: false
       rounded: true
-      url: "/community/notizie/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto/"
-      dateInfo: 01 settembre 2023
-      tags: [Modelli di sito, Adozione modelli]
+      url: "/community/notizie/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi/"
+      dateInfo: 15 febbraio 2024
+      tags: [Progettazione servizi, Esperienza utente]
 
-    - title: 'I libri per l’estate consigliati da Designers Italia'
+    - title: 'Il 2023 di Designers Italia'
       headingLevel: 3
       customCol: col-lg-4
-      text: Come ogni anno, le esperte e gli esperti del Dipartimento per la trasformazione digitale condividono alcuni libri da scoprire durante le ferie estive.
-      img: /images/community/20230802-i-libri-per-l-estate-consigliati-da-designers-italia-1400x723.png
+      text: "Facciamo il bilancio di ciò che è avvenuto nell'ultimo anno. Spoiler: un sacco di cose."
+      img: /images/community/20231219-il-2023-di-designers-italia-1400x900.png
       alt: ""
       imgRatio: 21x9
       imgPlaceholder: false
       fullHeight: false
       rounded: true
-      url: "/community/notizie/20230802-i-libri-per-l-estate-consigliati-da-designers-italia/"
-      dateInfo: 02 agosto 2023
-      tags: [Cultura progettuale]
+      url: "/community/notizie/20231219-il-2023-di-designers-italia/"
+      dateInfo: 19 dicembre 2023
+      tags: [Partecipazione]
 
-    - title: 'Design system: pubblicati i fondamenti di scrittura per l’esperienza utente'
+    - title: "L’importanza dell’usabilità, un esempio virtuoso in ambito sanitario"
       headingLevel: 3
       customCol: col-lg-4
-      text: È online la prima versione delle indicazioni per progettare contenuti di qualità per le interfacce.
-      img: /images/community/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente-1400x673.png
-      alt: ""
-      imgRatio: 21x9
-      imgPlaceholder: false
-      fullHeight: false
-      rounded: true
-      url: "/community/notizie/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente/"
-      dateInfo: 30 maggio 2023
-      tags: [Design system, Scrittura, Tono di voce, Linguaggio, Microtesti]
-
-    - title: "Progettare strumenti per la trasformazione digitale degli enti locali"
-      headingLevel: 3
-      customCol: col-lg-4
-      img: /images/community/articoli-di-approfondimento/20230522-progettare-strumenti-per-la-trasformazione-digitale-degli-enti-locali-1198x673.png
+      img: /images/community/articoli-di-approfondimento/20240125-l-importanza-dell-usabilita-un-esempio-virtuoso-in-ambito-sanitario-1198x673.png
       alt: ""
       imgRatio: 16x9
       imgPlaceholder: false
-      fullHeight: false
+      fullHeight: true
       rounded: true
-      url: https://medium.com/designers-italia/progettare-strumenti-per-la-trasformazione-digitale-degli-enti-locali-c9c55463a67a
+      url: https://medium.com/designers-italia/limportanza-dell-usabilit%C3%A0-un-esempio-virtuoso-in-ambito-sanitario-0bccabddde35
       blank: true
       externalLink:
         label: Leggi su Medium
-        screenReaderText: "l'articolo completo"
+        screenReaderText: " (si apre in una nuova finestra)"
         icon:
           icon: sprites.svg#it-external-link
           size: xs
       moreInfo: di Ilaria Scarpellini
       chips:
         - color: secondary
-          label: Service design
+          label: Test di usabilità, Ricerca utente
           url: "#"
           blank: false
 
@@ -345,42 +265,21 @@ components:
     id: bannerBottom
     title: Diamo i numeri
     background: dark
-    # ctas:
-    # - icon:
-    #     icon: sprites.svg#it-external-link
-    #     color: white
-    #     align: middle
-    #     hidden: true
-    #     size: sm
-    #     addonClasses: ms-2
-    #   label: Dashboard
-    #   url: "#"
-    #   blank: true
-    # - icon:
-    #     icon: sprites.svg#it-external-link
-    #     color: white
-    #     align: middle
-    #     hidden: true
-    #     size: sm
-    #     addonClasses: ms-2
-    #   label: Open data
-    #   url: "#"
-    #   blank: true
     numbers:
       inline: true
       items:
       - icon: sprites.svg#it-tool
         label: Risorse per progettare a norma
-        number: "40"
+        number: "40+"
       - icon: sprites.svg#it-pa
         label: Enti che usano i nostri strumenti
-        number: "2300+"
+        number: "3900+"
       - icon: sprites.svg#it-user
-        number: "21000+"
+        number: "24000+"
         label: "Persone nella community"
       - icon: sprites.svg#it-star-outline
-        number: "12"
-        label: "Eventi organizzati nel 2022"
+        number: "1500+"
+        label: "Partecipanti a eventi della community 2023"
 
 
 

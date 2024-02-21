@@ -1,28 +1,34 @@
-import React from "react"
+import React from "react";
 
-import { Breadcrumb } from "gatsby-plugin-breadcrumb"
-import 'gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css'
+import { Breadcrumb } from "gatsby-plugin-breadcrumb";
+import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css";
 
-import './breadcrumbs.scss'
+import "./breadcrumbs.scss";
 
-function Breadcrumbs({
-  pageContext,
-  crumbLabel,
-}) {
-
+function Breadcrumbs({ pageContext, crumbLabel }) {
   const {
     breadcrumb: { crumbs },
-  } = pageContext
+  } = pageContext;
+
+  const styles = "ps-lg-4 ms-lg-2";
 
   return (
     <div>
       {crumbLabel ? (
-        <Breadcrumb crumbs={crumbs} crumbLabel={crumbLabel} crumbSeparator=" > " />
+        <div className={styles}>
+          <Breadcrumb
+            crumbs={crumbs}
+            crumbLabel={crumbLabel}
+            crumbSeparator=" > "
+          />
+        </div>
       ) : (
-        <Breadcrumb crumbs={crumbs} crumbSeparator=" > " />
+        <div className={styles}>
+          <Breadcrumb crumbs={crumbs} crumbSeparator=" > " />
+        </div>
       )}
     </div>
-  )
+  );
 }
 
-export default Breadcrumbs
+export default Breadcrumbs;

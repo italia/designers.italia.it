@@ -11,33 +11,9 @@ metadata:
 seo:
   name: Panoramica componenti
   description: Una raccolta di strumenti che puoi riutilizzare per progettare l’interfaccia di siti e servizi della Pubblica Amministrazione
-  image: null
-  twitterImage: null
+  image: https://designers.italia.it/images/design-system/componenti.jpg
   canonical: null
   pathname: /design-system/componenti/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 navPreFooter:
   navOtherPrevNext:
@@ -65,7 +41,7 @@ components:
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
@@ -87,11 +63,12 @@ components:
   filterCards:
     id: esplora
     title: Esplora i componenti
+    paddingX: true
     showTags: true
+    noSpace: true
     # idInput: componentCardsInput
     col2: false
     # button:
-    #   type: button
     #   btnStyle: outline-secondary justify-content-center w-100
     #   label: Filtra
     #   iconRight: true
@@ -176,6 +153,10 @@ components:
         rounded: true
         fullHeight: true
         url: dropdown/
+      - title: Footer
+        rounded: true
+        fullHeight: true
+        url: footer/
       - title: Form
         rounded: true
         fullHeight: true
@@ -268,10 +249,10 @@ components:
         rounded: true
         fullHeight: true
         url: sticky/
-      - title: Tab
+      - title: Tabs
         rounded: true
         fullHeight: true
-        url: tab/
+        url: tabs/
       - title: Thumbnav
         rounded: true
         fullHeight: true
@@ -310,7 +291,7 @@ components:
         url: video-player/
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
-  sectionsEditorial :
+  sectionsEditorial:
     - fullColumn: true
       noSpace: true
       components:
@@ -318,9 +299,10 @@ components:
           img: /images/design-system/componenti.jpg
           alt: ""
 
-  sectionsEditorial2 :
+  sectionsEditorial2:
     - full: true
       noSpace: false
+      paddingLeft: true
       components:
         - name: TextImageCta
     #       noSpace: true
@@ -330,6 +312,7 @@ components:
     #       - label: "Vai allo UI Kit nella community Figma " #C
     #         url: https://www.figma.com/community/file/1105848677422572920 #M
     #         blank: true #M #C true if new tab for external links
+    #          screenReaderText: " (si apre in una nuova finestra)"
     #         icon:
     #           icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
     #           color: primary
@@ -340,6 +323,7 @@ components:
     #       - label: "Vai a Bootstrap Italia su GitHub " #C
     #         url: https://github.com/italia/bootstrap-italia #M
     #         blank: true #M #C true if new tab for external links
+    #          screenReaderText: " (si apre in una nuova finestra)"
     #         icon:
     #           icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
     #           color: primary

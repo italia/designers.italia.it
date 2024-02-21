@@ -1,79 +1,84 @@
-import React from "react"
-import Icon from "../icon/icon"
-import Link from "../link/link"
-import "./last-update.scss"
+import classNames from "classnames";
+import React from "react";
+import Icon from "../icon/icon";
+import Link from "../link/link";
+import "./last-update.scss";
 
-function LastUpdate({
-  // location,
-  pathname,
-  title,
-  date,
-  licence,
-  edit,
-  column,
-  lastModified,
-  noPadding
-}) {
-  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`  // < fallback if not trackable via pathname let's go to repo root...
+function LastUpdate({ pathname, lastModified, noPadding }) {
+  let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`;
   if (pathname) {
-    const filePath = pathname === '/'
-      ? "index"
-      : pathname.slice(1).replace(/^\/|\/$/g, '')
+    const filePath =
+      pathname === "/" ? "index" : pathname.slice(1).replace(/^\/|\/$/g, "");
 
-    editGithubUrl += `${filePath}.yaml`
+    editGithubUrl += `${filePath}.yaml`;
   }
 
-  const columnStyle = 'col-12'
-  // + `${column ? '' : ' col-md-10 offset-md-1'}`
-  + ' g-0'
+  const columnStyle = "col-12 g-0";
 
-  const paddingStyle = 'px-3'
-   + `${noPadding ? '' : ' px-lg-5'}`
+  const paddingStyle = classNames("px-3", { "px-lg-5": !noPadding });
 
   return (
     <div className="last-update py-5 py-lg-7">
       <div className="container-xxl">
         <div className="row">
           <div className={columnStyle}>
-            <div className ={paddingStyle}>
-              <p>
-                <small>
-                  <span>{title} </span>
-                  <time
-                    dateTime={lastModified}
-                    title={lastModified}
-                  >
-                    {new Date(lastModified).toLocaleDateString(
-                      'it-IT',
-                      { year: 'numeric', month: 'long', day: 'numeric' }
-                    )}
-                  </time>
-                  <Link
-                    to={licence.url}
-                    target={licence.blank ? "_blank" : undefined}
-                    rel={licence.blank ? 'noreferrer' : undefined}
-                    className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5">
-                    <strong className="d-inline-block me-2">{licence.label} <span className="visually-hidden">(si apre in una nuova finestra)</span><Icon {...licence.icon} /></strong>
-                  </Link>
-                </small>
-              </p>
-              <p className="mb-0">
-                <small>
-                  <Link
-                    to={editGithubUrl}
-                    target={edit.blank ? "_blank" : undefined}
-                    rel={edit.blank ? 'noreferrer' : undefined}
-                    className="d-inline-block text-decoration-none">
-                    <strong className="d-inline-block me-2">{edit.label} <span className="visually-hidden">(si apre in una nuova finestra)</span></strong><Icon {...edit.icon} />
-                  </Link>
-                </small>
-              </p>
+            <div className={paddingStyle}>
+              <div className="mb-4">
+                <span>Ultimo aggiornamento: </span>
+                <time dateTime={lastModified} title={lastModified}>
+                  {new Date(lastModified).toLocaleDateString("it-IT", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}
+                </time>
+                <Link
+                  to="https://creativecommons.org/licenses/by-sa/4.0/deed.it"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5"
+                >
+                  <strong className="me-2">
+                    Licenza CC BY-SA 4.0
+                    <span className="visually-hidden">
+                      (si apre in una nuova finestra)
+                    </span>
+                  </strong>
+                  <Icon
+                    icon="sprites.svg#it-external-link"
+                    size="sm"
+                    color="primary"
+                    addonClasses="mb-1"
+                  />
+                </Link>
+              </div>
+              <div className="mb-0">
+                <Link
+                  to={editGithubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="d-inline-block text-decoration-none"
+                >
+                  <strong className="me-2">
+                    Proponi una modifica a questa pagina
+                    <span className="visually-hidden">
+                      (si apre in una nuova finestra)
+                    </span>
+                  </strong>
+                  <Icon
+                    icon="sprites.svg#it-pencil"
+                    size="sm"
+                    color="primary"
+                    addonClasses="mb-1"
+                  />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </div>
-  </div>
-  )
+    </div>
+  );
 }
 
-export default LastUpdate
+export default LastUpdate;

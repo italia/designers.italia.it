@@ -8,32 +8,10 @@ metadata:
 
 seo:
   name: Chips - Designers Italia
-  description: "Elementi compatti che rappresentano un input, attributo o azione"
+  description: "Il componente Chips permette di etichettare, classificare e organizzare contenuti o elementi di interfaccia mediante parole chiave (tag), stati o altri attributi per abilitare percorsi di navigazione trasversale, filtri o scelte dell'utente."
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/chips/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 components:
   hero:
@@ -49,7 +27,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Elementi compatti che rappresentano un input, attributo o azione"
+    subtitle: "Il componente Chips permette di etichettare, classificare e organizzare contenuti ed elementi dell'interfaccia utilizzando parole chiave (tag), stati o altri attributi per abilitare percorsi di navigazione trasversale o filtri e scelte dell'utente."
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -86,26 +64,53 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente per classificare e organizzare contenuti e parti dell'interfaccia in base a liste di tag, stati, utenti o altre ontologie legate al contesto; puoi usarlo inoltre per dare accesso diretto ad archivi di contenuti filtrati per attributi o per permettere all'utente di selezionare o rimuovere scelte di input (ad esempio filtri per attributo o utenti destinatari di un messaggio).      
+              Le chips possono essere parte di un gruppo (set) e permettere selezione, deselezione o rimozione a seconda del contesto. 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Tieni presente che il componente è visivamente riconoscibile come interattivo; per etichette statiche valuta quindi l'uso del componente Badge.  
+              - Usa icone o avatar per aggiungere un’informazione visiva all’interazione.
+              - Usa chips rimovibili per le scelte: l'utente potrà rimuovere il filtro se utile. 
+
+              ### Attenzione a
+              - L'uso di numerosi componenti di questo tipo sulla stessa pagina può aumentare il carico cognitivo per l'utente, in particolare se combinato con altri elementi visivi: usa quindi tali componenti con moderazione.
+              - Le chips colorate possono essere utilizzate per organizzare una grande quantità di contenuti: ad esempio potresti usare le etichette per organizzare le segnalazioni per argomento in una lunga lista di segnalazioni. 
+              - Configura la parte interattiva del componente scegliendo la corretta semantica `HTML`: usa `<button>` dove è possibile un'azione (ad esempio selezione filtro e l'icona di rimozione laddove presente), e `<a>` dove il componente facilita la navigazione (ad esempio link a un archivio filtrato).  
+              - Usa chips disabilitate con moderazione, assicurandoti che all’utente sia chiaro come attivarle.
+
+              ### Buone pratiche sui contenuti
+              - Usa etichette brevi, una parola o due, senza ritorni a capo, per un rapido riconoscimento.
+              - Usa etichette coerenti, definendo classificazioni puntuali per le tipologie di cui hai bisogno (argomenti, stati, o altri attributi).
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Alternative a questo componente
+            headingLevel: 2
+            text: |
+              - Per singole etichette statiche o quantitative (ad esempio numero notifiche) usa il componente [Badge](/design-system/componenti/badge/).
+              - Per azioni che non coinvolgono scelte o filtri usa il componente [Buttons](/design-system/componenti/buttons/). 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -116,6 +121,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         id: ComponentStatus
         components:
           - name: TextImageCta
@@ -130,38 +136,61 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che compongono i breadcrumbs](/images/design-system/componenti/chips-anatomy.png)
+
+              Il componente Chips è composto da:
+
+              1. **forma di sfondo**;
+              2. **icona**: opzionale, utile a rafforzare il significato dell'etichetta;
+              3. **avatar**: opzionale, utile per rappresentare scelte o attribuzioni di utenti;
+              4. **etichetta** (label): il testo dell'etichetta;
+              5. **icona rimozione**: opzionale, utile nell'uso del componente come input di scelta.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Elenco degli stati interattivi disponibili in tutte le varianti del componente:
+
+              - **default**: il componente si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul pulsante, è disponibile solo su dispositivi no-touch;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **disabled**: indica che il componente è disattivato e non è possibile interagire con esso.
+
+              Il click sull'icona di rimozione, laddove presente, eliminerà la visualizzazione del componente.
+              
+              Per implementarlo con funzionamento selezione e deselezione è possibile usare la resa dello stato **hover** come stato selezionato. 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design degli elementi del componente chips](/images/design-system/componenti/chips-specs.png)
 
 
       - full: true
         noSpace: true
-        components: 
+        paddingLeft: true
+        components:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
@@ -170,7 +199,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -192,7 +221,8 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
-        components: 
+        paddingLeft: true
+        components:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
@@ -201,7 +231,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary

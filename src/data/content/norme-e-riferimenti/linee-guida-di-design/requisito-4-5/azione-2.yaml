@@ -27,28 +27,8 @@ seo:
   name: "Azione 2 - Requisito 4.5 - Interfaccia utente - Designers Italia" #C REMIND "- Designers Italia" #AUTO
   description: "SI DEVONO realizzare, nell’ambito dello stesso sito internet o servizio digitale, interfacce coerenti nello stile e nell’esperienza d’uso, privilegiando le indicazioni e gli strumenti previsti su Designers Italia" #C
   image: null #I
-  twitterImage: null #I
   canonical: null
   pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-5/azione-2/ #M
-
-lastUpdate:
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -199,12 +179,58 @@ components:
 
     # CARDS
     cards: # AUTO?
-    
+
+      # CARD CHILDREN
+      - title: "Design system: come iniziare" #C
+        text: Scopri le finalità e l'impatto del design system e come iniziare a usare le risorse a disposizione di designer e developer per progettare servizi pubblici digitali. #C
+        # img:
+        # alt: ""
+        # imgRatio: 4x3
+        # imgPlaceholder: true
+        titleSmall: false
+        fullHeight: false
+        url: "/design-system/come-iniziare/" #M
+        tag:
+          label: DESIGN SYSTEM - FONDAMENTI #C
+
+      # CARD CHILDREN ACTION MEDIA
+      - title: "Servizi inclusivi e usabili per tutti"
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230325-servizi-inclusivi-e-usabili-per-tutti.jpg
+        alt: ""
+        imgRatio: 16x9
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230325-servizi-inclusivi-e-usabili-per-tutti/"
+        tag:
+          label: Video - Webinar
+
+      # CARD CHILDREN ACTION
+      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/20220705-progettare-con-qualita-l-accessibilita-al-centro-del-design-system-del-paese.webp
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099
+        blank: true
+        externalLink:
+          label: Leggi su medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Daniele Tabellini e Fabrizio Caccavello
+
       # CARD CHILDREN ACTION
       - title: "Costruzione interfaccia" #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_UI.svg #I 
+        iconImg: /icons/kit_UI.svg #I
         iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/realizzare/costruzione-interfaccia/" #M
@@ -223,12 +249,12 @@ components:
               color: secondary
           list:
             isShare: true
-      
+
       # CARD CHILDREN ACTION
       - title: "Sviluppo interfaccia" #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_webDevelopment.svg #I 
+        iconImg: /icons/kit_webDevelopment.svg #I
         iconImgAlt: "" #C
         rounded: true
         url: "/risorse-per-progettare/realizzare/sviluppo-interfaccia/" #M
@@ -248,38 +274,6 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN
-      - title: "Design system: come iniziare" #C
-        text: Scopri le finalità e l'impatto del design system e come iniziare a usare le risorse a disposizione di designer e developer per progettare servizi pubblici digitali. #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
-        titleSmall: false
-        fullHeight: false
-        url: "/design-system/come-iniziare/" #M
-        tag:
-          label: DESIGN SYSTEM - FONDAMENTI #C
-
-      # CARD CHILDREN ACTION
-      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
-        headingLevel: 4
-        img: /images/community/articoli-di-approfondimento/2022-medium-tabellini-accessibilita.webp
-        alt: Le risorse per progettare di Designers Italia
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " l'articolo completo"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Daniele Tabellini e Fabrizio Caccavello
-
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -296,13 +290,12 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           title: "Il progetto dell’interfaccia utente" #C
-          headingLevel: 4
+          headingLevel: 3
           text: | #C
             Costruisci un’interfaccia per aiutare l’utente a raggiungere ciò che cerca in modo naturale e immediato, in modo trasparente. Punti cardine di una buona interfaccia sono la coerenza tra gli elementi che la compongono, l’inclusività, l’accessibilità e la tolleranza agli errori.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-
-            screenReaderText: "Il progetto dell’interfaccia utente"
+            screenReaderText: "Il progetto dell’interfaccia utente (si apre in una nuova finestra)"
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/il-progetto-della-interfaccia-utente.html#il-progetto-dell-interfaccia-utente" #M
             blank: true #M #C true if new tab for external links
             icon:

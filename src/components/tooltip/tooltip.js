@@ -1,38 +1,42 @@
-import * as React from "react"
-import { useEffect, useRef } from "react"
-import { Tooltip as BSITooltip } from 'bootstrap-italia'
-import Icon from "../icon/icon"
-import Button from "../button/button"
+import * as React from "react";
+import { useEffect, useRef } from "react";
+import { Tooltip as BSITooltip } from "bootstrap-italia";
+import Icon from "../icon/icon";
+import Button from "../button/button";
 
+import "../../scss/bootstrap-italia-TEMP-FIXES-REMOVEME.scss";
 
+function Tooltip({ label, children }) {
+  const ICON_INFO = {
+    icon: "sprites.svg#it-info-circle",
+    size: "sm",
+    color: "primary",
+    addonClasses: "align-middle",
+    ariaLabel: " Informazioni",
+  };
 
-function Tooltip({
-		label,
-		children
-	}) {
+  const tooltip = useRef();
+  const element = useRef();
 
-	const ICON_INFO = {
-		icon: "sprites.svg#it-info-circle",
-		size: "sm",
-		color: "primary",
-		addonClasses: "align-middle",
-		ariaLabel: " Informazioni"
-	}
+  useEffect(() => {
+    // eslint-disable-next-line no-new
+    new BSITooltip(element.current.children[0], {
+      container: tooltip.current,
+      template: `<div class="tooltip tooltip-fix" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>`,
+    });
+  }, []);
 
-	const tRef = useRef()
-
-	useEffect(() => {
-		new BSITooltip(tRef.current.children[0])
-	}, [])
-
-	return (
-		<span ref={tRef} >
-			<Button addonStyle="btn p-0 shadow-none" title={label}>
-				<Icon {...ICON_INFO}/>
-				{children}
-			</Button>
-		</span>
-	)
+  return (
+    <span>
+      <span ref={tooltip} />
+      <span ref={element}>
+        <Button addonStyle="btn p-0 shadow-none" title={label}>
+          <Icon {...ICON_INFO} />
+          {children}
+        </Button>
+      </span>
+    </span>
+  );
 }
 
-export default Tooltip
+export default Tooltip;

@@ -11,7 +11,7 @@
     "plugin:jsx-a11y/recommended",
     "airbnb",
     "airbnb/hooks",
-    "prettier"
+    "plugin:prettier/recommended"
   ],
   "parser": "@babel/eslint-parser",
   "parserOptions": {
@@ -48,7 +48,8 @@
   },
   "globals": {
     "__PATH_PREFIX__": true,
-    "__BASE_PATH__": true // this will rarely, if ever, be used by consumers
+    "__BASE_PATH__": true, // this will rarely, if ever, be used by consumers,
+    "videojs": true
   },
   "rules": {
     "react/prop-types": "off",
@@ -162,6 +163,10 @@
     "react/jsx-filename-extension": "off",
     "no-shadow": "warn",
     "spaced-comment": "warn",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+
+    // Disabled until all the occurrences are fixed in the code
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off"
   }
 }

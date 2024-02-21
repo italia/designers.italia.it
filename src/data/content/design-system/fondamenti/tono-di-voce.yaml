@@ -8,33 +8,8 @@ metadata:
 seo:
   name: Tono di voce
   description: "Le indicazioni per dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/fondamenti/tono-di-voce/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 # navPreFooter:
 #   navOtherPrevNext:
@@ -121,33 +96,31 @@ components:
         color: secondary
       tags: [Progettazione contenuti,Linguaggio]
 
-  sectionsEditorial :
+  sectionsEditorial:
     - full: true
       noSpace: false
+      paddingLeft: true
       title: Dai voce a una Pubblica Amministrazione “umana”
       text: Prima di essere “istituzione”, la PA è fatta di persone e parla alle persone con l’obiettivo di essere vicina, semplice e utile
       background: null
       components:
         - name: TextImageCta
-          noSpace: false
+          noSpace: true
           # title:
           text: |
             Il tono di voce (di seguito anche abbreviato in “ToV”) è un elemento chiave della comunicazione: **rappresenta il modo in cui vengono trasmessi i messaggi** ed **esprime la visione e la personalità di chi parla**. Un tono di voce coerente, quindi, è indispensabile nella progettazione di contenuti di qualità.
-            
+
             Quando progetti i contenuti per un sito o un servizio digitale pubblico, **sii coerente nel mettere le persone al centro** della tua comunicazione: in altre parole, scrivi con l’obiettivo primario di farti capire ed essere efficace, tenendo conto degli stati d’animo di chi legge.
 
-
-    ####
     - full: true
       noSpace: true
-      # title: 
-      #text: Migliora il rapporto tra utenti e interfaccia
+      paddingLeft: true
       background: null
       components:
         - name: TextImageCta
           title: Parla il linguaggio delle istituzioni in modo semplice
           headingLevel: 2
-          
+
         - name: Table
           title: Usa in modo appropriato il linguaggio
           responsive: table-responsive-md
@@ -173,7 +146,7 @@ components:
         - name: TextImageCta
           text: |
             **Usa in modo appropriato il linguaggio delle istituzioni**, senza abusare di termini burocratici non necessari. Anche quando ti riferisci a norme e prescrizioni, abbi cura di citarle con precisione pur parlando in modo chiaro, con un lessico corretto ma semplice.
-          
+
         - name: Table
           title: Rivolgiti a chi legge con il "tu"
           responsive: table-responsive-md
@@ -187,10 +160,10 @@ components:
                 addonClasses: bg-warning fw-bold
           rows:
             - cols:
-              - text: | 
+              - text: |
                   Tono diretto: "In base alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design indicano le regole che hai l'obbligo di rispettare in ogni fornitura di siti e servizi digitali per la PA, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle facoltative."
-              - text: | 
-                  Tono impersonale: "Conformemente alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design forniscono indicazioni che devono essere obbligatoriamente rispettate per la realizzazione di siti internet e servizi digitali della PA, quelle opzionali e quelle per cui si rende necessaria un’attenta valutazione."               
+              - text: |
+                  Tono impersonale: "Conformemente alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design forniscono indicazioni che devono essere obbligatoriamente rispettate per la realizzazione di siti internet e servizi digitali della PA, quelle opzionali e quelle per cui si rende necessaria un’attenta valutazione."
 
         - name: TextImageCta
           text: |
@@ -218,13 +191,11 @@ components:
 
         - name: TextImageCta
           text: |
-            **Abbi cura di non rafforzare stereotipi** di genere, razzisti o abilisti e di non discriminare in base all'età. 
+            **Abbi cura di non rafforzare stereotipi** di genere, razzisti o abilisti e di non discriminare in base all'età.
 
-    ####
     - full: true
       noSpace: false
-      title: 
-      #text: Migliora il rapporto tra utenti e interfaccia
+      paddingLeft: true
       background: null
       components:
 
@@ -233,38 +204,38 @@ components:
           headingLevel: 2
           text: |
             Il tono di voce cambia a seconda del contesto, di chi riceve il messaggio e delle emozioni associate al momento.
-          
+
         - name: Table
-          title: Esempi 
+          title: Esempi
           responsive: table-responsive-md
-          addonClasses: 
+          addonClasses:
           head:
             - text: Tono
             - text: Attitudine
             - text: Bisogno / Emozioni dell'utente
             - text: Esempio
-          rows: 
-            - cols: 
+          rows:
+            - cols:
               - text: Motivante
               - text: Positiva e incoraggiante
               - text: Situazione positiva (es. fine di una richiesta)
               - text: Richiesta effettuata!
-            - cols: 
+            - cols:
               - text: Disponibile
               - text: Gentile e rispettoso
               - text: Situazione neutra/negativa (es. multa da pagare)
               - text: In questa pagina trovi tutte le informazioni per pagare la multa.
-            - cols: 
+            - cols:
               - text: Istruttivo
               - text: Neutro e diretto
               - text: Situazione neutra (es. informazioni su TARI)
               - text: Ecco tutte le informazioni di cui potresti avere bisogno.
-            - cols: 
+            - cols:
               - text: Rassicurante
               - text: Professionale e affidabile
               - text: Situazione negativa (es. pagamento non andato a buon fine)
               - text: Il pagamento non è andato a buon fine. Riprova o contatta la tua banca per chiarimenti.
-            - cols: 
+            - cols:
               - text: Di supporto
               - text: Solidale ed empatico
               - text: Situazione negativa (es. richiesta certificato di morte)

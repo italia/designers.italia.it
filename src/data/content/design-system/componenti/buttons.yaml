@@ -9,31 +9,8 @@ metadata:
 seo:
   name: "Buttons - Designers Italia"
   description: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/buttons/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 components:
   hero:
@@ -87,6 +64,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -97,6 +75,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -124,6 +103,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: true
@@ -167,7 +147,7 @@ tabs:
                 - text: Comprensibile, prevedibile, gestione semplice dell’errore
           - name: TextImageCta
             ctas:
-            - label: Apri una issue sulla repository Bootstrap Italia #C
+            - label: Apri una issue sul repository Bootstrap Italia #C
               screenReaderText: " (si apre in una nuova finestra)" #C
               url: https://github.com/italia/bootstrap-italia/issues/new #M
               blank: true #M #C true if new tab for external links
@@ -181,6 +161,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         title: Stato del componente
         id: ComponentStatus
         text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
@@ -246,7 +227,7 @@ tabs:
                 - text: ""
           - name: TextImageCta
             ctas:
-            - label: Apri una issue sulla repository Bootstrap Italia #C
+            - label: Apri una issue sul repository Bootstrap Italia #C
               screenReaderText: " (si apre in una nuova finestra)" #C
               url: https://github.com/italia/bootstrap-italia/issues/new #M
               blank: true #M #C true if new tab for external links
@@ -257,7 +238,7 @@ tabs:
                 hidden: true
                 size: sm
                 addonClasses: ms-2
-            - label: Apri una issue sulla repository dello UI Kit #C
+            - label: Apri una issue sul repository UI Kit Italia #C
               screenReaderText: " (si apre in una nuova finestra)" #C
               url: https://github.com/italia/design-ui-kit/issues/new #M
               blank: true #M #C true if new tab for external links
@@ -274,37 +255,66 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il pulsante](/images/design-system/componenti/buttons-anatomy.png)
+
+              Il componente buttons è composto da:
+              1. **forma di sfondo**: che può essere opzionale come nella variante "Link";
+              2. **icona sinistra**: posizione suggerita perché rafforza il significato di un invito all'azione (call to action);
+              3. **etichetta** (label): il testo della call to action, indica sempre un'azione; 
+              4. **icona destra**: può essere utilizzata per suggerire flussi di navigazione.
+
+              È possibile utilizzare una sola icona, scegliendo la posizione corretta in base all'azione.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Elenco degli **stati interattivi** disponibili in tutte le varianti del componente:
+
+              - **default**: il pulsante si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul pulsante, è disponibile solo su dispositivi no-touch;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **pressed**: è lo stato relativo al momento del click o pressione sul pulsante, restituisce un riscontro visivo dell'azione appena compiuta;
+              - **disabled**: indica che il pulsante è disattivato e non è possibile interagire con esso.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Le specifiche di design si intendono relative a tutte le varianti che prevedono una forma come sfondo.
+
+              Tutte le misure indicate sono espresse in `px`.
+
+              ### Button Large
+              ![Specifiche di design del button large](/images/design-system/componenti/buttons-large-specs.png)
+
+              ### Button Small
+              ![Specifiche di design del button small](/images/design-system/componenti/buttons-small-specs.png)
+
+              ### Button Mini
+              ![Specifiche di design del button mini](/images/design-system/componenti/buttons-mini-specs.png)
 
       - full: true
         noSpace: true
-        components: 
+        paddingLeft: true
+        components:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
@@ -313,7 +323,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -335,7 +345,8 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
-        components: 
+        paddingLeft: true
+        components:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
@@ -344,7 +355,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary

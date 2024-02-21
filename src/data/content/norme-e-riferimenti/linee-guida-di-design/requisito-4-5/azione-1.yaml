@@ -27,28 +27,8 @@ seo:
   name: "Azione 1 - Requisito 4.5 - Interfaccia utente - Designers Italia" #C REMIND "- Designers Italia" #AUTO
   description: "SI DEVONO utilizzare, ove disponibili, modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali" #C
   image: null #I
-  twitterImage: null #I
   canonical: null
   pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-5/azione-1/ #M
-
-lastUpdate:
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -185,7 +165,7 @@ components:
         size: sm
         color: secondary
       tags: [Linee guida,Interfaccia utente,Progettazione servizi,Manuale operativo]
- 
+
 # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
@@ -199,7 +179,7 @@ components:
 
     # CARDS
     cards: # AUTO?
-   
+
      # CARD CHILDREN
       - title: Il sito comunale #C
         text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
@@ -212,7 +192,7 @@ components:
         url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/" #M
         tag:
           label: MODELLI - SCHEDA OPERATIVA #C
-     
+
       # CARD CHILDREN
       - title: Il sito scolastico #C
         text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito scolastico semplice, accessibile e centrato sui bisogni degli utenti. #C
@@ -229,12 +209,26 @@ components:
       # CARD CHILDREN
       - title: I servizi digitali #C
         text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
+        img: /images/modelli/comuni-servizi.png
+        alt: ""
+        imgRatio: 4x3
+        imgPlaceholder: false
         titleSmall: false
         fullHeight: false
         url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
         tag:
           label: MODELLI - SCHEDA OPERATIVA #C
+
+      # CARD CHILDREN ACTION MEDIA
+      - title: "L'architettura informativa di un sito comunale"
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230220-l-architettura-informativa-di-un-sito-comunale.jpg
+        alt: ""
+        imgRatio: 16x9
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230220-l-architettura-informativa-di-un-sito-comunale/"
+        tag:
+          label: Video - Intervista

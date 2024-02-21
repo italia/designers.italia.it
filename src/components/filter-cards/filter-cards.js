@@ -1,8 +1,7 @@
 import React from "react";
+import classNames from "classnames";
 import Card from "../card/card";
 import ListArchiveDSTags from "../list-archive-ds-tags/list-archive-ds-tags";
-
-import "./filter-cards.scss"
 
 function FilterCards({
   id,
@@ -12,33 +11,34 @@ function FilterCards({
   cards,
   showTags,
   col2,
-  noSpace
+  noSpace,
+  paddingX,
 }) {
+  const styles = classNames("filter-cards", {
+    [`bg-${background}`]: background,
+    "py-5 py-lg-6": !noSpace,
+    "py-2 py-lg-5": noSpace,
+    "px-lg-4 px-xl-5": paddingX,
+  });
 
-  const styles = 'filter-cards px-3 p-md-0'
-    + `${background ? ` bg-${  background}` : ''}`
-    + `${noSpace ? '' : ' py-5 py-lg-6'}`
-    + `${col2 ? ' two-columns' : ''}`
+  const cardStyles = `col-12 col-md-6 mb-3 mb-md-4 ${col2 ? "" : " col-xl-4"}`;
 
-  const cardStyles = 'col-12 col-md-6 mb-3 mb-md-4'
-    + `${col2 ? '' : ' col-lg-4'}`
-
-  let cardsItems
+  let cardsItems;
 
   // heading level
-  let HLevel
+  let HLevel;
   if (headingLevel) {
     HLevel = `h${headingLevel}`;
   } else {
-    HLevel = `h2`
+    HLevel = `h2`;
   }
 
   if (cards) {
     cardsItems = cards.map((item, index) => (
-        <div className={cardStyles} key={`cardcol-${  index}`}>
-          <Card {...item} />
-        </div>
-      ))
+      <div className={cardStyles} key={`cardcol-${index}`}>
+        <Card {...item} />
+      </div>
+    ));
   }
 
   return (
@@ -49,20 +49,12 @@ function FilterCards({
             {title && <HLevel id={id}>{title}</HLevel>}
           </div>
 
-          {showTags &&
-            <ListArchiveDSTags />
-          }
-
+          {showTags && <ListArchiveDSTags />}
         </div>
-        <div className="row cards-wrapper">
-          {cardsItems}
-        </div>
+        <div className="row cards-wrapper">{cardsItems}</div>
       </div>
-
-
     </section>
-  )
+  );
 }
 
-
-export default FilterCards
+export default FilterCards;

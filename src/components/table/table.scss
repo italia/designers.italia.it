@@ -1,7 +1,14 @@
 @import "../../scss/bootstrap-breakpoints";
 
+.table-img-responsive {
+  img {
+    max-width:100%;
+    min-width:280px;
+  }
+}
+
 .table {
-  font-size: 0.8888888888888888rem;
+  font-size: 1rem;
   > :not(:first-child) {
     border-bottom-color: #C5C7C9;
     border-top: none;
@@ -20,6 +27,7 @@
   td {
     padding-top: 16px;
     padding-bottom: 16px;
+    min-width: 140px;
     &.border-bottom-2 {
       border-bottom-width: 2px;
     }
@@ -27,6 +35,9 @@
   tr {
     th,
     td {
+      p {
+        font-size: 1rem;
+      }
       &:first-child {
         padding-left: 0;
       }

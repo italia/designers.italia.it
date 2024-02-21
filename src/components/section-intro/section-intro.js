@@ -1,8 +1,9 @@
-import React from "react"
-import ReactMarkdown from "react-markdown"
-import "./section-intro.scss"
+import classNames from "classnames";
+import React from "react";
+import ReactMarkdown from "react-markdown";
+import "./section-intro.scss";
 
-import ContentCollapse from "../content-collapse/contentCollapse"
+import ContentCollapse from "../content-collapse/content-collapse";
 
 function SectionIntro({
   id,
@@ -18,32 +19,32 @@ function SectionIntro({
   children,
   isFull,
 }) {
-
-  const styles = 'section-intro py-5'
-	+ `${background ? ` bg-${background}` : ''}`
+  const styles = classNames("section-intro py-5", {
+    [`bg-${background}`]: background,
+  });
 
   // heading level
-	let HLevel
-	if (headingLevel) {
-		HLevel = `h${headingLevel}`;
-	} else {
-		HLevel = `h2`
-	}
+  let HLevel;
+  if (headingLevel) {
+    HLevel = `h${headingLevel}`;
+  } else {
+    HLevel = `h2`;
+  }
 
-  let cols
-  let pad
+  let cols;
+  let pad;
   if (isHome) {
-    cols = "col-12 g-0"
-    pad = "px-3 px-lg-5"
-  }else{
+    cols = "col-12 g-0";
+    pad = "px-3 px-lg-5";
+  } else {
     // cols = "col col-md-10 offset-md-1 col-lg-7"
     // pad= "px-3 px-lg-0"
-    cols = "col-12 col-lg-8 g-0"
-    pad = "px-3 px-lg-5"
+    cols = "col-12 col-lg-8 g-0";
+    pad = "px-3 px-lg-5";
   }
   if (isFull) {
-    cols = "col-12 g-0"
-    pad = "px-3 px-lg-5"
+    cols = "col-12 g-0";
+    pad = "px-3 px-lg-5";
     // cols= "col col-md-10 offset-md-1"
     // pad= "px-3 px-lg-0"
   }
@@ -53,20 +54,29 @@ function SectionIntro({
       <div className="container-xxl">
         <div className="row">
           <div className={cols}>
-              <div className={pad}>
-                {title && <HLevel id={id} className="mb-2">{title}</HLevel>}
-                {subtitle && <p className="lead font-sans-serif">{subtitle}</p>}
-                <ReactMarkdown>{text}</ReactMarkdown>
-                {children}
-                {moreButton && <ContentCollapse label={moreButton} labelClose={moreButtonClose}>
-                  { moreText }
-                </ContentCollapse>}
-              </div>
+            <div className={pad}>
+              {title && (
+                <HLevel id={id} className="mb-2">
+                  {title}
+                </HLevel>
+              )}
+              {subtitle && <p className="lead font-sans-serif">{subtitle}</p>}
+              <ReactMarkdown>{text}</ReactMarkdown>
+              {children}
+              {moreButton && (
+                <ContentCollapse
+                  label={moreButton}
+                  labelClose={moreButtonClose}
+                >
+                  {moreText}
+                </ContentCollapse>
+              )}
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default SectionIntro
+export default SectionIntro;

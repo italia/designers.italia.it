@@ -1,53 +1,68 @@
-import * as React from "react"
-import { graphql } from "gatsby"
+import * as React from "react";
+import { graphql } from "gatsby";
 
-import TemplateBase from "../templates/base"
-import TemplateArchiveAllTags from "../templates/archive-all-tags"
-import TemplateArchiveDSTags from "../templates/archive-ds-tags"
-import TemplateArchiveNews from "../templates/archive-news"
-import TemplateArchiveEvents from "../templates/archive-events"
-import TemplateDSComponent from "../templates/design-system-component"
-import TemplateDSIndex from "../templates/design-system-index"
-import TemplateHome from "../templates/home"
-import TemplateSearchResults from "../templates/search-results"
-import TemplateLV1Community from "../templates/level-1-community"
-import TemplateLV1 from "../templates/level-1"
-import TemplateLV2 from "../templates/level-2"
-import TemplateLV3 from "../templates/level-3"
-import TemplateLV4 from "../templates/level-4"
+import TemplateBase from "../templates/base";
+import TemplateArchiveAllTags from "../templates/archive-all-tags";
+import TemplateArchiveDSTags from "../templates/archive-ds-tags";
+import TemplateArchiveNews from "../templates/archive-news";
+import TemplateArchiveEvents from "../templates/archive-events";
+import TemplateArchiveMedia from "../templates/archive-media";
+import TemplateDSComponent from "../templates/design-system-component";
+import TemplateDSIndex from "../templates/design-system-index";
+import TemplateHome from "../templates/home";
+import TemplateSearchResults from "../templates/search-results";
+import TemplateLV1Community from "../templates/level-1-community";
+import TemplateLV1 from "../templates/level-1";
+import TemplateLV2 from "../templates/level-2";
+import TemplateLV3 from "../templates/level-3";
+import TemplateLV4 from "../templates/level-4";
 
-import { Seo } from "../components/seo/seo"
+import { Seo } from "../components/seo/seo";
 
 const TEMPLATES = {
-  'archive-news' : TemplateArchiveNews,
-  'archive-all-tags' : TemplateArchiveAllTags,
-  'archive-ds-tags' : TemplateArchiveDSTags,
-  'archive-events' : TemplateArchiveEvents,
-  'community' : TemplateLV1Community,
-  'level1' : TemplateLV1,
-  'level2' : TemplateLV2,
-  'level3' : TemplateLV3,
-  'level4' : TemplateLV4,
-  'base' : TemplateBase,
-  'home' : TemplateHome,
-  'search-results' : TemplateSearchResults,
-  'design-system-index' : TemplateDSIndex,
-  'design-system-component' : TemplateDSComponent
-}
+  "archive-news": TemplateArchiveNews,
+  "archive-all-tags": TemplateArchiveAllTags,
+  "archive-ds-tags": TemplateArchiveDSTags,
+  "archive-events": TemplateArchiveEvents,
+  "archive-media": TemplateArchiveMedia,
+  community: TemplateLV1Community,
+  level1: TemplateLV1,
+  level2: TemplateLV2,
+  level3: TemplateLV3,
+  level4: TemplateLV4,
+  base: TemplateBase,
+  home: TemplateHome,
+  "search-results": TemplateSearchResults,
+  "design-system-index": TemplateDSIndex,
+  "design-system-component": TemplateDSComponent,
+};
 
 function Page({ pageContext, location, data: { content } }) {
-  const Template = content.metadata.template ? TEMPLATES[content.metadata.template.name] : TemplateBase
-  const lastModified = content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString()
+  const Template = content.metadata.template
+    ? TEMPLATES[content.metadata.template.name]
+    : TemplateBase;
+  const lastModified =
+    content?.parent?.fields?.gitLogLatestDate || new Date(0).toISOString();
 
-  return(
-    <Template Pagedata={content} pageContext={pageContext} location={location} lastModified={lastModified}>
+  return (
+    <Template
+      Pagedata={content}
+      pageContext={pageContext}
+      location={location}
+      lastModified={lastModified}
+    >
       {/* place extra components / HTML here */}
     </Template>
-  )
+  );
 }
 
 export const query = graphql`
   query ($id: String!) {
+    contentOgImage(parent: { id: { eq: $id } }) {
+      attributes {
+        publicURL
+      }
+    }
     content(id: { eq: $id }) {
       id
       parent {
@@ -69,36 +84,8 @@ export const query = graphql`
       seo {
         name
         description
-        image
-        twitterImage
         # canonical
         pathname
-      }
-      lastUpdate {
-        title
-        licence {
-          label
-          url
-          icon {
-            icon
-            size
-            color
-            addonClasses
-          }
-          blank
-        }
-        edit {
-          label
-          url
-          icon {
-            icon
-            size
-            color
-          }
-          blank
-        }
-        column
-        noPadding
       }
       components {
         hero {
@@ -249,6 +236,7 @@ export const query = graphql`
           id
           headingLevel
           title
+          subtitle
           text
           moreButton
           moreButtonClose
@@ -262,6 +250,7 @@ export const query = graphql`
         }
         titleText {
           title
+          # text
         }
         highlightCardsLoop {
           id
@@ -271,13 +260,13 @@ export const query = graphql`
           col4
           background
           buttons {
-            type
             btnStyle
             label
             addonStyle
-            disabled
+            # disabled
             url
             blank
+            ariaLabel
             icon {
               icon
               color
@@ -295,6 +284,10 @@ export const query = graphql`
             imgRatio
             fullHeight
             imgPlaceholder
+            iconOverlay {
+              icon
+              ariaLabel
+            }
             dateOverlay {
               day
               month
@@ -365,7 +358,7 @@ export const query = graphql`
             btnStyle
             url
             addonStyle
-            disabled
+            # disabled
           }
           img
           alt
@@ -380,45 +373,26 @@ export const query = graphql`
           overlayImg
           overlayAlt
         }
-        highlightsLoop2 {
-          title
-          id
-          headingLevel
-          big
-          background
-          specular
-          subtitle
-          buttons {
-            label
-            btnStyle
-            url
-            addonStyle
-            disabled
-          }
-        }
+        # highlightsLoop2 {
+        #  title
+        #  id
+        #  headingLevel
+        #  big
+        #  background
+        #  specular
+        #  subtitle
+        #  text
+        # buttons {
+        #  label
+        #  btnStyle
+        #  url
+        #  addonStyle
+        #  disabled
+        #}
+        #}
         searchMain {
-          disabled
-          isResultsPage
-          useSuggestionEngine
-          background
           title
-          text
-          formId
-          label
-          inputId
-          inputName
-          howMany
-          button {
-            label
-            # type
-            btnStyle
-            iconRight
-            icon {
-              icon
-              # color
-              addonClasses
-            }
-          }
+          maxResults
           suggest {
             title
             items {
@@ -457,14 +431,22 @@ export const query = graphql`
             text
             imgRatio
             imgPlaceholder
+            cardEvent
+            iconOverlay {
+              icon
+              ariaLabel
+            }
             fullHeight
             imgRounded
             noShadow
             url
+            dateInfo
             textSerif
             headingLevel
             rounded
             blank
+            dateInfo
+            tags
             externalLink {
               label
               screenReaderText
@@ -474,7 +456,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            # tags
+            tags
             titleSmall
             tag {
               label
@@ -485,11 +467,11 @@ export const query = graphql`
           }
           headingLevel
           buttons {
-            type
             btnStyle
             label
             url
             blank
+            ariaLabel
             icon {
               icon
               color
@@ -532,7 +514,6 @@ export const query = graphql`
           nopadtop
           hasCustomCols
           buttons {
-            type
             btnStyle
             label
             url
@@ -580,6 +561,7 @@ export const query = graphql`
         sectionsEditorial {
           title
           headingLevel
+          paddingLeft
           background
           menu
           centered
@@ -589,6 +571,10 @@ export const query = graphql`
             title
             headingLevel
             specular
+            cookies {
+              label
+              key
+            }
             text
             noSpace
             responsive
@@ -609,7 +595,11 @@ export const query = graphql`
                 scope
                 tag {
                   label
-                  # addonClasses
+                  addonClasses
+                }
+                tags {
+                  label
+                  addonClasses
                 }
                 simpleCta {
                   label
@@ -650,6 +640,19 @@ export const query = graphql`
               img
               alt
             }
+            lang
+            url
+            trascription
+            subtitles
+            poster
+            variantName
+            source
+            idPrefix
+            viewerHeight
+            accordionUrl
+            accordionOpen
+            accordionShow
+            minHeight
           }
           id
           fullColumn
@@ -661,6 +664,8 @@ export const query = graphql`
           title
           col2
           showTags
+          noSpace
+          paddingX
           cards {
             title
             imgRatio
@@ -669,7 +674,7 @@ export const query = graphql`
             fullHeight
             url
             text
-            tags
+            # tags
           }
         }
         sectionsEditorial2 {
@@ -810,6 +815,7 @@ export const query = graphql`
           title
           textInfo
           viewerHeight
+          # minHeight
           accordionUrl
           accordionOpen
           accordionShow
@@ -818,6 +824,7 @@ export const query = graphql`
           full
           noSpace
           title
+          paddingLeft
           components {
             name
             noSpace
@@ -827,6 +834,9 @@ export const query = graphql`
             # addonClasses
             headingLevel
             # specular
+            img
+            alt
+            isDSPreview
             head {
               text
             }
@@ -884,16 +894,17 @@ export const query = graphql`
       }
     }
   }
-`
-export default Page
+`;
+export default Page;
 
-export function Head({ data: { content } }) {
-  return <Seo
-    title = {content.seo.name}
-    description = {content.seo.description}
-    image = {content.seo.image}
-    twitterImage = {content.seo.twitterImage}
-    pathname = {content.seo.pathname}
-    canonical = {content.seo.canonical}
-   />
+export function Head({ data: { content, contentOgImage } }) {
+  return (
+    <Seo
+      title={content.seo.name}
+      description={content.seo.description}
+      image={contentOgImage.attributes.publicURL}
+      pathname={content.seo.pathname}
+      canonical={content.seo.canonical}
+    />
+  );
 }

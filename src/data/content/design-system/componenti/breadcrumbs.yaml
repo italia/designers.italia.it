@@ -1,39 +1,16 @@
 # ————————————————————————————————————————————
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
-metadata: 
+metadata:
   json: bsi/menu-di-navigazione/breadcrumbs.json
   template:
     name: design-system-component
-    
+
 seo:
   name: "Breadcrumbs - Designers Italia"
   description: "Le breadcrumbs aiutano gli utenti a capire dove si trovano nella struttura di un sito e a navigare tra i vari livelli"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/breadcrumbs/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 components:
   hero:
@@ -98,6 +75,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -105,9 +83,10 @@ tabs:
             headingLevel: 2
             text: |
               Usa il componente Breadcrumbs quando un sito presenta molti contenuti, organizzati su più di due livelli gerarchici, e gli utenti hanno bisogno di spostarsi velocemente tra i vari livelli.
-                        
+
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -121,12 +100,13 @@ tabs:
               - Non usarlo per sostituire il menu di navigazione principale
               - Non usarlo per indicare il progresso di un flusso transazionale lineare, come la richiesta di un servizio o un pagamento
               - Non usarlo per un sito che presenta un solo livello di architettura
-              
+
               ### Buone pratiche sui contenuti
               I titoli delle breadcrumb devono corrispondere ai titoli delle pagine a cui si riferiscono
- 
+
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -137,6 +117,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: true
@@ -180,7 +161,7 @@ tabs:
                 - text: Comprensibile, prevedibile, gestione semplice dell’errore
           - name: TextImageCta
             ctas:
-            - label: Apri una issue sulla repository Bootstrap Italia #C
+            - label: Apri una issue sul repository Bootstrap Italia #C
               screenReaderText: " (si apre in una nuova finestra)" #C
               url: https://github.com/italia/bootstrap-italia/issues/new #M
               blank: true #M #C true if new tab for external links
@@ -194,6 +175,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -236,7 +218,7 @@ tabs:
                       icon: sprites.svg#it-external-link
                       size: sm
               - cols:
-                - text: React 
+                - text: React
                   scope: row
                 - tag:
                     label: Da rivedere
@@ -258,7 +240,7 @@ tabs:
                 - text: ""
           - name: TextImageCta
             ctas:
-            - label: Apri una issue sulla repository Bootstrap Italia #C
+            - label: Apri una issue sul repository Bootstrap Italia #C
               screenReaderText: " (si apre in una nuova finestra)" #C
               url: https://github.com/italia/bootstrap-italia/issues/new #M
               blank: true #M #C true if new tab for external links
@@ -269,7 +251,7 @@ tabs:
                 hidden: true
                 size: sm
                 addonClasses: ms-2
-            - label: Apri una issue sulla repository dello UI Kit #C
+            - label: Apri una issue sul repository UI Kit Italia #C
               screenReaderText: " (si apre in una nuova finestra)" #C
               url: https://github.com/italia/design-ui-kit/issues/new #M
               blank: true #M #C true if new tab for external links
@@ -286,48 +268,57 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              *Immagine in via di definizione*
+              ![Gli elementi che compongono i breadcrumbs](/images/design-system/componenti/breadcrumbs-anatomy.png)
 
-              1. **Pagina del livello superiore con link**: indica il titolo della pagina del livello superiore e ne permette la navigazione tramite link
-              2. **Separatore**: distingue le pagine
-              3. **Pagina corrente**: indica il titolo della pagina su cui si trova l’utente
-        
+              Il componente breadcrumbs è composto da:
+
+              1. **icone**: il componente è predisposto per permettere l’uso di icone, opzionali e da usare ad esempio per indicare tipo e livello delle pagine;
+              2. **pagina genitore con link**: indica il titolo della pagina del livello superiore e ne permette la navigazione tramite link;
+              3. **separatore**: distingue le pagine;
+              4. **pagina corrente**: indica il titolo della pagina su cui si trova l’utente.
+
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              Tutti i titoli di pagina nel componente breadcrumb devono essere interattivi e rimandare alle rispettive pagine, ad eccezione della pagina corrente.
+              Tutti i titoli di pagina nel componente breadcrumbs devono essere link interattivi e rimandare alle rispettive pagine, ad eccezione della pagina corrente.
               I separatori non sono interattivi.
 
               ### Interazione
 
               - Mouse: gli utenti cliccano sui link delle breadcrumb per raggiungere le pagine corrispondenti.
-              
-              - Tastiera: gli utenti navigano tra i link delle breadcrumb premendo _Tab_ e _Shift-Tab_ e raggiungono le pagine corrispondenti premendo _Enter_, una volta che il link è in focus.
+              - Tastiera: gli utenti navigano tra i link delle breadcrumb premendo _Tab_ e _Shift-Tab_ e raggiungono le pagine corrispondenti premendo _Invio_, una volta che il link è in focus.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design degli elementi dei breadcrumbs](/images/design-system/componenti/breadcrumbs-specs.png)
 
       - full: true
         noSpace: true
-        components: 
+        paddingLeft: true
+        components:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
@@ -336,7 +327,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -358,7 +349,8 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
-        components: 
+        paddingLeft: true
+        components:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
@@ -367,7 +359,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary

@@ -32,29 +32,9 @@ metadata:
 seo:
   name: Design system - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: "L’insieme di indicazioni e risorse per progettare e realizzare siti e servizi pubblici di qualità, efficienti e accessibili." #C
-  image: null #I
-  twitterImage: null #I
+  image: https://designers.italia.it/images/design-system/fondamenti.jpg
   canonical: null
   pathname: /design-system/ #M
-
-lastUpdate:
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 # ————————————————————————————————————————————
 # CONTENT
@@ -70,7 +50,7 @@ components:
     subtitle: "L’insieme di indicazioni e risorse per realizzare siti e servizi pubblici di qualità, efficienti e accessibili" #C
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: | #C
@@ -107,6 +87,8 @@ components:
           listItems: #AUTO
             - url: "come-iniziare/" #M
               label: "Come iniziare" #C
+            - url: "come-contribuire/" #M
+              label: "Come contribuire" #C
             - url: "fondamenti/" #M
               label: "Fondamenti" #C
             - url: "componenti/" #M
@@ -122,8 +104,8 @@ components:
     title: Istruzioni e mattoncini per la realizzazione di siti e servizi della PA #C
     background: null
     text: | #C
-      Ti diamo il benvenuto nel primo design system italiano dedicato al mondo delle pubbliche amministrazioni e dei loro fornitori: questo è il punto di partenza per la progettazione di siti e servizi digitali pubblici di qualità, accessibili, inclusivi e fondati sulle reali necessità delle persone. 
-      Scopri l'insieme delle indicazioni, delle regole e delle risorse alla base delle interfacce digitali dei servizi pubblici italiani. 
+      Ti diamo il benvenuto nel primo design system italiano dedicato al mondo delle pubbliche amministrazioni e dei loro fornitori: questo è il punto di partenza per la progettazione di siti e servizi digitali pubblici di qualità, accessibili, inclusivi e fondati sulle reali necessità delle persone.
+      Scopri l'insieme delle indicazioni, delle regole e delle risorse alla base delle interfacce digitali dei servizi pubblici italiani.
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     moreText: | #C
@@ -160,21 +142,20 @@ components:
         - label: Scopri come iniziare #C
           btnStyle: primary
           url: "come-iniziare/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
         - label: Per designer #C
           btnStyle: outline-secondary
           url: "come-iniziare/per-designer/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
         - label: Per sviluppatori #C
           btnStyle: outline-secondary
           url: "come-iniziare/per-sviluppatori/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
         - label: Per responsabili progetto #C
           btnStyle: outline-secondary
           url: "come-iniziare/per-responsabili-progetto/" #M
-          addonStyle: mb-3 mb-sm-0
-          
-
+          addonStyle: mb-3
+        
     # —
     # HIGHLIGHT
     # —
@@ -193,7 +174,7 @@ components:
         - label: Scopri i fondamenti
           btnStyle: primary
           url: "fondamenti/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
 
    # —
     # HIGHLIGHT
@@ -221,29 +202,63 @@ components:
         - label: Scopri i componenti
           btnStyle: primary
           url: "componenti/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
 
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title: Come contribuire #C
+      id: come-contribuire
+      # img: /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel: 3
+      background: null # null | light | medium | dark
+      big: false
+      specular: true
+      subtitle: Scopri i passi da compiere per contribuire al design system del Paese #C
+      buttons: #C #I
+        - label: Scopri come contribuire #C
+          btnStyle: primary
+          url: "come-contribuire/" #M
+          addonStyle: mb-3
+        - label: Per la documentazione #C
+          btnStyle: outline-secondary
+          url: "come-contribuire/per-la-documentazione/" #M
+          addonStyle: mb-3
+        - label: Per il design #C
+          btnStyle: outline-secondary
+          url: "come-contribuire/per-il-design/" #M
+          addonStyle: mb-3
+        - label: Per lo sviluppo #C
+          btnStyle: outline-secondary
+          url: "come-contribuire/per-lo-sviluppo/" #M
+          addonStyle: mb-3
 
     # —
     # HIGHLIGHT BIG IMG
     # —
     - title: Design pattern #C
       id: design-pattern
-      # img: /images/400x300.png #I
-      # alt: Alt lorem ipsum #C
       headingLevel: 3
       background: medium # null | light | medium | dark
-      big: true
+      big: false
       specular: true
-      subtitle: | #C
-       Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficacemente testati in situazioni simili
-      buttons: #C #M
-        - label: Scopri i design pattern
-          btnStyle: primary
-          url: "design-pattern/"
-          addonStyle: mb-3 mb-sm-0
-          disabled: true
-
+      subtitle: Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficacemente testati in situazioni simili
+      text: |
+        _In stesura_
+        
+    # —
+    # HIGHLIGHT
+    # —
+    - title: Showcase #C
+      id: showcase
+      headingLevel: 3
+      big: false
+      background: dark
+      specular: true
+      subtitle: I progetti più significativi realizzati con il design system del Paese #C
+      text: | #C
+        _In stesura_
 
   # # —
   # # IMAGE COVER WITH ICONS
@@ -271,33 +286,61 @@ components:
   #   #   alt: Alt lorem ipsum #C
 
   # —
-  # HIGHLIGHT LOOP
+  # HIGHLIGHT WITH CARDS
   # —
-  highlightsLoop2 :
+  highlightCards:
+    id: novita
+    title: Le ultime notizie sul design system del Paese #C
+    # text: 
+    headingLevel: 3
+    background: null
+    col4: false # FALSE notizie + Medium | TRUE eventi + media
 
+    # CARDS
+    cards:
 
-    # —
-    # HIGHLIGHT
-    # —
-    - title: Showcase #C
-      id: showcase
-      # img: /images/400x300.png #I
-      # alt: Alt lorem ipsum #C
-      headingLevel: 3
-      big: false
-      background: dark
-      specular: true
-      subtitle: I progetti più significativi realizzati con il design system del Paese #C
-      # text: | #C
-      #  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
-      buttons: #C #M
-        - label: Scopri i casi studio
-          btnStyle: primary
-          url: "showcase/"
-          addonStyle: mb-3 mb-sm-0
-          disabled: true
-        - label: Proponi un caso studio
-          btnStyle: outline-primary
-          url: "#"
-          addonStyle: mb-3 mb-sm-0
-          disabled: true
+      - title: 'Disponibile il player video della Pubblica Amministrazione attento a privacy e accessibilità'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Il design system del Paese si arricchisce di un importante componente già in uso nel nuovo archivio media di Designers Italia.
+        img: /images/community/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita/"
+        dateInfo: 31 ottobre 2023
+        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, Accessibilità]
+
+      - title: 'Nuovi rilasci del design system del Paese e delle risorse di progettazione e sviluppo'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Tra le principali novità, il player video attento a privacy e accessibilità e nuove schede informative.
+        img: /images/community/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo/"
+        dateInfo: 24 ottobre 2023
+        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia]
+
+      - title: 'Prendi parte anche tu all’evoluzione del design system del Paese'
+        headingLevel: 4
+        text: Scopri tutte le novità per collaborare alla realizzazione della documentazione e delle risorse.
+        img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
+        dateInfo: 25 settembre 2023
+        tags: [Design system]
+
+  # # —
+  # # HIGHLIGHT LOOP
+  # # —
+  # highlightsLoop2 :

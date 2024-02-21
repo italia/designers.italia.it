@@ -9,31 +9,8 @@ metadata:
 seo:
   name: Back to top - Designers Italia
   description: "Consente agli utenti di scorrere agevolmente verso la parte superiore della pagina"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/back-to-top/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 components:
   hero:
@@ -86,6 +63,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -96,6 +74,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -106,6 +85,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -116,6 +96,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         id: ComponentStatus
         components:
           - name: TextImageCta
@@ -130,6 +111,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -140,6 +122,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -150,6 +133,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -161,7 +145,8 @@ tabs:
 
       - full: true
         noSpace: true
-        components: 
+        paddingLeft: true
+        components:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
@@ -170,7 +155,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -192,7 +177,8 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
-        components: 
+        paddingLeft: true
+        components:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
@@ -201,7 +187,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
