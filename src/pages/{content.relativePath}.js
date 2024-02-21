@@ -272,6 +272,7 @@ export const query = graphql`
             # disabled
             url
             blank
+            ariaLabel
             icon {
               icon
               color
@@ -476,6 +477,7 @@ export const query = graphql`
             label
             url
             blank
+            ariaLabel
             icon {
               icon
               color

@@ -129,7 +129,7 @@ components:
             - label: "Conosci il modello di contribuzione?" #C
               screenReaderText: ""
               url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -151,9 +151,9 @@ components:
             Controlla se già esiste una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai nella segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo di design sul tema scopri di seguito la procedura per inviare contributi e proponili nella discussione.  
           ctas: 
             - label: "Discussioni su UI Kit Italia" #C
-              screenReaderText: ""
               url: https://github.com/italia/design-ui-kit/issues #M
               blank: true #M #C true if new tab for external links
+              screenReaderText: " (si apre in una nuova finestra)"
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -162,7 +162,7 @@ components:
                 size: sm
                 addonClasses: ms-2
             - label: "Discussioni su Design Tokens Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-tokens-italia/issues #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -181,7 +181,7 @@ components:
             Se il tema di tuo interesse non è nella lista puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari per approfondire il tema, in modo da consentire alla community e al team di Designers Italia di avere un quadro chiaro e il più possibile completo della tua proposta.    
           ctas: 
             - label: "Nuova segnalazione UI Kit Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-ui-kit/issues/new?assignees=&labels=design%20system&projects=&template=apri-una-segnalazione.it.yaml #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -192,7 +192,7 @@ components:
                 size: sm
                 addonClasses: ms-2
             - label: "Nuova segnalazione Design Tokens Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-tokens-italia/issues/new?assignees=&labels=design%20system&projects=&template=apri-una-segnalazione.it.yaml #M
               blank: true #M #C true if new tab for external links
               icon:
