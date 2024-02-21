@@ -37,35 +37,35 @@ function Kangaroo({
         </h2>
       )}
       <div className="kangaroo-wrapper py-4 d-lg-flex justify-content-between align-items-top">
-        {dropdown &&
+        {dropdown && (
           <div className="left-zone col-12 col-lg-4 d-flex pt-3 pb-4">
             <div className="dropdwon-zone mt-4 mt-lg-0">
               <Dropdown {...dropdown} />
             </div>
           </div>
-        }
+        )}
         <div className="right-zone">
-          {navposition &&
+          {navposition && (
             <div className="navposition-wrapper">
               <NavPosition {...navposition} />
             </div>
-          }
-          {personalInfo &&
+          )}
+          {personalInfo && (
             <div className="personal-info-wrapper">
               <NavPosition {...personalInfo} />
             </div>
-          }
-          {eventInfo &&
+          )}
+          {eventInfo && (
             <div className="event-info-wrapper">
               <NavPosition {...eventInfo} />
             </div>
-          }
-          {otherInfo &&
+          )}
+          {otherInfo && (
             <div className="other-info-wrapper">
               <NavPosition {...otherInfo} />
             </div>
-          }
-          {(tagsLabel && tags) && (tags.length > 0) &&
+          )}
+          {tagsLabel && tags && tags.length > 0 && (
             <div className="pills-wrapper d-md-flex align-items-start pt-3 pt-md-2">
               <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
                 <Icon {...icon} addonClasses="me-3" />
