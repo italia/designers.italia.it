@@ -5,7 +5,7 @@ import SimpleCta from "../simple-cta/simple-cta";
 import "./text-image-cta.scss";
 
 import ImageResponsive from "../image-responsive/image-responsive";
-import ContentCollapse from "../content-collapse/contentCollapse";
+import ContentCollapse from "../content-collapse/content-collapse";
 
 function TextImageCta({
   title,
@@ -77,7 +77,7 @@ function TextImageCta({
             {moreText}
           </ContentCollapse>
         )}
-        {ctaItems && <div className="ctas mt-4 d-md-flex">{ctaItems}</div>}
+        {ctaItems && <div className="ctas mt-3 mb-4 d-md-flex">{ctaItems}</div>}
       </div>
     </div>
   );
