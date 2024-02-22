@@ -214,12 +214,18 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              ![Gli elementi che compongono il componente notification](/images/design-system/componenti/notification-anatomy.png)
+              ![Gli elementi che compongono il componente notification](/images/design-system/componenti/notifications-anatomy.png)
 
-              Il componente Notifications è composto da:
+              Il componente notifications è composto da:
 
-              1. 
-              2.
+              1. **forma di sfondo** con ombreggiatura per sottolineare lo stacco dalla pagina sottostante;
+              2. **bordo laterale o superiore** (a seconda del dispositivo) che può cambiare colore in base allo stato della notifica;
+              3. **icona** che accompagna il titolo della notifica;
+              4. **titolo della notifica**;
+              5. **descrizione** del messaggio di notifica;
+              6. **link** eventuale ad altre pagine del sito o approfondimenti esterni;
+              7. **pulsante secondario** utilizzato per annullare l'azione o tornare indietro;
+              8. **pulsante primario** utilizzato per confermare l'esecuzione di un'azione.
 
       - full: true
         noSpace: true
@@ -244,9 +250,15 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              Tutte le misure indicate sono espresse in `px`.
+              Le specifiche di design cambiano tra dispositivi piccoli (mobile, tablet) e medio-grandi (laptop, desktop).
 
-              ![Specifiche di design per il componente notification](/images/design-system/componenti/notifications-specs.png)
+              Tutte le misure indicate sono espresse in `px`.
+              
+              ### Dispositivi piccoli
+              ![Specifiche di design per il componente notification su dispositivi piccoli](/images/design-system/componenti/notifications-small-specs.png)
+
+              ### Dispositivi medio-grandi
+              ![Specifiche di design per il componente notification su dispositivi grandi](/images/design-system/componenti/notifications-large-specs.png)
 
 
       - full: true
