@@ -71,7 +71,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente Steppers è perfetto se si deve gestire un processo che richiede vari passaggi, in un progresso lineare. 
+
+              Questo metodo di navigazione è molto utile per guidare l'utente in un processo o flusso di lavoro passo per passo, come nei moduli di registrazione, nel checkout del carrello o nelle procedure guidate. Aiuta a semplificare le operazioni complesse, suddividendole in passaggi più brevi.
+
+              ### Alternative
+
+              - Considera l’uso di **[form](https://www.notion.so/Steppers-2d1e6353e31f451ca89bc3a71ebe9e96?pvs=21)** semplice se un processo ha meno di tre sezioni.
 
       - full: true
         noSpace: true
@@ -82,7 +88,22 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              ## Come usarlo
+
+              - Indica sempre dove si trova un utente nel processo, evidenziando il passaggio corrente con un bordo, uno colore di sfondo o uno stile di testo; il passaggio corrente deve essere visivamente prominente e distinguersi sia dai passaggi completati che da quelli in sospeso.
+              - Usa la navigazione con un [gruppo di pulsanti](https://designsystem.digital.gov/components/button-group/) per avanzare o tornare indietro;
+              - Usa un pulsante “Salva” per consentire il salvataggio dei dati durante il processo di compilazione;
+
+              ### Attenzione a
+
+              - Non usare Steppers per form con logica condizionale, dove il numero dei passaggi potrebbe dipendere dai dati inseriti dall’utente;
+              - Non usare Steppers in caso di un progresso non lineare, dove il completamento dei passaggi non segue un ordine specifico;
+
+              ### Buone pratiche sui contenuti
+
+              - Usa etichette brevi o di una sola parola per il nome del singolo passaggio;
+              - Posiziona il titolo del passaggio subito sotto lo stepper, utilizzando un testo coerente con quello presente nell’etichetta;
+              - Mostra il passaggio corrente e il totale a sinistra del titolo. L'uso di un testo come "[passo] di [totale]" accanto al titolo rafforza il numero di passaggi totali e aiuta gli utenti a tenere traccia della loro posizione nel processo complessivo.
 
       - full: true
         noSpace: true
