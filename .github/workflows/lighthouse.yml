@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: npm run build
+      - run: npm run build:dev
 
       - uses: treosh/lighthouse-ci-action@v9
         id: lighthouse_audit
@@ -56,7 +56,7 @@ jobs:
             const other_pages = manifest.filter(result => new URL(result.url).pathname !== '/')
 
             const comment = [
-                `### :zap: Lighthouse report for the home page :house:`,
+                `### ⚡ Lighthouse report for the home page 🏠`,
                 '| Category | Score |',
                 '| --- | --: |',
                 `| ${score(home_page.summary.performance)} Performance | ${home_page.summary.performance} |`,

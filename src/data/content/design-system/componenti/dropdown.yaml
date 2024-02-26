@@ -9,8 +9,6 @@ metadata:
 seo:
   name: "Dropdown - Designers Italia"
   description: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/dropdown/
 
@@ -65,36 +63,52 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il dropdown offre una navigazione veloce al contenuto desiderato, permettendo agli utenti di risparmiare tempo e accedere direttamente a specifici contenuti. È utile quindi per creare menu contestuali tramite un elenco di link o azioni.
+
+              Aiuta inoltre a nascondere le scelte meno rilevanti, mantenendo l'interfaccia pulita sopratutto nel caso di poco spazio a disposizione.
+
+              ### Alternative a questo componente
+
+              Per permettere all'utente di esprimere scelte tra più elementi in un modulo (form), usa i componenti [select](/design-system/componenti/select/) e [autocomplete](/design-system/componenti/autocomplete/), o un gruppo di [radio button](/design-system/componenti/radio-button/).
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Assicurati che il menu a tendina sia visibile e facilmente accessibile.
+              - Organizza le opzioni in un ordine logico o alfabetico.
+              - Limita il numero di opzioni per evitare all'utente un eccessivo carico cognitivo.
+              - Usa le varianti di colore nel rispetto del loro valore semantico.
+              - Nel caso ci siano molte opzioni, organizzale in sottocategorie.
 
-              #### Attenzione a
-              _In stesura_
+              ### Attenzione a
 
-              #### Buone pratiche sui contenuti
-              _In stesura_
+              - Non nascondere nel menu quelle opzioni che richiedono una accesso immediato o frequente.
+              - Garantire che il menu sia facilmente accessibile e utilizzabile con dispositivi touch, tastiera e strumenti di tecnologia assistiva come screen reader.
+              - Aggiungere un’icona all’etichetta di testo solo quando ne rafforza il significato.
 
-              #### Alternative a questo componente
-              _In stesura_
+              ### Buone pratiche sui contenuti
+
+              - Usa nomi di opzioni che siano intuitivi e facili da comprendere.
+              - L'etichetta del pulsante di apertura deve descrivere in modo chiaro la finalità del menu.
+
 
       - full: true
         noSpace: false
         title: Accessibilità
+        paddingLeft: true
         background: null
         text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
         components:
@@ -153,6 +167,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         title: Stato del componente
         id: ComponentStatus
         text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
@@ -232,37 +247,66 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente dropdown è composto un pulsante e un menu. Gli elementi che ne fanno parte sono:
+
+              ### Pulsante
+
+              ![Gli elementi che formano il pulsante o link del dropdown](/images/design-system/componenti/dropdown-anatomy.png)
+              ![Gli elementi che formano il pulsante o link del dropdown](/images/design-system/componenti/dropdown-outline-anatomy.png)
+
+              1. **etichetta** (label): il testo rappresenta il contenuto del menu;
+              2. **icona freccia**: suggerisce all'utente cosa aspettarsi all'apertura.
+              3. **bordo o sfondo**: nelle varianti che lo prevedono;
+
+              ### Menu
+
+              ![Gli elementi che formano il menu del dropdown](/images/design-system/componenti/dropdown-menu-anatomy.png)
+
+              1. **sfondo**: contiene la lista di opzioni;
+              2. **opzioni**: il testo di ogni voce del menu;
+              3. **icona** (a sinistra): simboleggia il contenuto o l'azione descritta dal testo;
+              4. **icona** (a destra): posizione alternativa a quella di sinistra;
+              5. **linguetta**: collega il menu al pulsante che è stato premuto;
+              6. **linea divisoria**: separa le opzioni del menu in gruppi distinti.
+
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Quando l'utente fa clic o attiva il menu a discesa, si apre un elenco di opzioni.
+              - L'utente può scorrere l'elenco e fare clic su un'opzione, per navigare al link o per iniziare l'azione a seconda della tipologia di opzione.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design del pulsante dropdown](/images/design-system/componenti/dropdown-specs.png)
+              ![Specifiche di design del pulsante dropdown](/images/design-system/componenti/dropdown-menu-specs.png)
 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -272,7 +316,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -294,6 +338,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -303,7 +348,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
