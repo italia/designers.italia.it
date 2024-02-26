@@ -138,18 +138,37 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              Il componente stepper è composto da elementi diversi:
+              Gli elementi che compongono tutte le parti del componente stepper:
 
               ### Step singolo
 
               #### Dispositivi piccoli
               ![Gli elementi che formano il singolo step](/images/design-system/componenti/stepper-single-step-small-anatomy.png)
+              1. **forma di sfondo**: può essere di colore bianco o evidenziato quando lo step è attivo;
+              2. **titolo dello step**;
+              3. **icona** (opzionale): affianca il titolo e ne rappresenta il contenuto;
+              4. **numero step**: indica il numero dello step corrente rispetto al totale;
+              5. **icona di apertura**: espande il contenuto dello step mostrando la lista di tutti i passaggi;
+              6. **lista degli steps**: la lista di tutti gli steps, appare in dropdown;
+              7. **step corrente**: la posizione dello step  corrente rispetto alla lista;
+              8. **icona di stato**: comunica l'effettivo completamento di uno step.
+
 
               #### Dispositivi medio-grandi
               ![Gli elementi che formano il singolo step](/images/design-system/componenti/stepper-single-step-anatomy.png)
+              1. **forma di sfondo**: può essere di colore bianco o evidenziato quando lo step è attivo;
+              2. **titolo dello step**;
+              3. **numero step**: indica il numero del passaggio corrente;
+              4. **icona** (opzionale): affianca il titolo e ne rappresenta il contenuto;
+              5. **icona di stato**: comunica l'effettivo completamento di uno step.
 
               ### Barra di navigazione
               ![Gli elementi che formano il singolo step](/images/design-system/componenti/stepper-bottom-bar-anatomy.png)
+              1. **forma di sfondo**: può avere un colore diverso o uguale a quello della pagina, prevede un bordo superiore di separazione;
+              2. **pulsante indietro**: permette di tornare allo step precedente;
+              3. **pulsante salva**: permette di salvare il form allo step corrente;
+              4. **pulsante avanti**: permette di proseguie allo step successivo, al completamento dello step corrente;
+              5. **pulsante conferma**: permette di completare la procedura.
 
               Nel caso di dispositivi piccoli, i pulsanti che fanno parte della barra di navigazione cambiano misura da `large` a `small`;
 
