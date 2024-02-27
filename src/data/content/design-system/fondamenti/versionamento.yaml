@@ -8,8 +8,6 @@ metadata:
 seo:
   name: Versionamento
   description: "Usiamo il versionamento semantico su ogni risorsa del design system del Paese"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/fondamenti/versionamento/
 
@@ -134,7 +132,7 @@ components:
           - label: Scopri la guida al versionamento semantico (semver) #C
             url: https://semver.org/lang/it/ #M
             blank: true #M #C true if new tab for external links
-           
+            screenReaderText: " (si apre in una nuova finestra)"          
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -165,7 +163,7 @@ components:
               - text: Documentazione (questo sito)
                 scope: row
               - tag:
-                  label: 1.0.0-alpha.16 #AUTO
+                  label: 1.0.0-alpha.18 #AUTO
                   addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: A seguire
@@ -231,6 +229,22 @@ components:
       components:
         - name: TextImageCta
           text: |
+            ### v1.0.0-alpha.18
+            20 febbraio 2024
+            - **[Come iniziare](/design-system/come-iniziare/)**
+              - Aggiornati contenuti schede: [Per designer](/design-system/come-iniziare/per-designer/), [Per sviluppatori](/design-system/come-iniziare/per-sviluppatori/)
+            - **[Come contribuire](/design-system/come-contribuire/)**
+              - Aggiornati contenuti scheda: [Per lo sviluppo](/design-system/come-contribuire/per-lo-sviluppo/)
+            - **[Fondamenti](/design-system/fondamenti/)**
+              - Aggiornati contenuti scheda: [Accessibilità](/design-system/fondamenti/accessibilita/)
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornati contenuti schede: [Badge](/design-system/componenti/badge/), [Datepicker](/design-system/componenti/datepicker/), [Modal](/design-system/componenti/modal/), [Timepicker](/design-system/componenti/timepicker/)
+
+            ### v1.0.0-alpha.17
+            9 febbraio 2024
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornati contenuti schede: [Accordion](/design-system/componenti/accordion/), [Alert](/design-system/componenti/alert/), [Avatar](/design-system/componenti/avatar/), [Callout](/design-system/componenti/callout/), [Card](/design-system/componenti/card/), [Dropdown](/design-system/componenti/dropdown/), [List](/design-system/componenti/list/), [Megamenu](/design-system/componenti/megamenu/)
+              
             ### v1.0.0-alpha.16
             30 gennaio 2024
             - **[Fondamenti](/design-system/fondamenti/)**
@@ -257,13 +271,18 @@ components:
               - Aggiornato **Design Tokens Italia** alla versione v1.2.0.           
               - Aggiornato **Bootstrap Italia** alla versione v2.8.1.
 
+          moreButton: Versioni precedenti
+          moreButtonClose: Chiudi
+          moreText: | #C
+            -------
             ### v1.0.0-alpha.14
             24 novembre 2023
             - **[Fondamenti](/design-system/fondamenti/)**
               - Nuova scheda: [Bordi e raggi](/design-system/fondamenti/bordi-e-raggi/).
             - Risorse
               - Aggiornato **Bootstrap Italia** alla versione v2.7.7.
-              
+
+            -------
             ### v1.0.0-alpha.13
             10 novembre 2023
             - **[Fondamenti](/design-system/fondamenti/)**
@@ -275,6 +294,7 @@ components:
             - Risorse
               - Aggiornato **Bootstrap Italia** alla versione v2.7.5.
 
+            -------
             ### v1.0.0-alpha.12
             23 ottobre 2023
             - **[Componenti](/design-system/componenti/)**
@@ -284,6 +304,7 @@ components:
               - Aggiornato **UI Kit Italia** alla versione v3.2.0.
               - Aggiornato **Bootstrap Italia** alla versione v2.7.4.
 
+            -------
             ### v1.0.0-alpha.11
             13 ottobre 2023
             - **[Fondamenti](/design-system/fondamenti/)**
@@ -297,9 +318,6 @@ components:
             - Risorse
               - Aggiornato **Bootstrap Italia** alla versione v2.7.1.
 
-          moreButton: Versioni precedenti
-          moreButtonClose: Chiudi
-          moreText: | #C
             -------
             ### v1.0.0-alpha.10
             22 settembre 2023

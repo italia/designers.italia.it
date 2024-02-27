@@ -8,8 +8,6 @@ metadata:
 seo:
   name: Per sviluppatori
   description: Tutti gli strumenti pensati per sviluppare interfacce ed esperienze dei servizi pubblici
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/come-iniziare/per-sviluppatori/
 
@@ -111,7 +109,8 @@ components:
         - name: TextImageCta
           title: Versione corrente
           noSpace: true
-          # text: |
+          text: |
+            Questa è **la versione 2 di Bootstrap Italia**, risorsa ufficiale del design system del Paese. L’insieme di fondamenti e componenti utili agli sviluppatori per realizzare siti internet e servizi digitali della Pubblica Amministrazione che rispettano le norme e semplificano la vita dei cittadini.
           ctas:
           - label: Vai al repository dedicato #C
             screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
@@ -124,7 +123,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-          - label: Documentazione #C
+          - label: Documentazione di sviluppo #C
             screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
             url: https://italia.github.io/bootstrap-italia/ #M
             blank: true #M #C true if new tab for external links
@@ -148,38 +147,10 @@ components:
               addonClasses: ms-2
 
         - name: TextImageCta
-          title: I Design Tokens
+          title: Altri framework community-driven
           noSpace: true
-          # text: |
-          ctas:
-          - label: Vai al repository dedicato #C
-            screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
-            url: https://github.com/italia/design-tokens-italia #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-          - label: Changelog #C
-            screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
-            url: https://github.com/italia/design-tokens-italia/releases #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        - name: TextImageCta
-          title: Altri framework community driven
-          noSpace: true
-          # text: |
-          #   Scopri i progetti community-driven React e Angular Kit che implementano Bootstrap Italia. 
+          text: |
+            I framework React e Angular Kit che implementano i componenti e gli stili di Bootstrap Italia.
           ctas:
           - label: React Kit #C
             url: https://github.com/italia/design-react-kit #M
@@ -260,6 +231,36 @@ components:
            
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          # title: Design token
+          headingLevel: 4
+          noSpace: true
+          text: |
+            Nei prossimi mesi inizieranno i lavori per integrare i design token di UI Kit Italia in Bootstrap Italia e nelle altre risorse di sviluppo. Puoi già usarli nei tuoi progetti o seguire i lavori nel repository dedicato al progetto Design Tokens Italia.
+          ctas:
+          - label: Vai al repository dedicato #C
+            screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/design-tokens-italia #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Changelog #C
+            screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/design-tokens-italia/releases #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
