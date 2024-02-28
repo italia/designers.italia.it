@@ -70,14 +70,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-               Utilizza il componente input, nel contesto di un modulo ([form](/design-system/componenti/form/)), quando vuoi permettere agli utenti di inserire dati testuali. 
-               
-               Le numerose varianti e combinazioni abilitano l'inserimento di testi in forma libera o in formati specifici. Si possono usare per inserimenti lunghi e brevi, e per costruire campi di ricerca. 
-
-               I componenti [datepicker](/design-system/componenti/datepicker/) e [timepicker](/design-system/componenti/timepicker) sono da considerarne varianti consolidate in componenti ad hoc per ottimizzarne l'accessibilità e l'implementazione. 
+               Utilizza il componente input, nel contesto di un modulo ([form](/design-system/componenti/form/)), quando vuoi permettere agli utenti di inserire dati testuali, in forma libera o in formati specifici, per inserimenti lunghi o brevi.
 
                ### Alternative a questo componente
-               Se devi prevedere la possibilità di guidare l'utente a inserire solo testo da un elenco controllato, ti suggeriamo di utilizzare [autocomplete](/design-system/componenti/autocomplete/). Per scelte più precise con un numero di item non troppo alto puoi usare [select](/design-system/componenti/select/).
+
+               - Usa i componenti [datepicker](/design-system/componenti/datepicker/), [timepicker](/design-system/componenti/timepicker) e [number input](/design-system/number-input/) per questi formati specifici. Sono varianti del componente input consolidate in componenti ad hoc per ottimizzarne accessibilità e comportamento. 
+                              
+               - Se devi prevedere la possibilità di guidare l'utente a inserire solo testo da un elenco controllato, devi usare il componente [autocomplete](/design-system/componenti/autocomplete/). Sempre nel caso di un elenco controllato, con un numero di item non troppo alto, devi usare [select](/design-system/componenti/select/) o un gruppo di [radio button](/design-system/componenti/radio-button/).
 
       - full: true
         noSpace: true
@@ -88,7 +87,18 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Usa le variante base per testi brevi o dati specifici brevi: ad esempio campi per inserimento nome utente, email, telefono. 
+              - Usa la variante area di testo per testi lunghi, definisci un numero di caratteri massimo. 
+              - Usa la variante password per campi di inserimento e registrazione password.
+              - Usa le varianti di ricerca per implemtare campi di ricerca nei contenuti, con o senza suggerimenti e/o autocompletamento. 
+
+              ### Attenzione a
+              - Predisporre sempre etichette (label) univoche per ogni campo, sono un elemento fondamentale anche per l'accessibilità. 
+             
+              ### Buone pratiche sui contenuti
+              - Le etichette etichette devono essere chiare e concise, indicando lo scopo del campo all'utente.
+              - Usa testo d'aiuto (helper text) ed eventuale contenuto segnaposto nel campo, per fornire istruzioni ulteriori che guidino l'utente nella compilazione prevenendo errori, ad esempio sul formato richiesto.
+               
 
       - full: true
         noSpace: true
