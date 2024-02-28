@@ -70,7 +70,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |             
-              Il form, o modulo, è un componente involucro (wrapper) che permette di raggruppare controlli di input correlati per l'invio di informazioni o la configurazione di opzioni. 
+              Il form, o modulo, è un componente involucro (wrapper) che permette di raggruppare e impaginare controlli di input correlati per l'invio di informazioni o la configurazione di opzioni. 
 
               Le persone possono inviare il form quando tutti i campi sono validi.
 
@@ -86,14 +86,14 @@ tabs:
               - Puoi costruirlo utilizzando per i campi i componenti dedicati [autocomplete](/design-system/componenti/autocomplete/), [datepicker](/design-system/componenti/datepicker/), [input](/design-system/componenti/input), [number input](/design-system/componenti/number-input), [radio button](/design-system/componenti/radio-button/), [select](/design-system/componenti/select), [timepicker](/design-system/componenti/timepicker), [toggles](/design-system/componenti/toggles), [transfer](/design-system/componenti/transfer/), [upload](/design-system/componenti/upload/).
 
               ### Attenzione a
-              - Implementa la corretta validazione dei campi.
-              - Se il modulo è molto complesso valuta di dividerlo, utilizzando ad esempio il componente [steppers](/design-system/componenti/steppers/).
+              - Se il modulo è molto complesso valuta in primis se hai già alcuni dei dati richiesti da altre fonti, e in caso puoi solo farli validare all'utente; in seconda battuta puoi valutare di dividerlo in più passi, utilizzando il componente [steppers](/design-system/componenti/steppers/).
+              - Implementa per tutti i campi del form la migliore validazione possibile dei valori inseriti; l'obiettivo della validazione non è il restituire errori generici, ma guidare l'utente nella compilazione, oltre a standardizzare i dati inviati. 
               - Data la natura di interazione complessa, testa sempre la sua efficacia con gli utenti. 
 
               ### Buone pratiche sui contenuti
-              - Prevedi un titolo e una descrizione del form, e laddove necessario titoli successivi intermedi se utili alla scansione di gruppi di campi.
-              - Inserisci didascalie, istruzioni e note se necessarie a guidare la compilazione da parte dell'utente, puoi anche utilizzare soluzioni come il [tooltip](/design-system/componenti/tooltip).  
-              - Cura con parsimonia i contenuti delle etichette e dei testi segnaposto per tutti i campi, ed eventuali messaggi di errore. Devono essere concisi e chiari. 
+              - Prevedi un titolo e una descrizione del form, e laddove necessario titoli intermedi se utili alla scansione di gruppi di campi.
+              - Inserisci didascalie e istruzioni tra i campi se necessarie a guidare la compilazione da parte dell'utente, puoi anche utilizzare soluzioni come il [tooltip](/design-system/componenti/tooltip).  
+              - Cura con parsimonia i contenuti delle etichette (label) e dei testi segnaposto per tutti i campi, ed eventuali messaggi di errore. Devono essere concisi e chiari indicando come rimediare. 
 
       - full: true
         noSpace: true
@@ -141,7 +141,7 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              All'invio il form restituirà 
 
       - full: true
         noSpace: true
