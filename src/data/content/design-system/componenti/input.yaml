@@ -91,13 +91,17 @@ tabs:
               - Usa la variante area di testo per testi lunghi, definisci un numero di caratteri massimo. 
               - Usa la variante password per campi di inserimento e registrazione password.
               - Usa le varianti di ricerca per implemtare campi di ricerca nei contenuti, con o senza suggerimenti e/o autocompletamento. 
+              - Puoi usare gli stili con dimensioni più grandi per casi specifici in cui è presente un modulo composto da un solo componente input, ad esempio per campi di ricerca.
 
               ### Attenzione a
               - Predisporre sempre etichette (label) univoche per ogni campo, sono un elemento fondamentale anche per l'accessibilità. 
+              - Indicare chiaramente se la compilazine è opzionale od obbligatoria per l'invio del modulo.
+              - Testare il comportamento del componente con dispositivi, modalità di navigazione e inserimento contenuti diversi, mobile e desktop, navigazione da tastiera e touch.  
              
               ### Buone pratiche sui contenuti
               - Le etichette etichette devono essere chiare e concise, indicando lo scopo del campo all'utente.
-              - Usa testo d'aiuto (helper text) ed eventuale contenuto segnaposto nel campo, per fornire istruzioni ulteriori che guidino l'utente nella compilazione prevenendo errori, ad esempio sul formato richiesto.
+              - Usa testo d'aiuto (helper text) ed eventuale contenuto segnaposto nel campo, per fornire istruzioni ulteriori che guidino l'utente nella compilazione prevenendo errori, ad esempio sul formato richiesto. 
+              - Sostituisci il testo d'aiuto durante la validazione dei contenuti se il campo contiene errori di inserimento, mostrando un suggerimento chiaro all'utente di cosa correggere; ricorda di indicare all'utente una soluzione, non un errore.
                
 
       - full: true
