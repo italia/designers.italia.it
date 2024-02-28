@@ -19,13 +19,15 @@
 metadata:
   template:
     name: level2
+  redirect_from:
+    - /community/materiali-di-formazione
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
   name: Materiali di disseminazione - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Progetta il servizio immaginando e prototipando l’interazione fra utente e touchpoint digitale" #C
+  description: "Qui è raccolto tutto ciò che ti può essere utile per divulgare la cultura della progettazione nell’ambito della Pubblica Amministrazione." #C
   image: null #I
   canonical: null
   pathname: /community/materiali-di-disseminazione/ #M
@@ -73,9 +75,9 @@ components:
   hero:
     background: light
     title: Materiali di disseminazione #C
-    subtitle: "Progetta il servizio immaginando e prototipando l’interazione fra utente e touchpoint digitale" #C
+    subtitle: "Qui è raccolto tutto ciò che ti può essere utile per divulgare la cultura della progettazione nell’ambito della Pubblica Amministrazione" #C
     tag:
-        label: Fase di progettazione  #C
+        label: Community  #C
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
@@ -83,10 +85,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      I kit della fase di progettazione sono dedicati **all’impostazione di elementi e funzionalità del servizio**, emersi dalla ricerca utente: **dall'architettura dell'informazione** alla definizione dei contenuti, fino alla **simulazione dell'esperienza utente** grazie ai prototipi a bassa fedeltà dell’interfaccia.
-    img: /images/risorse-per-progettare/icons/progettare-large.svg #I
-    alt: "" #C
-    imgRatio: 4x3
+      Lorem ipsum testo in breve che spieghi la pagina
 
     # KANGAROO: METADATA
     kangaroo:
@@ -98,13 +97,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Co-progettazione,SEO,Contenuti e linguaggio]
+      tags: [Argomento1,Argomento2]
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri i kit di questa fase #C
+          label: Scopri i kit di disseminazione #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -113,18 +112,8 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "architettura-dell-informazione/"
-              label: "Architettura dell'informazione" #C
-            - url: "co-progettazione/"
-              label: Co-progettazione #C
-            - url: "contenuti-e-linguaggio/"
-              label: Contenuti e linguaggio #C
-            - url: "processi-e-servizi/"
-              label: Processi e servizi #C
-            - url: "prototipazione/"
-              label: Prototipazione #C
-            - url: "seo/"
-              label: SEO #C
+            - url: "insegnare-design-per-la-pa/"
+              label: "Insegnare design per la PA" #C
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -136,7 +125,7 @@ components:
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Esplora e usa i kit di design #C
+    title: Esplora e usa i kit di disseminazione #C
     text: #C
     col4: false
     noSpace: false
@@ -145,76 +134,16 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: "Architettura dell'informazione" #C
+      - title: "Insegnare design per la PA" #C
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_architettura.svg #I
         iconImgAlt: "" #C
-        text: "Organizza e classifica i contenuti di un touchpoint e definisci le principali funzioni del servizio" #C
+        text: "Lorem ipsum" #C
         titleSmall: false
         fullHeight: true
-        url: "architettura-dell-informazione/" #M
+        url: "insegnare-design-per-la-pa/" #M
         tag:
-          label: Kit di design #C
-
-       # CARD CHILDREN
-      - title: Co-progettazione #C
-        imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_coprog.svg #I
-        iconImgAlt: "" #C
-        text: "Coinvolgi stakeholder e utenti del servizio in una sessione di co-progettazione utilizzando un approccio aperto" #C
-        titleSmall: false
-        fullHeight: true
-        url: "co-progettazione/" #M
-        tag:
-          label: Kit di design #C
-
-        # CARD CHILDREN
-      - title: Contenuti e linguaggio #C
-        imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_linguaggio.svg #I
-        iconImgAlt: "" #C
-        text: "Definisci i contenuti del tuo progetto e usa un linguaggio chiaro e inclusivo" #C
-        titleSmall: false
-        fullHeight: true
-        url: "contenuti-e-linguaggio/" #M
-        tag:
-          label: Kit di design #C
-
-        # CARD CHILDREN
-      - title: Processi e servizi #C
-        imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_servizio.svg #I
-        iconImgAlt: "" #C
-        text: "Progetta servizi pubblici efficaci definendo i principali flussi di servizio e funzionalità dei touchpoint" #C
-        titleSmall: false
-        fullHeight: true
-        url: "processi-e-servizi/" #M
-        tag:
-          label: Kit di design #C
-
-        # CARD CHILDREN
-      - title: Prototipazione #C
-        imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_prototipazione.svg #I
-        iconImgAlt: "" #C
-        text: "Progetta l’esperienza-utente del servizio realizzando un prototipo a bassa fedeltà dell’interfaccia" #C
-        titleSmall: false
-        fullHeight: true
-        url: "prototipazione/" #M
-        tag:
-          label: Kit di design #C
-
-        # CARD CHILDREN
-      - title: SEO #C
-        imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_SEO.svg #I
-        iconImgAlt: "" #C
-        text: "Ottimizza i contenuti in base ai bisogni e alle priorità che gli utenti esprimono durante le ricerche" #C
-        titleSmall: false
-        fullHeight: true
-        url: "seo/" #M
-        tag:
-          label: Kit di design #C
+          label: Kit di disseminazione #C
 
 
   # ///////////////////
