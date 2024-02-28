@@ -69,8 +69,10 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura, iniziando_
+            text: |             
+              Il form, o modulo, è un componente involucro (wrapper) che permette di raggruppare controlli di input correlati per l'invio di informazioni o la configurazione di opzioni. 
+
+              Le persone possono inviare il form quando tutti i campi sono validi.
 
       - full: true
         noSpace: true
@@ -81,7 +83,17 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Puoi costruirlo utilizzando per i campi i componenti dedicati [autocomplete](/design-system/componenti/autocomplete/), [datepicker](/design-system/componenti/datepicker/), [input](/design-system/componenti/input), [number input](/design-system/componenti/number-input), [radio button](/design-system/componenti/radio-button/), [select](/design-system/componenti/select), [timepicker](/design-system/componenti/timepicker), [toggles](/design-system/componenti/toggles), [transfer](/design-system/componenti/transfer/), [upload](/design-system/componenti/upload/).
+
+              ### Attenzione a
+              - Implementa la corretta validazione dei campi.
+              - Se il modulo è molto complesso valuta di dividerlo, utilizzando ad esempio il componente [steppers](/design-system/componenti/steppers/).
+              - Data la natura di interazione complessa, testa sempre la sua efficacia con gli utenti. 
+
+              ### Buone pratiche sui contenuti
+              - Prevedi un titolo e una descrizione del form, e laddove necessario titoli successivi intermedi se utili alla scansione di gruppi di campi.
+              - Inserisci didascalie, istruzioni e note se necessarie a guidare la compilazione da parte dell'utente, puoi anche utilizzare soluzioni come il [tooltip](/design-system/componenti/tooltip).  
+              - Cura con parsimonia i contenuti delle etichette e dei testi segnaposto per tutti i campi, ed eventuali messaggi di errore. Devono essere concisi e chiari. 
 
       - full: true
         noSpace: true
