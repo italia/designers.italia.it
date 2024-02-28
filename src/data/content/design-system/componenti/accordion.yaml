@@ -9,8 +9,6 @@ metadata:
 seo:
   name: Accordion - Designers Italia
   description: "Un accordion è una lista di intestazioni che possono espandersi per mostrare contenuti nascosti, utile per ottimizzare spazio su pagina e creare collegamenti con contenuti correlati"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/accordion/
 
@@ -65,6 +63,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -75,29 +74,31 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Per ridurre lo scorrimento di contenuti testuali lunghi e non cruciali, soprattutto su mobile.
-              - Per dare un’anteprima di contenuti correlati tra loro.
-              - Per organizzare e collegare contenuti simili che si trovano su altre pagine.
-              - Per permettere all’utente di mostrare o nascondere contenuti che gli sono rilevanti.
+              - Usa un accordion per ridurre lo scorrimento di contenuti testuali lunghi e non cruciali, soprattutto su mobile.
+              - Usa il componente per dare un’anteprima di contenuti correlati tra loro.
+              - Organizza e collega contenuti simili che si trovano su altre pagine.
+              - Permetti all’utente di mostrare o nascondere contenuti che per lui rilevanti grazie alle interazioni per espandere o collassare l'accordion.
 
               ### Attenzione a
               - Non nascondere in un accordion informazioni importanti che devono essere lette dagli utenti.
-              - Non usare l’accordion su pagine che devono essere stampate.
+              - Non usare l’accordion su pagine che gli utenti potrebbero avere bisogno di stampare.
               - Non usare l’accordion per contenuti molto articolati graficamente, ad esempio con immagini e icone.
 
               ### Buone pratiche sui contenuti
-              - I titoli delle sezioni dell’accordion devono essere il più breve possibile, rimanendo comunque chiari e descrittivi del contenuto della sezione.
-              - Ogni titolo deve essere formattato come un heading (H2-H4) appropriato all’informazione dell’architettura della pagina.
-              - Il contenuto di sezione può essere diviso in paragrafi e includere sottotitoli di paragrafo, se necessario.
+              - I titoli delle sezioni dell’accordion devono essere il più brevi possibile, rimanendo comunque chiari, descrittivi e specifici rispetto al contenuto della sezione.
+              - Usa per ogni titolo un heading di livello appropriato all'architettura dell'informazione della pagina.
+              - Puoi utilizzare paragrafi per dividere il contenuto di sezione, e includere sottotitoli per agevolare la leggibilità.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -109,6 +110,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: true
@@ -166,6 +168,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -258,36 +261,79 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/accordion-righticon-anatomy.png
+            alt: "Elementi accordion con icona a destra"
+          - name: TextImageCta
+            noSpace: true
             text: |
-              _In stesura_
+              Nell'esempio in immagine un accordion con tre intestazioni, composto dai seguenti elementi principali:
+
+              1. **intestazione** dell'elemento aperto, con icona `chevron` a destra che ne mostra lo stato di apertura, qui mostrata la variante con sfondo attivo
+              2. **contenuto** dell'elemento aperto
+              3. **separatore** tra gli elementi
+              4. **intestazioni non aperte**, con icona `chevron` a destra che ne mostra lo stato chiuso
+
+              ### Variante con icona a sinistra
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/accordion-lefticon-anatomy.png
+            alt: "Elementi accordion con icona a sinistra"
+          - name: TextImageCta
+            noSpace: false
+            text: |             
+              La variante con icone a sinistra prevede icone "+" (2) per mostrare lo stato di intestazioni chiuse e "-" (1) per quelle aperte.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le varianti di accordion sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
+
+              ### Interazioni
+              Ogni elemento dell'accordion si espande e contrae per mezzo dell'attivazione (click, tap o tastiera) della relativa intestazione, sfruttando il comportamento [collapse](/design-system/componenti/collapse/).
+
+              L'apertura degli elementi espande verticalmente il componente, facendo scorrere i contenuti che seguono in pagina. 
+
+              La variante **base** prevede la possibilità di aprire e chiudere indipendentemente ogni elemento. Le varianti **accordion** prevedono che ci possa essere al massimo un solo elemento aperto per volta.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Specifiche relative a intestazione e contenuto di un elemento accordion. Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/accordion-title-specs.png
+            alt: "Intestazione di un elemento dell'accordion con la misura di tutte le spaziature"
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/accordion-content-specs.png
+            alt: "Contenuto di un elemento dell'accordion con la misura di tutte le spaziature"
+          - name: TextImageCta
+            noSpace: false
+            # text: |       
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -297,7 +343,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -306,164 +352,165 @@ tabs:
                 size: sm
                 addonClasses: ms-2
 
-      - full: true
-        noSpace: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title:  Design tokens
-            headingLevel: 2
-            text: |
-              _In stesura, quello che segue è un esempio_
+      # - full: true
+      #   noSpace: true
+      #   paddingLeft: true
+      #   components:
+      #     - name: TextImageCta
+      #       noSpace: false
+      #       title:  Design tokens
+      #       headingLevel: 2
+      #       text: |
+      #         _In stesura, quello che segue è un esempio_
 
-          - name: Table
-            title: Colori
-            responsive: table-responsive-md
-            head:
-              - text: Elemento
-              - text: Stato
-              - text: Proprietà
-              - text: Token
-            rows:
-              - cols:
-                - text: Text
-                  scope: row
-                - text: ""
-                - text: color
-                - tag:
-                    label: $color-text-base
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Link
-                  scope: row
-                - text: ""
-                - text: color
-                - tag:
-                    label: $color-text-primary
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Link
-                  scope: row
-                - text: active
-                - text: color
-                - tag:
-                    label: $color-text-primary-active
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Icon
-                  scope: row
-                - text: ""
-                - text: background
-                - tag:
-                    label: $color-background-primary
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Icon
-                  scope: row
-                - text: active
-                - text: background
-                - tag:
-                    label: $color-background-primary-active
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Separators
-                  scope: row
-                - text: ""
-                - text: border
-                - tag:
-                    label: $color-bluegray-04
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #     - name: Table
+      #       title: Colori
+      #       responsive: table-responsive-md
+      #       head:
+      #         - text: Elemento
+      #         - text: Stato
+      #         - text: Proprietà
+      #         - text: Token
+      #       rows:
+      #         - cols:
+      #           - text: Text
+      #             scope: row
+      #           - text: ""
+      #           - text: color
+      #           - tag:
+      #               label: $color-text-base
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Link
+      #             scope: row
+      #           - text: ""
+      #           - text: color
+      #           - tag:
+      #               label: $color-text-primary
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Link
+      #             scope: row
+      #           - text: active
+      #           - text: color
+      #           - tag:
+      #               label: $color-text-primary-active
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Icon
+      #             scope: row
+      #           - text: ""
+      #           - text: background
+      #           - tag:
+      #               label: $color-background-primary
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Icon
+      #             scope: row
+      #           - text: active
+      #           - text: background
+      #           - tag:
+      #               label: $color-background-primary-active
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Separators
+      #             scope: row
+      #           - text: ""
+      #           - text: border
+      #           - tag:
+      #               label: $color-bluegray-04
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
 
 
-          - name: Table
-            title: Spaziature
-            responsive: table-responsive-md
-            head:
-              - text: Elemento
-              - text: Dimensione
-              - text: Token
-            rows:
-              - cols:
-                - text: Inset
-                  scope: row
-                - text: S
-                - tag:
-                    label: $spacing-inset-s
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Inset
-                  scope: row
-                - text: M
-                - tag:
-                    label: $spacing-inset-m
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Stack
-                  scope: row
-                - text: M
-                - tag:
-                    label: $spacing-stack-m
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Stack
-                  scope: row
-                - text: XL
-                - tag:
-                    label: $spacing-stack-xl
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #     - name: Table
+      #       title: Spaziature
+      #       responsive: table-responsive-md
+      #       head:
+      #         - text: Elemento
+      #         - text: Dimensione
+      #         - text: Token
+      #       rows:
+      #         - cols:
+      #           - text: Inset
+      #             scope: row
+      #           - text: S
+      #           - tag:
+      #               label: $spacing-inset-s
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Inset
+      #             scope: row
+      #           - text: M
+      #           - tag:
+      #               label: $spacing-inset-m
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Stack
+      #             scope: row
+      #           - text: M
+      #           - tag:
+      #               label: $spacing-stack-m
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Stack
+      #             scope: row
+      #           - text: XL
+      #           - tag:
+      #               label: $spacing-stack-xl
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
 
-          - name: Table
-            title: Icone
-            responsive: table-responsive-md
-            head:
-              - text: Elemento
-              - text: Stato
-              - text: Icona
-            rows:
-              - cols:
-                - text: Chevron
-                  scope: row
-                - text: Collapse
-                - tag:
-                    label: Navigazione/Chevron/Collapse
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: Chevron
-                  scope: row
-                - text: Expand
-                - tag:
-                    label: Navigazione/Chevron/Expand
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #     - name: Table
+      #       title: Icone
+      #       responsive: table-responsive-md
+      #       head:
+      #         - text: Elemento
+      #         - text: Stato
+      #         - text: Icona
+      #       rows:
+      #         - cols:
+      #           - text: Chevron
+      #             scope: row
+      #           - text: Collapse
+      #           - tag:
+      #               label: Navigazione/Chevron/Collapse
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: Chevron
+      #             scope: row
+      #           - text: Expand
+      #           - tag:
+      #               label: Navigazione/Chevron/Expand
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
 
-          - name: Table
-            title: Stili di testo
-            responsive: table-responsive-md
-            head:
-              - text: Elemento
-              - text: Stato
-              - text: Stile
-            rows:
-              - cols:
-                - text: Text
-                  scope: row
-                - text:
-                - tag:
-                    label: body text/sans
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: link
-                  scope: row
-                - text:
-                - tag:
-                    label: link/sans-bold
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
-              - cols:
-                - text: link
-                  scope: row
-                - text: active
-                - tag:
-                    label: link/sans-bold-underline
-                    addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #     - name: Table
+      #       title: Stili di testo
+      #       responsive: table-responsive-md
+      #       head:
+      #         - text: Elemento
+      #         - text: Stato
+      #         - text: Stile
+      #       rows:
+      #         - cols:
+      #           - text: Text
+      #             scope: row
+      #           - text:
+      #           - tag:
+      #               label: body text/sans
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: link
+      #             scope: row
+      #           - text:
+      #           - tag:
+      #               label: link/sans-bold
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
+      #         - cols:
+      #           - text: link
+      #             scope: row
+      #           - text: active
+      #           - tag:
+      #               label: link/sans-bold-underline
+      #               addonClasses: neutral-1-bg-a3 text-dark fw-bold
 
 
   - title: Sviluppo
@@ -479,6 +526,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -488,7 +536,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
