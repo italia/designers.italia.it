@@ -70,7 +70,10 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Utilizza il componente select, nel contesto di un modulo ([form](/design-system/componenti/form/)), quando vuoi permettere agli utenti di scegliere tra un elenco di opzioni predefinite. 
+
+              ### Alternative a questo componente
+              In molti casi a livello usabilità è preferibile utilizzare un gruppo di componenti [radio button](/design-system/componenti/radio-button/), laddove il numero di scelte sia limitato. Per lunghe liste di opzioni è preferibile valutare di implementare il componente [autocomplete](/design-system/componenti/autocomplete/) che da all'utente la possibilità di filtrare tra le opzioni scrivendo. 
 
       - full: true
         noSpace: true
@@ -81,7 +84,18 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Puoi impostare una opzione come predefinita la prima volta che l'utente incontra il componente. 
+              - Se usi il componente per permettere all'utente di rispondere a domande non dovresti preselezionare nessuna delle opzioni per non influenzare la risposta. 
+
+              ### Attenzione a
+              - Valutare bene il contesto d'uso e le alternative disponibili, prevedi test di usabilità del modulo. 
+              - Proporre all'utente una rosa di opzioni non troppo lunga, per esempio con domande preliminari che lo precedano e permettano di sfoltirla. Se la lista diventa abbastanza breve, valutare l'uso alternativo di [radio button](/design-system/componenti/radio-button/).
+              - Considerare che il componente prevede l'apertura del pannello di scelta standard del browser e del dispositivo in uso una volta attivato, per ottimizzare accessibilità e usabilità. 
+
+              ### Buone pratiche sui contenuti
+              - Se non c'è una opzione predefinita, puoi prevedere una prima opzione neutra che guidi la scelta dell'utente, ad esempio: "Scegli tra le opzioni: ".
+              - Scrivi l'elenco di opzioni con coerenza, ogni opzione dovrebbe essere breve e chiara, così come la distinzione tra le opzioni dovrebbe essere evidente. 
+              - Ordina le opzioni disponibili in ordine alfabetico, o per altra logica che sia chiara all'utente. 
 
       - full: true
         noSpace: true
