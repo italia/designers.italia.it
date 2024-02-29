@@ -88,11 +88,12 @@ tabs:
               - Se usi il componente per permettere all'utente di rispondere a domande non dovresti preselezionare nessuna delle opzioni per non influenzare la risposta. 
 
               ### Attenzione a
-              - Valutare bene il contesto d'uso e le alternative disponibili, prevedi test di usabilità del modulo. 
+              - Valutare bene il contesto d'uso e le alternative disponibili, prevedi test di usabilità del modulo. In particolar modo se devi affiancare più componenti select nello stesso modulo, tieni in considerazione ad esempio che l'utente potrebbe trovare difficoltà a distinguere tra select con scelte già fatte e non.
               - Proporre all'utente una rosa di opzioni non troppo lunga, per esempio con domande preliminari che lo precedano e permettano di sfoltirla. Se la lista diventa abbastanza breve, valutare l'uso alternativo di [radio button](/design-system/componenti/radio-button/).
-              - Considerare che il componente prevede l'apertura del pannello di scelta standard del browser e del dispositivo in uso una volta attivato, per ottimizzare accessibilità e usabilità. 
+              - Considerare che il componente presente nel design system prevede l'apertura del pannello di scelta standard del browser e del dispositivo in uso una volta attivato, per ottimizzare accessibilità e usabilità in particolar modo in ambito mobile, e ridurre in parte le difficoltà che può incontrare l'utente nel caso di un componente custom. 
 
               ### Buone pratiche sui contenuti
+              - Prevedi un'etichetta (label) che indichi chiaramente lo scopo della scelta richiesta all'utente.  
               - Se non c'è una opzione predefinita, puoi prevedere una prima opzione neutra che guidi la scelta dell'utente, ad esempio: "Scegli tra le opzioni: ".
               - Scrivi l'elenco di opzioni con coerenza, ogni opzione dovrebbe essere breve e chiara, così come la distinzione tra le opzioni dovrebbe essere evidente. 
               - Ordina le opzioni disponibili in ordine alfabetico, o per altra logica che sia chiara all'utente. 
