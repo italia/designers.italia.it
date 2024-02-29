@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Select - Designers Italia
-  description: "Il classico componente per la selezione tipo 'menu a tendina'"
+  description: "Componente che permette all'utente di scegliere una opzione in una lista predefinita di valori."
   canonical: null
   pathname: /design-system/componenti/select/
 
@@ -26,7 +26,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Il classico componente per la selezione tipo 'menu a tendina'"
+    subtitle: "Componente che permette all'utente di scegliere una opzione in una lista predefinita di valori"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -118,7 +118,15 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che compongono la select](/images/design-system/componenti/select-anatomy.png)
+
+              Il componente select chiuso è composto da:
+              1. **valore selezionato**: il valore attualmente selezionato, di default può essere un'indicazione di scelta come "Scegli una opzione:";
+              2. **etichetta** (label): il testo che informa l'utente sulla scenta che deve fare. È obbligatorio, anche per l'accessibilità;
+              3. **freccia**: l'icona che suggerisce il comportamento di apertura del componente;
+              4. **bordo**: riga inferiore che identifica il campo.
+
+              Per il componente select aperto si consiglia di utilizzare lo standard fornito dal browser dell'utente, per ottimizzare usabilità e accessibilità. 
 
       - full: true
         noSpace: true
@@ -129,18 +137,24 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Elenco degli **stati interattivi** disponibili in tutte le varianti del componente:
 
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Specifiche di design
-            headingLevel: 2
-            text: |
-              *In stesura*
+              - **default**: il pulsante si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul componente, è disponibile solo su dispositivi no-touch;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **active**: è lo stato relativo al momento del click o pressione sul componente, apre il pannello con la lista delle opzioni tra cui scegliere; all'apertura è selezionata l'ozione corrente, se è la prima apertura la voce di default si trova come prima della lista;
+              - **disabled**: indica che il componente è disattivato e non è possibile interagire con esso.
+
+      # - full: true
+      #   noSpace: true
+      #   paddingLeft: true
+      #   components:
+      #     - name: TextImageCta
+      #       noSpace: false
+      #       title: Specifiche di design
+      #       headingLevel: 2
+      #       text: |
+      #         *In stesura*
 
 
       - full: true
