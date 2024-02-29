@@ -70,13 +70,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-               Usa il componente input nel contesto di un modulo ([form](/design-system/componenti/form/)), quando vuoi permettere agli utenti di inserire dati testuali, in forma libera o in formati specifici, per inserimenti lunghi o brevi.
+               Usa il componente Input nel contesto di un modulo ([Form](/design-system/componenti/form/)), quando vuoi permettere agli utenti di inserire dati testuali, in forma libera o in formati specifici, per inserimenti lunghi o brevi.
 
                ### Alternative a questo componente
 
-               - Puoi usare i componenti [datepicker](/design-system/componenti/datepicker/), [timepicker](/design-system/componenti/timepicker) e [number input](/design-system/number-input/) per questi formati specifici. Sono varianti del componente input consolidate in componenti ad hoc, per ottimizzare accessibilità e comportamento. 
+               - Puoi usare i componenti [Datepicker](/design-system/componenti/datepicker/), [Timepicker](/design-system/componenti/timepicker) e [Number input](/design-system/number-input/) per questi formati specifici. Sono varianti del componente Input consolidate in componenti ad hoc, per ottimizzare accessibilità e comportamento. 
                               
-               - Se devi prevedere la possibilità di guidare l'utente a inserire solo testo da un elenco controllato, devi usare il componente [autocomplete](/design-system/componenti/autocomplete/). Sempre nel caso di un elenco controllato, con un numero di elementi non troppo alto, devi usare [select](/design-system/componenti/select/) o un gruppo di [radio button](/design-system/componenti/radio-button/).
+               - Se devi prevedere la possibilità di guidare l'utente a inserire solo testo da un elenco controllato, devi usare il componente [Autocomplete](/design-system/componenti/autocomplete/). Sempre nel caso di un elenco controllato, con un numero di elementi non troppo alto, devi usare [Select](/design-system/componenti/select/) o meglio un gruppo di [Radio button](/design-system/componenti/radio-button/).
 
       - full: true
         noSpace: true
@@ -91,7 +91,7 @@ tabs:
               - Usa la variante area di testo per testi lunghi: in questo caso è buona pratica definire un numero di caratteri massimo consentito. 
               - Usa la variante password per campi di inserimento e registrazione password.
               - Usa le varianti di ricerca per implemtare campi di ricerca nei contenuti, con o senza suggerimenti e/o autocompletamento. 
-              - Puoi usare gli stili con dimensioni più grandi per casi specifici in cui è presente un modulo composto da un solo componente input, ad esempio per campi di ricerca.
+              - Puoi usare gli stili con dimensioni più grandi per casi specifici in cui è presente un modulo composto da un solo componente Input, ad esempio per campi di ricerca.
 
               ### Attenzione a
               - Scegliere sempre etichette (label) testuali univoche per ogni campo: queste sono un elemento fondamentale oltre che per la comprensibilità del modulo, anche per l'accessibilità. 
@@ -99,7 +99,7 @@ tabs:
               - Testare il comportamento del componente con dispositivi, modalità di navigazione e inserimento contenuti diversi, mobile e desktop, navigazione da tastiera e touch.  
              
               ### Buone pratiche sui contenuti
-              - Le etichette dei campi di input devono essere chiare e concise, indicando senza ambiguità lo scopo del campo all'utente.
+              - Le etichette dei campi di Input devono essere chiare e concise, indicando senza ambiguità lo scopo del campo all'utente.
               - Usa un testo d'aiuto (helper text) ed eventuali contenuti segnaposto nel campo (placeholder), per fornire istruzioni ulteriori che guidino l'utente nella compilazione prevenendo errori, ad esempio riguardanti il formato richiesto. 
               - Sostituisci il testo d'aiuto con un microtesto di errore durante la validazione dei contenuti se il campo rileva errori di compilazione. Ricorda che è buona pratica mostrare un suggerimento chiaro su cosa è necessario modificare, enfatizzando la soluzione e non l'errore.  
                
@@ -139,9 +139,9 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              ![Gli elementi che formano un input](/images/design-system/componenti/input-anatomy.png)
+              ![Gli elementi che formano un Input](/images/design-system/componenti/input-anatomy.png)
 
-              Il componente input, nelle diverse varianti principali, può essere composto da:
+              Il componente Input, nelle diverse varianti principali, può essere composto da:
               1. **forma di sfondo**;
               2. **etichetta** (label): il testo che informa l'utente sul contenuto che deve inserire nel campo. È obbligatorio, anche per l'accessibilità;
               3. **icona sinistra**: può essere è usata per indicare il tipo di input richiesto, ad esempio con l'icona di una lente di ingrandimento per indicare un campo di ricerca;
@@ -149,16 +149,16 @@ tabs:
               5. **campo di testo**: il campo per l'inserimento del contenuto da parte dell'utente, riga singola;
               6. **testo di aiuto** (helper text): testo opzionale che può fornire un ulteriore aiuto o contesto all'utente sui dati richiesti dal campo; può essere usato per mostrare il formato corretto dei dati;
               7. **icona destra**: di solito è usata per controllare il campo e alcune sue funzionalità, ad esempio può contenere l'accesso al calendario nelle varianti di scelta data del componente dedicato [datepicker](/design-system/componenti/datepicker/); è anche lo spazio che indica lo stato di validazione del campo dopo l'invio del modulo;
-              8. **frecce per input numerici**: presenti, a seconda del browser e del framework, nelle varianti con step numerici, come nel caso del componente dedicato [number input](/design-system/componenti/number-input);
+              8. **frecce per input numerici**: presenti, a seconda del browser e del framework, nelle varianti con step numerici, come nel caso del componente dedicato [Number input](/design-system/componenti/number-input);
               9. **bordo**: riga inferiore che identifica il campo. 
 
               È consigliato utilizzare al massimo una sola icona, scegliendo la posizione corretta in base all'azione.
 
               ### Input password
 
-              ![Gli elementi che formano un input di tipo password](/images/design-system/componenti/input-password-anatomy.png)
+              ![Gli elementi che formano un Input di tipo password](/images/design-system/componenti/input-password-anatomy.png)
 
-              Il componente input di tipo password prevede inoltre:
+              Il componente Input di tipo password prevede inoltre:
               1. **campo di testo**: il campo per l'inserimento del contenuto da parte dell'utente prevede nel caso di un campo password una modalità di default offuscata, disattivabile temporaneamente dall'utente per facilitare l'inserimento;
               2. **icona destra**: usata per controllare la modalità offuscata del campo di testo, agisce da toggle per passare tra lo stato in chiaro (icona occhio) e lo stato offuscato (icona occhio barrato);
               3. **testo di aiuto** (helper text): nel caso di un campo per l'impostazione di una password dovrebbe fornire una chiara indicazione del formato richiesto; 
@@ -166,9 +166,9 @@ tabs:
 
               ### Input area di testo
 
-              ![Gli elementi che formano un input di tipo area di testo](/images/design-system/componenti/input-area-anatomy.png)
+              ![Gli elementi che formano un Input di tipo area di testo](/images/design-system/componenti/input-area-anatomy.png)
 
-              Il componente input di tipo area di testo prevede:
+              Il componente Input di tipo area di testo prevede:
               1. **forma di sfondo**: definisce l'area di inserimento ;
               2. **campo di testo**: il campo per l'inserimento del contenuto da parte dell'utente, multiriga;
               3. **etichetta** (label): il testo che informa l'utente sul contenuto che deve inserire nel campo. È obbligatorio, anche per l'accessibilità;
@@ -177,9 +177,9 @@ tabs:
 
               ### Input per ricerca, con suggerimenti e/o primi risultati
 
-              ![Gli elementi che formano un input di tipo ricerca con autocompletamento](/images/design-system/componenti/input-search-anatomy.png)
+              ![Gli elementi che formano un Input di tipo ricerca con autocompletamento](/images/design-system/componenti/input-search-anatomy.png)
 
-              Il componente input di tipo ricerca con autocompletamento prevede:
+              Il componente Input di tipo ricerca con autocompletamento prevede:
               1. **campo di input**: formato dagli stessi elementi del campo input, con icona lente di ingrandimento dedicata a indicarne la funzione; 
               2. **forma di sfondo per i suggerimenti**: area di default nascosta, si comporta come un dropdown aperto sopra i contenuti che seguono, mostrandosi durante l'inserimento o all'invio dei contenuti del campo, a seconda del contesto d'uso; può prevedere un'ombra o un bordo per distinguersi dai contenuti circostanti. 
               3. **lista di suggerimenti**: lista che mostra suggerimenti e/o primi risultati della ricerca a seconda del contesto d'uso. 
