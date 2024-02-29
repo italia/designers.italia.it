@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Notifications - Designers Italia
-  description: "Utilizzate per portare l'attenzione dell'utente su un messaggio o cambiamento di stato"
+  description: "Utilizzate per portare l'attenzione dell'utente su un messaggio o cambiamento di stato."
   canonical: null
   pathname: /design-system/componenti/notifications/
 
@@ -72,7 +72,7 @@ tabs:
             text: |
               Usa la notifica per aggiornare l'utente su modifiche o aggiornamenti minori all'interno dell'applicazione. Questi messaggi temporanei appaiono in sovrimpressione e tendono a scomparire dopo pochi secondi, quindi potrebbero non essere sempre notati o letti attentamente.
 
-              ### Alternative
+              ### Alternative a questo componente
 
               - Usa il componente **[alert](/design-system/componenti/alert)** per mostrare all'utente messaggi di avviso importanti che restano nel corpo della pagina senza scomparire automaticamente.
 
@@ -85,18 +85,21 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Cambia lo stile della notifica in base all'obiettivo del messaggio, usando le diverse varianti disponibili;
-              - Decidi dove mostrare la notifica sull'interfaccia, variando l'esperienza tra dispositivi mobile e laptop/desktop;
-              - Usa un'icona per nascondere la notifica se vuoi che non scompaia automaticamente;
+              - Cambia lo stile della notifica in base all'obiettivo del messaggio, usando le diverse varianti disponibili.
+              - Decidi dove mostrare la notifica sull'interfaccia, variando l'esperienza tra dispositivi mobile e laptop/desktop.
+              - Usa un'icona per nascondere la notifica se vuoi che non scompaia automaticamente.
               - Se la notifica richiede delle azioni, usa il componente **[Buttons](/design-system/componenti/buttons)**.
 
               ### Attenzione a
               
               - Mantenere un’esperienza coerente su dispositivi differenti.
+              - Dare un tempo sufficiente all'utente di leggerne il contenuto, o meglio permettere all'utente di chiudere manualmente le notifiche più importanti. 
+              - Verificare l'accessibilità dell'implementazione, in particolare per quanto riguarda l'uso di riferimenti come `aria-live` per comunicare ai lettori di schermo l'apparizione della notifica e i suoi contenuti.   
+              - Stratificare (stack) e non sovrapporre una sull'altra più notifiche nella viewport: se sono possibili troppe notifiche ravvicinate nel contesto della tua applicazione, metti in discussione la loro utilità.
 
               ### Buone pratiche sui contenuti
 
-              - Il titolo della notifica deve essere chiaro ma breve;
+              - Il titolo della notifica deve essere chiaro e conciso.
               - Includi una descrizione con informazioni aggiuntive solo quando queste sono importanti e non possono essere riassunte nel titolo della notifica.
 
 
@@ -216,7 +219,7 @@ tabs:
             text: |
               ![Gli elementi che compongono il componente notification](/images/design-system/componenti/notifications-anatomy.png)
 
-              Il componente notifications è composto da:
+              Il componente Notifications è composto da:
 
               1. **forma di sfondo** con ombreggiatura per sottolineare lo stacco dalla pagina sottostante;
               2. **bordo laterale o superiore** (a seconda del dispositivo) che può cambiare colore in base allo stato della notifica;
