@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Steppers - Designers Italia
-  description: "Barra che mostra l’avanzamento del progresso di una procedura con più passaggi."
+  description: "Barra di navigazione che mostra l’avanzamento del progresso di una procedura con più passaggi."
   canonical: null
   pathname: /design-system/componenti/steppers/
 
@@ -26,7 +26,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Barra che mostra l’avanzamento del progresso di una procedura con più passaggi"
+    subtitle: "Barra di navigazione che mostra l’avanzamento del progresso di una procedura con più passaggi"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -89,7 +89,7 @@ tabs:
               - Includi un pulsante “Salva” per consentire il salvataggio dei dati durante il processo di compilazione.
 
               ### Attenzione a
-              - Non usare lo stepper per form con logica condizionale, dove il numero dei passaggi potrebbe dipendere dai dati inseriti dall’utente.
+              - Non usare il component per moduli con logica condizionale, dove il numero dei passaggi potrebbe dipendere dai dati inseriti dall’utente.
               - Non usare lo stepper in caso di un progresso non lineare, dove il completamento dei passaggi non segue un ordine specifico.
               - Testare l'efficacia con utenti, curando in particolare eventuali microtesti di errore o indicazione rispetto alle call to action di avanzamento o salto tra passaggi.  
               - Strutturare correttamente i contenuti delle schede di contenuto, testandone la fruibilità su diversi dispositivi, navigando da tastiera e con strumenti assistivi come i lettori di schermo.
@@ -97,7 +97,7 @@ tabs:
               ### Buone pratiche sui contenuti
 
               - Usa etichette brevi o di una sola parola per il nome del singolo passaggio.
-              - Riproponi il titolo del passaggio subito sotto lo stepper, utilizzando un testo coerente con quello presente nell’etichetta del componente.
+              - Riproponi il titolo del passaggio subito sotto il componente, utilizzando un testo coerente con quello presente nell’etichetta del componente e la corretta semantica HTML.
               - Mostra il numero del passaggio corrente con il totale a sinistra del titolo. L'uso di un testo come "[numero passaggio corrente] di [numero totale dei passaggi] (ad esempio, 2 di 5)" accanto al titolo. Questo aiuta gli utenti a tenere traccia della loro posizione nel processo complessivo.
 
       - full: true
