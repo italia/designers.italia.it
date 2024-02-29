@@ -70,11 +70,11 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Utilizza la Sidebar per navigare tra le pagine che appartengono a una sezione di un sito. A seconda dell'organizzazione dei contenuti, la barra di navigazione può presentare liste di link diretti o annidati sotto una voce che li raccoglie.
+              Utilizza il componente Sidebar per navigare tra le pagine che appartengono a una sezione di un sito. A seconda dell'organizzazione dei contenuti, la barra di navigazione può presentare liste di link diretti o annidati sotto una voce che li raccoglie.
 
-              ### Alternative
-              - Usa il componente **[Tabs](/design-system/componenti/tabs)** (orizzontale o verticale) per offrire un’esperienza di navigazione semplificata, sopratutto in caso di poche pagine o contenuti;
-              - Usa il componente **[Navscroll](/design-system/componenti/navscroll)** per fornire una navigazione veloce tra i contenuti presenti all’interno di una stessa pagina (navigazione tramite ancore).
+              ### Alternative a questo componente
+              - **[Tabs](/design-system/componenti/tabs)**: per offrire un’esperienza di navigazione semplificata, sopratutto in caso di poche pagine o contenuti.
+              - **[Navscroll](/design-system/componenti/navscroll)**: per fornire una navigazione veloce tra i contenuti presenti all’interno di una stessa pagina (navigazione tramite ancore).
 
       - full: true
         noSpace: true
@@ -85,17 +85,18 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Mostra sempre la pagina corrente, utilizzando lo stato “active” sul link presente nella sidebar;
-              - Posiziona il menu sul lato sinistro dell’interfaccia;
-              - Usa le icone solo se sono utili a rafforzare il significato e facilitare la comprensione delle singole voci;
-              - Aggiungi una linea divisoria verticale tra la sidebar e i contenuti di pagina per delineare la separazione tra le due sezioni del viewport.
+              - Indica la pagina corrente, utilizzando lo stato `active` sul link presente nella Sidebar.
+              - Posiziona la Sidebar sul lato sinistro della viewport su dispositivi desktop, e prevedi una modalità di apertura e consultazione per dispositivi mobile. 
+              - Su desktop aggiungi una linea divisoria verticale tra la Sidebar e i contenuti di pagina per delineare la separazione tra le due sezioni, valuta di usare anche un colore di sfondo diverso.
 
               ### Attenzione a
-              - Non usare la Sidebar per la navigazione principale (menu di primo livello) del sito, ma soltanto per navigare una specifica sezione che contiene sotto pagine (menu di secondo o terzo livello).
+              - Usare le icone solo se sono utili a rafforzare il significato e facilitare la comprensione delle singole voci.
+              - Non usare il componente per la navigazione principale (menu di primo livello) del sito, ma soltanto per navigare una specifica sezione che contiene sotto pagine (menu di secondo o terzo livello). Unica eccezione da valutare caso per caso potrebbe essere l'implementazione di un sito di documentazione.
+              - Strutturare la corretta semantica HTML degli eventuali gruppi di link annidati. Si vedano le considerazione di accessibilità del componente [Accordion](/design-system/componenti/accordion/).
 
               ### Buone pratiche sui contenuti
-              - Le singole voci della sidebar devo essere brevi e descrittive dei contenuti su pagina;
-              - Usa un titolo prima della lista di link per dare un contesto alla presenza della sidebar.
+              - Le singole voci della Sidebar devo essere brevi e descrittive dei contenuti su pagina.
+              - Usa un titolo prima della lista di link per dare un contesto alla presenza della Sidebar.
 
       - full: true
         noSpace: true
@@ -197,16 +198,16 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              ![Gli elementi che formano la sidebar](/images/design-system/componenti/sidebar-anatomy.png)
+              ![Gli elementi che formano la Sidebar](/images/design-system/componenti/sidebar-anatomy.png)
 
-              Il componente sidebar è composto da:
+              Il componente Sidebar è composto da:
 
-              1. **intestazione**: definisce lo scopo della sidebar;
+              1. **intestazione**: definisce lo scopo della Sidebar;
               2. **voce principale**: può essere diretta ad una pagina o annidare altre voci;
-              1. **intestazione**: definisce lo scopo della sidebar;
+              1. **intestazione**: definisce lo scopo della Sidebar;
               2 .**voce principale**: può essere diretta ad una pagina o annidare altre voci;
               3. **voce annidata**: ha un margine di rientro e un peso visivo inferiore;
-              4. **bordo esterno**: deliminta l'area della sidebar in verticale, può essere a destra o sinistra in base alla posizione del menu;
+              4. **bordo esterno**: deliminta l'area della Sidebar in verticale, può essere a destra o sinistra in base alla posizione del menu;
               5. **linea divisoria**: divide le voci principali dalle secondarie;
               6. **voce secondaria**: ha un peso visivo minore rispetto alle principali;
 
@@ -221,7 +222,7 @@ tabs:
             text: |
               - Le liste di link annidati possono essere aperte o chiuse cliccando sulla voce che li raggruppa o sull'icona della freccia;
               - Possono essere aperte contemporaneamente più liste di link annidati;
-              - Su mobile, la sidebar può essere inserita in un pannello a scomparsa laterale, attivabile con un pulsante “Menu” da posizionare nell’interfaccia.
+              - Su mobile, la Sidebar può essere inserita in un pannello a scomparsa laterale, attivabile con un pulsante “Menu” da posizionare nell’interfaccia.
 
       - full: true
         noSpace: true
@@ -234,7 +235,7 @@ tabs:
             text: |
               Tutte le misure indicate sono espresse in `px`.
 
-              ![Specifiche di design della sidebar](/images/design-system/componenti/sidebar-specs.png)
+              ![Specifiche di design della Sidebar](/images/design-system/componenti/sidebar-specs.png)
 
 
       - full: true
