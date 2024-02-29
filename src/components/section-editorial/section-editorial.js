@@ -13,6 +13,8 @@ import ImageIcons from "../image-icons/image-icons";
 import Table from "../table/table";
 import Button from "../button/button";
 import ComponentView from "../component-view/component-view";
+import CookieRemove from "../cookieremove/cookieremove";
+import MediaPlayer from "../media-player/media-player";
 
 function SectionEditorial({
   title,
@@ -22,6 +24,7 @@ function SectionEditorial({
   full,
   centered,
   fullColumn,
+  paddingLeft,
   background,
   components,
   menu,
@@ -34,11 +37,13 @@ function SectionEditorial({
     Card,
     Kangaroo,
     TextImageCta,
+    CookieRemove,
     Numbers,
     TitleText,
     ImgFull,
     ImageIcons,
     Table,
+    MediaPlayer,
     ComponentView,
   };
 
@@ -55,28 +60,23 @@ function SectionEditorial({
     "container-xxl": !fullColumn,
   });
 
-  let row = classNames("row", { "flex-lg-row-reverse": menu });
+  const row = classNames({
+    row: !fullColumn,
+    "flex-lg-row-reverse": menu && !fullColumn,
+  });
 
-  let grid;
-  if (full) {
-    grid = "col-12";
-  } else {
-    grid = classNames("col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-1", {
-      "m-auto": centered,
-    });
-  }
-  if (full && menu) {
-    grid = "col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-0";
-  }
-  if (fullColumn) {
-    grid = "";
-    row = "";
-  }
+  const grid = classNames({
+    "col-12": full && !fullColumn,
+    "col-md-10 offset-md-1 col-lg-8 offset-lg-0": full && menu && !fullColumn,
+    "col-12 col-md-10 offset-md-1 col-lg-7 offset-lg-1": !full && !fullColumn,
+    "m-auto": !full && centered && !fullColumn,
+  });
 
   const styles = classNames("section-editorial", {
     [`bg-${background}`]: background,
     "py-0": noSpace,
     "text-white": background === "dark",
+    "ps-lg-4 ps-xl-5": paddingLeft,
   });
 
   // buttons
@@ -97,7 +97,9 @@ function SectionEditorial({
     <section className={styles} aria-describedby={id}>
       <div className={container}>
         <div className={row}>
-          {menu && (
+          {
+            // XXX This is a section index template, don't remove
+            /* menu && ( }
             <div className="d-none d-lg-block col-lg-3 offset-lg-1 affix-parent">
               <div className="sidebar-wrapper my-lg-0 affix-top">
                 <div className="sidebar-linklist-wrapper">
@@ -114,7 +116,6 @@ function SectionEditorial({
                         </a>
                       </li>
                       <li>
-                        {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
                         <a className="list-item medium" href="#">
                           <span>Link lista 4</span>
                         </a>
@@ -124,9 +125,10 @@ function SectionEditorial({
                 </div>
               </div>
             </div>
-          )}
+          ) */
+          }
           <div className={grid}>
-            <div className="px-3 p-md-0">
+            <div>
               {title && (
                 <HLevel className={text ? "mb-1" : "mb-0"} id={id}>
                   {title}
