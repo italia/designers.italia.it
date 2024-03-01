@@ -82,8 +82,14 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - ...
+              - ...
 
+              ### Attenzione a
+              - ...
+              - Comunicare l'apparizione del componente e la sua funzione alle tecnologie assistive come i lettori di schermo.
+              - Spostare il focus all'inizio della pagina al compiersi dell'azione. 
+ 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -119,7 +125,12 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che compongono il Back to top](/images/design-system/componenti/back-to-top-anatomy.png)
+
+              Il componente Back to top è composto da:
+              1. **forma di sfondo**: colore `primary` su fondi chiari, bianco su fondi scuri;
+              2. **icona freccia**: indica l'azione di scorrimento verso l'alto;
+              3. **ombra**): opzionale, utile per distinguere ancora di più il Back to top dallo sfondo.  
 
       - full: true
         noSpace: true
@@ -130,7 +141,9 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Il componente Back to top appare allo scorrere della pagina;
+              - di solito è implementato per apparire in posizione `fixed` nell'angolo in basso a destra della viewport;
+              - al click/touch o attivazione da tastiera porta l'utente in testa alla pagina. 
 
       - full: true
         noSpace: true
