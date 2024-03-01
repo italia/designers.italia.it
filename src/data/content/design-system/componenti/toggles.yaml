@@ -26,7 +26,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Pulsante di tipo 'interruttore' che permette di scegliere tra due stati."
+    subtitle: "Pulsante di tipo 'interruttore' che permette di scegliere tra due stati"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -70,12 +70,12 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Usa il componente Toggle per dare agli utenti l'opzione di alternare tra due stati, come ON/OFF oppure VERO/FALSO.
+              Usa il componente Toggles, nel contesto di un modulo ([Form](/design-system/componenti/form/)), per dare agli utenti l'opzione di alternare tra due stati, come ON/OFF oppure VERO/FALSO.
 
               È un'opzione utile per permettere di modificare velocemente le impostazioni di un account o le preferenze di un servizio, soprattutto quando lo spazio a disposizione è poco, come sui dispositivi mobile.
 
               ### Alternative a questo componente
-              - Considera l'uso dei [radio button](/design-system/componenti/radio-button) se le opzioni tra cui scegliere non rientrano in un sistema binario.
+              - **[Radio button](/design-system/componenti/radio-button/)**: usa un gruppo di Radio button se le opzioni tra cui scegliere non rientrano in un sistema binario.
 
       - full: true
         noSpace: true
@@ -86,15 +86,17 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Posiziona il toggle vicino all'elemento su cui influisce, come una label o la input di un form;
-              - Assicurati che sia chiaro per l'utente cosa cambia quando il toggle viene attivato o disattivato;
-              - Considera l'uso di colori o icone per rendere più evidente lo stato del toggle.
+              - Posiziona il Toggle vicino alla propria etichetta. 
+              - Assicurati che sia chiaro per l'utente cosa cambia quando il Toggle viene attivato o disattivato.
+              - Considera l'uso di colori o icone per rendere più evidente lo stato.
+              - Raggruppa Toggles utilizzando la variante dedicata, assicurandoti che sia chiara la distinzione tra i singoli elementi. 
 
               ### Attenzione a
-              Evita di usare toggle per azioni che richiedono conferma immediata o che potrebbero avere conseguenze significative se attivate accidentalmente.
+              - Non usare questo componente per azioni che richiedono conferma immediata o ad attivazione implicita, in particolar modo se possono avere conseguenze significative se attivate accidentalmente.
 
               ### Buone pratiche sui contenuti
-              Usa etichette chiare per indicare lo stato del toggle e per spiegare all'utente cosa comporta il cambio di stato.
+              - Usa etichette chiare per indicare lo stato del Toggle e per spiegare all'utente cosa comporta il cambio di stato.
+              - Valuta di integrare le informazioni dell'etichetta con un breve testo di istruzioni e guida. 
 
       - full: true
         noSpace: true
@@ -210,12 +212,12 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              ![Gli elementi che formano il toggle](/images/design-system/componenti/toggle-anatomy.png)
+              ![Gli elementi che formano il Toggles](/images/design-system/componenti/toggle-anatomy.png)
 
-              Il componente toggle è composto da:
+              Il componente Toggles è composto da:
               1. **etichetta di testo**: descrive l'opzione che è possibile attivare/disattivare, può essere cliccabile;
               2. **interruttore**: mostra lo stato di attivazione dell'opzione, è sempre cliccabile;
-              3. **descrizione** (opzionale): un testo a corredo dell'opzione che spiega in modo dettagliato l'opzione;
+              3. **descrizione** (opzionale): un testo a corredo dell'opzione che spiega in modo dettagliato l'opzione.
 
       - full: true
         noSpace: true
@@ -226,10 +228,10 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              - Il toggle funziona come un interruttore, quando l'utente clicca su di esso il suo stato cambia;
-              - Se il toggle è in stato ON, diventa OFF e viceversa.
-              - Le interazioni con il toggle dovrebbero essere immediate, mostrando il cambiamento di stato senza ritardo;
-              - Il toggle può avere icone o colori diversi per indicare il suo stato attuale.
+              - Il componente funziona come un interruttore, quando l'utente clicca o interagisce il suo stato cambia;
+              - se il toggle è in stato ON, diventa OFF e viceversa;
+              - le interazioni con il toggle sono immediate, mostrando il cambiamento di stato senza ritardo;
+              - il toggle può avere icone o colori diversi per indicare lo stato attuale.
 
       - full: true
         noSpace: true
