@@ -9,8 +9,6 @@ metadata:
 seo:
   name: Alert - Designers Italia
   description: "Breve messaggio di testo con uno stile grafico distintivo, utile per avvisare gli utenti di un evento o di un'azione che richiede la loro attenzione"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/alert/
 
@@ -22,13 +20,13 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
+    titleTag:
+      label: Pronto
+      url: "#ComponentStatus"
+      addonClasses: bg-success mb-2
+      screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Breve messaggio di testo con uno stile grafico distintivo, utile per avvisare gli utenti di un evento o di un'azione che richiede la loro attenzione"
+    subtitle: "Un alert è un breve messaggio di testo con uno stile grafico distintivo, che ha lo scopo di avvisare gli utenti di un evento o di un'azione che richiede la loro attenzione"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -65,22 +63,24 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Il componente Alert permette di creare messaggi di avviso per gli utenti. Questi messaggi sono utili per comunicare informazioni importanti o per avvisare gli utenti di situazioni che richiedono la loro attenzione, senza interrompere il flusso di navigazione.
+              Il componente Alert permette di creare messaggi di avviso per gli utenti. Questi messaggi sono utili per comunicare informazioni importanti o per avvisare gli utenti di situazioni che richiedono la loro attenzione, contestualmente al flusso di navigazione e senza provocare interruzioni.
 
               Il componente Alert è usato per messaggi immediati e temporanei, come:
-              - errori o problemi tecnici;
-              - eventi importanti che richiedono attenzione, come una scadenza imminente o un imprevisto;
-              - conferme di completamento.
+              - **errori** o problemi tecnici;
+              - **eventi importanti** per cui è richiesta attenzione, come una scadenza imminente o un imprevisto;
+              - **conferme** di completamento.
 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -91,7 +91,7 @@ tabs:
               - Aggiungi un pulsante di chiusura per consentire all'utente di chiudere l'avviso.
 
               ### Attenzione a
-              - Non usarlo per avvisi e situazioni non importanti, potresti distrarre gli utenti e causare confusione.
+              - Evita di usare un alert per avvisi e situazioni non importanti, potresti distrarre gli utenti e causare confusione.
 
               ### Buone pratiche sui contenuti
               - Assicurati che il testo del messaggio sia chiaro e conciso.
@@ -100,6 +100,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -112,6 +113,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -122,37 +124,95 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
         components:
-          - name: TextImageCta
-            noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/alert/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda storybook
+                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-alert--page
+                    blank: true
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
 
   - title: Progettazione
     sectionsEditorial:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              *Immagine in via di definizione*
+              ![Gli elementi che formano il componente alert](/images/design-system/componenti/alert-anatomy.png)
 
-              1. **Contenitore dell’Alert**
-              2. **Barra indicatrice della tipologia di Alert**: una barra che cambia colore in base alla tipologia di avviso
-              3. **Icona**: elemento grafico che cambia in base alla tipologia di avviso
-              4. **Testo dell’Alert**: il messaggio dell’avviso, che può contenere collegamenti ipertestuali
-              5. **Pulsante di chiusura**
+              1. **contenitore** del messaggio di avviso;
+              2. **barra indicatrice** che cambia colore in base alla tipologia di avviso;
+              3. **titolo** del messaggio di avviso, deve essere chiaro e breve;
+              4. **icona**, elemento grafico che cambia in base alla tipologia di avviso;
+              5. **pulsante di chiusura** rappresentato da una semplice icona;
+              6. **testo**, il messaggio dell’avviso che può contenere collegamenti ipertestuali.
 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -160,34 +220,37 @@ tabs:
             headingLevel: 2
             text: |
               Un alert può apparire:
-              - prima di tutti i contenuti di interfaccia dopo l’header per i messaggi di status generali, come le conferme di salvataggio o invio;
-              - in un componente o una sezione delimitata, come i messaggi di errore nelle sezioni di un form;
-              - sopra al contenuto in pagina (on top) quando usata come notifica.
+              - all'inizio, dopo l'intestazione, per messaggi generali, come conferme di salvataggio o invio;
+              - all'interno di un componente specifico, come messaggi di errore in un modulo;
+              - sopra il contenuto della pagina, quando usato come notifica.
 
               In base al tipo di avviso, la barra indicatrice può essere:
-              - blu (info), per i messaggi informativi;
-              - verde (success), per i messaggi di conferma;
-              - marrone (warning), per gli avvertimenti;
-              - rossa (danger), per gli errori critici.
+              - **blu** (info), per i messaggi informativi;
+              - **verde** (success), per i messaggi di conferma;
+              - **marrone** (warning), per gli avvertimenti;
+              - **rossa** (danger), per gli errori critici.
 
               ### Interazione
-              *In stesura*
-
+              Cliccando sul pulsante di chiusura l'alert viene rimosso dall'interfaccia.
 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              ![Gli elementi che formano il componente alert](/images/design-system/componenti/alert-specs-1.png)
+              ![Gli elementi che formano il componente alert](/images/design-system/componenti/alert-specs-2.png)
+              ![Gli elementi che formano il componente alert](/images/design-system/componenti/alert-specs-3.png)
 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -197,7 +260,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -219,6 +282,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -228,7 +292,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
