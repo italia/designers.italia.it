@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level2
+  redirect_from:
+    - /progetto/formazione-e-disseminazione
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Formazione e disseminazione - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  name: Divulgazione e disseminazione - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: "La strategia di Designers Italia per promuovere una cultura della progettazione virtuosa fra le PA italiane e i loro fornitori"  #C
   image: https://designers.italia.it/images/progetto/formazione-e-disseminazione.jpg
   canonical: null
-  pathname: /progetto/formazione-e-disseminazione/ #M
+  pathname: /progetto/divulgazione-e-disseminazione/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -72,7 +74,7 @@ components:
   # ///////////////////
   hero:
     background: light
-    title: Formazione e disseminazione #C
+    title: Divulgazione e disseminazione #C
     subtitle: La nostra strategia per promuovere una cultura della progettazione virtuosa fra le PA italiane e i loro fornitori  #C
     tag:
         label: Progetto #C
@@ -83,7 +85,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-          L’obiettivo della nostra strategia di formazione e disseminazione è quello di **guidare la trasformazione digitale dei servizi pubblici** attraverso la **promozione di una cultura progettuale** che tenga conto della complessità e della molteplicità degli attori coinvolti nell’ambito pubblico. Il nostro approccio segue quattro aree di opportunità e intervento: formazione, insegnamento, promozione, partecipazione.
+          L’obiettivo della nostra strategia di divulgazione e disseminazione è quello di **promuovere una cultura progettuale virtuosa per i servizi pubblici digitali**. Per questo ci rivolgiamo a tutti coloro che sono coinvolti e che possono fare la differenza nell'ambito della trasformazione digitale della PA: funzionari pubblici, progettisti, sviluppatori e tutta la nostra community.
     # img: /images/400x300.png #I
     # alt: alt lorem ipsum #C
     imgRatio: 4x3
@@ -127,7 +129,7 @@ components:
       menu: false
       centered: true
       text: | #C
-        Le attività di formazione, insegnamento, partecipazione e promozione tramite cui diffondiamo il progetto Designers Italia
+        Crediamo che il cambiamento debba avvenire sia dal basso che dall’alto, per un’azione sinergica mirata da un lato a incoraggiare un approccio virtuoso, mettendo a disposizione gli strumenti per farlo, dall’altro a dare regolamenti e riferimenti chiari e puntuali. Per questo la nostra strategia si articola in quattro aree di opportunità e intervento.
       components:
 
         # TXT BLOCK
@@ -138,10 +140,22 @@ components:
           # alt: Alt lorem ipsum #C
           specular: true
           text: | #C
-            Attraverso le nostre attività di formazione fra cui corsi dedicati alla progettazione dei servizi digitali, community lab e lezioni sull’uso di risorse e strumenti di Designers Italia, perseguiamo l’obiettivo di **fornire basi di cultura progettuale agli attori direttamente coinvolti nei processi di trasformazione digitale** dei servizi pubblici.
+            Per accelerare la trasformazione digitale in ambito pubblico è fondamentale dedicare formazione specifica a chi lavora all’interno della PA, nell’ambito IT o della comunicazione. Queste figure si trovano a seguire progetti relativi ai servizi digitali della PA, ma anche a svilupparne i touchpoint, come le aziende in-house e i fornitori della Pubblica Amministrazione.
+            
+            Attraverso i nostri interventi e materiali per i corsi di formazione, miriamo a fornire le basi di cultura progettuale agli attori direttamente coinvolti nei processi di trasformazione digitale dei servizi pubblici. 
 
-            Crediamo quindi che per accelerare la trasformazione digitale in ambito pubblico sia fondamentale dedicare formazione specifica a dipendenti della PA, in-house e fornitori della Pubblica Amministrazione.
-
+          ctas:
+            - label: Segui i nostri webinar #C
+              url: "/community/media/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-video #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+              
         ### IMAGE HERE #I
 
         # TXT BLOCK
@@ -153,9 +167,9 @@ components:
           specular: true
           # noSpace: true
           text: | #C
-            Collaboriamo con studenti, università e istituti di specializzazione pubblici e privati per **promuovere le buone pratiche di design in ambito pubblico**. Individuiamo docenti e corsi interessati ai temi della progettazione e della pubblica utilità per proporre lecture, accordi di collaborazione, contributi per tesi e progetti, sfruttando la prospettiva dei giovani e creando circoli virtuosi di generazione di conoscenze e competenze.
-
-            L’obiettivo del nostro stream di insegnamento è quello di avvicinare i designer e gli operatori pubblici del futuro ai temi del design per la pubblica utilità, secondo una logica open che può ampliare la conoscenza e le risorse sul tema.
+            È importante avvicinare i designer del futuro al design in ambito pubblico, con lezioni o corsi dedicati al tema, ma anche incoraggiando docenti e dottorandi, interessati al tema della pubblica utilità, facendo interventi, dando contributi per tesi e progetti, valorizzando la prospettiva dei giovani e creando circoli virtuosi di generazione di conoscenze e competenze.
+            
+            Attraverso i nostri materiali educativi dedicati all’insegnamento del design in ambito pubblico, speriamo che un numero sempre maggiore di persone interessate a questi temi possa trovare spunti utili e proporre interventi mirati. 
           ctas:
           - label: Scopri il progetto Atlante della trasformazione digitale #C
             url: "/community/notizie/20220325-atlante-della-trasformazione-digitale/" #M
@@ -176,9 +190,12 @@ components:
           # alt: Alt lorem ipsum #C
           specular: true
           text: | #C
-            Crediamo nel valore della community e nella necessità di **creare collaborazione con le realtà sul campo, incoraggiare la partecipazione e la condivisione di buone pratiche**, partecipare ad eventi di divulgazione e networking. L’obiettivo è quello di condividere buone pratiche attraverso l’ascolto, la collaborazione e la partecipazione della comunità di designer e developer e grazie a eventi e conferenze, collaborazioni, community call, contributi esterni sul blog.
+            La community è essenziale in un ambito che cambia così velocemente. Una rete diffusa di professionisti esperti sul tema è la chiave per affrontare questa complessità, per promuovere la collaborazione su temi comuni, imparare da chi ‘opera’ sul campo, incoraggiare la partecipazione e la condivisione di buone pratiche.
+            
+            Partecipiamo a eventi e conferenze, sia in qualità di uditori che di relatori, con l’obiettivo di condividere punti di vista ed esperienze attraverso l’ascolto, la collaborazione e la partecipazione della comunità di designer e developer. 
+            
           ctas:
-          - label: Scopri le attività della community #C
+          - label: Esplora le attività della community #C
             url: "/community/" #M
             blank: false #M #C true if new tab for external links
             icon:
@@ -198,7 +215,21 @@ components:
           headingLevel: 3
           noSpace: true
           text: | #C
-            Per favorire la trasformazione digitale sono fondamentali **il coinvolgimento e il supporto delle PA e dei loro fornitori**. Stabilire pubbliche relazioni con le amministrazioni pubbliche, le in-house e i fornitori privati ci permette di trovare ambasciatori a sostegno del progetto puntando a coinvolgere tutti quelli che hanno un forte impatto sulla digitalizzazione dei servizi pubblici, sia a livello centrale che locale.
+            Stabilire pubbliche relazioni con le amministrazioni pubbliche, le in-house e i fornitori privati ci permette di trovare ambasciatori a sostegno del progetto. Puntiamo a coinvolgere tutti quelli che hanno un forte impatto sulla trasformazione digitale dei servizi pubblici, sia a livello centrale che locale.
+            
+            I nostri materiali aiutano queste figure a comprendere il valore e i benefici di un certo approccio progettuale e farsi ambasciatori del rispetto delle norme, degli standard di qualità e di un’esperienza di fruizione centrata sul cittadino.
+          
+          ctas:
+          - label: Consulta le Linee guida di design per la PA #C
+            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
  # —
     # EDITORIAL #C #I
     # —
