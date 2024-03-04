@@ -6,6 +6,7 @@ import TemplateArchiveAllTags from "../templates/archive-all-tags";
 import TemplateArchiveDSTags from "../templates/archive-ds-tags";
 import TemplateArchiveNews from "../templates/archive-news";
 import TemplateArchiveEvents from "../templates/archive-events";
+import TemplateArchiveMedia from "../templates/archive-media";
 import TemplateDSComponent from "../templates/design-system-component";
 import TemplateDSIndex from "../templates/design-system-index";
 import TemplateHome from "../templates/home";
@@ -23,6 +24,7 @@ const TEMPLATES = {
   "archive-all-tags": TemplateArchiveAllTags,
   "archive-ds-tags": TemplateArchiveDSTags,
   "archive-events": TemplateArchiveEvents,
+  "archive-media": TemplateArchiveMedia,
   community: TemplateLV1Community,
   level1: TemplateLV1,
   level2: TemplateLV2,
@@ -56,6 +58,11 @@ function Page({ pageContext, location, data: { content } }) {
 
 export const query = graphql`
   query ($id: String!) {
+    contentOgImage(parent: { id: { eq: $id } }) {
+      attributes {
+        publicURL
+      }
+    }
     content(id: { eq: $id }) {
       id
       parent {
@@ -77,8 +84,6 @@ export const query = graphql`
       seo {
         name
         description
-        image
-        twitterImage
         # canonical
         pathname
       }
@@ -231,6 +236,7 @@ export const query = graphql`
           id
           headingLevel
           title
+          subtitle
           text
           moreButton
           moreButtonClose
@@ -244,6 +250,7 @@ export const query = graphql`
         }
         titleText {
           title
+          # text
         }
         highlightCardsLoop {
           id
@@ -259,6 +266,7 @@ export const query = graphql`
             # disabled
             url
             blank
+            ariaLabel
             icon {
               icon
               color
@@ -276,6 +284,10 @@ export const query = graphql`
             imgRatio
             fullHeight
             imgPlaceholder
+            iconOverlay {
+              icon
+              ariaLabel
+            }
             dateOverlay {
               day
               month
@@ -369,12 +381,13 @@ export const query = graphql`
         #  background
         #  specular
         #  subtitle
+        #  text
         # buttons {
         #  label
         #  btnStyle
         #  url
         #  addonStyle
-        #  # disabled
+        #  disabled
         #}
         #}
         searchMain {
@@ -418,14 +431,22 @@ export const query = graphql`
             text
             imgRatio
             imgPlaceholder
+            cardEvent
+            iconOverlay {
+              icon
+              ariaLabel
+            }
             fullHeight
             imgRounded
             noShadow
             url
+            dateInfo
             textSerif
             headingLevel
             rounded
             blank
+            dateInfo
+            tags
             externalLink {
               label
               screenReaderText
@@ -435,7 +456,7 @@ export const query = graphql`
               }
             }
             moreInfo
-            # tags
+            tags
             titleSmall
             tag {
               label
@@ -450,6 +471,7 @@ export const query = graphql`
             label
             url
             blank
+            ariaLabel
             icon {
               icon
               color
@@ -539,6 +561,7 @@ export const query = graphql`
         sectionsEditorial {
           title
           headingLevel
+          paddingLeft
           background
           menu
           centered
@@ -548,6 +571,10 @@ export const query = graphql`
             title
             headingLevel
             specular
+            cookies {
+              label
+              key
+            }
             text
             noSpace
             responsive
@@ -613,6 +640,11 @@ export const query = graphql`
               img
               alt
             }
+            lang
+            url
+            trascription
+            subtitles
+            poster
             variantName
             source
             idPrefix
@@ -632,6 +664,8 @@ export const query = graphql`
           title
           col2
           showTags
+          noSpace
+          paddingX
           cards {
             title
             imgRatio
@@ -790,6 +824,7 @@ export const query = graphql`
           full
           noSpace
           title
+          paddingLeft
           components {
             name
             noSpace
@@ -799,6 +834,9 @@ export const query = graphql`
             # addonClasses
             headingLevel
             # specular
+            img
+            alt
+            isDSPreview
             head {
               text
             }
@@ -859,13 +897,12 @@ export const query = graphql`
 `;
 export default Page;
 
-export function Head({ data: { content } }) {
+export function Head({ data: { content, contentOgImage } }) {
   return (
     <Seo
       title={content.seo.name}
       description={content.seo.description}
-      image={content.seo.image}
-      twitterImage={content.seo.twitterImage}
+      image={contentOgImage.attributes.publicURL}
       pathname={content.seo.pathname}
       canonical={content.seo.canonical}
     />

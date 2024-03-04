@@ -9,31 +9,8 @@ seo:
   name: Per il design
   description: Contribuisci alle risorse di design per progettare e prototipare interfacce ed esperienze di siti e servizi pubblici digitali.
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/come-contribuire/per-il-design/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 # navPreFooter:
 #   navOtherPrevNext:
@@ -61,7 +38,7 @@ components:
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
@@ -120,7 +97,7 @@ components:
         color: secondary
       tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
 
-  sectionsEditorial :
+  sectionsEditorial:
 
     # - fullColumn: true
     #   noSpace: true
@@ -131,6 +108,7 @@ components:
 
     - full: true
       noSpace: false
+      paddingLeft: true
       title: Contribuisci a UI Kit Italia
       text: | 
         Il kit per progettare e prototipare interfacce ed esperienze di siti e servizi pubblici digitali. 
@@ -151,8 +129,7 @@ components:
             - label: "Conosci il modello di contribuzione?" #C
               screenReaderText: ""
               url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
-              blank: true #M #C true if new tab for external links
-              # disabled: true
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -174,10 +151,9 @@ components:
             Controlla se già esiste una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai nella segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo di design sul tema scopri di seguito la procedura per inviare contributi e proponili nella discussione.  
           ctas: 
             - label: "Discussioni su UI Kit Italia" #C
-              screenReaderText: ""
               url: https://github.com/italia/design-ui-kit/issues #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
+              screenReaderText: " (si apre in una nuova finestra)"
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -186,10 +162,9 @@ components:
                 size: sm
                 addonClasses: ms-2
             - label: "Discussioni su Design Tokens Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-tokens-italia/issues #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -206,10 +181,9 @@ components:
             Se il tema di tuo interesse non è nella lista puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari per approfondire il tema, in modo da consentire alla community e al team di Designers Italia di avere un quadro chiaro e il più possibile completo della tua proposta.    
           ctas: 
             - label: "Nuova segnalazione UI Kit Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-ui-kit/issues/new?assignees=&labels=design%20system&projects=&template=apri-una-segnalazione.it.yaml #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -218,10 +192,9 @@ components:
                 size: sm
                 addonClasses: ms-2
             - label: "Nuova segnalazione Design Tokens Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-tokens-italia/issues/new?assignees=&labels=design%20system&projects=&template=apri-una-segnalazione.it.yaml #M
               blank: true #M #C true if new tab for external links
-              # disabled: true
               icon:
                 icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
                 color: primary
