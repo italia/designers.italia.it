@@ -92,9 +92,10 @@ tabs:
               ### Attenzione a
               - Assicurarsi che il link porti l'utente alla pagina precedente, nell'ultimo stato in cui la stava navigando e lasciando i campi precompilati laddove presenti.   
               - Cercare di sviluppare siti web, processi e moduli in cui la funzionalità "torna indietro" del browser abbia il funzionamento aspettato dall'utente, lo stesso previsto dal componente.
-              - Usare di default la variante Link di navigazione (implementata con il corretto tag semantico `<a>`), e scegliere di usare le varianti pulsante (implementate con il tag semantico `<button>`) solo per azioni che agiscono in pagina, ad esempio per ripristinare lo stato precedente di contenuti dinamici presentati all'utente.     
-              - Usare il componente Back nel caso di un processo per accedere a un servizio: l'utente potrebbe essere comunque intimorito dall'usare la funzionalità "torna indietro" nativa del browser per non perdere i contenuti inseriti.  
+              - Usare il componente Back nel caso di un processo per accedere a un servizio: l'utente potrebbe essere infatti intimorito dall'usare la funzionalità "torna indietro" nativa del browser per non perdere i contenuti inseriti.  
               - Verificare il funzionamento del componente nel caso di architetture e navigazioni complesse e legate a scelte condizionali.
+              - Usare di default la variante Link di navigazione (implementata con il corretto tag semantico `<a>`), e scegliere di usare le varianti pulsante (implementate con il tag semantico `<button>`) solo per azioni che agiscono in pagina, ad esempio per ripristinare lo stato precedente di contenuti dinamici presentati all'utente.     
+             
 
               ### Buone pratiche sui contenuti
               - Se implementi un funzionamento non standard verifica che le etichette di default "Torna indietro" e "Torna al livello superiore" indichino correttamente l'azione svolta.
