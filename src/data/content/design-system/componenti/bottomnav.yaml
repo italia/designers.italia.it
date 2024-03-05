@@ -70,7 +70,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente BottomNav è pensato per la navigazione su dispositivi mobile il cui aspetto ricalca quello di alcune popolari app.
+
+              Pul essere utilizzato quando si desidera fornire una navigazione intuitiva su dispositivi mobili.
+
+              ### Alternative a questo componente
+
+              - Usa il componente Header per la navigazione di primo livello con le sezioni principali di un sito o app.
 
       - full: true
         noSpace: true
@@ -81,7 +87,14 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Il componente ha un’altezza fissa ed è ancorato al fondo della pagina, occupandone tutta la larghezza.
+              - Se le sezioni prevedono notifiche di aggiornamento, puoi combinare il componente [Badge](/design-system/componenti/badge)
+
+              ### Attenzione a
+              - Limita il numero di sezioni presenti nel menu, non dovrebbero essere più di cinque.
+
+              ### Buone pratiche sui contenuti
+              - Il titolo della voce di menu deve essere composta da una sola parola;
 
       - full: true
         noSpace: true
@@ -129,7 +142,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Il componente bottomnav rimane fisso a fondo pagina durante lo scroll;
+              - La voce attiva deve distinguersi da quelle non attive.
 
       - full: true
         noSpace: true
