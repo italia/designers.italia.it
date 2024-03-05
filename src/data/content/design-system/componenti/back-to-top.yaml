@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Back to top - Designers Italia
-  description: "Consente agli utenti di scorrere agevolmente verso la parte superiore della pagina."
+  description: "Un pulsante che consente agli utenti di scorrere facilmente all'inizio della pagina, particolarmente indicato su pagine di contenuto lunghe e su dispositivi mobile."
   image: null
   canonical: null
   pathname: /design-system/componenti/back-to-top/
@@ -27,7 +27,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Consente agli utenti di scorrere agevolmente verso la parte superiore della pagina"
+    subtitle: "Un pulsante che consente agli utenti di scorrere facilmente all'inizio della pagina, particolarmente indicato su pagine di contenuto lunghe e su dispositivi mobile"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -71,8 +71,9 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
-
+              Il componente Back to top migliora l'esperienza degli utenti nel caso di pagine molto lunghe e su dispositivi mobil, agevolando la navigazione dei contenuti. 
+              
+              Il Back to top è un pulsante che appare su pagine lunghe e fornisce una scorciatoia per tornare ad inizio pagina, per facilitare ad esempio l'accesso ad [Header](/design-system/componenti/header/) e menu di navigazione, al percorso corrente nei [Breadcrumb](/design-system/componenti/breadcrumb/), ad eventuali filtri o cambio modo di ordinamento di una lunga lista, alla modifica o inserimento di query in un campo di ricerca durante l'esplorazione dei risultati.  
       - full: true
         noSpace: true
         paddingLeft: true
@@ -82,14 +83,16 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - ...
-              - ...
+              - Usa il componente su pagine lunghe.
 
               ### Attenzione a
-              - ...
-              - Comunicare l'apparizione del componente e la sua funzione alle tecnologie assistive come i lettori di schermo.
-              - Spostare il focus all'inizio della pagina al compiersi dell'azione. 
- 
+              - Non mostrare il componente su pagine che non necessitano scorrimento. 
+              - Verificare sempre il suo comportamento nel contesto del progetto su diversi browser e dispositivi, durante l'utilizzo di tecnologie assistive e navigando da tastiera. 
+              - Sovrapporre con cautela il componente ad altri elementi o componenti con comportamento [Sticky](/design-system/componenti/sticky/), specialmente se nella stessa posizione in basso a destra della viewport.
+              - Non lasciare il compito svolto dal Back to top alle sole funzionalità native di alcuni browser e dispositivi: non c'è uno standard condiviso e probabilmente la maggior parte di queste tecniche sono nascoste o ignorate dagli utenti.
+              - Comunicare se possibile l'apparizione del componente e la sua funzione alle tecnologie assistive come i lettori di schermo.
+
+
       - full: true
         noSpace: true
         paddingLeft: true
@@ -142,7 +145,7 @@ tabs:
             headingLevel: 2
             text: |
               - Il componente Back to top appare allo scorrere della pagina;
-              - apparire in posizione `fixed` nell'angolo in basso a destra della viewport, sopra i contenuti di pagina;
+              - appare in posizione `fixed` nell'angolo in basso a destra della viewport, sopra i contenuti di pagina;
               - al click/touch o attivazione da tastiera riporta l'utente all'inizio della pagina. 
 
       - full: true
