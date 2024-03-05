@@ -8,11 +8,9 @@ metadata:
 
 seo:
   name: Select - Designers Italia
-  description: "Il classico componente per la selezione tipo 'menu a tendina'"
-  image: null
-  twitterImage: null
+  description: "Componente che permette all'utente di scegliere un'opzione da una lista predefinita di valori."
   canonical: null
-  pathname: /design-system/componenti/radio-button/
+  pathname: /design-system/componenti/select/
 
 components:
   hero:
@@ -28,7 +26,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Il classico componente per la selezione tipo 'menu a tendina'"
+    subtitle: "Componente che permette all'utente di scegliere un'opzione da una lista predefinita di valori"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -65,26 +63,44 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente Select nel contesto di un modulo ([Form](/design-system/componenti/form/)), quando vuoi permettere agli utenti di scegliere un elemento all'interno di un elenco di opzioni predefinite. 
+
+              ### Alternative a questo componente
+              - **[Radio button](/design-system/componenti/radio-button/)**: da preferire un gruppo di Radio button a livello di usabilità e se è necessario essere certi che l'utente sia consapevole di tutte le opzioni, consigliabile in particolare se il numero di scelte è limitato. 
+              - **[Autocomplete](/design-system/componenti/autocomplete/)**: per lunghe liste di opzioni, offre all'utente la possibilità in più di filtrare tra le opzioni scrivendo nel campo di scelta, seppur da un elenco controllato di opzioni. 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Imposta un'opzione come predefinita la prima volta che l'utente incontra il componente: può essere uno dei valori o una prima opzione neutra che guidi la scelta dell'utente, ad esempio: "Scegli tra le opzioni: ". 
+
+              ### Attenzione a
+              - Non preselezionare nessuna delle opzioni se il componente serve all'utente per rispondere a domande, ne influenzerebbe la risposta.  
+              - Valutare il contesto d'uso e le alternative, prevedi test di usabilità del modulo, in particolare per affiancare più componenti Select tieni in considerazione ad esempio che l'utente potrebbe trovare difficoltà a distinguere scelte già fatte e non.
+              - Proporre all'utente una rosa di opzioni non troppo lunga, per esempio con domande preliminari che la precedono e permettono di sfoltirla. Se la lista diventa abbastanza breve, considera l'uso alternativo di un gruppo di [Radio button](/design-system/componenti/radio-button/).
+              - Considerare che il componente prevede l'apertura del pannello di scelta standard del browser e del dispositivo in uso, per ottimizzare accessibilità e usabilità.
+
+              ### Buone pratiche sui contenuti
+              - Scegli un'etichetta di testo (label) che indichi chiaramente lo scopo della scelta richiesta all'utente.  
+              - Scrivi l'elenco di opzioni in modo coerente: ogni opzione dovrebbe essere breve e il più possibile chiara per evitare ambiguità fra le varie opzioni e renderle univoche. 
+              - Ordina le opzioni disponibili in ordine alfabetico, o per altra logica che sia chiara all'utente. 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -95,6 +111,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         id: ComponentStatus
         components:
           - name: TextImageCta
@@ -109,37 +126,55 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che compongono la Select](/images/design-system/componenti/select-anatomy.png)
+
+              Il componente Select chiuso è composto da:
+              1. **valore selezionato**: il valore attualmente selezionato, di default può essere un'indicazione di scelta come "Scegli una opzione:";
+              2. **etichetta** (label): il testo che informa l'utente sulla scelta che deve fare. È obbligatorio, anche per l'accessibilità;
+              3. **freccia**: l'icona che suggerisce il comportamento di apertura del componente;
+              4. **bordo**: riga inferiore che identifica il campo.
+
+              Per il componente Select aperto si consiglia di utilizzare lo standard fornito dal browser dell'utente, per ottimizzare usabilità e accessibilità. 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Elenco degli **stati interattivi** disponibili in tutte le varianti del componente:
+
+              - **default**: il componente Select si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul componente, è disponibile solo su dispositivi no-touch;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **active**: è lo stato relativo al momento del click o pressione sul componente, apre il pannello con la lista delle opzioni tra cui scegliere; all'apertura è selezionata l'opzione corrente, se è la prima apertura la voce di default si trova come prima della lista;
+              - **disabled**: indica che il componente è disattivato e non è possibile interagire con esso.
+
+      # - full: true
+      #   noSpace: true
+      #   paddingLeft: true
+      #   components:
+      #     - name: TextImageCta
+      #       noSpace: false
+      #       title: Specifiche di design
+      #       headingLevel: 2
+      #       text: |
+      #         *In stesura*
+
 
       - full: true
         noSpace: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Specifiche di design
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-
-      - full: true
-        noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -149,7 +184,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -171,6 +206,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -180,7 +216,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
