@@ -70,7 +70,11 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente navscroll è una declinazione di [sidebar](/design-system/componenti/sidebar). Può essere utilizzato per navigare il contenuto di una pagina suddivisa in diverse sezioni. I link funzionano come ancore, collegando a ciascuna di queste sezioni.
+
+              ### Alternative a questo componente
+
+              - Usa la [sidebar](/design-system/componenti/sidebar) per creare un menu di navigazione classico, dove i link rimandano a pagine indipendenti.
 
       - full: true
         noSpace: true
@@ -81,7 +85,18 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Definisci le sezioni della pagina, utilizzando la intestazioni semantiche come `h2` oppure `h3`
+              - Aggiungi i link necessari per ciascuna sezione della tua pagina;
+              - Assicurati che ogni link abbia un anchor tag che corrisponde all'id della sezione di destinazione sulla pagina;
+              - Può essere posizionato sia sul lato destro che sinistro del contenuto principale della pagina;
+              - Puoi aggiungere un effetto di scroll per rendere la navigazione più piacevole, utilizzando la [proprietà disponibile](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-behavior) nei principali browser, senza fare ricorso a Javascript.
+
+              ### Attenzione a
+              - Testare il comportamento di scrolling su vari dispositivi per assicurarti che sia fluido e funzioni come previsto.
+
+              ### Buone pratiche sui contenuti
+              - Il titolo del link deve corrispondere al titolo della sezione;
+              - Scrivi titoli sintetici per poter essere posizionati facilmente all’interno del componente navscroll;
 
       - full: true
         noSpace: true
@@ -129,7 +144,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Quando un utente fa clic su un link, viene portato direttamente alla relativa sezione della pagina;
+              - Se abilitata, la barra di avanzamento indica quanto del contenuto della pagina è stato scorso;
 
       - full: true
         noSpace: true
