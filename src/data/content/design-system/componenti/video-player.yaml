@@ -72,7 +72,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Il componente video player è utile per mostrare contenuti video nelle pagine del proprio sito. Si può usare per video caricati su un hosting proprio oppure per video provenienti da piattaforme di terze parti, utilizzando la variante con overlay di consenso per la privacy.   
+              Il componente Video player è utile per mostrare contenuti video nelle pagine del proprio sito. Si può usare per video caricati su un hosting proprio oppure per video provenienti da piattaforme di terze parti, utilizzando la variante con overlay di consenso per la privacy.   
               
               I video possono essere strumenti preziosi sia dal punto di vista della comunicazione che dell'istruzione. È però importante valutare e curare gli aspetti di privacy e accessibilità dei contenuti prima di pubblicarli, di preferenza tenendo conto del parere di esperti di settore e responsabili della privacy del proprio ente o progetto.    
 
@@ -85,7 +85,7 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Collega nei parametri del video player i sottotitoli in formato [WebVTT](https://www.w3.org/TR/webvtt1/).
+              - Collega nei parametri del Video player i sottotitoli in formato [WebVTT](https://www.w3.org/TR/webvtt1/).
               - Inserisci la trascrizione o un link a questa nello spazio dedicato.
               - Implementa il meccanismo di gestione overlay di consenso ogni volta che usi video provenienti da piattaforme di terze parti (ad esempio YouTube). 
 
@@ -139,11 +139,11 @@ tabs:
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/videoplayer-anatomy.png
-            alt: "Gli elementi che compongono il video player"
+            alt: "Gli elementi che compongono il Video player"
           - name: TextImageCta
             noSpace: true
             text: |
-              Il video player completo è composto da quattro elementi principali:
+              Il Video player completo è composto da quattro elementi principali:
 
               1. **spazio video**: di solito in formato 16:9 o 4:3;
               2. **pulsante play**: visibile in stato iniziale di attesa comando dall'utente;
@@ -154,11 +154,11 @@ tabs:
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/videoplayer-controlbar-anatomy.png
-            alt: "Gli elementi che compongono la barra di controllo del video player"
+            alt: "Gli elementi che compongono la barra di controllo del Video player"
           - name: TextImageCta
             noSpace: true
             text: |             
-              La barra di controllo del video player è composta da: 
+              La barra di controllo del Video player è composta da: 
 
               1. **contenitore**: definisce un colore di fondo con il colore di brand, può essere leggermente trasparente per non coprire totalmente il video sottostante;
               2. **pulsante play/pausa**: controlla la riproduzione;
@@ -173,13 +173,13 @@ tabs:
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/videoplayer-consentoverlay-anatomy.png
-            alt: "Gli elementi che compongono l'overlay di consenso per il video player"
+            alt: "Gli elementi che compongono l'overlay di consenso per il Video player"
           - name: TextImageCta
             noSpace: false
             text: |             
               L'overlay di consenso, attivabile nel caso di riproduzione di video da piattaforme di terze parti, è composto da:
 
-              1. **fondale**: fondo colorato nel colore di branding con leggera trasparenza, a coprire l'intera area del video player;
+              1. **fondale**: fondo colorato nel colore di branding con leggera trasparenza, a coprire l'intera area del Video player;
               2. **icona video**;
               3. **descrizione**: testo che spiega la CTA che segue e invita alla consultazione della Cookie policy;
               4. **opzione ricorda per tutti i video**: opzionale, attiva il meccanismo di memorizzazione delle preferenze utente del sito, se presente;
@@ -195,9 +195,9 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              Tutte le varianti di video player sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
+              Tutte le varianti di Video player sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
 
-              Nel caso di utilizzo di video da piattaforme di terze parti l'overlay di consenso appare in automatico sopra ogni video player se l'utente non ha accettato la Cookie policy specifica. Isolando il browser dell'utente dalla piattaforma di terze parti a meno non sia specificatamente accettato.  
+              Nel caso di utilizzo di video da piattaforme di terze parti l'overlay di consenso appare in automatico sopra ogni Video player se l'utente non ha accettato la Cookie policy specifica. Isolando il browser dell'utente dalla piattaforma di terze parti a meno non sia specificatamente accettato.  
 
       - full: true
         noSpace: true
