@@ -85,13 +85,13 @@ const List = React.forwardRef(
             onClick={onCopyLink}
           />
           <ListItem
-            label="Condividi su Twitter"
+            label="Condividi su X"
             icon={{ icon: "sprites.svg#it-twitter", ...iconProps }}
             iconRight
             isDropdown={isDropdown}
             textLarge={textLarge}
             simpleList={simpleList}
-            ariaLabel="Condividi su Twitter (si apre in una nuova finestra)"
+            ariaLabel="Condividi su X (si apre in una nuova finestra)"
             url={`https://twitter.com/intent/tweet/?text=${currentTitle}&url=${currentUrl}`}
             blank="true"
           />

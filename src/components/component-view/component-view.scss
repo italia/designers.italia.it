@@ -1,10 +1,29 @@
+@import "../../scss/bootstrap-breakpoints";
+
 pre {
     max-height:70vh;
+    padding-top: 3rem !important;
 }
 .accordion.accordion-left-icon .accordion-header .accordion-button::before {
     width:1rem;
 }
-
+.split-code-checkbox {
+    .form-check {
+        label {
+            color: white;
+            font-size: 1rem !important;
+            background-color: rgb(43, 43, 43);
+            &::after {
+                border-color: white !important;
+            }
+        }
+    }
+}
+.responsive-buttons {
+    .btn-group > .btn-group:not(:first-child), .btn-group > .btn:not(:first-child) {
+        margin-left: -2px!important;
+    }
+}
 .iframe-example {
     transition-property: height, max-width, width;
     transition-duration: 500ms;
@@ -13,14 +32,40 @@ pre {
         min-height: 350px;
     }
 }
-
 .viewer-mobile {
     max-width: 360px;
 }
 .viewer-tablet {
     max-width: 768px;
 }
-.viewer-desktop {
+.viewer-full {
     max-width: 1280px;
 }
 
+//mobile only ------------------------------------------------------------------------------------------
+@include media-breakpoint-down(sm) {
+    .notification {
+        bottom: 40px;
+    }
+}
+  
+//Small tablet ------------------------------------------------------------------------------------------
+@include media-breakpoint-up(sm) {
+    .notification {
+        bottom: 40px;
+    }
+}
+
+//Tablet landscape --------------------------------------------------------------------------------------
+@include media-breakpoint-up(lg) {
+    .component-viewer .no-left-margin {
+    margin-left: -1.5rem;
+    }
+}
+
+//Laptop ------------------------------------------------------------------------------------------------
+@include media-breakpoint-up(xl) {
+    .component-viewer .no-left-margin {
+        margin-left: -3rem;
+    }
+}
