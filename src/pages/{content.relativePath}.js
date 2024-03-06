@@ -91,12 +91,6 @@ export const query = graphql`
         hero {
           background
           title
-          titleTag {
-            url
-            label
-            addonClasses
-            screenReaderText
-          }
           subtitle
           imgRatio
           pretext {
@@ -228,12 +222,6 @@ export const query = graphql`
           centered
           column
           specialKangarooComponent
-          titleTag {
-            label
-            # url
-            addonClasses
-            screenReaderText
-          }
           noBorder
           iconImgAlt
         }
