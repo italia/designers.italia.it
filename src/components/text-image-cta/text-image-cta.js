@@ -77,7 +77,7 @@ function TextImageCta({
             {moreText}
           </ContentCollapse>
         )}
-        {ctaItems && <div className="ctas mt-3 mb-4 d-md-flex">{ctaItems}</div>}
+        {ctaItems && <div className="ctas mt-3 mb-4 d-lg-flex flex-wrap">{ctaItems}</div>}
       </div>
     </div>
   );
