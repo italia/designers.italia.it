@@ -613,6 +613,7 @@ export const query = graphql`
                 }
               }
             }
+            ctasVertical
             ctas {
               label
               url
