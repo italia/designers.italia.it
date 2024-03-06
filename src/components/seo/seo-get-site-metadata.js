@@ -13,7 +13,6 @@ export const SeoGetSiteMetadata = () => {
           description
           siteName
           image
-          twitterImage
           twitterSite
           twitterCreator
           themeColor

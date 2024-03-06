@@ -76,6 +76,7 @@
   }
   .subtitle {
     font-size: var(  --hero-subtitle-size);
+    line-height: var(--hero-subtitle-lineheight);
   }
   .bottom-text {
     margin-top: var( --hero-bottom-text-mt);
@@ -89,6 +90,7 @@
       a {
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding: 8px 16px;
       }
     }
@@ -102,6 +104,9 @@
     position: relative;
     &.no-border {
       border: none;
+    }
+    .dropdown .link-list-wrapper ul li a {
+      justify-content: left;
     }
   }
   &.column-hero {

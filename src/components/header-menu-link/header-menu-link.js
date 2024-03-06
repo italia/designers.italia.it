@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useEffect } from "react";
 import { Dropdown } from "bootstrap-italia";
-import "./header-menu-link.scss";
 
 import { Link } from "gatsby";
 import Icon from "../icon/icon";

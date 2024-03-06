@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="it" class="h-100">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.6.2/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.2/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
-            background-color: rgb(242, 247, 252);
+            background-color: #f5f5f5;
             padding: 0;
             margin: 0;
         }
@@ -62,10 +62,6 @@
             transform: scale(1);
         }
 
-        .callout:not(.callout-highlight):not(.callout-more) .callout-title {
-            background-color: rgb(242, 247, 252);
-        }
-
         .it-carousel-wrapper {
             width: 96%;
         }
@@ -113,22 +109,26 @@
         <div class="bd-example w-100">
             
 <div>
-  <label for="inputNumber5" class="input-number-label">Disabled</label>
-  <span class="input-number disabled">
-    <input type="number" data-bs-input id="inputNumber5" name="inputNumber5" value="50" min="0" max="100" step="1" disabled />
-    <button class="input-number-add" disabled>
-      <span class="visually-hidden">Aumenta valore</span>
-    </button>
-    <button class="input-number-sub" disabled>
-      <span class="visually-hidden">Diminuisci valore</span>
-    </button>
-  </span>
+  <div class="form-group">
+    <label for="inputNumber5" class="input-number-label active">Disabled</label>
+    <div class="input-group input-number disabled">
+      <input type="number" class="form-control" data-bs-input id="inputNumber5" name="inputNumber5" value="50" min="0" max="100" step="1" disabled />
+      <span class="input-group-text align-buttons flex-column">
+        <button class="input-number-add">
+          <span class="visually-hidden">Aumenta valore</span>
+        </button>
+        <button class="input-number-sub">
+          <span class="visually-hidden">Diminuisci valore</span>
+        </button>
+      </span>
+    </div>
+  </div>
 </div>
 
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.6.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.2/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
@@ -145,7 +145,6 @@
         })
 
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/3.0.1/Youtube.min.js"></script>
 </body>
 
 </html>

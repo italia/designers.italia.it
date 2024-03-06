@@ -36,8 +36,7 @@ metadata:
 seo:
   name: Norme e riferimenti - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: "La documentazione ufficiale che ti guida nella progettazione per la Pubblica Amministrazione, mettendo le persone al centro" #C
-  image: null #I
-  twitterImage: null #I
+  image: https://designers.italia.it/images/norme-e-riferimenti/manuale-operativo-di-design.jpg
   canonical: null
   pathname: /norme-e-riferimenti/ #M
 
@@ -55,7 +54,7 @@ components:
     subtitle: La documentazione ufficiale che ti guida nella progettazione per la Pubblica Amministrazione, mettendo le persone al centro #C
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: | #C
@@ -144,11 +143,11 @@ components:
         - label: Scopri le Linee guida di design #C
           btnStyle: primary
           url: "linee-guida-di-design/" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
         - label: Scopri i requisiti #C
           btnStyle: outline-secondary
           url: "linee-guida-di-design#requisiti" #M
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
 
     # —
     # HIGHLIGHT
@@ -225,6 +224,7 @@ components:
         label: Vai al Medium di Designers Italia #C
         url: https://medium.com/designers-italia #M
         blank: true
+        ariaLabel: Vai al Medium di Designers Italia (si apre in una nuova finestra)
         icon:
           icon: sprites.svg#it-medium
           color: primary
@@ -236,10 +236,35 @@ components:
     cards:
 
    #CARD MEDIUM
+
+      - title: "Scrivere (semplice) per la PA: qualità nella comunicazione e diritti delle persone"
+        headingLevel: 4
+        customCol: col-lg-4
+        img: /images/community/articoli-di-approfondimento/20231108-scrivere-semplice-per-la-pa-qualita-nella-comunicazione-e-diritti-delle-persone-1198x673.png
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: false
+        rounded: true
+        url: https://medium.com/designers-italia/scrivere-semplice-per-la-pa-qualit%C3%A0-nella-comunicazione-e-diritti-delle-persone-ff28bf02bfad
+        blank: true
+        externalLink:
+          label: Leggi su Medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Daniela Iozzo
+        chips:
+          - color: secondary
+            label: Contenuti e linguaggio
+            url: "#"
+            blank: false
+
       - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
         headingLevel: 4
-        img: /images/community/articoli-di-approfondimento/2022-medium-tabellini-accessibilita.webp
-        alt: descrizione immagine
+        img: /images/community/articoli-di-approfondimento/20220705-progettare-con-qualita-l-accessibilita-al-centro-del-design-system-del-paese.webp
+        alt: ""
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
@@ -248,7 +273,7 @@ components:
         blank: true
         externalLink:
           label: Leggi su medium
-          screenReaderText: " l'articolo completo"
+          screenReaderText: " (si apre in una nuova finestra)"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
@@ -256,8 +281,8 @@ components:
 
       - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
         headingLevel: 4
-        img: /images/community/articoli-di-approfondimento/2022-medium-filippi-etica.webp
-        alt: descrizione immagine
+        img: /images/community/articoli-di-approfondimento/20220128-accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-digitali.webp
+        alt: ""
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
@@ -266,26 +291,8 @@ components:
         url: https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469
         externalLink:
           label: Leggi su medium
-          screenReaderText: " l'articolo completo"
+          screenReaderText: " (si apre in una nuova finestra)"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
         moreInfo: di Mauro Filippi
-
-      - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
-        headingLevel: 4
-        img: /images/community/articoli-di-approfondimento/2021-medium-zaia-processo.webp
-        alt: descrizione immagine
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: https://medium.com/designers-italia/ripartire-da-approccio-e-processo-la-progettazione-di-servizi-pubblici-digitali-fb62858e2c6d
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " l'articolo completo"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Francesco Zaia
