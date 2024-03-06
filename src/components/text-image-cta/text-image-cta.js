@@ -47,7 +47,7 @@ function TextImageCta({
 
   const ctasStyles = classNames("ctas mt-3 mb-4", {
     "d-lg-flex flex-wrap": !ctasVertical,
-  })
+  });
 
   const imageWrapperStyles = classNames(
     "image-cta w-25 d-flex align-items-start",
