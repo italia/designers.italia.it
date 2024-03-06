@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Form - Designers Italia
-  description: "Elementi e stili per la creazione di form accessibili e responsivi"
+  description: "Elementi e stili per la creazione di moduli accessibili e responsivi"
   canonical: null
   pathname: /design-system/componenti/form/
 
@@ -26,7 +26,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Elementi e stili per la creazione di form accessibili e responsivi"
+    subtitle: "Elementi e stili per la creazione di moduli accessibili e responsivi"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -69,8 +69,10 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: |             
+              Il Form, o modulo, è un componente involucro (wrapper) che permette di raggruppare e impaginare controlli di input correlati per l'invio di informazioni o la configurazione di opzioni. 
+
+              Le persone possono inviare il form quando tutti i campi obbligatori sono compilati e i dati sono validi rispetto al formato richiesto dallo specifico campo.
 
       - full: true
         noSpace: true
@@ -81,7 +83,18 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Puoi costruirlo usando per i campi i componenti dedicati: **[Autocomplete](/design-system/componenti/autocomplete/)**, **[Datepicker](/design-system/componenti/datepicker/)**, **[Input](/design-system/componenti/input)**, **[Number input](/design-system/componenti/number-input)**, **[Radio button](/design-system/componenti/radio-button/)**, **[Select](/design-system/componenti/select)**, **[Timepicker](/design-system/componenti/timepicker)**, **[Toggles](/design-system/componenti/toggles)**, **[Transfer](/design-system/componenti/transfer/)**, **[Upload](/design-system/componenti/upload/)**.
+
+              ### Attenzione a
+              - Se il modulo è lungo e complesso, valuta se già possiedi da altre fonti alcuni dei dati che dovresti richiedere: se sì potresti semplicemente farli validare all'utente, evitandogli di inserirli ex novo; per semplificare la compilazione, puoi inoltre dividere il form in più passi, utilizzando il componente [Steppers](/design-system/componenti/steppers/).
+              - Implementa per tutti i campi del form la migliore validazione possibile dei valori inseriti; l'obiettivo della validazione non è restituire errori generici, ma guidare l'utente nella compilazione e nella risoluzione di eventuali errori, oltre che standardizzare i dati inviati. 
+              - Data la natura di interazione complessa, testa sempre la sua efficacia con gli utenti. 
+
+              ### Buone pratiche sui contenuti
+              - Prevedi un titolo e una descrizione del form, e laddove necessario titoli intermedi se utili alla scansione di gruppi di campi o step. 
+              - Inserisci didascalie e istruzioni tra i campi se necessarie a guidare la compilazione da parte dell'utente; puoi anche utilizzare soluzioni di aiuto contestuale come i [tooltip](/design-system/componenti/tooltip).  
+              - Cura la leggibilità dei contenuti delle etichette (label) e dei testi segnaposto per tutti i campi: devono essere chiari e concisi. 
+              - Cura la progettazione dei microtesti di errore: devono aiutare le persone a completare la compilazione e risolvere in autonomia eventuali errori.
 
       - full: true
         noSpace: true
@@ -129,7 +142,7 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              All'invio dei dati il form, se ci sono errori nella compilazione, restituisce un messaggio di alert complessivo e riferimenti visivi e informativi puntuali sulla validità di ogni campo di cui è composto.  
 
       - full: true
         noSpace: true
