@@ -8,9 +8,7 @@ metadata:
 
 seo:
   name: "Buttons - Designers Italia"
-  description: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione"
-  image: null
-  twitterImage: null
+  description: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione."
   canonical: null
   pathname: /design-system/componenti/buttons/
 
@@ -66,43 +64,47 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
             text: |
-              I pulsanti comunicano che l’interazione dà il via a un’azione o a un evento. Non dovrebbero essere utilizzati come elementi di navigazione.
+              I pulsanti comunicano che l’interazione dà il via a un’azione o a un evento. Non dovrebbero essere usati per attivare la navigazione verso altre pagine o link esterni.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Usa la variante primary per valorizzare l’azione principale
-              - Usa la variante secondary per valorizzare l’azione secondaria
-              - Usa pulsanti disabilitati con moderazione, assicurandoti che per l’utente sia chiaro come attivarli
+              - Usa la variante `primary` per valorizzare l’azione principale.
+              - Usa la variante `secondary` per valorizzare l’azione secondaria.
               - Per comunicare senza ambiguità la gerarchia delle azioni generate dai pulsanti, usa le varianti di grandezza e tipologia.
               - Usa un pulsante con icona per aggiungere un’informazione visiva all’interazione (es. pulsante di accesso ad area riservata)
 
               ### Attenzione a
-              - Non usare più di un pulsante primary nello stesso contesto di azione
-              - Non usare pulsanti primary per azioni di valore secondario
-              - Non usare i pulsanti all’interno di paragrafi di testo
+              - Usare pulsanti disabilitati con moderazione, assicurandoti che per l’utente sia chiaro come attivarli.
+              - Non usare più di un pulsante `primary` nello stesso contesto di azione.
+              - Non usare pulsanti `primary` per azioni di valore secondario.
+              - Non usare i pulsanti all’interno di paragrafi di testo.
+              - Usare la corretta semantica HTML `<button>` per l'implementazione di pulsanti di azione. 
 
               ### Buone pratiche sui contenuti
-              - Le etichette di testo devono comunicare in maniera immediata, chiara e senza ambiguità il significato dell’azione
-              - Non usare etichette di testo troppo lunghe
-              - Prediligi etichette di testo che fanno riferimento a una sola azione alla volta
-              - Usa la seconda persona singolare (es. "Aggiungi un servizio")
-              - Usa la prima persona singolare nel caso di accettazione di termini e condizioni o modali informative (es. "Accetto" o "Ho capito")
-              - I pulsanti con sola icona potrebbero generare ambiguità: se possibile, aggiungi sempre un’etichetta di testo
+              - Le etichette di testo devono comunicare in maniera immediata, chiara e senza ambiguità il significato dell’azione.
+              - Non usare etichette di testo troppo lunghe.
+              - Prediligi etichette di testo che fanno riferimento a una sola azione alla volta.
+              - Usa la seconda persona singolare (es. "Aggiungi un servizio").
+              - Usa la prima persona singolare nel caso di accettazione di termini e condizioni o modali informative (es. "Accetto" o "Ho capito").
+              - I pulsanti con sola icona potrebbero generare ambiguità: se possibile, aggiungi sempre un’etichetta di testo.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: true
@@ -160,6 +162,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         title: Stato del componente
         id: ComponentStatus
         text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
@@ -253,36 +256,65 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il pulsante](/images/design-system/componenti/buttons-anatomy.png)
+
+              Il componente Buttons è composto da:
+              1. **forma di sfondo**: che può essere opzionale come nella variante "Link";
+              2. **icona sinistra**: posizione suggerita perché rafforza il significato di un invito all'azione (call to action);
+              3. **etichetta** (label): il testo della call to action, indica sempre un'azione; 
+              4. **icona destra**: può essere utilizzata per suggerire flussi di navigazione.
+
+              È possibile utilizzare una sola icona, scegliendo la posizione corretta in base all'azione.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Elenco degli **stati interattivi** disponibili in tutte le varianti del componente:
+
+              - **default**: il pulsante si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul pulsante, è disponibile solo su dispositivi no-touch;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **pressed**: è lo stato relativo al momento del click o pressione sul pulsante, restituisce un riscontro visivo dell'azione appena compiuta;
+              - **disabled**: indica che il pulsante è disattivato e non è possibile interagire con esso.
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Le specifiche di design si intendono relative a tutte le varianti che prevedono una forma come sfondo.
+
+              Tutte le misure indicate sono espresse in `px`.
+
+              ### Button Large
+              ![Specifiche di design del button large](/images/design-system/componenti/buttons-large-specs.png)
+
+              ### Button Small
+              ![Specifiche di design del button small](/images/design-system/componenti/buttons-small-specs.png)
+
+              ### Button Mini
+              ![Specifiche di design del button mini](/images/design-system/componenti/buttons-mini-specs.png)
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -292,7 +324,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -314,6 +346,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -323,7 +356,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary

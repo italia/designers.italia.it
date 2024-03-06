@@ -126,7 +126,9 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
   tags.data.tagsGroup.group.forEach((tag) => {
-    console.log(`Creating tag page: ${tag.fieldValue}`);
+    if (process.env.DEBUG === "true") {
+      console.log(`Creating tag page: ${tag.fieldValue}`);
+    }
     createPage({
       path: `/argomenti/${_.kebabCase(tag.fieldValue)}/`,
       component: tagTemplate,
@@ -153,7 +155,9 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `);
   tagsDesignSystem.data.tagsDesignSystemGroup.group.forEach((tag) => {
-    console.log(`Creating tag page: ${tag.fieldValue}`);
+    if (process.env.DEBUG === "true") {
+      console.log(`Creating tag page: ${tag.fieldValue}`);
+    }
     createPage({
       path: `/design-system/componenti/utili-per/${_.kebabCase(
         tag.fieldValue,
@@ -187,7 +191,10 @@ exports.createPages = async ({ graphql, actions }) => {
     const { node } = edge;
     node.metadata.redirect_from.forEach((fromPath) => {
       const toPath = edge.node.seo.pathname;
-      console.log(`Creating redirect: ${fromPath} -> ${toPath}...`);
+      if (process.env.DEBUG === "true") {
+        console.log(`Creating redirect: ${fromPath} -> ${toPath}...`);
+      }
+
       createRedirect({ fromPath, toPath });
     });
   });
