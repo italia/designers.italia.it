@@ -13,7 +13,7 @@ function NavSidebar({
   id,
   title,
   subTitle,
-  url,
+  // url,
   img,
   alt,
   tag,
@@ -234,10 +234,11 @@ function NavSidebar({
                 </div>
               )}
 
-              {tag && <div className="nav-sidebar-tag mx-4 mb-4 mt-5">
-                <Tag {...tag} />
-              </div>}
-
+              {tag && (
+                <div className="nav-sidebar-tag mx-4 mb-4 mt-5">
+                  <Tag {...tag} />
+                </div>
+              )}
             </div>
           </div>
         </nav>
