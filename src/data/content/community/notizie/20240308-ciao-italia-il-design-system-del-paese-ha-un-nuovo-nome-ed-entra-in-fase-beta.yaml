@@ -116,8 +116,7 @@ components:
         - name: TextImageCta
           title: Inizia a usare il design system
           headingLevel: 2
-          text: |
-
+          noSpace: true
           ctas:
           - label: Vai a "Come iniziare"
             url: "/design-system/come-iniziare/"
@@ -127,7 +126,6 @@ components:
               align: middle
               hidden: true
               size: sm ms-2
-          ctas:
           - label: Vai a "Come contribuire"
             url: "/design-system/come-contribuire/"
             icon:
@@ -136,8 +134,6 @@ components:
               align: middle
               hidden: true
               size: sm ms-2
-          
-          ctas:
           - label: Vai a "Fondamenti"
             url: "/design-system/fondamenti/"
             icon:
@@ -146,8 +142,6 @@ components:
               align: middle
               hidden: true
               size: sm ms-2
-          
-          ctas:
           - label: Vai a "Componenti"
             url: "/design-system/componenti/"
             icon:
@@ -156,6 +150,15 @@ components:
               align: middle
               hidden: true
               size: sm ms-2
+          - label: Esplora il Changelog
+            url: "/design-system/fondamenti/versionamento#changelog-documentazione"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
 
         - name: TextImageCta
           title: Contribuisci ai lavori in corso
@@ -166,17 +169,15 @@ components:
           - label: Prova il kit React (pre-release)
             url: "https://github.com/italia/design-react-kit"
             icon:
-              icon: sprites.svg#it-external-link
+              icon: sprites.svg#it-github
               color: primary
               align: middle
               hidden: true
               size: sm ms-2
-          
-          ctas:
           - label: Prova il kit Angular (pre-release)
             url: "https://github.com/italia/design-angular-kit"
             icon:
-              icon: sprites.svg#it-external-link
+              icon: sprites.svg#it-github
               color: primary
               align: middle
               hidden: true
