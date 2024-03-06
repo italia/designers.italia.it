@@ -70,7 +70,16 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente Number Input quando vuoi che l'utente inserisca un numero specifico.
+
+              Questo può riguardare situazioni come l’inderimento di una quantità, di un codice numerico, o scegliere un intervallo di valori.
+
+              Il Number Input è molto pratico quando l'intervallo di numeri è conosciuto. Aiuta a prevenire errori e rende più facile inserire i dati per l'utente.
+
+              ### Alternative a questo componente
+
+              - [Input](/design-system/componenti/input): se non è importante che l'utente inserisca un valore esatto, potrebbe essere più appropriato utilizzare un Text Input.
+              - [Select](/design-system/componenti/select): se l’utente può scegliere tra un intervallo di numeri definito, una Select potrebbe essere una scelta migliore.
 
       - full: true
         noSpace: true
@@ -81,7 +90,18 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Utilizza un'etichetta chiara e descrittiva per aiutare l'utente a capire cosa si aspetta che inserisca.
+              - Fornisci feedback immediato all'utente se il numero inserito non è valido. Ad esempio, se il numero è troppo alto o troppo basso;
+              - Considera l'uso di un placeholder per aiutare gli utenti a inserire numeri in un formato specifico;
+              - Vedi tutte le raccomandazione valide per [Input](/design-system/componenti/input)
+
+              ### Attenzione a
+              - Fare in modo che il campo di input sia abbastanza grande da contenere il valore massimo previsto.
+              - Impostare limiti al numero di cifre che possono essere inserite se rilevanti per il contesto. Ad esempio, se il campo è destinato all'intero di un codice a 4 cifre, limita l'input a 4 cifre.
+              - Vedi tutte le raccomandazione valide per [Input](https://www.notion.so/Numer-input-3e9bdd5e1fda4a44af593bb944c96e67?pvs=21)
+
+              ### Buone pratiche sui contenuti
+              - Usa il formato numerico più idoneo a seconda della tipologia di dato, come ad esempio nel caso di valute.
 
       - full: true
         noSpace: true
