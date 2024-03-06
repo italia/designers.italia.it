@@ -214,13 +214,12 @@ function NavSidebar({
                 <span>{backLabel}</span>
               </button>
 
-              <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
-                <a className="" href={url}>
-                  <img src={img} className="header-image my-2" alt={alt} />
-                  <h2 className="h4 text-primary">{title}</h2>
-                </a>
-                <p className="lead fw-normal w-75">{subTitle}</p>
-                {tag && <Tag {...tag} />}
+              <div className="nav-sidebar-header mx-4 mb-4 mt-0 mt-lg-3">
+                {/* <a className="" href={url}> */}
+                <img src={img} className="header-image" alt={alt} />
+                <h2 className="h3 px-0 my-1">{title}</h2>
+                {/* </a> */}
+                <p className="fw-normal w-75">{subTitle}</p>
               </div>
 
               <div className="link-list-wrapper">
@@ -234,6 +233,11 @@ function NavSidebar({
                   </div>
                 </div>
               )}
+
+              {tag && <div className="nav-sidebar-tag mx-4 mb-4 mt-5">
+                <Tag {...tag} />
+              </div>}
+
             </div>
           </div>
         </nav>

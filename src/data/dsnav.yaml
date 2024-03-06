@@ -1,7 +1,7 @@
 id: navSidebarDs
-title: ".italia"
+title: "Design system .italia"
 url: "/design-system/come-iniziare/"
-subTitle: "Il design system del\_Paese"
+# subTitle: "Il design system del\_Paese"
 img: /images/design-system-menu.svg
 alt: ""
 ariaLabel: Menu design system
@@ -10,10 +10,10 @@ toggleAriaLabel: Apri Menu design system
 backLabel: Chiudi
 buttonCloseAriaLabel: Chiudi Menu design system
 tag:
-  screenReaderText: "Changelog versione corrente: "
-  label: v1.0.0-beta.1
-  addonClasses: bg-primary mt-2 text-white text-decoration-underline
-  url: "/design-system/fondamenti/versionamento#changelog-documentazione"
+  screenReaderText: "Versione corrente: "
+  label: 1.0.0-beta.1
+  addonClasses: mb-4 bg-dark text-white
+  # url: "/design-system/fondamenti/versionamento#changelog-documentazione"
 list:
   - label: Come iniziare
     subList:
@@ -69,18 +69,18 @@ list:
         url: "/design-system/fondamenti/bordi-e-raggi/"
       - label: "Dimensioni"
         url: "/design-system/fondamenti/dimensioni/"
-      - label: "Posizionamento"
-        disabled: true
+      # - label: "Posizionamento"
+      #   disabled: true
       - label: "Proporzioni media"
         url: "/design-system/fondamenti/proporzioni/"
       - label: "Icone"
         url: "/design-system/fondamenti/icone/"
-      - label: "Illustrazioni"
-        disabled: true
-      - label: "Immagini"
-        disabled: true
-      - label: "Video"
-        disabled: true
+      # - label: "Illustrazioni"
+      #   disabled: true
+      # - label: "Immagini"
+      #   disabled: true
+      # - label: "Video"
+      #   disabled: true
   - label: Componenti
     subList:
       - label: Panoramica componenti
@@ -205,12 +205,8 @@ list:
     #   - label: "..."
     #     url: "#"
     #     disabled: true
-# secondaryList:
-#   - label: Come contribuire
-#     url: "#"
-#     disabled: true
-#     active: false
-#   - label: Link utili
-#     url: "#"
-#     active: false
-#     disabled: true
+secondaryList:
+  - label: Stato delle risorse
+    url: "/design-system/fondamenti/versionamento#ComponentStatus"
+  - label: Changelog
+    url: "/design-system/fondamenti/versionamento#changelog-documentazione"
