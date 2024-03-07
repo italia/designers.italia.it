@@ -2,26 +2,32 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata:
-  json: bsi/componenti/collapse.json
+  json: bsi/form/checkbox.json
   template:
     name: design-system-component
 
 seo:
-  name: Collapse - Designers Italia
-  description: "Funzionalità che permette di cambiare la visibilità di altri componenti e contenuti."
+  name: Checkbox - Designers Italia
+  description: "Pulsanti di selezione che consentono di indicare più elementi da un elenco di opzioni predefinite."
+  image: null
   canonical: null
-  pathname: /design-system/componenti/collapse/
+  pathname: /design-system/componenti/checkbox/
 
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Collapse
+    title: Checkbox
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
+    # titleTag:
+    #   label: Pronto
+    #   url: "#ComponentStatus"
+    #   addonClasses: bg-success mb-2
+    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Funzionalità che permette di cambiare la visibilità di altri componenti e contenuti"
+    subtitle: "Pulsanti di selezione che consentono di indicare più elementi da un elenco di opzioni predefinite"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -38,7 +44,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Utilità]
+      tagsDesignSystem: [Form]
 
   tab:
     - full: true
@@ -51,7 +57,7 @@ tabs:
       id: "preview-use"
       title: "Anteprima"
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/collapse/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
       accordionOpen: false
       accordionShow: false
 
@@ -113,7 +119,7 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              *In stesura*
 
       - full: true
         noSpace: true
@@ -125,7 +131,7 @@ tabs:
             headingLevel: 2
             text: |
               *In stesura*
-
+              
       - full: true
         noSpace: true
         paddingLeft: true
@@ -136,8 +142,7 @@ tabs:
             headingLevel: 2
             text: |
               *In stesura*
-
-
+      
       - full: true
         noSpace: true
         paddingLeft: true
@@ -165,7 +170,7 @@ tabs:
       id: "preview-dev"
       title: "Anteprima"
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/collapse/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
       accordionOpen: true
       accordionShow: true
 

@@ -8,7 +8,8 @@ metadata:
 
 seo:
   name: Forward - Designers Italia
-  description: "Un elemento che permette agli utenti di saltare velocemente a una sezione o contenuto di una pagina, utile su pagine lunghe con molti contenuti."
+  description: "Un pulsante che permette agli utenti di scorrere direttamente a un contenuto specifico in pagina."
+  image: null
   canonical: null
   pathname: /design-system/componenti/forward/
 
@@ -20,13 +21,8 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Un elemento che permette agli utenti di saltare velocemente a una sezione o contenuto di una pagina, utile su pagine lunghe con molti contenuti"
+    subtitle: "Un pulsante che permette agli utenti di scorrere direttamente a un contenuto specifico in pagina"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -71,7 +67,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente Forward su pagine lunghe, per permettere agli utenti di scorrere direttamente a un contenuto specifico. Ad esempio, può essere usato su una prima schermata di copertina, in basso, per spostare l'attenzione sul contenuto che segue, invitando le persone a scoprirlo.
 
       - full: true
         noSpace: true
@@ -82,7 +78,13 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Usa un componente Forward nel contesto di pagine lunghe con sezioni in evidenza, come ad esempio pagine che presentano un componente [Hero](/design-system/componenti/hero/).
+              - Imposta l'ancora sul contenuto in pagina a cui vuoi far arrivare velocemente l'utente, dopo che ha cliccato sul componente. 
+
+              ### Attenzione a
+              - Non usare più componenti Forward sulla stessa pagina. 
+              - Rendere coerente la funzione nel contesto dello stesso sito o servizio se presente su più pagine.  
+              - Testare il funzionamento e il risultato dell'azione, in particolare ponendo attenzione che al compiersi dell'azione alcuni contenuti non siano nascosti da elementi `sticky` o barre di navigazione. 
 
       - full: true
         noSpace: true
@@ -119,7 +121,11 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il Forward](/images/design-system/componenti/forward-anatomy.png)
+
+              Il componente Forward è composto da: 
+              1. **area di interazione** (trasparente): di solito si estende in orizzontale per tutto lo spazio a disposizione; 
+              2. **icona**: freccia verso il basso, che indica all'utente l'azione che sta per compiere. 
 
       - full: true
         noSpace: true
@@ -130,8 +136,9 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Al click/tap sul componente o alla sua attivazione da tastiera, il browser scrollerà portando l'utente direttamente al contenuto desiderato. 
 
+              Tutta l'area di interazione mostra il contorno con lo status Focus se selezionata da tastiera.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -141,8 +148,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
 
+              ![Gli elementi che formano il Forward](/images/design-system/componenti/forward-specs.png)
 
       - full: true
         noSpace: true
