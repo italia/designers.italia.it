@@ -75,7 +75,7 @@ tabs:
 
               Può essere utilizzato anche in contesti come pannelli di configurazione (settings) o come filtro per lunghe liste di contenuti. 
 
-              ## Alternative a questo componente
+              ### Alternative a questo componente
               - **[Checkbox](/design-system/componenti/checkbox/)**: per permettere più scelte tra un gruppo di opzioni. 
               - **[Select](/design-system/componenti/select/)** e **[Autocomplete](/design-system/componenti/autocomplete/)**: per lunghe liste di opzioni di scelta, è da notare che l'utente in questi componenti non ha contezza immediata di tutte le opzioni tra cui può scegliere. 
 
@@ -89,6 +89,15 @@ tabs:
             headingLevel: 2
             text: |
               _In stesura_
+
+              ### Attenzione a
+              - Non usare il componente se l'utente deve compiere scelte multiple. 
+
+              ### Buone pratiche sui contenuti
+              - Fai precedere al gruppo di Radio button un titolo ed una eventuale descrizione che inquadri la scelta richiesta e le sue implicazioni .
+              - Scrivi le etichette per le opzioni chiare e brevi.
+              - Non troncare le etichette per le opzioni con i puntini di sospensione.
+              - Puoi usare l'eventuale testo aggiuntivo per aggiungere contesto alle opzioni di scelta.
 
       - full: true
         noSpace: true
@@ -144,7 +153,15 @@ tabs:
             text: |
               All'attivazione l'indicatore di input passerà tra stato selezionato e deselezionato.
 
-              Alla selezione tutte le altre opzioni di scelta si deselezionano. 
+              Alla selezione di una opzione in un gruppo di Radio button, tutte le altre opzioni di scelta passano allo stato deselezionato.
+
+              Gli **stati interattivi** dei Radio button possono essere: 
+              - **default**: il campo si presenta deselezionato nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul campo, è disponibile solo su dispositivi no-touch;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **active**: è lo stato relativo al momento del click o pressione sul campo, restituisce un riscontro visivo dell'azione appena compiuta e passa allo stato selezionato;
+              - **disabled default**: indica che il campo è disattivato e non è possibile interagire con esso, mostra l'indicatore di stato come deselezionato;
+              - **disabled checked**: indica che il campo è disattivato e non è possibile interagire con esso,mostra l'indicatore di stato come selezionato.
 
       - full: true
         noSpace: true
