@@ -214,7 +214,6 @@ function NavSidebar({
               </button>
 
               <div className="nav-sidebar-header mx-4 mb-4 mt-0 mt-lg-3">
-                {/* <a className="" href={url}> */}
                 <img src={img} className="header-image" alt={alt} />
                 <h2 className="h3 px-0 my-1">{title}</h2>
                 {/* </a> */}
