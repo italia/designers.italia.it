@@ -8,7 +8,8 @@ metadata:
 
 seo:
   name: Radio button - Designers Italia
-  description: "Elementi e stili per la creazione di Radio button accessibili."
+  description: "Pulsanti di selezione che consentono di indicare un'unica scelta tra più elementi all'interno di un elenco di opzioni predefinite."
+  image: null
   canonical: null
   pathname: /design-system/componenti/radio-button/
 
@@ -21,7 +22,7 @@ components:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: "Elementi e stili per la creazione di Radio button accessibili"
+    subtitle: "Pulsanti di selezione che consentono di indicare un'unica scelta tra più elementi all'interno di un elenco di opzioni predefinite"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -65,7 +66,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Un gruppo di Radio button è il componente perfetto, nel contesto di un modulo ([Form](/design-system/componenti/form/)), per permettere un'unica scelta all'interno di un gruppo di opzioni che si escludono a vicenda.
+
+              Può essere utilizzato anche in contesti come pannelli di configurazione (settings) o come filtro per lunghe liste di contenuti. 
+
+              ### Alternative a questo componente
+              - **[Checkbox](/design-system/componenti/checkbox/)**: per permettere più scelte all'interno di un gruppo di opzioni. 
+              - **[Select](/design-system/componenti/select/)** e **[Autocomplete](/design-system/componenti/autocomplete/)**: per lunghe liste di opzioni di scelta, è da notare che l'utente in questi componenti non ha contezza immediata di tutte le opzioni tra cui può scegliere. 
 
       - full: true
         noSpace: true
@@ -77,6 +84,15 @@ tabs:
             headingLevel: 2
             text: |
               _In stesura_
+
+              ### Attenzione a
+              - Non usare il componente se l'utente deve compiere scelte multiple. 
+
+              ### Buone pratiche sui contenuti
+              - Fai precedere al gruppo di Radio button un titolo e una eventuale descrizione che inquadri la scelta richiesta e le sue implicazioni.
+              - Scrivi etichette chiare e brevi per consentire agli utenti di comprendere le opzioni a disposizione.
+              - Non troncare le etichette per le opzioni con i puntini di sospensione.
+              - Puoi usare un testo aggiuntivo per aggiungere contesto alle opzioni di scelta.
 
       - full: true
         noSpace: true
@@ -113,7 +129,13 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il Radio button](/images/design-system/componenti/radio-button-anatomy.png)
+
+              Il componente Radio button è composto da: 
+              1. **etichetta** (label): il testo dell'opzione, descrive l'opzione selezionabile o deselezionabile; 
+              2. **indicatore di input**: indica lo stato dell'opzione, di default non selezionato;
+              3. **bordo**: riga che segna il limite tra più opzioni; 
+              4. **testo** (opzionale): testo di approfondimento sull'opzione.  
 
       - full: true
         noSpace: true
@@ -124,7 +146,17 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              All'attivazione, l'indicatore di input passerà tra stato selezionato e deselezionato.
+
+              Alla selezione di un'opzione in un gruppo di Radio button, tutte le altre opzioni di scelta passano allo stato deselezionato.
+
+              Gli **stati interattivi** dei Radio button possono essere: 
+              - **default**: il campo si presenta deselezionato nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul campo ed è disponibile solo su dispositivi no-touch;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **active**: è lo stato relativo al momento del click o pressione sul campo, restituisce un riscontro visivo dell'azione appena compiuta e passa allo stato selezionato;
+              - **disabled default**: indica che il campo è disattivato e non è possibile interagire con esso, mostra l'indicatore di stato come deselezionato;
+              - **disabled checked**: indica che il campo è disattivato e non è possibile interagire con esso,mostra l'indicatore di stato come selezionato.
 
       - full: true
         noSpace: true
@@ -135,8 +167,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
 
+              ![Specifiche di design del Radio button](/images/design-system/componenti/radio-button-specs.png)
 
       - full: true
         noSpace: true

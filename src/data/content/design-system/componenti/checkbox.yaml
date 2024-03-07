@@ -2,27 +2,32 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata:
-  json: bsi/componenti/forward.json
+  json: bsi/form/checkbox.json
   template:
     name: design-system-component
 
 seo:
-  name: Forward - Designers Italia
-  description: "Un pulsante che permette agli utenti di scorrere direttamente a un contenuto specifico in pagina."
+  name: Checkbox - Designers Italia
+  description: "Pulsanti di selezione che consentono di indicare più elementi da un elenco di opzioni predefinite."
   image: null
   canonical: null
-  pathname: /design-system/componenti/forward/
+  pathname: /design-system/componenti/checkbox/
 
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Forward
+    title: Checkbox
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
+    # titleTag:
+    #   label: Pronto
+    #   url: "#ComponentStatus"
+    #   addonClasses: bg-success mb-2
+    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Un pulsante che permette agli utenti di scorrere direttamente a un contenuto specifico in pagina"
+    subtitle: "Pulsanti di selezione che consentono di indicare più elementi da un elenco di opzioni predefinite"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -39,7 +44,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Navigazione]
+      tagsDesignSystem: [Form]
 
   tab:
     - full: true
@@ -51,9 +56,8 @@ tabs:
     componentVariant:
       id: "preview-use"
       title: "Anteprima"
-      textInfo: Per visualizzare la funzionalità del componente è necessario implementarlo.
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/forward/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
       accordionOpen: false
       accordionShow: false
 
@@ -67,7 +71,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Usa il componente Forward su pagine lunghe, per permettere agli utenti di scorrere direttamente a un contenuto specifico. Ad esempio, può essere usato su una prima schermata di copertina, in basso, per spostare l'attenzione sul contenuto che segue, invitando le persone a scoprirlo.
+              _In stesura_
 
       - full: true
         noSpace: true
@@ -78,13 +82,7 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Usa un componente Forward nel contesto di pagine lunghe con sezioni in evidenza, come ad esempio pagine che presentano un componente [Hero](/design-system/componenti/hero/).
-              - Imposta l'ancora sul contenuto in pagina a cui vuoi far arrivare velocemente l'utente, dopo che ha cliccato sul componente. 
-
-              ### Attenzione a
-              - Non usare più componenti Forward sulla stessa pagina. 
-              - Rendere coerente la funzione nel contesto dello stesso sito o servizio se presente su più pagine.  
-              - Testare il funzionamento e il risultato dell'azione, in particolare ponendo attenzione che al compiersi dell'azione alcuni contenuti non siano nascosti da elementi `sticky` o barre di navigazione. 
+              _In stesura_
 
       - full: true
         noSpace: true
@@ -121,11 +119,7 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              ![Gli elementi che formano il Forward](/images/design-system/componenti/forward-anatomy.png)
-
-              Il componente Forward è composto da: 
-              1. **area di interazione** (trasparente): di solito si estende in orizzontale per tutto lo spazio a disposizione; 
-              2. **icona**: freccia verso il basso, che indica all'utente l'azione che sta per compiere. 
+              *In stesura*
 
       - full: true
         noSpace: true
@@ -136,9 +130,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              Al click/tap sul componente o alla sua attivazione da tastiera, il browser scrollerà portando l'utente direttamente al contenuto desiderato. 
-
-              Tutta l'area di interazione mostra il contorno con lo status Focus se selezionata da tastiera.
+              *In stesura*
+              
       - full: true
         noSpace: true
         paddingLeft: true
@@ -148,10 +141,8 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              Tutte le misure indicate sono espresse in `px`.
-
-              ![Gli elementi che formano il Forward](/images/design-system/componenti/forward-specs.png)
-
+              *In stesura*
+      
       - full: true
         noSpace: true
         paddingLeft: true
@@ -178,9 +169,8 @@ tabs:
     componentVariant:
       id: "preview-dev"
       title: "Anteprima"
-      textInfo: Per visualizzare la funzionalità del componente è necessario implementarlo.
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/forward/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
       accordionOpen: true
       accordionShow: true
 
