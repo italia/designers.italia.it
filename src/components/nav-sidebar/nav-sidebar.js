@@ -216,7 +216,6 @@ function NavSidebar({
               <div className="nav-sidebar-header mx-4 mb-4 mt-0 mt-lg-3">
                 <img src={img} className="header-image" alt={alt} />
                 <h2 className="h3 px-0 my-1">{title}</h2>
-                {/* </a> */}
                 <p className="fw-normal w-75">{subTitle}</p>
               </div>
 
