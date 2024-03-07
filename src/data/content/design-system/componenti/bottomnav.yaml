@@ -16,7 +16,7 @@ components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Bottomnav
+    title: BottomNav
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
@@ -86,12 +86,11 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Posiziona il componente fissandolo al fondo della pagina lungo tutta la larghezza del viewport.
-              - Includi i collegamenti per navigare alle principali sezioni del sito o dell'app.
-              - Se hai bisogno di aggiungere un contatore per eventuali notifiche di aggiornamento, puoi combinare il componente [Badge](/design-system/componenti/badge) sugli elementi del componente BottomNav.
+              - Il componente ha un’altezza fissa ed è ancorato al fondo della pagina, occupandone tutta la larghezza.
+              - Se le sezioni prevedono notifiche di aggiornamento, puoi combinare il componente [Badge](/design-system/componenti/badge)
 
               ### Attenzione a
-              - Limitare il numero di sezioni ed elementi presenti nella barra del componente. Non dovrebbero essere più di cinque.
+              - Limita il numero di sezioni presenti nel menu, non dovrebbero essere più di cinque.
 
               ### Buone pratiche sui contenuti
               - Il titolo della voce di menu deve essere composta da una sola parola;
@@ -131,7 +130,13 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il pulsante](/images/design-system/componenti/bottomnav-anatomy.png)
+
+              Il componente BottomNav è composto da:
+              1. **forma di sfondo**: racchiude tutte le voci di menu;
+              2. **icona**: rappresenta visivamente il contenuto della sezione;
+              3. **etichetta** (label): descrive la sezione, generalmente con un parola; 
+              4. **numero**(opzionale): se presente, il numero del badge informa sulla presenza di notifiche.
 
       - full: true
         noSpace: true
@@ -154,7 +159,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design del BottomNav](/images/design-system/componenti/bottomnav-specs.png)
 
 
       - full: true
