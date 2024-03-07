@@ -226,17 +226,18 @@ function NavSidebar({
                 <ul className="link-list">{links}</ul>
               </div>
 
+
+              {tag && (
+                <div className="nav-sidebar-tag mx-4 mt-5">
+                  <Tag {...tag} />
+                </div>
+              )}
+
               {secondaryLinks && (
                 <div className="sidebar-linklist-wrapper linklist-secondary">
                   <div className="link-list-wrapper">
                     <ul className="link-list">{secondaryLinks}</ul>
                   </div>
-                </div>
-              )}
-
-              {tag && (
-                <div className="nav-sidebar-tag mx-4 mb-4 mt-5">
-                  <Tag {...tag} />
                 </div>
               )}
             </div>
