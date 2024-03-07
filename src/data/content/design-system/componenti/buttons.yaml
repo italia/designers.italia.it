@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: "Buttons - Designers Italia"
-  description: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione"
+  description: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione."
   canonical: null
   pathname: /design-system/componenti/buttons/
 
@@ -17,11 +17,6 @@ components:
     specialKangarooComponent: true
     background: null
     title: Buttons
-    titleTag:
-      label: Pronto
-      # url: "#ComponentStatus"
-      addonClasses: bg-success mb-2
-      screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Comunemente chiamati pulsanti, sono elementi interattivi che danno il via a un'azione o a un evento. L'etichetta di testo o l’icona che accompagna ogni pulsante ha l'obiettivo di chiarire cosa succederà in interfaccia una volta iniziata l'interazione"
     tag:
@@ -71,7 +66,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              I pulsanti comunicano che l’interazione dà il via a un’azione o a un evento. Non dovrebbero essere utilizzati come elementi di navigazione.
+              I pulsanti comunicano che l’interazione dà il via a un’azione o a un evento. Non dovrebbero essere usati per attivare la navigazione verso altre pagine o link esterni.
 
       - full: true
         noSpace: true
@@ -82,24 +77,25 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              - Usa la variante primary per valorizzare l’azione principale
-              - Usa la variante secondary per valorizzare l’azione secondaria
-              - Usa pulsanti disabilitati con moderazione, assicurandoti che per l’utente sia chiaro come attivarli
+              - Usa la variante `primary` per valorizzare l’azione principale.
+              - Usa la variante `secondary` per valorizzare l’azione secondaria.
               - Per comunicare senza ambiguità la gerarchia delle azioni generate dai pulsanti, usa le varianti di grandezza e tipologia.
               - Usa un pulsante con icona per aggiungere un’informazione visiva all’interazione (es. pulsante di accesso ad area riservata)
 
               ### Attenzione a
-              - Non usare più di un pulsante primary nello stesso contesto di azione
-              - Non usare pulsanti primary per azioni di valore secondario
-              - Non usare i pulsanti all’interno di paragrafi di testo
+              - Usare pulsanti disabilitati con moderazione, assicurandoti che per l’utente sia chiaro come attivarli.
+              - Non usare più di un pulsante `primary` nello stesso contesto di azione.
+              - Non usare pulsanti `primary` per azioni di valore secondario.
+              - Non usare i pulsanti all’interno di paragrafi di testo.
+              - Usare la corretta semantica HTML `<button>` per l'implementazione di pulsanti di azione. 
 
               ### Buone pratiche sui contenuti
-              - Le etichette di testo devono comunicare in maniera immediata, chiara e senza ambiguità il significato dell’azione
-              - Non usare etichette di testo troppo lunghe
-              - Prediligi etichette di testo che fanno riferimento a una sola azione alla volta
-              - Usa la seconda persona singolare (es. "Aggiungi un servizio")
-              - Usa la prima persona singolare nel caso di accettazione di termini e condizioni o modali informative (es. "Accetto" o "Ho capito")
-              - I pulsanti con sola icona potrebbero generare ambiguità: se possibile, aggiungi sempre un’etichetta di testo
+              - Le etichette di testo devono comunicare in maniera immediata, chiara e senza ambiguità il significato dell’azione.
+              - Non usare etichette di testo troppo lunghe.
+              - Prediligi etichette di testo che fanno riferimento a una sola azione alla volta.
+              - Usa la seconda persona singolare (es. "Aggiungi un servizio").
+              - Usa la prima persona singolare nel caso di accettazione di termini e condizioni o modali informative (es. "Accetto" o "Ho capito").
+              - I pulsanti con sola icona potrebbero generare ambiguità: se possibile, aggiungi sempre un’etichetta di testo.
 
       - full: true
         noSpace: true
@@ -264,7 +260,7 @@ tabs:
             text: |
               ![Gli elementi che formano il pulsante](/images/design-system/componenti/buttons-anatomy.png)
 
-              Il componente buttons è composto da:
+              Il componente Buttons è composto da:
               1. **forma di sfondo**: che può essere opzionale come nella variante "Link";
               2. **icona sinistra**: posizione suggerita perché rafforza il significato di un invito all'azione (call to action);
               3. **etichetta** (label): il testo della call to action, indica sempre un'azione; 

@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Timepicker - Designers Italia
-  description: "Campo per selezionare un orario"
+  description: "Campo per selezionare un orario."
   canonical: null
   pathname: /design-system/componenti/timepicker/
 
@@ -20,11 +20,6 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Campo per selezionare un orario"
     # img: /images/400x300.png #I
@@ -70,11 +65,10 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Usa il componente Timepicker, nel contesto di un modulo ([form](/design-system/componenti/form/)), per permettere agli agli utenti di scegliere un orario, indicando ore e minuti. È un componente utile per i flussi di interazione che prevedono la comunicazione di un orario, come la prenotazione di appuntamenti o di posti per un evento.
+              Usa il componente Timepicker, nel contesto di un modulo ([Form](/design-system/componenti/form/)), per permettere agli agli utenti di scegliere un orario, indicando ore e minuti. È un componente utile per i flussi di interazione che prevedono la comunicazione di un orario, come la prenotazione di appuntamenti o di posti per un evento.
 
-              ### Alternative
-
-              Se hai bisogno che gli utenti selezionino un orario da una lista di opzioni prestabilite, ad esempio con un intervallo di 5 o 10 minuti, usa il componente [select](/design-system/componenti/select).
+              ### Alternative a questo componente
+              - **[Select](/design-system/componenti/select)**: se hai bisogno che gli utenti selezionino un orario da una lista di opzioni prestabilite, ad esempio con un intervallo di 5 o 10 minuti.
 
       - full: true
         noSpace: true
@@ -207,9 +201,9 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              ![Gli elementi che formano il timepicker](/images/design-system/componenti/timepicker-anatomy.png)
+              ![Gli elementi che formano il Timepicker](/images/design-system/componenti/timepicker-anatomy.png)
 
-              Il componente Timepicker è basato sul componente [input](/design-system-/componenti/input) e ne condivide la maggior parte degli elementi. 
+              Il componente Timepicker è basato sul componente [Input](/design-system-/componenti/input) e ne condivide la maggior parte degli elementi. 
               
               È composto da:
               1. **forma di sfondo**: è sempre di colore bianco con un bordo sul lato inferiore;
@@ -227,7 +221,7 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              Cliccando sul componente si apre un menu a tendina per le ore e uno per i minuti. Il campo ore è il primo attivo. Dopo aver selezionato l'ora, si attiva il campo minuti.   
+              Cliccando o attivando il componente con tastiera o tocco, si apre un menu a tendina per le ore e uno per i minuti. Il campo ore è il primo attivo. Dopo aver selezionato l'ora, si attiva il campo minuti.   
               Le ore e i minuti possono essere selezionati al click/tap/touch sulle opzioni nei menu a tendina oppure inseriti manualmente tramite tastiera.  
               Per spostare la selezione tra il campo ore e il campo minuti si possono usare i tasti freccia o il tasto TAB.
 

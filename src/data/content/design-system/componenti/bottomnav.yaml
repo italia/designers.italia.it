@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Bottomnav - Designers Italia
-  description: "Bottomnav è un componente pensato per la navigazione su dispositivi mobile il cui aspetto ricalca quello di alcune popolari app"
+  description: "Barra di navigazione fissa a fondo pagina per dispositivi mobile."
   canonical: null
   pathname: /design-system/componenti/bottomnav/
 
@@ -16,17 +16,12 @@ components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Bottomnav
+    title: BottomNav
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Bottomnav è un componente pensato per la navigazione su dispositivi mobile il cui aspetto ricalca quello di alcune popolari app"
+    subtitle: "Barra di navigazione fissa a fondo pagina per dispositivi mobile"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -70,7 +65,12 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente BottomNav per fornire una barra di navigazione ancorata al fondo della pagina su dispositivi mobile, come avviene sulla maggior parte delle app mobile.
+
+
+              ### Alternative a questo componente
+
+              - **[Header](/design-system/componenti/header):** quando vuoi fornire una navigazione di primo livello ancorata in cima al viewport di un sito o una app.
 
       - full: true
         noSpace: true
@@ -81,7 +81,14 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Il componente ha un’altezza fissa ed è ancorato al fondo della pagina, occupandone tutta la larghezza.
+              - Se le sezioni prevedono notifiche di aggiornamento, puoi combinare il componente [Badge](/design-system/componenti/badge).
+
+              ### Attenzione a
+              - Limita il numero di sezioni presenti nel menu, non dovrebbero essere più di cinque.
+
+              ### Buone pratiche sui contenuti
+              - I titoli delle voci della barra devono essere composti da una sola parola, dal significato chiaro e intuitivo.
 
       - full: true
         noSpace: true
@@ -97,14 +104,93 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
         components:
+
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/bottomnav/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda storybook
+                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-bottomnav--page
+                    blank: true
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
           - name: TextImageCta
-            noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
+            ctas:
+            - label: Apri una issue sul repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sul repository UI Kit Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Progettazione
     sectionsEditorial:
@@ -118,7 +204,13 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano la Bottomnav](/images/design-system/componenti/bottomnav-anatomy.png)
+
+              Il componente BottomNav è composto da:
+              1. **forma di sfondo**: racchiude tutte le voci di menu;
+              2. **icona**: rappresenta visivamente il contenuto della sezione;
+              3. **etichetta** (label): descrive la sezione, generalmente con un parola; 
+              4. **contatore** (opzionale): se presente, il numero del badge informa sulla presenza di notifiche o aggiornamenti.
 
       - full: true
         noSpace: true
@@ -129,7 +221,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Il componente BottomNav rimane fisso a fondo pagina durante lo scroll.
+              - La voce attiva deve distinguersi da quelle non attive.
 
       - full: true
         noSpace: true
@@ -140,7 +233,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design del BottomNav](/images/design-system/componenti/bottomnav-specs.png)
 
 
       - full: true

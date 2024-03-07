@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: "Dropdown - Designers Italia"
-  description: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
+  description: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina."
   canonical: null
   pathname: /design-system/componenti/dropdown/
 
@@ -20,11 +20,6 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    titleTag:
-      label: Pronto
-      # url: "#ComponentStatus"
-      addonClasses: bg-success mb-2
-      screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Elemento contenitore che espande, comprime e consente di selezionare elementi contestuali di un’interfaccia, in particolare liste di elementi (es. link o opzioni). È comunemente chiamato anche menù a tendina"
     # img: /images/400x300.png #I
@@ -70,13 +65,12 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              Il dropdown offre una navigazione veloce al contenuto desiderato, permettendo agli utenti di risparmiare tempo e accedere direttamente a specifici contenuti. È utile quindi per creare menu contestuali tramite un elenco di link o azioni.
+              Il Dropdown offre una navigazione veloce al contenuto desiderato, permettendo agli utenti di risparmiare tempo e accedere direttamente a specifici contenuti. È utile quindi per creare menu contestuali tramite un elenco di link o azioni.
 
               Aiuta inoltre a nascondere le scelte meno rilevanti, mantenendo l'interfaccia pulita sopratutto nel caso di poco spazio a disposizione.
 
               ### Alternative a questo componente
-
-              Per permettere all'utente di esprimere scelte tra più elementi in un modulo (form), usa i componenti [select](/design-system/componenti/select/) e [autocomplete](/design-system/componenti/autocomplete/), o un gruppo di [radio button](/design-system/componenti/radio-button/).
+              **[Select](/design-system/componenti/select/)**, [Autocomplete](/design-system/componenti/autocomplete/) e [Radio button](/design-system/componenti/radio-button/): per permettere all'utente di esprimere scelte tra più elementi in un modulo ([Form](/design-system/componenti/form/)) usa i componenti dedicati.
 
       - full: true
         noSpace: true
@@ -254,12 +248,12 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              Il componente dropdown è composto un pulsante e un menu. Gli elementi che ne fanno parte sono:
+              Il componente Dropdown è composto un pulsante e un menu. Gli elementi che ne fanno parte sono:
 
               ### Pulsante
 
-              ![Gli elementi che formano il pulsante o link del dropdown](/images/design-system/componenti/dropdown-anatomy.png)
-              ![Gli elementi che formano il pulsante o link del dropdown](/images/design-system/componenti/dropdown-outline-anatomy.png)
+              ![Gli elementi che formano il pulsante o link del Dropdown](/images/design-system/componenti/dropdown-anatomy.png)
+              ![Gli elementi che formano il pulsante o link del Dropdown](/images/design-system/componenti/dropdown-outline-anatomy.png)
 
               1. **etichetta** (label): il testo rappresenta il contenuto del menu;
               2. **icona freccia**: suggerisce all'utente cosa aspettarsi all'apertura.
@@ -267,7 +261,7 @@ tabs:
 
               ### Menu
 
-              ![Gli elementi che formano il menu del dropdown](/images/design-system/componenti/dropdown-menu-anatomy.png)
+              ![Gli elementi che formano il menu del Dropdown](/images/design-system/componenti/dropdown-menu-anatomy.png)
 
               1. **sfondo**: contiene la lista di opzioni;
               2. **opzioni**: il testo di ogni voce del menu;
@@ -286,8 +280,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              - Quando l'utente fa clic o attiva il menu a discesa, si apre un elenco di opzioni.
-              - L'utente può scorrere l'elenco e fare clic su un'opzione, per navigare al link o per iniziare l'azione a seconda della tipologia di opzione.
+              - Quando l'utente fa clic o attiva il menu a discesa, si apre un elenco di opzioni;
+              - l'utente può scorrere l'elenco e fare clic su un'opzione, per navigare al link o per iniziare l'azione a seconda della tipologia di opzione.
 
       - full: true
         noSpace: true

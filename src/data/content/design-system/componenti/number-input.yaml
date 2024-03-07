@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Number input - Designers Italia
-  description: "Campi con pulsanti per incrementare e decrementare valori numerici"
+  description: "Campi con pulsanti per incrementare e decrementare valori numerici."
   canonical: null
   pathname: /design-system/componenti/number-input/
 
@@ -20,11 +20,6 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Campi con pulsanti per incrementare e decrementare valori numerici"
     # img: /images/400x300.png #I
@@ -70,7 +65,16 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente Number Input, nel contesto di un modulo ([Form](/design-system/componenti/form/)), quando vuoi che l'utente inserisca un numero specifico.
+
+              Questo può riguardare situazioni come l’inserimento di una quantità, di un codice numerico, o la scelta di un intervallo di valori.
+
+              Il Number Input è molto pratico quando l'intervallo di numeri è conosciuto. Aiuta a prevenire errori e rende più facile inserire i dati per l'utente.
+
+              ### Alternative a questo componente
+
+              - **[Input](/design-system/componenti/input)**: se non è importante che l'utente inserisca un valore esatto, potrebbe essere più appropriato utilizzare un Text Input.
+              - **[Select](/design-system/componenti/select)**: se l’utente può scegliere tra una serie di valori numerici predefiniti, una Select potrebbe essere una scelta migliore.
 
       - full: true
         noSpace: true
@@ -81,7 +85,19 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Utilizza un'etichetta chiara e descrittiva per aiutare l'utente a capire che tipologia di valore deve inserire.
+              - Fornisci feedback immediato all'utente se il numero inserito non è valido. Ad esempio, se il numero è troppo alto o troppo basso.
+              - Considera l'uso di un placeholder per aiutare gli utenti a inserire numeri in un formato specifico.
+              - Consulta tutte le raccomandazioni valide per [Input](/design-system/componenti/input).
+
+              ### Attenzione a
+              - Fare in modo che il campo di input sia abbastanza grande da contenere il valore massimo previsto.
+              - Impostare limiti al numero di cifre che possono essere inserite se rilevanti per il contesto. Ad esempio, se il campo è destinato all'inserimento di un codice a 4 cifre, limita l'input a 4 cifre.
+              - Consultare tutte le raccomandazione valide per [Input](/design-system/componenti/input)
+
+              ### Buone pratiche sui contenuti
+              - Usa il formato numerico più idoneo a seconda della tipologia di dato, come ad esempio nel caso di valute.
+              - Indica nella descrizione del campo l'unità di misura e/o il passo degli step a disposizione, se rilevanti. 
 
       - full: true
         noSpace: true
@@ -97,14 +113,93 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
         components:
+
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/buttons/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda storybook
+                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-form-input-numerico--page
+                    blank: true
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
           - name: TextImageCta
-            noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
+            ctas:
+            - label: Apri una issue sul repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sul repository UI Kit Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Progettazione
     sectionsEditorial:
@@ -118,7 +213,11 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il Number input](/images/design-system/componenti/number-input-anatomy.png)
+
+              1. **campo di testo**: definisce l'area di inserimento;
+              2. **frecce**: permettono di aumentare o diminuire il valore nel campo di testo;
+              3. **testo di aiuto** (helper text): fornisce un aiuto per la compilazione del campo.
 
       - full: true
         noSpace: true
@@ -129,7 +228,7 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Vai al componente [Input](/design-system/componenti/input/).
 
       - full: true
         noSpace: true
@@ -140,7 +239,7 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Vai al componente [Input](/design-system/componenti/input/).
 
 
       - full: true
