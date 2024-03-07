@@ -83,13 +83,14 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Usa un gruppo di Radio button per ogni scelta da compiere.
 
               ### Attenzione a
               - Non usare il componente se l'utente deve compiere scelte multiple. 
+              - Fare attenzione che il componente comprende solo l'impostazione visiva: devi implementare la corretta semantica accessibile per ogni gruppo di Radio button, segui i pattern aria consigliati dal W3C per quanto riguarda intestazioni, etichette aria, 'role' o uso di 'fieldset'.
 
               ### Buone pratiche sui contenuti
-              - Fai precedere al gruppo di Radio button un titolo e una eventuale descrizione che inquadri la scelta richiesta e le sue implicazioni.
+              - Identifica ogni gruppo di Radio button con un titolo e una eventuale descrizione che inquadri la scelta richiesta e le sue implicazioni.
               - Scrivi etichette chiare e brevi per consentire agli utenti di comprendere le opzioni a disposizione.
               - Non troncare le etichette per le opzioni con i puntini di sospensione.
               - Puoi usare un testo aggiuntivo per aggiungere contesto alle opzioni di scelta.
