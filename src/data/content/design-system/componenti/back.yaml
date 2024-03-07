@@ -8,7 +8,8 @@ metadata:
 
 seo:
   name: Back - Designers Italia
-  description: "Consente agli utenti di avere un link o pulsante con un’azione equivalente al “torna indietro” del browser."
+  description: "Consente agli utenti di avere un link o pulsante per tornare alla pagina precedente di un processo o di un modulo, equivalente in molti casi al “torna indietro” del browser."
+  image: null
   canonical: null
   pathname: /design-system/componenti/back/
 
@@ -21,7 +22,7 @@ components:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: "Consente agli utenti di avere un link o pulsante con un’azione equivalente al “torna indietro” del browser"
+    subtitle: "Consente agli utenti di avere un link o pulsante con un’azione per tornare alla pagina precedente ad esempio di un processo o di un modulo, equivalente in molti casi al “torna indietro” del browser"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -65,7 +66,12 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente Back guida l'utente a tornare alla pagina precedente da cui si proviene, utile nel caso di processi e moduli da compilare a più step, come può essere la compilazione di un questionario. 
+              
+              Può essere molto utile ad orientarsi nel contesto di un modulo ([Form](/design-system/componenti/form/)) composto da diversi step. 
+
+              ### Alternative a questo componente
+              - **[Breacrumb](/design-system/componenti/breadcrumb/)**: per orientarsi nella navigazione di pagine di contenuti informativi.
 
       - full: true
         noSpace: true
@@ -76,7 +82,21 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Mostra il componente a inizio dei contenuti della scheda, o nelle vicinanze delle azioni di navigazione, salvataggio e invio del processo o modulo. 
+
+              ### Attenzione a
+              - Assicurarsi che il link porti l'utente alla pagina precedente, nell'ultimo stato in cui la stava navigando e lasciando i campi precompilati laddove presenti.   
+              - Cercare di sviluppare siti web, processi e moduli in cui la funzionalità "torna indietro" del browser abbia il funzionamento aspettato dall'utente, lo stesso previsto dal componente.
+              - Usare il componente Back nel caso di un processo per accedere a un servizio: l'utente potrebbe essere infatti intimorito dall'usare la funzionalità "torna indietro" nativa del browser per non perdere i contenuti inseriti.  
+              - Verificare il funzionamento del componente nel caso di architetture e navigazioni complesse e legate a scelte condizionali.
+              - Usare di default la variante Link di navigazione (implementata con il corretto tag semantico `<a>`), e scegliere di usare le varianti pulsante (implementate con il tag semantico `<button>`) solo per azioni che agiscono in pagina, ad esempio per ripristinare lo stato precedente di contenuti dinamici presentati all'utente.     
+             
+
+              ### Buone pratiche sui contenuti
+              - Se implementi un funzionamento non standard verifica che le etichette di default "Torna indietro" e "Torna al livello superiore" indichino correttamente l'azione svolta.
+              - Valuta di usare un'etichetta più specifica "Torna alla pagina [titolo della pagina]" nel caso di percorsi complessi. 
+              - Puoi usare la semplice etichetta "Precedente", senza verbo azione, solo nel caso che la pagina di atterraggio sia dello stesso tipo della presente: ad esempio per le domande progressive di un questionario.
+
 
       - full: true
         noSpace: true
@@ -113,8 +133,14 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il Back](/images/design-system/componenti/back-anatomy.png)
 
+              Il componente Back è una declinazione del componente [Buttons](/design-system/componenti/buttons/) composta da:
+
+              1. **icona**: può essere una freccia verso sinistra per indicare l'azione di navigare alla pagina precedente, la stessa azione compiuta dal Back del browser; o può essere una freccia verso l'alto a indicare la navigazione ad un livello gerarchico superiore; 
+              2. **etichetta** (label): opzionale, rende esplicita l'azione; 
+              3. **forma di sfondo**: presente nel caso delle varianti pulsante. 
+              
       - full: true
         noSpace: true
         paddingLeft: true
@@ -124,8 +150,9 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Il componente eredita gli stati interattivi da [Buttons](/design-system/componenti/buttons/).
 
+              All'attivazione da parte dell'utente la navigazione torna alla pagina o allo step di compilazione del modulo precedente, mantenendo gli stati e i campi precompilati laddove presenti. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -135,7 +162,7 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Il componente eredita le specifiche da [Buttons](/design-system/componenti/buttons/).
 
 
       - full: true
