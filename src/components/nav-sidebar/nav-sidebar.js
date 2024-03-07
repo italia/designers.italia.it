@@ -13,7 +13,6 @@ function NavSidebar({
   id,
   title,
   subTitle,
-  // url,
   img,
   alt,
   tag,
