@@ -1,0 +1,210 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/menu-di-navigazione/torna-su.json
+  template:
+    name: design-system-component
+
+seo:
+  name: Back to top - Designers Italia
+  description: "Un pulsante che consente agli utenti di scorrere facilmente all'inizio della pagina, particolarmente indicato su pagine di contenuto lunghe e su dispositivi mobile."
+  image: null
+  canonical: null
+  pathname: /design-system/componenti/back-to-top/
+
+components:
+  hero:
+    specialKangarooComponent: true
+    background: null
+    title: Back to top
+    tag:
+      label: Componenti #C
+      addonClasses: mt-3 text-uppercase
+    column: true
+    subtitle: "Un pulsante che consente agli utenti di scorrere facilmente all'inizio della pagina, particolarmente indicato su pagine di contenuto lunghe e su dispositivi mobile"
+    # img: /images/400x300.png #I
+    # alt: "" #C
+    imgRatio: 1x1
+    noBorder: true
+
+    # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      tagsDesignSystemLabel: Utile per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tagsDesignSystem: [Navigazione]
+
+  tab:
+    - full: true
+
+tabs:
+
+  - title: Uso e accessibilità
+
+    componentVariant:
+      id: "preview-use"
+      title: "Anteprima"
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/torna-su/
+      accordionOpen: false
+      accordionShow: false
+
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Quando usarlo
+            headingLevel: 2
+            text: |
+              Il componente Back to top migliora l'esperienza degli utenti nel caso di pagine molto lunghe e su dispositivi mobili, agevolando la navigazione dei contenuti. 
+              
+              Il Back to top è un pulsante che appare su pagine lunghe e fornisce una scorciatoia per tornare ad inizio pagina, per facilitare ad esempio l'accesso ad [Header](/design-system/componenti/header/) e menu di navigazione, al percorso corrente nei [Breadcrumbs](/design-system/componenti/breadcrumbs/), ad eventuali filtri o cambio modo di ordinamento di una lunga lista, alla modifica o inserimento di query in un campo di ricerca durante l'esplorazione dei risultati.  
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Come usarlo
+            headingLevel: 2
+            text: |
+              - Usa il componente su pagine lunghe.
+
+              ### Attenzione a
+              - Non mostrare il componente su pagine che non necessitano scorrimento. 
+              - Verificare sempre il suo comportamento nel contesto del progetto su diversi browser e dispositivi, durante l'utilizzo di tecnologie assistive e navigando da tastiera. 
+              - Mostrare il componente con cautela, verificandone l'usabilità con utenti, su pagine con contenuti dinamici e moduli, che potrebbero cambiare durante la navigazione di pagina. 
+              - Sovrapporre con cautela il componente ad altri elementi o componenti con comportamento [Sticky](/design-system/componenti/sticky/), specialmente se nella stessa posizione in basso a destra della viewport.
+              - Non lasciare il compito svolto dal Back to top alle sole funzionalità native di alcuni browser e dispositivi: non c'è uno standard condiviso e probabilmente la maggior parte di queste tecniche sono nascoste o ignorate dagli utenti.
+              - Comunicare se possibile la comparsa del componente e la sua funzione alle tecnologie assistive come i lettori di schermo.
+
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Accessibilità
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        id: ComponentStatus
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Stato del componente
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+  - title: Progettazione
+    sectionsEditorial:
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Anatomia
+            headingLevel: 2
+            text: |
+              ![Gli elementi che compongono il Back to top](/images/design-system/componenti/back-to-top-anatomy.png)
+
+              Il componente Back to top è composto da:
+              1. **forma di sfondo**: colore `primary` su fondi chiari, bianco su fondi scuri;
+              2. **icona freccia**: indica l'azione di scorrimento verso l'alto;
+              3. **ombra** (opzionale): utile per distinguere il Back to top dai contenuti della pagina.  
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Comportamento
+            headingLevel: 2
+            text: |
+              - Il componente Back to top appare allo scorrere della pagina;
+              - appare in posizione `fixed` nell'angolo in basso a destra della viewport, in sovrimpressione sui contenuti di pagina;
+              - al click/touch o attivazione da tastiera riporta l'utente all'inizio della pagina. 
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
+            text: |
+              *In stesura*
+
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per designer #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-designer/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
+  - title: Sviluppo
+
+    componentVariant:
+      id: "preview-dev"
+      title: "Anteprima"
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/torna-su/
+      accordionOpen: true
+      accordionShow: true
+
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            ctas:
+            - label: Vai alla scheda per sviluppatori #C
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+              url: "/design-system/come-iniziare/per-sviluppatori/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
