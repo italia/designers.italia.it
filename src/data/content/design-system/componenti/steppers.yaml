@@ -16,7 +16,7 @@ components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Stepper
+    title: Steppers
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
@@ -85,7 +85,7 @@ tabs:
 
               ### Attenzione a
               - Non usare il component per moduli con logica condizionale, dove il numero dei passaggi potrebbe dipendere dai dati inseriti dall’utente.
-              - Non usare lo stepper in caso di un progresso non lineare, dove il completamento dei passaggi non segue un ordine specifico.
+              - Non usare Steppers in caso di un progresso non lineare, dove il completamento dei passaggi non segue un ordine specifico.
               - Testare l'efficacia con utenti, curando in particolare eventuali microtesti di errore o indicazione rispetto alle call to action di avanzamento o salto tra passaggi.  
               - Strutturare correttamente i contenuti delle schede di contenuto, testandone la fruibilità su diversi dispositivi, navigando da tastiera e con strumenti assistivi come i lettori di schermo.
 
@@ -123,7 +123,7 @@ tabs:
               - text: Link
             rows:
               - cols:
-                - text: UI Kit (design)
+                - text: UI Kit Italia (design)
                   scope: row
                 - tag:
                     label: Pronto
@@ -132,7 +132,7 @@ tabs:
                     label: Kit
                     url: https://www.figma.com/community/file/1105848677422572920
                     blank: true
-                    screenReaderText: " nel kit UI Figma (si apre in una nuova finestra)"
+                    screenReaderText: "UI Kit Italia su Figma (si apre in una nuova finestra)"
                     icon:
                       icon: sprites.svg#it-figma
                       size: sm
@@ -156,9 +156,9 @@ tabs:
                   scope: row
                 - tag:
                     label: Pronto
-                    addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
                 - simpleCta :
-                    label: Scheda storybook
+                    label: Scheda Storybook
                     url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-steppers--page
                     blank: true
                     screenReaderText: " (si apre in una nuova finestra)"
@@ -209,7 +209,7 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              Gli elementi che compongono tutte le parti del componente stepper:
+              Gli elementi che compongono tutte le parti del componente Steppers:
 
               ### Step singolo
 
