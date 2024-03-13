@@ -222,12 +222,6 @@ export const query = graphql`
           centered
           column
           specialKangarooComponent
-          titleTag {
-            label
-            # url
-            addonClasses
-            screenReaderText
-          }
           noBorder
           iconImgAlt
         }
@@ -613,6 +607,7 @@ export const query = graphql`
                 }
               }
             }
+            ctasVertical
             ctas {
               label
               url

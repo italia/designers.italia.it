@@ -20,7 +20,6 @@ function Hero({
   tag,
   background,
   title,
-  titleTag,
   headingLevel,
   subtitle,
   pretext,
@@ -118,7 +117,6 @@ function Hero({
                     <div className={textStyle}>
                       <div className="d-flex align-items-start flex-wrap">
                         <HLevel className="title">{title}</HLevel>
-                        {titleTag && <Tag {...titleTag} />}
                       </div>
                       <SubtitleLevel className="subtitle fw-normal fs-10">
                         {subtitle}
