@@ -80,12 +80,27 @@ components:
     subtitle: Storie da copertina che ti guidano alle ultime attività
     isHome: true
   highLights:
+    - title: "Design system .italia beta"
+      subtitle: "La terza generazione del design system ha un nome e arriva alla versione beta"
+      big: true
+      id: HL1a
+      specular: false
+      padBottom: false # last highlight must have padBottom: true!
+      img: /images/community/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta-1920x923.png
+      alt: ""
+      headingLevel: 3
+      background: light
+      buttons:
+        - label: "Scopri le novità"
+          btnStyle: primary
+          url: "/community/notizie/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta/"
+          addonStyle: mb-3
     - title: "Modello di sito web delle aziende sanitarie locali"
       subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
       big: true
       id: HL2a
-      specular: false
-      padBottom: false # last highlight must have padBottom: true!
+      specular: true
+      padBottom: true # last highlight must have padBottom: true!
       img: /images/community/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali-1920x923.png
       alt: ""
       headingLevel: 3
@@ -93,22 +108,7 @@ components:
       buttons:
         - label: "Scopri come utilizzarlo"
           btnStyle: primary
-          url: "/community/notizie/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali"
-          addonStyle: mb-3
-    - title: "Collabora al design system del Paese"
-      subtitle: "Leggi tutte le novità per contribuire alla realizzazione della documentazione e delle risorse"
-      big: true
-      id: HL2b
-      specular: true
-      padBottom: true # last highlight must have padBottom: true!
-      img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1920x923.png
-      alt: ""
-      headingLevel: 3
-      background: medium
-      buttons:
-        - label: "Scopri come collaborare"
-          btnStyle: primary
-          url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese"
+          url: "/community/notizie/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali/"
           addonStyle: mb-3
 
   highlightCards:
@@ -138,8 +138,8 @@ components:
       #   btnStyle: primary
       #   label: Esplora/Scopri il titolo
       #   url: "modelli/"
-    - title: "Design system" #C
-      img: /images/design-system/fondamenti.jpg
+    - title: "Design system .italia" #C
+      img: /images/design-system/ds-beta-naming.png
       alt: ""
       text: |
         Costruisci l'interfaccia di un servizio pubblico grazie a componenti già validati e linee guida di progettazione. Scopri come usarlo.
