@@ -157,7 +157,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri le attività del kit #C
+          label: Scopri le risorse del kit #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -198,11 +198,11 @@ components:
             L’insegnamento del design per il settore pubblico può essere rilevante per numerosi ambiti accademici: focalizzarsi su un brief progettuale fornisce agli studenti un contesto di vita reale all’interno del quale operare e può  aiutarli a nella creazione di elaborati utili ad arricchire il loro portfolio, ma anche interessanti per le istituzioni.
           ctas:
           - label: "Scopri di più sul progetto e sfoglia l’Atlante" #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://designers.italia.it/community/notizie/20220325-atlante-della-trasformazione-digitale/ #M
-            blank: true #M #C true if new tab for external links
+            # screenReaderText: " (si apre in una nuova finestra)" #C
+            url: "/community/notizie/20220325-atlante-della-trasformazione-digitale/" #M
+            blank: false #M #C true if new tab for external links
             icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
