@@ -21,7 +21,7 @@ import skipLinksData from "../data/skiplinks.yaml";
 
 import Highlight from "../components/highlight/highlight";
 import SearchMain from "../components/search-main/search-main";
-import ContentCollapse from "../components/content-collapse/contentCollapse";
+import ContentCollapse from "../components/content-collapse/content-collapse";
 import SectionIntro from "../components/section-intro/section-intro";
 import HighlightCards from "../components/highlight-cards/highlight-cards";
 import Testimonials from "../components/testimonials/testimonials";
