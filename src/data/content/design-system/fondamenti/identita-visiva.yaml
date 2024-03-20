@@ -1,0 +1,224 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+  redirect_from:
+    - /sistema-di-identita
+    - /identita-visiva
+    - /identita-coordinata
+    - /identita
+    - /nation-brand
+    - /design-system/identita
+    - /design-system/brand-it
+    - /design-system/brand
+    - /design-system/marca-it
+    - /design-system/marca
+    - /design-system/sistema-di-identita
+    - /design-system/identita-visiva
+    - /design-system/identita-coordinata
+    - /design-system/fondamenti/identita
+    - /design-system/fondamenti/identita-coordinata
+    - /design-system/fondamenti/identita
+
+seo:
+  name: Identità
+  description: "Armonizzare, coordinare e promuovere un sistema di identità, visiva e non solo, che riguarda i punti di contatto digitali della Pubblica Amministrazione ha lo scopo di rendere migliore l’esperienza delle persone su siti e servizi, di rendere prodotti istituzionali facilmente identificabili e di aumentare la fiducia nei servizi digitali pubblici attraverso la loro riconoscibilità."
+  # image: https://designers.italia.it/images/design-system/ds-beta-naming.png
+  canonical: null
+  pathname: /design-system/fondamenti/identita-visiva/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Accessibilità
+    column: true
+    subtitle: "Armonizzare, coordinare e promuovere un sistema di identità, visiva e non solo, che riguarda i punti di contatto digitali della Pubblica Amministrazione ha lo scopo di rendere migliore l’esperienza delle persone su siti e servizi, di rendere prodotti istituzionali facilmente identificabili e di aumentare la fiducia nei servizi digitali pubblici attraverso la loro riconoscibilità"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Responsabile progetto, Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia,Sviluppo interfaccia]
+
+  sectionsEditorial:
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Un'esperienza coerente per i servizi pubblici italiani
+      text: Per un sistema di identità, visiva e non solo, dell'Italia digitale
+      background: null
+      components:
+        - name: TextImageCta
+          # title: Come costruiamo i "numeri versione"
+          noSpace: false
+          text: |
+            La **semplicità d’uso** è il primo elemento distintivo dell’esperienza che i servizi digitali pubblici di qualità devono proiettare verso le persone. 
+            
+            Nel contesto di prototipazione e realizzazione di interfacce digitali, questa semplicità ha tre dimensioni fondamentali: 
+
+            1. **Accessibilità** 
+
+            2. **Riconoscibilità e coerenza visiva** 
+
+            3. **Funzionalità minime e coerenza funzionale** 
+             
+            Per l’[accessibilità](/design-system/fondamenti/accessibilita/), è disponibile un fondamento dedicato dove approfondire l'approccio e gli strumenti. 
+
+            Gli altri due elementi di coerenza, che costituiscono il sistema di identità dei servizi pubblici italiani, sono descritti di seguito. 
+          ctas:
+          - label: "Vai al fondamento Accessibilità" #C
+            url: "/design-system/fondamenti/accessibilita/" #M
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Riconoscibilità e coerenza d'uso
+          noSpace: false
+          text: |
+            È essenziale che le persone possano riconoscere immediatamente di essere all'interno di un servizio digitale pubblico a cura della Pubblica Amministrazione italiana. Inoltre, dovrebbero essere messe in grado di navigare attraverso vari servizi senza dover imparare a gestire pattern di utilizzo diversi per ogni Ente o tipologia di servizio.
+
+            #### Contesto normativo
+            Le **[Linee guida di design per i siti internet e i servizi digitali della PA](/norme-e-riferimenti/linee-guida-di-design)**, emanate ai sensi del CAD ex. Art. 53-1ter, indicano nel [requisito 4.5](/norme-e-riferimenti/linee-guida-di-design/requisito-4-5/) che: 
+
+            - SI DEVONO utilizzare, ove disponibili, **modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali**; 
+
+            - SI DEVONO realizzare, nell’ambito dello stesso sito internet o servizio digitale, **interfacce coerenti nello stile e nell’esperienza d’uso, privilegiando le indicazioni e gli strumenti previsti su https://designers.italia.it**; 
+
+            Queste due azioni, che nascono con la finalità di descrivere come mettere a disposizione interfacce semplici da utilizzare per i servizi pubblici italiani, ne orientano nello stile e nell'esperienza d'uso anche il **sistema di identità**, visiva e non solo.
+
+            #### Indicazioni 
+
+            ##### Se realizzi servizi digitali **a scala nazionale**:
+            - ospitali su **domini chiaramente istituzionali**, come `gov.it` o `italia.it`, e loro sottodomini; 
+            - usa il **componente [Header](/design-system/componenti/header/)** e il **componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
+            - usa per il **carattere tipografico (font) principale il Titillium**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento **[Tipografia](/design-system/fondamenti/tipografia/);
+            - usa il **colore primario Blu Italia `#0066cc`**, in modo coerente e con le accortezze descritte nel fondamento [Colore](/design-system/fondamenti/colore/).
+
+            ##### Se realizzi servizi digitali **a scala territoriale**:
+            - verifica l'esistenza di un **modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
+            - ospitali su **domini chiaramente istituzionali**, o loro sottodomini (ad esempio `regione.nomeregione.it`);
+            - usa e personalizza il **componente [Header](/design-system/componenti/header/)** e il **componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
+            - usa per il **carattere tipografico (font) principale il Titillium**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento **[Tipografia](/design-system/fondamenti/tipografia/);
+            - **scegli un colore primario**, come descritto nel fondamento [Colore](/design-system/fondamenti/colore/), e **usalo in modo coerente in tutto il servizio**. 
+
+            ##### Se realizzi servizi digitali **a scala locale**:
+            - verifica l'esistenza di un **modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
+            - ospitali su **domini chiaramente istituzionali**, o loro sottodomini (ad esempio quelli descritti nell'[elenco di domini riservati per i comuni](https://raw.githubusercontent.com/italia/pa-website-validator/main/src/storage/municipality/allowedDomains.ts) e `.edu` per gli istituti scolastici);
+            - usa e personalizza il **componente [Header](/design-system/componenti/header/)** e il **componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
+            - usa per il **carattere tipografico (font) principale il Titillium**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento **[Tipografia](/design-system/fondamenti/tipografia/);
+            - **scegli un colore primario**, come descritto nel fondamento [Colore](/design-system/fondamenti/colore/), e **usalo in modo coerente in tutto il servizio**. 
+
+            ##### Per essere coerenti ma non uniformi
+            Per perseguire un'esperienza coerente per i servizi digitali del Paese, e allo stesso tempo garantire una sufficiente differenziazione ad evitare l'uniformità, è possibile agire su: 
+
+            - ri-elaborazioni e integrazioni dell'aspetto visivo usando i **colori secondari** (applicabili ad esempio a sfondi, icone, elementi con un peso specifico secondario); 
+            - uso di **media**, **illustrazioni e motivi grafici**;
+            - uso di **animazioni** e **micro-animazioni**;
+            - **generazione dinamica di sistemi coordinati di più identità visive** (ad esempio per servizi declinabili su più Regioni, integrando per ognuna elementi della propria identità visiva). 
+
+            Nel farlo, è necessario in ogni caso **garantire il rispetto delle Linee guida sull’accessibilità**, e le azioni descritte nel requisito **[4.3. Semplicità di consultazione ed esperienza d’uso](/norme-e-riferimenti/linee-guida-di-design/requisito-4-3/)** delle **Linee guida di design per i siti internet e i servizi digitali della PA**.  
+
+            Inoltre, variazioni e migliorie di questo tipo **dovrebbero essere messe a disposizione e riuso della collettività** secondo quanto descritto nel [modello di contribuzione](/design-system/come-contribuire/modello-di-contribuzione/). 
+
+        - name: TextImageCta
+          title: Funzionalità minime e coerenza funzionale
+          noSpace: false
+          text: |
+            Le persone devono poter accedere a quelle funzionalità minime che costituiscono la base di una esperienza utente digitale solida per il pubblico servizio, indipendentemente dal contesto. 
+
+            #### Contesto normativo 
+
+            Gli obiettivi misurati dall’**indice europeo DESI per la Decade Digitale**, in particolare per l’indicatore [“Digitalisation of public services”](#xxx), rilevano lo stato di salute dei servizi digitali dell’Unione Europea. 
+          
+            Questi indicatori tracciano **la presenza di una serie di funzionalità minime**, necessarie a **garantire la tutela dei diritti digitali delle persone** in relazione ai servizi pubblici. Sebbene queste funzionalità dovrebbero emergere come requisito molto a monte nel processo di progettazione, è opportuno verificare durante la fase di realizzazione delle interfacce la loro presenza e corretta implementazione. 
+
+            #### Indicazioni 
+
+            Assicurati durante la realizzazione delle interfacce che il servizio sia progettato e realizzato per:  
+
+            - **popolare campi precompilati** con le informazioni già in possesso della Pubblica Amministrazione, o quantomeno quelle già inserite sul servizio digitale stesso; 
+            - **indicare chiaramente i passi necessari al completamento** della presentazione dell’istanza stessa e l’ottenimento del beneficio atteso, in ogni momento della fruizione dello specifico servizio digitale e fino alla risposta della pubblica amministrazione all’istanza; 
+            - **esplicitare la data di presa in carico e la data ultima prevista** per l’evasione dell’istanza; 
+            - **consentire di salvare in bozza** quanto già compilato, per riprendere in seguito; 
+            - **consente di richiedere assistenza** durante l’utilizzo; 
+            - **consentire di segnalare un disservizio** durante l’uso del servizio digitale, documentandolo; 
+            - **consente di fornire una valutazione**, recensione o feedback del servizio stesso.
