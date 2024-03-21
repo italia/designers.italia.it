@@ -108,18 +108,18 @@ components:
       tags: [Progettazione interfaccia,Sviluppo interfaccia]
 
   sectionsEditorial:
-    # - fullColumn: true
-    #   noSpace: true
-    #   components:
-    #     - name: ImgFull
-    #       img: /images/image-icons-fullwidth.jpg
-    #       alt: Descrizione immagine grande
+    - fullColumn: true
+      noSpace: true
+      components:
+        - name: ImgFull
+          img: /images/image-icons-fullwidth.jpg
+          alt: Descrizione immagine grande
 
     - full: true
-      noSpace: false
+      noSpace: true
       paddingLeft: true
       title: Un'esperienza coerente per i servizi pubblici italiani
-      text: Per un sistema di identità, visiva e non solo, dell'Italia digitale
+      text: Un sistema di identità aperta, visiva e non solo, per le sfide dell'Italia digitale
       background: null
       components:
         - name: TextImageCta
@@ -136,9 +136,9 @@ components:
 
             3. **Funzionalità minime e coerenza funzionale** 
              
-            Per l’[accessibilità](/design-system/fondamenti/accessibilita/), è disponibile un fondamento dedicato dove approfondire l'approccio e gli strumenti. 
+            Per l’[accessibilità](/design-system/fondamenti/accessibilita/), è disponibile un fondamento dedicato dove approfondire norme, approccio e strumenti. 
 
-            Gli altri due elementi di coerenza, che costituiscono il sistema di identità dei servizi pubblici italiani, sono descritti di seguito. 
+            Gli altri due elementi di coerenza, che costituiscono il fulcro del sistema di identità dell'esperienza dei servizi pubblici italiani, sono descritti di seguito. 
           ctas:
           - label: "Vai al fondamento Accessibilità" #C
             url: "/design-system/fondamenti/accessibilita/" #M
@@ -152,7 +152,7 @@ components:
 
         - name: TextImageCta
           title: Riconoscibilità e coerenza d'uso
-          noSpace: false
+          noSpace: true
           text: |
             È essenziale che le persone possano riconoscere immediatamente di essere all'interno di un servizio digitale pubblico a cura della Pubblica Amministrazione italiana. Inoltre, dovrebbero essere messe in grado di navigare attraverso vari servizi senza dover imparare a gestire pattern di utilizzo diversi per ogni Ente o tipologia di servizio.
 
@@ -168,12 +168,14 @@ components:
             #### Indicazioni 
 
             ##### Se realizzi servizi digitali **a scala nazionale**:
+            ![](/images/image-icons-fullwidth.jpg)
             - ospitali su **domini chiaramente istituzionali**, come `gov.it` o `italia.it`, e loro sottodomini; 
             - usa il **componente [Header](/design-system/componenti/header/)** e il **componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
             - usa per il **carattere tipografico (font) principale il Titillium**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento **[Tipografia](/design-system/fondamenti/tipografia/);
             - usa il **colore primario Blu Italia `#0066cc`**, in modo coerente e con le accortezze descritte nel fondamento [Colore](/design-system/fondamenti/colore/).
 
             ##### Se realizzi servizi digitali **a scala territoriale**:
+            ![](/images/image-icons-fullwidth.jpg)
             - verifica l'esistenza di un **modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
             - ospitali su **domini chiaramente istituzionali**, o loro sottodomini (ad esempio `regione.nomeregione.it`);
             - usa e personalizza il **componente [Header](/design-system/componenti/header/)** e il **componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
@@ -181,6 +183,7 @@ components:
             - **scegli un colore primario**, come descritto nel fondamento [Colore](/design-system/fondamenti/colore/), e **usalo in modo coerente in tutto il servizio**. 
 
             ##### Se realizzi servizi digitali **a scala locale**:
+            ![](/images/image-icons-fullwidth.jpg)
             - verifica l'esistenza di un **modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
             - ospitali su **domini chiaramente istituzionali**, o loro sottodomini (ad esempio quelli descritti nell'[elenco di domini riservati per i comuni](https://raw.githubusercontent.com/italia/pa-website-validator/main/src/storage/municipality/allowedDomains.ts) e `.edu` per gli istituti scolastici);
             - usa e personalizza il **componente [Header](/design-system/componenti/header/)** e il **componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
