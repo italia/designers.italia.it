@@ -88,22 +88,50 @@ components:
       id: intro
       components:
         - name: TextImageCta
+          noSpace: true
           text: |
             **L’Atlante della trasformazione digitale della PA** è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’**Università IUAV** di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
 
             In tredici capitoli, l’Atlante mappa **archetipi collettivi**, come comunità e organizzazioni, il loro **contesto**, e gli **aspetti organizzativi e procedurali** rintracciando i pattern ricorrenti.
-          ctas:
-            - label: Scarica l'atlante (PDF, 80 MB)
-              url: /files/resources/atlante/atlante-della-trasformazione-digitale-della-PA.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+          # ctas:
+          #   - label: Scarica l'atlante (PDF, 80 MB)
+          #     url: /files/resources/atlante/atlante-della-trasformazione-digitale-della-PA.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
 
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube-nocookie.com/watch?v=lVWXdxhzA1k
+          poster: /images/community/atlante/atlante-della-trasformazione-digitale-della-PA-video-thumb.jpg
+          # subtitles: /files/community/subtitles/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl.vtt
+          trascription: |
+            _[Musica]_
+
+            IUAV e Designers Italia
+
+            ### Un Atlante per la PA
+
+            - 60 studenti all'opera per dimostrare il valore del design nell'ambito della trasformazione digitale
+            - 13 progetti per mappare 13 ecosistemi
+
+            _[Le immagini che scorrono con i testi sono le stesse presenti in questa pagina web.]_ 
+
+    - noSpace: false 
+      centered: true
+      components:
         - name: TextImageCta
           title: Gli obiettivi
           headingLevel: 2
@@ -201,238 +229,248 @@ components:
       components:
         - name: TextImageCta
           title: Anagrafe. Percorsi e prospetti futuri
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_11.jpg"
-          specular: true
-          alt: ""
           text: |
             Una mappatura degli attori e dell’ecosistema dei servizi anagrafici da parte dei cittadini nelle fasi principali della loro vita, i Life event.
+
+            ![Doppia pagina dal capitolo Anagrafe](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_11.jpg)
           ctas:
-            - label: Scarica il capitolo Anagrafe (PDF, 2.5 MB)
-              url: /files/resources/atlante/anagrafe.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+            # - label: Scarica il capitolo Anagrafe (PDF, 2.5 MB)
+            #   url: /files/resources/atlante/anagrafe.pdf
+            #   blank: false
+            #   icon:
+            #     icon: sprites.svg#it-file-pdf-ext
+            #     color: primary
+            #     align: middle
+            #     hidden: true
+            #     size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: Fragilmente. L’instabile realtà dei servizi socio-assistenziali
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_12.jpg"
-          specular: true
-          alt: ""
           text: |
             Una rappresentazione multisfaccettata del tema della fragilità, che esplora lo spettro di condizioni di disagio fisico, economico e sociale delle persone che interagiscono con la PA.
-          ctas:
-            - label: Scarica il capitolo Fragilmente (PDF, 3.2 MB)
-              url: /files/resources/atlante/fragilmente.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
-              # screenReaderText: " (si apre in una nuova finestra)" #C
+
+            ![Doppia pagina dal capitolo Fragilmente](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_12.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo Fragilmente (PDF, 3.2 MB)
+          #     url: /files/resources/atlante/fragilmente.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
+          #     # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: Che impresa! Attività Produttive
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_13.jpg"
-          specular: true
-          alt: ""
           text: |
             Una narrazione leggera e solida del percorso che ogni impresa deve affrontare quando incontra la Pubblica Amministrazione, tra pratiche e oneri amministrativi.
-          ctas:
-            - label: Scarica il capitolo Che impresa (PDF, 0.3 MB)
-              url: /files/resources/atlante/che-impresa.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo Che impresa](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_13.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo Che impresa (PDF, 0.3 MB)
+          #     url: /files/resources/atlante/che-impresa.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "Prossima fermata: mobilità integrata"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_14.jpg"
-          specular: true
-          alt: ""
           text: |
             Lo stato attuale del trasporto pubblico in Italia, fra attori e touchpoint digitali, a confronto con un ideale di trasporto pubblico integrato più sostenibile.
-          ctas:
-            - label: Scarica il capitolo Prossima fermata (PDF, 2.6 MB)
-              url: /files/resources/atlante/prossima-fermata.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo Prossima fermata](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_14.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo Prossima fermata (PDF, 2.6 MB)
+          #     url: /files/resources/atlante/prossima-fermata.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "La giusta via di mezzo: servizi di sharing"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_15.jpg"
-          specular: true
-          alt: ""
           text: |
             La situazione attuale e l’evoluzione della mobilità condivisa in Italia, con un focus su Roma, fra problemi, numeri e i cambiamenti portati dalla pandemia.
-          ctas:
-            - label: Scarica il capitolo La giusta via di mezzo (PDF, 0.8 MB)
-              url: /files/resources/atlante/la-giusta-via-di-mezzo.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo La giusta via di mezzo](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_15.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo La giusta via di mezzo (PDF, 0.8 MB)
+          #     url: /files/resources/atlante/la-giusta-via-di-mezzo.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "Prevenire è meglio che curare: però in digitale"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_16.jpg"
-          specular: true
-          alt: ""
           text: |
             Una panoramica sulle tre attività che caratterizzano la prevenzione nell’ambito sanitario e ambientale: il monitoraggio, l’informazione e l’azione.
-          ctas:
-            - label: Scarica il capitolo Prevenire (PDF, 12 MB)
-              url: /files/resources/atlante/prevenire-e-meglio-che-curare-pero-in-digitale.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo Prevenire](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_16.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo Prevenire (PDF, 12 MB)
+          #     url: /files/resources/atlante/prevenire-e-meglio-che-curare-pero-in-digitale.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "La cura"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_17.jpg"
-          specular: true
-          alt: ""
           text: |
             Un’analisi del fitto reticolo di strutture e servizi che garantiscono un accesso equo all’erogazione delle prestazioni sanitarie a tutti i cittadini, in attuazione dell’art. 32 della Costituzione.
-          ctas:
-            - label: Scarica il capitolo La cura (PDF, 0.4 MB)
-              url: /files/resources/atlante/la-cura.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo La cura](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_17.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo La cura (PDF, 0.4 MB)
+          #     url: /files/resources/atlante/la-cura.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "I nodi dell’assistenza socio-sanitaria"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_18.jpg"
-          specular: true
-          alt: ""
           text: |
             Un viaggio fra le esigenze e le problematiche molto diversificate di questo ambito, che riguardano utenti dai profili molto distanti tra loro, dai minori agli anziani non più autosufficienti.
-          ctas:
-            - label: Scarica il capitolo I nodi (PDF, 8.1 MB)
-              url: static/files/resources/atlante/i-nodi-dell-assistenza-socio-sanitaria.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo I nodi](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_18.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo I nodi (PDF, 8.1 MB)
+          #     url: static/files/resources/atlante/i-nodi-dell-assistenza-socio-sanitaria.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "La classe non è in classe"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_19.jpg"
-          specular: true
-          alt: ""
           text: |
             Una riflessione sul futuro della scuola e sul ruolo chiave del digitale, analizzando i cambiamenti e la recente spinta che la fruizione della didattica online ha ricevuto negli ultimi anni.
-          ctas:
-            - label: Scarica il capitolo La classe (PDF, 27 MB)
-              url: static/files/resources/atlante/la-classe-non-e-in-classe.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo La classe](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_19.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo La classe (PDF, 27 MB)
+          #     url: static/files/resources/atlante/la-classe-non-e-in-classe.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "Uni versus 2.022"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_20.jpg"
-          specular: true
-          alt: ""
           text: |
             Una narrazione dei massimi sistemi dell’università italiana e della sua trasformazione digitale come sistema complesso, costituito da una miriade di elementi e figure in relazione tra loro.
-          ctas:
-            - label: Scarica il capitolo Uni versus (PDF, 13 MB)
-              url: static/files/resources/atlante/uni-versus-2-022.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo Uni versus](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_20.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo Uni versus (PDF, 13 MB)
+          #     url: static/files/resources/atlante/uni-versus-2-022.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "Il sistema bibliotecario: tra analogico e digitale"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg"
-          specular: true
-          alt: ""
           text: |
             Un approfondimento sulle biblioteche universitarie e di ateneo come pilastro della diffusione della conoscenza e di come la trasformazione digitale può valorizzare il loro patrimonio.
-          ctas:
-            - label: Scarica il capitolo Il sistema bibliotecario (PDF, 2.8 MB)
-              url: static/files/resources/atlante/il-sistema-bibliotecario-universitario.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo Il sistema bibliotecario](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_21.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo Il sistema bibliotecario (PDF, 2.8 MB)
+          #     url: static/files/resources/atlante/il-sistema-bibliotecario-universitario.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "Musei senza pareti"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_22.jpg"
-          specular: true
-          alt: ""
           text: |
             Una storia illustrata dei musei italiani, dello stato dell’arte e del ruolo chiave del digitale per veicolare servizi ai visitatori che siano sempre più utili e coinvolgenti.
-          ctas:
-            - label: Scarica il capitolo Musei (PDF, 1.3 MB)
-              url: static/files/resources/atlante/musei-senza-pareti.pdf
-              blank: false
-              icon:
-                icon: sprites.svg#it-file-pdf-ext
-                color: primary
-                align: middle
-                hidden: true
-                size: sm ms-2
+
+            ![Doppia pagina dal capitolo Musei](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_22.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo Musei (PDF, 1.3 MB)
+          #     url: static/files/resources/atlante/musei-senza-pareti.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
         - name: TextImageCta
           title: "Un gioco impossibile: organizzare eventi"
-          image: "/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_23.jpg"
-          specular: true
-          alt: ""
           text: |
             Una metafora per raccontare l’ambito degli eventi culturali, un contesto sfumato che può essere sintetizzato in GLAM (acronimo di Galleries, Libraries, Archives and Museums).
+
+            ![Doppia pagina dal capitolo Un gioco impossibile](/images/community/atlante/atlante-della-trasformazione-digitale-della-pa_23.jpg)
+          # ctas:
+          #   - label: Scarica il capitolo Un gioco impossibile (PDF, 0.9 MB)
+          #     url: /files/resources/atlante/un-gioco-impossibile.pdf
+          #     blank: false
+          #     icon:
+          #       icon: sprites.svg#it-file-pdf-ext
+          #       color: primary
+          #       align: middle
+          #       hidden: true
+          #       size: sm ms-2
+              # screenReaderText: " (si apre in una nuova finestra)" #C
+        - name: TextImageCta
+
+    - menu: false
+      centered: true
+      id: per-approfondire
+      noSpace: true
+      title: Per approfondire
+      components: 
+        - name: TextImageCta
+          text: |
+            ### L’Atlante della trasformazione digitale della PA
+            Avvicinare il mondo del progetto e la Pubblica Amministrazione.
           ctas:
-            - label: Scarica il capitolo Un gioco impossibile (PDF, 0.9 MB)
-              url: /files/resources/atlante/un-gioco-impossibile.pdf
-              blank: false
+            - label: Leggi l'articolo di Gianni Sinni e Irene Sgarro su Medium 
+              url: https://medium.com/designers-italia/latlante-della-trasformazione-digitale-della-pa-cc1c47960759
+              blank: true
               icon:
-                icon: sprites.svg#it-file-pdf-ext
+                icon: sprites.svg#it-medium
                 color: primary
                 align: middle
                 hidden: true
                 size: sm ms-2
-              # screenReaderText: " (si apre in una nuova finestra)" #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
 
     - menu: false
       centered: true
