@@ -448,14 +448,20 @@ components:
           #       hidden: true
           #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
-
         - name: TextImageCta
-          title: Per approfondire
-          headingLevel: 2
+
+    - menu: false
+      centered: true
+      id: per-approfondire
+      noSpace: true
+      title: Per approfondire
+      components: 
+        - name: TextImageCta
           text: |
-            **L’Atlante della trasformazione digitale della PA**: avvicinare il mondo del progetto e la Pubblica Amministrazione, di Gianni Sinni e Irene Sgarro
+            ### L’Atlante della trasformazione digitale della PA
+            Avvicinare il mondo del progetto e la Pubblica Amministrazione.
           ctas:
-            - label: Leggi l'articolo su Medium 
+            - label: Leggi l'articolo di Gianni Sinni e Irene Sgarro su Medium 
               url: https://medium.com/designers-italia/latlante-della-trasformazione-digitale-della-pa-cc1c47960759
               blank: true
               icon:
