@@ -150,13 +150,17 @@ components:
               size: sm
               addonClasses: ms-2
 
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      title: Riconoscibilità e coerenza d'uso
+      text: È essenziale che le persone possano riconoscere immediatamente di essere all'interno di un servizio digitale pubblico a cura della Pubblica Amministrazione italiana. Inoltre, dovrebbero essere messe in grado di navigare attraverso vari servizi senza dover imparare a gestire pattern di utilizzo diversi per ogni Ente o tipologia di servizio.
+      background: null
+      components:
         - name: TextImageCta
-          title: Riconoscibilità e coerenza d'uso
-          noSpace: true
+          noSpace: false
           text: |
-            È essenziale che le persone possano riconoscere immediatamente di essere all'interno di un servizio digitale pubblico a cura della Pubblica Amministrazione italiana. Inoltre, dovrebbero essere messe in grado di navigare attraverso vari servizi senza dover imparare a gestire pattern di utilizzo diversi per ogni Ente o tipologia di servizio.
-
-            #### Contesto normativo
+            ### Contesto normativo
             Le **[Linee guida di design per i siti internet e i servizi digitali della PA](/norme-e-riferimenti/linee-guida-di-design)**, emanate ai sensi del CAD ex. Art. 53-1ter, indicano nel [requisito 4.5](/norme-e-riferimenti/linee-guida-di-design/requisito-4-5/) che: 
 
             - SI DEVONO utilizzare, ove disponibili, **modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali**; 
@@ -165,16 +169,16 @@ components:
 
             Queste due azioni, che nascono con la finalità di descrivere come mettere a disposizione interfacce semplici da utilizzare per i servizi pubblici italiani, ne orientano nello stile e nell'esperienza d'uso anche il **sistema di identità**, visiva e non solo.
 
-            #### Indicazioni 
+            ### Indicazioni 
 
-            ##### Se realizzi servizi digitali **a scala nazionale**:
+            #### Se realizzi servizi digitali **a scala nazionale**:
             ![](/images/image-icons-fullwidth.jpg)
             - ospitali su **domini chiaramente istituzionali**, come `gov.it` o `italia.it`, e loro sottodomini; 
             - usa il **componente [Header](/design-system/componenti/header/)** e il **componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
             - usa per il **carattere tipografico (font) principale il Titillium**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento **[Tipografia](/design-system/fondamenti/tipografia/);
             - usa il **colore primario Blu Italia `#0066CC`**, in modo coerente e con le accortezze descritte nel fondamento [Colore](/design-system/fondamenti/colore/).
 
-            ##### Se realizzi servizi digitali **a scala territoriale**:
+            #### Se realizzi servizi digitali **a scala territoriale**:
             ![](/images/image-icons-fullwidth.jpg)
             - verifica l'esistenza di un **modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
             - ospitali su **domini chiaramente istituzionali**, o loro sottodomini (ad esempio `regione.nomeregione.it`);
@@ -182,7 +186,7 @@ components:
             - usa per il **carattere tipografico (font) principale il Titillium**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento **[Tipografia](/design-system/fondamenti/tipografia/);
             - **scegli un colore primario**, come descritto nel fondamento [Colore](/design-system/fondamenti/colore/), e **usalo in modo coerente in tutto il servizio**. 
 
-            ##### Se realizzi servizi digitali **a scala locale**:
+            #### Se realizzi servizi digitali **a scala locale**:
             ![](/images/image-icons-fullwidth.jpg)
             - verifica l'esistenza di un **modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
             - ospitali su **domini chiaramente istituzionali**, o loro sottodomini (ad esempio quelli descritti nell'[elenco di domini riservati per i comuni](https://raw.githubusercontent.com/italia/pa-website-validator/main/src/storage/municipality/allowedDomains.ts) e `.edu` per gli istituti scolastici);
@@ -190,7 +194,7 @@ components:
             - usa per il **carattere tipografico (font) principale il Titillium**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento **[Tipografia](/design-system/fondamenti/tipografia/);
             - **scegli un colore primario**, come descritto nel fondamento [Colore](/design-system/fondamenti/colore/), e **usalo in modo coerente in tutto il servizio**. 
 
-            ##### Per essere coerenti ma non uniformi
+            #### Per essere coerenti ma non uniformi
             Per perseguire un'esperienza coerente per i servizi digitali del Paese, e allo stesso tempo garantire una sufficiente differenziazione ad evitare l'uniformità, è possibile agire su: 
 
             - ri-elaborazioni e integrazioni dell'aspetto visivo usando i **colori secondari** (applicabili ad esempio a sfondi, icone, elementi con un peso specifico secondario); 
@@ -202,18 +206,22 @@ components:
 
             Inoltre, variazioni e migliorie di questo tipo **dovrebbero essere messe a disposizione e riuso della collettività** secondo quanto descritto nel [modello di contribuzione](/design-system/come-contribuire/modello-di-contribuzione/). 
 
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      title: Funzionalità minime e coerenza funzionale
+      text: Le persone devono poter accedere a quelle funzionalità minime che costituiscono la base di una esperienza utente digitale solida per il pubblico servizio, indipendentemente dal contesto. 
+      background: null
+      components:
         - name: TextImageCta
-          title: Funzionalità minime e coerenza funzionale
           noSpace: false
           text: |
-            Le persone devono poter accedere a quelle funzionalità minime che costituiscono la base di una esperienza utente digitale solida per il pubblico servizio, indipendentemente dal contesto. 
-
-            #### Contesto normativo 
+            ### Contesto normativo 
             Gli indicatori misurati dall’**indice europeo DESI per la Decade Digitale**, in particolare per la dimensione **[“Digitalisation of public services”](https://digital-decade-desi.digital-strategy.ec.europa.eu/datasets/desi/indicators#desi2023-4)**, rilevano lo stato di salute dei servizi digitali dell’Unione Europea. 
           
             Questi indicatori tracciano **la presenza di una serie di funzionalità minime**, necessarie a **garantire la tutela dei diritti digitali delle persone** in relazione ai servizi pubblici. Sebbene queste funzionalità dovrebbero emergere come requisito molto a monte nel processo di progettazione, è opportuno verificare durante la fase di realizzazione delle interfacce la loro presenza e corretta implementazione. 
 
-            #### Indicazioni 
+            ### Indicazioni 
             Assicurati durante la realizzazione delle interfacce che il servizio sia progettato e realizzato per:  
 
             - **popolare campi precompilati** con le informazioni già in possesso della Pubblica Amministrazione, o quantomeno quelle già inserite sul servizio digitale stesso; 
