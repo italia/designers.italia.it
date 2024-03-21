@@ -88,6 +88,7 @@ components:
       id: intro
       components:
         - name: TextImageCta
+          noSpace: true
           text: |
             **L’Atlante della trasformazione digitale della PA** è una raccolta di infografiche e illustrazioni, realizzate dagli studenti del Laboratorio di Design della Comunicazione 1 dell’**Università IUAV** di Venezia, che facilitano la comprensione del funzionamento degli ecosistemi di servizio pubblico, con particolare focus sul ruolo del digitale, e dell’esperienza dei cittadini nella fruizione dei servizi pubblici. L’Atlante fotografa e mette in connessione la dimensione più razionale dei dati e quella emozionale delle motivazioni che guidano gli attori della PA. Nasce in particolare per i progettisti che si rapportano con il mondo della Pubblica Amministrazione nel contesto del progetto e li aiuta a determinare il campo di azione, orientarsi, studiare una strategia e impostare correttamente il processo per raggiungere i propri obiettivi.
 
@@ -104,6 +105,33 @@ components:
           #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
 
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube-nocookie.com/watch?v=lVWXdxhzA1k
+          poster: /images/community/atlante/atlante-della-trasformazione-digitale-della-PA-video-thumb.jpg
+          # subtitles: /files/community/subtitles/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl.vtt
+          trascription: |
+            _[Musica]_
+
+            IUAV e Designers Italia
+
+            ### Un Atlante per la PA
+
+            - 60 studenti all'opera per dimostrare il valore del design nell'ambito della trasformazione digitale
+            - 13 progetti per mappare 13 ecosistemi
+
+            _[Le immagini che scorrono con i testi sono le stesse presenti in questa pagina web.]_ 
+
+    - noSpace: false 
+      centered: true
+      components:
         - name: TextImageCta
           title: Gli obiettivi
           headingLevel: 2
@@ -420,6 +448,25 @@ components:
           #       hidden: true
           #       size: sm ms-2
               # screenReaderText: " (si apre in una nuova finestra)" #C
+
+        - name: TextImageCta
+          title: Per approfondire
+          text: |
+            **L’Atlante della trasformazione digitale della PA**
+
+            Avvicinare il mondo del progetto e la Pubblica Amministrazione  
+            di Gianni Sinni e Irene Sgarro
+          ctas:
+            - label: Leggi l'articolo su Medium 
+              url: https://medium.com/designers-italia/latlante-della-trasformazione-digitale-della-pa-cc1c47960759
+              blank: false
+              icon:
+                icon: sprites.svg#it-medium
+                color: primary
+                align: middle
+                hidden: true
+                size: sm ms-2
+              screenReaderText: " (si apre in una nuova finestra)" #C
 
     - menu: false
       centered: true
