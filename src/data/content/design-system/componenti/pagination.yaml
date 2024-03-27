@@ -212,8 +212,18 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano la paginazione](/images/design-system/componenti/pagination-anatomy.png)
 
+              Il componente Pagination è composto da:
+              1. **link prima pagina** (opzionale): naviga alla prima pagina di una lista di risultati, utile nel caso di molte pagine;
+              2. **link pagina precedente**: naviga alla pagina precedente, può essere un'icona oppure un'etichetta "Precedente";
+              3. **numero pagina corrente**: è evidenziata ma non prevede è cliccabile; 
+              4. **numero pagina**: è cliccabile;
+              5. **link pagina successiva**: naviga alla pagina successiva, può essere un'icona oppure un'etichetta "Successiva";
+              6. **link ultima pagina** (opzionale): naviga all'ultima pagina di una lista di risultati, utile nel caso di molte pagine;
+
+              La funzionalità "cambia pagina" prevede la possibilità di scegliere il numero di risultati per pagina. Vai alle specifiche del componente [dropdown](/design-system/componenti/dropdown) per capire come è fatto.
+              
       - full: true
         noSpace: true
         paddingLeft: true
@@ -223,7 +233,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              - Quando l'utente clicca su un link, il browser aggiorna la pagina e mostra i contenuti richiesti.
+              - Quando l'utente clicca sul numero di pagina o sul link precedente o successiva, il browser ricarica la pagina.
+              - I link "Precedente" o "Successiva" sono disabilitati quando ci si trova rispettivamente alla prima e ultima pagina.
 
       - full: true
         noSpace: true
@@ -234,8 +245,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
 
+              ![Specifiche di design di pagination](/images/design-system/componenti/pagination-specs.png)
 
       - full: true
         noSpace: true
