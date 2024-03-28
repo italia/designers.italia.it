@@ -108,15 +108,15 @@ components:
       tags: [Progettazione interfaccia,Sviluppo interfaccia]
 
   sectionsEditorial:
-    - fullColumn: true
-      noSpace: true
-      components:
-        - name: ImgFull
-          img: /images/image-icons-fullwidth.jpg
-          alt: Descrizione immagine grande
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
 
     - full: true
-      noSpace: true
+      noSpace: false
       paddingLeft: true
       title: Un'esperienza coerente per i servizi pubblici italiani
       text: Un sistema integrato di identità aperta per le sfide dell'Italia digitale
@@ -124,7 +124,7 @@ components:
       components:
         - name: TextImageCta
           # title: Come costruiamo i "numeri versione"
-          noSpace: false
+          noSpace: true
           text: |
             La **semplicità d’uso** è il primo elemento distintivo dell’esperienza che i servizi digitali pubblici di qualità devono proiettare verso le persone. Nel contesto di prototipazione e realizzazione di interfacce digitali, questa semplicità ha tre dimensioni fondamentali: 
 
@@ -152,7 +152,7 @@ components:
       background: null
       components:
         - name: TextImageCta
-          noSpace: false
+          noSpace: true
           text: |
             ### Contesto normativo
             Le **[Linee guida di design per i siti internet e i servizi digitali della PA](/norme-e-riferimenti/linee-guida-di-design)**, emanate ai sensi del CAD ex. Art. 53-1ter, indicano nel [requisito 4.5](/norme-e-riferimenti/linee-guida-di-design/requisito-4-5/) che: 
@@ -163,34 +163,57 @@ components:
 
             Queste due azioni, che nascono con la finalità di descrivere come mettere a disposizione interfacce semplici da utilizzare per i servizi pubblici italiani, ne orientano nello stile e nell'esperienza d'uso anche il **sistema di identità**, visiva e non solo.
 
-            ### Indicazioni 
+            ### Indicazioni sulla coerenza
 
             #### Servizi digitali **su scala nazionale**
-            ![](/images/image-icons-fullwidth.jpg)
+
             Se realizzi servizi digitali su scala nazionale:
             - **ospitali su domini chiaramente istituzionali**, come `gov.it` o `italia.it`, e loro sottodomini; 
             - **usa il componente [Header](/design-system/componenti/header/) e il componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
             - **usa Titillium come carattere tipografico (font) principale**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento [Tipografia](/design-system/fondamenti/tipografia/);
             - **usa il colore primario Blu Italia `#0066CC`**, in modo coerente e con le accortezze descritte nel fondamento [Colore](/design-system/fondamenti/colore/).
 
-            #### Servizi digitali **su scala territoriale**
-            ![](/images/image-icons-fullwidth.jpg)
-            Se realizzi servizi digitali su scala territoriale:
+    - full: true
+      noSpace: true
+      paddingLeft: false
+      components:
+        - name: ImgFull
+          isDSPreview: true
+          img: /images/design-system/fondamenti/identita-scala-nazionale.png
+          alt: "Le quattro caratteristiche di coerenza su servizio di scala nazionale indicate nell'elenco che precede."
+  
+    - full: true
+      noSpace: true
+      paddingLeft: true 
+      components:
+        - name: TextImageCta
+          noSpace: true
+          text: |
+            #### Servizi digitali **su scala territoriale e/o locale**
+
+            Se realizzi servizi digitali su scala territoriale e locale:
             - **verifica l'esistenza di un modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
-            - **ospitali su domini chiaramente istituzionali**, o loro sottodomini (ad esempio `regione.nomeregione.it`);
+            - **ospitali su domini chiaramente istituzionali**, o loro sottodomini (ad esempio `regione.nomeregione.it`, quelli descritti nell'[elenco di domini riservati per i comuni](https://raw.githubusercontent.com/italia/pa-website-validator/main/src/storage/municipality/allowedDomains.ts) e `.edu` per gli istituti scolastici);
             - **usa e personalizza il componente [Header](/design-system/componenti/header/) e il componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
             - **usa Titillium come carattere tipografico (font) principale**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento [Tipografia](/design-system/fondamenti/tipografia/);
             - **scegli un colore primario**, come descritto nel fondamento [Colore](/design-system/fondamenti/colore/), e **usalo in modo coerente in tutto il servizio**. 
 
-            #### Servizi digitali **su scala locale**
-            ![](/images/image-icons-fullwidth.jpg)
-            Se realizzi servizi digitali su scala locale:
-            - **verifica l'esistenza di un modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
-            - **ospitali su domini chiaramente istituzionali**, o loro sottodomini (ad esempio quelli descritti nell'[elenco di domini riservati per i comuni](https://raw.githubusercontent.com/italia/pa-website-validator/main/src/storage/municipality/allowedDomains.ts) e `.edu` per gli istituti scolastici);
-            - **usa e personalizza il componente [Header](/design-system/componenti/header/) e il componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
-            - **usa Titillium come carattere tipografico (font) principale**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento [Tipografia](/design-system/fondamenti/tipografia/);
-            - **scegli un colore primario**, come descritto nel fondamento [Colore](/design-system/fondamenti/colore/), e **usalo in modo coerente in tutto il servizio**. 
+    - full: true
+      noSpace: true
+      paddingLeft: false 
+      components:
+        - name: ImgFull
+          isDSPreview: true
+          img: /images/design-system/fondamenti/identita-scala-territoriale-e-o-locale.png
+          alt: "Le cinque caratteristiche di coerenza di servizio su scala territoriale e/o locale indicate nell'elenco che precede."
 
+    - full: true
+      noSpace: true
+      paddingLeft: true 
+      components:
+        - name: TextImageCta
+          noSpace: true
+          text: |
             #### Per essere aperti e coerenti, non uniformi
             Per offrire un'esperienza coerente per i servizi digitali del Paese, e allo stesso tempo garantire una differenziazione sufficiente a evitare l'uniformità, puoi: 
 
@@ -206,7 +229,7 @@ components:
             Inoltre, variazioni e migliorie di questo tipo **dovrebbero essere messe a disposizione e riuso della collettività** secondo quanto descritto nel [modello di contribuzione](/design-system/come-contribuire/modello-di-contribuzione/). 
 
     - full: true
-      noSpace: true
+      noSpace: false
       paddingLeft: true
       title: Funzionalità minime e coerenza funzionale
       text: Le persone devono poter accedere a quelle funzionalità minime che costituiscono la base di una esperienza utente digitale solida per il pubblico servizio, indipendentemente dal contesto. 
@@ -220,7 +243,7 @@ components:
           
             Questi indicatori tracciano **la presenza di una serie di funzionalità minime**, necessarie a **garantire la tutela dei diritti digitali delle persone** in relazione ai servizi pubblici. Sebbene queste funzionalità dovrebbero emergere come requisito nelle fasi preliminari del processo di progettazione, è opportuno verificare durante la fase di realizzazione delle interfacce la loro presenza e corretta implementazione. 
 
-            ### Indicazioni 
+            ### Indicazioni sulle funzionalità
             Assicurati durante la realizzazione delle interfacce che il servizio sia progettato e realizzato per:  
 
             - **popolare campi precompilati** con le informazioni già in possesso della Pubblica Amministrazione, o quantomeno quelle già inserite sul servizio digitale stesso; 
