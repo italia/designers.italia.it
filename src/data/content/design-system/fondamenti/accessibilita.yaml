@@ -98,7 +98,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Accessibilità,Progettazione interfaccia,Sviluppo interfaccia]
+      tags: [Accessibilità,Progettazione servizi,Accessibilità,Cultura progettuale,Progettazione interfaccia,Sviluppo interfaccia]
 
   sectionsEditorial:
     # - fullColumn: true
@@ -151,6 +151,23 @@ components:
           ctas: 
           - label: "Vai al fondamento Princípi e intenzioni" #C
             url: "/design-system/fondamenti/principi-e-intenzioni/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Identità
+          noSpace: true
+          text: |
+            La semplicità d’uso è il primo elemento distintivo dell’esperienza che i servizi digitali pubblici di qualità devono proiettare verso le persone.
+          ctas:
+          - label: Vai al fondamento Identità #C
+            url: "/design-system/fondamenti/identita/" #M
             blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
