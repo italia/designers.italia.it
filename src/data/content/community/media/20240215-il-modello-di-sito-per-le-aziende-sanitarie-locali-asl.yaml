@@ -1,0 +1,142 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Il modello di sito per le aziende sanitarie locali (ASL)"
+  description: Uno standard a misura di enti, fornitori e cittadini. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl.png
+  canonical: null
+  pathname: /community/media/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Il modello di sito per le aziende sanitarie locali (ASL)'
+    subtitle: Uno standard a misura di enti, fornitori e cittadini
+    tag:
+      label: Video - Webinar
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Adozione modelli, Modelli di sito, Architettura informazione, Interfaccia utente]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtube.com/watch?v=8UUU6RJHd0o
+          poster: /images/community/media-thumbnails/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl.png
+          subtitles: /files/community/subtitles/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl.vtt
+          trascription: |
+            Scarica la [trascrizione in formato ODT](/files/community/subtitles/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl.odt). 
+
+            ### Marco Maria Pedrazzo
+
+            Buongiorno a tutti, Marco Maria Pedrazzo, Head of Design del Dipartimento e, in questo momento, anche il referente per il progetto Designers Italia. Mi fa piacere fare due parole due, di introduzione al progetto.
+
+            Designers Italia ha da sempre come missione quella di diffondere la cultura della progettazione che mette al centro gli utenti finali, e in questo senso lo fa in due maniere molto pratiche: da una parte creando degli strumenti che siano pratici, che siano utili e utilizzabili dagli stakeholder, e dall'altra parte curando una comunità di pratica di persone che effettivamente poi usano questi strumenti e hanno bisogno di confrontarsi, hanno bisogno di spazi, hanno bisogno di luoghi anche virtuali per avere una discussione in merito. 
+            
+            In questo senso a me oggi fa estremamente piacere vedere tutte queste persone connesse, perché insomma, gli strumenti che facciamo sono per voi e la comunità di pratica, siete di fatto voi; quindi, per me è un momento molto importante, di confronto con il reale e per capire come possiamo essere utili.
+            
+            Da un anno e mezzo a questa parte, a partire dall'uscita delle linee guida ex articolo 53, non è soltanto un piacere quello che stiamo facendo oggi, ma è anche un dovere.
+            Perché sappiamo che le linee guida ci chiedono sempre di valutare obiettivi di destinatari, processi, attori, fare ricerca con gli utenti, fare test di usabilità, tutte cose che verranno raccontate poi più nel dettaglio, dopo.
+            Ma in particolare, come stakeholder di progetto, siete, per quello che ci riguarda, molto importanti. È uno dei passaggi che non è solo più una buona pratica, ma è diventato anche un obbligo di norma, è chiaro che poi il risultato che vedrete oggi ha un impatto sul mondo delle interfacce utente, e anche queste vengono toccate dalle linee guida, ma sicuramente è, è molto più utile oggi parlare invece di processo e di attori.
+            
+            Infatti, partirei proprio da qui: una delle prime cose che è stata fatta all'interno del processo è la mappatura dei vari attori, che vedete suddivisi tra, chi è interno alla PA e chi invece è esterno alla PA, e diviso tra utenti diretti e indiretti. È chiaro che tutti i vostri portali hanno come utente diretto il cittadino, ma il modello viene un passo prima. È un abilitatore che vuole mettere voi in condizioni di gestire i vostri utenti diretti; quindi, per noi sono di fatto utenti indiretti. E poi a ritroso, chiaramente tutto il mondo delle ASL, delle in house, dei fornitori dell'ambito ICT, e poi il mondo delle regioni per me diventa chiaramente centrale.
+            
+            Da una parte gli obiettivi costruiti durante questo percorso, ma soprattutto la proposta di valore finale vuole essere chiaramente diversa per ciascuno di questi attori e in particolare: per il mondo della regione, e in-house, mira proprio a cercare di fornire dei riferimenti puntuali, obiettivi di qualità e requisiti di esperienza utente e di accessibilità che siano un po' di riferimento alto, e contemporaneamente invece andando per verticale, più sul pratico (lo vedremo nel dettaglio con gli interventi successivi), riuscire a creare dei template, degli standard che siano basati su tutta quella fase, molto onerosa, in termini di ingaggio degli attori, che è quella della ricerca utente. Chiaramente consci del fatto che devono essere adattabili in funzione delle diverse realtà locali, delle strutture, delle organizzazioni che sappiamo essere estremamente eterogenee.
+            
+            Lato implementazione, invece, l'obiettivo è quello di creare quelli che siano degli strumenti operativi che siano in grado non tanto di evitare dei passaggi, delle lavorazioni, ma di consentire a voi di concentrare tempo e risorse sulla specificità del singolo ente, cioè non cercare di lavorare a reinventare la ruota, ma di andare invece a investire in maniera molto oculata il tempo sulle diversità che sono tipiche di questo mondo. E in ultimo abbiamo registrato anche il fatto che questo tipo di servizio digitale ha sempre costante bisogno di un'enorme produzione e
+            aggiornamento dei contenuti, e quindi la facilità di utilizzo di questi sta nella componente editoriale, chiaramente è un punto di enorme attenzione.
+            Il tutto, ovviamente, con l'obiettivo di fornire al cittadino un sito semplice da navigare, dare informazioni chiare e consentirgli di sfruttare al meglio tutte le... tutte le iniziative e i servizi che la Asl mette a disposizione.
+            Io mi fermo qua e passo la parola alla collega, Ilaria, e che ci racconterà oltre tutto il processo che è stato portato avanti.
+
+            ### Ilaria Scarpellini
+
+            Buongiorno, grazie a tutti per essere qui.
+            Grazie Pedro per la parola.
+            "Allora: il processo progettuale che abbiamo seguito, ovvero tutte le attività che sono state necessarie, e che sono necessarie, a realizzare un modello di sito informativo, e a metterlo a disposizione degli enti locali per implementarlo, che è la cosa che ci preme di più, è appunto avere un’adesione diffusa sul territorio nazionale."
+            
+            È iniziato ovviamente con l'approccio proposto da Designers Italia, che si divide in 5 fasi progettuali eh... cicliche, che sono state ripetute durante il percorso, con fasi di ricerca, progettazione e validazione, e miglioramento continuo degli output prodotti.
+            Abbiamo adottato un approccio sistemico, quindi appunto, mirato a considerare la diversità di attori, di elementi, di infrastrutture esistenti che influenzano la realizzazione e implementazione di siti informativi delle ASL.
+            Un approccio sicuramente utente centrico, sia nel senso dell'utente istituzionale e del fornitore che deve adottare il modello, sia nel senso dell'utente finale che dovrà usare il sito informativo della ASL. Un approccio partecipato dove abbiamo cercato di coinvolgere quanto più possibile i diversi stakeholder, per raccogliere le esigenze. Un approccio aperto, come avete visto, abbiamo cercato di condividere tutto quello che abbiamo svolto durante questi mesi con delle mail, con degli articoli, scrivendo sui canali per farvi capire cosa stesse succedendo, e soprattutto un approccio iterativo.
+            Che quindi è arrivato fin qui con cicli ripetuti e, continuerà, come tutti i prodotti digitali, ad evolvere nel tempo.
+            
+            Abbiamo seguito i principi che poi sono un po’ una sintesi di quello che c'è nel CAD, negli indicatori dell'eGovernment benchmark e anche, insomma, sulle linee guida di design di siti e servizi web della PA, e sulle linee guida di accessibilità che sono la trasparenza, l'accessibilità, la privacy, il mobile first e l'open source.
+            
+            Quindi: abbiamo iniziato con il comprendere le esigenze degli stakeholder.
+            Infatti, per avere successo un modello deve rispecchiare le esigenze degli enti, essere utile per i fornitori e le figure operative che lo dovranno implementare,
+            e infine, semplice e chiaro per i cittadini. Come forse alcuni di voi già sanno, la ricerca utente serve appunto ad intercettare le necessità di tutti questi stakeholder e informare la progettazione in modo che l'output finale vada a soddisfarle.
+            Noi abbiamo svolto 11 interviste a responsabili IT e comunicazione, sviluppatori, designer, appartenenti diverse organizzazioni, enti, fornitori e in house; 1 focus Group con esperti a livello regionale nell'ambito dei siti informativi delle Asl; e 20 interviste con cittadini diversificati in maniera eterogenea in base alla provenienza, al genere, all'età, ma soprattutto anche alla cultura digitale e all'utilizzo, la frequenza di utilizzo dei servizi sanitari, e del sito.
+            
+            Poi siamo passati alla fase di progettazione dell'architettura informativa, come sapete o comunque, come potete immaginare, l'architettura informativa è un elemento sostanziale per uniformare l'esperienza d'uso di un sito informativo, infatti definisce la struttura, e l'organizzazione dei contenuti nelle diverse sezioni del sito, e quindi serve per creare uniformità logica sui siti web di diversi enti. Quindi è uno dei pilastri portanti del modello.
+            
+            Abbiamo cercato di co-progettarla con gli stakeholder per definire uno standard adatto agli enti, diciamo anche a diversi, a seconda di diversi modelli di governance.
+            Abbiamo svolto un benchmark sulle buone pratiche in essere di siti Asl esistenti, da quello abbiamo svolto un'attività di ideazione di proposte di architettura informativa.
+            E poi siamo andati a definire la struttura, quindi l'alberatura delle principali sezioni, per poi definire le tipologie di contenuto, i vocabolari controllati e i sistemi di tag. Allo stesso tempo facendo l'esercizio di stendere la documentazione a supporto, in modo da far comprendere poi a enti e fornitori come posizionare, come migrare i contenuti in questa nuova, diciamo, architettura.
+            
+            Dopodiché siamo andati a realizzare l'interfaccia utente vera e propria, infatti, l'altro elemento determinante per creare uno standard, riguarda l'aspetto grafico degli elementi, che è quello che salta più all'occhio! E quindi non solo la realizzazione degli elementi grafici, ma anche la loro organizzazione nelle griglie delle pagine a seconda delle diverse tipologie di pagine. Per fare ciò abbiamo sfruttato le risorse del Design System del paese, perseguendo appunto la coerenza dell'esperienza d'uso,
+            non solo all'interno dell'ambito sanitario, ma con gli altri modelli che Designers Italia mette a disposizione, che sono ad esempio quello per i comuni e per le scuole.
+            Abbiamo realizzato i componenti grafici e layout delle diverse pagine, definito gli scenari d'uso dei principali flussi di interazione, che immaginiamo che il cittadino svolga con il sito, per poi costruire un prototipo dimostrativo del modello implementato su una Asl ipotetica, che ne mostra il funzionamento dinamico.
+            Abbiamo poi curato con molta attenzione la creazione delle librerie dei template e componenti di pagina. Non solo mettendo a disposizione gli elementi, ma anche proprio con delle istruzioni, e delle raccomandazioni, e consigli su come utilizzarli.
+            E in ultimo, ma non meno importante, anzi abbiamo un fascicolo che racconta la tutta la parte di raccomandazioni su come perseguire l'accessibilità dell'interfaccia.
+            Poi tra la parte diciamo di realizzazione grafica e l'implementazione del codice.
+            
+            Durante tutto il percorso abbiamo cercato di validare con stakeholder e utenti; quindi, verificato ciclicamente le scelte progettuali per prese, per ottenere un output più performante. Infatti, come già dicevo prima, per noi il processo progettuale si intende come ciclico, e anzi, ci auguriamo che anche una volta implementato il sito ogni ente possa continuare a monitorarne la performance, secondo alcuni KPI, per poi migliorarlo nel tempo, come suggerito anche dal CAD. Le attività svolte sono state di diverso tipo, è degno comunque di nota, ovviamente, come da norma, che abbiamo svolto i test di usabilità con i cittadini.
+            
+            Quindi questa è un po’ una overview del processo progettuale che ci ha portato a questo output. Adesso immagino sarete super curiosi, quindi… lascio la parola direttamente ai miei colleghi Daniele Nolè, che vi farà vedere, il prototipo di un'azienda sanitaria locale e... dopodiché, Francesco Improta che mostrerà invece il modello e gli strumenti operativi a supporto.
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            La presentazione racconta il processo progettuale che, in linea con la normativa vigente, ha portato alla realizzazione del modello.
+            Illustra poi le caratteristiche dell'architettura e dell'interfaccia grafica attraverso la navigazione del prototipo interattivo e infine approfondisce i contenuti delle risorse a supporto dell'implementazione.          
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
