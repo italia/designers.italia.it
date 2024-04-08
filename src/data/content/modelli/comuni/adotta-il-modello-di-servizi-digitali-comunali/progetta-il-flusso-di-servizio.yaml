@@ -200,7 +200,18 @@ components:
             - Pagamento.
             - Riepilogo.
 
-            [Vai al dettaglio dei moduli](https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/moduli.html#i-moduli-i-passaggi)
+          ctas:
+          - label: Vai al dettaglio dei moduli #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/moduli.html#i-moduli-i-passaggi #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
             
 
         # TXT BLOCK
@@ -213,7 +224,18 @@ components:
             - Dati di un soggetto (una persona fisica o giuridica).
             - Dati un oggetto (un immobile o un veicolo).
 
-            [Vai al dettaglio delle sezioni](https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/sezioni.html#le-sezioni-dei-moduli)
+          ctas:
+          - label: Vai al dettaglio delle sezioni #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/sezioni.html#le-sezioni-dei-moduli #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
   # ///////////////////
   # RESOURCES
