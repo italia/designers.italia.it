@@ -199,7 +199,12 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il progress indicator](/images/design-system/componenti/progress-anatomy.png)
+
+              Il componente Progress Indicator è composto da:
+              1. **barra di avanzamento**: è il contenitore che indica il valore massimo di avanzamento e delimita la dimensione totale del componente;
+              2. **barra di progresso**: indica fin dove è arrivato il progresso;
+              3. **etichetta** (label): indica la percentuale di progresso, non è presente nella variante Spinner; 
 
       - full: true
         noSpace: true
@@ -212,17 +217,16 @@ tabs:
             text: |
               - Al clic su un pulsante di azione (call to action), inizia il progresso di avanzamento fino al suo completamento.
 
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Specifiche di design
-            headingLevel: 2
-            text: |
-              *In stesura*
-
+      # - full: true
+      #   noSpace: true
+      #   paddingLeft: true
+      #   components:
+      #     - name: TextImageCta
+      #       noSpace: false
+      #       title: Specifiche di design
+      #       headingLevel: 2
+      #       text: |
+      #         In stesura
 
       - full: true
         noSpace: true
