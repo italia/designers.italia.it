@@ -1,0 +1,125 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+seo:
+  name: "Il modello per i musei civici: online le risorse per realizzare siti web"
+  description: "Valorizzare il patrimonio culturale semplificando l’esperienza d’uso dei visitatori che cercano informazioni sui siti museali."
+  # image: https://designers.italia.it/images/community/20240418-il-modello-per-i-musei-civici-online-le-risorse-per-realizzare-siti-web-1400x900.png #I
+  canonical: null
+  pathname: /community/notizie/20240418-il-modello-per-i-musei-civici-online-le-risorse-per-realizzare-siti-web/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Il modello per i musei civici: online le risorse per realizzare siti web"
+    subtitle: "Valorizzare il patrimonio culturale semplificando l’esperienza d’uso dei visitatori che cercano informazioni sui siti museali"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Modelli di sito, Adozione modelli, Architettura informazione, Interfaccia utente]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 18 aprile 2024
+
+  imageIcons:
+   image: /images/community/20240418-il-modello-per-i-musei-civici-online-le-risorse-per-realizzare-siti-web-1920x1080.png
+   alt: "La home page del prototipo di sito informativo dei musei civici rappresentata su un computer, uno smartphone e un tablet."
+   background: dark
+
+  sectionsEditorial :
+    - menu: false
+      noSpace: false
+      centered: true
+      # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+      # text:
+      id: corpoNotizia
+      components:
+        - name: TextImageCta
+          text: |
+            Il panorama culturale italiano è un ambito molto diversificato e proprio questa varietà ne determina la sua ricchezza e il suo valore. Questa eterogeneità si presenta anche a livello organizzativo e, di conseguenza, nelle modalità di gestione della trasformazione digitale. Per questo motivo, la sfida principale della progettazione di un modello di sito per i musei civici è stata creare una soluzione che si adattasse alle diverse esigenze degli enti oltre che ad essere a misura di cittadino. 
+
+            ## Valorizzare il patrimonio culturale attraverso il digitale 
+
+            Il sito web è **il primo punto di contatto con cui il cittadino interagisce** per conoscere un museo civico, la sua offerta e, quindi, scegliere di organizzare una visita. **La semplicità d’uso, la chiarezza dei contenuti e l’immediatezza nel reperire le informazioni chiave**, influenzano l’esperienza complessiva del cittadino nella fruizione dei beni culturali, e determinano il successo del museo nell'aumentare il suo pubblico. 
+
+            Il modello per i musei civici ha un ruolo nell’incoraggiare la scoperta del patrimonio culturale, consentendo di **promuovere mostre ed eventi, proporre percorsi turistici** distribuiti in diversi luoghi di interesse, semplificare l’acquisto dei biglietti e, di conseguenza, agevolare coloro che vogliono godere della sua bellezza. 
+            
+            ## Una soluzione a vantaggio di tutti 
+
+            Nel mettere a disposizione il modello per i musei civici, lo scopo è da un lato quello di **armonizzare l’esperienza d’uso** per il cittadino, e dall’altro consentire agli enti di **migliorare la presentazione e la gestione delle informazioni** presenti sui loro siti web. Infatti, per far sì che gli enti abbiano interesse ad adottare il modello e che le risorse siano utili per supportare l’implementazione, è stato progettato in modo da essere quanto più adatto possibile a tutti gli stakeholder che ne verranno impattati: visitatrici e visitatori, responsabili dei musei, e developer.   
+
+            Nel mettere a disposizione il modello per i musei civici, lo scopo è da un lato quello di **armonizzare l’esperienza d’uso** per il cittadino, e dall’altro di **agevolare i musei nel migliorare la presentazione** delle informazioni presenti sui loro siti web, **supportare i fornitori** nel realizzare una soluzione conforme agli standard di qualità. Il modello è stato progettato per **rispondere alle esigenze e portare vantaggi a tutti gli stakeholder** influenzati dalla sua adozione: responsabili, chi scrive e gestisce i contenuti, chi sviluppa la soluzione informatica, e le persone che visitano il museo e il sito.    
+
+            Ciò è stato possibile con un approccio iterativo: **abbiamo ciclicamente valutato la qualità degli artefatti, con gli stakeholder**, oltre che svolto test di usabilità sui prototipi, coinvolgendo direttamente chi utilizzerà il sito (la cittadinanza), come normato nell’[azione 6 dell’art 4.3 delle Linee guida di design](https://designers.italia.it/norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-6/), per assicurarne l’usabilità.   
+
+        - name: TextImageCta
+          title: Provare per credere
+          headingLevel: 2
+          noSpace: true
+          ctas:
+          - label: Esplora le risorse e implementa il modello di sito informativo per i musei civici
+            url: "/modelli/musei-civici/adotta-il-modello-di-sito-per-i-musei-civici/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+        - name: TextImageCta
+          text: |
+            Per confrontarti sul tema, dare e trovare riscontro, ti aspettiamo sul canale dedicato, #modello-design-musei, della community di [Slack Developer Italia](https://slack.developers.italia.it/) o su [Forum Italia](https://forum.italia.it/c/design/modello-musei-civici/91). 
+            
+
+
+
+            
