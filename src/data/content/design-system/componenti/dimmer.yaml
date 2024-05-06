@@ -81,7 +81,11 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Definisci la sezione di pagina interessata dall’uso del componente Dimmer.
+              - Imposta l’attivazione e disattivazione del componente Dimmer tramite l’uso di un [Toggle]() oppure in base ad un evento automatico.
+
+              ### Attenzione a
+              - Garantire un contrasto sufficiente tra il testo e sfondo del Dimmer, oscurando correttamente i contenuti sottostanti.
 
       - full: true
         noSpace: true
@@ -118,7 +122,14 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il dimmer](/images/design-system/componenti/dimmer-anatomy.png)
+
+              Il componente Dimmer è composto da:
+              1. *forma di sfondo*: evidenzia i contenuti del Dimmer, sovrapponendoli alla pagina sottostante;
+              2. *titolo* o *icona*: lo scopo del componente è riassunto in un breve testo o con un simbolo grafico;
+              3. *testo descrittivo*: il contenuto del messaggio comunicato all'utente;
+              4. *pulsanti primario e secondario* (opzionali): se necessario, possono essere inseriti dei pulsanti per un'azione specifica.
+              
 
       - full: true
         noSpace: true
@@ -129,7 +140,7 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Il Dimmer può essere mostrato/nascoto interagendo con un [Toggle](/design-system/componenti/toggle) oppure in seguito ad un evento automatico (ad esempio al caricamento di una pagina o di una specifica sezione di pagina).
 
       - full: true
         noSpace: true
@@ -140,8 +151,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
 
+              ![Specifiche di design del Dimmer](/images/design-system/componenti/dimmer-specs.png)
 
       - full: true
         noSpace: true
