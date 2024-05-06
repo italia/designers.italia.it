@@ -8,33 +8,9 @@ metadata:
 seo:
   name: Panoramica come contribuire
   description: Scopri i passi da seguire per contribuire al design system del Paese
-  image: null
-  twitterImage: null
+  image: https://designers.italia.it/images/design-system/ds-beta-naming.png
   canonical: null
   pathname: /design-system/come-contribuire/
-
-lastUpdate:
-  column: true
-  noPadding: true
-  title: 'Ultimo aggiornamento:'
-  date: 24 maggio 2022
-  licence:
-    label: Licenza CC BY SA 4.0
-    url: https://creativecommons.org/licenses/by-sa/4.0/deed.it
-    icon:
-      icon: sprites.svg#it-external-link
-      size: md
-      color: primary
-      addonClasses: align-middle
-    blank: true
-  edit:
-    label: Proponi una modifica a questa pagina
-    url: https://github.com/italia/designers.italia.it
-    icon:
-      icon: sprites.svg#it-pencil
-      size: sm
-      color: primary
-    blank: true
 
 # navPreFooter:
 #   navOtherPrevNext:
@@ -62,11 +38,11 @@ components:
       addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
-      Partecipa all'evoluzione del design system dedicato alla pubblica amministrazione italiana. Offri il tuo contributo per migliorare, accrescere e far evolvere la qualità della documentazione e delle risorse di design e sviluppo dedicate ai siti e i servizi digitali delle PA.
+      Partecipa all'evoluzione del design system dedicato alla Pubblica Amministrazione italiana. Offri il tuo contributo per migliorare, accrescere e far evolvere la qualità della documentazione e delle risorse di design e sviluppo dedicate ai siti e i servizi digitali delle PA.
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -85,6 +61,8 @@ components:
   filterCards:
     id: esplora
     title: Esplora le schede
+    paddingX: true
+    noSpace: false
     showTags: false
     # idInput: fundamentCardsInput # < XXX ENABLE TO ENABLE FILTER INPUT FORM ON FRONT END
     col2: true
@@ -147,7 +125,7 @@ components:
 
 
   # /////////// EDITORIAL CONTENTS FROM HERE ////////////
-  # sectionsEditorial :
+  # sectionsEditorial:
   # - fullColumn: true
   #   noSpace: true
   #   components:
@@ -155,9 +133,10 @@ components:
   #       img: /images/design-system/fondamenti.jpg
   #       alt: ""
 
-  sectionsEditorial2 :
+  sectionsEditorial2:
     - full: true
       noSpace: false
+      paddingLeft: true
       components:
         - name: TextImageCta
           noSpace: true
@@ -166,7 +145,7 @@ components:
     #       ctas:
     #       - label: "Scopri come iniziare se sei un designer" #C
     #         url: "/design-system/come-iniziare/per-designer/" #M
-    #         blank: true #M #C true if new tab for external links
+    #         blank: false #M #C true if new tab for external links
     #         icon:
     #           icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
     #           color: primary
@@ -176,7 +155,7 @@ components:
     #           addonClasses: ms-2
     #       - label: "Scopri come iniziare se sei uno sviluppatore" #C
     #         url: "/design-system/come-iniziare/per-sviluppatori/"
-    #         blank: true #M #C true if new tab for external links
+    #         blank: false #M #C true if new tab for external links
     #         icon:
     #           icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
     #           color: primary

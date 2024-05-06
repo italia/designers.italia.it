@@ -64,7 +64,7 @@ navbar:
   theme: theme-dark-desk
   ariaLabel: Menu principale
   toggler:
-    ariaLabel: Mostra o nascondi il menu
+    ariaLabel: Apri il menu
   close:
     ariaLabel: Chiudi il menu
   nav:
@@ -91,8 +91,8 @@ navbar:
               listItems: #C #M
                 - url: "/progetto/visione-e-missione/"
                   label: Visione e missione
-                - url: "/progetto/formazione-e-disseminazione/"
-                  label: Formazione e disseminazione
+                - url: "/progetto/divulgazione-e-disseminazione/"
+                  label: Divulgazione e disseminazione
                 - url: "/progetto/storia/"
                   label: Storia
       - isDropDown: true
@@ -128,7 +128,7 @@ navbar:
         label: Modelli #C
         megamenu:
           left:
-            img: /images/modelli/comuni.png #I
+            img: /images/modelli/modelli-cover.png #I
             imgAlt: "" #C
             text: | #C
               **Usa i modelli di design per realizzare siti e servizi digitali** validati dalla ricerca e progettati sui bisogni dei cittadini.
@@ -142,19 +142,25 @@ navbar:
                   label: Comuni
                 - url: "/modelli/scuole/"
                   label: Scuole
+                - url: "/modelli/musei-civici/"
+                  label: Musei civici
+            - isMenu: true
+              listItems: #C #M
+                - url: "/modelli/aziende-sanitarie-locali/"
+                  label: Aziende sanitarie locali (ASL)
       - isDropDown: true
         isMegaMenu: true
         idMegamenu: menuD
-        label: Design system #C
+        label: Design system .italia #C
         megamenu:
           left:
-            img: /images/design-system/fondamenti.jpg
+            img: /images/design-system/ds-beta-naming.png
             imgAlt: ""
             text: | #C
               **Progetta e sviluppa interfacce e contenuti di siti e servizi digitali pubblici** utilizzando gli strumenti del design system del Paese.
           heading:
             url: "/design-system/" #M
-            label: Esplora il design system del Paese #C
+            label: "Esplora il design system .italia" #C
           cols:
             - isMenu: true
               listItems: #C #M
@@ -213,14 +219,18 @@ navbar:
           cols:
             - isMenu: true
               listItems: #C #M
-                - url: "/community/eventi/"
-                  label: Eventi
                 - url: "/community/notizie/"
                   label: Notizie
+                - url: "/community/eventi/"
+                  label: Eventi
                 - url: "/community#articoli-di-approfondimento"
                   label: Articoli di approfondimento
+                - url: "/community/media/"
+                  label: Media
             - isMenu: true
               listItems: #C #M
+                - url: "/community/materiali-di-disseminazione/"
+                  label: Materiali di disseminazione
                 - url: "/community/piano-attivita/"
                   label: Piano attività
                 - url: "/community/contatti/"
@@ -231,8 +241,18 @@ headerPost:
     id: navBanner
     ariaLabel: Potrebbe interessarti
     items: #C #M
-    - title: "Nuovo modello di contribuzione"
-      url: "community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese"
+    - title: "Design system .italia beta"
+      url: "/community/notizie/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta/"
+      blank: false
+      icon:
+        icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: "me-2"
+    - title: "Modello ASL"
+      url: "/modelli/aziende-sanitarie-locali/"
       blank: false
       icon:
         icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
@@ -241,8 +261,8 @@ headerPost:
         color: "primary"
         hidden: true
         addonClasses: "me-2"
-    - title: "Nuovi fondamenti di scrittura"
-      url: "community/notizie/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente/"
+    - title: "Modello Musei civici"
+      url: "/modelli/musei-civici/"
       blank: false
       icon:
         icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
