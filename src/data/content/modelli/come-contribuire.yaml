@@ -6,7 +6,7 @@ metadata:
     name: level2
 
 seo:
-  name: Come contribuire ai modelli
+  name: Contribuisci ai modelli
   description: Le indicazioni operative per contribuire all'evoluzione dei modelli di sito e servizi della Pubblica Amministrazione
   image: null
   canonical: null
@@ -30,7 +30,7 @@ seo:
 components:
   hero:
     background: null
-    title: Come contribuire ai modelli
+    title: Contribuisci ai modelli
     column: true
     subtitle: Le indicazioni operative per contribuire all'evoluzione dei modelli di sito e servizi della Pubblica Amministrazione
     tag:
@@ -41,7 +41,7 @@ components:
         icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
-    text: "Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana: contribuisci alle discussioni, agli avanzamenti tecnici e di design e scopri come proporre novità e nuove idee da condividere con il team e la community di Designers Italia."
+    text: "Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana: contribuisci alle discussioni, agli avanzamenti tecnici e di design e scopri come proporre novità e nuove idee con il team e la community di Designers Italia."
 
      # KANGAROO: METADATA
     kangaroo:
@@ -114,7 +114,7 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Crediamo che siti e servizi digitali progettati in modo collaborativo siano migliori e quindi che il contributo attivo della community che osserva, utilizza, personalizza e implementa quotidianamente le soluzioni proposte sia fondamentale per far crescere la qualità della documentazione e delle risorse operative a supporto delle PA. 
+            Le risorse di Designers Italia sono mantenute con un approccio aperto e trasparente. Crediamo che il contributo attivo della community che osserva, utilizza, personalizza e implementa quotidianamente le soluzioni proposte sia fondamentale per migliorarne la qualità. 
             
           # ctas: 
           #   - label: "Conosci il fondamento Princìpi e intenzioni?" #C
@@ -131,19 +131,15 @@ components:
             
     - centered: true
       noSpace: false
-      title: Cosa puoi fare?
-      text: Partecipare a discussioni, aprire segnalazioni e inviare contributi
+      title: Come contribuire ai modelli
+      #text: Partecipare a discussioni, aprire segnalazioni e inviare contributi
       background: null
       components:
 
         - name: TextImageCta
           noSpace: true
           text: | 
-            Dalla segnalazione di una correzione alla proposta di un’integrazione, dalla presentazione di un nuovo componente alla partecipazione a discussioni su modifiche futuribili, come contributor puoi prendere parte al miglioramento continuo del progetto e alla realizzazione di siti e servizi digitali della PA sempre migliori.
-            
-            Ti suggeriamo di pensare oltre il singolo servizio digitale per immaginare componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. Condividi ciò che hai imparato facendo ricerca con gli utenti. Sii disponibile a ricevere feedback o richieste di modifica al tuo lavoro. Sii gentile e incoraggia gli altri a esserlo, quando ricevi domande o feedback. 
-
-            Quando una persona della community contribuisce ci piace ringraziarla pubblicamente, ma se preferisci non ricevere menzioni pubbliche, puoi farcelo sapere durante la contribuzione. 
+            Le risorse dei modelli sono ospitate sulla piattaforma gratuita GitHub. Lì puoi partecipare a discussioni già aperte, aprire nuove segnalazioni (issues) o effettuare direttamente le modifiche che vuoi proporre (pull requests). Ti suggeriamo di condividere ciò che hai imparato facendo ricerca con gli utenti e di proporre componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. 
 
     # - fullColumn: true
     #   noSpace: true
@@ -157,33 +153,20 @@ components:
       components:
 
         - name: TextImageCta
-          title: Usa il tuo profilo personale, o creane uno nuovo
+          title: Accedi su GitHub con il tuo profilo personale, o creane uno nuovo
           headingLevel: 3
           noSpace: false
           text: |
-            Per contribuire hai bisogno di un profilo personale gratuito sulla piattaforma GitHub. 
-            
             Se hai bisogno di un nuovo profilo:
               1. Naviga su [github.com](https://github.com) e segui le istruzioni
               2. Verifica il tuo indirizzo email e abilita l'autenticazione a due fattori (2FA)
               3. Imposta un'immagine del profilo come gesto di cordialità verso la community
 
-        - name: TextImageCta
-          title: Scegli come e dove contribuire
-          noSpace: false
-          headingLevel: 3
-          text: |  
-            Puoi collaborare ai lavori sulla presente documentazione, ai lavori sulle risorse di design e su quelle di sviluppo. 
+           Consulta il [Codice di condotta](https://github.com/italia/bootstrap-italia/blob/main/CODE_OF_CONDUCT.md) della community legata ai progetti dell'organizzazione Italia su GitHub, strumento utile a mantenere un ambiente di collaborazione inclusivo e propositivo per tutte le persone. 
 
-            Puoi farlo: 
-              1. Partecipando alle discussioni aperte nei repository delle risorse
-              2. Aprendo nuove segnalazioni sul tema di tuo interesse laddove non sia già presente
-              3. Inviando contributi e integrazioni
-
-            Consulta il [Codice di condotta](https://github.com/italia/bootstrap-italia/blob/main/CODE_OF_CONDUCT.md) della community legata ai progetti dell'organizzazione Italia su GitHub, strumento utile a mantenere un ambiente di collaborazione inclusivo e propositivo per tutte le persone.  
 
         - name: Table
-          title: Esplora le risorse a cui puoi contribuire
+          title: Scegli la risorsa a cui vuoi contribuire
           responsive: table-responsive-md
           # addonClasses: fixed
           head:
@@ -412,10 +395,66 @@ components:
                   icon:
                     icon: sprites.svg#it-github
                     size: sm   
+
+        - name: TextImageCta
+          title: Controlla se già esiste una discussione sul tema che ti interessa
+          headingLevel: 3
+          noSpace: false
+          text: |
+            Esplora la lista di tutte le discussioni nel repository della risorsa a cui hai scelto di contribuire. Se già esiste una discussione sul tema che ti interessa, o su un tema simile, vai nella segnalazione dedicata e partecipa lasciando un commento.
+
+        - name: TextImageCta
+          title: Segui le procedure per nuove segnalazioni
+          headingLevel: 3
+          noSpace: false
+          text: |
+            Se il tema di tuo interesse non è nella lista delle segnalazioni già aperte, puoi proporne una nuova.
+
+        - name: TextImageCta
+          title: Nuove segnalazioni per la documentazione
+          headingLevel: 4
+          noSpace: false
+          text: |
+            Per suggerire correzioni di stile e formattazione, migliorare il linguaggio dei contenuti o segnalare refusi:
+            1. vai alla pagina di documentazione su cui vuoi proporre delle modifiche
+            2. clicca sul collegamento “Proponi una modifica a questa pagina” (presente in fondo a ogni pagina del sito, prima del footer) per proporre modifiche alle **pagine dei modelli su Designers Italia**, oppure sul collegamento “Sorgente” (presente in alto a destra su ogni pagina, nell’header) per proporre modifiche alla **documentazione operativa dei modelli su Docs Italia**
+            3. edita il file con le modifiche che vuoi proporre, ponendo attenzione alla gerarchia dei contenuti e le indentazioni
+            4. invia una una richiesta di contribuzione (pull request) verso il repository che contiene il sorgente della documentazione.
+
+        - name: TextImageCta
+          title: Nuove segnalazioni per i documenti di architettura dell'informazione
+          headingLevel: 4
+          noSpace: false
+          text: |
+            Per suggeri
+
+        - name: TextImageCta
+          title: Nuove segnalazioni per le risorse di design
+          headingLevel: 4
+          noSpace: false
+          text: |
+            Ogni risorsa di design è disponibile su Figma Community e ha un repository dedicato su GitHub.  
+
+            Per aprire segnalazioni e inviare i tuoi contributi dedicati alla progettazione delle interfacce dei modelli di sito e servizi:
+            1. vai al repository GitHub della risorsa e apri una segnalazione evidenziando intenzioni e possibilità del contributo proposto
+            2. scarica una copia del file dedicato da Figma Community oppure crea una copia personale (fork) del repository GitHub dedicato alla specifica risorsa
+            3. una volta completate le modifiche, apri una richiesta di integrazione (pull request) su GitHub.
+
+            Nelle lavorazioni poni particolare attenzione al rispetto dei [fondamenti del design system del Paese](/design-system/fondamenti/) e alla compatibilità del contributo con la conversione del kit verso altri formati aperti. In particolare, utilizziamo lo strumento **fig2sketch** per generare in automatico la conversione del kit nel formato Sketch a ogni rilascio nel repository dedicato. Scrivi nella segnalazione se hai testato la conversione della proposta. 
+
+        - name: TextImageCta
+          title: Nuove segnalazioni per le risorse di sviluppo
+          headingLevel: 4
+          noSpace: false
+          text: |
+            Per aprire nuove segnalazioni e contributi per i templates HTML statici e i temi CMS del modello Comuni e del modello Scuole, segui le [indicazioni di contribuzione per le risorse di sviluppo](https://github.com/italia/bootstrap-italia/blob/main/CONTRIBUTING.md#lavorazione-di-una-issue). 
+
+            Nelle lavorazioni poni attenzione al rispetto dei [fondamenti del design system del Paese](/design-system/fondamenti/). Può esserti utile il "workflow per migliorare lo sviluppo dei componenti" del [fondamento Accessibilità](/design-system/fondamenti/accessibilita/). 
+        
         - name: TextImageCta
           title: Nota sulla lingua
           noSpace: false
-          headingLevel: 5
+          headingLevel: 4
           text: | 
               1. Puoi trovare frequentemente discussioni in lingua inglese perché considerata lingua franca dei progetti open source, in particolare per i temi di design e sviluppo
               2. Laddove le discussioni siano inerenti alla documentazione e ai contenuti, ci sembra però ragionevole usare la lingua italiana per le contribuzioni
