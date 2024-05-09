@@ -142,70 +142,9 @@ components:
 
         ### 2024 - Q2
         - name: TextImageCta
-          title: "2024 — Q1" #C
-          headingLevel: 3
-          noSpace: false
-
-        - name: TextImageCta
-          headingLevel: 4
-          specular: false
-          title: "Materiali di disseminazione: nuovi kit in arrivo" #C
-          text: | #C
-            Apertura di una nuova area di risorse dedicate alle attività di formazione e disseminazione della community con la pubblicazione del primo kit **“Insegnare design per la PA”**.
-
-        - name: TextImageCta
-          headingLevel: 4
-          specular: false
-          title: "Design system .italia: rilascio dei nuovi kit React e Angular" #C
-          text: | #C
-            L’arrivo alla fase beta della documentazione del design system del Paese accompagna anche i rilasci di due importanti framework di sviluppo, che avverranno nei prossimi giorni: grazie al lavoro portato avanti dalla community, i nuovi kit React e Angular sono vicini, rispettivamente, alle versioni stabili 5 e 1.   
-          ctas:
-          - label: Segui i lavori su React kit #C
-            url: https://github.com/italia/design-react-kit #M
-            screenReaderText: " (si apre in una nuova finestra)"
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2   
-          - label: Segui i lavori su Angular kit #C
-            url: https://github.com/italia/design-angular-kit #M
-            screenReaderText: " (si apre in una nuova finestra)"
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2     
-
-        ### 2024 - Q2
-        - name: TextImageCta
           title: "2024 — Q2" #C
           headingLevel: 3
           noSpace: false
-
-        - name: TextImageCta
-          headingLevel: 4
-          specular: false
-          title: "Rilascio modello musei civici" #C
-          text: | #C
-            Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi dei musei civici.
-          ctas:
-          - label: Segui le lavorazioni nella pagina dedicata #C
-            url: "/modelli/musei-civici/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
 
         - name: TextImageCta
           headingLevel: 4
@@ -331,12 +270,105 @@ components:
         Le attività più importanti, gli obiettivi e i traguardi realizzati
 
       components:
+        ### 2024 - Q2
+        - name: TextImageCta
+          title: "2024 — Q2" #C
+          headingLevel: 3
+          noSpace: false
+          
+        - name: TextImageCta
+          headingLevel: 4
+          image: "/images/modelli/musei-cover.png"
+          alt: "Esempio di sito che implementa il modello su mobile, desktop, tablet"
+          specular: true
+          title: "Rilascio modello musei civici" #C
+          text: | #C
+            Rilascio modello di architettura dell’informazione e dei flussi di interfaccia per i siti informativi dei musei civici.
+          ctas:
+          - label: Scopri il modello #C
+            url: "/modelli/musei-civici/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
+            - label: Vai alla notizia #C
+            url: "/community/notizie/20240418-il-modello-per-i-musei-civici-online-le-risorse-per-realizzare-siti-web/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2  
+          
         ### 2024 - Q1
         - name: TextImageCta
           title: "2024 - Q1" #C
           headingLevel: 3
           noSpace: false
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Materiali di disseminazione: nuovi kit in arrivo" #C
+          text: | #C
+            Apertura di una nuova area di risorse dedicate alle attività di formazione e disseminazione della community con la pubblicazione del primo kit **“Insegnare design per la PA”**.
+          - label: Scopri il kit Insegnare design per la PA #C
+            url: "/community/materiali-di-disseminazione/insegnare-design-per-la-pa/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai alla notizia #C
+            url: "/community/notizie/20240318-il-nuovo-kit-di-designers-italia-per-insegnare-a-progettare-per-il-settore-pubblico/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2  
+
+        - name: TextImageCta
+          headingLevel: 4
+          specular: false
+          title: "Design system .italia: rilascio dei nuovi kit React e Angular" #C
+          text: | #C
+            L’arrivo alla fase beta della documentazione del design system del Paese accompagna anche i rilasci di due importanti framework di sviluppo, che avverranno nei prossimi giorni: grazie al lavoro portato avanti dalla community, i nuovi kit React e Angular sono vicini, rispettivamente, alle versioni stabili 5 e 1.   
+          ctas:
+          - label: Segui i lavori su React kit #C
+            url: https://github.com/italia/design-react-kit #M
+            screenReaderText: " (si apre in una nuova finestra)"
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2   
+          - label: Segui i lavori su Angular kit #C
+            url: https://github.com/italia/design-angular-kit #M
+            screenReaderText: " (si apre in una nuova finestra)"
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2     
 
         - name: TextImageCta
           headingLevel: 4
@@ -564,7 +596,7 @@ components:
         - name: TextImageCta
           headingLevel: 4
           image: "/images/modelli/asl-hero.png"
-          alt: ""
+          alt: "Esempio di sito che implementa il modello su mobile, desktop, tablet"
           specular: true
           title: "Modello aziende sanitarie locali: ricerca" #C
           text: | #C
