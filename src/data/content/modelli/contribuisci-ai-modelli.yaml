@@ -166,9 +166,49 @@ components:
           head:
             - text: RISORSA
             - text: TIPOLOGIA
-            - text: LINKS
-            - text: 
+            - text: SEGNALAZIONI APERTE
+            - text: NUOVE SEGNALAZIONI
           rows:
+            - cols:
+              - text: Pagine dei modelli su Designers Italia 
+                scope: row
+              - text: Documentazione
+              - simpleCta :
+                  label: Vai alla lista segnalazioni
+                  url: https://github.com/italia/designers.italia.it/issues
+                  blank: true
+                  screenReaderText: "segnalazioni aperte per le pagine dei modelli su Designers Italia (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-github
+                    size: sm
+              - simpleCta :
+                  label: Segui le istruzioni
+                  #url: https://github.com/italia/design-comuni-ui-kit/issues/new?assignees=&labels=design%20system&projects=&template=apri-una-segnalazione.it.yaml
+                  blank: true
+                  #screenReaderText: "per il kit interfacce del modello Comuni (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-github
+                    size: sm
+            - cols:
+              - text: Architettura dell'informazione (tutti i modelli) 
+                scope: row
+              - text: Architettura
+              - simpleCta :
+                  label: Vai alla lista segnalazioni
+                  url: https://github.com/italia/designers.italia.it/issues
+                  blank: true
+                  screenReaderText: "segnalazioni aperte per i documenti di architettura dei modelli (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-github
+                    size: sm
+              - simpleCta :
+                  label: Apri una nuova segnalazione
+                  url: https://github.com/italia/designers.italia.it/issues/new?assignees=&labels=&projects=&template=apri-una-segnalazione.it.yaml
+                  blank: true
+                  screenReaderText: "per il kit interfacce del modello Comuni (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-github
+                    size: sm
             - cols:
               - text: Comuni UI Kit 
                 scope: row
