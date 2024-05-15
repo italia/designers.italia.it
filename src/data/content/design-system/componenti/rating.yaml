@@ -160,9 +160,15 @@ tabs:
                   scope: row
                 - tag:
                     label: Pronto
-                    url: https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/rating
                     addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - text: ""
+                - simpleCta :
+                    label: Scheda
+                    url: https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/rating
+                    blank: true
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
           - name: TextImageCta
             ctas:
             - label: Apri una issue sul repository Bootstrap Italia #C
