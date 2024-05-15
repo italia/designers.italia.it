@@ -220,7 +220,14 @@ tabs:
                 - tag:
                     label: Non presente
                     addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - text: ""
+                - simpleCta :
+                    label: Scheda
+                    url: hhttps://italia.github.io/design-angular-kit/design-angular-kit#/componenti/rating
+                    blank: true
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
           - name: TextImageCta
             ctas:
             - label: Apri una issue sul repository Bootstrap Italia #C
