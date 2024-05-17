@@ -98,18 +98,6 @@ components:
 
   sectionsEditorial:
 
-            
-    - centered: true
-      noSpace: false
-      #title: Come contribuire ai modelli
-      #text: Partecipare a discussioni, aprire segnalazioni e inviare contributi
-      background: null
-      components:
-
-        - name: TextImageCta
-          noSpace: true
-          text: | 
-            Le risorse dei modelli sono ospitate sulla piattaforma gratuita **GitHub**. Lì puoi **partecipare a discussioni già aperte**, **aprire nuove segnalazioni** o **inviare i tuoi contributi**. Ti suggeriamo di condividere ciò che hai imparato facendo ricerca con gli utenti e di proporre componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. 
 
     # - fullColumn: true
     #   noSpace: true
@@ -118,13 +106,18 @@ components:
     #       img: /images/design-system/schema-come-partecipo.png
     #       alt: Scelgo dove, partecipo alla discussione, invio contributi. Schema del modello di contribuzione, descritto nel seguito dela pagina. 
     - centered: true
-      noSpace: true
+      noSpace: false
       background: null
       components:
 
         - name: TextImageCta
+          noSpace: false
+          text: | 
+            Le risorse dei modelli sono ospitate sulla piattaforma gratuita **GitHub**. Lì puoi **partecipare a discussioni già aperte**, **aprire nuove segnalazioni** o **inviare i tuoi contributi**. Ti suggeriamo di condividere ciò che hai imparato facendo ricerca con gli utenti e di proporre componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. 
+
+        - name: TextImageCta
           title: Accedi su GitHub con il tuo profilo personale, o creane uno nuovo
-          headingLevel: 3
+          headingLevel: 2
           noSpace: false
           text: |
             Se hai bisogno di un nuovo profilo:
@@ -136,6 +129,8 @@ components:
 
         - name: Table
           title: Individua la risorsa a cui vuoi contribuire
+          headingLevel: 2
+          addonClasses: mb-5
           responsive: table-responsive-md
           # addonClasses: fixed
           head:
@@ -427,22 +422,22 @@ components:
 
         - name: TextImageCta
           title: Controlla se già esiste una segnalazione sul tema che ti interessa
-          headingLevel: 3
+          headingLevel: 2
           noSpace: false
           text: |
             Esplora la lista di tutte le discussioni (issues) nel repository della risorsa a cui hai scelto di contribuire. Se già esiste una segnalazione sul tema che ti interessa, o su un tema simile, vai nella discussione dedicata e partecipa lasciando un commento.
 
         - name: TextImageCta
           title: Apri una nuova segnalazione o invia i tuoi contributi
-          headingLevel: 3
+          headingLevel: 2
           noSpace: true
           text: |
             Se il tema di tuo interesse non è già presente nella lista delle segnalazioni, puoi aprirne una nuova. Se accettate, le tue modifiche verranno direttamente integrate in un aggiornamento futuro delle risorse.
 
         - name: TextImageCta
           title: Come contribuire alla documentazione
-          headingLevel: 4
-          noSpace: false
+          headingLevel: 3
+          noSpace: true
           text: |
             Per inviare suggerimenti, vai al repository della risorsa specifica e apri una nuova segnalazione (issue).
 
@@ -454,15 +449,15 @@ components:
 
         - name: TextImageCta
           title: Come contribuire ai documenti di architettura dell'informazione
-          headingLevel: 4
-          noSpace: false
+          headingLevel: 3
+          noSpace: true
           text: |
             Per suggerire modifiche all'architettura, alle tipologie di contenuto, alle tassonomie o correggere refusi, [apri una nuova segnalazione](https://github.com/italia/designers.italia.it/issues/new?assignees=&labels=&projects=&template=apri-una-segnalazione.it.yaml) sul repository GitHub di Designers Italia e assicurati di specificare il modello al quale vuoi contribuire, il dettaglio delle modifiche e il razionale alla base dei tuoi suggerimenti.
 
         - name: TextImageCta
           title: Come contribuire alle risorse di design
-          headingLevel: 4
-          noSpace: false
+          headingLevel: 3
+          noSpace: true
           text: |
             Per inviare i tuoi contributi dedicati alla progettazione delle interfacce dei modelli di sito e servizi:
             1. **scarica una copia** della versione più recente del file di design di interesse dalla Figma Community;
@@ -474,7 +469,7 @@ components:
 
         - name: TextImageCta
           title: Come contribuire alle risorse di sviluppo
-          headingLevel: 4
+          headingLevel: 3
           noSpace: false
           text: |
             Per inviare contributi per i templates HTML statici e i temi CMS del modello Comuni e del modello Scuole, segui le [indicazioni di contribuzione per le risorse di sviluppo](https://github.com/italia/bootstrap-italia/blob/main/CONTRIBUTING.md#lavorazione-di-una-issue). 
@@ -484,7 +479,7 @@ components:
         - name: TextImageCta
           title: Note sulla lingua
           noSpace: true
-          headingLevel: 4
+          headingLevel: 3
           text: | 
               - Puoi trovare frequentemente discussioni in lingua inglese perché considerata lingua franca dei progetti open source, in particolare per i temi di design e sviluppo
               - Per le discussioni relative alla documentazione e ai contenuti, ci sembra però ragionevole usare la lingua italiana per le contribuzioni
