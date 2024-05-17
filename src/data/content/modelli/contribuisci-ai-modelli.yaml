@@ -141,8 +141,20 @@ components:
             Quando una persona della community contribuisce ai modelli ci piace ringraziarla pubblicamente, ma se preferisci non ricevere menzioni pubbliche, puoi farcelo sapere durante la contribuzione.
 
         - name: TextImageCta
-          title: Scopri come contribuire
+          title: Invia i tuoi contributi
           headingLevel: 3
           noSpace: true
-          text: |
+          #text: |
             Testo prova
+          ctas: 
+            - label: "Scopri come contribuire" #C
+              screenReaderText: ""
+              url: "/modelli/contribuisci-i-modelli/come-contribuire-ai-modelli/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
