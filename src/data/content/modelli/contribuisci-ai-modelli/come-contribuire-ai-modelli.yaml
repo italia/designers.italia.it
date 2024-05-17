@@ -41,7 +41,7 @@ components:
         icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
-    text: "Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana: contribuisci alle discussioni, agli avanzamenti tecnici e di design e scopri come proporre novità e nuove idee con il team e la community di Designers Italia."
+    text: "Scopri come partecipare alle discussioni, aprire nuove segnalazioni o proporre modifiche e contributi alla documentazione, alle risorse di design e alle risorse di sviluppo dei modelli di Designers Italia."
 
      # KANGAROO: METADATA
     kangaroo:
@@ -109,7 +109,7 @@ components:
         - name: TextImageCta
           noSpace: true
           text: | 
-            Le risorse dei modelli sono ospitate sulla piattaforma gratuita GitHub. Lì puoi **partecipare a discussioni già aperte**, **aprire nuove segnalazioni** (issues) o **effettuare direttamente le modifiche che vuoi proporre** (pull requests). Ti suggeriamo di condividere ciò che hai imparato facendo ricerca con gli utenti e di proporre componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. 
+            Le risorse dei modelli sono ospitate sulla piattaforma gratuita **GitHub**. Lì puoi **partecipare a discussioni già aperte**, **aprire nuove segnalazioni** o **inviare i tuoi contributi**. Ti suggeriamo di condividere ciò che hai imparato facendo ricerca con gli utenti e di proporre componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. 
 
     # - fullColumn: true
     #   noSpace: true
@@ -433,32 +433,34 @@ components:
             Esplora la lista di tutte le discussioni (issues) nel repository della risorsa a cui hai scelto di contribuire. Se già esiste una segnalazione sul tema che ti interessa, o su un tema simile, vai nella discussione dedicata e partecipa lasciando un commento. Se il tema di tuo interesse non è già presente nella lista delle segnalazioni, puoi aprirne una nuova.
 
         - name: TextImageCta
-          title: Apri una nuova segnalazione o effettua delle modifiche da proporre
+          title: Apri una nuova segnalazione o invia i tuoi contributi
           headingLevel: 3
           noSpace: true
           text: |
-            Se preferisci, invece di inviare una segnalazione, puoi effettuare direttamente tu le modifiche desiderate alle risorse e inviare una richiesta di integrazione (pull request). Se accettate, le tue modifiche verranno direttamente integrate nei file delle risorse.
+            Se il tema di tuo interesse non è già presente nella lista delle segnalazioni, puoi aprirne una nuova. Se accettate, le tue modifiche verranno direttamente integrate in un aggiornamento futuro delle risorse.
 
         - name: TextImageCta
-          title: Come proporre modifiche per la documentazione
+          title: Come contribuire alla documentazione
           headingLevel: 4
           noSpace: true
           text: |
-            Per suggerire correzioni di stile e formattazione, migliorare il linguaggio dei contenuti o correggere refusi:
+            Per inviare suggerimenti, vai al repository della risorsa specifica e apri una nuova segnalazione (issue).
+
+            Se invece vuoi suggerire modifiche puntuali, come correzioni di refusi, formattazione o linguaggio:
             1. vai alla pagina di documentazione su cui vuoi proporre delle modifiche
             2. clicca sul collegamento “Proponi una modifica a questa pagina” (presente in fondo a ogni pagina del sito, prima del footer) per proporre modifiche alle **pagine dei modelli su Designers Italia**, oppure sul collegamento “Sorgente” (presente in alto a destra su ogni pagina, nell’header) per proporre modifiche alla **documentazione operativa dei modelli su Docs Italia**
             3. edita il file con le modifiche che vuoi proporre, ponendo attenzione alla gerarchia dei contenuti e le indentazioni
             4. invia una una richiesta di contribuzione (pull request) verso il repository che contiene il sorgente della documentazione.
 
         - name: TextImageCta
-          title: Come proporre modifiche per i documenti di architettura dell'informazione
+          title: Come contribuire ai documenti di architettura dell'informazione
           headingLevel: 4
           noSpace: true
           text: |
-            Per suggerire modifiche all'architettura, alle tipologie di contenuto, alle tassonomie o correggere refusi, non è possibile modificare direttamente i file delle risorse. [Apri una segnalazione](https://github.com/italia/designers.italia.it/issues/new?assignees=&labels=&projects=&template=apri-una-segnalazione.it.yaml) sul repository GitHub di Designers Italia e assicurati di specificare il modello al quale vuoi contribuire, il dettaglio delle modifiche e il razionale alla base dei tuoi suggerimenti.
+            Per suggerire modifiche all'architettura, alle tipologie di contenuto, alle tassonomie o correggere refusi, [apri una nuova segnalazione](https://github.com/italia/designers.italia.it/issues/new?assignees=&labels=&projects=&template=apri-una-segnalazione.it.yaml) sul repository GitHub di Designers Italia e assicurati di specificare il modello al quale vuoi contribuire, il dettaglio delle modifiche e il razionale alla base dei tuoi suggerimenti.
 
         - name: TextImageCta
-          title: Come proporre modifiche per le risorse di design
+          title: Come contribuire alle risorse di design
           headingLevel: 4
           noSpace: true
           text: |
@@ -468,12 +470,10 @@ components:
             3. **apri una segnalazione** sul repository GitHub della risorsa di riferimento, o proponi il contributo nei commenti di una discussione già esistente sul tema di interesse, evidenziando intenzioni e possibilità; 
             4. nella segnalazione o nel commento, **condividi l'indirizzo al file** Figma realizzato, impostando i permessi di accesso in sola lettura (view only). In questo modo potremo valutare più velocemente il tuo contributo.
             
-              Nelle lavorazioni poni particolare attenzione al **rispetto dei fondamenti** del design system del Paese e alla compabilità della proposta di contributo con la conversione del kit verso altri formati aperti; in particolare utilizziamo lo strumento [fig2sketch](https://github.com/sketch-hq/fig2sketch) per generare in automatico la conversione del kit nel formato Sketch a ogni rilascio nel repository dedicato. Scrivi nella segnalazione se hai testato la conversione della proposta. 
-
-              Se approvato, il tuo contributo sarà inserito in un prossimo rilascio di UI Kit Italia.
+            Nelle lavorazioni poni particolare attenzione al **rispetto dei fondamenti** del design system del Paese e alla compabilità della proposta di contributo con la conversione del kit verso altri formati aperti; in particolare utilizziamo lo strumento [fig2sketch](https://github.com/sketch-hq/fig2sketch) per generare in automatico la conversione del kit nel formato Sketch a ogni rilascio nel repository dedicato. Scrivi nella segnalazione se hai testato la conversione della proposta. 
 
         - name: TextImageCta
-          title: Come proporre modifiche per le risorse di sviluppo
+          title: Come contribuire alle risorse di sviluppo
           headingLevel: 4
           noSpace: false
           text: |
