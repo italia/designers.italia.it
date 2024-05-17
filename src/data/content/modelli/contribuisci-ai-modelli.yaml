@@ -42,7 +42,6 @@ components:
         size: sm
       text: In breve
     text: "Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana: contribuisci alle discussioni, agli avanzamenti tecnici e di design e scopri come proporre novità e nuove idee con il team e la community di Designers Italia."
-
      # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
@@ -96,11 +95,12 @@ components:
         color: secondary
       tags: [Modelli,Interfaccia utente,Sviluppo interfaccia]
 
-    sectionsEditorial:
+  sectionsEditorial:
 
+            
     - centered: true
       noSpace: false
-      title: "L'evoluzione dei modelli di sito e servizi per la Pubblica Amministrazione è aperta"
+      title: L'evoluzione dei modelli di sito e servizi per la Pubblica Amministrazione è aperta
       #text: Partecipare a discussioni, aprire segnalazioni e inviare contributi
       background: null
       components:
@@ -109,35 +109,40 @@ components:
           noSpace: true
           text: | 
             La documentazione e le risorse dei modelli di sito e servizi sono manutenute del team di Designers Italia con un approccio aperto e trasparente, privilegiando strumenti che permettono di seguire i lavori in tempo reale e di prendere parte alle evolutive tecniche e alle novità di progettazione.
-        - name: TextImageCta
-          title: "Perché contribuire?"
-          noSpace: true
-          headingLevel: 3
-          text: |
-            Crediamo che siti e servizi digitali progettati in modo collaborativo siano migliori e quindi che il contributo attivo della community che osserva, utilizza, personalizza e implementa quotidianamente le soluzioni proposte sia fondamentale per far crescere la qualità della documentazione e delle risorse operative a supporto delle PA.
-            
-
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/design-system/schema-come-partecipo.png
+    #       alt: Scelgo dove, partecipo alla discussione, invio contributi. Schema del modello di contribuzione, descritto nel seguito dela pagina. 
     - centered: true
-      noSpace: false
-      title: Cosa puoi fare?
-      text: Partecipare a discussioni, aprire segnalazioni e inviare contributi
+      noSpace: true
       background: null
       components:
 
         - name: TextImageCta
-          noSpace: true
-          text: | 
-            La documentazione e le risorse dei modelli di sito e servizi sono manutenute del team di Designers Italia con un approccio aperto e trasparente, privilegiando strumenti che permettono di seguire i lavori in tempo reale e di prendere parte alle evolutive tecniche e alle novità di progettazione.
-        - name: TextImageCta
           title: "Perché contribuire?"
-          noSpace: true
           headingLevel: 3
+          noSpace: false
           text: |
+            Crediamo che siti e servizi digitali progettati in modo collaborativo siano migliori e quindi che il contributo attivo della community che osserva, utilizza, personalizza e implementa quotidianamente le soluzioni proposte sia fondamentale per far crescere la qualità della documentazione e delle risorse operative a supporto delle PA.
+
+        - name: TextImageCta
+          title: Cosa puoi fare?
+          headingLevel: 3
+          noSpace: false
+          text: |
+            Partecipare a discussioni, aprire segnalazioni e inviare contributi.
+            
             Dalla segnalazione di una correzione alla proposta di un’integrazione, dalla presentazione di un nuovo componente alla partecipazione a discussioni su modifiche futuribili, come contributor puoi prendere parte al miglioramento continuo dei modelli di sito e servizi per la PA.
             
-            Ti suggeriamo di pensare oltre il singolo servizio digitale per immaginare componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. Condividi ciò che hai imparato nel fare ricerca con gli utenti. Sii disponibile a ricevere feedback o richieste di modifica al tuo lavoro. Sii gentile e incoraggia gli altri a esserlo, quando ricevi domande o feedback. 
-
-            Quando una persona della community contribuisce ai modelli ci piace ringraziarla pubblicamente, ma se preferisci non ricevere menzioni pubbliche, puoi farcelo sapere durante la contribuzione. 
-
-
+            Ti suggeriamo di pensare oltre il singolo servizio digitale per immaginare componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. Condividi ciò che hai imparato nel fare ricerca con gli utenti. Sii disponibile a ricevere feedback o richieste di modifica al tuo lavoro. Sii gentile e incoraggia gli altri a esserlo, quando ricevi domande o feedback.
             
+            Quando una persona della community contribuisce ai modelli ci piace ringraziarla pubblicamente, ma se preferisci non ricevere menzioni pubbliche, puoi farcelo sapere durante la contribuzione.
+
+        - name: TextImageCta
+          title: Scopri come contribuire
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Testo prova
