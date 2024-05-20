@@ -150,7 +150,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Developer #C
+            label: "Designer, Developer" #C
           - title: Vuoi
             tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
@@ -173,7 +173,7 @@ components:
   sectionsEditorial :
 
 
-    - title: I template HTML #C
+    - title: Le librerie dei componenti, moduli e sezioni #C
       menu: false
       centered: true
       background: null
@@ -181,14 +181,23 @@ components:
 
       components:
 
+        - name: TextImageCta
+          title: 
+          headingLevel: 2
+          # noSpace: true
+          text: | #C
+            Le libreria dedicata ai **componenti**, **moduli** e **sezioni** permettono di creare rapidamente le schermate e i prototipi di un flusso di servizio. Combina autonomamente tipografia, colori, pulsanti, icone ed elementi visivi per creare layout personalizzati, da testare con gli utenti finali del servizio web. Ciò ti consente di validare le scelte progettuali, intercettare potenziali criticità e integrare le dovute modifiche prima di passare all'aggiornamento del codice. 
+
+            Se non vuoi personalizzare il modello, puoi usare direttamente i template HTML.
+
         # TXT BLOCK
         - name: TextImageCta
-          #title: A cosa servono h3 #C
+          title: I template HTML
+          headingLevel: 2
           text: | #C
             I template HTML permettono di assemblare rapidamente le schermate necessarie alla fruizione del servizio da parte del cittadino. Seleziona i template relativi alla tipologia di flusso per il servizio che stai progettando e personalizza i contenuti, integrando tutte le componenti di front-end necessarie ad abilitare il flusso.
 
             I template, pronti all’uso, sono già validati in termini di accessibilità e rispettano le Linee guida sull’accessibilità degli strumenti informatici. I template permettono di creare i servizi digitali di un Comune utilizzando qualsiasi tipo di soluzione tecnologica. Usano ed estendono, inoltre, il design system del Paese e la libreria di componenti di sviluppo Bootstrap Italia.
-
 
   # ///////////////////
   # RESOURCES
@@ -201,6 +210,28 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
+          - label: Libreria componenti UI #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: "Tutti i componenti per realizzare l'interfaccia grafica dei servizi digitali" #C
+            url: https://github.com/italia/design-comuni-ui-kit #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://github.com/italia/design-comuni-ui-kit #M
+                ariaLabel: "Libreria componenti UI (si apre in una nuova finestra)" #C
+                blank: true
+          - label: Libreria dei moduli e delle sezioni - GitHub #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Tutti i componenti per assemblare un flusso di servizio #C
+            url: https://github.com/italia/design-comuni-ui-kit?tab=readme-ov-file#ui-kit-per-il-modello-di-sito-dei-comuni-italiani #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://github.com/italia/design-comuni-ui-kit?tab=readme-ov-file#ui-kit-per-il-modello-di-sito-dei-comuni-italiani #M
+                ariaLabel: "Libreria dei moduli e delle sezioni - GitHub (si apre in una nuova finestra)" #C
+                blank: true
           - label: Anteprime dei template HTML per i servizi digitali comunali #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
@@ -220,7 +251,6 @@ components:
             url: https://github.com/italia/design-comuni-pagine-statiche #M
             blank: true
             actions:
-
               - icon: sprites.svg#it-github #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: https://github.com/italia/design-comuni-pagine-statiche #M
                 ariaLabel: "Repository GitHub: Sorgenti dei template HTML per i servizi digitali comunali (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
