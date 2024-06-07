@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Affix - Designers Italia
-  description: "Un Affix è un elemento ancorato su schermata durante lo scorrere di una specifica sezione di pagina, utile per i menu e gli indici."
+  description: "Un Affix è un elemento ancorato alla schermata durante lo scorrere di una pagina intera o una specifica sezione, utile per i menu e gli indici."
   canonical: null
   pathname: /design-system/componenti/affix/
 
@@ -21,7 +21,7 @@ components:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: "Un Affix è un elemento ancorato su schermata durante lo scorrere di una specifica sezione di pagina, utile per i menu e gli indici"
+    subtitle: "Un Affix è un elemento ancorato alla schermata durante lo scorrere di una pagina intera o una specifica sezione, utile per i menu e gli indici."
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -70,7 +70,6 @@ tabs:
               
               Un elemento Affix rimane ancorato su schermata mentre si è su una specifica area della pagina.
 
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -102,14 +101,80 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
         components:
+
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit Italia (design)
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - text: ""
+
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/buttons/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
           - name: TextImageCta
-            noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
+            ctas:
+            - label: Apri una issue sul repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sul repository UI Kit Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
 
   - title: Progettazione
     sectionsEditorial:
@@ -123,7 +188,7 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              Non presenti.
 
       - full: true
         noSpace: true
@@ -147,7 +212,7 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Non presenti.
 
       - full: true
         noSpace: true
