@@ -8,8 +8,6 @@ metadata:
 seo:
   name: Microtesti
   description: "Progetta testi e microtesti dedicati alle interfacce per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/fondamenti/microtesti/
 
@@ -98,9 +96,10 @@ components:
         color: secondary
       tags: [Contenuti e linguaggio,Progettazione interfaccia]
 
-  sectionsEditorial :
+  sectionsEditorial:
     - full: true
       noSpace: false
+      paddingLeft: true
       title:  Scrivi per facilitare e orientare l’interazione
       #text: Migliora il rapporto tra utenti e interfaccia
       background: null
@@ -126,7 +125,7 @@ components:
           - label: "Scopri le buone pratiche sui contenuti del componente Buttons" #C
             url: "/design-system/componenti/buttons/" #M
             blank: false #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -147,9 +146,9 @@ components:
 
     - full: true
       noSpace: true
+      paddingLeft: true
       title: Suggerimenti per microcopy efficaci e accessibili
       background: null
-      #text: Cose da fare e cose da non fare
       components:
 
         # 1st
@@ -336,7 +335,7 @@ components:
           - label: "Scopri il fondamento dedicato al Tono di voce" #C
             url: "/design-system/fondamenti/tono-di-voce/" #M
             blank: false #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -354,7 +353,7 @@ components:
           - label: "Scopri il fondamento dedicato al Linguaggio" #C
             url: "/design-system/fondamenti/linguaggio/" #M
             blank: false #M #C true if new tab for external links
-            # disabled: true
+           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -364,11 +363,10 @@ components:
               addonClasses: ms-2
 
 
-    ####
     - full: true
       noSpace: false
+      paddingLeft: true
       title:
-      #text: Migliora il rapporto tra utenti e interfaccia
       background: null
       components:
         - name: TextImageCta

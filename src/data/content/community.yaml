@@ -16,8 +16,7 @@ metadata:
 seo:
   name: Community
   description: Lo spazio per informarti e confrontarti sulla progettazione dei servizi pubblici digitali
-  image: null
-  twitterImage: null
+  image: https://designers.italia.it/images/home/community.jpg
   canonical: null
   pathname: /community/
 
@@ -31,7 +30,7 @@ components:
     imgRatio: 4x3
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: |
@@ -59,12 +58,14 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems:
-            - url: "eventi/"
-              label: Eventi
             - url: "notizie/"
               label: Notizie
+            - url: "eventi/"
+              label: Eventi
             - url: "#articoli-di-approfondimento"
               label: Articoli di approfondimento
+            - url: "media/"
+              label: Media
             - url: "piano-attivita/"
               label: Piano attività
             - url: "contatti/"
@@ -98,109 +99,13 @@ components:
 
 
   highlightCardsLoop:
-    - id: eventi
-      title: Eventi
-      headingLevel: 3
-      text: "Gli eventi dove trovare le esperte e gli esperti di Designers Italia e i nostri cicli di eventi dedicati alla community"
-      col4: true
-      background: light
-      buttons:
-      - btnStyle: primary
-        label: Esplora tutti gli eventi
-        url: "/community/eventi/"
-        addonStyle: d-block
-        disabled: false
-
-      cards:
-
-      - title: 'Niente su di Noi, senza di Noi'
-        headingLevel: 4
-        cardEvent: true
-        img: /images/community/eventi/2023/20230621-niente-su-di-noi-senza-di-noi-1200x627.png
-        alt: Accessibility Days 2023
-        imgRatio: 4x3
-        fullHeight: true
-        imgPlaceholder: false
-        dateOverlay:
-          day: "21"
-          month: "giugno"
-          year: "2023"
-        url: "/community/eventi/20230621-niente-su-di-noi-senza-di-noi"
-        tag:
-          label: Webinar
-
-      - title: 'Accessibility Days 2023 - L’accessibilità nello sviluppo front-end di servizi pubblici: le risorse del design system del Paese'
-        headingLevel: 4
-        cardEvent: true
-        img: /images/community/eventi/2023/20230519-accessibility-days-2023-l-accessibilita-nello-sviluppo-front-end-di-servizi-pubblici-le-risorse-del-design-system-del-paese-1200x627.png
-        alt: Accessibility Days 2023
-        imgRatio: 4x3
-        fullHeight: true
-        imgPlaceholder: false
-        dateOverlay:
-          day: "19"
-          month: "maggio"
-          year: "2023"
-        url: "/community/eventi/20230519-accessibility-days-2023-l-accessibilita-nello-sviluppo-front-end-di-servizi-pubblici-le-risorse-del-design-system-del-paese"
-        tag:
-          label: Workshop
-
-      - title: Accessibility Days 2023 - ll design system del Paese e la responsabilità di progettare interfacce pubbliche
-        headingLevel: 4
-        cardEvent: true
-        img: /images/community/eventi/2023/20230518-accessibility-days-2023-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche-1200x627.png
-        alt: Accessibility Days 2023
-        imgRatio: 4x3
-        fullHeight: true
-        imgPlaceholder: false
-        dateOverlay:
-          day: "18"
-          month: "maggio"
-          year: "2023"
-        url: "/community/eventi/20230518-accessibility-days-2023-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche"
-        tag:
-          label: Talk
-
-      - title: Forum PA 2023 - Servizi e piattaforme per la cittadinanza digitale
-        headingLevel: 4
-        cardEvent: true
-        img: /images/community/eventi/2023/20230516-forum-pa-2023-servizi-e-piattaforme-per-la-cittadinanza-digitale-1200x627.png
-        alt: Forum PA
-        imgRatio: 4x3
-        fullHeight: true
-        imgPlaceholder: false
-        dateOverlay:
-          day: "16"
-          month: "maggio"
-          year: "2023"
-        url: "/community/eventi/20230516-forum-pa-2023-servizi-e-piattaforme-per-la-cittadinanza-digitale"
-        tag:
-          label: Talk
-
-
-      # - title: "Titolo dell’evento senza immagine!"
-      #   headingLevel: 4
-      #   cardEvent: true
-      #   imgRatio: 4x3
-      #   imgPlaceholder: true
-      #   fullHeight: true
-      #   dateOverlay:
-      #     day: 18
-      #     month: Dicembre
-      #   url: "#"
-      #   text: |
-      #     Descrizione **test**
-      #   tag:
-      #     label: Invito
-
-
 
     - id: notizie
       title: Notizie
       headingLevel: 3
       text: Le ultime notizie sulle attività del progetto Designers Italia
       col4: false
-      background: null
+      background: light
       buttons:
       - btnStyle: primary
         label: Esplora tutte le notizie
@@ -210,45 +115,89 @@ components:
 
       cards:
 
-      - title: 'Partono i lavori per il modello di sito web per i musei civici'
+      - title: 'Contribuisci ai modelli di Designers Italia'
         headingLevel: 4
         customCol: col-lg-4
-        text: Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale.
-        img: /images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png
+        text: "Partecipa all’evoluzione delle risorse per le PA territoriali."
+        img: /images/community/20240528-come-contribuire-ai-modelli-1400x900.png
         alt: ""
         imgRatio: 21x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/"
-        dateInfo: 27 settembre 2023
-        tags: [Modelli di sito, Adozione modelli]
-
-      - title: 'Prendi parte anche tu all’evoluzione del design system del Paese'
+        url: "/community/notizie/20240527-contribuisci-ai-modelli-di-designers-italia/"
+        dateInfo: 28 maggio 2024
+        tags: [Community, Modelli di sito, Adozione modelli]
+        
+      - title: 'Tutti gli eventi di Designers Italia a maggio'
         headingLevel: 4
-        text: Scopri tutte le novità per collaborare alla realizzazione della documentazione e delle risorse.
-        img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1400x723.png
+        customCol: col-lg-4
+        text: "Saremo presenti agli Accessibility Days e a Forum PA per raccontare le nostre risorse a disposizione della Pubblica Amministrazione."
+        img: /images/community/20240514-tutti-gli-eventi-di-designers-italia-a-maggio-1400x900.png
         alt: ""
         imgRatio: 21x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
-        dateInfo: 25 settembre 2023
-        tags: [Design system]
+        url: "/community/notizie/20240514-tutti-gli-eventi-di-designers-italia-a-maggio/"
+        dateInfo: 14 maggio 2024
+        tags: [Community, Accessibilità, Design system]
 
-      - title: 'Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto'
+      - title: 'Il modello per i musei civici: online le risorse per realizzare siti web'
         headingLevel: 4
-        text: Ora tutti i file di riferimento dei Modelli di siti e servizi di Designers Italia sono disponibili esclusivamente in formato aperto.
-        img: /images/community/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto-1400x723.png
+        customCol: col-lg-4
+        text: "Valorizzare il patrimonio culturale semplificando l’esperienza d’uso dei visitatori che cercano informazioni sui siti museali."
+        img: /images/community/20240418-il-modello-per-i-musei-civici-online-le-risorse-per-realizzare-siti-web-1400x900.png
         alt: ""
         imgRatio: 21x9
         imgPlaceholder: false
-        fullHeight: false
+        fullHeight: true
         rounded: true
-        url: "/community/notizie/20230901-modelli-di-siti-e-servizi-di-designers-italia-nuovi-file-in-formato-aperto/"
-        dateInfo: 01 settembre 2023
-        tags: [Modelli di sito, Adozione modelli]
+        url: "/community/notizie/20240418-il-modello-per-i-musei-civici-online-le-risorse-per-realizzare-siti-web"
+        dateInfo: 18 aprile 2024
+        tags: [Modelli di sito, Adozione modelli, Architettura informazione, Interfaccia utente]
+
+      - title: 'Design system .italia: disponibili le nuove versioni dei kit React ed Angular'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: Le librerie di sviluppo front-end si aggiornano con componenti sviluppati dalla community.
+        img: /images/community/20240404-design-system-italia-si-aggiorna-con-le-nuove-versioni-dei-kit-react-ed-angular-clean-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20240404-design-system-italia-disponibili-le-nuove-versioni-dei-kit-react-ed-angular/"
+        dateInfo: 3 aprile 2023
+        tags: [Sviluppo interfaccia, Design system]
+
+      - title: 'Il nuovo kit di Designers Italia per insegnare a progettare per il settore pubblico'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: La nuova sezione del sito di Designers Italia mette a disposizione della community materiali utili alla disseminazione della cultura progettuale in ambito pubblico. Il primo kit è dedicato all’insegnamento.
+        img: /images/community/20240318-il-nuovo-kit-di-designers-italia-per-insegnare-a-progettare-per-il-settore-pubblico-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20240318-il-nuovo-kit-di-designers-italia-per-insegnare-a-progettare-per-il-settore-pubblico/"
+        dateInfo: 18 marzo 2023
+        tags: [Disseminazione, Insegnamento, Cultura progettuale]
+
+      - title: 'Ciao .italia: la terza generazione del design system ha un nome ed entra in fase beta'
+        headingLevel: 4
+        customCol: col-lg-4
+        text: "L'ecosistema di risorse per realizzare siti e servizi pubblici diventa ora un elemento imprescindibile per la Pubblica Amministrazione."
+        img: /images/community/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta-1400x723.png
+        alt: ""
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: "/community/notizie/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta/"
+        dateInfo: 8 marzo 2024
+        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, UI Kit]
 
 
       topics:
@@ -262,8 +211,134 @@ components:
           url: "/argomenti/"
           btnStyle: outline-secondary
           label: Scopri tutti gli argomenti
-        tags: [Accessibilità,Privacy by design,Ricerca utente,Sviluppo front end,Design system,Test di usabilità]
+        tags: [Accessibilità,Design system,Modelli di sito,Privacy,Ricerca utente,Partecipazione,Test di usabilità]
+  
+    - id: eventi
+      title: Eventi
+      headingLevel: 3
+      text: "Gli eventi dove trovare le esperte e gli esperti di Designers Italia e i nostri cicli di eventi dedicati alla community"
+      col4: true
+      background: null
+      buttons:
+      - btnStyle: primary
+        label: Esplora tutti gli eventi
+        url: "/community/eventi/"
+        addonStyle: d-block
+        disabled: false
 
+      cards:
+
+      - title: "Lancio del nuovo modello di Designers Italia per i musei civici"
+        headingLevel: 4
+        cardEvent: true
+        img: /images/community/eventi/2024/20240604-lancio-nuovo-modello-musei-civici-1200x627.png
+        alt:
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: "04"
+          month: "giugno"
+          year: "2024"
+        url: "/community/eventi/20240604-lancio-nuovo-modello-musei-civici/"
+        tag:
+          label: Webinar
+          
+      - title: "Forum PA 2024 - Piattaforme digitali e servizi al cittadino: stato dell’arte ed evoluzioni future"
+        headingLevel: 4
+        cardEvent: true
+        img: /images/community/eventi/2024/20240523-forum-pa-2024-piattaforme-digitali-e-servizi-al-cittadino-1200x627.png
+        alt:
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: "23"
+          month: "maggio"
+          year: "2024"
+        url: "/community/eventi/20240523-forum-pa-2024-servizi-digitali-e-piattaforme-per-la-cittadinanza/"
+        tag:
+          label: Talk
+
+      - title: "Accessibility Days 2024 - Strumenti nazionali per migliorare l'esperienza di siti web e servizi digitali"
+        headingLevel: 4
+        cardEvent: true
+        img: /images/community/eventi/2024/20240516-accessibility-days-2024-strumenti-nazionali-per-migliorare-l-esperienza-di-siti-web-e-servizi-digitali-1200x627.png
+        alt:
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: "16"
+          month: "maggio"
+          year: "2024"
+        url: "/community/eventi/20240516-accessibility-days-2024-strumenti-nazionali-per-migliorare-l-esperienza-di-siti-web-e-servizi-digitali/"
+        tag:
+          label: Talk
+
+      - title: "Accessibility Days 2024 - Le iniziative nazionali per l’accessibilità"
+        headingLevel: 4
+        cardEvent: true
+        img: /images/community/eventi/2024/20240516-accessibility-days-2024-le-iniziative-nazionali-per-l-accessibilita-1200x627.png
+        alt:
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: "16"
+          month: "maggio"
+          year: "2024"
+        url: "/community/eventi/20240516-accessibility-days-2024-le-iniziative-nazionali-per-l-accessibilita/"
+        tag:
+          label: Talk
+
+      - title: "Scrivere semplice per i cittadini: creare contenuti efficaci per un sito comunale"
+        headingLevel: 4
+        cardEvent: true
+        img: /images/community/eventi/2024/20240125-scrivere-semplice-per-i-cittadini-creare-contenuti-efficaci-per-un-sito-comunale-1200x627.png
+        alt:
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: "25"
+          month: "gennaio"
+          year: "2024"
+        url: "/community/eventi/20240125-scrivere-semplice-per-i-cittadini-creare-contenuti-efficaci-per-un-sito-comunale"
+        tag:
+          label: Webinar
+
+      - title: "Migrazione e gestione dei contenuti. Mappare, riorganizzare e mantenere i contenuti secondo l'architettura del nuovo sito"
+        headingLevel: 4
+        cardEvent: true
+        img: /images/community/eventi/2024/20240111-migrazione-e-gestione-dei-contenuti-mappare-riorganizzare-e-mantenere-i-contenuti-secondo-l-architettura-del-nuovo-sito-1200x627.png
+        alt:
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: "11"
+          month: "gennaio"
+          year: "2024"
+        url: "/community/eventi/20240111-migrazione-e-gestione-dei-contenuti-mappare-riorganizzare-e-mantenere-i-contenuti-secondo-l-architettura-del-nuovo-sito"
+        tag:
+          label: Webinar
+
+      - title: "L’architettura informativa del modello Comuni. Organizzare i contenuti per realizzare un sito facile da consultare"
+        headingLevel: 4
+        cardEvent: true
+        img: /images/community/eventi/2023/20231213-l-architettura-informativa-del-modello-comuni-organizzare-i-contenuti-per-realizzare-un-sito-facile-da-consultare-1200x627.png
+        alt:
+        imgRatio: 4x3
+        fullHeight: true
+        imgPlaceholder: false
+        dateOverlay:
+          day: "13"
+          month: "dicembre"
+          year: "2023"
+        url: "/community/eventi/20231213-l-architettura-informativa-del-modello-comuni-organizzare-i-contenuti-per-realizzare-un-sito-facile-da-consultare"
+        tag:
+          label: Webinar
 
     - id: articoli-di-approfondimento
       title: Articoli di approfondimento
@@ -272,15 +347,16 @@ components:
       col4: false
       background: light
       buttons:
-      - btnStyle: primary
-        label: Esplora tutti gli approfondimenti
-        addonStyle: me-3 d-block
-        url: "#"
-        disabled: true
+      # - btnStyle: primary
+      #   label: Esplora tutti gli approfondimenti
+      #   addonStyle: me-3 d-block
+      #   url: "#"
+      #   disabled: true
       - btnStyle: outline-primary
         label: Vai al Medium di Designers Italia
         url: https://medium.com/designers-italia
         blank: true
+        ariaLabel: Vai al Medium di Designers Italia (si apre in una nuova finestra)
         icon:
           icon: sprites.svg#it-medium
           color: primary
@@ -292,151 +368,214 @@ components:
 
       #CARD MEDIUM
 
-      - title: "Progettare strumenti per la trasformazione digitale degli enti locali"
+      - title: "Verso Design system .italia: dalle origini al design system aperto della PA"
         headingLevel: 4
         customCol: col-lg-4
-        img: /images/community/articoli-di-approfondimento/20230522-progettare-strumenti-per-la-trasformazione-digitale-degli-enti-locali-1198x673.png
+        img: /images/community/articoli-di-approfondimento/20240522-verso-design-system--italia--dalle-origini-al-design-system-aperto-della-pa.png
         alt: ""
         imgRatio: 16x9
         imgPlaceholder: false
-        fullHeight: false
+        fullHeight: true
         rounded: true
-        url: https://medium.com/designers-italia/progettare-strumenti-per-la-trasformazione-digitale-degli-enti-locali-c9c55463a67a
+        url: https://medium.com/designers-italia/verso-design-system-italia-dalle-origini-al-design-system-aperto-del-paese-66a2d5af6654
         blank: true
         externalLink:
           label: Leggi su Medium
-          screenReaderText: "l'articolo completo"
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Daniele Tabellini
+        tags: [Design system, Interfaccia utente]
+
+      - title: "Verso Design system .italia: come è nato il nome del design system del Paese"
+        headingLevel: 4
+        customCol: col-lg-4
+        img: /images/community/articoli-di-approfondimento/20240411-verso-design-system--italia--come-e-nato-il-nome-del-design-syssten-del-paese.png
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/verso-design-system-italia-come-%C3%A8-nato-il-nome-del-design-system-del-paese-a2720e219f00
+        blank: true
+        externalLink:
+          label: Leggi su Medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Gabriella Poggioli
+        tags: [Design system]
+
+      - title: "Favorire il cambiamento in ecosistemi di servizio complessi: il modello per i musei civici"
+        headingLevel: 4
+        customCol: col-lg-4
+        img: /images/community/articoli-di-approfondimento/20240327-favorire-il-cambiamento-in-ecosistemi-di-servizio-complessi-il-modello-per-i-musei-civici-1198x673.png
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/favorire-il-cambiamento-in-ecosistemi-di-servizio-complessi-il-modello-per-i-musei-civici-edf12360d256
+        blank: true
+        externalLink:
+          label: Leggi su Medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Federico Giaimo
+        tags: [Adozione modelli]
+
+      - title: "A caccia di buone pratiche! Esplorazione dello stato dell’arte dei siti web dei musei"
+        headingLevel: 4
+        customCol: col-lg-4
+        img: /images/community/20240229-a-caccia-di-buone-pratiche-esplorazione-dello-stato-dell-arte-dei-siti-web-dei-musei-1198x673.png
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/a-caccia-di-buone-pratiche-7fea585bbc7e
+        blank: true
+        externalLink:
+          label: Leggi su Medium
+          screenReaderText: " (si apre in una nuova finestra)"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
         moreInfo: di Ilaria Scarpellini
+        tags: [Adozione modelli, Ricerca utente]
 
-      - title: "Un Vademecum per ripensare lo spazio digitale delle Università"
+      - title: "L’importanza dell’usabilità, un esempio virtuoso in ambito sanitario"
         headingLevel: 4
-        img: /images/community/articoli-di-approfondimento/20230403-un-vademecum-per-ripensare-lo-spazio-digitale-delle-universita-1198x673.png
-        alt: "Mappa dell'ecosistema dei servizi universitari: attori che usufruiscono del servizio e quelli che, lavorando dietro le quinte, ne permettonono il funzionamento"
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: https://medium.com/designers-italia/un-vademecum-per-ripensare-lo-spazio-digitale-delle-universit%C3%A0-5d94b99905e5
-        blank: true
-        externalLink:
-          label: Leggi su Medium
-          screenReaderText: " l'articolo completo"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Daria Cantù
-
-      - title: "Una grammatica dei servizi pubblici digitali"
-        headingLevel: 4
-        img: /images/community/articoli-di-approfondimento/una-grammatica-dei-servizi-pubblici-digitali.webp
+        customCol: col-lg-4
+        img: /images/community/articoli-di-approfondimento/20240125-l-importanza-dell-usabilita-un-esempio-virtuoso-in-ambito-sanitario-1198x673.png
         alt: ""
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef
+        url: https://medium.com/designers-italia/limportanza-dell-usabilit%C3%A0-un-esempio-virtuoso-in-ambito-sanitario-0bccabddde35
         blank: true
         externalLink:
           label: Leggi su Medium
-          screenReaderText: " l'articolo completo"
+          screenReaderText: " (si apre in una nuova finestra)"
           icon:
             icon: sprites.svg#it-external-link
             size: xs
-        moreInfo: di Marco Maria Pedrazzo
+        moreInfo: di Ilaria Scarpellini
+        chips:
+        tags: [Test di usabilità, Ricerca utente]
 
-    # XXX DISABLED MEDIA AREA > WILL GO TO NEXT MILESTONE
+      - title: "Accessibilità: il bello del design inclusivo"
+        headingLevel: 4
+        customCol: col-lg-4
+        img: /images/community/articoli-di-approfondimento/20240119-accessibilita-il-bello-del-design-inclusivo-1198x673.png
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/accessibilit%C3%A0-il-bello-del-design-inclusivo-ceac5d423c04
+        blank: true
+        externalLink:
+          label: Leggi su Medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Francesco Mascia
+        tags: [Accessibilità, Progettazione interfaccia]
 
-    # - id: media
-    #   title: Media
-    #   headingLevel: 3
-    #   text: "I video degli eventi a cui partecipiamo, i tutorial tecnici e i podcast sul progetto Designers Italia"
-    #   col4: true
-    #   background: null
-    #   buttons:
-    #   - btnStyle: primary
-    #     label: Esplora tutti i media
-    #     addonStyle: d-block
-    #     disabled: true
+    # MEDIA
 
-    #   cards:
-    #   - title: "Community Call: il bottone SPID e gli altri"
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 21 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Registrazione
+    - id: media
+      title: Media
+      headingLevel: 3
+      text: "I video, i tutorial e i podcast del progetto Designers Italia"
+      col4: true
+      background: null
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti i media
+        url: "/community/media/"
+        addonStyle: d-block
+        disabled: false
 
-    #   - title: Come usare il design system del Paese quanso sei al mare
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 1 minuto
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Tutorial
+      cards:
 
-    #   - title: Fanelli parla di Designers Italia
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 21 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-hearing
-    #       ariaLabel: Audio
-    #     url: "#"
-    #     tag:
-    #       label: Podcast
+      - title: "Il modello di sito per le aziende sanitarie locali (ASL)"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl.png
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl"
+        tag:
+          label: Video - Webinar
+      
+      - title: "Il design system del Paese per realizzare siti e servizi dei Comuni"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20231115-il-design-system-del-paese-per-realizzare-siti-e-servizi-dei-comuni.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20231115-il-design-system-del-paese-per-realizzare-siti-e-servizi-dei-comuni"
+        tag:
+          label: Video - Webinar
 
-    #   - title: "Community Lab: il mondo cambia, il design cambia, domani si va al mare"
-    #     headingLevel: 4
-    #     titleSmall: true
-    #     moreInfo: durata 10 minuti
-    #     cardEvent: true
-    #     img: /images/400x300.png
-    #     alt: descrizione immagine
-    #     imgRatio: 16x9
-    #     imgPlaceholder: false
-    #     fullHeight: true
-    #     iconOverlay:
-    #       icon: sprites.svg#it-video
-    #       ariaLabel: Video
-    #     url: "#"
-    #     tag:
-    #       label: Registrazione
+      - title: "Niente su di Noi, senza di Noi - La sfida accolta da Designers Italia, AGID e Accessibility Days"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230621-niente-su-di-noi-senza-di-noi-la-sfida-accolta-da-designers-italia-agid-e-accessibility-days"
+        tag:
+          label: Video - Evento
 
-
+      - title: "Il design system del Paese e la responsabilità di progettare interfacce pubbliche"
+        headingLevel: 4
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche.jpg
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche"
+        tag:
+          label: Video - Evento
 
 
   highlightsLoop:
-    - title: Piano attività
-      subtitle: "Gli obiettivi e i risultati del progetto Designers Italia"
-      id: piano-attivita
+    - title: Materiali di disseminazione
+      subtitle: "Risorse e materiali utili per divulgare la cultura della progettazione nell’ambito della Pubblica Amministrazione"
+      id: materiali-di-disseminazione
       # img: /images/400x300.png
       # alt: descrizione immagine
       headingLevel: 2
@@ -444,10 +583,25 @@ components:
       background: medium
       specular: true
       buttons:
+        - label: Scopri i materiali di disseminazione
+          btnStyle: primary
+          url: "materiali-di-disseminazione/"
+          addonStyle: mb-3
+
+    - title: Piano attività
+      subtitle: "Gli obiettivi e i risultati del progetto Designers Italia"
+      id: piano-attivita
+      # img: /images/400x300.png
+      # alt: descrizione immagine
+      headingLevel: 2
+      big: false
+      background: light
+      specular: true
+      buttons:
         - label: Scopri il piano attività
           btnStyle: primary
           url: "piano-attivita/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
 
     - title: Contatti
       subtitle: "Richiedi informazioni sulle attività e i progetti di Designers Italia"
@@ -456,11 +610,11 @@ components:
       # alt: descrizione immagine
       headingLevel: 2
       big: false
-      background: light
+      background: null
       specular: true
       buttons:
         - label: Scopri i contatti
           btnStyle: primary
           url: "contatti/"
-          addonStyle: mb-3 mb-sm-0
+          addonStyle: mb-3
 
