@@ -1,8 +1,7 @@
 import React from "react";
+import classNames from "classnames";
 import Card from "../card/card";
 import ListArchiveDSTags from "../list-archive-ds-tags/list-archive-ds-tags";
-
-import "./filter-cards.scss";
 
 function FilterCards({
   id,
@@ -13,14 +12,16 @@ function FilterCards({
   showTags,
   col2,
   noSpace,
+  paddingX,
 }) {
-  const styles =
-    "filter-cards px-3 p-md-0" +
-    `${background ? ` bg-${background}` : ""}` +
-    `${noSpace ? "" : " py-5 py-lg-6"}` +
-    `${col2 ? " two-columns" : ""}`;
+  const styles = classNames("filter-cards", {
+    [`bg-${background}`]: background,
+    "py-5 py-lg-6": !noSpace,
+    "py-2 py-lg-5": noSpace,
+    "px-lg-4 px-xl-5": paddingX,
+  });
 
-  const cardStyles = `col-12 col-md-6 mb-3 mb-md-4 ${col2 ? "" : " col-lg-4"}`;
+  const cardStyles = `col-12 col-md-6 mb-3 mb-md-4 ${col2 ? "" : " col-xl-4"}`;
 
   let cardsItems;
 
