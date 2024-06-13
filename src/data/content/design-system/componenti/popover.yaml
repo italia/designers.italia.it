@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Popover - Designers Italia
-  description: "Una card a comparsa che può contenere testo e azioni, utile per mostrare informazioni o funzionalità aggiuntive."
+  description: "Un suggerimento a comparsa che può contenere testo e azioni, utile per mostrare informazioni o funzionalità aggiuntive."
   canonical: null
   pathname: /design-system/componenti/popover/
 
@@ -21,7 +21,7 @@ components:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: "Una card a comparsa che può contenere testo e azioni, utile per mostrare informazioni o funzionalità aggiuntive"
+    subtitle: "Un suggerimento a comparsa che può contenere testo e azioni, utile per mostrare informazioni o funzionalità aggiuntive"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -65,7 +65,9 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente popover può essere utilizzato quando si desidera fornire informazioni aggiuntive o contestuali, senza interrompere la navigazione o un flusso di lavoro in corso.
+
+              È il caso ad esempio di fornire un suggerimento o una spiegazione dettagliata per un elemento dell'interfaccia utente, come un pulsante o un campo input.
 
       - full: true
         noSpace: true
@@ -76,7 +78,16 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Assicurati che il popover sia ben posizionato in relazione all'elemento che lo attiva. Non dovrebbe bloccare altre interazioni importanti sull'interfaccia utente.
+              - Il popover dovrebbe apparire solo in risposta a un'azione dell'utente, come un clic o un passaggio del mouse.
+              - Il popover dovrebbe fornire un modo chiaramente visibile per l'utente di chiuderlo, come un pulsante di chiusura o facendo clic fuori dal popover.
+
+              ## Attenzione a
+              - Utilizzare il popover per contenuti critici, in quanto non tutti gli utenti potrebbero essere in grado di accedervi a causa di restrizioni di accessibilità o di interazione.
+
+              ## Buone pratiche sui contenuti
+              - Il contenuto del popover dovrebbe essere breve e pertinente. Non è il luogo per lunghi blocchi di testo o dettagli complessi.
+
 
       - full: true
         noSpace: true
