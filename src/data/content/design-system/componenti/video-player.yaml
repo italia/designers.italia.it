@@ -8,9 +8,8 @@ metadata:
 
 seo:
   name: Video player - Designers Italia
-  description: "Componente utile per mostrare video e audio con sottotitoli e trascrizioni, da locale o in streaming"
+  description: "Componente utile per mostrare video dal proprio sito o incorporati da piattaforme terze rispettando privacy e accessibilità."
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/video-player/
 
@@ -22,13 +21,8 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Componente utile per mostrare video e audio con sottotitoli e trascrizioni, da locale o in streaming"
+    subtitle: "Componente utile per mostrare video dal proprio sito o incorporati da piattaforme terze rispettando privacy e accessibilità"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -66,26 +60,46 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente Video player è utile per mostrare contenuti video nelle pagine del proprio sito. Si può usare per video caricati su un hosting proprio oppure per video provenienti da piattaforme di terze parti, utilizzando la variante con overlay di consenso per la privacy.   
+              
+              I video possono essere strumenti preziosi sia dal punto di vista della comunicazione che dell'istruzione. È però importante valutare e curare gli aspetti di privacy e accessibilità dei contenuti prima di pubblicarli, di preferenza tenendo conto del parere di esperti di settore e responsabili della privacy del proprio ente o progetto.    
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Collega nei parametri del Video player i sottotitoli in formato [WebVTT](https://www.w3.org/TR/webvtt1/).
+              - Inserisci la trascrizione o un link a questa nello spazio dedicato.
+              - Implementa il meccanismo di gestione overlay di consenso ogni volta che usi video provenienti da piattaforme di terze parti (ad esempio YouTube). 
+
+              ### Attenzione a
+              - Non forzare il player in modalità "auto-play": lascia all'utente la scelta di iniziare, mettere in pausa o interrompere la visione.
+              - Ottimizza i video per lo streaming se li carichi nel tuo spazio hosting e non in una piattaforma dedicata.   
+              - Se utilizzi video provenienti da piattaforme di terze parti dovrai collegare la tua cookie policy nel meccanismo di overlay di consenso, aggiornare la stessa cookie policy con l'aiuto del responsabile del trattamento dati del tuo ente e implementare un meccanismo per la revoca del consenso, simile ad esempio a quello implementato su questo sito designers.italia.it. 
+
+              ### Buone pratiche per i contenuti
+              - Mostra video che rispondano a bisogni dell'utente, ad esempio semplificando l'accesso a informazioni o fornendo istruzioni su come svolgere attività.
+              - Il contenuto video non dovrebbe essere usato come unica modalità per veicolare informazioni salienti nell'ambito del sito o servizio.
+              - Se il video è uno dei contenuti predominanti della pagina, abbi cura di associargli un titolo e/o una descrizione o testo breve per offrire agli utenti informazioni di contesto preliminari alla visione.
+              - Ti ricordiamo che i soli sottotitoli generati in automatico da una piattaforma non sono sufficienti, perché è necessario che sia un umano a correggerli o integrarli.
+              - Collega un'immagine di anteprima che anticipi il video in attesa del caricamento e/o del consenso. 
+
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -96,51 +110,177 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
+        components:
+
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit Italia (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: "UI Kit Italia su Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/video-player/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
+          - name: TextImageCta
+            ctas:
+            - label: Apri una issue sul repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sul repository UI Kit Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
+  - title: Progettazione
+    sectionsEditorial:      
+    
+      - full: true
+        noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-  - title: Progettazione
-    sectionsEditorial:
-
-      - full: true
-        noSpace: true
-        components:
-          - name: TextImageCta
-            noSpace: false
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/videoplayer-anatomy.png
+            alt: "Gli elementi che compongono il Video player"
+          - name: TextImageCta
+            noSpace: true
             text: |
-              _In stesura_
+              Il Video player completo è composto da quattro elementi principali:
+
+              1. **spazio video**: di solito in formato 16:9 o 4:3;
+              2. **pulsante play**: visibile in stato iniziale di attesa comando dall'utente;
+              3. **barra di controllo**: barra di controllo visibile durante la riproduzione, contiene tutti i controlli come play/pausa, volume, timeline, sottotitoli, schermo intero;
+              4. **trascrizione**: spazio predisposto per ospitare la trascrizione dei dialoghi o l'eventuale link a dove si trova.
+
+              ### Barra di controllo
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/videoplayer-controlbar-anatomy.png
+            alt: "Gli elementi che compongono la barra di controllo del Video player"
+          - name: TextImageCta
+            noSpace: true
+            text: |             
+              La barra di controllo del Video player è composta da: 
+
+              1. **contenitore**: definisce un colore di fondo con il colore di brand, può essere leggermente trasparente per non coprire totalmente il video sottostante;
+              2. **pulsante play/pausa**: controlla la riproduzione;
+              3. **pulsante volume ed eventuale slider volume**: controlla il volume audio (on/off) e può essere affiancato da uno slider per controllare il livello di volume audio;
+              4. **timeline del video e indicatore numerico tempo**: indica lo stato di progress della riproduzione;
+              5. **pulsante capitoli**: opzionale, da accesso all'indice dei capitoli se presente;
+              6. **pulsante sottotitoli**: opzionale, da accesso all'indice dei sottotitoli se presenti in più lingue, e funziona come pulsante on/off se in una sola lingua; 
+              7. **pulsante lingue audio**: opzionale, da accesso all'indice delle tracce audio se presenti in più lingue; 
+              8. **pulsante schermo intero**: attiva la modalità riproduzione a schermo intero del dispositivo. 
+
+              ### Overlay di consenso
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/videoplayer-consentoverlay-anatomy.png
+            alt: "Gli elementi che compongono l'overlay di consenso per il Video player"
+          - name: TextImageCta
+            noSpace: false
+            text: |             
+              L'overlay di consenso, attivabile nel caso di riproduzione di video da piattaforme di terze parti, è composto da:
+
+              1. **fondale**: fondo colorato nel colore di branding con leggera trasparenza, a coprire l'intera area del Video player;
+              2. **icona video**;
+              3. **descrizione**: testo che spiega la CTA che segue e invita alla consultazione della Cookie policy;
+              4. **opzione ricorda per tutti i video**: opzionale, attiva il meccanismo di memorizzazione delle preferenze utente del sito, se presente;
+              5. **pulsante accetta**: call to action primaria valida solo per questo video se non presente l'opzione di cui al punto 4. 
+
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le varianti di Video player sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
+
+              Nel caso di utilizzo di video da piattaforme di terze parti l'overlay di consenso appare in automatico sopra ogni Video player se l'utente non ha accettato la Cookie policy specifica. Isolando il browser dell'utente dalla piattaforma di terze parti a meno non sia specificatamente accettato.  
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              _In stesura._
 
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -150,7 +290,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -173,6 +313,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -182,7 +323,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary

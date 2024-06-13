@@ -3,7 +3,7 @@ import React from "react";
 import ReactMarkdown from "react-markdown";
 import "./section-intro.scss";
 
-import ContentCollapse from "../content-collapse/contentCollapse";
+import ContentCollapse from "../content-collapse/content-collapse";
 
 function SectionIntro({
   id,
