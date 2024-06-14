@@ -2,28 +2,22 @@ const https = require('https')
 const fs = require("fs");
 const path = require("path");
 const yaml = require(`js-yaml`);
+const { slugify, toTitleCase } = require("./utils");
+
 
 const STATUS_API = "https://raw.githubusercontent.com/italia/bootstrap-italia/main/api/components_status.json"
 const COMPONENTS_YAML_DIR = path.join("src", "data", "content", "design-system", "componenti");
 
 
-function slugify(str) {
-  str = str.replace(/^\s+|\s+$/g, ''); // trim leading/trailing white space
-  str = str.toLowerCase(); // convert string to lowercase
-  str = str.replace(/[^a-z0-9 -]/g, '') // remove any non-alphanumeric characters
-           .replace(/\s+/g, '-') // replace spaces with hyphens
-           .replace(/-+/g, '-'); // remove consecutive hyphens
-  return str;
-}
-
-const toTitleCase = (string) => {
-  string = string.toLowerCase()
-  return string.charAt(0).toUpperCase() + string.slice(1);
-};
-
 const JSON_TO_COLS = {
   "angular Kit" : "Angular",
   "amichevole con lettori di schermo" : "Amichevole con lettori di schermo"
+}
+
+const STATUS_TO_CLASSES = {
+  "Non presente" : "neutral-2-bg text-secondary",
+  "Pronto" : "bg-success",
+  "Da rivedere" : "bg-warning"
 }
 
 function replaceValuesInTable(rows, component) {
@@ -38,9 +32,10 @@ function replaceValuesInTable(rows, component) {
     for (row of rows) {
       for(let colIndex = 0 ; colIndex < row.cols.length ; colIndex++) {
         if (row.cols[colIndex].text === JSON_TO_COLS[key]) {
-          console.log(row.cols[colIndex])
-          console.log(row.cols[colIndex + 1].tag.label)
-          console.log(finalValue)
+          row.cols[colIndex + 1].tag.label = finalValue
+          if (STATUS_TO_CLASSES[finalValue]) {
+            row.cols[colIndex + 1].tag.addonClasses = STATUS_TO_CLASSES[finalValue]
+          }
           break;
         }
       }
@@ -78,7 +73,7 @@ async function prepareComponentsStatus() {
     statusTable = statusEditorial.components.find(el => el.name === 'Table')
     replaceValuesInTable(a11Table.rows, component)
     replaceValuesInTable(statusTable.rows, component)
-    // fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), 'utf8');
+    fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), 'utf8');
   }
 }
 
