@@ -16,6 +16,38 @@ function slugify(str) {
   return str;
 }
 
+const toTitleCase = (string) => {
+  string = string.toLowerCase()
+  return string.charAt(0).toUpperCase() + string.slice(1);
+};
+
+const JSON_TO_COLS = {
+  "angular Kit" : "Angular",
+  "amichevole con lettori di schermo" : "Amichevole con lettori di schermo"
+}
+
+function replaceValuesInTable(rows, component) {
+  // Find cols with text, then change the tag with component value
+  Object.keys(JSON_TO_COLS).forEach(function(key) {
+    // Get the updated value, if not present skip the search troughout columns
+    let finalValue = component[key]
+    if (finalValue === undefined) {
+      finalValue = 'Non presente'
+    }
+    finalValue = toTitleCase(finalValue)
+    for (row of rows) {
+      for(let colIndex = 0 ; colIndex < row.cols.length ; colIndex++) {
+        if (row.cols[colIndex].text === JSON_TO_COLS[key]) {
+          console.log(row.cols[colIndex])
+          console.log(row.cols[colIndex + 1].tag.label)
+          console.log(finalValue)
+          break;
+        }
+      }
+    }
+  });
+}
+
 async function prepareComponentsStatus() {
   const promise = new Promise((resolve, reject) => {
     var data = '';
@@ -38,8 +70,15 @@ async function prepareComponentsStatus() {
     )
     const yamlFileToEdit = path.join(COMPONENTS_YAML_DIR, `${title}.yaml`)
     const yamlData = yaml.load(fs.readFileSync(yamlFileToEdit, 'utf8'));
-    console.log(yamlData)
-    fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), 'utf8');
+
+    const tabUsoEAccessibilita = yamlData.tabs[0]
+    const a11yEditorial = tabUsoEAccessibilita.sectionsEditorial[tabUsoEAccessibilita.sectionsEditorial.length - 2]
+    const statusEditorial = tabUsoEAccessibilita.sectionsEditorial[tabUsoEAccessibilita.sectionsEditorial.length - 1]
+    a11Table = a11yEditorial.components.find(el => el.name === 'Table')
+    statusTable = statusEditorial.components.find(el => el.name === 'Table')
+    replaceValuesInTable(a11Table.rows, component)
+    replaceValuesInTable(statusTable.rows, component)
+    // fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), 'utf8');
   }
 }
 
