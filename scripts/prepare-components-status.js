@@ -10,8 +10,16 @@ const COMPONENTS_YAML_DIR = path.join("src", "data", "content", "design-system",
 
 
 const JSON_TO_COLS = {
+  // Kit columns
   "angular Kit" : "Angular",
-  "amichevole con lettori di schermo" : "Amichevole con lettori di schermo"
+  "react Kit" : "React",
+  "uI Kit Italia" : "UI Kit Italia (design)",
+  "bootstrap Italia" : "Bootstrap Italia",
+  // A11y columns
+  "navigabile" : "Navigabile",
+  "comprensibile" : "Comprensibile",
+  "visivamente accessibile" : "Visivamente accessibile",
+  "amichevole con lettori di schermo" : "Amichevole con lettori di schermo",
 }
 
 const STATUS_TO_CLASSES = {
@@ -20,13 +28,13 @@ const STATUS_TO_CLASSES = {
   "Da rivedere" : "bg-warning"
 }
 
-function replaceValuesInTable(rows, component) {
+function replaceValuesInTable(rows, component, missingLabel='Non presente') {
   // Find cols with text, then change the tag with component value
   Object.keys(JSON_TO_COLS).forEach(function(key) {
     // Get the updated value, if not present skip the search troughout columns
     let finalValue = component[key]
     if (finalValue === undefined) {
-      finalValue = 'Non presente'
+      finalValue = missingLabel
     }
     finalValue = toTitleCase(finalValue)
     for (row of rows) {
@@ -71,7 +79,7 @@ async function prepareComponentsStatus() {
     const statusEditorial = tabUsoEAccessibilita.sectionsEditorial[tabUsoEAccessibilita.sectionsEditorial.length - 1]
     a11Table = a11yEditorial.components.find(el => el.name === 'Table')
     statusTable = statusEditorial.components.find(el => el.name === 'Table')
-    replaceValuesInTable(a11Table.rows, component)
+    replaceValuesInTable(a11Table.rows, component, "Da rivedere")
     replaceValuesInTable(statusTable.rows, component)
     fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), 'utf8');
   }
