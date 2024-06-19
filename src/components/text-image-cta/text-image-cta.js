@@ -5,7 +5,7 @@ import SimpleCta from "../simple-cta/simple-cta";
 import "./text-image-cta.scss";
 
 import ImageResponsive from "../image-responsive/image-responsive";
-import ContentCollapse from "../content-collapse/contentCollapse";
+import ContentCollapse from "../content-collapse/content-collapse";
 
 function TextImageCta({
   title,
@@ -15,6 +15,7 @@ function TextImageCta({
   image,
   alt,
   specular,
+  ctasVertical,
   ctas,
   noSpace,
   moreButton,
@@ -42,6 +43,10 @@ function TextImageCta({
     "mb-5": !noSpace,
     "flex-column flex-sm-row": image && specular,
     "flex-column flex-sm-row-reverse": image && !specular,
+  });
+
+  const ctasStyles = classNames("ctas mt-3 mb-4", {
+    "d-lg-flex flex-wrap": !ctasVertical,
   });
 
   const imageWrapperStyles = classNames(
@@ -77,7 +82,7 @@ function TextImageCta({
             {moreText}
           </ContentCollapse>
         )}
-        {ctaItems && <div className="ctas mt-4 d-md-flex">{ctaItems}</div>}
+        {ctaItems && <div className={ctasStyles}>{ctaItems}</div>}
       </div>
     </div>
   );
