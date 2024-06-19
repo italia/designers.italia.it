@@ -2,7 +2,7 @@ name: Bootstrap Italia update
 
 on:
   schedule:
-    - cron:  '30 18 * * *'
+    - cron:  '4 10 * * *'
 
   workflow_dispatch:
 
@@ -19,7 +19,9 @@ jobs:
         run: | 
           npm i bootstrap-italia@latest
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5.0.2
+        uses: peter-evans/create-pull-request@v6.0.5
         with:
           title: "chore(deps): update bootstrap italia"
+          commit-message: "chore(deps): update bootstrap italia"
           branch: feature/update-assets
+          token: ${{ secrets.DEVELOPERS_ITALIA_DROID_GITHUB_TOKEN }}
