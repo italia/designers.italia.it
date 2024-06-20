@@ -32,18 +32,18 @@ function walk(dir, callback) {
 }
 
 function slugify(str) {
-  str = str.replace(/^\s+|\s+$/g, ""); // trim leading/trailing white space
-  str = str.toLowerCase(); // convert string to lowercase
-  str = str
+  let finalStr = str.replace(/^\s+|\s+$/g, ""); // trim leading/trailing white space
+  finalStr = finalStr.toLowerCase(); // convert string to lowercase
+  finalStr = finalStr
     .replace(/[^a-z0-9 -]/g, "") // remove any non-alphanumeric characters
     .replace(/\s+/g, "-") // replace spaces with hyphens
     .replace(/-+/g, "-"); // remove consecutive hyphens
-  return str;
+  return finalStr;
 }
 
 const toTitleCase = (string) => {
-  string = string.toLowerCase();
-  return string.charAt(0).toUpperCase() + string.slice(1);
+  const finalStr = string.toLowerCase();
+  return finalStr.charAt(0).toUpperCase() + finalStr.slice(1);
 };
 
 module.exports = {

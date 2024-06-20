@@ -43,7 +43,7 @@ function replaceValuesInTable(rows, component, missingLabel = "Non presente") {
       finalValue = missingLabel;
     }
     finalValue = toTitleCase(finalValue);
-    for (row of rows) {
+    for (const row of rows) {
       for (let colIndex = 0; colIndex < row.cols.length; colIndex++) {
         if (row.cols[colIndex].text === JSON_TO_COLS[key]) {
           row.cols[colIndex + 1].tag.label = finalValue;
@@ -68,12 +68,15 @@ async function prepareComponentsStatus() {
       res.on("end", () => {
         resolve(data);
       });
+      res.on("error", () => {
+        reject(data);
+      });
     });
   });
 
   const result = JSON.parse(await promise);
 
-  for (component of result.items) {
+  for (const component of result.items) {
     const title = slugify(
       component.title.substring(
         component.title.indexOf("`") + 1,
@@ -92,8 +95,10 @@ async function prepareComponentsStatus() {
       tabUsoEAccessibilita.sectionsEditorial[
         tabUsoEAccessibilita.sectionsEditorial.length - 1
       ];
-    a11Table = a11yEditorial.components.find((el) => el.name === "Table");
-    statusTable = statusEditorial.components.find((el) => el.name === "Table");
+    const a11Table = a11yEditorial.components.find((el) => el.name === "Table");
+    const statusTable = statusEditorial.components.find(
+      (el) => el.name === "Table",
+    );
     replaceValuesInTable(a11Table.rows, component, "Da rivedere");
     replaceValuesInTable(statusTable.rows, component);
     fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), "utf8");
