@@ -65,7 +65,9 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente Carousel è utile per presentare una serie di contenuti correlati che non possono essere visualizzati contemporaneamente sullo schermo. 
+
+              È quindi un elemento ideale per navigare liste di contenuti come, ad esempio, gli eventi o le notizie più recenti, oppure per mettere in evidenza servizi o funzionalità.
 
       - full: true
         noSpace: true
@@ -76,7 +78,23 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Assicurati che le immagini o i contenuti visualizzati nel carousel siano correlati tra loro e pertinenti al contesto della pagina.
+              - Non sovraccaricare il Carousel con un troppi contenuti. Un numero eccessivo può causare confusione e rendere difficile per gli utenti focalizzarsi su un elemento specifico.
+              - Fornisci indicatori visivi per aiutare gli utenti a capire in quale punto del carousel si trovano, come punti, numeri o frecce.
+              - Se possibile, evita di utilizzare un carousel per contenuti critici o importanti, in quanto alcuni utenti potrebbero non notare o ignorare completamente il Carousel.
+              - Assicurati che il carousel sia navigabile sia attraverso input da mouse che attraverso tastiera. Questo è particolarmente importante per l'accessibilità.
+
+              ### Attenzione a
+              - Evitare che le transizioni tra i contenuti del carousel siano troppo veloci, per permettere alle persone di assimilare le informazioni.
+              - Controllare che il carousel non intralci l'esperienza dell'utente se viene ignorato o non utilizzato.
+              - Verificare che le immagini o i contenuti del carousel siano di alta qualità e chiaramente visibili su tutti i dispositivi.
+              - Non utilizzare il carousel come unico mezzo di navigazione sul tuo sito o applicazione.
+              - Assicurati che il carousel non interferisca con altri elementi interattivi sulla pagina.
+              - Testare il carousel con utenti reali per assicurarti che sia intuitivo e facile da usare.
+
+              ### Buone pratiche sui contenuti
+              - Scrivi testi chiari e non troppo lunghi per le slide del carousel, poiché potrebbero venir troncati con dei puntini di sospensione e rendere difficile la comprensione.
+
 
       - full: true
         noSpace: true
@@ -92,14 +110,86 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
         components:
+
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit Italia (design)
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                - simpleCta :
+                    label: Kit
+                    url: https://www.figma.com/community/file/1105848677422572920
+                    blank: true
+                    screenReaderText: "UI Kit Italia su Figma (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-figma
+                      size: sm
+
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Da rivedere
+                    addonClasses: bg-danger ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/buttons/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                -text: ""
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Da rivedere
+                    addonClasses: bg-danger ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
           - name: TextImageCta
-            noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
+            ctas:
+            - label: Apri una issue sul repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sul repository UI Kit Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Progettazione
     sectionsEditorial:
@@ -113,7 +203,13 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano il carousel](/images/design-system/componenti/carousel-anatomy.png)
+
+              Il componente Carousel è composto da:
+              1. **titolo** (opzionale): può essere utilizzato quando il carousel definisce una specifica sezione di una pagina;
+              2. **lista contenuti**: possono essere cards, immagini singole o multiple;
+              3. **frecce di navigazione**: consentono di scorrere orizzontalmente la lista contenuti, non sono visibili su mobile; 
+              4. **indicatori di progresso**: indicano da quante slide è composto il carousel, evidenziando quella attualmente visibile.
 
       - full: true
         noSpace: true
@@ -124,7 +220,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Gli utenti possono navigare i contenuti del carousel manualmente utilizzando i pulsanti di navigazione, la scrollbar del browser o indicatori.
+              - Il carousel può ruotare automaticamente i contenuti a intervalli regolari e gli utenti possono fermarlo interagendo con mouse, tastiera o touch.
 
       - full: true
         noSpace: true
@@ -135,8 +232,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
 
+              ![Specifiche di design del carousel](/images/design-system/componenti/carousel-specs.png)
 
       - full: true
         noSpace: true
