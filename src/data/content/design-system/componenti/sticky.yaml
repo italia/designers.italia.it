@@ -8,9 +8,7 @@ metadata:
 
 seo:
   name: Sticky - Designers Italia
-  description: "Rende un elemento della pagina costantemente visibile allo scorrere della pagina"
-  image: null
-  twitterImage: null
+  description: "Rende un elemento della pagina costantemente visibile allo scorrere della pagina."
   canonical: null
   pathname: /design-system/componenti/sticky/
 
@@ -22,11 +20,6 @@ components:
     tag:
       label: Componenti #C
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
     subtitle: "Rende un elemento della pagina costantemente visibile allo scorrere della pagina"
     # img: /images/400x300.png #I
@@ -66,6 +59,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -76,6 +70,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -86,6 +81,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -96,6 +92,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         id: ComponentStatus
         components:
           - name: TextImageCta
@@ -110,6 +107,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -120,6 +118,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -130,6 +129,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
@@ -141,6 +141,7 @@ tabs:
 
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -150,7 +151,7 @@ tabs:
             - label: Vai alla scheda per designer #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -173,6 +174,7 @@ tabs:
     sectionsEditorial:
       - full: true
         noSpace: true
+        paddingLeft: true
         components:
           - name: TextImageCta
             title: Come iniziare
@@ -182,7 +184,7 @@ tabs:
             - label: Vai alla scheda per sviluppatori #C
               # screenReaderText: " (si apre in una nuova finestra)" #C
               url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
