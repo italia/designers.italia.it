@@ -65,8 +65,13 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: |           
+              Utilizza il comportamento sticky per mantenere un elemento visibile mentre l'utente scorre la pagina. Questo è particolarmente utile per:
+
+              - menu di navigazione che devono rimanere accessibili durante lo scorrimento della pagina;
+              - *call-to-action* importanti che devono essere sempre visibili;
+              - pulsanti di contatto o supporto che devono essere facilmente raggiungibili;
+              - intestazioni di tabelle o sezioni di contenuto che devono essere sempre visibili per riferimento continuo.
 
       - full: true
         noSpace: true
@@ -77,7 +82,12 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Utilizza il comportamento sticky all'elemento di navigazione principale della pagina.
+
+              ### Attenzione a 
+
+              - Non applicare lo stesso comportamento per più elementi nella stessa pagina in quanto l'esperienza di navigazione può essere compromessa.
+              - Applica un ombreggiatura o un bordo che separi visivamente l'elemento fisso dal resto dei contenuti.
 
       - full: true
         noSpace: true
@@ -93,14 +103,77 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
+        title: Stato del componente
         id: ComponentStatus
+        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+        background: null
         components:
+
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                - text: UI Kit Italia (design)
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+              - cols:
+                - text: Bootstrap Italia
+                  scope: row
+                - tag:
+                    label: Pronto
+                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - simpleCta :
+                    label: Scheda documentazione
+                    blank: true
+                    url: https://italia.github.io/bootstrap-italia/docs/componenti/sticky/
+                    screenReaderText: " (si apre in una nuova finestra)"
+                    icon:
+                      icon: sprites.svg#it-external-link
+                      size: sm
+              - cols:
+                - text: React
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
+              - cols:
+                - text: Angular
+                  scope: row
+                - tag:
+                    label: Non presente
+                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
+                - text: ""
           - name: TextImageCta
-            noSpace: true
-            title: Stato del componente
-            headingLevel: 2
-            text: |
-              *In stesura*
+            ctas:
+            - label: Apri una issue sul repository Bootstrap Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/bootstrap-italia/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+            - label: Apri una issue sul repository UI Kit Italia #C
+              screenReaderText: " (si apre in una nuova finestra)" #C
+              url: https://github.com/italia/design-ui-kit/issues/new #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
   - title: Progettazione
     sectionsEditorial:
@@ -114,7 +187,7 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              Non ci sono indicazioni.
 
       - full: true
         noSpace: true
@@ -125,7 +198,7 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              L'elemento a cui viene applicato il comportamento sticky rimane visibile durante lo scorrimento della pagina, sovrapponendosi ai contenuti sottostanti. 
 
       - full: true
         noSpace: true
@@ -136,7 +209,7 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Non ci sono indicazioni.
 
 
       - full: true
