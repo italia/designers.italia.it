@@ -24,9 +24,9 @@ function Table({ title, head, rows, addonClasses, responsive, headingLevel }) {
   }
 
   if (rows) {
-    rowItems = rows.map((rowItem, index) => (
-      <tr key={`tr-${index}`}>
-        {rowItem.cols.map((tdItem, index) => {
+    rowItems = rows.map((rowItem, rowIndex) => (
+      <tr key={`tr-${rowIndex}`}>
+        {rowItem.cols.map((tdItem, tdIndex) => {
           if (tdItem.scope) {
             CellType = `th`;
             CellScope = "row";
@@ -34,15 +34,15 @@ function Table({ title, head, rows, addonClasses, responsive, headingLevel }) {
             CellType = `td`;
             CellScope = null;
           }
-          const tagsItems = tdItem.tags?.map((item, index) => (
+          const tagsItems = tdItem.tags?.map((item, itemIndex) => (
             <div>
-              <Tag {...item} key={`tag-${index}`} />
+              <Tag {...item} key={`tag-${itemIndex}`} />
             </div>
           ));
           return (
             <CellType
               scope={CellScope}
-              key={`td-${index}`}
+              key={`td-${tdIndex}`}
               className={tdItem.addonClasses}
             >
               {tdItem.text && <ReactMarkdown>{tdItem.text}</ReactMarkdown>}
