@@ -27,7 +27,6 @@ seo:
   name: Progetta il flusso di servizio - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Assembla i componenti e prototipa il flusso di interazione per realizzare i servizi digitali dei Comuni. #C
   image: null #I
-  twitterImage: null #I
   canonical: null
   pathname: /modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/progetta-il-flusso-di-servizio/ #M
 
@@ -192,13 +191,51 @@ components:
         - name: TextImageCta
           title: I moduli #C
           text: | #C
-            Ciascun modulo rappresenta un passaggio di alto livello dell’interazione che il cittadino deve svolgere per fruire di un servizio. I moduli sono 12 e corrispondono a schermate di interfaccia, suddivise per pagine. Ogni modulo è composto da una serie di sezioni.
+            Ciascun modulo rappresenta un passaggio di alto livello dell’interazione che il cittadino deve svolgere per fruire di un servizio. I [moduli sono 12](https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/moduli.html#i-moduli-i-passaggi) e corrispondono a schermate di interfaccia, suddivise per pagine. Ogni modulo è composto da una serie di sezioni.
+
+
+            Alcuni esempi di moduli:
+            - Inserire/controllare dati personali.
+            - Perfezionare la richiesta.
+            - Pagamento.
+            - Riepilogo.
+
+          ctas:
+          - label: Vai al dettaglio dei moduli #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/moduli.html#i-moduli-i-passaggi #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+            
 
         # TXT BLOCK
         - name: TextImageCta
           title: Le sezioni #C
           text: | #C
             Le sezioni sono invece campi di informazioni e componenti più specifici. Le diverse sezioni vengono assemblate tra di loro per formare i moduli. Alcune sezioni sono state progettate con una serie di varianti, in modo da poterle assemblare in moduli adatti alle esigenze di interazione di un servizio specifico.
+
+            Ad esempio, il modulo "Riepilogo" prevede le seguenti sezioni:
+            - Dati di un soggetto (una persona fisica o giuridica).
+            - Dati un oggetto (un immobile o un veicolo).
+
+          ctas:
+          - label: Vai al dettaglio delle sezioni #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/flussi-di-servizi/sezioni.html#le-sezioni-dei-moduli #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
   # ///////////////////
   # RESOURCES
@@ -237,7 +274,7 @@ components:
             srBefore: "Scarica PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             #srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
             text: Lo schema delle interazioni per comprendere in che ordine assemblare i componenti per la tipologia di servizi comunali "Vantaggi economici" #C
-            url: /resources/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/progetta-il-flusso-di-servizio/3-Vantaggi-economici-diagrammadiflusso-ServiziComuni.pdf #M
+            url: /files/resources/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/progetta-il-flusso-di-servizio/3-Vantaggi-economici-diagrammadiflusso-ServiziComuni.pdf #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
@@ -266,33 +303,4 @@ components:
                 url: /files/resources/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/progetta-il-flusso-di-servizio/5-Servizi-pagamento-diagrammadiflusso-ServiziComuni.pdf #M
                 ariaLabel: "Scarica PDF Diagramma di flusso per Servizi a pagamento" #C #COMPILE FOR EACH ITEM
                 blank: false
-
-      - simpleList: true
-        title: Librerie #C
-        headingLevel: 3
-        listItems:
-          - label: Libreria dei moduli e delle sezioni - Figma #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Tutti i componenti per assemblare un flusso di servizio su Figma #C
-            url: https://www.figma.com/file/jj5iuCVAogSWCWsiSeXRoN/Comuni---Documentazione-Moduli-e-Sezioni?type=design&node-id=0%3A1&t=ZLk2GOzXhUiiw8k6-1 #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://www.figma.com/file/jj5iuCVAogSWCWsiSeXRoN/Comuni---Documentazione-Moduli-e-Sezioni?type=design&node-id=0%3A1&t=ZLk2GOzXhUiiw8k6-1 #M
-                ariaLabel: "Libreria dei moduli e delle sezioni - Figma (si apre in una nuova finestra)" #C
-                blank: true
-          - label: Libreria componenti UI - Figma #C
-            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: "Tutti i componenti per realizzare l'interfaccia grafica dei servizi digitali su Figma" #C
-            url: https://www.figma.com/file/WWt2dI4AnnHDj53jHH41ko/Comuni---Libreria-componenti?type=design&node-id=2%3A28&t=iY12glMBNH5I5COZ-1 #M
-            blank: true
-            actions:
-              - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: https://www.figma.com/file/WWt2dI4AnnHDj53jHH41ko/Comuni---Libreria-componenti?type=design&node-id=2%3A28&t=iY12glMBNH5I5COZ-1 #M
-                ariaLabel: "Libreria componenti UI - Figma (si apre in una nuova finestra)" #C
-                blank: true
-
-
 
