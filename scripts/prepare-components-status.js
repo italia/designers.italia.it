@@ -52,11 +52,13 @@ function replaceValuesInTable(rows, component, missingLabel = "Non presente") {
               STATUS_TO_CLASSES[finalValue];
           }
           // CHANGE URL
-          if (["Angular", "React", "Bootstrap Italia"].includes(JSON_TO_COLS[key])) {
-            if(component[`${key} - url`]) {
+          if (
+            ["Angular", "React", "Bootstrap Italia"].includes(JSON_TO_COLS[key])
+          ) {
+            if (component[`${key} - url`]) {
               row.cols[colIndex + 2].simpleCta.url = component[`${key} - url`];
             } else {
-              row.cols[colIndex + 2].simpleCta.url = "Non presente"
+              row.cols[colIndex + 2].simpleCta.url = "Non presente";
             }
           }
           break;
@@ -107,7 +109,7 @@ async function prepareComponentsStatus() {
     const statusTable = statusEditorial.components.find(
       (el) => el.name === "Table",
     );
-    
+
     replaceValuesInTable(a11Table.rows, component, "Da rivedere");
     replaceValuesInTable(statusTable.rows, component);
     fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), "utf8");
