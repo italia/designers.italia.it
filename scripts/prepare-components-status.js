@@ -54,10 +54,9 @@ function replaceValuesInTable(rows, component, missingLabel = "Non presente") {
           // CHANGE URL
           if (["Angular", "React", "Bootstrap Italia"].includes(JSON_TO_COLS[key])) {
             if(component[`${key} - url`]) {
-              if (!row.cols[colIndex + 2].simpleCta) {
-                row.cols[colIndex + 2].simpleCta = { 'url' : '' }
-              }
               row.cols[colIndex + 2].simpleCta.url = component[`${key} - url`];
+            } else {
+              row.cols[colIndex + 2].simpleCta.url = "Non presente"
             }
           }
           break;

@@ -247,10 +247,15 @@ tabs:
                   - tag:
                       label: Pronto
                       addonClasses: bg-success
-                  - text: ''
-                    simpleCta:
+                  - simpleCta:
+                      label: Scheda documentazione
                       url: >-
                         https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/collapse
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
           - name: TextImageCta
             ctas:
               - label: Apri una issue sul repository Bootstrap Italia
