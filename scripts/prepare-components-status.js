@@ -51,6 +51,15 @@ function replaceValuesInTable(rows, component, missingLabel = "Non presente") {
             row.cols[colIndex + 1].tag.addonClasses =
               STATUS_TO_CLASSES[finalValue];
           }
+          // CHANGE URL
+          if (["Angular", "React", "Bootstrap Italia"].includes(JSON_TO_COLS[key])) {
+            if(component[`${key} - url`]) {
+              if (!row.cols[colIndex + 2].simpleCta) {
+                row.cols[colIndex + 2].simpleCta = { 'url' : '' }
+              }
+              row.cols[colIndex + 2].simpleCta.url = component[`${key} - url`];
+            }
+          }
           break;
         }
       }
@@ -99,6 +108,7 @@ async function prepareComponentsStatus() {
     const statusTable = statusEditorial.components.find(
       (el) => el.name === "Table",
     );
+    
     replaceValuesInTable(a11Table.rows, component, "Da rivedere");
     replaceValuesInTable(statusTable.rows, component);
     fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), "utf8");
