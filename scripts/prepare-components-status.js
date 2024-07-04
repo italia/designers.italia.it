@@ -58,7 +58,7 @@ function replaceValuesInTable(rows, component, missingLabel = "Non presente") {
             if (component[`${key} - url`]) {
               row.cols[colIndex + 2].simpleCta.url = component[`${key} - url`];
             } else {
-              row.cols[colIndex + 2].simpleCta.url = "Non presente";
+              row.cols[colIndex + 2].simpleCta.url = undefined;
             }
           }
           break;
