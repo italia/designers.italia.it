@@ -1,62 +1,47 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/componenti/avatar.json
   template:
     name: design-system-component
-
 seo:
   name: Avatar - Designers Italia
-  description: "Rappresentazione grafica di un utente."
+  description: Rappresentazione grafica di un utente.
   canonical: null
   pathname: /design-system/componenti/avatar/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Avatar
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: "Rappresentazione grafica di un utente"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: Rappresentazione grafica di un utente
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
       titleSr: Metadati e link per approfondire
-      # tagsLabel: Argomenti
       tagsDesignSystemLabel: Utile per
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      # tags: [test1, test2]
-      tagsDesignSystem: [Utilità]
-
+      tagsDesignSystem:
+        - Utilità
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
+      id: preview-use
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/avatar/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -66,9 +51,12 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              Il componente avatar permette di rappresentare un utente o soggetto, il suo lo stato e le sue azioni in contesti di interazione. Può essere utile ad esempio per indicare l'autore di un testo, il proprio profilo in un'area riservata, gli utenti che hanno interagito con un contenuto. 
-
+            text: >
+              Il componente avatar permette di rappresentare un utente o
+              soggetto, il suo lo stato e le sue azioni in contesti di
+              interazione. Può essere utile ad esempio per indicare l'autore di
+              un testo, il proprio profilo in un'area riservata, gli utenti che
+              hanno interagito con un contenuto. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -77,22 +65,42 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
+            text: >
               - Per rappresentare un utente o soggetto durante l'esperienza.
-              - Per rappresentare lo stato e le azioni disponibili per l'utente nelle aree riservate.  
-              - Nella varianti lista (gruppi) per rappresentare chi ha interagito con il contenuto mostrato nel contesto. 
+
+              - Per rappresentare lo stato e le azioni disponibili per l'utente
+              nelle aree riservate.  
+
+              - Nella varianti lista (gruppi) per rappresentare chi ha
+              interagito con il contenuto mostrato nel contesto. 
+
 
               ### Attenzione a
+
               - Rappresenta un solo utente o soggetto per ogni Avatar.
-              - Per indicare gruppi o "oggetti" valuta di utilizzare solo icone se più indicate. 
-              - Prevedi sempre un modo di indicare il nome dell'utente; se scegli di non esplicitarlo usa tooltip e/o testi alternativi per i lettori di schermo.
+
+              - Per indicare gruppi o "oggetti" valuta di utilizzare solo icone
+              se più indicate. 
+
+              - Prevedi sempre un modo di indicare il nome dell'utente; se
+              scegli di non esplicitarlo usa tooltip e/o testi alternativi per i
+              lettori di schermo.
+
               - Usa con parsimonia le liste (gruppi) di Avatar.  
 
-              ### Buone pratiche sui contenuti. 
-              - Dai la possibilità all'utente di caricare la propria immagine preferita.
-              - Implementa la possibilità per l'utente di tagliare (crop) l'immagine quadrata (o rotonda) durante o successivamente al caricamento, se possibile. 
-              - Metti a disposizione un set di icone con simboli o testo predefiniti nel caso in cui l'utente non voglia caricare un'immagine.
 
+              ### Buone pratiche sui contenuti. 
+
+              - Dai la possibilità all'utente di caricare la propria immagine
+              preferita.
+
+              - Implementa la possibilità per l'utente di tagliare (crop)
+              l'immagine quadrata (o rotonda) durante o successivamente al
+              caricamento, se possibile. 
+
+              - Metti a disposizione un set di icone con simboli o testo
+              predefiniti nel caso in cui l'utente non voglia caricare
+              un'immagine.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -101,7 +109,9 @@ tabs:
             noSpace: true
             title: Accessibilità
             headingLevel: 2
-            text: Lo stato delle verifiche di accessibilità effettuate sul componente Bootstrap Italia
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
           - name: Table
             responsive: table-responsive-md
             head:
@@ -110,47 +120,46 @@ tabs:
               - text: Descrizione
             rows:
               - cols:
-                - text: Visivamente accessibile
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - text: Uso e contrasto dei colori, leggibilità
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - text: Uso e contrasto dei colori, leggibilità
               - cols:
-                - text: Amichevole con lettori di schermo
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - text: Struttura titolazioni, etichette e testi alternativi
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
-                - text: Navigabile
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - text: Focus, struttura, navigazione da tastiera o altri device
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Focus, struttura, navigazione da tastiera o altri device
               - cols:
-                - text: Comprensibile
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - text: Comprensibile, prevedibile, gestione semplice dell’errore
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
           - name: TextImageCta
             ctas:
-            - label: Apri una issue sul repository Bootstrap Italia #C
-              screenReaderText: " (si apre in una nuova finestra)" #C
-              url: https://github.com/italia/bootstrap-italia/issues/new #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
@@ -159,7 +168,9 @@ tabs:
             noSpace: false
             title: Stato del componente
             headingLevel: 2
-            text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
           - name: Table
             responsive: table-responsive-md
             head:
@@ -168,82 +179,82 @@ tabs:
               - text: Link
             rows:
               - cols:
-                - text: UI Kit Italia (design)
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - simpleCta :
-                    label: Kit
-                    url: https://www.figma.com/community/file/1105848677422572920
-                    blank: true
-                    screenReaderText: "UI Kit Italia su Figma (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-figma
-                      size: sm
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Da rivedere a11y
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
               - cols:
-                - text: Bootstrap Italia
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - simpleCta :
-                    label: Scheda documentazione
-                    blank: true
-                    url: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
-                    screenReaderText: " (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-external-link
-                      size: sm
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Da rivedere a11y
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
               - cols:
-                - text: React
-                  scope: row
-                - tag:
-                    label: Da rivedere
-                    addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - simpleCta :
-                    label: Scheda Storybook
-                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-accordion--page
-                    blank: true
-                    screenReaderText: " (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-external-link
-                      size: sm
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-accordion--page
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
               - cols:
-                - text: Angular
-                  scope: row
-                - tag:
-                    label: Non presente
-                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - text: ""
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Da completare varianti
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: ''
           - name: TextImageCta
             ctas:
-            - label: Apri una issue sul repository Bootstrap Italia #C
-              screenReaderText: " (si apre in una nuova finestra)" #C
-              url: https://github.com/italia/bootstrap-italia/issues/new #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-            - label: Apri una issue sul repository UI Kit Italia #C
-              screenReaderText: " (si apre in una nuova finestra)" #C
-              url: https://github.com/italia/design-ui-kit/issues/new #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -252,32 +263,58 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              ![Gli elementi che possono comporre un avatar](/images/design-system/componenti/avatar-anatomy.png)
+            text: >
+              ![Gli elementi che possono comporre un
+              avatar](/images/design-system/componenti/avatar-anatomy.png)
 
-              Le varianti del componente avatar possono essere composte con i seguenti elementi:
+
+              Le varianti del componente avatar possono essere composte con i
+              seguenti elementi:
+
               1. **immagine dell'utente**; 
+
               2. **forma di sfondo** per le varianti con icona o testo;
+
               3. **icona** dell'utente;
+
               4. **testo** con iniziali dell'utente;
+
               5. **indicatore** colorato per indicare lo stato dell'utente;
+
               6. **indicatore** colorato per indicare la presenza dell'utente.
 
-              Le scelte tra immagine, icona o testo a rappresentare l'utente sono alternative tra loro. 
+
+              Le scelte tra immagine, icona o testo a rappresentare l'utente
+              sono alternative tra loro. 
+
 
               ### Liste di avatar
 
-              ![Gli elementi che possono comporre una lista di avatar](/images/design-system/componenti/avatar-lists-anatomy.png)
 
-              Le varianti lista (o gruppo) del componente avatar possono essere composte con i seguenti elementi:
-              1. **spazio immagine**, può ospitare immagine dell'utente, icona o iniziali;  
+              ![Gli elementi che possono comporre una lista di
+              avatar](/images/design-system/componenti/avatar-lists-anatomy.png)
+
+
+              Le varianti lista (o gruppo) del componente avatar possono essere
+              composte con i seguenti elementi:
+
+              1. **spazio immagine**, può ospitare immagine dell'utente, icona o
+              iniziali;  
+
               2. **nome avatar**;
+
               3. **più avatar sovrapposti**;
-              4. **indicatore ulteriori utenti**, indica quanti altri profili utente sono disponibili, può agire come un pulsante di apertura dropdown; 
-              5. **dropdown lista**, mostra la lista di utenti in chiaro, opzionale.
 
-              Gli avatar nelle liste sovrapposte possono prevedere inoltre tooltip con il nome avatar.  
+              4. **indicatore ulteriori utenti**, indica quanti altri profili
+              utente sono disponibili, può agire come un pulsante di apertura
+              dropdown; 
 
+              5. **dropdown lista**, mostra la lista di utenti in chiaro,
+              opzionale.
+
+
+              Gli avatar nelle liste sovrapposte possono prevedere inoltre
+              tooltip con il nome avatar.  
       - full: true
         noSpace: true
         paddingLeft: true
@@ -286,14 +323,21 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
+            text: >
               ### Interazioni
-              Il componente prevede la possibilità di stati di hover e di focus, da implementare a seconda del contesto. 
 
-              Se l'implementazione prevede un tooltip, questo appare all'attivazione del componente per click, tap o navigazione in focus da tastiera. 
+              Il componente prevede la possibilità di stati di hover e di focus,
+              da implementare a seconda del contesto. 
 
-              Nel caso della variante lista con avatar sovrapposti, attivando l'indicatore con il numero di avatar nascosti, si apre un menu dropdown che mostra tutti gli avatar disponibili.
 
+              Se l'implementazione prevede un tooltip, questo appare
+              all'attivazione del componente per click, tap o navigazione in
+              focus da tastiera. 
+
+
+              Nel caso della variante lista con avatar sovrapposti, attivando
+              l'indicatore con il numero di avatar nascosti, si apre un menu
+              dropdown che mostra tutti gli avatar disponibili.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -302,19 +346,26 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
+            text: >
               Tutte le misure indicate sono espresse in `px`.
 
+
               ### Varianti di dimensione
-              ![Specifiche di design di avatar](/images/design-system/componenti/avatar-sizes-specs.png)
+
+              ![Specifiche di design di
+              avatar](/images/design-system/componenti/avatar-sizes-specs.png)
+
 
               ### Varianti con stati 
-              ![Specifiche di design di avatar con stati](/images/design-system/componenti/avatar-statuses-specs.png)
+
+              ![Specifiche di design di avatar con
+              stati](/images/design-system/componenti/avatar-statuses-specs.png)
+
 
               ### Liste di avatar 
-              ![Specifiche di design delle liste di avatar](/images/design-system/componenti/avatar-lists-specs.png)
 
-
+              ![Specifiche di design delle liste di
+              avatar](/images/design-system/componenti/avatar-lists-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -322,30 +373,28 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: false #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
+      id: preview-dev
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/avatar/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -354,16 +403,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: false #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
