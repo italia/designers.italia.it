@@ -35,18 +35,18 @@ const STATUS_TO_CLASSES = {
   "Da rivedere": "bg-warning",
   "In review": "bg-warning",
   "In progress": "bg-warning",
-  "Verifica in corso" : "bg-warning",
-  "Deprecato" : "bg-danger"
+  "Verifica in corso": "bg-warning",
+  Deprecato: "bg-danger",
 };
 
 const TRANSLATE_STATUS = {
-  "In progress" : "Verifica in corso",
-  "In review" : "Verifica in corso",
-  "Da fare" : "Non presente",
-  "Da completare varianti" : "Pronto",
-  "Da rivedere a11y" : "Da rivedere",
-  "Da rimuovere" : "Deprecato"
-}
+  "In progress": "Verifica in corso",
+  "In review": "Verifica in corso",
+  "Da fare": "Non presente",
+  "Da completare varianti": "Pronto",
+  "Da rivedere a11y": "Da rivedere",
+  "Da rimuovere": "Deprecato",
+};
 
 function replaceValuesInTable(rows, component, missingLabel = "Da verificare") {
   // Find cols with text, then change the tag with component value
@@ -57,7 +57,9 @@ function replaceValuesInTable(rows, component, missingLabel = "Da verificare") {
       finalValue = missingLabel;
     }
     finalValue = toTitleCase(finalValue);
-    finalValue = TRANSLATE_STATUS[finalValue] ? TRANSLATE_STATUS[finalValue] : finalValue
+    finalValue = TRANSLATE_STATUS[finalValue]
+      ? TRANSLATE_STATUS[finalValue]
+      : finalValue;
     for (const row of rows) {
       for (let colIndex = 0; colIndex < row.cols.length; colIndex++) {
         if (row.cols[colIndex].text === JSON_TO_COLS[key]) {
