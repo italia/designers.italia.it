@@ -30,11 +30,25 @@ const JSON_TO_COLS = {
 
 const STATUS_TO_CLASSES = {
   "Non presente": "neutral-2-bg text-secondary",
+  "Da verificare": "neutral-2-bg text-secondary",
   Pronto: "bg-success",
   "Da rivedere": "bg-warning",
+  "In review": "bg-warning",
+  "In progress": "bg-warning",
+  "Verifica in corso" : "bg-warning",
+  "Deprecato" : "bg-danger"
 };
 
-function replaceValuesInTable(rows, component, missingLabel = "Non presente") {
+const TRANSLATE_STATUS = {
+  "In progress" : "Verifica in corso",
+  "In review" : "Verifica in corso",
+  "Da fare" : "Non presente",
+  "Da completare varianti" : "Pronto",
+  "Da rivedere a11y" : "Da rivedere",
+  "Da rimuovere" : "Deprecato"
+}
+
+function replaceValuesInTable(rows, component, missingLabel = "Da verificare") {
   // Find cols with text, then change the tag with component value
   Object.keys(JSON_TO_COLS).forEach(function (key) {
     // Get the updated value, if not present skip the search troughout columns
@@ -43,6 +57,7 @@ function replaceValuesInTable(rows, component, missingLabel = "Non presente") {
       finalValue = missingLabel;
     }
     finalValue = toTitleCase(finalValue);
+    finalValue = TRANSLATE_STATUS[finalValue] ? TRANSLATE_STATUS[finalValue] : finalValue
     for (const row of rows) {
       for (let colIndex = 0; colIndex < row.cols.length; colIndex++) {
         if (row.cols[colIndex].text === JSON_TO_COLS[key]) {
