@@ -53,7 +53,6 @@ function replaceValuesInTable(rows, component, missingLabel = "Da verificare") {
   Object.keys(JSON_TO_COLS).forEach(function (key) {
     // Get the updated value, if not present skip the search troughout columns
     let finalValue = component[key];
-    console.log(component)
     if (finalValue === undefined) {
       finalValue = missingLabel;
     }
