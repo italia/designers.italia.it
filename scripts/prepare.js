@@ -6,11 +6,11 @@ const { prepareComponentsStatus } = require("./prepare-components-status.js");
 
 const main = async () => {
   console.log("⤵️ Downloading examples...");
-  await downloadExamples("bsi");
-  console.log("✅ Done");
-  console.log("🧵 Generating examples...");
-  generateExamples("bsi");
-  console.log("✅ Done");
+  // await downloadExamples("bsi");
+  // console.log("✅ Done");
+  // console.log("🧵 Generating examples...");
+  // generateExamples("bsi");
+  // console.log("✅ Done");
   console.log("📊 Generating components status...");
   await prepareComponentsStatus();
   console.log("✅ Done");
