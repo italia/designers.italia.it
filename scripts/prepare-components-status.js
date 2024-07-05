@@ -127,7 +127,7 @@ async function prepareComponentsStatus() {
       (el) => el.name === "Table",
     );
 
-    replaceValuesInTable(a11Table.rows, component, "Da rivedere");
+    replaceValuesInTable(a11Table.rows, component);
     replaceValuesInTable(statusTable.rows, component);
     fs.writeFileSync(yamlFileToEdit, yaml.dump(yamlData), "utf8");
   }
