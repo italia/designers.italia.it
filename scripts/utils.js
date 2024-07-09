@@ -31,7 +31,24 @@ function walk(dir, callback) {
   });
 }
 
+function slugify(str) {
+  let finalStr = str.replace(/^\s+|\s+$/g, ""); // trim leading/trailing white space
+  finalStr = finalStr.toLowerCase(); // convert string to lowercase
+  finalStr = finalStr
+    .replace(/[^a-z0-9 -]/g, "") // remove any non-alphanumeric characters
+    .replace(/\s+/g, "-") // replace spaces with hyphens
+    .replace(/-+/g, "-"); // remove consecutive hyphens
+  return finalStr;
+}
+
+const toTitleCase = (string) => {
+  const finalStr = string.toLowerCase();
+  return finalStr.charAt(0).toUpperCase() + finalStr.slice(1);
+};
+
 module.exports = {
   searchInDir,
   walk,
+  slugify,
+  toTitleCase,
 };
