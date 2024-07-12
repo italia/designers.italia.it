@@ -3,9 +3,9 @@
 
 .chip {
 	text-decoration: none;
-	padding-left: var(--chip-x-padding);
-	padding-right: var(--chip-x-padding);
+	margin: 4px 8px 8px 0px; // fix to move to BSI
 	&.chip-simple {
+		padding-left: var(--chip-x-padding);
 		padding-right: var(--chip-x-padding);
 	}
 	.chip-label {
