@@ -53,7 +53,14 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente Toolbar è un menu che utilizza principalmente le icone come elemento di navigazione. 
+              È particolarmente utile per realizzare applicazioni molto specifiche, come ad esempio dashboard o strumenti di monitoraggio. 
+
+              ### Alternative a questo componente
+
+              - Usa il componente `BottomNav` per creare un menu in stile app mobile che sia sempre fissa nella parte inferiore dello schermo.
+              - Usa il componente `Header` per realizzare un menu di navigazione classico.
+
       - full: true
         noSpace: true
         paddingLeft: true
@@ -63,7 +70,19 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Usa il componente toolbar insieme ad un elemento di intestazione come ad esempio [slim header](#) per dare un contesto di prodotto.
+              - Usa la variante laterale nel caso in cui sia presente un [header](#) completo.
+              - Usa la variante con dropdown nel caso in cui ogni voci di menu abbia un sotto livello di navigazione.
+              - Usa i divisori per raggruppare voci di menu che appartengono ad uno stesso gruppo logico.
+
+              ### Attenzione a
+
+              - Scegliere icone con un significato chiaro e che descriva bene i contenuti ad esso associati.
+
+              ### Buone pratiche sui contenuti
+
+              - Usa una parola singola per l’etichetta associata all’icona.
+
       - full: true
         noSpace: true
         paddingLeft: true
@@ -233,7 +252,17 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              ![Gli elementi che formano la Toolbar](/images/design-system/componenti/bottomnav-anatomy.png)
+
+              Il componente toolbar è composto da:
+
+              1. **forma di sfondo**: racchiude tutte le voci di menu;
+              2. **icona**: rappresenta visivamente il contenuto della sezione;
+              3. **etichetta** (label): descrive la sezione, generalmente con un
+              parola; 
+              4. **contatore** (opzionale): se presente, il numero del badge
+              informa sulla presenza di notifiche o aggiornamenti.
+
       - full: true
         noSpace: true
         paddingLeft: true
@@ -243,7 +272,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              - Il componente toolbar si adatta automaticamente in larghezza.
+              - 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -253,7 +283,10 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design del
+              BottomNav](/images/design-system/componenti/bottomnav-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
