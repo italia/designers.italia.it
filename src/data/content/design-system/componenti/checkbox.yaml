@@ -71,7 +71,14 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente checkbox è utile quando si desidera offrire agli utenti la possibilità di selezionare una o più opzioni da un elenco di scelte predefinite. 
+              
+              Può essere utilizzato per:
+
+              - Form di registrazione o domanda
+              - Questionari e sondaggi
+              - Filtri di ricerca
+              - Preferenze utente
 
       - full: true
         noSpace: true
@@ -82,7 +89,18 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+            - Usa il componente checkbox nel caso di scelte multiple o quando è richiesta una scelta singola di tipo binario, come “Accetto/Non accetto”.
+            - Se il numero di opzioni disponibili è superiore ad otto, considera invece l’uso combinato delle checkbox in un dropdown.
+            - Assicurati che lo stato selezionato o deselezionato sia facilmente riconoscibile.
+            - Abilita il supporto per la navigazione tramite tastiera.
+
+             ### Buone pratiche sui contenuti
+
+            - Scegli una label chiara e descrittiva per ogni opzione.
+
+            ### Attenzione a
+
+            - Rendere evidente quali opzioni sono selezionabili.
 
       - full: true
         noSpace: true
@@ -263,7 +281,13 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Il componente checkbox può presentare i seguenti comportamenti:
+
+              - Selezione singola: Quando un utente clicca su una checkbox, questa mostra uno stato di selezione (spunta) per indicare che l'opzione è stata scelta.
+              - Deselezione: Un secondo clic sulla checkbox deseleziona l'opzione, rimuovendo la spunta.
+              - Stato indeterminato: In alcuni casi, una checkbox può mostrare uno stato indeterminato (ad esempio, una linea orizzontale) per indicare che alcune, ma non tutte, le opzioni subordinate sono state selezionate.
+              - Interazioni visive: La checkbox deve cambiare visivamente stato (colore, spunta) in modo chiaro e immediato al clic dell'utente.
+              - Navigazione da tastiera: La checkbox deve poter essere selezionata e deselezionata anche tramite l'uso della tastiera, utilizzando il tasto "Tab" per la navigazione e la barra spaziatrice per la selezione.
               
       - full: true
         noSpace: true
