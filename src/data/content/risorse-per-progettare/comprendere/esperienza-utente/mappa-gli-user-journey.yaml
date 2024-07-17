@@ -24,11 +24,11 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Individua i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Parti dagli obiettivi e dalle preferenze dell'utente per stabilire i contenuti e le funzionalità che dovrebbe avere il touchpoint digitale del servizio. #C
-  image: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png #I
+  name: "Mappa gli user journey - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: Dettaglia l'esperienza e le interazioni delle persone nelle diverse fasi d'uso del servizio.. #C
+  image: null #I
   canonical: null
-  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/individua-i-contenuti/ #M
+  pathname: /risorse-per-progettare/comprendere/esperienza-utente/mappa-gli-user-journey/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -43,7 +43,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Progettare #C
+        label: Comprendere #C
         url: "../../" #M
       - title: Nel kit di design #C
         icon:
@@ -51,7 +51,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: "Architettura dell'informazione" #C
+        label: Esperienza utente #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -92,20 +92,20 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Individua i contenuti #C
-    subtitle: Parti dagli obiettivi e dalle preferenze dell'utente per stabilire i contenuti e le funzionalità che dovrebbe avere il touchpoint digitale del servizio #C
+    title: "Mappa gli user journey" #C
+    subtitle: Dettaglia l'esperienza e le interazioni delle persone nelle diverse fasi d'uso del servizio #C
     tag:
-      label: Kit di design #C
+      label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
     # pretext:
     #   icon:
     #     icon: sprites.svg#it-info-circle
     #     size: sm
-    #   text: In breve
+    # text: In breve
     # text: | #C
     #   Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_architettura_scenari.svg #I
-    alt: "" #C
+    img: /images/risorse-per-progettare/icons/kit_esperienzautente_journey.svg #I
+    iconImgAlt: "" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -114,22 +114,23 @@ components:
       titleSr: Metadati e link per approfondire
       navposition:
         items:
-        - title: Ti trovi nella fase #C
-          icon:
-            icon: "sprites.svg#it-folder"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: Progettare #C
-          url: "../../" #M
-        - title: Nel kit di design #C
-          icon:
-            icon: "sprites.svg#it-tool"
-            size: "sm"
-            align: "middle"
-            color: "secondary"
-          label: "Architettura dell'informazione" #C
-          url: "../" #M
+          - title: Ti trovi nella fase
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Comprendere #C
+            url: "../../" #M
+          - title: Nel kit #C
+            icon:
+              icon: "sprites.svg#it-tool"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Esperienza utente #C
+            url: "../" #M
       otherInfo:
         items:
           - title: Rispettando
@@ -158,22 +159,22 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "Progettare l'interazione dell'utente con il servizio" #C
+            label: "Capire il contesto d'uso del servizio" #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Architettura informazione,Contenuti e linguaggio]
+      tags: [User journey]
 
-  ## ///////////////////
+  # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial :
 
 
-    - title: Come definire i contenuti e le funzionalità necessari all'utente per raggiungere i suoi obiettivi #C
+    - title: Come mappare il percorso delle persone che usano il tuo servizio #C
       menu: false
       centered: true
       background: null
@@ -185,9 +186,11 @@ components:
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
-            Per definire i contenuti e le funzionalità di un sito o un servizio digitale è importante partire dagli **obiettivi dell'utente** nell'interazione con il touchpoint. Per ciascun obiettivo l'utente ha delle necessità informative e delle preferenze di interazione, ovvero quelle caratteristiche che rendono la sua **esperienza di fruizione semplice ed efficace** e che si rispecchiano poi nei contenuti e nelle funzionalità dell'interfaccia.
+            Lo strumento di mappatura user journey ti permette di **raccontare visivamente il percorso che le persone compiono quando utilizzano il tuo servizio**, evidenziando le opportunità e i punti deboli su cui intervenire.
 
-            Svolgendo ricerca utente è possibile identificare i principali scenari d'uso del servizio e mettere a fuoco obiettivi e preferenze d'interazione realistiche per le diverse tipologie di utilizzatori di un sito o servizio digitale. Questo strumento ti aiuta a fare una lista di **tutte le cose che all'utente serve sapere e poter fare** attraverso l'interfaccia, un ottimo punto di partenza per procedere poi a organizzarle nell'alberatura del sito.
+            Comprendi i passi che le persone compiono prima, durante e dopo la fruizione del servizio, quali altri attori entrano in gioco, i touchpoint e quali sono le **criticità emerse.**
+
+            Una volta completata, la mappa ti consentirà di impostare **la strategia corretta per migliorare l’esperienza d’uso** del servizio per le persone.
 
   # ///////////////////
   # RESOURCES
@@ -199,15 +202,14 @@ components:
       - simpleList: true
         headingLevel: 3
         listItems:
-          - label: Lista contenuti e funzionalità #C
-            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+          - label: Schema di user journey #C
+            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Elenca ciò che serve all'utente per raggiungere i suoi obiettivi #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Lista-contenuti-e-funzionalità.ods #M
+            text: "Il modello per raccontare l’interazione delle persone con il tuo servizio" #C
+            url: /files/resources/risorse-per-progettare/comprendere/esperienza-utente/analizza-l-esperienza-d-uso/DI-Schema-di-UserJourney.ods #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Lista-contenuti-e-funzionalità.ods #M
-                ariaLabel: "Scarica ODS Lista contenuti e funzionalità" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/comprendere/esperienza-utente/analizza-l-esperienza-d-uso/DI-Schema-di-UserJourney.ods #M
+                ariaLabel: "Scarica ODS Schema di user journey" #C #COMPILE FOR EACH ITEM
                 blank: false
-
