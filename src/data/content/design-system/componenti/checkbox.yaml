@@ -270,7 +270,13 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              *In stesura*
+              ![Gli elementi che formano la checkbox](/images/design-system/componenti/checkbox-anatomy.png)
+
+              Il componente checkbox è composto da:
+
+              1. **casella di controllo**: è l'elemento che restituisce il feedback visivo dell'attivazione/disattivazione della casella;
+              2. **etichetta** (label): descrive brevemente la tipologia di controllo;
+              3. **descrizione** (opzionale): il testo descrive in modo dettagliato a cosa corrisponde la casella di controllo. 
 
       - full: true
         noSpace: true
@@ -281,13 +287,18 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              Il componente checkbox può presentare i seguenti comportamenti:
+              Gli **stati interattivi** dei campi checkbox possono essere:
 
-              - Selezione singola: Quando un utente clicca su una checkbox, questa mostra uno stato di selezione (spunta) per indicare che l'opzione è stata scelta.
-              - Deselezione: Un secondo clic sulla checkbox deseleziona l'opzione, rimuovendo la spunta.
-              - Stato indeterminato: In alcuni casi, una checkbox può mostrare uno stato indeterminato (ad esempio, una linea orizzontale) per indicare che alcune, ma non tutte, le opzioni subordinate sono state selezionate.
-              - Interazioni visive: La checkbox deve cambiare visivamente stato (colore, spunta) in modo chiaro e immediato al clic dell'utente.
-              - Navigazione da tastiera: La checkbox deve poter essere selezionata e deselezionata anche tramite l'uso della tastiera, utilizzando il tasto "Tab" per la navigazione e la barra spaziatrice per la selezione.
+              - **default**: il campo si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**: si manifesta al passaggio del puntatore sul campo, è disponibile solo su dispositivi no-touch;
+              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **active**: è lo stato relativo al momento del click o pressione sul campo, restituisce un riscontro visivo dell'azione appena compiuta e abilita l'inserimento del contenuto;
+              - **disabled**: indica che il campo è disattivato e non è possibile interagire con esso;
+              - **readonly**: indica che il campo è disponibile in sola lettura, non è possibile cambiarne il contenuto.
+
+              Gli **stati di validazione** dei campi checkbox in linea generale possono essere:
+
+              - **error**: il campo è obbligatorio ma l’utente non l’ha selezionato.
               
       - full: true
         noSpace: true
@@ -298,7 +309,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design della checkbox](/images/design-system/componenti/checkbox-specs.png)
       
       - full: true
         noSpace: true
