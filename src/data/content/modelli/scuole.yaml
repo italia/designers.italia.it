@@ -42,8 +42,7 @@ metadata:
 seo:
   name: Modello scuole - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Tutte le risorse per realizzare con facilità siti per le scuole. #C
-  image: null #I
-  twitterImage: null #I
+  image: https://designers.italia.it/images/modelli/scuole-cover.png
   canonical: null
   pathname: /modelli/scuole/ #M
 
@@ -96,11 +95,11 @@ components:
         addonClasses: mt-3 text-uppercase
     pretext:
       icon:
-        icon: sprites.svg#it-info-circle
+        icon: sprites.svg#it-help-circle
         size: sm
       text: In breve
     text: | #C
-      Il modello ti guida nella **realizzazione di siti istituzionali per le scuole** già validati dalla ricerca e progettati sui bisogni dela comunità scolastica. Comprende l'architettura dell'informazione, l'interfaccia e il codice, oltre a una serie di guide pratiche e risorse pronte all'uso per impostare e svolgere il lavoro in modo rapido ed economico, come i template HTML e i temi per CMS.
+      Il modello ti guida nella **realizzazione di siti istituzionali per le scuole** basati sulla ricerca e progettati sui bisogni dela comunità scolastica. Comprende l'architettura dell'informazione, l'interfaccia e il codice, oltre a una serie di guide pratiche e risorse pronte all'uso per impostare e svolgere il lavoro in modo rapido ed economico, come i template HTML e i temi per CMS.
     img: /images/modelli/scuole-icon.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -150,13 +149,13 @@ components:
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: light
+      background: dark
       full: true
       noSpace: true
       components:
         # IMG
         - name: ImageIcons
-          image: /images/modelli/scuole-pattern.png #I
+          image: /images/modelli/scuole-cover.png #I
           alt: "Pattern di navigazione dal modello scuole" #C
 
     # —
@@ -183,6 +182,7 @@ components:
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: Il sito per la comunità scolastica #C
+          noSpace: true
           text: | #C
             Il modello comprende l'architettura dell'informazione, l'interfaccia e il codice per realizzare un sito chiaro, semplice da usare e accessibile. Un solido punto di riferimento per la comunità scolastica, dove trovare facilmente tutte le informazioni di cui hanno bisogno: dagli orari delle lezioni e i materiali didattici, alle novità e gli eventi.
           #ctas:
@@ -292,6 +292,7 @@ components:
         - name: TextImageCta
           image: /images/modelli/PA-digitale-adotta.svg #I
           alt: "" #C
+          noSpace: true
           specular: false
           #title: Lorem ipsum h3 #C
           text: | #C
@@ -327,7 +328,7 @@ components:
       # CARD CHILDREN
       - title: Il sito scolastico #C
         text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito scolastico semplice, accessibile e centrato sui bisogni degli utenti. #C
-        img: /images/modelli/scuole.png
+        img: /images/modelli/scuola-sito.png
         alt: ""
         imgRatio: 4x3
         imgPlaceholder: false
@@ -360,6 +361,35 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
+
+    - title: Contribuisci al modello
+      background: medium
+      menu: false
+      centered: true
+      #text: | #C
+      #  Lorem **ipsum**
+      components:
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/modelli/PA-digitale-adotta.svg #I
+          alt: "" #C
+          specular: false
+          noSpace: true
+          #title: Lorem ipsum h3 #C
+          text: | #C
+            Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana, contribuendo alle discussioni, agli avanzamenti tecnici e di design con il team e la community di Designers Italia
+          ctas:
+          - label: Scopri come contribuire #C
+            url: /modelli/contribuisci-ai-modelli/ #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
   # —
     # EDITORIAL #C #I
@@ -443,10 +473,10 @@ components:
           specular: true
           #title: ciao
           text: |
-            **Dialoga e collabora in tempo reale** con i designer e i maintainer sul canale Slack dedicato #design-siti-scuole
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer del modello: iscriviti allo Slack Developers Italia e cerca il canale #design-modello-scuole
           ctas:
           - label: Vai su Slack #C
-            url: https://developersitalia.slack.com/archives/CQ7J0KANT #M
+            url: https://join.slack.com/t/developersitalia/shared_invite/zt-26acztaip-_j45jD~HYiC4aF82AIZ19w #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:
@@ -460,6 +490,7 @@ components:
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           image: /images/Github.svg #I
+          noSpace: true
           alt: "" #C
           specular: true
           #title: ciao
