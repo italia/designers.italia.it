@@ -42,6 +42,14 @@ async function downloadExamples(context) {
           }
         });
         fs.unlinkSync(zipFile);
+        fs.rmSync(path.join(DEST_DIR, context, "api"), {
+          recursive: true,
+          force: true,
+        });
+        fs.rmSync(path.join(DEST_DIR, context, "statuses"), {
+          recursive: true,
+          force: true,
+        });
         resolve();
       });
   });

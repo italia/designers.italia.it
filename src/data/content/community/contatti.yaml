@@ -29,8 +29,7 @@ metadata:
 seo:
   name: Contatti - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Richiedi informazioni sulle attività e i progetti di Designers Italia #C
-  image: null #I
-  twitterImage: null #I
+  image: null
   canonical: null
   pathname: /community/contatti/ #M
 
@@ -136,6 +135,7 @@ components:
           headingLevel: 2
           title: Per contribuire ai nostri progetti
           specular: true
+          noSpace: true
           ctas:
           - label: Scopri maggiori dettagli su come-partecipo.italia.it #C
             url: https://come-partecipo.italia.it #M
@@ -191,7 +191,7 @@ components:
             **Dialoga e collabora in tempo reale** con i designer e i maintainer sui canali Slack dedicati al #design
           ctas:
           - label: Vai su Slack #C
-            url: https://developersitalia.slack.com/archives/CME9AD8NN #M
+            url: https://slack.developers.italia.it/ #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             blank: true #M #C true if new tab for external links
             icon:
@@ -204,6 +204,7 @@ components:
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
+          noSpace: true
           image: /images/Github.svg #I
           alt: "" #C
           specular: true

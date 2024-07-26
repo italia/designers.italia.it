@@ -1,0 +1,281 @@
+# INSTRUCTIONS
+# folder structure:
+# levelX.yaml < contents and settings
+# levelX/ < folder with childrens
+# important: each level has its dedicated template, from level1 to level4
+#
+# comments:
+# #C to locate all editable content
+# #M for links/navigation
+# #I for images/media
+# #AUTO for parts that will soon be automated, preferably
+#
+# comment with # to hide something
+# delete with caution
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level4
+
+# ————————————————————————————————————————————
+# SEO, OPENGRAPH
+# ————————————————————————————————————————————
+seo:
+  name: Rappresenta i flussi di servizio - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Progetta i processi che costituiscono un servizio, individuando attori e touchpoint che giocano un ruolo chiave nella sua erogazione e fruizione. #C
+  canonical: null
+  pathname: /risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/ #M
+
+# ————————————————————————————————————————————
+# NAV - PRE FOOTER
+# ————————————————————————————————————————————
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi nella fase #C
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Progettare #C
+        url: "../../" #M
+      - title: Nel kit di design #C
+        icon:
+          icon: "sprites.svg#it-tool"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: "Processi e servizi" #C
+        url: "../" #M
+# navPreFooter:
+#   navOtherPrevNext:
+#     prev:
+#       label: Titolo sorella precedente #C
+#       url: "#" #M
+#       image: /images/link-custom-icon.svg #I
+#       blank: false
+#       specular: false
+#       icon:
+#         icon: "sprites.svg#it-arrow-left"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 me-3
+#     next:
+#         label: Titolo sorella successiva #C
+#         url: "#" #M
+#         image: /images/link-custom-icon.svg #I
+#         blank: false
+#         specular: true
+#         icon:
+#           icon: "sprites.svg#it-arrow-right"
+#           size: "sm"
+#           align: "middle"
+#           color: "primary"
+#           hidden: true
+#           addonClasses: flex-shrink-0 ms-3
+
+# ————————————————————————————————————————————
+# CONTENT
+# ————————————————————————————————————————————
+components:
+
+  # ///////////////////
+  # HERO
+  # ///////////////////
+  hero:
+    background: null
+    title: Rappresenta i flussi di servizio #C
+    subtitle: Progetta i processi che costituiscono un servizio, individuando attori e touchpoint che giocano un ruolo nella sua erogazione e fruizione #C
+    tag:
+      label: Kit di design #C
+      addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: | #C
+    #   Lorem **ipsum**
+    img: /images/risorse-per-progettare/icons/kit_servizio_rappresenta.svg #I
+    alt: "" #C
+    imgRatio: 4x3
+
+    # KANGAROO: METADATA
+    kangaroo:
+      id: metadati-e-link
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+        - title: Ti trovi nella fase #C
+          icon:
+            icon: "sprites.svg#it-folder"
+            size: "sm"
+            align: "middle"
+            color: "secondary"
+          label: Progettare #C
+          url: "../../" #M
+        - title: Nel kit di design #C
+          icon:
+            icon: "sprites.svg#it-tool"
+            size: "sm"
+            align: "middle"
+            color: "secondary"
+          label: "Processi e servizi" #C
+          url: "../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Progettare l'interazione dell'utente con il servizio" #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione servizi,User journey,Analisi del contesto]
+
+  ## ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial :
+
+
+    - title: Come usare la service blueprint per definire i processi di erogazione di un servizio #C
+      menu: false
+      centered: true
+      background: null
+      #text: | #C
+      #  Lorem **ipsum**
+      components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          # title: A cosa servono h3 #C
+          text: | #C
+            La service blueprint è uno strumento tramite cui individuare tutte **le interazioni che avvengono durante il processo di erogazione di un servizio**, collegando ciò che è visibile all’utente finale (frontstage) 
+            ai processi e le attività  svolte dietro le quinte (backstage). 
+            
+            Permette di pianificare le risorse necessarie all’erogazione di un servizio, mostrare i processi agli stakeholder o formare il personale, fornendo una mappatura chiara di ruoli 
+            e responsabilità; la blueprint è inoltre utile per **valutare l'efficienza e l’efficacia del servizio nel tempo (KPI)**, identificando eventuali problemi e opportunità di miglioramento. 
+            
+            La service blueprint può essere utilizzata per **analizzare un servizio esistente (as-is) o per progettare o riprogettare un servizio (to-be)**: dopo aver identificato i bisogni 
+            degli utenti e gli scenari d’uso, la service blueprint permette di progettare il servizio e i suoi processi.  
+           
+            Per creare o validare la service blueprint, puoi organizzare sessioni collaborative con gli stakeholder (utenti e attori di backstage coinvolti nell’erogazione del servizio). 
+
+  # ///////////////////
+  # RESOURCES
+  # ///////////////////
+  resourceList:
+    title: Risorse operative #C
+    headingLevel: 2
+    list:
+       - simpleList: true
+         title: Lavagne per sessioni collaborative #C
+         headingLevel: 3
+         listItems:
+          - label: Service blueprint per lavagna collaborativa tldraw #C
+            srBefore: "Scarica tldraw " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Scarica e importa il template di service blueprint per svolgere le tue sessioni collaborative online #C
+            url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-Service-Blueprint-tldraw.tldr #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-Service-Blueprint-tldraw.tldr #M
+                ariaLabel: "Scarica tldraw Service blueprint per lavagna collaborativa" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Service blueprint per lavagna collaborativa Figjam #C
+            srBefore: "Scarica Jam " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Scarica e importa il template di service blueprint per svolgere le tue sessioni collaborative online #C
+            url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-Service-Blueprint-jam.jam #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-Service-Blueprint-jam.jam #M
+                ariaLabel: "Scarica Jam Service blueprint per lavagna collaborativa" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Istruzioni per il primo utilizzo delle lavagne collaborative #C
+            srBefore: "Scarica PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Istruzioni per importare i template delle lavagne collaborative in tldraw o Figjam #C
+            url: /files/resources/risorse-per-progettare/Readme-Istruzioni-Lavagne-Collaborative.pdf #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-pdf #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/Readme-Istruzioni-Lavagne-Collaborative.pdf #M
+                ariaLabel: "Scarica PDF Istruzioni su come importare i template delle lavagne collaborative" #C #COMPILE FOR EACH ITEM
+                blank: false
+
+       - simpleList: true
+         title: Altre risorse per rappresentare i flussi di servizio #C
+         headingLevel: 3
+         listItems:
+          - label: Foglio di costruzione service blueprint #C
+            # srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Compila la service blueprint sottoforma di foglio di calcolo #C
+            url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-service-blueprint.ods #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-service-blueprint.ods #M
+                ariaLabel: "Scarica ODS Foglio di costruzione service blueprint" #C #COMPILE FOR EACH ITEM
+                blank: false
+
+          - label: Service blueprint di carta #C
+            srBefore: "Scarica PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Scarica il template della service blueprint per compilarla dal vivo #C
+            url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-service-blueprint-stampa.pdf #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-pdf #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-service-blueprint-stampa.pdf #M
+                ariaLabel: "Scarica PDF Service blueprint di carta" #C #COMPILE FOR EACH ITEM
+                blank: false
+
+          - label: Esempio di una service blueprint #C
+            srBefore: "Scarica PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Scopri l'esempio di service blueprint basata sul Servizio Notifiche Digitali #C
+            url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-Service-blueprint-esempio.pdf #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-pdf #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/processi-e-servizi/rappresenta-i-flussi-di-servizio/DI-Service-blueprint-esempio.pdf #M
+                ariaLabel: "Scarica PDF esempio di una service blueprint" #C #COMPILE FOR EACH ITEM
+                blank: false
