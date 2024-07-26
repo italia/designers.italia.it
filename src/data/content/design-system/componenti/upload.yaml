@@ -56,7 +56,13 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Usa il componente upload quando è necessario permettere agli utenti di caricare file o immagini. Questo componente è utile in contesti come:
+
+            - Form di registrazione o profili utente dove si richiede una foto del profilo.
+            - Form per la richiesta di servizi online che prevedono il caricamento di documenti singoli o multipli.
+            - Piattaforme di condivisione di contenuti dove gli utenti possono caricare documenti, immagini o altri file multimediali.
+            - Form di supporto tecnico che richiedono allegati di screenshot o messaggi di errore per diagnosticare problemi.
+            - Qualsiasi altro contesto in cui è necessario raccogliere file direttamente dagli utenti.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -66,7 +72,37 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Per usare correttamente il campo di upload, è importante comprendere le diverse varianti disponibili e come ciascuna può essere utilizzata per migliorare l'esperienza utente.
+
+              ### Variante Lista file
+
+              Questa è la forma più comune e semplice di upload, funziona bene per tutti i tipi di file, inclusi documenti, immagini e altri tipi di media.
+
+              ### Variante Drag and Drop
+
+              Questa variante permette agli utenti di trascinare direttamente i file in un'area designata per il caricamento. Questo metodo è particolarmente utile per caricare rapidamente più file ed è raccomandata per interfacce dedicate a dispositivi con trackpad o mouse. Non è invece consigliato per interfacce dedicate principalmente a dispositivi mobile.
+
+              #### Attenzione a
+
+              - Può non essere immediatamente evidente per tutti gli utenti, richiede un'area di caricamento visibile e ben definita.
+              - Prevedere la possibilità di annullare il caricamento appena effettuato e caricare un nuovo file.
+
+              ### Variante Avatar
+
+              Questa variante è particolarmente utile nelle applicazioni dove si caricano foto del profilo o immagini specifiche. Gli utenti cliccano su un'icona o su una miniatura dell'immagine per aprire il dialogo di selezione file.
+
+              #### Attenzione a
+
+              - Rendere chiaro che l'area dell'immagine sia cliccabile.
+
+              ### Variante Galleria
+
+              Questa variante è dedicata al caricamento di immagini per un galleria. Le miniature (thumbnail) mostrate indicano che il caricamento è andato a buon fine.
+
+              #### Attenzione a
+
+              - Indicare chiaramente i formati, le dimensioni e il peso massimo supportati.
+
       - full: true
         noSpace: true
         paddingLeft: true
@@ -246,7 +282,29 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              ### Variante Lista file
+
+              - Cliccando sul pulsante è possibile selezionare uno o più file e confermare la selezione.
+              - Durante il caricamento viene mostrata una barra di progresso per ciascun file.
+              - Nel caso ci sia un problema con il caricamento di un file, questo viene indicato con il colore di stato di errore.
+              - L’utente può annullare il caricamento di un file cliccando sull’icona “X” ad esso correlata.
+              - Al termine di un caricamento andato a buon fine, viene mostrata un’icona di conferma.
+
+              ### Variante Drag and Drop
+
+              - Trascinando uno o più file dalla finestra di sistema del dispositivo e rilasciandoli nell'area preposta, inizia il caricamento.
+              - Durante il caricamento viene mostrato il progresso tramite un’indicazione espressa in termini percentuali, in sovraimpressione rispetto all’icona di sfondo.
+              - Al termine del caricamento, l’icona di sfondo mostra un simbolo di conferma.
+
+              ### Variante Avatar
+
+              - Cliccando sulla miniatura dell'immagine, viene mostrata la finestra di sistema per selezionare l’immagine desiderata.
+              - Al termine del caricamento, l’immagine si aggiorna.
+
+              ### Variante Galleria
+
+              - Cliccando sul riquadro con etichetta “Carica immagine” è possibile selezionare un’immagine e confermare il caricamento.
+              - Al termine del caricamento, l’immagine viene aggiunta alla lista delle miniature (thumbnail) visualizzate.
       - full: true
         noSpace: true
         paddingLeft: true
