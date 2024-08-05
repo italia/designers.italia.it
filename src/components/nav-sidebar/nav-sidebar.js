@@ -217,9 +217,9 @@ function NavSidebar({
                 <img src={img} className="header-image" alt={alt} />
                 <h2 className="h3 px-0 my-1">{title}</h2>
                 {tag && (
-                <div>
-                  <Tag {...tag} />
-                </div>
+                  <div>
+                    <Tag {...tag} />
+                  </div>
                 )}
                 <p className="fw-normal w-75 mb-0">{subTitle}</p>
               </div>
