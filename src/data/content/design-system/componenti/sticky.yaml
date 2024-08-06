@@ -4,7 +4,9 @@ metadata:
     name: design-system-component
 seo:
   name: Sticky - Designers Italia
-  description: Comportamento che rende un elemento costantemente visibile allo scorrere della pagina.
+  description: >-
+    Comportamento che rende un elemento costantemente visibile allo scorrere
+    della pagina.
   canonical: null
   pathname: /design-system/componenti/sticky/
 components:
@@ -16,7 +18,9 @@ components:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: Comportamento che rende un elemento costantemente visibile allo scorrere della pagina
+    subtitle: >-
+      Comportamento che rende un elemento costantemente visibile allo scorrere
+      della pagina
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -54,13 +58,22 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |           
-              Utilizza il comportamento Sticky per mantenere un elemento visibile mentre l'utente scorre la pagina. Questo è particolarmente utile per:
+            text: >
+              Utilizza il comportamento Sticky per mantenere un elemento
+              visibile mentre l'utente scorre la pagina. Questo è
+              particolarmente utile per:
 
-              - menu di navigazione che devono rimanere accessibili durante lo scorrimento della pagina;
+
+              - menu di navigazione che devono rimanere accessibili durante lo
+              scorrimento della pagina;
+
               - *call-to-action* importanti che devono essere sempre visibili;
-              - pulsanti di contatto o supporto che devono essere facilmente raggiungibili;
-              - intestazioni di tabelle o sezioni di contenuto che devono essere sempre visibili per riferimento continuo.
+
+              - pulsanti di contatto o supporto che devono essere facilmente
+              raggiungibili;
+
+              - intestazioni di tabelle o sezioni di contenuto che devono essere
+              sempre visibili per riferimento continuo.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -69,13 +82,20 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              Utilizza il comportamento Sticky all'elemento di navigazione principale della pagina.
+            text: >
+              Utilizza il comportamento Sticky all'elemento di navigazione
+              principale della pagina.
+
 
               ### Attenzione a 
 
-              - Non applicare lo stesso comportamento per più elementi nella stessa pagina in quanto l'esperienza di navigazione può essere compromessa.
-              - Applicare un ombreggiatura o un bordo che separi visivamente l'elemento fisso dal resto dei contenuti.
+
+              - Non applicare lo stesso comportamento per più elementi nella
+              stessa pagina in quanto l'esperienza di navigazione può essere
+              compromessa.
+
+              - Applicare un ombreggiatura o un bordo che separi visivamente
+              l'elemento fisso dal resto dei contenuti.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -138,53 +158,7 @@ tabs:
       - full: true
         noSpace: true
         paddingLeft: true
-        title: Stato del componente
-        id: ComponentStatus
-        text: Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
-        background: null
         components:
-
-          - name: Table
-            responsive: table-responsive-md
-            head:
-              - text: Libreria
-              - text: Stato componente
-              - text: Link
-            rows:
-              - cols:
-                - text: UI Kit Italia (design)
-                  scope: row
-                - tag:
-                    label: Non presente
-                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-              - cols:
-                - text: Bootstrap Italia
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - simpleCta :
-                    label: Scheda documentazione
-                    blank: true
-                    url: https://italia.github.io/bootstrap-italia/docs/componenti/sticky/
-                    screenReaderText: " (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-external-link
-                      size: sm
-              - cols:
-                - text: React
-                  scope: row
-                - tag:
-                    label: Non presente
-                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - text: ""
-              - cols:
-                - text: Angular
-                  scope: row
-                - tag:
-                    label: Non presente
-                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - text: ""
           - name: TextImageCta
             noSpace: false
             title: Stato del componente
@@ -288,8 +262,10 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              Sticky è un comportamento che può essere applicato a un elemento che presenta proprie specifiche di anatomia. Fai riferimento alle specifiche di anatomia dell'elemento che vuoi rendere sticky.
+            text: >
+              Sticky è un comportamento che può essere applicato a un elemento
+              che presenta proprie specifiche di anatomia. Fai riferimento alle
+              specifiche di anatomia dell'elemento che vuoi rendere sticky.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -298,8 +274,10 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              L'elemento a cui viene applicato il comportamento Sticky rimane visibile durante lo scorrimento della pagina, sovrapponendosi ai contenuti sottostanti. 
+            text: >
+              L'elemento a cui viene applicato il comportamento Sticky rimane
+              visibile durante lo scorrimento della pagina, sovrapponendosi ai
+              contenuti sottostanti. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -308,8 +286,10 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              Sticky è un comportamento che può essere applicato a un elemento che presenta proprie specifiche di design. Fai riferimento alle specifiche di design dell'elemento che vuoi rendere sticky.
+            text: >
+              Sticky è un comportamento che può essere applicato a un elemento
+              che presenta proprie specifiche di design. Fai riferimento alle
+              specifiche di design dell'elemento che vuoi rendere sticky.
       - full: true
         noSpace: true
         paddingLeft: true
