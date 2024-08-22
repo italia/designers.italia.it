@@ -7,8 +7,7 @@ metadata:
 seo:
   name: Tabs - Designers Italia
   description: >-
-    Permettono di raccogliere contenuti della pagina in una struttura
-    navigabile.
+    Contenitori con etichette per organizzare contenuti correlati in schede spearate all'interno della stessa sezione di pagina.
   image: null
   canonical: null
   pathname: /design-system/componenti/tabs/
@@ -22,8 +21,7 @@ components:
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Permettono di raccogliere contenuti della pagina in una struttura
-      navigabile
+      Contenitori con etichette per organizzare contenuti correlati in schede spearate all'interno della stessa sezione di pagina
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -291,14 +289,14 @@ tabs:
 
               La variante con tab in orizzontale è composta da:
 
-              1. **bordo**: delimita l'area di navigazione delle tab, può essere
+              1. **bordo**, delimita l'area di navigazione delle tab, può essere
               collocato sotto o sopra l'etichetta, nello stato attivo è
               evidenziato dal colore primary;
 
-              2. **etichetta**: il titolo della sezione, rappresenta il
+              2. **etichetta (label)**, il titolo della sezione, rappresenta il
               contenuto informativo della scheda;
 
-              3. **icona**: affianca o sostituisce l'etichetta; 
+              3. **icona**, affianca o sostituisce l'etichetta. 
 
 
               ### Verticale
@@ -309,17 +307,16 @@ tabs:
 
               La variante con tab in verticale è composta da:
 
-              1. **bordo**: delimita l'area di navigazione delle tab, può essere
+              1. **bordo**, delimita l'area di navigazione delle tab, può essere
               collocato a destra o sinistra dell'etichetta, nello stato attivo è
               evidenziato dal colore primary;
 
-              2. **etichetta**: il titolo della sezione, rappresenta il
+              2. **etichetta (label)**, il titolo della sezione, rappresenta il
               contenuto informativo della scheda;
 
-              3. **icona**: affianca o sostituisce l'etichetta; 
+              3. **icona**, affianca o sostituisce l'etichetta; 
 
-              4. **sfondo**: la tab selezionata può avere uno sfondo
-              (opzionale); 
+              4. **sfondo** opzionale, la tab selezionata può avere uno sfondo. 
 
 
               ### Con card
@@ -330,10 +327,10 @@ tabs:
 
               La variante con tab di tipo card è composta da:
 
-              1. **bordo**: visibile su tre lati, è presente solo per la tab
+              1. **bordo**, visibile su tre lati, è presente solo per la tab
               attiva;
 
-              2. **etichetta**: il titolo della sezione, rappresenta il
+              2. **etichetta (label)**, il titolo della sezione, rappresenta il
               contenuto informativo della scheda;
 
               3. **icona**: affianca l'etichetta sulla destra.
@@ -350,20 +347,20 @@ tabs:
               del componente Tabs:
 
 
-              - **default**: una tab si presenta nello stato normale quando è
+              - **default**, una tab si presenta nello stato normale quando è
               attiva ma l'utente non ci interagisce;
 
-              - **hover**: si manifesta al passaggio del puntatore sulla tab, è
+              - **hover**, si manifesta al passaggio del puntatore sulla tab, è
               disponibile solo su dispositivi no-touch;
 
-              - **active**: si manifesta quando una tab è selezionata, ovvero è
+              - **active**, si manifesta quando una tab è selezionata, ovvero è
               stata cliccata dall'utente;
 
-              - **focus**: si manifesta nel caso di navigazione tramite tastiera
+              - **focus**, si manifesta nel caso di navigazione tramite tastiera
               o altri strumenti, passando da un elemento interattivo a quello
               successivo;
 
-              - **disabled**: indica che la tab è disattivata e non è possibile
+              - **disabled**, indica che la tab è disattivata e non è possibile
               interagire con essa.
       - full: true
         noSpace: true
