@@ -5,8 +5,7 @@ metadata:
 seo:
   name: Steppers - Designers Italia
   description: >-
-    Barra di navigazione che mostra l’avanzamento del progresso di una procedura
-    con più passaggi.
+    Elementi di navigazione che mostrano l'avanzamento dell'utente all'interno di una procedura complessa e permettono di navigare tra i vari passaggi di interazione.
   canonical: null
   pathname: /design-system/componenti/steppers/
 components:
@@ -19,8 +18,7 @@ components:
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Barra di navigazione che mostra l’avanzamento del progresso di una
-      procedura con più passaggi
+      Elementi di navigazione che mostrano l'avanzamento dell'utente all'interno di una procedura complessa e permettono di navigare tra i vari passaggi di interazione
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -60,10 +58,9 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Usa il componente Steppers per suddividere i passaggi di una
+              Usa il componente Stepper per suddividere i passaggi di una
               procedura lineare in più schermate e per indicare all'utente
-              l'avanzamento del progresso. 
-
+              l'avanzamento del progresso.
 
               Questo metodo di navigazione è molto utile per guidare l'utente in
               un processo o flusso di lavoro passo per passo, come nei moduli di
@@ -89,7 +86,7 @@ tabs:
               quelli in sospeso.
 
               - Implementa la navigazione con gruppo di
-              [Buttons](/design-system//componenti/buttons/) per permettere
+              [buttons](/design-system//componenti/buttons/) per permettere
               all'utente di avanzare, annullare o tornare indietro.
 
               - Includi un pulsante “Salva” per consentire il salvataggio dei
@@ -102,7 +99,7 @@ tabs:
               il numero dei passaggi potrebbe dipendere dai dati inseriti
               dall’utente.
 
-              - Non usare Steppers in caso di un progresso non lineare, dove il
+              - Non usare uno stepper in caso di un progresso non lineare, dove il
               completamento dei passaggi non segue un ordine specifico.
 
               - Testare l'efficacia con utenti, curando in particolare eventuali
@@ -312,27 +309,27 @@ tabs:
               ![Gli elementi che formano il singolo
               step](/images/design-system/componenti/stepper-single-step-small-anatomy.png)
 
-              1. **forma di sfondo**: può essere di colore bianco o evidenziato
+              1. **forma di sfondo**, può essere di colore bianco o evidenziato
               quando lo step è attivo;
 
               2. **titolo dello step**;
 
-              3. **icona** (opzionale): affianca il titolo e ne rappresenta il
+              3. **icona** (opzionale), affianca il titolo e ne rappresenta il
               contenuto;
 
-              4. **numero step**: indica il numero dello step corrente rispetto
+              4. **numero step**, indica il numero dello step corrente rispetto
               al totale;
 
-              5. **icona di apertura**: espande il contenuto dello step
+              5. **icona di apertura**, espande il contenuto dello step
               mostrando la lista di tutti i passaggi;
 
-              6. **lista degli steps**: la lista di tutti gli steps, appare in
+              6. **lista degli step**, la lista di tutti gli steps, appare in
               dropdown;
 
-              7. **step corrente**: la posizione dello step  corrente rispetto
+              7. **step corrente**, la posizione dello step corrente rispetto
               alla lista;
 
-              8. **icona di stato**: comunica l'effettivo completamento di uno
+              8. **icona di stato**, comunica l'effettivo completamento di uno
               step.
 
 
@@ -342,17 +339,17 @@ tabs:
               ![Gli elementi che formano il singolo
               step](/images/design-system/componenti/stepper-single-step-anatomy.png)
 
-              1. **forma di sfondo**: può essere di colore bianco o evidenziato
+              1. **forma di sfondo**, può essere di colore bianco o evidenziato
               quando lo step è attivo;
 
               2. **titolo dello step**;
 
-              3. **numero step**: indica il numero del passaggio corrente;
+              3. **numero step**, indica il numero del passaggio corrente;
 
-              4. **icona** (opzionale): affianca il titolo e ne rappresenta il
+              4. **icona** (opzionale), affianca il titolo e ne rappresenta il
               contenuto;
 
-              5. **icona di stato**: comunica l'effettivo completamento di uno
+              5. **icona di stato**, comunica l'effettivo completamento di uno
               step.
 
 
@@ -361,23 +358,23 @@ tabs:
               ![Gli elementi che formano il singolo
               step](/images/design-system/componenti/stepper-bottom-bar-anatomy.png)
 
-              1. **forma di sfondo**: può avere un colore diverso o uguale a
+              1. **forma di sfondo**, può avere un colore diverso o uguale a
               quello della pagina, prevede un bordo superiore di separazione;
 
-              2. **pulsante indietro**: permette di tornare allo step
+              2. **pulsante indietro**, permette di tornare allo step
               precedente;
 
-              3. **pulsante salva**: permette di salvare il form allo step
+              3. **pulsante salva**, permette di salvare il form allo step
               corrente;
 
-              4. **pulsante avanti**: permette di proseguie allo step
+              4. **pulsante avanti**, permette di proseguie allo step
               successivo, al completamento dello step corrente;
 
-              5. **pulsante conferma**: permette di completare la procedura.
+              5. **pulsante conferma**, permette di completare la procedura.
 
 
               Nel caso di dispositivi piccoli, i pulsanti che fanno parte della
-              barra di navigazione cambiano misura da `large` a `small`;
+              barra di navigazione cambiano misura da `large` a `small`.
       - full: true
         noSpace: true
         paddingLeft: true
