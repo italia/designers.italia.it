@@ -201,7 +201,7 @@ function NavSidebar({
           </button>
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
             <div className="overlay" />
-            <div className="menu-wrapper">
+            <div className="sidebar-wrapper">
               <button
                 className="it-back-button btn w-100 text-start rounded-0"
                 type="button"
@@ -216,11 +216,6 @@ function NavSidebar({
               <div className="nav-sidebar-header mx-4 mb-3 mt-0 mt-lg-2">
                 <img src={img} className="header-image" alt={alt} />
                 <h2 className="h3 px-0 my-1">{title}</h2>
-                {tag && (
-                  <div>
-                    <Tag {...tag} />
-                  </div>
-                )}
                 <p className="fw-normal w-75 mb-0">{subTitle}</p>
               </div>
 
@@ -229,8 +224,13 @@ function NavSidebar({
               </div>
 
               {secondaryLinks && (
-                <div className="sidebar-linklist-wrapper linklist-secondary border-top">
+                <div className="sidebar-linklist-wrapper linklist-secondary">
                   <div className="link-list-wrapper">
+                    {tag && (
+                      <div>
+                        <Tag {...tag} />
+                      </div>
+                    )}
                     <ul className="link-list">{secondaryLinks}</ul>
                   </div>
                 </div>
