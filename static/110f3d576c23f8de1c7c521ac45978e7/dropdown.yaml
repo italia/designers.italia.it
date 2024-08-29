@@ -1,0 +1,418 @@
+metadata:
+  json: bsi/componenti/dropdown.json
+  template:
+    name: design-system-component
+seo:
+  name: Dropdown - Designers Italia
+  description: >-
+    Elenco di azioni o link a comparsa per risparmiare spazio e organizzare opzioni in modo compatto e coerente.
+  canonical: null
+  pathname: /design-system/componenti/dropdown/
+components:
+  hero:
+    specialKangarooComponent: true
+    background: null
+    title: Dropdown
+    tag:
+      label: Componenti
+      addonClasses: mt-3 text-uppercase
+    column: true
+    subtitle: >-
+      Elenco di azioni o link a comparsa per risparmiare spazio e organizzare opzioni in modo compatto e coerente
+    imgRatio: 1x1
+    noBorder: true
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      tagsDesignSystemLabel: Utile per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tagsDesignSystem:
+        - Interazione
+        - Navigazione
+  tab:
+    - full: true
+tabs:
+  - title: Uso e accessibilità
+    componentVariant:
+      id: preview-use
+      title: Anteprima
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/dropdown/
+      accordionOpen: false
+      accordionShow: false
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Quando usarlo
+            headingLevel: 2
+            text: >
+              Il componente dropdown, chiamato anche menu a tendina, offre una navigazione veloce al contenuto desiderato,
+              permettendo agli utenti di risparmiare tempo e accedere
+              direttamente a specifici contenuti. È utile quindi per creare menu
+              contestuali tramite un elenco di link o azioni.
+
+
+              Aiuta inoltre a nascondere le scelte meno rilevanti, mantenendo
+              l'interfaccia pulita sopratutto nel caso di poco spazio a
+              disposizione.
+
+
+              ### Alternative a questo componente
+
+              **[Select](/design-system/componenti/select/)**,
+              **[Autocomplete](/design-system/componenti/autocomplete/)** e
+              **[Radio button](/design-system/componenti/radio-button/)**: per
+              permettere all'utente di esprimere scelte tra più elementi in un
+              modulo ([Form](/design-system/componenti/form/)) usa i componenti
+              dedicati.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Come usarlo
+            headingLevel: 2
+            text: >
+              - Assicurati che il dropdown sia visibile e facilmente
+              accessibile.
+
+              - Organizza le opzioni in un ordine logico o alfabetico.
+
+              - Limita il numero di opzioni per evitare all'utente un eccessivo
+              carico cognitivo.
+
+              - Usa le varianti di colore nel rispetto del loro valore
+              semantico.
+
+              - Nel caso ci siano molte opzioni, organizzale in sottocategorie.
+
+
+              ### Attenzione a
+
+
+              - Non nascondere nel dropdown quelle opzioni che richiedono una
+              accesso immediato o frequente.
+
+              - Garantire che il dropdown sia facilmente accessibile e utilizzabile
+              con dispositivi touch, tastiera e strumenti di tecnologia
+              assistiva come screen reader.
+
+              - Aggiungere un’icona all’etichetta di testo solo quando ne
+              rafforza il significato.
+
+
+              ### Buone pratiche sui contenuti
+
+
+              - Usa nomi di opzioni che siano intuitivi e facili da comprendere.
+
+              - L'etichetta del pulsante di apertura deve descrivere in modo
+              chiaro la finalità del dropdown.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Stato del componente
+            headingLevel: 2
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/componenti/dropdown/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-dropdown--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/dropdown
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Progettazione
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Anatomia
+            headingLevel: 2
+            text: >
+              Il componente Dropdown è composto un pulsante e un menu. Gli
+              elementi che ne fanno parte sono:
+
+
+              ### Pulsante
+
+
+              ![Gli elementi che formano il pulsante o link del
+              Dropdown](/images/design-system/componenti/dropdown-anatomy.png)
+
+              ![Gli elementi che formano il pulsante o link del
+              Dropdown](/images/design-system/componenti/dropdown-outline-anatomy.png)
+
+
+              1. **etichetta (label)**, il testo che rappresenta il contenuto del
+              menu;
+
+              2. **icona freccia**, suggerisce all'utente cosa aspettarsi
+              all'apertura;
+
+              3. **bordo o sfondo**, nelle varianti che lo prevedono.
+
+
+              ### Menu
+
+
+              ![Gli elementi che formano il menu del
+              Dropdown](/images/design-system/componenti/dropdown-menu-anatomy.png)
+
+
+              1. **sfondo**, contiene la lista di opzioni;
+
+              2. **opzioni**, il testo di ogni voce del menu;
+
+              3. **icona** (a sinistra), simboleggia il contenuto o l'azione
+              descritta dal testo;
+
+              4. **icona** (a destra), posizione alternativa a quella di
+              sinistra;
+
+              5. **linguetta**, collega il menu al pulsante che è stato premuto;
+
+              6. **linea divisoria**, separa le opzioni del menu in gruppi
+              distinti.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Comportamento
+            headingLevel: 2
+            text: >
+              - Quando l'utente fa clic o attiva il menu a discesa, si apre un
+              elenco di opzioni.
+
+              - L'utente può scorrere l'elenco e fare clic su un'opzione, per
+              navigare al link o per iniziare l'azione a seconda della tipologia
+              di opzione.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
+            text: >
+              Tutte le misure indicate sono espresse in `px`.
+
+
+              ![Specifiche di design del pulsante
+              dropdown](/images/design-system/componenti/dropdown-specs.png)
+
+              ![Specifiche di design del pulsante
+              dropdown](/images/design-system/componenti/dropdown-menu-specs.png)
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
+            ctas:
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Sviluppo
+    componentVariant:
+      id: preview-dev
+      title: Anteprima
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/dropdown/
+      accordionOpen: true
+      accordionShow: true
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
+            ctas:
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
