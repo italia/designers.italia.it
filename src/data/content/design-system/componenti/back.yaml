@@ -5,9 +5,7 @@ metadata:
 seo:
   name: Back - Designers Italia
   description: >-
-    Consente agli utenti di avere un link o pulsante per tornare alla pagina
-    precedente di un processo o di un modulo, equivalente in molti casi al
-    “torna indietro” del browser.
+    Elemento di navigazione per tornare alla pagina o alla schermata precedente.
   image: null
   canonical: null
   pathname: /design-system/componenti/back/
@@ -21,9 +19,7 @@ components:
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Consente agli utenti di avere un link o pulsante con un’azione per tornare
-      alla pagina precedente ad esempio di un processo o di un modulo,
-      equivalente in molti casi al “torna indietro” del browser
+      Elemento di navigazione per tornare alla pagina o alla schermata precedente
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -68,13 +64,13 @@ tabs:
 
               Può essere molto utile ad orientarsi nel contesto di un modulo
               ([Form](/design-system/componenti/form/)) composto da diversi
-              step. 
+              passaggi. 
 
 
               ### Alternative a questo componente
 
               - **[Breadcrumbs](/design-system/componenti/breadcrumbs/)**: per
-              orientarsi nella navigazione di pagine di contenuti informativi.
+              orientarsi nella navigazione di pagine con contenuti informativi.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -108,9 +104,9 @@ tabs:
               architetture e navigazioni complesse e legate a scelte
               condizionali.
 
-              - Usare di default la variante Link di navigazione (implementata
-              con il corretto tag semantico `<a>`), e scegliere di usare le
-              varianti pulsante (implementate con il tag semantico `<button>`)
+              - Usare di default la variante *Link di navigazione* (implementata
+              con il corretto tag semantico `<a>`) e scegliere di usare le
+              varianti *pulsante* (implementate con il tag semantico `<button>`)
               solo per azioni che agiscono in pagina, ad esempio per
               ripristinare lo stato precedente di contenuti dinamici presentati
               all'utente.     
@@ -305,20 +301,20 @@ tabs:
               Back](/images/design-system/componenti/back-anatomy.png)
 
 
-              Il componente Back è una declinazione del componente
-              [Buttons](/design-system/componenti/buttons/) composta da:
+              Il componente back è una declinazione del componente
+              [button](/design-system/componenti/buttons/) composta da:
 
 
-              1. **icona**: può essere una freccia verso sinistra per indicare
-              l'azione di navigare alla pagina precedente, la stessa azione
-              compiuta dal Back del browser; o può essere una freccia verso
+              1. **icona**, può essere una freccia verso sinistra per indicare
+              l'azione di navigare alla pagina precedente (la stessa azione
+              compiuta dal Back del browser) o può essere una freccia verso
               l'alto a indicare la navigazione ad un livello gerarchico
               superiore; 
 
-              2. **etichetta** (label): opzionale, rende esplicita l'azione; 
+              2. **etichetta (label)**, opzionale, rende esplicita l'azione; 
 
-              3. **forma di sfondo**: presente nel caso delle varianti
-              pulsante. 
+              3. **forma di sfondo**, presente nel caso delle varianti
+              *pulsante*. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -329,7 +325,7 @@ tabs:
             headingLevel: 2
             text: >
               Il componente eredita gli stati interattivi da
-              [Buttons](/design-system/componenti/buttons/).
+              [button](/design-system/componenti/buttons/).
 
 
               All'attivazione da parte dell'utente la navigazione torna alla
@@ -345,7 +341,7 @@ tabs:
             headingLevel: 2
             text: >
               Il componente eredita le specifiche da
-              [Buttons](/design-system/componenti/buttons/).
+              [button](/design-system/componenti/buttons/).
       - full: true
         noSpace: true
         paddingLeft: true

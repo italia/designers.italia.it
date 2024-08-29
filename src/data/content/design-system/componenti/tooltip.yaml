@@ -4,7 +4,7 @@ metadata:
     name: design-system-component
 seo:
   name: Tooltip - Designers Italia
-  description: Breve messaggio a comparsa.
+  description: Breve messaggio a comparsa per fornire spiegazioni contestuali e suggerimenti.
   canonical: null
   pathname: /design-system/componenti/tooltip/
 components:
@@ -16,7 +16,7 @@ components:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: Breve messaggio a comparsa
+    subtitle: Breve messaggio a comparsa per fornire spiegazioni contestuali e suggerimenti
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -52,14 +52,16 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Usa il componente Tooltip quando vuoi fornire ulteriori
+              Usa il componente tooltip quando vuoi fornire ulteriori
               informazioni su un elemento specifico senza sovraccaricare
-              l'interfaccia utente. I Tooltip sono utili quando il loro
+              l'interfaccia utente. 
+              
+              I tooltip sono utili quando il loro
               contenuto aggiunge valore o aiuta a capire meglio una funzione, ma
               non è essenziale per l'uso principale dell'elemento. 
 
 
-              Ad esempio, i Tooltip possono essere usati per spiegare il
+              Ad esempio, i tooltip possono essere usati per spiegare il
               significato di un'icona, per fornire un suggerimento su come
               utilizzare una funzionalità o per mostrare informazioni aggiuntive
               su un dato o un'opzione.
@@ -71,7 +73,7 @@ tabs:
               - **[Popover](/design-system/componenti/popover)**: se hai bisogno
               di mostrare più informazioni e inserire un link o pulsante.
 
-              - Usa il semplice testo di aiuto inline per fornire informazioni
+              - Usa il semplice **testo di aiuto inline** per fornire informazioni
               aggiuntive direttamente nella pagina, senza la necessità di
               interazione da parte dell'utente.
       - full: true
@@ -83,17 +85,17 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: >
-              - Posiziona il Tooltip accanto all'elemento che richiede
+              - Posiziona il tooltip accanto all'elemento che richiede
               informazioni supplementari.
 
 
               ### Attenzione a
 
-              - Non usare i Tooltip per informazioni importanti, poiché l'utente
+              - Non usare i tooltip per informazioni importanti, poiché l'utente
               potrebbe non vederle.
 
               - Dare tempo sufficiente all'utente di leggerne il contenuto, e
-              assicurarsi che il Tooltip scompaia quando l'utente prosegue con
+              assicurarsi che il tooltip scompaia quando l'utente prosegue con
               la navigazione o interagisce altrove nella pagina.
 
               - Curare l'interazione da tastiera e con tecnologie assistive come
@@ -102,11 +104,11 @@ tabs:
 
               ### Buone pratiche sui contenuti
 
-              - Il contenuto del Tooltip deve essere conciso, preferibilmente
+              - Il contenuto del tooltip deve essere conciso, preferibilmente
               non più di una o due frasi.
 
               - Data la sua natura di aiuto contestuale non sempre visibile in
-              pagina, il Tooltip non dovrebbe contenere informazioni salienti
+              pagina, il tooltip non dovrebbe contenere informazioni salienti
               per l'interazione ma solo aggiunte o specifiche ulteriori relative
               all'elemento cui è associato. 
       - full: true
@@ -283,9 +285,9 @@ tabs:
               ![Gli elementi che formano il
               Tooltip](/images/design-system/componenti/tooltip-anatomy.png)
 
-               Il componente Tooltip è composto da:
-               1. **forma di sfondo**: è raccomandato l'uso di un colore scuro per dare contrasto rispetto alla pagina;
-               2. **etichetta di testo**: deve essere un messaggio breve e chiaro.
+               Il componente tooltip è composto da:
+               1. **forma di sfondo**, è raccomandato l'uso di un colore scuro per dare contrasto rispetto alla pagina;
+               2. **etichetta (label)**, deve essere un messaggio breve e chiaro.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -295,12 +297,12 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: >
-              - Il Tooltip appare automaticamente quando l'utente passa il mouse
-              sopra l'elemento associato o lo attiva interagendo con click/touch
+              - Il tooltip appare automaticamente quando l'utente passa il mouse
+              sopra l'elemento associato o lo attiva interagendo con clic/touch
               o tastiera.
 
               - Scompare quando l'utente allontana il mouse dall'elemento o, nel
-              caso di attivazione con click/touch o tastiera, rimane visibile
+              caso di attivazione con clic/touch o tastiera, rimane visibile
               fino a che l'utente interagisce altrove sulla pagina.
       - full: true
         noSpace: true
