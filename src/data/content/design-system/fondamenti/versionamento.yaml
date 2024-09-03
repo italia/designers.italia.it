@@ -164,8 +164,8 @@ components:
               - text: Documentazione (questo sito)
                 scope: row
               - tag:
-                  label: 1.0.0-beta.5 #AUTO
-                  addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                  label: "1.0.0" #AUTO
+                  addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: A seguire
                   url: "#changelog-documentazione"
@@ -179,7 +179,7 @@ components:
               - text: UI Kit Italia (design)
                 scope: row
               - tag:
-                  label: "3.5.0" #AUTO
+                  label: "3.6.0" #AUTO
                   addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: 'Schede rilascio'
@@ -230,13 +230,26 @@ components:
       components:
         - name: TextImageCta
           text: |
+            ### v1.0.0
+            17 settembre 2024
+            - **[Componenti](/design-system/componenti/)**
+              - Nuova scheda: [Tables](/design-system/componenti/tables/).
+              - Miglioramenti: rivisto tono di voce e fix typo in tutte le schede della sezione [commit: `content: ds-components-tov-and-formatting`](https://github.com/italia/designers.italia.it/commit/7f005a7f62f73d36cb2b2a7b836d525d788b1621).
+              - Miglioramenti: completamento della board [Component census](https://github.com/orgs/italia/projects/32/views/1) con la chiusura del terzo ciclo di verifiche di accessibilità e stato dei componenti nelle diverse librerie di design e sviluppo; apertura issue dedicate e aggiornamento delle tabelle di stato nelle schede componenti.
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione v3.6.0.
+
+          moreButton: Versioni precedenti
+          moreButtonClose: Chiudi
+          moreText: | #C
             ### v1.0.0-beta.5
             6 agosto 2024
             - **[Componenti](/design-system/componenti/)**
               - Aggiornati contenuti schede (completata documentazione componenti!): [Autocomplete](/design-system/componenti/autocomplete/), [Checkbox](/design-system/componenti/checkbox), [Sections](/design-system/componenti/sections), [Sticky](/design-system/componenti/sticky), [Thumbnav](/design-system/componenti/thumbnav), [Toolbar](/design-system/componenti/toolbar), [Transfer](/design-system/componenti/transfer), [Upload](/design-system/componenti/upload).
             - Risorse
               - Aggiornato **Bootstrap Italia** alla versione v2.9.0.
-
+            
+            -------
             ### v1.0.0-beta.4
             5 luglio 2024
             - **[Componenti](/design-system/componenti/)**
@@ -245,6 +258,7 @@ components:
             - Risorse
               - Aggiornato **Bootstrap Italia** alla versione v2.8.8.
 
+            -------
             ### v1.0.0-beta.3
             24 maggio 2024
             - **[Come contribuire](/design-system/come-contribuire/)**
@@ -256,7 +270,8 @@ components:
               - Aggiornato **Bootstrap Italia** alla versione v2.8.7.
             - Altro da Designers Italia
               - Pubblicato nella sezione [Modelli](/modelli/) il nuovo [modello di contribuzione dedicato](/modelli/contribuisci-ai-modelli/)
-              
+
+            -------
             ### v1.0.0-beta.2 
             29 marzo 2024
             - **[Fondamenti](/design-system/fondamenti/)**
@@ -265,6 +280,7 @@ components:
             - **[Componenti](/design-system/componenti/)**
               - Aggiornati contenuti schede: [Header](/design-system/componenti/header), [Footer](/design-system/componenti/footer/).
 
+            -------
             ### v1.0.0-beta.1 
             8 marzo 2024
             - **[Fondamenti](/design-system/fondamenti/)**
@@ -276,9 +292,6 @@ components:
             - Risorse
               - Aggiornato **UI Kit Italia** alla versione v3.4.0.
 
-          moreButton: Versioni precedenti
-          moreButtonClose: Chiudi
-          moreText: | #C
             -------
             ### v1.0.0-alpha.19
             1 marzo 2024
