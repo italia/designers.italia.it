@@ -226,9 +226,11 @@ function NavSidebar({
               {secondaryLinks && (
                 <div className="sidebar-linklist-wrapper linklist-secondary">
                   <div className="link-list-wrapper">
+                    <div className="py-2">
                     {tag && (
                       <Tag {...tag} />
                     )}
+                    </div>
                     <ul className="link-list">{secondaryLinks}</ul>
                   </div>
                 </div>
