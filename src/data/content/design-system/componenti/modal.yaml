@@ -5,8 +5,7 @@ metadata:
 seo:
   name: Modal - Designers Italia
   description: >-
-    Finestre modali per mostrare contenuti in evidenza, notifiche agli utenti, o
-    contenuti personalizzati.
+    Finestra di interazione a comparsa in sovrapposizione sul contenuto principale per focalizzare l'attenzione su un'azione specifica o un messaggio importante.
   canonical: null
   pathname: /design-system/componenti/modal/
 components:
@@ -19,8 +18,7 @@ components:
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Finestre modali per mostrare contenuti in evidenza, notifiche agli utenti,
-      o contenuti personalizzati
+      Finestra di interazione a comparsa in sovrapposizione sul contenuto principale per focalizzare l'attenzione su un'azione specifica o un messaggio importante
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -57,7 +55,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Il componente Modal è utile per focalizzare l'attenzione
+              Il componente modal, in italiano modale, è utile per focalizzare l'attenzione
               dell'utente su informazioni cruciali o richiedere un'azione
               precisa, rimanendo nella pagina attuale.
 
@@ -66,14 +64,14 @@ tabs:
               registrazione, **approfondimento** di uno specifico contenuto.
 
 
-              Tuttavia, un uso eccessivo delle finestre modali interrompe il
+              Tuttavia, un uso eccessivo delle modali interrompe il
               normale flusso di navigazione, quindi è raccomandato **usarle con
               moderazione**.
 
 
               ### Alternative a questo componente
 
-              - **[tooltip](/design-system/componenti/tooltip)** e
+              - **[Tooltip](/design-system/componenti/tooltip)** e
               **[popover](/design-system/componenti/popover)**: per spiegare una
               funzione specifica o fornire informazioni aggiuntive, sono meno
               invasive di una finestra modale e si possono attivare in diversi
@@ -91,22 +89,22 @@ tabs:
               per facilitare una decisione.
 
               - Posiziona l’azione primaria nella parte inferiore destra della
-              finestra.
+              modale.
 
-              - Dai la possibilità di chiudere la finestra in qualunque momento,
+              - Dai la possibilità di chiudere la modale in qualunque momento,
               ad esempio con la classica icona “X” in alto a destra.
 
 
               ### Attenzione a
 
 
-              - Non utilizzare la finestra modale per visualizzare grandi
+              - Non utilizzare la modale per visualizzare grandi
               quantità di informazioni.
 
-              - Non utilizzare le finestre modali per form complessi o processi
+              - Non utilizzare le modali per form complessi o processi
               con step multipli.
 
-              - Usare un tag `<h2>` per il titolo della finestra modale in
+              - Usare un tag `<h2>` per il titolo della modale in
               quanto i suoi contenuti sono separati dalla struttura della
               pagina.
 
@@ -121,8 +119,7 @@ tabs:
               ### Buone pratiche sui contenuti
 
 
-              - Usa un titolo semplice che sintetizza lo scopo della finestra
-              modale e l'azione richiesta.
+              - Usa un titolo semplice che sintetizza lo scopo della modale e l'azione richiesta.
 
               - Inserisci ulteriori informazioni su cosa fare e perché tramite
               una breve descrizione.
@@ -304,31 +301,31 @@ tabs:
               modale](/images/design-system/componenti/modal-anatomy.png)
 
 
-              Il componente Modal include:
+              Il componente modal è composto da:
 
 
-              1. **Sfondo**: colore obbligatoriamente bianco con ombreggiatura
-              per risaltare la finestra sulla pagina sottostante.
+              1. **sfondo**, colore obbligatoriamente bianco con ombreggiatura
+              per risaltare la finestra sulla pagina sottostante;
 
-              2. **Titolo**: rappresenta l'azione richiesta.
+              2. **titolo**, rappresenta l'azione richiesta;
 
-              3. **Icona a sinistra** (opzionale): accompagna il titolo, viene
-              utilizzata per messaggi di avviso importanti.
+              3. **icona a sinistra** (opzionale), accompagna il titolo e viene
+              utilizzata per messaggi di avviso importanti;
 
-              4. **Descrizione**: deve essere chiara e concisa, indicando
-              all'utente cosa deve fare.
+              4. **descrizione**, deve essere chiara, concisa e indicare
+              all'utente cosa deve fare;
 
-              5. **Link di approfondimento** (opzionale): può includere un
+              5. **link di approfondimento** (opzionale), può includere un
               collegamento a altre pagine o siti per ulteriori informazioni
-              sull'argomento prima di procedere con l'azione principale.
+              sull'argomento prima di procedere con l'azione principale;
 
-              6. **Pulsante primario**: rappresenta l'azione principale
-              richiesta.
+              6. **pulsante primario**, rappresenta l'azione principale
+              richiesta;
 
-              7. **Pulsante di annullamento**: permette all'utente di
-              interrompere il processo e tornare alla pagina precedente.
+              7. **pulsante di annullamento**, permette all'utente di
+              interrompere il processo e tornare alla pagina precedent;.
 
-              8. **Icona di chiusura**: fornisce un'ulteriore opzione per
+              8. **icona di chiusura**, fornisce un'ulteriore opzione per
               l'utente di interrompere l'azione richiesta.      
       - full: true
         noSpace: true
@@ -339,26 +336,25 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: >
-              - Quando viene attivata, la finestra modale appare al centro dello
-              schermo, sovrapposta alla pagina sottostante;
+              - Quando viene attivata, la modale appare al centro dello
+              schermo, sovrapposta alla pagina sottostante.
 
-              - La pagina viene oscurata per mettere in evidenza la finestra
-              modale;
+              - La pagina viene oscurata per mettere in evidenza la modale.
 
               - L'utente può interagire con i pulsanti o link presenti nella
               finestra (ad esempio, chiudendola o eseguendo un'azione) per poter
-              tornare al contenuto di provenienza;
+              tornare al contenuto di provenienza.
 
-              - Se l'utente sceglie di chiudere la finestra modale, scompare e
+              - Se l'utente sceglie di chiudere la modale, questa scompare e
               l'utente può tornare a interagire con il contenuto sottostante.
 
-              - Se l'utente completa l'azione richiesta, la finestra modale
+              - Se l'utente completa l'azione richiesta, la modale
               scompare una volta terminato il processo.
 
-              - Le finestre modali possono essere chiuse in diversi modi:
+              - Le modali possono essere chiuse in diversi modi:
               tramite l'icona "X" in alto a destra, tramite un pulsante di
               annullamento o chiusura, o semplicemente cliccando al di fuori
-              della finestra modale.
+              della modale.
       - full: true
         noSpace: true
         paddingLeft: true

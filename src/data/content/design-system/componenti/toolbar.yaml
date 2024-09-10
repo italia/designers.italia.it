@@ -4,7 +4,7 @@ metadata:
     name: design-system-component
 seo:
   name: Toolbar - Designers Italia
-  description: Elemento contenitore di link, pulsanti o dropdown.
+  description: Menu di navigazione a icone che può contenere link, pulsanti e dropdown.
   canonical: null
   pathname: /design-system/componenti/toolbar/
 components:
@@ -16,7 +16,7 @@ components:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: Elemento contenitore di link, pulsanti o dropdown
+    subtitle: Menu di navigazione a icone che può contenere link, pulsanti e dropdown
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -52,8 +52,24 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Il componente Toolbar è un menu che utilizza principalmente le
+              icone come elemento di navigazione. 
+
+              È particolarmente utile per realizzare applicazioni molto
+              specifiche, come ad esempio dashboard o strumenti di
+              monitoraggio. 
+
+
+              ### Alternative a questo componente
+
+
+              - **[BottomNav](/design-system/componenti/bottomnav):** per creare
+              un menu in stile app mobile che sia sempre fissa nella parte
+              inferiore dello schermo.
+
+              - **[Header](/design-system/componenti/header):** per realizzare
+              un menu di navigazione classico.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -62,8 +78,32 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Usa la toolbar insieme a un elemento di intestazione, come ad
+              esempio uno [slim header](#), per dare un contesto di prodotto.
+
+              - Usa la variante *laterale* nel caso in cui sia presente un
+              [header](/design-system/componenti/header) completo.
+
+              - Usa la variante *dropdown* nel caso in cui ogni voci di menu
+              abbia un sotto livello di navigazione.
+
+              - Usa i divisori per raggruppare voci di menu che appartengono a
+              uno stesso gruppo logico.
+
+
+              ### Attenzione a
+
+
+              - Scegliere icone che descrivano in modo chiari i contenuti
+              associati.
+
+
+              ### Buone pratiche sui contenuti
+
+
+              - Usa una parola singola e chiara per l’etichetta associata
+              all’icona.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -232,8 +272,23 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              ![Gli elementi che formano la
+              Toolbar](/images/design-system/componenti/bottomnav-anatomy.png)
+
+
+              Il componente toolbar è composto da:
+
+
+              1. **forma di sfondo**, racchiude tutte le voci di menu;
+
+              2. **icona**, rappresenta visivamente il contenuto della sezione;
+
+              3. **etichetta (label)**, descrive la sezione, generalmente con un
+
+              parola; 
+
+              4. **contatore** (opzionale), il numero del badge informa sulla presenza di notifiche o aggiornamenti.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -242,8 +297,9 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Il componente toolbar si adatta alla dimensione del contenitore
+              in larghezza o altezza, a seconda della variante.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -253,7 +309,10 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design del
+              Toolbar](/images/design-system/componenti/bottomnav-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true

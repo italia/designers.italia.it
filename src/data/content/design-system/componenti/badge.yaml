@@ -5,8 +5,7 @@ metadata:
 seo:
   name: Badge - Designers Italia
   description: >-
-    Un elemento grafico che contiene numeri o caratteri in prossimità di un
-    altro elemento, utile per contatori ed etichette.
+    Indicatore grafico affiancabile ad altri elementi per creare contatori ed etichette.
   canonical: null
   pathname: /design-system/componenti/badge/
 components:
@@ -19,8 +18,7 @@ components:
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Un elemento grafico che contiene numeri o caratteri in prossimità di un
-      altro elemento, utile per contatori ed etichette
+      Indicatore grafico affiancabile ad altri elementi per creare contatori ed etichette
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -56,7 +54,7 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Un Badge è utilizzato per evidenziare un'informazione o uno stato
+              Il componente badge è utilizzato per evidenziare un'informazione o uno stato
               in un certo contesto. Può essere adoperato per fornire dettagli
               aggiuntivi, indicare una novità o un cambio di stato. 
 
@@ -90,12 +88,12 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: >
-              - Usa il Badge per mostrare numeri correlati a un altro elemento
+              - Usa il badge per mostrare numeri correlati a un altro elemento
               di interfaccia (come il numero di notifiche non lette) o per
               mostrare etichette o stati molto brevi in termini di numero di
               caratteri.
 
-              - Posiziona il Badge in modo che si noti facilmente.
+              - Posiziona il badge in modo che si noti facilmente.
 
 
               ### Attenzione a
@@ -103,17 +101,17 @@ tabs:
               - Non creare confusione con i pulsanti, evitando di usarli nella
               stessa area dell'interfaccia.
 
-              - Limitare il numero di Badge presenti nella stessa pagina.
+              - Limitare il numero di badge presenti nella stessa pagina.
 
               - Utilizzare la corretta semantica HTML rispetto a un lettore di
               schermo se il contenuto o il contesto non è autoesplicativo, ad
-              esempio per un Badge numerico utilizzando testo nascosto o
+              esempio per un badge numerico utilizzando testo nascosto o
               etichette `aria` per spiegare a cosa si riferisce.
 
 
               ### Buone pratiche sui contenuti
 
-              - Assicurati che l’etichetta del Badge sia breve, al massimo due
+              - Assicurati che l’etichetta del badge sia breve, al massimo due
               parole.
       - full: true
         noSpace: true
@@ -137,29 +135,29 @@ tabs:
                   - text: Visivamente accessibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Uso e contrasto dei colori, leggibilità
               - cols:
                   - text: Amichevole con lettori di schermo
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
                   - text: Navigabile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Focus, struttura, navigazione da tastiera o altri device
               - cols:
                   - text: Comprensibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Comprensibile, prevedibile, gestione semplice dell’errore
           - name: TextImageCta
             ctas:
@@ -196,8 +194,8 @@ tabs:
                   - text: UI Kit Italia (design)
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Kit
                       url: https://www.figma.com/community/file/1105848677422572920
@@ -210,8 +208,8 @@ tabs:
                   - text: Bootstrap Italia
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
                       blank: true
@@ -225,8 +223,8 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
@@ -294,9 +292,9 @@ tabs:
               Il componente Badge è composto da:
 
 
-              1. **sfondo**: mette in evidenza il Badge; 
+              1. **sfondo**, mette in evidenza il badge; 
 
-              2. **etichetta**: può esssere un testo o un numero;
+              2. **etichetta**, può esssere un testo o un numero.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -306,15 +304,15 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: >
-              - Il Badge deve essere chiaro, ma non deve disturbare la lettura
+              - Il badge deve essere chiaro, ma non deve disturbare la lettura
               del contenuto attorno.
 
               - Nel caso mostri un numero, questo dovrebbe aggiornarsi in tempo
-              reale;
+              reale.
 
               - Deve essere sempre messo vicino all'oggetto a cui si riferisce.
 
-              - Può prevedere un link ai contenuti su cui informa (es. le
+              - Può prevedere un link ai contenuti su cui informa (ad esempio, le
               notifiche).
       - full: true
         noSpace: true

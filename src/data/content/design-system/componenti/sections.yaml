@@ -4,7 +4,9 @@ metadata:
     name: design-system-component
 seo:
   name: Sections - Designers Italia
-  description: Per creare sezioni di contenuti orizzontali coerenti e con sfondi dedicati.
+  description: >-
+    Sezioni per creare raggruppamenti orizzontali di contenuti coerenti e con
+    sfondi dedicati.
   canonical: null
   pathname: /design-system/componenti/sections/
 components:
@@ -16,7 +18,9 @@ components:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: Per creare sezioni di contenuti orizzontali coerenti e con sfondi dedicati
+    subtitle: >-
+      Sezioni per creare raggruppamenti orizzontali di contenuti coerenti e con
+      sfondi dedicati
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -51,8 +55,12 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              L'elemento Sections, in italiano sezioni, è utile per organizzare
+              e suddividere contenuti particolarmente ampi e complessi,
+              permettendo agli utenti di navigare facilmente tra le diverse
+              parti. L'uso delle sezioni migliora la leggibilità e la struttura
+              di una pagina.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -61,8 +69,31 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Definisci le sezioni identificando le diverse parti del
+              contenuto che vuoi suddividere in parti distinte; ciascuna di esse
+              dovrebbe trattare un argomento specifico o una parte del contenuto
+              complessivo.
+
+              - Organizza il contenuto all'interno di ogni sezione in modo
+              logico e coerente, utilizzando titoli, sottotitoli e colonne della
+              griglia per delineare chiaramente le diverse parti della sezione.
+
+              - Personalizza l'aspetto delle sezioni adattandolo in base al
+              design del sito o applicazione. Puoi utilizzare le varianti del
+              colore di sfondo e altri elementi di stile per migliorare la
+              leggibilità e l'estetica.
+
+
+              ### Attenzione a
+
+
+              - Creare sezioni con una struttura simile e posizionate in
+              sequenza una dopo l'altra. L'eccessiva ripetizione di uno schema
+              può compromettere la fruizione dei contenuti.
+
+              - Personalizzare il colore di sfondo di una sezione, rispettando
+              il giusto contrasto con i contenuti testuali.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -123,16 +154,13 @@ tabs:
                   size: sm
                   addonClasses: ms-2
       - full: true
-        noSpace: true
-        paddingLeft: true
+        noSpace: false
+        title: Stato del componente
+        headingLevel: 2
+        text: >-
+          Lo stato del presente componente nelle diverse librerie di design e
+          sviluppo del design system
         components:
-          - name: TextImageCta
-            noSpace: false
-            title: Stato del componente
-            headingLevel: 2
-            text: >-
-              Lo stato del presente componente nelle diverse librerie di design
-              e sviluppo del design system
           - name: Table
             responsive: table-responsive-md
             head:
@@ -231,8 +259,11 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Una sezione può essere composta da un numero variabile di elementi
+              testuali o altri componenti. L'anatomia dipenderà quindi dalla
+              tipologia di contenuto che deve essere organizzato e strutturato
+              al suo interno.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -241,8 +272,10 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Una sezione non prevede di per sé comportamenti interattivi
+              particolari, ma dipenderà dagli elementi o componenti inseriti al
+              suo interno.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -251,8 +284,10 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Non sono presenti specifiche particolari in quanto queste
+              dipendono dall'organizzazione dei contenuti all'interno della
+              sezione.
       - full: true
         noSpace: true
         paddingLeft: true

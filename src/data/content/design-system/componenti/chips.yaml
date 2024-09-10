@@ -5,10 +5,7 @@ metadata:
 seo:
   name: Chips - Designers Italia
   description: >-
-    Il componente Chips permette di etichettare, classificare e organizzare
-    contenuti o elementi di interfaccia mediante parole chiave (tag), stati o
-    altri attributi per abilitare percorsi di navigazione trasversale, filtri o
-    scelte dell'utente.
+    Etichetta cliccabile che contiene brevi testi (tag) e icone per classificare, ordinare e filtriare contenuti e altri elementi di interfaccia.
   image: null
   canonical: null
   pathname: /design-system/componenti/chips/
@@ -22,10 +19,7 @@ components:
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Il componente Chips permette di etichettare, classificare e organizzare
-      contenuti ed elementi dell'interfaccia utilizzando parole chiave (tag),
-      stati o altri attributi per abilitare percorsi di navigazione trasversale
-      o filtri e scelte dell'utente
+      Etichetta cliccabile che contiene brevi testi (tag) e icone per classificare, ordinare e filtriare contenuti e altri elementi di interfaccia
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -70,7 +64,7 @@ tabs:
               messaggio).      
 
 
-              Le Chips possono essere parte di un gruppo (set) e permettere
+              Le chips possono essere parte di un gruppo (set) e permettere
               selezione, deselezione o rimozione a seconda del contesto. 
 
 
@@ -91,36 +85,34 @@ tabs:
             headingLevel: 2
             text: >
               - Tieni presente che il componente è visivamente riconoscibile
-              come interattivo; per etichette statiche valuta quindi l'uso del
-              componente [Badge](/design-system/componenti/badge/).  
+              come interattivo; per etichette statiche valuta quindi l'uso di un [badge](/design-system/componenti/badge/).  
 
               - Usa icone o avatar per aggiungere un’informazione visiva
               all’interazione.
 
-              - Usa Chips rimovibili per le scelte: l'utente potrà rimuovere il
+              - Usa chips rimovibili per le scelte: l'utente potrà rimuovere il
               filtro se utile. 
 
 
               ### Attenzione a
 
-              - Usarle con moderazione: l'uso di numerosi componenti di questo
-              tipo sulla stessa pagina può aumentare il carico cognitivo per
+              - Usare le chips con moderazione, poiché l'uso eccessivo su una stessa pagina può aumentare il carico cognitivo per
               l'utente, in particolare se combinato con altri elementi visivi.
 
-              - Le Chips colorate possono essere utilizzate per organizzare una
+              - Le chips colorate possono essere utilizzate per organizzare una
               grande quantità di contenuti: ad esempio potresti usare le
               etichette per organizzare le segnalazioni per argomento in una
               lunga lista di segnalazioni; poni particolare attenzione a fornire
               l'informazione veicolata dal colore anche in altri modi per
               l'accessibilità.
 
-              - Configura la parte interattiva del componente scegliendo la
+              - Configurare la parte interattiva del componente scegliendo la
               corretta semantica `HTML`: usa `<button>` dove è possibile
               un'azione (ad esempio selezione filtro e l'icona di rimozione
               laddove presente), e `<a>` dove il componente facilita la
               navigazione (ad esempio link a un archivio filtrato).  
 
-              - Usa Chips disabilitate con moderazione, assicurandoti che
+              - Usare chips disabilitate con moderazione, assicurandoti che
               all’utente sia chiaro come attivarle.
 
 
@@ -154,8 +146,8 @@ tabs:
                   - text: Visivamente accessibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Uso e contrasto dei colori, leggibilità
               - cols:
                   - text: Amichevole con lettori di schermo
@@ -213,8 +205,8 @@ tabs:
                   - text: UI Kit Italia (design)
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Kit
                       url: https://www.figma.com/community/file/1105848677422572920
@@ -227,8 +219,8 @@ tabs:
                   - text: Bootstrap Italia
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda documentazione
                       blank: true
@@ -242,8 +234,8 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
@@ -257,8 +249,8 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda documentazione
                       url: >-
@@ -312,15 +304,15 @@ tabs:
 
               1. **forma di sfondo**;
 
-              2. **icona**: opzionale, utile a rafforzare il significato
+              2. **icona** (opzionale), utile a rafforzare il significato
               dell'etichetta;
 
-              3. **avatar**: opzionale, utile per rappresentare scelte o
+              3. **avatar** (opzionale), utile per rappresentare scelte o
               attribuzioni di utenti;
 
-              4. **etichetta** (label): il testo dell'etichetta;
+              4. **etichetta (label)**, il testo contenuto nel componente;
 
-              5. **icona rimozione**: opzionale, utile nell'uso del componente
+              5. **icona rimozione** (opzionale), utile nell'uso del componente
               come input di scelta.
       - full: true
         noSpace: true
@@ -335,21 +327,21 @@ tabs:
               del componente:
 
 
-              - **default**: il componente si presenta nello stato normale
+              - **default**, il componente si presenta nello stato normale
               quando è attivo ma l'utente non ci interagisce;
 
-              - **hover**: si manifesta al passaggio del puntatore sul pulsante,
+              - **hover**, si manifesta al passaggio del puntatore sul pulsante,
               è disponibile solo su dispositivi no-touch;
 
-              - **focus**: si manifesta nel caso di navigazione tramite tastiera
+              - **focus**, si manifesta nel caso di navigazione tramite tastiera
               o altri strumenti, passando da un elemento interattivo a quello
               successivo;
 
-              - **disabled**: indica che il componente è disattivato e non è
+              - **disabled**, indica che il componente è disattivato e non è
               possibile interagire con esso.
 
 
-              Il click sull'icona di rimozione, laddove presente, eliminerà la
+              Il clic sull'icona di rimozione, laddove presente, eliminerà la
               visualizzazione del componente.
 
 

@@ -1,0 +1,358 @@
+metadata:
+  json: bsi/organizzare-i-contenuti/tabelle.json
+  template:
+    name: design-system-component
+  redirect_from:
+    - /design-system/componenti/table
+    - /design-system/componenti/tabelle
+    - /design-system/componenti/tabella
+seo:
+  name: Tables - Designers Italia
+  description: >-
+    Rappresentazione organizzata di dati in righe e colonne per visualizzare informazioni in modo strutturato e facilitare il confronto tra più elementi.
+  image: null
+  canonical: null
+  pathname: /design-system/componenti/tables/
+components:
+  hero:
+    specialKangarooComponent: true
+    background: null
+    title: Tables
+    tag:
+      label: Componenti
+      addonClasses: mt-3 text-uppercase
+    column: true
+    subtitle: >-
+      Rappresentazione organizzata di dati in righe e colonne per visualizzare informazioni in modo strutturato e facilitare il confronto tra più elementi
+    imgRatio: 1x1
+    noBorder: true
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      tagsDesignSystemLabel: Utile per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tagsDesignSystem:
+        - Contenuti
+  tab:
+    - full: true
+tabs:
+  - title: Uso e accessibilità
+    componentVariant:
+      id: preview-use
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/tab/
+      accordionOpen: false
+      accordionShow: false
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Quando usarlo
+            headingLevel: 2
+            text: >
+              Il componente table, in italiano tabella, è ideale quando si desidera presentare dati strutturati in modo chiaro e organizzato. Una tabella consente di organizzare in modo logico le informazioni, raggruppando elementi simili, favorendo la comparazione e facilitando la comprensione di contenuti complessi.
+
+              È particolarmente utile in contesti come:
+              
+              - gestione di inventari o elenchi di elementi, dove ogni voce può essere dettagliata attraverso colonne specifiche;
+
+              - visualizzazione di dati comparativi, come tabelle di confronto tra prodotti o servizi;
+              
+              - presentazione di dati statistici, dove l'organizzazione in righe e colonne facilita l'analisi;
+              
+              - creazione di report o documenti che richiedono la suddivisione dei dati in categorie distinte.
+
+              ### Alternative a questo componente
+
+              - **[List](/design-system/componenti/list)**: nel caso siano presenti dati o informazioni non struttutrati.
+
+              - **[Card](/design-system/componenti/card)**: per mostrare contenuti in sequenza e permettere la navigazione a pagine di dettaglio.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Come usarlo
+            headingLevel: 2
+            text: >
+                - Definisci in modo chiaro come presentare i dati, limitando il numero delle colonne.
+
+                - Usa sempre le intestazioni delle colonne.
+                
+                - Crea tabelle facili da consultare, applicando gli stili di formattazione del testo per evidenziare i punti chiave.
+                
+                - Permetti di ordinare i contenuti di una colonna solo quando è necessario, utilizzando l’ordinamento alfabetico o numerico a seconda dei casi.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Stato del componente
+            headingLevel: 2
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tabelle/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-tables--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Da verificare
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/table
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Progettazione
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Anatomia
+            headingLevel: 2
+            text: >
+              ![Gli elementi che formano la cella di una tablle](/images/design-system/componenti/table-cell-anatomy.png)
+
+              La cella di una tabella è composta da:
+
+              1. **sfondo**, che può essere trasparente o di vari colori a seconda delle esigenze;
+
+              2. **etichetta (label)**,  il testo che fa parte della cella e che, nel caso di intestazioni, può essere in **bold** oppure maiuscoletto;
+              
+              3. **bordo**, che può essere applicato a uno o più lati, a seconda dello stile della tabella.
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Comportamento
+            headingLevel: 2
+            text: >
+              Non sono previste indicazioni particolari.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
+            text: >
+              Le specifiche sono relative alle due dimensioni "large" e "small".
+
+              Tutte le misure indicate sono espresse in `px`. 
+              
+              ![Specifiche di design della cella di una tabella](/images/design-system/componenti/table-cell-specs.png)
+
+
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
+            ctas:
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Sviluppo
+    componentVariant:
+      id: preview-dev
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tabelle/
+      accordionOpen: true
+      accordionShow: true
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
+            ctas:
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

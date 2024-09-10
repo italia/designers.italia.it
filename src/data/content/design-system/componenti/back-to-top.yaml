@@ -5,9 +5,7 @@ metadata:
 seo:
   name: Back to top - Designers Italia
   description: >-
-    Un pulsante che consente agli utenti di scorrere facilmente all'inizio della
-    pagina, particolarmente indicato su pagine di contenuto lunghe e su
-    dispositivi mobile.
+    Pulsante per tornare rapidamente all'inizio di una pagina con contenuti lunghi.
   image: null
   canonical: null
   pathname: /design-system/componenti/back-to-top/
@@ -21,9 +19,7 @@ components:
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Un pulsante che consente agli utenti di scorrere facilmente all'inizio
-      della pagina, particolarmente indicato su pagine di contenuto lunghe e su
-      dispositivi mobile
+      Pulsante per tornare rapidamente all'inizio di una pagina con contenuti lunghi
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -65,12 +61,12 @@ tabs:
               navigazione dei contenuti. 
 
 
-              Il Back to top è un pulsante che appare su pagine lunghe e
+              Il back to top è un pulsante che appare su pagine lunghe e
               fornisce una scorciatoia per tornare ad inizio pagina, per
-              facilitare ad esempio l'accesso ad
-              [Header](/design-system/componenti/header/) e menu di navigazione,
-              al percorso corrente nei
-              [Breadcrumbs](/design-system/componenti/breadcrumbs/), ad
+              facilitare ad esempio l'accesso a
+              [header](/design-system/componenti/header/) e menu di navigazione,
+              al percorso corrente nelle
+              [breadcrumbs](/design-system/componenti/breadcrumbs/), a
               eventuali filtri o cambio modo di ordinamento di una lunga lista,
               alla modifica o inserimento di query in un campo di ricerca
               durante l'esplorazione dei risultati.  
@@ -104,7 +100,7 @@ tabs:
               [Sticky](/design-system/componenti/sticky/), specialmente se nella
               stessa posizione in basso a destra della viewport.
 
-              - Non lasciare il compito svolto dal Back to top alle sole
+              - Non lasciare il compito svolto dal back to top alle sole
               funzionalità native di alcuni browser e dispositivi: non c'è uno
               standard condiviso e probabilmente la maggior parte di queste
               tecniche sono nascoste o ignorate dagli utenti.
@@ -133,29 +129,29 @@ tabs:
                   - text: Visivamente accessibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Uso e contrasto dei colori, leggibilità
               - cols:
                   - text: Amichevole con lettori di schermo
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Verifica in corso
+                      addonClasses: bg-warning
                   - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
                   - text: Navigabile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Verifica in corso
+                      addonClasses: bg-warning
                   - text: Focus, struttura, navigazione da tastiera o altri device
               - cols:
                   - text: Comprensibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Comprensibile, prevedibile, gestione semplice dell’errore
           - name: TextImageCta
             ctas:
@@ -192,8 +188,8 @@ tabs:
                   - text: UI Kit Italia (design)
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Kit
                       url: https://www.figma.com/community/file/1105848677422572920
@@ -206,8 +202,8 @@ tabs:
                   - text: Bootstrap Italia
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda documentazione
                       blank: true
@@ -221,8 +217,8 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
@@ -236,8 +232,8 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda documentazione
                       url: >-
@@ -288,12 +284,12 @@ tabs:
 
               Il componente Back to top è composto da:
 
-              1. **forma di sfondo**: colore `primary` su fondi chiari, bianco
+              1. **forma di sfondo** con colore `primary` su fondi chiari, bianco
               su fondi scuri;
 
-              2. **icona freccia**: indica l'azione di scorrimento verso l'alto;
+              2. **icona freccia**, indica l'azione di scorrimento verso l'alto;
 
-              3. **ombra** (opzionale): utile per distinguere il Back to top dai
+              3. **ombra** (opzionale), utile per distinguere il back to top dai
               contenuti della pagina.  
       - full: true
         noSpace: true
@@ -306,10 +302,10 @@ tabs:
             text: >
               - Il componente Back to top appare allo scorrere della pagina;
 
-              - appare in posizione `fixed` nell'angolo in basso a destra della
+              - Appare in posizione `fixed` nell'angolo in basso a destra della
               viewport, in sovrimpressione sui contenuti di pagina;
 
-              - al click/touch o attivazione da tastiera riporta l'utente
+              - Al clic/touch o attivazione da tastiera riporta l'utente
               all'inizio della pagina. 
       - full: true
         noSpace: true

@@ -4,7 +4,7 @@ metadata:
     name: design-system-component
 seo:
   name: Autocomplete - Designers Italia
-  description: Elementi e stili per la creazione di campi con autocompletamento.
+  description: Campo di input che suggerisce automaticamente opzioni di completamento man mano che l'utente digita.
   canonical: null
   pathname: /design-system/componenti/autocomplete/
 components:
@@ -16,7 +16,7 @@ components:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: Elementi e stili per la creazione di campi con autocompletamento
+    subtitle: Campo di input che suggerisce automaticamente opzioni di completamento man mano che l'utente digita
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -51,8 +51,29 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Il componente Autocomplete consiste in un campo input con funzione
+              di autocompletamento dei dati che fornisce all'utente suggerimenti
+              pertinenti mentre inizia a digitare. Questi suggerimenti si basano
+              sul testo inserito e aiutano l'utente a completare rapidamente il
+              campo senza dover scrivere il testo per intero.
+
+
+              Usa il campo input con funzione di autocomplete nei seguenti casi:
+
+
+              - quando il numero di opzioni disponibili è molto elevato e
+              risulterebbe difficile per l'utente scorrerle tutte manualmente;
+
+              - per migliorare l'esperienza d'uso, riducendo il tempo necessario
+              per trovare e selezionare un'opzione;
+
+              - quando è necessario fornire suggerimenti basati su input
+              parziali dell'utente, come nei campi di ricerca o nei moduli di
+              registrazione;
+
+              - per aiutare l'utente a evitare errori di digitazione, mostrando
+              opzioni predefinite che possono essere selezionate rapidamente.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -61,8 +82,23 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Per utilizzare correttamente un campo input con funzione di
+              autocomplete, segui questi passaggi:
+
+
+              - implementa una lista di suggerimenti che si aggiorna
+              dinamicamente mentre l'utente digita un testo;
+
+              - fornisci un feedback visivo chiaro quando un'opzione è
+              selezionata, come un'ombreggiatura o un'icona di conferma;
+
+              - permetti la navigazione tramite tastiera, assicurandoti che
+              l'utente possa scorrere i suggerimenti usando i tasti freccia e
+              selezionare un'opzione con il tasto Invio;
+
+              - previeni gli errori, avvisando l'utente nel caso in cui tenta di
+              inserire un valore non valido.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -234,7 +270,7 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              _In stesura_
+              _Non disponibile_
       - full: true
         noSpace: true
         paddingLeft: true
@@ -243,8 +279,25 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              - Quando l'utente inizia a digitare, viene mostrata una lista di
+              suggerimenti pertinenti basati sui caratteri inseriti.
+
+              - La lista di suggerimenti si aggiorna dinamicamente man mano che
+              l'utente digita ulteriori caratteri.
+
+              - L'utente può navigare tra i suggerimenti usando i tasti freccia
+              e selezionare un suggerimento con il tasto Invio.
+
+              - Nel caso di un dispositivo no-touch, i suggerimenti possono
+              essere evidenziati al passaggio del puntatore del mouse.
+
+              - Una volta selezionato un suggerimento, questo viene inserito
+              automaticamente nel campo input e la lista dei suggerimenti
+              scompare.
+
+              - Se l'utente non seleziona alcun suggerimento e continua a
+              digitare, il valore inserito manualmente rimane nel campo input.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -254,7 +307,7 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              _Non disponibile_
       - full: true
         noSpace: true
         paddingLeft: true

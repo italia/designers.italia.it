@@ -8,7 +8,7 @@ metadata:
 
 seo:
   name: Checkbox - Designers Italia
-  description: "Pulsanti di selezione che consentono di indicare più elementi da un elenco di opzioni predefinite."
+  description: "Casella di controllo che consente di selezionare una o più opzioni da un elenco predefinito."
   image: null
   canonical: null
   pathname: /design-system/componenti/checkbox/
@@ -27,7 +27,7 @@ components:
     #   addonClasses: bg-success mb-2
     #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Pulsanti di selezione che consentono di indicare più elementi da un elenco di opzioni predefinite"
+    subtitle: "Casella di controllo che consente di selezionare una o più opzioni da un elenco predefinito"
     # img: /images/400x300.png #I
     # alt: "" #C
     imgRatio: 1x1
@@ -57,7 +57,7 @@ tabs:
       id: "preview-use"
       title: "Anteprima"
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/checkbox/
       accordionOpen: false
       accordionShow: false
 
@@ -71,7 +71,14 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              Il componente Checkbox è utile per fornire agli utenti la possibilità di selezionare una o più opzioni da un elenco di scelte predefinite. 
+              
+              Può essere utilizzato per:
+
+              - form di registrazione o domanda;
+              - questionari e sondaggi;
+              - filtri di ricerca;
+              - preferenze utente.
 
       - full: true
         noSpace: true
@@ -82,7 +89,18 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: |
-              _In stesura_
+              - Usa le checkbox nel caso di scelte multiple o quando è richiesta una scelta singola di tipo binario, come “Accetto/Non accetto”.
+              - Se il numero di opzioni disponibili è superiore ad otto, considera invece l’uso combinato delle checkbox in un dropdown.
+              - Assicurati che lo stato selezionato o deselezionato sia facilmente riconoscibile.
+              - Abilita il supporto per la navigazione tramite tastiera.
+              
+              ### Buone pratiche sui contenuti
+              
+              - Scegli una label chiara e descrittiva per ogni opzione.
+              
+              ### Attenzione a
+
+              - Rendere evidente quali opzioni sono selezionabili.
 
       - full: true
         noSpace: true
@@ -252,7 +270,13 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: |
-              *In stesura*
+              ![Gli elementi che formano la checkbox](/images/design-system/componenti/checkbox-anatomy.png)
+
+              Il componente checkbox è composto da:
+
+              1. **casella di controllo**, l'elemento che restituisce il feedback visivo dell'attivazione/disattivazione della casella;
+              2. **etichetta (label)**, descrive brevemente la tipologia di controllo;
+              3. **descrizione** (opzionale), un testo che descrive in modo dettagliato a cosa corrisponde la casella di controllo. 
 
       - full: true
         noSpace: true
@@ -263,7 +287,18 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: |
-              *In stesura*
+              Gli **stati interattivi** dei campi checkbox possono essere:
+
+              - **default**, il campo si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;
+              - **hover**, si manifesta al passaggio del puntatore sul campo ed è disponibile solo su dispositivi no-touch;
+              - **focus**, si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
+              - **active**, è lo stato relativo al momento del click o pressione sul campo e restituisce un riscontro visivo dell'azione appena compiuta e abilita l'inserimento del contenuto;
+              - **disabled**, indica che il campo è disattivato e non è possibile interagire con esso;
+              - **readonly**, indica che il campo è disponibile in sola lettura e non è possibile cambiarne il contenuto.
+
+              Gli **stati di validazione** dei campi checkbox in linea generale possono essere:
+
+              - **error**, il campo è obbligatorio ma l’utente non l’ha selezionato.
               
       - full: true
         noSpace: true
@@ -274,7 +309,9 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
+              Tutte le misure indicate sono espresse in `px`.
+
+              ![Specifiche di design della checkbox](/images/design-system/componenti/checkbox-specs.png)
       
       - full: true
         noSpace: true
@@ -303,7 +340,7 @@ tabs:
       id: "preview-dev"
       title: "Anteprima"
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/checkbox/
       accordionOpen: true
       accordionShow: true
 

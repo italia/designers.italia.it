@@ -4,7 +4,7 @@ metadata:
     name: design-system-component
 seo:
   name: Thumbnav - Designers Italia
-  description: Componente per navigare immagini anteprima thumbnail.
+  description: Raccoglitore di miniature di immagini per facilitare la visualizzazione e la navigazione di contenuti multipli.
   canonical: null
   pathname: /design-system/componenti/sidebar/
 components:
@@ -16,7 +16,7 @@ components:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: Componente per navigare immagini anteprima thumbnail
+    subtitle: Raccoglitore di miniature di immagini per facilitare la visualizzazione e la navigazione di contenuti multipli
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -52,8 +52,11 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Il componente Thumbnav può essere utilizzato per fornire una
+              navigazione rapida tra immagini in un formato compatto e
+              visivamente interessante, come ad esempio tra le immagini di una
+              galleria.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -62,8 +65,27 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Scegli se mostrare le miniature delle immagini in un layout
+              orizzontale o verticale, a seconda delle esigenze del design.
+
+              - Assicurati che ogni miniatura nel thumbnav sia facilmente
+              cliccabile e che porti l'utente al contenuto o all'immagine
+              corrispondente una volta selezionato.
+
+              - Il thumbnav dovrebbe essere posizionato in un luogo facilmente
+              accessibile sulla pagina, in modo che gli utenti possano navigare
+              rapidamente tra i contenuti.
+
+
+              ### Attenzione a
+
+              - Abilitare gli stati hover solamente per dispositivi con
+              puntatore, come mouse o trackpad.
+
+              - Utilizzare una ombreggiatura sulle miniature in overlay per
+              assicurare il giusto contrasto tra l’immagine di sfondo e le
+              stesse.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -242,8 +264,12 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              - Se abilitato, lo stato hover evidenzia l’immagine su cui si
+              sofferma il puntatore.
+
+              - Nel caso di utilizzo della variante overlay, l’immagine di
+              sfondo cambia a seconda della miniatura cliccata.
       - full: true
         noSpace: true
         paddingLeft: true
