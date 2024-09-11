@@ -211,7 +211,6 @@ function NavSidebar({
                   <use href="/svg/sprites.svg#it-chevron-left" />
                 </svg>
                 <span>{backLabel}</span>
-                
               </button>
 
               <div className="nav-sidebar-header mx-4 mb-3 mt-0 mt-lg-2">
@@ -227,11 +226,7 @@ function NavSidebar({
               {secondaryLinks && (
                 <div className="sidebar-linklist-wrapper linklist-secondary">
                   <div className="link-list-wrapper">
-                    <div className="pt-3">
-                    {tag && (
-                      <Tag {...tag} />
-                    )}
-                    </div>
+                    <div className="pt-3">{tag && <Tag {...tag} />}</div>
                     <ul className="link-list">{secondaryLinks}</ul>
                   </div>
                 </div>
