@@ -1,0 +1,328 @@
+metadata:
+  json: bsi/form/transfer.json
+  template:
+    name: design-system-component
+seo:
+  name: Transfer - Designers Italia
+  description: Consente la creazione di liste di checkbox con elementi trasferibili.
+  canonical: null
+  pathname: /design-system/componenti/transfer/
+components:
+  hero:
+    specialKangarooComponent: true
+    background: null
+    title: Transfer
+    tag:
+      label: Componenti
+      addonClasses: mt-3 text-uppercase
+    column: true
+    subtitle: Consente la creazione di liste di checkbox con elementi trasferibili
+    imgRatio: 1x1
+    noBorder: true
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      tagsDesignSystemLabel: Utile per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tagsDesignSystem:
+        - Form
+  tab:
+    - full: true
+tabs:
+  - title: Uso e accessibilità
+    componentVariant:
+      id: preview-use
+      title: Anteprima
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/transfer/
+      accordionOpen: false
+      accordionShow: false
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Quando usarlo
+            headingLevel: 2
+            text: >
+              Il componente Transfer permette di spostare facilmente elementi
+              tra due liste affiancate. È particolarmente indicato per:
+
+
+              - gestire selezioni multiple di elementi;
+
+              - organizzare e classificare contenuti;
+
+              - filtrare dati in modo interattivo;
+
+              - personalizzare preferenze o configurazioni utente.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Come usarlo
+            headingLevel: 2
+            text: >
+              - Inserisci il transfer all'interno di un `form`.
+
+              - Definisci la larghezza delle colonne utilizzando le griglie.
+
+              - Aggiungi un pulsante per dare la possibilità di confermare le
+              modifiche applicate alle liste.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Verifica in corso
+                      addonClasses: bg-warning
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Stato del componente
+            headingLevel: 2
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/form/transfer/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda Storybook
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Progettazione
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Anatomia
+            headingLevel: 2
+            text: |
+              Non disponibile.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Comportamento
+            headingLevel: 2
+            text: >
+              - Cliccando su uno o più elementi della lista, questi vengono
+              selezionati.
+
+              - Il pulsante sposta a destra permette di spostare gli elementi
+              selezionati nel gruppo di destra.
+
+              - Il pulsante sposta a sinistra permette di spostare gli elementi
+              selezionati nel gruppo di destra.
+
+              - Il pulsante di reset ripristina l'ordine iniziale.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
+            text: |
+              Non disponibile.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
+            ctas:
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Sviluppo
+    componentVariant:
+      id: preview-dev
+      title: Anteprima
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/transfer/
+      accordionOpen: true
+      accordionShow: true
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
+            ctas:
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

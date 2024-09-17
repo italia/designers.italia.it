@@ -1,0 +1,362 @@
+metadata:
+  json: bsi/componenti/forward.json
+  template:
+    name: design-system-component
+seo:
+  name: Forward - Designers Italia
+  description: >-
+    Pulsante per scorrere rapidamente a un contenuto specifico su una pagina
+    lunga.
+  image: null
+  canonical: null
+  pathname: /design-system/componenti/forward/
+components:
+  hero:
+    specialKangarooComponent: true
+    background: null
+    title: Forward
+    tag:
+      label: Componenti
+      addonClasses: mt-3 text-uppercase
+    column: true
+    subtitle: >-
+      Pulsante per scorrere rapidamente a un contenuto specifico su una pagina
+      lunga
+    imgRatio: 1x1
+    noBorder: true
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      tagsDesignSystemLabel: Utile per
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tagsDesignSystem:
+        - Navigazione
+  tab:
+    - full: true
+tabs:
+  - title: Uso e accessibilità
+    componentVariant:
+      id: preview-use
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la funzionalità del componente è necessario
+        implementarlo.
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/forward/
+      accordionOpen: false
+      accordionShow: false
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Quando usarlo
+            headingLevel: 2
+            text: >
+              Usa il componente Forward su pagine lunghe, per permettere agli
+              utenti di scorrere direttamente a un contenuto specifico. Ad
+              esempio, può essere usato su una prima schermata di copertina, in
+              basso, per spostare l'attenzione sul contenuto che segue,
+              invitando le persone a scoprirlo.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Come usarlo
+            headingLevel: 2
+            text: >
+              - Usa un componente forward nel contesto di pagine lunghe con
+              sezioni in evidenza, come ad esempio pagine che presentano un
+              [hero](/design-system/componenti/hero/).
+
+              - Imposta l'ancora sul contenuto in pagina a cui vuoi far arrivare
+              velocemente l'utente, dopo che ha cliccato sul componente. 
+
+
+              ### Attenzione a
+
+              - Non usare più componenti Forward sulla stessa pagina. 
+
+              - Rendere coerente la funzione nel contesto dello stesso sito o
+              servizio se presente su più pagine.  
+
+              - Testare il funzionamento e il risultato dell'azione, in
+              particolare ponendo attenzione che al compiersi dell'azione alcuni
+              contenuti non siano nascosti da elementi
+              [sticky](/design-system/componenti/sticky/) o barre di
+              navigazione. 
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Stato del componente
+            headingLevel: 2
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/componenti/forward/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-menu-di-navigazione-forward--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/forward
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Progettazione
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Anatomia
+            headingLevel: 2
+            text: >
+              ![Gli elementi che formano il
+              Forward](/images/design-system/componenti/forward-anatomy.png)
+
+
+              Il componente forward è composto da: 
+
+              1. **area di interazione**, è trasparente e di solito si estende
+              in orizzontale per tutto lo spazio a disposizione; 
+
+              2. **icona**, una freccia verso il basso che indica all'utente
+              l'azione che sta per compiere. 
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Comportamento
+            headingLevel: 2
+            text: >
+              Al clic/tap sul componente o alla sua attivazione da tastiera, il
+              browser scrollerà portando l'utente direttamente al contenuto
+              desiderato. 
+
+
+              Tutta l'area di interazione mostra il contorno con lo status
+              *focus* se selezionata da tastiera.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
+            title: Specifiche di design
+            headingLevel: 2
+            text: >
+              Tutte le misure indicate sono espresse in `px`.
+
+
+              ![Gli elementi che formano il
+              Forward](/images/design-system/componenti/forward-specs.png)
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
+            ctas:
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Sviluppo
+    componentVariant:
+      id: preview-dev
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la funzionalità del componente è necessario
+        implementarlo.
+      viewerHeight: 0
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/forward/
+      accordionOpen: true
+      accordionShow: true
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            title: Come iniziare
+            headingLevel: 2
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
+            ctas:
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
