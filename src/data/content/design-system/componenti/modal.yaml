@@ -5,7 +5,9 @@ metadata:
 seo:
   name: Modal - Designers Italia
   description: >-
-    Finestra di interazione a comparsa in sovrapposizione sul contenuto principale per focalizzare l'attenzione su un'azione specifica o un messaggio importante.
+    Finestra di interazione a comparsa in sovrapposizione sul contenuto
+    principale per focalizzare l'attenzione su un'azione specifica o un
+    messaggio importante.
   canonical: null
   pathname: /design-system/componenti/modal/
 components:
@@ -18,7 +20,9 @@ components:
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Finestra di interazione a comparsa in sovrapposizione sul contenuto principale per focalizzare l'attenzione su un'azione specifica o un messaggio importante
+      Finestra di interazione a comparsa in sovrapposizione sul contenuto
+      principale per focalizzare l'attenzione su un'azione specifica o un
+      messaggio importante
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -55,17 +59,17 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Il componente modal, in italiano modale, è utile per focalizzare l'attenzione
-              dell'utente su informazioni cruciali o richiedere un'azione
-              precisa, rimanendo nella pagina attuale.
+              Il componente modal, in italiano modale, è utile per focalizzare
+              l'attenzione dell'utente su informazioni cruciali o richiedere
+              un'azione precisa, rimanendo nella pagina attuale.
 
 
               È il caso di **conferme di azioni**, **form di accesso** o
               registrazione, **approfondimento** di uno specifico contenuto.
 
 
-              Tuttavia, un uso eccessivo delle modali interrompe il
-              normale flusso di navigazione, quindi è raccomandato **usarle con
+              Tuttavia, un uso eccessivo delle modali interrompe il normale
+              flusso di navigazione, quindi è raccomandato **usarle con
               moderazione**.
 
 
@@ -98,15 +102,14 @@ tabs:
               ### Attenzione a
 
 
-              - Non utilizzare la modale per visualizzare grandi
-              quantità di informazioni.
+              - Non utilizzare la modale per visualizzare grandi quantità di
+              informazioni.
 
-              - Non utilizzare le modali per form complessi o processi
-              con step multipli.
+              - Non utilizzare le modali per form complessi o processi con step
+              multipli.
 
-              - Usare un tag `<h2>` per il titolo della modale in
-              quanto i suoi contenuti sono separati dalla struttura della
-              pagina.
+              - Usare un tag `<h2>` per il titolo della modale in quanto i suoi
+              contenuti sono separati dalla struttura della pagina.
 
               - Usare la semantica `<button>` per l'eventuale pulsante che ne
               attiva l'apertura, essendo un'azione in pagina.
@@ -119,7 +122,8 @@ tabs:
               ### Buone pratiche sui contenuti
 
 
-              - Usa un titolo semplice che sintetizza lo scopo della modale e l'azione richiesta.
+              - Usa un titolo semplice che sintetizza lo scopo della modale e
+              l'azione richiesta.
 
               - Inserisci ulteriori informazioni su cosa fare e perché tramite
               una breve descrizione.
@@ -148,29 +152,29 @@ tabs:
                   - text: Visivamente accessibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Uso e contrasto dei colori, leggibilità
               - cols:
                   - text: Amichevole con lettori di schermo
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
                   - text: Navigabile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Focus, struttura, navigazione da tastiera o altri device
               - cols:
                   - text: Comprensibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Comprensibile, prevedibile, gestione semplice dell’errore
           - name: TextImageCta
             ctas:
@@ -207,8 +211,8 @@ tabs:
                   - text: UI Kit Italia (design)
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Kit
                       url: https://www.figma.com/community/file/1105848677422572920
@@ -221,8 +225,8 @@ tabs:
                   - text: Bootstrap Italia
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
                       blank: true
@@ -236,8 +240,8 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
@@ -251,8 +255,8 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
                       url: >-
@@ -336,8 +340,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: >
-              - Quando viene attivata, la modale appare al centro dello
-              schermo, sovrapposta alla pagina sottostante.
+              - Quando viene attivata, la modale appare al centro dello schermo,
+              sovrapposta alla pagina sottostante.
 
               - La pagina viene oscurata per mettere in evidenza la modale.
 
@@ -348,13 +352,12 @@ tabs:
               - Se l'utente sceglie di chiudere la modale, questa scompare e
               l'utente può tornare a interagire con il contenuto sottostante.
 
-              - Se l'utente completa l'azione richiesta, la modale
-              scompare una volta terminato il processo.
+              - Se l'utente completa l'azione richiesta, la modale scompare una
+              volta terminato il processo.
 
-              - Le modali possono essere chiuse in diversi modi:
-              tramite l'icona "X" in alto a destra, tramite un pulsante di
-              annullamento o chiusura, o semplicemente cliccando al di fuori
-              della modale.
+              - Le modali possono essere chiuse in diversi modi: tramite l'icona
+              "X" in alto a destra, tramite un pulsante di annullamento o
+              chiusura, o semplicemente cliccando al di fuori della modale.
       - full: true
         noSpace: true
         paddingLeft: true

@@ -4,7 +4,9 @@ metadata:
     name: design-system-component
 seo:
   name: Toggles - Designers Italia
-  description: Pulsante di tipo 'interruttore' che permette di alternare tra due stati e semplificare la gestione di opzioni o impostazioni.
+  description: >-
+    Pulsante di tipo 'interruttore' che permette di alternare tra due stati e
+    semplificare la gestione di opzioni o impostazioni.
   canonical: null
   pathname: /design-system/componenti/toggles/
 components:
@@ -16,7 +18,9 @@ components:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
-    subtitle: Pulsante di tipo 'interruttore' che permette di alternare tra due stati e semplificare la gestione di opzioni o impostazioni
+    subtitle: >-
+      Pulsante di tipo 'interruttore' che permette di alternare tra due stati e
+      semplificare la gestione di opzioni o impostazioni
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -128,29 +132,29 @@ tabs:
                   - text: Visivamente accessibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Uso e contrasto dei colori, leggibilità
               - cols:
                   - text: Amichevole con lettori di schermo
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Verifica in corso
+                      addonClasses: bg-warning
                   - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
                   - text: Navigabile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Focus, struttura, navigazione da tastiera o altri device
               - cols:
                   - text: Comprensibile
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Comprensibile, prevedibile, gestione semplice dell’errore
           - name: TextImageCta
             ctas:
@@ -187,8 +191,8 @@ tabs:
                   - text: UI Kit Italia (design)
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Kit
                       url: https://www.figma.com/community/file/1105848677422572920
@@ -201,8 +205,8 @@ tabs:
                   - text: Bootstrap Italia
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda documentazione
                       blank: true
@@ -216,8 +220,8 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
@@ -231,8 +235,8 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Da verificare
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
                       url: >-
@@ -286,9 +290,12 @@ tabs:
               1. **etichetta (label)**, descrive l'opzione che è possibile
               attivare/disattivare e può essere cliccabile;
 
-              2. **interruttore**, mostra lo stato di attivazione dell'opzione ed è sempre cliccabile;
+              2. **interruttore**, mostra lo stato di attivazione dell'opzione
+              ed è sempre cliccabile;
 
-              3. **descrizione** (opzionale), un testo di approfondimento che spiega in modo dettagliato cosa succede quando si attiva quell'opzione.
+              3. **descrizione** (opzionale), un testo di approfondimento che
+              spiega in modo dettagliato cosa succede quando si attiva
+              quell'opzione.
       - full: true
         noSpace: true
         paddingLeft: true
