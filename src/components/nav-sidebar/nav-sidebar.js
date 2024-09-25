@@ -213,25 +213,20 @@ function NavSidebar({
                 <span>{backLabel}</span>
               </button>
 
-              <div className="nav-sidebar-header mx-4 mb-4 mt-0 mt-lg-3">
+              <div className="nav-sidebar-header mx-4 mb-3 mt-0 mt-lg-2">
                 <img src={img} className="header-image" alt={alt} />
                 <h2 className="h3 px-0 my-1">{title}</h2>
-                <p className="fw-normal w-75">{subTitle}</p>
+                <p className="fw-normal w-75 mb-0">{subTitle}</p>
               </div>
 
               <div className="link-list-wrapper">
                 <ul className="link-list">{links}</ul>
               </div>
 
-              {tag && (
-                <div className="nav-sidebar-tag mx-4 mt-5">
-                  <Tag {...tag} />
-                </div>
-              )}
-
               {secondaryLinks && (
                 <div className="sidebar-linklist-wrapper linklist-secondary">
                   <div className="link-list-wrapper">
+                    <div className="pt-3">{tag && <Tag {...tag} />}</div>
                     <ul className="link-list">{secondaryLinks}</ul>
                   </div>
                 </div>
