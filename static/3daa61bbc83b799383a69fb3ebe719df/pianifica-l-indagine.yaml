@@ -24,11 +24,11 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Prepara le attività e svolgi i test di usabilità - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Massimizza l’utilità dei test preparando un ambiente idoneo e interagendo correttamente con i partecipanti" #C
+  name: "Pianifica l'indagine - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "Definisci i temi su cui avviare l’indagine e il target più appropriato da raggiungere." #C
   image: null #I
   canonical: null
-  pathname: /risorse-per-progettare/validare/test-di-usabilita/prepara-le-attivita-e-svolgi-i-test-di-usabilita/ #M
+  pathname: /risorse-per-progettare/comprendere/questionario-online/pianifica-l-indagine/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -43,7 +43,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Validare #C
+        label: Comprendere #C
         url: "../../" #M
       - title: Nel kit di design #C
         icon:
@@ -51,7 +51,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: Test di usabilità #C
+        label: Questionario online #C
         url: "../" #M
 # navPreFooter:
 #   navOtherPrevNext:
@@ -92,8 +92,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Prepara le attività e svolgi i test di usabilità #C
-    subtitle: Massimizza l’utilità dei test preparando un ambiente idoneo e interagendo correttamente con i partecipanti #C
+    title: "Pianifica l'indagine" #C
+    subtitle: Definisci i temi su cui avviare l’indagine e il target più appropriato da raggiungere  #C
     tag:
       label: Attività del kit #C
       addonClasses: mt-3 text-uppercase
@@ -104,8 +104,8 @@ components:
     # text: In breve
     # text: | #C
     #   Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_testusability_conduci.svg #I
-    alt: "L'usabilità rende felici" #C
+    img: /images/risorse-per-progettare/icons/kit_questionario_pianifica.svg #I
+    alt: "Adoro i piani ben riusciti" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -121,15 +121,15 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Validare #C
+            label: Comprendere #C
             url: "../../" #M
-          - title: Nel kit di design #C
+          - title: Nel kit #C
             icon:
               icon: "sprites.svg#it-tool"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Test di usabilità #C
+            label: Questionario online #C
             url: "../" #M
       otherInfo:
         items:
@@ -159,14 +159,14 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Verificare e ottimizzare la tua soluzione digitale #C
+            label: Capire il contesto d'uso del servizio #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Usabilità,Ricerca utente]
+      tags: [Ricerca utente,Questionari]
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -174,7 +174,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Come svolgere i test di usabilità #C
+    - title: Come definire un piano di ricerca, scegliere il target e progettare le domande  #C
       menu: false
       centered: true
       background: null
@@ -184,11 +184,11 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          # title: | #C
+          # title: A cosa servono h3 #C
           text: | #C
-            Durante una sessione di test di usabilità, un ricercatore (o facilitatore) **affianca il partecipante, descrivendo i task da svolgere, osservando l’interazione in modo diretto** (senza interruzioni) e aspettando il termine di ogni operazione per approfondire con ulteriori domande.
+            Definisci gli obiettivi dell'indagine e **i temi da investigare** così da capire qual è il target più appropriato e come reclutarlo attraverso i canali che hai a disposizione. Struttura il questionario in modo da affrontare prima i temi più ampi e semplici, per poi approfondire i temi più complessi.
 
-            La registrazione dei risultati di ciascuna sessione, **debitamente anonimizzati**, è necessaria per redigere un report finale dell’attività, ovvero un documento che mette in luce gli aspetti funzionanti e/o critici dell’esperienza d’uso attuale sulla base dei dati raccolti.
+            Rifletti sulla **strategia migliore per estrapolare le informazioni**, nel porre le domande ricordati di contestualizzarle fornendo esempi o descrizioni laddove necessario, rifletti su quale siano le modalità di risposta più appropriate a raggiungere il tuo scopo.
 
   # ///////////////////
   # RESOURCES
@@ -198,61 +198,27 @@ components:
     headingLevel: 2
     list:
       - simpleList: true
-        title: Risorse operative #C
         headingLevel: 3
         listItems:
-          - label: Guida alla conduzione dei test di usabilità #C
+          - label: Piano di ricerca - questionari #C
             srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il protocollo con le istruzioni e le domande per svolgere i test di usabilità #C
-            url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Guida-alla-Conduzione-dei-Test.odt #M
+            text: Il riepilogo del perimetro della ricerca e della selezione dei partecipanti #C
+            url: /files/resources/risorse-per-progettare/comprendere/questionario-online/pianifica-l-indagine/DI-Piano-di-ricerca-questionario.odt #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Guida-alla-Conduzione-dei-Test.odt #M
-                ariaLabel: "Scarica ODT Guida alla conduzione dei test di usabilità" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/comprendere/questionario-online/pianifica-l-indagine/DI-Piano-di-ricerca-questionario.odt #M
+                ariaLabel: "Scarica ODT Piano di ricerca - questionari" #C #COMPILE FOR EACH ITEM
                 blank: false
-          - label: Liberatoria per la conduzione dei test di usabilità #C
+          - label: Struttura del questionario #C
             srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il modulo per richiedere il consenso dei partecipanti alla registrazione dei test #C
-            url:  /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Liberatoria-conduzione-test-di-usabilita.odt #M
+            text: "Un template pronto all'uso per creare un questionario online con le indicazioni per impostare le domande al meglio" #C
+            url: /files/resources/risorse-per-progettare/comprendere/questionario-online/pianifica-l-indagine/DI-Struttura-questionario.odt #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Liberatoria-conduzione-test-di-usabilita.odt #M
-                ariaLabel: "Scarica ODT Liberatoria per la conduzione dei test di usabilità" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Net promoter score - Valutazione dei test di usabilità #C
-            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Il template per il calcolo delle valutazioni dei test di usabilità sulla base del Net promoter score #C
-            url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Net-Promoter-Score.odt #M
-            blank: false
-            actions:
-              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Net-Promoter-Score.odt #M
-                ariaLabel: "Scarica ODT Net promoter score - Valutazione dei test di usabilità" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Questionario System Usability Scale (SUS) #C
-            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un’alternativa di questionario per indagare la percezione di facilità d’uso da parte dei partecipanti ai test di usabilità #C
-            url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Questionario-SUS.odt #M
-            blank: false
-            actions:
-              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Questionario-SUS.odt #M
-                ariaLabel: "Scarica ODT Questionario System Usability Scale (SUS)" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Questionario Usability Metric for User Experience (UMUX-LITE) #C
-            srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Un’alternativa di questionario per indagare la percezione di facilità d’uso da parte dei partecipanti ai test di usabilità #C
-            url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Domande-UMUX-Lite.odt #M
-            blank: false
-            actions:
-              - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Domande-UMUX-Lite.odt #M
-                ariaLabel: "Scarica ODT Questionario Usability Metric for User Experience (UMUX-LITE)" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/comprendere/questionario-online/pianifica-l-indagine/DI-Struttura-questionario.odt #M
+                ariaLabel: "Scarica ODT Struttura del questionario" #C #COMPILE FOR EACH ITEM
                 blank: false
