@@ -201,7 +201,7 @@ function NavSidebar({
           </button>
           <div className="navbar-collapsable" id={id} ref={navCollRef}>
             <div className="overlay" />
-            <div className="sidebar-wrapper">
+            <div className="menu-wrapper">
               <button
                 className="it-back-button btn w-100 text-start rounded-0"
                 type="button"
