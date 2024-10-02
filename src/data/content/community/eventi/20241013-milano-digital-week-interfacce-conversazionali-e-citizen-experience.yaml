@@ -1,0 +1,121 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Milano Digital Week 2024 - Interfacce conversazionali e citizen-experience"
+  description: "Il potenziale dei chatbot per migliorare la fruizione dei servizi pubblici digitali"
+  image: 20241013-milano-digital-week-interfacce-conversazionali-e-citizen-experience-1200x627.png
+  canonical: null
+  pathname: /community/eventi/20241013-milano-digital-week-interfacce-conversazionali-e-citizen-experience
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Milano Digital Week 2024 - Interfacce conversazionali e citizen-experience"
+    subtitle: "Il potenziale dei chatbot per migliorare la fruizione dei servizi pubblici digitali"
+    tag:
+        label: Talk
+        addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Esperienza utente, Co-progettazione, Interfaccia utente]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Palazzo Giureconsulti, Piazza dei Mercanti 2, Milano
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+            
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita in presenza con registrazione" #C
+            url: https://www.milanodigitalweek.com/event/migliorare-la-citizen-experience-con-le-ai-conversazionali
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "13 Ottobre 2024, 10.00–12.30"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+            Il linguaggio è la forma di interazione più vicina a quella umana, allo stesso tempo le aspettative rispetto a come una conversazione
+            si debba svolgere possono differire dal contesto d’uso e dall’ambito di servizio. In questo workshop esploreremo insieme il ruolo che gli 
+            agenti conversazionali possono avere nell’esperienza del cittadino nei servizi pubblici e come l’umanizzazione della tecnologia possa migliorare 
+            il rapporto tra cittadinanza e istituzioni.
+
+            La Milano Digital Week è l'evento diffuso che si svolge in diverse location della città di Milano, si focalizza sullo sviluppo e l'innovazione 
+            digitale coinvolgendo la collettività: cittadinanza, imprese e istituzioni. Il tema di quest’anno riguarda l’Intelligenza Artificiale e 
+            l’evoluzione del rapporto tra linguaggi tecnologici e umani. 
+
+          ctas:
+          - label: Iscriviti
+            url: https://www.milanodigitalweek.com/event/migliorare-la-citizen-experience-con-le-ai-conversazionali
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
