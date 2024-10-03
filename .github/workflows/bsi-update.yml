@@ -12,12 +12,13 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - name: Run Bootstrap Italia and content update
         run: | 
           npm i bootstrap-italia@latest
@@ -29,4 +30,3 @@ jobs:
           title: "chore(deps): update bootstrap italia and content"
           commit-message: "chore(deps): update bootstrap italia and content"
           branch: feature/update-assets
-          token: ${{ secrets.DEVELOPERS_ITALIA_DROID_GITHUB_TOKEN }}
