@@ -1,0 +1,85 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Design system .italia v1"
+  description: Descrizione da fare
+  image: https://designers.italia.it/images/community/media-thumbnails/20240604-il-modello-di-sito-per-i-musei-civici.jpg
+  canonical: null
+  pathname: /community/media/20241021-design-system-italia-v-1/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Design system .italia v1'
+    subtitle: Descrizione da fare
+    tag:
+      label: Video
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/5WsCJjrsFg4?start=5
+          poster: /images/community/media-thumbnails/20240604-il-modello-di-sito-per-i-musei-civici.jpg
+          subtitles: /files/community/subtitles/20240604-il-modello-di-sito-per-i-musei-civici.vtt
+          trascription: |
+            _Work in progress_
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Lorem ipsum testo da scrivere.
+          ctas:
+          - label: Vai alla notizia del lancio #C
+            url: "/community/notizie/20241021-design-system-italia-v-1/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
