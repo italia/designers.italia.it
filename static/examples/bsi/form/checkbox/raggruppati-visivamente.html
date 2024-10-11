@@ -101,7 +101,7 @@
             display: block;
         }
     </style>
-    <title>Esempio Disabilitato </title>
+    <title>Esempio Raggruppati visivamente </title>
 </head>
 
 <body class="h-100">
@@ -110,15 +110,40 @@
             
 <div>
   <div class="row">
-    <div class="form-check col-6">
-      <div class="toggles">
-        <label for="toggleEsempio2a">
-          Label dell'interruttore 1
-          <input disabled type="checkbox" id="toggleEsempio2a">
-          <span class="lever"></span>
-        </label>
+    <fieldset class="col-5">
+      <legend>Gruppo di checkbox</legend>
+      <div class="form-check form-check-group">
+        <input id="checkbox6" type="checkbox" checked="checked">
+        <label for="checkbox6">Checkbox selezionato</label>
       </div>
-    </div>
+      <div class="form-check form-check-group">
+        <input id="checkbox7" type="checkbox">
+        <label for="checkbox7">Checkbox non selezionato</label>
+      </div>
+      <div class="form-check form-check-group">
+        <input id="checkbox8" type="checkbox" disabled="disabled">
+        <label for="checkbox8" class="disabled">Checkbox disabilitato non selezionato</label>
+      </div>
+    </fieldset>
+    <div class="col-2"></div>
+    <fieldset class="col-5">
+      <legend>Gruppo di checkbox</legend>
+      <div class="form-check form-check-group">
+        <input id="checkbox9" type="checkbox" aria-describedby="checkbox9-help" checked="checked">
+        <label for="checkbox9">Checkbox selezionato</label>
+        <small id="checkbox9-help" class="form-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</small>
+      </div>
+      <div class="form-check form-check-group">
+        <input id="checkbox10" type="checkbox" aria-describedby="checkbox10-help">
+        <label for="checkbox10">Checkbox non selezionato</label>
+        <small id="checkbox10-help" class="form-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</small>
+      </div>
+      <div class="form-check form-check-group">
+        <input id="checkbox11" type="checkbox" aria-describedby="checkbox11-help" disabled="disabled">
+        <label for="checkbox11" class="disabled">Checkbox disabilitato non selezionato</label>
+        <small id="checkbox11-help" class="form-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas molestie libero</small>
+      </div>
+    </fieldset>
   </div>
 </div>
 
