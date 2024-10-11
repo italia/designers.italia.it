@@ -412,6 +412,31 @@ export const query = graphql`
           }
           padBottom
         }
+        sectionsMedia {
+          fullColumn
+          full
+          noSpace
+          centered
+          background
+          id
+          headingLevel
+          title
+          text
+          buttons {
+            btnStyle
+            label
+            url
+            addonStyle
+          }
+          components {
+            name
+            lang
+            url
+            poster
+            subtitles
+            trascription
+          }
+        }
         highlightCards {
           id
           title
