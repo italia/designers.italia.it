@@ -1,27 +1,29 @@
 metadata:
-  json: bsi/form/radio-button.json
+  json: bsi/menu-di-navigazione/footer.json
   template:
     name: design-system-component
 seo:
-  name: Radio button - Designers Italia
+  name: Footer - Designers Italia
   description: >-
-    Pulsante di selezione che consente di indicare un'unica scelta tra più
-    elementi all'interno di un elenco di opzioni predefinite.
+    Menu di navigazione secondaria posto in fondo alle pagine per presentare
+    contenuti supplementari come contatti, informazioni legali e link alle
+    sezioni di un sito.
   image: null
   canonical: null
-  pathname: /design-system/componenti/radio-button/
+  pathname: /design-system/componenti/footer/
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Radio button
+    title: Footer
     tag:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Pulsante di selezione che consente di indicare un'unica scelta tra più
-      elementi all'interno di un elenco di opzioni predefinite
+      Menu di navigazione secondaria posto in fondo alle pagine per presentare
+      contenuti supplementari come contatti, informazioni legali e link alle
+      sezioni di un sito
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -35,7 +37,7 @@ components:
         size: sm
         color: secondary
       tagsDesignSystem:
-        - Form
+        - Navigazione
   tab:
     - full: true
 tabs:
@@ -44,7 +46,8 @@ tabs:
       id: preview-use
       title: Anteprima
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
+      accordionUrl: >-
+        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/footer/
       accordionOpen: false
       accordionShow: false
     sectionsEditorial:
@@ -57,27 +60,17 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Un gruppo di radio button è il componente perfetto, nel contesto
-              di un modulo ([Form](/design-system/componenti/form/)), per
-              permettere un'unica scelta all'interno di un gruppo di opzioni che
-              si escludono a vicenda.
+              Usa il componente Footer su tutte le pagine del sito o servizio
+              per mostrare agli utenti collegamenti secondari e gli elementi
+              previsti dalla norma in materia di contenuti minimi dei siti
+              istituzionali della Pubblica Amministrazione italiana.        
 
 
-              Può essere utilizzato anche in contesti come pannelli di
-              configurazione (settings) o come filtro per lunghe liste di
-              contenuti. 
-
-
-              ### Alternative a questo componente
-
-              - **[Checkbox](/design-system/componenti/checkbox/)**: per
-              permettere più scelte all'interno di un gruppo di opzioni. 
-
-              - **[Select](/design-system/componenti/select/)** e
-              **[Autocomplete](/design-system/componenti/autocomplete/)**: per
-              lunghe liste di opzioni di scelta, è da notare che l'utente in
-              questi componenti non ha contezza immediata di tutte le opzioni
-              tra cui può scegliere. 
+              Il componente è parte importante
+              dell'[identità](/design-system/fondamenti/identita/) di design
+              system .italia, da usare o personalizzare nei contenuti e nei
+              colori a seconda della scala, nazionale, territoriale e/o locale,
+              del servizio digitale. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -87,35 +80,50 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: >
-              - Usa un gruppo di radio button per ogni scelta da compiere.
+              - È possibile aggiungere in apertura una prima fascia di branding
+              con logo e denominazione dell'ente o del progetto e di eventuali
+              partner.  
+
+              - Può contenere una traccia della mappa del sito o l'accesso alla
+              navigazione trasversale per argomenti.
+
+              - Deve contenere i collegamenti alla Privacy policy, alla
+              Dichiarazione di accessibilità e a tutti gli altri riferimenti
+              istituzionali richiesti dalle norme.
+
+              - Può contenere collegamenti ai profili social del titolare o del
+              progetto. 
+
+              - Può contenere un modulo per l'iscrizione a newsletter, da
+              implementare nel rispetto della normativa GDPR. 
 
 
-              ### Attenzione a
+              ### Attenzione a 
 
-              - Non usare il componente se l'utente deve compiere scelte
-              multiple. 
-
-              - Fare attenzione che il componente comprende solo l'impostazione
-              visiva: devi implementare la corretta semantica accessibile per
-              ogni gruppo di radio button, segui i pattern aria consigliati dal
-              W3C per quanto riguarda intestazioni, etichette aria, 'role' o uso
-              di 'fieldset'.
+              - Usa la variante *completa* solo se aggiunge informazioni di
+              valore per gli utenti (ad esempio per siti con architetture 
+              complesse). In tutti gli altri casi usa la variante *compatta*. 
 
 
               ### Buone pratiche sui contenuti
 
-              - Identifica ogni gruppo di Radio button con un titolo e una
-              eventuale descrizione che inquadri la scelta richiesta e le sue
-              implicazioni.
+              - Includi solo contenuto che sia basato sui bisogni di utenti e
+              stakeholder.
 
-              - Scrivi etichette chiare e brevi per consentire agli utenti di
-              comprendere le opzioni a disposizione.
+              - Adatta i contenuti della sezione Contatti rispetto al tuo
+              contesto (per esempio inserendo il link a un modulo di contatto o
+              a un sistema di ticketing).
 
-              - Non troncare le etichette per le opzioni con i puntini di
-              sospensione.
+              - Tutti gli esempi di footer su questa scheda hanno testi
+              segnaposto. Quando stai implementando il tuo footer, progetta
+              contenuti che abbiano senso per il tuo contesto di sito o servizio
+              e confrontati con i responsabili per il trattamento dati,
+              relazioni col pubblico o comunicazione della tua PA. 
 
-              - Puoi usare un testo aggiuntivo per aggiungere contesto alle
-              opzioni di scelta.
+              - Data la presenza del componente su tutte le pagine del sito o
+              servizio ti raccomandiamo di lavorare ai contenuti con un Content
+              designer per assicurarti di includere le informazioni di valore
+              per gli utenti. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -138,15 +146,15 @@ tabs:
                   - text: Visivamente accessibile
                     scope: row
                   - tag:
-                      label: Pronto
-                      addonClasses: bg-success
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - text: Uso e contrasto dei colori, leggibilità
               - cols:
                   - text: Amichevole con lettori di schermo
                     scope: row
                   - tag:
-                      label: Verifica in corso
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
                   - text: Navigabile
@@ -217,7 +225,7 @@ tabs:
                       label: Scheda documentazione
                       blank: true
                       url: >-
-                        https://italia.github.io/bootstrap-italia/docs/form/radio-button/
+                        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/footer/
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
                         icon: sprites.svg#it-external-link
@@ -231,7 +239,7 @@ tabs:
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
-                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-form-radio--documentazione
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-menu-di-navigazione-footer--documentazione
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -241,12 +249,10 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Pronto
-                      addonClasses: bg-success
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
                   - simpleCta:
                       label: Scheda documentazione
-                      url: >-
-                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/radio
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -283,79 +289,61 @@ tabs:
         paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Anatomia
             headingLevel: 2
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/footer-anatomy.png
+            alt: Gli elementi che compongono il footer
+          - name: TextImageCta
+            noSpace: false
             text: >
-              ![Gli elementi che formano il Radio
-              button](/images/design-system/componenti/radio-button-anatomy.png)
+              Il componente footer è composto dai seguenti elementi:
 
 
-              Il componente radio button è composto da: 
+              1. **prima fascia**, in questa versione è visualizzata una
+              possibile lista di link della navigazione trasversale per
+              argomenti. In alternativa, è possibile utilizzare fino a quattro
+              aree link ognuna con il suo titoletto di sezione a rappresentare
+              ad esempio una mappa sintetica del sito in questione;
 
-              1. **etichetta (label)**, il testo che descrive l'opzione
-              selezionabile o deselezionabile; 
+              2. **contatti**, dell'ente o del soggetto responsabile dei
+              contenuti;
 
-              2. **indicatore di input**, indica lo stato dell'opzione, di
-              default non selezionato;
+              3. **chiusura**, dove inserire link istituzionali come
+              Amministrazione trasparente, Note legali, Privacy policy e
+              Dichiarazione accessibilità;
 
-              3. **bordo**, riga che segna il limite tra più opzioni; 
+              4. **social media**, link ai canali social dell'ente o del
+              progetto;
 
-              4. **testo** (opzionale), testo di approfondimento sull'opzione.  
+              5. **newsletter**, link a un modulo di sottoscrizione alla
+              newsletter;
+
+              6. **altri link**, altri collegamenti utili per l'utente.  
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
-            title: Comportamento
-            headingLevel: 2
-            text: >
-              All'attivazione, l'indicatore di input passerà tra stato
-              selezionato e deselezionato.
-
-
-              Alla selezione di un'opzione in un gruppo di Radio button, tutte
-              le altre opzioni di scelta passano allo stato deselezionato.
-
-
-              Gli **stati interattivi** dei radio button possono essere: 
-
-              - **default**, il campo si presenta deselezionato nello stato
-              normale quando è attivo ma l'utente non ci interagisce;
-
-              - **hover**, si manifesta al passaggio del puntatore sul campo ed
-              è disponibile solo su dispositivi no-touch;
-
-              - **focus**, si manifesta nel caso di navigazione tramite tastiera
-              o altri strumenti, passando da un elemento interattivo a quello
-              successivo;
-
-              - **active**, è lo stato relativo al momento del clic o pressione
-              sul campo, restituisce un riscontro visivo dell'azione appena
-              compiuta e passa allo stato selezionato;
-
-              - **disabled default**, indica che il campo è disattivato e non è
-              possibile interagire con esso, mostra l'indicatore di stato come
-              deselezionato;
-
-              - **disabled checked**, indica che il campo è disattivato e non è
-              possibile interagire con esso,mostra l'indicatore di stato come
-              selezionato.
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Specifiche di design
             headingLevel: 2
-            text: >
-              Tutte le misure indicate sono espresse in `px`.
-
-
-              ![Specifiche di design del Radio
-              button](/images/design-system/componenti/radio-button-specs.png)
+            text: |
+              Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/footer-specs-1.png
+            alt: Il footer con la misura di tutte le spaziature
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/footer-specs-2.png
+            alt: >-
+              Il footer con la misura di tutte le spaziature utili alla parte di
+              chiusura
+          - name: TextImageCta
+            noSpace: false
       - full: true
         noSpace: true
         paddingLeft: true
@@ -382,7 +370,8 @@ tabs:
       id: preview-dev
       title: Anteprima
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
+      accordionUrl: >-
+        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/footer/
       accordionOpen: true
       accordionShow: true
     sectionsEditorial:
