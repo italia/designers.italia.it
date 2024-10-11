@@ -537,6 +537,14 @@ export const query = graphql`
             tags
             text
             dateInfo
+            dateOverlay {
+              day
+              month
+              year
+            }
+            tag {
+              label
+            }
           }
         }
         bannerTextCta {
