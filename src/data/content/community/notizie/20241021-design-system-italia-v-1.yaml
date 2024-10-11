@@ -1,0 +1,195 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+seo:
+  name: "Design system .italia v1"
+  description: "News di lancio testo da definire."
+  image: https://designers.italia.it/images/community/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta-1400x723.png #I
+  canonical: null
+  pathname: /community/notizie/20241021-design-system-italia-v-1/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Design system .italia v1"
+    subtitle: "News di lancio testo da definire"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, UI kit]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 4 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 8 marzo 2024
+
+  # imageIcons:
+  #  image: https://placehold.co/1920x800/
+  #  alt: ""
+  #  background: null
+
+  sectionsEditorial :
+
+    - menu: false
+      noSpace: false
+      centered: true
+      # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+      # text:
+      id: corpoNotizia
+      components:
+        - name: TextImageCta
+          noSpace: true
+          text: |
+            Lorem ipsum
+        
+      # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: false # large column vs normal
+      noSpace: true 
+      centered: true
+      background: null
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/5WsCJjrsFg4?start=5
+          poster: /images/community/media-thumbnails/20240604-il-modello-di-sito-per-i-musei-civici.jpg
+          subtitles: /files/community/subtitles/20240604-il-modello-di-sito-per-i-musei-civici.vtt
+          trascription: |
+            _Work in progress_
+
+    - menu: false
+      noSpace: false
+      centered: true
+      # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+      # text:
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            ## Il design system del Paese è stabile e accessibile
+            Lorem ipsum
+
+            ## What's next
+            Lorem ipsum.
+
+            ## Grazie, community
+            Lorem ipsum! 
+
+        - name: TextImageCta
+          title: Inizia a usare il design system .italia
+          headingLevel: 2
+          noSpace: false
+          ctasVertical: true
+          ctas:
+          - label: Vai a "Come iniziare"
+            url: "/design-system/come-iniziare/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: Vai a "Come contribuire"
+            url: "/design-system/come-contribuire/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: Vai a "Fondamenti"
+            url: "/design-system/fondamenti/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: Vai a "Componenti"
+            url: "/design-system/componenti/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: Esplora il Changelog
+            url: "/design-system/fondamenti/versionamento#changelog-documentazione"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+
+        - name: TextImageCta
+          title: Partecipa al prossimo Community lab
+          text: |
+            Lorem ipsum per scoprire tutte...
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: Webinar 11 novembre 2024
+            url: /community/eventi/20241111-community-lab-design-system/
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+              
+              
+
+
+
+            
