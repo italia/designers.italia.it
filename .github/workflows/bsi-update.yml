@@ -1,4 +1,4 @@
-name: Bootstrap Italia update
+name: Content and dependencies update
 
 on:
   schedule:
@@ -12,12 +12,13 @@ jobs:
     permissions:
       issues: write
       pull-requests: write
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
       - name: Run Bootstrap Italia and content update
         run: | 
           npm i bootstrap-italia@latest
