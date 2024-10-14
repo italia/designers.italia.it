@@ -94,7 +94,7 @@ function SectionEditorial({
   }
 
   return (
-    <section className={styles} aria-describedby={id}>
+    <section className={styles} aria-labelledby={id}>
       <div className={container}>
         <div className={row}>
           {
