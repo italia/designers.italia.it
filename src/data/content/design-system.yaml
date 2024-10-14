@@ -127,21 +127,25 @@ components:
       noSpace: false 
       centered: true
       background: medium
-      title: "Design system .italia v1"
+      title: "Design system .italia v1: video promozionale"
       headingLevel: 3
+      hiddenSectionTitle: true # just for screen reader
       id: "coverMedia"
-      text: "News di lancio testo da definire."
-      buttons:
-      - btnStyle: primary
-        label: Scopri le novità
-        url: "/eventi/20241111-community-lab-design-system/"
-        addonStyle: d-block d-sm-inline
+      # text: "News di lancio testo da definire."
+      # buttons:
+      # - btnStyle: primary
+      #   label: Scopri le novità
+      #   url: "/eventi/20241111-community-lab-design-system/"
+      #   addonStyle: d-block d-sm-inline
       components:
         - name: MediaPlayer
           lang: it
           url: https://youtu.be/5WsCJjrsFg4?start=5
           poster: /images/community/media-thumbnails/20240604-il-modello-di-sito-per-i-musei-civici.jpg
           subtitles: /files/community/subtitles/20240604-il-modello-di-sito-per-i-musei-civici.vtt
+          trascriptionHeadingLevel: 4
+          trascriptionLabel: "Audiodescrizione"
+          trascriptionLabelEN: "Audiodescription"
           trascription: |
             _Work in progress_
             
@@ -376,20 +380,6 @@ components:
             size: xs
         moreInfo: di Gabriella Poggioli
         tags: [Design system]
-
-      - title: 'Design system .italia: disponibili le nuove versioni dei kit React ed Angular'
-        headingLevel: 4
-        customCol: col-lg-4
-        text: Le librerie di sviluppo front-end si aggiornano con componenti sviluppati dalla community.
-        img: /images/community/20240404-design-system-italia-si-aggiorna-con-le-nuove-versioni-dei-kit-react-ed-angular-clean-1400x723.png
-        alt: ""
-        imgRatio: 21x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: "/community/notizie/20240404-design-system-italia-disponibili-le-nuove-versioni-dei-kit-react-ed-angular/"
-        dateInfo: 3 aprile 2023
-        tags: [Sviluppo interfaccia, Design system]
 
   # # —
   # # HIGHLIGHT LOOP
