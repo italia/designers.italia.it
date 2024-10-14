@@ -17,7 +17,7 @@ function MediaPlayerEl({
   trascriptionLabel,
   trascriptionLabelEN,
   trascriptionHeadingLevel,
-  poster
+  poster,
 }) {
   const messages = {
     it: {
@@ -37,8 +37,8 @@ function MediaPlayerEl({
   };
 
   // trascription label
-  if (trascriptionLabel) messages.it.trascriptionLabel = trascriptionLabel
-  if (trascriptionLabelEN) messages.en.trascriptionLabel = trascriptionLabelEN
+  if (trascriptionLabel) messages.it.trascriptionLabel = trascriptionLabel;
+  if (trascriptionLabelEN) messages.en.trascriptionLabel = trascriptionLabelEN;
 
   let video = null;
   const t = (key) => messages[lang][key];
@@ -52,7 +52,6 @@ function MediaPlayerEl({
   } else {
     HLevel = `h2`;
   }
-
 
   useEffect(() => {
     // eslint-disable-next-line no-new

@@ -21,7 +21,7 @@ function SectionMedia({
   menu,
   noSpace,
   id,
-  specular
+  specular,
 }) {
   const SwitchComponents = {
     CookieRemove,
@@ -55,8 +55,8 @@ function SectionMedia({
 
   const highlightModeStyles = classNames({
     "highlight-content d-lg-flex": highlightMode,
-    "flex-lg-row-reverse": !specular
-  })
+    "flex-lg-row-reverse": !specular,
+  });
 
   const styles = classNames("section-media", {
     [`bg-${background}`]: background,
@@ -75,14 +75,15 @@ function SectionMedia({
   const textContainerStyles = classNames({
     "flex-grow-1 text-container px-3 py-5 px-lg-5 py-lg-6": highlightMode,
     "text-container px-3 px-lg-5 text-center pb-5": !highlightMode,
-  })
+  });
 
   const textStyles = classNames("text-container mb-5", {
-    "d-flex justify-content-center": !highlightMode
-  })
+    "d-flex justify-content-center": !highlightMode,
+  });
+
   const textStylesP = classNames("lead font-sans-serif mb-auto", {
-    "text-center": !highlightMode
-  })
+    "text-center": !highlightMode,
+  });
 
   // buttons
   let ButtonsRender;
@@ -117,22 +118,14 @@ function SectionMedia({
                 )}
                 {ButtonsRender && (
                   <div className="buttons-wrapper mt-5">
-                    <div>
-                      {ButtonsRender}
-                    </div>
+                    <div>{ButtonsRender}</div>
                   </div>
                 )}
               </div>
-              <div class="img-container">
+              <div className="img-container">
                 {components?.map((item, index) => {
                   const Switcher = SwitchComponents[item.name];
-
-                  return (
-                    <Switcher
-                      key={`switcher-${index}`}
-                      {...item}
-                    />
-                  );
+                  return <Switcher key={`switcher-${index}`} {...item} />;
                 })}
               </div>
             </div>
