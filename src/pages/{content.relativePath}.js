@@ -415,12 +415,15 @@ export const query = graphql`
         sectionsMedia {
           fullColumn
           full
+          highlightMode
+          specular
           noSpace
           centered
           background
           id
           headingLevel
           title
+          hiddenSectionTitle
           text
           buttons {
             btnStyle
@@ -435,6 +438,8 @@ export const query = graphql`
             poster
             subtitles
             trascription
+            trascriptionLabel
+            trascriptionHeadingLevel
           }
         }
         highlightCards {
@@ -671,6 +676,8 @@ export const query = graphql`
             lang
             url
             trascription
+            trascriptionLabel
+            trascriptionHeadingLevel
             subtitles
             poster
             variantName
