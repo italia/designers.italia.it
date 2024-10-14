@@ -1,4 +1,4 @@
-name: Bootstrap Italia update
+name: Content and dependencies update
 
 on:
   schedule:
@@ -9,19 +9,25 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - name: Setup NodeJS
         uses: actions/setup-node@v3
         with:
-          node-version: 18
-      - name: Run Bootstrap Italia update
+          node-version: 20
+      - name: Run Bootstrap Italia and content update
         run: | 
           npm i bootstrap-italia@latest
+          npm run prepare-lib
+          npm run prepare-content
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6.0.5
+        uses: peter-evans/create-pull-request@v7.0.5
         with:
-          title: "chore(deps): update bootstrap italia"
-          commit-message: "chore(deps): update bootstrap italia"
+          title: "chore(deps): update bootstrap italia and content"
+          commit-message: "chore(deps): update bootstrap italia and content"
           branch: feature/update-assets
           token: ${{ secrets.DEVELOPERS_ITALIA_DROID_GITHUB_TOKEN }}
