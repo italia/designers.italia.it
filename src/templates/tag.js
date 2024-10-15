@@ -110,8 +110,8 @@ function Tags({ children, pageContext, location, data }) {
                                   </div>
                                 )}
                                 {node.metadata?.template?.name &&
-                                  (node.metadata?.template?.name === "level1" ||
-                                    node.metadata?.template?.name ===
+                                (node.metadata?.template?.name === "level1" ||
+                                  node.metadata?.template?.name ===
                                     "community") ? (
                                   <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block ">
                                     <Tag
@@ -125,20 +125,20 @@ function Tags({ children, pageContext, location, data }) {
                             {(node.components?.hero?.kangaroo?.personalInfo
                               ?.items ||
                               description) && (
-                                <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
-                                  {node.components?.hero?.kangaroo?.personalInfo
-                                    ?.items && (
-                                      <span>
-                                        {
-                                          node.components?.hero?.kangaroo
-                                            ?.personalInfo?.items[1].label
-                                        }
-                                      </span>
-                                    )}{" "}
-                                  {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
-                                  <span> — {description}</span>
-                                </p>
-                              )}
+                              <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
+                                {node.components?.hero?.kangaroo?.personalInfo
+                                  ?.items && (
+                                  <span>
+                                    {
+                                      node.components?.hero?.kangaroo
+                                        ?.personalInfo?.items[1].label
+                                    }
+                                  </span>
+                                )}{" "}
+                                {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
+                                <span> — {description}</span>
+                              </p>
+                            )}
                           </ListItem>
                         );
                       })}

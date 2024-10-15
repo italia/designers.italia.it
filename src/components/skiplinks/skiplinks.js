@@ -2,18 +2,14 @@ import React from "react";
 import "./skiplinks.scss";
 
 function Skiplinks({ data }) {
-
-  const skiplinks = data.skiplinks
-  const skiplinksLabel = data.skiplinksLabel
+  const { skiplinks } = data;
+  const { skiplinksLabel } = data;
   let skiplinksItems;
 
   if (skiplinks) {
     skiplinksItems = skiplinks.map((item, index) => (
       <li className="visually-hidden-focusable">
-        <a
-          key={`skiplink-${index}`}
-          href={item.url}
-        >
+        <a key={`skiplink-${index}`} href={item.url}>
           {item.label}
         </a>
       </li>
@@ -22,11 +18,9 @@ function Skiplinks({ data }) {
 
   return (
     <nav className="skiplinks" aria-label={skiplinksLabel}>
-      <ul>
-        {skiplinksItems}
-      </ul>
+      <ul>{skiplinksItems}</ul>
     </nav>
-  )
+  );
 }
 
 export default Skiplinks;
