@@ -23,6 +23,7 @@ import Highlight from "../components/highlight/highlight";
 import SearchMain from "../components/search-main/search-main";
 import ContentCollapse from "../components/content-collapse/content-collapse";
 import SectionIntro from "../components/section-intro/section-intro";
+import SectionMedia from "../components/section-media/section-media";
 import HighlightCards from "../components/highlight-cards/highlight-cards";
 import Testimonials from "../components/testimonials/testimonials";
 import BannerTextCta from "../components/banner-text-cta/banner-text-cta";
@@ -59,6 +60,10 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
         {Pagedata.components.sectionIntro && (
           <SectionIntro {...Pagedata.components.sectionIntro} />
         )}
+        {Pagedata.components.sectionsMedia &&
+          Pagedata.components.sectionsMedia.map((section, index) => (
+            <SectionMedia key={`sectionMedia-${index}`} {...section} />
+          ))}
         {Pagedata.components.highLights &&
           Pagedata.components.highLights.map((hl, index) => (
             <Highlight key={`hl-${index}`} {...hl} />

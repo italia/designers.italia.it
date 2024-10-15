@@ -412,6 +412,36 @@ export const query = graphql`
           }
           padBottom
         }
+        sectionsMedia {
+          fullColumn
+          full
+          highlightMode
+          specular
+          noSpace
+          centered
+          background
+          id
+          headingLevel
+          title
+          hiddenSectionTitle
+          text
+          buttons {
+            btnStyle
+            label
+            url
+            addonStyle
+          }
+          components {
+            name
+            lang
+            url
+            poster
+            subtitles
+            trascription
+            trascriptionLabel
+            trascriptionHeadingLevel
+          }
+        }
         highlightCards {
           id
           title
@@ -537,6 +567,14 @@ export const query = graphql`
             tags
             text
             dateInfo
+            dateOverlay {
+              day
+              month
+              year
+            }
+            tag {
+              label
+            }
           }
         }
         bannerTextCta {
@@ -638,6 +676,8 @@ export const query = graphql`
             lang
             url
             trascription
+            trascriptionLabel
+            trascriptionHeadingLevel
             subtitles
             poster
             variantName
