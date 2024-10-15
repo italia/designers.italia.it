@@ -57,8 +57,8 @@ function TagsDesignSystem({ children, pageContext, location, data }) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} />
-      <Skiplinks data={skipLinksData.skiplinks} />
       <Header data={HeaderData}>
+        <Skiplinks data={skipLinksData} />
         <HeaderSlim data={HeaderData.headerSlim} />
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter} />
