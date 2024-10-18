@@ -412,6 +412,27 @@ export const query = graphql`
           }
           padBottom
         }
+        sectionsMedia {
+          fullColumn
+          full
+          noSpace
+          centered
+          background
+          id
+          headingLevel
+          title
+          hiddenSectionTitle
+          components {
+            name
+            lang
+            url
+            poster
+            subtitles
+            trascription
+            trascriptionLabel
+            trascriptionHeadingLevel
+          }
+        }
         highlightCards {
           id
           title
@@ -638,6 +659,8 @@ export const query = graphql`
             lang
             url
             trascription
+            trascriptionLabel
+            trascriptionHeadingLevel
             subtitles
             poster
             variantName
