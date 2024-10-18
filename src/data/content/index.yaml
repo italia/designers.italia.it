@@ -80,82 +80,26 @@ components:
     subtitle: Storie da copertina che ti guidano alle ultime attività
     isHome: true
 
-  sectionsMedia: 
-    - fullColumn: false # fullwidth vs normal
-      full: true # large column vs normal
-      highlightMode: true # two columns (only with full true and noSpace true)
-      specular: false
-      noSpace: true 
-      background: medium
-      title: "Design system .italia versione 1: un traguardo e l'inizio di una nuova era"
-      headingLevel: 3
-      id: "coverMedia"
-      text: "Il design system nazionale matura, offrendo strumenti sempre più completi e affidabili"
-      buttons:
-      - btnStyle: primary
-        label: Scopri le novità
-        url: "/community/notizie/20241021-italia-versione-1/"
-        addonStyle: d-block d-sm-inline
-      components:
-        - name: MediaPlayer
-          lang: it
-          url: https://youtu.be/5WsCJjrsFg4 # xxx
-          poster: /images/community/media-thumbnails/20241021-design-system-italia.jpg # xxx
-          subtitles: /files/community/subtitles/20241021-design-system-italia.vtt # xxx
-          trascriptionHeadingLevel: 4
-          trascriptionLabel: "Trascrizione"
-          trascriptionLabelEN: "Transcription"
-          trascription: |
-
-            Scarica la [trascrizione in formato ODT](/files/community/subtitles/20241021-design-system-italia.odt)
-
-            ----
-
-            ##### Design system .italia
-
-            Caselle di testo, pulsanti, menu a tendina
-            sono alcuni degli elementi più semplici
-            di app e siti web.
-
-            Eppure nei servizi pubblici digitali
-            componenti come questi sono fondamentali,
-            perché consentono alle persone di esercitare i propri diritti
-            senza escludere nessuno.
-
-            Il digitale sta cambiando il volto della Pubblica Amministrazione
-            e il design system .italia ha un ruolo fondamentale
-            in questa trasformazione, perché getta le fondamenta
-            per rendere coerenti le esperienze di utilizzo
-            dei servizi pubblici digitali, 
-            definendone identità, linguaggio e interazioni.
-
-            In pratica è un insieme di indicazioni e risorse
-            per realizzare interfacce usabili e accessibili.
-            Contribuendo così a una Pubblica Amministrazione più vicina
-            semplice e utile per le persone.
-
-            Nel design system .italia infatti c'è tutto quello che serve
-            per progettare, prototipare e sviluppare piattaforme digitali
-            con più efficacia, minor tempo e costi.
-            Dalle indicazioni pratiche su come scrivere i testi
-            alle stringhe di codice pronte all'uso.
-
-            È per tutti perché open source: tutti lo possono usare.
-            È di tutti perché costruito con l'aiuto della community di Designers Italia.
-            Tutti possono contribuire al suo miglioramento.
-
-            Oggi sono già migliaia gli enti che usano il design system .italia,
-            ed è importante che domani siano ancora di più.
-            Perché è un diritto di tutte le persone poter interagire con siti
-            e servizi pubblici digitali di qualità.
-
-            Designers Italia è un progetto a cura del Dipartimento per la Trasformazione Digitale e dell'Agenzia per l'Italia Digitale.
-
   highLights:
+    - title: "Design system .italia versione 1: un traguardo e l'inizio di una nuova era"
+      subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
+      big: true
+      id: HL1a
+      specular: false
+      padBottom: false # last highlight must have padBottom: true!
+      img: /images/community/media-thumbnails/20241021-design-system-italia.jpg
+      alt: ""
+      headingLevel: 3
+      background: medium
+      buttons:
+        - label: "Scopri le novità"
+          btnStyle: primary
+          url: "/community/notizie/20241021-italia-versione-1/"
+          addonStyle: mb-3
     - title: "Modello di sito web dei musei civici"
       subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
       big: true
-      id: HL3a
+      id: HL2a
       specular: true
       padBottom: false # last highlight must have padBottom: true!
       img: /images/community/20240418-il-modello-per-i-musei-civici--online-le-risorse-per-realizzare-siti-web-1920x923.png
@@ -170,7 +114,7 @@ components:
     - title: "Modello di sito web delle aziende sanitarie locali"
       subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
       big: true
-      id: HL2a
+      id: HL3a
       specular: false
       padBottom: true # last highlight must have padBottom: true!
       img: /images/community/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali-1920x923.png
@@ -281,21 +225,19 @@ components:
     # CARDS
     cards:
 
-    - title: "Design system .italia v1.0.0"
+    - title: "Un’estate con Designers Italia"
       headingLevel: 3
-      cardEvent: true
-      img: #
-      alt:
-      imgRatio: 4x3
+      customCol: col-lg-4
+      text: "Libri, newsletter, podcast e video da recuperare durante le ferie estive, consigliati da Designers Italia."
+      img: /images/community/20240807-un-estate-con-designers-italia-1400x723.jpg
+      alt: ""
+      imgRatio: 21x9
+      imgPlaceholder: false
       fullHeight: false
-      imgPlaceholder: true
-      dateOverlay:
-        day: "11"
-        month: "novembre"
-        year: "2024"
-      url: "/community/eventi/20241111-community-lab-design-system/"
-      tag:
-        label: Webinar - Community lab
+      rounded: true
+      url: "/community/notizie/20240807-un-estate-con-designers-italia/"
+      dateInfo: 07 agosto 2024
+      tags: [Cultura progettuale, Community, Disseminazione]
 
     - title: 'Definisci la direzione progettuale di un sito o servizio con il nuovo kit Stato dell’arte'
       headingLevel: 3

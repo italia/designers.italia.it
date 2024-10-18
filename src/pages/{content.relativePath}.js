@@ -415,8 +415,6 @@ export const query = graphql`
         sectionsMedia {
           fullColumn
           full
-          highlightMode
-          specular
           noSpace
           centered
           background
@@ -424,13 +422,6 @@ export const query = graphql`
           headingLevel
           title
           hiddenSectionTitle
-          text
-          buttons {
-            btnStyle
-            label
-            url
-            addonStyle
-          }
           components {
             name
             lang
@@ -567,14 +558,6 @@ export const query = graphql`
             tags
             text
             dateInfo
-            dateOverlay {
-              day
-              month
-              year
-            }
-            tag {
-              label
-            }
           }
         }
         bannerTextCta {
