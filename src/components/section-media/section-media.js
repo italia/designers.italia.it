@@ -14,14 +14,12 @@ function SectionMedia({
   full,
   centered,
   fullColumn,
-  highlightMode,
   paddingLeft,
   background,
   components,
   menu,
   noSpace,
   id,
-  specular,
 }) {
   const SwitchComponents = {
     CookieRemove,
@@ -53,17 +51,11 @@ function SectionMedia({
     "m-auto": !full && centered && !fullColumn,
   });
 
-  const highlightModeStyles = classNames({
-    "highlight-content d-lg-flex": highlightMode,
-    "flex-lg-row-reverse": !specular,
-  });
-
   const styles = classNames("section-media", {
     [`bg-${background}`]: background,
     "py-0": noSpace,
     "text-white": background === "dark",
     "ps-lg-4 ps-xl-5": paddingLeft,
-    "highlight-big": highlightMode,
   });
 
   const titleStyles = classNames({
@@ -72,18 +64,10 @@ function SectionMedia({
     "visually-hidden": hiddenSectionTitle,
   });
 
-  const textContainerStyles = classNames({
-    "flex-grow-1 text-container px-3 py-5 px-lg-5 py-lg-6": highlightMode,
-    "text-container px-3 px-lg-5 text-center pb-5": !highlightMode,
-  });
-
-  const textStyles = classNames("text-container mb-5", {
-    "d-flex justify-content-center": !highlightMode,
-  });
-
-  const textStylesP = classNames("lead font-sans-serif mb-auto", {
-    "text-center": !highlightMode,
-  });
+  const textContainerStyles = "text-container px-3 px-lg-5 text-center pb-5";
+  const textStyles = "text-container mb-5 d-flex justify-content-center";
+  const textStylesP = "lead font-sans-serif mb-auto text-center";
+  
 
   // buttons
   let ButtonsRender;
@@ -104,7 +88,7 @@ function SectionMedia({
       <div className={container}>
         <div className={row}>
           <div className={grid}>
-            <div className={highlightModeStyles}>
+            <div>
               <div className={textContainerStyles}>
                 {title && (
                   <HLevel className={titleStyles} id={id}>
