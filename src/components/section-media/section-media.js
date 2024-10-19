@@ -67,7 +67,6 @@ function SectionMedia({
   const textContainerStyles = "text-container px-3 px-lg-5 text-center pb-5";
   const textStyles = "text-container mb-5 d-flex justify-content-center";
   const textStylesP = "lead font-sans-serif mb-auto text-center";
-  
 
   // buttons
   let ButtonsRender;
