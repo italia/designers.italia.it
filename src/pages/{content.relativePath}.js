@@ -422,6 +422,19 @@ export const query = graphql`
           headingLevel
           title
           hiddenSectionTitle
+          # buttons {
+          #  label
+          #  blank
+          #  btnStyle
+          #  url
+          #  icon {
+          #    icon
+          #    size
+          #    color
+          #    align
+          #    addonClasses
+          #  }
+          # }
           components {
             name
             lang
