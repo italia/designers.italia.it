@@ -1,0 +1,297 @@
+# INSTRUCTIONS
+# folder structure:
+# levelX.yaml < contents and settings
+# levelX/ < folder with childrens
+# important: each level has its dedicated template, from level1 to level4
+#
+# comments:
+# #C to locate all editable content
+# #M for links/navigation
+# #I for images/media
+# #AUTO for parts that will soon be automated, preferably
+#
+# comment with # to hide something
+# delete with caution
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: home
+
+# ————————————————————————————————————————————
+# SEO, OPENGRAPH
+# ————————————————————————————————————————————
+seo:
+  name: Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Designers Italia mette a disposizione conoscenza e strumenti per creare i servizi digitali della Pubblica Amministrazione. #C
+  image: https://designers.italia.it/images/home/designers.jpg
+  canonical: null
+  pathname: /
+
+components:
+  hero:
+    id: HL1
+    headingLevel: 1
+    big: true
+    specular: true
+    reversedMobile: false
+    title: Prendi parte alla trasformazione digitale del Paese #C
+    subtitle: "Designers Italia mette a disposizione conoscenza e strumenti per creare i servizi digitali della Pubblica Amministrazione."
+    # moreButton: Leggi di più
+    # moreButtonClose: Chiudi
+    # moreText: | #C
+    #   Lorem **ipsum**
+
+    #   ## Heading 2
+    #   Lorem [ipsum](#)
+
+    #   ### Heading 3
+    #   Lorem ipsum
+
+    #   #### Heading 4
+    #   Lorem ipsum
+    #
+    #
+    buttons:
+    - label: Scopri il progetto
+      btnStyle: primary
+      url: "/progetto/"
+      addonStyle: mb-0
+    img: /images/home/home.jpg #I
+    alt: "La Qualità ha le persone al centro" #C
+    fullImg: false
+
+  searchMain:
+    title: Da dove vuoi iniziare?
+    maxResults: 5
+    suggest:
+      title: "Ti suggeriamo:"
+      items:
+        - label: bisogni utenti
+        - label: test usabilità
+        - label: rispettare
+        - label: accessibilità
+        - label: design system
+
+  sectionIntro:
+    title: In evidenza
+    subtitle: Storie da copertina che ti guidano alle ultime attività
+    isHome: true
+
+  highLights:
+    - title: "Design system .italia versione 1: l'inizio di una nuova era per i servizi digitali pubblici"
+      subtitle: "Disponibili strumenti sempre più completi e affidabili per realizzare servizi accessibili e usabili"
+      big: true
+      id: HL1a
+      specular: false
+      padBottom: false # last highlight must have padBottom: true!
+      img: /images/community/media-thumbnails/20241021-design-system-italia.jpg
+      alt: ""
+      headingLevel: 3
+      background: medium
+      buttons:
+        - label: "Scopri le novità"
+          btnStyle: primary
+          url: "/community/notizie/20241021-italia-versione-1/"
+          addonStyle: mb-3
+    - title: "Modello di sito web dei musei civici"
+      subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
+      big: true
+      id: HL2a
+      specular: true
+      padBottom: false # last highlight must have padBottom: true!
+      img: /images/community/20240418-il-modello-per-i-musei-civici--online-le-risorse-per-realizzare-siti-web-1920x923.png
+      alt: ""
+      headingLevel: 3
+      background: light
+      buttons:
+        - label: "Scopri le risorse e come utilizzarle"
+          btnStyle: primary
+          url: "/community/notizie/20240418-il-modello-per-i-musei-civici-online-le-risorse-per-realizzare-siti-web/"
+          addonStyle: mb-3
+    - title: "Modello di sito web delle aziende sanitarie locali"
+      subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
+      big: true
+      id: HL3a
+      specular: false
+      padBottom: true # last highlight must have padBottom: true!
+      img: /images/community/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali-1920x923.png
+      alt: ""
+      headingLevel: 3
+      background: null
+      buttons:
+        - label: "Scopri come utilizzarlo"
+          btnStyle: primary
+          url: "/community/notizie/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali/"
+          addonStyle: mb-3
+
+  highlightCards:
+    id: strumenti
+    title: "Crea servizi pubblici digitali con strumenti pronti all'uso" #C
+    text: Hai a tua disposizione la cassetta degli attrezzi per realizzare servizi semplici, accessibili, inclusivi, che riducono le disuguaglianze e rispettano le norme. #C
+    background: white
+    col4: false # FALSE notizie + Medium | TRUE eventi + media
+
+    # CARDS
+    cards:
+
+    #CARD with Button
+    - title: "Modelli di design" #C
+      img: /images/modelli/modelli-cover.png #I
+      alt: "" #C
+      text: |
+        Realizza siti e servizi digitali di una Pubblica Amministrazione senza doverli progettare da zero. Inizia da qui.
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      imgRounded: true
+      noShadow: true
+      url: "modelli/" #M
+      textSerif: false
+      # buttonBottom:
+      #   btnStyle: primary
+      #   label: Esplora/Scopri il titolo
+      #   url: "modelli/"
+    - title: "Design system .italia" #C
+      img: /images/design-system/ds-beta-naming.png
+      alt: ""
+      text: |
+        Costruisci l'interfaccia di un servizio pubblico grazie a componenti già validati e linee guida di progettazione. Scopri come usarlo.
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      imgRounded: true
+      noShadow: true
+      url: "design-system/" #M
+      textSerif: false
+      # buttonBottom:
+      #   btnStyle: primary
+      #   label: Esplora/Scopri il titolo
+      #   url: "design-system/"
+    - title: "Risorse per progettare" #C
+      img: /images/risorse-per-progettare/social/risorse-per-progettare.png #I
+      alt: "" #C
+      text: |
+        Metti in pratica il nostro approccio collaborativo e utilizza strumenti e attività pronti all'uso. Comincia a progettare.
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: true
+      imgRounded: true
+      noShadow: true
+      url: "risorse-per-progettare/" #M
+      textSerif: false
+      # buttonBottom:
+      #   btnStyle: primary
+      #   label: Esplora/Scopri il titolo
+      #   url: "risorse-per-progettare/"
+
+  imageIcons:
+    image: /images/home/community.jpg
+    alt: "La Qualità ha a che fare con la partecipazione"
+    background: light
+    customStyle: #negative-x
+    # images:
+    # - img: /images/home/community-icon.svg
+    #   alt: Alt lorem ipsum #C
+
+  sectionIntroImg:
+    title: Prendi parte alla community
+    subtitle: Contribuisci a Designers Italia, partecipa agli eventi e confrontati sulle buone pratiche del settore pubblico.
+    background: light
+    isFull: true
+    testimonials:
+      items:
+        - icon:
+            icon: sprites.svg#it-user
+          text: "Il più importante progetto di inclusione digitale portato avanti dal Governo"
+          signature: " Partecipante all’indagine 2021 sulla community di Designers Italia"
+        - icon:
+            icon: sprites.svg#it-user
+          text: "... ho trovato il lavoro di Designers Italia molto prezioso per diffondere l'importanza di user-centered design, ricerca con utenti, usabilità, accessibilità nelle pubbliche amministrazioni."
+          signature: " Partecipante all’indagine 2022 sulla community di Designers Italia"
+
+  highlightCards2:
+    background: light
+    nopadtop: true
+    hasCustomCols: true
+    buttons:
+    - btnStyle: primary
+      label: Esplora cosa accade nella community
+      url: "community/"
+      addonStyle: me-3 d-block
+
+    # CARDS
+    cards:
+
+    - title: "Un’estate con Designers Italia"
+      headingLevel: 3
+      customCol: col-lg-4
+      text: "Libri, newsletter, podcast e video da recuperare durante le ferie estive, consigliati da Designers Italia."
+      img: /images/community/20240807-un-estate-con-designers-italia-1400x723.jpg
+      alt: ""
+      imgRatio: 21x9
+      imgPlaceholder: false
+      fullHeight: false
+      rounded: true
+      url: "/community/notizie/20240807-un-estate-con-designers-italia/"
+      dateInfo: 07 agosto 2024
+      tags: [Cultura progettuale, Community, Disseminazione]
+
+    - title: 'Definisci la direzione progettuale di un sito o servizio con il nuovo kit Stato dell’arte'
+      headingLevel: 3
+      customCol: col-lg-4
+      text: "Disponibili nuovi strumenti di analisi utili a riprogettare l’esperienza d’uso di un sito web della PA."
+      img: 20240708-pubblicazione-kit-analisi-stato-arte-1400x723.png
+      alt: ""
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: false
+      rounded: true
+      url: "/community/notizie/20240708-kit-stato-dell-arte/"
+      dateInfo: 08 luglio 2024
+      tags: [Analisi del contesto, Esperienza utente, Cultura progettuale]
+
+    - title: "Verso Design system .italia: dalle origini al design system aperto della PA"
+      headingLevel: 3
+      customCol: col-lg-4
+      img: /images/community/articoli-di-approfondimento/20240522-verso-design-system-italia-dalle-origini-al-design-system-aperto-della-pa.png
+      alt: ""
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: false
+      rounded: true
+      url: https://medium.com/designers-italia/verso-design-system-italia-dalle-origini-al-design-system-aperto-del-paese-66a2d5af6654
+      blank: true
+      externalLink:
+        label: Leggi su Medium
+        screenReaderText: " (si apre in una nuova finestra)"
+        icon:
+          icon: sprites.svg#it-external-link
+          size: xs
+      moreInfo: di Daniele Tabellini
+      tags: [Design system, Interfaccia utente]
+
+  bannerTextCta:
+    id: bannerBottom
+    title: Diamo i numeri
+    background: dark
+    numbers:
+      inline: true
+      items:
+      - icon: sprites.svg#it-tool
+        label: Risorse per progettare a norma
+        number: "40+"
+      - icon: sprites.svg#it-pa
+        label: Enti che usano i nostri strumenti
+        number: "10000+"
+      - icon: sprites.svg#it-user
+        number: "24000+"
+        label: "Persone nella community"
+      - icon: sprites.svg#it-star-outline
+        number: "1500+"
+        label: "Partecipanti a eventi della community 2023"
+
+
+
