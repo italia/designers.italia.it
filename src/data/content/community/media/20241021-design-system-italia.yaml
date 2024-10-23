@@ -1,0 +1,131 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Design system .italia: uno strumento di valore per PA e cittadinanza"
+  description: "Scopri l'insieme delle indicazioni, delle regole e delle risorse alla base delle interfacce digitali dei servizi pubblici italiani."
+  image: https://designers.italia.it/images/community/media-thumbnails/20241021-design-system-italia.jpg
+  canonical: null
+  pathname: /community/media/20241021-design-system-italia/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Design system .italia: uno strumento di valore per PA e cittadinanza"
+    subtitle: "Scopri l'insieme delle indicazioni, delle regole e delle risorse alla base delle interfacce digitali dei servizi pubblici italiani"
+    tag:
+      label: Video
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/Ys5Kxfdvedg
+          poster: /images/community/media-thumbnails/20241021-design-system-italia.jpg
+          subtitles: /files/community/subtitles/20241021-design-system-italia.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+
+            Scarica la [trascrizione in formato ODT](/files/community/subtitles/20241021-design-system-italia.odt)
+
+            ----
+
+            ### Design system .italia
+
+            Caselle di testo, pulsanti, menu a tendina
+            sono alcuni degli elementi più semplici
+            di app e siti web.
+
+            Eppure nei servizi pubblici digitali
+            componenti come questi sono fondamentali,
+            perché consentono alle persone di esercitare i propri diritti
+            senza escludere nessuno.
+
+            Il digitale sta cambiando il volto della Pubblica Amministrazione
+            e il design system .italia ha un ruolo fondamentale
+            in questa trasformazione, perché getta le fondamenta
+            per rendere coerenti le esperienze di utilizzo
+            dei servizi pubblici digitali, 
+            definendone identità, linguaggio e interazioni.
+
+            In pratica è un insieme di indicazioni e risorse
+            per realizzare interfacce usabili e accessibili.
+            Contribuendo così a una Pubblica Amministrazione più vicina
+            semplice e utile per le persone.
+
+            Nel design system .italia infatti c'è tutto quello che serve
+            per progettare, prototipare e sviluppare piattaforme digitali
+            con più efficacia, minor tempo e costi.
+            Dalle indicazioni pratiche su come scrivere i testi
+            alle stringhe di codice pronte all'uso.
+
+            È per tutti perché open source: tutti lo possono usare.
+            È di tutti perché costruito con l'aiuto della community di Designers Italia.
+            Tutti possono contribuire al suo miglioramento.
+
+            Oggi sono già migliaia gli enti che usano il design system .italia,
+            ed è importante che domani siano ancora di più.
+            Perché è un diritto di tutte le persone poter interagire con siti
+            e servizi pubblici digitali di qualità.
+
+            Designers Italia è un progetto a cura del Dipartimento per la Trasformazione Digitale e dell'Agenzia per l'Italia Digitale.
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Il **design system .italia** è l'insieme di indicazioni e risorse per progettare e sviluppare siti e servizi pubblici digitali di qualità, semplici da usare e inclusivi per tutte le persone. Nell'era della trasformazione digitale, .italia si pone come il punto di partenza per progettare un'esperienza d'uso centrata sui bisogni delle persone e come strumento volto a semplificare la digitalizzazione dei servizi pubblici, dalla progettazione fino all’implementazione.
+          ctas:
+          - label: Vai al design system .italia #C
+            url: "/design-system/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 

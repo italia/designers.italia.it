@@ -9,7 +9,16 @@ import ReactMarkdown from "react-markdown";
 // - [future] modular approach for local videos/youtubes/...
 // - [future] download thumbnail during build - eg. url: http://i3.ytimg.com/vi/_0j7ZQ67KtY/hqdefault.jpg
 
-function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
+function MediaPlayerEl({
+  url,
+  lang,
+  subtitles,
+  trascription,
+  trascriptionLabel,
+  trascriptionLabelEN,
+  trascriptionHeadingLevel,
+  poster,
+}) {
   const messages = {
     it: {
       rememberLabel: "Ricorda per tutti i video",
@@ -27,10 +36,22 @@ function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
     },
   };
 
+  // trascription label
+  if (trascriptionLabel) messages.it.trascriptionLabel = trascriptionLabel;
+  if (trascriptionLabelEN) messages.en.trascriptionLabel = trascriptionLabelEN;
+
   let video = null;
   const t = (key) => messages[lang][key];
 
   const videoId = `video-js-${uniqueId("id_")}`;
+
+  // trascription heading level
+  let HLevel;
+  if (trascriptionHeadingLevel) {
+    HLevel = `h${trascriptionHeadingLevel}`;
+  } else {
+    HLevel = `h2`;
+  }
 
   useEffect(() => {
     // eslint-disable-next-line no-new
@@ -116,7 +137,7 @@ function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
       </div>
       <div className="vjs-transcription accordion">
         <div className="accordion-item">
-          <h2 className="accordion-header " id="transcription-head9">
+          <HLevel className="accordion-header " id="transcription-head9">
             <button
               className="accordion-button collapsed"
               type="button"
@@ -127,7 +148,7 @@ function MediaPlayerEl({ url, lang, subtitles, trascription, poster }) {
             >
               {t("trascriptionLabel")}
             </button>
-          </h2>
+          </HLevel>
           {trascription && (
             <div
               id={`${videoId}-transcription`}
