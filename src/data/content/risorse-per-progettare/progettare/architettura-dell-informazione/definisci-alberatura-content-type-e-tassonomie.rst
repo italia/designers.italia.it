@@ -23,11 +23,11 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Definisci alberatura, content type e tassonomie - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: mposta la struttura del sito o servizio digitale, le principali tipologie di contenuto ed eventuali sistemi di categorizzazione dei contenuti. #C
+  name: Organizza i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Svolgi un'attività di card sorting per raggruppare e ordinare i contenuti del sito o servizio in categorie che hanno senso per gli utenti. #C
   image: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png #I
   canonical: null
-  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/definisci-alberatura-content-type-e-tassonomie/ #M
+  pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/organizza-i-contenuti/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -91,8 +91,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Definisci alberatura, content type e tassonomie #C
-    subtitle: Imposta la struttura del sito o servizio digitale, le principali tipologie di contenuto ed eventuali sistemi di categorizzazione dei contenuti #C
+    title: Organizza i contenuti #C
+    subtitle: Svolgi un'attività di card sorting per raggruppare e ordinare i contenuti del sito o servizio in categorie che hanno senso per gli utenti #C
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
@@ -103,7 +103,7 @@ components:
     #   text: In breve
     # text: | #C
     #   Lorem **ipsum**
-    img: /images/risorse-per-progettare/icons/kit_architettura.svg #I
+    img: /images/risorse-per-progettare/icons/kit_architettura_cardsorting.svg #I
     alt: "" #C
     imgRatio: 4x3
 
@@ -247,3 +247,4 @@ components:
                 url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CoDesignWorkshop_Stampabile-Card-sorting.pdf #M
                 ariaLabel: "PDF: Card sorting in versione stampabile" #C #COMPILE FOR EACH ITEM
                 blank: false
+
