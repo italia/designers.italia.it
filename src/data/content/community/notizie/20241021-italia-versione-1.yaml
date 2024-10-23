@@ -1,0 +1,246 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+seo:
+  name: ".italia versione 1: l’inizio di una nuova era per i servizi digitali pubblici"
+  description: "Il design system del Paese matura, offrendo strumenti sempre più completi e affidabili per realizzare servizi accessibili e usabili."
+  image:  https://designers.italia.it/images/community/20241021-design-system-italia.jpg #I
+  canonical: null
+  pathname: /community/notizie/20241021-italia-versione-1/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: ".italia versione 1: l’inizio di una nuova era per i servizi digitali pubblici"
+    subtitle: "Il design system del Paese matura, offrendo strumenti sempre più completi e affidabili per realizzare servizi accessibili e usabili"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, UI kit, Accessibilità, Prototipazione, Open source]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 4 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 21 ottobre 2024
+
+  # imageIcons:
+  #  image: /images/community/20241021-italia-versione-1-1920x1080.jpg
+  #  alt: ""
+  #  background: null
+
+  sectionsEditorial :
+
+    # - menu: false
+    #   noSpace: false
+    #   centered: true
+    #   # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+    #   # text:
+    #   id: corpoNotizia
+    #   components:
+    #     - name: TextImageCta
+    #       noSpace: true
+    #       text: |
+            
+        
+      # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: true 
+      centered: true
+      background: null
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/Ys5Kxfdvedg
+          poster: /images/community/media-thumbnails/20241021-design-system-italia.jpg
+          subtitles: /files/community/subtitles/20241021-design-system-italia.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            
+            Scarica la [trascrizione in formato ODT](/files/community/subtitles/20241021-design-system-italia.odt)
+
+            ----
+
+            ### Design system .italia
+
+            Caselle di testo, pulsanti, menu a tendina
+            sono alcuni degli elementi più semplici
+            di app e siti web.
+
+            Eppure nei servizi pubblici digitali
+            componenti come questi sono fondamentali,
+            perché consentono alle persone di esercitare i propri diritti
+            senza escludere nessuno.
+
+            Il digitale sta cambiando il volto della Pubblica Amministrazione
+            e il design system .italia ha un ruolo fondamentale
+            in questa trasformazione, perché getta le fondamenta
+            per rendere coerenti le esperienze di utilizzo
+            dei servizi pubblici digitali, 
+            definendone identità, linguaggio e interazioni.
+
+            In pratica è un insieme di indicazioni e risorse
+            per realizzare interfacce usabili e accessibili.
+            Contribuendo così a una Pubblica Amministrazione più vicina
+            semplice e utile per le persone.
+
+            Nel design system .italia infatti c'è tutto quello che serve
+            per progettare, prototipare e sviluppare piattaforme digitali
+            con più efficacia, minor tempo e costi.
+            Dalle indicazioni pratiche su come scrivere i testi
+            alle stringhe di codice pronte all'uso.
+
+            È per tutti perché open source: tutti lo possono usare.
+            È di tutti perché costruito con l'aiuto della community di Designers Italia.
+            Tutti possono contribuire al suo miglioramento.
+
+            Oggi sono già migliaia gli enti che usano il design system .italia,
+            ed è importante che domani siano ancora di più.
+            Perché è un diritto di tutte le persone poter interagire con siti
+            e servizi pubblici digitali di qualità.
+
+            Designers Italia è un progetto a cura del Dipartimento per la Trasformazione Digitale e dell'Agenzia per l'Italia Digitale.
+
+    - menu: false
+      noSpace: false
+      centered: true
+      # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+      # text:
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            Il rilascio ufficiale della versione 1 chiude la [fase beta](/community/notizie/20240308-ciao-italia-la-terza-generazione-del-design-system-ha-un-nome-ed-entra-in-fase-beta/) iniziata a marzo 2024 e **consolida due anni e mezzo di progettazione e sviluppo in cui abbiamo rilasciato [oltre 25 versioni](/design-system/fondamenti/versionamento/#changelog-documentazione)**, dalla prima `v1.0.0-alpha.1` all’attuale `v1.1.0`. Questo lavoro non sarebbe stato possibile senza la collaborazione della community di Designers Italia e Developers Italia, che supporta l’evoluzione di .italia sin dalla sua nascita, tenendo il progetto vivo e in continuo miglioramento.
+
+            **Ad oggi .italia fa già la differenza**: nell’ultimo anno più di 9.000 persone al mese hanno visitato la sezione dedicata al design system sul sito di Designers Italia e più di 10.000 pubbliche amministrazioni l’hanno usato per erogare, alla cittadinanza, servizi digitali accessibili, usabili e coerenti.
+
+            Nell'era della trasformazione digitale, .italia si pone come fattore abilitante di un'esperienza d'uso di alta qualità per tutte le persone e come strumento volto a semplificare la digitalizzazione dei servizi pubblici, dalla progettazione fino all’implementazione. Il design system permette di rispondere al meglio al **[requisito 4.5](/norme-e-riferimenti/linee-guida-di-design/requisito-4-5/) delle Linee guida di design**, agevolando la realizzazione di interfacce coerenti tramite l’uso dei componenti disponibili sul sito di Designers Italia.
+
+            ## Cosa c'è di nuovo
+            Il rilascio della versione 1 del design system .italia include una **libreria ricca di componenti già testati in termini di usabilità e accessibilità**, **documentazione completa** per ciascun componente e **framework moderni per sviluppare** in modo rapido ed efficace.
+
+            Il focus di .italia v1 rimane la **centralità degli utenti su tutti i fronti**: da un lato, abbiamo reso più facile l'uso degli strumenti di progettazione e sviluppo per enti e fornitori; dall'altro, abbiamo migliorato l'accessibilità dei componenti che servono a creare le interfacce, con l’obiettivo ultimo di diffondere servizi usabili da tutte le persone, indipendentemente da conoscenze o condizioni di disabilità, temporanee e non.
+
+            **L’accessibilità si conferma quindi una priorità del design system** e [uno dei tre pilastri dell’identità dei servizi pubblici digitali](/design-system/fondamenti/identita/). In un’ottica di miglioramento continuo e per garantire la massima qualità e affidabilità del sistema, abbiamo svolto ben tre cicli di verifiche di accessibilità e coerenza sui 55 componenti, seguendo un workflow definito nel tempo insieme agli esperti di accessibilità di AgID. Abbiamo inoltre messo a disposizione di tutti [questo processo di verifica](/design-system/fondamenti/accessibilita/), così che le PA e i loro fornitori possano replicarlo per verificare l’accessibilità dei componenti nel contesto dei siti e servizi digitali che stanno sviluppando.
+
+        - name: TextImageCta
+          title: Scopri come usare .italia
+          text: |
+            Presto organizzeremo un **Community Lab**, online e gratuito, sul nuovo rilascio del design system e l’uso pratico di tutte le risorse. Durante questo laboratorio spiegheremo come creare servizi digitali con il design system .italia, mostrando l’intero processo dalla progettazione allo sviluppo. 
+            
+            **Iscriviti alla newsletter di Designers Italia per ricevere i dettagli dell’evento appena saranno disponibili!**
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: Iscriviti alla newsletter
+            url: "/#iscrivitiNewsletter"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+        - name: TextImageCta
+          title: Esplora e contribuisci a .italia
+          # text: |
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: Vai alla documentazione
+            url: "/design-system/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: Scopri come contribuire
+            url: "/design-system/come-contribuire/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+        - name: TextImageCta
+          title: "Verso .italia: gli articoli di approfondimento"
+          # text: |
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: "La storia del design system .italia - Leggi su Medium"
+            url: https://medium.com/designers-italia/verso-design-system-italia-dalle-origini-al-design-system-aperto-del-paese-66a2d5af6654?source=collection_home---4------2-----------------------
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: "La storia del nome “.italia” - Leggi su Medium"
+            url: https://medium.com/designers-italia/verso-design-system-italia-come-%C3%A8-nato-il-nome-del-design-system-del-paese-a2720e219f00?source=collection_home---4------3-----------------------
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+
+            
