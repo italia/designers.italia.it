@@ -24,8 +24,8 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Organizza i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie. #C
-  image: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png #I
+  description: Svolgi un'attività di card sorting per raggruppare e ordinare i contenuti del sito o servizio in categorie che hanno senso per gli utenti. #C
+  image: null #I
   canonical: null
   pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/organizza-i-contenuti/ #M
 
@@ -92,7 +92,7 @@ components:
   hero:
     background: null
     title: Organizza i contenuti #C
-    subtitle: Con il card sorting puoi raggruppare, ordinare e declinare contenuti e funzioni del tuo touchpoint in macro-categorie #C
+    subtitle: Svolgi un'attività di card sorting per raggruppare e ordinare i contenuti del sito o servizio in categorie che hanno senso per gli utenti #C
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
@@ -184,11 +184,14 @@ components:
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
-            Se gli scenari d'uso ti permettono di individuare una serie di contenuti e funzioni potenziali per il servizio che stai progettando, l'attività di card sorting ti aiuterà a **raggruppare, ordinare e declinare** queste caratteristiche-chiave.
+            Una volta individuati i contenuti e le funzioni per il sito o servizio che stai progettando, l'attività di card sorting ti aiuterà a **raggrupparli e ordinarli in categorie che hanno senso per gli utenti**, così da costruire e/o consolidare l’architettura dell’informazione del sito o servizio digitale.
+            
+            Il card sorting ti permette, infatti, di scoprire come ragionano gli utenti, dove si aspettano di trovare determinati contenuti e quali tipologie di contenuto percepiscono come affini. Con queste informazioni puoi poi procedere a definire l'alberatura (ovvero la struttura) di un sito o servizio e/o eventuali tassonomie per categorizzare i contenuti e renderli facilmente trovabili dalle persone.
+            
+            Nel *card sorting chiuso*, i partecipanti all'attività organizzano i contenuti in categorie preimpostate (utile per aggiungere contenuti ad architetture già esistenti), mentre nel *card sorting aperto*, sono loro a creare le categorie e a dargli un nome (utile per progettare architetture da zero).
+            
+            Gli strumenti a disposizione ti aiutano a organizzare e svolgere un'attività di card sorting sia online che in presenza.
 
-            L'attività di card sorting è infatti utile per **individuare le macro-categorie** in cui contenuti e funzioni sono raggruppati e i percorsi attraverso i quali si articolano. Serve anche a **descrivere le tipologie di contenuti** presenti nel sistema e le relazioni che intercorrono fra esse.
-
-            Questo lavoro di catalogazione e raggruppamento è fondamentale per costruire e/o consolidare l’architettura dell’Informazione alla base del servizio digitale.
 
   # ///////////////////
   # RESOURCES
@@ -200,35 +203,38 @@ components:
       - simpleList: true
         headingLevel: 3
         listItems:
-          - label: Card sorting #C
+          - label: Lavagna collaborativa di Card sorting per FigJam #C
             srBefore: "Scarica ODP " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Organizza contenuti e funzioni del servizio digitale #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
+            text: Una lavagna collaborativa per svolgere card sorting da remoto su FigJam #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.jam #M
             blank: false
             actions:
-              - icon: sprites.svg#it-file-odp #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.odp #M
-                ariaLabel: "Scarica ODP Card sorting" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-figma #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.jam #M
+                ariaLabel: "Scarica FigJam Card sorting" #C #COMPILE FOR EACH ITEM
                 blank: false
-              - icon: sprites.svg#it-file-ppt #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.pptx #M
-                ariaLabel: "Scarica PPTX Card sorting" #C #COMPILE FOR EACH ITEM
-                blank: false
-              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.pdf #M
-                ariaLabel: "Scarica PDF Card sorting" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Esempio di card sorting #C
+          - label: Lavagna collaborativa di Card sorting per Tldraw #C
             srBefore: "PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter:  # FOR SCREEN READER ARIA LABEL
-            text: Scarica un esempio #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
+            text: Una lavagna collaborativa per svolgere card sorting da remoto su Tldraw #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.tldr #M
             blank: false
             actions:
-              - icon: sprites.svg#it-file-pdf-ext #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-CardSorting-esempio.pdf #M
-                ariaLabel: "PDF: Esempio di card sorting" #C #COMPILE FOR EACH ITEM
+              - icon: sprites.svg#it-file #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/organizza-contenuti/DI-Card-sorting.tldr #M
+                ariaLabel: "Scarida Tldraw Card sorting" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Istruzioni per il primo utilizzo delle lavagne collaborative #C
+            srBefore: "Scarica PDF" #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Istruzioni per importare i template delle lavagne collaborative in tldraw o Figjam #C
+            url: /files/resources/risorse-per-progettare/Readme-Istruzioni-Lavagne-Collaborative.pdf #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-pdf #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/Readme-Istruzioni-Lavagne-Collaborative.pdf #M
+                ariaLabel: "Scarica PDF Istruzioni su come importare i template delle lavagne collaborative" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: Card sorting in versione stampabile #C
             srBefore: "PDF " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
