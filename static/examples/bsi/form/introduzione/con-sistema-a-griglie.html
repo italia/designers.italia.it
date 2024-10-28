@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.2/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.10.0/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -115,12 +115,14 @@
       <input type="email" class="form-control" id="inputEmail4" placeholder="inserisci il tuo indirizzo email">
     </div>
     <div class="form-group col-md-6">
-      <label class="active" for="exampleInputPassword">Password</label>
-      <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword" placeholder="inserisci la tua password">
-      <span class="password-icon" aria-hidden="true">
-        <svg class="password-icon-visible icon icon-sm"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
-        <svg class="password-icon-invisible icon icon-sm d-none"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
-      </span>
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" data-bs-input class="form-control input-password" id="exampleInputPassword1" aria-describedby="infoPassword1">
+      <button type="button" class="password-icon btn" role="switch" aria-checked="false">
+        <span class="visually-hidden">Mostra/Nascondi Password</span>
+        <svg class="password-icon-visible icon icon-sm" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-password-visible"></use></svg>
+        <svg class="password-icon-invisible icon icon-sm d-none" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-password-invisible"></use></svg>
+      </button>
+      <p id="infoPassword1" class="form-text text-muted d-block small pb-0">Inserisci almeno 8 caratteri e alcuni caratteri speciali.</p>
     </div>
   </div>
   <div class="row">
@@ -173,7 +175,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.10.0/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 

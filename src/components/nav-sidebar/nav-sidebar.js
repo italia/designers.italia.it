@@ -13,7 +13,6 @@ function NavSidebar({
   id,
   title,
   subTitle,
-  url,
   img,
   alt,
   tag,
@@ -214,13 +213,10 @@ function NavSidebar({
                 <span>{backLabel}</span>
               </button>
 
-              <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
-                <a className="" href={url}>
-                  <img src={img} className="header-image my-2" alt={alt} />
-                  <h2 className="h4 text-primary">{title}</h2>
-                </a>
-                <p className="lead fw-normal w-75">{subTitle}</p>
-                {tag && <Tag {...tag} />}
+              <div className="nav-sidebar-header mx-4 mb-3 mt-0 mt-lg-2">
+                <img src={img} className="header-image" alt={alt} />
+                <h2 className="h3 px-0 my-1">{title}</h2>
+                <p className="fw-normal w-75 mb-0">{subTitle}</p>
               </div>
 
               <div className="link-list-wrapper">
@@ -230,6 +226,7 @@ function NavSidebar({
               {secondaryLinks && (
                 <div className="sidebar-linklist-wrapper linklist-secondary">
                   <div className="link-list-wrapper">
+                    <div className="pt-3">{tag && <Tag {...tag} />}</div>
                     <ul className="link-list">{secondaryLinks}</ul>
                   </div>
                 </div>

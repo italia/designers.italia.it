@@ -9,7 +9,6 @@ seo:
   name: Per lo sviluppo
   description: Contribuisci alle risorse e alle librerie per sviluppare le interfacce e le esperienze di siti e servizi pubblici digitali.
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/come-contribuire/per-lo-sviluppo/
 
@@ -33,7 +32,7 @@ components:
     background: null
     title: Per lo sviluppo
     column: true
-    subtitle: Contribuisci alle risorse e alle librerie per sviluppare le interfacce e le esperienze di siti e servizi pubblici digitali.
+    subtitle: Contribuisci alle risorse e alle librerie per sviluppare le interfacce e le esperienze di siti e servizi pubblici digitali
     tag:
       label: Come contribuire #C
       addonClasses: mt-3 text-uppercase
@@ -118,9 +117,8 @@ components:
             Premessa importante: assicurati di conoscere i [fondamenti del design system del Paese](/design-system/fondamenti/) e [le risorse per sviluppatori](/design-system/come-iniziare/per-sviluppatori/). 
           ctas: 
             - label: "Conosci il modello di contribuzione?" #C
-              screenReaderText: ""
               url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -134,10 +132,10 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Controlla se esiste già una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai nella segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo di sviluppo sul tema scopri di seguito come inviare contributi e proponilo nella discussione.  
+            Controlla se esiste già una discussione sul tema che ti interessa, o su un tema simile. Se esiste, vai alla segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo di sviluppo sul tema scopri di seguito come inviare contributi e proponilo nella discussione.  
           ctas: 
             - label: "Discussioni su Bootstrap Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/bootstrap-italia/issues #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -148,7 +146,7 @@ components:
                 size: sm
                 addonClasses: ms-2
             - label: "Discussioni su Design Tokens Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-tokens-italia/issues #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -164,10 +162,10 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Se il tema di tuo interesse non è nella lista puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari per approfondire il tuo contributo. 
+            Se il tema di tuo interesse non è nella lista, puoi proporre una nuova segnalazione. Ricorda di inserire tutti i dettagli che ritieni necessari per approfondire il tuo contributo. 
           ctas: 
             - label: "Nuova segnalazione Bootstrap Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/bootstrap-italia/issues/new #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -178,7 +176,7 @@ components:
                 size: sm
                 addonClasses: ms-2
             - label: "Nuova segnalazione Design Tokens Italia" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-tokens-italia/issues/new #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -212,9 +210,8 @@ components:
             Nelle lavorazioni poni attenzione al rispetto dei fondamenti del design system del Paese. Può esserti utile il "workflow per migliorare lo sviluppo dei componenti" del [fondamento accessibilità](/design-system/fondamenti/accessibilita/). 
           ctas: 
             - label: "Approfondisci il Fondamento accessibilità" #C
-              screenReaderText: ""
               url: "/design-system/fondamenti/accessibilita/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -237,9 +234,8 @@ components:
             4. indica la pull request nella segnalazione aperta al punto 1 o in un commento dedicato
           ctas: 
             - label: "Approfondisci il Fondamento Design Tokens" #C
-              screenReaderText: ""
               url: "/design-system/fondamenti/design-tokens/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -253,7 +249,7 @@ components:
       paddingLeft: true
       title: "Contribuisci all'evoluzione delle risorse community-driven React e Angular Kit"
       text: | 
-       Partecipa all'aggiornamento per renderle coerenti con Bootstrap Italia e UI Kit Italia. 
+       Partecipa all'evoluzione partecipata dei due kit che implementano il design system nei framework React e Angular. 
       background: null
       
       components:
@@ -261,23 +257,35 @@ components:
           noSpace: false
           headingLevel: 3
           text: |
-            Sono partite le lavorazioni per l'aggiornamento di React e Angular Kit alle ultime versioni di Bootstrap Italia v2 (basato su Bootstrap 5).
+            Sono disponibili le nuove versioni dei React (v5) e Angular Kit (v1), coerenti con le ultime versioni di Bootstrap Italia v2 (basato su Bootstrap 5) e UI Kit Italia v3.  
 
-            Lavorazioni importanti perché: 
-            - c'è stato un profondo refactoring di Bootstrap Italia tra le v1 e le v2 in merito ad accessibilità dei componenti e coerenza generale con la risorsa di design UI Kit Italia
-            - il [primo gennaio 2023](https://github.com/twbs/release) è avvenuto l'End of Life (EOF) di Bootstrap 4 su cui si basava Bootstrap Italia v1 
+            Le lavorazioni che hanno portato a queste nuove versioni sono state molto importanti perché: 
+            - c'è stato un profondo refactoring di Bootstrap Italia tra le v1 e le v2 in merito ad accessibilità dei componenti e coerenza generale con la risorsa di design UI Kit Italia;
+            - il [primo gennaio 2023](https://github.com/twbs/release) è avvenuto l'End of Life (EOF) di Bootstrap 4 su cui si basava Bootstrap Italia v1.
             
-            Di seguito le informazioni su dove trovare i lavori in corso. I commenti e i contributi di tutta la community sono più che necessari!
+            Di seguito le informazioni su dove trovare i lavori in corso nei due kit. I commenti e i contributi di tutta la community sono più che necessari!
+          ctas: 
+            - label: "Leggi la notizia" #C
+              # screenReaderText: " (si apre in una nuova finestra)"
+              url: "/community/notizie/20240404-design-system-italia-disponibili-le-nuove-versioni-dei-kit-react-ed-angular/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Per React Kit
           noSpace: true
           headingLevel: 3
           text: |
-            Puoi seguire i lavori in corso per l'aggiornamento a Bootstrap Italia v2 sul ramo [next](https://github.com/italia/design-react-kit/tree/next) del repository e nella [pull request (885)](https://github.com/italia/design-react-kit/pull/885) dedicata. 
+            Puoi seguire i lavori in corso e contribuire nel [repository React Kit](https://github.com/italia/design-react-kit/).
           ctas: 
             - label: "Discussioni su React Kit" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-react-kit/issues #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -288,7 +296,7 @@ components:
                 size: sm
                 addonClasses: ms-2
             - label: "Nuova segnalazione React Kit" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-react-kit/issues/new #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -304,10 +312,10 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Puoi seguire i lavori in corso per l'aggiornamento a Bootstrap Italia v2 sul [repository](https://github.com/italia/design-angular-kit/) e nella [milestone](https://github.com/italia/design-angular-kit/milestone/3) dedicata.
+            Puoi seguire i lavori in corso e contribuire nel [repository Angular Kit](https://github.com/italia/design-angular-kit/).
           ctas: 
             - label: "Discussioni su Angular Kit" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-angular-kit/issues #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -318,7 +326,7 @@ components:
                 size: sm
                 addonClasses: ms-2
             - label: "Nuova segnalazione Angular Kit" #C
-              screenReaderText: ""
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/design-angular-kit/issues/new #M
               blank: true #M #C true if new tab for external links
               icon:

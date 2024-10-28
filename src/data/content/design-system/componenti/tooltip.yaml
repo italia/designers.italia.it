@@ -1,40 +1,28 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/componenti/tooltip.json
   template:
     name: design-system-component
-
 seo:
   name: Tooltip - Designers Italia
-  description: "Breve messaggio a comparsa"
-  image: null
-  twitterImage: null
+  description: >-
+    Breve messaggio a comparsa per fornire spiegazioni contestuali e
+    suggerimenti.
   canonical: null
   pathname: /design-system/componenti/tooltip/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Tooltip
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Breve messaggio a comparsa"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: >-
+      Breve messaggio a comparsa per fornire spiegazioni contestuali e
+      suggerimenti
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -45,23 +33,19 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Messaggi]
-
+      tagsDesignSystem:
+        - Messaggi
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
+      id: preview-use
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/tooltip/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -71,9 +55,31 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Usa il componente tooltip quando vuoi fornire ulteriori
+              informazioni su un elemento specifico senza sovraccaricare
+              l'interfaccia utente. 
 
+              I tooltip sono utili quando il loro contenuto aggiunge valore o
+              aiuta a capire meglio una funzione, ma non è essenziale per l'uso
+              principale dell'elemento. 
+
+
+              Ad esempio, i tooltip possono essere usati per spiegare il
+              significato di un'icona, per fornire un suggerimento su come
+              utilizzare una funzionalità o per mostrare informazioni aggiuntive
+              su un dato o un'opzione.
+
+
+              ### Alternative a questo componente
+
+
+              - **[Popover](/design-system/componenti/popover)**: se hai bisogno
+              di mostrare più informazioni e inserire un link o pulsante.
+
+              - Usa il semplice **testo di aiuto inline** per fornire
+              informazioni aggiuntive direttamente nella pagina, senza la
+              necessità di interazione da parte dell'utente.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -82,35 +88,195 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Posiziona il tooltip accanto all'elemento che richiede
+              informazioni supplementari.
 
+
+              ### Attenzione a
+
+              - Non usare i tooltip per informazioni importanti, poiché l'utente
+              potrebbe non vederle.
+
+              - Dare tempo sufficiente all'utente di leggerne il contenuto, e
+              assicurarsi che il tooltip scompaia quando l'utente prosegue con
+              la navigazione o interagisce altrove nella pagina.
+
+              - Curare l'interazione da tastiera e con tecnologie assistive come
+              i lettori di schermo. 
+
+
+              ### Buone pratiche sui contenuti
+
+              - Il contenuto del tooltip deve essere conciso, preferibilmente
+              non più di una o due frasi.
+
+              - Data la sua natura di aiuto contestuale non sempre visibile in
+              pagina, il tooltip non dovrebbe contenere informazioni salienti
+              per l'interazione ma solo aggiunte o specifiche ulteriori relative
+              all'elemento cui è associato. 
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Verifica in corso
+                      addonClasses: bg-warning
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
-        components:
-          - name: TextImageCta
-            noSpace: true
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/componenti/tooltip/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-tooltip--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/tooltip
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -119,9 +285,13 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              ![Gli elementi che formano il
+              Tooltip](/images/design-system/componenti/tooltip-anatomy.png)
 
+               Il componente tooltip è composto da:
+               1. **forma di sfondo**, è raccomandato l'uso di un colore scuro per dare contrasto rispetto alla pagina;
+               2. **etichetta (label)**, deve essere un messaggio breve e chiaro.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -130,9 +300,14 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              - Il tooltip appare automaticamente quando l'utente passa il mouse
+              sopra l'elemento associato o lo attiva interagendo con clic/touch
+              o tastiera.
 
+              - Scompare quando l'utente allontana il mouse dall'elemento o, nel
+              caso di attivazione con clic/touch o tastiera, rimane visibile
+              fino a che l'utente interagisce altrove sulla pagina.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -141,10 +316,12 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Tutte le misure indicate sono espresse in `px`.
 
 
+              ![Specifiche di design del
+              Tooltip](/images/design-system/componenti/tooltip-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -152,30 +329,28 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
+      id: preview-dev
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/tooltip/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -184,16 +359,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

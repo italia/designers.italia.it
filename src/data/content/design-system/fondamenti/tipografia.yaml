@@ -8,9 +8,8 @@ metadata:
 
 seo:
   name: Tipografia
-  description: "I caratteri, gli stili e le regole tipografiche da usare per presentare i contenuti di un'interfaccia digitale in modo chiaro, leggibile ed efficace"
+  description: "I caratteri, gli stili e le regole tipografiche da usare per presentare i contenuti di un'interfaccia digitale in modo chiaro, leggibile ed efficace."
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/fondamenti/tipografia/
 
@@ -82,7 +81,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Contenuti e linguaggio,Progettazione interfaccia]
+      tags: [Contenuti e linguaggio,Progettazione interfaccia,Sviluppo interfaccia]
 
   sectionsEditorial:
     # - fullColumn: true
@@ -104,14 +103,37 @@ components:
           title: Caratteri tipografici
           headingLevel: 2
           text: |
-            Nell'ambito di questo design system puoi utilizzare tre diversi caratteri tipografici, ognuno dei quali ha un caso d'uso raccomandato specifico:
+            Nell'ambito di design system .italia puoi utilizzare tre diversi caratteri tipografici, ognuno dei quali ha un caso d'uso raccomandato specifico:
 
         - name: TextImageCta
-          title: Titillium Web
+          title: Titillium
           noSpace: true
           headingLevel: 3
           text: |
-              Titillium Web è il nostro **carattere principale**. Disponibile in diverse varianti, è un carattere geometrico che garantisce flessibilità nel design. È raccomandato per titoli, sottotitoli, elementi interattivi e brevi paragrafi di testo.
+              Titillium è il **carattere principale** dell'[identità](/design-system/fondamenti/identita/) del design system .italia, per realizzare servizi pubblici digitali sia su scala nazionale che su scala territoriale e/o locale. 
+              
+              La font, il cui nome rende omaggio al compositore Arvo Pärt e alla sua tecnica tintinnabuli, nasce nel 2008 come [progetto didattico](http://nta.accademiadiurbino.it/titillium/) all’interno dell’Accademia di Belle Arti di Urbino e, dalla prima applicazione d'uso per il rinnovo del sito governo.it nel 2015, si è guadagnata sul campo il ruolo di carattere di riferimento e distintività per il digitale della Pubblica Amministrazione italiana. 
+          ctas:
+          - label: Vai al fondamento Identità #C
+            url: "/design-system/fondamenti/identita/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        - name: TextImageCta
+          noSpace: true
+          text: |
+              #### Titillium Web (ufficiale)
+              Disponibile in diverse varianti, questa è la versione ufficiale integrata e disponibile in tutte le risorse del design system .italia. È un carattere geometrico che garantisce flessibilità nel design, raccomandato per titoli, sottotitoli, elementi interattivi e paragrafi di testo.
+
+              #### Titillium Pro (in sperimentazione)
+              È in corso la sperimentazione di questa nuova versione. Se avrà esisti positivi, sarà possibile sceglierla come alternativa in tutte le risorse di .italia. Risolve infatti problematiche di leggibilità, rimanendo retrocompatibile con le versioni precedenti ed estendendone in modo significativo il set di caratteri. Titillium Pro è disponibile in open source tramite la [repository GitHub dedicata](https://github.com/chialab/titillium_pro), curata dagli autori. 
+              
+              Se sperimentate in autonomia questa versione Pro in servizi digitali pubblici, sarebbe molto interessante avere feedback.  
         - name: ComponentView
           variantName: Titillium Web
           source: bsi/organizzare-i-contenuti/tipografia
@@ -384,7 +406,7 @@ components:
 
             Lo stile **lead text** è raccomandato per creare il sommario di una pagina o sezione.
 
-            Tutti gli stili di tipo **_body_** sono dedicati al corpo del testo. Seleziona la variante sans o serif in base alla lunghezza. Tradizionalmente, i testi molto lunghi sono in serif mentre quelli brevi o molto brevi sono in _sans_.
+            Tutti gli stili di tipo **body** sono dedicati al corpo del testo. Seleziona la variante sans (lineare) o serif (con grazie) in base alla lunghezza. Tradizionalmente, i testi molto lunghi sono in serif mentre quelli brevi o molto brevi sono in sans. 
 
             Lo stile **label** può essere utilizzato per elementi testuali composti da una o due parole, come ad esempio le etichette di un form.
 
@@ -393,7 +415,7 @@ components:
             ### Lunghezza dei paragrafi
             Per una migliore leggibilità dei contenuti ti consigliamo di mantenere i paragrafi di testo entro una lunghezza ragionevole, evitando blocchi di testo troppo lunghi. 
             
-            Raccomandiamo ad esempio una lunghezza massima di **75 caratteri per riga**.
+            Ti raccomandiamo una lunghezza massima di **75 caratteri per riga**.
 
             ### Ritmo verticale
             Il ritmo verticale è lo spazio occupato dalle lettere su ogni riga di testo e lo spazio tra le righe (leading). 

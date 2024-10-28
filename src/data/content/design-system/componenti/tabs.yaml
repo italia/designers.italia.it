@@ -1,42 +1,31 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/componenti/tab.json
   template:
     name: design-system-component
   redirect_from:
     - /design-system/componenti/tab
-
 seo:
   name: Tabs - Designers Italia
-  description: "Permettono di raccogliere contenuti della pagina in una struttura navigabile"
+  description: >-
+    Contenitori con etichette per organizzare contenuti correlati in schede
+    spearate all'interno della stessa sezione di pagina.
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/tabs/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Tabs
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Permettono di raccogliere contenuti della pagina in una struttura navigabile"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: >-
+      Contenitori con etichette per organizzare contenuti correlati in schede
+      spearate all'interno della stessa sezione di pagina
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -47,24 +36,23 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Interazione,Contenuti]
-
+      tagsDesignSystem:
+        - Interazione
+        - Contenuti
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
-      textInfo: Per visualizzare la modalità desktop è necessario uno schermo sufficientemente largo.
+      id: preview-use
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/tab/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -74,9 +62,12 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              Il componente tabs serve a raggruppare e organizzare contenuti di natura diversa ma correlati fra di loro, consentendo agli utenti di navigare tra insiemi di informazioni senza uscire dal contesto. Puoi usarlo su layout a pagina intera o all'interno di altre strutture quali ad esempio modali, schede e pannelli laterali.
-
+            text: >
+              Il componente Tabs serve a raggruppare e organizzare contenuti di
+              natura diversa ma correlati fra di loro, consentendo agli utenti
+              di navigare tra insiemi di informazioni senza uscire dal contesto.
+              Puoi usarlo su layout a pagina intera o all'interno di altre
+              strutture quali ad esempio modali, schede e pannelli laterali.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -85,44 +76,112 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              - Per ridurre il carico cognitivo di una pagina che contiene molte informazioni, raggruppando contenuti correlati in diverse sezioni, una per tab.
-              - Per organizzare contenuti come form, impostazioni e dashboard in modo che un utente non debba abbandonare il flusso d'interazione per completare un'attività.
+            text: >
+              - Per ridurre il carico cognitivo di una pagina che contiene molte
+              informazioni, raggruppando contenuti correlati in diverse sezioni,
+              una per tab.
+
+              - Per organizzare contenuti come form, impostazioni e dashboard in
+              modo che un utente non debba abbandonare il flusso d'interazione
+              per completare un'attività.
+
 
               ### Attenzione a 
-              - Il componente tabs deve contenere almeno due elementi tab, di cui può essere attivo un solo tab alla volta.
-              - Organizza le tab in base ai **temi logici** del contenuto.
-              - Fai in modo che le tab siano chiaramente distinguibili, utilizzando colori o stili contrastanti.
-              - Indica chiaramente quale tab è attiva, attraverso elementi visivi come colore o bordo.
+
+              - Il componente Tabs deve contenere almeno due elementi tab, di
+              cui può essere attivo un solo tab alla volta.
+
+              - Organizzare le tab in base ai **temi logici** del contenuto.
+
+              - Fare in modo che le tab siano chiaramente distinguibili,
+              utilizzando colori o stili contrastanti.
+
+              - Indicare chiaramente quale tab è attiva, attraverso elementi
+              visivi come colore o bordo.
+
 
               ### Buone pratiche sui contenuti
 
-              - Assicurati che l'organizzazione dei contenuti rifletta in modo intuitivo la struttura delle informazioni presenti.
-              - Scegli etichette di testo brevi come intestazioni delle tab (una o due parole).
-              - Assicurati che le etichette comunichino in maniera chiara e specifica ciò che gli utenti vedranno attivando o navigando la tab di riferimento.
 
+              - Assicurati che l'organizzazione dei contenuti rifletta in modo
+              intuitivo la struttura delle informazioni presenti.
+
+              - Scegli etichette di testo brevi come intestazioni delle tab (una
+              o due parole).
+
+              - Assicurati che le etichette comunichino in maniera chiara e
+              specifica ciò che gli utenti vedranno attivando o navigando la tab
+              di riferimento.
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Accessibilità
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Verifica in corso
+                      addonClasses: bg-warning
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
-        id: ComponentStatus
         components:
           - name: TextImageCta
             noSpace: false
             title: Stato del componente
-            text: |
-              Lo stato del presente componente nelle diverse librerie di design e sviluppo del design system
-
+            headingLevel: 2
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
           - name: Table
             responsive: table-responsive-md
             head:
@@ -131,73 +190,90 @@ tabs:
               - text: Link
             rows:
               - cols:
-                - text: UI Kit (design)
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
-                - simpleCta :
-                    label: Kit
-                    url: https://www.figma.com/community/file/1105848677422572920
-                    blank: true
-                    screenReaderText: "nel kit UI Figma (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-figma
-                      size: sm
-
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
               - cols:
-                - text: Bootstrap Italia
-                  scope: row
-                - tag:
-                    label: Pronto
-                    addonClasses: bg-success ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - simpleCta :
-                    label: Scheda documentazione
-                    blank: true
-                    url: https://italia.github.io/bootstrap-italia/docs/componenti/tab/
-                    screenReaderText: " (si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-external-link
-                      size: sm
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/componenti/tab/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
               - cols:
-                - text: React
-                  scope: row
-                - tag:
-                    label: Da rivedere
-                    addonClasses: bg-warning ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - simpleCta :
-                    label: Scheda storybook
-                    url: https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-bottoni--page
-                    blank: true
-                    screenReaderText: "(si apre in una nuova finestra)"
-                    icon:
-                      icon: sprites.svg#it-external-link
-                      size: sm
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-tab--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
               - cols:
-                - text: Angular
-                  scope: row
-                - tag:
-                    label: Non presente
-                    addonClasses: neutral-2-bg text-secondary ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
-                - text: ""
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/tabs
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
           - name: TextImageCta
             ctas:
-            - label: Apri una issue sul repository Bootstrap Italia #C
-              screenReaderText: " (si apre in una nuova finestra)" #C
-              url: https://github.com/italia/bootstrap-italia/issues/new #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-            - label: Apri una issue sul repository UI Kit Italia #C
-
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -206,32 +282,60 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
+            text: >
               ### Orizzontale
-              ![Anatomia delle tab orizzontali](/images/design-system/componenti/tabs-horizontal-anatomy.png)
+
+              ![Anatomia delle tab
+              orizzontali](/images/design-system/componenti/tabs-horizontal-anatomy.png)
+
 
               La variante con tab in orizzontale è composta da:
-              1. **bordo**: delimita l'area di navigazione delle tab, può essere collocato sotto o sopra l'etichetta, nello stato attivo è evidenziato dal colore primary;
-              2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
-              3. **icona**: affianca o sostituisce l'etichetta; 
+
+              1. **bordo**, delimita l'area di navigazione delle tab, può essere
+              collocato sotto o sopra l'etichetta, nello stato attivo è
+              evidenziato dal colore primary;
+
+              2. **etichetta (label)**, il titolo della sezione, rappresenta il
+              contenuto informativo della scheda;
+
+              3. **icona**, affianca o sostituisce l'etichetta. 
+
 
               ### Verticale
-              ![Anatomia delle tab verticali](/images/design-system/componenti/tabs-vertical-anatomy.png)
-              
+
+              ![Anatomia delle tab
+              verticali](/images/design-system/componenti/tabs-vertical-anatomy.png)
+
+
               La variante con tab in verticale è composta da:
-              1. **bordo**: delimita l'area di navigazione delle tab, può essere collocato a destra o sinistra dell'etichetta, nello stato attivo è evidenziato dal colore primary;
-              2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
-              3. **icona**: affianca o sostituisce l'etichetta; 
-              4. **sfondo**: la tab selezionata può avere uno sfondo (opzionale); 
+
+              1. **bordo**, delimita l'area di navigazione delle tab, può essere
+              collocato a destra o sinistra dell'etichetta, nello stato attivo è
+              evidenziato dal colore primary;
+
+              2. **etichetta (label)**, il titolo della sezione, rappresenta il
+              contenuto informativo della scheda;
+
+              3. **icona**, affianca o sostituisce l'etichetta; 
+
+              4. **sfondo** opzionale, la tab selezionata può avere uno sfondo. 
+
 
               ### Con card
-              ![Anatomia delle tab dicon card](/images/design-system/componenti/tabs-card-anatomy.png)
+
+              ![Anatomia delle tab dicon
+              card](/images/design-system/componenti/tabs-card-anatomy.png)
+
 
               La variante con tab di tipo card è composta da:
-              1. **bordo**: visibile su tre lati, è presente solo per la tab attiva;
-              2. **etichetta**: il titolo della sezione, rappresenta il contenuto informativo della scheda;
+
+              1. **bordo**, visibile su tre lati, è presente solo per la tab
+              attiva;
+
+              2. **etichetta (label)**, il titolo della sezione, rappresenta il
+              contenuto informativo della scheda;
+
               3. **icona**: affianca l'etichetta sulla destra.
-            
       - full: true
         noSpace: true
         paddingLeft: true
@@ -240,15 +344,26 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              Elenco degli stati interattivi disponibili in tutte le varianti del componente:
+            text: >
+              Elenco degli stati interattivi disponibili in tutte le varianti
+              del componente tabs:
 
-              - **default**: una tab si presenta nello stato normale quando è attiva ma l'utente non ci interagisce;
-              - **hover**: si manifesta al passaggio del puntatore sulla tab, è disponibile solo su dispositivi no-touch;
-              - **active**: si manifesta quando una tab è selezionata, ovvero è stata cliccata dall'utente;
-              - **focus**: si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;
-              - **disabled**: indica che la tab è disattivata e non è possibile interagire con essa.
 
+              - **default**, una tab si presenta nello stato normale quando è
+              attiva ma l'utente non ci interagisce;
+
+              - **hover**, si manifesta al passaggio del puntatore sulla tab, è
+              disponibile solo su dispositivi no-touch;
+
+              - **active**, si manifesta quando una tab è selezionata, ovvero è
+              stata cliccata dall'utente;
+
+              - **focus**, si manifesta nel caso di navigazione tramite tastiera
+              o altri strumenti, passando da un elemento interattivo a quello
+              successivo;
+
+              - **disabled**, indica che la tab è disattivata e non è possibile
+              interagire con essa.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -257,19 +372,29 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              Le specifiche di design si intendono relative a tutte le varianti di tab previste dal componente.
+            text: >
+              Le specifiche di design si intendono relative a tutte le varianti
+              di tab previste dal componente.
+
               Le misure indicate sono espresse in `px`.
-              
+
+
               ### Tab orizzontali
-              ![Specifiche di design del button large](/images/design-system/componenti/tabs-horizontal-specs.png)
+
+              ![Specifiche di design del button
+              large](/images/design-system/componenti/tabs-horizontal-specs.png)
+
 
               ### Tab verticali
-              ![Specifiche delle tab verticali](/images/design-system/componenti/tabs-vertical-specs.png)
+
+              ![Specifiche delle tab
+              verticali](/images/design-system/componenti/tabs-vertical-specs.png)
+
 
               ### Tab con card
-              ![Specifiche delle tab di tipo card](/images/design-system/componenti/tabs-card-specs.png)
 
+              ![Specifiche delle tab di tipo
+              card](/images/design-system/componenti/tabs-card-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -277,31 +402,31 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
-      textInfo: Per visualizzare la modalità desktop è necessario uno schermo sufficientemente largo.
+      id: preview-dev
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/tab/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -310,16 +435,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

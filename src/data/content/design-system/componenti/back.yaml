@@ -1,40 +1,27 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/menu-di-navigazione/torna-indietro.json
   template:
     name: design-system-component
-
 seo:
   name: Back - Designers Italia
-  description: "Consente agli utenti di avere un link o pulsante con un’azione equivalente al “torna indietro” del browser"
+  description: Elemento di navigazione per tornare alla pagina o alla schermata precedente.
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/back/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Back
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Consente agli utenti di avere un link o pulsante con un’azione equivalente al “torna indietro” del browser"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: >-
+      Elemento di navigazione per tornare alla pagina o alla schermata
+      precedente
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -45,23 +32,20 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Navigazione]
-
+      tagsDesignSystem:
+        - Navigazione
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
+      id: preview-use
+      title: Anteprima
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/torna-indietro/
+      accordionUrl: >-
+        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/torna-indietro/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -71,9 +55,22 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Il componente Back guida l'utente a tornare alla pagina precedente
+              da cui si proviene, utile nel caso di processi e moduli da
+              compilare a più step, come può essere la compilazione di un
+              questionario. 
 
+
+              Può essere molto utile ad orientarsi nel contesto di un modulo
+              ([Form](/design-system/componenti/form/)) composto da diversi
+              passaggi. 
+
+
+              ### Alternative a questo componente
+
+              - **[Breadcrumbs](/design-system/componenti/breadcrumbs/)**: per
+              orientarsi nella navigazione di pagine con contenuti informativi.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -82,35 +79,215 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Mostra il componente a inizio dei contenuti della scheda, o
+              nelle vicinanze delle azioni di navigazione, salvataggio e invio
+              del processo o modulo. 
 
+
+              ### Attenzione a
+
+              - Assicurarsi che il link porti l'utente alla pagina precedente,
+              nell'ultimo stato in cui la stava navigando e lasciando i campi
+              precompilati laddove presenti.   
+
+              - Cercare di sviluppare siti web, processi e moduli in cui la
+              funzionalità "torna indietro" del browser abbia il funzionamento
+              aspettato dall'utente, lo stesso previsto dal componente.
+
+              - Usare il componente Back nel caso di un processo per accedere a
+              un servizio: l'utente potrebbe essere infatti intimorito
+              dall'usare la funzionalità "torna indietro" nativa del browser per
+              non perdere i contenuti inseriti.  
+
+              - Verificare il funzionamento del componente nel caso di
+              architetture e navigazioni complesse e legate a scelte
+              condizionali.
+
+              - Usare di default la variante *Link di navigazione* (implementata
+              con il corretto tag semantico `<a>`) e scegliere di usare le
+              varianti *pulsante* (implementate con il tag semantico `<button>`)
+              solo per azioni che agiscono in pagina, ad esempio per
+              ripristinare lo stato precedente di contenuti dinamici presentati
+              all'utente.     
+
+
+
+              ### Buone pratiche sui contenuti
+
+              - Se implementi un funzionamento non standard verifica che le
+              etichette di default "Torna indietro" e "Torna al livello
+              superiore" indichino correttamente l'azione svolta.
+
+              - Valuta di usare un'etichetta più specifica "Torna alla pagina
+              [titolo della pagina]" nel caso di percorsi complessi. 
+
+              - Puoi usare la semplice etichetta "Precedente", senza verbo
+              azione, solo nel caso che la pagina di atterraggio sia dello
+              stesso tipo della presente: ad esempio per le domande progressive
+              di un questionario.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
-        components:
-          - name: TextImageCta
-            noSpace: true
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/torna-indietro/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-goback--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/back-button
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -119,9 +296,25 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              ![Gli elementi che formano il
+              Back](/images/design-system/componenti/back-anatomy.png)
 
+
+              Il componente back è una declinazione del componente
+              [button](/design-system/componenti/buttons/) composta da:
+
+
+              1. **icona**, può essere una freccia verso sinistra per indicare
+              l'azione di navigare alla pagina precedente (la stessa azione
+              compiuta dal Back del browser) o può essere una freccia verso
+              l'alto a indicare la navigazione ad un livello gerarchico
+              superiore; 
+
+              2. **etichetta (label)**, opzionale, rende esplicita l'azione; 
+
+              3. **forma di sfondo**, presente nel caso delle varianti
+              *pulsante*. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -130,9 +323,14 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Il componente eredita gli stati interattivi da
+              [button](/design-system/componenti/buttons/).
 
+
+              All'attivazione da parte dell'utente la navigazione torna alla
+              pagina o allo step di compilazione del modulo precedente,
+              mantenendo gli stati e i campi precompilati laddove presenti. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -141,10 +339,9 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              *In stesura*
-
-
+            text: >
+              Il componente eredita le specifiche da
+              [button](/design-system/componenti/buttons/).
       - full: true
         noSpace: true
         paddingLeft: true
@@ -152,30 +349,29 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
+      id: preview-dev
+      title: Anteprima
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/torna-indietro/
+      accordionUrl: >-
+        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/torna-indietro/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -184,16 +380,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

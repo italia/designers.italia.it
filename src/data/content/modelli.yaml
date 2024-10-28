@@ -27,8 +27,7 @@ metadata:
 seo:
   name: Modelli - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Le risorse per realizzare il sito e i servizi digitali della tua amministrazione. #C
-  image: null #I
-  twitterImage: null #I
+  image: https://designers.italia.it/images/modelli/modelli-cover.png
   canonical: null
   pathname: /modelli/ #M
 
@@ -264,14 +263,28 @@ components:
     # —
     - title: Musei civici #C
       id: museicivici
-      img: /images/modelli/musei-hero.png #I
+      img: /images/modelli/musei-cover-square.png #I
       alt: "" #C
       headingLevel: 3
-      background: medium # null | light | medium | dark
+      background: null # null | light | medium | dark
       big: true
       specular: false
-      subtitle: Il modello, in lavorazione, per il sito dei musei civici #C
-      text: "Presto disponibili le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici."
+      subtitle: Il modello per il sito dei musei civici #C
+      text: "Le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici."
+      numbers: #C #I
+        items:
+        - icon: sprites.svg#it-file
+          number: "1"
+          label: Documento di architettura
+        - icon: sprites.svg#it-tool
+          number: "1"
+          label: Libreria dei componenti
+        - icon: sprites.svg#it-folder
+          number: "30"
+          label: Layout hi-fi di pagina
+        - icon: sprites.svg#it-user
+          number: "9"
+          label: Prototipi navigabili
       buttons: #C #I
         - label: Scopri il modello Musei civici #C
           btnStyle: primary

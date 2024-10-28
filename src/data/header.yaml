@@ -91,8 +91,8 @@ navbar:
               listItems: #C #M
                 - url: "/progetto/visione-e-missione/"
                   label: Visione e missione
-                - url: "/progetto/formazione-e-disseminazione/"
-                  label: Formazione e disseminazione
+                - url: "/progetto/divulgazione-e-disseminazione/"
+                  label: Divulgazione e disseminazione
                 - url: "/progetto/storia/"
                   label: Storia
       - isDropDown: true
@@ -148,19 +148,21 @@ navbar:
               listItems: #C #M
                 - url: "/modelli/aziende-sanitarie-locali/"
                   label: Aziende sanitarie locali (ASL)
+                - url: "/modelli/contribuisci-ai-modelli/"
+                  label: Contribuisci ai modelli
       - isDropDown: true
         isMegaMenu: true
         idMegamenu: menuD
-        label: Design system #C
+        label: Design system .italia #C
         megamenu:
           left:
-            img: /images/design-system/fondamenti.jpg
+            img: /images/design-system/ds-beta-naming.png
             imgAlt: ""
             text: | #C
               **Progetta e sviluppa interfacce e contenuti di siti e servizi digitali pubblici** utilizzando gli strumenti del design system del Paese.
           heading:
             url: "/design-system/" #M
-            label: Esplora il design system del Paese #C
+            label: "Esplora il design system .italia" #C
           cols:
             - isMenu: true
               listItems: #C #M
@@ -225,10 +227,12 @@ navbar:
                   label: Eventi
                 - url: "/community#articoli-di-approfondimento"
                   label: Articoli di approfondimento
-            - isMenu: true
-              listItems: #C #M
                 - url: "/community/media/"
                   label: Media
+            - isMenu: true
+              listItems: #C #M
+                - url: "/community/materiali-di-disseminazione/"
+                  label: Materiali di disseminazione
                 - url: "/community/piano-attivita/"
                   label: Piano attività
                 - url: "/community/contatti/"
@@ -239,6 +243,16 @@ headerPost:
     id: navBanner
     ariaLabel: Potrebbe interessarti
     items: #C #M
+    - title: "Design system .italia v1"
+      url: "/community/notizie/20241021-italia-versione-1/"
+      blank: false
+      icon:
+        icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: "me-2"
     - title: "Modello ASL"
       url: "/modelli/aziende-sanitarie-locali/"
       blank: false
@@ -249,8 +263,8 @@ headerPost:
         color: "primary"
         hidden: true
         addonClasses: "me-2"
-    - title: "Nuovo modello di contribuzione"
-      url: "community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese"
+    - title: "Modello Musei civici"
+      url: "/modelli/musei-civici/"
       blank: false
       icon:
         icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I

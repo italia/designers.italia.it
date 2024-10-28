@@ -142,7 +142,7 @@ function SearchMain({ location, maxResults, title, suggest }) {
                       </label>
                       <input
                         type="search"
-                        className="border-search form-control-lg search"
+                        className="border-search form-control form-control-lg rounded-0 search"
                         name="search"
                         id="searchInput"
                         placeholder=""

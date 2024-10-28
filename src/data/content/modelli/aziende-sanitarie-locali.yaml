@@ -48,7 +48,6 @@ seo:
   name: Aziende sanitarie locali (ASL) - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per gli utenti delle ASL #C
   image: https://designers.italia.it/images/modelli/asl-cover.png #I
-  twitterImage: https://designers.italia.it/images/modelli/asl-cover.png #I
   canonical: null
   pathname: /modelli/aziende-sanitarie-locali/ #M
 
@@ -105,7 +104,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Il modello ti permette di **realizzare siti delle ASL** già validati dalla ricerca e progettati sui bisogni degli utenti. Le risorse, pronte all'uso, comprendono l'architettura dell'informazione, le librerie di componenti UI, i layout di pagina e una serie di guide pratiche a supporto per impostare e svolgere il lavoro in modo rapido ed economico.
+      Il modello ti permette di **realizzare siti delle ASL** basati sulla ricerca e progettati sui bisogni degli utenti. Le risorse, pronte all'uso, comprendono l'architettura dell'informazione, le librerie di componenti UI, i layout di pagina e una serie di guide pratiche a supporto per impostare e svolgere il lavoro in modo rapido ed economico.
     img: /images/modelli/asl-icon.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -337,7 +336,7 @@ components:
 
       # CARD CHILDREN
       - title: Il sito della ASL #C
-        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito ASL semplice, accessibile e centrato sui bisogni degli utenti. #C
         img: /images/modelli/asl-sito.png
         alt: "Anteprima del modello di sito per le ASL"
         imgRatio: 4x3
@@ -353,6 +352,37 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: Contribuisci al modello
+      background: medium
+      menu: false
+      centered: true
+      #text: | #C
+      #  Lorem **ipsum**
+      components:
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/modelli/PA-digitale-adotta.svg #I
+          alt: "" #C
+          specular: false
+          noSpace: true
+          #title: Lorem ipsum h3 #C
+          text: | #C
+            Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana, contribuendo alle discussioni, agli avanzamenti tecnici e di design con il team e la community di Designers Italia
+          ctas:
+          - label: Scopri come contribuire #C
+            url: /modelli/contribuisci-ai-modelli/ #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
   
     # —
     # EDITORIAL #C #I

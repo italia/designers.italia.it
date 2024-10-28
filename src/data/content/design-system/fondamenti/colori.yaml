@@ -9,7 +9,6 @@ seo:
   name: Colori
   description: "Usiamo un sistema di colori per garantire coerenza visiva a siti e servizi e orientare le persone verso azioni e informazioni importanti, rendendo i contenuti accessibili a tutti."
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/fondamenti/colori/
 
@@ -33,7 +32,7 @@ components:
     background: null
     title: Colori
     column: true
-    subtitle: "Usiamo un sistema di colori per garantire coerenza visiva a siti e servizi e orientare le persone verso azioni e informazioni importanti, rendendo i contenuti accessibili a tutti."
+    subtitle: "Usiamo un sistema di colori per garantire coerenza visiva a siti e servizi e orientare le persone verso azioni e informazioni importanti, rendendo i contenuti accessibili a tutti"
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -96,7 +95,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Colori, Progettazione interfaccia]
+      tags: [Progettazione interfaccia]
 
   sectionsEditorial :
     - full: true
@@ -105,6 +104,22 @@ components:
       background: null
       paddingLeft: true
       components:
+        - name: TextImageCta
+          title: Identità
+          noSpace: true
+          text: |
+            Seguire un sistema integrato di identità per lo stile e l'esperienza d'uso dei servizi digitali pubblici ne migliora l'esperienza, li rende facilmente riconoscibili e aumenta la fiducia nelle persone che li utilizzano.
+          ctas:
+          - label: Vai al fondamento Identità #C
+            url: "/design-system/fondamenti/identita/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
         - name: TextImageCta
           title: Rispetta i ruoli
           noSpace: true
@@ -123,7 +138,18 @@ components:
           headingLevel: 3
           text: |
             Assicurati che il rapporto di contrasto del testo e degli elementi interattivi nel
-            tuo servizio soddisfi i requisiti previsti dagli standard WCAG 2.1.
+            tuo servizio soddisfi i requisiti previsti dagli standard di accessibilità, sia per i testi che per tutti gli elementi interattivi. 
+          ctas:
+          - label: Vai al fondamento Accessibilità #C
+            url: "/design-system/fondamenti/accessibilita/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
     - full: true
       title: Come usare i colori
@@ -140,7 +166,7 @@ components:
           text: |
             Sono previste quattro tipologie di colori:
 
-            - **colore primario** (_primary color_), il colore "Blu Italia" è il colore ufficiale del design system del Paese e rappresenta l'identità dei prodotti digitali della Pubblica Amministrazione centrale; è utilizzato anche per elementi interattivi, come link o pulsanti;
+            - **colore primario** (_primary color_), il colore "Blu Italia" è il colore ufficiale del design system del Paese e rappresenta l'[identità](/design-system/fondamenti/identita/) dei servizi digitali della Pubblica Amministrazione a scala nazionale; è utilizzato anche per elementi interattivi, come link o pulsanti. Se progetti servizi pubblici digitali a scala territoriale e/o locale devi scegliere un colore primario dedicato, come ad esempio previsto nei [modelli](/modelli/);
             - **colore di risalto** (_accent color_), è associato a elementi interattivi in alternativa al colore primario, il suo uso è raccomandato esclusivamente su sfondi saturi per ragioni di accessibilità;
             - **colori di sistema** (_system colors_), utilizzati per i messaggi che informano l’utente sullo stato del sistema (avvisi, errori, notifiche);
             - **colori neutri** (_neutral colors_), sono usati per elementi tipografici, sfondi, bordi e separatori nella maggior parte dei componenti.
@@ -192,7 +218,7 @@ components:
           text: |
             Il colore influisce sull’accessibilità del prodotto. 
             
-            I colori contribuiscono alla creazione di una gerarchia visiva ma non devono essere usati come unico elemento di distinzione per rappresentare o differenziare informazioni o elementi interattivi, secondo il criterio [1.4.1](https://www.w3.org/Translations/WCAG21-it/#use-of-color) delle WCAG 2.1. 
+            I colori contribuiscono alla creazione di una gerarchia visiva ma non devono essere usati come unico elemento di distinzione per rappresentare o differenziare informazioni o elementi interattivi, secondo il criterio [1.4.1](https://www.w3.org/Translations/WCAG21-it/#use-of-color) delle WCAG. 
 
             Devi inoltre garantire un contrasto minimo di colore tra gli elementi e tra gli elementi e i loro sfondi per soddisfare i criteri [1.4.3](https://www.w3.org/Translations/WCAG21-it/#contrast-minimum) e [1.4.11](https://www.w3.org/Translations/WCAG21-it/#non-text-contrast). 
             Il contrasto minimo per soddisfare questi due criteri è:
@@ -202,9 +228,9 @@ components:
             
             Nessun contrasto minimo è invece richiesto per elementi disabilitati e decorativi.
 
-            Per testare i contrasti di colore hai a disposizione molti strumenti di verifica da usare nelle diverse fasi di progettazione e sviluppo; ti suggeriamo a titolo di esempio [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
+            Per testare i contrasti di colore hai a disposizione molti strumenti di verifica, da usare nelle diverse fasi di progettazione e sviluppo; ti suggeriamo a titolo di esempio [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/).
 
-            Se usi i design token del design system i contrasti di colore per i testi sono stati già verificati e segnalati in UI Kit Italia.
+            Se usi i [design token](/design-system/fondamenti/design-tokens/) del design system, i contrasti di colore per i testi sono stati già verificati e segnalati in UI Kit Italia.
           ctas:
             - label: "Vai al fondamento Accessibilità" #C
               url: "/design-system/fondamenti/accessibilita/" #M

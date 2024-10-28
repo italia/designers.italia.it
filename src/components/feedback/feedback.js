@@ -117,11 +117,11 @@ function Feedback() {
               </span>
             </h2>
             <form className="mt-3 mt-md-3">
-              <fieldset className="d-flex">
+              <fieldset>
                 <legend>
                   <span className="visually-hidden">Scegli la risposta:</span>
                 </legend>
-                <div className="form-check me-4">
+                <div className="form-check form-check-inline">
                   <input
                     name="feedbackValue"
                     type="radio"
@@ -133,7 +133,7 @@ function Feedback() {
                     Sì
                   </label>
                 </div>
-                <div className="form-check">
+                <div className="form-check form-check-inline">
                   <input
                     name="feedbackValue"
                     type="radio"

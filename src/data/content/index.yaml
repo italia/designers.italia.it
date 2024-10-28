@@ -26,8 +26,7 @@ metadata:
 seo:
   name: Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Designers Italia mette a disposizione conoscenza e strumenti per creare i servizi digitali della Pubblica Amministrazione. #C
-  image: https://designers.italia.it/images/home/designers.jpg #I
-  twitterImage: https://designers.italia.it/images/home/designers.jpg #I
+  image: https://designers.italia.it/images/home/designers.jpg
   canonical: null
   pathname: /
 
@@ -38,7 +37,7 @@ components:
     big: true
     specular: true
     reversedMobile: false
-    title: Partecipa alla trasformazione digitale del Paese #C
+    title: Prendi parte alla trasformazione digitale del Paese #C
     subtitle: "Designers Italia mette a disposizione conoscenza e strumenti per creare i servizi digitali della Pubblica Amministrazione."
     # moreButton: Leggi di più
     # moreButtonClose: Chiudi
@@ -80,36 +79,52 @@ components:
     title: In evidenza
     subtitle: Storie da copertina che ti guidano alle ultime attività
     isHome: true
+
   highLights:
-    - title: "Modello di sito web delle aziende sanitarie locali"
-      subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
+    - title: "Design system .italia versione 1: l'inizio di una nuova era per i servizi digitali pubblici"
+      subtitle: "Disponibili strumenti sempre più completi e affidabili per realizzare servizi accessibili e usabili"
       big: true
-      id: HL2a
+      id: HL1a
       specular: false
       padBottom: false # last highlight must have padBottom: true!
-      img: /images/community/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali-1920x923.png
-      alt: ""
-      headingLevel: 3
-      background: light
-      buttons:
-        - label: "Scopri come utilizzarlo"
-          btnStyle: primary
-          url: "/community/notizie/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali"
-          addonStyle: mb-3
-    - title: "Collabora al design system del Paese"
-      subtitle: "Leggi tutte le novità per contribuire alla realizzazione della documentazione e delle risorse"
-      big: true
-      id: HL2b
-      specular: true
-      padBottom: true # last highlight must have padBottom: true!
-      img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1920x923.png
+      img: /images/community/media-thumbnails/20241021-design-system-italia.jpg
       alt: ""
       headingLevel: 3
       background: medium
       buttons:
-        - label: "Scopri come collaborare"
+        - label: "Scopri le novità"
           btnStyle: primary
-          url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese"
+          url: "/community/notizie/20241021-italia-versione-1/"
+          addonStyle: mb-3
+    - title: "Modello di sito web dei musei civici"
+      subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
+      big: true
+      id: HL2a
+      specular: true
+      padBottom: false # last highlight must have padBottom: true!
+      img: /images/community/20240418-il-modello-per-i-musei-civici--online-le-risorse-per-realizzare-siti-web-1920x923.png
+      alt: ""
+      headingLevel: 3
+      background: light
+      buttons:
+        - label: "Scopri le risorse e come utilizzarle"
+          btnStyle: primary
+          url: "/community/notizie/20240418-il-modello-per-i-musei-civici-online-le-risorse-per-realizzare-siti-web/"
+          addonStyle: mb-3
+    - title: "Modello di sito web delle aziende sanitarie locali"
+      subtitle: "Disponibili risorse e documentazione per creare siti informativi semplici da usare e accessibili"
+      big: true
+      id: HL3a
+      specular: false
+      padBottom: true # last highlight must have padBottom: true!
+      img: /images/community/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali-1920x923.png
+      alt: ""
+      headingLevel: 3
+      background: null
+      buttons:
+        - label: "Scopri come utilizzarlo"
+          btnStyle: primary
+          url: "/community/notizie/20240201-disponibile-il-modello-di-sito-informativo-per-le-aziende-sanitarie-locali/"
           addonStyle: mb-3
 
   highlightCards:
@@ -139,8 +154,8 @@ components:
       #   btnStyle: primary
       #   label: Esplora/Scopri il titolo
       #   url: "modelli/"
-    - title: "Design system" #C
-      img: /images/design-system/fondamenti.jpg
+    - title: "Design system .italia" #C
+      img: /images/design-system/ds-beta-naming.png
       alt: ""
       text: |
         Costruisci l'interfaccia di un servizio pubblico grazie a componenti già validati e linee guida di progettazione. Scopri come usarlo.
@@ -206,127 +221,77 @@ components:
       label: Esplora cosa accade nella community
       url: "community/"
       addonStyle: me-3 d-block
-    # - btnStyle: outline-primary
-    #   label: Vai al Medium di Designers Italia
-    #   icon:
-    #     icon: sprites.svg#it-external-link
-    #     color: primary
-    #     align: middle
-    #     size: sm
-    #     addonClasses: ms-2
+
     # CARDS
     cards:
 
-    #CARD with Button
-    # - title: "Community Lab sui temi dell’upgrade del Kit Design React"
-    #   headingLevel: 3
-    #   titleBig: false
-    #   titleSmall: false
-    #   customCol: col-lg-3
-    #   cardEvent: true
-    #   img: /images/600x400.png
-    #   alt: Descrizione immagine
-    #   imgRatio: 4x3
-    #   imgPlaceholder: false
-    #   dateOverlay:
-    #     day: 22
-    #     month: Aprile
-    #   url: "#"
-    #   tag:
-    #   label: Community Lab
-
-    - title: 'Il 2023 di Designers Italia'
+    - title: "Un’estate con Designers Italia"
       headingLevel: 3
       customCol: col-lg-4
-      text: "Facciamo il bilancio di ciò che è avvenuto nell'ultimo anno. Spoiler: un sacco di cose."
-      img: /images/community/20231219-il-2023-di-designers-italia-1400x900.png
+      text: "Libri, newsletter, podcast e video da recuperare durante le ferie estive, consigliati da Designers Italia."
+      img: /images/community/20240807-un-estate-con-designers-italia-1400x723.jpg
       alt: ""
       imgRatio: 21x9
       imgPlaceholder: false
       fullHeight: false
       rounded: true
-      url: "/community/notizie/20231219-il-2023-di-designers-italia/"
-      dateInfo: 19 dicembre 2023
-      tags: [Partecipazione]
+      url: "/community/notizie/20240807-un-estate-con-designers-italia/"
+      dateInfo: 07 agosto 2024
+      tags: [Cultura progettuale, Community, Disseminazione]
 
-    - title: 'Disponibile il player video della Pubblica Amministrazione attento a privacy e accessibilità'
+    - title: 'Definisci la direzione progettuale di un sito o servizio con il nuovo kit Stato dell’arte'
       headingLevel: 3
       customCol: col-lg-4
-      text: Il design system del Paese si arricchisce di un importante componente già in uso nel nuovo archivio media di Designers Italia.
-      img: /images/community/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita-1400x723.png
-      alt: ""
-      imgRatio: 21x9
-      imgPlaceholder: false
-      fullHeight: false
-      rounded: true
-      url: "/community/notizie/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita/"
-      dateInfo: 31 ottobre 2023
-      tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, Accessibilità]
-
-    - title: "L’importanza dell’usabilità, un esempio virtuoso in ambito sanitario"
-      headingLevel: 3
-      customCol: col-lg-4
-      img: /images/community/articoli-di-approfondimento/20240125-l-importanza-dell-usabilita-un-esempio-virtuoso-in-ambito-sanitario-1198x673.png
+      text: "Disponibili nuovi strumenti di analisi utili a riprogettare l’esperienza d’uso di un sito web della PA."
+      img: 20240708-pubblicazione-kit-analisi-stato-arte-1400x723.png
       alt: ""
       imgRatio: 16x9
       imgPlaceholder: false
-      fullHeight: true
+      fullHeight: false
       rounded: true
-      url: https://medium.com/designers-italia/limportanza-dell-usabilit%C3%A0-un-esempio-virtuoso-in-ambito-sanitario-0bccabddde35
+      url: "/community/notizie/20240708-kit-stato-dell-arte/"
+      dateInfo: 08 luglio 2024
+      tags: [Analisi del contesto, Esperienza utente, Cultura progettuale]
+
+    - title: "Verso Design system .italia: dalle origini al design system aperto della PA"
+      headingLevel: 3
+      customCol: col-lg-4
+      img: /images/community/articoli-di-approfondimento/20240522-verso-design-system-italia-dalle-origini-al-design-system-aperto-della-pa.png
+      alt: ""
+      imgRatio: 16x9
+      imgPlaceholder: false
+      fullHeight: false
+      rounded: true
+      url: https://medium.com/designers-italia/verso-design-system-italia-dalle-origini-al-design-system-aperto-del-paese-66a2d5af6654
       blank: true
       externalLink:
         label: Leggi su Medium
-        screenReaderText: "l'articolo completo"
+        screenReaderText: " (si apre in una nuova finestra)"
         icon:
           icon: sprites.svg#it-external-link
           size: xs
-      moreInfo: di Ilaria Scarpellini
-      chips:
-        - color: secondary
-          label: Test di usabilità, Ricerca utente
-          url: "#"
-          blank: false
+      moreInfo: di Daniele Tabellini
+      tags: [Design system, Interfaccia utente]
 
   bannerTextCta:
     id: bannerBottom
     title: Diamo i numeri
     background: dark
-    # ctas:
-    # - icon:
-    #     icon: sprites.svg#it-external-link
-    #     color: white
-    #     align: middle
-    #     hidden: true
-    #     size: sm
-    #     addonClasses: ms-2
-    #   label: Dashboard
-    #   url: "#"
-    #   blank: true
-    # - icon:
-    #     icon: sprites.svg#it-external-link
-    #     color: white
-    #     align: middle
-    #     hidden: true
-    #     size: sm
-    #     addonClasses: ms-2
-    #   label: Open data
-    #   url: "#"
-    #   blank: true
     numbers:
       inline: true
       items:
       - icon: sprites.svg#it-tool
         label: Risorse per progettare a norma
-        number: "40"
+        number: "40+"
       - icon: sprites.svg#it-pa
         label: Enti che usano i nostri strumenti
-        number: "2300+"
+        number: "10000+"
       - icon: sprites.svg#it-user
         number: "24000+"
         label: "Persone nella community"
       - icon: sprites.svg#it-star-outline
-        number: "12"
-        label: "Eventi organizzati nel 2022"
+        number: "1500+"
+        label: "Partecipanti a eventi della community 2023"
 
 
 

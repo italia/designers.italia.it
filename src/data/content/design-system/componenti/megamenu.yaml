@@ -1,40 +1,29 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/menu-di-navigazione/megamenu.json
   template:
     name: design-system-component
-
 seo:
   name: Megamenu - Designers Italia
-  description: "Visualizza un sottomenu contenente elenchi di collegamenti relativi a una voce della barra di navigazione"
+  description: >-
+    Sottomenu di navigazione a comparsa che presenta i link e i contenuti
+    correlati a una voce del menu principale.
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/componenti/megamenu/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Megamenu
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Visualizza un sottomenu contenente elenchi di collegamenti relativi a una voce della barra di navigazione"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: >-
+      Sottomenu di navigazione a comparsa che presenta i link e i contenuti
+      correlati a una voce del menu principale
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -45,24 +34,24 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Navigazione,Interazione]
-
+      tagsDesignSystem:
+        - Navigazione
+        - Interazione
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
-      textInfo: Per visualizzare la modalità desktop è necessario uno schermo sufficientemente largo.
+      id: preview-use
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
       viewerHeight: 350
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/megamenu/
+      accordionUrl: >-
+        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/megamenu/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -72,9 +61,14 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Il componente Megamenu serve a implementare un sottomenu che
+              semplifica l'accesso a un'intera sezione di un sito con
+              un’architettura dell’informazione complessa ma ben strutturata. 
 
+
+              Puoi navigare un esempio di applicazione in questo stesso sito
+              [designers.italia.it](/).  
       - full: true
         noSpace: true
         paddingLeft: true
@@ -83,46 +77,242 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Usa un megamenu per comunicare in maniera immediata
+              l'organizzazione dell'architettura informativa del sito e
+              permettere agli utenti di spostarsi velocemente alle pagine di
+              livello inferiore.
 
+
+              ### Attenzione a
+
+              - Usa il componente solo come modulo della navigazione
+              principale. 
+
+              - Usa il megamenu con parsimonia per via della sua natura di
+              interazione complessa, testando sempre la sua efficacia con gli
+              utenti. 
+
+
+              ### Buone pratiche sui contenuti
+
+              - Organizza il megamenu in modo che contenga link a contenuti
+              correlati o appartenenti alla stessa sezione dell'architettura del
+              sito. 
+
+              - Specialmente laddove siano presenti più megamenu, per diverse
+              voci del menu principale, ricorda di distinguere gli eventuali
+              link di accesso a copertine di sezione o viste con più contenuti
+              correlati, ad esempio usa formule come: "Esplora tutti i contenuti
+              della sezione X", "Esplora la sezione X". 
+
+              - Evita di usare le formule generiche come "Esplora tutti" e
+              "Scopri tutti", che risulterebbero uguali per link diversi in
+              pagina. 
+
+              - Mantieni brevi e specifiche le etichette testuali dei link.
       - full: true
         noSpace: true
         paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
         components:
           - name: TextImageCta
             noSpace: true
-            title: Stato del componente
+            title: Accessibilità
             headingLevel: 2
-            text: |
-              *In stesura*
-
-  - title: Progettazione
-    sectionsEditorial:
-
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
+            title: Stato del componente
+            headingLevel: 2
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/megamenu/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-menu-di-navigazione-megamenu--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/megamenu
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+  - title: Progettazione
+    sectionsEditorial:
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/megamenu-completo-anatomy.png
+            alt: Gli elementi che compongono il Megamenu completo
+          - name: TextImageCta
+            noSpace: true
+            text: >
+              Il megamenu *completo* è composto da:
 
+
+              1. **freccia**, che indica il pulsante di apertura; 
+
+              2. **sfondo** del megamenu, può essere bianco o di colore dark a
+              seconda della variante in uso, che ha un'ombra per essere
+              facilmente distinto dal contenuto adiacente;
+
+              3. **immagine descrittiva**, per introdurre la sezione di
+              contenuti;
+
+              4. **testo descrittivo**, per introdurre la sezione di contenuti;
+
+              5. **link "Esplora la sezione X"**, per navigare verso una
+              eventuale copertina della sezione;
+
+              6. **lista di link**, per navigare le pagine di livello inferiore
+              della sezione.
+
+
+              A partire da questo schema sono poi disponibili varianti che
+              prevedono spazi per link aggiuntivi in basso o a destra: "Esplora
+              tutti" i contenuti della sezione in basso, e altri tipi di link
+              correlati alla sezione in basso, o a destra.  
       - full: true
         noSpace: true
         paddingLeft: true
@@ -131,21 +321,47 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Tutte le varianti di megamenu sono **responsive**, quindi si
+              adattano alla viewport di qualsiasi dispositivo.
 
+
+              ### Interazioni 
+
+
+              Il megamenu si espande a partire dal clic/tap su una voce del menu
+              di navigazione principale previsto nel componente
+              [Header](/design-system/componenti/header/). 
+
+
+              Il megamenu espanso ha uno sviluppo orizzontale sopra ai contenuti
+              su dispositivi abbastanza larghi; si sviluppa invece in verticale
+              con apertura a fisarmonica  dentro lo spazio menu previsto a
+              scomparsa nei dispositivi mobile/touch. Eredita il suo
+              funzionamento dal componente
+              [dropdown](/design-system/componenti/dropdown/). 
+
+
+              La voce del menu principale dovrà essere semanticamente un
+              pulsante (`<button>`, o avere un corretto ruolo equivalente) per
+              comunicare senza ambiguità la sua natura di azione che agisce in
+              pagina, e non di link di navigazione.
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Specifiche di design
             headingLevel: 2
             text: |
-              *In stesura*
-
-
+              Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/megamenu-completo-specs.png
+            alt: Megamenu completo con la misura di tutte le spaziature
+          - name: TextImageCta
+            noSpace: false
       - full: true
         noSpace: true
         paddingLeft: true
@@ -153,31 +369,32 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
-      textInfo: Per visualizzare la modalità desktop è necessario uno schermo sufficientemente largo.
+      id: preview-dev
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
       viewerHeight: 350
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/megamenu/
+      accordionUrl: >-
+        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/megamenu/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -186,16 +403,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
