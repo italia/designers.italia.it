@@ -3,7 +3,6 @@ import Icon from "../icon/icon";
 import Avatar from "../avatar/avatar";
 import Link from "../link/link";
 import ImageResponsive from "../image-responsive/image-responsive";
-import "./list-item.scss";
 
 function ListItem({
   url, // link of item
@@ -232,18 +231,22 @@ function ListItem({
         {imgRendered}
         {avatarRendered}
         <div className="it-right-zone">
-          <Link
-            to={url}
-            target={blank ? "_blank" : undefined}
-            rel={blank ? "noreferrer" : undefined}
-          >
-            <span className="text">
-              {srBefore && <span className="visually-hidden">{srBefore}</span>}
-              {children}
-              {srAfter && <span className="visually-hidden">{srAfter}</span>}
-              {text && <em>{text}</em>}
-            </span>
-          </Link>
+          <div>
+            <h4 className="text m-0">
+              <Link
+                to={url}
+                target={blank ? "_blank" : undefined}
+                rel={blank ? "noreferrer" : undefined}
+              >
+                {srBefore && (
+                  <span className="visually-hidden">{srBefore}</span>
+                )}
+                {children}
+                {srAfter && <span className="visually-hidden">{srAfter}</span>}
+              </Link>
+            </h4>
+            {text && <p className="small m-0">{text}</p>}
+          </div>
           {actionRendered}
           {!metadataActionsRendered ? actionsRendered : ""}
           {!metadataActionsRendered ? metadataRendered : ""}
