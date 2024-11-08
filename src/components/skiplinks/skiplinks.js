@@ -1,5 +1,4 @@
 import React from "react";
-import "./skiplinks.scss";
 
 function Skiplinks({ data }) {
   const { skiplinks } = data;
