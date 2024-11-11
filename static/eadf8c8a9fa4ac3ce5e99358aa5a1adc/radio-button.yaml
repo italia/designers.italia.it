@@ -1,27 +1,27 @@
 metadata:
-  json: bsi/form/checkbox.json
+  json: bsi/form/radio-button.json
   template:
     name: design-system-component
 seo:
-  name: Checkbox - Designers Italia
+  name: Radio button - Designers Italia
   description: >-
-    Casella di controllo che consente di selezionare una o più opzioni da un
-    elenco predefinito.
+    Pulsante di selezione che consente di indicare un'unica scelta tra più
+    elementi all'interno di un elenco di opzioni predefinite.
   image: null
   canonical: null
-  pathname: /design-system/componenti/checkbox/
+  pathname: /design-system/componenti/radio-button/
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Checkbox
+    title: Radio button
     tag:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Casella di controllo che consente di selezionare una o più opzioni da un
-      elenco predefinito
+      Pulsante di selezione che consente di indicare un'unica scelta tra più
+      elementi all'interno di un elenco di opzioni predefinite
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -44,7 +44,7 @@ tabs:
       id: preview-use
       title: Anteprima
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/checkbox/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
       accordionOpen: false
       accordionShow: false
     sectionsEditorial:
@@ -57,21 +57,27 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Il componente Checkbox è utile per fornire agli utenti la
-              possibilità di selezionare una o più opzioni da un elenco di
-              scelte predefinite. 
+              Un gruppo di radio button è il componente perfetto, nel contesto
+              di un modulo ([Form](/design-system/componenti/form/)), per
+              permettere un'unica scelta all'interno di un gruppo di opzioni che
+              si escludono a vicenda.
 
 
-              Può essere utilizzato per:
+              Può essere utilizzato anche in contesti come pannelli di
+              configurazione (settings) o come filtro per lunghe liste di
+              contenuti. 
 
 
-              - form di registrazione o domanda;
+              ### Alternative a questo componente
 
-              - questionari e sondaggi;
+              - **[Checkbox](/design-system/componenti/checkbox/)**: per
+              permettere più scelte all'interno di un gruppo di opzioni. 
 
-              - filtri di ricerca;
-
-              - preferenze utente.
+              - **[Select](/design-system/componenti/select/)** e
+              **[Autocomplete](/design-system/componenti/autocomplete/)**: per
+              lunghe liste di opzioni di scelta, è da notare che l'utente in
+              questi componenti non ha contezza immediata di tutte le opzioni
+              tra cui può scegliere. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -81,28 +87,35 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: >
-              - Usa le checkbox nel caso di scelte multiple o quando è richiesta
-              una scelta singola di tipo binario, come “Accetto/Non accetto”.
-
-              - Se il numero di opzioni disponibili è superiore ad otto,
-              considera invece l’uso combinato delle checkbox in un dropdown.
-
-              - Assicurati che lo stato selezionato o deselezionato sia
-              facilmente riconoscibile.
-
-              - Abilita il supporto per la navigazione tramite tastiera.
-
-
-              ### Buone pratiche sui contenuti
-
-
-              - Scegli una label chiara e descrittiva per ogni opzione.
+              - Usa un gruppo di radio button per ogni scelta da compiere.
 
 
               ### Attenzione a
 
+              - Non usare il componente se l'utente deve compiere scelte
+              multiple. 
 
-              - Rendere evidente quali opzioni sono selezionabili.
+              - Fare attenzione che il componente comprende solo l'impostazione
+              visiva: devi implementare la corretta semantica accessibile per
+              ogni gruppo di radio button, segui i pattern aria consigliati dal
+              W3C per quanto riguarda intestazioni, etichette aria, 'role' o uso
+              di 'fieldset'.
+
+
+              ### Buone pratiche sui contenuti
+
+              - Identifica ogni gruppo di Radio button con un titolo e una
+              eventuale descrizione che inquadri la scelta richiesta e le sue
+              implicazioni.
+
+              - Scrivi etichette chiare e brevi per consentire agli utenti di
+              comprendere le opzioni a disposizione.
+
+              - Non troncare le etichette per le opzioni con i puntini di
+              sospensione.
+
+              - Puoi usare un testo aggiuntivo per aggiungere contesto alle
+              opzioni di scelta.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -204,7 +217,7 @@ tabs:
                       label: Scheda documentazione
                       blank: true
                       url: >-
-                        https://italia.github.io/bootstrap-italia/docs/form/checkbox/
+                        https://italia.github.io/bootstrap-italia/docs/form/radio-button/
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
                         icon: sprites.svg#it-external-link
@@ -213,12 +226,12 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
-                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-form-checkbox--documentazione
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-form-radio--documentazione
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -228,12 +241,12 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
                       url: >-
-                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/checkbox
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/radio
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -274,21 +287,21 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: >
-              ![Gli elementi che formano la
-              checkbox](/images/design-system/componenti/checkbox-anatomy.png)
+              ![Gli elementi che formano il Radio
+              button](/images/design-system/componenti/radio-button-anatomy.png)
 
 
-              Il componente checkbox è composto da:
+              Il componente radio button è composto da: 
 
+              1. **etichetta (label)**, il testo che descrive l'opzione
+              selezionabile o deselezionabile; 
 
-              1. **casella di controllo**, l'elemento che restituisce il
-              feedback visivo dell'attivazione/disattivazione della casella;
+              2. **indicatore di input**, indica lo stato dell'opzione, di
+              default non selezionato;
 
-              2. **etichetta (label)**, descrive brevemente la tipologia di
-              controllo;
+              3. **bordo**, riga che segna il limite tra più opzioni; 
 
-              3. **descrizione** (opzionale), un testo che descrive in modo
-              dettagliato a cosa corrisponde la casella di controllo. 
+              4. **testo** (opzionale), testo di approfondimento sull'opzione.  
       - full: true
         noSpace: true
         paddingLeft: true
@@ -297,7 +310,38 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: "Gli\_**stati interattivi**\_dei campi checkbox possono essere:\n\n- **default**, il campo si presenta nello stato normale quando è attivo ma l'utente non ci interagisce;\n- **hover**, si manifesta al passaggio del puntatore sul campo ed è disponibile solo su dispositivi no-touch;\n- **focus**, si manifesta nel caso di navigazione tramite tastiera o altri strumenti, passando da un elemento interattivo a quello successivo;\n- **active**, è lo stato relativo al momento del click o pressione sul campo e restituisce un riscontro visivo dell'azione appena compiuta e abilita l'inserimento del contenuto;\n- **disabled**, indica che il campo è disattivato e non è possibile interagire con esso;\n- **readonly**, indica che il campo è disponibile in sola lettura e non è possibile cambiarne il contenuto.\n\nGli\_**stati di validazione**\_dei campi checkbox in linea generale possono essere:\n\n- **error**, il campo è obbligatorio ma l’utente non l’ha selezionato.\n"
+            text: >
+              All'attivazione, l'indicatore di input passerà tra stato
+              selezionato e deselezionato.
+
+
+              Alla selezione di un'opzione in un gruppo di Radio button, tutte
+              le altre opzioni di scelta passano allo stato deselezionato.
+
+
+              Gli **stati interattivi** dei radio button possono essere: 
+
+              - **default**, il campo si presenta deselezionato nello stato
+              normale quando è attivo ma l'utente non ci interagisce;
+
+              - **hover**, si manifesta al passaggio del puntatore sul campo ed
+              è disponibile solo su dispositivi no-touch;
+
+              - **focus**, si manifesta nel caso di navigazione tramite tastiera
+              o altri strumenti, passando da un elemento interattivo a quello
+              successivo;
+
+              - **active**, è lo stato relativo al momento del clic o pressione
+              sul campo, restituisce un riscontro visivo dell'azione appena
+              compiuta e passa allo stato selezionato;
+
+              - **disabled default**, indica che il campo è disattivato e non è
+              possibile interagire con esso, mostra l'indicatore di stato come
+              deselezionato;
+
+              - **disabled checked**, indica che il campo è disattivato e non è
+              possibile interagire con esso,mostra l'indicatore di stato come
+              selezionato.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -310,8 +354,8 @@ tabs:
               Tutte le misure indicate sono espresse in `px`.
 
 
-              ![Specifiche di design della
-              checkbox](/images/design-system/componenti/checkbox-specs.png)
+              ![Specifiche di design del Radio
+              button](/images/design-system/componenti/radio-button-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -338,7 +382,7 @@ tabs:
       id: preview-dev
       title: Anteprima
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/checkbox/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/radio-button/
       accordionOpen: true
       accordionShow: true
     sectionsEditorial:

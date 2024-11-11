@@ -1,26 +1,26 @@
 metadata:
-  json: bsi/componenti/avatar.json
+  json: bsi/componenti/timeline.json
   template:
     name: design-system-component
 seo:
-  name: Avatar - Designers Italia
+  name: Timeline - Designers Italia
   description: >-
-    Rappresentazione grafica di un utente per identificare visivamente la
-    persona online.
+    Rappresentazione grafica di una serie di eventi in ordine cronologico per
+    descrivere la storia di un’istituzione o il progresso di un progetto.
   canonical: null
-  pathname: /design-system/componenti/avatar/
+  pathname: /design-system/componenti/timeline/
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Avatar
+    title: Timeline
     tag:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Rappresentazione grafica di un utente per identificare visivamente la
-      persona online
+      Rappresentazione grafica di una serie di eventi in ordine cronologico per
+      descrivere la storia di un’istituzione o il progresso di un progetto
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -34,7 +34,7 @@ components:
         size: sm
         color: secondary
       tagsDesignSystem:
-        - Utilità
+        - Contenuti
   tab:
     - full: true
 tabs:
@@ -42,8 +42,11 @@ tabs:
     componentVariant:
       id: preview-use
       title: Anteprima
-      viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/avatar/
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
+      viewerHeight: 400
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
       accordionOpen: false
       accordionShow: false
     sectionsEditorial:
@@ -56,11 +59,11 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Il componente Avatar permette di rappresentare una persona, il suo
-              stato e le sue azioni in contesti di interazione. Può essere utile
-              ad esempio per indicare l'autore di un testo, il proprio profilo
-              in un'area riservata, le persone che hanno interagito con un
-              contenuto. 
+              Usa il componente timeline quando devi presentare una serie di
+              eventi in ordine cronologico. 
+
+              È particolarmente utile per raccontare una sequenza di eventi
+              storici o per evidenziare importanti traguardi o risultati.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -70,40 +73,40 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: >
-              - Per rappresentare una persona durante l'esperienza.
+              - Identifica gli eventi chiave che desideri rappresentare sulla
+              linea del tempo.
 
-              - Per rappresentare lo stato e le azioni disponibili per l'utente
-              nelle aree riservate.  
+              - Organizza questi eventi in ordine cronologico.
 
-              - Nella variante lista (gruppi), per rappresentare chi ha
-              interagito con il contenuto mostrato nel contesto. 
+              - Crea una linea o un percorso visivo che rappresenta il flusso
+              del tempo.
+
+              - Posiziona gli eventi lungo questa linea in base a quando si sono
+              verificati.
+
+              - Fornisci un breve riepilogo o una descrizione per ogni evento.
 
 
               ### Attenzione a
 
-              - Indicare una sola persona con ogni avatar.
+              - Evitare di sovraccaricare la timeline con troppi dettagli:
+              concentrati sui punti chiave e le informazioni più rilevanti. 
 
-              - Valutare di usare solo icone per indicare gruppi o "oggetti". 
-
-              - Prevedere sempre un modo di indicare il nome della persona. Se
-              scegli di non esplicitarlo, usa tooltip e/o testi alternativi per
-              i lettori di schermo.
-
-              - Usare con parsimonia le liste (gruppi) di avatar.  
+              - Assicurare che la sequenza sia chiaramente identificabile anche
+              navigando da tastiera o con strumenti assistivi come lettori di
+              schermo.
 
 
               ### Buone pratiche sui contenuti
 
-              - Dai la possibilità all'utente di caricare la propria immagine
-              preferita.
+              - Mantieni le descrizioni degli eventi brevi e concise per
+              facilitare la lettura e la comprensione.
 
-              - Implementa la possibilità per l'utente di tagliare (crop)
-              l'immagine quadrata (o rotonda) durante o successivamente al
-              caricamento, se possibile. 
+              - Se possibile, usa le icone per rappresentare gli eventi o le
+              fasi.
 
-              - Metti a disposizione un set di icone con simboli o testo
-              predefiniti nel caso in cui l'utente non voglia caricare
-              un'immagine.
+              - Assicurati che gli eventi siano chiaramente distinti l'uno
+              dall'altro sulla timeline.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -126,22 +129,22 @@ tabs:
                   - text: Visivamente accessibile
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Uso e contrasto dei colori, leggibilità
               - cols:
                   - text: Amichevole con lettori di schermo
                     scope: row
                   - tag:
-                      label: Pronto
-                      addonClasses: bg-success
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
                   - text: Navigabile
                     scope: row
                   - tag:
-                      label: Pronto
-                      addonClasses: bg-success
+                      label: Da rivedere
+                      addonClasses: bg-warning
                   - text: Focus, struttura, navigazione da tastiera o altri device
               - cols:
                   - text: Comprensibile
@@ -185,8 +188,8 @@ tabs:
                   - text: UI Kit Italia (design)
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Kit
                       url: https://www.figma.com/community/file/1105848677422572920
@@ -199,13 +202,13 @@ tabs:
                   - text: Bootstrap Italia
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
                       blank: true
                       url: >-
-                        https://italia.github.io/bootstrap-italia/docs/componenti/avatar/
+                        https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
                         icon: sprites.svg#it-external-link
@@ -214,12 +217,12 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
-                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-avatar--documentazione
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-timeline--documentazione
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -229,12 +232,10 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Pronto
-                      addonClasses: bg-success
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
                   - simpleCta:
                       label: Scheda documentazione
-                      url: >-
-                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/avatar
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -275,57 +276,25 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: >
-              ![Gli elementi che possono comporre un
-              avatar](/images/design-system/componenti/avatar-anatomy.png)
+              ![Gli elementi che formano la
+              Timeline](/images/design-system/componenti/timeline-anatomy.png)
 
 
-              Le varianti del componente avatar possono essere composte con i
-              seguenti elementi:
+              Il componente timeline è composto da:
 
-              1. **immagine dell'utente**; 
+              1. **segnaposto**, rappresenta l'evento sulla linea del tempo e
+              può ospitare un icona;
 
-              2. **forma di sfondo** per le varianti con icona o testo;
+              2. **data**, la data dell'evento che può essere scritta in diversi
+              formati;
 
-              3. **icona** dell'utente;
+              3. **linea del tempo**, si sviluppa in verticale seguendo il
+              numero di eventi presenti; 
 
-              4. **testo** con iniziali dell'utente;
+              4. **titolo evento**, descrizione sintetica dell'evento;
 
-              5. **indicatore** colorato per indicare lo stato dell'utente;
-
-              6. **indicatore** colorato per indicare la presenza dell'utente.
-
-
-              Le scelte tra immagine, icona o testo a rappresentare l'utente
-              sono alternative tra loro. 
-
-
-              ### Liste di avatar
-
-
-              ![Gli elementi che possono comporre una lista di
-              avatar](/images/design-system/componenti/avatar-lists-anatomy.png)
-
-
-              Le varianti lista (o gruppo) del componente avatar possono essere
-              composte con i seguenti elementi:
-
-              1. **spazio immagine**, può ospitare immagine dell'utente, icona o
-              iniziali;  
-
-              2. **nome avatar**;
-
-              3. **più avatar sovrapposti**;
-
-              4. **indicatore ulteriori utenti**, indica quanti altri profili
-              utente sono disponibili, può agire come un pulsante di apertura
-              dropdown; 
-
-              5. **dropdown lista**, mostra la lista di utenti in chiaro,
-              opzionale.
-
-
-              Gli avatar nelle liste sovrapposte possono prevedere inoltre
-              tooltip con il nome avatar.  
+              5. **descrizione**, descrizione estesa dell'evento che può
+              contenere altri elementi come link, immagini, pulsanti.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -335,20 +304,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: >
-              ### Interazioni
-
-              Il componente prevede la possibilità di stati di hover e di focus,
-              da implementare a seconda del contesto. 
-
-
-              Se l'implementazione prevede un tooltip, questo appare
-              all'attivazione del componente per click, tap o navigazione in
-              focus da tastiera. 
-
-
-              Nel caso della variante lista con avatar sovrapposti, attivando
-              l'indicatore con il numero di avatar nascosti, si apre un menu
-              dropdown che mostra tutti gli avatar disponibili.
+              La disposizione degli eventi lungo la linea del tempo cambia a
+              seconda dei dispositivi su cui viene visualizzata.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -361,22 +318,8 @@ tabs:
               Tutte le misure indicate sono espresse in `px`.
 
 
-              ### Varianti di dimensione
-
-              ![Specifiche di design di
-              avatar](/images/design-system/componenti/avatar-sizes-specs.png)
-
-
-              ### Varianti con stati 
-
-              ![Specifiche di design di avatar con
-              stati](/images/design-system/componenti/avatar-statuses-specs.png)
-
-
-              ### Liste di avatar 
-
-              ![Specifiche di design delle liste di
-              avatar](/images/design-system/componenti/avatar-lists-specs.png)
+              ![Specifiche di design della
+              timeline](/images/design-system/componenti/timeline-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -402,8 +345,11 @@ tabs:
     componentVariant:
       id: preview-dev
       title: Anteprima
-      viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/avatar/
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
+      viewerHeight: 400
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
       accordionOpen: true
       accordionShow: true
     sectionsEditorial:
