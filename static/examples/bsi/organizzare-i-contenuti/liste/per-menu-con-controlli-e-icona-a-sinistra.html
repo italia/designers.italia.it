@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.10.0/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.11.0/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -113,7 +113,10 @@
     <li>
       <a class="list-item active icon-left" href="#">
         <span class="list-item-title-icon-wrapper">
-          <svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+          <svg class="icon icon-primary">
+            <title>Freccia destra</title>
+            <use href="/dist/svg/sprites.svg#it-chevron-right"></use>
+          </svg>
           <span class="list-item-title">Link lista 1 attivo</span>
         </span>
       </a>
@@ -121,15 +124,21 @@
     <li>
       <a class="list-item icon-left" href="#">
        <span class="list-item-title-icon-wrapper">
-          <svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+          <svg class="icon icon-primary">
+            <title>Freccia destra</title>
+            <use href="/dist/svg/sprites.svg#it-chevron-right"></use>
+          </svg>
           <span class="list-item-title">Link lista 2</span>
         </span>
       </a>
     </li>
     <li>
-      <a class="list-item icon-left disabled" href="#">
+      <a class="list-item icon-left disabled" href="#" aria-disabled="true">
        <span class="list-item-title-icon-wrapper">
-          <svg class="icon icon-primary"><use href="/dist/svg/sprites.svg#it-chevron-right"></use></svg>
+          <svg class="icon icon-primary">
+            <title>Freccia destra</title>
+            <use href="/dist/svg/sprites.svg#it-chevron-right"></use>
+          </svg>
           <span class="list-item-title">Link lista 3 disabilitata</span>
         </span>
       </a>
@@ -140,7 +149,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.10.0/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.11.0/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
