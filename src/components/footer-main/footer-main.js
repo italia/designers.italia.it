@@ -119,7 +119,9 @@ function FooterMain({ id, title, cols, tagsNo, social, community, subscribe }) {
                 </div>
                 {subscribe.subscribe && (
                   <div className="subscribe-wrapper mt-4">
-                    <Subscribe {...subscribe.subscribe} />
+                    <span className="bg-dark">
+                      <Subscribe {...subscribe.subscribe} />
+                    </span>
                   </div>
                 )}
               </div>
