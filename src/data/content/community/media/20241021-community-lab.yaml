@@ -1,0 +1,95 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Community lab: design system .italia e la progettazione di servizi pubblici digitali"
+  description: "Scopri le novità del design system e come usare i componenti per assemblare interfacce intuitive ed accessibili."
+  image: https://designers.italia.it/images/community/media-thumbnails/20241021-design-system-italia.jpg
+  canonical: null
+  pathname: /community/media/20241021-design-system-italia/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Community lab: design system .italia e la progettazione di servizi pubblici digitali"
+    subtitle: "Scopri le novità del design system e come usare i componenti per assemblare interfacce intuitive ed accessibili"
+    tag:
+      label: Video
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/Ys5Kxfdvedg
+          poster: /images/community/media-thumbnails/20241021-design-system-italia.jpg
+          subtitles: /files/community/subtitles/20241021-design-system-italia.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+
+            Scarica la [trascrizione in formato ODT](/files/community/subtitles/x.odt)
+
+            ----
+
+            ### Design system .italia
+
+            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Il **design system .italia** è l'insieme di indicazioni e risorse per progettare e sviluppare siti e servizi pubblici digitali di qualità, semplici da usare e inclusivi per tutte le persone. Nell'era della trasformazione digitale, .italia si pone come il punto di partenza per progettare un'esperienza d'uso centrata sui bisogni delle persone e come strumento volto a semplificare la digitalizzazione dei servizi pubblici, dalla progettazione fino all’implementazione.
+          ctas:
+          - label: Vai al design system .italia #C
+            url: "/design-system/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
