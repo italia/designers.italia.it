@@ -523,6 +523,7 @@ export const query = graphql`
           }
         }
         sectionIntroImg {
+          id
           title
           subtitle
           background
