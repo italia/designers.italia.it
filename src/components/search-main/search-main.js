@@ -91,7 +91,7 @@ function SearchMain({ location, maxResults, title, suggest }) {
   };
 
   return (
-    <section className={styles}>
+    <section className={styles} aria-labelledby="searchHomeTitle">
       <div className="container-xxl">
         <div className="row">
           <div className="col-12 g-0">
@@ -101,7 +101,7 @@ function SearchMain({ location, maxResults, title, suggest }) {
             >
               {title && (
                 <div className="text-container mb-5">
-                  {title && <h2>{title}</h2>}
+                  {title && <h2 id="searchHomeTitle">{title}</h2>}
                 </div>
               )}
               {suggest && (
