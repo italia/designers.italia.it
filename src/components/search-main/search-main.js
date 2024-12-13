@@ -91,13 +91,12 @@ function SearchMain({ location, maxResults, title, suggest }) {
   };
 
   return (
-    <section className={styles} aria-labelledby="searchHomeTitle">
+    <section className={styles} aria-labelledby="searchHomeTitle" role="search">
       <div className="container-xxl">
         <div className="row">
           <div className="col-12 g-0">
             <div
               className="search-main-content px-3 py-5 px-lg-0 px-lg-5 py-lg-6"
-              role="search"
             >
               {title && (
                 <div className="text-container mb-5">
