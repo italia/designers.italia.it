@@ -100,7 +100,6 @@ function SearchMain({ location, maxResults, title, suggest }) {
               role="search"
               aria-labelledby="searchHomeTitle"
             >
-              >
               {title && (
                 <div className="text-container mb-5">
                   {title && <h2 id="searchHomeTitle">{title}</h2>}
