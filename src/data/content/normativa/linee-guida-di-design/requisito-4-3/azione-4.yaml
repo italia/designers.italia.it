@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-4
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 1 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "SI DEVE adottare un approccio progettuale orientato alle persone capace di coinvolgere, ascoltare e osservare gli utenti nelle fasi di analisi, ideazione, progettazione, sviluppo e manutenzione del sito/servizio in un’ottica di miglioramento continuo, secondo una logica iterativa, utilizzando ove possibile metodologie agile" #C
+  name: "Azione 4 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "SI DEVONO mappare gli scenari d’uso e le funzionalità del sito/servizio dal punto di vista degli utenti per creare prototipi che verifichino la soluzione progettuale adottata e la sua usabilità" #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-1/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-3/azione-4/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Azione 1 - Requisito 4.3 - Linee guida di design
-    subtitle: "SI DEVE adottare un approccio progettuale orientato alle persone capace di coinvolgere, ascoltare e osservare gli utenti nelle fasi di analisi, ideazione, progettazione, sviluppo e manutenzione del sito/servizio in un’ottica di miglioramento continuo, secondo una logica iterativa, utilizzando ove possibile metodologie agile" #C
+    title: Azione 4 - Requisito 4.3 - Linee guida di design
+    subtitle: "SI DEVONO mappare gli scenari d’uso e le funzionalità del sito/servizio dal punto di vista degli utenti per creare prototipi che verifichino la soluzione progettuale adottata e la sua usabilità" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Azioni Linee guida design #C
@@ -164,14 +166,14 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Normativa,Cultura progettuale,Progettazione servizi]
+      tags: [Normativa,Prototipazione,User personas,Analytics,User journey]
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Scopri le risorse correlate a questa azione  #C
+    title: Scopri i contenuti correlati a questa azione  #C
     text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
     nospace: false
@@ -181,79 +183,118 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: "Ripartire da approccio e processo: la progettazione di servizi pubblici digitali"
-        img: /images/community/articoli-di-approfondimento/2021-medium-zaia-processo.webp
-        alt: Le risorse per progettare di Designers Italia
-        imgRatio: 16x9
-        imgPlaceholder: false
+      - title: Esperienza utente #C
         fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImgAlt: "" #C
         rounded: true
-        url: https://medium.com/designers-italia/ripartire-da-approccio-e-processo-la-progettazione-di-servizi-pubblici-digitali-fb62858e2c6d
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " (si apre in una nuova finestra)"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Francesco Zaia
+        url: "/risorse-per-progettare/comprendere/esperienza-utente/" #M
+        text: | #C
+          Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
 
       # CARD CHILDREN ACTION
-      - title: "Prove tecniche di design: come testare sul campo gli strumenti di progettazione"
-        img: /images/community/articoli-di-approfondimento/2021-medium-filippi-prove-tecniche.webp
-        alt: "Il sistema .italia"
-        imgRatio: 16x9
-        imgPlaceholder: false
+      - title: Test di usabilità #C
         fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_testusability.svg #I
+        iconImgAlt: "" #C
         rounded: true
-        url: https://medium.com/designers-italia/prove-tecniche-di-design-come-testare-sul-campo-gli-strumenti-di-progettazione-866e95d32986
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " (si apre in una nuova finestra)"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Daniela Iozzo, Daniele Tabellini, Emilio Spatola e Mauro Filippi
+        url: "/risorse-per-progettare/validare/test-di-usabilita/" #M
+        text: | #C
+          Rendi più usabile un servizio digitale osservando le interazioni degli utenti
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
 
       # CARD CHILDREN ACTION
-      - title: "PA digitale 2026, l'utente al centro della progettazione"
-        img: /images/community/articoli-di-approfondimento/2022-medium-Dipartimento-PA-digitale-2026.webp
-        alt: Il sito PA digitale 2026
-        imgRatio: 16x9
-        imgPlaceholder: false
+      - title: Web analytics #C
         fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_analytics.svg #I
+        iconImgAlt: "" #C
         rounded: true
-        url: https://medium.com/blog-per-la-trasformazione-digitale/pa-digitale-2026-lutente-al-centro-della-progettazione-59eeda5b4e40
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " (si apre in una nuova finestra)"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: null
+        url: "/risorse-per-progettare/validare/web-analytics/" #M
+        text: | #C
+          Osserva e analizza i comportamenti degli utenti partendo dai dati di utilizzo del servizio
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
 
+      # CARD CHILDREN ACTION
+      - title: Prototipazione #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_prototipazione.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/progettare/prototipazione/" #M
+        text: | #C
+          Progetta l’esperienza-utente del servizio realizzando un prototipo a bassa fedeltà dell’interfaccia
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
 
-      # CARD CHILDREN ACTION MEDIA
-      - title: "Comprendere il contesto d'uso"
-        titleSmall: true
-        cardEvent: true
-        img: /images/community/media-thumbnails/20230324-comprendere-il-contesto-d-uso.jpg
+      # CARD CHILDREN ACTION
+      - title: Individua i contenuti #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_architettura_scenari.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/progettare/architettura-dell-informazione/individua-i-contenuti/" #M
+        text: | #C
+          Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni che dovrebbe avere il futuro touchpoint digitale del servizio.
+        tag:
+          label: RISORSE PER PROGETTARE - ATTIVITÀ DEL KIT #C
+
+     # CARD CHILDREN
+      - title: Il sito comunale #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/comuni.png
+        alt: ""
+        imgRatio: 4x3
+        imgPlaceholder: false
+        titleSmall: false
+        fullHeight: true
+        url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/" #M
+        tag:
+          label: MODELLI - SCHEDA OPERATIVA #C
+
+      # CARD CHILDREN
+      - title: I servizi digitali #C
+        text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
+        # img:
+        # alt: ""
+        # imgRatio: 4x3
+        # imgPlaceholder: true
+        titleSmall: false
+        fullHeight: false
+        url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
+        tag:
+          label: MODELLI - SCHEDA OPERATIVA #C
+
+      - title: "Una grammatica dei servizi pubblici digitali"
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/una-grammatica-dei-servizi-pubblici-digitali.webp
         alt: ""
         imgRatio: 16x9
-        iconOverlay:
-          icon: sprites.svg#it-video
-          ariaLabel: Video
-        url: "/community/media/20230324-comprendere-il-contesto-d-uso/"
-        tag:
-          label: Video - Webinar
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef
+        blank: true
+        externalLink:
+          label: Leggi su medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Marco Maria Pedrazzo
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2:
-
 
     - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
       menu: false
@@ -264,14 +305,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "L'approccio progettuale" #C
+          title: Visualizzare mappe dell’esperienza del servizio #C
+          headingLevel: 3
           text: | #C
-            Scegli l’approccio progettuale tra quelli proposti per affrontare al meglio il processo sotto diversi punti di vista: quello delle persone, delle procedure e della tecnologia.
+            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-            screenReaderText: "L'approccio progettuale (si apre in una nuova finestra)"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/approccio-progettuale.html#l-approccio-progettuale" #M
+
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/dai-bisogni-degli-utenti-ai-flussi-di-interazione.html#dai-bisogni-degli-utenti-ai-flussi-di-interazione" #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: "Visualizzare mappe dell’esperienza del servizio (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -282,14 +325,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Il processo progettuale #C
+          title: Dai bisogni degli utenti ai flussi di interazione #C
+          headingLevel: 3
           text: | #C
-            Segui l’approccio strutturato in cinque fasi, utile come riferimento per impostare il progetto, capire quali figure/competenze coinvolgere e organizzare le attività da svolgere nell’ordine più adeguato.
+            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-            screenReaderText: "Il processo progettuale (si apre in una nuova finestra)"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/processo-progettuale.html#il-processo-progettuale" #M
+
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/dai-bisogni-degli-utenti-ai-flussi-di-interazione.html#dai-bisogni-degli-utenti-ai-flussi-di-interazione" #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: "Dai bisogni degli utenti ai flussi di interazione (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -300,14 +345,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Metodo di lavoro #C
+          title: "Prototipare un servizio" #C
+          headingLevel: 3
           text: | #C
-            Imposta una modalità di lavoro agile per orientare il processo di design al raggiungimento dei risultati.
+            Tramite il prototipo puoi testare in maniera rapida ed economica un’idea, ridefinendo il progetto e valutando i cambiamenti. Effettua delle sessioni di validazione dell’esperienza e del concept già nelle prime fasi della progettazione, mantenendo gli utenti al centro del processo di design.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto/metodo-di-lavoro.html#metodo-di-lavoro" #M
+
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/prototipare-un-servizio.html#prototipare-un-servizio" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Metodo di lavoro (si apre in una nuova finestra)"
+            screenReaderText: "Prototipare un servizio (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -318,15 +365,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Le competenze per progettare servizi pubblici #C
+          title: Test di usabilità #C
+          headingLevel: 3
           text: | #C
-            Individua l’insieme di competenze funzionali e organizzative di cui necessita il processo di design dei servizi pubblici.
+            Misura il grado in cui il servizio può essere usato dagli utenti per raggiungere efficacemente gli obiettivi in quel contesto d’uso.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
 
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto/le-competenze-per-progettare-servizi-pubblici.html#le-competenze-per-progettare-servizi-pubblici" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/test-usabilita.html#test-di-usabilita" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Le competenze per progettare servizi pubblici (si apre in una nuova finestra)"
+            screenReaderText: "Test di usabilità (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -334,43 +382,3 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Progettazione di servizi #C
-          text: | #C
-            Sfrutta le risorse utili all’analisi delle necessità di tutti gli attori coinvolti nella progettazione del servizio, per gestire la complessità del progetto, strutturando il servizio in modo che sia usabile per l’utente e efficiente per la Pubblica Amministrazione.
-          ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
-
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html#progettazione-di-servizi" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Progettazione di servizi (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Progettare un servizio pubblico digitale #C
-          text: | #C
-            Conosci tutti gli elementi da tenere in considerazione nella progettazione di un servizio.
-          ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
-
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/progettare-un-servizio-pubblico-digitale.html#progettare-un-servizio-pubblico-digitale" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Progettare un servizio pubblico digitale (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-

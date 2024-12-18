@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level3
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-8
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "4.5. Interfaccia utente - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "Questo requisito delle Linee guida di design per i siti internet e i servizi digitali della PA intende descrivere come mettere a disposizione interfacce utenti semplici da utilizzare." #C
+  name: "4.8. Attuazione - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "Questo requisito delle Linee guida di design per i siti internet e i servizi digitali della PA intende fornire indicazioni su come assicurarsi che le attività di progettazione, sviluppo e manutenzione di siti e servizi digitali rispondano alle presenti linee guida." #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-5/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-8/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -84,7 +86,7 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: "4.5. Interfaccia utente" #C
+    title: "4.8. Attuazione" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Requisiti Linee guida design #C
@@ -96,7 +98,9 @@ components:
       #   size: sm
       # text: Finalità
     # text: | #C
-    #   **Finalità**: mettere a disposizione interfacce utenti semplici da utilizzare.
+    #   **Finalità**: fornire indicazioni su come assicurarsi che le attività di progettazione, sviluppo e manutenzione di siti e servizi digitali rispondano alle presenti linee guida.
+
+
     # img: /images/400x300.png #I
     # alt: descrizione immagine #C
 
@@ -147,28 +151,29 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,Normativa,Interfaccia utente]
+      tags: [Linee guida,Normativa]
 
-     # KANGAROO: CHILDREN SHORTCUTS
-      dropdown:
-        btnId: dropdownKang
-        button:
-          addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri le risorse correlate azione per azione #C
-          iconRight: true
-          icon:
-            icon: sprites.svg#it-expand
-            size: sm
-            color: primary
-            addonClasses: icon-expand ms-2
-        list:
-          listItems: #AUTO
-            - url: "azione-1/" #M
-              label: "Azione 1" #C
-            - url: "azione-2/" #M
-              label: "Azione 2" #C
-            - url: "azione-3/" #M
-              label: "Azione 3" #C
+      # # KANGAROO: CHILDREN SHORTCUTS
+      # dropdown:
+      #   btnId: dropdownKang
+      #   button:
+      #     addonStyle: dropdown-toggle btn-dropdown
+      #     label: Scopri i requisiti #C
+      #     iconRight: true
+      #     icon:
+      #       icon: sprites.svg#it-expand
+      #       size: sm
+      #       color: primary
+      #       addonClasses: icon-expand ms-2
+      #   list:
+      #     listItems: #M
+      #       - url: "level4/"
+      #         label: Level 4 #C
+      #         iconRight: false #SHOW CHILDREN DROPDOWN ITEM ICONS
+      #         icon:
+      #           icon: sprites.svg#it-arrow-right
+      #           color: primary
+      #           size: sm
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -183,7 +188,7 @@ components:
       centered: true
       background: null
       text: | #C
-        Questo requisito delle Linee guida di design per i siti internet e i servizi digitali della PA intende descrivere come mettere a disposizione **interfacce utenti semplici da utilizzare**.
+        Questo requisito delle Linee guida di design per i siti internet e i servizi digitali della PA intende fornire indicazioni su come **assicurarsi che le attività di progettazione, sviluppo e manutenzione di siti e servizi digitali rispondano alle presenti linee guida**.
 
     - title: Perché è importante #C
       menu: false
@@ -197,8 +202,9 @@ components:
           # title: Perché è importante #C
           # headingLevel: 2
           text: | #C
-            Progettare un sito o un servizio digitale pubblico che abbia delle **interfacce utente semplici e intuitive** è fondamentale. Un’interfaccia utente fatta bene è un’interfaccia che permette alle persone di **individuare velocemente e con pochi passaggi i contenuti che cerca**. Garantisce un’esperienza d’uso ideale.
+            I concetti di semplicità, usabilità e accessibilità sono noti da tempo nella pratica professionale della progettazione di servizi digitali, mentre **la norma che regola questi aspetti è recente**. È importante dunque **richiamarla nei contratti di fornitura dei servizi**, in modo che la sua applicazione sia esplicita sin dalle prime fasi di ingaggio dei fornitori.
 
+            In questo modo inoltre, se la PA non avesse a disposizione le risorse professionali per progettare i servizi, **i fornitori saranno comunque tenuti a mantenere gli standard di qualità** previsti dalle Linee guida.
 
   highlightCards:
     id: HC1
@@ -215,40 +221,15 @@ components:
       # CARD CHILDREN
       - title: "Azione 1"
         text: | #C
-          **SI DEVONO** utilizzare, ove disponibili, modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali
-        # titleSmall: true
+          **SI DEVE** inserire la seguente dicitura all’interno della documentazione dei contratti pubblici concernenti l’affidamento di attività di progettazione, sviluppo e manutenzione di siti internet e servizi digitali: **Il fornitore incaricato deve rispettare le indicazioni riportate nelle Linee guida di design per i siti internet e i servizi digitali della PA**
         fullHeight: true
         customCol: col-lg-9
-        url: "azione-1/" #M
+        # url: "azione-1/" #M
         rounded: true
-
-      # CARD CHILDREN
-      - title: "Azione 2"
-        text: |
-          **SI DEVONO** realizzare, nell’ambito dello stesso sito internet o servizio digitale, interfacce coerenti nello stile e nell’esperienza d’uso, privilegiando le indicazioni e gli strumenti previsti su Designers Italia
-        # titleSmall: true
-        fullHeight: true
-        customCol: col-lg-9
-        url: "azione-2/" #M
-        rounded: true
-
-      # CARD CHILDREN
-      - title: Azione 3
-        text: |
-          **SI DEVONO** realizzare interfacce che si adattino al dispositivo dell’utente
-        # titleSmall: true
-        fullHeight: true
-        customCol: col-lg-9
-        url: "azione-3/" #M
-        rounded: true
-
 
   sectionsEditorial2 :
 
-    # —
-    # EDITORIAL #C #I
-    # —
-    - title: Riferimenti normativi #C
+    - title: null #C
       menu: false
       centered: true
       background: null
@@ -257,18 +238,11 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          #title: Riferimenti normativi #C
-          text: | #C
-           - **Linee guida sull'accessibilità degli strumenti informatici**
-             Adottate da AGID con Determinazione n. 396 in data 8 settembre 2020.
-
-        # TXT BLOCK
-        - name: TextImageCta
           title: Note di lettura
           headingLevel: 2
           ctas:
             - label: "Note di lettura su Docs Italia" #C
-              url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/note-lettura.html #M
+              url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/requisiti.html#attuazione #M
               screenReaderText: " (si apre in una nuova finestra)" #C
               blank: true #M #C true if new tab for external links
               icon:
@@ -285,8 +259,8 @@ components:
           title: Leggi su Docs Italia
           headingLevel: 2
           ctas:
-            - label: "Articolo 4.5 su Docs Italia" #C
-              url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/requisiti.html#interfaccia-utente #M
+            - label: "Articolo 4.8 su Docs Italia" #C
+              url: https://docs.italia.it/italia/design/lg-design-servizi-web/it/versione-corrente/requisiti.html#licenze #M
               screenReaderText: " (si apre in una nuova finestra)" #C
               blank: true #M #C true if new tab for external links
               icon:

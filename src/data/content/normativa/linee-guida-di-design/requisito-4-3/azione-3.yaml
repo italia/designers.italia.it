@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-3
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 4 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "SI DEVONO mappare gli scenari d’uso e le funzionalità del sito/servizio dal punto di vista degli utenti per creare prototipi che verifichino la soluzione progettuale adottata e la sua usabilità" #C
+  name: "Azione 3 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "SI DEVONO svolgere attività di ricerca con utenti, per definire e valutare in modo esplicito le caratteristiche e i bisogni delle persone rispetto allo specifico contesto d’uso per il quale si sta progettando il sito/servizio" #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-4/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-3/azione-3/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Azione 4 - Requisito 4.3 - Linee guida di design
-    subtitle: "SI DEVONO mappare gli scenari d’uso e le funzionalità del sito/servizio dal punto di vista degli utenti per creare prototipi che verifichino la soluzione progettuale adottata e la sua usabilità" #C
+    title: Azione 3 - Requisito 4.3 - Linee guida di design
+    subtitle: "SI DEVONO svolgere attività di ricerca con utenti, per definire e valutare in modo esplicito le caratteristiche e i bisogni delle persone rispetto allo specifico contesto d’uso per il quale si sta progettando il sito/servizio" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Azioni Linee guida design #C
@@ -164,7 +166,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Normativa,Prototipazione,User personas,Analytics,User journey]
+      tags: [Normativa,Interviste utente,Esperienza utente,Questionari,Test di usabilità]
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -179,6 +181,32 @@ components:
 
     # CARDS
     cards: # AUTO?
+
+      # CARD CHILDREN ACTION
+      - title: Interviste soggetti coinvolti #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_interviste.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/" #M
+        text: | #C
+          Intraprendi conversazioni costruttive con tutti gli attori coinvolti nel contesto del servizio
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
+
+      # CARD CHILDREN ACTION
+      - title: Questionario online #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_questionario.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/comprendere/questionario-online/" #M
+        text: | #C
+          Svolgi un'indagine per raccogliere informazioni sul punto di vista degli utenti
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
 
       # CARD CHILDREN ACTION
       - title: Esperienza utente #C
@@ -207,79 +235,41 @@ components:
           label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
 
       # CARD CHILDREN ACTION
-      - title: Web analytics #C
+      - title: "Co-progetta l'esperienza d'uso" #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_analytics.svg #I
+        iconImg: /icons/kit_coprog_pianificazione.svg #I
         iconImgAlt: "" #C
         rounded: true
-        url: "/risorse-per-progettare/validare/web-analytics/" #M
+        url: "/risorse-per-progettare/progettare/co-progettazione/co-progetta-l-esperienza-d-uso/" #M
         text: | #C
-          Osserva e analizza i comportamenti degli utenti partendo dai dati di utilizzo del servizio
-        tag:
-          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
-
-      # CARD CHILDREN ACTION
-      - title: Prototipazione #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_prototipazione.svg #I
-        iconImgAlt: "" #C
-        rounded: true
-        url: "/risorse-per-progettare/progettare/prototipazione/" #M
-        text: | #C
-          Progetta l’esperienza-utente del servizio realizzando un prototipo a bassa fedeltà dell’interfaccia
-        tag:
-          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
-
-      # CARD CHILDREN ACTION
-      - title: Individua i contenuti #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_architettura_scenari.svg #I
-        iconImgAlt: "" #C
-        rounded: true
-        url: "/risorse-per-progettare/progettare/architettura-dell-informazione/individua-i-contenuti/" #M
-        text: | #C
-          Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni che dovrebbe avere il futuro touchpoint digitale del servizio.
+          Organizza un workshop dedicato all’esperienza di un servizio digitale. Identifica un obiettivo chiaro e condiviso e poi definisci gli aspetti organizzativi e logistici.
         tag:
           label: RISORSE PER PROGETTARE - ATTIVITÀ DEL KIT #C
 
-     # CARD CHILDREN
-      - title: Il sito comunale #C
-        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
-        img: /images/modelli/comuni.png
+      # CARD CHILDREN ACTION MEDIA
+      - title: "Comprendere il contesto d'uso"
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230324-comprendere-il-contesto-d-uso.jpg
         alt: ""
-        imgRatio: 4x3
-        imgPlaceholder: false
-        titleSmall: false
-        fullHeight: true
-        url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/" #M
+        imgRatio: 16x9
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230324-comprendere-il-contesto-d-uso/"
         tag:
-          label: MODELLI - SCHEDA OPERATIVA #C
+          label: Video - Webinar
 
-      # CARD CHILDREN
-      - title: I servizi digitali #C
-        text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
-        titleSmall: false
-        fullHeight: false
-        url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
-        tag:
-          label: MODELLI - SCHEDA OPERATIVA #C
-
-      - title: "Una grammatica dei servizi pubblici digitali"
+      - title: "Il valore della community di Designers Italia e Developers Italia"
         headingLevel: 3
-        img: /images/community/articoli-di-approfondimento/una-grammatica-dei-servizi-pubblici-digitali.webp
-        alt: ""
+        img: /images/community/articoli-di-approfondimento/2021-valore-della-community-per-designers-e-developers.webp
+        alt: "Gli strumenti della community"
         imgRatio: 16x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: https://medium.com/designers-italia/una-grammatica-dei-servizi-pubblici-digitali-7077aa1fc5ef
+        url: https://medium.com/designers-italia/il-valore-della-community-per-designers-italia-e-developers-italia-bd486dff2a6d
         blank: true
         externalLink:
           label: Leggi su medium
@@ -287,13 +277,31 @@ components:
           icon:
             icon: sprites.svg#it-external-link
             size: xs
-        moreInfo: di Marco Maria Pedrazzo
+        moreInfo: di Mauro Filippi e Claudia Pollina
+
+      #CARD MEDIUM
+      - title: "Intervistare i cittadini per creare servizi pubblici più efficaci"
+        headingLevel: 3
+        # img: null
+        # alt: null
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: false
+        rounded: true
+        url: https://medium.com/designers-italia/intervistare-cittadini-per-creare-servizi-pubblici-pi%C3%B9-efficaci-607612efb183
+        blank: true
+        externalLink:
+          label: Leggi su medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Chiara Albanesi
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2:
-
     - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
       menu: false
       centered: true
@@ -303,16 +311,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Visualizzare mappe dell’esperienza del servizio #C
+          title: Interviste #C
           headingLevel: 3
           text: | #C
-            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.
+            Usa le interviste per raccogliere informazioni attraverso conversazioni più o meno strutturate con gli attori e con gli utenti di un determinato ecosistema di servizio.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
 
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/dai-bisogni-degli-utenti-ai-flussi-di-interazione.html#dai-bisogni-degli-utenti-ai-flussi-di-interazione" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/interviste.html#interviste" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Visualizzare mappe dell’esperienza del servizio (si apre in una nuova finestra)"
+            screenReaderText: "Interviste (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -323,16 +331,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Dai bisogni degli utenti ai flussi di interazione #C
+          title: Questionari #C
           headingLevel: 3
           text: | #C
-            Dopo aver definito gli strumenti operativi di mappatura del servizi, scegli come impostare scenari d’uso e flussi di interazione per assumere i punti di vista delle personas che utilizzeranno il servizio.
+            Raccogli informazioni qualitative direttamente dagli utenti di un servizio o touchpoint digitale, indirizzando un campione di utenti sufficientemente vasto, per renderle misurabili, e consentire l’analisi quantitativa.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
 
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/dai-bisogni-degli-utenti-ai-flussi-di-interazione.html#dai-bisogni-degli-utenti-ai-flussi-di-interazione" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/questionari.html#questionari" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Dai bisogni degli utenti ai flussi di interazione (si apre in una nuova finestra)"
+            screenReaderText: "Questionari (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -343,16 +351,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "Prototipare un servizio" #C
+          title: "Personas: creare i profili degli utenti tipo" #C
           headingLevel: 3
           text: | #C
-            Tramite il prototipo puoi testare in maniera rapida ed economica un’idea, ridefinendo il progetto e valutando i cambiamenti. Effettua delle sessioni di validazione dell’esperienza e del concept già nelle prime fasi della progettazione, mantenendo gli utenti al centro del processo di design.
+            Racconta le evidenze della ricerca attraverso i profili degli utenti-tipo del servizio pubblico digitale, le personas, che supportano la narrativa della prospettiva dell’utente e della sua esperienza.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
 
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/prototipare-un-servizio.html#prototipare-un-servizio" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/personas.html#personas-creare-i-profili-degli-utenti-tipo" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Prototipare un servizio (si apre in una nuova finestra)"
+            screenReaderText: "Personas: creare i profili degli utenti tipo (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -362,6 +370,26 @@ components:
               addonClasses: ms-2
 
         # TXT BLOCK
+        - name: TextImageCta
+          title: Organizzare attività di co-progettazione #C
+          headingLevel: 3
+          text: | #C
+            Raccogli il punto di vista dei diversi attori coinvolti nell’erogazione e fruizione di un servizio, sollevando i problemi chiave e accelerando il processo di identificazione delle soluzioni.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/organizzare-attivita-di-co-progettazione.html#organizzare-attivita-di-co-progettazione" #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Organizzare attività di co-progettazione (si apre in una nuova finestra)"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+         # TXT BLOCK
         - name: TextImageCta
           title: Test di usabilità #C
           headingLevel: 3

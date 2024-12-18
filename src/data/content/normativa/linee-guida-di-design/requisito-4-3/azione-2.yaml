@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-2
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 1 - Requisito 4.1 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "DEVE essere garantito il rispetto dei dettami della L. 4/2004 e s.m.i. e delle correlate «Linee guida sull’accessibilità degli strumenti informatici», emanate da AGID con Determinazione n. 396 in data 8 settembre 2020" #C
+  name: "Azione 2 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "SI DEVONO definire e valutare in modo esplicito obiettivi, destinatari, processi e attori nella progettazione del sito/servizio" #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-1/azione-1/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-3/azione-2/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -51,7 +53,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: "4.1. Accessibilità" #C
+        label: "4.3. Semplicità di consultazione ed esperienza d'uso" #C
         url: "../" #M
 #navPreFooter:
   #navOtherPrevNext:
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Azione 1 - Requisito 4.1 - Linee guida di design
-    subtitle: "DEVE essere garantito il rispetto dei dettami della L. 4/2004 e s.m.i. e delle correlate «Linee guida sull’accessibilità degli strumenti informatici», emanate da AGID con Determinazione n. 396 in data 8 settembre 2020" #C
+    title: Azione 2 - Requisito 4.3 - Linee guida di design
+    subtitle: "SI DEVONO definire e valutare in modo esplicito obiettivi, destinatari, processi e attori nella progettazione del sito/servizio" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Azioni Linee guida design #C
@@ -130,7 +132,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "4.1. Accessibilità" #C
+            label: "4.3. Semplicità di consultazione ed esperienza d'uso" #C
             url: "../" #M
       # otherInfo:
       #   items:
@@ -164,7 +166,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Normativa,Accessibilità,Progettazione servizi,Cultura progettuale]
+      tags: [Normativa,Analisi del contesto,Esperienza utente]
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -174,125 +176,76 @@ components:
     title: Scopri le risorse correlate a questa azione  #C
     text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
-    nospace: false
+    noSpace: false
     nopadtop: false
 
     # CARDS
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: "Accessibilità" #C
-        fullHeight: false
+      - title: Analisi del contesto #C
+        fullHeight: true
         imgRatio: 16x9
-        #iconImg: /icons/kit_coprog_contenuti.svg #I
+        iconImg: /icons/kit_analisiContesto.svg #I
         iconImgAlt: "" #C
         rounded: true
-        url: "/design-system/fondamenti/accessibilita/" #M
+        url: "/risorse-per-progettare/comprendere/analisi-del-contesto/" #M
         text: | #C
-          Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno
+          Identifica i principali elementi che fanno parte dell’erogazione del servizio e le loro interdipendenze
         tag:
-          label: DESIGN SYSTEM - FONDAMENTI #C
-        share: #AUTO
-          btnId: shareButton2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
+
+      # CARD CHILDREN ACTION
+      - title: Esperienza utente #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/comprendere/esperienza-utente/" #M
+        text: | #C
+          Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
 
       # CARD CHILDREN ACTION MEDIA
-      - title: "Servizi inclusivi e usabili per tutti"
+      - title: "Comprendere il contesto d'uso"
         titleSmall: true
         cardEvent: true
-        img: /images/community/media-thumbnails/20230325-servizi-inclusivi-e-usabili-per-tutti.jpg
+        img: /images/community/media-thumbnails/20230324-comprendere-il-contesto-d-uso.jpg
         alt: ""
         imgRatio: 16x9
         iconOverlay:
           icon: sprites.svg#it-video
           ariaLabel: Video
-        url: "/community/media/20230325-servizi-inclusivi-e-usabili-per-tutti/"
+        url: "/community/media/20230324-comprendere-il-contesto-d-uso/"
         tag:
           label: Video - Webinar
-
-      - title: "ll design system del Paese e la responsabilità di progettare interfacce pubbliche"
-        titleSmall: true
-        cardEvent: true
-        img: /images/community/media-thumbnails/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche.jpg
-        alt: ""
-        imgRatio: 16x9
-        iconOverlay:
-          icon: sprites.svg#it-video
-          ariaLabel: Video
-        url: "/community/media/20230518-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche/"
-        tag:
-          label: Video - Evento
-
-      # CARD CHILDREN ACTION
-      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
-        headingLevel: 3
-        img: /images/community/articoli-di-approfondimento/20220705-progettare-con-qualita-l-accessibilita-al-centro-del-design-system-del-paese.webp
-        alt: Le risorse per progettare di Designers Italia
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " (si apre in una nuova finestra)"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Daniele Tabellini e Fabrizio Caccavello
-
-      # CARD CHILDREN ACTION
-      - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
-        headingLevel: 3
-        img: /images/community/articoli-di-approfondimento/2021-medium-zaia-processo.webp
-        alt: Le risorse per progettare di Designers Italia
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " (si apre in una nuova finestra)"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Mauro Filippi e Federica Merenda
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2:
 
+
     - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
       menu: false
       centered: true
       background: light
-      noSpace: false
       text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "Accessibilità by design" #C
+          title: Gestione del progetto #C
           headingLevel: 3
           text: | #C
-            Segui il principio di accessibilità by design, cioè fin dalle basi della progettazione, e il principio di accessibilità by default, cioè il principio secondo cui ogni tipo di documentazione e risorsa a supporto dovrebbe contenere i requisiti di accessibilità, per creare servizi digitali accessibili.
+            Definisci il perimetro di un progetto digitale, gli attori coinvolti e i potenziali destinatari.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-            screenReaderText: "Accessibilità by design (si apre in una nuova finestra)"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/introduzione-design-servizi-pubblici-digitali/accessibilita-by-design.html#accessibilita-by-design" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/gestione-del-progetto.html" #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: "Gestione del progetto (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -303,16 +256,53 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "Accessibilità" #C
+          title: Analizzare il contesto con un approccio olistico e sistemico #C
           headingLevel: 3
           text: | #C
-            Rendi i tuoi strumenti informatici accessibili e usabili per tutti e senza discriminare nessuno, compresi i siti web e le applicazioni mobili così come previsto dalle “Linee guida sull’accessibilità degli strumenti informatici”.
+            Ottieni una visione d’insieme dei fattori e delle variabili che influenzano l’erogazione e la fruizione di un servizio digitale.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-
-            screenReaderText: "Accessibilità (si apre in una nuova finestra)"
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/accessibilita.html#accessibilita" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/analizzare-il-contesto-con-un-approccio-olistico-e-sistemico.html" #M
             blank: true #M #C true if new tab for external links
+            screenReaderText: "Analizzare il contesto con un approccio olistico e sistemico (si apre in una nuova finestra)"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Conoscere gli utenti e gli erogatori del servizio #C
+          headingLevel: 3
+          text: | #C
+            Tieni in alta considerazione le necessità degli utenti e conosci la loro esperienza di interazione con il servizio.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/conoscere-gli-utenti-e-gli-erogatori-del-servizio.html" #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Conoscere gli utenti e gli erogatori del servizio (si apre in una nuova finestra)"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Gli strumenti per visualizzare mappe dell’esperienza del servizio #C
+          headingLevel: 3
+          text: | #C
+            Mappa l'esperienza dell'utente per descrivere in che modo avviene l'interazione con il servizio.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/gli-strumenti-per-visualizzare-mappa-della-esperienza-del-servizio.html" #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Gli strumenti per visualizzare mappe dell’esperienza del servizio (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary

@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-5/azione-1
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 10 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "SI DOVREBBE pubblicare, su ogni pagina del sito internet, la data dell’ultimo aggiornamento o verifica del contenuto" #C
+  name: "Azione 1 - Requisito 4.5 - Interfaccia utente - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "SI DEVONO utilizzare, ove disponibili, modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali" #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-10/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-5/azione-1/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Azione 10 - Requisito 4.3 - Linee guida di design
-    subtitle: "SI DOVREBBE pubblicare, su ogni pagina del sito internet, la data dell’ultimo aggiornamento o verifica del contenuto" #C
+    title: Azione 1 - Requisito 4.5 - Linee guida di design
+    subtitle: "SI DEVONO utilizzare, ove disponibili, modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Azioni Linee guida design #C
@@ -108,18 +110,6 @@ components:
     # img: /images/400x300.png #I
     # alt: descrizione immagine #C
     # imgRatio: 4x3
-    share:
-      btnId: shareButton
-      button:
-        label: Condividi
-        addonStyle: btn-share-hero text-primary mb-5 mt-lg-4 ms-auto
-        icon:
-          icon: sprites.svg#it-more-items
-          size: sm
-          color: primary
-          addonClasses: ms-3
-      list:
-        isShare: true
 
     # KANGAROO: METADATA
     kangaroo:
@@ -142,7 +132,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: "4.3. Semplicità di consultazione ed esperienza d'uso" #C
+            label: "4.5. Interfaccia utente" #C
             url: "../" #M
       # otherInfo:
       #   items:
@@ -176,7 +166,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,Linguaggio]
+      tags: [Linee guida,Interfaccia utente,Progettazione servizi,Manuale operativo]
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -192,27 +182,55 @@ components:
     # CARDS
     cards: # AUTO?
 
-      # CARD CHILDREN ACTION
-      - title: "Linguaggio" #C
+     # CARD CHILDREN
+      - title: Il sito comunale #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/comuni.png
+        alt: ""
+        imgRatio: 4x3
+        imgPlaceholder: false
+        titleSmall: false
         fullHeight: true
-        imgRatio: 16x9
-        #iconImg: /icons/kit_coprog_contenuti.svg #I
-        iconImgAlt: "" #C
-        rounded: true
-        url: "/design-system/fondamenti/linguaggio/" #M
-        text: | #C
-          Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone
+        url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/" #M
         tag:
-          label: DESIGN SYSTEM - FONDAMENTI #C
-        share: #AUTO
-          btnId: shareButton2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+          label: MODELLI - SCHEDA OPERATIVA #C
 
+      # CARD CHILDREN
+      - title: Il sito scolastico #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito scolastico semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/scuole.png
+        alt: ""
+        imgRatio: 4x3
+        imgPlaceholder: false
+        titleSmall: false
+        fullHeight: true
+        url: "/modelli/comuni/adotta-il-modello-di-sito-scolastico/" #M
+        tag:
+          label: MODELLI - SCHEDA OPERATIVA #C
+
+      # CARD CHILDREN
+      - title: I servizi digitali #C
+        text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
+        img: /images/modelli/comuni-servizi.png
+        alt: ""
+        imgRatio: 4x3
+        imgPlaceholder: false
+        titleSmall: false
+        fullHeight: false
+        url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
+        tag:
+          label: MODELLI - SCHEDA OPERATIVA #C
+
+      # CARD CHILDREN ACTION MEDIA
+      - title: "L'architettura informativa di un sito comunale"
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230220-l-architettura-informativa-di-un-sito-comunale.jpg
+        alt: ""
+        imgRatio: 16x9
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230220-l-architettura-informativa-di-un-sito-comunale/"
+        tag:
+          label: Video - Intervista

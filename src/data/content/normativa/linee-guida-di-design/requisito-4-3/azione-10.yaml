@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-10
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 9 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "SI DEVE rendere facilmente trovabile, mediante motori di ricerca esterni (ove consentito dalle vigenti normative) e interni al sito, il contenuto pubblicato" #C
+  name: "Azione 10 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "SI DOVREBBE pubblicare, su ogni pagina del sito internet, la data dell’ultimo aggiornamento o verifica del contenuto" #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-9/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-3/azione-10/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Azione 9 - Requisito 4.3 - Linee guida di design
-    subtitle: "SI DEVE rendere facilmente trovabile, mediante motori di ricerca esterni (ove consentito dalle vigenti normative) e interni al sito, il contenuto pubblicato" #C
+    title: Azione 10 - Requisito 4.3 - Linee guida di design
+    subtitle: "SI DOVREBBE pubblicare, su ogni pagina del sito internet, la data dell’ultimo aggiornamento o verifica del contenuto" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Azioni Linee guida design #C
@@ -176,7 +178,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,SEO]
+      tags: [Linee guida,Linguaggio]
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -193,19 +195,19 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: SEO #C
+      - title: "Linguaggio" #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_SEO.svg #I
+        #iconImg: /icons/kit_coprog_contenuti.svg #I
         iconImgAlt: "" #C
         rounded: true
-        url: "/risorse-per-progettare/progettare/seo/" #M
+        url: "/design-system/fondamenti/linguaggio/" #M
         text: | #C
-          Ottimizza i contenuti del tuo sito per migliorare il posizionamento nei risultati dei motori di ricerca
+          Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone
         tag:
-          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
+          label: DESIGN SYSTEM - FONDAMENTI #C
         share: #AUTO
-          btnId: shareButton1
+          btnId: shareButton2
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -215,65 +217,4 @@ components:
               color: secondary
           list:
             isShare: true
-
-      - title: "Dall'anagrafe alla biblioteca, ecco i servizi comunali più cercati sul web"
-        headingLevel: 3
-        img: /images/community/articoli-di-approfondimento/una-grammatica-dei-servizi-pubblici-digitali.webp
-        alt: ""
-        imgRatio: 16x9
-        imgPlaceholder: false
-        fullHeight: true
-        rounded: true
-        url: https://medium.com/designers-italia/dallanagrafe-alla-biblioteca-ecco-i-servizi-comunali-pi%C3%B9-cercati-sul-web-6e9226be7f41
-        blank: true
-        externalLink:
-          label: Leggi su medium
-          screenReaderText: " (si apre in una nuova finestra)"
-          icon:
-            icon: sprites.svg#it-external-link
-            size: xs
-        moreInfo: di Daniela Iozzo e Mariachiara Marsella
-        share:
-          btnId: shareButtonCardMedium1
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  sectionsEditorial2:
-
-    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
-      menu: false
-      centered: true
-      background: light
-      text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
-      components:
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: SEO #C
-          headingLevel: 3
-          text: | #C
-            Ottimizza i contenuti e la struttura del tuo sito o servizio con l’obiettivo di rendere informazioni e servizi più semplici da trovare e più visibili sui motori di ricerca.
-          ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
-
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/seo.html#seo" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Ottimizzazione per i motori di ricerca: SEO (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
 
