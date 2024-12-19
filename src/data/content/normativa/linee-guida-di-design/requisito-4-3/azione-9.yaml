@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-9
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 5 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "SI DEVONO tenere presenti i risultati delle ricerche effettuate con utenti per la definizione dell’architettura dell’informazione" #C
+  name: "Azione 9 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "SI DEVE rendere facilmente trovabile, mediante motori di ricerca esterni (ove consentito dalle vigenti normative) e interni al sito, il contenuto pubblicato" #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-5/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-3/azione-9/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Azione 5 - Requisito 4.3 - Linee guida di design
-    subtitle: "SI DEVONO tenere presenti i risultati delle ricerche effettuate con utenti per la definizione dell’architettura dell’informazione" #C
+    title: Azione 9 - Requisito 4.3 - Linee guida di design
+    subtitle: "SI DEVE rendere facilmente trovabile, mediante motori di ricerca esterni (ove consentito dalle vigenti normative) e interni al sito, il contenuto pubblicato" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Azioni Linee guida design #C
@@ -176,7 +178,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,Progettazione contenuti,Architettura informazione]
+      tags: [Linee guida,SEO]
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -193,15 +195,15 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: Esperienza utente #C
+      - title: SEO #C
         fullHeight: true
         imgRatio: 16x9
-        iconImg: /icons/kit_esperienzautente.svg #I
+        iconImg: /icons/kit_SEO.svg #I
         iconImgAlt: "" #C
         rounded: true
-        url: "/risorse-per-progettare/comprendere/esperienza-utente/" #M
+        url: "/risorse-per-progettare/progettare/seo/" #M
         text: | #C
-          Definisci la percezione e l’esperienza dell’utente (UX) di un servizio digitale
+          Ottimizza i contenuti del tuo sito per migliorare il posizionamento nei risultati dei motori di ricerca
         tag:
           label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
         share: #AUTO
@@ -216,44 +218,25 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN ACTION
-      - title: Architettura dell'informazione #C
-        fullHeight: true
+      - title: "Dall'anagrafe alla biblioteca, ecco i servizi comunali più cercati sul web"
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/una-grammatica-dei-servizi-pubblici-digitali.webp
+        alt: ""
         imgRatio: 16x9
-        iconImg: /icons/kit_architettura.svg #I
-        iconImgAlt: "" #C
-        rounded: true
-        url: "/risorse-per-progettare/progettare/architettura-dell-informazione/" #M
-        text: | #C
-          Organizza e classifica i contenuti di un touchpoint e definisci le principali funzioni del servizio
-        tag:
-          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
-        share: #AUTO
-          btnId: shareButton2
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-      # CARD CHILDREN ACTION
-      - title: Rielabora le informazioni #C
+        imgPlaceholder: false
         fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_interviste_rielaboraRisultati.svg #I
-        iconImgAlt: "" #C
         rounded: true
-        url: "/risorse-per-progettare/comprendere/interviste-soggetti-coinvolti/rielabora-le-informazioni/" #M
-        text: | #C
-          Schematizza, analizza e rilabora le informazioni raccolte per presentarle agli stakeholder
-        tag:
-          label: RISORSE PER PROGETTARE - ATTIVITÀ DEL KIT #C
-        share: #AUTO
-          btnId: shareButton5
+        url: https://medium.com/designers-italia/dallanagrafe-alla-biblioteca-ecco-i-servizi-comunali-pi%C3%B9-cercati-sul-web-6e9226be7f41
+        blank: true
+        externalLink:
+          label: Leggi su medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Daniela Iozzo e Mariachiara Marsella
+        share:
+          btnId: shareButtonCardMedium1
           button:
             addonStyle: icon-only-drop
             ariaLabel: Condividi
@@ -264,55 +247,7 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN ACTION
-      - title: Sintetizza i risultati della ricerca #C
-        fullHeight: true
-        imgRatio: 16x9
-        iconImg: /icons/kit_questionario_risultati.svg #I
-        iconImgAlt: "" #C
-        rounded: true
-        url: "/risorse-per-progettare/comprendere/questionario-online/sintetizza-i-risultati-della-ricerca/" #M
-        text: | #C
-          Analizza e rappresenta efficacemente i risultati dell’indagine
-        tag:
-          label: RISORSE PER PROGETTARE - ATTIVITÀ DEL KIT #C
-        share: #AUTO
-          btnId: shareButton5
-          button:
-            addonStyle: icon-only-drop
-            ariaLabel: Condividi
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-      # CARD CHILDREN
-      - title: I servizi digitali #C
-        text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
-        titleSmall: false
-        fullHeight: false
-        url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
-        tag:
-          label: MODELLI - SCHEDA OPERATIVA #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            ariaLabel: Condividi
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
- # ///////////////////
+  # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2:
@@ -326,16 +261,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "Personas: creare i profili degli utenti-tipo" #C
+          title: SEO #C
           headingLevel: 3
           text: | #C
-            Ipotizza soluzioni concrete che rispondano alle esigenze degli utenti tramite le personas e divulga i risultati della ricerca agli interlocutori esterni al gruppo di lavoro.
+            Ottimizza i contenuti e la struttura del tuo sito o servizio con l’obiettivo di rendere informazioni e servizi più semplici da trovare e più visibili sui motori di ricerca.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
 
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/personas.html#personas-creare-i-profili-degli-utenti-tipo" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/seo.html#seo" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Personas: creare i profili degli utenti-tipo (si apre in una nuova finestra)"
+            screenReaderText: "Ottimizzazione per i motori di ricerca: SEO (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -344,22 +279,3 @@ components:
               size: sm
               addonClasses: ms-2
 
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Architettura dell’informazione" #C
-          headingLevel: 3
-          text: | #C
-            Organizza semanticamente e logicamenti contenuti informativi e rendi i servizi pubblici più semplici da trovare, capire e usare.
-          ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
-
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html#architettura-dellinformazione" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Architettura dell’informazione (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
