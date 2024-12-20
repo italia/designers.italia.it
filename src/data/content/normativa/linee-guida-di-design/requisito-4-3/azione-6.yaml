@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-6
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 7 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "SI DEVONO utilizzare ontologie e vocabolari controllati standard della Pubblica Amministrazione" #C
+  name: "Azione 6 - Requisito 4.3 - Linee guida di design - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "SI DEVONO condurre test di usabilità per comprendere se i servizi digitali, esistenti o in fase di progettazione, corrispondano alle esigenze degli utenti" #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-3/azione-7/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-3/azione-6/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Azione 7 - Requisito 4.3 - Linee guida di design
-    subtitle: "SI DEVONO utilizzare ontologie e vocabolari controllati standard della Pubblica Amministrazione" #C
+    title: Azione 6 - Requisito 4.3 - Linee guida di design
+    subtitle: "SI DEVONO condurre test di usabilità per comprendere se i servizi digitali, esistenti o in fase di progettazione, corrispondano alle esigenze degli utenti" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Azioni Linee guida design #C
@@ -176,7 +178,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Linee guida,Progettazione contenuti,Architettura informazione,Analisi contenuti]
+      tags: [Normativa,Linee guida,Test di usabilità]
 
 # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -192,23 +194,23 @@ components:
     # CARDS
     cards: # AUTO?
 
-      # CARD CHILDREN
-      - title: Comuni - Comprendi lo stato dell'arte #C
-        text: Definisci gli obiettivi e il perimetro del progetto per adottare il modello di sito comunale #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
-        titleSmall: false
+      # CARD CHILDREN ACTION
+      - title: "Test di usabilità" #C
         fullHeight: true
-        url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/comprendi-lo-stato-dell-arte/" #M
+        imgRatio: 16x9
+        iconImg: /icons/kit_testusability.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/validare/test-di-usabilita/" #M
+        text: | #C
+          Migliora un servizio digitale osservando le interazioni degli utenti
         tag:
-          label: MODELLI - ATTIVITÀ #C
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
         share: #AUTO
-          btnId: shareButtonCard2
+          btnId: shareButton1
           button:
-            ariaLabel: Condividi
             addonStyle: icon-only-drop
+            ariaLabel: Condividi
             icon:
               icon: sprites.svg#it-more-items
               size: sm
@@ -216,23 +218,28 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN
-      - title: Comuni - Definisci architettura e contenuti #C
-        text: Imposta la struttura informativa del sito comunale e organizza la migrazione dei contenuti #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
-        titleSmall: false
+      - title: "PA digitale 2026, l’utente al centro della progettazione"
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/2022-medium-Dipartimento-PA-digitale-2026.webp
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
         fullHeight: true
-        url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/definisci-architettura-e-contenuti/" #M
-        tag:
-          label: MODELLI - ATTIVITÀ #C
-        share: #AUTO
-          btnId: shareButtonCard2
+        rounded: true
+        url: https://medium.com/blog-per-la-trasformazione-digitale/pa-digitale-2026-lutente-al-centro-della-progettazione-59eeda5b4e40
+        blank: true
+        externalLink:
+          label: Leggi su medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Dipartimento per la trasformazione digitale
+        share:
+          btnId: shareButtonCardMedium1
           button:
-            ariaLabel: Condividi
             addonStyle: icon-only-drop
+            ariaLabel: Condividi
             icon:
               icon: sprites.svg#it-more-items
               size: sm
@@ -240,55 +247,21 @@ components:
           list:
             isShare: true
 
-      # CARD CHILDREN
-      - title: Scuole - Comprendi lo stato dell'arte #C
-        text: Definisci gli obiettivi e il perimetro del progetto per adottare il modello di sito scolastico #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
-        titleSmall: false
-        fullHeight: true
-        url: "/modelli/scuole/adotta-il-modello-di-sito-scolastico/comprendi-lo-stato-dell-arte/" #M
+      # CARD CHILDREN ACTION MEDIA
+      - title: "I test di usabilità per PA digitale 2026"
+        titleSmall: true
+        cardEvent: true
+        img: /images/community/media-thumbnails/20230220-i-test-di-usabilita-per-pa-digitale-2026.jpg
+        alt: ""
+        imgRatio: 16x9
+        iconOverlay:
+          icon: sprites.svg#it-video
+          ariaLabel: Video
+        url: "/community/media/20230220-i-test-di-usabilita-per-pa-digitale-2026/"
         tag:
-          label: MODELLI - ATTIVITÀ #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            ariaLabel: Condividi
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
+          label: Video - Intervista
 
-      # CARD CHILDREN
-      - title: Scuole - Definisci architettura e contenuti #C
-        text: Imposta la struttura informativa del sito comunale e organizza la migrazione dei contenuti #C
-        # img:
-        # alt: ""
-        # imgRatio: 4x3
-        # imgPlaceholder: true
-        titleSmall: false
-        fullHeight: true
-        url: "/modelli/scuole/adotta-il-modello-di-sito-scolastico/definisci-architettura-e-contenuti/" #M
-        tag:
-          label: MODELLI - ATTIVITÀ #C
-        share: #AUTO
-          btnId: shareButtonCard2
-          button:
-            ariaLabel: Condividi
-            addonStyle: icon-only-drop
-            icon:
-              icon: sprites.svg#it-more-items
-              size: sm
-              color: secondary
-          list:
-            isShare: true
-
-  # ///////////////////
+# ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2:
@@ -302,16 +275,16 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: "I content-type (tipologie di contenuto)" #C
+          title: Test di usabilità #C
           headingLevel: 3
           text: | #C
-            Organizza le informazioni del servizio in diverse tipologie durante la fase di progettazione.
+            Misura il grado in cui il servizio può essere usato dagli utenti per raggiungere efficacemente gli obiettivi in quel contesto d’uso.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
 
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html#i-content-type-tipologie-di-contenuto" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/design-research/test-usabilita.html#test-di-usabilita" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "I content-type (tipologie di contenuto) (si apre in una nuova finestra)"
+            screenReaderText: "Test di usabilità (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -319,24 +292,3 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: "Ontologie e standard" #C
-          headingLevel: 3
-          text: | #C
-            Costruisci content type e sistemi di classificazione sulla base di strutture formali di rappresentazione della realtà più astratte, da esprimere in termini di ontologie e di vocabolari controllati.
-          ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
-
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/content-design/architettura-dell-informazione.html#architettura-dellinformazione" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Ontologie e standard (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-

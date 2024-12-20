@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
+  redirect_from:
+    - /norme-e-riferimenti/linee-guida-di-design/requisito-4-5/azione-2
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Azione 1 - Requisito 4.5 - Interfaccia utente - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: "SI DEVONO utilizzare, ove disponibili, modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali" #C
+  name: "Azione 2 - Requisito 4.5 - Interfaccia utente - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: "SI DEVONO realizzare, nell’ambito dello stesso sito internet o servizio digitale, interfacce coerenti nello stile e nell’esperienza d’uso, privilegiando le indicazioni e gli strumenti previsti su Designers Italia" #C
   image: null #I
   canonical: null
-  pathname: /norme-e-riferimenti/linee-guida-di-design/requisito-4-5/azione-1/ #M
+  pathname: /normativa/linee-guida-di-design/requisito-4-5/azione-2/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -51,7 +53,7 @@ kangaroo:
           size: "sm"
           align: "middle"
           color: "secondary"
-        label: "4.3. Semplicità di consultazione ed esperienza d'uso" #C
+        label: "4.5. Interfaccia utente" #C
         url: "../" #M
 #navPreFooter:
   #navOtherPrevNext:
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Azione 1 - Requisito 4.5 - Linee guida di design
-    subtitle: "SI DEVONO utilizzare, ove disponibili, modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali" #C
+    title: Azione 2 - Requisito 4.5 - Linee guida di design
+    subtitle: "SI DEVONO realizzare, nell’ambito dello stesso sito internet o servizio digitale, interfacce coerenti nello stile e nell’esperienza d’uso, privilegiando le indicazioni e gli strumenti previsti su Designers Italia" #C
     # subtitle: Subtitle #C
     tag:
       label: Norme - Azioni Linee guida design #C
@@ -171,7 +173,7 @@ components:
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Scopri i contenuti correlati a questa azione  #C
+    title: Scopri le risorse correlate a questa azione  #C
     text: Contenuti, approfondimenti e strumenti di Designers Italia che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
     col4: false
     nospace: false
@@ -180,55 +182,129 @@ components:
     # CARDS
     cards: # AUTO?
 
-     # CARD CHILDREN
-      - title: Il sito comunale #C
-        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito comunale semplice, accessibile e centrato sui bisogni degli utenti. #C
-        img: /images/modelli/comuni.png
-        alt: ""
-        imgRatio: 4x3
-        imgPlaceholder: false
-        titleSmall: false
-        fullHeight: true
-        url: "/modelli/comuni/adotta-il-modello-di-sito-comunale/" #M
-        tag:
-          label: MODELLI - SCHEDA OPERATIVA #C
-
       # CARD CHILDREN
-      - title: Il sito scolastico #C
-        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito scolastico semplice, accessibile e centrato sui bisogni degli utenti. #C
-        img: /images/modelli/scuole.png
-        alt: ""
-        imgRatio: 4x3
-        imgPlaceholder: false
-        titleSmall: false
-        fullHeight: true
-        url: "/modelli/comuni/adotta-il-modello-di-sito-scolastico/" #M
-        tag:
-          label: MODELLI - SCHEDA OPERATIVA #C
-
-      # CARD CHILDREN
-      - title: I servizi digitali #C
-        text: Segui la procedura guidata e scopri le risorse per realizzare interfacce e interazioni semplici, accessibili e aderenti alle indicazioni europee per la qualità dei servizi. #C
-        img: /images/modelli/comuni-servizi.png
-        alt: ""
-        imgRatio: 4x3
-        imgPlaceholder: false
+      - title: "Design system: come iniziare" #C
+        text: Scopri le finalità e l'impatto del design system e come iniziare a usare le risorse a disposizione di designer e developer per progettare servizi pubblici digitali. #C
+        # img:
+        # alt: ""
+        # imgRatio: 4x3
+        # imgPlaceholder: true
         titleSmall: false
         fullHeight: false
-        url: "/modelli/comuni/adotta-il-modello-di-servizi-digitali-comunali/" #M
+        url: "/design-system/come-iniziare/" #M
         tag:
-          label: MODELLI - SCHEDA OPERATIVA #C
+          label: DESIGN SYSTEM - FONDAMENTI #C
 
       # CARD CHILDREN ACTION MEDIA
-      - title: "L'architettura informativa di un sito comunale"
+      - title: "Servizi inclusivi e usabili per tutti"
         titleSmall: true
         cardEvent: true
-        img: /images/community/media-thumbnails/20230220-l-architettura-informativa-di-un-sito-comunale.jpg
+        img: /images/community/media-thumbnails/20230325-servizi-inclusivi-e-usabili-per-tutti.jpg
         alt: ""
         imgRatio: 16x9
         iconOverlay:
           icon: sprites.svg#it-video
           ariaLabel: Video
-        url: "/community/media/20230220-l-architettura-informativa-di-un-sito-comunale/"
+        url: "/community/media/20230325-servizi-inclusivi-e-usabili-per-tutti/"
         tag:
-          label: Video - Intervista
+          label: Video - Webinar
+
+      # CARD CHILDREN ACTION
+      - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+        headingLevel: 3
+        img: /images/community/articoli-di-approfondimento/20220705-progettare-con-qualita-l-accessibilita-al-centro-del-design-system-del-paese.webp
+        alt: ""
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        url: https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099
+        blank: true
+        externalLink:
+          label: Leggi su medium
+          screenReaderText: " (si apre in una nuova finestra)"
+          icon:
+            icon: sprites.svg#it-external-link
+            size: xs
+        moreInfo: di Daniele Tabellini e Fabrizio Caccavello
+
+      # CARD CHILDREN ACTION
+      - title: "Costruzione interfaccia" #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_UI.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/realizzare/costruzione-interfaccia/" #M
+        text: | #C
+          Costruisci l’interfaccia di un servizio digitale con uno stile grafico semplice e coerente
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
+        share: #AUTO
+          btnId: shareButton2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+      # CARD CHILDREN ACTION
+      - title: "Sviluppo interfaccia" #C
+        fullHeight: true
+        imgRatio: 16x9
+        iconImg: /icons/kit_webDevelopment.svg #I
+        iconImgAlt: "" #C
+        rounded: true
+        url: "/risorse-per-progettare/realizzare/sviluppo-interfaccia/" #M
+        text: | #C
+          Realizza il front-end di un servizio digitale con codice e componenti open source di sviluppo
+        tag:
+          label: RISORSE PER PROGETTARE - KIT DI DESIGN #C
+        share: #AUTO
+          btnId: shareButton2
+          button:
+            addonStyle: icon-only-drop
+            ariaLabel: Condividi
+            icon:
+              icon: sprites.svg#it-more-items
+              size: sm
+              color: secondary
+          list:
+            isShare: true
+
+
+  # ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial2:
+
+    - title: Scopri le indicazioni a supporto di questa azione nel Manuale operativo di design #C
+      menu: false
+      centered: true
+      background: light
+      text: Parti del Manuale operativo di design che possono abilitarti a rispondere all’azione richiesta dal requisito normativo #C
+      components:
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: "Il progetto dell’interfaccia utente" #C
+          headingLevel: 3
+          text: | #C
+            Costruisci un’interfaccia per aiutare l’utente a raggiungere ciò che cerca in modo naturale e immediato, in modo trasparente. Punti cardine di una buona interfaccia sono la coerenza tra gli elementi che la compongono, l’inclusività, l’accessibilità e la tolleranza agli errori.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+            screenReaderText: "Il progetto dell’interfaccia utente (si apre in una nuova finestra)"
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/il-progetto-della-interfaccia-utente.html#il-progetto-dell-interfaccia-utente" #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
