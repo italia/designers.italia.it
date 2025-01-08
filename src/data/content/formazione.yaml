@@ -1,0 +1,156 @@
+# INSTRUCTIONS
+# folder structure:
+# levelX.yaml < contents and settings
+# levelX/ < folder with childrens
+# important: each level has its dedicated template, from level1 to level4
+#
+# comments:
+# #C to locate all editable content
+# #M for links/navigation
+# #I for images/media
+# #AUTO for parts that will soon be automated, preferably
+#
+# comment with # to hide something
+# delete with caution
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level1
+  redirect_from:
+    - /community/formazione
+    - /community/disseminazione
+    - /disseminazione
+    - /educazione
+    - /edu
+  activeLabel: Formazione
+
+# ————————————————————————————————————————————
+# SEO, OPENGRAPH
+# ————————————————————————————————————————————
+seo:
+  name: Formazione - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: XXX Lorem ipsum. #C
+  # image: https://designers.italia.it/images/risorse-per-progettare/social/risorse-per-progettare.png #I XXX
+  canonical: null
+  pathname: /formazione/ #M
+
+# ————————————————————————————————————————————
+# CONTENT
+# ————————————————————————————————————————————
+components:
+
+  # ///////////////////
+  # HERO
+  # ///////////////////
+  hero:
+    background: primary
+    title: Formazione e disseminazione #C
+    subtitle: XXX Lorem ipsum. #C
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: | #C
+      In questa sezione, trovi le risorse per **imparare** e **insegnare** design per la PA, da quando... XXX Lorem ipsum. 
+    # img: /images/risorse-per-progettare/icons/risorse-per-progettare.svg #I XXX
+    # alt: "Il design è un processo iterativo" #C XXX
+    imgRatio: 4x3
+
+    # KANGAROO: METADATA
+    kangaroo:
+      id: metadati-e-link
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Parliamo di
+      color: white
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: white
+      tags: [Cultura progettuale, Formazione, Disseminazione, Partecipazione ]
+
+      # KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Tipologie di materiali #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: white
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #AUTO
+            - url: "per-imparare/" #M
+              label: "Per imparare" #C
+            - url: "per-insegnare/" #M
+              label: "Per insegnare" #C
+
+  # ///////////////////
+  # INTRO
+  # ///////////////////
+  sectionIntro:
+    section: true
+    id: intro
+    headingLevel: 2
+    title: Insegnare e imparare è più semplice col... #C XXX
+    background: null
+    text: | #C
+      XXX Lorem ipsum
+    moreButton: Leggi di più
+    moreButtonClose: Chiudi
+    moreText: | #C
+      XXX Lorem ipsum
+
+  # ///////////////////
+  # HIGHLIGHTS
+  # ///////////////////
+  titleText:
+    title: Scopri e usa i materiali di formazione #C
+
+  # —
+  # HIGHLIGHT LOOP
+  # —
+  highlightsLoop1 :
+    # —
+    # HIGHLIGHT OVERLAY ICON
+    # —
+    - title: Per imparare #C
+      id: imparare
+      # img: /images/400x300.png #I
+      # alt: "" #C #IF NEED DESCRIBE ALSO THE ICON NOT JUST THE BACKGROUND IMAGE IN THE MAIN ALT
+      # overlayImg: /images/risorse-per-progettare/icons/organizzare-large.svg #I XXX
+      # overlayAlt: "" #C XXX
+      headingLevel: 3
+      background: light # null | light | medium | dark
+      big: false
+      specular: false
+      subtitle: "Qui la descrizione dei materiali per imparare" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      buttons: #C #M
+        - label: Esplora i kit per imparare
+          btnStyle: primary
+          url: "per-imparare/"
+          addonStyle: mb-3
+
+    - title: Per insegnare #C
+      id: insegnare
+      # img: /images/400x300.png #I
+      # alt: "" #C #IF NEED DESCRIBE ALSO THE ICON NOT JUST THE BACKGROUND IMAGE IN THE MAIN ALT
+      # overlayImg: /images/risorse-per-progettare/icons/comprendere-large.svg #I XXX
+      # overlayAlt: "" #C XXX
+      headingLevel: 3
+      background: null # null | light | medium | dark
+      big: false
+      specular: false
+      subtitle: "Qui la descrizione dei materiali per insegnare" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      buttons: #C #M
+        - label: Esplora i kit per insegnare
+          btnStyle: primary
+          url: "per-insegnare/"
+          addonStyle: mb-3
+

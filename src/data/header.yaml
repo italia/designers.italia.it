@@ -204,6 +204,26 @@ navbar:
                   label: Realizzare
                 - url: "/risorse-per-progettare/validare/"
                   label: Validare
+      - isDropDown: true
+        isMegaMenu: true
+        idMegamenu: menuE
+        label: Formazione #C
+        megamenu:
+          left:
+            # img: /images/risorse-per-progettare/social/risorse-per-progettare.png #I XXX
+            # imgAlt: "" #C XXX
+            text: | #C
+              **XXX Lorem ipsum.
+          heading:
+            url: "/formazione/" #M
+            label: Esplora i materiali per imparare e insegnare... #C XXX
+          cols:
+            - isMenu: true
+              listItems: #C #M
+                - url: "/formazione/per-imparare/"
+                  label: Per imparare
+                - url: "/formazione/per-insegnare/"
+                  label: Per insegnare
     voicesRight:
       - isDropDown: true
         isMegaMenu: true
