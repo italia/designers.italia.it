@@ -47,7 +47,7 @@ components:
   # ///////////////////
   hero:
     background: primary
-    title: Formazione e disseminazione #C
+    title: Formazione #C
     subtitle: XXX Lorem ipsum. #C
     pretext:
       icon:
@@ -55,7 +55,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      In questa sezione, trovi le risorse per **imparare** e **insegnare** design per la PA, da quando... XXX Lorem ipsum. 
+      In questa sezione, trovi le risorse per **imparare** e **divulgare** design per la PA, da quando... XXX Lorem ipsum. 
     # img: /images/risorse-per-progettare/icons/risorse-per-progettare.svg #I XXX
     # alt: "Il design è un processo iterativo" #C XXX
     imgRatio: 4x3
@@ -88,8 +88,8 @@ components:
           listItems: #AUTO
             - url: "imparare/" #M
               label: "Imparare" #C
-            - url: "insegnare/" #M
-              label: "Insegnare" #C
+            - url: "divulgare/" #M
+              label: "Divulgare" #C
 
   # ///////////////////
   # INTRO
@@ -98,7 +98,7 @@ components:
     section: true
     id: intro
     headingLevel: 2
-    title: Insegnare e imparare è più semplice col... #C XXX
+    title: Insegnare, divulgare e imparare è più semplice col... #C XXX
     background: null
     text: | #C
       XXX Lorem ipsum
@@ -137,8 +137,8 @@ components:
           url: "imparare/"
           addonStyle: mb-3
 
-    - title: Insegnare #C
-      id: insegnare
+    - title: Divulgare #C
+      id: divulgare
       # img: /images/400x300.png #I
       # alt: "" #C #IF NEED DESCRIBE ALSO THE ICON NOT JUST THE BACKGROUND IMAGE IN THE MAIN ALT
       # overlayImg: /images/risorse-per-progettare/icons/comprendere-large.svg #I XXX
@@ -147,10 +147,10 @@ components:
       background: null # null | light | medium | dark
       big: false
       specular: false
-      subtitle: "Qui la descrizione dei materiali per insegnare" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
+      subtitle: "Qui la descrizione dei materiali per divulgare" #C: IF "BIG==TRUE" USE ONLY THIS SUBTITLE, NO TEXT!
       buttons: #C #M
-        - label: Esplora i materiali per insegnare
+        - label: Esplora i materiali per divulgare
           btnStyle: primary
-          url: "insegnare/"
+          url: "divulgare/"
           addonStyle: mb-3
 
