@@ -28,7 +28,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Imparare - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Risorse e materiali utili per ..." #C XXX
+  description: "Corsi, risorse e materiali per imparare a progettare servizi pubblici digitali e gestire progetti di trasformazione digitale nella Pubblica Amministrazione" #C XXX
   image: null #I
   canonical: null
   pathname: /formazione/imparare/ #M
@@ -76,7 +76,7 @@ components:
   hero:
     background: light
     title: Imparare #C
-    subtitle: "Risorse e materiali utili per imparare a progettare servizi pubblici digitali" #C XXX
+    subtitle: "Corsi, risorse e materiali per imparare a progettare servizi pubblici digitali e gestire progetti di trasformazione digitale nella Pubblica Amministrazione" #C XXX
     tag:
         label: Community  #C
         addonClasses: mt-3 text-uppercase
@@ -86,7 +86,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      XXX Esplora i...
+      Esplora i corsi progettati per sviluppare le competenze relative al design in ambito pubblico e imparare norme, strumenti e procedure per progettare servizi pubblici digitali. Ogni corso raccoglie spiegazioni, approfondimenti e testimonianze degli esperti del settore.
 
     # KANGAROO: METADATA
     kangaroo:
@@ -104,7 +104,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri i kit per imparare #C
+          label: Scopri i corsi di formazione #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -113,8 +113,10 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "#/"
-              label: "Titolo del kit" #C
+            - url: "introduzione-alla-progettazione-dei-servizi-digitali/"
+              label: "Introduzione alla progettazione dei servizi digitali" #C
+            - url: "realizzare-interfacce-con-il-design-system-italia/"
+              label: "Realizzare interfacce con il design system .italia" #C
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -137,9 +139,9 @@ components:
       # CARD CHILDREN
       - title: "Introduzione alla progettazione dei servizi digitali" #C
         imgRatio: 16x9
-        # iconImg: /images/risorse-per-progettare/icons/kit_insegnamento.svg #I XXX
-        # iconImgAlt: "" #C XXX
-        text: "Scopri le risorse e gli strumenti per imparare a..." #C
+         iconImg: /images/risorse-per-progettare/icons/kit_insegnamento.svg #I XXX
+         iconImgAlt: "" #C XXX
+        text: "Impara le basi della progettazione e dello svolgimento di progetti di trasformazione digitale nell'ambito pubblico" #C
         titleSmall: false
         fullHeight: true
         url: "introduzione-alla-progettazione-dei-servizi-digitali/" #M XXX
@@ -149,9 +151,9 @@ components:
       # CARD CHILDREN
       - title: "Realizzare interfacce con il design system .italia" #C
         imgRatio: 16x9
-        # iconImg: /images/risorse-per-progettare/icons/kit_insegnamento.svg #I XXX
-        # iconImgAlt: "" #C XXX
-        text: "Scopri le risorse e gli strumenti per imparare a..." #C
+         iconImg: /images/risorse-per-progettare/icons/kit_insegnamento.svg #I XXX
+         iconImgAlt: "" #C XXX
+        text: "Impara a usare gli strumenti per collaborare e realizzare interfacce efficienti, usabili e accessibili per i servizi pubblici digitali" #C
         titleSmall: false
         fullHeight: true
         url: "realizzare-interfacce-con-il-design-system-italia/" #M XXX
@@ -185,11 +187,11 @@ components:
       centered: true
       # noSpace: true
       text: | #C
-        Questi corsi contiengono delle raccolte di contenuti educative suddivise per tipologia e indirizzate alle diverse tipologie di discenti, da corsi base per chi gestisce progetti di trasformazione digitale in ambito pubblico, ad approfondimenti tecnici per chi realizza e sviluppa interfacce e piattaforme digitali. 
+        Questi corsi contengono delle raccolte di contenuti educativi suddivisi per tipologia e indirizzati a sviluppare diverse tipologie di competenze, da corsi base per chi gestisce progetti di trasformazione digitale in ambito pubblico, ad approfondimenti tecnici per chi realizza e sviluppa interfacce e piattaforme digitali. 
       components:
 
         # TXT BLOCK
-        - name: TextImageCta
-          title: XXX Lorem ipsum #C
-          text: | #C
-            XXX Lorem ipsum
+        #- name: TextImageCta
+          #title: XXX Lorem ipsum #C
+          #text: | #C
+            #XXX Lorem ipsum
