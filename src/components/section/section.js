@@ -10,7 +10,7 @@ function Section({ background, bgImage, whiteText, describedBy, children }) {
   return (
     <section
       className={sectionnStyles}
-      aria-describedby={describedBy}
+      aria-labelledby={describedBy}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="section-content">{children}</div>
