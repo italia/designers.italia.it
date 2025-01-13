@@ -28,8 +28,8 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Progettare interfacce con il design system .italia - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Scopri tutti i contenuti formativi riguardanti il design system .italia, sviluppati per e con la collaborazione della Community di Designers Italia. ." #C
+  name: Realizzare interfacce con il design system .italia - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: "Impara a usare gli strumenti per collaborare e realizzare interfacce  efficienti, usabili e accessibili per i servizi pubblici digitali." #C
   image: https://designers.italia.it/images/risorse-per-progettare/social/kit_insegnamento.png #I
   canonical: null
   pathname: /formazione/imparare/progettare-interfacce-con-il-design-system-italia/ #M
@@ -88,8 +88,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: Progettare interfacce con il design system .italia #C
-    subtitle: "Scopri tutti i contenuti formativi riguardanti il design system .italia, sviluppati per e con la collaborazione della Community di Designers Italia." #C
+    title: Realizzare interfacce con il design system .italia #C
+    subtitle: "Impara a usare gli strumenti per collaborare e realizzare interfacce  efficienti, usabili e accessibili per i servizi pubblici digitali" #C
     tag:
       label: Corso di formazione #C
       addonClasses: mt-3 text-uppercase
@@ -139,7 +139,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Docente #C
+            label: Designer, Developer, Studente #C
           - title: Vuoi
             tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
@@ -147,21 +147,21 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Insegnare i princìpi della progettazione dei servizi per la PA #C
+            label: Imparare a progettare servizi digitali per la PA #C
       tagsLabel: Parliamo di
       color: secondary
       icon:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Formazione,Cultura progettuale,Human centred design]
+      tags: [Formazione,Cultura progettuale,Interfaccia utente,Progettazione interfaccia,Progettazione servizi,Design system,UI Kit]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri le risorse del kit #C
+          label: Scopri i contenuti del corso #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -170,8 +170,16 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "il-ruolo-del-design-nella-trasformazione-digitale-della-pa/"
-              label: Il ruolo del design nella trasformazione digitale della PA #C
+            - url: "il-design-system-italia-per-servizi-digitali-di-qualita/"
+              label: Il design system .italia per servizi digitali di qualità #C
+            - url: "ui-kit-e-design-token/"
+              label: UI Kit e design token #C
+            - url: "bootstrap-italia-2-0/"
+              label: Bootstrap Italia 2.0 #C
+            - url: "realizzare-interfacce-accessibili-con-il-design-system-italia/"
+              label: Realizzare interfacce accessibili con il design system .italia #C
+            - url: "design-system-italia-e-la-progettazione-di-servizi-pubblici-digitali/"
+              label: Design system .italia e la progettazione di servizi pubblici digitali #C             
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -229,8 +237,8 @@ components:
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Le lezioni di questo corso di formazione #C
-    text: Scegli tra i temi proposti in questo kit per proporre ai tuoi studenti nozioni relative al design per l’ambito pubblico, focalizzandoti su servizi e interfacce digitali. #C
+    title: I contenuti di questo corso #C
+    text: Esplora i temi proposti in questo corso per imparare a a usare gli strumenti per realizzare interfacce con il design system .italia #C
     col4: false
     noSpace: false
     nopadtop: true
@@ -245,11 +253,11 @@ components:
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
         iconImgAlt: "" #C
-        url: "intro-alla-progettazione-dei-servizi-digitali/" #M
+        url: "il-design-system-italia-per-servizi-digitali-di-qualita/" #M
         text: | #C
           Segui questi corsi di formazione verticali sulle competenze necessarie, realizzato in collaborazione con ANCI per funzionari pubblici e non solo.
         tag:
-          label: Lezione del corso #C
+          label: Webinar #C
 
      # CARD CHILDREN ACTION
       - title: "UI kit e design token" #C
@@ -258,11 +266,11 @@ components:
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
         iconImgAlt: "" #C
-        url: "realizzare-interfacce-con-il-design-system-italia/" #M
+        url: "ui-kit-e-design-token/" #M
         text: | #C
           Scopri tutti i contenuti formativi riguardanti il design system .italia, sviluppati per e con la collaborazione della Community di Designers Italia.
         tag:
-          label: Lezione del corso #C
+          label: Webinar #C
 
      # CARD CHILDREN ACTION
       - title: "Bootstrap italia 2.0" #C
@@ -271,24 +279,24 @@ components:
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
         iconImgAlt: "" #C
-        url: "realizzare-interfacce-con-il-design-system-italia/" #M
+        url: "bootstrap-italia-2-0/" #M
         text: | #C
           Scopri tutti i contenuti formativi riguardanti il design system .italia, sviluppati per e con la collaborazione della Community di Designers Italia.
         tag:
-          label: Lezione del corso #C
+          label: Webinar #C
 
      # CARD CHILDREN ACTION
-      - title: "Realizzare interfacce pubbliche di qualità e più accessibili grazie al design system del Paese" #C
+      - title: "Realizzare interfacce accessibili con il design system .italia" #C
         fullHeight: true
         rounded: true
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
         iconImgAlt: "" #C
-        url: "realizzare-interfacce-con-il-design-system-italia/" #M
+        url: "realizzare-interfacce-accessibili-con-il-design-system-italia/" #M
         text: | #C
           Scopri tutti i contenuti formativi riguardanti il design system .italia, sviluppati per e con la collaborazione della Community di Designers Italia.
         tag:
-          label: Lezione del corso #C
+          label: Webinar #C
 
      # CARD CHILDREN ACTION
       - title: "design system .italia e la progettazione di servizi pubblici digitali" #C
@@ -297,8 +305,8 @@ components:
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
         iconImgAlt: "" #C
-        url: "realizzare-interfacce-con-il-design-system-italia/" #M
+        url: "design-system-italia-e-la-progettazione-di-servizi-pubblici-digitali/" #M
         text: | #C
           Scopri tutti i contenuti formativi riguardanti il design system .italia, sviluppati per e con la collaborazione della Community di Designers Italia.
         tag:
-          label: Lezione del corso #C
+          label: Webinar #C
