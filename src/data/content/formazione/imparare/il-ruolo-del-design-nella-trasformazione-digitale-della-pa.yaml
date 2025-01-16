@@ -157,28 +157,28 @@ components:
         color: secondary
       tags: [Formazione, Cultura progettuale, Human centred design, Data driven design, Progettazione servizi]
 
-      # KANGAROO: CHILDREN SHORTCUTS
-      dropdown:
-        btnId: dropdownKang
-        button:
-          addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri i contenuti del corso #C
-          iconRight: true
-          icon:
-            icon: sprites.svg#it-expand
-            size: sm
-            color: primary
-            addonClasses: icon-expand ms-2
-        list:
-          listItems: #M
-            - url: "il-ruolo-del-design-nella-trasformazione-digitale-della-pa/"
-              label: Il ruolo del design nella trasformazione digitale della PA #C
-            - url: "comprendere-contesto-d-uso-e-stato-dell-arte-per-progettare-servizi-digitali/"
-              label: Comprendere contesto d'uso e stato dell'arte per progettare servizi digitali #C
-            - url: "progettare-servizi-e-touchpoint-digitali-della-PA/"
-              label: Progettare servizi e touchpoint digitali della PA #C
-            - url: "l-importanza-dei-dati-nella-PA/"
-              label: L’importanza dei dati nella PA #C
+      # # KANGAROO: CHILDREN SHORTCUTS
+      # dropdown:
+      #   btnId: dropdownKang
+      #   button:
+      #     addonStyle: dropdown-toggle btn-dropdown
+      #     label: Scopri i contenuti del corso #C
+      #     iconRight: true
+      #     icon:
+      #       icon: sprites.svg#it-expand
+      #       size: sm
+      #       color: primary
+      #       addonClasses: icon-expand ms-2
+      #   list:
+      #     listItems: #M
+      #       - url: "il-ruolo-del-design-nella-trasformazione-digitale-della-pa/"
+      #         label: Il ruolo del design nella trasformazione digitale della PA #C
+      #       - url: "comprendere-contesto-d-uso-e-stato-dell-arte-per-progettare-servizi-digitali/"
+      #         label: Comprendere contesto d'uso e stato dell'arte per progettare servizi digitali #C
+      #       - url: "progettare-servizi-e-touchpoint-digitali-della-PA/"
+      #         label: Progettare servizi e touchpoint digitali della PA #C
+      #       - url: "l-importanza-dei-dati-nella-PA/"
+      #         label: L’importanza dei dati nella PA #C
   
 
   # ///////////////////
@@ -205,7 +205,6 @@ components:
              Il corso è nato dalla collaborazione tra il Dipartimento della trasformazione digitale ed ANCI, unioni e associazioni di Comuni, città metropolitane e società partecipate ed è **erogato sulla piattaforma dell’Accademia dei Comuni Digitali**. 
 
              Il design è la disciplina che si occupa di risolvere problemi complessi, mettendo insieme la prospettiva sia di chi eroga che di chi fruisce dei servizi, sfruttando al meglio le tecnologie digitali, in particolar modo quando elementi e attori coinvolti sono numerosi ed eterogenei, come nella Pubblica Amministrazione. L’approccio proposto da Designers Italia determina le modalità di gestione di un progetto e ne influenza i risultati in modo significativo, facendo risparmiare tempo e denaro a cittadini ed enti. Questa lezione ha l’obiettivo di introdurre i principi e gli elementi chiave grazie ai quali si possono progettare e realizzare siti e servizi digitali semplici, accessibili, inclusivi, sia per i cittadini che per gli stessi operatori pubblici.
-             
         # TXT BLOCK
         - name: TextImageCta
           title: Competenze sviluppate #C
@@ -214,42 +213,20 @@ components:
             - definire il processo necessario allo sviluppo di servizi digitali in ambito pubblico;
             - comprendere e saper esprimere il valore di un approccio alla trasformazione digitale della PA, sistemico e centrato sulle persone;
             - orientare tra le principali normative di riferimento nell’ambito dei servizi digitali, in particolar modo rispetto al design di siti e servizi digitali.
-            
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Durata #C
-          text: | #C
-            3 ore, suddivise in 3 interventi diversi 
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Come accedere #C
-          text: | #C
-            Dalla pagina pubblica dell’Accademia dei Comuni Digitali, selezionare il pulsante “Login” in alto a destra. Si aprirà una finestra per accedere tramite SPID o CIE; al primo accesso, verranno richiesti alcuni dati per completare il profilo utente. Tra i corsi disponibili scegliere quello desiderato e cliccare su “Iscriviti” (è possibile iscriversi a più corsi). I corsi a cui si è iscritti sono tutti visibili selezionando il tasto “I miei corsi”.
 
         # TXT + CTA BLOCK
         - name: TextImageCta
           title: "Certificazione competenze" #C
+          headingLevel: 4
           text: | #C
              Ogni videolezione prevede il rilascio di **badge digitali** che attestano le competenze e le conoscenze acquisite. Gli utenti possono scaricare il Badge digitale dalla dashboard sul sito dell’Accademia per uso interno alla propria organizzazione e connetterlo, tramite Canvas Badges, ai propri profili social. Non ha valenza come crediti nei concorsi pubblici ma può essere usato dai dipendenti dei Comuni come ore di formazione obbligatoria. 
             
-          #ctas:
-          #- label: "Scopri di più sul progetto e sfoglia l’Atlante" #C
-            # screenReaderText: " (si apre in una nuova finestra)" #C
-            #url: "/community/notizie/20220325-atlante-della-trasformazione-digitale/" #M
-            #blank: false #M #C true if new tab for external links
-            #icon:
-              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
-
-  # ///////////////////
-  # SECTION EDITORIAL
-  # ///////////////////
-  #sectionsEditorial2 :
+        # TXT BLOCK
+        - name: TextImageCta
+          noSpace: true
+          title: Durata #C
+          text: | #C
+            3 ore, suddivise in 3 interventi diversi 
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -257,38 +234,84 @@ components:
   highlightCards:
     id: HC1
     title: I contenuti di questo corso #C
-    text: Esplora i temi proposti in questo corso per familiarizzare con l'ambito della progettazione di servizi pubblici digitali #C
+    text: Esplora i temi proposti per familiarizzare con l'ambito della progettazione di servizi pubblici digitali #C
     col4: false
     noSpace: false
     nopadtop: true
+    hasCustomCols: true
 
     # CARDS
     cards: # AUTO?
 
-      # CARD CHILDREN ACTION
-      - title: "Design e Pubblica Amministrazione" #C
-        fullHeight: true
-        rounded: true
-        imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
-        iconImgAlt: "" #C
-        url: "il-ruolo-del-design-nella-trasformazione-digitale-della-pa/" #M
+      # CARD CHILDREN
+      - title: "Design e Pubblica Amministrazione"
         text: | #C
           Una panoramica sull’importanza che ha il design nel processo di trasformazione digitale dei servizi pubblici.
-        tag:
-          label: Videolezione #C
-
-     # CARD CHILDREN ACTION
-      - title: "Un processo progettuale virtuoso: il modello per i Musei civici" #C
+        # titleSmall: true
         fullHeight: true
+        customCol: col-lg-9
+        # url: "azione-1/" #M
         rounded: true
-        imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
-        iconImgAlt: "" #C
-        url: "comprendere-contesto-d-uso-e-stato-dell-arte-per-progettare-servizi-digitali/" #M
-        text: | #C
-          Come progettare un servizio partendo dalla comprensione del contesto in cui si posizionerà e delle circostanze in cui verrà utilizzato.
         tag:
           label: Videolezione #C
 
+      # CARD CHILDREN
+      - title: "Design e Pubblica Amministrazione"
+        text: | #C
+          Una panoramica sull’importanza che ha il design nel processo di trasformazione digitale dei servizi pubblici.
+        # titleSmall: true
+        fullHeight: true
+        customCol: col-lg-9
+        # url: "azione-1/" #M
+        rounded: true
+        tag:
+          label: Videolezione #C
+
+      # CARD CHILDREN
+      - title: "Design e Pubblica Amministrazione"
+        text: | #C
+          Una panoramica sull’importanza che ha il design nel processo di trasformazione digitale dei servizi pubblici.
+        # titleSmall: true
+        fullHeight: true
+        customCol: col-lg-9
+        # url: "azione-1/" #M
+        rounded: true
+        tag:
+          label: Videolezione #C
      
+# ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial2 :
+# —
+    # EDITORIAL #C #I
+    # —
+    - title: Come accedere #C
+      menu: false
+      noSpace: true
+      centered: true
+      background: null
+      #text: | #C
+      #  Lorem **ipsum**
+      components:
+      
+        # TXT BLOCK
+        - name: TextImageCta
+          # title: Come accedere #C
+          headingLevel: 2
+          text: | #C
+            Dalla pagina pubblica dell’Accademia dei Comuni Digitali, selezionare il pulsante “Login” in alto a destra. Si aprirà una finestra per accedere tramite SPID o CIE; al primo accesso, verranno richiesti alcuni dati per completare il profilo utente. Tra i corsi disponibili scegliere quello desiderato e cliccare su “Iscriviti” (è possibile iscriversi a più corsi). I corsi a cui si è iscritti sono tutti visibili selezionando il tasto “I miei corsi”.
+          ctas:
+          - label: "Accedi sulla piattaforma ANCI per visualizzare i contenuti" #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: # #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+    
