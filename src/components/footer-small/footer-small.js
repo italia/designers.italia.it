@@ -18,9 +18,7 @@ function FooterSmall({ items }) {
                 aria-label={value.ariaLabel}
               >
                 {value.title}
-                {value.icon &&
-                  <Icon {...value.icon} />
-                }
+                {value.icon && <Icon {...value.icon} />}
               </Link>
             </li>
           ))}
