@@ -144,7 +144,7 @@ function MediaPlayerEl({
               data-bs-toggle="collapse"
               data-bs-target={`#${videoId}-transcription`}
               aria-expanded="true"
-              aria-controls="transcription"
+              aria-controls={`${videoId}-transcription`}
             >
               {t("trascriptionLabel")}
             </button>
