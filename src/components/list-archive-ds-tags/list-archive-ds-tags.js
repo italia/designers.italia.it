@@ -24,7 +24,7 @@ function ListArchiveDSTags() {
   `);
 
   return (
-    <section className="pb-5" aria-describedby="archive-list-title">
+    <section className="pb-5" aria-labelledby="archive-list-title">
       <div className="d-md-flex flex-row align-items-center">
         <h3 className="border-end pe-4" id="archive-list-title">
           Esplora per utilizzo

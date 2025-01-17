@@ -67,7 +67,7 @@ function ListArchiveEvents({ background, noSpace }) {
   });
 
   return (
-    <section className={styles} aria-describedby="archive-list-title">
+    <section className={styles} aria-labelledby="archive-list-title">
       <div className="container-xxl">
         <div className="row">
           <div className="col-12 g-0">
