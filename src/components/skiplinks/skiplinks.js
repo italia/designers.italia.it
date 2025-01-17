@@ -7,8 +7,8 @@ function Skiplinks({ data }) {
 
   if (skiplinks) {
     skiplinksItems = skiplinks.map((item, index) => (
-      <li className="visually-hidden-focusable">
-        <a key={`skiplink-${index}`} href={item.url}>
+      <li key={`skiplink-${index}`} className="visually-hidden-focusable">
+        <a href={item.url}>
           {item.label}
         </a>
       </li>
