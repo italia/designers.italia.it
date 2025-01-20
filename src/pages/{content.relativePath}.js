@@ -322,23 +322,23 @@ export const query = graphql`
             tags
           }
         }
-        highlightsLoop {
-          title
-          subtitle
-          id
-          headingLevel
-          big
-          background
-          specular
-          buttons {
-            label
-            btnStyle
-            url
-            addonStyle
-            # disabled
-          }
-          # text
-        }
+        # highlightsLoop {
+        #   title
+        #   subtitle
+        #   id
+        #   headingLevel
+        #   big
+        #   background
+        #   specular
+        #   buttons {
+        #     label
+        #     btnStyle
+        #     url
+        #     addonStyle
+        #     # disabled
+        #   }
+        #   # text
+        # }
         highlightsLoop1 {
           title
           id

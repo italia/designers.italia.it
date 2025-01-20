@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "../link/link";
+import Icon from "../icon/icon";
 import "./footer-small.scss";
 
 function FooterSmall({ items }) {
@@ -17,6 +18,7 @@ function FooterSmall({ items }) {
                 aria-label={value.ariaLabel}
               >
                 {value.title}
+                {value.icon && <Icon {...value.icon} />}
               </Link>
             </li>
           ))}
