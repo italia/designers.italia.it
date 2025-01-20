@@ -200,7 +200,7 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-             Questo **corso gratuito**, nato dalla collaborazione con ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare con l’ambito della progettazione di servizi digitali.
+             Questo **corso gratuito**, nato dalla collaborazione tra il Dipartimento per la trasformazione digitale e ANCI, è stato pensato per chi lavora per e con i Comuni, ma è **aperto a chiunque** voglia familiarizzare conla progettazione di servizi digitali in ambito pubblico.
 
              Il corso introduce i principi, il processo e le normative chiave per progettare e realizzare siti e servizi digitali semplici, accessibili e inclusivi, sia per i cittadini che per gli stessi operatori pubblici. 
 
@@ -226,9 +226,45 @@ components:
           noSpace: true
           title: Certificazione #C
           text: | #C
-            Il corso prevede il rilascio di un **badge digitale** che attesta le competenze e le conoscenze acquisite, dopo aver superato un quiz di valutazione finale. Puoi usare il badge internamente alla tua organizzazione e connetterlo ai tuoi profili social. Non ha valenza come crediti nei concorsi pubblici ma può essere usato dai dipendenti dei Comuni per cumulare ore di formazione obbligatoria.
+            Il corso prevede un quiz di valutazione finale per il rilascio di un **badge digitale** che attesta le competenze e le conoscenze acquisite. Puoi usare il badge internamente alla tua organizzazione e connetterlo ai tuoi profili social. Non ha valenza come crediti nei concorsi pubblici ma può essere usato dai dipendenti dei Comuni per cumulare ore di formazione obbligatoria.
               
-                    
+  # ///////////////////
+  # SECTION EDITORIAL
+  # ///////////////////
+  sectionsEditorial2 :
+# —
+    # EDITORIAL #C #I
+    # —
+    - title: Segui il corso #C
+      menu: false
+      noSpace: true
+      centered: true
+      background: null
+      #text: | #C
+      #  Lorem **ipsum**
+      components:
+      
+        # TXT BLOCK
+        - name: TextImageCta
+          # title: Segui il corso #C
+          headingLevel: 2
+          text: | #C
+            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**.  
+
+            È obbligatorio seguire le lezioni in ordine e completare una lezione per passare alla successiva. Per ottenere il badge devi completare almeno l’80% di ciascuna lezione e superare il quiz di valutazione finale.  
+          ctas:
+          - label: "Accedi al corso" #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: # #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+                  
 
   # ///////////////////
   # HIGHLIGHT WITH CARDS
@@ -267,6 +303,7 @@ components:
         customCol: col-lg-9
         # url: "azione-1/" #M
         rounded: true
+        moreInfo: "Docente: Chiara Leonardi"
         tag:
           label: Videolezione #C
 
@@ -279,6 +316,7 @@ components:
         customCol: col-lg-9
         # url: "azione-1/" #M
         rounded: true
+        moreInfo: "Relatore: Simone Jacca"
         tag:
           label: Intervista #C
      
@@ -289,7 +327,7 @@ components:
 # —
     # EDITORIAL #C #I
     # —
-    - title: Segui il corso #C
+    - title: Scopri tutti i corsi #C
       menu: false
       noSpace: true
       centered: true
@@ -303,11 +341,9 @@ components:
           # title: Segui il corso #C
           headingLevel: 2
           text: | #C
-            Per seguire il corso, **accedi alla piattaforma dell’Accademia dei Comuni digitali con SPID o CIE**.  
-
-            È obbligatorio iniziare dalla prima lezione e completarla per poter passare alle successive. Per ottenere il badge devi completare almeno l’80% di ciascuna lezione e superare il quiz di valutazione finale.  
+            Vai alla piattaforma dell’Accademia dei Comuni digitali e scopri tutti i corsi dedicati alla progettazione di servizi pubblici digitali.
           ctas:
-          - label: "Accedi al corso" #C
+          - label: "Vai all'Accademia dei Comuni digitali" #C
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: # #M
             blank: true #M #C true if new tab for external links
