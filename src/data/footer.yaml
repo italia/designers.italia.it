@@ -14,7 +14,7 @@ footer:
     social:
       title: Seguici su
       buttons:
-        - ariaLabel: Seguici su Medium
+        - ariaLabel: Seguici su Medium (si apre in una nuova finestra)
           url: "https://medium.com/designers-italia"
           addonStyle: p-0 me-4
           blank: true
@@ -23,7 +23,7 @@ footer:
             size: sm
             color: white
             addonClasses: align-top
-        - ariaLabel: Seguici su Twitter
+        - ariaLabel: Seguici su Twitter (si apre in una nuova finestra)
           url: "https://twitter.com/DesignersITA/"
           blank: true
           addonStyle: p-0
@@ -40,21 +40,53 @@ footer:
         customStyleUl: footer-list clearfix mb-0 h-100
         items:
           - label: Forum Italia
-            ariaLabel: Vai a Forum Italia
+            ariaLabel: Vai a Forum Italia (si apre in una nuova finestra)
             url: "https://forum.italia.it"
             blank: true
+            iconLeft: true
+            icon:
+              icon: sprites.svg#it-designers-italia #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: me-2 mb-1
           - label: Slack 
-            ariaLabel: "Vai a Slack, cerca i canali #design"
+            ariaLabel: "Vai a Slack, cerca i canali #design (si apre in una nuova finestra)"
             url: "https://slack.developers.italia.it/"
             blank: true
+            iconLeft: true
+            icon:
+              icon: sprites.svg#it-slack #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: me-2 mb-1
           - label: GitHub
-            ariaLabel: Vai su GitHub, organizzazione Italia
+            ariaLabel: Vai su GitHub, organizzazione Italia (si apre in una nuova finestra)
             url: "https://github.com/italia"
             blank: true
+            iconLeft: true
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: me-2 mb-1
           - label: Docs Italia
-            ariaLabel: Vai su Docs Italia
+            ariaLabel: Vai su Docs Italia (si apre in una nuova finestra)
             url: "https://docs.italia.it/"
             blank: true
+            iconLeft: true
+            icon:
+              icon: sprites.svg#it-designers-italia #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: me-2 mb-1
     subscribe:
       title: Mailing list
       link:
