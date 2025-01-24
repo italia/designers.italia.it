@@ -20,17 +20,18 @@ metadata:
   template:
     name: level2
   redirect_from:
-    - /community/disseminazione
     - /community/materiali-di-disseminazione
     - /materiali-di-disseminazione
     - /formazione/materiali-di-disseminazione
+    - /community/materiali-di-disseminazione/insegnare-design-per-la-pa
+    - /materiali-di-disseminazione/insegnare-design-per-la-pa
 
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Divulgare - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Risorse e materiali utili per divulgare la cultura della progettazione nell’ambito della Pubblica Amministrazione." #C
+  name: Insegnare - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: "Risorse e materiali per insegnare la cultura della progettazione nell’ambito della Pubblica Amministrazione." #C
   image: null #I
   canonical: null
   pathname: /formazione/divulgare/ #M
@@ -77,8 +78,8 @@ components:
   # ///////////////////
   hero:
     background: light
-    title: Divulgare #C
-    subtitle: "Risorse e materiali utili per divulgare la cultura della progettazione nell’ambito della Pubblica Amministrazione" #C
+    title: Insegnare #C
+    subtitle: "Risorse e materiali per insegnare la cultura della progettazione nell’ambito della Pubblica Amministrazione" #C
     tag:
         label: Formazione  #C
         addonClasses: mt-3 text-uppercase
@@ -88,7 +89,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Esplora i kit progettati per supportare il lavoro di chi vuole divulgare concetti e metodologie relative al design in ambito pubblico, condividere esperienze dirette, presentare l’approccio e le risorse di Designers Italia. I kit sono organizzati tenendo conto degli obiettivi dell’utente e in base all’azione di divulgazione da svolgere.
+      Esplora i kit progettati per supportare il lavoro di chi vuole divulgare concetti e metodologie relative al design in ambito pubblico, condividere esperienze dirette, presentare l’approccio e le risorse di Designers Italia. Questi kit offrono tutto ciò che può essere utile per inserire all'interno di un programma didattico per studenti l'insegnamento dei principi del design per il settore pubblico e realizzare esercitazioni pratiche sul tema.
     img: /images/formazione/icons/divulgare-large.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -109,7 +110,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri i kit di divulgazione #C
+          label: Scopri i kit di insegnamento #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -118,8 +119,8 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "insegnare-design-per-la-pa/"
-              label: "Insegnare design per la PA" #C
+            - url: "il-ruolo-del-design-nella-trasformazione-digitale-della-pa/"
+              label: "Il ruolo del design nella trasformazione digitale della PA" #C
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -131,7 +132,7 @@ components:
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Esplora e usa i kit di divulgazione #C
+    title: Esplora e usa i kit di insegnamento #C
     text: #C
     col4: false
     noSpace: false
@@ -140,14 +141,14 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: "Insegnare design per la PA" #C
+      - title: "Il ruolo del design nella trasformazione digitale della PA" #C
         imgRatio: 16x9
-        iconImg: /images/risorse-per-progettare/icons/kit_insegnamento.svg #I
+        iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
         iconImgAlt: "" #C
-        text: "Scopri le risorse e gli strumenti per educare alla progettazione per il settore pubblico." #C
+        text: "Insegna l’importanza che ha il design nel processo di trasformazione digitale dei servizi pubblici." #C
         titleSmall: false
         fullHeight: true
-        url: "insegnare-design-per-la-pa/" #M
+        url: "il-ruolo-del-design-nella-trasformazione-digitale-della-pa/" #M
         tag:
           label: Kit di insegnamento #C
 
@@ -157,37 +158,38 @@ components:
   # ///////////////////
   sectionsEditorial2 :
 
-    # # —
-    # # IMG FULL COVER
-    # # —
-    # - menu: false #TOGGLE RIGHT SECTION INDEX
-    #   background: null
-    #   full: true
-    #   noSpace: true
-    #   components:
-    #     # IMG
-    #     - name: ImageIcons
-    #       image: /images/image-icons-fullwidth.jpg #I
-    #       alt: Descrizione immagine grande #C
 
     # —
     # EDITORIAL #C #I
     # —
-    - title: Consentire alla community di promuovere il nostro approccio
-      background: null
+    - title: A cosa serve il kit Insegnare design per la PA #C
       menu: false
       centered: true
-      # noSpace: true
-      text: | #C
-        Mettiamo a disposizione risorse per chi vuole fare divulgazione sul design per il settore pubblico
+      background: null
+      #text: | #C
+      #  Lorem **ipsum**
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Come abilitare la rete di sostenitori della progettazione virtuosa in ambito pubblico #C
           text: | #C
-            Per guidare la trasformazione digitale della Pubblica Amministrazione è importante sfruttare il valore della community nel sostenere un nuovo modo di affrontare la progettazione dei servizi digitali.  
-            
-            Queste risorse sono utili a tutti coloro che vogliono farsi portavoce dell'approccio di Designers Italia, delle sue metodologie e risorse, teoriche e operative, per informare gli altri attori coinvolti in questo cambiamento.  
-            
-            Perché la disseminazione della cultura progettuale sia efficace è necessaria la partecipazione di una varietà di figure, del settore privato e pubblico: professori e studenti, funzionari ed esperti di comunicazione, progettisti e sviluppatori.
+            Grazie al kit Insegnare il design per la PA potrai, in modo autonomo, integrare lezioni e laboratori sui principi del design nei servizi pubblici all’interno del tuo programma didattico.
+            Il kit offre materiali teorici, come presentazioni e casi studio, e una serie di strumenti pratici per condurre esercitazioni, workshop o altri momenti di applicazione pratica, selezionati tra le risorse per progettare proposte da Designers Italia. 
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          title: "Scopri un esempio pratico: l’Atlante della trasformazione digitale della PA" #C
+          text: | #C
+            L’insegnamento del design per il settore pubblico può essere rilevante per numerosi ambiti accademici: focalizzarsi su un brief progettuale fornisce agli studenti un contesto di vita reale all’interno del quale operare e può  aiutarli a nella creazione di elaborati utili ad arricchire il loro portfolio, ma anche interessanti per le istituzioni.
+          ctas:
+          - label: "Scopri di più sul progetto e sfoglia l’Atlante" #C
+            # screenReaderText: " (si apre in una nuova finestra)" #C
+            url: "/community/notizie/20220325-atlante-della-trasformazione-digitale/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
