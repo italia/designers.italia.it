@@ -66,10 +66,6 @@ components:
               label: Articoli di approfondimento
             - url: "media/"
               label: Media
-            - url: "piano-attivita/"
-              label: Piano attività
-            - url: "contatti/"
-              label: Contatti
 
 
 
@@ -525,49 +521,94 @@ components:
           label: Video - Webinar
 
 
-  highlightsLoop:
-    - title: Materiali di disseminazione
-      subtitle: "Risorse e materiali utili per divulgare la cultura della progettazione nell’ambito della Pubblica Amministrazione"
-      id: materiali-di-disseminazione
-      # img: /images/400x300.png
-      # alt: descrizione immagine
-      headingLevel: 2
-      big: false
-      background: medium
-      specular: true
-      buttons:
-        - label: Scopri i materiali di disseminazione
-          btnStyle: primary
-          url: "materiali-di-disseminazione/"
-          addonStyle: mb-3
+  # highlightsLoop:
+  #   - title: Materiali di disseminazione
+  #     subtitle: "Risorse e materiali utili per divulgare la cultura della progettazione nell’ambito della Pubblica Amministrazione"
+  #     id: materiali-di-disseminazione
+  #     # img: /images/400x300.png
+  #     # alt: descrizione immagine
+  #     headingLevel: 2
+  #     big: false
+  #     background: medium
+  #     specular: true
+  #     buttons:
+  #       - label: Scopri i materiali di disseminazione
+  #         btnStyle: primary
+  #         url: "materiali-di-disseminazione/"
+  #         addonStyle: mb-3
 
-    - title: Piano attività
-      subtitle: "Gli obiettivi e i risultati del progetto Designers Italia"
-      id: piano-attivita
-      # img: /images/400x300.png
-      # alt: descrizione immagine
-      headingLevel: 2
-      big: false
+  sectionsEditorial:
+# —
+    # EDITORIAL #C #I
+    # —
+    - menu: false
+      centered: true
       background: light
-      specular: true
-      buttons:
-        - label: Scopri il piano attività
-          btnStyle: primary
-          url: "piano-attivita/"
-          addonStyle: mb-3
+      title: La community di riferimento #C
+      text: | #C
+        Scopri i canali dove confrontarti sulle risorse di Designers Italia, del design system del Paese e dei modelli di sito e servizi
+      components:
 
-    - title: Contatti
-      subtitle: "Richiedi informazioni sulle attività e i progetti di Designers Italia"
-      id: contatti
-      # img: /images/400x300.png
-      # alt: descrizione immagine
-      headingLevel: 2
-      big: false
-      background: null
-      specular: true
-      buttons:
-        - label: Scopri i contatti
-          btnStyle: primary
-          url: "contatti/"
-          addonStyle: mb-3
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/ItForum.svg #I
+          alt: "" #C
+          specular: true
+          #title: ciao
+          text: |
+            **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
+          ctas:
+          - label: Vai su Forum Italia #C
+            url: https://forum.italia.it/c/design/modello-comuni/ #M
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/Slack.svg #I
+          alt: "" #C
+          specular: true
+          #title: ciao
+          text: |
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer sui canali Slack dedicati al #design
+          ctas:
+          - label: Vai su Slack #C
+            url: https://slack.developers.italia.it/ #M
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          noSpace: true
+          image: /images/Github.svg #I
+          alt: "" #C
+          specular: true
+          #title: ciao
+          text: |
+            **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
+          ctas:
+          - label: Vai su GitHub #C
+            url: https://github.com/italia/  #M
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
