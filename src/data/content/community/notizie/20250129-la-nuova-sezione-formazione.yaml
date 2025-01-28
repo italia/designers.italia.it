@@ -1,0 +1,126 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+
+seo:
+  name: "La nuova sezione Formazione: online i primi quattro corsi per ANCI"
+  description: "Da oggi disponibili materiali formativi a disposizione di tutte le figure interessate a progettare servizi digitali per il settore pubblico."
+  #image:  https://designers.italia.it/images/community/20241129-aggiornamento-kit-architettura.png #I
+  canonical: null
+  pathname: /community/notizie/20250129-la-nuova-sezione-formazione/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "La nuova sezione Formazione: online i primi quattro corsi per ANCI"
+    subtitle: "Da oggi disponibili materiali formativi a disposizione di tutte le figure interessate a progettare servizi digitali per il settore pubblico"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Formazione, Disseminazione, Cultura progettuale]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 29 gennaio 2025
+
+  imageIcons:
+   image: /images/community/202501-nuovo-kit-formazione-1920x923.png
+   alt: ""
+   background: null
+
+  sectionsEditorial :
+
+    # - menu: false
+    #   noSpace: false
+    #   centered: true
+    #   # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+    #   # text:
+    #   id: corpoNotizia
+    #   components:
+    #     - name: TextImageCta
+    #       noSpace: true
+    #       text: |
+            
+        
+
+    - menu: false
+      noSpace: false
+      centered: true
+      # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+      # text:
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            Lorem ipsum            
+
+        - name: TextImageCta
+          title: Impara con noi
+          #text: |
+          
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: Segui i corsi online
+            url: "/formazione/imparare/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+
+
+
+            
