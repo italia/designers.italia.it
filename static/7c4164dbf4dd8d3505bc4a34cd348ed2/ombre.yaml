@@ -1,0 +1,119 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/organizzare-gli-spazi/ombreggiature.json
+  template:
+    name: design-system-index
+
+seo:
+  name: Ombre
+  description: "Le ombre aggiungono profondità, contrasto ed enfasi visiva ai componenti, contribuendo a migliorare l'usabilità e l'aspetto generale dell'interfaccia"
+  image: null
+  canonical: null
+  pathname: /design-system/fondamenti/ombre/
+
+components:
+
+  # HERO
+  hero:
+    background: null
+    title: Ombre
+    column: true
+    subtitle: "Le ombre aggiungono profondità, contrasto ed enfasi visiva ai componenti, contribuendo a migliorare l'usabilità e l'aspetto generale dell'interfaccia"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase 
+
+    # KANGAROO
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia,Sviluppo interfaccia]
+  
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      components:
+        - name: TextImageCta
+          title: Obiettivi principali
+          headingLevel: 2
+          text: |
+            Le ombre servono a:
+            - **creare gerarchia**: le ombre sono usate per elevare visivamente gli elementi principali della pagina rispetto a quelli secondari, con lo scopo di guidare l'interazione e mettere in risalto gli oggetti più importanti di un'interfaccia;
+            - **migliorare la leggibilità**: le ombre separano gli elementi dallo sfondo, migliorando la leggibilità del testo e la comprensione delle informazioni;
+            - **aggiungere realismo**: le ombre creano un'impressione di profondità e realismo, mettendo in risalto visivo gli elementi primari dell'interfaccia.
+
+        - name: TextImageCta
+          title: Come usare le ombre
+          headingLevel: 2
+          text: |
+            Per garantire coerenza e uniformità, segui alcune buone prassi nell'uso delle ombre:
+            - **altezza e diffusione**: usa ombre con un'altezza e una diffusione adeguate in base alle dimensioni e all'importanza dell'elemento. Elementi più grandi o più rilevanti possono richiedere ombre più pronunciate;
+            - **direzione**: mantieni una direzione coerente per le ombre all'interno dell'interfaccia, per evitare incoerenze visive. Ad esempio, le ombre potrebbero essere posizionate generalmente in basso a destra per creare un aspetto uniforme;
+            - **evita un uso eccessivo**: applica le ombre con parsimonia per evitare un aspetto confusionario o caotico.
+        
+        - name: TextImageCta
+          title: Esempi di ombre
+          noSpace: true
+          headingLevel: 2
+
+        - name: ComponentView
+          variantName: Varianti di profondità
+          source: bsi/organizzare-gli-spazi/ombreggiature
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-gli-spazi/ombreggiature/
+          accordionOpen: false
+          accordionShow: true
+
+        

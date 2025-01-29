@@ -1,0 +1,193 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Per la documentazione
+  description: Le indicazioni e i passi da seguire per contribuire alla documentazione del progetto Designers Italia.
+  image: null
+  canonical: null
+  pathname: /design-system/come-contribuire/per-la-documentazione/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Per la documentazione
+    column: true
+    subtitle: Le indicazioni e i passi da seguire per contribuire alla documentazione del progetto Designers Italia.
+    tag:
+      label: Come contribuire #C
+      addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: |
+      Contribuisci alla documentazione di Designers Italia proponendo modifiche, suggerimenti e integrazioni. Puoi proporre modifiche su tutte le schede della documentazione oppure inviare suggerimenti per migliorare e far evolvere il design system seguendo le indicazioni operative. 
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Come iniziare #C
+            url: "../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design/" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Progettare e sviluppare l'interfaccia utente" #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system,Interfaccia utente,Sviluppo interfaccia]
+
+  sectionsEditorial:
+
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/design-system/uikit.jpg
+    #       alt: Schema sintetico del modello di contribuzione descritto in pagina
+
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Contribuisci a questa documentazione
+      text: L'unica fonte di verità sulle risorse e sullo stato dei lavori del design system del Paese.
+      background: null
+      components:
+
+        - name: TextImageCta
+          # title: Documentazione (questo sito)
+          noSpace: false
+          text: |  
+            Puoi proporre modifiche, partecipare a discussioni, aprire segnalazioni e proporti per inviare contributi su tutte le schede della documentazione presente in questo sito. 
+
+            Puoi ad esempio suggerire correzioni di stile e formattazione, migliorare il linguaggio dei **contenuti**, fare proposte migliorative che riguardano l'**immaginario visivo** o lo **sviluppo** stesso del sito e del suo software. 
+
+            Premessa importante: assicurati di conoscere i [fondamenti del design system del Paese](/design-system/fondamenti/). 
+          ctas: 
+            - label: "Conosci il modello di contribuzione?" #C
+              screenReaderText: ""
+              url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
+        # - name: TextImageCta
+        #   title: "Come contribuire alla documentazione:"
+        #   noSpace: true
+        #   headingLevel: 3
+
+        - name: TextImageCta
+          title: Proponi una modifica di contenuto su una pagina
+          noSpace: true
+          headingLevel: 3
+          text: |
+            Ogni scheda di questa documentazione ha un collegamento al fondo, subito prima del piede, per proporre piccoli cambiamenti, integrazioni o correzioni di contenuti. 
+            
+            Agendo sul collegamento "**Proponi una modifica a questa pagina**" arrivi direttamente al file in formato `yaml` che controlla sia i contenuti di testo che i parametri di configurazione dei componenti che compongono la pagina. 
+            Puoi editare il file e proporre quindi una richiesta di contribuzione, una pull request, verso il repository che contiene il sorgente del sito. Il team di Designers Italia farà review quanto prima del tuo contributo. 
+
+            Durante l'editing poni attenzione alla gerarchia dei contenuti nel file, la struttura del sito e la natura del formato file sono particolarmente sensibili alla corretta indentazione. 
+        - name: TextImageCta
+          title: Esplora la lista di tutte le discussioni
+          noSpace: true
+          headingLevel: 3
+          text: |
+              L'intero codice sorgente del sito è disponibile sul repository [italia/designers.italia.it](https://github.com/italia/designers.italia.it/) ed è possibile contribuire sia lato contenuti che lato sviluppo.
+
+              Controlla in via preliminare se già esiste una discussione sul tema che ti interessa, o su un tema simile. Se già esiste, vai alla segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo sul tema proponiti lasciando un commento nella discussione, evidenziando intenzioni e possibilità.
+          ctas: 
+            - label: "Discussioni sulla documentazione" #C
+              screenReaderText: " (si apre in una nuova finestra)"
+              url: https://github.com/italia/designers.italia.it/issues?q=is%3Aissue+is%3Aopen+label%3A%22design+system%22 #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+                
+        - name: TextImageCta
+          title: Apri una segnalazione
+          noSpace: false
+          headingLevel: 3
+          text: |
+            Se il tema di tuo interesse non è presente nella lista puoi proporre una nuova segnalazione. Ricorda di inserire nella nuova segnalazione tutti i dettagli che ritieni necessari per approfondire il tema, in modo da consentire alla community e al team di Designers Italia di avere un quadro chiaro e il più possibile completo della tua proposta.   
+          ctas:
+            - label: "Nuova segnalazione" #C
+              screenReaderText: " relativa alla documentazione (si apre in una nuova finestra)"
+              url: https://github.com/italia/designers.italia.it/issues/new?assignees=&labels=design%20system&projects=&template=apri-una-segnalazione.it.yaml #M
+              blank: true #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

@@ -1,0 +1,180 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Dimensioni
+  description: "Le misure che definiscono lo spazio occupato dagli elementi di design all'interno di un'interfaccia"
+  image: null
+  canonical: null
+  pathname: /design-system/fondamenti/dimensioni/
+
+components:
+  hero:
+    background: null
+    title: Dimensioni
+    column: true
+    subtitle: "Le misure che definiscono lo spazio occupato dagli elementi di design all'interno di un'interfaccia"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+  # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia, Sviluppo interfaccia]
+  
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: null
+      text: null
+      background: null
+      components:
+        - name: TextImageCta
+          title: A cosa servono
+          headingLevel: 2
+          text: |
+            Le dimensioni di un elemento di design sono misure che **definiscono lo spazio occupato** in altezza e in larghezza dall'elemento, le sue proporzioni e la sua disposizione nello spazio complessivo dell'interfaccia.
+
+            L'uso di dimensioni standard garantisce coerenza visiva e armonia, migliorando non solo l'aspetto estetico dell'interfaccia ma anche la sua usabilità generale. 
+
+            Le misure delle dimensioni sono espresse in **percentuale** e possono essere relative a: 
+            - la dimensione dello schermo (_viewport_);
+            - la dimensione del contenitore in cui è inserito l'elemento, ad esempio le colonne della griglia. 
+        
+        - name: TextImageCta
+          title: Come usarle
+          headingLevel: 2
+          text: |
+            Puoi usare misure diverse per uno stesso elemento in base a specifiche necessità di layout e per garantire che gli elementi di design siano sempre ottimizzati in base alla risoluzione dello schermo e al tipo di dispositivo. 
+            
+            Ad esempio, un pulsante può avere una dimensione `100%` su dispositivi mobili per facilitare l'interazione in uno spazio ridotto, mentre una dimensione inferiore su dispositivi più grandi dove invece lo spazio a disposizione per interagire con gli elementi visibili a schermo è maggiore.
+
+            Queste misure si **adattano alla griglia** ma non la sostituiscono, in quanto non prevedono intercolonna e margini laterali.
+
+          ctas:
+          - label: Vai al fondamento Griglia
+            url: "/design-system/fondamenti/griglia" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        - name: TextImageCta
+          title: I token per le dimensioni
+          headingLevel: 2
+          text: |
+            I token relativi alle dimensioni appartengono alla tipologia **globali**. Come tali, possono essere riutilizzati come misura di riferimento per token semantici o specifici.
+
+          ctas:
+          - label: Vai al fondamento Design tokens #C
+            url: "/design-system/fondamenti/design-tokens" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: Table
+          title: Token per le dimensioni
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Valore
+            - text: Descrizione
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  ![dimensione di un quarto](/images/design-system/fondamenti/sizing-quarter.png)
+                  25%
+              - text: Dimensione di un quarto del contenitore
+              - tag: 
+                  label: sizing.quarter
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione della metà](/images/design-system/fondamenti/sizing-half.png)
+                  50%
+              - text: Dimensione della metà del contenitore
+              - tag: 
+                  label: sizing.half
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione di due terzi](/images/design-system/fondamenti/sizing-two-thirds.png)
+                  75%
+              - text: Dimensione di due terzi del contenitore
+              - tag: 
+                  label: sizing.two-thirds
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione piena](/images/design-system/fondamenti/sizing-full.png)
+                  100%s
+              - text: Dimensione piena del contenitore
+              - tag: 
+                  label: sizing.full  
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+
+        

@@ -1,0 +1,210 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Bordi e raggi
+  description: "I bordi e i raggi sono elementi che caratterizzano l'aspetto di oggetti e componenti di un'interfaccia."
+  image: null
+  canonical: null
+  pathname: /design-system/fondamenti/bordi-e-raggi/
+
+components:
+  hero:
+    background: null
+    title: Bordi e raggi
+    column: true
+    subtitle: "I bordi e i raggi sono elementi che caratterizzano l'aspetto di oggetti e componenti di un'interfaccia."
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+  # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia, Sviluppo interfaccia]
+  
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: null
+      text: null
+      background: null
+      components:
+        - name: TextImageCta
+          title: A cosa servono
+          headingLevel: 2
+          text: |
+            ### Bordi
+            I bordi sono linee che delimitano i **contorni di elementi** oppure oggetti presenti in un'interfaccia. 
+            
+            Possono essere applicati a componenti come pulsanti, campi di input, sfondi, immagini o qualsiasi area definita. 
+            
+            I bordi contribuiscono a dare enfasi alla forma e alla struttura di un elemento, possono variare in termini di spessore e stile e creano una separazione fra l'elemento e ciò che lo circonda.
+
+            ### Raggi
+            I raggi definiscono il grado di **curvatura degli angoli** di un elemento. La misura di un raggio determina quanto gli angoli dell'elemento sono arrotondati.
+
+            Ad esempio, se un raggio è impostato su `4px`, gli angoli dell'elemento saranno arrotondati con una curvatura di questa entità.
+
+            Sono anche conosciuti con il termine tecnico di "border-radius".
+        
+        - name: TextImageCta
+          title: Come usarli
+          headingLevel: 2
+          text: |
+            ### Angoli arrotondati
+            L'uso di angoli arrotondati conferisce leggerezza visiva agli elementi di un'interfaccia. Per questo motivo sono raccomandati per pulsanti, campi di input, card e simili.
+
+            Per dare più enfasi a elementi chiave dell'interfaccia, puoi aumentare la dimensione del raggio dei bordi che vorresti mettere in risalto.
+
+            ### Angoli squadrati
+            Gli angoli squadrati si addicono maggiormente a elementi che richiedono una presentazione più formale e strutturata, come modali o riquadri informativi.
+        
+        - name: TextImageCta
+          title: I token per bordi e raggi
+          headingLevel: 2
+          text: |
+            I token applicati a bordi e raggi sono tutti della tipologia **globali**. Come tali, possono essere riutilizzati come misura di riferimento per token semantici o specifici.
+
+          ctas:
+          - label: Vai al fondamento Design tokens #C
+            url: "/design-system/fondamenti/design-tokens" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: Table
+          title: Token per i bordi
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Valore
+            - text: Descrizione
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  ![dimensione bordo base](/images/design-system/fondamenti/border-base.png)
+                  1px
+              - text: Dimensione di un bordo base
+              - tag: 
+                  label: border.base
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo evidente](/images/design-system/fondamenti/border-double.png)
+                  2px
+              - text: Dimensione per un bordo maggiormente visibile rispetto alla versione base
+              - tag: 
+                  label: border.double
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo spesso](/images/design-system/fondamenti/border-thick.png)
+                  4px
+              - text: Dimensione per un bordo spesso
+              - tag: 
+                  label: border.thick
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/border-broad.png)
+                  8px
+              - text: Dimensione per un bordo molto evidente
+              - tag: 
+                  label: border.broad  
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+
+        - name: Table
+          title: Token per i raggi
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Valore
+            - text: Descrizione
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  ![misura per angolo smussato](/images/design-system/fondamenti/radius-smooth.png)
+                  4px
+              - text: Angolo smussato
+              - tag: 
+                  label: radius.smooth
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura per angolo pronunciato](/images/design-system/fondamenti/radius-pill.png)
+                  40px
+              - text: Angolo pronunciato
+              - tag: 
+                  label: radius.rounded
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![misura per angolo circolare](/images/design-system/fondamenti/radius-circle.png)
+                  80px
+              - text: Angolo circolare
+              - tag: 
+                  label: radius.circle
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            
+        

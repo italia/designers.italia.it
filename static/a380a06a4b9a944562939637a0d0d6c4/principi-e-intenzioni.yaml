@@ -1,0 +1,194 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Princìpi e intenzioni
+  description: "Il design system del Paese, .italia, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione."
+  image: https://designers.italia.it/images/design-system/ds-beta-naming.png
+  canonical: null
+  pathname: /design-system/fondamenti/principi-e-intenzioni/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Princìpi e intenzioni
+    column: true
+    subtitle: "Il design system del Paese, .italia, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+   # pretext:
+   #   icon:
+   #     icon: sprites.svg#it-info-circle
+   #     size: sm
+   #   text: In breve
+   # text: |
+   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione servizi,Accessibilità,Cultura progettuale,Progettazione interfaccia,Sviluppo interfaccia]
+
+  sectionsEditorial:
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: A cosa serve .italia
+      text: "Crediamo in una Pubblica Amministrazione vicina, semplice e utile alle persone di oggi e di domani, grazie a siti e servizi digitali progettati in modo collaborativo.  Il design system .italia è uno degli strumenti pratici creati per progettare servizi pubblici digitali migliori"
+      background: null
+
+      components:
+
+        - name: TextImageCta
+          title: "Per rendere coerente l'esperienza digitale del cittadino"
+          noSpace: true
+          text: |
+            Gli enti pubblici in Italia sono più di 22.000. Ciascuno di essi ha, in media, più di un sito internet e ogni ente ha l’autonomia di impostarli secondo le proprie necessità. Tuttavia, per le persone che fruiscono di questi servizi digitali, lo Stato è uno solo.
+
+            Il design system .italia istituisce le fondamenta per rendere coerenti le esperienze di utilizzo dei servizi digitali, definendone identità, linguaggio visivo e modalità di interazione. La personalizzazione guidata dai design token consente comunque agli enti di comunicare la propria identità.
+
+        - name: TextImageCta
+          title: "Per avvicinare la Pubblica Amministrazione alle persone"
+          noSpace: true
+          text: |
+            La lingua usata sui siti e nei servizi digitali pubblici può essere molto lontana da quella con cui comunichiamo abitualmente. In molti casi, il linguaggio è così complesso e burocratico da impedire l’accesso al servizio stesso e, quindi, l’esercizio di un proprio diritto.
+
+            Il design system .italia contiene indicazioni pratiche sull’uso del linguaggio per chi progetta i testi delle interfacce, così da rendere comprensibili i servizi pubblici digitali alle persone che ne usufruiscono.
+
+        - name: TextImageCta
+          title: "Per rendere efficiente la realizzazione"
+          noSpace: true
+          text: |
+            Un design system è un insieme di componenti tecniche e la loro documentazione, costruita per rendere fluidi la progettazione, lo sviluppo e la relazione tra i due. Le stime più recenti parlano di efficienze di oltre il 30% in progettazione e di oltre il 45% in sviluppo. Più difficili da misurare, anche se indiscutibili, sono l’aumento della qualità del risultato finale e la riduzione dei bug.
+
+            .italia documenta in un unico luogo i componenti, le specifiche di uso e di accessibilità, per la progettazione e i contenuti, e per lo sviluppo, senza soluzione di continuità.
+
+        - name: TextImageCta
+          title: "Per cambiare la visione dell’accessibilità: da adempimento a opportunità"
+          noSpace: true
+          text: |
+            L’accessibilità, oltre a essere un dovere di legge ed etico, rende le interfacce digitali migliori. Anche nelle situazioni quotidiane — ad esempio, quando c’è troppa luce, gli occhi sono stanchi o si cercano informazioni sullo smartphone mentre si è in bus o in metro — le interfacce accessibili rendono la vita, di tutti, più semplice.
+
+            .italia è costantemente progettato, testato e aggiornato per essere alla frontiera dell’accessibilità. Già oggi Bootstrap Italia è più accessibile del framework nativo Bootsrap, uno dei più usati nel mondo.
+
+        - name: TextImageCta
+          title: "Per diffondere la cultura della progettazione"
+          noSpace: true
+          text: |
+            Diffondere la cultura della progettazione è la missione ultima del progetto Designers Italia. Le attività di comunicazione, di indirizzo normativo e di progettazione dei modelli di design possono accelerare e frenare in base al variare delle priorità del Paese. Il prodotto di qualità, invece, non si ferma mai e, dal basso, mostra nel pratico come fare bene.
+
+            .italia vuole essere una didattica pratica sui temi in cui la Pubblica Amministrazione deve fare innovazione: accessibilità, inclusività, coerenza, semplicità e riduzione delle diseguaglianze.
+
+        - name: TextImageCta
+          title: "Per fare open, per fare meglio"
+          noSpace: true
+          text: |
+            Spesso, nel mondo del software sviluppato per il pubblico, l’open source viene confuso con gratuità, perdita di controllo, regalo alla concorrenza o rischio per la sicurezza. L'open source è, invece, un modo per migliorare il codice e renderlo più sicuro e efficiente, nonché un’opportunità per il modello di business.
+
+            .italia nasce in ambiente open e resta un patrimonio di tutti: viene aggiornato in parte centralmente, in parte dalla community.
+
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      title: Manteniamo gli asset del Paese, insieme
+      #text: |
+            #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
+      components:
+        - name: TextImageCta
+          # title: Manteniamo gli asset del Paese, insieme
+          noSpace: true
+          # headingLevel: 2
+          text: |
+            .italia contiene la libreria **UI Kit Italia**, con i suoi componenti di design disponibili su piattaforma e community Figma. Ogni release è resa disponibile come esportazione in Sketch, in formato open source, nel repository GitHub dedicato. UI Kit Italia è curato dal team di Designers Italia, così come il progetto collegato **Design Tokens Italia**.
+
+            Il design system .italia contiene una serie di framework dedicati allo sviluppo:
+
+            - **Bootstrap Italia**, manutenuto da Designers Italia e utilizzato nella documentazione per le anteprime dei componenti;
+            - **React Kit**, manutenuto dalla community;
+            - **Angular Kit**, manutenuto dalla community.
+
+        - name: TextImageCta
+          title: "Come supportiamo l'adozione"
+          text: |
+            Ad oggi, più di 10.000 amministrazioni pubbliche richiamano almeno uno dei framework di sviluppo.
+
+            Lavoriamo per accrescere la consapevolezza del valore di un'esperienza coerente per il cittadino presso tutti i 22.000 enti pubblici, e aiutiamo a implementarla tramite .italia - il design system del Paese.
+
+
+
+
+

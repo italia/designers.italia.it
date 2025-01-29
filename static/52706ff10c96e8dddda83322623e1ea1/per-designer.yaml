@@ -1,0 +1,330 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Per designer
+  description: Tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici.
+  image: https://designers.italia.it/images/design-system/uikit.jpg
+  canonical: null
+  pathname: /design-system/come-iniziare/per-designer/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Per designer
+    column: true
+    subtitle: Tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+    tag:
+      label: Come iniziare #C
+      addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: |
+      Scopri gli strumenti messi a disposizione per i designer, i vari formati, come utilizzarli e come partecipare attivamente: dalle ultime versioni di UI Kit Italia e gli approfondimenti sui temi di accessibilità, ai design token e i processi per contribuire alla cura e all'evoluzione del kit.
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Come iniziare #C
+            url: "../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design/" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Progettare e sviluppare l'interfaccia utente" #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Design system,Interfaccia utente,Progettazione interfaccia]
+
+  sectionsEditorial:
+
+    - fullColumn: true
+      noSpace: true
+      components:
+        - name: ImgFull
+          img: /images/design-system/uikit.jpg
+          alt: UI Kit Italia in Figma
+
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      title: Scopri e usa UI Kit Italia
+      text: Lo strumento a disposizione dei designer per costruire e prototipare interfacce ed esperienze di siti e servizi pubblici digitali
+      background: null
+      components:
+
+        - name: TextImageCta
+          title: "Design system: pubblicata la versione ufficiale di UI Kit Italia"
+          noSpace: true
+          text: |
+            Il kit per progettare interfacce e siti digitali della PA esce dalla fase beta
+          ctas:
+          - label: "Leggi la notizia" #C
+            url: "/community/notizie/20230504-design-system-pubblicata-la-versione-ufficiale-dello-ui-kit-italia/" #M
+            blank: true #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Versione corrente
+          noSpace: true
+          text: |
+            Questa è **la versione 3 di UI Kit Italia**, risorsa ufficiale del design system del Paese: l’insieme di fondamenti e componenti utili ai designer per progettare e prototipare siti e servizi digitali della Pubblica Amministrazione che rispettano le norme e semplificano la vita dei cittadini.
+          ctas:
+          - label: Vai alla community @designersitalia #C
+            screenReaderText: " (si apre in una nuova finestra)"
+            url: https://figma.com/@designersitalia #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Versione corrente #C
+            screenReaderText: " (si apre in una nuova finestra)"
+            url: https://www.figma.com/community/file/1105848677422572920 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Altri formati e changelog
+          headingLevel: 4
+          noSpace: false
+          text: |
+            UI Kit Italia è disponibile dalla **community Figma** e scaricabile in locale (**anche in formato Sketch**) dal repository GitHub dedicato. Sul repository è inoltre disponibile il diario delle modifiche ed evoluzioni del kit (changelog). 
+          ctas:
+          - label: Vai al repository dedicato #C
+            screenReaderText: " UI Kit Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/design-ui-kit #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Changelog #C
+            screenReaderText: " UI Kit Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/design-ui-kit/releases #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+      
+
+        - name: TextImageCta
+          title: Come utilizzarlo in Figma
+          noSpace: true
+          text: |
+            #### Se hai un account "Free"
+            - Vai alla [versione corrente](https://www.figma.com/community/file/1105848677422572920);
+            - **copia UI Kit Italia nei draft** del tuo profilo.
+
+            Non è possibile aggiungerlo come libreria, ma puoi utilizzarlo con "approccio playground":
+            - **aggiungi una nuova pagina**, o utilizza la pagina Playground;
+            - **usa solo gli stili presenti** in UI Kit Italia;
+            - **cerca e trascina i componenti** della libreria dal pannello *Asset*.
+
+            Non modificare nulla delle altre pagine di UI Kit Italia.
+
+            ##### Come aggiornare all'ultima versione
+            Puoi procedere a usare la nuova versione seguendo i passi precedenti con il nuovo UI Kit Italia, non è possibile aggiornare in automatico i componenti del tuo progetto.
+
+            #### Se hai un account "Professional"
+            - Vai alla [versione corrente](https://www.figma.com/community/file/1105848677422572920);
+            - **copia UI Kit Italia nei draft** del tuo profilo;
+            - **sposta la tua copia** dai draft in un team (ti suggeriamo di chiuderlo e riaprirlo dopo spostato);
+            - **pubblicala come libreria**, includendo stili e componenti (un attimo di pazienza che la pubblicazione prende un po' di tempo);
+            - **crea un nuovo progetto** o apri il progetto dove vuoi usare i componenti di UI Kit Italia;
+            - **aggiungi la libreria** appena pubblicata al progetto, utilizzando il pannello Assets/Libraries.
+
+            ##### Come aggiornare all'ultima versione
+            - Vai alla [versione corrente](https://www.figma.com/community/file/1105848677422572920);
+            - **copia il nuovo UI Kit Italia nei draft** del tuo profilo;
+            - **sposta la tua copia dai draft nel team** dove è presente la versione precedente (ti suggeriamo di chiuderlo e riaprirlo dopo spostato);
+            - **rimuovi** la versione precedente dal team;
+            - **pubblica stili e componenti** dalla nuova versione (un attimo di pazienza che la pubblicazione prende un po' di tempo);
+            - **apri il progetto** da aggiornare;
+            - all'avviso di **libreria mancante** nel pannello Assets/Libraries, **seleziona e scegli quella appena pubblicata**. Stili e componenti verranno ricollegati in automatico.
+
+
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Standard, open design e partecipazione
+      text: Processi e risorse per la gestione di UI Kit Italia e Design Tokens Italia
+      background: null
+      components:
+
+        - name: TextImageCta
+          title: Conversione da Figma a Sketch
+          noSpace: true
+          text: |
+            La conversione tra il formato Figma, nativo di UI Kit Italia, e il [formato aperto Sketch](https://github.com/sketch-hq/sketch-document), è realizzata grazie al convertitore open source “fig2sketch”. **Il processo di conversione è automatizzato e a disposizione della community** attraverso un repository template e un'azione pubblicata nel marketplace GitHub Actions. 
+          ctas:
+          - label: Vai al repository template #C
+            screenReaderText: " (si apre in una nuova finestra)"
+            url: https://github.com/italia/design-ui-kit-template/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai all'azione GitHub Actions #C
+            screenReaderText: " (si apre in una nuova finestra)"
+            url: https://github.com/marketplace/actions/figma-to-sketch-conversion #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Modello di contribuzione
+          noSpace: true
+          text: |
+            Se ti occupi di design puoi aprire segnalazioni e inviare i tuoi contributi dedicati alla progettazione delle interfacce di punti di contatto digitali delle amministrazioni pubbliche seguendo le istruzioni operative dedicate a UI kit Italia e Design tokens Italia.
+          ctas:
+          - label: Scopri come contribuire Per il design #C
+            url: "/design-system/come-contribuire/per-il-design/" #M
+            blank: false #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        - name: TextImageCta
+          title: Accessibilità
+          noSpace: true
+          text: |
+            Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno.
+          ctas:
+          - label: Vai al fondamento Accessibilità #C
+            url: "/design-system/fondamenti/accessibilita/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Design tokens
+          noSpace: true
+          text: |
+            Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali.
+          ctas:
+          - label: Vai al fondamento Design tokens #C
+            url: "/design-system/fondamenti/design-tokens/" #M
+            blank: false #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # - name: TextImageCta
+        #   title: Workflow di design e revisione
+        #   text: |
+        #     _In stesura_
+
+        # - name: TextImageCta
+        #   title: Workflow di rilascio versioni
+        #   text: |
+        #     _In stesura_
+
+

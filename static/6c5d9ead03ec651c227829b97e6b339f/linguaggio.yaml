@@ -1,0 +1,182 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Linguaggio
+  description: "Progetta contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
+  canonical: null
+  pathname: /design-system/fondamenti/linguaggio/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Linguaggio
+    column: true
+    subtitle: "Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+   # pretext:
+   #   icon:
+   #     icon: sprites.svg#it-info-circle
+   #     size: sm
+   #   text: In breve
+   # text: |
+   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Contenuti e linguaggio,Progettazione interfaccia]
+
+  sectionsEditorial:
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Scrivi per le persone
+      text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
+      background: null
+
+      components:
+
+        - name: TextImageCta
+          title:
+          noSpace: true
+          text: |
+            Il linguaggio è una risorsa preziosa nell’intero ecosistema e ciclo di vita di un prodotto digitale. Ha il potere di **orientare e influenzare l’esperienza delle persone** su siti e servizi, favorendo **la comprensione delle informazioni e l’abilità di portare a termine procedure**.
+
+            È quindi importante che i testi per le interfacce, i contenuti ad esse correlati, documentazione, o gli altri contenuti attivati dalle interazioni degli utenti (email, notifiche, SMS, ecc.) siano progettati prediligendo un linguaggio semplice e frasi brevi.
+
+            ### Come le persone leggono gli schermi
+
+            Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Le persone, infatti, **non leggono necessariamente dall’alto al basso e parola per parola**.
+
+            Studi di monitoraggio oculare (eye-tracking) hanno dimostrato che le persone tendono a **scansionare blocchi di testo seguendo la forma di una F (F-pattern)**: tracciano una linea orizzontale lungo la parte superiore dello schermo, procedono poi in verticale lungo il lato sinistro alla ricerca di punti di interesse e procedono di nuovo in senso orizzontale.
+
+            ### Organizza le informazioni
+
+            Aiuta le persone a trovare ciò che cercano sul tuo sito o servizio **organizzando le informazioni in base alle loro esigenze informative** e alla natura del touchpoint. Tieni sempre in considerazione le funzioni principali del sito o servizio, la natura dei contenuti da veicolare e le relazioni fra di essi.
+
+            ### Scegli le parole giuste
+
+            Siti e servizi digitali della Pubblica Amministrazione sono usati ogni giorno da milioni di persone: **un’esperienza utente di qualità è un diritto per tutte e tutti**.
+
+            - usa il linguaggio come veicolo di inclusione: le parole sono cruciali per fare in modo che messaggi e informazioni raggiungano **tutte le persone senza distinzioni**, e senza riferimenti non necessari ad appartenenze o identità di genere;
+            - **evita la cattiva pratica di riportare in interfaccia testi concepiti per supporti analogici** e destinati a personale amministrativo o legale;
+            - **scrivi accessibile**: progetta testi pienamente accessibili anche per le persone con disabilità permanenti o temporanee, e/o per chi fruisce i contenuti con tecnologie assistive.
+
+            ### Prediligi chiarezza, brevità e consistenza
+
+            Ecco alcuni suggerimenti utili per progettare contenuti con un linguaggio chiaro, efficace ed essenziale:
+
+            - usa **parole chiare e facili da comprendere**, prediligendo una sintassi semplice, forme verbali attive, linguaggio naturale;
+            - **evita di utilizzare tecnicismi, formalismi e lessico burocratico o legale** senza adeguata disambiguazione;
+            - **modera l’uso di inglesismi e forestierismi**, e laddove indispensabile, fornisci una traduzione italiana;
+            - prediligi **periodi brevi**: frasi troppo lunghe e complesse riducono i livelli di comprensibilità e leggibilità dei contenuti;
+            - **sii consistente**: progetta i contenuti rispettando alcune semplici regole di coerenza, sia stilistica (punteggiatura, uso delle maiuscole) che concettuale (se introduci un concetto assicurati che anche successivamente sia espresso in maniera coerente).
+
+            ### Accompagna le interazioni
+
+            Saper accompagnare le persone a interagire efficacemente con siti, servizi e procedure online è una questione di (buona) esperienza utente: **il linguaggio incide in maniera considerevole sulla qualità dell’esperienza**. Per questo motivo, ti proponiamo alcuni semplici suggerimenti per aumentare l’efficacia dei flussi di interazione del tuo sito o servizio:
+
+            - usa un linguaggio **diretto e naturale**: impiega termini di uso comune, che possono essere comprensibili da persone con qualsisi livello di alfabetizzazione;
+            - **accompagna le azioni che avvengono in interfaccia con le parole giuste**: presta adeguata attenzione ai termini che usi nelle etichette dei pulsanti, nelle finestre modali, negli stepper o nei breadcrumb;
+            - dai prova di empatia **mettendoti nei panni delle persone**: rendi comprensibili e di reale aiuto messaggi di errore, pagine di atterraggio e “stati vuoti” dei componenti.
+
+            ### Usa una formattazione semplice
+
+            Per facilitare la lettura e la comprensibilità delle informazioni su schermo ricorda di:
+
+            - **allineare il testo a sinistra**, invece di giustificarlo;
+            - evitare di usare grassetto e corsivo **per interi periodi o paragrafi**;
+            - **evitare di sottolineare il testo**, a meno che non si tratti di link;
+            - usare **il maiuscolo solo per sigle e acronimi**;
+            - scrivere **le date per esteso**, ad esempio 2 gennaio 2023.
+
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      title: Testa e ottimizza i contenuti
+      text: |
+            Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
+      components:
+        - name: TextImageCta
+          text: |
+            I contenuti e il linguaggio dovrebbero sempre essere progettati - e ottimizzati in maniera iterativa e continua - sulla base di analisi e test sulle persone che utilizzeranno il touchpoint.
+
+            Esistono molti metodi per testare ipotesi di contenuto in pre-produzione, contenuti già esistenti o per valutare se il linguaggio utilizzato corrisponde alle attese e alle esigenze informative e interattive delle persone cui il sito o servizio sono destinati.
+
+            Si consiglia di svolgere test di usabilità moderati, preparando attività da svolgere con domande aperte.

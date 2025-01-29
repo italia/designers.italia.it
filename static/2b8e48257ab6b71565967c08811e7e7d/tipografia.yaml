@@ -1,0 +1,430 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/organizzare-i-contenuti/tipografia.json
+  template:
+    name: design-system-index
+
+seo:
+  name: Tipografia
+  description: "I caratteri, gli stili e le regole tipografiche da usare per presentare i contenuti di un'interfaccia digitale in modo chiaro, leggibile ed efficace."
+  image: null
+  canonical: null
+  pathname: /design-system/fondamenti/tipografia/
+
+components:
+  hero:
+    background: null
+    title: Tipografia
+    column: true
+    subtitle: "I caratteri, gli stili e le regole tipografiche da usare per presentare i contenuti di un'interfaccia digitale in modo chiaro, leggibile ed efficace"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+   # pretext:
+   #   icon:
+   #     icon: sprites.svg#it-info-circle
+   #     size: sm
+   #   text: In breve
+   # text: |
+   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Contenuti e linguaggio,Progettazione interfaccia,Sviluppo interfaccia]
+
+  sectionsEditorial:
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: null
+      text: null
+      background: null
+
+      components:
+
+        - name: TextImageCta
+          title: Caratteri tipografici
+          headingLevel: 2
+          text: |
+            Nell'ambito di design system .italia puoi utilizzare tre diversi caratteri tipografici, ognuno dei quali ha un caso d'uso raccomandato specifico:
+
+        - name: TextImageCta
+          title: Titillium
+          noSpace: true
+          headingLevel: 3
+          text: |
+              Titillium è il **carattere principale** dell'[identità](/design-system/fondamenti/identita/) del design system .italia, per realizzare servizi pubblici digitali sia su scala nazionale che su scala territoriale e/o locale. 
+              
+              La font, il cui nome rende omaggio al compositore Arvo Pärt e alla sua tecnica tintinnabuli, nasce nel 2008 come [progetto didattico](http://nta.accademiadiurbino.it/titillium/) all’interno dell’Accademia di Belle Arti di Urbino e, dalla prima applicazione d'uso per il rinnovo del sito governo.it nel 2015, si è guadagnata sul campo il ruolo di carattere di riferimento e distintività per il digitale della Pubblica Amministrazione italiana. 
+          ctas:
+          - label: Vai al fondamento Identità #C
+            url: "/design-system/fondamenti/identita/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        - name: TextImageCta
+          noSpace: true
+          text: |
+              #### Titillium Web (ufficiale)
+              Disponibile in diverse varianti, questa è la versione ufficiale integrata e disponibile in tutte le risorse del design system .italia. È un carattere geometrico che garantisce flessibilità nel design, raccomandato per titoli, sottotitoli, elementi interattivi e paragrafi di testo.
+
+              #### Titillium Pro (in sperimentazione)
+              È in corso la sperimentazione di questa nuova versione. Se avrà esisti positivi, sarà possibile sceglierla come alternativa in tutte le risorse di .italia. Risolve infatti problematiche di leggibilità, rimanendo retrocompatibile con le versioni precedenti ed estendendone in modo significativo il set di caratteri. Titillium Pro è disponibile in open source tramite la [repository GitHub dedicata](https://github.com/chialab/titillium_pro), curata dagli autori. 
+              
+              Se sperimentate in autonomia questa versione Pro in servizi digitali pubblici, sarebbe molto interessante avere feedback.  
+        - name: ComponentView
+          variantName: Titillium Web
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+          accordionOpen: false
+          accordionShow: true
+        
+        - name: TextImageCta
+          title: Lora
+          noSpace: true
+          headingLevel: 3
+          text: |
+              Lora è il carattere tipografico nato espressamente per facilitare la **lettura dei testi** su dispostivi digitali. Essendo un font con le grazie (*serif*), è raccomandato per paragrafi di testo più lunghi.
+        - name: ComponentView
+          variantName: Lora
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer02-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+          accordionOpen: false
+          accordionShow: true
+
+        - name: TextImageCta
+          title: Roboto Mono
+          noSpace: true
+          headingLevel: 3
+          text: |
+            Roboto Mono, variante monospaziata della famiglia Roboto, è un carattere ideato per la **visualizzazione di dati tecnici**. La sua uniformità dei caratteri è utile per rappresentare numeri, codici, calcoli matematici, e fornire esempi di stringhe di linguaggi di programmazione.
+        - name: ComponentView
+          variantName: Roboto Mono
+          source: bsi/organizzare-i-contenuti/tipografia
+          idPrefix: "viewer03-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+          accordionOpen: false
+          accordionShow: true
+            
+        - name: TextImageCta
+          title: Stili tipografici
+          noSpace: true
+          headingLevel: 2
+          text: |
+            Gli stili tipografici disponibili sono divisi in tre categorie: 
+            - Intestazioni (headings)
+            - Corpo del testo (body)
+            - Etichette e didascalie (*label*, caption)
+
+            ### Intestazioni
+            La lista di tutti gli stili per creare le intestazioni di una pagina:
+        
+        # - name: ComponentView
+        #   noSpace: true
+        #   variantName: Intestazioni
+        #   source: bsi/organizzare-i-contenuti/tipografia
+        #   idPrefix: "viewer04-"
+        #   viewerHeight: 0
+        #   minHeight: 150
+        #   accordionUrl: https://italia.github.io/bootstrap-italia/docs/organizzare-i-contenuti/tipografia/
+        #   accordionOpen: false
+        #   accordionShow: true
+
+        - name: Table
+          title: null
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Stile
+            - text: Specifiche
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  # Intestazione 1
+                scope: row
+              - text: |
+                  font-family: Titillium Web   
+                  font-size: 40/48px   
+                  line-height: 48/56px   
+                  letter-spacing: -1   
+                  font-weight: Bold
+              - tags:
+                - label: heading-1
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: heading-1-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ## Intestazione 2
+                scope: row
+              - text: |
+                  font-family: Titillium Web    
+                  size: 32/40px  
+                  line height: 40/48px  
+                  letter spacing: -1  
+                  weight: Bold
+              - tags:
+                - label: heading-2
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: heading-2-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ### Intestazione 3
+                scope: row
+              - text: |
+                  font-family: Titillium Web   
+                  font-size: 28/32px  
+                  line height: 32/40px   
+                  font-weight: Bold  
+              - tags:
+                - label: heading-3
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: heading-3-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+            - cols:
+              - text: |
+                  #### Intestazione 4
+                scope: row
+              - text: |
+                  font-family: Titillium Web  
+                  font-size: 24/32px  
+                  line-height: 32/40px   
+                  font-weight: SemiBold  
+              - tags:
+                - label: heading-4
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: heading-4-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ##### Intestazione 5
+                scope: row
+              - text: |
+                  font-family: Titillium Web  
+                  font-size: 20/24px  
+                  line-height: 24/32px  
+                  font-weight: SemiBold  
+              - tags:
+                - label: heading-5
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: heading-5-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ###### Intestazione 6
+                scope: row
+              - text: |
+                  font-family: Titillium Web  
+                  font-size: 16/18px  
+                  line-height: 24px  
+                  font-weight: SemiBold  
+              - tags:
+                - label: heading-6
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: heading-6-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+
+        - name: TextImageCta
+          title: Corpo del testo
+          headingLevel: 3
+          noSpace: true
+          text: |
+                La lista di tutti gli stili per il corpo del testo di una pagina:
+
+        - name: Table
+          title: null
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Stile (anteprima non disponibile)
+            - text: Specifiche
+            - text: Nome token
+          rows:
+            - cols:
+              - text: |
+                  Lead paragraph
+                scope: row
+              - text: |
+                  type: Titillium Web  
+                  size: 20/24px  
+                  line height: 32px  
+                  weight: Regular  
+              - tags:
+                - label: lead
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: lead-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+            - cols:
+              - text: |
+                  Body text sans
+                scope: row
+              - text: |
+                  font-family: Titillium Web  
+                  font-size: 12/18px  
+                  line-height: 24px  
+                  font-weight: Regular  
+              - tags:
+                - label: body-sans
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: body-sans-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+            - cols:
+              - text: |
+                  Body text serif
+                scope: row
+              - text: |
+                  font-family: Lora  
+                  font-size: 16/18px  
+                  line-height: 24px  
+                  font-weight: Regular  
+              - tags:
+                - label: body-serif
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: body-serif-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase
+
+        - name: TextImageCta
+          title: Etichette e didascalie
+          headingLevel: 3
+          noSpace: true
+          text: |
+            La lista degli stili disponibili per etichette, didascalie e altri elementi testuali minori:
+
+        - name: Table
+          title: null
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Stile (anteprima non disponibile)
+            - text: Specifiche
+            - text: Nome token
+          rows:
+            - cols:
+              - text: |
+                  Caption
+                scope: row
+              - text: |
+                  font-family: Titillium Web  
+                  font-size: 14px  
+                  line-height: 16px  
+                  font-weight: Regular
+              - tags:
+                - label: caption
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace font-monospace text-lowercase
+            - cols:
+              - text: |
+                  Label
+                scope: row
+              - text: |
+                  font-family: Titillium Web  
+                  font-size: 16/18px  
+                  line-height: 24px  
+                  font-weight: SemiBold  
+              - tags:
+                - label: label
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase mb-1
+                - label: label-lg
+                  addonClasses: neutral-1-bg-a1 text-black font-monospace text-lowercase           
+
+        - name: TextImageCta
+          title: Consigli d'uso
+          headingLevel: 2
+          text: |
+            Gli stili delle **intestazioni** servono a definire le principali sezioni di una pagina e a organizzare i paragrafi di un testo molto lungo.
+
+            Lo stile **lead text** è raccomandato per creare il sommario di una pagina o sezione.
+
+            Tutti gli stili di tipo **body** sono dedicati al corpo del testo. Seleziona la variante sans (lineare) o serif (con grazie) in base alla lunghezza. Tradizionalmente, i testi molto lunghi sono in serif mentre quelli brevi o molto brevi sono in sans. 
+
+            Lo stile **label** può essere utilizzato per elementi testuali composti da una o due parole, come ad esempio le etichette di un form.
+
+            Lo stile **caption** è dedicato a tutti questi microtesti come didascalie o messaggi di supporto che non necessitano un'attenzione primaria.
+
+            ### Lunghezza dei paragrafi
+            Per una migliore leggibilità dei contenuti ti consigliamo di mantenere i paragrafi di testo entro una lunghezza ragionevole, evitando blocchi di testo troppo lunghi. 
+            
+            Ti raccomandiamo una lunghezza massima di **75 caratteri per riga**.
+
+            ### Ritmo verticale
+            Il ritmo verticale è lo spazio occupato dalle lettere su ogni riga di testo e lo spazio tra le righe (leading). 
+
+            La linea di base è di **4px** (baseline). Lo spazio occupato da un elemento testuale o tra elementi diversi è un multiplo di questo valore.
+
+            Il risultato è una disposizione uniforme e un aspetto coeso.
+
+            ### Gerarchia visiva
+            La gerarchia tipografica è essenziale per guidare l'utente attraverso il contenuto e creare una struttura visiva chiara.
+
+            Ti consigliamo di **non superare quattro livelli di intestazione** (H1, H2, H3 e H4) per pagina, facendo attenzione a definire l’importanza di ciascuna sezione.       

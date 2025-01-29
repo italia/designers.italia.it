@@ -1,0 +1,84 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Rilascio e riuso di un software open source"
+  description: Le esperienze del Consiglio Nazionale delle Ricerche e dell’Istituto Superiore di Sanità. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20211124-rilascio-e-riuso-di-un-software-open-source.jpg
+  canonical: null
+  pathname: /community/media/20211124-rilascio-e-riuso-di-un-software-open-source
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Rilascio e riuso di un software open source'
+    subtitle: Le esperienze del Consiglio Nazionale delle Ricerche e dell’Istituto Superiore di Sanità
+    tag:
+      label: Video - Community call
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community call, Open source]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/Q6bCRei3UHU?si=wR3_vtxkULX7n_fw
+          poster: /images/community/media-thumbnails/20211124-rilascio-e-riuso-di-un-software-open-source.jpg
+          trascription: |
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtu.be/Q6bCRei3UHU?si=wR3_vtxkULX7n_fw)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Community call di Developers Italia e Designers Italia del 24/11/2021. Incontro dedicato all'esperienze di riuso di due software a catalogo pubblicati dal Consiglio Nazionale delle Ricerche.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20211112-community-call-24nov-soluzioni-a-riuso/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 

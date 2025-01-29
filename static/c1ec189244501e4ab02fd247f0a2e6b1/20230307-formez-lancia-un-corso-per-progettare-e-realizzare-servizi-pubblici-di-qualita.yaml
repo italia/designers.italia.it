@@ -1,0 +1,135 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+  redirect_from:
+    - /notizie/formez-lancia-un-corso-per-progettare-e-realizzare-servizi-pubblici-di-qualita/
+seo:
+  name: "Formez lancia un corso per progettare e realizzare servizi pubblici di qualità - Designers Italia"
+  description: "Sono aperte le iscrizioni per il corso online. Puoi iscriverti fino al 20 marzo"
+  image: null
+  canonical: null
+  pathname: /community/notizie/20230307-formez-lancia-un-corso-per-progettare-e-realizzare-servizi-pubblici-di-qualita/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Formez lancia un corso per progettare e realizzare servizi pubblici di qualità"
+    subtitle: "Sono aperte le iscrizioni per il corso online. Puoi iscriverti fino al 20 marzo"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+    share:
+      btnId: shareButton
+      button:
+        label: Condividi
+        addonStyle: btn-share-hero btn-dropdown text-primary mb-5 mt-lg-4 ms-auto
+        icon:
+          icon: sprites.svg#it-more-items
+          size: sm
+          color: primary
+          addonClasses: ms-3
+      list:
+        isShare: true
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Formazione]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 4 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 7 marzo 2023
+
+  imageIcons:
+    image: /images/home/in-evidenza/20230307-formez-lancia-un-corso-per-progettare-e-realizzare-servizi-pubblici-di-qualita-1920x923.jpg
+    background: white
+    alt: "Corso di formazione"
+
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Progettare interfacce è un atto di responsabilità, significa decidere continuamente chi includere, o escludere
+      # text:
+      id: corpoNotizia
+      components:
+        - name: TextImageCta
+          # title: Titoletto interno
+          text: |
+            Aperte le iscrizioni per il corso online **“Qualità dei servizi digitali”**, un’iniziativa dedicata a tutte le persone interessate ad **accrescere la conoscenza e la consapevolezza sulla qualità dei servizi digitali nella Pubblica Amministrazione.** Il corso, organizzato da Formez e promosso dal Dipartimento della funzione pubblica, è pensato in particolare per i dipendenti della PA.
+
+            Accogliendo le principali indicazioni previste dalla normativa nazionale ed europea, il corso illustra gli aspetti e le caratteristiche che i servizi digitali delle PA dovrebbero avere per essere considerati di qualità: **semplici da usare, equi, inclusivi e progettati a partire dai bisogni reali delle persone.** L’iniziativa fornisce una cornice teorica di riferimento e mostra i principali strumenti operativi per la progettazione di servizi digitali disponibili su Designers Italia.
+
+            ## Il programma
+
+            Il corso, erogato interamente online su piattaforma e-learning, è composto da **4 moduli:**
+            - **Modulo 1 - I servizi digitali: ecosistemi di scambi tra cittadini e PA:** tratta la teoria e la normativa dei servizi pubblici digitali.
+            - **Modulo 2 - Organizzare il progetto e comprendere il contesto:** descrive le attività e le risorse da mettere in campo nella fase di progettazione dei servizi, a partire dal coinvolgimento attivo dei cittadini e delle persone interessate dal servizio (stakeholder).
+            - **Modulo 3 - Progettare e realizzare il servizio**: presenta i principali strumenti utili a realizzare e mettere in opera i servizi digitali.
+            - **Modulo 4 - Validare il servizio**: illustra gli aspetti e le attività fondamentali di cui tener conto per monitorare e garantire l’efficienza dei servizi erogati.
+
+            I moduli offrono contenuti da fruire autonomamente (lezioni multimediali, video lezioni, interviste), test di autovalutazione, un’esercitazione a distanza e la partecipazione a un webinar di approfondimento della durata di un’ora.
+
+            Il primo dei quattro **webinar**, dedicato alle [Linee guida di design per i siti internet e i servizi digitali della PA](/normativa/linee-guida-di-design/), e all'introduzione dell'intero percorso didattico, si terrà **venerdì 24 marzo 2023 dalle ore 12.00 alle 13.00.**
+
+        - name: TextImageCta
+          title: Iscriviti al corso
+          text: |
+            Le iscrizioni al corso, soggette ad approvazione da parte di Formez, possono essere effettuate in maniera autonoma sul sito [EventiPA](http://eventipa.formez.it/node/405873) e richiedono la registrazione al sistema di autenticazione [DFPAuth](https://auth.formez.eu/).
+
+            Le iscrizioni chiuderanno **martedì 20 marzo 2023.**
+          ctas:
+          - label: Iscriviti
+            url: "http://eventipa.formez.it/node/405873"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true
