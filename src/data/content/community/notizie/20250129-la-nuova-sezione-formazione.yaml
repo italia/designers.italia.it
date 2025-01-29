@@ -1,0 +1,127 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+
+seo:
+  name: "La nuova sezione ‘Formazione’: online i primi quattro corsi di Designers Italia per l’Accademia dei Comuni digitali"
+  description: "Da oggi i materiali formativi di Designers Italia sono a disposizione di chi progetta per la trasformazione digitale del settore pubblico."
+  image:  https://designers.italia.it/images/community/202501-nuovo-kit-formazione-1920x1080.png #I
+  canonical: null
+  pathname: /community/notizie/20250129-la-nuova-sezione-formazione/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "La nuova sezione ‘Formazione’: online i primi quattro corsi di Designers Italia per l’Accademia dei Comuni digitali"
+    subtitle: "Da oggi i materiali formativi di Designers Italia sono a disposizione di chi progetta per la trasformazione digitale del settore pubblico"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Formazione, Disseminazione, Cultura progettuale]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 3 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 29 gennaio 2025
+
+  imageIcons:
+   image: /images/community/202501-nuovo-kit-formazione-1920x923.png
+   alt: ""
+   background: null
+
+  sectionsEditorial :     
+
+    - menu: false
+      noSpace: false
+      centered: true
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            Il sito Designers Italia inaugura una nuova sezione che raccoglie contenuti utili alla formazione. In questi anni abbiamo collaborato con diverse realtà come università, accademie e centri di formazione. Queste occasioni ci hanno consentito di maturare esperienza sul tema, e realizzare contenuti educativi per un pubblico vario, da funzionari e dipendenti pubblici, agli addetti ai lavori in campo IT, che si occupano di design e sviluppo, senza dimenticare i designer del futuro.   
+
+            Da oggi potrai trovare facilmente tutti quei contenuti che spiegano nozioni fondamentali per progettare servizi pubblici digitali a norma e di qualità, sfruttando gli strumenti di Designers Italia, [in un unico luogo](/formazione/).            
+
+            ## Impara a progettare per la Pubblica Amministrazione
+
+            I quattro corsi appena pubblicati sono stati realizzati all’interno dell’accordo istituzionale tra il Dipartimento per la trasformazione digitale e l’Associazione Nazionale Comuni Italiani. Sono pensati come punto di partenza per tutte le figure coinvolte in progetti di trasformazione digitale in ambito pubblico, da quelle responsabili di progetto a quelle tecniche. 
+
+            Questa serie offre una panoramica sulle competenze e sulle attività necessarie a progettare e realizzare servizi digitali attraverso contenuti teorici, approfondimenti pratici e casi studio concreti. I corsi sono erogati gratuitamente tramite la piattaforma dell’Accademia dei Comuni digitali di ANCI, aperta a tutti, previo accesso con identità digitale.
+
+            ## Corsi mirati per competenze concrete 
+
+            Il programma didattico e la tipologia di contenuti sono stati definiti in maniera partecipata con il team di ANCI e adottando un approccio ‘discente-centrico’. 
+
+            In primis sono stati identificati i principali ruoli che potessero beneficiare dei corsi per definire i profili tipo degli utenti dell’accademia. Sono state poi coinvolte in prima persone le figure professionali potenzialmente interessate ai corsi e, intervistandole, è stato possibile capire meglio la loro prospettiva e gli scenari in cui certe competenze possono essere applicate. 
+
+            Ciò ha informato la definizione degli argomenti da trattare e dei format da adottare; ciascun corso contiene così una parte didattica introduttiva e alcuni approfondimenti più tecnici sullo specifico argomento. A rendere più concreta la teoria, ciascun corso include anche l’intervista ad un esperto di settore che racconta come tali nozioni sono state messe in pratica rispetto ad un preciso progetto.  
+
+        - name: TextImageCta
+          title: Impara con noi
+          #text: |
+          
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: Vai ai corsi online
+            url: "/formazione/imparare/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+
+
+
+            
