@@ -237,15 +237,35 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Gestione del progetto #C
+          title: Pianificazione, gestione e strategia #C
           headingLevel: 3
           text: | #C
-            Definisci il perimetro di un progetto digitale, gli attori coinvolti e i potenziali destinatari.
+            Definisci il perimetro di un progetto digitale, gli obiettivi e gli attori coinvolti.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/pianificazione-gestione-e-strategia.html" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Gestione del progetto (si apre in una nuova finestra)"
+            screenReaderText: "Pianificazione, gestione e strategia (si apre in una nuova finestra)"
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Progettazione dei servizi #C
+          headingLevel: 3
+          text: | #C
+            Analizza, organizza e migliora i servizi considerando le interazioni tra utenti, organizzazioni, touchpoint fisici e digitali, e processi operativi.
+          ctas:
+          - label: Argomento nel Manuale su Docs Italia  #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-servizi/"
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Progettazione dei servizi (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -256,53 +276,15 @@ components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Analizzare il contesto con un approccio olistico e sistemico #C
+          title: Organizzare tavoli tecnici collaborativi #C
           headingLevel: 3
           text: | #C
-            Ottieni una visione d’insieme dei fattori e delle variabili che influenzano l’erogazione e la fruizione di un servizio digitale.
+            Raccogli informazioni e valuta le scelte insieme alle figure di riferimento per il progetto.
           ctas:
           - label: Argomento nel Manuale su Docs Italia  #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/analizzare-il-contesto-con-un-approccio-olistico-e-sistemico.html" #M
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/pianificazione-gestione-e-strategia/metodo-di-lavoro.html#organizzare-tavoli-tecnici-collaborativi" #M
             blank: true #M #C true if new tab for external links
-            screenReaderText: "Analizzare il contesto con un approccio olistico e sistemico (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Conoscere gli utenti e gli erogatori del servizio #C
-          headingLevel: 3
-          text: | #C
-            Tieni in alta considerazione le necessità degli utenti e conosci la loro esperienza di interazione con il servizio.
-          ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/conoscere-gli-utenti-e-gli-erogatori-del-servizio.html" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Conoscere gli utenti e gli erogatori del servizio (si apre in una nuova finestra)"
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Gli strumenti per visualizzare mappe dell’esperienza del servizio #C
-          headingLevel: 3
-          text: | #C
-            Mappa l'esperienza dell'utente per descrivere in che modo avviene l'interazione con il servizio.
-          ctas:
-          - label: Argomento nel Manuale su Docs Italia  #C
-            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi/gli-strumenti-per-visualizzare-mappa-della-esperienza-del-servizio.html" #M
-            blank: true #M #C true if new tab for external links
-            screenReaderText: "Gli strumenti per visualizzare mappe dell’esperienza del servizio (si apre in una nuova finestra)"
+            screenReaderText: "Organizzare tavoli tecnici collaborativi (si apre in una nuova finestra)"
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               color: primary
