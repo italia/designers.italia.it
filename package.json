@@ -19,7 +19,7 @@
     "site"
   ],
   "scripts": {
-    "prepare-lib": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/",
+    "prepare-lib": "recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/svg/ ./static/dist/svg/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/fonts/ ./static/dist/fonts/ && recursive-copy -w ./node_modules/bootstrap-italia/dist/assets/ ./static/dist/assets",
     "prepare-content": "node ./scripts/prepare.js",
     "start": "npm run prepare-lib && gatsby develop",
     "develop": "npm run start",
@@ -39,7 +39,7 @@
     "@loadable/component": "^5.15.2",
     "adm-zip": "^0.5.10",
     "babel-preset-gatsby": "^3.9.0",
-    "bootstrap-italia": "^2.12.1",
+    "bootstrap-italia": "^2.13.2",
     "classnames": "^2.3.2",
     "dotenv": "^16.1.4",
     "express": "^4.21.0",

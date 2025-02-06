@@ -95,10 +95,16 @@ navbar:
                   label: Divulgazione e disseminazione
                 - url: "/progetto/storia/"
                   label: Storia
+            - isMenu: true
+              listItems: #C #M
+                - url: "/progetto/piano-attivita/"
+                  label: Piano attività
+                - url: "/progetto/contatti/"
+                  label: Contatti
       - isDropDown: true
         isMegaMenu: true
         idMegamenu: menuB
-        label: Norme e riferimenti #C
+        label: Normativa #C
         megamenu:
           left:
             img: /images/norme-e-riferimenti/manuale-operativo-di-design.jpg #I
@@ -106,20 +112,20 @@ navbar:
             text: | #C
               **Scopri le principali norme e riferimenti ufficiali** per progettare servizi digitali pubblici inclusivi, equi e accessibili.
           heading:
-            url: "/norme-e-riferimenti/" #M
+            url: "/normativa/" #M
             label: Esplora le norme e i riferimenti #C
           cols:
             - isMenu: true
               listItems: #C #M
-                - url: "/norme-e-riferimenti/linee-guida-di-design/"
+                - url: "/normativa/linee-guida-di-design/"
                   label: Linee guida di design
-                - url: "/norme-e-riferimenti/linee-guida-accessibilita/"
+                - url: "/normativa/linee-guida-accessibilita/"
                   label: Linee guida accessibilità
-                - url: "/norme-e-riferimenti/manuale-operativo-di-design/"
+                - url: "/normativa/manuale-operativo-di-design/"
                   label: Manuale operativo di design
             - isMenu: true
               listItems: #C #M
-                - url: "/norme-e-riferimenti#articoli-di-approfondimento"
+                - url: "/normativa#articoli-di-approfondimento"
                   label: Articoli di approfondimento
     voicesCenter:
       - isDropDown: true
@@ -153,7 +159,7 @@ navbar:
       - isDropDown: true
         isMegaMenu: true
         idMegamenu: menuD
-        label: Design system .italia #C
+        label: Design system #C
         megamenu:
           left:
             img: /images/design-system/ds-beta-naming.png
@@ -182,7 +188,7 @@ navbar:
         label: Risorse per progettare #C
         megamenu:
           left:
-            img: /images/risorse-per-progettare/social/risorse-per-progettare.png #I
+            img: /images/risorse-per-progettare/social/risorse-per-progettare-1700.png #I
             imgAlt: "" #C
             text: | #C
               **Crea il tuo progetto digitale pubblico seguendo le cinque fasi di progettazione** e utilizzando i kit di design pronti all'uso.
@@ -204,6 +210,26 @@ navbar:
                   label: Realizzare
                 - url: "/risorse-per-progettare/validare/"
                   label: Validare
+      - isDropDown: true
+        isMegaMenu: true
+        idMegamenu: menuG
+        label: Formazione #C
+        megamenu:
+          left:
+            img: /images/formazione/social/formazione.png #I 
+            imgAlt: "La formazione è un processo iterativo." #C 
+            text: | #C
+              **Impara a fare design e insegna la cultura della progettazione** nella Pubblica Amministrazione.
+          heading:
+            url: "/formazione/" #M
+            label: Esplora i materiali di formazione #C 
+          cols:
+            - isMenu: true
+              listItems: #C #M
+                - url: "/formazione/imparare/"
+                  label: Imparare
+                - url: "/formazione/insegnare/"
+                  label: Insegnare
     voicesRight:
       - isDropDown: true
         isMegaMenu: true
@@ -227,24 +253,19 @@ navbar:
                   label: Eventi
                 - url: "/community#articoli-di-approfondimento"
                   label: Articoli di approfondimento
-                - url: "/community/media/"
-                  label: Media
             - isMenu: true
               listItems: #C #M
-                - url: "/community/materiali-di-disseminazione/"
-                  label: Materiali di disseminazione
-                - url: "/community/piano-attivita/"
-                  label: Piano attività
-                - url: "/community/contatti/"
-                  label: Contatti
+                - url: "/community/media/"
+                  label: Media
+
 headerPost:
   isActive: true
   nav:
     id: navBanner
     ariaLabel: Potrebbe interessarti
     items: #C #M
-    - title: "Design system .italia v1"
-      url: "/community/notizie/20241021-italia-versione-1/"
+    - title: "Nuova sezione Formazione"
+      url: "/community/notizie/20250129-la-nuova-sezione-formazione/"
       blank: false
       icon:
         icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
@@ -253,21 +274,21 @@ headerPost:
         color: "primary"
         hidden: true
         addonClasses: "me-2"
-    - title: "Modello ASL"
-      url: "/modelli/aziende-sanitarie-locali/"
+    # - title: "Nuova sezione Formazione"
+    #   url: "/formazione/"
+    #   blank: false
+    #   icon:
+    #     icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
+    #     size: "sm"
+    #     align: "middle"
+    #     color: "primary"
+    #     hidden: true
+    #     addonClasses: "me-2"
+    - title: "Design system .italia v1"
+      url: "/community/notizie/20241021-italia-versione-1/"
       blank: false
       icon:
-        icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: "me-2"
-    - title: "Modello Musei civici"
-      url: "/modelli/musei-civici/"
-      blank: false
-      icon:
-        icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
+        icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
         size: "sm"
         align: "middle"
         color: "primary"
