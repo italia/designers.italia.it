@@ -98,7 +98,7 @@ jobs:
             const fs = require('fs')
             fs.writeFileSync(`lighthouse-pr-comment-${pr}.txt`, comment)
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: lighthouse-pr-comment
