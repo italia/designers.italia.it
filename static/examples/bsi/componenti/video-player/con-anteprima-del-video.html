@@ -97,34 +97,40 @@
             display: block;
         }
     </style>
-    <title>Esempio Con overlay di colore primary</title>
+    <title>Esempio Con anteprima del video</title>
 </head>
 
 <body class="h-100">
     <div class="d-flex align-items-center justify-content-center h-100 w-100">
         <div class="bd-example w-100">
             
-<section class="it-hero-wrapper it-primary it-overlay">
-   <!-- - img-->
-   <div class="img-responsive-wrapper">
-      <div class="img-responsive">
-         <div class="img-wrapper"><img src="https://animals.sandiegozoo.org/sites/default/files/2016-08/animals_hero_mountains.jpg" title="titolo immagine" alt="descrizione immagine"></div>
+<div class="row">
+  <video 
+    data-bs-video
+    poster="/docs/assets/video/video_cover_seagulls.png"
+    data-setup='{
+      "controls": true,
+      "fluid": true
+    }'
+  >
+    <source src="//vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+    <source src="//vjs.zencdn.net/v/oceans.webm" type="video/webm">
+  </video>
+  <div class="vjs-transcription accordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="transcription-headcover">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#transcriptioncover" aria-expanded="true" aria-controls="transcription">
+          Trascrizione
+        </button>
+      </h2>
+      <div id="transcriptioncover" class="accordion-collapse collapse" role="region" aria-labelledby="transcription-headcover">
+        <div class="accordion-body">
+          Vestibulum hendrerit ultrices nibh, sed pharetra lacus ultrices eget. Morbi et ipsum et sapien dapibus facilisis. Integer eget semper nibh. Proin enim nulla, egestas ac rutrum eget, ullamcorper nec turpis.
+        </div>
       </div>
-   </div>
-   <!-- - texts-->
-   <div class="container">
-      <div class="row">
-         <div class="col-12">
-            <div class="it-hero-text-wrapper bg-dark">
-               <span class="it-category">Titolo occhiello</span>
-               <h2>Titolo della sezione</h2>
-               <p class="d-none d-lg-block">Platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Dictum sit amet justo donec enim diam vulputate ut. Eu nisl nunc mi ipsum faucibus.</p>
-               <div class="it-btn-container"><a class="btn btn-sm btn-outline-primary" href="#">Azione primaria</a></div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
+    </div>
+  </div>
+</div>
 
         </div>
     </div>
