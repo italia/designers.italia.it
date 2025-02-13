@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.13.1/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.13.4/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -130,7 +130,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.13.1/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.13.4/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
@@ -143,7 +143,7 @@
         // popover
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
+            return new bootstrap.Popover(popoverTriggerEl, { sanitize: false })
         })
 
     </script>

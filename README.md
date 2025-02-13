@@ -35,7 +35,7 @@ modification time, include `(last-update-skip)` somewhere in the commit message.
     npm run dev
     ```
 
-    Your site is now running at http://localhost:8000!
+    Your site is now running at [http://localhost:8000](http://localhost:8000)!
 
 3.  **Prepare previews of the design system**
 
