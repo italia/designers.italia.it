@@ -31,7 +31,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Insegnare - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Risorse e materiali per insegnare i princìpi e le metodologie relative al design in ambito pubblico." #C
+  description: "Materiali per insegnare i princìpi e le metodologie relative al design in ambito pubblico." #C
   image: null #I
   canonical: null
   pathname: /formazione/insegnare/ #M
@@ -79,7 +79,7 @@ components:
   hero:
     background: light
     title: Insegnare #C
-    subtitle: "Risorse e materiali per insegnare i princìpi e le metodologie relative al design in ambito pubblico" #C
+    subtitle: "Insegna i princìpi e le metodologie relative al design in ambito pubblico" #C
     tag:
         label: Formazione  #C
         addonClasses: mt-3 text-uppercase
@@ -89,7 +89,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Esplora i materiali progettati per supportare il lavoro di chi vuole inserire all'interno di un programma didattico per studenti l'insegnamento dei princìpi del design per il settore pubblico e realizzare esercitazioni pratiche sul tema.
+      Esplora i materiali progettati per supportare il lavoro di chi vuole inserire all'interno di un programma didattico l'insegnamento dei princìpi del design per il settore pubblico e svolgere esercitazioni pratiche sul tema.
     img: /images/formazione/icons/divulgare-large.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -104,13 +104,13 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Cultura progettuale,Divulgazione,Formazione,Partecipazione]
+      tags: [Cultura progettuale, Progettazione servizi, Ricerca utente, Visualizzazione dati]
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri i kit di insegnamento #C
+          label: Scopri i materiali #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -119,8 +119,16 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "design-per-il-settore-pubblico/"
-              label: "Design per il settore pubblico" #C
+            - url: "design-per-la-trasformazione-digitale-della-pa/"
+              label: "Design per la trasformazione digitale della PA" #C
+            - url: "metodologie-di-ricerca/"
+              label: "Metodologie di ricerca" #C
+            - url: "service-design-per-il-settore-pubblico/"
+              label: "Service design per il settore pubblico" #C
+            - url: "progettare-servizi-pubblici-virtuosi/"
+              label: "Progettare servizi pubblici virtuosi" #C
+            - url: "visualizzare-dati-della-pa/"
+              label: "Visualizzare dati della PA" #C
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -141,16 +149,67 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN
-      - title: "Design per il settore pubblico" #C
+      - title: "Design per la trasformazione digitale della PA" #C
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_trasformazioneDigitale.svg #I
         iconImgAlt: "" #C
         text: "Insegna l’importanza che ha il design nel processo di trasformazione digitale dei servizi pubblici." #C
         titleSmall: false
         fullHeight: true
-        url: "design-per-il-settore-pubblico/" #M
+        url: "design-per-la-trasformazione-digitale-della-pa/" #M
         tag:
-          label: Kit di insegnamento #C
+          label: Materiali per insegnare #C
+
+      # CARD CHILDREN
+      - title: "Fare ricerca per progettare servizi pubblici" #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_ricerca.svg #I
+        iconImgAlt: "" #C
+        text: "Insegna le principali tecniche di ricerca e gli strumenti da usare per raccogliere informazioni utili alla progettazione." #C
+        titleSmall: false
+        fullHeight: true
+        url: "fare-ricerca-per-progettare-servizi-pubblici/" #M
+        tag:
+          label: Materiali per insegnare #C
+
+        # CARD CHILDREN
+      - title: "Service design per il settore pubblico" #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_service.svg #I
+        iconImgAlt: "" #C
+        text: "Insegna cosa fa un service designer e come progetta servizi pubblici digitali." #C
+        titleSmall: false
+        fullHeight: true
+        url: "service-design-per-il-settore-pubblico/" #M
+        tag:
+          label: Materiali per insegnare #C
+
+
+        # CARD CHILDREN
+      - title: "Progettare servizi pubblici virtuosi" #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_etica.svg #I
+        iconImgAlt: "" #C
+        text: "Insegna i princìpi per progettare servizi pubblici equi e rispettosi delle persone e dell’ambiente." #C
+        titleSmall: false
+        fullHeight: true
+        url: "progettare-servizi-pubblici-virtuosi/" #M
+        tag:
+          label: Materiali per insegnare #C
+
+
+          # CARD CHILDREN
+      - title: "Visualizzare dati della PA" #C
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_insegnamento_dataviz.svg #I
+        iconImgAlt: "" #C
+        text: "Insegna a usare i dati nel processo di progettazione e a sfruttare le opportunità che offrono nel rispetto della normativa." #C
+        titleSmall: false
+        fullHeight: true
+        url: "visualizzare-dati-della-pa/" #M
+        tag:
+          label: Materiali per insegnare #C
+          
 
 
   # ///////////////////
@@ -173,8 +232,8 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            Grazie ai kit di insegnamento potrai, in modo autonomo, integrare lezioni e laboratori sui principi del design nei servizi pubblici all’interno del tuo programma didattico.
-            I kit offrono materiali teorici, come presentazioni e casi studio, e una serie di strumenti pratici per condurre esercitazioni, workshop o altri momenti di applicazione pratica, selezionati tra le risorse per progettare proposte da Designers Italia. 
+            Grazie ai materiali per insegnare potrai, in modo autonomo, integrare lezioni e laboratori sui principi del design nei servizi pubblici all’interno del tuo programma didattico.
+            I materiali includono presentazioni, casi studio e strumenti pratici per condurre esercitazioni, workshop o altri momenti di applicazione pratica, selezionati tra le risorse per progettare proposte da Designers Italia. 
 
         # TXT + CTA BLOCK
         - name: TextImageCta
