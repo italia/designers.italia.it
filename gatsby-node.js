@@ -22,7 +22,7 @@ exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
       module: {
         rules: [
           {
-            test: /bootstrap-italia/,
+            test: /accessible-autocomplete/,
             use: loaders.null(),
           },
         ],
