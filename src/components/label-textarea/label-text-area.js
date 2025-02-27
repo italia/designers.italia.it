@@ -24,6 +24,7 @@ function LabelTextArea(props) {
         id={id}
         className="form-control"
         onChange={handleChange}
+        autoComplete="off"
         {...opts}
       >
         {message}
