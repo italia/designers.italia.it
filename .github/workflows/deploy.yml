@@ -12,6 +12,17 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          cache: 'npm'
+      # Add Gatsby cache
+      - name: Cache Gatsby
+        uses: actions/cache@v3
+        with:
+          path: |
+            public
+            .cache
+          key: ${{ runner.os }}-gatsby-build-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-gatsby-build-
       - run: npm ci
       - run: npm run build
         env:
