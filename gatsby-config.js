@@ -35,7 +35,14 @@ const GATSBY_PLUGINS = [
       trailingSlashes: true,
     },
   },
-  `gatsby-plugin-sass`,
+  {
+    resolve: `gatsby-plugin-sass`,
+    options: {
+      sassOptions: {
+        includePaths: ["node_modules/"],
+      }
+    },
+  },
   `gatsby-plugin-image`,
   {
     resolve: `gatsby-transformer-sharp`, // Needed for dynamic images
