@@ -40,7 +40,7 @@ const GATSBY_PLUGINS = [
     options: {
       sassOptions: {
         includePaths: ["node_modules/"],
-      }
+      },
     },
   },
   `gatsby-plugin-image`,
