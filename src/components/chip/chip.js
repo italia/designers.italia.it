@@ -11,7 +11,10 @@ function Chip({ size, color, path = "argomenti", label, children }) {
     `${color ? ` chip-${color}` : ""}`;
 
   return (
-    <Link to={`/${path}/${slugify(label, { strict: true, lower: true })}/`} className={styles}>
+    <Link
+      to={`/${path}/${slugify(label, { strict: true, lower: true })}/`}
+      className={styles}
+    >
       <span className="visually-hidden">Argomento: </span>
       <span className="chip-label">{label}</span>
       {children}

@@ -121,7 +121,7 @@ function ComponentView({
     notification.show();
   };
 
-  const id = slugify(variantName, { lower: true, strict: true, });
+  const id = slugify(variantName, { lower: true, strict: true });
 
   const uuid = `${idPrefix}-component-view-id_${id}`;
   const accId = `${uuid}-accordion`;

@@ -77,7 +77,7 @@ function Card({
     HLevel = `h3`;
   }
 
-  const id = slugify(title, { lower: true, strict: true, });
+  const id = slugify(title, { lower: true, strict: true });
 
   if (cardEvent) {
     return (
@@ -158,7 +158,7 @@ function Card({
                     <Tag {...tag} />
                   </div>
                 )}
-                { }
+                {}
                 {url && <ShareButton url={url} title={title} small />}
               </div>
             </div>

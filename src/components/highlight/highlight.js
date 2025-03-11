@@ -70,7 +70,7 @@ function Highlight({
     ratioClass = "img-container ratio ratio-16x9";
   }
 
-  const id = slugify(title, { lower: true, strict: true, });
+  const id = slugify(title, { lower: true, strict: true });
 
   return (
     <section className={styles} aria-labelledby={id}>
