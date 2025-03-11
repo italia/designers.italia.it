@@ -1,4 +1,5 @@
 import * as React from "react";
+import slugify from "slugify";
 import ReactMarkdown from "react-markdown";
 import classNames from "classnames";
 import ImageResponsive from "../image-responsive/image-responsive";
@@ -75,13 +76,121 @@ function Card({
   } else {
     HLevel = `h3`;
   }
+
+  const id = slugify(title, { lower: true, strict: true });
+
   if (cardEvent) {
     return (
+      <article aria-labelledby={id}>
+        <div className={styles}>
+          <div className={styleBody}>
+            <div className="text-zone">
+              {HLevel && (
+                <HLevel id={id}>
+                  <Link
+                    to={url}
+                    target={blank ? "_blank" : undefined}
+                    rel={blank ? "noreferrer" : undefined}
+                  >
+                    {title}
+                    {externalLink && !externalLink.url && (
+                      <SimpleCta {...externalLink} />
+                    )}
+                  </Link>
+                </HLevel>
+              )}
+              {dateInfo && (
+                <span className="date-info font-monospace mb-3">
+                  {dateInfo}
+                </span>
+              )}
+              {text && <ReactMarkdown>{text}</ReactMarkdown>}
+              {externalLink && externalLink.url && (
+                <SimpleCta {...externalLink} />
+              )}
+              {moreInfo && (
+                <span className="more-info font-monospace">{moreInfo}</span>
+              )}
+            </div>
+            <div className="di-card-footer">
+              <div className={imgStyle}>
+                {img && !imgPlaceholder && (
+                  <ImageResponsive src={img} alt={alt} />
+                )}
+                {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt} />}
+                {dateOverlay && (
+                  <div className="date-overlay d-flex flex-column justify-content-center">
+                    <span className="day font-monospace">
+                      {dateOverlay.day}
+                    </span>
+                    <span className="month">{dateOverlay.month}</span>
+                    <span className="month">{dateOverlay.year}</span>
+                  </div>
+                )}
+                {iconOverlay && (
+                  <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
+                    <Icon {...iconOverlay} />
+                  </div>
+                )}
+              </div>
+              <div className="di-card-footer-content d-flex justify-content-between align-items-end">
+                {tags && (
+                  <div className="chips-list-wrapper">
+                    <ul
+                      className="chips-list chips d-flex flex-wrap mb-0"
+                      aria-label="Argomenti correlati:"
+                    >
+                      {tags.map((t, index) => (
+                        <li className="list-item" key={`list-chip-${index}`}>
+                          <Chip
+                            key={`chip-${index}`}
+                            label={t}
+                            size="sm"
+                            color="secondary"
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+                {tag && (
+                  <div className="tag-container">
+                    <Tag {...tag} />
+                  </div>
+                )}
+                {}
+                {url && <ShareButton url={url} title={title} small />}
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    );
+  }
+  return (
+    <article aria-labelledby={id}>
       <div className={styles}>
+        {(img || imgPlaceholder || iconImg) && (
+          <div className={imgStyle}>
+            {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt} />}
+            {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt} />}
+            {dateOverlay && (
+              <div className="date-overlay d-flex flex-column justify-content-center">
+                <span className="day font-monospace">{dateOverlay.day}</span>
+                <span className="month">{dateOverlay.month}</span>
+              </div>
+            )}
+            {iconOverlay && (
+              <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
+                <Icon {...iconOverlay} />
+              </div>
+            )}
+          </div>
+        )}
         <div className={styleBody}>
           <div className="text-zone">
             {HLevel && (
-              <HLevel>
+              <HLevel id={id}>
                 <Link
                   to={url}
                   target={blank ? "_blank" : undefined}
@@ -104,122 +213,46 @@ function Card({
             {moreInfo && (
               <span className="more-info font-monospace">{moreInfo}</span>
             )}
+            {buttonBottom && (
+              <div className="button-wrapper mt-4">
+                <Button {...buttonBottom} />
+              </div>
+            )}
           </div>
-          <div className="di-card-footer">
-            <div className={imgStyle}>
-              {img && !imgPlaceholder && (
-                <ImageResponsive src={img} alt={alt} />
-              )}
-              {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt} />}
-              {dateOverlay && (
-                <div className="date-overlay d-flex flex-column justify-content-center">
-                  <span className="day font-monospace">{dateOverlay.day}</span>
-                  <span className="month">{dateOverlay.month}</span>
-                  <span className="month">{dateOverlay.year}</span>
-                </div>
-              )}
-              {iconOverlay && (
-                <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
-                  <Icon {...iconOverlay} />
-                </div>
-              )}
-            </div>
-            <div className="di-card-footer-content d-flex justify-content-between align-items-end">
-              {tags && (
-                <div className="chip-container">
-                  {tags.map((t, index) => (
-                    <Chip key={`chip-${index}`} label={t} size="sm" />
-                  ))}
-                </div>
-              )}
-              {tag && (
-                <div className="tag-container">
-                  <Tag {...tag} />
-                </div>
-              )}
-              {}
-              {url && <ShareButton url={url} title={title} small />}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  return (
-    <div className={styles}>
-      {(img || imgPlaceholder || iconImg) && (
-        <div className={imgStyle}>
-          {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt} />}
-          {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt} />}
-          {dateOverlay && (
-            <div className="date-overlay d-flex flex-column justify-content-center">
-              <span className="day font-monospace">{dateOverlay.day}</span>
-              <span className="month">{dateOverlay.month}</span>
-            </div>
-          )}
-          {iconOverlay && (
-            <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
-              <Icon {...iconOverlay} />
-            </div>
-          )}
-        </div>
-      )}
-      <div className={styleBody}>
-        <div className="text-zone">
-          {HLevel && (
-            <HLevel>
-              <Link
-                to={url}
-                target={blank ? "_blank" : undefined}
-                rel={blank ? "noreferrer" : undefined}
-              >
-                {title}
-                {externalLink && !externalLink.url && (
-                  <SimpleCta {...externalLink} />
+          {(tag || tags || share || chips) && (
+            <div className="di-card-footer">
+              <div className="di-card-footer-content d-flex justify-content-between align-items-end">
+                {tags && (
+                  <div className="chips-list-wrapper">
+                    <ul
+                      className="chips-list chips d-flex flex-wrap mb-0"
+                      aria-label="Argomenti correlati:"
+                    >
+                      {tags.map((t, index) => (
+                        <li className="list-item" key={`list-chip-${index}`}>
+                          <Chip
+                            key={`chip-${index}`}
+                            label={t}
+                            size="sm"
+                            color="secondary"
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
-              </Link>
-            </HLevel>
-          )}
-          {dateInfo && (
-            <span className="date-info font-monospace mb-3">{dateInfo}</span>
-          )}
-          {text && <ReactMarkdown>{text}</ReactMarkdown>}
-          {externalLink && externalLink.url && <SimpleCta {...externalLink} />}
-          {moreInfo && (
-            <span className="more-info font-monospace">{moreInfo}</span>
-          )}
-          {buttonBottom && (
-            <div className="button-wrapper mt-4">
-              <Button {...buttonBottom} />
+                {tag && (
+                  <div className="tag-container">
+                    <Tag {...tag} />
+                  </div>
+                )}
+                {url && <ShareButton url={url} title={title} small />}
+              </div>
             </div>
           )}
         </div>
-        {(tag || tags || share || chips) && (
-          <div className="di-card-footer">
-            <div className="di-card-footer-content d-flex justify-content-between align-items-end">
-              {tags && (
-                <div className="chip-container">
-                  {tags.map((t, index) => (
-                    <Chip
-                      key={`chip-${index}`}
-                      label={t}
-                      size="sm"
-                      color="secondary"
-                    />
-                  ))}
-                </div>
-              )}
-              {tag && (
-                <div className="tag-container">
-                  <Tag {...tag} />
-                </div>
-              )}
-              {url && <ShareButton url={url} title={title} small />}
-            </div>
-          </div>
-        )}
       </div>
-    </div>
+    </article>
   );
 }
 
