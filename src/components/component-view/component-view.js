@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, { useState, useEffect } from "react";
-import uniqueId from "lodash/uniqueId";
+import slugify from "slugify";
 
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import loadable from "@loadable/component";
@@ -11,8 +11,6 @@ import Icon from "../icon/icon";
 
 import "./component-view.scss";
 import viewerData from "../../data/component-viewer.yaml";
-
-const slugify = require("slugify");
 
 const SyntaxHighlighter = loadable(() => import("./syntax-highlighter"));
 
@@ -123,7 +121,9 @@ function ComponentView({
     notification.show();
   };
 
-  const uuid = `${idPrefix}-component-view-${uniqueId("id_")}`;
+  const id = slugify(variantName, { lower: true, strict: true, });
+
+  const uuid = `${idPrefix}-component-view-id_${id}`;
   const accId = `${uuid}-accordion`;
   const headId = `${uuid}-heading`;
   const collId = `${uuid}-collapse`;

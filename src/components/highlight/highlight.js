@@ -1,4 +1,5 @@
 import * as React from "react";
+import slugify from "slugify";
 import "./highlight.scss";
 import ReactMarkdown from "react-markdown";
 import ImageResponsive from "../image-responsive/image-responsive";
@@ -7,7 +8,6 @@ import Icon from "../icon/icon";
 import Numbers from "../numbers/numbers";
 
 function Highlight({
-  id,
   background,
   img,
   alt,
@@ -69,6 +69,8 @@ function Highlight({
   } else {
     ratioClass = "img-container ratio ratio-16x9";
   }
+
+  const id = slugify(title, { lower: true, strict: true, });
 
   return (
     <section className={styles} aria-labelledby={id}>

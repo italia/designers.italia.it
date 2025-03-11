@@ -1,4 +1,5 @@
 import * as React from "react";
+import slugify from "slugify";
 import ReactMarkdown from "react-markdown";
 import classNames from "classnames";
 import ImageResponsive from "../image-responsive/image-responsive";
@@ -14,7 +15,6 @@ import "./card.scss";
 
 function Card({
   cardEvent,
-  id,
   title,
   // titleSmall,
   // titleBig,
@@ -76,6 +76,9 @@ function Card({
   } else {
     HLevel = `h3`;
   }
+
+  const id = slugify(title, { lower: true, strict: true, });
+
   if (cardEvent) {
     return (
       <article aria-labelledby={id}>
@@ -155,7 +158,7 @@ function Card({
                     <Tag {...tag} />
                   </div>
                 )}
-                {}
+                { }
                 {url && <ShareButton url={url} title={title} small />}
               </div>
             </div>

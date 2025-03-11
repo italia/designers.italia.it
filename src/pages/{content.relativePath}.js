@@ -272,7 +272,6 @@ export const query = graphql`
           }
           cards {
             title
-            id
             headingLevel
             cardEvent
             img
@@ -327,7 +326,6 @@ export const query = graphql`
         # highlightsLoop {
         #   title
         #   subtitle
-        #   id
         #   headingLevel
         #   big
         #   background
@@ -343,7 +341,6 @@ export const query = graphql`
         # }
         highlightsLoop1 {
           title
-          id
           headingLevel
           background
           big
@@ -371,7 +368,6 @@ export const query = graphql`
         }
         # highlightsLoop2 {
         #  title
-        #  id
         #  headingLevel
         #  big
         #  background
@@ -400,7 +396,6 @@ export const query = graphql`
           title
           subtitle
           big
-          id
           specular
           img
           alt
@@ -457,7 +452,6 @@ export const query = graphql`
           col4
           cards {
             title
-            id
             img
             alt
             text
@@ -554,7 +548,6 @@ export const query = graphql`
           }
           cards {
             title
-            id
             headingLevel
             customCol
             img
