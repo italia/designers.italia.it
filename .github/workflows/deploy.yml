@@ -20,7 +20,7 @@ jobs:
           path: |
             public
             .cache
-          key: ${{ runner.os }}-gatsby-build-${{ github.sha }}
+          key: ${{ runner.os }}-gatsby-cache-${{ github.sha }}
           restore-keys: |
             ${{ runner.os }}-gatsby-build-
       - run: npm ci
