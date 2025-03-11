@@ -208,6 +208,7 @@ export const query = graphql`
           reversedMobile
           buttons {
             label
+            ariaLabel
             btnStyle
             url
             addonStyle
@@ -271,6 +272,7 @@ export const query = graphql`
           }
           cards {
             title
+            id
             headingLevel
             cardEvent
             img
@@ -406,6 +408,7 @@ export const query = graphql`
           background
           buttons {
             label
+            ariaLabel
             btnStyle
             url
             addonStyle
@@ -454,6 +457,7 @@ export const query = graphql`
           col4
           cards {
             title
+            id
             img
             alt
             text
@@ -550,6 +554,7 @@ export const query = graphql`
           }
           cards {
             title
+            id
             headingLevel
             customCol
             img

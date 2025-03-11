@@ -12,6 +12,7 @@ function Chip({ size, color, path = "argomenti", label, children }) {
 
   return (
     <Link to={`/${path}/${kebabCase(label)}/`} className={styles}>
+      <span className="visually-hidden">Argomento: </span>
       <span className="chip-label">{label}</span>
       {children}
     </Link>
