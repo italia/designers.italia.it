@@ -1,4 +1,4 @@
-import React, { useId } from "react";
+import * as React from "react";
 import ReactMarkdown from "react-markdown";
 import classNames from "classnames";
 import ImageResponsive from "../image-responsive/image-responsive";
@@ -44,8 +44,6 @@ function Card({
   rounded,
   buttonBottom,
 }) {
-  
-
   const styles = classNames("di-card d-md-flex flex-md-column w-100", {
     fullheight: fullHeight,
     rounded,
@@ -99,7 +97,9 @@ function Card({
                 </HLevel>
               )}
               {dateInfo && (
-                <span className="date-info font-monospace mb-3">{dateInfo}</span>
+                <span className="date-info font-monospace mb-3">
+                  {dateInfo}
+                </span>
               )}
               {text && <ReactMarkdown>{text}</ReactMarkdown>}
               {externalLink && externalLink.url && (
@@ -117,7 +117,9 @@ function Card({
                 {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt} />}
                 {dateOverlay && (
                   <div className="date-overlay d-flex flex-column justify-content-center">
-                    <span className="day font-monospace">{dateOverlay.day}</span>
+                    <span className="day font-monospace">
+                      {dateOverlay.day}
+                    </span>
                     <span className="month">{dateOverlay.month}</span>
                     <span className="month">{dateOverlay.year}</span>
                   </div>
@@ -131,7 +133,10 @@ function Card({
               <div className="di-card-footer-content d-flex justify-content-between align-items-end">
                 {tags && (
                   <div className="chips-list-wrapper">
-                    <ul className="chips-list chips d-flex flex-wrap mb-0" aria-label="Argomenti correlati:">
+                    <ul
+                      className="chips-list chips d-flex flex-wrap mb-0"
+                      aria-label="Argomenti correlati:"
+                    >
                       {tags.map((t, index) => (
                         <li className="list-item" key={`list-chip-${index}`}>
                           <Chip
@@ -150,7 +155,7 @@ function Card({
                     <Tag {...tag} />
                   </div>
                 )}
-                { }
+                {}
                 {url && <ShareButton url={url} title={title} small />}
               </div>
             </div>
@@ -199,7 +204,9 @@ function Card({
               <span className="date-info font-monospace mb-3">{dateInfo}</span>
             )}
             {text && <ReactMarkdown>{text}</ReactMarkdown>}
-            {externalLink && externalLink.url && <SimpleCta {...externalLink} />}
+            {externalLink && externalLink.url && (
+              <SimpleCta {...externalLink} />
+            )}
             {moreInfo && (
               <span className="more-info font-monospace">{moreInfo}</span>
             )}
@@ -214,7 +221,10 @@ function Card({
               <div className="di-card-footer-content d-flex justify-content-between align-items-end">
                 {tags && (
                   <div className="chips-list-wrapper">
-                    <ul className="chips-list chips d-flex flex-wrap mb-0" aria-label="Argomenti correlati:">
+                    <ul
+                      className="chips-list chips d-flex flex-wrap mb-0"
+                      aria-label="Argomenti correlati:"
+                    >
                       {tags.map((t, index) => (
                         <li className="list-item" key={`list-chip-${index}`}>
                           <Chip

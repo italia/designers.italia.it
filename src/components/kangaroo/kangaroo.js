@@ -69,7 +69,10 @@ function Kangaroo({
               </div>
               <div className="chips ms-md-3 mb-2 mb-lg-0">
                 <div className="chips-list-wrapper">
-                  <ul className="chips-list chips d-flex flex-wrap mb-0" aria-label="Argomenti correlati:">
+                  <ul
+                    className="chips-list chips d-flex flex-wrap mb-0"
+                    aria-label="Argomenti correlati:"
+                  >
                     {tags.map((t, index) => (
                       <li className="list-item" key={`list-chip-${index}`}>
                         <Chip
@@ -97,7 +100,10 @@ function Kangaroo({
                 </div>
                 <div className="chips ms-md-3 mb-2 mb-lg-0">
                   <div className="chips-list-wrapper">
-                    <ul className="chips-list chips d-flex flex-wrap mb-0" aria-label="Argomenti correlati:">
+                    <ul
+                      className="chips-list chips d-flex flex-wrap mb-0"
+                      aria-label="Argomenti correlati:"
+                    >
                       {tagsDesignSystem.map((t, index) => (
                         <li className="list-item" key={`list-chip-${index}`}>
                           <Chip
