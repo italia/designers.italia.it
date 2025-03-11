@@ -42,7 +42,7 @@ function FooterMain({ id, title, cols, tagsNo, social, community, subscribe }) {
           {footerTags && (
             <div className="row">
               <div className="chips-list-wrapper">
-                <ul className="chips-list chips d-flex flex-wrap">
+                <ul className="chips-list chips d-flex flex-wrap" aria-label="Esplora gli argomenti: ">
                   {footerTags.map((tag) => (
                     <ListItem
                       key={tag.fieldValue}
