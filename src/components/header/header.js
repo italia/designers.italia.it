@@ -17,7 +17,6 @@ function Header({ data, children }) {
     <header
       className={styles}
       id="header"
-      data-bs-toggle={data.sticky ? "sticky" : ""}
       data-bs-position-type={data.sticky ? "fixed" : ""}
       data-bs-sticky-class-name={data.sticky ? "is-sticky" : ""}
       data-bs-target={`#${data.navbar.id}`}
