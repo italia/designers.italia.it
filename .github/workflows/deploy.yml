@@ -44,7 +44,6 @@ jobs:
           if [ ! -d ".cache" ]; then
             npm run clean
           fi
-          npm run prepare-lib
           SHARP_CONCURRENCY=2 \
           GATSBY_CONCURRENT_DOWNLOAD=5 \
           npm run build
