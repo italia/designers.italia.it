@@ -81,8 +81,7 @@ function Card({
 
   if (cardEvent) {
     return (
-      <article aria-labelledby={id}>
-        <div className={styles}>
+      <article aria-labelledby={id} className={styles}>
           <div className={styleBody}>
             <div className="text-zone">
               {HLevel && (
@@ -163,13 +162,11 @@ function Card({
               </div>
             </div>
           </div>
-        </div>
       </article>
     );
   }
   return (
-    <article aria-labelledby={id}>
-      <div className={styles}>
+    <article aria-labelledby={id} className={styles}>
         {(img || imgPlaceholder || iconImg) && (
           <div className={imgStyle}>
             {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt} />}
@@ -251,7 +248,6 @@ function Card({
             </div>
           )}
         </div>
-      </div>
     </article>
   );
 }
