@@ -106,8 +106,8 @@ components:
     - full: true
       noSpace: false
       paddingLeft: true
-      title: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
-      #text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
+      title: Migliora il tuo approccio al linguaggio mettendo le persone al centro della progettazione
+      #text: Migliora il tuo approccio al linguaggio mettendo le persone al centro della progettazione
       background: null
 
       components:
@@ -116,13 +116,9 @@ components:
           title:
           noSpace: true
           text: |
-            Il linguaggio è una risorsa preziosa nell’intero ecosistema e ciclo di vita di un prodotto digitale. Ha il potere di **orientare e influenzare l’esperienza delle persone** su siti e servizi, favorendo **la comprensione delle informazioni e l’abilità di portare a termine procedure**.
+            Il linguaggio è un elemento centrale per un servizio digitale. Ha il potere di **orientare e influenzare l’esperienza delle persone**, favorendo la **comprensione delle informazioni** e **l’abilità di portare a termine procedure**.  
 
-            È quindi importante che tutti i contenuti (testi per le interfacce, documentazione, email, notifiche, SMS, ecc.) siano progettati considerando l’esperienza delle persone che useranno il servizio, evitando la cattiva pratica di riportare in interfaccia testi concepiti per supporti analogici e destinati a personale amministrativo o legale.
-            
-            ### Come le persone leggono sugli schermi
-
-            Studi di monitoraggio oculare (eye-tracking) hanno dimostrato che leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Leggiamo solo il 20-28% del testo su una pagina e lo scansioniamo velocemente seguendo la forma di una F (F-pattern): iniziamo a leggere dall’alto a sinistra, scansionano una riga orizzontale, poi ci spostiamo in basso, leggono un’altra breve sezione orizzontale e infine scendiamo lungo il margine sinistro, scansionando verticalmente, alla ricerca di punti di interesse. 
+            Su schermo, **leggiamo solo il 20-28% del testo** di una pagina e lo **scansioniamo velocemente seguendo la forma di una F** ([F-pattern](https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/scrittura-e-linguaggio.html#come-leggono-le-persone-sul-web)). È quindi importante che il linguaggio usato presenti specifiche caratteristiche, evitando la cattiva pratica di riportare in interfaccia testi concepiti per supporti analogici e destinati a personale amministrativo o legale. 
 
 
         - name: TextImageCta
@@ -151,16 +147,16 @@ components:
               - text: Il ravvedimento operoso non è più possibile se il Fisco ha già constatato la violazione. 
               - text: Costituisce causa ostativa alla facoltà di esperire il ravvedimento operoso la già avvenuta constatazione della violazione da parte del Fisco.
             - cols:
-              - text: Aggiungi un nuovo provider
-              - text: Nuovo provider
+              - text: L’ente ha annullato la pratica. 
+              - text: Si è deciso di procedere all’annullamento della pratica.
 
         - name: TextImageCta
           text: |
-            Per migliorare comprensibilità e leggibilità dei contenuti, usa parole chiare e facili da comprendere, prediligendo una sintassi semplice, forme verbali attive ed evitando nominalizzazioni.
+            Per migliorare comprensibilità e leggibilità dei contenuti, usa **parole chiare e facili da comprendere**, prediligendo una **sintassi semplice**, **forme verbali attive** ed **evitando nominalizzazioni**.
 
         # 2nd
         - name: Table
-          title: Prova prova prova
+          title: Inclusività
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -172,42 +168,151 @@ components:
                 addonClasses: bg-danger fw-bold
           rows:
             - cols:
-              - text: Cerca un documento
-              - text: Fai una ricerca fra i documenti
+              - text: Scopri / Vai a / Approfondisci (la notizia, il documento, ecc.)
+              - text: Vedi / leggi (la notizia, il documento, ecc.)
+            - cols:
+              - text: Ti diamo il benvenuto, Ricevi aggiornamenti,
+              - text: Benvenuto, Rimani aggiornato,
+            - cols:
+              - text: Persone con disabilità
+              - text: Disabili
+            - cols:
+              - text: Nella notte sono sbarcate circa 30 persone
+              - text: Nella notte sono sbarcati circa 30 clandestini
 
         - name: TextImageCta
           text: |
-            Oltre alla semplicità di linguaggio, considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre **preferibile ridurre la quantità di testo piuttosto che incrementarla**.
+            Usare un linguaggio inclusivo fa sentire le persone più vicine alla PA, a prescindere dal genere, l’orientamento sessuale, la nazionalità o le origini, la religione o altre caratteristiche fisiche o psicologiche. Non usare verbi abilisti, maschile sovresteso, denominazioni incorrette e stereotipi.
 
 
 
+        - name: TextImageCta
+          title: Nomi di organizzazioni, servizi e progetti
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Il nome ufficiale della tua organizzazione, servizio o progetto potrebbe non rispecchiare quello usato dagli utenti. Non serve creare un marchio per ogni nuovo servizio, ma è meglio usare diciture descrittive e di immediata comprensione.
+
+        - name: TextImageCta
+          title: Termini tecnici, burocratici e stranieri
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Usa termini complessi solo quando sei certo che il pubblico a cui ti rivolgi sia in grado di capirne il significato. In alternativa, preferisci dei sinonimi; se non è possibile spiega il significato del termine in modo chiaro e conciso.
+
+        - name: TextImageCta
+          title: Acronimi
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Gli acronimi non aiutano la comprensione del testo: evitali il più possibile. Se è necessario usarli, assicurati di aver prima scritto il nome completo per esteso nello stesso contenuto. 
+
+            **Esempio:** “Il bando è stato pubblicato dal Ministero dello sviluppo economico (Mise). Il Mise ha anche reso noto…” 
+
+    
     - full: true
       noSpace: true
       paddingLeft: true
-      title: Scrivi per le persone
+      title: Formatta il testo in modo coerente e accessibile
       #text: |
             #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
       components:
         - name: TextImageCta
           text: |
-            Una Pubblica Amministrazione che mette le persone al centro sa parlare in modo semplice, chiaro ed empatico. Scopri quali parole usano gli utenti per riferirsi ai tuoi contenuti, usando strumenti come Google Ads Keyword Planner, Google Trends, i dati di ricerca interni, questionari e interviste.
-
-            ### Linguaggio semplice e naturale 
-
-            Per migliorare comprensibilità e leggibilità dei contenuti, usa parole chiare e facili da comprendere, prediligendo una sintassi semplice, forme verbali attive ed evitando nominalizzazioni.
-
-            ### Nomi di organizzazioni, servizi e progetti
-
-            Il nome ufficiale della tua organizzazione, servizio o progetto potrebbe non rispecchiare quello usato dagli utenti. Non serve creare un marchio per ogni nuovo servizio, ma è meglio usare diciture descrittive e di immediata comprensione. 
-
-            ### Termini tecnici, burocratici e stranieri
-
-            Usa termini complessi solo quando sei certo che il pubblico a cui ti rivolgi sia in grado di capirne il significato. In alternativa, preferisci dei sinonimi; se non è possibile spiega il significato del termine in modo chiaro e conciso.
-
-            ### Acronimi
+            Alcune piccole accortezze di formattazione e stile possono migliorare la leggibilità e la comprensione dei testi, oltre che aumentare l’autorevolezza dell’informazione. 
             
-            Gli acronimi non aiutano la comprensione del testo: evitali il più possibile. Se è necessario usarli, assicurati di aver prima scritto il nome completo per esteso nello stesso contenuto.
-            Esempio: “Il bando è stato pubblicato dal Ministero dello sviluppo economico (Mise). Il Mise ha anche reso noto…”
+            ### Corsivo 
+
+            Il corsivo rende più difficile la lettura del testo. Usalo solo in caso di:
+            - indicazioni bibliografiche, opere d’arte o cinematografiche;
+            - parole straniere, ma solo di uso non comune e in ambito non specialistico.
+            
+            ### Grassetto
+
+            Anche il grassetto rende più difficile la lettura del testo, quindi usalo soltanto per evidenziare parole chiave e non frasi intere. Se hai bisogno di mettere più in evidenza un testo lungo, considera l’uso di un titoletto o di elementi di interfaccia. 
+
+            ### Testo sottolineato
+
+            Non usare testo sottolineato, a meno che non si tratti di link.
+            
+            ### Allineamento
+            
+            Allinea sempre il testo a sinistra. Un testo giustificato è molto difficile da leggere.
+
+            ### Uso delle maiuscole
+
+            I testi in maiuscolo sono difficili da leggere. Usa il maiuscolo soltanto per la **prima lettera della frase (sentence case)**. Questo vale anche per:
+            - nomi di ministeri e dipartimenti (Ministero della difesa, Dipartimento della protezione civile);
+            - acronimi (“Mipaaf” per “Ministero delle politiche agricole, alimentari e forestali”.
+
+            ### Numeri
+
+            Prediligi l’uso delle cifre, soprattutto quando i numeri indicano un dato preciso (contenuti matematici, scientifici, statistici, prezzi) o devono essere ospitati in componenti di interfaccia. Usa il punto per separare le migliaia a partire dai 10 mila in su. 
+
+            **Esempi:** 8700, 11.800 
+
+            Per valori numerici molto alti e indicativi, scrivi “mila”, “milione” e “miliardo” in lettere. 
+
+            **Esempio:** 4 milioni e 325 mila persone, circa 10 mila enti 
+
+            Usa la virgola per separare i decimali 
+
+            **Esempio:** 2,5  
+
+            Usa i numeri romani soltanto per riferimenti puntuali alle leggi e indicare i secoli. 
+
+            **Esempi:** Titolo V della Costituzione, XIX secolo 
+
+            ### Date 
+
+            Scrivi i giorni del mese e l’anno in cifre, mentre scrivi il mese e, se necessario, il giorno della settimana in lettere (con l’iniziale minuscola). 
+
+            **Esempio:** 25 gennaio 2018, lunedì 25 gennaio 2018
+
+            ### Orari 
+
+            Usa le cifre e separa ore e minuti con i due punti, senza spazi. 
+
+            **Esempio:** 23:59
+
+            ### Numeri di telefono
+
+            Usa sempre anche il prefisso internazionale e raggruppa le cifre separandole con degli spazi per migliorare la leggibilità. Inserisci i numeri di telefono come link attivi usando l’attributo “tel:” nel codice html.  
+
+            **Esempio:** [+39 06 123 456 78](tel:+390612345678)
+
+            ### Email 
+
+            La parola “email” si scrive senza trattini o spazi, in minuscolo. Per gli indirizzi, scrivili per estesp e inseriscili come link attivi usando l’attributo “mailto:” nel codice html.
+
+            **Esempio:** Email: [ufficio@comune.comune.it](mailto:ufficio@comune.comune.it}
+
+            ### Indirizzi
+
+            Usa le virgole per separare via (inclusiva di numero civico), CAP e città.
+
+            **Esempio:** Via Giulia 25, 00185, Roma 
+
+            
+
+        - name: TextImageCta
+          title: Come scrivere le parole della PA
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Abbiamo creato un glossario che indica come scrivere alcuni termini ricorrenti della Pubblica Amministrazione, inclusi nomi di istituzioni, che generano spesso dubbi di ortografia. Nella guida, trovi anche alternative più semplici da preferire a termini molto burocratici. 
+          ctas:
+          - label: "Vai alla Guida alle parole della PA" #C
+            url: "/design-system/componenti/buttons/" #M
+            blank: true #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
           
 
