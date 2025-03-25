@@ -7,7 +7,7 @@ metadata:
 
 seo:
   name: Linguaggio
-  description: "Progetta contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
+  description: "Progetta contenuti con un linguaggio chiaro, inclusivo, efficace e pensato per andare incontro alle esigenze delle persone"
   canonical: null
   pathname: /design-system/fondamenti/linguaggio/
 
@@ -31,7 +31,7 @@ components:
     background: null
     title: Linguaggio
     column: true
-    subtitle: "Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
+    subtitle: "Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare testi chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone."
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -314,19 +314,73 @@ components:
               size: sm
               addonClasses: ms-2
 
-          
+           - name: TextImageCta
+          title: Come scrivere le parole della PA
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Abbiamo creato un glossario che indica come scrivere alcuni termini ricorrenti della Pubblica Amministrazione, inclusi nomi di istituzioni, che generano spesso dubbi di ortografia. Nella guida, trovi anche alternative più semplici da preferire a termini molto burocratici. 
+          ctas:
+          - label: "Vai alla Guida alle parole della PA" #C
+            url: "/design-system/componenti/buttons/" #M
+            blank: true #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+           - name: TextImageCta
+          title: Adegua il tono di voce al contesto
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Il rispetto di un tono di voce coerente e incentrato sull’utente è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi con l’obiettivo primario di farti capire ed essere efficace, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia. 
+          ctas:
+          - label: "Vai al fondamento Tono di voce" #C
+            url: "/design-system/fondamenti/tono-di-voce/" #M
+            blank: false #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg##it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+             - name: TextImageCta
+          title: Progetta microtesti efficaci
+          headingLevel: 2
+          noSpace: true
+          text: |
+            I microtesti sono brevi porzioni di testo che guidano e accompagnano l’utente nell’interazione con un’interfaccia digitale, come messaggi di errore, notifiche ed etichette dei pulsanti. La progettazione di questi contenuti richiede accortezze aggiuntive per assicurare coesione con vari elementi di interfaccia e uniformità con con l’ecosistema di un servizio digitale. 
+          ctas:
+          - label: "Vai al fondamento Microtesti" #C
+            url: "/design-system/fondamenti/tono-di-voce/" #M
+            blank: false #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg##it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+           
 
     - full: true
       noSpace: true
       paddingLeft: true
       title: Testa e ottimizza i contenuti
-      text: |
-            Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
+      #text: |
+            #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
       components:
         - name: TextImageCta
           text: |
-            I contenuti e il linguaggio dovrebbero sempre essere progettati - e ottimizzati in maniera iterativa e continua - sulla base di analisi e test sulle persone che utilizzeranno il touchpoint.
+            I contenuti e il linguaggio dovrebbero sempre essere progettati ottimizzati in maniera iterativa e continua.
 
-            Esistono molti metodi per testare ipotesi di contenuto in pre-produzione, contenuti già esistenti o per valutare se il linguaggio utilizzato corrisponde alle attese e alle esigenze informative e interattive delle persone cui il sito o servizio sono destinati.
-
-            Si consiglia di svolgere test di usabilità moderati, preparando attività da svolgere con domande aperte.
+            Per valutare se il linguaggio utilizzato corrisponde alle attese e alle esigenze informative delle persone che utilizzano il servizio, si consiglia di svolgere test di usabilità moderati, preparando attività da svolgere con domande aperte.
