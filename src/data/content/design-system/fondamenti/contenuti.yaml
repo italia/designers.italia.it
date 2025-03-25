@@ -1,0 +1,236 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Contenuti
+  description: "Progetta contenuti chiari ed efficaci per andare incontro alle esigenze delle persone"
+  canonical: null
+  pathname: /design-system/fondamenti/contenuti/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Contenuti
+    column: true
+    subtitle: "Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare testi chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone."
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+   # pretext:
+   #   icon:
+   #     icon: sprites.svg#it-info-circle
+   #     size: sm
+   #   text: In breve
+   # text: |
+   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Contenuti e linguaggio,Progettazione interfaccia]
+
+  sectionsEditorial:
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
+      #text: Migliora il tuo approccio al linguaggio mettendo le persone al centro della progettazione
+      background: null
+
+      components:
+
+        - name: TextImageCta
+          title:
+          noSpace: true
+          text: |
+            I contenuti sono un elemento centrale per un servizio digitale e influenzano direttamente l’esperienza d’uso, l’accessibilità e la percezione del servizio stesso.  
+
+            Su schermo, **leggiamo solo il 20-28% del testo** di una pagina e lo **scansioniamo velocemente seguendo la forma di una F** ([F-pattern](https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/scrittura-e-linguaggio.html#come-leggono-le-persone-sul-web)). È quindi importante che i contenuti siano strutturati secondo specifiche caratteristiche, evitando la cattiva pratica di riportare in interfaccia contenuti concepiti per supporti analogici. 
+
+
+        - name: TextImageCta
+          title: Organizza le informazioni su pagina
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Aiuta le persone a trovare ciò che cercano sul tuo sito o servizio **strutturando le informazioni in base alle loro esigenze informative**.
+
+
+        - name: TextImageCta
+          title: Titoli
+          headingLevel: 3
+          noSpace: true
+          text: |
+            I titoli devono essere chiari e descrittivi dei contenuti della pagina, in massimo 70 caratteri (inclusi spazi). È possibile scrivere un testo più lungo solo se essenziale per rendere il titolo chiaro, ma deve essere un’eccezione in quanto:
+            - Google taglia i testi che superano i 70 caratteri;  
+            - titoli troppo lunghi sono difficili da capire.
+            
+        - name: TextImageCta
+          title: Sommari
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Il sommario è un testo breve che riassume in modo chiaro il contenuto della pagina ed è ciò che gli utenti vedono nei risultati di ricerca.  
+
+            Il sommario dovrebbe: 
+            - essere presente in tutte le pagine; 
+            - non superare i 160 caratteri;
+            - finire con il punto, per aiutare le persone che usano tecnologie assistive;
+            - non ripetere il contenuto del titolo e non contenere parole introduttive ridondanti.
+            
+        - name: TextImageCta
+          title: Corpo di pagina
+          headingLevel: 3
+          noSpace: true
+          text: |
+            - Parti dalle informazioni principali e, solo successivamente, aggiungi eventuali informazioni secondare o accessorie (approccio della piramide inversa).  
+            - Dividi il testo in paragrafi con titoletti descrittivi. I paragrafi non dovrebbero avere più di 5 frasi ognuno.  
+            - Non ripetere il sommario nel primo paragrafo.  
+            - Usa un linguaggio semplice e naturale.  
+
+            Non ci sono indicazioni specifiche sulla lunghezza del corpo di pagina, ma ricorda che:  
+            - le persone leggono solo tra il 20 e il 28% del testo su una pagina; 
+            - il carico cognitivo aumenta ogni 100 parole che aggiungi su una pagina. 
+
+        - name: TextImageCta
+          title: Intestazioni
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Usa le intestazioni per dividere il contenuto e dargli una struttura di navigazione. Ogni titolo di pagina è un H1, quindi parti con gli H2 per i contenuti di pagina.   
+
+            Usa i livelli di intestazione (da H2 a H4) in maniera ordinata e non usare il grassetto come sostitutivo. Gli utenti di tecnologie assistive spesso navigano le pagine tramite liste di intestazioni.
+
+        - name: TextImageCta
+          title: Elenchi puntati e numerati
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Usa elenchi puntati per rendere più leggibile il testo. Verifica che i punti dell’elenco siano:
+            - coerenti, se sono parte integrante della frase che introduce la lista: in questo caso, inoltre l’iniziale del punto elenco è minuscola e la frase si chiude col punto e virgola (se è l’ultimo punto dell’elenco con il punto fermo);  
+            - sintetici e chiari;  
+            - correttamente allineati.  
+
+            Usa un elenco numerato quando devi guidare le persone in un processo. In questo caso non serve avere una frase introduttiva.  
+
+            1. Assicurati di mettere il punto fermo alla fine di ogni frase.  
+            2. Scrivi frasi brevi, semplici e chiare per far capire l’azione da compiere.  
+            3. Segnala con dei link i documenti eventualmente necessari per completare l’azione.  
+            4. Evita sottoelenchi puntati. Se necessario, crea piuttosto un nuovo elenco puntato.       
+
+        - name: TextImageCta
+          title: Tabelle
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Le tabelle possono essere utili per spiegare facilmente dei concetti. Ricorda però: 
+            - di non inserire troppo testo all’interno della tabella: otterresti il risultato opposto; 
+            - di usare tabelle con poche colonne, per non rendere difficile la lettura con dispositivi mobili. 
+
+   
+
+        - name: TextImageCta
+          title: Adegua il tono di voce al contesto
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Il rispetto di un tono di voce coerente e incentrato sull’utente è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi con l’obiettivo primario di farti capire ed essere efficace, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia. 
+          ctas:
+          - label: "Vai al fondamento Tono di voce" #C
+            url: "/design-system/fondamenti/tono-di-voce/" #M
+            blank: false #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg##it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      title: Testa e ottimizza i contenuti
+      #text: |
+            #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
+      components:
+        - name: TextImageCta
+          text: |
+            I contenuti e il linguaggio dovrebbero sempre essere progettati ottimizzati in maniera iterativa e continua.
+
+            Per valutare se il linguaggio utilizzato corrisponde alle attese e alle esigenze informative delle persone che utilizzano il servizio, si consiglia di svolgere test di usabilità moderati, preparando attività da svolgere con domande aperte.
