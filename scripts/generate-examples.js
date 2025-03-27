@@ -13,7 +13,10 @@ const HTML_TEMPLATE = fs.readFileSync(
 );
 
 function rewriteSpriteUrl(content) {
-  return content.replace(/https\:\/\/italia.github.io\/bootstrap-italia\/dist\/svg\/sprites.svg/g, "/dist/svg/sprites.svg")
+  return content.replace(
+    /https:\/\/italia.github.io\/bootstrap-italia\/dist\/svg\/sprites.svg/g,
+    "/dist/svg/sprites.svg",
+  );
 }
 
 function generateExamples(context) {
