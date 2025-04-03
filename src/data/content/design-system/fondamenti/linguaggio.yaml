@@ -149,10 +149,13 @@ components:
             - cols:
               - text: L’ente ha annullato la pratica. 
               - text: Si è deciso di procedere all’annullamento della pratica.
+            - cols:
+              - text: Scarica il bando per la richiesta dei contributi.
+              - text: Il cittadino interessato può reperire il bando per la richiesta di contributi in questa sezione.
 
         - name: TextImageCta
           text: |
-            Per migliorare comprensibilità e leggibilità dei contenuti, usa **parole chiare e facili da comprendere**, prediligendo una **sintassi semplice**, **forme verbali attive** ed **evitando nominalizzazioni**.
+            Per migliorare comprensibilità e leggibilità dei contenuti, **vai dritto al punto**: usa **parole chiare e facili da comprendere**, prediligendo una **sintassi semplice**, **forme verbali attive** ed **evitando nominalizzazioni**.
 
         # 2nd
         - name: Table
@@ -204,14 +207,25 @@ components:
             Usa termini complessi solo quando sei certo che il pubblico a cui ti rivolgi sia in grado di capirne il significato. In alternativa, preferisci dei sinonimi; se non è possibile spiega il significato del termine in modo chiaro e conciso.
 
         - name: TextImageCta
-          title: Acronimi
+          title: Acronimi e abbreviazioni
           headingLevel: 3
           noSpace: true
           text: |
-            Gli acronimi non aiutano la comprensione del testo: evitali il più possibile. Se è necessario usarli, assicurati di aver prima scritto il nome completo per esteso nello stesso contenuto. 
+            Gli acronimi e le abbreviazioni non aiutano la comprensione del testo: evitali il più possibile. Se è necessario usarli, assicurati di aver prima scritto il nome completo per esteso nello stesso contenuto. 
 
-            **Esempio:** “Il bando è stato pubblicato dal Ministero dello sviluppo economico (Mise). Il Mise ha anche reso noto…” 
+            **Esempio:** “Il bando è stato pubblicato dal Ministero dello sviluppo economico (Mise). Il Mise ha anche reso noto…”
 
+            Di regola solo la prima lettera è maiuscola. Tra le eccezioni più frequenti: “PA” per “Pubblica Amministrazione”; “UE” per “Unione Europea”; “IVA” per “Imposta a valore aggiunto”.
+
+        - name: TextImageCta
+          title: Riferimenti normativi
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Evita troppi riferimenti normativi, rendono il testo complicato. Quando è necessario citare una legge:
+            - cerca di spiegarne sinteticamente il contenuto invece che citarla testualmente;
+            - introduci il titolo della norma solo dopo una spiegazione, mettendolo tra parentesi - ad esempio, "Testo Unico in materia di dati sulla privacy (d.lgs. 169 del 30 giugno 200), art. 4 lett. d)".
+            - aggiungi sempre il link alla norma di riferimento, per esempio su [Normattiva](https://www.normattiva.it/).
     
     - full: true
       noSpace: true
@@ -256,7 +270,7 @@ components:
 
             Per valori numerici molto alti e indicativi, scrivi “mila”, “milione” e “miliardo” in lettere. 
 
-            **Esempio:** 4 milioni e 325 mila persone, circa 10 mila enti 
+            **Esempi:** 4 milioni e 325 mila persone, circa 10 mila enti 
 
             Usa la virgola per separare i decimali 
 
@@ -296,7 +310,11 @@ components:
 
             **Esempio:** Via Giulia 25, 00185, Roma 
 
-            
+            ### Unità di misura
+
+            Scrivi il numero in cifre, seguito dal simbolo dell’unità di misura nel [Sistema Internazionale](https://it.wikipedia.org/wiki/Sistema_internazionale_di_unit%C3%A0_di_misura), separato da uno spazio.
+
+            **Esempi**: 3 km, 15 kg, 25 °C
 
         - name: TextImageCta
           title: Come scrivere le parole della PA
