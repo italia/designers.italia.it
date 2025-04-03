@@ -165,11 +165,12 @@ components:
           headingLevel: 3
           noSpace: true
           text: |
-            - Parti dalle informazioni principali e, solo successivamente, aggiungi eventuali informazioni secondare o accessorie (approccio della piramide inversa).  
-            - Dividi il testo in paragrafi con titoletti descrittivi. I paragrafi non dovrebbero avere più di 5 frasi ognuno.  
+            - Parti dalle informazioni principali e, solo successivamente, aggiungi eventuali informazioni secondare o accessorie (approccio della piramide inversa). Puoi mettere in risalto i contenuti principali con elementi come [callout](/design-system/componenti/callout) e [dimmer](/design-system/componenti/dimmer)   
+            - Dividi il contenuto in [sezioni](design-system/componenti/sections) e il testo in paragrafi, con titoletti descrittivi. I paragrafi non dovrebbero avere più di 5 frasi ognuno.  
             - Non ripetere il sommario nel primo paragrafo.  
             - Usa un [linguaggio semplice e naturale](/design-system/fondamenti/linguaggio).
             - Usa sempre degli esempi concreti per spiegare meglio le informazioni. Un esempio è un ottimo modo per spiegare un concetto e rendere il testo più chiaro, senza dilungarsi in lunghe spiegazioni.
+            - Mantieni i testi brevi, rimandando ad altri contenuti di approfondimento tramite link. 
 
             Non ci sono indicazioni specifiche sulla lunghezza del corpo di pagina, ma ricorda che:  
             - le persone leggono solo tra il 20 e il 28% del testo su una pagina; 
@@ -189,9 +190,9 @@ components:
           headingLevel: 3
           noSpace: true
           text: |
-            Per pagine lunghe, includi un indice di pagina navigabile ([Navscroll](design-system/componenti/navscroll/)). L'indice di pagina mostra le intestazioni H2 della pagina, riportando gli stessi titoli usati sul corpo di pagina.
+            Per pagine lunghe, includi un [indice di pagina navigabile](design-system/componenti/navscroll/). L'indice di pagina mostra le intestazioni H2 della pagina, riportando gli stessi titoli usati sul corpo di pagina.
 
-            Assicurati che l’indice sia ben fruibile anche su dispositivi mobili, utilizzando menu a tendina accessibili o icone chiare.
+            Assicurati che l’indice sia ben fruibile anche su dispositivi mobili, utilizzando menu a tendina accessibili e icone chiare.
            
             
         - name: TextImageCta
@@ -209,19 +210,68 @@ components:
             1. Assicurati di mettere il punto fermo alla fine di ogni frase.  
             2. Scrivi frasi brevi, semplici e chiare per far capire l’azione da compiere.  
             3. Segnala con dei link i documenti eventualmente necessari per completare l’azione.  
-            4. Evita sottoelenchi puntati. Se necessario, crea piuttosto un nuovo elenco puntato.       
+            4. Evita sottoelenchi puntati. Se necessario, crea piuttosto un nuovo elenco puntato.
+
+        - name: TextImageCta
+          title: Link
+          headingLevel: 3
+          noSpace: true
+          text: |
+            L’utilizzo dei link è molto utile per rendere i contenuti brevi e rimandare ad altri contenuti per ulteriori approfondimenti:
+            - assicurati che sia chiara la destinazione di ogni link o lo scopo del collegamento;
+            - inserisci solo collegamenti a contenuti che abbiano un’effettiva pertinenza e utilità con il contenuto;
+            - apri il link nella stessa scheda se la pagina di destinazione è interna allo stesso sito o servizio, in una nuova finestra se il link rimanda a un altro sito o servizio.
 
         - name: TextImageCta
           title: Tabelle
           headingLevel: 3
           noSpace: true
           text: |
-            Le tabelle possono essere utili per spiegare facilmente dei concetti. Ricorda però: 
+            Le [tabelle](/design-system/componenti/table) possono essere utili per spiegare facilmente dei concetti. Ricorda però: 
             - di non inserire troppo testo all’interno della tabella: otterresti il risultato opposto; 
-            - di usare tabelle con poche colonne, per non rendere difficile la lettura con dispositivi mobili. 
+            - di usare tabelle con poche colonne, per non rendere difficile la lettura con dispositivi mobili.
 
-   
+            Per presentare i contenuti suddivisi in temi logici, senza bisogno di comparazione tra elementi, potrebbe essere più appropriato usare le [tab](/design-system/componenti/tabs).
 
+        - name: TextImageCta
+          title: Dati
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Per rendere comprensibili i dati da parte degli utenti, cerca di presentarli in forma visiva, sotto forma di grafici o mappe (data visualization). 
+
+        - name: TextImageCta
+          title: Immagini e video
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Usa contenuti multimediali solo se aiutano a comprendere meglio le informazioni che vuoi veicolare. Assicurati che siano di qualità (alta risoluzione) e di [presentarli in modo accessibile](https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/immagini-e-video.html): in particolare, ricorda di includere **alt-text** per le immagini, **sottotitoli** e **trascrizioni** per i video.
+            
+        - name: TextImageCta
+          title: Didascalie
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Accompagna sempre le immagini, i grafici o i dati con delle didascalie sintetiche (non più di due righe). Ricorda, quando necessario, di [citare l’autore e riportare la licenza di pubblicazione](https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/proprieta-intellettuale-e-privacy.html).
+
+        - name: TextImageCta
+          title: Imposta una struttura uniforme per i contenuti della stessa tipologia
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Spiegare cosa sono i content type e che ci sono quelli dei modelli. 
+          ctas:
+          - label: "Approfondisci l'argomento Content type" #C
+            url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/architettura-dell-informazione.html#tipologie-di-contenuto-content-type" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
         - name: TextImageCta
           title: Usa un linguaggio semplice e un tono di voce appropriato
           headingLevel: 2
