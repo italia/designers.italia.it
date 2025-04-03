@@ -31,7 +31,7 @@ components:
     background: null
     title: Contenuti
     column: true
-    subtitle: "I contenuti sono un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti efficaci e pensati per andare incontro alle esigenze delle persone."
+    subtitle: "I contenuti sono un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi le indicazioni per strutturare e presentare i contenuti in modo efficace, accessibile e sulla base delle esigenze informative delle persone."
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -106,7 +106,7 @@ components:
     - full: true
       noSpace: false
       paddingLeft: true
-      title: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
+      title: Progetta contenuti adatti alla consultazione su schermo
       #text: Migliora il tuo approccio al linguaggio mettendo le persone al centro della progettazione
       background: null
 
@@ -114,7 +114,7 @@ components:
 
         - name: TextImageCta
           title:
-          noSpace: true
+          noSpace: false
           text: |
             I contenuti sono un elemento centrale per un servizio digitale e influenzano direttamente l’esperienza d’uso, l’accessibilità e la percezione del servizio stesso.  
 
@@ -213,16 +213,15 @@ components:
    
 
         - name: TextImageCta
-          title: Adegua il tono di voce al contesto
+          title: Usa un linguaggio semplice e un tono di voce appropriato
           headingLevel: 2
           noSpace: true
           text: |
-            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Il rispetto di un tono di voce coerente e incentrato sull’utente è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi con l’obiettivo primario di farti capire ed essere efficace, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia. 
+            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Scrivi i contenuti con l’obiettivo primario di farti capire ed essere efficace, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia. 
           ctas:
-          - label: "Vai al fondamento Tono di voce" #C
-            url: "/design-system/fondamenti/tono-di-voce/" #M
+          - label: "Vai al fondamento Linguaggio" #C
+            url: "/design-system/fondamenti/linguaggio/" #M
             blank: false #M #C true if new tab for external links
-           
             icon:
               icon: sprites.svg##it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -230,7 +229,17 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-              
+          - label: "Vai al fondamento Tono di voce" #C
+            url: "/design-system/fondamenti/tono-di-voce/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg##it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2              
+
 
     - full: true
       noSpace: true
@@ -241,6 +250,4 @@ components:
       components:
         - name: TextImageCta
           text: |
-            I contenuti e il linguaggio dovrebbero sempre essere progettati ottimizzati in maniera iterativa e continua.
-
-            Per valutare se il linguaggio utilizzato corrisponde alle attese e alle esigenze informative delle persone che utilizzano il servizio, si consiglia di svolgere test di usabilità moderati, preparando attività da svolgere con domande aperte.
+            I contenuti dovrebbero sempre essere progettati e ottimizzati in maniera iterativa e continua. Per valutare se i contenuti corrispondono alle attese e alle esigenze informative delle persone che utilizzano il servizio, puoi svolgere [test di usabilità](/risorse-per-progettare/validare/test-di-usabilita/) moderati, preparando attività da svolgere con domande aperte.
