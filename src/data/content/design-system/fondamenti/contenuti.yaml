@@ -118,7 +118,16 @@ components:
           text: |
             I contenuti sono un elemento centrale per un servizio digitale e influenzano direttamente l’esperienza d’uso, l’accessibilità e la percezione del servizio stesso.  
 
-            Su schermo, **leggiamo solo il 20-28% del testo** di una pagina e lo **scansioniamo velocemente seguendo la forma di una F** ([F-pattern](https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/scrittura-e-linguaggio.html#come-leggono-le-persone-sul-web)). È quindi importante che i contenuti siano strutturati secondo specifiche caratteristiche, evitando la cattiva pratica di riportare in interfaccia contenuti concepiti per supporti analogici. 
+            Su schermo, **leggiamo solo il 20-28% del testo** di una pagina e lo **scansioniamo velocemente seguendo la forma di una F** ([F-pattern](https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/scrittura-e-linguaggio.html#come-leggono-le-persone-sul-web)). È quindi importante che i contenuti siano strutturati secondo specifiche caratteristiche, evitando la cattiva pratica di riportare in interfaccia contenuti concepiti per supporti analogici.
+
+        - name: TextImageCta
+          title: Vai dritto al punto
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Prima di progettare qualsiasi contenuto, chiediti di che cosa ha bisogno l’utente e dai una risposta. Quando spieghi qualcosa a un cittadino, cerca sempre di rispondere alle domande chiave: chi, cosa, dove, come e quando. 
+            
+            Non scrivere più di quanto serve. Non scrivere la stessa informazione in punti diversi del sito, usa i link per collegare le informazioni. Le persone hanno poco tempo: sii preciso e non aggiungere complessità.
 
 
         - name: TextImageCta
@@ -159,7 +168,8 @@ components:
             - Parti dalle informazioni principali e, solo successivamente, aggiungi eventuali informazioni secondare o accessorie (approccio della piramide inversa).  
             - Dividi il testo in paragrafi con titoletti descrittivi. I paragrafi non dovrebbero avere più di 5 frasi ognuno.  
             - Non ripetere il sommario nel primo paragrafo.  
-            - Usa un linguaggio semplice e naturale.  
+            - Usa un [linguaggio semplice e naturale](/design-system/fondamenti/linguaggio).
+            - Usa sempre degli esempi concreti per spiegare meglio le informazioni. Un esempio è un ottimo modo per spiegare un concetto e rendere il testo più chiaro, senza dilungarsi in lunghe spiegazioni.
 
             Non ci sono indicazioni specifiche sulla lunghezza del corpo di pagina, ma ricorda che:  
             - le persone leggono solo tra il 20 e il 28% del testo su una pagina; 
@@ -223,7 +233,7 @@ components:
             url: "/design-system/fondamenti/linguaggio/" #M
             blank: false #M #C true if new tab for external links
             icon:
-              icon: sprites.svg##it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
@@ -233,7 +243,7 @@ components:
             url: "/design-system/fondamenti/tono-di-voce/" #M
             blank: false #M #C true if new tab for external links
             icon:
-              icon: sprites.svg##it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
               align: middle
               hidden: true
