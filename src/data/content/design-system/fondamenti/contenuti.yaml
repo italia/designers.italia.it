@@ -116,9 +116,9 @@ components:
           title:
           noSpace: false
           text: |
-            I contenuti sono un elemento centrale per un servizio digitale e influenzano direttamente l’esperienza d’uso, l’accessibilità e la percezione del servizio stesso.  
+            I contenuti influenzano direttamente l’esperienza d’uso, l’accessibilità e la percezione di un servizio digitale.  
 
-            Su schermo, **leggiamo solo il 20-28% del testo** di una pagina e lo **scansioniamo velocemente seguendo la forma di una F** ([F-pattern](https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/scrittura-e-linguaggio.html#come-leggono-le-persone-sul-web)). È quindi importante che i contenuti siano strutturati secondo specifiche caratteristiche, evitando la cattiva pratica di riportare in interfaccia contenuti concepiti per supporti analogici.
+            Su schermo, **consultiamo solo il 20-28% di una pagina** e la **scansioniamo velocemente seguendo la forma di una F** ([F-pattern](https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/scrittura-e-linguaggio.html#come-leggono-le-persone-sul-web)). È quindi importante che i contenuti siano strutturati secondo specifiche caratteristiche, evitando la cattiva pratica di riportare in interfaccia contenuti concepiti per supporti analogici.
 
 
 
@@ -159,13 +159,12 @@ components:
           text: |
             Prima di progettare qualsiasi contenuto, chiediti di che cosa ha bisogno l’utente e dai una risposta. Quando spieghi qualcosa a un cittadino, cerca sempre di rispondere alle domande chiave: chi, cosa, dove, come e quando.
             
-            - Parti dalle informazioni principali e, solo successivamente, aggiungi eventuali informazioni secondare o accessorie (approccio della piramide inversa). Puoi mettere in risalto i contenuti principali con elementi come [callout](/design-system/componenti/callout) e [dimmer](/design-system/componenti/dimmer).   
+            - **Parti dalle informazioni principali** e, solo successivamente, aggiungi eventuali informazioni secondare o accessorie ([approccio della piramide inversa](https://www.nngroup.com/articles/inverted-pyramid/)). Puoi mettere in risalto i contenuti principali con componenti come [callout](/design-system/componenti/callout) e [dimmer](/design-system/componenti/dimmer).   
             - Dividi il contenuto in [sezioni](design-system/componenti/sections) e il testo in paragrafi, con titoletti descrittivi. I paragrafi non dovrebbero avere più di 5 frasi ognuno.  
             - Non ripetere il sommario nel primo paragrafo.  
-            - Usa un [linguaggio semplice e naturale](/design-system/fondamenti/linguaggio).
+            - Usa un [linguaggio semplice e naturale](/design-system/fondamenti/linguaggio) e mantieni i testi brevi, rimandando ad altri contenuti di approfondimento tramite link. 
             - Usa sempre degli esempi concreti per spiegare meglio le informazioni. Un esempio è un ottimo modo per spiegare un concetto e rendere il testo più chiaro, senza dilungarsi in lunghe spiegazioni.
-            - Mantieni i testi brevi, rimandando ad altri contenuti di approfondimento tramite link. 
-
+            
             Non ci sono indicazioni specifiche sulla lunghezza del corpo di pagina, ma ricorda che:  
             - le persone leggono solo tra il 20 e il 28% del testo su una pagina; 
             - il carico cognitivo aumenta ogni 100 parole che aggiungi su una pagina. 
@@ -175,7 +174,7 @@ components:
           headingLevel: 3
           noSpace: true
           text: |
-            Usa le intestazioni per dividere il contenuto e dargli una struttura di navigazione. Ogni titolo di pagina è un H1, quindi parti con gli H2 per i contenuti di pagina.   
+            Usa le intestazioni per dividere il contenuto e dargli una struttura di navigazione, usando i relativi tag semantici nel codice HTML. Ogni titolo di pagina è un H1, quindi parti con gli H2 per i contenuti di pagina.   
 
             Usa i livelli di intestazione (da H2 a H4) in maniera ordinata e non usare il grassetto come sostitutivo. Gli utenti di tecnologie assistive spesso navigano le pagine tramite liste di intestazioni.
 
@@ -228,12 +227,17 @@ components:
             Per presentare i contenuti suddivisi in temi logici, senza bisogno di comparazione tra elementi, potrebbe essere più appropriato usare le [tab](/design-system/componenti/tabs).
 
         - name: TextImageCta
-          title: Dati
+          title: Dati e grafici
           headingLevel: 3
           noSpace: true
           text: |
-            Per rendere comprensibili i dati da parte degli utenti, cerca di presentarli in forma visiva, sotto forma di grafici o mappe (data visualization). 
+            Per rendere comprensibili i dati da parte degli utenti, cerca di presentarli in forma visiva, sotto forma di grafici o mappe (data visualization).
 
+            A seconda del tipo di dati che devi rappresentare, puoi usare strumenti come:
+            - [Metabase](https://www.metabase.com/), per dashboard dinamiche;
+            - [Rawgraphs](https://app.rawgraphs.io/), per grafici;
+            - [QGIS](https://qgis.org/), per mappe interattive.
+            
         - name: TextImageCta
           title: Immagini e video
           headingLevel: 3
@@ -253,7 +257,9 @@ components:
           headingLevel: 2
           noSpace: true
           text: |
-            Spiegare cosa sono i content type e che ci sono quelli dei modelli. 
+            Le pagine della stessa tipologia di contenuto (in inglese, *content type*) - ad esempio, le pagine degli uffici, i servizi, le notizie, i bandi, ecc. - dovrebbero presentare la stessa organizzazione dei contenuti su pagina, in un ordine fisso. Così, lo stesso utente, quando navigherà altri contenuti dello stesso o di altri servizi, saprà già dove trovare in pagina le informazioni che cerca.
+
+            I [modelli di Designers Italia](/modelli) presentano content type pronti all'uso per varie tipologie di ente.
           ctas:
           - label: "Approfondisci l'argomento Content type" #C
             url: "https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-contenuti/architettura-dell-informazione.html#tipologie-di-contenuto-content-type" #M
