@@ -7,7 +7,7 @@ metadata:
 
 seo:
   name: Linguaggio
-  description: "Progetta contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
+  description: "Scopri le indicazioni per scrivere testi chiari, inclusivi, efficaci e formattati in modo accessibile e consistente."
   canonical: null
   pathname: /design-system/fondamenti/linguaggio/
 
@@ -31,7 +31,7 @@ components:
     background: null
     title: Linguaggio
     column: true
-    subtitle: "Il linguaggio è un elemento cruciale dell’esperienza utente di un sito o servizio digitale. In questo fondamento trovi i punti di riferimento per progettare contenuti chiari, inclusivi, efficaci e pensati per andare incontro alle esigenze delle persone"
+    subtitle: "Il linguaggio influenza direttamente l'esperienza e la comprensione dei servizi pubblici digitali da parte delle persone. In questo fondamento trovi le indicazioni per scrivere testi chiari, inclusivi, efficaci e formattati in modo accessibile e consistente."
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -106,8 +106,8 @@ components:
     - full: true
       noSpace: false
       paddingLeft: true
-      title: Scrivi per le persone
-      text: Migliora il tuo approccio ai contenuti mettendo le persone al centro della progettazione
+      title: Parlare la lingua delle persone per servizi più utili e accessibili
+      #text: Migliora il tuo approccio al linguaggio mettendo le persone al centro della progettazione
       background: null
 
       components:
@@ -116,67 +116,268 @@ components:
           title:
           noSpace: true
           text: |
-            Il linguaggio è una risorsa preziosa nell’intero ecosistema e ciclo di vita di un prodotto digitale. Ha il potere di **orientare e influenzare l’esperienza delle persone** su siti e servizi, favorendo **la comprensione delle informazioni e l’abilità di portare a termine procedure**.
+            Troppo spesso i testi dei servizi pubblici digitali sono lunghi, burocratici e pieni di dettagli superflui. La PA tende a spiegare tutto — anche quello che non serve — appesantendo l’esperienza dell’utente e rendendo complicato ciò che dovrebbe essere semplice.
 
-            È quindi importante che i testi per le interfacce, i contenuti ad esse correlati, documentazione, o gli altri contenuti attivati dalle interazioni degli utenti (email, notifiche, SMS, ecc.) siano progettati prediligendo un linguaggio semplice e frasi brevi.
+            Online non leggiamo come su carta: leggiamo in fretta, spesso da smartphone o con tecnologie assistive. Ma soprattutto, cerchiamo risposte immediate. Per questo, il linguaggio dei servizi pubblici digitali deve andare dritto al punto: chiaro, essenziale, mirato all’azione. Testi ben scritti permettono alle persone di comprendere le informazioni e portare a termine procedure.
 
-            ### Come le persone leggono gli schermi
+        - name: TextImageCta
+          title: Scrivi per le persone
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Una Pubblica Amministrazione che mette le persone al centro sa parlare in modo semplice, chiaro ed empatico. Scopri quali parole usano gli utenti per riferirsi ai tuoi contenuti, usando strumenti come Google Ads Keyword Planner, Google Trends, i dati di ricerca interni, questionari e interviste.
 
-            Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Le persone, infatti, **non leggono necessariamente dall’alto al basso e parola per parola**.
 
-            Studi di monitoraggio oculare (eye-tracking) hanno dimostrato che le persone tendono a **scansionare blocchi di testo seguendo la forma di una F (F-pattern)**: tracciano una linea orizzontale lungo la parte superiore dello schermo, procedono poi in verticale lungo il lato sinistro alla ricerca di punti di interesse e procedono di nuovo in senso orizzontale.
 
-            ### Organizza le informazioni
+        # 1st
+        - name: Table
+          title: Linguaggio semplice e naturale
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-success fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-danger fw-bold
+          rows:
+            - cols:
+              - text: Il ravvedimento operoso non è più possibile se il Fisco ha già constatato la violazione. 
+              - text: Costituisce causa ostativa alla facoltà di esperire il ravvedimento operoso la già avvenuta constatazione della violazione da parte del Fisco.
+            - cols:
+              - text: L’ente ha annullato la pratica. 
+              - text: Si è deciso di procedere all’annullamento della pratica.
+            - cols:
+              - text: Scarica il bando per la richiesta dei contributi.
+              - text: Il cittadino interessato può reperire il bando per la richiesta di contributi in questa sezione.
 
-            Aiuta le persone a trovare ciò che cercano sul tuo sito o servizio **organizzando le informazioni in base alle loro esigenze informative** e alla natura del touchpoint. Tieni sempre in considerazione le funzioni principali del sito o servizio, la natura dei contenuti da veicolare e le relazioni fra di essi.
+        - name: TextImageCta
+          text: |
+            Per migliorare comprensibilità e leggibilità dei contenuti, **vai dritto al punto**: usa **parole chiare e facili da comprendere**, prediligendo una **sintassi semplice**, **forme verbali attive** ed **evitando nominalizzazioni**.
 
-            ### Scegli le parole giuste
+        # 2nd
+        - name: Table
+          title: Inclusività
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-success fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-danger fw-bold
+          rows:
+            - cols:
+              - text: Scopri / Vai a / Approfondisci (la notizia, il documento, ecc.)
+              - text: Vedi / leggi (la notizia, il documento, ecc.)
+            - cols:
+              - text: Ti diamo il benvenuto, Ricevi aggiornamenti
+              - text: Benvenuto, Rimani aggiornato
+            - cols:
+              - text: La ministra, la sindaca, la dirigente (quando la persona è donna)
+              - text: Il ministro, il sindaco, il dirigente (quando la persona è donna)
+            - cols:
+              - text: Persone con disabilità
+              - text: Disabili
+            - cols:
+              - text: Nella notte sono sbarcate circa 30 persone
+              - text: Nella notte sono sbarcati circa 30 clandestini
 
-            Siti e servizi digitali della Pubblica Amministrazione sono usati ogni giorno da milioni di persone: **un’esperienza utente di qualità è un diritto per tutte e tutti**.
+        - name: TextImageCta
+          text: |
+            Usare un linguaggio inclusivo fa sentire le persone più vicine alla PA, a prescindere dal genere, l’orientamento sessuale, la nazionalità o le origini, la religione o altre caratteristiche fisiche o psicologiche. Non usare verbi abilisti, maschile sovresteso, denominazioni incorrette e stereotipi.
 
-            - usa il linguaggio come veicolo di inclusione: le parole sono cruciali per fare in modo che messaggi e informazioni raggiungano **tutte le persone senza distinzioni**, e senza riferimenti non necessari ad appartenenze o identità di genere;
-            - **evita la cattiva pratica di riportare in interfaccia testi concepiti per supporti analogici** e destinati a personale amministrativo o legale;
-            - **scrivi accessibile**: progetta testi pienamente accessibili anche per le persone con disabilità permanenti o temporanee, e/o per chi fruisce i contenuti con tecnologie assistive.
 
-            ### Prediligi chiarezza, brevità e consistenza
 
-            Ecco alcuni suggerimenti utili per progettare contenuti con un linguaggio chiaro, efficace ed essenziale:
+        - name: TextImageCta
+          title: Nomi di organizzazioni, servizi e progetti
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Il nome ufficiale della tua organizzazione, servizio o progetto potrebbe non rispecchiare quello usato dagli utenti. Non serve creare un marchio per ogni nuovo servizio, ma è meglio usare diciture descrittive e di immediata comprensione.
 
-            - usa **parole chiare e facili da comprendere**, prediligendo una sintassi semplice, forme verbali attive, linguaggio naturale;
-            - **evita di utilizzare tecnicismi, formalismi e lessico burocratico o legale** senza adeguata disambiguazione;
-            - **modera l’uso di inglesismi e forestierismi**, e laddove indispensabile, fornisci una traduzione italiana;
-            - prediligi **periodi brevi**: frasi troppo lunghe e complesse riducono i livelli di comprensibilità e leggibilità dei contenuti;
-            - **sii consistente**: progetta i contenuti rispettando alcune semplici regole di coerenza, sia stilistica (punteggiatura, uso delle maiuscole) che concettuale (se introduci un concetto assicurati che anche successivamente sia espresso in maniera coerente).
+        - name: TextImageCta
+          title: Termini tecnici, burocratici e stranieri
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Usa termini complessi solo quando sei certo che il pubblico a cui ti rivolgi sia in grado di capirne il significato. In alternativa, preferisci dei sinonimi; se non è possibile spiega il significato del termine in modo chiaro e conciso.
 
-            ### Accompagna le interazioni
+        - name: TextImageCta
+          title: Acronimi e abbreviazioni
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Gli acronimi e le abbreviazioni non aiutano la comprensione del testo: evitali il più possibile. Se è necessario usarli, assicurati di aver prima scritto il nome completo per esteso nello stesso contenuto. 
 
-            Saper accompagnare le persone a interagire efficacemente con siti, servizi e procedure online è una questione di (buona) esperienza utente: **il linguaggio incide in maniera considerevole sulla qualità dell’esperienza**. Per questo motivo, ti proponiamo alcuni semplici suggerimenti per aumentare l’efficacia dei flussi di interazione del tuo sito o servizio:
+            **Esempio:** “Il bando è stato pubblicato dal Ministero dello sviluppo economico (Mise). Il Mise ha anche reso noto…”
 
-            - usa un linguaggio **diretto e naturale**: impiega termini di uso comune, che possono essere comprensibili da persone con qualsisi livello di alfabetizzazione;
-            - **accompagna le azioni che avvengono in interfaccia con le parole giuste**: presta adeguata attenzione ai termini che usi nelle etichette dei pulsanti, nelle finestre modali, negli stepper o nei breadcrumb;
-            - dai prova di empatia **mettendoti nei panni delle persone**: rendi comprensibili e di reale aiuto messaggi di errore, pagine di atterraggio e “stati vuoti” dei componenti.
+            Di regola solo la prima lettera è maiuscola. Tra le eccezioni più frequenti: “PA” per “Pubblica Amministrazione”; “UE” per “Unione Europea”; “IVA” per “Imposta a valore aggiunto”.
 
-            ### Usa una formattazione semplice
+        - name: TextImageCta
+          title: Riferimenti normativi
+          headingLevel: 3
+          noSpace: true
+          text: |
+            Evita troppi riferimenti normativi, rendono il testo complicato. Quando è necessario citare una legge:
+            - cerca di spiegarne sinteticamente il contenuto invece che citarla testualmente;
+            - introduci il titolo della norma solo dopo una spiegazione, mettendolo tra parentesi - ad esempio, "Testo Unico in materia di dati sulla privacy (d.lgs. 169 del 30 giugno 200), art. 4 lett. d)".
+            - aggiungi sempre il link alla norma di riferimento, per esempio su [Normattiva](https://www.normattiva.it/).
+    
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      title: Formatta il testo in modo coerente e accessibile
+      #text: |
+            #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
+      components:
+        - name: TextImageCta
+          text: |
+            Alcune piccole accortezze di formattazione e stile possono migliorare la leggibilità e la comprensione dei testi, oltre che aumentare l’autorevolezza dell’informazione. 
+            
+            ### Corsivo 
 
-            Per facilitare la lettura e la comprensibilità delle informazioni su schermo ricorda di:
+            Il corsivo rende più difficile la lettura del testo. Usalo solo in caso di:
+            - indicazioni bibliografiche, opere d’arte o cinematografiche;
+            - parole straniere, ma solo di uso non comune e in ambito non specialistico.
+            
+            ### Grassetto
 
-            - **allineare il testo a sinistra**, invece di giustificarlo;
-            - evitare di usare grassetto e corsivo **per interi periodi o paragrafi**;
-            - **evitare di sottolineare il testo**, a meno che non si tratti di link;
-            - usare **il maiuscolo solo per sigle e acronimi**;
-            - scrivere **le date per esteso**, ad esempio 2 gennaio 2023.
+            Anche il grassetto rende più difficile la lettura del testo, quindi usalo soltanto per evidenziare parole chiave e non frasi intere. Se hai bisogno di mettere più in evidenza un testo lungo, considera l’uso di un titoletto o di elementi di interfaccia. 
+
+            ### Testo sottolineato
+
+            Non usare testo sottolineato, a meno che non si tratti di link.
+            
+            ### Allineamento
+            
+            Allinea sempre il testo a sinistra. Un testo giustificato è molto difficile da leggere.
+
+            ### Uso delle maiuscole
+
+            I testi in maiuscolo sono difficili da leggere. Usa il maiuscolo soltanto per la **prima lettera della frase (sentence case)**. Questo vale anche per:
+            - nomi di ministeri e dipartimenti (Ministero della difesa, Dipartimento della protezione civile);
+            - acronimi (“Mipaaf” per “Ministero delle politiche agricole, alimentari e forestali”.
+
+            ### Numeri
+
+            Prediligi l’uso delle cifre, soprattutto quando i numeri indicano un dato preciso (contenuti matematici, scientifici, statistici, prezzi) o devono essere ospitati in componenti di interfaccia. Usa il punto per separare le migliaia a partire dai 10 mila in su. 
+
+            **Esempi:** 8700, 11.800 
+
+            Per valori numerici molto alti e indicativi, scrivi “mila”, “milione” e “miliardo” in lettere. 
+
+            **Esempi:** 4 milioni e 325 mila persone, circa 10 mila enti 
+
+            Usa la virgola per separare i decimali 
+
+            **Esempio:** 2,5  
+
+            Usa i numeri romani soltanto per riferimenti puntuali alle leggi e indicare i secoli. 
+
+            **Esempi:** Titolo V della Costituzione, XIX secolo 
+
+            ### Date 
+
+            Scrivi i giorni del mese e l’anno in cifre, mentre scrivi il mese e, se necessario, il giorno della settimana in lettere (con l’iniziale minuscola). 
+
+            **Esempio:** 25 gennaio 2018, lunedì 25 gennaio 2018
+
+            ### Orari 
+
+            Usa le cifre e separa ore e minuti con i due punti, senza spazi. 
+
+            **Esempio:** 23:59
+
+            ### Numeri di telefono
+
+            Usa sempre anche il prefisso internazionale e raggruppa le cifre separandole con degli spazi per migliorare la leggibilità. Inserisci i numeri di telefono come link attivi usando l’attributo “tel:” nel codice html.  
+
+            **Esempio:** [+39 06 123 456 78](tel:+390612345678)
+
+            ### Email 
+
+            La parola “email” si scrive senza trattini o spazi, in minuscolo. Per gli indirizzi, scrivili per esteso e inseriscili come link attivi usando l’attributo “mailto:” nel codice html.
+
+            **Esempio:** Email: [ufficio@comune.comune.it](mailto:ufficio@comune.comune.it)
+
+            ### Indirizzi
+
+            Usa le virgole per separare via (inclusiva di numero civico), CAP e città.
+
+            **Esempio:** Via Giulia 25, 00185, Roma 
+
+            ### Unità di misura
+
+            Scrivi il numero in cifre, seguito dal simbolo dell’unità di misura nel [Sistema Internazionale](https://it.wikipedia.org/wiki/Sistema_internazionale_di_unit%C3%A0_di_misura), separato da uno spazio.
+
+            **Esempi**: 3 km, 15 kg, 25 °C
+
+        - name: TextImageCta
+          title: Come scrivere le parole della PA
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Abbiamo creato un glossario che indica come scrivere alcuni termini ricorrenti della Pubblica Amministrazione, inclusi nomi di istituzioni, che generano spesso dubbi di ortografia. Nella guida, trovi anche alternative più semplici da preferire a termini molto burocratici. 
+          ctas:
+          - label: "Vai alla Guida alle parole della PA" #C
+            url: "/design-system/componenti/buttons/" #M
+            blank: true #M #C true if new tab for external links
+           
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Adegua il tono di voce al contesto
+          headingLevel: 2
+          noSpace: true
+          text: |
+            Il rispetto di un tono di voce coerente ed empatico è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
+          ctas:
+          - label: "Vai al fondamento Tono di voce" #C
+            url: "/design-system/fondamenti/tono-di-voce/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: Progetta microtesti efficaci
+          headingLevel: 2
+          noSpace: true
+          text: |
+            I microtesti sono brevi porzioni di testo che guidano e accompagnano l’utente nell’interazione con un’interfaccia digitale, come messaggi di errore, notifiche ed etichette dei pulsanti. La progettazione di questi contenuti richiede accortezze aggiuntive per assicurare coesione con vari elementi di interfaccia e uniformità con con l’ecosistema di un servizio digitale. 
+          ctas:
+          - label: "Vai al fondamento Microtesti" #C
+            url: "/design-system/fondamenti/microtesti/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
 
     - full: true
       noSpace: true
       paddingLeft: true
       title: Testa e ottimizza i contenuti
-      text: |
-            Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
+      #text: |
+            #Fai evolvere la qualità dei contenuti in base ai riscontri delle persone
       components:
         - name: TextImageCta
           text: |
-            I contenuti e il linguaggio dovrebbero sempre essere progettati - e ottimizzati in maniera iterativa e continua - sulla base di analisi e test sulle persone che utilizzeranno il touchpoint.
-
-            Esistono molti metodi per testare ipotesi di contenuto in pre-produzione, contenuti già esistenti o per valutare se il linguaggio utilizzato corrisponde alle attese e alle esigenze informative e interattive delle persone cui il sito o servizio sono destinati.
-
-            Si consiglia di svolgere test di usabilità moderati, preparando attività da svolgere con domande aperte.
+            I contenuti dovrebbero sempre essere progettati e ottimizzati in maniera iterativa e continua. Per valutare se i contenuti corrispondono alle attese e alle esigenze informative delle persone che utilizzano il servizio, puoi svolgere [test di usabilità](/risorse-per-progettare/validare/test-di-usabilita/) moderati, preparando attività da svolgere con domande aperte.
