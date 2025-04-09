@@ -115,42 +115,22 @@ components:
             - scegliere e prevedere in tempo reale **quale azione compiere sull’interfaccia**, tramite l’uso di componenti quali [tooltip](/design-system/componenti/tooltip/) e [buttons](/design-system/componenti/buttons/)
             - **prevedere l’effetto dell’interazione** con un elemento di interfaccia e **guidare alla risoluzione di una situazione inaspettata**, tramite [modali](/design-system/componenti/modal/), aiuti contestuali e messaggi di errore.
 
-        - name: TextImageCta
-          title: Tieni presente l’obiettivo e il contesto di ogni pagina o schermata
-          headingLevel: 3
-          noSpace: true
-          text: |
-            I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. [buttons](/design-system/componenti/buttons/)) con la giusta gerarchia di importanza è fondamentale per **orientare l’azione primaria**, suggerire le possibilità di interazione secondarie o collaterali, far **raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo**.
-          ctas:
-          - label: "Scopri le buone pratiche sui contenuti del componente Buttons" #C
-            url: "/design-system/componenti/buttons/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        - name: TextImageCta
-          noSpace: true
-          title: Rispetta la consistenza delle tue scelte di scrittura
-          headingLevel: 3
-          text: |
-            La progettazione di schemi ricorrenti d’interazione a livello di UX e UI implica anche definire **scelte** e **pattern di contenuto** ricorrenti e consistenti nell’ambito dello stesso servizio. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e **in maniera consistente**, la terminologia usata, gli ingombri di testo, i copy delle call to action.
-
-            Per facilitare l’aggiornamento consistente dei testi durante tutte le fasi di progettazione di un servizio, sono disponibili strumenti e integrazioni per i principali software di prototipazione che permettono di **creare e gestire librerie di microtesti**.
 
 
     - full: true
-      noSpace: true
+      noSpace: false
       paddingLeft: true
       title: Suggerimenti per microcopy efficaci e accessibili
       background: null
       components:
+      
+        - name: TextImageCta
+          title: "Tieni presente l'obiettivo dell'interazione"
+          noSpace: true
+          text: |
+             I microtesti efficaci sono focalizzati, contestuali e guidano l'utente verso il suo obiettivo. Ogni parola dovrebbe aiutare l’utente a compiere un’unica azione in modo semplice, chiaro e sicuro. Aggiungere informazioni non pertinenti rischia di creare confusione, rallentare il flusso e aumentare il carico cognitivo. Orienta quindi l'utente sempre verso l’azione primaria, segnalando chiaramente come secondarie o collaterali altre possibilità di interazione.
 
+             
         # 1st
         - name: Table
           title: Usa azioni specifiche
@@ -215,7 +195,7 @@ components:
               addonClasses: ms-2
 
 
-        # 5th
+        # 3th
         - name: Table
           title: Aiuta nella risoluzione degli errori
           responsive: table-responsive-md
@@ -250,7 +230,7 @@ components:
             - se non è possibile una soluzione immediata, suggerire una **via di uscita alternativa** in modo da fornire un’esperienza il più accettabile possibile della condizione inaspettata.
 
 
-        # 6th
+        # 4th
         - name: Table
           title: Progetta stati vuoti di valore
           responsive: table-responsive-md
@@ -282,6 +262,7 @@ components:
             - suggerisci come **avviare l’interazione che annulla lo stato vuoto**
             - suggerisci che tipo di esperienza offrirà la sezione una volta avviata la prima interazione.
 
+        #5
         - name: TextImageCta
           title: "Progetta aiuti contestuali efficaci"
           noSpace: true
@@ -293,6 +274,7 @@ components:
             - usa i testi segnaposto come **aiuto alla compilazione**, in particolare se hai bisogno di orientare l’utente su come compilare campi di testo “libero”
             - usa i testi segnaposto per **suggerire il modo giusto di usare alcune funzionalità** (es. ricerca su sito).
 
+        #6
         - name: TextImageCta
           title: "Chiedi conferma prima di azioni rischiose"
           noSpace: true
@@ -309,7 +291,7 @@ components:
             4. Usa "Annulla" come call-to-action secondaria per annullare l'azione.
 
           
-            
+        #7     
         - name: TextImageCta
           title: "Usa un tono di voce appropriato al contesto"
           noSpace: true
@@ -326,6 +308,21 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+
+
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title:
+      background: null
+      components:
+        - name: TextImageCta
+          title: Rispetta la consistenza delle tue scelte di scrittura
+          headingLevel: 2
+          text: |
+            La progettazione di schemi ricorrenti d’interazione a livello di UX e UI implica anche definire **scelte** e **pattern di contenuto** ricorrenti e consistenti nell’ambito dello stesso servizio. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e **in maniera consistente**, la terminologia usata, gli ingombri di testo, i copy delle call to action.
+
+            Per facilitare l’aggiornamento consistente dei testi durante tutte le fasi di progettazione di un servizio, sono disponibili strumenti e integrazioni per i principali software di prototipazione che permettono di **creare e gestire librerie di microtesti**.
 
 
     - full: true
