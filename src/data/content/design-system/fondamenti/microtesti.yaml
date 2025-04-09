@@ -327,15 +327,14 @@ components:
             - usa i testi segnaposto per **suggerire il modo giusto di usare alcune funzionalità** (es. ricerca su sito).
 
         - name: TextImageCta
-          title: "Rispetta il tono di voce del contesto"
+          title: "Usa un linguaggio semplice e un tono di voce appropriato"
           noSpace: true
           text: |
-            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Il rispetto di un tono di voce coerente e incentrato sull’utente è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi con **l’obiettivo primario di farti capire ed essere efficace**, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
+             Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Scrivi i contenuti con l’obiettivo primario di farti capire ed essere efficace, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
           ctas:
-          - label: "Scopri il fondamento dedicato al Tono di voce" #C
-            url: "/design-system/fondamenti/tono-di-voce/" #M
+          - label: "Vai al fondamento Linguaggio" #C
+            url: "/design-system/fondamenti/linguaggio/" #M
             blank: false #M #C true if new tab for external links
-           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -343,17 +342,9 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-        - name: TextImageCta
-          title: "Scrivi per tutti"
-          noSpace: true
-          text: |
-            Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Numerosi studi hanno infatti dimostrato che le persone non leggono necessariamente dall’alto al basso e parola per parola, ma più frequentemente **scansionano il contenuto della pagina secondo pattern visivi ricorrenti** ([F-shape](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/), [Z-shape](https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c)), ancorando la lettura all’aspetto di alcuni componenti interattivi e a volte limitandosi ad una lettura superficiale delle informazioni.
-          ctas:
-          - label: "Scopri il fondamento dedicato al Linguaggio" #C
-            url: "/design-system/fondamenti/linguaggio/" #M
+          - label: "Vai al fondamento Tono di voce" #C
+            url: "/design-system/fondamenti/tono-di-voce/" #M
             blank: false #M #C true if new tab for external links
-           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -370,26 +361,13 @@ components:
       background: null
       components:
         - name: TextImageCta
-          title: Metodi di ricerca
+          title: Fai ricerca e testa i microtesti del tuo servizio
           headingLevel: 2
           text: |
-            Prima di scrivere i microtesti, è importante **conoscere il linguaggio che gli utenti usano** in relazione a un determinato servizio.
+            Prima di scrivere microtesti, è importante **conoscere il linguaggio che gli utenti usano** in relazione a un determinato servizio. Alcune possibili attività di ricerca sono: **conversation mining** (analisi del linguaggio usato in conversazioni su social network e forum), **focus group** e **interviste utente**.
+            
+            Per valutare se i microtesti progettati sono comprensibili agli utenti e corrispondono al loro linguaggio e alle loro aspettative, puoi svolgere principalmente **[test di usabilità](/risorse-per-progettare/validare/test-di-usabilita/)**, ma anche **test di leggibilità** (tramite formula di Flesch-Vacca e l’indice Gulpease), **test di comprensione**, **cloze test** (o cloze deletion test), **test dell'evidenziatore** e **test A/B**.
 
-            Alcune possibili attività di ricerca per indagare questo aspetto sono:
-            - **conversation mining**, ovvero ricercare discussioni online (social network, forum, recensioni) per capire come gli utenti parlano di un servizio
-            - **focus group**, ovvero guidare e osservare la conversazione tra un gruppo di partecipanti scelti accuratamente
-            - **interviste utenti**, per approfondire il contesto e l’esperienza d’uso di un servizio.
 
-        - name: TextImageCta
-          title: Metodi di test
-          headingLevel: 2
-          text: |
-            Dopo aver progettato testi e microtesti, è opportuno **verificare che questi corrispondano al livello di comprensione, al tipo di linguaggio e alle aspettative degli utenti**.
-
-            Esistono diversi tipi di test che possono essere usati per verificare i microtesti, in base alla fase di sviluppo in cui ci si trova, il tempo a disposizione e lo scopo della verifica:
-            - **test di leggibilità**, che aiuta a capire quanto è difficile un testo ma non se rispetta il tono di voce o se è adatto al target di riferimento
-            - **cloze test** (o cloze deletion test) e **test di comprensione delle parole**, utili per capire se l’utente capisce cosa abbiamo scritto
-            - **test dell’evidenziatore**, per capire come semplificare la descrizione di un servizio o un’istruzione tecnica
-            - **test di usabilità delle parole**, per capire come gli utenti usano il contenuto per risolvere un problema
-            - **test A/B**, per confrontare due versioni alternative di uno stesso testo.
+            
 
