@@ -173,7 +173,7 @@ components:
 
         - name: TextImageCta
           text: |
-            Le etichette di testo di componenti azionabili (es. i pulsanti) dovrebbero, in linea generale, **iniziare con un verbo** che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione.
+            Le call-to-action dovrebbero **iniziare con un verbo** che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione.
 
 
         # 2nd
@@ -192,10 +192,16 @@ components:
             - cols:
               - text: Cerca un documento
               - text: Fai una ricerca fra i documenti
+            - cols:
+              - text: I campi con asterisco sono obbligatori
+              - text: Questo campo non è opzionale
+            - cols:
+              - text: Hai salvato il documento. Vai alla sezione "..." per visualizzarlo
+              - text: Il documento è stato salvato con successo nella sezione "..."
 
         - name: TextImageCta
           text: |
-            Oltre alla semplicità di linguaggio, considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre **preferibile ridurre la quantità di testo piuttosto che incrementarla**.
+            Vai dritto al punto, evitando nominalizzazioni, negazioni e forme passive, poiché rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre **preferibile ridurre la quantità di testo piuttosto che incrementarla**.
           ctas:
           - label: Approfondisci il tema nel fondamento Linguaggio #C
             url: "/design-system/fondamenti/linguaggio" #M
@@ -207,55 +213,6 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-        # 3rd
-        - name: Table
-          title: "Prima l’obiettivo, poi l’azione"
-          responsive: table-responsive-md
-          addonClasses: fixed
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-success fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-danger fw-bold
-          rows:
-            - cols:
-              - text: Per scaricare la ricevuta di pagamento, accedi all’area personale
-              - text: Accedi all’area personale per scaricare la ricevuta di pagamento
-
-        - name: TextImageCta
-          text: |
-            Quando un testo descrive un obiettivo e l'azione necessaria per raggiungerlo, inizia la frase con l'obiettivo, in modo da **facilitare la trovabilità dell'informazione principale**. Le persone, infatti, non leggono sugli schermi parola per parola, ma tendono a scansionare velocemente il contenuto della pagina.
-
-
-        # 4th
-        - name: Table
-          title: Evita le negazioni e le forme passive
-          responsive: table-responsive-md
-          addonClasses: fixed
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-success fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-danger fw-bold
-          rows:
-            - cols:
-              - text: I campi con asterisco sono obbligatori
-              - text: Questo campo non è opzionale
-            - cols:
-              - text: Hai salvato il documento. Vai alla sezione "..." per visualizzarlo
-              - text: Il documento è stato salvato con successo nella sezione "..."
-            - cols:
-              - text: Mario ha pubblicato un nuovo commento
-              - text: Un nuovo commento è stato pubblicato da Mario
-
-        - name: TextImageCta
-          text: |
-            Le negazioni e le forme passive rendono il testo più difficile da capire. **Prediligi l'uso di forme attive ed evita le negazioni** quando progetti microtesti per orientare azioni da compiere in interfaccia.
 
 
         # 5th
@@ -278,7 +235,7 @@ components:
               - text: Verifica la data di completamento delle attività
               - text: Risulta un errore nella data di completamento delle attività
             - cols:
-              - text: Il documento caricato non contiene alcuna firma. Assicurati di caricare un file che contiene una firma in corso di validità
+              - text: Il documento caricato non contiene alcuna firma. Assicurati di caricare un file che contiene una firma in corso di validità.
               - text: Firma non presente!
             - cols:
               - text: La ricerca non ha restituito risultati per “...”. Prova a cercare “...” o “...”.
@@ -286,9 +243,9 @@ components:
 
         - name: TextImageCta
           text: |
-            Dando per implicito che è buona norma **progettare un’interfaccia che impedisca il più possibile all’utente di trovarsi in condizioni di errore**, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di eventuali problemi (es. compilazione di form, upload di documenti, note legali, 404 etc…) è bene seguire alcune buone pratiche quali:
+            Quando scrivi un messaggio di errori, assicurati di:
 
-            - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**
+            - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**, senza incolpare l'utente
             - fornire - se possibile - una **soluzione immediata**
             - se non è possibile una soluzione immediata, suggerire una **via di uscita alternativa** in modo da fornire un’esperienza il più accettabile possibile della condizione inaspettata.
 
@@ -320,7 +277,7 @@ components:
           text: |
             I cosiddetti “empty state” o “stati vuoti” sono necessari in varie situazioni, tipicamente quando l’utente deve iniziare ad aggiungere alcuni elementi a una sezione, oppure quando sta cercando qualcosa ma il sistema non restituisce risultati. Scrivere un microtesto per uno stato vuoto è un’opportunità per **far comprendere all’utente come iniziare a interagire con l’interfaccia**, perché questa sia davvero di valore per la sua esperienza, senza perdite di tempo.
 
-            Ecco alcune buone pratiche per progettare stati vuoti efficaci:
+            Quando scrivi stati vuoti :
             - evita parole e tono di voce “negativi”
             - suggerisci come **avviare l’interazione che annulla lo stato vuoto**
             - suggerisci che tipo di esperienza offrirà la sezione una volta avviata la prima interazione.
@@ -337,21 +294,28 @@ components:
             - usa i testi segnaposto per **suggerire il modo giusto di usare alcune funzionalità** (es. ricerca su sito).
 
         - name: TextImageCta
-          title: "Usa un linguaggio semplice e un tono di voce appropriato"
+          title: "Chiedi conferma prima di azioni rischiose"
           noSpace: true
           text: |
-             Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Scrivi i contenuti con l’obiettivo primario di farti capire ed essere efficace, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
+            Prima di azioni con conseguenze rilevanti o irreversibili, dai all'utente un'ultima possibilità di assicurarsi che voglia effettivamente procedere. Le persone possono commettere errori, soprattutto in contesti complessi, sotto pressione o quando sono di fretta.
+
+            ![Un esempio microcopy per una modale di conferma](/images/design-system/fondamenti/domanda-conferma.png "Un esempio microcopy per una modale di conferma")
+            
+            Quando chiedi conferma a un'utente:
+
+            1. Scrivi un titolo sotto forma di domanda che esplicita chiaramente l'azione che si sta per compiere.
+            2. Fornisci una descrizione completa dell’azione e delle sue conseguenze, offrendo un suggerimento per evitare errori prima di procedere. 
+            3. Usa lo stesso verbo che hai usato nel titolo come call-to-action principale, per evitare ambiguità.
+            4. Usa "Annulla" come call-to-action secondaria per annullare l'azione.
+
+          
+            
+        - name: TextImageCta
+          title: "Usa un tono di voce appropriato al contesto"
+          noSpace: true
+          text: |
+             Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Progetta i microtesti con l’obiettivo primario di farti capire ed essere efficace, **tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente** che interagisce con l’interfaccia.
           ctas:
-          - label: "Vai al fondamento Linguaggio" #C
-            url: "/design-system/fondamenti/linguaggio/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
           - label: "Vai al fondamento Tono di voce" #C
             url: "/design-system/fondamenti/tono-di-voce/" #M
             blank: false #M #C true if new tab for external links
