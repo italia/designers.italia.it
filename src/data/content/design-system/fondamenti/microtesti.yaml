@@ -101,7 +101,7 @@ components:
       noSpace: false
       paddingLeft: true
       title:  Scrivi per facilitare e orientare l’interazione
-      #text: Migliora il rapporto tra utenti e interfaccia
+      text: Migliora il rapporto tra utenti e interfaccia
       background: null
       components:
         - name: TextImageCta
@@ -114,8 +114,6 @@ components:
             - capire **come i blocchi di informazioni sono collegati** fra di loro, tramite l’uso di componenti quali label, [accordion](/design-system/componenti/accordion/), [collapse](/design-system/componenti/collapse/), table, tag
             - scegliere e prevedere in tempo reale **quale azione compiere sull’interfaccia**, tramite l’uso di componenti quali [tooltip](/design-system/componenti/tooltip/) e [buttons](/design-system/componenti/buttons/)
             - **prevedere l’effetto dell’interazione** con un elemento di interfaccia e **guidare alla risoluzione di una situazione inaspettata**, tramite [modali](/design-system/componenti/modal/), aiuti contestuali e messaggi di errore.
-
-
 
     - full: true
       noSpace: false
@@ -181,7 +179,7 @@ components:
 
         - name: TextImageCta
           text: |
-            Vai dritto al punto, evitando nominalizzazioni, negazioni e forme passive, poiché rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre **preferibile ridurre la quantità di testo piuttosto che incrementarla**.
+            Vai dritto al punto, evitando nominalizzazioni, negazioni e forme passive, poiché rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre preferibile ridurre la quantità di testo piuttosto che incrementarla.
           ctas:
           - label: Approfondisci il tema nel fondamento Linguaggio #C
             url: "/design-system/fondamenti/linguaggio" #M
@@ -195,40 +193,20 @@ components:
               addonClasses: ms-2
 
 
-        # 3th
-        - name: Table
-          title: Aiuta nella risoluzione degli errori
-          responsive: table-responsive-md
-          addonClasses: fixed
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-success fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-danger fw-bold
-          rows:
-            - cols:
-              - text: La data deve rispettare il formato GG/MM/AA ed essere successiva al …
-              - text: Data non valida
-            - cols:
-              - text: Verifica la data di completamento delle attività
-              - text: Risulta un errore nella data di completamento delle attività
-            - cols:
-              - text: Il documento caricato non contiene alcuna firma. Assicurati di caricare un file che contiene una firma in corso di validità.
-              - text: Firma non presente!
-            - cols:
-              - text: La ricerca non ha restituito risultati per “...”. Prova a cercare “...” o “...”.
-              - text: Non ci sono risultati
-
         - name: TextImageCta
+          title: "Aiuta nella risoluzione degli errori"
+          noSpace: true
           text: |
-            Quando scrivi un messaggio di errori, assicurati di:
+            Un messaggio di errore utile aiuta a riconoscere il problema e dà indicazioni per correggerlo, supportando l'utente in un momento di frustrazione.
 
-            - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**, senza incolpare l'utente
-            - fornire - se possibile - una **soluzione immediata**
-            - se non è possibile una soluzione immediata, suggerire una **via di uscita alternativa** in modo da fornire un’esperienza il più accettabile possibile della condizione inaspettata.
+            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microcopy-errore.png "Un esempio microcopy per un messaggio di errore")
+            
+            Quando progetti messaggi d'errore:
 
+            1. Scrivi un titolo che descrive chiaramente qual è il problema, senza incolpare l'utente.
+            2. Spiega la causa dell'errore, nella descrizione.
+            3. Continua la descrizione spiegando in che modo risolvere.
+            4. Fornisci, se possibile, una call-to-action per una soluzione immediata o una via d'uscita alternativa.
 
         # 4th
         - name: Table
@@ -276,7 +254,7 @@ components:
 
         #6
         - name: TextImageCta
-          title: "Chiedi conferma prima di azioni rischiose"
+          title: "Chiedi conferma prima di azioni importanti"
           noSpace: true
           text: |
             Prima di azioni con conseguenze rilevanti o irreversibili, dai all'utente un'ultima possibilità di assicurarsi che voglia effettivamente procedere. Le persone possono commettere errori, soprattutto in contesti complessi, sotto pressione o quando sono di fretta.
@@ -293,7 +271,7 @@ components:
           
         #7   
         - name: Table
-          title: Usa un tono di voce appropriato al contestos
+          title: Usa un tono di voce appropriato al contesto
           responsive: table-responsive-md
           addonClasses: mb-5 table-img-responsive
           head:
