@@ -7,7 +7,7 @@ metadata:
 
 seo:
   name: Microtesti
-  description: "Progetta testi e microtesti dedicati alle interfacce per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
+  description: "Progetta testi dedicati alle interfacce per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
   canonical: null
   pathname: /design-system/fondamenti/microtesti/
 
@@ -31,7 +31,7 @@ components:
     background: null
     title: Microtesti
     column: true
-    subtitle: "Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
+    subtitle: "Scrivere per la user experience significa progettare testi dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -196,7 +196,17 @@ components:
         - name: TextImageCta
           text: |
             Oltre alla semplicità di linguaggio, considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre **preferibile ridurre la quantità di testo piuttosto che incrementarla**.
-
+          ctas:
+          - label: Approfondisci il tema nel fondamento Linguaggio #C
+            url: "/design-system/fondamenti/linguaggio" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         # 3rd
         - name: Table
