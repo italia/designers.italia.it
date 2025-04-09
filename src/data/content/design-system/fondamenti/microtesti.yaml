@@ -286,12 +286,44 @@ components:
             Quando chiedi conferma a un'utente:
 
             1. Scrivi un titolo sotto forma di domanda che esplicita chiaramente l'azione che si sta per compiere.
-            2. Fornisci una descrizione completa dell’azione e delle sue conseguenze, offrendo un suggerimento per evitare errori prima di procedere. 
+            2. Fornisci una descrizione completa dell’azione e delle sue conseguenze, cercando di non ripetere le parole del titolo. Offri un suggerimento per evitare errori prima di procedere o una spiegazione di come rimediare all'azione successivamente. 
             3. Usa lo stesso verbo che hai usato nel titolo come call-to-action principale, per evitare ambiguità.
             4. Usa "Annulla" come call-to-action secondaria per annullare l'azione.
 
           
-        #7     
+        #7   
+        - name: Table
+          title: Usa un tono di voce appropriato al contesto
+          responsive: table-responsive-md
+          addonClasses: fixed
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-success fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-danger fw-bold
+          rows:
+            - cols:
+              - text: ![Hai ricevuto una multa di 60 euro per divieto di sosta. Hai tempo fino al 12 gennaio 2025 per pagare senza costi aggiuntivi. Puoi pagare online o tramite bollettino postale. Paga online](/images/design-system/fondamenti/microtesti-tov-ok.png)
+              - text: ![È ora di pagare! Hai ricevuto una multa di 60 euro perchè hai parcheggiato in divieto di sosta. Se non paghi entro il 12 gennaio 2025 ti addebiteremo costi aggiuntivi. Paga adesso](/images/design-system/fondamenti/microtesti-tov-ko.png)
+
+
+        - name: TextImageCta
+          text: |
+            Vai dritto al punto, evitando nominalizzazioni, negazioni e forme passive, poiché rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre **preferibile ridurre la quantità di testo piuttosto che incrementarla**.
+          ctas:
+          - label: Approfondisci il tema nel fondamento Tono di voce #C
+            url: "/design-system/fondamenti/linguaggio" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          
         - name: TextImageCta
           title: "Usa un tono di voce appropriato al contesto"
           noSpace: true
@@ -311,7 +343,7 @@ components:
 
 
     - full: true
-      noSpace: false
+      noSpace: true
       paddingLeft: true
       title:
       background: null
@@ -326,7 +358,7 @@ components:
 
 
     - full: true
-      noSpace: false
+      noSpace: true
       paddingLeft: true
       title:
       background: null
