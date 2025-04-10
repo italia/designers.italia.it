@@ -192,21 +192,82 @@ components:
               size: sm
               addonClasses: ms-2
 
+        #3rd   
+        - name: Table
+          title: Usa un tono di voce appropriato al contesto
+          responsive: table-responsive-md
+          addonClasses: mb-5 table-img-responsive
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-success fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-danger fw-bold
+          rows:
+            - cols:
+              - text: "![Hai ricevuto una multa di 60 euro per divieto di sosta. Hai tempo fino al 12 gennaio 2025 per pagare senza costi aggiuntivi. Puoi pagare online o tramite bollettino postale. Paga online.](/images/design-system/fondamenti/microtesti-tov-ok.png)"
+              - text: "![È ora di pagare! Hai ricevuto una multa di 60 euro perchè hai parcheggiato dove non si poteva. Se non paghi entro il 12 gennaio 2025 ti addebiteremo costi aggiuntivi. Paga adesso.](/images/design-system/fondamenti/microtesti-tov-ko.png)"
 
+
+        - name: TextImageCta
+          title: "Includi aiuti contestuali di valore"
+          noSpace: true
+          text: |
+            ![Esempi di aiuti contestuali](/images/design-system/fondamenti/microtesti-aiuti-contestuali.png "Esempi di aiuti contestuali")
+            
+            Tooltip (suggerimenti) e placeholder (testi segnaposto) fanno parte della categoria di testi detti di “aiuto contestuale”, cioè utili all’utente come guida aggiuntiva su come interagire con l’interfaccia e su come interpretare il significato di alcuni elementi di UI.
+
+            Ecco alcune buone pratiche per la progettazione di questi microtesti:
+            - **usa i tooltip con moderazione**, valutando se l’aiuto contestuale è davvero necessario e ricordando che il testo del tooltip sarà visibile all’utente solo in mouseover (cioè al passaggio volontario del mouse)
+            - usa i testi segnaposto come **aiuto alla compilazione**, in particolare se hai bisogno di orientare l’utente su come compilare campi di testo “libero”
+            - usa i testi segnaposto per **suggerire il modo giusto di usare alcune funzionalità** (es. ricerca su sito).
+  
         - name: TextImageCta
           title: "Aiuta nella risoluzione degli errori"
           noSpace: true
           text: |
-            Un messaggio di errore utile aiuta a riconoscere il problema e dà indicazioni per correggerlo, supportando l'utente in un momento di frustrazione.
-
             ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
             
-            Quando progetti messaggi d'errore:
+            Un messaggio di errore utile aiuta a riconoscere il problema e dà indicazioni per correggerlo, supportando l'utente in un momento di frustrazione.
 
             1. Scrivi un titolo che descrive chiaramente qual è il problema, senza incolpare l'utente.
             2. Spiega la causa dell'errore, nella descrizione.
             3. Continua la descrizione spiegando in che modo risolvere.
             4. Fornisci, se possibile, una call-to-action per una soluzione immediata o una via d'uscita alternativa.
+
+        #6
+        - name: TextImageCta
+          title: "Chiedi conferma prima di azioni importanti"
+          noSpace: true
+          text: |
+            Prima di azioni con conseguenze rilevanti o irreversibili, dai all'utente un'ultima possibilità di assicurarsi che voglia effettivamente procedere. Le persone possono commettere errori, soprattutto in contesti complessi, sotto pressione o quando sono di fretta.
+
+            ![Un esempio microcopy per una modale di conferma](/images/design-system/fondamenti/domanda-conferma.png "Un esempio microcopy per una modale di conferma")
+            
+            Quando chiedi conferma a un'utente:
+
+            1. Scrivi un titolo sotto forma di domanda che esplicita chiaramente l'azione che si sta per compiere.
+            2. Fornisci una descrizione completa dell’azione e delle sue conseguenze, cercando di non ripetere le parole del titolo. Offri un suggerimento per evitare errori prima di procedere o una spiegazione di come rimediare all'azione successivamente. 
+            3. Usa lo stesso verbo che hai usato nel titolo come call-to-action principale, per evitare ambiguità.
+            4. Usa "Annulla" come call-to-action secondaria per annullare l'azione.
+
+
+        #6
+        - name: TextImageCta
+          title: "Comunica l'esito positivo di un'azione"
+          noSpace: true
+          text: |
+            I messaggi di conferma comunicano all'utente che un'azione è stata completata con successo, fornendo dettagli rilevanti e rassicurazioni. Sono fondamentali per migliorare l'esperienza utente e aumentare la fiducia nel servizio.
+
+            ![Un esempio microcopy per un messaggio di conferma](/images/design-system/fondamenti/microtesti-conferma.png "Un esempio microcopy per un messaggio di conferma")
+            
+            Quando progetti messaggi di conferma:
+
+            1. Scrivi un titolo che descrive chiaramente l'azione che è stata appena conclusa.
+            2. Spiega gli effetti dell'azione e includi eventuali numeri di riferimenti (come nel caso di richieste).
+            3. Includi informazioni su cosa succede dopo ed eventuali tempi di attesa.
+            4. Se rilevante, aggiungi una call-to-action per far continuare l'utente nell'interazione del servizio. Ad esempio, puoi invitare l'utente a navigare un'altra sezione, approfondire informazioni aggiuntive, ripetere la stessa azione appena conclusa, scaricare una ricevuta.
 
         # 4th
         - name: Table
@@ -239,68 +300,6 @@ components:
             - evita parole e tono di voce “negativi”
             - suggerisci come **avviare l’interazione che annulla lo stato vuoto**
             - suggerisci che tipo di esperienza offrirà la sezione una volta avviata la prima interazione.
-
-        #5
-        - name: TextImageCta
-          title: "Progetta aiuti contestuali efficaci"
-          noSpace: true
-          text: |
-            Tooltip (suggerimenti) e placeholder (testi segnaposto) fanno parte della categoria di testi detti di “aiuto contestuale”, cioè utili all’utente come guida aggiuntiva su come interagire con l’interfaccia e su come interpretare il significato di alcuni elementi di UI.
-
-            Ecco alcune buone pratiche per la progettazione di questi microtesti:
-            - **usa i tooltip con moderazione**, valutando se l’aiuto contestuale è davvero necessario e ricordando che il testo del tooltip sarà visibile all’utente solo in mouseover (cioè al passaggio volontario del mouse)
-            - usa i testi segnaposto come **aiuto alla compilazione**, in particolare se hai bisogno di orientare l’utente su come compilare campi di testo “libero”
-            - usa i testi segnaposto per **suggerire il modo giusto di usare alcune funzionalità** (es. ricerca su sito).
-
-        #6
-        - name: TextImageCta
-          title: "Chiedi conferma prima di azioni importanti"
-          noSpace: true
-          text: |
-            Prima di azioni con conseguenze rilevanti o irreversibili, dai all'utente un'ultima possibilità di assicurarsi che voglia effettivamente procedere. Le persone possono commettere errori, soprattutto in contesti complessi, sotto pressione o quando sono di fretta.
-
-            ![Un esempio microcopy per una modale di conferma](/images/design-system/fondamenti/domanda-conferma.png "Un esempio microcopy per una modale di conferma")
-            
-            Quando chiedi conferma a un'utente:
-
-            1. Scrivi un titolo sotto forma di domanda che esplicita chiaramente l'azione che si sta per compiere.
-            2. Fornisci una descrizione completa dell’azione e delle sue conseguenze, cercando di non ripetere le parole del titolo. Offri un suggerimento per evitare errori prima di procedere o una spiegazione di come rimediare all'azione successivamente. 
-            3. Usa lo stesso verbo che hai usato nel titolo come call-to-action principale, per evitare ambiguità.
-            4. Usa "Annulla" come call-to-action secondaria per annullare l'azione.
-
-        #6
-        - name: TextImageCta
-          title: "Comunica l'esito positivo di un'azione"
-          noSpace: true
-          text: |
-            I messaggi di conferma comunicano all'utente che un'azione è stata completata con successo, fornendo dettagli rilevanti e rassicurazioni. Sono fondamentali per migliorare l'esperienza utente e aumentare la fiducia nel servizio.
-
-            ![Un esempio microcopy per un messaggio di conferma](/images/design-system/fondamenti/microtesti-conferma.png "Un esempio microcopy per un messaggio di conferma")
-            
-            Quando progetti messaggi di conferma:
-
-            1. Scrivi un titolo che descrive chiaramente l'azione che è stata appena conclusa.
-            2. Spiega gli effetti dell'azione e includi eventuali numeri di riferimenti (come nel caso di richieste).
-            3. Includi informazioni su cosa succede dopo ed eventuali tempi di attesa.
-            4. Se rilevante, aggiungi una call-to-action per far continuare l'utente nell'interazione del servizio. Ad esempio, puoi invitare l'utente a navigare un'altra sezione, approfondire informazioni aggiuntive, ripetere la stessa azione appena conclusa, scaricare una ricevuta.
-        #7   
-        - name: Table
-          title: Usa un tono di voce appropriato al contesto
-          responsive: table-responsive-md
-          addonClasses: mb-5 table-img-responsive
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-success fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-danger fw-bold
-          rows:
-            - cols:
-              - text: "![Hai ricevuto una multa di 60 euro per divieto di sosta. Hai tempo fino al 12 gennaio 2025 per pagare senza costi aggiuntivi. Puoi pagare online o tramite bollettino postale. Paga online.](/images/design-system/fondamenti/microtesti-tov-ok.png)"
-              - text: "![È ora di pagare! Hai ricevuto una multa di 60 euro perchè hai parcheggiato dove non si poteva. Se non paghi entro il 12 gennaio 2025 ti addebiteremo costi aggiuntivi. Paga adesso.](/images/design-system/fondamenti/microtesti-tov-ko.png)"
-
-
         - name: TextImageCta
           text: |
             Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce empatica, di supporto e non colpevolizzante. Quando progetti i microtesti, **tieni conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente** che interagisce con l’interfaccia e adatta il tono al contesto.
