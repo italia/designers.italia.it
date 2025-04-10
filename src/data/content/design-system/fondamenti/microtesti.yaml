@@ -97,16 +97,15 @@ components:
       tags: [Contenuti e linguaggio,Progettazione interfaccia]
 
   sectionsEditorial:
+
     - full: true
       noSpace: false
       paddingLeft: true
-      title:  Scrivi per facilitare e orientare l’interazione
-      text: Migliora il rapporto tra utenti e interfaccia
+      title:
       background: null
       components:
         - name: TextImageCta
-          title:
-          noSpace: true
+          title: Migliora il rapporto tra utenti e interfaccia
           headingLevel: 2
           text: |
             I testi di interfaccia dovrebbero aiutare l'utente a:
@@ -118,12 +117,12 @@ components:
     - full: true
       noSpace: false
       paddingLeft: true
-      title: Suggerimenti per microcopy efficaci e accessibili
+      title: Scrivi per facilitare e orientare l’interazione
       background: null
       components:
       
         - name: TextImageCta
-          title: "Tieni presente l'obiettivo dell'interazione"
+          title: "Tieni presente l'obiettivo dell'utente"
           noSpace: true
           text: |
              I microtesti efficaci sono **focalizzati**, **contestuali** e **guidano l'utente verso l'obiettivo**. Ogni parola dovrebbe aiutare l’utente a compiere un’unica azione in modo semplice, chiaro e sicuro. Aggiungere informazioni non pertinenti rischia di creare confusione, rallentare il flusso e aumentare il carico cognitivo. **Orienta quindi l'utente sempre verso l’azione primaria**, segnalando chiaramente come secondarie o collaterali altre possibilità di interazione.
@@ -233,12 +232,12 @@ components:
           text: |
             ![Esempi di aiuti contestuali](/images/design-system/fondamenti/microtesti-aiuti-contestuali.png "Esempi di aiuti contestuali")
             
-            Tooltip (suggerimenti) e placeholder (testi segnaposto) fanno parte della categoria di testi detti di “aiuto contestuale”, cioè utili all’utente come guida aggiuntiva su come interagire con l’interfaccia e su come interpretare il significato di alcuni elementi di UI.
+            Gli aiuti contestuali sono microtesti aggiuntivi che guidano l'utente su come interagire con l’interfaccia, compilare campi e interpretare alcuni elementi UI**. Rappresentano un'opportunità per rendere l'interazione intuitiva e fluida.
 
-            Ecco alcune buone pratiche per la progettazione di questi microtesti:
-            - **usa i tooltip con moderazione**, valutando se l’aiuto contestuale è davvero necessario e ricordando che il testo del tooltip sarà visibile all’utente solo in mouseover (cioè al passaggio volontario del mouse)
-            - usa i testi segnaposto come **aiuto alla compilazione**, in particolare se hai bisogno di orientare l’utente su come compilare campi di testo “libero”
-            - usa i testi segnaposto per **suggerire il modo giusto di usare alcune funzionalità** (es. ricerca su sito).
+            - Usa i testi segnaposto per suggerire agli utenti come interagire con campi liberi senza validazione, come le barre di ricerca (ad esempio: "Cerca servizi e uffici", "Inizia a digitare un indirizzo"). Ricorda che questi suggerimenti scompaiono quando l'utente inizia a digitare.
+            - Nei [dropdown](/design-system/componenti/dropdown/) di selezione, specifica cosa bisogna selezionare (ad esempio, "Seleziona una regione", "Seleziona una sede") e non usare il generico "Seleziona un'opzione".
+            - Per indicare istruzioni di compilazione, come ad esempio per i [campi input](/design-system/componenti/input/) dei [form](/design-system/componenti/form/), usa invece l'helper text fisso posto sotto il componente, così il suggerimento non scompare. Scrivi istruzioni utili e specifiche, come "Inserisci una password di almeno 8 caratteri e con almeno una maiuscola" e non "Inserisci una password sicura".
+            - Usa i [tooltip](/design-system/componenti/tooltip/) solo per indicazioni secondarie o accessorie, poichè saranno visibili solo al clic, tap o al passaggio del mouse. Usali con moderazione e valuta se l’aiuto contestuale è davvero necessario.
   
         - name: TextImageCta
           title: "Aiuta nella risoluzione degli errori"
