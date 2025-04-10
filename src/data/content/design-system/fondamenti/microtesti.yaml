@@ -126,7 +126,7 @@ components:
           title: "Tieni presente l'obiettivo dell'interazione"
           noSpace: true
           text: |
-             I microtesti efficaci sono focalizzati, contestuali e guidano l'utente verso il suo obiettivo. Ogni parola dovrebbe aiutare l’utente a compiere un’unica azione in modo semplice, chiaro e sicuro. Aggiungere informazioni non pertinenti rischia di creare confusione, rallentare il flusso e aumentare il carico cognitivo. Orienta quindi l'utente sempre verso l’azione primaria, segnalando chiaramente come secondarie o collaterali altre possibilità di interazione.
+             I microtesti efficaci sono **focalizzati**, **contestuali** e **guidano l'utente verso l'obiettivo**. Ogni parola dovrebbe aiutare l’utente a compiere un’unica azione in modo semplice, chiaro e sicuro. Aggiungere informazioni non pertinenti rischia di creare confusione, rallentare il flusso e aumentare il carico cognitivo. **Orienta quindi l'utente sempre verso l’azione primaria**, segnalando chiaramente come secondarie o collaterali altre possibilità di interazione.
 
              
         # 1st
@@ -179,7 +179,7 @@ components:
 
         - name: TextImageCta
           text: |
-            Vai dritto al punto, evitando nominalizzazioni, negazioni e forme passive, poiché rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre preferibile ridurre la quantità di testo piuttosto che incrementarla.
+            **Vai dritto al punto** ed **evita il più possibile nominalizzazioni, negazioni e forme passive**: rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre preferibile ridurre la quantità di testo piuttosto che incrementarla.
           ctas:
           - label: Approfondisci il tema nel fondamento Linguaggio #C
             url: "/design-system/fondamenti/linguaggio" #M
@@ -206,9 +206,26 @@ components:
                 addonClasses: bg-danger fw-bold
           rows:
             - cols:
-              - text: "![Hai ricevuto una multa di 60 euro per divieto di sosta. Hai tempo fino al 12 gennaio 2025 per pagare senza costi aggiuntivi. Puoi pagare online o tramite bollettino postale. Paga online.](/images/design-system/fondamenti/microtesti-tov-ok.png)"
-              - text: "![È ora di pagare! Hai ricevuto una multa di 60 euro perchè hai parcheggiato dove non si poteva. Se non paghi entro il 12 gennaio 2025 ti addebiteremo costi aggiuntivi. Paga adesso.](/images/design-system/fondamenti/microtesti-tov-ko.png)"
+              - text: "![Hai ricevuto una multa di 60 euro per divieto di sosta. Hai tempo fino al 12 gennaio 2025 per pagare senza costi aggiuntivi. Puoi pagare online o tramite bollettino postale. Paga online.](/images/design-system/fondamenti/microtesti-tov-ok.png)
+                      Tono di voce autorevole, istruttivo e orientato all'azione"
+                        
+              - text: "![È ora di pagare! Hai ricevuto una multa di 60 euro perchè hai parcheggiato dove non si poteva. Se non paghi entro il 12 gennaio 2025 ti addebiteremo costi aggiuntivi. Paga adesso.](/images/design-system/fondamenti/microtesti-tov-ko.png)
+                      Tono di voce colpevolizzante"
 
+        - name: TextImageCta
+          text: |
+            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce empatica. Quando progetti i microtesti, **tieni conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente** che interagisce con l’interfaccia e adatta il tono al contesto.
+          ctas:
+          - label: Approfondisci il tema nel fondamento Tono di voce #C
+            url: "/design-system/fondamenti/tono-di-voce" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         - name: TextImageCta
           title: "Includi aiuti contestuali di valore"
@@ -229,7 +246,7 @@ components:
           text: |
             ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
             
-            Un messaggio di errore utile aiuta a riconoscere il problema e dà indicazioni per correggerlo, supportando l'utente in un momento di frustrazione.
+            Un messaggio di errore utile **aiuta a riconoscere il problema e dà indicazioni per correggerlo**, supportando l'utente in un momento di frustrazione.
 
             1. Scrivi un titolo che descrive chiaramente qual è il problema, senza incolpare l'utente.
             2. Spiega la causa dell'errore, nella descrizione.
@@ -241,7 +258,7 @@ components:
           title: "Chiedi conferma prima di azioni importanti"
           noSpace: true
           text: |
-            Prima di azioni con conseguenze rilevanti o irreversibili, dai all'utente un'ultima possibilità di assicurarsi che voglia effettivamente procedere. Le persone possono commettere errori, soprattutto in contesti complessi, sotto pressione o quando sono di fretta.
+            Prima di azioni con conseguenze rilevanti o irreversibili, **dai all'utente possibilità di assicurarsi che voglia effettivamente procedere**. Le persone possono commettere errori, soprattutto in contesti complessi, sotto pressione o quando sono di fretta.
 
             ![Un esempio microcopy per una modale di conferma](/images/design-system/fondamenti/domanda-conferma.png "Un esempio microcopy per una modale di conferma")
             
@@ -300,20 +317,7 @@ components:
             - evita parole e tono di voce “negativi”
             - suggerisci come **avviare l’interazione che annulla lo stato vuoto**
             - suggerisci che tipo di esperienza offrirà la sezione una volta avviata la prima interazione.
-        - name: TextImageCta
-          text: |
-            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce empatica, di supporto e non colpevolizzante. Quando progetti i microtesti, **tieni conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente** che interagisce con l’interfaccia e adatta il tono al contesto.
-          ctas:
-          - label: Approfondisci il tema nel fondamento Tono di voce #C
-            url: "/design-system/fondamenti/linguaggio" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+
       
 
 
