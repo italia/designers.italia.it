@@ -99,7 +99,7 @@ components:
   sectionsEditorial:
 
     - full: true
-      noSpace: false
+      noSpace: true
       paddingLeft: true
       title:
       background: null
@@ -235,8 +235,8 @@ components:
             Gli aiuti contestuali sono microtesti aggiuntivi che **guidano l'utente su come interagire con l’interfaccia**, **compilare campi** e **interpretare alcuni elementi UI**. Rappresentano un'opportunità per rendere l'interazione intuitiva e fluida.
 
             - Usa i testi segnaposto per suggerire agli utenti come interagire con campi liberi senza validazione, come le barre di ricerca (ad esempio: "Cerca servizi e uffici", "Inizia a digitare un indirizzo"). Ricorda che questi suggerimenti scompaiono quando l'utente inizia a digitare.
-            - Nei [dropdown](/design-system/componenti/dropdown/) di selezione, specifica cosa bisogna selezionare (ad esempio, "Seleziona una regione", "Seleziona una sede") e non usare il generico "Seleziona un'opzione".
             - Per indicare istruzioni di compilazione, come ad esempio per i [campi input](/design-system/componenti/input/) dei [form](/design-system/componenti/form/), usa invece l'helper text fisso posto sotto il componente, così il suggerimento non scompare. Scrivi istruzioni utili e specifiche, come "Inserisci una password di almeno 8 caratteri e con almeno una maiuscola" e non "Inserisci una password sicura".
+            - Nei [dropdown](/design-system/componenti/dropdown/) di selezione, specifica cosa bisogna selezionare (ad esempio, "Seleziona una regione", "Seleziona una sede") e non usare il generico "Seleziona un'opzione".
             - Usa i [tooltip](/design-system/componenti/tooltip/) solo per indicazioni secondarie o accessorie, poichè saranno visibili solo al clic, tap o al passaggio del mouse. Usali con moderazione e valuta se l’aiuto contestuale è davvero necessario.
   
         - name: TextImageCta
@@ -268,7 +268,12 @@ components:
             3. Usa lo stesso verbo che hai usato nel titolo come call-to-action principale, per evitare ambiguità.
             4. Usa "Annulla" come call-to-action secondaria per annullare l'azione.
 
-
+           Nei casi di forte ambiguità tra la call-to-action principale e quella secondaria, puoi cambiare verbi, includere sostantivi e aggiungere Sì/No. Ad esempio:
+            
+            Vuoi annullare la pratica?
+            - No, mantieni pratica
+            - Sì, annulla pratica
+        
         #6
         - name: TextImageCta
           title: "Comunica l'esito positivo di un'azione"
@@ -281,7 +286,7 @@ components:
             Quando progetti messaggi di conferma:
 
             1. Scrivi un titolo che descrive chiaramente l'azione che è stata appena conclusa.
-            2. Spiega gli effetti dell'azione e includi eventuali numeri di riferimenti (come nel caso di richieste).
+            2. Spiega gli effetti dell'azione e includi eventuali numeri di riferimento (come nel caso di richieste).
             3. Includi informazioni su cosa succede dopo ed eventuali tempi di attesa.
             4. Se rilevante, aggiungi una call-to-action per far continuare l'utente nell'interazione del servizio. Ad esempio, puoi invitare l'utente a navigare un'altra sezione, approfondire informazioni aggiuntive, ripetere la stessa azione appena conclusa, scaricare una ricevuta.
 
@@ -308,14 +313,19 @@ components:
               - text: "Inizia a scrivere un messaggio: puoi salvarlo in bozza e inviarlo quando sei pronto. Nuovo messaggio"
               - text: Non ci sono messaggi in bozza
 
-        - name: TextImageCta
-          text: |
-            I cosiddetti “empty state” o “stati vuoti” sono necessari in varie situazioni, tipicamente quando l’utente deve iniziare ad aggiungere alcuni elementi a una sezione, oppure quando sta cercando qualcosa ma il sistema non restituisce risultati. Scrivere un microtesto per uno stato vuoto è un’opportunità per **far comprendere all’utente come iniziare a interagire con l’interfaccia**, perché questa sia davvero di valore per la sua esperienza, senza perdite di tempo.
 
-            Quando scrivi stati vuoti :
-            - evita parole e tono di voce “negativi”
-            - suggerisci come **avviare l’interazione che annulla lo stato vuoto**
-            - suggerisci che tipo di esperienza offrirà la sezione una volta avviata la prima interazione.
+        - name: TextImageCta
+          title: "Sfrutta gli stati vuoti per incentivare le interazioni"
+          noSpace: true
+          text: |
+            ![Un esempio di microcopy per uno stato vuoto](/images/design-system/fondamenti/microtesti-conferma.png "Un esempio di microcopy per uno stato")
+            
+            Gli stati vuoti, in inglese *empty states*, sono quei testi che appaiono in sezioni temporaneamente vuote, prima che il sistema o l'utente aggiungano informazioni, oppure quando una ricerca non restituisce risultati. Scrivere un microtesto per uno stato vuoto è un’opportunità per **far comprendere all’utente come iniziare a interagire con l’interfaccia**, perché questa sia davvero di valore per la sua esperienza, senza perdite di tempo.
+            
+            1. Includi un messaggio principale che spiega lo stato vuoto, evitando parole e tono di voce “negativi”.
+            2. Suggerisci come **avviare l’interazione che annulla lo stato vuoto** e il tipo di esperienza offrirà la sezione una volta avviata la prima interazione.
+            3. Se possibile, aggiungi una call-to-action per annullare lo stato vuoto immediatamente.
+            
 
       
 
