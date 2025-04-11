@@ -184,6 +184,7 @@ components:
               - text: Nella notte sono sbarcati circa 30 clandestini
 
         - name: TextImageCta
+          noSpace: true
           text: |
             Usare un linguaggio inclusivo fa sentire le persone più vicine alla PA, a prescindere dal genere, l’orientamento sessuale, la nazionalità o le origini, la religione o altre caratteristiche fisiche o psicologiche. Non usare verbi abilisti, maschile sovresteso, denominazioni incorrette e stereotipi.
             
@@ -208,7 +209,7 @@ components:
             - aggiungi sempre il link alla norma di riferimento, per esempio su [Normattiva](https://www.normattiva.it/).
 
       - full: true
-        noSpace: false
+        noSpace: true
         paddingLeft: true
         background: null
         components:
@@ -244,16 +245,19 @@ components:
 
               Prediligi l’uso delle cifre, soprattutto quando i numeri indicano un dato preciso (contenuti matematici, scientifici, statistici, prezzi) o devono essere ospitati in componenti di interfaccia. 
               
-              - Usa il punto per separare le migliaia a partire dai 10 mila in su. **Esempi:** 8700, 11.800. 
-              - Per valori numerici molto alti e indicativi, scrivi “mila”, “milione” e “miliardo” in lettere. **Esempi:** 4 milioni e 325 mila persone, circa 10 mila enti.
-              - Usa la virgola per separare i decimali. **Esempio:** 2,5.
-              - Usa i numeri romani soltanto per riferimenti puntuali alle leggi e indicare i secoli. **Esempi:** Titolo V della Costituzione, XIX secolo.
+              Usa il punto per separare le migliaia a partire dai 10 mila in su. **Esempi:** `8700`, `11.800`. 
+              
+              Per valori numerici molto alti e indicativi, scrivi “mila”, “milione” e “miliardo” in lettere. **Esempi:** `4 milioni e 325 mila persone`, `circa 10 mila enti`.
+              
+              Usa la virgola per separare i decimali. **Esempio:** `2,5`.
+              
+              Usa i numeri romani soltanto per riferimenti puntuali alle leggi e indicare i secoli. **Esempi:** `Titolo V della Costituzione`, `XIX secolo`.
 
               ### Date 
 
               Scrivi i giorni del mese e l’anno in cifre, mentre scrivi il mese e, se necessario, il giorno della settimana in lettere (con l’iniziale minuscola). 
 
-              **Esempi:** `25 gennaio 2018, lunedì 25 gennaio 2018`
+              **Esempi:** `25 gennaio 2018`, `lunedì 25 gennaio 2018`
 
               ### Orari 
 
@@ -263,27 +267,27 @@ components:
 
               ### Numeri di telefono
 
-              Usa sempre anche il prefisso internazionale e raggruppa le cifre separandole con degli spazi per migliorare la leggibilità. Inserisci i numeri di telefono come link attivi usando l’attributo “tel:” nel codice html.  
+              Usa sempre anche il prefisso internazionale e raggruppa le cifre separandole con degli spazi per migliorare la leggibilità. Inserisci i numeri di telefono come link attivi usando l’attributo `tel:` nel codice HTML.  
 
               **Esempio:** [+39 06 123 456 78](tel:+390612345678)
 
               ### Email 
 
-              La parola “email” si scrive senza trattini o spazi, in minuscolo. Per gli indirizzi, scrivili per esteso e inseriscili come link attivi usando l’attributo “mailto:” nel codice html.
+              La parola “email” si scrive senza trattini o spazi, in minuscolo. Per gli indirizzi, scrivili per esteso e inseriscili come link attivi usando l’attributo `mailto:` nel codice HTML.
 
-              **Esempio:** Email: [ufficio@comune.comune.it](mailto:ufficio@comune.comune.it)
+              **Esempio:** Email: [ufficio@comune.comune.it](mailto:ufficio@comune.comune.it) 
 
               ### Indirizzi
 
               Usa le virgole per separare via (inclusiva di numero civico), CAP e città.
 
-              **Esempio:** Via Giulia 25, 00185, Roma 
+              **Esempio:** `Via Giulia 25, 00185, Roma`
 
               ### Unità di misura
 
               Scrivi il numero in cifre, seguito dal simbolo dell’unità di misura nel [Sistema Internazionale](https://it.wikipedia.org/wiki/Sistema_internazionale_di_unit%C3%A0_di_misura), separato da uno spazio.
 
-              **Esempi**: 3 km, 15 kg, 25 °C
+              **Esempi**: `3 km, 15 kg, 25 °C`
 
           - name: TextImageCta
             title: Come scrivere le parole della PA
@@ -341,7 +345,7 @@ components:
                 addonClasses: ms-2
                 
       - full: true
-        noSpace: false
+        noSpace: true
         paddingLeft: true
         # title:
         background: null
