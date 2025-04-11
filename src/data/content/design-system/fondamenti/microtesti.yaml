@@ -118,15 +118,15 @@ components:
       title: Scrivi per facilitare e orientare l’interazione
       background: null
       components:
-      
+
+        # 1
         - name: TextImageCta
           title: "Tieni presente l'obiettivo dell'utente"
           noSpace: true
           text: |
              I microtesti efficaci sono **focalizzati**, **contestuali** e **guidano l'utente verso l'obiettivo**. Ogni parola dovrebbe aiutare l’utente a compiere un’unica azione in modo semplice, chiaro e sicuro. Aggiungere informazioni non pertinenti rischia di creare confusione, rallentare il flusso e aumentare il carico cognitivo. **Orienta quindi l'utente sempre verso l’azione primaria**, segnalando chiaramente come secondarie o collaterali altre possibilità di interazione.
-
              
-        # 1st
+        # 2
         - name: Table
           title: Usa azioni specifiche
           noSpace: false
@@ -152,7 +152,7 @@ components:
             Le call-to-action dovrebbero **iniziare con un verbo** che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione.
 
 
-        # 2nd
+        # 3
         - name: Table
           title: Usa un linguaggio semplice e conciso
           responsive: table-responsive-md
@@ -190,7 +190,7 @@ components:
               size: sm
               addonClasses: ms-2
 
-        #3rd   
+        #4   
         - name: Table
           title: Usa un tono di voce appropriato al contesto
           responsive: table-responsive-md
@@ -210,6 +210,7 @@ components:
               - text: "![È ora di pagare! Hai ricevuto una multa di 60 euro perchè hai parcheggiato dove non si poteva. Se non paghi entro il 12 gennaio 2025 ti addebiteremo costi aggiuntivi. Paga adesso.](/images/design-system/fondamenti/microtesti-tov-ko.png)
                       Tono di voce colpevolizzante"
 
+        #5
         - name: TextImageCta
           text: |
             Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce empatica. Quando progetti i microtesti, **tieni conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente** che interagisce con l’interfaccia e adatta il tono al contesto.
@@ -225,6 +226,7 @@ components:
               size: sm
               addonClasses: ms-2
 
+        #6
         - name: TextImageCta
           title: "Includi aiuti contestuali di valore"
           noSpace: true
@@ -240,7 +242,8 @@ components:
             - Nei [dropdown](/design-system/componenti/dropdown/) di selezione, specifica cosa bisogna selezionare (ad esempio, "Seleziona una regione", "Seleziona una sede") e non usare il generico "Seleziona un'opzione".
             
             - Usa i [tooltip](/design-system/componenti/tooltip/) solo per indicazioni secondarie o accessorie, poichè saranno visibili solo al clic, tap o al passaggio del mouse. Usali con moderazione e valuta se l’aiuto contestuale è davvero necessario.
-  
+
+        #7
         - name: TextImageCta
           title: "Aiuta nella risoluzione degli errori"
           noSpace: false
@@ -257,7 +260,7 @@ components:
             
             4. Fornisci, se possibile, una call-to-action per una soluzione immediata o una via d'uscita alternativa.
 
-        #6
+        #8
         - name: TextImageCta
           title: "Chiedi conferma prima di azioni importanti"
           noSpace: false
@@ -280,7 +283,7 @@ components:
             
             Per esempio: Vuoi annullare la pratica? No, mantieni pratica / Sì, annulla pratica
         
-        #6
+        #9
         - name: TextImageCta
           title: "Comunica l'esito positivo di un'azione"
           noSpace: false
@@ -299,7 +302,7 @@ components:
             
             4. Se rilevante, aggiungi una call-to-action per far continuare l'utente nell'interazione del servizio. Ad esempio, puoi invitare l'utente a navigare un'altra sezione, approfondire informazioni aggiuntive, ripetere la stessa azione appena conclusa, scaricare una ricevuta.
 
-
+        #10
         - name: TextImageCta
           title: "Sfrutta gli stati vuoti per incentivare le interazioni"
           noSpace: false
@@ -314,8 +317,6 @@ components:
             
             3. Se possibile, aggiungi una call-to-action per annullare lo stato vuoto immediatamente.
             
-
-
     - full: true
       noSpace: false
       paddingLeft: true
@@ -329,7 +330,6 @@ components:
             La progettazione di schemi ricorrenti d’interazione a livello di UX e UI implica anche definire **scelte** e **pattern di contenuto** ricorrenti e consistenti nell’ambito dello stesso servizio. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e **in maniera consistente**, la terminologia usata, gli ingombri di testo, i copy delle call to action.
 
             Per facilitare l’aggiornamento consistente dei testi durante tutte le fasi di progettazione di un servizio, sono disponibili strumenti e integrazioni per i principali software di prototipazione che permettono di **creare e gestire librerie di microtesti**.
-
 
     - full: true
       noSpace: true
