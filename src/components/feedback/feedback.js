@@ -9,7 +9,7 @@ import FormNo from "./components/form-no/FormNo";
 const BTN_INTRO = {
   label: "Invia",
   btnStyle: "primary",
-  type: "button",
+  type: "submit",
 };
 
 const ICON_CLOSE = {
@@ -148,7 +148,7 @@ function Feedback() {
               </fieldset>
 
               <button
-                type="button"
+                type="submit"
                 className="btn btn-primary mt-4"
                 disabled={!isChecked || feedbackState === FeedbackState.Loading}
                 onClick={onSend}

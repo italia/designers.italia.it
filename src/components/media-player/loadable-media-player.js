@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useId } from "react";
 import { VideoPlayer, AcceptOverlay } from "bootstrap-italia";
 import parse from "html-react-parser";
 import ReactMarkdown from "react-markdown";
-import uniqueId from "lodash/uniqueId";
 
 // TODO
 // - [future] modular approach for local videos/youtubes/...
@@ -42,7 +41,7 @@ function MediaPlayerEl({
   let video = null;
   const t = (key) => messages[lang][key];
 
-  const videoId = `video-js-${uniqueId("id_")}`;
+  const videoId = `video-js-${useId()}`;
 
   // trascription heading level
   let HLevel;

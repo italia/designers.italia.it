@@ -30,7 +30,10 @@ function ListArchiveDSTags() {
           Esplora per utilizzo
         </h3>
         <div className="chips-list-wrapper ps-md-4">
-          <ul className="chips-list chips mt-4 mt-md-3 d-flex flex-wrap">
+          <ul
+            className="chips-list chips mt-4 mt-md-3 d-flex flex-wrap"
+            aria-label="Argomenti per utilizzo: "
+          >
             {data.tagsDesignSystem.group.map((tag) => (
               <ListItem
                 key={tag.fieldValue}
