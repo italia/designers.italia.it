@@ -104,12 +104,12 @@ components:
     #       img: /images/image-icons-fullwidth.jpg
     #       alt: Descrizione immagine grande
 
-     - full: true
-       noSpace: false
-       paddingLeft: true
-       # title:
-       background: null
-       components:
+      - full: true
+        noSpace: false
+        paddingLeft: true
+        # title:
+        background: null
+        components:
         - name: TextImageCta
           title: Parlare la lingua delle persone per servizi più utili e accessibili
           headingLevel: 2
@@ -186,188 +186,172 @@ components:
         - name: TextImageCta
           text: |
             Usare un linguaggio inclusivo fa sentire le persone più vicine alla PA, a prescindere dal genere, l’orientamento sessuale, la nazionalità o le origini, la religione o altre caratteristiche fisiche o psicologiche. Non usare verbi abilisti, maschile sovresteso, denominazioni incorrette e stereotipi.
+            
+            ### Nomi di organizzazioni, servizi e progetti
 
-
-
-        - name: TextImageCta
-          title: Nomi di organizzazioni, servizi e progetti
-          headingLevel: 3
-          noSpace: true
-          text: |
             Il nome ufficiale della tua organizzazione, servizio o progetto potrebbe non rispecchiare quello usato dagli utenti. Non serve creare un marchio per ogni nuovo servizio, ma è meglio usare diciture descrittive e di immediata comprensione.
+            
+            ### Termini tecnici, burocratici e stranieri
 
-        - name: TextImageCta
-          title: Termini tecnici, burocratici e stranieri
-          headingLevel: 3
-          noSpace: true
-          text: |
             Usa termini complessi solo quando sei certo che il pubblico a cui ti rivolgi sia in grado di capirne il significato. In alternativa, preferisci dei sinonimi; se non è possibile spiega il significato del termine in modo chiaro e conciso.
 
-        - name: TextImageCta
-          title: Acronimi e sigle
-          headingLevel: 3
-          noSpace: true
-          text: |
+            ### Acronimi e sigle
+
             Gli acronimi e le sigle non aiutano la comprensione del testo: evitali il più possibile. 
             Se è necessario usarli, **assicurati di aver prima scritto il nome completo per esteso** nello stesso contenuto: per esempio, Presidenza del Consiglio dei Ministri (PCDM).
 
-        - name: TextImageCta
-          title: Riferimenti normativi
-          headingLevel: 3
-          noSpace: true
-          text: |
+            ### Riferimenti normativi
+          
             Evita troppi riferimenti normativi, rendono il testo complicato. Quando è necessario citare una legge:
             - cerca di spiegarne sinteticamente il contenuto invece che citarla testualmente;
             - introduci il titolo della norma solo dopo una spiegazione, mettendolo tra parentesi - ad esempio, "Testo Unico in materia di dati sulla privacy (d.lgs. 169 del 30 giugno 200), art. 4 lett. d)".
             - aggiungi sempre il link alla norma di riferimento, per esempio su [Normattiva](https://www.normattiva.it/).
 
-    - full: true
-      noSpace: false
-      paddingLeft: true
-      title:
-      background: null
-      components:
-        - name: TextImageCta
-          title: Formatta il testo in modo coerente e accessibile
-          headingLevel: 2
-          text: |
-            Alcune piccole accortezze di formattazione e stile possono migliorare la leggibilità e la comprensione dei testi, oltre che aumentare l’autorevolezza dell’informazione. 
-            
-            ### Corsivo 
-
-            Il corsivo rende più difficile la lettura del testo. Usalo solo in caso di:
-            - indicazioni bibliografiche, opere d’arte o cinematografiche;
-            - parole straniere, ma solo di uso non comune e in ambito non specialistico.
-            
-            ### Grassetto
-
-            Anche il grassetto rende più difficile la lettura del testo, quindi usalo soltanto per evidenziare parole chiave e non frasi intere. Se hai bisogno di mettere più in evidenza un testo lungo, considera l’uso di un titoletto o di elementi di interfaccia. 
-
-            ### Testo sottolineato
-
-            Non usare testo sottolineato, a meno che non si tratti di link.
-            
-            ### Allineamento
-            
-            Allinea sempre il testo a sinistra. Un testo giustificato è molto difficile da leggere.
-
-            ### Uso delle maiuscole
-
-            I testi in maiuscolo sono difficili da leggere. Usa il maiuscolo soltanto per la **prima lettera della frase (sentence case)**.
-          
-            ### Numeri
-
-            Prediligi l’uso delle cifre, soprattutto quando i numeri indicano un dato preciso (contenuti matematici, scientifici, statistici, prezzi) o devono essere ospitati in componenti di interfaccia. 
-            
-            - Usa il punto per separare le migliaia a partire dai 10 mila in su. **Esempi:** 8700, 11.800. 
-            - Per valori numerici molto alti e indicativi, scrivi “mila”, “milione” e “miliardo” in lettere. **Esempi:** 4 milioni e 325 mila persone, circa 10 mila enti.
-            - Usa la virgola per separare i decimali. **Esempio:** 2,5.
-            - Usa i numeri romani soltanto per riferimenti puntuali alle leggi e indicare i secoli. **Esempi:** Titolo V della Costituzione, XIX secolo.
-
-            ### Date 
-
-            Scrivi i giorni del mese e l’anno in cifre, mentre scrivi il mese e, se necessario, il giorno della settimana in lettere (con l’iniziale minuscola). 
-
-            **Esempi:** 25 gennaio 2018, lunedì 25 gennaio 2018
-
-            ### Orari 
-
-            Usa le cifre e separa ore e minuti con i due punti, senza spazi. 
-
-            **Esempio:** 23:59
-
-            ### Numeri di telefono
-
-            Usa sempre anche il prefisso internazionale e raggruppa le cifre separandole con degli spazi per migliorare la leggibilità. Inserisci i numeri di telefono come link attivi usando l’attributo “tel:” nel codice html.  
-
-            **Esempio:** [+39 06 123 456 78](tel:+390612345678)
-
-            ### Email 
-
-            La parola “email” si scrive senza trattini o spazi, in minuscolo. Per gli indirizzi, scrivili per esteso e inseriscili come link attivi usando l’attributo “mailto:” nel codice html.
-
-            **Esempio:** Email: [ufficio@comune.comune.it](mailto:ufficio@comune.comune.it)
-
-            ### Indirizzi
-
-            Usa le virgole per separare via (inclusiva di numero civico), CAP e città.
-
-            **Esempio:** Via Giulia 25, 00185, Roma 
-
-            ### Unità di misura
-
-            Scrivi il numero in cifre, seguito dal simbolo dell’unità di misura nel [Sistema Internazionale](https://it.wikipedia.org/wiki/Sistema_internazionale_di_unit%C3%A0_di_misura), separato da uno spazio.
-
-            **Esempi**: 3 km, 15 kg, 25 °C
-
-        - name: TextImageCta
-          title: Come scrivere le parole della PA
-          headingLevel: 2
-          noSpace: true
-          text: |
-            Abbiamo creato un glossario che indica come scrivere alcuni termini ricorrenti della Pubblica Amministrazione, inclusi nomi di istituzioni, che generano spesso dubbi di ortografia. Nella guida, trovi anche alternative più semplici da preferire a termini molto burocratici. 
-          ctas:
-          - label: "Vai alla Guida alle parole della PA" #C
-            url: "https://docs.italia.it/italia/designers-italia/writing-toolkit/" #M
-            blank: true #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        - name: TextImageCta
-          title: Adegua il tono di voce al contesto
-          headingLevel: 2
-          noSpace: true
-          text: |
-            Il rispetto di un tono di voce coerente ed empatico è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
-          ctas:
-          - label: "Vai al fondamento Tono di voce" #C
-            url: "/design-system/fondamenti/tono-di-voce/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        - name: TextImageCta
-          title: Progetta microtesti efficaci
-          headingLevel: 2
-          noSpace: true
-          text: |
-            I microtesti sono brevi porzioni di testo che guidano e accompagnano l’utente nell’interazione con un’interfaccia digitale, come messaggi di errore, notifiche ed etichette dei pulsanti. La progettazione di questi contenuti richiede accortezze aggiuntive per assicurare coesione con vari elementi di interfaccia e uniformità con con l’ecosistema di un servizio digitale. 
-          ctas:
-          - label: "Vai al fondamento Microtesti" #C
-            url: "/design-system/fondamenti/microtesti/" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+      - full: true
+        noSpace: false
+        paddingLeft: true
+        background: null
+        components:
+          - name: TextImageCta
+            title: Formatta il testo in modo coerente e accessibile
+            headingLevel: 2
+            text: |
+              Alcune piccole accortezze di formattazione e stile possono migliorare la leggibilità e la comprensione dei testi, oltre che aumentare l’autorevolezza dell’informazione. 
               
+              ### Corsivo 
 
-    - full: true
-      noSpace: false
-      paddingLeft: true
-      # title:
-      background: null
-      components:
-        - name: TextImageCta
-          title: Ricerca e testa il linguaggio del tuo servizio
-          headingLevel: 2
-          text: |
-            I contenuti dovrebbero sempre essere progettati e ottimizzati in maniera iterativa e continua. 
+              Il corsivo rende più difficile la lettura del testo. Usalo solo in caso di:
+              - indicazioni bibliografiche, opere d’arte o cinematografiche;
+              - parole straniere, ma solo di uso non comune e in ambito non specialistico.
+              
+              ### Grassetto
+
+              Anche il grassetto rende più difficile la lettura del testo, quindi usalo soltanto per evidenziare parole chiave e non frasi intere. Se hai bisogno di mettere più in evidenza un testo lungo, considera l’uso di un titoletto o di elementi di interfaccia. 
+
+              ### Testo sottolineato
+
+              Non usare testo sottolineato, a meno che non si tratti di link.
+              
+              ### Allineamento
+              
+              Allinea sempre il testo a sinistra. Un testo giustificato è molto difficile da leggere.
+
+              ### Uso delle maiuscole
+
+              I testi in maiuscolo sono difficili da leggere. Usa il maiuscolo soltanto per la **prima lettera della frase (sentence case)**.
             
-            Prima di scrivere testi, è importante **conoscere il linguaggio che gli utenti usano** in relazione a un determinato servizio. Alcune possibili attività di ricerca sono: **conversation mining** (analisi del linguaggio usato in conversazioni su social network e forum), **focus group** e **interviste utente**.
+              ### Numeri
+
+              Prediligi l’uso delle cifre, soprattutto quando i numeri indicano un dato preciso (contenuti matematici, scientifici, statistici, prezzi) o devono essere ospitati in componenti di interfaccia. 
+              
+              - Usa il punto per separare le migliaia a partire dai 10 mila in su. **Esempi:** 8700, 11.800. 
+              - Per valori numerici molto alti e indicativi, scrivi “mila”, “milione” e “miliardo” in lettere. **Esempi:** 4 milioni e 325 mila persone, circa 10 mila enti.
+              - Usa la virgola per separare i decimali. **Esempio:** 2,5.
+              - Usa i numeri romani soltanto per riferimenti puntuali alle leggi e indicare i secoli. **Esempi:** Titolo V della Costituzione, XIX secolo.
+
+              ### Date 
+
+              Scrivi i giorni del mese e l’anno in cifre, mentre scrivi il mese e, se necessario, il giorno della settimana in lettere (con l’iniziale minuscola). 
+
+              **Esempi:** `25 gennaio 2018, lunedì 25 gennaio 2018`
+
+              ### Orari 
+
+              Usa le cifre e separa ore e minuti con i due punti, senza spazi. 
+
+              **Esempio:** `23:59`
+
+              ### Numeri di telefono
+
+              Usa sempre anche il prefisso internazionale e raggruppa le cifre separandole con degli spazi per migliorare la leggibilità. Inserisci i numeri di telefono come link attivi usando l’attributo “tel:” nel codice html.  
+
+              **Esempio:** [+39 06 123 456 78](tel:+390612345678)
+
+              ### Email 
+
+              La parola “email” si scrive senza trattini o spazi, in minuscolo. Per gli indirizzi, scrivili per esteso e inseriscili come link attivi usando l’attributo “mailto:” nel codice html.
+
+              **Esempio:** Email: [ufficio@comune.comune.it](mailto:ufficio@comune.comune.it)
+
+              ### Indirizzi
+
+              Usa le virgole per separare via (inclusiva di numero civico), CAP e città.
+
+              **Esempio:** Via Giulia 25, 00185, Roma 
+
+              ### Unità di misura
+
+              Scrivi il numero in cifre, seguito dal simbolo dell’unità di misura nel [Sistema Internazionale](https://it.wikipedia.org/wiki/Sistema_internazionale_di_unit%C3%A0_di_misura), separato da uno spazio.
+
+              **Esempi**: 3 km, 15 kg, 25 °C
+
+          - name: TextImageCta
+            title: Come scrivere le parole della PA
+            headingLevel: 2
+            noSpace: true
+            text: |
+              Abbiamo creato un glossario che indica come scrivere alcuni termini ricorrenti della Pubblica Amministrazione, inclusi nomi di istituzioni, che generano spesso dubbi di ortografia. Nella guida, trovi anche alternative più semplici da preferire a termini molto burocratici. 
+            ctas:
+            - label: "Vai alla Guida alle parole della PA" #C
+              url: "https://docs.italia.it/italia/designers-italia/writing-toolkit/" #M
+              blank: true #M #C true if new tab for external links
             
-            Per valutare se i testi progettati corrispondano al livello di comprensione, al tipo di linguaggio e alle aspettative degli utenti, puoi svolgere principalmente **[test di usabilità](/risorse-per-progettare/validare/test-di-usabilita/)**, ma anche **test di leggibilità** (tramite formula di Flesch-Vacca e l’indice Gulpease), **test di comprensione**, **cloze test** (o cloze deletion test), **test dell'evidenziatore** e **test A/B**.
+              icon:
+                icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
+          - name: TextImageCta
+            title: Adegua il tono di voce al contesto
+            headingLevel: 2
+            noSpace: true
+            text: |
+              Il rispetto di un tono di voce coerente ed empatico è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
+            ctas:
+            - label: "Vai al fondamento Tono di voce" #C
+              url: "/design-system/fondamenti/tono-di-voce/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+
+          - name: TextImageCta
+            title: Progetta microtesti efficaci
+            headingLevel: 2
+            noSpace: true
+            text: |
+              I microtesti sono brevi porzioni di testo che guidano e accompagnano l’utente nell’interazione con un’interfaccia digitale, come messaggi di errore, notifiche ed etichette dei pulsanti. La progettazione di questi contenuti richiede accortezze aggiuntive per assicurare coesione con vari elementi di interfaccia e uniformità con con l’ecosistema di un servizio digitale. 
+            ctas:
+            - label: "Vai al fondamento Microtesti" #C
+              url: "/design-system/fondamenti/microtesti/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
+                
+      - full: true
+        noSpace: false
+        paddingLeft: true
+        # title:
+        background: null
+        components:
+          - name: TextImageCta
+            title: Ricerca e testa il linguaggio del tuo servizio
+            headingLevel: 2
+            text: |
+              I contenuti dovrebbero sempre essere progettati e ottimizzati in maniera iterativa e continua. 
+              
+              Prima di scrivere testi, è importante **conoscere il linguaggio che gli utenti usano** in relazione a un determinato servizio. Alcune possibili attività di ricerca sono: **conversation mining** (analisi del linguaggio usato in conversazioni su social network e forum), **focus group** e **interviste utente**.
+              
+              Per valutare se i testi progettati corrispondano al livello di comprensione, al tipo di linguaggio e alle aspettative degli utenti, puoi svolgere principalmente **[test di usabilità](/risorse-per-progettare/validare/test-di-usabilita/)**, ma anche **test di leggibilità** (tramite formula di Flesch-Vacca e l’indice Gulpease), **test di comprensione**, **cloze test** (o cloze deletion test), **test dell'evidenziatore** e **test A/B**.
