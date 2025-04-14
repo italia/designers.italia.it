@@ -122,9 +122,14 @@ components:
             I microtesti efficaci sono **focalizzati**, **contestuali** e **guidano l'utente verso l'obiettivo**. Ogni parola dovrebbe aiutare l’utente a compiere un’unica azione in modo semplice, chiaro e sicuro. Aggiungere informazioni non pertinenti rischia di creare confusione, rallentare il flusso e aumentare il carico cognitivo. **Orienta quindi l'utente sempre verso l’azione primaria**, segnalando chiaramente come secondarie o collaterali altre possibilità di interazione.
              
         # 2
-        - name: Table
+        - name: TextImageCta
           title: Usa azioni specifiche
-          noSpace: false
+          noSpace: true
+          text: |
+            **Inizia le call-to-action con un verbo** che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione.
+            
+        - name: Table
+          noSpace: true
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -142,14 +147,27 @@ components:
               - text: Aggiungi un nuovo provider
               - text: Nuovo provider
 
-        - name: TextImageCta
-          text: |
-            Le call-to-action dovrebbero **iniziare con un verbo** che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione.
-
-
         # 3
-        - name: Table
+
+        - name: TextImageCta
           title: Usa un linguaggio semplice e conciso
+          text: |
+            **Vai dritto al punto** ed **evita il più possibile nominalizzazioni, negazioni e forme passive**: rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre preferibile ridurre la quantità di testo piuttosto che incrementarla.
+          noSpace: true
+          ctas:
+          - label: Approfondisci il tema nel fondamento Linguaggio #C
+            url: "/design-system/fondamenti/linguaggio" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        - name: Table
+          noSpace: true
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -170,20 +188,6 @@ components:
               - text: Hai salvato il documento. Vai alla sezione "..." per visualizzarlo
               - text: Il documento è stato salvato con successo nella sezione "..."
 
-        - name: TextImageCta
-          text: |
-            **Vai dritto al punto** ed **evita il più possibile nominalizzazioni, negazioni e forme passive**: rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre preferibile ridurre la quantità di testo piuttosto che incrementarla.
-          ctas:
-          - label: Approfondisci il tema nel fondamento Linguaggio #C
-            url: "/design-system/fondamenti/linguaggio" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
 
         #4   
         - name: Table
