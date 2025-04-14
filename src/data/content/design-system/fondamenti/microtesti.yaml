@@ -115,7 +115,7 @@ components:
         - name: TextImageCta
           title: Scrivi per facilitare e orientare l’interazione
           headingLevel: 2
-          noSpace: true
+          noSpace: false
           text: |
             ### Tieni presente l'obiettivo dell'utente
             
@@ -124,7 +124,7 @@ components:
         # 2
         - name: TextImageCta
           title: Usa azioni specifiche
-          noSpace: true
+          noSpace: false
           text: |
             **Inizia le call-to-action con un verbo** che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione.
             
@@ -153,7 +153,7 @@ components:
           title: Usa un linguaggio semplice e conciso
           text: |
             **Vai dritto al punto** ed **evita il più possibile nominalizzazioni, negazioni e forme passive**: rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre preferibile ridurre la quantità di testo piuttosto che incrementarla.
-          noSpace: true
+          noSpace: false
           ctas:
           - label: Approfondisci il tema nel fondamento Linguaggio #C
             url: "/design-system/fondamenti/linguaggio" #M
@@ -190,8 +190,26 @@ components:
 
 
         #4   
-        - name: Table
+
+        - name: TextImageCta
           title: Usa un tono di voce appropriato al contesto
+          noSpace: false
+          text: |
+            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce empatica. Quando progetti i microtesti, **tieni conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente** che interagisce con l’interfaccia e adatta il tono al contesto.
+          ctas:
+          - label: Approfondisci il tema nel fondamento Tono di voce #C
+            url: "/design-system/fondamenti/tono-di-voce" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        - name: Table
+          noSpace: true
           responsive: table-responsive-md
           addonClasses: mb-5 table-img-responsive
           head:
@@ -208,22 +226,6 @@ components:
                         
               - text: "![È ora di pagare! Hai ricevuto una multa di 60 euro perchè hai parcheggiato dove non si poteva. Se non paghi entro il 12 gennaio 2025 ti addebiteremo costi aggiuntivi. Paga adesso.](/images/design-system/fondamenti/microtesti-tov-ko.png)
                       Tono di voce colpevolizzante"
-
-        #5
-        - name: TextImageCta
-          text: |
-            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce empatica. Quando progetti i microtesti, **tieni conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente** che interagisce con l’interfaccia e adatta il tono al contesto.
-          ctas:
-          - label: Approfondisci il tema nel fondamento Tono di voce #C
-            url: "/design-system/fondamenti/tono-di-voce" #M
-            blank: false #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
 
         #6
         - name: TextImageCta
