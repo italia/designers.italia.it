@@ -121,8 +121,15 @@ components:
           title: Usa il tono delle istituzioni in modo appropriato
           headingLevel: 2
 
-        - name: Table
+        #1
+        - name: TextImageCta
           title: Sii autorevole senza aggiungere complessità
+          noSpace: true
+          text: |
+            **Usa un tono istituzionale**, diretto e adatto a un contesto amministrativo, ma **senza abusare di termini burocratici non necessari**. Anche quando ti riferisci a norme e prescrizioni, abbi cura di citarle con precisione pur parlando in modo chiaro, con un lessico corretto ma semplice.
+
+        - name: Table
+          noSpace: true
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -143,12 +150,15 @@ components:
               - text: |
                   Tono informale: "Informazioni sbagliate nella tua scheda anagrafica? Falle correggere con la richiesta di rettifica."
 
+        #2
         - name: TextImageCta
+          title: Rivolgiti a chi legge con il "tu"
+          noSpace: true
           text: |
-            **Usa in modo appropriato il linguaggio delle istituzioni**, senza abusare di termini burocratici non necessari. Anche quando ti riferisci a norme e prescrizioni, abbi cura di citarle con precisione pur parlando in modo chiaro, con un lessico corretto ma semplice.
+            **Parla all'interlocutore in modo diretto usando il "tu”**, evitando tanto il "lei" e i formalismi quanto la forma impersonale, perché complicano la costruzione del testo.
 
         - name: Table
-          title: Rivolgiti a chi legge con il "tu"
+          noSpace: true
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -165,13 +175,14 @@ components:
               - text: |
                   Tono impersonale: "Conformemente alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design forniscono indicazioni che devono essere obbligatoriamente rispettate per la realizzazione di siti internet e servizi digitali della PA, quelle opzionali e quelle per cui si rende necessaria un’attenta valutazione."
 
+        #3
         - name: TextImageCta
+          title: Rispetta le differenze
           text: |
-            **Rivolgiti a chi legge con il “tu”**, evitando tanto il "lei" e i formalismi quanto la forma impersonale, perché complicano la costruzione del testo.
-
-
+            **Non rafforzare stereotipi** di genere, razzisti o abilisti e di non discriminare in base all'età.
+            
         - name: Table
-          title:  Rispetta le differenze
+          noSpace: true
           responsive: table-responsive-md
           addonClasses: fixed
           head:
@@ -189,9 +200,6 @@ components:
               - text: “La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici.”
               - text: “La norma a cui riferirti per favorire e semplificare l'accesso dei disabili agli strumenti informatici.”
 
-        - name: TextImageCta
-          text: |
-            **Abbi cura di non rafforzare stereotipi** di genere, razzisti o abilisti e di non discriminare in base all'età.
 
     - full: true
       noSpace: false
