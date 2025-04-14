@@ -1,0 +1,184 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Panoramica fondamenti
+  description: Le basi di cui hai bisogno per costruire un servizio pubblico senza ripartire da zero. Impara dal lavoro degli altri. Riduci costi e margini di errore, guadagnando qualità
+  image: https://designers.italia.it/images/design-system/fondamenti.jpg
+  canonical: null
+  pathname: /design-system/fondamenti/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: light
+    title: Fondamenti
+    column: true
+    subtitle: Le basi di cui hai bisogno per costruire un servizio pubblico senza ripartire da zero. Impara dal lavoro degli altri. Riduci costi e margini di errore, guadagnando qualità
+    tag:
+      label: Design system #C
+      addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: |
+      Tra i fondamenti troverai gli strumenti per impostare layout con le giuste dimensioni e proporzioni, stile coerente in bordi, colori e ombre, e contenuti  di facile comprensione. Il tutto garantendo qualità e accessibilità al tuo sito o servizio.
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      column: true
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia, Sviluppo interfaccia, Accessibilità, Contenuti e linguaggio]
+
+
+  # /////////// COMPONENT LIST FROM HERE ////////////
+  filterCards:
+    id: esplora
+    title: Esplora i fondamenti
+    showTags: false
+    noSpace: true
+    paddingX: true
+    col2: true
+    cards:
+      - title: Princìpi e intenzioni
+        url: "principi-e-intenzioni/"
+        fullHeight: true
+        rounded: true
+        text: "Il design system del Paese, open source e in continuo aggiornamento, rende la progettazione di servizi pubblici digitali più efficiente. Ecco come contribuisce a una PA più vicina, semplice e utile per le persone e come ne supportiamo l'adozione."
+
+      - title: "Identità"
+        url: "identita/"
+        fullHeight: true
+        rounded: true
+        text: "Seguire un sistema integrato di identità per lo stile e l'esperienza d'uso dei servizi digitali pubblici ne migliora l'esperienza, li rende facilmente riconoscibili e aumenta la fiducia nelle persone che li utilizzano."
+
+      - title: Accessibilità
+        url: "accessibilita/"
+        fullHeight: true
+        rounded: true
+        text: "Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno."
+
+      - title: Design tokens
+        url: "design-tokens/"
+        fullHeight: true
+        rounded: true
+        text: "Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali."
+
+      - title: Contenuti
+        url: "contenuti/"
+        fullHeight: true
+        rounded: true
+        text: "I contenuti sono un elemento cruciale dell’esperienza utente di un sito o servizio digitale. Scopri come strutturare e presentare i contenuti in modo efficace, accessibile e sulla base delle esigenze informative delle persone."
+
+      - title: Linguaggio
+        url: "linguaggio/"
+        fullHeight: true
+        rounded: true
+        text: "Il linguaggio influenza direttamente l'esperienza e la comprensione dei servizi pubblici digitali da parte delle persone. Scopri come scrivere testi chiari, inclusivi, efficaci e formattati in modo accessibile e consistente."
+  
+      - title: Microtesti
+        url: "microtesti/"
+        fullHeight: true
+        rounded: true
+        text: "I testi di interfaccia rendono l'interazione fluida e coerente con l'ecosistema di un servizio digitale. Scopri come scrivere microtesti utili, che facilitano il raggiungimento degli obiettivi e che ispirano fiducia."
+
+      - title: Tono di voce
+        url: "tono-di-voce/"
+        fullHeight: true
+        rounded: true
+        text: "Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Scopri come dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti."
+
+      - title: Versionamento
+        url: "versionamento/"
+        fullHeight: true
+        rounded: true
+        text: "Usiamo il versionamento semantico su ogni risorsa del design system del Paese."
+
+      - title: Colori
+        url: "colori/"
+        fullHeight: true
+        rounded: true
+        text: "Usiamo un sistema di colori per garantire coerenza visiva a siti e servizi e orientare le persone verso azioni e informazioni importanti, rendendo i contenuti accessibili a tutti."
+
+      - title: Tipografia
+        url: "tipografia/"
+        fullHeight: true
+        rounded: true
+        text: "I caratteri, gli stili e le regole tipografiche da usare per presentare i contenuti di un'interfaccia digitale in modo chiaro, leggibile ed efficace."
+
+      - title: Griglia
+        url: "griglia/"
+        fullHeight: true
+        rounded: true
+        text: "La griglia di impaginazione rappresenta la struttura invisibile che permette di organizzare i contenuti della pagina."
+  
+      - title: Spaziature
+        url: "spaziature/"
+        fullHeight: true
+        rounded: true
+        text: "Le spaziature hanno il ruolo fondamentale di creare un layout dalla struttura armonica e di definire gli intervalli di spazio fra gli elementi della pagina. Un uso coerente ed equilibrato delle spaziature contribuisce a migliorare la leggibilità, l'usabilità e l'aspetto generale di un'interfaccia."
+ 
+      - title: Ombre
+        url: "ombre/"
+        fullHeight: true
+        rounded: true
+        text: "Le ombre aggiungono profondità, contrasto ed enfasi visiva ai componenti, contribuendo a migliorare l'usabilità e l'aspetto generale dell'interfaccia."
+        
+      - title: Bordi e raggi
+        url: "bordi-e-raggi/"
+        fullHeight: true
+        rounded: true
+        text: "I bordi e i raggi sono elementi fondamentali che influenzano l'aspetto visivo degli oggetti e componenti di un'interfaccia."
+
+      - title: Dimensioni
+        url: "dimensioni/"
+        fullHeight: true
+        rounded: true
+        text: "Le misure che definiscono lo spazio occupato dagli elementi di design all'interno di un'interfaccia."
+
+      - title: Proporzioni media
+        url: "proporzioni-media/"
+        fullHeight: true
+        rounded: true
+        text: "Le proporzioni delle immagini indicano il rapporto tra larghezza e altezza. Quando ridimensioni un'immagine, è essenziale mantenere questo rapporto per prevenire distorsioni."
+
+      - title: Icone
+        url: "icone/"
+        fullHeight: true
+        rounded: true
+        text: "Le icone sono elementi visivi che contengono simboli: sono cruciali per un'interfaccia di qualità e hanno lo scopo di veicolare informazioni agli utenti in modo rapido e immediato."
+
+  # /////////// EDITORIAL CONTENTS FROM HERE ////////////
+  sectionsEditorial:
+  - fullColumn: true
+    noSpace: true
+    components:
+      - name: ImgFull
+        img: /images/design-system/fondamenti.jpg
+        alt: ""

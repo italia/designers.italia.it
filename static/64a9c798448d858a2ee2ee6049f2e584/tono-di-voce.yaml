@@ -1,0 +1,271 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Tono di voce
+  description: "Le indicazioni per dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti"
+  canonical: null
+  pathname: /design-system/fondamenti/tono-di-voce/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Tono di voce
+    column: true
+    subtitle: "Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Scopri come dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti."
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+   # pretext:
+   #   icon:
+   #     icon: sprites.svg#it-info-circle
+   #     size: sm
+   #   text: In breve
+   # text: |
+   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare l’interazione dell’utente con il servizio #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione contenuti,Linguaggio]
+
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Dai voce a una Pubblica Amministrazione “umana”
+      text: Prima di essere “istituzione”, la PA è fatta di persone e parla alle persone con l’obiettivo di essere vicina, semplice e utile
+      background: null
+      components:
+        - name: TextImageCta
+          noSpace: true
+          # title:
+          text: |
+            Il tono di voce (di seguito anche abbreviato in “ToV”) è un elemento chiave della comunicazione: **rappresenta il modo in cui vengono trasmessi i messaggi** ed **esprime la visione e la personalità di chi parla**. Un tono di voce coerente, quindi, è indispensabile nella progettazione di contenuti di qualità.
+
+            Quando progetti i contenuti per un sito o un servizio digitale pubblico, **sii coerente nel mettere le persone al centro** della tua comunicazione: in altre parole, scrivi con l’obiettivo primario di farti capire ed essere efficace, tenendo conto degli stati d’animo di chi legge.
+
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      background: null
+      components:
+        - name: TextImageCta
+          title: Usa il tono delle istituzioni in modo appropriato
+          headingLevel: 2
+
+        #1
+        - name: TextImageCta
+          title: Sii autorevole senza aggiungere complessità
+          noSpace: true
+          text: |
+            **Usa un tono istituzionale**, diretto e adatto a un contesto amministrativo, ma **senza abusare di termini burocratici non necessari**. Anche quando ti riferisci a norme e prescrizioni, abbi cura di citarle con precisione pur parlando in modo chiaro, con un lessico corretto ma semplice.
+
+        - name: Table
+          noSpace: true
+          responsive: table-responsive-md
+          addonClasses: fixed mb-5
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-success fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-danger fw-bold
+          rows:
+            - cols:
+              - text: |
+                  Tono istituzionale: "Richiedi al comune la rettifica dei dati inesatti presenti sulla scheda anagrafica."
+              - text: |
+                  Tono burocratico: "Il servizio per inviare una richiesta di rettifica dei dati anagrafici in caso di errori sulle informazioni presenti nella scheda anagrafica, dovuti ad errori materiali o ad errate trascrizioni rispetto a quanto riportato nei documenti in proprio possesso."
+            - cols:
+              - text: null
+              - text: |
+                  Tono informale: "Informazioni sbagliate nella tua scheda anagrafica? Falle correggere con la richiesta di rettifica."
+
+        #2
+        - name: TextImageCta
+          title: Rivolgiti a chi legge con il "tu"
+          noSpace: true
+          text: |
+            **Parla all'interlocutore in modo diretto usando il "tu”**, evitando tanto il "lei" e i formalismi quanto la forma impersonale, perché complicano la costruzione del testo.
+
+        - name: Table
+          noSpace: true
+          responsive: table-responsive-md
+          addonClasses: fixed mb-5
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-success fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-danger fw-bold
+          rows:
+            - cols:
+              - text: |
+                  Tono diretto: "In base alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design indicano le regole che hai l'obbligo di rispettare in ogni fornitura di siti e servizi digitali per la PA, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle facoltative."
+              - text: |
+                  Tono impersonale: "Conformemente alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design forniscono indicazioni che devono essere obbligatoriamente rispettate per la realizzazione di siti internet e servizi digitali della PA, quelle opzionali e quelle per cui si rende necessaria un’attenta valutazione."
+
+        #3
+        - name: TextImageCta
+          title: Rispetta le differenze
+          noSpace: true
+          text: |
+            **Non rafforzare stereotipi** di genere, razzisti, abilisti o legati all'età.
+            
+        - name: Table
+          noSpace: true
+          responsive: table-responsive-md
+          addonClasses: fixed mb-5
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-success fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-danger fw-bold
+          rows:
+            - cols:
+              - text: “La documentazione ufficiale che ti guida nella progettazione per la PA, mettendo le persone al centro.”
+              - text: “La documentazione ufficiale che ti guida nella progettazione per la PA, mettendo i cittadini al centro.”
+            - cols:
+              - text: “La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici.”
+              - text: “La norma a cui riferirti per favorire e semplificare l'accesso dei disabili agli strumenti informatici.”
+
+
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      background: null
+      components:
+
+        - name: TextImageCta
+          title: Modula il tono di voce in base al contesto
+          headingLevel: 2
+          text: |
+            Il tono di voce cambia a seconda del contesto, di chi riceve il messaggio e delle emozioni associate al momento.
+
+        - name: Table
+          title: Esempi
+          responsive: table-responsive-md
+          addonClasses:
+          head:
+            - text: Situazione
+            - text: Emozioni dell'utente
+            - text: Tono appropriato
+            - text: Esempio
+          rows:
+            - cols:
+              - text: Fine di una richiesta
+              - text: Sollievo, bisogno di conferma
+              - text: Motivante, positivo, incoraggiante
+              - text: "Richiesta inviata! Riceverai un’email di conferma con tutti i dettagli. Puoi seguire lo stato della tua pratica nella tua area personale."
+            - cols:
+              - text: Assistenza o richiesta informazioni
+              - text: Smarrimento, bisogno di supporto, urgenza
+              - text: Empatico, disponibile
+              - text: "Consulta le domande frequenti o contatta un operatore."
+            - cols:
+              - text: Prenotazione appuntamento
+              - text: Impazienza, bisogno di controllo, desiderio di efficienza
+              - text: Cortese, orientato al servizio
+              - text: "Scegli data e orario tra quelli disponibili."
+            - cols:
+              - text: Pagamento di una multa
+              - text: Fastidio, frustrazione, urgenza
+              - text: Chiaro, diretto, non colpevolizzante
+              - text: "Hai ricevuto una multa? Puoi pagarla online in modo semplice e sicuro."
+            - cols:
+              - text: Promemoria delle scadenze
+              - text: Preoccupazione, ansia
+              - text: Conciso, istruttivo, orientato all’azione
+              - text: "Il pagamento della TARI scade il 15 aprile."
+            - cols:
+              - text: Registrazione per accedere a un servizio
+              - text: Diffidenza, paura per la privacy, incertezza sulla sicurezza
+              - text: Trasparente, rassicurante, affidabile
+              - text: "Ti chiediamo alcune informazioni personali per offrirti un servizio su misura e verificare che tu ne abbia diritto. Usiamo solo canali protetti e non condivideremo mai i tuoi dati con terzi senza il tuo consenso."
+            - cols:
+              - text: Recupero password
+              - text: Frustrazione, paura di non riuscire ad accedere, senso di colpa o confusione
+              - text: Empatico, rassicurante, semplice
+              - text: "Hai dimenticato la password? Puoi recuperarla in pochi semplici passaggi." 
+            - cols:
+              - text: Pagamento non andato a buon fine
+              - text: Frustrazione, confusione, ansia di dover rifare tutto, paura di doppio addebito
+              - text: Rassicurante, professionale, proattivo
+              - text: "Il pagamento non è andato a buon fine e non ti è stato addebitato alcun importo. Puoi riprovare subito oppure, se preferisci, salvare i tuoi dati e completare il pagamento più tardi."  
+            - cols:
+              - text: Denuncia di un decesso
+              - text: Dolore, disorientamento, bisogno di assistenza
+              - text: Di supporto, solidale, empatico
+              - text: "Ci dispiace per l’accaduto. Siamo a tua disposizione per informarti, guidarti e supportarti nella procedura."
