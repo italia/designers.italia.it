@@ -1,0 +1,120 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Accessibility Days 2025 – Il design system .italia"
+  description: La responsabilità di progettare interfacce pubbliche coerenti e accessibili continua
+  image: null
+  canonical: null
+  pathname: /community/eventi/20250515-accessibility-2025-days-il-design-system-italia/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Accessibility Days 2025 – Il design system .italia'
+    subtitle: La responsabilità di progettare interfacce pubbliche coerenti e accessibili continua
+    tag:
+        label: Talk
+        addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Accessibilità, Design system, Manuale operativo]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Istituto dei Ciechi di Milano - Via Vivaio, 7, Milano 
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "15 maggio 2025, 14.15–15.00"
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Su registrazione, in presenza o in streaming" #C
+            url: 
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+             Daniele Tabellini e Francesco Improta, UI/UX designer del team del Dipartimento per la trasformazione digitale, presenteranno lo stato dell’arte del design system del Paese, ovvero le risorse per realizzare interfacce, già utilizzate in oltre 10.000 siti e servizi della Pubblica Amministrazione.    
+
+Il confronto con Fabrizio Caccavello, esperto di accessibilità, si concentrerà su tutti i recenti miglioramenti di accessibilità della versione 1 di .italia e le integrazioni fatte al Manuale operativo di design, strumento a supporto dell’implementazione delle Linee guida di design.  
+
+“Accessibility Days” è una manifestazione gratuita che si svolge in Italia ogni anno, il cui scopo principale è di creare consapevolezza rispetto alla progettazione 
+e all’utilizzo di tecnologie digitali in modo che siano fruibili da tutte e tutti, a prescindere dalle condizioni personali e contestuali 
+che possano inficiare l'interazione con gli strumenti informatici. Coinvolge sviluppatori, progettisti, maker e addetti alla produzione di contenuti di una varietà 
+di settori, tra cui quello pubblico.
+
+          ctas:
+          - label: Registrati
+            url: 
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
