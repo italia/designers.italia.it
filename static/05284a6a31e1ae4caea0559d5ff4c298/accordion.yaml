@@ -1,27 +1,26 @@
 metadata:
-  json: bsi/componenti/video-player.json
+  json: bsi/componenti/accordion.json
   template:
     name: design-system-component
 seo:
-  name: Video player - Designers Italia
+  name: Accordion - Designers Italia
   description: >-
-    Lettore per mostrare video sul proprio sito o incorporarli da piattaforme
-    terze rispettando privacy e accessibilità.
-  image: null
+    Sezione di contenuti espandibile e richiudibile per ottimizzare spazio su
+    pagina e creare collegamenti con contenuti correlati.
   canonical: null
-  pathname: /design-system/componenti/video-player/
+  pathname: /design-system/componenti/accordion/
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Video player
+    title: Accordion
+    column: true
+    subtitle: >-
+      Sezione di contenuti espandibile e richiudibile per ottimizzare spazio su
+      pagina e creare collegamenti con contenuti correlati
     tag:
       label: Componenti
       addonClasses: mt-3 text-uppercase
-    column: true
-    subtitle: >-
-      Lettore per mostrare video sul proprio sito o incorporarli da piattaforme
-      terze rispettando privacy e accessibilità
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -36,7 +35,6 @@ components:
         color: secondary
       tagsDesignSystem:
         - Contenuti
-        - Media
   tab:
     - full: true
 tabs:
@@ -45,7 +43,7 @@ tabs:
       id: preview-use
       title: Anteprima
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/video-player/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
       accordionOpen: false
       accordionShow: false
     sectionsEditorial:
@@ -58,19 +56,22 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Il componente Video player è utile per mostrare contenuti video
-              nelle pagine del proprio sito. Si può usare per video caricati su
-              un hosting proprio oppure per video provenienti da piattaforme di
-              terze parti, utilizzando la variante con overlay di consenso per
-              la privacy.   
+              Il componente Accordion permette di espandere e collassare delle
+              sezioni con contenuti molto lunghi e non principali.
+              L’intestazione delle sezioni dà una panoramica dei contenuti e
+              permette all’utente di scegliere quali leggere.
 
 
-              I video possono essere strumenti preziosi sia dal punto di vista
-              della comunicazione che dell'istruzione. È però importante
-              valutare e curare gli aspetti di privacy e accessibilità dei
-              contenuti prima di pubblicarli, di preferenza tenendo conto del
-              parere di esperti di settore e responsabili della privacy del
-              proprio ente o progetto.    
+              ### Alternative a questo componente
+
+              - **[Tabs](/design-system/componenti/tabs/)**: mostrano i
+              contenuti senza spingere altre sezioni verso il fondo della pagina
+              e sono utili quando l’utente deve passare velocemente da una
+              sezione all’altra.
+
+              - **[Collapse](/design-system/componenti/collapse/)**: visivamente
+              meno prominente, utile quando ci sono una o due sezioni di
+              contenuti brevi e meno importanti.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -80,55 +81,43 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: >
-              - Collega nei parametri del video player i sottotitoli in formato
-              [WebVTT](https://www.w3.org/TR/webvtt1/).
+              - Usa un accordion per ridurre lo scorrimento di contenuti
+              testuali lunghi e non cruciali, soprattutto su mobile.
 
-              - Inserisci la trascrizione o un link a questa nello spazio
-              dedicato.
+              - Usa il componente per dare un’anteprima di contenuti correlati
+              tra loro.
 
-              - Implementa il meccanismo di gestione overlay di consenso ogni
-              volta che usi video provenienti da piattaforme di terze parti (ad
-              esempio YouTube). 
+              - Organizza e collega contenuti simili che si trovano su altre
+              pagine.
+
+              - Permetti all’utente di mostrare o nascondere contenuti che per
+              lui rilevanti grazie alle interazioni per espandere o collassare
+              l'accordion.
 
 
               ### Attenzione a
 
-              - Non forzare il player in modalità "auto-play", ma lascia
-              all'utente la scelta di iniziare, mettere in pausa o interrompere
-              la visione.
+              - Non nascondere in un accordion informazioni importanti che
+              devono essere lette dagli utenti.
 
-              - Ottimizza i video per lo streaming se li carichi nel tuo spazio
-              hosting e non in una piattaforma dedicata.   
+              - Non usare l’accordion su pagine che gli utenti potrebbero avere
+              bisogno di stampare.
 
-              - Se utilizzi video provenienti da piattaforme di terze parti
-              dovrai collegare la tua cookie policy nel meccanismo di overlay di
-              consenso, aggiornare la stessa cookie policy con l'aiuto del
-              responsabile del trattamento dati del tuo ente e implementare un
-              meccanismo per la revoca del consenso, simile ad esempio a quello
-              implementato su questo sito designers.italia.it. 
+              - Non usare l’accordion per contenuti molto articolati
+              graficamente, ad esempio con immagini e icone.
 
 
-              ### Buone pratiche per i contenuti
+              ### Buone pratiche sui contenuti
 
-              - Mostra video che rispondano a bisogni dell'utente, ad esempio
-              semplificando l'accesso a informazioni o fornendo istruzioni su
-              come svolgere attività.
+              - I titoli delle sezioni dell’accordion devono essere il più brevi
+              possibile, rimanendo comunque chiari, descrittivi e specifici
+              rispetto al contenuto della sezione.
 
-              - Il contenuto video non dovrebbe essere usato come unica modalità
-              per veicolare informazioni salienti nell'ambito del sito o
-              servizio.
+              - Usa per ogni titolo un heading di livello appropriato
+              all'architettura dell'informazione della pagina.
 
-              - Se il video è uno dei contenuti predominanti della pagina, abbi
-              cura di associargli un titolo e/o una descrizione o testo breve
-              per offrire agli utenti informazioni di contesto preliminari alla
-              visione.
-
-              - Ti ricordiamo che i soli sottotitoli generati in automatico da
-              una piattaforma non sono sufficienti, perché è necessario che sia
-              un umano a correggerli o integrarli.
-
-              - Collega un'immagine di anteprima che anticipi il video in attesa
-              del caricamento e/o del consenso. 
+              - Puoi utilizzare paragrafi per dividere il contenuto di sezione,
+              e includere sottotitoli per agevolare la leggibilità.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -230,7 +219,7 @@ tabs:
                       label: Scheda documentazione
                       blank: true
                       url: >-
-                        https://italia.github.io/bootstrap-italia/docs/componenti/video-player/
+                        https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
                         icon: sprites.svg#it-external-link
@@ -239,10 +228,12 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Non presente
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/story/documentazione-componenti-accordion--accordion
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -252,10 +243,12 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Non presente
-                      addonClasses: neutral-2-bg text-secondary
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/collapse
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -297,96 +290,38 @@ tabs:
             headingLevel: 2
           - name: ImgFull
             isDSPreview: true
-            img: /images/design-system/componenti/videoplayer-anatomy.png
-            alt: Gli elementi che compongono il Video player
+            img: /images/design-system/componenti/accordion-righticon-anatomy.png
+            alt: Elementi accordion con icona a destra
           - name: TextImageCta
             noSpace: true
             text: >
-              Il video player completo è composto da quattro elementi
-              principali:
+              Nell'esempio in immagine un accordion con tre intestazioni,
+              composto dai seguenti elementi principali:
 
 
-              1. **spazio video**, di solito in formato 16:9 o 4:3;
+              1. **intestazione** dell'elemento aperto, con icona `chevron` a
+              destra che ne mostra lo stato di apertura, qui mostrata la
+              variante con sfondo attivo;
 
-              2. **pulsante play**, visibile in stato iniziale di attesa comando
-              dall'utente;
+              2. **contenuto** dell'elemento aperto;
 
-              3. **barra di controllo**, barra di controllo visibile durante la
-              riproduzione, contiene tutti i controlli come play/pausa, volume,
-              timeline, sottotitoli, schermo intero;
+              3. **separatore** tra gli elementi;
 
-              4. **trascrizione**, spazio predisposto per ospitare la
-              trascrizione dei dialoghi o l'eventuale link a dove si trova.
+              4. **intestazioni non aperte**, con icona `chevron` a destra che
+              ne mostra lo stato chiuso.
 
 
-              ### Barra di controllo
+              ### Variante con icona a sinistra
           - name: ImgFull
             isDSPreview: true
-            img: >-
-              /images/design-system/componenti/videoplayer-controlbar-anatomy.png
-            alt: Gli elementi che compongono la barra di controllo del Video player
-          - name: TextImageCta
-            noSpace: true
-            text: >
-              La barra di controllo del video player è composta da: 
-
-
-              1. **contenitore**, definisce un colore di fondo con il colore di
-              brand, può essere leggermente trasparente per non coprire
-              totalmente il video sottostante;
-
-              2. **pulsante play/pausa**, controlla la riproduzione;
-
-              3. **pulsante volume ed eventuale slider volume**, controlla il
-              volume audio (on/off) e può essere affiancato da uno slider per
-              controllare il livello di volume audio;
-
-              4. **timeline del video e indicatore numerico tempo**, indica lo
-              stato di progress della riproduzione;
-
-              5. **pulsante capitoli**, opzionale, da accesso all'indice dei
-              capitoli se presente;
-
-              6. **pulsante sottotitoli**, opzionale, da accesso all'indice dei
-              sottotitoli se presenti in più lingue, e funziona come pulsante
-              on/off se in una sola lingua; 
-
-              7. **pulsante lingue audio**, opzionale, da accesso all'indice
-              delle tracce audio se presenti in più lingue; 
-
-              8. **pulsante schermo intero**, attiva la modalità riproduzione a
-              schermo intero del dispositivo. 
-
-
-              ### Overlay di consenso
-          - name: ImgFull
-            isDSPreview: true
-            img: >-
-              /images/design-system/componenti/videoplayer-consentoverlay-anatomy.png
-            alt: >-
-              Gli elementi che compongono l'overlay di consenso per il Video
-              player
+            img: /images/design-system/componenti/accordion-lefticon-anatomy.png
+            alt: Elementi accordion con icona a sinistra
           - name: TextImageCta
             noSpace: false
             text: >
-              L'overlay di consenso, attivabile nel caso di riproduzione di
-              video da piattaforme di terze parti, è composto da:
-
-
-              1. **fondale**, fondo colorato nel colore di branding con leggera
-              trasparenza, a coprire l'intera area del Video player;
-
-              2. **icona video**;
-
-              3. **descrizione**, testo che spiega la CTA che segue e invita
-              alla consultazione della Cookie policy;
-
-              4. **opzione ricorda per tutti i video**, opzionale, attiva il
-              meccanismo di memorizzazione delle preferenze utente del sito, se
-              presente;
-
-              5. **pulsante accetta**, call to action primaria valida solo per
-              questo video se non presente l'opzione di cui al punto 4. 
+              La variante con icone a sinistra prevede icone "+" (2) per
+              mostrare lo stato di intestazioni chiuse e "-" (1) per quelle
+              aperte.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -396,25 +331,51 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: >
-              Tutte le varianti di video player sono **responsive**, quindi si
+              Tutte le varianti di accordion sono **responsive**, quindi si
               adattano alla viewport di qualsiasi dispositivo.
 
 
-              Nel caso di utilizzo di video da piattaforme di terze parti
-              l'overlay di consenso appare in automatico sopra ogni Video player
-              se l'utente non ha accettato la Cookie policy specifica. Isolando
-              il browser dell'utente dalla piattaforma di terze parti a meno non
-              sia specificatamente accettato.  
+              ### Interazioni
+
+              Ogni elemento dell'accordion si espande e contrae per mezzo
+              dell'attivazione (click, tap o tastiera) della relativa
+              intestazione, sfruttando il comportamento
+              [collapse](/design-system/componenti/collapse/).
+
+
+              L'apertura degli elementi espande verticalmente il componente,
+              facendo scorrere i contenuti che seguono in pagina. 
+
+
+              La variante **base** prevede la possibilità di aprire e chiudere
+              indipendentemente ogni elemento. Le varianti **accordion**
+              prevedono che ci possa essere al massimo un solo elemento aperto
+              per volta.
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
-            noSpace: false
+            noSpace: true
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              _In stesura._
+            text: >
+              Specifiche relative a intestazione e contenuto di un elemento
+              accordion. Tutte le misure sono indicate in `px`.
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/accordion-title-specs.png
+            alt: >-
+              Intestazione di un elemento dell'accordion con la misura di tutte
+              le spaziature
+          - name: ImgFull
+            isDSPreview: true
+            img: /images/design-system/componenti/accordion-content-specs.png
+            alt: >-
+              Contenuto di un elemento dell'accordion con la misura di tutte le
+              spaziature
+          - name: TextImageCta
+            noSpace: false
       - full: true
         noSpace: true
         paddingLeft: true
@@ -441,7 +402,7 @@ tabs:
       id: preview-dev
       title: Anteprima
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/video-player/
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/accordion/
       accordionOpen: true
       accordionShow: true
     sectionsEditorial:
