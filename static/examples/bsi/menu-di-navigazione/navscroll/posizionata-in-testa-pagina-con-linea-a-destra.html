@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.14.0/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.15.1/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -105,20 +105,19 @@
         <div class="bd-example w-100">
             
 <nav class="navbar it-navscroll-wrapper navbar-expand-lg it-top-navscroll it-right-side" data-bs-navscroll>
-  <button class="custom-navbar-toggler" type="button" aria-controls="navbarNavB" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="navbarcollapsible" data-bs-target="#navbarNavB"><span class="it-list"></span>1. Introduzione
+  <button class="custom-navbar-toggler" type="button" aria-controls="navbarNavB" aria-label="Apri/Chiudi indice" data-bs-toggle="navbarcollapsible" data-bs-target="#navbarNavB"><span class="it-list"></span>1. Introduzione
   </button>
-  <div class="navbar-collapsable" id="navbarNavB">
-    <div class="overlay"></div>
+  <div class="navbar-collapsable" id="navbarNavB" tabindex="-1">
     <div class="close-div visually-hidden">
       <button class="btn close-menu" type="button">
         <span class="it-close"></span>Chiudi
       </button>
     </div>
-    <button type="button" class="it-back-button btn w-100 text-start">
-      <svg class="icon icon-sm icon-primary align-top"><use href="/dist/svg/sprites.svg#it-chevron-left" xlink:href="/dist/svg/sprites.svg#it-chevron-left"></use></svg>
-      <span>Indietro</span>
-    </button>
-    <div class="menu-wrapper">
+    <div class="menu-wrapper" tabindex="-1">
+      <button type="button" class="it-back-button btn w-100 text-start">
+        <svg class="icon icon-sm icon-primary align-top"><use href="/dist/svg/sprites.svg#it-chevron-left" xlink:href="/dist/svg/sprites.svg#it-chevron-left"></use></svg>
+        <span>Indietro</span>
+      </button>
       <div class="link-list-wrapper">
         <h3>header</h3>
         <ul class="link-list">
@@ -167,7 +166,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.14.0/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.15.1/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
