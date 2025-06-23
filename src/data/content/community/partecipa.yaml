@@ -25,7 +25,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Partecipa - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Segui la procedura guidata e usa le risorse per realizzare il sito istituzionale di un Comune #C
+  description: Sottotitolo della pagina #C
   image: null #I
   canonical: null
   pathname: /community/partecipa/ #M
@@ -86,7 +86,7 @@ components:
   hero:
     background: null
     title: Partecipa #C
-    subtitle: Realizza il punto di contatto tra le amministrazioni locali e i cittadini #C
+    subtitle: Sottotitolo della pagina #C
     tag:
       label: Community #C
       addonClasses: mt-3 text-uppercase
@@ -97,7 +97,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Le attività ti guidano a **impostare il lavoro da un punto di vista organizzativo e ti supportano nella progettazione e nello sviluppo del sito comunale**, tenendo conto di aspetti importanti come i requisiti tecnici per la corretta adozione del modello. Le risorse ti permettono di comprendere e impostare la struttura del sito, creare l’interfaccia grafica, migrare e gestire correttamente i contenuti.
+      Descrizione breve dei contenuti che si trovano su questa pagina.
     img: /images/modelli/comuni-sito.png
     alt: ""
 
@@ -118,15 +118,15 @@ components:
             url: "../" #M
       otherInfo:
         items:
-          - title: Rispettando
-            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
-            icon:
-              icon: "sprites.svg#it-pa"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Linee guida di design #C
-            url: "/normativa/linee-guida-di-design/" #M
+          #- title: Rispettando
+            #tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            #icon:
+              #icon: "sprites.svg#it-pa"
+              #size: "sm"
+              #align: "middle"
+              #color: "secondary"
+            #label: Linee guida di design #C
+            #url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -136,7 +136,7 @@ components:
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Designer, Developer #C
+            label: Designer, Developer, Qui per curiosità #C
           - title: Vuoi
             tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
             icon:
@@ -145,20 +145,20 @@ components:
               align: "middle"
               color: "secondary"
             label: "Prendere parte alle attività della community di Designers Italia" #C
-      tagsLabel: Parliamo di
-      color: secondary
-      icon:
-        icon: sprites.svg#it-horn
-        size: sm
-        color: secondary
-      tags: [Architettura informazione,Progettazione contenuti,Modelli di sito,Adozione modelli]
+      #tagsLabel: Parliamo di
+      #color: secondary
+      #icon:
+        #icon: sprites.svg#it-horn
+        #size: sm
+        #color: secondary
+      #tags: [Architettura informazione,Progettazione contenuti,Modelli di sito,Adozione modelli]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri le attività del modello #C
+          label: Scopri come partecipare #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -168,13 +168,10 @@ components:
         list:
           listItems: #M
             - url: "comprendi-lo-stato-dell-arte/"
-              label: "Comprendi lo stato dell'arte" #C
+              label: "Partecipa alle attività di ricerca" #C
             - url: "definisci-architettura-e-contenuti/"
-              label: Definisci architettura e contenuti #C
-            - url: "realizza-l-interfaccia-del-sito-comunale/"
-              label: "Realizza l'interfaccia" #C
-            - url: "valuta-l-adesione-al-modello-di-sito-comunale/"
-              label: "Valuta l'adesione al modello" #C
+              label: Condividi un caso studio #C
+
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -271,8 +268,8 @@ components:
   # ///////////////////
   highlightCards:
     id: HC1
-    title: Le attività per adottare il modello #C
-    text: Segui la procedura guidata e usa le risorse per realizzare un sito comunale a misura di cittadino #C
+    title: Scopri come partecipare alla community di Designers Italia #C
+    text: Sottotitolo introduttivo #C
     col4: false
     noSpace: false
     nopadtop: true
@@ -281,7 +278,7 @@ components:
     cards: # AUTO?
 
       # CARD CHILDREN ACTION
-      - title: "1. Comprendi lo stato dell’arte" #C
+      - title: "Partecipa alle attività di ricerca" #C
         imgRatio: 16x9
         fullHeight: true
         rounded: true
@@ -289,12 +286,12 @@ components:
         # iconImgAlt: Alt lorem ipsum #C
         url: "comprendi-lo-stato-dell-arte/" #M
         text: | #C
-          Definisci gli obiettivi del progetto, stabilisci il perimetro di lavoro e individua le risorse necessarie
+          Sottotitolo breve dell'attività
         tag:
           label: Attività del modello #C
 
       # CARD CHILDREN ACTION
-      - title: 2. Definisci architettura e contenuti #C
+      - title: Condividi un caso studio #C
         imgRatio: 16x9
         fullHeight: true
         rounded: true
@@ -302,35 +299,11 @@ components:
       # iconImgAlt: Alt lorem ipsum #C
         url: "definisci-architettura-e-contenuti/" #M
         text: | #C
-          Imposta la struttura informativa del sito comunale e organizza la migrazione dei contenuti
+          Sottotitolo breve dell'attività
         tag:
           label: Attività del modello #C
 
-      # CARD CHILDREN ACTION
-      - title: "3. Realizza l’interfaccia" #C
-        imgRatio: 16x9
-        rounded: true
-        fullHeight: true
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
-        url: "realizza-l-interfaccia-del-sito-comunale/" #M
-        text: | #C
-          Assembla l’interfaccia web del sito comunale con le librerie dei componenti, i template HTML o i temi per CMS
-        tag:
-          label: Attività del modello #C
 
-      # CARD CHILDREN ACTION
-      - title: "4. Valuta l’adesione al modello" #C
-        imgRatio: 16x9
-        rounded: true
-        fullHeight: true
-      # iconImg: /images/kit-analisi-contesto.svg #I
-      # iconImgAlt: Alt lorem ipsum #C
-        url: "valuta-l-adesione-al-modello-di-sito-comunale/" #M
-        text: | #C
-          Usa l’App di valutazione per monitorare la progressione dei lavori e indirizzare eventuali interventi di miglioramento
-        tag:
-          label: Attività del modello #C
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -410,20 +383,4 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-        - name: TextImageCta
-          title: Contribuisci al modello
-          headingLevel: 2
-          text: L'evoluzione dei modelli di sito e servizi per la Pubblica Amministrazione è aperta, trasparente e basata sul contributo attivo della community che utilizza le risorse. #C
-          noSpace: true
-          ctas:
-          - label: Scopri come contribuire #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: /modelli/contribuisci-ai-modelli/ #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: md
-              addonClasses: ms-2
+
