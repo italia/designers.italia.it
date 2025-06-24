@@ -1,24 +1,26 @@
 metadata:
-  json: bsi/componenti/card.json
+  json: bsi/componenti/timeline.json
   template:
     name: design-system-component
 seo:
-  name: Card - Designers Italia
+  name: Timeline - Designers Italia
   description: >-
-    Aiutano a presentare un gruppo di contenuti correlati, come articoli o sezioni di un sito web e permettono di continuare la navigazione verso le rispettive pagine di dettaglio.
+    Rappresentazione grafica di una serie di eventi in ordine cronologico per
+    descrivere la storia di un’istituzione o il progresso di un progetto.
   canonical: null
-  pathname: /design-system/componenti/card/
+  pathname: /design-system/componenti/timeline/
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Card
+    title: Timeline
     tag:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Aiutano a presentare un gruppo di contenuti correlati, come articoli o sezioni di un sito web e permettono di continuare la navigazione verso le rispettive pagine di dettaglio
+      Rappresentazione grafica di una serie di eventi in ordine cronologico per
+      descrivere la storia di un’istituzione o il progresso di un progetto
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -40,8 +42,11 @@ tabs:
     componentVariant:
       id: preview-use
       title: Anteprima
-      viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/card/
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
+      viewerHeight: 400
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
       accordionOpen: false
       accordionShow: false
     sectionsEditorial:
@@ -54,7 +59,11 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Le card sono contenitori flessibili e versatili per organizzare e presentare contenuti strutturati in modo coerente, adattabili a diversi contesti e necessità.
+              Usa il componente timeline quando devi presentare una serie di
+              eventi in ordine cronologico. 
+
+              È particolarmente utile per raccontare una sequenza di eventi
+              storici o per evidenziare importanti traguardi o risultati.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -64,40 +73,40 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: >
-              - Rendi la card azionabile poiché è una sintesi di informazioni
-              più dettagliate. Ogni card deve puntare a una pagina di dettaglio
-              tramite link.
+              - Identifica gli eventi chiave che desideri rappresentare sulla
+              linea del tempo.
 
-              - Includi contenuti unici, evitando di ripetere immagini o
-              informazioni che sono presenti in altre card.
+              - Organizza questi eventi in ordine cronologico.
+
+              - Crea una linea o un percorso visivo che rappresenta il flusso
+              del tempo.
+
+              - Posiziona gli eventi lungo questa linea in base a quando si sono
+              verificati.
+
+              - Fornisci un breve riepilogo o una descrizione per ogni evento.
+
 
               ### Attenzione a
 
-              - Non usare la card a scopo decorativo, creando un contorno per
-              qualunque tipologia di contenuto.
+              - Evitare di sovraccaricare la timeline con troppi dettagli:
+              concentrati sui punti chiave e le informazioni più rilevanti. 
 
-              - Usare la corretta struttura semantica per i contenuti (`article`, 
-              `time`, `address`, ordine immagini, ...), rispettando quanto negli 
-              esempi delle varianti.
-
-              - Usare la corretta semantica per le intestazioni (heading),
-              rispettando la gerarchia visiva di base. 
-
-              - Scegliere immagini della dimensione corretta, assicurandoti che
-              funzionino bene su qualsiasi dispositivo e dimensione.
-
-              - Usare gli elementi lista HTML `<ul>` e `<li>` per raggruppare
-              molte card di un'unica sezione.
+              - Assicurare che la sequenza sia chiaramente identificabile anche
+              navigando da tastiera o con strumenti assistivi come lettori di
+              schermo.
 
 
               ### Buone pratiche sui contenuti
 
-              - Scrivi titoli concisi che stimolino l'interesse dell'utente ad
-              approfondire il contenuto.
+              - Mantieni le descrizioni degli eventi brevi e concise per
+              facilitare la lettura e la comprensione.
 
-              - Usa la descrizione per contenuti secondari, non per informazioni
-              essenziali, in quanto gli utenti potrebbero prestarvi minore
-              attenzione.
+              - Se possibile, usa le icone per rappresentare gli eventi o le
+              fasi.
+
+              - Assicurati che gli eventi siano chiaramente distinti l'uno
+              dall'altro sulla timeline.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -127,8 +136,8 @@ tabs:
                   - text: Amichevole con lettori di schermo
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Struttura titolazioni, etichette e testi alternativi
               - cols:
                   - text: Navigabile
@@ -141,8 +150,8 @@ tabs:
                   - text: Comprensibile
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - text: Comprensibile, prevedibile, gestione semplice dell’errore
           - name: TextImageCta
             ctas:
@@ -179,8 +188,8 @@ tabs:
                   - text: UI Kit Italia (design)
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Kit
                       url: https://www.figma.com/community/file/1105848677422572920
@@ -193,13 +202,13 @@ tabs:
                   - text: Bootstrap Italia
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
                       blank: true
                       url: >-
-                        https://italia.github.io/bootstrap-italia/docs/componenti/card/
+                        https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
                         icon: sprites.svg#it-external-link
@@ -208,12 +217,12 @@ tabs:
                   - text: React
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda Storybook
                       url: >-
-                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-cards--documentazione
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-timeline--documentazione
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -223,17 +232,17 @@ tabs:
                   - text: Angular
                     scope: row
                   - tag:
-                      label: Da rivedere
-                      addonClasses: bg-warning
+                      label: Pronto
+                      addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
-                      url: >-
-                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/card
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
                         icon: sprites.svg#it-external-link
                         size: sm
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/timeline
           - name: TextImageCta
             ctas:
               - label: Apri una issue sul repository Bootstrap Italia
@@ -269,8 +278,8 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: >
-              _Contenuti in aggiornamento, fate riferimento a UI Kit Italia e alla documentazione di Bootstrap Italia._
-
+              _Contenuti in aggiornamento, fate riferimento a UI Kit Italia e
+              alla documentazione di Bootstrap Italia._
       - full: true
         noSpace: true
         paddingLeft: true
@@ -280,7 +289,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: >
-              _Contenuti in aggiornamento, fate riferimento a UI Kit Italia e alla documentazione di Bootstrap Italia._
+              La disposizione degli eventi lungo la linea del tempo cambia a
+              seconda dei dispositivi su cui viene visualizzata.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -290,8 +300,8 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: >
-              _Contenuti in aggiornamento, fate riferimento a UI Kit Italia e alla documentazione di Bootstrap Italia._
-              
+              _Contenuti in aggiornamento, fate riferimento a UI Kit Italia e
+              alla documentazione di Bootstrap Italia._
       - full: true
         noSpace: true
         paddingLeft: true
@@ -317,8 +327,11 @@ tabs:
     componentVariant:
       id: preview-dev
       title: Anteprima
-      viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/card/
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
+      viewerHeight: 400
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
       accordionOpen: true
       accordionShow: true
     sectionsEditorial:
