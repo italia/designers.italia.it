@@ -25,7 +25,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: "Prendi parte alle attività di ricerca - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: Definisci gli obiettivi e il perimetro del progetto per adottare il modello di sito comunale. #C
+  description: Condividi la tua esperienza e le tue idee per aiutarci a migliorare i servizi pubblici digitali. #C
   image: null #I
   canonical: null
   pathname: /community/partecipa/prendi-parte-alle-attivita-di-ricerca/ #M
@@ -93,7 +93,7 @@ components:
   hero:
     background: null
     title: "Prendi parte alle attività di ricerca" #C
-    subtitle: Breve testo che spiega cosa significa e qual è il beneficio #C
+    subtitle: Condividi la tua esperienza e le tue opinioni per aiutarci a migliorare i servizi pubblici digitali. #C
     tag:
       #label: Attività del modello #C
       #addonClasses: mt-3 text-uppercase
@@ -122,15 +122,15 @@ components:
               align: "middle"
               color: "secondary"
             label: Partecipa alla community #C
-            url: "../../" #M
-          - title: Nella scheda operativa
-            icon:
-              icon: "sprites.svg#it-tool"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Adotta il modello di sito comunale #C
             url: "../" #M
+          #- title: Nella scheda operativa
+            #icon:
+              #icon: "sprites.svg#it-tool"
+              #size: "sm"
+              #align: "middle"
+              #color: "secondary"
+            #label: Adotta il modello di sito comunale #C
+            #url: "../" #M
       #otherInfo:
         #items:
           #- title: Rispettando
@@ -143,29 +143,29 @@ components:
             #url: "#" #M
       personalInfo:
          items: #C
-          - title: Sei
-            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
-            icon:
-              icon: "sprites.svg#it-user"
-              size: "sm"
-              align: "middle"
-              color: "secondary"
-            label: Designer, Project manager #C
+          #- title: Sei
+            #tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            #icon:
+              #icon: "sprites.svg#it-user"
+              #size: "sm"
+              #align: "middle"
+              #color: "secondary"
+            #label: Designer, Project manager #C
           - title: Vuoi
-            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            tooltip: "Obiettivi per cui sono utili i contenuti di questa pagina"
             icon:
               icon: "sprites.svg#it-flag"
               size: "sm"
               align: "middle"
               color: "secondary"
-            label: Pianificare le attività di progettazione #C
-      tagsLabel: Parliamo di
-      color: secondary
-      icon:
-        icon: sprites.svg#it-horn
-        size: sm
-        color: secondary
-      tags: [Analisi del contesto,Pianificazione]
+            label: Partecipare alle attività di ricerca di Designers Italia #C
+      #tagsLabel: Parliamo di
+      #color: secondary
+      #icon:
+        #icon: sprites.svg#it-horn
+        #size: sm
+        #color: secondary
+      #tags: [Analisi del contesto,Pianificazione]
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -173,7 +173,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Le risorse per preparare il lavoro #C
+    - title: La tua opinione può aiutarci a migliorare i servizi pubblici digitali #C
       menu: false
       centered: true
       background: null
@@ -185,15 +185,53 @@ components:
         - name: TextImageCta
           #title: La tua opinione può aiutarci a migliorare i servizi pubblici digitali #C
           text: | #C
-            Aiutaci a progettare servizi online migliori per te. Con il tuo contributo, possiamo comprendere meglio le esigenze dei cittadini e realizzare esperienze più semplici e utili per tutte le persone.
+            Aiutaci a progettare servizi digitali migliori per te. Con il tuo contributo, possiamo comprendere meglio le esigenze degli utenti e realizzare esperienze più semplici e utili per tutte le persone.
 
-            partecipare a brevi attività di ricerca ed esprimere la tua opinione e i tuoi bisogni riguardo i servizi pubblici digitali.
+            Partecipando a brevi attività di ricerca, avrai l'occasione di **condividere la tua esperienza, le tue opinioni e le tue idee** con chi progetta servizi pubblici ed entrerai a far parte di una community che crede nella collaborazione aperta e inclusiva.
 
+            Potresti essere coinvolto in attività come:
+
+            - sessioni di test di siti web e applicazioni
+
+            - interviste individuali o di gruppo per comprendere bisogni e aspettative
+
+            - workshop collaborativi per progettare o migliorare servizi
+
+            - questionari e indagini online.
 
                 # TXT BLOCK
         - name: TextImageCta
-          #title: Registrati per partecipare H2 #C
+          Chi può partecipare #C
           text: | #C
-            Compila il questionario per partecipare a brevi attività di ricerca ed esprimere la tua opinione e i tuoi bisogni riguardo i servizi pubblici digitali.
-            
-            Il questionario dura 3 minuti. Le informazioni che ti chiediamo ci serviranno per includere, nella progettazione dei servizi digitali pubblici, le esigenze di persone con un’ampia varietà di caratteristiche.
+            Cittadini italiani e stranieri residenti sul territorio italiano e cittadini italiani residenti all'estero.
+
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          title: Registrati per partecipare #C
+          headingLevel: 3
+          text: | #C
+            Compila un breve form di 3 minuti con le informazioni richieste.
+
+            Ti contatteremo quando ci saranno attività pertinenti al tuo profilo e potrai scegliere liberamente a quali attività aderire.
+          ctas:
+          - label: Compila il form #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-asl-docs/it/versione-corrente/architettura-informazione/struttura-sito.html #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+                # TXT BLOCK
+        - name: TextImageCta
+          title: Come vengono usati i tuoi dati #C
+          text: | #C
+            Con il tuo [consenso informato](#), raccogliamo il tuo indirizzo mail, in combinazione con il tuo genere, il luogo dove abiti, eventuali minorenni a carico, il tipo di organizzazione per cui lavori e la familiarità con determinate tecnologie, al fine di eventualmente contattarti per partecipare alle attività di ricerca. Puoi revocare il consenso in qualsiasi momento. 
