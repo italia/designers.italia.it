@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bd-example {
+            margin-top: 0;
+            border: none;
+        }
+
+        [class^="border"] {
+            display: inline-block;
+            width: 5rem;
+            height: 5rem;
+            margin: .25rem;
+            background-color: #f5f5f5;
+        }
+
+        .ratio-example {
+            display: inline-flex;
+            justify-content: center;
+            align-content: center;
+            width: 10rem;
+            color: #6c757d;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+        }
+
+        .ratio-example div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ratio-example-breakpoint {
+            --bs-aspect-ratio: 50%;
+        }
+
+        a.back-to-top {
+            position: relative;
+            bottom: unset;
+            right: unset;
+            visibility: visible;
+            margin: 0 auto;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .it-carousel-wrapper {
+            width: 96%;
+        }
+
+        .it-header-navbar-wrapper .custom-navbar-toggler .icon.bg-override {
+            fill: #06c;
+            width: 32px;
+            height: 32px;
+        }
+
+        .it-example-modal .modal {
+            position: relative;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+            z-index: 1;
+            display: block;
+        }
+
+        .test-docs .notification {
+            position: static;
+            top: auto;
+            bottom: auto;
+            right: auto;
+            left: auto;
+            transform: none;
+            display: block;
+        }
+
+        .test-docs .notification.dismissable {
+            position: relative;
+        }
+
+        .test-desktop .notification {
+            position: absolute;
+            display: block;
+        }
+    </style>
+    <title>Esempio Card con liste di contenuti affini</title>
+</head>
+
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example w-100">
+            
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-6 mb-3 mb-md-4">
+    <!--start it-card-->
+    <article class="it-card it-card-image it-card-height-full rounded shadow-sm border">
+      <!--card first child is the title (link)-->
+      <h3 class="it-card-title">
+        <a href="#">Argomento Y</a>
+      </h3>
+      <!--card second child is the image (optional)-->
+      <div class="it-card-image-wrapper">
+        <div class="ratio ratio-21x9">
+          <figure class="figure img-full">
+            <img src="https://placeholderimage.eu/api/nature/800/600" alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto.">
+          </figure>
+        </div>
+      </div>
+      <!--card body content-->
+      <div class="it-card-body">
+        <p class="it-card-text">Descrizione breve dell'argomento in poche righe non troncate.</p>
+        <ul class="list-group list-group-flush" aria-label="Contenuti in evidenza:">
+          <li class="list-group-item"><a href="#">Titolo notizia affine</a></li>
+          <li class="list-group-item"><a href="#">Titolo media affine</a></li>
+          <li class="list-group-item"><a href="#">Altro titolo scheda affine</a></li>
+          <li class="list-group-item"><a href="#">Pagina profilo affine</a></li>
+        </ul>
+      </div>
+    </article>
+    <!--end it-card-->
+  </div>
+  <div class="col-12 col-md-6 col-lg-6 mb-3 mb-md-4">
+    <!--start it-card-->
+    <article class="it-card it-card-image it-card-height-full rounded shadow-sm border">
+      <!--card first child is the title (link)-->
+      <h3 class="it-card-title">
+        <a href="#">Titolo evento</a>
+      </h3>
+      <!--card second child is the image (optional)-->
+      <div class="it-card-image-wrapper">
+        <div class="ratio ratio-21x9">
+          <figure class="figure img-full">
+            <img src="https://placeholderimage.eu/api/monument/800/600" alt="Breve descrizione immagine se ha senso nel contesto, marcare altrimenti come decorativa lasciando l'alt applicato ma vuoto.">
+          </figure>
+        </div>
+      </div>
+      <!--card body content-->
+      <div class="it-card-body">
+        <p class="it-card-subtitle">Dal 17 al 22 novembre</p>
+        <p class="it-card-text">Descrizione breve dell'evento in poche righe non troncate.</p>
+        <ul class="list-group list-group-flush" aria-label="Contenuti in evidenza:">
+          <li class="list-group-item"><a href="#">Gli artisti</a></li>
+          <li class="list-group-item"><a href="#">Il luogo</a></li>
+          <li class="list-group-item"><a href="#">Il programma dettagliato</a></li>
+        </ul>
+      </div>
+      <footer class="it-card-related it-card-footer border-top pt-3">
+        <div style="flex-grow:1">
+          <a class="it-card-link" href="#">Iscriviti per rimanere aggiornato</a>
+        </div>
+        <a href="#" target="_blank" class="it-card-link">
+          Apri la mappa
+          <span class="visually-hidden"> di Titolo evento (si apre in una nuova finestra)</span>
+          <svg class="icon icon-sm icon-secondary ms-2" aria-hidden="true"><use href="/dist/svg/sprites.svg#it-external-link"></use></svg>
+        </a>
+      </footer>
+    </article>
+    <!--end it-card-->
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-6 mb-3 mb-md-4">
+    <!--start it-card-->
+    <article class="it-card it-card-height-full rounded shadow-sm border">
+      <!--card first child is the title (link)-->
+      <h3 class="it-card-title">
+        <a href="#">Argomento X</a>
+      </h3>
+      <!--card body content-->
+      <div class="it-card-body">
+        <p class="it-card-text">Descrizione breve dell'argomento in poche righe non troncate.</p>
+        <ul class="list-group list-group-flush" aria-label="Contenuti in evidenza:">
+          <li class="list-group-item"><a href="#" class="it-card-link">Titolo notizia affine</a></li>
+          <li class="list-group-item"><a href="#" class="it-card-link">Titolo media affine</a></li>
+          <li class="list-group-item"><a href="#" class="it-card-link">Altro titolo scheda affine</a></li>
+          <li class="list-group-item"><a href="#" class="it-card-link">Pagina profilo affine</a></li>
+        </ul>
+      </div>
+    </article>
+    <!--end it-card-->
+  </div>
+</div>
+
+        </div>
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+
+        // tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // popover
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl, { sanitize: false })
+        })
+
+    </script>
+</body>
+
+</html>
