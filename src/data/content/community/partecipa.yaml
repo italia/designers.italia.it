@@ -167,10 +167,10 @@ components:
             addonClasses: icon-expand ms-2
         list:
           listItems: #M
-            - url: "comprendi-lo-stato-dell-arte/"
-              label: "Partecipa alle attività di ricerca" #C
-            - url: "definisci-architettura-e-contenuti/"
-              label: Condividi un caso studio #C
+            - url: "prendi-parte-alle-attivita-di-ricerca/"
+              label: "Prendi parte alle attività di ricerca" #C
+            - url: "condividi-un-progetto-come-caso-studio/"
+              label: "Condividi un progetto come caso studio" #C
 
 
   # ///////////////////
@@ -214,53 +214,6 @@ components:
               size: sm
               addonClasses: ms-2
               
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
-          title: Le risorse #C
-          text: | #C
-            Le risorse comprendono:
-            - il documento di Architettura dell’informazione;
-            - i template HTML;
-            - i temi per i CMS WordPress e Drupal;
-            - una serie di guide pratiche a supporto.
-          ctas:
-          - label: Scopri come usare le risorse #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/modello-sito-comunale.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
-        # TXT + IMG + CTA BLOCK
-        - name: TextImageCta
-          # image: /images/400x300.png #I
-          # alt: Alt lorem ipsum #C
-          # specular: true
-          title: La conformità al modello #C
-          text: | #C
-            I criteri di conformità guidano alla corretta adozione del modello in termini di esperienza utente, sicurezza, performance e rispetto della normativa. Sono stati definiti per assicurare l’aderenza ai principi contenuti nelle Linee guida di design per i siti internet e i servizi digitali della PA.
-
-            Gli sviluppatori possono valutare la qualità del sito e la corrispondenza a molti dei criteri di conformità con l’App di valutazione dell’adesione al modello Comuni.
-          ctas:
-          - label: Vai ai criteri di conformità #C
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-comuni-docs/it/versione-corrente/conformita/conformita-modello-sito.html #M
-            blank: true #M #C true if new tab for external links
-            icon:
-              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
 
 
   # ///////////////////
@@ -269,7 +222,7 @@ components:
   highlightCards:
     id: HC1
     title: Scopri come partecipare alla community di Designers Italia #C
-    text: Sottotitolo introduttivo #C
+    #text: Sottotitolo introduttivo #C
     col4: false
     noSpace: false
     nopadtop: true
@@ -291,7 +244,7 @@ components:
           #label: Attività del modello #C
 
       # CARD CHILDREN ACTION
-      - title: Condividi un caso studio #C
+      - title: Condividi un progetto come caso studio #C
         imgRatio: 16x9
         fullHeight: true
         rounded: true
@@ -299,7 +252,7 @@ components:
       # iconImgAlt: Alt lorem ipsum #C
         url: "condividi-un-caso-studio/" #M
         text: | #C
-          Raccontaci un progetto che hai realizzato con il supporto delle risorse a disposizione di Designers Italia e Developers Italia.
+          Raccontaci un progetto a cui hai lavorato per ispirare la community del design pubblico italiano.
         #tag:
           #label: Attività del modello #C
 
@@ -316,9 +269,9 @@ components:
     - menu: false
       centered: true
       background: light
-      title: Partecipa alle discussioni con la community di Designers Italia #C
+      title: Partecipa alle discussioni sulla progettazione dei servizi pubblici digitali #C
       text: | #C
-        Scopri i canali dove confrontarti sui temi della progettazione dei servizi pubblici digitali.
+        Scopri i canali dove confrontarti con la community di Designers Italia
       components:
 
         # TXT + IMG + CTA BLOCK
