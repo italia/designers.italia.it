@@ -69,8 +69,6 @@ components:
             - url: "partecipa/"
               label: Partecipa
 
-
-
   sectionIntro:
     section: true
     id: intro
@@ -91,11 +89,24 @@ components:
       color: white
       size: sm
     moreText: null
-      
 
+  highLights:
+    - title: Partecipa #C
+      img: /images/community/202507-nuova-sezione-partecipa-1920x1080.png #I
+      alt: Testare con gli utenti reali è progettare #C
+      headingLevel: 2
+      background: light # null | light | medium | dark
+      big: true
+      specular: true
+      subtitle: "Prendi parte anche tu alle attività della community di Designers Italia e aiutaci a dare forma al futuro del design pubblico" #C
+      buttons: #C #I
+        - label: Scopri come partecipare #C
+          btnStyle: primary
+          url: "partecipa/" #M
+          addonStyle: mb-3
 
   titleText:
-    title: Scopri le attività della community
+    title: Scopri la community
 
   highlightCardsLoop:
 
@@ -104,7 +115,8 @@ components:
       headingLevel: 3
       text: Le ultime notizie sulle attività del progetto Designers Italia
       col4: false
-      background: light
+      background: null
+      nopadtop: true
       buttons:
       - btnStyle: primary
         label: Esplora tutte le notizie
@@ -174,7 +186,7 @@ components:
       headingLevel: 3
       text: "Gli eventi dove trovare le esperte e gli esperti di Designers Italia e i nostri cicli di eventi dedicati alla community"
       col4: true
-      background: null
+      background: light
       buttons:
       - btnStyle: primary
         label: Esplora tutti gli eventi
@@ -253,7 +265,7 @@ components:
       headingLevel: 3
       text: "I casi di studio e le idee sulla progettazione dei servizi pubblici, scritti dalla community di Designers Italia"
       col4: false
-      background: light
+      background: null
       buttons:
       # - btnStyle: primary
       #   label: Esplora tutti gli approfondimenti
@@ -341,7 +353,7 @@ components:
       headingLevel: 3
       text: "I video, i tutorial e i podcast del progetto Designers Italia"
       col4: true
-      background: null
+      background: dark
       buttons:
       - type: button
         btnStyle: primary
@@ -415,40 +427,6 @@ components:
         url: "/community/media/20240215-il-modello-di-sito-per-le-aziende-sanitarie-locali-asl"
         tag:
           label: Video - Webinar
-
-# PARTECIPA
-
-    - title: Partecipa #C
-      img: /images/community/icons/partecipa.svg #I
-      alt: "" #C
-      headingLevel: 2
-      specular: true
-      # fullImg: false
-      background: light  # null | light | medium | dark
-      big: true
-      subtitle: Prendi parte anche tu alle attività della community di Designers Italia e aiutaci a dare forma al futuro del design pubblico. #C
-      text: "Prendi parte anche tu alle attività della community di Designers Italia e aiutaci a dare forma al futuro del design pubblico."  #C
-      buttons: #C #M
-        - label: Scopri come partecipare
-          btnStyle: primary
-          url: "partecipa/"
-          addonStyle: mb-3
-
-  # highlightsLoop:
-  #   - title: Materiali di disseminazione
-  #     subtitle: "Risorse e materiali utili per divulgare la cultura della progettazione nell’ambito della Pubblica Amministrazione"
-  #     id: materiali-di-disseminazione
-  #     # img: /images/400x300.png
-  #     # alt: descrizione immagine
-  #     headingLevel: 2
-  #     big: false
-  #     background: medium
-  #     specular: true
-  #     buttons:
-  #       - label: Scopri i materiali di disseminazione
-  #         btnStyle: primary
-  #         url: "materiali-di-disseminazione/"
-  #         addonStyle: mb-3
 
   sectionsEditorial:
 # —
