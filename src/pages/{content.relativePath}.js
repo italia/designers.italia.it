@@ -254,6 +254,7 @@ export const query = graphql`
           text
           col4
           background
+          nopadtop
           buttons {
             btnStyle
             label
