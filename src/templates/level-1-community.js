@@ -17,8 +17,8 @@ import Feedback from "../components/feedback/feedback";
 
 import Hero from "../components/hero/hero";
 import SectionIntro from "../components/section-intro/section-intro";
+import Highlight from "../components/highlight/highlight";
 import TitleText from "../components/title-text/title-text";
-// import Highlight from "../components/highlight/highlight";
 import HighlightCards from "../components/highlight-cards/highlight-cards";
 import SectionEditorial from "../components/section-editorial/section-editorial";
 
@@ -56,6 +56,11 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
           <SectionIntro {...Pagedata.components.sectionIntro} />
         )}
 
+        {Pagedata.components.highLights &&
+          Pagedata.components.highLights.map((hl, index) => (
+            <Highlight key={`hl-${index}`} {...hl} />
+          ))}
+
         {Pagedata.components?.titleText && (
           <TitleText {...Pagedata.components.titleText} />
         )}
@@ -69,6 +74,7 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
           Pagedata.components.highlightsLoop.map((hl, index) => (
             <Highlight key={`hl-${index}`} {...hl} />
           ))} */}
+
         {Pagedata.components.sectionsEditorial &&
           Pagedata.components.sectionsEditorial.map((section, index) => (
             <SectionEditorial key={`sectionEditorial-${index}`} {...section} />
