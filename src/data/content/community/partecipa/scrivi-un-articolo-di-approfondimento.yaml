@@ -173,7 +173,7 @@ components:
   sectionsEditorial :
 
 
-    - title: La tua opinione può aiutarci a migliorare i servizi pubblici digitali #C
+    - title: Aiutaci a divulgare la cultura della progettazione in ambito pubblico #C
       menu: false
       centered: true
       background: null
@@ -190,8 +190,39 @@ components:
             **Curiamo una [raccolta di articoli](https://medium.com/designers-italia)**, a disposizione di tutti e con il contributo di tutti, **che approfondiscono temi rilevanti per la progettazione di servizi pubblici** abilitati dal digitale e dalle nuove tecnologie. 
 
             Queste storie sono esempi di buone pratiche progettuali e hanno lo scopo di formare e ispirare il resto della community. 
+      
+      # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          title: Quali storie ci interessano #C
+          headingLevel: 3
+          text: | #C
+            Abbiamo creato un template c
 
-
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          title: Prepara il tuo articolo #C
+          headingLevel: 3
+          text: | #C
+            Abbiamo creato un template che ti guida, passo per passo, nella stesura dell'articolo. Sul template trovi indicazioni ed esempi utili
+            
+          ctas:
+          - label: Scarica il template (ODT, XXKB) #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-asl-docs/it/versione-corrente/architettura-informazione/struttura-sito.html #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: lg
+              addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -208,7 +239,7 @@ components:
           ctas:
           - label: Compila il form #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-asl-docs/it/versione-corrente/architettura-informazione/struttura-sito.html #M
+            url: https://ec.europa.eu/eusurvey/runner/segnalazionearticoli #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
