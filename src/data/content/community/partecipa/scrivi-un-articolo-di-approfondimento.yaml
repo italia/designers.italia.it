@@ -187,19 +187,21 @@ components:
           text: | #C
             Hai lavorato a un progetto di trasformazione digitale per la Pubblica Amministrazione e vuoi scrivere un resoconto su una tematica particolarmente importante? Il tuo racconto può aiutare altri addetti ai lavori a comprendere meglio l’approccio e i metodi di progettazione per i servizi pubblici digitali. 
 
-            **Curiamo una [raccolta di articoli](https://medium.com/designers-italia)**, a disposizione di tutti e con il contributo di tutti, **che approfondiscono temi rilevanti per la progettazione di servizi pubblici** abilitati dal digitale e dalle nuove tecnologie. 
-
-            Queste storie sono esempi di buone pratiche progettuali e hanno lo scopo di formare e ispirare il resto della community. 
+            **Curiamo una [raccolta di articoli di approfondimento](https://medium.com/designers-italia)**, a disposizione di tutti e con il contributo di tutti, **che esplorano temi rilevanti per la progettazione di servizi pubblici** abilitati dal digitale e dalle nuove tecnologie. Queste storie sono esempi di buone pratiche progettuali e hanno lo scopo di formare e ispirare il resto della community. 
       
       # TXT + IMG + CTA BLOCK
         - name: TextImageCta
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
           # specular: true
-          title: Quali storie ci interessano #C
+          title: Quali articoli cerchiamo #C
           headingLevel: 3
           text: | #C
-            Abbiamo creato un template c
+            Gli articoli di approfondimento devono trattare **temi vicini alla [visione e missione di Designers Italia](/progetto/visione-e-missione/)**, come buone pratiche di inclusione, accessibilità, open source e principi etici di progettazione.  
+
+            Devono **raccontare le attività svolte dietro le quinte del progetto** e, possibilmente, come sono state usate le risorse messe a disposizione da Designers Italia.  
+
+            Valuteremo gli articoli che riceveremo e potranno essere pubblicati sulla [pagina Medium di Designers Italia](https://medium.com/designers-italia), introdotti dai nostri esperti che ne evidenzieranno il valore per la community. 
 
         # TXT + IMG + CTA BLOCK
         - name: TextImageCta
@@ -209,7 +211,19 @@ components:
           title: Prepara il tuo articolo #C
           headingLevel: 3
           text: | #C
-            Abbiamo creato un template che ti guida, passo per passo, nella stesura dell'articolo. Sul template trovi indicazioni ed esempi utili
+            Per essere pubblicati, gli articoli devono: 
+
+            - approfondire temi legati alla progettazione dei servizi pubblici digitali e vicini alle attività di Designers Italia 
+
+            - insegnare qualcosa e ispirare la community 
+
+            - avere tra le 9 mila e le 15 mila battute 
+
+            - presentare una struttura specifica, con introduzione, corpo centrale diviso in paragrafi, conclusione 
+
+            - essere disponibili al pubblico su siti della PA o piattaforme social e di blogging (ad esempio, Medium, LinkedIn. 
+
+            Abbiamo realizzato un template con indicazioni dettagliate e spunti di stesura per l’articolo.
             
           ctas:
           - label: Scarica il template (ODT, XXKB) #C
@@ -221,7 +235,7 @@ components:
               color: primary
               align: middle
               hidden: true
-              size: lg
+              size: sm
               addonClasses: ms-2
 
         # TXT + IMG + CTA BLOCK
@@ -232,14 +246,35 @@ components:
           title: Inviaci il tuo articolo #C
           headingLevel: 3
           text: | #C
-            Per dare la tua disponibilità a partecipare, compila un breve form di 3 minuti e rispondi ad alcune domande su di te. 
-            
-            Le informazioni che ti chiediamo ci serviranno per includere, nella progettazione dei servizi digitali pubblici, le esigenze di persone con un’ampia varietà di caratteristiche e per contattarti soltanto in caso di attività pertinenti con il tuo profilo. Potrai sempre scegliere liberamente a quali attività partecipare.
+            Se vuoi inviarci un articolo, compila il form dedicato. 
             
           ctas:
           - label: Compila il form #C
             screenReaderText: " (si apre in una nuova finestra)" #C
             url: https://ec.europa.eu/eusurvey/runner/segnalazionearticoli #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+          # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          # image: /images/400x300.png #I
+          # alt: Alt lorem ipsum #C
+          # specular: true
+          title: Esplora gli articoli di approfondimento #C
+          headingLevel: 3
+          text: | #C
+            Se vuoi inviarci un articolo, compila il form dedicato. 
+            
+          ctas:
+          - label: Vai al Medium di Designers Italia #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: https://medium.com/designers-italia #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
