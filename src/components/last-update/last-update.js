@@ -4,7 +4,7 @@ import Icon from "../icon/icon";
 import Link from "../link/link";
 import "./last-update.scss";
 
-function LastUpdate({ pathname, lastModified, noPadding }) {
+function LastUpdate({ pathname, lastModified }) {
   let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`;
   if (pathname) {
     const filePath =
