@@ -13,16 +13,14 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
     editGithubUrl += `${filePath}.yaml`;
   }
 
-  const columnStyle = "col-12 g-0";
-
-  const paddingStyle = classNames("px-3", { "px-lg-5": !noPadding });
+  const columnStyle = "col-12";
 
   return (
-    <div className="last-update py-5">
+    <div className="last-update py-4">
       <div className="container-xxl">
         <div className="row">
           <div className={columnStyle}>
-            <div className={classNames("d-flex flex-column flex-lg-row justify-content-lg-between", paddingStyle)}>
+            <div className="d-flex flex-column flex-lg-row justify-content-lg-between px-3 px-lg-5">
               <div className="text-secondary mb-2 mb-lg-0">
                 <strong>Ultimo aggiornamento: </strong>
                 <time dateTime={lastModified} title={lastModified}>
