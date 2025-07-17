@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import React from "react";
 import Icon from "../icon/icon";
 import Link from "../link/link";
