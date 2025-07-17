@@ -13,7 +13,7 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
     editGithubUrl += `${filePath}.yaml`;
   }
 
-  const columnStyle = "col-12";
+  const columnStyle = "col-12 g-0";
 
   return (
     <div className="last-update py-4">
