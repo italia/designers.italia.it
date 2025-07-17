@@ -247,18 +247,18 @@ navbar:
           cols:
             - isMenu: true
               listItems: #C #M
+                - url: "/community/partecipa/"
+                  label: Partecipa
                 - url: "/community/notizie/"
                   label: Notizie
                 - url: "/community/eventi/"
                   label: Eventi
-                - url: "/community#articoli-di-approfondimento"
-                  label: Articoli di approfondimento
             - isMenu: true
               listItems: #C #M
+                - url: "/community#articoli-di-approfondimento"
+                  label: Articoli di approfondimento
                 - url: "/community/media/"
                   label: Media
-                - url: "/community/partecipa/"
-                  label: Partecipa
 
 headerPost:
   isActive: true
@@ -266,6 +266,16 @@ headerPost:
     id: navBanner
     ariaLabel: Potrebbe interessarti
     items: #C #M
+    - title: "Nuova sezione Partecipa"
+      url: "/community/partecipa/"
+      blank: false
+      icon:
+        icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
+        size: "sm"
+        align: "middle"
+        color: "primary"
+        hidden: true
+        addonClasses: "me-2"
     - title: "Nuova sezione Formazione"
       url: "/formazione/"
       blank: false
@@ -276,26 +286,7 @@ headerPost:
         color: "primary"
         hidden: true
         addonClasses: "me-2"
-    # - title: "Nuova sezione Formazione"
-    #   url: "/formazione/"
-    #   blank: false
-    #   icon:
-    #     icon: "sprites.svg#it-bookmark" # it-flag, it-bookmark #I
-    #     size: "sm"
-    #     align: "middle"
-    #     color: "primary"
-    #     hidden: true
-    #     addonClasses: "me-2"
-    - title: "Design system .italia v1"
-      url: "/community/notizie/20241021-italia-versione-1/"
-      blank: false
-      icon:
-        icon: "sprites.svg#it-flag" # it-flag, it-bookmark #I
-        size: "sm"
-        align: "middle"
-        color: "primary"
-        hidden: true
-        addonClasses: "me-2"
+
     newsletter:
       title: Iscriviti alla mailing list
       url: "#iscrivitiNewsletter" # right now just scroll down to the form in the footer
