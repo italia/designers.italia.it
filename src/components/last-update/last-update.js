@@ -1,10 +1,9 @@
-import classNames from "classnames";
 import React from "react";
 import Icon from "../icon/icon";
 import Link from "../link/link";
 import "./last-update.scss";
 
-function LastUpdate({ pathname, lastModified, noPadding }) {
+function LastUpdate({ pathname, lastModified }) {
   let editGithubUrl = `https://github.com/italia/designers.italia.it/tree/main/src/data/content/`;
   if (pathname) {
     const filePath =
@@ -15,16 +14,14 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
 
   const columnStyle = "col-12 g-0";
 
-  const paddingStyle = classNames("px-3", { "px-lg-5": !noPadding });
-
   return (
-    <div className="last-update py-5 py-lg-7">
+    <div className="last-update py-4">
       <div className="container-xxl">
         <div className="row">
           <div className={columnStyle}>
-            <div className={paddingStyle}>
-              <div className="mb-4">
-                <span>Ultimo aggiornamento: </span>
+            <div className="d-flex flex-column flex-lg-row justify-content-lg-between px-3 px-lg-5">
+              <div className="text-secondary mb-2 mb-lg-0">
+                <strong>Ultimo aggiornamento: </strong>
                 <time dateTime={lastModified} title={lastModified}>
                   {new Date(lastModified).toLocaleDateString("it-IT", {
                     year: "numeric",
@@ -32,44 +29,40 @@ function LastUpdate({ pathname, lastModified, noPadding }) {
                     day: "numeric",
                   })}
                 </time>
+              </div>
+              <div>
                 <Link
                   to="https://creativecommons.org/licenses/by-sa/4.0/deed.it"
                   target="_blank"
                   rel="noreferrer"
-                  className="d-block d-md-inline-block text-decoration-none mt-2 mt-md-0 ms-md-5"
+                  className="text-secondary me-4"
                 >
-                  <strong className="me-2">
-                    Licenza CC BY-SA 4.0
-                    <span className="visually-hidden">
-                      (si apre in una nuova finestra)
-                    </span>
-                  </strong>
+                  Licenza CC BY-SA 4.0
+                  <span className="visually-hidden">
+                    (si apre in una nuova finestra)
+                  </span>
                   <Icon
                     icon="sprites.svg#it-external-link"
                     size="sm"
-                    color="primary"
-                    addonClasses="mb-1"
+                    color="secondary"
+                    addonClasses="ms-1 mb-1"
                   />
                 </Link>
-              </div>
-              <div className="mb-0">
                 <Link
                   to={editGithubUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="d-inline-block text-decoration-none"
+                  className="d-inline-block text-secondary"
                 >
-                  <strong className="me-2">
-                    Proponi una modifica a questa pagina
-                    <span className="visually-hidden">
-                      (si apre in una nuova finestra)
-                    </span>
-                  </strong>
+                  Proponi una modifica a questa pagina
+                  <span className="visually-hidden">
+                    (si apre in una nuova finestra)
+                  </span>
                   <Icon
                     icon="sprites.svg#it-pencil"
                     size="sm"
-                    color="primary"
-                    addonClasses="mb-1"
+                    color="secondary"
+                    addonClasses="ms-1 mb-1"
                   />
                 </Link>
               </div>

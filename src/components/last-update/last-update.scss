@@ -1,6 +1,10 @@
 
 @import "../../scss/bootstrap-breakpoints";
 
+.last-update {
+  border-top: var(--hero-kangaroo-zone-border-top);
+}
+
 //mobile only ------------------------------------------------------------------------------------------
 @include media-breakpoint-down(sm) {
 
@@ -22,12 +26,12 @@
 }
 
 //Laptop ------------------------------------------------------------------------------------------------
-@include media-breakpoint-up(xl) {
-  .last-update {
-    padding-top: calc(var(--spacer) * 24) !important;
-    padding-bottom: calc(var(--spacer) * 24) !important;
-  }
-}
+// @include media-breakpoint-up(xl) {
+//   .last-update {
+//     padding-top: calc(var(--spacer) * 24) !important;
+//     padding-bottom: calc(var(--spacer) * 24) !important;
+//   }
+// }
 
 //Desktop -----------------------------------------------------------------------------------------------
 @include media-breakpoint-up(xxl) {
