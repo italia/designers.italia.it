@@ -35,7 +35,7 @@ function LastUpdate({ pathname, lastModified }) {
                   to="https://creativecommons.org/licenses/by-sa/4.0/deed.it"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-secondary me-0 me-sm-5 d-block d-md-inline-block mt-3 mt-md-0"
+                  className="text-secondary me-0 me-md-5 d-block d-md-inline-block mt-3 mt-md-0"
                 >
                   Licenza CC BY-SA 4.0
                   <span className="visually-hidden">
@@ -52,7 +52,7 @@ function LastUpdate({ pathname, lastModified }) {
                   to={editGithubUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="d-inline-block text-secondary mt-3 mt-md-0"
+                  className="d-block d-md-inline-block text-secondary mt-3 mt-md-0"
                 >
                   Proponi una modifica a questa pagina
                   <span className="visually-hidden">
