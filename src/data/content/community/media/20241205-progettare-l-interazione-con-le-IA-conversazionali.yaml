@@ -1,0 +1,88 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Progettare l'interazione con le IA conversazionali"
+  description: "Le caratteristiche che le IA conversazionali devono avere per migliorare l’esperienza del cittadino nei servizi pubblici."
+  image: https://designers.italia.it/images/community/20241205-progettare-l-interazione-con-le-IA-conversazionali.png
+  canonical: null
+  pathname: /community/media/20241205-progettare-l-interazione-con-le-IA-conversazionali/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Progettare l'interazione con le IA conversazionali"
+    subtitle: "Le caratteristiche che le IA conversazionali devono avere per migliorare l’esperienza del cittadino nei servizi pubblici"
+    tag:
+      label: Video - Evento
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Contenuti e linguaggio, Progettazione interfacce, Intelligenza artificiale]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/B0xL28dlg60?si=aNDZgITt8a3IunkH&t=3985
+          poster: /images/community/media-thumbnails/20241205-progettare-l-interazione-con-le-IA-conversazionali.jpg
+          subtitles: /files/community/subtitles/20241205-progettare-l-interazione-con-le-IA-conversazionali.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://youtu.be/B0xL28dlg60?si=aNDZgITt8a3IunkH&t=3985)            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            L'intelligenza artificiale è un campo vasto e in continua evoluzione, che comprende un'ampia gamma di teorie, tecniche e applicazioni. Designers Italia ha partecipato a questo seminario organizzato da Formez per portare una prospettiva utente-centrica, ovvero quella di come le intelligenze artificiali conversazionali possano semplificare l'interazione degli utenti con i servizi pubblici digitali, migliorando il rapporto tra istituzioni e cittadini.
+          ctas:
+          - label: Scopri lo strumento per progettare IA conversazionali #C
+            url: "/Crea-il-profilo-di-un-intelligenza-artificiale-conversazionale/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
