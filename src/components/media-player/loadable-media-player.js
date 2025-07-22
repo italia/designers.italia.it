@@ -41,7 +41,7 @@ function MediaPlayerEl({
   let video = null;
   const t = (key) => messages[lang][key];
 
-  const videoId = `video-js-${useId()}`;
+  const videoId =  `video-js-${useId().replace(/:/g, '-')}`; // fix React useId for CSS selectors
 
   // trascription heading level
   let HLevel;
