@@ -1,0 +1,88 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Community call: i musei presentano i loro nuovi siti"
+  description: "Due esperienze concrete di progettazione di siti e servizi culturali con il modello di sito per i Musei civici"
+  image: https://designers.italia.it/images/community/media-thumbnails/20250625_community-call-musei.png
+  canonical: null
+  pathname: /community/media/20250625-community-call-i-musei-presentano-i-loro-nuovi-siti/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Community call: i musei presentano i loro nuovi siti"
+    subtitle: "Due esperienze concrete di progettazione di siti e servizi culturali con il modello di sito per i Musei civici"
+    tag:
+      label: Video - Community Call
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Adozione modelli, Community, Open source, Sviluppo interfaccia]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=AsxnSSzE-qo
+          poster: /images/community/20250625_community-call-musei.png
+          subtitles: /files/community/subtitles/20250625_community-call-musei.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=AsxnSSzE-qo)            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Il  **modello per i Musei civici** contiene le risorse per progettare siti informativi di qualità in ambito culturale, **i Musei civici di Palazzo Pianetti di Jesi e il Museo Leonardiano di Vinci**, insieme ai loro fornitori, illustrano i loro siti, realizzati adottando il modello, raccontano il percorso intrapreso per sfruttarne le risorse e raggiungere un risultato di qualità e nel rispetto delle norme.
+          ctas:
+          - label: Vai al modello per i musei civici #C
+            url: "/musei-civici/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
