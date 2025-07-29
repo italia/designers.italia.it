@@ -275,19 +275,156 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: >
-              _Contenuti in aggiornamento, fate riferimento a UI Kit Italia e
-              alla documentazione di Bootstrap Italia._
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Comportamento
-            headingLevel: 2
-            text: >
-              _Contenuti in aggiornamento, fate riferimento a UI Kit Italia e
-              alla documentazione di Bootstrap Italia._
+
+              Uno sfondo bianco con un bordo grigio chiaro e un ombreggiatura leggera sono elementi
+              comuni a tutte le varianti di card. 
+              
+              ### Card editoriale
+
+              ![Gli elementi che formano la card editoriale](/images/design-system/componenti/card-editorial-anatomy.png)
+
+              Tutte le varianti di card editoriali posso contenere i seguenti elementi:
+              
+              1. **immagine** (opzionale), deve essere pertinente al contenuto della card, in un rapporto tra quelli disponibili e con un testo alternativo descrittivo;
+
+              2. **titolo**, deve essere breve e descrittivo del contenuto della card, con un link alla pagina di dettaglio;
+              
+              3. **sottotitolo** (opzionale), deve differire dal titolo e fornire ulteriori informazioni sul contenuto;
+              
+              4. **autore** (opzionale), mostra il nome e cognome dell'autore del contenuto;
+              
+              5. **sommario** (opzionale), fornisce una breve descrizione del contenuto della card;
+              
+              6. **categoria** (opzionale), mostra la categoria del contenuto della card;
+              
+              7. **tag** (opzionale), mostra i tag associati al contenuto della card;
+              
+              8. **data** (opzionale), mostra la data di pubblicazione del contenuto della card;
+              
+              9. **link di approfondimento** (opzionale), mostra un link per ulteriori informazioni sul contenuto della card.
+
+              A seconda della variante utilizzata, alcuni di questi elementi possono essere
+              combinati o presentati in modo diverso.
+
+              ### Card evento
+
+              ![Gli elementi che formano la card evento](/images/design-system/componenti/card-event-anatomy.png)
+
+              La card evento è una variante della card editoriale con qualche differenza:
+
+              1. **immagine** (opzionale), deve essere pertinente al contenuto della card, in un rapporto tra quelli disponibili e con un testo alternativo descrittivo;
+              
+              2. **titolo**, deve essere breve e descrittivo del contenuto della card, con un link alla pagina di dettaglio;
+              
+              3. **perdio dell'evento**, mostra il periodo di svolgimento dell'evento, come ad esempio "dal 1 gennaio al 31 dicembre 2023";
+              
+              4. **sommario** (opzionale), fornisce una breve descrizione dell'evento;
+              
+              5. **categoria** (opzionale), mostra la categoria dell'evento;
+              
+              6. **data** (opzionale), mostra la data di pubblicazione dell'evento;
+              
+              7. **link di approfondimento** (opzionale), mostra un link per ulteriori informazioni sull'evento.
+
+              ### Card media
+
+              ![Gli elementi che formano la card media](/images/design-system/componenti/card-media-anatomy.png)
+
+              La card media è una variante della card editoriale con qualche differenza:
+
+              1. **immagine**, deve essere pertinente al contenuto media (video o foto), in un rapporto tra quelli disponibili e con un testo alternativo descrittivo;
+              
+              2. **titolo**, deve essere breve e descrittivo del contenuto della card, con un link alla pagina di dettaglio;
+              
+              3. **icona**, mostra un'icona che rappresenta il tipo di contenuto media (video o foto);
+              
+              4. **sommario** (opzionale), fornisce una breve descrizione del contenuto media;
+              
+              5. **categoria** (opzionale), mostra la categoria del contenuto media;
+              
+              6. **data** (opzionale), mostra la data di pubblicazione del contenuto media;
+
+              ### Card servizio  
+
+              ![Gli elementi che formano la card service](/images/design-system/componenti/card-service-anatomy.png)
+
+              La card servizio può contenere i seguenti elementi:
+
+              1. **titolo**, deve essere breve e descrittivo del servizio, con un link alla pagina di dettaglio;
+              
+              2. **icona**, mostra un'icona che rappresenta il servizio;
+              
+              3. **sommario** (opzionale), fornisce una breve descrizione del servizio;
+              
+              4. **categoria** (opzionale), mostra la categoria del servizio;
+              
+              5. **tag** (opzionale), mostra i tag associati al servizio;
+              
+              6. **link di approfondimento** (opzionale), mostra un link per ulteriori informazioni sul servizio.
+
+              ### Card documento
+
+              ![Gli elementi che formano la card documento](/images/design-system/componenti/card-document-anatomy.png)
+
+              La card documento può contenere i seguenti elementi:
+
+              1. **titolo**, deve essere il titolo effettivo del documento, con un link al download o ad una pagina di dettaglio;
+              
+              2. **icona**, mostra un'icona che rappresenta il tipo di documento (ad esempio, PDF, DOCX, XLSX);
+              
+              3. **sommario**, fornisce una breve descrizione del documento e può indicare il formato del file e il peso espresso in byte;
+              
+              4. **categoria** (opzionale), mostra la categoria del documento;
+
+              ### Card persona
+
+              ![Gli elementi che formano la card persona](/images/design-system/componenti/card-person-anatomy.png)
+
+              La card persona può contenere i seguenti elementi:
+
+              1. **nome della persona**, deve essere il nome e cognome della persona, con un link alla pagina di dettaglio;
+              
+              2. **foto**, deve essere un'immagine della persona, in un rapporto tra quelli disponibili e con un testo alternativo descrittivo; in alternativa può essere utilizzata un'icona di tipo "persona";
+              
+              3. **sottotitolo** (opzionale), fornisce ulteriori informazioni sulla persona, come ad esempio il ruolo o la posizione;
+              
+              4. **dettagli**, fornisce ulteriori informazioni sulla persona, come ad esempio il numero di telefono o l'indirizzo email;
+
+              ### Card luogo
+
+              ![Gli elementi che formano la card evento](/images/design-system/componenti/card-place-anatomy.png)
+
+              La card luogo può contenere i seguenti elementi:
+
+              1. **nome del luogo**, deve essere il nome del luogo, con un link alla pagina di dettaglio;
+              
+              2. **foto**, deve essere un'immagine del luogo, in un rapporto tra quelli disponibili e con un testo alternativo descrittivo; in alternativa può essere utilizzata un'icona di tipo "luogo";
+              
+              3. **sottotitolo** (opzionale), fornisce ulteriori informazioni sul luogo, come ad esempio la descrizione o la posizione geografica;
+              
+              4. **dettagli**, fornisce ulteriori informazioni sul luogo, come ad esempio l'indirizzo o il numero di telefono;
+              
+              5. **link mappa** (opzionale), mostra un link per ulteriori informazioni sul luogo.
+
+              ### Card link correlati
+
+              ![Gli elementi che formano la card link correlati](/images/design-system/componenti/card-links-anatomy.png)
+
+
+              La card link correlati può contenere i seguenti elementi:
+
+              1. **immagine** (opzionale), deve essere pertinente al contenuto della card, in un rapporto tra quelli disponibili e con un testo alternativo descrittivo;
+              
+              2. **titolo**, deve essere breve e descrittivo del contenuto della card, con un link alla pagina di dettaglio;
+
+              3. **sottotitolo** (opzionale), fornisce ulteriori informazioni sull'argomento;
+
+              4. **sommario** (opzionale), completa la descrizione del contenuto della card;
+
+              3. **lista di link**, mostra un elenco di link correlati al contenuto della card, ciascuno con un link alla pagina di dettaglio;
+              
+              4. **link secondario** (opzionale), mostra un link per ulteriori informazioni sul contenuto della card.
+
       - full: true
         noSpace: true
         paddingLeft: true
@@ -297,8 +434,17 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: >
-              _Contenuti in aggiornamento, fate riferimento a UI Kit Italia e
-              alla documentazione di Bootstrap Italia._
+
+              Tutte le misure indicate sono espresse in `px`.
+              
+              ![Le specifiche di design della card editoriale](/images/design-system/componenti/card-editorial-specs.png)
+              ![Le specifiche di design della card servizio](/images/design-system/componenti/card-service-specs.png)
+              ![Le specifiche di design della card documento](/images/design-system/componenti/card-document-specs.png)
+              ![Le specifiche di design della card servizio](/images/design-system/componenti/card-service-specs.png)
+              ![Le specifiche di design della card persona](/images/design-system/componenti/card-person-specs.png)
+              ![Le specifiche di design della card luogo](/images/design-system/componenti/card-place-specs.png)
+              ![Le specifiche di design della card link correlati](/images/design-system/componenti/card-links-specs.png)
+
       - full: true
         noSpace: true
         paddingLeft: true
