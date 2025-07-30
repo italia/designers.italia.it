@@ -1,40 +1,28 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/componenti/alert.json
   template:
     name: design-system-component
-
 seo:
   name: Alert - Designers Italia
-  description: "Breve messaggio di testo con uno stile grafico distintivo, utile per avvisare gli utenti di un evento o di un'azione che richiede la loro attenzione"
-  image: null
-  twitterImage: null
+  description: >-
+    Breve messaggio di testo con uno stile grafico distintivo per avvisare gli
+    utenti di un evento o di un'azione che richiede la loro attenzione.
   canonical: null
   pathname: /design-system/componenti/alert/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Alert
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Breve messaggio di testo con uno stile grafico distintivo, utile per avvisare gli utenti di un evento o di un'azione che richiede la loro attenzione"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: >-
+      Breve messaggio di testo con uno stile grafico distintivo per avvisare gli
+      utenti di un evento o di un'azione che richiede la loro attenzione
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -45,23 +33,19 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Messaggi]
-
+      tagsDesignSystem:
+        - Messaggi
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
+      id: preview-use
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/alert/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -71,15 +55,34 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              Il componente Alert permette di creare messaggi di avviso per gli utenti. Questi messaggi sono utili per comunicare informazioni importanti o per avvisare gli utenti di situazioni che richiedono la loro attenzione, senza interrompere il flusso di navigazione.
+            text: >
+              Il componente Alert permette di creare messaggi di avviso per gli
+              utenti. Questi messaggi sono utili per comunicare informazioni
+              importanti o per avvisare gli utenti di situazioni che richiedono
+              la loro attenzione, contestualmente al flusso di navigazione e
+              senza provocare interruzioni.
 
-              Il componente Alert è usato per messaggi immediati e temporanei, come:
-              - errori o problemi tecnici;
-              - eventi importanti che richiedono attenzione, come una scadenza imminente o un imprevisto;
-              - conferme di completamento.
+
+              Un alert è usato per messaggi immediati e temporanei, come:
+
+              - **errori** o problemi tecnici;
+
+              - **eventi importanti** per cui è richiesta attenzione, come una
+              scadenza imminente o un imprevisto;
+
+              - **conferme** di completamento.
 
 
+              ### Alternative a questo componente
+
+              - **[Callout](/design-system/componenti/callout/)**: permette di
+              evidenziare delle informazioni testuali in pagina.
+
+              - **[Modal](/design-system/componenti/modal/)**: avvisa l’utente
+              di azioni necessarie da compiere.
+
+              - **[Notifications](/design-system/componenti/notifications/)**:
+              avvisi a comparsa temporanei in sovraimpressione sulla schermata.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -88,57 +91,191 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              - Personalizza il componente Alert per riflettere il tipo di messaggio di avviso.
-              - Aggiungi un pulsante di chiusura per consentire all'utente di chiudere l'avviso.
+            text: >
+              - Personalizza l'alert per riflettere il tipo di messaggio di
+              avviso.
+
+              - Aggiungi un pulsante di chiusura per consentire all'utente di
+              chiudere l'alert.
+
 
               ### Attenzione a
-              - Non usarlo per avvisi e situazioni non importanti, potresti distrarre gli utenti e causare confusione.
+
+              - Evita di usare un alert per avvisi e situazioni non importanti,
+              potresti distrarre gli utenti e causare confusione.
+
 
               ### Buone pratiche sui contenuti
+
               - Assicurati che il testo del messaggio sia chiaro e conciso.
-              - Se il messaggio indica un errore, fornisci all’utente indicazioni chiare su come risolverlo.
-              - Usa collegamenti ipertestuali per rimandare a pagine di approfondimento, se rilevante.
 
+              - Se il messaggio indica un errore, fornisci all’utente
+              indicazioni chiare su come risolverlo.
+
+              - Usa collegamenti ipertestuali per rimandare a pagine di
+              approfondimento, se rilevante.
       - full: true
         noSpace: true
         paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Alternative a questo componente
-            headingLevel: 2
-            text: |
-              - [Callout](/design-system/componenti/callout/), permette di evidenziare delle informazioni testuali in pagina.
-              - [Modal](/design-system/componenti/modal/), avvisa l’utente di azioni necessarie da compiere.
-              - [Notifications](/design-system/componenti/notifications/), avvisi a comparsa temporanei in sovraimpressione sulla schermata.
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
         components:
           - name: TextImageCta
             noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: false
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/componenti/alert/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-alert--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/alert
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -147,16 +284,26 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              *Immagine in via di definizione*
+            text: >
+              ![Gli elementi che formano il componente
+              alert](/images/design-system/componenti/alert-anatomy.png)
 
-              1. **Contenitore dell’Alert**
-              2. **Barra indicatrice della tipologia di Alert**: una barra che cambia colore in base alla tipologia di avviso
-              3. **Icona**: elemento grafico che cambia in base alla tipologia di avviso
-              4. **Testo dell’Alert**: il messaggio dell’avviso, che può contenere collegamenti ipertestuali
-              5. **Pulsante di chiusura**
+              Il componente alert è composto da:
 
+              1. **contenitore** del messaggio di avviso;
 
+              2. **barra indicatrice** che cambia colore in base alla tipologia
+              di avviso;
+
+              3. **titolo** del messaggio di avviso, deve essere chiaro e breve;
+
+              4. **icona**, elemento grafico che cambia in base alla tipologia
+              di avviso;
+
+              5. **pulsante di chiusura** rappresentato da una semplice icona;
+
+              6. **testo**, il messaggio dell’avviso che può contenere
+              collegamenti ipertestuali.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -165,23 +312,33 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
+            text: >
               Un alert può apparire:
-              - prima di tutti i contenuti di interfaccia dopo l’header per i messaggi di status generali, come le conferme di salvataggio o invio;
-              - in un componente o una sezione delimitata, come i messaggi di errore nelle sezioni di un form;
-              - sopra al contenuto in pagina (on top) quando usata come notifica.
+
+              - all'inizio, dopo l'intestazione, per messaggi generali, come
+              conferme di salvataggio o invio;
+
+              - all'interno di un componente specifico, come messaggi di errore
+              in un modulo;
+
+              - sopra il contenuto della pagina, quando usato come notifica.
+
 
               In base al tipo di avviso, la barra indicatrice può essere:
-              - blu (info), per i messaggi informativi;
-              - verde (success), per i messaggi di conferma;
-              - marrone (warning), per gli avvertimenti;
-              - rossa (danger), per gli errori critici.
+
+              - **blu** (info), per i messaggi informativi;
+
+              - **verde** (success), per i messaggi di conferma;
+
+              - **marrone** (warning), per gli avvertimenti;
+
+              - **rossa** (danger), per gli errori critici.
+
 
               ### Interazione
-              *In stesura*
 
-
-
+              Cliccando sul pulsante di chiusura, l'alert viene rimosso
+              dall'interfaccia.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -190,10 +347,15 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              ![Gli elementi che formano il componente
+              alert](/images/design-system/componenti/alert-specs-1.png)
 
+              ![Gli elementi che formano il componente
+              alert](/images/design-system/componenti/alert-specs-2.png)
 
+              ![Gli elementi che formano il componente
+              alert](/images/design-system/componenti/alert-specs-3.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -201,30 +363,28 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
+      id: preview-dev
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/alert/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -233,16 +393,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

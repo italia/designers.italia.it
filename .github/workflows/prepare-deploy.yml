@@ -1,0 +1,33 @@
+on:
+  workflow_dispatch:
+
+jobs:
+  prepare-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pages
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: 'gh-pages'
+      - name: Checkout repo main branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          path: mainrepo
+      - name: Fixup git permissions
+        shell: bash
+        run: git config --global --add safe.directory "$GITHUB_WORKSPACE"
+      - name: git config
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+      - run: |
+          rm -rf images
+          mv ./mainrepo/static/images .
+          rm -rf mainrepo
+          git add .
+          git commit -m "chore: publish images"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

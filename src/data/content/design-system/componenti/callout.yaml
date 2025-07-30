@@ -1,40 +1,28 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/componenti/callout.json
   template:
     name: design-system-component
-
 seo:
   name: Callout - Designers Italia
-  description: "Un box che presenta testi in uno stile visivo distintivo, utile per evidenziare contenuti su lunghe pagine testuali"
-  image: null
-  twitterImage: null
+  description: >-
+    Box con uno stile visivo distintivo per evidenziare contenuti testuali
+    importanti su pagine lunghe.
   canonical: null
   pathname: /design-system/componenti/callout/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Callout
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Un box che presenta testi in uno stile visivo distintivo, utile per evidenziare contenuti su lunghe pagine testuali"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: >-
+      Box con uno stile visivo distintivo per evidenziare contenuti testuali
+      importanti su pagine lunghe
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -45,23 +33,19 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Contenuti]
-
+      tagsDesignSystem:
+        - Contenuti
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
+      id: preview-use
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/callout/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -71,9 +55,14 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Utilizza il componente Callout per attirare l'attenzione del
+              lettore su un'informazione particolarmente importante. 
 
+
+              Un callout è perfetto per mostrare in pagina messaggi informativi
+              ma anche di errore o successo, oppure per fornire suggerimenti o
+              consigli utili.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -82,35 +71,189 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Inserisci il callout in un punto strategico della pagina, come
+              all'inizio di una sezione per fornire un riepilogo o una
+              panoramica dei contenuti che seguiranno.
 
+
+              ### Attenzione a 
+
+              - Usare il callout con parsimonia per attirare l'attenzione
+              dell'utente su punti specifici dell'interazione, ma senza
+              sovraccaricare la pagina.
+
+
+              ### Buone pratiche sui contenuti
+
+              - Il testo utilizzato per il messaggio dovrebbe essere breve e
+              conciso.
+
+              - Nel caso che i contenuti del callout contengano numerose
+              informazioni dividi il testo in paragrafi per una migliore
+              leggibilità. 
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Verifica in corso
+                      addonClasses: bg-warning
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Verifica in corso
+                      addonClasses: bg-warning
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
-        components:
-          - name: TextImageCta
-            noSpace: true
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/componenti/callout/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-callout--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/callout
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -119,20 +262,50 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              ![Gli elementi che formano il
+              callout](/images/design-system/componenti/callout-anatomy.png)
 
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Comportamento
-            headingLevel: 2
-            text: |
-              *In stesura*
 
+              Il componente callout è composta da:
+
+              1. **bordo**, che può essere disposto su tutti i lati o solo sul
+              lato sinistro;
+
+              2. **titolo del messaggio** in evidenza;
+
+              3. **icona** rappresentativa della tipologia di messaggio;
+
+              4. **testo del messaggio**, che può essere composto da uno o più
+              paragrafi di testo e contenere link.
+
+
+              ### Callout Approfondimento
+
+
+              ![Gli elementi che formano il callout
+              approfondimento](/images/design-system/componenti/callout-approfondimento-anatomy.png)
+
+
+              Il callout *approfondimento* ha un aspetto radicalmente differente
+              ed è composta da:
+
+              1. **colore di sfondo**, che porta maggiormente in evidenza in
+              contenuti;
+
+              2. **titolo del messaggio**;
+
+              3. **icona**;
+
+              4. **angolo piegato**, che simula un foglio;
+
+              5. **testo del messaggio**, che può essere composto da uno o più
+              paragrafi di testo e contenere link o pulsanti;
+
+              6. **pulsante "leggi tutto"**, per espandere il contenuto nel caso
+              fosse troppo lungo;
+
+              7. **pulsante azione** come il download del testo o documento.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -141,10 +314,29 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Tutte le misure indicate sono espresse in `px`.
 
 
+              ### Callout
+
+              ![Specifiche di design del
+              callout](/images/design-system/componenti/callout-specs.png)
+
+              ![Specifiche di design del
+              callout](/images/design-system/componenti/callout-title-specs.png)
+
+
+              ### Callout Highlight
+
+              ![Specifiche di design del callout
+              highlight](/images/design-system/componenti/callout-highlight-specs.png)
+
+
+              ### Callout Approfondimento
+
+              ![Specifiche di design del callout
+              highlight](/images/design-system/componenti/callout-approfondimento-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -152,30 +344,28 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
+      id: preview-dev
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/callout/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -184,16 +374,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

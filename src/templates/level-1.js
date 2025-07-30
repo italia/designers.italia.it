@@ -17,6 +17,7 @@ import Feedback from "../components/feedback/feedback";
 import Hero from "../components/hero/hero";
 import SectionIntro from "../components/section-intro/section-intro";
 import TitleText from "../components/title-text/title-text";
+import SectionMedia from "../components/section-media/section-media";
 import Highlight from "../components/highlight/highlight";
 import ImageIcons from "../components/image-icons/image-icons";
 import HighlightCards from "../components/highlight-cards/highlight-cards";
@@ -36,8 +37,8 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} location={location} />
-      <Skiplinks data={skipLinksData.skiplinks} />
       <Header data={HeaderData}>
+        <Skiplinks data={skipLinksData} />
         <HeaderSlim data={HeaderData.headerSlim} />
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter} />
@@ -58,7 +59,10 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
         {Pagedata.components.titleText && (
           <TitleText {...Pagedata.components.titleText} />
         )}
-
+        {Pagedata.components.sectionsMedia &&
+          Pagedata.components.sectionsMedia.map((section, index) => (
+            <SectionMedia key={`sectionMedia-${index}`} {...section} />
+          ))}
         {Pagedata.components.highlightsLoop1 &&
           Pagedata.components.highlightsLoop1.map((hl, index) => (
             <Highlight key={`hl-${index}`} {...hl} />

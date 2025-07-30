@@ -279,7 +279,7 @@ function FormNo({ onResult, state }) {
 
         <div className="mt-5">
           <button
-            type="button"
+            type="submit"
             className="btn btn-primary"
             disabled={
               (!who && !from && !details) || state === FeedbackState.Loading

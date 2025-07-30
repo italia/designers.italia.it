@@ -8,8 +8,6 @@ metadata:
 seo:
   name: Design tokens
   description: "Le scelte visive strutturali per la progettazione e lo sviluppo delle interfacce digitali"
-  image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/fondamenti/design-tokens/
 
@@ -71,7 +69,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -132,7 +130,7 @@ components:
 
             Sono disponibili in formato `json` sul repository GitHub [design-tokens-italia](https://github.com/italia/design-tokens-italia).
 
-            Sono disponibili come stili di Figma in [UI Kit Italia](https://www.figma.com/file/2gaQw683ZazAPEILQtFLZF/%5BDesign-system-%E2%80%A8del-Paese%5D?node-id=986%3A122&t=9FQglVyiZQuCL7nt-1).
+            Sono disponibili come stili di Figma in [UI Kit Italia](https://www.figma.com/community/file/1105848677422572920/ui-kit-italia).
 
         - name: TextImageCta
           title: Nomenclatura e organizzazione
@@ -154,7 +152,7 @@ components:
 
             Il **nome** di un _token_ è composto da una sequenza di termini separati dal simbolo “-”.
 
-            ![La sequenza di termini che compongono il nome di un design token](/images/design-system/token-livelli.png "I termini del nome di un design token")
+            ![La sequenza di termini che compongono il nome di un design token](/images/design-system/fondamenti/token-livelli.png "I termini del nome di un design token")
 
             Il nome di token globale descrive il valore grezzo – anche detto raw – che contiene. Esempio: `color-blue-40: #0066cc`.
 
@@ -175,7 +173,7 @@ components:
 
             I token globali rappresentano i fondamenti visivi strutturali dell'intero design system. Sono agnostici rispetto allo strumento che stai utilizzando.
 
-            ![Un esempio di un design token globale](/images/design-system/global-token.png "Un esempio di design token globale")
+            ![Un esempio di un design token globale](/images/design-system/fondamenti/global-token.png "Un esempio di design token globale")
 
             Il nome di _token_ globale descrive il valore grezzo – anche detto _raw_ – che contiene. Esempio: `color-blue-40: #0066cc`
 
@@ -189,7 +187,7 @@ components:
 
             I token semantici rappresentano decisioni progettuali che possono essere riutilizzate per più elementi e componenti dell’interfaccia.
 
-            ![Un esempio di un design token semantico](/images/design-system/semantic-token.png "Un esempio di un design token semantico")
+            ![Un esempio di un design token semantico](/images/design-system/fondamenti/semantic-token.png "Un esempio di un design token semantico")
 
             Sono detti semantici perché il nome comunica il caso d'uso previsto.
 
@@ -214,12 +212,12 @@ components:
             ##### Casi d'uso
 
             Esempio di un token specifico che referenzia un token semantico:
-            ![Un esempio di un design token specifico](/images/design-system/specific-token-reference.png "Un esempio di un design token specifico")
+            ![Un esempio di un design token specifico](/images/design-system/fondamenti/specific-token-reference.png "Un esempio di un design token specifico")
 
             Questo approccio è raccomandato nel caso in cui si voglia gestire l’aspetto di un elemento o componente in modo circoscritto, pur riutilizzando token semantici, dove disponibili.
 
             Esempio di un token specifico che utilizza direttamente un valore grezzo (raw):
-            ![Un esempio di un design token specifico](/images/design-system/specific-token.png "Un esempio di un design token specifico")
+            ![Un esempio di un design token specifico](/images/design-system/fondamenti/specific-token.png "Un esempio di un design token specifico")
 
             Questo approccio è raccomandato nel caso in cui non ci siano token semantici riutilizzabili per definire lo stile di un elemento o componente.
 
@@ -229,7 +227,8 @@ components:
           noSpace: true
           ctas:
           - label: "Vai a UI Kit Italia" #C
-            url: https://www.figma.com/file/2gaQw683ZazAPEILQtFLZF/%5BDesign-system-%E2%80%A8del-Paese%5D?node-id=986%3A122&t=9FQglVyiZQuCL7nt-1 #M
+            url: https://www.figma.com/community/file/1105848677422572920/ui-kit-italia #M
+            screenReaderText: " (si apre in una nuova finestra)"
             blank: true #M #C true if new tab for external links
            
             icon:
@@ -251,6 +250,7 @@ components:
           ctas:
           - label: "Vai al repository Design Tokens Italia" #C
             url: https://github.com/italia/design-tokens-italia #M
+            screenReaderText: " (si apre in una nuova finestra)"
             blank: true #M #C true if new tab for external links
            
             icon:

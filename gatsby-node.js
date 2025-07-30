@@ -4,9 +4,9 @@ const { createRemoteFileNode } = require("gatsby-source-filesystem");
 
 const jsYaml = require(`js-yaml`);
 
-const _ = require("lodash");
 const path = require("path");
 const express = require("express");
+const slugify = require("slugify");
 const { fetchDataFiles } = require("./server/fetchDataFiles");
 const { findValues } = require("./server/utils/findValues");
 
@@ -14,21 +14,6 @@ const isRemoteAsset = (assetPath) => assetPath.startsWith("http");
 
 exports.onCreateDevServer = ({ app }) => {
   app.use(express.static("public"));
-};
-
-exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
-  if (stage === "build-html" || stage === "develop-html") {
-    actions.setWebpackConfig({
-      module: {
-        rules: [
-          {
-            test: /bootstrap-italia/,
-            use: loaders.null(),
-          },
-        ],
-      },
-    });
-  }
 };
 
 exports.createSchemaCustomization = ({ actions }) => {
@@ -191,7 +176,10 @@ exports.createPages = async ({ graphql, actions }) => {
       console.log(`Creating tag page: ${tag.fieldValue} `);
     }
     createPage({
-      path: `/ argomenti / ${_.kebabCase(tag.fieldValue)} /`,
+      path: `/argomenti/${slugify(tag.fieldValue, {
+        strict: true,
+        lower: true,
+      })}/`,
       component: tagTemplate,
       context: {
         tag: tag.fieldValue,
@@ -220,9 +208,10 @@ exports.createPages = async ({ graphql, actions }) => {
       console.log(`Creating tag page: ${tag.fieldValue}`);
     }
     createPage({
-      path: `/design-system/componenti/utili-per/${_.kebabCase(
-        tag.fieldValue,
-      )}/`,
+      path: `/design-system/componenti/utili-per/${slugify(tag.fieldValue, {
+        strict: true,
+        lower: true,
+      })}/`,
       component: tagDesignSystemTemplate,
       context: {
         tag: tag.fieldValue,

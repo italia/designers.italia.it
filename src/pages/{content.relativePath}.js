@@ -110,8 +110,6 @@ export const query = graphql`
       seo {
         name
         description
-        image
-        twitterImage
         # canonical
         pathname
       }
@@ -236,6 +234,7 @@ export const query = graphql`
           reversedMobile
           buttons {
             label
+            ariaLabel
             btnStyle
             url
             addonStyle
@@ -250,12 +249,6 @@ export const query = graphql`
           centered
           column
           specialKangarooComponent
-          titleTag {
-            label
-            # url
-            addonClasses
-            screenReaderText
-          }
           noBorder
           iconImgAlt
         }
@@ -287,6 +280,7 @@ export const query = graphql`
           text
           col4
           background
+          nopadtop
           buttons {
             btnStyle
             label
@@ -294,6 +288,7 @@ export const query = graphql`
             # disabled
             url
             blank
+            ariaLabel
             icon {
               icon
               color
@@ -355,26 +350,24 @@ export const query = graphql`
             tags
           }
         }
-        highlightsLoop {
-          title
-          subtitle
-          id
-          headingLevel
-          big
-          background
-          specular
-          buttons {
-            label
-            btnStyle
-            url
-            addonStyle
-            # disabled
-          }
-          # text
-        }
+        # highlightsLoop {
+        #   title
+        #   subtitle
+        #   headingLevel
+        #   big
+        #   background
+        #   specular
+        #   buttons {
+        #     label
+        #     btnStyle
+        #     url
+        #     addonStyle
+        #     # disabled
+        #   }
+        #   # text
+        # }
         highlightsLoop1 {
           title
-          id
           headingLevel
           background
           big
@@ -402,7 +395,6 @@ export const query = graphql`
         }
         # highlightsLoop2 {
         #  title
-        #  id
         #  headingLevel
         #  big
         #  background
@@ -431,7 +423,6 @@ export const query = graphql`
           title
           subtitle
           big
-          id
           specular
           img
           alt
@@ -439,11 +430,46 @@ export const query = graphql`
           background
           buttons {
             label
+            ariaLabel
             btnStyle
             url
             addonStyle
           }
           padBottom
+        }
+        sectionsMedia {
+          fullColumn
+          full
+          noSpace
+          centered
+          background
+          id
+          headingLevel
+          title
+          hiddenSectionTitle
+          # buttons {
+          #  label
+          #  blank
+          #  btnStyle
+          #  url
+          #  icon {
+          #    icon
+          #    size
+          #    color
+          #    align
+          #    addonClasses
+          #  }
+          # }
+          components {
+            name
+            lang
+            url
+            poster
+            subtitles
+            trascription
+            trascriptionLabel
+            trascriptionHeadingLevel
+          }
         }
         highlightCards {
           id
@@ -498,6 +524,7 @@ export const query = graphql`
             label
             url
             blank
+            ariaLabel
             icon {
               icon
               color
@@ -521,6 +548,7 @@ export const query = graphql`
           }
         }
         sectionIntroImg {
+          id
           title
           subtitle
           background
@@ -639,6 +667,7 @@ export const query = graphql`
                 }
               }
             }
+            ctasVertical
             ctas {
               label
               url
@@ -669,6 +698,8 @@ export const query = graphql`
             lang
             url
             trascription
+            trascriptionLabel
+            trascriptionHeadingLevel
             subtitles
             poster
             variantName
@@ -923,13 +954,12 @@ export const query = graphql`
 `;
 export default Page;
 
-export function Head({ data: { content } }) {
+export function Head({ data: { content, contentOgImage } }) {
   return (
     <Seo
       title={content.seo.name}
       description={content.seo.description}
-      image={content.seo.image}
-      twitterImage={content.seo.twitterImage}
+      image={contentOgImage.attributes.publicURL}
       pathname={content.seo.pathname}
       canonical={content.seo.canonical}
     />

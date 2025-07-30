@@ -7,9 +7,8 @@ metadata:
 
 seo:
   name: Per designer
-  description: Tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
-  image: null
-  twitterImage: null
+  description: Tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici.
+  image: https://designers.italia.it/images/design-system/uikit.jpg
   canonical: null
   pathname: /design-system/come-iniziare/per-designer/
 
@@ -71,7 +70,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+            url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -136,7 +135,8 @@ components:
         - name: TextImageCta
           title: Versione corrente
           noSpace: true
-          # text: |
+          text: |
+            Questa è **la versione 3 di UI Kit Italia**, risorsa ufficiale del design system del Paese: l’insieme di fondamenti e componenti utili ai designer per progettare e prototipare siti e servizi digitali della Pubblica Amministrazione che rispettano le norme e semplificano la vita dei cittadini.
           ctas:
           - label: Vai alla community @designersitalia #C
             screenReaderText: " (si apre in una nuova finestra)"
@@ -164,7 +164,9 @@ components:
         - name: TextImageCta
           title: Altri formati e changelog
           headingLevel: 4
-          # text: |
+          noSpace: false
+          text: |
+            UI Kit Italia è disponibile dalla **community Figma** e scaricabile in locale (**anche in formato Sketch**) dal repository GitHub dedicato. Sul repository è inoltre disponibile il diario delle modifiche ed evoluzioni del kit (changelog). 
           ctas:
           - label: Vai al repository dedicato #C
             screenReaderText: " UI Kit Italia (si apre in una nuova finestra)"
@@ -188,6 +190,7 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+      
 
         - name: TextImageCta
           title: Come utilizzarlo in Figma
@@ -195,7 +198,7 @@ components:
           text: |
             #### Se hai un account "Free"
             - Vai alla [versione corrente](https://www.figma.com/community/file/1105848677422572920);
-            - **Copia UI Kit Italia nei draft** del tuo profilo.
+            - **copia UI Kit Italia nei draft** del tuo profilo.
 
             Non è possibile aggiungerlo come libreria, ma puoi utilizzarlo con "approccio playground":
             - **aggiungi una nuova pagina**, o utilizza la pagina Playground;
@@ -209,36 +212,59 @@ components:
 
             #### Se hai un account "Professional"
             - Vai alla [versione corrente](https://www.figma.com/community/file/1105848677422572920);
-            - **Copia UI Kit Italia nei draft** del tuo profilo.
-            - **Sposta UI Kit Italia dai draft in un team**;
-            - **Pubblica stili e componenti** della tua copia appena spostata;
-            - **Crea un nuovo progetto** o apri il progetto dove vuoi usare i componenti di UI Kit Italia;
-            - **Aggiungi al progetto come libreria**, dal pannello *Asset*, la tua copia di UI Kit Italia appena pubblicata.
+            - **copia UI Kit Italia nei draft** del tuo profilo;
+            - **sposta la tua copia** dai draft in un team (ti suggeriamo di chiuderlo e riaprirlo dopo spostato);
+            - **pubblicala come libreria**, includendo stili e componenti (un attimo di pazienza che la pubblicazione prende un po' di tempo);
+            - **crea un nuovo progetto** o apri il progetto dove vuoi usare i componenti di UI Kit Italia;
+            - **aggiungi la libreria** appena pubblicata al progetto, utilizzando il pannello Assets/Libraries.
 
             ##### Come aggiornare all'ultima versione
             - Vai alla [versione corrente](https://www.figma.com/community/file/1105848677422572920);
-            - **Copia il nuovo UI Kit Italia nei draft** del tuo profilo;
-            - **Sposta il nuovo UI Kit Italia dai draft nel team** dove è presente la versione precedente;
-            - **Rimuovi** la versione precedente dal team;
-            - **Pubblica stili e componenti** dalla nuova versione;
-            - **Apri il progetto** da aggiornare;
-            - All'avviso di **libreria mancante** nel pannello *Asset*, **seleziona e scegli quella appena pubblicata**.
-
-            Stili e componenti verranno ricollegati in automatico.
-
-        - name: TextImageCta
-          title: Se utilizzi altre soluzioni
-          text: |
-            _In stesura_
+            - **copia il nuovo UI Kit Italia nei draft** del tuo profilo;
+            - **sposta la tua copia dai draft nel team** dove è presente la versione precedente (ti suggeriamo di chiuderlo e riaprirlo dopo spostato);
+            - **rimuovi** la versione precedente dal team;
+            - **pubblica stili e componenti** dalla nuova versione (un attimo di pazienza che la pubblicazione prende un po' di tempo);
+            - **apri il progetto** da aggiornare;
+            - all'avviso di **libreria mancante** nel pannello Assets/Libraries, **seleziona e scegli quella appena pubblicata**. Stili e componenti verranno ricollegati in automatico.
 
 
     - full: true
-      noSpace: true
+      noSpace: false
       paddingLeft: true
       title: Standard, open design e partecipazione
       text: Processi e risorse per la gestione di UI Kit Italia e Design Tokens Italia
       background: null
       components:
+
+        - name: TextImageCta
+          title: Conversione da Figma a Sketch
+          noSpace: true
+          text: |
+            La conversione tra il formato Figma, nativo di UI Kit Italia, e il [formato aperto Sketch](https://github.com/sketch-hq/sketch-document), è realizzata grazie al convertitore open source “fig2sketch”. **Il processo di conversione è automatizzato e a disposizione della community** attraverso un repository template e un'azione pubblicata nel marketplace GitHub Actions. 
+          ctas:
+          - label: Vai al repository template #C
+            screenReaderText: " (si apre in una nuova finestra)"
+            url: https://github.com/italia/design-ui-kit-template/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Vai all'azione GitHub Actions #C
+            screenReaderText: " (si apre in una nuova finestra)"
+            url: https://github.com/marketplace/actions/figma-to-sketch-conversion #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
         - name: TextImageCta
           title: Modello di contribuzione
           noSpace: true
@@ -265,7 +291,6 @@ components:
           - label: Vai al fondamento Accessibilità #C
             url: "/design-system/fondamenti/accessibilita/" #M
             blank: false #M #C true if new tab for external links
-           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary

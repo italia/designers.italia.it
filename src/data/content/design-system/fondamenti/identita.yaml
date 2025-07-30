@@ -1,0 +1,253 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+  redirect_from:
+    - /sistema-di-identita
+    - /identita-visiva
+    - /identita-coordinata
+    - /identita
+    - /nation-brand
+    - /design-system/identita
+    - /design-system/brand-it
+    - /design-system/brand
+    - /design-system/marca-it
+    - /design-system/marca
+    - /design-system/sistema-di-identita
+    - /design-system/identita-visiva
+    - /design-system/identita-coordinata
+    - /design-system/fondamenti/identita-coordinata
+
+seo:
+  name: Identità
+  description: "Seguire un sistema integrato di identità per lo stile e l'esperienza d'uso dei servizi digitali pubblici ne migliora l'esperienza, li rende facilmente riconoscibili e aumenta la fiducia nelle persone che li utilizzano."
+  image: https://designers.italia.it/images/design-system/fondamenti/identita-scala-nazionale.png
+  canonical: null
+  pathname: /design-system/fondamenti/identita/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Identità
+    column: true
+    subtitle: "Seguire un sistema integrato di identità per lo stile e l'esperienza d'uso dei servizi digitali pubblici ne migliora l'esperienza, li rende facilmente riconoscibili e aumenta la fiducia nelle persone che li utilizzano"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Responsabile progetto, Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia,Sviluppo interfaccia]
+
+  sectionsEditorial:
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/image-icons-fullwidth.jpg
+    #       alt: Descrizione immagine grande
+
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Un'esperienza coerente per i servizi pubblici italiani
+      text: Un sistema integrato di identità aperta per le sfide dell'Italia digitale
+      background: null
+      components:
+        - name: TextImageCta
+          # title: Come costruiamo i "numeri versione"
+          noSpace: true
+          text: |
+            La **semplicità d’uso** è il primo elemento distintivo dell’esperienza che i servizi digitali pubblici di qualità devono proiettare verso le persone. Nel contesto di prototipazione e realizzazione di interfacce digitali, questa semplicità ha tre dimensioni fondamentali: 
+
+            1. **accessibilità;** 
+            2. **riconoscibilità e coerenza visiva;** 
+            3. **funzionalità minime e coerenza funzionale.** 
+             
+            Per l’[accessibilità](/design-system/fondamenti/accessibilita/), è disponibile un fondamento dedicato nel quale approfondire norme, approccio e strumenti. Gli altri due elementi di coerenza, che costituiscono il fulcro del sistema di identità dell'esperienza dei servizi pubblici italiani, sono descritti di seguito. 
+          ctas:
+          - label: "Vai al fondamento Accessibilità" #C
+            url: "/design-system/fondamenti/accessibilita/" #M
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+    - full: true
+      noSpace: true
+      paddingLeft: true
+      title: Riconoscibilità e coerenza d'uso
+      text: È essenziale che le persone possano riconoscere immediatamente di essere all'interno di un servizio digitale pubblico a cura della Pubblica Amministrazione italiana. Inoltre, dovrebbero essere messe in grado di navigare attraverso vari servizi senza dover imparare a gestire pattern di utilizzo diversi per ogni Ente o tipologia di servizio.
+      background: null
+      components:
+        - name: TextImageCta
+          noSpace: true
+          text: |
+            ### Contesto normativo
+            Le **[Linee guida di design per i siti internet e i servizi digitali della PA](/normativa/linee-guida-di-design)**, emanate ai sensi del CAD ex. Art. 53-1ter, indicano nel [requisito 4.5](/normativa/linee-guida-di-design/requisito-4-5/) che: 
+
+            - SI DEVONO utilizzare, ove disponibili, **modelli di design realizzati per specifiche tipologie di siti internet e servizi digitali**; 
+
+            - SI DEVONO realizzare, nell’ambito dello stesso sito internet o servizio digitale, **interfacce coerenti nello stile e nell’esperienza d’uso, privilegiando le indicazioni e gli strumenti previsti su https://designers.italia.it**; 
+
+            Queste due azioni, che nascono con la finalità di descrivere come mettere a disposizione interfacce semplici da utilizzare per i servizi pubblici italiani, ne orientano nello stile e nell'esperienza d'uso anche il **sistema di identità**, visiva e non solo.
+
+            ### Indicazioni sulla coerenza
+
+            #### Servizi digitali **su scala nazionale**
+
+            Se realizzi servizi digitali su scala nazionale:
+            - **ospitali su domini chiaramente istituzionali**, come `gov.it` o `italia.it`, e loro sottodomini; 
+            - **usa il componente [Header](/design-system/componenti/header/) e il componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
+            - **usa Titillium come carattere tipografico (font) principale**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento [Tipografia](/design-system/fondamenti/tipografia/);
+            - **usa il colore primario Blu Italia `#0066CC`**, in modo coerente e con le accortezze descritte nel fondamento [Colori](/design-system/fondamenti/colori/).
+
+    - full: true
+      noSpace: true
+      paddingLeft: false
+      components:
+        - name: ImgFull
+          isDSPreview: true
+          img: /images/design-system/fondamenti/identita-scala-nazionale.png
+          alt: "Le quattro caratteristiche di coerenza su servizio di scala nazionale indicate nell'elenco che precede."
+  
+    - full: true
+      noSpace: true
+      paddingLeft: true 
+      components:
+        - name: TextImageCta
+          noSpace: true
+          text: |
+            #### Servizi digitali **su scala territoriale e/o locale**
+
+            Se realizzi servizi digitali su scala territoriale e locale:
+            - **verifica l'esistenza di un modello di sito o servizio digitale** tra quelli disponibili nella sezione [Modelli](/modelli/);
+            - **ospitali su domini chiaramente istituzionali**, o loro sottodomini (ad esempio `regione.nomeregione.it`, quelli descritti nell'[elenco di domini riservati per i comuni](https://raw.githubusercontent.com/italia/pa-website-validator/main/src/storage/municipality/allowedDomains.ts) e `.edu` per gli istituti scolastici);
+            - **usa e personalizza il componente [Header](/design-system/componenti/header/) e il componente [Footer](/design-system/componenti/footer/)**, o varianti di questi, per comunicare l'autorevolezza istituzionale del sito; 
+            - **usa Titillium come carattere tipografico (font) principale**, ed eventualmente altri caratteri secondari secondo quanto descritto nel fondamento [Tipografia](/design-system/fondamenti/tipografia/);
+            - **scegli un colore primario**, come descritto nel fondamento [Colori](/design-system/fondamenti/colori/), e **usalo in modo coerente in tutto il servizio**. 
+
+    - full: true
+      noSpace: true
+      paddingLeft: false 
+      components:
+        - name: ImgFull
+          isDSPreview: true
+          img: /images/design-system/fondamenti/identita-scala-territoriale-e-o-locale.png
+          alt: "Le cinque caratteristiche di coerenza di servizio su scala territoriale e/o locale indicate nell'elenco che precede."
+
+    - full: true
+      noSpace: true
+      paddingLeft: true 
+      components:
+        - name: TextImageCta
+          noSpace: true
+          text: |
+            #### Per essere aperti e coerenti, non uniformi
+            Per offrire un'esperienza coerente per i servizi digitali del Paese, e allo stesso tempo garantire una differenziazione sufficiente a evitare l'uniformità, puoi: 
+
+            - ri-elaborare e integrare l'aspetto visivo usando i **colori secondari** (applicabili, ad esempio, a sfondi, icone, elementi con un peso specifico secondario); 
+            - usare **media**, **illustrazioni** e **motivi grafici**;
+            - usare **animazioni** e **micro-animazioni**;
+            - generare in modo dinamico **sistemi coordinati di più identità visive** (ad esempio, per servizi declinabili su più Regioni, integrando per ognuna elementi della propria identità visiva). 
+
+            Farlo non è solo possibile, ma opportuno e benvenuto: il sistema integrato di identità visiva digitale dello Stato è aperto (open), come deve essere ogni aspetto del digitale pubblico.
+
+            È necessario in ogni caso **garantire il rispetto delle Linee guida sull’accessibilità**, e le azioni descritte nel requisito [4.3. Semplicità di consultazione ed esperienza d’uso](/normativa/linee-guida-di-design/requisito-4-3/) delle **Linee guida di design per i siti internet e i servizi digitali della PA**.  
+
+            Inoltre, variazioni e migliorie di questo tipo **dovrebbero essere messe a disposizione e riuso della collettività** secondo quanto descritto nel [modello di contribuzione](/design-system/come-contribuire/modello-di-contribuzione/). 
+
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Funzionalità minime e coerenza funzionale
+      text: Le persone devono poter accedere a quelle funzionalità minime che costituiscono la base di una esperienza utente digitale solida per il pubblico servizio, indipendentemente dal contesto. 
+      background: null
+      components:
+        - name: TextImageCta
+          noSpace: false
+          text: |
+            ### Contesto normativo 
+            Gli indicatori misurati dall’**indice europeo DESI per la Decade Digitale**, in particolare per la dimensione [“Digitalisation of public services”](https://digital-decade-desi.digital-strategy.ec.europa.eu/datasets/desi/indicators#desi2023-4), rilevano lo stato di salute dei servizi digitali dell’Unione Europea. 
+          
+            Questi indicatori tracciano **la presenza di una serie di funzionalità minime**, necessarie a **garantire la tutela dei diritti digitali delle persone** in relazione ai servizi pubblici. Sebbene queste funzionalità dovrebbero emergere come requisito nelle fasi preliminari del processo di progettazione, è opportuno verificare durante la fase di realizzazione delle interfacce la loro presenza e corretta implementazione. 
+
+            ### Indicazioni sulle funzionalità
+            Assicurati durante la realizzazione delle interfacce che il servizio sia progettato e realizzato per:  
+
+            - **popolare campi precompilati** con le informazioni già in possesso della Pubblica Amministrazione, o quantomeno quelle già inserite sul servizio digitale stesso; 
+            - **indicare chiaramente i passi necessari per completare** la presentazione di un'istanza e ottenere il beneficio atteso, in ogni momento della fruizione dello specifico servizio digitale e fino alla risposta della Pubblica Amministrazione all’istanza; 
+            - **esplicitare la data di presa in carico e la data ultima prevista** per l’evasione dell’istanza; 
+            - **consentire di salvare in bozza** quanto già compilato, per riprendere in seguito; 
+            - **consentire di richiedere assistenza** durante l’utilizzo; 
+            - **consentire di segnalare un disservizio** durante l’uso del servizio digitale, documentandolo; 
+            - **consentire di fornire una valutazione**, recensione o feedback del servizio stesso.

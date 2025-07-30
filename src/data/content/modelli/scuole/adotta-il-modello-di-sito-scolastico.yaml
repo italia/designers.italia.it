@@ -27,7 +27,6 @@ seo:
   name: Adotta il modello di sito scolastico - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Segui la procedura guidata e usa le risorse per realizzare il sito istituzionale di una scuola #C
   image: null #I
-  twitterImage: null #I
   canonical: null
   pathname: /modelli/scuole/adotta-il-modello-di-sito-scolastico/ #M
 
@@ -98,7 +97,7 @@ components:
       text: In breve
     text: | #C
       Le attività ti guidano a **impostare il lavoro da un punto di vista organizzativo e ti supportano nella progettazione e nello sviluppo del sito scolastico**, tenendo conto di aspetti importanti come i requisiti tecnici per la corretta adozione del modello. Le risorse ti permettono di comprendere e impostare la struttura del sito, creare l’interfaccia grafica, migrare e gestire correttamente i contenuti.
-    img: /images/modelli/scuole.png
+    img: /images/modelli/scuole-cover-hero.png
     alt: ""
 
     # KANGAROO: METADATA
@@ -394,7 +393,24 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
+              
+        - name: TextImageCta
+          title: Contribuisci al modello
+          headingLevel: 2
+          text: L'evoluzione dei modelli di sito e servizi per la Pubblica Amministrazione è aperta, trasparente e basata sul contributo attivo della community che utilizza le risorse. #C
+          noSpace: true
+          ctas:
+          - label: Scopri come contribuire #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: /modelli/contribuisci-ai-modelli/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: md
+              addonClasses: ms-2
 
 
 

@@ -1,40 +1,24 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/form/upload.json
   template:
     name: design-system-component
-
 seo:
   name: Upload - Designers Italia
-  description: "Elementi dei form dedicati al caricamento file, varianti grafiche e funzionali"
-  image: null
-  twitterImage: null
+  description: Campo per la selezione e il caricamento di file.
   canonical: null
   pathname: /design-system/componenti/upload/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Upload
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Elementi dei form dedicati al caricamento file, varianti grafiche e funzionali"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: Campo per la selezione e il caricamento di file
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -45,23 +29,19 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Form]
-
+      tagsDesignSystem:
+        - Form
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
+      id: preview-use
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/upload/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -71,9 +51,26 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Usa il componente Upload quando è necessario permettere agli
+              utenti di caricare file o immagini. Questo componente è utile in
+              contesti come:
 
+
+              - form di registrazione o profili utente dove si richiede una foto
+              del profilo;
+
+              - form per la richiesta di servizi online che prevedono il
+              caricamento di documenti singoli o multipli;
+
+              - piattaforme di condivisione di contenuti dove gli utenti possono
+              caricare documenti, immagini o altri file multimediali;
+
+              - form di supporto tecnico che richiedono allegati di screenshot o
+              messaggi di errore per diagnosticare problemi;
+
+              - qualsiasi altro contesto in cui è necessario raccogliere file
+              direttamente dagli utenti.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -82,35 +79,215 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Per usare correttamente il componente Upload, è importante
+              comprendere le diverse varianti disponibili e come ciascuna può
+              essere utilizzata per migliorare l'esperienza utente.
 
+
+              ### Variante Lista file
+
+
+              Questa è la variante più comune e semplice di upload e funziona
+              bene per tutti i tipi di file, inclusi documenti, immagini e altri
+              tipi di media.
+
+
+              ### Variante Drag and Drop
+
+
+              Questa variante permette agli utenti di trascinare direttamente i
+              file in un'area designata per il caricamento. 
+
+
+              Questo metodo è particolarmente utile per caricare rapidamente più
+              file ed è raccomandata per interfacce dedicate a dispositivi con
+              trackpad o mouse. Non è invece consigliato per interfacce dedicate
+              principalmente a dispositivi mobile. 
+
+
+              Se usi questa variante assiccurati che l'area di caricamento sia
+              ben visibile e definita, e fornisci la possibilità di annullare il
+              caricamento appena effettuato e caricare un nuovo file.
+
+
+              ### Variante Avatar
+
+
+              Questa variante è particolarmente utile nelle applicazioni dove si
+              caricano foto del profilo o immagini specifiche. Gli utenti
+              cliccano su un'icona o su una miniatura dell'immagine per aprire
+              il dialogo di selezione file. Se usi questa variante, attenzione a
+              rendere chiaro che l'area dell'immagine è cliccabile.
+
+
+              ### Variante Galleria
+
+
+              Questa variante è dedicata al caricamento di immagini per un
+              galleria. Le miniature (thumbnail) mostrate indicano che il
+              caricamento è andato a buon fine. Se usi questa variante, indica
+              chiaramente i formati, le dimensioni e il peso massimo supportati.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
-        components:
-          - name: TextImageCta
-            noSpace: true
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/form/upload/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda Storybook
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/upload
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -119,9 +296,77 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              ### Variante Lista file
 
+              ![Gli elementi che formano la variante lista file di
+              upload](/images/design-system/componenti/upload-list-anatomy.png)
+
+              1. **pulsante**, necessario per avviare il caricamento di un file;
+
+              2. **nome del file**, coincide con il nome originale e può essere
+              accompagnato da un'icona;
+
+              3. **dimensioni del file**, può essere espresso in vari formati a
+              seconda del peso;
+
+              4. **icona stato caricamento**, indica lo stato del caricamento;
+
+              5. **barra progresso**, mostra la percentuale di avanzamento;
+
+              6. **stato di errore**, tutti gli elementi vengono colorati di
+              rosso in caso di problemi durante il caricamento.
+
+
+              ### Variante Avatar
+
+              ![Gli elementi che formano la variante avatar di
+              upload](/images/design-system/componenti/upload-avatar-anatomy.png)
+
+              1. **immagine**, è l'immagine attualmente caricata;
+
+              2. **etichetta e icona**, fanno parte dell'azione di modifica e
+              caricamento di una nuova immagine;
+
+              3. **forma di sfondo**, copre l'immagine per metà e contiene gli
+              elementi del punto 2.
+
+
+              ### Variante Galleria
+
+              ![Gli elementi che formano la variante galleria di
+              upload](/images/design-system/componenti/upload-gallery-anatomy.png)
+
+              1. **lista di immagini**, le immagini attualmente present in una
+              galleria;
+
+              2. **pulsante**, ha la stesse dimensioni di un'immagine presente
+              nella lista e permette il caricamento di un nuovo file.
+
+
+              ### Variante Drag and Drop
+
+              ![Gli elementi che formano la variante drag and drop di
+              upload](/images/design-system/componenti/upload-dragdrop-anatomy.png)
+
+              1. **icona**, rappresenta l'immagine di un file;
+
+              2. **testo di supporto**, indica cosa fare per iniziare il
+              caricamento di un file;
+
+              3. **link**, permette il caricamento classico tramite selezione
+              manuale;
+
+              4. **barra di progresso**, mostra l'avanzamento e circonda l'icona
+              rappresentativa;
+
+              5. **percentuale**, indica l'avanzamento in termini percentuali;
+
+              6. **dettagli file**, mostra formato e dimensioni del file;
+
+              7. **nome del file**, il nome del file nel formato originale;
+
+              8. **stato**, indicazione di avanzamento in formato testuale.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -130,9 +375,58 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              ### Variante Lista file
 
+
+              - Cliccando sul pulsante è possibile selezionare uno o più file e
+              confermare la selezione.
+
+              - Durante il caricamento viene mostrata una barra di progresso per
+              ciascun file.
+
+              - Nel caso ci sia un problema con il caricamento di un file,
+              questo viene indicato con il colore di stato di errore.
+
+              - L’utente può annullare il caricamento di un file cliccando
+              sull’icona “X” ad esso correlata.
+
+              - Al termine di un caricamento andato a buon fine, viene mostrata
+              un’icona di conferma.
+
+
+              ### Variante Drag and Drop
+
+
+              - Trascinando uno o più file dalla finestra di sistema del
+              dispositivo e rilasciandoli nell'area preposta, inizia il
+              caricamento.
+
+              - Durante il caricamento viene mostrato il progresso tramite
+              un’indicazione espressa in termini percentuali, in
+              sovraimpressione rispetto all’icona di sfondo.
+
+              - Al termine del caricamento, l’icona di sfondo mostra un simbolo
+              di conferma.
+
+
+              ### Variante Avatar
+
+
+              - Cliccando sulla miniatura dell'immagine, viene mostrata la
+              finestra di sistema per selezionare l’immagine desiderata.
+
+              - Al termine del caricamento, l’immagine si aggiorna.
+
+
+              ### Variante Galleria
+
+
+              - Cliccando sul riquadro con etichetta “Carica immagine” è
+              possibile selezionare un’immagine e confermare il caricamento.
+
+              - Al termine del caricamento, l’immagine viene aggiunta alla lista
+              delle miniature (thumbnail) visualizzate.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -141,10 +435,26 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Tutte le misure indicate sono espresse in `px`
 
 
+              ### Variante Lista 
+
+              ![Specifiche di design di upload variante
+              lista](/images/design-system/componenti/upload-list-specs.png)
+
+
+              ### Variante Galleria 
+
+              ![Specifiche di design di upload variante
+              galleria](/images/design-system/componenti/upload-gallery-specs.png)
+
+
+              ### Variante Drag and Drop 
+
+              ![Specifiche di design di upload variante drag and
+              drop](/images/design-system/componenti/upload-dragdrop-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -152,30 +462,28 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
+      id: preview-dev
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/upload/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -184,16 +492,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

@@ -6,7 +6,6 @@ export function Seo({
   title,
   description,
   image,
-  twitterImage,
   canonical,
   pathname,
   lang,
@@ -19,7 +18,6 @@ export function Seo({
     author,
     description: defaultDescription,
     image: defaultImage,
-    twitterImage: defaultTwitterImage,
     siteUrl,
     twitterUsername,
     twitterCreator,
@@ -34,11 +32,10 @@ export function Seo({
     author,
     canonical,
     description: description || defaultDescription,
-    image: image || defaultImage,
+    image: `${siteUrl}${image}` || defaultImage,
     siteUrl,
     url: `${siteUrl}${pathname || ``}`,
     twitterUsername,
-    twitterImage: twitterImage || defaultTwitterImage,
     twitterCreator,
     twitterSite,
     themeColor,
@@ -50,17 +47,18 @@ export function Seo({
       <meta name="author" content={seo.author} />
       {seo.canonical && <link rel="canonical" href={seo.canonical} />}
       {/* og metatags */}
-      <meta property="og:title" content={seo.title} />
       <meta property="og:locale" content={seo.lang} />
+      <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
+      <meta property="og:image" content={seo.image} />
       <meta property="og:url" content={seo.url} />
       <meta property="og:siteName" content={seo.siteName} />
-      <meta property="og:image" content={seo.image} />
       <meta property="og:type" content="article" />
       {/* twitter metatags */}
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:image" content={seo.image} />
       <meta name="twitter:title" content={seo.title} />
-      <meta name="twitter:image" content={seo.twitterImage} />
+      <meta name="twitter:description" content={seo.description} />
       <meta name="twitter:site" content={seo.twitterSite} />
       <meta name="twitter:creator" content={seo.twitterCreator} />
       {/* icons */}

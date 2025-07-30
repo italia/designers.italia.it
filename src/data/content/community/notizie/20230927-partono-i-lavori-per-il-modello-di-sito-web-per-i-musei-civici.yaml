@@ -9,9 +9,8 @@ seo:
   name: "Partono i lavori per il modello di sito web per i musei civici"
   description: "Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale."
   image: https://designers.italia.it/images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png #I
-  twitterImage: https://designers.italia.it/images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png #I
   canonical: null
-  pathname: /community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici
+  pathname: /community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/
 
 kangaroo:
   navposition:
@@ -95,21 +94,21 @@ components:
            Se vuoi partecipare al percorso di co-progettazione per il modello di sito dei musei civici con Designers Italia, [compila il modulo.](https://ec.europa.eu/eusurvey/runner/coprogettazionemodellomusei) Ti aggiorneremo sugli sviluppi del progetto e sulle modalità di coinvolgimento. 
 
         - name: TextImageCta
-          title: Partecipa al progetto
+          title: Ricevi aggiornamenti
           text: |
 
           ctas:
-          
-          - label: Compila il modulo
-            url: "https://ec.europa.eu/eusurvey/runner/coprogettazionemodellomusei"
+
+          - label: Contattaci via email #C
+            url: mailto:contatti@designers.italia.it #M
             icon:
-              icon: sprites.svg#it-external-link
+              icon: sprites.svg#it-mail #C #I
               color: primary
               align: middle
               hidden: true
-              size: sm ms-2
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true
+              size: sm
+              addonClasses: ms-2
+
 
         - name: TextImageCta
           # title: Titoletto interno
