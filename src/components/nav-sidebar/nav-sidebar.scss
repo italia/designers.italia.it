@@ -96,6 +96,14 @@
     }
     }
   }
+
+  // Fix bug introuced by Bootstrap Italia v2.15.0
+  // Remove when fixed in Bootstrap Italia
+  @include media-breakpoint-up(lg) {
+    .navbar .navbar-collapsable {
+      width: 100%;
+    }
+  }
 }
 
 //Mobile only ------------------------------------------------------------------------------------------
