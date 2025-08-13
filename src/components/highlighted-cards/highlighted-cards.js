@@ -1,5 +1,4 @@
 import React from "react";
-
 import Card from "../card/card";
 
 function HighlightedCards({ data }) {
@@ -21,19 +20,31 @@ function HighlightedCards({ data }) {
                 Sandbox page query
               </h2>
               <div className="row pb-4">
-                {data.edges.map(({ node }) => (
-                  <div key={node.seo.title} className={cardStyles}>
-                    <Card
-                      img={node.components.imageIcons.image}
-                      title={node.components.hero.title}
-                      url={node.seo.pathname}
-                      description={node.seo.description}
-                      fullHeight
-                      // tag={node.components.hero.tag}
-                      tags={node.components.hero.kangaroo.tags}
-                    />
-                  </div>
-                ))}
+                {data.edges.map(({ node }) => {
+                  console.log("DEBUG - Node data:", {
+                    title: node.components?.hero?.title,
+                    imagePath: node.components?.imageIcons?.image,
+                    fullNode: node,
+                  });
+
+                  return (
+                    <div
+                      key={node.seo?.title || node.id}
+                      className={cardStyles}
+                    >
+                      <Card
+                        img={node.components?.imageIcons?.image}
+                        title={node.components?.hero?.title}
+                        url={node.seo?.pathname}
+                        description={node.seo?.description}
+                        fullHeight
+                        imgRatio="16x9"
+                        // tag={node.components?.hero?.tag}
+                        tags={node.components?.hero?.kangaroo?.tags}
+                      />
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>

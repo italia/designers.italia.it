@@ -136,24 +136,42 @@ exports.onCreateNode = async ({
 };
 
 /* eslint-disable consistent-return */
-exports.onCreatePage = async ({ page, actions }) => {
-  // add variables to pageContext
+exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
   if (page.context.highlighted) {
     return "Skipping already highlighted page";
   }
+
   const { createPage, deletePage } = actions;
+  const editorialBoardNodes = getNodesByType("EditorialBoard");
+  let highlighted = [];
+
+  if (editorialBoardNodes.length > 0) {
+    const editorialData = editorialBoardNodes[0];
+
+    let pageKey = "index"; // default
+    if (page.path.includes("/design-system/")) {
+      pageKey = "design-system";
+    } else if (page.path.includes("/community/")) {
+      pageKey = "community";
+    }
+
+    const pageConfig = editorialData.highlightedCards?.find(
+      (config) => config.page === pageKey,
+    );
+
+    if (pageConfig?.sections) {
+      highlighted = pageConfig.sections.flatMap(
+        (section) => section.cards?.map((card) => card.title) || [],
+      );
+    }
+  }
+
   deletePage(page);
   createPage({
     ...page,
     context: {
       ...page.context,
-      highlighted: [
-        // editorial settings > we have to move this inside graphql loaded from the dedicated .yaml in /data/content/editorial-board/hightlighted-cards.yaml
-        "Il 2023 di Designers Italia ",
-        "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica",
-        "Prendi parte anche tu all’evoluzione del design system del Paese",
-        "Modelli di siti e servizi di Designers Italia: nuovi file in formato aperto",
-      ],
+      highlighted,
     },
   });
 };
