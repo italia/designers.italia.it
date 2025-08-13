@@ -148,7 +148,7 @@ exports.onCreatePage = async ({ page, actions }) => {
     context: {
       ...page.context,
       highlighted: [
-        // editorial settings > we have to move this inside graphql loaded from the dedicated .yaml
+        // editorial settings > we have to move this inside graphql loaded from the dedicated .yaml in /data/content/editorial-board/hightlighted-cards.yaml
         "Il 2023 di Designers Italia ",
         "Esperienza del cittadino nei servizi pubblici: dalla Misura alla pratica",
         "Prendi parte anche tu all’evoluzione del design system del Paese",
