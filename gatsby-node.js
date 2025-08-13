@@ -24,6 +24,125 @@ exports.createSchemaCustomization = ({ actions }) => {
       source: String
       file: File @link(from: "fields.localFile")
     }
+
+    type ContentComponentsHighlightCardsLoop {
+      id: String
+      title: String
+      headingLevel: Int
+      text: String
+      col4: Boolean
+      background: String
+      nopadtop: Boolean
+      cardSettings: ContentComponentsHighlightCardsLoopCardSettings
+      buttons: [ContentComponentsHighlightCardsLoopButtons]
+      topics: ContentComponentsHighlightCardsLoopTopics
+      cards: [ContentComponentsHighlightCardsLoopCards]
+    }
+
+    type ContentComponentsHighlightCardsLoopCardSettings {
+      headingLevel: Int
+      customCol: String
+      imgRatio: String
+      imgPlaceholder: Boolean
+      fullHeight: Boolean
+      rounded: Boolean
+      showDateInfo: Boolean
+      showTags: Boolean
+      cardEvent: Boolean
+      titleSmall: Boolean
+      showDateOverlay: Boolean
+      showTag: Boolean
+      showIconOverlay: Boolean
+    }
+
+    type ContentComponentsHighlightCardsLoopButtons {
+      btnStyle: String
+      label: String
+      addonStyle: String
+      url: String
+      blank: Boolean
+      ariaLabel: String
+      icon: ContentComponentsHighlightCardsLoopButtonsIcon
+    }
+
+    type ContentComponentsHighlightCardsLoopButtonsIcon {
+      icon: String
+      color: String
+      align: String
+      size: String
+      addonClasses: String
+    }
+
+    type ContentComponentsHighlightCardsLoopTopics {
+      title: String
+      headingLevel: Int
+      icon: ContentComponentsHighlightCardsLoopTopicsIcon
+      button: ContentComponentsHighlightCardsLoopTopicsButton
+      tags: [String]
+    }
+
+    type ContentComponentsHighlightCardsLoopTopicsIcon {
+      icon: String
+      color: String
+      hidden: Boolean
+    }
+
+    type ContentComponentsHighlightCardsLoopTopicsButton {
+      btnStyle: String
+      label: String
+      url: String
+    }
+    
+    type ContentComponentsHighlightCardsLoopCards {
+      cardEvent: Boolean
+      iconOverlay: ContentComponentsHighlightCardsLoopCardsIconOverlay
+      dateOverlay: ContentComponentsHighlightCardsLoopCardsDateOverlay
+      dateInfo: String
+      tag: ContentComponentsHighlightCardsLoopCardsTag
+      text: String
+      title: String
+      headingLevel: Int
+      customCol: String
+      img: String
+      alt: String
+      imgRatio: String
+      imgPlaceholder: Boolean
+      fullHeight: Boolean
+      rounded: Boolean
+      url: String
+      tags: [String]
+      blank: Boolean
+      externalLink: ContentComponentsHighlightCardsLoopCardsExternalLink
+      moreInfo: String
+      titleSmall: Boolean
+    }
+    
+    type ContentComponentsHighlightCardsLoopCardsIconOverlay {
+      icon: String
+      ariaLabel: String
+    }
+    
+    type ContentComponentsHighlightCardsLoopCardsDateOverlay {
+      day: String
+      month: String
+      year: String
+    }
+    
+    type ContentComponentsHighlightCardsLoopCardsTag {
+      label: String
+      addonClasses: String
+    }
+
+    type ContentComponentsHighlightCardsLoopCardsExternalLink {
+      label: String
+      screenReaderText: String
+      icon: ContentComponentsHighlightCardsLoopCardsExternalLinkIcon
+    }
+
+    type ContentComponentsHighlightCardsLoopCardsExternalLinkIcon {
+      icon: String
+      size: String
+    }
   `);
 };
 
@@ -143,11 +262,20 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
 
   const { createPage, deletePage } = actions;
   const editorialBoardNodes = getNodesByType("EditorialBoard");
-  let highlighted = [];
+  const highlighted = [];
+  const editorialSections = [];
+
+  console.log(`🔍 Processing page: ${page.path}`);
+  console.log(`📊 Found ${editorialBoardNodes.length} editorial board nodes`);
 
   if (editorialBoardNodes.length > 0) {
     const editorialData = editorialBoardNodes[0];
+    console.log(
+      "📋 Editorial data:",
+      JSON.stringify(editorialData.highlightedCards, null, 2),
+    );
 
+    // Determine page key based on path
     let pageKey = "index"; // default
     if (page.path.includes("/design-system/")) {
       pageKey = "design-system";
@@ -155,15 +283,42 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
       pageKey = "community";
     }
 
+    console.log(`🔍 Looking for page config: ${pageKey}`);
+
     const pageConfig = editorialData.highlightedCards?.find(
       (config) => config.page === pageKey,
     );
 
+    console.log(`📄 Found page config:`, pageConfig);
+
     if (pageConfig?.sections) {
-      highlighted = pageConfig.sections.flatMap(
-        (section) => section.cards?.map((card) => card.title) || [],
+      // Process each section
+      pageConfig.sections.forEach((section) => {
+        console.log(`📝 Processing section: ${section.section}`);
+        console.log(`📋 Cards in section:`, section.cards);
+
+        const sectionTitles = section.cards?.map((card) => card.title) || [];
+        console.log(`🏷️ Extracted titles:`, sectionTitles);
+
+        editorialSections.push({
+          section: section.section,
+          highlighted: sectionTitles,
+        });
+
+        // Add to global array for GraphQL query
+        highlighted.push(...sectionTitles);
+      });
+
+      console.log(
+        `✅ Final highlighted array (${highlighted.length} items):`,
+        highlighted,
       );
+      console.log(`✅ Final editorial sections:`, editorialSections);
+    } else {
+      console.log(`⚠️ No sections found for page ${pageKey}`);
     }
+  } else {
+    console.log("⚠️ No editorial board nodes found");
   }
 
   deletePage(page);
@@ -172,7 +327,13 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
     context: {
       ...page.context,
       highlighted,
+      editorialSections,
     },
+  });
+
+  console.log(`✅ Recreated page ${page.path} with context:`, {
+    highlighted: highlighted.length,
+    editorialSections: editorialSections.length,
   });
 };
 

@@ -58,7 +58,7 @@ function Page({ pageContext, location, data: { content, highlightedCards } }) {
 }
 
 export const query = graphql`
-  query ($id: String!, $highlighted: [String!]!) {
+  query ($id: String!, $highlighted: [String!] = []) {
     contentOgImage(parent: { id: { eq: $id } }) {
       attributes {
         publicURL
@@ -76,6 +76,9 @@ export const query = graphql`
             pathname
             image
           }
+          metadata {
+            archive
+          }
           components {
             hero {
               title
@@ -85,6 +88,18 @@ export const query = graphql`
               }
               kangaroo {
                 tags
+                personalInfo {
+                  items {
+                    title
+                    label
+                  }
+                }
+                eventInfo {
+                  items {
+                    title
+                    label
+                  }
+                }
               }
             }
             imageIcons {
@@ -301,6 +316,21 @@ export const query = graphql`
               size
               addonClasses
             }
+          }
+          cardSettings {
+            headingLevel
+            customCol
+            imgRatio
+            imgPlaceholder
+            fullHeight
+            rounded
+            showDateInfo
+            showTags
+            cardEvent
+            titleSmall
+            showDateOverlay
+            showTag
+            showIconOverlay
           }
           cards {
             title

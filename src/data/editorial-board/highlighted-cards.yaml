@@ -2,42 +2,46 @@
 # Dashboard file to check all the highlighted editorial cards on the various pages
 # Maybe "title"s are not the best way to... 
 
-highlightedCards: 
+# YAML Editorial Board - Solo dati redazionali
+highlightedCards:
   - page: "index"
-    sections: 
-    - section: "community" 
+    sections:
+    - section: "community"
+      cards:
+        - title: "Il 2023 di Designers Italia"
+        - title: "Per una progettazione a misura di territorio"
+        - title: "Cantiere Designers Italia"
+
+  - page: "design-system"
+    sections:
+    - section: "community"
+      cards:
+        - title: "Il 2023 di Designers Italia"
+        - title: "Per una progettazione a misura di territorio"
+        - title: "Democratising co-production of sustainable public services"
+
+  - page: "community"
+    sections:
+    - section: "notizie"
       cards:
         - title: "Progettare un assistente virtuale: un atto di design pubblico"
         - title: "Ora tocca a voi! Le nuove iniziative per la community"
         - title: "Passi avanti per i kit di design e sviluppo di .italia"
 
-  - page: "design-system" 
-    sections: 
-    - section: "community" 
-      cards: 
-      - title: "Il 2023 di Designers Italia"
-      - title: "Per una progettazione a misura di territorio"
-      - title: "Democratising co-production of sustainable public services"
+    - section: "eventi"
+      cards:
+        - title: "Community lab di Developers Italia"
+        - title: "Community call: i musei presentano i loro nuovi siti"
+        - title: "Community call: le Aziende sanitarie locali presentano i loro nuovi siti"
+        - title: "Accessibility Days - Accessibilità by design"
 
-  - page: "community" 
-    sections: 
-    - section: "notizie" 
-      cards: 
-        - title: "Il 2023 di Designers Italia"
-        - title: "Per una progettazione a misura di territorio"
-        - title: "Cantiere Designers Italia"
-    - section: "eventi" 
-      cards:  
-      - title: "L’architettura informativa del modello Comuni. Organizzare i contenuti per realizzare un sito facile da consultare"
-      - title: "Niente su di Noi, senza di Noi"
-      - title: "Forum PA 2023 - Servizi e piattaforme per la cittadinanza digitale"
-      - title: "Democratising co-production of sustainable public services"
-    - section: "media" 
-      cards: 
-      - title: "Il design system del Paese per realizzare siti e servizi dei Comuni"
-      - title: "Niente su di Noi, senza di Noi - La sfida accolta da Designers Italia, AGID e Accessibility Days"
-      - title: "ll design system del Paese e la responsabilità di progettare interfacce pubbliche"
-      - title: "Servizi inclusivi e usabili per tutti"
+    - section: "media"
+      cards:
+        - title: "Community call: i musei presentano i nuovi siti"
+        - title: "Community call: le ASL presentano i loro nuovi siti"
+        - title: "Community lab: design system .italia e la progettazione di servizi pubblici digitali"
+        - title: "Progettare l'interazione con le IA conversazionali"
+        
     # - section: "Approfondimenti" 
     #   cards: 
     #   - url: "#" # XXX medium (futurability)
