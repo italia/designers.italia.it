@@ -59,6 +59,11 @@ function Page({ pageContext, location, data: { content, highlightedCards } }) {
 
 export const query = graphql`
   query ($id: String!, $highlighted: [String!]!) {
+    contentOgImage(parent: { id: { eq: $id } }) {
+      attributes {
+        publicURL
+      }
+    }
     highlightedCards: allContent(
       filter: { components: { hero: { title: { in: $highlighted } } } }
       sort: { seo: { pathname: DESC } }
