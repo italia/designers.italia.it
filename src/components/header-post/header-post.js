@@ -20,11 +20,9 @@ function HeaderPost({ data, editorialSections }) {
       return data;
     }
 
-    const editorialSection = editorialSections.find(
-      (es) => {
-        return es.section === "header-bookmarks";
-      }
-    );
+    const editorialSection = editorialSections.find((es) => {
+      return es.section === "header-bookmarks";
+    });
 
     if (!editorialSection || !editorialSection.highlighted?.length) {
       return data;
