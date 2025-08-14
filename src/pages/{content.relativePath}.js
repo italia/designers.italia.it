@@ -465,7 +465,7 @@ export const query = graphql`
           background
           buttons {
             label
-            ariaLabel
+            # ariaLabel
             btnStyle
             url
             addonStyle

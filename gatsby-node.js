@@ -359,13 +359,19 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
 
     if (pageConfig?.sections) {
       pageConfig.sections.forEach((section) => {
-        const sectionTitles = section.cards?.map((card) => card.title) || [];
+        const sectionTitles = section.cards?.map((card) => {
+          if (typeof card === 'string') {
+            return card;
+          }
+          return card.title;
+        }).filter(Boolean) || [];
 
         editorialSections.push({
           section: section.section,
-          highlighted: sectionTitles,
+          highlighted: section.cards || [],  
         });
 
+        // Add just the titles to the highlighted array for backward compatibility
         highlighted.push(...sectionTitles);
       });
     }

@@ -67,7 +67,13 @@ function Template({
         )}
         {Pagedata.components.highLights &&
           Pagedata.components.highLights.map((hl, index) => (
-            <Highlight key={`hl-${index}`} {...hl} />
+            <Highlight
+              key={`hl-${index}`}
+              {...hl}
+              highlightedCards={highlightedCards}
+              editorialSections={pageContext?.editorialSections}
+              highlightIndex={index}  // Pass the index for automation
+            />
           ))}
         {Pagedata.components.highlightCards && (
           <HighlightCards {...Pagedata.components.highlightCards} />

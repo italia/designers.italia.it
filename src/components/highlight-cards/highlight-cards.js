@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useMemo } from "react"; // ✅ Add useMemo import
+import React, { useMemo } from "react";
 import Card from "../card/card";
 import Button from "../button/button";
 import Topics from "../topics/topics";
@@ -88,7 +88,13 @@ function HighlightCards({
     const automatedCards = highlightedCards.edges
       .filter(({ node }) => {
         const nodeTitle = node.components?.hero?.title;
-        return editorialSection.highlighted.includes(nodeTitle);
+
+        return editorialSection.highlighted.some(highlightedItem => {
+          if (typeof highlightedItem === 'string') {
+            return highlightedItem === nodeTitle;
+          }
+          return highlightedItem.title === nodeTitle;
+        });
       })
 
       .map(({ node }) => {
