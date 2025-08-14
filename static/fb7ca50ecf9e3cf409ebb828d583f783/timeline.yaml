@@ -1,26 +1,26 @@
 metadata:
-  json: bsi/componenti/carousel.json
+  json: bsi/componenti/timeline.json
   template:
     name: design-system-component
 seo:
-  name: Carousel - Designers Italia
+  name: Timeline - Designers Italia
   description: >-
-    Componente di presentazione per scorrere orizzontalmente una sequenza di
-    elementi, immagini o diapositive di testo.
+    Rappresentazione grafica di una serie di eventi in ordine cronologico per
+    descrivere la storia di un’istituzione o il progresso di un progetto.
   canonical: null
-  pathname: /design-system/componenti/carousel/
+  pathname: /design-system/componenti/timeline/
 components:
   hero:
     specialKangarooComponent: true
     background: null
-    title: Carousel
+    title: Timeline
     tag:
       label: Componenti
       addonClasses: mt-3 text-uppercase
     column: true
     subtitle: >-
-      Componente di presentazione per scorrere orizzontalmente una sequenza di
-      elementi, immagini o diapositive di testo
+      Rappresentazione grafica di una serie di eventi in ordine cronologico per
+      descrivere la storia di un’istituzione o il progresso di un progetto
     imgRatio: 1x1
     noBorder: true
     kangaroo:
@@ -34,7 +34,6 @@ components:
         size: sm
         color: secondary
       tagsDesignSystem:
-        - Interazione
         - Contenuti
   tab:
     - full: true
@@ -43,8 +42,11 @@ tabs:
     componentVariant:
       id: preview-use
       title: Anteprima
-      viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/carousel/
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
+      viewerHeight: 400
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
       accordionOpen: false
       accordionShow: false
     sectionsEditorial:
@@ -57,14 +59,11 @@ tabs:
             title: Quando usarlo
             headingLevel: 2
             text: >
-              Il componente Carousel è utile per presentare una serie di
-              contenuti correlati che non possono essere visualizzati
-              contemporaneamente sullo schermo. 
+              Usa il componente timeline quando devi presentare una serie di
+              eventi in ordine cronologico. 
 
-
-              È quindi un elemento ideale per navigare liste di contenuti come,
-              ad esempio, gli eventi o le notizie più recenti, oppure per
-              mettere in evidenza servizi o funzionalità.
+              È particolarmente utile per raccontare una sequenza di eventi
+              storici o per evidenziare importanti traguardi o risultati.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -74,53 +73,40 @@ tabs:
             title: Come usarlo
             headingLevel: 2
             text: >
-              - Assicurati che le immagini o i contenuti visualizzati nel
-              carousel siano correlati tra loro e pertinenti al contesto della
-              pagina.
+              - Identifica gli eventi chiave che desideri rappresentare sulla
+              linea del tempo.
 
-              - Non sovraccaricare il carousel con un troppi contenuti. Un
-              numero eccessivo può causare confusione e rendere difficile per
-              gli utenti focalizzarsi su un elemento specifico.
+              - Organizza questi eventi in ordine cronologico.
 
-              - Fornisci indicatori visivi per aiutare gli utenti a capire in
-              quale punto del carousel si trovano, come punti, numeri o frecce.
+              - Crea una linea o un percorso visivo che rappresenta il flusso
+              del tempo.
 
-              - Se possibile, evita di utilizzare un carousel per contenuti
-              critici o importanti, in quanto alcuni utenti potrebbero non
-              notare o ignorare completamente il carousel.
+              - Posiziona gli eventi lungo questa linea in base a quando si sono
+              verificati.
 
-              - Assicurati che il carousel sia navigabile sia attraverso input
-              da mouse che attraverso tastiera. Questo è particolarmente
-              importante per l'accessibilità.
+              - Fornisci un breve riepilogo o una descrizione per ogni evento.
 
 
               ### Attenzione a
 
-              - Evitare che le transizioni tra i contenuti del carousel siano
-              troppo veloci, per permettere alle persone di assimilare le
-              informazioni.
+              - Evitare di sovraccaricare la timeline con troppi dettagli:
+              concentrati sui punti chiave e le informazioni più rilevanti. 
 
-              - Controllare che il carousel non intralci l'esperienza
-              dell'utente se viene ignorato o non utilizzato.
-
-              - Verificare che le immagini o i contenuti del carousel siano di
-              alta qualità e chiaramente visibili su tutti i dispositivi.
-
-              - Non utilizzare il carousel come unico mezzo di navigazione sul
-              tuo sito o applicazione.
-
-              - Assicurati che il carousel non interferisca con altri elementi
-              interattivi sulla pagina.
-
-              - Testare il carousel con utenti reali per assicurarti che sia
-              intuitivo e facile da usare.
+              - Assicurare che la sequenza sia chiaramente identificabile anche
+              navigando da tastiera o con strumenti assistivi come lettori di
+              schermo.
 
 
               ### Buone pratiche sui contenuti
 
-              - Scrivi testi chiari e non troppo lunghi per le slide del
-              carousel, poiché potrebbero venir troncati con dei puntini di
-              sospensione e rendere difficile la comprensione.
+              - Mantieni le descrizioni degli eventi brevi e concise per
+              facilitare la lettura e la comprensione.
+
+              - Se possibile, usa le icone per rappresentare gli eventi o le
+              fasi.
+
+              - Assicurati che gli eventi siano chiaramente distinti l'uno
+              dall'altro sulla timeline.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -222,7 +208,7 @@ tabs:
                       label: Scheda documentazione
                       blank: true
                       url: >-
-                        https://italia.github.io/bootstrap-italia/docs/componenti/carousel/
+                        https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
                         icon: sprites.svg#it-external-link
@@ -235,6 +221,8 @@ tabs:
                       addonClasses: bg-success
                   - simpleCta:
                       label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-componenti-timeline--documentazione
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
@@ -248,13 +236,13 @@ tabs:
                       addonClasses: bg-success
                   - simpleCta:
                       label: Scheda documentazione
-                      url: >-
-                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/carousel
                       blank: true
                       screenReaderText: ' (si apre in una nuova finestra)'
                       icon:
                         icon: sprites.svg#it-external-link
                         size: sm
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/timeline
           - name: TextImageCta
             ctas:
               - label: Apri una issue sul repository Bootstrap Italia
@@ -290,24 +278,25 @@ tabs:
             title: Anatomia
             headingLevel: 2
             text: >
+              ![Gli elementi che formano la
+              Timeline](/images/design-system/componenti/timeline-anatomy.png)
 
-              ![Gli elementi che formano il
-              carousel](/images/design-system/componenti/carousel-anatomy.png)
-              
-              Il componente carousel è composto da:
 
-              1. **titolo** (opzionale), può essere utilizzato quando il
-              carousel definisce una specifica sezione di una pagina;
+              Il componente timeline è composto da:
 
-              2. **lista contenuti**, possono essere cards, immagini singole o
-              multiple;
+              1. **segnaposto**, rappresenta l'evento sulla linea del tempo e
+              può ospitare un icona;
 
-              3. **frecce di navigazione**, consentono di scorrere
-              orizzontalmente la lista contenuti e non sono visibili su mobile; 
+              2. **data**, la data dell'evento che può essere scritta in diversi
+              formati;
 
-              4. **indicatori di progresso**, indicano da quante slide è
-              composto il carousel, evidenziando quella attualmente visibile.
+              3. **linea del tempo**, si sviluppa in verticale seguendo il
+              numero di eventi presenti; 
 
+              4. **titolo evento**, descrizione sintetica dell'evento;
+
+              5. **descrizione**, descrizione estesa dell'evento che può
+              contenere altri elementi come link, immagini, pulsanti.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -317,13 +306,8 @@ tabs:
             title: Comportamento
             headingLevel: 2
             text: >
-              - Gli utenti possono navigare i contenuti del carousel manualmente
-              utilizzando i pulsanti di navigazione, la scrollbar del browser o
-              indicatori.
-
-              - Il carousel può ruotare automaticamente i contenuti a intervalli
-              regolari e gli utenti possono fermarlo interagendo con mouse,
-              tastiera o touch.
+              La disposizione degli eventi lungo la linea del tempo cambia a
+              seconda dei dispositivi su cui viene visualizzata.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -333,10 +317,10 @@ tabs:
             title: Specifiche di design
             headingLevel: 2
             text: >
-               Tutte le misure indicate sono espresse in `px`.
-               
-               ![Specifiche di design del carousel](/images/design-system/componenti/carousel-specs.png)
+              Tutte le misure indicate sono espresse in `px`.
 
+              ![Specifiche di design della
+              timeline](/images/design-system/componenti/timeline-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -362,8 +346,11 @@ tabs:
     componentVariant:
       id: preview-dev
       title: Anteprima
-      viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/carousel/
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
+      viewerHeight: 400
+      accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/timeline/
       accordionOpen: true
       accordionShow: true
     sectionsEditorial:
