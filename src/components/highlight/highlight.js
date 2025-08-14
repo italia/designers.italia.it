@@ -33,14 +33,19 @@ function Highlight({
   editorialSections,
   highlightIndex, // Which highlight in the sequence (0, 1, 2...)
 }) {
-
   const automatedData = useMemo(() => {
     // Only automate if we have editorial configuration and this is from home page highlights array
-    if (!editorialSections || !highlightedCards?.edges?.length || highlightIndex === undefined) {
+    if (
+      !editorialSections ||
+      !highlightedCards?.edges?.length ||
+      highlightIndex === undefined
+    ) {
       return null;
     }
 
-    const editorialSection = editorialSections.find(es => es.section === "highlights-home");
+    const editorialSection = editorialSections.find(
+      (es) => es.section === "highlights-home",
+    );
     if (!editorialSection || !editorialSection.highlighted?.length) {
       return null;
     }
@@ -50,68 +55,77 @@ function Highlight({
       return null;
     }
 
-    const targetTitle = typeof editorialConfig === 'string' ? editorialConfig : editorialConfig.title;
-    const matchingNode = highlightedCards.edges.find(({ node }) =>
-      node.components?.hero?.title === targetTitle
+    const targetTitle =
+      typeof editorialConfig === "string"
+        ? editorialConfig
+        : editorialConfig.title;
+    const matchingNode = highlightedCards.edges.find(
+      ({ node }) => node.components?.hero?.title === targetTitle,
     );
 
     if (!matchingNode) {
       return null;
     }
 
-    const node = matchingNode.node;
+    const { node } = matchingNode;
     const normalizeImagePath = (imagePath) => {
       if (!imagePath) return null;
-      if (imagePath.startsWith('https://designers.italia.it')) {
-        return imagePath.replace('https://designers.italia.it', '');
+      if (imagePath.startsWith("https://designers.italia.it")) {
+        return imagePath.replace("https://designers.italia.it", "");
       }
-      if (imagePath.startsWith('http://designers.italia.it')) {
-        return imagePath.replace('http://designers.italia.it', '');
+      if (imagePath.startsWith("http://designers.italia.it")) {
+        return imagePath.replace("http://designers.italia.it", "");
       }
       return imagePath;
     };
 
-    const customText = typeof editorialConfig === 'object' ? editorialConfig.text : null;
-    const customCta = typeof editorialConfig === 'object' ? editorialConfig.cta : null;
+    const customText =
+      typeof editorialConfig === "object" ? editorialConfig.text : null;
+    const customCta =
+      typeof editorialConfig === "object" ? editorialConfig.cta : null;
     const buttonLabel = customCta || "Scopri di più";
     const articleTitle = node.components?.hero?.title;
 
     const createAriaLabel = (cta, title) => {
       // Handle different CTA patterns and create contextual aria-labels
-      if (cta.toLowerCase().includes('scopri')) {
+      if (cta.toLowerCase().includes("scopri")) {
         return `Scopri di più su "${title}"`;
-      } else if (cta.toLowerCase().includes('esplora')) {
-        return `Esplora "${title}"`;
-      } else if (cta.toLowerCase().includes('leggi')) {
-        return `Leggi "${title}"`;
-      } else {
-        // Generic fallback
-        return `${cta}: ${title}`;
       }
+      if (cta.toLowerCase().includes("esplora")) {
+        return `Esplora "${title}"`;
+      }
+      if (cta.toLowerCase().includes("leggi")) {
+        return `Leggi "${title}"`;
+      }
+      // Generic fallback
+      return `${cta}: ${title}`;
     };
 
     return {
       title: node.components?.hero?.title,
-      subtitle: customText || node.seo?.description, 
-      img: normalizeImagePath(node.components?.imageIcons?.image || node.seo?.image),
+      subtitle: customText || node.seo?.description,
+      img: normalizeImagePath(
+        node.components?.imageIcons?.image || node.seo?.image,
+      ),
       alt: node.components?.imageIcons?.alt || "",
-      buttons: [{
-        label: buttonLabel,
-        ariaLabel: createAriaLabel(buttonLabel, articleTitle), 
-        btnStyle: "primary",
-        url: node.seo?.pathname,
-        addonStyle: "mb-3"
-      }]
+      buttons: [
+        {
+          label: buttonLabel,
+          ariaLabel: createAriaLabel(buttonLabel, articleTitle),
+          btnStyle: "primary",
+          url: node.seo?.pathname,
+          addonStyle: "mb-3",
+        },
+      ],
     };
   }, [editorialSections, highlightedCards, highlightIndex]);
-
 
   const finalData = automatedData || {
     title,
     subtitle,
     img,
     alt,
-    buttons
+    buttons,
   };
 
   const styles =
@@ -156,7 +170,8 @@ function Highlight({
     ratioClass = "img-container ratio ratio-16x9";
   }
 
-  const elementId = id || slugify(finalData.title, { lower: true, strict: true });
+  const elementId =
+    id || slugify(finalData.title, { lower: true, strict: true });
 
   return (
     <section className={styles} aria-labelledby={elementId}>
@@ -166,7 +181,9 @@ function Highlight({
             <div className={classes}>
               <div className="text-container px-3 py-5 px-lg-5 py-lg-6">
                 <HLevel id={elementId}>{finalData.title}</HLevel>
-                {finalData.subtitle && <p className="lead mb-4">{finalData.subtitle}</p>}
+                {finalData.subtitle && (
+                  <p className="lead mb-4">{finalData.subtitle}</p>
+                )}
                 {numbers && <Numbers {...numbers} />}
                 {text && (
                   <div className={textClass}>
@@ -180,7 +197,11 @@ function Highlight({
               </div>
               <div className={ratioClass}>
                 {finalData.img && (
-                  <ImageResponsive className="main-image" src={finalData.img} alt={finalData.alt} />
+                  <ImageResponsive
+                    className="main-image"
+                    src={finalData.img}
+                    alt={finalData.alt}
+                  />
                 )}
                 {icon && <Icon {...icon} />}
                 {overlayImg && (

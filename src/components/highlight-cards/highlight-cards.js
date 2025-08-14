@@ -89,8 +89,8 @@ function HighlightCards({
       .filter(({ node }) => {
         const nodeTitle = node.components?.hero?.title;
 
-        return editorialSection.highlighted.some(highlightedItem => {
-          if (typeof highlightedItem === 'string') {
+        return editorialSection.highlighted.some((highlightedItem) => {
+          if (typeof highlightedItem === "string") {
             return highlightedItem === nodeTitle;
           }
           return highlightedItem.title === nodeTitle;

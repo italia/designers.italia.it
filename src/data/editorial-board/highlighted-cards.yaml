@@ -4,26 +4,48 @@
 
 # YAML Editorial Board - Solo dati redazionali
 highlightedCards:
+
+  ## HOME PAGE ##
   - page: "index"
     sections:
+
+    ## BOOKMARKS
+    - section: "header-bookmarks"
+      cards:
+        - title: "Nuova sezione Formazione"
+          icon: "sprites.svg#it-bookmark"
+          url: "/formazione/"
+        - title: "Nuova sezione Formazione"
+          icon: "sprites.svg#it-bookmark"
+          url: "/formazione/"
+        # - title: "Design system .italia v1"
+        #   icon: "sprites.svg#it-star-outline"
+        #   url: "/design-system/"
+        #   blank: false
+
+    ## HIGHLIGHTS
     - section: "highlights-home"
       cards:
         - title: "Progettare un assistente virtuale: un atto di design pubblico"
           cta: "Scopri le novità"
           text: "Nuovi strumenti pratici per definire personalità, tono di voce e comportamento di un'intelligenza artificiale conversazionale"
+
         - title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
           cta: "Esplora i fondamenti"
           text: "Aggiornati e integrati con un nuovo fondamento le indicazioni del design system per progettare contenuti efficaci e accessibili"
+        
         - title: "Passi avanti per i kit di design e sviluppo di .italia"
           cta: "Scopri i dettagli"
           text: "Il miglioramento del design system del Paese continua"
+
+    ## NEWS
     - section: "notizie-home"
       cards:
           - title: ".italia: risorse in miglioramento continuo"
           - title: "Nuovi strumenti per progettare architetture dell’informazione efficaci e intuitive"
           - title: "Definisci la direzione progettuale di un sito o servizio con il nuovo kit ‘Stato dell’arte’"
 
-
+  ### DESIGN SYSTEM PAGE
   - page: "design-system"
     sections:
     - section: "novita"
@@ -32,6 +54,7 @@ highlightedCards:
         - title: "Selezionati nell’ADI Design Index, un passo verso il Compasso d’Oro"  
         - title: ".italia versione 1: l’inizio di una nuova era per i servizi digitali pubblici"
 
+  ### COMMUNITY PAGE
   - page: "community"
     sections:
     - section: "notizie"
@@ -53,9 +76,3 @@ highlightedCards:
         - title: "Community call: le ASL presentano i loro nuovi siti"
         - title: "Community lab: design system .italia e la progettazione di servizi pubblici digitali"
         - title: "Progettare l'interazione con le IA conversazionali"
-        
-    # - section: "Approfondimenti" 
-    #   cards: 
-    #   - url: "#" # XXX medium (futurability)
-    #   - url: "#" # XXX medium (futurability)
-    #   - url: "#" # XXX medium (futurability)

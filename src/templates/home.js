@@ -47,7 +47,10 @@ function Template({
           <HeaderNav data={HeaderData.navbar} />
         </NavWrapper>
       </Header>
-      <HeaderPost data={HeaderData.headerPost} />
+      <HeaderPost
+        data={HeaderData.headerPost}
+        editorialSections={pageContext?.editorialSections}
+      />
       <main id="main">
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && (
@@ -72,7 +75,7 @@ function Template({
               {...hl}
               highlightedCards={highlightedCards}
               editorialSections={pageContext?.editorialSections}
-              highlightIndex={index}  // Pass the index for automation
+              highlightIndex={index} // Pass the index for automation
             />
           ))}
         {Pagedata.components.highlightCards && (

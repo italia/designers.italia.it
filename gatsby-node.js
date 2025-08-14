@@ -1,4 +1,4 @@
-/* eslint-disable no-console */ // console.log is ok here for progress reporting
+/* eslint-disable no-console */
 
 const { createRemoteFileNode } = require("gatsby-source-filesystem");
 
@@ -226,9 +226,8 @@ exports.createSchemaCustomization = ({ actions }) => {
 };
 
 exports.sourceNodes = async ({ actions: { createNode } }) => {
-  // assets import in graphQL for gatsby-plugin-image
   const dataFiles = fetchDataFiles();
-  const assets = [...new Set(findValues(dataFiles, "img"))]; // new Set removes duplicates
+  const assets = [...new Set(findValues(dataFiles, "img"))];
 
   assets.forEach((asset, idx) => {
     if (isRemoteAsset(asset)) {
@@ -242,7 +241,6 @@ exports.sourceNodes = async ({ actions: { createNode } }) => {
         children: [],
         internal: {
           type: "RemoteAsset",
-          // contentDigest: createContentDigest(data),
         },
       });
     }
@@ -265,7 +263,7 @@ exports.onCreateNode = async ({
       url: node.source,
       parentNodeId: node.id,
       createNode,
-      createNodeId, // `${node.unique_identifier_prop}-assets-${index}`,
+      createNodeId,
       getCache,
     });
     if (fileNode) {
@@ -275,7 +273,6 @@ exports.onCreateNode = async ({
     node.internal.type === "File" &&
     (node.extension === "yaml" || node.extension === "yml")
   ) {
-    // content
     if (node.sourceInstanceName === "content") {
       const content = await loadNodeContent(node);
       const parsedContent = jsYaml.load(content);
@@ -295,22 +292,6 @@ exports.onCreateNode = async ({
       createNode(contentNode);
       createParentChildLink({ parent: node, child: contentNode });
     } else if (node.sourceInstanceName === "editorialBoard") {
-      // editorialboard setting nodes
-      /*
-       Query: 
-         
-       { allEditorialBoard {
-           nodes {
-             highlightedCards {
-               page
-               sections {
-                 section
-               }
-             }
-           }
-         }
-       }
-       */
       const content = await loadNodeContent(node);
       const parsedContent = jsYaml.load(content);
 
@@ -332,7 +313,6 @@ exports.onCreateNode = async ({
   }
 };
 
-/* eslint-disable consistent-return */
 exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
   if (page.context.highlighted) {
     return "Skipping already highlighted page";
@@ -346,7 +326,7 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
   if (editorialBoardNodes.length > 0) {
     const editorialData = editorialBoardNodes[0];
 
-    let pageKey = "index"; // default
+    let pageKey = "index";
     if (page.path.includes("/design-system/")) {
       pageKey = "design-system";
     } else if (page.path.includes("/community/")) {
@@ -359,19 +339,29 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
 
     if (pageConfig?.sections) {
       pageConfig.sections.forEach((section) => {
-        const sectionTitles = section.cards?.map((card) => {
-          if (typeof card === 'string') {
-            return card;
-          }
-          return card.title;
-        }).filter(Boolean) || [];
+        if (section.section === "header-bookmarks") {
+          editorialSections.push({
+            section: section.section,
+            highlighted: section.cards || [],
+          });
+          return;
+        }
+
+        const sectionTitles =
+          section.cards
+            ?.map((card) => {
+              if (typeof card === "string") {
+                return card;
+              }
+              return card.title;
+            })
+            .filter(Boolean) || [];
 
         editorialSections.push({
           section: section.section,
-          highlighted: section.cards || [],  
+          highlighted: section.cards || [],
         });
 
-        // Add just the titles to the highlighted array for backward compatibility
         highlighted.push(...sectionTitles);
       });
     }
@@ -386,10 +376,11 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
       editorialSections,
     },
   });
+
+  return "Page created with editorial sections";
 };
 
 exports.createPages = async ({ graphql, actions }) => {
-  // tags
   const { createPage } = actions;
   const tagTemplate = path.resolve("src/templates/tag.js");
   const tags = await graphql(`
@@ -416,7 +407,7 @@ exports.createPages = async ({ graphql, actions }) => {
       },
     });
   });
-  // tagsDesignSystem
+
   const tagDesignSystemTemplate = path.resolve(
     "src/templates/design-system-index-components-tags.js",
   );
@@ -449,7 +440,6 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
 
-  // redirs
   const { createRedirect } = actions;
   const redirs = await graphql(`
     {
