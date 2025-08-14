@@ -108,13 +108,19 @@ function Template({
                       if (!imagePath) return null;
 
                       // Remove "https://designers.italia.it" from the beginning if present
-                      if (imagePath.startsWith('https://designers.italia.it')) {
-                        return imagePath.replace('https://designers.italia.it', '');
+                      if (imagePath.startsWith("https://designers.italia.it")) {
+                        return imagePath.replace(
+                          "https://designers.italia.it",
+                          "",
+                        );
                       }
 
                       // Remove "http://designers.italia.it" from the beginning if present
-                      if (imagePath.startsWith('http://designers.italia.it')) {
-                        return imagePath.replace('http://designers.italia.it', '');
+                      if (imagePath.startsWith("http://designers.italia.it")) {
+                        return imagePath.replace(
+                          "http://designers.italia.it",
+                          "",
+                        );
                       }
 
                       // If it's already relative or from a different domain, return as-is
@@ -124,28 +130,33 @@ function Template({
                     // 🎯 CONTENT-TYPE-SPECIFIC IMAGE SELECTION
                     const getImageAndAlt = (node, contentType) => {
                       switch (contentType) {
-                        case 'eventi':
+                        case "eventi":
                           return {
-                            img: normalizeImagePath(node.seo?.image),       // ✅ Events use seo.image (normalized)
-                            alt: node.components?.imageIcons?.alt || ""
+                            img: normalizeImagePath(node.seo?.image), // ✅ Events use seo.image (normalized)
+                            alt: node.components?.imageIcons?.alt || "",
                           };
 
-                        case 'media':
+                        case "media":
                           return {
-                            img: normalizeImagePath(node.seo?.image),       // ✅ Media use seo.image (normalized)
-                            alt: node.components?.imageIcons?.alt || ""
+                            img: normalizeImagePath(node.seo?.image), // ✅ Media use seo.image (normalized)
+                            alt: node.components?.imageIcons?.alt || "",
                           };
 
-                        case 'notizie':
+                        case "notizie":
                           return {
-                            img: normalizeImagePath(node.components?.imageIcons?.image), // ✅ News use imageIcons.image (normalized)
-                            alt: node.components?.imageIcons?.alt || ""
+                            img: normalizeImagePath(
+                              node.components?.imageIcons?.image,
+                            ), // ✅ News use imageIcons.image (normalized)
+                            alt: node.components?.imageIcons?.alt || "",
                           };
 
                         default:
                           return {
-                            img: normalizeImagePath(node.components?.imageIcons?.image || node.seo?.image),
-                            alt: node.components?.imageIcons?.alt || ""
+                            img: normalizeImagePath(
+                              node.components?.imageIcons?.image ||
+                                node.seo?.image,
+                            ),
+                            alt: node.components?.imageIcons?.alt || "",
                           };
                       }
                     };
@@ -155,30 +166,39 @@ function Template({
                     // 🎯 CARD DATA TRANSFORMATION WITH CONDITIONAL TEXT
                     const cardData = {
                       title: node.components?.hero?.title,
-                      img: img,
-                      alt: alt,
+                      img,
+                      alt,
                       url: node.seo?.pathname,
                     };
 
                     // 🎯 CONDITIONAL TEXT - Only add text for news, not for events/media
                     if (contentType === "notizie") {
-                      cardData.text = node.seo?.description;               // ✅ Only news get text content
+                      cardData.text = node.seo?.description; // ✅ Only news get text content
                     }
                     // Events and media deliberately have NO text content (matching original static cards)
 
                     // 🔍 DEBUG CARD CONTENT
-                    console.log(`🖼️ Card content for "${cardData.title}" (${contentType}):`, {
-                      hasText: !!cardData.text,
-                      textContent: cardData.text || 'NO TEXT (events/media)',
-                      normalizedImg: cardData.img,
-                      source: contentType === 'eventi' ? 'seo.image' :
-                        contentType === 'media' ? 'seo.image' :
-                          contentType === 'notizie' ? 'imageIcons.image' : 'fallback'
-                    });
+                    console.log(
+                      `🖼️ Card content for "${cardData.title}" (${contentType}):`,
+                      {
+                        hasText: !!cardData.text,
+                        textContent: cardData.text || "NO TEXT (events/media)",
+                        normalizedImg: cardData.img,
+                        source:
+                          contentType === "eventi"
+                            ? "seo.image"
+                            : contentType === "media"
+                            ? "seo.image"
+                            : contentType === "notizie"
+                            ? "imageIcons.image"
+                            : "fallback",
+                      },
+                    );
 
                     // 🎯 CONDITIONAL TAGS - Only add if not media/events
                     if (contentType !== "media" && contentType !== "eventi") {
-                      cardData.tags = node.components?.hero?.kangaroo?.tags || [];
+                      cardData.tags =
+                        node.components?.hero?.kangaroo?.tags || [];
                     }
 
                     // 🎯 HANDLE TAGS FROM HERO
@@ -190,21 +210,29 @@ function Template({
                     }
 
                     // 🎯 EXTRACT DATE INFORMATION
-                    const personalInfo = node.components?.hero?.kangaroo?.personalInfo?.items;
-                    const eventInfo = node.components?.hero?.kangaroo?.eventInfo?.items;
+                    const personalInfo =
+                      node.components?.hero?.kangaroo?.personalInfo?.items;
+                    const eventInfo =
+                      node.components?.hero?.kangaroo?.eventInfo?.items;
 
                     if (personalInfo) {
-                      const dataItem = personalInfo.find((item) => item.title === "Data");
+                      const dataItem = personalInfo.find(
+                        (item) => item.title === "Data",
+                      );
                       if (dataItem) {
                         cardData.dateInfo = dataItem.label;
                       }
                     } else if (eventInfo) {
-                      const dataItem = eventInfo.find((item) => item.title === "Data e orario");
+                      const dataItem = eventInfo.find(
+                        (item) => item.title === "Data e orario",
+                      );
                       if (dataItem) {
                         cardData.dateInfo = dataItem.label;
 
                         // 🎯 PARSE DATE FOR OVERLAY (Events only)
-                        const dateMatch = dataItem.label.match(/(\d+)\s+(\w+)\s+(\d+)/);
+                        const dateMatch = dataItem.label.match(
+                          /(\d+)\s+(\w+)\s+(\d+)/,
+                        );
                         if (dateMatch && contentType === "eventi") {
                           cardData.dateOverlay = {
                             day: dateMatch[1],
@@ -221,7 +249,9 @@ function Template({
                       // Ensure date overlay is visible
                       if (cardData.dateInfo && !cardData.dateOverlay) {
                         // Fallback date parsing for events
-                        const dateMatch = cardData.dateInfo.match(/(\d+)\s+(\w+)\s+(\d+)/);
+                        const dateMatch = cardData.dateInfo.match(
+                          /(\d+)\s+(\w+)\s+(\d+)/,
+                        );
                         if (dateMatch) {
                           cardData.dateOverlay = {
                             day: dateMatch[1],
@@ -262,7 +292,10 @@ function Template({
                     }
 
                     // 🎯 REMOVE DATE INFO TEXT FROM EVENTS - Events only use date overlay, not date text
-                    if (!cardSettings.showDateInfo || contentType === "eventi") {
+                    if (
+                      !cardSettings.showDateInfo ||
+                      contentType === "eventi"
+                    ) {
                       delete finalCard.dateInfo;
                     }
 
@@ -291,9 +324,9 @@ function Template({
                       contentType,
                       hasImg: !!finalCard.img,
                       hasText: !!finalCard.text,
-                      hasDateInfo: !!finalCard.dateInfo,           // ✅ Should be false for events
+                      hasDateInfo: !!finalCard.dateInfo, // ✅ Should be false for events
                       hasIconOverlay: !!finalCard.iconOverlay,
-                      hasDateOverlay: !!finalCard.dateOverlay,     // ✅ Should be true for events
+                      hasDateOverlay: !!finalCard.dateOverlay, // ✅ Should be true for events
                       hasTags: !!finalCard.tags,
                       hasTag: !!finalCard.tag,
                       cardEvent: finalCard.cardEvent,
