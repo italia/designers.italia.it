@@ -29,8 +29,6 @@ import BannerTextCta from "../components/banner-text-cta/banner-text-cta";
 import Numbers from "../components/numbers/numbers";
 import ImageIcons from "../components/image-icons/image-icons";
 
-import HighlightedCards from "../components/highlighted-cards/highlighted-cards";
-
 function Template({
   Pagedata,
   highlightedCards,
@@ -51,7 +49,6 @@ function Template({
       </Header>
       <HeaderPost data={HeaderData.headerPost} />
       <main id="main">
-        <HighlightedCards data={highlightedCards} />
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && (
             <ContentCollapse
@@ -92,7 +89,11 @@ function Template({
           </SectionIntro>
         )}
         {Pagedata.components.highlightCards2 && (
-          <HighlightCards {...Pagedata.components.highlightCards2} />
+          <HighlightCards
+            {...Pagedata.components.highlightCards2}
+            highlightedCards={highlightedCards}
+            editorialSections={pageContext?.editorialSections}
+          />
         )}
         {Pagedata.components.bannerTextCta && (
           <BannerTextCta {...Pagedata.components.bannerTextCta}>

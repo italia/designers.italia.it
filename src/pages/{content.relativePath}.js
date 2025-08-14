@@ -512,6 +512,15 @@ export const query = graphql`
           text
           background
           col4
+          cardSettings {
+            headingLevel
+            customCol
+            imgRatio
+            imgPlaceholder
+            fullHeight
+            rounded
+            showDateInfo
+          }
           cards {
             title
             img
@@ -599,6 +608,7 @@ export const query = graphql`
           }
         }
         highlightCards2 {
+          id
           background
           nopadtop
           hasCustomCols
@@ -608,30 +618,18 @@ export const query = graphql`
             url
             addonStyle
           }
-          cards {
-            title
+          cardSettings {
             headingLevel
             customCol
-            img
-            alt
             imgRatio
             imgPlaceholder
             fullHeight
             rounded
-            url
-            blank
-            externalLink {
-              label
-              screenReaderText
-              icon {
-                icon
-                size
-              }
-            }
-            moreInfo
-            tags
-            text
-            dateInfo
+            showDateInfo
+            showTags
+            showTag
+            showDateOverlay
+            showIconOverlay
           }
         }
         bannerTextCta {

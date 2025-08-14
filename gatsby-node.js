@@ -39,7 +39,35 @@ exports.createSchemaCustomization = ({ actions }) => {
       cards: [ContentComponentsHighlightCardsLoopCards]
     }
 
+    type ContentComponentsHighlightCards {
+      id: String
+      title: String
+      headingLevel: Int
+      text: String
+      col4: Boolean
+      background: String
+      nopadtop: Boolean
+      cardSettings: ContentComponentsHighlightCardsCardSettings
+      cards: [ContentComponentsHighlightCardsCards]
+    }
+
     type ContentComponentsHighlightCardsLoopCardSettings {
+      headingLevel: Int
+      customCol: String
+      imgRatio: String
+      imgPlaceholder: Boolean
+      fullHeight: Boolean
+      rounded: Boolean
+      showDateInfo: Boolean
+      showTags: Boolean
+      cardEvent: Boolean
+      titleSmall: Boolean
+      showDateOverlay: Boolean
+      showTag: Boolean
+      showIconOverlay: Boolean
+    }
+
+    type ContentComponentsHighlightCardsCardSettings {
       headingLevel: Int
       customCol: String
       imgRatio: String
@@ -116,6 +144,30 @@ exports.createSchemaCustomization = ({ actions }) => {
       moreInfo: String
       titleSmall: Boolean
     }
+
+    type ContentComponentsHighlightCardsCards {
+      cardEvent: Boolean
+      iconOverlay: ContentComponentsHighlightCardsCardsIconOverlay
+      dateOverlay: ContentComponentsHighlightCardsCardsDateOverlay
+      dateInfo: String
+      tag: ContentComponentsHighlightCardsCardsTag
+      text: String
+      title: String
+      headingLevel: Int
+      customCol: String
+      img: String
+      alt: String
+      imgRatio: String
+      imgPlaceholder: Boolean
+      fullHeight: Boolean
+      rounded: Boolean
+      url: String
+      tags: [String]
+      blank: Boolean
+      externalLink: ContentComponentsHighlightCardsCardsExternalLink
+      moreInfo: String
+      titleSmall: Boolean
+    }
     
     type ContentComponentsHighlightCardsLoopCardsIconOverlay {
       icon: String
@@ -140,6 +192,33 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
 
     type ContentComponentsHighlightCardsLoopCardsExternalLinkIcon {
+      icon: String
+      size: String
+    }
+
+    type ContentComponentsHighlightCardsCardsIconOverlay {
+      icon: String
+      ariaLabel: String
+    }
+    
+    type ContentComponentsHighlightCardsCardsDateOverlay {
+      day: String
+      month: String
+      year: String
+    }
+    
+    type ContentComponentsHighlightCardsCardsTag {
+      label: String
+      addonClasses: String
+    }
+
+    type ContentComponentsHighlightCardsCardsExternalLink {
+      label: String
+      screenReaderText: String
+      icon: ContentComponentsHighlightCardsCardsExternalLinkIcon
+    }
+
+    type ContentComponentsHighlightCardsCardsExternalLinkIcon {
       icon: String
       size: String
     }
@@ -217,22 +296,21 @@ exports.onCreateNode = async ({
       createParentChildLink({ parent: node, child: contentNode });
     } else if (node.sourceInstanceName === "editorialBoard") {
       // editorialboard setting nodes
-      // XXX > NOW WE HAVE THEM ON THE GRAPHQL SCHEMA, we have just to read them... and create the right array for the right page below... who know if it's the best way to do this...
       /*
-      try this query: 
-        
-      { allEditorialBoard {
-          nodes {
-            highlightedCards {
-              page
-              sections {
-                section
-              }
-            }
-          }
-        }
-      }
-      */
+       Query: 
+         
+       { allEditorialBoard {
+           nodes {
+             highlightedCards {
+               page
+               sections {
+                 section
+               }
+             }
+           }
+         }
+       }
+       */
       const content = await loadNodeContent(node);
       const parsedContent = jsYaml.load(content);
 
@@ -265,17 +343,9 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
   const highlighted = [];
   const editorialSections = [];
 
-  console.log(`🔍 Processing page: ${page.path}`);
-  console.log(`📊 Found ${editorialBoardNodes.length} editorial board nodes`);
-
   if (editorialBoardNodes.length > 0) {
     const editorialData = editorialBoardNodes[0];
-    console.log(
-      "📋 Editorial data:",
-      JSON.stringify(editorialData.highlightedCards, null, 2),
-    );
 
-    // Determine page key based on path
     let pageKey = "index"; // default
     if (page.path.includes("/design-system/")) {
       pageKey = "design-system";
@@ -283,42 +353,22 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
       pageKey = "community";
     }
 
-    console.log(`🔍 Looking for page config: ${pageKey}`);
-
     const pageConfig = editorialData.highlightedCards?.find(
       (config) => config.page === pageKey,
     );
 
-    console.log(`📄 Found page config:`, pageConfig);
-
     if (pageConfig?.sections) {
-      // Process each section
       pageConfig.sections.forEach((section) => {
-        console.log(`📝 Processing section: ${section.section}`);
-        console.log(`📋 Cards in section:`, section.cards);
-
         const sectionTitles = section.cards?.map((card) => card.title) || [];
-        console.log(`🏷️ Extracted titles:`, sectionTitles);
 
         editorialSections.push({
           section: section.section,
           highlighted: sectionTitles,
         });
 
-        // Add to global array for GraphQL query
         highlighted.push(...sectionTitles);
       });
-
-      console.log(
-        `✅ Final highlighted array (${highlighted.length} items):`,
-        highlighted,
-      );
-      console.log(`✅ Final editorial sections:`, editorialSections);
-    } else {
-      console.log(`⚠️ No sections found for page ${pageKey}`);
     }
-  } else {
-    console.log("⚠️ No editorial board nodes found");
   }
 
   deletePage(page);
@@ -329,11 +379,6 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
       highlighted,
       editorialSections,
     },
-  });
-
-  console.log(`✅ Recreated page ${page.path} with context:`, {
-    highlighted: highlighted.length,
-    editorialSections: editorialSections.length,
   });
 };
 

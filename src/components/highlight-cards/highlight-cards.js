@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React from "react";
+import React, { useMemo } from "react"; // ✅ Add useMemo import
 import Card from "../card/card";
 import Button from "../button/button";
 import Topics from "../topics/topics";
@@ -19,12 +19,199 @@ function HighlightCards({
   nospace,
   nopadtop,
   hasCustomCols,
+  cardSettings,
+  highlightedCards,
+  editorialSections,
 }) {
+  const processedCards = useMemo(() => {
+    // If no automation data provided, use original cards
+    if (!editorialSections || !id || !highlightedCards?.edges?.length) {
+      return cards;
+    }
+
+    const editorialSection = editorialSections.find((es) => es.section === id);
+    if (!editorialSection || !editorialSection.highlighted?.length) {
+      return cards;
+    }
+
+    const normalizeImagePath = (imagePath) => {
+      if (!imagePath) return null;
+
+      if (imagePath.startsWith("https://designers.italia.it")) {
+        return imagePath.replace("https://designers.italia.it", "");
+      }
+
+      if (imagePath.startsWith("http://designers.italia.it")) {
+        return imagePath.replace("http://designers.italia.it", "");
+      }
+
+      return imagePath;
+    };
+
+    const getImageAndAlt = (node, contentType) => {
+      switch (contentType) {
+        case "eventi": {
+          return {
+            img: normalizeImagePath(node.seo?.image),
+            alt: node.components?.imageIcons?.alt || "",
+          };
+        }
+
+        case "media": {
+          return {
+            img: normalizeImagePath(node.seo?.image),
+            alt: node.components?.imageIcons?.alt || "",
+          };
+        }
+
+        case "notizie": {
+          const primaryImage = node.components?.imageIcons?.image;
+          const fallbackImage = node.seo?.image;
+
+          return {
+            img: normalizeImagePath(primaryImage || fallbackImage),
+            alt: node.components?.imageIcons?.alt || "",
+          };
+        }
+
+        default: {
+          return {
+            img: normalizeImagePath(
+              node.components?.imageIcons?.image || node.seo?.image,
+            ),
+            alt: node.components?.imageIcons?.alt || "",
+          };
+        }
+      }
+    };
+
+    const automatedCards = highlightedCards.edges
+      .filter(({ node }) => {
+        const nodeTitle = node.components?.hero?.title;
+        return editorialSection.highlighted.includes(nodeTitle);
+      })
+
+      .map(({ node }) => {
+        const contentType = node.metadata?.archive;
+        const { img, alt } = getImageAndAlt(node, contentType);
+
+        const cardData = {
+          title: node.components?.hero?.title,
+          img,
+          alt,
+          url: node.seo?.pathname,
+        };
+
+        if (contentType === "notizie") {
+          cardData.text = node.seo?.description;
+        }
+
+        if (contentType !== "media" && contentType !== "eventi") {
+          cardData.tags = node.components?.hero?.kangaroo?.tags || [];
+        }
+
+        if (node.components?.hero?.tag?.label) {
+          cardData.tag = {
+            label: node.components.hero.tag.label,
+            addonClasses: node.components.hero.tag.addonClasses,
+          };
+        }
+
+        const personalInfo =
+          node.components?.hero?.kangaroo?.personalInfo?.items;
+        const eventInfo = node.components?.hero?.kangaroo?.eventInfo?.items;
+
+        if (personalInfo) {
+          const dataItem = personalInfo.find((item) => item.title === "Data");
+          if (dataItem) {
+            cardData.dateInfo = dataItem.label;
+          }
+        } else if (eventInfo) {
+          const dataItem = eventInfo.find(
+            (item) => item.title === "Data e orario",
+          );
+          if (dataItem) {
+            cardData.dateInfo = dataItem.label;
+
+            const dateMatch = dataItem.label.match(/(\d+)\s+(\w+)\s+(\d+)/);
+            if (dateMatch && contentType === "eventi") {
+              cardData.dateOverlay = {
+                day: dateMatch[1],
+                month: dateMatch[2],
+                year: dateMatch[3],
+              };
+            }
+          }
+        }
+
+        if (contentType === "eventi") {
+          cardData.cardEvent = true;
+          if (cardData.dateInfo && !cardData.dateOverlay) {
+            const dateMatch = cardData.dateInfo.match(/(\d+)\s+(\w+)\s+(\d+)/);
+            if (dateMatch) {
+              cardData.dateOverlay = {
+                day: dateMatch[1],
+                month: dateMatch[2],
+                year: dateMatch[3],
+              };
+            }
+          }
+        }
+
+        if (contentType === "media") {
+          cardData.iconOverlay = {
+            icon: "sprites.svg#it-video",
+            ariaLabel: "Video",
+          };
+          cardData.cardEvent = true;
+        }
+
+        const finalCard = {
+          ...cardSettings,
+          ...cardData,
+        };
+
+        if (
+          !cardSettings?.showTags ||
+          contentType === "media" ||
+          contentType === "eventi"
+        ) {
+          delete finalCard.tags;
+        }
+
+        if (!cardSettings?.showDateInfo || contentType === "eventi") {
+          delete finalCard.dateInfo;
+        }
+
+        if (!cardSettings?.showDateOverlay || contentType !== "eventi") {
+          delete finalCard.dateOverlay;
+        }
+
+        if (!cardSettings?.showIconOverlay || contentType !== "media") {
+          delete finalCard.iconOverlay;
+        }
+
+        if (!cardSettings?.showTag) {
+          delete finalCard.tag;
+        }
+
+        return finalCard;
+      })
+      .sort((a, b) => {
+        if (a.dateInfo && b.dateInfo) {
+          return new Date(b.dateInfo) - new Date(a.dateInfo);
+        }
+        return 0;
+      });
+
+    return automatedCards;
+  }, [editorialSections, id, highlightedCards, cards, cardSettings]);
+
   const styles =
     "highlight-cards" +
     `${background ? ` bg-${background}` : ""}` +
-    `${nospace ? "" : "  py-5 py-lg-7"}` +
-    `${nopadtop ? "  no-pad-top" : ""}`;
+    `${nospace ? "" : " py-5 py-lg-7"}` +
+    `${nopadtop ? " no-pad-top" : ""}`;
 
   let cardStyles = classNames("col-12 col-md-6 mb-3 mb-md-4", {
     "col-lg-4": !col4,
@@ -46,8 +233,8 @@ function HighlightCards({
     HLevel = `h2`;
   }
 
-  if (cards) {
-    cardsItems = cards.map((item, index) => {
+  if (processedCards) {
+    cardsItems = processedCards.map((item, index) => {
       if (!item.customCol) {
         return (
           <div className={cardStyles} key={`cardcol-${index}`}>
