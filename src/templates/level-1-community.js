@@ -8,7 +8,6 @@ import Footer from "../components/footer/footer";
 import BackToTopEl from "../components/back-to-top/back-to-top";
 import HeaderSlim from "../components/header-slim/header-slim";
 import HeaderPre from "../components/header-pre/header-pre";
-// import HeaderPost from "../components/header-post/header-post"
 import NavWrapper from "../components/nav-wrapper/nav-wrapper";
 import HeaderCenter from "../components/header-center/header-center";
 import HeaderNav from "../components/header-nav/header-nav";
@@ -26,7 +25,14 @@ import HeaderData from "../data/header.yaml";
 import FooterData from "../data/footer.yaml";
 import skipLinksData from "../data/skiplinks.yaml";
 
-function Template({ children, Pagedata, pageContext, location, lastModified }) {
+function Template({
+  children,
+  Pagedata,
+  pageContext,
+  location,
+  lastModified,
+  highlightedCards,
+}) {
   let activePage = null;
 
   if (Pagedata.metadata?.activeLabel) {
@@ -55,26 +61,22 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
         {Pagedata.components?.sectionIntro && (
           <SectionIntro {...Pagedata.components.sectionIntro} />
         )}
-
         {Pagedata.components.highLights &&
           Pagedata.components.highLights.map((hl, index) => (
             <Highlight key={`hl-${index}`} {...hl} />
           ))}
-
         {Pagedata.components?.titleText && (
           <TitleText {...Pagedata.components.titleText} />
         )}
-
         {Pagedata.components?.highlightCardsLoop &&
           Pagedata.components.highlightCardsLoop.map((hlc, index) => (
-            <HighlightCards key={`hcl-${index}`} {...hlc} />
+            <HighlightCards
+              key={`hcl-${index}`}
+              {...hlc}
+              highlightedCards={highlightedCards}
+              editorialSections={pageContext?.editorialSections}
+            />
           ))}
-
-        {/* {Pagedata.components?.highlightsLoop &&
-          Pagedata.components.highlightsLoop.map((hl, index) => (
-            <Highlight key={`hl-${index}`} {...hl} />
-          ))} */}
-
         {Pagedata.components.sectionsEditorial &&
           Pagedata.components.sectionsEditorial.map((section, index) => (
             <SectionEditorial key={`sectionEditorial-${index}`} {...section} />
