@@ -1,4 +1,7 @@
-exports.shouldUpdateScroll = ({ routerProps: { location, action }, getSavedScrollPosition }) => {
+exports.shouldUpdateScroll = ({
+  routerProps: { location, action },
+  getSavedScrollPosition,
+}) => {
   if (action === "POP") {
     const savedPosition = getSavedScrollPosition(location);
     return savedPosition || true;
