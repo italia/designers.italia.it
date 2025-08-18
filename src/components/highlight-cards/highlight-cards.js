@@ -3,7 +3,6 @@ import React, { useMemo } from "react";
 import Card from "../card/card";
 import Button from "../button/button";
 import Topics from "../topics/topics";
-// import ReactMarkdown from "react-markdown"
 import "./highlight-cards.scss";
 
 function HighlightCards({
@@ -97,15 +96,19 @@ function HighlightCards({
         });
       })
 
-      .map(({ node }) => {
+      .map(({ node }, cardIndex) => {
         const contentType = node.metadata?.archive;
         const { img, alt } = getImageAndAlt(node, contentType);
+        const uniqueId = `${contentType || "content"}-${cardIndex}-${
+          node.seo?.pathname?.replace(/\//g, "-") || "unknown"
+        }`;
 
         const cardData = {
           title: node.components?.hero?.title,
           img,
           alt,
           url: node.seo?.pathname,
+          uniqueCardId: uniqueId,
         };
 
         if (contentType === "notizie") {
@@ -241,16 +244,18 @@ function HighlightCards({
 
   if (processedCards) {
     cardsItems = processedCards.map((item, index) => {
+      const cardKey = item.uniqueCardId || `cardcol-${index}`;
+
       if (!item.customCol) {
         return (
-          <div className={cardStyles} key={`cardcol-${index}`}>
+          <div className={cardStyles} key={cardKey}>
             <Card {...item} />
           </div>
         );
       }
       cardStyles = `col-12 col-md-6 mb-3 mb-md-4 ${item.customCol}`;
       return (
-        <div className={cardStyles} key={`cardcol-${index}`}>
+        <div className={cardStyles} key={cardKey}>
           <Card {...item} />
         </div>
       );
@@ -269,15 +274,13 @@ function HighlightCards({
         {title && (
           <div className="row mb-4 mb-md-5 intro">
             <div className="col-12 g-0">
-              {/* <div className='col col-md-10 offset-md-1'> */}
               <div className="px-3 px-lg-5">
                 {title && (
                   <HLevel id={id} className="mb-2">
                     {title}
                   </HLevel>
                 )}
-                <p className="lead">{text}</p>{" "}
-                {/* <ReactMarkdown>{text}</ReactMarkdown> */}
+                <p className="lead">{text}</p>
               </div>
             </div>
           </div>
