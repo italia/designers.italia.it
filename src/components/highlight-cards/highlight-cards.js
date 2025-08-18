@@ -33,6 +33,47 @@ function HighlightCards({
       return cards;
     }
 
+    const externalCardSections = ["articoli-di-approfondimento"];
+
+    if (externalCardSections.includes(id)) {
+      const externalCards = editorialSection.highlighted.map((cardData, cardIndex) => {
+        const uniqueId = `external-${cardIndex}-${cardData.url?.replace(/[^a-zA-Z0-9]/g, '-') || 'unknown'}`;
+
+        const finalCard = {
+          ...cardSettings,
+          ...cardData,
+          uniqueCardId: uniqueId,
+          blank: true,
+          externalLink: {
+            label: "Leggi su Medium",
+            screenReaderText: " (si apre in una nuova finestra)",
+            icon: {
+              icon: "sprites.svg#it-external-link",
+              size: "xs"
+            }
+          }
+        };
+
+        if (!cardSettings?.showTags) {
+          delete finalCard.tags;
+        }
+        if (!cardSettings?.showDateInfo) {
+          delete finalCard.dateInfo;
+        }
+        if (!cardSettings?.showTag) {
+          delete finalCard.tag;
+        }
+
+        return finalCard;
+      });
+
+      return externalCards;
+    }
+
+    if (!highlightedCards?.edges?.length) {
+      return cards;
+    }
+
     const normalizeImagePath = (imagePath) => {
       if (!imagePath) return null;
 
@@ -99,9 +140,8 @@ function HighlightCards({
       .map(({ node }, cardIndex) => {
         const contentType = node.metadata?.archive;
         const { img, alt } = getImageAndAlt(node, contentType);
-        const uniqueId = `${contentType || "content"}-${cardIndex}-${
-          node.seo?.pathname?.replace(/\//g, "-") || "unknown"
-        }`;
+        const uniqueId = `${contentType || "content"}-${cardIndex}-${node.seo?.pathname?.replace(/\//g, "-") || "unknown"
+          }`;
 
         const cardData = {
           title: node.components?.hero?.title,
