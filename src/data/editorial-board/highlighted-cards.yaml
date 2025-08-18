@@ -1,12 +1,7 @@
-# (SANDBOX) 
-# Dashboard file to check all the highlighted editorial cards on the various pages
-# Maybe "title"s are not the best way to... 
-
-# YAML Editorial Board - Solo dati redazionali
 highlightedCards:
 
   ################################
-  # /
+  # / (homepage)
   ################################
   - page: "index"
     sections:
@@ -42,18 +37,7 @@ highlightedCards:
           - title: "Definisci la direzione progettuale di un sito o servizio con il nuovo kit ‘Stato dell’arte’"
 
   ################################
-  # /DESIGN-SYSTEM/ 
-  ################################
-  - page: "design-system"
-    sections:
-    - section: "novita"
-      cards:
-        - title: "Passi avanti per i kit di design e sviluppo di .italia"
-        - title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
-        - title: ".italia: risorse in miglioramento continuo" 
-
-  ################################
-  # /COMMUNITY/ 
+  # /community/ 
   ################################
   - page: "community"
     sections:
@@ -84,14 +68,14 @@ highlightedCards:
           alt: ""
           url: "https://medium.com/designers-italia/verso-design-system-italia-la-v1-segna-un-traguardo-per-l-accessibilita-integrata-della-pa-89df3e1c3af5"
           moreInfo: "di Francesco Mascia"
-          tags: ["Design system", "Interfaccia utente", "Accessibilita"]
+          tags: ["Design system", "Interfaccia utente", "Accessibilità"]
 
         - title: "Verso Design system .italia: dalle origini al design system aperto della PA"
           img: "/images/community/articoli-di-approfondimento/20240522-verso-design-system-italia-dalle-origini-al-design-system-aperto-della-pa.png"
           alt: ""
           url: "https://medium.com/designers-italia/verso-design-system-italia-dalle-origini-al-design-system-aperto-del-paese-66a2d5af6654"
           moreInfo: "di Daniele Tabellini"
-          tags: ["Design system", "Interfaccia utente", "Accessibilita"]
+          tags: ["Design system", "Interfaccia utente", "Accessibilità"]
 
         - title: "Verso Design system .italia: come è nato il nome del design system del Paese"
           img: "/images/community/articoli-di-approfondimento/20240411-verso-design-system-italia-come-e-nato-il-nome-del-design-system-del-paese.png"
@@ -99,3 +83,42 @@ highlightedCards:
           url: "https://medium.com/designers-italia/verso-design-system-italia-come-%C3%A8-nato-il-nome-del-design-system-del-paese-a2720e219f00"
           moreInfo: "di Gabriella Poggioli"
           tags: ["Design system"]
+
+  ################################
+  # /design-system/ 
+  ################################
+  - page: "design-system"
+    sections:
+    - section: "novita"
+      cards:
+        - title: "Passi avanti per i kit di design e sviluppo di .italia"
+        - title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
+        - title: ".italia: risorse in miglioramento continuo" 
+
+  ################################
+  # /normativa/ 
+  ################################
+  - page: "normativa"
+    sections:
+    - section: "articoli-di-approfondimento"
+      cards:
+        - title: "Scrivere (semplice) per la PA: qualità nella comunicazione e diritti delle persone"
+          img: "/images/community/articoli-di-approfondimento/20231108-scrivere-semplice-per-la-pa-qualita-nella-comunicazione-e-diritti-delle-persone-1198x673.png"
+          alt: ""
+          url: "https://medium.com/designers-italia/scrivere-semplice-per-la-pa-qualit%C3%A0-nella-comunicazione-e-diritti-delle-persone-ff28bf02bfad"
+          moreInfo: "di Daniela Iozzo"
+          tags: ["Progettazione contenuti"]
+
+        - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+          img: "/images/community/articoli-di-approfondimento/20220705-progettare-con-qualita-l-accessibilita-al-centro-del-design-system-del-paese.webp"
+          alt: ""
+          url: "https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099"
+          moreInfo: "di Daniele Tabellini e Fabrizio Caccavello"
+          tags: ["Design system", "Interfaccia utente", "Accessibilita"]
+
+        - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
+          img: "/images/community/articoli-di-approfondimento/20220128-accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-digitali.webp"
+          alt: ""
+          url: "https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469"
+          moreInfo: "di Mauro Filippi e Federica Merenda"
+          tags: ["Accessibilità", "Usabilità", "Progettazione servizi"]
