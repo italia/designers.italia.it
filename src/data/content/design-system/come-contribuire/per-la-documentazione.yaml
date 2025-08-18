@@ -9,7 +9,6 @@ seo:
   name: Per la documentazione
   description: Le indicazioni e i passi da seguire per contribuire alla documentazione del progetto Designers Italia.
   image: null
-  twitterImage: null
   canonical: null
   pathname: /design-system/come-contribuire/per-la-documentazione/
 
@@ -71,7 +70,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+            url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -128,7 +127,7 @@ components:
             - label: "Conosci il modello di contribuzione?" #C
               screenReaderText: ""
               url: "/design-system/come-contribuire/modello-di-contribuzione/" #M
-              blank: true #M #C true if new tab for external links
+              blank: false #M #C true if new tab for external links
               icon:
                 icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
                 color: primary
@@ -163,7 +162,7 @@ components:
               Controlla in via preliminare se già esiste una discussione sul tema che ti interessa, o su un tema simile. Se già esiste, vai alla segnalazione dedicata e partecipa lasciando un commento. Se ti interessa lavorare a un contributo sul tema proponiti lasciando un commento nella discussione, evidenziando intenzioni e possibilità.
           ctas: 
             - label: "Discussioni sulla documentazione" #C
-              # screenReaderText: " relative alla documentazione"
+              screenReaderText: " (si apre in una nuova finestra)"
               url: https://github.com/italia/designers.italia.it/issues?q=is%3Aissue+is%3Aopen+label%3A%22design+system%22 #M
               blank: true #M #C true if new tab for external links
               icon:
@@ -182,7 +181,7 @@ components:
             Se il tema di tuo interesse non è presente nella lista puoi proporre una nuova segnalazione. Ricorda di inserire nella nuova segnalazione tutti i dettagli che ritieni necessari per approfondire il tema, in modo da consentire alla community e al team di Designers Italia di avere un quadro chiaro e il più possibile completo della tua proposta.   
           ctas:
             - label: "Nuova segnalazione" #C
-              screenReaderText: " relativa alla documentazione"
+              screenReaderText: " relativa alla documentazione (si apre in una nuova finestra)"
               url: https://github.com/italia/designers.italia.it/issues/new?assignees=&labels=design%20system&projects=&template=apri-una-segnalazione.it.yaml #M
               blank: true #M #C true if new tab for external links
               icon:

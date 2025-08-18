@@ -46,9 +46,8 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Aziende sanitarie locali (ASL) - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Presto disponibili le risorse per realizzare con facilità esperienze digitali semplici e accessibili per gli utenti delle ASL #C
-  image: https://designers.italia.it/images/modelli/asl-hero.png #I
-  twitterImage: https://designers.italia.it/images/modelli/asl-hero.png #I
+  description: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per gli utenti delle ASL #C
+  image: https://designers.italia.it/images/modelli/asl-cover.png #I
   canonical: null
   pathname: /modelli/aziende-sanitarie-locali/ #M
 
@@ -95,7 +94,7 @@ components:
   hero:
     background: light
     title: Aziende sanitarie locali (ASL) #C
-    subtitle: Presto disponibili le risorse per realizzare con facilità esperienze digitali semplici e accessibili per gli utenti delle ASL #C
+    subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per gli utenti delle ASL #C
     tag:
         label: Modello #C
         addonClasses: mt-3 text-uppercase
@@ -105,9 +104,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Il modello, ora in lavorazione, ti permette di **realizzare siti delle ASL** già validati dalla ricerca e progettati sui bisogni degli utenti, in modo rapido ed economico. Scopri tutti gli aggiornamenti sul modello, il processo di progettazione e le risorse in arrivo.
-    # img: /images/modelli/scuole-icon.svg #I
-    # alt: "" #C
+      Il modello ti permette di **realizzare siti delle ASL** basati sulla ricerca e progettati sui bisogni degli utenti. Le risorse, pronte all'uso, comprendono l'architettura dell'informazione, le librerie di componenti UI, i layout di pagina e una serie di guide pratiche a supporto per impostare e svolgere il lavoro in modo rapido ed economico.
+    img: /images/modelli/asl-icon.svg #I
+    alt: "" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -122,22 +121,22 @@ components:
         color: secondary
       tags: [Modelli di sito]
 
-      # KANGAROO: CHILDREN SHORTCUTS
-      # dropdown:
-      #   btnId: dropdownKang
-      #   button:
-      #     addonStyle: dropdown-toggle btn-dropdown
-      #     label: Scopri le schede operative #C
-      #     iconRight: true
-      #     icon:
-      #       icon: sprites.svg#it-expand
-      #       size: sm
-      #       color: primary
-      #       addonClasses: icon-expand ms-2
-      #   list:
-      #     listItems: #M
-      #       - url: "adotta-il-modello-di-sito-scolastico/"
-      #         label: Adotta il modello di sito scolastico #C
+      KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri le schede operative #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: primary
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #M
+            - url: "adotta-il-modello-di-sito-asl/"
+              label: Adotta il modello di sito ASL #C
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -148,20 +147,20 @@ components:
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: light
+      background: dark
       full: true
       noSpace: true
       components:
         # IMG
         - name: ImageIcons
-          image: /images/modelli/asl-hero.png #I
-          alt: "Un utente interagisce al computer con il sito di una ASL" #C
+          image: /images/modelli/asl-cover.png #I
+          alt: "Anteprima del modello sito per le ASL" #C
 
     # —
     # EDITORIAL #C #I
     # —
     - title: "Un punto di riferimento per gli utenti delle aziende sanitarie locali"
-      background: light
+      background: null
       menu: false
       centered: true
       text: | #C
@@ -184,13 +183,54 @@ components:
           noSpace: true
           text: | #C
             Grazie ai siti web delle ASL creati seguendo le indicazioni del modello, gli utenti possono trovare in un unico posto tutte le informazioni di cui hanno bisogno: gli indirizzi delle strutture più vicine, le modalità di accesso a visite ed esami, le indicazioni su percorsi di cura, le ultime novità e le campagne di prevenzione.
-            
-            Il modello comprende l'architettura dell'informazione e l'interfaccia per realizzare siti e servizi digitali chiari, semplici da usare e accessibili. 
+          ctas:
+          - label: Naviga un esempio di sito desktop #C
+            screenReaderText: "Prototipo desktop (si apre in una nuova finestra)" #C
+            url: https://www.figma.com/proto/wsLgwYpYrd9yS9Tqx0Wkjp/ASL---Modello-sito?node-id=2963-29111&starting-point-node-id=2963%3A29111&scaling=scale-down&mode=design&t=WQqEtf6esyW6n73Q-1 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Naviga un esempio di sito mobile #C
+            screenReaderText: "Prototipo mobile (si apre in una nuova finestra)" #C
+            url: https://www.figma.com/proto/wsLgwYpYrd9yS9Tqx0Wkjp/ASL---Modello-sito?page-id=856%3A106452&type=design&node-id=1058-24948&viewport=-22%2C847%2C0.09&t=zMGDRi0eYmscDBZW-1&scaling=scale-down&starting-point-node-id=1058%3A24948&show-proto-sidebar=1&mode=design #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: I benefici per gli enti
+      background: light
+      menu: false
+      centered: true
+      #text: | #C
+        #Lorem ipsum
+      components:
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          #title: Lorem ipsum #C
+          noSpace: true
+          text: | #C
+            Oltre a un sito utile per gli utenti, il modello ASL ti aiuta a creare un’esperienza digitale coerente con gli altri siti della Pubblica Amministrazione, nel pieno rispetto della normativa vigente e senza reinventare la ruota. L’adozione del modello, infatti, facilita l’adesione alle linee guida nazionali, alle migliori pratiche di progettazione digitale e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
+
+            Le risorse operative sono progettate per aiutarti a realizzare il sito risparmiando tempo e risorse economiche.
           #ctas:
-          #- label: Naviga un esempio di sito #C
-            #screenReaderText: " (si apre in una nuova finestra)" #C
-            #url: "#" #M
+          #- label: Scopri di più sul processo di ricerca #C
+            #url: https://docs.italia.it/italia/designers-italia/design-asl-docs/it/versione-corrente/ricerca-e-progettazione.html #M
             #blank: true #M #C true if new tab for external links
+            #screenReaderText: " (si apre in una nuova finestra)" #C
             #icon:
               #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               #color: primary
@@ -202,7 +242,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —
-    - title: I benefici per enti e fornitori
+    - title: Un approccio di progettazione aperto, partecipato e con le persone al centro
       background: null
       menu: false
       centered: true
@@ -213,35 +253,28 @@ components:
         # TXT + CTA BLOCK
         - name: TextImageCta
           #title: Lorem ipsum #C
-          noSpace: false
-          text: | #C
-            Oltre a un sito utile per gli utenti, il modello ASL ti aiuta a creare un’esperienza digitale coerente con gli altri siti della Pubblica Amministrazione, nel pieno rispetto della normativa vigente e senza reinventare la ruota. L’adozione del modello, infatti, facilita l’adesione alle linee guida nazionali, alle migliori pratiche di progettazione digitale e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
-
-            Le risorse operative, presto disponibili e già validate dalla ricerca, sono progettate per aiutarti a realizzare il sito risparmiando tempo e risorse economiche.
-          #ctas:
-          #- label: Vai alla documentazione del modello #C
-            #url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
-            #blank: true #M #C true if new tab for external links
-            #screenReaderText: " (si apre in una nuova finestra)" #C
-            #icon:
-              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
-
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Un approccio di progettazione aperto, partecipato e con le persone al centro
           noSpace: true
-          text: |
+          text: | #C
             ![Ricerca sul campo con utenti](/images/modelli/asl-test-usabilita.jpg)
 
-            Stiamo progettando il modello sulla base di un’estensiva ricerca qualitativa con tutti gli attori coinvolti nell’ambito sanitario: enti, fornitori, in-house e cittadini. Grazie a interviste, focus group e sessioni di validazione, teniamo conto di tutte le necessità per creare un modello funzionale e standardizzato, ma abbastanza flessibile da poter essere adattato a diverse realtà sanitarie. Anche dopo il rilascio, continueremo a raccogliere suggerimenti per migliorare nel tempo sempre di più l’esperienza degli utenti con i siti delle ASL.
+            Abbiamo progettato il modello sulla base di un’estensiva ricerca qualitativa con tutti gli attori coinvolti nell’ambito sanitario: enti, fornitori, in-house e cittadini. Grazie a interviste, focus group e sessioni di validazione, abbiamo tenuto conto di tutte le necessità per creare un modello funzionale e standardizzato, ma abbastanza flessibile da poter essere adattato a diverse realtà sanitarie. 
 
-    # —
+            Ma il nostro lavoro non si ferma qui: continuiamo a raccogliere suggerimenti per migliorare sempre di più nel tempo, in maniera collaborativa, l’esperienza degli utenti con i siti delle ASL.
+          ctas:
+          - label: Scopri di più sulla progettazione #C
+            url: https://docs.italia.it/italia/designers-italia/design-asl-docs/it/versione-corrente/ricerca-e-progettazione.html #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Report della ricerca e della progettazione (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+
+# —
     # EDITORIAL #C #I
     # —
     - title: Risorse pronte all'uso
@@ -249,32 +282,42 @@ components:
       menu: false
       centered: true
       #text: | #C
-        #Lorem ipsum
+        #Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle amministrazioni comunali
       components:
 
         # TXT + CTA BLOCK
         - name: TextImageCta
-          noSpace: true
           #title: Lorem ipsum #C
           text: | #C
-            Tutte le risorse del modello saranno disponibili entro febbraio 2024 e ti permetteranno di realizzare, a basso costo e rapidamente, siti e servizi digitali centrati sui bisogni degli utenti:
-            - architettura dell'informazione;
-            - layout hi-fi delle pagine del modello;
-            - prototipi navigabili;
-            - sito demo navigabile;
-            - documentazione tecnica.
-          #ctas:
-          #- label: Vai alla documentazione del modello #C
-            #url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
-            #blank: true #M #C true if new tab for external links
-            #screenReaderText: " (si apre in una nuova finestra)" #C
-            #icon:
-              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
+            Le risorse del modello ti permettono di realizzare un sito facile da navigare, con contenuti chiari e interfacce intuitive. Le istruzioni operative, corredate a ogni risorsa, ti guidano passo per passo nell’implementazione di un sito accessibile e allineato all’identità visiva dell’ASL di riferimento.
+          ctas:
+          - label: Vai alla documentazione operativa #C
+            screenReaderText: "Documentazione operativa (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-asl-docs/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # NUMBERS BLOCK
+        - name: Numbers
+          items: #C #I
+          - label: Documento di architettura
+            icon: sprites.svg#it-file
+            number: "1"
+          - label: Libreria dei componenti
+            icon: sprites.svg#it-tool
+            number: "1"
+          - label: Layout hi-fi di pagina
+            icon: sprites.svg#it-files
+            number: "15"
+          - label: Prototipi navigabili
+            icon: sprites.svg#it-user
+            number: "7"
 
 
 
@@ -282,40 +325,64 @@ components:
   # HIGHLIGHT WITH CARDS
   # —
   highlightCards:
-    id: notizie
-    title: Rimani aggiornato #C
-    text: Le ultime notizie sul modello ASL, il processo di progettazione e il rilascio delle risorse #C
-    headingLevel: 2
-    background: null
+    id: HC1
+    title: Adotta il modello #C
+    text: Le risorse disponibili guidano su tutti gli aspetti progettuali, dalla pianificazione allo sviluppo #C
     col4: false # FALSE notizie + Medium | TRUE eventi + media
-    # buttons:
-    #   - btnStyle: outline-primary
-    #     label: Esplora tutte le notizie sul modello #C
-    #     url: XXX #M
-    #     blank: false
+    noSpace: true
 
     # CARDS
     cards:
 
-   #CARD NOTIZIA
-      - title: 'Aziende sanitarie locali: un nuovo modello per migliorare il sito web'
-        headingLevel: 4
-        customCol: col-lg-4
-        text: Designers Italia avvia la fase di ricerca con gli attori interessati
-        img: /images/community/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web-1400x723.png
-        alt: ""
-        imgRatio: 21x9
+      # CARD CHILDREN
+      - title: Il sito della ASL #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito ASL semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/asl-sito.png
+        alt: "Anteprima del modello di sito per le ASL"
+        imgRatio: 4x3
         imgPlaceholder: false
+        titleSmall: false
         fullHeight: true
-        rounded: true
-        url: "/community/notizie/20231017-aziende-sanitarie-locali-un-nuovo-modello-per-migliorare-il-sito-web/"
-        dateInfo: 17 ottobre 2023
-        tags: [Modelli di sito, Adozione modelli]
+        url: "adotta-il-modello-di-sito-asl/" #M
+        tag:
+          label: Scheda operativa #C
+
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: Contribuisci al modello
+      background: medium
+      menu: false
+      centered: true
+      #text: | #C
+      #  Lorem **ipsum**
+      components:
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/modelli/PA-digitale-adotta.svg #I
+          alt: "" #C
+          specular: false
+          noSpace: true
+          #title: Lorem ipsum h3 #C
+          text: | #C
+            Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana, contribuendo alle discussioni, agli avanzamenti tecnici e di design con il team e la community di Designers Italia
+          ctas:
+          - label: Scopri come contribuire #C
+            url: /modelli/contribuisci-ai-modelli/ #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
   
     # —
     # EDITORIAL #C #I
@@ -323,9 +390,9 @@ components:
     - menu: false
       centered: true
       background: light
-      title: La community di riferimento #C
+      title: Richiedi assistenza o contribuisci all'evoluzione del modello #C
       text: | #C
-        Scopri i canali dove confrontarti sulle risorse del modello
+        Scopri i canali dove confrontarti con la community di Designers Italia sulle risorse del modello
       components:
 
         # TXT + IMG + CTA BLOCK

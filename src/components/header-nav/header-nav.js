@@ -37,6 +37,7 @@ function HeaderNav({ data, page }) {
                 type="button"
                 dataBsToggle="navbarcollapsible"
                 ariaControls={data.nav.id}
+                dataBsTarget="#menu"
                 ariaExpanded="false"
                 ariaLabel={data.toggler.ariaLabel}
               >
@@ -46,8 +47,8 @@ function HeaderNav({ data, page }) {
                 className="navbar-collapsable"
                 ref={collRef}
                 id={data.nav.id}
+                tabIndex="-1"
               >
-                <div className="overlay" />
                 <div className="close-div">
                   <Button
                     addonStyle="close-menu"

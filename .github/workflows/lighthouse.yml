@@ -14,7 +14,7 @@ jobs:
         with:
           node-version: 18
       - run: npm ci
-      - run: npm run build
+      - run: npm run build:dev
 
       - uses: treosh/lighthouse-ci-action@v9
         id: lighthouse_audit
@@ -55,7 +55,7 @@ jobs:
             const home_page = manifest.find(result => new URL(result.url).pathname === '/')
             const other_pages = manifest.filter(result => new URL(result.url).pathname !== '/')
 
-            const comment = [
+            let comment = [
                 `### ⚡ Lighthouse report for the home page 🏠`,
                 '| Category | Score |',
                 '| --- | --: |',
@@ -78,10 +78,28 @@ jobs:
                 })
             ].join('\n')
 
+            const errors = [home_page, ...other_pages].reduce((acc, p) => {
+                const pageErrors = ['accessibility', 'best-practices', 'seo']
+                    .map(c => ({ pathname: new URL(p.url).pathname, category: c, score: p.summary[c] }))
+                    .filter(res => res.score !== 100)
+
+                return [...acc, ...pageErrors]
+            }, [])
+
+            if (errors.length > 0) {
+                const warning = [
+                    `⚠️ @${{ github.event.pull_request.user.login }} your PR decreased Lighthouse scores! ⚠️`,
+                    ...errors.map(e => `* ⚠️  \`${e.pathname}\` ${e.category} down to **${e.score}**`)
+                ].join('\n')
+
+                comment = `${warning}\n\n${comment}`
+                core.setFailed('Lighthouse scores decreased because of this PR')
+            }
             const fs = require('fs')
             fs.writeFileSync(`lighthouse-pr-comment-${pr}.txt`, comment)
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
+        if: always()
         with:
           name: lighthouse-pr-comment
           path: lighthouse-pr-comment-${{ github.event.number }}.txt

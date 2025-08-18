@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.1/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -48,10 +48,6 @@
             --bs-aspect-ratio: 50%;
         }
 
-        .select-wrapper {
-            margin-top: 48px;
-        }
-
         a.back-to-top {
             position: relative;
             bottom: unset;
@@ -60,10 +56,6 @@
             margin: 0 auto;
             opacity: 1;
             transform: scale(1);
-        }
-
-        .callout:not(.callout-highlight):not(.callout-more) .callout-title {
-            background-color: rgb(242, 247, 252);
         }
 
         .it-carousel-wrapper {
@@ -117,17 +109,29 @@
     <li>
       <div class="list-item">
         <div class="it-right-zone">
-          <span class="text">Testo<em>Lorem ipsum dolor sit amet.</em></span>
+          <div>
+            <h4 class="text m-0">Testo</h4>
+            <p class="small m-0">Lorem ipsum dolor sit amet.</p>
+          </div>
           <span class="it-multiple">
             <span class="metadata">metadata testo</span>
             <a href="#" aria-label="Testo - Azione 1">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
             <a href="#" aria-label="Testo - Azione 2">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
             <a href="#" aria-label="Testo - Azione 3">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
           </span>
         </div>
@@ -136,17 +140,29 @@
     <li>
       <div  class="list-item">
         <div class="it-right-zone">
-          <span class="text">Testo 2<em>Lorem ipsum dolor sit amet.</em></span>
+          <div>
+            <h4 class="text m-0">Testo</h4>
+            <p class="small m-0">Lorem ipsum dolor sit amet.</p>
+          </div>
           <span class="it-multiple">
             <span class="metadata"><a href="#">metadata link</a></span>
             <a href="#" aria-label="Testo 2 - Azione 1">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
             <a href="#" aria-label="Testo 2 - Azione 2">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
             <a href="#" aria-label="Testo 2 - Azione 3">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
           </span>
         </div>
@@ -155,36 +171,60 @@
     <li>
       <div  class="list-item">
         <div class="it-right-zone">
-          <a href="#"><span class="text">Link<em>Lorem ipsum dolor sit amet.</em></span></a>
+          <div>
+            <h4 class="text m-0"><a href="#">Link</a></h4>
+            <p class="small m-0">Lorem ipsum dolor sit amet.</p>
+          </div>
           <span class="it-multiple">
             <span class="metadata"><a href="#">metadata link</a></span>
             <a href="#" aria-label="Link - Azione 1">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
             <a href="#" aria-label="Link - Azione 2">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
             <a href="#" aria-label="Link - Azione 3">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
           </span>
         </div>
       </div>
     </li>
     <li>
-      <div class="list-item active">
+      <div class="list-item">
         <div class="it-right-zone">
-          <a href="#"><span class="text">Link attivo<em>Lorem ipsum dolor sit amet.</em></span></a>
+          <div>
+            <h4 class="text m-0"><a href="#">Link</a></h4>
+            <p class="small m-0">Lorem ipsum dolor sit amet.</p>
+          </div>
           <span class="it-multiple">
             <span class="metadata">metadata testo</span>
-            <a href="#" aria-label="Link attivo - Azione 1">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+            <a href="#" aria-label="Link - Azione 1">
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
-            <a href="#" aria-label="Link attivo - Azione 2">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+            <a href="#" aria-label="Link - Azione 2">
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
-            <a href="#" aria-label="Link attivo - Azione 3">
-              <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+            <a href="#" aria-label="Link - Azione 3">
+              <svg class="icon">
+                <title>Codice</title>
+                <use href="/dist/svg/sprites.svg#it-code-circle"></use>
+              </svg>
             </a>
           </span>
         </div>
@@ -196,7 +236,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.1/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
@@ -209,7 +249,7 @@
         // popover
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
+            return new bootstrap.Popover(popoverTriggerEl, { sanitize: false })
         })
 
     </script>

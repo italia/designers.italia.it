@@ -42,8 +42,7 @@ metadata:
 seo:
   name: Modello scuole - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: Tutte le risorse per realizzare con facilità siti per le scuole. #C
-  image: null #I
-  twitterImage: null #I
+  image: https://designers.italia.it/images/modelli/scuole-cover.png
   canonical: null
   pathname: /modelli/scuole/ #M
 
@@ -100,7 +99,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Il modello ti guida nella **realizzazione di siti istituzionali per le scuole** già validati dalla ricerca e progettati sui bisogni dela comunità scolastica. Comprende l'architettura dell'informazione, l'interfaccia e il codice, oltre a una serie di guide pratiche e risorse pronte all'uso per impostare e svolgere il lavoro in modo rapido ed economico, come i template HTML e i temi per CMS.
+      Il modello ti guida nella **realizzazione di siti istituzionali per le scuole** basati sulla ricerca e progettati sui bisogni della comunità scolastica. Comprende l'architettura dell'informazione, l'interfaccia e il codice, oltre a una serie di guide pratiche e risorse pronte all'uso per impostare e svolgere il lavoro in modo rapido ed economico, come i template HTML e i temi per CMS.
     img: /images/modelli/scuole-icon.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -150,13 +149,13 @@ components:
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: light
+      background: dark
       full: true
       noSpace: true
       components:
         # IMG
         - name: ImageIcons
-          image: /images/modelli/scuole-pattern.png #I
+          image: /images/modelli/scuole-cover.png #I
           alt: "Pattern di navigazione dal modello scuole" #C
 
     # —
@@ -299,7 +298,7 @@ components:
           text: | #C
             **Scopri su PA digitale 2026** se sono disponibili avvisi per il finanziamento dedicato a migliorare l'esperienza del cittadino nei servizi pubblici
           ctas:
-          - label: Vai su PA digitale 2016 #C
+          - label: Vai su PA digitale 2026 #C
             url: https://padigitale2026.gov.it/ #M
             screenReaderText: " (si apre in una nuova finestra)" #C
             color: white
@@ -329,7 +328,7 @@ components:
       # CARD CHILDREN
       - title: Il sito scolastico #C
         text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito scolastico semplice, accessibile e centrato sui bisogni degli utenti. #C
-        img: /images/modelli/scuole.png
+        img: /images/modelli/scuola-sito.png
         alt: ""
         imgRatio: 4x3
         imgPlaceholder: false
@@ -362,6 +361,35 @@ components:
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
+
+    - title: Contribuisci al modello
+      background: medium
+      menu: false
+      centered: true
+      #text: | #C
+      #  Lorem **ipsum**
+      components:
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/modelli/PA-digitale-adotta.svg #I
+          alt: "" #C
+          specular: false
+          noSpace: true
+          #title: Lorem ipsum h3 #C
+          text: | #C
+            Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana, contribuendo alle discussioni, agli avanzamenti tecnici e di design con il team e la community di Designers Italia
+          ctas:
+          - label: Scopri come contribuire #C
+            url: /modelli/contribuisci-ai-modelli/ #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
   # —
     # EDITORIAL #C #I

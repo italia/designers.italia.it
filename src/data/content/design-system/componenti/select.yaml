@@ -1,40 +1,28 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/form/select.json
   template:
     name: design-system-component
-
 seo:
   name: Select - Designers Italia
-  description: "Il classico componente per la selezione tipo 'menu a tendina'"
-  image: null
-  twitterImage: null
+  description: >-
+    Campo di selezione di un form per scegliere un'opzione da una lista
+    predefinita di valori.
   canonical: null
-  pathname: /design-system/componenti/radio-button/
-
+  pathname: /design-system/componenti/select/
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Select
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Il classico componente per la selezione tipo 'menu a tendina'"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: >-
+      Campo di selezione di un form per scegliere un'opzione da una lista
+      predefinita di valori
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -45,23 +33,19 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Form]
-
+      tagsDesignSystem:
+        - Form
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
+      id: preview-use
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/select/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -71,9 +55,25 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Usa il componente Select nel contesto di un modulo
+              ([Form](/design-system/componenti/form/)), quando vuoi permettere
+              agli utenti di scegliere un elemento all'interno di un elenco di
+              opzioni predefinite. 
 
+
+              ### Alternative a questo componente
+
+              - **[Radio button](/design-system/componenti/radio-button/)**: da
+              preferire un gruppo di Radio button a livello di usabilità e se è
+              necessario essere certi che l'utente sia consapevole di tutte le
+              opzioni, consigliabile in particolare se il numero di scelte è
+              limitato. 
+
+              - **[Autocomplete](/design-system/componenti/autocomplete/)**: per
+              lunghe liste di opzioni, offre all'utente la possibilità in più di
+              filtrare tra le opzioni scrivendo nel campo di scelta, seppur da
+              un elenco controllato di opzioni. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -82,35 +82,208 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Imposta un'opzione come predefinita la prima volta che l'utente
+              incontra il componente: può essere uno dei valori o una prima
+              opzione neutra che guidi la scelta dell'utente, ad esempio:
+              "Scegli tra le opzioni: ". 
 
+
+              ### Attenzione a
+
+              - Non preselezionare nessuna delle opzioni se il componente serve
+              all'utente per rispondere a domande, ne influenzerebbe la
+              risposta.  
+
+              - Valutare il contesto d'uso e le alternative, prevedi test di
+              usabilità del modulo, in particolare per affiancare più componenti
+              Select tieni in considerazione ad esempio che l'utente potrebbe
+              trovare difficoltà a distinguere scelte già fatte e non.
+
+              - Proporre all'utente una rosa di opzioni non troppo lunga, per
+              esempio con domande preliminari che la precedono e permettono di
+              sfoltirla. Se la lista diventa abbastanza breve, considera l'uso
+              alternativo di un gruppo di [radio
+              button](/design-system/componenti/radio-button/).
+
+              - Considerare che il componente prevede l'apertura del pannello di
+              scelta standard del browser e del dispositivo in uso, per
+              ottimizzare accessibilità e usabilità.
+
+
+              ### Buone pratiche sui contenuti
+
+              - Scegli un'etichetta di testo (label) che indichi chiaramente lo
+              scopo della scelta richiesta all'utente.  
+
+              - Scrivi l'elenco di opzioni in modo coerente: ogni opzione
+              dovrebbe essere breve e il più possibile chiara per evitare
+              ambiguità fra le varie opzioni e renderle univoche. 
+
+              - Ordina le opzioni disponibili in ordine alfabetico, o per altra
+              logica che sia chiara all'utente. 
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
-        components:
-          - name: TextImageCta
-            noSpace: true
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/form/select/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-form-select--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/select
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -119,9 +292,29 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              ![Gli elementi che compongono la
+              Select](/images/design-system/componenti/select-anatomy.png)
 
+
+              Il componente select chiuso è composto da:
+
+              1. **valore selezionato**, l'opzione attualmente selezionata, di
+              default può essere un'indicazione di scelta come "Scegli una
+              opzione";
+
+              2. **etichetta (label)**, il testo che informa l'utente sulla
+              scelta che deve fare. È obbligatorio, anche per l'accessibilità;
+
+              3. **freccia**, l'icona che suggerisce il comportamento di
+              apertura del componente;
+
+              4. **bordo**, riga inferiore che identifica il campo.
+
+
+              Per il componente select aperto si consiglia di utilizzare lo
+              standard fornito dal browser dell'utente, per ottimizzare
+              usabilità e accessibilità. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -130,21 +323,29 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        components:
-          - name: TextImageCta
-            noSpace: false
-            title: Specifiche di design
-            headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Elenco degli **stati interattivi** disponibili in tutte le
+              varianti del componente:
 
 
+              - **default**, il componente Select si presenta nello stato
+              normale quando è attivo ma l'utente non ci interagisce;
+
+              - **hover**, si manifesta al passaggio del puntatore sul
+              componente, è disponibile solo su dispositivi no-touch;
+
+              - **focus**, si manifesta nel caso di navigazione tramite tastiera
+              o altri strumenti, passando da un elemento interattivo a quello
+              successivo;
+
+              - **active**, è lo stato relativo al momento del click o pressione
+              sul componente, apre il pannello con la lista delle opzioni tra
+              cui scegliere; all'apertura è selezionata l'opzione corrente, se è
+              la prima apertura la voce di default si trova come prima della
+              lista;
+
+              - **disabled**, indica che il componente è disattivato e non è
+              possibile interagire con esso.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -152,30 +353,28 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
+      id: preview-dev
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/form/select/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -184,16 +383,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: true #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

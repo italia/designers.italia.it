@@ -17,9 +17,10 @@ import Feedback from "../components/feedback/feedback";
 
 import Hero from "../components/hero/hero";
 import SectionIntro from "../components/section-intro/section-intro";
-import TitleText from "../components/title-text/title-text";
 import Highlight from "../components/highlight/highlight";
+import TitleText from "../components/title-text/title-text";
 import HighlightCards from "../components/highlight-cards/highlight-cards";
+import SectionEditorial from "../components/section-editorial/section-editorial";
 
 import HeaderData from "../data/header.yaml";
 import FooterData from "../data/footer.yaml";
@@ -35,8 +36,8 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} location={location} />
-      <Skiplinks data={skipLinksData.skiplinks} />
       <Header data={HeaderData}>
+        <Skiplinks data={skipLinksData} />
         <HeaderSlim data={HeaderData.headerSlim} />
         <NavWrapper>
           <HeaderCenter data={HeaderData.headerCenter} />
@@ -55,6 +56,11 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
           <SectionIntro {...Pagedata.components.sectionIntro} />
         )}
 
+        {Pagedata.components.highLights &&
+          Pagedata.components.highLights.map((hl, index) => (
+            <Highlight key={`hl-${index}`} {...hl} />
+          ))}
+
         {Pagedata.components?.titleText && (
           <TitleText {...Pagedata.components.titleText} />
         )}
@@ -64,11 +70,15 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
             <HighlightCards key={`hcl-${index}`} {...hlc} />
           ))}
 
-        {Pagedata.components?.highlightsLoop &&
+        {/* {Pagedata.components?.highlightsLoop &&
           Pagedata.components.highlightsLoop.map((hl, index) => (
             <Highlight key={`hl-${index}`} {...hl} />
-          ))}
+          ))} */}
 
+        {Pagedata.components.sectionsEditorial &&
+          Pagedata.components.sectionsEditorial.map((section, index) => (
+            <SectionEditorial key={`sectionEditorial-${index}`} {...section} />
+          ))}
         {children}
         {lastModified && (
           <LastUpdate

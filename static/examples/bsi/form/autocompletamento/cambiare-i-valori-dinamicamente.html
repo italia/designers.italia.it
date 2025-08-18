@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.1/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -48,10 +48,6 @@
             --bs-aspect-ratio: 50%;
         }
 
-        .select-wrapper {
-            margin-top: 48px;
-        }
-
         a.back-to-top {
             position: relative;
             bottom: unset;
@@ -60,10 +56,6 @@
             margin: 0 auto;
             opacity: 1;
             transform: scale(1);
-        }
-
-        .callout:not(.callout-highlight):not(.callout-more) .callout-title {
-            background-color: rgb(242, 247, 252);
         }
 
         .it-carousel-wrapper {
@@ -105,7 +97,7 @@
             display: block;
         }
     </style>
-    <title>Esempio Cambiare i valori dinamicamente </title>
+    <title>Esempio Cambiare i valori dinamicamente</title>
 </head>
 
 <body class="h-100">
@@ -113,20 +105,21 @@
         <div class="bd-example w-100">
             
 <div class="row">
-  <div class="col-12 mt-5">
-    <div class="select-wrapper">
-      <label for="category">Categoria alimento</label>
-      <select id="category" name="category">
-        <option value="frutta" selected>Frutta</option>
-        <option value="verdura">Verdura</option>
-      </select>
+  <div class="col-12">
+    <div class="form-group">
+      <div class="select-wrapper">
+        <label for="category">Categoria alimento</label>
+        <select id="category" name="category">
+          <option value="frutta" selected>Frutta</option>
+          <option value="verdura">Verdura</option>
+        </select>
+      </div>
     </div>
   </div>
-  <div class="col-12 mt-5">
-    <div class="select-wrapper">
+  <div class="col-12">
+    <div class="form-group">
       <label for="productAutocomplete">Alimento</label>
-      <select class="form-control" id="productAutocomplete" title="Scegli un prodotto">
-      </select>
+      <div id="productAutocompleteWrapper" class="autocomplete-wrapper"></div>
     </div>
   </div>
   <script>
@@ -146,19 +139,15 @@
     }
     document.addEventListener('DOMContentLoaded', function () {
       const categorySelect = document.getElementById("category");
-      const selectElement = document.getElementById("productAutocomplete");
-      const selectAutocomplete = new bootstrap.SelectAutocomplete(selectElement, {
-        required: true,
-        name: 'productAutocomplete',
-        confirmOnBlur: false,
-        showAllValues: true,
-        defaultValue: '',
-        autoselect: false,
-        showNoOptionsFound: false,
-        dropdownArrow: () => '',
+      const selectWrapperElement = document.getElementById("productAutocompleteWrapper");
+      const selectAutocomplete = new bootstrap.SelectAutocomplete(selectWrapperElement, {
+        id: 'productAutocomplete',
+        name: 'prodotto',
         source: (query, populateResults) => {
           const results = form_data[categorySelect.value]
-          const filteredResults = results.filter(result => result.indexOf(query) !== -1)
+          const filteredResults = results.filter(
+            result => result.toLowerCase() .indexOf(query.toLowerCase()) !== -1
+          )
           populateResults(filteredResults)
         }
       });
@@ -173,7 +162,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.1/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
@@ -186,7 +175,7 @@
         // popover
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
+            return new bootstrap.Popover(popoverTriggerEl, { sanitize: false })
         })
 
     </script>

@@ -27,7 +27,6 @@ seo:
   name: Prepara le attività e svolgi i test di usabilità - Designers Italia #C REMIND "- Designers Italia" #AUTO
   description: "Massimizza l’utilità dei test preparando un ambiente idoneo e interagendo correttamente con i partecipanti" #C
   image: null #I
-  twitterImage: null #I
   canonical: null
   pathname: /risorse-per-progettare/validare/test-di-usabilita/prepara-le-attivita-e-svolgi-i-test-di-usabilita/ #M
 
@@ -142,7 +141,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -235,6 +234,17 @@ components:
                 url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Net-Promoter-Score.odt #M
                 ariaLabel: "Scarica ODT Net promoter score - Valutazione dei test di usabilità" #C #COMPILE FOR EACH ITEM
                 blank: false
+          - label: Tabella di calcolo delle valutazioni del Net promoter score #C
+            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Uno strumento per calcolare automaticamente le valutazioni del Net promoter score #C
+            url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Net-Promoter-Score-Calcolo.ods #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Net-Promoter-Score-Calcolo.ods #M
+                ariaLabel: "Scarica ODS Calcolo valutazioni Net promoter score" #C #COMPILE FOR EACH ITEM
+                blank: false
           - label: Questionario System Usability Scale (SUS) #C
             srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
@@ -245,6 +255,17 @@ components:
               - icon: sprites.svg#it-file-odt #I USE IF POSSIBLE FILE FORMAT ICONS
                 url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Questionario-SUS.odt #M
                 ariaLabel: "Scarica ODT Questionario System Usability Scale (SUS)" #C #COMPILE FOR EACH ITEM
+                blank: false
+          - label: Tabella di calcolo delle valutazioni del Questionario SUS #C
+            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Uno strumento per calcolare automaticamente le valutazioni del questionario SUS #C
+            url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Questionario-SUS-Calcolo.ods #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/validare/test-usabilita/prepara-attivita/DI-Questionario-SUS-Calcolo.ods #M
+                ariaLabel: "Scarica ODS Calcolo valutazioni Questionario SUS" #C #COMPILE FOR EACH ITEM
                 blank: false
           - label: Questionario Usability Metric for User Experience (UMUX-LITE) #C
             srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...

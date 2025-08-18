@@ -96,6 +96,7 @@ function Subscribe({
           <input
             type="email"
             className="form-control"
+            autoComplete="email"
             required
             id={id}
             name="email"

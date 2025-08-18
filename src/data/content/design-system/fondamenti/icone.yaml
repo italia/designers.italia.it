@@ -1,0 +1,285 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  json: bsi/utilities/icone.json
+  template:
+    name: design-system-index
+
+seo:
+  name: Icone
+  description: "Le icone sono elementi visivi che contengono simboli: sono cruciali per un'interfaccia di qualità e hanno lo scopo di veicolare informazioni agli utenti in modo rapido e immediato."
+  image: null
+  canonical: null
+  pathname: /design-system/fondamenti/icone/
+
+components:
+  hero:
+    background: null
+    title: Icone
+    column: true
+    subtitle: "Le icone sono elementi visivi che contengono simboli: sono cruciali per un'interfaccia di qualità e hanno lo scopo di veicolare informazioni agli utenti in modo rapido e immediato"
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+
+  # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare e sviluppare l'interfaccia utente #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione interfaccia, Sviluppo interfaccia]
+  
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: null
+      text: null
+      background: null
+      components:
+
+        - name: TextImageCta
+          title: A cosa servono
+          headingLevel: 2
+          text: |
+            Possono rappresentare **funzioni**, **categorie**, **opzioni** e molto altro, migliorando l'interazione in termini di usabilità e accessibilità. Ciò permette agli utenti di navigare e interagire con l'applicazione o il sito web in modo più intuitivo. 
+            
+            Le icone devono essere facilmente riconoscibili e comprensibili, garantendo un design coerente nell'ambito della soluzione digitale. Ricorda che è buona pratica testare con gli utenti l'immediatezza e la riconoscibilità delle icone. 
+        
+        - name: TextImageCta
+          title: Come usarle
+          headingLevel: 2
+          text: |
+            Usa le icone solo quando è strettamente necessario e per i seguenti casi d'uso:
+
+            - **Rappresentazione di funzioni**: puoi usare le icone per simboleggiare funzioni specifiche dell'interazione come "salva", "cancella" o "invia". È importante usarle in modo consistente nelle varie ricorrenze per evitare di confondere gli utenti.
+            - **Navigazione**: le icone possono segnalare percorsi di navigazione, come ad esempio l'icona del menu a hamburger. I simboli delle icone devono essere intuitivi per rendere la navigazione più semplice.
+            - **Categorie di contenuto**: le icone possono rappresentare categorie di contenuti, come "video", "immagini" o "documenti". I simboli devono essere facilmente riconoscibili e in linea con il contenuto rappresentato.
+            - **Feedback visivo**: puoi usare le icone per fornire feedback visivo, come ad esempio un'icona di caricamento o di successo. È fondamentale usarle nel modo corretto per comunicare chiaramente lo stato dell'azione dell'utente.
+            - **Interazioni**: le icone possono rappresentare interazioni quali "mi piace", "condividi" o "commenta". In questo caso i simboli devono essere facilmente comprensibili e azionabili per agevolare l'interazione desiderata dall'utente.
+
+            Ti consigliamo di abbinare un'icona a un'etichetta di testo che ne chiarisce la funzione. 
+
+            Puoi usare l'icona da sola se il simbolo è chiaro e non ambiguo. In questo caso, l'etichetta di testo deve comunque essere leggibile da un lettore di schermo (screen reader).
+        
+        - name: TextImageCta
+          title: Le icone disponibili
+          noSpace: true
+          headingLevel: 2
+          text: |
+             Le icone sono disponibili nella libreria [Bootstrap Italia](https://italia.github.io/bootstrap-italia/docs/utilities/icone/#lista-delle-icone-disponibili) e in [UI kit Italia](https://www.figma.com/@designersitalia) (Figma). 
+
+        - name: ComponentView
+          variantName: Icone disponibili
+          source: bsi/utilities/icone
+          idPrefix: "viewer01-"
+          viewerHeight: 0
+          minHeight: 150
+          accordionUrl: https://italia.github.io/bootstrap-italia/docs/utilities/icone/
+          accordionOpen: false
+          accordionShow: true
+        
+        - name: TextImageCta
+          title: I token per le icone
+          headingLevel: 2
+          text: |
+            I design token delle icone appartengono al livello degli "specifici".
+          ctas:
+          - label: Vai al fondamento Design tokens #C
+            url: "/design-system/fondamenti/design-tokens" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+        
+        - name: Table
+          title: null
+          responsive: table-responsive
+          addonClasses: mb-5
+          head:
+            - text: Valore
+            - text: Descrizione
+            - text: Token
+          rows:
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-gray-10.png)
+                  #1a1a1a
+              - text: Icona nel colore di base
+              - tag: 
+                  label: icon.default
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-7.png)
+                  #0066cc
+              - text: Icona primaria
+              - tag: 
+                  label: icon.primary
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![Riquadro di anteprima del colore](/images/design-system/fondamenti/color-blue-8.png)
+                  #004d99
+              - text: Icona primario nello stato hover
+              - tag: 
+                  label: icon.primary.hover
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo spesso](/images/design-system/fondamenti/color-blue-9.png)
+                  #003366
+              - text: Icona primaria nello stato active
+              - tag: 
+                  label: icon.primary.active
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-slate-7.png)
+                  #5C6F82
+              - text: Icona secondaria
+              - tag: 
+                  label: icon.secondary  
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-slate-9.png)
+                  #2F475E
+              - text: Icona secondaria nello stato hover
+              - tag: 
+                  label: icon.secondary.hover
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-slate-10.png)
+                  #17324d
+              - text: Icona secondaria nello stato active
+              - tag: 
+                  label: icon.secondary.active
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-emerald-8.png)
+                  #5C6F82
+              - text: Icona di successo
+              - tag: 
+                  label: icon.success  
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-emerald-9.png)
+                  #006644
+              - text: Icona di successo nello stato hover
+              - tag: 
+                  label: icon.success.hover
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-emerald-10.png)
+                  #004d33
+              - text: Icona di successo nello stato active
+              - tag: 
+                  label: icon.success.active
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-orange-8.png)
+                  #995C00
+              - text: Icona di avviso
+              - tag: 
+                  label: icon.warning  
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-orange-9.png)
+                  #804D00
+              - text: Icona di avviso nello stato hover
+              - tag: 
+                  label: icon.warning.hover
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-orange-10.png)
+                  #804D00
+              - text: Icona di avviso nello stato active
+              - tag: 
+                  label: icon.warning.active
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-red-6.png)
+                  #CC334D
+              - text: Icona di errore
+              - tag: 
+                  label: icon.error  
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-red-8.png)
+                  #992639
+              - text: Icona di errore nello stato hover
+              - tag: 
+                  label: icon.error.hover
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase
+            - cols:
+              - text: |
+                  ![dimensione bordo molto evidente](/images/design-system/fondamenti/color-red-10.png)
+                  #661A26
+              - text: Icona di errore nello stato active
+              - tag: 
+                  label: icon.error.active
+                  addonClasses: neutral-1-bg-a1 text-black fw-semibold font-monospace text-lowercase

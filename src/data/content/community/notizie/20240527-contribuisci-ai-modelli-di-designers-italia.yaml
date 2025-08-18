@@ -1,0 +1,117 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+seo:
+  name: "Contribuisci ai modelli di Designers Italia"
+  description: "Partecipa all’evoluzione delle risorse per le PA territoriali."
+  image: https://designers.italia.it/images/community/20240528-come-contribuire-ai-modelli-1400x900.png #I
+  canonical: null
+  pathname: /community/notizie/20240527-contribuisci-ai-modelli-di-designers-italia/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Contribuisci ai modelli di Designers Italia"
+    subtitle: "Partecipa all’evoluzione delle risorse per le PA territoriali"
+    tag:
+        label: Notizia
+        addonClasses: mt-3 text-uppercase
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community, Modelli di sito, Adozione modelli]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 28 maggio 2024
+
+  imageIcons:
+   image: /images/community/20240528-come-contribuire-ai-modelli-1920x1080.png
+   alt:
+   background: dark
+
+  sectionsEditorial :
+    - menu: false
+      noSpace: false
+      centered: true
+      # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+      # text:
+      id: corpoNotizia
+      components:
+        - name: TextImageCta
+          text: |
+            Continuiamo a promuovere un approccio aperto e trasparente alla progettazione: da oggi, su Designers Italia, le indicazioni per collaborare al consolidamento e al miglioramento dei modelli per i siti e i servizi di Comuni, scuole, ASL e musei civici.   
+
+            ## L’open, un beneficio per tutti 
+
+            La collaborazione della community è fondamentale per far crescere la qualità della documentazione e degli strumenti di Designers Italia e per migliorare l’esperienza d’uso di coloro che quotidianamente si occupano di progettazione e sviluppo nel settore pubblico. Di conseguenza, questo approccio partecipato al miglioramento delle risorse porta alla realizzazione di siti e servizi digitali pubblici migliori, con un impatto positivo sula cittadinanza. 
+
+            ## Prendere parte al miglioramento continuo 
+
+            Partecipare a discussioni, segnalare errori e proporre miglioramenti, sono alcuni dei modi in cui puoi diventare contributor. Prendi parte attiva nella community in base alle tue competenze e al tempo che hai a disposizione e aiutaci a consolidare, tenere aggiornate e far evolvere risorse come temi CMS, codice HTML e librerie dei componenti di interfaccia. 
+
+            
+        - name: TextImageCta
+          title: Contribuisci all'evoluzione dei modelli
+          headingLevel: 2
+          noSpace: true
+          ctas:
+          - label: Scopri come fare
+            url: "/modelli/contribuisci-ai-modelli/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+         
+            
+
+
+
+            

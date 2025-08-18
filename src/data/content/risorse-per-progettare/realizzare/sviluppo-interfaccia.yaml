@@ -31,9 +31,8 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Sviluppo interfaccia - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Realizza il front-end di un servizio digitale con codice e componenti open source di sviluppo" #C
-  image: null #I
-  twitterImage: null #I
+  description: "Realizza l'interfaccia di un servizio digitale con codice e componenti di sviluppo open source." #C
+  image: https://designers.italia.it/images/risorse-per-progettare/social/kit_webDevelopment.png #I
   canonical: null
   pathname: /risorse-per-progettare/realizzare/sviluppo-interfaccia/ #M
 
@@ -103,7 +102,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Lo svilupo dell’interfaccia è la fase finale della realizzazione di un servizio digitale. Le risorse di questo kit ti aiutano ad **assemblare velocemente il front-end** di un servizio digitale, tramite **componenti, soluzioni di design e codice già validati**.
+      Lo sviluppo dell’interfaccia è la fase finale della realizzazione di un servizio digitale. Le risorse di questo kit sono parte integrante del **design system .italia**: ti aiutano ad **assemblare velocemente la parte front-end** di un servizio digitale, tramite **componenti, soluzioni di design e codice già validati** .
     img: /images/risorse-per-progettare/icons/kit_webDevelopment.svg #I
     alt: "Interesse pubblico, codice pubblico" #C
 
@@ -132,7 +131,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -202,13 +201,23 @@ components:
 
         # TXT + CTA BLOCK
         - name: TextImageCta
+          # image: /images/400x300.png
+          # alt: testo alternativo
+          title: Risorse pronte all'uso disponibili #C
+          specular: true
+          text: | #C
+             Se stai progettando siti e servizi digitali per un [Comune](/modelli/comuni) o una [scuola](/modelli/scuole), sono già disponibili all'uso i [modelli](/modelli) di Designers Italia con i template di codice per le principali pagine e schermate.
+        
+        # TXT + CTA BLOCK
+        - name: TextImageCta
           title: Scopri di più nel Manuale operativo di design #C
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni sulle attività preliminari, gli approcci e gli strumenti utili allo sviluppo dell’interfaccia di un servizio digitale.
+            
           ctas:
-          - label: "Vai all'argomento Lo sviluppo dell'interfaccia utente" #C
+          - label: "Vai all'argomento Sviluppo dell'interfaccia" #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/esperienza-utente/lo-sviluppo-della-interfaccia-utente.html #M
+            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/sviluppo-dell-interfaccia.html #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links

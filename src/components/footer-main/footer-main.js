@@ -42,7 +42,10 @@ function FooterMain({ id, title, cols, tagsNo, social, community, subscribe }) {
           {footerTags && (
             <div className="row">
               <div className="chips-list-wrapper">
-                <ul className="chips-list chips d-flex flex-wrap">
+                <ul
+                  className="chips-list chips d-flex flex-wrap"
+                  aria-label="Esplora gli argomenti: "
+                >
                   {footerTags.map((tag) => (
                     <ListItem
                       key={tag.fieldValue}
@@ -119,7 +122,9 @@ function FooterMain({ id, title, cols, tagsNo, social, community, subscribe }) {
                 </div>
                 {subscribe.subscribe && (
                   <div className="subscribe-wrapper mt-4">
-                    <Subscribe {...subscribe.subscribe} />
+                    <span className="bg-dark">
+                      <Subscribe {...subscribe.subscribe} />
+                    </span>
                   </div>
                 )}
               </div>

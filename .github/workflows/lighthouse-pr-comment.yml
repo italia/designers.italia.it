@@ -9,9 +9,8 @@ on:
 jobs:
   lighthouse-pr-comment:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
-      - uses: dawidd6/action-download-artifact@v2
+      - uses: dawidd6/action-download-artifact@v6
         with:
           name: lighthouse-pr-comment
           run_id: ${{ github.event.workflow_run.id }}

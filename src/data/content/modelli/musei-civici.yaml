@@ -24,16 +24,12 @@ metadata:
     - /musei-civici
     - /modello/musei
     - /modello/musei-civici
-    - /modello/museo
-    - /modello/museo-civico
     - /modello/sito-musei
-    - /modello/sito-museo
+    - /modello/sito-musei-civici
     - /modello-sito-musei
-    - /modello-sito-museo
+    - /modello-sito-musei-civici
     - /modello-siti-musei
-    - /modello-siti-museo
-    - /modello-sito-museale
-    - /modello-siti-museali
+    - /modello-siti-musei-civici
     - /kit/musei
     - /kit/musei-civici
     - /progetti/siti-musei
@@ -47,10 +43,9 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Modello musei civici - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Presto disponibili le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici #C
-  image: https://designers.italia.it/images/modelli/musei-hero.png #I
-  twitterImage: https://designers.italia.it/images/modelli/musei-hero.png #I
+  name: Musei civici - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici #C
+  image: https://designers.italia.it/images/modelli/musei-cover.png #I
   canonical: null
   pathname: /modelli/musei-civici/ #M
 
@@ -97,7 +92,7 @@ components:
   hero:
     background: light
     title: Musei civici #C
-    subtitle: Presto disponibili le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici #C
+    subtitle: Tutte le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici #C
     tag:
         label: Modello #C
         addonClasses: mt-3 text-uppercase
@@ -107,9 +102,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Il modello, ora in lavorazione, ti permette di **realizzare siti dei musei civici** già validati dalla ricerca e progettati sui bisogni degli utenti, in modo rapido ed economico. Scopri tutti gli aggiornamenti sul modello, il processo di progettazione e le risorse in arrivo. 
-    # img: /images/modelli/scuole-icon.svg #I
-    # alt: "" #C
+      Il modello ti permette di **realizzare siti dei musei civici** basati sulla ricerca e progettati sui bisogni degli utenti. Le risorse, pronte all'uso, comprendono l'architettura dell'informazione, la libreria di componenti UI, i layout di pagina e una serie di guide pratiche a supporto per impostare e svolgere il lavoro in modo rapido ed economico.
+    img: /images/modelli/musei-icon.svg #I
+    alt: "" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -124,22 +119,22 @@ components:
         color: secondary
       tags: [Modelli di sito]
 
-      # KANGAROO: CHILDREN SHORTCUTS
-      # dropdown:
-      #   btnId: dropdownKang
-      #   button:
-      #     addonStyle: dropdown-toggle btn-dropdown
-      #     label: Scopri le schede operative #C
-      #     iconRight: true
-      #     icon:
-      #       icon: sprites.svg#it-expand
-      #       size: sm
-      #       color: primary
-      #       addonClasses: icon-expand ms-2
-      #   list:
-      #     listItems: #M
-      #       - url: "adotta-il-modello-di-sito-scolastico/"
-      #         label: Adotta il modello di sito scolastico #C
+      KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri le schede operative #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: primary
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #M
+            - url: "adotta-il-modello-di-sito-per-i-musei-civici/"
+              label: Adotta il modello di sito per i musei civici #C
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -150,24 +145,24 @@ components:
     # IMG FULL COVER
     # —
     - menu: false #TOGGLE RIGHT SECTION INDEX
-      background: light
+      background: dark
       full: true
       noSpace: true
       components:
         # IMG
         - name: ImageIcons
-          image: /images/modelli/musei-hero.png #I
-          alt: "Ingresso di un museo civico con statue in pietra" #C
+          image: /images/modelli/musei-cover.png #I
+          alt: "Anteprima del modello sito per i musei" #C
 
     # —
     # EDITORIAL #C #I
     # —
     - title: "Un punto di riferimento per i visitatori dei musei civici"
-      background: light
+      background: null
       menu: false
       centered: true
       text: | #C
-        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale dei musei
+        Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale dei musei civici
       components:
 
         # TXT + IMG + CTA BLOCK
@@ -185,14 +180,55 @@ components:
           #title: #C
           noSpace: true
           text: | #C
-            Grazie ai siti web dei musei civici creati seguendo le indicazioni del modello, i visitatori possono trovare in un unico posto tutte le informazioni di cui hanno bisogno per pianificare visite e conoscere mostre, collezioni, attività di ricerca e i collegamenti con altri punti di interesse sul territorio.
-            
-            Il modello comprende l'architettura dell'informazione e l'interfaccia per realizzare siti e servizi digitali chiari, semplici da usare e accessibili. 
+            Grazie ai siti web dei musei civici creati seguendo le indicazioni del modello, gli utenti possono trovare in un unico posto tutte le informazioni di cui hanno bisogno per organizzare la visita, esplorare la storia e le collezioni, rimanere informati su mostre ed eventi, contribuire o consultare le attività di ricerca.
+          ctas:
+          - label: Naviga un esempio di sito desktop #C
+            screenReaderText: "Prototipo desktop (si apre in una nuova finestra)" #C
+            url: https://www.figma.com/proto/1hQobutdZFwlo2Y4mVt9Rl/Musei-civici---Modello-sito?type=design&node-id=1595-132414&t=SLmYVCR1RCkrVu8r-0&scaling=scale-down-width&page-id=54%3A17335&starting-point-node-id=1595%3A132414 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Naviga un esempio di sito mobile #C
+            screenReaderText: "Prototipo mobile (si apre in una nuova finestra)" #C
+            url: https://www.figma.com/proto/1hQobutdZFwlo2Y4mVt9Rl/Musei-civici---Modello-sito?type=design&node-id=1665-151326&t=SLmYVCR1RCkrVu8r-0&scaling=scale-down&page-id=1665%3A126017&starting-point-node-id=1665%3A151326 #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-figma #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+    # —
+    # EDITORIAL #C #I
+    # —
+    - title: I benefici per gli enti
+      background: light
+      menu: false
+      centered: true
+      #text: | #C
+        #Lorem ipsum
+      components:
+
+        # TXT + CTA BLOCK
+        - name: TextImageCta
+          #title: Lorem ipsum #C
+          noSpace: true
+          text: | #C
+            Oltre a un sito utile per gli utenti, il modello Musei civici ti aiuta a creare un’esperienza digitale coerente con gli altri siti della Pubblica Amministrazione, nel pieno rispetto della normativa vigente e senza reinventare la ruota. L’adozione del modello, infatti, facilita l’adesione alle linee guida nazionali, alle migliori pratiche di progettazione digitale e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
+
+            Le risorse operative sono progettate per aiutarti a realizzare il sito risparmiando tempo e risorse economiche.
           #ctas:
-          #- label: Naviga un esempio di sito #C
-            #screenReaderText: " (si apre in una nuova finestra)" #C
-            #url: "#" #M
+          #- label: Scopri di più sul processo di ricerca #C
+            #url: https://docs.italia.it/italia/designers-italia/design-asl-docs/it/versione-corrente/ricerca-e-progettazione.html #M
             #blank: true #M #C true if new tab for external links
+            #screenReaderText: " (si apre in una nuova finestra)" #C
             #icon:
               #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
               #color: primary
@@ -204,7 +240,7 @@ components:
     # —
     # EDITORIAL #C #I
     # —
-    - title: I benefici per enti e fornitori
+    - title: Un approccio di progettazione aperto, partecipato e con le persone al centro
       background: null
       menu: false
       centered: true
@@ -215,35 +251,28 @@ components:
         # TXT + CTA BLOCK
         - name: TextImageCta
           #title: Lorem ipsum #C
-          noSpace: false
-          text: | #C
-            Oltre a un sito utile per gli utenti, il modello Musei civici ti aiuta a creare un’esperienza digitale coerente con gli altri siti della Pubblica Amministrazione, nel pieno rispetto della normativa vigente e senza reinventare la ruota. L’adozione del modello, infatti, facilita l’adesione alle linee guida nazionali, alle migliori pratiche di progettazione digitale e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
-
-            Le risorse operative, presto disponibili e già validate dalla ricerca, sono progettate per aiutarti a realizzare il sito risparmiando tempo e risorse economiche.
-          #ctas:
-          #- label: Vai alla documentazione del modello #C
-            #url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
-            #blank: true #M #C true if new tab for external links
-            #screenReaderText: " (si apre in una nuova finestra)" #C
-            #icon:
-              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
-
-
-        # TXT + CTA BLOCK
-        - name: TextImageCta
-          title: Un approccio di progettazione aperto, partecipato e con le persone al centro
           noSpace: true
-          text: |
-            ![Ricerca sul campo con utenti](/images/modelli/musei-progettazione.jpg)
+          text: | #C
+            ![Ricerca sul campo con utenti](/images/modelli/asl-test-usabilita.jpg)
 
-            Stiamo progettando il modello sulla base di un’estensiva ricerca qualitativa con tutti gli attori coinvolti nell’ambito museale: enti, fornitori, in-house e visitatori. Grazie a interviste, focus group e sessioni di validazione, teniamo conto di tutte le necessità per creare un modello funzionale e standardizzato, ma abbastanza flessibile da poter essere adattato a diverse realtà museali. Anche dopo il rilascio, continueremo a raccogliere suggerimenti per migliorare nel tempo sempre di più l’esperienza degli utenti con i siti dei musei.
+            Abbiamo progettato il modello sulla base di un’estensiva ricerca qualitativa con tutti gli attori coinvolti nell’ambito museale: enti, fornitori, in-house e cittadini. Grazie a interviste, focus group e sessioni di validazione, abbiamo tenuto conto di tutte le necessità per creare un modello funzionale e standardizzato, ma abbastanza flessibile da poter essere adattato a diverse realtà museali. 
 
-    # —
+            Ma il nostro lavoro non si ferma qui: continuiamo a raccogliere suggerimenti per migliorare sempre di più nel tempo, in maniera collaborativa, l’esperienza degli utenti con i siti dei musei civici.
+          ctas:
+          - label: Scopri di più sulla progettazione #C
+            url: https://docs.italia.it/italia/designers-italia/design-musei-docs/it/versione-corrente/ricerca-e-progettazione.html #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: "Report della ricerca e della progettazione (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+
+# —
     # EDITORIAL #C #I
     # —
     - title: Risorse pronte all'uso
@@ -251,83 +280,115 @@ components:
       menu: false
       centered: true
       #text: | #C
-        #Lorem ipsum
+        #Il modello ti aiuta a creare esperienze digitali coerenti e centrate sugli utenti, contribuendo alla trasformazione digitale delle amministrazioni comunali
       components:
 
         # TXT + CTA BLOCK
         - name: TextImageCta
-          noSpace: true
           #title: Lorem ipsum #C
           text: | #C
-            Tutte le risorse del modello saranno disponibili entro maggio 2024 e ti permetteranno di realizzare, a basso costo e rapidamente, siti e servizi digitali centrati sui bisogni degli utenti:
-            - architettura dell'informazione;
-            - layout hi-fi delle pagine del modello;
-            - prototipi navigabili;
-            - sito demo navigabile;
-            - documentazione tecnica.
-          #ctas:
-          #- label: Vai alla documentazione del modello #C
-            #url: https://docs.italia.it/italia/designers-italia/design-scuole-docs/it/ #M
-            #blank: true #M #C true if new tab for external links
-            #screenReaderText: " (si apre in una nuova finestra)" #C
-            #icon:
-              #icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
-              #color: primary
-              #align: middle
-              #hidden: true
-              #size: sm
-              #addonClasses: ms-2
+            Le risorse del modello ti permettono di realizzare un sito facile da navigare, con contenuti chiari e interfacce intuitive. Le istruzioni operative, corredate a ogni risorsa, ti guidano passo per passo nell’implementazione di un sito accessibile e allineato all’identità visiva del museo civico di riferimento.
+          ctas:
+          - label: Vai alla documentazione operativa #C
+            screenReaderText: "Documentazione operativa (si apre in una nuova finestra)" #C
+            url: https://docs.italia.it/italia/designers-italia/design-musei-docs/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # NUMBERS BLOCK
+        - name: Numbers
+          items: #C #I
+          - label: Documento di architettura
+            icon: sprites.svg#it-file
+            number: "1"
+          - label: Libreria dei componenti
+            icon: sprites.svg#it-tool
+            number: "1"
+          - label: Layout hi-fi di pagina
+            icon: sprites.svg#it-files
+            number: "30"
+          - label: Prototipi navigabili
+            icon: sprites.svg#it-user
+            number: "9"
+
 
 
 # —
   # HIGHLIGHT WITH CARDS
   # —
   highlightCards:
-    id: notizie
-    title: Rimani aggiornato #C
-    text: Le ultime notizie sul modello Musei civici, il processo di progettazione e il rilascio delle risorse #C
-    headingLevel: 2
-    background: null
+    id: HC1
+    title: Adotta il modello #C
+    text: Le risorse disponibili guidano su tutti gli aspetti progettuali, dalla pianificazione allo sviluppo #C
     col4: false # FALSE notizie + Medium | TRUE eventi + media
-    # buttons:
-    #   - btnStyle: outline-primary
-    #     label: Esplora tutte le notizie sul modello #C
-    #     url: XXX #M
-    #     blank: false
+    noSpace: true
 
     # CARDS
     cards:
 
-   #CARD NOTIZIA
-      - title: 'Partono i lavori per il modello di sito web per i musei civici'
-        headingLevel: 4
-        customCol: col-lg-4
-        text: Designers Italia inizia le attività per valorizzare il patrimonio culturale del Paese attraverso il digitale.
-        img: /images/community/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici-1400x723.png
-        alt: ""
-        imgRatio: 21x9
+      # CARD CHILDREN
+      - title: Il sito del museo civico #C
+        text: Segui la procedura guidata ed esplora le risorse per adottare il modello che ti aiuta a realizzare un sito museale semplice, accessibile e centrato sui bisogni degli utenti. #C
+        img: /images/modelli/musei-sito.png
+        alt: "Anteprima del modello di sito per i musei"
+        imgRatio: 4x3
         imgPlaceholder: false
+        titleSmall: false
         fullHeight: true
-        rounded: true
-        url: "/community/notizie/20230927-partono-i-lavori-per-il-modello-di-sito-web-per-i-musei-civici/"
-        dateInfo: 27 settembre 2023
-        tags: [Modelli di sito, Adozione modelli]
+        url: "adotta-il-modello-di-sito-per-i-musei-civici/" #M
+        tag:
+          label: Scheda operativa #C
+
 
   # ///////////////////
   # SECTION EDITORIAL
   # ///////////////////
   sectionsEditorial2 :
 
-
-     # —
+    - title: Contribuisci al modello
+      background: medium
+      menu: false
+      centered: true
+      #text: | #C
+      #  Lorem **ipsum**
+      components:
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/modelli/PA-digitale-adotta.svg #I
+          alt: "" #C
+          specular: false
+          noSpace: true
+          #title: Lorem ipsum h3 #C
+          text: | #C
+            Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana, contribuendo alle discussioni, agli avanzamenti tecnici e di design con il team e la community di Designers Italia
+          ctas:
+          - label: Scopri come contribuire #C
+            url: /modelli/contribuisci-ai-modelli/ #M
+            blank: true #M #C true if new tab for external links
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: white
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+  
+    # —
     # EDITORIAL #C #I
     # —
     - menu: false
       centered: true
       background: light
-      title: La community di riferimento #C
+      title: Richiedi assistenza o contribuisci all'evoluzione del modello #C
       text: | #C
-        Scopri i canali dove confrontarti sulle risorse del modello
+        Scopri i canali dove confrontarti con la community di Designers Italia sulle risorse del modello
       components:
 
         # TXT + IMG + CTA BLOCK
@@ -392,6 +453,8 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
+
+
 
 
 

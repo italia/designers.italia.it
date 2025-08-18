@@ -13,7 +13,6 @@ function NavSidebar({
   id,
   title,
   subTitle,
-  url,
   img,
   alt,
   tag,
@@ -45,12 +44,14 @@ function NavSidebar({
     ariaLabel: " (Link esterno)",
   };
 
+  // XXX We are currently using and repurposing the "navscroll" component of BSI, there may be some improvements to be made in a11y
+
   if (list) {
     links = list.map((item, index) => {
       expandSublinks = false;
 
       linksStyle =
-        "list-item text-uppercase right-icon" +
+        "list-item text-uppercase right-icon nav-link" +
         `${item.label === page ? " active" : ""}` +
         `${item.disabled ? " disabled" : ""}`;
 
@@ -61,10 +62,10 @@ function NavSidebar({
             linksStyle += " contains-active";
           }
 
-          let subLiStyle;
+          let subLiStyle = "nav-link";
 
           if (subItem.disabled) {
-            subLiStyle = "disabled";
+            subLiStyle += " disabled";
           }
 
           return (
@@ -198,18 +199,17 @@ function NavSidebar({
             <Icon {...ICON_CHEVRON_RIGHT} />
             {toggleLabel}
           </button>
-          <div className="navbar-collapsable" id={id} ref={navCollRef}>
-            <div className="overlay" />
-            <div className="close-div visually-hidden">
-              <button className="btn close-menu" type="button">
-                <span className="it-close" />
-                {buttonCloseAriaLabel}
-              </button>
-            </div>
+          <div
+            className="navbar-collapsable"
+            id={id}
+            ref={navCollRef}
+            tabIndex="-1"
+          >
             <div className="menu-wrapper">
               <button
-                className="it-back-button btn w-100 text-start"
+                className="it-back-button btn w-100 text-start rounded-0"
                 type="button"
+                aria-label={buttonCloseAriaLabel}
               >
                 <svg role="img" className="icon icon-sm icon-primary align-top">
                   <use href="/svg/sprites.svg#it-chevron-left" />
@@ -217,13 +217,10 @@ function NavSidebar({
                 <span>{backLabel}</span>
               </button>
 
-              <div className="nav-sidebar-header mx-4 mx-lg-3 mb-4 mb-lg-5 mt-0 mt-lg-3">
-                <a className="" href={url}>
-                  <img src={img} className="header-image my-2" alt={alt} />
-                  <h2 className="h4 text-primary">{title}</h2>
-                </a>
-                <p className="lead fw-normal w-75">{subTitle}</p>
-                {tag && <Tag {...tag} />}
+              <div className="nav-sidebar-header mx-4 mb-3 mt-0 mt-lg-2">
+                <img src={img} className="header-image" alt={alt} />
+                <h2 className="h3 px-0 my-1">{title}</h2>
+                <p className="fw-normal w-75 mb-0">{subTitle}</p>
               </div>
 
               <div className="link-list-wrapper">
@@ -233,6 +230,7 @@ function NavSidebar({
               {secondaryLinks && (
                 <div className="sidebar-linklist-wrapper linklist-secondary">
                   <div className="link-list-wrapper">
+                    <div className="pt-3">{tag && <Tag {...tag} />}</div>
                     <ul className="link-list">{secondaryLinks}</ul>
                   </div>
                 </div>

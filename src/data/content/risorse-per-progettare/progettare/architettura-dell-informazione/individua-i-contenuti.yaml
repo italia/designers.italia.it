@@ -25,9 +25,8 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Individua i contenuti - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni del futuro touchpoint digitale. #C
-  image: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png #I
-  twitterImage: https://designers.italia.it/images/risorse-per-progettare/social/kit_architettura.png
+  description: "Parti dagli obiettivi e dalle preferenze dell'utente per stabilire i contenuti e le funzionalità che dovrebbe avere il sito o il servizio digitale." #C
+  image: null #I
   canonical: null
   pathname: /risorse-per-progettare/progettare/architettura-dell-informazione/individua-i-contenuti/ #M
 
@@ -94,7 +93,7 @@ components:
   hero:
     background: null
     title: Individua i contenuti #C
-    subtitle: Utilizza gli scenari d'uso per iniziare a ideare i contenuti e le funzioni del futuro touchpoint digitale #C
+    subtitle: "Parti dagli obiettivi e dalle preferenze dell'utente per stabilire i contenuti e le funzionalità che dovrebbe avere il sito o il servizio digitale" #C
     tag:
       label: Kit di design #C
       addonClasses: mt-3 text-uppercase
@@ -141,7 +140,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -174,7 +173,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Come utilizzare gli scenari per definire il contesto d’uso di un touchpoint #C
+    - title: Come definire i contenuti e le funzionalità necessari all'utente per raggiungere i suoi obiettivi #C
       menu: false
       centered: true
       background: null
@@ -186,9 +185,9 @@ components:
         - name: TextImageCta
           # title: A cosa servono h3 #C
           text: | #C
-            Gli scenari sono delle **storie** che raccontano specifiche vicende di utilizzo di un servizio digitale da parte di uno specifico utente, in uno specifico contesto; puoi usarli in modi diversi e con diversi scopi, a seconda del focus del progetto: qui trovi lo strumento scenari d'uso come punto di partenza per ideare le caratteristiche del futuro touchpoint digitale del servizio, in termini di contenuti e funzioni che questo dovrebbe avere. Gli scenari solitamente hanno come soggetto una delle **personas** di riferimento, e sono perciò un modo per trasporre quanto emerso dalla ricerca in idee per migliorare l’interazione con il servizio.
+            Per definire i contenuti e le funzionalità di un sito o un servizio digitale è importante partire dagli **obiettivi dell'utente** nell'interazione con lo stesso. Per ciascun obiettivo l'utente ha delle necessità informative e delle preferenze di interazione, ovvero quelle caratteristiche che rendono la sua **esperienza di fruizione semplice ed efficace** e che si rispecchiano poi nei contenuti e nelle funzionalità dell'interfaccia.
 
-            Contestualizzare una persona in uno scenario d’uso ti aiuta a comprendere i suoi obiettivi e a declinarli in sotto-obiettivi specifici. Questo è utile per mettere a fuoco le possibili **criticità** che l’utente potrebbe incontrare nell’interagire con il servizio digitale, sia nel caso della ri-progettazione un servizio digitale già esistente sia nel caso tu debba ipotizzare nuove soluzioni per future implementazioni di servizi.
+            Svolgendo ricerca utente, dovresti aver già identificato i principali scenari d'uso del servizio per mettere a fuoco obiettivi e preferenze d'interazione realistiche per le diverse tipologie di utilizzatori del sito o servizio digitale che stai progettando. Partendo proprio dagli scenari che hai identificato, questo strumento ti aiuta a fare una lista di **tutte le cose che all'utente serve sapere e poter fare** attraverso l'interfaccia, un ottimo punto di partenza per procedere poi a organizzarle nell'alberatura del sito.
 
   # ///////////////////
   # RESOURCES
@@ -200,26 +199,15 @@ components:
       - simpleList: true
         headingLevel: 3
         listItems:
-          - label: Scenari d'uso #C
+          - label: Lista contenuti e funzionalità #C
             srBefore: "Scarica ODT " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Metti a fuoco il contesto di utilizzo di un servizio digitale #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso.ods #M
+            text: Elenca ciò che serve all'utente per raggiungere i suoi obiettivi #C
+            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-lista-contenuti-e-funzionalita.ods #M
             blank: false
             actions:
               - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso.ods #M
-                ariaLabel: "Scarica ODS Scenari d'uso" #C #COMPILE FOR EACH ITEM
-                blank: false
-          - label: Esempio di scenari d'uso #C
-            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
-            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Guarda l'esempio di uno scenario d'uso basato sul modello Comuni #C
-            url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso-esempio.ods #M
-            blank: false
-            actions:
-              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-Scenari-d-uso-esempio.ods #M
-                ariaLabel: "Scarica ODS Esempio di scenari d'uso" #C #COMPILE FOR EACH ITEM
+                url: /files/resources/risorse-per-progettare/progettare/architettura-informazione/individua-contenuti/DI-lista-contenuti-e-funzionalita.ods #M
+                ariaLabel: "Scarica ODS Lista contenuti e funzionalità" #C #COMPILE FOR EACH ITEM
                 blank: false
 
