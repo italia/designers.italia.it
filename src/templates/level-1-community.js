@@ -1,7 +1,3 @@
-// ========================================
-// CLEAN TEMPLATE - level-1-community.js
-// ========================================
-
 import * as React from "react";
 import "../scss/styles.scss";
 import "../js/globals";
@@ -72,7 +68,6 @@ function Template({
         {Pagedata.components?.titleText && (
           <TitleText {...Pagedata.components.titleText} />
         )}
-
         {Pagedata.components?.highlightCardsLoop &&
           Pagedata.components.highlightCardsLoop.map((hlc, index) => (
             <HighlightCards
@@ -82,7 +77,6 @@ function Template({
               editorialSections={pageContext?.editorialSections}
             />
           ))}
-
         {Pagedata.components.sectionsEditorial &&
           Pagedata.components.sectionsEditorial.map((section, index) => (
             <SectionEditorial key={`sectionEditorial-${index}`} {...section} />

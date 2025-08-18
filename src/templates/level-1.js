@@ -30,7 +30,7 @@ function Template({
   pageContext,
   location,
   lastModified,
-  highlightedCards, // ✅ Add highlightedCards prop
+  highlightedCards,
 }) {
   let activePage = null;
   if (Pagedata.metadata.activeLabel) {
@@ -73,7 +73,6 @@ function Template({
         {Pagedata.components.imageIcons && (
           <ImageIcons {...Pagedata.components.imageIcons} />
         )}
-
         {Pagedata.components.highlightCards && (
           <HighlightCards
             {...Pagedata.components.highlightCards}
@@ -81,7 +80,6 @@ function Template({
             editorialSections={pageContext?.editorialSections}
           />
         )}
-
         {Pagedata.components.highlightsLoop2 &&
           Pagedata.components.highlightsLoop2.map((hl, index) => (
             <Highlight key={`hl-${index}`} {...hl} />
