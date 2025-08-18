@@ -88,12 +88,12 @@ const scrollToPosition = (x, y) => {
  * Handle smooth scrolling to hash targets
  */
 const handleHashNavigation = (hash) => {
-  requestAnimationFrame(() => {
+  setTimeout(() => {
     const element = document.getElementById(hash.slice(1));
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
-  });
+  }, 100);
 };
 
 /**
@@ -108,19 +108,15 @@ const handleBackForwardScroll = (location, getSavedScrollPosition) => {
     savedPosition = getStoredScrollPosition(location.pathname);
   }
 
-  // Debug logging
-  console.log("Back/forward navigation:", {
-    pathname: location.pathname,
-    gatsbyPosition: getSavedScrollPosition?.(location) || "N/A",
-    manualPosition: getStoredScrollPosition(location.pathname),
-    finalPosition: savedPosition,
-  });
-
   if (savedPosition) {
-    requestAnimationFrame(() => {
-      scrollToPosition(savedPosition[0], savedPosition[1]);
-      console.log("Restored scroll position:", savedPosition);
-    });
+    // Multiple restoration attempts to beat SSR hydration
+    const restore = () => scrollToPosition(savedPosition[0], savedPosition[1]);
+    
+    requestAnimationFrame(restore);
+    setTimeout(restore, 50);
+    setTimeout(restore, 150);
+    setTimeout(restore, 300);
+    
     return false;
   }
 
@@ -132,9 +128,7 @@ const handleBackForwardScroll = (location, getSavedScrollPosition) => {
  * Handle scroll to top for regular navigation
  */
 const handleRegularNavigation = () => {
-  requestAnimationFrame(() => {
-    scrollToPosition(0, 0);
-  });
+  scrollToPosition(0, 0);
   return false;
 };
 
@@ -170,7 +164,7 @@ exports.shouldUpdateScroll = ({ routerProps: { location, action }, getSavedScrol
   // Handle hash navigation
   if (location.hash) {
     handleHashNavigation(location.hash);
-    return true;
+    return false;
   }
 
   const isBackForward = action === "POP";
