@@ -23,9 +23,10 @@ function ShareButton({ title, url, color, small }) {
   if (!small) {
     shareOpts.button.addonStyle = `btn-share-hero btn-dropdown text-${color} mb-5 mt-lg-4 ms-auto`;
     shareOpts.button.label = "Condividi";
+    shareOpts.button.ariaLabel = `Condividi: ${title}`;
   } else {
     shareOpts.button.addonStyle = "icon-only-drop";
-    shareOpts.button.ariaLabel = "Condividi";
+    shareOpts.button.ariaLabel = `Condividi: ${title}`;
   }
 
   return <Dropdown {...shareOpts} shareTitle={title} shareUrl={url} />;

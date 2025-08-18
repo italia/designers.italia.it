@@ -101,7 +101,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Grazie alle risorse del kit, potrai **definire i profili delle persone che useranno il servizio (personas)** e **mappare l'esperienza d'uso attuale del tuo servizio digitale**, per poi riprogettarlo rendendolo più adeguato alle loro necessità.
+      Grazie alle risorse del kit, potrai **definire i profili delle persone che useranno il servizio (personas)** e **mappare l'esperienza d'uso attuale del servizio digitale**, per poi riprogettarlo rendendolo più adeguato alle loro necessità.
     img: /images/risorse-per-progettare/icons/kit_esperienzautente.svg #I
     alt: "L'esperienza guida gli utenti ai loro bisogni" #C
 
@@ -130,7 +130,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -195,17 +195,13 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            **Comprendere lo stato attuale del tuo servizio digitale** e come le persone lo percepiscono è il punto di partenza fondamentale per migliorarlo.
-            I servizi rivolti a cittadine e cittadini e quelli interni alla Pubblica Amministrazione devono essere analizzati e progettati in modo da offrire **esperienze digitali di qualità ed efficienti.**
+            **Comprendere come le persone percepiscono e usano un servizio** è il punto di partenza fondamentale per migliorarlo. I servizi rivolti a cittadine e cittadini e quelli interni alla Pubblica Amministrazione devono essere analizzati e progettati in modo da offrire **esperienze di qualità ed efficienti**. 
+            
+            In questa fase di progettazione è necessario **definire le personas**, le diverse tipologie di utenti che usano il servizio, **identificare gli scenari d'uso**, le situazioni in cui il servizio viene usato, e **mappare gli user journey**, le interazioni specifiche per usufruire del servizio.
 
-            L’obiettivo comune è **garantire che il servizio funzioni in modo soddisfacente** Per raggiungerlo puoi avvalerti delle risorse dedicate del kit.
-
-            Lo strumento personas serve a raccontare le diverse tipologie di persona che utilizzano un servizio, definite sulla base dei dati quantitativi e qualitativi della ricerca.
-            Le personas sono anche un ottimo punto di partenza per mappare:
-            - gli **user journey as-is**, che raccontano come avviene servizio allo stato attuale;
-            - **gli user journey to-be**, che raccontano come sarà il futuro servizio digitale e sono utili soprattutto in fase di progettazione.
-
-            Lo strumento di **mappatura dell’esperienza dell’utente**, o **user journey**, sintetizza tutte le interazioni delle persone attraverso i diversi touchpoint messi loro a disposizione (sito, app, sportello/punto vendita, ecc.) per raggiungere un determinato obiettivo.
+            L’obiettivo è **garantire che il servizio funzioni in modo soddisfacente** e, per raggiungerlo, puoi avvalerti delle risorse dedicate del kit. Gli strumenti a disposizione ti aiutano ad analizzare l'**as-is**, ovvero il servizio allo stato attuale, per poi definire il **to-be**, ovvero come riprogettare il servizio futuro.
+            
+        
 
         # TXT + CTA BLOCK
         - name: TextImageCta
@@ -213,9 +209,9 @@ components:
           text: | #C
             Il Manuale operativo è lo strumento a supporto delle Linee guida di design per i siti internet e i servizi digitali della PA. Al suo interno trovi maggiori informazioni e indicazioni su come mappare l’esperienza d’uso di un servizio esistente (as-is) e a riprogettare la sua evoluzione (to-be), comprendendo le caratteristiche dell'utente con risorse operative dedicate quali personas e user journey.
           ctas:
-          - label: "Vai all'argomento La progettazione di servizi al cittadino" #C
+          - label: "Vai all'argomento Progettazione dei servizi" #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-di-servizi.html #M
+            url: https://docs.italia.it/italia/designers-italia/manuale-operativo-design-docs/it/versione-corrente/doc/progettazione-dei-servizi.html #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -257,15 +253,28 @@ components:
         tag:
           label: Attività del kit #C
 
+      # CARD CHILDREN ACTION
+      - title: Identifica gli scenari d'uso #C
+        fullHeight: true
+        rounded: true
+        imgRatio: 16x9
+        iconImg: /images/risorse-per-progettare/icons/kit_scenari_uso.svg #I
+        iconImgAlt: "" #C
+        url: "identifica-gli-scenari-d-uso/" #M
+        text: | #C
+          Immagina le diverse situazioni in cui l’utente interagirà con il prodotto o servizio.
+        tag:
+          label: Attività del kit #C
+          
         # CARD CHILDREN ACTION
-      - title: Analizza l‘esperienza d’uso #C
+      - title: Mappa gli user journey #C
         fullHeight: true
         rounded: true
         imgRatio: 16x9
         iconImg: /images/risorse-per-progettare/icons/kit_esperienzautente_journey.svg #I
         iconImgAlt: "" #C
-        url: "analizza-l-esperienza-d-uso/" #M
+        url: "mappa-gli-user-journey/" #M
         text: | #C
-          Analizza l'esperienza delle persone e le interazioni nelle diverse fasi del tuo servizio. Specifica le attività che svolgono, gli attori coinvolti, i canali e touchpoint attraverso cui interagiscono con il servizio digitale.
+          Dettaglia l'esperienza e le interazioni delle persone nelle diverse fasi d'uso del servizio.
         tag:
           label: Attività del kit #C

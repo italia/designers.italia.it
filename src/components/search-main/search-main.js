@@ -91,17 +91,18 @@ function SearchMain({ location, maxResults, title, suggest }) {
   };
 
   return (
-    <section className={styles}>
+    <section className={styles} aria-labelledby="searchHomeTitle">
       <div className="container-xxl">
         <div className="row">
           <div className="col-12 g-0">
             <div
               className="search-main-content px-3 py-5 px-lg-0 px-lg-5 py-lg-6"
               role="search"
+              aria-labelledby="searchHomeTitle"
             >
               {title && (
                 <div className="text-container mb-5">
-                  {title && <h2>{title}</h2>}
+                  {title && <h2 id="searchHomeTitle">{title}</h2>}
                 </div>
               )}
               {suggest && (
@@ -142,7 +143,7 @@ function SearchMain({ location, maxResults, title, suggest }) {
                       </label>
                       <input
                         type="search"
-                        className="border-search form-control-lg search"
+                        className="border-search form-control form-control-lg rounded-0 search"
                         name="search"
                         id="searchInput"
                         placeholder=""

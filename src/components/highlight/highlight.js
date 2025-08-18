@@ -1,4 +1,5 @@
 import * as React from "react";
+import slugify from "slugify";
 import "./highlight.scss";
 import ReactMarkdown from "react-markdown";
 import ImageResponsive from "../image-responsive/image-responsive";
@@ -7,7 +8,6 @@ import Icon from "../icon/icon";
 import Numbers from "../numbers/numbers";
 
 function Highlight({
-  id,
   background,
   img,
   alt,
@@ -36,7 +36,7 @@ function Highlight({
 
   const classes =
     "highlight-content d-lg-flex" +
-    `${specular ? " flex-lg-row-reverse" : ""}` +
+    `${!specular ? " flex-lg-row-reverse" : ""}` +
     `${reversedMobile ? " d-flex flex-column-reverse" : ""}` +
     `${img || overlayImg ? "" : " no-image"}`;
 
@@ -70,25 +70,14 @@ function Highlight({
     ratioClass = "img-container ratio ratio-16x9";
   }
 
+  const id = slugify(title, { lower: true, strict: true });
+
   return (
     <section className={styles} aria-labelledby={id}>
       <div className="container-xxl">
         <div className="row">
           <div className="col-12 g-0">
             <div className={classes}>
-              <div className={ratioClass}>
-                {img && (
-                  <ImageResponsive className="main-image" src={img} alt={alt} />
-                )}
-                {icon && <Icon {...icon} />}
-                {overlayImg && (
-                  <ImageResponsive
-                    src={overlayImg}
-                    alt={overlayAlt}
-                    className="overlay-image"
-                  />
-                )}
-              </div>
               <div className="text-container px-3 py-5 px-lg-5 py-lg-6">
                 <HLevel id={id}>{title}</HLevel>
                 {subtitle && <p className="lead mb-4">{subtitle}</p>}
@@ -102,6 +91,19 @@ function Highlight({
                   <div className="buttons-wrapper mt-5">{ButtonsRender}</div>
                 )}
                 {children}
+              </div>
+              <div className={ratioClass}>
+                {img && (
+                  <ImageResponsive className="main-image" src={img} alt={alt} />
+                )}
+                {icon && <Icon {...icon} />}
+                {overlayImg && (
+                  <ImageResponsive
+                    src={overlayImg}
+                    alt={overlayAlt}
+                    className="overlay-image"
+                  />
+                )}
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ metadata:
 
 seo:
   name: Microtesti
-  description: "Progetta testi e microtesti dedicati alle interfacce per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
+  description: "Progetta testi dedicati alle interfacce per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale."
   canonical: null
   pathname: /design-system/fondamenti/microtesti/
 
@@ -31,7 +31,7 @@ components:
     background: null
     title: Microtesti
     column: true
-    subtitle: "Scrivere per la user experience significa progettare testi e microtesti dedicati alle interfacce, per rendere l’esperienza delle persone semplice, fluida e coerente con l’ecosistema di un servizio digitale"
+    subtitle: "I microtesti rendono l'interazione fluida e coerente con l'ecosistema di un servizio digitale. Scopri come scrivere testi di interfaccia utili, che facilitano il raggiungimento degli obiettivi e che ispirano fiducia."
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -69,7 +69,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -97,72 +97,48 @@ components:
       tags: [Contenuti e linguaggio,Progettazione interfaccia]
 
   sectionsEditorial:
+
     - full: true
       noSpace: false
       paddingLeft: true
-      title:  Scrivi per facilitare e orientare l’interazione
-      #text: Migliora il rapporto tra utenti e interfaccia
+      #title:
       background: null
       components:
         - name: TextImageCta
-          title:
-          noSpace: true
+          title: Migliora il rapporto tra utenti e interfaccia
           headingLevel: 2
           text: |
-            I testi di interfaccia dovrebbero aiutare l'utente a:
-            - **identificare il tipo di interfaccia digitale** in cui si trova, tramite l’uso di elementi quali heading, subheading, label
-            - capire **come i blocchi di informazioni sono collegati** fra di loro, tramite l’uso di componenti quali label, [accordion](/design-system/componenti/accordion/), [collapse](/design-system/componenti/collapse/), table, tag
-            - scegliere e prevedere in tempo reale **quale azione compiere sull’interfaccia**, tramite l’uso di componenti quali [tooltip](/design-system/componenti/tooltip/) e [buttons](/design-system/componenti/buttons/)
-            - **prevedere l’effetto dell’interazione** con un elemento di interfaccia e **guidare alla risoluzione di una situazione inaspettata**, tramite [modali](/design-system/componenti/modal/), aiuti contestuali e messaggi di errore.
+            I microtesti sono brevi testi strategici presenti nelle interfacce dei servizi digitali che **guidano, informano e rassicurano gli utenti durante l’interazione**: call-to-action, etichette di navigazione, messaggi di errore, messaggi di conferma, testi delle notifiche, testi segnaposto. 
+
+            I microtesti migliorano notevolmente l’esperienza utente, l'usabilità dell'interfaccia e, più in generale, l'accessibilità di un servizio digitale. Quando ben progettati, **favoriscono il raggiungimento di un obiettivo**, **aiutano a evitare errori** e, di conseguenza, **contribuiscono ad aumentare la fiducia negli utenti**.
 
         - name: TextImageCta
-          title: Tieni presente l’obiettivo e il contesto di ogni pagina o schermata
-          headingLevel: 3
-          noSpace: true
+          title: Scrivi per facilitare e orientare l’interazione
+          headingLevel: 2
+          noSpace: false
+          addonClasses: mb-5
           text: |
-            I testi e i microtesti che accompagnano l’utente nell’interazione con la pagina dovrebbero essere progettati tenendo conto dell’obiettivo e del contesto di ogni schermata, oltre che dell’insieme dei passaggi che compongono un eventuale flusso: organizzare le call to action (es. [buttons](/design-system/componenti/buttons/)) con la giusta gerarchia di importanza è fondamentale per **orientare l’azione primaria**, suggerire le possibilità di interazione secondarie o collaterali, far **raggiungere in maniera fluida e senza colli di bottiglia l’obiettivo**.
-          ctas:
-          - label: "Scopri le buone pratiche sui contenuti del componente Buttons" #C
-            url: "/design-system/componenti/buttons/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
-
+            ### Tieni presente l'obiettivo dell'utente
+            
+            I microtesti efficaci sono **focalizzati**, **contestuali** e **guidano l'utente verso l'obiettivo**. Ogni parola dovrebbe aiutare l’utente a compiere un’unica azione in modo semplice, chiaro e sicuro. Aggiungere informazioni non pertinenti rischia di creare confusione, rallentare il flusso e aumentare il carico cognitivo. **Orienta quindi l'utente sempre verso l’azione primaria**, segnalando chiaramente come secondarie o collaterali altre possibilità di interazione.
+             
+        # 2
         - name: TextImageCta
-          noSpace: true
-          title: Rispetta la consistenza delle tue scelte di scrittura
-          headingLevel: 3
-          text: |
-            La progettazione di schemi ricorrenti d’interazione a livello di UX e UI implica anche definire **scelte** e **pattern di contenuto** ricorrenti e consistenti nell’ambito dello stesso servizio. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e **in maniera consistente**, la terminologia usata, gli ingombri di testo, i copy delle call to action.
-
-            Per facilitare l’aggiornamento consistente dei testi durante tutte le fasi di progettazione di un servizio, sono disponibili strumenti e integrazioni per i principali software di prototipazione che permettono di **creare e gestire librerie di microtesti**.
-
-
-    - full: true
-      noSpace: true
-      paddingLeft: true
-      title: Suggerimenti per microcopy efficaci e accessibili
-      background: null
-      components:
-
-        # 1st
-        - name: Table
           title: Usa azioni specifiche
+          noSpace: true
+          text: |
+            **Inizia le call-to-action con un verbo** che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione.
+            
+        - name: Table
           responsive: table-responsive-md
-          addonClasses: fixed
+          addonClasses: mb-5
           head:
             - tag:
                 label: VA BENE
-                addonClasses: bg-primary fw-bold
+                addonClasses: bg-success fw-bold
             - tag:
                 label: NON VA BENE
-                addonClasses: bg-warning fw-bold
+                addonClasses: bg-danger fw-bold
           rows:
             - cols:
               - text: Invia
@@ -171,171 +147,60 @@ components:
               - text: Aggiungi un nuovo provider
               - text: Nuovo provider
 
+        # 3
+
         - name: TextImageCta
-          text: |
-            Le etichette di testo di componenti azionabili (es. i pulsanti) dovrebbero, in linea generale, **iniziare con un verbo** che indichi chiaramente l’azione da svolgere e consenta all'utente di prevedere l'effetto dell'interazione.
-
-
-        # 2nd
-        - name: Table
           title: Usa un linguaggio semplice e conciso
+          text: |
+            **Vai dritto al punto** ed **evita il più possibile nominalizzazioni, negazioni e forme passive**: rendono il testo difficile da comprendere. Considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre preferibile ridurre la quantità di testo piuttosto che incrementarla.
+          noSpace: true
+          ctas:
+          - label: Approfondisci il tema nel fondamento Linguaggio #C
+            noSpace: true
+            url: "/design-system/fondamenti/linguaggio" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+              
+        - name: Table
+          noSpace: true
           responsive: table-responsive-md
-          addonClasses: fixed
+          addonClasses: mb-5
           head:
             - tag:
                 label: VA BENE
-                addonClasses: bg-primary fw-bold
+                addonClasses: bg-success fw-bold
             - tag:
                 label: NON VA BENE
-                addonClasses: bg-warning fw-bold
+                addonClasses: bg-danger fw-bold
           rows:
             - cols:
               - text: Cerca un documento
               - text: Fai una ricerca fra i documenti
-
-        - name: TextImageCta
-          text: |
-            Oltre alla semplicità di linguaggio, considera anche il limite massimo di caratteri che un componente specifico può contenere. A parità di significato, è sempre **preferibile ridurre la quantità di testo piuttosto che incrementarla**.
-
-
-        # 3rd
-        - name: Table
-          title: "Prima l’obiettivo, poi l’azione"
-          responsive: table-responsive-md
-          addonClasses: fixed
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-primary fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-warning fw-bold
-          rows:
-            - cols:
-              - text: Per scaricare la ricevuta di pagamento, accedi all’area personale
-              - text: Accedi all’area personale per scaricare la ricevuta di pagamento
-
-        - name: TextImageCta
-          text: |
-            Quando un testo descrive un obiettivo e l'azione necessaria per raggiungerlo, inizia la frase con l'obiettivo, in modo da **facilitare la trovabilità dell'informazione principale**. Le persone, infatti, non leggono sugli schermi parola per parola, ma tendono a scansionare velocemente il contenuto della pagina.
-
-
-        # 4th
-        - name: Table
-          title: Evita le negazioni e le forme passive
-          responsive: table-responsive-md
-          addonClasses: fixed
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-primary fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-warning fw-bold
-          rows:
             - cols:
               - text: I campi con asterisco sono obbligatori
               - text: Questo campo non è opzionale
             - cols:
               - text: Hai salvato il documento. Vai alla sezione "..." per visualizzarlo
               - text: Il documento è stato salvato con successo nella sezione "..."
-            - cols:
-              - text: Mario ha pubblicato un nuovo commento
-              - text: Un nuovo commento è stato pubblicato da Mario
+
+
+        #4   
 
         - name: TextImageCta
-          text: |
-            Le negazioni e le forme passive rendono il testo più difficile da capire. **Prediligi l'uso di forme attive ed evita le negazioni** quando progetti microtesti per orientare azioni da compiere in interfaccia.
-
-
-        # 5th
-        - name: Table
-          title: Aiuta nella risoluzione degli errori
-          responsive: table-responsive-md
-          addonClasses: fixed
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-primary fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-warning fw-bold
-          rows:
-            - cols:
-              - text: La data deve rispettare il formato GG/MM/AA ed essere successiva al …
-              - text: Data non valida
-            - cols:
-              - text: Verifica la data di completamento delle attività
-              - text: Risulta un errore nella data di completamento delle attività
-            - cols:
-              - text: Il documento caricato non contiene alcuna firma. Assicurati di caricare un file che contiene una firma in corso di validità
-              - text: Firma non presente!
-            - cols:
-              - text: La ricerca non ha restituito risultati per “...”. Prova a cercare “...” o “...”.
-              - text: Non ci sono risultati
-
-        - name: TextImageCta
-          text: |
-            Dando per implicito che è buona norma **progettare un’interfaccia che impedisca il più possibile all’utente di trovarsi in condizioni di errore**, per le situazioni in cui è necessario prevedere messaggi di aiuto alla risoluzione di eventuali problemi (es. compilazione di form, upload di documenti, note legali, 404 etc…) è bene seguire alcune buone pratiche quali:
-
-            - spiegare in maniera semplice e chiara che c’è un problema e **qual è il problema**
-            - fornire - se possibile - una **soluzione immediata**
-            - se non è possibile una soluzione immediata, suggerire una **via di uscita alternativa** in modo da fornire un’esperienza il più accettabile possibile della condizione inaspettata.
-
-
-        # 6th
-        - name: Table
-          title: Progetta stati vuoti di valore
-          responsive: table-responsive-md
-          addonClasses: fixed
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-primary fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-warning fw-bold
-          rows:
-            - cols:
-              - text: I tuoi documenti appariranno qui
-              - text: Ops, non ci sono documenti qui
-            - cols:
-              - text: I tuoi servizi preferiti appariranno qui. Aggiungi il primo servizio
-              - text: Nessun servizio disponibile
-            - cols:
-              - text: "Inizia a scrivere un messaggio: puoi salvarlo in bozza e inviarlo quando sei pronto. Nuovo messaggio"
-              - text: Non ci sono messaggi in bozza
-
-        - name: TextImageCta
-          text: |
-            I cosiddetti “empty state” o “stati vuoti” sono necessari in varie situazioni, tipicamente quando l’utente deve iniziare ad aggiungere alcuni elementi a una sezione, oppure quando sta cercando qualcosa ma il sistema non restituisce risultati. Scrivere un microtesto per uno stato vuoto è un’opportunità per **far comprendere all’utente come iniziare a interagire con l’interfaccia**, perché questa sia davvero di valore per la sua esperienza, senza perdite di tempo.
-
-            Ecco alcune buone pratiche per progettare stati vuoti efficaci:
-            - evita parole e tono di voce “negativi”
-            - suggerisci come **avviare l’interazione che annulla lo stato vuoto**
-            - suggerisci che tipo di esperienza offrirà la sezione una volta avviata la prima interazione.
-
-        - name: TextImageCta
-          title: "Progetta aiuti contestuali efficaci"
+          title: Usa un tono di voce appropriato al contesto
           noSpace: true
           text: |
-            Tooltip (suggerimenti) e placeholder (testi segnaposto) fanno parte della categoria di testi detti di “aiuto contestuale”, cioè utili all’utente come guida aggiuntiva su come interagire con l’interfaccia e su come interpretare il significato di alcuni elementi di UI.
-
-            Ecco alcune buone pratiche per la progettazione di questi microtesti:
-            - **usa i tooltip con moderazione**, valutando se l’aiuto contestuale è davvero necessario e ricordando che il testo del tooltip sarà visibile all’utente solo in mouseover (cioè al passaggio volontario del mouse)
-            - usa i testi segnaposto come **aiuto alla compilazione**, in particolare se hai bisogno di orientare l’utente su come compilare campi di testo “libero”
-            - usa i testi segnaposto per **suggerire il modo giusto di usare alcune funzionalità** (es. ricerca su sito).
-
-        - name: TextImageCta
-          title: "Rispetta il tono di voce del contesto"
-          noSpace: true
-          text: |
-            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Il rispetto di un tono di voce coerente e incentrato sull’utente è fondamentale per migliorare l’esperienza di un servizio digitale. Scrivi con **l’obiettivo primario di farti capire ed essere efficace**, tenendo conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente che interagisce con l’interfaccia.
+            Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce empatica. Quando progetti i microtesti, **tieni conto il più possibile degli stati d’animo in cui potrebbe trovarsi l’utente** che interagisce con l’interfaccia e adatta il tono al contesto.
           ctas:
-          - label: "Scopri il fondamento dedicato al Tono di voce" #C
-            url: "/design-system/fondamenti/tono-di-voce/" #M
+          - label: Approfondisci il tema nel fondamento Tono di voce #C
+            url: "/design-system/fondamenti/tono-di-voce" #M
             blank: false #M #C true if new tab for external links
-           
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
               color: primary
@@ -343,53 +208,137 @@ components:
               hidden: true
               size: sm
               addonClasses: ms-2
-
-        - name: TextImageCta
-          title: "Scrivi per tutti"
+              
+        - name: Table
           noSpace: true
-          text: |
-            Leggere sugli schermi richiede maggiore sforzo e concentrazione rispetto alla lettura su carta stampata. Numerosi studi hanno infatti dimostrato che le persone non leggono necessariamente dall’alto al basso e parola per parola, ma più frequentemente **scansionano il contenuto della pagina secondo pattern visivi ricorrenti** ([F-shape](https://www.nngroup.com/articles/f-shaped-pattern-reading-web-content/), [Z-shape](https://uxplanet.org/z-shaped-pattern-for-reading-web-content-ce1135f92f1c)), ancorando la lettura all’aspetto di alcuni componenti interattivi e a volte limitandosi ad una lettura superficiale delle informazioni.
-          ctas:
-          - label: "Scopri il fondamento dedicato al Linguaggio" #C
-            url: "/design-system/fondamenti/linguaggio/" #M
-            blank: false #M #C true if new tab for external links
-           
-            icon:
-              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-              color: primary
-              align: middle
-              hidden: true
-              size: sm
-              addonClasses: ms-2
+          responsive: table-responsive-md
+          addonClasses: mb-5 table-img-responsive
+          head:
+            - tag:
+                label: VA BENE
+                addonClasses: bg-success fw-bold
+            - tag:
+                label: NON VA BENE
+                addonClasses: bg-danger fw-bold
+          rows:
+            - cols:
+              - text: "![Hai ricevuto una multa di 60 euro per divieto di sosta. Hai tempo fino al 12 gennaio 2025 per pagare senza costi aggiuntivi. Puoi pagare online o tramite bollettino postale. Paga online.](/images/design-system/fondamenti/microtesti-tov-ok.png)
+                      Tono di voce autorevole, istruttivo e orientato all'azione"
+                        
+              - text: "![È ora di pagare! Hai ricevuto una multa di 60 euro perchè hai parcheggiato dove non si poteva. Se non paghi entro il 12 gennaio 2025 ti addebiteremo costi aggiuntivi. Paga adesso.](/images/design-system/fondamenti/microtesti-tov-ko.png)
+                      Tono di voce colpevolizzante"
 
-
-    - full: true
-      noSpace: false
-      paddingLeft: true
-      title:
-      background: null
-      components:
+        #6
         - name: TextImageCta
-          title: Metodi di ricerca
-          headingLevel: 2
+          title: "Includi aiuti contestuali di valore"
+          noSpace: false
           text: |
-            Prima di scrivere i microtesti, è importante **conoscere il linguaggio che gli utenti usano** in relazione a un determinato servizio.
+            ![Esempi di aiuti contestuali](/images/design-system/fondamenti/microtesti-aiuti-contestuali.png "Esempi di aiuti contestuali")
+            
+            Gli aiuti contestuali sono microtesti aggiuntivi che **guidano l'utente su come interagire con l’interfaccia**, **compilare campi** e **interpretare alcuni elementi UI**. Rappresentano un'opportunità per rendere l'interazione intuitiva e fluida.
 
-            Alcune possibili attività di ricerca per indagare questo aspetto sono:
-            - **conversation mining**, ovvero ricercare discussioni online (social network, forum, recensioni) per capire come gli utenti parlano di un servizio
-            - **focus group**, ovvero guidare e osservare la conversazione tra un gruppo di partecipanti scelti accuratamente
-            - **interviste utenti**, per approfondire il contesto e l’esperienza d’uso di un servizio.
+            - Usa i testi segnaposto per suggerire agli utenti come interagire con campi liberi senza validazione, come le barre di ricerca (ad esempio: "Cerca servizi e uffici", "Inizia a digitare un indirizzo"). Ricorda che questi suggerimenti scompaiono quando l'utente inizia a digitare.
+            
+            - Per indicare istruzioni di compilazione, come ad esempio per i [campi input](/design-system/componenti/input/) dei [form](/design-system/componenti/form/), usa invece l'helper text fisso posto sotto il componente, così il suggerimento non scompare. Scrivi istruzioni utili e specifiche, come "Inserisci una password di almeno 8 caratteri e con almeno una maiuscola" e non "Inserisci una password sicura".
+            
+            - Nei [dropdown](/design-system/componenti/dropdown/) di selezione, specifica cosa bisogna selezionare (ad esempio, "Seleziona una regione", "Seleziona una sede") e non usare il generico "Seleziona un'opzione".
+            
+            - Usa i [tooltip](/design-system/componenti/tooltip/) solo per indicazioni secondarie o accessorie, poichè saranno visibili solo al clic, tap o al passaggio del mouse. Usali con moderazione e valuta se l’aiuto contestuale è davvero necessario.
 
+        #7
         - name: TextImageCta
-          title: Metodi di test
-          headingLevel: 2
+          title: "Aiuta nella risoluzione degli errori"
+          noSpace: false
           text: |
-            Dopo aver progettato testi e microtesti, è opportuno **verificare che questi corrispondano al livello di comprensione, al tipo di linguaggio e alle aspettative degli utenti**.
+            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
+            
+            Un messaggio di errore utile **aiuta a riconoscere il problema e dà indicazioni per correggerlo**, supportando l'utente in un momento di frustrazione.
 
-            Esistono diversi tipi di test che possono essere usati per verificare i microtesti, in base alla fase di sviluppo in cui ci si trova, il tempo a disposizione e lo scopo della verifica:
-            - **test di leggibilità**, che aiuta a capire quanto è difficile un testo ma non se rispetta il tono di voce o se è adatto al target di riferimento
-            - **cloze test** (o cloze deletion test) e **test di comprensione delle parole**, utili per capire se l’utente capisce cosa abbiamo scritto
-            - **test dell’evidenziatore**, per capire come semplificare la descrizione di un servizio o un’istruzione tecnica
-            - **test di usabilità delle parole**, per capire come gli utenti usano il contenuto per risolvere un problema
-            - **test A/B**, per confrontare due versioni alternative di uno stesso testo.
+            1. Scrivi un titolo che descrive chiaramente qual è il problema, senza incolpare l'utente.
+            
+            2. Spiega la causa dell'errore, nella descrizione.
+            
+            3. Continua la descrizione spiegando in che modo risolvere.
+            
+            4. Fornisci, se possibile, una call-to-action per una soluzione immediata o una via d'uscita alternativa.
+
+        #8
+        - name: TextImageCta
+          title: "Chiedi conferma prima di azioni importanti"
+          noSpace: false
+          text: |
+            Prima di azioni con conseguenze rilevanti o irreversibili, **dai all'utente possibilità di assicurarsi che voglia effettivamente procedere**. Le persone possono commettere errori, soprattutto in contesti complessi, sotto pressione o quando sono di fretta.
+
+            ![Un esempio microcopy per una modale di conferma](/images/design-system/fondamenti/domanda-conferma.png "Un esempio microcopy per una modale di conferma")
+            
+            Quando chiedi conferma a un'utente:
+
+            1. Scrivi un titolo sotto forma di domanda che esplicita chiaramente l'azione che si sta per compiere. Preferisci la forma *Vuoi* + *[Verbo dell'azione]*, evitando generici "Attenzione!" o "Sei sicuro di voler...?" che non danno contesto o nascondono l'informazione principale alla fine della frase.
+            
+            2. Fornisci una descrizione completa dell’azione e delle sue conseguenze, cercando di non ripetere le parole del titolo. Offri un suggerimento per evitare errori prima di procedere o una spiegazione di come rimediare all'azione successivamente.
+            
+            3. Usa lo stesso verbo che hai usato nel titolo come call-to-action principale, per evitare ambiguità.
+            
+            4. Usa "Annulla" come call-to-action secondaria per annullare l'azione.
+
+            Nei casi di forte ambiguità tra la call-to-action principale e quella secondaria, puoi cambiare verbi, includere sostantivi e aggiungere Sì/No. Ad esempio:
+            
+            Per esempio: Vuoi annullare la pratica? No, mantieni pratica / Sì, annulla pratica
+        
+        #9
+        - name: TextImageCta
+          title: "Comunica l'esito positivo di un'azione"
+          noSpace: false
+          text: |
+            I messaggi di conferma comunicano all'utente che un'azione è stata completata con successo, fornendo dettagli rilevanti e rassicurazioni. Sono fondamentali per migliorare l'esperienza utente e aumentare la fiducia nel servizio.
+
+            ![Un esempio microcopy per un messaggio di conferma](/images/design-system/fondamenti/microtesti-conferma.png "Un esempio microcopy per un messaggio di conferma")
+            
+            Quando progetti messaggi di conferma:
+
+            1. Scrivi un titolo che descrive chiaramente l'azione che è stata appena conclusa.
+            
+            2. Spiega gli effetti dell'azione e includi eventuali numeri di riferimento (come nel caso di richieste).
+            
+            3. Includi informazioni su cosa succede dopo ed eventuali tempi di attesa.
+            
+            4. Se rilevante, aggiungi una call-to-action per far continuare l'utente nell'interazione del servizio. Ad esempio, puoi invitare l'utente a navigare un'altra sezione, approfondire informazioni aggiuntive, ripetere la stessa azione appena conclusa, scaricare una ricevuta.
+
+        #10
+        - name: TextImageCta
+          title: "Sfrutta gli stati vuoti per incentivare le interazioni"
+          noSpace: false
+          text: |
+            ![Un esempio di microcopy per uno stato vuoto](/images/design-system/fondamenti/microtesti-stati-vuoti.png "Un esempio di microcopy per uno stato")
+            
+            Gli stati vuoti, in inglese *empty states*, sono quei testi che appaiono in sezioni temporaneamente vuote, prima che il sistema o l'utente aggiungano informazioni, oppure quando una ricerca non restituisce risultati. Scrivere un microtesto per uno stato vuoto è un’opportunità per **far comprendere all’utente come iniziare a interagire con l’interfaccia**, perché questa sia davvero di valore per la sua esperienza, senza perdite di tempo.
+            
+            1. Includi un messaggio principale che spiega lo stato vuoto, evitando parole e tono di voce “negativi”.
+            
+            2. Suggerisci come **avviare l’interazione che annulla lo stato vuoto** e il tipo di esperienza offrirà la sezione una volta avviata la prima interazione.
+            
+            3. Se possibile, aggiungi una call-to-action per annullare lo stato vuoto immediatamente.
+            
+        #11
+        - name: TextImageCta
+          title: Rispetta la consistenza delle tue scelte di scrittura
+          headingLevel: 2
+          noSpace: false
+          text: |
+            La progettazione di schemi ricorrenti d’interazione a livello di UX e UI implica anche definire **scelte** e **pattern di contenuto** ricorrenti e consistenti nell’ambito dello stesso servizio. Oltre alle buone pratiche generali quindi, è buona norma definire e applicare in interfaccia, e **in maniera consistente**, la terminologia usata, gli ingombri di testo, i copy delle call to action.
+
+            Per facilitare l’aggiornamento consistente dei testi durante tutte le fasi di progettazione di un servizio, sono disponibili strumenti e integrazioni per i principali software di prototipazione che permettono di **creare e gestire librerie di microtesti**.
+
+        #12
+        - name: TextImageCta
+          title: Fai ricerca e testa i microtesti del tuo servizio
+          headingLevel: 2
+          noSpace: false
+          text: |
+            Prima di scrivere microtesti, è importante **conoscere il linguaggio che gli utenti usano** in relazione a un determinato servizio. Alcune possibili attività di ricerca sono: **conversation mining** (analisi del linguaggio usato in conversazioni su social network e forum), **focus group** e **interviste utente**.
+              
+            Per valutare se i microtesti progettati sono comprensibili agli utenti e corrispondono al loro linguaggio e alle loro aspettative, puoi svolgere principalmente **[test di usabilità](/risorse-per-progettare/validare/test-di-usabilita/)**, ma anche **test di leggibilità** (tramite formula di Flesch-Vacca e l’indice Gulpease), **test di comprensione**, **cloze test** (o cloze deletion test), **test dell'evidenziatore** e **test A/B**.
+
+
+            
 

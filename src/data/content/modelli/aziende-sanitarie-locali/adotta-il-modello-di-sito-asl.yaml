@@ -126,7 +126,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+            url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -272,7 +272,7 @@ components:
           ctas:
           - label: Scopri tutte le norme e i requisiti legali #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://docs.italia.it/italia/designers-italia/design-asl-docs/it/versione-corrente/norme-e-requisiti-legali.html #M
+            url: https://docs.italia.it/italia/designers-italia/design-asl-docs/it/versione-corrente/adesione-modello.html #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
@@ -419,4 +419,20 @@ components:
               size: sm
               addonClasses: ms-2
 
-
+        - name: TextImageCta
+          title: Contribuisci al modello
+          headingLevel: 2
+          text: L'evoluzione dei modelli di sito e servizi per la Pubblica Amministrazione è aperta, trasparente e basata sul contributo attivo della community che utilizza le risorse. #C
+          noSpace: true
+          ctas:
+          - label: Scopri come contribuire #C
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            url: /modelli/contribuisci-ai-modelli/ #M
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: md
+              addonClasses: ms-2

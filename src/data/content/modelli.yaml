@@ -104,7 +104,7 @@ components:
     moreButton: Leggi di più
     moreButtonClose: Chiudi
     moreText: | #C
-      I modelli comprendono l'architettura dell'informazione, l'interfaccia e il codice per il sito e i servizi digitali delle pubbliche amministrazioni. Sono frutto di un processo pluriennale di ricerca e progettazione con gli utenti e aderiscono alle [Linee guida di design per i siti internet e i servizi digitali della PA](/norme-e-riferimenti/linee-guida-di-design/) e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
+      I modelli comprendono l'architettura dell'informazione, l'interfaccia e il codice per il sito e i servizi digitali delle pubbliche amministrazioni. Sono frutto di un processo pluriennale di ricerca e progettazione con gli utenti e aderiscono alle [Linee guida di design per i siti internet e i servizi digitali della PA](/normativa/linee-guida-di-design/) e alle indicazioni europee basate su [eGovernment benchmark](https://op.europa.eu/it/publication-detail/-/publication/333fe21f-4372-11ec-89db-01aa75ed71a1).
 
       ### Risorse pronte all'uso
       Sono disponibili risorse operative, come i template HTML e i temi per CMS, che permettono l'adozione dei modelli in modo rapido e a basso costo.
@@ -145,7 +145,6 @@ components:
     # HIGHLIGHT
     # —
     - title: Comuni #C
-      id: comuni
       img: /images/modelli/comuni-cover-square.png #I
       alt: "" #C
       headingLevel: 3
@@ -188,7 +187,6 @@ components:
     # HIGHLIGHT
     # —
     - title: Scuole #C
-      id: HL4
       img: /images/modelli/scuola-cover-square.png #I
       alt: "" #C
       headingLevel: 3
@@ -229,7 +227,6 @@ components:
     # HIGHLIGHT BIG IMG
     # —
     - title: Aziende sanitarie locali (ASL) #C
-      id: aziendesanitarielocali
       img: /images/modelli/asl-cover-square.png #I
       alt: "" #C
       headingLevel: 3
@@ -262,15 +259,28 @@ components:
     # HIGHLIGHT BIG IMG
     # —
     - title: Musei civici #C
-      id: museicivici
-      img: /images/modelli/musei-hero.png #I
+      img: /images/modelli/musei-cover-square.png #I
       alt: "" #C
       headingLevel: 3
-      background: medium # null | light | medium | dark
+      background: null # null | light | medium | dark
       big: true
       specular: false
-      subtitle: Il modello, in lavorazione, per il sito dei musei civici #C
-      text: "Presto disponibili le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici."
+      subtitle: Il modello per il sito dei musei civici #C
+      text: "Le risorse per realizzare con facilità esperienze digitali semplici e accessibili per i visitatori dei musei civici."
+      numbers: #C #I
+        items:
+        - icon: sprites.svg#it-file
+          number: "1"
+          label: Documento di architettura
+        - icon: sprites.svg#it-tool
+          number: "1"
+          label: Libreria dei componenti
+        - icon: sprites.svg#it-folder
+          number: "30"
+          label: Layout hi-fi di pagina
+        - icon: sprites.svg#it-user
+          number: "9"
+          label: Prototipi navigabili
       buttons: #C #I
         - label: Scopri il modello Musei civici #C
           btnStyle: primary

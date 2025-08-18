@@ -30,9 +30,9 @@ metadata:
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: Design system - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  name: "Design system .italia - Designers Italia" #C REMIND "- Designers Italia" #AUTO
   description: "L’insieme di indicazioni e risorse per progettare e realizzare siti e servizi pubblici di qualità, efficienti e accessibili." #C
-  image: https://designers.italia.it/images/design-system/fondamenti.jpg
+  image: https://designers.italia.it/images/design-system/ds-beta-naming.png
   canonical: null
   pathname: /design-system/ #M
 
@@ -46,7 +46,7 @@ components:
   # ///////////////////
   hero:
     background: primary
-    title: Design system del Paese #C
+    title: "Design system .italia" #C
     subtitle: "L’insieme di indicazioni e risorse per realizzare siti e servizi pubblici di qualità, efficienti e accessibili" #C
     pretext:
       icon:
@@ -54,9 +54,9 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Qui trovi fondamenti, componenti, design pattern e showcase per creare il tuo progetto in linea con gli standard della Pubblica Amministrazione, che offra un’esperienza d’uso ottimale e che ti permetta di guadagnare tempo e risorse pur mantenendo alto il livello di qualità.
-    # img: /images/400x300.png #I
-    # alt: alt lorem ipsum #C
+      Qui trovi la documentazione di .italia, il design system del Paese: indicazioni su come iniziare, come contribuire, fondamenti e componenti, per creare il tuo progetto in linea con gli standard della Pubblica Amministrazione, che offra un’esperienza d’uso ottimale e che ti permetta di guadagnare tempo e risorse pur mantenendo alto il livello di qualità.
+    img: /images/design-system-cover.svg #I
+    alt: "" #C
     imgRatio: 4x3
 
     # KANGAROO: METADATA
@@ -76,7 +76,7 @@ components:
         btnId: dropdownKang
         button:
           addonStyle: dropdown-toggle btn-dropdown
-          label: Scopri il design system #C
+          label: Scopri il design system .italia #C
           iconRight: true
           icon:
             icon: sprites.svg#it-expand
@@ -104,7 +104,7 @@ components:
     title: Istruzioni e mattoncini per la realizzazione di siti e servizi della PA #C
     background: null
     text: | #C
-      Ti diamo il benvenuto nel primo design system italiano dedicato al mondo delle pubbliche amministrazioni e dei loro fornitori: questo è il punto di partenza per la progettazione di siti e servizi digitali pubblici di qualità, accessibili, inclusivi e fondati sulle reali necessità delle persone.
+      Ti diamo il benvenuto in .italia, il primo design system italiano dedicato al mondo delle pubbliche amministrazioni e dei loro fornitori: questo è il punto di partenza per la progettazione di siti e servizi digitali pubblici di qualità, accessibili, inclusivi e fondati sulle reali necessità delle persone.
       Scopri l'insieme delle indicazioni, delle regole e delle risorse alla base delle interfacce digitali dei servizi pubblici italiani.
     moreButton: Leggi di più
     moreButtonClose: Chiudi
@@ -113,14 +113,79 @@ components:
       Impara dall’esperienza altrui e non partire da zero. Tutte le risorse del design system ti danno la possibilità di risolvere le complessità, senza reinventare ogni volta la ruota, perchè già testate e validate e quindi pronte per essere utilizzate. Risparmia, guadagnando qualità.
 
       #### Qualità, accessibilità e inclusività
-      Sono le tre parole chiave per realizzare siti e servizi per la Pubblica Amministrazione. Il design system del Paese ti consentirà di farlo rispettando i riquisiti previsti dalle Linee guida di design, emesse secondo quanto definito dall’articolo 53 del Codice dell’amministrazione digitale.
+      Sono le tre parole chiave per realizzare siti e servizi per la Pubblica Amministrazione. Il design system .italia ti consentirà di farlo rispettando i requisiti previsti dalle [Linee guida di design](/normativa/linee-guida-di-design/), emesse secondo quanto definito dall’articolo 53 del Codice dell’amministrazione digitale.
 
   # ///////////////////
   # HIGHLIGHTS
   # ///////////////////
   titleText:
-    title: Scopri e usa il design system del Paese #C
+    title: Scopri e usa il design system .italia #C
 
+  sectionsMedia: 
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      title: "Design system .italia v1: video promozionale"
+      headingLevel: 3
+      hiddenSectionTitle: true # just for screen reader
+      id: "coverMedia"
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/Ys5Kxfdvedg
+          poster: /images/community/media-thumbnails/20241021-design-system-italia.jpg # xxx
+          subtitles: /files/community/subtitles/20241021-design-system-italia.vtt # xxx
+          trascriptionHeadingLevel: 4
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+
+            Scarica la [trascrizione in formato ODT](/files/community/subtitles/20241021-design-system-italia.odt)
+
+            ----
+
+            ##### Design system .italia
+
+            Caselle di testo, pulsanti, menu a tendina
+            sono alcuni degli elementi più semplici
+            di app e siti web.
+
+            Eppure nei servizi pubblici digitali
+            componenti come questi sono fondamentali,
+            perché consentono alle persone di esercitare i propri diritti
+            senza escludere nessuno.
+
+            Il digitale sta cambiando il volto della Pubblica Amministrazione
+            e il design system .italia ha un ruolo fondamentale
+            in questa trasformazione, perché getta le fondamenta
+            per rendere coerenti le esperienze di utilizzo
+            dei servizi pubblici digitali, 
+            definendone identità, linguaggio e interazioni.
+
+            In pratica è un insieme di indicazioni e risorse
+            per realizzare interfacce usabili e accessibili.
+            Contribuendo così a una Pubblica Amministrazione più vicina
+            semplice e utile per le persone.
+
+            Nel design system .italia infatti c'è tutto quello che serve
+            per progettare, prototipare e sviluppare piattaforme digitali
+            con più efficacia, minor tempo e costi.
+            Dalle indicazioni pratiche su come scrivere i testi
+            alle stringhe di codice pronte all'uso.
+
+            È per tutti perché open source: tutti lo possono usare.
+            È di tutti perché costruito con l'aiuto della community di Designers Italia.
+            Tutti possono contribuire al suo miglioramento.
+
+            Oggi sono già migliaia gli enti che usano il design system .italia,
+            ed è importante che domani siano ancora di più.
+            Perché è un diritto di tutte le persone poter interagire con siti
+            e servizi pubblici digitali di qualità.
+
+            Designers Italia è un progetto a cura del Dipartimento per la Trasformazione Digitale e dell'Agenzia per l'Italia Digitale.
+            
   # —
   # HIGHLIGHT LOOP
   # —
@@ -137,7 +202,7 @@ components:
       background: light # null | light | medium | dark
       big: false
       specular: true
-      subtitle: Scopri i primi passi da compiere per progettare e sviluppare soluzioni utilizzando il design system del Paese #C
+      subtitle: Scopri i primi passi da compiere per progettare e sviluppare soluzioni utilizzando il design system .italia #C
       buttons: #C #I
         - label: Scopri come iniziare #C
           btnStyle: primary
@@ -215,7 +280,7 @@ components:
       background: null # null | light | medium | dark
       big: false
       specular: true
-      subtitle: Scopri i passi da compiere per contribuire al design system del Paese #C
+      subtitle: Scopri i passi da compiere per contribuire al design system .italia #C
       buttons: #C #I
         - label: Scopri come contribuire #C
           btnStyle: primary
@@ -234,31 +299,31 @@ components:
           url: "come-contribuire/per-lo-sviluppo/" #M
           addonStyle: mb-3
 
-    # —
-    # HIGHLIGHT BIG IMG
-    # —
-    - title: Design pattern #C
-      id: design-pattern
-      headingLevel: 3
-      background: medium # null | light | medium | dark
-      big: false
-      specular: true
-      subtitle: Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficacemente testati in situazioni simili
-      text: |
-        _In stesura_
+    # # —
+    # # HIGHLIGHT BIG IMG
+    # # —
+    # - title: Design pattern #C
+    #   id: design-pattern
+    #   headingLevel: 3
+    #   background: medium # null | light | medium | dark
+    #   big: false
+    #   specular: true
+    #   subtitle: Modelli di progettazione pronti all’uso che ti permettono di trovare la soluzione al problema perchè già efficacemente testati in situazioni simili
+    #   text: |
+    #     _In stesura_
         
-    # —
-    # HIGHLIGHT
-    # —
-    - title: Showcase #C
-      id: showcase
-      headingLevel: 3
-      big: false
-      background: dark
-      specular: true
-      subtitle: I progetti più significativi realizzati con il design system del Paese #C
-      text: | #C
-        _In stesura_
+    # # —
+    # # HIGHLIGHT
+    # # —
+    # - title: Showcase #C
+    #   id: showcase
+    #   headingLevel: 3
+    #   big: false
+    #   background: dark
+    #   specular: true
+    #   subtitle: I progetti più significativi realizzati con il design system del Paese #C
+    #   text: | #C
+    #     _In stesura_
 
   # # —
   # # IMAGE COVER WITH ICONS
@@ -290,55 +355,59 @@ components:
   # —
   highlightCards:
     id: novita
-    title: Le ultime notizie sul design system del Paese #C
+    title: Le ultime notizie e gli approfondimenti sul design system .italia #C
     # text: 
     headingLevel: 3
-    background: null
+    background: light
     col4: false # FALSE notizie + Medium | TRUE eventi + media
 
     # CARDS
     cards:
 
-      - title: 'Disponibile il player video della Pubblica Amministrazione attento a privacy e accessibilità'
+      - title: 'Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano '
         headingLevel: 4
         customCol: col-lg-4
-        text: Il design system del Paese si arricchisce di un importante componente già in uso nel nuovo archivio media di Designers Italia.
-        img: /images/community/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita-1400x723.png
+        text: "Aggiornati e integrati con un nuovo fondamento le indicazioni del design system per progettare contenuti efficaci e accessibili"
+        img: /images/community/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente.jpg
         alt: ""
         imgRatio: 21x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "/community/notizie/20231031-disponibile-il-player-video-della-pubblica-amministrazione-attento-a-privacy-e-accessibilita/"
-        dateInfo: 31 ottobre 2023
-        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, Accessibilità]
+        url: "/community/notizie/20250414-contenuti-linguaggio-microtesti-e-tono-di-voce-i-fondamenti-di-italia-si-aggiornano/"
+        dateInfo: 14 aprile 2025
+        tags: [Progettazione contenuti, Contenuti e linguaggio, Design system, Cultura progettuale]
 
-      - title: 'Nuovi rilasci del design system del Paese e delle risorse di progettazione e sviluppo'
+      - title: "Selezionati nell’ADI Design Index, un passo verso il Compasso d’Oro"
         headingLevel: 4
         customCol: col-lg-4
-        text: Tra le principali novità, il player video attento a privacy e accessibilità e nuove schede informative.
-        img: /images/community/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo-1400x723.png
+        text: "UI Kit Italia e il Modello ASL selezionati tra le eccellenze del design italiano nell’ADI Design Index 2024"
+        img: /images/community/20241104-adi-design-index.png
         alt: ""
         imgRatio: 21x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "/community/notizie/20231024-nuovi-rilasci-del-design-system-del-paese-e-delle-risorse-di-progettazione-e-sviluppo/"
-        dateInfo: 24 ottobre 2023
-        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia]
-
-      - title: 'Prendi parte anche tu all’evoluzione del design system del Paese'
+        url: "/community/notizie/20241104-adi-design-index/"
+        dateInfo: 04 novembre 2024
+        tags: [Design system, Modelli di sito, UI Kit, Cultura progettuale]
+        
+      - title: ".italia versione 1: l’inizio di una nuova era per i servizi digitali pubblici"
         headingLevel: 4
-        text: Scopri tutte le novità per collaborare alla realizzazione della documentazione e delle risorse.
-        img: /images/community/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese-1400x723.png
+        customCol: col-lg-4
+        text: "Il design system del Paese matura, offrendo strumenti sempre più completi e affidabili per realizzare servizi accessibili e usabili"
+        img: /images/community/20241021-design-system-italia.jpg
         alt: ""
         imgRatio: 21x9
         imgPlaceholder: false
         fullHeight: true
         rounded: true
-        url: "/community/notizie/20230925-prendi-parte-anche-tu-all-evoluzione-del-design-system-del-paese/"
-        dateInfo: 25 settembre 2023
-        tags: [Design system]
+        url: "/community/notizie/20241021-italia-versione-1/"
+        dateInfo: 21 ottobre 2024
+        tags: [Design system, Progettazione interfaccia, Sviluppo interfaccia, UI kit, Prototipazione, Open source]
+
+
+
 
   # # —
   # # HIGHLIGHT LOOP

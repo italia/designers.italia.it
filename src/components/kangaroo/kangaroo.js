@@ -68,14 +68,23 @@ function Kangaroo({
                 </span>
               </div>
               <div className="chips ms-md-3 mb-2 mb-lg-0">
-                {tags.map((tag, index) => (
-                  <Chip
-                    key={`chip-${index}`}
-                    label={tag}
-                    size="lg"
-                    color="primary"
-                  />
-                ))}
+                <div className="chips-list-wrapper">
+                  <ul
+                    className="chips-list chips d-flex flex-wrap mb-0"
+                    aria-label="Argomenti correlati:"
+                  >
+                    {tags.map((t, index) => (
+                      <li className="list-item" key={`list-chip-${index}`}>
+                        <Chip
+                          key={`chip-${index}`}
+                          label={t}
+                          size="lg"
+                          color="primary"
+                        />
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           )}
@@ -90,15 +99,24 @@ function Kangaroo({
                   </span>
                 </div>
                 <div className="chips ms-md-3 mb-2 mb-lg-0">
-                  {tagsDesignSystem.map((tag, index) => (
-                    <Chip
-                      key={`chip-${index}`}
-                      label={tag}
-                      size="lg"
-                      color="primary"
-                      path="design-system/componenti/utili-per"
-                    />
-                  ))}
+                  <div className="chips-list-wrapper">
+                    <ul
+                      className="chips-list chips d-flex flex-wrap mb-0"
+                      aria-label="Argomenti correlati:"
+                    >
+                      {tagsDesignSystem.map((t, index) => (
+                        <li className="list-item" key={`list-chip-${index}`}>
+                          <Chip
+                            key={`chip-${index}`}
+                            label={t}
+                            size="lg"
+                            color="primary"
+                            path="design-system/componenti/utili-per"
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             )}

@@ -2,9 +2,6 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .highlight {
-	&.bg-dark {
-		color: var(--hl-dark-theme-color);
-	}
 	.text-container {
 		.h-text {
 			p {
@@ -34,6 +31,13 @@
         width: 100%;
       }
     }
+	}
+}
+
+.highlight,
+.highlight-cards {
+	&.bg-dark {
+		color: var(--hl-dark-theme-color);
 	}
 }
 //mobile only ------------------------------------------------------------------------------------------
@@ -110,7 +114,7 @@
 		}
 		.text-container {
 			padding: var(--hl-y-padding-desk) var(--hl-x-padding-desk);
-      flex-grow: 1;
+      		flex-grow: 1;
 		}
 		&.highlight-big {
 			.img-container {

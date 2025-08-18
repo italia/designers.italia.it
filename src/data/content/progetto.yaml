@@ -82,10 +82,14 @@ components:
           listItems: #AUTO
             - url: "visione-e-missione/" #M
               label: "Visione e missione" #C
-            - url: "formazione-e-disseminazione/" #M
-              label: "Formazione e disseminazione" #C
+            - url: "divulgazione-e-disseminazione/" #M
+              label: "Divulgazione e disseminazione" #C
             - url: "storia/" #M
               label: "Storia" #C
+            - url: "piano-attivita/"
+              label: Piano attivita
+            - url: "contatti/"
+              label: Contatti
 
   # ///////////////////
   # INTRO
@@ -121,7 +125,6 @@ components:
     # HIGHLIGHT BIG IMG
     # —
     - title: Visione e missione #C
-      id: visione-e-missione
       img: /images/progetto/visione-e-missione.jpg #I
       alt: Testare con gli utenti reali è progettare #C
       headingLevel: 3
@@ -138,8 +141,7 @@ components:
     # —
     # HIGHLIGHT
     # —
-    - title: Formazione e disseminazione #C
-      id: formazione-e-disseminazione
+    - title: Divulgazione e disseminazione #C
       img: /images/progetto/formazione-e-disseminazione.jpg #I
       alt: Condividere è progettare #C
       headingLevel: 3
@@ -150,23 +152,22 @@ components:
       numbers: #C #I
         items:
         - icon: sprites.svg#it-user
-          number: "1200"
+          number: "1200+"
           label: Partecipanti ai corsi PA
         - icon: sprites.svg#it-user
           number: "24000+"
           label: Iscritti alla community
       text: "Abbiamo l’obiettivo di divulgare i princìpi, la cultura della progettazione e le risorse di Designers Italia, per favorire la condivisione di buone pratiche tra chi progetta servizi pubblici digitali, community del design e mondo della PA." #C
       buttons: #C #M
-        - label: Scopri formazione e disseminazione
+        - label: Scopri divulgazione e disseminazione
           btnStyle: primary
-          url: "formazione-e-disseminazione/"
+          url: "divulgazione-e-disseminazione/"
           addonStyle: mb-3
 
     # —
     # HIGHLIGHT BIG IMG
     # —
     - title: Storia #C
-      id: storia
       # img: /images/400x300.png #I
       # alt: Alt lorem ipsum #C
       headingLevel: 3
@@ -178,4 +179,32 @@ components:
         - label: Scopri la storia
           btnStyle: primary
           url: "storia/"
+          addonStyle: mb-3
+
+    - title: Piano attività
+      subtitle: "Gli obiettivi e i risultati del progetto Designers Italia"
+      # img: /images/400x300.png
+      # alt: descrizione immagine
+      headingLevel: 3
+      big: false
+      background: light
+      specular: true
+      buttons:
+        - label: Scopri il piano attività
+          btnStyle: primary
+          url: "piano-attivita/"
+          addonStyle: mb-3
+
+    - title: Contatti
+      subtitle: "Richiedi informazioni sulle attività e i progetti di Designers Italia"
+      # img: /images/400x300.png
+      # alt: descrizione immagine
+      headingLevel: 3
+      big: false
+      background: null
+      specular: true
+      buttons:
+        - label: Scopri i contatti
+          btnStyle: primary
+          url: "contatti/"
           addonStyle: mb-3

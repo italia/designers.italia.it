@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.2/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -46,10 +46,6 @@
 
         .ratio-example-breakpoint {
             --bs-aspect-ratio: 50%;
-        }
-
-        .select-wrapper {
-            margin-top: 48px;
         }
 
         a.back-to-top {
@@ -115,13 +111,15 @@
         <a href="#">
           <div class="img-responsive-wrapper">
             <div class="img-responsive">
-              <div class="img-wrapper"><img src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine" alt="descrizione immagine"></div>
+                <figure class="img-wrapper">
+                  <img src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine" class="rounded" alt="Un'immagine generica segnaposto con angoli arrotondati in una figura.">
+                  <figcaption class="figure-caption it-griditem-text-wrapper">
+                    <span class="it-griditem-text">Testo didascalia</span>
+                    <svg role="img" class="icon"><title>Significato icona</title><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+                  </figcaption>
+                </figure>
             </div>
           </div>
-          <span class="it-griditem-text-wrapper">
-            <span class="it-griditem-text">Didascalia</span>
-            <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
-          </span>
         </a>
       </div>
     </div>
@@ -132,13 +130,15 @@
             <a href="#">
               <div class="img-responsive-wrapper">
                 <div class="img-responsive">
-                  <div class="img-wrapper"><img src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine" alt="descrizione immagine"></div>
+                    <figure class="img-wrapper">
+                      <img src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine" class="rounded" alt="Un'immagine generica segnaposto con angoli arrotondati in una figura.">
+                      <figcaption class="figure-caption it-griditem-text-wrapper">
+                        <span class="it-griditem-text">Testo didascalia</span>
+                        <svg role="img" class="icon"><title>Significato icona</title><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+                      </figcaption>
+                    </figure>
                 </div>
               </div>
-              <span class="it-griditem-text-wrapper">
-                <span class="it-griditem-text">Didascalia</span>
-                <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
-              </span>
             </a>
           </div>
         </div>
@@ -147,13 +147,15 @@
             <a href="#">
               <div class="img-responsive-wrapper">
                 <div class="img-responsive">
-                  <div class="img-wrapper"><img src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine" alt="descrizione immagine"></div>
+                    <figure class="img-wrapper">
+                      <img src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine" class="rounded" alt="Un'immagine generica segnaposto con angoli arrotondati in una figura.">
+                      <figcaption class="figure-caption it-griditem-text-wrapper">
+                        <span class="it-griditem-text">Testo didascalia</span>
+                        <svg role="img" class="icon"><title>Significato icona</title><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+                      </figcaption>
+                    </figure>
                 </div>
               </div>
-              <span class="it-griditem-text-wrapper">
-                <span class="it-griditem-text">Didascalia</span>
-                <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
-              </span>
             </a>
           </div>
         </div>
@@ -162,13 +164,15 @@
             <a href="#">
               <div class="img-responsive-wrapper">
                 <div class="img-responsive">
-                  <div class="img-wrapper"><img src="https://via.placeholder.com/660x300/ebebeb/808080/?text=Immagine" alt="descrizione immagine"></div>
+                    <figure class="img-wrapper">
+                      <img src="https://placehold.co/660x300/ebebeb/808080/?text=Immagine" class="rounded" alt="Un'immagine generica segnaposto con angoli arrotondati in una figura.">
+                      <figcaption class="figure-caption it-griditem-text-wrapper">
+                        <span class="it-griditem-text">Testo didascalia</span>
+                        <svg role="img" class="icon"><title>Significato icona</title><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
+                      </figcaption>
+                    </figure>
                 </div>
               </div>
-              <span class="it-griditem-text-wrapper">
-                <span class="it-griditem-text">Didascalia</span>
-                <svg class="icon"><use href="/dist/svg/sprites.svg#it-code-circle"></use></svg>
-              </span>
             </a>
           </div>
         </div>
@@ -180,7 +184,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
@@ -193,7 +197,7 @@
         // popover
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
+            return new bootstrap.Popover(popoverTriggerEl, { sanitize: false })
         })
 
     </script>

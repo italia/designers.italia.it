@@ -70,7 +70,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design/" #M
+            url: "/normativa/linee-guida-di-design/" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -249,7 +249,7 @@ components:
       paddingLeft: true
       title: "Contribuisci all'evoluzione delle risorse community-driven React e Angular Kit"
       text: | 
-       Partecipa all'aggiornamento per renderle coerenti con Bootstrap Italia e UI Kit Italia. 
+       Partecipa all'evoluzione partecipata dei due kit che implementano il design system nei framework React e Angular. 
       background: null
       
       components:
@@ -257,20 +257,32 @@ components:
           noSpace: false
           headingLevel: 3
           text: |
-            Sono in corso le lavorazioni per l'aggiornamento di React e Angular Kit alle ultime versioni di Bootstrap Italia v2 (basato su Bootstrap 5). I rilasci ufficiali sono previsti entro i primi mesi del 2024. 
+            Sono disponibili le nuove versioni dei React (v5) e Angular Kit (v1), coerenti con le ultime versioni di Bootstrap Italia v2 (basato su Bootstrap 5) e UI Kit Italia v3.  
 
-            Lavorazioni importanti perché: 
+            Le lavorazioni che hanno portato a queste nuove versioni sono state molto importanti perché: 
             - c'è stato un profondo refactoring di Bootstrap Italia tra le v1 e le v2 in merito ad accessibilità dei componenti e coerenza generale con la risorsa di design UI Kit Italia;
             - il [primo gennaio 2023](https://github.com/twbs/release) è avvenuto l'End of Life (EOF) di Bootstrap 4 su cui si basava Bootstrap Italia v1.
             
-            Di seguito le informazioni su dove trovare i lavori in corso. I commenti e i contributi di tutta la community sono più che necessari!
+            Di seguito le informazioni su dove trovare i lavori in corso nei due kit. I commenti e i contributi di tutta la community sono più che necessari!
+          ctas: 
+            - label: "Leggi la notizia" #C
+              # screenReaderText: " (si apre in una nuova finestra)"
+              url: "/community/notizie/20240404-design-system-italia-disponibili-le-nuove-versioni-dei-kit-react-ed-angular/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2
 
         - name: TextImageCta
           title: Per React Kit
           noSpace: true
           headingLevel: 3
           text: |
-            Puoi seguire i lavori in corso per l'aggiornamento a Bootstrap Italia v2 sul [repository](https://github.com/italia/design-react-kit/).
+            Puoi seguire i lavori in corso e contribuire nel [repository React Kit](https://github.com/italia/design-react-kit/).
           ctas: 
             - label: "Discussioni su React Kit" #C
               screenReaderText: " (si apre in una nuova finestra)"
@@ -300,7 +312,7 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-            Puoi seguire i lavori in corso per l'aggiornamento a Bootstrap Italia v2 sul [repository](https://github.com/italia/design-angular-kit/).
+            Puoi seguire i lavori in corso e contribuire nel [repository Angular Kit](https://github.com/italia/design-angular-kit/).
           ctas: 
             - label: "Discussioni su Angular Kit" #C
               screenReaderText: " (si apre in una nuova finestra)"

@@ -1,4 +1,5 @@
 import * as React from "react";
+import slugify from "slugify";
 import ReactMarkdown from "react-markdown";
 import classNames from "classnames";
 import ImageResponsive from "../image-responsive/image-responsive";
@@ -75,13 +76,16 @@ function Card({
   } else {
     HLevel = `h3`;
   }
+
+  const id = slugify(title, { lower: true, strict: true });
+
   if (cardEvent) {
     return (
-      <div className={styles}>
+      <article aria-labelledby={id} className={styles}>
         <div className={styleBody}>
           <div className="text-zone">
             {HLevel && (
-              <HLevel>
+              <HLevel id={id}>
                 <Link
                   to={url}
                   target={blank ? "_blank" : undefined}
@@ -126,10 +130,22 @@ function Card({
             </div>
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">
               {tags && (
-                <div className="chip-container">
-                  {tags.map((t, index) => (
-                    <Chip key={`chip-${index}`} label={t} size="sm" />
-                  ))}
+                <div className="chips-list-wrapper">
+                  <ul
+                    className="chips-list chips d-flex flex-wrap mb-0"
+                    aria-label="Argomenti correlati:"
+                  >
+                    {tags.map((t, index) => (
+                      <li className="list-item" key={`list-chip-${index}`}>
+                        <Chip
+                          key={`chip-${index}`}
+                          label={t}
+                          size="sm"
+                          color="secondary"
+                        />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
               {tag && (
@@ -142,11 +158,11 @@ function Card({
             </div>
           </div>
         </div>
-      </div>
+      </article>
     );
   }
   return (
-    <div className={styles}>
+    <article aria-labelledby={id} className={styles}>
       {(img || imgPlaceholder || iconImg) && (
         <div className={imgStyle}>
           {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt} />}
@@ -167,7 +183,7 @@ function Card({
       <div className={styleBody}>
         <div className="text-zone">
           {HLevel && (
-            <HLevel>
+            <HLevel id={id}>
               <Link
                 to={url}
                 target={blank ? "_blank" : undefined}
@@ -198,15 +214,22 @@ function Card({
           <div className="di-card-footer">
             <div className="di-card-footer-content d-flex justify-content-between align-items-end">
               {tags && (
-                <div className="chip-container">
-                  {tags.map((t, index) => (
-                    <Chip
-                      key={`chip-${index}`}
-                      label={t}
-                      size="sm"
-                      color="secondary"
-                    />
-                  ))}
+                <div className="chips-list-wrapper">
+                  <ul
+                    className="chips-list chips d-flex flex-wrap mb-0"
+                    aria-label="Argomenti correlati:"
+                  >
+                    {tags.map((t, index) => (
+                      <li className="list-item" key={`list-chip-${index}`}>
+                        <Chip
+                          key={`chip-${index}`}
+                          label={t}
+                          size="sm"
+                          color="secondary"
+                        />
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
               {tag && (
@@ -219,7 +242,7 @@ function Card({
           </div>
         )}
       </div>
-    </div>
+    </article>
   );
 }
 

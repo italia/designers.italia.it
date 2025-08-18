@@ -141,7 +141,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -166,7 +166,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Interfaccia utente,Prototipazione]
+      tags: [Design system,Interfaccia utente,Prototipazione]
 
   # ///////////////////
   # SECTION EDITORIAL
@@ -206,10 +206,18 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
+          - label: "Come iniziare a usare il design system .italia" #C
+            text: Scopri gli strumenti messi a disposizione per i designer, i vari formati, come utilizzarli #C
+            url: "/design-system/come-iniziare/per-designer/" #M
+            blank: false
+            actions:
+              - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "/design-system/come-iniziare/per-designer/" #M
+                blank: false
           - label: UI Kit Italia v3+ #C
             srBefore: "File Figma: " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: La libreria di fondamenti e componenti per progettare e realizzare l’interfaccia utente, coerente con Bootstrap Italia #C
+            text: La libreria di fondamenti e componenti per progettare e realizzare l’interfaccia utente, parte del design system .italia #C
             url: https://www.figma.com/community/file/1105848677422572920 #M
             blank: true
             actions:

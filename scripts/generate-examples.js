@@ -12,6 +12,13 @@ const HTML_TEMPLATE = fs.readFileSync(
   "utf-8",
 );
 
+function rewriteSpriteUrl(content) {
+  return content.replace(
+    /https:\/\/italia.github.io\/bootstrap-italia\/dist\/svg\/sprites.svg/g,
+    "/dist/svg/sprites.svg",
+  );
+}
+
 function generateExamples(context) {
   const jsonFiles = searchInDir(SEARCH_DIR, ".json");
   for (const jsonFile of jsonFiles) {
@@ -31,7 +38,7 @@ function generateExamples(context) {
       fs.writeFileSync(
         filePath,
         Mustache.render(HTML_TEMPLATE, {
-          code: example.content,
+          code: rewriteSpriteUrl(example.content),
           name: example.name,
           bsiversion: bsiData.version,
         }),

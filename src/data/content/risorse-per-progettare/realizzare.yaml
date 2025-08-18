@@ -25,7 +25,7 @@ metadata:
 # ————————————————————————————————————————————
 seo:
   name: Realizzare - Designers Italia #C REMIND "- Designers Italia" #AUTO
-  description: "Realizza l'interfaccia utente: costruisci e sviluppa il touchpoint digitale di un servizio." #C
+  description: "Realizza l'interfaccia utente: costruisci e sviluppa il touchpoint digitale di un servizio usando il design system .italia." #C
   image: null #I
   canonical: null
   pathname: /risorse-per-progettare/realizzare/ #M
@@ -73,7 +73,7 @@ components:
   hero:
     background: light
     title: Realizzare #C
-    subtitle: "Realizza l'interfaccia utente: costruisci e sviluppa il touchpoint digitale del servizio" #C
+    subtitle: "Realizza l'interfaccia utente: costruisci e sviluppa il touchpoint digitale del servizio usando il design system .italia" #C
     tag:
         label: Fase di progettazione  #C
         addonClasses: mt-3 text-uppercase
@@ -83,7 +83,7 @@ components:
         size: sm
       text: In breve
     text: | #C
-      Con la fase di realizzazione **sviluppi l’interfaccia utente del servizio digitale**, soffermandoti sull’aspetto grafico e uno stile visivo coerente. I kit di questa fase ti aiutano a realizzare un prototipo ad alta fedeltà dell’interfaccia e ad abilitare il front-end tramite componenti, template e codice già validati.
+      Con la fase di realizzazione **implementi l’interfaccia utente del servizio digitale**, soffermandoti su aspetti di coerenza, contenuti e accessibilità dell'esperienza. I kit di questa fase ti aiutano a realizzare prototipi ad alta fedeltà dell’interfaccia e a sviluppare la parte di front-end tramite indicazioni, componenti e codice già validati.
     img: /images/risorse-per-progettare/icons/realizzare-large.svg #I
     alt: "" #C
     imgRatio: 4x3
@@ -98,7 +98,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Interfaccia utente,Sviluppo interfaccia,Esperienza utente]
+      tags: [Design system,Interfaccia utente,Sviluppo interfaccia,Esperienza utente]
 
       # KANGAROO: CHILDREN SHORTCUTS
       dropdown:
@@ -190,16 +190,34 @@ components:
       centered: true
       # noSpace: true
       text: | #C
-        Ottimizza il design di siti e servizi in modo efficace
+        Facilita il design e lo sviluppo di siti e servizi in modo efficace usando le risorse del design system .italia
       components:
 
         # TXT BLOCK
         - name: TextImageCta
-          title: Uno stile visivo coerente #C
+          title: Un'esperienza coerente e inclusiva   #C
           text: | #C
-            In questa fase di progettazione, il focus è sulla costruzione del touchpoint digitale attraverso il quale l’utente interagisce con il servizio pubblico. Bisogna letteralmente comporre i blocchi dell’interfaccia utente dal punto di vista grafico, testare e sviluppare il cosiddetto ‘front-end’ del servizio.
+            In questa fase di progettazione, il focus è sulla costruzione del touchpoint digitale attraverso il quale l’utente interagisce con il servizio pubblico. Bisogna letteralmente comporre i blocchi dell’interfaccia utente dal punto di vista grafico, testare e sviluppare il cosiddetto codice ‘front-end’ del servizio. 
 
-            Combinando tipografia, colori, bottoni, icone ed elementi visivi, è possibile sviluppare un’interfaccia accessibile e intuitiva, in grado di guidare visivamente l’utente a raggiungere il proprio obiettivo. Mantenere uno stile visivo coerente aiuta a fornire agli utenti un’esperienza coerente tra le varie amministrazioni. Gli utenti, infatti utilizzano con più efficacia e facilità i percorsi che hanno già imparato a riconoscere.
+            Combinando regole di tipografia, colori, pulsanti, icone e componenti, è possibile realizzare un’interfaccia accessibile e intuitiva, in grado di guidare l’utente a raggiungere il proprio obiettivo. Mantenere uno stile visivo coerente aiuta, inoltre, a fornire alle persone un’esperienza coerente tra le varie pubbliche amministrazioni. Le persone, infatti utilizzano con più efficacia e facilità i percorsi che hanno già imparato a riconoscere.
 
-            Le risorse di questa fase di progettazione, realizzate seguendo le Linee Guida di design per i servizi digitali della Pubblica Amministrazione, forniscono gli strumenti operativi per sviluppare l’interfaccia di un touchpoint digitale. Ci sono a disposizione librerie, template, modelli, componenti e codice open source di sviluppo, che possono poi essere messi a riuso, alimentando le fondamenta del Design System del Paese.
+            Le risorse di questa fase di progettazione, realizzate seguendo le Linee Guida di design per i siti internet e i servizi digitali della Pubblica Amministrazione, forniscono gli strumenti operativi per sviluppare l’interfaccia di un touchpoint digitale. Ci sono a disposizione librerie, template, modelli, componenti e codice open source di sviluppo, che possono poi essere messi a riuso, alimentando le fondamenta del design system .italia.
 
+        # TXT BLOCK
+        - name: TextImageCta
+          title: Design system .italia   #C
+          text: | #C
+            Il sito Designers Italia ospita infatti la documentazione del design system del Paese: l'ecosistema di risorse già pronte per il design e lo sviluppo di interfacce semplici e accessibili, a cui fanno riferimento le attività proposte nei kit di questa fase. 
+
+            Design system .italia è il primo design system italiano dedicato al mondo delle pubbliche amministrazioni e dei loro fornitori, la base delle interfacce digitali dei servizi pubblici italiani.
+          ctas:
+          - label: Vai al design system  #C
+            url: "/design-system/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2

@@ -31,7 +31,7 @@ components:
     background: null
     title: Tono di voce
     column: true
-    subtitle: "Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. In questo fondamento trovi le indicazioni per dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti."
+    subtitle: "Una Pubblica Amministrazione che mette le persone al centro sa parlare con una voce semplice, chiara ed empatica. Scopri come dare al tuo sito o servizio pubblico digitale un’identità verbale coerente e modularne il tono in base alle emozioni degli utenti."
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -69,7 +69,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -118,20 +118,27 @@ components:
       background: null
       components:
         - name: TextImageCta
-          title: Parla il linguaggio delle istituzioni in modo semplice
+          title: Usa il tono delle istituzioni in modo appropriato
           headingLevel: 2
 
+        #1
+        - name: TextImageCta
+          title: Sii autorevole senza aggiungere complessità
+          noSpace: true
+          text: |
+            **Usa un tono istituzionale**, diretto e adatto a un contesto amministrativo, ma **senza abusare di termini burocratici non necessari**. Anche quando ti riferisci a norme e prescrizioni, abbi cura di citarle con precisione pur parlando in modo chiaro, con un lessico corretto ma semplice.
+
         - name: Table
-          title: Usa in modo appropriato il linguaggio
+          noSpace: true
           responsive: table-responsive-md
-          addonClasses: fixed
+          addonClasses: fixed mb-5
           head:
             - tag:
                 label: VA BENE
-                addonClasses: bg-primary fw-bold
+                addonClasses: bg-success fw-bold
             - tag:
                 label: NON VA BENE
-                addonClasses: bg-warning fw-bold
+                addonClasses: bg-danger fw-bold
           rows:
             - cols:
               - text: |
@@ -143,21 +150,24 @@ components:
               - text: |
                   Tono informale: "Informazioni sbagliate nella tua scheda anagrafica? Falle correggere con la richiesta di rettifica."
 
+        #2
         - name: TextImageCta
+          title: Rivolgiti a chi legge con il "tu"
+          noSpace: true
           text: |
-            **Usa in modo appropriato il linguaggio delle istituzioni**, senza abusare di termini burocratici non necessari. Anche quando ti riferisci a norme e prescrizioni, abbi cura di citarle con precisione pur parlando in modo chiaro, con un lessico corretto ma semplice.
+            **Parla all'interlocutore in modo diretto usando il "tu”**, evitando tanto il "lei" e i formalismi quanto la forma impersonale, perché complicano la costruzione del testo.
 
         - name: Table
-          title: Rivolgiti a chi legge con il "tu"
+          noSpace: true
           responsive: table-responsive-md
-          addonClasses: fixed
+          addonClasses: fixed mb-5
           head:
             - tag:
                 label: VA BENE
-                addonClasses: bg-primary fw-bold
+                addonClasses: bg-success fw-bold
             - tag:
                 label: NON VA BENE
-                addonClasses: bg-warning fw-bold
+                addonClasses: bg-danger fw-bold
           rows:
             - cols:
               - text: |
@@ -165,22 +175,24 @@ components:
               - text: |
                   Tono impersonale: "Conformemente alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design forniscono indicazioni che devono essere obbligatoriamente rispettate per la realizzazione di siti internet e servizi digitali della PA, quelle opzionali e quelle per cui si rende necessaria un’attenta valutazione."
 
+        #3
         - name: TextImageCta
+          title: Rispetta le differenze
+          noSpace: true
           text: |
-            **Rivolgiti a chi legge con il “tu”**, evitando tanto il "lei" e i formalismi quanto la forma impersonale, perché complicano la costruzione del testo.
-
-
+            **Non rafforzare stereotipi** di genere, razzisti, abilisti o legati all'età.
+            
         - name: Table
-          title:  Rispetta le differenze
+          noSpace: true
           responsive: table-responsive-md
-          addonClasses: fixed
+          addonClasses: fixed mb-5
           head:
             - tag:
                 label: VA BENE
-                addonClasses: bg-primary fw-bold
+                addonClasses: bg-success fw-bold
             - tag:
                 label: NON VA BENE
-                addonClasses: bg-warning fw-bold
+                addonClasses: bg-danger fw-bold
           rows:
             - cols:
               - text: “La documentazione ufficiale che ti guida nella progettazione per la PA, mettendo le persone al centro.”
@@ -189,9 +201,6 @@ components:
               - text: “La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici.”
               - text: “La norma a cui riferirti per favorire e semplificare l'accesso dei disabili agli strumenti informatici.”
 
-        - name: TextImageCta
-          text: |
-            **Abbi cura di non rafforzare stereotipi** di genere, razzisti o abilisti e di non discriminare in base all'età.
 
     - full: true
       noSpace: false
@@ -210,33 +219,53 @@ components:
           responsive: table-responsive-md
           addonClasses:
           head:
-            - text: Tono
-            - text: Attitudine
-            - text: Bisogno / Emozioni dell'utente
+            - text: Situazione
+            - text: Emozioni dell'utente
+            - text: Tono appropriato
             - text: Esempio
           rows:
             - cols:
-              - text: Motivante
-              - text: Positiva e incoraggiante
-              - text: Situazione positiva (es. fine di una richiesta)
-              - text: Richiesta effettuata!
+              - text: Fine di una richiesta
+              - text: Sollievo, bisogno di conferma
+              - text: Motivante, positivo, incoraggiante
+              - text: "Richiesta inviata! Riceverai un’email di conferma con tutti i dettagli. Puoi seguire lo stato della tua pratica nella tua area personale."
             - cols:
-              - text: Disponibile
-              - text: Gentile e rispettoso
-              - text: Situazione neutra/negativa (es. multa da pagare)
-              - text: In questa pagina trovi tutte le informazioni per pagare la multa.
+              - text: Assistenza o richiesta informazioni
+              - text: Smarrimento, bisogno di supporto, urgenza
+              - text: Empatico, disponibile
+              - text: "Consulta le domande frequenti o contatta un operatore."
             - cols:
-              - text: Istruttivo
-              - text: Neutro e diretto
-              - text: Situazione neutra (es. informazioni su TARI)
-              - text: Ecco tutte le informazioni di cui potresti avere bisogno.
+              - text: Prenotazione appuntamento
+              - text: Impazienza, bisogno di controllo, desiderio di efficienza
+              - text: Cortese, orientato al servizio
+              - text: "Scegli data e orario tra quelli disponibili."
             - cols:
-              - text: Rassicurante
-              - text: Professionale e affidabile
-              - text: Situazione negativa (es. pagamento non andato a buon fine)
-              - text: Il pagamento non è andato a buon fine. Riprova o contatta la tua banca per chiarimenti.
+              - text: Pagamento di una multa
+              - text: Fastidio, frustrazione, urgenza
+              - text: Chiaro, diretto, non colpevolizzante
+              - text: "Hai ricevuto una multa? Puoi pagarla online in modo semplice e sicuro."
             - cols:
-              - text: Di supporto
-              - text: Solidale ed empatico
-              - text: Situazione negativa (es. richiesta certificato di morte)
-              - text: Ci dispiace per l’accaduto. Siamo a tua disposizione per informarti, guidarti e supportarti nella richiesta.
+              - text: Promemoria delle scadenze
+              - text: Preoccupazione, ansia
+              - text: Conciso, istruttivo, orientato all’azione
+              - text: "Il pagamento della TARI scade il 15 aprile."
+            - cols:
+              - text: Registrazione per accedere a un servizio
+              - text: Diffidenza, paura per la privacy, incertezza sulla sicurezza
+              - text: Trasparente, rassicurante, affidabile
+              - text: "Ti chiediamo alcune informazioni personali per offrirti un servizio su misura e verificare che tu ne abbia diritto. Usiamo solo canali protetti e non condivideremo mai i tuoi dati con terzi senza il tuo consenso."
+            - cols:
+              - text: Recupero password
+              - text: Frustrazione, paura di non riuscire ad accedere, senso di colpa o confusione
+              - text: Empatico, rassicurante, semplice
+              - text: "Hai dimenticato la password? Puoi recuperarla in pochi semplici passaggi." 
+            - cols:
+              - text: Pagamento non andato a buon fine
+              - text: Frustrazione, confusione, ansia di dover rifare tutto, paura di doppio addebito
+              - text: Rassicurante, professionale, proattivo
+              - text: "Il pagamento non è andato a buon fine e non ti è stato addebitato alcun importo. Puoi riprovare subito oppure, se preferisci, salvare i tuoi dati e completare il pagamento più tardi."  
+            - cols:
+              - text: Denuncia di un decesso
+              - text: Dolore, disorientamento, bisogno di assistenza
+              - text: Di supporto, solidale, empatico
+              - text: "Ci dispiace per l’accaduto. Siamo a tua disposizione per informarti, guidarti e supportarti nella procedura."
