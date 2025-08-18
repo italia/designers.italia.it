@@ -1,19 +1,31 @@
 exports.shouldUpdateScroll = ({ 
-  routerProps: { location }, 
+  routerProps: { location, action }, 
   getSavedScrollPosition 
 }) => {
-  // If there's a hash, let Gatsby handle it (scroll to element)
+  // If there's a hash, let Gatsby handle scrolling to the element
   if (location.hash) {
     return true;
   }
-  // For back/forward navigation, restore saved scroll position
-  const savedPosition = getSavedScrollPosition(location);
-  if (savedPosition) {
-    window.scrollTo(...savedPosition);
-    return false;
+  
+  // Check if this is back/forward navigation using history action
+  if (action === 'POP') {
+    const savedPosition = getSavedScrollPosition(location);
+    if (savedPosition) {
+      setTimeout(() => {
+        window.scrollTo(...savedPosition);
+      }, 0);
+      return false;
+    }
+    return true;
   }
-  // For new navigation (menu clicks, direct links), scroll to top
-  window.scrollTo(0, 0);
-  document.scrollingElement.scrollTop = 0;
+  
+  // For PUSH/REPLACE navigation (menu clicks, direct navigation)
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+    if (document.scrollingElement) {
+      document.scrollingElement.scrollTop = 0;
+    }
+  }, 0);
+  
   return false;
 };
