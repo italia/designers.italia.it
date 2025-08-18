@@ -199,8 +199,12 @@ function NavSidebar({
             <Icon {...ICON_CHEVRON_RIGHT} />
             {toggleLabel}
           </button>
-          <div className="navbar-collapsable" id={id} ref={navCollRef}>
-            <div className="overlay" />
+          <div
+            className="navbar-collapsable"
+            id={id}
+            ref={navCollRef}
+            tabIndex="-1"
+          >
             <div className="menu-wrapper">
               <button
                 className="it-back-button btn w-100 text-start rounded-0"
