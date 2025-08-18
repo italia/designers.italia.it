@@ -331,6 +331,8 @@ exports.onCreatePage = async ({ page, actions, getNodesByType }) => {
       pageKey = "design-system";
     } else if (page.path.includes("/community/")) {
       pageKey = "community";
+    } else if (page.path.includes("/normativa/")) {
+      pageKey = "normativa";
     }
 
     const pageConfig = editorialData.highlightedCards?.find(
