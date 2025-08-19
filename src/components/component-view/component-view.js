@@ -29,6 +29,7 @@ function ComponentView({
   let contentTrimmed = content?.trim();
 
   if (componentViewerData?.variants) {
+    // it is not a Componenti page, but a Fondamenti with one or more viewers...
     contentTrimmed = componentViewerData.variants
       .filter((item) => item.name === variantName)[0]
       ?.content?.trim();
@@ -71,6 +72,7 @@ function ComponentView({
       iframe.contentWindow.document.getElementsByClassName("bd-example")[0];
     if (!exampleContainer) return;
     if (viewerHeight === 0 || !viewerHeight) {
+      // auto height
       if (!minHeight) {
         iframe.classList.add("min-default-height");
       } else {
@@ -90,6 +92,7 @@ function ComponentView({
         }, 50);
       });
     } else if (viewerHeight > 0) {
+      // fixed widt
       iframe.height = viewerHeight + 50;
       exampleContainer.classList.add("h-100");
     }
@@ -125,7 +128,7 @@ function ComponentView({
   const [previewWidth, setPreviewWidth] = useState(" viewer-full");
   const changeResolution = (e) => {
     e.preventDefault();
-    const res = e.target.textContent;
+    const res = e.target.textContent; // mobile, tablet, full
     setPreviewWidth(` viewer-${res}`);
   };
 
@@ -238,7 +241,7 @@ function ComponentView({
                 )}
                 {accordionUrl && (
                   <a
-                    href={BSIExampleUrl}
+                    href={accordionUrl}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={accordionSrLabel}
