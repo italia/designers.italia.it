@@ -2,7 +2,6 @@ import classNames from "classnames";
 import React, { useState, useEffect } from "react";
 import slugify from "slugify";
 
-import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import loadable from "@loadable/component";
 import { Notification } from "bootstrap-italia";
 import Button from "../button/button";
@@ -30,7 +29,6 @@ function ComponentView({
   let contentTrimmed = content?.trim();
 
   if (componentViewerData?.variants) {
-    // it is not a Componenti page, but a Fondamenti with one or more viewers...
     contentTrimmed = componentViewerData.variants
       .filter((item) => item.name === variantName)[0]
       ?.content?.trim();
@@ -73,7 +71,6 @@ function ComponentView({
       iframe.contentWindow.document.getElementsByClassName("bd-example")[0];
     if (!exampleContainer) return;
     if (viewerHeight === 0 || !viewerHeight) {
-      // auto height
       if (!minHeight) {
         iframe.classList.add("min-default-height");
       } else {
@@ -93,7 +90,6 @@ function ComponentView({
         }, 50);
       });
     } else if (viewerHeight > 0) {
-      // fixed width
       iframe.height = viewerHeight + 50;
       exampleContainer.classList.add("h-100");
     }
@@ -106,8 +102,6 @@ function ComponentView({
     iframe.addEventListener("load", initAutoHeight);
     iframe.addEventListener("transitionend", initAutoHeight);
   });
-
-  const theme = a11yDark;
 
   const copyToClipboard = (e, code) => {
     e.preventDefault();
@@ -122,7 +116,6 @@ function ComponentView({
   };
 
   const id = slugify(variantName, { lower: true, strict: true });
-
   const uuid = `${idPrefix}-component-view-id_${id}`;
   const accId = `${uuid}-accordion`;
   const headId = `${uuid}-heading`;
@@ -132,7 +125,7 @@ function ComponentView({
   const [previewWidth, setPreviewWidth] = useState(" viewer-full");
   const changeResolution = (e) => {
     e.preventDefault();
-    const res = e.target.textContent; // mobile, tablet, full
+    const res = e.target.textContent;
     setPreviewWidth(` viewer-${res}`);
   };
 
@@ -245,7 +238,7 @@ function ComponentView({
                 )}
                 {accordionUrl && (
                   <a
-                    href={accordionUrl}
+                    href={BSIExampleUrl}
                     target="_blank"
                     rel="noreferrer"
                     aria-label={accordionSrLabel}
@@ -264,7 +257,7 @@ function ComponentView({
               role="region"
               aria-labelledby={headId}
             >
-              <div className="accordion-body p-0 position-relative">
+              <div className="accordion-body syntax-highlight-scope p-0 position-relative">
                 <div
                   aria-hidden="true"
                   className="position-absolute end-0 split-code-checkbox"
@@ -279,10 +272,10 @@ function ComponentView({
                     />
                   )}
                 </div>
+                
                 {contentTrimmed && (
                   <SyntaxHighlighter
                     language="markup"
-                    style={theme}
                     showLineNumbers
                     wrapLines={wrappedCode}
                     lineProps={{
