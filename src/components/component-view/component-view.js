@@ -92,7 +92,7 @@ function ComponentView({
         }, 50);
       });
     } else if (viewerHeight > 0) {
-      // fixed widt
+      // fixed width
       iframe.height = viewerHeight + 50;
       exampleContainer.classList.add("h-100");
     }
