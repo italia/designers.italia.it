@@ -272,7 +272,7 @@ function ComponentView({
                     />
                   )}
                 </div>
-                
+
                 {contentTrimmed && (
                   <SyntaxHighlighter
                     language="markup"
