@@ -253,7 +253,7 @@ components:
           - label: Sito demo desktop - modello ASL #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Naviga un esempio completo di sito ASL in versione desktop #C
+            text: Naviga un esempio completo di sito ASL in versione desktop. #C
             url: https://www.figma.com/proto/wsLgwYpYrd9yS9Tqx0Wkjp/ASL---Modello-sito?node-id=2963-29111&starting-point-node-id=2963%3A29111&scaling=scale-down&mode=design&t=WQqEtf6esyW6n73Q-1 #M
             blank: true
             actions:
@@ -264,7 +264,7 @@ components:
           - label: Sito demo mobile - modello ASL #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Naviga un esempio completo di sito ASL in versione mobile #C
+            text: Naviga un esempio completo di sito ASL in versione mobile. #C
             url: https://www.figma.com/proto/wsLgwYpYrd9yS9Tqx0Wkjp/ASL---Modello-sito?page-id=856%3A106452&type=design&node-id=1058-24948&viewport=-22%2C847%2C0.09&t=zMGDRi0eYmscDBZW-1&scaling=scale-down&starting-point-node-id=1058%3A24948&show-proto-sidebar=1&mode=design #M
             blank: true
             actions:
@@ -275,7 +275,7 @@ components:
           - label: Prototipi mobile dei principali scenari d'uso - modello ASL #C
             srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
             srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
-            text: Scopri le interazioni che caratterizzano i principali flussi di utilizzo del sito della ASL da parte degli utenti  #C
+            text: Scopri le interazioni che caratterizzano i principali flussi di utilizzo del sito della ASL da parte degli utenti.  #C
             url: https://www.figma.com/proto/wsLgwYpYrd9yS9Tqx0Wkjp/ASL---Modello-sito?type=design&node-id=3208-47773&t=eKr9BEN2co0uYTG9-1&scaling=contain&page-id=3208%3A47772&starting-point-node-id=3208%3A47773&mode=design #M
             blank: true
             actions:
@@ -303,4 +303,30 @@ components:
                 url: https://github.com/italia/design-asl-ui-kit/ #M
                 ariaLabel: "UI kit del modello ASL - Figma e Sketch su GitHub (si apre in una nuova finestra)" #C #COMPILE FOR EACH ITEM
                 blank: true
-   
+
+      - simpleList: true
+        title: Risorse di sviluppo #C
+        headingLevel: 3
+        listItems:
+          - label: Risorse di sviluppo - Design system #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre nella stessa finestra) # FOR SCREEN READER ARIA LABEL
+            text:  "Scopri gli strumenti per sviluppare interfacce, i vari framework e come utilizzarli: Bootstrap Italia, React, Angular e Design tokens." #C
+            url: "/design-system/come-iniziare/per-sviluppatori/" #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: "/design-system/come-iniziare/per-sviluppatori/" #M
+                ariaLabel: "Risorse di sviluppo - Design system" #C #COMPILE FOR EACH ITEM
+                blank: true
+          - label: Catalogo del software della PA (Catalogo del riuso) #C
+            srBefore:  #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text:  Sfoglia le soluzioni tecnologiche già adottate da altre amministrazioni. #C
+            url: https://developers.italia.it/it/search?type=all_catalogue&sort_by=release_date&search_value=asl&page=0 #M
+            blank: true
+            actions:
+              - icon: sprites.svg#it-external-link #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: https://developers.italia.it/it/search?type=all_catalogue&sort_by=release_date&search_value=asl&page=0 #M
+                ariaLabel: "Catalogo del software della PA (Catalogo del riuso)" #C #COMPILE FOR EACH ITEM
+                blank: true   
