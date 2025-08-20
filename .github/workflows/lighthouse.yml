@@ -57,6 +57,7 @@ jobs:
 
             let comment = [
                 `### ⚡ Lighthouse report for the home page 🏠`,
+                `**⚠️ Note: Performance scores are from development build and may not reflect production performance. Use [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https://designers.italia.it) for accurate performance metrics.**`,
                 '| Category | Score |',
                 '| --- | --: |',
                 `| ${score(home_page.summary.performance)} Performance | ${home_page.summary.performance} |`,
