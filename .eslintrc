@@ -168,5 +168,19 @@
     // Disabled until all the occurrences are fixed in the code
     "react/jsx-props-no-spreading": "off",
     "react/no-array-index-key": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["gatsby-*.js"],
+      "rules": {
+        "import/prefer-default-export": "off"
+      }
+    },
+    {
+      "files": ["src/components/media-player/**/*.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ]
 }

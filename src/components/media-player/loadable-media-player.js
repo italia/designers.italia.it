@@ -55,11 +55,8 @@ function MediaPlayerEl({
 
     const initializeVideoPlayer = async () => {
       try {
-        // Dynamic imports - only load when component mounts
-        const [{ VideoPlayer, AcceptOverlay }, videojsModule] =
-          await Promise.all([import("bootstrap-italia"), import("video.js")]);
-
-        const videojs = videojsModule.default;
+        // Dynamic import Bootstrap Italia - this loads videojs globally
+        const { VideoPlayer, AcceptOverlay } = await import("bootstrap-italia");
 
         const videoElement = document.getElementById(videoId);
         const acceptElement = document.getElementById(
@@ -77,19 +74,21 @@ function MediaPlayerEl({
         const video = new VideoPlayer(videoElement);
         playerRef.current = video;
 
-        const ButtonComp = videojs.getComponent("Button");
-        const privacyPolicyButton = new ButtonComp(video.player, {
-          clickHandler() {
-            window.location.replace("/privacy-policy/#gestione-cookie");
-          },
-        });
+        if (typeof videojs !== "undefined") {
+          const ButtonComp = videojs.getComponent("Button");
+          const privacyPolicyButton = new ButtonComp(video.player, {
+            clickHandler() {
+              window.location.replace("/privacy-policy/#gestione-cookie");
+            },
+          });
 
-        video.player.controlBar.addChild(privacyPolicyButton, {}, 1);
-        privacyPolicyButton.el_.innerHTML =
-          '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
+          video.player.controlBar.addChild(privacyPolicyButton, {}, 1);
+          privacyPolicyButton.el_.innerHTML =
+            '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
 
-        video.player.controlBar.removeChild("SkipBackward");
-        video.player.controlBar.removeChild("SkipForward");
+          video.player.controlBar.removeChild("SkipBackward");
+          video.player.controlBar.removeChild("SkipForward");
+        }
 
         if (subtitles) {
           video.player.addRemoteTextTrack({
@@ -129,6 +128,7 @@ function MediaPlayerEl({
 
     initializeVideoPlayer();
 
+    // Cleanup on unmount
     return cleanup;
   }, [videoId, url, subtitles]);
 
