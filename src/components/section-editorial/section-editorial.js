@@ -31,7 +31,9 @@ function SectionEditorial({
   id,
   componentViewerData,
 }) {
-  const hasMediaPlayer = components?.some(item => item.name === 'MediaPlayer');
+  const hasMediaPlayer = components?.some(
+    (item) => item.name === "MediaPlayer",
+  );
   const SwitchComponents = {
     Highlight,
     Card,
@@ -44,7 +46,7 @@ function SectionEditorial({
     ImageIcons,
     Table,
     ComponentView,
-    ...(hasMediaPlayer && { MediaPlayer: ConditionalMediaPlayer })
+    ...(hasMediaPlayer && { MediaPlayer: ConditionalMediaPlayer }),
   };
 
   // heading level

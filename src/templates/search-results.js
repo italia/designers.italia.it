@@ -20,7 +20,7 @@ import HeaderData from "../data/header.yaml";
 import FooterData from "../data/footer.yaml";
 import skipLinksData from "../data/skiplinks.yaml";
 
-import SearchMain from "../components/search-main/search-main";
+import ConditionalSearch from "../components/conditional-search/conditional-search";
 
 function Template({ Pagedata, pageContext, location, lastModified }) {
   return (
@@ -43,7 +43,10 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
           />
         )}
         {Pagedata.components.searchMain && (
-          <SearchMain {...Pagedata.components.searchMain} location={location} />
+          <ConditionalSearch
+            {...Pagedata.components.searchMain}
+            location={location}
+          />
         )}
         {lastModified && (
           <LastUpdate

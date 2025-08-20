@@ -20,10 +20,12 @@ function SectionMedia({
   noSpace,
   id,
 }) {
-  const hasMediaPlayer = components?.some(item => item.name === 'MediaPlayer');
+  const hasMediaPlayer = components?.some(
+    (item) => item.name === "MediaPlayer",
+  );
   const SwitchComponents = {
     CookieRemove,
-    ...(hasMediaPlayer && { MediaPlayer: ConditionalMediaPlayer })
+    ...(hasMediaPlayer && { MediaPlayer: ConditionalMediaPlayer }),
   };
 
   // heading level
