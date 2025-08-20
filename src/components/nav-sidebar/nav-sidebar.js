@@ -104,6 +104,7 @@ function NavSidebar({
               data-bs-toggle="collapse"
               aria-expanded={expandSublinks}
               aria-controls={`collapseNav-${index}`}
+              aria-label={item.label}
             >
               <span className="list-item-title-icon-wrapper list-item-title-icon-wrapper d-flex justify-content-between align-items-center">
                 <span>{item.label}</span>

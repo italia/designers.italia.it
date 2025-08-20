@@ -50,7 +50,7 @@ const TRANSLATE_STATUS = {
 
 function replaceValuesInTable(rows, component, missingLabel = "Da verificare") {
   // Find cols with text, then change the tag with component value
-  Object.keys(JSON_TO_COLS).forEach(function (key) {
+  Object.keys(JSON_TO_COLS).forEach((key) => {
     // Get the updated value, if not present skip the search troughout columns
     let finalValue = component[key];
     if (finalValue === undefined) {
