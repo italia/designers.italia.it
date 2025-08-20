@@ -4,10 +4,7 @@ import Button from "../button/button";
 import CookieRemove from "../cookieremove/cookieremove";
 import "./section-media.scss";
 
-// Define the lazy component outside the component
 const LazyMediaPlayer = lazy(() => import("../media-player/media-player"));
-
-// Define the wrapper component outside render
 function MediaPlayerWithSuspense(props) {
   return (
     <Suspense fallback={<div>Loading media player...</div>}>
@@ -15,6 +12,7 @@ function MediaPlayerWithSuspense(props) {
     </Suspense>
   );
 }
+
 function SectionMedia({
   title,
   hiddenSectionTitle,
