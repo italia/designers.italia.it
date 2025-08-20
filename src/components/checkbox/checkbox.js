@@ -9,14 +9,21 @@ function Checkbox(props) {
   const { id, label, checked, customStyle, handleChange } = props;
   const defaultChecked = checked || false;
   const [isChecked, setIsChecked] = useState(defaultChecked);
-  const onClickEvent = (e) => {
-    e.preventDefault();
-    setIsChecked(!isChecked);
-    handleChange(!isChecked);
+
+  const onChangeEvent = (e) => {
+    const newChecked = e.target.checked;
+    setIsChecked(newChecked);
+    handleChange(newChecked);
   };
+
   return (
-    <div className={`form-check ${customStyle}`} onClick={onClickEvent}>
-      <input id={id} type="checkbox" checked={isChecked} onChange={() => {}} />
+    <div className={`form-check ${customStyle}`}>
+      <input
+        id={id}
+        type="checkbox"
+        checked={isChecked}
+        onChange={onChangeEvent}
+      />
       <label htmlFor={id}>{label}</label>
     </div>
   );
