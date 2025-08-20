@@ -1,7 +1,7 @@
+import { Suspense, lazy } from "react";
 import classNames from "classnames";
 import Button from "../button/button";
 import CookieRemove from "../cookieremove/cookieremove";
-import MediaPlayer from "../media-player/media-player";
 import "./section-media.scss";
 
 function SectionMedia({
@@ -20,9 +20,23 @@ function SectionMedia({
   noSpace,
   id,
 }) {
+  // Check if any component needs MediaPlayer
+  const hasMediaPlayer = components?.some(item => item.name === 'MediaPlayer');
+
+  // Dynamically import only if needed
+  const MediaPlayer = hasMediaPlayer
+    ? lazy(() => import("../media-player/media-player"))
+    : null;
+
   const SwitchComponents = {
     CookieRemove,
-    MediaPlayer,
+    ...(MediaPlayer && {
+      MediaPlayer: (props) => (
+        <Suspense fallback={<div>Loading media player...</div>}>
+          <MediaPlayer {...props} />
+        </Suspense>
+      )
+    }),
   };
 
   // heading level
