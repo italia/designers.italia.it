@@ -1,17 +1,8 @@
-import { Suspense, lazy } from "react";
 import classNames from "classnames";
 import Button from "../button/button";
 import CookieRemove from "../cookieremove/cookieremove";
+import ConditionalMediaPlayer from "../conditional-media-player/conditional-media-player";
 import "./section-media.scss";
-
-const LazyMediaPlayer = lazy(() => import("../media-player/media-player"));
-function MediaPlayerWithSuspense(props) {
-  return (
-    <Suspense fallback={<div>Loading media player...</div>}>
-      <LazyMediaPlayer {...props} />
-    </Suspense>
-  );
-}
 
 function SectionMedia({
   title,
@@ -29,9 +20,10 @@ function SectionMedia({
   noSpace,
   id,
 }) {
+  const hasMediaPlayer = components?.some(item => item.name === 'MediaPlayer');
   const SwitchComponents = {
     CookieRemove,
-    MediaPlayer: MediaPlayerWithSuspense,
+    ...(hasMediaPlayer && { MediaPlayer: ConditionalMediaPlayer })
   };
 
   // heading level
