@@ -1,3 +1,4 @@
+import { Suspense, lazy } from "react";
 import classNames from "classnames";
 import ReactMarkdown from "react-markdown";
 import TextImageCta from "../text-image-cta/text-image-cta";
@@ -12,8 +13,16 @@ import Table from "../table/table";
 import Button from "../button/button";
 import ComponentView from "../component-view/component-view";
 import CookieRemove from "../cookieremove/cookieremove";
-import MediaPlayer from "../media-player/media-player";
 import "./section-editorial.scss";
+
+const LazyMediaPlayer = lazy(() => import("../media-player/media-player"));
+function MediaPlayerWithSuspense(props) {
+  return (
+    <Suspense fallback={<div>Loading media player...</div>}>
+      <LazyMediaPlayer {...props} />
+    </Suspense>
+  );
+}
 
 function SectionEditorial({
   title,
@@ -42,7 +51,7 @@ function SectionEditorial({
     ImgFull,
     ImageIcons,
     Table,
-    MediaPlayer,
+    MediaPlayer: MediaPlayerWithSuspense,
     ComponentView,
   };
 
