@@ -69,7 +69,7 @@ function MediaPlayerEl({
       '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
     video.player.controlBar.removeChild("SkipBackward");
     video.player.controlBar.removeChild("SkipForward");
-    if (subtitles)
+    if (subtitles) // note: all videos with voice/s must have subtitles! (a11y)
       video.player.addRemoteTextTrack({
         kind: "subtitles",
         label: "Italiano",
@@ -122,6 +122,7 @@ function MediaPlayerEl({
           </div>
         </div>
         <div>
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
           <video
             controls
             data-bs-video
