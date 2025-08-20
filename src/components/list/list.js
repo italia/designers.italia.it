@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
-
+import { forwardRef, useEffect, useState } from "react";
 import ListItem from "../list-item/list-item";
 import Link from "../link/link";
 import "./list.scss";
 
-const List = React.forwardRef(
+const List = forwardRef(
   (
     {
       isMenu, // is list inside nav menu: true or false

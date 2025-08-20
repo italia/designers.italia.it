@@ -1,9 +1,8 @@
-import "./nav-position.scss";
-import React from "react";
 import ReactMarkdown from "react-markdown";
 import Icon from "../icon/icon";
 import Link from "../link/link";
 import Tooltip from "../tooltip/tooltip";
+import "./nav-position.scss";
 
 function NavPosition({ items, footerVersion }) {
   const containerStyles =

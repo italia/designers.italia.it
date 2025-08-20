@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from "classnames";
 import ImageResponsive from "../image-responsive/image-responsive";
 import "./img-full.scss";

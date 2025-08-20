@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function Icon({
   icon, // url of icon 'sprites.svg#it-tool'
   size, // xs, sm, lg xl

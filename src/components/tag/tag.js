@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import * as React from "react";
 import Link from "../link/link";
 import "./tag.scss";
 

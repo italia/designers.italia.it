@@ -1,4 +1,3 @@
-import * as React from "react";
 import slugify from "slugify";
 import "./highlight.scss";
 import ReactMarkdown from "react-markdown";

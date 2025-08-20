@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import slugify from "slugify";
 
 import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";

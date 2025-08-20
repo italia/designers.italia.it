@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useRef } from "react";
+import { useCallback, useState, useRef } from "react";
 import ImageResponsive from "../../../image-responsive/image-responsive";
 import LabelTextArea from "../../../label-textarea/label-text-area";
 import Icon from "../../../icon/icon";

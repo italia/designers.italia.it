@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
 import { Input } from "bootstrap-italia";
 
 function LabelTextArea(props) {

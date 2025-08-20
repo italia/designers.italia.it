@@ -1,6 +1,4 @@
-import * as React from "react";
 import PropTypes from "prop-types";
-
 import Dropdown from "../dropdown/dropdown";
 
 function ShareButton({ title, url, color, small }) {

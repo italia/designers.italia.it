@@ -1,4 +1,3 @@
-import React from "react";
 import Icon from "../icon/icon";
 import Button from "../button/button";
 import Chip from "../chip/chip";

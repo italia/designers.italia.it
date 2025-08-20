@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-
+import { useEffect } from "react";
 import { BackToTop } from "bootstrap-italia";
 import Icon from "../icon/icon";
 

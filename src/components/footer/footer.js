@@ -1,4 +1,3 @@
-import React from "react";
 import FooterBrand from "../footer-brand/footer-brand";
 import FooterMain from "../footer-main/footer-main";
 import FooterSmall from "../footer-small/footer-small";

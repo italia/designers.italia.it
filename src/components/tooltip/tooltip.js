@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useEffect, useRef } from "react";
 import { Tooltip as BSITooltip } from "bootstrap-italia";
 import Icon from "../icon/icon";

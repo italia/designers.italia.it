@@ -1,5 +1,3 @@
-import React from "react";
-
 function InterestAside() {
   return (
     <aside className="py-5 analogue-2-bg">

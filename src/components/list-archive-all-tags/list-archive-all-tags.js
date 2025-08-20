@@ -1,12 +1,9 @@
-import * as React from "react";
-
-import "../../scss/styles.scss";
-import "../../js/globals";
-
 import { useStaticQuery, graphql } from "gatsby";
 import classNames from "classnames";
 import ListItem from "../list-item/list-item";
 import Chip from "../chip/chip";
+import "../../scss/styles.scss";
+import "../../js/globals";
 
 function ListArchiveAllTags({ background, noSpace }) {
   const data = useStaticQuery(graphql`

@@ -1,4 +1,3 @@
-import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import List from "../list/list";
 import ListItem from "../list-item/list-item";

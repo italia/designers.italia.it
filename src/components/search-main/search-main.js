@@ -1,8 +1,7 @@
 import classNames from "classnames";
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useStaticQuery, graphql, Link } from "gatsby";
 import { useFlexSearch } from "react-use-flexsearch";
-
 import Button from "../button/button";
 import Tag from "../tag/tag";
 import ListItem from "../list-item/list-item";

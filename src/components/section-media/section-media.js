@@ -1,9 +1,8 @@
 import classNames from "classnames";
-import * as React from "react";
-import "./section-media.scss";
 import Button from "../button/button";
 import CookieRemove from "../cookieremove/cookieremove";
 import MediaPlayer from "../media-player/media-player";
+import "./section-media.scss";
 
 function SectionMedia({
   title,

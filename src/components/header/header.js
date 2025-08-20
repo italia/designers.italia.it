@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-
+import { useEffect } from "react";
 import { HeaderSticky } from "bootstrap-italia";
 
 function Header({ data, children }) {

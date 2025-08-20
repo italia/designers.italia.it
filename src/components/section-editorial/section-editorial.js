@@ -1,6 +1,4 @@
 import classNames from "classnames";
-import * as React from "react";
-import "./section-editorial.scss";
 import ReactMarkdown from "react-markdown";
 import TextImageCta from "../text-image-cta/text-image-cta";
 import Numbers from "../numbers/numbers";
@@ -15,6 +13,7 @@ import Button from "../button/button";
 import ComponentView from "../component-view/component-view";
 import CookieRemove from "../cookieremove/cookieremove";
 import MediaPlayer from "../media-player/media-player";
+import "./section-editorial.scss";
 
 function SectionEditorial({
   title,
