@@ -36,7 +36,6 @@ function MediaPlayerEl({
     },
   };
 
-  // trascription label
   if (trascriptionLabel) messages.it.trascriptionLabel = trascriptionLabel;
   if (trascriptionLabelEN) messages.en.trascriptionLabel = trascriptionLabelEN;
 
@@ -53,19 +52,19 @@ function MediaPlayerEl({
   }
 
   useEffect(() => {
-    let cleanup = () => {};
+    let cleanup = () => { };
 
     const initializeVideoPlayer = async () => {
       try {
         // Dynamic imports - only load when component mounts
-        const [{ VideoPlayer, AcceptOverlay }] = await Promise.all([
-          import("bootstrap-italia"),
+        const [
+          { VideoPlayer, AcceptOverlay }
+        ] = await Promise.all([
+          import("bootstrap-italia")
         ]);
 
         const videoElement = document.getElementById(videoId);
-        const acceptElement = document.getElementById(
-          `${videoId}-accept-video`,
-        );
+        const acceptElement = document.getElementById(`${videoId}-accept-video`);
 
         if (!videoElement || !acceptElement) {
           return;
@@ -78,7 +77,7 @@ function MediaPlayerEl({
         const video = new VideoPlayer(videoElement);
         playerRef.current = video;
 
-        if (typeof videojs !== "undefined") {
+        if (typeof videojs !== 'undefined') {
           const ButtonComp = videojs.getComponent("Button");
           const privacyPolicyButton = new ButtonComp(video.player, {
             clickHandler() {
@@ -104,7 +103,7 @@ function MediaPlayerEl({
           });
         }
 
-        if (typeof window !== "undefined" && window.localStorage) {
+        if (typeof window !== 'undefined' && window.localStorage) {
           const cookieData = JSON.parse(localStorage.getItem("bs-ck3") || "{}");
           if (cookieData["youtube.com"]) {
             setTimeout(() => {
@@ -122,24 +121,31 @@ function MediaPlayerEl({
               acceptOverlay.dispose();
             }
           } catch (error) {
-            // Handle cleanup errors
+            // Silently handle cleanup errors
           }
         };
+
       } catch (error) {
-        // Handle initialization errors
+        // Silently handle initialization errors
       }
     };
 
     initializeVideoPlayer();
 
     return cleanup;
-  }, [videoId, url, subtitles]);
+  }, [videoId, url, subtitles]); 
 
   const handleAcceptVideo = () => {
     if (playerRef.current) {
       playerRef.current.setYouTubeVideo(url);
-      if (subtitles) {
-        playerRef.current.addTrack(subtitles);
+      if (subtitles && playerRef.current.player) {
+        playerRef.current.player.addRemoteTextTrack({
+          kind: "subtitles",
+          label: "Italiano",
+          srclang: "it",
+          default: true,
+          src: subtitles,
+        });
       }
     }
   };
