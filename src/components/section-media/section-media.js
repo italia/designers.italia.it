@@ -4,6 +4,17 @@ import Button from "../button/button";
 import CookieRemove from "../cookieremove/cookieremove";
 import "./section-media.scss";
 
+// Define the lazy component outside the component
+const LazyMediaPlayer = lazy(() => import("../media-player/media-player"));
+
+// Define the wrapper component outside render
+function MediaPlayerWithSuspense(props) {
+  return (
+    <Suspense fallback={<div>Loading media player...</div>}>
+      <LazyMediaPlayer {...props} />
+    </Suspense>
+  );
+}
 function SectionMedia({
   title,
   hiddenSectionTitle,
@@ -20,23 +31,9 @@ function SectionMedia({
   noSpace,
   id,
 }) {
-  // Check if any component needs MediaPlayer
-  const hasMediaPlayer = components?.some(item => item.name === 'MediaPlayer');
-
-  // Dynamically import only if needed
-  const MediaPlayer = hasMediaPlayer
-    ? lazy(() => import("../media-player/media-player"))
-    : null;
-
   const SwitchComponents = {
     CookieRemove,
-    ...(MediaPlayer && {
-      MediaPlayer: (props) => (
-        <Suspense fallback={<div>Loading media player...</div>}>
-          <MediaPlayer {...props} />
-        </Suspense>
-      )
-    }),
+    MediaPlayer: MediaPlayerWithSuspense,
   };
 
   // heading level
