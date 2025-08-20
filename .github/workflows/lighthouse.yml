@@ -16,7 +16,7 @@ jobs:
       - run: npm ci
       - run: npm run build:dev
 
-      - uses: treosh/lighthouse-ci-action@v9
+      - uses: treosh/lighthouse-ci-action@v12.6
         id: lighthouse_audit
         with:
           # Check sample pages from the main layouts, see "url" key in the config file.
