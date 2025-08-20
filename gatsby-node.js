@@ -189,23 +189,12 @@ exports.createPages = async ({ graphql, actions }) => {
   });
 };
 
-exports.onCreateWebpackConfig = ({ actions, stage, plugins }) => {
-  const isClientBuild = stage === 'build-javascript' || stage === 'develop';
-  
-  const config = {
+exports.onCreateWebpackConfig = ({ actions, plugins }) => {
+  actions.setWebpackConfig({
     plugins: [
       plugins.provide({
-        React: 'react',
-        ...(isClientBuild && { videojs: 'videojs' })
+        React: 'react'
       }),
     ],
-  };
-
-  if (isClientBuild) {
-    config.externals = {
-      'video.js': 'videojs'
-    };
-  }
-
-  actions.setWebpackConfig(config);
+  });
 };
