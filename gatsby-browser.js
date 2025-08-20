@@ -1,7 +1,5 @@
-// gatsby-browser.js
-import React from 'react';
-
 // Make React available globally for older third-party libraries
+import React from 'react';
 if (typeof window !== 'undefined') {
   window.React = React;
 }
