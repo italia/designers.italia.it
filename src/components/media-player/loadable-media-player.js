@@ -18,7 +18,7 @@ function MediaPlayerEl({
 }) {
   const videoRef = useRef(null);
   const playerRef = useRef(null);
-  
+
   const messages = {
     it: {
       rememberLabel: "Ricorda per tutti i video",
@@ -56,19 +56,16 @@ function MediaPlayerEl({
     const initializeVideoPlayer = async () => {
       try {
         // Dynamic imports - only load when component mounts
-        const [
-          { VideoPlayer, AcceptOverlay },
-          videojsModule
-        ] = await Promise.all([
-          import("bootstrap-italia"),
-          import("video.js")
-        ]);
+        const [{ VideoPlayer, AcceptOverlay }, videojsModule] =
+          await Promise.all([import("bootstrap-italia"), import("video.js")]);
 
         const videojs = videojsModule.default;
 
         const videoElement = document.getElementById(videoId);
-        const acceptElement = document.getElementById(`${videoId}-accept-video`);
-        
+        const acceptElement = document.getElementById(
+          `${videoId}-accept-video`,
+        );
+
         if (!videoElement || !acceptElement) {
           return;
         }
@@ -86,14 +83,14 @@ function MediaPlayerEl({
             window.location.replace("/privacy-policy/#gestione-cookie");
           },
         });
-        
+
         video.player.controlBar.addChild(privacyPolicyButton, {}, 1);
         privacyPolicyButton.el_.innerHTML =
           '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
-        
+
         video.player.controlBar.removeChild("SkipBackward");
         video.player.controlBar.removeChild("SkipForward");
-        
+
         if (subtitles) {
           video.player.addRemoteTextTrack({
             kind: "subtitles",
@@ -104,7 +101,7 @@ function MediaPlayerEl({
           });
         }
 
-        if (typeof window !== 'undefined' && window.localStorage) {
+        if (typeof window !== "undefined" && window.localStorage) {
           const cookieData = JSON.parse(localStorage.getItem("bs-ck3") || "{}");
           if (cookieData["youtube.com"]) {
             setTimeout(() => {
@@ -125,7 +122,6 @@ function MediaPlayerEl({
             // Silently handle cleanup errors
           }
         };
-
       } catch (error) {
         // Silently handle initialization errors
       }
@@ -134,7 +130,7 @@ function MediaPlayerEl({
     initializeVideoPlayer();
 
     return cleanup;
-  }, [videoId, url, subtitles]); 
+  }, [videoId, url, subtitles]);
 
   const handleAcceptVideo = () => {
     if (playerRef.current) {
