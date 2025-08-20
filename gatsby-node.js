@@ -196,5 +196,33 @@ exports.onCreateWebpackConfig = ({ actions, plugins }) => {
         React: "react",
       }),
     ],
+    optimization: {
+      splitChunks: {
+        chunks: "all",
+        cacheGroups: {
+          videojs: {
+            test: /[\\/]node_modules[\\/](video\.js|@videojs)[\\/]/,
+            name: "videojs-chunk",
+            chunks: "async",
+            priority: 30,
+            enforce: true,
+          },
+          flexsearch: {
+            test: /[\\/]node_modules[\\/]flexsearch[\\/]/,
+            name: "search-chunk",
+            chunks: "async",
+            priority: 30,
+            enforce: true,
+          },
+          commons: {
+            test: /[\\/]node_modules[\\/]/,
+            name: "commons",
+            chunks: "initial",
+            minChunks: 2,
+            priority: 5,
+          },
+        },
+      },
+    },
   });
 };
