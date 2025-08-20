@@ -192,12 +192,12 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateWebpackConfig = ({ actions }) => {
   actions.setWebpackConfig({
     externals: {
-      'video.js': 'videojs'
+      "video.js": "videojs",
     },
     plugins: [
-      new (require('webpack')).ProvidePlugin({
-        React: 'react',
-        videojs: 'videojs'
+      new (require("webpack").ProvidePlugin)({
+        React: "react",
+        videojs: "videojs",
       }),
     ],
   });

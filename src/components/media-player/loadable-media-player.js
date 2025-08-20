@@ -52,19 +52,19 @@ function MediaPlayerEl({
   }
 
   useEffect(() => {
-    let cleanup = () => { };
+    let cleanup = () => {};
 
     const initializeVideoPlayer = async () => {
       try {
         // Dynamic imports - only load when component mounts
-        const [
-          { VideoPlayer, AcceptOverlay }
-        ] = await Promise.all([
-          import("bootstrap-italia")
+        const [{ VideoPlayer, AcceptOverlay }] = await Promise.all([
+          import("bootstrap-italia"),
         ]);
 
         const videoElement = document.getElementById(videoId);
-        const acceptElement = document.getElementById(`${videoId}-accept-video`);
+        const acceptElement = document.getElementById(
+          `${videoId}-accept-video`,
+        );
 
         if (!videoElement || !acceptElement) {
           return;
@@ -77,7 +77,7 @@ function MediaPlayerEl({
         const video = new VideoPlayer(videoElement);
         playerRef.current = video;
 
-        if (typeof videojs !== 'undefined') {
+        if (typeof videojs !== "undefined") {
           const ButtonComp = videojs.getComponent("Button");
           const privacyPolicyButton = new ButtonComp(video.player, {
             clickHandler() {
@@ -103,7 +103,7 @@ function MediaPlayerEl({
           });
         }
 
-        if (typeof window !== 'undefined' && window.localStorage) {
+        if (typeof window !== "undefined" && window.localStorage) {
           const cookieData = JSON.parse(localStorage.getItem("bs-ck3") || "{}");
           if (cookieData["youtube.com"]) {
             setTimeout(() => {
@@ -124,7 +124,6 @@ function MediaPlayerEl({
             // Silently handle cleanup errors
           }
         };
-
       } catch (error) {
         // Silently handle initialization errors
       }
@@ -133,7 +132,7 @@ function MediaPlayerEl({
     initializeVideoPlayer();
 
     return cleanup;
-  }, [videoId, url, subtitles]); 
+  }, [videoId, url, subtitles]);
 
   const handleAcceptVideo = () => {
     if (playerRef.current) {
