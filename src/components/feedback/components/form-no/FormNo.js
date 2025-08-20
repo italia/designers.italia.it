@@ -305,7 +305,7 @@ function FormNo({ onResult, state }) {
                 rows="3"
                 maxLength="200"
                 value={details || ""}
-                onChange={(e) => setDetails(e.target.value)}
+                onChange={(e) => setDetails(e.value)}
               />
               <small id="helperText" className="form-control form-text">
                 Hai a disposizione 200 caratteri. Per favore non inserire dati
