@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "../button/button";
 
 export const isBrowser = () => typeof window !== "undefined";

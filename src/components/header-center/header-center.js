@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "../link/link";
 import Icon from "../icon/icon";
 import ImageResponsive from "../image-responsive/image-responsive";

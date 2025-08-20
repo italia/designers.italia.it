@@ -1,4 +1,3 @@
-import * as React from "react";
 import Button from "../button/button";
 import List from "../list/list";
 import "./dropdown.scss";

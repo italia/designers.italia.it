@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-
+import { useEffect, useState } from "react";
 import ListItem from "../list-item/list-item";
 import Link from "../link/link";
 import "./list.scss";

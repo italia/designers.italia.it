@@ -1,9 +1,7 @@
-import * as React from "react";
 import ReactMarkdown from "react-markdown";
 import List from "../list/list";
 import Icon from "../icon/icon";
 import Link from "../link/link";
-
 import ImageResponsive from "../image-responsive/image-responsive";
 
 function Megamenu({ left, heading, cols }) {

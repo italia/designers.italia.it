@@ -1,11 +1,8 @@
-import * as React from "react";
-
-import "../../scss/styles.scss";
-import "../../js/globals";
-
 import { useStaticQuery, graphql } from "gatsby";
 import classNames from "classnames";
 import Card from "../card/card";
+import "../../scss/styles.scss";
+import "../../js/globals";
 
 function ListArchiveMedia({ background, noSpace }) {
   const data = useStaticQuery(graphql`

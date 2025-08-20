@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import React from "react";
 import ImageResponsive from "../image-responsive/image-responsive";
 import Icon from "../icon/icon";
 import Link from "../link/link";

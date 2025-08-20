@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import React from "react";
 import ReactMarkdown from "react-markdown";
 import Tag from "../tag/tag";
 import SimpleCta from "../simple-cta/simple-cta";

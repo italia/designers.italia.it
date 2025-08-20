@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from "classnames";
 import Card from "../card/card";
 import ListArchiveDSTags from "../list-archive-ds-tags/list-archive-ds-tags";

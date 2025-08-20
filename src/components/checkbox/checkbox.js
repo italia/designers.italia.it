@@ -3,7 +3,7 @@ Create a checkbox functional component.
 Toggle the text of a paragraph with the checkbox using the 'useState' hook.
 */
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 function Checkbox(props) {
   const { id, label, checked, customStyle, handleChange } = props;

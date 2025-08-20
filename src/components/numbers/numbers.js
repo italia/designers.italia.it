@@ -1,6 +1,5 @@
-import React from "react";
-import "./numbers.scss";
 import Icon from "../icon/icon";
+import "./numbers.scss";
 
 function Numbers({ items, inline }) {
   const styles =

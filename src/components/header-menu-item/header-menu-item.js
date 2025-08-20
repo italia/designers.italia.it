@@ -1,5 +1,3 @@
-import * as React from "react";
-
 function HeaderMenuItem({ isDropDown, isMegaMenu, children }) {
   const styles =
     "nav-item" +

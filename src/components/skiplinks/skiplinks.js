@@ -1,5 +1,3 @@
-import React from "react";
-
 function Skiplinks({ data }) {
   const { skiplinks } = data;
   const { skiplinksLabel } = data;

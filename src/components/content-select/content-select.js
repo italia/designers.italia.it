@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { useState } from "react";
 import ContentSelectItem from "./components/content-select-item/content-select-item";
 import Icon from "../icon/icon";
 

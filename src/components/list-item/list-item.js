@@ -1,4 +1,3 @@
-import * as React from "react";
 import Icon from "../icon/icon";
 import Avatar from "../avatar/avatar";
 import Link from "../link/link";

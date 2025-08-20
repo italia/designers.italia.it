@@ -1,4 +1,3 @@
-import React from "react";
 import ImageResponsive from "../image-responsive/image-responsive";
 import Icon from "../icon/icon";
 import "./image-icons.scss";

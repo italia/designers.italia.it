@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import * as React from "react";
 import "./kangaroo.scss";
 import Icon from "../icon/icon";
 import Chip from "../chip/chip";
