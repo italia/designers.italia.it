@@ -1,6 +1,8 @@
+/* eslint-disable import/prefer-default-export */
 // Make React available globally for older third-party libraries
-import React from 'react';
-if (typeof window !== 'undefined') {
+import React from "react";
+
+if (typeof window !== "undefined") {
   window.React = React;
 }
 
