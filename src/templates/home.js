@@ -20,7 +20,7 @@ import FooterData from "../data/footer.yaml";
 import skipLinksData from "../data/skiplinks.yaml";
 
 import Highlight from "../components/highlight/highlight";
-import ConditionalSearch from "../components/conditional-search/conditional-search";
+import SearchMain from "../components/search-main/search-main";
 import ContentCollapse from "../components/content-collapse/content-collapse";
 import SectionIntro from "../components/section-intro/section-intro";
 import HighlightCards from "../components/highlight-cards/highlight-cards";
@@ -54,10 +54,7 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
           )}
         </Highlight>
         {Pagedata.components.searchMain && (
-          <ConditionalSearch
-            {...Pagedata.components.searchMain}
-            location={location}
-          />
+          <SearchMain {...Pagedata.components.searchMain} />
         )}
         {Pagedata.components.sectionIntro && (
           <SectionIntro {...Pagedata.components.sectionIntro} />

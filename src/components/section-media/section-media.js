@@ -1,7 +1,7 @@
 import classNames from "classnames";
+import Loadable from "@loadable/component";
 import Button from "../button/button";
 import CookieRemove from "../cookieremove/cookieremove";
-import ConditionalMediaPlayer from "../conditional-media-player/conditional-media-player";
 import "./section-media.scss";
 
 function SectionMedia({
@@ -20,12 +20,13 @@ function SectionMedia({
   noSpace,
   id,
 }) {
-  const hasMediaPlayer = components?.some(
-    (item) => item.name === "MediaPlayer",
+  const LoadableMediaPlayer = Loadable(() =>
+    import("../media-player/media-player"),
   );
+
   const SwitchComponents = {
     CookieRemove,
-    ...(hasMediaPlayer && { MediaPlayer: ConditionalMediaPlayer }),
+    MediaPlayer: LoadableMediaPlayer,
   };
 
   // heading level

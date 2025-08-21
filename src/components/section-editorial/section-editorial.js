@@ -12,7 +12,7 @@ import Table from "../table/table";
 import Button from "../button/button";
 import ComponentView from "../component-view/component-view";
 import CookieRemove from "../cookieremove/cookieremove";
-import ConditionalMediaPlayer from "../conditional-media-player/conditional-media-player";
+import MediaPlayer from "../media-player/media-player";
 import "./section-editorial.scss";
 
 function SectionEditorial({
@@ -31,9 +31,6 @@ function SectionEditorial({
   id,
   componentViewerData,
 }) {
-  const hasMediaPlayer = components?.some(
-    (item) => item.name === "MediaPlayer",
-  );
   const SwitchComponents = {
     Highlight,
     Card,
@@ -46,7 +43,7 @@ function SectionEditorial({
     ImageIcons,
     Table,
     ComponentView,
-    ...(hasMediaPlayer && { MediaPlayer: ConditionalMediaPlayer }),
+    MediaPlayer,
   };
 
   // heading level
