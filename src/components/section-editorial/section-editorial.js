@@ -12,7 +12,6 @@ import Table from "../table/table";
 import Button from "../button/button";
 import ComponentView from "../component-view/component-view";
 import CookieRemove from "../cookieremove/cookieremove";
-import MediaPlayer from "../media-player/media-player";
 import "./section-editorial.scss";
 
 function SectionEditorial({
@@ -31,6 +30,10 @@ function SectionEditorial({
   id,
   componentViewerData,
 }) {
+  const LoadableMediaPlayer = Loadable(() =>
+    import("../media-player/media-player"),
+  );
+
   const SwitchComponents = {
     Highlight,
     Card,
@@ -43,7 +46,7 @@ function SectionEditorial({
     ImageIcons,
     Table,
     ComponentView,
-    MediaPlayer,
+    MediaPlayer: LoadableMediaPlayer,
   };
 
   // heading level
