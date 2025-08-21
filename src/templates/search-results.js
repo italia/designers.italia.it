@@ -43,7 +43,7 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
           />
         )}
         {Pagedata.components.searchMain && (
-          <SearchMain {...Pagedata.components.searchMain} />
+          <SearchMain {...Pagedata.components.searchMain} location={location} />
         )}
         {lastModified && (
           <LastUpdate
