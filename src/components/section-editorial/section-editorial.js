@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import Loadable from "@loadable/component";
 import ReactMarkdown from "react-markdown";
 import TextImageCta from "../text-image-cta/text-image-cta";
 import Numbers from "../numbers/numbers";
