@@ -1,4 +1,4 @@
-# Guida Editor - Content Types Designers Italia
+# Guida Editor - Tipi di contenuto redazionali del sito Designers Italia
 
 ## Introduzione
 
