@@ -60,6 +60,7 @@ function Feedback() {
         }
       } catch (e) {
         setFeedbackState(FeedbackState.Error);
+        // eslint-disable-next-line no-console
         console.error(`Feedback request error: ${e}`);
 
         return false;
