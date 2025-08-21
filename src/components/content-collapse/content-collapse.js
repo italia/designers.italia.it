@@ -1,10 +1,7 @@
-import React, { useRef, useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
-
 import { Collapse } from "bootstrap-italia";
-
 import Icon from "../icon/icon";
-
 import "./content-collapse.scss";
 
 function ContentCollapse({ label, labelClose, children }) {

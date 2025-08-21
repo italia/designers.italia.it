@@ -1,4 +1,3 @@
-import React from "react";
 import ReactMarkdown from "react-markdown";
 import Icon from "../icon/icon";
 import Link from "../link/link";

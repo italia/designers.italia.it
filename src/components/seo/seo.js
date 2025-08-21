@@ -1,4 +1,3 @@
-import React from "react";
 import { SeoGetSiteMetadata } from "./seo-get-site-metadata";
 
 // eslint-disable-next-line import/prefer-default-export

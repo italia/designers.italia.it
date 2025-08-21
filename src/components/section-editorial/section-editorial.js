@@ -1,6 +1,5 @@
 import classNames from "classnames";
-import * as React from "react";
-import "./section-editorial.scss";
+import Loadable from "@loadable/component";
 import ReactMarkdown from "react-markdown";
 import TextImageCta from "../text-image-cta/text-image-cta";
 import Numbers from "../numbers/numbers";
@@ -14,7 +13,7 @@ import Table from "../table/table";
 import Button from "../button/button";
 import ComponentView from "../component-view/component-view";
 import CookieRemove from "../cookieremove/cookieremove";
-import MediaPlayer from "../media-player/media-player";
+import "./section-editorial.scss";
 
 function SectionEditorial({
   title,
@@ -32,6 +31,10 @@ function SectionEditorial({
   id,
   componentViewerData,
 }) {
+  const LoadableMediaPlayer = Loadable(() =>
+    import("../media-player/media-player"),
+  );
+
   const SwitchComponents = {
     Highlight,
     Card,
@@ -43,8 +46,8 @@ function SectionEditorial({
     ImgFull,
     ImageIcons,
     Table,
-    MediaPlayer,
     ComponentView,
+    MediaPlayer: LoadableMediaPlayer,
   };
 
   // heading level

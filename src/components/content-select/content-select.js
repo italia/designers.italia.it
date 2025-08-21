@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-
+import { Children, useState } from "react";
 import ContentSelectItem from "./components/content-select-item/content-select-item";
 import Icon from "../icon/icon";
 
@@ -21,7 +20,7 @@ function ContentSelect({ id, title, textInfo, children, selectedIdx, label }) {
   };
 
   const variants = [];
-  React.Children.forEach(children, (child, idx) => {
+  Children.forEach(children, (child, idx) => {
     if (child.type === ContentSelectItem) {
       variants.push({
         name: child.props.name,

@@ -1,5 +1,3 @@
-import * as React from "react";
-
 import ImageResponsive from "../image-responsive/image-responsive";
 
 function Avatar({ size, img, alt }) {

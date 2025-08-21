@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 import "gatsby-plugin-breadcrumb/gatsby-plugin-breadcrumb.css";
 

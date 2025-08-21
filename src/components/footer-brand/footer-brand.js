@@ -1,4 +1,3 @@
-import React from "react";
 import ReactMarkdown from "react-markdown";
 import ImageResponsive from "../image-responsive/image-responsive";
 import Link from "../link/link";

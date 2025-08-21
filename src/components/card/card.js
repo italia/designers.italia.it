@@ -1,4 +1,3 @@
-import * as React from "react";
 import slugify from "slugify";
 import ReactMarkdown from "react-markdown";
 import classNames from "classnames";

@@ -1,12 +1,10 @@
 import classNames from "classnames";
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { NavBarCollapsible, Sticky } from "bootstrap-italia";
 import Tag from "../tag/tag";
 import Link from "../link/link";
 import "./nav-sidebar.scss";
-
 import Icon from "../icon/icon";
-
 import "../../scss/bootstrap-italia-TEMP-FIXES-REMOVEME.scss";
 
 function NavSidebar({

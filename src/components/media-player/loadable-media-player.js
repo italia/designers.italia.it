@@ -1,5 +1,4 @@
-import React, { useEffect, useId } from "react";
-import { VideoPlayer, AcceptOverlay } from "bootstrap-italia";
+import { useEffect, useId, useRef } from "react";
 import parse from "html-react-parser";
 import ReactMarkdown from "react-markdown";
 
@@ -17,6 +16,9 @@ function MediaPlayerEl({
   trascriptionHeadingLevel,
   poster,
 }) {
+  const videoRef = useRef(null);
+  const playerRef = useRef(null);
+
   const messages = {
     it: {
       rememberLabel: "Ricorda per tutti i video",
@@ -34,16 +36,13 @@ function MediaPlayerEl({
     },
   };
 
-  // trascription label
   if (trascriptionLabel) messages.it.trascriptionLabel = trascriptionLabel;
   if (trascriptionLabelEN) messages.en.trascriptionLabel = trascriptionLabelEN;
 
-  let video = null;
   const t = (key) => messages[lang][key];
 
   const videoId = `video-js-${useId().replace(/:/g, "-")}`; // fix React useId for CSS selectors
 
-  // trascription heading level
   let HLevel;
   if (trascriptionHeadingLevel) {
     HLevel = `h${trascriptionHeadingLevel}`;
@@ -52,37 +51,101 @@ function MediaPlayerEl({
   }
 
   useEffect(() => {
-    // eslint-disable-next-line no-new
-    new AcceptOverlay(document.getElementById(`${videoId}-accept-video`), {
-      service: "youtube.com",
-    });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    video = new VideoPlayer(document.getElementById(videoId));
-    const ButtonComp = videojs.getComponent("Button");
-    const privacyPolicyButton = new ButtonComp(video.player, {
-      clickHandler() {
-        window.location.replace("/privacy-policy/#gestione-cookie");
-      },
-    });
-    video.player.controlBar.addChild(privacyPolicyButton, {}, 1);
-    privacyPolicyButton.el_.innerHTML =
-      '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
-    video.player.controlBar.removeChild("SkipBackward");
-    video.player.controlBar.removeChild("SkipForward");
-    if (subtitles)
-      video.player.addRemoteTextTrack({
-        kind: "subtitles",
-        label: "Italiano",
-        srclang: "it",
-        default: true,
-        src: subtitles,
-      });
-    if (JSON.parse(localStorage.getItem("bs-ck3") || "{}")["youtube.com"]) {
-      setTimeout(() => {
-        video.setYouTubeVideo(url);
-      }, 1000);
+    let cleanup = () => {};
+
+    const initializeVideoPlayer = async () => {
+      try {
+        // Dynamic import Bootstrap Italia - this loads videojs globally
+        const { VideoPlayer, AcceptOverlay } = await import("bootstrap-italia");
+
+        const videoElement = document.getElementById(videoId);
+        const acceptElement = document.getElementById(
+          `${videoId}-accept-video`,
+        );
+
+        if (!videoElement || !acceptElement) {
+          return;
+        }
+
+        const acceptOverlay = new AcceptOverlay(acceptElement, {
+          service: "youtube.com",
+        });
+
+        const video = new VideoPlayer(videoElement);
+        playerRef.current = video;
+
+        if (typeof videojs !== "undefined") {
+          const ButtonComp = videojs.getComponent("Button");
+          const privacyPolicyButton = new ButtonComp(video.player, {
+            clickHandler() {
+              window.location.replace("/privacy-policy/#gestione-cookie");
+            },
+          });
+
+          video.player.controlBar.addChild(privacyPolicyButton, {}, 1);
+          privacyPolicyButton.el_.innerHTML =
+            '<button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Gestione cookie" aria-disabled="false" data-focus-mouse="false"><svg class="icon icon-white"><use href="/svg/sprites.svg#it-locked"></use></svg><span class="vjs-control-text" aria-live="polite">Gestione cookie</span></button>';
+
+          video.player.controlBar.removeChild("SkipBackward");
+          video.player.controlBar.removeChild("SkipForward");
+        }
+
+        if (subtitles) {
+          video.player.addRemoteTextTrack({
+            kind: "subtitles",
+            label: "Italiano",
+            srclang: "it",
+            default: true,
+            src: subtitles,
+          });
+        }
+
+        if (typeof window !== "undefined" && window.localStorage) {
+          const cookieData = JSON.parse(localStorage.getItem("bs-ck3") || "{}");
+          if (cookieData["youtube.com"]) {
+            setTimeout(() => {
+              video.setYouTubeVideo(url);
+            }, 1000);
+          }
+        }
+
+        cleanup = () => {
+          try {
+            if (video && video.player) {
+              video.player.dispose();
+            }
+            if (acceptOverlay && acceptOverlay.dispose) {
+              acceptOverlay.dispose();
+            }
+          } catch (error) {
+            // Silently handle cleanup errors
+          }
+        };
+      } catch (error) {
+        // Silently handle initialization errors
+      }
+    };
+
+    initializeVideoPlayer();
+
+    // Cleanup on unmount
+    return cleanup;
+  }, [videoId, url, subtitles]);
+
+  const handleAcceptVideo = () => {
+    if (playerRef.current) {
+      playerRef.current.setYouTubeVideo(url);
+      if (subtitles && playerRef.current.player) {
+        playerRef.current.player.addRemoteTextTrack({
+          kind: "subtitles",
+          label: "Italiano",
+          srclang: "it",
+          default: true,
+          src: subtitles,
+        });
+      }
     }
-  });
+  };
 
   return (
     <div style={{ maxWidth: "100%" }}>
@@ -97,10 +160,7 @@ function MediaPlayerEl({
             <p>{parse(t("cookiePolicy"))}</p>
             <div className="acceptoverlay-buttons bg-dark">
               <button
-                onClick={() => {
-                  video.setYouTubeVideo(url);
-                  video.addTrack(subtitles);
-                }}
+                onClick={handleAcceptVideo}
                 type="button"
                 id={`${videoId}-accept-video`}
                 className="btn btn-primary accept-video"
@@ -123,6 +183,7 @@ function MediaPlayerEl({
         </div>
         <div>
           <video
+            ref={videoRef}
             controls
             data-bs-video
             poster={poster}

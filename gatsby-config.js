@@ -438,6 +438,7 @@ module.exports = {
     twitterCreator: "Dipartimento per la trasformazione digitale e AGID",
     themeColor: "#0066cc",
   },
+  jsxRuntime: "automatic",
   plugins: GATSBY_PLUGINS,
   pathPrefix: "/",
   flags: {

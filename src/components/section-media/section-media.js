@@ -1,9 +1,8 @@
 import classNames from "classnames";
-import * as React from "react";
-import "./section-media.scss";
+import Loadable from "@loadable/component";
 import Button from "../button/button";
 import CookieRemove from "../cookieremove/cookieremove";
-import MediaPlayer from "../media-player/media-player";
+import "./section-media.scss";
 
 function SectionMedia({
   title,
@@ -21,9 +20,13 @@ function SectionMedia({
   noSpace,
   id,
 }) {
+  const LoadableMediaPlayer = Loadable(() =>
+    import("../media-player/media-player"),
+  );
+
   const SwitchComponents = {
     CookieRemove,
-    MediaPlayer,
+    MediaPlayer: LoadableMediaPlayer,
   };
 
   // heading level

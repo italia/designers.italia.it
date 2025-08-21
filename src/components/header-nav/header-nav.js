@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { NavBarCollapsible } from "bootstrap-italia";
 import Button from "../button/button";
 import Icon from "../icon/icon";

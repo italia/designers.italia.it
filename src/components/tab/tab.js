@@ -1,11 +1,9 @@
-import React from "react";
-import "./tab.scss";
 import SectionEditorial from "../section-editorial/section-editorial";
 import ComponentView from "../component-view/component-view";
 import ContentSelect from "../content-select/content-select";
 import ContentSelectItem from "../content-select/components/content-select-item/content-select-item";
-
 import TabButton from "./tabbutton";
+import "./tab.scss";
 
 function Tab({ componentSource, tab01, tab02, tab03 }) {
   return (

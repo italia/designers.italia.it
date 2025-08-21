@@ -1,4 +1,3 @@
-import React from "react";
 import List from "../list/list";
 
 function ResourceList({ title, headingLevel, list, full }) {

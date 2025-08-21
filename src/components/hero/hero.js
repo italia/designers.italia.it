@@ -1,7 +1,5 @@
 import classNames from "classnames";
-import * as React from "react";
 import "./hero.scss";
-
 import ReactMarkdown from "react-markdown";
 import ImageResponsive from "../image-responsive/image-responsive";
 import Breadcrumbs from "../breadcrumbs/breadcrumbs";

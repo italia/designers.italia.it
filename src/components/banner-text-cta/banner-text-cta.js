@@ -1,4 +1,3 @@
-import React from "react";
 import SimpleCta from "../simple-cta/simple-cta";
 import "./banner-text-cta.scss";
 

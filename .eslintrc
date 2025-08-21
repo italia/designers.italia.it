@@ -58,7 +58,7 @@
     // versions of react we can make this always be "off".
     // I would also assume that eslint-config-react-app will switch their flag to "off"
     // when jsx runtime is stable in all common versions of React.
-    "react/react-in-jsx-scope": "error",
+    "react/react-in-jsx-scope": "off",
     "import/no-webpack-loader-syntax": [0],
     "react/jsx-pascal-case": [
       "warn",
@@ -168,5 +168,13 @@
     // Disabled until all the occurrences are fixed in the code
     "react/jsx-props-no-spreading": "off",
     "react/no-array-index-key": "off"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["gatsby-*.js"],
+      "rules": {
+        "import/prefer-default-export": "off"
+      }
+    }
+  ]
 }

@@ -1,9 +1,7 @@
 import classNames from "classnames";
-import React from "react";
 import ReactMarkdown from "react-markdown";
-import "./section-intro.scss";
-
 import ContentCollapse from "../content-collapse/content-collapse";
+import "./section-intro.scss";
 
 function SectionIntro({
   id,

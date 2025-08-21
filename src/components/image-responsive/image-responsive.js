@@ -1,4 +1,3 @@
-import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 import "./image-responsive.scss";

@@ -1,4 +1,3 @@
-import React from "react";
 import LinkCustom from "../link-custom/link-custom";
 
 function NavOtherPrevNext({ prev, next }) {

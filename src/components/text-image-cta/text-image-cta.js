@@ -1,9 +1,7 @@
 import classNames from "classnames";
-import React from "react";
 import ReactMarkdown from "react-markdown";
 import SimpleCta from "../simple-cta/simple-cta";
 import "./text-image-cta.scss";
-
 import ImageResponsive from "../image-responsive/image-responsive";
 import ContentCollapse from "../content-collapse/content-collapse";
 
