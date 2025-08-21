@@ -132,7 +132,7 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 ## Editorial Board
 
 La gestione dei contenuti in evidenza è a cura della redazione e avviene tramite il file:  
-`/editorial-board/highlight-cards.yaml`
+`/editorial-board/highlighted-cards.yaml`
 
 Questo file controlla:  
 - Bookmark sotto la testata della homepage  
@@ -143,6 +143,135 @@ Questo file controlla:
 - Tutte le card della pagina Community  
 
 **Nota per la redazione:** creare PR dedicate per modificare l’editorial board, senza mescolarle con nuove pubblicazioni.  
+
+### Schema completo file `/editorial-board/highlighted-cards.yaml`
+
+```yaml
+highlightedCards:
+
+  ################################
+  # / (homepage)
+  ################################
+  - page: "index"
+    sections:
+
+    - section: "header-bookmarks"
+      cards:
+        - title: "Nuova sezione Partecipa"
+          icon: "sprites.svg#it-bookmark"
+          url: "/community/partecipa/"
+
+        - title: "Nuova sezione Formazione"
+          icon: "sprites.svg#it-bookmark"
+          url: "/formazione/"
+
+    - section: "highlights-home"
+      cards:
+        - title: "Progettare un assistente virtuale: un atto di design pubblico"
+          cta: "Scopri le novità"
+          text: "Nuovi strumenti pratici per definire personalità, tono di voce e comportamento di un'intelligenza artificiale conversazionale"
+
+        - title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
+          cta: "Esplora i fondamenti"
+          text: "Aggiornati e integrati con un nuovo fondamento le indicazioni del design system per progettare contenuti efficaci e accessibili"
+        
+        - title: "Passi avanti per i kit di design e sviluppo di .italia"
+          cta: "Scopri i dettagli"
+          text: "Il miglioramento del design system del Paese continua"
+
+    - section: "notizie-home"
+      cards:
+          - title: "Passi avanti per i kit di design e sviluppo di .italia"
+          - title: "Nuovi strumenti per progettare architetture dell’informazione efficaci e intuitive"
+          - title: "Definisci la direzione progettuale di un sito o servizio con il nuovo kit ‘Stato dell’arte’"
+
+  ################################
+  # /community/ 
+  ################################
+  - page: "community"
+    sections:
+    - section: "notizie"
+      cards:
+        - title: "Progettare un assistente virtuale: un atto di design pubblico"
+        - title: "Ora tocca a voi! Le nuove iniziative per la community"
+        - title: "Passi avanti per i kit di design e sviluppo di .italia"
+
+    - section: "eventi"
+      cards:
+        - title: "Community lab di Developers Italia"
+        - title: "Community call: i musei presentano i loro nuovi siti"
+        - title: "Community call: le Aziende sanitarie locali presentano i loro nuovi siti"
+        - title: "Accessibility Days - Accessibilità by design"
+
+    - section: "media"
+      cards:
+        - title: "Community call: i musei presentano i nuovi siti"
+        - title: "Community call: le ASL presentano i loro nuovi siti"
+        - title: "Community lab: design system .italia e la progettazione di servizi pubblici digitali"
+        - title: "Progettare l'interazione con le IA conversazionali"
+
+    - section: "articoli-di-approfondimento"
+      cards:
+        - title: "Verso Design system .italia: la versione 1 segna un traguardo per l'accessibilità nella PA"
+          img: "/images/community/articoli-di-approfondimento/20250122-verso-design-system-italia-la-versione-1-segna-un-traguardo-per-l-accessibilita-integrata-della-pa.png"
+          alt: ""
+          url: "https://medium.com/designers-italia/verso-design-system-italia-la-v1-segna-un-traguardo-per-l-accessibilita-integrata-della-pa-89df3e1c3af5"
+          moreInfo: "di Francesco Mascia"
+          tags: ["Design system", "Interfaccia utente", "Accessibilità"]
+
+        - title: "Verso Design system .italia: dalle origini al design system aperto della PA"
+          img: "/images/community/articoli-di-approfondimento/20240522-verso-design-system-italia-dalle-origini-al-design-system-aperto-della-pa.png"
+          alt: ""
+          url: "https://medium.com/designers-italia/verso-design-system-italia-dalle-origini-al-design-system-aperto-del-paese-66a2d5af6654"
+          moreInfo: "di Daniele Tabellini"
+          tags: ["Design system", "Interfaccia utente", "Accessibilità"]
+
+        - title: "Verso Design system .italia: come è nato il nome del design system del Paese"
+          img: "/images/community/articoli-di-approfondimento/20240411-verso-design-system-italia-come-e-nato-il-nome-del-design-system-del-paese.png"
+          alt: ""
+          url: "https://medium.com/designers-italia/verso-design-system-italia-come-%C3%A8-nato-il-nome-del-design-system-del-paese-a2720e219f00"
+          moreInfo: "di Gabriella Poggioli"
+          tags: ["Design system"]
+
+  ################################
+  # /design-system/ 
+  ################################
+  - page: "design-system"
+    sections:
+    - section: "novita"
+      cards:
+        - title: "Passi avanti per i kit di design e sviluppo di .italia"
+        - title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
+        - title: ".italia: risorse in miglioramento continuo" 
+
+  ################################
+  # /normativa/ 
+  ################################
+  - page: "normativa"
+    sections:
+    - section: "articoli-di-approfondimento"
+      cards:
+        - title: "Scrivere (semplice) per la PA: qualità nella comunicazione e diritti delle persone"
+          img: "/images/community/articoli-di-approfondimento/20231108-scrivere-semplice-per-la-pa-qualita-nella-comunicazione-e-diritti-delle-persone-1198x673.png"
+          alt: ""
+          url: "https://medium.com/designers-italia/scrivere-semplice-per-la-pa-qualit%C3%A0-nella-comunicazione-e-diritti-delle-persone-ff28bf02bfad"
+          moreInfo: "di Daniela Iozzo"
+          tags: ["Progettazione contenuti"]
+
+        - title: "Progettare con qualità: l’accessibilità al centro del design system del Paese"
+          img: "/images/community/articoli-di-approfondimento/20220705-progettare-con-qualita-l-accessibilita-al-centro-del-design-system-del-paese.webp"
+          alt: ""
+          url: "https://medium.com/designers-italia/progettare-con-qualita-accessibilita-al-centro-del-design-system-del-paese-5e3599170099"
+          moreInfo: "di Daniele Tabellini e Fabrizio Caccavello"
+          tags: ["Design system", "Interfaccia utente", "Accessibilita"]
+
+        - title: "Accessibili, usabili e inclusivi: per una progettazione etica dei servizi pubblici digitali"
+          img: "/images/community/articoli-di-approfondimento/20220128-accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-digitali.webp"
+          alt: ""
+          url: "https://medium.com/designers-italia/accessibili-usabili-e-inclusivi-per-una-progettazione-etica-dei-servizi-pubblici-digitali-186ed6ebc469"
+          moreInfo: "di Mauro Filippi e Federica Merenda"
+          tags: ["Accessibilità", "Usabilità", "Progettazione servizi"]
+```
 
 ---
 
@@ -165,9 +294,7 @@ Questo file controlla:
 
 ## Appendice: template file YAML completi
 
-### Schema Base Comune
-
-Tutti i content-type condividono alcuni campi fondamentali:
+### Schema campi principali condivisi tra i diversi tipi di contenuto
 
 ```yaml
 # SEO (IMPORTANTE!)
@@ -193,6 +320,8 @@ kangaroo:
 ### Schema file YAML specifico per Notizie
 
 Per le **notizie**, è importante curare i campi di metadati redazionali come `kangaroo.personalInfo.items` (in particolare *tempo di lettura* e *data*), che rendono più chiara la fruizione per chi legge. Presta attenzione anche alla coerenza tra `components.hero.title` e `seo.name` (titolo lungo vs. ottimizzato per SEO). Infine, ricordati di compilare `kangaroo.tags` scegliendo solo dall’elenco ufficiale degli argomenti.  
+
+#### Schema completo per Notizie (puoi fare copia/incolla) 
 
 ```yaml
 metadata:
@@ -340,6 +469,7 @@ components:
 
 Per gli **eventi**, il campo più delicato è `components.hero.kangaroo.eventInfo.items`, che deve riportare con precisione **luogo, modalità di partecipazione e data/orario**. Ogni voce va descritta chiaramente e, se contiene un link esterno (per registrazione o accesso), deve avere attributi `blank: true` e `screenReaderText` per l’accessibilità. Attenzione anche alla `tag.label`, che va impostata in modo descrittivo (es. *Webinar*, *Community Lab*).  
 
+#### Schema completo per Eventi (puoi fare copia/incolla) 
 
 ```yaml
 # ————————————————————————————————————————————
@@ -468,6 +598,36 @@ components:
 ### Schema file YAML specifico per Media
 
 Per i **media**, i campi fondamentali sono quelli del componente `MediaPlayer`: `url` (link YouTube o altro servizio), `poster` (immagine di anteprima, **formato 16:9**), `subtitles` e `trascription`. È obbligatorio fornire sottotitoli `.vtt` in italiano e, quando disponibili, una trascrizione accessibile in formato `.odt`. Inoltre, la `tag.label` deve indicare chiaramente sia il tipo di contenuto (es. *Video* o *Podcast*) sia l’eventuale format (es. *Community Lab*).  
+
+#### Nota su sottotitoli e trascrizioni
+Ricorda: **i sottotitoli sono obbligatori.**
+
+Detto questo, rispetto alle trascrizioni (o meglio a cosa intendiamo noi per trascrizioni [una alternativa testuale con gli stessi contenuti narrati a voce]) se non hai a disposizione un file di trascrizione in formato testo, ma è disponibile su YouTube, puoi usare la dicitura: 
+
+```yaml
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=3VzeQP7thUA)   
+```
+
+Per mostrare una trascrizione in pagina, puoi linkare un file in formato aperto da scaricare (ODT), e aggiungerne il contenuto per intero, o in parte, anche in pagina. Fai attenzione alla gerarchia dei titoli H in questo caso. Ad esempio: 
+
+```yaml
+          trascription: |
+            Scarica la [trascrizione in formato ODT](/files/community/subtitles/20230324-comprendere-il-contesto-d-uso.odt). 
+
+            [...]
+
+            ### La parola a Nome Relatore
+
+            Innanzitutto buongiorno a tutti, io mi chiamo ...
+
+            ### La parola a Nome Relatore
+
+            Grazie mille, buongiorno nuovamente a tutti...
+            
+```
+
+#### Schema completo per Media (puoi fare copia/incolla) 
 
 ```yaml
 # ————————————————————————————————————————————
