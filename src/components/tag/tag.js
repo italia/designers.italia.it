@@ -4,7 +4,7 @@ import Link from "../link/link";
 import "./tag.scss";
 
 function Tag({ url, children, label, addonClasses, screenReaderText }) {
-  const styles = classNames("tag", addonClasses);
+  const styles = classNames("di-tag", addonClasses); // don't use generic ".tag" > conflicts with Prism syntax highlighter
 
   if (url) {
     return (
