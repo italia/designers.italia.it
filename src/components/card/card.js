@@ -43,6 +43,7 @@ function Card({
   fullHeight,
   rounded,
   buttonBottom,
+  uniqueCardId,
 }) {
   const styles = classNames("di-card d-md-flex flex-md-column w-100", {
     fullheight: fullHeight,
@@ -77,7 +78,7 @@ function Card({
     HLevel = `h3`;
   }
 
-  const id = slugify(title, { lower: true, strict: true });
+  const id = uniqueCardId || slugify(title, { lower: true, strict: true });
 
   if (cardEvent) {
     return (

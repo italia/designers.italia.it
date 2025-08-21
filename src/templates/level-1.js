@@ -1,7 +1,6 @@
 import * as React from "react";
 import "../scss/styles.scss";
 import "../js/globals";
-
 import Skiplinks from "../components/skiplinks/skiplinks";
 import Header from "../components/header/header";
 import Footer from "../components/footer/footer";
@@ -13,7 +12,6 @@ import HeaderCenter from "../components/header-center/header-center";
 import HeaderNav from "../components/header-nav/header-nav";
 import LastUpdate from "../components/last-update/last-update";
 import Feedback from "../components/feedback/feedback";
-
 import Hero from "../components/hero/hero";
 import SectionIntro from "../components/section-intro/section-intro";
 import TitleText from "../components/title-text/title-text";
@@ -22,14 +20,19 @@ import Highlight from "../components/highlight/highlight";
 import ImageIcons from "../components/image-icons/image-icons";
 import HighlightCards from "../components/highlight-cards/highlight-cards";
 import Topics from "../components/topics/topics";
-
 import HeaderData from "../data/header.yaml";
 import FooterData from "../data/footer.yaml";
 import skipLinksData from "../data/skiplinks.yaml";
 
-function Template({ children, Pagedata, pageContext, location, lastModified }) {
+function Template({
+  children,
+  Pagedata,
+  pageContext,
+  location,
+  lastModified,
+  highlightedCards,
+}) {
   let activePage = null;
-
   if (Pagedata.metadata.activeLabel) {
     activePage = Pagedata.metadata.activeLabel;
   }
@@ -67,24 +70,23 @@ function Template({ children, Pagedata, pageContext, location, lastModified }) {
           Pagedata.components.highlightsLoop1.map((hl, index) => (
             <Highlight key={`hl-${index}`} {...hl} />
           ))}
-
         {Pagedata.components.imageIcons && (
           <ImageIcons {...Pagedata.components.imageIcons} />
         )}
-
         {Pagedata.components.highlightCards && (
-          <HighlightCards {...Pagedata.components.highlightCards} />
+          <HighlightCards
+            {...Pagedata.components.highlightCards}
+            highlightedCards={highlightedCards}
+            editorialSections={pageContext?.editorialSections}
+          />
         )}
-
         {Pagedata.components.highlightsLoop2 &&
           Pagedata.components.highlightsLoop2.map((hl, index) => (
             <Highlight key={`hl-${index}`} {...hl} />
           ))}
-
         {Pagedata.components.topics && (
           <Topics {...Pagedata.components.topics} />
         )}
-
         {children}
         {lastModified && (
           <LastUpdate

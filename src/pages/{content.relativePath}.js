@@ -37,7 +37,7 @@ const TEMPLATES = {
   "design-system-component": TemplateDSComponent,
 };
 
-function Page({ pageContext, location, data: { content } }) {
+function Page({ pageContext, location, data: { content, highlightedCards } }) {
   const Template = content.metadata.template
     ? TEMPLATES[content.metadata.template.name]
     : TemplateBase;
@@ -47,6 +47,7 @@ function Page({ pageContext, location, data: { content } }) {
   return (
     <Template
       Pagedata={content}
+      highlightedCards={highlightedCards}
       pageContext={pageContext}
       location={location}
       lastModified={lastModified}
@@ -57,10 +58,56 @@ function Page({ pageContext, location, data: { content } }) {
 }
 
 export const query = graphql`
-  query ($id: String!) {
+  query ($id: String!, $highlighted: [String!] = []) {
     contentOgImage(parent: { id: { eq: $id } }) {
       attributes {
         publicURL
+      }
+    }
+    highlightedCards: allContent(
+      filter: { components: { hero: { title: { in: $highlighted } } } }
+      sort: { seo: { pathname: DESC } }
+    ) {
+      totalCount
+      edges {
+        node {
+          seo {
+            description
+            pathname
+            image
+          }
+          metadata {
+            archive
+          }
+          components {
+            hero {
+              title
+              tag {
+                label
+                addonClasses
+              }
+              kangaroo {
+                tags
+                personalInfo {
+                  items {
+                    title
+                    label
+                  }
+                }
+                eventInfo {
+                  items {
+                    title
+                    label
+                  }
+                }
+              }
+            }
+            imageIcons {
+              image
+              alt
+            }
+          }
+        }
       }
     }
     content(id: { eq: $id }) {
@@ -72,7 +119,6 @@ export const query = graphql`
           }
         }
       }
-
       metadata {
         template {
           name
@@ -271,6 +317,21 @@ export const query = graphql`
               addonClasses
             }
           }
+          cardSettings {
+            headingLevel
+            customCol
+            imgRatio
+            imgPlaceholder
+            fullHeight
+            rounded
+            showDateInfo
+            showTags
+            cardEvent
+            titleSmall
+            showDateOverlay
+            showTag
+            showIconOverlay
+          }
           cards {
             title
             headingLevel
@@ -404,7 +465,7 @@ export const query = graphql`
           background
           buttons {
             label
-            ariaLabel
+            # ariaLabel
             btnStyle
             url
             addonStyle
@@ -451,6 +512,15 @@ export const query = graphql`
           text
           background
           col4
+          cardSettings {
+            headingLevel
+            customCol
+            imgRatio
+            imgPlaceholder
+            fullHeight
+            rounded
+            showDateInfo
+          }
           cards {
             title
             img
@@ -538,6 +608,7 @@ export const query = graphql`
           }
         }
         highlightCards2 {
+          id
           background
           nopadtop
           hasCustomCols
@@ -547,30 +618,18 @@ export const query = graphql`
             url
             addonStyle
           }
-          cards {
-            title
+          cardSettings {
             headingLevel
             customCol
-            img
-            alt
             imgRatio
             imgPlaceholder
             fullHeight
             rounded
-            url
-            blank
-            externalLink {
-              label
-              screenReaderText
-              icon {
-                icon
-                size
-              }
-            }
-            moreInfo
-            tags
-            text
-            dateInfo
+            showDateInfo
+            showTags
+            showTag
+            showDateOverlay
+            showIconOverlay
           }
         }
         bannerTextCta {
