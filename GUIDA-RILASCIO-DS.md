@@ -40,10 +40,10 @@ tag:
 - Changelog: aggiungi nuova voce in cima al campo `text` del componente `TextImageCta`
 
 ### 3. PR e rilascio
-**Commit**: `chore(release): design system .italia v1.X.Y 🚀 🇮🇹`
-**PR title**: stesso formato del commit
-**Review**: team maintainer Designers Italia
-**Deploy**: `prepare-deploy` + `deploy` (manuale) - c'è tempo per review anteprima prima del rilascio
+- **Commit**: `chore(release): design system .italia v1.X.Y 🚀 🇮🇹`
+- **PR title**: stesso formato del commit
+- **Review**: team maintainer Designers Italia
+- **Deploy**: `prepare-deploy` + `deploy` (manuale) - c'è tempo per review anteprima prima del rilascio
 
 ---
 
