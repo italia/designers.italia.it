@@ -26,7 +26,7 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 |-----------------------------------|----------|----------------|
 | `seo.name`                        | Titolo per SEO e anteprime social | Max 60 caratteri |
 | `seo.description`                 | Descrizione SEO/social | Max 160 caratteri, termina con “.” |
-| `seo.image`                       | Immagine per generazione SEO/social card | PNG/JPG ottimizzato |
+| `seo.image`                       | Immagine per generazione SEO/social card | PNG/JPG ottimizzato, url assoluto https://designers.italia.it/images/.. |
 | `seo.pathname`                    | URL canonico della pagina | Deve iniziare e finire con `/` |
 | `components.hero.title`           | Titolo visibile nella pagina | Nessun punto finale |
 | `components.hero.subtitle`        | Sottotitolo/descrizione breve | Max 160 caratteri, senza punto finale |
@@ -98,7 +98,7 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 #### ✅ SEO e Metadati
 - [ ] `seo.name` ≤60 caratteri  
 - [ ] `seo.description` ≤160 caratteri, termina con “.”  
-- [ ] `seo.image` presente e caricata nel percorso corretto  
+- [ ] `seo.image` presente e caricata nel percorso corretto, è l'unica con url assoluto https://designers.italia.it/images/..
 
 #### ✅ Contenuti
 - [ ] Titoli e sottotitoli coerenti e senza errori  
