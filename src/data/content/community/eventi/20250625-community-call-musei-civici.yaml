@@ -1,0 +1,124 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Community call: i musei presentano i loro nuovi siti"
+  description: "Due esperienze concrete di progettazione di siti e servizi culturali con il modello di sito per i Musei civici."
+  image: https://designers.italia.it/images/community/eventi/2025/20250625-community-call-musei-civici.png
+  canonical: null
+  pathname: /community/eventi/20250625-community-call-musei-civici
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Community call: i musei presentano i loro nuovi siti"
+    subtitle: "Due esperienze concrete di progettazione di siti e servizi culturali con il modello di sito per i Musei civici"
+    tag:
+        label: Community call
+        addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Adozione modelli, Community, Community call, Sviluppo interfaccia]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Online
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+            
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita con registrazione" #C
+            url: https://ec.europa.eu/eusurvey/runner/community-call-musei-civici
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "25 giugno 2025, 11.30–13.00"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+            Scopri il [**modello di sito per Musei civici**](https://designers.italia.it/modelli/musei-civici/) di Designers Italia attraverso il racconto dell’esperienza concreta dei due musei coinvolti nella [fase pilota della Misura 1.4.1 
+            “Esperienza del cittadino nei servizi pubblici"](https://innovazione.gov.it/notizie/articoli/pnrr-pubblicati-i-primi-siti-semplificati-di-asl-e-musei-civici/) del Piano Nazionale di Ripresa e Resilienza (PNRR). 
+
+            Dopo un’introduzione di Designers Italia sulle risorse a disposizione dei musei, **i Musei civici di Palazzo Pianetti di Jesi e il Museo Leonardiano di Vinci** 
+            illustreranno i siti realizzati adottando il modello, insieme ai loro fornitori. Grazie a un confronto sulle attività, gli strumenti e le sfide legati al realizzare 
+            esperienze digitali semplici e accessibili per i visitatori dei musei civici, **condivideranno cosa hanno imparato e come l’esperienza può essere replicata da altri musei**, 
+            pubbliche amministrazioni, fornitori e dalla community di Designers e Developers Italia. 
+            
+            Le Community call di Designers e Developers Italia sono eventi aperti di scambio e di confronto in cui funzionari pubblici, 
+            progettisti e sviluppatori raccontano la loro esperienza rispetto a temi specifici di interesse per tutti coloro che operano nell’ambito della 
+            trasformazione digitale della PA, promuovendo un approccio condiviso alla progettazione di servizi digitali pubblici di qualità. 
+
+          ctas:
+          - label: Registrati
+            url: https://ec.europa.eu/eusurvey/runner/community-call-musei-civici
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2

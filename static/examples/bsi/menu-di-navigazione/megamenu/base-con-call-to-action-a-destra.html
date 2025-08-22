@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.2/dist/css/bootstrap-italia.min.css">
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/css/bootstrap-italia.min.css">
     <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
     <style>
         body {
@@ -46,10 +46,6 @@
 
         .ratio-example-breakpoint {
             --bs-aspect-ratio: 50%;
-        }
-
-        .select-wrapper {
-            margin-top: 48px;
         }
 
         a.back-to-top {
@@ -109,13 +105,12 @@
         <div class="bd-example w-100">
             
 <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Menu principale">
-  <button type="button" aria-label="Mostra o nascondi il menu" class="custom-navbar-toggler" aria-controls="menu" aria-expanded="false" data-bs-toggle="navbarcollapsible" data-bs-target="#navbar-H">
+  <button type="button" aria-label="Mostra o nascondi il menu" class="custom-navbar-toggler" aria-controls="navbar-H" data-bs-toggle="navbarcollapsible" data-bs-target="#navbar-H">
       <span>
         <svg role="img" class="icon"><use href="/dist/svg/sprites.svg#it-burger"></use></svg>
       </span>
   </button>
-  <div class="navbar-collapsable" id="navbar-H">
-    <div class="overlay fade"></div>
+  <div class="navbar-collapsable" id="navbar-H" tabindex="-1">
     <div class="close-div">
       <button type="button" aria-label="Chiudi il menu" class="btn close-menu">
         <span><svg role="img" class="icon"><use href="/dist/svg/sprites.svg#it-close-big"></use></svg></span>
@@ -208,7 +203,7 @@
         </div>
     </div>
     <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.2/dist/js/bootstrap-italia.bundle.min.js"></script>
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.16.0/dist/js/bootstrap-italia.bundle.min.js"></script>
     <script>
         bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
 
@@ -221,7 +216,7 @@
         // popover
         var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
         var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-            return new bootstrap.Popover(popoverTriggerEl)
+            return new bootstrap.Popover(popoverTriggerEl, { sanitize: false })
         })
 
     </script>

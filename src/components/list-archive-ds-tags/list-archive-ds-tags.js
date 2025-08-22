@@ -24,13 +24,16 @@ function ListArchiveDSTags() {
   `);
 
   return (
-    <section className="pb-5" aria-describedby="archive-list-title">
+    <section className="pb-5" aria-labelledby="archive-list-title">
       <div className="d-md-flex flex-row align-items-center">
         <h3 className="border-end pe-4" id="archive-list-title">
           Esplora per utilizzo
         </h3>
         <div className="chips-list-wrapper ps-md-4">
-          <ul className="chips-list chips mt-4 mt-md-3 d-flex flex-wrap">
+          <ul
+            className="chips-list chips mt-4 mt-md-3 d-flex flex-wrap"
+            aria-label="Argomenti per utilizzo: "
+          >
             {data.tagsDesignSystem.group.map((tag) => (
               <ListItem
                 key={tag.fieldValue}

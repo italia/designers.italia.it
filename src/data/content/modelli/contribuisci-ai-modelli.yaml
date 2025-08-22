@@ -1,0 +1,158 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level2
+
+seo:
+  name: Contribuisci ai modelli
+  description: Partecipa all'evoluzione dei modelli di sito e servizi della Pubblica Amministrazione
+  image: null
+  canonical: null
+  pathname: /modelli/contribuisci-ai-modelli/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Contribuisci ai modelli
+    column: true
+    subtitle: Partecipa all'evoluzione dei modelli di sito e servizi della Pubblica Amministrazione
+    tag:
+      label: Modelli #C
+      addonClasses: mt-3 text-uppercase
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: "Prendi parte all’evoluzione dei modelli di sito e servizi dedicati alla PA italiana: contribuisci alle discussioni, agli avanzamenti tecnici e di design e scopri come proporre novità e nuove idee con il team e la community di Designers Italia."
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Modelli #C
+            url: "../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design/" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Progettare e sviluppare l'interfaccia utente" #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Modelli di sito, Modelli di servizi, Interfaccia utente, Sviluppo interfaccia]
+
+  sectionsEditorial:
+
+            
+    - centered: true
+      noSpace: false
+      title: L'evoluzione dei modelli di sito e servizi per la Pubblica Amministrazione è aperta
+      text: La documentazione e le risorse dei modelli di sito e servizi sono manutenute del team di Designers Italia con un approccio aperto e trasparente, privilegiando strumenti che permettono di seguire i lavori in tempo reale e di prendere parte alle evolutive tecniche e alle novità di progettazione.
+      background: null
+      components:
+
+        # - name: TextImageCta
+        #   noSpace: true
+        #   text: | 
+        #     La documentazione e le risorse dei modelli di sito e servizi sono manutenute del team di Designers Italia con un approccio aperto e trasparente, privilegiando strumenti che permettono di seguire i lavori in tempo reale e di prendere parte alle evolutive tecniche e alle novità di progettazione.
+    # - fullColumn: true
+    #   noSpace: true
+    #   components:
+    #     - name: ImgFull
+    #       img: /images/design-system/schema-come-partecipo.png
+    #       alt: Scelgo dove, partecipo alla discussione, invio contributi. Schema del modello di contribuzione, descritto nel seguito dela pagina. 
+    # - centered: true
+    #   noSpace: true
+    #   background: null
+    #   components:
+
+        - name: TextImageCta
+          title: "Perché contribuire?"
+          headingLevel: 3
+          noSpace: false
+          text: |
+            Crediamo che siti e servizi digitali progettati in modo collaborativo siano migliori e quindi che il contributo attivo della community che osserva, utilizza, personalizza e implementa quotidianamente le soluzioni proposte sia fondamentale per far crescere la qualità della documentazione e delle risorse operative a supporto delle PA.
+
+        - name: TextImageCta
+          title: Cosa puoi fare?
+          headingLevel: 3
+          noSpace: false
+          text: |
+            Partecipare a discussioni, aprire segnalazioni e inviare contributi per la **documentazione**, l'**architettura dell'informazione**, le **risorse di design** e le **risorse di sviluppo**.
+            
+            Dalla segnalazione di una correzione alla proposta di un’integrazione, dalla presentazione di un nuovo componente alla partecipazione a discussioni su modifiche futuribili, come contributor puoi prendere parte al miglioramento continuo dei modelli di sito e servizi per la PA.
+            
+            Ti suggeriamo di pensare oltre il singolo servizio digitale per immaginare componenti ed esperienze scalabili, riusabili e che possono evolvere nel tempo. Condividi ciò che hai imparato nel fare ricerca con gli utenti. Sii disponibile a ricevere feedback o richieste di modifica al tuo lavoro. Sii gentile e incoraggia gli altri a esserlo, quando ricevi domande o feedback.
+            
+            Quando una persona della community contribuisce ai modelli ci piace ringraziarla pubblicamente, ma se preferisci non ricevere menzioni pubbliche, puoi farcelo sapere durante la contribuzione.
+
+        - name: TextImageCta
+          title: Invia i tuoi contributi
+          headingLevel: 3
+          noSpace: true
+          ctas: 
+            - label: "Scopri come contribuire" #C
+              screenReaderText: ""
+              url: "/modelli/contribuisci-ai-modelli/come-contribuire-ai-modelli/" #M
+              blank: false #M #C true if new tab for external links
+              icon:
+                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+                color: primary
+                align: middle
+                hidden: true
+                size: sm
+                addonClasses: ms-2

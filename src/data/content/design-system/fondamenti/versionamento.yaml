@@ -7,7 +7,8 @@ metadata:
 
 seo:
   name: Versionamento
-  description: "Usiamo il versionamento semantico su ogni risorsa del design system del Paese"
+  description: "Usiamo il versionamento semantico su ogni risorsa del design system .italia."
+  image: https://designers.italia.it/images/design-system/ds-beta-naming.png
   canonical: null
   pathname: /design-system/fondamenti/versionamento/
 
@@ -31,7 +32,7 @@ components:
     background: null
     title: Versionamento
     column: true
-    subtitle: "Usiamo il versionamento semantico su ogni risorsa del design system del Paese"
+    subtitle: "Usiamo il versionamento semantico su ogni risorsa del design system .italia"
     tag:
       label: Fondamenti #C
       addonClasses: mt-3 text-uppercase
@@ -69,7 +70,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -146,7 +147,7 @@ components:
       paddingLeft: true
       title: Stato delle risorse
       id: ComponentStatus
-      text: "Le versioni correnti delle principali risorse operative"
+      text: "Le versioni correnti delle principali risorse operative del design system .italia"
       background: null
       components:
 
@@ -163,8 +164,8 @@ components:
               - text: Documentazione (questo sito)
                 scope: row
               - tag:
-                  label: 1.0.0-alpha.18 #AUTO
-                  addonClasses:  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
+                  label: "1.8.1" #AUTO
+                  addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: A seguire
                   url: "#changelog-documentazione"
@@ -178,7 +179,7 @@ components:
               - text: UI Kit Italia (design)
                 scope: row
               - tag:
-                  label: "3.3.1" #AUTO
+                  label: "3.7.0" #AUTO
                   addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: 'Schede rilascio'
@@ -193,7 +194,7 @@ components:
               - text: Design Tokens Italia (design e sviluppo)
                 scope: row
               - tag:
-                  label: "1.2.0" #AUTO
+                  label: "1.2.1" #AUTO
                   addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: 'Schede rilascio'
@@ -208,7 +209,7 @@ components:
               - text: Bootstrap Italia (sviluppo)
                 scope: row
               - tag:
-                  label: "2.8.2" #AUTO
+                  label: "2.16.0" #AUTO
                   addonClasses: bg-dark  ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger | Non presente > neutral-2-bg text-secondary
               - simpleCta :
                   label: "Schede rilascio"
@@ -224,27 +225,182 @@ components:
       paddingLeft: true
       id: changelog-documentazione
       title: Changelog documentazione
-      text: Questa sezione del sito Designers Italia ospita la documentazione del design system del Paese
+      text: Questa sezione del sito Designers Italia ospita la documentazione del design system .italia
       background: null
       components:
         - name: TextImageCta
           text: |
+            ### v1.8.1
+            25 luglio 2025
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornata la documentazione relativa alle sezioni "Anatomia" e "Specifiche" della nuova card e dei componenti che la includono: [Card](/design-system/componenti/card/), [Carousel](/design-system/componenti/carousel/), [Timeline](/design-system/componenti/timeline/).
+
+            ### v1.8.0
+            24 giugno 2025
+            - **[Componenti](/design-system/componenti/)**
+              - Preparate le schede per ospitare la documentazione delle nuove card: [Card](/design-system/componenti/card/), [Carousel](/design-system/componenti/carousel/), [Timeline](/design-system/componenti/timeline/) (grazie agli **Accessibility Days 2025** per il workshop di validazione).
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione 3.7.0 ([Changelog UI Kit Italia](https://github.com/italia/design-ui-kit/releases))
+              - Aggiornato **Bootstrap Italia** alla versione 2.16.0 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.7.0
+            20 giugno 2025
+            - Risorse
+              - Aggiornato **Bootstrap Italia** alla versione 2.15.1 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.6.0
+            16 aprile 2025
+            - **[Fondamenti](/design-system/fondamenti/)**
+              - Nuova scheda: [Contenuti](/design-system/fondamenti/contenuti/)
+              - Aggiornati contenuti schede: [Linguaggio](/design-system/fondamenti/linguaggio/), [Microtesti](/design-system/fondamenti/microtesti/) e [Tono di voce](/design-system/fondamenti/tono-di-voce/) ([commit: `content(feat):fondamenti-contenuti `](https://github.com/italia/designers.italia.it/commit/b3218d16ff4c1b5c50da930e74df7673026f006c))
+
+            ### v1.5.0
+            13 marzo 2025
+            - Risorse
+              - Aggiornato **Bootstrap Italia** alla versione 2.14.0 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.4.3
+            10 febbraio 2025
+            - **[Componenti](/design-system/componenti/)**
+              - Corretta proprietà `pathname` in scheda [Thumbnav](/design-system/componenti/thumbnav/) ([commit: `fix: pathname component Thumbnav`](https://github.com/italia/designers.italia.it/commit/4cecbe964665f4ccfcac0f079616fdbddbb8e31a)) (grazie @Slpi11 per la segnalazione).
+            - Risorse
+              - Aggiornato **Bootstrap Italia** alla versione 2.13.4 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.4.2
+            29 gennaio 2025
+            - Risorse
+              - Aggiornato **Bootstrap Italia** alla versione 2.13.2 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.4.1
+            24 gennaio 2025
+            - Risorse
+              - Aggiornato **Bootstrap Italia** alla versione 2.13.1 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.4.0
+            23 gennaio 2025
+            - Risorse
+              - Aggiornato **Bootstrap Italia** alla versione 2.13.0 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.3.0
+            11 dicembre 2024
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornate immagini specifiche scheda: [Hero](/design-system/componenti/hero/) ([commit: `content: update media component...`](https://github.com/italia/designers.italia.it/commit/85bcf38d840980e9ed08d2551d1a7fd0ae895a64))
+              - Aggiornati contenuti e specifiche scheda: [Footer](/design-system/componenti/footer/) ([latest commit: `content: update anatomy and specs`](https://github.com/italia/designers.italia.it/commit/bf8dffe1dca47f1657e4ffbc2480073df9e63278)
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione 3.6.4 ([Changelog UI Kit Italia](https://github.com/italia/design-ui-kit/releases))
+              - Aggiornato **Design Tokens Italia** alla versione 1.2.1 ([Changelog Design Tokens Italia](https://github.com/italia/bootstrap-italia/releases))
+              - Aggiornato **Bootstrap Italia** alla versione 2.12.1 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.2.0
+            8 novembre 2024
+            - **[Fondamenti](/design-system/fondamenti/)**
+              - Aggiornati contenuti scheda: [Accessibilità](/design-system/fondamenti/accessibilita/) ([commit: `content: minor update...`](https://github.com/italia/designers.italia.it/commit/1f7420045471676e742d725fe4386a81b26b8769))
+              - Corretto url scheda: [Proporzioni media](/design-system/fondamenti/proporzioni-media) ([commit: `fix: proporzioni media link`](https://github.com/italia/designers.italia.it/commit/17e043c80ea7c1ddc4a7dc5b688b734ca4f2309d))
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione 3.6.2 ([Changelog UI Kit Italia](https://github.com/italia/design-ui-kit/releases))
+              - Aggiornato **Bootstrap Italia** alla versione 2.11.0 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.1.0
+            14 ottobre 2024
+            - **[Fondamenti](/design-system/fondamenti/)**
+              - Aggiornati contenuti scheda: [Linguaggio](/design-system/fondamenti/linguaggio)
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornate immagini specifiche scheda: [Avatar](/design-system/componenti/avatar/)
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione 3.6.1 ([Changelog UI Kit Italia](https://github.com/italia/design-ui-kit/releases))
+              - Aggiornato **Bootstrap Italia** alla versione 2.10.0 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+            ### v1.0.0
+            17 settembre 2024
+            - **[Come iniziare](/design-system/come-iniziare/)**
+              - Aggiornati contenuti scheda: [Per responsabili progetto](/design-system/come-iniziare/per-responsabili-progetto/).
+            - **[Componenti](/design-system/componenti/)**
+              - Nuova scheda: [Tables](/design-system/componenti/tables/).
+              - Miglioramenti: rivisto tono di voce e fix typo in tutte le schede della sezione ([commit: `content: ds-components-tov-and-formatting`](https://github.com/italia/designers.italia.it/commit/7f005a7f62f73d36cb2b2a7b836d525d788b1621))
+              - Miglioramenti: completamento della board [Component census](https://github.com/orgs/italia/projects/32/views/1) con la chiusura del terzo ciclo di verifiche di accessibilità e stato dei componenti nelle diverse librerie di design e sviluppo; apertura issue dedicate e aggiornamento delle tabelle di stato nelle schede componenti.
+              - Miglioramenti: aggiornate spaziature e impostazioni sidebar della documentazione ([commit: `feat: DS sidebar enhancements`](https://github.com/italia/designers.italia.it/commit/277c500c08c8a64abb28acd7c730ba8758f1f06a))
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione 3.6.0 ([Changelog UI Kit Italia](https://github.com/italia/design-ui-kit/releases))
+              - Aggiornato **Bootstrap Italia** alla versione 2.9.1 ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases))
+
+          moreButton: Versioni precedenti
+          moreButtonClose: Chiudi
+          moreText: | #C
+            ### v1.0.0-beta.5
+            6 agosto 2024
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornati contenuti schede (completata documentazione componenti!): [Autocomplete](/design-system/componenti/autocomplete/), [Checkbox](/design-system/componenti/checkbox), [Sections](/design-system/componenti/sections), [Sticky](/design-system/componenti/sticky), [Thumbnav](/design-system/componenti/thumbnav), [Toolbar](/design-system/componenti/toolbar), [Transfer](/design-system/componenti/transfer), [Upload](/design-system/componenti/upload).
+            - Risorse
+              - Aggiornato **Bootstrap Italia** alla versione v2.9.0.
+            
+            -------
+            ### v1.0.0-beta.4
+            5 luglio 2024
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornati contenuti schede: [Affix](/design-system/componenti/affix/), [Carousel](/design-system/componenti/carousel), [Collapse](/design-system/componenti/collapse), [Popover](/design-system/componenti/popover).
+              - Aggiunta automazione per mostrate lo stato delle verifiche sul componente dal [progetto GitHub di census componenti (link esterno)](https://github.com/orgs/italia/projects/32/views/1), via API Bootstrap Italia.
+            - Risorse
+              - Aggiornato **Bootstrap Italia** alla versione v2.8.8.
+
+            -------
+            ### v1.0.0-beta.3
+            24 maggio 2024
+            - **[Come contribuire](/design-system/come-contribuire/)**
+              - Aggiornati contenuti schede: [Per il design](/design-system/come-contribuire/per-il-design/), [Per lo sviluppo](/design-system/come-contribuire/per-lo-sviluppo/).
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornati contenuti schede: [Buttons](/design-system/componenti/buttons/), [Dimmer](/design-system/componenti/dimmer), [Pagination](/design-system/componenti/pagination), [Progress indicators](/design-system/componenti/progress-indicators), [Rating](/design-system/componenti/rating).
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione v3.5.0.
+              - Aggiornato **Bootstrap Italia** alla versione v2.8.7.
+            - Altro da Designers Italia
+              - Pubblicato nella sezione [Modelli](/modelli/) il nuovo [modello di contribuzione dedicato](/modelli/contribuisci-ai-modelli/)
+
+            -------
+            ### v1.0.0-beta.2 
+            29 marzo 2024
+            - **[Fondamenti](/design-system/fondamenti/)**
+              - Nuova scheda: [Identità](/design-system/fondamenti/identita/).
+              - Aggiornati contenuti schede: [Accessibilità](/design-system/fondamenti/accessibilita/), [Colori](/design-system/fondamenti/colori/), [Princìpi e intenzioni](/design-system/fondamenti/principi-e-intenzioni/), [Tipografia](/design-system/fondamenti/tipografia/).
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornati contenuti schede: [Header](/design-system/componenti/header), [Footer](/design-system/componenti/footer/).
+
+            -------
+            ### v1.0.0-beta.1 
+            8 marzo 2024
+            - **[Fondamenti](/design-system/fondamenti/)**
+              - Aggiornati contenuti scheda: [Versionamento](/design-system/fondamenti/versionamento/).
+            - **[Componenti](/design-system/componenti/)**
+              - Nuova scheda: [Checkbox](/design-system/componenti/checkbox/)
+              - Aggiornati contenuti schede: [Back](/design-system/componenti/back), [Back to top](/design-system/componenti/back-to-top/), [Bottomnav](/design-system/componenti/bottomnav/), [Forward](/design-system/componenti/forward/), [Navscroll](/design-system/componenti/navscroll), [Number input](/design-system/componenti/number-input/), [Overlay](/design-system/componenti/overlay/), [Radio button](/design-system/componenti/radio-button/), [Timeline](/design-system/componenti/timeline/).
+              - Miglioramenti: rivisto tono di voce e fix typo in tutte le schede della sezione.
+            - Risorse
+              - Aggiornato **UI Kit Italia** alla versione v3.4.0.
+
+            -------
+            ### v1.0.0-alpha.19
+            1 marzo 2024
+            - **[Componenti](/design-system/componenti/)**
+              - Aggiornati contenuti schede: [Form](/design-system/componenti/form/), [Input](/design-system/componenti/input/), [Notifications](/design-system/componenti/notifications/), [Select](/design-system/componenti/select/), [Sidebar](/design-system/componenti/sidebar/), [Steppers](/design-system/componenti/steppers/), [Toggles](/design-system/componenti/toggles/), [Tooltip](/design-system/componenti/tooltip/).
+
+            -------
             ### v1.0.0-alpha.18
             20 febbraio 2024
             - **[Come iniziare](/design-system/come-iniziare/)**
-              - Aggiornati contenuti schede: [Per designer](/design-system/come-iniziare/per-designer/), [Per sviluppatori](/design-system/come-iniziare/per-sviluppatori/)
+              - Aggiornati contenuti schede: [Per designer](/design-system/come-iniziare/per-designer/), [Per sviluppatori](/design-system/come-iniziare/per-sviluppatori/).
             - **[Come contribuire](/design-system/come-contribuire/)**
-              - Aggiornati contenuti scheda: [Per lo sviluppo](/design-system/come-contribuire/per-lo-sviluppo/)
+              - Aggiornati contenuti scheda: [Per lo sviluppo](/design-system/come-contribuire/per-lo-sviluppo/).
             - **[Fondamenti](/design-system/fondamenti/)**
-              - Aggiornati contenuti scheda: [Accessibilità](/design-system/fondamenti/accessibilita/)
+              - Aggiornati contenuti scheda: [Accessibilità](/design-system/fondamenti/accessibilita/).
             - **[Componenti](/design-system/componenti/)**
-              - Aggiornati contenuti schede: [Badge](/design-system/componenti/badge/), [Datepicker](/design-system/componenti/datepicker/), [Modal](/design-system/componenti/modal/), [Timepicker](/design-system/componenti/timepicker/)
+              - Aggiornati contenuti schede: [Badge](/design-system/componenti/badge/), [Datepicker](/design-system/componenti/datepicker/), [Modal](/design-system/componenti/modal/), [Timepicker](/design-system/componenti/timepicker/).
 
+            -------
             ### v1.0.0-alpha.17
             9 febbraio 2024
             - **[Componenti](/design-system/componenti/)**
-              - Aggiornati contenuti schede: [Accordion](/design-system/componenti/accordion/), [Alert](/design-system/componenti/alert/), [Avatar](/design-system/componenti/avatar/), [Callout](/design-system/componenti/callout/), [Card](/design-system/componenti/card/), [Dropdown](/design-system/componenti/dropdown/), [List](/design-system/componenti/list/), [Megamenu](/design-system/componenti/megamenu/)
-              
+              - Aggiornati contenuti schede: [Accordion](/design-system/componenti/accordion/), [Alert](/design-system/componenti/alert/), [Avatar](/design-system/componenti/avatar/), [Callout](/design-system/componenti/callout/), [Card](/design-system/componenti/card/), [Dropdown](/design-system/componenti/dropdown/), [List](/design-system/componenti/list/), [Megamenu](/design-system/componenti/megamenu/).
+
+            -------
             ### v1.0.0-alpha.16
             30 gennaio 2024
             - **[Fondamenti](/design-system/fondamenti/)**
@@ -254,7 +410,8 @@ components:
               - Corretta resa visiva anteprima componente: [Callout](/design-system/componenti/callout/).
             - Risorse
               - Aggiornato **Bootstrap Italia** alla versione v2.8.2.
-
+              
+            -------
             ### v1.0.0-alpha.15
             18 dicembre 2023
             - **[Fondamenti](/design-system/fondamenti/)**
@@ -271,9 +428,6 @@ components:
               - Aggiornato **Design Tokens Italia** alla versione v1.2.0.           
               - Aggiornato **Bootstrap Italia** alla versione v2.8.1.
 
-          moreButton: Versioni precedenti
-          moreButtonClose: Chiudi
-          moreText: | #C
             -------
             ### v1.0.0-alpha.14
             24 novembre 2023

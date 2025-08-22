@@ -91,28 +91,34 @@ function Kangaroo({
                 )}
               </MetaCollapse>
             </div>
-          ) : (
-            <div>
-              {tagsLabel && tags && tags.length > 0 && (
-                <div className="pills-wrapper d-md-flex align-items-start pt-3 pt-md-2">
-                  <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
-                    <Icon {...icon} addonClasses="me-3" />
-                    <span className={tagsLabelStyle}>
-                      <strong>{tagsLabel}</strong>
-                    </span>
-                  </div>
-                  <div className="chips ms-md-3 mb-2 mb-lg-0">
-                    {tags.map((tag, index) => (
-                      <Chip
-                        key={`chip-${index}`}
-                        label={tag}
-                        size="lg"
-                        color="primary"
-                      />
+          )}
+          {tagsLabel && tags && tags.length > 0 && (
+            <div className="pills-wrapper d-md-flex align-items-start pt-3 pt-md-2">
+              <div className="d-flex title-wrapper align-items-center mb-2 mb-lg-0 text-uppercase flex-shrink-0">
+                <Icon {...icon} addonClasses="me-3" />
+                <span className={tagsLabelStyle}>
+                  <strong>{tagsLabel}</strong>
+                </span>
+              </div>
+              <div className="chips ms-md-3 mb-2 mb-lg-0">
+                <div className="chips-list-wrapper">
+                  <ul
+                    className="chips-list chips d-flex flex-wrap mb-0"
+                    aria-label="Argomenti correlati:"
+                  >
+                    {tags.map((t, index) => (
+                      <li className="list-item" key={`list-chip-${index}`}>
+                        <Chip
+                          key={`chip-${index}`}
+                          label={t}
+                          size="lg"
+                          color="primary"
+                        />
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </div>
-              )}
+              </div>
             </div>
           )}
           {tagsDesignSystemLabel &&
@@ -126,15 +132,24 @@ function Kangaroo({
                   </span>
                 </div>
                 <div className="chips ms-md-3 mb-2 mb-lg-0">
-                  {tagsDesignSystem.map((tag, index) => (
-                    <Chip
-                      key={`chip-${index}`}
-                      label={tag}
-                      size="lg"
-                      color="primary"
-                      path="design-system/componenti/utili-per"
-                    />
-                  ))}
+                  <div className="chips-list-wrapper">
+                    <ul
+                      className="chips-list chips d-flex flex-wrap mb-0"
+                      aria-label="Argomenti correlati:"
+                    >
+                      {tagsDesignSystem.map((t, index) => (
+                        <li className="list-item" key={`list-chip-${index}`}>
+                          <Chip
+                            key={`chip-${index}`}
+                            label={t}
+                            size="lg"
+                            color="primary"
+                            path="design-system/componenti/utili-per"
+                          />
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             )}

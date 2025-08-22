@@ -1,38 +1,24 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/componenti/overlay.json
   template:
     name: design-system-component
-
 seo:
   name: Overlay - Designers Italia
-  description: "Per applicare etichette sovrapposte a immagini o altri contenuti"
+  description: Etichetta opaca per aggiungere testo o icone in sovrimpressione a immagini.
   canonical: null
   pathname: /design-system/componenti/overlay/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Overlay
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "Per applicare etichette sovrapposte a immagini o altri contenuti"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: Etichetta opaca per aggiungere testo o icone in sovrimpressione a immagini
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -43,23 +29,20 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Utilità,Media]
-
+      tagsDesignSystem:
+        - Utilità
+        - Media
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
+      id: preview-use
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/overlay/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -69,9 +52,24 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              Usa il componente Overlay per aggiungere testo in sovrapposizione
+              a un’immagine. 
 
+
+              Può essere utilizzato come apertura e presentazione di una pagina
+              oppure come collegamento a sotto-sezioni.
+
+
+              ### Alternative a questo componente
+
+
+              - **[Card](/design-system/componenti/card)**: usa la versione con
+              immagine se devi mostrare molti contenuti in uno spazio ridotto.
+
+              - **[Dimmer](/design-system/componenti/dimmer)**: quando hai
+              bisogno di mostrare un messaggio in sovrimpressione, coprendo una
+              o più sezioni di una pagina.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -80,35 +78,182 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              - Lo sfondo può coprire l’immagine per intero o solo una parte di
+              essa, generalmente quella in basso.
 
+              - Usa colori tenui o non eccessivamente saturi per garantire un
+              buon contrasto con il testo.
+
+
+              ### Attenzione a
+
+              - Non utilizzare il testo in sovraimpressione come didascalia
+              dell’immagine.
+
+
+              ### Buone pratiche sui contenuti
+
+              - Scrivi un testo breve che descriva il contenuto a cui si accede
+              cliccando sull'immagine.
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
-        components:
-          - name: TextImageCta
-            noSpace: true
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Da rivedere
+                      addonClasses: bg-warning
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/componenti/overlay/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda Storybook
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Non presente
+                      addonClasses: neutral-2-bg text-secondary
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -117,9 +262,23 @@ tabs:
             noSpace: false
             title: Anatomia
             headingLevel: 2
-            text: |
-              _In stesura_
+            text: >
+              ![Gli elementi che formano
+              Overlay](/images/design-system/componenti/overlay-anatomy.png)
 
+
+              Il componente overlay è composto da:
+
+              1. **immagine**, che può essere di [vari
+              formati](/design-system/fondamenti/proporzioni/);
+
+              2. **sfondo**, lo sfondo in sovrimpressione, può essere ad altezza
+              fissa o a tutta altezza;
+
+              3. **titolo**, il titolo del contenuto mostrato; 
+
+              4. **icona**, può essere utilizzata per suggerire flussi di
+              navigazione.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -128,9 +287,9 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >
+              Il componente Overlay agisce come uno strato sopra l'immagine,
+              unendo contenuti visivi e testuali.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -139,10 +298,12 @@ tabs:
             noSpace: false
             title: Specifiche di design
             headingLevel: 2
-            text: |
-              *In stesura*
+            text: >
+              Tutte le misure indicate sono espresse in `px`.
 
 
+              ![Specifiche di design di
+              Overlay](/images/design-system/componenti/overlay-specs.png)
       - full: true
         noSpace: true
         paddingLeft: true
@@ -150,30 +311,28 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: false #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
+      id: preview-dev
+      title: Anteprima
       viewerHeight: 0
       accordionUrl: https://italia.github.io/bootstrap-italia/docs/componenti/overlay/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -182,16 +341,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: false #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

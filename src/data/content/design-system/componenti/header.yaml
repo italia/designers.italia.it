@@ -1,38 +1,28 @@
-# ————————————————————————————————————————————
-# CREATEPAGE GATSBY
-# ————————————————————————————————————————————
 metadata:
   json: bsi/menu-di-navigazione/header.json
   template:
     name: design-system-component
-
 seo:
   name: Header - Designers Italia
-  description: "La testata e il menu di navigazione del sito o servizio"
+  description: >-
+    Area di intestazione principale di un sito o servizio che presenta
+    l'identità visiva e il menu di navigazione primaria.
   canonical: null
   pathname: /design-system/componenti/header/
-
 components:
   hero:
     specialKangarooComponent: true
     background: null
     title: Header
     tag:
-      label: Componenti #C
+      label: Componenti
       addonClasses: mt-3 text-uppercase
-    # titleTag:
-    #   label: Pronto
-    #   url: "#ComponentStatus"
-    #   addonClasses: bg-success mb-2
-    #   screenReaderText: "Stato del componente:"
     column: true
-    subtitle: "La testata e il menu di navigazione del sito o servizio"
-    # img: /images/400x300.png #I
-    # alt: "" #C
+    subtitle: >-
+      Area di intestazione principale di un sito o servizio che presenta
+      l'identità visiva e il menu di navigazione primaria
     imgRatio: 1x1
     noBorder: true
-
-    # KANGAROO: METADATA
     kangaroo:
       id: kangarooHero
       noPadding: true
@@ -43,24 +33,24 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tagsDesignSystem: [Identità,Navigazione]
-
+      tagsDesignSystem:
+        - Identità
+        - Navigazione
   tab:
     - full: true
-
 tabs:
-
   - title: Uso e accessibilità
-
     componentVariant:
-      id: "preview-use"
-      title: "Anteprima"
-      textInfo: Per visualizzare la modalità desktop è necessario uno schermo sufficientemente largo.
+      id: preview-use
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/
+      accordionUrl: >-
+        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/
       accordionOpen: false
       accordionShow: false
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -70,11 +60,22 @@ tabs:
             noSpace: false
             title: Quando usarlo
             headingLevel: 2
-            text: |
-              È necessario utilizzare il componente header in cima ad ogni pagina di un sito o servizio digitale della Pubblica Amministrazione italiana.
+            text: >
+              È necessario utilizzare il componente Header all'inizio di ogni
+              pagina di un sito o servizio digitale della Pubblica
+              Amministrazione italiana.
 
-              La sua presenza, infatti, aiuta le persone ad orientarsi tra siti e servizi di enti diversi, mantenendo coerente l’esperienza di navigazione.
 
+              La sua presenza, infatti, aiuta le persone ad orientarsi tra siti
+              e servizi di enti diversi, mantenendo coerente l’esperienza di
+              navigazione. 
+
+
+              Il componente è parte importante
+              dell'[identità](/design-system/fondamenti/identita/) di design
+              system .italia, da usare o personalizzare nei contenuti e nei
+              colori a seconda della scala, nazionale, territoriale e/o locale,
+              del servizio digitale. 
       - full: true
         noSpace: true
         paddingLeft: true
@@ -83,60 +84,231 @@ tabs:
             noSpace: false
             title: Come usarlo
             headingLevel: 2
-            text: |
-              La lista dei casi d’uso possibili per ciascuna variante del componente header.
+            text: >
+              La lista dei casi d’uso possibili per ciascuna variante del
+              componente header.
+
 
               ### Slim Header
 
-              Lo slim header è una porzione dell'header più **compatta** e **flessibile** che può indicare l'appartenenza del sito o servizio a una categoria o a un ordine gerarchico.  
+
+              Lo *slim* header è una porzione dell'header più **compatta** e
+              **flessibile** che può indicare l'appartenenza del sito o servizio
+              a una categoria o a un ordine gerarchico.  
+
 
               Ecco alcuni possibili casi d’uso:
-              - **pagina di login/registrazione**: consente alle persone di concentrarsi sull’azione primaria;
-              - **pagine di contenuto focalizzato**: es. articoli o pagine di prodotto, nelle quali l’header slim mantiene informazioni di navigazione essenziali;
-              - **applicazioni di terze parti**: può essere utilizzato nelle schermate in cui è necessario mostrare solo un titolo o un'icona di ritorno alla schermata precedente, riducendo al minimo la presenza di elementi di navigazione;
-              - **dashboard o pannelli di controllo**: in un ambiente di amministrazione, l'header slim può contenere informazioni chiave come il nome dell'utente, le notifiche e l'accesso rapido alle funzionalità principali, contribuendo a mantenere la vista generale del dashboard più pulita e concentrata.
+
+              - **pagina di login/registrazione**: consente alle persone di
+              concentrarsi sull’azione primaria;
+
+              - **pagine di contenuto focalizzato**: es. articoli o pagine di
+              prodotto, nelle quali lo slim header mantiene informazioni di
+              navigazione essenziali;
+
+              - **applicazioni di terze parti**: può essere utilizzato nelle
+              schermate in cui è necessario mostrare solo un titolo o un'icona
+              di ritorno alla schermata precedente, riducendo al minimo la
+              presenza di elementi di navigazione;
+
+              - **dashboard o pannelli di controllo**: in un ambiente di
+              amministrazione, lo slim header può contenere informazioni chiave
+              come il nome dell'utente, le notifiche e l'accesso rapido alle
+              funzionalità principali, contribuendo a mantenere la vista
+              generale del dashboard più pulita e concentrata.
+
 
               ### Header centrale
 
-              L’header centrale è una parte essenziale perché include il brand dell’ente e la sua descrizione. L’accesso al motore di ricerca e link aggiuntivi ai social media completano il componente.
 
-              Essendo priva di navigazione, questa variante è raccomandata per tutti quei casi in cui i contenuti si sviluppano su unica pagina. Ad esempio:
+              L’header *centrale* è una parte essenziale perché include il brand
+              dell’ente e la sua descrizione. L’accesso al motore di ricerca e
+              link aggiuntivi ai social media completano il componente.
+
+
+              Essendo priva di navigazione, questa variante è raccomandata per
+              tutti quei casi in cui i contenuti si sviluppano su unica pagina.
+              Ad esempio:
+
               - **landing page**;
-              - **pagina di invito dati** (es. tramite un form);
+
+              - **pagina di invito dati** (ad esempio, tramite un form);
+
               - **pagine di supporto** (conferma, errore 404, etc.).
 
-              A differenza della variante “slim header”, l’header centrale preserva il brand garantendo una maggiore visibilità.
+
+              A differenza della variante *slim* header, l’header *centrale*
+              preserva il brand garantendo una maggiore visibilità.
+
 
               ### Header completa
 
-              L’header completa include tutte le altre varianti in un unico componente. È quindi la versione che si presta a qualsiasi caso d’uso. 
 
+              L’header *completa* include tutte le altre varianti in un unico
+              componente. È quindi la versione che si presta a qualsiasi caso
+              d’uso. 
+      - full: true
+        noSpace: true
+        paddingLeft: true
+        components:
+          - name: TextImageCta
+            noSpace: true
+            title: Accessibilità
+            headingLevel: 2
+            text: >-
+              Lo stato delle verifiche di accessibilità effettuate sul
+              componente Bootstrap Italia
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Caratteristica
+              - text: Stato
+              - text: Descrizione
+            rows:
+              - cols:
+                  - text: Visivamente accessibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Uso e contrasto dei colori, leggibilità
+              - cols:
+                  - text: Amichevole con lettori di schermo
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Struttura titolazioni, etichette e testi alternativi
+              - cols:
+                  - text: Navigabile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Focus, struttura, navigazione da tastiera o altri device
+              - cols:
+                  - text: Comprensibile
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - text: Comprensibile, prevedibile, gestione semplice dell’errore
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
       - full: true
         noSpace: true
         paddingLeft: true
         components:
           - name: TextImageCta
             noSpace: false
-            title: Accessibilità
-            headingLevel: 2
-            text: |
-              *In stesura*
-
-      - full: true
-        noSpace: true
-        paddingLeft: true
-        id: ComponentStatus
-        components:
-          - name: TextImageCta
-            noSpace: true
             title: Stato del componente
             headingLevel: 2
-            text: |
-              *In stesura*
-
+            text: >-
+              Lo stato del presente componente nelle diverse librerie di design
+              e sviluppo del design system
+          - name: Table
+            responsive: table-responsive-md
+            head:
+              - text: Libreria
+              - text: Stato componente
+              - text: Link
+            rows:
+              - cols:
+                  - text: UI Kit Italia (design)
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Kit
+                      url: https://www.figma.com/community/file/1105848677422572920
+                      blank: true
+                      screenReaderText: UI Kit Italia su Figma (si apre in una nuova finestra)
+                      icon:
+                        icon: sprites.svg#it-figma
+                        size: sm
+              - cols:
+                  - text: Bootstrap Italia
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      blank: true
+                      url: >-
+                        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: React
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda Storybook
+                      url: >-
+                        https://italia.github.io/design-react-kit/?path=/docs/documentazione-menu-di-navigazione-header--documentazione
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+              - cols:
+                  - text: Angular
+                    scope: row
+                  - tag:
+                      label: Pronto
+                      addonClasses: bg-success
+                  - simpleCta:
+                      label: Scheda documentazione
+                      url: >-
+                        https://italia.github.io/design-angular-kit/design-angular-kit#/componenti/header
+                      blank: true
+                      screenReaderText: ' (si apre in una nuova finestra)'
+                      icon:
+                        icon: sprites.svg#it-external-link
+                        size: sm
+          - name: TextImageCta
+            ctas:
+              - label: Apri una issue sul repository Bootstrap Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/bootstrap-italia/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
+              - label: Apri una issue sul repository UI Kit Italia
+                screenReaderText: ' (si apre in una nuova finestra)'
+                url: https://github.com/italia/design-ui-kit/issues/new
+                blank: true
+                icon:
+                  icon: sprites.svg#it-github
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Progettazione
     sectionsEditorial:
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -148,61 +320,78 @@ tabs:
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/header-completo-anatomy.png
-            alt: "Gli elementi che compongono l'header completo"
+            alt: Gli elementi che compongono l'header completo
           - name: TextImageCta
             noSpace: true
             text: |
-              L'header completo è composto da tre elementi principali:
+              L'header *completo* è composto da tre elementi principali:
 
-              1. **header slim**
-              2. **header centrale**
-              3. **header nav**
+              1. **slim header**;
+              2. **header centrale**;
+              3. **header nav**.
 
               Ciascuno di essi prevede una serie di elementi particolari.
 
-              ### Header slim
+              ### Slim header
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/header-slim-anatomy.png
-            alt: "Gli elementi che compongono l'header slim"
+            alt: Gli elementi che compongono lo slim header
           - name: TextImageCta
             noSpace: true
-            text: |             
-              L'header slim è composto da tre elementi:
+            text: >
+              Lo *slim* header è composto da tre elementi:
 
-              1. **ente di appartenenza**: prevede il link ad un sito esterno;
-              2. **selettore lingua**: modifica la traduzione di tutti i contenuti del sito;
-              3. **pulsante di accesso**: abilita il login all'area personale laddove disponibile.
+
+              1. **ente di appartenenza**, prevede il link ad un sito esterno;
+
+              2. **selettore lingua**, modifica la lingua di tutti i contenuti
+              del sito;
+
+              3. **pulsante di accesso**, abilita il login all'area personale
+              laddove disponibile.
+
 
               ### Header centrale
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/header-centrale-anatomy.png
-            alt: "Gli elementi che compongono l'header centrale"
+            alt: Gli elementi che compongono l'header centrale
           - name: TextImageCta
             noSpace: true
-            text: |             
-              L'header centrale è composto da cinque elementi:
+            text: >
+              L'header *centrale* è composto da cinque elementi:
+
 
               1. **icona o logo** dell'ente;
+
               2. **nome dell'ente** in formato testuale;
-              3. eventuale **sottotitolo** (tag line) che descrive la natura dell'ente;
+
+              3. eventuale **sottotitolo** (tag line) che descrive la natura
+              dell'ente;
+
               4. **canali social** dell'ente;
+
               5. link alla **ricerca**.
+
 
               ### Header nav
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/header-nav-anatomy.png
-            alt: "Gli elementi che compongono l'header nav"
+            alt: Gli elementi che compongono l'header nav
           - name: TextImageCta
             noSpace: false
-            text: |             
-              L'header nav contiene due diversi menu di navigazione:
+            text: >
+              L'header *nav* contiene due diversi menu di navigazione:
 
-              1. **menu primario**: contiene le voci del primo livello di navigazione;
-              2. **menu secondario**: contiene le voci di navigazione trasversale rispetto all'alberatura dei contenuti (es. tag o argomenti).
 
+              1. **menu primario**, contiene le voci del primo livello di
+              navigazione;
+
+              2. **menu secondario**, contiene le voci di navigazione
+              trasversale rispetto all'alberatura dei contenuti (ad esempio, tag
+              o argomenti).
       - full: true
         noSpace: true
         paddingLeft: true
@@ -211,19 +400,31 @@ tabs:
             noSpace: false
             title: Comportamento
             headingLevel: 2
-            text: |
-              Tutte le varianti di header sono **responsive**, quindi si adattano alla viewport di qualsiasi dispositivo.
+            text: >
+              Tutte le varianti di header sono **responsive**, quindi si
+              adattano alla viewport di qualsiasi dispositivo.
+
 
               ### Interazioni 
 
-              Su dispositivi mobile o touch, il menu di navigazione non è direttamente visibile in pagina ma si apre tramite click/tap sull’icona menu, con un’animazione di ingresso da sinistra verso destra.
 
-              I link del menu di navigazione che prevedono un sottomenu espandibile ereditano le interazioni del componente [dropdown](/design-system/componenti/dropdown/).
+              Su dispositivi mobile o touch, il menu di navigazione non è
+              direttamente visibile in pagina ma si apre tramite clic/tap
+              sull’icona menu, con un’animazione di ingresso da sinistra verso
+              destra.
+
+
+              I link del menu di navigazione che prevedono un sottomenu
+              espandibile ereditano le interazioni del componente
+              [dropdown](/design-system/componenti/dropdown/).
+
 
               L’accesso alla barra di ricerca può avvenire in due modi: 
-              - tramite link alla pagina dedicata;
-              - tramite l’apertura di una finestra (overlay) rimanendo nella stessa pagina.
 
+              - tramite link alla pagina dedicata;
+
+              - tramite l’apertura di una finestra (overlay) rimanendo nella
+              stessa pagina.
       - full: true
         noSpace: true
         paddingLeft: true
@@ -237,21 +438,17 @@ tabs:
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/header-slim-specs.png
-            alt: "Header slim con la misura di tutte le spaziature"
+            alt: Header slim con la misura di tutte le spaziature
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/header-centrale-specs.png
-            alt: "Header centrale con la misura di tutte le spaziature"
+            alt: Header centrale con la misura di tutte le spaziature
           - name: ImgFull
             isDSPreview: true
             img: /images/design-system/componenti/header-nav-specs.png
-            alt: "Header nav con la misura di tutte le spaziature"
+            alt: Header nav con la misura di tutte le spaziature
           - name: TextImageCta
             noSpace: false
-            # text: |             
-              
-
-
       - full: true
         noSpace: true
         paddingLeft: true
@@ -259,31 +456,32 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per designer #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-designer/" #M
-              blank: false #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
-
+              - label: Vai alla scheda per designer
+                url: /design-system/come-iniziare/per-designer/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2
   - title: Sviluppo
-
     componentVariant:
-      id: "preview-dev"
-      title: "Anteprima"
-      textInfo: Per visualizzare la modalità desktop è necessario uno schermo sufficientemente largo.
+      id: preview-dev
+      title: Anteprima
+      textInfo: >-
+        Per visualizzare la modalità desktop è necessario uno schermo
+        sufficientemente largo.
       viewerHeight: 0
-      accordionUrl: https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/
+      accordionUrl: >-
+        https://italia.github.io/bootstrap-italia/docs/menu-di-navigazione/header/
       accordionOpen: true
       accordionShow: true
-
     sectionsEditorial:
       - full: true
         noSpace: true
@@ -292,16 +490,17 @@ tabs:
           - name: TextImageCta
             title: Come iniziare
             headingLevel: 2
-            text: Scopri come utilizzare tutti gli strumenti pensati per progettare interfacce ed esperienze dei servizi pubblici
+            text: >-
+              Scopri come utilizzare tutti gli strumenti pensati per progettare
+              interfacce ed esperienze dei servizi pubblici
             ctas:
-            - label: Vai alla scheda per sviluppatori #C
-              # screenReaderText: " (si apre in una nuova finestra)" #C
-              url: "/design-system/come-iniziare/per-sviluppatori/" #M
-              blank: false #M #C true if new tab for external links
-              icon:
-                icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
-                color: primary
-                align: middle
-                hidden: true
-                size: sm
-                addonClasses: ms-2
+              - label: Vai alla scheda per sviluppatori
+                url: /design-system/come-iniziare/per-sviluppatori/
+                blank: false
+                icon:
+                  icon: sprites.svg#it-arrow-right
+                  color: primary
+                  align: middle
+                  hidden: true
+                  size: sm
+                  addonClasses: ms-2

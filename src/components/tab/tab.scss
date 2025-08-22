@@ -1,36 +1,46 @@
 @import "../../scss/bootstrap-breakpoints";
 
 .tab {
-  font-size:1rem;
+  font-size: 1rem;
+
   .nav-link {
     -moz-transition: none;
-    -o-transition:none;
+    -o-transition: none;
     -webkit-transition: none;
-    transition:none;
+    transition: none;
     padding: 16px 24px;
     color: #0066cc;
+
     &:not(.active) {
-      border-color: #C5C7C9!important;
+      border-color: #C5C7C9 !important;
     }
+
     &:is(.active) {
-      border-color: #C5C7C9!important;
-      border-bottom:none!important;
-      color:#003366;
+      border-color: #C5C7C9 !important;
+      border-bottom: none !important;
+      color: #003366;
       padding: 16px 23px 18px 23px;
     }
   }
-  .nav-item-filler {
-    border-color: #C5C7C9!important;
-    min-width: 16px;
+
+  .nav-tabs.nav-tabs-cards {
+    &:before {
+      content: "";
+      flex-grow: 0;
+      border-bottom: 1px solid hsl(210, 4%, 78%);
+      min-width: 16px;
+    }
   }
 }
+
+
 
 
 // Tablet landscape
 @include media-breakpoint-up(lg) {
   .tab {
-    .nav-item-filler {
-      &.flex-grow-0 {
+    .nav-tabs.nav-tabs-cards {
+      &:before {
         width: 3rem;
       }
     }

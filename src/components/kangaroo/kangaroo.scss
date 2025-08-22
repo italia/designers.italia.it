@@ -38,14 +38,13 @@
 }
 
 .bg-primary {
-  .kangaroo {
-    .chip.chip-primary {
-      border-color: var(--kangaroo-negative-element-color);
-
-      &:active {
-        border-color: var(--kangaroo-negative-element-color);
-      }
-
+	.kangaroo {
+		.chip.chip-primary {
+			border-color: var(--kangaroo-negative-element-color);
+      color: var(--kangaroo-negative-element-color);
+			&:active {
+				border-color: var(--kangaroo-negative-element-color);
+			}
       &:hover {
         background-color: var(--kangaroo-tags-hover-color);
       }

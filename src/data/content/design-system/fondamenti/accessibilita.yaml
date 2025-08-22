@@ -11,6 +11,7 @@ metadata:
 seo:
   name: Accessibilità
   description: "Progettare e sviluppare interfacce digitali significa decidere continuamente chi includere, o escludere, dall’esperienza di utilizzo e fruizione, a seconda delle proprie caratteristiche, conoscenze, capacità o condizioni di disabilità, temporanee o meno"
+  image: https://designers.italia.it/images/design-system/ds-beta-naming.png
   canonical: null
   pathname: /design-system/fondamenti/accessibilita/
 
@@ -72,7 +73,7 @@ components:
               align: "middle"
               color: "secondary"
             label: Linee guida di design #C
-            url: "/norme-e-riferimenti/linee-guida-di-design" #M
+            url: "/normativa/linee-guida-di-design" #M
       personalInfo:
          items: #C
           - title: Sei
@@ -97,7 +98,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Accessibilità,Progettazione interfaccia,Sviluppo interfaccia]
+      tags: [Accessibilità,Progettazione servizi,Accessibilità,Cultura progettuale,Progettazione interfaccia,Sviluppo interfaccia]
 
   sectionsEditorial:
     # - fullColumn: true
@@ -160,13 +161,30 @@ components:
               addonClasses: ms-2
 
         - name: TextImageCta
+          title: Identità
+          noSpace: true
+          text: |
+            La semplicità d’uso è il primo elemento distintivo dell’esperienza che i servizi digitali pubblici di qualità devono proiettare verso le persone.
+          ctas:
+          - label: Vai al fondamento Identità #C
+            url: "/design-system/fondamenti/identita/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
           title: Linee guida e criteri di successo
           noSpace: true
           text: |
             Il livello di conformità [richiesto](https://docs.italia.it/italia/designers-italia/design-linee-guida-docs/it/stabile/doc/service-design/accessibilita.html#linee-guida-e-criteri-di-successo) per i siti della Pubblica Amministrazione dalla norma tecnica europea armonizzata **UNI CEI EN 301549:2021** (Requisiti di accessibilità per prodotti e servizi ICT), corrisponde ai **livelli “A” e “AA” della W3C Recommendation WCAG 2.1**.
           ctas:
           - label: "Linee guida accessibilità" #C
-            url: "/norme-e-riferimenti/linee-guida-accessibilita/" #M
+            url: "/normativa/linee-guida-accessibilita/" #M
             blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -287,7 +305,7 @@ components:
             
             **Per svolgere i test è possibile isolare l'anteprima del componente in una finestra dedicata**, con il pulsante in alto a destra dell'anteprima. Questa funzionalità permette di giudicare le caratteristiche intrinseche del componente isolate dal contesto documentazione, semplificando la necessità di implementare ambienti di test ad hoc.
 
-            **Per completare il passaggio della presente documentazione alle versioni stabili, è iniziato un nuovo ciclo completo di test che si svolgeranno tra Q1 e Q2 del 2024.**
+            Puoi esplorare lo stato delle verifiche di accessibilità e coerenza per tutti i componenti nella [board dedicata su GitHub](https://github.com/orgs/italia/projects/32). 
           ctas:
           - label: "Segnalazioni di accessibilità per Bootstrap Italia" #C
             url: https://github.com/italia/bootstrap-italia/issues?q=is%3Aissue+is%3Aopen+label%3Aa11y #M

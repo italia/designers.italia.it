@@ -13,6 +13,9 @@
   .link-list-wrapper ul li a:hover span {
     color: #FFF;
   }
+  .it-footer-main .link-list-wrapper ul li a:not(.disabled) span {
+    text-decoration: underline;
+  }
   .it-footer-main .link-list-wrapper ul li a:hover:not(.disabled) {
     text-decoration: none;
   }
@@ -49,12 +52,8 @@
         color: #FFF;
       }
     }
-    .btn-outline-primary {
-      box-shadow: inset 0 0 0 2px #fff;
-      color: #FFF;
-      &:focus {
-        box-shadow: inset 0 0 0 2px #fff;
-      }
+    span.bg-dark { // white primary button hack
+      background-color: inherit!important;
     }
   }
 }
