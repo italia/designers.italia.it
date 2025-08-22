@@ -36,7 +36,7 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 
 ---
 
-### Schemi YAML
+### Schemi YAML completi (puoi fare copia/incolla)
 - [Schema file Notizie](#schema-file-yaml-specifico-per-notizie)  
 - [Schema file Eventi](#schema-file-yaml-specifico-per-eventi)  
 - [Schema file Media](#schema-file-yaml-specifico-per-media)  
@@ -63,10 +63,23 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
    - Formato: OpenDocument (`.odt`)  
    - Percorso: `/static/files/community/subtitles/`
 
+#### Convenzioni nomi file:
+
+##### File YAML
+- Formato: `YYYYMMDD-slug-tutto-minuscolo.yaml`
+- Data: quella di pubblicazione prevista, non di scrittura
+- Slug: solo lettere (non accentate), numeri, trattini
+
+##### Immagini e file correlati
+- Hero: `YYYYMMDD-slug-1920x923.jpg` (o dimensione reale in px)
+- SEO: `YYYYMMDD-slug-1200x630.jpg` (o dimensione reale in px)
+- Inline: `YYYYMMDD-slug-descrizione-immagine.jpg`
+- Sottotitoli: `YYYYMMDD-slug-contenuto.vtt`
+- Trascrizioni: `YYYYMMDD-slug-contenuto.odt`
+
 ---
 
 ### 2. Creazione della Pull Request
-
 1. **Fork** del repository `italia/designers.italia.it`  
 2. **Crea un branch** con nome descrittivo, es. `content/notizia-assistente-virtuale`  
 3. **Aggiungi i file nei percorsi corretti:**  
@@ -89,13 +102,16 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 8. **Marca la PR come "draft"** finché ci lavori
 9. **Chiedi la "review"** alla redazione e/o maintainer
 
+Nota bene: **crea la PR almeno una settimana/dieci giorni prima della data di pubblicazione prevista**, per garantire tempo sufficiente per review, eventuali correzioni e rilascio in produzione.
+
+
 ---
 
 ### 3. Checklist di review
 
 #### ✅ Validazione tecnica
 - [ ] File YAML valido (nessun errore in Vercel)  
-- [ ] `seo.pathname` corretto (inizia/termina con `/`)  
+- [ ] `seo.pathname` indica slug corretto (inizia/termina con `/`, non ha spazi, caratteri speciali o lettere maiuscole, corrisponde al titolo)  
 - [ ] Nessun errore 404 nei link interni
 - [ ] Nessun errore nei test automatici associati alla PR
 
@@ -105,10 +121,13 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 - [ ] `seo.image` presente e caricata nel percorso corretto, è l'unica con url assoluto https://designers.italia.it/images/..
 
 #### ✅ Contenuti
-- [ ] Titoli e sottotitoli coerenti e senza errori  
+- [ ] Titoli e sottotitoli coerenti e senza errori
 - [ ] Paragrafi brevi (max 3-4 righe)  
 - [ ] Heading ordinati semanticamente (H2 → H3)  
 - [ ] Link parlanti (evitare “clicca qui”)
+- [ ] Caratteri speciali corretti, ad esempio:
+ - usa l'apostrofo `’`, e non l'apice `'` al suo posto
+ - usa lettere maiuscole accentate `È`, e non apici `E'`
 - [ ] Contenuti validati dalla redazione e/o maintainer
 
 #### ✅ Accessibilità
@@ -131,16 +150,6 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 - ❌ Link esterni non marcati con `it-external-link` e nota “(si apre in una nuova finestra)”  
 - ❌ Uso di heading saltati (H2 → H4 senza H3)  
 - ❌ File YAML con indentazione errata (attenzione a usare spazi coerenti e non tab)
-
----
-
-## Rilascio in produzione
-
-Una volta approvatate dalla redazione e dai maintainer del sito, le PR saranno rilasciate sul ramo principale (azione squash & Merge verso ramo main, commit parlante collegato all'autore in cui è possibile lasciare il link alla PR se necessario)
-
-Per il rilascio vero e proprio in produzione (a cura dei maintainer), la procedura da seguire è: 
-1. **lanciare workflow action "prepare-deploy"** (alcuni minuti): copia immagini e file dal ramo principale a GitHub Pages (procedura preventiva necessaria per far sì che funzioni la generazione automatica delle immagini per le social card, che usano url assoluti)
-2. **lanciare workflow action "deploy"** (circa una mezz'ora): ricostruisce (build) il sito dal ramo principale e lo rilascia su GitHub Pages all'indirizzo https://designers.italia.it.
 
 ---
 
@@ -290,20 +299,39 @@ highlightedCards:
 
 ---
 
+## Rilascio in produzione (a cura dei maintainer)
+
+**Una volta approvate** dalla redazione e dai maintainer del sito, **le PR saranno rilasciate sul ramo principale** (azione squash & Merge verso ramo `main`), con un commit parlante collegato all'autore originale, in cui è possibile lasciare il link alla PR se utile.
+
+Per il rilascio vero e proprio in produzione (sempre a cura dei maintainer), la procedura da seguire è: 
+1. **Lanciare workflow action "prepare-deploy"** (alcuni minuti): copia immagini e file dal ramo principale a GitHub Pages (procedura preventiva necessaria per far sì che funzioni la generazione automatica delle immagini per le social card, che usano url assoluti).
+2. **Lanciare workflow action "deploy"** (circa mezz'ora allo stato dell'arte): ricostruisce (build) il sito dal ramo principale e lo rilascia su GitHub Pages all'indirizzo https://designers.italia.it.
+
+Nota bene per l'eventuale modifica di contenuti esistenti: 
+- **Mantieni lo stesso `pathname` e nome file dello YAML** (slug) per preservare SEO e referrals. Se fosse assoluamente necessario cambiarli, ricorda di attivare le funzionalità di redirect inserendo gli appositi attributi nella sezione "metadata": 
+```yaml
+metadata:
+  redirect_from:
+    - /community/[tipo]/[slug-precedente]
+```
+- **Valuta, se le modifiche fossero solo tecniche e non di contenuto, di includere `(last-update-skip)`** nel messaggio del commit per il merge su `main`. In questo modo l'informazione "Ultimo aggiornamento: " presente al fondo della pagina web non si aggiornerà alla data presente.   
+
+---
+
 ## Appendice – Dimensioni immagini consigliate
 
 | Tipo immagine   | Dimensioni consigliate | Uso principale | Formato consigliato |
 |-----------------|------------------------|----------------|----------------------|
 | **Hero / Cover** | 1920 × 923 px          | Immagine principale in apertura pagina (hero) | PNG o JPG ottimizzati |
-| **SEO / Social** | 1200 × 630 px          | Card di anteprima per condivisione su social e metadati SEO | PNG o JPG ottimizzati |
+| **SEO / Social** | 1200 × 630 px          | Elementi grafici che saranno usati per generare la card di anteprima per condivisione su social e metadati SEO | PNG o JPG ottimizzati |
 | **Infografiche / schemi** | Variabile, max larghezza 1920 px | Contenuti editoriali e approfondimenti (immagini inline) | PNG o JPG ottimizzati |
 
 **Note operative:**
 - Peso massimo consigliato per ogni immagine: **≤ 800Kb**  
-- Nomi file descrittivi, coerenti con contenuto e in minuscolo (es. `notizia-servizi-digitali-hero.jpg`)  
+- Nomi file descrittivi, coerenti con contenuto e in minuscolo (es. `notizia-servizi-digitali-hero.jpg`)
 - Aggiungere sempre un testo alternativo (`alt`) significativo, tranne per immagini puramente decorative (`alt: ""`)  
-- Evitare l’uso di immagini contenenti testo: preferire soluzioni testuali native per garantire accessibilità  
-- Si ricorda che l'immagine seo è una "immagine card seo" generata in automatico, mescolando titolo, metadati e immagine fornita
+- Evitare l’uso di immagini contenenti testo: preferire soluzioni testuali per garantire accessibilità. 
+- Si ricorda che l'immagine che apparirà nelle condivisioni social (immagine SEO) non è la sola immagine seo caricata, ma una versione generata a partire da questa che contiene anche titolo della pagina e altri elementi. 
 
 ---
 
@@ -341,7 +369,7 @@ Per le **notizie**, è importante curare i campi di metadati redazionali come `k
 ```yaml
 metadata:
   template:
-    name: level3 # article?
+    name: level3 
   archive: notizie
 
 seo:
@@ -373,13 +401,6 @@ components:
     tag:
         label: Notizia
         addonClasses: mt-3 text-uppercase
-    # pretext:
-    #   icon:
-    #     icon: sprites.svg#it-info-circle
-    #     size: sm
-    #   text: In breve
-    # text: |
-    #   Lorem ipsum
 
     kangaroo:
       id: kangarooExample
@@ -410,7 +431,7 @@ components:
             label: 29 luglio 2025
 
   imageIcons:
-   image: /images/community/202507-assistente-virtuale-1920x923.png
+   image: /images/community/202507-assistente-virtuale-1920x923.png #I #XXX
    alt: ""
    background: dark
 
@@ -460,11 +481,9 @@ components:
             I nuovi strumenti sono stati già testati con la **Scuola Normale Superiore**, che li ha usati per progettare un [assistente virtuale per l'orientamento universitario](https://medium.com/@cantu.daria/88e6dca498ec). 
 
             L’esperienza ha confermato l’efficacia degli strumenti anche in contesti complessi come quello accademico, aiutando il team a definire tono, identità e comportamento dell’assistente in base ai bisogni delle persone a cui si rivolge.
-            
 
         - name: TextImageCta
           title: Progetta un assistente virtuale 
-          #text: |
           headingLevel: 2
           ctasVertical: true
           ctas:
@@ -492,13 +511,13 @@ Per gli **eventi**, il campo più delicato è `components.hero.kangaroo.eventInf
 # ————————————————————————————————————————————
 metadata:
   template:
-    name: level3 # article?
+    name: level3 
   archive: eventi
 
 seo:
   name: "Community lab di Developers Italia"
   description: "Software a riuso nella PA: linee guida, strumenti e buone pratiche."
-  image: https://designers.italia.it/images/community/eventi/2025/20250710-community-lab-developers-italia.png
+  image: https://designers.italia.it/images/community/eventi/2025/20250710-community-lab-developers-italia.png #I #XXX
   canonical: null
   pathname: /community/eventi/20250710-community-lab-developers-italia
 
@@ -575,8 +594,6 @@ components:
   sectionsEditorial :
     - menu: false
       centered: true
-      # title: Titolo area h2
-      # text: Sottotitolo area h2
       id: corpoEvento
       components:
 
@@ -586,14 +603,12 @@ components:
 
 
         - name: TextImageCta
-          # title: Titoletto interno h3
           text: |
             Il prossimo Community Lab di Developers Italia propone un appuntamento dedicato al tema del [**Software a riuso della PA**](https://developers.italia.it/), rivolto ad amministrazioni, tecnici delle PA e fornitori.
             Durante il webinar verranno approfondite le buone pratiche per la creazione, pubblicazione, e installazione del software a riuso, oltre al lancio del nuovo thread dedicato al software a riuso su Forum Italia.
             Quest’ultimo sarà uno spazio di confronto aperto per porre domande, raccogliere casi d’uso, criticità ed esperienze da parte della community tecnica e istituzionale.
             
             I community lab sono incontri online dedicati alla condivisione di conoscenze e migliori pratiche sulla progettazione e sviluppo efficace dei servizi pubblici digitali con gli esperti che curano l’evoluzione delle risorse di Designers e Developers Italia.
-
 
           ctas:
           - label: Registrati
@@ -650,13 +665,13 @@ Per mostrare una trascrizione in pagina, puoi linkare un file in formato aperto 
 # ————————————————————————————————————————————
 metadata:
   template:
-    name: level3 # article?
+    name: level3
   archive: media
 
 seo:
   name: "Community lab di Developers Italia: software a riuso nella PA"
   description: "Approfondimento sulle linee guida, gli strumenti pratici e le buone pratiche."
-  image: https://designers.italia.it/images/community/media-thumbnails/20250710-community-lab-developers-software-a-riuso-nella-pa.png
+  image: https://designers.italia.it/images/community/media-thumbnails/20250710-community-lab-developers-software-a-riuso-nella-pa.png #I #XXX
   canonical: null
   pathname: /community/media/20250710-community-lab-developers-software-a-riuso-nella-pa/
   
