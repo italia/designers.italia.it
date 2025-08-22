@@ -163,3 +163,4 @@ Il template HTML usato per contenere i componenti è questo: https://github.com/
 - Versioni tabella non aggiornate quando ci sono nuovi rilasci esterni
 - Changelog fuori ordine (sempre in cima)
 - Link non funzionanti
+- Versione di Bootstrap Italia delle anteprime componenti non aggiornata 
