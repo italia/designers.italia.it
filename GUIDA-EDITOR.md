@@ -84,16 +84,20 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
    - Verificati link e metadati SEO
    ```
 5. **Apri la PR** verso `main`  
-6. **Controlla l’anteprima Vercel** collegata alla PR su GitHub  
+6. **Controlla l’anteprima Vercel** collegata alla PR su GitHub (alcuni minuti per generarla, fai attenzione se ci fossero errori di build)
+7. **Controlla i test automatici** associati alla PR
+8. **Marca la PR come "draft"** finché ci lavori
+9. **Chiedi la "review"** alla redazione e/o maintainer
 
 ---
 
-### 3. Checklist di Revisione
+### 3. Checklist di review
 
 #### ✅ Validazione tecnica
 - [ ] File YAML valido (nessun errore in Vercel)  
 - [ ] `seo.pathname` corretto (inizia/termina con `/`)  
-- [ ] Nessun errore 404 nei link interni  
+- [ ] Nessun errore 404 nei link interni
+- [ ] Nessun errore nei test automatici associati alla PR
 
 #### ✅ SEO e Metadati
 - [ ] `seo.name` ≤60 caratteri  
@@ -104,12 +108,13 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 - [ ] Titoli e sottotitoli coerenti e senza errori  
 - [ ] Paragrafi brevi (max 3-4 righe)  
 - [ ] Heading ordinati semanticamente (H2 → H3)  
-- [ ] Link parlanti (evitare “clicca qui”)  
+- [ ] Link parlanti (evitare “clicca qui”)
+- [ ] Contenuti validati dalla redazione e/o maintainer
 
 #### ✅ Accessibilità
 - [ ] Alt text significativo o `""` se immagine decorativa  
-- [ ] Trascrizioni per contenuti audio/video disponibili  
-- [ ] Sottotitoli `.vtt` in italiano per i video  
+- [ ] Trascrizioni per contenuti audio/video laddove possibile
+- [ ] Sottotitoli `.vtt` in italiano per audio/video con parlato
 - [ ] Segnalato quando un link apre in nuova finestra  
 
 #### ✅ Immagini
@@ -125,7 +130,17 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 - ❌ Immagini troppo pesanti (>1Mb) o senza alt text  
 - ❌ Link esterni non marcati con `it-external-link` e nota “(si apre in una nuova finestra)”  
 - ❌ Uso di heading saltati (H2 → H4 senza H3)  
-- ❌ File YAML con indentazione errata (spazi al posto di tab obbligatoriamente coerenti)  
+- ❌ File YAML con indentazione errata (attenzione a usare spazi coerenti e non tab)
+
+---
+
+## Rilascio in produzione
+
+Una volta approvatate dalla redazione e dai maintainer del sito, le PR saranno rilasciate sul ramo principale (azione squash & Merge verso ramo main, commit parlante collegato all'autore in cui è possibile lasciare il link alla PR se necessario)
+
+Per il rilascio vero e proprio in produzione (a cura dei maintainer), la procedura da seguire è: 
+1. **lanciare workflow action "prepare-deploy"** (alcuni minuti): copia immagini e file dal ramo principale a GitHub Pages (procedura preventiva necessaria per far sì che funzioni la generazione automatica delle immagini per le social card, che usano url assoluti)
+2. **lanciare workflow action "deploy"** (circa una mezz'ora): ricostruisce (build) il sito dal ramo principale e lo rilascia su GitHub Pages all'indirizzo https://designers.italia.it.
 
 ---
 
