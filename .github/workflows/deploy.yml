@@ -1,5 +1,16 @@
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 on:
   workflow_dispatch:
+
+env:
+  GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+  CI: true
+  NODE_ENV: production
+  GATSBY_CPU_COUNT: 2
+  NODE_OPTIONS: --max-old-space-size=4096
 
 jobs:
   deploy:
@@ -9,17 +20,46 @@ jobs:
         with:
           # We want all the history to display the last updated date in pages
           fetch-depth: 0
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm ci
-      - run: npm run build
+          cache: 'npm'
+
+      - name: Cache Gatsby
+        uses: actions/cache@v3
+        with:
+          path: |
+            .cache
+            public
+            node_modules/.cache
+            .gatsby-cache
+          key: gatsby-cache-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            gatsby-cache-
+
+      - name: Build
+        run: |
+          npm ci --prefer-offline
+          SHARP_CONCURRENCY=2 \
+          GATSBY_CONCURRENT_DOWNLOAD=5 \
+          npm run build
         env:
           MATOMO_SITE_ID: ${{ secrets.MATOMO_SITE_ID }}
           MATOMO_SITE_URL: ${{ secrets.MATOMO_SITE_URL }}
-      - run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/italia/designers.italia.it
-          echo designers.italia.it > public/CNAME
-          npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify Build Workflow (No Actual Deployment)
+        run: |
+          echo "Build verification succeeded"
+          echo "Files that would be deployed:"
+          find public -type f | wc -l
+          du -sh public/
+          echo "TEST COMPLETE - No files were deployed to production"
+          
+      # - name: Deploy
+      #   run: |
+      #     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/italia/designers.italia.it
+      #     echo designers.italia.it > public/CNAME
+      #     npm run deploy
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
