@@ -25,10 +25,9 @@ function LabelTextArea(props) {
         className="form-control"
         onChange={handleChange}
         autoComplete="off"
+        value={message}
         {...opts}
-      >
-        {message}
-      </textarea>
+      />
     </>
   );
 }
