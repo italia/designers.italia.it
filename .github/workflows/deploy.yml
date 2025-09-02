@@ -47,19 +47,11 @@ jobs:
         env:
           MATOMO_SITE_ID: ${{ secrets.MATOMO_SITE_ID }}
           MATOMO_SITE_URL: ${{ secrets.MATOMO_SITE_URL }}
-
-      - name: Verify Build Workflow (No Actual Deployment)
-        run: |
-          echo "Build verification succeeded"
-          echo "Files that would be deployed:"
-          find public -type f | wc -l
-          du -sh public/
-          echo "TEST COMPLETE - No files were deployed to production"
           
-      # - name: Deploy
-      #   run: |
-      #     git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/italia/designers.italia.it
-      #     echo designers.italia.it > public/CNAME
-      #     npm run deploy
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        run: |
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/italia/designers.italia.it
+          echo designers.italia.it > public/CNAME
+          npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
