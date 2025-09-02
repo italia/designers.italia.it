@@ -70,6 +70,7 @@ function MediaPlayerEl({
     video.player.controlBar.removeChild("SkipBackward");
     video.player.controlBar.removeChild("SkipForward");
     if (subtitles)
+      // note: all videos with voice/s must have subtitles! (a11y)
       video.player.addRemoteTextTrack({
         kind: "subtitles",
         label: "Italiano",
@@ -122,6 +123,7 @@ function MediaPlayerEl({
           </div>
         </div>
         <div>
+          {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
           <video
             controls
             data-bs-video

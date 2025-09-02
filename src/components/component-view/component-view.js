@@ -2,7 +2,6 @@ import classNames from "classnames";
 import React, { useState, useEffect } from "react";
 import slugify from "slugify";
 
-import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/prism";
 import loadable from "@loadable/component";
 import { Notification } from "bootstrap-italia";
 import Button from "../button/button";
@@ -107,8 +106,6 @@ function ComponentView({
     iframe.addEventListener("transitionend", initAutoHeight);
   });
 
-  const theme = a11yDark;
-
   const copyToClipboard = (e, code) => {
     e.preventDefault();
     navigator.clipboard.writeText(code);
@@ -122,7 +119,6 @@ function ComponentView({
   };
 
   const id = slugify(variantName, { lower: true, strict: true });
-
   const uuid = `${idPrefix}-component-view-id_${id}`;
   const accId = `${uuid}-accordion`;
   const headId = `${uuid}-heading`;
@@ -264,7 +260,7 @@ function ComponentView({
               role="region"
               aria-labelledby={headId}
             >
-              <div className="accordion-body p-0 position-relative">
+              <div className="accordion-body syntax-highlight-scope p-0 position-relative">
                 <div
                   aria-hidden="true"
                   className="position-absolute end-0 split-code-checkbox"
@@ -279,10 +275,10 @@ function ComponentView({
                     />
                   )}
                 </div>
+
                 {contentTrimmed && (
                   <SyntaxHighlighter
                     language="markup"
-                    style={theme}
                     showLineNumbers
                     wrapLines={wrappedCode}
                     lineProps={{
