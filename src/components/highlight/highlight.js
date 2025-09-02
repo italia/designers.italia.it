@@ -86,19 +86,19 @@ function Highlight({
     const buttonLabel = customCta || "Scopri di più";
     const articleTitle = node.components?.hero?.title;
 
-    const createAriaLabel = (cta, title) => {
+    const createAriaLabel = (cta, labelTitle) => {
       // Handle different CTA patterns and create contextual aria-labels
       if (cta.toLowerCase().includes("scopri")) {
-        return `Scopri di più su "${title}"`;
+        return `Scopri di più su "${labelTitle}"`;
       }
       if (cta.toLowerCase().includes("esplora")) {
-        return `Esplora "${title}"`;
+        return `Esplora "${labelTitle}"`;
       }
       if (cta.toLowerCase().includes("leggi")) {
-        return `Leggi "${title}"`;
+        return `Leggi "${labelTitle}"`;
       }
       // Generic fallback
-      return `${cta}: ${title}`;
+      return `${cta}: ${labelTitle}`;
     };
 
     return {
