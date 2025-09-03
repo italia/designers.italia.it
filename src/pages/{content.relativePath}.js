@@ -520,6 +520,10 @@ export const query = graphql`
             fullHeight
             rounded
             showDateInfo
+            showTags  
+            showDateOverlay
+            showIconOverlay
+            showTag
           }
           cards {
             title
