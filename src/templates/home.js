@@ -29,7 +29,13 @@ import BannerTextCta from "../components/banner-text-cta/banner-text-cta";
 import Numbers from "../components/numbers/numbers";
 import ImageIcons from "../components/image-icons/image-icons";
 
-function Template({ Pagedata, pageContext, location, lastModified }) {
+function Template({
+  Pagedata,
+  highlightedCards,
+  pageContext,
+  location,
+  lastModified,
+}) {
   return (
     <div id="app">
       <HeaderPre data={HeaderData.headerPre} location={location} />
@@ -41,7 +47,10 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
           <HeaderNav data={HeaderData.navbar} />
         </NavWrapper>
       </Header>
-      <HeaderPost data={HeaderData.headerPost} />
+      <HeaderPost
+        data={HeaderData.headerPost}
+        editorialSections={pageContext?.editorialSections}
+      />
       <main id="main">
         <Highlight {...Pagedata.components.hero}>
           {Pagedata.components.hero.moreText && (
@@ -61,7 +70,13 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
         )}
         {Pagedata.components.highLights &&
           Pagedata.components.highLights.map((hl, index) => (
-            <Highlight key={`hl-${index}`} {...hl} />
+            <Highlight
+              key={`hl-${index}`}
+              {...hl}
+              highlightedCards={highlightedCards}
+              editorialSections={pageContext?.editorialSections}
+              highlightIndex={index} // Pass the index for automation
+            />
           ))}
         {Pagedata.components.highlightCards && (
           <HighlightCards {...Pagedata.components.highlightCards} />
@@ -83,7 +98,11 @@ function Template({ Pagedata, pageContext, location, lastModified }) {
           </SectionIntro>
         )}
         {Pagedata.components.highlightCards2 && (
-          <HighlightCards {...Pagedata.components.highlightCards2} />
+          <HighlightCards
+            {...Pagedata.components.highlightCards2}
+            highlightedCards={highlightedCards}
+            editorialSections={pageContext?.editorialSections}
+          />
         )}
         {Pagedata.components.bannerTextCta && (
           <BannerTextCta {...Pagedata.components.bannerTextCta}>
