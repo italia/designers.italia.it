@@ -304,7 +304,7 @@ highlightedCards:
 **Una volta approvate** dalla redazione e dai maintainer del sito, **le PR saranno rilasciate sul ramo principale** (azione squash & Merge verso ramo `main`), con un commit parlante collegato all'autore originale, in cui è possibile lasciare il link alla PR se utile.
 
 Per il rilascio vero e proprio in produzione (sempre a cura dei maintainer), la procedura da seguire è: 
-1. **Lanciare workflow action "prepare-deploy"** (alcuni minuti): copia immagini e file dal ramo principale a GitHub Pages (procedura preventiva necessaria per far sì che funzioni la generazione automatica delle immagini per le social card, che usano url assoluti).
+1. **Lanciare workflow action "prepare-deploy"** (alcuni minuti): copia immagini e file dal ramo principale a GitHub Pages (procedura preventiva necessaria per far sì che funzioni la generazione automatica delle immagini per le social card, che usano url assoluti). Se non ci sono nuovi file su `main` rispetto a quanto già su GitHub Pages l'azione fallisce, è normale e si può procedere. 
 2. **Lanciare workflow action "deploy"** (circa mezz'ora allo stato dell'arte): ricostruisce (build) il sito dal ramo principale e lo rilascia su GitHub Pages all'indirizzo https://designers.italia.it.
 
 Nota bene per l'eventuale modifica di contenuti esistenti: 
