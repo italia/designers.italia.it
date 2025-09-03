@@ -27,7 +27,7 @@ Il rilascio coordina la **documentazione** (designers.italia.it/design-system/) 
 - Verifica nuove versioni risorse esterne: coordinamento nei team ma rilasci non sincroni
 
 ### 2. Branch e modifiche
-**Branch**: `release/v1.X.Y`
+**Branch**: `release/v1-X-Y`
 
 **Aggiorna `dsnav.yaml`**:
 ```yaml
