@@ -80,6 +80,15 @@ function HighlightCards({
       return cards;
     }
 
+    const archiveTypeMap = {
+      notizie: "notizie",
+      "notizie-home": "notizie",
+      eventi: "eventi",
+      media: "media",
+    };
+
+    const expectedArchive = archiveTypeMap[id];
+
     const normalizeImagePath = (imagePath) => {
       if (!imagePath) return null;
 
@@ -134,6 +143,12 @@ function HighlightCards({
     const automatedCards = highlightedCards.edges
       .filter(({ node }) => {
         const nodeTitle = node.components?.hero?.title;
+        const nodeArchive = node.metadata?.archive;
+
+        // Check if archive type matches (if expectedArchive is defined)
+        if (expectedArchive && nodeArchive !== expectedArchive) {
+          return false;
+        }
 
         return editorialSection.highlighted.some((highlightedItem) => {
           if (typeof highlightedItem === "string") {
