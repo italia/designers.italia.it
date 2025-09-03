@@ -23,12 +23,18 @@
     // TODO proper check for custom babel & plugins config
     // Currently when a babelrc is added to the project, it will override our babelOptions
     "babelOptions": {
-      "presets": ["babel-preset-gatsby"]
+      "presets": [
+        "babel-preset-gatsby"
+      ]
     },
     "requireConfigFile": false
   },
-  "plugins": ["react"],
-  "ignorePatterns": ["**/*.min*"],
+  "plugins": [
+    "react"
+  ],
+  "ignorePatterns": [
+    "**/*.min*"
+  ],
   "settings": {
     "react": {
       "version": "detect" // React version. "detect" automatically picks the version you have installed.
@@ -38,12 +44,18 @@
     "formComponents": [
       // Components used as alternatives to <form> for forms, eg. <Form endpoint={ url } />
       "CustomForm",
-      { "name": "Form", "formAttribute": "endpoint" }
+      {
+        "name": "Form",
+        "formAttribute": "endpoint"
+      }
     ],
     "linkComponents": [
       // Components used as alternatives to <a> for linking, eg. <Link to={ url } />
       "Hyperlink",
-      { "name": "Link", "linkAttribute": "to" }
+      {
+        "name": "Link",
+        "linkAttribute": "to"
+      }
     ]
   },
   "globals": {
@@ -59,7 +71,9 @@
     // I would also assume that eslint-config-react-app will switch their flag to "off"
     // when jsx runtime is stable in all common versions of React.
     "react/react-in-jsx-scope": "error",
-    "import/no-webpack-loader-syntax": [0],
+    "import/no-webpack-loader-syntax": [
+      0
+    ],
     "react/jsx-pascal-case": [
       "warn",
       {
@@ -86,6 +100,12 @@
     "jsx-a11y/control-has-associated-label": [
       "warn",
       {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        },
         "ignoreElements": [
           "audio",
           "canvas",
@@ -107,7 +127,10 @@
           "tree",
           "treegrid"
         ],
-        "includeRoles": ["alert", "dialog"]
+        "includeRoles": [
+          "alert",
+          "dialog"
+        ]
       }
     ],
     "jsx-a11y/heading-has-content": "warn",
@@ -131,7 +154,17 @@
       }
     ],
     // "jsx-a11y/label-has-for": "warn", was deprecated and replaced with jsx-a11y/has-associated-control in v6.1.0
-    "jsx-a11y/label-has-associated-control": "warn",
+    "jsx-a11y/label-has-associated-control": [
+      "warn",
+      {
+        "required": {
+          "some": [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
     "jsx-a11y/lang": "warn",
     "jsx-a11y/media-has-caption": "warn",
     "jsx-a11y/mouse-events-have-key-events": "warn",
@@ -142,9 +175,18 @@
     "jsx-a11y/no-noninteractive-element-interactions": [
       "warn",
       {
-        "body": ["onError", "onLoad"],
-        "iframe": ["onError", "onLoad"],
-        "img": ["onError", "onLoad"]
+        "body": [
+          "onError",
+          "onLoad"
+        ],
+        "iframe": [
+          "onError",
+          "onLoad"
+        ],
+        "img": [
+          "onError",
+          "onLoad"
+        ]
       }
     ],
     "jsx-a11y/no-noninteractive-element-to-interactive-role": "warn",
@@ -163,8 +205,12 @@
     "react/jsx-filename-extension": "off",
     "no-shadow": "warn",
     "spaced-comment": "warn",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-
+    "no-plusplus": [
+      "error",
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
     // Disabled until all the occurrences are fixed in the code
     "react/jsx-props-no-spreading": "off",
     "react/no-array-index-key": "off"

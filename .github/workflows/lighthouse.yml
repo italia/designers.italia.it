@@ -16,7 +16,7 @@ jobs:
       - run: npm ci
       - run: npm run build:dev
 
-      - uses: treosh/lighthouse-ci-action@v9
+      - uses: treosh/lighthouse-ci-action@v12
         id: lighthouse_audit
         with:
           # Check sample pages from the main layouts, see "url" key in the config file.
@@ -57,6 +57,7 @@ jobs:
 
             let comment = [
                 `### ⚡ Lighthouse report for the home page 🏠`,
+                `**⚠️ Note: Performance scores are from development build and may not reflect production performance. Use [PageSpeed Insights](https://pagespeed.web.dev/analysis?url=https://designers.italia.it) for accurate performance metrics.**`,
                 '| Category | Score |',
                 '| --- | --: |',
                 `| ${score(home_page.summary.performance)} Performance | ${home_page.summary.performance} |`,
