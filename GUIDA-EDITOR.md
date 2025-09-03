@@ -12,9 +12,9 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 
 | Tipo      | Percorso file YAML | Formato nome file                     |
 |-----------|--------------------|---------------------------------------|
-| **Notizie** | `/src/data/content/community/notizie/` | `YYYYMMDD-titolo-notizia.yaml` |
-| **Eventi**  | `/src/data/content/community/eventi/`  | `YYYYMMDD-titolo-evento.yaml` |
-| **Media**   | `/src/data/content/community/media/`   | `YYYYMMDD-titolo-media.yaml`  |
+| **Notizie** | `/src/data/content/community/notizie/` | `YYYYMM-titolo-notizia.yaml` |
+| **Eventi**  | `/src/data/content/community/eventi/`  | `YYYYMM-titolo-evento.yaml` |
+| **Media**   | `/src/data/content/community/media/`   | `YYYYMM-titolo-media.yaml`  |
 
 ---
 
@@ -48,7 +48,7 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 ### 1. Preparazione dei File
 
 1. **Crea il file YAML** seguendo lo schema appropriato  
-2. **Nomina il file** con formato `YYYYMMDD-titolo-tutto-minuscolo.yaml` (corrisponde allo slug)  
+2. **Nomina il file** con formato `YYYYMM-titolo-tutto-minuscolo.yaml` (corrisponde allo slug)  
 3. **Prepara immagini ottimizzate:**  
    - Formato: JPG o PNG  
    - Peso massimo: 800Kb  
@@ -66,16 +66,16 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
 #### Convenzioni nomi file:
 
 ##### File YAML
-- Formato: `YYYYMMDD-slug-tutto-minuscolo.yaml`
+- Formato: `YYYYMM-slug-tutto-minuscolo.yaml`
 - Data: quella di pubblicazione prevista, non di scrittura
 - Slug: solo lettere (non accentate), numeri, trattini
 
 ##### Immagini e file correlati
-- Hero: `YYYYMMDD-slug-1920x923.jpg` (o dimensione reale in px)
-- SEO: `YYYYMMDD-slug-1200x630.jpg` (o dimensione reale in px)
-- Inline: `YYYYMMDD-slug-descrizione-immagine.jpg`
-- Sottotitoli: `YYYYMMDD-slug-contenuto.vtt`
-- Trascrizioni: `YYYYMMDD-slug-contenuto.odt`
+- Hero: `YYYYMM-slug-1920x923.jpg` (o dimensione reale in px)
+- SEO: `YYYYMM-slug-1200x630.jpg` (o dimensione reale in px)
+- Inline: `YYYYMM-slug-descrizione-immagine.jpg`
+- Sottotitoli: `YYYYMM-slug-contenuto.vtt`
+- Trascrizioni: `YYYYMM-slug-contenuto.odt`
 
 ---
 
@@ -308,7 +308,7 @@ Per il rilascio vero e proprio in produzione (sempre a cura dei maintainer), la 
 2. **Lanciare workflow action "deploy"** (circa mezz'ora allo stato dell'arte): ricostruisce (build) il sito dal ramo principale e lo rilascia su GitHub Pages all'indirizzo https://designers.italia.it.
 
 Nota bene per l'eventuale modifica di contenuti esistenti: 
-- **Mantieni lo stesso `pathname` e nome file dello YAML** (slug) per preservare SEO e referrals. Se fosse assoluamente necessario cambiarli, ricorda di attivare le funzionalità di redirect inserendo gli appositi attributi nella sezione "metadata": 
+- **Mantieni lo stesso `pathname` e nome file dello YAML** (slug) per preservare SEO e referrals. Se fosse assolutamente necessario cambiarli, ricorda di attivare le funzionalità di redirect inserendo gli appositi attributi nella sezione "metadata": 
 ```yaml
 metadata:
   redirect_from:
