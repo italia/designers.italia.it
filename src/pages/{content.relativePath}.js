@@ -520,7 +520,7 @@ export const query = graphql`
             fullHeight
             rounded
             showDateInfo
-            showTags  
+            showTags
             showDateOverlay
             showIconOverlay
             showTag
