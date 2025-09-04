@@ -63,7 +63,7 @@ DD mese YYYY
 
 **Link formato**:
 - Commit: `([commit: messaggio](URL))`
-- Changelog: `([Changelog Nome](https://github.com/italia/repo/releases))`
+- Changelog: `([Changelog Nome](https://github.com/italia/[REPO]/releases))`
 
 ---
 
