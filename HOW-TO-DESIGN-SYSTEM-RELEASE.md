@@ -121,7 +121,7 @@ DD mese YYYY
 
 ---
 
-## Coordinamento Risorse
+## Coordinamento risorse
 
 Tutte le risorse usano **semantic versioning**. I rilasci sono **coordinati nei team ma non sincroni**.
 
