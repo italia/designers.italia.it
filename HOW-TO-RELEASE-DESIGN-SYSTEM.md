@@ -12,38 +12,39 @@ Il rilascio coordina la **documentazione** del design system ospitata nel sito D
 
 | File | Cosa modificare |
 |------|----------------|
-| `src/data/dsnav.yaml` | Versione nel tag della sidebar (`tag.label`) |
-| `src/data/design-system/fondamenti/versionamento.yaml` | Versioni tabella + nuovo changelog |
+| `src/data/content/dsnav.yaml` | Versione nel tag della sidebar (`tag.label`) |
+| `src/data/content/design-system/fondamenti/versionamento.yaml` | Versioni tabella + nuovo changelog |
 
 ---
 
 ## Processo di Rilascio
 
 ### 1. Pre-rilascio
-- Definisci tipo rilascio (MAJOR.MINOR.PATCH): due criteri possibili
-  - **Segue cambiamento più significativo** delle risorse incluse (Bootstrap Italia, UI Kit Italia, Design Tokens)
-  - **Dedicato alle schede** di documentazione modificate/aggiunte (o a funzionalità del sito che impattano su queste schede)
-- Raccogli url dei commit specifici (dal ramo `main`) delle modifiche principali
-- Verifica nuove versioni risorse esterne: coordinamento nei team ma rilasci non sincroni
+- Verifica nuove versioni risorse esterne: necessita coordinamento nei team ma rilasci non sincroni.
+- Definisci tipo rilascio (`MAJOR.MINOR.PATCH`) con le logiche del [versionamento semantico](https://semver.org/lang/it/) e seguendo tre criteri:
+  - **Segue il cambiamento più significativo** delle risorse (Bootstrap Italia, UI Kit Italia, Design Tokens Italia).
+  - **Identifica aggiornamenti dei contenuti delle schede** di documentazione modificate/aggiunte.
+  - **Identifica aggiornamenti di funzionalità della documentazione**.
+- Raccogli gli url dei commit specifici (dal ramo `main`) delle modifiche principali rilasciate sul sito (non sulle risorse, che hanno loro changelog indipendenti). 
 
 ### 2. Branch e modifiche
 **Branch**: `release/v1-X-Y`
 
-**Aggiorna `dsnav.yaml`**:
+**Aggiorna `/src/data/content/dsnav.yaml`**:
 ```yaml
 tag:
   label: "v1.X.Y"  # ← Nuova versione
 ```
 
-**Aggiorna `versionamento.yaml`**:
+**Aggiorna `/src/data/content/design-system/fondamenti/versionamento.yaml`**:
 - Tabella versioni: aggiorna `label` delle risorse rilasciate
 - Changelog: aggiungi nuova voce in cima al campo `text` del componente `TextImageCta`
 
 ### 3. PR e rilascio
 - **Commit**: `chore(release): design system .italia v1.X.Y 🚀 🇮🇹`
 - **PR title**: stesso formato del commit
-- **Review**: team maintainer Designers Italia
-- **Deploy**: `prepare-deploy` + `deploy` (manuale) - c'è tempo per review anteprima prima del rilascio
+- **Review**: team maintainer Design system .italia
+- **Deploy**: `deploy` (manuale) - c'è tempo per review anteprima prima del rilascio
 
 ---
 
@@ -95,22 +96,22 @@ DD mese YYYY
 ## Checklist
 
 **Pre-rilascio**:
+- [ ] Versioni risorse esterne verificate
 - [ ] Tipo rilascio definito
 - [ ] Commit url principali raccolti
-- [ ] Versioni risorse esterne verificate
 
 **File**:
 - [ ] `dsnav.yaml`: versione aggiornata in `tag.label`
 - [ ] `versionamento.yaml`: tabella versioni aggiornata
 - [ ] `versionamento.yaml`: changelog aggiunto in cima
-- [ ] Link commit, schede e changelog funzionanti
+- [ ] Link commit, schede e changelog verificati funzionanti
 
 **PR**:
 - [ ] Titolo formato corretto
-- [ ] Nella descrizione una to do list con issue correlate e promemoria controllo data e dati changelog
+- [ ] Nella descrizione è presente una to do list con eventuali issue correlate e promemoria controllo data e dati changelog prima del merge
 - [ ] Anteprima Vercel verificata (`/design-system/fondamenti/versionamento/` e occhio al numero versione presente a sinistra nella sidebar)
 - [ ] Issue correlate linkate e risolte prima del merge + Verifica data e dettagli changelog prima del merge
-- [ ] Squash & merge con nel titolo link alla PR
+- [ ] Squash & merge con nel titolo commit il link alla PR
 
 **Deploy**:
 - [ ] Lancio azione "Deploy" (mezz'ora circa allo stato dell'arte)
@@ -126,16 +127,16 @@ DD mese YYYY
 Tutte le risorse usano **semantic versioning**. I rilasci sono **coordinati nei team ma non sincroni**.
 
 Quando rilasci documentazione:
-1. **Verifica nuove versioni** Bootstrap Italia, UI Kit Italia, Design Tokens
-2. **Aggiorna tabella** versioni correnti se necessario  
-3. **Includi nel changelog** le risorse aggiornate
+1. **Verifica nuove versioni** Bootstrap Italia, UI Kit Italia, Design Tokens Italia.
+2. **Aggiorna tabella** versioni correnti se necessario.
+3. **Includi nel changelog** le risorse aggiornate.
 
 **Processo**: on-demand in base alle necessità, non periodico.
 
 **Repository esterni**:
 - Bootstrap Italia: https://github.com/italia/bootstrap-italia/releases
 - UI Kit Italia: https://github.com/italia/design-ui-kit/releases  
-- Design Tokens: https://github.com/italia/design-tokens-italia/releases
+- Design Tokens Italia: https://github.com/italia/design-tokens-italia/releases
 
 ### Aggiornamento anteprime nelle schede componenti
 
@@ -145,22 +146,22 @@ Per aggiornare le anteprime all'ultima versione disponibile via API devi seguire
 
 - **Verifica se esiste una PR creata in automatico** dal titolo: "chore(deps): update bootstrap italia and content" (cerca tra le PR aperte/recenti). 
 - **Se non esiste, puoi lanciare l'azione "Content and dependencies update"** che la creerà (attenzione che se non la crea significa che è già presente l'ultima versione di Bootstrap Italia).
-- **Verifica che abbia aggiornato Bootstrap Italia alla versione corrente** e che le anteprime dei componenti nelle schede funzionino correttamente (controlla nella preview Vercel della PR)
-- **Assicurati che venga rilasciata prima del nuovo changelog** con review del team di sviluppo/maintainer
+- **Verifica che abbia aggiornato Bootstrap Italia alla versione corrente** e che le anteprime dei componenti nelle schede funzionino correttamente (controlla nella preview Vercel della PR).
+- **Assicurati che venga rilasciata prima del nuovo changelog** con review del team di sviluppo/maintainer.
 
 La struttura dei file generati a partire dai componenti di Bootstrap Italia (generati dall'azione dedicata): 
 - I JSON generati in automatico a partire dalla API del repository Bootstrap Italia sono disponibili qui: https://github.com/italia/designers.italia.it/tree/main/src/data/components_json/bsi
 - I file HTML generati a partire da questi JSON sono disponibili qui: https://github.com/italia/designers.italia.it/tree/main/static/examples/bsi 
 
-Il template HTML usato per contenere i componenti è questo: https://github.com/italia/designers.italia.it/blob/main/static/examples/templates/base.html (è possibile modificarlo laddove necessario).
+Il template HTML usato per generare le anteprime dei componenti è questo: https://github.com/italia/designers.italia.it/blob/main/static/examples/templates/base.html (è possibile modificarlo laddove necessario).
 
 ---
 
 ## Troubleshooting
 
 **Errori comuni**:
-- Formato data: usare "DD mese YYYY" (es. "25 luglio 2025")
-- Versioni tabella non aggiornate quando ci sono nuovi rilasci esterni
-- Changelog fuori ordine (sempre in cima)
-- Link non funzionanti
-- Versione di Bootstrap Italia delle anteprime componenti non aggiornata 
+- Formato data: usare "DD mese YYYY" (es. "25 luglio 2025").
+- Versioni tabella non aggiornate quando ci sono nuovi rilasci esterni.
+- Changelog fuori ordine (sempre in cima).
+- Link non funzionanti.
+- Versione di Bootstrap Italia delle anteprime componenti o nel sito stesso non aggiornata .
