@@ -55,7 +55,7 @@ DD mese YYYY
 - **[Sezione](/design-system/sezione/)**
   - Nuova scheda: [Titolo](/link/)
   - Aggiornati contenuti schede: [Titolo](/link/), [Titolo](/link/)
-  - Corretta proprietà `campo` in scheda [Nome] ([commit link])
+  - Corretta proprietà `campo` in scheda [Titolo](/link/) ([commit link])
 - Risorse
   - Aggiornato **Bootstrap Italia** alla versione X.Y.Z ([Changelog Bootstrap Italia])
   - Aggiornato **UI Kit Italia** alla versione X.Y.Z ([Changelog UI Kit Italia])
