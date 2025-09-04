@@ -54,7 +54,7 @@ tag:
 DD mese YYYY
 - **[Sezione](/design-system/sezione/)**
   - Nuova scheda: [Nome](/link/)
-  - Aggiornati contenuti schede: [Lista], [Lista]
+  - Aggiornati contenuti schede: [Titolo](/link/), [Titolo](/link/)
   - Corretta proprietà `campo` in scheda [Nome] ([commit link])
 - Risorse
   - Aggiornato **Bootstrap Italia** alla versione X.Y.Z ([Changelog Bootstrap Italia])
