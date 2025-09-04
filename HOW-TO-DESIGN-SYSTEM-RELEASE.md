@@ -23,7 +23,7 @@ Il rilascio coordina la **documentazione** (designers.italia.it/design-system/) 
 - Definisci tipo rilascio (MAJOR.MINOR.PATCH): due criteri possibili
   - **Segue cambiamento più significativo** delle risorse incluse (Bootstrap Italia, UI Kit Italia, Design Tokens)
   - **Dedicato alle schede** di documentazione modificate/aggiunte (o a funzionalità del sito che impattano su queste schede)
-- Raccogli commit hash delle modifiche principali
+- Raccogli url dei commit specifici (dal ramo `main`) delle modifiche principali
 - Verifica nuove versioni risorse esterne: coordinamento nei team ma rilasci non sincroni
 
 ### 2. Branch e modifiche
