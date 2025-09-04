@@ -58,7 +58,7 @@ DD mese YYYY
   - Corretta proprietà `campo` in scheda [Titolo](/link/) ([commit link])
 - Risorse
   - Aggiornato **Bootstrap Italia** alla versione X.Y.Z ([Changelog Bootstrap Italia](https://github.com/italia/bootstrap-italia/releases)
-  - Aggiornato **UI Kit Italia** alla versione X.Y.Z ([Changelog UI Kit Italia])
+  - Aggiornato **UI Kit Italia** alla versione X.Y.Z ([Changelog UI Kit Italia](https://github.com/italia/design-ui-kit/releases)
 ```
 
 **Link formato**:
