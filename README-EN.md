@@ -19,7 +19,7 @@ Comments and proposals regarding the evolution of the site and resources can be 
 Detailed guides are available for project contributors *(Italian language only)*:
 
 - **[HOW-TO-EDITORIAL.MD](HOW-TO-EDITORIAL.MD)** - Guide for creating and managing editorial content (news, events, media)
-- **[HOW-TO-DESIGN-SYSTEM-RELEASE.MD](HOW-TO-DESIGN-SYSTEM-RELEASE.MD)** - Procedure for design system releases
+- **[HOW-TO-RELEASE-DESIGN-SYSTEM.MD](HOW-TO-RELEASE-DESIGN-SYSTEM.MD)** - Procedure for design system releases
 
 ### ✏️ Content
 
