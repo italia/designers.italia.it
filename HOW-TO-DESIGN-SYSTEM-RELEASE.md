@@ -53,7 +53,7 @@ tag:
 ### v1.X.Y
 DD mese YYYY
 - **[Sezione](/design-system/sezione/)**
-  - Nuova scheda: [Nome](/link/)
+  - Nuova scheda: [Titolo](/link/)
   - Aggiornati contenuti schede: [Titolo](/link/), [Titolo](/link/)
   - Corretta proprietà `campo` in scheda [Nome] ([commit link])
 - Risorse
