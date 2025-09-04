@@ -4,7 +4,7 @@
 
 Procedura per rilasciare nuove versioni della documentazione del [Design system .italia](https://designers.italia.it/design-system/) ([changelog](https://designers.italia.it/design-system/fondamenti/versionamento/#changelog-documentazione)).
 
-Il rilascio coordina la **documentazione** (designers.italia.it/design-system/) con le **risorse esterne** (Bootstrap Italia, UI Kit Italia, Design Tokens) tramite PR dedicate.
+Il rilascio coordina la **documentazione** del design system ospitata nel sito Designers Italia (`designers.italia.it/design-system/`) con le **risorse dell'ecosistema** (Bootstrap Italia, UI Kit Italia, Design Tokens Italia) tramite PR dedicate.
 
 ---
 
