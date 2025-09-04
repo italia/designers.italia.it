@@ -96,7 +96,7 @@ DD mese YYYY
 
 **Pre-rilascio**:
 - [ ] Tipo rilascio definito
-- [ ] Commit hash raccolti
+- [ ] Commit url principali raccolti
 - [ ] Versioni risorse esterne verificate
 
 **File**:
