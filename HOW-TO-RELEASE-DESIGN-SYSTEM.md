@@ -41,8 +41,16 @@ tag:
 - Changelog: aggiungi nuova voce (markdown) all'inizio del campo `text` del componente `TextImageCta`
 
 ### 3. PR e rilascio
-- **Commit**: `chore(release): design system .italia v1.X.Y 🚀 🇮🇹`
-- **PR title**: stesso formato del commit
+- **Titolo PR**: `chore(release): design system .italia v1.X.Y 🚀 🇮🇹`
+- **Template descrizione PR**: 
+  ```yaml
+  ## Cose da fare prima del merge:
+  - [ ] Issue #XXX collegata da risolvere
+  - [ ] Issue #YYY collegata da risolvere (es: "chore(deps): update bootstrap italia and content") 
+  - [ ] ...
+  - [ ] Ricontrolla dettagli e tutti i link nel changelog
+  - [ ] Aggiorna la data di rilascio 
+  ``` 
 - **Review**: team maintainer Design system .italia
 - **Deploy**: `deploy` (manuale) - c'è tempo per review anteprima prima del rilascio
 
