@@ -38,7 +38,7 @@ tag:
 
 **Aggiorna `/src/data/content/design-system/fondamenti/versionamento.yaml`**:
 - Tabella versioni: aggiorna `label` delle risorse rilasciate
-- Changelog: aggiungi nuova voce in cima al campo `text` del componente `TextImageCta`
+- Changelog: aggiungi nuova voce (markdown) all'inizio del campo `text` del componente `TextImageCta`
 
 ### 3. PR e rilascio
 - **Commit**: `chore(release): design system .italia v1.X.Y 🚀 🇮🇹`
