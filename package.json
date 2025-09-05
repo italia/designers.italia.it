@@ -30,6 +30,7 @@
     "prettier:fix": "npm run prettier -- --write",
     "build:dev": "npm run clean && npm run prepare-lib && GATSBY_BUILD=dev gatsby build --prefix-paths",
     "build": "npm run clean && npm run prepare-lib && gatsby build --prefix-paths",
+    "build:ci": "npm run prepare-lib && gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d public"
