@@ -79,7 +79,7 @@ npm run prettier:fix
 
    - **Aggiornamento Bootstrap Italia**: L'azione `bsi-update` aggiorna automaticamente Bootstrap Italia e rigenera le anteprime dei componenti nelle schede del Design system (giornaliera o manuale).
 
-   - **Deploy produzione**: lanciare in sequenza (a) `prepare-deploy` (se ci sono nuove immagini, meno di 5 min, per generatore card SEO) e (b) `deploy` (30min ca., sito su https://designers.italia.it).
+   - **Deploy produzione**: lanciare in sequenza (a) `prepare-deploy` (se ci sono nuove immagini, meno di 5 min, per generatore card SEO) e (b) `deploy` (5-30min, usa cache Gatsby, sito su https://designers.italia.it).
 
 7. **Ulteriori informazioni su Gatsby (in Inglese)**
 
