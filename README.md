@@ -18,8 +18,8 @@ Commenti e proposte relative all'evoluzione del sito e delle risorse possono ess
 
 Per i collaboratori del progetto sono disponibili guide dettagliate:
 
-- **[HOW-TO-MANAGE-EDITORIAL-CONTENT.MD](HOW-TO-MANAGE-EDITORIAL-CONTENT.MD)** - Guida per la creazione e gestione dei contenuti editoriali (notizie, eventi, media) e del controllo delle card in evidenza nelle diverse sezioni del sito.
-- **[HOW-TO-DESIGN-SYSTEM-RELEASE.MD](HOW-TO-DESIGN-SYSTEM-RELEASE.MD)** - Procedura per i rilasci del Design system del Paese.
+- **[HOW-TO-MANAGE-EDITORIAL-CONTENT.md](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-MANAGE-EDITORIAL-CONTENT.md)** - Guida per la creazione e gestione dei contenuti editoriali (notizie, eventi, media) e del controllo delle card in evidenza nelle diverse sezioni del sito.
+- **[HOW-TO-DESIGN-SYSTEM-RELEASE.md](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-RELEASE-DESIGN-SYSTEM.md)** - Procedura per i rilasci del Design system del Paese.
 
 ### ✏️ Contenuti
 
