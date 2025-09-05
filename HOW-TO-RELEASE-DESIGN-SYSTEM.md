@@ -28,7 +28,7 @@ Il rilascio coordina la **documentazione** del design system ospitata nel sito D
 - Raccogli gli url dei commit specifici (dal ramo `main`) delle modifiche principali rilasciate sul sito (non sulle risorse, che hanno loro changelog indipendenti). 
 
 ### 2. Branch e modifiche
-**Branch**: `release/v1-X-Y`
+**Branch**: `release-v1-X-Y`
 
 **Aggiorna `/src/data/content/dsnav.yaml`**:
 ```yaml
