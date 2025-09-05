@@ -304,8 +304,8 @@ highlightedCards:
 **Una volta approvate** dalla redazione e dai maintainer del sito, **le PR saranno rilasciate sul ramo principale** (azione squash & Merge verso ramo `main`), con un commit parlante collegato all'autore originale, in cui è possibile lasciare il link alla PR se utile.
 
 Per il rilascio vero e proprio in produzione (sempre a cura dei maintainer), la procedura da seguire è: 
-1. **Lanciare workflow action "prepare-deploy"** (alcuni minuti): copia immagini e file dal ramo principale a GitHub Pages (procedura preventiva necessaria per far sì che funzioni la generazione automatica delle immagini per le social card, che usano url assoluti). Se non ci sono nuovi file su `main` rispetto a quanto già su GitHub Pages l'azione fallisce, è normale e si può procedere. 
-2. **Lanciare workflow action "deploy"** (circa mezz'ora allo stato dell'arte): ricostruisce (build) il sito dal ramo principale e lo rilascia su GitHub Pages all'indirizzo https://designers.italia.it.
+1. **Lanciare workflow action "prepare-deploy"** (alcuni minuti): copia le immagini dal ramo principale `main` a GitHub Pages (ramo `gh-pages`, copia preliminare necessaria per la generazione automatica delle immagini seo durante la successiva build). Se non ci sono nuovi file immagine su `main` rispetto a quanto già su GitHub Pages l'azione fallisce. È normale e si può procedere con il deploy.  
+2. **Lanciare workflow action "deploy"** (da 5 a 30+ minuti): ricostruisce (build) il sito dal ramo principale `main`, usando le funzionalità cache di Gastby per ottimizzarne i tempi. Il sito è rilasciato su GitHub Pages all'indirizzo https://designers.italia.it.
 
 Nota bene per l'eventuale modifica di contenuti esistenti: 
 - **Mantieni lo stesso `pathname` e nome file dello YAML** (slug) per preservare SEO e referrals. Se fosse assolutamente necessario cambiarli, ricorda di attivare le funzionalità di redirect inserendo gli appositi attributi nella sezione "metadata": 
@@ -314,7 +314,7 @@ metadata:
   redirect_from:
     - /community/[tipo]/[slug-precedente]
 ```
-- **Valuta, se le modifiche fossero solo tecniche e non di contenuto, di includere `(last-update-skip)`** nel messaggio del commit per il merge su `main`. In questo modo l'informazione "Ultimo aggiornamento: " presente al fondo della pagina web non si aggiornerà alla data presente.   
+- **Valuta, se le modifiche fossero solo tecniche e non di contenuto, di includere `(last-update-skip)`** nel messaggio del commit per il merge su `main`. In questo modo l'informazione "Ultimo aggiornamento: " presente al fondo della pagina web (relativa ai contenuti) non si aggiornerà.   
 
 ---
 
