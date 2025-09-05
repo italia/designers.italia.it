@@ -1,0 +1,243 @@
+# INSTRUCTIONS
+# folder structure:
+# levelX.yaml < contents and settings
+# levelX/ < folder with childrens
+# important: each level has its dedicated template, from level1 to level4
+#
+# comments:
+# #C to locate all editable content
+# #M for links/navigation
+# #I for images/media
+# #AUTO for parts that will soon be automated, preferably
+#
+# comment with # to hide something
+# delete with caution
+
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level1
+  redirect_from:
+    - /norme-e-riferimenti
+    - /linee-guida
+    - /lineeguida
+    - /it/guide
+    - /guide
+    - /service-design
+    - /user-research
+    - /content-design
+    - /user-interface
+    - /norme
+  activeLabel: Norme e riferimenti
+
+# ————————————————————————————————————————————
+# SEO, OPENGRAPH
+# ————————————————————————————————————————————
+seo:
+  name: Normativa - Designers Italia #C REMIND "- Designers Italia" #AUTO
+  description: "La documentazione ufficiale che ti guida nella progettazione per la Pubblica Amministrazione, mettendo le persone al centro" #C
+  image: https://designers.italia.it/images/norme-e-riferimenti/manuale-operativo-di-design.jpg
+  canonical: null
+  pathname: /normativa/ #M
+
+# ————————————————————————————————————————————
+# CONTENT
+# ————————————————————————————————————————————
+components:
+
+  # ///////////////////
+  # HERO
+  # ///////////////////
+  hero:
+    background: primary
+    title: Normativa #C
+    subtitle: La documentazione ufficiale che ti guida nella progettazione per la Pubblica Amministrazione, mettendo le persone al centro #C
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: | #C
+      La progettazione e la realizzazione di siti e servizi digitali per la PA sono guidate da norme e indicazioni operative attente all’usabilità, all'accessibilità e a un approccio progettuale rivolto alle persone.
+    # img: /images/400x300.png #I
+    # alt: alt lorem ipsum #C
+    imgRatio: 4x3
+
+    # KANGAROO: METADATA
+    kangaroo:
+      id: metadati-e-link
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Parliamo di
+      color: white
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: white
+      tags: [Normativa,Linee guida,Manuale operativo,Accessibilità]
+
+      # KANGAROO: CHILDREN SHORTCUTS
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri norme e riferimenti #C
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: white
+            addonClasses: icon-expand ms-2
+        list:
+          listItems: #AUTO
+            - url: "linee-guida-di-design/" #M
+              label: "Linee guida di design" #C
+            - url: "linee-guida-accessibilita/" #M
+              label: "Linee guida accessibilità" #C
+            - url: "manuale-operativo-di-design/" #M
+              label: "Manuale operativo di design" #C
+
+  # ///////////////////
+  # INTRO
+  # ///////////////////
+  sectionIntro:
+    section: true
+    id: intro
+    headingLevel: 2
+    title: Progettare per la Pubblica Amministrazione è un processo basato sulla legge #C
+    background: null
+    text: | #C
+      **L'accesso a siti e servizi pubblici digitali di qualità è un diritto da garantire a tutte le persone** che desiderano farne uso. Per questo, **i requisiti da rispettare sono indicati in modo dettagliato dalla legge**, affinché ogni aspetto della loro progettazione e realizzazione sia attentamente considerato e diligentemente applicato da tutti gli attori coinvolti nel processo.
+    moreButton: Leggi di più
+    moreButtonClose: Chiudi
+    moreText: | #C
+      Per orientarti nell'ecosistema di norme e riferimenti, la stella polare è rappresentata dalle **Linee guida di design per i siti internet e i servizi digitali della PA, emesse secondo quanto definito dall’articolo 53 del Codice dell’amministrazione digitale**: ti indicano le regole che hai l'obbligo di rispettare, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle opzionali.
+
+      Nell'applicazione concreta delle Linee guida ti aiuta il **Manuale operativo di design**: ti fornisce indicazioni operative a supporto della progettazione e della realizzazione di siti e servizi pubblici digitali accessibili, inclusivi e che riducono le disuguaglianze.
+
+  # ///////////////////
+  # HIGHLIGHTS
+  # ///////////////////
+  titleText:
+    title: Scopri la normativa e come applicarla #C
+
+  # —
+  # HIGHLIGHT LOOP
+  # —
+  highlightsLoop1 :
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title: Linee guida di design  #C
+      id: linee-guida-di-design
+      # img: /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel: 3
+      background: light # null | light | medium | dark
+      big: false
+      specular: true
+      subtitle: "La norma che devi rispettare in ogni fornitura di siti e servizi digitali per la Pubblica Amministrazione" #C
+      text: |
+        Le disposizioni delle **Linee guida di design per i siti internet e i servizi digitali** rispondono all’articolo 53 del decreto legislativo del 7 marzo 2005, n. 82, contenente il **Codice dell’amministrazione digitale**.
+      buttons: #C #I
+        - label: Scopri le Linee guida di design #C
+          btnStyle: primary
+          url: "linee-guida-di-design/" #M
+          addonStyle: mb-3
+        - label: Scopri i requisiti #C
+          btnStyle: outline-secondary
+          url: "linee-guida-di-design#requisiti" #M
+          addonStyle: mb-3
+
+    # —
+    # HIGHLIGHT
+    # —
+    - title: Linee guida accessibilità #C
+      id: linee-guida-accessibilita
+      # img: /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel: 3
+      background: null  # null | light | medium | dark
+      big: false
+      specular: true
+      subtitle: "La norma a cui riferirti per favorire e semplificare l'accesso di tutte le persone, senza discriminazioni, agli strumenti informatici" #C
+      text: "Il documento, che guida quanto disposto dall’**articolo 11 della legge del 9 gennaio 2004, n. 4 e successivi aggiornamenti**, è stato redatto ed emanato dall'Agenzia per l'Italia Digitale (AGID) per attuare la **Direttiva UE 2016/2102**, recepita in Italia con il **Decreto legislativo n. 106 del 10 agosto 2018**." #C
+      buttons: #C #M
+        - label: Scopri le Linee guida accessibilità
+          btnStyle: primary
+          url: "linee-guida-accessibilita/" #M
+
+    # —
+    # HIGHLIGHT BIG IMG
+    # —
+    - title: Manuale operativo di design #C
+      id: manuale-operativo-di-design
+      # img: /images/400x300.png #I
+      # alt: Alt lorem ipsum #C
+      headingLevel: 3
+      background: medium # null | light | medium | dark
+      big: false
+      specular: true
+      subtitle: "Le indicazioni pratiche che ti aiutano ad applicare le norme di riferimento" #C
+      text: |
+        **Uno strumento di lavoro per la Pubblica Amminisrazione e i suoi fornitori**, offre tutte le informazioni necessarie a supportare la realizzazione di siti internet e servizi digitali pubblici che rispondano alle Linee guida.
+      buttons: #C #M
+        - label: Scopri il Manuale operativo di design
+          btnStyle: primary
+          url: "manuale-operativo-di-design/" #M
+
+  # —
+  # IMAGE COVER WITH ICONS
+  # —
+  imageIcons: #I
+    image: /images/norme-e-riferimenti/manuale-operativo-di-design.jpg #I
+    alt: "Progettare è multi-disciplinare per definizione" #C
+    background: medium
+    images:
+    - img: /images/norme-e-riferimenti/manuale-0.svg
+      alt: "" #C
+    - img: /images/norme-e-riferimenti/manuale-1.svg
+      alt: "" #C
+    - img: /images/norme-e-riferimenti/manuale-2.svg
+      alt: "" #C
+    - img: /images/norme-e-riferimenti/manuale-3.svg
+      alt: "" #C
+    - img: /images/norme-e-riferimenti/manuale-4.svg
+      alt: "" #C
+
+  # —
+  # HIGHLIGHT WITH CARDS
+  # —
+  highlightCards:
+    id: articoli-di-approfondimento
+    title: Articoli di approfondimento teorico #C
+    text: La teoria che sta dietro alla pratica di Designers Italia #C
+    headingLevel: 3
+    background: null
+    col4: false # FALSE notizie + Medium | TRUE eventi + media
+    cardSettings:
+      headingLevel: 4
+      customCol: col-lg-4           
+      imgRatio: 16x9               
+      imgPlaceholder: false        
+      fullHeight: true             
+      rounded: true                
+      showDateInfo: false          
+      showTags: true               
+      showTag: false               
+      showDateOverlay: false      
+      showIconOverlay: false       
+    buttons:
+    - btnStyle: outline-primary
+      label: Vai al Medium di Designers Italia
+      url: https://medium.com/designers-italia
+      blank: true
+      ariaLabel: Vai al Medium di Designers Italia (si apre in una nuova finestra)
+      icon:
+        icon: sprites.svg#it-medium
+        color: primary
+        align: middle
+        size: sm
+        addonClasses: ms-2

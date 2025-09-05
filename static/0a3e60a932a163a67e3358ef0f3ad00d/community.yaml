@@ -1,0 +1,304 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: community
+  redirect_from:
+    - /partecipa
+    - /comunita
+    - /it/come-partecipo
+    - /come-partecipo
+    - /in-copertina
+    - /comunity
+  activeLabel: Community
+
+seo:
+  name: Community
+  description: Lo spazio per informarti e confrontarti sulla progettazione dei servizi pubblici digitali
+  image: https://designers.italia.it/images/home/community.jpg
+  canonical: null
+  pathname: /community/
+
+components:
+  hero:
+    background: primary
+    title: Community
+    subtitle: Lo spazio per informarti e confrontarti sulla progettazione dei servizi pubblici digitali
+    # img: /images/400x300.png
+    # alt: descrizione immagine
+    imgRatio: 4x3
+    pretext:
+      icon:
+        icon: sprites.svg#it-help-circle
+        size: sm
+      text: In breve
+    text: |
+      In questa sezione, trovi tutti i contributi della community: eventi, notizie, articoli di approfondimento, video e podcast per approfondire il tema del design e le buone pratiche di progettazione dei servizi pubblici digitali. Inoltre, puoi scoprire come partecipare e dare il tuo contributo.
+    kangaroo:
+      id: kangarooHero
+      titleSr: Metadati e link per approfondire
+      tagsLabel: Parliamo di
+      color: white
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: white
+      tags: [Partecipazione]
+      dropdown:
+        btnId: dropdownKang
+        button:
+          addonStyle: dropdown-toggle btn-dropdown
+          label: Scopri la community
+          iconRight: true
+          icon:
+            icon: sprites.svg#it-expand
+            size: sm
+            color: white
+            addonClasses: icon-expand ms-2
+        list:
+          listItems:
+            - url: "notizie/"
+              label: Notizie
+            - url: "eventi/"
+              label: Eventi
+            - url: "#articoli-di-approfondimento"
+              label: Articoli di approfondimento
+            - url: "media/"
+              label: Media
+            - url: "partecipa/"
+              label: Partecipa
+
+  sectionIntro:
+    section: true
+    id: intro
+    headingLevel: 2
+    title: "Il design è un processo di comunità, aperto e collaborativo"
+    background: null
+    text: |
+      Molte pubbliche amministrazioni condividono gli stessi problemi: allo stesso modo, possono esserlo le soluzioni. Il progetto Designers Italia nasce proprio con questo obiettivo: **condividere in un unico luogo informazioni, conoscenze, buone pratiche, strumenti e risorse progettuali** che possano essere d’aiuto alle pubbliche amministrazioni impegnate in percorso di trasformazione digitale o desiderose di iniziarlo.
+
+      In questo contesto, è fondamentale il contributo della community, che sia collaborare attivamente sui progetti, fornirci un feedback o segnalarci un problema.
+
+    moreButton: null
+    moreButtonClose: Chiudi
+    icon:
+      icon: sprites.svg#it-arrow-right
+      color: white
+      size: sm
+    moreText: null
+
+  highLights:
+    - title: Partecipa #C
+      img: /images/community/202507-nuova-sezione-partecipa-1920x1080.png #I
+      alt: Testare con gli utenti reali è progettare #C
+      headingLevel: 2
+      background: light # null | light | medium | dark
+      big: true
+      specular: true
+      subtitle: "Prendi parte anche tu alle attività della community di Designers Italia e aiutaci a dare forma al futuro del design pubblico" #C
+      buttons: #C #I
+        - label: Scopri come partecipare #C
+          btnStyle: primary
+          url: "partecipa/" #M
+          addonStyle: mb-3
+
+  titleText:
+    title: Scopri le attività della community
+
+  highlightCardsLoop:
+
+    - id: notizie
+      title: Notizie
+      headingLevel: 3
+      text: Le ultime notizie sulle attività del progetto Designers Italia
+      col4: false
+      background: null
+      nopadtop: true
+      cardSettings:
+        headingLevel: 4
+        customCol: col-lg-4
+        imgRatio: 21x9
+        imgPlaceholder: false
+        fullHeight: true
+        rounded: true
+        showDateInfo: true
+        showTags: true        # ✅ Show tags for news
+        showDateOverlay: false
+        showIconOverlay: false
+        showTag: false
+      topics:
+        title: Nelle notizie si parla di
+        headingLevel: 4
+        icon:
+          icon: sprites.svg#it-horn
+          color: secondary
+          hidden: true
+        button:
+          url: "/argomenti/"
+          btnStyle: outline-secondary
+          label: Scopri tutti gli argomenti
+        tags: [Accessibilità,Design system,Modelli di sito,Privacy,Ricerca utente,Partecipazione,Test di usabilità]
+      buttons:
+      - btnStyle: primary
+        label: Esplora tutte le notizie
+        addonStyle: d-block
+        url: "/community/notizie/"
+        disabled: false
+
+    - id: eventi
+      title: Eventi
+      headingLevel: 3
+      text: "Gli eventi dove trovare le esperte e gli esperti di Designers Italia e i nostri cicli di eventi dedicati alla community"
+      col4: true
+      background: light
+      buttons:
+      - btnStyle: primary
+        label: Esplora tutti gli eventi
+        url: "/community/eventi/"
+        addonStyle: d-block
+        disabled: false
+      cardSettings:
+        headingLevel: 4
+        imgRatio: 4x3
+        imgPlaceholder: false
+        fullHeight: true
+        cardEvent: true      
+        showDateInfo: true
+        showTags: false          
+        showDateOverlay: true   
+        showIconOverlay: false   
+        showTag: true            
+
+    - id: articoli-di-approfondimento
+      title: Articoli di approfondimento
+      headingLevel: 3
+      text: "I casi di studio e le idee sulla progettazione dei servizi pubblici, scritti dalla community di Designers Italia"
+      col4: false
+      background: null
+      cardSettings:
+        headingLevel: 4
+        customCol: col-lg-4           
+        imgRatio: 16x9               
+        imgPlaceholder: false        
+        fullHeight: true             
+        rounded: true                
+        showDateInfo: false          
+        showTags: true               
+        showTag: false               
+        showDateOverlay: false      
+        showIconOverlay: false       
+      buttons:
+      - btnStyle: outline-primary
+        label: Vai al Medium di Designers Italia
+        url: https://medium.com/designers-italia
+        blank: true
+        ariaLabel: Vai al Medium di Designers Italia (si apre in una nuova finestra)
+        icon:
+          icon: sprites.svg#it-medium
+          color: primary
+          align: middle
+          size: sm
+          addonClasses: ms-2
+
+    - id: media
+      title: Media
+      headingLevel: 3
+      text: "I video, i tutorial e i podcast del progetto Designers Italia"
+      col4: true
+      background: dark
+      cardSettings:
+        headingLevel: 4
+        titleSmall: true
+        imgRatio: 16x9
+        imgPlaceholder: false
+        fullHeight: true
+        cardEvent: true        
+        showDateInfo: false      
+        showTags: false         
+        showDateOverlay: false  
+        showIconOverlay: true   
+        showTag: true  
+      buttons:
+      - type: button
+        btnStyle: primary
+        label: Esplora tutti i media
+        url: "/community/media/"
+        addonStyle: d-block
+        disabled: false
+
+  sectionsEditorial:
+# —
+    # EDITORIAL #C #I
+    # —
+    - menu: false
+      centered: true
+      background: null
+      title: Confrontati con la community #C
+      text: | #C
+        Scopri i canali dove confrontarti sulle risorse di Designers Italia, del design system del Paese e dei modelli di sito e servizi
+      components:
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/ItForum.svg #I
+          alt: "" #C
+          specular: true
+          #title: ciao
+          text: |
+            **Unisciti alla discussione** sul design dei servizi digitali con gli esperti del settore
+          ctas:
+          - label: Vai su Forum Italia #C
+            url: https://forum.italia.it/c/design/modello-comuni/ #M
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          image: /images/Slack.svg #I
+          alt: "" #C
+          specular: true
+          #title: ciao
+          text: |
+            **Dialoga e collabora in tempo reale** con i designer e i maintainer sui canali Slack dedicati al #design
+          ctas:
+          - label: Vai su Slack #C
+            url: https://slack.developers.italia.it/ #M
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        # TXT + IMG + CTA BLOCK
+        - name: TextImageCta
+          noSpace: true
+          image: /images/Github.svg #I
+          alt: "" #C
+          specular: true
+          #title: ciao
+          text: |
+            **Progetta e sviluppa con noi** nuove soluzioni per i servizi digitali nazionali su GitHub
+          ctas:
+          - label: Vai su GitHub #C
+            url: https://github.com/italia/  #M
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-github #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
