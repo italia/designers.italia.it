@@ -18,8 +18,8 @@ Comments and proposals regarding the evolution of the site and resources can be 
 
 Detailed guides are available for project contributors *(Italian language only)*:
 
-- **[HOW-TO-MANAGE-EDITORIAL-CONTENT.MD](HOW-TO-MANAGE-EDITORIAL-CONTENT.MD)** - Guide for creating and managing editorial content (news, events, media)
-- **[HOW-TO-DESIGN-SYSTEM-RELEASE.MD](HOW-TO-DESIGN-SYSTEM-RELEASE.MD)** - Procedure for design system releases
+- **[HOW-TO-MANAGE-EDITORIAL-CONTENT.MD](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-MANAGE-EDITORIAL-CONTENT.md)** - Guide for creating and managing editorial content (news, events, media)
+- **[HOW-TO-DESIGN-SYSTEM-RELEASE.MD](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-RELEASE-DESIGN-SYSTEM.md)** - Procedure for design system releases
 
 ### ✏️ Content
 
