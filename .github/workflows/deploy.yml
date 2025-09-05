@@ -43,7 +43,7 @@ jobs:
           npm ci --prefer-offline
           SHARP_CONCURRENCY=2 \
           GATSBY_CONCURRENT_DOWNLOAD=5 \
-          npm run build
+          npm run build:ci
         env:
           MATOMO_SITE_ID: ${{ secrets.MATOMO_SITE_ID }}
           MATOMO_SITE_URL: ${{ secrets.MATOMO_SITE_URL }}
