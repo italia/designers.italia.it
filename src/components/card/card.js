@@ -119,9 +119,9 @@ function Card({
       <div className="it-card-body">
         {text && (
           // keep markdown rendering, wrapped in a block matching the new template
-          <div className="it-card-text">
+          <p className="it-card-text">
             <ReactMarkdown>{text}</ReactMarkdown>
-          </div>
+          </p>
         )}
         {/* {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>} */}
         {externalLink && externalLink.url && <SimpleCta {...externalLink} />}
