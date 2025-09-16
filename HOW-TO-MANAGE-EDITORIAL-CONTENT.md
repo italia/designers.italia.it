@@ -400,7 +400,7 @@ components:
     subtitle: "Nuovi strumenti pratici per definire personalità, tono di voce e comportamento di un’intelligenza artificiale conversazionale."
     tag:
         label: Notizia
-        addonClasses: mt-3 text-uppercase
+        
 
     kangaroo:
       id: kangarooExample
@@ -542,7 +542,7 @@ components:
     subtitle: " Software a riuso nella PA: linee guida, strumenti e buone pratiche"
     tag:
         label: Community lab
-        addonClasses: mt-3 text-uppercase
+        
 
     kangaroo:
       id: kangarooExample
@@ -696,7 +696,7 @@ components:
     subtitle: "Approfondimento sulle linee guida, gli strumenti pratici e le buone pratiche"
     tag:
       label: Video - Community Lab
-      addonClasses: mt-3 text-uppercase
+      
 
     kangaroo:
       id: kangarooExample

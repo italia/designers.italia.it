@@ -6,25 +6,14 @@ import "./tag.scss";
 function Tag({ url, children, label, addonClasses, screenReaderText }) {
   const styles = classNames("chip chip-simple chip-sm", addonClasses); // don't use generic ".tag" > conflicts with Prism syntax highlighter
 
-  if (url) {
-    return (
-      <Link to={url} className={styles}>
-        {screenReaderText && (
-          <span className="visually-hidden">{screenReaderText}</span>
-        )}
-        {label || children}
-      </Link>
-    );
-  }
+  const Container = url ? Link : "div";
+  const containerProps = url ? { to: url, className: styles } : { className: styles };
+
   return (
-    <span className={styles}>
-      <span className="chip-label">
-        {screenReaderText && (
-          <span className="visually-hidden">{screenReaderText}</span>
-        )}
-        {label || children}
-      </span>
-    </span>
+    <Container {...containerProps}>
+      {screenReaderText && <span className="visually-hidden">{screenReaderText}</span>}
+      <span className="chip-label">{label || children}</span>
+    </Container>
   );
 }
 

@@ -105,7 +105,7 @@ function Tags({ children, pageContext, location, data }) {
                                   <div className="mb-2 mt-1 mb-md-0 mt-md-0">
                                     <Tag
                                       label={node.components?.hero?.tag?.label}
-                                      addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"
+                                      addonClasses=""
                                     />
                                   </div>
                                 )}
