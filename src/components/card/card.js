@@ -118,10 +118,14 @@ function Card({
 
       <div className="it-card-body">
         {text && (
-          // keep markdown rendering, wrapped in a block matching the new template
-          <p className="it-card-text">
-            <ReactMarkdown>{text}</ReactMarkdown>
-          </p>
+          // keep markdown rendering, ensure generated <p> has the it-card-text class
+          <ReactMarkdown
+            components={{
+              p: ({ node, ...props }) => <p className="it-card-text" {...props} />,
+            }}
+          >
+            {text}
+          </ReactMarkdown>
         )}
         {/* {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>} */}
         {externalLink && externalLink.url && <SimpleCta {...externalLink} />}
