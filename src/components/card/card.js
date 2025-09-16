@@ -45,7 +45,7 @@ function Card({
   buttonBottom,
   uniqueCardId,
 }) {
-  const styles = classNames("it-card it-card-image border d-md-flex flex-md-column w-100", {
+  const styles = classNames("it-card it-card-image border it-card-height-full", {
     fullheight: fullHeight,
     rounded,
     // "title-small": titleSmall,
@@ -135,33 +135,33 @@ function Card({
       </div>
       {(tag || tags || share || chips || dateInfo) && (
         <footer className="it-card-related it-card-footer">
+
+          <div className="it-card-taxonomy">
+            {tags && (
+              // <div className="chips-list-wrapper">
+                <ul className="it-card-chips" aria-label="Argomenti correlati:">
+                  {tags.map((t, index) => (
+                    <li className="list-item" key={`list-chip-${index}`}>
+                      <Chip key={`chip-${index}`} label={t} size="sm" />
+                    </li>
+                  ))}
+                </ul>
+              // </div>
+            )}
+
+            {tag && (
+              <ul className="it-card-chips chips-list" aria-label="Argomenti correlati:">
+                <Tag {...tag} />
+              </ul>
+            )}
+          </div>
           {dateInfo && (
             <time className="it-card-date" dateTime={dateInfo}>
               {dateInfo}
             </time>
           )}
+          {url && <ShareButton url={url} title={title} small />}
 
-          <div className="di-card-footer-content d-flex justify-content-between align-items-end">
-            {tags && (
-              <div className="chips-list-wrapper">
-                <ul className="chips-list chips d-flex flex-wrap mb-0" aria-label="Argomenti correlati:">
-                  {tags.map((t, index) => (
-                    <li className="list-item" key={`list-chip-${index}`}>
-                      <Chip key={`chip-${index}`} label={t} size="sm" color="secondary" />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {tag && (
-              <div className="tag-container">
-                <Tag {...tag} />
-              </div>
-            )}
-
-            {url && <ShareButton url={url} title={title} small />}
-          </div>
         </footer>
       )}
     </article>
