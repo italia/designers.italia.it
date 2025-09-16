@@ -18,10 +18,12 @@ function Tag({ url, children, label, addonClasses, screenReaderText }) {
   }
   return (
     <span className={styles}>
-      {screenReaderText && (
-        <span className="visually-hidden">{screenReaderText}</span>
-      )}
-      {label || children}
+      <span className="chip-label">
+        {screenReaderText && (
+          <span className="visually-hidden">{screenReaderText}</span>
+        )}
+        {label || children}
+      </span>
     </span>
   );
 }
