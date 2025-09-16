@@ -1,0 +1,123 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Design system.italia: la responsabilità di progettare interfacce pubbliche continua"
+  description: "Gli esperti del Dipartimento per la trasformazione digitale presentano agli Accessibility Days 2025 lo stato dell’arte del design system del Paese."
+  image: https://designers.italia.it/images/community/media-thumbnails//images/community/media-thumbnails/202509-design-system-italia-la-responsabilita-di-progettare-interfacce-pubbliche-continua.jpg
+  canonical: null
+  pathname: /community/media/202509-design-system-italia-la-responsabilita-di-progettare-interfacce-pubbliche-continua
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Design system.italia: la responsabilità di progettare interfacce pubbliche continua"
+    subtitle: "Gli esperti del Dipartimento per la trasformazione digitale presentano agli Accessibility Days 2025 lo stato dell’arte del design system del Paese"
+    tag:
+      label: Video - Evento
+      addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Esperienza utente,Accessibilità]
+
+  sectionsEditorial:
+      # FORMATO VIDEO FULL
+    # - menu: false
+    #   fullColumn: true
+    #   full: true
+    #   noSpace: true
+    #   centered: true
+    #   components:
+    #     - name: MediaPlayer
+    #       lang: it
+    #       url: https://youtu.be/_0j7ZQ67KtY
+    #       poster: /images/community/media-thumbnails/2023-08-21-media-thumbnail.jpg
+    #       trascription: Vestibulum hendrerit ultrices nibh
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/5fcr87LmGOs
+          poster: /images/community/media-thumbnails/202509-design-system-italia-la-responsabilita-di-progettare-interfacce-pubbliche-continua.jpg
+          trascription: |
+            È disponibile solo la trascrizione generata automaticamente nella [scheda del video su YouTube](https://youtu.be/5fcr87LmGOs)
+
+    # FORMATO VIDEO INLINE
+    # - noSpace: false 
+    #   centered: true
+    
+    #   components:
+    #     - name: TextImageCta
+    #       headingLevel: 2
+    #       title: Info sul video
+    #       text: |
+    #          Lorem ipsum
+    #     - name: MediaPlayer
+    #       lang: it
+    #       url: https://youtu.be/_0j7ZQ67KtY
+    #       poster: /images/community/media-thumbnails/2023-08-21-media-thumbnail.jpg
+    #       trascription: Vestibulum hendrerit ultrices nibh
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Intervento del 15/05/2025 nell'ambito degli Accessibility Days 2025. Gli esperti del Dipartimento per la trasformazione digitale hanno presentato agli Accessibility Days 2025 lo stato dell’arte del design system del Paese, la nuova generazione di risorse per realizzare le interfacce dei siti web della Pubblica Amministrazione, già adottate in oltre 10.000 siti e servizi pubblici. Il confronto con il team degli Accessibility Days si è concentrato in particolare sulla versione 1, i miglioramenti di accessibilità e gli sviluppi futuri. È inoltre stato presentato l’aggiornamento del Manuale operativo di design, strumento a supporto delle Linee guida di design. I partecipanti hanno potuto scoprire come utilizzare queste risorse per rendere più accessibili i servizi digitali pubblici e come contribuire al loro miglioramento continuo.
+          # ctasVertical: true
+          ctas:
+          - label: Vai alla scheda evento #C
+            url: "/community/eventi/20250515-accessibility-days-2025-il-design-system-italia/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Scheda workshop #C
+            url: "/community/eventi/20250516-accessibility-days-2025-accessibilita-by-design/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
