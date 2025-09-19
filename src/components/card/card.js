@@ -155,7 +155,7 @@ function Card({
 
             {tag && (
               <ul className="it-card-chips chips-list" aria-label="Argomenti correlati:">
-                <Tag {...tag} />
+                <Chip {...tag} as="span" />
               </ul>
             )}
           </div>
