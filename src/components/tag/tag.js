@@ -4,7 +4,7 @@ import Link from "../link/link";
 import "./tag.scss";
 
 function Tag({ url, children, label, addonClasses, screenReaderText }) {
-  const styles = classNames("chip chip-simple chip-sm", addonClasses); // don't use generic ".tag" > conflicts with Prism syntax highlighter
+  const styles = classNames("di-tag", addonClasses); // don't use generic ".tag" > conflicts with Prism syntax highlighter
 
   const Container = url ? Link : "div";
   const containerProps = url ? { to: url, className: styles } : { className: styles };
@@ -12,7 +12,7 @@ function Tag({ url, children, label, addonClasses, screenReaderText }) {
   return (
     <Container {...containerProps}>
       {screenReaderText && <span className="visually-hidden">{screenReaderText}</span>}
-      <span className="chip-label">{label || children}</span>
+      <span>{label || children}</span>
     </Container>
   );
 }
