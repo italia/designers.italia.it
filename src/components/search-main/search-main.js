@@ -209,7 +209,7 @@ function SearchMain({ location, maxResults, title, suggest }) {
                                     <div className="mb-2 mt-1 mb-md-0 mt-md-0">
                                       <Tag
                                         label={result.tag}
-                                        addonClasses=""
+                                        addonClasses="ms-md-4 px-2 py-0"
                                       />
                                     </div>
                                   ) : null}
