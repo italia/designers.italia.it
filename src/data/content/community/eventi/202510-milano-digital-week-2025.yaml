@@ -1,0 +1,120 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Milano Digital Week 2025 - progettare assistenti virtuali nei servizi pubblici"
+  description: "Come le intelligenze artificiali conversazionali possono migliorare i servizi pubblici e gli strumenti di Designers Italia per progettarle"
+  image: https://designers.italia.it/images/community/eventi/2024/20241013-milano-digital-week-interfacce-conversazionali-e-citizen-experience-1200x627.png
+  canonical: null
+  pathname: /community/eventi/202510-milano-digital-week-2025
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Milano Digital Week 2025: progettare assistenti virtuali nei servizi pubblici"
+    subtitle: "Come le intelligenze artificiali conversazionali possono migliorare i servizi pubblici e gli strumenti di Designers Italia per progettarle"
+    tag:
+        label: Webinar
+        addonClasses: mt-3 text-uppercase
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Intelligenza artificiale, Contenuti e linguaggio, Progettazione interfaccia]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Online
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+            
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita con registrazione" #C
+            url: https://www.milanodigitalweek.com/event/come-progettare-assistenti-virtuali-nei-servizi-pubblici
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "03 ottobre 2025, 14:00-15:00"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+            Durante la Milano Digital Week 2025 parleremo delle implicazioni nel progettare assistenti virtuali per la Pubblica Amministrazione. Come si progetta un assistente virtuale per i servizi pubblici? Che tono deve usare? Cosa deve fare per i cittadini? 
+            Designers Italia nell’ultimo anno ha lavorato sul tema mettendo a punto [strumenti utili per progettare un’interfaccia conversazionale](https://designers.italia.it/risorse-per-progettare/progettare/contenuti-e-linguaggio/crea-il-profilo-di-un-assistente-virtuale/) basata su intelligenza artificiale. Lo ha fatto coinvolgendo la community in workshop e sperimentazioni, per far evolvere il lavoro svolto e metterlo a riuso per tutti. 
+            In questo webinar vedremo come sono nati questi strumenti e come possono essere usati per la progettazione di servizi al cittadino. 
+
+            La Milano Digital Week è l'evento diffuso che si svolge in diverse location della città di Milano, si focalizza sullo sviluppo e l'innovazione 
+            digitale coinvolgendo la collettività: cittadinanza, imprese e istituzioni. Il tema di quest’anno riguarda l’Intelligenza Artificiale e 
+            l’evoluzione del rapporto tra linguaggi tecnologici e umani. 
+
+          ctas:
+          - label: Iscriviti
+            url: https://www.milanodigitalweek.com/event/come-progettare-assistenti-virtuali-nei-servizi-pubblici
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
