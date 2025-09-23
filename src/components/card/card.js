@@ -13,6 +13,8 @@ import ShareButton from "../share-button/share-button";
 
 import "./card.scss";
 
+const MarkdownParagraph = ({ node, ...props }) => <p className="it-card-text" {...props} />;
+
 function Card({
   cardEvent,
   title,
@@ -118,15 +120,15 @@ function Card({
 
       <div className="it-card-body">
         {text && (
-          // keep markdown rendering, ensure generated <p> has the it-card-text class
-          <ReactMarkdown
-            components={{
-              p: ({ node, ...props }) => <p className="it-card-text" {...props} />,
-            }}
-          >
-            {text}
-          </ReactMarkdown>
-        )}
+              // keep markdown rendering, ensure generated <p> has the it-card-text class
+              <ReactMarkdown
+                components={{
+                  p: MarkdownParagraph,
+                }}
+              >
+                {text}
+              </ReactMarkdown>
+            )}
         {/* {dateInfo && <span className="date-info font-monospace mb-3">{dateInfo}</span>} */}
         {externalLink && externalLink.url && <SimpleCta {...externalLink} />}
         {moreInfo && <span className="more-info font-monospace">{moreInfo}</span>}
