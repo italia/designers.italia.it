@@ -16,7 +16,7 @@ const MarkdownParagraph = ({ node, ...props }) => (
   <p className="it-card-text" {...props} />
 );
 
-function Card({
+const Card = ({
   cardEvent,
   title,
   // titleSmall,
@@ -47,7 +47,7 @@ function Card({
   rounded,
   buttonBottom,
   uniqueCardId,
-}) {
+}) => {
   const styles = classNames(
     "it-card it-card-image border it-card-height-full",
     {
