@@ -19,8 +19,6 @@ const MarkdownParagraph = ({ node, ...props }) => (
 const Card = ({
   cardEvent,
   title,
-  // titleSmall,
-  // titleBig,
   headingLevel,
   url,
   blank,
@@ -53,8 +51,6 @@ const Card = ({
     {
       fullheight: fullHeight,
       rounded,
-      // "title-small": titleSmall,
-      // "title-big": titleBig,
       "shadow-sm": !noShadow,
       "text-serif": textSerif,
       "has-button": buttonBottom,
@@ -68,13 +64,6 @@ const Card = ({
     "mb-4 negative-margin": cardEvent,
     rounded: imgRounded,
   });
-
-  // const styleBody = classNames(
-  //   "bg-white",
-  //   {
-  //     rounded,
-  //   },
-  // );
 
   // heading level
   let HLevel;
