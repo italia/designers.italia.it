@@ -3,27 +3,10 @@
 
 .chip {
 	text-decoration: none;
-	margin: 4px 8px 8px 0px; // fix to move to BSI
-	&.chip-simple {
-		padding-left: var(--chip-x-padding);
-		padding-right: var(--chip-x-padding);
-	}
-	.chip-label {
-		font-size: var(--chip-font-size);
-	}
+	margin: 4px 8px 8px 0px; // fix to move to BSI - TODO:investigate why margin-right not working
+	padding-bottom: 0;
+
 	&.chip-disabled {
 		pointer-events: none;
 	}
-	&.chip-secondary {
-		border-color: var(--chip-secondary-border-color);
-	}
-}
-
-//mobile only ------------------------------------------------------------------------------------------
-@include media-breakpoint-down(sm) {
-  .chip  {
-    .chip-label {
-      height: 14px;
-    }
-  }
 }
