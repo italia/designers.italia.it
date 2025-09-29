@@ -90,7 +90,7 @@ function ListArchiveNews({ background, noSpace }) {
                         icon={iconOpt}
                         addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4"
                       >
-                        <div className="d-md-flex">
+                        <div className="d-md-flex align-items-center">
                           <h3 className="h6 mb-0">
                             <strong>{title}</strong>
                           </h3>
