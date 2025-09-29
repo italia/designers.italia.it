@@ -74,10 +74,12 @@ const Card = ({
 
   const id = uniqueCardId || slugify(title, { lower: true, strict: true });
   // New template: title -> image -> body -> footer
+  const titleClass = iconOverlay ? "it-card-title it-card-title-icon" : "it-card-title";
+
   return (
     <article aria-labelledby={id} className={styles}>
       {HLevel && (
-        <HLevel id={id} className="it-card-title">
+        <HLevel id={id} className={titleClass}>
           <Link
             to={url}
             target={blank ? "_blank" : undefined}
@@ -87,6 +89,12 @@ const Card = ({
             {externalLink && !externalLink.url && (
               <SimpleCta {...externalLink} />
             )}
+
+            <div className="it-card-title-icon-wrapper">            
+              {iconOverlay && (
+                <Icon {...iconOverlay} />
+              )}
+            </div>
           </Link>
         </HLevel>
       )}
@@ -96,25 +104,15 @@ const Card = ({
           <div className={imgStyle}>
             {img && !imgPlaceholder && <ImageResponsive src={img} alt={alt} />}
             {iconImg && <ImageResponsive src={iconImg} alt={iconImgAlt} />}
-            {dateOverlay && (
-              <div className="date-overlay d-flex flex-column justify-content-center">
-                <span className="day font-monospace">{dateOverlay.day}</span>
-                <span className="month">{dateOverlay.month}</span>
-                {dateOverlay.year && (
-                  <span className="month">{dateOverlay.year}</span>
-                )}
-              </div>
-            )}
-            {iconOverlay && (
-              <div className="icon-overlay d-flex flex-column justify-content-center align-items-center">
-                <Icon {...iconOverlay} />
-              </div>
-            )}
           </div>
         </div>
       )}
 
       <div className="it-card-body">
+        {dateOverlay && (
+          <p className="it-card-subtitle">{dateOverlay.day} {dateOverlay.month} {dateOverlay.year}</p>
+        )}
+
         {text && (
           // keep markdown rendering, ensure generated <p> has the it-card-text class
           <ReactMarkdown
