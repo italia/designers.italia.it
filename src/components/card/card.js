@@ -61,7 +61,6 @@ const Card = ({
     [`ratio-${imgRatio}`]: imgRatio,
     "img-placeholder": imgPlaceholder,
     "icon-img": iconImg,
-    "mb-4 negative-margin": cardEvent,
     rounded: imgRounded,
   });
 
