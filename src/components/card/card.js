@@ -137,7 +137,7 @@ const Card = ({
       </div>
       {(tag || tags || share || chips || dateInfo) && (
         <footer className="it-card-related it-card-footer">
-          <div className="it-card-taxonomy">
+          <div className="it-card-taxonomy w-50">
             {tags && (
               // <div className="chips-list-wrapper">
               <ul className="it-card-chips" aria-label="Argomenti correlati:">
@@ -160,7 +160,7 @@ const Card = ({
             )}
           </div>
           {dateInfo && (
-            <time className="it-card-date" dateTime={dateInfo}>
+            <time className="it-card-date w-auto" dateTime={dateInfo}>
               {dateInfo}
             </time>
           )}

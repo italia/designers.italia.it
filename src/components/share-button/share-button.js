@@ -12,7 +12,7 @@ function ShareButton({ title, url, color, small }) {
         icon: "sprites.svg#it-more-items",
         size: "sm",
         color,
-        addonClasses: "ms-3",
+        addonClasses: "ms-1",
       },
     },
     list: {
