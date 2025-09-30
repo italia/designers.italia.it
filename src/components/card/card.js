@@ -9,6 +9,7 @@ import Icon from "../icon/icon";
 import Link from "../link/link";
 import Button from "../button/button";
 import ShareButton from "../share-button/share-button";
+import Tag from "../tag/tag";
 
 import "./card.scss";
 
@@ -154,7 +155,7 @@ const Card = ({
                 className="it-card-chips chips-list"
                 aria-label="Argomenti correlati:"
               >
-                <Chip {...tag} as="span" />
+                <Tag {...tag} as="span" addonClasses={"py-1 px-2"} />
               </ul>
             )}
           </div>
