@@ -13,12 +13,11 @@ import Tag from "../tag/tag";
 
 import "./card.scss";
 
-const MarkdownParagraph = ({ node, ...props }) => (
-  <p className="it-card-text" {...props} />
-);
+function MarkdownParagraph({ node, ...props }) {
+  return <p className="it-card-text" {...props} />;
+}
 
-const Card = ({
-  cardEvent,
+function Card({
   title,
   headingLevel,
   url,
@@ -46,7 +45,7 @@ const Card = ({
   rounded,
   buttonBottom,
   uniqueCardId,
-}) => {
+}) {
   const styles = classNames(
     "it-card it-card-image border it-card-height-full",
     {
@@ -75,7 +74,9 @@ const Card = ({
 
   const id = uniqueCardId || slugify(title, { lower: true, strict: true });
   // New template: title -> image -> body -> footer
-  const titleClass = iconOverlay ? "it-card-title it-card-title-icon" : "it-card-title";
+  const titleClass = iconOverlay
+    ? "it-card-title it-card-title-icon"
+    : "it-card-title";
 
   return (
     <article aria-labelledby={id} className={styles}>
@@ -91,10 +92,8 @@ const Card = ({
               <SimpleCta {...externalLink} />
             )}
 
-            <div className="it-card-title-icon-wrapper">            
-              {iconOverlay && (
-                <Icon {...iconOverlay} />
-              )}
+            <div className="it-card-title-icon-wrapper">
+              {iconOverlay && <Icon {...iconOverlay} />}
             </div>
           </Link>
         </HLevel>
@@ -111,7 +110,9 @@ const Card = ({
 
       <div className="it-card-body">
         {dateOverlay && (
-          <p className="it-card-subtitle">{dateOverlay.day} {dateOverlay.month} {dateOverlay.year}</p>
+          <p className="it-card-subtitle">
+            {dateOverlay.day} {dateOverlay.month} {dateOverlay.year}
+          </p>
         )}
 
         {text && (
@@ -155,7 +156,7 @@ const Card = ({
                 className="it-card-chips chips-list"
                 aria-label="Argomenti correlati:"
               >
-                <Tag {...tag} as="span" addonClasses={"py-1 px-2"} />
+                <Tag {...tag} as="span" addonClasses="py-1 px-2" />
               </ul>
             )}
           </div>
