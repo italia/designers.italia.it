@@ -150,10 +150,7 @@ function Card({
               </ul>
               // </div>
             )}
-
-            {tag && (
-              <Tag {...tag} as="span" addonClasses="py-1 px-2" />
-            )}
+            {tag && <Tag {...tag} as="span" addonClasses="py-1 px-2" />}
           </div>
           {dateInfo && (
             <time className="it-card-date w-auto" dateTime={dateInfo}>
