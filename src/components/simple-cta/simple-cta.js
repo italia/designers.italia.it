@@ -8,7 +8,7 @@ function SimpleCta({ icon, children, label, url, blank, screenReaderText }) {
     <>
       {url && (
         <Link
-          className="simple-cta py-1 mb-3"
+          className="simple-cta pt-2 mb-2"
           to={url}
           target={blank ? "_blank" : undefined}
           rel={blank ? "noreferrer" : undefined}
@@ -19,7 +19,7 @@ function SimpleCta({ icon, children, label, url, blank, screenReaderText }) {
         </Link>
       )}
       {!url && (
-        <span className="simple-cta py-1 mb-3">
+        <span className="simple-cta pt-3 mb-2">
           <span className="text">{label || children}</span>
           <span className="visually-hidden">{screenReaderText}</span>
           <Icon {...icon} />

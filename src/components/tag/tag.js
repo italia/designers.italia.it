@@ -6,23 +6,18 @@ import "./tag.scss";
 function Tag({ url, children, label, addonClasses, screenReaderText }) {
   const styles = classNames("di-tag", addonClasses); // don't use generic ".tag" > conflicts with Prism syntax highlighter
 
-  if (url) {
-    return (
-      <Link to={url} className={styles}>
-        {screenReaderText && (
-          <span className="visually-hidden">{screenReaderText}</span>
-        )}
-        {label || children}
-      </Link>
-    );
-  }
+  const Container = url ? Link : "div";
+  const containerProps = url
+    ? { to: url, className: styles }
+    : { className: styles };
+
   return (
-    <span className={styles}>
+    <Container {...containerProps}>
       {screenReaderText && (
         <span className="visually-hidden">{screenReaderText}</span>
       )}
-      {label || children}
-    </span>
+      <span>{label || children}</span>
+    </Container>
   );
 }
 

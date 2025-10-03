@@ -90,7 +90,7 @@ function ListArchiveEvents({ background, noSpace }) {
                         icon={iconOpt}
                         addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4"
                       >
-                        <div className="d-md-flex">
+                        <div className="d-md-flex align-items-center">
                           <h3 className="h6 mb-0">
                             <strong>{title}</strong>
                           </h3>
@@ -99,7 +99,7 @@ function ListArchiveEvents({ background, noSpace }) {
                               <div className="mb-2 mt-1 mb-md-0 mt-md-0">
                                 <Tag
                                   label={node.components?.hero?.tag?.label}
-                                  addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"
+                                  addonClasses="ms-md-2 px-2 py-0"
                                 />
                               </div>
                             )}
