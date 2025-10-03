@@ -138,9 +138,8 @@ function Card({
       </div>
       {(tag || tags || share || chips || dateInfo) && (
         <footer className="it-card-related it-card-footer">
-          <div className="it-card-taxonomy w-50">
+          <div className="it-card-taxonomy w-75">
             {tags && (
-              // <div className="chips-list-wrapper">
               <ul className="it-card-chips" aria-label="Argomenti correlati:">
                 {tags.map((t, index) => (
                   <li className="list-item" key={`list-chip-${index}`}>
@@ -148,16 +147,27 @@ function Card({
                   </li>
                 ))}
               </ul>
-              // </div>
             )}
             {tag && <Tag {...tag} as="span" addonClasses="py-1 px-2" />}
           </div>
-          {dateInfo && (
-            <time className="it-card-date w-auto" dateTime={dateInfo}>
-              {dateInfo}
-            </time>
+
+          {(tags && share || dateInfo) ? (
+            <div className="it-card-meta">
+              <time className="it-card-date w-auto" dateTime={dateInfo}>
+                {dateInfo}
+              </time>
+              <ShareButton url={url} title={title} small />
+            </div>
+          ) : (
+            <>
+              {dateInfo && (
+                <time className="it-card-date" dateTime={dateInfo}>
+                  {dateInfo}
+                </time>
+              )}
+              {(url || share) && <ShareButton url={url} title={title} small />}
+            </>
           )}
-          {url && <ShareButton url={url} title={title} small />}
         </footer>
       )}
     </article>
