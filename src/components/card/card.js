@@ -13,6 +13,28 @@ import Tag from "../tag/tag";
 
 import "./card.scss";
 
+// ISO dates in HTML 'datetime' must be in the format YYYY-MM-DD
+const convertItalianDateToHTML = (italianDate) => {
+  const mesi = {
+    gennaio: "01",
+    febbraio: "02",
+    marzo: "03",
+    aprile: "04",
+    maggio: "05",
+    giugno: "06",
+    luglio: "07",
+    agosto: "08",
+    settembre: "09",
+    ottobre: "10",
+    novembre: "11",
+    dicembre: "12",
+  };
+  const [giorno, mese, anno] = italianDate?.split(" ") ?? [];
+  const meseNum = mesi[mese?.toLowerCase()];
+  if (!meseNum || !giorno || !anno) return "";
+  return `${anno}-${meseNum}-${giorno.padStart(2, "0")}`;
+};
+
 function MarkdownParagraph({ node, ...props }) {
   return <p className="it-card-text" {...props} />;
 }
@@ -151,20 +173,34 @@ function Card({
             {tag && <Tag {...tag} as="span" addonClasses="py-1 px-2" />}
           </div>
 
-          {(tags && share || dateInfo) ? (
+          {(tags && share) || dateInfo ? (
             <div className="it-card-meta">
-              <time className="it-card-date w-auto" dateTime={dateInfo}>
-                {dateInfo}
-              </time>
+              {dateInfo &&
+                (() => {
+                  const htmlDate = convertItalianDateToHTML(dateInfo);
+                  return htmlDate ? (
+                    <time className="it-card-date w-auto" dateTime={htmlDate}>
+                      {dateInfo}
+                    </time>
+                  ) : (
+                    <span className="it-card-date w-auto">{dateInfo}</span>
+                  );
+                })()}
               <ShareButton url={url} title={title} small />
             </div>
           ) : (
             <>
-              {dateInfo && (
-                <time className="it-card-date" dateTime={dateInfo}>
-                  {dateInfo}
-                </time>
-              )}
+              {dateInfo &&
+                (() => {
+                  const htmlDate = convertItalianDateToHTML(dateInfo);
+                  return htmlDate ? (
+                    <time className="it-card-date" dateTime={htmlDate}>
+                      {dateInfo}
+                    </time>
+                  ) : (
+                    <span className="it-card-date">{dateInfo}</span>
+                  );
+                })()}
               {(url || share) && <ShareButton url={url} title={title} small />}
             </>
           )}
