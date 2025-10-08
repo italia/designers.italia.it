@@ -1,0 +1,126 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Conferenza internazionale User Needs First: l’ecosistema dei design system europei"
+  description: "Design system .italia si confronta con i design system nazionali degli altri Paesi europei."
+  image: https://designers.italia.it/images/community/eventi/2025/202504-user-needs-first.png
+  canonical: null
+  pathname: /community/eventi/20250410-user-needs-first/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Conferenza internazionale User Needs First: l’ecosistema dei design system europei"
+    subtitle: "Design system .italia si confronta con i design system nazionali degli altri Paesi europei"
+    tag:
+        label: Talk
+        
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community, Design system, Open source]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Online
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+            
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita in streaming su registrazione" #C
+            url: https://nldesignsystem.nl/community/events/introduction-european-design-systems-2025/
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "10 aprile 2025, 13.30–14.45"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+            Designers Italia presenterà il design system .italia e potrà confrontarsi con **Grecia, Portogallo, Danimarca e Olanda** nella sessione 
+            **“Introduction into European Design Systems”**. 
+            
+            Durante l’incontro, ogni paese condividerà lo **stato dell’arte del proprio design system nazionale**, evidenziandone il valore nel migliorare 
+            l’esperienza d’uso, l’accessibilità e la coerenza tra i servizi pubblici digitali. Attraverso lo scambio di esperienze, sarà possibile individuare 
+            spunti per migliorare e opportunità per collaborare.
+
+            **User Needs First (Gebruiker Centraal) è una community di professionisti del governo olandese** impegnata nella promozione di servizi pubblici 
+            inclusivi e accessibili. Il suo scopo è migliorare la qualità dei servizi digitali, anche oltre i confini nazionali, attraverso iniziative di condivisione 
+            di esperienze, conoscenze e buone pratiche. 
+            
+            La **conferenza internazionale** ad Amsterdam è una di queste ed è realizzata in collaborazione con il **Ministero dell’Interno 
+            e delle Relazioni del Regno dei Paesi Bassi**, e il supporto della **International Design in Government community**.
+
+          ctas:
+          - label: Iscriviti
+            url: https://nldesignsystem.nl/community/events/introduction-european-design-systems-2025/
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2

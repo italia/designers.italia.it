@@ -1,0 +1,84 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Progettare servizi pubblici digitali più equi e sostenibili"
+  description: Una riflessione sulla necessità delle PA di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reinventare ogni volta la ruota. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20210319-progettare-servizi-pubblici-digitali-piu-equi-e-sostenibili.jpg
+  canonical: null
+  pathname: /community/media/20210319-progettare-servizi-pubblici-digitali-piu-equi-e-sostenibili
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Progettare servizi pubblici digitali più equi e sostenibili'
+    subtitle: Una riflessione sulla necessità delle PA di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reinventare ogni volta la ruota 
+    tag:
+      label: Video - Webinar
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione servizi]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=DlLTpVBCX8k
+          poster: /images/community/media-thumbnails/20210319-progettare-servizi-pubblici-digitali-piu-equi-e-sostenibili.jpg
+          trascription: |
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=DlLTpVBCX8k)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Evento organizzato il 19/03/2021 nell'ambito della Milano Digital Week. In questo intervento, Designers Italia racconta il proprio intento: riflettere sulla necessità delle pubbliche amministrazioni di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reinventare ogni volta la ruota.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20210329-progettare-servizi-pubblici-digitali-equi-e-sostenibili/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 

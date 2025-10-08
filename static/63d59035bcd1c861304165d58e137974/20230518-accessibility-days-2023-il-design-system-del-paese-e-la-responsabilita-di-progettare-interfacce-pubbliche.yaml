@@ -1,0 +1,115 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Accessibility Days 2023 – ll design system del Paese e la responsabilità di progettare interfacce pubbliche - Designers Italia"
+  description: Gli esperti del Dipartimento per la trasformazione digitale e AGID fanno il punto sulle promesse, le scoperte e i risultati ottenuti nel lavoro di aggiornamento del design system del Paese.
+  image: null
+  canonical: null
+  pathname: /community/eventi/20230518-accessibility-days-2023-il-design-system-del-paese-e-la-responsabilita-di-progettare-interfacce-pubbliche/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: Accessibility Days 2023 - ll design system del Paese e la responsabilità di progettare interfacce pubbliche
+    subtitle:  Gli esperti del Dipartimento per la trasformazione digitale e AGID fanno il punto sulle promesse, le scoperte e i risultati ottenuti nel lavoro di aggiornamento del design system del Paese.
+
+    tag:
+        label: Talk
+        
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Esperienza utente,Accessibilità,Design system]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Edificio Marco Polo
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+              Università degli Studi di Roma "La Sapienza", Roma
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "18 maggio 2023, 12.00–13.00"
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita, in presenza o streaming" #C
+            url: https://accessibilitydays.it/2023/sessione/design-system-progettare-interfacce-pubbliche/
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+             Ad un anno di distanza dalla precedente edizione, facciamo il punto sul lavoro di aggiornamento del design system del Paese, l’insieme dei principi e degli strumenti per realizzare interfacce per siti e servizi pubblici digitali usabili, accessibili, coerenti, familiari e fruibili da tutti i cittadini. Daniele Tabellini e Fabrizio Caccavello si confronteranno in particolare sull'accessibilità, punto fondante del design system e dei servizi pubblici digitali.
+
+          ctas:
+          - label: Scopri maggiori informazioni
+            url: https://accessibilitydays.it/2023/sessione/design-system-progettare-interfacce-pubbliche/
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2

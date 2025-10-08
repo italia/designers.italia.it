@@ -1,0 +1,95 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "L'atlante per la trasformazione digitale della PA - Designers Italia"
+  description: "Il valore della visualizzazione dei dati per le organizzazioni pubbliche."
+  image: https://designers.italia.it/images/community/media-thumbnails/20230203-l-atlante-per-la-trasformazione-digitale-della-pa.jpg
+  canonical: null
+  pathname: /community/media/20230203-l-atlante-per-la-trasformazione-digitale-della-pa
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "L'atlante per la trasformazione digitale della PA"
+    subtitle: "Il valore della visualizzazione dei dati per le organizzazioni pubbliche"
+    tag:
+      label: Video - Intervista
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Formazione, Cultura progettuale, Disseminazione]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=0OzRyE330-I&list=PLd5bJJul8c5qafJpT1RWN3jYIy654Kx5K&index=16
+          poster: /images/community/media-thumbnails/20230203-l-atlante-per-la-trasformazione-digitale-della-pa.jpg
+          subtitles: /files/community/subtitles/20230203-l-atlante-per-la-trasformazione-digitale-della-pa.vtt
+          trascription: |
+            La trascrizione sarà presto disponibile. 
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            L'intervista racconta il progetto svolto nel laboratorio di design della comunicazione della Laurea Magistrale dell'università IUAV di Venezia in cui gli studenti hanno mappato attraverso dati quantitativi e qualitativi le informazioni relative agli ai principali ambiti della vita civica.
+          ctas:
+          - label: Approfondisci l'Atlante #C
+            url: "/community/notizie/20220325-atlante-della-trasformazione-digitale/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20230328-aperte-le-iscrizioni-della-seconda-edizione-del-corso-qualita-dei-servizi-digitali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2

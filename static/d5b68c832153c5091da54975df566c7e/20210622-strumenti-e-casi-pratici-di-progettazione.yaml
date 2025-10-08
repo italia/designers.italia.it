@@ -1,0 +1,84 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Strumenti e casi pratici di progettazione"
+  description: Risorse, strumenti operativi e buone pratiche. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20210622-strumenti-e-casi-pratici-di-progettazione.jpg
+  canonical: null
+  pathname: /community/media/20210622-strumenti-e-casi-pratici-di-progettazione
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Strumenti e casi pratici di progettazione'
+    subtitle: Risorse, strumenti operativi e buone pratiche
+    tag:
+      label: Video - Webinar
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione servizi, Ricerca utente, Progettazione interfaccia]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=Hot9L8ZYHEw
+          poster: /images/community/media-thumbnails/20210622-strumenti-e-casi-pratici-di-progettazione.jpg
+          trascription: |
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=Hot9L8ZYHEw)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Webinar del 22/06/2021 del corso "Progettare, sviluppare ed erogare servizi pubblici digitali". Quali sono le attività da svolgere e quali strumenti concreti Designers Italia mette a disposizione per le diverse figure coinvolte nei progetti di ideazione e realizzazione dei servizi pubblici digitali della PA? Il video si focalizza su metodologie e strumenti di ricerca, mappa degli attori e dell’ecosistema, strumenti di progettazione di interfacce usabili ed accessibili, risorse, strumenti operativi e buone pratiche.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20210601-progettare-sviluppare-ed-erogare-servizi-pubblici-digitali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 

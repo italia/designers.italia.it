@@ -1,0 +1,127 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+
+seo:
+  name: "Ora tocca a voi! Le nuove iniziative per la community"
+  description: "Online la nuova sezione del sito dedicata a coinvolgere cittadinanza, PA e fornitori."
+  image:  https://designers.italia.it/images/community/202507-nuova-sezione-partecipa-1920x923.png #I XXX
+  canonical: null
+  pathname: /community/notizie/20250716-ora-tocca-a-voi-le-nuove-iniziative-per-la-community/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Ora tocca a voi! Le nuove iniziative per la community"
+    subtitle: "Online la nuova sezione del sito dedicata a coinvolgere cittadinanza, PA e fornitori"
+    tag:
+        label: Notizia
+        
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community, Partecipazione, Cultura progettuale]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 16 luglio 2025
+
+  imageIcons:
+   image: /images/community/202507-nuova-sezione-partecipa-1920x923.png
+   alt: ""
+   background: dark
+
+  sectionsEditorial :     
+
+    - menu: false
+      noSpace: false
+      centered: true
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            Designers Italia ha lo scopo di disseminare la cultura progettuale nella PA e, a questo scopo, il contributo della community è essenziale. Oltre a mettere a disposizione risorse teoriche e strumenti operativi, vogliamo dare spazio alle esperienze delle persone che usano i servizi pubblici e di coloro che contribuiscono al lavoro sul campo. 
+
+            Per questo, inauguriamo tre nuove iniziative rivolte a voi, per rendervi partecipi della trasformazione digitale della PA. 
+            
+            ## Prendere parte alle attività di ricerca
+
+            Svolgiamo periodicamente attività di ricerca per indagare le opinioni e le idee di chi usa i servizi pubblici digitali, tramite questionari online, interviste o sessioni di test. 
+            
+            Adesso, chiunque abbia interesse a prenderne parte, può dare la propria disponibilità a essere inserito in un database di contatti, che ci permetterà di includere, nella progettazione dei servizi digitali pubblici, le esigenze di persone con un’ampia varietà di caratteristiche. 
+
+            ## Segnalare buone pratiche
+
+            Da oggi chiediamo alla community di segnalarci i progetti in cui hanno usato le nostre risorse e spiegarci i vantaggi che ne hanno tratto. Questo ci permette di comprendere meglio l’impatto e l’efficacia delle nostre risorse direttamente da chi le ha utilizzate e, allo stesso tempo, creare una raccolta di casi studio per fornire esempi concreti di progettazione in ambito pubblico. 
+
+            ## Promuovere contenuti formativi
+
+            Vogliamo espandere la nostra [raccolta di articoli di approfondimento](https://medium.com/designers-italia), rilanciando contenuti prodotti dalla community sulle loro esperienze con la progettazione di siti e servizi digitali della PA. Questo contribuirà alla divulgazione della cultura della progettazione in ambito pubblico e a incentivare scambi di conoscenza tra gli esperti del settore. 
+
+        - name: TextImageCta
+          title: Scopri come partecipare alla community di Designers Italia 
+          #text: |
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: "Esplora la nuova sezione Partecipa"
+            url: "/community/partecipa/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+ 
+
+
+
+
+            

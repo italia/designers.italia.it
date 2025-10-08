@@ -1,0 +1,126 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Community call: le Aziende sanitarie locali presentano i loro nuovi siti"
+  description: "Due esperienze concrete di progettazione di servizi sanitari di qualità con il modello di sito per le ASL."
+  image: https://designers.italia.it/images/community/eventi/2024/20241119-community-lab-design-system-italia-1200x627.png
+  canonical: null
+  pathname: /community/eventi/20250528-community-call-aziende-sanitarie-locali
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Community call: le Aziende sanitarie locali presentano i loro nuovi siti"
+    subtitle: "Due esperienze concrete di progettazione di servizi sanitari di qualità con il modello di sito per le ASL"
+    tag:
+        label: Community call
+        
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Adozione modelli, Community, Community call, Sviluppo interfaccia]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Online
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+            
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita con registrazione" #C
+            url: https://ec.europa.eu/eusurvey/runner/CommunitycallASL
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "28 maggio 2025, 11.30–13.00"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+            La prossima Community call è l’occasione per conoscere meglio il [modello di sito per le ASL](/modelli/aziende-sanitarie-locali/) di Designers Italia, attraverso 
+            il racconto dell’esperienza concreta delle due Aziende sanitarie locali (ASL) coinvolte nella [fase pilota della Misura 1.4.1 
+            “Esperienza del cittadino nei servizi pubblici"](https://innovazione.gov.it/notizie/articoli/pnrr-pubblicati-i-primi-siti-semplificati-di-asl-e-musei-civici/) del Piano Nazionale di Ripresa e Resilienza (PNRR).
+
+            Inizieremo con una breve presentazione delle risorse di Designers Italia a disposizione delle ASL. A seguire, **l’Azienda Sanitaria Provinciale 
+            di Siracusa** e **l’Azienda Unità Sanitaria Locale di Ferrara**, insieme ai loro fornitori, illustreranno i siti realizzati adottando il modello, 
+            raccontando il percorso intrapreso per sfruttarne le risorse e raggiungere un risultato di qualità e nel rispetto delle norme. 
+            Grazie a un confronto sulle attività svolte, gli strumenti adottati e le sfide affrontate, **condivideranno cosa hanno imparato e come l’esperienza 
+            può essere replicata** da altre ASL, pubbliche amministrazioni, fornitori e dalla community di Designers e Developers Italia. 
+            
+            Le Community call di Designers e Developers Italia sono eventi aperti di scambio e di confronto in cui funzionari pubblici, progettisti 
+            e sviluppatori raccontano la loro esperienza rispetto a temi specifici di interesse per tutti coloro che operano nell’ambito della 
+            trasformazione digitale della PA, promuovendo un approccio condiviso alla progettazione di servizi digitali pubblici di qualità.
+
+          ctas:
+          - label: Registrati
+            url: https://ec.europa.eu/eusurvey/runner/CommunitycallASL
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2

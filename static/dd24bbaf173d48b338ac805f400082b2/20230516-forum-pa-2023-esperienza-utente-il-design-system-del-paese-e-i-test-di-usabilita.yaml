@@ -1,0 +1,114 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Forum PA 2023 – Esperienza utente: il design system del Paese e i test di usabilità - Designers Italia"
+  description: Designers Italia presenta a Forum PA una modalità di test di usabilità sviluppata nell’ambito dell’aggiornamento del design system del Paese.
+  image: null
+  canonical: null
+  pathname: /community/eventi/20230516-forum-pa-2023-esperienza-utente-il-design-system-del-paese-e-i-test-di-usabilita/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Forum PA 2023 - Esperienza utente: il design system del Paese e i test di usabilità"
+    subtitle: Designers Italia presenta a Forum PA una modalità di test di usabilità sviluppata nell’ambito dell’aggiornamento del design system del Paese.
+    tag:
+        label: Laboratorio
+        
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Esperienza utente,Accessibilità]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Palazzo dei Congressi (Area tavoli di lavoro A)
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+              Piazza John Kennedy 1 - Roma
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "16 maggio 2023, 11.00–13.00"
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Su invito" #C
+            url: https://www.forumpa.it/manifestazioni/forum-pa-2023/cantiere-transizione-digitale-tavolo-di-lavoro-di-rtd-cio-esperienza-utente-il-design-system-del-paese-e-i-test-di-usabilita/
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+            Il cantiere ha lo scopo di affrontare il tema del miglioramento continuo dell’esperienza utente nei siti e servizi della PA grazie ai test di usabilità. In particolare, il laboratorio permetterà di scoprire come monitorare e valutare la soluzione digitale progettata, attraverso sessioni di ascolto e osservazione strutturata degli utenti per verificare che la soluzione progettata risponda alle esigenze delle persone. In questa sessione sperimenteremo un test riguardo le risorse sviluppate da Designers Italia nell’ambito dell’aggiornamento del design system del Paese.
+
+          ctas:
+          - label: Scopri maggiori informazioni
+            url: https://www.forumpa.it/manifestazioni/forum-pa-2023/cantiere-transizione-digitale-tavolo-di-lavoro-di-rtd-cio-esperienza-utente-il-design-system-del-paese-e-i-test-di-usabilita/
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2

@@ -1,0 +1,84 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "La progettazione di API REST per la PA"
+  description: Progettare e implementare application programming interface conformi alle linee guida AGID. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20220525-la-progettazione-di-api-rest-per-la-pa.jpg
+  canonical: null
+  pathname: /community/media/20220525-la-progettazione-di-api-rest-per-la-pa
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'La progettazione di API REST per la PA'
+    subtitle: Progettare e implementare application programming interface conformi alle linee guida AGID
+    tag:
+      label: Video - Community lab
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community lab, Open source, Sviluppo interfaccia]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/D-3t8h1E9yE?si=BdAx9YUamKHKEqPz
+          poster: /images/community/media-thumbnails/20220525-la-progettazione-di-api-rest-per-la-pa.jpg
+          trascription: |
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtu.be/D-3t8h1E9yE?si=BdAx9YUamKHKEqPz)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Community lab di Developers Italia e Designers Italia del 25/05/2022. Incontro dedicato alla progettazione e all'implementazione di API REST per la Pubblica Amministrazione conformi alle linee guida AGID.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20220530-progettare-api-interoperabili-conformi-linee-guida-agid/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2            

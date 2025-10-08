@@ -1,0 +1,84 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Il Modello dei siti web dei Comuni italiani e il tema dell’accessibilità dei servizi"
+  description: Lo standard disponibile per i Comuni che vogliono rendere più semplice, efficace ed accessibile il proprio sito. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20211116-il-modello-dei-siti-web-dei-comuni-italiani-e-il-tema-dell-accessibilita-dei-servizi.jpg
+  canonical: null
+  pathname: /community/media/20211116-il-modello-dei-siti-web-dei-comuni-italiani-e-il-tema-dell-accessibilita-dei-servizi
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Il Modello dei siti web dei Comuni italiani e il tema dell’accessibilità dei servizi'
+    subtitle: Lo standard disponibile per i Comuni che vogliono rendere più semplice, efficace ed accessibile il proprio sito
+    tag:
+      label: Video - Webinar
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Accessibilità, Adozione modelli, Modelli di sito]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/3BPZXwwsXjc?si=hBxRELGZEc9AwW3i
+          poster: /images/community/media-thumbnails/20211116-il-modello-dei-siti-web-dei-comuni-italiani-e-il-tema-dell-accessibilita-dei-servizi.jpg
+          trascription: |
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtu.be/3BPZXwwsXjc?si=hBxRELGZEc9AwW3i)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Webinar del 16/11/2021 del corso "Progettare e realizzare il sito web di un Comune". Il webinar presenta il Modello messo a disposizione da Designers Italia per la realizzazione del sito web di un Comune. Si tratta di uno standard disponibile per i Comuni che vogliono rendere più semplice, efficace ed accessibile il proprio sito, sulla base degli effettivi bisogni delle persone. La progettazione di ciascun Comune può quindi partire da componenti testate e verificate con le persone che utilizzano il servizio, in modo che ciascun ente possa concentrarsi sugli elementi di unicità del servizio/della città, senza dover reinventare ogni volta la ruota.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20211027-progettare-sito-comune-2corso-formez/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 

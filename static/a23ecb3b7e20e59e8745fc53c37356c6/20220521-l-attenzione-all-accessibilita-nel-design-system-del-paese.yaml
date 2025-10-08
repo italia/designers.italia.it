@@ -1,0 +1,84 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "L’attenzione all’accessibilità nel design system del Paese"
+  description: Il lavoro svolto nel corso dell’aggiornamento del design system del Paese, i risultati raggiunti e i prossimi passi. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20220521-l-attenzione-all-accessibilita-nel-design-system-del-paese.jpg
+  canonical: null
+  pathname: /community/media/20220521-l-attenzione-all-accessibilita-nel-design-system-del-paese
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'L’attenzione all’accessibilità nel design system del Paese'
+    subtitle: Una riflessione sulla necessità delle PA di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reinventare ogni volta la ruota 
+    tag:
+      label: Video - Evento
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Accessibilità, Design system]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/jBE_cUQuWxI?si=m7HQMDITvlSpb_4T
+          poster: /images/community/media-thumbnails/20220521-l-attenzione-all-accessibilita-nel-design-system-del-paese.jpg
+          trascription: |
+            È disponibile solo la trascrizione generata automaticamente nella [scheda del video su YouTube](https://youtu.be/jBE_cUQuWxI?si=m7HQMDITvlSpb_4T)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Intervento del 21/05/2022 nell'ambito degli Accessibility Days 2022. Da dicembre 2021, Designers Italia e Developers Italia hanno avviato una completa revisione del design system del Paese, gli strumenti necessari alla realizzazione delle interfacce dei siti e servizi digitali della Pubblica Amministrazione, così da renderle coerenti, semplici e fruibili da tutti i cittadini. Nello specifico, il tema dell’accessibilità è stato affrontato grazie alla collaborazione con AGID. Durante l’intervento i relatori hanno dialogato sul lavoro svolto nel corso dell’aggiornamento, sui risultati raggiunti e sui prossimi passi.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20220517-accessibility-days-2022/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2        

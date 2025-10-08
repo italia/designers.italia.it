@@ -1,0 +1,86 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Il modello di sito per i musei civici"
+  description: Risorse e strumenti standard per migliorare l’esperienza di fruizione dei siti web museali.
+  image: https://designers.italia.it/images/community/media-thumbnails/20240604-il-modello-di-sito-per-i-musei-civici.jpg
+  canonical: null
+  pathname: /community/media/20240604-il-modello-di-sito-per-i-musei-civici
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Il modello di sito per i musei civici'
+    subtitle: Risorse e strumenti standard per migliorare l’esperienza di fruizione dei siti web museali.
+    tag:
+      label: Video - Webinar
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Modelli di sito]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/5WsCJjrsFg4?start=5
+          poster: /images/community/media-thumbnails/20240604-il-modello-di-sito-per-i-musei-civici.jpg
+          subtitles: /files/community/subtitles/20240604-il-modello-di-sito-per-i-musei-civici.vtt
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://youtu.be/5WsCJjrsFg4?start=5)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Evento organizzato il 04/06/2024 in collaborazione con ANCI. Il webinar racconta il processo progettuale partecipato che ha portato alla realizzazione del modello per i musei civici, 
+            illustra i prototipi navigabili e spiega le risorse disponibili per la realizzazione del sito e il loro utilizzo, focalizzandosi sull'architettura informativa e le librerie dei componenti grafici.
+          ctas:
+          - label: Scopri il modello #C
+            url: "/modelli/musei-civici/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 

@@ -1,0 +1,123 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+seo:
+  name: "Accessibility Days: disponibili i video dei nostri webinar"
+  description: "Su YouTube è possibile rivedere i nostri interventi agli Accessibility Days di maggio e all'evento di giugno sui test d'usabilità"
+  image: https://designers.italia.it/images/community/20230706-accessibility-days-disponibili-i-video-dei-nostri-webinar-1198x673.png #I
+  canonical: null
+  pathname: /community/notizie/20230706-accessibility-days-disponibili-i-video-dei-nostri-webinar/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Accessibility Days: disponibili i video dei nostri webinar"
+    subtitle: "Su YouTube è possibile rivedere i nostri interventi agli Accessibility Days di maggio e all'evento di giugno sui test d'usabilità"
+    tag:
+        label: Notizia
+        
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Accessibilità]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 1 minuto
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 6 luglio 2023
+
+  imageIcons:
+   image: /images/community/20230706-accessibility-days-disponibili-i-video-dei-nostri-webinar-1920x923.png
+   alt: "Accessibility Days - Il più grande evento italiano sull'accessibilità e l'inclusività delle tecnologie digitali. L'immagine mostra Daniele Tabellini e Fabrizio Caccavello ritratti mentre parlano durante l'evento. A destra, sono presenti due riquadri: in uno è mostrato lo schermo dei relatori, nell'altro una persona che traduce il discorso in lingua dei segni."
+   background: null
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Stiamo costruendo la nuova casa del progetto per supportare la trasformazione digitale della Pubblica Amministrazione
+      # text:
+      id: corpoNotizia
+      components:
+        - name: TextImageCta
+          # title: Titoletto interno
+          text: |
+            Sono disponibili su YouTube i video dei nostri ultimi interventi agli **Accessibility Days.**
+
+            Il primo intervento, **"ll design system del Paese e la responsabilità di progettare interfacce pubbliche"**, è dedicato al design system del Paese. Durante l'evento, abbiamo ripercorso le ultime novità su questo importante strumento che raccoglie principi e risorse per realizzare interfacce per siti e servizi pubblici digitali usabili, accessibili, coerenti, familiari e fruibili da tutti i cittadini.
+
+            Il secondo si è tenuto il 21 giugno nell'ambito dell'evento **"Niente su di Noi, senza di Noi"** ed è il racconto dei **test di usabilità** di servizi pubblici digitali, organizzati dal vivo coinvolgendo cittadini e cittadine, utenti anziani o con disabilità, rappresentanti dell’Ente Nazionale Sordi e Unione Italiana Ciechi e Ipovedenti.
+
+        - name: TextImageCta
+          title: Guarda i video
+          noSpace: true
+          # text: |
+          ctas:
+          - label: Video "ll design system del Paese e la responsabilità di progettare interfacce pubbliche"
+            url: "https://www.youtube.com/watch?v=py9RgGDrOtM&t=36s&themeRefresh=1"
+            icon:
+              icon: sprites.svg#it-video
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true
+
+        - name: TextImageCta
+          title:
+          # text: |
+          ctas:
+          - label: Video "Niente su di Noi, senza di Noi"
+            url: "https://www.youtube.com/watch?v=LHe9ypCCPFY"
+            icon:
+              icon: sprites.svg#it-video
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            blank: true

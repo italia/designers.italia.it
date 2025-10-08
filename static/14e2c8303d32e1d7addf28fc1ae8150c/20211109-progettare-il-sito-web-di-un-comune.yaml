@@ -1,0 +1,84 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Progettare il sito web di un Comune"
+  description: Risorse, strumenti operativi e casi studio di buone pratiche. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20211109-progettare-il-sito-web-di-un-comune.jpg
+  canonical: null
+  pathname: /community/media/20211109-progettare-il-sito-web-di-un-comune
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Progettare il sito web di un Comune'
+    subtitle: Risorse, strumenti operativi e casi studio di buone pratiche
+    tag:
+      label: Video - Webinar
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Adozione modelli, Modelli di sito, Progettazione interfaccia, Sviluppo interfaccia]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtu.be/Lzx778I8toA?si=ty6tAs7UGJek5crx
+          poster: /images/community/media-thumbnails/20211109-progettare-il-sito-web-di-un-comune.jpg
+          trascription: |
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtu.be/Lzx778I8toA?si=ty6tAs7UGJek5crx)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Webinar del 09/11/2021 del corso "Progettare e realizzare il sito web di un Comune". Il webinar intende fornire informazioni di contesto sulle Linee Guida di riferimento e sulla metodologia di progettazione proposta da Designers Italia. In particolare, quali sono le attività da svolgere e quali strumenti concreti Designers Italia mette a disposizione per le diverse figure coinvolte nei progetti di ideazione dei servizi pubblici digitali della PA: risorse, strumenti operativi e casi studio di buone pratiche.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20211027-progettare-sito-comune-2corso-formez/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2           

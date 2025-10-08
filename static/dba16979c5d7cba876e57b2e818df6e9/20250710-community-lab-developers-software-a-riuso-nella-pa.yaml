@@ -1,0 +1,89 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Community lab di Developers Italia: software a riuso nella PA"
+  description: "Approfondimento sulle linee guida, gli strumenti pratici e le buone pratiche."
+  image: https://designers.italia.it/images/community/media-thumbnails/20250710-community-lab-developers-software-a-riuso-nella-pa.png
+  canonical: null
+  pathname: /community/media/20250710-community-lab-developers-software-a-riuso-nella-pa/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Community lab di Developers Italia: software a riuso nella PA"
+    subtitle: "Approfondimento sulle linee guida, gli strumenti pratici e le buone pratiche"
+    tag:
+      label: Video - Community Lab
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community lab, Open source, Sviluppo interfaccia]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=3VzeQP7thUA
+          poster: /images/community/media-thumbnails/20250710-community-lab-developers-software-a-riuso-nella-pa.png
+          subtitles: /files/community/subtitles/20250710-community-lab-developers-software-a-riuso-nella-pa.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=3VzeQP7thUA)            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            L'incontro dedicato ad esporre **buone pratiche per la creazione, pubblicazione e installazione del software a riuso** nella Pubblica Amministrazione. Durante l’evento sono state presentate le linee guida e gli adempimenti richiesti dall’Agenzia per l’Italia Digitale (AgID), è stato illustrato passo per passo come inserire un software nel catalogo di Developers Italia, e soprattutto è stata un’occasione di confronto per progettisti, sviluppatori e professionisti che operano nella PA o collaborano con essa.
+
+          ctas:
+          - label: Esplora il catalogo del riuso #C
+            url: "https://developers.italia.it/it/software" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 

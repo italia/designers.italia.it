@@ -1,0 +1,153 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+
+seo:
+  name: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
+  description: "Aggiornati e integrati con un nuovo fondamento le indicazioni del design system per progettare contenuti efficaci e accessibili."
+  image:  https://designers.italia.it/images/community/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente.jpg #I XXX
+  canonical: null
+  pathname: /community/notizie/20250414-contenuti-linguaggio-microtesti-e-tono-di-voce-i-fondamenti-di-italia-si-aggiornano/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
+    subtitle: "Aggiornati e integrati con un nuovo fondamento le indicazioni del design system per progettare contenuti efficaci e accessibili."
+    tag:
+        label: Notizia
+        
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione contenuti, Contenuti e linguaggio, Design system, Cultura progettuale]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 2 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 14 aprile 2025
+
+  imageIcons:
+   image: /images/community/20230530-design-system-pubblicati-i-fondamenti-di-scrittura-per-l-esperienza-utente.jpg
+   alt: ""
+   background: null
+
+  sectionsEditorial :     
+
+    - menu: false
+      noSpace: false
+      centered: true
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            I contenuti e il linguaggio sono spesso messi in secondo piano nella progettazione dei servizi digitali. Eppure, sono **fondamentali per garantire esperienze d’uso semplici, intuitive e accessibili**: il modo in cui strutturiamo e scriviamo contenuti, infatti, influisce su come le persone interagiscono, si orientano e comprendono il servizio. 
+
+            A sostegno di questo aspetto centrale della progettazione, abbiamo arricchito il design system .italia con un nuovo fondamento sui contenuti e aggiornato i fondamenti su linguaggio, microtesti e tono di voce con indicazioni più pratiche, chiare e facilmente integrabili nei flussi di lavoro quotidiani. 
+
+            ## Il nuovo fondamento sui contenuti
+
+            Progettare bene i contenuti significa mettere le esigenze delle persone al centro e rendere un servizio più utile per tutti. 
+
+            A questo scopo, abbiamo introdotto un [nuovo fondamento dedicato ai contenuti](/design-system/fondamenti/contenuti) con **indicazioni su come organizzare le informazioni su pagina e impostare una struttura intuitiva, facilmente navigabile e accessibile**. 
+
+            ## Gli aggiornamenti dei fondamenti su linguaggio, microtesti e tono di voce
+
+            I fondamenti [Linguaggio](/design-system/fondamenti/linguaggio), [Microtesti](/design-system/fondamenti/microtesti) e [Tono di voce](/design-system/fondamenti/tono-di-voce) sono stati ampliati e migliorati con suggerimenti più pratici e più esempi. Ora includono anche **indicazioni di formattazione**, **ortografia** e **istruzioni per scrivere messaggi di conferma o errore, stati vuoti e aiuti contestuali**.  
+
+            Questi fondamenti rappresentano i **punti di riferimento indispensabili per progettare contenuti e testi di interfaccia** semplici, inclusivi e rispettosi delle persone. 
+
+            ## .italia in miglioramento continuo
+
+            Queste modifiche fanno parte del processo di continuo miglioramento del design system .italia, che evolve anche grazie ai riscontri della community e delle persone che lavorano sui progetti della Pubblica Amministrazione. [Scopri come puoi contribuire anche tu con segnalazioni](/design-system/come-contribuire/), proposte o partecipando attivamente allo sviluppo di strumenti sempre più condivisi e accessibili. 
+
+        - name: TextImageCta
+          title: Esplora i fondamenti
+          #text: |
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: "Vai al fondamento Contenuti"
+            url: "/design-system/fondamenti/contenuti/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: "Vai al fondamento Linguaggio"
+            url: "/design-system/fondamenti/linguaggio/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: "Vai al fondamento Microtesti"
+            url: "/design-system/fondamenti/microtesti/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+          - label: "Vai al fondamento Tono di voce"
+            url: "/design-system/fondamenti/tono-di-voce/"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+
+
+
+
+            

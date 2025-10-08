@@ -1,0 +1,84 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Scopriamo Boostrap Italia 2.0"
+  description: La risorsa disponibile e la sua utilità per sviluppare le interfacce dei servizi pubblici digitali. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20220323-scopriamo-bootstrap-italia-2-0.jpg
+  canonical: null
+  pathname: /community/media/20220323-scopriamo-bootstrap-italia-2-0
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Scopriamo Bootstrap Italia 2.0'
+    subtitle: La risorsa disponibile e la sua utilità per sviluppare le interfacce dei servizi pubblici digitali
+    tag:
+      label: Video - Community lab
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community lab, Design system, Sviluppo interfaccia]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtube.com/watch?v=dQVy8DLPJbY
+          poster: /images/community/media-thumbnails/20220323-scopriamo-bootstrap-italia-2-0.jpg
+          trascription: |
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtube.com/watch?v=dQVy8DLPJbY)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Community lab di Developers Italia e Designers Italia del 23/03/2022. Incontro dedicato a Bootstrap Italia 2.0, una delle risorse del design system del Paese e alla sua utilità per sviluppare le interfacce dei servizi pubblici digitali.
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20220311-community-lab-bootstrap-italia/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2        
