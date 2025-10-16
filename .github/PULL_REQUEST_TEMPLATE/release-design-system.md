@@ -23,6 +23,7 @@ Breve descrizione dei cambiamenti (2-3 righe):
 ## Checklist di controllo (da eseguire prima del merge)
 
 ### Pre-rilascio
+- [ ] Tutte le PR collegate sono state mergiate
 - [ ] Versioni risorse esterne verificate
 - [ ] Tipo di rilascio definito (MAJOR/MINOR/PATCH)
 - [ ] Commit URL principali raccolti
