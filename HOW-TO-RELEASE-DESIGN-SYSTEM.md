@@ -50,7 +50,8 @@ tag:
   - [ ] ...
   - [ ] Ricontrolla dettagli e tutti i link nel changelog
   - [ ] Aggiorna la data di rilascio 
-  ``` 
+  ```
+  Puoi usare il template PR dedicato aggiungendo all'url `?expand=1&template=release-design-system.md` 
 - **Review**: team maintainer Design system .italia
 - **Deploy**: `deploy` (manuale) - c'è tempo per review anteprima prima del rilascio
 
