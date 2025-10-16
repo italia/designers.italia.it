@@ -57,7 +57,7 @@ Breve descrizione delle modifiche e del contenuto (2-3 righe):
 ## Note per i reviewer / mantainer
 (Indica qui eventuali punti su cui serve attenzione o check specifici)
 
-- Anteprima Vercel: [inserire link preview se disponibile]
+- Anteprima Vercel: verifica sempre l'ultima anteprima disponibile nello storico
 - Eventuali link esterni presenti nella PR che aprono nuove finestre: [elencarli con motivazione]
 
 ---
