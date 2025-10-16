@@ -96,7 +96,7 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
    - Caricate immagini hero e seo
    - Verificati link e metadati SEO
    ```
-5. **Apri la PR** verso `main`  
+5. **Apri la PR** verso `main`, se possibile usa il template PR dedicato aggiungendo all'url `?expand=1&template=editorial-content.md` 
 6. **Controlla l’anteprima Vercel** collegata alla PR su GitHub (alcuni minuti per generarla, fai attenzione se ci fossero errori di build)
 7. **Controlla i test automatici** associati alla PR
 8. **Marca la PR come "draft"** finché ci lavori
