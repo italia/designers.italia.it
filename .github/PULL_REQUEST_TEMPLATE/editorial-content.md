@@ -44,7 +44,7 @@ Breve descrizione delle modifiche e del contenuto (2-3 righe):
 
 ### ✅ Accessibilità
 - [ ] Su eventuali immagini alt text significativo o `""` se immagine decorativa
-- [ ] Trascrizioni per contenuti audio/video laddove possibile
+- [ ] Trascrizioni per contenuti audio/video laddove possibile, in pagina ed eventualmente su file in formato aperto scaricabile
 - [ ] Sottotitoli `.vtt` in italiano per audio/video con parlato (obbligatori per i media)
 - [ ] Segnalato quando un link apre in nuova finestra (screen reader text / nota)
 
