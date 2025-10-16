@@ -43,7 +43,7 @@ Breve descrizione delle modifiche e del contenuto (2-3 righe):
 - [ ] Contenuti validati dalla redazione e/o maintainer
 
 ### ✅ Accessibilità
-- [ ] Alt text significativo o `""` se immagine decorativa
+- [ ] Su eventuali immagini alt text significativo o `""` se immagine decorativa
 - [ ] Trascrizioni per contenuti audio/video laddove possibile
 - [ ] Sottotitoli `.vtt` in italiano per audio/video con parlato (obbligatori per i media)
 - [ ] Segnalato quando un link apre in nuova finestra (screen reader text / nota)
