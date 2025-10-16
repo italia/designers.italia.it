@@ -12,7 +12,7 @@ Compila i campi sotto e verifica tutte le checklist prima del merge.
 - File modificati principali:
   - `src/data/content/dsnav.yaml`
   - `src/data/content/design-system/fondamenti/versionamento.yaml`
-- Link alle PR collegate (risorse esterne / aggiornamenti):
+- Elenco con link alle PR collegate (risorse esterne / aggiornamenti):
 - Data di rilascio prevista (DD mese YYYY):
 
 ## Descrizione del rilascio
