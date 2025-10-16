@@ -6,7 +6,7 @@ Compila i campi sotto e verifica tutte le checklist prima del merge.
 ---
 
 ## Sommario
-- Versione da rilasciare: v*X.Y* (MAJOR.MINOR.PATCH)
+- Versione da rilasciare: v*X.Y.Z* (MAJOR.MINOR.PATCH)
 - Tipo di rilascio: [MAJOR / MINOR / PATCH]
 - Branch di rilascio (es. `release-v1-X-Y`):
 - File modificati principali:
