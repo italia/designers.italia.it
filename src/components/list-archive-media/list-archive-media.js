@@ -44,7 +44,7 @@ function ListArchiveMedia({ background, noSpace }) {
   `);
 
   const { edges } = data.allContent;
-  const tagHeader = "Esplora l’archivio";
+  const tagHeader = "Esplora i video";
 
   const styles = classNames("section-editorial", {
     [`bg-${background}`]: background,
