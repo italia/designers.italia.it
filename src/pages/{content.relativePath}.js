@@ -78,6 +78,7 @@ export const query = graphql`
           }
           metadata {
             archive
+            unpublished
           }
           components {
             hero {
