@@ -996,6 +996,7 @@ export function Head({ data: { content, contentOgImage } }) {
   return (
     <Seo
       title={content.seo.name}
+      unpublished={content.metadata.unpublished}
       description={content.seo.description}
       image={contentOgImage.attributes.publicURL}
       pathname={content.seo.pathname}

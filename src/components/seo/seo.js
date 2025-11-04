@@ -4,6 +4,7 @@ import { SeoGetSiteMetadata } from "./seo-get-site-metadata";
 // eslint-disable-next-line import/prefer-default-export
 export function Seo({
   title,
+  unpublished,
   description,
   image,
   canonical,
@@ -28,6 +29,7 @@ export function Seo({
   const seo = {
     siteName,
     title: title || defaultTitle,
+    unpublished: unpublished || false,
     lang: lang || defaultLang,
     author,
     canonical,
@@ -43,6 +45,7 @@ export function Seo({
   return (
     <>
       <title>{seo.title}</title>
+      <meta name="robots" content={`${!unpublished ? `index`:`noindex`},${!unpublished ? `follow`:`nofollow`}`}/>
       <meta name="description" content={seo.description} />
       <meta name="author" content={seo.author} />
       {seo.canonical && <link rel="canonical" href={seo.canonical} />}
