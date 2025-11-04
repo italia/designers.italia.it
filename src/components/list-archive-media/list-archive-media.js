@@ -11,7 +11,11 @@ function ListArchiveMedia({ background, noSpace }) {
   const data = useStaticQuery(graphql`
     query {
       allContent(
-        filter: { metadata: { archive: { in: "media" } } }
+        filter: { 
+        metadata: { 
+          archive: { in: "media" },
+          unpublished: { ne: true }
+        } 
         sort: { seo: { pathname: DESC } }
       ) {
         totalCount
