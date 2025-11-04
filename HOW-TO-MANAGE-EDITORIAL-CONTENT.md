@@ -153,6 +153,45 @@ Nota bene: **crea la PR almeno una settimana/dieci giorni prima della data di pu
 
 ---
 
+## Rimuovere un media dalla pubblicazione (Unpublish)
+
+Se un video o podcast non deve più essere visibile negli archivi e nella ricerca, ma vuoi mantenerlo accessibile tramite link diretto, usa la funzionalità **unpublish**.
+
+### Procedura
+
+1. **Sposta il file** nella sottocartella `unpublished`:
+```
+   Da: /src/data/content/community/media/YYYYMMDD-titolo.yaml
+   A:   /src/data/content/community/media/unpublished/YYYYMMDD-titolo.yaml
+```
+
+2. **Modifica il file YAML** aggiungendo la proprietà `unpublished: true` ai `metadata`:
+```yaml
+   metadata:
+     unpublished: true
+     redirect_from:
+       - /community/media/YYYYMMDD-titolo/
+     template:
+       name: level3
+     archive: media
+   
+   seo:
+     pathname: /community/media/unpublished/YYYYMMDD-titolo/
+```
+
+### Effetti dell'unpublish
+
+- ✅ Accessibile solo tramite link diretto
+- ❌ Non appare nell'archivio Media
+- ❌ Non appare nella ricerca
+- ❌ Non appare negli indici per argomenti
+- ❌ Escluso da sitemap e motori di ricerca (aggiunti meta per robots `noindex,nofollow`)
+- ↪️ Vecchio URL originale reindirizza all'archivio Media `/community/media/`
+
+**Nota:** richiede Pull Request e approvazione come per ogni modifica editoriale!
+
+---
+
 ## Editorial Board
 
 La gestione dei contenuti in evidenza è a cura della redazione e avviene tramite il file:  
