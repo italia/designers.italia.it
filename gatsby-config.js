@@ -388,16 +388,16 @@ const GATSBY_PLUGINS = [
             ` ${edge.node.components?.sectionsEditorial
               ?.map((s) => s.title)
               .join(" ")} ${edge.node.components?.sectionsEditorial
-                ?.map((s) => s.components?.map((c) => c.title))
-                .join(" ")} ${edge.node.components?.sectionsEditorial2
-                  ?.map((s) => s.components?.map((c) => c.title))
-                  .join(" ")} ${edge.node.components?.sectionsEditorial
-                    ?.map((s) => s.text)
-                    .join(" ")} ${edge.node.components?.sectionsEditorial
-                      ?.map((s) => s.components?.map((c) => c.text))
-                      .join(" ")} ${edge.node.components?.sectionsEditorial2
-                        ?.map((s) => s.components?.map((c) => c.text))
-                        .join(" ")}`,
+              ?.map((s) => s.components?.map((c) => c.title))
+              .join(" ")} ${edge.node.components?.sectionsEditorial2
+              ?.map((s) => s.components?.map((c) => c.title))
+              .join(" ")} ${edge.node.components?.sectionsEditorial
+              ?.map((s) => s.text)
+              .join(" ")} ${edge.node.components?.sectionsEditorial
+              ?.map((s) => s.components?.map((c) => c.text))
+              .join(" ")} ${edge.node.components?.sectionsEditorial2
+              ?.map((s) => s.components?.map((c) => c.text))
+              .join(" ")}`,
         })),
     },
   },

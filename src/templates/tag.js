@@ -185,7 +185,10 @@ export default Tags;
 export const pageQuery = graphql`
   query ($tag: String) {
     allContentByTag: allContent(
-      filter: { components: { hero: { kangaroo: { tags: { in: [$tag] } } } }, metadata: { unpublished: { ne: true } } }
+      filter: {
+        components: { hero: { kangaroo: { tags: { in: [$tag] } } } }
+        metadata: { unpublished: { ne: true } }
+      }
       sort: { components: { hero: { title: ASC } } }
     ) {
       totalCount
