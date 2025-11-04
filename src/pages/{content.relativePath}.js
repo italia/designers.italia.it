@@ -78,7 +78,6 @@ export const query = graphql`
           }
           metadata {
             archive
-            unpublished
           }
           components {
             hero {
@@ -124,6 +123,7 @@ export const query = graphql`
         template {
           name
         }
+        unpublished
         archive
         activeLabel
         json

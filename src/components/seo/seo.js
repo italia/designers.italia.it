@@ -45,7 +45,7 @@ export function Seo({
   return (
     <>
       <title>{seo.title}</title>
-      <meta name="robots" content={`${!unpublished ? `index`:`noindex`},${!unpublished ? `follow`:`nofollow`}`}/>
+      {unpublished && <meta name="robots" content="noindex,nofollow" />}
       <meta name="description" content={seo.description} />
       <meta name="author" content={seo.author} />
       {seo.canonical && <link rel="canonical" href={seo.canonical} />}
