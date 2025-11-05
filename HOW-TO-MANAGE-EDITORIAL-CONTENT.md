@@ -165,18 +165,22 @@ Se un video o podcast non deve più essere visibile negli archivi e nella ricerc
    A:   /src/data/content/community/media/unpublished/YYYYMMDD-titolo.yaml
 ```
 
-2. **Modifica il file YAML** aggiungendo la proprietà `unpublished: true` ai `metadata`:
+2. **Modifica il file YAML della scheda** aggiungendo la proprietà `unpublished: true` ai `metadata`:
 ```yaml
    metadata:
      unpublished: true
-     redirect_from:
-       - /community/media/YYYYMMDD-titolo/
-     template:
-       name: level3
-     archive: media
-   
+```
+puoi anche correggere il `pathname` nei `seo` se desideri avere un breadcrumb pulito aggiungendo la cartella `unpublished` al percorso così: 
+```yaml
    seo:
      pathname: /community/media/unpublished/YYYYMMDD-titolo/
+```
+
+3. **Modificha il file YAML dell'indice** aggiungento il redirect corretto:
+```yaml
+   metadata:
+     redirect_from:
+       - /community/media/YYYYMMDD-titolo/
 ```
 
 ### Effetti dell'unpublish
