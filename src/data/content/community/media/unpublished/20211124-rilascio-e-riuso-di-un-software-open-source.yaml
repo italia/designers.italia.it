@@ -2,16 +2,17 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata:
+  unpublished: true
   template:
     name: level3 # article?
   archive: media
 
 seo:
-  name: "Come designer, sviluppatori e cittadini possono contribuire a migliorare i servizi pubblici"
-  description: Esperienze di progettazione e sviluppo aperto. 
-  image: https://designers.italia.it/images/community/media-thumbnails/20220518-come-designer-sviluppatori-e-cittadini-possono-contribuire-a-migliorare-i-servizi-pubblici.jpg
+  name: "Rilascio e riuso di un software open source"
+  description: Le esperienze del Consiglio Nazionale delle Ricerche e dell’Istituto Superiore di Sanità. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20211124-rilascio-e-riuso-di-un-software-open-source.jpg
   canonical: null
-  pathname: /community/media/20220518-come-designer-sviluppatori-e-cittadini-possono-contribuire-a-migliorare-i-servizi-pubblici
+  pathname: /community/media/20211124-rilascio-e-riuso-di-un-software-open-source
 
 kangaroo:
   navposition:
@@ -30,8 +31,8 @@ components:
   hero:
     background: null
     centered: true
-    title: 'Come designer, sviluppatori e cittadini possono contribuire a migliorare i servizi pubblici'
-    subtitle: Esperienze di progettazione e sviluppo aperto 
+    title: 'Rilascio e riuso di un software open source'
+    subtitle: Le esperienze del Consiglio Nazionale delle Ricerche e dell’Istituto Superiore di Sanità
     tag:
       label: Video - Community call
       
@@ -46,7 +47,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Community call, Open source, Sviluppo interfaccia]
+      tags: [Community call, Open source]
 
   sectionsEditorial:
 
@@ -59,10 +60,10 @@ components:
       components:
         - name: MediaPlayer
           lang: it
-          url: https://youtu.be/cWUzfFVB7lY?si=8MNrgYAHG-24BJIH
-          poster: /images/community/media-thumbnails/20220518-come-designer-sviluppatori-e-cittadini-possono-contribuire-a-migliorare-i-servizi-pubblici.jpg
+          url: https://youtu.be/Q6bCRei3UHU?si=wR3_vtxkULX7n_fw
+          poster: /images/community/media-thumbnails/20211124-rilascio-e-riuso-di-un-software-open-source.jpg
           trascription: |
-            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtu.be/cWUzfFVB7lY?si=8MNrgYAHG-24BJIH)
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtu.be/Q6bCRei3UHU?si=wR3_vtxkULX7n_fw)
 
     - noSpace: false 
       centered: true
@@ -70,10 +71,10 @@ components:
         - name: TextImageCta
           # title: 
           text: |
-            Community call di Developers Italia e Designers Italia del 18/05/2022. L'incontro è dedicato a esperienze di progettazione e sviluppo aperto per i servizi pubblici, approfondendo alcuni interessanti casi studio, per promuovere la partecipazione di designer, sviluppatori e cittadini al loro miglioramento.
+            Community call di Developers Italia e Designers Italia del 24/11/2021. Incontro dedicato all'esperienze di riuso di due software a catalogo pubblicati dal Consiglio Nazionale delle Ricerche.
           ctas:
           - label: Leggi la notizia #C
-            url: "/community/notizie/20220506-community-call-esperienze-sviluppo-aperto-servizi/" #M
+            url: "/community/notizie/20211112-community-call-24nov-soluzioni-a-riuso/" #M
             blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -81,4 +82,4 @@ components:
               align: middle
               hidden: true
               size: sm
-              addonClasses: ms-2    
+              addonClasses: ms-2 

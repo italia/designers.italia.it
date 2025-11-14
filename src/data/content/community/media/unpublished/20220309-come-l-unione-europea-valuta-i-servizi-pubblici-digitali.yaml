@@ -2,16 +2,17 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata:
+  unpublished: true
   template:
     name: level3 # article?
   archive: media
 
 seo:
-  name: "La progettazione di API REST per la PA"
-  description: Progettare e implementare application programming interface conformi alle linee guida AGID. 
-  image: https://designers.italia.it/images/community/media-thumbnails/20220525-la-progettazione-di-api-rest-per-la-pa.jpg
+  name: "Come l’Unione Europea valuta i servizi pubblici digitali"
+  description: I criteri minimi di qualità dei servizi pubblici digitali utilizzati dall'eGovernment Benchmark. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20220309-come-l-unione-europea-valuta-i-servizi-pubblici-digitali.jpg
   canonical: null
-  pathname: /community/media/20220525-la-progettazione-di-api-rest-per-la-pa
+  pathname: /community/media/20220309-come-l-unione-europea-valuta-i-servizi-pubblici-digitali
 
 kangaroo:
   navposition:
@@ -30,10 +31,10 @@ components:
   hero:
     background: null
     centered: true
-    title: 'La progettazione di API REST per la PA'
-    subtitle: Progettare e implementare application programming interface conformi alle linee guida AGID
+    title: 'Come l’Unione Europea valuta i servizi pubblici digitali'
+    subtitle: I criteri minimi di qualità dei servizi pubblici digitali utilizzati dall'eGovernment Benchmark
     tag:
-      label: Video - Community lab
+      label: Video - Community call
       
 
     kangaroo:
@@ -46,7 +47,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Community lab, Open source, Sviluppo interfaccia]
+      tags: [Community call, Normativa, Progettazione servizi]
 
   sectionsEditorial:
 
@@ -59,10 +60,10 @@ components:
       components:
         - name: MediaPlayer
           lang: it
-          url: https://youtu.be/D-3t8h1E9yE?si=BdAx9YUamKHKEqPz
-          poster: /images/community/media-thumbnails/20220525-la-progettazione-di-api-rest-per-la-pa.jpg
+          url: https://youtu.be/flnYdZR5-9w?si=TFPfxSwb6dNUmhwU
+          poster: /images/community/media-thumbnails/20220309-come-l-unione-europea-valuta-i-servizi-pubblici-digitali.jpg
           trascription: |
-            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtu.be/D-3t8h1E9yE?si=BdAx9YUamKHKEqPz)
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtu.be/flnYdZR5-9w?si=TFPfxSwb6dNUmhwU)
 
     - noSpace: false 
       centered: true
@@ -70,10 +71,10 @@ components:
         - name: TextImageCta
           # title: 
           text: |
-            Community lab di Developers Italia e Designers Italia del 25/05/2022. Incontro dedicato alla progettazione e all'implementazione di API REST per la Pubblica Amministrazione conformi alle linee guida AGID.
+            Community call di Developers Italia e Designers Italia del 09/03/2022. Incontro dedicato ai criteri minimi di qualità dei servizi pubblici digitali utilizzati dall'eGovernment Benchmark.
           ctas:
           - label: Leggi la notizia #C
-            url: "/community/notizie/20220530-progettare-api-interoperabili-conformi-linee-guida-agid/" #M
+            url: "/community/notizie/20220318-come-ue-valuta-servizi-pubblici-digitali/" #M
             blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -81,4 +82,4 @@ components:
               align: middle
               hidden: true
               size: sm
-              addonClasses: ms-2            
+              addonClasses: ms-2 

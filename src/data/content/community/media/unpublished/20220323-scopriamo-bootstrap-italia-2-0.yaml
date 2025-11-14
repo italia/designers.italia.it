@@ -2,17 +2,18 @@
 # CREATEPAGE GATSBY
 # ————————————————————————————————————————————
 metadata:
+  unpublished: true
   template:
     name: level3 # article?
   archive: media
 
 seo:
-  name: "Progettare servizi pubblici digitali più equi e sostenibili"
-  description: Una riflessione sulla necessità delle PA di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reinventare ogni volta la ruota. 
-  image: https://designers.italia.it/images/community/media-thumbnails/20210319-progettare-servizi-pubblici-digitali-piu-equi-e-sostenibili.jpg
+  name: "Scopriamo Boostrap Italia 2.0"
+  description: La risorsa disponibile e la sua utilità per sviluppare le interfacce dei servizi pubblici digitali. 
+  image: https://designers.italia.it/images/community/media-thumbnails/20220323-scopriamo-bootstrap-italia-2-0.jpg
   canonical: null
-  pathname: /community/media/20210319-progettare-servizi-pubblici-digitali-piu-equi-e-sostenibili
-  
+  pathname: /community/media/20220323-scopriamo-bootstrap-italia-2-0
+
 kangaroo:
   navposition:
     id: kangEnd
@@ -30,10 +31,10 @@ components:
   hero:
     background: null
     centered: true
-    title: 'Progettare servizi pubblici digitali più equi e sostenibili'
-    subtitle: Una riflessione sulla necessità delle PA di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reinventare ogni volta la ruota 
+    title: 'Scopriamo Bootstrap Italia 2.0'
+    subtitle: La risorsa disponibile e la sua utilità per sviluppare le interfacce dei servizi pubblici digitali
     tag:
-      label: Video - Webinar
+      label: Video - Community lab
       
 
     kangaroo:
@@ -46,7 +47,7 @@ components:
         icon: sprites.svg#it-horn
         size: sm
         color: secondary
-      tags: [Progettazione servizi]
+      tags: [Community lab, Design system, Sviluppo interfaccia]
 
   sectionsEditorial:
 
@@ -59,10 +60,10 @@ components:
       components:
         - name: MediaPlayer
           lang: it
-          url: https://www.youtube.com/watch?v=DlLTpVBCX8k
-          poster: /images/community/media-thumbnails/20210319-progettare-servizi-pubblici-digitali-piu-equi-e-sostenibili.jpg
+          url: https://youtube.com/watch?v=dQVy8DLPJbY
+          poster: /images/community/media-thumbnails/20220323-scopriamo-bootstrap-italia-2-0.jpg
           trascription: |
-            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=DlLTpVBCX8k)
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtube.com/watch?v=dQVy8DLPJbY)
 
     - noSpace: false 
       centered: true
@@ -70,10 +71,10 @@ components:
         - name: TextImageCta
           # title: 
           text: |
-            Evento organizzato il 19/03/2021 nell'ambito della Milano Digital Week. In questo intervento, Designers Italia racconta il proprio intento: riflettere sulla necessità delle pubbliche amministrazioni di digitalizzarsi e di poter usufruire di buone pratiche per progettare servizi pubblici digitali senza reinventare ogni volta la ruota.
+            Community lab di Developers Italia e Designers Italia del 23/03/2022. Incontro dedicato a Bootstrap Italia 2.0, una delle risorse del design system del Paese e alla sua utilità per sviluppare le interfacce dei servizi pubblici digitali.
           ctas:
           - label: Leggi la notizia #C
-            url: "/community/notizie/20210329-progettare-servizi-pubblici-digitali-equi-e-sostenibili/" #M
+            url: "/community/notizie/20220311-community-lab-bootstrap-italia/" #M
             blank: false #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
@@ -81,4 +82,4 @@ components:
               align: middle
               hidden: true
               size: sm
-              addonClasses: ms-2 
+              addonClasses: ms-2        
