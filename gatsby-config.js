@@ -293,7 +293,7 @@ const GATSBY_PLUGINS = [
       // required.
       query: `
       {
-        allContent {
+        allContent(filter: { metadata: { unpublished: { ne: true } } }) {
           edges {
             node {
               id
