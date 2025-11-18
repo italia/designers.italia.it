@@ -1,0 +1,85 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  unpublished: true
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Progettare un servizio pubblico digitale"
+  description: 'Come impostare un processo di progettazione virtuoso: principi e competenze necessarie.'
+  image: https://designers.italia.it/images/community/media-thumbnails/20210615-progettare-un-servizio-pubblico-digitale.jpg
+  canonical: null
+  pathname: /community/media/20210615-progettare-un-servizio-pubblico-digitale
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: 'Progettare un servizio pubblico digitale'
+    subtitle: 'Come impostare un processo di progettazione virtuoso: principi e competenze necessarie'
+    tag:
+      label: Video - Webinar
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione servizi]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://youtube.com/watch?v=3iNuwSJs-gI
+          poster: /images/community/media-thumbnails/20210615-progettare-un-servizio-pubblico-digitale.jpg
+          trascription: |
+            Sono disponibili solo i sottotitoli e la trascrizione generati automaticamente nella [scheda del video su YouTube](https://youtube.com/watch?v=3iNuwSJs-gI)
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Webinar del 15/06/2021 del corso "Progettare, sviluppare ed erogare servizi pubblici digitali". Come realizzare un servizio digitale? In questo video, vengono affrontati il processo di progettazione, di sviluppo e la messa in produzione con un focus sulla progettazione di un servizio digitale di qualità: per esempio, cosa vuol dire progettare per l'utente un servizio pubblico digitale, come fare ad avere un impatto positivo sul cittadino e sul sistema Paese, come impostare un processo di progettazione virtuoso (principi e competenze necessarie).
+          ctas:
+          - label: Leggi la notizia #C
+            url: "/community/notizie/20210601-progettare-sviluppare-ed-erogare-servizi-pubblici-digitali/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
