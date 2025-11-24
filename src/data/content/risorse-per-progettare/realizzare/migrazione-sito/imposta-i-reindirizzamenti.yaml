@@ -186,17 +186,11 @@ components:
         # TXT BLOCK
         - name: TextImageCta
           text: | #C
-            I framework dedicati all'implementazione di siti e applicazioni web di Designers Italia sono un insieme di **strumenti e codice sorgente già pronti e validati per la creazione di interfacce usabili, accessibili e coerenti**.
+            Quando un sito viene aggiornato o riorganizzato, molti URL cambiano. Senza reindirizzamenti, chi visita una pagina esistente del vecchio sito si troverà davanti un errore o una pagina inesistente. I reindirizzamenti servono proprio a questo: accompagnano utenti e motori di ricerca verso la nuova destinazione corretta, preservando la continuità della navigazione, evitando errori e mantenendo intatto il valore informativo e SEO delle pagine.
 
-            I framework ti forniscono **componenti open-source pronti all’uso**: ogni risorsa è corredata da documentazione tecnica completa e dettagliata che integra la documentazione del design system .italia e illustra come usare e personalizzare i relativi componenti. 
+            Lo strumento di mappatura ti permette di raccogliere e associare URL vecchi con nuove destinazioni e di esportare tutto in un formato subito utilizzabile per automatizzare la configurazione dei reindirizzamenti.
 
-        # TXT BLOCK
-        - name: TextImageCta
-          title: Bootstrap Italia e i kit React e Angular #C
-          text: | #C
-            **Bootstrap Italia** è il principale punto di riferimento per lo sviluppo del design system .italia e il più moderno framework di componenti disponibile per la costruzione di interfacce per servizi della PA, costruito sulle basi delle più recenti modifiche a UI Kit Italia e Bootstrap v5.0. Contiene codice **HTML, CSS e JS** già pronto all’utilizzo per l’applicazione di componenti, tipografia, spaziature, design responsivo e accessibile.
 
-            **React kit** e **Angular kit** sono due framework, il cui sviluppo è guidato dalla community, che contengono componenti costruiti sulle basi di React e Angular, diffusi framework open source per sviluppo di applicazioni web e mobile ad alta interattività e scambio di dati.
   # ///////////////////
   # RESOURCES
   # ///////////////////
@@ -208,14 +202,15 @@ components:
         #title: First group title #C
         headingLevel: 3
         listItems:
-          - label: "Mappatura dei reindirizzamenti" #C
-            text: Scopri gli strumenti messi a disposizione per gli sviluppatori, i vari framework, come utilizzarli #C
-            url: "/design-system/come-iniziare/per-sviluppatori/" #M
+          - label: Mappatura dei reindirizzamenti #C
+            srBefore: "Scarica ODS " #C OPEN FILE FORMAT FOR SCREEN READER ARIA LABEL, eg. PDF, ODX, ...
+            # srAfter: (si apre in una nuova finestra) # FOR SCREEN READER ARIA LABEL
+            text: Uno strumento per mappare i cambi di URL ed esportare in formato CSV un file pronto per automatizzare la configurazione dei reindirizzamenti #C
+            url: /files/resources/risorse-per-progettare/realizzare/mappatura-sito/DI-reindirizzamenti.ods #M
             blank: false
             actions:
-              - icon: sprites.svg#it-arrow-right #I USE IF POSSIBLE FILE FORMAT ICONS
-                url: "/design-system/come-iniziare/per-sviluppatori/" #M
+              - icon: sprites.svg#it-file-ods #I USE IF POSSIBLE FILE FORMAT ICONS
+                url: /files/resources/risorse-per-progettare/realizzare/mappatura-sito/DI-reindirizzamenti.ods #M
+                ariaLabel: "Scarica ODS Mappatura dei reindirizzamenti" #C #COMPILE FOR EACH ITEM
                 blank: false
-
-
 
