@@ -83,9 +83,12 @@ function ListArchiveEvents({ background, noSpace }) {
                     const title = node.components?.hero?.title;
                     const { description } = node.seo;
 
-                    const date = node.components?.hero?.kangaroo?.eventInfo?.items?.find(
-                      (item) => item.title === "Data e orario" || item.title === "Data"
-                    );
+                    const date =
+                      node.components?.hero?.kangaroo?.eventInfo?.items?.find(
+                        (item) =>
+                          item.title === "Data e orario" ||
+                          item.title === "Data",
+                      );
 
                     return (
                       <ListItem
@@ -109,8 +112,8 @@ function ListArchiveEvents({ background, noSpace }) {
                               </div>
                             )}
                             {node.metadata?.template?.name &&
-                              (node.metadata?.template?.name === "level1" ||
-                                node.metadata?.template?.name === "community") ? (
+                            (node.metadata?.template?.name === "level1" ||
+                              node.metadata?.template?.name === "community") ? (
                               <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block ">
                                 <Tag
                                   label="Panoramica"
