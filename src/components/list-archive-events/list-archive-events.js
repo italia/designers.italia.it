@@ -82,6 +82,11 @@ function ListArchiveEvents({ background, noSpace }) {
                     const { pathname } = node.seo;
                     const title = node.components?.hero?.title;
                     const { description } = node.seo;
+
+                    const date = node.components?.hero?.kangaroo?.eventInfo?.items?.find(
+                      (item) => item.title === "Data e orario" || item.title === "Data"
+                    );
+
                     return (
                       <ListItem
                         url={pathname}
@@ -104,8 +109,8 @@ function ListArchiveEvents({ background, noSpace }) {
                               </div>
                             )}
                             {node.metadata?.template?.name &&
-                            (node.metadata?.template?.name === "level1" ||
-                              node.metadata?.template?.name === "community") ? (
+                              (node.metadata?.template?.name === "level1" ||
+                                node.metadata?.template?.name === "community") ? (
                               <div className="mb-2 mt-1 mb-md-0 mt-md-0 d-table d-sm-table d-md-inline-block ">
                                 <Tag
                                   label="Panoramica"
@@ -115,19 +120,9 @@ function ListArchiveEvents({ background, noSpace }) {
                             ) : null}
                           </div>
                         </div>
-                        {(node.components?.hero?.kangaroo?.eventInfo?.items ||
-                          description) && (
+                        {(date || description) && (
                           <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
-                            {node.components?.hero?.kangaroo?.eventInfo
-                              ?.items && (
-                              <span>
-                                {
-                                  node.components?.hero?.kangaroo?.eventInfo
-                                    ?.items[1].label
-                                }
-                              </span>
-                            )}{" "}
-                            {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
+                            {date && <span>{date.label}</span>}{" "}
                             <span> — {description}</span>
                           </p>
                         )}
