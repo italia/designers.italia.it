@@ -56,9 +56,9 @@ components:
               align: "middle"
               color: "secondary"
             label: "Gratuita su registrazione" #C
-            url: https://form.jotform.com/233312713742348
-            blank: true
-            screenReaderText: " (si apre in una nuova finestra)"
+            # url: https://form.jotform.com/233312713742348
+            # blank: true
+            # screenReaderText: " (si apre in una nuova finestra)"
           - title: Data e orario
             icon:
               icon: "sprites.svg#it-calendar"
@@ -87,14 +87,19 @@ components:
         - name: TextImageCta
           # title: Titoletto interno h3
           text: |
-             L’incontro, dedicato ai Comuni che stanno implementando la Misura 1.4.1 del PNRR e ai loro fornitori, sarà focalizzato sull’architettura informativa del Modello Comuni. La risorsa fornisce una panoramica delle diverse sezioni e dell’organizzazione dei contenuti in pagina e rappresenta un riferimento chiave per realizzare un sito informativo semplice da consultare per i cittadini. Gli esperti di Designers Italia illustreranno i principi seguiti definire la struttura e le modalità di consultazione della documentazione disponibile.    
+             L’incontro, dedicato ai Comuni che stanno implementando la Misura 1.4.1 del PNRR e ai loro fornitori, sarà focalizzato sull’architettura informativa del Modello Comuni. La risorsa fornisce una panoramica delle diverse sezioni e dell’organizzazione dei contenuti in pagina e rappresenta un riferimento chiave per realizzare un sito informativo semplice da consultare per i cittadini. Gli esperti di Designers Italia illustreranno i principi seguiti definire la struttura e le modalità di consultazione della documentazione disponibile.
+
+             **Questo evento si è concluso. Iscriviti alla nostra mailing list per ricevere aggiornamenti sui prossimi eventi.**
 
           ctas:
-          - label: Registrati
-            url: https://form.jotform.com/233312713742348
-            screenReaderText: " (si apre in una nuova finestra)" #C
-            blank: true
+          - label: Iscriviti alla mailing list
+            url: "/#iscrivitiNewsletter"
             icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
               icon: sprites.svg#it-external-link
               color: primary
               align: middle
