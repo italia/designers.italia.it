@@ -205,6 +205,10 @@ function ComponentView({
           </div>
           <span className="visually-hidden">Inizio anteprima:</span>
           <iframe
+            src="https://italia.github.io/dev-kit-italia/iframe.html?args=&id=componenti-accordion--header-attivi&viewMode=story"
+            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth}`}
+          />
+          <iframe
             id={`${idPrefix}-iframe`}
             src={BSIExampleUrl}
             title={`Variante: ${variantName}`}
