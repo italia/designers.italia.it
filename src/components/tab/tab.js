@@ -7,7 +7,7 @@ import ContentSelectItem from "../content-select/components/content-select-item/
 
 import TabButton from "./tabbutton";
 
-function Tab({ componentSource, tab01, tab02, tab03 }) {
+function Tab({ componentSource, tab01, tab02, tab03, tab04 }) {
   return (
     <div className="tab pt-5 /*pt-lg-6*/">
       <div className="">
@@ -50,6 +50,18 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
               aria-selected="false"
             >
               {tab03.title}
+            </TabButton>
+          </li>
+          <li className="nav-item">
+            <TabButton
+              className="nav-link"
+              id="card-simple4-tab"
+              href="#card-simpletab4"
+              role="tab"
+              aria-controls="card-simpletab4"
+              aria-selected="false"
+            >
+              Web Component
             </TabButton>
           </li>
         </ul>
@@ -157,6 +169,19 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
                 {...section}
               />
             ))}
+        </div>
+        <div
+          className="tab-pane py-5 fade"
+          id="card-simpletab4"
+          role="tabpanel"
+          aria-labelledby="card-simple4-tab"
+        >
+          <iframe
+            id={`-sbiframe`}
+            height={"800px%"}
+            src="https://italia.github.io/dev-kit-italia/iframe.html?args=&id=componenti-accordion--documentazione"
+            className={`w-100 iframe-example shadow-sm `}
+          />
         </div>
       </div>
     </div>

@@ -104,6 +104,11 @@ function ComponentView({
     if (!iframe) return;
     iframe.addEventListener("load", initAutoHeight);
     iframe.addEventListener("transitionend", initAutoHeight);
+
+    const sbiframe = document.getElementById(`${idPrefix}-sbiframe`);
+    if (!sbiframe) return;
+    sbiframe.addEventListener("load", initAutoHeight);
+    sbiframe.addEventListener("transitionend", initAutoHeight);
   });
 
   const copyToClipboard = (e, code) => {
@@ -204,10 +209,11 @@ function ComponentView({
             </div>
           </div>
           <span className="visually-hidden">Inizio anteprima:</span>
-          <iframe
-            src="https://italia.github.io/dev-kit-italia/iframe.html?args=&id=componenti-accordion--header-attivi&viewMode=story"
+          {/* <iframe
+            id={`${idPrefix}-sbiframe`}
+            src="https://italia.github.io/dev-kit-italia/iframe.html?args=&id=componenti-accordion--documentazione"
             className={`w-100 iframe-example rounded border shadow-sm ${previewWidth}`}
-          />
+          /> */}
           <iframe
             id={`${idPrefix}-iframe`}
             src={BSIExampleUrl}
