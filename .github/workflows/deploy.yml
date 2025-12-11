@@ -21,9 +21,9 @@ jobs:
           # We want all the history to display the last updated date in pages
           fetch-depth: 0
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v6
         with:
-          node-version: 18
+          node-version: 22
           cache: 'npm'
 
       - name: Cache Gatsby
@@ -47,7 +47,7 @@ jobs:
         env:
           MATOMO_SITE_ID: ${{ secrets.MATOMO_SITE_ID }}
           MATOMO_SITE_URL: ${{ secrets.MATOMO_SITE_URL }}
-          
+
       - name: Deploy
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/italia/designers.italia.it
