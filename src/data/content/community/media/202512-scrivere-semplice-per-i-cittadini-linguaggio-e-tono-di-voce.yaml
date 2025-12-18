@@ -1,0 +1,88 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Scrivere semplice per i cittadini: linguaggio e tono di voce"
+  description: "...."
+  image: https://designers.italia.it/images/community/media-thumbnails/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce.png
+  canonical: null
+  pathname: /community/media/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Scrivere semplice per i cittadini: linguaggio e tono di voce"
+    subtitle: "Regione Lombardia e la Scuola Normale Superiore raccontano la loro esperienza"
+    tag:
+      label: Video - Community Call
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione contenuti, Progettazione servizi, Design system, Contenuti e linguaggio, Accessibilità, Microtesti, Tono di voce]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=wH7_T2fAXjw
+          poster: /images/community/media-thumbnails/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce.png
+          subtitles: /files/community/subtitles/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=QyzK93Huhy8)            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            In questo incontro la **Scuola Normale Superiore e Regione Lombardia** raccontano la loro esperienza di utilizzo delle risorse di Designers Italia soffermandosi sul **ruolo del design system .italia nel traformare l'approccio alla progettazione** e alla realizzazione di siti e servizi digitali, condividendo esempi concreti del suo utilizzo, sfide affrontate e suggerimenti utili al resto della community.
+          ctas:
+          - label: Vai al design system .italia #C
+            url: "/design-system/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2 
