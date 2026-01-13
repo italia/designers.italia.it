@@ -1,0 +1,90 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Scrivere semplice per i cittadini: linguaggio e tono di voce"
+  description: "Come rendere i contenuti della PA più chiari, utili e accessibili attraverso scelte di linguaggio consapevoli."
+  image: https://designers.italia.it/images/community/media-thumbnails/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce.png
+  canonical: null
+  pathname: /community/media/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Scrivere semplice per i cittadini: linguaggio e tono di voce"
+    subtitle: "Come rendere i contenuti della PA più chiari, utili e accessibili attraverso scelte di linguaggio consapevoli"
+    tag:
+      label: Video - Webinar
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Progettazione contenuti, Progettazione servizi, Design system, Contenuti e linguaggio, Accessibilità, Microtesti, Tono di voce]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=wH7_T2fAXjw
+          poster: /images/community/media-thumbnails/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce.png
+          subtitles: /files/community/subtitles/202512-scrivere-semplice-per-i-cittadini-linguaggio-e-tono-di-voce.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=wH7_T2fAXjw)            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Questo webinar è stato realizzato in collaborazione con ANCI nell’ambito di un percorso condiviso di formazione e accompagnamento rivolto alle Pubbliche Amministrazioni locali, con l’obiettivo di rafforzare le competenze di chi progetta e gestisce siti e servizi pubblici.
+
+            Durante l’incontro parliamo dell'importanza del **linguaggio** e del **tono di voce** per realizzare servizi digitali pubblici semplici, inclusivi e coerenti. A partire da esempi concreti, affrontiamo temi come la semplificazione dei testi, l’uso di parole comprensibili, la struttura delle informazioni e le scelte di stile più adatte ai contesti della PA.
+          #ctas:
+          #- label: Vai al design system .italia #C
+            #url: "/design-system/" #M
+            #blank: false #M #C true if new tab for external links
+            #icon:
+              #icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              #color: primary
+              #align: middle
+              #hidden: true
+              #size: sm
+              #addonClasses: ms-2 
