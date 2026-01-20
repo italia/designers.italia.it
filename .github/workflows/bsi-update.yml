@@ -16,11 +16,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup NodeJS
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v6
         with:
-          node-version: 20
+          node-version: 22
       - name: Run Bootstrap Italia and content update
-        run: | 
+        run: |
           npm i bootstrap-italia@latest
           npm run prepare-lib
           npm run prepare-content
