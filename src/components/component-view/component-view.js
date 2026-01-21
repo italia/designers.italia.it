@@ -17,6 +17,8 @@ function ComponentView({
   variantName,
   source,
   content,
+  sourceKit,
+  contentKit,
   idPrefix,
   viewerHeight,
   minHeight,
@@ -137,6 +139,11 @@ function ComponentView({
     setPreviewWidth(` viewer-${res}`);
   };
 
+  const changeLibrary = (e) => {
+    e.preventDefault();
+    console.log(e.target.textContent)
+  };
+
   let responsiveButtonsItems;
   if (viewer) {
     responsiveButtonsItems = viewer.responsiveButtons.map((item, index) => (
@@ -197,6 +204,30 @@ function ComponentView({
                 </div>
               </div>
             )}
+            
+            <div className="responsive-buttons px-3">
+              <div
+                className="btn-group"
+                role="group"
+                aria-label={viewer.responsiveAriaLabel}
+              >
+                <Button
+                  onClick={(e) => changeLibrary(e)}
+                  key='rb-bsi'
+                  label='Bootstrap Italia'
+                  btnStyle='secondary'
+                  addonStyle={'btn-xs'}
+                />
+                <Button
+                  onClick={(e) => changeLibrary(e)}
+                  key='rb-wc'
+                  label='Kit Italia'
+                  btnStyle='secondary'
+                  addonStyle={'btn-xs'}
+                />
+              </div>
+            </div>
+
             <div className="ms-2">
               <a
                 href={BSIExampleUrl}
@@ -209,9 +240,11 @@ function ComponentView({
             </div>
           </div>
           <span className="visually-hidden">Inizio anteprima:</span>
+          {sourceKit}
+          {contentKit}
           {/* <iframe
             id={`${idPrefix}-sbiframe`}
-            src="https://italia.github.io/dev-kit-italia/iframe.html?args=&id=componenti-accordion--documentazione"
+            src="https://italia.github.io/dev-kit-italia/iframe.html?viewMode=story&id=componenti-accordion--single&globals=&args="
             className={`w-100 iframe-example rounded border shadow-sm ${previewWidth}`}
           /> */}
           <iframe
