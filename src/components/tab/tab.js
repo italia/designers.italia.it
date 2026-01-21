@@ -69,6 +69,8 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
                     variantName={v.name}
                     source={componentSource}
                     content={v.content}
+                    sourceKit={v.kitUrl}
+                    contentKit={v.kitContent}
                     idPrefix="use-preview-"
                     viewerHeight={tab01.componentVariant.viewerHeight}
                     accordionUrl={tab01.componentVariant.accordionUrl}
@@ -106,6 +108,8 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
                     variantName={v.name}
                     source={componentSource}
                     content={v.content}
+                    sourceKit={v.kitUrl}
+                    contentKit={v.kitContent}
                     idPrefix="des-preview-"
                     viewerHeight={tab02.componentVariant.viewerHeight}
                     accordionUrl={tab02.componentVariant.accordionUrl}

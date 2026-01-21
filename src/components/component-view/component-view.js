@@ -29,6 +29,7 @@ function ComponentView({
   componentViewerData,
 }) {
   let contentTrimmed = content?.trim();
+  let contentTrimmedKit = contentKit?.trim();
 
   if (componentViewerData?.variants) {
     // it is not a Componenti page, but a Fondamenti with one or more viewers...
@@ -131,7 +132,7 @@ function ComponentView({
   const headId = `${uuid}-heading`;
   const collId = `${uuid}-collapse`;
   const [wrappedCode, setWrappedCode] = useState(false);
-
+  const [useWC, setUseWc] = useState(false);
   const [previewWidth, setPreviewWidth] = useState(" viewer-full");
   const changeResolution = (e) => {
     e.preventDefault();
@@ -141,7 +142,8 @@ function ComponentView({
 
   const changeLibrary = (e) => {
     e.preventDefault();
-    console.log(e.target.textContent)
+    setUseWc(e.target.textContent === 'Kit Italia')
+    // console.log(e.target.textContent)
   };
 
   let responsiveButtonsItems;
@@ -230,7 +232,7 @@ function ComponentView({
 
             <div className="ms-2">
               <a
-                href={BSIExampleUrl}
+                href={useWC ? sourceKit : BSIExampleUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-xs btn-primary p-2"
@@ -240,18 +242,17 @@ function ComponentView({
             </div>
           </div>
           <span className="visually-hidden">Inizio anteprima:</span>
-          {sourceKit}
-          {contentKit}
-          {/* <iframe
-            id={`${idPrefix}-sbiframe`}
-            src="https://italia.github.io/dev-kit-italia/iframe.html?viewMode=story&id=componenti-accordion--single&globals=&args="
-            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth}`}
-          /> */}
           <iframe
             id={`${idPrefix}-iframe`}
             src={BSIExampleUrl}
             title={`Variante: ${variantName}`}
-            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth}`}
+            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth} ${useWC ? 'd-none' : ''}`}
+          />
+          <iframe
+            id={`${idPrefix}-iframe`}
+            src={sourceKit}
+            title={`Variante: ${variantName}`}
+            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth} ${!useWC ? 'd-none' : ''}`}
           />
           <span className="visually-hidden">Fine anteprima.</span>
         </div>
@@ -275,7 +276,7 @@ function ComponentView({
               <div className="d-flex justify-content-between align-items-center">
                 {contentTrimmed && (
                   <Button
-                    onClick={(e) => copyToClipboard(e, contentTrimmed)}
+                    onClick={(e) => copyToClipboard(e, useWC ? contentTrimmedKit : contentTrimmed)}
                     aria-label={accordionSrCopyLabel}
                     addonStyle="shadow-none btn btn-xs btn-secondary p-2 me-2"
                   >
@@ -328,7 +329,7 @@ function ComponentView({
                       style: { wordBreak: "break-all", whiteSpace: "pre-wrap" },
                     }}
                   >
-                    {contentTrimmed}
+                    {useWC ? contentTrimmedKit : contentTrimmed}
                   </SyntaxHighlighter>
                 )}
               </div>
