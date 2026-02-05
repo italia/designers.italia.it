@@ -17,6 +17,8 @@ function ComponentView({
   variantName,
   source,
   content,
+  sourceKit,
+  contentKit,
   idPrefix,
   viewerHeight,
   minHeight,
@@ -27,6 +29,7 @@ function ComponentView({
   componentViewerData,
 }) {
   let contentTrimmed = content?.trim();
+  let contentTrimmedKit = contentKit?.trim();
 
   if (componentViewerData?.variants) {
     // it is not a Componenti page, but a Fondamenti with one or more viewers...
@@ -104,6 +107,11 @@ function ComponentView({
     if (!iframe) return;
     iframe.addEventListener("load", initAutoHeight);
     iframe.addEventListener("transitionend", initAutoHeight);
+
+    const sbiframe = document.getElementById(`${idPrefix}-sbiframe`);
+    if (!sbiframe) return;
+    sbiframe.addEventListener("load", initAutoHeight);
+    sbiframe.addEventListener("transitionend", initAutoHeight);
   });
 
   const copyToClipboard = (e, code) => {
@@ -124,12 +132,18 @@ function ComponentView({
   const headId = `${uuid}-heading`;
   const collId = `${uuid}-collapse`;
   const [wrappedCode, setWrappedCode] = useState(false);
-
+  const [useWC, setUseWc] = useState(false);
   const [previewWidth, setPreviewWidth] = useState(" viewer-full");
   const changeResolution = (e) => {
     e.preventDefault();
     const res = e.target.textContent; // mobile, tablet, full
     setPreviewWidth(` viewer-${res}`);
+  };
+
+  const changeLibrary = (e) => {
+    e.preventDefault();
+    setUseWc(e.target.textContent === 'Kit Italia')
+    // console.log(e.target.textContent)
   };
 
   let responsiveButtonsItems;
@@ -192,9 +206,33 @@ function ComponentView({
                 </div>
               </div>
             )}
+            
+            <div className="responsive-buttons px-3">
+              <div
+                className="btn-group"
+                role="group"
+                aria-label={viewer.responsiveAriaLabel}
+              >
+                <Button
+                  onClick={(e) => changeLibrary(e)}
+                  key='rb-bsi'
+                  label='Bootstrap Italia'
+                  btnStyle='secondary'
+                  addonStyle={'btn-xs'}
+                />
+                <Button
+                  onClick={(e) => changeLibrary(e)}
+                  key='rb-wc'
+                  label='Kit Italia'
+                  btnStyle='secondary'
+                  addonStyle={'btn-xs'}
+                />
+              </div>
+            </div>
+
             <div className="ms-2">
               <a
-                href={BSIExampleUrl}
+                href={useWC ? sourceKit : BSIExampleUrl}
                 target="_blank"
                 rel="noreferrer"
                 className="btn btn-xs btn-primary p-2"
@@ -208,7 +246,13 @@ function ComponentView({
             id={`${idPrefix}-iframe`}
             src={BSIExampleUrl}
             title={`Variante: ${variantName}`}
-            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth}`}
+            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth} ${useWC ? 'd-none' : ''}`}
+          />
+          <iframe
+            id={`${idPrefix}-iframe`}
+            src={sourceKit}
+            title={`Variante: ${variantName}`}
+            className={`w-100 iframe-example rounded border shadow-sm ${previewWidth} ${!useWC ? 'd-none' : ''}`}
           />
           <span className="visually-hidden">Fine anteprima.</span>
         </div>
@@ -232,7 +276,7 @@ function ComponentView({
               <div className="d-flex justify-content-between align-items-center">
                 {contentTrimmed && (
                   <Button
-                    onClick={(e) => copyToClipboard(e, contentTrimmed)}
+                    onClick={(e) => copyToClipboard(e, useWC ? contentTrimmedKit : contentTrimmed)}
                     aria-label={accordionSrCopyLabel}
                     addonStyle="shadow-none btn btn-xs btn-secondary p-2 me-2"
                   >
@@ -285,7 +329,7 @@ function ComponentView({
                       style: { wordBreak: "break-all", whiteSpace: "pre-wrap" },
                     }}
                   >
-                    {contentTrimmed}
+                    {useWC ? contentTrimmedKit : contentTrimmed}
                   </SyntaxHighlighter>
                 )}
               </div>
