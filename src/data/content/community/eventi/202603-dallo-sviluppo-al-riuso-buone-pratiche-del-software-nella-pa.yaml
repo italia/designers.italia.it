@@ -1,0 +1,120 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: eventi
+
+seo:
+  name: "Dallo sviluppo al riuso: buone pratiche del software nella PA"
+  description: "Esperienze concrete di collaborazione, pubblicazione e riutilizzo di software open source"
+  image: https://designers.italia.it/images/community/eventi/202603-dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-pa.png
+  canonical: null
+  pathname: /community/eventi/202603-dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-pa
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Dallo sviluppo al riuso: buone pratiche del software nella PA"
+    subtitle: "Esperienze concrete di collaborazione, pubblicazione e riutilizzo di software open source"
+    tag:
+        label: Community call
+        
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community, Community call, Linee guida, Open source]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Online
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+            
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita con registrazione" #C
+           # url: https://events.teams.microsoft.com/event/34cfebaf-a4e5-42b3-a666-6813fb60a4a0@3e90938b-8b27-4762-b4e8-006a8127a119
+           # blank: true
+           # screenReaderText: " (si apre in una nuova finestra)"
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "11 marzo 2025, 14.30–16.00"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      # title: Titolo area h2
+      # text: Sottotitolo area h2
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          # title: Titoletto interno h3
+          text: |
+            Nella prossima Community call di Developers Italia, scopri come **due enti hanno attivato percorsi virtuosi di pubblicazione e di riuso del software pubblico**.
+            
+            Dopo un’introduzione a cura dell’Agenzia per l’Italia Digitale sullo stato dell’arte e sulle **prospettive future della normativa** che regola l’acquisizione e il riuso del software nella PA, l’**Università degli Studi di Urbino Carlo Bo** e **l’Università della Calabria** illustreranno le loro soluzioni e il percorso collaborativo che hanno seguito per valorizzare i loro software nel catalogo del riuso di Developers Italia.
+            
+            **Il Dipartimento per la trasformazione digitale presenterà** le buone pratiche adottate dalle due università e, a partire da questa esperienza concreta, delineerà infine **un processo di accompagnamento al riuso** rivolto agli enti, che mira a coinvolgere tutte le figure chiave della trasformazione digitale in un modello di economia circolare del software open source.
+
+            Le Community call di Designers e Developers Italia sono eventi aperti di scambio e di confronto in cui funzionari pubblici, progettisti e sviluppatori condividono esperienze su temi di interesse per chi opera nella trasformazione digitale della PA, promuovendo un approccio open source alla realizzazione di software pubblico.
+
+
+          ctas:
+          - label: Registrati
+            url: https://events.teams.microsoft.com/event/34cfebaf-a4e5-42b3-a666-6813fb60a4a0@3e90938b-8b27-4762-b4e8-006a8127a119
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
