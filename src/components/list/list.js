@@ -185,7 +185,7 @@ const List = React.forwardRef(
             ref={notificationRef}
           >
             <span className="h5">
-              <Icon icon={{ icon: "sprites.svg#it-check-circle" }} />
+              <Icon icon="sprites.svg#it-check-circle" />
               Collegamento copiato negli appunti
             </span>
           </div>,
