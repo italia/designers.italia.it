@@ -50,6 +50,8 @@ const List = React.forwardRef(
       setCurrentTitle(shareTitle);
     }, [shareUrl, shareTitle]);
 
+    useEffect(() => setIsMounted(true), []);
+    
     // heading level
     let HLevel;
     if (headingLevel) {
