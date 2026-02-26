@@ -178,19 +178,19 @@ const List = React.forwardRef(
         {ListHeading}
         {title && <HLevel className="title h4 mb-0">{title}</HLevel>}
         <ul className={ulStyles}>{children}</ul>
-        {isShare && typeof document !== "undefined" && ReactDOM.createPortal(
-          <div
-            className="notification with-icon right-fix success dismissable fade"
-            role="alert"
-            ref={notificationRef}
-          >
-            <span className="h5">
-              <Icon icon="sprites.svg#it-check-circle" />
-              Collegamento copiato negli appunti
-            </span>
-          </div>,
-          document.body
-        )}
+        {isShare && isMounted && ReactDOM.createPortal(
+        <div
+          className="notification with-icon right-fix success dismissable fade"
+          role="alert"
+          ref={notificationRef}
+        >
+          <span className="h5">
+            <Icon icon="sprites.svg#it-check-circle" />
+            Collegamento copiato negli appunti
+          </span>
+        </div>,
+        document.body
+      )}
       </div>
     );
   },
