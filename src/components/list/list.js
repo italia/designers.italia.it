@@ -31,6 +31,7 @@ const List = React.forwardRef(
   ) => {
     const [currentUrl, setCurrentUrl] = useState("");
     const [currentTitle, setCurrentTitle] = useState("");
+    const [isMounted, setIsMounted] = useState(false);
     const notificationRef = useRef(null);
 
     const ICON_ARROW_RIGHT_TRIANGLE = {
