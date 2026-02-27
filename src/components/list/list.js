@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import ReactDOM from "react-dom";
-import Icon from "../icon/icon";
 import { Notification } from "bootstrap-italia";
+import Icon from "../icon/icon";
 import ListItem from "../list-item/list-item";
 import Link from "../link/link";
 import "./list.scss";
@@ -52,7 +52,7 @@ const List = React.forwardRef(
     }, [shareUrl, shareTitle]);
 
     useEffect(() => setIsMounted(true), []);
-    
+
     // heading level
     let HLevel;
     if (headingLevel) {
@@ -77,7 +77,9 @@ const List = React.forwardRef(
         e?.preventDefault();
         await navigator.clipboard.writeText(currentUrl);
         if (notificationRef.current) {
-          const notification = new Notification(notificationRef.current, { timeout: 3000 });
+          const notification = new Notification(notificationRef.current, {
+            timeout: 3000,
+          });
           notification.show();
         }
       };
@@ -93,7 +95,9 @@ const List = React.forwardRef(
             textLarge={textLarge}
             simpleList={simpleList}
             ariaLabel="Condividi su WhatsApp (si apre in una nuova finestra)"
-            url={`https://wa.me/?text=${encodeURIComponent(currentTitle)}%20${encodeURIComponent(currentUrl)}`}
+            url={`https://wa.me/?text=${encodeURIComponent(
+              currentTitle,
+            )}%20${encodeURIComponent(currentUrl)}`}
             blank="true"
           />
           <ListItem
@@ -104,7 +108,9 @@ const List = React.forwardRef(
             textLarge={textLarge}
             simpleList={simpleList}
             ariaLabel="Condividi su Telegram (si apre in una nuova finestra)"
-            url={`https://t.me/share/url?url=${encodeURIComponent(currentUrl)}&text=${encodeURIComponent(currentTitle)}`}
+            url={`https://t.me/share/url?url=${encodeURIComponent(
+              currentUrl,
+            )}&text=${encodeURIComponent(currentTitle)}`}
             blank="true"
           />
           <ListItem
@@ -115,7 +121,9 @@ const List = React.forwardRef(
             textLarge={textLarge}
             simpleList={simpleList}
             ariaLabel="Condividi su LinkedIn (si apre in una nuova finestra)"
-            url={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`}
+            url={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+              currentUrl,
+            )}`}
             blank="true"
           />
           <ListItem
@@ -178,19 +186,21 @@ const List = React.forwardRef(
         {ListHeading}
         {title && <HLevel className="title h4 mb-0">{title}</HLevel>}
         <ul className={ulStyles}>{children}</ul>
-        {isShare && isMounted && ReactDOM.createPortal(
-        <div
-          className="notification with-icon right-fix success dismissable fade"
-          role="alert"
-          ref={notificationRef}
-        >
-          <span className="h5">
-            <Icon icon="sprites.svg#it-check-circle" />
-            Collegamento copiato negli appunti
-          </span>
-        </div>,
-        document.body
-      )}
+        {isShare &&
+          isMounted &&
+          ReactDOM.createPortal(
+            <div
+              className="notification with-icon right-fix success dismissable fade"
+              role="alert"
+              ref={notificationRef}
+            >
+              <span className="h5">
+                <Icon icon="sprites.svg#it-check-circle" />
+                Collegamento copiato negli appunti
+              </span>
+            </div>,
+            document.body,
+          )}
       </div>
     );
   },
