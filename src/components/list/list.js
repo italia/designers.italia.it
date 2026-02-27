@@ -127,6 +127,16 @@ const List = React.forwardRef(
             blank="true"
           />
           <ListItem
+            label="Invia per email"
+            icon={{ icon: "sprites.svg#it-mail", ...iconProps }}
+            iconRight
+            isDropdown={isDropdown}
+            textLarge={textLarge}
+            simpleList={simpleList}
+            ariaLabel="Invia per email"
+            url={`mailto:?subject=${encodeURIComponent(currentTitle)}&body=${encodeURIComponent(currentUrl)}`}
+          />
+          <ListItem
             label="Copia collegamento"
             icon={{ icon: "sprites.svg#it-copy", ...iconShareProps }}
             iconRight
