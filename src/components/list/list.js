@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from "react";
-
+import React, { useEffect, useState, useRef } from "react";
+import ReactDOM from "react-dom";
+import { Notification } from "bootstrap-italia";
+import Icon from "../icon/icon";
 import ListItem from "../list-item/list-item";
 import Link from "../link/link";
 import "./list.scss";
@@ -29,6 +31,8 @@ const List = React.forwardRef(
   ) => {
     const [currentUrl, setCurrentUrl] = useState("");
     const [currentTitle, setCurrentTitle] = useState("");
+    const [isMounted, setIsMounted] = useState(false);
+    const notificationRef = useRef(null);
 
     const ICON_ARROW_RIGHT_TRIANGLE = {
       icon: "sprites.svg#it-arrow-right-triangle",
@@ -46,6 +50,8 @@ const List = React.forwardRef(
       setCurrentUrl(url);
       setCurrentTitle(shareTitle);
     }, [shareUrl, shareTitle]);
+
+    useEffect(() => setIsMounted(true), []);
 
     // heading level
     let HLevel;
@@ -66,33 +72,45 @@ const List = React.forwardRef(
 
     if (isShare) {
       const iconProps = { color: "primary", size: "sm" };
-      const onCopyLink = async () => {
+      const iconShareProps = { color: "white", addonClasses: "ms-1" };
+      const onCopyLink = async (e) => {
+        e?.preventDefault();
         await navigator.clipboard.writeText(currentUrl);
+        if (notificationRef.current) {
+          const notification = new Notification(notificationRef.current, {
+            timeout: 3000,
+          });
+          notification.show();
+        }
       };
 
       // eslint-disable-next-line no-param-reassign
       children = (
         <>
           <ListItem
-            label="Copia collegamento"
-            icon={{ icon: "sprites.svg#it-copy", ...iconProps }}
+            label="Condividi su WhatsApp"
+            icon={{ icon: "sprites.svg#it-whatsapp", ...iconProps }}
             iconRight
             isDropdown={isDropdown}
             textLarge={textLarge}
             simpleList={simpleList}
-            ariaLabel=""
-            url="#"
-            onClick={onCopyLink}
+            ariaLabel="Condividi su WhatsApp (si apre in una nuova finestra)"
+            url={`https://wa.me/?text=${encodeURIComponent(
+              currentTitle,
+            )}%20${encodeURIComponent(currentUrl)}`}
+            blank="true"
           />
           <ListItem
-            label="Condividi su X"
-            icon={{ icon: "sprites.svg#it-twitter", ...iconProps }}
+            label="Condividi su Telegram"
+            icon={{ icon: "sprites.svg#it-telegram", ...iconProps }}
             iconRight
             isDropdown={isDropdown}
             textLarge={textLarge}
             simpleList={simpleList}
-            ariaLabel="Condividi su X (si apre in una nuova finestra)"
-            url={`https://twitter.com/intent/tweet/?text=${currentTitle}&url=${currentUrl}`}
+            ariaLabel="Condividi su Telegram (si apre in una nuova finestra)"
+            url={`https://t.me/share/url?url=${encodeURIComponent(
+              currentUrl,
+            )}&text=${encodeURIComponent(currentTitle)}`}
             blank="true"
           />
           <ListItem
@@ -103,8 +121,33 @@ const List = React.forwardRef(
             textLarge={textLarge}
             simpleList={simpleList}
             ariaLabel="Condividi su LinkedIn (si apre in una nuova finestra)"
-            url={`https://www.linkedin.com/sharing/share-offsite/?url=${currentUrl}`}
+            url={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(
+              currentUrl,
+            )}`}
             blank="true"
+          />
+          <ListItem
+            label="Invia per email"
+            icon={{ icon: "sprites.svg#it-mail", ...iconProps }}
+            iconRight
+            isDropdown={isDropdown}
+            textLarge={textLarge}
+            simpleList={simpleList}
+            ariaLabel="Invia per email"
+            url={`mailto:?subject=${encodeURIComponent(
+              currentTitle,
+            )}&body=${encodeURIComponent(currentUrl)}`}
+            np
+          />
+          <ListItem
+            label="Copia collegamento"
+            icon={{ icon: "sprites.svg#it-copy", ...iconShareProps }}
+            iconRight
+            isDropdown={isDropdown}
+            textLarge={textLarge}
+            simpleList={simpleList}
+            ariaLabel=""
+            onClick={onCopyLink}
           />
         </>
       );
@@ -156,6 +199,21 @@ const List = React.forwardRef(
         {ListHeading}
         {title && <HLevel className="title h4 mb-0">{title}</HLevel>}
         <ul className={ulStyles}>{children}</ul>
+        {isShare &&
+          isMounted &&
+          ReactDOM.createPortal(
+            <div
+              className="notification with-icon right-fix success dismissable fade"
+              role="alert"
+              ref={notificationRef}
+            >
+              <span className="h5">
+                <Icon icon="sprites.svg#it-check-circle" />
+                Collegamento copiato negli appunti
+              </span>
+            </div>,
+            document.body,
+          )}
       </div>
     );
   },
