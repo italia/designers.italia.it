@@ -134,7 +134,10 @@ const List = React.forwardRef(
             textLarge={textLarge}
             simpleList={simpleList}
             ariaLabel="Invia per email"
-            url={`mailto:?subject=${encodeURIComponent(currentTitle)}&body=${encodeURIComponent(currentUrl)}`}
+            url={`mailto:?subject=${encodeURIComponent(
+              currentTitle,
+            )}&body=${encodeURIComponent(currentUrl)}`}
+            np
           />
           <ListItem
             label="Copia collegamento"
