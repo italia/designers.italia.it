@@ -1,0 +1,92 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Dallo sviluppo al riuso: buone pratiche del software nella PA"
+  description: "Esperienze concrete di collaborazione e presentazione di due soluzioni a riuso delle Università."
+  image: https://designers.italia.it/images/community/media-thumbnails/202603-dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-PA.jpg
+  canonical: null
+  pathname: /community/media/202603-dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-pa/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Dallo sviluppo al riuso: buone pratiche del software nella PA"
+    subtitle: "Esperienze concrete di collaborazione e presentazione di due soluzioni a riuso delle Università"
+    tag:
+      label: Video - Community call
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community call, Linee guida, Open source, Sviluppo interfaccia]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=J5AGN20SJBI
+          poster: /images/community/media-thumbnails/202603-dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-pa.jpg
+          subtitles: /files/community/subtitles/202603-dallo-sviluppo-al-riuso-buone-pratiche-del-software-nella-pa.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=J5AGN20SJBI)            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            L’incontro è stato un’occasione di confronto tra amministrazioni pubbliche su **approcci, strumenti ed esperienze per favorire il riuso del software** e migliorare la qualità dei progetti digitali pubblici. Tra i temi affrontati, le linee guida normative e il valore del riuso, con la presentazione di due soluzioni presenti sul sito di Developers Italia: [UniContr](https://developers.italia.it/it/software/ea2d2b61-acff-49f0-98c1-8f1b1bd666b3) e [uniTicket](https://developers.italia.it/it/software/13221983-d9e9-4c88-928c-23240ef55dac).
+            
+            Durante l’evento il Dipartimento ha lanciato un [nuovo canale di supporto per gli enti sul sito PA Digitale 2026](https://padigitale2026.gov.it/supporto/richiedi-assistenza), **sull'argomento dell'Open source**, , oltre ad invitare enti e organizzazioni a **segnalare buoni esempi di software pubblico** attraverso il questionario dedicato.
+          
+          ctas:
+          - label: Segnala un software
+            url: https://ec.europa.eu/eusurvey/runner/buonepraticheDesItDevIT
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+              
