@@ -19,16 +19,18 @@
 metadata:
   template:
     name: level4
-
+  redirect_from:
+    - /community/partecipa/raccontaci-come-hai-usato-le-risorse-a-disposizione/
+    
 # ————————————————————————————————————————————
 # SEO, OPENGRAPH
 # ————————————————————————————————————————————
 seo:
-  name: "Raccontaci come hai usato le risorse a disposizione - Designers Italia" #C REMIND "- Designers Italia" #AUTO
-  description: Inviaci un progetto che hai realizzato con le risorse per la trasformazione digitale della Pubblica Amministrazione. #C
+  name: "Segnala buoni esempi di progettazione e sviluppo nella PA - Designers Italia" #C REMIND "- Designers Italia" #AUTO
+  description: Inviaci un sito, servizio o software che rappresenta un caso virtuoso di trasformazione digitale della Pubblica Amministrazione. #C
   image: null #I
   canonical: null
-  pathname: /community/partecipa/raccontaci-come-hai-usato-le-risorse-a-disposizione/ #M
+  pathname: /community/partecipa/segnala-buoni-esempi-di-progettazione-e-sviluppo-nella-pa/ #M
 
 # ————————————————————————————————————————————
 # NAV - PRE FOOTER
@@ -92,8 +94,8 @@ components:
   # ///////////////////
   hero:
     background: null
-    title: "Raccontaci come hai usato le risorse a disposizione" #C
-    subtitle: Inviaci un progetto che hai realizzato con le risorse per la trasformazione digitale della Pubblica Amministrazione #C
+    title: "Segnala buoni esempi di progettazione e sviluppo nella PA" #C
+    subtitle: Inviaci un sito, servizio o software che rappresenta un caso virtuoso di trasformazione digitale della Pubblica Amministrazione. #C
     tag:
       #label: Attività del modello #C
       #addonClasses: mt-3 text-uppercase
@@ -173,7 +175,7 @@ components:
   sectionsEditorial :
 
 
-    - title: Aiutaci a migliorare le risorse per progettare servizi pubblici digitali #C
+    - title: Aiutaci a collezionare buoni esempi #C
       menu: false
       centered: true
       background: null
@@ -185,26 +187,20 @@ components:
         - name: TextImageCta
           #title: Aiutaci a migliorare le risorse per progettare servizi pubblici digitali #C
           text: | #C
-            Vogliamo raccogliere **esempi concreti di progetti digitali realizzati con le risorse di Designers Italia e Developers Italia**, come i modelli di sito e servizi, il design system .italia, le guide, i kit di progettazione e il catalogo dei software a riuso.
+            Vogliamo raccogliere **esempi concreti di siti**, **servizi digitali** e **software per la Pubblica Amministrazione**, realizzati seguendo le linee guida e le buone pratiche di design e sviluppo promosse da Designers Italia e Developers Italia.
 
-            Il tuo contributo ci aiuterà a capire come vengono usate queste risorse nella pratica e migliorarle.
-
-            I progetti raccolti potranno anche essere utilizzati per iniziative di divulgazione, come articoli di approfondimento, eventi o materiali formativi, con l’obiettivo di valorizzare buone pratiche di progettazione in ambito pubblico e  farle conoscere ad altre amministrazioni e professionisti del settore.
+            Gli esempi raccolti potranno anche essere utilizzati per iniziative di divulgazione, come articoli di approfondimento, eventi o materiali formativi, con l’obiettivo di valorizzare buone pratiche di progettazione in ambito pubblico e farle conoscere ad altre amministrazioni e professionisti del settore.
 
 
         - name: TextImageCta
-          title: Quali progetti cerchiamo #C
+          title: Quali esempi cerchiamo #C
           text: | #C
-            Progetti che sono stati **realizzati con le risorse di Designers Italia o Developers Italia** e che riguardano:
+            - Siti internet o servizi digitali della PA realizzati usando il design system .italia.
+            - Software sviluppato per la PA e pubblicato su un repository pubblico.
+            - Esperienze di progettazione inclusive e accessibili.
+            - Implementazione dei Modelli di design per Comuni, scuole, ASL o musei civici.
 
-            - design di servizi digitali per la PA e miglioramento dell’esperienza utente dei servizi pubblici
-
-            - esperienze di progettazione inclusive e accessibili
-
-            - implementazione e uso di kit, modelli, design system. 
-
-            Siamo interessati a **scoprire come le nostre risorse hanno contribuito a superare le sfide e a raggiungere gli obiettivi di progetto**.
-
+            Siamo interessati a scoprire le sfide e i risultati raggiunti per capire anche come le nostre risorse hanno contribuito a raggiungere gli obiettivi di progetto.
 
             
 
@@ -213,16 +209,16 @@ components:
           # image: /images/400x300.png #I
           # alt: Alt lorem ipsum #C
           # specular: true
-          title: Invia il tuo progetto #C
+          title: Inviaci un esempio #C
           headingLevel: 3
           text: | #C
-            Per raccontarci del tuo progetto, compila un form di 10 minuti e rispondi alle nostre domande. **Assicurati di avere a disposizione un link pubblico al progetto**.
+            Compila un form di 5 minuti e rispondi alle nostre domande. **Assicurati di avere a disposizione un link pubblico** al sito, servizio o repository dove è pubblicato il software.
 
             
           ctas:
           - label: Compila il form #C
             screenReaderText: " (si apre in una nuova finestra)" #C
-            url: https://ec.europa.eu/eusurvey/runner/casistudio #M
+            url: https://ec.europa.eu/eusurvey/runner/buonepraticheDesItDevIT #M
             blank: true #M #C true if new tab for external links
             icon:
               icon: sprites.svg#it-external-link #C #I #it-arrow-right | it-external-link for external links
