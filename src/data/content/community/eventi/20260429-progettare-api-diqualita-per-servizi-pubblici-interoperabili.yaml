@@ -1,0 +1,118 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 
+  archive: eventi
+
+seo:
+  name: "Progettare API di qualità per servizi pubblici interoperabili"
+  description: "Strumenti e buone pratiche per definire e verificare semantica e sintassi delle API."
+  image: https://designers.italia.it/images/community/eventi/2026/20260429-progettare-api-diqualita-per-servizi-pubblici-interoperabili.png #I #XXX
+  canonical: null
+  pathname: /community/eventi/20260429-progettare-api-diqualita-per-servizi-pubblici-interoperabili
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Progettare API di qualità per servizi pubblici interoperabili"
+    subtitle: "Strumenti e buone pratiche per definire e verificare semantica e sintassi delle API"
+    tag:
+        label: Community lab
+        
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community lab, Open source, Cultura progettuale, Data driven design]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Online
+            url:
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+            text: |
+            
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita con registrazione" #C
+            url: 
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "29 aprile 2026, 14.30–16.00"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          text: |
+            Nel prossimo Community Lab di Developers Italia esploriamo insieme come progettare API di qualità che abilitano servizi pubblici realmente interoperabili, realizzando il principio once-only (unicità dell’invio). 
+            
+            Dopo un'**introduzione al valore dell'interoperabilità e al concetto di qualità semantica e sintattica delle API**, esploreremo insieme gli step suggeriti da Developers Italia per la progettazione di API di qualità (ricerca, sviluppa, verifica, pubblica) e come 
+            una nomenclatura e una descrizione accurate le rendano più facili da trovare, comprendere e utilizzare.
+            Il cuore dell'incontro sarà una **sessione interattiva con gli strumenti messi a disposizione per gli sviluppatori**: dal Catalogo api.gov.it per la ricerca delle API, al Catalogo Nazionale della Semantica dei dati (schema.gov.it), fino all'API OAS Checker per la 
+            verifica sintattica della conformità al Modello d'Interoperabilità (ModI) definito dalle Linee Guida AgID. 
+            
+            I community lab sono incontri online dedicati alla condivisione di conoscenze e migliori pratiche sulla progettazione e sviluppo efficace dei servizi pubblici digitali con gli esperti che curano l’evoluzione delle risorse di Designers e Developers Italia.
+
+          ctas:
+          - label: Registrati
+            url: 
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
