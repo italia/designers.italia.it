@@ -100,7 +100,7 @@ components:
     - full: true
       noSpace: false
       paddingLeft: true
-      title: Semplifica la comprensione e l’accesso ai dati
+      title: Semplifica la comprensione e l’accesso ai dati della PA
       #text: Prima di essere “istituzione”, la PA è fatta di persone e parla alle persone con l’obiettivo di essere vicina, semplice e utile
       background: null
       components:
@@ -124,8 +124,14 @@ components:
       components:
 
         - name: TextImageCta
-          title: Considera pubblico e obiettivo
+          title: Come progettare una visualizzazione dati
           headingLevel: 2
+          #text: |
+            
+        #1
+        - name: TextImageCta
+          title: Considera pubblico e obiettivo
+          headingLevel: 3
           text: |
             Per progettare una visualizzazione efficace, considera il pubblico a cui ti rivolgi e l’obiettivo che vuoi raggiungere. Questi elementi ti aiutano a scegliere la tipologia di visualizzazione e il linguaggio più adatti. 
 
@@ -149,95 +155,68 @@ components:
               - text: Analizzare, Monitorare
               - text: Visualizzazioni complesse con più viste o dashboard
               - text: Puoi usare tecnicismi, spiegandoli quando necessario
-           
-              
-    - full: true
-      noSpace: true
-      paddingLeft: true
-      background: null
-      components:
-        - name: TextImageCta
-          title: Usa il tono delle istituzioni in modo appropriato
-          headingLevel: 2
-
-        #1
-        - name: TextImageCta
-          title: Sii autorevole senza aggiungere complessità
-          noSpace: true
-          text: |
-            **Usa un tono istituzionale**, diretto e adatto a un contesto amministrativo, ma **senza abusare di termini burocratici non necessari**. Anche quando ti riferisci a norme e prescrizioni, abbi cura di citarle con precisione pur parlando in modo chiaro, con un lessico corretto ma semplice.
-
-        - name: Table
-          noSpace: true
-          responsive: table-responsive-md
-          addonClasses: fixed mb-5
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-success fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-danger fw-bold
-          rows:
-            - cols:
-              - text: |
-                  Tono istituzionale: "Richiedi al comune la rettifica dei dati inesatti presenti sulla scheda anagrafica."
-              - text: |
-                  Tono burocratico: "Il servizio per inviare una richiesta di rettifica dei dati anagrafici in caso di errori sulle informazioni presenti nella scheda anagrafica, dovuti ad errori materiali o ad errate trascrizioni rispetto a quanto riportato nei documenti in proprio possesso."
-            - cols:
-              - text: null
-              - text: |
-                  Tono informale: "Informazioni sbagliate nella tua scheda anagrafica? Falle correggere con la richiesta di rettifica."
 
         #2
         - name: TextImageCta
-          title: Rivolgiti a chi legge con il "tu"
-          noSpace: true
+          title: "Scegli il modello visivo più adatto "
+          noSpace: false
           text: |
-            **Parla all'interlocutore in modo diretto usando il "tu”**, evitando tanto il "lei" e i formalismi quanto la forma impersonale, perché complicano la costruzione del testo.
+            Esistono diversi modelli visivi di grafici e ognuno ti aiuta comunicare i dati in modo diverso.
 
-        - name: Table
-          noSpace: true
-          responsive: table-responsive-md
-          addonClasses: fixed mb-5
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-success fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-danger fw-bold
-          rows:
-            - cols:
-              - text: |
-                  Tono diretto: "In base alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design indicano le regole che hai l'obbligo di rispettare in ogni fornitura di siti e servizi digitali per la PA, quelle che dovresti valutare con attenzione prima di scegliere approcci alternativi e quelle facoltative."
-              - text: |
-                  Tono impersonale: "Conformemente alle norme ISO/IEC Directives, Part 3 per la stesura dei documenti tecnici, le Linee guida di design forniscono indicazioni che devono essere obbligatoriamente rispettate per la realizzazione di siti internet e servizi digitali della PA, quelle opzionali e quelle per cui si rende necessaria un’attenta valutazione."
+            #### Categoria modello visivo 1
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
+            
+            Descrizione testuale della categoria, a cosa serve e quali grafici rientrano.
 
+            #### Categoria modello visivo 2
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
+            
+            Descrizione testuale della categoria, a cosa serve e quali grafici rientrano.
+
+            #### Categoria modello visivo 3
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
+            
+            Descrizione testuale della categoria, a cosa serve e quali grafici rientrano.
+
+            #### Categoria modello visivo 4
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
+            
+            Descrizione testuale della categoria, a cosa serve e quali grafici rientrano.
+
+           #### Categoria modello visivo 5
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
+            
+            Descrizione testuale della categoria, a cosa serve e quali grafici rientrano.
+
+            
         #3
         - name: TextImageCta
-          title: Rispetta le differenze
-          noSpace: true
+          title: "Includi gli elementi costitutivi"
+          noSpace: false
           text: |
-            **Non rafforzare stereotipi** di genere, razzisti, abilisti o legati all'età.
+            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
             
-        - name: Table
-          noSpace: true
-          responsive: table-responsive-md
-          addonClasses: fixed mb-5
-          head:
-            - tag:
-                label: VA BENE
-                addonClasses: bg-success fw-bold
-            - tag:
-                label: NON VA BENE
-                addonClasses: bg-danger fw-bold
-          rows:
-            - cols:
-              - text: “La documentazione ufficiale che ti guida nella progettazione per la PA, mettendo le persone al centro.”
-              - text: “La documentazione ufficiale che ti guida nella progettazione per la PA, mettendo i cittadini al centro.”
-            - cols:
-              - text: “La norma a cui riferirti per favorire e semplificare l'accesso delle persone con disabilità agli strumenti informatici.”
-              - text: “La norma a cui riferirti per favorire e semplificare l'accesso dei disabili agli strumenti informatici.”
+            Assicurati che siano presenti gli elementi necessari affinchè un grafico sia leggibile, efficace e accessibile:
+
+            1. **titolo**, un testo conciso che descriva l'evidenza principale che trai dai dati;
+            
+            2. **sottotitolo**, utile a dettagliare il contesto di analisi dei dati;
+            
+            3. **legenda**, spiega l'associazione tra il dato e le variabili visive (colore, forma, dimensione, orientamento, texture). Quando possibile, integrala nel grafico (ad esempio se interattivo o con delle etichette);
+            
+            4. **assi e griglia**, con relative etichette, per aiutare gli utenti a comprendere le proporzioni, gli indicatori coinvolti e l’unità di misura dei dati;
+
+            5. **fonte dei dati**, possibilmente con link al posto in cui sono pubblicati, per comunicare autorevolezza, agevolare trasparenza e creare fiducia negli utenti;
+            
+            6. **data di ultimo aggiornamento**.
+              
+
+        
+
 
 
