@@ -222,7 +222,7 @@ components:
           text: |
             I colori facilitano la lettura di una visualizzazione dati e aiutano a mettere in evidenza le informazioni più importanti.
 
-            
+            Partendo dai [colori del design system](/design-system/fondamenti/colori/), combinali nelle diverse palette adatte alla visualizzazione dei dati e verifica che ci sia sempre il contrasto minimo per poter distinguere facilmente tutti gli elementi dei grafici.
 
             #### Palette sequenziale (quantitativa)
             
@@ -243,14 +243,30 @@ components:
             ![Un esempio di palette categorica](/images/design-system/fondamenti/colors-usage-system-wrong.png "Un esempio di palette categorica")
             
 
-
+        - name: TextImageCta
+          title: Tipografia
+          noSpace: true
+          headingLevel: 3
+          text: |
+              Usa font leggibili e della giusta dimensione, definisci una gerarchia chiara tra gli elementi testuali e assicurati che abbiano sempre un contrasto adeguato rispetto allo sfondo. Mantieni coerenza nella formattazione dei dati per facilitare il confronto.
+          ctas:
+          - label: Approfondisci nel fondamento Tipografia #C
+            url: "/design-system/fondamenti/tipografia/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
 
         #3
         - name: TextImageCta
-          title: "Tipografia"
+          title: "Elementi costitutivi"
           noSpace: false
           text: |
-            ![Un esempio microcopy per un messaggio di errore](/images/design-system/fondamenti/microtesti-errore.png "Un esempio microcopy per un messaggio di errore")
+            ![Elementi costitutivi di un grafico](/images/design-system/fondamenti/microtesti-errore.png "Elementi costitutivi di un grafico")
             
             Assicurati che siano presenti gli elementi necessari affinchè un grafico sia leggibile, efficace e accessibile:
 
@@ -272,18 +288,18 @@ components:
           noSpace: false
           text: |
 
-            1.  Non usare il colore come unica modalità per veicolare messaggi significativi. Usa forme diverse o pattern, mantenendoli puliti e semplici, ma non dare per scontato che tutti capiranno o riconosceranno cosa significano senza alcuna spiegazione. 
+            1. Non usare il colore come unica modalità per veicolare messaggi significativi. Usa forme diverse o pattern, mantenendoli puliti e semplici, ma non dare per scontato che tutti capiranno o riconosceranno cosa significano senza alcuna spiegazione. 
 
-            2.  Rispetta il contrasto minimo: scegli palette colori che siano inclusive e che garantiscano il rapporto minimo di contrasto 3:1 per elementi dell’interfaccia; 4.5:1 nel caso dei testi. 
+            2. Rispetta il contrasto minimo: scegli palette colori che siano inclusive e che garantiscano il rapporto minimo di contrasto 3:1 per elementi dell’interfaccia; 4.5:1 nel caso dei testi. 
 
-            3.  Includi la legenda nel grafico se possibile, etichettando direttamente i data point. Gli utenti che non riescono a distinguere determinati colori potranno comunque interpretare i dati. 
+            3. Includi la legenda nel grafico se possibile, etichettando direttamente i data point. Gli utenti che non riescono a distinguere determinati colori potranno comunque interpretare i dati. 
 
-            5.  Sollecita uno sviluppo accessibile lato front end e pensa ad alternative di accesso ai dati by default (ad esempio tabelle, alt-text descrittivi dei punti focali e della storia). 
+            5. Sollecita uno sviluppo accessibile lato front end e pensa ad alternative di accesso ai dati by default (ad esempio tabelle, alt-text descrittivi dei punti focali e della storia). 
 
-            4.  Evita informazioni che appaiono solo all'hover del mouse: è spesso difficile o impossibile da rendere leggibile da tecnologia assistiva, oltre a non essere una funzionalità disponibile su mobile. Cerca invece di rendere l’informazione visibile. 
+            4. Evita informazioni che appaiono solo all'hover del mouse: è spesso difficile o impossibile da rendere leggibile da tecnologia assistiva, oltre a non essere una funzionalità disponibile su mobile. Cerca invece di rendere l’informazione visibile. 
 
-            6.  Progetta aree di navigazione coerenti tra le diverse visualizzazioni, per rendere più facile la lettura dei contenuti (ad esempio mantenendo la stessa posizione di filtri, menu, o selettori). 
+            6. Progetta aree di navigazione coerenti tra le diverse visualizzazioni, per rendere più facile la lettura dei contenuti (ad esempio mantenendo la stessa posizione di filtri, menu, o selettori). 
 
-            7.  Supporta il grafico con una breve descrizione del messaggio generale per dare un contesto, sia attraverso Titolo e sottotitolo (visibili) che alt-text (invisibile) 
+            7. Supporta il grafico con una breve descrizione del messaggio generale per dare un contesto, sia attraverso Titolo e sottotitolo (visibili) che alt-text (invisibile) 
 
 
