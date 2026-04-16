@@ -231,17 +231,17 @@ components:
           title: "Colori"
           noSpace: false
           text: |
-            I colori facilitano la lettura di una visualizzazione dati e aiutano a mettere in evidenza le informazioni più importanti. Partendo dai [colori del design system](/design-system/fondamenti/colori/), combinali nelle diverse palette adatte alla visualizzazione dei dati e verifica che ci sia sempre il contrasto minimo per poter distinguere facilmente tutti gli elementi dei grafici.
+            I colori facilitano la lettura di una visualizzazione dati e aiutano a mettere in evidenza le informazioni più importanti. Partendo dai [colori del design system](/design-system/fondamenti/colori/), combinali in diverse palette adatte alla visualizzazione dei dati e verifica che ci sia sempre il contrasto minimo per poter distinguere facilmente elementi grafici e testuali.
 
             #### Palette sequenziale (quantitativa)
             
-            Le palette sequenziali sono utili in presenza di valori numerici per esprimere quantità ordinate o meno.
+            Le palette sequenziali sono utili per rappresentare valori numerici in ordine crescente o decrescente.
 
             ##### Palette monocromatica
 
             ![Un esempio di palette sequenziale monocromatica](/images/design-system/fondamenti/colors-usage-good.png "Un esempio di palette sequenziale monocromatica")
             
-            Usa una **palette monocromatica** per evidenziare la distribuzione di valori all’interno del dataset.
+            Usa una **palette monocromatica** per mostrare la distribuzione di valori all’interno di un dataset ed evidenziarne gli estremi.
             
             ##### Palette divergente
 
@@ -253,7 +253,7 @@ components:
 
             ![Un esempio di palette categorica](/images/design-system/fondamenti/colors-usage-system-wrong.png "Un esempio di palette categorica")
             
-            Le palette categoriche sono utili per distinguere elementi che non hanno relazione di senso tra loro, ad esempio delle categorie. Per massimizzare la leggibilità e l’accessibilità dei colori è importante che l’ordine dei colori sia usato per massimizzare l’accessibilità.
+            Le **palette categoriche** sono utili per rappresentare dati non numerici che hanno una relazione di senso tra loro. Associa colori diversi ad ogni categoria di dato in modo da distinguere chiaramente gli elementi del grafico e facilitarne la lettura.
             
             
 
@@ -262,7 +262,7 @@ components:
           noSpace: true
           headingLevel: 3
           text: |
-              Usa font leggibili e della giusta dimensione, definisci una gerarchia chiara tra gli elementi testuali e assicurati che abbiano sempre un contrasto adeguato rispetto allo sfondo (4.5:1). Mantieni coerenza nella formattazione dei dati per facilitare il confronto.
+              Usa font leggibili e della giusta dimensione, definisci una gerarchia chiara tra gli elementi testuali e assicurati che abbiano sempre un contrasto adeguato rispetto allo sfondo (4.5:1). Mantieni una struttura visiva chiara e coerenza tra gli stili tipografici.
           ctas:
           - label: Approfondisci nel fondamento Tipografia #C
             url: "/design-system/fondamenti/tipografia/" #M
@@ -285,15 +285,15 @@ components:
 
             - Accompagna la visualizzazione con una **breve descrizione del messaggio principale** per fornire contesto, usando sia i testi visibili (titolo e sottotitolo) che i testi alternativi nascosti (alt text).
             
-            - **Non usare colore e forme come unica modalità per veicolare messaggi significativi**, ma fornisci sempre delle alternative testuali.
+            - **Non usare il colore come unica modalità per veicolare messaggi significativi**, ma combinalo con altre variabili visive (forma, tinta, tono, texture e orientamento).
             
             - Rispetta il **contrasto minimo**: 3:1 per gli elementi dell’interfaccia e 4.5:1 per i testi. 
 
-            - **Includi sempre la legenda nella visualizzazione**. In questo modo, anche chi non distingue i colori può interpretare correttamente le informazioni.
+            - Quando possibile, aggiungi le etichette della legenda direttamente sugli elementi del grafico.
             
             - Prevedi uno **sviluppo accessibile lato front-end** e **offri alternative per accedere ai dati**, come tabelle o descrizioni testuali dei contenuti principali. 
 
             - **Evita di mostrare informazioni solo al passaggio del mouse (hover)**: non sono accessibili alle tecnologie assistive e su dispositivi mobili.
             
-            - Progetta **interazioni coerenti tra le diverse visualizzazioni**, ad esempio mantenendo la stessa posizione di filtri, menu, o selettori.
+            - Progetta **esperienze coerenti tra le diverse visualizzazioni**, ad esempio mantenendo la stessa posizione di filtri, menu o selettori.
 
