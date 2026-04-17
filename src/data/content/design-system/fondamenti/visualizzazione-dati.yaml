@@ -1,0 +1,299 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: design-system-index
+
+seo:
+  name: Visualizzazione dati
+  description: "Le visualizzazioni dati permettono di rappresentare informazioni complesse in modo chiaro e comprensibile. Scopri come progettare visualizzazioni efficaci e accessibili, curando struttura, colori e tipografia."
+  canonical: null
+  pathname: /design-system/fondamenti/visualizzazione-dati/
+
+# navPreFooter:
+#   navOtherPrevNext:
+#     next:
+#       label: Next page
+#       url: "#"
+#       blank: false
+#       specular: true
+#       icon:
+#         icon: "sprites.svg#it-arrow-right"
+#         size: "sm"
+#         align: "middle"
+#         color: "primary"
+#         hidden: true
+#         addonClasses: flex-shrink-0 ms-3
+
+components:
+  hero:
+    background: null
+    title: Visualizzazione dati
+    column: true
+    subtitle: "Le visualizzazioni dati permettono di rappresentare informazioni complesse in modo chiaro e comprensibile. Scopri come progettare visualizzazioni efficaci e accessibili, curando struttura, colori e tipografia."
+    tag:
+      label: Fondamenti #C
+      addonClasses: mt-3 text-uppercase
+   # pretext:
+   #   icon:
+   #     icon: sprites.svg#it-info-circle
+   #     size: sm
+   #   text: In breve
+   # text: |
+   #   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque maximus feugiat ante sit amet semper. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+
+     # KANGAROO: METADATA
+    kangaroo:
+      id: kangarooHero
+      noPadding: true
+      titleSr: Metadati e link per approfondire
+      navposition:
+        items:
+          - title: Ti trovi in
+            tooltip: "La sezione di Designers Italia cui appartiene questa pagina"
+            icon:
+              icon: "sprites.svg#it-folder"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Fondamenti #C
+            url: "../../" #M
+      otherInfo:
+        items:
+          - title: Rispettando
+            tooltip: "Norme e riferimenti che i contenuti di questa pagina ti aiutano a rispettare"
+            icon:
+              icon: "sprites.svg#it-pa"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Linee guida di design #C
+            url: "/normativa/linee-guida-di-design" #M
+      personalInfo:
+         items: #C
+          - title: Sei
+            tooltip: "Se non ti riconosci in questi profili non preoccuparti: potrai scoprire informazioni utili per saperne di più. In alternativa, naviga la sezione superiore per approfondire il contesto"
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Designer, Developer, Qui per curiosità #C
+          - title: Vuoi
+            tooltip: "Obiettivi di progettazione per cui sono utili i contenuti di questa pagina"
+            icon:
+              icon: "sprites.svg#it-flag"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: Progettare l’interazione dell’utente con il servizio #C
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Accessibilità, Progettazione interfaccia, Contenuti e linguaggio, Cultura progettuale, Visualizzazione dati]
+
+  sectionsEditorial:
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      title: Semplifica la comprensione e l’accesso ai dati della PA
+      #text: Prima di essere “istituzione”, la PA è fatta di persone e parla alle persone con l’obiettivo di essere vicina, semplice e utile
+      background: null
+      components:
+        - name: TextImageCta
+          noSpace: true
+          # title:
+          text: |
+            La visualizzazione dati, in inglese *data visualization*, è la **rappresentazione di informazioni quantitative e qualitative** attraverso l’uso di punti, linee, coordinate, numeri, simboli, parole e colori. Ne sono esempi i grafici e i sistemi di grafici.
+
+            Rappresentare i dati con forme e colori, invece che soltanto in tabelle, ti permette di:
+            - rendere le informazioni più comprensibili e usabili;
+            - catturare l’attenzione dell’utente;
+            - stabilire un rapporto di fiducia, attraverso la trasparenza. 
+
+            Le amministrazioni, infatti, devono rendere i dati accessibili e riutilizzabili attraverso tecnologie digitali, come previsto dall'[articolo 50 del Codice dell’amministrazione digitale](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_V-sezione_I-articolo_50.html).
+
+    - full: true
+      noSpace: false
+      paddingLeft: true
+      background: null
+      components:
+
+        - name: TextImageCta
+          title: Come progettare una visualizzazione dati
+          headingLevel: 2
+          #text: |
+            
+        #1
+        - name: TextImageCta
+          title: Considera pubblico e obiettivo
+          headingLevel: 3
+          text: |
+            Per progettare una visualizzazione efficace, considera il pubblico a cui ti rivolgi e l’obiettivo che vuoi raggiungere. Questi elementi ti aiutano a scegliere la tipologia di visualizzazione e il linguaggio più adatti. 
+
+        - name: Table
+          #title: Esempi
+          responsive: table-responsive-md
+          addonClasses:
+          head:
+            - text: Pubblico
+            - text: Obiettivo
+            - text: Tipologia di visualizzazione
+            - text: Linguaggio
+          rows:
+            - cols:
+              - text: Generalista (poca familiarità con l’argomento trattato e la visualizzazione dati) 
+              - text: Informare, Educare
+              - text: Visualizzazioni singole guidate con grafici semplici
+              - text: Linguaggio semplice senza tecnicismi 
+            - cols:
+              - text: Esperto (familiarità con l’argomento trattato e la visualizzazione dati)
+              - text: Analizzare, Monitorare
+              - text: Visualizzazioni complesse con più viste o dashboard
+              - text: Puoi usare tecnicismi, spiegandoli quando necessario
+
+        #2
+        - name: TextImageCta
+          title: "Scegli il modello visivo più adatto "
+          noSpace: false
+          text: |
+            Ogni modello visivo permette di mettere in evidenza aspetti diversi dei dati, come differenze, andamenti nel tempo o parti di un totale. Scegli il grafico in base a ciò che vuoi far emergere: lo stesso modello può essere usato per scopi diversi.
+
+            #### Comparazione
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/community/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi-1400x900.png "Un esempio microcopy per un messaggio di errore")
+            
+            Per evidenziare le differenze tra due o più valori, puoi usare i **grafici a barre**, i **grafici a barre raggruppate**, i **grafici radar** e i **grafici a bolle**.
+
+            #### Evoluzione nel tempo
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/community/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi-1400x900.png "Un esempio microcopy per un messaggio di errore")
+            
+            Per mostrare come una serie di valori cambia in un periodo di tempo predefinito, puoi usare i **grafici a linee**, i **grafici ad aree** e gli **istogrammi**.
+
+            #### Suddivisione
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/community/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi-1400x900.png "Un esempio microcopy per un messaggio di errore")
+            
+            Per mostrare una parte di un totale, puoi usare i **grafici a torta**, i **grafici bullet**, i **grafici ad aree impilate** e le **mappe ad albero** (treemap).
+
+            #### Distribuzione
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/community/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi-1400x900.png "Un esempio microcopy per un messaggio di errore")
+            
+            Per mostrare come i valori si distribuiscono in categorie, puoi usare ...
+
+            #### Correlazione
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/community/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi-1400x900.png "Un esempio microcopy per un messaggio di errore")
+            
+            Per evidenziare rapporti numerici diretti tra due o più indicatori, puoi usare i **grafici a dispersione** (scatterplot) e le **mappe di calore** (heatmap).
+
+            #### Relazione
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/community/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi-1400x900.png "Un esempio microcopy per un messaggio di errore")
+            
+            Per mostrare legami di senso tra due o più entità, puoi usare i **diagrammi alluviali** (alluvial diagram), i **diagrammi ad albero** (tree diagram), i **diagrammi di rete** (network) e le **coordinate parallele** (parallel coordinates).
+
+            #### Posizione nello spazio
+            
+            ![Un esempio microcopy per un messaggio di errore](/images/community/20240219-progettare-servizi-pubblici-di-qualita-con-il-nuovo-kit-processi-e-servizi-1400x900.png "Un esempio microcopy per un messaggio di errore")
+            
+            Per mostrare i dati in relazione ad aree geografiche, puoi usare le **mappe coropletiche** (choropleth map), i **simboli proporzionali** (proportional symbols) e le **linee di connessione** (connecting lines).
+
+        #3
+        - name: TextImageCta
+          title: "Includi gli elementi costitutivi"
+          noSpace: false
+          text: |
+            ![Elementi costitutivi di un grafico](/images/design-system/fondamenti/microtesti-errore.png "Elementi costitutivi di un grafico")
+            
+            Assicurati che siano presenti gli elementi necessari affinchè un grafico sia leggibile, efficace e accessibile:
+
+            1. **titolo**, un testo conciso che descriva l'evidenza principale che trai dai dati;
+            
+            2. **sottotitolo**, utile a dettagliare il contesto di analisi dei dati;
+            
+            3. **legenda**, spiega l'associazione tra il dato e le variabili visive (colore, forma, dimensione, orientamento, texture). Quando possibile, integrala nel grafico (ad esempio se interattivo o con delle etichette);
+            
+            4. **assi e griglia**, con relative etichette, per aiutare gli utenti a comprendere le proporzioni, gli indicatori coinvolti e l’unità di misura dei dati;
+
+            5. **fonte dei dati**, possibilmente con link al posto in cui sono pubblicati, per comunicare autorevolezza, agevolare trasparenza e creare fiducia negli utenti;
+            
+            6. **data di ultimo aggiornamento**, per aiutare gli utenti a valutare attualità e affidabilità dei dati.
+              
+        #3
+        - name: TextImageCta
+          title: "Facilita la lettura con l'uso dei colori"
+          noSpace: false
+          text: |
+            I colori aiutano a distinguere gli elementi di una una visualizzazione dati e a mettere in evidenza le informazioni più importanti. Partendo dai [colori del design system](/design-system/fondamenti/colori/), combinali in diverse palette adatte alla visualizzazione dati e in linea con l'[identità](/design-system/fondamenti/identita/) del tuo sito o servizio. Verifica che ci sia sempre il contrasto minimo per poter distinguere facilmente elementi grafici e testuali.
+
+            #### Palette sequenziale (quantitativa)
+            
+            Le palette sequenziali sono utili per rappresentare valori numerici in ordine crescente o decrescente.
+
+            ##### Palette monocromatica
+
+            ![Un esempio di palette sequenziale monocromatica](/images/design-system/fondamenti/colors-usage-good.png "Un esempio di palette sequenziale monocromatica")
+            
+            Usa una **palette monocromatica** per mostrare la distribuzione di valori all’interno di un dataset ed evidenziarne gli estremi.
+            
+            ##### Palette divergente
+
+            ![Un esempio di palette sequenziale divergente](/images/design-system/fondamenti/colors-usage-accent-wrong.png "Un esempio di palette sequenziale divergente")
+            
+            Usa una **palette divergente** per enfatizzare valori sopra o sotto lo zero oppure variazioni rispetto ad una soglia/obiettivo.
+
+            #### Palette categorica (qualitativa)
+
+            ![Un esempio di palette categorica](/images/design-system/fondamenti/colors-usage-system-wrong.png "Un esempio di palette categorica")
+            
+            Le **palette categoriche** sono utili per rappresentare dati non numerici che hanno una relazione di senso tra loro. Associa colori diversi ad ogni categoria di dato in modo da distinguere chiaramente gli elementi del grafico e facilitarne la lettura.
+            
+            
+
+        - name: TextImageCta
+          title: Mantieni coerenza tra gli stili tipografici
+          noSpace: true
+          headingLevel: 3
+          text: |
+              Usa font leggibili e di dimensioni adeguate, definisci una gerarchia chiara tra gli elementi testuali e assicurati che abbiano sempre un contrasto adeguato rispetto allo sfondo (almeno 4.5:1).
+          ctas:
+          - label: Approfondisci nel fondamento Tipografia #C
+            url: "/design-system/fondamenti/tipografia/" #M
+            blank: false #M #C true if new tab for external links
+            icon:
+              icon: sprites.svg#it-arrow-right #C #I #it-arrow-right | it-external-link for external links
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+
+        
+        #3
+        - name: TextImageCta
+          title: "Rispetta l'accessibilità"
+          noSpace: false
+          text: |
+
+            - Accompagna la visualizzazione con una **breve descrizione del messaggio principale** per fornire contesto, usando sia i testi visibili (titolo e sottotitolo) che i testi alternativi nascosti (alt text).
+            
+            - **Non usare il colore come unica modalità per veicolare messaggi significativi**, ma combinalo con altre variabili visive (forma, tinta, tono, texture e orientamento).
+            
+            - Rispetta il **contrasto minimo**: 3:1 per gli elementi dell’interfaccia e 4.5:1 per i testi. 
+
+            - Quando possibile, aggiungi le **etichette della legenda direttamente sugli elementi del grafico**.
+            
+            - Prevedi uno **sviluppo accessibile lato front-end** e **offri alternative per accedere ai dati**, come tabelle o descrizioni testuali dei contenuti principali. 
+
+            - **Evita di mostrare informazioni solo al passaggio del mouse (hover)**: non sono accessibili alle tecnologie assistive e su dispositivi mobili.
+            
+            - Progetta **esperienze coerenti tra le diverse visualizzazioni**, ad esempio mantenendo la stessa posizione di filtri, menu o selettori.
+
