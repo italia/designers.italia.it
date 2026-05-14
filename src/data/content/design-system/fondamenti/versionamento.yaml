@@ -164,7 +164,7 @@ components:
               - text: Documentazione (questo sito)
                 scope: row
               - tag:
-                  label: "1.10.1" #AUTO
+                  label: "1.12.0" #AUTO
                   addonClasses: bg-dark ## Pronto > bg-success | In revisione > bg-warning | Da rivedere > bg-danger
               - simpleCta :
                   label: A seguire
@@ -220,6 +220,36 @@ components:
                     icon: sprites.svg#it-github
                     size: sm
 
+            - cols:
+              - text: Bootstrap Italia v3 (in sviluppo - beta)
+                scope: row
+              - tag:
+                  label: "3.0.0-beta"
+                  addonClasses: bg-dark
+              - simpleCta :
+                  label: "Schede rilascio"
+                  blank: true
+                  url: https://github.com/italia/bootstrap-italia/releases?q=3.0.0&expanded=true
+                  screenReaderText: " Bootstrap Italia 3 (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-github
+                    size: sm
+
+            - cols:
+              - text: Dev Kit Italia (in sviluppo - alpha)
+                scope: row
+              - tag:
+                  label: "1.0.0-alpha"
+                  addonClasses: bg-dark
+              - simpleCta :
+                  label: "Schede rilascio"
+                  blank: true
+                  url: https://github.com/italia/dev-kit-italia/releases
+                  screenReaderText: " Dev Kit Italia (si apre in una nuova finestra)"
+                  icon:
+                    icon: sprites.svg#it-github
+                    size: sm
+
     - full: true
       noSpace: false
       paddingLeft: true
@@ -230,6 +260,16 @@ components:
       components:
         - name: TextImageCta
           text: |
+            ### v1.12.0
+            15 maggio 2026
+            - **[Come iniziare](/design-system/come-iniziare/)**
+              - Aggiornati contenuti scheda [Per sviluppatori](/design-system/come-iniziare/per-sviluppatori/) con annuncio Bootstrap Italia v3 in beta e Dev Kit Italia in alpha, aggiornamento sezione design token.
+            - **[Come contribuire](/design-system/come-contribuire/)**
+              - Aggiornati contenuti schede: [Modello di contribuzione](/design-system/come-contribuire/modello-di-contribuzione/) e [Per lo sviluppo](/design-system/come-contribuire/per-lo-sviluppo/): aggiunta Bootstrap Italia 3 e Dev Kit Italia in tabella risorse e nei percorsi di contribuzione.
+            - Risorse
+              - Aggiunta **Bootstrap Italia v3** in fase beta ([Changelog v3](https://github.com/italia/bootstrap-italia/releases?q=3.0.0&expanded=true))
+              - Aggiunto **Dev Kit Italia** in fase alpha ([Changelog Dev Kit Italia](https://github.com/italia/dev-kit-italia/releases))
+
             ### v1.11.0
             24 aprile 2026 
             - Risorse
