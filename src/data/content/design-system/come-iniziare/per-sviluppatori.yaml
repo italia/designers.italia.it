@@ -41,7 +41,7 @@ components:
         size: sm
       text: In breve
     text: |
-      Scopri gli strumenti messi a disposizione per gli sviluppatori, i vari framework, come utilizzarli e come partecipare attivamente: dalle ultime versioni di Bootstrap Italia e gli approfondimenti sui temi di accessibilità, ai design token e i processi per contribuire alla cura e all'evoluzione delle risorse 'community-driven' per React e Angular.
+      Scopri gli strumenti messi a disposizione per gli sviluppatori, i vari framework, come utilizzarli e come partecipare attivamente: dalle ultime versioni di Bootstrap Italia e gli approfondimenti sui temi di accessibilità, ai design token e i processi per contribuire alla cura e all'evoluzione dell'ecosistema di risorse per sviluppatori.
 
      # KANGAROO: METADATA
     kangaroo:
@@ -147,10 +147,10 @@ components:
               addonClasses: ms-2
 
         - name: TextImageCta
-          title: Altri framework community-driven
+          title: Altri framework
           noSpace: true
           text: |
-            I framework React e Angular Kit che implementano i componenti e gli stili di Bootstrap Italia.
+            I framework **React Kit** e **Angular Kit** implementano i componenti e gli stili di Bootstrap Italia, nati come progetti community-driven.
           ctas:
           - label: React Kit #C
             url: https://github.com/italia/design-react-kit #M
@@ -175,6 +175,86 @@ components:
               size: sm
               addonClasses: ms-2
 
+        - name: TextImageCta
+          title: Il futuro di Bootstrap Italia
+          noSpace: true
+          text: |
+            **Bootstrap Italia 3 è in fase beta**: introduce design token come CSS custom properties, architettura Sass modulare compatibile con Dart Sass v3.0 e supporto esteso alla tipografia del design system. Visita il repository per seguire i lavori o sperimentare le novità, esplorare la documentazione, aprire segnalazioni e contribuire allo sviluppo.
+          ctas:
+          - label: Vai al repository dedicato (branch 3.x) #C
+            screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/bootstrap-italia/tree/3.x #M
+            blank: true
+            icon:
+              icon: sprites.svg#it-github
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          # - label: Documentazione di sviluppo #C
+          #   screenReaderText: " Bootstrap Italia 3 beta (si apre in una nuova finestra)"
+          #   url: https://bootstrap-italia-beta.italia.it/ #M segnaposto
+          #   blank: true
+          #   icon:
+          #     icon: sprites.svg#it-external-link
+          #     color: primary
+          #     align: middle
+          #     hidden: true
+          #     size: sm
+          #     addonClasses: ms-2
+          - label: Changelog v3 #C
+            screenReaderText: " Bootstrap Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/bootstrap-italia/releases?q=3.0.0&expanded=true #M
+            blank: true
+            icon:
+              icon: sprites.svg#it-github
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
+        - name: TextImageCta
+          title: 'Dev Kit Italia: verso i web component nativi'
+          noSpace: true
+          text: |
+            **Dev Kit Italia è in fase alpha:** un set di web component basati su Lit e costruiti su Bootstrap Italia 3, utilizzabili in qualsiasi ambiente di sviluppo. **Non è ancora consigliato per la produzione**. Visita il repository, esplora la documentazione Storybook e apri una segnalazione per partecipare attivamente allo sviluppo.
+          ctas:
+          - label: Vai al repository dedicato #C
+            screenReaderText: " Dev Kit Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/dev-kit-italia
+            blank: true
+            icon:
+              icon: sprites.svg#it-github
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Documentazione Storybook alpha #C
+            screenReaderText: " Dev Kit Italia (si apre in una nuova finestra)"
+            url: https://italia.github.io/dev-kit-italia/
+            blank: true
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+          - label: Changelog #C
+            screenReaderText: " Dev Kit Italia (si apre in una nuova finestra)"
+            url: https://github.com/italia/dev-kit-italia/releases
+            blank: true
+            icon:
+              icon: sprites.svg#it-github
+              color: primary
+              align: middle
+              hidden: true
+              size: sm
+              addonClasses: ms-2
+
     - full: true
       noSpace: true
       paddingLeft: true
@@ -187,7 +267,7 @@ components:
           title: Modello di contribuzione
           noSpace: true
           text: |
-            Se ti occupi di sviluppo sofware puoi aprire segnalazioni e inviare i tuoi contributi dedicati al kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali Bootstrap Italia e al suo ecosistema di risorse.
+            Se ti occupi di sviluppo software puoi aprire segnalazioni e inviare i tuoi contributi dedicati al kit per sviluppare interfacce ed esperienze di siti e servizi pubblici digitali Bootstrap Italia e al suo ecosistema di risorse.
           ctas:
           - label: Scopri come contribuire Per lo sviluppo #C
             url: "/design-system/come-contribuire/per-lo-sviluppo/" #M
@@ -242,7 +322,7 @@ components:
           headingLevel: 4
           noSpace: true
           text: |
-            Nei prossimi mesi inizieranno i lavori per integrare i design token di UI Kit Italia in Bootstrap Italia e nelle altre risorse di sviluppo. Puoi già usarli nei tuoi progetti o seguire i lavori nel repository dedicato al progetto Design Tokens Italia.
+            I lavori per integrare completamente i design token di UI Kit Italia in Bootstrap Italia sono già in corso nella versione 3, attualmente in beta. Puoi già usarli nei tuoi progetti o seguire i lavori nel repository dedicato al progetto Design Tokens Italia.
           ctas:
           - label: Vai al repository dedicato #C
             screenReaderText: " Design Tokens Italia (si apre in una nuova finestra)"
