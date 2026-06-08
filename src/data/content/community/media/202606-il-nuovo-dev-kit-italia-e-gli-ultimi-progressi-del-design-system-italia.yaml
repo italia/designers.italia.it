@@ -1,0 +1,90 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: media
+
+seo:
+  name: "Il nuovo Dev Kit Italia e gli ultimi progressi del design system .italia" 
+  description: "Scopri come usare il nuovo kit basato su web component e le novità della versione 3.0 di Bootstrap Italia."
+  image: https://designers.italia.it/images/community/media-thumbnails/202606-il-nuovo-dev-kit-italia-e-gli-ultimi-progressi-del-design-system-italia.jpg
+  canonical: null
+  pathname: /community/media/202606-il-nuovo-dev-kit-italia-e-gli-ultimi-progressi-del-design-system-italia/
+  
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Media
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Il nuovo Dev Kit Italia e gli ultimi progressi del design system .italia"
+    subtitle: "Scopri come usare il nuovo kit basato su web component e le novità della versione 3.0 di Bootstrap Italia"
+    tag:
+      label: Video - Community lab
+      
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Community lab, Design system, Sviluppo interfaccia, Open source]
+
+  sectionsEditorial:
+
+    # FORMATO VIDEO DEFAULT
+    - fullColumn: false # fullwidth vs normal
+      full: true # large column vs normal
+      noSpace: false 
+      centered: true
+      background: medium
+      components:
+        - name: MediaPlayer
+          lang: it
+          url: https://www.youtube.com/watch?v=dM5kb9pdVdU
+          poster: /images/community/media-thumbnails/202606-il-nuovo-dev-kit-italia-e-gli-ultimi-progressi-del-design-system-italia.jpg
+          subtitles: /files/community/subtitles/202606-il-nuovo-dev-kit-italia-e-gli-ultimi-progressi-del-design-system-italia.vtt
+          trascriptionHeadingLevel: 2
+          trascriptionLabel: "Trascrizione"
+          trascriptionLabelEN: "Transcription"
+          trascription: |
+            È disponibile la sola trascrizione generata automaticamente nella [scheda del video su YouTube](https://www.youtube.com/watch?v=SvSJOfogGdI)            
+
+    - noSpace: false 
+      centered: true
+      components:
+        - name: TextImageCta
+          # title: 
+          text: |
+            Durante l'incontro abbiamo scoperto ed esplorato in anteprima prima del rilascio ufficiale il nuovo [Dev Kit Italia](/design-system/come-iniziare/per-sviluppatori/), il nuovo strumento trasversale e versatile, per sviluppare interfacce digitali usabili e accessibili. Il kit, basato su tecnologia Web Component, è indipendente dai framework di sviluppo ed è stato progettato per adattarsi alle preferenze degli sviluppatori e per durare nel tempo. Inoltre, sono stati condivisi gli importanti aggiornamenti della versione 3 di Bootstrap Italia, con uno sguardo ai più recenti sviluppi del [design system .italia](/design-system/) per la progettazione e lo sviluppo di servizi pubblici digitali.
+
+          ctasVertical: true
+          ctas:
+          - label: Approfondisci come contribuire allo sviluppo
+            url: /design-system/come-contribuire/per-lo-sviluppo/
+            blank: false
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+              
