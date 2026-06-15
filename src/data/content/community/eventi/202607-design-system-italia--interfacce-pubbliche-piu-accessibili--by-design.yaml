@@ -1,0 +1,115 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 
+  archive: eventi
+
+seo:
+  name: "Design system .italia: interfacce pubbliche più accessibili, by design"
+  description: "Webinar conclusivo del ciclo GARR “Accessibilità digitale: da obbligo a opportunità” con Designers Italia e un caso d'uso dalla Scuola Normale Superiore."
+  image: https://designers.italia.it/images/community/eventi/2026/202607-design-system-italia--interfacce-pubbliche-piu-accessibili--by-design.png #I #XXX
+  canonical: null
+  pathname: /community/eventi/202607-design-system-italia--interfacce-pubbliche-piu-accessibili--by-design
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Eventi
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Design system .italia: interfacce pubbliche più accessibili, by design"
+    subtitle: "Webinar conclusivo del ciclo GARR “Accessibilità digitale: da obbligo a opportunità” con Designers Italia e un caso d'uso dalla Scuola Normale Superiore"
+    tag:
+        label: Webinar
+        
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Accessibilità, Design system, Open source, Formazione]
+      eventInfo:
+         items:
+          - title: Luogo
+            icon:
+              icon: "sprites.svg#it-map-marker"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label:  Online, webinar GARR
+            # url:
+            # blank: true
+            # screenReaderText: " (si apre in una nuova finestra)"
+            # text: |
+            
+          - title: Partecipazione
+            icon:
+              icon: "sprites.svg#it-user"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "Gratuita con iscrizione obbligatoria" #C
+            url: "#soon"
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)"
+          - title: Data e orario
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: "1 luglio 2026, 14.30–16.00"
+
+  # imageIcons:
+  #   image: /images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.png
+  #   alt: Descrizione immagine grande
+
+  sectionsEditorial :
+    - menu: false
+      centered: true
+      id: corpoEvento
+      components:
+
+        # - name: TextImageCta
+        #   text: |
+        #     ![What are the lagal and technical barriers to co-delivery?](/images/community/articoli-di-approfondimento/eventi/2022/INTERLINK-news-quinta-assemblea-generale-DEF.jpg)
+
+
+        - name: TextImageCta
+          text: |
+            Designers Italia presenterà l'evoluzione del design system .italia, il suo potenziale nel **migliorare l'accessibilità di siti e servizi pubblici digitali**, e la visione di un patrimonio di **risorse open source** costruite grazie al contributo della community nel prossimo webinar dal titolo “Design system .italia: interfacce pubbliche più accessibili, by design”. A seguire, la **Scuola Normale Superiore** racconterà un esempio concreto di **adozione del design system** nella propria realtà istituzionale. 
+
+            **Ultimo appuntamento del ciclo GARR "Accessibilità digitale: da obbligo a opportunità"**, il webinar porta in primo piano Design system .italia e come l'accessibilità viene integrata by design negli strumenti, in modo che chi li adotta parta già by default da una base solida. 
+
+            GARR è la rete nazionale dedicata alla **comunità dell'istruzione, della ricerca e della cultura**. Tra i suoi obiettivi c’è quello di sviluppare servizi innovativi per le attività quotidiane di docenti, ricercatori e studenti. Il programma del ciclo di webinar ha trattato temi come l’accessibilità dei contenuti web, dei documenti PDF e dei contenuti multimediali, il quadro normativo italiano ed europeo, le WCAG, le WAI-ARIA e l’Universal Design for Learning. 
+
+          ctas:
+          - label: Iscriviti all'evento
+            url: #soon
+            blank: true
+            screenReaderText: " (si apre in una nuova finestra)" #C
+            icon:
+              icon: sprites.svg#it-external-link
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
