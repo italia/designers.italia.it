@@ -1,0 +1,124 @@
+# ————————————————————————————————————————————
+# CREATEPAGE GATSBY
+# ————————————————————————————————————————————
+metadata:
+  template:
+    name: level3 # article?
+  archive: notizie
+
+seo:
+  name: "Le nuove raccomandazioni di design per l'interoperabilità"
+  description: "Come progettare interfacce utente che rispettano il principio once only."
+  image:  https://designers.italia.it/images/community/202607-interoperabilita-1920x1080.png #I XXX
+  canonical: null
+  pathname: /community/notizie/202607-le-nuove-raccomandazioni-di-design-per-l-interoperabilita/
+
+kangaroo:
+  navposition:
+    id: kangEnd
+    items:
+      - title: Ti trovi in
+        icon:
+          icon: "sprites.svg#it-folder"
+          size: "sm"
+          align: "middle"
+          color: "secondary"
+        label: Notizie
+        url: "../"
+
+components:
+  hero:
+    background: null
+    centered: true
+    title: "Le nuove raccomandazioni di design per l'interoperabilità"
+    subtitle: "Come progettare interfacce utente che rispettano il principio once only"
+    tag:
+        label: Notizia
+        
+    # pretext:
+    #   icon:
+    #     icon: sprites.svg#it-info-circle
+    #     size: sm
+    #   text: In breve
+    # text: |
+    #   Lorem ipsum
+
+    kangaroo:
+      id: kangarooExample
+      titleSr: Metadati e link per approfondire
+      noPadding: true
+      tagsLabel: Parliamo di
+      color: secondary
+      icon:
+        icon: sprites.svg#it-horn
+        size: sm
+        color: secondary
+      tags: [Esperienza utente, Linee guida, Progettazione interfaccia, Usabilità]
+      personalInfo:
+         items:
+          - title: Tempo di lettura
+            icon:
+              icon: "sprites.svg#it-clock"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 3 minuti
+          - title: Data
+            icon:
+              icon: "sprites.svg#it-calendar"
+              size: "sm"
+              align: "middle"
+              color: "secondary"
+            label: 29 giugno 2026
+
+  imageIcons:
+   image: /images/community/202607-interoperabilita-1920x923.png
+   alt: ""
+   background: null
+
+  sectionsEditorial :     
+
+    - menu: false
+      noSpace: false
+      centered: true
+      id: corpoNotizia
+      components:
+            
+        - name: TextImageCta
+          noSpace: false
+          text: | 
+            Abilitare l’interoperabilità sino ad ora è stata una sfida soprattutto tecnica, affrontata con successo da più di 9000 enti che si sono integrati con la Piattaforma Nazionale Dati, è proprio con l’aumento dei servizi interoperabili, che **il once only diventa anche una sfida di design**. 
+            
+            I cittadini hanno già familiarizzato con alcune forme di precompilazione, come i dati trasmessi da SPID e CIE o il 730 precompilato, ma l’esperienza è frammentata ed eterogenea, diventa quindi sempre più importante stabilire **le buone pratiche da adottare** per progettare interfacce utente di ecosistemi pubblici in cui l’interoperabilità è ormai uno standard diffuso. 
+            
+            ## Raccomandazioni UX per il once only
+
+            Da oggi è disponibile, sulla piattaforma Docs Italia, un nuovo **documento che tratta alcuni aspetti progettuali chiave da affrontare** per far intendere agli utenti il meccanismo di gestione dei loro dati: **il recupero, la rettifica, e la selezione delle informazioni precedentemente fornite alla PA**. 
+            
+            Le Raccomandazioni UX per il once only aiutano a progettare l’esperienza utente di servizi interoperabili, danno **indicazioni puntuali su come gestire gli elementi e il micro-copy** dell’interfaccia durante tutte le fasi della procedura, **con suggerimenti adattabili a ogni tipologia di servizio e di ente**. 
+
+            ## Progettare l'esperienza dei cittadini con l'interoperabilità
+
+            Ci sono alcune azioni fondamentali da svolgere per ‘mettere a terra’ questo tipo di raccomandazioni, dal capire quali sono i servizi impattati e il come, al testare il flusso di interazione con gli utenti finali. 
+            [**L’ultimo articolo di approfondimento di Designers Italia**](https://designers.italia.it/community/#articoli-di-approfondimento), racconta l’esperienza che ha portato a formulare le raccomandazioni e **fornisce indicazioni utili per implementarle correttamente**.
+
+        - name: TextImageCta
+          title: Esplora le raccomandazioni
+          #text: |
+          headingLevel: 2
+          ctasVertical: true
+          ctas:
+          - label: "Vai al documento"
+            url: "https://docs.italia.it/italia/designers-italia/design-ux-cittadini-once-only-docs/it/versione-corrente/index.html"
+            icon:
+              icon: sprites.svg#it-arrow-right
+              color: primary
+              align: middle
+              hidden: true
+              size: sm ms-2
+
+
+
+
+
+            
