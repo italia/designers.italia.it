@@ -9,7 +9,7 @@ const DEST_DIR = path.join("src", "data", "components_json");
 
 async function downloadExamples(context) {
   const href = "https://github.com/italia/bootstrap-italia/archive";
-  const zipFile = "main.zip";
+  const zipFile = "3.x.zip";
 
   const source = `${href}/${zipFile}`;
 
