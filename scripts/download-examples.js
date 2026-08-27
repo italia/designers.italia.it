@@ -27,6 +27,13 @@ async function downloadExamples(context) {
         fs.mkdirSync(path.join(DEST_DIR, context), { recursive: true });
         const zipEntries = zip.getEntries();
         zipEntries.forEach((zipEntry) => {
+          if (zipEntry.entryName.includes('/api/custom_properties.json')) {
+            fs.writeFileSync(
+              path.join(DEST_DIR, context, path.parse(zipEntry.entryName).base),
+              zipEntry.getData().toString("utf8"),
+              "utf-8",
+            );
+          }
           if (zipEntry.entryName.match(/.*\/api\/.*.json/)) {
             const newFolder = path.join(
               DEST_DIR,
