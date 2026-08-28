@@ -38,7 +38,7 @@ function CustomPropsTable({
               <tr>
                 <td><code>{ track['variable-name'] }</code></td>
                 <td>{ track['description'] }</td>
-                <td><code>{ track['value'] }</code></td>
+                <td><p><code>{ track['value'] }</code></p></td>
               </tr>
             ))}
           </tbody>
@@ -49,7 +49,7 @@ function CustomPropsTable({
       <div>
         <h3 className="mb-3">Properties dinamiche {title}</h3>
 
-      <p>Nella colonna <code>"Valori predefiniti"</code> è possibile trovare varianti responsive/tema/stato della property stessa,
+      <p>Nella colonna <code>Valori predefiniti</code> è possibile trovare varianti responsive/tema/stato della property stessa,
         si prega di far riferimento al codice per personalizzare il comportamento.
       </p>
 
@@ -67,7 +67,7 @@ function CustomPropsTable({
               <tr>
                 <td><code>{ track['variable-name'] }</code></td>
                 <td>{ track['description'] }</td>
-                <td><code>{ track['value'] }</code>&nbsp;{track['other_values'].map((v) => <code>{ v }</code>)}</td>
+                <td className="d-flex"><p><code>{ track['value'] }</code></p>&nbsp;{track['other_values'].map((v) => <p><code>{ v }</code></p>)}</td>
               </tr>
             ))}
           </tbody>
