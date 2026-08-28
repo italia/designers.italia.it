@@ -1,3 +1,5 @@
+/* eslint-disable no-continue */
+
 const path = require("path");
 const fs = require("fs");
 const slugify = require("slugify");
@@ -23,7 +25,7 @@ function generateExamples(context) {
   const jsonFiles = searchInDir(SEARCH_DIR, ".json");
   for (const jsonFile of jsonFiles) {
     const parsedJson = JSON.parse(fs.readFileSync(jsonFile, "utf-8"));
-    if (jsonFile.includes('custom_properties.json')) {
+    if (jsonFile.includes("custom_properties.json")) {
       continue; // Skip processing for custom_properties.json
     }
     const componentFolder = path.join(
