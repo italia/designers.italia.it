@@ -3,7 +3,7 @@ const fs = require("fs");
 const slugify = require("slugify");
 const Mustache = require("mustache");
 const { searchInDir } = require("./utils");
-const bsiData = require("../node_modules/bootstrap-italia/package.json");
+const bsiData = require("../static/examples/data.json");
 
 const SEARCH_DIR = path.join("src", "data", "components_json");
 const EXAMPLES_DIR = path.join("static", "examples");
@@ -43,7 +43,7 @@ function generateExamples(context) {
         Mustache.render(HTML_TEMPLATE, {
           code: rewriteSpriteUrl(example.content),
           name: example.name,
-          bsiversion: bsiData.version,
+          bsiversion: bsiData.bsiVersion,
         }),
         "utf-8",
       );

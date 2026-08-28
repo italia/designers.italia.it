@@ -19,8 +19,8 @@ function CustomPropsTable({
     <div className="custom-props-table">
       {title && <h2 className="mb-3">Properties {title}</h2>}
 
-      <p>Il selettore da utilizzare per le sovrascrittura delle property è `{selector}`.</p>
-      <p>La descrizione delle custom properties è in inglese perché risiede nei files `.scss` dei componenti.</p>
+      <p>Il selettore da utilizzare per le sovrascrittura delle property è <code>{selector}</code>.</p>
+      <p>La descrizione delle custom properties è in inglese perché risiede nei files <code>.scss</code> dei componenti.</p>
 
       <h3 className="mb-3">Properties statiche</h3>
 
@@ -49,7 +49,7 @@ function CustomPropsTable({
       <div>
         <h3 className="mb-3">Properties dinamiche {title}</h3>
 
-      <p>Nella colonna `"Valori predefiniti"` è possibile trovare varianti responsive/tema/stato della property stessa,
+      <p>Nella colonna <code>"Valori predefiniti"</code> è possibile trovare varianti responsive/tema/stato della property stessa,
         si prega di far riferimento al codice per personalizzare il comportamento.
       </p>
 
