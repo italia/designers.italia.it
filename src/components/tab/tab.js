@@ -69,6 +69,8 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
                     variantName={v.name}
                     source={componentSource}
                     content={v.content}
+                    sourceKit={v.kitUrl}
+                    contentKit={v.kitContent}
                     idPrefix="use-preview-"
                     viewerHeight={tab01.componentVariant.viewerHeight}
                     accordionUrl={tab01.componentVariant.accordionUrl}
@@ -106,6 +108,8 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
                     variantName={v.name}
                     source={componentSource}
                     content={v.content}
+                    sourceKit={v.kitUrl}
+                    contentKit={v.kitContent}
                     idPrefix="des-preview-"
                     viewerHeight={tab02.componentVariant.viewerHeight}
                     accordionUrl={tab02.componentVariant.accordionUrl}
@@ -139,6 +143,8 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
                     variantName={v.name}
                     source={componentSource}
                     content={v.content}
+                    sourceKit={v.kitUrl}
+                    contentKit={v.kitContent}
                     idPrefix="dev-preview-"
                     viewerHeight={tab03.componentVariant.viewerHeight}
                     accordionUrl={tab03.componentVariant.accordionUrl}
@@ -158,6 +164,19 @@ function Tab({ componentSource, tab01, tab02, tab03 }) {
               />
             ))}
         </div>
+        {/* <div
+          className="tab-pane py-5 fade"
+          id="card-simpletab4"
+          role="tabpanel"
+          aria-labelledby="card-simple4-tab"
+        >
+          <iframe
+            id={`-sbiframe`}
+            height={"800px%"}
+            src="https://italia.github.io/dev-kit-italia/iframe.html?args=&id=componenti-accordion--documentazione"
+            className={`w-100 iframe-example shadow-sm `}
+          />
+        </div> */}
       </div>
     </div>
   );
