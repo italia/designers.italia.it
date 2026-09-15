@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="it" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-italia@3.0.0-beta.4/dist/css/bootstrap-italia.min.css">
+    <link rel="stylesheet" href="https://italia.github.io/bootstrap-italia/docs/assets/dist/css/docs.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5;
+            padding: 0;
+            margin: 0;
+        }
+
+        .bd-example {
+            margin-top: 0;
+            border: none;
+            box-shadow: none!important;
+        }
+
+        [class^="border"] {
+            display: inline-block;
+            width: 5rem;
+            height: 5rem;
+            margin: .25rem;
+            background-color: #f5f5f5;
+        }
+
+        .ratio-example {
+            display: inline-flex;
+            justify-content: center;
+            align-content: center;
+            width: 10rem;
+            color: #6c757d;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+        }
+
+        .ratio-example div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ratio-example-breakpoint {
+            --bs-aspect-ratio: 50%;
+        }
+
+        a.back-to-top {
+            position: relative;
+            bottom: unset;
+            right: unset;
+            visibility: visible;
+            margin: 0 auto;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .it-carousel-wrapper {
+            width: 96%;
+        }
+
+        .it-header-navbar-wrapper .custom-navbar-toggler .icon.bg-override {
+            fill: #06c;
+            width: 32px;
+            height: 32px;
+        }
+
+        .it-example-modal .modal {
+            position: relative;
+            top: auto;
+            right: auto;
+            bottom: auto;
+            left: auto;
+            z-index: 1;
+            display: block;
+        }
+
+        .test-docs .notification {
+            position: static;
+            top: auto;
+            bottom: auto;
+            right: auto;
+            left: auto;
+            transform: none;
+            display: block;
+        }
+
+        .test-docs .notification.dismissable {
+            position: relative;
+        }
+
+        .test-desktop .notification {
+            position: absolute;
+            display: block;
+        }
+    </style>
+    <title>Esempio Timeline con card generiche</title>
+</head>
+
+<body class="h-100">
+    <div class="d-flex align-items-center justify-content-center h-100 w-100">
+        <div class="bd-example w-100">
+            
+<ol class="it-timeline-point-list">
+  <li class="timeline-point">
+    <div class="point-aside point-aside-dark">
+      <time datetime="2022-01-04">
+        <span class="visually-hidden">4 gennaio 2022</span>
+        <div class="point-visual" aria-hidden="true">
+          <div class="point-top font-monospace">2022</div>
+          <div class="point-main font-monospace">04</div>
+          <div class="point-bottom font-monospace">gen</div>
+        </div>
+      </time>
+    </div>
+    <div class="point-content">
+     <div class="row g-0">
+      <div class="col-lg-9">
+          <div class="it-card rounded shadow-sm border bg-white it-card-border-top it-card-border-top-secondary">
+            <h4 class="it-card-title h5">Apertura iscrizioni</h4>
+            <div class="it-card-body">
+              <p class="it-card-text mb-0">Inizio del periodo per presentare la domanda di iscrizione all'asilo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>    
+  <li class="timeline-point">
+    <div class="point-aside point-aside-dark">
+      <time datetime="2022-02-04">
+        <span class="visually-hidden">4 febbraio 2022</span>
+        <div class="point-visual" aria-hidden="true">
+          <div class="point-top font-monospace">2022</div>
+          <div class="point-main font-monospace">04</div>
+          <div class="point-bottom font-monospace">feb</div>
+        </div>
+      </time>
+    </div>
+    <div class="point-content">
+      <div class="row g-0">
+        <div class="col-lg-9">
+          <div class="it-card rounded shadow-sm border bg-white it-card-border-top it-card-border-top-secondary">
+            <h4 class="it-card-title h5">Termine presentazione domande</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>    
+  <li class="timeline-point">
+    <div class="point-aside point-aside-dark">
+      <time datetime="2022-03-02">
+        <span class="visually-hidden">2 marzo 2022</span>
+        <div class="point-visual" aria-hidden="true">
+          <div class="point-top font-monospace">2022</div>
+          <div class="point-main font-monospace">02</div>
+          <div class="point-bottom font-monospace">mar</div>
+        </div>
+      </time>
+    </div>
+    <div class="point-content">
+      <div class="row g-0">
+        <div class="col-lg-9">
+          <div class="it-card rounded shadow-sm border bg-white it-card-border-top it-card-border-top-secondary">
+            <h4 class="it-card-title h5">Pubblicazione graduatorie</h4>
+            <div class="it-card-body">
+              <p class="it-card-text mb-0">Pubblicazione delle graduatorie provvisorie sul sito istituzionale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>    
+  <li class="timeline-point timeline-point-align-top">
+    <div class="point-aside point-aside-dark">
+      <time datetime="2022-04-02">
+        <span class="visually-hidden">2 aprile 2022</span>
+        <div class="point-visual" aria-hidden="true">
+          <div class="point-top font-monospace">2022</div>
+          <div class="point-main font-monospace">02</div>
+          <div class="point-bottom font-monospace">apr</div>
+        </div>
+      </time>
+    </div>
+    <div class="point-content">
+      <div class="row g-0">
+        <div class="col-lg-9">
+          <div class="it-card rounded shadow-sm border bg-white it-card-border-top it-card-border-top-secondary">
+            <h4 class="it-card-title h5">Perfezionamento domande</h4>
+            <div class="it-card-body">
+              <p class="it-card-text mb-0">Termine ultimo per la conferma dell'iscrizione e il pagamento della quota. Fino al secondo o anche anche terzo riga utile per ulteriori istruzioni relative a questa scadenza. Se diventa così lungo bene avere la data allineaata al to.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </li>
+</ol>
+
+        </div>
+    </div>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap-italia@3.0.0-beta.4/dist/js/bootstrap-italia.bundle.min.js"></script>
+    <script>
+        bootstrap.loadFonts(window.__PUBLIC_PATH__ = "/dist/fonts/");
+
+        // tooltip
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+
+        // popover
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl, { sanitize: false })
+        })
+
+    </script>
+</body>
+
+</html>

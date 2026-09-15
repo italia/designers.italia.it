@@ -1,9 +1,11 @@
+/* eslint-disable no-continue */
+
 const path = require("path");
 const fs = require("fs");
 const slugify = require("slugify");
 const Mustache = require("mustache");
 const { searchInDir } = require("./utils");
-const bsiData = require("../node_modules/bootstrap-italia/package.json");
+const bsiData = require("../static/examples/data.json");
 
 const SEARCH_DIR = path.join("src", "data", "components_json");
 const EXAMPLES_DIR = path.join("static", "examples");
@@ -23,6 +25,9 @@ function generateExamples(context) {
   const jsonFiles = searchInDir(SEARCH_DIR, ".json");
   for (const jsonFile of jsonFiles) {
     const parsedJson = JSON.parse(fs.readFileSync(jsonFile, "utf-8"));
+    if (jsonFile.includes("custom_properties.json")) {
+      continue; // Skip processing for custom_properties.json
+    }
     const componentFolder = path.join(
       EXAMPLES_DIR,
       context,
@@ -40,7 +45,7 @@ function generateExamples(context) {
         Mustache.render(HTML_TEMPLATE, {
           code: rewriteSpriteUrl(example.content),
           name: example.name,
-          bsiversion: bsiData.version,
+          bsiversion: bsiData.bsiVersion,
         }),
         "utf-8",
       );
