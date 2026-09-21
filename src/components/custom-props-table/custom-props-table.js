@@ -34,7 +34,7 @@ function CustomPropsTable({ title, selector }) {
             <tr>
               <th>Variabile CSS</th>
               <th>Descrizione (Inglese)</th>
-              <th>Predefinito</th>
+              <th>Valore predefinito</th>
             </tr>
           </thead>
           <tbody>
@@ -62,7 +62,8 @@ function CustomPropsTable({ title, selector }) {
           <p>
             Nella colonna <code>Valori predefiniti</code> è possibile trovare
             varianti responsive/tema/stato della property stessa, si prega di
-            far riferimento al codice per personalizzare il comportamento.
+            far riferimento al codice dei file SCSS relativi per personalizzare
+            il comportamento.
           </p>
 
           <div className="table-responsive" style={{ fontSize: "1rem" }}>
@@ -71,7 +72,8 @@ function CustomPropsTable({ title, selector }) {
                 <tr>
                   <th>Variabile CSS</th>
                   <th>Descrizione (Inglese)</th>
-                  <th>Valori predefiniti</th>
+                  <th>Valore predefinito</th>
+                  <th>File SCSS</th>
                 </tr>
               </thead>
               <tbody>
@@ -84,9 +86,12 @@ function CustomPropsTable({ title, selector }) {
                     <td className="d-flex">
                       <p>
                         <code>{track.value}</code>
+                        &nbsp;
                       </p>
-                      &nbsp;
-                      {track.other_values.map((v) => (
+                      <p><code>...</code></p>
+                    </td>
+                    <td>
+                      {track.files.map((v) => (
                         <p>
                           <code>{v}</code>
                         </p>
