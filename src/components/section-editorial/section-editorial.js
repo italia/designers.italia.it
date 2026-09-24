@@ -3,6 +3,7 @@ import * as React from "react";
 import "./section-editorial.scss";
 import ReactMarkdown from "react-markdown";
 import TextImageCta from "../text-image-cta/text-image-cta";
+import CustomPropsTable from "../custom-props-table/custom-props-table";
 import Numbers from "../numbers/numbers";
 import TitleText from "../title-text/title-text";
 import ImgFull from "../img-full/img-full";
@@ -37,6 +38,7 @@ function SectionEditorial({
     Card,
     Kangaroo,
     TextImageCta,
+    CustomPropsTable,
     CookieRemove,
     Numbers,
     TitleText,
